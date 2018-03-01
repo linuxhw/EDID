@@ -1,0 +1,118 @@
+
+EDID (hex):
+00ffffffffffff0059af061501000000
+3115010381a064782aedeca6554d9e25
+0c4e53a1080001010101010101010101
+010101010101e26800a0a0402e603020
+260081912100001a243680a070381f40
+3020250030303100001a000000fd0038
+3d1e641b000a202020202020000000fc
+004c43442057515847412048444d0121
+02031cf1439004032309070783010000
+6b030c001000013620002001023a8018
+71382d404020150076782100001a011d
+007251d01e206e285500bc862100001e
+8c0ad08a20e02d10103e9600bc862100
+00180000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000e5
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   59 af 06 15 01 00 00 00 31 15
+version:         01 03
+basic params:    81 a0 64 78 2a
+chroma info:     ed ec a6 55 4d 9e 25 0c 4e 53
+established:     a1 08 00
+standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
+descriptor 1:    e2 68 00 a0 a0 40 2e 60 30 20 26 00 81 91 21 00 00 1a
+descriptor 2:    24 36 80 a0 70 38 1f 40 30 20 25 00 30 30 31 00 00 1a
+descriptor 3:    00 00 00 fd 00 38 3d 1e 64 1b 00 0a 20 20 20 20 20 20
+descriptor 4:    00 00 00 fc 00 4c 43 44 20 57 51 58 47 41 20 48 44 4d
+extensions:      01
+checksum:        21
+
+EDID version: 1.3
+Manufacturer: VMO Model 1506 Serial Number --
+Made in week 49 of 2011
+Digital display
+DFP 1.x compatible TMDS
+Maximum image size: 160 cm x 100 cm
+Gamma: 2.20
+DPMS levels: Off
+RGB color display
+First detailed timing is preferred timing
+Display x,y Chromaticity:
+  Red:   0.6513, 0.3339
+  Green: 0.3037, 0.6181
+  Blue:  0.1474, 0.0488
+  White: 0.3076, 0.3242
+Established timings supported:
+  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
+  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
+  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
+  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
+Standard timings supported:
+Detailed mode: Clock 268.500 MHz, 641 mm x 401 mm
+               2560 2608 2640 2720 hborder 0
+               1600 1602 1608 1646 vborder 0
+               +hsync -vsync 
+               VertFreq: 59 Hz, HorFreq: 98713 Hz
+Detailed mode: Clock 138.600 MHz, 816 mm x 304 mm
+               1920 1968 2000 2080 hborder 0
+               1080 1082 1087 1111 vborder 0
+               +hsync -vsync 
+               VertFreq: 59 Hz, HorFreq: 66634 Hz
+Monitor ranges (GTF): 56-61Hz V, 30-100kHz H, max dotclock 270MHz
+Has 1 extension blocks
+Checksum: 0x21 (valid)
+
+CTA extension block
+Extension version: 3
+24 bytes of CTA data
+  Video data block
+    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
+    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
+    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
+  Audio data block
+    Linear PCM, max channels 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker allocation data block
+    Speaker map:
+      FL/FR - Front Left/Right
+  Vendor-specific data block, OUI 000c03 (HDMI)
+    Source physical address 1.0.0.0
+    DVI_Dual
+    Maximum TMDS clock: 270MHz
+    Extended HDMI video details:
+      HDMI VIC 1 3840x2160@30Hz 16:9 HorFreq: 67500 Hz Clock: 297.000 MHz
+Underscans PC formats by default
+Basic audio support
+Supports YCbCr 4:4:4
+Supports YCbCr 4:2:2
+1 native detailed modes
+Detailed mode: Clock 148.500 MHz, 630 mm x 376 mm
+               1920 1984 2016 2200 hborder 0
+               1080 1081 1086 1125 vborder 0
+               +hsync -vsync 
+               VertFreq: 60 Hz, HorFreq: 67500 Hz
+Detailed mode: Clock 74.250 MHz, 700 mm x 390 mm
+               1280 1390 1430 1650 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 45000 Hz
+Detailed mode: Clock 27.000 MHz, 700 mm x 390 mm
+                720  736  798  858 hborder 0
+                480  489  495  525 vborder 0
+               -hsync -vsync 
+               VertFreq: 59 Hz, HorFreq: 31468 Hz
+Checksum: 0xe5 (valid)
+
+EDID block does NOT conform to EDID 1.3!
+	Name descriptor not terminated with a newline
+One or more of the timings is out of range of the Monitor Ranges:
+  Vertical Freq: 30 - 70 Hz
+  Horizontal Freq: 31468 - 98713 Hz
+  Maximum Clock: 297.000 MHz
+Warning: HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB
