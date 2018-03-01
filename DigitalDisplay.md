@@ -1,38 +1,5 @@
-EDID Repository
-===============
-
-This is a repository of decoded EDIDs from various digital and analog monitors collected
-by Linux users at https://linux-hardware.org.
-
-Everyone can contribute to this repository by uploading probes of their computers
-by the hw-probe tool (https://github.com/linuxhw/hw-probe):
-
-    hw-probe -all -upload
-
-EDIDs of all connected monitors will be uploaded to the database and repository.
-
-Total monitors: 8879.
-
-Contents
---------
-
-1. [ About           ](#about)
-2. [ Digital display ](#digital-display)
-3. [ Analog display  ](#analog-display)
-
-About
------
-
-The structure of the repository is the following:
-
-    {TYPE}/{VENDOR}/{MODEL}/{ID}
-
-    ( e.g. Digital/LG Display/LGD0217/925C880E8A08 )
-
-ID of a monitor is MD5 of EDID.
-
 Digital display
----------------
+===============
 
 You can find decoded EDIDs for listed monitors in the repository by vendor name,
 model and ID.
@@ -4634,9 +4601,4 @@ model and ID.
 | Vizio        | VIZ1013 | P502ui-B1E   | 4096x2160 | 1100x620mm | 49.7 | 2014 | C42C7 |
 | eMachines    | EMA00B5 | E202H        | 1280x800  | 440x250mm  | 19.9 | 2009 | 9522E |
 | eMachines    | EMA0779 | E19T5W       | 1440x900  | 410x260mm  | 19.1 | 2006 | 93315 |
-
-Analog display
---------------
-
-See list of analog monitors in the AnalogDisplay.md file.
 
