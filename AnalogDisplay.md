@@ -39,6 +39,7 @@ model and ID.
 | AOC          | AOC2060 | 2060W3       | 1920x1080 | 440x240mm  | 19.7 | 2015 | 8310F |
 | AOC          | AOC2060 | 2060W        | 1600x900  | 430x240mm  | 19.4 | 2013 | 9AEAA |
 | AOC          | AOC2070 | 2070W        | 1600x900  | 430x240mm  | 19.4 | 2015 | 5C79E |
+| AOC          | AOC2070 | 2070W        | 1600x900  | 430x240mm  | 19.4 | 2015 | E6EE9 |
 | AOC          | AOC2070 | 2070W        | 1600x900  | 430x240mm  | 19.4 | 2014 | F13C9 |
 | AOC          | AOC2116 | 2116S        | 1440x900  | 460x290mm  | 21.4 | 2007 | 2C4EC |
 | AOC          | AOC2116 | 2116S        | 1440x900  | 460x290mm  | 21.4 | 2008 | A0F31 |
@@ -132,6 +133,7 @@ model and ID.
 | Acer         | ACR001B | V223W        | 1600x1200 | 470x300mm  | 22.0 | 2008 | 5476C |
 | Acer         | ACR001B | V223W        | 1600x1200 | 470x300mm  | 22.0 | 2010 | 6EA4D |
 | Acer         | ACR001B | V223W        | 1600x1200 | 470x300mm  | 22.0 | 2010 | FC308 |
+| Acer         | ACR0023 | V173         | 1280x800  | 340x270mm  | 17.1 | 2011 | 1BBD5 |
 | Acer         | ACR0023 | V173         | 1280x800  | 340x270mm  | 17.1 | 2010 | 2839C |
 | Acer         | ACR0023 | V173         | 1280x800  | 340x270mm  | 17.1 | 2008 | 6572C |
 | Acer         | ACR0023 | V173         | 1280x800  | 340x270mm  | 17.1 | 2010 | 6F961 |
@@ -196,6 +198,7 @@ model and ID.
 | Acer         | ACR0064 | X193HQ       | 1024x768  | 400x250mm  | 18.6 | 2010 | 450D9 |
 | Acer         | ACR0064 | X193HQ       | 1024x768  | 400x250mm  | 18.6 | 2008 | D0540 |
 | Acer         | ACR0067 | X193HQ       | 1280x960  | 410x230mm  | 18.5 | 2009 | 0E68D |
+| Acer         | ACR0069 | X193HQ       | 1280x800  | 410x230mm  | 18.5 | 2009 | 09206 |
 | Acer         | ACR0069 | X193HQ       | 1280x800  | 410x230mm  | 18.5 | 2009 | 2ADB5 |
 | Acer         | ACR006D | V193HQ       | 1280x960  | 410x230mm  | 18.5 | 2009 | 0DBD3 |
 | Acer         | ACR006D | V193HQ       | 1280x960  | 410x230mm  | 18.5 | 2009 | 2F9AB |
@@ -246,6 +249,7 @@ model and ID.
 | Acer         | ACR00B0 | V243HQ       | 1920x1080 | 520x290mm  | 23.4 | 2012 | 4874C |
 | Acer         | ACR00B0 | V243HQ       | 1920x1080 | 520x290mm  | 23.4 | 2010 | 9594E |
 | Acer         | ACR00B0 | V243HQ       | 1920x1080 | 520x290mm  | 23.4 | 2012 | F0458 |
+| Acer         | ACR00C5 | P205H        | 1600x900  | 440x250mm  | 19.9 | 2009 | FC1B7 |
 | Acer         | ACR00C7 | V203H        | 1600x900  | 440x250mm  | 19.9 | 2009 | 10FC4 |
 | Acer         | ACR00C7 | V203H        | 1600x900  | 440x250mm  | 19.9 | 2009 | 1CFF0 |
 | Acer         | ACR00C7 | V203H        | 1600x900  | 440x250mm  | 19.9 | 2009 | 5A19B |
@@ -254,6 +258,7 @@ model and ID.
 | Acer         | ACR00C7 | V203H        | 1600x900  | 440x250mm  | 19.9 | 2009 | D7826 |
 | Acer         | ACR00C7 | V203H        | 1600x900  | 440x250mm  | 19.9 | 2009 | E2997 |
 | Acer         | ACR00C8 | V233H        | 1920x1080 | 510x290mm  | 23.1 | 2009 | 7720E |
+| Acer         | ACR00C8 | V233H        | 1920x1080 | 510x290mm  | 23.1 | 2009 | AC788 |
 | Acer         | ACR00DB | V233H        | 1920x1080 | 510x290mm  | 23.1 | 2010 | 13097 |
 | Acer         | ACR00DB | V233H        | 1920x1080 | 510x290mm  | 23.1 | 2010 | 21ACB |
 | Acer         | ACR00DB | S273HL       | 1920x1080 | 600x340mm  | 27.2 | 2011 | 41783 |
@@ -390,6 +395,7 @@ model and ID.
 | Acer         | ACR0318 | H236HL       | 1920x1080 | 510x290mm  | 23.1 | 2014 | 63871 |
 | Acer         | ACR0318 | H236HL       | 1920x1080 | 510x290mm  | 23.1 | 2013 | AB177 |
 | Acer         | ACR0319 | H226HQL      | 1920x1080 | 480x270mm  | 21.7 | 2013 | 467C0 |
+| Acer         | ACR0319 | H226HQL      | 1920x1080 | 480x270mm  | 21.7 | 2013 | 815F6 |
 | Acer         | ACR0319 | H226HQL      | 1920x1080 | 480x270mm  | 21.7 | 2013 | F8A2F |
 | Acer         | ACR031E | G196HQL      | 1280x800  | 410x230mm  | 18.5 | 2012 | 37A03 |
 | Acer         | ACR031E | G196HQL      | 1280x800  | 410x230mm  | 18.5 | 2012 | 95B4A |
@@ -428,6 +434,7 @@ model and ID.
 | Acer         | ACR03F3 | V226HQL      | 1920x1080 | 480x270mm  | 21.7 | 2016 | 3BB2E |
 | Acer         | ACR03F3 | V226HQL      | 1920x1080 | 480x270mm  | 21.7 | 2016 | 68560 |
 | Acer         | ACR03F3 | V226HQL      | 1920x1080 | 480x270mm  | 21.7 | 2015 | AB777 |
+| Acer         | ACR03F3 | V226HQL      | 1920x1080 | 480x270mm  | 21.7 | 2016 | F5CC7 |
 | Acer         | ACR03FB | G277HL       | 1920x1080 | 600x340mm  | 27.2 | 2014 | 7C1F0 |
 | Acer         | ACR040C | K202HQL      | 1600x900  | 430x240mm  | 19.4 | 2014 | 36654 |
 | Acer         | ACR040C | K202HQL      | 1600x900  | 430x240mm  | 19.4 | 2017 | 728CD |
@@ -468,6 +475,7 @@ model and ID.
 | Acer         | ACR1717 | AL1717       | 1280x1024 | 340x270mm  | 17.1 |      | 5B380 |
 | Acer         | ACR1717 | AL1717       | 1280x1024 | 340x270mm  | 17.1 | 2006 | 73AC4 |
 | Acer         | ACR1916 | AL1916       | 1280x1024 | 370x300mm  | 18.8 |      | 80858 |
+| Acer         | ACR56AD | AL1717       | 1280x960  | 340x270mm  | 17.1 | 2007 | 4E486 |
 | Acer         | ACR56AD | AL1717       | 1280x960  | 340x270mm  | 17.1 | 2007 | 5B34A |
 | Acer         | ACR56AD | AL1717       | 1280x960  | 340x270mm  | 17.1 | 2006 | 5E091 |
 | Acer         | ACR56AD | AL1717       | 1280x960  | 340x270mm  | 17.1 | 2007 | 66623 |
@@ -568,8 +576,10 @@ model and ID.
 | Acer         | ACRAD51 | AL1716       | 1280x1024 | 340x270mm  | 17.1 | 2007 | EDB9A |
 | Acer         | ACRAD51 | AL1716       | 1280x1024 | 340x270mm  | 17.1 | 2007 | F53C3 |
 | Acer         | ACRAD51 | AL1716       | 1280x1024 | 340x270mm  | 17.1 | 2008 | F6158 |
+| Acer         | ACRAD52 | AL1916W      | 1440x900  | 410x260mm  | 19.1 | 2007 | 046E7 |
 | Acer         | ACRAD52 | AL1916W      | 1440x900  | 410x260mm  | 19.1 | 2007 | 2681F |
 | Acer         | ACRAD52 | AL1916W      | 1440x900  | 410x260mm  | 19.1 | 2006 | 2F1AD |
+| Acer         | ACRAD52 | AL1916W      | 1440x900  | 410x260mm  | 19.1 | 2006 | 35854 |
 | Acer         | ACRAD52 | AL1916W      | 1440x900  | 410x260mm  | 19.1 | 2006 | 38522 |
 | Acer         | ACRAD52 | AL1916W      | 1440x900  | 410x260mm  | 19.1 | 2006 | 3ABA6 |
 | Acer         | ACRAD52 | AL1916W      | 1440x900  | 410x260mm  | 19.1 | 2006 | 4564F |
@@ -650,6 +660,7 @@ model and ID.
 | Acer         | ACRAD95 | X191W        | 1440x900  | 380x300mm  | 19.1 | 2007 | 4C107 |
 | Acer         | ACRAD95 | X192W        | 1440x900  | 410x260mm  | 19.1 | 2007 | F589A |
 | Acer         | ACRAD98 | X221W        | 1680x1050 | 470x300mm  | 22.0 | 2008 | 1718B |
+| Acer         | ACRAD98 | X221W        | 1680x1050 | 470x300mm  | 22.0 | 2008 | 299B3 |
 | Acer         | ACRAD98 | X222W        | 1680x1050 | 470x300mm  | 22.0 | 2007 | BF6C1 |
 | Acer         | ACRAD98 | X222W        | 1680x1050 | 470x300mm  | 22.0 | 2007 | CD671 |
 | Acer         | ACRADAA | P193W        | 1440x900  | 410x260mm  | 19.1 | 2007 | DC4C8 |
@@ -714,6 +725,7 @@ model and ID.
 | Ancor Com... | ACI19E4 | ASUS VH192   | 1280x720  | 410x230mm  | 18.5 | 2009 | 9E120 |
 | Ancor Com... | ACI19E4 | ASUS VH192   | 1280x720  | 410x230mm  | 18.5 | 2009 | BB3C9 |
 | Ancor Com... | ACI19E4 | ASUS VH192   | 1280x720  | 410x230mm  | 18.5 | 2011 | E88C3 |
+| Ancor Com... | ACI19E5 | ASUS VH196   | 1440x900  | 410x260mm  | 19.1 | 2009 | 288B6 |
 | Ancor Com... | ACI19E5 | ASUS VH196   | 1440x900  | 410x260mm  | 19.1 | 2009 | 9FCEA |
 | Ancor Com... | ACI19E5 | ASUS VH196   | 1440x900  | 410x260mm  | 19.1 | 2009 | B2116 |
 | Ancor Com... | ACI19E5 | ASUS VH196   | 1440x900  | 410x260mm  | 19.1 | 2009 | ED357 |
@@ -876,6 +888,7 @@ model and ID.
 | BenQ         | BNQ76A5 | FP91G+       | 1280x1024 | 380x300mm  | 19.1 | 2006 | 92846 |
 | BenQ         | BNQ76A5 | FP91G+       | 1280x1024 | 380x300mm  | 19.1 | 2006 | 9FB0A |
 | BenQ         | BNQ76A5 | FP91G+       | 1280x1024 | 380x300mm  | 19.1 | 2006 | FC75D |
+| BenQ         | BNQ76AF | T90X         | 1280x1024 | 380x300mm  | 19.1 |      | 1CD80 |
 | BenQ         | BNQ76AF | T90X         | 1280x1024 | 380x300mm  | 19.1 | 2006 | 36D0F |
 | BenQ         | BNQ76AF | T90X         | 1280x1024 | 380x300mm  | 19.1 | 2006 | 65598 |
 | BenQ         | BNQ76AF | T90X         | 1280x1024 | 380x300mm  | 19.1 |      | 836E7 |
@@ -942,6 +955,7 @@ model and ID.
 | BenQ         | BNQ7725 | T2200HD      | 1920x1080 | 480x270mm  | 21.7 | 2009 | 0C447 |
 | BenQ         | BNQ7725 | T2200HD      | 1920x1080 | 480x270mm  | 21.7 | 2010 | 54ADC |
 | BenQ         | BNQ7725 |              | 1920x1080 | 480x270mm  | 21.7 | 2008 | 8AE8B |
+| BenQ         | BNQ7725 |              | 1920x1080 | 480x270mm  | 21.7 | 2009 | B4513 |
 | BenQ         | BNQ772B | T902HDA      | 1280x720  | 410x230mm  | 18.5 | 2009 | 88965 |
 | BenQ         | BNQ7801 | G700         | 1280x960  | 340x270mm  | 17.1 | 2009 | 30C73 |
 | BenQ         | BNQ7801 | G700         | 1280x960  | 340x270mm  | 17.1 | 2008 | 3F10C |
@@ -1238,6 +1252,7 @@ model and ID.
 | Dell         | DELA023 | E177FP       | 1280x1024 | 340x270mm  | 17.1 | 2006 | 959AF |
 | Dell         | DELA023 | E177FP       | 1280x1024 | 340x270mm  | 17.1 | 2006 | B701E |
 | Dell         | DELA024 | E197FP       | 1280x1024 | 380x300mm  | 19.1 | 2006 | 076BC |
+| Dell         | DELA024 | E197FP       | 1280x1024 | 380x300mm  | 19.1 | 2007 | 2B0F1 |
 | Dell         | DELA024 | E197FP       | 1280x1024 | 380x300mm  | 19.1 | 2006 | 3B2FB |
 | Dell         | DELA027 | E178FP       | 1280x1024 | 340x270mm  | 17.1 | 2008 | 118C9 |
 | Dell         | DELA027 | E178FP       | 1280x1024 | 340x270mm  | 17.1 | 2007 | 68A72 |
@@ -1358,6 +1373,7 @@ model and ID.
 | Goldstar     | GSM3B95 | L1530S       | 1024x768  | 300x230mm  | 14.9 |      | DFCBF |
 | Goldstar     | GSM3B9E | RZ15LA66     | 1024x768  | 300x230mm  | 14.9 |      | 51124 |
 | Goldstar     | GSM3BA7 | L1550S       | 1024x768  | 300x230mm  | 14.9 | 2006 | 2A1FC |
+| Goldstar     | GSM3BAE | L1553S       | 1024x768  | 300x230mm  | 14.9 | 2007 | 4B837 |
 | Goldstar     | GSM3BAE | L1552S       | 1024x768  | 300x230mm  | 14.9 | 2006 | CA602 |
 | Goldstar     | GSM42D1 |              | 1280x1024 | 330x250mm  | 16.3 |      | 7F473 |
 | Goldstar     | GSM42DD | FLATRON 7... | 1600x1200 | 330x250mm  | 16.3 |      | 1EE8F |
@@ -1407,6 +1423,7 @@ model and ID.
 | Goldstar     | GSM4372 | L1720B       | 1280x1024 | 340x270mm  | 17.1 |      | A8FAB |
 | Goldstar     | GSM437E | 787LE        | 1280x1024 | 340x270mm  | 17.1 |      | 08F6E |
 | Goldstar     | GSM437F | L1720P       | 1280x1024 | 340x270mm  | 17.1 |      | 62B4C |
+| Goldstar     | GSM437F | L1720P       | 1280x1024 | 340x270mm  | 17.1 |      | BB4CE |
 | Goldstar     | GSM438D | L1730S       | 1280x1024 | 340x270mm  | 17.1 |      | 00DF5 |
 | Goldstar     | GSM438D | L1730S       | 1280x1024 | 340x270mm  | 17.1 |      | 01F54 |
 | Goldstar     | GSM438D | L1730S       | 1280x1024 | 340x270mm  | 17.1 |      | 15E47 |
@@ -1757,6 +1774,7 @@ model and ID.
 | Goldstar     | GSM4B85 | L1942        | 1280x1024 | 380x300mm  | 19.1 | 2010 | 8CE99 |
 | Goldstar     | GSM4B85 | L1942        | 1280x1024 | 380x300mm  | 19.1 | 2009 | 8E3B7 |
 | Goldstar     | GSM4B85 | L1942        | 1280x1024 | 380x300mm  | 19.1 | 2011 | 9DBCD |
+| Goldstar     | GSM4B85 | L1942        | 1280x1024 | 380x300mm  | 19.1 | 2009 | A7DB2 |
 | Goldstar     | GSM4B85 | L1942        | 1280x1024 | 380x300mm  | 19.1 | 2009 | A970C |
 | Goldstar     | GSM4B85 | L1942        | 1280x1024 | 380x300mm  | 19.1 | 2010 | BB2EB |
 | Goldstar     | GSM4B85 | L1942        | 1280x1024 | 380x300mm  | 19.1 | 2010 | C0348 |
@@ -2122,6 +2140,7 @@ model and ID.
 | Goldstar     | GSM5A24 | 22MP55       | 1680x1050 | 480x270mm  | 21.7 | 2014 | 54310 |
 | Goldstar     | GSM5A24 | 22MP55       | 1680x1050 | 480x270mm  | 21.7 | 2014 | 74D70 |
 | Goldstar     | GSM5A24 | 22MP55       | 1680x1050 | 480x270mm  | 21.7 | 2014 | 7C77F |
+| Goldstar     | GSM5A24 | 22MP55       | 1680x1050 | 480x270mm  | 21.7 | 2014 | A105F |
 | Goldstar     | GSM5A24 | 22MP55       | 1680x1050 | 480x270mm  | 21.7 | 2014 | B1807 |
 | Goldstar     | GSM5A24 | 22MP55       | 1680x1050 | 480x270mm  | 21.7 | 2014 | BB57C |
 | Goldstar     | GSM5A24 | 22MP55       | 1680x1050 | 480x270mm  | 21.7 | 2014 | FA964 |
@@ -2208,6 +2227,7 @@ model and ID.
 | HP           | HWP265C | L1706        | 1280x1024 | 340x270mm  | 17.1 | 2007 | 4185E |
 | HP           | HWP265C | L1706        | 1280x1024 | 340x270mm  | 17.1 | 2006 | 45876 |
 | HP           | HWP265C | L1706        | 1280x1024 | 330x270mm  | 16.8 |      | 4C4CA |
+| HP           | HWP265C | L1706        | 1280x1024 | 340x270mm  | 17.1 | 2007 | 5946E |
 | HP           | HWP265C | L1706        | 1280x1024 | 340x270mm  | 17.1 | 2007 | 70066 |
 | HP           | HWP265C | L1706        | 1280x1024 | 340x270mm  | 17.1 | 2006 | BAA6E |
 | HP           | HWP265E | L1906        | 1280x1024 | 380x300mm  | 19.1 | 2007 | 4CF8B |
@@ -2306,6 +2326,7 @@ model and ID.
 | Hyundai I... | IQT9004 | HDIT22W DSUB | 1680x1050 | 500x290mm  | 22.8 | 2009 | 008AA |
 | Hyundai I... | IQT90DA | L90D Analog  | 1280x1024 | 370x300mm  | 18.8 |      | 5C7A5 |
 | Hyundai I... | IQTF790 | F790D        | 1600x1200 | 320x240mm  | 15.7 |      | 5C50F |
+| IBM          | IBM19FB | 6651 P97     | 1600x1200 | 360x270mm  | 17.7 |      | BABE6 |
 | IBM          | IBM1A50 |              | 1600x1200 | 410x310mm  | 20.2 |      | E6CD4 |
 | IBM          | IBM415E | L170p        | 1280x1024 | 340x270mm  | 17.1 |      | 0D972 |
 | Iiyama       | IVM175C | HM704U       | 1600x1200 | 320x240mm  | 15.7 |      | 103E5 |
@@ -2341,6 +2362,7 @@ model and ID.
 | Lenovo       | LEN0A0C | L2251p Wide  | 1680x1050 | 470x300mm  | 22.0 | 2011 | F9714 |
 | Lenovo       | LEN0EAB | LI1921wA     | 1024x768  | 410x230mm  | 18.5 | 2013 | 8DDF5 |
 | Lenovo       | LEN0FAE | L2321x Wide  | 1680x1050 | 510x290mm  | 23.1 | 2010 | E255E |
+| Lenovo       | LEN114F | L193pC       | 1280x1024 | 400x320mm  | 20.2 | 2008 | 2DD19 |
 | Lenovo       | LEN114F | L1900pA      | 1280x1024 | 370x300mm  | 18.8 | 2008 | E4063 |
 | Lenovo       | LEN1152 | L197 Wide    | 1440x900  | 410x260mm  | 19.1 | 2012 | DE25C |
 | Lenovo       | LEN23CD | L151         | 1024x768  | 300x230mm  | 14.9 | 2006 | 859FC |
@@ -2413,6 +2435,7 @@ model and ID.
 | NEC          | NEC6698 | 20WGX2       | 1680x1050 | 430x270mm  | 20.0 | 2006 | B166A |
 | NEC          | NEC66B1 | LCD2090UXi   | 1600x1200 | 410x310mm  | 20.2 | 2008 | 037E9 |
 | NEC          | NEC66B1 | LCD2090UXi   | 1600x1200 | 410x310mm  | 20.2 | 2007 | A061D |
+| NEC          | NEC66B8 | LCD1990FX    | 1280x1024 | 380x300mm  | 19.1 | 2006 | A7133 |
 | NEC          | NEC66BD | LCD2190UXp   | 1600x1200 | 430x320mm  | 21.1 | 2010 | 80CBA |
 | NEC          | NEC66BD | LCD2190UXp   | 1600x1200 | 430x320mm  | 21.1 | 2011 | ECEEA |
 | NEC          | NEC66C0 | LCD175VXM+   | 1280x960  | 340x270mm  | 17.1 | 2008 | F8CE2 |
@@ -2426,6 +2449,7 @@ model and ID.
 | NEC          | NEC66C3 | LCD73VM      | 1280x960  | 340x270mm  | 17.1 | 2007 | 7FCCF |
 | NEC          | NEC66C5 | LCD93VM      | 1280x960  | 380x300mm  | 19.1 | 2008 | 028A7 |
 | NEC          | NEC66C5 | LCD93VM      | 1280x960  | 380x300mm  | 19.1 | 2007 | 34635 |
+| NEC          | NEC66C6 | LCD2070VX    | 1600x1200 | 410x310mm  | 20.2 | 2006 | 3C5F0 |
 | NEC          | NEC66C6 | LCD2070VX    | 1600x1200 | 410x310mm  | 20.2 | 2007 | 9FDCC |
 | NEC          | NEC66C9 | LCD1990FXp   | 1280x1024 | 380x300mm  | 19.1 | 2008 | 8DA65 |
 | NEC          | NEC66D3 | LCD190V      | 1280x960  | 380x300mm  | 19.1 | 2006 | 08364 |
@@ -2576,6 +2600,7 @@ model and ID.
 | Philips      | PHL08A0 | 221S         | 1920x1080 | 480x270mm  | 21.7 | 2011 | D48D0 |
 | Philips      | PHL08D0 | 17S4         | 1280x720  | 340x270mm  | 17.1 | 2013 | 4F16F |
 | Philips      | PHL08E0 | 221S6Q       | 1920x1080 | 480x270mm  | 21.7 | 2015 | D1BA7 |
+| Philips      | PHL0908 | 221B7Q       | 1920x1080 | 480x270mm  | 21.7 | 2016 | 6314B |
 | Philips      | PHL2051 |              | 1280x720  | 440x250mm  | 19.9 | 2009 | C742A |
 | Philips      | PHL570B | 105B         | 1280x960  | 280x210mm  | 13.8 |      | 9FB85 |
 | Philips      | PHL6800 |              | 1024x768  | 300x230mm  | 14.9 |      | DDEF4 |
@@ -2637,6 +2662,7 @@ model and ID.
 | Philips      | PHLC059 | 202E         | 1600x900  | 440x250mm  | 19.9 | 2011 | 2F786 |
 | Philips      | PHLC05C |              | 1600x900  | 440x250mm  | 19.9 | 2012 | 72582 |
 | Philips      | PHLC05D | 232E         | 1920x1080 | 510x290mm  | 23.1 | 2011 | 93CA6 |
+| Philips      | PHLC05D | 232E         | 1920x1080 | 510x290mm  | 23.1 | 2011 | AE17B |
 | Philips      | PHLC069 |              | 1920x1080 | 510x290mm  | 23.1 | 2010 | 43E2F |
 | Philips      | PHLC079 |              | 1920x1080 | 480x270mm  | 21.7 | 2012 | 26D27 |
 | Philips      | PHLC079 |              | 1920x1080 | 480x270mm  | 21.7 | 2011 | 88322 |
@@ -2726,6 +2752,7 @@ model and ID.
 | Philips      | PHLC0CD | PHL 193V5    | 1280x720  | 410x230mm  | 18.5 | 2013 | 3114A |
 | Philips      | PHLC0CD | PHL 193V5    | 1280x720  | 410x230mm  | 18.5 | 2014 | 5ADCB |
 | Philips      | PHLC0CD | PHL 193V5    | 1280x720  | 410x230mm  | 18.5 | 2015 | 6AC42 |
+| Philips      | PHLC0CD | PHL 193V5    | 1280x720  | 410x230mm  | 18.5 | 2013 | 77163 |
 | Philips      | PHLC0CD | PHL 193V5    | 1280x720  | 410x230mm  | 18.5 | 2015 | 7F690 |
 | Philips      | PHLC0CD | PHL 193V5    | 1280x720  | 410x230mm  | 18.5 | 2014 | 9A98C |
 | Philips      | PHLC0CD | PHL 193V5    | 1280x720  | 410x230mm  | 18.5 | 2014 | DEF43 |
@@ -2811,6 +2838,7 @@ model and ID.
 | Plain Tre... | PTS0770 |              | 1440x900  | 410x260mm  | 19.1 | 2008 | 2ED7A |
 | Plain Tre... | PTS0770 |              | 1440x900  | 410x260mm  | 19.1 | 2008 | 9708D |
 | Plain Tre... | PTS0770 |              | 1440x900  | 410x260mm  | 19.1 | 2007 | BE660 |
+| Plain Tre... | PTS0817 |              | 1280x1024 | 340x270mm  | 17.1 |      | CB653 |
 | Plain Tre... | PTS0899 |              | 1680x1050 | 470x300mm  | 22.0 | 2007 | 5B06A |
 | Plain Tre... | PTS0899 |              | 1680x1050 | 470x300mm  | 22.0 | 2007 | F0BB6 |
 | Plain Tre... | PTS089A |              | 1680x1050 | 470x300mm  | 22.0 | 2008 | 23071 |
@@ -2987,6 +3015,7 @@ model and ID.
 | Samsung      | SAM011E | SyncMaster   | 1280x1024 | 340x270mm  | 17.1 |      | 139D8 |
 | Samsung      | SAM011E | SyncMaster   | 1280x1024 | 340x270mm  | 17.1 |      | 18B6F |
 | Samsung      | SAM011E | SyncMaster   | 1280x1024 | 340x270mm  | 17.1 |      | 1FDEF |
+| Samsung      | SAM011E | SyncMaster   | 1280x1024 | 340x270mm  | 17.1 |      | 22373 |
 | Samsung      | SAM011E | SyncMaster   | 1280x1024 | 340x270mm  | 17.1 |      | 22B4B |
 | Samsung      | SAM011E | SyncMaster   | 1280x1024 | 340x270mm  | 17.1 |      | 2377E |
 | Samsung      | SAM011E | SyncMaster   | 1280x1024 | 340x270mm  | 17.1 | 2006 | 25D6C |
@@ -3012,6 +3041,7 @@ model and ID.
 | Samsung      | SAM011E | SyncMaster   | 1280x1024 | 340x270mm  | 17.1 | 2006 | 6FC1B |
 | Samsung      | SAM011E | SyncMaster   | 1280x1024 | 340x270mm  | 17.1 |      | 7360E |
 | Samsung      | SAM011E | SyncMaster   | 1280x1024 | 340x270mm  | 17.1 |      | 79704 |
+| Samsung      | SAM011E | SyncMaster   | 1280x1024 | 340x270mm  | 17.1 | 2006 | 7F07B |
 | Samsung      | SAM011E | SyncMaster   | 1280x1024 | 340x270mm  | 17.1 | 2006 | 85706 |
 | Samsung      | SAM011E | SyncMaster   | 1280x1024 | 340x270mm  | 17.1 | 2006 | 8AD6C |
 | Samsung      | SAM011E | SyncMaster   | 1280x1024 | 340x270mm  | 17.1 |      | 8DD31 |
@@ -3151,6 +3181,7 @@ model and ID.
 | Samsung      | SAM01CE | SyncMaster   | 1024x768  | 300x230mm  | 14.9 | 2006 | 5D7BE |
 | Samsung      | SAM01D1 |              | 1024x768  |            |      | 2006 | 6A534 |
 | Samsung      | SAM01D3 | SyncMaster   | 1440x900  | 410x260mm  | 19.1 | 2007 | 642A7 |
+| Samsung      | SAM01DC | SyncMaster   | 1280x960  | 340x270mm  | 17.1 | 2006 | 22C35 |
 | Samsung      | SAM01DC | SyncMaster   | 1280x960  | 340x270mm  | 17.1 | 2006 | 4B3D3 |
 | Samsung      | SAM01DC | SyncMaster   | 1280x960  | 340x270mm  | 17.1 | 2006 | 9A45A |
 | Samsung      | SAM01DC | SyncMaster   | 1280x960  | 340x270mm  | 17.1 | 2006 | BD607 |
@@ -3175,6 +3206,7 @@ model and ID.
 | Samsung      | SAM01E1 | SyncMaster   | 1280x960  | 380x300mm  | 19.1 | 2006 | 2BCE6 |
 | Samsung      | SAM01E1 | SyncMaster   | 1280x960  | 380x300mm  | 19.1 | 2008 | 2FD75 |
 | Samsung      | SAM01E1 | SyncMaster   | 1280x960  | 380x300mm  | 19.1 | 2006 | 303E7 |
+| Samsung      | SAM01E1 | SyncMaster   | 1280x960  | 380x300mm  | 19.1 | 2006 | 32BAD |
 | Samsung      | SAM01E1 | SyncMaster   | 1280x960  | 380x300mm  | 19.1 | 2006 | 33870 |
 | Samsung      | SAM01E1 | SyncMaster   | 1280x960  | 380x300mm  | 19.1 | 2007 | 3B7F4 |
 | Samsung      | SAM01E1 | SyncMaster   | 1280x960  | 380x300mm  | 19.1 | 2007 | 3D86B |
@@ -3349,6 +3381,7 @@ model and ID.
 | Samsung      | SAM02AD | SyncMaster   | 1440x900  | 410x270mm  | 19.3 | 2008 | 605B3 |
 | Samsung      | SAM02AD | SyncMaster   | 1280x960  | 410x270mm  | 19.3 | 2007 | 7257C |
 | Samsung      | SAM02AD | SyncMaster   | 1280x960  | 410x270mm  | 19.3 | 2007 | 837D3 |
+| Samsung      | SAM02AD | SyncMaster   | 1280x960  | 410x270mm  | 19.3 | 2007 | 8C460 |
 | Samsung      | SAM02AD | SyncMaster   | 1440x900  | 410x270mm  | 19.3 | 2007 | 970D9 |
 | Samsung      | SAM02AD | SyncMaster   | 1280x960  | 410x270mm  | 19.3 | 2007 | A4FFF |
 | Samsung      | SAM02AD | SyncMaster   | 1280x960  | 410x270mm  | 19.3 | 2007 | B64E7 |
@@ -3439,6 +3472,7 @@ model and ID.
 | Samsung      | SAM036F | SyncMaster   | 1440x900  | 410x260mm  | 19.1 | 2008 | 614D8 |
 | Samsung      | SAM036F | SyncMaster   | 1440x900  | 410x260mm  | 19.1 | 2008 | 69204 |
 | Samsung      | SAM036F | SyncMaster   | 1440x900  | 410x260mm  | 19.1 | 2008 | 72356 |
+| Samsung      | SAM036F | SyncMaster   | 1440x900  | 410x260mm  | 19.1 | 2009 | 74C88 |
 | Samsung      | SAM036F | SyncMaster   | 1440x900  | 410x260mm  | 19.1 | 2008 | 7884F |
 | Samsung      | SAM036F | SyncMaster   | 1440x900  | 410x260mm  | 19.1 | 2009 | B49CD |
 | Samsung      | SAM036F | SyncMaster   | 1440x900  | 410x260mm  | 19.1 | 2008 | B536A |
@@ -3536,6 +3570,7 @@ model and ID.
 | Samsung      | SAM0450 | SyncMaster   | 1440x900  | 410x260mm  | 19.1 | 2009 | D2B20 |
 | Samsung      | SAM0450 | SyncMaster   | 1440x900  | 410x260mm  | 19.1 | 2009 | D3548 |
 | Samsung      | SAM0473 | SyncMaster   | 1680x1050 | 510x290mm  | 23.1 | 2009 | F0180 |
+| Samsung      | SAM0473 | SyncMaster   | 1680x1050 | 510x290mm  | 23.1 | 2008 | F1203 |
 | Samsung      | SAM047D | SyncMaster   | 1024x768  | 410x230mm  | 18.5 | 2008 | 9EC17 |
 | Samsung      | SAM0481 | SyncMaster   | 1440x900  | 470x300mm  | 22.0 | 2008 | 4EBC3 |
 | Samsung      | SAM0481 | SyncMaster   | 1440x900  | 470x300mm  | 22.0 | 2008 | A0539 |
@@ -3591,6 +3626,7 @@ model and ID.
 | Samsung      | SAM0564 | SyncMaster   | 1024x768  | 410x230mm  | 18.5 | 2009 | 40009 |
 | Samsung      | SAM0564 | SyncMaster   | 1024x768  | 410x230mm  | 18.5 | 2009 | 69B33 |
 | Samsung      | SAM0564 | SyncMaster   | 1024x768  | 410x230mm  | 18.5 | 2009 | 8AD69 |
+| Samsung      | SAM0564 | SyncMaster   | 1024x768  | 410x230mm  | 18.5 | 2010 | 9B3E5 |
 | Samsung      | SAM0564 | SyncMaster   | 1024x768  | 410x230mm  | 18.5 | 2009 | B7447 |
 | Samsung      | SAM0564 | SyncMaster   | 1024x768  | 410x230mm  | 18.5 | 2009 | BE572 |
 | Samsung      | SAM0564 | SyncMaster   | 1024x768  | 410x230mm  | 18.5 | 2009 | CD165 |
@@ -3880,6 +3916,7 @@ model and ID.
 | Samsung      | SAM08A3 | S22B150      | 1680x1050 | 480x270mm  | 21.7 | 2012 | 7E189 |
 | Samsung      | SAM08A3 | S22B150      | 1680x1050 | 480x270mm  | 21.7 | 2012 | 8002A |
 | Samsung      | SAM08A3 | S22B150      | 1680x1050 | 480x270mm  | 21.7 | 2013 | A6B91 |
+| Samsung      | SAM08A3 | S22B150      | 1680x1050 | 480x270mm  | 21.7 | 2012 | AE561 |
 | Samsung      | SAM08A4 | S19B300      | 1280x720  | 410x230mm  | 18.5 | 2012 | 004AB |
 | Samsung      | SAM08A4 | S19B300      | 1280x720  | 410x230mm  | 18.5 | 2012 | 024C5 |
 | Samsung      | SAM08A4 | S19B300      | 1280x720  | 410x230mm  | 18.5 | 2012 | 172EE |
@@ -3899,6 +3936,7 @@ model and ID.
 | Samsung      | SAM08AA | S22B300      | 1680x1050 | 480x270mm  | 21.7 | 2012 | 2B80B |
 | Samsung      | SAM08AA | S22B300      | 1680x1050 | 480x270mm  | 21.7 | 2012 | 2F1D9 |
 | Samsung      | SAM08AA | S22B300      | 1680x1050 | 480x270mm  | 21.7 | 2012 | 53A81 |
+| Samsung      | SAM08AA | S22B300      | 1680x1050 | 480x270mm  | 21.7 | 2012 | 5C430 |
 | Samsung      | SAM08AA | S22B300      | 1680x1050 | 480x270mm  | 21.7 | 2012 | 81DDD |
 | Samsung      | SAM08AA | S22B300      | 1680x1050 | 480x270mm  | 21.7 | 2012 | 8F078 |
 | Samsung      | SAM08AA | S22B300      | 1680x1050 | 480x270mm  | 21.7 | 2012 | A4781 |
@@ -3919,6 +3957,7 @@ model and ID.
 | Samsung      | SAM08B6 | S20B370      | 1440x900  | 440x250mm  | 19.9 | 2012 | A8FE5 |
 | Samsung      | SAM08B9 | S19B370      | 1280x720  | 410x230mm  | 18.5 | 2012 | 20471 |
 | Samsung      | SAM08BF | S23B370      | 1680x1050 | 510x290mm  | 23.1 | 2012 | 00EA2 |
+| Samsung      | SAM08D3 | S22B350      | 1680x1050 | 480x270mm  | 21.7 | 2012 | 04B17 |
 | Samsung      | SAM08D3 | S22B350      | 1680x1050 | 480x270mm  | 21.7 | 2012 | 8D129 |
 | Samsung      | SAM08D3 | S22B350      | 1680x1050 | 480x270mm  | 21.7 | 2012 | EBED0 |
 | Samsung      | SAM08D5 | S23B350      | 1680x1050 | 510x290mm  | 23.1 | 2012 | 39AB1 |
@@ -3935,6 +3974,7 @@ model and ID.
 | Samsung      | SAM0982 | S24B150      | 1680x1050 | 520x290mm  | 23.4 | 2012 | 45DB4 |
 | Samsung      | SAM09AC | S19C200      | 1280x720  | 410x230mm  | 18.5 | 2013 | 11297 |
 | Samsung      | SAM09AC | S19C200      | 1280x720  | 410x230mm  | 18.5 | 2013 | 2B4F2 |
+| Samsung      | SAM09AC | S19C200      | 1280x720  | 410x230mm  | 18.5 | 2013 | 53514 |
 | Samsung      | SAM09AC | S19C200      | 1280x720  | 410x230mm  | 18.5 | 2013 | 9647E |
 | Samsung      | SAM09AC | S19C200      | 1280x720  | 410x230mm  | 18.5 | 2013 | D3BD2 |
 | Samsung      | SAM09AF | S22C200      | 1680x1050 | 480x270mm  | 21.7 | 2013 | 01D97 |
@@ -4026,11 +4066,13 @@ model and ID.
 | Samsung      | SAM0B66 | S27D390      | 1680x1050 | 600x340mm  | 27.2 | 2014 | B179F |
 | Samsung      | SAM0B66 | S27D390      | 1680x1050 | 600x340mm  | 27.2 | 2015 | EB4DF |
 | Samsung      | SAM0B86 | S24D391      | 1680x1050 | 520x290mm  | 23.4 | 2014 | 6BA28 |
+| Samsung      | SAM0B86 | S24D391      | 1680x1050 | 520x290mm  | 23.4 | 2014 | FFAE5 |
 | Samsung      | SAM0BDB | S20D300      | 1280x720  | 430x240mm  | 19.4 | 2017 | 4D5C1 |
 | Samsung      | SAM0BDB | S20D300      | 1280x720  | 430x240mm  | 19.4 | 2015 | E2EA9 |
 | Samsung      | SAM0C0D | S22E391      | 1680x1050 | 480x270mm  | 21.7 | 2016 | FECD8 |
 | Samsung      | SAM0C11 | S24E391      | 1680x1050 | 520x290mm  | 23.4 | 2015 | C847C |
 | Samsung      | SAM0C17 | S22E390      | 1680x1050 | 480x270mm  | 21.7 | 2016 | D495A |
+| Samsung      | SAM0C19 | S24E390      | 1680x1050 | 520x290mm  | 23.4 | 2016 | 6C4E6 |
 | Samsung      | SAM0C19 | S24E390      | 1680x1050 | 520x290mm  | 23.4 | 2016 | F8B14 |
 | Samsung      | SAM0C2E | S24E310      | 1680x1050 | 520x290mm  | 23.4 | 2015 | 645A4 |
 | Samsung      | SAM0C6C | S22E200      | 1680x1050 | 480x270mm  | 21.7 | 2016 | 02D7B |
@@ -4070,6 +4112,7 @@ model and ID.
 | Samsung      | STN0007 | S/T 77/76BDF | 1792x1344 | 320x240mm  | 15.7 |      | BD6E5 |
 | Samsung      | STN000B | S/T 97/96BDF | 1792x1344 | 360x270mm  | 17.7 |      | 1330F |
 | Samsung      | STN0013 | S/T 51S      | 1024x768  | 300x230mm  | 14.9 |      | 64F41 |
+| Samsung      | STN001A | SAMTRON      | 1280x1024 | 340x270mm  | 17.1 |      | 84E95 |
 | Samsung      | STN001E | SAMTRON      | 1280x1024 | 310x230mm  | 15.2 |      | 1C62D |
 | Samsung      | STN001E | SAMTRON      | 1280x1024 | 310x230mm  | 15.2 |      | F3264 |
 | Samsung      | STN001F | SyncMaster   | 1600x1200 | 310x230mm  | 15.2 |      | 301B9 |
@@ -4158,6 +4201,7 @@ model and ID.
 | ViewSonic    | VSC1A22 |              | 1280x960  | 410x230mm  | 18.5 | 2010 | D28AF |
 | ViewSonic    | VSC1B1C | VA902        | 1280x1024 | 380x300mm  | 19.1 | 2006 | 7808D |
 | ViewSonic    | VSC1B1C | VA902        | 1280x1024 | 380x300mm  | 19.1 | 2006 | A5806 |
+| ViewSonic    | VSC1C1C | VA702        | 1280x1024 | 340x270mm  | 17.1 |      | 24076 |
 | ViewSonic    | VSC1C1C | VA702        | 1280x1024 | 340x270mm  | 17.1 |      | 6D2A5 |
 | ViewSonic    | VSC1C1C | VA702        | 1280x1024 | 340x270mm  | 17.1 | 2006 | 83AF6 |
 | ViewSonic    | VSC1C1C | VA702        | 1280x1024 | 340x270mm  | 17.1 | 2006 | E12F1 |
@@ -4350,6 +4394,7 @@ model and ID.
 | ViewSonic    | VSCD824 |              | 1680x1050 | 520x290mm  | 23.4 | 2011 | 587E0 |
 | ViewSonic    | VSCD824 |              | 1680x1050 | 520x290mm  | 23.4 | 2013 | 5E62C |
 | ViewSonic    | VSCD824 |              | 1680x1050 | 520x290mm  | 23.4 | 2012 | A2D70 |
+| ViewSonic    | VSCD824 |              | 1680x1050 | 520x290mm  | 23.4 | 2011 | AFF03 |
 | ViewSonic    | VSCD824 |              | 1680x1050 | 520x290mm  | 23.4 | 2011 | C0E14 |
 | ViewSonic    | VSCD824 |              | 1680x1050 | 520x290mm  | 23.4 | 2010 | CD4A2 |
 | ViewSonic    | VSCDA18 | VG910s       | 1280x960  | 380x300mm  | 19.1 |      | 8130C |
