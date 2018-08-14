@@ -5286,5 +5286,5 @@ model and ID.
 Analog display
 --------------
 
-See list of analog monitors in the AnalogDisplay.md file.
+See list of analog monitors in the [AnalogDisplay.md](https://github.com/linuxhw/EDID/blob/master/AnalogDisplay.md) file.
 
