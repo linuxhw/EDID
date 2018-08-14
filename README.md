@@ -5,7 +5,7 @@ This is a repository of decoded EDIDs from various digital and analog monitors c
 by Linux users at https://linux-hardware.org.
 
 Everyone can contribute to this repository by uploading probes of their computers
-by the hw-probe tool (https://github.com/linuxhw/hw-probe):
+by the [hw-probe](https://github.com/linuxhw/hw-probe) tool:
 
     sudo hw-probe -all -upload
 
