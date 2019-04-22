@@ -1,0 +1,120 @@
+
+EDID (hex):
+00ffffffffffff0005e35020736b0000
+0a180103802b18782a2cc5a45650a128
+0f5054bfef00a9c0818081c001010101
+010101010101302a40c8608464301850
+1300b0f01000001e000000fd00324c1e
+530e000a202020202020000000fc0032
+303530570a20202020202020000000ff
+0044544b343249413032373530370138
+02031b61230907078301000067030c00
+2000802d43908402e2000f8c0ad08a20
+e02d10103e9600a05a00000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000029
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   05 e3 50 20 73 6b 00 00 0a 18
+version:         01 03
+basic params:    80 2b 18 78 2a
+chroma info:     2c c5 a4 56 50 a1 28 0f 50 54
+established:     bf ef 00
+standard:        a9 c0 81 80 81 c0 01 01 01 01 01 01 01 01 01 01
+descriptor 1:    30 2a 40 c8 60 84 64 30 18 50 13 00 b0 f0 10 00 00 1e
+descriptor 2:    00 00 00 fd 00 32 4c 1e 53 0e 00 0a 20 20 20 20 20 20
+descriptor 3:    00 00 00 fc 00 32 30 35 30 57 0a 20 20 20 20 20 20 20
+descriptor 4:    00 00 00 ff 00 44 54 4b 34 32 49 41 30 32 37 35 30 37
+extensions:      01
+checksum:        38
+
+EDID version: 1.3
+Manufacturer: AOC Model 2050 Serial Number --
+Made in week 10 of 2014
+Digital display
+Maximum image size: 43 cm x 24 cm
+Gamma: 2.20
+DPMS levels: Off
+RGB color display
+First detailed timing is preferred timing
+Display x,y Chromaticity:
+  Red:   0.6406, 0.3378
+  Green: 0.3154, 0.6289
+  Blue:  0.1591, 0.0585
+  White: 0.3134, 0.3291
+Established timings supported:
+  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
+  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
+  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
+  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
+  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
+  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
+  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
+  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
+  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
+  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
+  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
+  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
+  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
+  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
+Standard timings supported:
+  1600x900@60Hz 16:9
+  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
+  1280x720@60Hz 16:9
+Detailed mode: Clock 108.000 MHz, 432 mm x 240 mm
+               1600 1624 1704 1800 hborder 0
+                900  901  904 1000 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 60000 Hz
+Monitor ranges (GTF): 50-76Hz V, 30-83kHz H, max dotclock 140MHz
+Monitor name: 2050W
+Serial number: --
+Has 1 extension blocks
+Checksum: 0x38 (valid)
+
+CTA extension block
+Extension version: 3
+23 bytes of CTA data
+  Audio data block
+    Linear PCM, max channels 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker allocation data block
+    Speaker map:
+      FL/FR - Front Left/Right
+  Vendor-specific data block, OUI 000c03 (HDMI)
+    Source physical address 2.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 225MHz
+  Video data block
+    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
+    VIC   4 1280x720@60Hz 16:9 (native) HorFreq: 45000 Hz Clock: 74.250 MHz
+    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
+  Extended tag: Video capability data block
+    YCbCr quantization: No Data (0)
+    RGB quantization: No Data (0)
+    PT scan behaviour: No Data (0)
+    IT scan behaviour: Support both over- and underscan (3)
+    CE scan behaviour: Support both over- and underscan (3)
+Basic audio support
+Supports YCbCr 4:4:4
+1 native detailed modes
+Detailed mode: Clock 27.000 MHz, 160 mm x 90 mm
+                720  736  798  858 hborder 0
+                480  489  495  525 vborder 0
+               -hsync -vsync analog composite 
+               VertFreq: 59 Hz, HorFreq: 31468 Hz
+Checksum: 0x29 (valid)
+
+One or more of the timings is out of range of the Monitor Ranges:
+  Vertical Freq: 56 - 75 Hz
+  Horizontal Freq: 31468 - 80000 Hz
+  Maximum Clock: 148.500 MHz
+EDID block does not conform at all!
+	Both the serial number and the serial string are set
+
+
