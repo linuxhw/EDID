@@ -1,0 +1,121 @@
+
+EDID (hex):
+00ffffffffffff00593a330001010101
+0112010380683b780a4a31a357479c25
+0f454720000001010101010101010101
+0101010101c1023a801871382d40582c
+5500104e4200001e000000fd00324d1f
+460f000a202020202020000000ff0053
+50424e414a30313235373030000000fc
+00564f34374c464844545631304101aa
+02031b71480401039005121514230907
+038301000065030c004000011d007251
+d01e206e285500104e4200001e011d80
+d0721c1620102c2580104e4200009e8c
+0ad08a20e02d10103e9600104e420000
+18011d8018711c1620582c2500104e42
+00009e8c0ad090204031200c40550010
+4e4200001800000000000000000000cf
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   59 3a 33 00 01 01 01 01 01 12
+version:         01 03
+basic params:    80 68 3b 78 0a
+chroma info:     4a 31 a3 57 47 9c 25 0f 45 47
+established:     20 00 00
+standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 c1
+descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 55 00 10 4e 42 00 00 1e
+descriptor 2:    00 00 00 fd 00 32 4d 1f 46 0f 00 0a 20 20 20 20 20 20
+descriptor 3:    00 00 00 ff 00 53 50 42 4e 41 4a 30 31 32 35 37 30 30
+descriptor 4:    00 00 00 fc 00 56 4f 34 37 4c 46 48 44 54 56 31 30 41
+extensions:      01
+checksum:        aa
+
+EDID version: 1.3
+Manufacturer: VIZ Model 33 Serial Number --
+Made in week 1 of 2008
+Digital display
+Maximum image size: 104 cm x 59 cm
+Gamma: 2.20
+RGB color display
+First detailed timing is preferred timing
+Display x,y Chromaticity:
+  Red:   0.6376, 0.3398
+  Green: 0.2792, 0.6113
+  Blue:  0.1445, 0.0615
+  White: 0.2695, 0.2783
+Established timings supported:
+  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
+Standard timings supported:
+  256x144@61Hz 16:9
+Detailed mode: Clock 148.500 MHz, 1040 mm x 590 mm
+               1920 2008 2052 2200 hborder 0
+               1080 1085 1090 1125 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 67500 Hz
+Monitor ranges (GTF): 50-77Hz V, 31-70kHz H, max dotclock 150MHz
+Serial number: --
+Has 1 extension blocks
+Checksum: 0xaa (valid)
+
+CTA extension block
+Extension version: 3
+23 bytes of CTA data
+  Video data block
+    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
+    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
+    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
+    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
+    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
+    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
+    VIC  21 1440x576i@50Hz 4:3  HorFreq: 15625 Hz Clock: 27.000 MHz
+    VIC  20 1920x1080i@50Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
+  Audio data block
+    Linear PCM, max channels 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 20 16
+  Speaker allocation data block
+    Speaker map:
+      FL/FR - Front Left/Right
+  Vendor-specific data block, OUI 000c03 (HDMI)
+    Source physical address 4.0.0.0
+Basic audio support
+Supports YCbCr 4:4:4
+Supports YCbCr 4:2:2
+1 native detailed modes
+Detailed mode: Clock 74.250 MHz, 1040 mm x 590 mm
+               1280 1390 1430 1650 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 45000 Hz
+Detailed mode: Clock 74.250 MHz, 1040 mm x 590 mm
+               1920 2448 2492 2640 hborder 0
+                540  542  547  562 vborder 0
+               +hsync +vsync interlaced 
+               VertFreq: 50 Hz, HorFreq: 28125 Hz
+Detailed mode: Clock 27.000 MHz, 1040 mm x 590 mm
+                720  736  798  858 hborder 0
+                480  489  495  525 vborder 0
+               -hsync -vsync 
+               VertFreq: 59 Hz, HorFreq: 31468 Hz
+Detailed mode: Clock 74.250 MHz, 1040 mm x 590 mm
+               1920 2008 2052 2200 hborder 0
+                540  542  547  562 vborder 0
+               +hsync +vsync interlaced 
+               VertFreq: 60 Hz, HorFreq: 33750 Hz
+Detailed mode: Clock 27.000 MHz, 1040 mm x 590 mm
+                720  732  796  864 hborder 0
+                576  581  586  625 vborder 0
+               -hsync -vsync 
+               VertFreq: 50 Hz, HorFreq: 31250 Hz
+Checksum: 0xcf (valid)
+
+EDID block does NOT conform to EDID 1.3!
+	Name descriptor not terminated with a newline
+One or more of the timings is out of range of the Monitor Ranges:
+  Vertical Freq: 50 - 61 Hz
+  Horizontal Freq: 15625 - 67500 Hz
+  Maximum Clock: 148.500 MHz
+EDID block does not conform at all!
+	Both the serial number and the serial string are set
