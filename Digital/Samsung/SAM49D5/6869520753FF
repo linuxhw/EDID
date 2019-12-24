@@ -1,0 +1,118 @@
+
+EDID (hex):
+00ffffffffffff004c2dd54935314e52
+270a0103a01e1761bad61a94554e8b26
+214f54b76e00314f454f614f01010101
+010101010101c31e0020410020301060
+130030e41000001e000000fd00324b1e
+3d08000a202020202020000000fc0035
+3730422f3538304220544654000000ff
+004834554e3930303131340a20200129
+02031b71230907078301000067030c00
+1000802143011084e2000f011d007251
+d01e206e28550081490000001e000000
+10000000000000000000000000000000
+00001000000000000000000000000000
+00000000100000000000000000000000
+00000000000010000000000000000000
+000000000000000000000000000000bf
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   4c 2d d5 49 35 31 4e 52 27 0a
+version:         01 03
+basic params:    a0 1e 17 61 ba
+chroma info:     d6 1a 94 55 4e 8b 26 21 4f 54
+established:     b7 6e 00
+standard:        31 4f 45 4f 61 4f 01 01 01 01 01 01 01 01 01 01
+descriptor 1:    c3 1e 00 20 41 00 20 30 10 60 13 00 30 e4 10 00 00 1e
+descriptor 2:    00 00 00 fd 00 32 4b 1e 3d 08 00 0a 20 20 20 20 20 20
+descriptor 3:    00 00 00 fc 00 35 37 30 42 2f 35 38 30 42 20 54 46 54
+descriptor 4:    00 00 00 ff 00 48 34 55 4e 39 30 30 31 31 34 0a 20 20
+extensions:      01
+checksum:        29
+
+EDID version: 1.3
+Manufacturer: SAM Model 49d5 Serial Number --
+Digital display
+Maximum image size: 30 cm x 23 cm
+Gamma: 1.97
+DPMS levels: Standby Off
+Undefined display color type
+First detailed timing is preferred timing
+Display x,y Chromaticity:
+  Red:   0.5810, 0.3330
+  Green: 0.3056, 0.5449
+  Blue:  0.1484, 0.1298
+  White: 0.3105, 0.3300
+Established timings supported:
+  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
+  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
+  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
+  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
+  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
+  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
+  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
+  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
+  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
+  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
+  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
+Standard timings supported:
+  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
+  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
+  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
+Detailed mode: Clock 78.750 MHz, 304 mm x 228 mm
+               1024 1040 1136 1312 hborder 0
+                768  769  772  800 vborder 0
+               +hsync +vsync 
+               VertFreq: 75 Hz, HorFreq: 60022 Hz
+Monitor ranges (GTF): 50-75Hz V, 30-61kHz H, max dotclock 80MHz
+Serial number: --
+Has 1 extension blocks
+Checksum: 0x29 (valid)
+
+CTA extension block
+Extension version: 3
+23 bytes of CTA data
+  Audio data block
+    Linear PCM, max channels 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker allocation data block
+    Speaker map:
+      FL/FR - Front Left/Right
+  Vendor-specific data block, OUI 000c03 (HDMI)
+    Source physical address 1.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 165MHz
+  Video data block
+    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
+    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
+    VIC   4 1280x720@60Hz 16:9 (native) HorFreq: 45000 Hz Clock: 74.250 MHz
+  Extended tag: Video capability data block
+    YCbCr quantization: No Data (0)
+    RGB quantization: No Data (0)
+    PT scan behaviour: No Data (0)
+    IT scan behaviour: Support both over- and underscan (3)
+    CE scan behaviour: Support both over- and underscan (3)
+Basic audio support
+Supports YCbCr 4:4:4
+Supports YCbCr 4:2:2
+1 native detailed modes
+Detailed mode: Clock 74.250 MHz, 129 mm x 73 mm
+               1280 1390 1430 1650 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 45000 Hz
+Checksum: 0xbf (valid)
+
+EDID block does NOT conform to EDID 1.3!
+	Digital display field contains garbage: 20
+	Name descriptor not terminated with a newline
+One or more of the timings is out of range of the Monitor Ranges:
+  Vertical Freq: 56 - 75 Hz
+  Horizontal Freq: 31469 - 67500 Hz
+  Maximum Clock: 148.500 MHz
+EDID block does not conform at all!
+	Bad year of manufacture
+	Both the serial number and the serial string are set
