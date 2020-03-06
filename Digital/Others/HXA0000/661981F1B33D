@@ -1,0 +1,111 @@
+
+EDID (hex):
+00ffffffffffff002301000001000000
+26100103804728960adaffa3584aa229
+17494b00000001010101010101010101
+010101010101023a801871382d40582c
+4500c48e2100001e023a80d072382d40
+582c4500c48e2100001e000000fc0042
+4d442048444d490a20202020000000fd
+00323c1f4408000a20202020202001f7
+02031f544985849493a0a1a29f902309
+04078301000068030c000000001e0001
+1d007251d01e206e285500c48e210000
+1e011d00bc52d01e20b8285540c48e21
+00001e00000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000002
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   23 01 00 00 01 00 00 00 26 10
+version:         01 03
+basic params:    80 47 28 96 0a
+chroma info:     da ff a3 58 4a a2 29 17 49 4b
+established:     00 00 00
+standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
+descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 c4 8e 21 00 00 1e
+descriptor 2:    02 3a 80 d0 72 38 2d 40 58 2c 45 00 c4 8e 21 00 00 1e
+descriptor 3:    00 00 00 fc 00 42 4d 44 20 48 44 4d 49 0a 20 20 20 20
+descriptor 4:    00 00 00 fd 00 32 3c 1f 44 08 00 0a 20 20 20 20 20 20
+extensions:      01
+checksum:        f7
+
+EDID version: 1.3
+Manufacturer: HXA Model 0 Serial Number --
+Made in week 38 of 2006
+Digital display
+Maximum image size: 71 cm x 40 cm
+Gamma: 2.50
+RGB color display
+First detailed timing is preferred timing
+Display x,y Chromaticity:
+  Red:   0.6396, 0.3447
+  Green: 0.2910, 0.6347
+  Blue:  0.1630, 0.0927
+  White: 0.2880, 0.2958
+Established timings supported:
+Standard timings supported:
+Detailed mode: Clock 148.500 MHz, 708 mm x 398 mm
+               1920 2008 2052 2200 hborder 0
+               1080 1084 1089 1125 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 67500 Hz
+Detailed mode: Clock 148.500 MHz, 708 mm x 398 mm
+               1920 2008 2052 2640 hborder 0
+               1080 1084 1089 1125 vborder 0
+               +hsync +vsync 
+               VertFreq: 50 Hz, HorFreq: 56250 Hz
+Monitor name: BMD HDMI
+Monitor ranges (GTF): 50-60Hz V, 31-68kHz H, max dotclock 80MHz
+Has 1 extension blocks
+Checksum: 0xf7 (valid)
+
+CTA extension block
+Extension version: 3
+27 bytes of CTA data
+  Video data block
+    VIC   5 1920x1080i@60Hz 16:9 (native) HorFreq: 33750 Hz Clock: 74.250 MHz
+    VIC   4 1280x720@60Hz 16:9 (native) HorFreq: 45000 Hz Clock: 74.250 MHz
+    VIC  20 1920x1080i@50Hz 16:9 (native) HorFreq: 28125 Hz Clock: 74.250 MHz
+    VIC  19 1280x720@50Hz 16:9 (native) HorFreq: 37500 Hz Clock: 74.250 MHz
+    VIC  32 1920x1080@24Hz 16:9 (native) HorFreq: 27000 Hz Clock: 74.250 MHz
+    VIC  33 1920x1080@25Hz 16:9 (native) HorFreq: 28125 Hz Clock: 74.250 MHz
+    VIC  34 1920x1080@30Hz 16:9 (native) HorFreq: 33750 Hz Clock: 74.250 MHz
+    VIC  31 1920x1080@50Hz 16:9 (native) HorFreq: 56250 Hz Clock: 148.500 MHz
+    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
+  Audio data block
+    Linear PCM, max channels 2
+      Supported sample rates (kHz): 48
+      Supported sample sizes (bits): 24 20 16
+  Speaker allocation data block
+    Speaker map:
+      FL/FR - Front Left/Right
+  Vendor-specific data block, OUI 000c03 (HDMI)
+    Source physical address 0.0.0.0
+    Maximum TMDS clock: 150MHz
+Basic audio support
+Supports YCbCr 4:2:2
+4 native detailed modes
+Detailed mode: Clock 74.250 MHz, 708 mm x 398 mm
+               1280 1390 1430 1650 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 45000 Hz
+Detailed mode: Clock 74.250 MHz, 708 mm x 398 mm
+               1280 1720 1760 1980 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+               VertFreq: 50 Hz, HorFreq: 37500 Hz
+Checksum: 0x2 (valid)
+
+EDID block does NOT conform to EDID 1.3!
+	Required 640x480p60 timings are missing in the established timings
+	and/or in the SVD list (VIC 1)
+One or more of the timings is out of range of the Monitor Ranges:
+  Vertical Freq: 24 - 60 Hz
+  Horizontal Freq: 27000 - 67500 Hz
+  Maximum Clock: 148.500 MHz
+
+

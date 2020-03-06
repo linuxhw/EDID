@@ -1,0 +1,121 @@
+
+EDID (hex):
+00ffffffffffff000469ad24e5930000
+0e1b0104a5341d783bee05a3544c9f25
+0c5054a12800d1c08140818081c00101
+0101010101014dd000a0f0703e803020
+350009252100001a000000ff0048344c
+4d54463033373836310a000000fd0028
+3c86863c010a202020202020000000fc
+0041535553204d473234550a2020014a
+02031f714702030405900e0f23091707
+830100006a030c001000007820000056
+5e00a0a0a02950302035000925210000
+1ed60980a0205e63103060b20c092521
+00001a00000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000d4
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   04 69 ad 24 e5 93 00 00 0e 1b
+version:         01 04
+basic params:    a5 34 1d 78 3b
+chroma info:     ee 05 a3 54 4c 9f 25 0c 50 54
+established:     a1 28 00
+standard:        d1 c0 81 40 81 80 81 c0 01 01 01 01 01 01 01 01
+descriptor 1:    4d d0 00 a0 f0 70 3e 80 30 20 35 00 09 25 21 00 00 1a
+descriptor 2:    00 00 00 ff 00 48 34 4c 4d 54 46 30 33 37 38 36 31 0a
+descriptor 3:    00 00 00 fd 00 28 3c 86 86 3c 01 0a 20 20 20 20 20 20
+descriptor 4:    00 00 00 fc 00 41 53 55 53 20 4d 47 32 34 55 0a 20 20
+extensions:      01
+checksum:        4a
+
+EDID version: 1.4
+Manufacturer: ACI Model 24ad Serial Number --
+Made in week 14 of 2017
+Digital display
+8 bits per primary color channel
+DisplayPort interface
+Maximum image size: 52 cm x 29 cm
+Gamma: 2.20
+DPMS levels: Off
+Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+First detailed timing includes the native pixel format and preferred refresh rate
+Display is continuous frequency
+Display x,y Chromaticity:
+  Red:   0.6396, 0.3300
+  Green: 0.2998, 0.6230
+  Blue:  0.1445, 0.0468
+  White: 0.3134, 0.3291
+Established timings supported:
+  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
+  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
+  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
+  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
+  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
+Standard timings supported:
+  1920x1080@60Hz 16:9
+  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
+  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
+  1280x720@60Hz 16:9
+Detailed mode: Clock 533.250 MHz, 521 mm x 293 mm
+               3840 3888 3920 4000 hborder 0
+               2160 2163 2168 2222 vborder 0
+               +hsync -vsync 
+               VertFreq: 59 Hz, HorFreq: 133312 Hz
+Serial number: --
+Monitor ranges (bare limits): 40-60Hz V, 134-134kHz H, max dotclock 600MHz
+Monitor name: ASUS MG24U
+Has 1 extension blocks
+Checksum: 0x4a (valid)
+
+CTA extension block
+Extension version: 3
+27 bytes of CTA data
+  Video data block
+    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
+    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
+    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
+    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
+    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
+    VIC  14 1440x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 54.000 MHz
+    VIC  15 1440x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 54.000 MHz
+  Audio data block
+    Linear PCM, max channels 2
+      Supported sample rates (kHz): 96 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker allocation data block
+    Speaker map:
+      FL/FR - Front Left/Right
+  Vendor-specific data block, OUI 000c03 (HDMI)
+    Source physical address 1.0.0.0
+    Maximum TMDS clock: 600MHz
+    Extended HDMI video details:
+Basic audio support
+Supports YCbCr 4:4:4
+Supports YCbCr 4:2:2
+1 native detailed modes
+Detailed mode: Clock 241.500 MHz, 521 mm x 293 mm
+               2560 2608 2640 2720 hborder 0
+               1440 1443 1448 1481 vborder 0
+               +hsync +vsync 
+               VertFreq: 59 Hz, HorFreq: 88786 Hz
+Detailed mode: Clock 25.180 MHz, 521 mm x 293 mm
+                640  688  784  800 hborder 0
+                350  409  411  449 vborder 0
+               +hsync -vsync 
+               VertFreq: 70 Hz, HorFreq: 31475 Hz
+Checksum: 0xd4 (valid)
+
+EDID block does NOT conform to EDID 1.4!
+	HDMI VSDB Max TMDS rate is > 340
+Warning: One or more of the timings is out of range of the Monitor Ranges:
+  Vertical Freq: 59 - 75 Hz
+  Horizontal Freq: 31469 - 133312 Hz
+  Maximum Clock: 533.250 MHz
+EDID block does not conform at all!
+	Both the serial number and the serial string are set
+
+
