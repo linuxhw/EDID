@@ -1,55 +1,41 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff003064005037323838
-080e0103802115780a4fd59c574b8c27
-1f505400000001010101010101010101
-0101010101012f3f800871b023406420
-26004bcf100000180000000f00082810
-38011102111e20081200000000fe0038
-54373439a1313534455a300a000000fe
-00dfb9a5937657280002000a20200054
+00 ff ff ff ff ff ff 00 30 64 00 50 37 32 38 38
+08 0e 01 03 80 21 15 78 0a 4f d5 9c 57 4b 8c 27
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2f 3f 80 08 71 b0 23 40 64 20
+26 00 4b cf 10 00 00 18 00 00 00 0f 00 08 28 10
+38 01 11 02 11 1e 20 08 12 00 00 00 00 fe 00 38
+54 37 34 39 a1 31 35 34 45 5a 30 0a 00 00 00 fe
+00 df b9 a5 93 76 57 28 00 02 00 0a 20 20 00 54
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 64 00 50 37 32 38 38 08 0e
-version:         01 03
-basic params:    80 21 15 78 0a
-chroma info:     4f d5 9c 57 4b 8c 27 1f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    2f 3f 80 08 71 b0 23 40 64 20 26 00 4b cf 10 00 00 18
-descriptor 2:    00 00 00 0f 00 08 28 10 38 01 11 02 11 1e 20 08 12 00
-descriptor 3:    00 00 00 fe 00 38 54 37 34 39 a1 31 35 34 45 5a 30 0a
-descriptor 4:    00 00 00 fe 00 df b9 a5 93 76 57 28 00 02 00 0a 20 20
-extensions:      00
-checksum:        54
+----------------
 
-EDID version: 1.3
-Manufacturer: LCD Model 5000 Serial Number --
-Digital display
-Maximum image size: 33 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6103, 0.3398
-  Green: 0.2958, 0.5498
-  Blue:  0.1552, 0.1220
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 161.750 MHz, 331 mm x 207 mm
-               1920 2020 2052 2184 hborder 0
-               1200 1202 1208 1235 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 74061 Hz
-Manufacturer-specified data, tag 15
-ASCII string: 8T749
-ASCII string: 
-Checksum: 0x54 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LCD
+    Model: 20480
+    Serial Number: ...
+    Made in: week 8 of 2004
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6103, 0.3398
+    Green: 0.2958, 0.5498
+    Blue : 0.1552, 0.1220
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.969 Hz   8:5    74.061 kHz 161.750 MHz (331 mm x 207 mm)
+                 Hfront  100 Hsync  32 Hback 132 Hpol N
+                 Vfront    2 Vsync   6 Vback  27 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 08 28 10 38 01 11 02 11 1e 20 08 12 00 '....(.8..... ...'
+    Alphanumeric Data String: '8T749'
+    Alphanumeric Data String: ''
+Checksum: 0x54

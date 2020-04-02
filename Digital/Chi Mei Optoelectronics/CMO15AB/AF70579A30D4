@@ -1,60 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000dafab1500000000
-311401049022137802d1f5935d599026
-1d505400000001010101010101010101
-010101010101741d56c2500026301f41
-4c0058c21000001a3812566e50001630
-0e1d270058c21000001a000000fe0037
-4634544b803135364247450a00000000
-00004131960010000001010a2020004c
+00 ff ff ff ff ff ff 00 0d af ab 15 00 00 00 00
+31 14 01 04 90 22 13 78 02 d1 f5 93 5d 59 90 26
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 74 1d 56 c2 50 00 26 30 1f 41
+4c 00 58 c2 10 00 00 1a 38 12 56 6e 50 00 16 30
+0e 1d 27 00 58 c2 10 00 00 1a 00 00 00 fe 00 37
+46 34 54 4b 80 31 35 36 42 47 45 0a 00 00 00 00
+00 00 41 31 96 00 10 00 00 01 01 0a 20 20 00 4c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0d af ab 15 00 00 00 00 31 14
-version:         01 04
-basic params:    90 22 13 78 02
-chroma info:     d1 f5 93 5d 59 90 26 1d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    74 1d 56 c2 50 00 26 30 1f 41 4c 00 58 c2 10 00 00 1a
-descriptor 2:    38 12 56 6e 50 00 16 30 0e 1d 27 00 58 c2 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 37 46 34 54 4b 80 31 35 36 42 47 45 0a
-descriptor 4:    00 00 00 00 00 00 41 31 96 00 10 00 00 01 01 0a 20 20
-extensions:      00
-checksum:        4c
+----------------
 
-EDID version: 1.4
-Manufacturer: CMO Model 15ab Serial Number --
-Made in week 49 of 2010
-Digital display
-6 bits per primary color channel
-Digital interface is not defined
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5771, 0.3642
-  Green: 0.3476, 0.5634
-  Blue:  0.1513, 0.1162
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 75.400 MHz, 344 mm x 194 mm
-               1366 1397 1462 1560 hborder 0
-                768  772  784  806 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 48333 Hz
-Detailed mode: Clock 46.640 MHz, 344 mm x 194 mm
-               1366 1380 1409 1476 hborder 0
-                768  770  777  790 vborder 0
-               +hsync -vsync 
-               VertFreq: 39 Hz, HorFreq: 31598 Hz
-ASCII string: 7F4TK
-Manufacturer-specified data, tag 0
-Checksum: 0x4c (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMO
+    Model: 5547
+    Made in: week 49 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5771, 0.3642
+    Green: 0.3476, 0.5634
+    Blue : 0.1513, 0.1162
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.967 Hz 683:384  48.333 kHz  75.400 MHz (344 mm x 194 mm)
+                 Hfront   31 Hsync  65 Hback  98 Hpol P
+                 Vfront    4 Vsync  12 Vback  22 Vpol N
+    DTD 2:  1366x768    39.999 Hz 683:384  31.599 kHz  46.640 MHz (344 mm x 194 mm)
+                 Hfront   14 Hsync  29 Hback  67 Hpol P
+                 Vfront    2 Vsync   7 Vback  13 Vpol N
+    Alphanumeric Data String: '7F4TK'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 96 00 10 00 00 01 01 0a 20 20 '....A1........  '
+Checksum: 0x4c

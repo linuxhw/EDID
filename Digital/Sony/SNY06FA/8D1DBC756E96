@@ -1,58 +1,43 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004dd9fa0600000000
-04130103801f1178f2ce50a3574c9926
-0f505400000001010101010101010101
-010101010101e42a40e660846530264c
-010636aa10000000f82a40fc62841e30
-7ffe5a0036aa10000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000056
+00 ff ff ff ff ff ff 00 4d d9 fa 06 00 00 00 00
+04 13 01 03 80 1f 11 78 f2 ce 50 a3 57 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 e4 2a 40 e6 60 84 65 30 26 4c
+01 06 36 aa 10 00 00 00 f8 2a 40 fc 62 84 1e 30
+7f fe 5a 00 36 aa 10 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 56
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4d d9 fa 06 00 00 00 00 04 13
-version:         01 03
-basic params:    80 1f 11 78 f2
-chroma info:     ce 50 a3 57 4c 99 26 0f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    e4 2a 40 e6 60 84 65 30 26 4c 01 06 36 aa 10 00 00 00
-descriptor 2:    f8 2a 40 fc 62 84 1e 30 7f fe 5a 00 36 aa 10 00 00 00
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      00
-checksum:        56
+----------------
 
-EDID version: 1.3
-Manufacturer: SNY Model 6fa Serial Number --
-Made in week 4 of 2009
-Digital display
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Non-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3398
-  Green: 0.2998, 0.5996
-  Blue:  0.1494, 0.0595
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 109.800 MHz, 310 mm x 170 mm
-               1600 1638 1714 1830 hborder 0
-                900  916  949 1001 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 59 Hz, HorFreq: 60000 Hz
-Detailed mode: Clock 110.000 MHz, 310 mm x 170 mm
-               1600 1727 1981 2364 hborder 0
-                900  905  915  930 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 50 Hz, HorFreq: 46531 Hz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 0
-Checksum: 0x56 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SNY
+    Model: 1786
+    Made in: week 4 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Non-RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    59.940 Hz  16:9    60.000 kHz 109.800 MHz (analog composite, sync-on-green, 310 mm x 170 mm)
+                 Hfront   38 Hsync  76 Hback 116 Hpol N
+                 Vfront   16 Vsync  33 Vback  52 Vpol N
+    DTD 2:  1600x900    50.034 Hz  16:9    46.531 kHz 110.000 MHz (analog composite, sync-on-green, 310 mm x 170 mm)
+                 Hfront  127 Hsync 254 Hback 383 Hpol N
+                 Vfront    5 Vsync  10 Vback  15 Vpol N
+    Empty Descriptor
+    Empty Descriptor
+Checksum: 0x56

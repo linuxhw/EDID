@@ -1,59 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e4f40100000000
-00130103902115780aba959759558c27
-21505400000001010101010101010101
-010101010101121b0080502014301820
-44004bcf1000001b0a12008050201430
-182044004bcf1000001b000000fe0046
-32353348813135345758370a00000000
-003c587490acc8e4ff01010a202000e3
+00 ff ff ff ff ff ff 00 30 e4 f4 01 00 00 00 00
+00 13 01 03 90 21 15 78 0a ba 95 97 59 55 8c 27
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 00 80 50 20 14 30 18 20
+44 00 4b cf 10 00 00 1b 0a 12 00 80 50 20 14 30
+18 20 44 00 4b cf 10 00 00 1b 00 00 00 fe 00 46
+32 35 33 48 81 31 35 34 57 58 37 0a 00 00 00 00
+00 3c 58 74 90 ac c8 e4 ff 01 01 0a 20 20 00 e3
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 f4 01 00 00 00 00 00 13
-version:         01 03
-basic params:    90 21 15 78 0a
-chroma info:     ba 95 97 59 55 8c 27 21 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    12 1b 00 80 50 20 14 30 18 20 44 00 4b cf 10 00 00 1b
-descriptor 2:    0a 12 00 80 50 20 14 30 18 20 44 00 4b cf 10 00 00 1b
-descriptor 3:    00 00 00 fe 00 46 32 35 33 48 81 31 35 34 57 58 37 0a
-descriptor 4:    00 00 00 00 00 3c 58 74 90 ac c8 e4 ff 01 01 0a 20 20
-extensions:      00
-checksum:        e3
+----------------
 
-EDID version: 1.3
-Manufacturer: LGD Model 1f4 Serial Number --
-Made in year 2009
-Digital display
-Maximum image size: 33 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5917, 0.3505
-  Green: 0.3339, 0.5488
-  Blue:  0.1542, 0.1298
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 69.300 MHz, 331 mm x 207 mm
-               1280 1304 1336 1408 hborder 0
-                800  804  808  820 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 49218 Hz
-Detailed mode: Clock 46.180 MHz, 331 mm x 207 mm
-               1280 1304 1336 1408 hborder 0
-                800  804  808  820 vborder 0
-               +hsync -vsync 
-               VertFreq: 39 Hz, HorFreq: 32798 Hz
-ASCII string: F253H
-Manufacturer-specified data, tag 0
-Checksum: 0xe3 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 10
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 500
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5917, 0.3505
+    Green: 0.3339, 0.5488
+    Blue : 0.1542, 0.1298
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.023 Hz   8:5    49.219 kHz  69.300 MHz (331 mm x 207 mm)
+                 Hfront   24 Hsync  32 Hback  72 Hpol P
+                 Vfront    4 Vsync   4 Vback  12 Vpol N
+    DTD 2:  1280x800    39.998 Hz   8:5    32.798 kHz  46.180 MHz (331 mm x 207 mm)
+                 Hfront   24 Hsync  32 Hback  72 Hpol P
+                 Vfront    4 Vsync   4 Vback  12 Vpol N
+    Alphanumeric Data String: 'F253H'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 3c 58 74 90 ac c8 e4 ff 01 01 0a 20 20 '...<Xt........  '
+Checksum: 0xe3

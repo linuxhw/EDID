@@ -1,60 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009e5d20700000000
-011c0104a52615780ac810a457519b27
-0e505400000001010101010101010101
-010101010101c23680cc703814406c30
-aa007ed71000001ace2b80cc70381440
-6c30aa007ed71000001a000000fe0047
-57365847804e56313733464800000000
-000341011e021000000a010a20200080
+00 ff ff ff ff ff ff 00 09 e5 d2 07 00 00 00 00
+01 1c 01 04 a5 26 15 78 0a c8 10 a4 57 51 9b 27
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c2 36 80 cc 70 38 14 40 6c 30
+aa 00 7e d7 10 00 00 1a ce 2b 80 cc 70 38 14 40
+6c 30 aa 00 7e d7 10 00 00 1a 00 00 00 fe 00 47
+57 36 58 47 80 4e 56 31 37 33 46 48 00 00 00 00
+00 03 41 01 1e 02 10 00 00 0a 01 0a 20 20 00 80
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 e5 d2 07 00 00 00 00 01 1c
-version:         01 04
-basic params:    a5 26 15 78 0a
-chroma info:     c8 10 a4 57 51 9b 27 0e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    c2 36 80 cc 70 38 14 40 6c 30 aa 00 7e d7 10 00 00 1a
-descriptor 2:    ce 2b 80 cc 70 38 14 40 6c 30 aa 00 7e d7 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 47 57 36 58 47 80 4e 56 31 37 33 46 48
-descriptor 4:    00 00 00 00 00 03 41 01 1e 02 10 00 00 0a 01 0a 20 20
-extensions:      00
-checksum:        80
+----------------
 
-EDID version: 1.4
-Manufacturer: BOE Model 7d2 Serial Number --
-Made in week 1 of 2018
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 38 cm x 21 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6435, 0.3398
-  Green: 0.3183, 0.6054
-  Blue:  0.1523, 0.0556
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 140.180 MHz, 382 mm x 215 mm
-               1920 2028 2076 2124 hborder 0
-               1080 1090 1100 1100 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 65998 Hz
-Detailed mode: Clock 112.140 MHz, 382 mm x 215 mm
-               1920 2028 2076 2124 hborder 0
-               1080 1090 1100 1100 vborder 0
-               +hsync -vsync 
-               VertFreq: 47 Hz, HorFreq: 52796 Hz
-ASCII string: GW6XG
-Manufacturer-specified data, tag 0
-Checksum: 0x80 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2002
+    Made in: week 1 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6435, 0.3398
+    Green: 0.3183, 0.6054
+    Blue : 0.1523, 0.0556
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.998 Hz  16:9    65.998 kHz 140.180 MHz (382 mm x 215 mm)
+                 Hfront  108 Hsync  48 Hback  48 Hpol P
+                 Vfront   10 Vsync  10 Vback   0 Vpol N
+    DTD 2:  1920x1080   47.997 Hz  16:9    52.797 kHz 112.140 MHz (382 mm x 215 mm)
+                 Hfront  108 Hsync  48 Hback  48 Hpol P
+                 Vfront   10 Vsync  10 Vback   0 Vpol N
+    Alphanumeric Data String: 'GW6XG'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 03 41 01 1e 02 10 00 00 0a 01 0a 20 20 '....A.........  '
+Checksum: 0x80

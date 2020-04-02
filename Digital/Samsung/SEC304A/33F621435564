@@ -1,53 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004ca34a3000000000
-00110103802517780a87f594574f8c27
-27505400000001010101010101010101
-010101010101793a8020713832403020
-26006fe6100000190000000f00000000
-000000000046d2023200000000fe0053
-414d53554e470a2020202020000000fe
-00313834485430312d4130310a2000f2
+00 ff ff ff ff ff ff 00 4c a3 4a 30 00 00 00 00
+00 11 01 03 80 25 17 78 0a 87 f5 94 57 4f 8c 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 79 3a 80 20 71 38 32 40 30 20
+26 00 6f e6 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 46 d2 02 32 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe
+00 31 38 34 48 54 30 31 2d 41 30 31 0a 20 00 f2
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c a3 4a 30 00 00 00 00 00 11
-version:         01 03
-basic params:    80 25 17 78 0a
-chroma info:     87 f5 94 57 4f 8c 27 27 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    79 3a 80 20 71 38 32 40 30 20 26 00 6f e6 10 00 00 19
-descriptor 2:    00 00 00 0f 00 00 00 00 00 00 00 00 00 46 d2 02 32 00
-descriptor 3:    00 00 00 fe 00 53 41 4d 53 55 4e 47 0a 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 31 38 34 48 54 30 31 2d 41 30 31 0a 20
-extensions:      00
-checksum:        f2
+----------------
 
-EDID version: 1.3
-Manufacturer: SEC Model 304a Serial Number --
-Made in year 2007
-Digital display
-Maximum image size: 37 cm x 23 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5800, 0.3398
-  Green: 0.3095, 0.5498
-  Blue:  0.1552, 0.1552
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 149.690 MHz, 367 mm x 230 mm
-               1920 1968 2000 2208 hborder 0
-               1080 1082 1088 1130 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 67794 Hz
-Manufacturer-specified data, tag 15
-ASCII string: SAMSUNG
-ASCII string: 184HT01-A01
-Checksum: 0xf2 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 12362
+    Made in: 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 37 cm x 23 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5800, 0.3398
+    Green: 0.3095, 0.5498
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.995 Hz  16:9    67.794 kHz 149.690 MHz (367 mm x 230 mm)
+                 Hfront   48 Hsync  32 Hback 208 Hpol N
+                 Vfront    2 Vsync   6 Vback  42 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 46 d2 02 32 00 '...........F..2.'
+    Alphanumeric Data String: 'SAMSUNG'
+    Alphanumeric Data String: '184HT01-A01'
+Checksum: 0xf2

@@ -1,77 +1,65 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff003438ec0568010000
-06110103681e17786eb1c69f554b9924
-1d4f54afce00314c314f4540454c454f
-6140614a614fd60980a0205e63103060
-c20c30e41000001a000000fd00384b1f
-3e080a20202020202020000000fc0042
-3130313535350a2020202020000000fe
-004d4158444154410a20202020200033
+00 ff ff ff ff ff ff 00 34 38 ec 05 68 01 00 00
+06 11 01 03 68 1e 17 78 6e b1 c6 9f 55 4b 99 24
+1d 4f 54 af ce 00 31 4c 31 4f 45 40 45 4c 45 4f
+61 40 61 4a 61 4f d6 09 80 a0 20 5e 63 10 30 60
+c2 0c 30 e4 10 00 00 1a 00 00 00 fd 00 38 4b 1f
+3e 08 0a 20 20 20 20 20 20 20 00 00 00 fc 00 42
+31 30 31 35 35 35 0a 20 20 20 20 20 00 00 00 fe
+00 4d 41 58 44 41 54 41 0a 20 20 20 20 20 00 33
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   34 38 ec 05 68 01 00 00 06 11
-version:         01 03
-basic params:    68 1e 17 78 6e
-chroma info:     b1 c6 9f 55 4b 99 24 1d 4f 54
-established:     af ce 00
-standard:        31 4c 31 4f 45 40 45 4c 45 4f 61 40 61 4a 61 4f
-descriptor 1:    d6 09 80 a0 20 5e 63 10 30 60 c2 0c 30 e4 10 00 00 1a
-descriptor 2:    00 00 00 fd 00 38 4b 1f 3e 08 0a 20 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 42 31 30 31 35 35 35 0a 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 4d 41 58 44 41 54 41 0a 20 20 20 20 20
-extensions:      00
-checksum:        33
+----------------
 
-EDID version: 1.3
-Manufacturer: MAX Model 5ec Serial Number --
-Made in week 6 of 2007
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 30 cm x 23 cm
-Gamma: 2.20
-DPMS levels: Suspend Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6230, 0.3349
-  Green: 0.2929, 0.5986
-  Blue:  0.1435, 0.1132
-  White: 0.3095, 0.3300
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Detailed mode: Clock 25.180 MHz, 304 mm x 228 mm
-                640  688  784  800 hborder 0
-                350  410  412  449 vborder 0
-               +hsync -vsync 
-               VertFreq: 70 Hz, HorFreq: 31475 Hz
-Monitor ranges (invalid): 56-75Hz V, 31-62kHz H, max dotclock 80MHz
-Monitor name: B101555
-ASCII string: MAXDATA
-Checksum: 0x33 (valid)
-EDID block does NOT conform to EDID 1.3!
-	sRGB is signaled, but the chromaticities do not match
-EDID block does not conform at all!
-	Detailed blocks filled with garbage
-	Range descriptor contains garbage
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MAX
+    Model: 1516
+    Serial Number: ...
+    Made in: week 6 of 2007
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate
+    Maximum image size: 30 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6230, 0.3349
+    Green: 0.2929, 0.5986
+    Blue : 0.1435, 0.1132
+    White: 0.3095, 0.3300
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings:
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    GTF     :  1024x768    70.000 Hz   4:3    56.000 kHz  76.160 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Detailed Timing Descriptors:
+    DTD 1:   640x350    70.100 Hz  64:35   31.475 kHz  25.180 MHz (304 mm x 228 mm)
+                 Hfront   48 Hsync  96 Hback  16 Hpol P
+                 Vfront   60 Vsync   2 Vback  37 Vpol N
+  Display Range Limits:
+    Monitor ranges (Unknown (0x0a)): 56-75 Hz V, 31-62 kHz H, max dotclock 80 MHz
+    Display Product Name: 'B101555'
+    Alphanumeric Data String: 'MAXDATA'
+Checksum: 0x33

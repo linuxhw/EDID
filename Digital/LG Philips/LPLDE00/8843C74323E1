@@ -1,59 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00320c00de00000000
-00110103902115780a19459758538b28
-24505400000001010101010101010101
-0101010101018a2f90e0601a0f402040
-25004bcf1000001b8a2f90e0601a0f40
-204025004bcf1000001b000000fe0052
-37383147803135345745320a00000000
-002b41525a7da2c9ff02010a20200075
+00 ff ff ff ff ff ff 00 32 0c 00 de 00 00 00 00
+00 11 01 03 90 21 15 78 0a 19 45 97 58 53 8b 28
+24 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8a 2f 90 e0 60 1a 0f 40 20 40
+25 00 4b cf 10 00 00 1b 8a 2f 90 e0 60 1a 0f 40
+20 40 25 00 4b cf 10 00 00 1b 00 00 00 fe 00 52
+37 38 31 47 80 31 35 34 57 45 32 0a 00 00 00 00
+00 2b 41 52 5a 7d a2 c9 ff 02 01 0a 20 20 00 75
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   32 0c 00 de 00 00 00 00 00 11
-version:         01 03
-basic params:    90 21 15 78 0a
-chroma info:     19 45 97 58 53 8b 28 24 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    8a 2f 90 e0 60 1a 0f 40 20 40 25 00 4b cf 10 00 00 1b
-descriptor 2:    8a 2f 90 e0 60 1a 0f 40 20 40 25 00 4b cf 10 00 00 1b
-descriptor 3:    00 00 00 fe 00 52 37 38 31 47 80 31 35 34 57 45 32 0a
-descriptor 4:    00 00 00 00 00 2b 41 52 5a 7d a2 c9 ff 02 01 0a 20 20
-extensions:      00
-checksum:        75
+----------------
 
-EDID version: 1.3
-Manufacturer: LPL Model de00 Serial Number --
-Made in year 2007
-Digital display
-Maximum image size: 33 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5898, 0.3447
-  Green: 0.3261, 0.5439
-  Blue:  0.1572, 0.1406
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 121.700 MHz, 331 mm x 207 mm
-               1680 1712 1776 1904 hborder 0
-               1050 1052 1057 1065 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 63918 Hz
-Detailed mode: Clock 121.700 MHz, 331 mm x 207 mm
-               1680 1712 1776 1904 hborder 0
-               1050 1052 1057 1065 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 63918 Hz
-ASCII string: R781G
-Manufacturer-specified data, tag 0
-Checksum: 0x75 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 10
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LPL
+    Model: 56832
+    Made in: 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3447
+    Green: 0.3261, 0.5439
+    Blue : 0.1572, 0.1406
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   60.017 Hz   8:5    63.918 kHz 121.700 MHz (331 mm x 207 mm)
+                 Hfront   32 Hsync  64 Hback 128 Hpol P
+                 Vfront    2 Vsync   5 Vback   8 Vpol N
+    DTD 2:  1680x1050   60.017 Hz   8:5    63.918 kHz 121.700 MHz (331 mm x 207 mm)
+                 Hfront   32 Hsync  64 Hback 128 Hpol P
+                 Vfront    2 Vsync   5 Vback   8 Vpol N
+    Alphanumeric Data String: 'R781G'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 2b 41 52 5a 7d a2 c9 ff 02 01 0a 20 20 '...+ARZ}......  '
+Checksum: 0x75

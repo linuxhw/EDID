@@ -1,144 +1,131 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004dd9023401010101
-01150103803a20780a0dc9a057479827
-12484c21080001010101010101010101
-010101010101662150b051001b304070
-360040442100001e011d007251d01e20
-6e28550040442100001e000000fc0053
-4f4e592054560a2020202020000000fd
-00303e0e460f000a20202020202001c3
-02032ff0531f101405130420223c3e12
-16030711150206012609070715075083
-01000068030c001000b82d0fe200fb02
-3a80d072382d40102c45804044210000
-1e023a801871382d40582c4500404421
-00001e011d00bc52d01e20b828554040
-442100001e011d80d0721c1620102c25
-8040442100009e0000000000000000e3
+00 ff ff ff ff ff ff 00 4d d9 02 34 01 01 01 01
+01 15 01 03 80 3a 20 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70
+36 00 40 44 21 00 00 1e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 40 44 21 00 00 1e 00 00 00 fc 00 53
+4f 4e 59 20 54 56 0a 20 20 20 20 20 00 00 00 fd
+00 30 3e 0e 46 0f 00 0a 20 20 20 20 20 20 01 c3
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4d d9 02 34 01 01 01 01 01 15
-version:         01 03
-basic params:    80 3a 20 78 0a
-chroma info:     0d c9 a0 57 47 98 27 12 48 4c
-established:     21 08 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    66 21 50 b0 51 00 1b 30 40 70 36 00 40 44 21 00 00 1e
-descriptor 2:    01 1d 00 72 51 d0 1e 20 6e 28 55 00 40 44 21 00 00 1e
-descriptor 3:    00 00 00 fc 00 53 4f 4e 59 20 54 56 0a 20 20 20 20 20
-descriptor 4:    00 00 00 fd 00 30 3e 0e 46 0f 00 0a 20 20 20 20 20 20
-extensions:      01
-checksum:        c3
+02 03 2f f0 53 1f 10 14 05 13 04 20 22 3c 3e 12
+16 03 07 11 15 02 06 01 26 09 07 07 15 07 50 83
+01 00 00 68 03 0c 00 10 00 b8 2d 0f e2 00 fb 02
+3a 80 d0 72 38 2d 40 10 2c 45 80 40 44 21 00 00
+1e 02 3a 80 18 71 38 2d 40 58 2c 45 00 40 44 21
+00 00 1e 01 1d 00 bc 52 d0 1e 20 b8 28 55 40 40
+44 21 00 00 1e 01 1d 80 d0 72 1c 16 20 10 2c 25
+80 40 44 21 00 00 9e 00 00 00 00 00 00 00 00 e3
 
-EDID version: 1.3
-Manufacturer: SNY Model 3402 Serial Number --
-Made in week 1 of 2011
-Digital display
-Maximum image size: 58 cm x 32 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6250, 0.3398
-  Green: 0.2802, 0.5947
-  Blue:  0.1552, 0.0703
-  White: 0.2832, 0.2978
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-Detailed mode: Clock 85.500 MHz, 576 mm x 324 mm
-               1360 1424 1536 1792 hborder 0
-                768  771  777  795 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 47712 Hz
-Detailed mode: Clock 74.250 MHz, 576 mm x 324 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Monitor name: SONY TV
-Monitor ranges (GTF): 48-62Hz V, 14-70kHz H, max dotclock 150MHz
-Has 1 extension blocks
-Checksum: 0xc3 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-43 bytes of CTA data
-  Video data block
-    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC  20 1920x1080i@50Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
-    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  32 1920x1080@24Hz 16:9  HorFreq: 27000 Hz Clock: 74.250 MHz
-    VIC  34 1920x1080@30Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC  60 1280x720@24Hz 16:9  HorFreq: 18000 Hz Clock: 59.400 MHz
-    VIC  62 1280x720@30Hz 16:9  HorFreq: 22500 Hz Clock: 74.250 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  22 1440x576i@50Hz 16:9  HorFreq: 15625 Hz Clock: 27.000 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   7 1440x480i@60Hz 16:9  HorFreq: 15734 Hz Clock: 27.000 MHz
-    VIC  17 720x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  21 1440x576i@50Hz 4:3  HorFreq: 15625 Hz Clock: 27.000 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   6 1440x480i@60Hz 4:3  HorFreq: 15734 Hz Clock: 27.000 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SNY
+    Model: 13314
+    Serial Number: ...
+    Made in: week 1 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 58 cm x 32 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1360x768    60.015 Hz  85:48   47.712 kHz  85.500 MHz (576 mm x 324 mm)
+                 Hfront   64 Hsync 112 Hback 256 Hpol P
+                 Vfront    3 Vsync   6 Vback  18 Vpol P
+    DTD 2:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (576 mm x 324 mm)
+                 Hfront  110 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+    Display Product Name: 'SONY TV'
+  Display Range Limits:
+    Monitor ranges (GTF): 48-62 Hz V, 14-70 kHz H, max dotclock 150 MHz
+  Extension blocks: 1
+Checksum: 0xc3
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans PC formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+    VIC  34:  1920x1080   30.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  60:  1280x720    24.000 Hz  16:9    18.000 kHz  59.400 MHz
+    VIC  62:  1280x720    30.000 Hz  16:9    22.500 kHz  74.250 MHz
+    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
+    VIC  22:  1440x576i   50.000 Hz  16:9    15.625 kHz  27.000 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   7:  1440x480i   59.940 Hz  16:9    15.734 kHz  27.000 MHz
+    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
+    VIC  21:  1440x576i   50.000 Hz   4:3    15.625 kHz  27.000 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC   6:  1440x480i   59.940 Hz   4:3    15.734 kHz  27.000 MHz
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-    AC-3, max channels 6
+    AC-3:
+      Max channels: 6
       Supported sample rates (kHz): 48 44.1 32
-      Maximum bit rate: 640 kHz
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
+      Maximum bit rate: 640 kb/s
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
     Supports_AI
     DC_36bit
     DC_30bit
     DC_Y444
-    Maximum TMDS clock: 225MHz
-  Extended tag: Video capability data block
-    YCbCr quantization: Selectable (via AVI YQ) (1)
-    RGB quantization: Selectable (via AVI Q) (1)
-    PT scan behaviour: Support both over- and underscan (3)
-    IT scan behaviour: Always Underscanned (2)
-    CE scan behaviour: Support both over- and underscan (3)
-Underscans PC formats by default
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-0 native detailed modes
-Detailed mode: Clock 148.500 MHz, 576 mm x 324 mm
-               1920 2448 2492 2640 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 50 Hz, HorFreq: 56250 Hz
-Detailed mode: Clock 148.500 MHz, 576 mm x 324 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 74.250 MHz, 576 mm x 324 mm
-               1280 1720 1760 1980 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 50 Hz, HorFreq: 37500 Hz
-Detailed mode: Clock 74.250 MHz, 576 mm x 324 mm
-               1920 2448 2492 2640 hborder 0
-                540  542  547  562 vborder 0
-               +hsync +vsync interlaced 
-               VertFreq: 50 Hz, HorFreq: 28125 Hz
-Checksum: 0xe3 (valid)
-
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 24 - 60 Hz
-  Horizontal Freq: 15625 - 67500 Hz
-  Maximum Clock: 148.500 MHz
+    Maximum TMDS clock: 225 MHz
+    Supported Content Types:
+      Graphics
+      Photo
+      Cinema
+      Game
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz (576 mm x 324 mm)
+                 Hfront  528 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 4:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (576 mm x 324 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 5:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz (576 mm x 324 mm)
+                 Hfront  440 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+    DTD 6:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz (576 mm x 324 mm)
+                 Hfront  528 Hsync  44 Hback 148 Hpol P
+                 Vfront    2 Vsync   5 Vback  15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback  15 Vpol P Vback  +0.5 Even Field
+Checksum: 0xe3

@@ -1,65 +1,55 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0010ac11f04c305231
-1d140103802f1e782eee95a3544c9926
-0f5054a54b00714f8180b30001010101
-01010101010121399030621a274068b0
-3600da281100001c000000ff00483733
-35483037433152304c0a000000fc0044
-454c4c203232303957410a20000000fd
-00384b1e5310000a202020202020000a
+00 ff ff ff ff ff ff 00 10 ac 11 f0 4c 30 52 31
+1d 14 01 03 80 2f 1e 78 2e ee 95 a3 54 4c 99 26
+0f 50 54 a5 4b 00 71 4f 81 80 b3 00 01 01 01 01
+01 01 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0
+36 00 da 28 11 00 00 1c 00 00 00 ff 00 48 37 33
+35 48 30 37 43 31 52 30 4c 0a 00 00 00 fc 00 44
+45 4c 4c 20 32 32 30 39 57 41 0a 20 00 00 00 fd
+00 38 4b 1e 53 10 00 0a 20 20 20 20 20 20 00 0a
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   10 ac 11 f0 4c 30 52 31 1d 14
-version:         01 03
-basic params:    80 2f 1e 78 2e
-chroma info:     ee 95 a3 54 4c 99 26 0f 50 54
-established:     a5 4b 00
-standard:        71 4f 81 80 b3 00 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    21 39 90 30 62 1a 27 40 68 b0 36 00 da 28 11 00 00 1c
-descriptor 2:    00 00 00 ff 00 48 37 33 35 48 30 37 43 31 52 30 4c 0a
-descriptor 3:    00 00 00 fc 00 44 45 4c 4c 20 32 32 30 39 57 41 0a 20
-descriptor 4:    00 00 00 fd 00 38 4b 1e 53 10 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        0a
+----------------
 
-EDID version: 1.3
-Manufacturer: DEL Model f011 Serial Number --
-Made in week 29 of 2010
-Digital display
-Maximum image size: 47 cm x 30 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1503, 0.0595
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-Detailed mode: Clock 146.250 MHz, 474 mm x 296 mm
-               1680 1784 1960 2240 hborder 0
-               1050 1053 1059 1089 vborder 0
-               -hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 65290 Hz
-Serial number: --
-Monitor name: DELL 2209WA
-Monitor ranges (GTF): 56-75Hz V, 30-83kHz H, max dotclock 160MHz
-Checksum: 0xa (valid)
-EDID block does NOT conform to EDID 1.3!
-	sRGB is signaled, but the chromaticities do not match
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 61457
+    Serial Number: ...
+    Made in: week 29 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 47 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x15:  1152x864    75.000 Hz   4:3    67.500 kHz 108.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   59.954 Hz   8:5    65.290 kHz 146.250 MHz (474 mm x 296 mm)
+                 Hfront  104 Hsync 176 Hback 280 Hpol N
+                 Vfront    3 Vsync   6 Vback  30 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: 'DELL 2209WA'
+  Display Range Limits:
+    Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 160 MHz
+Checksum: 0xa

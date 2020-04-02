@@ -1,59 +1,49 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004ca3503400000000
-000e0103801d15780a43de9857528c27
-21505400000001010101010101010101
-010101010101302a7820511a10403070
-14001ed61000001925237820511a1040
-307014001ed610000019000000fe0046
-343837360431343150340a20000000fe
-00f0dcc7bf875c220002010a20200072
+00 ff ff ff ff ff ff 00 4c a3 50 34 00 00 00 00
+00 0e 01 03 80 1d 15 78 0a 43 de 98 57 52 8c 27
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 78 20 51 1a 10 40 30 70
+14 00 1e d6 10 00 00 19 25 23 78 20 51 1a 10 40
+30 70 14 00 1e d6 10 00 00 19 00 00 00 fe 00 46
+34 38 37 36 04 31 34 31 50 34 0a 20 00 00 00 fe
+00 f0 dc c7 bf 87 5c 22 00 02 01 0a 20 20 00 72
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c a3 50 34 00 00 00 00 00 0e
-version:         01 03
-basic params:    80 1d 15 78 0a
-chroma info:     43 de 98 57 52 8c 27 21 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    30 2a 78 20 51 1a 10 40 30 70 14 00 1e d6 10 00 00 19
-descriptor 2:    25 23 78 20 51 1a 10 40 30 70 14 00 1e d6 10 00 00 19
-descriptor 3:    00 00 00 fe 00 46 34 38 37 36 04 31 34 31 50 34 0a 20
-descriptor 4:    00 00 00 fe 00 f0 dc c7 bf 87 5c 22 00 02 01 0a 20 20
-extensions:      00
-checksum:        72
+----------------
 
-EDID version: 1.3
-Manufacturer: SEC Model 3450 Serial Number --
-Digital display
-Maximum image size: 29 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5947, 0.3398
-  Green: 0.3203, 0.5498
-  Blue:  0.1552, 0.1298
-  White: 0.3154, 0.3300
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 108.000 MHz, 286 mm x 214 mm
-               1400 1448 1560 1688 hborder 0
-               1050 1051 1055 1066 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 63981 Hz
-Detailed mode: Clock 89.970 MHz, 286 mm x 214 mm
-               1400 1448 1560 1688 hborder 0
-               1050 1051 1055 1066 vborder 0
-               -hsync -vsync 
-               VertFreq: 49 Hz, HorFreq: 53299 Hz
-ASCII string: F4876
-ASCII string: 
-Checksum: 0x72 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 13392
+    Made in: 2004
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5947, 0.3398
+    Green: 0.3203, 0.5498
+    Blue : 0.1552, 0.1298
+    White: 0.3154, 0.3300
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1400x1050   60.020 Hz   4:3    63.981 kHz 108.000 MHz (DE timing only, 286 mm x 214 mm)
+                 Hfront   48 Hsync 112 Hback 128 Hpol N
+                 Vfront    1 Vsync   4 Vback  11 Vpol N
+    DTD 2:  1400x1050   50.000 Hz   4:3    53.300 kHz  89.970 MHz (DE timing only, 286 mm x 214 mm)
+                 Hfront   48 Hsync 112 Hback 128 Hpol N
+                 Vfront    1 Vsync   4 Vback  11 Vpol N
+    SPWG Module Revision: 25
+    SPWG Descriptor #3:
+      SPWG PC Maker P/N: 'F4876'
+      SPWG LCD Supplier EEDID Revision: 4
+      SPWG Manufacturer P/N: '141P4'
+    SPWG Descriptor #4:
+      SMBUS Values: 0xf0 0xdc 0xc7 0xbf 0x87 0x5c 0x22 0x00
+      LVDS Channels: 2
+      Panel Self Test Present
+Checksum: 0x72

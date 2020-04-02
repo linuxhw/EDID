@@ -1,71 +1,51 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00410c5c10d1bf0000
-1d070100081c157de8c2f29e574e9927
-10484f25480045590000000000000000
-000000000000d50980a0205e63101060
-520804c31000001ad50980a020903110
-1060c20004c31000001c000000000000
-00000000000000000000000000000000
-000000000000000000000000000000d3
+00 ff ff ff ff ff ff 00 41 0c 5c 10 d1 bf 00 00
+1d 07 01 00 08 1c 15 7d e8 c2 f2 9e 57 4e 99 27
+10 48 4f 25 48 00 45 59 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 d5 09 80 a0 20 5e 63 10 10 60
+52 08 04 c3 10 00 00 1a d5 09 80 a0 20 90 31 10
+10 60 c2 00 04 c3 10 00 00 1c 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 d3
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   41 0c 5c 10 d1 bf 00 00 1d 07
-version:         01 00
-basic params:    08 1c 15 7d e8
-chroma info:     c2 f2 9e 57 4e 99 27 10 48 4f
-established:     25 48 00
-standard:        45 59 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 1:    d5 09 80 a0 20 5e 63 10 10 60 52 08 04 c3 10 00 00 1a
-descriptor 2:    d5 09 80 a0 20 90 31 10 10 60 c2 00 04 c3 10 00 00 1c
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      00
-checksum:        d3
+----------------
 
-EDID version: 1.0
-Manufacturer: PHL Model 105c Serial Number --
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate 
-Maximum image size: 28 cm x 21 cm
-Gamma: 2.25
-DPMS levels: Standby Suspend Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6201, 0.3398
-  Green: 0.3046, 0.5996
-  Blue:  0.1552, 0.0654
-  White: 0.2812, 0.3105
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  800x600@85Hz 4:3 HorFreq: 53700 Hz Clock: 56.250 MHz
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-Detailed mode: Clock 25.170 MHz, 260 mm x 195 mm
-                640  656  752  800 hborder 0
-                350  387  389  449 vborder 0
-               +hsync -vsync 
-               VertFreq: 70 Hz, HorFreq: 31462 Hz
-Detailed mode: Clock 25.170 MHz, 260 mm x 195 mm
-                640  656  752  800 hborder 0
-                400  412  414  449 vborder 0
-               -hsync +vsync 
-               VertFreq: 70 Hz, HorFreq: 31462 Hz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 0
-Checksum: 0xd3 (valid)
-EDID block does NOT conform to EDID 1.0!
-	Has descriptor blocks other than detailed timings
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.0
+  Vendor & Product Identification:
+    Manufacturer: PHL
+    Model: 4188
+    Serial Number: ...
+    Made in: week 29 of 1997
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate
+    Maximum image size: 28 cm x 21 cm
+    Gamma: 2.25
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6201, 0.3398
+    Green: 0.3046, 0.5996
+    Blue : 0.1552, 0.0654
+    White: 0.2812, 0.3105
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x0c:   800x600    85.061 Hz   4:3    53.674 kHz  56.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:   640x350    70.072 Hz  64:35   31.462 kHz  25.170 MHz (260 mm x 195 mm)
+                 Hfront   16 Hsync  96 Hback  48 Hpol P
+                 Vfront   37 Vsync   2 Vback  60 Vpol N
+    DTD 2:   640x400    70.072 Hz   8:5    31.462 kHz  25.170 MHz (260 mm x 195 mm)
+                 Hfront   16 Hsync  96 Hback  48 Hpol N
+                 Vfront   12 Vsync   2 Vback  35 Vpol P
+    Empty Descriptor
+    Empty Descriptor
+Checksum: 0xd3

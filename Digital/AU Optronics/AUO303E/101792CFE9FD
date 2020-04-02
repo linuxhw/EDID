@@ -1,55 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006af3e3000000000
-00160104951f117802a0959959529226
-21505400000001010101010101010101
-010101010101002d409061843c30402a
-330035ae100000180000000f00000000
-00000000000000000020000000fe0041
-554f0a202020202020202020000000fe
-004231343052544e30332e30200a009d
+00 ff ff ff ff ff ff 00 06 af 3e 30 00 00 00 00
+00 16 01 04 95 1f 11 78 02 a0 95 99 59 52 92 26
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 2d 40 90 61 84 3c 30 40 2a
+33 00 35 ae 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 34 30 52 54 4e 30 33 2e 30 20 0a 00 9d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 af 3e 30 00 00 00 00 00 16
-version:         01 04
-basic params:    95 1f 11 78 02
-chroma info:     a0 95 99 59 52 92 26 21 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    00 2d 40 90 61 84 3c 30 40 2a 33 00 35 ae 10 00 00 18
-descriptor 2:    00 00 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20
-descriptor 3:    00 00 00 fe 00 41 55 4f 0a 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 42 31 34 30 52 54 4e 30 33 2e 30 20 0a
-extensions:      00
-checksum:        9d
+----------------
 
-EDID version: 1.4
-Manufacturer: AUO Model 303e Serial Number --
-Made in year 2012
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5996, 0.3496
-  Green: 0.3203, 0.5703
-  Blue:  0.1503, 0.1298
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 115.200 MHz, 309 mm x 174 mm
-               1600 1664 1706 2000 hborder 0
-                900  903  906  960 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 57600 Hz
-Manufacturer-specified data, tag 15
-ASCII string: AUO
-ASCII string: B140RTN03.0 
-Checksum: 0x9d (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 12350
+    Made in: 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5996, 0.3496
+    Green: 0.3203, 0.5703
+    Blue : 0.1503, 0.1298
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.000 Hz  16:9    57.600 kHz 115.200 MHz (309 mm x 174 mm)
+                 Hfront   64 Hsync  42 Hback 294 Hpol N
+                 Vfront    3 Vsync   3 Vback  54 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B140RTN03.0 '
+Checksum: 0x9d

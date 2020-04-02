@@ -1,61 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000dae401300000000
-02160103801d10780acf15a855549d26
-0b505400000001010101010101010101
-010101010101262740a0608432303020
-6a0026a51000001aa82040a060843230
-30206a0026a51000001a201a40a06084
-323030206a0026a51000001a000000fe
-004e3133334647452d4c33310a20006c
+00 ff ff ff ff ff ff 00 0d ae 40 13 00 00 00 00
+02 16 01 03 80 1d 10 78 0a cf 15 a8 55 54 9d 26
+0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 26 27 40 a0 60 84 32 30 30 20
+6a 00 26 a5 10 00 00 1a a8 20 40 a0 60 84 32 30
+30 20 6a 00 26 a5 10 00 00 1a 20 1a 40 a0 60 84
+32 30 30 20 6a 00 26 a5 10 00 00 1a 00 00 00 fe
+00 4e 31 33 33 46 47 45 2d 4c 33 31 0a 20 00 6c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0d ae 40 13 00 00 00 00 02 16
-version:         01 03
-basic params:    80 1d 10 78 0a
-chroma info:     cf 15 a8 55 54 9d 26 0b 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    26 27 40 a0 60 84 32 30 30 20 6a 00 26 a5 10 00 00 1a
-descriptor 2:    a8 20 40 a0 60 84 32 30 30 20 6a 00 26 a5 10 00 00 1a
-descriptor 3:    20 1a 40 a0 60 84 32 30 30 20 6a 00 26 a5 10 00 00 1a
-descriptor 4:    00 00 00 fe 00 4e 31 33 33 46 47 45 2d 4c 33 31 0a 20
-extensions:      00
-checksum:        6c
+----------------
 
-EDID version: 1.3
-Manufacturer: CMN Model 1340 Serial Number --
-Made in week 2 of 2012
-Digital display
-Maximum image size: 29 cm x 16 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6591, 0.3320
-  Green: 0.3310, 0.6162
-  Blue:  0.1484, 0.0439
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 100.220 MHz, 294 mm x 165 mm
-               1600 1648 1680 1760 hborder 0
-                900  906  916  950 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 56943 Hz
-Detailed mode: Clock 83.600 MHz, 294 mm x 165 mm
-               1600 1648 1680 1760 hborder 0
-                900  906  916  950 vborder 0
-               +hsync -vsync 
-               VertFreq: 50 Hz, HorFreq: 47500 Hz
-Detailed mode: Clock 66.880 MHz, 294 mm x 165 mm
-               1600 1648 1680 1760 hborder 0
-                900  906  916  950 vborder 0
-               +hsync -vsync 
-               VertFreq: 40 Hz, HorFreq: 38000 Hz
-ASCII string: N133FGE-L31
-Checksum: 0x6c (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 4928
+    Made in: week 2 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 16 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6591, 0.3320
+    Green: 0.3310, 0.6162
+    Blue : 0.1484, 0.0439
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    59.940 Hz  16:9    56.943 kHz 100.220 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    6 Vsync  10 Vback  34 Vpol N
+    DTD 2:  1600x900    50.000 Hz  16:9    47.500 kHz  83.600 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    6 Vsync  10 Vback  34 Vpol N
+    DTD 3:  1600x900    40.000 Hz  16:9    38.000 kHz  66.880 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    6 Vsync  10 Vback  34 Vpol N
+    Alphanumeric Data String: 'N133FGE-L31'
+Checksum: 0x6c

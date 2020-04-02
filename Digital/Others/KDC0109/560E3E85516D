@@ -1,59 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff002c83090100000000
-021b0104951a0e7802b0909758549226
-1d505400000001010101010101010101
-010101010101ce1d56f4500016303020
-360000901000001ae21356f450001630
-30203600009010000000000000000000
-000000000000000000000000000000fe
-004b443131364e3035333042303700fe
+00 ff ff ff ff ff ff 00 2c 83 09 01 00 00 00 00
+02 1b 01 04 95 1a 0e 78 02 b0 90 97 58 54 92 26
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 f4 50 00 16 30 30 20
+36 00 00 90 10 00 00 1a e2 13 56 f4 50 00 16 30
+30 20 36 00 00 90 10 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 4b 44 31 31 36 4e 30 35 33 30 42 30 37 00 fe
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   2c 83 09 01 00 00 00 00 02 1b
-version:         01 04
-basic params:    95 1a 0e 78 02
-chroma info:     b0 90 97 58 54 92 26 1d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    ce 1d 56 f4 50 00 16 30 30 20 36 00 00 90 10 00 00 1a
-descriptor 2:    e2 13 56 f4 50 00 16 30 30 20 36 00 00 90 10 00 00 00
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 fe 00 4b 44 31 31 36 4e 30 35 33 30 42 30 37
-extensions:      00
-checksum:        fe
+----------------
 
-EDID version: 1.4
-Manufacturer: KDC Model 109 Serial Number --
-Made in week 2 of 2017
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 26 cm x 14 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5917, 0.3466
-  Green: 0.3281, 0.5703
-  Blue:  0.1503, 0.1142
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 76.300 MHz, 256 mm x 144 mm
-               1366 1414 1446 1610 hborder 0
-                768  771  777  790 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 47391 Hz
-Detailed mode: Clock 50.900 MHz, 256 mm x 144 mm
-               1366 1414 1446 1610 hborder 0
-                768  771  777  790 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 40 Hz, HorFreq: 31614 Hz
-Manufacturer-specified data, tag 0
-ASCII string: KD116N0530B07
-Checksum: 0xfe (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: KDC
+    Model: 265
+    Made in: week 2 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5917, 0.3466
+    Green: 0.3281, 0.5703
+    Blue : 0.1503, 0.1142
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.989 Hz 683:384  47.391 kHz  76.300 MHz (256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback 164 Hpol P
+                 Vfront    3 Vsync   6 Vback  13 Vpol N
+    DTD 2:  1366x768    40.019 Hz 683:384  31.615 kHz  50.900 MHz (analog composite, sync-on-green, 256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback 164 Hpol N
+                 Vfront    3 Vsync   6 Vback  13 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'KD116N0530B07'
+Checksum: 0xfe

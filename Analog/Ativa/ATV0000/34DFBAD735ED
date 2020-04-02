@@ -1,73 +1,58 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000696000000000000
-021601046a0000ff8899aaa3544d9524
-195154a10800a940b300818081c08100
-8140950001001b2150a051001e304888
-35000000000000000e1f008051001e30
-408037000000000000001a3680a07038
-1f4030203500000000000000000000fc
-004d5432370a202020202020202000e0
+00 ff ff ff ff ff ff 00 06 96 00 00 00 00 00 00
+02 16 01 04 6a 00 00 ff 88 99 aa a3 54 4d 95 24
+19 51 54 a1 08 00 a9 40 b3 00 81 80 81 c0 81 00
+81 40 95 00 01 00 1b 21 50 a0 51 00 1e 30 48 88
+35 00 00 00 00 00 00 00 0e 1f 00 80 51 00 1e 30
+40 80 37 00 00 00 00 00 00 00 1a 36 80 a0 70 38
+1f 40 30 20 35 00 00 00 00 00 00 00 00 00 00 fc
+00 4d 54 32 37 0a 20 20 20 20 20 20 20 20 00 e0
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 96 00 00 00 00 00 00 02 16
-version:         01 04
-basic params:    6a 00 00 ff 88
-chroma info:     99 aa a3 54 4d 95 24 19 51 54
-established:     a1 08 00
-standard:        a9 40 b3 00 81 80 81 c0 81 00 81 40 95 00 01 00
-descriptor 1:    1b 21 50 a0 51 00 1e 30 48 88 35 00 00 00 00 00 00 00
-descriptor 2:    0e 1f 00 80 51 00 1e 30 40 80 37 00 00 00 00 00 00 00
-descriptor 3:    1a 36 80 a0 70 38 1f 40 30 20 35 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 fc 00 4d 54 32 37 0a 20 20 20 20 20 20 20 20
-extensions:      00
-checksum:        e0
+----------------
 
-EDID version: 1.4
-Manufacturer: ATV Model 0 Serial Number --
-Made in week 2 of 2012
-Analog display, Input voltage level: 0.7/0.7 V
-Blank level equals black level
-Sync: Separate SyncOnGreen 
-Image size is variable
-Gamma is defined in an extension block
-DPMS levels: Standby
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6386, 0.3291
-  Green: 0.3027, 0.5830
-  Blue:  0.1425, 0.0996
-  White: 0.3183, 0.3300
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1280x720@60Hz 16:9
-  1280x800@60Hz 16:10
-  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  256x160@60Hz 16:10
-Detailed mode: Clock 84.750 MHz, 0 mm x 0 mm
-               1360 1432 1568 1776 hborder 0
-                768  771  776  798 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 59 Hz, HorFreq: 47719 Hz
-Detailed mode: Clock 79.500 MHz, 0 mm x 0 mm
-               1280 1344 1472 1664 hborder 0
-                768  771  778  798 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 59 Hz, HorFreq: 47776 Hz
-Detailed mode: Clock 138.500 MHz, 0 mm x 0 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 59 Hz, HorFreq: 66586 Hz
-Monitor name: MT27
-Checksum: 0xe0 (valid)
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: ATV
+    Model: 0
+    Made in: week 2 of 2012
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Blank level equals black level
+    Sync: Separate SyncOnGreen
+    Image size is variable
+    Gamma is defined in an extension block
+    DPMS levels: Standby
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6386, 0.3291
+    Green: 0.3027, 0.5830
+    Blue : 0.1425, 0.0996
+    White: 0.3183, 0.3300
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1360x768    59.799 Hz  85:48   47.720 kHz  84.750 MHz (analog composite, sync-on-green)
+                 Hfront   72 Hsync 136 Hback 208 Hpol N
+                 Vfront    3 Vsync   5 Vback  22 Vpol N
+    DTD 2:  1280x768    59.870 Hz   5:3    47.776 kHz  79.500 MHz (analog composite, sync-on-green)
+                 Hfront   64 Hsync 128 Hback 192 Hpol N
+                 Vfront    3 Vsync   7 Vback  20 Vpol N
+    DTD 3:  1920x1080   59.934 Hz  16:9    66.587 kHz 138.500 MHz (analog composite, sync-on-green)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    Display Product Name: 'MT27'
+Checksum: 0xe0

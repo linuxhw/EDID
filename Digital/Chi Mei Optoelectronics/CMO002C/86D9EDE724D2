@@ -1,53 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000daf2c0000000000
-00140103801f12780a0cc5965b529229
-24505400000001010101010101010101
-010101010101bc1b5684500016303020
-140035ae100000180000000000202020
-20202020202020202020000000fe0043
-4d4f0a202020202020202020000000fe
-0042543134304757303256390a2000ed
+00 ff ff ff ff ff ff 00 0d af 2c 00 00 00 00 00
+00 14 01 03 80 1f 12 78 0a 0c c5 96 5b 52 92 29
+24 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 1b 56 84 50 00 16 30 30 20
+14 00 35 ae 10 00 00 18 00 00 00 00 00 20 20 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fe 00 43
+4d 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 54 31 34 30 47 57 30 32 56 39 0a 20 00 ed
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0d af 2c 00 00 00 00 00 00 14
-version:         01 03
-basic params:    80 1f 12 78 0a
-chroma info:     0c c5 96 5b 52 92 29 24 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    bc 1b 56 84 50 00 16 30 30 20 14 00 35 ae 10 00 00 18
-descriptor 2:    00 00 00 00 00 20 20 20 20 20 20 20 20 20 20 20 20 20
-descriptor 3:    00 00 00 fe 00 43 4d 4f 0a 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 42 54 31 34 30 47 57 30 32 56 39 0a 20
-extensions:      00
-checksum:        ed
+----------------
 
-EDID version: 1.3
-Manufacturer: CMO Model 2c Serial Number --
-Made in year 2010
-Digital display
-Maximum image size: 31 cm x 18 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5859, 0.3554
-  Green: 0.3232, 0.5703
-  Blue:  0.1630, 0.1406
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 71.000 MHz, 309 mm x 174 mm
-               1366 1414 1446 1498 hborder 0
-                768  769  773  790 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 47396 Hz
-Manufacturer-specified data, tag 0
-ASCII string: CMO
-ASCII string: BT140GW02V9
-Checksum: 0xed (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CMO
+    Model: 44
+    Made in: 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 31 cm x 18 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5859, 0.3554
+    Green: 0.3232, 0.5703
+    Blue : 0.1630, 0.1406
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.996 Hz 683:384  47.397 kHz  71.000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback  52 Hpol N
+                 Vfront    1 Vsync   4 Vback  17 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 20 20 20 20 20 20 20 20 20 20 20 20 20 '...             '
+    Alphanumeric Data String: 'CMO'
+    Alphanumeric Data String: 'BT140GW02V9'
+Checksum: 0xed

@@ -1,60 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e43b0300000000
-00160104902213780a61d59e5e5b9a26
-1a505400000001010101010101010101
-010101010101e21d56b4500038302430
-350058c210000019ec1356c650002e30
-2430350058c210000019000000fe0035
-33483539803135365748340a00000000
-00004131960000000001010a202000ac
+00 ff ff ff ff ff ff 00 30 e4 3b 03 00 00 00 00
+00 16 01 04 90 22 13 78 0a 61 d5 9e 5e 5b 9a 26
+1a 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 e2 1d 56 b4 50 00 38 30 24 30
+35 00 58 c2 10 00 00 19 ec 13 56 c6 50 00 2e 30
+24 30 35 00 58 c2 10 00 00 19 00 00 00 fe 00 35
+33 48 35 39 80 31 35 36 57 48 34 0a 00 00 00 00
+00 00 41 31 96 00 00 00 00 01 01 0a 20 20 00 ac
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 3b 03 00 00 00 00 00 16
-version:         01 04
-basic params:    90 22 13 78 0a
-chroma info:     61 d5 9e 5e 5b 9a 26 1a 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    e2 1d 56 b4 50 00 38 30 24 30 35 00 58 c2 10 00 00 19
-descriptor 2:    ec 13 56 c6 50 00 2e 30 24 30 35 00 58 c2 10 00 00 19
-descriptor 3:    00 00 00 fe 00 35 33 48 35 39 80 31 35 36 57 48 34 0a
-descriptor 4:    00 00 00 00 00 00 41 31 96 00 00 00 00 01 01 0a 20 20
-extensions:      00
-checksum:        ac
+----------------
 
-EDID version: 1.4
-Manufacturer: LGD Model 33b Serial Number --
-Made in year 2012
-Digital display
-6 bits per primary color channel
-Digital interface is not defined
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6181, 0.3691
-  Green: 0.3554, 0.6025
-  Blue:  0.1513, 0.1025
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 76.500 MHz, 344 mm x 194 mm
-               1366 1402 1450 1546 hborder 0
-                768  771  776  824 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 49482 Hz
-Detailed mode: Clock 51.000 MHz, 344 mm x 194 mm
-               1366 1402 1450 1564 hborder 0
-                768  771  776  814 vborder 0
-               -hsync -vsync 
-               VertFreq: 40 Hz, HorFreq: 32608 Hz
-ASCII string: 53H59
-Manufacturer-specified data, tag 0
-Checksum: 0xac (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 827
+    Made in: 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6181, 0.3691
+    Green: 0.3554, 0.6025
+    Blue : 0.1513, 0.1025
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.052 Hz 683:384  49.483 kHz  76.500 MHz (344 mm x 194 mm)
+                 Hfront   36 Hsync  48 Hback  96 Hpol N
+                 Vfront    3 Vsync   5 Vback  48 Vpol N
+    DTD 2:  1366x768    40.060 Hz 683:384  32.609 kHz  51.000 MHz (344 mm x 194 mm)
+                 Hfront   36 Hsync  48 Hback 114 Hpol N
+                 Vfront    3 Vsync   5 Vback  38 Vpol N
+    Alphanumeric Data String: '53H59'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 96 00 00 00 00 01 01 0a 20 20 '....A1........  '
+Checksum: 0xac

@@ -1,52 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff003064005301010101
-2d0f0102801d15780abdad99554c8a26
-224e4f00000061400101010101010101
-01010101010164190040410026301888
-36001fd7100000180000000f00064202
-44010304072224030800000000fe0054
-4d444953504c41590a202020000000fe
-004c544431343145434a560a20200098
+00 ff ff ff ff ff ff 00 30 64 00 53 01 01 01 01
+2d 0f 01 02 80 1d 15 78 0a bd ad 99 55 4c 8a 26
+22 4e 4f 00 00 00 61 40 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 1f d7 10 00 00 18 00 00 00 0f 00 06 42 02
+44 01 03 04 07 22 24 03 08 00 00 00 00 fe 00 54
+4d 44 49 53 50 4c 41 59 0a 20 20 20 00 00 00 fe
+00 4c 54 44 31 34 31 45 43 4a 56 0a 20 20 00 98
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 64 00 53 01 01 01 01 2d 0f
-version:         01 02
-basic params:    80 1d 15 78 0a
-chroma info:     bd ad 99 55 4c 8a 26 22 4e 4f
-established:     00 00 00
-standard:        61 40 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    64 19 00 40 41 00 26 30 18 88 36 00 1f d7 10 00 00 18
-descriptor 2:    00 00 00 0f 00 06 42 02 44 01 03 04 07 22 24 03 08 00
-descriptor 3:    00 00 00 fe 00 54 4d 44 49 53 50 4c 41 59 0a 20 20 20
-descriptor 4:    00 00 00 fe 00 4c 54 44 31 34 31 45 43 4a 56 0a 20 20
-extensions:      00
-checksum:        98
+----------------
 
-EDID version: 1.2
-Manufacturer: LCD Model 5300 Serial Number --
-Digital display
-Maximum image size: 29 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5996, 0.3349
-  Green: 0.2998, 0.5400
-  Blue:  0.1503, 0.1347
-  White: 0.3076, 0.3095
-Established timings supported:
-Standard timings supported:
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Detailed mode: Clock 65.000 MHz, 287 mm x 215 mm
-               1024 1048 1184 1344 hborder 0
-                768  771  777  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48363 Hz
-Manufacturer-specified data, tag 15
-ASCII string: TMDISPLAY
-ASCII string: LTD141ECJV
-Checksum: 0x98 (valid)
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: LCD
+    Model: 21248
+    Serial Number: ...
+    Made in: week 45 of 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5996, 0.3349
+    Green: 0.2998, 0.5400
+    Blue : 0.1503, 0.1347
+    White: 0.3076, 0.3095
+  Established Timings I & II: none
+  Standard Timings:
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz (287 mm x 215 mm)
+                 Hfront   24 Hsync 136 Hback 160 Hpol N
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 06 42 02 44 01 03 04 07 22 24 03 08 00 '....B.D...."$...'
+    Alphanumeric Data String: 'TMDISPLAY'
+    Alphanumeric Data String: 'LTD141ECJV'
+Checksum: 0x98

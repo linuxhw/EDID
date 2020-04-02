@@ -1,68 +1,54 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0042931506d4fe0000
-140e0103081e1764e81726a061589a2e
-275439adce0001010101010101010101
-010101010101c31e0020410020301060
-130030e41000001e000000fc0043592d
-3536350a202020202020000000fd003c
-4b1e3c080000000000000000000000ff
-0046474f5a3435303036353233360088
+00 ff ff ff ff ff ff 00 42 93 15 06 d4 fe 00 00
+14 0e 01 03 08 1e 17 64 e8 17 26 a0 61 58 9a 2e
+27 54 39 ad ce 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c3 1e 00 20 41 00 20 30 10 60
+13 00 30 e4 10 00 00 1e 00 00 00 fc 00 43 59 2d
+35 36 35 0a 20 20 20 20 20 20 00 00 00 fd 00 3c
+4b 1e 3c 08 00 00 00 00 00 00 00 00 00 00 00 ff
+00 46 47 4f 5a 34 35 30 30 36 35 32 33 36 00 88
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   42 93 15 06 d4 fe 00 00 14 0e
-version:         01 03
-basic params:    08 1e 17 64 e8
-chroma info:     17 26 a0 61 58 9a 2e 27 54 39
-established:     ad ce 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    c3 1e 00 20 41 00 20 30 10 60 13 00 30 e4 10 00 00 1e
-descriptor 2:    00 00 00 fc 00 43 59 2d 35 36 35 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fd 00 3c 4b 1e 3c 08 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 ff 00 46 47 4f 5a 34 35 30 30 36 35 32 33 36
-extensions:      00
-checksum:        88
+----------------
 
-EDID version: 1.3
-Manufacturer: PTS Model 615 Serial Number --
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate 
-Maximum image size: 30 cm x 23 cm
-Gamma: 2.00
-DPMS levels: Standby Suspend Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6250, 0.3798
-  Green: 0.3447, 0.6044
-  Blue:  0.1796, 0.1542
-  White: 0.3291, 0.2246
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-Detailed mode: Clock 78.750 MHz, 304 mm x 228 mm
-               1024 1040 1136 1312 hborder 0
-                768  769  772  800 vborder 0
-               +hsync +vsync 
-               VertFreq: 75 Hz, HorFreq: 60022 Hz
-Monitor name: CY-565
-Monitor ranges (GTF): 60-75Hz V, 30-60kHz H, max dotclock 80MHz
-Serial number: --
-Checksum: 0x88 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing preferred timing
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 75 Hz
-  Horizontal Freq: 31469 - 60022 Hz
-  Maximum Clock: 78.750 MHz
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PTS
+    Model: 1557
+    Serial Number: ...
+    Made in: week 20 of 2004
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate
+    Maximum image size: 30 cm x 23 cm
+    Gamma: 2.00
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6250, 0.3798
+    Green: 0.3447, 0.6044
+    Blue : 0.1796, 0.1542
+    White: 0.3291, 0.2246
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz (304 mm x 228 mm)
+                 Hfront   16 Hsync  96 Hback 176 Hpol P
+                 Vfront    1 Vsync   3 Vback  28 Vpol P
+    Display Product Name: 'CY-565'
+  Display Range Limits:
+    Monitor ranges (GTF): 60-75 Hz V, 30-60 kHz H, max dotclock 80 MHz
+    Display Product Serial Number: ...
+Checksum: 0x88

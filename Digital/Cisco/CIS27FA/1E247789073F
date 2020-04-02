@@ -1,88 +1,78 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000d33fa2700000000
-0018010380331d780eee91a3544c9926
-0f50542108008bc00101010101010101
-010101010101023a801871382d40582c
-4500fe221100001e000000fd00383d1e
-530f000a202020202020000000fc0044
-5838300a2020202020202020000000ff
-00300a2020202020202020202020011b
-02030f81449004030165030c00100001
-1d007251d01e206e285500fe22110000
-1e8c0ad08a20e02d10103e9600fe2211
-00001e00000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000082
+00 ff ff ff ff ff ff 00 0d 33 fa 27 00 00 00 00
+00 18 01 03 80 33 1d 78 0e ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 8b c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fe 22 11 00 00 1e 00 00 00 fd 00 38 3d 1e
+53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 44
+58 38 30 0a 20 20 20 20 20 20 20 20 00 00 00 ff
+00 30 0a 20 20 20 20 20 20 20 20 20 20 20 01 1b
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0d 33 fa 27 00 00 00 00 00 18
-version:         01 03
-basic params:    80 33 1d 78 0e
-chroma info:     ee 91 a3 54 4c 99 26 0f 50 54
-established:     21 08 00
-standard:        8b c0 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 fe 22 11 00 00 1e
-descriptor 2:    00 00 00 fd 00 38 3d 1e 53 0f 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 44 58 38 30 0a 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 30 0a 20 20 20 20 20 20 20 20 20 20 20
-extensions:      01
-checksum:        1b
+02 03 0f 81 44 90 04 03 01 65 03 0c 00 10 00 01
+1d 00 72 51 d0 1e 20 6e 28 55 00 fe 22 11 00 00
+1e 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 fe 22 11
+00 00 1e 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 82
 
-EDID version: 1.3
-Manufacturer: CIS Model 27fa Serial Number --
-Made in year 2014
-Digital display
-Maximum image size: 51 cm x 29 cm
-Gamma: 2.20
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1503, 0.0595
-  White: 0.3125, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1360x765@60Hz 16:9
-Detailed mode: Clock 148.500 MHz, 510 mm x 290 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor ranges (GTF): 56-61Hz V, 30-83kHz H, max dotclock 150MHz
-Monitor name: DX80
-Serial number: --
-Has 1 extension blocks
-Checksum: 0x1b (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-11 bytes of CTA data
-  Video data block
-    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
-Underscans PC formats by default
-1 native detailed modes
-Detailed mode: Clock 74.250 MHz, 510 mm x 290 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Detailed mode: Clock 27.000 MHz, 510 mm x 290 mm
-                720  736  798  858 hborder 0
-                480  489  495  525 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 31468 Hz
-Checksum: 0x82 (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CIS
+    Model: 10234
+    Made in: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 51 cm x 29 cm
+    Gamma: 2.20
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    GTF     :  1360x768    60.000 Hz  16:9    47.700 kHz  84.715 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (510 mm x 290 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 56-61 Hz V, 30-83 kHz H, max dotclock 150 MHz
+    Display Product Name: 'DX80'
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0x1b
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans PC formats by default
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (native)
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (510 mm x 290 mm)
+                 Hfront  110 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+    DTD 3:   720x480    59.940 Hz   3:2    31.469 kHz  27.000 MHz (510 mm x 290 mm)
+                 Hfront   16 Hsync  62 Hback  60 Hpol P
+                 Vfront    9 Vsync   6 Vback  30 Vpol P
+Checksum: 0x82

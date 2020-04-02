@@ -1,66 +1,52 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004dd9048201010101
-011c0103807a44780a0dc9a057479827
-12484c2108008180a9c0714fb3000101
-010101010101023a801871382d40582c
-4500c2ad4200001e011d007251d01e20
-6e285500c2ad4200001e000000fc0053
-4f4e5920545620202a30300a000000fd
-00173e0f791e000a202020202020011d
+00 ff ff ff ff ff ff 00 4d d9 04 82 01 01 01 01
+01 1c 01 03 80 7a 44 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 21 08 00 81 80 a9 c0 71 4f b3 00 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 c2 ad 42 00 00 1e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 c2 ad 42 00 00 1e 00 00 00 fc 00 53
+4f 4e 59 20 54 56 20 20 2a 30 30 0a 00 00 00 fd
+00 17 3e 0f 79 1e 00 0a 20 20 20 20 20 20 01 1d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4d d9 04 82 01 01 01 01 01 1c
-version:         01 03
-basic params:    80 7a 44 78 0a
-chroma info:     0d c9 a0 57 47 98 27 12 48 4c
-established:     21 08 00
-standard:        81 80 a9 c0 71 4f b3 00 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 c2 ad 42 00 00 1e
-descriptor 2:    01 1d 00 72 51 d0 1e 20 6e 28 55 00 c2 ad 42 00 00 1e
-descriptor 3:    00 00 00 fc 00 53 4f 4e 59 20 54 56 20 20 2a 30 30 0a
-descriptor 4:    00 00 00 fd 00 17 3e 0f 79 1e 00 0a 20 20 20 20 20 20
-extensions:      01
-checksum:        1d
+----------------
 
-EDID version: 1.3
-Manufacturer: SNY Model 8204 Serial Number --
-Made in week 1 of 2018
-Digital display
-Maximum image size: 122 cm x 68 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6250, 0.3398
-  Green: 0.2802, 0.5947
-  Blue:  0.1552, 0.0703
-  White: 0.2832, 0.2978
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1600x900@60Hz 16:9
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-Detailed mode: Clock 148.500 MHz, 1218 mm x 685 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 74.250 MHz, 1218 mm x 685 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Monitor name: SONY TV  *00
-Monitor ranges (GTF): 23-62Hz V, 15-121kHz H, max dotclock 300MHz
-Has 1 extension blocks
-Checksum: 0x1d (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 75 Hz
-  Horizontal Freq: 31469 - 67500 Hz
-  Maximum Clock: 148.500 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SNY
+    Model: 33284
+    Serial Number: ...
+    Made in: week 1 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 122 cm x 68 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    DMT 0x15:  1152x864    75.000 Hz   4:3    67.500 kHz 108.000 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (1218 mm x 685 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 2:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (1218 mm x 685 mm)
+                 Hfront  110 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+    Display Product Name: 'SONY TV  *00'
+  Display Range Limits:
+    Monitor ranges (GTF): 23-62 Hz V, 15-121 kHz H, max dotclock 300 MHz
+  Extension blocks: 1
+Checksum: 0x1d

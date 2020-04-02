@@ -1,77 +1,62 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff005a63513658640000
-160801000f281ecde89029a255499b27
-11484c240380a959a94f8199818f714f
-614f314f6140a659403062b0324040c0
-13007c1d1100001e1a4f403062b03240
-40c013007c1d1100001e863d00c05100
-304040a01300631c1100001ebc340098
-51002a4010901300631c1100001e0092
+00 ff ff ff ff ff ff 00 5a 63 51 36 58 64 00 00
+16 08 01 00 0f 28 1e cd e8 90 29 a2 55 49 9b 27
+11 48 4c 24 03 80 a9 59 a9 4f 81 99 81 8f 71 4f
+61 4f 31 4f 61 40 a6 59 40 30 62 b0 32 40 40 c0
+13 00 7c 1d 11 00 00 1e 1a 4f 40 30 62 b0 32 40
+40 c0 13 00 7c 1d 11 00 00 1e 86 3d 00 c0 51 00
+30 40 40 a0 13 00 63 1c 11 00 00 1e bc 34 00 98
+51 00 2a 40 10 90 13 00 63 1c 11 00 00 1e 00 92
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   5a 63 51 36 58 64 00 00 16 08
-version:         01 00
-basic params:    0f 28 1e cd e8
-chroma info:     90 29 a2 55 49 9b 27 11 48 4c
-established:     24 03 80
-standard:        a9 59 a9 4f 81 99 81 8f 71 4f 61 4f 31 4f 61 40
-descriptor 1:    a6 59 40 30 62 b0 32 40 40 c0 13 00 7c 1d 11 00 00 1e
-descriptor 2:    1a 4f 40 30 62 b0 32 40 40 c0 13 00 7c 1d 11 00 00 1e
-descriptor 3:    86 3d 00 c0 51 00 30 40 40 a0 13 00 63 1c 11 00 00 1e
-descriptor 4:    bc 34 00 98 51 00 2a 40 10 90 13 00 63 1c 11 00 00 1e
-extensions:      00
-checksum:        92
+----------------
 
-EDID version: 1.0
-Manufacturer: VSC Model 3651 Serial Number --
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate Composite SyncOnGreen Serration 
-Maximum image size: 40 cm x 30 cm
-Gamma: 3.05
-DPMS levels: Standby Suspend Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6347, 0.3330
-  Green: 0.2851, 0.6054
-  Blue:  0.1523, 0.0683
-  White: 0.2832, 0.2978
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-  1152x870@75Hz 192:145 HorFreq: 67500 Hz Clock: 108.000 MHz
-Standard timings supported:
-  1600x1200@85Hz 4:3 HorFreq: 106300 Hz Clock: 229.500 MHz
-  1600x1200@75Hz 4:3 HorFreq: 93800 Hz Clock: 202.500 MHz
-  1280x1024@85Hz 5:4 HorFreq: 91100 Hz Clock: 157.500 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Detailed mode: Clock 229.500 MHz, 380 mm x 285 mm
-               1600 1664 1856 2160 hborder 0
-               1200 1201 1204 1250 vborder 0
-               +hsync +vsync 
-               VertFreq: 85 Hz, HorFreq: 106250 Hz
-Detailed mode: Clock 202.500 MHz, 380 mm x 285 mm
-               1600 1664 1856 2160 hborder 0
-               1200 1201 1204 1250 vborder 0
-               +hsync +vsync 
-               VertFreq: 75 Hz, HorFreq: 93750 Hz
-Detailed mode: Clock 157.500 MHz, 355 mm x 284 mm
-               1280 1344 1504 1728 hborder 0
-               1024 1025 1028 1072 vborder 0
-               +hsync +vsync 
-               VertFreq: 85 Hz, HorFreq: 91145 Hz
-Detailed mode: Clock 135.000 MHz, 355 mm x 284 mm
-               1280 1296 1440 1688 hborder 0
-               1024 1025 1028 1066 vborder 0
-               +hsync +vsync 
-               VertFreq: 75 Hz, HorFreq: 79976 Hz
-Checksum: 0x92 (valid)
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.0
+  Vendor & Product Identification:
+    Manufacturer: VSC
+    Model: 13905
+    Serial Number: ...
+    Made in: week 22 of 1998
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate Composite SyncOnGreen Serration
+    Maximum image size: 40 cm x 30 cm
+    Gamma: 3.05
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6347, 0.3330
+    Green: 0.2851, 0.6054
+    Blue : 0.1523, 0.0683
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+    Apple   :  1152x870    75.062 Hz 192:145  68.681 kHz 100.000 MHz
+  Standard Timings:
+    DMT 0x37:  1600x1200   85.000 Hz   4:3   106.250 kHz 229.500 MHz
+    DMT 0x36:  1600x1200   75.000 Hz   4:3    93.750 kHz 202.500 MHz
+    DMT 0x25:  1280x1024   85.024 Hz   5:4    91.146 kHz 157.500 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+    DMT 0x15:  1152x864    75.000 Hz   4:3    67.500 kHz 108.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1600x1200   85.000 Hz   4:3   106.250 kHz 229.500 MHz (380 mm x 285 mm)
+                 Hfront   64 Hsync 192 Hback 304 Hpol P
+                 Vfront    1 Vsync   3 Vback  46 Vpol P
+    DTD 2:  1600x1200   75.000 Hz   4:3    93.750 kHz 202.500 MHz (380 mm x 285 mm)
+                 Hfront   64 Hsync 192 Hback 304 Hpol P
+                 Vfront    1 Vsync   3 Vback  46 Vpol P
+    DTD 3:  1280x1024   85.024 Hz   5:4    91.146 kHz 157.500 MHz (355 mm x 284 mm)
+                 Hfront   64 Hsync 160 Hback 224 Hpol P
+                 Vfront    1 Vsync   3 Vback  44 Vpol P
+    DTD 4:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz (355 mm x 284 mm)
+                 Hfront   16 Hsync 144 Hback 248 Hpol P
+                 Vfront    1 Vsync   3 Vback  38 Vpol P
+Checksum: 0x92

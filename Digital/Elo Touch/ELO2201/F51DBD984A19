@@ -1,71 +1,57 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00158f0122801e0000
-251a0103812f1a782a3920a35951a025
-0f5054a3080081c0814081809500b300
-d1c001010101023a801871382d40582c
-4500dc0c1100001e662156aa51001e30
-468f3300dc0c1100001e000000fc0045
-4c4f20323230314c0a202020000000fd
-00324b205011000a20202020202000fe
+00 ff ff ff ff ff ff 00 15 8f 01 22 80 1e 00 00
+25 1a 01 03 81 2f 1a 78 2a 39 20 a3 59 51 a0 25
+0f 50 54 a3 08 00 81 c0 81 40 81 80 95 00 b3 00
+d1 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 dc 0c 11 00 00 1e 00 00 00 fc 00 45
+4c 4f 20 32 32 30 31 4c 0a 20 20 20 00 00 00 fd
+00 32 4b 20 50 11 00 0a 20 20 20 20 20 20 00 fe
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   15 8f 01 22 80 1e 00 00 25 1a
-version:         01 03
-basic params:    81 2f 1a 78 2a
-chroma info:     39 20 a3 59 51 a0 25 0f 50 54
-established:     a3 08 00
-standard:        81 c0 81 40 81 80 95 00 b3 00 d1 c0 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 dc 0c 11 00 00 1e
-descriptor 2:    66 21 56 aa 51 00 1e 30 46 8f 33 00 dc 0c 11 00 00 1e
-descriptor 3:    00 00 00 fc 00 45 4c 4f 20 32 32 30 31 4c 0a 20 20 20
-descriptor 4:    00 00 00 fd 00 32 4b 20 50 11 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        fe
+----------------
 
-EDID version: 1.3
-Manufacturer: ELO Model 2201 Serial Number --
-Made in week 37 of 2016
-Digital display
-DFP 1.x compatible TMDS
-Maximum image size: 47 cm x 26 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6367, 0.3505
-  Green: 0.3183, 0.6259
-  Blue:  0.1445, 0.0605
-  White: 0.3125, 0.3281
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x720@60Hz 16:9
-  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 148.500 MHz, 476 mm x 268 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 85.500 MHz, 476 mm x 268 mm
-               1366 1436 1579 1792 hborder 0
-                768  771  774  798 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 47712 Hz
-Monitor name: ELO 2201L
-Monitor ranges (GTF): 50-75Hz V, 32-80kHz H, max dotclock 170MHz
-Checksum: 0xfe (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 56 - 70 Hz
-  Horizontal Freq: 31469 - 67500 Hz
-  Maximum Clock: 148.500 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ELO
+    Model: 8705
+    Serial Number: ...
+    Made in: week 37 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 47 cm x 26 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6367, 0.3505
+    Green: 0.3183, 0.6259
+    Blue : 0.1445, 0.0605
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (476 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 2:  1366x768    59.790 Hz 683:384  47.712 kHz  85.500 MHz (476 mm x 268 mm)
+                 Hfront   70 Hsync 143 Hback 213 Hpol P
+                 Vfront    3 Vsync   3 Vback  24 Vpol P
+    Display Product Name: 'ELO 2201L'
+  Display Range Limits:
+    Monitor ranges (GTF): 50-75 Hz V, 32-80 kHz H, max dotclock 170 MHz
+Checksum: 0xfe

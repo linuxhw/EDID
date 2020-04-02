@@ -1,69 +1,60 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001b432320d7090000
-2f0f0102781e1799e80692a0574f8726
-10484fafcf00314a454a614c8180818a
-818c00000000000000fc004c52373632
-0a202020202020200000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000073
+00 ff ff ff ff ff ff 00 1b 43 23 20 d7 09 00 00
+2f 0f 01 02 78 1e 17 99 e8 06 92 a0 57 4f 87 26
+10 48 4f af cf 00 31 4a 45 4a 61 4c 81 80 81 8a
+81 8c 00 00 00 00 00 00 00 fc 00 4c 52 37 36 32
+0a 20 20 20 20 20 20 20 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 73
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1b 43 23 20 d7 09 00 00 2f 0f
-version:         01 02
-basic params:    78 1e 17 99 e8
-chroma info:     06 92 a0 57 4f 87 26 10 48 4f
-established:     af cf 00
-standard:        31 4a 45 4a 61 4c 81 80 81 8a 81 8c 00 00 00 00
-descriptor 1:    00 00 00 fc 00 4c 52 37 36 32 0a 20 20 20 20 20 20 20
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      00
-checksum:        73
+----------------
 
-EDID version: 1.2
-Manufacturer: FZC Model 2023 Serial Number --
-Analog display, Input voltage level: 0.7/0.7 V
-Configurable signal levels
-Sync: Separate 
-Maximum image size: 30 cm x 23 cm
-Gamma: 2.53
-DPMS levels: Standby Suspend Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6250, 0.3398
-  Green: 0.3095, 0.5292
-  Blue:  0.1503, 0.0634
-  White: 0.2812, 0.3105
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  640x480@70Hz 4:3
-  800x600@70Hz 4:3
-  1024x768@72Hz 4:3
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1280x1024@70Hz 5:4
-  1280x1024@72Hz 5:4
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-Monitor name: LR762
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 0
-Checksum: 0x73 (valid)
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: FZC
+    Model: 8227
+    Serial Number: ...
+    Made in: week 47 of 2005
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Configurable signal levels
+    Sync: Separate
+    Maximum image size: 30 cm x 23 cm
+    Gamma: 2.53
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.3095, 0.5292
+    Blue : 0.1503, 0.0634
+    White: 0.2812, 0.3105
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    GTF     :   640x480    70.000 Hz   4:3    35.000 kHz  28.560 MHz
+    GTF     :   800x600    70.000 Hz   4:3    43.750 kHz  45.500 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    GTF     :  1280x1024   70.000 Hz   5:4    74.620 kHz 128.943 MHz
+    GTF     :  1280x1024   72.000 Hz   5:4    76.824 kHz 132.752 MHz
+  Detailed Timing Descriptors:
+    Display Product Name: 'LR762'
+    Empty Descriptor
+    Empty Descriptor
+    Empty Descriptor
+Checksum: 0x73

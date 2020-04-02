@@ -1,70 +1,59 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004b1f002700000000
-01160104803c22783a6fb1a7554c9e25
-0c5054a5cb00714f81c081809500b300
-d1c001010101565e00a0a0a029503020
-350055502100001e000000ff00525832
-3031323031303030310a000000fd0017
-4c0f6319000a202020202020000000fc
-004844323730204456490a202020004c
+00 ff ff ff ff ff ff 00 4b 1f 00 27 00 00 00 00
+01 16 01 04 80 3c 22 78 3a 6f b1 a7 55 4c 9e 25
+0c 50 54 a5 cb 00 71 4f 81 c0 81 80 95 00 b3 00
+d1 c0 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 55 50 21 00 00 1e 00 00 00 ff 00 52 58 32
+30 31 32 30 31 30 30 30 31 0a 00 00 00 fd 00 17
+4c 0f 63 19 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 48 44 32 37 30 20 44 56 49 0a 20 20 20 00 4c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4b 1f 00 27 00 00 00 00 01 16
-version:         01 04
-basic params:    80 3c 22 78 3a
-chroma info:     6f b1 a7 55 4c 9e 25 0c 50 54
-established:     a5 cb 00
-standard:        71 4f 81 c0 81 80 95 00 b3 00 d1 c0 01 01 01 01
-descriptor 1:    56 5e 00 a0 a0 a0 29 50 30 20 35 00 55 50 21 00 00 1e
-descriptor 2:    00 00 00 ff 00 52 58 32 30 31 32 30 31 30 30 30 31 0a
-descriptor 3:    00 00 00 fd 00 17 4c 0f 63 19 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 48 44 32 37 30 20 44 56 49 0a 20 20 20
-extensions:      00
-checksum:        4c
+----------------
 
-EDID version: 1.4
-Manufacturer: RX_ Model 2700 Serial Number --
-Made in week 1 of 2012
-Digital display
-Color depth is undefined
-Digital interface is not defined
-Maximum image size: 60 cm x 34 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6533, 0.3339
-  Green: 0.2998, 0.6201
-  Blue:  0.1464, 0.0498
-  White: 0.3125, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1280x720@60Hz 16:9
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 241.500 MHz, 597 mm x 336 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1481 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 88786 Hz
-Serial number: --
-Monitor ranges (GTF): 23-76Hz V, 15-99kHz H, max dotclock 250MHz
-Monitor name: HD270 DVI
-Checksum: 0x4c (valid)
-EDID block does not conform at all!
-	Manufacturer name field contains garbage
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: RX_
+    Model: 9984
+    Made in: week 1 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Color depth is undefined
+    Digital interface is not defined
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6533, 0.3339
+    Green: 0.2998, 0.6201
+    Blue : 0.1464, 0.0498
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x15:  1152x864    75.000 Hz   4:3    67.500 kHz 108.000 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.951 Hz  16:9    88.787 kHz 241.500 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  33 Vpol P
+    Display Product Serial Number: ...
+  Display Range Limits:
+    Monitor ranges (GTF): 23-76 Hz V, 15-99 kHz H, max dotclock 250 MHz
+    Display Product Name: 'HD270 DVI'
+Checksum: 0x4c

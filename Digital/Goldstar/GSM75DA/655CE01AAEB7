@@ -1,74 +1,62 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001e6dda7501010101
-0a110104a5462778e2d9b0a357499c25
-11494ba56e0031404540614081809040
-d1c0010101011a3680a070381f403020
-3500e8263200001ada2f78e0511a2540
-58981400e8263200001a000000fd0039
-4b1f5412000a202020202020000000fc
-0033374c4637350a2020202020200077
+00 ff ff ff ff ff ff 00 1e 6d da 75 01 01 01 01
+0a 11 01 04 a5 46 27 78 e2 d9 b0 a3 57 49 9c 25
+11 49 4b a5 6e 00 31 40 45 40 61 40 81 80 90 40
+d1 c0 01 01 01 01 1a 36 80 a0 70 38 1f 40 30 20
+35 00 e8 26 32 00 00 1a da 2f 78 e0 51 1a 25 40
+58 98 14 00 e8 26 32 00 00 1a 00 00 00 fd 00 39
+4b 1f 54 12 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 33 37 4c 46 37 35 0a 20 20 20 20 20 20 00 77
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1e 6d da 75 01 01 01 01 0a 11
-version:         01 04
-basic params:    a5 46 27 78 e2
-chroma info:     d9 b0 a3 57 49 9c 25 11 49 4b
-established:     a5 6e 00
-standard:        31 40 45 40 61 40 81 80 90 40 d1 c0 01 01 01 01
-descriptor 1:    1a 36 80 a0 70 38 1f 40 30 20 35 00 e8 26 32 00 00 1a
-descriptor 2:    da 2f 78 e0 51 1a 25 40 58 98 14 00 e8 26 32 00 00 1a
-descriptor 3:    00 00 00 fd 00 39 4b 1f 54 12 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 33 37 4c 46 37 35 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        77
+----------------
 
-EDID version: 1.4
-Manufacturer: GSM Model 75da Serial Number --
-Made in week 10 of 2007
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 70 cm x 39 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3408
-  Green: 0.2871, 0.6103
-  Blue:  0.1464, 0.0693
-  White: 0.2851, 0.2929
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1400x1050@60Hz 4:3 HorFreq: 64700 Hz Clock: 101.000 MHz
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 138.500 MHz, 1000 mm x 550 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 66586 Hz
-Detailed mode: Clock 122.500 MHz, 1000 mm x 550 mm
-               1400 1488 1640 1880 hborder 0
-               1050 1051 1055 1087 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 65159 Hz
-Monitor ranges (GTF): 57-75Hz V, 31-84kHz H, max dotclock 180MHz
-Monitor name: 37LF75
-Checksum: 0x77 (valid)
-
-
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 30170
+    Serial Number: ...
+    Made in: week 10 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 70 cm x 39 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3408
+    Green: 0.2871, 0.6103
+    Blue : 0.1464, 0.0693
+    White: 0.2851, 0.2929
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    Apple   :   832x624    74.551 Hz   4:3    49.726 kHz  57.284 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2a:  1400x1050   59.978 Hz   4:3    65.317 kHz 121.750 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.934 Hz  16:9    66.587 kHz 138.500 MHz (1000 mm x 550 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 2:  1400x1050   59.944 Hz   4:3    65.160 kHz 122.500 MHz (1000 mm x 550 mm)
+                 Hfront   88 Hsync 152 Hback 240 Hpol P
+                 Vfront    1 Vsync   4 Vback  32 Vpol N
+  Display Range Limits:
+    Monitor ranges (GTF): 57-75 Hz V, 31-84 kHz H, max dotclock 180 MHz
+    Display Product Name: '37LF75'
+Checksum: 0x77

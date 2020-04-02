@@ -1,74 +1,63 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030ae5211e5190000
-2014010368291a782ae160a355499927
-135054bfcf008180818a818c9500950f
-010101010101ab22a0a050841a303020
-36009a011100001a000000ff00343334
-48453156464a36363239000000fd0032
-4c1e510e000a202020202020000000fc
-004c31393720576964650a2020200019
+00 ff ff ff ff ff ff 00 30 ae 52 11 e5 19 00 00
+20 14 01 03 68 29 1a 78 2a e1 60 a3 55 49 99 27
+13 50 54 bf cf 00 81 80 81 8a 81 8c 95 00 95 0f
+01 01 01 01 01 01 ab 22 a0 a0 50 84 1a 30 30 20
+36 00 9a 01 11 00 00 1a 00 00 00 ff 00 34 33 34
+48 45 31 56 46 4a 36 36 32 39 00 00 00 fd 00 32
+4c 1e 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 31 39 37 20 57 69 64 65 0a 20 20 20 00 19
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 ae 52 11 e5 19 00 00 20 14
-version:         01 03
-basic params:    68 29 1a 78 2a
-chroma info:     e1 60 a3 55 49 99 27 13 50 54
-established:     bf cf 00
-standard:        81 80 81 8a 81 8c 95 00 95 0f 01 01 01 01 01 01
-descriptor 1:    ab 22 a0 a0 50 84 1a 30 30 20 36 00 9a 01 11 00 00 1a
-descriptor 2:    00 00 00 ff 00 34 33 34 48 45 31 56 46 4a 36 36 32 39
-descriptor 3:    00 00 00 fd 00 32 4c 1e 51 0e 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 4c 31 39 37 20 57 69 64 65 0a 20 20 20
-extensions:      00
-checksum:        19
+----------------
 
-EDID version: 1.3
-Manufacturer: LEN Model 1152 Serial Number --
-Made in week 32 of 2010
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 41 cm x 26 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3339
-  Green: 0.2851, 0.5986
-  Blue:  0.1533, 0.0761
-  White: 0.3125, 0.3281
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1280x1024@70Hz 5:4
-  1280x1024@72Hz 5:4
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1440x900@75Hz 16:10 HorFreq: 82300 Hz Clock: 156.000 MHz
-Detailed mode: Clock 88.750 MHz, 410 mm x 257 mm
-               1440 1488 1520 1600 hborder 0
-                900  903  909  926 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 55468 Hz
-Serial number: --
-Monitor ranges (GTF): 50-76Hz V, 30-81kHz H, max dotclock 140MHz
-Monitor name: L197 Wide
-Checksum: 0x19 (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 56 - 75 Hz
-  Horizontal Freq: 31469 - 82300 Hz
-  Maximum Clock: 156.000 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 4434
+    Serial Number: ...
+    Made in: week 32 of 2010
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate
+    Maximum image size: 41 cm x 26 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3339
+    Green: 0.2851, 0.5986
+    Blue : 0.1533, 0.0761
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    Apple   :   640x480    66.667 Hz   4:3    35.000 kHz  30.240 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    GTF     :  1280x1024   70.000 Hz   5:4    74.620 kHz 128.943 MHz
+    GTF     :  1280x1024   72.000 Hz   5:4    76.824 kHz 132.752 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x30:  1440x900    74.984 Hz  16:10   70.635 kHz 136.750 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    59.901 Hz   8:5    55.469 kHz  88.750 MHz (410 mm x 257 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   6 Vback  17 Vpol N
+    Display Product Serial Number: ...
+  Display Range Limits:
+    Monitor ranges (GTF): 50-76 Hz V, 30-81 kHz H, max dotclock 140 MHz
+    Display Product Name: 'L197 Wide'
+Checksum: 0x19

@@ -1,96 +1,78 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006100ca000000000
-32140104b5301b78226fb1a7554c9e25
-0c505400000001010101010101010101
-0101010101011a3680a070381f403020
-3500db0b1100001a8d0ec0a0301c1020
-30203500db0b1100001a000000fc0069
-4d61630a202020202020202000000000
-000000000000000000000000000001d9
-02030cc123090707830100001a3680a0
-70381f4030203500db0b1100001a8d0e
-c0a0301c102030203500db0b1100001a
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000056
+00 ff ff ff ff ff ff 00 06 10 0c a0 00 00 00 00
+32 14 01 04 b5 30 1b 78 22 6f b1 a7 55 4c 9e 25
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1a 36 80 a0 70 38 1f 40 30 20
+35 00 db 0b 11 00 00 1a 8d 0e c0 a0 30 1c 10 20
+30 20 35 00 db 0b 11 00 00 1a 00 00 00 fc 00 69
+4d 61 63 0a 20 20 20 20 20 20 20 20 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 d9
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 10 0c a0 00 00 00 00 32 14
-version:         01 04
-basic params:    b5 30 1b 78 22
-chroma info:     6f b1 a7 55 4c 9e 25 0c 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    1a 36 80 a0 70 38 1f 40 30 20 35 00 db 0b 11 00 00 1a
-descriptor 2:    8d 0e c0 a0 30 1c 10 20 30 20 35 00 db 0b 11 00 00 1a
-descriptor 3:    00 00 00 fc 00 69 4d 61 63 0a 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      01
-checksum:        d9
+02 03 0c c1 23 09 07 07 83 01 00 00 1a 36 80 a0
+70 38 1f 40 30 20 35 00 db 0b 11 00 00 1a 8d 0e
+c0 a0 30 1c 10 20 30 20 35 00 db 0b 11 00 00 1a
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 56
 
-EDID version: 1.4
-Manufacturer: APP Model a00c Serial Number --
-Made in week 50 of 2010
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 48 cm x 27 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6533, 0.3339
-  Green: 0.2998, 0.6201
-  Blue:  0.1464, 0.0498
-  White: 0.3125, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 138.500 MHz, 475 mm x 267 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 66586 Hz
-Detailed mode: Clock 37.250 MHz, 475 mm x 267 mm
-                960 1008 1040 1120 hborder 0
-                540  543  548  556 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 33258 Hz
-Monitor name: iMac
-Manufacturer-specified data, tag 0
-Has 1 extension blocks
-Checksum: 0xd9 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-8 bytes of CTA data
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 40972
+    Made in: week 50 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6533, 0.3339
+    Green: 0.2998, 0.6201
+    Blue : 0.1464, 0.0498
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.934 Hz  16:9    66.587 kHz 138.500 MHz (475 mm x 267 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 2:   960x540    59.818 Hz  16:9    33.259 kHz  37.250 MHz (475 mm x 267 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback   8 Vpol N
+    Display Product Name: 'iMac'
+    Empty Descriptor
+  Extension blocks: 1
+Checksum: 0xd9
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans PC formats by default
+  Basic audio support
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-Underscans PC formats by default
-Basic audio support
-1 native detailed modes
-Detailed mode: Clock 138.500 MHz, 475 mm x 267 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 66586 Hz
-Detailed mode: Clock 37.250 MHz, 475 mm x 267 mm
-                960 1008 1040 1120 hborder 0
-                540  543  548  556 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 33258 Hz
-Checksum: 0x56 (valid)
-
-EDID block does NOT conform to EDID 1.4!
-	Required 640x480p60 timings are missing in the established timings
-	and/or in the SVD list (VIC 1)
-	Missing monitor ranges
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   59.934 Hz  16:9    66.587 kHz 138.500 MHz (475 mm x 267 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 4:   960x540    59.818 Hz  16:9    33.259 kHz  37.250 MHz (475 mm x 267 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback   8 Vpol N
+Checksum: 0x56

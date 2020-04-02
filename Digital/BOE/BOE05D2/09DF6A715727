@@ -1,57 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009e5d20500000000
-01160103801f11780ab0909758549226
-1d505400000001010101010101010101
-0101010101019e1b566b500020303020
-360035ad1000001a9e1b566b50002030
-3020360035ad1000001a000000fe0042
-4f452048460a202020202020000000fe
-0048423134305758312d3430300a007c
+00 ff ff ff ff ff ff 00 09 e5 d2 05 00 00 00 00
+01 16 01 03 80 1f 11 78 0a b0 90 97 58 54 92 26
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9e 1b 56 6b 50 00 20 30 30 20
+36 00 35 ad 10 00 00 1a 9e 1b 56 6b 50 00 20 30
+30 20 36 00 35 ad 10 00 00 1a 00 00 00 fe 00 42
+4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe
+00 48 42 31 34 30 57 58 31 2d 34 30 30 0a 00 7c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 e5 d2 05 00 00 00 00 01 16
-version:         01 03
-basic params:    80 1f 11 78 0a
-chroma info:     b0 90 97 58 54 92 26 1d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    9e 1b 56 6b 50 00 20 30 30 20 36 00 35 ad 10 00 00 1a
-descriptor 2:    9e 1b 56 6b 50 00 20 30 30 20 36 00 35 ad 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 42 4f 45 20 48 46 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 48 42 31 34 30 57 58 31 2d 34 30 30 0a
-extensions:      00
-checksum:        7c
+----------------
 
-EDID version: 1.3
-Manufacturer: BOE Model 5d2 Serial Number --
-Made in week 1 of 2012
-Digital display
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5917, 0.3466
-  Green: 0.3281, 0.5703
-  Blue:  0.1503, 0.1142
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 70.700 MHz, 309 mm x 173 mm
-               1366 1414 1446 1473 hborder 0
-                768  771  777  800 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 47997 Hz
-Detailed mode: Clock 70.700 MHz, 309 mm x 173 mm
-               1366 1414 1446 1473 hborder 0
-                768  771  777  800 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 47997 Hz
-ASCII string: BOE HF
-ASCII string: HB140WX1-400
-Checksum: 0x7c (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 1490
+    Made in: week 1 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5917, 0.3466
+    Green: 0.3281, 0.5703
+    Blue : 0.1503, 0.1142
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.997 Hz 683:384  47.997 kHz  70.700 MHz (309 mm x 173 mm)
+                 Hfront   48 Hsync  32 Hback  27 Hpol P
+                 Vfront    3 Vsync   6 Vback  23 Vpol N
+    DTD 2:  1366x768    59.997 Hz 683:384  47.997 kHz  70.700 MHz (309 mm x 173 mm)
+                 Hfront   48 Hsync  32 Hback  27 Hpol P
+                 Vfront    3 Vsync   6 Vback  23 Vpol N
+    Alphanumeric Data String: 'BOE HF'
+    Alphanumeric Data String: 'HB140WX1-400'
+Checksum: 0x7c

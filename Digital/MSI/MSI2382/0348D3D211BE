@@ -1,63 +1,52 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff003669822301000000
-17140103802c1964ea7b00a6554b9a25
-135054254e0081c095c0a9c001010101
-0101010101012f2640a060841a303020
-3500ce101100001e000000ff00303030
-3030310a202020202020000000fe0030
-300a20202020202020202020000000fc
-004d53492041494f2050430a2020006a
+00 ff ff ff ff ff ff 00 36 69 82 23 01 00 00 00
+17 14 01 03 80 2c 19 64 ea 7b 00 a6 55 4b 9a 25
+13 50 54 25 4e 00 81 c0 95 c0 a9 c0 01 01 01 01
+01 01 01 01 01 01 2f 26 40 a0 60 84 1a 30 30 20
+35 00 ce 10 11 00 00 1e 00 00 00 ff 00 30 30 30
+30 30 31 0a 20 20 20 20 20 20 00 00 00 fe 00 30
+30 0a 20 20 20 20 20 20 20 20 20 20 00 00 00 fc
+00 4d 53 49 20 41 49 4f 20 50 43 0a 20 20 00 6a
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   36 69 82 23 01 00 00 00 17 14
-version:         01 03
-basic params:    80 2c 19 64 ea
-chroma info:     7b 00 a6 55 4b 9a 25 13 50 54
-established:     25 4e 00
-standard:        81 c0 95 c0 a9 c0 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    2f 26 40 a0 60 84 1a 30 30 20 35 00 ce 10 11 00 00 1e
-descriptor 2:    00 00 00 ff 00 30 30 30 30 30 31 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fe 00 30 30 0a 20 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 4d 53 49 20 41 49 4f 20 50 43 0a 20 20
-extensions:      00
-checksum:        6a
+----------------
 
-EDID version: 1.3
-Manufacturer: MSI Model 2382 Serial Number --
-Made in week 23 of 2010
-Digital display
-Maximum image size: 44 cm x 25 cm
-Gamma: 2.00
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6494, 0.3349
-  Green: 0.2949, 0.6044
-  Blue:  0.1445, 0.0742
-  White: 0.3125, 0.3281
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-  1280x720@60Hz 16:9
-  1440x810@60Hz 16:9
-  1600x900@60Hz 16:9
-Detailed mode: Clock 97.750 MHz, 462 mm x 272 mm
-               1600 1648 1680 1760 hborder 0
-                900  903  908  926 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 55539 Hz
-Serial number: --
-ASCII string: 00
-Monitor name: MSI AIO PC
-Checksum: 0x6a (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MSI
+    Model: 9090
+    Serial Number: ...
+    Made in: week 23 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 44 cm x 25 cm
+    Gamma: 2.00
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6494, 0.3349
+    Green: 0.2949, 0.6044
+    Blue : 0.1445, 0.0742
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    GTF     :  1440x816    60.000 Hz  16:9    50.700 kHz  96.533 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    59.978 Hz  16:9    55.540 kHz  97.750 MHz (462 mm x 272 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  18 Vpol P
+    Display Product Serial Number: ...
+    Alphanumeric Data String: '00'
+    Display Product Name: 'MSI AIO PC'
+Checksum: 0x6a

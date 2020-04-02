@@ -1,70 +1,55 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00410c4bb152420300
-33090101681b14b0e8d2f29e584e9927
-10484fa4480045590101010101010101
-01010101010164190040410026301888
-3600fabc000000185613200031581920
-10501300fabc0000001ef91520f83058
-1f2020401300fabc0000001ed50980a0
-209031101060c200fabc0000001c0001
+00 ff ff ff ff ff ff 00 41 0c 4b b1 52 42 03 00
+33 09 01 01 68 1b 14 b0 e8 d2 f2 9e 58 4e 99 27
+10 48 4f a4 48 00 45 59 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 fa bc 00 00 00 18 56 13 20 00 31 58 19 20
+10 50 13 00 fa bc 00 00 00 1e f9 15 20 f8 30 58
+1f 20 20 40 13 00 fa bc 00 00 00 1e d5 09 80 a0
+20 90 31 10 10 60 c2 00 fa bc 00 00 00 1c 00 01
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   41 0c 4b b1 52 42 03 00 33 09
-version:         01 01
-basic params:    68 1b 14 b0 e8
-chroma info:     d2 f2 9e 58 4e 99 27 10 48 4f
-established:     a4 48 00
-standard:        45 59 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    64 19 00 40 41 00 26 30 18 88 36 00 fa bc 00 00 00 18
-descriptor 2:    56 13 20 00 31 58 19 20 10 50 13 00 fa bc 00 00 00 1e
-descriptor 3:    f9 15 20 f8 30 58 1f 20 20 40 13 00 fa bc 00 00 00 1e
-descriptor 4:    d5 09 80 a0 20 90 31 10 10 60 c2 00 fa bc 00 00 00 1c
-extensions:      00
-checksum:        01
+----------------
 
-EDID version: 1.1
-Manufacturer: PHL Model b14b Serial Number --
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 27 cm x 20 cm
-Gamma: 2.76
-DPMS levels: Standby Suspend Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6201, 0.3447
-  Green: 0.3046, 0.5996
-  Blue:  0.1552, 0.0654
-  White: 0.2812, 0.3105
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  800x600@85Hz 4:3 HorFreq: 53700 Hz Clock: 56.250 MHz
-Detailed mode: Clock 65.000 MHz, 250 mm x 188 mm
-               1024 1048 1184 1344 hborder 0
-                768  771  777  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48363 Hz
-Detailed mode: Clock 49.500 MHz, 250 mm x 188 mm
-                800  816  896 1056 hborder 0
-                600  601  604  625 vborder 0
-               +hsync +vsync 
-               VertFreq: 75 Hz, HorFreq: 46875 Hz
-Detailed mode: Clock 56.250 MHz, 250 mm x 188 mm
-                800  832  896 1048 hborder 0
-                600  601  604  631 vborder 0
-               +hsync +vsync 
-               VertFreq: 85 Hz, HorFreq: 53673 Hz
-Detailed mode: Clock 25.170 MHz, 250 mm x 188 mm
-                640  656  752  800 hborder 0
-                400  412  414  449 vborder 0
-               -hsync +vsync 
-               VertFreq: 70 Hz, HorFreq: 31462 Hz
-Checksum: 0x1 (valid)
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: PHL
+    Model: 45387
+    Serial Number: ...
+    Made in: week 51 of 1999
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate
+    Maximum image size: 27 cm x 20 cm
+    Gamma: 2.76
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6201, 0.3447
+    Green: 0.3046, 0.5996
+    Blue : 0.1552, 0.0654
+    White: 0.2812, 0.3105
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x0c:   800x600    85.061 Hz   4:3    53.674 kHz  56.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz (250 mm x 188 mm)
+                 Hfront   24 Hsync 136 Hback 160 Hpol N
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+    DTD 2:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz (250 mm x 188 mm)
+                 Hfront   16 Hsync  80 Hback 160 Hpol P
+                 Vfront    1 Vsync   3 Vback  21 Vpol P
+    DTD 3:   800x600    85.061 Hz   4:3    53.674 kHz  56.250 MHz (250 mm x 188 mm)
+                 Hfront   32 Hsync  64 Hback 152 Hpol P
+                 Vfront    1 Vsync   3 Vback  27 Vpol P
+    DTD 4:   640x400    70.072 Hz   8:5    31.462 kHz  25.170 MHz (250 mm x 188 mm)
+                 Hfront   16 Hsync  96 Hback  48 Hpol N
+                 Vfront   12 Vsync   2 Vback  35 Vpol P
+Checksum: 0x1

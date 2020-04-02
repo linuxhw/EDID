@@ -1,57 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000e14be1b00000000
-1314010380160c780aab4d9256599129
-1d505400000001010101010101010101
-010101010101721600dd415826203020
-3600df7d0000001a721600dd41582620
-30203600df7d0000001a000000fe0043
-50540a202020202020202020000000fe
-00434c41413130314e42303141200076
+00 ff ff ff ff ff ff 00 0e 14 be 1b 00 00 00 00
+13 14 01 03 80 16 0c 78 0a ab 4d 92 56 59 91 29
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 72 16 00 dd 41 58 26 20 30 20
+36 00 df 7d 00 00 00 1a 72 16 00 dd 41 58 26 20
+30 20 36 00 df 7d 00 00 00 1a 00 00 00 fe 00 43
+50 54 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 43 4c 41 41 31 30 31 4e 42 30 31 41 20 00 76
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0e 14 be 1b 00 00 00 00 13 14
-version:         01 03
-basic params:    80 16 0c 78 0a
-chroma info:     ab 4d 92 56 59 91 29 1d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    72 16 00 dd 41 58 26 20 30 20 36 00 df 7d 00 00 00 1a
-descriptor 2:    72 16 00 dd 41 58 26 20 30 20 36 00 df 7d 00 00 00 1a
-descriptor 3:    00 00 00 fe 00 43 50 54 0a 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 43 4c 41 41 31 30 31 4e 42 30 31 41 20
-extensions:      00
-checksum:        76
+----------------
 
-EDID version: 1.3
-Manufacturer: CPT Model 1bbe Serial Number --
-Made in week 19 of 2010
-Digital display
-Maximum image size: 22 cm x 12 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5722, 0.3378
-  Green: 0.3496, 0.5693
-  Blue:  0.1611, 0.1132
-  White: 0.3154, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 57.460 MHz, 223 mm x 125 mm
-               1024 1072 1104 1501 hborder 0
-                600  603  609  638 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 38281 Hz
-Detailed mode: Clock 57.460 MHz, 223 mm x 125 mm
-               1024 1072 1104 1501 hborder 0
-                600  603  609  638 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 38281 Hz
-ASCII string: CPT
-ASCII string: CLAA101NB01A 
-Checksum: 0x76 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CPT
+    Model: 7102
+    Made in: week 19 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 22 cm x 12 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5722, 0.3378
+    Green: 0.3496, 0.5693
+    Blue : 0.1611, 0.1132
+    White: 0.3154, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x600    60.002 Hz 128:75   38.281 kHz  57.460 MHz (223 mm x 125 mm)
+                 Hfront   48 Hsync  32 Hback 397 Hpol P
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+    DTD 2:  1024x600    60.002 Hz 128:75   38.281 kHz  57.460 MHz (223 mm x 125 mm)
+                 Hfront   48 Hsync  32 Hback 397 Hpol P
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+    Alphanumeric Data String: 'CPT'
+    Alphanumeric Data String: 'CLAA101NB01A '
+Checksum: 0x76

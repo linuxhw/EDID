@@ -1,60 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e48d0400000000
-00180104951a0e780263e5a159579e27
-1d505400000001010101010101010101
-010101010101581b567e500016302430
-35000090100000191c16567e50001630
-24303500009010000019000000fe0050
-39394637803131365748360a00000000
-000041319e0110000009010a20200038
+00 ff ff ff ff ff ff 00 30 e4 8d 04 00 00 00 00
+00 18 01 04 95 1a 0e 78 02 63 e5 a1 59 57 9e 27
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 58 1b 56 7e 50 00 16 30 24 30
+35 00 00 90 10 00 00 19 1c 16 56 7e 50 00 16 30
+24 30 35 00 00 90 10 00 00 19 00 00 00 fe 00 50
+39 39 46 37 80 31 31 36 57 48 36 0a 00 00 00 00
+00 00 41 31 9e 01 10 00 00 09 01 0a 20 20 00 38
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 8d 04 00 00 00 00 00 18
-version:         01 04
-basic params:    95 1a 0e 78 02
-chroma info:     63 e5 a1 59 57 9e 27 1d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    58 1b 56 7e 50 00 16 30 24 30 35 00 00 90 10 00 00 19
-descriptor 2:    1c 16 56 7e 50 00 16 30 24 30 35 00 00 90 10 00 00 19
-descriptor 3:    00 00 00 fe 00 50 39 39 46 37 80 31 31 36 57 48 36 0a
-descriptor 4:    00 00 00 00 00 00 41 31 9e 01 10 00 00 09 01 0a 20 20
-extensions:      00
-checksum:        38
+----------------
 
-EDID version: 1.4
-Manufacturer: LGD Model 48d Serial Number --
-Made in year 2014
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 26 cm x 14 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6298, 0.3496
-  Green: 0.3398, 0.6201
-  Blue:  0.1552, 0.1152
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 70.000 MHz, 256 mm x 144 mm
-               1366 1402 1450 1492 hborder 0
-                768  771  776  790 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 46916 Hz
-Detailed mode: Clock 56.600 MHz, 256 mm x 144 mm
-               1366 1402 1450 1492 hborder 0
-                768  771  776  790 vborder 0
-               -hsync -vsync 
-               VertFreq: 48 Hz, HorFreq: 37935 Hz
-ASCII string: P99F7
-Manufacturer-specified data, tag 0
-Checksum: 0x38 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1165
+    Made in: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6298, 0.3496
+    Green: 0.3398, 0.6201
+    Blue : 0.1552, 0.1152
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.388 Hz 683:384  46.917 kHz  70.000 MHz (256 mm x 144 mm)
+                 Hfront   36 Hsync  48 Hback  42 Hpol N
+                 Vfront    3 Vsync   5 Vback  14 Vpol N
+    DTD 2:  1366x768    48.020 Hz 683:384  37.936 kHz  56.600 MHz (256 mm x 144 mm)
+                 Hfront   36 Hsync  48 Hback  42 Hpol N
+                 Vfront    3 Vsync   5 Vback  14 Vpol N
+    Alphanumeric Data String: 'P99F7'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 9e 01 10 00 00 09 01 0a 20 20 '....A1........  '
+Checksum: 0x38

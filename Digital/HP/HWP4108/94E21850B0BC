@@ -1,52 +1,41 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0022f0084101010000
-1a140100802f1b780a1425a359559b26
-0f505400000001010101010101010101
-0101010101012035808c703814403c3c
-a800d60e11000018000000fe00526869
-6e650a20202020202020000000fc0048
-50204f6d6e692f50726f0a20000000fe
-004c544d323135485430330a2020001b
+00 ff ff ff ff ff ff 00 22 f0 08 41 01 01 00 00
+1a 14 01 00 80 2f 1b 78 0a 14 25 a3 59 55 9b 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 20 35 80 8c 70 38 14 40 3c 3c
+a8 00 d6 0e 11 00 00 18 00 00 00 fe 00 52 68 69
+6e 65 0a 20 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 4f 6d 6e 69 2f 50 72 6f 0a 20 00 00 00 fe
+00 4c 54 4d 32 31 35 48 54 30 33 0a 20 20 00 1b
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 f0 08 41 01 01 00 00 1a 14
-version:         01 00
-basic params:    80 2f 1b 78 0a
-chroma info:     14 25 a3 59 55 9b 26 0f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    20 35 80 8c 70 38 14 40 3c 3c a8 00 d6 0e 11 00 00 18
-descriptor 2:    00 00 00 fe 00 52 68 69 6e 65 0a 20 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 48 50 20 4f 6d 6e 69 2f 50 72 6f 0a 20
-descriptor 4:    00 00 00 fe 00 4c 54 4d 32 31 35 48 54 30 33 0a 20 20
-extensions:      00
-checksum:        1b
+----------------
 
-EDID version: 1.0
-Manufacturer: HWP Model 4108 Serial Number --
-Made in week 26 of 2010
-Digital display
-Maximum image size: 47 cm x 27 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6367, 0.3486
-  Green: 0.3330, 0.6054
-  Blue:  0.1484, 0.0605
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 136.000 MHz, 470 mm x 270 mm
-               1920 1980 2040 2060 hborder 0
-               1080 1090 1098 1100 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 66019 Hz
-ASCII string: Rhine
-Monitor name: HP Omni/Pro
-ASCII string: LTM215HT03
-Checksum: 0x1b (valid)
-EDID block does NOT conform to EDID 1.0!
-	Has descriptor blocks other than detailed timings
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.0
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 16648
+    Serial Number: ...
+    Made in: week 26 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 47 cm x 27 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6367, 0.3486
+    Green: 0.3330, 0.6054
+    Blue : 0.1484, 0.0605
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.018 Hz  16:9    66.019 kHz 136.000 MHz (470 mm x 270 mm)
+                 Hfront   60 Hsync  60 Hback  20 Hpol N
+                 Vfront   10 Vsync   8 Vback   2 Vpol N
+    Alphanumeric Data String: 'Rhine'
+    Display Product Name: 'HP Omni/Pro'
+    Alphanumeric Data String: 'LTM215HT03'
+Checksum: 0x1b

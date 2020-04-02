@@ -1,133 +1,105 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001dac001400000000
-01150104a500007822b325ac5130b426
-105054a54b008180a940714f01010101
-01010101d1008c7300a0f0b023403020
-3600ffff0000001e014a0098a1002a40
-30701300ffff0000001e000000fc0047
-4d2d4d41545249582d420a00ae3100a0
-50a0235030203600ffff0000001e0138
-020319804690040507030e2300000083
-00000065030c001000163c80a070b023
-4030203600ffff0000001e162a009851
-002a4030701300ffff0000001e830f20
-0031581c2028801400ffff0000001ee4
-39801871382d40582c4500ffff000000
-1e0e399030621a274068b03600ffff00
-00001e000000000000000000000000f5
+00 ff ff ff ff ff ff 00 1d ac 00 14 00 00 00 00
+01 15 01 04 a5 00 00 78 22 b3 25 ac 51 30 b4 26
+10 50 54 a5 4b 00 81 80 a9 40 71 4f 01 01 01 01
+01 01 01 01 d1 00 8c 73 00 a0 f0 b0 23 40 30 20
+36 00 ff ff 00 00 00 1e 01 4a 00 98 a1 00 2a 40
+30 70 13 00 ff ff 00 00 00 1e 00 00 00 fc 00 47
+4d 2d 4d 41 54 52 49 58 2d 42 0a 00 ae 31 00 a0
+50 a0 23 50 30 20 36 00 ff ff 00 00 00 1e 01 38
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1d ac 00 14 00 00 00 00 01 15
-version:         01 04
-basic params:    a5 00 00 78 22
-chroma info:     b3 25 ac 51 30 b4 26 10 50 54
-established:     a5 4b 00
-standard:        81 80 a9 40 71 4f 01 01 01 01 01 01 01 01 d1 00
-descriptor 1:    8c 73 00 a0 f0 b0 23 40 30 20 36 00 ff ff 00 00 00 1e
-descriptor 2:    01 4a 00 98 a1 00 2a 40 30 70 13 00 ff ff 00 00 00 1e
-descriptor 3:    00 00 00 fc 00 47 4d 2d 4d 41 54 52 49 58 2d 42 0a 00
-descriptor 4:    ae 31 00 a0 50 a0 23 50 30 20 36 00 ff ff 00 00 00 1e
-extensions:      01
-checksum:        38
+02 03 19 80 46 90 04 05 07 03 0e 23 00 00 00 83
+00 00 00 65 03 0c 00 10 00 16 3c 80 a0 70 b0 23
+40 30 20 36 00 ff ff 00 00 00 1e 16 2a 00 98 51
+00 2a 40 30 70 13 00 ff ff 00 00 00 1e 83 0f 20
+00 31 58 1c 20 28 80 14 00 ff ff 00 00 00 1e e4
+39 80 18 71 38 2d 40 58 2c 45 00 ff ff 00 00 00
+1e 0e 39 90 30 62 1a 27 40 68 b0 36 00 ff ff 00
+00 00 1e 00 00 00 00 00 00 00 00 00 00 00 00 f5
 
-EDID version: 1.4
-Manufacturer: GML Model 1400 Serial Number --
-Made in week 1 of 2011
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Image size is variable
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6738, 0.3193
-  Green: 0.1875, 0.7060
-  Blue:  0.1484, 0.0644
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1920x1200@60Hz 16:10 HorFreq: 74000 Hz Clock: 154.000 MHz
-Detailed mode: Clock 295.800 MHz, 255 mm x 255 mm
-               3840 3888 3920 4000 hborder 0
-               1200 1203 1209 1235 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 73950 Hz
-Detailed mode: Clock 189.450 MHz, 255 mm x 255 mm
-               2560 2608 2720 2968 hborder 0
-               1024 1025 1028 1066 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 63830 Hz
-Monitor name: GM-MATRIX-B
-Detailed mode: Clock 127.180 MHz, 255 mm x 255 mm
-               1280 1328 1360 1440 hborder 0
-               1440 1443 1449 1475 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 88319 Hz
-Has 1 extension blocks
-Checksum: 0x38 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-21 bytes of CTA data
-  Video data block
-    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC   7 1440x480i@60Hz 16:9  HorFreq: 15734 Hz Clock: 27.000 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC  14 1440x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 54.000 MHz
-  Audio data block
-    RESERVED, max channels 1
-      Supported sample rates (kHz):
-      Maximum bit rate: 0 kHz
-  Speaker allocation data block
-    Speaker map:
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
-Underscans PC formats by default
-0 native detailed modes
-Detailed mode: Clock 153.820 MHz, 255 mm x 255 mm
-               1920 1968 2000 2080 hborder 0
-               1200 1203 1209 1235 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 73951 Hz
-Detailed mode: Clock 107.740 MHz, 255 mm x 255 mm
-               1280 1328 1440 1688 hborder 0
-               1024 1025 1028 1066 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 63827 Hz
-Detailed mode: Clock 39.710 MHz, 255 mm x 255 mm
-                800  840  968 1056 hborder 0
-                600  601  605  628 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 37604 Hz
-Detailed mode: Clock 148.200 MHz, 255 mm x 255 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 67363 Hz
-Detailed mode: Clock 146.060 MHz, 255 mm x 255 mm
-               1680 1784 1960 2240 hborder 0
-               1050 1053 1059 1089 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 65205 Hz
-Checksum: 0xf5 (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GML
+    Model: 5120
+    Made in: week 1 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Image size is variable
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6738, 0.3193
+    Green: 0.1875, 0.7060
+    Blue : 0.1484, 0.0644
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
+    DMT 0x15:  1152x864    75.000 Hz   4:3    67.500 kHz 108.000 MHz
+    DMT 0x45:  1920x1200   59.885 Hz  16:10   74.556 kHz 193.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x1200   59.879 Hz  16:5    73.950 kHz 295.800 MHz (255 mm x 255 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   6 Vback  26 Vpol P
+    DTD 2:  2560x1024   59.879 Hz   5:2    63.831 kHz 189.450 MHz (255 mm x 255 mm)
+                 Hfront   48 Hsync 112 Hback 248 Hpol P
+                 Vfront    1 Vsync   3 Vback  38 Vpol P
+    Display Product Name: 'GM-MATRIX-B'
+    DTD 3:  1280x1440   59.878 Hz   8:9    88.319 kHz 127.180 MHz (255 mm x 255 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   6 Vback  26 Vpol P
+  Extension blocks: 1
+Checksum: 0x38
 
-	Missing monitor ranges
-EDID block does not conform at all!
-	Invalid detailed timing descriptor ordering
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans PC formats by default
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (native)
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC   7:  1440x480i   59.940 Hz  16:9    15.734 kHz  27.000 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC  14:  1440x480    59.940 Hz   4:3    31.469 kHz  54.000 MHz
+  Audio Data Block:
+    Reserved (0x00)
+  Speaker Allocation Data Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 4:  1920x1200   59.880 Hz   8:5    73.952 kHz 153.820 MHz (255 mm x 255 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   6 Vback  26 Vpol P
+    DTD 5:  1280x1024   59.875 Hz   5:4    63.827 kHz 107.740 MHz (255 mm x 255 mm)
+                 Hfront   48 Hsync 112 Hback 248 Hpol P
+                 Vfront    1 Vsync   3 Vback  38 Vpol P
+    DTD 6:   800x600    59.879 Hz   4:3    37.604 kHz  39.710 MHz (255 mm x 255 mm)
+                 Hfront   40 Hsync 128 Hback  88 Hpol P
+                 Vfront    1 Vsync   4 Vback  23 Vpol P
+    DTD 7:  1920x1080   59.879 Hz  16:9    67.364 kHz 148.200 MHz (255 mm x 255 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 8:  1680x1050   59.876 Hz   8:5    65.205 kHz 146.060 MHz (255 mm x 255 mm)
+                 Hfront  104 Hsync 176 Hback 280 Hpol P
+                 Vfront    3 Vsync   6 Vback  30 Vpol P
+Checksum: 0xf5

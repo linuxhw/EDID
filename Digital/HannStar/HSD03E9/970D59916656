@@ -1,57 +1,43 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff002264e90302620000
-1214010380160d780a8c85975b538e27
-18505400000001010101010101010101
-010101010101061800e3415850205d23
-9508de7d0000001a061800e341585020
-5d239508de7d0000001a000000fe004a
-46314b540a3130315046573200000000
-00004103940101000001010a20200093
+00 ff ff ff ff ff ff 00 22 64 e9 03 02 62 00 00
+12 14 01 03 80 16 0d 78 0a 8c 85 97 5b 53 8e 27
+18 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 06 18 00 e3 41 58 50 20 5d 23
+95 08 de 7d 00 00 00 1a 06 18 00 e3 41 58 50 20
+5d 23 95 08 de 7d 00 00 00 1a 00 00 00 fe 00 4a
+46 31 4b 54 0a 31 30 31 50 46 57 32 00 00 00 00
+00 00 41 03 94 01 01 00 00 01 01 0a 20 20 00 93
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 64 e9 03 02 62 00 00 12 14
-version:         01 03
-basic params:    80 16 0d 78 0a
-chroma info:     8c 85 97 5b 53 8e 27 18 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    06 18 00 e3 41 58 50 20 5d 23 95 08 de 7d 00 00 00 1a
-descriptor 2:    06 18 00 e3 41 58 50 20 5d 23 95 08 de 7d 00 00 00 1a
-descriptor 3:    00 00 00 fe 00 4a 46 31 4b 54 0a 31 30 31 50 46 57 32
-descriptor 4:    00 00 00 00 00 00 41 03 94 01 01 00 00 01 01 0a 20 20
-extensions:      00
-checksum:        93
+----------------
 
-EDID version: 1.3
-Manufacturer: HSD Model 3e9 Serial Number --
-Made in week 18 of 2010
-Digital display
-Maximum image size: 22 cm x 13 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5917, 0.3554
-  Green: 0.3271, 0.5546
-  Blue:  0.1542, 0.0937
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 61.500 MHz, 222 mm x 125 mm
-               1024 1117 1152 1507 hborder 0
-                600  641  646  680 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 40809 Hz
-Detailed mode: Clock 61.500 MHz, 222 mm x 125 mm
-               1024 1117 1152 1507 hborder 0
-                600  641  646  680 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 40809 Hz
-ASCII string: JF1KT
-Manufacturer-specified data, tag 0
-Checksum: 0x93 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HSD
+    Model: 1001
+    Serial Number: ...
+    Made in: week 18 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 22 cm x 13 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5917, 0.3554
+    Green: 0.3271, 0.5546
+    Blue : 0.1542, 0.0937
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x600    60.014 Hz 128:75   40.810 kHz  61.500 MHz (222 mm x 125 mm)
+                 Hfront   93 Hsync  35 Hback 355 Hpol P
+                 Vfront   41 Vsync   5 Vback  34 Vpol N
+    DTD 2:  1024x600    60.014 Hz 128:75   40.810 kHz  61.500 MHz (222 mm x 125 mm)
+                 Hfront   93 Hsync  35 Hback 355 Hpol P
+                 Vfront   41 Vsync   5 Vback  34 Vpol N
+    Alphanumeric Data String: 'JF1KT'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 03 94 01 01 00 00 01 01 0a 20 20 '....A.........  '
+Checksum: 0x93

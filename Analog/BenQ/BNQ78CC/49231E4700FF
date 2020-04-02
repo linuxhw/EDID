@@ -1,66 +1,57 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009d1cc7845540000
-2a1701030e2b18782e2880a45650a128
-0f5054a56a80810081c0010101010101
-010101010101302a40c8608464301850
-1300bbf91000001a000000ff00464144
-30363231383031390a20000000fd0032
-4c1e5311000a202020202020000000fc
-0042656e5120474c323032330a2000b9
+00 ff ff ff ff ff ff 00 09 d1 cc 78 45 54 00 00
+2a 17 01 03 0e 2b 18 78 2e 28 80 a4 56 50 a1 28
+0f 50 54 a5 6a 80 81 00 81 c0 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 bb f9 10 00 00 1a 00 00 00 ff 00 46 41 44
+30 36 32 31 38 30 31 39 0a 20 00 00 00 fd 00 32
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 47 4c 32 30 32 33 0a 20 00 b9
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 d1 cc 78 45 54 00 00 2a 17
-version:         01 03
-basic params:    0e 2b 18 78 2e
-chroma info:     28 80 a4 56 50 a1 28 0f 50 54
-established:     a5 6a 80
-standard:        81 00 81 c0 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    30 2a 40 c8 60 84 64 30 18 50 13 00 bb f9 10 00 00 1a
-descriptor 2:    00 00 00 ff 00 46 41 44 30 36 32 31 38 30 31 39 0a 20
-descriptor 3:    00 00 00 fd 00 32 4c 1e 53 11 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 42 65 6e 51 20 47 4c 32 30 32 33 0a 20
-extensions:      00
-checksum:        b9
+----------------
 
-EDID version: 1.3
-Manufacturer: BNQ Model 78cc Serial Number --
-Made in week 42 of 2013
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate Composite SyncOnGreen 
-Maximum image size: 43 cm x 24 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6406, 0.3378
-  Green: 0.3144, 0.6289
-  Blue:  0.1582, 0.0585
-  White: 0.3125, 0.3281
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1152x870@75Hz 192:145 HorFreq: 67500 Hz Clock: 108.000 MHz
-Standard timings supported:
-  1280x800@60Hz 16:10
-  1280x720@60Hz 16:9
-Detailed mode: Clock 108.000 MHz, 443 mm x 249 mm
-               1600 1624 1704 1800 hborder 0
-                900  901  904 1000 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 60000 Hz
-Serial number: --
-Monitor ranges (GTF): 50-76Hz V, 30-83kHz H, max dotclock 170MHz
-Monitor name: BenQ GL2023
-Checksum: 0xb9 (valid)
-EDID block does NOT conform to EDID 1.3!
-	sRGB is signaled, but the chromaticities do not match
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: BNQ
+    Model: 30924
+    Serial Number: ...
+    Made in: week 42 of 2013
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate Composite SyncOnGreen
+    Maximum image size: 43 cm x 24 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6406, 0.3378
+    Green: 0.3144, 0.6289
+    Blue : 0.1582, 0.0585
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    Apple   :   832x624    74.551 Hz   4:3    49.726 kHz  57.284 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    Apple   :  1152x870    75.062 Hz 192:145  68.681 kHz 100.000 MHz
+  Standard Timings:
+    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (443 mm x 249 mm)
+                 Hfront   24 Hsync  80 Hback  96 Hpol P
+                 Vfront    1 Vsync   3 Vback  96 Vpol N
+    Display Product Serial Number: ...
+  Display Range Limits:
+    Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+    Display Product Name: 'BenQ GL2023'
+Checksum: 0xb9

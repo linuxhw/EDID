@@ -1,107 +1,85 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004c2d89053432494b
-0114010380341d782a6041a6564a9c25
-1250542308008100814081809500a940
-b30001010101023a801871382d40582c
-450009252100001e000000fd00383c1e
-5111000a202020202020000000fc0053
-796e634d61737465720a2020000000ff
-004839585a3130323832360a2020019e
-02010400023a80d072382d40102c4580
-09252100001e011d007251d01e206e28
-550009252100001e011d00bc52d01e20
-b828554009252100001e8c0ad0902040
-31200c4055000925210000188c0ad08a
-20e02d10103e96000925210000180000
-00000000000000000000000000000000
-0000000000000000000000000000005e
+00 ff ff ff ff ff ff 00 4c 2d 89 05 34 32 49 4b
+01 14 01 03 80 34 1d 78 2a 60 41 a6 56 4a 9c 25
+12 50 54 23 08 00 81 00 81 40 81 80 95 00 a9 40
+b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 09 25 21 00 00 1e 00 00 00 fd 00 38 3c 1e
+51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53
+79 6e 63 4d 61 73 74 65 72 0a 20 20 00 00 00 ff
+00 48 39 58 5a 31 30 32 38 32 36 0a 20 20 01 9e
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c 2d 89 05 34 32 49 4b 01 14
-version:         01 03
-basic params:    80 34 1d 78 2a
-chroma info:     60 41 a6 56 4a 9c 25 12 50 54
-established:     23 08 00
-standard:        81 00 81 40 81 80 95 00 a9 40 b3 00 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 09 25 21 00 00 1e
-descriptor 2:    00 00 00 fd 00 38 3c 1e 51 11 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 53 79 6e 63 4d 61 73 74 65 72 0a 20 20
-descriptor 4:    00 00 00 ff 00 48 39 58 5a 31 30 32 38 32 36 0a 20 20
-extensions:      01
-checksum:        9e
+02 01 04 00 02 3a 80 d0 72 38 2d 40 10 2c 45 80
+09 25 21 00 00 1e 01 1d 00 72 51 d0 1e 20 6e 28
+55 00 09 25 21 00 00 1e 01 1d 00 bc 52 d0 1e 20
+b8 28 55 40 09 25 21 00 00 1e 8c 0a d0 90 20 40
+31 20 0c 40 55 00 09 25 21 00 00 18 8c 0a d0 8a
+20 e0 2d 10 10 3e 96 00 09 25 21 00 00 18 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 5e
 
-EDID version: 1.3
-Manufacturer: SAM Model 589 Serial Number --
-Made in week 1 of 2010
-Digital display
-Maximum image size: 52 cm x 29 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6494, 0.3378
-  Green: 0.2890, 0.6093
-  Blue:  0.1455, 0.0703
-  White: 0.3125, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x800@60Hz 16:10
-  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-Detailed mode: Clock 148.500 MHz, 521 mm x 293 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor ranges (GTF): 56-60Hz V, 30-81kHz H, max dotclock 170MHz
-Monitor name: SyncMaster
-Serial number: --
-Has 1 extension blocks
-Checksum: 0x9e (valid)
+----------------
 
-CTA extension block
-Extension version: 1
-0 8-byte timing descriptors
-Detailed mode: Clock 148.500 MHz, 521 mm x 293 mm
-               1920 2448 2492 2640 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 50 Hz, HorFreq: 56250 Hz
-Detailed mode: Clock 74.250 MHz, 521 mm x 293 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Detailed mode: Clock 74.250 MHz, 521 mm x 293 mm
-               1280 1720 1760 1980 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 50 Hz, HorFreq: 37500 Hz
-Detailed mode: Clock 27.000 MHz, 521 mm x 293 mm
-                720  732  796  864 hborder 0
-                576  581  586  625 vborder 0
-               -hsync -vsync 
-               VertFreq: 50 Hz, HorFreq: 31250 Hz
-Detailed mode: Clock 27.000 MHz, 521 mm x 293 mm
-                720  736  798  858 hborder 0
-                480  489  495  525 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 31468 Hz
-Checksum: 0x5e (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SAM
+    Model: 1417
+    Serial Number: ...
+    Made in: week 1 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 52 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6494, 0.3378
+    Green: 0.2890, 0.6093
+    Blue : 0.1455, 0.0703
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (521 mm x 293 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 56-60 Hz V, 30-81 kHz H, max dotclock 170 MHz
+    Display Product Name: 'SyncMaster'
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0x9e
 
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 50 - 60 Hz
-  Horizontal Freq: 31250 - 75000 Hz
-  Maximum Clock: 162.000 MHz
-EDID block does not conform at all!
-	Both the serial number and the serial string are set
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 1
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz (521 mm x 293 mm)
+                 Hfront  528 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 3:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (521 mm x 293 mm)
+                 Hfront  110 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+    DTD 4:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz (521 mm x 293 mm)
+                 Hfront  440 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+    DTD 5:   720x576    50.000 Hz   5:4    31.250 kHz  27.000 MHz (521 mm x 293 mm)
+                 Hfront   12 Hsync  64 Hback  68 Hpol N
+                 Vfront    5 Vsync   5 Vback  39 Vpol N
+    DTD 6:   720x480    59.940 Hz   3:2    31.469 kHz  27.000 MHz (521 mm x 293 mm)
+                 Hfront   16 Hsync  62 Hback  60 Hpol N
+                 Vfront    9 Vsync   6 Vback  30 Vpol N
+Checksum: 0x5e

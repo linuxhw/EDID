@@ -1,56 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004c834d3600000000
-00180104951f11780ab995a2554b9c26
-0f505400000001010101010101010101
-010101010101d23780a2703840403020
-250035ae100000190000000f00000000
-00000000001e82105200000000fe0053
-414d53554e470a204c83484c000000fe
-004c544e313430484c30353930310099
+00 ff ff ff ff ff ff 00 4c 83 4d 36 00 00 00 00
+00 18 01 04 95 1f 11 78 0a b9 95 a2 55 4b 9c 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d2 37 80 a2 70 38 40 40 30 20
+25 00 35 ae 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 1e 82 10 52 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 4c 83 48 4c 00 00 00 fe
+00 4c 54 4e 31 34 30 48 4c 30 35 39 30 31 00 99
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c 83 4d 36 00 00 00 00 00 18
-version:         01 04
-basic params:    95 1f 11 78 0a
-chroma info:     b9 95 a2 55 4b 9c 26 0f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    d2 37 80 a2 70 38 40 40 30 20 25 00 35 ae 10 00 00 19
-descriptor 2:    00 00 00 0f 00 00 00 00 00 00 00 00 00 1e 82 10 52 00
-descriptor 3:    00 00 00 fe 00 53 41 4d 53 55 4e 47 0a 20 4c 83 48 4c
-descriptor 4:    00 00 00 fe 00 4c 54 4e 31 34 30 48 4c 30 35 39 30 31
-extensions:      00
-checksum:        99
+----------------
 
-EDID version: 1.4
-Manufacturer: SDC Model 364d Serial Number --
-Made in year 2014
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6347, 0.3349
-  Green: 0.2949, 0.6103
-  Blue:  0.1503, 0.0595
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 142.900 MHz, 309 mm x 174 mm
-               1920 1968 2000 2082 hborder 0
-               1080 1082 1087 1144 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 68635 Hz
-Manufacturer-specified data, tag 15
-ASCII string: SAMSUNG
-ASCII string: LTN140HL05901
-Checksum: 0x99 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 13901
+    Made in: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6347, 0.3349
+    Green: 0.2949, 0.6103
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.996 Hz  16:9    68.636 kHz 142.900 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback  82 Hpol N
+                 Vfront    2 Vsync   5 Vback  57 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 1e 82 10 52 00 '..............R.'
+    Alphanumeric Data String: 'SAMSUNG'
+    Alphanumeric Data String: 'LTN140HL05901'
+Checksum: 0x99

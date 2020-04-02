@@ -1,139 +1,121 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006b3b13269e30100
-221d0104a54627783b10e5ae5048a725
-115054bfcf00d1c0714f81c081408180
-9500b3000101f8e300a0a0a032500820
-9804b9892100001e695e00a0a0a02950
-3020b804b9892100001a000000fd0030
-90dede3c010a202020202020000000fc
-00415355532058473332560a20200184
-020320714d0102031112130f1d1e0e90
-1f04230917078301000065030c001000
-5aa000a0a0a0465030203500b9892100
-001a6fc200a0a0a0555030203500b989
-2100001a5a8700a0a0a03b5030203500
-b9892100001a00000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000000c
+00 ff ff ff ff ff ff 00 06 b3 b1 32 69 e3 01 00
+22 1d 01 04 a5 46 27 78 3b 10 e5 ae 50 48 a7 25
+11 50 54 bf cf 00 d1 c0 71 4f 81 c0 81 40 81 80
+95 00 b3 00 01 01 f8 e3 00 a0 a0 a0 32 50 08 20
+98 04 b9 89 21 00 00 1e 69 5e 00 a0 a0 a0 29 50
+30 20 b8 04 b9 89 21 00 00 1a 00 00 00 fd 00 30
+90 de de 3c 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 58 47 33 32 56 0a 20 20 01 84
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 b3 b1 32 69 e3 01 00 22 1d
-version:         01 04
-basic params:    a5 46 27 78 3b
-chroma info:     10 e5 ae 50 48 a7 25 11 50 54
-established:     bf cf 00
-standard:        d1 c0 71 4f 81 c0 81 40 81 80 95 00 b3 00 01 01
-descriptor 1:    f8 e3 00 a0 a0 a0 32 50 08 20 98 04 b9 89 21 00 00 1e
-descriptor 2:    69 5e 00 a0 a0 a0 29 50 30 20 b8 04 b9 89 21 00 00 1a
-descriptor 3:    00 00 00 fd 00 30 90 de de 3c 01 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 41 53 55 53 20 58 47 33 32 56 0a 20 20
-extensions:      01
-checksum:        84
+02 03 20 71 4d 01 02 03 11 12 13 0f 1d 1e 0e 90
+1f 04 23 09 17 07 83 01 00 00 65 03 0c 00 10 00
+5a a0 00 a0 a0 a0 46 50 30 20 35 00 b9 89 21 00
+00 1a 6f c2 00 a0 a0 a0 55 50 30 20 35 00 b9 89
+21 00 00 1a 5a 87 00 a0 a0 a0 3b 50 30 20 35 00
+b9 89 21 00 00 1a 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0c
 
-EDID version: 1.4
-Manufacturer: AUS Model 32b1 Serial Number --
-Made in week 34 of 2019
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 70 cm x 39 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6796, 0.3134
-  Green: 0.2812, 0.6523
-  Blue:  0.1474, 0.0683
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1920x1080@60Hz 16:9
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1280x720@60Hz 16:9
-  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-Detailed mode: Clock 583.600 MHz, 697 mm x 393 mm
-               2560 2568 2600 2720 hborder 0
-               1440 1465 1473 1490 vborder 0
-               +hsync +vsync 
-               VertFreq: 143 Hz, HorFreq: 214558 Hz
-Detailed mode: Clock 241.690 MHz, 697 mm x 393 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1467 1475 1481 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 88856 Hz
-Monitor ranges (bare limits): 48-144Hz V, 222-222kHz H, max dotclock 600MHz
-Monitor name: ASUS XG32V
-Has 1 extension blocks
-Checksum: 0x84 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-28 bytes of CTA data
-  Video data block
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC  17 720x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC  15 1440x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 54.000 MHz
-    VIC  29 1440x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 54.000 MHz
-    VIC  30 1440x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 54.000 MHz
-    VIC  14 1440x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 54.000 MHz
-    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUS
+    Model: 12977
+    Serial Number: ...
+    Made in: week 34 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 70 cm x 39 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6796, 0.3134
+    Green: 0.2812, 0.6523
+    Blue : 0.1474, 0.0683
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    Apple   :   640x480    66.667 Hz   4:3    35.000 kHz  30.240 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    DMT 0x15:  1152x864    75.000 Hz   4:3    67.500 kHz 108.000 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440  143.999 Hz  16:9   214.559 kHz 583.600 MHz (697 mm x 393 mm)
+                 Hfront    8 Hsync  32 Hback 120 Hpol P
+                 Vfront   25 Vsync   8 Vback  17 Vpol P
+    DTD 2:  2560x1440   59.998 Hz  16:9    88.857 kHz 241.690 MHz (697 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront   27 Vsync   8 Vback   6 Vpol N
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 48-144 Hz V, 222-222 kHz H, max dotclock 600 MHz
+    Display Product Name: 'ASUS XG32V'
+  Extension blocks: 1
+Checksum: 0x84
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
+    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC  15:  1440x480    59.940 Hz  16:9    31.469 kHz  54.000 MHz
+    VIC  29:  1440x576    50.000 Hz   4:3    31.250 kHz  54.000 MHz
+    VIC  30:  1440x576    50.000 Hz  16:9    31.250 kHz  54.000 MHz
+    VIC  14:  1440x480    59.940 Hz   4:3    31.469 kHz  54.000 MHz
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (native)
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 96 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 410.500 MHz, 697 mm x 393 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1510 vborder 0
-               +hsync -vsync 
-               VertFreq: 99 Hz, HorFreq: 150919 Hz
-Detailed mode: Clock 497.750 MHz, 697 mm x 393 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1525 vborder 0
-               +hsync -vsync 
-               VertFreq: 119 Hz, HorFreq: 182996 Hz
-Detailed mode: Clock 346.500 MHz, 697 mm x 393 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1499 vborder 0
-               +hsync -vsync 
-               VertFreq: 84 Hz, HorFreq: 127389 Hz
-Checksum: 0xc (valid)
-
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 50 - 143 Hz
-  Horizontal Freq: 31250 - 214558 Hz
-  Maximum Clock: 583.600 MHz
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 3:  2560x1440   99.946 Hz  16:9   150.919 kHz 410.500 MHz (697 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  62 Vpol N
+    DTD 4:  2560x1440  119.998 Hz  16:9   182.996 kHz 497.750 MHz (697 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  77 Vpol N
+    DTD 5:  2560x1440   84.983 Hz  16:9   127.390 kHz 346.500 MHz (697 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  51 Vpol N
+Checksum: 0xc

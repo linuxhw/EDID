@@ -1,70 +1,53 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0049f7811d00000000
-24110103680000ffe8bbb9a352469824
-0f484c2dce0001010101010101010101
-010101010101982150b051001b304070
-360096e51000001ea91a00a050001630
-3020370000e50000001a000000100000
-2a4030701300dd1f1100001800000010
-0000263018883600671f1100001800e7
+00 ff ff ff ff ff ff 00 49 f7 81 1d 00 00 00 00
+24 11 01 03 68 00 00 ff e8 bb b9 a3 52 46 98 24
+0f 48 4c 2d ce 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 98 21 50 b0 51 00 1b 30 40 70
+36 00 96 e5 10 00 00 1e a9 1a 00 a0 50 00 16 30
+30 20 37 00 00 e5 00 00 00 1a 00 00 00 10 00 00
+2a 40 30 70 13 00 dd 1f 11 00 00 18 00 00 00 10
+00 00 26 30 18 88 36 00 67 1f 11 00 00 18 00 e7
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   49 f7 81 1d 00 00 00 00 24 11
-version:         01 03
-basic params:    68 00 00 ff e8
-chroma info:     bb b9 a3 52 46 98 24 0f 48 4c
-established:     2d ce 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    98 21 50 b0 51 00 1b 30 40 70 36 00 96 e5 10 00 00 1e
-descriptor 2:    a9 1a 00 a0 50 00 16 30 30 20 37 00 00 e5 00 00 00 1a
-descriptor 3:    00 00 00 10 00 00 2a 40 30 70 13 00 dd 1f 11 00 00 18
-descriptor 4:    00 00 00 10 00 00 26 30 18 88 36 00 67 1f 11 00 00 18
-extensions:      00
-checksum:        e7
+----------------
 
-EDID version: 1.3
-Manufacturer: ROW Model 1d81 Serial Number --
-Made in week 36 of 2007
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Image size is variable
-Gamma: 1.0
-DPMS levels: Standby Suspend Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6386, 0.3232
-  Green: 0.2753, 0.5966
-  Blue:  0.1425, 0.0615
-  White: 0.2832, 0.2978
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-Detailed mode: Clock 86.000 MHz, 406 mm x 229 mm
-               1360 1424 1536 1792 hborder 0
-                768  771  777  795 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 47991 Hz
-Detailed mode: Clock 68.250 MHz, 0 mm x 229 mm
-               1280 1328 1360 1440 hborder 0
-                768  771  778  790 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 47395 Hz
-Dummy block
-Dummy block
-Checksum: 0xe7 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing preferred timing
-	Missing monitor ranges
-EDID block does not conform at all!
-	Dummy block filled with garbage
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ROW
+    Model: 7553
+    Made in: week 36 of 2007
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate
+    Image size is variable
+    Gamma: 1.0
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6386, 0.3232
+    Green: 0.2753, 0.5966
+    Blue : 0.1425, 0.0615
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1360x768    60.366 Hz  85:48   47.991 kHz  86.000 MHz (406 mm x 229 mm)
+                 Hfront   64 Hsync 112 Hback 256 Hpol P
+                 Vfront    3 Vsync   6 Vback  18 Vpol P
+    DTD 2:  1280x768    59.995 Hz   5:3    47.396 kHz  68.250 MHz (0 mm x 229 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   7 Vback  12 Vpol N
+    Dummy Descriptor:
+    Dummy Descriptor:
+Checksum: 0xe7

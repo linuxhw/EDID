@@ -1,64 +1,48 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030ae464000000000
-000f0103801e1678eabd3091544f8b26
-2150542108008180a940010101010101
-010101010101483f403062b0324040c0
-130030e410000019bc34403062b03240
-40c0130030e4100000190000000f00a9
-4332a9432814020009e50000000000fe
-0048563135305558322d3130300a00a6
+00 ff ff ff ff ff ff 00 30 ae 46 40 00 00 00 00
+00 0f 01 03 80 1e 16 78 ea bd 30 91 54 4f 8b 26
+21 50 54 21 08 00 81 80 a9 40 01 01 01 01 01 01
+01 01 01 01 01 01 48 3f 40 30 62 b0 32 40 40 c0
+13 00 30 e4 10 00 00 19 bc 34 40 30 62 b0 32 40
+40 c0 13 00 30 e4 10 00 00 19 00 00 00 0f 00 a9
+43 32 a9 43 28 14 02 00 09 e5 00 00 00 00 00 fe
+00 48 56 31 35 30 55 58 32 2d 31 30 30 0a 00 a6
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 ae 46 40 00 00 00 00 00 0f
-version:         01 03
-basic params:    80 1e 16 78 ea
-chroma info:     bd 30 91 54 4f 8b 26 21 50 54
-established:     21 08 00
-standard:        81 80 a9 40 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    48 3f 40 30 62 b0 32 40 40 c0 13 00 30 e4 10 00 00 19
-descriptor 2:    bc 34 40 30 62 b0 32 40 40 c0 13 00 30 e4 10 00 00 19
-descriptor 3:    00 00 00 0f 00 a9 43 32 a9 43 28 14 02 00 09 e5 00 00
-descriptor 4:    00 00 00 fe 00 48 56 31 35 30 55 58 32 2d 31 30 30 0a
-extensions:      00
-checksum:        a6
+----------------
 
-EDID version: 1.3
-Manufacturer: LEN Model 4046 Serial Number --
-Digital display
-Maximum image size: 30 cm x 22 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5683, 0.3310
-  Green: 0.3115, 0.5439
-  Blue:  0.1484, 0.1318
-  White: 0.3125, 0.3281
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
-Detailed mode: Clock 162.000 MHz, 304 mm x 228 mm
-               1600 1664 1856 2160 hborder 0
-               1200 1201 1204 1250 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 75000 Hz
-Detailed mode: Clock 135.000 MHz, 304 mm x 228 mm
-               1600 1664 1856 2160 hborder 0
-               1200 1201 1204 1250 vborder 0
-               -hsync -vsync 
-               VertFreq: 50 Hz, HorFreq: 62500 Hz
-Manufacturer-specified data, tag 15
-ASCII string: HV150UX2-100
-Checksum: 0xa6 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16454
+    Made in: 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 22 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5683, 0.3310
+    Green: 0.3115, 0.5439
+    Blue : 0.1484, 0.1318
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz (304 mm x 228 mm)
+                 Hfront   64 Hsync 192 Hback 304 Hpol N
+                 Vfront    1 Vsync   3 Vback  46 Vpol N
+    DTD 2:  1600x1200   50.000 Hz   4:3    62.500 kHz 135.000 MHz (304 mm x 228 mm)
+                 Hfront   64 Hsync 192 Hback 304 Hpol N
+                 Vfront    1 Vsync   3 Vback  46 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 a9 43 32 a9 43 28 14 02 00 09 e5 00 00 '....C2.C(.......'
+    Alphanumeric Data String: 'HV150UX2-100'
+Checksum: 0xa6

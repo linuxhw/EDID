@@ -1,56 +1,43 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e4e20400000000
-0019010495221378ea05f59458569228
-1e505400000001010101010101010101
-010101010101d01d56f4500016303020
-350058c2100000190000000000000000
-00000000000000000000000000fe004c
-4720446973706c61790a2020000000fe
-004c503135365748422d545044310037
+00 ff ff ff ff ff ff 00 30 e4 e2 04 00 00 00 00
+00 19 01 04 95 22 13 78 ea 05 f5 94 58 56 92 28
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d0 1d 56 f4 50 00 16 30 30 20
+35 00 58 c2 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 35 36 57 48 42 2d 54 50 44 31 00 37
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 e2 04 00 00 00 00 00 19
-version:         01 04
-basic params:    95 22 13 78 ea
-chroma info:     05 f5 94 58 56 92 28 1e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    d0 1d 56 f4 50 00 16 30 30 20 35 00 58 c2 10 00 00 19
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fe 00 4c 47 20 44 69 73 70 6c 61 79 0a 20 20
-descriptor 4:    00 00 00 fe 00 4c 50 31 35 36 57 48 42 2d 54 50 44 31
-extensions:      00
-checksum:        37
+----------------
 
-EDID version: 1.4
-Manufacturer: LGD Model 4e2 Serial Number --
-Made in year 2015
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5781, 0.3437
-  Green: 0.3369, 0.5712
-  Blue:  0.1591, 0.1201
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 76.320 MHz, 344 mm x 194 mm
-               1366 1414 1446 1610 hborder 0
-                768  771  776  790 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 47403 Hz
-Manufacturer-specified data, tag 0
-ASCII string: LG Display
-ASCII string: LP156WHB-TPD1
-Checksum: 0x37 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1250
+    Made in: 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5781, 0.3437
+    Green: 0.3369, 0.5712
+    Blue : 0.1591, 0.1201
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.005 Hz 683:384  47.404 kHz  76.320 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback 164 Hpol N
+                 Vfront    3 Vsync   5 Vback  14 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP156WHB-TPD1'
+Checksum: 0x37

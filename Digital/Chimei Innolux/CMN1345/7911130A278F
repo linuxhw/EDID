@@ -1,60 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000dae451300000000
-15160104a51d117802a705a656549b26
-0c505400000001010101010101010101
-010101010101363680a0703820402e1e
-240026a51000001a242480a070382040
-2e1e240026a51000001a000000fe0056
-4b574a43803133334853450a00000000
-000a4131a3001000000a010a20200023
+00 ff ff ff ff ff ff 00 0d ae 45 13 00 00 00 00
+15 16 01 04 a5 1d 11 78 02 a7 05 a6 56 54 9b 26
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 36 36 80 a0 70 38 20 40 2e 1e
+24 00 26 a5 10 00 00 1a 24 24 80 a0 70 38 20 40
+2e 1e 24 00 26 a5 10 00 00 1a 00 00 00 fe 00 56
+4b 57 4a 43 80 31 33 33 48 53 45 0a 00 00 00 00
+00 0a 41 31 a3 00 10 00 00 0a 01 0a 20 20 00 23
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0d ae 45 13 00 00 00 00 15 16
-version:         01 04
-basic params:    a5 1d 11 78 02
-chroma info:     a7 05 a6 56 54 9b 26 0c 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    36 36 80 a0 70 38 20 40 2e 1e 24 00 26 a5 10 00 00 1a
-descriptor 2:    24 24 80 a0 70 38 20 40 2e 1e 24 00 26 a5 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 56 4b 57 4a 43 80 31 33 33 48 53 45 0a
-descriptor 4:    00 00 00 00 00 0a 41 31 a3 00 10 00 00 0a 01 0a 20 20
-extensions:      00
-checksum:        23
+----------------
 
-EDID version: 1.4
-Manufacturer: CMN Model 1345 Serial Number --
-Made in week 21 of 2012
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 29 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6503, 0.3378
-  Green: 0.3291, 0.6083
-  Blue:  0.1484, 0.0468
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 138.780 MHz, 294 mm x 165 mm
-               1920 1966 1996 2080 hborder 0
-               1080 1082 1086 1112 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 66721 Hz
-Detailed mode: Clock 92.520 MHz, 294 mm x 165 mm
-               1920 1966 1996 2080 hborder 0
-               1080 1082 1086 1112 vborder 0
-               +hsync -vsync 
-               VertFreq: 40 Hz, HorFreq: 44480 Hz
-ASCII string: VKWJC
-Manufacturer-specified data, tag 0
-Checksum: 0x23 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 4933
+    Made in: week 21 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6503, 0.3378
+    Green: 0.3291, 0.6083
+    Blue : 0.1484, 0.0468
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.001 Hz  16:9    66.721 kHz 138.780 MHz (294 mm x 165 mm)
+                 Hfront   46 Hsync  30 Hback  84 Hpol P
+                 Vfront    2 Vsync   4 Vback  26 Vpol N
+    DTD 2:  1920x1080   40.001 Hz  16:9    44.481 kHz  92.520 MHz (294 mm x 165 mm)
+                 Hfront   46 Hsync  30 Hback  84 Hpol P
+                 Vfront    2 Vsync   4 Vback  26 Vpol N
+    Alphanumeric Data String: 'VKWJC'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 0a 41 31 a3 00 10 00 00 0a 01 0a 20 20 '....A1........  '
+Checksum: 0x23

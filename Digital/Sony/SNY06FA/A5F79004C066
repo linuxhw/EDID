@@ -1,59 +1,45 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004dd9fa0600000000
-2d0c010490241400eaa8e099574b9225
-1c505400000001010101010101010101
-010101010101302a405e618418307474
-880068c810000018302a40906184b430
-8585cc0068c810000018000000fc004e
-76696469612044656661756c000000fc
-007420466c61742050616e656c0000a9
+00 ff ff ff ff ff ff 00 4d d9 fa 06 00 00 00 00
+2d 0c 01 04 90 24 14 00 ea a8 e0 99 57 4b 92 25
+1c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 40 5e 61 84 18 30 74 74
+88 00 68 c8 10 00 00 18 30 2a 40 90 61 84 b4 30
+85 85 cc 00 68 c8 10 00 00 18 00 00 00 fc 00 4e
+76 69 64 69 61 20 44 65 66 61 75 6c 00 00 00 fc
+00 74 20 46 6c 61 74 20 50 61 6e 65 6c 00 00 a9
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4d d9 fa 06 00 00 00 00 2d 0c
-version:         01 04
-basic params:    90 24 14 00 ea
-chroma info:     a8 e0 99 57 4b 92 25 1c 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    30 2a 40 5e 61 84 18 30 74 74 88 00 68 c8 10 00 00 18
-descriptor 2:    30 2a 40 90 61 84 b4 30 85 85 cc 00 68 c8 10 00 00 18
-descriptor 3:    00 00 00 fc 00 4e 76 69 64 69 61 20 44 65 66 61 75 6c
-descriptor 4:    00 00 00 fc 00 74 20 46 6c 61 74 20 50 61 6e 65 6c 00
-extensions:      00
-checksum:        a9
+----------------
 
-EDID version: 1.4
-Manufacturer: SNY Model 6fa Serial Number --
-Digital display
-6 bits per primary color channel
-Digital interface is not defined
-Maximum image size: 36 cm x 20 cm
-Gamma: 1.00
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5996, 0.3417
-  Green: 0.2949, 0.5703
-  Blue:  0.1474, 0.1113
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 108.000 MHz, 360 mm x 200 mm
-               1600 1716 1832 1950 hborder 0
-                900  908  916  924 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 55384 Hz
-Detailed mode: Clock 108.000 MHz, 360 mm x 200 mm
-               1600 1733 1866 2000 hborder 0
-                900  912  924 1080 vborder 0
-               -hsync -vsync 
-               VertFreq: 50 Hz, HorFreq: 54000 Hz
-Checksum: 0xa9 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Name descriptor not terminated with a newline
-	Missing monitor ranges
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SNY
+    Model: 1786
+    Made in: week 45 of 2002
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 36 cm x 20 cm
+    Gamma: 1.00
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5996, 0.3417
+    Green: 0.2949, 0.5703
+    Blue : 0.1474, 0.1113
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    59.940 Hz  16:9    55.385 kHz 108.000 MHz (360 mm x 200 mm)
+                 Hfront  116 Hsync 116 Hback 118 Hpol N
+                 Vfront    8 Vsync   8 Vback   8 Vpol N
+    DTD 2:  1600x900    50.000 Hz  16:9    54.000 kHz 108.000 MHz (360 mm x 200 mm)
+                 Hfront  133 Hsync 133 Hback 134 Hpol N
+                 Vfront   12 Vsync  12 Vback 156 Vpol N
+    Display Product Name: 'Nvidia Defaul'
+    Display Product Name: 't Flat Panel'
+Checksum: 0xa9

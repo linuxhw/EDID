@@ -1,142 +1,119 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00593a131001010101
-00180103806e3e782a922da355539c25
-0b474a200000d1c0d1fc010101010101
-01010101010104740030f2705a80b058
-8a0047684200001e023a801871382d40
-582c450047684200001e000000fc0050
-35303275692d4231450a2020000000fd
-00194c0f8c1e000a2020202020200154
-02033c714a0203059004203f5d5f6432
-00000000000000000000000009070715
-07508301000071030c005000383ce001
-0101010060010304e30e6166023a8018
-71382d40582c450047684200001e011d
-007251d01e206e28550047684200001e
-00000000000000000000000000000000
-000000000000000000000000000000bb
+00 ff ff ff ff ff ff 00 59 3a 13 10 01 01 01 01
+00 18 01 03 80 6e 3e 78 2a 92 2d a3 55 53 9c 25
+0b 47 4a 20 00 00 d1 c0 d1 fc 01 01 01 01 01 01
+01 01 01 01 01 01 04 74 00 30 f2 70 5a 80 b0 58
+8a 00 47 68 42 00 00 1e 02 3a 80 18 71 38 2d 40
+58 2c 45 00 47 68 42 00 00 1e 00 00 00 fc 00 50
+35 30 32 75 69 2d 42 31 45 0a 20 20 00 00 00 fd
+00 19 4c 0f 8c 1e 00 0a 20 20 20 20 20 20 01 54
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   59 3a 13 10 01 01 01 01 00 18
-version:         01 03
-basic params:    80 6e 3e 78 2a
-chroma info:     92 2d a3 55 53 9c 25 0b 47 4a
-established:     20 00 00
-standard:        d1 c0 d1 fc 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    04 74 00 30 f2 70 5a 80 b0 58 8a 00 47 68 42 00 00 1e
-descriptor 2:    02 3a 80 18 71 38 2d 40 58 2c 45 00 47 68 42 00 00 1e
-descriptor 3:    00 00 00 fc 00 50 35 30 32 75 69 2d 42 31 45 0a 20 20
-descriptor 4:    00 00 00 fd 00 19 4c 0f 8c 1e 00 0a 20 20 20 20 20 20
-extensions:      01
-checksum:        54
+02 03 3c 71 4a 02 03 05 90 04 20 3f 5d 5f 64 32
+00 00 00 00 00 00 00 00 00 00 00 00 09 07 07 15
+07 50 83 01 00 00 71 03 0c 00 50 00 38 3c e0 01
+01 01 01 00 60 01 03 04 e3 0e 61 66 02 3a 80 18
+71 38 2d 40 58 2c 45 00 47 68 42 00 00 1e 01 1d
+00 72 51 d0 1e 20 6e 28 55 00 47 68 42 00 00 1e
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 bb
 
-EDID version: 1.3
-Manufacturer: VIZ Model 1013 Serial Number --
-Made in year 2014
-Digital display
-Maximum image size: 110 cm x 62 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6386, 0.3330
-  Green: 0.3242, 0.6113
-  Blue:  0.1445, 0.0449
-  White: 0.2802, 0.2900
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-Standard timings supported:
-  1920x1080@60Hz 16:9
-  1920x1080@120Hz 16:9
-Detailed mode: Clock 297.000 MHz, 1095 mm x 616 mm
-               3840 4016 4104 4400 hborder 0
-               2160 2168 2178 2250 vborder 0
-               +hsync +vsync 
-               VertFreq: 30 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 148.500 MHz, 1095 mm x 616 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor name: P502ui-B1E
-Monitor ranges (GTF): 25-76Hz V, 15-140kHz H, max dotclock 300MHz
-Has 1 extension blocks
-Checksum: 0x54 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-56 bytes of CTA data
-  Video data block
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  32 1920x1080@24Hz 16:9  HorFreq: 27000 Hz Clock: 74.250 MHz
-    VIC  63 1920x1080@120Hz 16:9  HorFreq: 135000 Hz Clock: 297.000 MHz
-    VIC  93 3840x2160@24Hz 16:9  HorFreq: 54000 Hz Clock: 297.000 MHz
-    VIC  95 3840x2160@30Hz 16:9  HorFreq: 67500 Hz Clock: 297.000 MHz
-    VIC 100 4096x2160@30Hz 256:135  HorFreq: 67500 Hz Clock: 297.000 MHz
-  Audio data block
-    RESERVED, max channels 1
-      Supported sample rates (kHz):
-      Maximum bit rate: 0 kHz
-    RESERVED, max channels 1
-      Supported sample rates (kHz):
-      Maximum bit rate: 0 kHz
-    RESERVED, max channels 1
-      Supported sample rates (kHz):
-      Maximum bit rate: 0 kHz
-    RESERVED, max channels 1
-      Supported sample rates (kHz):
-      Maximum bit rate: 0 kHz
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: VIZ
+    Model: 4115
+    Serial Number: ...
+    Made in: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 110 cm x 62 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6386, 0.3330
+    Green: 0.3242, 0.6113
+    Blue : 0.1445, 0.0449
+    White: 0.2802, 0.2900
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    GTF     :  1920x1080  120.000 Hz  16:9   138.840 kHz 368.759 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   30.000 Hz  16:9    67.500 kHz 297.000 MHz (1095 mm x 616 mm)
+                 Hfront  176 Hsync  88 Hback 296 Hpol P
+                 Vfront    8 Vsync  10 Vback  72 Vpol P
+    DTD 2:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (1095 mm x 616 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    Display Product Name: 'P502ui-B1E'
+  Display Range Limits:
+    Monitor ranges (GTF): 25-76 Hz V, 15-140 kHz H, max dotclock 300 MHz
+  Extension blocks: 1
+Checksum: 0x54
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (native)
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+    VIC  63:  1920x1080  120.000 Hz  16:9   135.000 kHz 297.000 MHz
+    VIC  93:  3840x2160   24.000 Hz  16:9    54.000 kHz 297.000 MHz
+    VIC  95:  3840x2160   30.000 Hz  16:9    67.500 kHz 297.000 MHz
+    VIC 100:  4096x2160   30.000 Hz 256:135  67.500 kHz 297.000 MHz
+  Audio Data Block:
+    Reserved (0x00)
+    Reserved (0x00)
+    Reserved (0x00)
+    Reserved (0x00)
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-    AC-3, max channels 6
+    AC-3:
+      Max channels: 6
       Supported sample rates (kHz): 48 44.1 32
-      Maximum bit rate: 640 kHz
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 5.0.0.0
+      Maximum bit rate: 640 kb/s
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 5.0.0.0
     DC_36bit
     DC_30bit
     DC_Y444
-    Maximum TMDS clock: 300MHz
-    Video latency: 1
-    Audio latency: 1
-    Interlaced video latency: 1
-    Interlaced audio latency: 1
+    Maximum TMDS clock: 300 MHz
+    Video latency: 3 ms
+    Audio latency: 3 ms
+    Interlaced video latency: 3 ms
+    Interlaced audio latency: 3 ms
     Extended HDMI video details:
-      HDMI VIC 1 3840x2160@30Hz 16:9 HorFreq: 67500 Hz Clock: 297.000 MHz
-      HDMI VIC 3 3840x2160@24Hz 16:9 HorFreq: 54000 Hz Clock: 297.000 MHz
-      HDMI VIC 4 4096x2160@24Hz 256:135 HorFreq: 54000 Hz Clock: 297.000 MHz
-  Extended tag: YCbCr 4:2:0 video data block
-    VIC  97 3840x2160@60Hz 16:9  HorFreq: 135000 Hz Clock: 297.000 MHz
-    VIC 102 4096x2160@60Hz 256:135  HorFreq: 135000 Hz Clock: 297.000 MHz
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 148.500 MHz, 1095 mm x 616 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 74.250 MHz, 1095 mm x 616 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Checksum: 0xbb (valid)
-
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 24 - 120 Hz
-  Horizontal Freq: 27000 - 135000 Hz
-  Maximum Clock: 297.000 MHz
-Warning: HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000 Hz  16:9    67.500 kHz 297.000 MHz
+        HDMI VIC 3:  3840x2160   24.000 Hz  16:9    54.000 kHz 297.000 MHz
+        HDMI VIC 4:  4096x2160   24.000 Hz 256:135  54.000 kHz 297.000 MHz
+  YCbCr 4:2:0 Video Data Block:
+    VIC  97:  3840x2160   60.000 Hz  16:9    67.500 kHz 297.000 MHz
+    VIC 102:  4096x2160   60.000 Hz 256:135  67.500 kHz 297.000 MHz
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (1095 mm x 616 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (1095 mm x 616 mm)
+                 Hfront  110 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+Checksum: 0xbb

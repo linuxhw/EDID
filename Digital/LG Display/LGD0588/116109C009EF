@@ -1,60 +1,45 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e4880500000000
-001a0104a51d1078ea23f5a251479c27
-10505400000001010101010101010101
-0101010101014dd000a0f0703e803020
-350025a51000001b4dd000a0f070ec88
-3020350025a51000001b000000000000
-00000000000000000000000000000002
-000c2dff0a3caa27153aaa000000008f
+00 ff ff ff ff ff ff 00 30 e4 88 05 00 00 00 00
+00 1a 01 04 a5 1d 10 78 ea 23 f5 a2 51 47 9c 27
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 25 a5 10 00 00 1b 4d d0 00 a0 f0 70 ec 88
+30 20 35 00 25 a5 10 00 00 1b 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 2d ff 0a 3c aa 27 15 3a aa 00 00 00 00 8f
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 88 05 00 00 00 00 00 1a
-version:         01 04
-basic params:    a5 1d 10 78 ea
-chroma info:     23 f5 a2 51 47 9c 27 10 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    4d d0 00 a0 f0 70 3e 80 30 20 35 00 25 a5 10 00 00 1b
-descriptor 2:    4d d0 00 a0 f0 70 ec 88 30 20 35 00 25 a5 10 00 00 1b
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 02 00 0c 2d ff 0a 3c aa 27 15 3a aa 00 00 00
-extensions:      00
-checksum:        8f
+----------------
 
-EDID version: 1.4
-Manufacturer: LGD Model 588 Serial Number --
-Made in year 2016
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 29 cm x 16 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6328, 0.3183
-  Green: 0.2773, 0.6123
-  Blue:  0.1552, 0.0654
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 533.250 MHz, 293 mm x 165 mm
-               3840 3888 3920 4000 hborder 0
-               2160 2163 2168 2222 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 133312 Hz
-Detailed mode: Clock 533.250 MHz, 293 mm x 165 mm
-               3840 3888 3920 4000 hborder 0
-               2160 2163 2168 4444 vborder 0
-               +hsync -vsync 
-               VertFreq: 29 Hz, HorFreq: 133312 Hz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 2
-Checksum: 0x8f (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1416
+    Made in: 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 16 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6328, 0.3183
+    Green: 0.2773, 0.6123
+    Blue : 0.1552, 0.0654
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.997 Hz  16:9   133.312 kHz 533.250 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  54 Vpol N
+    DTD 2:  3840x2160   29.998 Hz  16:9   133.312 kHz 533.250 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback 2276 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 2d ff 0a 3c aa 27 15 3a aa 00 00 00 '....-..<.'.:....'
+Checksum: 0x8f

@@ -1,75 +1,67 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00244dfb1901010101
-260c01030e241b962b0cc9a057479b27
-12484cefcf00a9593140315945596159
-818f8199a94f863d00c05100304040a0
-130060081100001e000000fd0030aa1e
-6b17000a202020202020000000fc0049
-424d2036363531205039370a000000ff
-00323332383431300a202020202000bd
+00 ff ff ff ff ff ff 00 24 4d fb 19 01 01 01 01
+26 0c 01 03 0e 24 1b 96 2b 0c c9 a0 57 47 9b 27
+12 48 4c ef cf 00 a9 59 31 40 31 59 45 59 61 59
+81 8f 81 99 a9 4f 86 3d 00 c0 51 00 30 40 40 a0
+13 00 60 08 11 00 00 1e 00 00 00 fd 00 30 aa 1e
+6b 17 00 0a 20 20 20 20 20 20 00 00 00 fc 00 49
+42 4d 20 36 36 35 31 20 50 39 37 0a 00 00 00 ff
+00 32 33 32 38 34 31 30 0a 20 20 20 20 20 00 bd
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   24 4d fb 19 01 01 01 01 26 0c
-version:         01 03
-basic params:    0e 24 1b 96 2b
-chroma info:     0c c9 a0 57 47 9b 27 12 48 4c
-established:     ef cf 00
-standard:        a9 59 31 40 31 59 45 59 61 59 81 8f 81 99 a9 4f
-descriptor 1:    86 3d 00 c0 51 00 30 40 40 a0 13 00 60 08 11 00 00 1e
-descriptor 2:    00 00 00 fd 00 30 aa 1e 6b 17 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 49 42 4d 20 36 36 35 31 20 50 39 37 0a
-descriptor 4:    00 00 00 ff 00 32 33 32 38 34 31 30 0a 20 20 20 20 20
-extensions:      00
-checksum:        bd
+----------------
 
-EDID version: 1.3
-Manufacturer: IBM Model 19fb Serial Number --
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate Composite SyncOnGreen 
-Maximum image size: 36 cm x 27 cm
-Gamma: 2.50
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Supports GTF timings within operating range
-Display x,y Chromaticity:
-  Red:   0.6250, 0.3398
-  Green: 0.2802, 0.6054
-  Blue:  0.1552, 0.0703
-  White: 0.2832, 0.2978
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  720x400@88Hz 9:5 HorFreq: 39500 Hz Clock: 35.500 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1600x1200@85Hz 4:3 HorFreq: 106300 Hz Clock: 229.500 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@85Hz 4:3 HorFreq: 43300 Hz Clock: 36.000 MHz
-  800x600@85Hz 4:3 HorFreq: 53700 Hz Clock: 56.250 MHz
-  1024x768@85Hz 4:3 HorFreq: 68700 Hz Clock: 94.500 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-  1280x1024@85Hz 5:4 HorFreq: 91100 Hz Clock: 157.500 MHz
-  1600x1200@75Hz 4:3 HorFreq: 93800 Hz Clock: 202.500 MHz
-Detailed mode: Clock 157.500 MHz, 352 mm x 264 mm
-               1280 1344 1504 1728 hborder 0
-               1024 1025 1028 1072 vborder 0
-               +hsync +vsync 
-               VertFreq: 85 Hz, HorFreq: 91145 Hz
-Monitor ranges (GTF): 48-170Hz V, 30-107kHz H, max dotclock 230MHz
-Monitor name: IBM 6651 P97
-Serial number: --
-Checksum: 0xbd (valid)
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: IBM
+    Model: 6651
+    Serial Number: ...
+    Made in: week 38 of 2002
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate Composite SyncOnGreen
+    Maximum image size: 36 cm x 27 cm
+    Gamma: 2.50
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is preferred timing
+    Supports GTF timings within operating range
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.6054
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    IBM     :   720x400    87.850 Hz   9:5    39.444 kHz  35.500 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x37:  1600x1200   85.000 Hz   4:3   106.250 kHz 229.500 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x07:   640x480    85.008 Hz   4:3    43.269 kHz  36.000 MHz
+    DMT 0x0c:   800x600    85.061 Hz   4:3    53.674 kHz  56.250 MHz
+    DMT 0x13:  1024x768    84.997 Hz   4:3    68.677 kHz  94.500 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+    DMT 0x25:  1280x1024   85.024 Hz   5:4    91.146 kHz 157.500 MHz
+    DMT 0x36:  1600x1200   75.000 Hz   4:3    93.750 kHz 202.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x1024   85.024 Hz   5:4    91.146 kHz 157.500 MHz (352 mm x 264 mm)
+                 Hfront   64 Hsync 160 Hback 224 Hpol P
+                 Vfront    1 Vsync   3 Vback  44 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 48-170 Hz V, 30-107 kHz H, max dotclock 230 MHz
+    Display Product Name: 'IBM 6651 P97'
+    Display Product Serial Number: ...
+Checksum: 0xbd

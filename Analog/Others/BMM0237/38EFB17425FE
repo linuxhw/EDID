@@ -1,75 +1,54 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009ad3702a49b0300
-2f0c0101081f1764e81726a061589a2e
-275439adce0000000000000000000000
-000000000000c31e0020410020301060
-130030e410000000000000fc00353637
-00000031354c000a2000000000fd003c
-4b1f3c0800001e1600000000000000fe
-00465a574a324230323336343532009a
+00 ff ff ff ff ff ff 00 09 ad 37 02 a4 9b 03 00
+2f 0c 01 01 08 1f 17 64 e8 17 26 a0 61 58 9a 2e
+27 54 39 ad ce 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 c3 1e 00 20 41 00 20 30 10 60
+13 00 30 e4 10 00 00 00 00 00 00 fc 00 35 36 37
+00 00 00 31 35 4c 00 0a 20 00 00 00 00 fd 00 3c
+4b 1f 3c 08 00 00 1e 16 00 00 00 00 00 00 00 fe
+00 46 5a 57 4a 32 42 30 32 33 36 34 35 32 00 9a
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 ad 37 02 a4 9b 03 00 2f 0c
-version:         01 01
-basic params:    08 1f 17 64 e8
-chroma info:     17 26 a0 61 58 9a 2e 27 54 39
-established:     ad ce 00
-standard:        00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 1:    c3 1e 00 20 41 00 20 30 10 60 13 00 30 e4 10 00 00 00
-descriptor 2:    00 00 00 fc 00 35 36 37 00 00 00 31 35 4c 00 0a 20 00
-descriptor 3:    00 00 00 fd 00 3c 4b 1f 3c 08 00 00 1e 16 00 00 00 00
-descriptor 4:    00 00 00 fe 00 46 5a 57 4a 32 42 30 32 33 36 34 35 32
-extensions:      00
-checksum:        9a
+----------------
 
-EDID version: 1.1
-Manufacturer: BMM Model 237 Serial Number --
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate 
-Maximum image size: 31 cm x 23 cm
-Gamma: 2.00
-DPMS levels: Standby Suspend Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6250, 0.3798
-  Green: 0.3447, 0.6044
-  Blue:  0.1796, 0.1542
-  White: 0.3291, 0.2246
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-Detailed mode: Clock 78.750 MHz, 304 mm x 228 mm
-               1024 1040 1136 1312 hborder 0
-                768  769  772  800 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 75 Hz, HorFreq: 60022 Hz
-Monitor ranges (GTF): 60-75Hz V, 31-60kHz H, max dotclock 80MHz
-ASCII string: FZWJ2B0236452
-Checksum: 0x9a (valid)
-EDID block does NOT conform to EDID 1.0!
-	Has descriptor blocks other than detailed timings
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 75 Hz
-  Horizontal Freq: 31469 - 60022 Hz
-  Maximum Clock: 78.750 MHz
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: BMM
+    Model: 567
+    Serial Number: ...
+    Made in: week 47 of 2002
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate
+    Maximum image size: 31 cm x 23 cm
+    Gamma: 2.00
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6250, 0.3798
+    Green: 0.3447, 0.6044
+    Blue : 0.1796, 0.1542
+    White: 0.3291, 0.2246
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings:
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz (analog composite, sync-on-green, 304 mm x 228 mm)
+                 Hfront   16 Hsync  96 Hback 176 Hpol N
+                 Vfront    1 Vsync   3 Vback  28 Vpol N
+    Display Product Name: '567'
+  Display Range Limits:
+    Monitor ranges (GTF): 60-75 Hz V, 31-60 kHz H, max dotclock 80 MHz
+    Alphanumeric Data String: 'FZWJ2B0236452'
+Checksum: 0x9a

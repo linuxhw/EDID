@@ -1,63 +1,51 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004dd9702201010101
-2c0d01030c221b78eac5c9a3574a9c23
-12484ca1080081808140010101010101
-010101010101302a009851002a403070
-1300520e1100001e000000fd0030411c
-410b000a202020202020000000fc0053
-444d2d485337330a20202020000000ff
-00333432313631330a2020202020007c
+00 ff ff ff ff ff ff 00 4d d9 70 22 01 01 01 01
+2c 0d 01 03 0c 22 1b 78 ea c5 c9 a3 57 4a 9c 23
+12 48 4c a1 08 00 81 80 81 40 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 fd 00 30 41 1c
+41 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53
+44 4d 2d 48 53 37 33 0a 20 20 20 20 00 00 00 ff
+00 33 34 32 31 36 31 33 0a 20 20 20 20 20 00 7c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4d d9 70 22 01 01 01 01 2c 0d
-version:         01 03
-basic params:    0c 22 1b 78 ea
-chroma info:     c5 c9 a3 57 4a 9c 23 12 48 4c
-established:     a1 08 00
-standard:        81 80 81 40 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    30 2a 00 98 51 00 2a 40 30 70 13 00 52 0e 11 00 00 1e
-descriptor 2:    00 00 00 fd 00 30 41 1c 41 0b 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 53 44 4d 2d 48 53 37 33 0a 20 20 20 20
-descriptor 4:    00 00 00 ff 00 33 34 32 31 36 31 33 0a 20 20 20 20 20
-extensions:      00
-checksum:        7c
+----------------
 
-EDID version: 1.3
-Manufacturer: SNY Model 2270 Serial Number --
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate Composite 
-Maximum image size: 34 cm x 27 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3398
-  Green: 0.2900, 0.6103
-  Blue:  0.1396, 0.0703
-  White: 0.2832, 0.2978
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
-Detailed mode: Clock 108.000 MHz, 338 mm x 270 mm
-               1280 1328 1440 1688 hborder 0
-               1024 1025 1028 1066 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 63981 Hz
-Monitor ranges (GTF): 48-65Hz V, 28-65kHz H, max dotclock 110MHz
-Monitor name: SDM-HS73
-Serial number: --
-Checksum: 0x7c (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 70 Hz
-  Horizontal Freq: 31469 - 64000 Hz
-  Maximum Clock: 108.000 MHz
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SNY
+    Model: 8816
+    Serial Number: ...
+    Made in: week 44 of 2003
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate Composite
+    Maximum image size: 34 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.2900, 0.6103
+    Blue : 0.1396, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz (338 mm x 270 mm)
+                 Hfront   48 Hsync 112 Hback 248 Hpol P
+                 Vfront    1 Vsync   3 Vback  38 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 48-65 Hz V, 28-65 kHz H, max dotclock 110 MHz
+    Display Product Name: 'SDM-HS73'
+    Display Product Serial Number: ...
+Checksum: 0x7c

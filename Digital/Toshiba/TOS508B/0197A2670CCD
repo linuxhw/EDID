@@ -1,52 +1,41 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0051f38b5000000000
-0000010380241600ca00000000000000
-00000000000001010101010101010101
-0101010101019f25a04051840c304020
-33006fe510000018000000fc00544f53
-4849424120496e74650a000000fc0072
-6e616c2050616e656c20200a000000fc
-000a00000000000000000000000000c2
+00 ff ff ff ff ff ff 00 51 f3 8b 50 00 00 00 00
+00 00 01 03 80 24 16 00 ca 00 00 00 00 00 00 00
+00 00 00 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9f 25 a0 40 51 84 0c 30 40 20
+33 00 6f e5 10 00 00 18 00 00 00 fc 00 54 4f 53
+48 49 42 41 20 49 6e 74 65 0a 00 00 00 fc 00 72
+6e 61 6c 20 50 61 6e 65 6c 20 20 0a 00 00 00 fc
+00 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 c2
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   51 f3 8b 50 00 00 00 00 00 00
-version:         01 03
-basic params:    80 24 16 00 ca
-chroma info:     00 00 00 00 00 00 00 00 00 00
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    9f 25 a0 40 51 84 0c 30 40 20 33 00 6f e5 10 00 00 18
-descriptor 2:    00 00 00 fc 00 54 4f 53 48 49 42 41 20 49 6e 74 65 0a
-descriptor 3:    00 00 00 fc 00 72 6e 61 6c 20 50 61 6e 65 6c 20 20 0a
-descriptor 4:    00 00 00 fc 00 0a 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      00
-checksum:        c2
+----------------
 
-EDID version: 1.3
-Manufacturer: TOS Model 508b Serial Number --
-Digital display
-Maximum image size: 36 cm x 22 cm
-Gamma: 1.00
-DPMS levels: Standby Suspend
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.0000, 0.0000
-  Green: 0.0000, 0.0000
-  Blue:  0.0000, 0.0000
-  White: 0.0000, 0.0000
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 96.310 MHz, 367 mm x 229 mm
-               1440 1504 1536 1760 hborder 0
-                900  903  906  912 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 54721 Hz
-Monitor name: TOSHIBA Inte
-Checksum: 0xc2 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing monitor ranges
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: TOS
+    Model: 20619
+    Made in: 1990
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 36 cm x 22 cm
+    Gamma: 1.00
+    DPMS levels: Standby Suspend
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.0000, 0.0000
+    Green: 0.0000, 0.0000
+    Blue : 0.0000, 0.0000
+    White: 0.0000, 0.0000
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    60.002 Hz   8:5    54.722 kHz  96.310 MHz (367 mm x 229 mm)
+                 Hfront   64 Hsync  32 Hback 224 Hpol N
+                 Vfront    3 Vsync   3 Vback   6 Vpol N
+    Display Product Name: 'TOSHIBA Inte'
+    Display Product Name: 'rnal Panel  '
+    Display Product Name: ''
+Checksum: 0xc2

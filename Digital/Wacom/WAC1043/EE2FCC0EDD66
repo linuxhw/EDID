@@ -1,98 +1,81 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff005c23431001010101
-041a0104b53c2278224ae0b04d37b324
-0e5054a1080081c08180a940d1c00101
-010101010101565e00a0a0a029503020
-3500544f2100001a000000ff00303030
-36414251313030333134000000fc0043
-696e74697120323751484454000000fd
-00314c487319000a20202020202001a3
-02030f01449001030465030c00100056
-5e00a0a0a0295030203500544f210000
-1a000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000001b
+00 ff ff ff ff ff ff 00 5c 23 43 10 01 01 01 01
+04 1a 01 04 b5 3c 22 78 22 4a e0 b0 4d 37 b3 24
+0e 50 54 a1 08 00 81 c0 81 80 a9 40 d1 c0 01 01
+01 01 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 54 4f 21 00 00 1a 00 00 00 ff 00 30 30 30
+36 41 42 51 31 30 30 33 31 34 00 00 00 fc 00 43
+69 6e 74 69 71 20 32 37 51 48 44 54 00 00 00 fd
+00 31 4c 48 73 19 00 0a 20 20 20 20 20 20 01 a3
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   5c 23 43 10 01 01 01 01 04 1a
-version:         01 04
-basic params:    b5 3c 22 78 22
-chroma info:     4a e0 b0 4d 37 b3 24 0e 50 54
-established:     a1 08 00
-standard:        81 c0 81 80 a9 40 d1 c0 01 01 01 01 01 01 01 01
-descriptor 1:    56 5e 00 a0 a0 a0 29 50 30 20 35 00 54 4f 21 00 00 1a
-descriptor 2:    00 00 00 ff 00 30 30 30 36 41 42 51 31 30 30 33 31 34
-descriptor 3:    00 00 00 fc 00 43 69 6e 74 69 71 20 32 37 51 48 44 54
-descriptor 4:    00 00 00 fd 00 31 4c 48 73 19 00 0a 20 20 20 20 20 20
-extensions:      01
-checksum:        a3
+02 03 0f 01 44 90 01 03 04 65 03 0c 00 10 00 56
+5e 00 a0 a0 a0 29 50 30 20 35 00 54 4f 21 00 00
+1a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1b
 
-EDID version: 1.4
-Manufacturer: WAC Model 1043 Serial Number --
-Made in week 4 of 2016
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 60 cm x 34 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6884, 0.3007
-  Green: 0.2167, 0.7011
-  Blue:  0.1435, 0.0566
-  White: 0.3125, 0.3281
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x720@60Hz 16:9
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 241.500 MHz, 596 mm x 335 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1481 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 88786 Hz
-Serial number: --
-Monitor ranges (GTF): 49-76Hz V, 72-115kHz H, max dotclock 250MHz
-Has 1 extension blocks
-Checksum: 0xa3 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-11 bytes of CTA data
-  Video data block
-    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
-1 native detailed modes
-Detailed mode: Clock 241.500 MHz, 596 mm x 335 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1481 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 88786 Hz
-Checksum: 0x1b (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: WAC
+    Model: 4163
+    Serial Number: ...
+    Made in: week 4 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6884, 0.3007
+    Green: 0.2167, 0.7011
+    Blue : 0.1435, 0.0566
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.951 Hz  16:9    88.787 kHz 241.500 MHz (596 mm x 335 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  33 Vpol N
+    Display Product Serial Number: ...
+    Display Product Name: 'Cintiq 27QHDT'
+  Display Range Limits:
+    Monitor ranges (GTF): 49-76 Hz V, 72-115 kHz H, max dotclock 250 MHz
+  Extension blocks: 1
+Checksum: 0xa3
 
-EDID block does NOT conform to EDID 1.4!
-	Name descriptor not terminated with a newline
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 59 - 70 Hz
-  Horizontal Freq: 31469 - 88786 Hz
-  Maximum Clock: 241.500 MHz
-EDID block does not conform at all!
-	Both the serial number and the serial string are set
+----------------
 
-
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (native)
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:  2560x1440   59.951 Hz  16:9    88.787 kHz 241.500 MHz (596 mm x 335 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  33 Vpol N
+Checksum: 0x1b

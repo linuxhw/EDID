@@ -1,59 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006af774200000000
-01110103902115780a90b59958528e26
-1e505400000001010101010101010101
-010101010101322aa01652840c304020
-33004bcf1000001a221ca01652840c30
-402033004bcf1000001a000000fe0057
-50353736814231353450573400000000
-00000000000000000002010a20200088
+00 ff ff ff ff ff ff 00 06 af 77 42 00 00 00 00
+01 11 01 03 90 21 15 78 0a 90 b5 99 58 52 8e 26
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 32 2a a0 16 52 84 0c 30 40 20
+33 00 4b cf 10 00 00 1a 22 1c a0 16 52 84 0c 30
+40 20 33 00 4b cf 10 00 00 1a 00 00 00 fe 00 57
+50 35 37 36 81 42 31 35 34 50 57 34 00 00 00 00
+00 00 00 00 00 00 00 00 00 02 01 0a 20 20 00 88
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 af 77 42 00 00 00 00 01 11
-version:         01 03
-basic params:    90 21 15 78 0a
-chroma info:     90 b5 99 58 52 8e 26 1e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    32 2a a0 16 52 84 0c 30 40 20 33 00 4b cf 10 00 00 1a
-descriptor 2:    22 1c a0 16 52 84 0c 30 40 20 33 00 4b cf 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 57 50 35 37 36 81 42 31 35 34 50 57 34
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 02 01 0a 20 20
-extensions:      00
-checksum:        88
+----------------
 
-EDID version: 1.3
-Manufacturer: AUO Model 4277 Serial Number --
-Made in week 1 of 2007
-Digital display
-Maximum image size: 33 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5996, 0.3447
-  Green: 0.3203, 0.5546
-  Blue:  0.1503, 0.1201
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 108.020 MHz, 331 mm x 207 mm
-               1440 1504 1536 1974 hborder 0
-                900  903  906  912 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 54721 Hz
-Detailed mode: Clock 72.020 MHz, 331 mm x 207 mm
-               1440 1504 1536 1974 hborder 0
-                900  903  906  912 vborder 0
-               +hsync -vsync 
-               VertFreq: 40 Hz, HorFreq: 36484 Hz
-ASCII string: WP576
-Manufacturer-specified data, tag 0
-Checksum: 0x88 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 10
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 17015
+    Made in: week 1 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5996, 0.3447
+    Green: 0.3203, 0.5546
+    Blue : 0.1503, 0.1201
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    60.002 Hz   8:5    54.721 kHz 108.020 MHz (331 mm x 207 mm)
+                 Hfront   64 Hsync  32 Hback 438 Hpol P
+                 Vfront    3 Vsync   3 Vback   6 Vpol N
+    DTD 2:  1440x900    40.005 Hz   8:5    36.484 kHz  72.020 MHz (331 mm x 207 mm)
+                 Hfront   64 Hsync  32 Hback 438 Hpol P
+                 Vfront    3 Vsync   3 Vback   6 Vpol N
+    Alphanumeric Data String: 'WP576'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 02 01 0a 20 20 '..............  '
+Checksum: 0x88

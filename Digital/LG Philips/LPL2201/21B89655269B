@@ -1,50 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00320c012200000000
-00110102801d12780adae09859518c24
-22505400000001010101010101010101
-010101010101bc1b00a0502017303020
-36001eb3100000180000000000000000
-00000000000000000000000000fe004c
-475068696c6970734c43440a000000fe
-004c503133335758322d544c43410087
+00 ff ff ff ff ff ff 00 32 0c 01 22 00 00 00 00
+00 11 01 02 80 1d 12 78 0a da e0 98 59 51 8c 24
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 1b 00 a0 50 20 17 30 30 20
+36 00 1e b3 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 50 68 69 6c 69 70 73 4c 43 44 0a 00 00 00 fe
+00 4c 50 31 33 33 57 58 32 2d 54 4c 43 41 00 87
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   32 0c 01 22 00 00 00 00 00 11
-version:         01 02
-basic params:    80 1d 12 78 0a
-chroma info:     da e0 98 59 51 8c 24 22 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    bc 1b 00 a0 50 20 17 30 30 20 36 00 1e b3 10 00 00 18
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fe 00 4c 47 50 68 69 6c 69 70 73 4c 43 44 0a
-descriptor 4:    00 00 00 fe 00 4c 50 31 33 33 57 58 32 2d 54 4c 43 41
-extensions:      00
-checksum:        87
+----------------
 
-EDID version: 1.2
-Manufacturer: LPL Model 2201 Serial Number --
-Made in year 2007
-Digital display
-Maximum image size: 29 cm x 18 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5966, 0.3486
-  Green: 0.3183, 0.5488
-  Blue:  0.1435, 0.1347
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 71.000 MHz, 286 mm x 179 mm
-               1280 1328 1360 1440 hborder 0
-                800  803  809  823 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 49305 Hz
-Manufacturer-specified data, tag 0
-ASCII string: LGPhilipsLCD
-ASCII string: LP133WX2-TLCA
-Checksum: 0x87 (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: LPL
+    Model: 8705
+    Made in: 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5966, 0.3486
+    Green: 0.3183, 0.5488
+    Blue : 0.1435, 0.1347
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.910 Hz   8:5    49.306 kHz  71.000 MHz (286 mm x 179 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   6 Vback  14 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LGPhilipsLCD'
+    Alphanumeric Data String: 'LP133WX2-TLCA'
+Checksum: 0x87

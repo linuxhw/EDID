@@ -1,64 +1,57 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00410ccdc0158d0000
-2a1901036e2917782a0cc5a45750a128
-0d5054bd4b00818081c0010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000ff00554b30
-31353432303336313137000000fc0050
-484c2031393356350a202020000000fd
-00384c1e530e000a2020202020200002
+00 ff ff ff ff ff ff 00 41 0c cd c0 15 8d 00 00
+2a 19 01 03 6e 29 17 78 2a 0c c5 a4 57 50 a1 28
+0d 50 54 bd 4b 00 81 80 81 c0 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 ff 00 55 4b 30
+31 35 34 32 30 33 36 31 31 37 00 00 00 fc 00 50
+48 4c 20 31 39 33 56 35 0a 20 20 20 00 00 00 fd
+00 38 4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 02
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   41 0c cd c0 15 8d 00 00 2a 19
-version:         01 03
-basic params:    6e 29 17 78 2a
-chroma info:     0c c5 a4 57 50 a1 28 0d 50 54
-established:     bd 4b 00
-standard:        81 80 81 c0 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    66 21 56 aa 51 00 1e 30 46 8f 33 00 9a e6 10 00 00 1e
-descriptor 2:    00 00 00 ff 00 55 4b 30 31 35 34 32 30 33 36 31 31 37
-descriptor 3:    00 00 00 fc 00 50 48 4c 20 31 39 33 56 35 0a 20 20 20
-descriptor 4:    00 00 00 fd 00 38 4c 1e 53 0e 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        02
+----------------
 
-EDID version: 1.3
-Manufacturer: PHL Model c0cd Serial Number --
-Made in week 42 of 2015
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate Composite SyncOnGreen 
-Maximum image size: 41 cm x 23 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6406, 0.3398
-  Green: 0.3154, 0.6289
-  Blue:  0.1591, 0.0507
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1280x720@60Hz 16:9
-Detailed mode: Clock 85.500 MHz, 410 mm x 230 mm
-               1366 1436 1579 1792 hborder 0
-                768  771  774  798 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 47712 Hz
-Serial number: --
-Monitor name: PHL 193V5
-Monitor ranges (GTF): 56-76Hz V, 30-83kHz H, max dotclock 140MHz
-Checksum: 0x2 (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PHL
+    Model: 49357
+    Serial Number: ...
+    Made in: week 42 of 2015
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate Composite SyncOnGreen
+    Maximum image size: 41 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6406, 0.3398
+    Green: 0.3154, 0.6289
+    Blue : 0.1591, 0.0507
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    Apple   :   640x480    66.667 Hz   4:3    35.000 kHz  30.240 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.790 Hz 683:384  47.712 kHz  85.500 MHz (410 mm x 230 mm)
+                 Hfront   70 Hsync 143 Hback 213 Hpol P
+                 Vfront    3 Vsync   3 Vback  24 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: 'PHL 193V5'
+  Display Range Limits:
+    Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 140 MHz
+Checksum: 0x2

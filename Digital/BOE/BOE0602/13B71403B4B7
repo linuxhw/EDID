@@ -1,61 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009e5020600000000
-01180104801f11780a1270935c569628
-1b505400000001010101010101010101
-010101010101ce1d56f4500016303020
-360058c11000001ae21356f450001630
-3020360058c110000000000000000000
-00000000000000000000000000000002
-000c44fc0b3cdc0f121ddf00000000c6
+00 ff ff ff ff ff ff 00 09 e5 02 06 00 00 00 00
+01 18 01 04 80 1f 11 78 0a 12 70 93 5c 56 96 28
+1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 f4 50 00 16 30 30 20
+36 00 58 c1 10 00 00 1a e2 13 56 f4 50 00 16 30
+30 20 36 00 58 c1 10 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 44 fc 0b 3c dc 0f 12 1d df 00 00 00 00 c6
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 e5 02 06 00 00 00 00 01 18
-version:         01 04
-basic params:    80 1f 11 78 0a
-chroma info:     12 70 93 5c 56 96 28 1b 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    ce 1d 56 f4 50 00 16 30 30 20 36 00 58 c1 10 00 00 1a
-descriptor 2:    e2 13 56 f4 50 00 16 30 30 20 36 00 58 c1 10 00 00 00
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 02 00 0c 44 fc 0b 3c dc 0f 12 1d df 00 00 00
-extensions:      00
-checksum:        c6
+----------------
 
-EDID version: 1.4
-Manufacturer: BOE Model 602 Serial Number --
-Made in week 1 of 2014
-Digital display
-Color depth is undefined
-Digital interface is not defined
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5742, 0.3603
-  Green: 0.3359, 0.5878
-  Blue:  0.1572, 0.1083
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 76.300 MHz, 344 mm x 193 mm
-               1366 1414 1446 1610 hborder 0
-                768  771  777  790 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 47391 Hz
-Detailed mode: Clock 50.900 MHz, 344 mm x 193 mm
-               1366 1414 1446 1610 hborder 0
-                768  771  777  790 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 40 Hz, HorFreq: 31614 Hz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 2
-Checksum: 0xc6 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-
-
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 1538
+    Made in: week 1 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Color depth is undefined
+    Digital interface is not defined
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5742, 0.3603
+    Green: 0.3359, 0.5878
+    Blue : 0.1572, 0.1083
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.989 Hz 683:384  47.391 kHz  76.300 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback 164 Hpol P
+                 Vfront    3 Vsync   6 Vback  13 Vpol N
+    DTD 2:  1366x768    40.019 Hz 683:384  31.615 kHz  50.900 MHz (analog composite, sync-on-green, 344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback 164 Hpol N
+                 Vfront    3 Vsync   6 Vback  13 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 44 fc 0b 3c dc 0f 12 1d df 00 00 00 '....D..<........'
+Checksum: 0xc6

@@ -1,55 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0010ac8e4001000000
-03170104812c1978ea64b5ab5238ab25
-13505400000001010101010101010101
-010101010101d22d400062841a301850
-1300bbf91000001e0000001000000000
-00000000000000000000000000fc004f
-707469506c6578203330313100000000
-00034102990000000002010a20200031
+00 ff ff ff ff ff ff 00 10 ac 8e 40 01 00 00 00
+03 17 01 04 81 2c 19 78 ea 64 b5 ab 52 38 ab 25
+13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d2 2d 40 00 62 84 1a 30 18 50
+13 00 bb f9 10 00 00 1e 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fc 00 4f
+70 74 69 50 6c 65 78 20 33 30 31 31 00 00 00 00
+00 03 41 02 99 00 00 00 00 02 01 0a 20 20 00 31
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   10 ac 8e 40 01 00 00 00 03 17
-version:         01 04
-basic params:    81 2c 19 78 ea
-chroma info:     64 b5 ab 52 38 ab 25 13 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    d2 2d 40 00 62 84 1a 30 18 50 13 00 bb f9 10 00 00 1e
-descriptor 2:    00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fc 00 4f 70 74 69 50 6c 65 78 20 33 30 31 31
-descriptor 4:    00 00 00 00 00 03 41 02 99 00 00 00 00 02 01 0a 20 20
-extensions:      00
-checksum:        31
+----------------
 
-EDID version: 1.4
-Manufacturer: DEL Model 408e Serial Number --
-Made in week 3 of 2013
-Digital display
-Color depth is undefined
-DVI interface
-Maximum image size: 44 cm x 25 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6689, 0.3222
-  Green: 0.2197, 0.6679
-  Blue:  0.1464, 0.0771
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 117.300 MHz, 443 mm x 249 mm
-               1600 1624 1704 2112 hborder 0
-                900  901  904  926 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 55539 Hz
-Dummy block
-Manufacturer-specified data, tag 0
-Checksum: 0x31 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Name descriptor not terminated with a newline
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 16526
+    Serial Number: ...
+    Made in: week 3 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Color depth is undefined
+    DVI interface
+    Maximum image size: 44 cm x 25 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6689, 0.3222
+    Green: 0.2197, 0.6679
+    Blue : 0.1464, 0.0771
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    59.978 Hz  16:9    55.540 kHz 117.300 MHz (443 mm x 249 mm)
+                 Hfront   24 Hsync  80 Hback 408 Hpol P
+                 Vfront    1 Vsync   3 Vback  22 Vpol P
+    Dummy Descriptor:
+    Display Product Name: 'OptiPlex 3011'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 03 41 02 99 00 00 00 00 02 01 0a 20 20 '....A.........  '
+Checksum: 0x31

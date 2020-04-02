@@ -1,61 +1,46 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030ae004000000000
-3010010380191278eafe609555518726
-22505421080001010101010101010101
-01010101010128150040410026301888
-3600f6b800000018ed10004041002630
-18883600f6b9000000180000000f0061
-43326143280f01000daf0714000000fe
-004e31323158352d4c303620202000ed
+00 ff ff ff ff ff ff 00 30 ae 00 40 00 00 00 00
+30 10 01 03 80 19 12 78 ea fe 60 95 55 51 87 26
+22 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 28 15 00 40 41 00 26 30 18 88
+36 00 f6 b8 00 00 00 18 ed 10 00 40 41 00 26 30
+18 88 36 00 f6 b9 00 00 00 18 00 00 00 0f 00 61
+43 32 61 43 28 0f 01 00 0d af 07 14 00 00 00 fe
+00 4e 31 32 31 58 35 2d 4c 30 36 20 20 20 00 ed
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 ae 00 40 00 00 00 00 30 10
-version:         01 03
-basic params:    80 19 12 78 ea
-chroma info:     fe 60 95 55 51 87 26 22 50 54
-established:     21 08 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    28 15 00 40 41 00 26 30 18 88 36 00 f6 b8 00 00 00 18
-descriptor 2:    ed 10 00 40 41 00 26 30 18 88 36 00 f6 b9 00 00 00 18
-descriptor 3:    00 00 00 0f 00 61 43 32 61 43 28 0f 01 00 0d af 07 14
-descriptor 4:    00 00 00 fe 00 4e 31 32 31 58 35 2d 4c 30 36 20 20 20
-extensions:      00
-checksum:        ed
+----------------
 
-EDID version: 1.3
-Manufacturer: LEN Model 4000 Serial Number --
-Made in week 48 of 2006
-Digital display
-Maximum image size: 25 cm x 18 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5849, 0.3349
-  Green: 0.3193, 0.5292
-  Blue:  0.1494, 0.1347
-  White: 0.3125, 0.3281
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-Detailed mode: Clock 54.160 MHz, 246 mm x 184 mm
-               1024 1048 1184 1344 hborder 0
-                768  771  777  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 49 Hz, HorFreq: 40297 Hz
-Detailed mode: Clock 43.330 MHz, 246 mm x 185 mm
-               1024 1048 1184 1344 hborder 0
-                768  771  777  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 39 Hz, HorFreq: 32239 Hz
-Manufacturer-specified data, tag 15
-ASCII string: N121X5-L06   
-Checksum: 0xed (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16384
+    Made in: week 48 of 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 25 cm x 18 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5849, 0.3349
+    Green: 0.3193, 0.5292
+    Blue : 0.1494, 0.1347
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    49.997 Hz   4:3    40.298 kHz  54.160 MHz (246 mm x 184 mm)
+                 Hfront   24 Hsync 136 Hback 160 Hpol N
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+    DTD 2:  1024x768    39.999 Hz   4:3    32.240 kHz  43.330 MHz (246 mm x 185 mm)
+                 Hfront   24 Hsync 136 Hback 160 Hpol N
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 61 43 32 61 43 28 0f 01 00 0d af 07 14 '...aC2aC(.......'
+    Alphanumeric Data String: 'N121X5-L06   '
+Checksum: 0xed

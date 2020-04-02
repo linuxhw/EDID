@@ -1,114 +1,102 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004d6b303101000000
-1414010380462778ea6755a55b479c25
-1e4f54b12c0031404540614081008180
-9500b300a9401a3680a070381f403020
-3500c48e2100001e302a009851002a40
-30701300138e2100001e000000fc004c
-4d3143420a2020202020202000000000
-000000000000000000000000000001c2
-020320714c01020304050f9011121314
-1f230917078301000066030c00100080
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000034
+00 ff ff ff ff ff ff 00 4d 6b 30 31 01 00 00 00
+14 14 01 03 80 46 27 78 ea 67 55 a5 5b 47 9c 25
+1e 4f 54 b1 2c 00 31 40 45 40 61 40 81 00 81 80
+95 00 b3 00 a9 40 1a 36 80 a0 70 38 1f 40 30 20
+35 00 c4 8e 21 00 00 1e 30 2a 00 98 51 00 2a 40
+30 70 13 00 13 8e 21 00 00 1e 00 00 00 fc 00 4c
+4d 31 43 42 0a 20 20 20 20 20 20 20 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 c2
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4d 6b 30 31 01 00 00 00 14 14
-version:         01 03
-basic params:    80 46 27 78 ea
-chroma info:     67 55 a5 5b 47 9c 25 1e 4f 54
-established:     b1 2c 00
-standard:        31 40 45 40 61 40 81 00 81 80 95 00 b3 00 a9 40
-descriptor 1:    1a 36 80 a0 70 38 1f 40 30 20 35 00 c4 8e 21 00 00 1e
-descriptor 2:    30 2a 00 98 51 00 2a 40 30 70 13 00 13 8e 21 00 00 1e
-descriptor 3:    00 00 00 fc 00 4c 4d 31 43 42 0a 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      01
-checksum:        c2
+02 03 20 71 4c 01 02 03 04 05 0f 90 11 12 13 14
+1f 23 09 17 07 83 01 00 00 66 03 0c 00 10 00 80
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 34
 
-EDID version: 1.3
-Manufacturer: SKK Model 3130 Serial Number --
-Made in week 20 of 2010
-Digital display
-Maximum image size: 70 cm x 39 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6455, 0.3574
-  Green: 0.2783, 0.6123
-  Blue:  0.1455, 0.1181
-  White: 0.3095, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-Standard timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1280x800@60Hz 16:10
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
-Detailed mode: Clock 138.500 MHz, 708 mm x 398 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 66586 Hz
-Detailed mode: Clock 108.000 MHz, 531 mm x 398 mm
-               1280 1328 1440 1688 hborder 0
-               1024 1025 1028 1066 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 63981 Hz
-Monitor name: LM1CB
-Manufacturer-specified data, tag 0
-Has 1 extension blocks
-Checksum: 0xc2 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-28 bytes of CTA data
-  Video data block
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC  15 1440x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 54.000 MHz
-    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC  17 720x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC  20 1920x1080i@50Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
-    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SKK
+    Model: 12592
+    Serial Number: ...
+    Made in: week 20 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 70 cm x 39 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6455, 0.3574
+    Green: 0.2783, 0.6123
+    Blue : 0.1455, 0.1181
+    White: 0.3095, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    Apple   :   640x480    66.667 Hz   4:3    35.000 kHz  30.240 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    Apple   :   832x624    74.551 Hz   4:3    49.726 kHz  57.284 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+  Standard Timings:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.934 Hz  16:9    66.587 kHz 138.500 MHz (708 mm x 398 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol P
+    DTD 2:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz (531 mm x 398 mm)
+                 Hfront   48 Hsync 112 Hback 248 Hpol P
+                 Vfront    1 Vsync   3 Vback  38 Vpol P
+    Display Product Name: 'LM1CB'
+    Empty Descriptor
+  Extension blocks: 1
+Checksum: 0xc2
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  15:  1440x480    59.940 Hz  16:9    31.469 kHz  54.000 MHz
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (native)
+    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
+    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 96 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
     Supports_AI
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Checksum: 0x34 (valid)
-
-EDID block does NOT conform to EDID 1.3!
-	Missing monitor ranges
+Checksum: 0x34

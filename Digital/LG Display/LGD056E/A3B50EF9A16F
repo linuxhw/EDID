@@ -1,59 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e46e0500000000
-001a01049522137802cde5955b558f27
-1d505400000001010101010101010101
-010101010101243680a070381f403020
-350058c210000019182480a070381f40
-3020350058c210000019000000000000
-00000000000000000000000000000002
-000c44ff0a3c6e1215246e000000006c
+00 ff ff ff ff ff ff 00 30 e4 6e 05 00 00 00 00
+00 1a 01 04 95 22 13 78 02 cd e5 95 5b 55 8f 27
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 24 36 80 a0 70 38 1f 40 30 20
+35 00 58 c2 10 00 00 19 18 24 80 a0 70 38 1f 40
+30 20 35 00 58 c2 10 00 00 19 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 44 ff 0a 3c 6e 12 15 24 6e 00 00 00 00 6c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 6e 05 00 00 00 00 00 1a
-version:         01 04
-basic params:    95 22 13 78 02
-chroma info:     cd e5 95 5b 55 8f 27 1d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    24 36 80 a0 70 38 1f 40 30 20 35 00 58 c2 10 00 00 19
-descriptor 2:    18 24 80 a0 70 38 1f 40 30 20 35 00 58 c2 10 00 00 19
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 02 00 0c 44 ff 0a 3c 6e 12 15 24 6e 00 00 00
-extensions:      00
-checksum:        6c
+----------------
 
-EDID version: 1.4
-Manufacturer: LGD Model 56e Serial Number --
-Made in year 2016
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5849, 0.3554
-  Green: 0.3349, 0.5595
-  Blue:  0.1552, 0.1152
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 138.600 MHz, 344 mm x 194 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 66634 Hz
-Detailed mode: Clock 92.400 MHz, 344 mm x 194 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               -hsync -vsync 
-               VertFreq: 39 Hz, HorFreq: 44423 Hz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 2
-Checksum: 0x6c (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1390
+    Made in: 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5849, 0.3554
+    Green: 0.3349, 0.5595
+    Blue : 0.1552, 0.1152
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.977 Hz  16:9    66.635 kHz 138.600 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 2:  1920x1080   39.985 Hz  16:9    44.423 kHz  92.400 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 44 ff 0a 3c 6e 12 15 24 6e 00 00 00 '....D..<n..$n...'
+Checksum: 0x6c

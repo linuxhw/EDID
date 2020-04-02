@@ -1,61 +1,52 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009d14c7845540000
-261301030e2917782e3d85a6564a9a24
-125054210800710081c0010161c00101
-010101010101662156aa51001e30468f
-33009ae61000001e000000ff00483939
-30333736363032360a20000000fd0032
-4c183f0b000a202020202020000000fc
-0042656e5120473932324844414c0099
+00 ff ff ff ff ff ff 00 09 d1 4c 78 45 54 00 00
+26 13 01 03 0e 29 17 78 2e 3d 85 a6 56 4a 9a 24
+12 50 54 21 08 00 71 00 81 c0 01 01 61 c0 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 ff 00 48 39 39
+30 33 37 36 36 30 32 36 0a 20 00 00 00 fd 00 32
+4c 18 3f 0b 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 47 39 32 32 48 44 41 4c 00 99
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 d1 4c 78 45 54 00 00 26 13
-version:         01 03
-basic params:    0e 29 17 78 2e
-chroma info:     3d 85 a6 56 4a 9a 24 12 50 54
-established:     21 08 00
-standard:        71 00 81 c0 01 01 61 c0 01 01 01 01 01 01 01 01
-descriptor 1:    66 21 56 aa 51 00 1e 30 46 8f 33 00 9a e6 10 00 00 1e
-descriptor 2:    00 00 00 ff 00 48 39 39 30 33 37 36 36 30 32 36 0a 20
-descriptor 3:    00 00 00 fd 00 32 4c 18 3f 0b 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 42 65 6e 51 20 47 39 32 32 48 44 41 4c
-extensions:      00
-checksum:        99
+----------------
 
-EDID version: 1.3
-Manufacturer: BNQ Model 784c Serial Number --
-Made in week 38 of 2009
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate Composite SyncOnGreen 
-Maximum image size: 41 cm x 23 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6484, 0.3388
-  Green: 0.2919, 0.6025
-  Blue:  0.1425, 0.0703
-  White: 0.3134, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1152x720@60Hz 16:10
-  1280x720@60Hz 16:9
-  1024x576@60Hz 16:9
-Detailed mode: Clock 85.500 MHz, 410 mm x 230 mm
-               1366 1436 1579 1792 hborder 0
-                768  771  774  798 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 47712 Hz
-Serial number: --
-Monitor ranges (GTF): 50-76Hz V, 24-63kHz H, max dotclock 110MHz
-Checksum: 0x99 (valid)
-EDID block does NOT conform to EDID 1.3!
-	sRGB is signaled, but the chromaticities do not match
-	Name descriptor not terminated with a newline
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: BNQ
+    Model: 30796
+    Serial Number: ...
+    Made in: week 38 of 2009
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate Composite SyncOnGreen
+    Maximum image size: 41 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6484, 0.3388
+    Green: 0.2919, 0.6025
+    Blue : 0.1425, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    GTF     :  1152x720    60.000 Hz  16:10   44.760 kHz  67.319 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    GTF     :  1024x576    60.000 Hz  16:9    35.820 kHz  46.996 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.790 Hz 683:384  47.712 kHz  85.500 MHz (410 mm x 230 mm)
+                 Hfront   70 Hsync 143 Hback 213 Hpol P
+                 Vfront    3 Vsync   3 Vback  24 Vpol P
+    Display Product Serial Number: ...
+  Display Range Limits:
+    Monitor ranges (GTF): 50-76 Hz V, 24-63 kHz H, max dotclock 110 MHz
+    Display Product Name: 'BenQ G922HDAL'
+Checksum: 0x99

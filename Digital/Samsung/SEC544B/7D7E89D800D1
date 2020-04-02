@@ -1,60 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004ca34b5400000000
-00150104902213780a5d359d5f589f26
-18505400000001010101010101010101
-010101010101de324010628478303020
-250058c21000001a3b2f40586284da31
-3020250058c21000001a000000fe004e
-32475937803135364b540a2000000000
-00004121990000000002010a202000cb
+00 ff ff ff ff ff ff 00 4c a3 4b 54 00 00 00 00
+00 15 01 04 90 22 13 78 0a 5d 35 9d 5f 58 9f 26
+18 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 de 32 40 10 62 84 78 30 30 20
+25 00 58 c2 10 00 00 1a 3b 2f 40 58 62 84 da 31
+30 20 25 00 58 c2 10 00 00 1a 00 00 00 fe 00 4e
+32 47 59 37 80 31 35 36 4b 54 0a 20 00 00 00 00
+00 00 41 21 99 00 00 00 00 02 01 0a 20 20 00 cb
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c a3 4b 54 00 00 00 00 00 15
-version:         01 04
-basic params:    90 22 13 78 0a
-chroma info:     5d 35 9d 5f 58 9f 26 18 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    de 32 40 10 62 84 78 30 30 20 25 00 58 c2 10 00 00 1a
-descriptor 2:    3b 2f 40 58 62 84 da 31 30 20 25 00 58 c2 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 4e 32 47 59 37 80 31 35 36 4b 54 0a 20
-descriptor 4:    00 00 00 00 00 00 41 21 99 00 00 00 00 02 01 0a 20 20
-extensions:      00
-checksum:        cb
+----------------
 
-EDID version: 1.4
-Manufacturer: SEC Model 544b Serial Number --
-Made in year 2011
-Digital display
-6 bits per primary color channel
-Digital interface is not defined
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6142, 0.3720
-  Green: 0.3466, 0.6220
-  Blue:  0.1484, 0.0966
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 130.220 MHz, 344 mm x 194 mm
-               1600 1648 1680 2128 hborder 0
-                900  902  907 1020 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 61193 Hz
-Detailed mode: Clock 120.910 MHz, 344 mm x 194 mm
-               1600 1648 1680 2200 hborder 0
-                900  902  907 1374 vborder 0
-               +hsync -vsync 
-               VertFreq: 39 Hz, HorFreq: 54959 Hz
-ASCII string: N2GY7
-Manufacturer-specified data, tag 0
-Checksum: 0xcb (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 21579
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6142, 0.3720
+    Green: 0.3466, 0.6220
+    Blue : 0.1484, 0.0966
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    59.994 Hz  16:9    61.194 kHz 130.220 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback 448 Hpol P
+                 Vfront    2 Vsync   5 Vback 113 Vpol N
+    DTD 2:  1600x900    39.999 Hz  16:9    54.959 kHz 120.910 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback 520 Hpol P
+                 Vfront    2 Vsync   5 Vback 467 Vpol N
+    Alphanumeric Data String: 'N2GY7'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 99 00 00 00 00 02 01 0a 20 20 '....A!........  '
+Checksum: 0xcb

@@ -1,51 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00320c891200000000
-000f0102802517780a23009858518c29
-26505400000001010101010101010101
-010101010101a82f90e0601a10402040
-13006fe6100000180000000000000000
-00000000000000000000000000fe004c
-475068696c6970734c43440a000000fe
-004c503137315745322d544c30330071
+00 ff ff ff ff ff ff 00 32 0c 89 12 00 00 00 00
+00 0f 01 02 80 25 17 78 0a 23 00 98 58 51 8c 29
+26 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a8 2f 90 e0 60 1a 10 40 20 40
+13 00 6f e6 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 50 68 69 6c 69 70 73 4c 43 44 0a 00 00 00 fe
+00 4c 50 31 37 31 57 45 32 2d 54 4c 30 33 00 71
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   32 0c 89 12 00 00 00 00 00 0f
-version:         01 02
-basic params:    80 25 17 78 0a
-chroma info:     23 00 98 58 51 8c 29 26 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    a8 2f 90 e0 60 1a 10 40 20 40 13 00 6f e6 10 00 00 18
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fe 00 4c 47 50 68 69 6c 69 70 73 4c 43 44 0a
-descriptor 4:    00 00 00 fe 00 4c 50 31 37 31 57 45 32 2d 54 4c 30 33
-extensions:      00
-checksum:        71
+----------------
 
-EDID version: 1.2
-Manufacturer: LPL Model 1289 Serial Number --
-Digital display
-Maximum image size: 37 cm x 23 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5937, 0.3457
-  Green: 0.3164, 0.5498
-  Blue:  0.1601, 0.1484
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 122.000 MHz, 367 mm x 230 mm
-               1680 1712 1776 1904 hborder 0
-               1050 1051 1054 1066 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 64075 Hz
-Manufacturer-specified data, tag 0
-ASCII string: LGPhilipsLCD
-ASCII string: LP171WE2-TL03
-Checksum: 0x71 (valid)
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: LPL
+    Model: 4745
+    Made in: 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 37 cm x 23 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5937, 0.3457
+    Green: 0.3164, 0.5498
+    Blue : 0.1601, 0.1484
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   60.108 Hz   8:5    64.076 kHz 122.000 MHz (367 mm x 230 mm)
+                 Hfront   32 Hsync  64 Hback 128 Hpol N
+                 Vfront    1 Vsync   3 Vback  12 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LGPhilipsLCD'
+    Alphanumeric Data String: 'LP171WE2-TL03'
+Checksum: 0x71

@@ -1,59 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000daf090200000000
-1f12010390150c780ab985955c599527
-1b505400000001010101010101010101
-010101010101db13002841582a205136
-5700c3710000001a3d0d002841582a20
-51365700c3710000001a000000fe004b
-38363248814e3038394c360a00000000
-00000000000000000001010a202000a5
+00 ff ff ff ff ff ff 00 0d af 09 02 00 00 00 00
+1f 12 01 03 90 15 0c 78 0a b9 85 95 5c 59 95 27
+1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 db 13 00 28 41 58 2a 20 51 36
+57 00 c3 71 00 00 00 1a 3d 0d 00 28 41 58 2a 20
+51 36 57 00 c3 71 00 00 00 1a 00 00 00 fe 00 4b
+38 36 32 48 81 4e 30 38 39 4c 36 0a 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 01 0a 20 20 00 a5
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0d af 09 02 00 00 00 00 1f 12
-version:         01 03
-basic params:    90 15 0c 78 0a
-chroma info:     b9 85 95 5c 59 95 27 1b 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    db 13 00 28 41 58 2a 20 51 36 57 00 c3 71 00 00 00 1a
-descriptor 2:    3d 0d 00 28 41 58 2a 20 51 36 57 00 c3 71 00 00 00 1a
-descriptor 3:    00 00 00 fe 00 4b 38 36 32 48 81 4e 30 38 39 4c 36 0a
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20
-extensions:      00
-checksum:        a5
+----------------
 
-EDID version: 1.3
-Manufacturer: CMO Model 209 Serial Number --
-Made in week 31 of 2008
-Digital display
-Maximum image size: 21 cm x 12 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5839, 0.3623
-  Green: 0.3496, 0.5830
-  Blue:  0.1542, 0.1054
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 50.830 MHz, 195 mm x 113 mm
-               1024 1105 1159 1320 hborder 0
-                600  605  612  642 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 38507 Hz
-Detailed mode: Clock 33.890 MHz, 195 mm x 113 mm
-               1024 1105 1159 1320 hborder 0
-                600  605  612  642 vborder 0
-               +hsync -vsync 
-               VertFreq: 39 Hz, HorFreq: 25674 Hz
-ASCII string: K862H
-Manufacturer-specified data, tag 0
-Checksum: 0xa5 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 10
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CMO
+    Model: 521
+    Made in: week 31 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 21 cm x 12 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5839, 0.3623
+    Green: 0.3496, 0.5830
+    Blue : 0.1542, 0.1054
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x600    59.981 Hz 128:75   38.508 kHz  50.830 MHz (195 mm x 113 mm)
+                 Hfront   81 Hsync  54 Hback 161 Hpol P
+                 Vfront    5 Vsync   7 Vback  30 Vpol N
+    DTD 2:  1024x600    39.991 Hz 128:75   25.674 kHz  33.890 MHz (195 mm x 113 mm)
+                 Hfront   81 Hsync  54 Hback 161 Hpol P
+                 Vfront    5 Vsync   7 Vback  30 Vpol N
+    Alphanumeric Data String: 'K862H'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20 '..............  '
+Checksum: 0xa5

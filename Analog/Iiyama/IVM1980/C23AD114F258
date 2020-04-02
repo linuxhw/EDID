@@ -1,77 +1,61 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0026cd801957be0000
-340a010228241b78ea4f29a057499b26
-10484ca4430031594559615981598199
-a94f01010101863d00c05100304040a0
-1300680e1100001eea24006041002830
-30601300680e1100001ec31e00204100
-203010601300680e1100001e000000fd
-0032961e5f14000a2020202020200080
+00 ff ff ff ff ff ff 00 26 cd 80 19 57 be 00 00
+34 0a 01 02 28 24 1b 78 ea 4f 29 a0 57 49 9b 26
+10 48 4c a4 43 00 31 59 45 59 61 59 81 59 81 99
+a9 4f 01 01 01 01 86 3d 00 c0 51 00 30 40 40 a0
+13 00 68 0e 11 00 00 1e ea 24 00 60 41 00 28 30
+30 60 13 00 68 0e 11 00 00 1e c3 1e 00 20 41 00
+20 30 10 60 13 00 68 0e 11 00 00 1e 00 00 00 fd
+00 32 96 1e 5f 14 00 0a 20 20 20 20 20 20 00 80
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   26 cd 80 19 57 be 00 00 34 0a
-version:         01 02
-basic params:    28 24 1b 78 ea
-chroma info:     4f 29 a0 57 49 9b 26 10 48 4c
-established:     a4 43 00
-standard:        31 59 45 59 61 59 81 59 81 99 a9 4f 01 01 01 01
-descriptor 1:    86 3d 00 c0 51 00 30 40 40 a0 13 00 68 0e 11 00 00 1e
-descriptor 2:    ea 24 00 60 41 00 28 30 30 60 13 00 68 0e 11 00 00 1e
-descriptor 3:    c3 1e 00 20 41 00 20 30 10 60 13 00 68 0e 11 00 00 1e
-descriptor 4:    00 00 00 fd 00 32 96 1e 5f 14 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        80
+----------------
 
-EDID version: 1.2
-Manufacturer: IVM Model 1980 Serial Number --
-Analog display, Input voltage level: 0.714/0.286 V
-Sync: Separate 
-Maximum image size: 36 cm x 27 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6259, 0.3398
-  Green: 0.2880, 0.6083
-  Blue:  0.1484, 0.0644
-  White: 0.2832, 0.2978
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  640x480@85Hz 4:3 HorFreq: 43300 Hz Clock: 36.000 MHz
-  800x600@85Hz 4:3 HorFreq: 53700 Hz Clock: 56.250 MHz
-  1024x768@85Hz 4:3 HorFreq: 68700 Hz Clock: 94.500 MHz
-  1280x960@85Hz 4:3 HorFreq: 85900 Hz Clock: 148.500 MHz
-  1280x1024@85Hz 5:4 HorFreq: 91100 Hz Clock: 157.500 MHz
-  1600x1200@75Hz 4:3 HorFreq: 93800 Hz Clock: 202.500 MHz
-Detailed mode: Clock 157.500 MHz, 360 mm x 270 mm
-               1280 1344 1504 1728 hborder 0
-               1024 1025 1028 1072 vborder 0
-               +hsync +vsync 
-               VertFreq: 85 Hz, HorFreq: 91145 Hz
-Detailed mode: Clock 94.500 MHz, 360 mm x 270 mm
-               1024 1072 1168 1376 hborder 0
-                768  769  772  808 vborder 0
-               +hsync +vsync 
-               VertFreq: 84 Hz, HorFreq: 68677 Hz
-Detailed mode: Clock 78.750 MHz, 360 mm x 270 mm
-               1024 1040 1136 1312 hborder 0
-                768  769  772  800 vborder 0
-               +hsync +vsync 
-               VertFreq: 75 Hz, HorFreq: 60022 Hz
-Monitor ranges (GTF): 50-150Hz V, 30-95kHz H, max dotclock 200MHz
-Checksum: 0x80 (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 85 Hz
-  Horizontal Freq: 31469 - 93800 Hz
-  Maximum Clock: 202.500 MHz
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: IVM
+    Model: 6528
+    Serial Number: ...
+    Made in: week 52 of 2000
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.714/0.286 V
+    Sync: Separate
+    Maximum image size: 36 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6259, 0.3398
+    Green: 0.2880, 0.6083
+    Blue : 0.1484, 0.0644
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x07:   640x480    85.008 Hz   4:3    43.269 kHz  36.000 MHz
+    DMT 0x0c:   800x600    85.061 Hz   4:3    53.674 kHz  56.250 MHz
+    DMT 0x13:  1024x768    84.997 Hz   4:3    68.677 kHz  94.500 MHz
+    DMT 0x21:  1280x960    85.002 Hz   4:3    85.938 kHz 148.500 MHz
+    DMT 0x25:  1280x1024   85.024 Hz   5:4    91.146 kHz 157.500 MHz
+    DMT 0x36:  1600x1200   75.000 Hz   4:3    93.750 kHz 202.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x1024   85.024 Hz   5:4    91.146 kHz 157.500 MHz (360 mm x 270 mm)
+                 Hfront   64 Hsync 160 Hback 224 Hpol P
+                 Vfront    1 Vsync   3 Vback  44 Vpol P
+    DTD 2:  1024x768    84.997 Hz   4:3    68.677 kHz  94.500 MHz (360 mm x 270 mm)
+                 Hfront   48 Hsync  96 Hback 208 Hpol P
+                 Vfront    1 Vsync   3 Vback  36 Vpol P
+    DTD 3:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz (360 mm x 270 mm)
+                 Hfront   16 Hsync  96 Hback 176 Hpol P
+                 Vfront    1 Vsync   3 Vback  28 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 50-150 Hz V, 30-95 kHz H, max dotclock 200 MHz
+Checksum: 0x80

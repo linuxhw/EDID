@@ -1,57 +1,43 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0051a1001201000000
-27190104a519117802eb5da65445a926
-0f4c4f00000001010101010101010101
-0101010101017a5070a080a028503020
-3a00fea9000000180000001000a02850
-30203a00fea9000000180000000f0054
-49414e4d41415649430000000000000f
-00544d31323047445350303100000079
+00 ff ff ff ff ff ff 00 51 a1 00 12 01 00 00 00
+27 19 01 04 a5 19 11 78 02 eb 5d a6 54 45 a9 26
+0f 4c 4f 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 7a 50 70 a0 80 a0 28 50 30 20
+3a 00 fe a9 00 00 00 18 00 00 00 10 00 a0 28 50
+30 20 3a 00 fe a9 00 00 00 18 00 00 00 0f 00 54
+49 41 4e 4d 41 41 56 49 43 00 00 00 00 00 00 0f
+00 54 4d 31 32 30 47 44 53 50 30 31 00 00 00 79
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   51 a1 00 12 01 00 00 00 27 19
-version:         01 04
-basic params:    a5 19 11 78 02
-chroma info:     eb 5d a6 54 45 a9 26 0f 4c 4f
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    7a 50 70 a0 80 a0 28 50 30 20 3a 00 fe a9 00 00 00 18
-descriptor 2:    00 00 00 10 00 a0 28 50 30 20 3a 00 fe a9 00 00 00 18
-descriptor 3:    00 00 00 0f 00 54 49 41 4e 4d 41 41 56 49 43 00 00 00
-descriptor 4:    00 00 00 0f 00 54 4d 31 32 30 47 44 53 50 30 31 00 00
-extensions:      00
-checksum:        79
+----------------
 
-EDID version: 1.4
-Manufacturer: TMA Model 1200 Serial Number --
-Made in week 39 of 2015
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 25 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6513, 0.3300
-  Green: 0.2714, 0.6630
-  Blue:  0.1494, 0.0595
-  White: 0.2998, 0.3095
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 206.020 MHz, 254 mm x 169 mm
-               2160 2208 2240 2320 hborder 0
-               1440 1443 1453 1480 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 88801 Hz
-Dummy block
-Manufacturer-specified data, tag 15
-Manufacturer-specified data, tag 15
-Checksum: 0x79 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-EDID block does not conform at all!
-	Dummy block filled with garbage
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: TMA
+    Model: 4608
+    Serial Number: ...
+    Made in: week 39 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 25 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6513, 0.3300
+    Green: 0.2714, 0.6630
+    Blue : 0.1494, 0.0595
+    White: 0.2998, 0.3095
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2160x1440   60.001 Hz   3:2    88.802 kHz 206.020 MHz (254 mm x 169 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync  10 Vback  27 Vpol N
+    Dummy Descriptor:
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 54 49 41 4e 4d 41 41 56 49 43 00 00 00 '...TIANMAAVIC...'
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 54 4d 31 32 30 47 44 53 50 30 31 00 00 '...TM120GDSP01..'
+Checksum: 0x79

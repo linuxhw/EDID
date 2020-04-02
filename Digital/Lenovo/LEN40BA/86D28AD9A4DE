@@ -1,60 +1,45 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030aeba4000000000
-001b010495221378eacde5955b558f27
-1d505400000001010101010101010101
-010101010101243680a070381f403020
-350058c210000019502b80a070381f40
-3020350058c2100000190000000f00d1
-0932d10930190a0030e47305000000fe
-004c503135365746392d53504b320084
+00 ff ff ff ff ff ff 00 30 ae ba 40 00 00 00 00
+00 1b 01 04 95 22 13 78 ea cd e5 95 5b 55 8f 27
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 24 36 80 a0 70 38 1f 40 30 20
+35 00 58 c2 10 00 00 19 50 2b 80 a0 70 38 1f 40
+30 20 35 00 58 c2 10 00 00 19 00 00 00 0f 00 d1
+09 32 d1 09 30 19 0a 00 30 e4 73 05 00 00 00 fe
+00 4c 50 31 35 36 57 46 39 2d 53 50 4b 32 00 84
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 ae ba 40 00 00 00 00 00 1b
-version:         01 04
-basic params:    95 22 13 78 ea
-chroma info:     cd e5 95 5b 55 8f 27 1d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    24 36 80 a0 70 38 1f 40 30 20 35 00 58 c2 10 00 00 19
-descriptor 2:    50 2b 80 a0 70 38 1f 40 30 20 35 00 58 c2 10 00 00 19
-descriptor 3:    00 00 00 0f 00 d1 09 32 d1 09 30 19 0a 00 30 e4 73 05
-descriptor 4:    00 00 00 fe 00 4c 50 31 35 36 57 46 39 2d 53 50 4b 32
-extensions:      00
-checksum:        84
+----------------
 
-EDID version: 1.4
-Manufacturer: LEN Model 40ba Serial Number --
-Made in year 2017
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5849, 0.3554
-  Green: 0.3349, 0.5595
-  Blue:  0.1552, 0.1152
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 138.600 MHz, 344 mm x 194 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 66634 Hz
-Detailed mode: Clock 110.880 MHz, 344 mm x 194 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               -hsync -vsync 
-               VertFreq: 47 Hz, HorFreq: 53307 Hz
-Manufacturer-specified data, tag 15
-ASCII string: LP156WF9-SPK2
-Checksum: 0x84 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16570
+    Made in: 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5849, 0.3554
+    Green: 0.3349, 0.5595
+    Blue : 0.1552, 0.1152
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.977 Hz  16:9    66.635 kHz 138.600 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 2:  1920x1080   47.982 Hz  16:9    53.308 kHz 110.880 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 d1 09 32 d1 09 30 19 0a 00 30 e4 73 05 '.....2..0...0.s.'
+    Alphanumeric Data String: 'LP156WF9-SPK2'
+Checksum: 0x84

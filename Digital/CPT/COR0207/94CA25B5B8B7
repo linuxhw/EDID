@@ -1,58 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000df2070200000000
-24150103801f11780263f59659559326
-1d505400000001010101010101010101
-010101010101781d56c2500026303020
-3c0035ae10000018781d56c250002630
-30203c0035ae10000018000000fe0049
-6e666f566973696f6e0a0a0a000000fe
-00503134304e57523152310a202000a5
+00 ff ff ff ff ff ff 00 0d f2 07 02 00 00 00 00
+24 15 01 03 80 1f 11 78 02 63 f5 96 59 55 93 26
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 78 1d 56 c2 50 00 26 30 30 20
+3c 00 35 ae 10 00 00 18 78 1d 56 c2 50 00 26 30
+30 20 3c 00 35 ae 10 00 00 18 00 00 00 fe 00 49
+6e 66 6f 56 69 73 69 6f 6e 0a 0a 0a 00 00 00 fe
+00 50 31 34 30 4e 57 52 31 52 31 0a 20 20 00 a5
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0d f2 07 02 00 00 00 00 24 15
-version:         01 03
-basic params:    80 1f 11 78 02
-chroma info:     63 f5 96 59 55 93 26 1d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    78 1d 56 c2 50 00 26 30 30 20 3c 00 35 ae 10 00 00 18
-descriptor 2:    78 1d 56 c2 50 00 26 30 30 20 3c 00 35 ae 10 00 00 18
-descriptor 3:    00 00 00 fe 00 49 6e 66 6f 56 69 73 69 6f 6e 0a 0a 0a
-descriptor 4:    00 00 00 fe 00 50 31 34 30 4e 57 52 31 52 31 0a 20 20
-extensions:      00
-checksum:        a5
+----------------
 
-EDID version: 1.3
-Manufacturer: COR Model 207 Serial Number --
-Made in week 36 of 2011
-Digital display
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-Monochrome or grayscale display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5869, 0.3496
-  Green: 0.3320, 0.5771
-  Blue:  0.1513, 0.1162
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 75.440 MHz, 309 mm x 174 mm
-               1366 1414 1446 1560 hborder 0
-                768  771  783  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 48358 Hz
-Detailed mode: Clock 75.440 MHz, 309 mm x 174 mm
-               1366 1414 1446 1560 hborder 0
-                768  771  783  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 48358 Hz
-ASCII string: InfoVision
-ASCII string: P140NWR1R1
-Checksum: 0xa5 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: COR
+    Model: 519
+    Made in: week 36 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Monochrome or grayscale display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5869, 0.3496
+    Green: 0.3320, 0.5771
+    Blue : 0.1513, 0.1162
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.999 Hz 683:384  48.359 kHz  75.440 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback 114 Hpol N
+                 Vfront    3 Vsync  12 Vback  23 Vpol N
+    DTD 2:  1366x768    59.999 Hz 683:384  48.359 kHz  75.440 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback 114 Hpol N
+                 Vfront    3 Vsync  12 Vback  23 Vpol N
+    Alphanumeric Data String: 'InfoVision'
+    Alphanumeric Data String: 'P140NWR1R1'
+Checksum: 0xa5

@@ -1,55 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0026cf7f0500000000
-001b0104a51f11780a1d39a750479727
-134f5400000001010101010101010101
-010101010101606d80c8703814401830
-a50035ae10000019000000fe004d3134
-304e564637205230200a000000030004
-30ff053c9d2b14399d00000000000003
-000618ff0f3c3b2a0b393b01010000ad
+00 ff ff ff ff ff ff 00 26 cf 7f 05 00 00 00 00
+00 1b 01 04 a5 1f 11 78 0a 1d 39 a7 50 47 97 27
+13 4f 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 60 6d 80 c8 70 38 14 40 18 30
+a5 00 35 ae 10 00 00 19 00 00 00 fe 00 4d 31 34
+30 4e 56 46 37 20 52 30 20 0a 00 00 00 03 00 04
+30 ff 05 3c 9d 2b 14 39 9d 00 00 00 00 00 00 03
+00 06 18 ff 0f 3c 3b 2a 0b 39 3b 01 01 00 00 ad
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   26 cf 7f 05 00 00 00 00 00 1b
-version:         01 04
-basic params:    a5 1f 11 78 0a
-chroma info:     1d 39 a7 50 47 97 27 13 4f 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    60 6d 80 c8 70 38 14 40 18 30 a5 00 35 ae 10 00 00 19
-descriptor 2:    00 00 00 fe 00 4d 31 34 30 4e 56 46 37 20 52 30 20 0a
-descriptor 3:    00 00 00 03 00 04 30 ff 05 3c 9d 2b 14 39 9d 00 00 00
-descriptor 4:    00 00 00 03 00 06 18 ff 0f 3c 3b 2a 0b 39 3b 01 01 00
-extensions:      00
-checksum:        ad
+----------------
 
-EDID version: 1.4
-Manufacturer: IVO Model 57f Serial Number --
-Made in year 2017
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6523, 0.3134
-  Green: 0.2802, 0.5908
-  Blue:  0.1523, 0.0771
-  White: 0.3105, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 280.000 MHz, 309 mm x 174 mm
-               1920 1944 1992 2120 hborder 0
-               1080 1090 1095 1100 vborder 0
-               -hsync -vsync 
-               VertFreq: 120 Hz, HorFreq: 132075 Hz
-ASCII string: M140NVF7 R0 
-Manufacturer-specified data, tag 3
-Manufacturer-specified data, tag 3
-Checksum: 0xad (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: IVO
+    Model: 1407
+    Made in: 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6523, 0.3134
+    Green: 0.2802, 0.5908
+    Blue : 0.1523, 0.0771
+    White: 0.3105, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  120.069 Hz  16:9   132.075 kHz 280.000 MHz (309 mm x 174 mm)
+                 Hfront   24 Hsync  48 Hback 128 Hpol N
+                 Vfront   10 Vsync   5 Vback   5 Vpol N
+    Alphanumeric Data String: 'M140NVF7 R0 '
+    Manufacturer-Specified Display Descriptor (0x03): 00 03 00 04 30 ff 05 3c 9d 2b 14 39 9d 00 00 00 '....0..<.+.9....'
+    Manufacturer-Specified Display Descriptor (0x03): 00 03 00 06 18 ff 0f 3c 3b 2a 0b 39 3b 01 01 00 '.......<;*.9;...'
+Checksum: 0xad

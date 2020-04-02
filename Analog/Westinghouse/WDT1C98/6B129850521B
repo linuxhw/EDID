@@ -1,71 +1,60 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff005c94981cde040000
-2f160103085c36780a3231a154529e26
-0a474aafcf809500b300a9c001010101
-010101010101023a801871382d40582c
-450000000000001e000000fc00555734
-30544132570a20202020000000fd0039
-4e1e5010000a202020202020000000ff
-0037333230593234373031323436004a
+00 ff ff ff ff ff ff 00 5c 94 98 1c de 04 00 00
+2f 16 01 03 08 5c 36 78 0a 32 31 a1 54 52 9e 26
+0a 47 4a af cf 80 95 00 b3 00 a9 c0 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 00 00 00 00 00 1e 00 00 00 fc 00 55 57 34
+30 54 41 32 57 0a 20 20 20 20 00 00 00 fd 00 39
+4e 1e 50 10 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 37 33 32 30 59 32 34 37 30 31 32 34 36 00 4a
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   5c 94 98 1c de 04 00 00 2f 16
-version:         01 03
-basic params:    08 5c 36 78 0a
-chroma info:     32 31 a1 54 52 9e 26 0a 47 4a
-established:     af cf 80
-standard:        95 00 b3 00 a9 c0 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 00 00 00 00 00 1e
-descriptor 2:    00 00 00 fc 00 55 57 34 30 54 41 32 57 0a 20 20 20 20
-descriptor 3:    00 00 00 fd 00 39 4e 1e 50 10 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 37 33 32 30 59 32 34 37 30 31 32 34 36
-extensions:      00
-checksum:        4a
+----------------
 
-EDID version: 1.3
-Manufacturer: WDT Model 1c98 Serial Number --
-Made in week 47 of 2012
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate 
-Maximum image size: 92 cm x 54 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6289, 0.3310
-  Green: 0.3203, 0.6191
-  Blue:  0.1484, 0.0419
-  White: 0.2773, 0.2900
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-  1152x870@75Hz 192:145 HorFreq: 67500 Hz Clock: 108.000 MHz
-Standard timings supported:
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1600x900@60Hz 16:9
-Detailed mode: Clock 148.500 MHz, 0 mm x 0 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor name: UW40TA2W
-Monitor ranges (GTF): 57-78Hz V, 30-80kHz H, max dotclock 160MHz
-Serial number: --
-Checksum: 0x4a (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 56 - 75 Hz
-  Horizontal Freq: 31469 - 80000 Hz
-  Maximum Clock: 148.500 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: WDT
+    Model: 7320
+    Serial Number: ...
+    Made in: week 47 of 2012
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate
+    Maximum image size: 92 cm x 54 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6289, 0.3310
+    Green: 0.3203, 0.6191
+    Blue : 0.1484, 0.0419
+    White: 0.2773, 0.2900
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+    Apple   :  1152x870    75.062 Hz 192:145  68.681 kHz 100.000 MHz
+  Standard Timings:
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    Display Product Name: 'UW40TA2W'
+  Display Range Limits:
+    Monitor ranges (GTF): 57-78 Hz V, 30-80 kHz H, max dotclock 160 MHz
+    Display Product Serial Number: ...
+Checksum: 0x4a

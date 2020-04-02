@@ -1,60 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000daec61500000000
-061a01049522137802c3c59155549428
-24505400000001010101010101010101
-010101010101da1d56e250002030442d
-470058c11000001a9d1756ce50002130
-3f29460058c11000001a000000fe0031
-54543830803135364247450a00000000
-00004131960110000009010a202000dd
+00 ff ff ff ff ff ff 00 0d ae c6 15 00 00 00 00
+06 1a 01 04 95 22 13 78 02 c3 c5 91 55 54 94 28
+24 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 da 1d 56 e2 50 00 20 30 44 2d
+47 00 58 c1 10 00 00 1a 9d 17 56 ce 50 00 21 30
+3f 29 46 00 58 c1 10 00 00 1a 00 00 00 fe 00 31
+54 54 38 30 80 31 35 36 42 47 45 0a 00 00 00 00
+00 00 41 31 96 01 10 00 00 09 01 0a 20 20 00 dd
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0d ae c6 15 00 00 00 00 06 1a
-version:         01 04
-basic params:    95 22 13 78 02
-chroma info:     c3 c5 91 55 54 94 28 24 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    da 1d 56 e2 50 00 20 30 44 2d 47 00 58 c1 10 00 00 1a
-descriptor 2:    9d 17 56 ce 50 00 21 30 3f 29 46 00 58 c1 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 31 54 54 38 30 80 31 35 36 42 47 45 0a
-descriptor 4:    00 00 00 00 00 00 41 31 96 01 10 00 00 09 01 0a 20 20
-extensions:      00
-checksum:        dd
+----------------
 
-EDID version: 1.4
-Manufacturer: CMN Model 15c6 Serial Number --
-Made in week 6 of 2016
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5693, 0.3320
-  Green: 0.3281, 0.5810
-  Blue:  0.1591, 0.1406
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 76.420 MHz, 344 mm x 193 mm
-               1366 1434 1479 1592 hborder 0
-                768  772  779  800 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48002 Hz
-Detailed mode: Clock 60.450 MHz, 344 mm x 193 mm
-               1366 1429 1470 1572 hborder 0
-                768  772  778  801 vborder 0
-               +hsync -vsync 
-               VertFreq: 48 Hz, HorFreq: 38454 Hz
-ASCII string: 1TT80
-Manufacturer-specified data, tag 0
-Checksum: 0xdd (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5574
+    Made in: week 6 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5693, 0.3320
+    Green: 0.3281, 0.5810
+    Blue : 0.1591, 0.1406
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.003 Hz 683:384  48.003 kHz  76.420 MHz (344 mm x 193 mm)
+                 Hfront   68 Hsync  45 Hback 113 Hpol P
+                 Vfront    4 Vsync   7 Vback  21 Vpol N
+    DTD 2:  1366x768    48.008 Hz 683:384  38.454 kHz  60.450 MHz (344 mm x 193 mm)
+                 Hfront   63 Hsync  41 Hback 102 Hpol P
+                 Vfront    4 Vsync   6 Vback  23 Vpol N
+    Alphanumeric Data String: '1TT80'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 96 01 10 00 00 09 01 0a 20 20 '....A1........  '
+Checksum: 0xdd

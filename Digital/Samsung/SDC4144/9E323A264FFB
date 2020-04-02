@@ -1,56 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004c83444100000000
-00190104801911780aee95a3544c9926
-0f505400000001010101010101010101
-010101010101785070a080a029503020
-3a00fea9000000190000000f00000000
-000000000044dc037400000000fe0053
-414d53554e470a204c83514c000000fe
-004c544e313230514c30314c303100e3
+00 ff ff ff ff ff ff 00 4c 83 44 41 00 00 00 00
+00 19 01 04 80 19 11 78 0a ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 78 50 70 a0 80 a0 29 50 30 20
+3a 00 fe a9 00 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 44 dc 03 74 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 4c 83 51 4c 00 00 00 fe
+00 4c 54 4e 31 32 30 51 4c 30 31 4c 30 31 00 e3
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c 83 44 41 00 00 00 00 00 19
-version:         01 04
-basic params:    80 19 11 78 0a
-chroma info:     ee 95 a3 54 4c 99 26 0f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    78 50 70 a0 80 a0 29 50 30 20 3a 00 fe a9 00 00 00 19
-descriptor 2:    00 00 00 0f 00 00 00 00 00 00 00 00 00 44 dc 03 74 00
-descriptor 3:    00 00 00 fe 00 53 41 4d 53 55 4e 47 0a 20 4c 83 51 4c
-descriptor 4:    00 00 00 fe 00 4c 54 4e 31 32 30 51 4c 30 31 4c 30 31
-extensions:      00
-checksum:        e3
+----------------
 
-EDID version: 1.4
-Manufacturer: SDC Model 4144 Serial Number --
-Made in year 2015
-Digital display
-Color depth is undefined
-Digital interface is not defined
-Maximum image size: 25 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1503, 0.0595
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 206.000 MHz, 254 mm x 169 mm
-               2160 2208 2240 2320 hborder 0
-               1440 1443 1453 1481 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 88793 Hz
-Manufacturer-specified data, tag 15
-ASCII string: SAMSUNG
-ASCII string: LTN120QL01L01
-Checksum: 0xe3 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 16708
+    Made in: 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Color depth is undefined
+    Digital interface is not defined
+    Maximum image size: 25 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2160x1440   59.955 Hz   3:2    88.793 kHz 206.000 MHz (254 mm x 169 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync  10 Vback  28 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 44 dc 03 74 00 '...........D..t.'
+    Alphanumeric Data String: 'SAMSUNG'
+    Alphanumeric Data String: 'LTN120QL01L01'
+Checksum: 0xe3

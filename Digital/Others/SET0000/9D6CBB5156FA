@@ -1,56 +1,41 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004cb4000000000000
-00180103a51a0e780a69659657528f27
-22505400000001010101010101010101
-010101010101bc1b568650001430291b
-3400009010000018000000fe00535441
-5252590a0a0a0a0a0a0a000000fe0053
-54415252590a0a0a0a0a0a0a000000fe
-005354415252590a0a0a0a0a0a0a0010
+00 ff ff ff ff ff ff 00 4c b4 00 00 00 00 00 00
+00 18 01 03 a5 1a 0e 78 0a 69 65 96 57 52 8f 27
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 1b 56 86 50 00 14 30 29 1b
+34 00 00 90 10 00 00 18 00 00 00 fe 00 53 54 41
+52 52 59 0a 0a 0a 0a 0a 0a 0a 00 00 00 fe 00 53
+54 41 52 52 59 0a 0a 0a 0a 0a 0a 0a 00 00 00 fe
+00 53 54 41 52 52 59 0a 0a 0a 0a 0a 0a 0a 00 10
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c b4 00 00 00 00 00 00 00 18
-version:         01 03
-basic params:    a5 1a 0e 78 0a
-chroma info:     69 65 96 57 52 8f 27 22 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    bc 1b 56 86 50 00 14 30 29 1b 34 00 00 90 10 00 00 18
-descriptor 2:    00 00 00 fe 00 53 54 41 52 52 59 0a 0a 0a 0a 0a 0a 0a
-descriptor 3:    00 00 00 fe 00 53 54 41 52 52 59 0a 0a 0a 0a 0a 0a 0a
-descriptor 4:    00 00 00 fe 00 53 54 41 52 52 59 0a 0a 0a 0a 0a 0a 0a
-extensions:      00
-checksum:        10
+----------------
 
-EDID version: 1.3
-Manufacturer: SET Model 0 Serial Number --
-Made in year 2014
-Digital display
-DFP 1.x compatible TMDS
-Maximum image size: 26 cm x 14 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5869, 0.3417
-  Green: 0.3222, 0.5595
-  Blue:  0.1533, 0.1347
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 71.000 MHz, 256 mm x 144 mm
-               1366 1407 1434 1500 hborder 0
-                768  771  775  788 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 47333 Hz
-ASCII string: STARRY
-ASCII string: STARRY
-ASCII string: STARRY
-Checksum: 0x10 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 24
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SET
+    Model: 0
+    Made in: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5869, 0.3417
+    Green: 0.3222, 0.5595
+    Blue : 0.1533, 0.1347
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.068 Hz 683:384  47.333 kHz  71.000 MHz (256 mm x 144 mm)
+                 Hfront   41 Hsync  27 Hback  66 Hpol N
+                 Vfront    3 Vsync   4 Vback  13 Vpol N
+    Alphanumeric Data String: 'STARRY'
+    Alphanumeric Data String: 'STARRY'
+    Alphanumeric Data String: 'STARRY'
+Checksum: 0x10

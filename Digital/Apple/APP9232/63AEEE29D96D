@@ -1,72 +1,111 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006103292be700002
-201001038040287828fe87a3574a9c25
-13505400000001010101010101010101
-010101010101bc1b00a0502017303020
-360081912100001ab06800a0a0402e60
-3020360081912100001a000000ff0043
-593633323135555547310a00000000fc
-0043696e656d612048440a000000012d
-40010300000000c04801a500a5000102
-031919a8000000000000400000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000049
+00 ff ff ff ff ff ff 00 06 10 32 92 be 70 00 02
+20 10 01 03 80 40 28 78 28 fe 87 a3 57 4a 9c 25
+13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 1b 00 a0 50 20 17 30 30 20
+36 00 81 91 21 00 00 1a b0 68 00 a0 a0 40 2e 60
+30 20 36 00 81 91 21 00 00 1a 00 00 00 ff 00 43
+59 36 33 32 31 35 55 55 47 31 0a 00 00 00 00 fc
+00 43 69 6e 65 6d 61 20 48 44 0a 00 00 00 01 2d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 10 32 92 be 70 00 02 20 10
-version:         01 03
-basic params:    80 40 28 78 28
-chroma info:     fe 87 a3 57 4a 9c 25 13 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    bc 1b 00 a0 50 20 17 30 30 20 36 00 81 91 21 00 00 1a
-descriptor 2:    b0 68 00 a0 a0 40 2e 60 30 20 36 00 81 91 21 00 00 1a
-descriptor 3:    00 00 00 ff 00 43 59 36 33 32 31 35 55 55 47 31 0a 00
-descriptor 4:    00 00 00 fc 00 43 69 6e 65 6d 61 20 48 44 0a 00 00 00
-extensions:      01
-checksum:        2d
+40 01 03 00 00 00 00 c0 48 01 a5 00 a5 00 01 02
+03 19 19 a8 00 00 00 00 00 00 40 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 49
 
-EDID version: 1.3
-Manufacturer: APP Model 9232 Serial Number --
-Made in week 32 of 2006
-Digital display
-Maximum image size: 64 cm x 40 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3427
-  Green: 0.2919, 0.6113
-  Blue:  0.1464, 0.0742
-  White: 0.3134, 0.3310
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 71.000 MHz, 641 mm x 401 mm
-               1280 1328 1360 1440 hborder 0
-                800  803  809  823 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 49305 Hz
-Detailed mode: Clock 268.000 MHz, 641 mm x 401 mm
-               2560 2608 2640 2720 hborder 0
-               1600 1603 1609 1646 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 98529 Hz
-Serial number: --
-Monitor name: Cinema HD
-Has 1 extension blocks
-Checksum: 0x2d (valid)
+----------------
 
-DI extension block
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 37426
+    Serial Number: ...
+    Made in: week 32 of 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 64 cm x 40 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6396, 0.3427
+    Green: 0.2919, 0.6113
+    Blue : 0.1464, 0.0742
+    White: 0.3134, 0.3310
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.910 Hz   8:5    49.306 kHz  71.000 MHz (641 mm x 401 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   6 Vback  14 Vpol N
+    DTD 2:  2560x1600   59.860 Hz   8:5    98.529 kHz 268.000 MHz (641 mm x 401 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   6 Vback  37 Vpol N
+    Display Product Serial Number: ...
+    Display Product Name: 'Cinema HD'
+  Extension blocks: 1
+Checksum: 0x2d
 
-EDID block does NOT conform to EDID 1.3!
-	Missing preferred timing
-	Missing monitor ranges
-	Detailed block string not properly terminated
-EDID block does not conform at all!
-	Has -754974720 nonconformant extension block(s)
+----------------
+
+Block 1, Display Information Extension Block:
+  Version: 1
+  Digital Interface:
+    Supported Digital Interface: DVI Dual Link - High Resolution
+    Data Enable Signal Usage Available
+    Data Enable Signal High
+    Edge of Shift Clock: Not specified
+    HDCP is not supported
+    Digital Receivers do not support Double Clocking of Input Data
+    Packetized Digital Video is not supported
+    Data Formats: 48-Bit MSB-Aligned RGB (Dual Link - High Resolution)
+    Minimum Pixel Clock Frequency Per Link: 1 MHz
+    Maximum Pixel Clock Frequency Per Link: 165 MHz
+    Crossover Frequency: 165 MHz
+  Display Device:
+    Sub-Pixel Layout: RGB
+    Sub-Pixel Configuration: Stripe
+    Sub-Pixel Shape: Rectangular
+    Horizontal Dot/Pixel Pitch: 0.25 mm
+    Vertical Dot/Pixel Pitch: 0.25 mm
+    Display Device has a Fixed Pixel Format
+    View Direction: Direct
+    Display Device uses non-transparent background
+    Physical Implementation: Desktop or personal display
+    Monitor/display does not support DDC/CI
+  Display Capabities & Feature Support Set:
+    Legacy Modes: Not all VGA/DOS Legacy Timing Modes are supported
+    Stereo Video: No direct stereo
+    Scaler On Board: No
+    Image Centering: No
+    Conditional Update: No
+    Interlaced Video: No
+    Frame Lock: No
+    Frame Rate Conversion: Not supported
+    Vertical Frequency: Not available
+    Horizontal Frequency: Not available
+    Display/Scan Orientation Definition Type: Fixed Orientation
+    Screen Orientation: Landscape
+    Zero Pixel Location: Upper Left
+    Scan Direction: Not defined
+    Standalone Projector: No
+    Default Color/Luminance Decoding: Not defined
+    Preferred Color/Luminance Decoder: Uses Default Decoding
+    Color/Luminance Decoding Capabilities: None
+    Dithering: No
+    Supported Color Bit-Depth of Sub-Channel 0 (Blue): No Information
+    Supported Color Bit-Depth of Sub-Channel 1 (Green): No Information
+    Supported Color Bit-Depth of Sub-Channel 2 (Red): No Information
+    Supported Color Bit-Depth of Sub-Channel 0 (Cb/Pb): No Information
+    Supported Color Bit-Depth of Sub-Channel 1 (Y): No Information
+    Supported Color Bit-Depth of Sub-Channel 2 (Cr/Pr): No Information
+    Aspect Ratio Conversion Modes: None
+  Display Transfer Characteristics - Gamma:
+    No Display Transfer Characteristics
+Checksum: 0x49

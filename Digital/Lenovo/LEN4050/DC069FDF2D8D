@@ -1,58 +1,43 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030ae504000000000
-0010010380211578ea03159757528c27
-21505400000001010101010101010101
-010101010101c71b00a0502017303020
-36004bcf10000019261700a050201730
-302036004bcf100000190000000f0081
-0a32810a281401004ca35833000000fe
-004c544e31353458332d4c30320a0029
+00 ff ff ff ff ff ff 00 30 ae 50 40 00 00 00 00
+00 10 01 03 80 21 15 78 ea 03 15 97 57 52 8c 27
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c7 1b 00 a0 50 20 17 30 30 20
+36 00 4b cf 10 00 00 19 26 17 00 a0 50 20 17 30
+30 20 36 00 4b cf 10 00 00 19 00 00 00 0f 00 81
+0a 32 81 0a 28 14 01 00 4c a3 58 33 00 00 00 fe
+00 4c 54 4e 31 35 34 58 33 2d 4c 30 32 0a 00 29
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 ae 50 40 00 00 00 00 00 10
-version:         01 03
-basic params:    80 21 15 78 ea
-chroma info:     03 15 97 57 52 8c 27 21 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    c7 1b 00 a0 50 20 17 30 30 20 36 00 4b cf 10 00 00 19
-descriptor 2:    26 17 00 a0 50 20 17 30 30 20 36 00 4b cf 10 00 00 19
-descriptor 3:    00 00 00 0f 00 81 0a 32 81 0a 28 14 01 00 4c a3 58 33
-descriptor 4:    00 00 00 fe 00 4c 54 4e 31 35 34 58 33 2d 4c 30 32 0a
-extensions:      00
-checksum:        29
+----------------
 
-EDID version: 1.3
-Manufacturer: LEN Model 4050 Serial Number --
-Made in year 2006
-Digital display
-Maximum image size: 33 cm x 21 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5898, 0.3398
-  Green: 0.3203, 0.5498
-  Blue:  0.1523, 0.1298
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 71.110 MHz, 331 mm x 207 mm
-               1280 1328 1360 1440 hborder 0
-                800  803  809  823 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 49381 Hz
-Detailed mode: Clock 59.260 MHz, 331 mm x 207 mm
-               1280 1328 1360 1440 hborder 0
-                800  803  809  823 vborder 0
-               -hsync -vsync 
-               VertFreq: 50 Hz, HorFreq: 41152 Hz
-Manufacturer-specified data, tag 15
-ASCII string: LTN154X3-L02
-Checksum: 0x29 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16464
+    Made in: 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3398
+    Green: 0.3203, 0.5498
+    Blue : 0.1523, 0.1298
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.002 Hz   8:5    49.382 kHz  71.110 MHz (331 mm x 207 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   6 Vback  14 Vpol N
+    DTD 2:  1280x800    50.003 Hz   8:5    41.153 kHz  59.260 MHz (331 mm x 207 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   6 Vback  14 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 81 0a 32 81 0a 28 14 01 00 4c a3 58 33 '.....2..(...L.X3'
+    Alphanumeric Data String: 'LTN154X3-L02'
+Checksum: 0x29

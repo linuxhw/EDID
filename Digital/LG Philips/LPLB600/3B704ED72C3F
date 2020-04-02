@@ -1,50 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00320c00b600000000
-00100102801a10780a8ca09758548b28
-25505400000001010101010101010101
-010101010101bc1b00a0502017303030
-260005a3100000190000000000000000
-00000000000000000000000000fe004c
-475068696c6970734c43440a000000fe
-004c503132315758312d544c413200be
+00 ff ff ff ff ff ff 00 32 0c 00 b6 00 00 00 00
+00 10 01 02 80 1a 10 78 0a 8c a0 97 58 54 8b 28
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 1b 00 a0 50 20 17 30 30 30
+26 00 05 a3 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 50 68 69 6c 69 70 73 4c 43 44 0a 00 00 00 fe
+00 4c 50 31 32 31 57 58 31 2d 54 4c 41 32 00 be
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   32 0c 00 b6 00 00 00 00 00 10
-version:         01 02
-basic params:    80 1a 10 78 0a
-chroma info:     8c a0 97 58 54 8b 28 25 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    bc 1b 00 a0 50 20 17 30 30 30 26 00 05 a3 10 00 00 19
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fe 00 4c 47 50 68 69 6c 69 70 73 4c 43 44 0a
-descriptor 4:    00 00 00 fe 00 4c 50 31 32 31 57 58 31 2d 54 4c 41 32
-extensions:      00
-checksum:        be
+----------------
 
-EDID version: 1.2
-Manufacturer: LPL Model b600 Serial Number --
-Made in year 2006
-Digital display
-Maximum image size: 26 cm x 16 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5917, 0.3437
-  Green: 0.3310, 0.5429
-  Blue:  0.1582, 0.1464
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 71.000 MHz, 261 mm x 163 mm
-               1280 1328 1376 1440 hborder 0
-                800  802  808  823 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 49305 Hz
-Manufacturer-specified data, tag 0
-ASCII string: LGPhilipsLCD
-ASCII string: LP121WX1-TLA2
-Checksum: 0xbe (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: LPL
+    Model: 46592
+    Made in: 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 26 cm x 16 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5917, 0.3437
+    Green: 0.3310, 0.5429
+    Blue : 0.1582, 0.1464
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.910 Hz   8:5    49.306 kHz  71.000 MHz (261 mm x 163 mm)
+                 Hfront   48 Hsync  48 Hback  64 Hpol N
+                 Vfront    2 Vsync   6 Vback  15 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LGPhilipsLCD'
+    Alphanumeric Data String: 'LP121WX1-TLA2'
+Checksum: 0xbe

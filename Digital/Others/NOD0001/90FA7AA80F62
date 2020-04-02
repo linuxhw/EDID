@@ -1,69 +1,67 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0039e4010001000000
-2815010380301b78b292c5a259559e27
-0e505400000001010101010101010101
-010101010101983a8018713837403020
-3c00153821000018000000ff004e4f44
-303030350a0a0a0a0a0a000000100033
-4e4f44204d6f6e69746f720a000000fd
-00324b3c5010000a20202020202001ef
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
+00 ff ff ff ff ff ff 00 39 e4 01 00 01 00 00 00
+28 15 01 03 80 30 1b 78 b2 92 c5 a2 59 55 9e 27
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 98 3a 80 18 71 38 37 40 30 20
+3c 00 15 38 21 00 00 18 00 00 00 ff 00 4e 4f 44
+30 30 30 35 0a 0a 0a 0a 0a 0a 00 00 00 10 00 33
+4e 4f 44 20 4d 6f 6e 69 74 6f 72 0a 00 00 00 fd
+00 32 4b 3c 50 10 00 0a 20 20 20 20 20 20 01 ef
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   39 e4 01 00 01 00 00 00 28 15
-version:         01 03
-basic params:    80 30 1b 78 b2
-chroma info:     92 c5 a2 59 55 9e 27 0e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    98 3a 80 18 71 38 37 40 30 20 3c 00 15 38 21 00 00 18
-descriptor 2:    00 00 00 ff 00 4e 4f 44 30 30 30 35 0a 0a 0a 0a 0a 0a
-descriptor 3:    00 00 00 10 00 33 4e 4f 44 20 4d 6f 6e 69 74 6f 72 0a
-descriptor 4:    00 00 00 fd 00 32 4b 3c 50 10 00 0a 20 20 20 20 20 20
-extensions:      01
-checksum:        ef
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 
-EDID version: 1.3
-Manufacturer: NOD Model 1 Serial Number --
-Made in week 40 of 2011
-Digital display
-Maximum image size: 48 cm x 27 cm
-Gamma: 2.20
-DPMS levels: Standby Off
-Non-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6347, 0.3486
-  Green: 0.3320, 0.6191
-  Blue:  0.1552, 0.0546
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 150.000 MHz, 533 mm x 312 mm
-               1920 1968 2000 2200 hborder 0
-               1080 1083 1095 1135 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 68181 Hz
-Serial number: --
-Dummy block
-Monitor ranges (GTF): 50-75Hz V, 60-80kHz H, max dotclock 160MHz
-Has 1 extension blocks
-Checksum: 0xef (valid)
+----------------
 
-Unknown extension block
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: NOD
+    Model: 1
+    Serial Number: ...
+    Made in: week 40 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Standby Off
+    Non-RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6347, 0.3486
+    Green: 0.3320, 0.6191
+    Blue : 0.1552, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.072 Hz  16:9    68.182 kHz 150.000 MHz (533 mm x 312 mm)
+                 Hfront   48 Hsync  32 Hback 200 Hpol N
+                 Vfront    3 Vsync  12 Vback  40 Vpol N
+    Display Product Serial Number: ...
+    Dummy Descriptor:
+  Display Range Limits:
+    Monitor ranges (GTF): 50-75 Hz V, 60-80 kHz H, max dotclock 160 MHz
+  Extension blocks: 1
+Checksum: 0xef
 
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Detailed block string not properly terminated
-EDID block does not conform at all!
-	Has 285212672 nonconformant extension block(s)
-	Dummy block filled with garbage
+----------------
+
+Block 1, Base EDID:
+Base EDID
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+Checksum: 0x0

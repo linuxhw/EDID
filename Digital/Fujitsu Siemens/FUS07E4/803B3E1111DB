@@ -1,64 +1,56 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001ab3e4079b700000
-09160104a53c227822c9a5a4564b9d25
-125054a54b0081809500b30001010101
-010101010101023a801871382d40582c
-450056502100001e000000fd003b4c1f
-5214000a202020202020000000fc0053
-4c3237542d31204c45440a20000000ff
-00595633503032383832370a2020001e
+00 ff ff ff ff ff ff 00 1a b3 e4 07 9b 70 00 00
+09 16 01 04 a5 3c 22 78 22 c9 a5 a4 56 4b 9d 25
+12 50 54 a5 4b 00 81 80 95 00 b3 00 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 fd 00 3b 4c 1f
+52 14 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53
+4c 32 37 54 2d 31 20 4c 45 44 0a 20 00 00 00 ff
+00 59 56 33 50 30 32 38 38 32 37 0a 20 20 00 1e
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1a b3 e4 07 9b 70 00 00 09 16
-version:         01 04
-basic params:    a5 3c 22 78 22
-chroma info:     c9 a5 a4 56 4b 9d 25 12 50 54
-established:     a5 4b 00
-standard:        81 80 95 00 b3 00 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 56 50 21 00 00 1e
-descriptor 2:    00 00 00 fd 00 3b 4c 1f 52 14 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 53 4c 32 37 54 2d 31 20 4c 45 44 0a 20
-descriptor 4:    00 00 00 ff 00 59 56 33 50 30 32 38 38 32 37 0a 20 20
-extensions:      00
-checksum:        1e
+----------------
 
-EDID version: 1.4
-Manufacturer: FUS Model 7e4 Serial Number --
-Made in week 9 of 2012
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 60 cm x 34 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6435, 0.3359
-  Green: 0.2949, 0.6142
-  Blue:  0.1464, 0.0722
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-Detailed mode: Clock 148.500 MHz, 598 mm x 336 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor ranges (GTF): 59-76Hz V, 31-82kHz H, max dotclock 200MHz
-Monitor name: SL27T-1 LED
-Serial number: --
-Checksum: 0x1e (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: FUS
+    Model: 2020
+    Serial Number: ...
+    Made in: week 9 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6435, 0.3359
+    Green: 0.2949, 0.6142
+    Blue : 0.1464, 0.0722
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (598 mm x 336 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 59-76 Hz V, 31-82 kHz H, max dotclock 200 MHz
+    Display Product Name: 'SL27T-1 LED'
+    Display Product Serial Number: ...
+Checksum: 0x1e

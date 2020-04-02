@@ -1,135 +1,125 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001e6d425801010101
-0113010380331d78ead945a2554da027
-125054210800714081408180b3000101
-010101010101023a801871382d40582c
-4500fe221100001e000000fd00383d1e
-530f000a202020202020000000fc0044
-32333432500a202020202020000000ff
-0053657269616c4e756d6265720a01a7
-020334f14c901f041305140312202122
-0123090707830100007a030c00100000
-2d20c0100141050f0810181088105810
-38104810023a801871382d40582c4500
-fe221100001e011d8018711c1620582c
-2500fe221100009e011d007251d01e20
-6e285500fe221100001e000000000000
-0000000000000000000000000000006c
+00 ff ff ff ff ff ff 00 1e 6d 42 58 01 01 01 01
+01 13 01 03 80 33 1d 78 ea d9 45 a2 55 4d a0 27
+12 50 54 21 08 00 71 40 81 40 81 80 b3 00 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fe 22 11 00 00 1e 00 00 00 fd 00 38 3d 1e
+53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 44
+32 33 34 32 50 0a 20 20 20 20 20 20 00 00 00 ff
+00 53 65 72 69 61 6c 4e 75 6d 62 65 72 0a 01 a7
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1e 6d 42 58 01 01 01 01 01 13
-version:         01 03
-basic params:    80 33 1d 78 ea
-chroma info:     d9 45 a2 55 4d a0 27 12 50 54
-established:     21 08 00
-standard:        71 40 81 40 81 80 b3 00 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 fe 22 11 00 00 1e
-descriptor 2:    00 00 00 fd 00 38 3d 1e 53 0f 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 44 32 33 34 32 50 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 53 65 72 69 61 6c 4e 75 6d 62 65 72 0a
-extensions:      01
-checksum:        a7
+02 03 34 f1 4c 90 1f 04 13 05 14 03 12 20 21 22
+01 23 09 07 07 83 01 00 00 7a 03 0c 00 10 00 00
+2d 20 c0 10 01 41 05 0f 08 10 18 10 88 10 58 10
+38 10 48 10 02 3a 80 18 71 38 2d 40 58 2c 45 00
+fe 22 11 00 00 1e 01 1d 80 18 71 1c 16 20 58 2c
+25 00 fe 22 11 00 00 9e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 fe 22 11 00 00 1e 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6c
 
-EDID version: 1.3
-Manufacturer: GSM Model 5842 Serial Number --
-Made in week 1 of 2009
-Digital display
-Maximum image size: 51 cm x 29 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6357, 0.3330
-  Green: 0.3027, 0.6259
-  Blue:  0.1533, 0.0703
-  White: 0.3134, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1152x864@60Hz 4:3
-  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-Detailed mode: Clock 148.500 MHz, 510 mm x 290 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor ranges (GTF): 56-61Hz V, 30-83kHz H, max dotclock 150MHz
-Monitor name: D2342P
-Serial number: --
-Has 1 extension blocks
-Checksum: 0xa7 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-48 bytes of CTA data
-  Video data block
-    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC  20 1920x1080i@50Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  32 1920x1080@24Hz 16:9  HorFreq: 27000 Hz Clock: 74.250 MHz
-    VIC  33 1920x1080@25Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
-    VIC  34 1920x1080@30Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 22594
+    Serial Number: ...
+    Made in: week 1 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 51 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6357, 0.3330
+    Green: 0.3027, 0.6259
+    Blue : 0.1533, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    GTF     :  1152x864    60.000 Hz   4:3    53.700 kHz  81.624 MHz
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (510 mm x 290 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 56-61 Hz V, 30-83 kHz H, max dotclock 150 MHz
+    Display Product Name: 'D2342P'
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0xa7
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans PC formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (native)
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
+    VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+    VIC  33:  1920x1080   25.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC  34:  1920x1080   30.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
-    Maximum TMDS clock: 225MHz
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Maximum TMDS clock: 225 MHz
     Extended HDMI video details:
       3D present
       3D-capable-VIC mask present
       3D: Side-by-side (half, horizontal)
       3D: Top-and-bottom
       3D: Frame-packing
-      3D VIC indices: 0 1 2 3 8 10
-      VIC index 0 supports side-by-side (half, horizontal)
-      VIC index 1 supports side-by-side (half, horizontal)
-      VIC index 8 supports side-by-side (half, horizontal)
-      VIC index 5 supports side-by-side (half, horizontal)
-      VIC index 3 supports side-by-side (half, horizontal)
-      VIC index 4 supports side-by-side (half, horizontal)
-Underscans PC formats by default
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 148.500 MHz, 510 mm x 290 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 74.250 MHz, 510 mm x 290 mm
-               1920 2008 2052 2200 hborder 0
-                540  542  547  562 vborder 0
-               +hsync +vsync interlaced 
-               VertFreq: 60 Hz, HorFreq: 33750 Hz
-Detailed mode: Clock 74.250 MHz, 510 mm x 290 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Checksum: 0x6c (valid)
-
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 24 - 60 Hz
-  Horizontal Freq: 27000 - 67500 Hz
-  Maximum Clock: 148.500 MHz
-EDID block does not conform at all!
-	Both the serial number and the serial string are set
+      3D VIC indices that support these capabilities:
+        VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+        VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+        VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+        VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+        VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+        VIC  34:  1920x1080   30.000 Hz  16:9    33.750 kHz  74.250 MHz
+      3D VIC indices with specific capabilities:
+        VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (side-by-side, horizontal)
+        VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz (side-by-side, horizontal)
+        VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz (side-by-side, horizontal)
+        VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz (side-by-side, horizontal)
+        VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz (side-by-side, horizontal)
+        VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz (side-by-side, horizontal)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (510 mm x 290 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 3:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz (510 mm x 290 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    2 Vsync   5 Vback  15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback  15 Vpol P Vback  +0.5 Even Field
+    DTD 4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (510 mm x 290 mm)
+                 Hfront  110 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+Checksum: 0x6c

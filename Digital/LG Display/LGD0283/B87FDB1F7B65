@@ -1,54 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e4830200000000
-00140103902616780af195a35552a126
-0f505400000001010101010101010101
-010101010101843a8042713821404060
-36007fd7100000190000000000000000
-00000000000000000000000000fe004c
-4720446973706c61790a2020000000fe
-004c503137335746312d544c423500b6
+00 ff ff ff ff ff ff 00 30 e4 83 02 00 00 00 00
+00 14 01 03 90 26 16 78 0a f1 95 a3 55 52 a1 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 84 3a 80 42 71 38 21 40 40 60
+36 00 7f d7 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 37 33 57 46 31 2d 54 4c 42 35 00 b6
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 83 02 00 00 00 00 00 14
-version:         01 03
-basic params:    90 26 16 78 0a
-chroma info:     f1 95 a3 55 52 a1 26 0f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    84 3a 80 42 71 38 21 40 40 60 36 00 7f d7 10 00 00 19
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fe 00 4c 47 20 44 69 73 70 6c 61 79 0a 20 20
-descriptor 4:    00 00 00 fe 00 4c 50 31 37 33 57 46 31 2d 54 4c 42 35
-extensions:      00
-checksum:        b6
+----------------
 
-EDID version: 1.3
-Manufacturer: LGD Model 283 Serial Number --
-Made in year 2010
-Digital display
-Maximum image size: 38 cm x 22 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3349
-  Green: 0.3203, 0.6298
-  Blue:  0.1503, 0.0595
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 149.800 MHz, 383 mm x 215 mm
-               1920 1984 2080 2242 hborder 0
-               1080 1083 1089 1113 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 66815 Hz
-Manufacturer-specified data, tag 0
-ASCII string: LG Display
-ASCII string: LP173WF1-TLB5
-Checksum: 0xb6 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 10
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 643
+    Made in: 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 38 cm x 22 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3349
+    Green: 0.3203, 0.6298
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.032 Hz  16:9    66.815 kHz 149.800 MHz (383 mm x 215 mm)
+                 Hfront   64 Hsync  96 Hback 162 Hpol N
+                 Vfront    3 Vsync   6 Vback  24 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP173WF1-TLB5'
+Checksum: 0xb6

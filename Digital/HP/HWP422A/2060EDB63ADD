@@ -1,53 +1,43 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0022f02a4201000000
-0e17010380331d78eea040a656529d27
-10505400000001010101010101010101
-010101010101f03c8000713814406040
-8400fd1e11000000000000fc00485020
-416c6c2d696e2d4f6e65000000fc000a
-202020202020202020202020000000fc
-000a202020202020202020202020004d
+00 ff ff ff ff ff ff 00 22 f0 2a 42 01 00 00 00
+0e 17 01 03 80 33 1d 78 ee a0 40 a6 56 52 9d 27
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 f0 3c 80 00 71 38 14 40 60 40
+84 00 fd 1e 11 00 00 00 00 00 00 fc 00 48 50 20
+41 6c 6c 2d 69 6e 2d 4f 6e 65 00 00 00 fc 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fc
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 4d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 f0 2a 42 01 00 00 00 0e 17
-version:         01 03
-basic params:    80 33 1d 78 ee
-chroma info:     a0 40 a6 56 52 9d 27 10 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    f0 3c 80 00 71 38 14 40 60 40 84 00 fd 1e 11 00 00 00
-descriptor 2:    00 00 00 fc 00 48 50 20 41 6c 6c 2d 69 6e 2d 4f 6e 65
-descriptor 3:    00 00 00 fc 00 0a 20 20 20 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 0a 20 20 20 20 20 20 20 20 20 20 20 20
-extensions:      00
-checksum:        4d
+----------------
 
-EDID version: 1.3
-Manufacturer: HWP Model 422a Serial Number --
-Made in week 14 of 2013
-Digital display
-Maximum image size: 51 cm x 29 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6503, 0.3378
-  Green: 0.3203, 0.6132
-  Blue:  0.1533, 0.0625
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 156.000 MHz, 509 mm x 286 mm
-               1920 2016 2080 2176 hborder 0
-               1080 1088 1092 1100 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 65 Hz, HorFreq: 71691 Hz
-Monitor name: HP All-in-One
-Checksum: 0x4d (valid)
-EDID block does NOT conform to EDID 1.3!
-	sRGB is signaled, but the chromaticities do not match
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 16938
+    Serial Number: ...
+    Made in: week 14 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 51 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3378
+    Green: 0.3203, 0.6132
+    Blue : 0.1533, 0.0625
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   65.174 Hz  16:9    71.691 kHz 156.000 MHz (analog composite, sync-on-green, 509 mm x 286 mm)
+                 Hfront   96 Hsync  64 Hback  96 Hpol N
+                 Vfront    8 Vsync   4 Vback   8 Vpol N
+    Display Product Name: 'HP All-in-One'
+    Display Product Name: ''
+    Display Product Name: ''
+Checksum: 0x4d

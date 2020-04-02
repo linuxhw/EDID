@@ -1,67 +1,58 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001e6d244ce9950000
-0b1801036c291778ead025a258559c28
-0f5054a76a00314f454f614f81c00101
-010101010101662156aa51001e30468f
-33009ae61000001e000000fd00384b1e
-3d09000a202020202020000000fc0031
-394d33350a20202020202020000000ff
-003431314e44544331343337370a0022
+00 ff ff ff ff ff ff 00 1e 6d 24 4c e9 95 00 00
+0b 18 01 03 6c 29 17 78 ea d0 25 a2 58 55 9c 28
+0f 50 54 a7 6a 00 31 4f 45 4f 61 4f 81 c0 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 fd 00 38 4b 1e
+3d 09 00 0a 20 20 20 20 20 20 00 00 00 fc 00 31
+39 4d 33 35 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 34 31 31 4e 44 54 43 31 34 33 37 37 0a 00 22
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1e 6d 24 4c e9 95 00 00 0b 18
-version:         01 03
-basic params:    6c 29 17 78 ea
-chroma info:     d0 25 a2 58 55 9c 28 0f 50 54
-established:     a7 6a 00
-standard:        31 4f 45 4f 61 4f 81 c0 01 01 01 01 01 01 01 01
-descriptor 1:    66 21 56 aa 51 00 1e 30 46 8f 33 00 9a e6 10 00 00 1e
-descriptor 2:    00 00 00 fd 00 38 4b 1e 3d 09 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 31 39 4d 33 35 0a 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 34 31 31 4e 44 54 43 31 34 33 37 37 0a
-extensions:      00
-checksum:        22
+----------------
 
-EDID version: 1.3
-Manufacturer: GSM Model 4c24 Serial Number --
-Made in week 11 of 2014
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate Composite 
-Maximum image size: 41 cm x 23 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6357, 0.3447
-  Green: 0.3320, 0.6093
-  Blue:  0.1562, 0.0605
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x720@60Hz 16:9
-Detailed mode: Clock 85.500 MHz, 410 mm x 230 mm
-               1366 1436 1579 1792 hborder 0
-                768  771  774  798 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 47712 Hz
-Monitor ranges (GTF): 56-75Hz V, 30-61kHz H, max dotclock 90MHz
-Monitor name: 19M35
-Serial number: --
-Checksum: 0x22 (valid)
-
-
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 19492
+    Serial Number: ...
+    Made in: week 11 of 2014
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate Composite
+    Maximum image size: 41 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6357, 0.3447
+    Green: 0.3320, 0.6093
+    Blue : 0.1562, 0.0605
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    Apple   :   832x624    74.551 Hz   4:3    49.726 kHz  57.284 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings:
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.790 Hz 683:384  47.712 kHz  85.500 MHz (410 mm x 230 mm)
+                 Hfront   70 Hsync 143 Hback 213 Hpol P
+                 Vfront    3 Vsync   3 Vback  24 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 56-75 Hz V, 30-61 kHz H, max dotclock 90 MHz
+    Display Product Name: '19M35'
+    Display Product Serial Number: ...
+Checksum: 0x22

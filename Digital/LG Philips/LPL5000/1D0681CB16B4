@@ -1,59 +1,49 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00320c005000000000
-000f0103802115780a0b009758518828
-25505400000001010101010101010101
-010101010101cb1b00a0502017303020
-26004bcf10000018cb1b00a050201730
-302026004bcf10000000000000fe0059
-47333635013135345730310a000000fe
-00d0c0b8b08860380001010a2020008c
+00 ff ff ff ff ff ff 00 32 0c 00 50 00 00 00 00
+00 0f 01 03 80 21 15 78 0a 0b 00 97 58 51 88 28
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 cb 1b 00 a0 50 20 17 30 30 20
+26 00 4b cf 10 00 00 18 cb 1b 00 a0 50 20 17 30
+30 20 26 00 4b cf 10 00 00 00 00 00 00 fe 00 59
+47 33 36 35 01 31 35 34 57 30 31 0a 00 00 00 fe
+00 d0 c0 b8 b0 88 60 38 00 01 01 0a 20 20 00 8c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   32 0c 00 50 00 00 00 00 00 0f
-version:         01 03
-basic params:    80 21 15 78 0a
-chroma info:     0b 00 97 58 51 88 28 25 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    cb 1b 00 a0 50 20 17 30 30 20 26 00 4b cf 10 00 00 18
-descriptor 2:    cb 1b 00 a0 50 20 17 30 30 20 26 00 4b cf 10 00 00 00
-descriptor 3:    00 00 00 fe 00 59 47 33 36 35 01 31 35 34 57 30 31 0a
-descriptor 4:    00 00 00 fe 00 d0 c0 b8 b0 88 60 38 00 01 01 0a 20 20
-extensions:      00
-checksum:        8c
+----------------
 
-EDID version: 1.3
-Manufacturer: LPL Model 5000 Serial Number --
-Digital display
-Maximum image size: 33 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5898, 0.3437
-  Green: 0.3183, 0.5341
-  Blue:  0.1562, 0.1445
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 71.150 MHz, 331 mm x 207 mm
-               1280 1328 1360 1440 hborder 0
-                800  802  808  823 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 49409 Hz
-Detailed mode: Clock 71.150 MHz, 331 mm x 207 mm
-               1280 1328 1360 1440 hborder 0
-                800  802  808  823 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 60 Hz, HorFreq: 49409 Hz
-ASCII string: YG365
-ASCII string: 
-Checksum: 0x8c (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LPL
+    Model: 20480
+    Made in: 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3437
+    Green: 0.3183, 0.5341
+    Blue : 0.1562, 0.1445
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.036 Hz   8:5    49.410 kHz  71.150 MHz (331 mm x 207 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    2 Vsync   6 Vback  15 Vpol N
+    DTD 2:  1280x800    60.036 Hz   8:5    49.410 kHz  71.150 MHz (331 mm x 207 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    2 Vsync   6 Vback  15 Vpol N
+    SPWG Module Revision: 0
+    SPWG Descriptor #3:
+      SPWG PC Maker P/N: 'YG365'
+      SPWG LCD Supplier EEDID Revision: 1
+      SPWG Manufacturer P/N: '154W01'
+    SPWG Descriptor #4:
+      SMBUS Values: 0xd0 0xc0 0xb8 0xb0 0x88 0x60 0x38 0x00
+      LVDS Channels: 1
+      Panel Self Test Present
+Checksum: 0x8c

@@ -1,53 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000e14ee0200000000
-2014010380110a780a23db9355599327
-1d515500000001010101010101010101
-010101010101941100b0405819203020
-36009a5a000000190000000f00000000
-0000000000206e050f00000000fe0043
-505420202020202020202020000000fe
-00434c41413037304e433044435700ff
+00 ff ff ff ff ff ff 00 0e 14 ee 02 00 00 00 00
+20 14 01 03 80 11 0a 78 0a 23 db 93 55 59 93 27
+1d 51 55 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 94 11 00 b0 40 58 19 20 30 20
+36 00 9a 5a 00 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 20 6e 05 0f 00 00 00 00 fe 00 43
+50 54 20 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 43 4c 41 41 30 37 30 4e 43 30 44 43 57 00 ff
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0e 14 ee 02 00 00 00 00 20 14
-version:         01 03
-basic params:    80 11 0a 78 0a
-chroma info:     23 db 93 55 59 93 27 1d 51 55
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    94 11 00 b0 40 58 19 20 30 20 36 00 9a 5a 00 00 00 19
-descriptor 2:    00 00 00 0f 00 00 00 00 00 00 00 00 00 20 6e 05 0f 00
-descriptor 3:    00 00 00 fe 00 43 50 54 20 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 43 4c 41 41 30 37 30 4e 43 30 44 43 57
-extensions:      00
-checksum:        ff
+----------------
 
-EDID version: 1.3
-Manufacturer: CPT Model 2ee Serial Number --
-Made in week 32 of 2010
-Digital display
-Maximum image size: 17 cm x 10 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5742, 0.3339
-  Green: 0.3476, 0.5771
-  Blue:  0.1552, 0.1142
-  White: 0.3183, 0.3349
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 45.000 MHz, 154 mm x 90 mm
-               1024 1072 1104 1200 hborder 0
-                600  603  609  625 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 37500 Hz
-Manufacturer-specified data, tag 15
-ASCII string: CPT          
-ASCII string: CLAA070NC0DCW
-Checksum: 0xff (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CPT
+    Model: 750
+    Made in: week 32 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 17 cm x 10 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5742, 0.3339
+    Green: 0.3476, 0.5771
+    Blue : 0.1552, 0.1142
+    White: 0.3183, 0.3349
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x600    60.000 Hz 128:75   37.500 kHz  45.000 MHz (154 mm x 90 mm)
+                 Hfront   48 Hsync  32 Hback  96 Hpol N
+                 Vfront    3 Vsync   6 Vback  16 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 20 6e 05 0f 00 '........... n...'
+    Alphanumeric Data String: 'CPT          '
+    Alphanumeric Data String: 'CLAA070NC0DCW'
+Checksum: 0xff

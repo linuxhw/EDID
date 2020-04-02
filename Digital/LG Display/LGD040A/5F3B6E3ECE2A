@@ -1,56 +1,43 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e40a0400000000
-00170104951f1178eadc95a35855a026
-0d505400000001010101010101010101
-010101010101ba3680ac703824403c24
-350035af1000001a0000000000000000
-00000000000000000000000000fe004c
-4720446973706c61790a2020000000fe
-004c503134305746312d53504b310074
+00 ff ff ff ff ff ff 00 30 e4 0a 04 00 00 00 00
+00 17 01 04 95 1f 11 78 ea dc 95 a3 58 55 a0 26
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ba 36 80 ac 70 38 24 40 3c 24
+35 00 35 af 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 34 30 57 46 31 2d 53 50 4b 31 00 74
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 0a 04 00 00 00 00 00 17
-version:         01 04
-basic params:    95 1f 11 78 ea
-chroma info:     dc 95 a3 58 55 a0 26 0d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    ba 36 80 ac 70 38 24 40 3c 24 35 00 35 af 10 00 00 1a
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fe 00 4c 47 20 44 69 73 70 6c 61 79 0a 20 20
-descriptor 4:    00 00 00 fe 00 4c 50 31 34 30 57 46 31 2d 53 50 4b 31
-extensions:      00
-checksum:        74
+----------------
 
-EDID version: 1.4
-Manufacturer: LGD Model 40a Serial Number --
-Made in year 2013
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3447
-  Green: 0.3349, 0.6250
-  Blue:  0.1503, 0.0517
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 140.100 MHz, 309 mm x 175 mm
-               1920 1980 2016 2092 hborder 0
-               1080 1083 1088 1116 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 66969 Hz
-Manufacturer-specified data, tag 0
-ASCII string: LG Display
-ASCII string: LP140WF1-SPK1
-Checksum: 0x74 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1034
+    Made in: 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3447
+    Green: 0.3349, 0.6250
+    Blue : 0.1503, 0.0517
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.008 Hz  16:9    66.969 kHz 140.100 MHz (309 mm x 175 mm)
+                 Hfront   60 Hsync  36 Hback  76 Hpol P
+                 Vfront    3 Vsync   5 Vback  28 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP140WF1-SPK1'
+Checksum: 0x74

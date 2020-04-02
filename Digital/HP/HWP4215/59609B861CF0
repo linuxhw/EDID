@@ -1,52 +1,41 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0022f0154201000000
-1916010380301b780a2450a3534fa026
-10505400000001010101010101010101
-01010101010121388000713814406040
-8400dd0c11000018000000fe00563036
-0a202020202020202020000000fc0048
-505120363330302041694f0a000000fe
-004c4d3231355746342d544c473200b2
+00 ff ff ff ff ff ff 00 22 f0 15 42 01 00 00 00
+19 16 01 03 80 30 1b 78 0a 24 50 a3 53 4f a0 26
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 21 38 80 00 71 38 14 40 60 40
+84 00 dd 0c 11 00 00 18 00 00 00 fe 00 56 30 36
+0a 20 20 20 20 20 20 20 20 20 00 00 00 fc 00 48
+50 51 20 36 33 30 30 20 41 69 4f 0a 00 00 00 fe
+00 4c 4d 32 31 35 57 46 34 2d 54 4c 47 32 00 b2
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 f0 15 42 01 00 00 00 19 16
-version:         01 03
-basic params:    80 30 1b 78 0a
-chroma info:     24 50 a3 53 4f a0 26 10 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    21 38 80 00 71 38 14 40 60 40 84 00 dd 0c 11 00 00 18
-descriptor 2:    00 00 00 fe 00 56 30 36 0a 20 20 20 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 48 50 51 20 36 33 30 30 20 41 69 4f 0a
-descriptor 4:    00 00 00 fe 00 4c 4d 32 31 35 57 46 34 2d 54 4c 47 32
-extensions:      00
-checksum:        b2
+----------------
 
-EDID version: 1.3
-Manufacturer: HWP Model 4215 Serial Number --
-Made in week 25 of 2012
-Digital display
-Maximum image size: 48 cm x 27 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6367, 0.3261
-  Green: 0.3095, 0.6250
-  Blue:  0.1494, 0.0634
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 143.690 MHz, 477 mm x 268 mm
-               1920 2016 2080 2176 hborder 0
-               1080 1088 1092 1100 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 66034 Hz
-ASCII string: V06
-Monitor name: HPQ 6300 AiO
-ASCII string: LM215WF4-TLG2
-Checksum: 0xb2 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 16917
+    Serial Number: ...
+    Made in: week 25 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6367, 0.3261
+    Green: 0.3095, 0.6250
+    Blue : 0.1494, 0.0634
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.031 Hz  16:9    66.034 kHz 143.690 MHz (477 mm x 268 mm)
+                 Hfront   96 Hsync  64 Hback  96 Hpol N
+                 Vfront    8 Vsync   4 Vback   8 Vpol N
+    Alphanumeric Data String: 'V06'
+    Display Product Name: 'HPQ 6300 AiO'
+    Alphanumeric Data String: 'LM215WF4-TLG2'
+Checksum: 0xb2

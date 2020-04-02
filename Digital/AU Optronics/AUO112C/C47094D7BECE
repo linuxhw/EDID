@@ -1,59 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006af2c1100000000
-01120103901d10780af9d59555549327
-21505400000001010101010101010101
-010101010101121b565a500019303020
-360025a41000001a0c12565a50001930
-3020360025a41000001a000000fe0058
-58333147804231333358573100000000
-00000000000000000001010a20200076
+00 ff ff ff ff ff ff 00 06 af 2c 11 00 00 00 00
+01 12 01 03 90 1d 10 78 0a f9 d5 95 55 54 93 27
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 56 5a 50 00 19 30 30 20
+36 00 25 a4 10 00 00 1a 0c 12 56 5a 50 00 19 30
+30 20 36 00 25 a4 10 00 00 1a 00 00 00 fe 00 58
+58 33 31 47 80 42 31 33 33 58 57 31 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 01 0a 20 20 00 76
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 af 2c 11 00 00 00 00 01 12
-version:         01 03
-basic params:    90 1d 10 78 0a
-chroma info:     f9 d5 95 55 54 93 27 21 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    12 1b 56 5a 50 00 19 30 30 20 36 00 25 a4 10 00 00 1a
-descriptor 2:    0c 12 56 5a 50 00 19 30 30 20 36 00 25 a4 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 58 58 33 31 47 80 42 31 33 33 58 57 31
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20
-extensions:      00
-checksum:        76
+----------------
 
-EDID version: 1.3
-Manufacturer: AUO Model 112c Serial Number --
-Made in week 1 of 2008
-Digital display
-Maximum image size: 29 cm x 16 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5849, 0.3349
-  Green: 0.3300, 0.5751
-  Blue:  0.1552, 0.1298
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 69.300 MHz, 293 mm x 164 mm
-               1366 1414 1446 1456 hborder 0
-                768  771  777  793 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 47596 Hz
-Detailed mode: Clock 46.200 MHz, 293 mm x 164 mm
-               1366 1414 1446 1456 hborder 0
-                768  771  777  793 vborder 0
-               +hsync -vsync 
-               VertFreq: 40 Hz, HorFreq: 31730 Hz
-ASCII string: XX31G
-Manufacturer-specified data, tag 0
-Checksum: 0x76 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 10
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 4396
+    Made in: week 1 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 16 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5849, 0.3349
+    Green: 0.3300, 0.5751
+    Blue : 0.1552, 0.1298
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.020 Hz 683:384  47.596 kHz  69.300 MHz (293 mm x 164 mm)
+                 Hfront   48 Hsync  32 Hback  10 Hpol P
+                 Vfront    3 Vsync   6 Vback  16 Vpol N
+    DTD 2:  1366x768    40.014 Hz 683:384  31.731 kHz  46.200 MHz (293 mm x 164 mm)
+                 Hfront   48 Hsync  32 Hback  10 Hpol P
+                 Vfront    3 Vsync   6 Vback  16 Vpol N
+    Alphanumeric Data String: 'XX31G'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20 '..............  '
+Checksum: 0x76

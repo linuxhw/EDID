@@ -1,147 +1,140 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff005262120101010101
-ff180103805d34780a0dc9a057479827
-12484c21080081800101010101010101
-010101010101023a80d072382d40102c
-4580a20b3200001e662150b051001b30
-407036009e0b3200001e000000fc0054
-4f53484942412d54560a2020000000fd
-00173d0f440f000a2020202020200194
-020336f0521f10202122130414051211
-03021615070601290907071507503e07
-c074030c004000382de06d6d7272d005
-0140007740008c0ad090204031200c40
-5500b90b22000018011d80d0721c1620
-102c2580a20b3200009e011d00bc52d0
-1e20b8285540a20b3200001e0e1f0080
-51001e3040803700680b3200001c0096
+00 ff ff ff ff ff ff 00 52 62 12 01 01 01 01 01
+ff 18 01 03 80 5d 34 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 21 08 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 d0 72 38 2d 40 10 2c
+45 80 a2 0b 32 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 9e 0b 32 00 00 1e 00 00 00 fc 00 54
+4f 53 48 49 42 41 2d 54 56 0a 20 20 00 00 00 fd
+00 17 3d 0f 44 0f 00 0a 20 20 20 20 20 20 01 94
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   52 62 12 01 01 01 01 01 ff 18
-version:         01 03
-basic params:    80 5d 34 78 0a
-chroma info:     0d c9 a0 57 47 98 27 12 48 4c
-established:     21 08 00
-standard:        81 80 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 d0 72 38 2d 40 10 2c 45 80 a2 0b 32 00 00 1e
-descriptor 2:    66 21 50 b0 51 00 1b 30 40 70 36 00 9e 0b 32 00 00 1e
-descriptor 3:    00 00 00 fc 00 54 4f 53 48 49 42 41 2d 54 56 0a 20 20
-descriptor 4:    00 00 00 fd 00 17 3d 0f 44 0f 00 0a 20 20 20 20 20 20
-extensions:      01
-checksum:        94
+02 03 36 f0 52 1f 10 20 21 22 13 04 14 05 12 11
+03 02 16 15 07 06 01 29 09 07 07 15 07 50 3e 07
+c0 74 03 0c 00 40 00 38 2d e0 6d 6d 72 72 d0 05
+01 40 00 77 40 00 8c 0a d0 90 20 40 31 20 0c 40
+55 00 b9 0b 22 00 00 18 01 1d 80 d0 72 1c 16 20
+10 2c 25 80 a2 0b 32 00 00 9e 01 1d 00 bc 52 d0
+1e 20 b8 28 55 40 a2 0b 32 00 00 1e 0e 1f 00 80
+51 00 1e 30 40 80 37 00 68 0b 32 00 00 1c 00 96
 
-EDID version: 1.3
-Manufacturer: TSB Model 112 Serial Number --
-Digital display
-Maximum image size: 93 cm x 52 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6250, 0.3398
-  Green: 0.2802, 0.5947
-  Blue:  0.1552, 0.0703
-  White: 0.2832, 0.2978
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-Detailed mode: Clock 148.500 MHz, 930 mm x 523 mm
-               1920 2448 2492 2640 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 50 Hz, HorFreq: 56250 Hz
-Detailed mode: Clock 85.500 MHz, 926 mm x 523 mm
-               1360 1424 1536 1792 hborder 0
-                768  771  777  795 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 47712 Hz
-Monitor name: TOSHIBA-TV
-Monitor ranges (GTF): 23-61Hz V, 15-68kHz H, max dotclock 150MHz
-Has 1 extension blocks
-Checksum: 0x94 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-50 bytes of CTA data
-  Video data block
-    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC  32 1920x1080@24Hz 16:9  HorFreq: 27000 Hz Clock: 74.250 MHz
-    VIC  33 1920x1080@25Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
-    VIC  34 1920x1080@30Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  20 1920x1080i@50Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
-    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  17 720x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC  22 1440x576i@50Hz 16:9  HorFreq: 15625 Hz Clock: 27.000 MHz
-    VIC  21 1440x576i@50Hz 4:3  HorFreq: 15625 Hz Clock: 27.000 MHz
-    VIC   7 1440x480i@60Hz 16:9  HorFreq: 15734 Hz Clock: 27.000 MHz
-    VIC   6 1440x480i@60Hz 4:3  HorFreq: 15734 Hz Clock: 27.000 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: TSB
+    Model: 274
+    Serial Number: ...
+    Model year: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 93 cm x 52 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz (930 mm x 523 mm)
+                 Hfront  528 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 2:  1360x768    60.015 Hz  85:48   47.712 kHz  85.500 MHz (926 mm x 523 mm)
+                 Hfront   64 Hsync 112 Hback 256 Hpol P
+                 Vfront    3 Vsync   6 Vback  18 Vpol P
+    Display Product Name: 'TOSHIBA-TV'
+  Display Range Limits:
+    Monitor ranges (GTF): 23-61 Hz V, 15-68 kHz H, max dotclock 150 MHz
+  Extension blocks: 1
+Checksum: 0x94
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans PC formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+    VIC  33:  1920x1080   25.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC  34:  1920x1080   30.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
+    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC  22:  1440x576i   50.000 Hz  16:9    15.625 kHz  27.000 MHz
+    VIC  21:  1440x576i   50.000 Hz   4:3    15.625 kHz  27.000 MHz
+    VIC   7:  1440x480i   59.940 Hz  16:9    15.734 kHz  27.000 MHz
+    VIC   6:  1440x480i   59.940 Hz   4:3    15.734 kHz  27.000 MHz
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-    AC-3, max channels 6
+    AC-3:
+      Max channels: 6
       Supported sample rates (kHz): 48 44.1 32
-      Maximum bit rate: 640 kHz
-    DTS, max channels 7
+      Maximum bit rate: 640 kb/s
+    DTS:
+      Max channels: 7
       Supported sample rates (kHz): 48 44.1 32
-      Maximum bit rate: 1536 kHz
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 4.0.0.0
+      Maximum bit rate: 1536 kb/s
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 4.0.0.0
     DC_36bit
     DC_30bit
     DC_Y444
-    Maximum TMDS clock: 225MHz
-    Video latency: 109
-    Audio latency: 109
-    Interlaced video latency: 114
-    Interlaced audio latency: 114
+    Maximum TMDS clock: 225 MHz
+    Video latency: 219 ms
+    Audio latency: 219 ms
+    Interlaced video latency: 229 ms
+    Interlaced audio latency: 229 ms
     Extended HDMI video details:
       3D present
       3D-capable-VIC mask present
-      Base EDID image size is in units of 1cm
+      Base EDID image size is in units of 1 cm
       3D: Side-by-side (half, horizontal)
       3D: Top-and-bottom
-      3D VIC indices: 0 1 2 4 5 6
-      VIC index 4 supports frame packing
-Underscans PC formats by default
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-0 native detailed modes
-Detailed mode: Clock 27.000 MHz, 697 mm x 523 mm
-                720  732  796  864 hborder 0
-                576  581  586  625 vborder 0
-               -hsync -vsync 
-               VertFreq: 50 Hz, HorFreq: 31250 Hz
-Detailed mode: Clock 74.250 MHz, 930 mm x 523 mm
-               1920 2448 2492 2640 hborder 0
-                540  542  547  562 vborder 0
-               +hsync +vsync interlaced 
-               VertFreq: 50 Hz, HorFreq: 28125 Hz
-Detailed mode: Clock 74.250 MHz, 930 mm x 523 mm
-               1280 1720 1760 1980 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 50 Hz, HorFreq: 37500 Hz
-Detailed mode: Clock 79.500 MHz, 872 mm x 523 mm
-               1280 1344 1472 1664 hborder 0
-                768  771  778  798 vborder 0
-               -hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 47776 Hz
-Checksum: 0x96 (valid)
-
-EDID block does not conform at all!
-	Bad year of manufacture
-	Bad week of manufacture
+      3D VIC indices that support these capabilities:
+        VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+        VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+        VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+        VIC  34:  1920x1080   30.000 Hz  16:9    33.750 kHz  74.250 MHz
+        VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+        VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+      3D VIC indices with specific capabilities:
+        VIC  34:  1920x1080   30.000 Hz  16:9    33.750 kHz  74.250 MHz (frame packing)
+  Detailed Timing Descriptors:
+    DTD 3:   720x576    50.000 Hz   5:4    31.250 kHz  27.000 MHz (697 mm x 523 mm)
+                 Hfront   12 Hsync  64 Hback  68 Hpol N
+                 Vfront    5 Vsync   5 Vback  39 Vpol N
+    DTD 4:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz (930 mm x 523 mm)
+                 Hfront  528 Hsync  44 Hback 148 Hpol P
+                 Vfront    2 Vsync   5 Vback  15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback  15 Vpol P Vback  +0.5 Even Field
+    DTD 5:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz (930 mm x 523 mm)
+                 Hfront  440 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+    DTD 6:  1280x768    59.870 Hz   5:3    47.776 kHz  79.500 MHz (872 mm x 523 mm)
+                 Hfront   64 Hsync 128 Hback 192 Hpol N
+                 Vfront    3 Vsync   7 Vback  20 Vpol P
+Checksum: 0x96

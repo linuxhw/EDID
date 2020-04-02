@@ -1,57 +1,43 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004a8b362178563412
-01160103812b1878ea64b5ab5238ab25
-13505400000001010101010101010101
-010101010101a032403062846430f00c
-ee05b2ec1000001c0000001000000000
-00000000000000000000000000100048
-5020416c6c2d496e2d4f6e6500000010
-00384c1e53100a0a0a0a0a0a0a0a00a2
+00 ff ff ff ff ff ff 00 4a 8b 36 21 78 56 34 12
+01 16 01 03 81 2b 18 78 ea 64 b5 ab 52 38 ab 25
+13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a0 32 40 30 62 84 64 30 f0 0c
+ee 05 b2 ec 10 00 00 1c 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 10 00 48
+50 20 41 6c 6c 2d 49 6e 2d 4f 6e 65 00 00 00 10
+00 38 4c 1e 53 10 0a 0a 0a 0a 0a 0a 0a 0a 00 a2
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4a 8b 36 21 78 56 34 12 01 16
-version:         01 03
-basic params:    81 2b 18 78 ea
-chroma info:     64 b5 ab 52 38 ab 25 13 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    a0 32 40 30 62 84 64 30 f0 0c ee 05 b2 ec 10 00 00 1c
-descriptor 2:    00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 10 00 48 50 20 41 6c 6c 2d 49 6e 2d 4f 6e 65
-descriptor 4:    00 00 00 10 00 38 4c 1e 53 10 0a 0a 0a 0a 0a 0a 0a 0a
-extensions:      00
-checksum:        a2
+----------------
 
-EDID version: 1.3
-Manufacturer: RTK Model 2136 Serial Number --
-Made in week 1 of 2012
-Digital display
-DFP 1.x compatible TMDS
-Maximum image size: 43 cm x 24 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6689, 0.3222
-  Green: 0.2197, 0.6679
-  Blue:  0.1464, 0.0771
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 129.600 MHz, 434 mm x 236 mm
-               1600 1840 1852 2160 hborder 0
-                900  930  960 1000 vborder 0
-               -hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 60000 Hz
-Dummy block
-Dummy block
-Dummy block
-Checksum: 0xa2 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-EDID block does not conform at all!
-	Dummy block filled with garbage
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: RTK
+    Model: 8502
+    Serial Number: ...
+    Made in: week 1 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 43 cm x 24 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6689, 0.3222
+    Green: 0.2197, 0.6679
+    Blue : 0.1464, 0.0771
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.000 Hz  16:9    60.000 kHz 129.600 MHz (434 mm x 236 mm)
+                 Hfront  240 Hsync  12 Hback 308 Hpol N
+                 Vfront   30 Vsync  30 Vback  40 Vpol P
+    Dummy Descriptor:
+    Dummy Descriptor:
+    Dummy Descriptor:
+Checksum: 0xa2

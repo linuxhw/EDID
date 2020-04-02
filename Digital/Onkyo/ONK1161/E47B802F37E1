@@ -1,135 +1,130 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff003dcb611100000000
-001b010380a05a782aec6ba056479c25
-10484a27cf000101010181408180818f
-01010101a9400e1f008051001e30c080
-4704a05a0000001c000000fc00415620
-52656365697665720a20000000fd0031
-4c0f5108000a20202020202000000000
-000000000000000000000000000001f5
-020337704b1405130412031102019f90
-3b097f070f7f071707503f06c04d0200
-5706015f7e035f7e01677f01834f0000
-66030c00260080000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000070
+00 ff ff ff ff ff ff 00 3d cb 61 11 00 00 00 00
+00 1b 01 03 80 a0 5a 78 2a ec 6b a0 56 47 9c 25
+10 48 4a 27 cf 00 01 01 01 01 81 40 81 80 81 8f
+01 01 01 01 a9 40 0e 1f 00 80 51 00 1e 30 c0 80
+47 04 a0 5a 00 00 00 1c 00 00 00 fc 00 41 56 20
+52 65 63 65 69 76 65 72 0a 20 00 00 00 fd 00 31
+4c 0f 51 08 00 0a 20 20 20 20 20 20 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 f5
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   3d cb 61 11 00 00 00 00 00 1b
-version:         01 03
-basic params:    80 a0 5a 78 2a
-chroma info:     ec 6b a0 56 47 9c 25 10 48 4a
-established:     27 cf 00
-standard:        01 01 01 01 81 40 81 80 81 8f 01 01 01 01 a9 40
-descriptor 1:    0e 1f 00 80 51 00 1e 30 c0 80 47 04 a0 5a 00 00 00 1c
-descriptor 2:    00 00 00 fc 00 41 56 20 52 65 63 65 69 76 65 72 0a 20
-descriptor 3:    00 00 00 fd 00 31 4c 0f 51 08 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      01
-checksum:        f5
+02 03 37 70 4b 14 05 13 04 12 03 11 02 01 9f 90
+3b 09 7f 07 0f 7f 07 17 07 50 3f 06 c0 4d 02 00
+57 06 01 5f 7e 03 5f 7e 01 67 7f 01 83 4f 00 00
+66 03 0c 00 26 00 80 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 70
 
-EDID version: 1.3
-Manufacturer: ONK Model 1161 Serial Number --
-Made in year 2017
-Digital display
-Maximum image size: 160 cm x 90 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6279, 0.3378
-  Green: 0.2802, 0.6093
-  Blue:  0.1455, 0.0644
-  White: 0.2832, 0.2919
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
-Detailed mode: Clock 79.500 MHz, 160 mm x 90 mm
-               1280 1472 1600 1664 hborder 0
-                768  788  795  798 vborder 0
-               -hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 47776 Hz
-Monitor name: AV Receiver
-Monitor ranges (GTF): 49-76Hz V, 15-81kHz H, max dotclock 80MHz
-Manufacturer-specified data, tag 0
-Has 1 extension blocks
-Checksum: 0xf5 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-51 bytes of CTA data
-  Video data block
-    VIC  20 1920x1080i@50Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
-    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC  17 720x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-    VIC  31 1920x1080@50Hz 16:9 (native) HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ONK
+    Model: 4449
+    Made in: 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 160 cm x 90 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6279, 0.3378
+    Green: 0.2802, 0.6093
+    Blue : 0.1455, 0.0644
+    White: 0.2832, 0.2919
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x768    59.870 Hz   5:3    47.776 kHz  79.500 MHz (160 mm x 90 mm)
+                 Hfront  192 Hsync 128 Hback  64 Hpol N
+                 Vfront   20 Vsync   7 Vback   3 Vpol P
+    Display Product Name: 'AV Receiver'
+  Display Range Limits:
+    Monitor ranges (GTF): 49-76 Hz V, 15-81 kHz H, max dotclock 80 MHz
+    Empty Descriptor
+  Extension blocks: 1
+Checksum: 0xf5
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz (native)
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-    Linear PCM, max channels 8
+    Linear PCM:
+      Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-    AC-3, max channels 8
+    AC-3:
+      Max channels: 8
       Supported sample rates (kHz): 48 44.1 32
-      Maximum bit rate: 640 kHz
-    DTS, max channels 8
+      Maximum bit rate: 640 kb/s
+    DTS:
+      Max channels: 8
       Supported sample rates (kHz): 48 44.1
-      Maximum bit rate: 1536 kHz
-    One Bit Audio, max channels 6
+      Maximum bit rate: 1536 kb/s
+    One Bit Audio:
+      Max channels: 6
       Supported sample rates (kHz): 44.1
-    Dolby Digital+, max channels 8
+    Dolby Digital+:
+      Max channels: 8
       Supported sample rates (kHz): 48 44.1
-    DTS-HD, max channels 8
+      Supports Joint Object Coding
+    DTS-HD:
+      Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
-    DTS-HD, max channels 8
+    DTS-HD:
+      Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
-    MAT (MLP), max channels 8
+    MAT (MLP):
+      Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-      LFE - Low Frequency Effects
-      FC - Front Center
-      BL/BR - Back Left/Right
-      RLC/RRC - Rear Left/Right of Center
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 2.6.0.0
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+    LFE1 - Low Frequency Effects 1
+    FC - Front Center
+    BL/BR - Back Left/Right
+    RLC/RRC - Rear Left/Right of Center (Deprecated)
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.6.0.0
     Supports_AI
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-0 native detailed modes
-Checksum: 0x70 (valid)
-
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 50 - 75 Hz
-  Horizontal Freq: 28125 - 80000 Hz
-  Maximum Clock: 162.000 MHz
-
-
+Checksum: 0x70

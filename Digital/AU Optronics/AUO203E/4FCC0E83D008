@@ -1,55 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006af3e2000000000
-21130104901f117802ccce9958508e26
-244b5300000001010101010101010101
-010101010101403840ee63841430402a
-330035ae100000180000000f00000000
-00000000000000000020000000fe0041
-554f0a202020202020202020000000fe
-004231343052573032205630200a00ba
+00 ff ff ff ff ff ff 00 06 af 3e 20 00 00 00 00
+21 13 01 04 90 1f 11 78 02 cc ce 99 58 50 8e 26
+24 4b 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 40 38 40 ee 63 84 14 30 40 2a
+33 00 35 ae 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 34 30 52 57 30 32 20 56 30 20 0a 00 ba
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 af 3e 20 00 00 00 00 21 13
-version:         01 04
-basic params:    90 1f 11 78 02
-chroma info:     cc ce 99 58 50 8e 26 24 4b 53
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    40 38 40 ee 63 84 14 30 40 2a 33 00 35 ae 10 00 00 18
-descriptor 2:    00 00 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20
-descriptor 3:    00 00 00 fe 00 41 55 4f 0a 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 42 31 34 30 52 57 30 32 20 56 30 20 0a
-extensions:      00
-checksum:        ba
+----------------
 
-EDID version: 1.4
-Manufacturer: AUO Model 203e Serial Number --
-Made in week 33 of 2009
-Digital display
-6 bits per primary color channel
-Digital interface is not defined
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6005, 0.3437
-  Green: 0.3154, 0.5546
-  Blue:  0.1513, 0.1406
-  White: 0.2958, 0.3261
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 144.000 MHz, 309 mm x 174 mm
-               1600 1664 1706 2606 hborder 0
-                900  903  906  920 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 55257 Hz
-Manufacturer-specified data, tag 15
-ASCII string: AUO
-ASCII string: B140RW02 V0 
-Checksum: 0xba (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 8254
+    Made in: week 33 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6005, 0.3437
+    Green: 0.3154, 0.5546
+    Blue : 0.1513, 0.1406
+    White: 0.2958, 0.3261
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.062 Hz  16:9    55.257 kHz 144.000 MHz (309 mm x 174 mm)
+                 Hfront   64 Hsync  42 Hback 900 Hpol N
+                 Vfront    3 Vsync   3 Vback  14 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B140RW02 V0 '
+Checksum: 0xba

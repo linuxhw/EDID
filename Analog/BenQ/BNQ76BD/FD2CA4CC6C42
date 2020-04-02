@@ -1,74 +1,65 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009d1bd76561f0000
-071101036c261e78ea6d66a25a4c9d23
-134f54bdef80714f81908180818c0101
-010101010101302a009851002a403070
-1300782d1100001ed50980a0205e6310
-10605208782d1100001a000000fd0038
-4c1f530e000a202020202020000000fc
-0042656e51204650393147580a2000df
+00 ff ff ff ff ff ff 00 09 d1 bd 76 56 1f 00 00
+07 11 01 03 6c 26 1e 78 ea 6d 66 a2 5a 4c 9d 23
+13 4f 54 bd ef 80 71 4f 81 90 81 80 81 8c 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e d5 09 80 a0 20 5e 63 10
+10 60 52 08 78 2d 11 00 00 1a 00 00 00 fd 00 38
+4c 1f 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 46 50 39 31 47 58 0a 20 00 df
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 d1 bd 76 56 1f 00 00 07 11
-version:         01 03
-basic params:    6c 26 1e 78 ea
-chroma info:     6d 66 a2 5a 4c 9d 23 13 4f 54
-established:     bd ef 80
-standard:        71 4f 81 90 81 80 81 8c 01 01 01 01 01 01 01 01
-descriptor 1:    30 2a 00 98 51 00 2a 40 30 70 13 00 78 2d 11 00 00 1e
-descriptor 2:    d5 09 80 a0 20 5e 63 10 10 60 52 08 78 2d 11 00 00 1a
-descriptor 3:    00 00 00 fd 00 38 4c 1f 53 0e 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 42 65 6e 51 20 46 50 39 31 47 58 0a 20
-extensions:      00
-checksum:        df
+----------------
 
-EDID version: 1.3
-Manufacturer: BNQ Model 76bd Serial Number --
-Made in week 7 of 2007
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate Composite 
-Maximum image size: 38 cm x 30 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6337, 0.3535
-  Green: 0.2998, 0.6142
-  Blue:  0.1376, 0.0761
-  White: 0.3095, 0.3300
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-  1152x870@75Hz 192:145 HorFreq: 67500 Hz Clock: 108.000 MHz
-Standard timings supported:
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1280x1024@76Hz 5:4
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1280x1024@72Hz 5:4
-Detailed mode: Clock 108.000 MHz, 376 mm x 301 mm
-               1280 1328 1440 1688 hborder 0
-               1024 1025 1028 1066 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 63981 Hz
-Detailed mode: Clock 25.170 MHz, 376 mm x 301 mm
-                640  656  752  800 hborder 0
-                350  387  389  449 vborder 0
-               +hsync -vsync 
-               VertFreq: 70 Hz, HorFreq: 31462 Hz
-Monitor ranges (GTF): 56-76Hz V, 31-83kHz H, max dotclock 140MHz
-Monitor name: BenQ FP91GX
-Checksum: 0xdf (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: BNQ
+    Model: 30397
+    Serial Number: ...
+    Made in: week 7 of 2007
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate Composite
+    Maximum image size: 38 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6337, 0.3535
+    Green: 0.2998, 0.6142
+    Blue : 0.1376, 0.0761
+    White: 0.3095, 0.3300
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    Apple   :   640x480    66.667 Hz   4:3    35.000 kHz  30.240 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    Apple   :   832x624    74.551 Hz   4:3    49.726 kHz  57.284 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+    Apple   :  1152x870    75.062 Hz 192:145  68.681 kHz 100.000 MHz
+  Standard Timings:
+    DMT 0x15:  1152x864    75.000 Hz   4:3    67.500 kHz 108.000 MHz
+    GTF     :  1280x1024   76.000 Hz   5:4    81.320 kHz 141.822 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    GTF     :  1280x1024   72.000 Hz   5:4    76.824 kHz 132.752 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz (376 mm x 301 mm)
+                 Hfront   48 Hsync 112 Hback 248 Hpol P
+                 Vfront    1 Vsync   3 Vback  38 Vpol P
+    DTD 2:   640x350    70.072 Hz  64:35   31.462 kHz  25.170 MHz (376 mm x 301 mm)
+                 Hfront   16 Hsync  96 Hback  48 Hpol P
+                 Vfront   37 Vsync   2 Vback  60 Vpol N
+  Display Range Limits:
+    Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 140 MHz
+    Display Product Name: 'BenQ FP91GX'
+Checksum: 0xdf

@@ -1,60 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006afec4000000000
-291701049522137802bbf59455549027
-23505400000001010101010101010101
-010101010101ce1d56c050003030080a
-310058c11000001ad81756c050003030
-080a310058c11000001a000000fe0057
-36344336804231353658544e00000000
-00004121940111000009010a202000c3
+00 ff ff ff ff ff ff 00 06 af ec 40 00 00 00 00
+29 17 01 04 95 22 13 78 02 bb f5 94 55 54 90 27
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 c0 50 00 30 30 08 0a
+31 00 58 c1 10 00 00 1a d8 17 56 c0 50 00 30 30
+08 0a 31 00 58 c1 10 00 00 1a 00 00 00 fe 00 57
+36 34 43 36 80 42 31 35 36 58 54 4e 00 00 00 00
+00 00 41 21 94 01 11 00 00 09 01 0a 20 20 00 c3
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 af ec 40 00 00 00 00 29 17
-version:         01 04
-basic params:    95 22 13 78 02
-chroma info:     bb f5 94 55 54 90 27 23 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    ce 1d 56 c0 50 00 30 30 08 0a 31 00 58 c1 10 00 00 1a
-descriptor 2:    d8 17 56 c0 50 00 30 30 08 0a 31 00 58 c1 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 57 36 34 43 36 80 42 31 35 36 58 54 4e
-descriptor 4:    00 00 00 00 00 00 41 21 94 01 11 00 00 09 01 0a 20 20
-extensions:      00
-checksum:        c3
+----------------
 
-EDID version: 1.4
-Manufacturer: AUO Model 40ec Serial Number --
-Made in week 41 of 2013
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5800, 0.3349
-  Green: 0.3300, 0.5654
-  Blue:  0.1552, 0.1396
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 76.300 MHz, 344 mm x 193 mm
-               1366 1374 1384 1558 hborder 0
-                768  771  772  816 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48973 Hz
-Detailed mode: Clock 61.040 MHz, 344 mm x 193 mm
-               1366 1374 1384 1558 hborder 0
-                768  771  772  816 vborder 0
-               +hsync -vsync 
-               VertFreq: 48 Hz, HorFreq: 39178 Hz
-ASCII string: W64C6
-Manufacturer-specified data, tag 0
-Checksum: 0xc3 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 16620
+    Made in: week 41 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5800, 0.3349
+    Green: 0.3300, 0.5654
+    Blue : 0.1552, 0.1396
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.016 Hz 683:384  48.973 kHz  76.300 MHz (344 mm x 193 mm)
+                 Hfront    8 Hsync  10 Hback 174 Hpol P
+                 Vfront    3 Vsync   1 Vback  44 Vpol N
+    DTD 2:  1366x768    48.013 Hz 683:384  39.178 kHz  61.040 MHz (344 mm x 193 mm)
+                 Hfront    8 Hsync  10 Hback 174 Hpol P
+                 Vfront    3 Vsync   1 Vback  44 Vpol N
+    Alphanumeric Data String: 'W64C6'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 94 01 11 00 00 09 01 0a 20 20 '....A!........  '
+Checksum: 0xc3

@@ -1,68 +1,51 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0022f0ff0ae5992303
-1a050100281b1461e8c2f99e574e9927
-10484cafd80000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000009e
+00 ff ff ff ff ff ff 00 22 f0 ff 0a e5 99 23 03
+1a 05 01 00 28 1b 14 61 e8 c2 f9 9e 57 4e 99 27
+10 48 4c af d8 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9e
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 f0 ff 0a e5 99 23 03 1a 05
-version:         01 00
-basic params:    28 1b 14 61 e8
-chroma info:     c2 f9 9e 57 4e 99 27 10 48 4c
-established:     af d8 00
-standard:        00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 1:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      00
-checksum:        9e
+----------------
 
-EDID version: 1.0
-Manufacturer: HWP Model aff Serial Number --
-Analog display, Input voltage level: 0.714/0.286 V
-Sync: Separate 
-Maximum image size: 27 cm x 20 cm
-Gamma: 1.97
-DPMS levels: Standby Suspend Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6201, 0.3398
-  Green: 0.3046, 0.5996
-  Blue:  0.1552, 0.0654
-  White: 0.2832, 0.2978
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1280x768i@87Hz 5:3 HorFreq: 35522 Hz Clock: 44.900 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 0
-Checksum: 0x9e (valid)
-EDID block does NOT conform to EDID 1.0!
-	Has descriptor blocks other than detailed timings
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.0
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 2815
+    Serial Number: ...
+    Made in: week 26 of 1995
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.714/0.286 V
+    Sync: Separate
+    Maximum image size: 27 cm x 20 cm
+    Gamma: 1.97
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6201, 0.3398
+    Green: 0.3046, 0.5996
+    Blue : 0.1552, 0.0654
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x0f:  1024x768i   86.958 Hz   4:3    35.522 kHz  44.900 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+  Detailed Timing Descriptors:
+    Empty Descriptor
+    Empty Descriptor
+    Empty Descriptor
+    Empty Descriptor
+Checksum: 0x9e

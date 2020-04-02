@@ -1,62 +1,54 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001ab37000fa880000
-310a010209241b80e85e89a353469824
-11484ca44300455961598199a94f0101
-010101010101863d00c05100304040a0
-1300600811000000000000ff00594552
-4c3033353036360a2020000000fd0032
-961e6015000a202020202020000000fc
-00433939320a20202020202020200004
+00 ff ff ff ff ff ff 00 1a b3 70 00 fa 88 00 00
+31 0a 01 02 09 24 1b 80 e8 5e 89 a3 53 46 98 24
+11 48 4c a4 43 00 45 59 61 59 81 99 a9 4f 01 01
+01 01 01 01 01 01 86 3d 00 c0 51 00 30 40 40 a0
+13 00 60 08 11 00 00 00 00 00 00 ff 00 59 45 52
+4c 30 33 35 30 36 36 0a 20 20 00 00 00 fd 00 32
+96 1e 60 15 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 39 39 32 0a 20 20 20 20 20 20 20 20 00 04
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1a b3 70 00 fa 88 00 00 31 0a
-version:         01 02
-basic params:    09 24 1b 80 e8
-chroma info:     5e 89 a3 53 46 98 24 11 48 4c
-established:     a4 43 00
-standard:        45 59 61 59 81 99 a9 4f 01 01 01 01 01 01 01 01
-descriptor 1:    86 3d 00 c0 51 00 30 40 40 a0 13 00 60 08 11 00 00 00
-descriptor 2:    00 00 00 ff 00 59 45 52 4c 30 33 35 30 36 36 0a 20 20
-descriptor 3:    00 00 00 fd 00 32 96 1e 60 15 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 43 39 39 32 0a 20 20 20 20 20 20 20 20
-extensions:      00
-checksum:        04
+----------------
 
-EDID version: 1.2
-Manufacturer: FUS Model 70 Serial Number --
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate Serration 
-Maximum image size: 36 cm x 27 cm
-Gamma: 2.28
-DPMS levels: Standby Suspend Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6376, 0.3251
-  Green: 0.2763, 0.5957
-  Blue:  0.1425, 0.0664
-  White: 0.2832, 0.2978
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  800x600@85Hz 4:3 HorFreq: 53700 Hz Clock: 56.250 MHz
-  1024x768@85Hz 4:3 HorFreq: 68700 Hz Clock: 94.500 MHz
-  1280x1024@85Hz 5:4 HorFreq: 91100 Hz Clock: 157.500 MHz
-  1600x1200@75Hz 4:3 HorFreq: 93800 Hz Clock: 202.500 MHz
-Detailed mode: Clock 157.500 MHz, 352 mm x 264 mm
-               1280 1344 1504 1728 hborder 0
-               1024 1025 1028 1072 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 85 Hz, HorFreq: 91145 Hz
-Serial number: --
-Monitor ranges (GTF): 50-150Hz V, 30-96kHz H, max dotclock 210MHz
-Monitor name: C992
-Checksum: 0x4 (valid)
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: FUS
+    Model: 112
+    Serial Number: ...
+    Made in: week 49 of 2000
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate Serration
+    Maximum image size: 36 cm x 27 cm
+    Gamma: 2.28
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6376, 0.3251
+    Green: 0.2763, 0.5957
+    Blue : 0.1425, 0.0664
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x0c:   800x600    85.061 Hz   4:3    53.674 kHz  56.250 MHz
+    DMT 0x13:  1024x768    84.997 Hz   4:3    68.677 kHz  94.500 MHz
+    DMT 0x25:  1280x1024   85.024 Hz   5:4    91.146 kHz 157.500 MHz
+    DMT 0x36:  1600x1200   75.000 Hz   4:3    93.750 kHz 202.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x1024   85.024 Hz   5:4    91.146 kHz 157.500 MHz (analog composite, sync-on-green, 352 mm x 264 mm)
+                 Hfront   64 Hsync 160 Hback 224 Hpol N
+                 Vfront    1 Vsync   3 Vback  44 Vpol N
+    Display Product Serial Number: ...
+  Display Range Limits:
+    Monitor ranges (GTF): 50-150 Hz V, 30-96 kHz H, max dotclock 210 MHz
+    Display Product Name: 'C992'
+Checksum: 0x4

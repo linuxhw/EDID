@@ -1,55 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000daf111100000000
-1814010390190e780afe75925b569127
-1f505400000001010101010101010101
-010101010101121b566c500010302016
-240000901000001a0000000000000000
-00000000000000000000000000fe0048
-46394432804e31313642360a00000000
-00000000000000000001010a2020007c
+00 ff ff ff ff ff ff 00 0d af 11 11 00 00 00 00
+18 14 01 03 90 19 0e 78 0a fe 75 92 5b 56 91 27
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 56 6c 50 00 10 30 20 16
+24 00 00 90 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 48
+46 39 44 32 80 4e 31 31 36 42 36 0a 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 01 0a 20 20 00 7c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0d af 11 11 00 00 00 00 18 14
-version:         01 03
-basic params:    90 19 0e 78 0a
-chroma info:     fe 75 92 5b 56 91 27 1f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    12 1b 56 6c 50 00 10 30 20 16 24 00 00 90 10 00 00 1a
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fe 00 48 46 39 44 32 80 4e 31 31 36 42 36 0a
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20
-extensions:      00
-checksum:        7c
+----------------
 
-EDID version: 1.3
-Manufacturer: CMO Model 1111 Serial Number --
-Made in week 24 of 2010
-Digital display
-Maximum image size: 25 cm x 14 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5732, 0.3583
-  Green: 0.3388, 0.5683
-  Blue:  0.1533, 0.1240
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 69.300 MHz, 256 mm x 144 mm
-               1366 1398 1420 1474 hborder 0
-                768  770  774  784 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 47014 Hz
-Manufacturer-specified data, tag 0
-ASCII string: HF9D2
-Manufacturer-specified data, tag 0
-Checksum: 0x7c (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 10
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CMO
+    Model: 4369
+    Made in: week 24 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 25 cm x 14 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5732, 0.3583
+    Green: 0.3388, 0.5683
+    Blue : 0.1533, 0.1240
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.968 Hz 683:384  47.015 kHz  69.300 MHz (256 mm x 144 mm)
+                 Hfront   32 Hsync  22 Hback  54 Hpol P
+                 Vfront    2 Vsync   4 Vback  10 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'HF9D2'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20 '..............  '
+Checksum: 0x7c

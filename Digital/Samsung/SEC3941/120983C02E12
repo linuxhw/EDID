@@ -1,53 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004ca3413900000000
-00160103802615780ab3a59d5c599f25
-1a505400000001010101010101010101
-0101010101010a2a4020618432303020
-26007ed6100000190000000f00000000
-00000000001eb4027400000000fe0053
-414d53554e470a2020202020000000fe
-003137334b5430322d5330310a20007a
+00 ff ff ff ff ff ff 00 4c a3 41 39 00 00 00 00
+00 16 01 03 80 26 15 78 0a b3 a5 9d 5c 59 9f 25
+1a 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 0a 2a 40 20 61 84 32 30 30 20
+26 00 7e d6 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 1e b4 02 74 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe
+00 31 37 33 4b 54 30 32 2d 53 30 31 0a 20 00 7a
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c a3 41 39 00 00 00 00 00 16
-version:         01 03
-basic params:    80 26 15 78 0a
-chroma info:     b3 a5 9d 5c 59 9f 25 1a 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    0a 2a 40 20 61 84 32 30 30 20 26 00 7e d6 10 00 00 19
-descriptor 2:    00 00 00 0f 00 00 00 00 00 00 00 00 00 1e b4 02 74 00
-descriptor 3:    00 00 00 fe 00 53 41 4d 53 55 4e 47 0a 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 31 37 33 4b 54 30 32 2d 53 30 31 0a 20
-extensions:      00
-checksum:        7a
+----------------
 
-EDID version: 1.3
-Manufacturer: SEC Model 3941 Serial Number --
-Made in year 2012
-Digital display
-Maximum image size: 38 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6152, 0.3623
-  Green: 0.3476, 0.6240
-  Blue:  0.1464, 0.1035
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 107.620 MHz, 382 mm x 214 mm
-               1600 1648 1680 1888 hborder 0
-                900  902  908  950 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 57002 Hz
-Manufacturer-specified data, tag 15
-ASCII string: SAMSUNG
-ASCII string: 173KT02-S01
-Checksum: 0x7a (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 14657
+    Made in: 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6152, 0.3623
+    Green: 0.3476, 0.6240
+    Blue : 0.1464, 0.1035
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.002 Hz  16:9    57.002 kHz 107.620 MHz (382 mm x 214 mm)
+                 Hfront   48 Hsync  32 Hback 208 Hpol N
+                 Vfront    2 Vsync   6 Vback  42 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 1e b4 02 74 00 '..............t.'
+    Alphanumeric Data String: 'SAMSUNG'
+    Alphanumeric Data String: '173KT02-S01'
+Checksum: 0x7a

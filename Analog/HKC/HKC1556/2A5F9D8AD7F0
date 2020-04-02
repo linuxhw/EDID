@@ -1,70 +1,48 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff002163561500000000
-300c0101681c1580e89119a255499827
-10484ca44c0045590101010101010101
-010101010101000000ff003237343837
-3938340a20202020000000fd0032a01e
-39ff000a202020202020010101010101
-01010101010101010101010101010101
-010101010101010101010101010100a2
+00 ff ff ff ff ff ff 00 21 63 56 15 00 00 00 00
+30 0c 01 01 68 1c 15 80 e8 91 19 a2 55 49 98 27
+10 48 4c a4 4c 00 45 59 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 ff 00 32 37 34 38 37
+39 38 34 0a 20 20 20 20 00 00 00 fd 00 32 a0 1e
+39 ff 00 0a 20 20 20 20 20 20 01 01 01 01 01 01
+01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 01 01 01 01 01 01 01 01 00 a2
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   21 63 56 15 00 00 00 00 30 0c
-version:         01 01
-basic params:    68 1c 15 80 e8
-chroma info:     91 19 a2 55 49 98 27 10 48 4c
-established:     a4 4c 00
-standard:        45 59 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    00 00 00 ff 00 32 37 34 38 37 39 38 34 0a 20 20 20 20
-descriptor 2:    00 00 00 fd 00 32 a0 1e 39 ff 00 0a 20 20 20 20 20 20
-descriptor 3:    01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 4:    01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-extensions:      00
-checksum:        a2
+----------------
 
-EDID version: 1.1
-Manufacturer: HKC Model 1556 Serial Number --
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 28 cm x 21 cm
-Gamma: 2.28
-DPMS levels: Standby Suspend Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6347, 0.3330
-  Green: 0.2851, 0.5947
-  Blue:  0.1523, 0.0634
-  White: 0.2832, 0.2978
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-Standard timings supported:
-  800x600@85Hz 4:3 HorFreq: 53700 Hz Clock: 56.250 MHz
-Serial number: --
-Monitor ranges (GTF): 50-160Hz V, 30-57kHz H, max dotclock 2550MHz
-Detailed mode: Clock 2.570 MHz, 1 mm x 257 mm
-                  1    2    3  258 hborder 1
-                  1    1   18  258 vborder 1
-               -hsync -vsync analog composite 
-               VertFreq: 38 Hz, HorFreq: 9961 Hz
-Detailed mode: Clock 2.570 MHz, 1 mm x 257 mm
-                  1    2    3  258 hborder 1
-                  1    1   18  258 vborder 1
-               -hsync -vsync analog composite 
-               VertFreq: 38 Hz, HorFreq: 9961 Hz
-Checksum: 0xa2 (valid)
-EDID block does NOT conform to EDID 1.0!
-	Has descriptor blocks other than detailed timings
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 38 - 85 Hz
-  Horizontal Freq: 9961 - 56500 Hz
-  Maximum Clock: 75.000 MHz
-EDID block does not conform at all!
-	Bad year of manufacture
-	Invalid detailed timing descriptor ordering
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: HKC
+    Model: 5462
+    Made in: week 48 of 2002
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate
+    Maximum image size: 28 cm x 21 cm
+    Gamma: 2.28
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6347, 0.3330
+    Green: 0.2851, 0.5947
+    Blue : 0.1523, 0.0634
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+  Standard Timings:
+    DMT 0x0c:   800x600    85.061 Hz   4:3    53.674 kHz  56.250 MHz
+  Detailed Timing Descriptors:
+    Display Product Serial Number: ...
+  Display Range Limits:
+    Monitor ranges (GTF): 50-160 Hz V, 30-57 kHz H, max dotclock 2550 MHz
+    Detailed mode: 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 '..................'
+    Detailed mode: 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 '..................'
+Checksum: 0xa2

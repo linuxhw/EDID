@@ -1,62 +1,54 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0022f05a2801010101
-0c140104a5261e8ce6ee91a3544c9926
-0f5054a108008180814081c081000101
-010101010101302a009851002a403070
-13007c2c1100001e000000fd00324c18
-530e000a202020202020000000fc004c
-41313935310a202020202020000000ff
-00434e4b303132313536340a202000e5
+00 ff ff ff ff ff ff 00 22 f0 5a 28 01 01 01 01
+0c 14 01 04 a5 26 1e 8c e6 ee 91 a3 54 4c 99 26
+0f 50 54 a1 08 00 81 80 81 40 81 c0 81 00 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 7c 2c 11 00 00 1e 00 00 00 fd 00 32 4c 18
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+41 31 39 35 31 0a 20 20 20 20 20 20 00 00 00 ff
+00 43 4e 4b 30 31 32 31 35 36 34 0a 20 20 00 e5
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 f0 5a 28 01 01 01 01 0c 14
-version:         01 04
-basic params:    a5 26 1e 8c e6
-chroma info:     ee 91 a3 54 4c 99 26 0f 50 54
-established:     a1 08 00
-standard:        81 80 81 40 81 c0 81 00 01 01 01 01 01 01 01 01
-descriptor 1:    30 2a 00 98 51 00 2a 40 30 70 13 00 7c 2c 11 00 00 1e
-descriptor 2:    00 00 00 fd 00 32 4c 18 53 0e 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 4c 41 31 39 35 31 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 43 4e 4b 30 31 32 31 35 36 34 0a 20 20
-extensions:      00
-checksum:        e5
+----------------
 
-EDID version: 1.4
-Manufacturer: HWP Model 285a Serial Number --
-Made in week 12 of 2010
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 38 cm x 30 cm
-Gamma: 2.40
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1503, 0.0595
-  White: 0.3125, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
-  1280x720@60Hz 16:9
-  1280x800@60Hz 16:10
-Detailed mode: Clock 108.000 MHz, 380 mm x 300 mm
-               1280 1328 1440 1688 hborder 0
-               1024 1025 1028 1066 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 63981 Hz
-Monitor ranges (GTF): 50-76Hz V, 24-83kHz H, max dotclock 140MHz
-Monitor name: LA1951
-Serial number: --
-Checksum: 0xe5 (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 10330
+    Serial Number: ...
+    Made in: week 12 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 38 cm x 30 cm
+    Gamma: 2.40
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz (380 mm x 300 mm)
+                 Hfront   48 Hsync 112 Hback 248 Hpol P
+                 Vfront    1 Vsync   3 Vback  38 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 50-76 Hz V, 24-83 kHz H, max dotclock 140 MHz
+    Display Product Name: 'LA1951'
+    Display Product Serial Number: ...
+Checksum: 0xe5

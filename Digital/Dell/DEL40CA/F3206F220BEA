@@ -1,65 +1,52 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0010acca4001000000
-27180104a5351e78e25460ab5238ab25
-135054010800d1c0a9c0950001018180
-010101010101023a801871382d40582c
-45000f282100001e662156aa51001e30
-468f33000f282100001e000000fc0049
-6e737069726f6e203534353900000000
-00034102990000000002010a2020005a
+00 ff ff ff ff ff ff 00 10 ac ca 40 01 00 00 00
+27 18 01 04 a5 35 1e 78 e2 54 60 ab 52 38 ab 25
+13 50 54 01 08 00 d1 c0 a9 c0 95 00 01 01 81 80
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 0f 28 21 00 00 1e 00 00 00 fc 00 49
+6e 73 70 69 72 6f 6e 20 35 34 35 39 00 00 00 00
+00 03 41 02 99 00 00 00 00 02 01 0a 20 20 00 5a
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   10 ac ca 40 01 00 00 00 27 18
-version:         01 04
-basic params:    a5 35 1e 78 e2
-chroma info:     54 60 ab 52 38 ab 25 13 50 54
-established:     01 08 00
-standard:        d1 c0 a9 c0 95 00 01 01 81 80 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 0f 28 21 00 00 1e
-descriptor 2:    66 21 56 aa 51 00 1e 30 46 8f 33 00 0f 28 21 00 00 1e
-descriptor 3:    00 00 00 fc 00 49 6e 73 70 69 72 6f 6e 20 35 34 35 39
-descriptor 4:    00 00 00 00 00 03 41 02 99 00 00 00 00 02 01 0a 20 20
-extensions:      00
-checksum:        5a
+----------------
 
-EDID version: 1.4
-Manufacturer: DEL Model 40ca Serial Number --
-Made in week 39 of 2014
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 53 cm x 30 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6689, 0.3212
-  Green: 0.2197, 0.6679
-  Blue:  0.1455, 0.0761
-  White: 0.3125, 0.3281
-Established timings supported:
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1920x1080@60Hz 16:9
-  1600x900@60Hz 16:9
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-Detailed mode: Clock 148.500 MHz, 527 mm x 296 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 85.500 MHz, 527 mm x 296 mm
-               1366 1436 1579 1792 hborder 0
-                768  771  774  798 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 47712 Hz
-Manufacturer-specified data, tag 0
-Checksum: 0x5a (valid)
-EDID block does NOT conform to EDID 1.4!
-	Name descriptor not terminated with a newline
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 16586
+    Serial Number: ...
+    Made in: week 39 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 53 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6689, 0.3212
+    Green: 0.2197, 0.6679
+    Blue : 0.1455, 0.0761
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 2:  1366x768    59.790 Hz 683:384  47.712 kHz  85.500 MHz (527 mm x 296 mm)
+                 Hfront   70 Hsync 143 Hback 213 Hpol P
+                 Vfront    3 Vsync   3 Vback  24 Vpol P
+    Display Product Name: 'Inspiron 5459'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 03 41 02 99 00 00 00 00 02 01 0a 20 20 '....A.........  '
+Checksum: 0x5a

@@ -1,60 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e4d90200000000
-00140104902213780a15d59e59509826
-0e505400000001010101010101010101
-0101010101017e3680b070381f403020
-350058c210000018542480b070381f40
-3020350058c210000018000000fe004d
-43364a4e813135365746310a00000000
-000041319e0000000002010a20200030
+00 ff ff ff ff ff ff 00 30 e4 d9 02 00 00 00 00
+00 14 01 04 90 22 13 78 0a 15 d5 9e 59 50 98 26
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 7e 36 80 b0 70 38 1f 40 30 20
+35 00 58 c2 10 00 00 18 54 24 80 b0 70 38 1f 40
+30 20 35 00 58 c2 10 00 00 18 00 00 00 fe 00 4d
+43 36 4a 4e 81 31 35 36 57 46 31 0a 00 00 00 00
+00 00 41 31 9e 00 00 00 00 02 01 0a 20 20 00 30
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 d9 02 00 00 00 00 00 14
-version:         01 04
-basic params:    90 22 13 78 0a
-chroma info:     15 d5 9e 59 50 98 26 0e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    7e 36 80 b0 70 38 1f 40 30 20 35 00 58 c2 10 00 00 18
-descriptor 2:    54 24 80 b0 70 38 1f 40 30 20 35 00 58 c2 10 00 00 18
-descriptor 3:    00 00 00 fe 00 4d 43 36 4a 4e 81 31 35 36 57 46 31 0a
-descriptor 4:    00 00 00 00 00 00 41 31 9e 00 00 00 00 02 01 0a 20 20
-extensions:      00
-checksum:        30
+----------------
 
-EDID version: 1.4
-Manufacturer: LGD Model 2d9 Serial Number --
-Made in year 2010
-Digital display
-6 bits per primary color channel
-Digital interface is not defined
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6171, 0.3486
-  Green: 0.3134, 0.5947
-  Blue:  0.1513, 0.0556
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 139.500 MHz, 344 mm x 194 mm
-               1920 1968 2000 2096 hborder 0
-               1080 1083 1088 1111 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 66555 Hz
-Detailed mode: Clock 93.000 MHz, 344 mm x 194 mm
-               1920 1968 2000 2096 hborder 0
-               1080 1083 1088 1111 vborder 0
-               -hsync -vsync 
-               VertFreq: 39 Hz, HorFreq: 44370 Hz
-ASCII string: MC6JN
-Manufacturer-specified data, tag 0
-Checksum: 0x30 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 729
+    Made in: 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6171, 0.3486
+    Green: 0.3134, 0.5947
+    Blue : 0.1513, 0.0556
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.906 Hz  16:9    66.555 kHz 139.500 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  96 Hpol N
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 2:  1920x1080   39.937 Hz  16:9    44.370 kHz  93.000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  96 Hpol N
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    Alphanumeric Data String: 'MC6JN'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 9e 00 00 00 00 02 01 0a 20 20 '....A1........  '
+Checksum: 0x30

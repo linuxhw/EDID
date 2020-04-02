@@ -1,58 +1,50 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff002264e90399240100
-2e14010380160d780a86269457519027
-214f5400000001010101010101010101
-010101010101941100b0405819203523
-4500dc8100000019161400d840582620
-5d231504dc8100000000000000fe0000
-000000000000000000000000000000fe
-000000000000000000010000000000ec
+00 ff ff ff ff ff ff 00 22 64 e9 03 99 24 01 00
+2e 14 01 03 80 16 0d 78 0a 86 26 94 57 51 90 27
+21 4f 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 94 11 00 b0 40 58 19 20 35 23
+45 00 dc 81 00 00 00 19 16 14 00 d8 40 58 26 20
+5d 23 15 04 dc 81 00 00 00 00 00 00 00 fe 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 ec
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 64 e9 03 99 24 01 00 2e 14
-version:         01 03
-basic params:    80 16 0d 78 0a
-chroma info:     86 26 94 57 51 90 27 21 4f 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    94 11 00 b0 40 58 19 20 35 23 45 00 dc 81 00 00 00 19
-descriptor 2:    16 14 00 d8 40 58 26 20 5d 23 15 04 dc 81 00 00 00 00
-descriptor 3:    00 00 00 fe 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 fe 00 00 00 00 00 00 00 00 00 01 00 00 00 00
-extensions:      00
-checksum:        ec
+----------------
 
-EDID version: 1.3
-Manufacturer: HSD Model 3e9 Serial Number --
-Made in week 46 of 2010
-Digital display
-Maximum image size: 22 cm x 13 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5800, 0.3398
-  Green: 0.3173, 0.5644
-  Blue:  0.1523, 0.1308
-  White: 0.3095, 0.3300
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 45.000 MHz, 220 mm x 129 mm
-               1024 1077 1112 1200 hborder 0
-                600  604  609  625 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 37500 Hz
-Detailed mode: Clock 51.420 MHz, 220 mm x 129 mm
-               1024 1117 1152 1240 hborder 0
-                600  617  622  638 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 64 Hz, HorFreq: 41467 Hz
-ASCII string: 
-ASCII string: 
-Checksum: 0xec (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HSD
+    Model: 1001
+    Serial Number: ...
+    Made in: week 46 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 22 cm x 13 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5800, 0.3398
+    Green: 0.3173, 0.5644
+    Blue : 0.1523, 0.1308
+    White: 0.3095, 0.3300
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x600    60.000 Hz 128:75   37.500 kHz  45.000 MHz (DE timing only, 220 mm x 129 mm)
+                 Hfront   53 Hsync  35 Hback  88 Hpol N
+                 Vfront    4 Vsync   5 Vback  16 Vpol N
+    DTD 2:  1024x600    64.996 Hz 128:75   41.468 kHz  51.420 MHz (DE timing only, 220 mm x 129 mm)
+                 Hfront   93 Hsync  35 Hback  88 Hpol N
+                 Vfront   17 Vsync   5 Vback  16 Vpol N
+    SPWG Module Revision: 0
+    SPWG Descriptor #3:
+      SPWG PC Maker P/N: ''
+      SPWG LCD Supplier EEDID Revision: 0
+      SPWG Manufacturer P/N: ''
+    SPWG Descriptor #4:
+      SMBUS Values: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+      LVDS Channels: 1
+      Panel Self Test Not Present
+Checksum: 0xec

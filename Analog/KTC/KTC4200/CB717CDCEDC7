@@ -1,69 +1,56 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff002e830042c5000000
-2416010368623a78eaf0659857519127
-215054a1080081c081408180a9c0d1c0
-010101010101944380907238284080c8
-3500d7403200001c662150b051001b30
-40703600d7403200001e000000fd002f
-3f1f440f000a202020202020000000fc
-00343254560a202020202020202000e4
+00 ff ff ff ff ff ff 00 2e 83 00 42 c5 00 00 00
+24 16 01 03 68 62 3a 78 ea f0 65 98 57 51 91 27
+21 50 54 a1 08 00 81 c0 81 40 81 80 a9 c0 d1 c0
+01 01 01 01 01 01 94 43 80 90 72 38 28 40 80 c8
+35 00 d7 40 32 00 00 1c 66 21 50 b0 51 00 1b 30
+40 70 36 00 d7 40 32 00 00 1e 00 00 00 fd 00 2f
+3f 1f 44 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 34 32 54 56 0a 20 20 20 20 20 20 20 20 00 e4
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   2e 83 00 42 c5 00 00 00 24 16
-version:         01 03
-basic params:    68 62 3a 78 ea
-chroma info:     f0 65 98 57 51 91 27 21 50 54
-established:     a1 08 00
-standard:        81 c0 81 40 81 80 a9 c0 d1 c0 01 01 01 01 01 01
-descriptor 1:    94 43 80 90 72 38 28 40 80 c8 35 00 d7 40 32 00 00 1c
-descriptor 2:    66 21 50 b0 51 00 1b 30 40 70 36 00 d7 40 32 00 00 1e
-descriptor 3:    00 00 00 fd 00 2f 3f 1f 44 0f 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 34 32 54 56 0a 20 20 20 20 20 20 20 20
-extensions:      00
-checksum:        e4
+----------------
 
-EDID version: 1.3
-Manufacturer: KTC Model 4200 Serial Number --
-Made in week 36 of 2012
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 98 cm x 58 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5966, 0.3427
-  Green: 0.3164, 0.5664
-  Blue:  0.1533, 0.1308
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x720@60Hz 16:9
-  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1600x900@60Hz 16:9
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 173.000 MHz, 983 mm x 576 mm
-               1920 2048 2248 2576 hborder 0
-               1080 1083 1088 1120 vborder 0
-               -hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 67158 Hz
-Detailed mode: Clock 85.500 MHz, 983 mm x 576 mm
-               1360 1424 1536 1792 hborder 0
-                768  771  777  795 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 47712 Hz
-Monitor ranges (GTF): 47-63Hz V, 31-68kHz H, max dotclock 150MHz
-Monitor name: 42TV
-Checksum: 0xe4 (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 59 - 70 Hz
-  Horizontal Freq: 31469 - 67158 Hz
-  Maximum Clock: 173.000 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: KTC
+    Model: 16896
+    Serial Number: ...
+    Made in: week 36 of 2012
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate
+    Maximum image size: 98 cm x 58 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5966, 0.3427
+    Green: 0.3164, 0.5664
+    Blue : 0.1533, 0.1308
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.963 Hz  16:9    67.158 kHz 173.000 MHz (983 mm x 576 mm)
+                 Hfront  128 Hsync 200 Hback 328 Hpol N
+                 Vfront    3 Vsync   5 Vback  32 Vpol P
+    DTD 2:  1360x768    60.015 Hz  85:48   47.712 kHz  85.500 MHz (983 mm x 576 mm)
+                 Hfront   64 Hsync 112 Hback 256 Hpol P
+                 Vfront    3 Vsync   6 Vback  18 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 47-63 Hz V, 31-68 kHz H, max dotclock 150 MHz
+    Display Product Name: '42TV'
+Checksum: 0xe4

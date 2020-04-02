@@ -1,61 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e4580200000000
-00150104802313780a1be59e59509826
-0e505400000001010101010101010101
-010101010101643240b8628424304060
-354059c210000019982140b862842430
-4060354059c210000019000000000000
-00000000000000000000000000000002
-000c49ff0a3c64292d4164000000001f
+00 ff ff ff ff ff ff 00 30 e4 58 02 00 00 00 00
+00 15 01 04 80 23 13 78 0a 1b e5 9e 59 50 98 26
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 32 40 b8 62 84 24 30 40 60
+35 40 59 c2 10 00 00 19 98 21 40 b8 62 84 24 30
+40 60 35 40 59 c2 10 00 00 19 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 49 ff 0a 3c 64 29 2d 41 64 00 00 00 00 1f
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 58 02 00 00 00 00 00 15
-version:         01 04
-basic params:    80 23 13 78 0a
-chroma info:     1b e5 9e 59 50 98 26 0e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    64 32 40 b8 62 84 24 30 40 60 35 40 59 c2 10 00 00 19
-descriptor 2:    98 21 40 b8 62 84 24 30 40 60 35 40 59 c2 10 00 00 19
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 02 00 0c 49 ff 0a 3c 64 29 2d 41 64 00 00 00
-extensions:      00
-checksum:        1f
+----------------
 
-EDID version: 1.4
-Manufacturer: LGD Model 258 Serial Number --
-Made in year 2011
-Digital display
-Color depth is undefined
-Digital interface is not defined
-Maximum image size: 35 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6171, 0.3486
-  Green: 0.3144, 0.5966
-  Blue:  0.1513, 0.0566
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 129.000 MHz, 345 mm x 194 mm
-               1600 1920 2016 2296 hborder 0
-                900  903  908  936 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 56184 Hz
-Detailed mode: Clock 86.000 MHz, 345 mm x 194 mm
-               1600 1920 2016 2296 hborder 0
-                900  903  908  936 vborder 0
-               -hsync -vsync 
-               VertFreq: 40 Hz, HorFreq: 37456 Hz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 2
-Checksum: 0x1f (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-
-
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 600
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Color depth is undefined
+    Digital interface is not defined
+    Maximum image size: 35 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6171, 0.3486
+    Green: 0.3144, 0.5966
+    Blue : 0.1513, 0.0566
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.026 Hz  16:9    56.185 kHz 129.000 MHz (345 mm x 194 mm)
+                 Hfront  320 Hsync  96 Hback 280 Hpol N
+                 Vfront    3 Vsync   5 Vback  28 Vpol N
+    DTD 2:  1600x900    40.018 Hz  16:9    37.456 kHz  86.000 MHz (345 mm x 194 mm)
+                 Hfront  320 Hsync  96 Hback 280 Hpol N
+                 Vfront    3 Vsync   5 Vback  28 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 49 ff 0a 3c 64 29 2d 41 64 00 00 00 '....I..<d)-Ad...'
+Checksum: 0x1f

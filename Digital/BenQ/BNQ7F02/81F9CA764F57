@@ -1,73 +1,63 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009d1027f45540000
-1d15010380341d782e2cc1a45650a128
-0f5054a56b803168317c4568457c6168
-81bc953cd1e8023a801871382d40582c
-450009252100001a000000ff00503742
-3031353238534c300a20000000fd0038
-781e8c21000a202020202020000000fc
-0042656e5120584c32343130540a0173
+00 ff ff ff ff ff ff 00 09 d1 02 7f 45 54 00 00
+1d 15 01 03 80 34 1d 78 2e 2c c1 a4 56 50 a1 28
+0f 50 54 a5 6b 80 31 68 31 7c 45 68 45 7c 61 68
+81 bc 95 3c d1 e8 02 3a 80 18 71 38 2d 40 58 2c
+45 00 09 25 21 00 00 1a 00 00 00 ff 00 50 37 42
+30 31 35 32 38 53 4c 30 0a 20 00 00 00 fd 00 38
+78 1e 8c 21 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 58 4c 32 34 31 30 54 0a 01 73
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 d1 02 7f 45 54 00 00 1d 15
-version:         01 03
-basic params:    80 34 1d 78 2e
-chroma info:     2c c1 a4 56 50 a1 28 0f 50 54
-established:     a5 6b 80
-standard:        31 68 31 7c 45 68 45 7c 61 68 81 bc 95 3c d1 e8
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 09 25 21 00 00 1a
-descriptor 2:    00 00 00 ff 00 50 37 42 30 31 35 32 38 53 4c 30 0a 20
-descriptor 3:    00 00 00 fd 00 38 78 1e 8c 21 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 42 65 6e 51 20 58 4c 32 34 31 30 54 0a
-extensions:      01
-checksum:        73
+----------------
 
-EDID version: 1.3
-Manufacturer: BNQ Model 7f02 Serial Number --
-Made in week 29 of 2011
-Digital display
-Maximum image size: 52 cm x 29 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6406, 0.3378
-  Green: 0.3154, 0.6289
-  Blue:  0.1591, 0.0585
-  White: 0.3125, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-  1152x870@75Hz 192:145 HorFreq: 67500 Hz Clock: 108.000 MHz
-Standard timings supported:
-  640x480@100Hz 4:3
-  640x480@120Hz 4:3
-  800x600@100Hz 4:3
-  800x600@120Hz 4:3
-  1024x768@100Hz 4:3
-  1280x1024@120Hz 5:4
-  1440x900@120Hz 16:10
-  1920x1080@100Hz 16:9
-Detailed mode: Clock 148.500 MHz, 521 mm x 293 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Serial number: --
-Monitor ranges (GTF): 56-120Hz V, 30-140kHz H, max dotclock 330MHz
-Monitor name: BenQ XL2410T
-Has 1 extension blocks
-Checksum: 0x73 (valid)
-EDID block does NOT conform to EDID 1.3!
-	sRGB is signaled, but the chromaticities do not match
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: BNQ
+    Model: 32514
+    Serial Number: ...
+    Made in: week 29 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 52 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6406, 0.3378
+    Green: 0.3154, 0.6289
+    Blue : 0.1591, 0.0585
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    Apple   :   832x624    74.551 Hz   4:3    49.726 kHz  57.284 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+    Apple   :  1152x870    75.062 Hz 192:145  68.681 kHz 100.000 MHz
+  Standard Timings:
+    GTF     :   640x480   100.000 Hz   4:3    50.900 kHz  43.163 MHz
+    GTF     :   640x480   119.999 Hz   4:3    61.800 kHz  52.406 MHz
+    GTF     :   800x600   100.000 Hz   4:3    63.600 kHz  68.179 MHz
+    GTF     :   800x600   120.000 Hz   4:3    77.160 kHz  83.950 MHz
+    GTF     :  1024x768   100.000 Hz   4:3    81.400 kHz 113.309 MHz
+    GTF     :  1280x1024  120.000 Hz   5:4   131.640 kHz 233.793 MHz
+    GTF     :  1440x904   120.000 Hz  16:10  116.280 kHz 230.700 MHz
+    GTF     :  1920x1080  100.000 Hz  16:9   114.400 kHz 302.016 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (521 mm x 293 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol N
+    Display Product Serial Number: ...
+  Display Range Limits:
+    Monitor ranges (GTF): 56-120 Hz V, 30-140 kHz H, max dotclock 330 MHz
+    Display Product Name: 'BenQ XL2410T'
+  Extension blocks: 1
+Checksum: 0x73

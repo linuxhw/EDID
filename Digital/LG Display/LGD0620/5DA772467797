@@ -1,59 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e4200600000000
-001c0104a526157802e085a3544e9b26
-0e505400000001010101010101010101
-0101010101015e8780a070384d403020
-35007ed71000001a673880a070384d40
-302035007ed71000001a000000fe004c
-4720446973706c61790a2020000000fe
-004c503137335746472d5350423100c1
+00 ff ff ff ff ff ff 00 30 e4 20 06 00 00 00 00
+00 1c 01 04 a5 26 15 78 02 e0 85 a3 54 4e 9b 26
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 5e 87 80 a0 70 38 4d 40 30 20
+35 00 7e d7 10 00 00 1a 67 38 80 a0 70 38 4d 40
+30 20 35 00 7e d7 10 00 00 1a 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 37 33 57 46 47 2d 53 50 42 31 00 c1
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 20 06 00 00 00 00 00 1c
-version:         01 04
-basic params:    a5 26 15 78 02
-chroma info:     e0 85 a3 54 4e 9b 26 0e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    5e 87 80 a0 70 38 4d 40 30 20 35 00 7e d7 10 00 00 1a
-descriptor 2:    67 38 80 a0 70 38 4d 40 30 20 35 00 7e d7 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 4c 47 20 44 69 73 70 6c 61 79 0a 20 20
-descriptor 4:    00 00 00 fe 00 4c 50 31 37 33 57 46 47 2d 53 50 42 31
-extensions:      00
-checksum:        c1
+----------------
 
-EDID version: 1.4
-Manufacturer: LGD Model 620 Serial Number --
-Made in year 2018
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 38 cm x 21 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.3046, 0.6054
-  Blue:  0.1503, 0.0546
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 346.540 MHz, 382 mm x 215 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1157 vborder 0
-               +hsync -vsync 
-               VertFreq: 143 Hz, HorFreq: 166605 Hz
-Detailed mode: Clock 144.390 MHz, 382 mm x 215 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1157 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 69418 Hz
-ASCII string: LG Display
-ASCII string: LP173WFG-SPB1
-Checksum: 0xc1 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1568
+    Made in: 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.3046, 0.6054
+    Blue : 0.1503, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  143.998 Hz  16:9   166.606 kHz 346.540 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  69 Vpol N
+    DTD 2:  1920x1080   59.999 Hz  16:9    69.418 kHz 144.390 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  69 Vpol N
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP173WFG-SPB1'
+Checksum: 0xc1

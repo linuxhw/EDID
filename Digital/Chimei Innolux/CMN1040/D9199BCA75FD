@@ -1,53 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000dae401000000000
-1717010380160d780ab1f59456549128
-22505400000001010101010101010101
-010101010101da1d56e250002030881e
-8c00de7d00000018000000fe004e3130
-314247452d4c33310a20000000fe0043
-4d4e0a202020202020202020000000fe
-004e3130314247452d4c33310a200051
+00 ff ff ff ff ff ff 00 0d ae 40 10 00 00 00 00
+17 17 01 03 80 16 0d 78 0a b1 f5 94 56 54 91 28
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 da 1d 56 e2 50 00 20 30 88 1e
+8c 00 de 7d 00 00 00 18 00 00 00 fe 00 4e 31 30
+31 42 47 45 2d 4c 33 31 0a 20 00 00 00 fe 00 43
+4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 30 31 42 47 45 2d 4c 33 31 0a 20 00 51
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0d ae 40 10 00 00 00 00 17 17
-version:         01 03
-basic params:    80 16 0d 78 0a
-chroma info:     b1 f5 94 56 54 91 28 22 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    da 1d 56 e2 50 00 20 30 88 1e 8c 00 de 7d 00 00 00 18
-descriptor 2:    00 00 00 fe 00 4e 31 30 31 42 47 45 2d 4c 33 31 0a 20
-descriptor 3:    00 00 00 fe 00 43 4d 4e 0a 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 4e 31 30 31 42 47 45 2d 4c 33 31 0a 20
-extensions:      00
-checksum:        51
+----------------
 
-EDID version: 1.3
-Manufacturer: CMN Model 1040 Serial Number --
-Made in week 23 of 2013
-Digital display
-Maximum image size: 22 cm x 13 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5800, 0.3388
-  Green: 0.3281, 0.5673
-  Blue:  0.1591, 0.1357
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 76.420 MHz, 222 mm x 125 mm
-               1366 1502 1532 1592 hborder 0
-                768  776  788  800 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48002 Hz
-ASCII string: N101BGE-L31
-ASCII string: CMN
-ASCII string: N101BGE-L31
-Checksum: 0x51 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 4160
+    Made in: week 23 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 22 cm x 13 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5800, 0.3388
+    Green: 0.3281, 0.5673
+    Blue : 0.1591, 0.1357
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.003 Hz 683:384  48.003 kHz  76.420 MHz (222 mm x 125 mm)
+                 Hfront  136 Hsync  30 Hback  60 Hpol N
+                 Vfront    8 Vsync  12 Vback  12 Vpol N
+    Alphanumeric Data String: 'N101BGE-L31'
+    Alphanumeric Data String: 'CMN'
+    Alphanumeric Data String: 'N101BGE-L31'
+Checksum: 0x51

@@ -1,59 +1,50 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004dd900fb01010101
-04110103084527780ad9ada355469824
-10474a21080061400101010101010101
-01010101010164190040410026301d88
-36000000000000180e1f008051001e30
-4080370000000000001c000000fd003a
-3e1e3208000a202020202020000000fc
-00534f4e592054560a202020202000e3
+00 ff ff ff ff ff ff 00 4d d9 00 fb 01 01 01 01
+04 11 01 03 08 45 27 78 0a d9 ad a3 55 46 98 24
+10 47 4a 21 08 00 61 40 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 1d 88
+36 00 00 00 00 00 00 18 0e 1f 00 80 51 00 1e 30
+40 80 37 00 00 00 00 00 00 1c 00 00 00 fd 00 3a
+3e 1e 32 08 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 4f 4e 59 20 54 56 0a 20 20 20 20 20 00 e3
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4d d9 00 fb 01 01 01 01 04 11
-version:         01 03
-basic params:    08 45 27 78 0a
-chroma info:     d9 ad a3 55 46 98 24 10 47 4a
-established:     21 08 00
-standard:        61 40 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    64 19 00 40 41 00 26 30 1d 88 36 00 00 00 00 00 00 18
-descriptor 2:    0e 1f 00 80 51 00 1e 30 40 80 37 00 00 00 00 00 00 1c
-descriptor 3:    00 00 00 fd 00 3a 3e 1e 32 08 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 53 4f 4e 59 20 54 56 0a 20 20 20 20 20
-extensions:      00
-checksum:        e3
+----------------
 
-EDID version: 1.3
-Manufacturer: SNY Model fb00 Serial Number --
-Made in week 4 of 2007
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate 
-Maximum image size: 69 cm x 39 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3330
-  Green: 0.2753, 0.5947
-  Blue:  0.1425, 0.0644
-  White: 0.2802, 0.2900
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Detailed mode: Clock 65.000 MHz, 0 mm x 0 mm
-               1024 1053 1189 1344 hborder 0
-                768  771  777  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48363 Hz
-Detailed mode: Clock 79.500 MHz, 0 mm x 0 mm
-               1280 1344 1472 1664 hborder 0
-                768  771  778  798 vborder 0
-               -hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 47776 Hz
-Monitor ranges (GTF): 58-62Hz V, 30-50kHz H, max dotclock 80MHz
-Monitor name: SONY TV
-Checksum: 0xe3 (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SNY
+    Model: 64256
+    Serial Number: ...
+    Made in: week 4 of 2007
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate
+    Maximum image size: 69 cm x 39 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3330
+    Green: 0.2753, 0.5947
+    Blue : 0.1425, 0.0644
+    White: 0.2802, 0.2900
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+                 Hfront   29 Hsync 136 Hback 155 Hpol N
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+    DTD 2:  1280x768    59.870 Hz   5:3    47.776 kHz  79.500 MHz
+                 Hfront   64 Hsync 128 Hback 192 Hpol N
+                 Vfront    3 Vsync   7 Vback  20 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 58-62 Hz V, 30-50 kHz H, max dotclock 80 MHz
+    Display Product Name: 'SONY TV'
+Checksum: 0xe3

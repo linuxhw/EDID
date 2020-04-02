@@ -1,68 +1,58 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001ab3390877100000
-18170104a5301b78222755a3544f9e27
-115054a54b0081c081809500b300d1c0
-010101010101023a801871382d40582c
-4500dd0c1100001e000000fd00384c1e
-5211000a202020202020000000fc0045
-3232542d37204c45440a2020000000ff
-00595637413030343231350a20200097
+00 ff ff ff ff ff ff 00 1a b3 39 08 77 10 00 00
+18 17 01 04 a5 30 1b 78 22 27 55 a3 54 4f 9e 27
+11 50 54 a5 4b 00 81 c0 81 80 95 00 b3 00 d1 c0
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 38 4c 1e
+52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45
+32 32 54 2d 37 20 4c 45 44 0a 20 20 00 00 00 ff
+00 59 56 37 41 30 30 34 32 31 35 0a 20 20 00 97
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1a b3 39 08 77 10 00 00 18 17
-version:         01 04
-basic params:    a5 30 1b 78 22
-chroma info:     27 55 a3 54 4f 9e 27 11 50 54
-established:     a5 4b 00
-standard:        81 c0 81 80 95 00 b3 00 d1 c0 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 dd 0c 11 00 00 1e
-descriptor 2:    00 00 00 fd 00 38 4c 1e 52 11 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 45 32 32 54 2d 37 20 4c 45 44 0a 20 20
-descriptor 4:    00 00 00 ff 00 59 56 37 41 30 30 34 32 31 35 0a 20 20
-extensions:      00
-checksum:        97
+----------------
 
-EDID version: 1.4
-Manufacturer: FUS Model 839 Serial Number --
-Made in week 24 of 2013
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 48 cm x 27 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6367, 0.3300
-  Green: 0.3095, 0.6201
-  Blue:  0.1533, 0.0673
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1280x720@60Hz 16:9
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 148.500 MHz, 477 mm x 268 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor ranges (GTF): 56-76Hz V, 30-82kHz H, max dotclock 170MHz
-Monitor name: E22T-7 LED
-Serial number: --
-Checksum: 0x97 (valid)
-
-
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: FUS
+    Model: 2105
+    Serial Number: ...
+    Made in: week 24 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6367, 0.3300
+    Green: 0.3095, 0.6201
+    Blue : 0.1533, 0.0673
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (477 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 56-76 Hz V, 30-82 kHz H, max dotclock 170 MHz
+    Display Product Name: 'E22T-7 LED'
+    Display Product Serial Number: ...
+Checksum: 0x97

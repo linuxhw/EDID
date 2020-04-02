@@ -1,82 +1,71 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0010ac16d04c524430
-321201046a251778efb690a654519125
-175054a54b008180714f950001010101
-010101010101ab22a0a050841a303020
-360072e61000001a000000ff00473334
-39483843423044524c0a000000fd0032
-4d1e530e0411b205f858f000000000fc
-0044454c4c20453137385746500a0050
+00 ff ff ff ff ff ff 00 10 ac 16 d0 4c 52 44 30
+32 12 01 04 6a 25 17 78 ef b6 90 a6 54 51 91 25
+17 50 54 a5 4b 00 81 80 71 4f 95 00 01 01 01 01
+01 01 01 01 01 01 ab 22 a0 a0 50 84 1a 30 30 20
+36 00 72 e6 10 00 00 1a 00 00 00 ff 00 47 33 34
+39 48 38 43 42 30 44 52 4c 0a 00 00 00 fd 00 32
+4d 1e 53 0e 04 11 b2 05 f8 58 f0 00 00 00 00 fc
+00 44 45 4c 4c 20 45 31 37 38 57 46 50 0a 00 50
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   10 ac 16 d0 4c 52 44 30 32 12
-version:         01 04
-basic params:    6a 25 17 78 ef
-chroma info:     b6 90 a6 54 51 91 25 17 50 54
-established:     a5 4b 00
-standard:        81 80 71 4f 95 00 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    ab 22 a0 a0 50 84 1a 30 30 20 36 00 72 e6 10 00 00 1a
-descriptor 2:    00 00 00 ff 00 47 33 34 39 48 38 43 42 30 44 52 4c 0a
-descriptor 3:    00 00 00 fd 00 32 4d 1e 53 0e 04 11 b2 05 f8 58 f0 00
-descriptor 4:    00 00 00 fc 00 44 45 4c 4c 20 45 31 37 38 57 46 50 0a
-extensions:      00
-checksum:        50
+----------------
 
-EDID version: 1.4
-Manufacturer: DEL Model d016 Serial Number --
-Made in week 50 of 2008
-Analog display, Input voltage level: 0.7/0.7 V
-Blank level equals black level
-Sync: Separate SyncOnGreen 
-Maximum image size: 37 cm x 23 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6503, 0.3310
-  Green: 0.3173, 0.5683
-  Blue:  0.1464, 0.0908
-  White: 0.3125, 0.3281
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-Detailed mode: Clock 88.750 MHz, 370 mm x 230 mm
-               1440 1488 1520 1600 hborder 0
-                900  903  909  926 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 55468 Hz
-Serial number: --
-Monitor ranges (CVT): 50-77Hz V, 30-83kHz H, max dotclock 140MHz
-CVT version 1.1
-Real max dotclock: 129.00MHz
-Max active pixels per line: 4136
-Supported aspect ratios: 4:3 16:9 16:10 5:4 15:9
-Preferred aspect ratio: 16:10
-Supports CVT standard blanking
-Supports CVT reduced blanking
-Supported display scaling:
-    Horizontal shrink
-    Horizontal stretch
-    Vertical shrink
-    Vertical stretch
-Monitor name: DELL E178WFP
-Checksum: 0x50 (valid)
-EDID block does NOT conform to EDID 1.4!
-	sRGB is signaled, but the chromaticities do not match
-Warning: CVT block corrects dotclock by more than 9.75MHz
-Warning: CVT block does not set preferred refresh rate
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 53270
+    Serial Number: ...
+    Made in: week 50 of 2008
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Blank level equals black level
+    Sync: Separate SyncOnGreen
+    Maximum image size: 37 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6503, 0.3310
+    Green: 0.3173, 0.5683
+    Blue : 0.1464, 0.0908
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x15:  1152x864    75.000 Hz   4:3    67.500 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    59.901 Hz   8:5    55.469 kHz  88.750 MHz (370 mm x 230 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   6 Vback  17 Vpol N
+    Display Product Serial Number: ...
+  Display Range Limits:
+    Monitor ranges (CVT): 50-77 Hz V, 30-83 kHz H, max dotclock 140 MHz
+    CVT version 1.1
+    Real max dotclock: 129.00 MHz
+    Max active pixels per line: 4136
+    Supported aspect ratios: 4:3 16:9 16:10 5:4 15:9
+    Preferred aspect ratio: 16:10
+    Supports CVT standard blanking
+    Supports CVT reduced blanking
+    Supported display scaling:
+      Horizontal shrink
+      Horizontal stretch
+      Vertical shrink
+      Vertical stretch
+    Display Product Name: 'DELL E178WFP'
+Checksum: 0x50

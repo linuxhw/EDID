@@ -1,59 +1,49 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00320c000000000000
-000f0103802115780ac8e59555528b27
-22505400000001010101010101010101
-010101010101483f80f070b032406458
-13004bcf10000019483f80f070b03240
-645813004bcf10000000000000fe0052
-43393039313135345755310a000000fe
-00e0c8b8b08858300002010a2020009d
+00 ff ff ff ff ff ff 00 32 0c 00 00 00 00 00 00
+00 0f 01 03 80 21 15 78 0a c8 e5 95 55 52 8b 27
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 48 3f 80 f0 70 b0 32 40 64 58
+13 00 4b cf 10 00 00 19 48 3f 80 f0 70 b0 32 40
+64 58 13 00 4b cf 10 00 00 00 00 00 00 fe 00 52
+43 39 30 39 31 31 35 34 57 55 31 0a 00 00 00 fe
+00 e0 c8 b8 b0 88 58 30 00 02 01 0a 20 20 00 9d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   32 0c 00 00 00 00 00 00 00 0f
-version:         01 03
-basic params:    80 21 15 78 0a
-chroma info:     c8 e5 95 55 52 8b 27 22 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    48 3f 80 f0 70 b0 32 40 64 58 13 00 4b cf 10 00 00 19
-descriptor 2:    48 3f 80 f0 70 b0 32 40 64 58 13 00 4b cf 10 00 00 00
-descriptor 3:    00 00 00 fe 00 52 43 39 30 39 31 31 35 34 57 55 31 0a
-descriptor 4:    00 00 00 fe 00 e0 c8 b8 b0 88 58 30 00 02 01 0a 20 20
-extensions:      00
-checksum:        9d
+----------------
 
-EDID version: 1.3
-Manufacturer: LPL Model 0 Serial Number --
-Digital display
-Maximum image size: 33 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5849, 0.3320
-  Green: 0.3222, 0.5429
-  Blue:  0.1552, 0.1347
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 162.000 MHz, 331 mm x 207 mm
-               1920 2020 2108 2160 hborder 0
-               1200 1201 1204 1250 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 75000 Hz
-Detailed mode: Clock 162.000 MHz, 331 mm x 207 mm
-               1920 2020 2108 2160 hborder 0
-               1200 1201 1204 1250 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 60 Hz, HorFreq: 75000 Hz
-ASCII string: RC9091154WU1
-ASCII string: 
-Checksum: 0x9d (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LPL
+    Model: 0
+    Made in: 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5849, 0.3320
+    Green: 0.3222, 0.5429
+    Blue : 0.1552, 0.1347
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.000 Hz   8:5    75.000 kHz 162.000 MHz (DE timing only, 331 mm x 207 mm)
+                 Hfront  100 Hsync  88 Hback  52 Hpol N
+                 Vfront    1 Vsync   3 Vback  46 Vpol N
+    DTD 2:  1920x1200   60.000 Hz   8:5    75.000 kHz 162.000 MHz (DE timing only, 331 mm x 207 mm)
+                 Hfront  100 Hsync  88 Hback  52 Hpol N
+                 Vfront    1 Vsync   3 Vback  46 Vpol N
+    SPWG Module Revision: 0
+    SPWG Descriptor #3:
+      SPWG PC Maker P/N: 'RC909'
+      SPWG LCD Supplier EEDID Revision: 49
+      SPWG Manufacturer P/N: '154WU1'
+    SPWG Descriptor #4:
+      SMBUS Values: 0xe0 0xc8 0xb8 0xb0 0x88 0x58 0x30 0x00
+      LVDS Channels: 2
+      Panel Self Test Present
+Checksum: 0x9d

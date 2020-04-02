@@ -1,67 +1,54 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e45505a1000009
-001a0104a51a117803ee95a3544c9926
-0f505400000001010101010101010101
-0101010101013f7fb0a0a02034703020
-3a0004ad10000019000000fd00303c00
-0021040a141414141414000000fe004c
-47445f4d50302e315f0a2020000000fe
-004c5031323357513132323630340046
+00 ff ff ff ff ff ff 00 30 e4 55 05 a1 00 00 09
+00 1a 01 04 a5 1a 11 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3f 7f b0 a0 a0 20 34 70 30 20
+3a 00 04 ad 10 00 00 19 00 00 00 fd 00 30 3c 00
+00 21 04 0a 14 14 14 14 14 14 00 00 00 fe 00 4c
+47 44 5f 4d 50 30 2e 31 5f 0a 20 20 00 00 00 fe
+00 4c 50 31 32 33 57 51 31 32 32 36 30 34 00 46
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 55 05 a1 00 00 09 00 1a
-version:         01 04
-basic params:    a5 1a 11 78 03
-chroma info:     ee 95 a3 54 4c 99 26 0f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    3f 7f b0 a0 a0 20 34 70 30 20 3a 00 04 ad 10 00 00 19
-descriptor 2:    00 00 00 fd 00 30 3c 00 00 21 04 0a 14 14 14 14 14 14
-descriptor 3:    00 00 00 fe 00 4c 47 44 5f 4d 50 30 2e 31 5f 0a 20 20
-descriptor 4:    00 00 00 fe 00 4c 50 31 32 33 57 51 31 32 32 36 30 34
-extensions:      00
-checksum:        46
+----------------
 
-EDID version: 1.4
-Manufacturer: LGD Model 555 Serial Number --
-Made in year 2016
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 26 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1503, 0.0595
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 325.750 MHz, 260 mm x 173 mm
-               2736 2784 2816 2896 hborder 0
-               1824 1827 1837 1876 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 112482 Hz
-Monitor ranges (CVT): 48-60Hz V, 0-0kHz H, max dotclock 330MHz
-CVT version 0.10
-Real max dotclock: 328.75MHz
-Max active pixels per line: 160
-Supported aspect ratios:    5:4 
-Preferred aspect ratio: 4:3
-Supports CVT reduced blanking
-Supported display scaling:
-    Vertical stretch
-Preferred vertical refresh: 20 Hz
-ASCII string: LGD_MP0.1_
-ASCII string: LP123WQ122604
-Checksum: 0x46 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-EDID block does not conform at all!
-	Detailed blocks filled with garbage
-	Range descriptor contains garbage
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1365
+    Serial Number: ...
+    Made in: 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 26 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2736x1824   59.959 Hz   3:2   112.483 kHz 325.750 MHz (260 mm x 173 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync  10 Vback  39 Vpol N
+  Display Range Limits:
+    Monitor ranges (CVT): 48-60 Hz V, 0-0 kHz H, max dotclock 330 MHz
+    CVT version 0.10
+    Real max dotclock: 328.75 MHz
+    Max active pixels per line: 160
+    Supported aspect ratios: 5:4
+    Preferred aspect ratio: 4:3
+    Supports CVT reduced blanking
+    Supported display scaling:
+      Vertical stretch
+    Preferred vertical refresh: 20 Hz
+    Alphanumeric Data String: 'LGD_MP0.1_'
+    Alphanumeric Data String: 'LP123WQ122604'
+Checksum: 0x46

@@ -1,66 +1,49 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030ae002001000000
-01170104a5331d78e23781a556519d25
-0e5054000000d1c081c0010101010101
-010101010101023a801871382d40582c
-4500fe221100001e011d007251d01e20
-6e285500fe221100001e000000fc204c
-656e6f766f2041494f205043000000fd
-00324b365312000a2020202020200000
+00 ff ff ff ff ff ff 00 30 ae 00 20 01 00 00 00
+01 17 01 04 a5 33 1d 78 e2 37 81 a5 56 51 9d 25
+0e 50 54 00 00 00 d1 c0 81 c0 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fe 22 11 00 00 1e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 fe 22 11 00 00 1e 00 00 00 fc 20 4c
+65 6e 6f 76 6f 20 41 49 4f 20 50 43 00 00 00 fd
+00 32 4b 36 53 12 00 0a 20 20 20 20 20 20 00 00
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 ae 00 20 01 00 00 00 01 17
-version:         01 04
-basic params:    a5 33 1d 78 e2
-chroma info:     37 81 a5 56 51 9d 25 0e 50 54
-established:     00 00 00
-standard:        d1 c0 81 c0 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 fe 22 11 00 00 1e
-descriptor 2:    01 1d 00 72 51 d0 1e 20 6e 28 55 00 fe 22 11 00 00 1e
-descriptor 3:    00 00 00 fc 20 4c 65 6e 6f 76 6f 20 41 49 4f 20 50 43
-descriptor 4:    00 00 00 fd 00 32 4b 36 53 12 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        00
+----------------
 
-EDID version: 1.4
-Manufacturer: LEN Model 2000 Serial Number --
-Made in week 1 of 2013
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 51 cm x 29 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6445, 0.3388
-  Green: 0.3173, 0.6162
-  Blue:  0.1464, 0.0546
-  White: 0.3125, 0.3291
-Established timings supported:
-Standard timings supported:
-  1920x1080@60Hz 16:9
-  1280x720@60Hz 16:9
-Detailed mode: Clock 148.500 MHz, 510 mm x 290 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 74.250 MHz, 510 mm x 290 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Monitor descriptor block has byte 4 nonzero (0x20)
-Monitor ranges (GTF): 50-75Hz V, 54-83kHz H, max dotclock 180MHz
-Checksum: 0x0 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Name descriptor not terminated with a newline
-	Invalid descriptor block padding
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 60 Hz
-  Horizontal Freq: 45000 - 67500 Hz
-  Maximum Clock: 148.500 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 8192
+    Serial Number: ...
+    Made in: week 1 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 51 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6445, 0.3388
+    Green: 0.3173, 0.6162
+    Blue : 0.1464, 0.0546
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (510 mm x 290 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 2:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (510 mm x 290 mm)
+                 Hfront  110 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+    Display Product Name: 'Lenovo AIO PC'
+  Display Range Limits:
+    Monitor ranges (GTF): 50-75 Hz V, 54-83 kHz H, max dotclock 180 MHz
+Checksum: 0x0

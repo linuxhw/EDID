@@ -1,55 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004ca3463500000000
-00150104a51d10780209e59757548a27
-22505400000001010101010101010101
-010101010101382740c0608420303020
-250025a5100000190000000f00000000
-000000000028800a1e00000000fe0053
-414d53554e470a2020202020000000fe
-004c534e3133334b4c3031380a200003
+00 ff ff ff ff ff ff 00 4c a3 46 35 00 00 00 00
+00 15 01 04 a5 1d 10 78 02 09 e5 97 57 54 8a 27
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 38 27 40 c0 60 84 20 30 30 20
+25 00 25 a5 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 28 80 0a 1e 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe
+00 4c 53 4e 31 33 33 4b 4c 30 31 38 0a 20 00 03
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c a3 46 35 00 00 00 00 00 15
-version:         01 04
-basic params:    a5 1d 10 78 02
-chroma info:     09 e5 97 57 54 8a 27 22 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    38 27 40 c0 60 84 20 30 30 20 25 00 25 a5 10 00 00 19
-descriptor 2:    00 00 00 0f 00 00 00 00 00 00 00 00 00 28 80 0a 1e 00
-descriptor 3:    00 00 00 fe 00 53 41 4d 53 55 4e 47 0a 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 4c 53 4e 31 33 33 4b 4c 30 31 38 0a 20
-extensions:      00
-checksum:        03
+----------------
 
-EDID version: 1.4
-Manufacturer: SEC Model 3546 Serial Number --
-Made in year 2011
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 29 cm x 16 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5898, 0.3398
-  Green: 0.3300, 0.5400
-  Blue:  0.1552, 0.1347
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 100.400 MHz, 293 mm x 165 mm
-               1600 1648 1680 1792 hborder 0
-                900  902  907  932 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 56026 Hz
-Manufacturer-specified data, tag 15
-ASCII string: SAMSUNG
-ASCII string: LSN133KL018
-Checksum: 0x3 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 13638
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 16 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5898, 0.3398
+    Green: 0.3300, 0.5400
+    Blue : 0.1552, 0.1347
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.115 Hz  16:9    56.027 kHz 100.400 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback 112 Hpol N
+                 Vfront    2 Vsync   5 Vback  25 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 28 80 0a 1e 00 '...........(....'
+    Alphanumeric Data String: 'SAMSUNG'
+    Alphanumeric Data String: 'LSN133KL018'
+Checksum: 0x3

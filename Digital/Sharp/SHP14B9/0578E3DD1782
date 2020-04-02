@@ -1,58 +1,43 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004d10b91400000000
-161d0104a52213780e3cdaaa5534bf23
-0c525500000001010101010101010101
-0101010101014dd000a0f0703e803020
-350058c2100000180000000000000000
-00000000000000000000000000fe004e
-35563843804c51313536443100000000
-0002410332011200000b010a20200053
+00 ff ff ff ff ff ff 00 4d 10 b9 14 00 00 00 00
+16 1d 01 04 a5 22 13 78 0e 3c da aa 55 34 bf 23
+0c 52 55 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 58 c2 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4e
+35 56 38 43 80 4c 51 31 35 36 44 31 00 00 00 00
+00 02 41 03 32 01 12 00 00 0b 01 0a 20 20 00 53
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4d 10 b9 14 00 00 00 00 16 1d
-version:         01 04
-basic params:    a5 22 13 78 0e
-chroma info:     3c da aa 55 34 bf 23 0c 52 55
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    4d d0 00 a0 f0 70 3e 80 30 20 35 00 58 c2 10 00 00 18
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fe 00 4e 35 56 38 43 80 4c 51 31 35 36 44 31
-descriptor 4:    00 00 00 00 00 02 41 03 32 01 12 00 00 0b 01 0a 20 20
-extensions:      00
-checksum:        53
+----------------
 
-EDID version: 1.4
-Manufacturer: SHP Model 14b9 Serial Number --
-Made in week 22 of 2019
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6640, 0.3349
-  Green: 0.2060, 0.7460
-  Blue:  0.1396, 0.0478
-  White: 0.3222, 0.3339
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 533.250 MHz, 344 mm x 194 mm
-               3840 3888 3920 4000 hborder 0
-               2160 2163 2168 2222 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 133312 Hz
-Manufacturer-specified data, tag 0
-ASCII string: N5V8C
-Manufacturer-specified data, tag 0
-Checksum: 0x53 (valid)
-EDID block does NOT conform to EDID 1.4!
-	sRGB is signaled, but the chromaticities do not match
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SHP
+    Model: 5305
+    Made in: week 22 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6640, 0.3349
+    Green: 0.2060, 0.7460
+    Blue : 0.1396, 0.0478
+    White: 0.3222, 0.3339
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.997 Hz  16:9   133.312 kHz 533.250 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  54 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'N5V8C'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 03 32 01 12 00 00 0b 01 0a 20 20 '....A.2.......  '
+Checksum: 0x53

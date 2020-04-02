@@ -1,53 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006af2c2200000000
-01120103801d10780a05e59757539327
-22505400000001010101010101010101
-010101010101121b565a500019303020
-360025a4100000180000000f00000000
-00000000000000000020000000fe0041
-554f0a202020202020202020000000fe
-004231333358573032205632200a001f
+00 ff ff ff ff ff ff 00 06 af 2c 22 00 00 00 00
+01 12 01 03 80 1d 10 78 0a 05 e5 97 57 53 93 27
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 56 5a 50 00 19 30 30 20
+36 00 25 a4 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 33 33 58 57 30 32 20 56 32 20 0a 00 1f
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 af 2c 22 00 00 00 00 01 12
-version:         01 03
-basic params:    80 1d 10 78 0a
-chroma info:     05 e5 97 57 53 93 27 22 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    12 1b 56 5a 50 00 19 30 30 20 36 00 25 a4 10 00 00 18
-descriptor 2:    00 00 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20
-descriptor 3:    00 00 00 fe 00 41 55 4f 0a 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 42 31 33 33 58 57 30 32 20 56 32 20 0a
-extensions:      00
-checksum:        1f
+----------------
 
-EDID version: 1.3
-Manufacturer: AUO Model 222c Serial Number --
-Made in week 1 of 2008
-Digital display
-Maximum image size: 29 cm x 16 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5898, 0.3398
-  Green: 0.3251, 0.5751
-  Blue:  0.1552, 0.1347
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 69.300 MHz, 293 mm x 164 mm
-               1366 1414 1446 1456 hborder 0
-                768  771  777  793 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 47596 Hz
-Manufacturer-specified data, tag 15
-ASCII string: AUO
-ASCII string: B133XW02 V2 
-Checksum: 0x1f (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 8748
+    Made in: week 1 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 16 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3398
+    Green: 0.3251, 0.5751
+    Blue : 0.1552, 0.1347
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.020 Hz 683:384  47.596 kHz  69.300 MHz (293 mm x 164 mm)
+                 Hfront   48 Hsync  32 Hback  10 Hpol N
+                 Vfront    3 Vsync   6 Vback  16 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B133XW02 V2 '
+Checksum: 0x1f

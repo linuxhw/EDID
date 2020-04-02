@@ -1,65 +1,54 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00410c000001010101
-011901031c2917782eb8d5a256539f26
-0b505421080081c08180010101010101
-010101010101662150b051001b304070
-36009ae61000001e662150b051001b30
-407036009ae610000018000000fc0031
-39504846323635302f54330a000000fd
-00384c1e530f000a20202020202000ce
+00 ff ff ff ff ff ff 00 41 0c 00 00 01 01 01 01
+01 19 01 03 1c 29 17 78 2e b8 d5 a2 56 53 9f 26
+0b 50 54 21 08 00 81 c0 81 80 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70
+36 00 9a e6 10 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 9a e6 10 00 00 18 00 00 00 fc 00 31
+39 50 48 46 32 36 35 30 2f 54 33 0a 00 00 00 fd
+00 38 4c 1e 53 0f 00 0a 20 20 20 20 20 20 00 ce
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   41 0c 00 00 01 01 01 01 01 19
-version:         01 03
-basic params:    1c 29 17 78 2e
-chroma info:     b8 d5 a2 56 53 9f 26 0b 50 54
-established:     21 08 00
-standard:        81 c0 81 80 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    66 21 50 b0 51 00 1b 30 40 70 36 00 9a e6 10 00 00 1e
-descriptor 2:    66 21 50 b0 51 00 1b 30 40 70 36 00 9a e6 10 00 00 18
-descriptor 3:    00 00 00 fc 00 31 39 50 48 46 32 36 35 30 2f 54 33 0a
-descriptor 4:    00 00 00 fd 00 38 4c 1e 53 0f 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        ce
+----------------
 
-EDID version: 1.3
-Manufacturer: PHL Model 0 Serial Number --
-Made in week 1 of 2015
-Analog display, Input voltage level: 0.7/0.3 V
-Configurable signal levels
-Sync: Separate Composite 
-Maximum image size: 41 cm x 23 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6347, 0.3388
-  Green: 0.3261, 0.6210
-  Blue:  0.1513, 0.0439
-  White: 0.3134, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x720@60Hz 16:9
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-Detailed mode: Clock 85.500 MHz, 410 mm x 230 mm
-               1360 1424 1536 1792 hborder 0
-                768  771  777  795 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 47712 Hz
-Detailed mode: Clock 85.500 MHz, 410 mm x 230 mm
-               1360 1424 1536 1792 hborder 0
-                768  771  777  795 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 47712 Hz
-Monitor name: 19PHF2650/T3
-Monitor ranges (GTF): 56-76Hz V, 30-83kHz H, max dotclock 150MHz
-Checksum: 0xce (valid)
-EDID block does NOT conform to EDID 1.3!
-	sRGB is signaled, but the chromaticities do not match
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PHL
+    Model: 0
+    Serial Number: ...
+    Made in: week 1 of 2015
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Configurable signal levels
+    Sync: Separate Composite
+    Maximum image size: 41 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6347, 0.3388
+    Green: 0.3261, 0.6210
+    Blue : 0.1513, 0.0439
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1360x768    60.015 Hz  85:48   47.712 kHz  85.500 MHz (410 mm x 230 mm)
+                 Hfront   64 Hsync 112 Hback 256 Hpol P
+                 Vfront    3 Vsync   6 Vback  18 Vpol P
+    DTD 2:  1360x768    60.015 Hz  85:48   47.712 kHz  85.500 MHz (410 mm x 230 mm)
+                 Hfront   64 Hsync 112 Hback 256 Hpol N
+                 Vfront    3 Vsync   6 Vback  18 Vpol N
+    Display Product Name: '19PHF2650/T3'
+  Display Range Limits:
+    Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 150 MHz
+Checksum: 0xce

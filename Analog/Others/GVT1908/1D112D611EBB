@@ -1,62 +1,52 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001ed40819d25b7f02
-130e010368261e782a0b329c5a4d8c26
-204e57a108008140714f818001010101
-010101010101302a009851002a403070
-1300782d1100001e000000fc004c3943
-485f54410a2020202020000000fe004d
-52545f4d565049490a202020000000fd
-003c3c1f400b0a2020202020202000c0
+00 ff ff ff ff ff ff 00 1e d4 08 19 d2 5b 7f 02
+13 0e 01 03 68 26 1e 78 2a 0b 32 9c 5a 4d 8c 26
+20 4e 57 a1 08 00 81 40 71 4f 81 80 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 fc 00 4c 39 43
+48 5f 54 41 0a 20 20 20 20 20 00 00 00 fe 00 4d
+52 54 5f 4d 56 50 49 49 0a 20 20 20 00 00 00 fd
+00 3c 3c 1f 40 0b 0a 20 20 20 20 20 20 20 00 c0
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1e d4 08 19 d2 5b 7f 02 13 0e
-version:         01 03
-basic params:    68 26 1e 78 2a
-chroma info:     0b 32 9c 5a 4d 8c 26 20 4e 57
-established:     a1 08 00
-standard:        81 40 71 4f 81 80 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    30 2a 00 98 51 00 2a 40 30 70 13 00 78 2d 11 00 00 1e
-descriptor 2:    00 00 00 fc 00 4c 39 43 48 5f 54 41 0a 20 20 20 20 20
-descriptor 3:    00 00 00 fe 00 4d 52 54 5f 4d 56 50 49 49 0a 20 20 20
-descriptor 4:    00 00 00 fd 00 3c 3c 1f 40 0b 0a 20 20 20 20 20 20 20
-extensions:      00
-checksum:        c0
+----------------
 
-EDID version: 1.3
-Manufacturer: GVT Model 1908 Serial Number --
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 38 cm x 30 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6093, 0.3515
-  Green: 0.3027, 0.5498
-  Blue:  0.1484, 0.1279
-  White: 0.3046, 0.3417
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-Detailed mode: Clock 108.000 MHz, 376 mm x 301 mm
-               1280 1328 1440 1688 hborder 0
-               1024 1025 1028 1066 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 63981 Hz
-Monitor name: L9CH_TA
-ASCII string: MRT_MVPII
-Monitor ranges (invalid): 60-60Hz V, 31-64kHz H, max dotclock 110MHz
-Checksum: 0xc0 (valid)
-EDID block does not conform at all!
-	Bad year of manufacture
-	Detailed blocks filled with garbage
-	Range descriptor contains garbage
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GVT
+    Model: 6408
+    Serial Number: ...
+    Made in: week 19 of 2004
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate
+    Maximum image size: 38 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6093, 0.3515
+    Green: 0.3027, 0.5498
+    Blue : 0.1484, 0.1279
+    White: 0.3046, 0.3417
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x15:  1152x864    75.000 Hz   4:3    67.500 kHz 108.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz (376 mm x 301 mm)
+                 Hfront   48 Hsync 112 Hback 248 Hpol P
+                 Vfront    1 Vsync   3 Vback  38 Vpol P
+    Display Product Name: 'L9CH_TA'
+    Alphanumeric Data String: 'MRT_MVPII'
+  Display Range Limits:
+    Monitor ranges (Unknown (0x0a)): 60-60 Hz V, 31-64 kHz H, max dotclock 110 MHz
+Checksum: 0xc0

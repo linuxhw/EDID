@@ -1,59 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006af245000000000
-01120103901d12780a90b59958528e26
-1e505400000001010101010101010101
-010101010101581b008a502017303020
-36001eb21000001a5c12009450201730
-302036001eb21000001a000000fe0046
-4d373336814231333345573500000000
-00000000000000000001010a20200062
+00 ff ff ff ff ff ff 00 06 af 24 50 00 00 00 00
+01 12 01 03 90 1d 12 78 0a 90 b5 99 58 52 8e 26
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 58 1b 00 8a 50 20 17 30 30 20
+36 00 1e b2 10 00 00 1a 5c 12 00 94 50 20 17 30
+30 20 36 00 1e b2 10 00 00 1a 00 00 00 fe 00 46
+4d 37 33 36 81 42 31 33 33 45 57 35 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 01 0a 20 20 00 62
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 af 24 50 00 00 00 00 01 12
-version:         01 03
-basic params:    90 1d 12 78 0a
-chroma info:     90 b5 99 58 52 8e 26 1e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    58 1b 00 8a 50 20 17 30 30 20 36 00 1e b2 10 00 00 1a
-descriptor 2:    5c 12 00 94 50 20 17 30 30 20 36 00 1e b2 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 46 4d 37 33 36 81 42 31 33 33 45 57 35
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20
-extensions:      00
-checksum:        62
+----------------
 
-EDID version: 1.3
-Manufacturer: AUO Model 5024 Serial Number --
-Made in week 1 of 2008
-Digital display
-Maximum image size: 29 cm x 18 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5996, 0.3447
-  Green: 0.3203, 0.5546
-  Blue:  0.1503, 0.1201
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 70.000 MHz, 286 mm x 178 mm
-               1280 1328 1360 1418 hborder 0
-                800  803  809  823 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 49365 Hz
-Detailed mode: Clock 47.000 MHz, 286 mm x 178 mm
-               1280 1328 1360 1428 hborder 0
-                800  803  809  823 vborder 0
-               +hsync -vsync 
-               VertFreq: 39 Hz, HorFreq: 32913 Hz
-ASCII string: FM736
-Manufacturer-specified data, tag 0
-Checksum: 0x62 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 10
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 20516
+    Made in: week 1 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5996, 0.3447
+    Green: 0.3203, 0.5546
+    Blue : 0.1503, 0.1201
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.982 Hz   8:5    49.365 kHz  70.000 MHz (286 mm x 178 mm)
+                 Hfront   48 Hsync  32 Hback  58 Hpol P
+                 Vfront    3 Vsync   6 Vback  14 Vpol N
+    DTD 2:  1280x800    39.992 Hz   8:5    32.913 kHz  47.000 MHz (286 mm x 178 mm)
+                 Hfront   48 Hsync  32 Hback  68 Hpol P
+                 Vfront    3 Vsync   6 Vback  14 Vpol N
+    Alphanumeric Data String: 'FM736'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20 '..............  '
+Checksum: 0x62

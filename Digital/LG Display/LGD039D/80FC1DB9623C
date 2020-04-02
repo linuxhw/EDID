@@ -1,55 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e49d0300000000
-00160104952213960aa2159659578f28
-1e505400000001010101010101010101
-010101010101581b567e50000e302430
-350058c2100000190000000000000000
-00000000000000000000000000fe004c
-4720446973706c61790a2020000000fe
-004c503135365748362d544a4132008c
+00 ff ff ff ff ff ff 00 30 e4 9d 03 00 00 00 00
+00 16 01 04 95 22 13 96 0a a2 15 96 59 57 8f 28
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 58 1b 56 7e 50 00 0e 30 24 30
+35 00 58 c2 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 35 36 57 48 36 2d 54 4a 41 32 00 8c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 9d 03 00 00 00 00 00 16
-version:         01 04
-basic params:    95 22 13 96 0a
-chroma info:     a2 15 96 59 57 8f 28 1e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    58 1b 56 7e 50 00 0e 30 24 30 35 00 58 c2 10 00 00 19
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fe 00 4c 47 20 44 69 73 70 6c 61 79 0a 20 20
-descriptor 4:    00 00 00 fe 00 4c 50 31 35 36 57 48 36 2d 54 4a 41 32
-extensions:      00
-checksum:        8c
+----------------
 
-EDID version: 1.4
-Manufacturer: LGD Model 39d Serial Number --
-Made in year 2012
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.50
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5878, 0.3496
-  Green: 0.3398, 0.5605
-  Blue:  0.1562, 0.1181
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 70.000 MHz, 344 mm x 194 mm
-               1366 1402 1450 1492 hborder 0
-                768  771  776  782 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 46916 Hz
-Manufacturer-specified data, tag 0
-ASCII string: LG Display
-ASCII string: LP156WH6-TJA2
-Checksum: 0x8c (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 925
+    Made in: 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.50
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5878, 0.3496
+    Green: 0.3398, 0.5605
+    Blue : 0.1562, 0.1181
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.996 Hz 683:384  46.917 kHz  70.000 MHz (344 mm x 194 mm)
+                 Hfront   36 Hsync  48 Hback  42 Hpol N
+                 Vfront    3 Vsync   5 Vback   6 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP156WH6-TJA2'
+Checksum: 0x8c

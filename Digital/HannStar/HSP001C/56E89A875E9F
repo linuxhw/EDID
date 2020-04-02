@@ -1,61 +1,51 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0022701c000f000000
-13140103803b25782aaff5a6544c9e23
-10505421080081809500b300d1000101
-010101010101283c80a070b023403020
-360051722100001a000000ff00303139
-464e3236593030303135000000fc0048
-5347313037350a2020202020000000fd
-003b3d1f5011000a202020202020016e
+00 ff ff ff ff ff ff 00 22 70 1c 00 0f 00 00 00
+13 14 01 03 80 3b 25 78 2a af f5 a6 54 4c 9e 23
+10 50 54 21 08 00 81 80 95 00 b3 00 d1 00 01 01
+01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 51 72 21 00 00 1a 00 00 00 ff 00 30 31 39
+46 4e 32 36 59 30 30 30 31 35 00 00 00 fc 00 48
+53 47 31 30 37 35 0a 20 20 20 20 20 00 00 00 fd
+00 3b 3d 1f 50 11 00 0a 20 20 20 20 20 20 01 6e
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 70 1c 00 0f 00 00 00 13 14
-version:         01 03
-basic params:    80 3b 25 78 2a
-chroma info:     af f5 a6 54 4c 9e 23 10 50 54
-established:     21 08 00
-standard:        81 80 95 00 b3 00 d1 00 01 01 01 01 01 01 01 01
-descriptor 1:    28 3c 80 a0 70 b0 23 40 30 20 36 00 51 72 21 00 00 1a
-descriptor 2:    00 00 00 ff 00 30 31 39 46 4e 32 36 59 30 30 30 31 35
-descriptor 3:    00 00 00 fc 00 48 53 47 31 30 37 35 0a 20 20 20 20 20
-descriptor 4:    00 00 00 fd 00 3b 3d 1f 50 11 00 0a 20 20 20 20 20 20
-extensions:      01
-checksum:        6e
+----------------
 
-EDID version: 1.3
-Manufacturer: HSP Model 1c Serial Number --
-Made in week 19 of 2010
-Digital display
-Maximum image size: 59 cm x 37 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6503, 0.3300
-  Green: 0.2998, 0.6201
-  Blue:  0.1396, 0.0654
-  White: 0.3134, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1920x1200@60Hz 16:10 HorFreq: 74000 Hz Clock: 154.000 MHz
-Detailed mode: Clock 154.000 MHz, 593 mm x 370 mm
-               1920 1968 2000 2080 hborder 0
-               1200 1203 1209 1235 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 74038 Hz
-Serial number: --
-Monitor name: HSG1075
-Monitor ranges (GTF): 59-61Hz V, 31-80kHz H, max dotclock 170MHz
-Has 1 extension blocks
-Checksum: 0x6e (valid)
-
-
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HSP
+    Model: 28
+    Serial Number: ...
+    Made in: week 19 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 59 cm x 37 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3300
+    Green: 0.2998, 0.6201
+    Blue : 0.1396, 0.0654
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x45:  1920x1200   59.885 Hz  16:10   74.556 kHz 193.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.950 Hz   8:5    74.038 kHz 154.000 MHz (593 mm x 370 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   6 Vback  26 Vpol N
+    Display Product Serial Number: ...
+    Display Product Name: 'HSG1075'
+  Display Range Limits:
+    Monitor ranges (GTF): 59-61 Hz V, 31-80 kHz H, max dotclock 170 MHz
+  Extension blocks: 1
+Checksum: 0x6e

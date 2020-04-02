@@ -1,53 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000610f09c00000000
-11160104951d127802ef059757549227
-22505400000001010101010101010101
-010101010101b922a0a050841a303020
-36001eb3000000180000001000000000
-00000000000000000000000000fe004c
-534e31333342543031413032000000fc
-00436f6c6f72204c43440a2020200009
+00 ff ff ff ff ff ff 00 06 10 f0 9c 00 00 00 00
+11 16 01 04 95 1d 12 78 02 ef 05 97 57 54 92 27
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b9 22 a0 a0 50 84 1a 30 30 20
+36 00 1e b3 00 00 00 18 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+53 4e 31 33 33 42 54 30 31 41 30 32 00 00 00 fc
+00 43 6f 6c 6f 72 20 4c 43 44 0a 20 20 20 00 09
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 10 f0 9c 00 00 00 00 11 16
-version:         01 04
-basic params:    95 1d 12 78 02
-chroma info:     ef 05 97 57 54 92 27 22 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    b9 22 a0 a0 50 84 1a 30 30 20 36 00 1e b3 00 00 00 18
-descriptor 2:    00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fe 00 4c 53 4e 31 33 33 42 54 30 31 41 30 32
-descriptor 4:    00 00 00 fc 00 43 6f 6c 6f 72 20 4c 43 44 0a 20 20 20
-extensions:      00
-checksum:        09
+----------------
 
-EDID version: 1.4
-Manufacturer: APP Model 9cf0 Serial Number --
-Made in week 17 of 2012
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 29 cm x 18 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5927, 0.3417
-  Green: 0.3310, 0.5732
-  Blue:  0.1523, 0.1328
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 88.890 MHz, 30 mm x 179 mm
-               1440 1488 1520 1600 hborder 0
-                900  903  909  926 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 55556 Hz
-Dummy block
-ASCII string: LSN133BT01A02
-Monitor name: Color LCD
-Checksum: 0x9 (valid)
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 40176
+    Made in: week 17 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5927, 0.3417
+    Green: 0.3310, 0.5732
+    Blue : 0.1523, 0.1328
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    59.996 Hz   8:5    55.556 kHz  88.890 MHz (30 mm x 179 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   6 Vback  17 Vpol N
+    Dummy Descriptor:
+    Alphanumeric Data String: 'LSN133BT01A02'
+    Display Product Name: 'Color LCD'
+Checksum: 0x9

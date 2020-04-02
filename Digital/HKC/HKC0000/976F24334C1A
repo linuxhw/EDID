@@ -1,125 +1,112 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff002163000001000000
-241a0104a54627783387e5a456509e26
-0d5054afcf008180617c81bc9500953c
-b300b33cd1fc378b801871382d40582c
-4500ba892100001e023a801871382d40
-582c4500ba892100001e000000fd002b
-90a2a224010a202020202020000000ff
-0030303030303030303030303031019c
-020319c1230907078301000003000000
-0300000000000000002a82805070384d
-400820f80cba892100001a0000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000002
+00 ff ff ff ff ff ff 00 21 63 00 00 01 00 00 00
+24 1a 01 04 a5 46 27 78 33 87 e5 a4 56 50 9e 26
+0d 50 54 af cf 00 81 80 61 7c 81 bc 95 00 95 3c
+b3 00 b3 3c d1 fc 37 8b 80 18 71 38 2d 40 58 2c
+45 00 ba 89 21 00 00 1e 02 3a 80 18 71 38 2d 40
+58 2c 45 00 ba 89 21 00 00 1e 00 00 00 fd 00 2b
+90 a2 a2 24 01 0a 20 20 20 20 20 20 00 00 00 ff
+00 30 30 30 30 30 30 30 30 30 30 30 30 31 01 9c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   21 63 00 00 01 00 00 00 24 1a
-version:         01 04
-basic params:    a5 46 27 78 33
-chroma info:     87 e5 a4 56 50 9e 26 0d 50 54
-established:     af cf 00
-standard:        81 80 61 7c 81 bc 95 00 95 3c b3 00 b3 3c d1 fc
-descriptor 1:    37 8b 80 18 71 38 2d 40 58 2c 45 00 ba 89 21 00 00 1e
-descriptor 2:    02 3a 80 18 71 38 2d 40 58 2c 45 00 ba 89 21 00 00 1e
-descriptor 3:    00 00 00 fd 00 2b 90 a2 a2 24 01 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 30 30 30 30 30 30 30 30 30 30 30 30 31
-extensions:      01
-checksum:        9c
+02 03 19 c1 23 09 07 07 83 01 00 00 03 00 00 00
+03 00 00 00 00 00 00 00 00 2a 82 80 50 70 38 4d
+40 08 20 f8 0c ba 89 21 00 00 1a 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
 
-EDID version: 1.4
-Manufacturer: HKC Model 0 Serial Number --
-Made in week 36 of 2016
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 70 cm x 39 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4, YCrCb 4:2:2
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6425, 0.3359
-  Green: 0.3134, 0.6201
-  Blue:  0.1513, 0.0527
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1024x768@120Hz 4:3
-  1280x1024@120Hz 5:4
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1440x900@120Hz 16:10
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1680x1050@120Hz 16:10
-  1920x1080@120Hz 16:9
-Detailed mode: Clock 356.390 MHz, 698 mm x 393 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 143 Hz, HorFreq: 161995 Hz
-Detailed mode: Clock 148.500 MHz, 698 mm x 393 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor ranges (bare limits): 43-144Hz V, 162-162kHz H, max dotclock 360MHz
-Serial number: --
-Has 1 extension blocks
-Checksum: 0x9c (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-21 bytes of CTA data
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HKC
+    Model: 0
+    Serial Number: ...
+    Made in: week 36 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 70 cm x 39 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6425, 0.3359
+    Green: 0.3134, 0.6201
+    Blue : 0.1513, 0.0527
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    CVT     :  1024x768   119.804 Hz   4:3    98.958 kHz 137.750 MHz (EDID 1.4 source)
+    GTF     :  1024x768   120.000 Hz   4:3    98.760 kHz 139.054 MHz (EDID 1.3 source)
+    CVT     :  1280x1024  119.835 Hz   5:4   131.818 kHz 232.000 MHz (EDID 1.4 source)
+    GTF     :  1280x1024  120.000 Hz   5:4   131.640 kHz 233.793 MHz (EDID 1.3 source)
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    CVT     :  1440x904   119.785 Hz  16:10  116.431 kHz 231.000 MHz (EDID 1.4 source)
+    GTF     :  1440x904   120.000 Hz  16:10  116.280 kHz 230.700 MHz (EDID 1.3 source)
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    CVT     :  1680x1056  119.922 Hz  16:10  135.991 kHz 315.500 MHz (EDID 1.4 source)
+    GTF     :  1680x1056  120.000 Hz  16:10  135.840 kHz 315.149 MHz (EDID 1.3 source)
+    CVT     :  1920x1080  119.930 Hz  16:9   139.119 kHz 369.500 MHz (EDID 1.4 source)
+    GTF     :  1920x1080  120.000 Hz  16:9   138.840 kHz 368.759 MHz (EDID 1.3 source)
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  143.996 Hz  16:9   161.995 kHz 356.390 MHz (698 mm x 393 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 2:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (698 mm x 393 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 43-144 Hz V, 162-162 kHz H, max dotclock 360 MHz
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0x9c
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans PC formats by default
+  Basic audio support
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Unknown tag 0, length 3 (raw 03)
-  Unknown tag 0, length 3 (raw 03)
-  Unknown tag 0, length 0 (raw 00)
-  Unknown tag 0, length 0 (raw 00)
-  Unknown tag 0, length 0 (raw 00)
-  Unknown tag 0, length 0 (raw 00)
-  Unknown tag 0, length 0 (raw 00)
-Underscans PC formats by default
-Basic audio support
-1 native detailed modes
-Detailed mode: Clock 333.220 MHz, 698 mm x 393 mm
-               1920 1928 1960 2000 hborder 0
-               1080 1143 1151 1157 vborder 0
-               +hsync -vsync 
-               VertFreq: 144 Hz, HorFreq: 166610 Hz
-Checksum: 0x2 (valid)
-
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 56 - 144 Hz
-  Horizontal Freq: 31469 - 166610 Hz
-  Maximum Clock: 356.390 MHz
-EDID block does not conform at all!
-	Both the serial number and the serial string are set
-
-
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Unknown CTA tag 0x00, length 3
+    00 00 00                                        '...'
+  Unknown CTA tag 0x00, length 3
+    00 00 00                                        '...'
+  Unknown CTA tag 0x00, length 0
+  Unknown CTA tag 0x00, length 0
+  Unknown CTA tag 0x00, length 0
+  Unknown CTA tag 0x00, length 0
+  Unknown CTA tag 0x00, length 0
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080  144.002 Hz  16:9   166.610 kHz 333.220 MHz (698 mm x 393 mm)
+                 Hfront    8 Hsync  32 Hback  40 Hpol P
+                 Vfront   63 Vsync   8 Vback   6 Vpol N
+Checksum: 0x2

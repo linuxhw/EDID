@@ -1,74 +1,61 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001e6def7501010101
-0213010308462778ead9b0a357499c25
-11494ba56e003140454061408180d1c0
-0101010101011b2150a051001e304888
-3500bc862100001c023a801871382d40
-582c4500c48e2100001e000000fc0032
-364c47333035300a20202020000000fd
-00324b1c430f000a2020202020200021
+00 ff ff ff ff ff ff 00 1e 6d ef 75 01 01 01 01
+02 13 01 03 08 46 27 78 ea d9 b0 a3 57 49 9c 25
+11 49 4b a5 6e 00 31 40 45 40 61 40 81 80 d1 c0
+01 01 01 01 01 01 1b 21 50 a0 51 00 1e 30 48 88
+35 00 bc 86 21 00 00 1c 02 3a 80 18 71 38 2d 40
+58 2c 45 00 c4 8e 21 00 00 1e 00 00 00 fc 00 32
+36 4c 47 33 30 35 30 0a 20 20 20 20 00 00 00 fd
+00 32 4b 1c 43 0f 00 0a 20 20 20 20 20 20 00 21
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1e 6d ef 75 01 01 01 01 02 13
-version:         01 03
-basic params:    08 46 27 78 ea
-chroma info:     d9 b0 a3 57 49 9c 25 11 49 4b
-established:     a5 6e 00
-standard:        31 40 45 40 61 40 81 80 d1 c0 01 01 01 01 01 01
-descriptor 1:    1b 21 50 a0 51 00 1e 30 48 88 35 00 bc 86 21 00 00 1c
-descriptor 2:    02 3a 80 18 71 38 2d 40 58 2c 45 00 c4 8e 21 00 00 1e
-descriptor 3:    00 00 00 fc 00 32 36 4c 47 33 30 35 30 0a 20 20 20 20
-descriptor 4:    00 00 00 fd 00 32 4b 1c 43 0f 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        21
+----------------
 
-EDID version: 1.3
-Manufacturer: GSM Model 75ef Serial Number --
-Made in week 2 of 2009
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate 
-Maximum image size: 70 cm x 39 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3408
-  Green: 0.2871, 0.6103
-  Blue:  0.1464, 0.0693
-  White: 0.2851, 0.2929
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 84.750 MHz, 700 mm x 390 mm
-               1360 1432 1568 1776 hborder 0
-                768  771  776  798 vborder 0
-               -hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 47719 Hz
-Detailed mode: Clock 148.500 MHz, 708 mm x 398 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor name: 26LG3050
-Monitor ranges (GTF): 50-75Hz V, 28-67kHz H, max dotclock 150MHz
-Checksum: 0x21 (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 59 - 75 Hz
-  Horizontal Freq: 31469 - 67500 Hz
-  Maximum Clock: 148.500 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 30191
+    Serial Number: ...
+    Made in: week 2 of 2009
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate
+    Maximum image size: 70 cm x 39 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3408
+    Green: 0.2871, 0.6103
+    Blue : 0.1464, 0.0693
+    White: 0.2851, 0.2929
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    Apple   :   832x624    74.551 Hz   4:3    49.726 kHz  57.284 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1360x768    59.799 Hz  85:48   47.720 kHz  84.750 MHz (700 mm x 390 mm)
+                 Hfront   72 Hsync 136 Hback 208 Hpol N
+                 Vfront    3 Vsync   5 Vback  22 Vpol P
+    DTD 2:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    Display Product Name: '26LG3050'
+  Display Range Limits:
+    Monitor ranges (GTF): 50-75 Hz V, 28-67 kHz H, max dotclock 150 MHz
+Checksum: 0x21

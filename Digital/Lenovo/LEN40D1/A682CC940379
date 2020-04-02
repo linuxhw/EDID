@@ -1,58 +1,43 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030aed14000000000
-00130103801a0e78eabf459558528a28
-25505400000001010101010101010101
-010101010101e21d56dc500023303828
-780000901000001be01856dc50002330
-3828780000901000001b0000000f008c
-093c8c093214090030e47602000000fe
-004c503131365748312d544c423100cf
+00 ff ff ff ff ff ff 00 30 ae d1 40 00 00 00 00
+00 13 01 03 80 1a 0e 78 ea bf 45 95 58 52 8a 28
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 e2 1d 56 dc 50 00 23 30 38 28
+78 00 00 90 10 00 00 1b e0 18 56 dc 50 00 23 30
+38 28 78 00 00 90 10 00 00 1b 00 00 00 0f 00 8c
+09 3c 8c 09 32 14 09 00 30 e4 76 02 00 00 00 fe
+00 4c 50 31 31 36 57 48 31 2d 54 4c 42 31 00 cf
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 ae d1 40 00 00 00 00 00 13
-version:         01 03
-basic params:    80 1a 0e 78 ea
-chroma info:     bf 45 95 58 52 8a 28 25 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    e2 1d 56 dc 50 00 23 30 38 28 78 00 00 90 10 00 00 1b
-descriptor 2:    e0 18 56 dc 50 00 23 30 38 28 78 00 00 90 10 00 00 1b
-descriptor 3:    00 00 00 0f 00 8c 09 3c 8c 09 32 14 09 00 30 e4 76 02
-descriptor 4:    00 00 00 fe 00 4c 50 31 31 36 57 48 31 2d 54 4c 42 31
-extensions:      00
-checksum:        cf
+----------------
 
-EDID version: 1.3
-Manufacturer: LEN Model 40d1 Serial Number --
-Made in year 2009
-Digital display
-Maximum image size: 26 cm x 14 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5839, 0.3466
-  Green: 0.3232, 0.5419
-  Blue:  0.1572, 0.1445
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 76.500 MHz, 256 mm x 144 mm
-               1366 1422 1462 1586 hborder 0
-                768  775  783  803 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48234 Hz
-Detailed mode: Clock 63.680 MHz, 256 mm x 144 mm
-               1366 1422 1462 1586 hborder 0
-                768  775  783  803 vborder 0
-               +hsync -vsync 
-               VertFreq: 50 Hz, HorFreq: 40151 Hz
-Manufacturer-specified data, tag 15
-ASCII string: LP116WH1-TLB1
-Checksum: 0xcf (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16593
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5839, 0.3466
+    Green: 0.3232, 0.5419
+    Blue : 0.1572, 0.1445
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.068 Hz 683:384  48.235 kHz  76.500 MHz (256 mm x 144 mm)
+                 Hfront   56 Hsync  40 Hback 124 Hpol P
+                 Vfront    7 Vsync   8 Vback  20 Vpol N
+    DTD 2:  1366x768    50.002 Hz 683:384  40.151 kHz  63.680 MHz (256 mm x 144 mm)
+                 Hfront   56 Hsync  40 Hback 124 Hpol P
+                 Vfront    7 Vsync   8 Vback  20 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 8c 09 3c 8c 09 32 14 09 00 30 e4 76 02 '.....<..2...0.v.'
+    Alphanumeric Data String: 'LP116WH1-TLB1'
+Checksum: 0xcf

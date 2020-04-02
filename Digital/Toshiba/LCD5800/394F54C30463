@@ -1,60 +1,51 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff003064005835353137
-1a0f0103801a10780a03d59e554c8b25
-20505400000081000101010101010101
-0101010101010e1f008051001e304080
-3700089f100000180e1f008051001e30
-40803700089f10000000000000fe0047
-36373432a23132314558390a000000fe
-00bcafa195785d380001010a202000a3
+00 ff ff ff ff ff ff 00 30 64 00 58 35 35 31 37
+1a 0f 01 03 80 1a 10 78 0a 03 d5 9e 55 4c 8b 25
+20 50 54 00 00 00 81 00 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 0e 1f 00 80 51 00 1e 30 40 80
+37 00 08 9f 10 00 00 18 0e 1f 00 80 51 00 1e 30
+40 80 37 00 08 9f 10 00 00 00 00 00 00 fe 00 47
+36 37 34 32 a2 31 32 31 45 58 39 0a 00 00 00 fe
+00 bc af a1 95 78 5d 38 00 01 01 0a 20 20 00 a3
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 64 00 58 35 35 31 37 1a 0f
-version:         01 03
-basic params:    80 1a 10 78 0a
-chroma info:     03 d5 9e 55 4c 8b 25 20 50 54
-established:     00 00 00
-standard:        81 00 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    0e 1f 00 80 51 00 1e 30 40 80 37 00 08 9f 10 00 00 18
-descriptor 2:    0e 1f 00 80 51 00 1e 30 40 80 37 00 08 9f 10 00 00 00
-descriptor 3:    00 00 00 fe 00 47 36 37 34 32 a2 31 32 31 45 58 39 0a
-descriptor 4:    00 00 00 fe 00 bc af a1 95 78 5d 38 00 01 01 0a 20 20
-extensions:      00
-checksum:        a3
+----------------
 
-EDID version: 1.3
-Manufacturer: LCD Model 5800 Serial Number --
-Digital display
-Maximum image size: 26 cm x 16 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6171, 0.3320
-  Green: 0.2968, 0.5458
-  Blue:  0.1474, 0.1259
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-  1280x800@60Hz 16:10
-Detailed mode: Clock 79.500 MHz, 264 mm x 159 mm
-               1280 1344 1472 1664 hborder 0
-                768  771  778  798 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 47776 Hz
-Detailed mode: Clock 79.500 MHz, 264 mm x 159 mm
-               1280 1344 1472 1664 hborder 0
-                768  771  778  798 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 59 Hz, HorFreq: 47776 Hz
-ASCII string: G6742
-ASCII string: 
-Checksum: 0xa3 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LCD
+    Model: 22528
+    Serial Number: ...
+    Made in: week 26 of 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 26 cm x 16 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6171, 0.3320
+    Green: 0.2968, 0.5458
+    Blue : 0.1474, 0.1259
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings:
+    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x768    59.870 Hz   5:3    47.776 kHz  79.500 MHz (264 mm x 159 mm)
+                 Hfront   64 Hsync 128 Hback 192 Hpol N
+                 Vfront    3 Vsync   7 Vback  20 Vpol N
+    DTD 2:  1280x768    59.870 Hz   5:3    47.776 kHz  79.500 MHz (264 mm x 159 mm)
+                 Hfront   64 Hsync 128 Hback 192 Hpol N
+                 Vfront    3 Vsync   7 Vback  20 Vpol N
+    SPWG Module Revision: 0
+    SPWG Descriptor #3:
+      SPWG PC Maker P/N: 'G6742'
+      SPWG LCD Supplier EEDID Revision: 162
+      SPWG Manufacturer P/N: '121EX9'
+    SPWG Descriptor #4:
+      SMBUS Values: 0xbc 0xaf 0xa1 0x95 0x78 0x5d 0x38 0x00
+      LVDS Channels: 1
+      Panel Self Test Present
+Checksum: 0xa3

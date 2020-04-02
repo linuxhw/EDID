@@ -1,54 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006af749000000000
-01120103802115780a27759858589227
-1d505400000001010101010101010101
-010101010101c71b009e502018303020
-36004bcf100000180000000f00000000
-00000000000000000020000000fe0041
-554f0a200020202020202020000000fe
-004231353445573039205630200a00c5
+00 ff ff ff ff ff ff 00 06 af 74 90 00 00 00 00
+01 12 01 03 80 21 15 78 0a 27 75 98 58 58 92 27
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c7 1b 00 9e 50 20 18 30 30 20
+36 00 4b cf 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 00 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 35 34 45 57 30 39 20 56 30 20 0a 00 c5
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 af 74 90 00 00 00 00 01 12
-version:         01 03
-basic params:    80 21 15 78 0a
-chroma info:     27 75 98 58 58 92 27 1d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    c7 1b 00 9e 50 20 18 30 30 20 36 00 4b cf 10 00 00 18
-descriptor 2:    00 00 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20
-descriptor 3:    00 00 00 fe 00 41 55 4f 0a 20 00 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 42 31 35 34 45 57 30 39 20 56 30 20 0a
-extensions:      00
-checksum:        c5
+----------------
 
-EDID version: 1.3
-Manufacturer: AUO Model 9074 Serial Number --
-Made in week 1 of 2008
-Digital display
-Maximum image size: 33 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5937, 0.3457
-  Green: 0.3447, 0.5732
-  Blue:  0.1533, 0.1162
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 71.110 MHz, 331 mm x 207 mm
-               1280 1328 1360 1438 hborder 0
-                800  803  809  824 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 49450 Hz
-Manufacturer-specified data, tag 15
-ASCII string: AUO
-ASCII string: B154EW09 V0 
-Checksum: 0xc5 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 36980
+    Made in: week 1 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5937, 0.3457
+    Green: 0.3447, 0.5732
+    Blue : 0.1533, 0.1162
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.013 Hz   8:5    49.451 kHz  71.110 MHz (331 mm x 207 mm)
+                 Hfront   48 Hsync  32 Hback  78 Hpol N
+                 Vfront    3 Vsync   6 Vback  15 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B154EW09 V0 '
+Checksum: 0xc5

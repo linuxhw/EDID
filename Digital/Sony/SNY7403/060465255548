@@ -1,53 +1,45 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004dd9037401010101
-07180103809a57782a1bbea25534b326
-144a5220000001010101010101010101
-010101010101023a801871382d40582c
-450003626300001e0000000000000000
-00000000000000000000000000fc0053
-484152502048444d490a2020000000fd
-00174c0f4b11000a202020202020013d
+00 ff ff ff ff ff ff 00 4d d9 03 74 01 01 01 01
+07 18 01 03 80 9a 57 78 2a 1b be a2 55 34 b3 26
+14 4a 52 20 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 03 62 63 00 00 1e 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fc 00 53
+48 41 52 50 20 48 44 4d 49 0a 20 20 00 00 00 fd
+00 17 4c 0f 4b 11 00 0a 20 20 20 20 20 20 01 3d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4d d9 03 74 01 01 01 01 07 18
-version:         01 03
-basic params:    80 9a 57 78 2a
-chroma info:     1b be a2 55 34 b3 26 14 4a 52
-established:     20 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 03 62 63 00 00 1e
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fc 00 53 48 41 52 50 20 48 44 4d 49 0a 20 20
-descriptor 4:    00 00 00 fd 00 17 4c 0f 4b 11 00 0a 20 20 20 20 20 20
-extensions:      01
-checksum:        3d
+----------------
 
-EDID version: 1.3
-Manufacturer: SNY Model 7403 Serial Number --
-Made in week 7 of 2014
-Digital display
-Maximum image size: 154 cm x 87 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6328, 0.3330
-  Green: 0.2050, 0.7021
-  Blue:  0.1503, 0.0810
-  White: 0.2919, 0.3222
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-Standard timings supported:
-Detailed mode: Clock 148.500 MHz, 1539 mm x 866 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Manufacturer-specified data, tag 0
-Monitor name: SHARP HDMI
-Monitor ranges (GTF): 23-76Hz V, 15-75kHz H, max dotclock 170MHz
-Has 1 extension blocks
-Checksum: 0x3d (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SNY
+    Model: 29699
+    Serial Number: ...
+    Made in: week 7 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 154 cm x 87 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6328, 0.3330
+    Green: 0.2050, 0.7021
+    Blue : 0.1503, 0.0810
+    White: 0.2919, 0.3222
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (1539 mm x 866 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    Empty Descriptor
+    Display Product Name: 'SHARP HDMI'
+  Display Range Limits:
+    Monitor ranges (GTF): 23-76 Hz V, 15-75 kHz H, max dotclock 170 MHz
+  Extension blocks: 1
+Checksum: 0x3d

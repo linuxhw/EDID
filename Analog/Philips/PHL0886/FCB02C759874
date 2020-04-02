@@ -1,66 +1,59 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00410c86080a000000
-26140103682f1e782a78f1a655489b26
-125054b74b0081809500950fb3000101
-01010101010121399030621a274068b0
-3600d9281100001c000000ff00415534
-31303338303030303130000000fc0050
-68696c69707320323230530a000000fd
-00384c1e5311000a2020202020200090
+00 ff ff ff ff ff ff 00 41 0c 86 08 0a 00 00 00
+26 14 01 03 68 2f 1e 78 2a 78 f1 a6 55 48 9b 26
+12 50 54 b7 4b 00 81 80 95 00 95 0f b3 00 01 01
+01 01 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0
+36 00 d9 28 11 00 00 1c 00 00 00 ff 00 41 55 34
+31 30 33 38 30 30 30 30 31 30 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 32 32 30 53 0a 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 90
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   41 0c 86 08 0a 00 00 00 26 14
-version:         01 03
-basic params:    68 2f 1e 78 2a
-chroma info:     78 f1 a6 55 48 9b 26 12 50 54
-established:     b7 4b 00
-standard:        81 80 95 00 95 0f b3 00 01 01 01 01 01 01 01 01
-descriptor 1:    21 39 90 30 62 1a 27 40 68 b0 36 00 d9 28 11 00 00 1c
-descriptor 2:    00 00 00 ff 00 41 55 34 31 30 33 38 30 30 30 30 31 30
-descriptor 3:    00 00 00 fc 00 50 68 69 6c 69 70 73 20 32 32 30 53 0a
-descriptor 4:    00 00 00 fd 00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        90
+----------------
 
-EDID version: 1.3
-Manufacturer: PHL Model 886 Serial Number --
-Made in week 38 of 2010
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 47 cm x 30 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6494, 0.3349
-  Green: 0.2832, 0.6054
-  Blue:  0.1513, 0.0732
-  White: 0.3125, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1440x900@75Hz 16:10 HorFreq: 82300 Hz Clock: 156.000 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-Detailed mode: Clock 146.250 MHz, 473 mm x 296 mm
-               1680 1784 1960 2240 hborder 0
-               1050 1053 1059 1089 vborder 0
-               -hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 65290 Hz
-Serial number: --
-Monitor name: Philips 220S
-Monitor ranges (GTF): 56-76Hz V, 30-83kHz H, max dotclock 170MHz
-Checksum: 0x90 (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PHL
+    Model: 2182
+    Serial Number: ...
+    Made in: week 38 of 2010
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate
+    Maximum image size: 47 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6494, 0.3349
+    Green: 0.2832, 0.6054
+    Blue : 0.1513, 0.0732
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    Apple   :   640x480    66.667 Hz   4:3    35.000 kHz  30.240 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x30:  1440x900    74.984 Hz  16:10   70.635 kHz 136.750 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   59.954 Hz   8:5    65.290 kHz 146.250 MHz (473 mm x 296 mm)
+                 Hfront  104 Hsync 176 Hback 280 Hpol N
+                 Vfront    3 Vsync   6 Vback  30 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: 'Philips 220S'
+  Display Range Limits:
+    Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+Checksum: 0x90

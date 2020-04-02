@@ -1,79 +1,67 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff003534701500000000
-270b0101681c157ae826a29c576c9626
-10484ffffe80315945596159714f8140
-818001010101ea240060410028303060
-130004c31000001e302a009851002a40
-3070130004c31000001e000000fd0032
-781e46ff000a202020202020000000fc
-004449474954414c2045313537300086
+00 ff ff ff ff ff ff 00 35 34 70 15 00 00 00 00
+27 0b 01 01 68 1c 15 7a e8 26 a2 9c 57 6c 96 26
+10 48 4f ff fe 80 31 59 45 59 61 59 71 4f 81 40
+81 80 01 01 01 01 ea 24 00 60 41 00 28 30 30 60
+13 00 04 c3 10 00 00 1e 30 2a 00 98 51 00 2a 40
+30 70 13 00 04 c3 10 00 00 1e 00 00 00 fd 00 32
+78 1e 46 ff 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 44 49 47 49 54 41 4c 20 45 31 35 37 30 00 86
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   35 34 70 15 00 00 00 00 27 0b
-version:         01 01
-basic params:    68 1c 15 7a e8
-chroma info:     26 a2 9c 57 6c 96 26 10 48 4f
-established:     ff fe 80
-standard:        31 59 45 59 61 59 71 4f 81 40 81 80 01 01 01 01
-descriptor 1:    ea 24 00 60 41 00 28 30 30 60 13 00 04 c3 10 00 00 1e
-descriptor 2:    30 2a 00 98 51 00 2a 40 30 70 13 00 04 c3 10 00 00 1e
-descriptor 3:    00 00 00 fd 00 32 78 1e 46 ff 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 44 49 47 49 54 41 4c 20 45 31 35 37 30
-extensions:      00
-checksum:        86
+----------------
 
-EDID version: 1.1
-Manufacturer: MIT Model 1570 Serial Number --
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 28 cm x 21 cm
-Gamma: 2.22
-DPMS levels: Standby Suspend Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6093, 0.3417
-  Green: 0.4228, 0.5878
-  Blue:  0.1503, 0.0644
-  White: 0.2812, 0.3105
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  720x400@88Hz 9:5 HorFreq: 39500 Hz Clock: 35.500 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1280x768i@87Hz 5:3 HorFreq: 35522 Hz Clock: 44.900 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1152x870@75Hz 192:145 HorFreq: 67500 Hz Clock: 108.000 MHz
-Standard timings supported:
-  640x480@85Hz 4:3 HorFreq: 43300 Hz Clock: 36.000 MHz
-  800x600@85Hz 4:3 HorFreq: 53700 Hz Clock: 56.250 MHz
-  1024x768@85Hz 4:3 HorFreq: 68700 Hz Clock: 94.500 MHz
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-Detailed mode: Clock 94.500 MHz, 260 mm x 195 mm
-               1024 1072 1168 1376 hborder 0
-                768  769  772  808 vborder 0
-               +hsync +vsync 
-               VertFreq: 84 Hz, HorFreq: 68677 Hz
-Detailed mode: Clock 108.000 MHz, 260 mm x 195 mm
-               1280 1328 1440 1688 hborder 0
-               1024 1025 1028 1066 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 63981 Hz
-Monitor ranges (GTF): 50-120Hz V, 30-70kHz H, max dotclock 2550MHz
-Checksum: 0x86 (valid)
-EDID block does NOT conform to EDID 1.0!
-	Has descriptor blocks other than detailed timings
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: MIT
+    Model: 5488
+    Made in: week 39 of 2001
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate
+    Maximum image size: 28 cm x 21 cm
+    Gamma: 2.22
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6093, 0.3417
+    Green: 0.4228, 0.5878
+    Blue : 0.1503, 0.0644
+    White: 0.2812, 0.3105
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    IBM     :   720x400    87.850 Hz   9:5    39.444 kHz  35.500 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    Apple   :   640x480    66.667 Hz   4:3    35.000 kHz  30.240 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    Apple   :   832x624    74.551 Hz   4:3    49.726 kHz  57.284 MHz
+    DMT 0x0f:  1024x768i   86.958 Hz   4:3    35.522 kHz  44.900 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    Apple   :  1152x870    75.062 Hz 192:145  68.681 kHz 100.000 MHz
+  Standard Timings:
+    DMT 0x07:   640x480    85.008 Hz   4:3    43.269 kHz  36.000 MHz
+    DMT 0x0c:   800x600    85.061 Hz   4:3    53.674 kHz  56.250 MHz
+    DMT 0x13:  1024x768    84.997 Hz   4:3    68.677 kHz  94.500 MHz
+    DMT 0x15:  1152x864    75.000 Hz   4:3    67.500 kHz 108.000 MHz
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    84.997 Hz   4:3    68.677 kHz  94.500 MHz (260 mm x 195 mm)
+                 Hfront   48 Hsync  96 Hback 208 Hpol P
+                 Vfront    1 Vsync   3 Vback  36 Vpol P
+    DTD 2:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz (260 mm x 195 mm)
+                 Hfront   48 Hsync 112 Hback 248 Hpol P
+                 Vfront    1 Vsync   3 Vback  38 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 50-120 Hz V, 30-70 kHz H, max dotclock 2550 MHz
+    Display Product Name: 'DIGITAL E1570'
+Checksum: 0x86

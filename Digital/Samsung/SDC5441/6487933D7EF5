@@ -1,60 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004c83415400000000
-00160104951d11780a7615955b57902a
-21505400000001010101010101010101
-0101010101018a1b565a500027303020
-550025a51000001a0816565a50002730
-3020550025a51000001a000000fe0059
-503958308031333341540a2000000000
-00004121940010000001010a202000ae
+00 ff ff ff ff ff ff 00 4c 83 41 54 00 00 00 00
+00 16 01 04 95 1d 11 78 0a 76 15 95 5b 57 90 2a
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8a 1b 56 5a 50 00 27 30 30 20
+55 00 25 a5 10 00 00 1a 08 16 56 5a 50 00 27 30
+30 20 55 00 25 a5 10 00 00 1a 00 00 00 fe 00 59
+50 39 58 30 80 31 33 33 41 54 0a 20 00 00 00 00
+00 00 41 21 94 00 10 00 00 01 01 0a 20 20 00 ae
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c 83 41 54 00 00 00 00 00 16
-version:         01 04
-basic params:    95 1d 11 78 0a
-chroma info:     76 15 95 5b 57 90 2a 21 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    8a 1b 56 5a 50 00 27 30 30 20 55 00 25 a5 10 00 00 1a
-descriptor 2:    08 16 56 5a 50 00 27 30 30 20 55 00 25 a5 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 59 50 39 58 30 80 31 33 33 41 54 0a 20
-descriptor 4:    00 00 00 00 00 00 41 21 94 00 10 00 00 01 01 0a 20 20
-extensions:      00
-checksum:        ae
+----------------
 
-EDID version: 1.4
-Manufacturer: SDC Model 5441 Serial Number --
-Made in year 2012
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 29 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5830, 0.3583
-  Green: 0.3408, 0.5644
-  Blue:  0.1640, 0.1298
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 70.500 MHz, 293 mm x 165 mm
-               1366 1414 1446 1456 hborder 0
-                768  773  778  807 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48420 Hz
-Detailed mode: Clock 56.400 MHz, 293 mm x 165 mm
-               1366 1414 1446 1456 hborder 0
-                768  773  778  807 vborder 0
-               +hsync -vsync 
-               VertFreq: 48 Hz, HorFreq: 38736 Hz
-ASCII string: YP9X0
-Manufacturer-specified data, tag 0
-Checksum: 0xae (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 21569
+    Made in: 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5830, 0.3583
+    Green: 0.3408, 0.5644
+    Blue : 0.1640, 0.1298
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.000 Hz 683:384  48.420 kHz  70.500 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  10 Hpol P
+                 Vfront    5 Vsync   5 Vback  29 Vpol N
+    DTD 2:  1366x768    48.000 Hz 683:384  38.736 kHz  56.400 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  10 Hpol P
+                 Vfront    5 Vsync   5 Vback  29 Vpol N
+    Alphanumeric Data String: 'YP9X0'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 94 00 10 00 00 01 01 0a 20 20 '....A!........  '
+Checksum: 0xae

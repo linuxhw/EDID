@@ -1,60 +1,45 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001473362110111420
-2e180104a5160e78e268d0a555489a26
-13505400000001010101010101010101
-010101010101481c00a0502026303020
-3500dc8c0000001e000000ff00303030
-3030310a0a0a0a0a0a0a000000fd003c
-3c1e3207000a20202020202000000010
-00000000000000000000000000000083
+00 ff ff ff ff ff ff 00 14 73 36 21 10 11 14 20
+2e 18 01 04 a5 16 0e 78 e2 68 d0 a5 55 48 9a 26
+13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 48 1c 00 a0 50 20 26 30 30 20
+35 00 dc 8c 00 00 00 1e 00 00 00 ff 00 30 30 30
+30 30 31 0a 0a 0a 0a 0a 0a 0a 00 00 00 fd 00 3c
+3c 1e 32 07 00 0a 20 20 20 20 20 20 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 83
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   14 73 36 21 10 11 14 20 2e 18
-version:         01 04
-basic params:    a5 16 0e 78 e2
-chroma info:     68 d0 a5 55 48 9a 26 13 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    48 1c 00 a0 50 20 26 30 30 20 35 00 dc 8c 00 00 00 1e
-descriptor 2:    00 00 00 ff 00 30 30 30 30 30 31 0a 0a 0a 0a 0a 0a 0a
-descriptor 3:    00 00 00 fd 00 3c 3c 1e 32 07 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      00
-checksum:        83
+----------------
 
-EDID version: 1.4
-Manufacturer: ECS Model 2136 Serial Number --
-Made in week 46 of 2014
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 22 cm x 14 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6455, 0.3339
-  Green: 0.2832, 0.6015
-  Blue:  0.1513, 0.0751
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 72.400 MHz, 220 mm x 140 mm
-               1280 1328 1360 1440 hborder 0
-                800  803  808  838 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 50277 Hz
-Serial number: --
-Monitor ranges (GTF): 60-60Hz V, 30-50kHz H, max dotclock 70MHz
-Dummy block
-Checksum: 0x83 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Detailed block string not properly terminated
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 59 - 59 Hz
-  Horizontal Freq: 50277 - 50277 Hz
-  Maximum Clock: 72.400 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: ECS
+    Model: 8502
+    Serial Number: ...
+    Made in: week 46 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 22 cm x 14 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6455, 0.3339
+    Green: 0.2832, 0.6015
+    Blue : 0.1513, 0.0751
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.997 Hz   8:5    50.278 kHz  72.400 MHz (220 mm x 140 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  30 Vpol P
+    Display Product Serial Number: ...
+  Display Range Limits:
+    Monitor ranges (GTF): 60-60 Hz V, 30-50 kHz H, max dotclock 70 MHz
+    Dummy Descriptor:
+Checksum: 0x83

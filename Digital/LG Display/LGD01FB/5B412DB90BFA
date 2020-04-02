@@ -1,53 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e4fb0100000000
-00130103802313780a08d59f5a509625
-1e505400000001010101010101010101
-0101010101011a3680a070381f403020
-350059c2100000190000000000000000
-00000000000000000000000000fe004c
-4720446973706c61790a2020000000fe
-004c503135365746312d544c4531009c
+00 ff ff ff ff ff ff 00 30 e4 fb 01 00 00 00 00
+00 13 01 03 80 23 13 78 0a 08 d5 9f 5a 50 96 25
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1a 36 80 a0 70 38 1f 40 30 20
+35 00 59 c2 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 35 36 57 46 31 2d 54 4c 45 31 00 9c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 fb 01 00 00 00 00 00 13
-version:         01 03
-basic params:    80 23 13 78 0a
-chroma info:     08 d5 9f 5a 50 96 25 1e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    1a 36 80 a0 70 38 1f 40 30 20 35 00 59 c2 10 00 00 19
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fe 00 4c 47 20 44 69 73 70 6c 61 79 0a 20 20
-descriptor 4:    00 00 00 fe 00 4c 50 31 35 36 57 46 31 2d 54 4c 45 31
-extensions:      00
-checksum:        9c
+----------------
 
-EDID version: 1.3
-Manufacturer: LGD Model 1fb Serial Number --
-Made in year 2009
-Digital display
-Maximum image size: 35 cm x 19 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6210, 0.3515
-  Green: 0.3144, 0.5859
-  Blue:  0.1474, 0.1181
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 138.500 MHz, 345 mm x 194 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 66586 Hz
-Manufacturer-specified data, tag 0
-ASCII string: LG Display
-ASCII string: LP156WF1-TLE1
-Checksum: 0x9c (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 507
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 35 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6210, 0.3515
+    Green: 0.3144, 0.5859
+    Blue : 0.1474, 0.1181
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.934 Hz  16:9    66.587 kHz 138.500 MHz (345 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP156WF1-TLE1'
+Checksum: 0x9c

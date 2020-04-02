@@ -1,82 +1,63 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0036980003e19a4251
-260f010380291f792a60e5a3574b9c25
-115054254b00a9408180819981408159
-6159455931596f2c0030810026305840
-3f0034363100001ad53500f880002030
-48381f0034363100001a264a0098a100
-2a4030701c0034363100001a9b400068
-8100283070481c003436310000180017
+00 ff ff ff ff ff ff 00 36 98 00 03 e1 9a 42 51
+26 0f 01 03 80 29 1f 79 2a 60 e5 a3 57 4b 9c 25
+11 50 54 25 4b 00 a9 40 81 80 81 99 81 40 81 59
+61 59 45 59 31 59 6f 2c 00 30 81 00 26 30 58 40
+3f 00 34 36 31 00 00 1a d5 35 00 f8 80 00 20 30
+48 38 1f 00 34 36 31 00 00 1a 26 4a 00 98 a1 00
+2a 40 30 70 1c 00 34 36 31 00 00 1a 9b 40 00 68
+81 00 28 30 70 48 1c 00 34 36 31 00 00 18 00 17
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   36 98 00 03 e1 9a 42 51 26 0f
-version:         01 03
-basic params:    80 29 1f 79 2a
-chroma info:     60 e5 a3 57 4b 9c 25 11 50 54
-established:     25 4b 00
-standard:        a9 40 81 80 81 99 81 40 81 59 61 59 45 59 31 59
-descriptor 1:    6f 2c 00 30 81 00 26 30 58 40 3f 00 34 36 31 00 00 1a
-descriptor 2:    d5 35 00 f8 80 00 20 30 48 38 1f 00 34 36 31 00 00 1a
-descriptor 3:    26 4a 00 98 a1 00 2a 40 30 70 1c 00 34 36 31 00 00 1a
-descriptor 4:    9b 40 00 68 81 00 28 30 70 48 1c 00 34 36 31 00 00 18
-extensions:      00
-checksum:        17
+----------------
 
-EDID version: 1.3
-Manufacturer: MTX Model 300 Serial Number --
-Digital display
-Maximum image size: 41 cm x 31 cm
-Gamma: 2.21
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6376, 0.3417
-  Green: 0.2929, 0.6093
-  Blue:  0.1474, 0.0683
-  White: 0.3134, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1280x1024@85Hz 5:4 HorFreq: 91100 Hz Clock: 157.500 MHz
-  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
-  1280x960@85Hz 4:3 HorFreq: 85900 Hz Clock: 148.500 MHz
-  1024x768@85Hz 4:3 HorFreq: 68700 Hz Clock: 94.500 MHz
-  800x600@85Hz 4:3 HorFreq: 53700 Hz Clock: 56.250 MHz
-  640x480@85Hz 4:3 HorFreq: 43300 Hz Clock: 36.000 MHz
-Detailed mode: Clock 113.750 MHz, 820 mm x 310 mm
-               2048 2136 2200 2352 hborder 0
-                768  771  786  806 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48363 Hz
-Detailed mode: Clock 137.810 MHz, 820 mm x 310 mm
-               2048 2120 2176 2296 hborder 0
-                768  769  784  800 vborder 0
-               +hsync -vsync 
-               VertFreq: 75 Hz, HorFreq: 60021 Hz
-Detailed mode: Clock 189.820 MHz, 820 mm x 310 mm
-               2560 2608 2720 2968 hborder 0
-               1024 1025 1037 1066 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 63955 Hz
-Detailed mode: Clock 165.390 MHz, 820 mm x 310 mm
-               2048 2160 2232 2408 hborder 0
-                768  769  781  808 vborder 0
-               -hsync -vsync 
-               VertFreq: 85 Hz, HorFreq: 68683 Hz
-Checksum: 0x17 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MTX
+    Model: 768
+    Serial Number: ...
+    Made in: week 38 of 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 41 cm x 31 cm
+    Gamma: 2.21
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6376, 0.3417
+    Green: 0.2929, 0.6093
+    Blue : 0.1474, 0.0683
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x25:  1280x1024   85.024 Hz   5:4    91.146 kHz 157.500 MHz
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x21:  1280x960    85.002 Hz   4:3    85.938 kHz 148.500 MHz
+    DMT 0x13:  1024x768    84.997 Hz   4:3    68.677 kHz  94.500 MHz
+    DMT 0x0c:   800x600    85.061 Hz   4:3    53.674 kHz  56.250 MHz
+    DMT 0x07:   640x480    85.008 Hz   4:3    43.269 kHz  36.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2048x768    60.004 Hz   8:3    48.363 kHz 113.750 MHz (820 mm x 310 mm)
+                 Hfront   88 Hsync  64 Hback 152 Hpol P
+                 Vfront    3 Vsync  15 Vback  20 Vpol N
+    DTD 2:  2048x768    75.027 Hz   8:3    60.022 kHz 137.810 MHz (820 mm x 310 mm)
+                 Hfront   72 Hsync  56 Hback 120 Hpol P
+                 Vfront    1 Vsync  15 Vback  16 Vpol N
+    DTD 3:  2560x1024   59.996 Hz   5:2    63.956 kHz 189.820 MHz (820 mm x 310 mm)
+                 Hfront   48 Hsync 112 Hback 248 Hpol P
+                 Vfront    1 Vsync  12 Vback  29 Vpol N
+    DTD 4:  2048x768    85.004 Hz   8:3    68.684 kHz 165.390 MHz (820 mm x 310 mm)
+                 Hfront  112 Hsync  72 Hback 176 Hpol N
+                 Vfront    1 Vsync  12 Vback  27 Vpol N
+Checksum: 0x17

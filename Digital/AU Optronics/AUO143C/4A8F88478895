@@ -1,59 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006af3c1400000000
-00130104951f11780245259c5b559c27
-19505400000001010101010101010101
-010101010101121b5646500023302616
-360035ad100000180c12564650002330
-2616360035ad10000018000000000000
-00000000000000000000000000000002
-000c45e80b3c6412121d6e20202000ae
+00 ff ff ff ff ff ff 00 06 af 3c 14 00 00 00 00
+00 13 01 04 95 1f 11 78 02 45 25 9c 5b 55 9c 27
+19 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 56 46 50 00 23 30 26 16
+36 00 35 ad 10 00 00 18 0c 12 56 46 50 00 23 30
+26 16 36 00 35 ad 10 00 00 18 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 45 e8 0b 3c 64 12 12 1d 6e 20 20 20 00 ae
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 af 3c 14 00 00 00 00 00 13
-version:         01 04
-basic params:    95 1f 11 78 02
-chroma info:     45 25 9c 5b 55 9c 27 19 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    12 1b 56 46 50 00 23 30 26 16 36 00 35 ad 10 00 00 18
-descriptor 2:    0c 12 56 46 50 00 23 30 26 16 36 00 35 ad 10 00 00 18
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 02 00 0c 45 e8 0b 3c 64 12 12 1d 6e 20 20 20
-extensions:      00
-checksum:        ae
+----------------
 
-EDID version: 1.4
-Manufacturer: AUO Model 143c Serial Number --
-Made in year 2009
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6103, 0.3554
-  Green: 0.3330, 0.6103
-  Blue:  0.1523, 0.0996
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 69.300 MHz, 309 mm x 173 mm
-               1366 1404 1426 1436 hborder 0
-                768  771  777  803 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48259 Hz
-Detailed mode: Clock 46.200 MHz, 309 mm x 173 mm
-               1366 1404 1426 1436 hborder 0
-                768  771  777  803 vborder 0
-               -hsync -vsync 
-               VertFreq: 40 Hz, HorFreq: 32172 Hz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 2
-Checksum: 0xae (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 5180
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6103, 0.3554
+    Green: 0.3330, 0.6103
+    Blue : 0.1523, 0.0996
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.098 Hz 683:384  48.259 kHz  69.300 MHz (309 mm x 173 mm)
+                 Hfront   38 Hsync  22 Hback  10 Hpol N
+                 Vfront    3 Vsync   6 Vback  26 Vpol N
+    DTD 2:  1366x768    40.066 Hz 683:384  32.173 kHz  46.200 MHz (309 mm x 173 mm)
+                 Hfront   38 Hsync  22 Hback  10 Hpol N
+                 Vfront    3 Vsync   6 Vback  26 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 45 e8 0b 3c 64 12 12 1d 6e 20 20 20 '....E..<d...n   '
+Checksum: 0xae

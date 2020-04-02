@@ -1,69 +1,58 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00368b100001010101
-071401031f5d3478ca31c3a3554a9b24
-10474aafcf0001010101010101010101
-0101010101011a3680a070381f403020
-3500a20b3200001a000000fd0032551f
-460f000a202020202020000000ff0053
-4b464a424c30373032303239000000fc
-0053563432325856540a20202020005d
+00 ff ff ff ff ff ff 00 36 8b 10 00 01 01 01 01
+07 14 01 03 1f 5d 34 78 ca 31 c3 a3 55 4a 9b 24
+10 47 4a af cf 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1a 36 80 a0 70 38 1f 40 30 20
+35 00 a2 0b 32 00 00 1a 00 00 00 fd 00 32 55 1f
+46 0f 00 0a 20 20 20 20 20 20 00 00 00 ff 00 53
+4b 46 4a 42 4c 30 37 30 32 30 32 39 00 00 00 fc
+00 53 56 34 32 32 58 56 54 0a 20 20 20 20 00 5d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   36 8b 10 00 01 01 01 01 07 14
-version:         01 03
-basic params:    1f 5d 34 78 ca
-chroma info:     31 c3 a3 55 4a 9b 24 10 47 4a
-established:     af cf 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    1a 36 80 a0 70 38 1f 40 30 20 35 00 a2 0b 32 00 00 1a
-descriptor 2:    00 00 00 fd 00 32 55 1f 46 0f 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 ff 00 53 4b 46 4a 42 4c 30 37 30 32 30 32 39
-descriptor 4:    00 00 00 fc 00 53 56 34 32 32 58 56 54 0a 20 20 20 20
-extensions:      00
-checksum:        5d
+----------------
 
-EDID version: 1.3
-Manufacturer: MTK Model 10 Serial Number --
-Made in week 7 of 2010
-Analog display, Input voltage level: 0.7/0.3 V
-Configurable signal levels
-Sync: Separate Composite SyncOnGreen Serration 
-Maximum image size: 93 cm x 52 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6367, 0.3349
-  Green: 0.2890, 0.6064
-  Blue:  0.1435, 0.0625
-  White: 0.2773, 0.2919
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-Detailed mode: Clock 138.500 MHz, 930 mm x 523 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 66586 Hz
-Monitor ranges (GTF): 50-85Hz V, 31-70kHz H, max dotclock 150MHz
-Serial number: --
-Monitor name: SV422XVT
-Checksum: 0x5d (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 56 - 75 Hz
-  Horizontal Freq: 31469 - 80000 Hz
-  Maximum Clock: 138.500 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MTK
+    Model: 16
+    Serial Number: ...
+    Made in: week 7 of 2010
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Configurable signal levels
+    Sync: Separate Composite SyncOnGreen Serration
+    Maximum image size: 93 cm x 52 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6367, 0.3349
+    Green: 0.2890, 0.6064
+    Blue : 0.1435, 0.0625
+    White: 0.2773, 0.2919
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.934 Hz  16:9    66.587 kHz 138.500 MHz (930 mm x 523 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+  Display Range Limits:
+    Monitor ranges (GTF): 50-85 Hz V, 31-70 kHz H, max dotclock 150 MHz
+    Display Product Serial Number: ...
+    Display Product Name: 'SV422XVT'
+Checksum: 0x5d

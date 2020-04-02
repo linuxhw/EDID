@@ -1,59 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0025cc130000000000
-00140103901f11780ac8859e57549b26
-12505400000001010101010101010101
-0101010101019a1a565050001030140d
-320035ae1000001a9a1a565050001030
-140d320035ae10000000000000fe0031
-394a5450803134304757303100000000
-00000000000000000001010a2020005b
+00 ff ff ff ff ff ff 00 25 cc 13 00 00 00 00 00
+00 14 01 03 90 1f 11 78 0a c8 85 9e 57 54 9b 26
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9a 1a 56 50 50 00 10 30 14 0d
+32 00 35 ae 10 00 00 1a 9a 1a 56 50 50 00 10 30
+14 0d 32 00 35 ae 10 00 00 00 00 00 00 fe 00 31
+39 4a 54 50 80 31 34 30 47 57 30 31 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 01 0a 20 20 00 5b
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   25 cc 13 00 00 00 00 00 00 14
-version:         01 03
-basic params:    90 1f 11 78 0a
-chroma info:     c8 85 9e 57 54 9b 26 12 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    9a 1a 56 50 50 00 10 30 14 0d 32 00 35 ae 10 00 00 1a
-descriptor 2:    9a 1a 56 50 50 00 10 30 14 0d 32 00 35 ae 10 00 00 00
-descriptor 3:    00 00 00 fe 00 31 39 4a 54 50 80 31 34 30 47 57 30 31
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20
-extensions:      00
-checksum:        5b
+----------------
 
-EDID version: 1.3
-Manufacturer: INL Model 13 Serial Number --
-Made in year 2010
-Digital display
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6201, 0.3398
-  Green: 0.3300, 0.6054
-  Blue:  0.1503, 0.0703
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 68.100 MHz, 309 mm x 174 mm
-               1366 1386 1399 1446 hborder 0
-                768  771  773  784 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 47095 Hz
-Detailed mode: Clock 68.100 MHz, 309 mm x 174 mm
-               1366 1386 1399 1446 hborder 0
-                768  771  773  784 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 60 Hz, HorFreq: 47095 Hz
-ASCII string: 19JTP
-Manufacturer-specified data, tag 0
-Checksum: 0x5b (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 10
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: INL
+    Model: 19
+    Made in: 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6201, 0.3398
+    Green: 0.3300, 0.6054
+    Blue : 0.1503, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.071 Hz 683:384  47.095 kHz  68.100 MHz (309 mm x 174 mm)
+                 Hfront   20 Hsync  13 Hback  47 Hpol P
+                 Vfront    3 Vsync   2 Vback  11 Vpol N
+    DTD 2:  1366x768    60.071 Hz 683:384  47.095 kHz  68.100 MHz (analog composite, sync-on-green, 309 mm x 174 mm)
+                 Hfront   20 Hsync  13 Hback  47 Hpol N
+                 Vfront    3 Vsync   2 Vback  11 Vpol N
+    Alphanumeric Data String: '19JTP'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20 '..............  '
+Checksum: 0x5b

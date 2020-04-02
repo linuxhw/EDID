@@ -1,74 +1,58 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000ed40300a9900200
-0f1001030800000001ee95a3544c9926
-0f5054adcf008180818a010101010101
-0101010101016c399030621a274068b0
-360000000000000070499050621a3140
-78b0360000000000000000000010001a
-314078b03600000000000000000000fe
-0043565445313638302a31303530008c
+00 ff ff ff ff ff ff 00 0e d4 03 00 a9 90 02 00
+0f 10 01 03 08 00 00 00 01 ee 95 a3 54 4c 99 26
+0f 50 54 ad cf 00 81 80 81 8a 01 01 01 01 01 01
+01 01 01 01 01 01 6c 39 90 30 62 1a 27 40 68 b0
+36 00 00 00 00 00 00 00 70 49 90 50 62 1a 31 40
+78 b0 36 00 00 00 00 00 00 00 00 00 00 10 00 1a
+31 40 78 b0 36 00 00 00 00 00 00 00 00 00 00 fe
+00 43 56 54 45 31 36 38 30 2a 31 30 35 30 00 8c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0e d4 03 00 a9 90 02 00 0f 10
-version:         01 03
-basic params:    08 00 00 00 01
-chroma info:     ee 95 a3 54 4c 99 26 0f 50 54
-established:     ad cf 00
-standard:        81 80 81 8a 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    6c 39 90 30 62 1a 27 40 68 b0 36 00 00 00 00 00 00 00
-descriptor 2:    70 49 90 50 62 1a 31 40 78 b0 36 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 10 00 1a 31 40 78 b0 36 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 fe 00 43 56 54 45 31 36 38 30 2a 31 30 35 30
-extensions:      00
-checksum:        8c
+----------------
 
-EDID version: 1.3
-Manufacturer: CVT Model 3 Serial Number --
-Made in week 15 of 2006
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate 
-Image size is variable
-Gamma: 1.00
-Monochrome or grayscale display
-Supports GTF timings within operating range
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1503, 0.0595
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1280x1024@70Hz 5:4
-Detailed mode: Clock 147.000 MHz, 0 mm x 0 mm
-               1680 1784 1960 2240 hborder 0
-               1050 1053 1059 1089 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 60 Hz, HorFreq: 65625 Hz
-Detailed mode: Clock 188.000 MHz, 0 mm x 0 mm
-               1680 1800 1976 2272 hborder 0
-               1050 1053 1059 1099 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 75 Hz, HorFreq: 82746 Hz
-Dummy block
-ASCII string: CVTE1680*1050
-Checksum: 0x8c (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing preferred timing
-	Missing monitor ranges
-EDID block does not conform at all!
-	Dummy block filled with garbage
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CVT
+    Model: 3
+    Serial Number: ...
+    Made in: week 15 of 2006
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate
+    Image size is variable
+    Gamma: 1.00
+    Monochrome or grayscale display
+    Supports GTF timings within operating range
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    GTF     :  1280x1024   70.000 Hz   5:4    74.620 kHz 128.943 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   60.262 Hz   8:5    65.625 kHz 147.000 MHz (analog composite, sync-on-green)
+                 Hfront  104 Hsync 176 Hback 280 Hpol N
+                 Vfront    3 Vsync   6 Vback  30 Vpol N
+    DTD 2:  1680x1050   75.293 Hz   8:5    82.746 kHz 188.000 MHz (analog composite, sync-on-green)
+                 Hfront  120 Hsync 176 Hback 296 Hpol N
+                 Vfront    3 Vsync   6 Vback  40 Vpol N
+    Dummy Descriptor:
+    Alphanumeric Data String: 'CVTE1680*1050'
+Checksum: 0x8c

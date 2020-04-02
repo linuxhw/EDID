@@ -1,54 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0042d32b2801010101
-27130103802f1c782efff5a556499d24
-16505400000001010101010101010101
-010101010101023a801871382d40582c
-4500dc0c1100001a000000fd00304c18
-5e11000a202020202020000000fc0049
-505053422d4f54580a202020000000ff
-00504547413131313232390a202000f6
+00 ff ff ff ff ff ff 00 42 d3 2b 28 01 01 01 01
+27 13 01 03 80 2f 1c 78 2e ff f5 a5 56 49 9d 24
+16 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1a 00 00 00 fd 00 30 4c 18
+5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 49
+50 50 53 42 2d 4f 54 58 0a 20 20 20 00 00 00 ff
+00 50 45 47 41 31 31 31 32 32 39 0a 20 20 00 f6
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   42 d3 2b 28 01 01 01 01 27 13
-version:         01 03
-basic params:    80 2f 1c 78 2e
-chroma info:     ff f5 a5 56 49 9d 24 16 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 dc 0c 11 00 00 1a
-descriptor 2:    00 00 00 fd 00 30 4c 18 5e 11 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 49 50 50 53 42 2d 4f 54 58 0a 20 20 20
-descriptor 4:    00 00 00 ff 00 50 45 47 41 31 31 31 32 32 39 0a 20 20
-extensions:      00
-checksum:        f6
+----------------
 
-EDID version: 1.3
-Manufacturer: PVS Model 282b Serial Number --
-Made in week 39 of 2009
-Digital display
-Maximum image size: 47 cm x 28 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6474, 0.3388
-  Green: 0.2880, 0.6162
-  Blue:  0.1435, 0.0888
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 148.500 MHz, 476 mm x 268 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor ranges (GTF): 48-76Hz V, 24-94kHz H, max dotclock 170MHz
-Monitor name: IPPSB-OTX
-Serial number: --
-Checksum: 0xf6 (valid)
-EDID block does NOT conform to EDID 1.3!
-	sRGB is signaled, but the chromaticities do not match
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PVS
+    Model: 10283
+    Serial Number: ...
+    Made in: week 39 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 47 cm x 28 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6474, 0.3388
+    Green: 0.2880, 0.6162
+    Blue : 0.1435, 0.0888
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (476 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol N
+  Display Range Limits:
+    Monitor ranges (GTF): 48-76 Hz V, 24-94 kHz H, max dotclock 170 MHz
+    Display Product Name: 'IPPSB-OTX'
+    Display Product Serial Number: ...
+Checksum: 0xf6

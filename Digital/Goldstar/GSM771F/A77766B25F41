@@ -1,65 +1,55 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001e6d1f774dc40600
-091c010380502178ea09c1ae5044af26
-0e50542108007140818081c0a9c0d1c0
-810001010101e77c70a0d0a029503020
-3a00204a3100001a9d6770a0d0a02250
-30203a00204a3100001a000000fd0030
-3d1e873c000a202020202020000000fc
-004c472048445220354b0a20202001a7
+00 ff ff ff ff ff ff 00 1e 6d 1f 77 4d c4 06 00
+09 1c 01 03 80 50 21 78 ea 09 c1 ae 50 44 af 26
+0e 50 54 21 08 00 71 40 81 80 81 c0 a9 c0 d1 c0
+81 00 01 01 01 01 e7 7c 70 a0 d0 a0 29 50 30 20
+3a 00 20 4a 31 00 00 1a 9d 67 70 a0 d0 a0 22 50
+30 20 3a 00 20 4a 31 00 00 1a 00 00 00 fd 00 30
+3d 1e 87 3c 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 47 20 48 44 52 20 35 4b 0a 20 20 20 01 a7
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1e 6d 1f 77 4d c4 06 00 09 1c
-version:         01 03
-basic params:    80 50 21 78 ea
-chroma info:     09 c1 ae 50 44 af 26 0e 50 54
-established:     21 08 00
-standard:        71 40 81 80 81 c0 a9 c0 d1 c0 81 00 01 01 01 01
-descriptor 1:    e7 7c 70 a0 d0 a0 29 50 30 20 3a 00 20 4a 31 00 00 1a
-descriptor 2:    9d 67 70 a0 d0 a0 22 50 30 20 3a 00 20 4a 31 00 00 1a
-descriptor 3:    00 00 00 fd 00 30 3d 1e 87 3c 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 4c 47 20 48 44 52 20 35 4b 0a 20 20 20
-extensions:      01
-checksum:        a7
+----------------
 
-EDID version: 1.3
-Manufacturer: GSM Model 771f Serial Number --
-Made in week 9 of 2018
-Digital display
-Maximum image size: 80 cm x 33 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6796, 0.3125
-  Green: 0.2675, 0.6845
-  Blue:  0.1513, 0.0546
-  White: 0.3125, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1152x864@60Hz 4:3
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1280x720@60Hz 16:9
-  1600x900@60Hz 16:9
-  1920x1080@60Hz 16:9
-  1280x800@60Hz 16:10
-Detailed mode: Clock 319.750 MHz, 800 mm x 330 mm
-               3440 3488 3520 3600 hborder 0
-               1440 1443 1453 1481 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 88819 Hz
-Detailed mode: Clock 265.250 MHz, 800 mm x 330 mm
-               3440 3488 3520 3600 hborder 0
-               1440 1443 1453 1474 vborder 0
-               +hsync -vsync 
-               VertFreq: 49 Hz, HorFreq: 73680 Hz
-Monitor ranges (GTF): 48-61Hz V, 30-135kHz H, max dotclock 600MHz
-Monitor name: LG HDR 5K
-Has 1 extension blocks
-Checksum: 0xa7 (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 30495
+    Serial Number: ...
+    Made in: week 9 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 80 cm x 33 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6796, 0.3125
+    Green: 0.2675, 0.6845
+    Blue : 0.1513, 0.0546
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    GTF     :  1152x864    60.000 Hz   4:3    53.700 kHz  81.624 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3440x1440   59.973 Hz  43:18   88.819 kHz 319.750 MHz (800 mm x 330 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync  10 Vback  28 Vpol N
+    DTD 2:  3440x1440   49.987 Hz  43:18   73.681 kHz 265.250 MHz (800 mm x 330 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync  10 Vback  21 Vpol N
+  Display Range Limits:
+    Monitor ranges (GTF): 48-61 Hz V, 30-135 kHz H, max dotclock 600 MHz
+    Display Product Name: 'LG HDR 5K'
+  Extension blocks: 1
+Checksum: 0xa7

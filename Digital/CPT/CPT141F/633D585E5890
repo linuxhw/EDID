@@ -1,54 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000e141f1400000000
-1c110103802115780a092d9d564f9027
-21505400000001010101010101010101
-010101010101bc1b0090502010303020
-36004bcf100000190000000f00000000
-0000000000206e050f00000000fe0054
-4d3132313031353457423820000000fe
-00283742486e87b9ff010120202000cf
+00 ff ff ff ff ff ff 00 0e 14 1f 14 00 00 00 00
+1c 11 01 03 80 21 15 78 0a 09 2d 9d 56 4f 90 27
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 1b 00 90 50 20 10 30 30 20
+36 00 4b cf 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 20 6e 05 0f 00 00 00 00 fe 00 54
+4d 31 32 31 30 31 35 34 57 42 38 20 00 00 00 fe
+00 28 37 42 48 6e 87 b9 ff 01 01 20 20 20 00 cf
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0e 14 1f 14 00 00 00 00 1c 11
-version:         01 03
-basic params:    80 21 15 78 0a
-chroma info:     09 2d 9d 56 4f 90 27 21 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    bc 1b 00 90 50 20 10 30 30 20 36 00 4b cf 10 00 00 19
-descriptor 2:    00 00 00 0f 00 00 00 00 00 00 00 00 00 20 6e 05 0f 00
-descriptor 3:    00 00 00 fe 00 54 4d 31 32 31 30 31 35 34 57 42 38 20
-descriptor 4:    00 00 00 fe 00 28 37 42 48 6e 87 b9 ff 01 01 20 20 20
-extensions:      00
-checksum:        cf
+----------------
 
-EDID version: 1.3
-Manufacturer: CPT Model 141f Serial Number --
-Made in week 28 of 2007
-Digital display
-Maximum image size: 33 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6132, 0.3359
-  Green: 0.3105, 0.5634
-  Blue:  0.1523, 0.1308
-  White: 0.3154, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 71.000 MHz, 331 mm x 207 mm
-               1280 1328 1360 1424 hborder 0
-                800  803  809  816 vborder 0
-               -hsync -vsync 
-               VertFreq: 61 Hz, HorFreq: 49859 Hz
-Manufacturer-specified data, tag 15
-ASCII string: TM1210154WB8 
-ASCII string: (7BHn
-Checksum: 0xcf (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CPT
+    Model: 5151
+    Made in: week 28 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6132, 0.3359
+    Green: 0.3105, 0.5634
+    Blue : 0.1523, 0.1308
+    White: 0.3154, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    61.102 Hz   8:5    49.860 kHz  71.000 MHz (331 mm x 207 mm)
+                 Hfront   48 Hsync  32 Hback  64 Hpol N
+                 Vfront    3 Vsync   6 Vback   7 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 20 6e 05 0f 00 '........... n...'
+    Alphanumeric Data String: 'TM1210154WB8 '
+    Alphanumeric Data String: '(7BHn'
+Checksum: 0xcf

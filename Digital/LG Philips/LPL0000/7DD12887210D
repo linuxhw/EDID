@@ -1,59 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00320c000000000000
-00120103902115780ab7859959538d27
-25505400000001010101010101010101
-010101010101121b0088502010303018
-36004bcf1000001b0e12008850201030
-301836004bcf1000001b000000fe0058
-33393748803135345758350a00000000
-0026343e446489a4ff01010a20200018
+00 ff ff ff ff ff ff 00 32 0c 00 00 00 00 00 00
+00 12 01 03 90 21 15 78 0a b7 85 99 59 53 8d 27
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 00 88 50 20 10 30 30 18
+36 00 4b cf 10 00 00 1b 0e 12 00 88 50 20 10 30
+30 18 36 00 4b cf 10 00 00 1b 00 00 00 fe 00 58
+33 39 37 48 80 31 35 34 57 58 35 0a 00 00 00 00
+00 26 34 3e 44 64 89 a4 ff 01 01 0a 20 20 00 18
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   32 0c 00 00 00 00 00 00 00 12
-version:         01 03
-basic params:    90 21 15 78 0a
-chroma info:     b7 85 99 59 53 8d 27 25 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    12 1b 00 88 50 20 10 30 30 18 36 00 4b cf 10 00 00 1b
-descriptor 2:    0e 12 00 88 50 20 10 30 30 18 36 00 4b cf 10 00 00 1b
-descriptor 3:    00 00 00 fe 00 58 33 39 37 48 80 31 35 34 57 58 35 0a
-descriptor 4:    00 00 00 00 00 26 34 3e 44 64 89 a4 ff 01 01 0a 20 20
-extensions:      00
-checksum:        18
+----------------
 
-EDID version: 1.3
-Manufacturer: LPL Model 0 Serial Number --
-Made in year 2008
-Digital display
-Maximum image size: 33 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5996, 0.3505
-  Green: 0.3251, 0.5537
-  Blue:  0.1542, 0.1445
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 69.300 MHz, 331 mm x 207 mm
-               1280 1328 1352 1416 hborder 0
-                800  803  809  816 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 48940 Hz
-Detailed mode: Clock 46.220 MHz, 331 mm x 207 mm
-               1280 1328 1352 1416 hborder 0
-                800  803  809  816 vborder 0
-               +hsync -vsync 
-               VertFreq: 40 Hz, HorFreq: 32641 Hz
-ASCII string: X397H
-Manufacturer-specified data, tag 0
-Checksum: 0x18 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 10
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LPL
+    Model: 0
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5996, 0.3505
+    Green: 0.3251, 0.5537
+    Blue : 0.1542, 0.1445
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.976 Hz   8:5    48.941 kHz  69.300 MHz (331 mm x 207 mm)
+                 Hfront   48 Hsync  24 Hback  64 Hpol P
+                 Vfront    3 Vsync   6 Vback   7 Vpol N
+    DTD 2:  1280x800    40.002 Hz   8:5    32.641 kHz  46.220 MHz (331 mm x 207 mm)
+                 Hfront   48 Hsync  24 Hback  64 Hpol P
+                 Vfront    3 Vsync   6 Vback   7 Vpol N
+    Alphanumeric Data String: 'X397H'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 26 34 3e 44 64 89 a4 ff 01 01 0a 20 20 '...&4>Dd......  '
+Checksum: 0x18

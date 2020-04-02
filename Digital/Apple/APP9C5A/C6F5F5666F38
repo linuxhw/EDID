@@ -1,55 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006105a9c01010101
-000f0103812b1b780ae695a3544a9926
-0f505400001001010101010101010101
-0101010101017c2e90a0601a1e403020
-3600b10e110000180000000100061030
-11000000000000000a20000000fe004c
-544d3230314d310000000a20000000fc
-00436f6c6f72204c43440a202020002c
+00 ff ff ff ff ff ff 00 06 10 5a 9c 01 01 01 01
+00 0f 01 03 81 2b 1b 78 0a e6 95 a3 54 4a 99 26
+0f 50 54 00 00 10 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20
+36 00 b1 0e 11 00 00 18 00 00 00 01 00 06 10 30
+11 00 00 00 00 00 00 00 0a 20 00 00 00 fe 00 4c
+54 4d 32 30 31 4d 31 00 00 00 0a 20 00 00 00 fc
+00 43 6f 6c 6f 72 20 4c 43 44 0a 20 20 20 00 2c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 10 5a 9c 01 01 01 01 00 0f
-version:         01 03
-basic params:    81 2b 1b 78 0a
-chroma info:     e6 95 a3 54 4a 99 26 0f 50 54
-established:     00 00 10
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    7c 2e 90 a0 60 1a 1e 40 30 20 36 00 b1 0e 11 00 00 18
-descriptor 2:    00 00 00 01 00 06 10 30 11 00 00 00 00 00 00 00 0a 20
-descriptor 3:    00 00 00 fe 00 4c 54 4d 32 30 31 4d 31 00 00 00 0a 20
-descriptor 4:    00 00 00 fc 00 43 6f 6c 6f 72 20 4c 43 44 0a 20 20 20
-extensions:      00
-checksum:        2c
+----------------
 
-EDID version: 1.3
-Manufacturer: APP Model 9c5a Serial Number --
-Digital display
-DFP 1.x compatible TMDS
-Maximum image size: 43 cm x 27 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2900, 0.5996
-  Blue:  0.1503, 0.0595
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 119.000 MHz, 433 mm x 270 mm
-               1680 1728 1760 1840 hborder 0
-               1050 1053 1059 1080 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 64673 Hz
-Manufacturer-specified data, tag 1
-ASCII string: LTM201M1
-Monitor name: Color LCD
-Checksum: 0x2c (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing monitor ranges
-	Detailed block string not properly terminated
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 40026
+    Serial Number: ...
+    Made in: 2005
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 43 cm x 27 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2900, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   59.883 Hz   8:5    64.674 kHz 119.000 MHz (433 mm x 270 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   6 Vback  21 Vpol N
+    Manufacturer-Specified Display Descriptor (0x01): 00 01 00 06 10 30 11 00 00 00 00 00 00 00 0a 20 '.....0......... '
+    Alphanumeric Data String: 'LTM201M1'
+    Display Product Name: 'Color LCD'
+Checksum: 0x2c

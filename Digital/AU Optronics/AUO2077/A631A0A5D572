@@ -1,58 +1,49 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006af772000000000
-01100103802115780a1cf59758508e27
-27505400000001010101010101010101
-0101010101019e25a04051840c304020
-33004bcf100000195a1fa04051840c30
-402033004bcf10000000000000fe0047
-553432390042313534505732000000fe
-002635414a6789b6ff02010a20200018
+00 ff ff ff ff ff ff 00 06 af 77 20 00 00 00 00
+01 10 01 03 80 21 15 78 0a 1c f5 97 58 50 8e 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9e 25 a0 40 51 84 0c 30 40 20
+33 00 4b cf 10 00 00 19 5a 1f a0 40 51 84 0c 30
+40 20 33 00 4b cf 10 00 00 00 00 00 00 fe 00 47
+55 34 32 39 00 42 31 35 34 50 57 32 00 00 00 fe
+00 26 35 41 4a 67 89 b6 ff 02 01 0a 20 20 00 18
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 af 77 20 00 00 00 00 01 10
-version:         01 03
-basic params:    80 21 15 78 0a
-chroma info:     1c f5 97 58 50 8e 27 27 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    9e 25 a0 40 51 84 0c 30 40 20 33 00 4b cf 10 00 00 19
-descriptor 2:    5a 1f a0 40 51 84 0c 30 40 20 33 00 4b cf 10 00 00 00
-descriptor 3:    00 00 00 fe 00 47 55 34 32 39 00 42 31 35 34 50 57 32
-descriptor 4:    00 00 00 fe 00 26 35 41 4a 67 89 b6 ff 02 01 0a 20 20
-extensions:      00
-checksum:        18
+----------------
 
-EDID version: 1.3
-Manufacturer: AUO Model 2077 Serial Number --
-Made in week 1 of 2006
-Digital display
-Maximum image size: 33 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5898, 0.3447
-  Green: 0.3154, 0.5546
-  Blue:  0.1552, 0.1552
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 96.300 MHz, 331 mm x 207 mm
-               1440 1504 1536 1760 hborder 0
-                900  903  906  912 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 54715 Hz
-Detailed mode: Clock 80.260 MHz, 331 mm x 207 mm
-               1440 1504 1536 1760 hborder 0
-                900  903  906  912 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 50 Hz, HorFreq: 45602 Hz
-ASCII string: GU429
-ASCII string: &5AJg
-Checksum: 0x18 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 8311
+    Made in: week 1 of 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3447
+    Green: 0.3154, 0.5546
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    59.996 Hz   8:5    54.716 kHz  96.300 MHz (DE timing only, 331 mm x 207 mm)
+                 Hfront   64 Hsync  32 Hback 224 Hpol N
+                 Vfront    3 Vsync   3 Vback   6 Vpol N
+    DTD 2:  1440x900    50.002 Hz   8:5    45.602 kHz  80.260 MHz (DE timing only, 331 mm x 207 mm)
+                 Hfront   64 Hsync  32 Hback 224 Hpol N
+                 Vfront    3 Vsync   3 Vback   6 Vpol N
+    SPWG Module Revision: 0
+    SPWG Descriptor #3:
+      SPWG PC Maker P/N: 'GU429'
+      SPWG LCD Supplier EEDID Revision: 0
+      SPWG Manufacturer P/N: 'B154PW2'
+    SPWG Descriptor #4:
+      SMBUS Values: 0x26 0x35 0x41 0x4a 0x67 0x89 0xb6 0xff
+      LVDS Channels: 2
+      Panel Self Test Present
+Checksum: 0x18

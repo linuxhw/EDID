@@ -1,53 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e4600300000000
-00150103801d11780a00050000000000
-00505400000001010101010101010101
-0101010101012e2640b860840c303030
-230026a6100000190000000000000000
-00000000000000000000000000fe004c
-4720446973706c61790a2020000000fe
-004c503133335744322d534c4231009b
+00 ff ff ff ff ff ff 00 30 e4 60 03 00 00 00 00
+00 15 01 03 80 1d 11 78 0a 00 05 00 00 00 00 00
+00 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2e 26 40 b8 60 84 0c 30 30 30
+23 00 26 a6 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 33 33 57 44 32 2d 53 4c 42 31 00 9b
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 60 03 00 00 00 00 00 15
-version:         01 03
-basic params:    80 1d 11 78 0a
-chroma info:     00 05 00 00 00 00 00 00 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    2e 26 40 b8 60 84 0c 30 30 30 23 00 26 a6 10 00 00 19
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fe 00 4c 47 20 44 69 73 70 6c 61 79 0a 20 20
-descriptor 4:    00 00 00 fe 00 4c 50 31 33 33 57 44 32 2d 53 4c 42 31
-extensions:      00
-checksum:        9b
+----------------
 
-EDID version: 1.3
-Manufacturer: LGD Model 360 Serial Number --
-Made in year 2011
-Digital display
-Maximum image size: 29 cm x 17 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.0000, 0.0000
-  Green: 0.0000, 0.0000
-  Blue:  0.0000, 0.0000
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 97.740 MHz, 294 mm x 166 mm
-               1600 1648 1696 1784 hborder 0
-                900  902  905  912 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 54786 Hz
-Manufacturer-specified data, tag 0
-ASCII string: LG Display
-ASCII string: LP133WD2-SLB1
-Checksum: 0x9b (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 864
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.0000, 0.0000
+    Green: 0.0000, 0.0000
+    Blue : 0.0000, 0.0000
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.073 Hz  16:9    54.787 kHz  97.740 MHz (294 mm x 166 mm)
+                 Hfront   48 Hsync  48 Hback  88 Hpol N
+                 Vfront    2 Vsync   3 Vback   7 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP133WD2-SLB1'
+Checksum: 0x9b

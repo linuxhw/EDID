@@ -1,81 +1,66 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff002a59000000000000
-2a1b0104b53c217833aff0ab5053a322
-115054bd6b8081c081809500a9c0b300
-d1c001010101f843803072385a403020
-3500584a2100001a4dd000a0f0703e80
-30203500584a2100001a000000fd002c
-3fa0a03c010a202020202020000000fc
-0044500a20202020202020202020018d
+00 ff ff ff ff ff ff 00 2a 59 00 00 00 00 00 00
+2a 1b 01 04 b5 3c 21 78 33 af f0 ab 50 53 a3 22
+11 50 54 bd 6b 80 81 c0 81 80 95 00 a9 c0 b3 00
+d1 c0 01 01 01 01 f8 43 80 30 72 38 5a 40 30 20
+35 00 58 4a 21 00 00 1a 4d d0 00 a0 f0 70 3e 80
+30 20 35 00 58 4a 21 00 00 1a 00 00 00 fd 00 2c
+3f a0 a0 3c 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 44 50 0a 20 20 20 20 20 20 20 20 20 20 01 8d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   2a 59 00 00 00 00 00 00 2a 1b
-version:         01 04
-basic params:    b5 3c 21 78 33
-chroma info:     af f0 ab 50 53 a3 22 11 50 54
-established:     bd 6b 80
-standard:        81 c0 81 80 95 00 a9 c0 b3 00 d1 c0 01 01 01 01
-descriptor 1:    f8 43 80 30 72 38 5a 40 30 20 35 00 58 4a 21 00 00 1a
-descriptor 2:    4d d0 00 a0 f0 70 3e 80 30 20 35 00 58 4a 21 00 00 1a
-descriptor 3:    00 00 00 fd 00 2c 3f a0 a0 3c 01 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 44 50 0a 20 20 20 20 20 20 20 20 20 20
-extensions:      01
-checksum:        8d
+----------------
 
-EDID version: 1.4
-Manufacturer: JRY Model 0 Serial Number --
-Made in week 42 of 2017
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 60 cm x 33 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4, YCrCb 4:2:2
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6699, 0.3144
-  Green: 0.3271, 0.6396
-  Blue:  0.1357, 0.0693
-  White: 0.3125, 0.3281
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-  1152x870@75Hz 192:145 HorFreq: 67500 Hz Clock: 108.000 MHz
-Standard timings supported:
-  1280x720@60Hz 16:9
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1600x900@60Hz 16:9
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 174.000 MHz, 600 mm x 330 mm
-               1920 1968 2000 2480 hborder 0
-               1080 1083 1088 1170 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 70161 Hz
-Detailed mode: Clock 533.250 MHz, 600 mm x 330 mm
-               3840 3888 3920 4000 hborder 0
-               2160 2163 2168 2222 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 133312 Hz
-Monitor ranges (bare limits): 44-63Hz V, 160-160kHz H, max dotclock 600MHz
-Monitor name: DP
-Has 1 extension blocks
-Checksum: 0x8d (valid)
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 59 - 75 Hz
-  Horizontal Freq: 31469 - 133312 Hz
-  Maximum Clock: 533.250 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: JRY
+    Model: 0
+    Made in: week 42 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 33 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6699, 0.3144
+    Green: 0.3271, 0.6396
+    Blue : 0.1357, 0.0693
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    Apple   :   640x480    66.667 Hz   4:3    35.000 kHz  30.240 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    Apple   :   832x624    74.551 Hz   4:3    49.726 kHz  57.284 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+    Apple   :  1152x870    75.062 Hz 192:145  68.681 kHz 100.000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.967 Hz  16:9    70.161 kHz 174.000 MHz (600 mm x 330 mm)
+                 Hfront   48 Hsync  32 Hback 480 Hpol P
+                 Vfront    3 Vsync   5 Vback  82 Vpol N
+    DTD 2:  3840x2160   59.997 Hz  16:9   133.312 kHz 533.250 MHz (600 mm x 330 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  54 Vpol N
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 44-63 Hz V, 160-160 kHz H, max dotclock 600 MHz
+    Display Product Name: 'DP'
+  Extension blocks: 1
+Checksum: 0x8d

@@ -1,62 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff003e4d011600000000
-1e0f010388221b64e8aea5a6544c9926
-14505421080001010101010101010101
-010101010101302a009851002a403070
-1300782d1100001e000000fd00373c1d
-406c010a202020202020000000000000
-00000000000000000000000000000000
-000000000000000000000000000000a1
+00 ff ff ff ff ff ff 00 3e 4d 01 16 00 00 00 00
+1e 0f 01 03 88 22 1b 64 e8 ae a5 a6 54 4c 99 26
+14 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 fd 00 37 3c 1d
+40 6c 01 0a 20 20 20 20 20 20 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a1
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   3e 4d 01 16 00 00 00 00 1e 0f
-version:         01 03
-basic params:    88 22 1b 64 e8
-chroma info:     ae a5 a6 54 4c 99 26 14 50 54
-established:     21 08 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    30 2a 00 98 51 00 2a 40 30 70 13 00 78 2d 11 00 00 1e
-descriptor 2:    00 00 00 fd 00 37 3c 1d 40 6c 01 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      00
-checksum:        a1
+----------------
 
-EDID version: 1.3
-Manufacturer: ORM Model 1601 Serial Number --
-Digital display
-Maximum image size: 34 cm x 27 cm
-Gamma: 2.00
-DPMS levels: Standby Suspend Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6503, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1503, 0.0800
-  White: 0.3134, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-Detailed mode: Clock 108.000 MHz, 376 mm x 301 mm
-               1280 1328 1440 1688 hborder 0
-               1024 1025 1028 1066 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 63981 Hz
-Monitor ranges (bare limits): 55-60Hz V, 29-64kHz H, max dotclock 1080MHz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 0
-Checksum: 0xa1 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 8
-	Missing name descriptor
-	Missing preferred timing
-EDID block does not conform at all!
-	Bad year of manufacture
-	Detailed blocks filled with garbage
-	Range descriptor contains garbage
-
-
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ORM
+    Model: 5633
+    Made in: week 30 of 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 27 cm
+    Gamma: 2.00
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6503, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0800
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz (376 mm x 301 mm)
+                 Hfront   48 Hsync 112 Hback 248 Hpol P
+                 Vfront    1 Vsync   3 Vback  38 Vpol P
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 55-60 Hz V, 29-64 kHz H, max dotclock 1080 MHz
+    Empty Descriptor
+    Empty Descriptor
+Checksum: 0xa1

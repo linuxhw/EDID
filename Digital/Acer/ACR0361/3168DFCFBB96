@@ -1,69 +1,61 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0004726103be2b9052
-1d190103803c22782a4b75a7564ba325
-0a5054bd4b00d100d1c08180950f9500
-b30081c0a940565e00a0a0a029503020
-350055502100001e000000fd00384c1e
-6321000a202020202020000000ff004c
-5a324141303032343230320a000000fc
-0041636572204232373648554c0a001d
+00 ff ff ff ff ff ff 00 04 72 61 03 be 2b 90 52
+1d 19 01 03 80 3c 22 78 2a 4b 75 a7 56 4b a3 25
+0a 50 54 bd 4b 00 d1 00 d1 c0 81 80 95 0f 95 00
+b3 00 81 c0 a9 40 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 55 50 21 00 00 1e 00 00 00 fd 00 38 4c 1e
+63 21 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c
+5a 32 41 41 30 30 32 34 32 30 32 0a 00 00 00 fc
+00 41 63 65 72 20 42 32 37 36 48 55 4c 0a 00 1d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   04 72 61 03 be 2b 90 52 1d 19
-version:         01 03
-basic params:    80 3c 22 78 2a
-chroma info:     4b 75 a7 56 4b a3 25 0a 50 54
-established:     bd 4b 00
-standard:        d1 00 d1 c0 81 80 95 0f 95 00 b3 00 81 c0 a9 40
-descriptor 1:    56 5e 00 a0 a0 a0 29 50 30 20 35 00 55 50 21 00 00 1e
-descriptor 2:    00 00 00 fd 00 38 4c 1e 63 21 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 ff 00 4c 5a 32 41 41 30 30 32 34 32 30 32 0a
-descriptor 4:    00 00 00 fc 00 41 63 65 72 20 42 32 37 36 48 55 4c 0a
-extensions:      00
-checksum:        1d
+----------------
 
-EDID version: 1.3
-Manufacturer: ACR Model 361 Serial Number --
-Made in week 29 of 2015
-Digital display
-Maximum image size: 60 cm x 34 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6533, 0.3359
-  Green: 0.2949, 0.6396
-  Blue:  0.1455, 0.0419
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1920x1200@60Hz 16:10 HorFreq: 74000 Hz Clock: 154.000 MHz
-  1920x1080@60Hz 16:9
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@75Hz 16:10 HorFreq: 82300 Hz Clock: 156.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1280x720@60Hz 16:9
-  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
-Detailed mode: Clock 241.500 MHz, 597 mm x 336 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1481 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 88786 Hz
-Monitor ranges (GTF): 56-76Hz V, 30-99kHz H, max dotclock 330MHz
-Serial number: --
-Monitor name: Acer B276HUL
-Checksum: 0x1d (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ACR
+    Model: 865
+    Serial Number: ...
+    Made in: week 29 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6533, 0.3359
+    Green: 0.2949, 0.6396
+    Blue : 0.1455, 0.0419
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    Apple   :   640x480    66.667 Hz   4:3    35.000 kHz  30.240 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x45:  1920x1200   59.885 Hz  16:10   74.556 kHz 193.250 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x30:  1440x900    74.984 Hz  16:10   70.635 kHz 136.750 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.951 Hz  16:9    88.787 kHz 241.500 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  33 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 56-76 Hz V, 30-99 kHz H, max dotclock 330 MHz
+    Display Product Serial Number: ...
+    Display Product Name: 'Acer B276HUL'
+Checksum: 0x1d

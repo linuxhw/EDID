@@ -1,55 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004493050000000000
-000d0103801d15780a8ce996534e9025
-1d505400000001010101010101010101
-01010101010164190040410026301888
-36001dd6100000180000000f0004c02e
-c00211111176c0126300000000fe0043
-343031310200000000000000000000fe
-00c0b0a0908060400001000a202000bb
+00 ff ff ff ff ff ff 00 44 93 05 00 00 00 00 00
+00 0d 01 03 80 1d 15 78 0a 8c e9 96 53 4e 90 25
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 1d d6 10 00 00 18 00 00 00 0f 00 04 c0 2e
+c0 02 11 11 11 76 c0 12 63 00 00 00 00 fe 00 43
+34 30 31 31 02 00 00 00 00 00 00 00 00 00 00 fe
+00 c0 b0 a0 90 80 60 40 00 01 00 0a 20 20 00 bb
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   44 93 05 00 00 00 00 00 00 0d
-version:         01 03
-basic params:    80 1d 15 78 0a
-chroma info:     8c e9 96 53 4e 90 25 1d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    64 19 00 40 41 00 26 30 18 88 36 00 1d d6 10 00 00 18
-descriptor 2:    00 00 00 0f 00 04 c0 2e c0 02 11 11 11 76 c0 12 63 00
-descriptor 3:    00 00 00 fe 00 43 34 30 31 31 02 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 fe 00 c0 b0 a0 90 80 60 40 00 01 00 0a 20 20
-extensions:      00
-checksum:        bb
+----------------
 
-EDID version: 1.3
-Manufacturer: QDS Model 5 Serial Number --
-Digital display
-Maximum image size: 29 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5878, 0.3242
-  Green: 0.3076, 0.5625
-  Blue:  0.1474, 0.1152
-  White: 0.3144, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 65.000 MHz, 285 mm x 214 mm
-               1024 1048 1184 1344 hborder 0
-                768  771  777  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48363 Hz
-Manufacturer-specified data, tag 15
-ASCII string: C4011
-ASCII string: 
-Checksum: 0xbb (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: QDS
+    Model: 5
+    Made in: 2003
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5878, 0.3242
+    Green: 0.3076, 0.5625
+    Blue : 0.1474, 0.1152
+    White: 0.3144, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz (285 mm x 214 mm)
+                 Hfront   24 Hsync 136 Hback 160 Hpol N
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 04 c0 2e c0 02 11 11 11 76 c0 12 63 00 '...........v..c.'
+    Alphanumeric Data String: 'C4011'
+    Alphanumeric Data String: ''
+Checksum: 0xbb

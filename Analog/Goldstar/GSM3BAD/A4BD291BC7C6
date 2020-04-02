@@ -1,62 +1,52 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001e6dad3be4080400
-0a100103281e1778eab4439e574c9426
-154a4d23080031404540614001010101
-01010101010164190040410026301888
-360030e410000018000000fd00383c1e
-3206000a202020202020000000fc0031
-354c4331520a202020202020000000fc
-000a20202020202020202020202000a1
+00 ff ff ff ff ff ff 00 1e 6d ad 3b e4 08 04 00
+0a 10 01 03 28 1e 17 78 ea b4 43 9e 57 4c 94 26
+15 4a 4d 23 08 00 31 40 45 40 61 40 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 30 e4 10 00 00 18 00 00 00 fd 00 38 3c 1e
+32 06 00 0a 20 20 20 20 20 20 00 00 00 fc 00 31
+35 4c 43 31 52 0a 20 20 20 20 20 20 00 00 00 fc
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 a1
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1e 6d ad 3b e4 08 04 00 0a 10
-version:         01 03
-basic params:    28 1e 17 78 ea
-chroma info:     b4 43 9e 57 4c 94 26 15 4a 4d
-established:     23 08 00
-standard:        31 40 45 40 61 40 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    64 19 00 40 41 00 26 30 18 88 36 00 30 e4 10 00 00 18
-descriptor 2:    00 00 00 fd 00 38 3c 1e 32 06 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 31 35 4c 43 31 52 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 0a 20 20 20 20 20 20 20 20 20 20 20 20
-extensions:      00
-checksum:        a1
+----------------
 
-EDID version: 1.3
-Manufacturer: GSM Model 3bad Serial Number --
-Made in week 10 of 2006
-Analog display, Input voltage level: 0.714/0.286 V
-Sync: Separate 
-Maximum image size: 30 cm x 23 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6191, 0.3427
-  Green: 0.2978, 0.5781
-  Blue:  0.1494, 0.0820
-  White: 0.2890, 0.3037
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Detailed mode: Clock 65.000 MHz, 304 mm x 228 mm
-               1024 1048 1184 1344 hborder 0
-                768  771  777  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48363 Hz
-Monitor ranges (GTF): 56-60Hz V, 30-50kHz H, max dotclock 60MHz
-Monitor name: 15LC1R
-Checksum: 0xa1 (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 56 - 60 Hz
-  Horizontal Freq: 31469 - 48400 Hz
-  Maximum Clock: 65.000 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 15277
+    Serial Number: ...
+    Made in: week 10 of 2006
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.714/0.286 V
+    Sync: Separate
+    Maximum image size: 30 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6191, 0.3427
+    Green: 0.2978, 0.5781
+    Blue : 0.1494, 0.0820
+    White: 0.2890, 0.3037
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz (304 mm x 228 mm)
+                 Hfront   24 Hsync 136 Hback 160 Hpol N
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+  Display Range Limits:
+    Monitor ranges (GTF): 56-60 Hz V, 30-50 kHz H, max dotclock 60 MHz
+    Display Product Name: '15LC1R'
+    Display Product Name: ''
+Checksum: 0xa1

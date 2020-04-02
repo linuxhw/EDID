@@ -1,61 +1,47 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000d12117570030000
-05170104a52b1d78e28042ac5130b425
-10505300000001010101010101010101
-010101010101391c56a0500017303020
-3a00064d2100001a841756a050001730
-30203a00064d2100001a000000fd0038
-4c1e5311000a202020202020000000fc
-00455432303430490a202020202000a6
+00 ff ff ff ff ff ff 00 0d 12 11 75 70 03 00 00
+05 17 01 04 a5 2b 1d 78 e2 80 42 ac 51 30 b4 25
+10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 39 1c 56 a0 50 00 17 30 30 20
+3a 00 06 4d 21 00 00 1a 84 17 56 a0 50 00 17 30
+30 20 3a 00 06 4d 21 00 00 1a 00 00 00 fd 00 38
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 45 54 32 30 34 30 49 0a 20 20 20 20 20 00 a6
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0d 12 11 75 70 03 00 00 05 17
-version:         01 04
-basic params:    a5 2b 1d 78 e2
-chroma info:     80 42 ac 51 30 b4 25 10 50 53
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    39 1c 56 a0 50 00 17 30 30 20 3a 00 06 4d 21 00 00 1a
-descriptor 2:    84 17 56 a0 50 00 17 30 30 20 3a 00 06 4d 21 00 00 1a
-descriptor 3:    00 00 00 fd 00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 45 54 32 30 34 30 49 0a 20 20 20 20 20
-extensions:      00
-checksum:        a6
+----------------
 
-EDID version: 1.4
-Manufacturer: CHR Model 7511 Serial Number --
-Made in week 5 of 2013
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 43 cm x 29 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6738, 0.3164
-  Green: 0.1875, 0.7031
-  Blue:  0.1455, 0.0625
-  White: 0.3125, 0.3261
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 72.250 MHz, 518 mm x 333 mm
-               1366 1414 1446 1526 hborder 0
-                768  771  781  791 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 47346 Hz
-Detailed mode: Clock 60.200 MHz, 518 mm x 333 mm
-               1366 1414 1446 1526 hborder 0
-                768  771  781  791 vborder 0
-               +hsync -vsync 
-               VertFreq: 49 Hz, HorFreq: 39449 Hz
-Monitor ranges (GTF): 56-76Hz V, 30-83kHz H, max dotclock 170MHz
-Monitor name: ET2040I
-Checksum: 0xa6 (valid)
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 49 - 59 Hz
-  Horizontal Freq: 39449 - 47346 Hz
-  Maximum Clock: 72.250 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CHR
+    Model: 29969
+    Serial Number: ...
+    Made in: week 5 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 43 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6738, 0.3164
+    Green: 0.1875, 0.7031
+    Blue : 0.1455, 0.0625
+    White: 0.3125, 0.3261
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.856 Hz 683:384  47.346 kHz  72.250 MHz (518 mm x 333 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync  10 Vback  10 Vpol N
+    DTD 2:  1366x768    49.873 Hz 683:384  39.450 kHz  60.200 MHz (518 mm x 333 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync  10 Vback  10 Vpol N
+  Display Range Limits:
+    Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+    Display Product Name: 'ET2040I'
+Checksum: 0xa6

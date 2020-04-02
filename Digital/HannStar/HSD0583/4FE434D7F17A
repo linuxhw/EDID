@@ -1,55 +1,41 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0022648305c2170000
-10140103801f11780af76f9f56579c26
-11505300000001010101010101010101
-0101010101014c1d56ba500026303042
-680035ae10000019000000fe00000000
-00000000000000000000000000fc0048
-5344313430504857310a202000000010
-000a2020202020202020202020200016
+00 ff ff ff ff ff ff 00 22 64 83 05 c2 17 00 00
+10 14 01 03 80 1f 11 78 0a f7 6f 9f 56 57 9c 26
+11 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4c 1d 56 ba 50 00 26 30 30 42
+68 00 35 ae 10 00 00 19 00 00 00 fe 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fc 00 48
+53 44 31 34 30 50 48 57 31 0a 20 20 00 00 00 10
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 16
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 64 83 05 c2 17 00 00 10 14
-version:         01 03
-basic params:    80 1f 11 78 0a
-chroma info:     f7 6f 9f 56 57 9c 26 11 50 53
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    4c 1d 56 ba 50 00 26 30 30 42 68 00 35 ae 10 00 00 19
-descriptor 2:    00 00 00 fe 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fc 00 48 53 44 31 34 30 50 48 57 31 0a 20 20
-descriptor 4:    00 00 00 10 00 0a 20 20 20 20 20 20 20 20 20 20 20 20
-extensions:      00
-checksum:        16
+----------------
 
-EDID version: 1.3
-Manufacturer: HSD Model 583 Serial Number --
-Made in week 16 of 2010
-Digital display
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6240, 0.3388
-  Green: 0.3408, 0.6123
-  Blue:  0.1494, 0.0683
-  White: 0.3154, 0.3271
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 75.000 MHz, 309 mm x 174 mm
-               1366 1414 1480 1552 hborder 0
-                768  774  782  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 48324 Hz
-ASCII string: 
-Monitor name: HSD140PHW1
-Dummy block
-Checksum: 0x16 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing monitor ranges
-	Detailed block string not properly terminated
-EDID block does not conform at all!
-	Dummy block filled with garbage
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HSD
+    Model: 1411
+    Serial Number: ...
+    Made in: week 16 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6240, 0.3388
+    Green: 0.3408, 0.6123
+    Blue : 0.1494, 0.0683
+    White: 0.3154, 0.3271
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.956 Hz 683:384  48.325 kHz  75.000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  66 Hback  72 Hpol N
+                 Vfront    6 Vsync   8 Vback  24 Vpol N
+    Alphanumeric Data String: ''
+    Display Product Name: 'HSD140PHW1'
+    Dummy Descriptor:
+Checksum: 0x16

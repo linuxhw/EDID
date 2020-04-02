@@ -1,60 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009e5710600000000
-011a0104952213780a24109759548e27
-1e505400000001010101010101010101
-010101010101641b5677500013303020
-360058c21000001aa21756b950002d30
-3020360058c21000001a000000fe004e
-43483635804e5431354e333200000000
-00004101940110000009010a20200096
+00 ff ff ff ff ff ff 00 09 e5 71 06 00 00 00 00
+01 1a 01 04 95 22 13 78 0a 24 10 97 59 54 8e 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 1b 56 77 50 00 13 30 30 20
+36 00 58 c2 10 00 00 1a a2 17 56 b9 50 00 2d 30
+30 20 36 00 58 c2 10 00 00 1a 00 00 00 fe 00 4e
+43 48 36 35 80 4e 54 31 35 4e 33 32 00 00 00 00
+00 00 41 01 94 01 10 00 00 09 01 0a 20 20 00 96
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 e5 71 06 00 00 00 00 01 1a
-version:         01 04
-basic params:    95 22 13 78 0a
-chroma info:     24 10 97 59 54 8e 27 1e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    64 1b 56 77 50 00 13 30 30 20 36 00 58 c2 10 00 00 1a
-descriptor 2:    a2 17 56 b9 50 00 2d 30 30 20 36 00 58 c2 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 4e 43 48 36 35 80 4e 54 31 35 4e 33 32
-descriptor 4:    00 00 00 00 00 00 41 01 94 01 10 00 00 09 01 0a 20 20
-extensions:      00
-checksum:        96
+----------------
 
-EDID version: 1.4
-Manufacturer: BOE Model 671 Serial Number --
-Made in week 1 of 2016
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5898, 0.3496
-  Green: 0.3291, 0.5546
-  Blue:  0.1523, 0.1181
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 70.120 MHz, 344 mm x 194 mm
-               1366 1414 1446 1485 hborder 0
-                768  771  777  787 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 47218 Hz
-Detailed mode: Clock 60.500 MHz, 344 mm x 194 mm
-               1366 1414 1446 1551 hborder 0
-                768  771  777  813 vborder 0
-               +hsync -vsync 
-               VertFreq: 47 Hz, HorFreq: 39007 Hz
-ASCII string: NCH65
-Manufacturer-specified data, tag 0
-Checksum: 0x96 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 1649
+    Made in: week 1 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5898, 0.3496
+    Green: 0.3291, 0.5546
+    Blue : 0.1523, 0.1181
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.999 Hz 683:384  47.219 kHz  70.120 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  39 Hpol P
+                 Vfront    3 Vsync   6 Vback  10 Vpol N
+    DTD 2:  1366x768    47.979 Hz 683:384  39.007 kHz  60.500 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback 105 Hpol P
+                 Vfront    3 Vsync   6 Vback  36 Vpol N
+    Alphanumeric Data String: 'NCH65'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 01 94 01 10 00 00 09 01 0a 20 20 '....A.........  '
+Checksum: 0x96

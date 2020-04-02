@@ -1,52 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004ca3523000000000
-0013010180160d780a859599574f8f26
-21505400000001010101010101010101
-010101010101b018001c425849201030
-1300df7d000000190000000f00000000
-00000000002387026400000000fe0053
-414d53554e470a2020202020000000fe
-004c544e3130314e54303130303000d3
+00 ff ff ff ff ff ff 00 4c a3 52 30 00 00 00 00
+00 13 01 01 80 16 0d 78 0a 85 95 99 57 4f 8f 26
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b0 18 00 1c 42 58 49 20 10 30
+13 00 df 7d 00 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 23 87 02 64 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe
+00 4c 54 4e 31 30 31 4e 54 30 31 30 30 30 00 d3
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c a3 52 30 00 00 00 00 00 13
-version:         01 01
-basic params:    80 16 0d 78 0a
-chroma info:     85 95 99 57 4f 8f 26 21 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    b0 18 00 1c 42 58 49 20 10 30 13 00 df 7d 00 00 00 19
-descriptor 2:    00 00 00 0f 00 00 00 00 00 00 00 00 00 23 87 02 64 00
-descriptor 3:    00 00 00 fe 00 53 41 4d 53 55 4e 47 0a 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 4c 54 4e 31 30 31 4e 54 30 31 30 30 30
-extensions:      00
-checksum:        d3
+----------------
 
-EDID version: 1.1
-Manufacturer: SEC Model 3052 Serial Number --
-Made in year 2009
-Digital display
-Maximum image size: 22 cm x 13 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5996, 0.3398
-  Green: 0.3095, 0.5595
-  Blue:  0.1503, 0.1298
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 63.200 MHz, 223 mm x 125 mm
-               1024 1040 1088 1564 hborder 0
-                600  601  604  673 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 40409 Hz
-Manufacturer-specified data, tag 15
-ASCII string: SAMSUNG
-ASCII string: LTN101NT01000
-Checksum: 0xd3 (valid)
-EDID block does NOT conform to EDID 1.0!
-	Has descriptor blocks other than detailed timings
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 12370
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 22 cm x 13 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5996, 0.3398
+    Green: 0.3095, 0.5595
+    Blue : 0.1503, 0.1298
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x600    60.043 Hz 128:75   40.409 kHz  63.200 MHz (223 mm x 125 mm)
+                 Hfront   16 Hsync  48 Hback 476 Hpol N
+                 Vfront    1 Vsync   3 Vback  69 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 23 87 02 64 00 '...........#..d.'
+    Alphanumeric Data String: 'SAMSUNG'
+    Alphanumeric Data String: 'LTN101NT01000'
+Checksum: 0xd3

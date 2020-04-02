@@ -1,70 +1,61 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000469e41901010101
-111301030a2917782e3d85a6564a9a24
-125054afcd10714f8140810081c00101
-010101010101662156aa51001e30468f
-33009ae61000001e000000ff0039344c
-4d495a3033303934330a000000fd0037
-4b1e500e000a202020202020000000fc
-00415355532056483139320a202000cb
+00 ff ff ff ff ff ff 00 04 69 e4 19 01 01 01 01
+11 13 01 03 0a 29 17 78 2e 3d 85 a6 56 4a 9a 24
+12 50 54 af cd 10 71 4f 81 40 81 00 81 c0 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 ff 00 39 34 4c
+4d 49 5a 30 33 30 39 34 33 0a 00 00 00 fd 00 37
+4b 1e 50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 56 48 31 39 32 0a 20 20 00 cb
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   04 69 e4 19 01 01 01 01 11 13
-version:         01 03
-basic params:    0a 29 17 78 2e
-chroma info:     3d 85 a6 56 4a 9a 24 12 50 54
-established:     af cd 10
-standard:        71 4f 81 40 81 00 81 c0 01 01 01 01 01 01 01 01
-descriptor 1:    66 21 56 aa 51 00 1e 30 46 8f 33 00 9a e6 10 00 00 1e
-descriptor 2:    00 00 00 ff 00 39 34 4c 4d 49 5a 30 33 30 39 34 33 0a
-descriptor 3:    00 00 00 fd 00 37 4b 1e 50 0e 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 41 53 55 53 20 56 48 31 39 32 0a 20 20
-extensions:      00
-checksum:        cb
+----------------
 
-EDID version: 1.3
-Manufacturer: ACI Model 19e4 Serial Number --
-Made in week 17 of 2009
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate SyncOnGreen 
-Maximum image size: 41 cm x 23 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6484, 0.3388
-  Green: 0.2919, 0.6025
-  Blue:  0.1425, 0.0703
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
-  1280x800@60Hz 16:10
-  1280x720@60Hz 16:9
-Detailed mode: Clock 85.500 MHz, 410 mm x 230 mm
-               1366 1436 1579 1792 hborder 0
-                768  771  774  798 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 47712 Hz
-Serial number: --
-Monitor ranges (GTF): 55-75Hz V, 30-80kHz H, max dotclock 140MHz
-Monitor name: ASUS VH192
-Checksum: 0xcb (valid)
-EDID block does NOT conform to EDID 1.3!
-	sRGB is signaled, but the chromaticities do not match
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ACI
+    Model: 6628
+    Serial Number: ...
+    Made in: week 17 of 2009
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate SyncOnGreen
+    Maximum image size: 41 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6484, 0.3388
+    Green: 0.2919, 0.6025
+    Blue : 0.1425, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x15:  1152x864    75.000 Hz   4:3    67.500 kHz 108.000 MHz
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.790 Hz 683:384  47.712 kHz  85.500 MHz (410 mm x 230 mm)
+                 Hfront   70 Hsync 143 Hback 213 Hpol P
+                 Vfront    3 Vsync   3 Vback  24 Vpol P
+    Display Product Serial Number: ...
+  Display Range Limits:
+    Monitor ranges (GTF): 55-75 Hz V, 30-80 kHz H, max dotclock 140 MHz
+    Display Product Name: 'ASUS VH192'
+Checksum: 0xcb

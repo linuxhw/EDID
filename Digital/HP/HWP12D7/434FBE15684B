@@ -1,62 +1,51 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0022f0d7124e030000
-340b0103801f1778ea7e50a0584e9625
-1e5054a56a0001010101010101010101
-01010101010164190040410026301888
-360030e410000018000000fd00384b1f
-3c080a20202020202000000000fc0068
-7020663530730a2020202020000000ff
-0054574b445a303038343620202000cb
+00 ff ff ff ff ff ff 00 22 f0 d7 12 4e 03 00 00
+34 0b 01 03 80 1f 17 78 ea 7e 50 a0 58 4e 96 25
+1e 50 54 a5 6a 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 30 e4 10 00 00 18 00 00 00 fd 00 38 4b 1f
+3c 08 0a 20 20 20 20 20 20 00 00 00 00 fc 00 68
+70 20 66 35 30 73 0a 20 20 20 20 20 00 00 00 ff
+00 54 57 4b 44 5a 30 30 38 34 36 20 20 20 00 cb
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 f0 d7 12 4e 03 00 00 34 0b
-version:         01 03
-basic params:    80 1f 17 78 ea
-chroma info:     7e 50 a0 58 4e 96 25 1e 50 54
-established:     a5 6a 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    64 19 00 40 41 00 26 30 18 88 36 00 30 e4 10 00 00 18
-descriptor 2:    00 00 00 fd 00 38 4b 1f 3c 08 0a 20 20 20 20 20 20 00
-descriptor 3:    00 00 00 fc 00 68 70 20 66 35 30 73 0a 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 54 57 4b 44 5a 30 30 38 34 36 20 20 20
-extensions:      00
-checksum:        cb
+----------------
 
-EDID version: 1.3
-Manufacturer: HWP Model 12d7 Serial Number --
-Digital display
-Maximum image size: 31 cm x 23 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6259, 0.3466
-  Green: 0.3076, 0.5878
-  Blue:  0.1455, 0.1181
-  White: 0.3125, 0.3281
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-Detailed mode: Clock 65.000 MHz, 304 mm x 228 mm
-               1024 1048 1184 1344 hborder 0
-                768  771  777  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48363 Hz
-Monitor ranges (invalid): 56-75Hz V, 31-60kHz H, max dotclock 80MHz
-Monitor name: hp f50s
-Serial number: --   
-Checksum: 0xcb (valid)
-EDID block does not conform at all!
-	Bad year of manufacture
-	Detailed blocks filled with garbage
-	Range descriptor contains garbage
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 4823
+    Serial Number: ...
+    Made in: week 52 of 2001
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 31 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6259, 0.3466
+    Green: 0.3076, 0.5878
+    Blue : 0.1455, 0.1181
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    Apple   :   832x624    74.551 Hz   4:3    49.726 kHz  57.284 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz (304 mm x 228 mm)
+                 Hfront   24 Hsync 136 Hback 160 Hpol N
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+  Display Range Limits:
+    Monitor ranges (Unknown (0x0a)): 56-75 Hz V, 31-60 kHz H, max dotclock 80 MHz
+    Display Product Name: 'hp f50s'
+    Display Product Serial Number: ...
+Checksum: 0xcb

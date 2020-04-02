@@ -1,59 +1,44 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009e5000600000000
-01190104951f11780224109759548e27
-1e505400000001010101010101010101
-010101010101ce1d56e250001e302616
-360035ad1000001ad11756e250001e30
-2616360035ad1000001a000000fe0042
-4f452043510a202020202020000000fe
-004e5431343057484d2d4e34310a00dd
+00 ff ff ff ff ff ff 00 09 e5 00 06 00 00 00 00
+01 19 01 04 95 1f 11 78 02 24 10 97 59 54 8e 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 e2 50 00 1e 30 26 16
+36 00 35 ad 10 00 00 1a d1 17 56 e2 50 00 1e 30
+26 16 36 00 35 ad 10 00 00 1a 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 54 31 34 30 57 48 4d 2d 4e 34 31 0a 00 dd
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 e5 00 06 00 00 00 00 01 19
-version:         01 04
-basic params:    95 1f 11 78 02
-chroma info:     24 10 97 59 54 8e 27 1e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    ce 1d 56 e2 50 00 1e 30 26 16 36 00 35 ad 10 00 00 1a
-descriptor 2:    d1 17 56 e2 50 00 1e 30 26 16 36 00 35 ad 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 42 4f 45 20 43 51 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 4e 54 31 34 30 57 48 4d 2d 4e 34 31 0a
-extensions:      00
-checksum:        dd
+----------------
 
-EDID version: 1.4
-Manufacturer: BOE Model 600 Serial Number --
-Made in week 1 of 2015
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5898, 0.3496
-  Green: 0.3291, 0.5546
-  Blue:  0.1523, 0.1181
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 76.300 MHz, 309 mm x 173 mm
-               1366 1404 1426 1592 hborder 0
-                768  771  777  798 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 47927 Hz
-Detailed mode: Clock 60.970 MHz, 309 mm x 173 mm
-               1366 1404 1426 1592 hborder 0
-                768  771  777  798 vborder 0
-               +hsync -vsync 
-               VertFreq: 47 Hz, HorFreq: 38297 Hz
-ASCII string: BOE CQ
-ASCII string: NT140WHM-N41
-Checksum: 0xdd (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 1536
+    Made in: week 1 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5898, 0.3496
+    Green: 0.3291, 0.5546
+    Blue : 0.1523, 0.1181
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.059 Hz 683:384  47.927 kHz  76.300 MHz (309 mm x 173 mm)
+                 Hfront   38 Hsync  22 Hback 166 Hpol P
+                 Vfront    3 Vsync   6 Vback  21 Vpol N
+    DTD 2:  1366x768    47.992 Hz 683:384  38.298 kHz  60.970 MHz (309 mm x 173 mm)
+                 Hfront   38 Hsync  22 Hback 166 Hpol P
+                 Vfront    3 Vsync   6 Vback  21 Vpol N
+    Alphanumeric Data String: 'BOE CQ'
+    Alphanumeric Data String: 'NT140WHM-N41'
+Checksum: 0xdd

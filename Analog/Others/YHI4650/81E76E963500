@@ -1,74 +1,62 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0065095046af030000
-130f010368281e78eb3c3ca755489b23
-11484b3fc00045cf454c4540614a614f
-4540454a454fa00f200031581c201280
-c40098341100001e000000fd002e4c1e
-5205000a202020202020000000000034
-3237383139303038330a0000000000fc
-004c543230410a2020202020202000f7
+00 ff ff ff ff ff ff 00 65 09 50 46 af 03 00 00
+13 0f 01 03 68 28 1e 78 eb 3c 3c a7 55 48 9b 23
+11 48 4b 3f c0 00 45 cf 45 4c 45 40 61 4a 61 4f
+45 40 45 4a 45 4f a0 0f 20 00 31 58 1c 20 12 80
+c4 00 98 34 11 00 00 1e 00 00 00 fd 00 2e 4c 1e
+52 05 00 0a 20 20 20 20 20 20 00 00 00 00 00 34
+32 37 38 31 39 30 30 38 33 0a 00 00 00 00 00 fc
+00 4c 54 32 30 41 0a 20 20 20 20 20 20 20 00 f7
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   65 09 50 46 af 03 00 00 13 0f
-version:         01 03
-basic params:    68 28 1e 78 eb
-chroma info:     3c 3c a7 55 48 9b 23 11 48 4b
-established:     3f c0 00
-standard:        45 cf 45 4c 45 40 61 4a 61 4f 45 40 45 4a 45 4f
-descriptor 1:    a0 0f 20 00 31 58 1c 20 12 80 c4 00 98 34 11 00 00 1e
-descriptor 2:    00 00 00 fd 00 2e 4c 1e 52 05 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 00 00 34 32 37 38 31 39 30 30 38 33 0a 00 00
-descriptor 4:    00 00 00 fc 00 4c 54 32 30 41 0a 20 20 20 20 20 20 20
-extensions:      00
-checksum:        f7
+----------------
 
-EDID version: 1.3
-Manufacturer: YHI Model 4650 Serial Number --
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 40 cm x 30 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Supports GTF timings within operating range
-Display x,y Chromaticity:
-  Red:   0.6523, 0.3349
-  Green: 0.2841, 0.6054
-  Blue:  0.1367, 0.0693
-  White: 0.2841, 0.2929
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-Standard timings supported:
-  800x450@75Hz 16:9
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@70Hz 4:3
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-Detailed mode: Clock 40.000 MHz, 408 mm x 308 mm
-                800  818  946 1056 hborder 0
-                600  612  616  628 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 37878 Hz
-Monitor ranges (GTF): 46-76Hz V, 30-82kHz H, max dotclock 50MHz
-Manufacturer-specified data, tag 0
-Monitor name: LT20A
-Checksum: 0xf7 (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 56 - 75 Hz
-  Horizontal Freq: 31469 - 60000 Hz
-  Maximum Clock: 78.750 MHz
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: YHI
+    Model: 18000
+    Serial Number: ...
+    Made in: week 19 of 2005
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate
+    Maximum image size: 40 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+    Supports GTF timings within operating range
+  Color Characteristics:
+    Red  : 0.6523, 0.3349
+    Green: 0.2841, 0.6054
+    Blue : 0.1367, 0.0693
+    White: 0.2841, 0.2929
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    Apple   :   640x480    66.667 Hz   4:3    35.000 kHz  30.240 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+  Standard Timings:
+    GTF     :   800x456    75.001 Hz  16:9    35.775 kHz  36.634 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    GTF     :  1024x768    70.000 Hz   4:3    56.000 kHz  76.160 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    GTF     :   800x600    70.000 Hz   4:3    43.750 kHz  45.500 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz (408 mm x 308 mm)
+                 Hfront   18 Hsync 128 Hback 110 Hpol P
+                 Vfront   12 Vsync   4 Vback  12 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 46-76 Hz V, 30-82 kHz H, max dotclock 50 MHz
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 34 32 37 38 31 39 30 30 38 33 0a 00 00 '...4278190083...'
+    Display Product Name: 'LT20A'
+Checksum: 0xf7

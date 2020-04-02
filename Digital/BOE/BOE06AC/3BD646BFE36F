@@ -1,55 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009e5ac0600000000
-01190104a51a1178029923a75447a125
-104e5200000001010101010101010101
-0101010101013e8a40a0b08014703020
-84000ab11000001a0000000000000000
-00000000000000000000000000fe0042
-4f452048460a202020202020000000fe
-004e5631323641314d2d4e35310a0033
+00 ff ff ff ff ff ff 00 09 e5 ac 06 00 00 00 00
+01 19 01 04 a5 1a 11 78 02 99 23 a7 54 47 a1 25
+10 4e 52 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3e 8a 40 a0 b0 80 14 70 30 20
+84 00 0a b1 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 42
+4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 32 36 41 31 4d 2d 4e 35 31 0a 00 33
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 e5 ac 06 00 00 00 00 01 19
-version:         01 04
-basic params:    a5 1a 11 78 02
-chroma info:     99 23 a7 54 47 a1 25 10 4e 52
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    3e 8a 40 a0 b0 80 14 70 30 20 84 00 0a b1 10 00 00 1a
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fe 00 42 4f 45 20 48 46 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 4e 56 31 32 36 41 31 4d 2d 4e 35 31 0a
-extensions:      00
-checksum:        33
+----------------
 
-EDID version: 1.4
-Manufacturer: BOE Model 6ac Serial Number --
-Made in week 1 of 2015
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 26 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6542, 0.3291
-  Green: 0.2792, 0.6298
-  Blue:  0.1445, 0.0644
-  White: 0.3046, 0.3232
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 353.900 MHz, 266 mm x 177 mm
-               2880 2928 2960 3040 hborder 0
-               1920 1928 1932 1940 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 116414 Hz
-Manufacturer-specified data, tag 0
-ASCII string: BOE HF
-ASCII string: NV126A1M-N51
-Checksum: 0x33 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 1708
+    Made in: week 1 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 26 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6542, 0.3291
+    Green: 0.2792, 0.6298
+    Blue : 0.1445, 0.0644
+    White: 0.3046, 0.3232
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2880x1920   60.007 Hz   3:2   116.414 kHz 353.900 MHz (266 mm x 177 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    8 Vsync   4 Vback   8 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'BOE HF'
+    Alphanumeric Data String: 'NV126A1M-N51'
+Checksum: 0x33

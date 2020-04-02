@@ -1,59 +1,42 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006af742300000000
-01120103a02115780a1cf59758508e27
-27505400000001010101010101010101
-010101010101c71b00b1502010301030
-13004bcf1000001ac71b00b150201030
-103013004bcf1000001a000000fe004e
-38373647804231353445573200000000
-00263541496684b3ff01010a20200088
+00 ff ff ff ff ff ff 00 06 af 74 23 00 00 00 00
+01 12 01 03 a0 21 15 78 0a 1c f5 97 58 50 8e 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c7 1b 00 b1 50 20 10 30 10 30
+13 00 4b cf 10 00 00 1a c7 1b 00 b1 50 20 10 30
+10 30 13 00 4b cf 10 00 00 1a 00 00 00 fe 00 4e
+38 37 36 47 80 42 31 35 34 45 57 32 00 00 00 00
+00 26 35 41 49 66 84 b3 ff 01 01 0a 20 20 00 88
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 af 74 23 00 00 00 00 01 12
-version:         01 03
-basic params:    a0 21 15 78 0a
-chroma info:     1c f5 97 58 50 8e 27 27 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    c7 1b 00 b1 50 20 10 30 10 30 13 00 4b cf 10 00 00 1a
-descriptor 2:    c7 1b 00 b1 50 20 10 30 10 30 13 00 4b cf 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 4e 38 37 36 47 80 42 31 35 34 45 57 32
-descriptor 4:    00 00 00 00 00 26 35 41 49 66 84 b3 ff 01 01 0a 20 20
-extensions:      00
-checksum:        88
+----------------
 
-EDID version: 1.3
-Manufacturer: AUO Model 2374 Serial Number --
-Made in week 1 of 2008
-Digital display
-Maximum image size: 33 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5898, 0.3447
-  Green: 0.3154, 0.5546
-  Blue:  0.1552, 0.1552
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 71.110 MHz, 331 mm x 207 mm
-               1280 1296 1344 1457 hborder 0
-                800  801  804  816 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 48805 Hz
-Detailed mode: Clock 71.110 MHz, 331 mm x 207 mm
-               1280 1296 1344 1457 hborder 0
-                800  801  804  816 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 48805 Hz
-ASCII string: N876G
-Manufacturer-specified data, tag 0
-Checksum: 0x88 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 20
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 9076
+    Made in: week 1 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3447
+    Green: 0.3154, 0.5546
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.811 Hz   8:5    48.806 kHz  71.110 MHz (331 mm x 207 mm)
+                 Hfront   16 Hsync  48 Hback 113 Hpol P
+                 Vfront    1 Vsync   3 Vback  12 Vpol N
+    DTD 2:  1280x800    59.811 Hz   8:5    48.806 kHz  71.110 MHz (331 mm x 207 mm)
+                 Hfront   16 Hsync  48 Hback 113 Hpol P
+                 Vfront    1 Vsync   3 Vback  12 Vpol N
+    Alphanumeric Data String: 'N876G'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 26 35 41 49 66 84 b3 ff 01 01 0a 20 20 '...&5AIf......  '
+Checksum: 0x88

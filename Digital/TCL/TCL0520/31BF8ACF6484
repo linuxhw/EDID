@@ -1,114 +1,95 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00506c200500000000
-00120103806639782ad255a354459926
-0f484c21080001010101010101010101
-010101010101023a801871382d40582c
-45007f884200001e011d007251d01e20
-6e2855007f884200001e000000fd002f
-3f27310f000a202020202020000000fc
-005243410a202020202020202020015c
-02031df14a9005040302060708090123
-0907078301000065030c0030008c0ad0
-8a20e02d10103e96007f88420000188c
-0ad08a20e02d10103e96006088320000
-18000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000cf
+00 ff ff ff ff ff ff 00 50 6c 20 05 00 00 00 00
+00 12 01 03 80 66 39 78 2a d2 55 a3 54 45 99 26
+0f 48 4c 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 7f 88 42 00 00 1e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 7f 88 42 00 00 1e 00 00 00 fd 00 2f
+3f 27 31 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 52 43 41 0a 20 20 20 20 20 20 20 20 20 01 5c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   50 6c 20 05 00 00 00 00 00 12
-version:         01 03
-basic params:    80 66 39 78 2a
-chroma info:     d2 55 a3 54 45 99 26 0f 48 4c
-established:     21 08 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 7f 88 42 00 00 1e
-descriptor 2:    01 1d 00 72 51 d0 1e 20 6e 28 55 00 7f 88 42 00 00 1e
-descriptor 3:    00 00 00 fd 00 2f 3f 27 31 0f 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 52 43 41 0a 20 20 20 20 20 20 20 20 20
-extensions:      01
-checksum:        5c
+02 03 1d f1 4a 90 05 04 03 02 06 07 08 09 01 23
+09 07 07 83 01 00 00 65 03 0c 00 30 00 8c 0a d0
+8a 20 e0 2d 10 10 3e 96 00 7f 88 42 00 00 18 8c
+0a d0 8a 20 e0 2d 10 10 3e 96 00 60 88 32 00 00
+18 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 cf
 
-EDID version: 1.3
-Manufacturer: TCL Model 520 Serial Number --
-Made in year 2008
-Digital display
-Maximum image size: 102 cm x 57 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3291
-  Green: 0.2695, 0.5996
-  Blue:  0.1494, 0.0595
-  White: 0.2822, 0.2978
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-Detailed mode: Clock 148.500 MHz, 1151 mm x 648 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 74.250 MHz, 1151 mm x 648 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Monitor ranges (GTF): 47-63Hz V, 39-49kHz H, max dotclock 150MHz
-Monitor name: RCA
-Has 1 extension blocks
-Checksum: 0x5c (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-25 bytes of CTA data
-  Video data block
-    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   6 1440x480i@60Hz 4:3  HorFreq: 15734 Hz Clock: 27.000 MHz
-    VIC   7 1440x480i@60Hz 16:9  HorFreq: 15734 Hz Clock: 27.000 MHz
-    VIC   8 1440x240@60Hz 4:3  HorFreq: 15734 Hz Clock: 27.000 MHz
-    VIC   9 1440x240@60Hz 16:9  HorFreq: 15734 Hz Clock: 27.000 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: TCL
+    Model: 1312
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 102 cm x 57 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2695, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.2822, 0.2978
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (1151 mm x 648 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 2:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (1151 mm x 648 mm)
+                 Hfront  110 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 47-63 Hz V, 39-49 kHz H, max dotclock 150 MHz
+    Display Product Name: 'RCA'
+  Extension blocks: 1
+Checksum: 0x5c
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans PC formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (native)
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC   6:  1440x480i   59.940 Hz   4:3    15.734 kHz  27.000 MHz
+    VIC   7:  1440x480i   59.940 Hz  16:9    15.734 kHz  27.000 MHz
+    VIC   8:  1440x240    60.054 Hz   4:3    15.734 kHz  27.000 MHz
+    VIC   9:  1440x240    60.054 Hz  16:9    15.734 kHz  27.000 MHz
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 3.0.0.0
-Underscans PC formats by default
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 27.000 MHz, 1151 mm x 648 mm
-                720  736  798  858 hborder 0
-                480  489  495  525 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 31468 Hz
-Detailed mode: Clock 27.000 MHz, 864 mm x 648 mm
-                720  736  798  858 hborder 0
-                480  489  495  525 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 31468 Hz
-Checksum: 0xcf (valid)
-
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 59 - 60 Hz
-  Horizontal Freq: 15734 - 67500 Hz
-  Maximum Clock: 148.500 MHz
-
-
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 3.0.0.0
+  Detailed Timing Descriptors:
+    DTD 3:   720x480    59.940 Hz   3:2    31.469 kHz  27.000 MHz (1151 mm x 648 mm)
+                 Hfront   16 Hsync  62 Hback  60 Hpol N
+                 Vfront    9 Vsync   6 Vback  30 Vpol N
+    DTD 4:   720x480    59.940 Hz   3:2    31.469 kHz  27.000 MHz (864 mm x 648 mm)
+                 Hfront   16 Hsync  62 Hback  60 Hpol N
+                 Vfront    9 Vsync   6 Vback  30 Vpol N
+Checksum: 0xcf

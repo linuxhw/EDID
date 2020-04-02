@@ -1,109 +1,93 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004c2d630d334b5030
-071b0104b53d23783b5fb1a2574fa228
-0f5054230800810081c08180a9c0b300
-9500010101014dd000a0f0703e803020
-35005f592100001a000000fd00283c87
-873c010a202020202020000000fc0055
-3238453531300a2020202020000000ff
-004854504a3230373632390a202001f5
-02030ef041102309070783010000023a
-801871382d40582c45005f592100001e
-565e00a0a0a02950302035005f592100
-001a0000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000bf
+00 ff ff ff ff ff ff 00 4c 2d 63 0d 33 4b 50 30
+07 1b 01 04 b5 3d 23 78 3b 5f b1 a2 57 4f a2 28
+0f 50 54 23 08 00 81 00 81 c0 81 80 a9 c0 b3 00
+95 00 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 5f 59 21 00 00 1a 00 00 00 fd 00 28 3c 87
+87 3c 01 0a 20 20 20 20 20 20 00 00 00 fc 00 55
+32 38 45 35 31 30 0a 20 20 20 20 20 00 00 00 ff
+00 48 54 50 4a 32 30 37 36 32 39 0a 20 20 01 f5
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c 2d 63 0d 33 4b 50 30 07 1b
-version:         01 04
-basic params:    b5 3d 23 78 3b
-chroma info:     5f b1 a2 57 4f a2 28 0f 50 54
-established:     23 08 00
-standard:        81 00 81 c0 81 80 a9 c0 b3 00 95 00 01 01 01 01
-descriptor 1:    4d d0 00 a0 f0 70 3e 80 30 20 35 00 5f 59 21 00 00 1a
-descriptor 2:    00 00 00 fd 00 28 3c 87 87 3c 01 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 55 32 38 45 35 31 30 0a 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 48 54 50 4a 32 30 37 36 32 39 0a 20 20
-extensions:      01
-checksum:        f5
+02 03 0e f0 41 10 23 09 07 07 83 01 00 00 02 3a
+80 18 71 38 2d 40 58 2c 45 00 5f 59 21 00 00 1e
+56 5e 00 a0 a0 a0 29 50 30 20 35 00 5f 59 21 00
+00 1a 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 bf
 
-EDID version: 1.4
-Manufacturer: SAM Model d63 Serial Number --
-Made in week 7 of 2017
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 61 cm x 35 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6337, 0.3408
-  Green: 0.3115, 0.6357
-  Blue:  0.1582, 0.0615
-  White: 0.3125, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x800@60Hz 16:10
-  1280x720@60Hz 16:9
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1600x900@60Hz 16:9
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-Detailed mode: Clock 533.250 MHz, 607 mm x 345 mm
-               3840 3888 3920 4000 hborder 0
-               2160 2163 2168 2222 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 133312 Hz
-Monitor ranges (bare limits): 40-60Hz V, 135-135kHz H, max dotclock 600MHz
-Monitor name: U28E510
-Serial number: --
-Has 1 extension blocks
-Checksum: 0xf5 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-10 bytes of CTA data
-  Video data block
-    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SAM
+    Model: 3427
+    Serial Number: ...
+    Made in: week 7 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 61 cm x 35 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6337, 0.3408
+    Green: 0.3115, 0.6357
+    Blue : 0.1582, 0.0615
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.997 Hz  16:9   133.312 kHz 533.250 MHz (607 mm x 345 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  54 Vpol N
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 40-60 Hz V, 135-135 kHz H, max dotclock 600 MHz
+    Display Product Name: 'U28E510'
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0xf5
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans PC formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-Underscans PC formats by default
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-0 native detailed modes
-Detailed mode: Clock 148.500 MHz, 607 mm x 345 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 241.500 MHz, 607 mm x 345 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1481 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 88786 Hz
-Checksum: 0xbf (valid)
-
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 56 - 60 Hz
-  Horizontal Freq: 31469 - 133312 Hz
-  Maximum Clock: 533.250 MHz
-EDID block does not conform at all!
-	Both the serial number and the serial string are set
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (607 mm x 345 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 3:  2560x1440   59.951 Hz  16:9    88.787 kHz 241.500 MHz (607 mm x 345 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  33 Vpol N
+Checksum: 0xbf

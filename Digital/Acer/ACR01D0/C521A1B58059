@@ -1,53 +1,41 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000472d00101000000
-1313010380331d780aee95a3544c9926
-0f505400000001010101010101010101
-0101010101011c348064703814403214
-8500021f21000018000000fe00454c35
-0a202020202020202020000000fe0041
-6365720a2020202020202020000000fe
-004c544d323330485430310a2020006d
+00 ff ff ff ff ff ff 00 04 72 d0 01 01 00 00 00
+13 13 01 03 80 33 1d 78 0a ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1c 34 80 64 70 38 14 40 32 14
+85 00 02 1f 21 00 00 18 00 00 00 fe 00 45 4c 35
+0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 00 41
+63 65 72 0a 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4c 54 4d 32 33 30 48 54 30 31 0a 20 20 00 6d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   04 72 d0 01 01 00 00 00 13 13
-version:         01 03
-basic params:    80 33 1d 78 0a
-chroma info:     ee 95 a3 54 4c 99 26 0f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    1c 34 80 64 70 38 14 40 32 14 85 00 02 1f 21 00 00 18
-descriptor 2:    00 00 00 fe 00 45 4c 35 0a 20 20 20 20 20 20 20 20 20
-descriptor 3:    00 00 00 fe 00 41 63 65 72 0a 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 4c 54 4d 32 33 30 48 54 30 31 0a 20 20
-extensions:      00
-checksum:        6d
+----------------
 
-EDID version: 1.3
-Manufacturer: ACR Model 1d0 Serial Number --
-Made in week 19 of 2009
-Digital display
-Maximum image size: 51 cm x 29 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1503, 0.0595
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 133.400 MHz, 514 mm x 287 mm
-               1920 1970 1990 2020 hborder 0
-               1080 1088 1093 1100 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 66039 Hz
-ASCII string: EL5
-ASCII string: Acer
-ASCII string: LTM230HT01
-Checksum: 0x6d (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ACR
+    Model: 464
+    Serial Number: ...
+    Made in: week 19 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 51 cm x 29 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.036 Hz  16:9    66.040 kHz 133.400 MHz (514 mm x 287 mm)
+                 Hfront   50 Hsync  20 Hback  30 Hpol N
+                 Vfront    8 Vsync   5 Vback   7 Vpol N
+    Alphanumeric Data String: 'EL5'
+    Alphanumeric Data String: 'Acer'
+    Alphanumeric Data String: 'LTM230HT01'
+Checksum: 0x6d

@@ -1,98 +1,98 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff002613061502000020
-091d0104b51e1a783aef65a656529d28
-0b505421080071408180a9c0d1c00101
-0101010101012d3680a070381f40582c
-45002c041100001e000000ff00303030
-30303030303030310a20000000fc0049
-505331353036554844520a20000000fd
-0037414b4b12000a20202020202001ee
-02031ef24301040223097f0783010000
-e305e000e200c0e6060501626228023a
-801871382d40582c45002c041100001e
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000011
+00 ff ff ff ff ff ff 00 26 13 06 15 02 00 00 20
+09 1d 01 04 b5 1e 1a 78 3a ef 65 a6 56 52 9d 28
+0b 50 54 21 08 00 71 40 81 80 a9 c0 d1 c0 01 01
+01 01 01 01 01 01 2d 36 80 a0 70 38 1f 40 58 2c
+45 00 2c 04 11 00 00 1e 00 00 00 ff 00 30 30 30
+30 30 30 30 30 30 30 31 0a 20 00 00 00 fc 00 49
+50 53 31 35 30 36 55 48 44 52 0a 20 00 00 00 fd
+00 37 41 4b 4b 12 00 0a 20 20 20 20 20 20 01 ee
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   26 13 06 15 02 00 00 20 09 1d
-version:         01 04
-basic params:    b5 1e 1a 78 3a
-chroma info:     ef 65 a6 56 52 9d 28 0b 50 54
-established:     21 08 00
-standard:        71 40 81 80 a9 c0 d1 c0 01 01 01 01 01 01 01 01
-descriptor 1:    2d 36 80 a0 70 38 1f 40 58 2c 45 00 2c 04 11 00 00 1e
-descriptor 2:    00 00 00 ff 00 30 30 30 30 30 30 30 30 30 30 31 0a 20
-descriptor 3:    00 00 00 fc 00 49 50 53 31 35 30 36 55 48 44 52 0a 20
-descriptor 4:    00 00 00 fd 00 37 41 4b 4b 12 00 0a 20 20 20 20 20 20
-extensions:      01
-checksum:        ee
+02 03 1e f2 43 01 04 02 23 09 7f 07 83 01 00 00
+e3 05 e0 00 e2 00 c0 e6 06 05 01 62 62 28 02 3a
+80 18 71 38 2d 40 58 2c 45 00 2c 04 11 00 00 1e
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11
 
-EDID version: 1.4
-Manufacturer: IPS Model 1506 Serial Number --
-Made in week 9 of 2019
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 30 cm x 26 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6513, 0.3378
-  Green: 0.3232, 0.6162
-  Blue:  0.1572, 0.0449
-  White: 0.3134, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1152x864@60Hz 4:3
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1600x900@60Hz 16:9
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 138.690 MHz, 300 mm x 260 mm
-               1920 2008 2052 2080 hborder 0
-               1080 1084 1089 1111 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 66677 Hz
-Serial number: --
-Monitor name: IPS1506UHDR
-Monitor ranges (GTF): 55-65Hz V, 75-75kHz H, max dotclock 180MHz
-Has 1 extension blocks
-Checksum: 0xee (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-26 bytes of CTA data
-  Video data block
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: IPS
+    Model: 5382
+    Serial Number: ...
+    Made in: week 9 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 30 cm x 26 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6513, 0.3378
+    Green: 0.3232, 0.6162
+    Blue : 0.1572, 0.0449
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    CVT     :  1152x864    59.959 Hz   4:3    53.783 kHz  81.750 MHz (EDID 1.4 source)
+    GTF     :  1152x864    60.000 Hz   4:3    53.700 kHz  81.624 MHz (EDID 1.3 source)
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.016 Hz  16:9    66.678 kHz 138.690 MHz (300 mm x 260 mm)
+                 Hfront   88 Hsync  44 Hback  28 Hpol P
+                 Vfront    4 Vsync   5 Vback  22 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: 'IPS1506UHDR'
+  Display Range Limits:
+    Monitor ranges (GTF): 55-65 Hz V, 75-75 kHz H, max dotclock 180 MHz
+  Extension blocks: 1
+Checksum: 0xee
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans PC formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Extended tag: Colorimetry data block
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-  Extended tag: Video capability data block
-    YCbCr quantization: Selectable (via AVI YQ) (1)
-    RGB quantization: Selectable (via AVI Q) (1)
-    PT scan behaviour: No Data (0)
-    IT scan behaviour: IT video formats not supported (0)
-    CE scan behaviour: CE video formats not supported (0)
-  Extended tag: HDR static metadata data block
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: CE video formats not supported
+  HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
       SMPTE ST2084
@@ -101,23 +101,8 @@ Extension version: 3
     Desired content max luminance: 98 (417.710 cd/m^2)
     Desired content max frame-average luminance: 98 (417.710 cd/m^2)
     Desired content min luminance: 40 (0.103 cd/m^2)
-Underscans PC formats by default
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-2 native detailed modes
-Detailed mode: Clock 148.500 MHz, 300 mm x 260 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Checksum: 0x11 (valid)
-
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 60 Hz
-  Horizontal Freq: 31469 - 67500 Hz
-  Maximum Clock: 148.500 MHz
-EDID block does not conform at all!
-	Both the serial number and the serial string are set
-
-
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (300 mm x 260 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+Checksum: 0x11

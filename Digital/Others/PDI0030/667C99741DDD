@@ -1,59 +1,47 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004089300001000000
-32150104a5301b780a014ca755469924
-12484b21080001010101010101010101
-010101010101023a801871382d40582c
-4500dc0c1100001a00000010000a2020
-20202020202020202020000000fd0032
-3e1e5a14350055502100001a000000fc
-0044503730314450313038300a200007
+00 ff ff ff ff ff ff 00 40 89 30 00 01 00 00 00
+32 15 01 04 a5 30 1b 78 0a 01 4c a7 55 46 99 24
+12 48 4b 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1a 00 00 00 10 00 0a 20 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fd 00 32
+3e 1e 5a 14 35 00 55 50 21 00 00 1a 00 00 00 fc
+00 44 50 37 30 31 44 50 31 30 38 30 0a 20 00 07
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   40 89 30 00 01 00 00 00 32 15
-version:         01 04
-basic params:    a5 30 1b 78 0a
-chroma info:     01 4c a7 55 46 99 24 12 48 4b
-established:     21 08 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 dc 0c 11 00 00 1a
-descriptor 2:    00 00 00 10 00 0a 20 20 20 20 20 20 20 20 20 20 20 20
-descriptor 3:    00 00 00 fd 00 32 3e 1e 5a 14 35 00 55 50 21 00 00 1a
-descriptor 4:    00 00 00 fc 00 44 50 37 30 31 44 50 31 30 38 30 0a 20
-extensions:      00
-checksum:        07
+----------------
 
-EDID version: 1.4
-Manufacturer: PDI Model 30 Serial Number --
-Made in week 50 of 2011
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 48 cm x 27 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6523, 0.3320
-  Green: 0.2734, 0.5986
-  Blue:  0.1416, 0.0703
-  White: 0.2841, 0.2929
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-Detailed mode: Clock 148.500 MHz, 476 mm x 268 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Dummy block
-Monitor ranges (invalid): 50-62Hz V, 30-90kHz H, max dotclock 200MHz
-Monitor name: DP701DP1080
-Checksum: 0x7 (valid)
-EDID block does not conform at all!
-	Detailed blocks filled with garbage
-	Dummy block filled with garbage
-	Range descriptor contains garbage
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: PDI
+    Model: 48
+    Serial Number: ...
+    Made in: week 50 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6523, 0.3320
+    Green: 0.2734, 0.5986
+    Blue : 0.1416, 0.0703
+    White: 0.2841, 0.2929
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (476 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol N
+    Dummy Descriptor:
+  Display Range Limits:
+    Monitor ranges (Unknown (0x35)): 50-62 Hz V, 30-90 kHz H, max dotclock 200 MHz
+    Display Product Name: 'DP701DP1080'
+Checksum: 0x7

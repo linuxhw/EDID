@@ -1,57 +1,40 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000daeb81500000000
-18160103802213780ad1f5935d599026
-1d505400000001010101010101010101
-0101010101019e1b568450001230281a
-460058c210000018a60000fe004e3135
-364247452d4c33310a20000000fe0043
-4d4e0a202020202020202020000000fe
-004e3135364247452d4c33310a20006a
+00 ff ff ff ff ff ff 00 0d ae b8 15 00 00 00 00
+18 16 01 03 80 22 13 78 0a d1 f5 93 5d 59 90 26
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9e 1b 56 84 50 00 12 30 28 1a
+46 00 58 c2 10 00 00 18 a6 00 00 fe 00 4e 31 35
+36 42 47 45 2d 4c 33 31 0a 20 00 00 00 fe 00 43
+4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 35 36 42 47 45 2d 4c 33 31 0a 20 00 6a
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0d ae b8 15 00 00 00 00 18 16
-version:         01 03
-basic params:    80 22 13 78 0a
-chroma info:     d1 f5 93 5d 59 90 26 1d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    9e 1b 56 84 50 00 12 30 28 1a 46 00 58 c2 10 00 00 18
-descriptor 2:    a6 00 00 fe 00 4e 31 35 36 42 47 45 2d 4c 33 31 0a 20
-descriptor 3:    00 00 00 fe 00 43 4d 4e 0a 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 4e 31 35 36 42 47 45 2d 4c 33 31 0a 20
-extensions:      00
-checksum:        6a
+----------------
 
-EDID version: 1.3
-Manufacturer: CMN Model 15b8 Serial Number --
-Made in week 24 of 2012
-Digital display
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5771, 0.3642
-  Green: 0.3476, 0.5634
-  Blue:  0.1513, 0.1162
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 70.700 MHz, 344 mm x 194 mm
-               1366 1406 1432 1498 hborder 0
-                768  772  778  786 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 47196 Hz
-Detailed mode: Clock 1.660 MHz, 813 mm x 844 mm
-                  0  310  376  254 hborder 49
-                846  866  889 2175 vborder 10
-               -hsync -vsync analog composite field sequential L/R
-               VertFreq: 3 Hz, HorFreq: 6535 Hz
-ASCII string: CMN
-ASCII string: N156BGE-L31
-Checksum: 0x6a (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5560
+    Made in: week 24 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5771, 0.3642
+    Green: 0.3476, 0.5634
+    Blue : 0.1513, 0.1162
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.046 Hz 683:384  47.196 kHz  70.700 MHz (344 mm x 194 mm)
+                 Hfront   40 Hsync  26 Hback  66 Hpol N
+                 Vfront    4 Vsync   6 Vback   8 Vpol N
+    Detailed mode: a6 00 00 fe 00 4e 31 35 36 42 47 45 2d 4c 33 31 0a 20 '.....N156BGE-L31. '
+    Alphanumeric Data String: 'CMN'
+    Alphanumeric Data String: 'N156BGE-L31'
+Checksum: 0x6a

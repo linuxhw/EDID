@@ -1,62 +1,45 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004d10791400000000
-311a0104a51a11780e0730a4544c9a26
-0e505400000001010101010101010101
-010101010101d04180a0700046503020
-3a0003ad10000018d04180a070009751
-30203a0003ad10000018000000fe0056
-4b4a434e804c513132334e3100000000
-0002410328011200000b010a20200072
+00 ff ff ff ff ff ff 00 4d 10 79 14 00 00 00 00
+31 1a 01 04 a5 1a 11 78 0e 07 30 a4 54 4c 9a 26
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d0 41 80 a0 70 00 46 50 30 20
+3a 00 03 ad 10 00 00 18 d0 41 80 a0 70 00 97 51
+30 20 3a 00 03 ad 10 00 00 18 00 00 00 fe 00 56
+4b 4a 43 4e 80 4c 51 31 32 33 4e 31 00 00 00 00
+00 02 41 03 28 01 12 00 00 0b 01 0a 20 20 00 72
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4d 10 79 14 00 00 00 00 31 1a
-version:         01 04
-basic params:    a5 1a 11 78 0e
-chroma info:     07 30 a4 54 4c 9a 26 0e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    d0 41 80 a0 70 00 46 50 30 20 3a 00 03 ad 10 00 00 18
-descriptor 2:    d0 41 80 a0 70 00 97 51 30 20 3a 00 03 ad 10 00 00 18
-descriptor 3:    00 00 00 fe 00 56 4b 4a 43 4e 80 4c 51 31 32 33 4e 31
-descriptor 4:    00 00 00 00 00 02 41 03 28 01 12 00 00 0b 01 0a 20 20
-extensions:      00
-checksum:        72
+----------------
 
-EDID version: 1.4
-Manufacturer: SHP Model 1479 Serial Number --
-Made in week 49 of 2016
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 26 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6406, 0.3281
-  Green: 0.2978, 0.6044
-  Blue:  0.1484, 0.0576
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 168.480 MHz, 259 mm x 173 mm
-               1920 1968 2000 2080 hborder 0
-               1280 1283 1293 1350 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 81000 Hz
-Detailed mode: Clock 168.480 MHz, 259 mm x 173 mm
-               1920 1968 2000 2080 hborder 0
-               1280 1283 1293 1687 vborder 0
-               -hsync -vsync 
-               VertFreq: 48 Hz, HorFreq: 81000 Hz
-ASCII string: VKJCN
-Manufacturer-specified data, tag 0
-Checksum: 0x72 (valid)
-EDID block does NOT conform to EDID 1.4!
-	sRGB is signaled, but the chromaticities do not match
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SHP
+    Model: 5241
+    Made in: week 49 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 26 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6406, 0.3281
+    Green: 0.2978, 0.6044
+    Blue : 0.1484, 0.0576
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1280   60.000 Hz   3:2    81.000 kHz 168.480 MHz (259 mm x 173 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync  10 Vback  57 Vpol N
+    DTD 2:  1920x1280   48.014 Hz   3:2    81.000 kHz 168.480 MHz (259 mm x 173 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync  10 Vback 394 Vpol N
+    Alphanumeric Data String: 'VKJCN'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 03 28 01 12 00 00 0b 01 0a 20 20 '....A.(.......  '
+Checksum: 0x72

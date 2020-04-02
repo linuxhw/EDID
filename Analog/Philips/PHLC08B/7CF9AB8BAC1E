@@ -1,74 +1,65 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00410c8bc0fe760500
-2a1501036e291778ee263caa615da22d
-16575cbfef8081c08bc081ca81cf0101
-010101010101662156aa51001e30468f
-33009ae61000001e000000ff00444c35
-31313432333538313432000000fc0050
-68696c69707320313937454c000000fd
-00384c1e530e000a202020202020004f
+00 ff ff ff ff ff ff 00 41 0c 8b c0 fe 76 05 00
+2a 15 01 03 6e 29 17 78 ee 26 3c aa 61 5d a2 2d
+16 57 5c bf ef 80 81 c0 8b c0 81 ca 81 cf 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 ff 00 44 4c 35
+31 31 34 32 33 35 38 31 34 32 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 31 39 37 45 4c 00 00 00 fd
+00 38 4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 4f
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   41 0c 8b c0 fe 76 05 00 2a 15
-version:         01 03
-basic params:    6e 29 17 78 ee
-chroma info:     26 3c aa 61 5d a2 2d 16 57 5c
-established:     bf ef 80
-standard:        81 c0 8b c0 81 ca 81 cf 01 01 01 01 01 01 01 01
-descriptor 1:    66 21 56 aa 51 00 1e 30 46 8f 33 00 9a e6 10 00 00 1e
-descriptor 2:    00 00 00 ff 00 44 4c 35 31 31 34 32 33 35 38 31 34 32
-descriptor 3:    00 00 00 fc 00 50 68 69 6c 69 70 73 20 31 39 37 45 4c
-descriptor 4:    00 00 00 fd 00 38 4c 1e 53 0e 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        4f
+----------------
 
-EDID version: 1.3
-Manufacturer: PHL Model c08b Serial Number --
-Made in week 42 of 2011
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate Composite SyncOnGreen 
-Maximum image size: 41 cm x 23 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6640, 0.3808
-  Green: 0.3642, 0.6347
-  Blue:  0.1757, 0.0888
-  White: 0.3427, 0.3593
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-  1152x870@75Hz 192:145 HorFreq: 67500 Hz Clock: 108.000 MHz
-Standard timings supported:
-  1280x720@60Hz 16:9
-  1360x765@60Hz 16:9
-  1280x720@70Hz 16:9
-  1280x720@75Hz 16:9
-Detailed mode: Clock 85.500 MHz, 410 mm x 230 mm
-               1366 1436 1579 1792 hborder 0
-                768  771  774  798 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 47712 Hz
-Serial number: --
-Monitor ranges (GTF): 56-76Hz V, 30-83kHz H, max dotclock 140MHz
-Checksum: 0x4f (valid)
-EDID block does NOT conform to EDID 1.3!
-	sRGB is signaled, but the chromaticities do not match
-	Name descriptor not terminated with a newline
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PHL
+    Model: 49291
+    Serial Number: ...
+    Made in: week 42 of 2011
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate Composite SyncOnGreen
+    Maximum image size: 41 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6640, 0.3808
+    Green: 0.3642, 0.6347
+    Blue : 0.1757, 0.0888
+    White: 0.3427, 0.3593
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    Apple   :   640x480    66.667 Hz   4:3    35.000 kHz  30.240 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    Apple   :   832x624    74.551 Hz   4:3    49.726 kHz  57.284 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+    Apple   :  1152x870    75.062 Hz 192:145  68.681 kHz 100.000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    GTF     :  1360x768    60.000 Hz  16:9    47.700 kHz  84.715 MHz
+    GTF     :  1280x720    70.000 Hz  16:9    52.500 kHz  89.040 MHz
+    GTF     :  1280x720    75.000 Hz  16:9    56.400 kHz  95.654 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.790 Hz 683:384  47.712 kHz  85.500 MHz (410 mm x 230 mm)
+                 Hfront   70 Hsync 143 Hback 213 Hpol P
+                 Vfront    3 Vsync   3 Vback  24 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: 'Philips 197EL'
+  Display Range Limits:
+    Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 140 MHz
+Checksum: 0x4f
