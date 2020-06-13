@@ -93,3 +93,22 @@ Block 1, CTA-861 Extension Block:
                  Hfront   88 Hsync  44 Hback 148 Hpol P
                  Vfront    4 Vsync   5 Vback  36 Vpol P
 Checksum: 0x41
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x20.
+  Display Product Serial Number: One or more trailing spaces.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Detailed Timing Descriptor #2: Mismatch of image size 698x392 mm vs display size 600x340 mm.
+
+EDID conformity: FAIL

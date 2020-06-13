@@ -123,3 +123,26 @@ Block 1, CTA-861 Extension Block:
                  Hfront   64 Hsync 192 Hback 304 Hpol P
                  Vfront    1 Vsync   3 Vback  46 Vpol P
 Checksum: 0xba
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 93.750 kHz (Monitor: 30.000 - 83.000 kHz)
+    Maximum Clock: 202.500 MHz (Monitor: 170.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI): The HDMI Specification uses EDID 1.3, not 1.4.
+All Blocks:
+  CVT timings are used, but the EDID does not signal CVT support.
+
+EDID conformity: FAIL

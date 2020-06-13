@@ -126,3 +126,22 @@ Block 1, CTA-861 Extension Block:
                  Hfront   16 Hsync  62 Hback  60 Hpol N
                  Vfront    9 Vsync   6 Vback  30 Vpol N
 Checksum: 0xf2
+
+----------------
+
+Warnings:
+
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.062 Hz (Monitor: 49.000 - 76.000 Hz)
+    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 30.000 - 82.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Byte 12 is 0x00 instead of 0x20.
+
+EDID conformity: FAIL

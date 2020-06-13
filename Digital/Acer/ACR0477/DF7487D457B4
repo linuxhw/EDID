@@ -136,3 +136,18 @@ Block 1, CTA-861 Extension Block:
                  Hfront   88 Hsync  44 Hback 148 Hpol P
                  Vfront    4 Vsync   5 Vback  36 Vpol P
 Checksum: 0x3c
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI): HDMI VSDB Max TMDS rate is > 340.
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.062 Hz (Monitor: 40.000 - 60.000 Hz)
+    Horizontal Freq: 15.734 - 135.000 kHz (Monitor: 30.000 - 160.000 kHz)
+
+EDID conformity: FAIL

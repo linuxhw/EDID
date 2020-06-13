@@ -107,3 +107,26 @@ Block 1, CTA-861 Extension Block:
                  Hfront  110 Hsync  40 Hback 220 Hpol P
                  Vfront    5 Vsync   5 Vback  20 Vpol P
 Checksum: 0xcc
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0170.
+  Detailed Timing Descriptor #1: 0 values in the video timing:
+    Horizontal Active/Blanking 1360/432
+    Horizontal Frontporch/Sync Width 64/112
+    Vertical Active/Blanking 768/27
+    Vertical Frontporch/Sync Width 0/6
+  Detailed Timing Descriptor #2: 0 values in the video timing:
+    Horizontal Active/Blanking 1280/384
+    Horizontal Frontporch/Sync Width 16/62
+    Vertical Active/Blanking 768/30
+    Vertical Frontporch/Sync Width 0/6
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 48.363 kHz (Monitor: 15.000 - 46.000 kHz)
+    Maximum Clock: 85.500 MHz (Monitor: 80.000 MHz)
+
+EDID conformity: FAIL

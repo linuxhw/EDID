@@ -106,3 +106,22 @@ Block 1, CTA-861 Extension Block:
     Dummy Descriptor:
     Dummy Descriptor:
 Checksum: 0xbf
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x20.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is set, but not display size.
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 148.500 MHz (Monitor: 110.000 MHz)
+
+EDID conformity: FAIL

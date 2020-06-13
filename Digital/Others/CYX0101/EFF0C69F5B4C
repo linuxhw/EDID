@@ -124,3 +124,27 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback  80 Hpol P
                  Vfront    3 Vsync   5 Vback  33 Vpol P
 Checksum: 0x3c
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Serial Number: Empty string.
+  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum): Max TMDS rate is > 0 and <= 340 or > 600.
+  YCbCr 4:2:0 Capability Map Data Block: Max index 19 > 4 (#SVDs).
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 13.405 - 60.317 Hz (Monitor: 48.000 - 75.000 Hz)
+    Horizontal Freq: 19.852 - 98.459 kHz (Monitor: 30.000 - 102.000 kHz)
+    Maximum Clock: 267.810 MHz (Monitor: 190.000 MHz)
+
+EDID conformity: FAIL

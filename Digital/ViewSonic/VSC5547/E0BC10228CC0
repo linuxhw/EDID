@@ -100,3 +100,23 @@ Block 1, CTA-861 Extension Block:
                  Hfront  110 Hsync  40 Hback 220 Hpol P
                  Vfront    5 Vsync   5 Vback  20 Vpol P
 Checksum: 0xce
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x20.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI): The HDMI Specification uses EDID 1.3, not 1.2.
+  Detailed Timing Descriptor #2: Mismatch of image size 16x9 mm vs display size 300x230 mm.
+
+EDID conformity: FAIL

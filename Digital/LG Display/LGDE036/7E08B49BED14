@@ -111,3 +111,19 @@ Block 1, Display Information Extension Block:
   Display Transfer Characteristics - Gamma:
     No Display Transfer Characteristics
 Checksum: 0x57
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Product Name.
+Block 1, Display Information Extension Block:
+  Digital Interface: Bit 6 of byte 0x07 should be 0.
+  Display Device: Unknown Sub-Pixel Configuration 0x1a.
+  Display Device: Unknown Sub-Pixel Shape 0x1a.
+
+EDID conformity: FAIL

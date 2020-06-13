@@ -156,3 +156,30 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback  80 Hpol P
                  Vfront    3 Vsync  10 Vback  69 Vpol N
 Checksum: 0x7
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI (which requires an RGB timings pixel rate >= 590 MHz).
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI): HDMI VSDB Max TMDS rate is > 340.
+  YCbCr 4:2:0 Capability Map Data Block: VIC 97 is also a YCbCr 4:2:0-only VIC.
+  YCbCr 4:2:0 Capability Map Data Block: VIC 95 is also a YCbCr 4:2:0-only VIC.
+  YCbCr 4:2:0 Capability Map Data Block: VIC 94 is also a YCbCr 4:2:0-only VIC.
+  YCbCr 4:2:0 Capability Map Data Block: VIC 93 is also a YCbCr 4:2:0-only VIC.
+  YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 97 is also a regular VIC.
+  YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 95 is also a regular VIC.
+  YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 94 is also a regular VIC.
+  YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 93 is also a regular VIC.
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 177.665 kHz (Monitor: 15.000 - 138.000 kHz)
+
+EDID conformity: FAIL

@@ -104,3 +104,27 @@ Block 1, CTA-861 Extension Block:
                  Vfront   63 Vsync  63 Vback 3969 Vpol P Vborder 255 Vfront +0.5 Odd Field
                  Vfront   63 Vsync  63 Vback 3969 Vpol P Vborder 255 Vback  +0.5 Even Field
 Checksum: 0xff (should be 0x8c)
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #4: Mismatch of image size 4095x4095 mm vs display size 1210x680 mm.
+  Detailed Timing Descriptor #4: Invalid detailed timing descriptor ordering.
+  Detailed Timing Descriptor #5: Mismatch of image size 4095x4095 mm vs display size 1210x680 mm.
+  Detailed Timing Descriptor #5: Invalid detailed timing descriptor ordering.
+  Padding: CTA-861 padding contains non-zero bytes.
+  Invalid checksum 0xff (should be 0x8c).
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 9.770 - 75.029 Hz (Monitor: 50.000 - 77.000 Hz)
+    Horizontal Freq: 27.000 - 80.018 kHz (Monitor: 31.000 - 70.000 kHz)
+    Maximum Clock: 655.350 MHz (Monitor: 150.000 MHz)
+
+EDID conformity: FAIL

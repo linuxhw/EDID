@@ -67,3 +67,18 @@ Block 0, Base EDID:
     Display Product Name: 'LINE411'
     Dummy Descriptor:
 Checksum: 0xb5
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #2: Mismatch of image size 370x220 mm vs display size 300x190 mm.
+  Display Product Name: Non-space after newline.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Range Limits Descriptor.
+All Blocks:
+  GTF timings are used, but the EDID does not signal GTF support.
+
+EDID conformity: FAIL

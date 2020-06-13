@@ -123,3 +123,51 @@ Block 1, CTA-861 Extension Block:
                  Vfront    0 Vsync   0 Vback  49 Vpol N
                    8c 0a d0 90 00 40 31 00 0c 40 00 00 81 60 00 00 00 18 '.....@1..@...`....'
 Checksum: 0x2f
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 459x296 mm vs display size 300x230 mm.
+  Display Product Serial Number: Non-printable character.
+  Display Product Name: Non-printable character.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 4.
+  Audio Data Block: Audio Format Code 0x00 is reserved
+  Audio Data Block: Audio Format Code 0x00 is reserved
+  Audio Data Block: Audio Format Code 0x00 is reserved
+  Audio Data Block: Audio Format Code 0x00 is reserved
+  Audio Data Block: Audio Format Code 0x00 is reserved
+  Audio Data Block: Audio Format Code 0x00 is reserved
+  Audio Data Block: Audio Format Code 0x00 is reserved
+  Detailed Timing Descriptor #2: 0 values in the video timing:
+    Horizontal Active/Blanking 0/114
+    Horizontal Frontporch/Sync Width 110/40
+    Vertical Active/Blanking 208/30
+    Vertical Frontporch/Sync Width 0/0
+  Detailed Timing Descriptor #2: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #2: Mismatch of image size 129x73 mm vs display size 300x230 mm.
+  Detailed Timing Descriptor #3: 0 values in the video timing:
+    Horizontal Active/Blanking 128/160
+    Horizontal Frontporch/Sync Width 16/96
+    Vertical Active/Blanking 224/45
+    Vertical Frontporch/Sync Width 0/0
+  Detailed Timing Descriptor #3: Mismatch of image size 129x96 mm vs display size 300x230 mm.
+  Detailed Timing Descriptor #4: 0 values in the video timing:
+    Horizontal Active/Blanking 208/144
+    Horizontal Frontporch/Sync Width 12/64
+    Vertical Active/Blanking 64/49
+    Vertical Frontporch/Sync Width 0/0
+  Detailed Timing Descriptor #4: Mismatch of image size 129x96 mm vs display size 300x230 mm.
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 2736.621 Hz (Monitor: 48.000 - 123.000 Hz)
+    Horizontal Freq: 15.625 - 651.315 kHz (Monitor: 28.000 - 200.000 kHz)
+
+EDID conformity: FAIL

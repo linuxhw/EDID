@@ -124,3 +124,24 @@ Block 1, CTA-861 Extension Block:
                  Hfront  255 Hsync 255 Hback -230 Hpol P
                  Vfront    4 Vsync   5 Vback 3876 Vpol P
 Checksum: 0xce (should be 0x55)
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Mismatch of image size 598x336 mm vs display size 480x270 mm.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Mismatch of image size 598x336 mm vs display size 480x270 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 598x336 mm vs display size 480x270 mm.
+  Detailed Timing Descriptor #5: Mismatch of image size 708x398 mm vs display size 480x270 mm.
+  Detailed Timing Descriptor #6: Mismatch of image size 518x324 mm vs display size 480x270 mm.
+  Detailed Timing Descriptor #7: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #7: Mismatch of image size 598x336 mm vs display size 480x270 mm.
+  Invalid checksum 0xce (should be 0x55).
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 14.334 - 75.029 Hz (Monitor: 56.000 - 75.000 Hz)
+    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 30.000 - 83.000 kHz)
+
+EDID conformity: FAIL

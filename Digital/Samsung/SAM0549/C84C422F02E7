@@ -121,3 +121,25 @@ Block 1, CTA-861 Extension Block:
                  Hfront   12 Hsync  64 Hback  68 Hpol N
                  Vfront    5 Vsync   5 Vback  39 Vpol N
 Checksum: 0xf2
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (16x9 is smaller than 10x10 cm).
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: 0 or negative horizontal front porch.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0018.
+  Detailed Timing Descriptor #1: Mismatch of image size 16x9 mm vs display size 160x90 mm.
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 122.003 Hz (Monitor: 23.000 - 75.000 Hz)
+    Horizontal Freq: 11.530 - 111.930 kHz (Monitor: 26.000 - 81.000 kHz)
+    Maximum Clock: 294.600 MHz (Monitor: 170.000 MHz)
+
+EDID conformity: FAIL

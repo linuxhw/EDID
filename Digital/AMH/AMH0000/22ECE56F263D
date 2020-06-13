@@ -124,3 +124,25 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback  80 Hpol P
                  Vfront    3 Vsync   5 Vback  33 Vpol P
 Checksum: 0xe3
+
+----------------
+
+Warnings:
+
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 133.312 kHz (Monitor: 30.000 - 160.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI): The HDMI Specification uses EDID 1.3, not 1.4.
+  Detailed Timing Descriptor #2: Mismatch of image size 708x399 mm vs display size 880x510 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 708x399 mm vs display size 880x510 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 708x399 mm vs display size 880x510 mm.
+All Blocks:
+  CVT timings are used, but the EDID does not signal CVT support.
+
+EDID conformity: FAIL

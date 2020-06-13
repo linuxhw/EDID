@@ -60,3 +60,19 @@ Block 0, Base EDID:
     Detailed mode: 4b 00 00 a0 51 00 25 30 50 80 37 00 5a d0 10 00 00 00 'K...Q.%0P.7.Z.....'
     Empty Descriptor
 Checksum: 0x4f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Pixelclock < 10 MHz, assuming invalid data 0x3c 0x00.
+  Detailed Timing Descriptor #2: Pixelclock < 10 MHz, assuming invalid data 0x3c 0x00.
+  Detailed Timing Descriptor #3: Pixelclock < 10 MHz, assuming invalid data 0x4b 0x00.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+All Blocks:
+  GTF timings are used, but the EDID does not signal GTF support.
+
+EDID conformity: FAIL

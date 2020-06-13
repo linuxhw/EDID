@@ -112,3 +112,21 @@ Block 1, CTA-861 Extension Block:
                  Vfront    9 Vsync   6 Vback  30 Vpol N
     Manufacturer-Specified Display Descriptor (0x00): 00 00 ff 00 36 30 35 4e 54 4a 4a 34 35 31 30 30 '....605NTJJ45100'
 Checksum: 0xb8
+
+----------------
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Mismatch of image size 598x337 mm vs display size 670x280 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 598x337 mm vs display size 670x280 mm.
+  Detailed Timing Descriptor #5: Mismatch of image size 598x337 mm vs display size 670x280 mm.
+  Detailed Timing Descriptor #6: Mismatch of image size 598x337 mm vs display size 670x280 mm.
+  Display Descriptor #9: Monitor descriptor block has byte 4 nonzero (0xff).
+  Padding: CTA-861 padding contains non-zero bytes.
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.062 Hz (Monitor: 56.000 - 75.000 Hz)
+    Horizontal Freq: 28.125 - 79.976 kHz (Monitor: 30.000 - 90.000 kHz)
+
+EDID conformity: FAIL

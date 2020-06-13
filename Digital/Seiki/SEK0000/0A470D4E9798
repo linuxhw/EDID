@@ -137,3 +137,18 @@ Block 1, CTA-861 Extension Block:
                  Hfront  440 Hsync  40 Hback 220 Hpol P
                  Vfront    5 Vsync   5 Vback  20 Vpol P
 Checksum: 0x98
+
+----------------
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI): HDMI 3D VIC indices max index 16 > 15 (#SVDs).
+  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.029 Hz (Monitor: 50.000 - 75.000 Hz)
+    Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 24.000 - 60.000 kHz)
+    Maximum Clock: 297.000 MHz (Monitor: 110.000 MHz)
+
+EDID conformity: FAIL

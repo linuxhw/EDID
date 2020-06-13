@@ -113,3 +113,42 @@ Block 1, CTA-861 Extension Block:
                  Vfront   63 Vsync  63 Vback 3969 Vpol P Vborder 255 Vfront +0.5 Odd Field
                  Vfront   63 Vsync  63 Vback 3969 Vpol P Vborder 255 Vback  +0.5 Even Field
 Checksum: 0xff (should be 0x24)
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Unknown Extended CTA Data Block 0xff.
+  Unknown Extended CTA Data Block 0xff.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Video Data Block: Unknown VIC 255.
+  Video Data Block: Unknown VIC 255.
+  Video Data Block: Duplicate VIC 255.
+  Video Data Block: Unknown VIC 255.
+  Video Data Block: Unknown VIC 255.
+  Video Data Block: Unknown VIC 255.
+  Video Data Block: Unknown VIC 255.
+  Video Data Block: Unknown VIC 255.
+  Video Data Block: Unknown VIC 255.
+  Video Data Block: Unknown VIC 255.
+  Video Data Block: Unknown VIC 255.
+  Video Data Block: Unknown VIC 255.
+  Video Data Block: Unknown VIC 255.
+  Video Data Block: Unknown VIC 255.
+  Video Data Block: Unknown VIC 255.
+  Video Data Block: Unknown VIC 255.
+  Offset is 89, but should be 96
+  Detailed Timing Descriptor #3: Mismatch of image size 4095x4095 mm vs display size 1600x900 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 4095x4095 mm vs display size 1600x900 mm.
+  Padding: CTA-861 padding contains non-zero bytes.
+  Invalid checksum 0xff (should be 0x24).
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 9.770 - 75.000 Hz (Monitor: 23.000 - 62.000 Hz)
+    Maximum Clock: 655.350 MHz (Monitor: 600.000 MHz)
+
+EDID conformity: FAIL

@@ -109,3 +109,36 @@ Block 1, CTA-861 Extension Block:
                    40 80 35 00 40 84 63 00 00 1c 00 00 00 00 00 00 00 00 '@.5.@.c...........'
     Unknown Display Descriptor (0x55): 00 55 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '.U..............'
 Checksum: 0xc0
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x20.
+Block 1, CTA-861 Extension Block:
+  Display Descriptor #5: Monitor descriptor block has byte 2 nonzero (0x36).
+  Display Descriptor #5: Monitor descriptor block has byte 4 nonzero (0x40).
+  Detailed Timing Descriptor #2: 0 values in the video timing:
+    Horizontal Active/Blanking 1077/0
+    Horizontal Frontporch/Sync Width 0/28
+    Vertical Active/Blanking 132/99
+    Vertical Frontporch/Sync Width 0/0
+  Detailed Timing Descriptor #2: 0 or negative horizontal front porch.
+  Detailed Timing Descriptor #2: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #2: Invalid detailed timing descriptor ordering.
+  Display Descriptor #7: Unknown Type 0x55.
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 1319.683 Hz (Monitor: 50.000 - 85.000 Hz)
+    Horizontal Freq: 31.466 - 304.846 kHz (Monitor: 30.000 - 82.000 kHz)
+    Maximum Clock: 328.320 MHz (Monitor: 140.000 MHz)
+
+EDID conformity: FAIL
