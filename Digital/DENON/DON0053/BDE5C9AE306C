@@ -158,6 +158,7 @@ Block 1, CTA-861 Extension Block:
         HDMI VIC 4:  4096x2160   24.000 Hz 256:135  54.000 kHz 297.000 MHz
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
     Version: 1
+    Supports Auto Low-Latency Mode
   YCbCr 4:2:0 Video Data Block:
     VIC  97:  3840x2160   60.000 Hz  16:9    67.500 kHz 297.000 MHz
     VIC  96:  3840x2160   50.000 Hz  16:9    56.250 kHz 297.000 MHz
@@ -182,7 +183,8 @@ Block 1, CTA-861 Extension Block:
     IT scan behavior: Always Overscanned
     CE scan behavior: Supports both over- and underscan
   Vendor-Specific Audio Data Block:
-    46 d0 00 70 00                                  'F..p.'
+  Vendor-Specific Audio Data Block (Dolby), OUI 00-D0-46:
+    70 00                                           'p.'
   Detailed Timing Descriptors:
     DTD 3:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz (1872 mm x 1053 mm)
                  Hfront  528 Hsync  44 Hback 148 Hpol P

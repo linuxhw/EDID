@@ -143,6 +143,7 @@ Block 1, CTA-861 Extension Block:
     SCDC Present
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+    Supports Auto Low-Latency Mode
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
@@ -164,7 +165,7 @@ Block 1, CTA-861 Extension Block:
       Static metadata type 1
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
-  Vendor-Specific Video Data Block (Dolby Vision), OUI 00-D0-46:
+  Vendor-Specific Video Data Block (Dolby), OUI 00-D0-46:
     Version: 2 (12 bytes)
     Supports global dimming
     DM Version: 3.x
@@ -177,5 +178,6 @@ Block 1, CTA-861 Extension Block:
     Unique Gx, Gy: 0.30468750, 0.62500000
     Unique Bx, By: 0.15234375, 0.05468750
   Vendor-Specific Audio Data Block:
-    46 d0 00 70 00                                  'F..p.'
+  Vendor-Specific Audio Data Block (Dolby), OUI 00-D0-46:
+    70 00                                           'p.'
 Checksum: 0x1a
