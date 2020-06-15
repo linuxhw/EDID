@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 23 24 34 08 00 00 00 00
+00 15 01 03 80 15 10 78 ea bd 30 91 54 4f 8b 26
+21 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 f7 18 00 40 41 00 26 30 18 88
+36 00 d2 9e 00 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 48
+59 44 49 53 0a 20 20 20 20 20 20 20 00 00 00 fe
+00 48 58 31 30 34 58 30 32 2d 31 30 31 0a 00 30
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HYD
+    Model: 2100
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 21 cm x 16 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5683, 0.3310
+    Green: 0.3115, 0.5439
+    Blue : 0.1484, 0.1318
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    58.998 Hz   4:3    47.552 kHz  63.910 MHz (210 mm x 158 mm)
+                 Hfront   24 Hsync 136 Hback 160 Hpol N
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'HYDIS'
+    Alphanumeric Data String: 'HX104X02-101'
+Checksum: 0x30
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

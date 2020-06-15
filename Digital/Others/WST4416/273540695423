@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5e 74 16 44 00 00 00 00
+05 1a 01 04 a5 19 11 78 02 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 78 55 70 0e 81 a0 3c 50 32 28
+22 00 fe a9 00 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 57
+53 54 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4b 4c 2e 31 32 30 30 57 2e 30 30 34 0a 00 f4
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: WST
+    Model: 17430
+    Made in: week 5 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 25 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2160x1440   60.027 Hz   3:2    90.041 kHz 218.800 MHz (254 mm x 169 mm)
+                 Hfront   50 Hsync  40 Hback 180 Hpol N
+                 Vfront    2 Vsync   2 Vback  56 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'WST'
+    Alphanumeric Data String: 'KL.1200W.004'
+Checksum: 0xf4
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

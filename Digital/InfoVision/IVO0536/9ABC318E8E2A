@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cf 36 05 00 00 00 00
+00 1b 01 04 a5 1d 11 78 0a de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 38 36 80 a0 70 38 20 40 18 30
+3c 00 26 a5 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 49
+6e 66 6f 56 69 73 69 6f 6e 0a 20 20 00 00 00 fe
+00 4d 31 33 33 4e 57 46 34 20 52 33 20 0a 00 44
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: IVO
+    Model: 1334
+    Made in: 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.010 Hz  16:9    66.731 kHz 138.800 MHz (294 mm x 165 mm)
+                 Hfront   24 Hsync  48 Hback  88 Hpol N
+                 Vfront    3 Vsync  12 Vback  17 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'InfoVision'
+    Alphanumeric Data String: 'M133NWF4 R3 '
+Checksum: 0x44
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

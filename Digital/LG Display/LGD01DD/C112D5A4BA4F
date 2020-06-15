@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 dd 01 00 00 00 00
+00 13 01 03 80 26 15 78 0a 6c 15 9c 59 55 99 27
+18 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2f 26 40 b8 60 84 0c 30 30 30
+23 00 7e d7 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 00
+00 00 4c 47 44 69 73 70 6c 61 79 0a 00 00 00 fe
+00 4c 50 31 37 33 57 44 31 2d 54 4c 43 31 00 48
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 477
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6103, 0.3496
+    Green: 0.3349, 0.5976
+    Blue : 0.1523, 0.0947
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.080 Hz  16:9    54.793 kHz  97.750 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  48 Hback  88 Hpol N
+                 Vfront    2 Vsync   3 Vback   7 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: ''
+    Alphanumeric Data String: 'LP173WD1-TLC1'
+Checksum: 0x48
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

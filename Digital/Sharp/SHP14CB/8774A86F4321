@@ -1,0 +1,56 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 10 cb 14 00 00 00 00
+2d 1d 01 04 a5 1d 12 78 0e de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 20 b4 10 00 00 18 20 30 80 a0 70 b0 23 40
+30 20 36 00 20 b4 10 00 00 18 00 00 00 fe 00 58
+47 46 4a 30 80 4c 51 31 33 34 4e 31 00 00 00 00
+00 02 41 03 32 00 12 00 00 0a 01 0a 20 20 00 c0
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SHP
+    Model: 5323
+    Made in: week 45 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.950 Hz   8:5    74.038 kHz 154.000 MHz (288 mm x 180 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   6 Vback  26 Vpol N
+    DTD 2:  1920x1200   47.960 Hz   8:5    59.231 kHz 123.200 MHz (288 mm x 180 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   6 Vback  26 Vpol N
+    Alphanumeric Data String: 'XGFJ0'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 03 32 00 12 00 00 0a 01 0a 20 20 '....A.2.......  '
+Checksum: 0xc0
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

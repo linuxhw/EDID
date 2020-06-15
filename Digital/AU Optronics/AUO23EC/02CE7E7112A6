@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af ec 23 00 00 00 00
+01 13 01 03 90 22 13 78 0a c8 95 9e 57 54 92 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b0 1c 56 a0 50 00 22 30 20 18
+34 00 58 c1 10 00 00 1a b0 1c 56 a0 50 00 22 30
+20 18 34 00 58 c1 10 00 00 1a 00 00 00 fe 00 57
+34 36 35 52 81 42 31 35 36 58 57 32 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 01 0a 20 20 00 ca
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 9196
+    Made in: week 1 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6201, 0.3398
+    Green: 0.3300, 0.5703
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.007 Hz 683:384  48.126 kHz  73.440 MHz (344 mm x 193 mm)
+                 Hfront   32 Hsync  24 Hback 104 Hpol P
+                 Vfront    3 Vsync   4 Vback  27 Vpol N
+    DTD 2:  1366x768    60.007 Hz 683:384  48.126 kHz  73.440 MHz (344 mm x 193 mm)
+                 Hfront   32 Hsync  24 Hback 104 Hpol P
+                 Vfront    3 Vsync   4 Vback  27 Vpol N
+    Alphanumeric Data String: 'W465R'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20 '..............  '
+Checksum: 0xca
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cf 1a 06 01 00 00 00
+06 14 01 03 80 22 13 78 0a 73 e0 9f 59 56 92 25
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 78 1d 56 c2 50 00 26 30 30 20
+3c 00 58 c1 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 00 00 00 fe 00 49
+6e 66 6f 56 69 73 69 6f 6e 0a 20 20 00 00 00 fe
+00 4d 31 35 36 4e 57 52 32 20 52 30 20 0a 00 38
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: IVO
+    Model: 1562
+    Serial Number: ...
+    Made in: week 6 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6220, 0.3505
+    Green: 0.3359, 0.5732
+    Blue : 0.1474, 0.0527
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.999 Hz 683:384  48.359 kHz  75.440 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback 114 Hpol N
+                 Vfront    3 Vsync  12 Vback  23 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 '................'
+    Alphanumeric Data String: 'InfoVision'
+    Alphanumeric Data String: 'M156NWR2 R0 '
+Checksum: 0x38
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

@@ -1,0 +1,127 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 14 e1 01 00 00 00 00 00
+11 17 01 03 80 00 02 78 1a cf 74 a3 57 4c b0 23
+09 48 4c 00 00 00 81 c0 d1 c0 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 c4 8e 21 00 00 1e 00 00 00 18 00 1c 16 20
+58 2c 25 00 c4 8e 21 00 00 9e 00 00 00 fc 00 45
+6c 67 61 74 6f 0a 20 20 20 20 20 20 00 00 00 fd
+00 17 3d 19 46 0f 00 0a 20 20 20 20 20 20 01 e5
+
+02 03 26 f4 51 85 04 03 02 12 13 94 16 07 06 11
+15 a1 a2 27 1f 10 23 09 07 01 83 01 00 00 67 03
+0c 00 10 00 20 28 8c 0a a0 14 51 f0 16 00 26 7c
+43 00 c4 8e 21 00 00 98 8c 0a d0 8a 20 e0 2d 10
+10 3e 96 00 c4 8e 21 00 00 19 01 1d 00 72 51 d0
+1e 20 6e 28 55 00 c4 8e 21 00 00 1f 01 1d 80 18
+71 1c 16 20 58 2c 25 00 c4 8e 21 00 00 9e 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 14
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: EGA
+    Model: 1
+    Made in: week 17 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    Undefined display color type
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.2998, 0.6904
+    Blue : 0.1376, 0.0380
+    White: 0.2822, 0.2968
+  Established Timings I & II: none
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    Unknown Display Descriptor (0x18): 00 18 00 1c 16 20 58 2c 25 00 c4 8e 21 00 00 9e '..... X,%...!...'
+    Display Product Name: 'Elgato'
+  Display Range Limits:
+    Monitor ranges (GTF): 23-61 Hz V, 25-70 kHz H, max dotclock 150 MHz
+  Extension blocks: 1
+Checksum: 0xe5
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans PC formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 4
+  Video Data Block:
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz (native)
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz (native)
+    VIC  22:  1440x576i   50.000 Hz  16:9    15.625 kHz  27.000 MHz
+    VIC   7:  1440x480i   59.940 Hz  16:9    15.734 kHz  27.000 MHz
+    VIC   6:  1440x480i   59.940 Hz   4:3    15.734 kHz  27.000 MHz
+    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
+    VIC  21:  1440x576i   50.000 Hz   4:3    15.625 kHz  27.000 MHz
+    VIC  33:  1920x1080   25.000 Hz  16:9    28.125 kHz  74.250 MHz (native)
+    VIC  34:  1920x1080   30.000 Hz  16:9    33.750 kHz  74.250 MHz (native)
+    VIC  39:  1920x1080i  50.000 Hz  16:9    31.250 kHz  72.000 MHz
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    Maximum TMDS clock: 200 MHz
+  Detailed Timing Descriptors:
+    DTD 2:  1440x480i   59.940 Hz   3:1    15.734 kHz  27.000 MHz (708 mm x 398 mm)
+                 Hfront   38 Hsync 124 Hback 114 Hpol N
+                 Vfront    4 Vsync   3 Vback  15 Vpol N Vfront +0.5 Odd Field
+                 Vfront    4 Vsync   3 Vback  15 Vpol N Vback  +0.5 Even Field
+    DTD 3:   720x480    59.940 Hz   3:2    31.469 kHz  27.000 MHz (708 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback  60 Hpol N
+                 Vfront    9 Vsync   6 Vback  30 Vpol N
+    DTD 4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (708 mm x 398 mm)
+                 Hfront  110 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+    DTD 5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    2 Vsync   5 Vback  15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback  15 Vpol P Vback  +0.5 Even Field
+Checksum: 0x14
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is set, but not display size.
+  Display Descriptor #2: Unknown Type 0x18.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is set, but not display size.
+  Detailed Timing Descriptor #3: Mismatch of image size vs display size: image size is set, but not display size.
+  Detailed Timing Descriptor #4: Mismatch of image size vs display size: image size is set, but not display size.
+  Detailed Timing Descriptor #5: Mismatch of image size vs display size: image size is set, but not display size.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 25.000 - 70.000 kHz)
+
+EDID conformity: FAIL

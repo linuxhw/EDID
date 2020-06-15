@@ -1,0 +1,50 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 36 17 00 00 00 00
+32 15 01 03 80 26 15 78 0a 1a 05 9e 56 57 96 28
+13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1c 2a 40 54 61 84 1a 30 30 20
+35 00 7e d6 10 00 00 1a 00 00 00 fe 00 4e 31 37
+33 46 47 45 2d 4c 36 33 0a 20 00 00 00 fe 00 43
+4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 37 33 46 47 45 2d 4c 36 33 0a 20 00 eb
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5942
+    Made in: week 50 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6171, 0.3369
+    Green: 0.3417, 0.5878
+    Blue : 0.1562, 0.0742
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.008 Hz  16:9    55.567 kHz 107.800 MHz (382 mm x 214 mm)
+                 Hfront   48 Hsync  32 Hback 260 Hpol P
+                 Vfront    3 Vsync   5 Vback  18 Vpol N
+    Alphanumeric Data String: 'N173FGE-L63'
+    Alphanumeric Data String: 'CMN'
+    Alphanumeric Data String: 'N173FGE-L63'
+Checksum: 0xeb
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

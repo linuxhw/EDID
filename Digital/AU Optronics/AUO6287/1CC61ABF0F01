@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 87 62 00 00 00 00
+01 11 01 03 90 25 17 78 0a 1c f5 97 58 50 8e 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 16 26 a0 54 51 84 0c 30 d0 20
+36 00 6f e5 10 00 00 1a 16 26 a0 54 51 84 0c 30
+d0 20 36 00 6f e5 10 00 00 1a 00 00 00 fe 00 57
+55 33 34 32 80 42 31 37 30 50 57 36 00 00 00 00
+00 00 00 00 00 00 00 00 00 02 01 0a 20 20 00 93
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 25223
+    Made in: week 1 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 37 cm x 23 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3447
+    Green: 0.3154, 0.5546
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    60.061 Hz   8:5    54.775 kHz  97.500 MHz (367 mm x 229 mm)
+                 Hfront  208 Hsync  32 Hback 100 Hpol P
+                 Vfront    3 Vsync   6 Vback   3 Vpol N
+    DTD 2:  1440x900    60.061 Hz   8:5    54.775 kHz  97.500 MHz (367 mm x 229 mm)
+                 Hfront  208 Hsync  32 Hback 100 Hpol P
+                 Vfront    3 Vsync   6 Vback   3 Vpol N
+    Alphanumeric Data String: 'WU342'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 02 01 0a 20 20 '..............  '
+Checksum: 0x93
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

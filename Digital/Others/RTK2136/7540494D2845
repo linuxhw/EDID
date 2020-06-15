@@ -1,0 +1,58 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4a 8b 36 21 06 00 00 00
+09 19 01 01 80 35 1e 78 ea ec 40 a6 56 51 9c 26
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 30 40 58 2c
+48 00 dd 0c 11 00 00 1e 00 00 00 fd 00 38 4b 41
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+47 20 41 49 4f 20 46 48 44 0a 20 20 00 00 00 ff
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 6f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: RTK
+    Model: 8502
+    Serial Number: ...
+    Made in: week 9 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 53 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6513, 0.3378
+    Green: 0.3193, 0.6093
+    Blue : 0.1494, 0.0625
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.840 Hz  16:9    67.500 kHz 148.500 MHz (477 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   8 Vback  36 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 56-75 Hz V, 65-83 kHz H, max dotclock 170 MHz
+    Display Product Name: 'LG AIO FHD'
+    Display Product Serial Number: ...
+Checksum: 0x6f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 477x268 mm vs display size 530x300 mm.
+  Display Product Serial Number: Empty string.
+
+EDID conformity: FAIL

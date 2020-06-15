@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 0d 0f 01 01 01 01
+00 0e 01 03 80 21 15 78 0a 47 a0 99 59 4f 8c 27
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c7 1b 00 a0 50 20 17 30 15 20
+44 00 4b cf 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 58
+34 38 34 38 00 42 31 35 34 45 57 31 00 00 00 fe
+00 e0 d0 c8 b8 90 68 48 00 01 01 0a 20 20 00 b6
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 3853
+    Serial Number: ...
+    Made in: 2004
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5986, 0.3476
+    Green: 0.3095, 0.5498
+    Blue : 0.1542, 0.1152
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.002 Hz   8:5    49.382 kHz  71.110 MHz (331 mm x 207 mm)
+                 Hfront   21 Hsync  32 Hback 107 Hpol N
+                 Vfront    4 Vsync   4 Vback  15 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'X4848'
+    Alphanumeric Data String: ''
+Checksum: 0xb6
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

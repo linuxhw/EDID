@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 1f 05 00 00 00 00
+00 1b 01 04 95 22 13 78 02 5b e5 93 58 54 90 27
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 24 36 80 a0 70 38 1f 40 30 20
+35 00 58 c2 10 00 00 19 24 36 80 a0 70 38 1f 40
+30 20 35 00 58 c2 10 00 00 19 00 00 00 fe 00 44
+4a 35 38 4d 81 31 35 36 57 46 39 0a 00 00 00 00
+00 00 41 31 96 01 10 00 00 0a 01 0a 20 20 00 20
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1311
+    Made in: 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5751, 0.3447
+    Green: 0.3300, 0.5654
+    Blue : 0.1552, 0.1152
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.977 Hz  16:9    66.635 kHz 138.600 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 2:  1920x1080   59.977 Hz  16:9    66.635 kHz 138.600 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    Alphanumeric Data String: 'DJ58M'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 96 01 10 00 00 0a 01 0a 20 20 '....A1........  '
+Checksum: 0x20
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

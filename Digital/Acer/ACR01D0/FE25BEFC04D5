@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 d0 01 01 00 00 00
+13 13 01 03 80 33 1d 78 0a ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 94 34 80 64 70 38 14 40 32 14
+85 00 02 1f 21 00 00 18 00 00 00 fe 00 45 4c 38
+0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 00 41
+63 65 72 0a 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4c 54 4d 32 33 30 48 54 30 31 0a 20 20 00 f2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ACR
+    Model: 464
+    Serial Number: ...
+    Made in: week 19 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 51 cm x 29 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.576 Hz  16:9    66.634 kHz 134.600 MHz (514 mm x 287 mm)
+                 Hfront   50 Hsync  20 Hback  30 Hpol N
+                 Vfront    8 Vsync   5 Vback   7 Vpol N
+    Alphanumeric Data String: 'EL8'
+    Alphanumeric Data String: 'Acer'
+    Alphanumeric Data String: 'LTM230HT01'
+Checksum: 0xf2
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 32 0c 00 00 00 00 00 00
+00 11 01 03 80 25 17 78 0a 3b 60 9a 59 52 8d 28
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a a0 10 52 84 0e 30 50 30
+13 00 6f e6 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 00 00 00 fe 00 47
+52 34 33 30 00 31 37 31 57 58 32 0a 00 00 00 fe
+00 2a 40 4d 56 79 98 c4 ff 02 01 0a 20 20 00 f9
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LPL
+    Model: 0
+    Made in: 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 37 cm x 23 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6015, 0.3505
+    Green: 0.3222, 0.5537
+    Blue : 0.1572, 0.1464
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    60.042 Hz   8:5    54.878 kHz 108.000 MHz (367 mm x 230 mm)
+                 Hfront   80 Hsync  48 Hback 400 Hpol N
+                 Vfront    1 Vsync   3 Vback  10 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 '................'
+    Alphanumeric Data String: 'GR430'
+    Alphanumeric Data String: '*@MVy'
+Checksum: 0xf9
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

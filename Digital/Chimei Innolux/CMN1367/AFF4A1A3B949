@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 67 13 00 00 00 00
+25 19 01 04 a5 1d 11 78 02 87 85 a4 57 50 9b 27
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 36 36 80 a0 70 38 20 40 2e 1e
+24 00 25 a5 10 00 00 1a 5e 2b 80 a0 70 38 20 40
+2e 1e 24 00 25 a5 10 00 00 1a 00 00 00 fe 00 57
+36 34 43 57 80 31 33 33 48 43 45 0a 00 00 00 00
+00 01 41 01 9e 00 10 00 00 0a 01 0a 20 20 00 ca
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 4967
+    Made in: week 37 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6425, 0.3398
+    Green: 0.3134, 0.6083
+    Blue : 0.1542, 0.0507
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.001 Hz  16:9    66.721 kHz 138.780 MHz (293 mm x 165 mm)
+                 Hfront   46 Hsync  30 Hback  84 Hpol P
+                 Vfront    2 Vsync   4 Vback  26 Vpol N
+    DTD 2:  1920x1080   47.999 Hz  16:9    53.375 kHz 111.020 MHz (293 mm x 165 mm)
+                 Hfront   46 Hsync  30 Hback  84 Hpol P
+                 Vfront    2 Vsync   4 Vback  26 Vpol N
+    Alphanumeric Data String: 'W64CW'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 01 41 01 9e 00 10 00 00 0a 01 0a 20 20 '....A.........  '
+Checksum: 0xca
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

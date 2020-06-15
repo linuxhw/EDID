@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 42 54 00 00 00 00
+00 14 01 04 95 1e 13 78 0a 63 16 8b 5b 57 95 29
+1e 4f 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1d 2a a0 e8 51 84 20 30 2e 46
+99 00 2f be 10 00 00 1a 14 1c a0 e8 51 84 20 30
+2e 46 99 00 2f be 10 00 00 1a 00 00 00 fe 00 43
+35 31 44 57 82 31 34 31 42 54 0a 20 00 00 00 00
+00 00 41 01 19 00 00 00 00 09 01 0a 20 20 00 f9
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 21570
+    Made in: 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5439, 0.3574
+    Green: 0.3398, 0.5849
+    Blue : 0.1601, 0.1181
+    White: 0.3095, 0.3300
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    59.998 Hz   8:5    55.918 kHz 107.810 MHz (303 mm x 190 mm)
+                 Hfront   46 Hsync  70 Hback 372 Hpol P
+                 Vfront    9 Vsync   9 Vback  14 Vpol N
+    DTD 2:  1440x900    40.002 Hz   8:5    37.282 kHz  71.880 MHz (303 mm x 190 mm)
+                 Hfront   46 Hsync  70 Hback 372 Hpol P
+                 Vfront    9 Vsync   9 Vback  14 Vpol N
+    Alphanumeric Data String: 'C51DW'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 01 19 00 00 00 00 09 01 0a 20 20 '....A.........  '
+Checksum: 0xf9
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 9d 14 b6 6e 81 59
+00 1a 01 04 a5 26 15 78 02 59 d5 a3 56 52 9c 26
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 7c 6f 80 a0 70 38 3e 40 30 20
+35 00 7d d6 10 00 00 18 7c 6f 80 a0 70 38 b2 44
+30 20 35 00 7d d6 10 00 00 18 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 10 36 ff 0f 3c 96 2a 1f 49 96 20 20 20 00 a4
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 5277
+    Serial Number: ...
+    Made in: 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6376, 0.3369
+    Green: 0.3222, 0.6103
+    Blue : 0.1513, 0.0478
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  120.150 Hz  16:9   137.212 kHz 285.400 MHz (381 mm x 214 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  54 Vpol N
+    DTD 2:  1920x1080   60.128 Hz  16:9   137.212 kHz 285.400 MHz (381 mm x 214 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback 1194 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 10 36 ff 0f 3c 96 2a 1f 49 96 20 20 20 '....6..<.*.I.   '
+Checksum: 0xa4
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,87 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5a 63 22 7e 01 01 01 01
+19 13 01 03 80 2f 1e 78 2e 78 f5 a6 55 48 9b 26
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0
+36 00 da 28 11 00 00 1c 00 00 00 ff 00 52 36 41
+30 39 32 35 30 30 31 31 35 0a 00 00 00 fd 00 3b
+78 41 ba 21 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 58 32 32 36 35 77 6d 0a 20 20 20 20 01 3a
+
+02 01 04 03 fd 5e 90 5e 61 1a 27 40 14 14 36 00
+da 28 11 00 00 1e dd 5a 90 64 60 1a 27 40 14 14
+36 00 da 28 11 00 00 1e 5b 56 90 5e 61 1a 27 40
+14 14 36 00 da 28 11 00 00 1e 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 91
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: VSC
+    Model: 32290
+    Serial Number: ...
+    Made in: week 25 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 47 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6494, 0.3349
+    Green: 0.2832, 0.6054
+    Blue : 0.1513, 0.0732
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   59.954 Hz   8:5    65.290 kHz 146.250 MHz (474 mm x 296 mm)
+                 Hfront  104 Hsync 176 Hback 280 Hpol N
+                 Vfront    3 Vsync   6 Vback  30 Vpol P
+    Display Product Serial Number: ...
+  Display Range Limits:
+    Monitor ranges (GTF): 59-120 Hz V, 65-186 kHz H, max dotclock 330 MHz
+    Display Product Name: 'VX2265wm'
+  Extension blocks: 1
+Checksum: 0x3a
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 1
+  Detailed Timing Descriptors:
+    DTD 2:  1680x1050  109.998 Hz   8:5   119.788 kHz 243.170 MHz (474 mm x 296 mm)
+                 Hfront   20 Hsync  20 Hback 310 Hpol P
+                 Vfront    3 Vsync   6 Vback  30 Vpol P
+    DTD 3:  1680x1050  120.000 Hz   8:5   130.680 kHz 232.610 MHz (474 mm x 296 mm)
+                 Hfront   20 Hsync  20 Hback  60 Hpol P
+                 Vfront    3 Vsync   6 Vback  30 Vpol P
+    DTD 4:  1680x1050  100.001 Hz   8:5   108.901 kHz 221.070 MHz (474 mm x 296 mm)
+                 Hfront   20 Hsync  20 Hback 310 Hpol P
+                 Vfront    3 Vsync   6 Vback  30 Vpol P
+Checksum: 0x91
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Non-zero byte 3.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+
+EDID conformity: FAIL

@@ -1,0 +1,66 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 8f 43 22 25 35 00 00
+33 18 01 03 81 30 1b 78 ea f5 c5 a8 53 37 ae 25
+12 50 54 23 08 00 81 80 81 40 81 c0 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 dc 0c 11 00 00 1e 21 39 90 30 62 1a
+27 40 68 b0 36 00 dc 0c 11 00 00 1c 9a 29 a0 d0
+51 84 22 30 50 98 36 00 dc 0c 11 00 00 1c 00 7d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ELO
+    Model: 8771
+    Serial Number: ...
+    Made in: week 51 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6591, 0.3271
+    Green: 0.2158, 0.6806
+    Blue : 0.1474, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (476 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 2:  1366x768    59.790 Hz 683:384  47.712 kHz  85.500 MHz (476 mm x 268 mm)
+                 Hfront   70 Hsync 143 Hback 213 Hpol P
+                 Vfront    3 Vsync   3 Vback  24 Vpol P
+    DTD 3:  1680x1050   59.954 Hz   8:5    65.290 kHz 146.250 MHz (476 mm x 268 mm)
+                 Hfront  104 Hsync 176 Hback 280 Hpol N
+                 Vfront    3 Vsync   6 Vback  30 Vpol P
+    DTD 4:  1440x900    59.887 Hz   8:5    55.935 kHz 106.500 MHz (476 mm x 268 mm)
+                 Hfront   80 Hsync 152 Hback 232 Hpol N
+                 Vfront    3 Vsync   6 Vback  25 Vpol P
+Checksum: 0x7d
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

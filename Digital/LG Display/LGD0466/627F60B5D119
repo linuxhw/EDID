@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 66 04 00 00 00 00
+00 18 01 04 90 1f 11 78 ea eb f5 95 59 54 90 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d0 1d 56 f4 50 00 16 30 30 20
+35 00 35 ae 10 00 00 19 e0 13 56 f4 50 00 16 30
+30 20 35 00 35 ae 10 00 00 19 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 47 ff 0b 3c 6e 12 12 1c 6e 00 00 00 00 25
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1126
+    Made in: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5849, 0.3496
+    Green: 0.3300, 0.5654
+    Blue : 0.1552, 0.1201
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.005 Hz 683:384  47.404 kHz  76.320 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback 164 Hpol N
+                 Vfront    3 Vsync   5 Vback  14 Vpol N
+    DTD 2:  1366x768    40.003 Hz 683:384  31.602 kHz  50.880 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback 164 Hpol N
+                 Vfront    3 Vsync   5 Vback  14 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 47 ff 0b 3c 6e 12 12 1c 6e 00 00 00 '....G..<n...n...'
+Checksum: 0x25
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

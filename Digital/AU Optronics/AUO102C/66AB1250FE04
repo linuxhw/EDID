@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 2c 10 00 00 00 00
+01 12 01 03 90 1d 10 78 0a f9 d5 95 55 54 93 27
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4a 1d 56 c4 50 00 20 30 30 20
+36 00 25 a4 10 00 00 1a 4a 1d 56 c4 50 00 20 30
+30 20 36 00 25 a4 10 00 00 1a 00 00 00 fe 00 52
+56 37 37 32 81 42 31 33 33 58 57 31 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 01 0a 20 20 00 24
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 4140
+    Made in: week 1 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 16 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5849, 0.3349
+    Green: 0.3300, 0.5751
+    Blue : 0.1552, 0.1298
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.003 Hz 683:384  48.003 kHz  74.980 MHz (293 mm x 164 mm)
+                 Hfront   48 Hsync  32 Hback 116 Hpol P
+                 Vfront    3 Vsync   6 Vback  23 Vpol N
+    DTD 2:  1366x768    60.003 Hz 683:384  48.003 kHz  74.980 MHz (293 mm x 164 mm)
+                 Hfront   48 Hsync  32 Hback 116 Hpol P
+                 Vfront    3 Vsync   6 Vback  23 Vpol N
+    Alphanumeric Data String: 'RV772'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20 '..............  '
+Checksum: 0x24
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

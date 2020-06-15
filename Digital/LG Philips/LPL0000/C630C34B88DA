@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 32 0c 00 00 00 00 00 00
+00 0e 01 02 80 21 15 78 0a 0f 10 97 58 52 88 28
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d5 1b 00 a0 50 20 17 30 30 20
+26 00 21 15 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 50 68 69 6c 69 70 73 4c 43 44 0a 00 00 00 fe
+00 4c 50 31 35 34 57 30 31 2d 41 35 4b 32 00 29
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: LPL
+    Model: 0
+    Made in: 2004
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3437
+    Green: 0.3232, 0.5341
+    Blue : 0.1562, 0.1376
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.120 Hz   8:5    49.479 kHz  71.250 MHz (289 mm x 21 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    2 Vsync   6 Vback  15 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LGPhilipsLCD'
+    Alphanumeric Data String: 'LP154W01-A5K2'
+Checksum: 0x29
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 289x21 mm vs display size 330x210 mm.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+
+EDID conformity: FAIL

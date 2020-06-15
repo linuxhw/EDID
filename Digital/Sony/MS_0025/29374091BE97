@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 7f 25 00 00 00 00 00
+04 13 01 03 80 30 1b 78 f2 ce 50 a3 57 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 40 38 80 a0 70 38 4b 40 1a 35
+c9 00 dc 0c 11 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MS_
+    Model: 37
+    Made in: week 4 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Non-RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.940 Hz  16:9    69.231 kHz 144.000 MHz (analog composite, sync-on-green, 476 mm x 268 mm)
+                 Hfront   26 Hsync  53 Hback  81 Hpol N
+                 Vfront   12 Vsync   9 Vback  54 Vpol N
+    Empty Descriptor
+    Empty Descriptor
+    Empty Descriptor
+Checksum: 0x1a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: Manufacturer name field contains garbage.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

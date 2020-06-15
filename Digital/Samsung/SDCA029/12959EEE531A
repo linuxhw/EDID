@@ -1,0 +1,84 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 83 29 a0 00 00 00 00
+0a 1d 01 04 b5 22 13 78 02 44 81 af 50 3e b5 23
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 fd df 00 30 f2 70 0c 80 30 20
+44 00 58 c2 10 00 00 1b fd df 00 30 f2 70 0c 80
+30 20 44 00 58 c2 10 00 00 1b 00 00 00 fe 00 30
+48 48 46 4d 81 31 35 36 57 52 30 34 00 00 00 00
+00 03 04 03 00 01 00 00 00 0b 01 0a 20 20 01 bf
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 73 6d d0 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 e2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 41001
+    Made in: week 10 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6845, 0.3125
+    Green: 0.2431, 0.7070
+    Blue : 0.1386, 0.0546
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.000 Hz  16:9   130.320 kHz 573.410 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback 480 Hpol P
+                 Vfront    4 Vsync   4 Vback   4 Vpol N
+    DTD 2:  3840x2160   60.000 Hz  16:9   130.320 kHz 573.410 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback 480 Hpol P
+                 Vfront    4 Vsync   4 Vback   4 Vpol N
+    Alphanumeric Data String: '0HHFM'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 03 04 03 00 01 00 00 00 0b 01 0a 20 20 '..............  '
+  Extension blocks: 1
+Checksum: 0xbf
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 115 (603.666 cd/m^2)
+    Desired content max frame-average luminance: 109 (530.095 cd/m^2)
+    Desired content min luminance: 208 (4.016 cd/m^2)
+Checksum: 0xe2
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+
+EDID conformity: FAIL

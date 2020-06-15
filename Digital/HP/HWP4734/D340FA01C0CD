@@ -1,0 +1,139 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 34 47 01 00 00 00
+1f 1d 01 04 b5 3c 22 78 3b 19 c1 ae 50 44 af 26
+0e 50 54 21 08 00 d1 00 d1 c0 b3 00 a9 c0 95 00
+81 80 81 00 81 c0 08 e8 00 30 f2 70 5a 80 b0 58
+8a 00 b9 88 21 00 00 1a 00 00 00 fd 00 3c 3c 1e
+8c 3c 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 41 4c 4c 2d 69 6e 2d 4f 6e 65 00 00 00 ff
+00 4c 4d 33 31 35 57 52 32 0a 20 20 20 20 01 c9
+
+02 03 19 b1 46 61 10 04 03 02 01 e3 05 e0 01 e2
+0f 01 e6 06 07 01 73 73 11 08 e8 00 30 f2 70 5a
+80 b0 58 8a 00 b9 88 21 00 00 1e 56 5e 00 a0 a0
+a0 29 50 30 20 35 00 b9 88 21 00 00 1a 02 3a 80
+18 71 38 2d 40 58 2c 45 00 b9 88 21 00 00 1e 20
+1c 56 86 50 00 20 30 0e 38 13 00 b9 88 21 00 00
+1e 9a 29 00 a0 51 20 26 30 50 80 36 00 b9 88 21
+00 00 1c 00 00 00 00 00 00 00 00 00 00 00 00 dc
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 18228
+    Serial Number: ...
+    Made in: week 31 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6796, 0.3134
+    Green: 0.2675, 0.6845
+    Blue : 0.1513, 0.0546
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x45:  1920x1200   59.885 Hz  16:10   74.556 kHz 193.250 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.000 Hz  16:9   135.000 kHz 594.000 MHz (697 mm x 392 mm)
+                 Hfront  176 Hsync  88 Hback 296 Hpol P
+                 Vfront    8 Vsync  10 Vback  72 Vpol N
+  Display Range Limits:
+    Monitor ranges (GTF): 60-60 Hz V, 30-140 kHz H, max dotclock 600 MHz
+    Display Product Name: 'HP ALL-in-One'
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0xc9
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans PC formats by default
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  97:  3840x2160   60.000 Hz  16:9   135.000 kHz 594.000 MHz
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Colorimetry Data Block:
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+  YCbCr 4:2:0 Capability Map Data Block:
+    VIC  97:  3840x2160   60.000 Hz  16:9    67.500 kHz 297.000 MHz
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 115 (603.666 cd/m^2)
+    Desired content max frame-average luminance: 115 (603.666 cd/m^2)
+    Desired content min luminance: 17 (0.027 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  3840x2160   60.000 Hz  16:9   135.000 kHz 594.000 MHz (697 mm x 392 mm)
+                 Hfront  176 Hsync  88 Hback 296 Hpol P
+                 Vfront    8 Vsync  10 Vback  72 Vpol P
+    DTD 3:  2560x1440   59.951 Hz  16:9    88.787 kHz 241.500 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  33 Vpol N
+    DTD 4:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (697 mm x 392 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 5:  1366x768    60.000 Hz 683:384  48.000 kHz  72.000 MHz (697 mm x 392 mm)
+                 Hfront   14 Hsync  56 Hback  64 Hpol P
+                 Vfront    1 Vsync   3 Vback  28 Vpol P
+    DTD 6:  1280x800    74.934 Hz   8:5    62.795 kHz 106.500 MHz (697 mm x 392 mm)
+                 Hfront   80 Hsync 128 Hback 208 Hpol N
+                 Vfront    3 Vsync   6 Vback  29 Vpol P
+Checksum: 0xdc
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.810 - 74.934 Hz (Monitor: 60.000 - 60.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 697x392 mm vs display size 600x340 mm.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Mismatch of image size 697x392 mm vs display size 600x340 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 697x392 mm vs display size 600x340 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 697x392 mm vs display size 600x340 mm.
+  Detailed Timing Descriptor #5: Mismatch of image size 697x392 mm vs display size 600x340 mm.
+  Detailed Timing Descriptor #6: Mismatch of image size 697x392 mm vs display size 600x340 mm.
+
+EDID conformity: FAIL

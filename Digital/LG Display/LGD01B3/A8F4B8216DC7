@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 b3 01 00 00 00 00
+00 12 01 04 a0 25 17 78 0a c7 c5 b0 4d 35 b5 26
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 68 3d 80 c8 70 b0 23 40 48 20
+36 00 6f e6 10 00 00 19 68 3d 80 c8 70 b0 23 40
+48 20 36 00 6f e6 10 00 00 19 00 00 00 fe 00 57
+55 33 31 36 80 31 37 31 57 55 35 0a 00 00 00 00
+00 00 00 00 00 00 00 00 00 06 01 0a 20 20 00 be
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 435
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    Digital interface is not defined
+    Maximum image size: 37 cm x 23 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6904, 0.3007
+    Green: 0.2080, 0.7099
+    Blue : 0.1513, 0.0507
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.041 Hz   8:5    74.151 kHz 157.200 MHz (367 mm x 230 mm)
+                 Hfront   72 Hsync  32 Hback  96 Hpol N
+                 Vfront    3 Vsync   6 Vback  26 Vpol N
+    DTD 2:  1920x1200   60.041 Hz   8:5    74.151 kHz 157.200 MHz (367 mm x 230 mm)
+                 Hfront   72 Hsync  32 Hback  96 Hpol N
+                 Vfront    3 Vsync   6 Vback  26 Vpol N
+    Alphanumeric Data String: 'WU316'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 06 01 0a 20 20 '..............  '
+Checksum: 0xbe
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

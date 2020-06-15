@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 5b 03 00 00 00 00
+00 15 01 04 90 1f 11 78 0a d1 05 95 58 57 8f 29
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 fb 1d 56 fe 50 00 16 30 30 20
+35 00 35 ae 10 00 00 19 fc 13 56 fe 50 00 16 30
+30 20 35 00 35 ae 10 00 00 19 00 00 00 fe 00 35
+32 33 47 46 80 31 34 30 57 48 32 0a 00 00 00 00
+00 00 01 31 94 01 10 00 00 01 01 0a 20 20 00 3d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 859
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5849, 0.3447
+    Green: 0.3398, 0.5595
+    Blue : 0.1601, 0.1250
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.970 Hz 683:384  47.377 kHz  76.750 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback 174 Hpol N
+                 Vfront    3 Vsync   5 Vback  14 Vpol N
+    DTD 2:  1366x768    39.975 Hz 683:384  31.580 kHz  51.160 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback 174 Hpol N
+                 Vfront    3 Vsync   5 Vback  14 Vpol N
+    Alphanumeric Data String: '523GF'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 01 31 94 01 10 00 00 01 01 0a 20 20 '.....1........  '
+Checksum: 0x3d
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 57 31 00 00 00 00
+00 12 01 03 80 1e 13 78 0a 87 f5 94 57 4f 8c 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d6 1b 00 b0 50 20 10 30 0c 40
+33 00 2f be 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 23 87 02 64 00 00 00 00 fe 00 57
+35 31 33 47 00 31 34 31 57 31 0a 20 00 00 00 fe
+00 19 23 2d 35 4a 66 8c dc 01 01 0a 20 20 00 80
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 12631
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5800, 0.3398
+    Green: 0.3095, 0.5498
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.978 Hz   8:5    48.942 kHz  71.260 MHz (303 mm x 190 mm)
+                 Hfront   12 Hsync  64 Hback 100 Hpol N
+                 Vfront    3 Vsync   3 Vback  10 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 23 87 02 64 00 '...........#..d.'
+    Alphanumeric Data String: 'W513G'
+    Alphanumeric Data String: ''
+Checksum: 0x80
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

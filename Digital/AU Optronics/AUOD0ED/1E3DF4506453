@@ -1,0 +1,62 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af ed d0 00 00 00 00
+0b 1d 01 04 a5 22 13 78 03 48 35 8f 57 59 92 29
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 98 71 80 c8 70 38 3e 40 6c 30
+aa 00 58 c1 10 00 00 18 78 2d 80 c8 70 38 3e 40
+6c 30 aa 00 58 c1 10 00 00 18 00 00 00 fd 00 30
+78 8a 8a 1e 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 35 36 48 41 4e 31 33 2e 30 20 0a 00 f0
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 53485
+    Made in: week 11 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5595, 0.3398
+    Green: 0.3496, 0.5703
+    Blue : 0.1601, 0.1201
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  120.114 Hz  16:9   137.170 kHz 290.800 MHz (344 mm x 193 mm)
+                 Hfront  108 Hsync  48 Hback  44 Hpol N
+                 Vfront   10 Vsync  10 Vback  42 Vpol N
+    DTD 2:  1920x1080   48.079 Hz  16:9    54.906 kHz 116.400 MHz (344 mm x 193 mm)
+                 Hfront  108 Hsync  48 Hback  44 Hpol N
+                 Vfront   10 Vsync  10 Vback  42 Vpol N
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 48-120 Hz V, 138-138 kHz H, max dotclock 300 MHz
+    Alphanumeric Data String: 'B156HAN13.0 '
+Checksum: 0xf0
+
+----------------
+
+Warnings:
+
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 54.905 - 137.169 kHz (Monitor: 138.000 - 138.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

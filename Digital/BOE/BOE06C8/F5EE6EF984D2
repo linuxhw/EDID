@@ -1,0 +1,57 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 c8 06 00 00 00 00
+01 1a 01 01 95 1c 10 78 02 b0 90 97 58 54 92 26
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 1b 56 77 50 00 13 30 30 20
+44 00 15 9c 10 00 00 1a 84 17 56 80 51 00 5c 30
+64 64 44 05 15 9c 10 00 00 1a 00 00 00 fe 00 32
+48 59 37 34 80 4e 54 31 32 4e 34 32 00 00 00 00
+00 00 41 01 94 00 10 00 00 09 01 0a 20 20 00 af
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 1736
+    Made in: week 1 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 28 cm x 16 cm
+    Gamma: 2.20
+    Monochrome or grayscale display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5917, 0.3466
+    Green: 0.3281, 0.5703
+    Blue : 0.1503, 0.1142
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.999 Hz 683:384  47.219 kHz  70.120 MHz (277 mm x 156 mm)
+                 Hfront   48 Hsync  32 Hback  39 Hpol P
+                 Vfront    4 Vsync   4 Vback  11 Vpol N
+    DTD 2:  1366x768    40.000 Hz 683:384  34.400 kHz  60.200 MHz (277 mm x 156 mm)
+                 Hfront  100 Hsync 100 Hback 184 Hpol P
+                 Vfront   20 Vsync  20 Vback  52 Vpol N
+    Alphanumeric Data String: '2HY74'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 01 94 00 10 00 00 09 01 0a 20 20 '....A.........  '
+Checksum: 0xaf
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x15.
+  Alphanumeric Data String: Non-printable character.
+
+EDID conformity: FAIL

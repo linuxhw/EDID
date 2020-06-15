@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 32 0c 01 1f 00 00 00 00
+00 11 01 03 80 21 15 78 0a b3 40 99 59 53 8d 27
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ea 1a 00 78 50 20 14 30 18 20
+44 00 4b cf 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 50 68 69 6c 69 70 73 4c 43 44 0a 00 00 00 fe
+00 4c 50 31 35 34 57 58 35 2d 54 4c 42 31 00 08
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LPL
+    Model: 7937
+    Made in: 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5996, 0.3505
+    Green: 0.3242, 0.5537
+    Blue : 0.1533, 0.1445
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.017 Hz   8:5    49.214 kHz  68.900 MHz (331 mm x 207 mm)
+                 Hfront   24 Hsync  32 Hback  64 Hpol N
+                 Vfront    4 Vsync   4 Vback  12 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LGPhilipsLCD'
+    Alphanumeric Data String: 'LP154WX5-TLB1'
+Checksum: 0x8
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

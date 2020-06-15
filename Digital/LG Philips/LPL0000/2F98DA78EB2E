@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 32 0c 00 00 00 00 00 00
+00 11 01 03 80 1e 13 78 0a 08 85 95 58 53 8c 28
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3e 1c 00 b8 50 20 17 30 30 20
+36 00 30 be 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 57
+52 33 36 32 04 31 34 31 57 58 31 0a 00 00 00 fe
+00 20 2f 3c 45 69 85 9d ca 01 01 0a 20 20 00 8d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LPL
+    Model: 0
+    Made in: 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5820, 0.3437
+    Green: 0.3261, 0.5468
+    Blue : 0.1582, 0.1367
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.006 Hz   8:5    49.385 kHz  72.300 MHz (304 mm x 190 mm)
+                 Hfront   48 Hsync  32 Hback 104 Hpol N
+                 Vfront    3 Vsync   6 Vback  14 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'WR362'
+    Alphanumeric Data String: ' /<Ei'
+Checksum: 0x8d
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

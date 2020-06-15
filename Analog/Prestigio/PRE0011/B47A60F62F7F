@@ -1,0 +1,65 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 42 45 11 00 15 cd 5b 07
+24 10 01 03 6e 22 1b 78 e8 59 a5 a4 57 47 9c 24
+15 50 54 ad cf 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 10 88
+36 00 67 1f 11 00 00 38 00 00 00 fc 00 50 31 37
+31 30 0a 20 20 20 20 20 20 20 00 00 00 fd 00 3a
+4b 1e 5e 0f 00 0a 20 20 20 20 20 20 00 00 00 10
+00 30 30 30 30 30 31 0a 20 20 20 20 20 20 00 87
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PRE
+    Model: 17
+    Serial Number: ...
+    Made in: week 36 of 2006
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate Composite SyncOnGreen
+    Maximum image size: 34 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6416, 0.3408
+    Green: 0.2792, 0.6103
+    Blue : 0.1425, 0.0839
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz (field sequential L/R, 359 mm x 287 mm)
+                 Hfront   16 Hsync 136 Hback 256 Hpol N
+                 Vfront    3 Vsync   6 Vback  33 Vpol N
+    Display Product Name: 'P1710'
+  Display Range Limits:
+    Monitor ranges (GTF): 58-75 Hz V, 30-94 kHz H, max dotclock 150 MHz
+    Dummy Descriptor:
+Checksum: 0x87
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 359x287 mm vs display size 340x270 mm.
+  Dummy Descriptor: Dummy block filled with garbage.
+
+EDID conformity: FAIL

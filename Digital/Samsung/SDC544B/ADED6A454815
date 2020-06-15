@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 83 4b 54 00 00 00 00
+00 16 01 04 90 1f 11 78 0a 76 15 95 5b 57 90 2a
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8c 2c 40 80 61 84 3a 30 30 20
+25 00 35 ae 10 00 00 1a 07 1b 40 80 61 84 3a 30
+30 20 25 00 35 ae 10 00 00 1a 00 00 00 fe 00 35
+59 30 44 37 80 31 34 30 4b 54 0a 20 00 00 00 00
+00 00 41 21 94 01 10 00 00 01 01 0a 20 20 00 76
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 21579
+    Made in: 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5830, 0.3583
+    Green: 0.3408, 0.5644
+    Blue : 0.1640, 0.1298
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.000 Hz  16:9    57.480 kHz 114.040 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback 304 Hpol P
+                 Vfront    2 Vsync   5 Vback  51 Vpol N
+    DTD 2:  1600x900    36.403 Hz  16:9    34.874 kHz  69.190 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback 304 Hpol P
+                 Vfront    2 Vsync   5 Vback  51 Vpol N
+    Alphanumeric Data String: '5Y0D7'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 94 01 10 00 00 01 01 0a 20 20 '....A!........  '
+Checksum: 0x76
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

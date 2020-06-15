@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af ed 36 00 00 00 00
+2a 18 01 04 95 22 13 78 02 bb f5 94 55 54 90 27
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 14 37 80 b4 70 38 26 40 6c 30
+aa 00 58 c1 10 00 00 18 b8 24 80 b4 70 38 26 40
+6c 30 aa 00 58 c1 10 00 00 18 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 10 48 ff 0f 3c 6e 1e 14 21 6e 20 20 20 00 3c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 14061
+    Made in: week 42 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5800, 0.3349
+    Green: 0.3300, 0.5654
+    Blue : 0.1552, 0.1396
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.056 Hz  16:9    67.143 kHz 141.000 MHz (344 mm x 193 mm)
+                 Hfront  108 Hsync  48 Hback  24 Hpol N
+                 Vfront   10 Vsync  10 Vback  18 Vpol N
+    DTD 2:  1920x1080   40.037 Hz  16:9    44.762 kHz  94.000 MHz (344 mm x 193 mm)
+                 Hfront  108 Hsync  48 Hback  24 Hpol N
+                 Vfront   10 Vsync  10 Vback  18 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 10 48 ff 0f 3c 6e 1e 14 21 6e 20 20 20 '....H..<n..!n   '
+Checksum: 0x3c
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

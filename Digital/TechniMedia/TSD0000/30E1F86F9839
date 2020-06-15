@@ -1,0 +1,164 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 52 64 00 00 00 00 00 00
+ff 19 01 03 81 4f 00 78 fa ee 95 a3 54 4c 99 26
+0f 50 54 20 00 00 81 c0 d1 c0 31 40 01 01 01 01
+01 01 01 01 01 01 08 e8 00 30 f2 70 5a 80 b0 58
+8a 00 40 84 63 00 00 1e 02 3a 80 d0 72 38 2d 40
+10 2c 45 80 40 84 63 00 00 1e 00 00 00 fc 00 54
+65 63 68 6e 69 4d 65 64 69 61 0a 20 00 00 00 fd
+00 17 4b 0e 71 3c 00 0a 20 20 20 20 20 20 01 eb
+
+02 03 4a f2 5a 60 61 5f 5e 5d 9f 90 22 21 20 13
+04 3e 3d 3c 15 16 06 07 02 03 11 12 01 14 05 29
+09 07 01 11 07 00 51 7f 01 83 01 00 00 71 03 0c
+00 20 00 38 3c 28 c0 64 01 02 03 01 41 7f e0 67
+d8 5d c4 01 78 80 03 e2 0f 03 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 b2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: TSD
+    Model: 0
+    Model year: 2015
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Image size is variable
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Undefined display color type
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.000 Hz  16:9   135.000 kHz 594.000 MHz (1600 mm x 900 mm)
+                 Hfront  176 Hsync  88 Hback 296 Hpol P
+                 Vfront    8 Vsync  10 Vback  72 Vpol P
+    DTD 2:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz (1600 mm x 900 mm)
+                 Hfront  528 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    Display Product Name: 'TechniMedia'
+  Display Range Limits:
+    Monitor ranges (GTF): 23-75 Hz V, 14-113 kHz H, max dotclock 600 MHz
+  Extension blocks: 1
+Checksum: 0xeb
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans PC formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  96:  3840x2160   50.000 Hz  16:9   112.500 kHz 594.000 MHz
+    VIC  97:  3840x2160   60.000 Hz  16:9   135.000 kHz 594.000 MHz
+    VIC  95:  3840x2160   30.000 Hz  16:9    67.500 kHz 297.000 MHz
+    VIC  94:  3840x2160   25.000 Hz  16:9    56.250 kHz 297.000 MHz
+    VIC  93:  3840x2160   24.000 Hz  16:9    54.000 kHz 297.000 MHz
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz (native)
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (native)
+    VIC  34:  1920x1080   30.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  33:  1920x1080   25.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC  62:  1280x720    30.000 Hz  16:9    22.500 kHz  74.250 MHz
+    VIC  61:  1280x720    25.000 Hz  16:9    18.750 kHz  74.250 MHz
+    VIC  60:  1280x720    24.000 Hz  16:9    18.000 kHz  59.400 MHz
+    VIC  21:  1440x576i   50.000 Hz   4:3    15.625 kHz  27.000 MHz
+    VIC  22:  1440x576i   50.000 Hz  16:9    15.625 kHz  27.000 MHz
+    VIC   6:  1440x480i   59.940 Hz   4:3    15.734 kHz  27.000 MHz
+    VIC   7:  1440x480i   59.940 Hz  16:9    15.734 kHz  27.000 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
+    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+    AC-3:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 0 kb/s
+    Dolby Digital+:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supports Joint Object Coding
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+    Supported Content Types:
+      Game
+    Extended HDMI video details:
+      3D present
+      3D-capable-VIC mask present
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000 Hz  16:9    67.500 kHz 297.000 MHz
+        HDMI VIC 2:  3840x2160   25.000 Hz  16:9    56.250 kHz 297.000 MHz
+        HDMI VIC 3:  3840x2160   24.000 Hz  16:9    54.000 kHz 297.000 MHz
+      3D: Side-by-side (half, horizontal)
+      3D: Top-and-bottom
+      3D: Frame-packing
+      3D VIC indices that support these capabilities:
+        VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+        VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+        VIC  34:  1920x1080   30.000 Hz  16:9    33.750 kHz  74.250 MHz
+        VIC  33:  1920x1080   25.000 Hz  16:9    28.125 kHz  74.250 MHz
+        VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+        VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+        VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+        VIC  62:  1280x720    30.000 Hz  16:9    22.500 kHz  74.250 MHz
+        VIC  61:  1280x720    25.000 Hz  16:9    18.750 kHz  74.250 MHz
+        VIC  60:  1280x720    24.000 Hz  16:9    18.000 kHz  59.400 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+  YCbCr 4:2:0 Capability Map Data Block:
+    VIC  96:  3840x2160   50.000 Hz  16:9    56.250 kHz 297.000 MHz
+    VIC  97:  3840x2160   60.000 Hz  16:9    67.500 kHz 297.000 MHz
+Checksum: 0xb2
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: EDID 1.3 does not support week 0xff.
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is set, but not display size.
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is set, but not display size.
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 14.000 - 113.000 kHz)
+
+EDID conformity: FAIL

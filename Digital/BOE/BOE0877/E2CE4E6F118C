@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 77 08 00 00 00 00
+19 1d 01 04 a5 1f 11 78 02 fb 90 95 5d 59 94 29
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3c 37 80 de 70 38 14 40 30 20
+36 00 35 ad 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 54 56 31 34 30 46 48 4d 2d 4e 48 31 0a 00 c4
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2167
+    Made in: week 25 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5849, 0.3662
+    Green: 0.3496, 0.5810
+    Blue : 0.1621, 0.1376
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.012 Hz  16:9    66.013 kHz 141.400 MHz (309 mm x 173 mm)
+                 Hfront   48 Hsync  32 Hback 142 Hpol P
+                 Vfront    3 Vsync   6 Vback  11 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1a '................'
+    Alphanumeric Data String: 'BOE CQ'
+    Alphanumeric Data String: 'TV140FHM-NH1'
+Checksum: 0xc4
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,67 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 85 11 19 00 00 00 00
+2c 18 01 03 08 29 17 78 0a 01 c1 a0 57 47 98 27
+12 4c 4c ad ce 00 81 00 81 c0 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70
+36 00 40 84 63 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 40 84 63 00 00 1e 00 00 00 fd 00 39
+4e 1e 50 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 45 4c 45 46 57 31 39 35 0a 20 20 20 20 00 5a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ELE
+    Model: 6417
+    Made in: week 44 of 2014
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate
+    Maximum image size: 41 cm x 23 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2773, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2968, 0.2978
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings:
+    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1360x768    60.015 Hz  85:48   47.712 kHz  85.500 MHz (1600 mm x 900 mm)
+                 Hfront   64 Hsync 112 Hback 256 Hpol P
+                 Vfront    3 Vsync   6 Vback  18 Vpol P
+    DTD 2:  1366x768    59.790 Hz 683:384  47.712 kHz  85.500 MHz (1600 mm x 900 mm)
+                 Hfront   70 Hsync 143 Hback 213 Hpol P
+                 Vfront    3 Vsync   3 Vback  24 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 57-78 Hz V, 30-80 kHz H, max dotclock 150 MHz
+    Display Product Name: 'ELEFW195'
+Checksum: 0x5a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 1600x900 mm vs display size 410x230 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 1600x900 mm vs display size 410x230 mm.
+
+EDID conformity: FAIL

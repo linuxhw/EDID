@@ -1,0 +1,63 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d 12 11 75 70 03 00 00
+15 15 01 04 a5 00 00 78 e2 80 42 ac 51 30 b4 25
+10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 18 15 a0 d0 51 84 22 30 50 98
+36 00 06 4d 21 00 00 1c 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 38
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4d 54 31 39 30 41 57 30 32 20 56 2e 34 00 ed
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CHR
+    Model: 29969
+    Serial Number: ...
+    Made in: week 21 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Image size is variable
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6738, 0.3164
+    Green: 0.1875, 0.7031
+    Blue : 0.1455, 0.0625
+    White: 0.3125, 0.3261
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    30.365 Hz   8:5    28.361 kHz  54.000 MHz (518 mm x 333 mm)
+                 Hfront   80 Hsync 152 Hback 232 Hpol N
+                 Vfront    3 Vsync   6 Vback  25 Vpol P
+    Empty Descriptor
+  Display Range Limits:
+    Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+    Display Product Name: 'MT190AW02 V.4'
+Checksum: 0xed
+
+----------------
+
+Warnings:
+
+All Blocks:
+  Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 30.365 - 30.365 Hz (Monitor: 56.000 - 76.000 Hz)
+    Horizontal Freq: 28.361 - 28.361 kHz (Monitor: 30.000 - 83.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is set, but not display size.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+
+EDID conformity: FAIL

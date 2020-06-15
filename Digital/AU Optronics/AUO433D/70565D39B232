@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 3d 43 00 00 00 00
+16 1b 01 04 95 1f 11 78 02 9b 85 92 56 59 90 29
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 14 37 80 b8 70 38 24 40 10 10
+3e 00 35 ad 10 00 00 1a 10 2c 80 b8 70 38 24 40
+10 10 3e 00 35 ad 10 00 00 1a 00 00 00 fe 00 54
+43 33 4e 4d 80 42 31 34 30 48 41 4e 00 00 00 00
+00 00 41 01 96 00 11 00 00 0a 01 0a 20 20 00 bc
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 17213
+    Made in: week 22 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5722, 0.3369
+    Green: 0.3496, 0.5654
+    Blue : 0.1621, 0.1250
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.049 Hz  16:9    67.015 kHz 141.000 MHz (309 mm x 173 mm)
+                 Hfront   16 Hsync  16 Hback 152 Hpol P
+                 Vfront    3 Vsync  14 Vback  19 Vpol N
+    DTD 2:  1920x1080   48.040 Hz  16:9    53.612 kHz 112.800 MHz (309 mm x 173 mm)
+                 Hfront   16 Hsync  16 Hback 152 Hpol P
+                 Vfront    3 Vsync  14 Vback  19 Vpol N
+    Alphanumeric Data String: 'TC3NM'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 01 96 00 11 00 00 0a 01 0a 20 20 '....A.........  '
+Checksum: 0xbc
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

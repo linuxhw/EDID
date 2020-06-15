@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 a2 04 00 00 00 00
+00 18 01 04 95 1c 10 78 02 35 75 97 5c 53 8f 27
+1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2e 36 80 a0 70 38 1f 40 30 20
+35 00 14 9c 10 00 00 1a 5c 2b 80 a0 70 38 1f 40
+30 20 35 00 14 9c 10 00 00 1a 00 00 00 fe 00 58
+35 30 52 36 80 31 32 35 57 46 34 0a 00 00 00 00
+00 00 41 31 9e 00 10 00 00 0a 01 0a 20 20 00 dd
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1186
+    Made in: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 28 cm x 16 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5898, 0.3623
+    Green: 0.3251, 0.5595
+    Blue : 0.1533, 0.1083
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.020 Hz  16:9    66.683 kHz 138.700 MHz (276 mm x 156 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 2:  1920x1080   48.034 Hz  16:9    53.365 kHz 111.000 MHz (276 mm x 156 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    Alphanumeric Data String: 'X50R6'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 9e 00 10 00 00 0a 01 0a 20 20 '....A1........  '
+Checksum: 0xdd
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

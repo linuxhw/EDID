@@ -1,0 +1,56 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 49 30 01 00 00 00
+00 13 01 03 80 20 13 78 ea 87 e5 94 57 4f 8c 27
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 54 1d 56 ce 50 00 1c 30 30 20
+25 00 35 ae 10 00 00 19 8d 13 56 ce 50 00 1c 30
+30 20 25 00 35 ae 10 00 00 19 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe
+00 31 34 30 41 54 31 31 2d 4c 30 32 0a 20 00 5a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 12361
+    Serial Number: ...
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 32 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5800, 0.3398
+    Green: 0.3095, 0.5498
+    Blue : 0.1552, 0.1347
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.001 Hz 683:384  47.761 kHz  75.080 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback 126 Hpol N
+                 Vfront    2 Vsync   5 Vback  21 Vpol N
+    DTD 2:  1366x768    39.998 Hz 683:384  31.838 kHz  50.050 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback 126 Hpol N
+                 Vfront    2 Vsync   5 Vback  21 Vpol N
+    Alphanumeric Data String: 'SAMSUNG'
+    Alphanumeric Data String: '140AT11-L02'
+Checksum: 0x5a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 309x174 mm vs display size 320x190 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 309x174 mm vs display size 320x190 mm.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

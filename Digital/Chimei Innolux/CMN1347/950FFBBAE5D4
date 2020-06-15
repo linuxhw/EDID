@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 47 13 00 00 00 00
+34 15 01 04 a5 1c 10 78 02 93 ad a9 53 4c 96 25
+11 4f 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 36 36 80 a0 70 38 20 40 2e 1e
+24 00 1a a5 10 00 00 18 24 24 80 a0 70 38 20 40
+2e 1e 24 00 1a a5 10 00 00 18 00 00 00 fe 00 43
+4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 33 33 48 53 47 2d 57 4a 31 0a 20 00 ac
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 4935
+    Made in: week 52 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 28 cm x 16 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6621, 0.3251
+    Green: 0.2968, 0.5888
+    Blue : 0.1464, 0.0683
+    White: 0.3115, 0.3251
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.001 Hz  16:9    66.721 kHz 138.780 MHz (282 mm x 165 mm)
+                 Hfront   46 Hsync  30 Hback  84 Hpol N
+                 Vfront    2 Vsync   4 Vback  26 Vpol N
+    DTD 2:  1920x1080   40.001 Hz  16:9    44.481 kHz  92.520 MHz (282 mm x 165 mm)
+                 Hfront   46 Hsync  30 Hback  84 Hpol N
+                 Vfront    2 Vsync   4 Vback  26 Vpol N
+    Alphanumeric Data String: 'CMN'
+    Alphanumeric Data String: 'N133HSG-WJ1'
+Checksum: 0xac
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

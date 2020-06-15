@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 50 40 00 00 00 00
+00 11 01 03 80 21 15 78 ea b3 40 99 59 53 8d 27
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8a 1b 00 90 50 20 19 30 28 20
+66 00 4b cf 10 00 00 19 f3 16 00 90 50 20 19 30
+28 20 66 00 4b cf 10 00 00 19 00 00 00 0f 00 81
+0a 32 81 0a 28 14 01 00 32 0c 01 1f 00 00 00 fe
+00 31 35 34 57 58 35 2d 54 4c 42 31 0a 20 00 ac
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16464
+    Made in: 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5996, 0.3505
+    Green: 0.3242, 0.5537
+    Blue : 0.1533, 0.1445
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.010 Hz   8:5    49.508 kHz  70.500 MHz (331 mm x 207 mm)
+                 Hfront   40 Hsync  32 Hback  72 Hpol N
+                 Vfront    6 Vsync   6 Vback  13 Vpol N
+    DTD 2:  1280x800    50.009 Hz   8:5    41.257 kHz  58.750 MHz (331 mm x 207 mm)
+                 Hfront   40 Hsync  32 Hback  72 Hpol N
+                 Vfront    6 Vsync   6 Vback  13 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 81 0a 32 81 0a 28 14 01 00 32 0c 01 1f '.....2..(...2...'
+    Alphanumeric Data String: '154WX5-TLB1'
+Checksum: 0xac
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

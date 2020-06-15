@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 57 03 00 00 00 00
+00 15 01 04 90 26 15 78 02 8f 55 9d 5f 58 9b 26
+1c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ba 27 40 e6 60 84 1a 30 30 20
+35 00 7e d7 10 00 00 19 7c 1a 40 e6 60 84 1a 30
+30 20 35 00 7e d7 10 00 00 19 00 00 00 fe 00 47
+59 57 4e 31 80 31 37 33 57 44 31 0a 00 00 00 00
+00 00 41 31 96 00 00 00 00 02 01 0a 20 20 00 91
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 855
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6152, 0.3710
+    Green: 0.3466, 0.6083
+    Blue : 0.1494, 0.1103
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.015 Hz  16:9    55.574 kHz 101.700 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback 150 Hpol N
+                 Vfront    3 Vsync   5 Vback  18 Vpol N
+    DTD 2:  1600x900    40.010 Hz  16:9    37.049 kHz  67.800 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback 150 Hpol N
+                 Vfront    3 Vsync   5 Vback  18 Vpol N
+    Alphanumeric Data String: 'GYWN1'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 96 00 00 00 00 02 01 0a 20 20 '....A1........  '
+Checksum: 0x91
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

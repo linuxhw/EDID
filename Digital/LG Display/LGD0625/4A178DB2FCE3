@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 25 06 00 00 00 00
+00 1c 01 04 a5 22 13 78 ea e0 85 a3 54 4e 9b 26
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 5e 87 80 a0 70 38 4d 40 30 20
+35 00 58 c2 10 00 00 1b 68 38 80 a0 70 38 4d 40
+30 20 35 00 58 c2 10 00 00 1b 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 35 36 57 46 47 2d 53 50 42 33 00 4a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1573
+    Made in: 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.3046, 0.6054
+    Blue : 0.1503, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  143.998 Hz  16:9   166.606 kHz 346.540 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  69 Vpol N
+    DTD 2:  1920x1080   60.003 Hz  16:9    69.423 kHz 144.400 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  69 Vpol N
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP156WFG-SPB3'
+Checksum: 0x4a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

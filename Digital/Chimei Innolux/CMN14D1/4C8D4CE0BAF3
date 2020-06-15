@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae d1 14 00 00 00 00
+12 1a 01 04 95 1f 11 78 02 7e 45 93 55 53 94 28
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 83 1d 56 ce 50 00 20 30 44 2d
+47 00 35 ad 10 00 00 1a 9c 17 56 ce 50 00 20 30
+44 2d 47 00 35 ad 10 00 00 1a 00 00 00 fe 00 38
+33 56 4b 33 80 31 34 30 42 47 45 0a 00 00 00 00
+00 00 41 31 94 00 10 00 00 09 01 0a 20 20 00 6e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5329
+    Made in: week 18 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5751, 0.3349
+    Green: 0.3271, 0.5800
+    Blue : 0.1572, 0.1367
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.075 Hz 683:384  48.060 kHz  75.550 MHz (309 mm x 173 mm)
+                 Hfront   68 Hsync  45 Hback  93 Hpol P
+                 Vfront    4 Vsync   7 Vback  21 Vpol N
+    DTD 2:  1366x768    48.060 Hz 683:384  38.448 kHz  60.440 MHz (309 mm x 173 mm)
+                 Hfront   68 Hsync  45 Hback  93 Hpol P
+                 Vfront    4 Vsync   7 Vback  21 Vpol N
+    Alphanumeric Data String: '83VK3'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 94 00 10 00 00 09 01 0a 20 20 '....A1........  '
+Checksum: 0x6e
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

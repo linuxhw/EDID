@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 47 33 00 00 00 00
+00 0e 01 03 80 1e 17 78 0a 87 f5 94 57 4f 8c 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 78 20 51 1a 10 40 30 70
+14 00 31 e4 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe
+00 4c 54 4e 31 35 30 50 47 2d 4c 30 33 0a 00 ac
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 13127
+    Made in: 2004
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 23 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.5800, 0.3398
+    Green: 0.3095, 0.5498
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1400x1050   60.020 Hz   4:3    63.981 kHz 108.000 MHz (305 mm x 228 mm)
+                 Hfront   48 Hsync 112 Hback 128 Hpol N
+                 Vfront    1 Vsync   4 Vback  11 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'SAMSUNG'
+    Alphanumeric Data String: 'LTN150PG-L03'
+Checksum: 0xac
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

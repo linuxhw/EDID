@@ -1,0 +1,65 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 44 6d 01 00 01 00 00 00
+1b 10 01 03 80 50 2d 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ae b8 a0 50 50 00 80 ae 28 10
+02 0c 00 00 00 00 00 00 ae b8 a0 50 50 00 60 a4
+28 10 02 04 00 00 00 00 00 00 ae b8 a0 50 50 00
+50 af 28 10 02 00 00 00 00 00 00 00 00 00 00 fe
+00 4e 54 33 36 38 33 30 20 64 75 61 6c 20 00 b1
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: QCM
+    Model: 1
+    Serial Number: ...
+    Made in: week 27 of 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 80 cm x 45 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x2560   49.592 Hz   9:16  311.039 kHz 472.780 MHz (analog composite, sync-on-green)
+                 Hfront   40 Hsync  16 Hback  24 Hpol N
+                 Vfront   48 Vsync   2 Vback 3662 Vpol N
+    DTD 2:  1440x2560   84.522 Hz   9:16  311.039 kHz 472.780 MHz (analog composite, sync-on-green)
+                 Hfront   40 Hsync  16 Hback  24 Hpol N
+                 Vfront   16 Vsync   2 Vback 1102 Vpol N
+    DTD 3:  1440x2560   48.000 Hz   9:16  311.039 kHz 472.780 MHz (analog composite, sync-on-green)
+                 Hfront   40 Hsync  16 Hback  24 Hpol N
+                 Vfront    0 Vsync   2 Vback 3918 Vpol N
+                   ae b8 a0 50 50 00 50 af 28 10 02 00 00 00 00 00 00 00 '...PP.P.(.........'
+    Alphanumeric Data String: 'NT36830 dual '
+Checksum: 0xb1
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #3: 0 values in the video timing:
+    Horizontal Active/Blanking 1440/80
+    Horizontal Frontporch/Sync Width 40/16
+    Vertical Active/Blanking 2560/3920
+    Vertical Frontporch/Sync Width 0/2
+  Detailed Timing Descriptor #3: Mismatch of image size vs display size: image size is not set, but display size is.
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL
