@@ -129,16 +129,20 @@ Checksum: 0x12
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 148.097 kHz (Monitor: 162.000 - 162.000 kHz)
     Maximum Clock: 533.150 MHz (Monitor: 20.000 MHz)
+  CTA-861: Multiple native interlaced timings are defined.
 
 Failures:
 
-All Blocks:
-  GTF timings are used, but the EDID does not signal GTF support.
-  CVT timings are used, but the EDID does not signal CVT support.
+EDID:
+  Base EDID: GTF timings are used, but the EDID does not signal GTF support.
+  Base EDID: CVT timings are used, but the EDID does not signal CVT support.
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

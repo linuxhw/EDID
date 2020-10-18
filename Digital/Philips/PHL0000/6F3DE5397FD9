@@ -31,7 +31,7 @@ Block 0, Base EDID:
     Image size is variable
     Gamma: 2.20
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6367, 0.3300
     Green: 0.2724, 0.5927
@@ -119,7 +119,7 @@ Block 1, CTA-861 Extension Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
     PT scan behavior: Always Overscanned
-    IT scan behavior: Always Overscanned
+    IT scan behavior: Always Underscanned
     CE scan behavior: Always Overscanned
   Colorimetry Data Block:
     BT2020YCC
@@ -153,6 +153,8 @@ Checksum: 0xbb
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 97 is the preferred timing, overriding the first detailed timings. Is this intended?
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI (which requires an RGB timings pixel rate >= 590 MHz).
 
 Failures:
@@ -161,6 +163,7 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is set, but not display size.
   Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is set, but not display size.
 Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
   Detailed Timing Descriptor #3: Mismatch of image size vs display size: image size is set, but not display size.
   Detailed Timing Descriptor #4: Mismatch of image size vs display size: image size is set, but not display size.
 

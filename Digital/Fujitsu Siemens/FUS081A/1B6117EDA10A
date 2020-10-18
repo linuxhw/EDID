@@ -114,18 +114,24 @@ Block 1, CTA-861 Extension Block:
     DTD 6:   720x576    50.000 Hz   5:4    31.250 kHz  27.000 MHz (509 mm x 286 mm)
                  Hfront   12 Hsync  64 Hback  68 Hpol P
                  Vfront    5 Vsync   5 Vback  39 Vpol N
-Checksum: 0xa
+Checksum: 0x0a
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  CTA-861: Multiple native interlaced timings are defined.
 
 Failures:
 
 Block 0, Base EDID:
   Display Range Limits: GTF can't be combined with non-continuous frequencies.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

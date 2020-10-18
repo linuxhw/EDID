@@ -81,7 +81,7 @@ Checksum: 0x92
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -114,14 +114,21 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  3440x1440   74.983 Hz  43:18  111.875 kHz 402.750 MHz (819 mm x 346 mm)
                  Hfront   32 Hsync  48 Hback  80 Hpol P
                  Vfront    3 Vsync  10 Vback  39 Vpol N
-Checksum: 0xe
+Checksum: 0x0e
 
 ----------------
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.250 - 150.972 kHz (Monitor: 151.000 - 151.000 kHz)
 
-EDID conformity: PASS
+Failures:
+
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

@@ -74,13 +74,13 @@ Block 0, Base EDID:
     Monitor ranges (GTF): 48-240 Hz V, 30-255 kHz H, max dotclock 600 MHz
     Display Product Name: '27GK750F'
   Extension blocks: 1
-Checksum: 0x4
+Checksum: 0x04
 
 ----------------
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -121,16 +121,19 @@ Checksum: 0x77
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.250 - 282.916 kHz (Monitor: 30.000 - 255.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 531x298 mm vs display size 600x340 mm.
   Display Range Limits: GTF can't be combined with non-continuous frequencies.
-All Blocks:
-  CVT timings are used, but the EDID does not signal CVT support.
+EDID:
+  Base EDID: CVT timings are used, but the EDID does not signal CVT support.
 
 EDID conformity: FAIL

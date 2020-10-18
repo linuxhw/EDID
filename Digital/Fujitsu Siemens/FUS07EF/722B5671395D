@@ -117,11 +117,17 @@ Checksum: 0xfe
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  CTA-861: Multiple native interlaced timings are defined.
 
 Failures:
 
 Block 0, Base EDID:
   Display Range Limits: GTF can't be combined with non-continuous frequencies.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

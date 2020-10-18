@@ -100,11 +100,11 @@ Block 1, CTA-861 Extension Block:
       Supported sample sizes (bits): 24 20 16
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
-  Unknown CTA tag 0x00, length 0
-  Unknown CTA tag 0x00, length 0
-  Unknown CTA tag 0x00, length 0
-  Unknown CTA tag 0x00, length 0
-  Unknown CTA tag 0x00, length 16
+  Unknown CTA-861 tag 0x00, length 0
+  Unknown CTA-861 tag 0x00, length 0
+  Unknown CTA-861 tag 0x00, length 0
+  Unknown CTA-861 tag 0x00, length 0
+  Unknown CTA-861 tag 0x00, length 16
     00 02 3a 80 18 71 38 2d 40 58 2c 45 00 a5 22 21 '..:..q8-@X,E.."!'
   Detailed Timing Descriptors:
     DTD 3:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (677 mm x 290 mm)
@@ -130,13 +130,15 @@ Checksum: 0x3c
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Unknown CTA Data Block 0.
-  Unknown CTA Data Block 0.
-  Unknown CTA Data Block 0.
-  Unknown CTA Data Block 0.
-  Unknown CTA Data Block 0.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Unknown CTA-861 Data Block 0.
+  Unknown CTA-861 Data Block 0.
+  Unknown CTA-861 Data Block 0.
+  Unknown CTA-861 Data Block 0.
+  Unknown CTA-861 Data Block 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.250 - 84.643 kHz (Monitor: 85.000 - 85.000 kHz)
 
 Failures:
@@ -150,8 +152,9 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #5: Mismatch of image size 677x290 mm vs display size 800x340 mm.
   Detailed Timing Descriptor #6: Mismatch of image size 677x290 mm vs display size 800x340 mm.
   Detailed Timing Descriptor #7: Mismatch of image size 677x290 mm vs display size 800x340 mm.
-All Blocks:
-  GTF timings are used, but the EDID does not signal GTF support.
-  CVT timings are used, but the EDID does not signal CVT support.
+EDID:
+  Base EDID: GTF timings are used, but the EDID does not signal GTF support.
+  Base EDID: CVT timings are used, but the EDID does not signal CVT support.
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

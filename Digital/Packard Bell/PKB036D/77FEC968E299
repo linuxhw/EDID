@@ -33,7 +33,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     DPMS levels: Off
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6406, 0.3369
     Green: 0.3134, 0.6230
@@ -64,7 +64,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'Maestro226DX'
   Extension blocks: 1
-Checksum: 0x6
+Checksum: 0x06
 
 ----------------
 
@@ -111,6 +111,8 @@ Checksum: 0xb1
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: PASS

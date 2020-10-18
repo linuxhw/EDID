@@ -32,7 +32,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     DPMS levels: Off
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6464, 0.3310
     Green: 0.3154, 0.6142
@@ -136,13 +136,20 @@ Checksum: 0x4f
 
 ----------------
 
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
 Failures:
 
 Block 1, CTA-861 Extension Block:
   HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 120.000 Hz (Monitor: 25.000 - 76.000 Hz)
     Maximum Clock: 368.759 MHz (Monitor: 300.000 MHz)
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

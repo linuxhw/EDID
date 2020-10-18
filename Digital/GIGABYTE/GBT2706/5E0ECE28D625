@@ -169,9 +169,9 @@ Block 2, DisplayID Extension Block:
   Extension Count: 0
   Display Product Type: Extension Section
   Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD 5:  2560x1440  143.972 Hz   0:0   222.149 kHz 592.250 MHz (aspect undefined, no 3D stereo)
-                 Hfront   21 Hsync  32 Hback  53 Hpol P
-                 Vfront    3 Vsync   5 Vback  95 Vpol N
+    DTD:  2560x1440  143.972 Hz   0:0   222.149 kHz 592.250 MHz (aspect undefined, no 3D stereo)
+               Hfront   21 Hsync  32 Hback  53 Hpol P
+               Vfront    3 Vsync   5 Vback  95 Vpol N
   Checksum: 0x44
 Checksum: 0x90
 
@@ -180,9 +180,11 @@ Checksum: 0x90
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 242.549 kHz (Monitor: 222.000 - 222.000 kHz)
 
 Failures:
@@ -198,5 +200,9 @@ Block 1, CTA-861 Extension Block:
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
   Video Timing Modes Type 1 - Detailed Timings Data Block: Unknown aspect 0x08.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

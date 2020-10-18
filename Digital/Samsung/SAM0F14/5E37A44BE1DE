@@ -32,7 +32,7 @@ Block 0, Base EDID:
     Maximum image size: 89 cm x 50 cm
     Gamma: 2.20
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6406, 0.3300
     Green: 0.3007, 0.6005
@@ -78,7 +78,7 @@ Checksum: 0x77
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -126,7 +126,7 @@ Block 1, CTA-861 Extension Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
     PT scan behavior: No Data
-    IT scan behavior: Always Overscanned
+    IT scan behavior: Supports both over- and underscan
     CE scan behavior: Supports both over- and underscan
   Colorimetry Data Block:
     xvYCC601
@@ -179,7 +179,7 @@ Block 1, CTA-861 Extension Block:
         VIC 102:  4096x2160   60.000 Hz 256:135 135.000 kHz 594.000 MHz (unknown (0x0f))
         VIC 102:  4096x2160   60.000 Hz 256:135 135.000 kHz 594.000 MHz (unknown (0x0f))
         VIC 102:  4096x2160   60.000 Hz 256:135 135.000 kHz 594.000 MHz (unknown (0x0f))
-  Unknown CTA Data Block (extended tag 0xff, length 30)
+  Unknown CTA-861 Data Block (extended tag 0xff, length 30)
     ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff '................'
     ff ff ff ff ff ff ff ff ff ff ff ff ff ff       '..............'
   Detailed Timing Descriptors:
@@ -198,7 +198,8 @@ Checksum: 0xff (should be 0x2a)
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Unknown Extended CTA Data Block 0xff.
+  Video Data Block: VIC 97 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Unknown Extended CTA-861 Data Block 0xff.
 
 Failures:
 
@@ -235,8 +236,8 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #4: Mismatch of image size 4095x4095 mm vs display size 4450x2500 mm.
   Padding: CTA-861 padding contains non-zero bytes.
   Invalid checksum 0xff (should be 0x2a).
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 9.770 - 75.062 Hz (Monitor: 24.000 - 75.000 Hz)
     Maximum Clock: 655.350 MHz (Monitor: 600.000 MHz)
 

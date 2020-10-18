@@ -32,7 +32,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     DPMS levels: Off
     Monochrome or grayscale display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6250, 0.3398
     Green: 0.2802, 0.5947
@@ -71,7 +71,7 @@ Checksum: 0x94
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Native detailed modes: 1
   Video Data Block:
@@ -128,6 +128,8 @@ Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (16x9 is smaller than 10x10 cm).
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 Failures:
 
@@ -136,5 +138,7 @@ Block 0, Base EDID:
   Missing Display Range Limits Descriptor.
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #8: Mismatch of image size 708x398 mm vs display size 160x90 mm.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

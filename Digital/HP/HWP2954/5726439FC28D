@@ -68,7 +68,7 @@ Checksum: 0x57
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Native detailed modes: 1
   Video Data Block:
@@ -113,8 +113,15 @@ Checksum: 0x7b
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.734 - 75.000 kHz (Monitor: 24.000 - 80.000 kHz)
 
-EDID conformity: PASS
+Failures:
+
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

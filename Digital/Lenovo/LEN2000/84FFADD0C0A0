@@ -109,8 +109,12 @@ Checksum: 0x31
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 59.810 - 75.029 Hz (Monitor: 59.000 - 61.000 Hz)
     Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 30.000 - 68.000 kHz)
     Maximum Clock: 148.500 MHz (Monitor: 60.000 MHz)

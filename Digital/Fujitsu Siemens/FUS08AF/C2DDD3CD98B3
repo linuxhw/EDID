@@ -125,8 +125,16 @@ Checksum: 0x98
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.625 - 150.972 kHz (Monitor: 30.000 - 160.000 kHz)
 
-EDID conformity: PASS
+Failures:
+
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

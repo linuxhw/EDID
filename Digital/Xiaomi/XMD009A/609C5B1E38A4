@@ -31,7 +31,7 @@ Block 0, Base EDID:
     Maximum image size: 60 cm x 34 cm
     Gamma: 2.20
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6396, 0.3398
     Green: 0.2998, 0.6904
@@ -141,6 +141,15 @@ Checksum: 0xf2
 
 ----------------
 
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+  CTA-861: Native progressive resolution of 1920x1080 is smaller than the max preferred progressive resolution 3840x2160.
+
 Failures:
 
 Block 0, Base EDID:
@@ -152,8 +161,8 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #4: Mismatch of image size 640x360 mm vs display size 600x340 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 341x192 mm vs display size 600x340 mm.
   HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 120.000 Hz (Monitor: 49.000 - 80.000 Hz)
 
 EDID conformity: FAIL

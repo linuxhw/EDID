@@ -75,7 +75,7 @@ Checksum: 0xa0
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -122,8 +122,9 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 75.062 Hz (Monitor: 50.000 - 76.000 Hz)
     Horizontal Freq: 27.000 - 88.786 kHz (Monitor: 30.000 - 88.000 kHz)
 
@@ -136,5 +137,7 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size 597x336 mm vs display size 710x400 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 597x336 mm vs display size 710x400 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 597x336 mm vs display size 710x400 mm.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

@@ -76,16 +76,18 @@ Block 1, CTA-861 Extension Block:
     DTD 2:  3440x1440   49.987 Hz  43:18   73.681 kHz 265.250 MHz (798 mm x 335 mm)
                  Hfront   48 Hsync  32 Hback  80 Hpol P
                  Vfront    3 Vsync  10 Vback  21 Vpol N
-Checksum: 0x2
+Checksum: 0x02
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.468 - 88.819 kHz (Monitor: 73.000 - 88.000 kHz)
 
 EDID conformity: PASS

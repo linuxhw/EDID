@@ -33,7 +33,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     DPMS levels: Off
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6425, 0.3417
     Green: 0.3173, 0.6279
@@ -81,7 +81,7 @@ Checksum: 0x45
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -132,10 +132,17 @@ Checksum: 0x9f
 
 ----------------
 
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
 Failures:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 50.000 - 75.062 Hz (Monitor: 55.000 - 76.000 Hz)
     Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 29.000 - 81.000 kHz)
 

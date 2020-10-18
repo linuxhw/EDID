@@ -33,7 +33,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     DPMS levels: Standby Suspend Off
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6523, 0.3359
     Green: 0.3212, 0.6103
@@ -108,6 +108,12 @@ Checksum: 0xb2
 
 ----------------
 
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
 Failures:
 
 Block 0, Base EDID:
@@ -119,10 +125,11 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #5: Mismatch of image size 16x9 mm vs display size 530x300 mm.
   Detailed Timing Descriptor #6: Mismatch of image size 16x9 mm vs display size 530x300 mm.
   Detailed Timing Descriptor #7: Mismatch of image size 16x9 mm vs display size 530x300 mm.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 50.000 - 75.000 Hz (Monitor: 59.000 - 61.000 Hz)
     Horizontal Freq: 28.125 - 67.500 kHz (Monitor: 15.000 - 46.000 kHz)
     Maximum Clock: 148.500 MHz (Monitor: 80.000 MHz)
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

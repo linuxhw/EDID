@@ -135,14 +135,18 @@ Checksum: 0x6e
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.625 - 88.786 kHz (Monitor: 30.000 - 89.000 kHz)
 
 Failures:
 
 Block 0, Base EDID:
   Display Range Limits: CVT can't be combined with non-continuous frequencies.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

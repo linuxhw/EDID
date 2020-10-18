@@ -89,8 +89,11 @@ Checksum: 0x92
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 37.500 - 128.694 kHz (Monitor: 125.000 - 125.000 kHz)
 
 Failures:
@@ -100,8 +103,8 @@ Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
-All Blocks:
-  GTF timings are used, but the EDID does not signal GTF support.
-  CVT timings are used, but the EDID does not signal CVT support.
+EDID:
+  Base EDID: GTF timings are used, but the EDID does not signal GTF support.
+  Base EDID: CVT timings are used, but the EDID does not signal CVT support.
 
 EDID conformity: FAIL

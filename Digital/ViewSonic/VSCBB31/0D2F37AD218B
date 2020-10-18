@@ -78,13 +78,13 @@ Block 0, Base EDID:
     Monitor ranges (Bare Limits): 48-146 Hz V, 180-180 kHz H, max dotclock 340 MHz
     Display Product Name: 'XG2401 SERIES'
   Extension blocks: 1
-Checksum: 0x5
+Checksum: 0x05
 
 ----------------
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -134,10 +134,13 @@ Checksum: 0x6f
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 143.855 Hz (Monitor: 48.000 - 146.000 Hz)
     Horizontal Freq: 15.625 - 166.440 kHz (Monitor: 180.000 - 180.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

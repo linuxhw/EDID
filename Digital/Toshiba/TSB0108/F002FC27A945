@@ -32,7 +32,7 @@ Block 0, Base EDID:
     Maximum image size: 70 cm x 39 cm
     Gamma: 2.20
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6562, 0.3242
     Green: 0.2656, 0.5966
@@ -117,8 +117,12 @@ Checksum: 0x7b
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 31 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 148.500 MHz (Monitor: 140.000 MHz)
     Could be due to a Monitor Range off-by-one rounding issue
 

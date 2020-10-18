@@ -32,7 +32,7 @@ Block 0, Base EDID:
     Maximum image size: 51 cm x 29 cm
     Gamma: 2.20
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6279, 0.3476
     Green: 0.3447, 0.6152
@@ -76,7 +76,7 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
-  Unknown CTA tag 0x00, length 0
+  Unknown CTA-861 tag 0x00, length 0
   Detailed Timing Descriptors:
     DTD 2:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz (510 mm x 287 mm)
                  Hfront  148 Hsync  44 Hback 528 Hpol P
@@ -86,6 +86,7 @@ Block 1, CTA-861 Extension Block:
     Monitor ranges (GTF): 49-75 Hz V, 28-95 kHz H, max dotclock 210 MHz
     Dummy Descriptor:
     Dummy Descriptor:
+    Dummy Descriptor:
 Checksum: 0xda
 
 ----------------
@@ -93,7 +94,9 @@ Checksum: 0xda
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Unknown CTA Data Block 0.
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Unknown CTA-861 Data Block 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 Failures:
 
@@ -102,6 +105,6 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Dummy Descriptor: Dummy block filled with garbage.
   Dummy Descriptor: Dummy block filled with garbage.
-  Padding: CTA-861 padding contains non-zero bytes.
+  Dummy Descriptor: Dummy block filled with garbage.
 
 EDID conformity: FAIL

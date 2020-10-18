@@ -105,9 +105,11 @@ Checksum: 0xd4
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 59.940 - 74.551 Hz (Monitor: 40.000 - 60.000 Hz)
     Horizontal Freq: 31.466 - 133.312 kHz (Monitor: 134.000 - 134.000 kHz)
 
@@ -116,5 +118,7 @@ Failures:
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI): HDMI VSDB Max TMDS rate is > 340.
   Vendor-Specific Data Block (HDMI): The HDMI Specification uses EDID 1.3, not 1.4.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

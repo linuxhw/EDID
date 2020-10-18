@@ -75,13 +75,13 @@ Block 0, Base EDID:
     Monitor ranges (Bare Limits): 35-76 Hz V, 83-83 kHz H, max dotclock 170 MHz
     Display Product Name: '2460G5'
   Extension blocks: 1
-Checksum: 0x5
+Checksum: 0x05
 
 ----------------
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -126,10 +126,13 @@ Checksum: 0x31
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 83.909 kHz (Monitor: 83.000 - 83.000 kHz)
     Maximum Clock: 170.000 MHz (Monitor: 170.000 MHz)
+  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

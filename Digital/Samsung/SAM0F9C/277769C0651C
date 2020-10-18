@@ -90,7 +90,7 @@ Checksum: 0xce
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -145,15 +145,15 @@ Block 2, DisplayID Extension Block:
   Extension Count: 0
   Display Product Type: Extension Section
   Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD 6:  5120x1440  119.970 Hz   0:0   182.955 kHz 966.000 MHz (aspect undefined, no 3D stereo, preferred)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync  10 Vback  72 Vpol N
-    DTD 7:  5120x1440   99.996 Hz   0:0   150.994 kHz 797.250 MHz (aspect undefined, no 3D stereo)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync  10 Vback  57 Vpol N
-    DTD 8:  5120x1440   59.977 Hz   0:0    88.826 kHz 469.000 MHz (aspect undefined, no 3D stereo)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync  10 Vback  28 Vpol N
+    DTD:  5120x1440  119.970 Hz   0:0   182.955 kHz 966.000 MHz (aspect undefined, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback  80 Hpol P
+               Vfront    3 Vsync  10 Vback  72 Vpol N
+    DTD:  5120x1440   99.996 Hz   0:0   150.994 kHz 797.250 MHz (aspect undefined, no 3D stereo)
+               Hfront   48 Hsync  32 Hback  80 Hpol P
+               Vfront    3 Vsync  10 Vback  57 Vpol N
+    DTD:  5120x1440   59.977 Hz   0:0    88.826 kHz 469.000 MHz (aspect undefined, no 3D stereo)
+               Hfront   48 Hsync  32 Hback  80 Hpol P
+               Vfront    3 Vsync  10 Vback  28 Vpol N
   Checksum: 0xf3
 Checksum: 0x90
 
@@ -163,8 +163,9 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.466 - 182.954 kHz (Monitor: 190.000 - 190.000 kHz)
 
 Failures:
@@ -174,5 +175,7 @@ Block 2, DisplayID Extension Block:
   Video Timing Modes Type 1 - Detailed Timings Data Block: Unknown aspect 0x08.
   Video Timing Modes Type 1 - Detailed Timings Data Block: Unknown aspect 0x08.
   Video Timing Modes Type 1 - Detailed Timings Data Block: Unknown aspect 0x08.
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
 
 EDID conformity: FAIL

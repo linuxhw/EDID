@@ -33,7 +33,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     DPMS levels: Off
     Undefined display color type
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6328, 0.3398
     Green: 0.3105, 0.6328
@@ -80,7 +80,7 @@ Checksum: 0xef
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -153,14 +153,16 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI (which requires an RGB timings pixel rate >= 590 MHz).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI): HDMI VSDB Max TMDS rate is > 340.
   HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.734 - 135.000 kHz (Monitor: 24.000 - 160.000 kHz)
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

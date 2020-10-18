@@ -32,7 +32,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     DPMS levels: Off
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6347, 0.3388
     Green: 0.3378, 0.5937
@@ -62,7 +62,7 @@ Checksum: 0x5a
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Native detailed modes: 0
   Video Data Block:
     VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
@@ -74,10 +74,15 @@ Block 1, CTA-861 Extension Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
     PT scan behavior: Always Underscanned
-    IT scan behavior: Always Overscanned
+    IT scan behavior: Always Underscanned
     CE scan behavior: Always Underscanned
 Checksum: 0x41
 
 ----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
 
 EDID conformity: PASS

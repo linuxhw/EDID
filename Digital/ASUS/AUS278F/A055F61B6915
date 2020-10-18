@@ -84,7 +84,7 @@ Checksum: 0xbc
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -128,7 +128,7 @@ Block 1, CTA-861 Extension Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
     PT scan behavior: Always Underscanned
-    IT scan behavior: Always Overscanned
+    IT scan behavior: Always Underscanned
     CE scan behavior: Always Underscanned
   Detailed Timing Descriptors:
     DTD 2:  1920x1080  144.001 Hz  16:9   158.113 kHz 325.080 MHz (598 mm x 336 mm)
@@ -148,15 +148,16 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 50.000 - 279.857 Hz (Monitor: 48.000 - 240.000 Hz)
     Horizontal Freq: 31.250 - 307.843 kHz (Monitor: 255.000 - 255.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
-All Blocks:
-  GTF timings are used, but the EDID does not signal GTF support.
-  CVT timings are used, but the EDID does not signal CVT support.
+EDID:
+  Base EDID: GTF timings are used, but the EDID does not signal GTF support.
+  Base EDID: CVT timings are used, but the EDID does not signal CVT support.
 
 EDID conformity: FAIL

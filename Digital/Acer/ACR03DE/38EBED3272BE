@@ -34,7 +34,7 @@ Block 0, Base EDID:
     DPMS levels: Standby Suspend Off
     RGB color display
     Default (sRGB) color space is primary color space
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6533, 0.3359
     Green: 0.3242, 0.6123
@@ -71,7 +71,7 @@ Checksum: 0xcf
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -86,9 +86,9 @@ Block 1, CTA-861 Extension Block:
     VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
     VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
     VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
-  Unknown CTA tag 0x00, length 3
+  Unknown CTA-861 tag 0x00, length 3
     09 07 07                                        '...'
-  Unknown CTA tag 0x00, length 3
+  Unknown CTA-861 tag 0x00, length 3
     01 00 00                                        '...'
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
@@ -112,9 +112,12 @@ Checksum: 0xce
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Unknown CTA Data Block 0.
-  Unknown CTA Data Block 0.
+  Unknown CTA-861 Data Block 0.
+  Unknown CTA-861 Data Block 0.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
@@ -125,8 +128,8 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size 527x296 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 527x296 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 527x296 mm vs display size 480x270 mm.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 50.000 - 75.000 Hz (Monitor: 56.000 - 75.000 Hz)
     Horizontal Freq: 28.125 - 67.500 kHz (Monitor: 31.000 - 75.000 kHz)
 

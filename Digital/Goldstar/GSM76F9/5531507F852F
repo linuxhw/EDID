@@ -33,7 +33,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     DPMS levels: Standby Suspend Off
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6513, 0.3320
     Green: 0.3066, 0.6308
@@ -69,13 +69,13 @@ Block 0, Base EDID:
     Monitor ranges (GTF): 40-75 Hz V, 90-90 kHz H, max dotclock 240 MHz
     Display Product Name: 'LG ULTRAWIDE'
   Extension blocks: 1
-Checksum: 0x1
+Checksum: 0x01
 
 ----------------
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -110,12 +110,17 @@ Checksum: 0xa3
 
 ----------------
 
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 531x298 mm vs display size 800x340 mm.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.250 - 84.600 kHz (Monitor: 90.000 - 90.000 kHz)
 
 EDID conformity: FAIL

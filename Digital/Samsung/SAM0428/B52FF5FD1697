@@ -33,7 +33,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     DPMS levels: Off
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6552, 0.3291
     Green: 0.2763, 0.6171
@@ -97,7 +97,7 @@ Block 1, CTA-861 Extension Block:
     YCbCr quantization: No Data
     RGB quantization: No Data
     PT scan behavior: No Data
-    IT scan behavior: IT video formats not supported
+    IT scan behavior: Supports both over- and underscan
     CE scan behavior: Supports both over- and underscan
   Detailed Timing Descriptors:
     DTD 2:   720x480    59.940 Hz   3:2    31.469 kHz  27.000 MHz (analog composite, sync-on-green, 160 mm x 90 mm)
@@ -110,10 +110,11 @@ Checksum: 0x29
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 148.500 MHz (Monitor: 140.000 MHz)
     Could be due to a Monitor Range off-by-one rounding issue
 
@@ -121,5 +122,7 @@ Failures:
 
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #2: Mismatch of image size 160x90 mm vs display size 460x300 mm.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

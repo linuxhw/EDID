@@ -141,6 +141,12 @@ Checksum: 0xf0
 
 ----------------
 
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
 Failures:
 
 Block 0, Base EDID:
@@ -148,5 +154,7 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI): HDMI VSDB Max TMDS rate is > 340.
   Vendor-Specific Data Block (HDMI): The HDMI Specification uses EDID 1.3, not 1.4.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

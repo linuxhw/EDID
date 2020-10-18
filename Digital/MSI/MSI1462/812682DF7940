@@ -78,13 +78,13 @@ Block 0, Base EDID:
     Monitor ranges (Bare Limits): 48-144 Hz V, 162-162 kHz H, max dotclock 330 MHz
     Display Product Serial Number: ...
   Extension blocks: 1
-Checksum: 0xd
+Checksum: 0x0d
 
 ----------------
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Native detailed modes: 1
   Audio Data Block:
@@ -112,15 +112,16 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.466 - 158.107 kHz (Monitor: 162.000 - 162.000 kHz)
     Maximum Clock: 369.500 MHz (Monitor: 330.000 MHz)
 
 Failures:
 
-All Blocks:
-  GTF timings are used, but the EDID does not signal GTF support.
-  CVT timings are used, but the EDID does not signal CVT support.
+EDID:
+  Base EDID: GTF timings are used, but the EDID does not signal GTF support.
+  Base EDID: CVT timings are used, but the EDID does not signal CVT support.
 
 EDID conformity: FAIL

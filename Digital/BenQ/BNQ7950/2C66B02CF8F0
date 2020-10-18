@@ -70,13 +70,13 @@ Block 0, Base EDID:
     Monitor ranges (Bare Limits): 40-60 Hz V, 135-135 kHz H, max dotclock 600 MHz
     Display Product Name: 'BenQ EW3270U'
   Extension blocks: 1
-Checksum: 0x3
+Checksum: 0x03
 
 ----------------
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -110,7 +110,7 @@ Block 1, CTA-861 Extension Block:
     YCbCr quantization: Selectable (via AVI YQ)
     RGB quantization: Selectable (via AVI Q)
     PT scan behavior: No Data
-    IT scan behavior: Supports both over- and underscan
+    IT scan behavior: IT video formats not supported
     CE scan behavior: CE video formats not supported
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
@@ -157,9 +157,11 @@ Checksum: 0xc0
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 75.062 Hz (Monitor: 40.000 - 60.000 Hz)
     Horizontal Freq: 27.000 - 135.000 kHz (Monitor: 135.000 - 135.000 kHz)
 

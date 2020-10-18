@@ -27,7 +27,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     RGB color display
     Default (sRGB) color space is primary color space
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6367, 0.3486
     Green: 0.3330, 0.6054
@@ -61,7 +61,7 @@ Block 0, Base EDID:
   Display Range Limits:
     Monitor ranges (Unknown (0x0a)): 50-76 Hz V, 30-83 kHz H, max dotclock 210 MHz
     Display Product Name: 'BenQ GL2240'
-Checksum: 0x4
+Checksum: 0x04
 
 ----------------
 
@@ -71,8 +71,8 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Display Range Limits: Unknown range class (0x0a).
   Display Range Limits: Byte 11 is 0x20 instead of 0x0a.
-  Display Range Limits: Byte 12 is 0x00 instead of 0x20.
-All Blocks:
-  GTF timings are used, but the EDID does not signal GTF support.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+EDID:
+  Base EDID: GTF timings are used, but the EDID does not signal GTF support.
 
 EDID conformity: FAIL

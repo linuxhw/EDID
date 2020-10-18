@@ -32,7 +32,7 @@ Block 0, Base EDID:
     Maximum image size: 121 cm x 68 cm
     Gamma: 2.20
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6250, 0.3398
     Green: 0.2802, 0.5947
@@ -65,7 +65,7 @@ Checksum: 0xcf
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -103,7 +103,7 @@ Block 1, CTA-861 Extension Block:
     YCbCr quantization: No Data
     RGB quantization: No Data
     PT scan behavior: No Data
-    IT scan behavior: IT video formats not supported
+    IT scan behavior: Always Underscanned
     CE scan behavior: Supports both over- and underscan
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 3.0.0.0
@@ -175,9 +175,10 @@ Failures:
 
 Block 1, CTA-861 Extension Block:
   HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 60.317 Hz (Monitor: 50.000 - 75.000 Hz)
     Horizontal Freq: 15.734 - 135.000 kHz (Monitor: 30.000 - 80.000 kHz)
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

@@ -32,7 +32,7 @@ Block 0, Base EDID:
     Maximum image size: 80 cm x 45 cm
     Gamma: 2.20
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6250, 0.3398
     Green: 0.2802, 0.5947
@@ -147,6 +147,14 @@ Checksum: 0xea
 
 ----------------
 
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  CTA-861: Multiple native interlaced timings are defined.
+
 Failures:
 
 Block 0, Base EDID:
@@ -156,8 +164,9 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size 708x398 mm vs display size 800x450 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 708x398 mm vs display size 800x450 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 708x398 mm vs display size 800x450 mm.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 60.000 Hz (Monitor: 49.000 - 61.000 Hz)
+  CTA-861: A native interlaced timing is present, but not a native progressive timing.
 
 EDID conformity: FAIL

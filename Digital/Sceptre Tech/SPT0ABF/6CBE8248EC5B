@@ -31,7 +31,7 @@ Block 0, Base EDID:
     Image size is variable
     Gamma: 2.20
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6357, 0.3486
     Green: 0.2900, 0.5888
@@ -61,7 +61,7 @@ Block 0, Base EDID:
     Monitor ranges (GTF): 23-80 Hz V, 30-160 kHz H, max dotclock 600 MHz
     Display Product Name: 'U27'
   Extension blocks: 1
-Checksum: 0x3
+Checksum: 0x03
 
 ----------------
 
@@ -142,6 +142,11 @@ Checksum: 0x9b
 
 ----------------
 
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+
 Failures:
 
 Block 0, Base EDID:
@@ -152,8 +157,9 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size vs display size: image size is set, but not display size.
   Detailed Timing Descriptor #4: Mismatch of image size vs display size: image size is set, but not display size.
   Detailed Timing Descriptor #5: Mismatch of image size vs display size: image size is set, but not display size.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 160.000 kHz)
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

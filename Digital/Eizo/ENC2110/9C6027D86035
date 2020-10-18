@@ -66,7 +66,7 @@ Checksum: 0x8b
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Native detailed modes: 0
   Video Data Block:
@@ -106,8 +106,9 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Data Block: VIC 1 is the preferred timing, overriding the first detailed timings. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 59.929 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
 
 Failures:

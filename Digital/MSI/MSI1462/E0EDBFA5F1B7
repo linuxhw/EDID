@@ -86,7 +86,7 @@ Checksum: 0xd0
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -117,15 +117,15 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
     Maximum TMDS clock: 340 MHz
-  Unknown CTA tag 0x00, length 0
-  Unknown CTA tag 0x00, length 0
-  Unknown CTA tag 0x00, length 0
-  Unknown CTA tag 0x00, length 0
-  Unknown CTA tag 0x00, length 0
-  Unknown CTA tag 0x00, length 0
-  Unknown CTA tag 0x00, length 0
-  Unknown CTA tag 0x00, length 0
-  Unknown CTA tag 0x00, length 0
+  Unknown CTA-861 tag 0x00, length 0
+  Unknown CTA-861 tag 0x00, length 0
+  Unknown CTA-861 tag 0x00, length 0
+  Unknown CTA-861 tag 0x00, length 0
+  Unknown CTA-861 tag 0x00, length 0
+  Unknown CTA-861 tag 0x00, length 0
+  Unknown CTA-861 tag 0x00, length 0
+  Unknown CTA-861 tag 0x00, length 0
+  Unknown CTA-861 tag 0x00, length 0
   Detailed Timing Descriptors:
     DTD 2:  1920x1080  120.000 Hz  16:9   135.000 kHz 297.000 MHz (521 mm x 293 mm)
                  Hfront   48 Hsync  32 Hback 200 Hpol P
@@ -146,18 +146,19 @@ Checksum: 0xe4
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Unknown CTA Data Block 0.
-  Unknown CTA Data Block 0.
-  Unknown CTA Data Block 0.
-  Unknown CTA Data Block 0.
-  Unknown CTA Data Block 0.
-  Unknown CTA Data Block 0.
-  Unknown CTA Data Block 0.
-  Unknown CTA Data Block 0.
-  Unknown CTA Data Block 0.
+  Unknown CTA-861 Data Block 0.
+  Unknown CTA-861 Data Block 0.
+  Unknown CTA-861 Data Block 0.
+  Unknown CTA-861 Data Block 0.
+  Unknown CTA-861 Data Block 0.
+  Unknown CTA-861 Data Block 0.
+  Unknown CTA-861 Data Block 0.
+  Unknown CTA-861 Data Block 0.
+  Unknown CTA-861 Data Block 0.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 143.996 Hz (Monitor: 48.000 - 144.000 Hz)
     Horizontal Freq: 15.625 - 161.995 kHz (Monitor: 162.000 - 162.000 kHz)
     Maximum Clock: 369.500 MHz (Monitor: 70.000 MHz)
@@ -172,8 +173,9 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size 521x293 mm vs display size 600x340 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 521x293 mm vs display size 600x340 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 521x293 mm vs display size 600x340 mm.
-All Blocks:
-  GTF timings are used, but the EDID does not signal GTF support.
-  CVT timings are used, but the EDID does not signal CVT support.
+EDID:
+  Base EDID: GTF timings are used, but the EDID does not signal GTF support.
+  Base EDID: CVT timings are used, but the EDID does not signal CVT support.
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

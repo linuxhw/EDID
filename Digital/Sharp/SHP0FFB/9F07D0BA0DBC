@@ -32,7 +32,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     DPMS levels: Off
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6328, 0.3330
     Green: 0.2050, 0.7021
@@ -122,13 +122,21 @@ Checksum: 0x3b
 
 ----------------
 
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
 Failures:
 
 Block 0, Base EDID:
   Vendor & Product Identification: EDID 1.3 does not support week 0xff.
   Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 75.029 Hz (Monitor: 55.000 - 76.000 Hz)
 
 EDID conformity: FAIL

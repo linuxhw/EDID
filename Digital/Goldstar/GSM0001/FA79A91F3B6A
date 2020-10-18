@@ -32,7 +32,7 @@ Block 0, Base EDID:
     Maximum image size: 16 cm x 9 cm
     Gamma: 2.20
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6396, 0.3300
     Green: 0.2998, 0.5996
@@ -59,13 +59,13 @@ Block 0, Base EDID:
     Monitor ranges (GTF): 57-63 Hz V, 31-82 kHz H, max dotclock 160 MHz
     Display Product Name: 'LG TV'
   Extension blocks: 1
-Checksum: 0x3
+Checksum: 0x03
 
 ----------------
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -118,12 +118,15 @@ Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (16x9 is smaller than 10x10 cm).
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 Failures:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 70.082 Hz (Monitor: 57.000 - 63.000 Hz)
     Horizontal Freq: 27.000 - 67.500 kHz (Monitor: 31.000 - 82.000 kHz)
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

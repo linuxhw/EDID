@@ -33,7 +33,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     DPMS levels: Standby Suspend Off
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6484, 0.3398
     Green: 0.3066, 0.6367
@@ -76,7 +76,7 @@ Checksum: 0xa8
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -116,7 +116,7 @@ Block 1, CTA-861 Extension Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
     PT scan behavior: Always Underscanned
-    IT scan behavior: Always Overscanned
+    IT scan behavior: Always Underscanned
     CE scan behavior: Always Underscanned
   Detailed Timing Descriptors:
     DTD 2:  1920x1080   84.905 Hz  16:9    95.433 kHz 198.500 MHz (544 mm x 303 mm)
@@ -131,7 +131,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1920x1080  143.614 Hz  16:9   161.279 kHz 335.460 MHz (544 mm x 303 mm)
                  Hfront   48 Hsync  32 Hback  80 Hpol P
                  Vfront    3 Vsync   5 Vback  35 Vpol N
-Checksum: 0x4
+Checksum: 0x04
 
 ----------------
 
@@ -139,11 +139,13 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 161.278 kHz (Monitor: 30.000 - 162.000 kHz)
 
 EDID conformity: FAIL

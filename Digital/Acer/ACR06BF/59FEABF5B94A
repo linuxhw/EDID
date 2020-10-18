@@ -70,13 +70,13 @@ Block 0, Base EDID:
     Monitor ranges (Bare Limits): 48-75 Hz V, 84-84 kHz H, max dotclock 180 MHz
     Display Product Name: 'VG240Y'
   Extension blocks: 1
-Checksum: 0x9
+Checksum: 0x09
 
 ----------------
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -119,9 +119,12 @@ Checksum: 0x53
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 83.894 kHz (Monitor: 84.000 - 84.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

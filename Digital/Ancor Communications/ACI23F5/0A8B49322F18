@@ -34,7 +34,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     RGB color display
     Default (sRGB) color space is primary color space
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6484, 0.3388
     Green: 0.2822, 0.6025
@@ -78,7 +78,7 @@ Checksum: 0xdc
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -125,7 +125,10 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz (509 mm x 286 mm)
                  Hfront  528 Hsync  44 Hback 148 Hpol P
                  Vfront    4 Vsync   5 Vback  36 Vpol P
-Checksum: 0x6
+    DTD 6:   720x480    59.940 Hz   3:2    31.469 kHz  27.000 MHz (509 mm x 286 mm)
+                 Hfront   16 Hsync  62 Hback  60 Hpol N
+                 Vfront    9 Vsync   6 Vback  30 Vpol N
+Checksum: 0x06
 
 ----------------
 
@@ -133,15 +136,16 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, CTA-861 Extension Block:
-  Padding: CTA-861 padding contains non-zero bytes.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 50.000 - 75.029 Hz (Monitor: 55.000 - 75.000 Hz)
     Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 30.000 - 85.000 kHz)
 

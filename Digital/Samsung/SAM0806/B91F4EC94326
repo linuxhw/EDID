@@ -32,7 +32,7 @@ Block 0, Base EDID:
     Maximum image size: 51 cm x 29 cm
     Gamma: 2.20
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6396, 0.3300
     Green: 0.2998, 0.5996
@@ -73,13 +73,13 @@ Block 0, Base EDID:
     Monitor ranges (GTF): 24-75 Hz V, 26-81 kHz H, max dotclock 230 MHz
     Display Product Name: 'SMT23A750'
   Extension blocks: 1
-Checksum: 0xd
+Checksum: 0x0d
 
 ----------------
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -107,7 +107,7 @@ Block 1, CTA-861 Extension Block:
     YCbCr quantization: No Data
     RGB quantization: No Data
     PT scan behavior: No Data
-    IT scan behavior: IT video formats not supported
+    IT scan behavior: Supports both over- and underscan
     CE scan behavior: Supports both over- and underscan
   Colorimetry Data Block:
     xvYCC601
@@ -159,6 +159,8 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

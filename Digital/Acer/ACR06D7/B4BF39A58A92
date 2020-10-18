@@ -109,7 +109,7 @@ Block 1, CTA-861 Extension Block:
     YCbCr quantization: Selectable (via AVI YQ)
     RGB quantization: Selectable (via AVI Q)
     PT scan behavior: No Data
-    IT scan behavior: Supports both over- and underscan
+    IT scan behavior: IT video formats not supported
     CE scan behavior: CE video formats not supported
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
@@ -149,8 +149,12 @@ Checksum: 0xca
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.250 - 214.558 kHz (Monitor: 222.000 - 222.000 kHz)
 
 Failures:
@@ -158,5 +162,7 @@ Failures:
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI): HDMI VSDB Max TMDS rate is > 340.
   Vendor-Specific Data Block (HDMI): The HDMI Specification uses EDID 1.3, not 1.4.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

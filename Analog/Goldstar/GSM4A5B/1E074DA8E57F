@@ -73,9 +73,14 @@ Checksum: 0x7c
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 202.500 MHz (Monitor: 200.000 MHz)
     Could be due to a Monitor Range off-by-one rounding issue
 
-EDID conformity: PASS
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing
+
+EDID conformity: FAIL

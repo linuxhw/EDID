@@ -32,7 +32,7 @@ Block 0, Base EDID:
     Maximum image size: 110 cm x 62 cm
     Gamma: 2.20
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6445, 0.3466
     Green: 0.2304, 0.7197
@@ -116,14 +116,21 @@ Checksum: 0x24
 
 ----------------
 
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
 Failures:
 
 Block 0, Base EDID:
   Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
-  Display Range Limits: Byte 12 is 0x00 instead of 0x20.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+  Display Range Limits: Bytes 12-17 must be 0x20.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 50.000 - 75.029 Hz (Monitor: 55.000 - 78.000 Hz)
     Horizontal Freq: 15.625 - 60.022 kHz (Monitor: 25.000 - 62.000 kHz)
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

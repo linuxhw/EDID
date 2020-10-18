@@ -124,7 +124,7 @@ Block 1, CTA-861 Extension Block:
         HDMI VIC 2:  3840x2160   25.000 Hz  16:9    56.250 kHz 297.000 MHz
         HDMI VIC 3:  3840x2160   24.000 Hz  16:9    54.000 kHz 297.000 MHz
         HDMI VIC 4:  4096x2160   24.000 Hz 256:135  54.000 kHz 297.000 MHz
-  Unknown CTA tag 0x00, length 3
+  Unknown CTA-861 tag 0x00, length 3
     05 03 01                                        '...'
   Detailed Timing Descriptors:
     DTD 2:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz (1209 mm x 680 mm)
@@ -144,10 +144,12 @@ Checksum: 0x5a
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Unknown CTA Data Block 0.
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Unknown CTA-861 Data Block 0.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 75.062 Hz (Monitor: 50.000 - 75.000 Hz)
     Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 31.000 - 80.000 kHz)
     Maximum Clock: 297.000 MHz (Monitor: 170.000 MHz)

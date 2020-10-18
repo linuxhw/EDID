@@ -101,8 +101,11 @@ Checksum: 0xc8
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 30.000 - 60.317 Hz (Monitor: 40.000 - 61.000 Hz)
     Horizontal Freq: 31.468 - 133.312 kHz (Monitor: 135.000 - 135.000 kHz)
 
@@ -110,8 +113,9 @@ Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-All Blocks:
-  GTF timings are used, but the EDID does not signal GTF support.
-  CVT timings are used, but the EDID does not signal CVT support.
+EDID:
+  Base EDID: GTF timings are used, but the EDID does not signal GTF support.
+  Base EDID: CVT timings are used, but the EDID does not signal CVT support.
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

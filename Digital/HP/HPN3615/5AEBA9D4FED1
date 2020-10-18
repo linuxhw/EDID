@@ -70,7 +70,7 @@ Checksum: 0xa5
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Native detailed modes: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
@@ -115,8 +115,10 @@ Checksum: 0xda
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.250 - 111.856 kHz (Monitor: 112.000 - 112.000 kHz)
 
 EDID conformity: PASS

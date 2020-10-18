@@ -78,13 +78,13 @@ Block 0, Base EDID:
     Monitor ranges (Bare Limits): 48-76 Hz V, 83-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'VX2757'
   Extension blocks: 1
-Checksum: 0x4
+Checksum: 0x04
 
 ----------------
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Underscans PC formats by default
+  Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
@@ -138,9 +138,12 @@ Checksum: 0xe6
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.625 - 83.840 kHz (Monitor: 83.000 - 83.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

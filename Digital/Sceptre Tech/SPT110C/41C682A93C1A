@@ -31,7 +31,7 @@ Block 0, Base EDID:
     Image size is variable
     Gamma: 2.20
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
     Supports GTF timings within operating range
   Color Characteristics:
     Red  : 0.6357, 0.3486
@@ -128,6 +128,11 @@ Checksum: 0x9a
 
 ----------------
 
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+
 Failures:
 
 Block 0, Base EDID:
@@ -138,8 +143,9 @@ Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 95.
   Video Data Block: Duplicate VIC 94.
   Vendor-Specific Data Block (HDMI): HDMI VSDB Max TMDS rate is > 340.
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 30.000 - 160.000 kHz)
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

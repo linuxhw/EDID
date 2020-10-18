@@ -121,12 +121,12 @@ Block 2, DisplayID Extension Block:
   Extension Count: 0
   Display Product Type: Standalone display device
   Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD 5:  5120x1440   60.000 Hz   0:0    88.860 kHz 469.180 MHz (aspect undefined, no 3D stereo, preferred)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync  10 Vback  28 Vpol N
-    DTD 6:  5120x1440   30.000 Hz   0:0    43.830 kHz 231.420 MHz (aspect undefined, no 3D stereo, preferred)
-                 Hfront   48 Hsync  21 Hback  91 Hpol P
-                 Vfront    3 Vsync  10 Vback   8 Vpol N
+    DTD:  5120x1440   60.000 Hz   0:0    88.860 kHz 469.180 MHz (aspect undefined, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback  80 Hpol P
+               Vfront    3 Vsync  10 Vback  28 Vpol N
+    DTD:  5120x1440   30.000 Hz   0:0    43.830 kHz 231.420 MHz (aspect undefined, no 3D stereo, preferred)
+               Hfront   48 Hsync  21 Hback  91 Hpol P
+               Vfront    3 Vsync  10 Vback   8 Vpol N
   Checksum: 0xef
 Checksum: 0x90
 
@@ -134,8 +134,11 @@ Checksum: 0x90
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 30.000 - 60.317 Hz (Monitor: 48.000 - 61.000 Hz)
 
 Failures:
@@ -149,7 +152,11 @@ Block 1, CTA-861 Extension Block:
 Block 2, DisplayID Extension Block:
   Video Timing Modes Type 1 - Detailed Timings Data Block: Unknown aspect 0x08.
   Video Timing Modes Type 1 - Detailed Timings Data Block: Unknown aspect 0x08.
-All Blocks:
-  CVT timings are used, but the EDID does not signal CVT support.
+EDID:
+  Base EDID: CVT timings are used, but the EDID does not signal CVT support.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
 
 EDID conformity: FAIL

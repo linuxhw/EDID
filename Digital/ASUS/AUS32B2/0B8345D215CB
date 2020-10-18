@@ -112,7 +112,7 @@ Block 1, CTA-861 Extension Block:
     YCbCr quantization: Selectable (via AVI YQ)
     RGB quantization: Selectable (via AVI Q)
     PT scan behavior: No Data
-    IT scan behavior: Supports both over- and underscan
+    IT scan behavior: IT video formats not supported
     CE scan behavior: CE video formats not supported
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
@@ -141,7 +141,7 @@ Block 1, CTA-861 Extension Block:
     YCbCr quantization: Selectable (via AVI YQ)
     RGB quantization: Selectable (via AVI Q)
     PT scan behavior: Always Overscanned
-    IT scan behavior: Supports both over- and underscan
+    IT scan behavior: Always Overscanned
     CE scan behavior: Always Overscanned
   Detailed Timing Descriptors:
     DTD 3:  2560x1440   99.946 Hz  16:9   150.919 kHz 410.500 MHz (697 mm x 393 mm)
@@ -150,14 +150,19 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  2560x1440  119.998 Hz  16:9   182.996 kHz 497.750 MHz (697 mm x 393 mm)
                  Hfront   48 Hsync  32 Hback  80 Hpol P
                  Vfront    3 Vsync   5 Vback  77 Vpol N
-Checksum: 0x0
+Checksum: 0x00
 
 ----------------
 
 Warnings:
 
-All Blocks:
-  Some timings are out of range of the Monitor Ranges:
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.250 - 214.558 kHz (Monitor: 222.000 - 222.000 kHz)
 
 Failures:
@@ -165,5 +170,7 @@ Failures:
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI): HDMI VSDB Max TMDS rate is > 340.
   Vendor-Specific Data Block (HDMI): The HDMI Specification uses EDID 1.3, not 1.4.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

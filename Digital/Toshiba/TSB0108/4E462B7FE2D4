@@ -32,7 +32,7 @@ Block 0, Base EDID:
     Maximum image size: 105 cm x 59 cm
     Gamma: 2.20
     RGB color display
-    First detailed timing is preferred timing
+    First detailed timing is the preferred timing
   Color Characteristics:
     Red  : 0.6250, 0.3398
     Green: 0.2802, 0.5947
@@ -108,7 +108,7 @@ Block 1, CTA-861 Extension Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
     PT scan behavior: Supports both over- and underscan
-    IT scan behavior: Always Overscanned
+    IT scan behavior: Supports both over- and underscan
     CE scan behavior: Supports both over- and underscan
   Detailed Timing Descriptors:
     DTD 3:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz (708 mm x 398 mm)
@@ -128,6 +128,13 @@ Block 1, CTA-861 Extension Block:
 Checksum: 0x9c
 
 ----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
