@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 14 c8 14 00 00 00 00
+1a 15 01 04 80 22 13 78 0a 4e 4d 9e 57 54 91 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 78 1d 56 c2 50 00 26 30 3b 27
+36 00 58 c2 10 00 00 1a a5 13 56 c2 50 00 26 30
+3b 27 36 00 58 c2 10 00 00 1a 00 00 00 fe 00 56
+58 57 37 56 80 31 35 36 57 42 33 20 00 00 00 00
+00 00 41 31 96 51 00 00 00 01 01 0a 20 20 00 81
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CPT
+    Model: 5320
+    Made in: week 26 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Color depth is undefined
+    Digital interface is not defined
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6181, 0.3398
+    Green: 0.3310, 0.5683
+    Blue : 0.1494, 0.0585
+    White: 0.3154, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.999 Hz 683:384  48.359 kHz  75.440 MHz (344 mm x 194 mm)
+                 Hfront   59 Hsync  39 Hback  96 Hpol P
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+    DTD 2:  1366x768    39.997 Hz 683:384  32.237 kHz  50.290 MHz (344 mm x 194 mm)
+                 Hfront   59 Hsync  39 Hback  96 Hpol P
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+    Alphanumeric Data String: 'VXW7V'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 96 51 00 00 00 01 01 0a 20 20 '....A1.Q......  '
+Checksum: 0x81
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

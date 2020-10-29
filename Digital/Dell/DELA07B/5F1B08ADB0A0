@@ -1,0 +1,138 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 7b a0 4c 4a 41 30
+31 15 01 04 a5 34 20 78 3a ee 95 a3 54 4c 99 26
+0f 50 54 a1 08 00 81 40 81 80 a9 40 b3 00 d1 c0
+01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 06 44 21 00 00 1a 00 00 00 ff 00 59 31 48
+35 54 31 42 53 30 41 4a 4c 0a 00 00 00 fc 00 44
+45 4c 4c 20 55 32 34 31 32 4d 0a 20 00 00 00 fd
+00 32 3d 1e 53 11 00 0a 20 20 20 20 20 20 00 8f
+
+00 ff ff ff ff ff ff 00 30 ae 00 b8 2f 8c f5 b1
+0f 1b 01 03 80 06 05 78 1e ee 91 a3 54 4c 99 26
+0f 50 54 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 68 9c 40 50 b0 a0 3f 50 08 20
+18 0c 3c 32 00 00 00 18 8c 69 40 74 b0 a0 3f 50
+18 20 18 0c 3c 32 00 00 00 18 00 00 00 fc 00 4d
+52 0a 20 20 20 20 20 20 20 20 20 20 00 00 00 fd
+00 3c 5a 1f 87 3c 00 0a 20 20 20 20 20 20 01 b8
+
+02 03 28 02 65 03 0c 00 10 00 67 d8 5d c4 01 51
+80 00 75 5c 12 ca 01 07 65 25 cb ae ed 10 58 6d
+92 98 3a 59 06 72 e4 25 68 9c 40 50 b0 a0 3f 50
+08 20 18 0c 3c 32 00 00 00 18 8c 69 40 74 b0 a0
+3f 50 18 20 18 0c 3c 32 00 00 00 18 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 b4
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 41083
+    Serial Number: ...
+    Made in: week 49 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 52 cm x 32 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.950 Hz   8:5    74.038 kHz 154.000 MHz (518 mm x 324 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   6 Vback  26 Vpol N
+    Display Product Serial Number: ...
+    Display Product Name: 'DELL U2412M'
+  Display Range Limits:
+    Monitor ranges (GTF): 50-61 Hz V, 30-83 kHz H, max dotclock 170 MHz
+Checksum: 0x8f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 00 b8 2f 8c f5 b1 '........0.../...'
+  0f 1b 01 03 80 06 05 78 1e ee 91 a3 54 4c 99 26 '.......x....TL.&'
+  0f 50 54 00 00 00 00 00 00 00 00 00 00 00 00 00 '.PT.............'
+  00 00 00 00 00 00 68 9c 40 50 b0 a0 3f 50 08 20 '......h.@P..?P. '
+  18 0c 3c 32 00 00 00 18 8c 69 40 74 b0 a0 3f 50 '..<2.....i@t..?P'
+  18 20 18 0c 3c 32 00 00 00 18 00 00 00 fc 00 4d '. ..<2.........M'
+  52 0a 20 20 20 20 20 20 20 20 20 20 00 00 00 fd 'R.          ....'
+  00 3c 5a 1f 87 3c 00 0a 20 20 20 20 20 20 01 b8 '.<Z..<..      ..'
+Checksum: 0xb8
+
+----------------
+
+Block 2, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 2
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 405 MHz
+    SCDC Present
+  Vendor-Specific Data Block (Microsoft), OUI CA-12-5C:
+    01 07 65 25 cb ae ed 10 58 6d 92 98 3a 59 06 72 '..e%....Xm..:Y.r'
+    e4 25                                           '.%'
+  Detailed Timing Descriptors:
+    DTD 2:  2880x1440   90.000 Hz   2:1   135.270 kHz 400.400 MHz (60 mm x 50 mm)
+                 Hfront    8 Hsync  32 Hback  40 Hpol N
+                 Vfront   49 Vsync   8 Vback   6 Vpol N
+    DTD 3:  2880x1440   60.005 Hz   2:1    90.187 kHz 270.200 MHz (60 mm x 50 mm)
+                 Hfront   24 Hsync  32 Hback  60 Hpol N
+                 Vfront   49 Vsync   8 Vback   6 Vpol N
+Checksum: 0xb4
+
+----------------
+
+Warnings:
+
+Block 2, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 90.000 Hz (Monitor: 50.000 - 61.000 Hz)
+    Horizontal Freq: 31.466 - 135.270 kHz (Monitor: 30.000 - 83.000 kHz)
+    Maximum Clock: 400.400 MHz (Monitor: 170.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Base EDID: EDID specified 0 extension block(s), but found 2 extension block(s).
+Block 1, Base EDID:
+  Unknown Extension Block.
+Block 2, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI): The HDMI Specification uses EDID 1.3, not 1.4.
+  Detailed Timing Descriptor #2: Mismatch of image size 60x50 mm vs display size 520x320 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 60x50 mm vs display size 520x320 mm.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

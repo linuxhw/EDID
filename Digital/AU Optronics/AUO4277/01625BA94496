@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 77 42 00 00 00 00
+01 11 01 03 90 21 15 78 0a 90 b5 99 58 52 8e 26
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 32 2a a0 16 52 84 0c 30 40 20
+33 00 4b cf 10 00 00 1a 22 1c a0 16 52 84 0c 30
+40 20 33 00 4b cf 10 00 00 1a 00 00 00 fe 00 57
+50 35 37 36 80 42 31 35 34 50 57 34 00 00 00 00
+00 00 00 00 00 00 00 00 00 02 01 0a 20 20 00 89
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 17015
+    Made in: week 1 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5996, 0.3447
+    Green: 0.3203, 0.5546
+    Blue : 0.1503, 0.1201
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    60.002 Hz   8:5    54.721 kHz 108.020 MHz (331 mm x 207 mm)
+                 Hfront   64 Hsync  32 Hback 438 Hpol P
+                 Vfront    3 Vsync   3 Vback   6 Vpol N
+    DTD 2:  1440x900    40.005 Hz   8:5    36.484 kHz  72.020 MHz (331 mm x 207 mm)
+                 Hfront   64 Hsync  32 Hback 438 Hpol P
+                 Vfront    3 Vsync   3 Vback   6 Vpol N
+    Alphanumeric Data String: 'WP576'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 02 01 0a 20 20 '..............  '
+Checksum: 0x89
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

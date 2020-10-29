@@ -1,0 +1,69 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 20 32 10 24 01 01 01 01
+00 14 01 03 68 40 24 78 2a c9 25 a3 57 53 a0 27
+0e 50 54 ad ce 00 81 80 81 c0 8b c0 95 00 b3 00
+01 01 01 01 01 01 1a 36 80 a0 70 38 1f 40 30 20
+25 00 80 68 21 00 00 1c 00 00 00 ff 00 0a 20 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fc 00 4c
+61 69 65 72 20 4c 45 44 20 54 56 0a 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 d3
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HAR
+    Model: 9232
+    Serial Number: ...
+    Made in: 2010
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate
+    Maximum image size: 64 cm x 36 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.3261, 0.6259
+    Blue : 0.1523, 0.0566
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    GTF     :  1360x768    60.000 Hz  16:9    47.700 kHz  84.715 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.934 Hz  16:9    66.587 kHz 138.500 MHz (640 mm x 360 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    2 Vsync   5 Vback  24 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: 'Laier LED TV'
+  Display Range Limits:
+    Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+Checksum: 0xd3
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Serial Number: Empty string.
+
+EDID conformity: FAIL

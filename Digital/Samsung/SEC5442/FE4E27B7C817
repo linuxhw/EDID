@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 42 54 00 00 00 00
+00 12 01 03 90 21 15 78 0a 87 f5 94 57 4f 8c 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a a0 18 52 84 0c 30 40 20
+33 00 4b cf 10 00 00 1a 30 2a a0 18 52 84 0c 30
+40 20 33 00 4b cf 10 00 00 1a 00 00 00 fe 00 59
+50 30 30 38 80 31 35 34 42 54 0a 20 00 00 00 00
+00 00 00 00 00 00 00 00 00 02 01 0a 20 20 00 83
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 21570
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5800, 0.3398
+    Green: 0.3095, 0.5498
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    59.930 Hz   8:5    54.656 kHz 108.000 MHz (331 mm x 207 mm)
+                 Hfront   64 Hsync  32 Hback 440 Hpol P
+                 Vfront    3 Vsync   3 Vback   6 Vpol N
+    DTD 2:  1440x900    59.930 Hz   8:5    54.656 kHz 108.000 MHz (331 mm x 207 mm)
+                 Hfront   64 Hsync  32 Hback 440 Hpol P
+                 Vfront    3 Vsync   3 Vback   6 Vpol N
+    Alphanumeric Data String: 'YP008'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 02 01 0a 20 20 '..............  '
+Checksum: 0x83
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

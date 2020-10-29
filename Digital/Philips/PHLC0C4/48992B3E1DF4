@@ -1,0 +1,104 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c c4 c0 59 c9 00 00
+26 18 01 03 80 35 1e 78 2a 9d e5 a6 54 54 9f 26
+0d 50 54 bd 4b 00 d1 fc 95 3c 61 7c 45 7c 31 7c
+d1 c0 81 80 95 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2b 21 00 00 1e fc 7e 80 88 70 38 12 40
+18 20 35 00 13 2b 21 00 00 1e 00 00 00 fc 00 50
+48 4c 20 32 34 32 47 35 0a 20 20 20 00 00 00 fd
+00 32 92 1e a0 21 00 0a 20 20 20 20 20 20 01 7f
+
+02 01 04 00 fe 5b 80 a0 70 38 35 40 30 20 35 00
+13 2b 21 00 00 1e a9 65 80 a0 70 38 3a 40 30 20
+35 00 13 2b 21 00 00 1e 86 6f 80 a0 70 38 40 40
+30 20 35 00 13 2b 21 00 00 1e 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 d0
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PHL
+    Model: 49348
+    Serial Number: ...
+    Made in: week 38 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 53 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3291
+    Green: 0.3310, 0.6220
+    Blue : 0.1513, 0.0527
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    Apple   :   640x480    66.667 Hz   4:3    35.000 kHz  30.240 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    GTF     :  1920x1080  120.000 Hz  16:9   138.840 kHz 368.759 MHz
+    GTF     :  1440x904   120.000 Hz  16:10  116.280 kHz 230.700 MHz
+    GTF     :  1024x768   120.000 Hz   4:3    98.760 kHz 139.054 MHz
+    GTF     :   800x600   120.000 Hz   4:3    77.160 kHz  83.950 MHz
+    GTF     :   640x480   119.999 Hz   4:3    61.800 kHz  52.406 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (531 mm x 299 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 2:  1920x1080  144.001 Hz  16:9   158.113 kHz 325.080 MHz (531 mm x 299 mm)
+                 Hfront   24 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  10 Vpol P
+    Display Product Name: 'PHL 242G5'
+  Display Range Limits:
+    Monitor ranges (GTF): 50-146 Hz V, 30-160 kHz H, max dotclock 330 MHz
+  Extension blocks: 1
+Checksum: 0x7f
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 1
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   99.930 Hz  16:9   113.221 kHz 235.500 MHz (531 mm x 299 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  45 Vpol P
+    DTD 4:  1920x1080  109.947 Hz  16:9   125.120 kHz 260.250 MHz (531 mm x 299 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  50 Vpol P
+    DTD 5:  1920x1080  119.982 Hz  16:9   137.260 kHz 285.500 MHz (531 mm x 299 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  56 Vpol P
+Checksum: 0xd0
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+Failures:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 368.759 MHz (Monitor: 330.000 MHz)
+
+EDID conformity: FAIL

@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 18 42 01 00 00 00
+30 14 01 03 80 2c 19 78 ee 9e 70 a6 55 4b 9a 25
+13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3c 2e 40 00 62 84 22 30 18 50
+13 00 bb f9 10 00 00 00 00 00 00 fc 00 48 50 20
+54 6f 75 63 68 53 6d 61 72 74 00 00 00 fc 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 0f
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 4e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 16920
+    Serial Number: ...
+    Made in: week 48 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 44 cm x 25 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3330
+    Green: 0.2958, 0.6035
+    Blue : 0.1455, 0.0771
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.002 Hz  16:9    56.042 kHz 118.360 MHz (analog composite, sync-on-green, 443 mm x 249 mm)
+                 Hfront   24 Hsync  80 Hback 408 Hpol N
+                 Vfront    1 Vsync   3 Vback  30 Vpol N
+    Display Product Name: 'HP TouchSmart'
+    Display Product Name: ''
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 0a 20 20 20 20 20 20 20 20 20 20 20 20 '....            '
+Checksum: 0x4e
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Name: Empty string.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

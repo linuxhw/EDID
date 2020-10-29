@@ -1,0 +1,56 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 a9 a2 96 00 00 00 00
+ff 17 01 04 a5 22 13 78 02 12 a1 a7 54 53 99 26
+0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2a 76 40 c4 b0 54 14 60 2c 04
+91 00 58 c1 10 00 00 1e 88 5e 40 c4 b0 54 14 60
+2c 04 91 00 58 c1 10 00 00 1e 00 00 00 fd 00 2e
+3d 4c 64 1e 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 56 58 31 36 54 30 32 30 47 30 30 0a 00 76
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: MEI
+    Model: 38562
+    Model year: 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6523, 0.3291
+    Green: 0.3242, 0.5996
+    Blue : 0.1503, 0.0449
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2880x1620   59.965 Hz  16:9    98.342 kHz 302.500 MHz (344 mm x 193 mm)
+                 Hfront   44 Hsync   4 Hback 148 Hpol P
+                 Vfront    9 Vsync   1 Vback  10 Vpol P
+    DTD 2:  2880x1620   47.972 Hz  16:9    78.674 kHz 242.000 MHz (344 mm x 193 mm)
+                 Hfront   44 Hsync   4 Hback 148 Hpol P
+                 Vfront    9 Vsync   1 Vback  10 Vpol P
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 46-61 Hz V, 76-100 kHz H, max dotclock 300 MHz
+    Display Product Name: 'VVX16T020G00'
+Checksum: 0x76
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 302.500 MHz (Monitor: 300.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+EDID conformity: PASS

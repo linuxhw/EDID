@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 14 bf 14 00 00 00 00
+18 13 01 03 80 22 13 78 0a 4e 4d 9e 57 54 91 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 78 1d 56 c2 50 00 26 30 3b 27
+5a 00 58 c1 10 00 00 1a 78 1d 56 c2 50 00 26 30
+3b 27 5a 00 58 c1 10 00 00 1a 00 00 00 fe 00 47
+35 32 36 4a 80 31 35 36 57 41 31 20 00 00 00 00
+00 0c 12 17 1e 3d 67 a0 ff 01 01 0a 20 20 00 96
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CPT
+    Model: 5311
+    Made in: week 24 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6181, 0.3398
+    Green: 0.3310, 0.5683
+    Blue : 0.1494, 0.0585
+    White: 0.3154, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.999 Hz 683:384  48.359 kHz  75.440 MHz (344 mm x 193 mm)
+                 Hfront   59 Hsync  39 Hback  96 Hpol P
+                 Vfront    5 Vsync  10 Vback  23 Vpol N
+    DTD 2:  1366x768    59.999 Hz 683:384  48.359 kHz  75.440 MHz (344 mm x 193 mm)
+                 Hfront   59 Hsync  39 Hback  96 Hpol P
+                 Vfront    5 Vsync  10 Vback  23 Vpol N
+    Alphanumeric Data String: 'G526J'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 0c 12 17 1e 3d 67 a0 ff 01 01 0a 20 20 '.......=g.....  '
+Checksum: 0x96
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d f2 44 52 00 00 00 00
+0d 15 01 03 80 1d 10 78 0a 82 15 a0 58 52 90 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 56 6a 50 00 19 30 30 20
+36 00 25 a4 10 00 00 18 12 1b 56 6a 50 00 11 30
+30 20 36 00 25 a4 10 00 00 18 00 00 00 fe 00 41
+55 4f 20 20 20 20 20 20 20 20 20 0a 00 00 00 fe
+00 42 31 33 33 58 57 30 33 20 56 34 20 0a 00 07
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: COR
+    Model: 21060
+    Made in: week 13 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 16 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6269, 0.3437
+    Green: 0.3203, 0.5644
+    Blue : 0.1445, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.368 Hz 683:384  47.079 kHz  69.300 MHz (293 mm x 164 mm)
+                 Hfront   48 Hsync  32 Hback  26 Hpol N
+                 Vfront    3 Vsync   6 Vback  16 Vpol N
+    DTD 2:  1366x768    59.973 Hz 683:384  47.079 kHz  69.300 MHz (293 mm x 164 mm)
+                 Hfront   48 Hsync  32 Hback  26 Hpol N
+                 Vfront    3 Vsync   6 Vback   8 Vpol N
+    Alphanumeric Data String: 'AUO         '
+    Alphanumeric Data String: 'B133XW03 V4 '
+Checksum: 0x07
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 92 08 00 00 00 00
+14 1d 01 04 a5 1c 12 78 02 ab 10 a3 54 4b 9b 27
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 7a 50 70 a0 80 a0 28 50 30 20
+3a 00 13 b7 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42
+4f 45 20 58 53 0a 20 20 20 20 20 20 00 00 00 fe
+00 54 56 31 33 30 57 54 4d 2d 4e 48 30 0a 00 d4
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2194
+    Made in: week 20 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 28 cm x 18 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6386, 0.3300
+    Green: 0.2949, 0.6083
+    Blue : 0.1523, 0.0634
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2160x1440   60.001 Hz   3:2    88.802 kHz 206.020 MHz (275 mm x 183 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync  10 Vback  27 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1a '................'
+    Alphanumeric Data String: 'BOE XS'
+    Alphanumeric Data String: 'TV130WTM-NH0'
+Checksum: 0xd4
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

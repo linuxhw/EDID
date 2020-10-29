@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af ec 10 00 00 00 00
+00 1a 01 04 95 22 13 78 02 bb f5 94 55 54 90 27
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 14 1e 56 ce 50 00 30 30 08 0a
+36 00 58 c1 10 00 00 1a 14 1e 56 f0 50 00 e6 30
+08 0a 36 00 58 c1 10 00 00 1a 00 00 00 fe 00 30
+58 44 56 47 80 42 31 35 36 58 54 4b 00 00 00 00
+00 01 41 22 96 01 11 00 00 09 01 0a 20 20 00 61
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 4332
+    Made in: 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5800, 0.3349
+    Green: 0.3300, 0.5654
+    Blue : 0.1552, 0.1396
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.027 Hz 683:384  48.982 kHz  77.000 MHz (344 mm x 193 mm)
+                 Hfront    8 Hsync  10 Hback 188 Hpol P
+                 Vfront    3 Vsync   6 Vback  39 Vpol N
+    DTD 2:  1366x768    48.041 Hz 683:384  47.945 kHz  77.000 MHz (344 mm x 193 mm)
+                 Hfront    8 Hsync  10 Hback 222 Hpol P
+                 Vfront    3 Vsync   6 Vback 221 Vpol N
+    Alphanumeric Data String: '0XDVG'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 01 41 22 96 01 11 00 00 09 01 0a 20 20 '....A"........  '
+Checksum: 0x61
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,66 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4a 8b 82 24 01 00 00 00
+10 13 01 03 89 2f 1a 78 eb a2 c0 a6 55 49 99 26
+13 50 54 21 4e 00 81 c0 95 c0 a9 c0 b3 c0 d1 c0
+01 01 01 01 01 01 1a 36 80 a0 70 38 1f 40 30 20
+35 00 dd 0c 11 00 00 1e 00 00 00 ff 00 30 30 30
+30 30 31 0a 20 49 49 20 20 20 00 00 00 fc 00 4c
+65 6e 6f 76 6f 20 49 43 41 33 30 30 00 00 00 fc
+00 20 20 20 20 20 20 20 20 20 20 20 20 20 00 bf
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: RTK
+    Model: 9346
+    Serial Number: ...
+    Made in: week 16 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 47 cm x 26 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+    Supports GTF timings within operating range
+  Color Characteristics:
+    Red  : 0.6503, 0.3339
+    Green: 0.2851, 0.5996
+    Blue : 0.1513, 0.0742
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    GTF     :  1440x816    60.000 Hz  16:9    50.700 kHz  96.533 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    GTF     :  1680x952    60.000 Hz  16:9    59.160 kHz 132.518 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.934 Hz  16:9    66.587 kHz 138.500 MHz (477 mm x 268 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: 'Lenovo ICA300'
+    Display Product Name: '             '
+Checksum: 0xbf
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x08.
+  Display Product Name: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

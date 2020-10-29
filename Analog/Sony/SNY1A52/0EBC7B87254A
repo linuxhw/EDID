@@ -1,0 +1,61 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d d9 52 1a 01 01 01 01
+1a 0f 01 03 08 1e 17 78 6a 9d 9e 99 58 4c 93 26
+21 4c 54 a1 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 30 e4 10 00 00 18 00 00 00 fd 00 3b 3d 1e
+32 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50
+43 56 44 2d 31 35 58 41 31 0a 20 20 00 00 00 fe
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 24
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SNY
+    Model: 6738
+    Serial Number: ...
+    Made in: week 26 of 2005
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Sync: Separate
+    Maximum image size: 30 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5996, 0.3447
+    Green: 0.2998, 0.5751
+    Blue : 0.1503, 0.1298
+    White: 0.2998, 0.3300
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz (304 mm x 228 mm)
+                 Hfront   24 Hsync 136 Hback 160 Hpol N
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+  Display Range Limits:
+    Monitor ranges (GTF): 59-61 Hz V, 30-50 kHz H, max dotclock 80 MHz
+    Display Product Name: 'PCVD-15XA1'
+    Alphanumeric Data String: ''
+Checksum: 0x24
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Empty string.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
+
+EDID conformity: FAIL

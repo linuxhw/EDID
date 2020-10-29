@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 64 06 23 31 38 31 31
+24 11 01 03 80 1d 12 78 0a 87 f5 94 57 4f 8c 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2a 1c 00 a8 50 20 1e 30 10 30
+22 00 1f b4 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 52
+50 37 37 34 a3 31 33 33 45 57 44 44 00 00 00 fe
+00 08 0c 10 14 28 50 7f d8 01 01 0a 20 20 00 d6
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LCD
+    Model: 8966
+    Serial Number: ...
+    Made in: week 36 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5800, 0.3398
+    Green: 0.3095, 0.5498
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.991 Hz   8:5    49.793 kHz  72.100 MHz (287 mm x 180 mm)
+                 Hfront   16 Hsync  48 Hback 104 Hpol N
+                 Vfront    2 Vsync   2 Vback  26 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'RP774'
+    Alphanumeric Data String: ''
+Checksum: 0xd6
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

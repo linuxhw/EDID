@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 8d 01 00 00 00 00
+00 12 01 03 90 21 15 78 0a ba 95 97 59 55 8c 27
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d6 1a 00 76 50 20 14 30 18 20
+44 00 4b cf 10 00 00 1b d6 1a 00 76 50 20 14 30
+18 20 44 00 4b cf 10 00 00 1b 00 00 00 fe 00 4a
+36 35 36 48 80 31 35 34 57 58 37 0a 00 00 00 00
+00 3c 58 74 90 ac c8 e4 ff 01 01 0a 20 20 00 be
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 397
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5917, 0.3505
+    Green: 0.3339, 0.5488
+    Blue : 0.1542, 0.1298
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.929 Hz   8:5    49.142 kHz  68.700 MHz (331 mm x 207 mm)
+                 Hfront   24 Hsync  32 Hback  62 Hpol P
+                 Vfront    4 Vsync   4 Vback  12 Vpol N
+    DTD 2:  1280x800    59.929 Hz   8:5    49.142 kHz  68.700 MHz (331 mm x 207 mm)
+                 Hfront   24 Hsync  32 Hback  62 Hpol P
+                 Vfront    4 Vsync   4 Vback  12 Vpol N
+    Alphanumeric Data String: 'J656H'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 3c 58 74 90 ac c8 e4 ff 01 01 0a 20 20 '...<Xt........  '
+Checksum: 0xbe
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

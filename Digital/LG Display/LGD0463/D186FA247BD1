@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 63 04 00 00 00 00
+00 18 01 04 95 1a 0e 78 02 2d b5 9b 5a 53 8e 26
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1a 36 80 a0 70 38 1f 40 30 20
+35 00 00 90 10 00 00 1a 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 31 36 57 46 31 2d 53 50 41 32 00 af
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1123
+    Made in: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6054, 0.3535
+    Green: 0.3271, 0.5556
+    Blue : 0.1503, 0.1162
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.934 Hz  16:9    66.587 kHz 138.500 MHz (256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP116WF1-SPA2'
+Checksum: 0xaf
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

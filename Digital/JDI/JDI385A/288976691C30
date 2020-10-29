@@ -1,0 +1,57 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 28 89 5a 38 00 00 00 00
+00 1b 01 04 a5 1d 11 78 03 c9 33 a4 53 4d 99 27
+0e 4e 52 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 25 cc 00 50 f0 70 3e 80 08 20
+08 0c 26 a5 10 00 00 1a 51 a3 00 50 f0 70 3e 80
+08 20 08 0c 26 a5 10 00 00 1a 00 00 00 fe 00 4a
+44 49 20 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4c 50 4d 31 33 33 4d 33 38 35 41 20 20 00 73
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: JDI
+    Model: 14426
+    Made in: 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6435, 0.3242
+    Green: 0.3027, 0.5986
+    Blue : 0.1523, 0.0576
+    White: 0.3046, 0.3232
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.999 Hz  16:9   133.319 kHz 522.610 MHz (294 mm x 165 mm)
+                 Hfront    8 Hsync  32 Hback  40 Hpol P
+                 Vfront   48 Vsync   8 Vback   6 Vpol N
+    DTD 2:  3840x2160   48.000 Hz  16:9   106.656 kHz 418.090 MHz (294 mm x 165 mm)
+                 Hfront    8 Hsync  32 Hback  40 Hpol P
+                 Vfront   48 Vsync   8 Vback   6 Vpol N
+    Alphanumeric Data String: 'JDI          '
+    Alphanumeric Data String: 'LPM133M385A  '
+Checksum: 0x73
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

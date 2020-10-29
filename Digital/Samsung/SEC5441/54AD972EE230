@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 41 54 00 00 00 00
+00 15 01 04 90 1d 10 78 0a 4b c5 9c 57 54 8c 27
+17 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b2 1b 56 82 50 00 16 30 30 20
+55 00 25 a5 10 00 00 1a d3 13 56 dc 50 00 20 30
+30 20 55 00 25 a5 10 00 00 1a 00 00 00 fe 00 58
+30 38 58 34 80 31 33 33 41 54 0a 20 00 00 00 00
+00 00 41 21 94 00 10 00 00 01 01 0a 20 20 00 bd
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 21569
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 29 cm x 16 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6103, 0.3398
+    Green: 0.3300, 0.5498
+    Blue : 0.1552, 0.0898
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.991 Hz 683:384  47.393 kHz  70.900 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  50 Hpol P
+                 Vfront    5 Vsync   5 Vback  12 Vpol N
+    DTD 2:  1366x768    39.998 Hz 683:384  31.999 kHz  50.750 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback 140 Hpol P
+                 Vfront    5 Vsync   5 Vback  22 Vpol N
+    Alphanumeric Data String: 'X08X4'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 94 00 10 00 00 01 01 0a 20 20 '....A!........  '
+Checksum: 0xbd
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

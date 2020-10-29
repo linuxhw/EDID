@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af ed 51 3f 59 55 f9
+1c 1a 01 04 a5 22 13 78 02 96 85 a2 58 54 9f 27
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 98 71 80 c8 70 38 3e 40 6c 30
+aa 00 58 c1 10 00 00 1a 98 71 80 c8 70 38 b4 44
+6c 30 aa 00 58 c1 10 00 00 1a 00 00 00 fe 00 48
+50 4a 47 4b 80 42 31 35 36 48 54 4e 00 00 00 00
+00 02 81 02 a8 00 11 00 00 0b 01 0a 20 20 00 e5
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 20973
+    Serial Number: ...
+    Made in: week 28 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6347, 0.3447
+    Green: 0.3291, 0.6230
+    Blue : 0.1542, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  120.114 Hz  16:9   137.170 kHz 290.800 MHz (344 mm x 193 mm)
+                 Hfront  108 Hsync  48 Hback  44 Hpol P
+                 Vfront   10 Vsync  10 Vback  42 Vpol N
+    DTD 2:  1920x1080   60.057 Hz  16:9   137.170 kHz 290.800 MHz (344 mm x 193 mm)
+                 Hfront  108 Hsync  48 Hback  44 Hpol P
+                 Vfront   10 Vsync  10 Vback 1184 Vpol N
+    Alphanumeric Data String: 'HPJGK'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 81 02 a8 00 11 00 00 0b 01 0a 20 20 '..............  '
+Checksum: 0xe5
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

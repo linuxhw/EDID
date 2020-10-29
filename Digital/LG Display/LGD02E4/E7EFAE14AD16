@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 e4 02 00 00 00 00
+00 14 01 03 80 24 14 78 0a 3e 55 9e 5e 58 9a 26
+1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 29 26 40 a0 60 84 1a 30 30 20
+35 00 6b cc 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 36 34 57 44 32 2d 54 4c 41 31 00 f0
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 740
+    Made in: 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 36 cm x 20 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6171, 0.3701
+    Green: 0.3466, 0.6035
+    Blue : 0.1494, 0.1064
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    59.941 Hz  16:9    55.506 kHz  97.690 MHz (363 mm x 204 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  18 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP164WD2-TLA1'
+Checksum: 0xf0
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

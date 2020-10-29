@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 14 b5 14 00 00 00 00
+18 14 01 03 80 22 13 78 0a 1b dd a1 55 4a 94 28
+18 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 78 1d 56 c2 50 00 26 30 3b 27
+5a 00 58 c1 10 00 00 18 00 00 00 0f 00 20 20 20
+20 20 20 20 20 18 a7 04 33 00 00 00 00 fe 00 43
+50 54 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 43 4c 41 41 31 35 36 57 41 30 31 41 20 00 8b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CPT
+    Model: 5301
+    Made in: week 24 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6289, 0.3330
+    Green: 0.2910, 0.5810
+    Blue : 0.1591, 0.0947
+    White: 0.3154, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.999 Hz 683:384  48.359 kHz  75.440 MHz (344 mm x 193 mm)
+                 Hfront   59 Hsync  39 Hback  96 Hpol N
+                 Vfront    5 Vsync  10 Vback  23 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 20 20 20 20 20 20 20 20 18 a7 04 33 00 '...        ...3.'
+    Alphanumeric Data String: 'CPT'
+    Alphanumeric Data String: 'CLAA156WA01A '
+Checksum: 0x8b
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

@@ -1,0 +1,106 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 00 b8 2f 8c f5 b1
+0f 1b 01 03 80 06 05 78 1e ee 91 a3 54 4c 99 26
+0f 50 54 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 68 9c 40 50 b0 a0 3f 50 08 20
+18 0c 3c 32 00 00 00 18 8c 69 40 74 b0 a0 3f 50
+18 20 18 0c 3c 32 00 00 00 18 00 00 00 fc 00 4d
+52 0a 20 20 20 20 20 20 20 20 20 20 00 00 00 fd
+00 3c 5a 1f 87 3c 00 0a 20 20 20 20 20 20 01 b8
+
+02 03 28 02 65 03 0c 00 10 00 67 d8 5d c4 01 51
+80 00 75 5c 12 ca 01 07 65 25 cb ae ed 10 58 6d
+92 98 3a 59 06 72 e4 25 68 9c 40 50 b0 a0 3f 50
+08 20 18 0c 3c 32 00 00 00 18 8c 69 40 74 b0 a0
+3f 50 18 20 18 0c 3c 32 00 00 00 18 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 b4
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 47104
+    Serial Number: ...
+    Made in: week 15 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 6 cm x 5 cm
+    Gamma: 2.20
+    Undefined display color type
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings:
+  Detailed Timing Descriptors:
+    DTD 1:  2880x1440   90.000 Hz   2:1   135.270 kHz 400.400 MHz (60 mm x 50 mm)
+                 Hfront    8 Hsync  32 Hback  40 Hpol N
+                 Vfront   49 Vsync   8 Vback   6 Vpol N
+    DTD 2:  2880x1440   60.005 Hz   2:1    90.187 kHz 270.200 MHz (60 mm x 50 mm)
+                 Hfront   24 Hsync  32 Hback  60 Hpol N
+                 Vfront   49 Vsync   8 Vback   6 Vpol N
+    Display Product Name: 'MR'
+  Display Range Limits:
+    Monitor ranges (GTF): 60-90 Hz V, 31-135 kHz H, max dotclock 600 MHz
+  Extension blocks: 1
+Checksum: 0xb8
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 2
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 405 MHz
+    SCDC Present
+  Vendor-Specific Data Block (Microsoft), OUI CA-12-5C:
+    01 07 65 25 cb ae ed 10 58 6d 92 98 3a 59 06 72 '..e%....Xm..:Y.r'
+    e4 25                                           '.%'
+  Detailed Timing Descriptors:
+    DTD 3:  2880x1440   90.000 Hz   2:1   135.270 kHz 400.400 MHz (60 mm x 50 mm)
+                 Hfront    8 Hsync  32 Hback  40 Hpol N
+                 Vfront   49 Vsync   8 Vback   6 Vpol N
+    DTD 4:  2880x1440   60.005 Hz   2:1    90.187 kHz 270.200 MHz (60 mm x 50 mm)
+                 Hfront   24 Hsync  32 Hback  60 Hpol N
+                 Vfront   49 Vsync   8 Vback   6 Vpol N
+Checksum: 0xb4
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (6x5 is smaller than 10x10 cm).
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+
+EDID conformity: FAIL

@@ -1,0 +1,133 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac c1 40 50 37 37 32
+2e 1a 01 04 b5 46 28 78 3a ef 95 a3 54 35 b5 26
+0f 50 54 a5 4b 00 d1 00 d1 c0 b3 00 a9 40 81 80
+81 00 71 4f e1 c0 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 ba 89 21 00 00 1a 00 00 00 ff 00 36 58 46
+30 44 36 42 45 32 37 37 50 0a 00 00 00 fc 00 44
+45 4c 4c 20 55 50 33 32 31 36 51 0a 00 00 00 fd
+00 1d 4b 1f 8c 36 01 0a 20 20 20 20 20 20 01 31
+
+02 03 1d f1 50 10 1f 20 05 14 04 13 12 11 03 02
+16 15 07 06 01 23 09 1f 07 83 01 00 00 a3 66 00
+a0 f0 70 1f 80 30 20 35 00 ba 89 21 00 00 1a 56
+5e 00 a0 a0 a0 29 50 30 20 35 00 ba 89 21 00 00
+1a 02 3a 80 18 71 38 2d 40 58 2c 45 00 ba 89 21
+00 00 1e 01 1d 00 72 51 d0 1e 20 6e 28 55 00 ba
+89 21 00 00 1e 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 16577
+    Serial Number: ...
+    Made in: week 46 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 70 cm x 40 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2099, 0.7099
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x45:  1920x1200   59.885 Hz  16:10   74.556 kHz 193.250 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
+    DMT 0x15:  1152x864    75.000 Hz   4:3    67.500 kHz 108.000 MHz
+    DMT 0x54:  2048x1152   60.000 Hz  16:9    72.000 kHz 162.000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.997 Hz  16:9   133.312 kHz 533.250 MHz (698 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  54 Vpol N
+    Display Product Serial Number: ...
+    Display Product Name: 'DELL UP3216Q'
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 29-75 Hz V, 31-140 kHz H, max dotclock 540 MHz
+  Extension blocks: 1
+Checksum: 0x31
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+    VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
+    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC  22:  1440x576i   50.000 Hz  16:9    15.625 kHz  27.000 MHz
+    VIC  21:  1440x576i   50.000 Hz   4:3    15.625 kHz  27.000 MHz
+    VIC   7:  1440x480i   59.940 Hz  16:9    15.734 kHz  27.000 MHz
+    VIC   6:  1440x480i   59.940 Hz   4:3    15.734 kHz  27.000 MHz
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 2:  3840x2160   29.981 Hz  16:9    65.688 kHz 262.750 MHz (698 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 3:  2560x1440   59.951 Hz  16:9    88.787 kHz 241.500 MHz (698 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  33 Vpol N
+    DTD 4:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (698 mm x 393 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 5:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (698 mm x 393 mm)
+                 Hfront  110 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+Checksum: 0x9b
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.029 Hz (Monitor: 29.000 - 75.000 Hz)
+    Horizontal Freq: 15.625 - 133.312 kHz (Monitor: 31.000 - 140.000 kHz)
+
+EDID conformity: PASS

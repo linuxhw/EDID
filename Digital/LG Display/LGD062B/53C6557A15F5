@@ -1,0 +1,56 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 2b 06 00 00 00 00
+00 1c 01 04 95 22 13 78 03 38 d5 97 5e 59 8e 27
+1c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 29 36 80 a0 70 38 1f 40 30 20
+35 00 58 c2 10 00 00 1b 1b 24 80 a0 70 38 1f 40
+30 20 35 00 58 c2 10 00 00 1b 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 3d ff 0a 3c 7d 1c 14 29 7d 00 00 00 00 18
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1579
+    Made in: 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5898, 0.3701
+    Green: 0.3496, 0.5546
+    Blue : 0.1552, 0.1103
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.999 Hz  16:9    66.659 kHz 138.650 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 2:  1920x1080   39.998 Hz  16:9    44.438 kHz  92.430 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 3d ff 0a 3c 7d 1c 14 29 7d 00 00 00 '....=..<}..)}...'
+Checksum: 0x18
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

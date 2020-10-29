@@ -1,0 +1,79 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 35 94 01 90 01 00 00 00
+06 13 01 03 7f 47 28 78 ef b1 91 a3 54 45 97 25
+10 49 4a af ce 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 98 21 56 aa 51 00 1e 30 46 8f
+33 00 00 00 00 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 00 00 00 00 00 1e 20 1c 56 86 50 00
+20 30 0e 38 13 00 00 00 00 00 00 1e a9 1a 00 a0
+50 00 16 30 30 20 37 00 00 00 00 00 00 1a 00 61
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MLT
+    Model: 36865
+    Serial Number: ...
+    Made in: week 6 of 2009
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Configurable signal levels
+    Sync: Separate Composite SyncOnGreen Serration
+    Maximum image size: 71 cm x 40 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+    Supports GTF timings within operating range
+  Color Characteristics:
+    Red  : 0.6386, 0.3310
+    Green: 0.2695, 0.5908
+    Blue : 0.1464, 0.0634
+    White: 0.2851, 0.2900
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.139 Hz 683:384  47.991 kHz  86.000 MHz
+                 Hfront   70 Hsync 143 Hback 213 Hpol P
+                 Vfront    3 Vsync   3 Vback  24 Vpol P
+    DTD 2:  1360x768    60.015 Hz  85:48   47.712 kHz  85.500 MHz
+                 Hfront   64 Hsync 112 Hback 256 Hpol P
+                 Vfront    3 Vsync   6 Vback  18 Vpol P
+    DTD 3:  1366x768    60.000 Hz 683:384  48.000 kHz  72.000 MHz
+                 Hfront   14 Hsync  56 Hback  64 Hpol P
+                 Vfront    1 Vsync   3 Vback  28 Vpol P
+    DTD 4:  1280x768    59.995 Hz   5:3    47.396 kHz  68.250 MHz
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   7 Vback  12 Vpol N
+Checksum: 0x61
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #3: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #4: Mismatch of image size vs display size: image size is not set, but display size is.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

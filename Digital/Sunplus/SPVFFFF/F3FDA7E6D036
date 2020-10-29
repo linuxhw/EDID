@@ -1,0 +1,122 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4e 16 ff ff 01 00 00 00
+14 16 01 03 e8 26 1e 6b 2a 6c 55 a2 5a 4e 9b 23
+16 4f 54 af 08 00 b3 00 95 00 81 c0 71 40 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 78 2d 11 00 00 1e 00 00 00 fc 00 4d 6f 6e
+69 74 6f 72 20 54 56 0a 20 20 00 00 00 ff 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 ff
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 01 a7
+
+02 03 26 71 4c 10 1f 20 05 14 04 13 12 03 16 07
+01 23 09 7f 07 83 01 00 00 6c 03 0c 00 10 00 80
+2d 00 00 20 00 08 1d 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 b3
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SPV
+    Model: 65535
+    Serial Number: ...
+    Made in: week 20 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 38 cm x 30 cm
+    Gamma: 2.07
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6337, 0.3535
+    Green: 0.3076, 0.6054
+    Blue : 0.1376, 0.0869
+    White: 0.3095, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    GTF     :  1152x864    60.000 Hz   4:3    53.700 kHz  81.624 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (376 mm x 301 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    Display Product Name: 'Monitor TV'
+    Display Product Serial Number: ...
+    Display Product Serial Number: ''
+  Extension blocks: 1
+Checksum: 0xa7
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+    VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC  22:  1440x576i   50.000 Hz  16:9    15.625 kHz  27.000 MHz
+    VIC   7:  1440x480i   59.940 Hz  16:9    15.734 kHz  27.000 MHz
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 225 MHz
+  Detailed Timing Descriptors:
+    Detailed mode: 1d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '..................'
+Checksum: 0xb3
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x68.
+  Display Product Serial Number: Empty string.
+  Display Product Serial Number: Empty string.
+  Missing Display Range Limits Descriptor.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Pixelclock < 10 MHz, assuming invalid data 0x1d 0x00.
+EDID:
+  Base EDID: GTF timings are used, but the EDID does not signal GTF support.
+
+EDID conformity: FAIL

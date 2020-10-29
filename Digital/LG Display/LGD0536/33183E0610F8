@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 36 05 00 00 00 00
+00 1a 01 04 a5 1d 11 78 02 24 15 a3 59 55 a0 27
+0a 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2e 36 80 a0 70 38 1f 40 30 20
+35 00 26 a5 10 00 00 1a 5c 2b 80 a0 70 38 1f 40
+30 20 35 00 26 a5 10 00 00 1a 00 00 00 fe 00 36
+4d 44 33 4e 81 31 33 33 57 46 34 0a 00 00 00 00
+00 00 41 31 a8 01 10 00 00 0a 01 0a 20 20 00 56
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1334
+    Made in: 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6367, 0.3496
+    Green: 0.3330, 0.6250
+    Blue : 0.1523, 0.0400
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.020 Hz  16:9    66.683 kHz 138.700 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 2:  1920x1080   48.034 Hz  16:9    53.365 kHz 111.000 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    Alphanumeric Data String: '6MD3N'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 a8 01 10 00 00 0a 01 0a 20 20 '....A1........  '
+Checksum: 0x56
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

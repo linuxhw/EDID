@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d ea 75 4b 45 04 00
+02 12 01 03 80 40 28 78 28 8f 95 ad 4f 32 b2 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 1b 00 a0 50 20 17 30 30 20
+36 00 81 91 21 00 00 1a b0 68 00 a0 a0 40 2e 60
+30 20 36 00 81 91 21 00 00 1a 00 00 00 fc 00 57
+33 30 30 30 48 0a 20 20 20 20 20 20 00 00 00 fc
+00 0a 20 20 20 20 20 20 20 20 20 20 20 00 00 74
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 30186
+    Serial Number: ...
+    Made in: week 2 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 64 cm x 40 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6777, 0.3085
+    Green: 0.1982, 0.6982
+    Blue : 0.1464, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.910 Hz   8:5    49.306 kHz  71.000 MHz (641 mm x 401 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   6 Vback  14 Vpol N
+    DTD 2:  2560x1600   59.860 Hz   8:5    98.529 kHz 268.000 MHz (641 mm x 401 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   6 Vback  37 Vpol N
+    Display Product Name: 'W3000H'
+    Display Product Name: ''
+Checksum: 0x74
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing
+  Display Product Name: Empty string.
+  Display Product Name: Non-space after newline.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

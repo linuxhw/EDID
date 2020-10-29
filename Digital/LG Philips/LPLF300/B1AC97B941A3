@@ -1,0 +1,59 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 32 0c 00 f3 00 00 00 00
+00 11 01 03 80 21 15 78 0a 19 45 97 58 53 8b 28
+24 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 2f 90 d0 60 1a 0e 40 20 30
+13 00 4b cf 10 00 00 19 12 2f 90 d0 60 1a 0e 40
+20 30 13 00 4b cf 10 00 00 00 00 00 00 fe 00 58
+4b 33 30 39 00 31 35 34 57 45 32 0a 00 00 00 fe
+00 25 32 3f 48 67 8c b0 ff 02 01 0a 20 20 00 de
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LPL
+    Model: 62208
+    Made in: 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3447
+    Green: 0.3261, 0.5439
+    Blue : 0.1572, 0.1406
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   59.985 Hz   8:5    63.824 kHz 120.500 MHz (DE timing only, 331 mm x 207 mm)
+                 Hfront   32 Hsync  48 Hback 128 Hpol N
+                 Vfront    1 Vsync   3 Vback  10 Vpol N
+    DTD 2:  1680x1050   59.985 Hz   8:5    63.824 kHz 120.500 MHz (DE timing only, 331 mm x 207 mm)
+                 Hfront   32 Hsync  48 Hback 128 Hpol N
+                 Vfront    1 Vsync   3 Vback  10 Vpol N
+    SPWG Module Revision: 0
+    SPWG Descriptor #3:
+      SPWG PC Maker P/N: 'XK309'
+      SPWG LCD Supplier EEDID Revision: 0
+      SPWG Manufacturer P/N: '154WE2'
+    SPWG Descriptor #4:
+      SMBUS Values: 0x25 0x32 0x3f 0x48 0x67 0x8c 0xb0 0xff
+      LVDS Channels: 2
+      Panel Self Test Present
+Checksum: 0xde
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

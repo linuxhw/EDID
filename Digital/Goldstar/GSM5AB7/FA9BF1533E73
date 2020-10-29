@@ -1,0 +1,68 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d b7 5a 01 01 01 01
+01 18 01 03 80 30 1b 78 ea 31 35 a5 55 4e a1 26
+0c 50 54 a5 4b 00 71 4f 81 80 95 00 b3 00 a9 c0
+81 00 81 c0 90 40 02 3a 80 18 71 38 2d 40 58 2c
+45 00 e0 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+47 20 49 50 53 20 46 55 4c 4c 48 44 00 00 00 ff
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 66
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 23223
+    Serial Number: ...
+    Made in: week 1 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6445, 0.3349
+    Green: 0.3046, 0.6298
+    Blue : 0.1484, 0.0498
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x15:  1152x864    75.000 Hz   4:3    67.500 kHz 108.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x2a:  1400x1050   59.978 Hz   4:3    65.317 kHz 121.750 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (480 mm x 270 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 150 MHz
+    Display Product Name: 'LG IPS FULLHD'
+    Display Product Serial Number: ...
+Checksum: 0x66
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Serial Number: Empty string.
+
+EDID conformity: FAIL

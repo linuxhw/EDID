@@ -1,0 +1,86 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 10 40 a0 00 00 00 00
+10 1b 01 04 b5 21 15 78 02 0f 91 ae 52 43 b0 26
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 7c 80 40 50 b0 08 34 70 08 20
+68 08 4b cf 10 00 00 1a 00 00 00 fc 00 43 6f 6c
+6f 72 20 4c 43 44 0a 20 20 20 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 c4
+
+70 12 79 03 00 7f 81 3f fa 10 00 03 01 18 0f 28
+17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+4c 50 31 35 34 57 54 35 2d 53 4a 41 32 0a 20 00
+44 43 4e 39 32 38 32 30 30 4e 37 4d 4a 46 56 41
+51 0a 20 20 20 20 20 7f 81 29 fa 10 00 02 01 00
+11 00 00 02 90 03 43 04 3b 05 8f 07 60 09 dc 0d
+45 11 f9 18 78 21 78 2d fc 3f 6f 57 d5 7a 09 aa
+1d eb 7f 00 00 00 00 00 00 00 00 00 00 00 ca 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 41024
+    Made in: week 16 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2646, 0.6904
+    Blue : 0.1503, 0.0517
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2880x1800   60.001 Hz   8:5   111.122 kHz 328.920 MHz (331 mm x 207 mm)
+                 Hfront    8 Hsync  32 Hback  40 Hpol P
+                 Vfront   38 Vsync   8 Vback   6 Vpol N
+    Display Product Name: 'Color LCD'
+    Dummy Descriptor:
+    Dummy Descriptor:
+  Extension blocks: 1
+Checksum: 0xc4
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Standalone display device
+  Vendor-Specific Data Block (Apple):
+    fa 10 00 03 01 18 0f 28 17 00 00 00 00 00 00 00 '.......(........'
+    00 00 00 00 00 00 00 00 4c 50 31 35 34 57 54 35 '........LP154WT5'
+    2d 53 4a 41 32 0a 20 00 44 43 4e 39 32 38 32 30 '-SJA2. .DCN92820'
+    30 4e 37 4d 4a 46 56 41 51 0a 20 20 20 20 20    '0N7MJFVAQ.     '
+  Vendor-Specific Data Block (Apple):
+    fa 10 00 02 01 00 11 00 00 02 90 03 43 04 3b 05 '............C.;.'
+    8f 07 60 09 dc 0d 45 11 f9 18 78 21 78 2d fc 3f '..`...E...x!x-.?'
+    6f 57 d5 7a 09 aa 1d eb 7f                      'oW.z.....'
+  Checksum: 0xca
+Checksum: 0x90
+
+----------------
+
+Failures:
+
+Block 1, DisplayID Extension Block:
+  Vendor-Specific Data Block (Apple): OUI FA-10-00 is in the wrong byte order
+  Vendor-Specific Data Block (Apple): OUI FA-10-00 is in the wrong byte order
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+  DisplayID: Missing DisplayID Type I Detailed Timing Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 2d 12 00 00 00 00
+00 17 01 04 95 1d 11 78 02 bb f5 94 55 54 90 27
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3c 37 80 c0 70 38 20 40 30 64
+8e 00 25 a5 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 33 33 48 54 4e 30 31 2e 32 20 0a 00 87
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 4653
+    Made in: 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5800, 0.3349
+    Green: 0.3300, 0.5654
+    Blue : 0.1552, 0.1396
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.208 Hz  16:9    66.951 kHz 141.400 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync 100 Hback  44 Hpol N
+                 Vfront    8 Vsync  14 Vback  10 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B133HTN01.2 '
+Checksum: 0x87
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,127 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 d8 34 00 00 00 00 00
+20 1b 01 03 80 73 41 78 0a cf 74 a3 57 4c b0 23
+09 48 4c 20 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 08 e8 00 30 f2 70 5a 80 b0 58
+8a 00 55 50 21 00 00 1e 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fc 00 41
+56 54 20 47 43 35 31 33 0a 20 20 20 00 00 00 fd
+00 3a 79 1e 88 3c 00 0a 20 20 20 20 20 20 01 13
+
+02 03 36 71 4b 01 02 04 05 10 11 13 14 1f 21 22
+23 09 07 07 83 01 00 00 e2 00 f9 e3 05 00 00 6b
+03 0c 00 30 00 00 3c 20 00 20 03 e3 0e 60 61 e6
+11 46 d0 00 70 80 02 3a 80 18 71 38 2d 40 58 2c
+45 00 ba 88 21 00 00 1e 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c6
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AVX
+    Model: 52
+    Made in: week 32 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 115 cm x 65 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.2998, 0.6904
+    Blue : 0.1376, 0.0380
+    White: 0.2822, 0.2968
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.000 Hz  16:9   135.000 kHz 594.000 MHz (597 mm x 336 mm)
+                 Hfront  176 Hsync  88 Hback 296 Hpol P
+                 Vfront    8 Vsync  10 Vback  72 Vpol P
+    Empty Descriptor
+    Display Product Name: 'AVT GC513'
+  Display Range Limits:
+    Monitor ranges (GTF): 58-121 Hz V, 30-136 kHz H, max dotclock 600 MHz
+  Extension blocks: 1
+Checksum: 0x13
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+    VIC  33:  1920x1080   25.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC  34:  1920x1080   30.000 Hz  16:9    33.750 kHz  74.250 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Overscanned
+  Colorimetry Data Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 3.0.0.0
+    Maximum TMDS clock: 300 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 3:  3840x2160   24.000 Hz  16:9    54.000 kHz 297.000 MHz
+  YCbCr 4:2:0 Video Data Block:
+    VIC  96:  3840x2160   50.000 Hz  16:9    56.250 kHz 297.000 MHz
+    VIC  97:  3840x2160   60.000 Hz  16:9    67.500 kHz 297.000 MHz
+  Vendor-Specific Audio Data Block:
+  Vendor-Specific Audio Data Block (Dolby), OUI 00-D0-46:
+    70 80                                           'p.'
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (698 mm x 392 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+Checksum: 0xc6
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 597x336 mm vs display size 1150x650 mm.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
+  Detailed Timing Descriptor #2: Mismatch of image size 698x392 mm vs display size 1150x650 mm.
+  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 60.000 Hz (Monitor: 58.000 - 121.000 Hz)
+    Horizontal Freq: 28.125 - 135.000 kHz (Monitor: 30.000 - 136.000 kHz)
+
+EDID conformity: FAIL

@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 3d 11 00 00 00 00
+00 1a 01 04 95 1f 11 78 02 c3 25 92 57 5a 94 2a
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 14 37 80 b2 70 38 28 40 30 64
+31 00 35 ad 10 00 00 1a 10 2c 80 b2 70 38 28 40
+30 64 31 00 35 ad 10 00 00 1a 00 00 00 fe 00 44
+30 50 58 39 81 42 31 34 30 48 41 4b 00 00 00 00
+00 00 81 02 96 01 11 00 00 0a 01 0a 20 20 00 3a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 4413
+    Made in: 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5732, 0.3398
+    Green: 0.3515, 0.5810
+    Blue : 0.1640, 0.1347
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.006 Hz  16:9    67.207 kHz 141.000 MHz (309 mm x 173 mm)
+                 Hfront   48 Hsync 100 Hback  30 Hpol P
+                 Vfront    3 Vsync   1 Vback  36 Vpol N
+    DTD 2:  1920x1080   48.005 Hz  16:9    53.765 kHz 112.800 MHz (309 mm x 173 mm)
+                 Hfront   48 Hsync 100 Hback  30 Hpol P
+                 Vfront    3 Vsync   1 Vback  36 Vpol N
+    Alphanumeric Data String: 'D0PX9'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 81 02 96 01 11 00 00 0a 01 0a 20 20 '..............  '
+Checksum: 0x3a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

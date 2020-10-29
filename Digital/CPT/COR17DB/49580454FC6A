@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d f2 db 17 00 00 00 00
+14 15 01 04 95 1d 10 78 0a 2a 05 94 57 54 8d 2a
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 32 26 40 a0 60 84 1a 30 30 20
+35 00 25 a4 10 00 00 18 32 26 40 a0 60 84 1a 30
+30 20 35 00 25 a4 10 00 00 18 00 00 00 fe 00 43
+50 54 20 20 20 20 20 20 20 20 20 20 00 00 00 00
+00 43 4c 41 41 31 33 33 55 41 30 32 41 20 00 cd
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: COR
+    Model: 6107
+    Made in: week 20 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 29 cm x 16 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5781, 0.3417
+    Green: 0.3300, 0.5527
+    Blue : 0.1640, 0.1210
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    59.997 Hz  16:9    55.557 kHz  97.780 MHz (293 mm x 164 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  18 Vpol N
+    DTD 2:  1600x900    59.997 Hz  16:9    55.557 kHz  97.780 MHz (293 mm x 164 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  18 Vpol N
+    Alphanumeric Data String: 'CPT          '
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 43 4c 41 41 31 33 33 55 41 30 32 41 20 '...CLAA133UA02A '
+Checksum: 0xcd
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4a 8b 36 21 78 56 34 12
+01 14 01 03 85 2f 1d 78 ea 64 b5 ab 52 38 ab 25
+13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 40 2e 40 00 62 84 22 30 18 50
+13 00 d9 28 11 00 00 1c 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fc 00 48
+50 20 41 6c 6c 2d 49 6e 2d 4f 6e 65 00 00 00 10
+00 38 4c 1e 53 10 0a 0a 0a 0a 0a 0a 0a 0a 00 91
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: RTK
+    Model: 8502
+    Serial Number: ...
+    Made in: week 1 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 47 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6689, 0.3222
+    Green: 0.2197, 0.6679
+    Blue : 0.1464, 0.0771
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.022 Hz  16:9    56.061 kHz 118.400 MHz (473 mm x 296 mm)
+                 Hfront   24 Hsync  80 Hback 408 Hpol N
+                 Vfront    1 Vsync   3 Vback  30 Vpol P
+    Dummy Descriptor:
+    Display Product Name: 'HP All-In-One'
+    Dummy Descriptor:
+Checksum: 0x91
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x04.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

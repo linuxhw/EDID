@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 83 0f 20 00 00 00 00
+00 19 01 04 95 22 13 78 0a 21 05 97 59 57 8f 29
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ba 1b 56 64 50 00 27 30 30 20
+55 00 58 c1 10 00 00 1a 2e 16 56 64 50 00 27 30
+30 20 55 00 58 c1 10 00 00 1a 00 00 00 fe 00 4b
+58 56 30 37 80 31 35 36 41 54 0a 20 00 00 00 00
+00 00 41 21 94 01 10 00 00 29 01 0a 20 20 00 46
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 8207
+    Made in: 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5898, 0.3496
+    Green: 0.3398, 0.5595
+    Blue : 0.1601, 0.1250
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.997 Hz 683:384  48.417 kHz  70.980 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback  20 Hpol P
+                 Vfront    5 Vsync   5 Vback  29 Vpol N
+    DTD 2:  1366x768    47.994 Hz 683:384  38.731 kHz  56.780 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback  20 Hpol P
+                 Vfront    5 Vsync   5 Vback  29 Vpol N
+    Alphanumeric Data String: 'KXV07'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 94 01 10 00 00 29 01 0a 20 20 '....A!.....)..  '
+Checksum: 0x46
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

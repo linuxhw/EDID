@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 64 ee 03 af e4 00 00
+1e 15 01 03 80 16 0d 78 0a 80 36 9a 5e 5d 91 28
+20 4f 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2c 15 00 4c 41 58 42 20 35 23
+45 00 dc 81 00 00 00 19 00 00 00 fe 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fc 00 48
+53 44 31 30 30 49 46 57 34 41 0a 20 00 00 00 10
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 e5
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HSD
+    Model: 1006
+    Serial Number: ...
+    Made in: week 30 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 22 cm x 13 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6035, 0.3671
+    Green: 0.3632, 0.5664
+    Blue : 0.1562, 0.1279
+    White: 0.3095, 0.3300
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x600    60.016 Hz 128:75   39.971 kHz  54.200 MHz (220 mm x 129 mm)
+                 Hfront   53 Hsync  35 Hback 244 Hpol N
+                 Vfront    4 Vsync   5 Vback  57 Vpol N
+    Alphanumeric Data String: ''
+    Display Product Name: 'HSD100IFW4A'
+    Dummy Descriptor:
+Checksum: 0xe5
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

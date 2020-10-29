@@ -1,0 +1,69 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 11 28 00 00 00 80
+21 12 01 03 80 30 1e 78 ee cc a5 a3 57 4a 9c 25
+10 50 54 a5 6b 80 81 40 81 80 95 00 a9 00 b3 00
+a9 40 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0
+36 00 d9 28 11 00 00 1c 00 00 00 fd 00 30 4c 18
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 77 32 32 32 38 68 0a 20 20 20 00 00 00 ff
+00 43 5a 51 38 33 33 30 34 37 38 0a 20 20 00 cb
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 10257
+    Serial Number: ...
+    Made in: week 33 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 48 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.2919, 0.6093
+    Blue : 0.1464, 0.0644
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    Apple   :   832x624    74.551 Hz   4:3    49.726 kHz  57.284 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+    Apple   :  1152x870    75.062 Hz 192:145  68.681 kHz 100.000 MHz
+  Standard Timings:
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    GTF     :  1600x1000   60.000 Hz  16:10   62.100 kHz 133.142 MHz
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   59.954 Hz   8:5    65.290 kHz 146.250 MHz (473 mm x 296 mm)
+                 Hfront  104 Hsync 176 Hback 280 Hpol N
+                 Vfront    3 Vsync   6 Vback  30 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 48-76 Hz V, 24-83 kHz H, max dotclock 170 MHz
+    Display Product Name: 'HP w2228h'
+    Display Product Serial Number: ...
+Checksum: 0xcb
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+
+EDID conformity: FAIL

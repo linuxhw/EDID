@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 32 0c 00 00 00 00 00 00
+00 0f 01 02 80 1e 12 78 0a 0f 30 97 58 53 8b 29
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a9 1a 00 a0 50 00 16 30 30 20
+13 00 31 b7 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 50 68 69 6c 69 70 73 4c 43 44 0a 00 00 00 fe
+00 4c 50 31 34 30 57 58 31 2d 54 4c 30 31 00 85
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: LPL
+    Model: 0
+    Made in: 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 18 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3437
+    Green: 0.3271, 0.5458
+    Blue : 0.1601, 0.1474
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x768    59.995 Hz   5:3    47.396 kHz  68.250 MHz (305 mm x 183 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    1 Vsync   3 Vback  18 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LGPhilipsLCD'
+    Alphanumeric Data String: 'LP140WX1-TL01'
+Checksum: 0x85
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+
+EDID conformity: FAIL

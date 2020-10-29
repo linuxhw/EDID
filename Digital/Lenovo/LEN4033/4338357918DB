@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 33 40 00 00 00 00
+00 12 01 03 80 1e 13 78 ea ae 10 96 58 53 8c 28
+24 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d8 27 a0 88 51 84 1a 30 30 20
+36 00 30 be 10 00 00 19 84 21 a0 a0 51 84 1a 30
+30 20 36 00 30 be 10 00 00 19 00 00 00 0f 00 90
+0a 32 90 0a 28 14 01 00 32 0c 01 01 00 00 00 fe
+00 4c 50 31 34 31 57 50 31 2d 54 4c 42 38 00 3c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16435
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5878, 0.3457
+    Green: 0.3271, 0.5488
+    Blue : 0.1562, 0.1416
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    60.126 Hz   8:5    55.677 kHz 102.000 MHz (304 mm x 190 mm)
+                 Hfront   48 Hsync  32 Hback 312 Hpol N
+                 Vfront    3 Vsync   6 Vback  17 Vpol N
+    DTD 2:  1440x900    49.923 Hz   8:5    46.228 kHz  85.800 MHz (304 mm x 190 mm)
+                 Hfront   48 Hsync  32 Hback 336 Hpol N
+                 Vfront    3 Vsync   6 Vback  17 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 90 0a 32 90 0a 28 14 01 00 32 0c 01 01 '.....2..(...2...'
+    Alphanumeric Data String: 'LP141WP1-TLB8'
+Checksum: 0x3c
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 c4 02 00 00 00 00
+00 15 01 04 95 26 15 78 02 5f 35 a4 58 56 9e 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 7e d7 10 00 00 19 31 99 80 a0 70 38 74 43
+30 20 35 00 7e d7 10 00 00 19 d3 9a 80 a0 70 38
+fc 41 14 14 35 00 7e d7 10 00 00 19 00 00 00 fe
+00 4c 50 31 37 33 57 46 32 2d 54 50 42 33 00 47
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 708
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6416, 0.3447
+    Green: 0.3388, 0.6201
+    Blue : 0.1484, 0.0615
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (382 mm x 215 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol N
+                 Vfront    4 Vsync   5 Vback  36 Vpol N
+    DTD 2:  1920x1080   96.000 Hz  16:9   188.543 kHz 392.170 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback 876 Vpol N
+    DTD 3:  1920x1080  119.996 Hz  16:9   190.553 kHz 396.350 MHz (382 mm x 215 mm)
+                 Hfront   20 Hsync  20 Hback 120 Hpol N
+                 Vfront    3 Vsync   5 Vback 500 Vpol N
+    Alphanumeric Data String: 'LP173WF2-TPB3'
+Checksum: 0x47
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

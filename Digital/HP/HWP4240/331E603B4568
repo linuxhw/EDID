@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 40 42 01 01 01 01
+18 17 01 03 80 29 17 78 0a 28 80 a4 56 50 a1 28
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 74 1d 56 c2 50 00 26 30 24 30
+35 00 58 c2 10 00 00 18 00 00 00 fe 00 49 4e 58
+20 44 69 73 70 6c 61 79 0a 20 00 00 00 fc 00 48
+50 20 41 6c 6c 2d 69 6e 2d 4f 6e 65 00 00 00 fe
+00 4d 31 38 35 42 47 45 0a 20 20 20 20 20 00 d3
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 16960
+    Serial Number: ...
+    Made in: week 24 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 41 cm x 23 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6406, 0.3378
+    Green: 0.3144, 0.6289
+    Blue : 0.1582, 0.0585
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.967 Hz 683:384  48.333 kHz  75.400 MHz (344 mm x 194 mm)
+                 Hfront   36 Hsync  48 Hback 110 Hpol N
+                 Vfront    3 Vsync   5 Vback  30 Vpol N
+    Alphanumeric Data String: 'INX Display'
+    Display Product Name: 'HP All-in-One'
+    Alphanumeric Data String: 'M185BGE'
+Checksum: 0xd3
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 344x194 mm vs display size 410x230 mm.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

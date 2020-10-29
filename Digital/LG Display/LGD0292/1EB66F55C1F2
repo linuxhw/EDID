@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 92 02 00 00 00 00
+00 15 01 03 90 1f 11 78 0a 8e 35 93 58 56 90 29
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 56 68 50 00 12 30 20 20
+35 00 35 ae 10 00 00 1a 12 1b 56 68 50 00 12 30
+20 20 35 00 35 ae 10 00 00 1a 00 00 00 fe 00 39
+4d 36 44 52 80 31 34 30 57 48 32 0a 00 00 00 00
+00 00 41 31 94 01 00 00 00 01 01 0a 20 20 00 e1
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 658
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5761, 0.3437
+    Green: 0.3388, 0.5644
+    Blue : 0.1601, 0.1279
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.978 Hz 683:384  47.143 kHz  69.300 MHz (309 mm x 174 mm)
+                 Hfront   32 Hsync  32 Hback  40 Hpol P
+                 Vfront    3 Vsync   5 Vback  10 Vpol N
+    DTD 2:  1366x768    59.978 Hz 683:384  47.143 kHz  69.300 MHz (309 mm x 174 mm)
+                 Hfront   32 Hsync  32 Hback  40 Hpol P
+                 Vfront    3 Vsync   5 Vback  10 Vpol N
+    Alphanumeric Data String: '9M6DR'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 94 01 00 00 00 01 01 0a 20 20 '....A1........  '
+Checksum: 0xe1
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

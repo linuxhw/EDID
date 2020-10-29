@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 bd 03 00 00 00 00
+00 16 01 04 95 1c 10 78 02 e1 d5 98 59 57 93 27
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1a 36 80 a0 70 38 1f 40 30 20
+35 00 14 9c 10 00 00 1a 1a 36 80 a0 70 38 1f 40
+30 20 35 00 14 9c 10 00 00 1a 00 00 00 fe 00 31
+39 43 46 47 80 31 32 35 57 46 31 0a 00 00 00 00
+00 00 41 21 a4 01 00 00 00 0a 01 0a 20 20 00 21
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 957
+    Made in: 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 28 cm x 16 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5966, 0.3496
+    Green: 0.3398, 0.5751
+    Blue : 0.1552, 0.1220
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.934 Hz  16:9    66.587 kHz 138.500 MHz (276 mm x 156 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 2:  1920x1080   59.934 Hz  16:9    66.587 kHz 138.500 MHz (276 mm x 156 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    Alphanumeric Data String: '19CFG'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 a4 01 00 00 00 0a 01 0a 20 20 '....A!........  '
+Checksum: 0x21
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

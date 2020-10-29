@@ -1,0 +1,60 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 29 28 01 01 01 01
+10 13 01 03 68 2c 19 78 ee b8 15 a6 55 4b 9b 25
+13 50 54 a1 08 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 ba f9 10 00 00 1e 00 00 00 fd 00 30 4c 18
+55 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43
+6f 6d 70 61 71 20 51 32 30 30 39 0a 00 00 00 ff
+00 43 4e 43 39 31 36 30 36 32 57 0a 20 20 00 dd
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 10281
+    Serial Number: ...
+    Made in: week 16 of 2009
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Sync: Separate
+    Maximum image size: 44 cm x 25 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3349
+    Green: 0.2949, 0.6054
+    Blue : 0.1445, 0.0751
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (442 mm x 249 mm)
+                 Hfront   24 Hsync  80 Hback  96 Hpol P
+                 Vfront    1 Vsync   3 Vback  96 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 48-76 Hz V, 24-85 kHz H, max dotclock 170 MHz
+    Display Product Name: 'Compaq Q2009'
+    Display Product Serial Number: ...
+Checksum: 0xdd
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+
+EDID conformity: FAIL

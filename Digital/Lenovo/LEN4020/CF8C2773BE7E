@@ -1,0 +1,57 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 20 40 00 00 00 00
+26 10 01 03 80 1d 15 78 ea 6f 95 9c 54 4c 87 26
+21 50 54 21 08 00 61 40 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 1f d7 10 00 00 18 28 15 00 40 41 00 26 30
+18 88 36 00 1f d7 10 00 00 18 00 00 00 0f 00 61
+43 32 61 43 28 0f 01 00 30 64 00 53 00 00 00 fe
+00 4c 54 44 31 34 31 45 43 4d 42 0a 20 20 00 1f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16416
+    Made in: week 38 of 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 21 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6103, 0.3300
+    Green: 0.2998, 0.5302
+    Blue : 0.1503, 0.1298
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz (287 mm x 215 mm)
+                 Hfront   24 Hsync 136 Hback 160 Hpol N
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+    DTD 2:  1024x768    49.997 Hz   4:3    40.298 kHz  54.160 MHz (287 mm x 215 mm)
+                 Hfront   24 Hsync 136 Hback 160 Hpol N
+                 Vfront    3 Vsync   6 Vback  29 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 61 43 32 61 43 28 0f 01 00 30 64 00 53 '...aC2aC(...0d.S'
+    Alphanumeric Data String: 'LTD141ECMB'
+Checksum: 0x1f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

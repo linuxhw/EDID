@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 83 4d 8a 00 00 00 00
+00 1a 01 04 a5 1d 10 78 0a ac 85 a5 55 4c a0 27
+14 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 29 36 80 a0 70 38 1f 40 30 20
+25 00 25 a5 10 00 00 1a 54 2b 80 a0 70 38 1f 40
+30 20 25 00 25 a5 10 00 00 1a 00 00 00 fe 00 4b
+58 35 32 43 80 31 33 33 48 4c 0a 20 00 00 00 00
+00 02 41 21 a8 00 00 00 00 0a 01 0a 20 20 00 68
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 35405
+    Made in: 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 16 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6464, 0.3339
+    Green: 0.2998, 0.6250
+    Blue : 0.1542, 0.0781
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.999 Hz  16:9    66.659 kHz 138.650 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    2 Vsync   5 Vback  24 Vpol N
+    DTD 2:  1920x1080   47.999 Hz  16:9    53.327 kHz 110.920 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    2 Vsync   5 Vback  24 Vpol N
+    Alphanumeric Data String: 'KX52C'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 21 a8 00 00 00 00 0a 01 0a 20 20 '....A!........  '
+Checksum: 0x68
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

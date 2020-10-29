@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 9d 42 00 00 00 00
+18 1d 01 04 a5 26 16 78 02 96 75 a3 56 52 9c 27
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 40 38 80 b4 70 38 3e 40 10 10
+3e 00 7e d7 10 00 00 1a 40 38 80 b4 70 38 5c 41
+10 10 3e 00 7e d7 10 00 00 1a 00 00 00 fe 00 31
+57 4b 36 43 80 42 31 37 33 48 41 4e 00 00 00 00
+00 02 41 01 9e 00 11 00 00 0a 01 0a 20 20 00 c1
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 17053
+    Made in: week 24 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 38 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6386, 0.3369
+    Green: 0.3212, 0.6113
+    Blue : 0.1533, 0.0498
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.045 Hz  16:9    68.571 kHz 144.000 MHz (382 mm x 215 mm)
+                 Hfront   16 Hsync  16 Hback 148 Hpol P
+                 Vfront    3 Vsync  14 Vback  45 Vpol N
+    DTD 2:  1920x1080   48.019 Hz  16:9    68.571 kHz 144.000 MHz (382 mm x 215 mm)
+                 Hfront   16 Hsync  16 Hback 148 Hpol P
+                 Vfront    3 Vsync  14 Vback 331 Vpol N
+    Alphanumeric Data String: '1WK6C'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 01 9e 00 11 00 00 0a 01 0a 20 20 '....A.........  '
+Checksum: 0xc1
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

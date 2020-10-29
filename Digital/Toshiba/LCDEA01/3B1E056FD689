@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 64 01 ea 01 01 01 01
+0d 0e 01 02 80 1d 15 78 0a bd ae 99 55 4c 8a 26
+22 50 54 00 00 00 61 40 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 20 88
+22 00 1f d7 10 00 00 1e 00 00 00 0f 00 06 42 02
+44 01 03 04 07 22 24 03 08 00 00 00 00 fe 00 54
+4d 44 49 53 50 4c 41 59 0a 20 20 20 00 00 00 fe
+00 4c 54 44 31 34 31 45 41 30 56 0a 20 20 00 3b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: LCD
+    Model: 59905
+    Serial Number: ...
+    Made in: week 13 of 2004
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5996, 0.3349
+    Green: 0.2998, 0.5400
+    Blue : 0.1503, 0.1347
+    White: 0.3154, 0.3300
+  Established Timings I & II: none
+  Standard Timings:
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz (287 mm x 215 mm)
+                 Hfront   32 Hsync 136 Hback 152 Hpol P
+                 Vfront    2 Vsync   2 Vback  34 Vpol P
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 06 42 02 44 01 03 04 07 22 24 03 08 00 '....B.D...."$...'
+    Alphanumeric Data String: 'TMDISPLAY'
+    Alphanumeric Data String: 'LTD141EA0V'
+Checksum: 0x3b
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+
+EDID conformity: PASS

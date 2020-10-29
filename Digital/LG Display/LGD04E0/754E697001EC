@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 e0 04 00 00 00 00
+00 19 01 04 a5 22 13 78 ea e0 35 a3 55 4f 9c 27
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 60 d1 00 b4 f0 70 3e 80 3c 24
+35 00 58 c2 10 00 00 1a 95 8b 00 b4 f0 70 3e 80
+3c 24 35 00 58 c2 10 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 33 ff 0a 3c 96 27 1f 4e 96 00 00 00 00 e7
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1248
+    Made in: 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3339
+    Green: 0.3085, 0.6093
+    Blue : 0.1523, 0.0537
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.006 Hz  16:9   133.333 kHz 536.000 MHz (344 mm x 194 mm)
+                 Hfront   60 Hsync  36 Hback  84 Hpol P
+                 Vfront    3 Vsync   5 Vback  54 Vpol N
+    DTD 2:  3840x2160   40.004 Hz  16:9    88.888 kHz 357.330 MHz (344 mm x 194 mm)
+                 Hfront   60 Hsync  36 Hback  84 Hpol P
+                 Vfront    3 Vsync   5 Vback  54 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 33 ff 0a 3c 96 27 1f 4e 96 00 00 00 '....3..<.'.N....'
+Checksum: 0xe7
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,66 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 63 75 20 01 00 00 00
+0d 12 01 03 00 2b 1b 78 ea de 95 a3 54 4c 99 26
+0f 50 54 a1 08 00 b3 00 a9 40 95 00 81 80 01 01
+01 01 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0
+36 00 0e 28 21 00 00 1c 9a 29 a0 00 51 84 22 30
+50 98 36 00 c5 ff 10 00 00 1e 30 2a 00 98 51 00
+2a 40 30 70 13 00 68 0e 11 00 00 1e 00 00 00 fc
+00 48 4b 43 20 4c 43 44 0a 20 20 20 20 20 00 4a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HKC
+    Model: 8309
+    Serial Number: ...
+    Made in: week 13 of 2008
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Maximum image size: 43 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   59.954 Hz   8:5    65.290 kHz 146.250 MHz (526 mm x 296 mm)
+                 Hfront  104 Hsync 176 Hback 280 Hpol N
+                 Vfront    3 Vsync   6 Vback  30 Vpol P
+    DTD 2:  1440x900    67.232 Hz   8:5    62.795 kHz 106.500 MHz (453 mm x 255 mm)
+                 Hfront   80 Hsync 152 Hback  24 Hpol P
+                 Vfront    3 Vsync   6 Vback  25 Vpol P
+    DTD 3:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz (360 mm x 270 mm)
+                 Hfront   48 Hsync 112 Hback 248 Hpol P
+                 Vfront    1 Vsync   3 Vback  38 Vpol P
+    Display Product Name: 'HKC LCD'
+Checksum: 0x4a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 526x296 mm vs display size 430x270 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 453x255 mm vs display size 430x270 mm.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

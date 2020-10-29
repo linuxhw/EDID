@@ -1,0 +1,62 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 10 c3 14 00 00 00 00
+09 1d 01 04 a5 22 13 78 07 de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1a 36 80 a0 70 38 1d 40 30 20
+35 00 58 c2 10 00 00 18 00 00 00 fd 00 30 3c 42
+42 0d 01 0a 20 20 20 20 20 20 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc
+00 4c 51 31 35 36 4d 31 4a 57 30 31 0a 20 00 6b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SHP
+    Model: 5315
+    Made in: week 9 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.042 Hz  16:9    66.587 kHz 138.500 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  21 Vpol N
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 48-60 Hz V, 66-66 kHz H, max dotclock 130 MHz
+    Dummy Descriptor:
+    Display Product Name: 'LQ156M1JW01'
+Checksum: 0x6b
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 66.586 - 66.586 kHz (Monitor: 66.000 - 66.000 kHz)
+    Maximum Clock: 138.500 MHz (Monitor: 130.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+
+EDID conformity: FAIL

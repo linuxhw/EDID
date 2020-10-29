@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 8b 08 00 00 00 00
+10 1d 01 04 a5 16 0f 78 03 9f 15 a5 54 4c 9c 27
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 62 40 80 82 70 00 3c 50 30 20
+36 00 de 94 00 00 00 1a 81 33 80 82 70 00 3c 50
+30 20 36 00 de 94 00 00 00 1a 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 30 35 57 41 4d 2d 4e 33 31 0a 00 c0
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2187
+    Made in: week 16 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 22 cm x 15 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6464, 0.3291
+    Green: 0.2998, 0.6123
+    Blue : 0.1523, 0.0634
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1280   60.000 Hz   3:2    80.400 kHz 164.820 MHz (222 mm x 148 mm)
+                 Hfront   48 Hsync  32 Hback  50 Hpol P
+                 Vfront    3 Vsync   6 Vback  51 Vpol N
+    DTD 2:  1920x1280   47.998 Hz   3:2    64.317 kHz 131.850 MHz (222 mm x 148 mm)
+                 Hfront   48 Hsync  32 Hback  50 Hpol P
+                 Vfront    3 Vsync   6 Vback  51 Vpol N
+    Alphanumeric Data String: 'BOE CQ'
+    Alphanumeric Data String: 'NV105WAM-N31'
+Checksum: 0xc0
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af d5 11 00 00 00 00
+01 13 01 03 80 16 0d 78 0a d1 15 94 56 55 93 29
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 06 18 00 70 50 d0 10 20 30 20
+36 00 de 7d 00 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 30 31 45 57 30 31 20 56 31 20 0a 00 c3
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 4565
+    Made in: week 1 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 22 cm x 13 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5810, 0.3369
+    Green: 0.3320, 0.5751
+    Blue : 0.1601, 0.1376
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x720    60.029 Hz  16:9    44.181 kHz  61.500 MHz (222 mm x 125 mm)
+                 Hfront   48 Hsync  32 Hback  32 Hpol N
+                 Vfront    3 Vsync   6 Vback   7 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B101EW01 V1 '
+Checksum: 0xc3
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

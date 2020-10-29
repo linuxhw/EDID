@@ -1,0 +1,50 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 10 68 9c 00 00 00 00
+0a 11 01 03 80 22 16 78 0a 50 c5 98 58 52 8e 27
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9f 25 a0 40 51 84 0c 30 40 20
+33 00 4b cf 10 00 00 19 00 00 00 01 00 06 10 30
+00 00 00 00 00 00 00 00 0a 20 00 00 00 fe 00 4c
+54 4e 31 35 34 42 54 00 00 00 0a 20 00 00 00 fc
+00 43 6f 6c 6f 72 20 4c 43 44 0a 20 20 20 00 14
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 40040
+    Made in: week 10 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5947, 0.3447
+    Green: 0.3203, 0.5546
+    Blue : 0.1552, 0.1445
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    60.002 Hz   8:5    54.722 kHz  96.310 MHz (331 mm x 207 mm)
+                 Hfront   64 Hsync  32 Hback 224 Hpol N
+                 Vfront    3 Vsync   3 Vback   6 Vpol N
+    Manufacturer-Specified Display Descriptor (0x01): 00 01 00 06 10 30 00 00 00 00 00 00 00 00 0a 20 '.....0......... '
+    Alphanumeric Data String: 'LTN154BT'
+    Display Product Name: 'Color LCD'
+Checksum: 0x14
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

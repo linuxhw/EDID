@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 3c 20 00 00 00 00
+00 15 01 04 90 1f 11 78 02 bb f5 94 55 54 90 27
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 f2 1d 56 ea 50 00 1e 30 26 16
+36 00 35 ad 10 00 00 1a f7 13 56 ea 50 00 1e 30
+26 16 36 00 35 ad 10 00 00 1a 00 00 00 fe 00 39
+54 4d 44 47 80 42 31 34 30 58 54 4e 00 00 00 00
+00 00 41 21 96 01 11 00 00 01 01 0a 20 20 00 4b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 8252
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5800, 0.3349
+    Green: 0.3300, 0.5654
+    Blue : 0.1552, 0.1396
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.041 Hz 683:384  47.913 kHz  76.660 MHz (309 mm x 173 mm)
+                 Hfront   38 Hsync  22 Hback 174 Hpol P
+                 Vfront    3 Vsync   6 Vback  21 Vpol N
+    DTD 2:  1366x768    40.030 Hz 683:384  31.944 kHz  51.110 MHz (309 mm x 173 mm)
+                 Hfront   38 Hsync  22 Hback 174 Hpol P
+                 Vfront    3 Vsync   6 Vback  21 Vpol N
+    Alphanumeric Data String: '9TMDG'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 96 01 11 00 00 01 01 0a 20 20 '....A!........  '
+Checksum: 0x4b
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

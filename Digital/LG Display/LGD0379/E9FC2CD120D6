@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 79 03 00 00 00 00
+00 15 01 04 a5 1b 12 96 02 4f d5 a2 59 52 93 26
+17 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 6d 6f 00 a0 a0 a4 31 60 30 20
+3a 00 10 b5 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 32 39 51 45 31 2d 53 50 41 31 00 24
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 889
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 27 cm x 18 cm
+    Gamma: 2.50
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6337, 0.3476
+    Green: 0.3232, 0.5771
+    Blue : 0.1513, 0.0908
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1700   59.961 Hz 128:85  104.871 kHz 285.250 MHz (272 mm x 181 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync  10 Vback  36 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP129QE1-SPA1'
+Checksum: 0x24
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

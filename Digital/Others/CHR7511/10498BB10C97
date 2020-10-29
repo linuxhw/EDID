@@ -1,0 +1,64 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d 12 11 75 70 03 00 00
+05 17 01 04 95 2b 1d 78 e2 80 42 ac 51 30 b4 25
+10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 e0 15 00 a0 40 00 16 30 30 20
+34 00 06 4d 21 00 00 1a 3a 12 00 a0 40 00 16 30
+30 20 34 00 06 4d 21 00 00 1a 00 00 00 fd 00 38
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 31 30 32 34 78 37 36 38 5f 31 38 0a 20 00 bb
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CHR
+    Model: 29969
+    Serial Number: ...
+    Made in: week 5 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 43 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6738, 0.3164
+    Green: 0.1875, 0.7031
+    Blue : 0.1455, 0.0625
+    White: 0.3125, 0.3261
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    59.870 Hz   4:3    47.297 kHz  56.000 MHz (518 mm x 333 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   4 Vback  15 Vpol N
+    DTD 2:  1024x768    49.885 Hz   4:3    39.409 kHz  46.660 MHz (518 mm x 333 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   4 Vback  15 Vpol N
+  Display Range Limits:
+    Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+    Display Product Name: '1024x768_18'
+Checksum: 0xbb
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 49.885 - 59.870 Hz (Monitor: 56.000 - 76.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 518x333 mm vs display size 430x290 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 518x333 mm vs display size 430x290 mm.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+
+EDID conformity: FAIL

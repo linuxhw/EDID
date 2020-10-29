@@ -1,0 +1,61 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae a0 00 04 00 00 00
+0f 16 01 04 a1 2c 18 78 0a 01 4c a7 55 46 99 24
+12 48 4b 21 08 00 81 00 81 c0 01 01 01 01 01 01
+01 01 01 01 01 01 31 2e 40 00 62 84 22 30 58 a8
+35 00 ba f9 10 00 00 1c 00 00 00 fd 00 39 3e 1e
+5a 14 55 00 c4 8e 21 00 00 1e 00 00 00 10 00 a0
+29 50 30 20 35 00 55 50 21 00 00 1a 00 00 00 fc
+00 4c 45 4e 2d 4d 37 33 5a 2d 44 0a 20 20 00 d8
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 160
+    Serial Number: ...
+    Made in: week 15 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DVI interface
+    Maximum image size: 44 cm x 24 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6523, 0.3320
+    Green: 0.2734, 0.5986
+    Blue : 0.1416, 0.0703
+    White: 0.2841, 0.2929
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    59.946 Hz  16:9    55.990 kHz 118.250 MHz (442 mm x 249 mm)
+                 Hfront   88 Hsync 168 Hback 256 Hpol N
+                 Vfront    3 Vsync   5 Vback  26 Vpol P
+  Display Range Limits:
+    Monitor ranges (Unknown (0x55)): 57-62 Hz V, 30-90 kHz H, max dotclock 200 MHz
+    Dummy Descriptor:
+    Display Product Name: 'LEN-M73Z-D'
+Checksum: 0xd8
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: Unknown range class (0x55).
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+  Dummy Descriptor: Dummy block filled with garbage.
+
+EDID conformity: FAIL

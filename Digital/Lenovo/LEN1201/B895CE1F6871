@@ -1,0 +1,105 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 01 12 01 00 00 00
+09 1a 01 03 80 30 1a 78 ee 92 61 a3 5b 51 a3 27
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1e 00 00 00 fc 00 4c 45 4e
+2d 35 31 30 41 2d 43 0a 20 20 00 00 00 fd 00 39
+3e 53 53 10 00 0a 20 20 20 20 20 20 00 00 00 fe
+20 4c 4d 32 31 35 57 46 39 20 20 20 20 20 01 ce
+
+02 03 19 c0 45 90 04 03 02 01 23 09 07 07 83 01
+00 00 66 03 0c 00 10 00 00 02 3a 80 18 71 38 2d
+40 58 2c 25 00 dc 0c 11 00 00 1e 01 1d 00 72 51
+d0 1e 20 6e 28 55 00 dc 0c 11 00 00 1e 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 65
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 4609
+    Serial Number: ...
+    Made in: week 9 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 48 cm x 26 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6386, 0.3564
+    Green: 0.3164, 0.6386
+    Blue : 0.1533, 0.0722
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (476 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    Display Product Name: 'LEN-510A-C'
+  Display Range Limits:
+    Monitor ranges (GTF): 57-62 Hz V, 83-83 kHz H, max dotclock 160 MHz
+    Alphanumeric Data String: 'LM215WF9     '
+  Extension blocks: 1
+Checksum: 0xce
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (native)
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (476 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    2 Vsync   5 Vback  38 Vpol P
+    DTD 3:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (476 mm x 268 mm)
+                 Hfront  110 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+Checksum: 0x65
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Descriptor #4: Monitor descriptor block has byte 4 nonzero (0x20).
+  Alphanumeric Data String: One or more trailing spaces.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 67.500 kHz (Monitor: 83.000 - 83.000 kHz)
+
+EDID conformity: FAIL

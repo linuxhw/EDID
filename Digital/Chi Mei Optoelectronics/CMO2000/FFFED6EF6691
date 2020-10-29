@@ -1,0 +1,50 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d af 00 20 00 00 00 00
+09 10 01 03 80 2c 1c 78 0a 3b 95 a9 55 35 ad 24
+19 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 b2 0f 11 00 00 18 00 00 00 fe 00 4e 32 30
+31 4a 34 2d 4c 30 31 0a 20 20 00 00 00 fe 00 43
+4d 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 32 30 31 4a 34 2d 4c 30 31 0a 20 20 00 a2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CMO
+    Model: 8192
+    Made in: week 9 of 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 44 cm x 28 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6601, 0.3349
+    Green: 0.2089, 0.6787
+    Blue : 0.1425, 0.0986
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.950 Hz   8:5    74.038 kHz 154.000 MHz (434 mm x 271 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   6 Vback  26 Vpol N
+    Alphanumeric Data String: 'N201J4-L01'
+    Alphanumeric Data String: 'CMO'
+    Alphanumeric Data String: 'N201J4-L01'
+Checksum: 0xa2
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

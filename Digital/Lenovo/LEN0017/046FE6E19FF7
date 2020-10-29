@@ -1,0 +1,64 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 17 00 01 00 00 00
+1d 1b 01 04 a5 2a 1b 78 0a bc 95 a8 51 33 aa 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8c 28 a0 90 51 84 28 30 58 98
+36 00 00 00 00 00 00 18 00 00 00 fa 00 06 10 30
+11 01 00 00 00 00 00 00 0a 20 00 00 00 fe 00 4c
+45 4e 2d 41 49 4f 2d 33 33 30 2d 45 00 00 00 fc
+00 4c 45 4e 2d 41 49 4f 2d 33 33 30 2d 45 00 5e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 23
+    Serial Number: ...
+    Made in: week 29 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 42 cm x 27 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6582, 0.3193
+    Green: 0.2021, 0.6640
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    60.014 Hz   8:5    56.413 kHz 103.800 MHz
+                 Hfront   88 Hsync 152 Hback 160 Hpol N
+                 Vfront    3 Vsync   6 Vback  31 Vpol N
+    Standard Timing Identifications:
+      CVT     :   296x192    72.407 Hz  16:10   15.278 kHz   5.500 MHz (EDID 1.4 source)
+      GTF     :   296x192    76.007 Hz  16:10   15.277 kHz   5.011 MHz (EDID 1.3 source)
+      CVT     :   632x400    76.477 Hz  16:10   32.197 kHz  25.500 MHz (EDID 1.4 source)
+      GTF     :   632x400    76.999 Hz  16:10   32.263 kHz  25.552 MHz (EDID 1.3 source)
+    Alphanumeric Data String: 'LEN-AIO-330-E'
+    Display Product Name: 'LEN-AIO-330-E'
+Checksum: 0x5e
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
+  Standard Timing Identifications: 0 or negative horizontal front porch.
+  Standard Timing Identifications: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timing Identifications: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timing Identifications: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timing Identifications: Use 0x0101 as the invalid Standard Timings code, not 0x000a.
+EDID:
+  Base EDID: GTF timings are used, but the EDID does not signal GTF support.
+  Base EDID: CVT timings are used, but the EDID does not signal CVT support.
+
+EDID conformity: FAIL

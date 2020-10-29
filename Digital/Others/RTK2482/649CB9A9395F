@@ -1,0 +1,92 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4a 8b 82 24 01 00 00 00
+10 13 01 03 a5 41 29 78 22 a2 c0 a6 55 49 99 26
+13 50 54 25 4e 00 81 cf 95 c0 a9 c0 b3 c0 d1 c0
+01 01 01 01 01 01 1a 36 80 a0 70 38 1f 40 30 20
+35 00 dd 0c 11 00 00 1e 00 00 00 ff 00 30 30 30
+30 30 31 0a 0a 0a 0a 0a 0a 0a 00 00 00 fc 00 4c
+65 6e 6f 76 6f 20 49 43 41 33 31 30 00 00 00 fd
+00 31 56 1d 71 1c 00 0a 20 20 20 20 20 20 01 b0
+
+3b 71 45 38 f9 a9 f8 96 75 7e f4 3d 1a ce 3e e9
+37 b5 f2 cc 2f d9 c2 b4 b6 f8 55 f2 13 e2 f9 26
+87 df c3 58 66 53 ad 22 45 01 d7 47 21 47 82 b5
+62 7f a9 85 3d c7 0f 67 b0 65 82 1c 20 b9 09 90
+58 31 9c 77 90 50 c1 f4 d1 d5 9f f3 98 91 af 27
+14 75 0f 75 1d 99 92 38 3e 89 7a 35 cd 27 70 1a
+e7 79 c2 21 31 21 3e 2f 3b b4 7c ec b6 19 ae 69
+37 7e 65 3e a3 0f 01 ab e9 e7 04 dd be 4a dd 15
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: RTK
+    Model: 9346
+    Serial Number: ...
+    Made in: week 16 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 65 cm x 41 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Monochrome or grayscale display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3339
+    Green: 0.2851, 0.5996
+    Blue : 0.1513, 0.0742
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings:
+    GTF     :  1280x720    75.000 Hz  16:9    56.400 kHz  95.654 MHz
+    GTF     :  1440x816    60.000 Hz  16:9    50.700 kHz  96.533 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    GTF     :  1680x952    60.000 Hz  16:9    59.160 kHz 132.518 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.934 Hz  16:9    66.587 kHz 138.500 MHz (477 mm x 268 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: 'Lenovo ICA310'
+  Display Range Limits:
+    Monitor ranges (GTF): 49-86 Hz V, 29-113 kHz H, max dotclock 280 MHz
+  Extension blocks: 1
+Checksum: 0xb0
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x3b:
+  3b 71 45 38 f9 a9 f8 96 75 7e f4 3d 1a ce 3e e9 ';qE8....u~.=..>.'
+  37 b5 f2 cc 2f d9 c2 b4 b6 f8 55 f2 13 e2 f9 26 '7.../.....U....&'
+  87 df c3 58 66 53 ad 22 45 01 d7 47 21 47 82 b5 '...XfS."E..G!G..'
+  62 7f a9 85 3d c7 0f 67 b0 65 82 1c 20 b9 09 90 'b...=..g.e.. ...'
+  58 31 9c 77 90 50 c1 f4 d1 d5 9f f3 98 91 af 27 'X1.w.P.........''
+  14 75 0f 75 1d 99 92 38 3e 89 7a 35 cd 27 70 1a '.u.u...8>.z5.'p.'
+  e7 79 c2 21 31 21 3e 2f 3b b4 7c ec b6 19 ae 69 '.y.!1!>/;.|....i'
+  37 7e 65 3e a3 0f 01 ab e9 e7 04 dd be 4a dd 15 '7~e>.........J..'
+Checksum: 0x15
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x24.
+  Detailed Timing Descriptor #1: Mismatch of image size 477x268 mm vs display size 650x410 mm.
+  Display Product Serial Number: Non-space after newline.
+Block 1, Unknown EDID Extension Block 0x3b:
+  Unknown Extension Block.
+
+EDID conformity: FAIL

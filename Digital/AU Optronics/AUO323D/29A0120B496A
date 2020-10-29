@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 3d 32 00 00 00 00
+14 1c 01 04 95 1f 11 78 03 3e 85 91 56 59 91 28
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 14 37 80 b8 70 38 24 40 10 10
+3e 00 35 ae 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 34 30 48 41 4b 30 33 2e 32 20 0a 00 14
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 12861
+    Made in: week 20 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5664, 0.3388
+    Green: 0.3505, 0.5683
+    Blue : 0.1582, 0.1210
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.049 Hz  16:9    67.015 kHz 141.000 MHz (309 mm x 174 mm)
+                 Hfront   16 Hsync  16 Hback 152 Hpol N
+                 Vfront    3 Vsync  14 Vback  19 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B140HAK03.2 '
+Checksum: 0x14
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

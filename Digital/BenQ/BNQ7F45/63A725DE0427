@@ -1,0 +1,143 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 45 7f 45 54 00 00
+1d 19 01 04 a5 3c 22 78 3f 61 50 a6 56 50 a0 26
+0d 50 54 a5 6b 80 d1 c0 81 c0 81 00 81 80 a9 c0
+b3 00 d1 fc 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 56 50 21 00 00 1a 00 00 00 ff 00 32 37 46
+30 31 37 39 38 53 4c 30 0a 20 00 00 00 fd 00 28
+90 de de 3c 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 58 4c 32 37 33 30 5a 0a 01 a5
+
+02 03 18 f1 4b 01 02 03 04 05 90 11 12 13 14 1f
+23 09 07 07 83 01 00 00 88 bc 00 50 a0 a0 55 50
+08 20 78 00 56 50 21 00 00 1a 74 d2 00 16 a0 a0
+09 50 04 10 11 00 56 50 21 00 00 1e 07 82 80 50
+70 38 4d 40 08 20 f8 0c 56 50 21 00 00 1a 8f 9b
+00 50 a0 a0 46 50 08 20 88 0c 56 50 21 00 00 1a
+e8 e4 00 50 a0 a0 67 50 08 20 98 04 56 50 21 00
+00 1a 00 00 00 00 00 00 00 00 00 00 00 00 00 a8
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BNQ
+    Model: 32581
+    Serial Number: ...
+    Made in: week 29 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6494, 0.3378
+    Green: 0.3125, 0.6259
+    Blue : 0.1494, 0.0517
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    Apple   :   832x624    74.551 Hz   4:3    49.726 kHz  57.284 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+    Apple   :  1152x870    75.062 Hz 192:145  68.681 kHz 100.000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    CVT     :  1920x1080  119.930 Hz  16:9   139.119 kHz 369.500 MHz (EDID 1.4 source)
+    GTF     :  1920x1080  120.000 Hz  16:9   138.840 kHz 368.759 MHz (EDID 1.3 source)
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.951 Hz  16:9    88.787 kHz 241.500 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  33 Vpol N
+    Display Product Serial Number: ...
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 40-144 Hz V, 222-222 kHz H, max dotclock 600 MHz
+    Display Product Name: 'BenQ XL2730Z'
+  Extension blocks: 1
+Checksum: 0xa5
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (native)
+    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
+    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 2:  2560x1440  119.881 Hz  16:9   182.818 kHz 482.640 MHz (598 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback  40 Hpol P
+                 Vfront    7 Vsync   8 Vback  70 Vpol N
+    DTD 3:  2560x1440  144.003 Hz  16:9   208.660 kHz 538.760 MHz (598 mm x 336 mm)
+                 Hfront    4 Hsync  16 Hback   2 Hpol P
+                 Vfront    1 Vsync   1 Vback   7 Vpol P
+    DTD 4:  1920x1080  143.850 Hz  16:9   166.435 kHz 332.870 MHz (598 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback  40 Hpol P
+                 Vfront   63 Vsync   8 Vback   6 Vpol N
+    DTD 5:  2560x1440   99.897 Hz  16:9   150.845 kHz 398.230 MHz (598 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback  40 Hpol P
+                 Vfront   56 Vsync   8 Vback   6 Vpol N
+    DTD 6:  2560x1440  143.856 Hz  16:9   221.970 kHz 586.000 MHz (598 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback  40 Hpol P
+                 Vfront   25 Vsync   8 Vback  70 Vpol N
+Checksum: 0xa8
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 221.969 kHz (Monitor: 222.000 - 222.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+EDID:
+  Base EDID: GTF timings are used, but the EDID does not signal GTF support.
+  Base EDID: CVT timings are used, but the EDID does not signal CVT support.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

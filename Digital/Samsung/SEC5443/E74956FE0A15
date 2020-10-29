@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 43 54 00 00 00 00
+00 13 01 04 a0 25 17 78 0a 48 96 b2 4c 31 b8 25
+0f 50 55 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 60 40 80 30 71 b0 23 40 64 20
+26 00 6f e6 10 00 00 1a ea 2a 80 30 71 b0 23 40
+64 20 26 00 6f e6 10 00 00 1a 00 00 00 fe 00 4a
+35 30 31 54 80 31 37 30 43 54 0a 20 00 00 00 00
+00 02 42 01 18 00 02 00 00 06 01 0a 20 20 00 33
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 21571
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    Digital interface is not defined
+    Maximum image size: 37 cm x 23 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6962, 0.2968
+    Green: 0.1933, 0.7187
+    Blue : 0.1464, 0.0595
+    White: 0.3134, 0.3339
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.001 Hz   8:5    74.101 kHz 164.800 MHz (367 mm x 230 mm)
+                 Hfront  100 Hsync  32 Hback 172 Hpol P
+                 Vfront    2 Vsync   6 Vback  27 Vpol N
+    DTD 2:  1920x1200   39.998 Hz   8:5    49.397 kHz 109.860 MHz (367 mm x 230 mm)
+                 Hfront  100 Hsync  32 Hback 172 Hpol P
+                 Vfront    2 Vsync   6 Vback  27 Vpol N
+    Alphanumeric Data String: 'J501T'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 42 01 18 00 02 00 00 06 01 0a 20 20 '....B.........  '
+Checksum: 0x33
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

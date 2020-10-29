@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae b0 40 00 00 00 00
+00 13 01 03 80 22 13 78 ea c8 95 9e 57 54 92 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 41 1c 56 a0 50 00 16 30 30 20
+25 00 58 c2 10 00 00 19 ca 16 56 6f 50 00 16 30
+30 20 25 00 58 c2 10 00 00 19 00 00 00 0f 00 8c
+09 32 8c 09 28 16 09 00 4c a3 41 54 00 00 00 fe
+00 4c 54 4e 31 35 36 41 54 30 35 36 30 31 00 06
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16560
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6201, 0.3398
+    Green: 0.3300, 0.5703
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.998 Hz 683:384  47.398 kHz  72.330 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    2 Vsync   5 Vback  15 Vpol N
+    DTD 2:  1366x768    49.999 Hz 683:384  39.499 kHz  58.340 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  31 Hpol N
+                 Vfront    2 Vsync   5 Vback  15 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 8c 09 32 8c 09 28 16 09 00 4c a3 41 54 '.....2..(...L.AT'
+    Alphanumeric Data String: 'LTN156AT05601'
+Checksum: 0x06
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL
