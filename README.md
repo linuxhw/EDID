@@ -17,8 +17,9 @@ Contents
 --------
 
 1. [ About           ](#about)
-2. [ Digital display ](#digital-display)
-3. [ Analog display  ](#analog-display)
+2. [ How to install EDID file ](#how-to-install-edid-file)
+3. [ Digital display ](#digital-display)
+4. [ Analog display  ](#analog-display)
 
 About
 -----
@@ -30,6 +31,19 @@ The structure of the repository is the following:
     ( e.g. Digital/LG Display/LGD0217/925C880E8A08 )
 
 ID of a monitor is MD5 of EDID.
+
+How to install EDID file
+------------------------
+
+Generate binary EDID file:
+
+    cat EDID.txt | grep -E '^([a-f0-9]{32}|[a-f0-9 ]{47}) | tr -d '[:space:]' | xxd -r -p > EDID.bin
+
+Verify it by `edid-decode`:
+
+    edid-decode EDID.bin
+
+Install `EDID.bin` by [write-edid](https://github.com/linuxhw/write-edid).
 
 Digital display
 ---------------
