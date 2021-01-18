@@ -100,7 +100,8 @@ Block 1, CTA-861 Extension Block:
     DTS-HD:
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
-    Dolby Digital+:
+      Audio Format Code dependent value: 0x03
+    Enhanced AC-3 (DD+):
       Max channels: 8
       Supported sample rates (kHz): 48 44.1
       Supports Joint Object Coding
@@ -108,12 +109,16 @@ Block 1, CTA-861 Extension Block:
     MAT (MLP):
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports Dolby TrueHD, object audio PCM and channel-based PCM
+      Hash calculation not required for object audio PCM or channel-based PCM
     One Bit Audio:
       Max channels: 6
       Supported sample rates (kHz): 44.1
+      Audio Format Code dependent value: 0x00
     DTS-HD:
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Audio Format Code dependent value: 0x01
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
@@ -146,9 +151,9 @@ Block 1, CTA-861 Extension Block:
         VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
       3D VIC indices with specific capabilities:
         VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (top-and-bottom)
-        VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (side-by-side)
+        VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (side-by-side, any subsampling)
         VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz (top-and-bottom)
-        VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz (side-by-side)
+        VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz (side-by-side, any subsampling)
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
@@ -161,9 +166,11 @@ Block 1, CTA-861 Extension Block:
     PT scan behavior: No Data
     IT scan behavior: Always Underscanned
     CE scan behavior: Supports both over- and underscan
-  Vendor-Specific Audio Data Block:
   Vendor-Specific Audio Data Block (Dolby), OUI 00-D0-46:
-    70 00                                           'p.'
+    Version: 1 (7 bytes)
+    Height speaker zone present
+    Surround speaker zone present
+    Center speaker zone present
   Detailed Timing Descriptors:
     DTD 3:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (698 mm x 392 mm)
                  Hfront  110 Hsync  40 Hback 220 Hpol P

@@ -121,7 +121,14 @@ Block 1, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 600 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    02 03 30 90 00 03 62 34 08 2f                   '..0...b4./'
+    Version: 2.3
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x03
+    Maximum luminance: 98 (417.710 cd/m^2)
+    Minimum luminance: 52 (0.174 cd/m^2)
+    Unknown: 0x08 0x2f
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
@@ -169,7 +176,8 @@ Failures:
 
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI): HDMI VSDB Max TMDS rate is > 340.
-  Vendor-Specific Data Block (HDMI): The HDMI Specification uses EDID 1.3, not 1.4.
+  Vendor-Specific Data Block (HDMI): The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
 EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
 

@@ -117,7 +117,10 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    01 01 30 90 00                                  '..0..'
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0x00
   Detailed Timing Descriptors:
     DTD 3:  1920x1080  119.982 Hz  16:9   137.260 kHz 285.500 MHz (697 mm x 392 mm)
                  Hfront   48 Hsync  32 Hback  80 Hpol P
@@ -147,7 +150,7 @@ EDID:
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Vendor-Specific Data Block (HDMI): The HDMI Specification uses EDID 1.3, not 1.4.
+  Vendor-Specific Data Block (HDMI): The HDMI Specification requires EDID 1.3 instead of 1.4.
 EDID:
   Base EDID: GTF timings are used, but the EDID does not signal GTF support.
   Base EDID: CVT timings are used, but the EDID does not signal CVT support.

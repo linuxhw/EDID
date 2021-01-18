@@ -118,7 +118,8 @@ Block 1, CTA-861 Extension Block:
     DTS-HD:
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
-    Dolby Digital+:
+      Audio Format Code dependent value: 0x03
+    Enhanced AC-3 (DD+):
       Max channels: 8
       Supported sample rates (kHz): 48 44.1
       Supports Joint Object Coding
@@ -126,9 +127,12 @@ Block 1, CTA-861 Extension Block:
     MAT (MLP):
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports Dolby TrueHD, object audio PCM and channel-based PCM
+      Hash calculation not required for object audio PCM or channel-based PCM
     DTS-HD:
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Audio Format Code dependent value: 0x01
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
@@ -171,7 +175,7 @@ Block 1, CTA-861 Extension Block:
         VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz (frame packing)
         VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (side-by-side, horizontal)
         VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz (top-and-bottom)
-        VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz (side-by-side)
+        VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz (side-by-side, any subsampling)
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
     Version: 1
     Maximum TMDS Character Rate: 600 MHz
@@ -193,9 +197,13 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     BT2020YCC
     BT2020RGB
-  Vendor-Specific Audio Data Block:
   Vendor-Specific Audio Data Block (Dolby), OUI 00-D0-46:
-    f0 01                                           '..'
+    Version: 1 (7 bytes)
+    Headphone playback only
+    Height speaker zone present
+    Surround speaker zone present
+    Center speaker zone present
+    Supports Dolby MAT PCM decoding at 48 kHz only, does not support TrueHD
 Checksum: 0x27
 
 ----------------

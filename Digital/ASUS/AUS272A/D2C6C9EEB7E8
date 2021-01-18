@@ -140,7 +140,10 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 112 (565.685 cd/m^2)
     Desired content min luminance: 7 (0.004 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    01 0b 30 90 00                                  '..0..'
+    Version: 1.11
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0x00
   Detailed Timing Descriptors:
     DTD 2:  2560x1440   59.951 Hz  16:9    88.787 kHz 241.500 MHz (596 mm x 335 mm)
                  Hfront   48 Hsync  32 Hback  80 Hpol P
@@ -193,7 +196,7 @@ Block 0, Base EDID:
   Display Product Serial Number: One or more trailing spaces.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
-  Vendor-Specific Data Block (HDMI): The HDMI Specification uses EDID 1.3, not 1.4.
+  Vendor-Specific Data Block (HDMI): The HDMI Specification requires EDID 1.3 instead of 1.4.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
 EDID:

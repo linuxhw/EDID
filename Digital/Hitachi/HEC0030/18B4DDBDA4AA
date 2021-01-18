@@ -103,12 +103,14 @@ Block 1, CTA-861 Extension Block:
       Max channels: 6
       Supported sample rates (kHz): 48 44.1 32
       Maximum bit rate: 640 kb/s
-    Dolby Digital+:
+    Enhanced AC-3 (DD+):
       Max channels: 6
       Supported sample rates (kHz): 48 44.1
     MAT (MLP):
       Max channels: 8
       Supported sample rates (kHz): 48
+      Supports Dolby TrueHD, object audio PCM and channel-based PCM
+      Hash calculation not required for object audio PCM or channel-based PCM
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Video Capability Data Block:
@@ -145,9 +147,11 @@ Block 1, CTA-861 Extension Block:
     Supports 16-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
-  Vendor-Specific Audio Data Block:
   Vendor-Specific Audio Data Block (Dolby), OUI 00-D0-46:
-    70 80                                           'p.'
+    Version: 1 (7 bytes)
+    Height speaker zone present
+    Surround speaker zone present
+    Center speaker zone present
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range

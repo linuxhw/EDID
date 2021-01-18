@@ -108,7 +108,8 @@ Block 1, CTA-861 Extension Block:
     DTS-HD:
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
-    Dolby Digital+:
+      Audio Format Code dependent value: 0x03
+    Enhanced AC-3 (DD+):
       Max channels: 8
       Supported sample rates (kHz): 48 44.1
       Supports Joint Object Coding
@@ -116,12 +117,16 @@ Block 1, CTA-861 Extension Block:
     MAT (MLP):
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports Dolby TrueHD, object audio PCM and channel-based PCM
+      Hash calculation not required for object audio PCM or channel-based PCM
     One Bit Audio:
       Max channels: 6
       Supported sample rates (kHz): 44.1
+      Audio Format Code dependent value: 0x00
     DTS-HD:
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Audio Format Code dependent value: 0x01
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
@@ -163,7 +168,7 @@ Block 1, CTA-861 Extension Block:
     Supports global dimming
     DM Version: 3.x
     Colorimetry: P3-D65
-    Low Latency: Standard + Low Latency
+    Low Latency: Only Standard
     Target Max Luminance: 450 cd/m^2
     Target Min Luminance: 0.39680079 cd/m^2
     Rx, Ry: 0.66015625, 0.31640625
@@ -178,9 +183,11 @@ Block 1, CTA-861 Extension Block:
     PT scan behavior: No Data
     IT scan behavior: Supports both over- and underscan
     CE scan behavior: Supports both over- and underscan
-  Vendor-Specific Audio Data Block:
   Vendor-Specific Audio Data Block (Dolby), OUI 00-D0-46:
-    70 00                                           'p.'
+    Version: 1 (7 bytes)
+    Height speaker zone present
+    Surround speaker zone present
+    Center speaker zone present
 Checksum: 0x8c
 
 ----------------

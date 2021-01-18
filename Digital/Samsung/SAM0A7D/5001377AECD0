@@ -110,7 +110,7 @@ Block 1, CTA-861 Extension Block:
       Max channels: 6
       Supported sample rates (kHz): 48 44.1 32
       Maximum bit rate: 640 kb/s
-    AAC:
+    AAC LC:
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
       Maximum bit rate: 448 kb/s
@@ -121,15 +121,18 @@ Block 1, CTA-861 Extension Block:
     One Bit Audio:
       Max channels: 2
       Supported sample rates (kHz): 176.4 88.2 44.1
-    Dolby Digital+:
+      Audio Format Code dependent value: 0x00
+    Enhanced AC-3 (DD+):
       Max channels: 8
       Supported sample rates (kHz): 48 44.1
     DTS-HD:
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Audio Format Code dependent value: 0x01
     MAT (MLP):
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supports only Dolby TrueHD
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1

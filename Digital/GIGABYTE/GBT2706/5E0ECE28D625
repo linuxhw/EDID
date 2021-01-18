@@ -130,7 +130,10 @@ Block 1, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    01 01 30 a5 00                                  '..0..'
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
@@ -192,7 +195,7 @@ Failures:
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 596x335 mm vs display size 610x350 mm.
 Block 1, CTA-861 Extension Block:
-  Vendor-Specific Data Block (HDMI): The HDMI Specification uses EDID 1.3, not 1.4.
+  Vendor-Specific Data Block (HDMI): The HDMI Specification requires EDID 1.3 instead of 1.4.
   YCbCr 4:2:0 Capability Map Data Block: Max index 19 > 17 (#SVDs).
   Detailed Timing Descriptor #2: Mismatch of image size 596x335 mm vs display size 610x350 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 596x335 mm vs display size 610x350 mm.
