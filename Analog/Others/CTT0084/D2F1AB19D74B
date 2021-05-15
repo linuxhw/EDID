@@ -1,0 +1,72 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 94 84 00 03 00 00 00
+0c 0e 01 01 08 00 00 b0 e8 5c 11 9e 59 47 9b 27
+10 48 4f 2f c0 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 40 fe 62 20 0a 20 20 20
+20 20 20 20 20 20 20 20 00 00 00 fc 51 4e 54 31
+33 32 20 20 0a 20 20 20 20 20 00 00 00 fe 41 20
+0a 20 20 20 20 20 20 20 20 20 20 20 00 00 40 fe
+62 20 0a 20 20 20 20 20 20 20 20 20 20 20 00 82
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: CTT
+    Model: 132
+    Serial Number: ...
+    Made in: week 12 of 2004
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Blank level equals black level
+    Sync: Separate
+    Image size is variable
+    Gamma: 2.76
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6181, 0.3486
+    Green: 0.2802, 0.6054
+    Blue : 0.1523, 0.0634
+    White: 0.2812, 0.3095
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    Alphanumeric Data String: ' '
+    Display Product Name: 'NT132  '
+    Alphanumeric Data String: ' '
+    Alphanumeric Data String: ' '
+Checksum: 0x82
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Descriptor #1: Monitor descriptor block has byte 2 nonzero (0x40).
+  Display Descriptor #1: Monitor descriptor block has byte 4 nonzero (0x62).
+  Alphanumeric Data String: One or more trailing spaces.
+  Display Descriptor #2: Monitor descriptor block has byte 4 nonzero (0x51).
+  Display Product Name: One or more trailing spaces.
+  Display Descriptor #3: Monitor descriptor block has byte 4 nonzero (0x41).
+  Alphanumeric Data String: One or more trailing spaces.
+  Display Descriptor #4: Monitor descriptor block has byte 2 nonzero (0x40).
+  Display Descriptor #4: Monitor descriptor block has byte 4 nonzero (0x62).
+  Alphanumeric Data String: One or more trailing spaces.
+
+EDID conformity: FAIL

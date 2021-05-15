@@ -1,0 +1,159 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 25 e4 2a 1b 01 01 01 01
+1a 1c 01 03 80 3c 22 78 2a 44 41 a4 57 4d 9f 27
+0e 50 54 21 08 00 81 80 81 c0 a9 c0 d1 c0 e1 c0
+01 01 01 01 01 01 08 e8 00 30 f2 70 5a 80 b0 58
+8a 00 56 50 21 00 00 1e 00 00 00 fd 00 17 3d 0f
+88 3c 00 0a 20 20 20 20 20 20 00 00 00 ff 00 47
+47 56 30 30 30 30 31 37 33 32 4f 0a 00 00 00 fc
+00 4b 48 32 37 35 30 56 2d 55 48 44 0a 20 01 33
+
+02 03 41 70 4d 01 02 03 04 05 06 07 10 20 22 5d
+5f 61 23 09 07 07 83 01 00 00 6c 03 0c 00 10 00
+38 3c 2f 00 40 01 03 67 d8 5d c4 01 78 80 01 e3
+0f 00 10 e2 00 ca e6 06 07 01 00 00 00 e3 05 60
+00 08 e8 00 30 f2 70 5a 80 b0 58 8a 00 56 50 21
+00 00 1e 04 74 00 30 f2 70 5a 80 b0 58 8a 00 56
+50 21 00 00 1e f1 cb 00 50 f0 70 3e 80 08 20 08
+0c 56 50 21 00 00 1a 00 00 00 00 00 00 00 00 89
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: IOD
+    Model: 6954
+    Serial Number: ...
+    Made in: week 26 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6416, 0.3398
+    Green: 0.3017, 0.6210
+    Blue : 0.1533, 0.0546
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    DMT 0x54:  2048x1152   60.000 Hz  16:9    72.000 kHz 162.000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.000 Hz  16:9   135.000 kHz 594.000 MHz (598 mm x 336 mm)
+                 Hfront  176 Hsync  88 Hback 296 Hpol P
+                 Vfront    8 Vsync  10 Vback  72 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 23-61 Hz V, 15-136 kHz H, max dotclock 600 MHz
+    Display Product Serial Number: ...
+    Display Product Name: 'KH2750V-UHD'
+  Extension blocks: 1
+Checksum: 0x33
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC   6:  1440x480i   59.940 Hz   4:3    15.734 kHz  27.000 MHz
+    VIC   7:  1440x480i   59.940 Hz  16:9    15.734 kHz  27.000 MHz
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+    VIC  34:  1920x1080   30.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  93:  3840x2160   24.000 Hz  16:9    54.000 kHz 297.000 MHz
+    VIC  95:  3840x2160   30.000 Hz  16:9    67.500 kHz 297.000 MHz
+    VIC  97:  3840x2160   60.000 Hz  16:9   135.000 kHz 594.000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+    Supported Content Types:
+      Graphics
+      Photo
+      Cinema
+      Game
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000 Hz  16:9    67.500 kHz 297.000 MHz
+        HDMI VIC 3:  3840x2160   24.000 Hz  16:9    54.000 kHz 297.000 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+  YCbCr 4:2:0 Capability Map Data Block:
+    VIC  97:  3840x2160   60.000 Hz  16:9    67.500 kHz 297.000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 0 (50.000 cd/m^2)
+    Desired content max frame-average luminance: 0 (50.000 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Colorimetry Data Block:
+    BT2020cYCC
+    BT2020YCC
+  Detailed Timing Descriptors:
+    DTD 2:  3840x2160   60.000 Hz  16:9   135.000 kHz 594.000 MHz (598 mm x 336 mm)
+                 Hfront  176 Hsync  88 Hback 296 Hpol P
+                 Vfront    8 Vsync  10 Vback  72 Vpol P
+    DTD 3:  3840x2160   30.000 Hz  16:9    67.500 kHz 297.000 MHz (598 mm x 336 mm)
+                 Hfront  176 Hsync  88 Hback 296 Hpol P
+                 Vfront    8 Vsync  10 Vback  72 Vpol P
+    DTD 4:  3840x2160   59.940 Hz  16:9   133.186 kHz 522.090 MHz (598 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback  40 Hpol P
+                 Vfront   48 Vsync   8 Vback   6 Vpol N
+Checksum: 0x89
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 1 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
+
+EDID conformity: FAIL

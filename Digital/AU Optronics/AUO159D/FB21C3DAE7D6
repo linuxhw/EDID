@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 9d 15 00 00 00 00
+00 15 01 04 90 26 15 78 02 c8 95 9e 57 54 92 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a0 37 80 ae 70 38 34 40 6c 30
+aa 00 7d d6 10 00 00 1a a0 37 80 ae 70 38 34 40
+6c 30 aa 00 7d d6 10 00 00 1a 00 00 00 fe 00 48
+38 44 33 4b 80 42 31 37 33 48 57 31 00 00 00 00
+00 00 41 09 96 01 01 00 00 02 01 0a 20 20 00 bb
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 5533
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6201, 0.3398
+    Green: 0.3300, 0.5703
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.074 Hz  16:9    68.004 kHz 142.400 MHz (381 mm x 214 mm)
+                 Hfront  108 Hsync  48 Hback  18 Hpol P
+                 Vfront   10 Vsync  10 Vback  32 Vpol N
+    DTD 2:  1920x1080   60.074 Hz  16:9    68.004 kHz 142.400 MHz (381 mm x 214 mm)
+                 Hfront  108 Hsync  48 Hback  18 Hpol P
+                 Vfront   10 Vsync  10 Vback  32 Vpol N
+    Alphanumeric Data String: 'H8D3K'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 09 96 01 01 00 00 02 01 0a 20 20 '....A.........  '
+Checksum: 0xbb
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

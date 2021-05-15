@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 01 70 00 00 00 00
+00 12 01 03 80 22 13 78 0a 4e 85 9e 5b 55 95 26
+1a 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3e 1c 56 a0 50 00 16 30 30 20
+35 00 58 c2 10 00 00 19 3e 1c 56 a0 50 00 16 30
+30 20 35 00 58 c2 10 00 00 19 00 00 00 fe 00 44
+36 36 39 4a 81 31 35 36 57 48 32 0a 00 00 00 00
+00 ff ff ff ff ff ff ff ff 01 01 0a 20 20 00 c1
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 28673
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6181, 0.3554
+    Green: 0.3349, 0.5839
+    Blue : 0.1503, 0.1015
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.973 Hz 683:384  47.379 kHz  72.300 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  14 Vpol N
+    DTD 2:  1366x768    59.973 Hz 683:384  47.379 kHz  72.300 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  14 Vpol N
+    Alphanumeric Data String: 'D669J'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 ff ff ff ff ff ff ff ff 01 01 0a 20 20 '..............  '
+Checksum: 0xc1
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

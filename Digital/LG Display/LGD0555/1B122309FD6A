@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 55 05 00 03 03 00
+00 1e 01 04 a5 1a 12 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 46 2b 00 b4 60 00 34 40 3c 24
+55 00 07 af 10 00 00 1a 00 00 00 fd 00 30 3c 41
+41 0c 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c
+47 44 5f 4d 50 31 2e 30 5f 0a 20 20 00 00 00 fe
+00 4c 50 31 32 35 57 58 31 31 32 34 30 33 00 76
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1365
+    Serial Number: ...
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 26 cm x 18 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1536x1024   59.997 Hz   3:2    64.557 kHz 110.780 MHz (263 mm x 175 mm)
+                 Hfront   60 Hsync  36 Hback  84 Hpol P
+                 Vfront    5 Vsync   5 Vback  42 Vpol N
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 48-60 Hz V, 65-65 kHz H, max dotclock 120 MHz
+    Alphanumeric Data String: 'LGD_MP1.0_'
+    Alphanumeric Data String: 'LP125WX112403'
+Checksum: 0x76
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

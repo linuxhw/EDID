@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 10 c1 13 00 00 00 00
+25 10 01 03 80 25 17 78 0a ca b0 97 53 50 8c 26
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2f 3f 80 08 71 b0 23 40 64 20
+26 00 6e e5 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 28 92 02 50 02 00 00 00 fe 00 4a
+48 32 39 31 03 aa 4d 31 4c 41 32 41 00 00 00 fe
+00 22 32 3e 46 67 8d bd ff 02 01 0a 20 20 00 3d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SHP
+    Model: 5057
+    Made in: week 37 of 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 37 cm x 23 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5927, 0.3242
+    Green: 0.3144, 0.5488
+    Blue : 0.1503, 0.1279
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.969 Hz   8:5    74.061 kHz 161.750 MHz (366 mm x 229 mm)
+                 Hfront  100 Hsync  32 Hback 132 Hpol N
+                 Vfront    2 Vsync   6 Vback  27 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 28 92 02 50 02 '...........(..P.'
+    Alphanumeric Data String: 'JH291'
+    Alphanumeric Data String: '"2>Fg'
+Checksum: 0x3d
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

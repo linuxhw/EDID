@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 20 06 00 00 00 00
+01 18 01 04 95 22 13 78 0a 24 10 97 59 54 8e 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 1b 56 77 50 00 13 30 30 20
+36 00 58 c2 10 00 00 1a a2 17 56 b9 50 00 2d 30
+30 20 36 00 58 c2 10 00 00 1a 00 00 00 fe 00 46
+57 31 54 30 80 4e 54 31 35 36 57 48 00 00 00 00
+00 00 41 01 94 00 10 00 00 09 01 0a 20 20 00 ba
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 1568
+    Made in: week 1 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5898, 0.3496
+    Green: 0.3291, 0.5546
+    Blue : 0.1523, 0.1181
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.999 Hz 683:384  47.219 kHz  70.120 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  39 Hpol P
+                 Vfront    3 Vsync   6 Vback  10 Vpol N
+    DTD 2:  1366x768    47.979 Hz 683:384  39.007 kHz  60.500 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback 105 Hpol P
+                 Vfront    3 Vsync   6 Vback  36 Vpol N
+    Alphanumeric Data String: 'FW1T0'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 01 94 00 10 00 00 09 01 0a 20 20 '....A.........  '
+Checksum: 0xba
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

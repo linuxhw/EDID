@@ -1,0 +1,85 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 08 93 00 c1 cf f4 61 9a
+31 1b 01 04 b5 41 29 78 c2 8b 18 a6 54 4f 9e 27
+11 47 53 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 da 61 d0 a0 c0 00 22 80 30 20
+3a 00 8e 99 21 00 00 1a 00 00 00 0f 00 32 35 39
+30 31 31 30 39 32 37 0a 20 20 00 00 00 fc 00 4d
+44 43 43 2d 36 34 33 30 0a 20 20 20 00 00 00 fd
+00 0f 6e 19 dc 21 00 00 00 00 00 00 00 00 01 4f
+
+10 01 03 00 00 da 61 d0 a0 c0 00 22 80 30 20 3a
+00 8e 99 21 00 00 1a 6f 45 00 a0 60 00 31 80 30
+20 3a 00 32 99 11 00 00 1a a2 49 68 a0 60 00 31
+80 30 20 3a 00 47 99 11 00 00 1a 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 75
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BDS
+    Model: 49408
+    Serial Number: ...
+    Made in: week 49 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 65 cm x 41 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6503, 0.3281
+    Green: 0.3105, 0.6201
+    Blue : 0.1523, 0.0673
+    White: 0.2792, 0.3242
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3280x2048   34.976 Hz 205:128  72.820 kHz 250.500 MHz (654 mm x 409 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync  10 Vback  21 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 32 35 39 30 31 31 30 39 32 37 0a 20 20 '...2590110927.  '
+    Display Product Name: 'MDCC-6430'
+  Display Range Limits:
+    Monitor ranges (GTF): 15-110 Hz V, 25-220 kHz H, max dotclock 330 MHz
+  Extension blocks: 1
+Checksum: 0x4f
+
+----------------
+
+Block 1, Video Timing Extension Block:
+  Version: 1
+  Detailed Timing Descriptors:
+    DTD:  3280x2048   34.976 Hz 205:128  72.820 kHz 250.500 MHz (654 mm x 409 mm)
+               Hfront   48 Hsync  32 Hback  80 Hpol P
+               Vfront    3 Vsync  10 Vback  21 Vpol N
+    DTD:  1536x2048   49.979 Hz   3:4   104.805 kHz 177.750 MHz (306 mm x 409 mm)
+               Hfront   48 Hsync  32 Hback  80 Hpol P
+               Vfront    3 Vsync  10 Vback  36 Vpol N
+    DTD:  1640x2048   49.939 Hz 205:256 104.722 kHz 188.500 MHz (327 mm x 409 mm)
+               Hfront   48 Hsync  32 Hback  80 Hpol P
+               Vfront    3 Vsync  10 Vback  36 Vpol N
+Checksum: 0x75
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+
+EDID conformity: FAIL

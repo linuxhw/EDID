@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 28 17 00 00 00 00
+0f 16 01 04 90 26 15 78 02 1a 05 9e 56 57 96 28
+13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1c 2a 40 54 61 84 1a 30 30 20
+35 00 7e d6 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 48
+32 4d 47 54 80 31 37 33 46 47 45 0a 00 00 00 00
+00 00 41 01 96 01 00 00 00 02 01 0a 20 20 00 25
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5928
+    Made in: week 15 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6171, 0.3369
+    Green: 0.3417, 0.5878
+    Blue : 0.1562, 0.0742
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.008 Hz  16:9    55.567 kHz 107.800 MHz (382 mm x 214 mm)
+                 Hfront   48 Hsync  32 Hback 260 Hpol P
+                 Vfront    3 Vsync   5 Vback  18 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'H2MGT'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 01 96 01 00 00 00 02 01 0a 20 20 '....A.........  '
+Checksum: 0x25
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

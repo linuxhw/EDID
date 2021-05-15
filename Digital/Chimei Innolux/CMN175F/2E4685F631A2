@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 5f 17 00 00 00 00
+03 1e 01 04 a5 26 15 78 02 ed c5 a7 54 4c 98 23
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9e 85 80 a0 70 38 3e 40 30 20
+a5 00 7d d6 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 36
+43 52 58 58 80 31 37 33 48 43 45 0a 00 00 00 00
+00 02 41 0f 9e 00 10 00 00 0b 01 0a 20 20 00 3c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5983
+    Made in: week 3 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6552, 0.3300
+    Green: 0.2998, 0.5947
+    Blue : 0.1396, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  144.003 Hz  16:9   164.452 kHz 342.060 MHz (381 mm x 214 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront   10 Vsync   5 Vback  47 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: '6CRXX'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 0f 9e 00 10 00 00 0b 01 0a 20 20 '....A.........  '
+Checksum: 0x3c
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,163 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d d9 02 2b 01 01 01 01
+30 14 01 03 80 00 00 78 0a f2 0d a7 54 51 99 24
+10 4f 5c 20 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 00 00 00 00 00 1e 02 3a 80 18 71 38 2d 40
+50 2c 45 00 00 00 00 00 00 1e 00 00 00 fc 00 53
+4f 4e 59 20 41 56 41 4d 50 0a 20 20 00 00 00 fd
+00 31 3d 0f 2e 08 00 0a 20 20 20 20 20 20 01 39
+
+02 03 3b f5 4a 02 11 84 93 05 14 10 1f 20 22 38
+09 7f 07 0d 7f 07 0f 7f 07 15 07 55 3d 1f c0 57
+06 00 67 54 00 5f 7e 01 83 5f 00 00 6e 03 0c 00
+11 00 b8 21 20 c0 04 00 00 03 fc 01 1d 00 72 51
+d0 1e 20 6e 28 55 00 00 00 00 00 00 1a 01 1d 00
+bc 52 d0 1e 20 b8 28 55 40 00 00 00 00 00 1e 02
+3a 80 d0 72 38 2d 40 10 2c 25 80 00 00 00 00 00
+1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 cc
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SNY
+    Model: 11010
+    Serial Number: ...
+    Made in: week 48 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6552, 0.3310
+    Green: 0.3164, 0.5996
+    Blue : 0.1406, 0.0625
+    White: 0.3115, 0.3603
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 2:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+                 Hfront   80 Hsync  44 Hback 156 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    Display Product Name: 'SONY AVAMP'
+  Display Range Limits:
+    Monitor ranges (GTF): 49-61 Hz V, 15-46 kHz H, max dotclock 80 MHz
+  Extension blocks: 1
+Checksum: 0x39
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 5
+  Video Data Block:
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (native)
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz (native)
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+    VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+    VIC  34:  1920x1080   30.000 Hz  16:9    33.750 kHz  74.250 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    Linear PCM:
+      Max channels: 6
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    Linear PCM:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 680 kb/s
+    DTS:
+      Max channels: 6
+      Supported sample rates (kHz): 96 88.2 48 44.1 32
+      Maximum bit rate: 1536 kb/s
+    Enhanced AC-3 (DD+):
+      Max channels: 8
+      Supported sample rates (kHz): 48 44.1
+    MAT (MLP):
+      Max channels: 8
+      Supported sample rates (kHz): 192 96 48
+      Supports only Dolby TrueHD
+    DTS-HD:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Audio Format Code dependent value: 0x01
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+    LFE1 - Low Frequency Effects 1
+    FC - Front Center
+    BL/BR - Back Left/Right
+    BC - Back Center
+    RLC/RRC - Rear Left/Right of Center (Deprecated)
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.1.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 165 MHz
+    Extended HDMI video details:
+      3D present
+      3D-capable-VIC mask present
+      3D VIC indices that support these capabilities:
+        VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+        VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+        VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+        VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+        VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+        VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+        VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+        VIC  34:  1920x1080   30.000 Hz  16:9    33.750 kHz  74.250 MHz
+  Detailed Timing Descriptors:
+    DTD 3:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+                 Hfront  110 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol N
+    DTD 4:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+                 Hfront  440 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+    DTD 5:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+                 Hfront  528 Hsync  44 Hback 148 Hpol P
+                 Vfront    2 Vsync   5 Vback  38 Vpol P
+Checksum: 0xcc
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+Failures:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 60.000 Hz (Monitor: 49.000 - 61.000 Hz)
+    Horizontal Freq: 27.000 - 67.500 kHz (Monitor: 15.000 - 46.000 kHz)
+    Maximum Clock: 148.500 MHz (Monitor: 80.000 MHz)
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

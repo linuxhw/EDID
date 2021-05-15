@@ -1,0 +1,156 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d d9 02 6d 01 01 01 01
+2b 15 01 03 80 a0 5a 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 20 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 01 1d 00 72 51 d0 1e 20 6e 28
+55 00 40 84 63 00 00 1e 01 1d 00 bc 52 d0 1e 20
+b8 28 55 40 40 84 63 00 00 1e 00 00 00 fd 00 30
+3e 0f 46 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 4f 4e 59 20 48 4d 44 0a 20 20 20 20 01 0f
+
+02 03 30 f0 4d 10 1f 20 04 13 3c 05 14 03 02 12
+11 01 23 0d 07 07 83 0f 00 00 6e 03 0c 00 10 00
+b8 2d 2f c8 04 01 41 00 dc e3 05 1f 01 e2 00 7b
+8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 a0 2a 53 00
+00 18 8c 0a d0 90 20 40 31 20 0c 40 55 00 81 60
+00 00 00 18 d6 09 80 a0 20 e0 2d 10 10 60 a2 00
+81 60 00 08 08 18 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SNY
+    Model: 27906
+    Serial Number: ...
+    Made in: week 43 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 160 cm x 90 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (1600 mm x 900 mm)
+                 Hfront  110 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+    DTD 2:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz (1600 mm x 900 mm)
+                 Hfront  440 Hsync  40 Hback 220 Hpol P
+                 Vfront    5 Vsync   5 Vback  20 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 48-62 Hz V, 15-70 kHz H, max dotclock 150 MHz
+    Display Product Name: 'SONY HMD'
+  Extension blocks: 1
+Checksum: 0x0f
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+    VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC  60:  1280x720    24.000 Hz  16:9    18.000 kHz  59.400 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
+    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+    LFE1 - Low Frequency Effects 1
+    FC - Front Center
+    BL/BR - Back Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+    Supported Content Types:
+      Graphics
+      Photo
+      Cinema
+      Game
+    Extended HDMI video details:
+      3D present
+      3D-capable-VIC mask present
+      Base EDID image size is aspect ratio
+      3D: Side-by-side (half, horizontal)
+      3D: Top-and-bottom
+      3D: Frame-packing
+      3D VIC indices that support these capabilities:
+        VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+        VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+        VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+        VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+        VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    sYCC601
+    opYCC601
+    opRGB
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 3:   720x480    59.940 Hz   3:2    31.469 kHz  27.000 MHz (1440 mm x 810 mm)
+                 Hfront   16 Hsync  62 Hback  60 Hpol N
+                 Vfront    9 Vsync   6 Vback  30 Vpol N
+    DTD 4:   720x576    50.000 Hz   5:4    31.250 kHz  27.000 MHz (129 mm x 96 mm)
+                 Hfront   12 Hsync  64 Hback  68 Hpol N
+                 Vfront    5 Vsync   5 Vback  39 Vpol N
+    DTD 5:   640x480    59.952 Hz   4:3    31.475 kHz  25.180 MHz (129 mm x 96 mm)
+                 Hfront   16 Hsync  96 Hback  48 Hpol N Hborder 8
+                 Vfront   10 Vsync   2 Vback  33 Vpol N Vborder 8
+Checksum: 0x0c
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Mismatch of image size 1440x810 mm vs display size 1600x900 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 129x96 mm vs display size 1600x900 mm.
+  Detailed Timing Descriptor #5: Mismatch of image size 129x96 mm vs display size 1600x900 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 60.000 Hz (Monitor: 48.000 - 62.000 Hz)
+
+EDID conformity: FAIL

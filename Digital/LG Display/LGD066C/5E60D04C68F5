@@ -1,0 +1,88 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 6c 06 00 00 00 00
+00 1d 01 04 a5 26 15 78 03 eb 95 a3 54 4b 9e 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 34 d0 80 a0 70 38 76 4c 30 20
+35 00 7e d7 10 00 00 1a 00 00 00 fd 0e 3c 2d 4f
+4f 43 01 0a 20 20 20 20 20 20 00 00 00 fe 00 47
+50 32 47 37 80 31 37 33 57 46 47 0a 00 00 00 00
+00 02 41 1f 9e 00 10 00 00 0f 01 0a 20 20 01 4f
+
+70 13 79 00 00 03 01 14 8b 04 01 84 7f 07 4f 00
+2f 80 1f 00 37 04 1e 00 09 00 04 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 3f 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1644
+    Made in: 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2949, 0.6201
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.012 Hz  16:9   256.250 kHz 533.000 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback 3182 Vpol N
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 60-300 Hz V, 334-334 kHz H, max dotclock 670 MHz
+    Alphanumeric Data String: 'GP2G7'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 1f 9e 00 10 00 00 0f 01 0a 20 20 '....A.........  '
+  Extension blocks: 1
+Checksum: 0x4f
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  1920x1080  300.180 Hz  16:9   333.500 kHz 667.000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   0 Hpol P
+               Vfront   10 Vsync   5 Vback  16 Vpol N
+  Checksum: 0x3f
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 256.250 - 333.500 kHz (Monitor: 334.000 - 334.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Video Timing Modes Type 1 - Detailed Timings Data Block: 0 or negative horizontal back porch.
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

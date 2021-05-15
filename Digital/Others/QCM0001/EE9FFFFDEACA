@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 44 6d 01 00 01 00 00 00
+1b 10 01 03 80 50 2d 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 85 3a 38 70 40 c4 44 80 30 10
+cc 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 73 73 20 66 68 64 20 63 6d 64 20 64 73 00 5c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: QCM
+    Model: 1
+    Serial Number: ...
+    Made in: week 27 of 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 80 cm x 45 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1080x2244   54.360 Hz  90:187 125.680 kHz 149.810 MHz (analog composite, sync-on-green)
+                 Hfront   48 Hsync  16 Hback  48 Hpol N
+                 Vfront   28 Vsync  12 Vback  28 Vpol N
+    Empty Descriptor
+    Empty Descriptor
+    Alphanumeric Data String: 'ss fhd cmd ds'
+Checksum: 0x5c
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

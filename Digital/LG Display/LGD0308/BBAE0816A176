@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 08 03 00 00 00 00
+00 14 01 04 b0 22 13 78 02 bc 25 af 4e 34 b7 25
+0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2e 36 80 a0 70 38 1f 40 30 20
+35 00 58 c2 10 00 00 19 22 24 80 a0 70 38 1f 40
+30 20 35 00 58 c2 10 00 00 19 00 00 00 fe 00 44
+33 47 39 57 80 31 35 36 57 46 33 0a 00 00 00 00
+00 04 4a 01 94 00 02 00 00 06 01 0a 20 20 00 c2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 776
+    Made in: 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    Digital interface is not defined
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6855, 0.3076
+    Green: 0.2060, 0.7148
+    Blue : 0.1445, 0.0449
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.020 Hz  16:9    66.683 kHz 138.700 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 2:  1920x1080   40.028 Hz  16:9    44.471 kHz  92.500 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    Alphanumeric Data String: 'D3G9W'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 04 4a 01 94 00 02 00 00 06 01 0a 20 20 '....J.........  '
+Checksum: 0xc2
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

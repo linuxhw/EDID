@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 25 cc 02 00 00 00 00 00
+00 13 01 03 90 1f 11 78 0a c8 85 9e 57 54 9b 26
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c6 1b 56 7f 50 00 19 30 1f 15
+34 00 35 ae 10 00 00 1a c6 1b 56 7f 50 00 19 30
+1f 15 34 00 35 ae 10 00 00 00 00 00 00 fe 00 48
+34 38 34 4e 80 31 34 30 47 57 30 31 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 01 0a 20 20 00 9b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: INL
+    Model: 2
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6201, 0.3398
+    Green: 0.3300, 0.6054
+    Blue : 0.1503, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.053 Hz 683:384  47.622 kHz  71.100 MHz (309 mm x 174 mm)
+                 Hfront   31 Hsync  21 Hback  75 Hpol P
+                 Vfront    3 Vsync   4 Vback  18 Vpol N
+    DTD 2:  1366x768    60.053 Hz 683:384  47.622 kHz  71.100 MHz (analog composite, sync-on-green, 309 mm x 174 mm)
+                 Hfront   31 Hsync  21 Hback  75 Hpol N
+                 Vfront    3 Vsync   4 Vback  18 Vpol N
+    Alphanumeric Data String: 'H484N'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20 '..............  '
+Checksum: 0x9b
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

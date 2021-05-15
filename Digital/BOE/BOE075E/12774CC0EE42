@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 5e 07 00 00 00 00
+01 1b 01 04 a5 1d 11 78 0a 41 44 a6 57 51 99 26
+11 4f 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 39 80 18 71 38 28 40 30 20
+36 00 26 a5 10 00 00 1a 36 2e 80 18 71 38 28 40
+30 20 36 00 26 a5 10 00 00 1a 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 33 33 46 48 42 2d 4e 33 33 0a 00 01
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 1886
+    Made in: week 1 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6494, 0.3398
+    Green: 0.3164, 0.5986
+    Blue : 0.1494, 0.0664
+    White: 0.3095, 0.3242
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.984 Hz  16:9    67.182 kHz 147.800 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback 200 Hpol P
+                 Vfront    3 Vsync   6 Vback  31 Vpol N
+    DTD 2:  1920x1080   48.011 Hz  16:9    53.773 kHz 118.300 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback 200 Hpol P
+                 Vfront    3 Vsync   6 Vback  31 Vpol N
+    Alphanumeric Data String: 'BOE CQ'
+    Alphanumeric Data String: 'NV133FHB-N33'
+Checksum: 0x01
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 09 41 01 00 00 00
+0b 14 01 03 80 2c 19 78 ee 9e 70 a6 55 4b 9a 25
+13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3c 2e 40 00 62 84 22 30 18 50
+13 00 bb f9 10 00 00 1e 40 2e 40 00 62 84 22 30
+18 50 13 00 bb f9 10 00 00 1e 00 00 00 fc 00 48
+50 20 4f 6d 6e 69 2f 50 72 6f 0a 20 00 00 00 fd
+00 37 41 1a 41 0d 00 0a 20 20 20 20 20 20 00 87
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 16649
+    Serial Number: ...
+    Made in: week 11 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 44 cm x 25 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3330
+    Green: 0.2958, 0.6035
+    Blue : 0.1455, 0.0771
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.002 Hz  16:9    56.042 kHz 118.360 MHz (443 mm x 249 mm)
+                 Hfront   24 Hsync  80 Hback 408 Hpol P
+                 Vfront    1 Vsync   3 Vback  30 Vpol P
+    DTD 2:  1600x900    60.022 Hz  16:9    56.061 kHz 118.400 MHz (443 mm x 249 mm)
+                 Hfront   24 Hsync  80 Hback 408 Hpol P
+                 Vfront    1 Vsync   3 Vback  30 Vpol P
+    Display Product Name: 'HP Omni/Pro'
+  Display Range Limits:
+    Monitor ranges (GTF): 55-65 Hz V, 26-65 kHz H, max dotclock 130 MHz
+Checksum: 0x87
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+
+EDID conformity: FAIL

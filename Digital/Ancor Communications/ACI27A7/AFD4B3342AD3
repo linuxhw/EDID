@@ -1,0 +1,87 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 a7 27 c9 87 02 00
+0a 19 01 04 a5 3c 22 78 3b 87 e5 a4 56 50 9e 26
+0d 50 54 27 cf 00 d1 c0 d1 e8 81 c0 71 4f d1 de
+81 de a9 c0 a9 de f4 b7 00 50 a0 a0 30 50 08 20
+78 00 80 68 21 00 00 1a 56 5e 00 a0 a0 a0 29 50
+30 20 35 00 80 68 21 00 00 1a 5b 8b 00 50 a0 a0
+3f 50 08 20 18 0c 80 68 21 00 00 1a 00 00 00 fd
+00 23 78 18 de 3c 01 0a 20 20 20 20 20 20 00 f5
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: ACI
+    Model: 10151
+    Serial Number: ...
+    Made in: week 10 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6425, 0.3359
+    Green: 0.3134, 0.6201
+    Blue : 0.1513, 0.0527
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    CVT     :  1920x1080   99.898 Hz  16:9   114.583 kHz 302.500 MHz (EDID 1.4 source)
+    GTF     :  1920x1080  100.000 Hz  16:9   114.400 kHz 302.016 MHz (EDID 1.3 source)
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x15:  1152x864    75.000 Hz   4:3    67.500 kHz 108.000 MHz
+    CVT     :  1920x1080   89.926 Hz  16:9   102.515 kHz 269.000 MHz (EDID 1.4 source)
+    GTF     :  1920x1080   90.000 Hz  16:9   102.330 kHz 270.151 MHz (EDID 1.3 source)
+    CVT     :  1280x720    89.804 Hz  16:9    68.341 kHz 117.000 MHz (EDID 1.4 source)
+    GTF     :  1280x720    90.000 Hz  16:9    68.310 kHz 118.040 MHz (EDID 1.3 source)
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    CVT     :  1600x904    89.867 Hz  16:9    85.823 kHz 186.750 MHz (EDID 1.4 source)
+    GTF     :  1600x904    90.000 Hz  16:9    85.680 kHz 186.440 MHz (EDID 1.3 source)
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440  119.878 Hz  16:9   178.379 kHz 470.920 MHz (640 mm x 360 mm)
+                 Hfront    8 Hsync  32 Hback  40 Hpol P
+                 Vfront    7 Vsync   8 Vback  33 Vpol N
+    DTD 2:  2560x1440   59.951 Hz  16:9    88.787 kHz 241.500 MHz (640 mm x 360 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  33 Vpol N
+    DTD 3:  2560x1440   89.909 Hz  16:9   135.133 kHz 356.750 MHz (640 mm x 360 mm)
+                 Hfront    8 Hsync  32 Hback  40 Hpol P
+                 Vfront   49 Vsync   8 Vback   6 Vpol N
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 35-120 Hz V, 24-222 kHz H, max dotclock 600 MHz
+Checksum: 0xf5
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 640x360 mm vs display size 600x340 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 640x360 mm vs display size 600x340 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 640x360 mm vs display size 600x340 mm.
+  Missing Display Product Name.
+EDID:
+  Base EDID: GTF timings are used, but the EDID does not signal GTF support.
+  Base EDID: CVT timings are used, but the EDID does not signal CVT support.
+
+EDID conformity: FAIL

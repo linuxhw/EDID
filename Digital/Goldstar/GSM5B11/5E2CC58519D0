@@ -1,0 +1,104 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 11 5b 10 8a 04 00
+02 1b 01 04 b5 3c 22 78 80 0f 91 ae 52 43 b0 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 10 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 ff 00 37
+30 32 4e 54 41 42 38 52 34 38 38 0a 00 00 00 fc
+00 4c 47 20 55 6c 74 72 61 46 69 6e 65 0a 01 6f
+
+70 12 79 03 00 01 00 0c 3e 17 16 0d 00 14 40 0b
+50 78 4e 99 29 00 10 48 68 b6 bd 6d 41 4e 94 a7
+2c 6a c8 e8 42 d6 88 12 00 16 80 10 10 00 ff 09
+3f 0b 00 00 00 00 00 47 53 4d 11 5b 01 01 01 01
+03 00 14 45 b7 00 08 ff 09 4f 00 07 80 1f 00 3f
+0b 51 00 00 00 07 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 3b 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 23313
+    Serial Number: ...
+    Made in: week 2 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Standby
+    Supported color formats: RGB 4:4:4
+    First detailed timing does not include the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2646, 0.6904
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    Dummy Descriptor:
+    Dummy Descriptor:
+    Display Product Serial Number: ...
+    Display Product Name: 'LG UltraFine'
+  Extension blocks: 1
+Checksum: 0x6f
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Standalone display device
+  Display Parameters Data Block (0x01):
+    Image size: 595.0 mm x 335.0 mm
+    Pixels: 5120 x 2880
+    Feature support flags:
+      Power management (DPM)
+      Separate audio inputs provided
+    Gamma: 2.20
+    Aspect ratio: 1.78
+    Dynamic bpc native: 10
+    Dynamic bpc overall: 10
+  ContainerID Data Block:
+    4868b6bd-6d41-4e94-a72c-6ac8e842d688
+  Tiled Display Topology Data Block (0x12):
+    Capabilities:
+      Behavior if it is the only tile: Undefined
+      Behavior if more than one tile and fewer than total number of tiles: Undefined
+    Tiled display consists of a single physical display enclosure
+    Num horizontal tiles: 2 Num vertical tiles: 1
+    Tile location: 1, 0
+    Tile resolution: 2560x2880
+    Tiled Display Manufacturer/Vendor ID: GSM
+    Tiled Display Product ID Code: 23313
+    Tiled Display Serial Number: 16843009
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x2880   60.000 Hz   0:0   177.720 kHz 469.180 MHz (aspect undefined, no 3D stereo)
+               Hfront    8 Hsync  32 Hback  40 Hpol P
+               Vfront    1 Vsync   8 Vback  73 Vpol N
+  Checksum: 0x3b
+Checksum: 0x90
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Missing preferred timing.
+Block 1, DisplayID Extension Block:
+  ContainerID Data Block: Use of DisplayID v2.0 tag for DisplayID v1.2.
+  Video Timing Modes Type 1 - Detailed Timings Data Block: Unknown aspect 0x08.
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

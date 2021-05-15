@@ -1,0 +1,60 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac ed 93 f2 06 22 00
+27 18 01 03 80 30 1b 78 0a a6 a0 a6 56 51 9c 26
+10 50 54 00 00 00 01 00 01 00 01 00 01 00 01 00
+01 00 01 00 01 00 08 39 80 00 71 38 28 40 30 20
+84 00 dc 0c 11 00 00 1e 00 00 00 fc 00 4f 70 74
+69 50 6c 65 78 20 33 32 34 30 00 00 00 10 00 00
+0a 20 20 20 20 20 20 20 20 20 20 20 00 00 00 10
+00 00 0a 20 20 20 20 20 20 20 21 20 20 20 00 43
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 37869
+    Serial Number: ...
+    Made in: week 39 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3378
+    Green: 0.3173, 0.6113
+    Blue : 0.1503, 0.0644
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings:
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.907 Hz  16:9    67.096 kHz 146.000 MHz (476 mm x 268 mm)
+                 Hfront   48 Hsync  32 Hback 176 Hpol P
+                 Vfront    8 Vsync   4 Vback  28 Vpol P
+    Display Product Name: 'OptiPlex 3240'
+    Dummy Descriptor:
+    Dummy Descriptor:
+Checksum: 0x43
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

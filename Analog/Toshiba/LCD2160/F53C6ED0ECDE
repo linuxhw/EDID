@@ -1,0 +1,74 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 64 60 21 01 00 00 00
+08 13 01 03 00 30 1e 78 ee 85 c5 a4 55 4a 9c 24
+14 50 54 bf cf 00 b3 00 b3 0f a9 c0 01 01 01 01
+01 01 01 01 01 01 ec 39 80 18 71 38 2d 40 94 2c
+ea 04 d9 28 11 00 00 04 00 00 00 ff 00 31 0a 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fc 00 4c
+43 44 20 32 32 57 0a 20 20 20 20 20 00 00 00 fd
+00 38 4c 1e 62 11 00 0a 20 20 20 20 20 20 00 41
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LCD
+    Model: 8544
+    Serial Number: ...
+    Made in: week 8 of 2009
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Blank level equals black level
+    Maximum image size: 48 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6425, 0.3320
+    Green: 0.2900, 0.6103
+    Blue : 0.1435, 0.0781
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    Apple   :   640x480    66.667 Hz   4:3    35.000 kHz  30.240 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0a:   800x600    72.188 Hz   4:3    48.077 kHz  50.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x3b:  1680x1050   74.892 Hz  16:10   82.306 kHz 187.000 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.911 Hz  16:9    67.400 kHz 148.280 MHz (analog composite, serrate, sync-on-green, 473 mm x 296 mm)
+                 Hfront  148 Hsync  44 Hback  88 Hpol N
+                 Vfront   30 Vsync  10 Vback   5 Vpol N
+    Display Product Serial Number: ...
+    Display Product Name: 'LCD 22W'
+  Display Range Limits:
+    Monitor ranges (GTF): 56-76 Hz V, 30-98 kHz H, max dotclock 170 MHz
+Checksum: 0x41
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 187.000 MHz (Monitor: 170.000 MHz)
+
+EDID conformity: FAIL

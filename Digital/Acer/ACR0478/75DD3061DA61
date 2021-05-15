@@ -1,0 +1,105 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 78 04 61 70 90 70
+09 1b 01 04 a5 51 23 78 06 ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 cd 46 00 a0 a0 38 1f 40 30 20
+3a 00 2e 5a 31 00 00 1a 00 00 00 ff 00 23 41 53
+50 31 75 32 36 4d 6f 30 54 64 00 00 00 fd 00 1e
+c8 42 dc 3c 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 5a 33 35 0a 20 20 20 20 20 20 20 20 20 01 26
+
+02 03 12 41 23 09 07 01 83 01 00 00 65 4b 04 00
+01 01 77 65 00 a0 a0 38 2c 40 30 20 3a 00 2e 5a
+31 00 00 1a 50 78 00 a0 a0 38 35 40 30 20 3a 00
+2e 5a 31 00 00 1a cd 91 00 a0 a0 38 40 40 30 20
+3a 00 2e 5a 31 00 00 1a f4 b0 00 a0 a0 38 4d 40
+30 20 3a 00 2e 5a 31 00 00 1a c0 e9 00 a0 a0 38
+14 40 30 20 3a 00 2e 5a 31 00 00 1e 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: ACR
+    Model: 1144
+    Serial Number: ...
+    Made in: week 9 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 81 cm x 35 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1080   59.978 Hz  64:27   66.636 kHz 181.250 MHz (814 mm x 346 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync  10 Vback  18 Vpol N
+    Display Product Serial Number: ...
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 30-200 Hz V, 66-220 kHz H, max dotclock 600 MHz
+    Display Product Name: 'Z35'
+  Extension blocks: 1
+Checksum: 0x26
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (NVIDIA), OUI 00-04-4B:
+    01 01                                           '..'
+  Detailed Timing Descriptors:
+    DTD 2:  2560x1080   84.961 Hz  64:27   95.496 kHz 259.750 MHz (814 mm x 346 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync  10 Vback  31 Vpol N
+    DTD 3:  2560x1080   99.943 Hz  64:27  113.235 kHz 308.000 MHz (814 mm x 346 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync  10 Vback  40 Vpol N
+    DTD 4:  2560x1080  119.951 Hz  64:27  137.224 kHz 373.250 MHz (814 mm x 346 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync  10 Vback  51 Vpol N
+    DTD 5:  2560x1080  143.945 Hz  64:27  166.544 kHz 453.000 MHz (814 mm x 346 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync  10 Vback  64 Vpol N
+    DTD 6:  2560x1080  200.000 Hz  64:27  220.000 kHz 598.400 MHz (814 mm x 346 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync  10 Vback   7 Vpol P
+Checksum: 0x7c
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 220.000 kHz (Monitor: 66.000 - 220.000 kHz)
+
+EDID conformity: PASS

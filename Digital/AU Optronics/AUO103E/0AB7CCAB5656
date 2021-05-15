@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 3e 10 00 00 00 00
+00 15 01 04 90 1f 11 78 02 61 95 9c 59 52 8f 26
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1c 2a 40 54 61 84 1a 30 40 2a
+33 00 35 ae 10 00 00 18 13 1c 40 54 61 84 1a 30
+40 2a 33 00 35 ae 10 00 00 18 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 3c f9 0a 3c 7d 14 12 26 81 20 20 20 00 6a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 4158
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6103, 0.3496
+    Green: 0.3203, 0.5595
+    Blue : 0.1503, 0.1298
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.008 Hz  16:9    55.567 kHz 107.800 MHz (309 mm x 174 mm)
+                 Hfront   64 Hsync  42 Hback 234 Hpol N
+                 Vfront    3 Vsync   3 Vback  20 Vpol N
+    DTD 2:  1600x900    40.007 Hz  16:9    37.046 kHz  71.870 MHz (309 mm x 174 mm)
+                 Hfront   64 Hsync  42 Hback 234 Hpol N
+                 Vfront    3 Vsync   3 Vback  20 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 3c f9 0a 3c 7d 14 12 26 81 20 20 20 '....<..<}..&.   '
+Checksum: 0x6a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d d9 fa 05 00 00 00 00
+04 13 01 03 80 22 13 78 f2 ce 50 a3 57 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 20 1c 56 ae 50 00 0c 30 1d 3a
+24 00 54 be 10 00 00 00 20 1c 56 b2 51 00 20 30
+48 90 5a 00 54 be 10 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SNY
+    Model: 1530
+    Made in: week 4 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Non-RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.940 Hz 683:384  46.753 kHz  72.000 MHz (analog composite, sync-on-green, 340 mm x 190 mm)
+                 Hfront   29 Hsync  58 Hback  87 Hpol N
+                 Vfront    2 Vsync   4 Vback   6 Vpol N
+    DTD 2:  1366x768    50.000 Hz 683:384  40.000 kHz  72.000 MHz (analog composite, sync-on-green, 340 mm x 190 mm)
+                 Hfront   72 Hsync 144 Hback 218 Hpol N
+                 Vfront    5 Vsync  10 Vback  17 Vpol N
+    Empty Descriptor
+    Empty Descriptor
+Checksum: 0x1f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

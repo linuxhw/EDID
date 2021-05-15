@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 23 24 29 0a 00 00 00 00
+00 15 01 03 80 1d 12 78 0a 6f 8c 90 5a 54 8a 25
+1e 4c 52 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 00 a0 50 20 17 30 30 20
+36 00 dc 8c 00 00 00 19 00 00 00 fe 00 0a 20 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fe 00 48
+59 44 49 53 0a 20 20 20 20 20 20 20 00 00 00 fe
+00 48 56 31 33 33 57 58 31 2d 31 30 31 0a 00 36
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HYD
+    Model: 2601
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5634, 0.3535
+    Green: 0.3310, 0.5419
+    Blue : 0.1464, 0.1171
+    White: 0.2998, 0.3203
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    58.475 Hz   8:5    48.125 kHz  69.300 MHz (220 mm x 140 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   6 Vback  14 Vpol N
+    Alphanumeric Data String: ''
+    Alphanumeric Data String: 'HYDIS'
+    Alphanumeric Data String: 'HV133WX1-101'
+Checksum: 0x36
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 220x140 mm vs display size 290x180 mm.
+  Alphanumeric Data String: Empty string.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

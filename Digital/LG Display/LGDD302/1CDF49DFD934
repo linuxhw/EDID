@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 02 d3 00 00 00 00
+00 15 01 03 80 1c 10 78 ea 10 a5 96 58 57 8f 28
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 56 78 50 00 0e 30 20 20
+24 00 15 9c 10 00 00 1b 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 32 35 57 48 32 2d 54 4c 42 31 00 94
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 54018
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 28 cm x 16 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5859, 0.3447
+    Green: 0.3398, 0.5585
+    Blue : 0.1582, 0.1269
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.636 Hz 683:384  46.635 kHz  69.300 MHz (277 mm x 156 mm)
+                 Hfront   32 Hsync  32 Hback  56 Hpol P
+                 Vfront    2 Vsync   4 Vback   8 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP125WH2-TLB1'
+Checksum: 0x94
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

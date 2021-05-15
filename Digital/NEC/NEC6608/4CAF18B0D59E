@@ -1,0 +1,56 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 a3 08 66 01 01 01 01
+04 0f 01 03 80 57 34 78 ee d8 e8 a5 55 46 99 24
+10 48 4c 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a4 1f 00 98 51 00 22 30 18 88
+36 00 68 0b 32 00 00 1e 00 00 00 fd 00 3a 3e 1e
+31 09 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+43 44 34 30 30 30 0a 20 20 20 20 20 00 00 00 ff
+00 35 31 30 30 39 33 38 39 59 41 0a 20 20 00 a6
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: NEC
+    Model: 26120
+    Serial Number: ...
+    Made in: week 4 of 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 87 cm x 52 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6474, 0.3330
+    Green: 0.2753, 0.5976
+    Blue : 0.1435, 0.0644
+    White: 0.2832, 0.2968
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x768    59.833 Hz   5:3    47.986 kHz  81.000 MHz (872 mm x 523 mm)
+                 Hfront   24 Hsync 136 Hback 248 Hpol P
+                 Vfront    3 Vsync   6 Vback  25 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 58-62 Hz V, 30-49 kHz H, max dotclock 90 MHz
+    Display Product Name: 'LCD4000'
+    Display Product Serial Number: ...
+Checksum: 0xa6
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+
+EDID conformity: FAIL

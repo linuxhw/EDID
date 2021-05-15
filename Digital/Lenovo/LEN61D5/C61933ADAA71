@@ -1,0 +1,204 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae d5 61 4c 54 42 33
+02 1e 01 04 b5 69 21 78 3b f9 c1 ac 4f 40 ac 25
+0d 50 54 a1 08 00 81 80 95 00 a9 c0 b3 00 d1 c0
+d1 00 01 01 01 01 e0 e9 00 c8 f0 b0 23 40 44 20
+58 04 1c 49 41 00 00 1a e5 c2 00 c8 f0 b0 23 40
+44 20 58 04 1c 49 41 00 00 1a 00 00 00 fd 00 30
+90 b2 b2 48 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 45 4e 20 50 34 34 77 2d 31 30 0a 20 02 70
+
+02 03 48 f1 4d 61 60 1f 90 14 01 03 04 12 13 05
+02 3f 23 09 07 07 83 01 00 00 e2 00 c0 6d 03 0c
+00 20 00 38 78 20 00 60 01 02 03 6d 1a 00 00 02
+03 30 90 00 03 62 34 08 2f e3 05 e3 01 e3 0f 03
+00 e6 06 07 01 61 56 1c a6 4e 00 a0 a0 b0 23 40
+30 20 58 04 1c 49 41 00 00 1a a3 29 00 a0 50 b0
+23 40 30 20 58 04 1c 49 41 00 00 1a d2 74 00 c8
+f0 b0 23 40 44 20 58 04 1c 49 41 00 00 1a 00 29
+
+70 12 79 00 00 03 01 14 a6 18 01 89 ff 0e c7 00
+43 00 1f 00 af 04 22 00 07 00 05 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 25045
+    Serial Number: ...
+    Made in: week 2 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 105 cm x 33 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6748, 0.3115
+    Green: 0.2519, 0.6728
+    Blue : 0.1474, 0.0507
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    DMT 0x45:  1920x1200   59.885 Hz  16:10   74.556 kHz 193.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x1200  119.998 Hz  16:5   148.198 kHz 598.720 MHz (1052 mm x 329 mm)
+                 Hfront   68 Hsync  32 Hback 100 Hpol P
+                 Vfront   21 Vsync   8 Vback   6 Vpol N
+    DTD 2:  3840x1200   99.998 Hz  16:5   123.498 kHz 498.930 MHz (1052 mm x 329 mm)
+                 Hfront   68 Hsync  32 Hback 100 Hpol P
+                 Vfront   21 Vsync   8 Vback   6 Vpol N
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 48-144 Hz V, 178-178 kHz H, max dotclock 720 MHz
+    Display Product Name: 'LEN P44w-10'
+  Extension blocks: 2
+Checksum: 0x70
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  97:  3840x2160   60.000 Hz  16:9   135.000 kHz 594.000 MHz
+    VIC  96:  3840x2160   50.000 Hz  16:9   112.500 kHz 594.000 MHz
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (native)
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC  63:  1920x1080  120.000 Hz  16:9   135.000 kHz 297.000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: IT video formats not supported
+    CE scan behavior: CE video formats not supported
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 600 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000 Hz  16:9    67.500 kHz 297.000 MHz
+        HDMI VIC 2:  3840x2160   25.000 Hz  16:9    56.250 kHz 297.000 MHz
+        HDMI VIC 3:  3840x2160   24.000 Hz  16:9    54.000 kHz 297.000 MHz
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.3
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x03
+    Maximum luminance: 98 (417.710 cd/m^2)
+    Minimum luminance: 52 (0.174 cd/m^2)
+    Unknown: 0x08 0x2f
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+  YCbCr 4:2:0 Capability Map Data Block:
+    VIC  97:  3840x2160   60.000 Hz  16:9    67.500 kHz 297.000 MHz
+    VIC  96:  3840x2160   50.000 Hz  16:9    56.250 kHz 297.000 MHz
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 97 (408.759 cd/m^2)
+    Desired content max frame-average luminance: 86 (322.098 cd/m^2)
+    Desired content min luminance: 28 (0.049 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 3:  2560x1200   59.937 Hz  32:15   74.022 kHz 201.340 MHz (1052 mm x 329 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront   21 Vsync   8 Vback   6 Vpol N
+    DTD 4:  1280x1200   59.936 Hz  16:15   74.021 kHz 106.590 MHz (1052 mm x 329 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront   21 Vsync   8 Vback   6 Vpol N
+    DTD 5:  3840x1200   59.939 Hz  16:5    74.025 kHz 299.060 MHz (1052 mm x 329 mm)
+                 Hfront   68 Hsync  32 Hback 100 Hpol P
+                 Vfront   21 Vsync   8 Vback   6 Vpol N
+Checksum: 0x29
+
+----------------
+
+Block 2, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  3840x1200  143.999 Hz   0:0   177.839 kHz 718.470 MHz (aspect undefined, no 3D stereo, preferred)
+               Hfront   68 Hsync  32 Hback 100 Hpol N
+               Vfront    8 Vsync   6 Vback  21 Vpol N
+  Checksum: 0xfe
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 143.999 Hz (Monitor: 48.000 - 144.000 Hz)
+    Horizontal Freq: 28.125 - 177.839 kHz (Monitor: 178.000 - 178.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI): HDMI VSDB Max TMDS rate is > 340.
+  Vendor-Specific Data Block (HDMI): The HDMI Specification requires EDID 1.3 instead of 1.4.
+  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+Block 2, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Video Timing Modes Type 1 - Detailed Timings Data Block: Unknown aspect 0x09.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

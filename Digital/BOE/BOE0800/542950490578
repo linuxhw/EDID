@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 00 08 00 00 00 00
+01 1c 01 04 95 1d 11 78 02 00 19 93 5b 59 94 2a
+20 4d 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c6 1d 56 e2 50 00 1e 30 30 20
+36 00 26 a5 10 00 00 1a d1 17 56 e2 50 00 1e 30
+30 20 36 00 26 a5 10 00 00 1a 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 54 31 33 33 57 48 4d 2d 4e 34 37 0a 00 f1
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2048
+    Made in: week 1 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5742, 0.3554
+    Green: 0.3476, 0.5781
+    Blue : 0.1640, 0.1259
+    White: 0.3027, 0.3251
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.996 Hz 683:384  47.877 kHz  76.220 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback 146 Hpol P
+                 Vfront    3 Vsync   6 Vback  21 Vpol N
+    DTD 2:  1366x768    47.992 Hz 683:384  38.298 kHz  60.970 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback 146 Hpol P
+                 Vfront    3 Vsync   6 Vback  21 Vpol N
+    Alphanumeric Data String: 'BOE CQ'
+    Alphanumeric Data String: 'NT133WHM-N47'
+Checksum: 0xf1
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

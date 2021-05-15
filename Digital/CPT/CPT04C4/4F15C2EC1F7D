@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 14 c4 04 00 00 00 00
+0b 13 01 03 80 17 0e 78 0a 50 75 92 58 56 92 27
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 94 11 00 b0 40 58 19 20 30 20
+36 00 de 82 00 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 20 6e 05 0f 00 00 00 00 fe 00 43
+50 54 20 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 43 4c 41 41 31 30 32 4e 41 30 41 20 20 00 65
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CPT
+    Model: 1220
+    Made in: week 11 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 23 cm x 14 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5712, 0.3447
+    Green: 0.3359, 0.5703
+    Blue : 0.1533, 0.1240
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x600    60.000 Hz 128:75   37.500 kHz  45.000 MHz (222 mm x 130 mm)
+                 Hfront   48 Hsync  32 Hback  96 Hpol N
+                 Vfront    3 Vsync   6 Vback  16 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 20 6e 05 0f 00 '........... n...'
+    Alphanumeric Data String: 'CPT          '
+    Alphanumeric Data String: 'CLAA102NA0A  '
+Checksum: 0x65
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

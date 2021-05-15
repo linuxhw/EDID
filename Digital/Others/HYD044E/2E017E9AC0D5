@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 23 24 4e 04 00 00 00 00
+00 16 01 04 a0 17 0d 78 0a 54 45 9f 55 55 94 27
+1c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 fa 1e 56 cc 50 00 20 30 4a 24
+57 04 e6 82 00 00 00 19 00 00 00 fd 00 35 3f 2d
+35 09 0a 20 20 20 20 20 20 20 00 00 00 ff 00 48
+59 44 49 53 0a 20 20 20 20 20 20 20 00 00 00 fe
+00 48 56 31 30 31 48 44 31 2d 31 45 31 0a 00 82
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HYD
+    Model: 1102
+    Made in: 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    Digital interface is not defined
+    Maximum image size: 23 cm x 13 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6220, 0.3330
+    Green: 0.3330, 0.5781
+    Blue : 0.1533, 0.1093
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    63.137 Hz 683:384  50.510 kHz  79.300 MHz (230 mm x 130 mm)
+                 Hfront   74 Hsync  36 Hback  94 Hpol N
+                 Vfront   21 Vsync   7 Vback   4 Vpol N
+  Display Range Limits:
+    Monitor ranges (Unknown (0x0a)): 53-63 Hz V, 45-53 kHz H, max dotclock 90 MHz
+    Display Product Serial Number: ...
+    Alphanumeric Data String: 'HV101HD1-1E1'
+Checksum: 0x82
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: Unknown range class (0x0a).
+  Display Range Limits: Byte 11 is 0x20 instead of 0x0a.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

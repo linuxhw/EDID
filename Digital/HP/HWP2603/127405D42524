@@ -1,0 +1,63 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 03 26 01 01 01 01
+2f 0d 01 04 a5 20 18 a3 e2 e0 59 a1 54 46 9b 24
+10 48 4c a4 42 00 31 59 45 59 61 59 81 80 01 01
+01 01 01 01 01 01 ea 24 00 60 41 00 28 30 30 60
+13 00 38 ea 10 00 00 1e 00 00 00 fd 00 32 8c 1e
+46 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 68
+70 20 37 35 30 30 0a 20 20 20 20 20 00 00 00 ff
+00 43 4e 47 33 34 37 30 35 31 31 0a 20 20 00 9e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 9731
+    Serial Number: ...
+    Made in: week 47 of 2003
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 32 cm x 24 cm
+    Gamma: 2.63
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6318, 0.3300
+    Green: 0.2734, 0.6054
+    Blue : 0.1416, 0.0634
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings:
+    DMT 0x07:   640x480    85.008 Hz   4:3    43.269 kHz  36.000 MHz
+    DMT 0x0c:   800x600    85.061 Hz   4:3    53.674 kHz  56.250 MHz
+    DMT 0x13:  1024x768    84.997 Hz   4:3    68.677 kHz  94.500 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    84.997 Hz   4:3    68.677 kHz  94.500 MHz (312 mm x 234 mm)
+                 Hfront   48 Hsync  96 Hback 208 Hpol P
+                 Vfront    1 Vsync   3 Vback  36 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 50-140 Hz V, 30-70 kHz H, max dotclock 110 MHz
+    Display Product Name: 'hp 7500'
+    Display Product Serial Number: ...
+Checksum: 0x9e
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+
+EDID conformity: FAIL

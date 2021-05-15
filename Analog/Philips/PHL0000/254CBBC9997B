@@ -1,0 +1,62 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 00 00 01 00 00 00
+16 0f 01 03 6c 33 1d 78 ce cb fc a1 56 43 97 24
+0e 4a 4b 23 08 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 0e 1f 00 80 51 00 1e 30 40 80
+37 00 74 df 10 00 00 1c 00 00 00 ff 00 30 30 30
+30 31 0a 20 20 20 20 20 20 20 00 00 00 fc 00 32
+33 50 46 35 33 32 30 0a 20 20 20 20 00 00 00 fd
+00 38 3f 1e 32 08 00 0a 20 20 20 20 20 20 00 37
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PHL
+    Model: 0
+    Serial Number: ...
+    Made in: week 22 of 2005
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Blank level equals black level
+    Sync: Separate Composite
+    Maximum image size: 51 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6318, 0.3359
+    Green: 0.2636, 0.5927
+    Blue : 0.1435, 0.0576
+    White: 0.2919, 0.2929
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x768    59.870 Hz   5:3    47.776 kHz  79.500 MHz (372 mm x 223 mm)
+                 Hfront   64 Hsync 128 Hback 192 Hpol N
+                 Vfront    3 Vsync   7 Vback  20 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: '23PF5320'
+  Display Range Limits:
+    Monitor ranges (GTF): 56-63 Hz V, 30-50 kHz H, max dotclock 80 MHz
+Checksum: 0x37
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 372x223 mm vs display size 510x290 mm.
+
+EDID conformity: FAIL

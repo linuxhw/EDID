@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 a9 a2 96 00 00 00 00
+ff 17 01 04 a5 16 0d 78 02 51 71 a4 58 4d a1 26
+15 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d1 6f 00 f0 a0 40 68 60 58 20
+c5 04 df 7d 00 00 00 1e 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 3b
+3d 64 67 1d 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 56 58 31 30 54 30 32 32 4e 30 30 0a 00 3d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: MEI
+    Model: 38562
+    Model year: 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 22 cm x 13 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6416, 0.3447
+    Green: 0.3007, 0.6298
+    Blue : 0.1494, 0.0849
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   59.995 Hz   8:5   102.232 kHz 286.250 MHz (223 mm x 125 mm)
+                 Hfront   88 Hsync  32 Hback 120 Hpol P
+                 Vfront   28 Vsync   5 Vback  71 Vpol P
+    Empty Descriptor
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 59-61 Hz V, 100-103 kHz H, max dotclock 290 MHz
+    Display Product Name: 'VVX10T022N00'
+Checksum: 0x3d
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+
+EDID conformity: FAIL

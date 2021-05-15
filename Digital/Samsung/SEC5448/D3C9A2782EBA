@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 48 54 00 00 00 00
+00 12 01 03 90 23 14 78 0a 87 f5 94 57 4f 8c 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 f5 3b 80 68 71 38 2a 40 30 20
+25 00 61 c6 10 00 00 1a f5 3b 80 68 71 38 2a 40
+30 20 25 00 61 c6 10 00 00 1a 00 00 00 fe 00 4d
+30 37 37 44 80 31 36 30 48 54 0a 20 00 00 00 00
+00 00 00 00 00 00 00 00 00 06 01 0a 20 20 00 9b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 21576
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 35 cm x 20 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5800, 0.3398
+    Green: 0.3095, 0.5498
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000 Hz  16:9    67.320 kHz 153.490 MHz (353 mm x 198 mm)
+                 Hfront   48 Hsync  32 Hback 280 Hpol P
+                 Vfront    2 Vsync   5 Vback  35 Vpol N
+    DTD 2:  1920x1080   60.000 Hz  16:9    67.320 kHz 153.490 MHz (353 mm x 198 mm)
+                 Hfront   48 Hsync  32 Hback 280 Hpol P
+                 Vfront    2 Vsync   5 Vback  35 Vpol N
+    Alphanumeric Data String: 'M077D'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 06 01 0a 20 20 '..............  '
+Checksum: 0x9b
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

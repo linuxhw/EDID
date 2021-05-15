@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 47 30 00 00 00 00
+01 11 01 03 80 1e 13 78 0a 24 e5 97 54 4f 92 27
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 44 2a a0 ca 51 84 32 30 30 20
+36 00 2f bd 10 00 00 19 f0 1c a0 a0 50 84 1a 30
+30 20 36 00 2f bd 10 00 00 00 00 00 00 fe 00 50
+50 33 32 34 80 42 31 34 31 50 57 33 00 00 00 fe
+00 00 00 00 00 00 00 00 00 00 01 0a 20 20 00 77
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 12359
+    Made in: week 1 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3300
+    Green: 0.3095, 0.5703
+    Blue : 0.1552, 0.1347
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    60.008 Hz   8:5    57.007 kHz 108.200 MHz (303 mm x 189 mm)
+                 Hfront   48 Hsync  32 Hback 378 Hpol N
+                 Vfront    3 Vsync   6 Vback  41 Vpol N
+    DTD 2:  1440x900    50.000 Hz   8:5    46.300 kHz  74.080 MHz (analog composite, sync-on-green, 303 mm x 189 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   6 Vback  17 Vpol N
+    Alphanumeric Data String: 'PP324'
+    Alphanumeric Data String: ''
+Checksum: 0x77
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

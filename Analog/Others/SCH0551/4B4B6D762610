@@ -1,0 +1,65 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 68 51 05 05 06 00 00
+2f 0d 01 03 08 1e 16 64 e8 37 25 9e 58 4a 97 26
+19 50 54 ad 4e 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c3 1e 00 20 41 00 20 30 10 60
+13 00 30 e4 10 00 00 1e 56 13 20 00 31 58 19 20
+10 50 13 00 30 e4 10 00 00 1c 00 00 00 fd 00 38
+4b 1f 3c ff 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 35 35 31 0a 20 20 20 20 20 20 20 20 00 22
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SCH
+    Model: 1361
+    Serial Number: ...
+    Made in: week 47 of 2003
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 30 cm x 22 cm
+    Gamma: 2.00
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6171, 0.3466
+    Green: 0.2900, 0.5927
+    Blue : 0.1484, 0.0996
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x05:   640x480    72.809 Hz   4:3    37.861 kHz  31.500 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x11:  1024x768    70.069 Hz   4:3    56.476 kHz  75.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz (304 mm x 228 mm)
+                 Hfront   16 Hsync  96 Hback 176 Hpol P
+                 Vfront    1 Vsync   3 Vback  28 Vpol P
+    DTD 2:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz (304 mm x 228 mm)
+                 Hfront   16 Hsync  80 Hback 160 Hpol N
+                 Vfront    1 Vsync   3 Vback  21 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 56-75 Hz V, 31-60 kHz H, max dotclock 2550 MHz
+    Display Product Name: 'L551'
+Checksum: 0x22
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+
+EDID conformity: FAIL

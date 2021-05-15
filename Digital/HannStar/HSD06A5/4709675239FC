@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 64 a5 06 dc 02 00 00
+0e 14 01 03 80 27 17 78 0a dc 25 9c 5b 52 98 26
+17 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 cc 33 80 60 70 38 10 40 18 20
+46 00 7e d7 10 00 00 19 00 00 00 fe 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fc 00 48
+53 44 31 37 33 50 55 57 31 0a 20 20 00 00 00 10
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 66
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HSD
+    Model: 1701
+    Serial Number: ...
+    Made in: week 14 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 39 cm x 23 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6123, 0.3564
+    Green: 0.3232, 0.5937
+    Blue : 0.1484, 0.0917
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.013 Hz  16:9    65.774 kHz 132.600 MHz (382 mm x 215 mm)
+                 Hfront   24 Hsync  32 Hback  40 Hpol N
+                 Vfront    4 Vsync   6 Vback   6 Vpol N
+    Alphanumeric Data String: ''
+    Display Product Name: 'HSD173PUW1'
+    Dummy Descriptor:
+Checksum: 0x66
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

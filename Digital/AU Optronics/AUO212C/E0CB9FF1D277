@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 2c 21 00 00 00 00
+18 17 01 04 90 1d 10 78 02 bb f5 94 55 54 90 27
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 88 1d 56 e2 50 00 16 30 26 16
+36 00 25 a4 10 00 00 1a b0 13 56 e2 50 00 16 30
+26 16 36 00 25 a4 10 00 00 1a 00 00 00 fe 00 47
+31 48 39 4e 80 42 31 33 33 58 54 4e 00 00 00 00
+00 00 41 22 96 00 11 00 00 02 01 0a 20 20 00 61
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 8492
+    Made in: week 24 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 29 cm x 16 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5800, 0.3349
+    Green: 0.3300, 0.5654
+    Blue : 0.1552, 0.1396
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.111 Hz 683:384  47.487 kHz  75.600 MHz (293 mm x 164 mm)
+                 Hfront   38 Hsync  22 Hback 166 Hpol P
+                 Vfront    3 Vsync   6 Vback  13 Vpol N
+    DTD 2:  1366x768    40.074 Hz 683:384  31.658 kHz  50.400 MHz (293 mm x 164 mm)
+                 Hfront   38 Hsync  22 Hback 166 Hpol P
+                 Vfront    3 Vsync   6 Vback  13 Vpol N
+    Alphanumeric Data String: 'G1H9N'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 22 96 00 11 00 00 02 01 0a 20 20 '....A"........  '
+Checksum: 0x61
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

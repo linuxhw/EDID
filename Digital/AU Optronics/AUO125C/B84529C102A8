@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 5c 12 00 00 00 00
+28 1a 01 04 95 1a 0e 78 02 99 85 95 55 56 92 28
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 ea 50 00 1a 30 30 20
+46 00 00 90 10 00 00 1a da 16 56 a8 50 00 1a 30
+30 20 46 00 00 90 10 00 00 1a 00 00 00 fe 00 4b
+47 33 4e 58 80 42 31 31 36 58 41 42 00 00 00 00
+00 00 81 22 96 00 00 00 00 09 01 0a 20 20 00 5f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 4700
+    Made in: week 40 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5839, 0.3330
+    Green: 0.3378, 0.5712
+    Blue : 0.1582, 0.1328
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.060 Hz 683:384  47.688 kHz  76.300 MHz (256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback 154 Hpol P
+                 Vfront    4 Vsync   6 Vback  16 Vpol N
+    DTD 2:  1366x768    48.030 Hz 683:384  38.136 kHz  58.500 MHz (256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback  88 Hpol P
+                 Vfront    4 Vsync   6 Vback  16 Vpol N
+    Alphanumeric Data String: 'KG3NX'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 81 22 96 00 00 00 00 09 01 0a 20 20 '....."........  '
+Checksum: 0x5f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

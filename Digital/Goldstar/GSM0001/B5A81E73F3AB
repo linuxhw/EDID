@@ -1,0 +1,173 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 01 00 01 01 01 01
+01 1b 01 03 80 a0 5a 78 0a ee 91 a3 54 4c 99 26
+0f 50 54 a1 08 00 31 40 45 40 61 40 71 40 81 80
+01 01 01 01 01 01 08 e8 00 30 f2 70 5a 80 b0 58
+8a 00 40 84 63 00 00 1e 02 3a 80 18 71 38 2d 40
+58 2c 45 00 40 84 63 00 00 1e 00 00 00 fd 00 3a
+79 1e 88 3c 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 47 20 54 56 0a 20 20 20 20 20 20 20 01 63
+
+02 03 51 f1 5a 61 60 10 1f 66 65 04 13 05 14 03
+02 12 20 21 22 15 01 5d 5e 5f 62 63 64 3f 40 2c
+09 57 07 15 07 50 55 07 01 3d 06 c0 6e 03 0c 00
+10 00 b8 3c 20 00 80 01 02 03 04 67 d8 5d c4 01
+78 80 03 e2 00 cf e3 05 c0 00 e3 06 0d 01 e2 0f
+33 66 21 50 b0 51 00 1b 30 40 70 36 00 40 84 63
+00 00 1e 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 1
+    Serial Number: ...
+    Made in: week 1 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 160 cm x 90 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    GTF     :  1152x864    60.000 Hz   4:3    53.700 kHz  81.624 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.000 Hz  16:9   135.000 kHz 594.000 MHz (1600 mm x 900 mm)
+                 Hfront  176 Hsync  88 Hback 296 Hpol P
+                 Vfront    8 Vsync  10 Vback  72 Vpol P
+    DTD 2:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (1600 mm x 900 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 58-121 Hz V, 30-136 kHz H, max dotclock 600 MHz
+    Display Product Name: 'LG TV'
+  Extension blocks: 1
+Checksum: 0x63
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  97:  3840x2160   60.000 Hz  16:9   135.000 kHz 594.000 MHz
+    VIC  96:  3840x2160   50.000 Hz  16:9   112.500 kHz 594.000 MHz
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+    VIC 102:  4096x2160   60.000 Hz 256:135 135.000 kHz 594.000 MHz
+    VIC 101:  4096x2160   50.000 Hz 256:135 112.500 kHz 594.000 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
+    VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+    VIC  33:  1920x1080   25.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC  34:  1920x1080   30.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  21:  1440x576i   50.000 Hz   4:3    15.625 kHz  27.000 MHz
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    VIC  93:  3840x2160   24.000 Hz  16:9    54.000 kHz 297.000 MHz
+    VIC  94:  3840x2160   25.000 Hz  16:9    56.250 kHz 297.000 MHz
+    VIC  95:  3840x2160   30.000 Hz  16:9    67.500 kHz 297.000 MHz
+    VIC  98:  4096x2160   24.000 Hz 256:135  54.000 kHz 297.000 MHz
+    VIC  99:  4096x2160   25.000 Hz 256:135  56.250 kHz 297.000 MHz
+    VIC 100:  4096x2160   30.000 Hz 256:135  67.500 kHz 297.000 MHz
+    VIC  63:  1920x1080  120.000 Hz  16:9   135.000 kHz 297.000 MHz
+    VIC  64:  1920x1080  100.000 Hz  16:9   112.500 kHz 297.000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 96 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 640 kb/s
+    Enhanced AC-3 (DD+):
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Supports Joint Object Coding
+    DTS:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1
+      Maximum bit rate: 1536 kb/s
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000 Hz  16:9    67.500 kHz 297.000 MHz
+        HDMI VIC 2:  3840x2160   25.000 Hz  16:9    56.250 kHz 297.000 MHz
+        HDMI VIC 3:  3840x2160   24.000 Hz  16:9    54.000 kHz 297.000 MHz
+        HDMI VIC 4:  4096x2160   24.000 Hz 256:135  54.000 kHz 297.000 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+      Hybrid Log-Gamma
+    Supported static metadata descriptors:
+      Static metadata type 1
+  YCbCr 4:2:0 Capability Map Data Block:
+    VIC  97:  3840x2160   60.000 Hz  16:9    67.500 kHz 297.000 MHz
+    VIC  96:  3840x2160   50.000 Hz  16:9    56.250 kHz 297.000 MHz
+    VIC 102:  4096x2160   60.000 Hz 256:135  67.500 kHz 297.000 MHz
+    VIC 101:  4096x2160   50.000 Hz 256:135  56.250 kHz 297.000 MHz
+  Detailed Timing Descriptors:
+    DTD 3:  1360x768    60.015 Hz  85:48   47.712 kHz  85.500 MHz (1600 mm x 900 mm)
+                 Hfront   64 Hsync 112 Hback 256 Hpol P
+                 Vfront    3 Vsync   6 Vback  18 Vpol P
+Checksum: 0x7a
+
+----------------
+
+Failures:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 58.000 - 121.000 Hz)
+    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 136.000 kHz)
+
+EDID conformity: FAIL

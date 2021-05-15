@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 44 6d 01 00 01 00 00 00
+1b 10 01 03 80 50 2d 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 21 3b 38 a4 40 e8 38 80 70 10
+48 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 73 61 6d 73 75 6e 67 20 73 6f 66 65 66 00 05
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: QCM
+    Model: 1
+    Serial Number: ...
+    Made in: week 27 of 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 80 cm x 45 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1080x2280   52.089 Hz   9:19  121.680 kHz 151.370 MHz (analog composite, sync-on-green)
+                 Hfront  112 Hsync  16 Hback  36 Hpol N
+                 Vfront   36 Vsync   8 Vback  12 Vpol N
+    Empty Descriptor
+    Empty Descriptor
+    Alphanumeric Data String: 'samsung sofef'
+Checksum: 0x05
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

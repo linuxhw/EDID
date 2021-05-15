@@ -1,0 +1,64 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 8f 59 00 00 00 00
+26 1d 01 04 a5 22 13 78 03 3e 85 91 56 59 91 28
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 54 6f 80 9c 70 38 3e 40 6c 30
+aa 00 58 c1 10 00 00 18 b4 37 80 9c 70 38 3e 40
+6c 30 aa 00 58 c1 10 00 00 18 00 00 00 fd 00 3c
+78 8a 8a 1e 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 35 36 48 41 4e 31 33 2e 32 20 0a 00 ae
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 22927
+    Made in: week 38 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5664, 0.3388
+    Green: 0.3505, 0.5683
+    Blue : 0.1582, 0.1210
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  120.213 Hz  16:9   137.283 kHz 285.000 MHz (344 mm x 193 mm)
+                 Hfront  108 Hsync  48 Hback   0 Hpol N
+                 Vfront   10 Vsync  10 Vback  42 Vpol N
+    DTD 2:  1920x1080   60.149 Hz  16:9    68.690 kHz 142.600 MHz (344 mm x 193 mm)
+                 Hfront  108 Hsync  48 Hback   0 Hpol N
+                 Vfront   10 Vsync  10 Vback  42 Vpol N
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 60-120 Hz V, 138-138 kHz H, max dotclock 300 MHz
+    Alphanumeric Data String: 'B156HAN13.2 '
+Checksum: 0xae
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 68.689 - 137.283 kHz (Monitor: 138.000 - 138.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #2: 0 or negative horizontal back porch.
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,159 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 2c ee 15 03 01 00 00 00
+21 1e 01 04 b5 46 27 78 3f 64 f5 ad 50 49 a3 22
+13 50 54 a5 4b 00 81 c0 81 80 95 00 a9 c0 b3 00
+d1 c0 81 40 71 4f 1c 5f 00 b4 a0 a0 29 50 30 20
+35 00 b9 88 21 00 00 1a 02 3a 80 18 71 38 2d 40
+58 2c 45 00 b9 88 21 00 00 1a 00 00 00 fd 00 30
+a5 f3 f3 43 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 4b 41 4d 4e 33 32 52 51 31 4c 41 0a 20 01 b4
+
+02 03 2d f1 4c 01 02 03 04 05 11 12 13 14 1f 90
+3f 23 09 07 07 83 01 00 00 e3 05 e3 01 68 1a 00
+00 01 07 30 a5 00 e6 06 07 01 60 59 20 f9 bd 00
+a0 a0 a0 32 50 08 40 35 00 b9 88 21 00 00 1a d1
+ff 00 8c a0 a0 1e 50 10 40 35 00 b9 88 21 00 00
+1a 61 38 00 18 51 a0 66 50 20 28 55 00 b9 88 21
+00 00 1a 9e e0 00 78 a0 a0 32 50 10 40 35 00 b9
+88 21 00 00 1a 00 00 00 00 00 00 00 00 00 00 4e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: KGN
+    Model: 789
+    Serial Number: ...
+    Made in: week 33 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 70 cm x 39 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6767, 0.3144
+    Green: 0.2861, 0.6367
+    Blue : 0.1357, 0.0771
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
+    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
+    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
+    DMT 0x15:  1152x864    75.000 Hz   4:3    67.500 kHz 108.000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   60.001 Hz  16:9    88.861 kHz 243.480 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback 100 Hpol P
+                 Vfront    3 Vsync   5 Vback  33 Vpol N
+    DTD 2:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (697 mm x 392 mm)
+                 Hfront   88 Hsync  44 Hback 148 Hpol P
+                 Vfront    4 Vsync   5 Vback  36 Vpol N
+  Display Range Limits:
+    Monitor ranges (Bare Limits): 48-165 Hz V, 243-243 kHz H, max dotclock 670 MHz
+    Display Product Name: 'KAMN32RQ1LA'
+  Extension blocks: 1
+Checksum: 0xb4
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
+    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
+    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (native)
+    VIC  63:  1920x1080  120.000 Hz  16:9   135.000 kHz 297.000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.7
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 96 (400.000 cd/m^2)
+    Desired content max frame-average luminance: 89 (343.724 cd/m^2)
+    Desired content min luminance: 32 (0.063 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 3:  2560x1440  119.999 Hz  16:9   178.798 kHz 486.330 MHz (697 mm x 392 mm)
+                 Hfront    8 Hsync  64 Hback  88 Hpol P
+                 Vfront    3 Vsync   5 Vback  42 Vpol N
+    DTD 4:  2560x1440  165.001 Hz  16:9   242.552 kHz 654.890 MHz (697 mm x 392 mm)
+                 Hfront   16 Hsync  64 Hback  60 Hpol P
+                 Vfront    3 Vsync   5 Vback  22 Vpol N
+    DTD 5:  1280x1440   60.000 Hz   8:9    92.519 kHz 144.330 MHz (697 mm x 392 mm)
+                 Hfront   32 Hsync  40 Hback 208 Hpol P
+                 Vfront    5 Vsync   5 Vback  92 Vpol N
+    DTD 6:  2560x1440  144.000 Hz  16:9   214.560 kHz 575.020 MHz (697 mm x 392 mm)
+                 Hfront   16 Hsync  64 Hback  40 Hpol P
+                 Vfront    3 Vsync   5 Vback  42 Vpol N
+Checksum: 0x4e
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 242.551 kHz (Monitor: 243.000 - 243.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

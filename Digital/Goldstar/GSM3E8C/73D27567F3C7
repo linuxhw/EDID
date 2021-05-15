@@ -1,0 +1,62 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 8c 3e 0f cf 04 00
+07 16 01 04 a5 22 13 78 e2 00 25 9e 57 52 99 29
+15 50 54 23 08 00 31 40 45 40 61 40 81 c0 01 01
+01 01 01 01 01 01 20 1c 56 86 50 00 20 30 0e 38
+13 00 58 c2 10 00 00 1e 00 00 00 fd 00 38 3f 1e
+35 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45
+31 36 34 32 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 32 30 37 49 4e 4e 47 39 39 31 35 31 0a 00 c6
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 16012
+    Serial Number: ...
+    Made in: week 7 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6171, 0.3398
+    Green: 0.3203, 0.5976
+    Blue : 0.1601, 0.0839
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.000 Hz 683:384  48.000 kHz  72.000 MHz (344 mm x 194 mm)
+                 Hfront   14 Hsync  56 Hback  64 Hpol P
+                 Vfront    1 Vsync   3 Vback  28 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 56-63 Hz V, 30-53 kHz H, max dotclock 80 MHz
+    Display Product Name: 'E1642'
+    Display Product Serial Number: ...
+Checksum: 0xc6
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+
+EDID conformity: FAIL

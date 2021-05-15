@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cf 41 3d 04 00 00 00
+00 1d 01 04 a5 22 13 78 0a de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 38 36 80 a0 70 38 20 40 18 30
+3c 00 58 c2 10 00 00 19 00 00 00 fe 00 58 31 35
+36 4e 56 46 38 20 52 31 20 0a 00 00 00 03 00 03
+54 d8 04 64 7d 15 12 16 96 00 00 00 00 00 00 03
+00 1e 5f ff 64 a0 a9 17 12 4e a9 01 01 00 00 a8
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: IVO
+    Model: 15681
+    Serial Number: ...
+    Made in: 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.010 Hz  16:9    66.731 kHz 138.800 MHz (344 mm x 194 mm)
+                 Hfront   24 Hsync  48 Hback  88 Hpol N
+                 Vfront    3 Vsync  12 Vback  17 Vpol N
+    Alphanumeric Data String: 'X156NVF8 R1 '
+    Manufacturer-Specified Display Descriptor (0x03): 00 03 00 03 54 d8 04 64 7d 15 12 16 96 00 00 00 '....T..d}.......'
+    Manufacturer-Specified Display Descriptor (0x03): 00 03 00 1e 5f ff 64 a0 a9 17 12 4e a9 01 01 00 '...._.d....N....'
+Checksum: 0xa8
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

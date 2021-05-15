@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 7d 09 00 00 00 00
+1b 1e 01 04 95 22 13 78 02 da f5 95 5d 59 91 29
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1b 3b 80 24 71 38 3c 40 30 20
+36 00 58 c2 10 00 00 1a 49 2f 80 24 71 38 3c 40
+30 20 36 00 58 c2 10 00 00 1a 00 00 00 fe 00 4e
+33 39 58 31 80 4e 56 31 35 4e 33 44 00 00 00 00
+00 00 41 21 96 00 10 00 00 0a 01 0a 20 20 00 88
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2429
+    Made in: week 27 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5849, 0.3642
+    Green: 0.3496, 0.5683
+    Blue : 0.1630, 0.1240
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.004 Hz  16:9    68.404 kHz 151.310 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback 212 Hpol P
+                 Vfront    3 Vsync   6 Vback  51 Vpol N
+    DTD 2:  1920x1080   48.004 Hz  16:9    54.724 kHz 121.050 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback 212 Hpol P
+                 Vfront    3 Vsync   6 Vback  51 Vpol N
+    Alphanumeric Data String: 'N39X1'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 96 00 10 00 00 0a 01 0a 20 20 '....A!........  '
+Checksum: 0x88
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

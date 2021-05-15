@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae a6 13 00 00 00 00
+14 1d 01 04 a5 1d 11 78 02 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 50 d0 00 a0 f0 70 3e 80 30 20
+35 00 25 a5 10 00 00 1a 50 d0 00 a0 f0 70 69 82
+30 20 35 00 25 a5 10 00 00 1a 00 00 00 fe 00 4e
+4e 48 56 47 81 31 33 33 44 43 45 0a 00 00 00 00
+00 02 41 11 9e 00 10 00 00 0b 01 0a 20 20 00 27
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5030
+    Made in: week 20 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.000 Hz  16:9   133.320 kHz 533.280 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  54 Vpol N
+    DTD 2:  3840x2160   48.009 Hz  16:9   133.320 kHz 533.280 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback 609 Vpol N
+    Alphanumeric Data String: 'NNHVG'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 11 9e 00 10 00 00 0b 01 0a 20 20 '....A.........  '
+Checksum: 0x27
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

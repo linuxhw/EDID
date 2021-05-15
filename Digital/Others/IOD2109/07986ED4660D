@@ -1,0 +1,122 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 25 e4 09 21 01 01 01 01
+17 1c 01 04 b5 45 27 78 3a 60 b1 9d 59 52 a0 26
+0d 50 54 21 08 00 81 80 e1 c0 81 c0 a9 c0 01 01
+01 01 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 ba 88 21 00 00 1a 00 00 00 fd 00 18 4c 0f
+5a 20 00 0a 20 20 20 20 20 20 00 00 00 ff 00 47
+44 56 30 30 30 34 32 32 32 47 4c 0a 00 00 00 fc
+00 45 58 2d 4c 44 51 33 32 31 44 0a 20 20 01 11
+
+02 03 1e f0 4e 01 02 03 04 05 06 07 10 20 22 56
+57 58 5a 23 09 07 07 83 01 00 00 e2 00 ca 56 5e
+00 a0 a0 a0 29 50 30 20 35 00 ad 11 32 00 00 1a
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 cc
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: IOD
+    Model: 8457
+    Serial Number: ...
+    Made in: week 23 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 69 cm x 39 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6142, 0.3496
+    Green: 0.3203, 0.6250
+    Blue : 0.1503, 0.0537
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x54:  2048x1152   60.000 Hz  16:9    72.000 kHz 162.000 MHz (RB)
+    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.951 Hz  16:9    88.787 kHz 241.500 MHz (698 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  33 Vpol N
+  Display Range Limits:
+    Monitor ranges (GTF): 24-76 Hz V, 15-90 kHz H, max dotclock 320 MHz
+    Display Product Serial Number: ...
+    Display Product Name: 'EX-LDQ321D'
+  Extension blocks: 1
+Checksum: 0x11
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
+    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
+    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC   6:  1440x480i   59.940 Hz   4:3    15.734 kHz  27.000 MHz
+    VIC   7:  1440x480i   59.940 Hz  16:9    15.734 kHz  27.000 MHz
+    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+    VIC  34:  1920x1080   30.000 Hz  16:9    33.750 kHz  74.250 MHz
+    VIC  86:  2560x1080   24.000 Hz  64:27   26.400 kHz  99.000 MHz
+    VIC  87:  2560x1080   25.000 Hz  64:27   28.125 kHz  90.000 MHz
+    VIC  88:  2560x1080   30.000 Hz  64:27   33.750 kHz 118.800 MHz
+    VIC  90:  2560x1080   60.000 Hz  64:27   66.000 kHz 198.000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Detailed Timing Descriptors:
+    DTD 2:  2560x1440   59.951 Hz  16:9    88.787 kHz 241.500 MHz (941 mm x 529 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  33 Vpol N
+Checksum: 0xcc
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Mismatch of image size 941x529 mm vs display size 690x390 mm.
+
+EDID conformity: FAIL

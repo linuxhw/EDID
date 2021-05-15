@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 9b 05 00 00 00 00
+00 1b 01 04 a5 1d 11 78 ea e9 35 a3 52 47 9c 28
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 29 36 80 a0 70 38 1f 40 30 20
+35 00 26 a5 10 00 00 1a 57 2b 80 a0 70 38 1f 40
+30 20 35 00 26 a5 10 00 00 1a 00 00 00 fe 00 35
+57 52 33 36 80 31 33 33 57 46 36 0a 00 00 00 00
+00 02 41 31 9e 00 10 00 00 0a 01 0a 20 20 00 4b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1435
+    Made in: 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3222
+    Green: 0.2792, 0.6103
+    Blue : 0.1562, 0.0537
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.999 Hz  16:9    66.659 kHz 138.650 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 2:  1920x1080   48.012 Hz  16:9    53.341 kHz 110.950 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    Alphanumeric Data String: '5WR36'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 31 9e 00 10 00 00 0a 01 0a 20 20 '....A1........  '
+Checksum: 0x4b
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

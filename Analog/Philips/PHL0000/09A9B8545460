@@ -1,0 +1,63 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 00 00 00 00 00 00
+00 13 01 03 08 00 00 78 0a 53 0d a0 54 46 94 27
+11 46 47 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70
+36 00 10 09 00 00 00 1e a9 1a 00 a0 50 00 16 30
+30 20 37 00 05 03 00 00 00 1e 00 00 00 fd 00 39
+3f 41 45 08 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 48 49 4c 49 50 53 0a 20 20 20 20 20 00 7a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PHL
+    Model: 0
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Blank level equals black level
+    Sync: Separate
+    Image size is variable
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6259, 0.3291
+    Green: 0.2734, 0.5810
+    Blue : 0.1523, 0.0664
+    White: 0.2763, 0.2783
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
+    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1360x768    60.015 Hz  85:48   47.712 kHz  85.500 MHz (16 mm x 9 mm)
+                 Hfront   64 Hsync 112 Hback 256 Hpol P
+                 Vfront    3 Vsync   6 Vback  18 Vpol P
+    DTD 2:  1280x768    59.995 Hz   5:3    47.396 kHz  68.250 MHz (5 mm x 3 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   7 Vback  12 Vpol P
+  Display Range Limits:
+    Monitor ranges (GTF): 57-63 Hz V, 65-69 kHz H, max dotclock 80 MHz
+    Display Product Name: 'PHILIPS'
+Checksum: 0x7a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is set, but not display size.
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is set, but not display size.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 48.363 kHz (Monitor: 65.000 - 69.000 kHz)
+    Maximum Clock: 85.500 MHz (Monitor: 80.000 MHz)
+
+EDID conformity: FAIL

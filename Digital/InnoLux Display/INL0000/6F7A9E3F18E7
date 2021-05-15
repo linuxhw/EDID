@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 25 cc 00 00 00 00 00 00
+00 12 01 03 80 1e 14 78 0a 50 c5 98 58 52 8e 27
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 20 1c 00 a0 50 20 17 30 30 20
+36 00 2c c4 10 00 00 1b 20 1c 00 a0 50 20 17 30
+30 20 36 00 2c c4 10 00 00 00 00 00 00 fe 00 54
+38 35 38 4b 80 30 30 0a 20 20 20 20 00 00 00 00
+00 2c 3e 4a 54 75 94 b7 ff 01 01 0a 20 20 00 da
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: INL
+    Model: 0
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 20 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5947, 0.3447
+    Green: 0.3203, 0.5546
+    Blue : 0.1552, 0.1445
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.753 Hz   8:5    50.000 kHz  72.000 MHz (300 mm x 196 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol P
+                 Vfront    3 Vsync   6 Vback  14 Vpol N
+    DTD 2:  1280x800    60.753 Hz   8:5    50.000 kHz  72.000 MHz (analog composite, sync-on-green, 300 mm x 196 mm)
+                 Hfront   48 Hsync  32 Hback  80 Hpol N
+                 Vfront    3 Vsync   6 Vback  14 Vpol N
+    Alphanumeric Data String: 'T858K'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 2c 3e 4a 54 75 94 b7 ff 01 01 0a 20 20 '...,>JTu......  '
+Checksum: 0xda
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL
