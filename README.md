@@ -37,7 +37,7 @@ How to install EDID file
 
 Generate binary EDID file:
 
-    cat EDID.txt | grep -E '^([a-f0-9]{32}|[a-f0-9 ]{47}) | tr -d '[:space:]' | xxd -r -p > EDID.bin
+    cat EDID.txt | grep -E '^([a-f0-9]{32}|[a-f0-9 ]{47})$' | tr -d '[:space:]' | xxd -r -p > EDID.bin
 
 Verify it by `edid-decode`:
 
