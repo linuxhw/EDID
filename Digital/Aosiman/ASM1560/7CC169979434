@@ -40,27 +40,27 @@ Block 0, Base EDID:
     Blue : 0.1503, 0.0595
     White: 0.3125, 0.3291
   Established Timings I & II:
-    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    DMT 0x06:   640x480    75.000 Hz   4:3    37.500 kHz  31.500 MHz
-    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
-    DMT 0x0b:   800x600    75.000 Hz   4:3    46.875 kHz  49.500 MHz
-    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
-    DMT 0x12:  1024x768    75.029 Hz   4:3    60.023 kHz  78.750 MHz
-    DMT 0x24:  1280x1024   75.025 Hz   5:4    79.976 kHz 135.000 MHz
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
   Standard Timings:
-    GTF     :  1152x864    60.000 Hz   4:3    53.700 kHz  81.624 MHz
-    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
-    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
-    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  1920x1080   60.002 Hz  16:9    67.923 kHz 149.430 MHz (345 mm x 194 mm)
-                 Hfront   88 Hsync  44 Hback 148 Hpol P
-                 Vfront    2 Vsync   5 Vback  45 Vpol P
+    DTD 1:  1920x1080   60.002409 Hz  16:9     67.923 kHz    149.430000 MHz (345 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   45 Vpol P
     Display Product Name: 'ASM-156FC'
     Display Product Serial Number: ...
-  Display Range Limits:
-    Monitor ranges (GTF): 48-60 Hz V, 30-84 kHz H, max dotclock 210 MHz
+    Display Range Limits:
+      Monitor ranges (GTF): 48-60 Hz V, 30-84 kHz H, max dotclock 210 MHz
   Extension blocks: 1
 Checksum: 0x71
 
@@ -104,27 +104,27 @@ Block 1, CTA-861 Extension Block:
     Maximum Refresh Rate: 63 Hz
     Flags 1.x: 0xe6 (MCCS)
   Detailed Timing Descriptors:
-    DTD 2:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (280 mm x 150 mm)
-                 Hfront   88 Hsync  44 Hback 148 Hpol P
-                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (280 mm x 150 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
 Checksum: 0xd8
 
 ----------------
 
 Warnings:
 
-Block 1, CTA-861 Extension Block:
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 0, Base EDID:
+  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
   Detailed Timing Descriptor #1: Mismatch of image size 345x194 mm vs display size 300x260 mm.
-  Display Product Serial Number: Empty string.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #2: Mismatch of image size 280x150 mm vs display size 300x260 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 59.940 - 75.029 Hz (Monitor: 48.000 - 60.000 Hz)

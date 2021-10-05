@@ -41,13 +41,13 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  1080x1920   60.004 Hz   9:16  117.368 kHz 142.250 MHz (71 mm x 126 mm)
-                 Hfront   64 Hsync   4 Hback  64 Hpol P
-                 Vfront   16 Vsync   4 Vback  16 Vpol N
+    DTD 1:  1080x1920   60.004083 Hz   9:16   117.368 kHz    142.250000 MHz (71 mm x 126 mm)
+                 Hfront   64 Hsync   4 Hback   64 Hpol P
+                 Vfront   16 Vsync   4 Vback   16 Vpol N
     Display Product Name: 'PIMAX P1'
     Display Product Serial Number: ...
-  Display Range Limits:
-    Monitor ranges (GTF): 20-120 Hz V, 1-255 kHz H, max dotclock 290 MHz
+    Display Range Limits:
+      Monitor ranges (GTF): 20-120 Hz V, 1-255 kHz H, max dotclock 290 MHz
   Extension blocks: 1
 Checksum: 0x92
 
@@ -60,13 +60,13 @@ Block 1, CTA-861 Extension Block:
   Supports YCbCr 4:2:2
   Native detailed modes: 1
   Video Data Block:
-    VIC 198:  7680x4320   50.000 Hz  16:9   220.000 kHz 2376.000 MHz
-    VIC  70:  1280x720   100.000 Hz  64:27   75.000 kHz 148.500 MHz
-    VIC  70:  1280x720   100.000 Hz  64:27   75.000 kHz 148.500 MHz
-    VIC  70:  1280x720   100.000 Hz  64:27   75.000 kHz 148.500 MHz
-    VIC  70:  1280x720   100.000 Hz  64:27   75.000 kHz 148.500 MHz
-    VIC  70:  1280x720   100.000 Hz  64:27   75.000 kHz 148.500 MHz
-    VIC  70:  1280x720   100.000 Hz  64:27   75.000 kHz 148.500 MHz
+    VIC 198:  7680x4320   50.000000 Hz  16:9    220.000 kHz   2376.000000 MHz
+    VIC  70:  1280x720   100.000000 Hz  64:27    75.000 kHz    148.500000 MHz
+    VIC  70:  1280x720   100.000000 Hz  64:27    75.000 kHz    148.500000 MHz
+    VIC  70:  1280x720   100.000000 Hz  64:27    75.000 kHz    148.500000 MHz
+    VIC  70:  1280x720   100.000000 Hz  64:27    75.000 kHz    148.500000 MHz
+    VIC  70:  1280x720   100.000000 Hz  64:27    75.000 kHz    148.500000 MHz
+    VIC  70:  1280x720   100.000000 Hz  64:27    75.000 kHz    148.500000 MHz
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -77,18 +77,18 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
   Detailed Timing Descriptors:
-    DTD 2:  1080x1920   59.246 Hz   9:16  114.701 kHz 142.000 MHz (1080 mm x 1920 mm)
-                 Hfront   90 Hsync   4 Hback  64 Hpol N
-                 Vfront    8 Vsync   2 Vback   6 Vpol N
-    DTD 3:  1080x1920   59.246 Hz   9:16  114.701 kHz 142.000 MHz (1080 mm x 1920 mm)
-                 Hfront   90 Hsync   4 Hback  64 Hpol N
-                 Vfront    8 Vsync   2 Vback   6 Vpol N
-    DTD 4:  1080x1920   59.246 Hz   9:16  114.701 kHz 142.000 MHz (1080 mm x 1920 mm)
-                 Hfront   90 Hsync   4 Hback  64 Hpol N
-                 Vfront    8 Vsync   2 Vback   6 Vpol N
-    DTD 5:  1080x1920   59.246 Hz   9:16  114.701 kHz 142.000 MHz (1080 mm x 1920 mm)
-                 Hfront   90 Hsync   4 Hback  64 Hpol N
-                 Vfront    8 Vsync   2 Vback   6 Vpol N
+    DTD 2:  1080x1920   59.246452 Hz   9:16   114.701 kHz    142.000000 MHz (1080 mm x 1920 mm)
+                 Hfront   90 Hsync   4 Hback   64 Hpol N
+                 Vfront    8 Vsync   2 Vback    6 Vpol N
+    DTD 3:  1080x1920   59.246452 Hz   9:16   114.701 kHz    142.000000 MHz (1080 mm x 1920 mm)
+                 Hfront   90 Hsync   4 Hback   64 Hpol N
+                 Vfront    8 Vsync   2 Vback    6 Vpol N
+    DTD 4:  1080x1920   59.246452 Hz   9:16   114.701 kHz    142.000000 MHz (1080 mm x 1920 mm)
+                 Hfront   90 Hsync   4 Hback   64 Hpol N
+                 Vfront    8 Vsync   2 Vback    6 Vpol N
+    DTD 5:  1080x1920   59.246452 Hz   9:16   114.701 kHz    142.000000 MHz (1080 mm x 1920 mm)
+                 Hfront   90 Hsync   4 Hback   64 Hpol N
+                 Vfront    8 Vsync   2 Vback    6 Vpol N
 Checksum: 0x93
 
 ----------------
@@ -97,23 +97,18 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   CTA-861: Native progressive resolution of 1080x1920 is smaller than the max preferred progressive resolution 7680x4320.
 
 Failures:
 
-Block 0, Base EDID:
-  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is set, but not display size.
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 70.
-  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is set, but not display size.
-  Detailed Timing Descriptor #3: Mismatch of image size vs display size: image size is set, but not display size.
-  Detailed Timing Descriptor #4: Mismatch of image size vs display size: image size is set, but not display size.
-  Detailed Timing Descriptor #5: Mismatch of image size vs display size: image size is set, but not display size.
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 2376.000 MHz (Monitor: 290.000 MHz)
+  Base EDID: The DTD image sizes all fit inside 255x255cm, but no display size was set.
 
 EDID conformity: FAIL

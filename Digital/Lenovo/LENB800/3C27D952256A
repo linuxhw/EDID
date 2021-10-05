@@ -42,15 +42,15 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings:
   Detailed Timing Descriptors:
-    DTD 1:  2880x1440   90.000 Hz   2:1   135.270 kHz 400.400 MHz (60 mm x 50 mm)
-                 Hfront    8 Hsync  32 Hback  40 Hpol N
-                 Vfront   49 Vsync   8 Vback   6 Vpol N
-    DTD 2:  2880x1440   60.005 Hz   2:1    90.187 kHz 270.200 MHz (60 mm x 50 mm)
-                 Hfront   24 Hsync  32 Hback  60 Hpol N
-                 Vfront   49 Vsync   8 Vback   6 Vpol N
+    DTD 1:  2880x1440   90.000180 Hz   2:1    135.270 kHz    400.400000 MHz (60 mm x 50 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol N
+                 Vfront   49 Vsync   8 Vback    6 Vpol N
+    DTD 2:  2880x1440   60.004601 Hz   2:1     90.187 kHz    270.200000 MHz (60 mm x 50 mm)
+                 Hfront   24 Hsync  32 Hback   60 Hpol N
+                 Vfront   49 Vsync   8 Vback    6 Vpol N
     Display Product Name: 'MR'
-  Display Range Limits:
-    Monitor ranges (GTF): 60-90 Hz V, 31-135 kHz H, max dotclock 600 MHz
+    Display Range Limits:
+      Monitor ranges (GTF): 60-90 Hz V, 31-135 kHz H, max dotclock 600 MHz
   Extension blocks: 1
 Checksum: 0xb8
 
@@ -66,15 +66,16 @@ Block 1, CTA-861 Extension Block:
     Maximum TMDS Character Rate: 405 MHz
     SCDC Present
   Vendor-Specific Data Block (Microsoft), OUI CA-12-5C:
-    01 07 65 25 cb ae ed 10 58 6d 92 98 3a 59 06 72 '..e%....Xm..:Y.r'
-    e4 25                                           '.%'
+    Version: 1
+    Display Product Primary Use Case: 7 (Virtual reality headset)
+    Container ID: 6525cbae-ed10-586d-9298-3a590672e425
   Detailed Timing Descriptors:
-    DTD 3:  2880x1440   90.000 Hz   2:1   135.270 kHz 400.400 MHz (60 mm x 50 mm)
-                 Hfront    8 Hsync  32 Hback  40 Hpol N
-                 Vfront   49 Vsync   8 Vback   6 Vpol N
-    DTD 4:  2880x1440   60.005 Hz   2:1    90.187 kHz 270.200 MHz (60 mm x 50 mm)
-                 Hfront   24 Hsync  32 Hback  60 Hpol N
-                 Vfront   49 Vsync   8 Vback   6 Vpol N
+    DTD 3:  2880x1440   90.000180 Hz   2:1    135.270 kHz    400.400000 MHz (60 mm x 50 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol N
+                 Vfront   49 Vsync   8 Vback    6 Vpol N
+    DTD 4:  2880x1440   60.004601 Hz   2:1     90.187 kHz    270.200000 MHz (60 mm x 50 mm)
+                 Hfront   24 Hsync  32 Hback   60 Hpol N
+                 Vfront   49 Vsync   8 Vback    6 Vpol N
 Checksum: 0xb4
 
 ----------------
@@ -85,7 +86,6 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (6x5 is smaller than 10x10 cm).
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
@@ -102,5 +102,6 @@ Block 0, Base EDID:
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

@@ -34,19 +34,23 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  1440x900    60.014 Hz   8:5    56.413 kHz 103.800 MHz
-                 Hfront   88 Hsync 152 Hback 160 Hpol N
-                 Vfront    3 Vsync   6 Vback  31 Vpol N
+    DTD 1:  1440x900    60.013876 Hz   8:5     56.413 kHz    103.800000 MHz
+                 Hfront   88 Hsync 152 Hback  160 Hpol N
+                 Vfront    3 Vsync   6 Vback   31 Vpol N
     Standard Timing Identifications:
-      CVT     :   296x192    72.407 Hz  16:10   15.278 kHz   5.500 MHz (EDID 1.4 source)
-      GTF     :   296x192    76.007 Hz  16:10   15.277 kHz   5.011 MHz (EDID 1.3 source)
-      CVT     :   632x400    76.477 Hz  16:10   32.197 kHz  25.500 MHz (EDID 1.4 source)
-      GTF     :   632x400    76.999 Hz  16:10   32.263 kHz  25.552 MHz (EDID 1.3 source)
+      GTF     :   296x185    75.999497 Hz  16:10    14.744 kHz      4.836000 MHz
+      GTF     :   632x395    76.998853 Hz  16:10    31.878 kHz     25.247000 MHz
     Alphanumeric Data String: 'LEN-AIO-330-E'
     Display Product Name: 'LEN-AIO-330-E'
 Checksum: 0x5e
 
 ----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timing Identifications: Standard Timing 296x185 has a dubious odd vertical resolution.
+  Standard Timing Identifications: Standard Timing 632x395 has a dubious odd vertical resolution.
 
 Failures:
 
@@ -57,8 +61,5 @@ Block 0, Base EDID:
   Standard Timing Identifications: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Standard Timing Identifications: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Standard Timing Identifications: Use 0x0101 as the invalid Standard Timings code, not 0x000a.
-EDID:
-  Base EDID: GTF timings are used, but the EDID does not signal GTF support.
-  Base EDID: CVT timings are used, but the EDID does not signal CVT support.
 
 EDID conformity: FAIL

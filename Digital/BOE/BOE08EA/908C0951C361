@@ -43,9 +43,9 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  1920x1080  144.003 Hz  16:9   164.452 kHz 342.060 MHz (344 mm x 194 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   6 Vback  53 Vpol N
+    DTD 1:  1920x1080  144.003435 Hz  16:9    164.452 kHz    342.060000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   53 Vpol N
     Empty Descriptor
     Alphanumeric Data String: 'BOE CQ'
     Alphanumeric Data String: 'NV156FHM-NY5'
@@ -76,7 +76,6 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 Failures:
 
@@ -86,5 +85,6 @@ Block 0, Base EDID:
   Missing Display Range Limits Descriptor.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

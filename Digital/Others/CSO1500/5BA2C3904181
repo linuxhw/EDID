@@ -43,9 +43,9 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  3840x2160   60.000 Hz  16:9   132.000 kHz 528.000 MHz (344 mm x 194 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol N
-                 Vfront    3 Vsync   5 Vback  32 Vpol N
+    DTD 1:  3840x2160   60.000000 Hz  16:9    132.000 kHz    528.000000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   32 Vpol N
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 18 '................'
     Alphanumeric Data String: 'CSOT T3'
     Alphanumeric Data String: 'MNF601EA1-1'
@@ -76,7 +76,6 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 Failures:
 
@@ -85,5 +84,6 @@ Block 0, Base EDID:
   Missing Display Range Limits Descriptor.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

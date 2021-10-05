@@ -40,24 +40,24 @@ Block 0, Base EDID:
     Blue : 0.1464, 0.0468
     White: 0.3115, 0.3271
   Established Timings I & II:
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
-    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
   Standard Timings:
-    GTF     :  1152x648    60.000 Hz  16:9    40.260 kHz  59.907 MHz
-    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
-    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
-    GTF     :  1360x768    60.000 Hz  16:9    47.700 kHz  84.715 MHz
-    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
-    GTF     :  1680x1056   61.000 Hz  16:10   66.734 kHz 150.552 MHz
+    GTF     :  1152x648    60.000120 Hz  16:9     40.260 kHz     59.907000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    GTF     :  1360x765    60.000341 Hz  16:9     47.520 kHz     84.396000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    GTF     :  1680x1050   61.000166 Hz  16:10    66.307 kHz    149.589000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  1920x1080   62.809 Hz  16:9    69.718 kHz 148.500 MHz (256 mm x 144 mm)
-                 Hfront   90 Hsync  60 Hback  60 Hpol P
-                 Vfront   10 Vsync  10 Vback  10 Vpol P
+    DTD 1:  1920x1080   62.809288 Hz  16:9     69.718 kHz    148.500000 MHz (256 mm x 144 mm)
+                 Hfront   90 Hsync  60 Hback   60 Hpol P
+                 Vfront   10 Vsync  10 Vback   10 Vpol P
     Display Product Name: 'Artist 12    '
     Dummy Descriptor:
-  Display Range Limits:
-    Monitor ranges (GTF): 60-60 Hz V, 31-70 kHz H, max dotclock 150 MHz
+    Display Range Limits:
+      Monitor ranges (GTF): 60-60 Hz V, 31-70 kHz H, max dotclock 150 MHz
   Extension blocks: 1
 Checksum: 0x86
 
@@ -69,45 +69,47 @@ Block 1, CTA-861 Extension Block:
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
   Native detailed modes: 1
-  Unknown CTA-861 tag 0x00, length 0
-  Unknown CTA-861 tag 0x00, length 0
-  Unknown CTA-861 tag 0x00, length 5
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 5):
     04 03 02 07 16                                  '.....'
-  Unknown CTA-861 tag 0x00, length 1
+  Unknown CTA-861 Data Block (tag 0x00, length 1):
     1f                                              '.'
-  Unknown CTA-861 tag 0x00, length 18
+  Unknown CTA-861 Data Block (tag 0x00, length 18):
     13 14 20 15 11 06 00 00 00 00 67 03 0c 00 10 00 '.. .......g.....'
     38 2d                                           '8-'
+  Vendor-Specific Video Data Block, OUI 00-00-00:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
   Detailed Timing Descriptors:
-    DTD 2:  1920x1080   62.809 Hz  16:9    69.718 kHz 148.500 MHz (256 mm x 144 mm)
-                 Hfront   90 Hsync  60 Hback  60 Hpol P
-                 Vfront   10 Vsync  10 Vback  10 Vpol P
-    DTD 3:  1920x2160i  62.781 Hz   8:9    69.718 kHz 148.500 MHz (256 mm x 144 mm)
-                 Hfront   90 Hsync  60 Hback  60 Hpol P
-                 Vfront   10 Vsync  10 Vback  10 Vpol P Vfront +0.5 Odd Field
-                 Vfront   10 Vsync  10 Vback  10 Vpol P Vback  +0.5 Even Field
-    DTD 4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (518 mm x 324 mm)
-                 Hfront  110 Hsync  40 Hback 220 Hpol P
-                 Vfront    5 Vsync   5 Vback  20 Vpol P
-    DTD 5:   720x480    59.940 Hz   3:2    31.469 kHz  27.000 MHz (518 mm x 324 mm)
-                 Hfront   16 Hsync  62 Hback  60 Hpol N
-                 Vfront    9 Vsync   6 Vback  30 Vpol N
+    DTD 2:  1920x1080   62.809288 Hz  16:9     69.718 kHz    148.500000 MHz (256 mm x 144 mm)
+                 Hfront   90 Hsync  60 Hback   60 Hpol P
+                 Vfront   10 Vsync  10 Vback   10 Vpol P
+    DTD 3:  1920x2160i  62.781008 Hz   8:9     69.718 kHz    148.500000 MHz (256 mm x 144 mm)
+                 Hfront   90 Hsync  60 Hback   60 Hpol P
+                 Vfront   10 Vsync  10 Vback   10 Vpol P Vfront +0.5 Odd Field
+                 Vfront   10 Vsync  10 Vback   10 Vpol P Vback  +0.5 Even Field
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (518 mm x 324 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (518 mm x 324 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
 Checksum: 0xfb
 
 ----------------
 
 Warnings:
 
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
 Block 1, CTA-861 Extension Block:
-  Unknown CTA-861 Data Block 0.
-  Unknown CTA-861 Data Block 0.
-  Unknown CTA-861 Data Block 0.
-  Unknown CTA-861 Data Block 0.
-  Unknown CTA-861 Data Block 0.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 5).
+  Unknown CTA-861 Data Block (tag 0x00, length 1).
+  Unknown CTA-861 Data Block (tag 0x00, length 18).
 
 Failures:
 
@@ -116,12 +118,12 @@ Block 0, Base EDID:
   Display Product Name: One or more trailing spaces.
   Dummy Descriptor: Dummy block filled with garbage.
 Block 1, CTA-861 Extension Block:
-  Vendor-Specific Video Data Block: Invalid length 2 < 3.
+  Vendor-Specific Video Data Block, OUI 00-00-00: Data block length (2) is not enough to contain an OUI.
   Detailed Timing Descriptor #4: Mismatch of image size 518x324 mm vs display size 260x150 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 518x324 mm vs display size 260x150 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 59.887 - 62.809 Hz (Monitor: 60.000 - 60.000 Hz)
-    Maximum Clock: 150.552 MHz (Monitor: 150.000 MHz)
 
 EDID conformity: FAIL

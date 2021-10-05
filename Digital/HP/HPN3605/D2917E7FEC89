@@ -40,24 +40,24 @@ Block 0, Base EDID:
     Blue : 0.1523, 0.0605
     White: 0.3125, 0.3281
   Established Timings I & II:
-    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
-    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
   Standard Timings:
-    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
-    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
-    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
-    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
-    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
-    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
-    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (527 mm x 296 mm)
-                 Hfront   88 Hsync  44 Hback 148 Hpol P
-                 Vfront    4 Vsync   5 Vback  36 Vpol P
-  Display Range Limits:
-    Monitor ranges (GTF): 48-75 Hz V, 30-86 kHz H, max dotclock 180 MHz
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 48-75 Hz V, 30-86 kHz H, max dotclock 180 MHz
     Display Product Name: 'HP 24fw'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -73,15 +73,15 @@ Block 1, CTA-861 Extension Block:
   Supports YCbCr 4:2:2
   Native detailed modes: 1
   Video Data Block:
-    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (native)
-    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
-    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
-    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
-    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
-    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
-    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
-    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -103,18 +103,18 @@ Block 1, CTA-861 Extension Block:
     IT scan behavior: Always Underscanned
     CE scan behavior: Supports both over- and underscan
   Detailed Timing Descriptors:
-    DTD 2:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (527 mm x 296 mm)
-                 Hfront   88 Hsync  44 Hback 148 Hpol P
-                 Vfront    4 Vsync   5 Vback  36 Vpol P
-    DTD 3:  1920x1080   74.973 Hz  16:9    83.894 kHz 174.500 MHz (527 mm x 296 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  31 Vpol N
-    DTD 4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (527 mm x 296 mm)
-                 Hfront  110 Hsync  40 Hback 220 Hpol P
-                 Vfront    5 Vsync   5 Vback  20 Vpol P
-    DTD 5:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz (527 mm x 296 mm)
-                 Hfront  440 Hsync  40 Hback 220 Hpol P
-                 Vfront    5 Vsync   5 Vback  20 Vpol P
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 3:  1920x1080   74.972503 Hz  16:9     83.894 kHz    174.500000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   31 Vpol N
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (527 mm x 296 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (527 mm x 296 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
 Checksum: 0x3f
 
 ----------------
@@ -122,7 +122,7 @@ Checksum: 0x3f
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
@@ -130,6 +130,8 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Display Product Serial Number: One or more trailing spaces.
+  Display Product Serial Number: ...
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

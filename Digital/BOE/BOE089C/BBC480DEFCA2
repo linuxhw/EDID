@@ -42,9 +42,9 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  3840x2160   60.000 Hz  16:9   133.320 kHz 533.280 MHz (344 mm x 194 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  54 Vpol N
+    DTD 1:  3840x2160   60.000000 Hz  16:9    133.320 kHz    533.280000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1a '................'
     Alphanumeric Data String: 'BOE HF'
     Alphanumeric Data String: 'NE156QUM-N66'
@@ -75,7 +75,6 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 Failures:
 
@@ -83,5 +82,6 @@ Block 0, Base EDID:
   Missing Display Product Name.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

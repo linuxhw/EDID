@@ -42,18 +42,18 @@ Block 0, Base EDID:
     Blue : 0.1523, 0.0673
     White: 0.2792, 0.3242
   Established Timings I & II:
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
-    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  3280x2048   34.976 Hz 205:128  72.820 kHz 250.500 MHz (654 mm x 409 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync  10 Vback  21 Vpol N
+    DTD 1:  3280x2048   34.975873 Hz 205:128   72.820 kHz    250.500000 MHz (654 mm x 409 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   21 Vpol N
     Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 32 35 39 30 31 31 30 39 32 37 0a 20 20 '...2590110927.  '
     Display Product Name: 'MDCC-6430'
-  Display Range Limits:
-    Monitor ranges (GTF): 15-110 Hz V, 25-220 kHz H, max dotclock 330 MHz
+    Display Range Limits:
+      Monitor ranges (GTF): 15-110 Hz V, 25-220 kHz H, max dotclock 330 MHz
   Extension blocks: 1
 Checksum: 0x4f
 
@@ -62,18 +62,23 @@ Checksum: 0x4f
 Block 1, Video Timing Extension Block:
   Version: 1
   Detailed Timing Descriptors:
-    DTD:  3280x2048   34.976 Hz 205:128  72.820 kHz 250.500 MHz (654 mm x 409 mm)
-               Hfront   48 Hsync  32 Hback  80 Hpol P
-               Vfront    3 Vsync  10 Vback  21 Vpol N
-    DTD:  1536x2048   49.979 Hz   3:4   104.805 kHz 177.750 MHz (306 mm x 409 mm)
-               Hfront   48 Hsync  32 Hback  80 Hpol P
-               Vfront    3 Vsync  10 Vback  36 Vpol N
-    DTD:  1640x2048   49.939 Hz 205:256 104.722 kHz 188.500 MHz (327 mm x 409 mm)
-               Hfront   48 Hsync  32 Hback  80 Hpol P
-               Vfront    3 Vsync  10 Vback  36 Vpol N
+    DTD:  3280x2048   34.975873 Hz 205:128   72.820 kHz    250.500000 MHz (654 mm x 409 mm)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback   21 Vpol N
+    DTD:  1536x2048   49.978743 Hz   3:4    104.805 kHz    177.750000 MHz (306 mm x 409 mm)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback   36 Vpol N
+    DTD:  1640x2048   49.939066 Hz 205:256  104.722 kHz    188.500000 MHz (327 mm x 409 mm)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback   36 Vpol N
 Checksum: 0x75
 
 ----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
 
 Failures:
 

@@ -52,17 +52,17 @@ Block 0, Base EDID:
     Blue : 0.1484, 0.0595
     White: 0.3125, 0.3291
   Established Timings I & II:
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
-    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  3840x1600   59.994 Hz  12:5    98.750 kHz 395.000 MHz (890 mm x 388 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  38 Vpol N
+    DTD 1:  3840x1600   59.993925 Hz  12:5     98.750 kHz    395.000000 MHz (890 mm x 388 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   38 Vpol N
     Display Product Serial Number: ...
-  Display Range Limits:
-    Monitor ranges (Bare Limits): 1-144 Hz V, 246-246 kHz H, max dotclock 990 MHz
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 1-144 Hz V, 246-246 kHz H, max dotclock 990 MHz
     Display Product Name: '38GL950G'
   Extension blocks: 2
 Checksum: 0x33
@@ -104,9 +104,9 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 90 (351.250 cd/m^2)
     Desired content min luminance: 40 (0.098 cd/m^2)
   Detailed Timing Descriptors:
-    DTD 2:  3840x1600   84.971 Hz  12:5   141.562 kHz 566.250 MHz (890 mm x 388 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  58 Vpol N
+    DTD 2:  3840x1600   84.971489 Hz  12:5    141.562 kHz    566.250000 MHz (890 mm x 388 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   58 Vpol N
 Checksum: 0x66
 
 ----------------
@@ -127,20 +127,20 @@ Block 2, DisplayID Extension Block:
   Color Characteristics Data Block:
     Uses spatial color
     Uses 1931 CIE (x, y) coordinates
-    Primary #0: (0.683350, 0.309814)
-    Primary #1: (0.256592, 0.670410)
-    Primary #2: (0.148193, 0.059570)
-    White point #0: (0.312744, 0.329102)
+    Primary #0: (0.6833, 0.3098)
+    Primary #1: (0.2566, 0.6704)
+    Primary #2: (0.1482, 0.0596)
+    White point #0: (0.3127, 0.3291)
   Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  3840x1600  119.982 Hz  16:9   203.250 kHz 813.000 MHz (aspect 16:9, no 3D stereo)
-               Hfront   48 Hsync  32 Hback  80 Hpol P
-               Vfront    3 Vsync   5 Vback  86 Vpol N
-    DTD:  3840x1600  143.998 Hz  16:9   246.812 kHz 987.250 MHz (aspect 16:9, no 3D stereo)
-               Hfront   48 Hsync  32 Hback  80 Hpol P
-               Vfront    3 Vsync   5 Vback 106 Vpol N
-    DTD:  3840x1600   99.970 Hz  16:9   167.750 kHz 671.000 MHz (aspect 16:9, no 3D stereo)
-               Hfront   48 Hsync  32 Hback  80 Hpol P
-               Vfront    3 Vsync   5 Vback  70 Vpol N
+    DTD:  3840x1600  119.982290 Hz  16:9    203.250 kHz    813.000000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback   86 Vpol N
+    DTD:  3840x1600  143.997958 Hz  16:9    246.812 kHz    987.250000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback  106 Vpol N
+    DTD:  3840x1600   99.970203 Hz  16:9    167.750 kHz    671.000000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback   70 Vpol N
   Checksum: 0xbb
 Checksum: 0x90
 
@@ -149,6 +149,8 @@ Checksum: 0x90
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

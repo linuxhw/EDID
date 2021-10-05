@@ -43,14 +43,14 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  1920x1080  119.982 Hz  16:9   137.260 kHz 285.500 MHz (field sequential R/L, 598 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  56 Vpol P
-    DTD 2:  1920x1080   99.930 Hz  16:9   113.221 kHz 235.500 MHz (field sequential R/L, 598 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  45 Vpol N
-  Display Range Limits:
-    Monitor ranges (GTF): 24-120 Hz V, 26-140 kHz H, max dotclock 300 MHz
+    DTD 1:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (field sequential R/L, 598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol P
+    DTD 2:  1920x1080   99.930409 Hz  16:9    113.221 kHz    235.500000 MHz (field sequential R/L, 598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   45 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 24-120 Hz V, 26-140 kHz H, max dotclock 300 MHz
     Display Product Name: 'S27A950D'
   Extension blocks: 1
 Checksum: 0x1b
@@ -75,8 +75,8 @@ Checksum: 0x71
 
 Warnings:
 
-Block 1, CTA-861 Extension Block:
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
 
 Failures:
 
@@ -84,5 +84,6 @@ Block 0, Base EDID:
   Display Range Limits: GTF can't be combined with non-continuous frequencies.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

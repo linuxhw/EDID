@@ -42,9 +42,9 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  2560x1600   60.001 Hz   8:5    98.761 kHz 260.730 MHz (286 mm x 179 mm)
-                 Hfront    8 Hsync  32 Hback  40 Hpol P
-                 Vfront   32 Vsync   8 Vback   6 Vpol N
+    DTD 1:  2560x1600   60.000828 Hz   8:5     98.761 kHz    260.730000 MHz (286 mm x 179 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront   32 Vsync   8 Vback    6 Vpol N
     Display Product Name: 'Color LCD'
     Dummy Descriptor:
     Dummy Descriptor:
@@ -57,25 +57,31 @@ Block 1, DisplayID Extension Block:
   Version: 1.2
   Extension Count: 0
   Display Product Type: Standalone display device
-  Vendor-Specific Data Block (Apple):
-    fa 10 00 03 01 18 0f 28 17 00 00 00 00 00 00 00 '.......(........'
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
+    03 01 18 0f 28 17 00 00 00 00 00 00 00 00 00 00 '....(...........'
     00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
-    00 00 00 00 00 00 00 00 46 4d 58 39 32 39 31 30 '........FMX92910'
-    34 32 48 4a 34 36 33 41 34 0a 20 20 20 20 20    '42HJ463A4.     '
-  Vendor-Specific Data Block (Apple):
-    fa 10 00 02 01 00 11 00 00 02 90 03 39 04 25 05 '............9.%.'
-    66 07 1d 09 74 0c aa 11 15 17 2d 1f 9f 2b 5c 3b 'f...t.....-..+\;'
-    bc 52 a5 72 cd a0 13 df 8d                      '.R.r.....'
+    00 00 00 00 00 46 4d 58 39 32 39 31 30 34 32 48 '.....FMX9291042H'
+    4a 34 36 33 41 34 0a 20 20 20 20 20             'J463A4.     '
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
+    02 01 00 11 00 00 02 90 03 39 04 25 05 66 07 1d '.........9.%.f..'
+    09 74 0c aa 11 15 17 2d 1f 9f 2b 5c 3b bc 52 a5 '.t.....-..+\;.R.'
+    72 cd a0 13 df 8d                               'r.....'
   Checksum: 0x20
 Checksum: 0x90
 
 ----------------
 
+Warnings:
+
+Block 1, DisplayID Extension Block:
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
+
 Failures:
 
 Block 1, DisplayID Extension Block:
-  Vendor-Specific Data Block (Apple): OUI FA-10-00 is in the wrong byte order.
-  Vendor-Specific Data Block (Apple): OUI FA-10-00 is in the wrong byte order.
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
 EDID:
   DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: Missing DisplayID Display Parameters Data Block.

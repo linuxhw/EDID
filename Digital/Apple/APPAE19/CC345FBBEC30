@@ -44,12 +44,12 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  3840x2160   59.997 Hz  16:9   133.312 kHz 533.250 MHz (475 mm x 267 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  54 Vpol N
-    DTD 2:  1920x1080   59.934 Hz  16:9    66.587 kHz 138.500 MHz (475 mm x 267 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (475 mm x 267 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD 2:  1920x1080   59.933878 Hz  16:9     66.587 kHz    138.500000 MHz (475 mm x 267 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
     Display Product Name: 'iMac'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -74,17 +74,17 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (Apple), OUI 00-10-FA:
     f6 f6 f7 f8 fe ff                               '......'
   Detailed Timing Descriptors:
-    DTD 3:   602x1696  355.971 Hz 301:848 860.026 kHz 655.340 MHz (analog composite, sync-on-green, 3381 mm x 2816 mm)
-                 Hfront   54 Hsync 624 Hback -518 Hpol N Hborder 11
-                 Vfront    3 Vsync   0 Vback 717 Vpol N Vborder 17
+    DTD 3:   602x1696  355.971129 Hz 301:848  860.026 kHz    655.340000 MHz (analog composite, sync-on-green, 3381 mm x 2816 mm)
+                 Hfront   54 Hsync 624 Hback -540 Hpol N Hborder 11
+                 Vfront    3 Vsync   0 Vback  683 Vpol N Vborder 17
                    fe ff 5a a0 20 a0 d0 62 36 70 30 20 35 00 db 0b 11 00 '..Z. ..b6p0 5.....'
-    DTD 4:    86x2720  128.395 Hz  43:1360 369.778 kHz  66.560 MHz (analog composite, sync-on-green, 3381 mm x 2816 mm)
-                 Hfront   41 Hsync 592 Hback -539 Hpol N Hborder 11
-                 Vfront    3 Vsync   0 Vback 157 Vpol N Vborder 17
+    DTD 4:    86x2720  128.395062 Hz  43:1360  369.778 kHz     66.560000 MHz (analog composite, sync-on-green, 3381 mm x 2816 mm)
+                 Hfront   41 Hsync 592 Hback -561 Hpol N Hborder 11
+                 Vfront    3 Vsync   0 Vback  123 Vpol N Vborder 17
                    00 1a 56 5e 00 a0 a0 a0 29 50 30 20 35 00 db 0b 11 00 '..V^....)P0 5.....'
-    DTD 5:     0x0         inf Hz   0:0     0.000 kHz  66.560 MHz (analog composite, sync-on-green)
-                 Hfront    0 Hsync   0 Hback   0 Hpol N
-                 Vfront    0 Vsync   0 Vback   0 Vpol N
+    DTD 5:     0x0            inf Hz   0:0      0.000 kHz     66.560000 MHz (analog composite, sync-on-green)
+                 Hfront    0 Hsync   0 Hback    0 Hpol N
+                 Vfront    0 Vsync   0 Vback    0 Vpol N
                    00 1a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '..................'
 Checksum: 0x1c
 
@@ -93,8 +93,9 @@ Checksum: 0x1c
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: The use of non-zero borders in a DTD is not recommended.
+  Detailed Timing Descriptor #4: The use of non-zero borders in a DTD is not recommended.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 Failures:
 
@@ -124,5 +125,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #5: 0 or negative vertical back porch.
   Detailed Timing Descriptor #5: Mismatch of image size vs display size: image size is not set, but display size is.
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

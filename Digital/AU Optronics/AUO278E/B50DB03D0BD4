@@ -43,14 +43,14 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  3840x2160   60.025 Hz  16:9   133.375 kHz 533.500 MHz (381 mm x 214 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol N
-                 Vfront    3 Vsync   5 Vback  54 Vpol N
-    DTD 2:  3840x2160   48.020 Hz  16:9   106.700 kHz 426.800 MHz (381 mm x 214 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol N
-                 Vfront    3 Vsync   5 Vback  54 Vpol N
-  Display Range Limits:
-    Monitor ranges (Bare Limits): 48-60 Hz V, 134-134 kHz H, max dotclock 530 MHz
+    DTD 1:  3840x2160   60.024752 Hz  16:9    133.375 kHz    533.500000 MHz (381 mm x 214 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD 2:  3840x2160   48.019802 Hz  16:9    106.700 kHz    426.800000 MHz (381 mm x 214 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-60 Hz V, 134-134 kHz H, max dotclock 530 MHz
     Alphanumeric Data String: 'B173ZAN05.0 '
   Extension blocks: 1
 Checksum: 0x38
@@ -79,7 +79,6 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 106.700 - 133.375 kHz (Monitor: 134.000 - 134.000 kHz)
@@ -92,5 +91,6 @@ Block 0, Base EDID:
   Missing Display Product Name.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

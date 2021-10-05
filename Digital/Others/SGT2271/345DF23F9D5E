@@ -40,22 +40,22 @@ Block 0, Base EDID:
     Blue : 0.1503, 0.0595
     White: 0.3125, 0.3291
   Established Timings I & II:
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
-    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
   Standard Timings:
-    GTF     :  1152x864    60.000 Hz   4:3    53.700 kHz  81.624 MHz
-    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
-    DMT 0x53:  1600x900    60.000 Hz  16:9    60.000 kHz 108.000 MHz (RB)
-    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (477 mm x 268 mm)
-                 Hfront   88 Hsync  44 Hback 148 Hpol P
-                 Vfront    2 Vsync   5 Vback  38 Vpol P
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol P
     Display Product Name: 'HDMI'
     Display Product Serial Number: ...
-  Display Range Limits:
-    Monitor ranges (GTF): 59-63 Hz V, 30-84 kHz H, max dotclock 200 MHz
+    Display Range Limits:
+      Monitor ranges (GTF): 59-63 Hz V, 30-84 kHz H, max dotclock 200 MHz
   Extension blocks: 1
 Checksum: 0x53
 
@@ -100,24 +100,27 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 98 (417.710 cd/m^2)
     Desired content min luminance: 0 (0.000 cd/m^2)
   Detailed Timing Descriptors:
-    DTD 2:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (477 mm x 268 mm)
-                 Hfront   88 Hsync  44 Hback 148 Hpol P
-                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
 Checksum: 0x7b
 
 ----------------
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
 
 Failures:
 
 Block 0, Base EDID:
-  Display Product Serial Number: Empty string.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
-  Vendor-Specific Data Block (HDMI): HDMI VSDB Max TMDS rate is > 340.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
 
 EDID conformity: FAIL

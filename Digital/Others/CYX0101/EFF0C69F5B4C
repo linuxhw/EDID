@@ -41,26 +41,26 @@ Block 0, Base EDID:
     Blue : 0.1523, 0.0732
     White: 0.3134, 0.3291
   Established Timings I & II:
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
-    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
   Standard Timings:
-    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
-    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
-    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
-    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
-    DMT 0x2a:  1400x1050   59.978 Hz   4:3    65.317 kHz 121.750 MHz
-    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
-    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
-    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x2a:  1400x1050   59.978442 Hz   4:3     65.317 kHz    121.750000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  2560x1600   60.000 Hz   8:5    98.460 kHz 267.810 MHz (220 mm x 130 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  33 Vpol P
+    DTD 1:  2560x1600   59.999731 Hz   8:5     98.460 kHz    267.810000 MHz (220 mm x 130 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
     Display Product Name: 'CYS-R101'
     Display Product Serial Number: ...
-  Display Range Limits:
-    Monitor ranges (Bare Limits): 48-75 Hz V, 30-102 kHz H, max dotclock 190 MHz
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-75 Hz V, 30-102 kHz H, max dotclock 190 MHz
   Extension blocks: 1
 Checksum: 0x8b
 
@@ -74,10 +74,10 @@ Block 1, CTA-861 Extension Block:
   Supports YCbCr 4:2:2
   Native detailed modes: 1
   Video Data Block:
-    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
-    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
-    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
-    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -123,9 +123,9 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 89 (343.724 cd/m^2)
     Desired content min luminance: 73 (0.282 cd/m^2)
   Detailed Timing Descriptors:
-    DTD 2:  2560x1440   13.405 Hz  16:9    19.853 kHz  54.000 MHz (side by side interleaved, 220 mm x 130 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  33 Vpol P
+    DTD 2:  2560x1440   13.405092 Hz  16:9     19.853 kHz     54.000000 MHz (side by side interleaved, 220 mm x 130 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
 Checksum: 0x3c
 
 ----------------
@@ -133,16 +133,17 @@ Checksum: 0x3c
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Product Serial Number: Empty string.
+  Display Product Serial Number: ...
   Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
 Block 1, CTA-861 Extension Block:
-  Vendor-Specific Data Block (HDMI Forum): Max TMDS rate is > 0 and <= 340 or > 600.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Max TMDS rate is > 0 and <= 340 or > 600.
   YCbCr 4:2:0 Capability Map Data Block: Max index 19 > 4 (#SVDs).
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

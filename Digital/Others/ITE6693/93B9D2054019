@@ -38,28 +38,28 @@ Block 0, Base EDID:
     Blue : 0.1406, 0.0683
     White: 0.2851, 0.2929
   Established Timings I & II:
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
-    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
   Standard Timings:
-    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
-    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
-    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
-    DMT 0x1c:  1280x800    59.810 Hz  16:10   49.702 kHz  83.500 MHz
-    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
-    GTF     :  1152x864    60.000 Hz   4:3    53.700 kHz  81.624 MHz
-    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
-    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz (256 mm x 192 mm)
-                 Hfront   24 Hsync 136 Hback 160 Hpol N
-                 Vfront    3 Vsync   6 Vback  29 Vpol N
-    DTD 2:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (480 mm x 270 mm)
-                 Hfront   88 Hsync  44 Hback 148 Hpol P
-                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (256 mm x 192 mm)
+                 Hfront   24 Hsync 136 Hback  160 Hpol N
+                 Vfront    3 Vsync   6 Vback   29 Vpol N
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (480 mm x 270 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Product Name: 'HDMI2VGA V101'
-  Display Range Limits:
-    Monitor ranges (GTF): 59-60 Hz V, 28-76 kHz H, max dotclock 170 MHz
+    Display Range Limits:
+      Monitor ranges (GTF): 59-60 Hz V, 28-76 kHz H, max dotclock 170 MHz
   Extension blocks: 1
 Checksum: 0xba
 
@@ -77,8 +77,8 @@ Block 1, CTA-861 Extension Block:
     Source physical address: 1.0.0.0
     Maximum TMDS clock: 170 MHz
   Video Data Block:
-    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
-    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -93,12 +93,13 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: VIC 3 is the preferred timing, overriding the first detailed timings. Is this intended?
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 256x192 mm vs display size 600x340 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 480x270 mm vs display size 600x340 mm.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

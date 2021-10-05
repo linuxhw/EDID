@@ -32,24 +32,24 @@ Block 0, Base EDID:
     Blue : 0.1503, 0.0595
     White: 0.3125, 0.3291
   Established Timings I & II:
-    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
-    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
   Standard Timings:
-    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
-    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
-    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  1360x768    59.799 Hz  85:48   47.720 kHz  84.750 MHz (160 mm x 90 mm)
-                 Hfront   72 Hsync 136 Hback 208 Hpol N
-                 Vfront    3 Vsync   5 Vback  22 Vpol P
-    DTD 2:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (160 mm x 90 mm)
-                 Hfront  110 Hsync  40 Hback 220 Hpol P
-                 Vfront    5 Vsync   5 Vback  20 Vpol P
-  Display Range Limits:
-    Monitor ranges (GTF): 58-62 Hz V, 31-70 kHz H, max dotclock 160 MHz
+    DTD 1:  1360x768    59.798991 Hz  85:48    47.720 kHz     84.750000 MHz (160 mm x 90 mm)
+                 Hfront   72 Hsync 136 Hback  208 Hpol N
+                 Vfront    3 Vsync   5 Vback   22 Vpol P
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (160 mm x 90 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 58-62 Hz V, 31-70 kHz H, max dotclock 160 MHz
     Display Product Name: 'LG TV'
 Checksum: 0x97
 
@@ -59,6 +59,7 @@ Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (16x9 is smaller than 10x10 cm).
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 59.799 - 70.082 Hz (Monitor: 58.000 - 62.000 Hz)
@@ -66,6 +67,7 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
+  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
   Display Range Limits: GTF can't be combined with non-continuous frequencies.
 
 EDID conformity: FAIL

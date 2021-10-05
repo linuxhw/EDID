@@ -51,15 +51,15 @@ Block 0, Base EDID:
     Blue : 0.1503, 0.0595
     White: 0.3125, 0.3291
   Established Timings I & II:
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  3840x2160   59.999 Hz  16:9   133.319 kHz 522.610 MHz (600 mm x 340 mm)
-                 Hfront    8 Hsync  32 Hback  40 Hpol P
-                 Vfront    1 Vsync   8 Vback  53 Vpol N
-    DTD 2:  2560x1440   60.000 Hz  16:9    88.860 kHz 234.590 MHz (600 mm x 340 mm)
-                 Hfront    8 Hsync  32 Hback  40 Hpol P
-                 Vfront    1 Vsync   8 Vback  32 Vpol N
+    DTD 1:  3840x2160   59.999495 Hz  16:9    133.319 kHz    522.610000 MHz (600 mm x 340 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront    1 Vsync   8 Vback   53 Vpol N
+    DTD 2:  2560x1440   59.999898 Hz  16:9     88.860 kHz    234.590000 MHz (600 mm x 340 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront    1 Vsync   8 Vback   32 Vpol N
     Display Product Serial Number: ...
     Display Product Name: 'LG UltraFine'
   Extension blocks: 2
@@ -73,7 +73,7 @@ Block 1, DisplayID Extension Block:
   Display Product Type: Standalone display device
   Display Parameters Data Block (0x01):
     Image size: 595.0 mm x 335.0 mm
-    Pixels: 5120 x 2880
+    Display native pixel format: 5120x2880
     Feature support flags:
       Power management (DPM)
       Separate audio inputs provided
@@ -82,14 +82,14 @@ Block 1, DisplayID Extension Block:
     Dynamic bpc native: 10
     Dynamic bpc overall: 10
   ContainerID Data Block:
-    4868b6bd-6d41-4e94-a72c-6ac8e842d688
+    Container ID: 4868b6bd-6d41-4e94-a72c-6ac8e842d688
   Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  4096x2304   59.999 Hz  16:9   142.198 kHz 593.820 MHz (aspect 16:9, no 3D stereo)
-               Hfront    8 Hsync  32 Hback  40 Hpol P
-               Vfront    1 Vsync   8 Vback  57 Vpol N
-    DTD:  3200x1800   59.999 Hz  16:9   111.119 kHz 364.470 MHz (aspect 16:9, no 3D stereo)
-               Hfront    8 Hsync  32 Hback  40 Hpol P
-               Vfront    1 Vsync   8 Vback  43 Vpol N
+    DTD:  4096x2304   59.999273 Hz  16:9    142.198 kHz    593.820000 MHz (aspect 16:9, no 3D stereo)
+               Hfront    8 Hsync  32 Hback   40 Hpol P
+               Vfront    1 Vsync   8 Vback   57 Vpol N
+    DTD:  3200x1800   59.999407 Hz  16:9    111.119 kHz    364.470000 MHz (aspect 16:9, no 3D stereo)
+               Hfront    8 Hsync  32 Hback   40 Hpol P
+               Vfront    1 Vsync   8 Vback   43 Vpol N
   Checksum: 0x51
 Checksum: 0x90
 
@@ -108,11 +108,11 @@ Block 2, DisplayID Extension Block:
     Tile resolution: 2560x2880
     Tiled Display Manufacturer/Vendor ID: GSM
     Tiled Display Product ID Code: 23313
-    Tiled Display Serial Number: 16843009
+    Tiled Display Serial Number: ...
   Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  2560x2880   60.000 Hz   0:0   177.720 kHz 469.180 MHz (aspect undefined, no 3D stereo)
-               Hfront    8 Hsync  32 Hback  40 Hpol P
-               Vfront    1 Vsync   8 Vback  73 Vpol N
+    DTD:  2560x2880   59.999898 Hz   0:0    177.720 kHz    469.180000 MHz (aspect undefined, no 3D stereo)
+               Hfront    8 Hsync  32 Hback   40 Hpol P
+               Vfront    1 Vsync   8 Vback   73 Vpol N
   Checksum: 0x55
 Checksum: 0x90
 
@@ -125,7 +125,6 @@ Block 1, DisplayID Extension Block:
   ContainerID Data Block: Use of DisplayID v2.0 tag for DisplayID v1.2.
 Block 2, DisplayID Extension Block:
   Product Type should be 0 in extension block.
-  Video Timing Modes Type 1 - Detailed Timings Data Block: Unknown aspect 0x08.
 EDID:
   DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: Missing DisplayID Display Interface Features Data Block.

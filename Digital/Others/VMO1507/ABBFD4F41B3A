@@ -42,29 +42,29 @@ Block 0, Base EDID:
     Blue : 0.1474, 0.0488
     White: 0.3076, 0.3242
   Established Timings I & II:
-    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    DMT 0x08:   800x600    56.250 Hz   4:3    35.156 kHz  36.000 MHz
-    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
-    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
   Standard Timings:
-    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
-    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
-    DMT 0x2f:  1440x900    59.887 Hz  16:10   55.935 kHz 106.500 MHz
-    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
-    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
-    DMT 0x45:  1920x1200   59.885 Hz  16:10   74.556 kHz 193.250 MHz
-    DMT 0x55:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
-    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x45:  1920x1200   59.884600 Hz  16:10    74.556 kHz    193.250000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  2560x1600   59.972 Hz   8:5    98.713 kHz 268.500 MHz (641 mm x 401 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    2 Vsync   6 Vback  38 Vpol N
-    DTD 2:  1920x1200   59.950 Hz   8:5    74.038 kHz 154.000 MHz (518 mm x 324 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    2 Vsync   6 Vback  27 Vpol N
-  Display Range Limits:
-    Monitor ranges (GTF): 56-61 Hz V, 30-100 kHz H, max dotclock 270 MHz
+    DTD 1:  2560x1600   59.971589 Hz   8:5     98.713 kHz    268.500000 MHz (641 mm x 401 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    2 Vsync   6 Vback   38 Vpol N
+    DTD 2:  1920x1200   59.950171 Hz   8:5     74.038 kHz    154.000000 MHz (518 mm x 324 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    2 Vsync   6 Vback   27 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 56-61 Hz V, 30-100 kHz H, max dotclock 270 MHz
     Display Product Name: 'WQX DP'
   Extension blocks: 1
 Checksum: 0x30
@@ -87,8 +87,10 @@ Checksum: 0xfd
 
 Warnings:
 
-Block 1, CTA-861 Extension Block:
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x4c.
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x44.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 56.250 - 70.082 Hz (Monitor: 56.000 - 61.000 Hz)
@@ -99,5 +101,7 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 641x401 mm vs display size 1600x1000 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 518x324 mm vs display size 1600x1000 mm.
   Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

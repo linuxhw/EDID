@@ -42,17 +42,17 @@ Block 0, Base EDID:
     Blue : 0.1503, 0.0595
     White: 0.3125, 0.3291
   Established Timings I & II:
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
-    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  3840x2160   59.997 Hz  16:9   133.312 kHz 533.250 MHz (621 mm x 341 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  54 Vpol N
+    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
     Display Product Serial Number: ...
-  Display Range Limits:
-    Monitor ranges (Bare Limits): 30-60 Hz V, 52-133 kHz H, max dotclock 540 MHz
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 30-60 Hz V, 52-133 kHz H, max dotclock 540 MHz
     Display Product Name: 'Acer XB281HK'
   Extension blocks: 1
 Checksum: 0xb2
@@ -73,12 +73,12 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (NVIDIA), OUI 00-04-4B:
     01 01                                           '..'
   Detailed Timing Descriptors:
-    DTD 2:  3840x2160   23.999 Hz  16:9    52.438 kHz 209.750 MHz (621 mm x 341 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  17 Vpol N
-    DTD 3:  3840x2160   29.981 Hz  16:9    65.688 kHz 262.750 MHz (621 mm x 341 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 2:  3840x2160   23.998856 Hz  16:9     52.438 kHz    209.750000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   17 Vpol N
+    DTD 3:  3840x2160   29.980602 Hz  16:9     65.688 kHz    262.750000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
 Checksum: 0xb5
 
 ----------------
@@ -88,10 +88,14 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 23.999 - 60.317 Hz (Monitor: 30.000 - 60.000 Hz)
     Horizontal Freq: 31.468 - 133.312 kHz (Monitor: 52.000 - 133.000 kHz)
 
-EDID conformity: PASS
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+EDID conformity: FAIL

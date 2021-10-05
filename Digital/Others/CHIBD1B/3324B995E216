@@ -40,12 +40,12 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (129 mm x 73 mm)
-                 Hfront  110 Hsync  40 Hback 220 Hpol P
-                 Vfront    5 Vsync   5 Vback  20 Vpol P
-    DTD 2:   720x480    59.940 Hz   3:2    31.469 kHz  27.000 MHz (129 mm x 73 mm)
-                 Hfront   16 Hsync  62 Hback  60 Hpol N
-                 Vfront    9 Vsync   6 Vback  30 Vpol N
+    DTD 1:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (129 mm x 73 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 2:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (129 mm x 73 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
     Display Product Name: 'TV DISPLAY'
     Dummy Descriptor:
   Extension blocks: 1
@@ -58,18 +58,18 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Native detailed modes: 1
   Video Data Block:
-    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (native)
-    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
-    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
-    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
-    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
-    VIC   6:  1440x480i   59.940 Hz   4:3    15.734 kHz  27.000 MHz
-    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
-    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
-    VIC  21:  1440x576i   50.000 Hz   4:3    15.625 kHz  27.000 MHz
-    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
-    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
-    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -96,7 +96,6 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (16x9 is smaller than 10x10 cm).
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
@@ -111,5 +110,6 @@ Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 31.
   Video Data Block: Duplicate VIC 4.
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

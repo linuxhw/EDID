@@ -40,24 +40,24 @@ Block 0, Base EDID:
     Blue : 0.1503, 0.0595
     White: 0.3134, 0.3291
   Established Timings I & II:
-    IBM     :   720x400    70.082 Hz   9:5    31.467 kHz  28.320 MHz
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
-    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
   Standard Timings:
-    DMT 0x20:  1280x960    60.000 Hz   4:3    60.000 kHz 108.000 MHz
-    DMT 0x23:  1280x1024   60.020 Hz   5:4    63.981 kHz 108.000 MHz
-    DMT 0x33:  1600x1200   60.000 Hz   4:3    75.000 kHz 162.000 MHz
-    DMT 0x3a:  1680x1050   59.954 Hz  16:10   65.290 kHz 146.250 MHz
-    DMT 0x52:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  1920x1200   59.950 Hz   8:5    74.038 kHz 154.000 MHz (518 mm x 324 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   6 Vback  26 Vpol N
+    DTD 1:  1920x1200   59.950171 Hz   8:5     74.038 kHz    154.000000 MHz (518 mm x 324 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   26 Vpol N
     Display Product Serial Number: ...
     Display Product Name: 'DELL U2412M'
-  Display Range Limits:
-    Monitor ranges (GTF): 50-61 Hz V, 30-83 kHz H, max dotclock 170 MHz
+    Display Range Limits:
+      Monitor ranges (GTF): 50-61 Hz V, 30-83 kHz H, max dotclock 170 MHz
   Extension blocks: 1
 Checksum: 0x24
 
@@ -81,9 +81,9 @@ Block 1, CTA-861 Extension Block:
     Supports_AI
     Maximum TMDS clock: 165 MHz
   Video Data Block:
-    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
-    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (native)
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: No Data
@@ -91,9 +91,9 @@ Block 1, CTA-861 Extension Block:
     IT scan behavior: Supports both over- and underscan
     CE scan behavior: Supports both over- and underscan
   Detailed Timing Descriptors:
-    DTD 2:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (129 mm x 73 mm)
-                 Hfront  110 Hsync  40 Hback 220 Hpol P
-                 Vfront    5 Vsync   5 Vback  20 Vpol P
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (129 mm x 73 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
     Dummy Descriptor:
     Dummy Descriptor:
     Dummy Descriptor:
@@ -106,7 +106,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:
@@ -114,6 +114,7 @@ Failures:
 Block 0, Base EDID:
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x20.
 Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
   Detailed Timing Descriptor #2: Mismatch of image size 129x73 mm vs display size 520x320 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

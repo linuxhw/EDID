@@ -42,12 +42,12 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  3840x2160   60.000 Hz  16:9   130.320 kHz 573.410 MHz (344 mm x 194 mm)
-                 Hfront   48 Hsync  32 Hback 480 Hpol P
-                 Vfront    4 Vsync   4 Vback   4 Vpol N
-    DTD 2:  3840x2160   60.000 Hz  16:9   130.320 kHz 573.410 MHz (344 mm x 194 mm)
-                 Hfront   48 Hsync  32 Hback 480 Hpol P
-                 Vfront    4 Vsync   4 Vback   4 Vpol N
+    DTD 1:  3840x2160   60.000209 Hz  16:9    130.320 kHz    573.410000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  480 Hpol P
+                 Vfront    4 Vsync   4 Vback    4 Vpol N
+    DTD 2:  3840x2160   60.000209 Hz  16:9    130.320 kHz    573.410000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  480 Hpol P
+                 Vfront    4 Vsync   4 Vback    4 Vpol N
     Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 ff 09 3c ff 09 3c 2c 80 00 00 00 00 00 '.....<..<,......'
     Dummy Descriptor:
   Extension blocks: 1
@@ -77,7 +77,6 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 Failures:
 
@@ -85,5 +84,6 @@ Block 0, Base EDID:
   Missing Display Product Name.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

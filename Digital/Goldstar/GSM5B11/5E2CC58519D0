@@ -59,7 +59,7 @@ Block 1, DisplayID Extension Block:
   Display Product Type: Standalone display device
   Display Parameters Data Block (0x01):
     Image size: 595.0 mm x 335.0 mm
-    Pixels: 5120 x 2880
+    Display native pixel format: 5120x2880
     Feature support flags:
       Power management (DPM)
       Separate audio inputs provided
@@ -68,7 +68,7 @@ Block 1, DisplayID Extension Block:
     Dynamic bpc native: 10
     Dynamic bpc overall: 10
   ContainerID Data Block:
-    4868b6bd-6d41-4e94-a72c-6ac8e842d688
+    Container ID: 4868b6bd-6d41-4e94-a72c-6ac8e842d688
   Tiled Display Topology Data Block (0x12):
     Capabilities:
       Behavior if it is the only tile: Undefined
@@ -79,11 +79,11 @@ Block 1, DisplayID Extension Block:
     Tile resolution: 2560x2880
     Tiled Display Manufacturer/Vendor ID: GSM
     Tiled Display Product ID Code: 23313
-    Tiled Display Serial Number: 16843009
+    Tiled Display Serial Number: ...
   Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  2560x2880   60.000 Hz   0:0   177.720 kHz 469.180 MHz (aspect undefined, no 3D stereo)
-               Hfront    8 Hsync  32 Hback  40 Hpol P
-               Vfront    1 Vsync   8 Vback  73 Vpol N
+    DTD:  2560x2880   59.999898 Hz   0:0    177.720 kHz    469.180000 MHz (aspect undefined, no 3D stereo)
+               Hfront    8 Hsync  32 Hback   40 Hpol P
+               Vfront    1 Vsync   8 Vback   73 Vpol N
   Checksum: 0x3b
 Checksum: 0x90
 
@@ -95,7 +95,6 @@ Block 0, Base EDID:
   Standard Timings: Missing preferred timing.
 Block 1, DisplayID Extension Block:
   ContainerID Data Block: Use of DisplayID v2.0 tag for DisplayID v1.2.
-  Video Timing Modes Type 1 - Detailed Timings Data Block: Unknown aspect 0x08.
 EDID:
   DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: Missing DisplayID Display Interface Features Data Block.

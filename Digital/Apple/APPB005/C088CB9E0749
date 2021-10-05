@@ -43,12 +43,12 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  2560x1440   59.951 Hz  16:9    88.787 kHz 241.500 MHz (597 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  33 Vpol N
-    DTD 2:  1280x720    59.855 Hz  16:9    44.772 kHz  74.500 MHz (597 mm x 336 mm)
-                 Hfront   64 Hsync 128 Hback 192 Hpol N
-                 Vfront    3 Vsync   5 Vback  20 Vpol P
+    DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 2:  1280x720    59.855126 Hz  16:9     44.772 kHz     74.500000 MHz (597 mm x 336 mm)
+                 Hfront   64 Hsync 128 Hback  192 Hpol N
+                 Vfront    3 Vsync   5 Vback   20 Vpol P
     Display Product Name: 'iMac'
     Empty Descriptor
   Extension blocks: 1
@@ -73,20 +73,15 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (Apple), OUI 00-10-FA:
     db ee f5 f7 f8 fe ff                            '.......'
   Detailed Timing Descriptors:
-    DTD 3:  2560x1440   59.951 Hz  16:9    88.787 kHz 241.500 MHz (597 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  33 Vpol N
-    DTD 4:  1280x720    59.855 Hz  16:9    44.772 kHz  74.500 MHz (597 mm x 336 mm)
-                 Hfront   64 Hsync 128 Hback 192 Hpol N
-                 Vfront    3 Vsync   5 Vback  20 Vpol P
+    DTD 3:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 4:  1280x720    59.855126 Hz  16:9     44.772 kHz     74.500000 MHz (597 mm x 336 mm)
+                 Hfront   64 Hsync 128 Hback  192 Hpol N
+                 Vfront    3 Vsync   5 Vback   20 Vpol P
 Checksum: 0xcc
 
 ----------------
-
-Warnings:
-
-Block 1, CTA-861 Extension Block:
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 Failures:
 
@@ -94,5 +89,6 @@ Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

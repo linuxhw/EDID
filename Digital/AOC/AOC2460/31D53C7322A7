@@ -44,12 +44,12 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz (531 mm x 299 mm)
-                 Hfront   88 Hsync  44 Hback 148 Hpol P
-                 Vfront    4 Vsync   5 Vback  36 Vpol P
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (531 mm x 299 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Product Serial Number: ...
-  Display Range Limits:
-    Monitor ranges (Bare Limits): 30-150 Hz V, 30-160 kHz H, max dotclock 330 MHz
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 30-150 Hz V, 30-160 kHz H, max dotclock 330 MHz
     Display Product Name: 'G2460'
   Extension blocks: 1
 Checksum: 0x2c
@@ -62,18 +62,18 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (NVIDIA), OUI 00-04-4B:
     01 01                                           '..'
   Detailed Timing Descriptors:
-    DTD 2:  1920x1080   84.905 Hz  16:9    95.433 kHz 198.500 MHz (531 mm x 299 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  36 Vpol N
-    DTD 3:  1920x1080   99.930 Hz  16:9   113.221 kHz 235.500 MHz (531 mm x 299 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  45 Vpol N
-    DTD 4:  1920x1080  119.982 Hz  16:9   137.260 kHz 285.500 MHz (531 mm x 299 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  56 Vpol N
-    DTD 5:  1920x1080  144.001 Hz  16:9   158.113 kHz 325.080 MHz (531 mm x 299 mm)
-                 Hfront   24 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  10 Vpol P
+    DTD 2:  1920x1080   84.904531 Hz  16:9     95.433 kHz    198.500000 MHz (531 mm x 299 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   36 Vpol N
+    DTD 3:  1920x1080   99.930409 Hz  16:9    113.221 kHz    235.500000 MHz (531 mm x 299 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   45 Vpol N
+    DTD 4:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (531 mm x 299 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD 5:  1920x1080  144.000765 Hz  16:9    158.113 kHz    325.080000 MHz (531 mm x 299 mm)
+                 Hfront   24 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   10 Vpol P
 Checksum: 0xfc
 
 ----------------
@@ -83,11 +83,11 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

@@ -40,16 +40,16 @@ Block 0, Base EDID:
     Blue : 0.1376, 0.0458
     White: 0.3076, 0.3535
   Established Timings I & II:
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:   640x480    59.952 Hz   4:3    31.475 kHz  25.180 MHz (530 mm x 398 mm)
-                 Hfront    8 Hsync  96 Hback  56 Hpol N Hborder 8
-                 Vfront    2 Vsync   2 Vback  41 Vpol N Vborder 8
+    DTD 1:   640x480    59.952381 Hz   4:3     31.475 kHz     25.180000 MHz (530 mm x 398 mm)
+                 Hfront    8 Hsync  96 Hback   40 Hpol N Hborder 8
+                 Vfront    2 Vsync   2 Vback   25 Vpol N Vborder 8
     Alphanumeric Data String: ''
     Display Product Name: 'SONY AVAMP'
-  Display Range Limits:
-    Monitor ranges (GTF): 48-121 Hz V, 31-102 kHz H, max dotclock 170 MHz
+    Display Range Limits:
+      Monitor ranges (GTF): 48-121 Hz V, 31-102 kHz H, max dotclock 170 MHz
   Extension blocks: 1
 Checksum: 0xb1
 
@@ -63,17 +63,17 @@ Block 1, CTA-861 Extension Block:
   Supports YCbCr 4:2:2
   Native detailed modes: 1
   Video Data Block:
-    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
-    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
-    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
-    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
-    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz (native)
-    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
-    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
-    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
-    VIC  16:  1920x1080   60.000 Hz  16:9    67.500 kHz 148.500 MHz
-    VIC  31:  1920x1080   50.000 Hz  16:9    56.250 kHz 148.500 MHz
-    VIC  32:  1920x1080   24.000 Hz  16:9    27.000 kHz  74.250 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -91,18 +91,20 @@ Checksum: 0x53
 
 Warnings:
 
-Block 1, CTA-861 Extension Block:
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: The use of non-zero borders in a DTD is not recommended.
 
 Failures:
 
 Block 0, Base EDID:
-  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is set, but not display size.
   Alphanumeric Data String: Empty string.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 60.000 Hz (Monitor: 48.000 - 121.000 Hz)
     Horizontal Freq: 27.000 - 67.500 kHz (Monitor: 31.000 - 102.000 kHz)
+  Base EDID: The DTD image sizes all fit inside 255x255cm, but no display size was set.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

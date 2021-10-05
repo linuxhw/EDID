@@ -42,9 +42,9 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  1920x1080   59.992 Hz  16:9    68.631 kHz 146.870 MHz (382 mm x 215 mm)
-                 Hfront   48 Hsync  32 Hback 140 Hpol P
-                 Vfront    3 Vsync   5 Vback  56 Vpol N
+    DTD 1:  1920x1080   59.991994 Hz  16:9     68.631 kHz    146.870000 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  140 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
     Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 3c 96 10 fe 00 '...........<....'
     Alphanumeric Data String: 'GN36T'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 9e 00 00 00 00 02 01 0a 20 20 '....A!........  '
@@ -56,23 +56,18 @@ Checksum: 0xd1
 Block 1, CTA-861 Extension Block:
   Revision: 1
   Detailed Timing Descriptors:
-    DTD 2:  1920x1080   99.995 Hz  16:9   114.394 kHz 237.940 MHz (382 mm x 215 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  56 Vpol N
-    DTD 3:  1920x1080  109.993 Hz  16:9   125.832 kHz 261.730 MHz (382 mm x 215 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  56 Vpol N
-    DTD 4:  1920x1080  119.995 Hz  16:9   137.274 kHz 285.530 MHz (382 mm x 215 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  56 Vpol N
+    DTD 2:  1920x1080   99.994957 Hz  16:9    114.394 kHz    237.940000 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD 3:  1920x1080  109.992772 Hz  16:9    125.832 kHz    261.730000 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD 4:  1920x1080  119.994789 Hz  16:9    137.274 kHz    285.530000 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
 Checksum: 0x29
 
 ----------------
-
-Warnings:
-
-Block 1, CTA-861 Extension Block:
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 Failures:
 
@@ -81,5 +76,6 @@ Block 0, Base EDID:
   Missing Display Product Name.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

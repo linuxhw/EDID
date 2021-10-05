@@ -39,17 +39,17 @@ Block 0, Base EDID:
     Blue : 0.1523, 0.0761
     White: 0.3134, 0.3291
   Established Timings I & II:
-    DMT 0x04:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    DMT 0x09:   800x600    60.317 Hz   4:3    37.879 kHz  40.000 MHz
-    DMT 0x10:  1024x768    60.004 Hz   4:3    48.363 kHz  65.000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  1680x1050   59.883 Hz   8:5    64.674 kHz 119.000 MHz (460 mm x 260 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   6 Vback  21 Vpol P
+    DTD 1:  1680x1050   59.883253 Hz   8:5     64.674 kHz    119.000000 MHz (460 mm x 260 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   21 Vpol P
     Dummy Descriptor:
-  Display Range Limits:
-    Monitor ranges (GTF): 50-60 Hz V, 30-65 kHz H, max dotclock 120 MHz
+    Display Range Limits:
+      Monitor ranges (GTF): 50-60 Hz V, 30-65 kHz H, max dotclock 120 MHz
     Display Product Name: 'NEX_T22R02'
   Extension blocks: 1
 Checksum: 0x9a
@@ -63,21 +63,21 @@ Block 1, CTA-861 Extension Block:
   Supports YCbCr 4:2:2
   Native detailed modes: 0
   Video Data Block:
-    VIC   6:  1440x480i   59.940 Hz   4:3    15.734 kHz  27.000 MHz
-    VIC   7:  1440x480i   59.940 Hz  16:9    15.734 kHz  27.000 MHz
-    VIC   1:   640x480    59.940 Hz   4:3    31.469 kHz  25.175 MHz
-    VIC   2:   720x480    59.940 Hz   4:3    31.469 kHz  27.000 MHz
-    VIC   3:   720x480    59.940 Hz  16:9    31.469 kHz  27.000 MHz
-    VIC  21:  1440x576i   50.000 Hz   4:3    15.625 kHz  27.000 MHz
-    VIC  22:  1440x576i   50.000 Hz  16:9    15.625 kHz  27.000 MHz
-    VIC  17:   720x576    50.000 Hz   4:3    31.250 kHz  27.000 MHz
-    VIC  18:   720x576    50.000 Hz  16:9    31.250 kHz  27.000 MHz
-    VIC  29:  1440x576    50.000 Hz   4:3    31.250 kHz  54.000 MHz
-    VIC  30:  1440x576    50.000 Hz  16:9    31.250 kHz  54.000 MHz
-    VIC   4:  1280x720    60.000 Hz  16:9    45.000 kHz  74.250 MHz
-    VIC  19:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz
-    VIC   5:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz
-    VIC  20:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  29:  1440x576    50.000000 Hz   4:3     31.250 kHz     54.000000 MHz
+    VIC  30:  1440x576    50.000000 Hz  16:9     31.250 kHz     54.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -88,33 +88,34 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
   Detailed Timing Descriptors:
-    DTD 2:  1280x720    50.000 Hz  16:9    37.500 kHz  74.250 MHz (473 mm x 296 mm)
-                 Hfront  440 Hsync  40 Hback 220 Hpol P
-                 Vfront    5 Vsync   5 Vback  20 Vpol P
-    DTD 3:  1920x1080i  60.000 Hz  16:9    33.750 kHz  74.250 MHz (708 mm x 398 mm)
-                 Hfront   88 Hsync  44 Hback 148 Hpol P
-                 Vfront    2 Vsync   5 Vback  15 Vpol P Vfront +0.5 Odd Field
-                 Vfront    2 Vsync   5 Vback  15 Vpol P Vback  +0.5 Even Field
-    DTD 4:   720x480    59.940 Hz   3:2    31.469 kHz  27.000 MHz (473 mm x 296 mm)
-                 Hfront   16 Hsync  62 Hback  60 Hpol N
-                 Vfront    9 Vsync   6 Vback  30 Vpol N
-    DTD 5:   720x576    50.000 Hz   5:4    31.250 kHz  27.000 MHz (473 mm x 296 mm)
-                 Hfront   12 Hsync  64 Hback  68 Hpol N
-                 Vfront    5 Vsync   5 Vback  39 Vpol N
-    DTD 6:  1920x1080i  50.000 Hz  16:9    28.125 kHz  74.250 MHz (473 mm x 296 mm)
-                 Hfront  528 Hsync  44 Hback 148 Hpol P
-                 Vfront    2 Vsync   5 Vback  15 Vpol P Vfront +0.5 Odd Field
-                 Vfront    2 Vsync   5 Vback  15 Vpol P Vback  +0.5 Even Field
+    DTD 2:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (473 mm x 296 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 3:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (473 mm x 296 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 5:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (473 mm x 296 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 6:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (473 mm x 296 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
 Checksum: 0x7a
 
 ----------------
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x39.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: VIC 6 is the preferred timing, overriding the first detailed timings. Is this intended?
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 Failures:
 
@@ -126,6 +127,7 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #4: Mismatch of image size 473x296 mm vs display size 460x260 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 473x296 mm vs display size 460x260 mm.
   Detailed Timing Descriptor #6: Mismatch of image size 473x296 mm vs display size 460x260 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.625 - 64.673 kHz (Monitor: 30.000 - 65.000 kHz)

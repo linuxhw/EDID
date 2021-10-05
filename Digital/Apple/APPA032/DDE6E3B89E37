@@ -44,12 +44,12 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  3840x2160   59.997 Hz  16:9   133.312 kHz 533.250 MHz (475 mm x 267 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  54 Vpol N
-    DTD 2:  1920x1080   59.934 Hz  16:9    66.587 kHz 138.500 MHz (475 mm x 267 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback  23 Vpol N
+    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (475 mm x 267 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD 2:  1920x1080   59.933878 Hz  16:9     66.587 kHz    138.500000 MHz (475 mm x 267 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
     Display Product Name: 'iMac'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -62,19 +62,19 @@ Block 1, DisplayID Extension Block:
   Extension Count: 0
   Display Product Type: Standalone display device
   Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  4096x2304   59.980 Hz  16:9   142.152 kHz 605.000 MHz (aspect 16:9, no 3D stereo, preferred)
-               Hfront   48 Hsync  32 Hback  80 Hpol P
-               Vfront    3 Vsync   5 Vback  58 Vpol N
-    DTD:  3360x1890   59.989 Hz  16:9   116.619 kHz 410.500 MHz (aspect 16:9, no 3D stereo)
-               Hfront   48 Hsync  32 Hback  80 Hpol P
-               Vfront    3 Vsync   5 Vback  46 Vpol N
-    DTD:  2560x1440   59.951 Hz  16:9    88.787 kHz 241.500 MHz (aspect 16:9, no 3D stereo)
-               Hfront   48 Hsync  32 Hback  80 Hpol P
-               Vfront    3 Vsync   5 Vback  33 Vpol N
-  Vendor-Specific Data Block (Apple):
-    fa 10 00 01 01 00 12 76 31 fc 78 b1 bd 02 10 88 '.......v1.x.....'
-    41 d2 f3 f5 fe ff                               'A.....'
-  CTA-861 DisplayID Data Block (0x81):
+    DTD:  4096x2304   59.979855 Hz  16:9    142.152 kHz    605.000000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback   58 Vpol N
+    DTD:  3360x1890   59.989361 Hz  16:9    116.619 kHz    410.500000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback   46 Vpol N
+    DTD:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback   33 Vpol N
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
+    01 01 00 12 76 31 fc 78 b1 bd 02 10 88 41 d2 f3 '....v1.x.....A..'
+    f5 fe ff                                        '...'
+  CTA-861 DisplayID Data Block:
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -87,12 +87,17 @@ Checksum: 0x90
 
 ----------------
 
+Warnings:
+
+Block 1, DisplayID Extension Block:
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
+
 Failures:
 
 Block 1, DisplayID Extension Block:
-  Vendor-Specific Data Block (Apple): OUI FA-10-00 is in the wrong byte order.
-  Audio Data Block: audio information is present, but bit 6 of Byte 3 of the CTA-861 Extension header indicates no Basic Audio support.
-  Speaker Allocation Data Block: audio information is present, but bit 6 of Byte 3 of the CTA-861 Extension header indicates no Basic Audio support.
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
+  Audio Data Block: Audio information is present, but bit 6 of Byte 3 of the CTA-861 Extension header indicates no Basic Audio support.
+  Speaker Allocation Data Block: Audio information is present, but bit 6 of Byte 3 of the CTA-861 Extension header indicates no Basic Audio support.
 EDID:
   DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: Missing DisplayID Display Parameters Data Block.

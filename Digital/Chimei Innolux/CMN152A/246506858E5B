@@ -43,11 +43,11 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  2560x1440   60.000 Hz  16:9    93.540 kHz 254.430 MHz (344 mm x 193 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol N
-                 Vfront    6 Vsync  10 Vback 103 Vpol N
-  Display Range Limits:
-    Monitor ranges (Bare Limits): 48-165 Hz V, 257-257 kHz H, max dotclock 700 MHz
+    DTD 1:  2560x1440   60.000283 Hz  16:9     93.540 kHz    254.430000 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    6 Vsync  10 Vback  103 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-165 Hz V, 257-257 kHz H, max dotclock 700 MHz
     Alphanumeric Data String: 'CMN'
     Alphanumeric Data String: 'N156KME-GNA'
   Extension blocks: 1
@@ -60,9 +60,17 @@ Block 1, DisplayID Extension Block:
   Extension Count: 0
   Display Product Type: Extension Section
   Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  2560x1440  165.003 Hz  16:9   257.239 kHz 699.690 MHz (aspect 16:9, no 3D stereo, preferred)
-               Hfront   48 Hsync  32 Hback  80 Hpol N
-               Vfront    6 Vsync  10 Vback 103 Vpol N
+    DTD:  2560x1440  165.002547 Hz  16:9    257.239 kHz    699.690000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    6 Vsync  10 Vback  103 Vpol N
+  Filler:
+    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+    00 00 00 00 00 00 54 35 30 42 34 38 33 36 42 41 '......T50B4836BA'
+    30 36 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '06..............'
+    00 00                                           '..'
   Checksum: 0xa0
 Checksum: 0x90
 
@@ -80,7 +88,7 @@ Block 0, Base EDID:
   Missing Display Product Name.
 Block 1, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-  Product Identification Data Block (0x00): Non-0 filler bytes in the DisplayID block.
+  Non-0 filler bytes in the DisplayID block.
 EDID:
   DisplayID: Missing DisplayID Product Identification Data Block.
 
