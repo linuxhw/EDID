@@ -1,0 +1,88 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 88 a9 00 00 00 00
+00 1d 01 04 a5 26 15 78 03 91 25 a4 54 35 b6 26
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 60 d1 00 b4 f0 70 3e 80 30 20
+35 00 7d d6 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fd 0c 30
+78 0c 0c 6c 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 37 33 5a 41 4e 30 33 2e 33 20 0a 01 3d
+
+70 13 79 00 00 03 01 14 c0 a2 01 04 ff 0e b3 00
+2f 00 1f 00 6f 08 3d 00 02 00 04 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 2d 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 43400
+    Made in: 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6425, 0.3291
+    Green: 0.2070, 0.7119
+    Blue : 0.1484, 0.0566
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.006001 Hz  16:9    133.333 kHz    536.000000 MHz (381 mm x 214 mm)
+                 Hfront   48 Hsync  32 Hback  100 Hpol N
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-120 Hz V, 267-267 kHz H, max dotclock 1080 MHz
+    Alphanumeric Data String: 'B173ZAN03.3 '
+  Extension blocks: 1
+Checksum: 0x3d
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  3840x2160  120.013121 Hz  16:9    266.669 kHz   1072.010000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback  100 Hpol N
+               Vfront    3 Vsync   5 Vback   54 Vpol N
+  Checksum: 0x2d
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 133.333 - 266.669 kHz (Monitor: 267.000 - 267.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

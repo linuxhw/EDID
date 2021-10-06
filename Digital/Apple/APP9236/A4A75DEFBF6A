@@ -1,0 +1,127 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 10 36 92 00 00 01 02
+1d 17 01 04 a5 34 20 78 26 6e a1 a7 55 4c 9d 25
+0e 50 54 00 00 00 d1 00 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 06 44 21 00 00 1a 00 00 00 ff 00 32 41 52
+55 30 35 36 53 30 4b 30 0a 20 00 00 00 fc 00 4c
+45 44 20 43 69 6e 65 6d 61 0a 20 20 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 34
+
+40 01 02 00 00 00 00 7e 24 01 a5 00 ff ff 03 1a
+1a a8 01 00 00 00 00 00 40 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 57
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 37430
+    Serial Number: ...
+    Made in: week 29 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 52 cm x 32 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6533, 0.3339
+    Green: 0.2998, 0.6152
+    Blue : 0.1464, 0.0566
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings:
+    DMT 0x45:  1920x1200   59.884600 Hz  16:10    74.556 kHz    193.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.950171 Hz   8:5     74.038 kHz    154.000000 MHz (518 mm x 324 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   26 Vpol N
+    Display Product Serial Number: ...
+    Display Product Name: 'LED Cinema'
+    Empty Descriptor
+  Extension blocks: 1
+Checksum: 0x34
+
+----------------
+
+Block 1, Display Information Extension Block:
+  Version: 1
+  Digital Interface:
+    Supported Digital Interface: DVI Single Link
+    Data Enable Signal Usage Not Available
+    Edge of Shift Clock: Use both edges of shift clock
+    HDCP is supported
+    Digital Receivers support Double Clocking of Input Data
+    Packetized Digital Video is supported
+    Data Formats: 24-Bit MSB-Aligned RGB (Single Link)
+    Minimum Pixel Clock Frequency Per Link: 1 MHz
+    Maximum Pixel Clock Frequency Per Link: 165 MHz
+    Crossover Frequency: None - Single Link
+  Display Device:
+    Sub-Pixel Layout: Quad Pixel - G at bottom left & top right
+    Sub-Pixel Configuration: Unknown (0x1a)
+    Sub-Pixel Shape: Unknown (0x1a)
+    Horizontal Dot/Pixel Pitch: 1.68 mm
+    Vertical Dot/Pixel Pitch: 0.01 mm
+    Display Device does not have a Fixed Pixel Format
+    View Direction: Not specified
+    Display Device uses non-transparent background
+    Physical Implementation: Not specified
+    Monitor/display does not support DDC/CI
+  Display Capabities & Feature Support Set:
+    Legacy Modes: Not all VGA/DOS Legacy Timing Modes are supported
+    Stereo Video: No direct stereo
+    Scaler On Board: No
+    Image Centering: No
+    Conditional Update: No
+    Interlaced Video: No
+    Frame Lock: No
+    Frame Rate Conversion: Not supported
+    Vertical Frequency: Not available
+    Horizontal Frequency: 0.64 kHz
+    Display/Scan Orientation Definition Type: Not defined
+    Screen Orientation: Landscape
+    Zero Pixel Location: Upper Left
+    Scan Direction: Not defined
+    Standalone Projector: No
+    Default Color/Luminance Decoding: Not defined
+    Preferred Color/Luminance Decoder: Uses Default Decoding
+    Color/Luminance Decoding Capabilities: None
+    Dithering: No
+    Supported Color Bit-Depth of Sub-Channel 0 (Blue): No Information
+    Supported Color Bit-Depth of Sub-Channel 1 (Green): No Information
+    Supported Color Bit-Depth of Sub-Channel 2 (Red): No Information
+    Supported Color Bit-Depth of Sub-Channel 0 (Cb/Pb): No Information
+    Supported Color Bit-Depth of Sub-Channel 1 (Y): No Information
+    Supported Color Bit-Depth of Sub-Channel 2 (Cr/Pr): No Information
+    Aspect Ratio Conversion Modes: None
+  Display Transfer Characteristics - Gamma:
+    No Display Transfer Characteristics
+Checksum: 0x57
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, Display Information Extension Block:
+  Digital Interface: Bit 6 of byte 0x07 should be 0.
+  Display Device: Unknown Sub-Pixel Configuration 0x1a.
+  Display Device: Unknown Sub-Pixel Shape 0x1a.
+
+EDID conformity: FAIL

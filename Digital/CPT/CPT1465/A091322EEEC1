@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 14 65 14 00 00 00 00
+30 11 01 01 80 21 15 78 0a 1d 6d 97 5b 51 8e 25
+2f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ab 22 a0 a0 50 84 1a 30 30 20
+36 00 4b cf 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 28 c8 05 32 00 00 00 00 fe 00 43
+50 54 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 43 4c 41 41 31 35 34 57 50 30 35 41 20 00 3e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: CPT
+    Model: 5221
+    Made in: week 48 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3564
+    Green: 0.3193, 0.5556
+    Blue : 0.1455, 0.1855
+    White: 0.3154, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    59.901458 Hz   8:5     55.469 kHz     88.750000 MHz (331 mm x 207 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   17 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 28 c8 05 32 00 '...........(..2.'
+    Alphanumeric Data String: 'CPT'
+    Alphanumeric Data String: 'CLAA154WP05A '
+Checksum: 0x3e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x2e.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+
+EDID conformity: FAIL

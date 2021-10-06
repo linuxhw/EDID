@@ -1,0 +1,136 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 c7 65 00 01 00 00 00
+1b 19 01 03 80 c0 6c 79 2a ee 95 a3 54 4c 99 26
+0f 50 54 21 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 01 1d 00 72 51 d0 1e 20 6e 28
+55 00 00 d0 52 00 00 1e 8c 0a d0 8a 20 e0 2d 10
+10 3e 96 00 d0 e0 21 00 00 1e 00 00 00 fc 00 47
+6c 79 70 68 0a 20 20 20 20 20 20 20 00 00 00 fd
+00 30 7a 1e 5a 0f 00 0a 20 20 20 20 20 20 01 e6
+
+02 03 23 41 83 01 00 00 6c 03 0c 00 10 00 00 1e
+20 a0 02 00 01 49 01 02 84 12 93 af bc bd be 23
+09 07 07 16 0d 60 6a 30 e0 5f 10 04 28 ff 07 60
+e0 31 00 00 1e 44 0c 56 36 30 e0 60 10 ea 28 0f
+c3 56 e0 31 00 00 1e 47 09 80 30 20 e0 5f 10 e4
+28 ff cf 80 e0 21 00 00 3e 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 18
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AVG
+    Model: 101
+    Serial Number: ...
+    Made in: week 27 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 192 cm x 108 cm
+    Gamma: 2.21
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (1280 mm x 720 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 2:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (720 mm x 480 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol P
+                 Vfront    9 Vsync   6 Vback   30 Vpol P
+    Display Product Name: 'Glyph'
+    Display Range Limits:
+      Monitor ranges (GTF): 48-122 Hz V, 30-90 kHz H, max dotclock 150 MHz
+  Extension blocks: 1
+Checksum: 0xe6
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 1
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Maximum TMDS clock: 150 MHz
+    Extended HDMI video details:
+      3D present
+      All advertised VICs are 3D-capable
+      3D: Frame-packing
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (native)
+    VIC  47:  1280x720   120.000000 Hz  16:9     90.000 kHz    148.500000 MHz (native)
+    VIC  60:  1280x720    24.000000 Hz  16:9     18.000 kHz     59.400000 MHz (native)
+    VIC  61:  1280x720    25.000000 Hz  16:9     18.750 kHz     74.250000 MHz (native)
+    VIC  62:  1280x720    30.000000 Hz  16:9     22.500 kHz     74.250000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Detailed Timing Descriptors:
+    DTD 3:   864x480    60.062752 Hz   9:5     34.536 kHz     33.500000 MHz (864 mm x 480 mm)
+                 Hfront    4 Hsync  40 Hback   62 Hpol P
+                 Vfront   31 Vsync  63 Vback    1 Vpol P
+    DTD 4:   854x480    60.037323 Hz 427:240   34.581 kHz     31.400000 MHz (854 mm x 480 mm)
+                 Hfront 1002 Hsync  40 Hback -988 Hpol P
+                 Vfront    0 Vsync  63 Vback   33 Vpol P
+                   44 0c 56 36 30 e0 60 10 ea 28 0f c3 56 e0 31 00 00 1e 'D.V60.`..(..V.1...'
+    DTD 5:   640x480    60.035389 Hz   4:3     34.520 kHz     23.750000 MHz (field sequential L/R, 640 mm x 480 mm)
+                 Hfront  996 Hsync  40 Hback -988 Hpol P
+                 Vfront   63 Vsync  63 Vback  -31 Vpol P
+Checksum: 0x18
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 2.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 1280x720 mm vs display size 1920x1080 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 720x480 mm vs display size 1920x1080 mm.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Mismatch of image size 864x480 mm vs display size 1920x1080 mm.
+  Detailed Timing Descriptor #4: 0 values in the video timing:
+    Horizontal Active/Blanking 854/54
+    Horizontal Frontporch/Sync Width 1002/40
+    Vertical Active/Blanking 480/96
+    Vertical Frontporch/Sync Width 0/63
+  Detailed Timing Descriptor #4: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #4: Mismatch of image size 854x480 mm vs display size 1920x1080 mm.
+  Detailed Timing Descriptor #5: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #5: 0 or negative vertical back porch.
+  Detailed Timing Descriptor #5: Mismatch of image size 640x480 mm vs display size 1920x1080 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 48.000 - 122.000 Hz)
+    Horizontal Freq: 18.000 - 90.000 kHz (Monitor: 30.000 - 90.000 kHz)
+
+EDID conformity: FAIL

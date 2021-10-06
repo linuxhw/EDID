@@ -1,0 +1,60 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 40 05 01 00 00 00
+20 1c 01 04 a5 35 1d 78 22 05 f5 a5 57 52 9c 27
+0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 30 20
+84 00 0f 28 21 00 00 1e 00 00 00 fd 00 33 4d 36
+5a 14 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4d
+32 33 38 48 43 41 2d 4c 33 42 0a 20 00 00 00 fc
+00 4c 45 4e 2d 41 35 34 30 2d 42 0a 20 20 00 bf
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 1344
+    Serial Number: ...
+    Made in: week 32 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 53 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6445, 0.3398
+    Green: 0.3212, 0.6103
+    Blue : 0.1552, 0.0458
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    8 Vsync   4 Vback   33 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 51-77 Hz V, 54-90 kHz H, max dotclock 200 MHz
+    Display Product Serial Number: ...
+    Display Product Name: 'LEN-A540-B'
+Checksum: 0xbf
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+
+EDID conformity: FAIL

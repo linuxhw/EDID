@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 12 c1 b3 25 73 00 00 00
+25 10 01 01 80 25 1e 78 ea 11 45 a4 5a 4a a0 24
+14 50 54 21 08 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 f8 11 00 35 41 00 36 20 26 60
+a7 00 78 2d 11 00 00 1e 00 00 00 fe 00 44 45 47
+49 54 41 4c 20 49 2f 46 0a 20 00 00 00 fe 00 4c
+43 44 20 44 49 53 50 4c 41 59 0a 20 00 00 00 fc
+00 55 53 45 31 39 31 33 41 2d 32 42 0a 20 00 70
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: DVA
+    Model: 9651
+    Serial Number: ...
+    Made in: week 37 of 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 37 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6406, 0.3525
+    Green: 0.2890, 0.6259
+    Blue : 0.1416, 0.0781
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1024x512    60.969306 Hz   2:1     34.509 kHz     46.000000 MHz (376 mm x 301 mm)
+                 Hfront   38 Hsync  96 Hback  175 Hpol P
+                 Vfront   10 Vsync   7 Vback   37 Vpol P
+    Alphanumeric Data String: 'DEGITAL I/F'
+    Alphanumeric Data String: 'LCD DISPLAY'
+    Display Product Name: 'USE1913A-2B'
+Checksum: 0x70
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+
+EDID conformity: PASS

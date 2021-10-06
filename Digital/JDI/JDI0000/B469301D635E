@@ -1,0 +1,87 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 28 89 00 00 00 00 00 00
+00 1e 01 04 a5 0e 13 78 03 37 45 a5 53 4d 99 27
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 cd 2b 68 50 40 e0 2b 50 18 10
+3a 00 8e be 00 00 00 1a 0a 23 68 50 40 e0 2b 50
+18 10 3a 00 8e be 00 00 00 1a 00 00 00 fe 00 4a
+44 49 20 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4c 50 4d 31 33 35 4d 34 36 37 20 20 20 01 6e
+
+70 20 08 06 00 7e 00 05 3a 02 92 00 20 61 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: JDI
+    Model: 0
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 14 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6445, 0.3271
+    Green: 0.3017, 0.6005
+    Blue : 0.1533, 0.0585
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1128x1504   60.001841 Hz   3:4     92.823 kHz    112.130000 MHz (142 mm x 190 mm)
+                 Hfront   24 Hsync  16 Hback   40 Hpol P
+                 Vfront    3 Vsync  10 Vback   30 Vpol N
+    DTD 2:  1128x1504   47.999332 Hz   3:4     74.255 kHz     89.700000 MHz (142 mm x 190 mm)
+                 Hfront   24 Hsync  16 Hback   40 Hpol P
+                 Vfront    3 Vsync  10 Vback   30 Vpol N
+    Alphanumeric Data String: 'JDI          '
+    Alphanumeric Data String: 'LPM135M467   '
+  Extension blocks: 1
+Checksum: 0x6e
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: Presentation display
+  Vendor-Specific Data Block (0x7e) (VESA), OUI 3A-02-92:
+    Data Structure Type: eDP
+    Default Colorspace and EOTF Handling: sRGB
+    Number of Pixels in Hor Pix Cnt Overlapping an Adjacent Panel: 0
+    Multi-SST Operation: Two Streams (number of links shall be 2 or 4)
+  Checksum: 0x61
+Checksum: 0x90
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+  DisplayID: Missing DisplayID Type VII Detailed Timing Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

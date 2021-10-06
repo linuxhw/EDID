@@ -1,0 +1,56 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1a b3 f2 07 01 01 01 01
+0a 15 01 03 80 26 1e 78 2a b7 f5 a0 58 56 9f 28
+0b 50 54 a5 4b 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4c 1f
+51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42
+31 39 2d 36 20 4c 45 44 0a 20 20 20 00 00 00 ff
+00 59 56 33 54 30 33 38 32 34 38 0a 20 20 00 25
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: FUS
+    Model: 2034
+    Serial Number: ...
+    Made in: week 10 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 38 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6269, 0.3466
+    Green: 0.3369, 0.6240
+    Blue : 0.1591, 0.0458
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (376 mm x 301 mm)
+                 Hfront   48 Hsync 112 Hback  248 Hpol P
+                 Vfront    1 Vsync   3 Vback   38 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 56-76 Hz V, 31-81 kHz H, max dotclock 140 MHz
+    Display Product Name: 'B19-6 LED'
+    Display Product Serial Number: ...
+Checksum: 0x25
+
+----------------
+
+EDID conformity: PASS

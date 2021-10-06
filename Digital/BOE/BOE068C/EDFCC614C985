@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 8c 06 00 00 00 00
+01 19 01 03 95 1a 0e 78 0a 75 70 99 59 5d 98 29
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3e 1c 56 a0 50 00 16 30 30 20
+36 00 00 90 10 00 00 1a 9a 16 56 a0 50 00 16 30
+30 20 36 00 00 90 10 00 00 1a 00 00 00 fe 00 48
+59 54 33 37 80 4e 56 31 31 57 48 4d 00 00 00 00
+00 00 41 21 1e 01 10 00 00 09 01 0a 20 20 00 0a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 1676
+    Made in: week 1 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5986, 0.3505
+    Green: 0.3642, 0.5947
+    Blue : 0.1611, 0.1279
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.973124 Hz 683:384   47.379 kHz     72.300000 MHz (256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   13 Vpol N
+    DTD 2:  1366x768    47.995089 Hz 683:384   37.916 kHz     57.860000 MHz (256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   13 Vpol N
+    Alphanumeric Data String: 'HYT37'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 1e 01 10 00 00 09 01 0a 20 20 '....A!........  '
+Checksum: 0x0a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x14.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

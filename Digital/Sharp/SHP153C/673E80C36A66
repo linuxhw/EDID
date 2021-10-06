@@ -1,0 +1,83 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 10 3c 15 00 00 00 00
+2d 1e 01 04 a5 22 13 78 07 3e 57 ae 51 43 b0 26
+0f 50 59 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 58 c2 10 00 00 18 19 4b 00 a0 a0 a0 21 50
+30 20 35 00 58 c2 10 00 00 18 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc
+00 4c 51 31 35 36 54 31 4a 57 30 34 0a 20 01 f0
+
+70 13 79 00 00 03 01 14 cb 9c 01 84 ff 09 9f 00
+2f 00 1f 00 9f 05 b2 00 02 00 04 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 1f 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SHP
+    Model: 5436
+    Made in: week 45 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6796, 0.3193
+    Green: 0.2646, 0.6894
+    Blue : 0.1494, 0.0595
+    White: 0.3134, 0.3505
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 2:  2560x1440   47.983807 Hz  16:9     70.680 kHz    192.250000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   25 Vpol N
+    Dummy Descriptor:
+    Display Product Name: 'LQ156T1JW04'
+  Extension blocks: 1
+Checksum: 0xf0
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1440  239.972023 Hz  16:9    388.515 kHz   1056.760000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   5 Vback  171 Vpol N
+  Checksum: 0x1f
+Checksum: 0x90
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Missing Display Range Limits Descriptor.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

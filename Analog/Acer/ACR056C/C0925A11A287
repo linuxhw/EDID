@@ -1,0 +1,70 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 6c 05 56 30 61 72
+1a 1b 01 03 68 30 1b 78 2a a1 35 a3 5b 4f a3 27
+11 50 54 b3 0c 00 d1 c0 b3 00 95 00 81 80 81 00
+81 c0 71 4f 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 32 4b 40
+53 11 00 0a 20 20 20 20 20 20 00 00 00 ff 00 54
+39 41 45 45 30 30 34 34 32 30 32 0a 00 00 00 fc
+00 41 63 65 72 20 45 54 32 34 31 59 0a 20 00 bf
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ACR
+    Model: 1388
+    Serial Number: ...
+    Made in: week 26 of 2017
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6386, 0.3574
+    Green: 0.3085, 0.6376
+    Blue : 0.1523, 0.0693
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    Apple   :   640x480    66.666667 Hz   4:3     35.000 kHz     30.240000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-75 Hz V, 64-83 kHz H, max dotclock 170 MHz
+    Display Product Serial Number: ...
+    Display Product Name: 'Acer ET241Y'
+Checksum: 0xbf
+
+----------------
+
+Failures:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 67.500 kHz (Monitor: 64.000 - 83.000 kHz)
+
+EDID conformity: FAIL

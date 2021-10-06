@@ -1,0 +1,204 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 1c 07 73 8f 51 01
+0f 1e 01 04 b5 3c 22 78 3b 3a d5 ae 4e 43 aa 26
+0b 50 54 23 48 00 81 40 81 80 81 c0 81 00 95 00
+b3 00 d1 c0 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 55 50 21 00 00 1a b4 66 00 a0 f0 70 1f 80
+08 20 18 04 55 50 21 00 00 1a 00 00 00 fd 0c 30
+90 ff ff 6b 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 58 42 32 37 33 4b 20 47 50 0a 20 20 20 02 d0
+
+02 03 43 f1 51 01 03 04 12 13 05 14 1f 90 07 02
+5d 5e 5f 60 61 3f 23 09 07 07 83 01 00 00 e2 00
+c0 6d 03 0c 00 10 00 38 78 20 00 60 01 02 03 68
+1a 00 00 01 01 30 90 00 e3 05 e3 01 e6 06 07 01
+61 56 1c 07 82 80 54 70 38 4d 40 08 20 f8 0c 56
+50 21 00 00 1a 40 e7 00 6a a0 a0 6a 50 08 20 98
+04 55 50 21 00 00 1a 6f c2 00 a0 a0 a0 55 50 30
+20 35 00 55 50 21 00 00 1e 00 00 00 00 00 00 78
+
+70 12 79 00 00 03 01 28 9a a0 01 84 ff 0e a0 00
+2f 80 21 00 6f 08 3e 00 03 00 05 00 e0 f6 00 04
+7f 07 59 00 2f 80 1f 00 6f 08 19 00 01 00 03 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: ACR
+    Model: 1820
+    Serial Number: ...
+    Made in: week 15 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6796, 0.3076
+    Green: 0.2636, 0.6660
+    Blue : 0.1513, 0.0439
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD 2:  3840x2160   30.000000 Hz  16:9     65.730 kHz    262.920000 MHz (597 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback  120 Hpol P
+                 Vfront   17 Vsync   8 Vback    6 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-144 Hz V, 510-510 kHz H, max dotclock 1070 MHz
+    Display Product Name: 'XB273K GP'
+  Extension blocks: 2
+Checksum: 0xd0
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: IT video formats not supported
+    CE scan behavior: CE video formats not supported
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 600 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0x00
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 97 (408.759 cd/m^2)
+    Desired content max frame-average luminance: 86 (322.098 cd/m^2)
+    Desired content min luminance: 28 (0.049 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080  143.563349 Hz  16:9    166.103 kHz    332.870000 MHz (598 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback   44 Hpol P
+                 Vfront   63 Vsync   8 Vback    6 Vpol N
+    DTD 4:  2560x1440  143.632286 Hz  16:9    222.056 kHz    592.000000 MHz (597 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback   66 Hpol P
+                 Vfront   25 Vsync   8 Vback   73 Vpol N
+    DTD 5:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   77 Vpol P
+Checksum: 0x78
+
+----------------
+
+Block 2, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  3840x2160  119.910418 Hz  16:9    266.561 kHz   1066.510000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  34 Hback   79 Hpol P
+               Vfront    4 Vsync   6 Vback   53 Vpol N
+    DTD:  1920x2160  143.839358 Hz  16:9    314.433 kHz    632.010000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   10 Hpol P
+               Vfront    2 Vsync   4 Vback   20 Vpol N
+  Checksum: 0x35
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 143.839 Hz (Monitor: 48.000 - 144.000 Hz)
+    Horizontal Freq: 15.734 - 314.432 kHz (Monitor: 510.000 - 510.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+Block 2, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

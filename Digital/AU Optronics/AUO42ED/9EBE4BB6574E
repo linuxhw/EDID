@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af ed 42 c4 38 1c 4f
+02 1b 01 04 a5 22 13 78 02 32 a5 a5 55 52 9d 26
+0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 98 71 80 c8 70 38 3e 40 6c 30
+aa 00 58 c1 10 00 00 18 98 71 80 c8 70 38 b4 44
+6c 30 aa 00 58 c1 10 00 00 18 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 35 36 48 41 4e 30 34 2e 32 20 0a 00 7c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 17133
+    Serial Number: ...
+    Made in: week 2 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6445, 0.3349
+    Green: 0.3203, 0.6152
+    Blue : 0.1503, 0.0449
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  120.113670 Hz  16:9    137.170 kHz    290.800000 MHz (344 mm x 193 mm)
+                 Hfront  108 Hsync  48 Hback   44 Hpol N
+                 Vfront   10 Vsync  10 Vback   42 Vpol N
+    DTD 2:  1920x1080   60.056835 Hz  16:9    137.170 kHz    290.800000 MHz (344 mm x 193 mm)
+                 Hfront  108 Hsync  48 Hback   44 Hpol N
+                 Vfront   10 Vsync  10 Vback 1184 Vpol N
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B156HAN04.2 '
+Checksum: 0x7c
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

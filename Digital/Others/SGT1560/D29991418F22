@@ -1,0 +1,127 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c f4 60 15 00 00 00 00
+18 1f 01 04 b5 1e 1a 78 3b ef 65 a6 56 52 9d 28
+0b 50 54 21 08 00 71 40 81 80 a9 c0 d1 c0 01 01
+01 01 01 01 01 01 2d 36 80 a0 70 38 1f 40 58 2c
+45 00 59 c2 10 00 00 1e 00 00 00 ff 00 0a 20 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fc 00 54
+59 50 45 2d 43 0a 20 20 20 20 20 20 00 00 00 fd
+00 32 3f 64 64 14 01 0a 20 20 20 20 20 20 01 cf
+
+02 03 1c f2 41 90 23 09 7f 07 83 01 00 00 e3 05
+e0 00 e2 00 c0 e6 06 05 01 62 62 28 02 3a 80 18
+71 38 2d 40 58 2c 45 00 dd 0c 11 00 00 1e 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 d3
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SGT
+    Model: 5472
+    Made in: week 24 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 30 cm x 26 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6513, 0.3378
+    Green: 0.3232, 0.6162
+    Blue : 0.1572, 0.0449
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.016098 Hz  16:9     66.678 kHz    138.690000 MHz (345 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback   28 Hpol P
+                 Vfront    4 Vsync   5 Vback   22 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: 'TYPE-C'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 50-63 Hz V, 100-100 kHz H, max dotclock 200 MHz
+  Extension blocks: 1
+Checksum: 0xcf
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: IT video formats not supported
+    CE scan behavior: CE video formats not supported
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 98 (417.710 cd/m^2)
+    Desired content max frame-average luminance: 98 (417.710 cd/m^2)
+    Desired content min luminance: 40 (0.103 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0xd3
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 67.500 kHz (Monitor: 100.000 - 100.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 345x194 mm vs display size 300x260 mm.
+  Display Product Serial Number: ...
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Mismatch of image size 477x268 mm vs display size 300x260 mm.
+
+EDID conformity: FAIL

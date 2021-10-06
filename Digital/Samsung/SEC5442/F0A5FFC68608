@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 42 54 00 00 00 00
+00 13 01 03 90 1e 13 78 0a 87 f5 94 57 4f 8c 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 44 2a a0 e8 51 84 23 30 2e 46
+99 00 2f be 10 00 00 1a 44 2a a0 e8 51 84 23 30
+2e 46 99 00 2f be 10 00 00 1a 00 00 00 fe 00 46
+47 36 33 31 80 31 34 31 42 54 0a 20 00 00 00 00
+00 0c 10 17 1b 36 69 a9 ff 02 01 0a 20 20 00 82
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 21570
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5800, 0.3398
+    Green: 0.3095, 0.5498
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    60.021745 Hz   8:5     56.120 kHz    108.200000 MHz (303 mm x 190 mm)
+                 Hfront   46 Hsync  70 Hback  372 Hpol P
+                 Vfront    9 Vsync   9 Vback   17 Vpol N
+    DTD 2:  1440x900    60.021745 Hz   8:5     56.120 kHz    108.200000 MHz (303 mm x 190 mm)
+                 Hfront   46 Hsync  70 Hback  372 Hpol P
+                 Vfront    9 Vsync   9 Vback   17 Vpol N
+    Alphanumeric Data String: 'FG631'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 0c 10 17 1b 36 69 a9 ff 02 01 0a 20 20 '.......6i.....  '
+Checksum: 0x82
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

@@ -1,0 +1,60 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 22 09 00 00 00 00
+01 1e 01 04 a5 22 09 78 03 de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 42 1d 80 a0 70 26 32 20 30 20
+55 00 58 62 10 00 00 1a 70 17 80 a0 70 26 32 20
+30 20 55 00 58 62 10 00 00 00 00 00 00 fe 00 42
+4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 34 30 44 51 4d 2d 4e 35 31 0a 00 4d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2338
+    Made in: week 1 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 9 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x550    60.016026 Hz 192:55    36.010 kHz     74.900000 MHz (344 mm x 98 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    5 Vsync   5 Vback   40 Vpol N
+    DTD 2:  1920x550    48.076923 Hz 192:55    28.846 kHz     60.000000 MHz (analog composite, sync-on-green, 344 mm x 98 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    5 Vsync   5 Vback   40 Vpol N
+    Alphanumeric Data String: 'BOE HF'
+    Alphanumeric Data String: 'NV140DQM-N51'
+Checksum: 0x4d
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (34x9 is smaller than 10x10 cm).
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

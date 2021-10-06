@@ -1,0 +1,71 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 05 b3 01 00 00 00
+0f 14 01 03 0e 2c 19 78 ea 7b 00 a6 55 4b 9a 25
+13 50 54 21 4a 00 81 c0 a9 c0 95 00 01 01 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 30 20
+35 00 bb f9 10 00 00 1e 00 00 00 fd 00 3c 4b 2f
+46 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+65 6e 6f 76 6f 20 42 33 30 35 0a 20 00 00 00 10
+00 4c 65 6e 6f 76 6f 20 41 37 30 30 0a 20 00 5e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 45829
+    Serial Number: ...
+    Made in: week 15 of 2010
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Blank level equals black level
+    Sync: Separate Composite SyncOnGreen
+    Maximum image size: 44 cm x 25 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6494, 0.3349
+    Green: 0.2949, 0.6044
+    Blue : 0.1445, 0.0742
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (443 mm x 249 mm)
+                 Hfront   48 Hsync  32 Hback  120 Hpol P
+                 Vfront    3 Vsync   5 Vback   92 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 60-75 Hz V, 47-70 kHz H, max dotclock 140 MHz
+    Display Product Name: 'Lenovo B305'
+    Dummy Descriptor:
+Checksum: 0x5e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x53.
+
+Failures:
+
+Block 0, Base EDID:
+  Dummy Descriptor: Dummy block filled with garbage.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 60.022 kHz (Monitor: 47.000 - 70.000 kHz)
+
+EDID conformity: FAIL

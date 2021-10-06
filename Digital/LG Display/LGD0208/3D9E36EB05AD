@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 08 02 00 00 00 00
+00 13 01 03 90 1f 11 78 0a 9b 65 9a 5b 53 94 26
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 96 27 40 e0 60 84 1a 30 20 30
+35 00 36 ae 10 00 00 1b 96 27 40 e0 60 84 1a 30
+20 30 35 00 36 ae 10 00 00 1b 00 00 00 fe 00 48
+34 38 36 4e 80 31 34 30 57 44 31 0a 00 00 00 00
+00 1d 2d 39 45 6f 97 b7 fb 02 01 0a 20 20 00 a0
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 520
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6035, 0.3564
+    Green: 0.3261, 0.5810
+    Blue : 0.1494, 0.0527
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    59.999147 Hz  16:9     55.559 kHz    101.340000 MHz (310 mm x 174 mm)
+                 Hfront   32 Hsync  48 Hback  144 Hpol P
+                 Vfront    3 Vsync   5 Vback   18 Vpol N
+    DTD 2:  1600x900    59.999147 Hz  16:9     55.559 kHz    101.340000 MHz (310 mm x 174 mm)
+                 Hfront   32 Hsync  48 Hback  144 Hpol P
+                 Vfront    3 Vsync   5 Vback   18 Vpol N
+    Alphanumeric Data String: 'H486N'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 1d 2d 39 45 6f 97 b7 fb 02 01 0a 20 20 '....-9Eo......  '
+Checksum: 0xa0
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

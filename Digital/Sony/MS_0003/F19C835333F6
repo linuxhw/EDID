@@ -1,0 +1,63 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 7f 03 00 03 00 00 00
+01 1d 01 03 80 0b 11 78 2f 00 00 a0 57 49 9b 26
+10 48 4f 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c8 88 40 96 62 00 14 a0 ae 0c
+84 40 71 b5 00 00 00 18 00 00 00 fc 00 54 56 30
+38 30 57 55 4d 2d 4e 4c 30 0a 00 00 00 fd 00 3c
+3c 10 10 07 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 62
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MS_
+    Model: 3
+    Serial Number: ...
+    Made in: week 1 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 11 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+    Supports GTF timings within operating range
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2851, 0.6054
+    Blue : 0.1484, 0.0625
+    White: 0.2812, 0.3085
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x2560   60.000411 Hz   5:8    154.801 kHz    350.160000 MHz (113 mm x 181 mm)
+                 Hfront  430 Hsync  12 Hback  220 Hpol N
+                 Vfront    8 Vsync   4 Vback    8 Vpol N
+    Display Product Name: 'TV080WUM-NL0'
+    Display Range Limits:
+      Monitor ranges (GTF): 60-60 Hz V, 16-16 kHz H, max dotclock 70 MHz
+    Empty Descriptor
+Checksum: 0x62
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: Manufacturer name field contains garbage.
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 113x181 mm vs display size 110x170 mm.
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 154.801 - 154.801 kHz (Monitor: 16.000 - 16.000 kHz)
+    Maximum Clock: 350.160 MHz (Monitor: 70.000 MHz)
+
+EDID conformity: FAIL

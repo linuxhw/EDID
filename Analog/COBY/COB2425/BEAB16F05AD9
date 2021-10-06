@@ -1,0 +1,77 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d e2 25 24 58 00 00 00
+01 14 01 01 68 34 1e 78 ea 01 2b a2 58 48 9e 25
+0f 47 4a b5 cd 00 81 c0 81 ca 8b c0 8b ca 95 c0
+95 ca 01 01 01 01 f3 39 80 18 71 38 2d 40 58 2c
+45 00 10 29 21 00 00 1c 00 00 00 ff 00 43 4f 42
+59 0a 20 20 20 20 20 20 20 20 00 00 00 fc 00 20
+54 46 2d 54 56 32 34 32 35 0a 20 20 00 00 00 fc
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 93
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: COB
+    Model: 9253
+    Serial Number: ...
+    Made in: week 1 of 2010
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 52 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6328, 0.3437
+    Green: 0.2812, 0.6181
+    Blue : 0.1445, 0.0605
+    White: 0.2792, 0.2919
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    Apple   :   640x480    66.666667 Hz   4:3     35.000 kHz     30.240000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    Unknown :  1280x720    70.000 Hz  16:9
+    Unknown :  1360x765    60.000 Hz  16:9
+    Unknown :  1360x765    70.000 Hz  16:9
+    Unknown :  1440x810    60.000 Hz  16:9
+    Unknown :  1440x810    70.000 Hz  16:9
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.939394 Hz  16:9     67.432 kHz    148.350000 MHz (528 mm x 297 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol N
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: ' TF-TV2425'
+    Display Product Name: ''
+Checksum: 0x93
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: Empty string.
+
+EDID conformity: FAIL

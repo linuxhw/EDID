@@ -1,0 +1,58 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 a9 fd c0 70 00 00 00
+06 10 01 03 80 00 00 78 0a da ff a3 58 4a a2 29
+17 49 4b 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 01 1d 00 bc 52 d0 1e 20 b8 28
+55 40 9a 26 53 00 00 1e 01 1d 80 d0 72 1c 16 20
+10 2c 25 80 9a 26 53 00 00 9e 00 00 00 fc 00 50
+41 4e 41 53 4f 4e 49 43 2d 54 56 20 00 00 00 fd
+00 30 3d 0f 2d 08 00 0a 20 20 20 20 20 20 01 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MEI
+    Model: 49405
+    Serial Number: ...
+    Made in: week 6 of 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3447
+    Green: 0.2910, 0.6347
+    Blue : 0.1630, 0.0927
+    White: 0.2880, 0.2958
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (1434 mm x 806 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 2:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (1434 mm x 806 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    Display Product Name: 'PANASONIC-TV '
+    Display Range Limits:
+      Monitor ranges (GTF): 48-61 Hz V, 15-45 kHz H, max dotclock 80 MHz
+  Extension blocks: 1
+Checksum: 0x90
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: One or more trailing spaces.
+  Base EDID: EDID specified 1 extension block(s), but found 0 extension block(s).
+EDID:
+  Base EDID: The DTD image sizes all fit inside 255x255cm, but no display size was set.
+
+EDID conformity: FAIL

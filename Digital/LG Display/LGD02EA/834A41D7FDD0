@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 ea 02 00 00 00 00
+00 14 01 03 80 1f 11 78 0a 98 d5 9c 5b 54 96 26
+19 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 58 1b 56 7e 50 00 0e 30 24 30
+35 00 35 ae 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 34 30 57 48 34 2d 54 4c 44 31 00 fc
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 746
+    Made in: 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6113, 0.3564
+    Green: 0.3300, 0.5859
+    Blue : 0.1513, 0.0986
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.996023 Hz 683:384   46.917 kHz     70.000000 MHz (309 mm x 174 mm)
+                 Hfront   36 Hsync  48 Hback   42 Hpol N
+                 Vfront    3 Vsync   5 Vback    6 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP140WH4-TLD1'
+Checksum: 0xfc
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

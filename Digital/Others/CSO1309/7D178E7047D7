@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 6f 09 13 00 00 00 00
+00 1e 01 04 a5 1d 14 78 03 fa d5 a3 55 4e 9b 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 59 98 b8 a0 b0 d0 39 70 30 20
+3a 00 25 c3 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 18 00 00 00 fe 00 43
+53 4f 54 54 33 0a 20 20 20 20 20 20 00 00 00 fe
+00 4d 4e 44 38 38 38 48 41 31 2d 31 0a 20 00 ed
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CSO
+    Model: 4873
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 20 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3349
+    Green: 0.3066, 0.6074
+    Blue : 0.1513, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3000x2000   60.000431 Hz   3:2    123.421 kHz    390.010000 MHz (293 mm x 195 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync  10 Vback   44 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 18 '................'
+    Alphanumeric Data String: 'CSOTT3'
+    Alphanumeric Data String: 'MND888HA1-1'
+Checksum: 0xed
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

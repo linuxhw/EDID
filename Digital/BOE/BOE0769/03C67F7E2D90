@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 69 07 00 00 00 00
+01 1b 01 04 a5 22 13 78 02 7b 80 a6 54 4d 9b 26
+11 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 58 c2 10 00 00 1a de 8a 00 a0 f0 70 3e 80
+30 20 35 00 58 c2 10 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0a 29 ff 0f 3c 90 12 0e 18 73 00 00 00 00 1e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 1897
+    Made in: week 1 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6494, 0.3310
+    Green: 0.3027, 0.6083
+    Blue : 0.1503, 0.0664
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD 2:  3840x2160   39.997750 Hz  16:9     88.875 kHz    355.500000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0a 29 ff 0f 3c 90 12 0e 18 73 00 00 00 '....)..<....s...'
+Checksum: 0x1e
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

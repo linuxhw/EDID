@@ -1,0 +1,60 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 34 12 78 56 34 12
+28 19 01 03 81 2f 1a 78 ea 64 b5 ab 52 38 ab 25
+13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 50 50
+f4 01 dc 0b 11 00 00 1e 00 00 00 10 00 49 6e 73
+70 69 72 6f 6e 20 33 34 35 35 00 00 00 10 00 30
+30 0a 20 20 20 20 20 20 20 20 20 20 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 2e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ACR
+    Model: 4660
+    Serial Number: ...
+    Made in: week 40 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 47 cm x 26 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6689, 0.3222
+    Green: 0.2197, 0.6679
+    Blue : 0.1464, 0.0771
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (476 mm x 267 mm)
+                 Hfront   80 Hsync  80 Hback  120 Hpol P
+                 Vfront   15 Vsync  20 Vback   10 Vpol P
+    Dummy Descriptor:
+    Dummy Descriptor:
+    Dummy Descriptor:
+Checksum: 0x2e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+
+Failures:
+
+Block 0, Base EDID:
+  Dummy Descriptor: Dummy block filled with garbage.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

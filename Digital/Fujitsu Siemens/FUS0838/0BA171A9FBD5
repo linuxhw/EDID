@@ -1,0 +1,125 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1a b3 38 08 00 00 00 00
+30 19 01 04 a5 2f 1e 78 2f a8 15 a2 56 55 a0 28
+0b 50 54 a5 4b 00 81 c0 81 80 95 00 a9 c0 01 01
+01 01 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0
+36 00 da 28 11 00 00 1c 00 00 00 fd 00 38 4c 1e
+52 17 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42
+32 32 57 2d 37 20 4c 45 44 0a 20 20 00 00 00 ff
+00 59 56 36 57 35 32 37 38 38 32 0a 20 20 01 ab
+
+02 03 14 f0 47 01 02 03 04 11 12 13 23 09 7f 07
+83 01 00 00 21 39 90 30 62 1a 27 40 68 b0 36 00
+da 28 11 00 00 1c 01 1d 00 72 51 d0 1e 20 6e 28
+55 00 da 28 11 00 00 1e 8c 0a d0 8a 20 e0 2d 10
+10 3e 96 00 da 28 11 00 00 18 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 79
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: FUS
+    Model: 2104
+    Made in: week 48 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 47 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6347, 0.3378
+    Green: 0.3339, 0.6250
+    Blue : 0.1562, 0.0439
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   59.954250 Hz   8:5     65.290 kHz    146.250000 MHz (474 mm x 296 mm)
+                 Hfront  104 Hsync 176 Hback  280 Hpol N
+                 Vfront    3 Vsync   6 Vback   30 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 56-76 Hz V, 30-82 kHz H, max dotclock 230 MHz
+    Display Product Name: 'B22W-7 LED'
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0xab
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 2:  1680x1050   59.954250 Hz   8:5     65.290 kHz    146.250000 MHz (474 mm x 296 mm)
+                 Hfront  104 Hsync 176 Hback  280 Hpol N
+                 Vfront    3 Vsync   6 Vback   30 Vpol P
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (474 mm x 296 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (474 mm x 296 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x79
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 is the preferred timing, overriding the first detailed timings. Is this intended?
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 56.000 - 76.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+EDID conformity: FAIL

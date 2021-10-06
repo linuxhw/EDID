@@ -1,0 +1,56 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 be 09 00 00 00 00
+23 1e 01 04 a5 24 14 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8e 8f 80 18 71 38 50 40 6c 30
+aa 00 63 c8 10 00 00 1a d8 3b 80 18 71 38 50 40
+6c 30 aa 00 63 c8 10 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0a 36 ff 0a 3c 96 3e 1b 41 96 00 00 00 00 16
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2494
+    Made in: week 35 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 36 cm x 20 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  144.004702 Hz  16:9    167.045 kHz    367.500000 MHz (355 mm x 200 mm)
+                 Hfront  108 Hsync  48 Hback  124 Hpol P
+                 Vfront   10 Vsync  10 Vback   60 Vpol N
+    DTD 2:  1920x1080   60.031348 Hz  16:9     69.636 kHz    153.200000 MHz (355 mm x 200 mm)
+                 Hfront  108 Hsync  48 Hback  124 Hpol P
+                 Vfront   10 Vsync  10 Vback   60 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0a 36 ff 0a 3c 96 3e 1b 41 96 00 00 00 '....6..<.>.A....'
+Checksum: 0x16
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

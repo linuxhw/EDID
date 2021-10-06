@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 64 b6 04 2f 75 00 00
+1c 14 01 03 80 1b 0f 78 0a 68 45 97 5a 52 8c 27
+19 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 16 1c 56 78 50 00 26 30 30 42
+68 00 0e 96 10 00 00 19 00 00 00 fe 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fc 00 48
+53 44 31 32 31 50 48 57 31 0a 20 20 00 00 00 10
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 94
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HSD
+    Model: 1206
+    Serial Number: ...
+    Made in: week 28 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 27 cm x 15 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5908, 0.3535
+    Green: 0.3222, 0.5468
+    Blue : 0.1533, 0.0976
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.030926 Hz 683:384   48.385 kHz     71.900000 MHz (270 mm x 150 mm)
+                 Hfront   48 Hsync  66 Hback    6 Hpol N
+                 Vfront    6 Vsync   8 Vback   24 Vpol N
+    Alphanumeric Data String: ''
+    Display Product Name: 'HSD121PHW1'
+    Dummy Descriptor:
+Checksum: 0x94
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

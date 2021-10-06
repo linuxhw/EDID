@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 45 04 00 00 00 00
+00 18 01 04 95 1c 10 78 0a 6b 95 98 59 56 8e 27
+1c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 78 1e 56 f6 50 00 26 30 30 20
+25 00 14 9b 10 00 00 1b 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 2d ff 0f 3c 96 11 0f 21 96 00 00 00 00 b4
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1093
+    Made in: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 28 cm x 16 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5947, 0.3496
+    Green: 0.3378, 0.5576
+    Blue : 0.1542, 0.1103
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.033619 Hz 683:384   48.387 kHz     78.000000 MHz (276 mm x 155 mm)
+                 Hfront   48 Hsync  32 Hback  166 Hpol P
+                 Vfront    2 Vsync   5 Vback   31 Vpol N
+    Empty Descriptor
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 2d ff 0f 3c 96 11 0f 21 96 00 00 00 '....-..<...!....'
+Checksum: 0xb4
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

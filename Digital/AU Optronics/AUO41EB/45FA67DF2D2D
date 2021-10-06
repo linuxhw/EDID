@@ -1,0 +1,116 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af eb 41 00 00 00 00
+22 1c 01 04 b5 22 13 78 02 af 95 a6 54 35 b5 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 52 d0 00 a0 f0 70 3e 80 30 20
+35 00 58 c1 10 00 00 1a 52 d0 00 a0 f0 70 68 82
+30 20 35 00 25 a5 10 00 00 1a 00 00 00 fe 00 37
+58 37 31 48 80 42 31 35 36 5a 41 4e 00 00 00 00
+00 05 41 22 b2 00 12 00 00 0b 01 0a 20 20 01 39
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 60 60 28 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 aa
+
+00 ff ff ff ff ff ff 00 10 ac 7a a0 42 30 51 30
+12 1d 01 03 80 34 20 78 ea ee 95 a3 54 4c 99 26
+0f 50 54 a1 08 00 81 40 81 80 a9 40 b3 00 d1 c0
+01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 06 44 21 00 00 1a 00 00 00 ff 00 59 50 50
+59 30 39 35 32 30 51 30 42 0a 00 00 00 fc 00 44
+45 4c 4c 20 55 32 34 31 32 4d 0a 20 00 00 00 fd
+00 32 3d 1e 53 11 00 0a 20 20 20 20 20 20 00 44
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 16875
+    Made in: week 34 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6503, 0.3300
+    Green: 0.2099, 0.7099
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.002250 Hz  16:9    133.325 kHz    533.300000 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD 2:  3840x2160   48.027738 Hz  16:9    133.325 kHz    533.300000 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback  608 Vpol N
+    Alphanumeric Data String: '7X71H'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 05 41 22 b2 00 12 00 00 0b 01 0a 20 20 '....A"........  '
+  Extension blocks: 1
+Checksum: 0x39
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 96 (400.000 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 40 (0.098 cd/m^2)
+Checksum: 0xaa
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 7a a0 42 30 51 30 '..........z.B0Q0'
+  12 1d 01 03 80 34 20 78 ea ee 95 a3 54 4c 99 26 '.....4 x....TL.&'
+  0f 50 54 a1 08 00 81 40 81 80 a9 40 b3 00 d1 c0 '.PT....@...@....'
+  01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
+  36 00 06 44 21 00 00 1a 00 00 00 ff 00 59 50 50 '6..D!........YPP'
+  59 30 39 35 32 30 51 30 42 0a 00 00 00 fc 00 44 'Y09520Q0B......D'
+  45 4c 4c 20 55 32 34 31 32 4d 0a 20 00 00 00 fd 'ELL U2412M. ....'
+  00 32 3d 1e 53 11 00 0a 20 20 20 20 20 20 00 44 '.2=.S...      .D'
+Checksum: 0x44
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Mismatch of image size 293x165 mm vs display size 340x190 mm.
+  Alphanumeric Data String: Non-printable character.
+  Base EDID: EDID specified 1 extension block(s), but found 2 extension block(s).
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+
+EDID conformity: FAIL

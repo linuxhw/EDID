@@ -1,0 +1,56 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 83 4a 45 00 00 00 00
+00 19 01 03 95 1d 11 78 ea b5 95 93 58 56 8d 29
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 23 8d 80 74 c0 08 10 70 30 20
+25 00 25 a5 10 00 00 19 23 8d 80 e0 c1 08 f5 70
+30 20 25 00 25 a5 10 00 00 19 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 4c 83 59 4c 00 00 00 fe
+00 4c 54 4e 31 33 33 59 4c 30 35 4c 30 32 00 63
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 17738
+    Made in: 2015
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5761, 0.3466
+    Green: 0.3369, 0.5517
+    Blue : 0.1621, 0.1220
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3200x1800   59.999774 Hz  16:9    108.960 kHz    361.310000 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   36 Hpol N
+                 Vfront    2 Vsync   5 Vback    9 Vpol N
+    DTD 2:  3200x1800   48.010790 Hz  16:9     98.182 kHz    361.310000 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  400 Hpol N
+                 Vfront    2 Vsync   5 Vback  238 Vpol N
+    Alphanumeric Data String: 'SAMSUNG'
+    Alphanumeric Data String: 'LTN133YL05L02'
+Checksum: 0x63
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x14.
+  Alphanumeric Data String: Non-space after newline.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

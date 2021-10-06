@@ -1,0 +1,58 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 7b 17 00 00 00 00
+01 11 01 03 80 21 15 78 0a 87 f5 94 57 4f 8c 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20
+36 00 4b cf 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4a
+54 33 33 31 00 42 31 35 34 53 57 31 00 00 00 fe
+00 2a 3a 45 4d 6c 8b b1 ff 02 01 0a 20 20 00 e0
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 6011
+    Made in: week 1 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5800, 0.3398
+    Green: 0.3095, 0.5498
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   59.883253 Hz   8:5     64.674 kHz    119.000000 MHz (331 mm x 207 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'JT331'
+    Alphanumeric Data String: '*:EMl'
+Checksum: 0xe0
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x39.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

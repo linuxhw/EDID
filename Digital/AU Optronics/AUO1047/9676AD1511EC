@@ -1,0 +1,59 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 47 10 00 00 00 00
+01 10 01 03 80 1e 13 78 0a 87 f5 94 57 4f 8c 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9e 25 a0 40 51 84 0c 30 40 20
+33 00 2f bd 10 00 00 19 5a 1f a0 40 51 84 0c 30
+40 20 33 00 2f bd 10 00 00 00 00 00 00 fe 00 55
+4e 30 38 37 00 42 31 34 31 50 57 31 00 00 00 fe
+00 30 40 4d 54 76 99 b8 ff 02 01 0a 20 20 00 07
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 4167
+    Made in: week 1 of 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5800, 0.3398
+    Green: 0.3095, 0.5498
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    59.995514 Hz   8:5     54.716 kHz     96.300000 MHz (DE timing only, 303 mm x 189 mm)
+                 Hfront   64 Hsync  32 Hback  224 Hpol N
+                 Vfront    3 Vsync   3 Vback    6 Vpol N
+    DTD 2:  1440x900    50.002492 Hz   8:5     45.602 kHz     80.260000 MHz (DE timing only, 303 mm x 189 mm)
+                 Hfront   64 Hsync  32 Hback  224 Hpol N
+                 Vfront    3 Vsync   3 Vback    6 Vpol N
+    SPWG Module Revision: 0
+    SPWG Descriptor #3:
+      SPWG PC Maker P/N: 'UN087'
+      SPWG LCD Supplier EEDID Revision: 0
+      SPWG Manufacturer P/N: 'B141PW1'
+    SPWG Descriptor #4:
+      SMBUS Values: 0x30 0x40 0x4d 0x54 0x76 0x99 0xb8 0xff
+      LVDS Channels: 2
+      Panel Self Test Present
+Checksum: 0x07
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

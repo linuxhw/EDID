@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 f8 05 00 00 00 00
+74 1c 01 04 a5 25 17 78 02 27 d7 a5 53 4d 99 27
+0e 50 52 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ec 68 00 a0 a0 40 2e 60 30 20
+36 00 6e e5 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 37 30 57 51 31 2d 53 50 41 31 00 c0
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1528
+    Made in: week 116 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 37 cm x 23 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6445, 0.3261
+    Green: 0.3017, 0.6005
+    Blue : 0.1552, 0.0556
+    White: 0.3134, 0.3232
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   59.993925 Hz   8:5     98.750 kHz    268.600000 MHz (366 mm x 229 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   37 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP170WQ1-SPA1'
+Checksum: 0xc0
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: Invalid week 116 of manufacture.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

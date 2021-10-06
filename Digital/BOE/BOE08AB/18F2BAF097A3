@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 ab 08 00 00 00 00
+1b 1d 01 04 a5 22 13 78 02 aa 25 a5 55 4d 9c 27
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 28 38 80 cc 70 38 30 40 30 20
+36 00 58 c2 10 00 00 1a ed 2c 80 cc 70 38 30 40
+30 20 36 00 58 c2 10 00 00 1a 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 35 36 46 48 4d 2d 4e 36 37 0a 00 05
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2219
+    Made in: week 27 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6464, 0.3339
+    Green: 0.3027, 0.6113
+    Blue : 0.1523, 0.0644
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.003206 Hz  16:9     67.684 kHz    143.760000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  124 Hpol P
+                 Vfront    3 Vsync   6 Vback   39 Vpol N
+    DTD 2:  1920x1080   48.003399 Hz  16:9     54.148 kHz    115.010000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  124 Hpol P
+                 Vfront    3 Vsync   6 Vback   39 Vpol N
+    Alphanumeric Data String: 'BOE CQ'
+    Alphanumeric Data String: 'NV156FHM-N67'
+Checksum: 0x05
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

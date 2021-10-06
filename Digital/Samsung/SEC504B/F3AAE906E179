@@ -1,0 +1,50 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 4b 50 00 00 00 00
+00 15 01 03 80 26 15 78 0a b3 95 9d 5c 59 9f 25
+13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8b 28 40 04 61 84 1e 30 30 20
+26 00 7e d7 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 69 91 05 19 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe
+00 31 37 33 4b 54 30 32 2d 54 30 32 0a 20 00 4f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 20555
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6152, 0.3623
+    Green: 0.3476, 0.6240
+    Blue : 0.1464, 0.0751
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.001156 Hz  16:9     55.801 kHz    103.790000 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  180 Hpol N
+                 Vfront    2 Vsync   6 Vback   22 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 69 91 05 19 00 '...........i....'
+    Alphanumeric Data String: 'SAMSUNG'
+    Alphanumeric Data String: '173KT02-T02'
+Checksum: 0x4f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

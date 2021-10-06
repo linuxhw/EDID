@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 8f 06 06 00 00 00 00
+1a 1d 01 04 a5 1d 11 78 03 43 b5 a3 53 4d 9c 27
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 14 37 80 b8 70 38 24 40 30 20
+3e 00 35 ae 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 43
+54 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4c 45 42 31 33 31 39 32 4e 0a 20 20 20 00 25
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CTO
+    Model: 1542
+    Made in: week 26 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6376, 0.3242
+    Green: 0.3007, 0.6123
+    Blue : 0.1542, 0.0576
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.049471 Hz  16:9     67.015 kHz    141.000000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback  104 Hpol N
+                 Vfront    3 Vsync  14 Vback   19 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'CTO'
+    Alphanumeric Data String: 'LEB13192N'
+Checksum: 0x25
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 309x174 mm vs display size 290x170 mm.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

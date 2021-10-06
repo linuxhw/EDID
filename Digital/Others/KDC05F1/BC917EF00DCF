@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 2c 83 f1 05 00 00 00 00
+01 19 01 04 95 1a 0e 78 02 b0 90 97 58 54 92 26
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 f4 50 00 16 30 30 20
+36 00 00 90 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 4b 44 31 31 36 4e 35 33 30 4e 56 4b 37 00 c3
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: KDC
+    Model: 1521
+    Made in: week 1 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5917, 0.3466
+    Green: 0.3281, 0.5703
+    Blue : 0.1503, 0.1142
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.988993 Hz 683:384   47.391 kHz     76.300000 MHz (256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback  164 Hpol P
+                 Vfront    3 Vsync   6 Vback   13 Vpol N
+    Empty Descriptor
+    Empty Descriptor
+    Alphanumeric Data String: 'KD116N530NVK7'
+Checksum: 0xc3
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,72 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 11 37 30 38 39 32 43
+02 0b 01 02 68 1c 15 83 e8 0d 92 9f 57 45 9c 24
+0f 48 4f a5 48 00 31 59 45 59 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 02 ac 06 09 00 1f 03
+17 1a 81 80 83 00 92 20 00 00 00 fd 00 32 78 1e
+36 06 00 0a 20 20 20 20 20 20 00 00 03 12 80 06
+30 30 30 20 20 20 20 20 20 20 20 20 00 00 00 fc
+00 43 4f 4d 50 41 51 20 43 56 35 33 35 0a 00 ac
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: CPQ
+    Model: 12343
+    Serial Number: ...
+    Made in: week 2 of 2001
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 28 cm x 21 cm
+    Gamma: 2.31
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6210, 0.3398
+    Green: 0.2724, 0.6103
+    Blue : 0.1425, 0.0595
+    White: 0.2812, 0.3105
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x07:   640x480    85.008312 Hz   4:3     43.269 kHz     36.000000 MHz
+    DMT 0x0c:   800x600    85.061274 Hz   4:3     53.674 kHz     56.250000 MHz
+  Detailed Timing Descriptors:
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 ac 06 09 00 1f 03 17 1a 81 80 83 00 92 20 '............... '
+    Display Range Limits:
+      Monitor ranges (GTF): 50-120 Hz V, 30-54 kHz H, max dotclock 60 MHz
+    Unknown Display Descriptor (0x12): 03 12 80 06 30 30 30 20 20 20 20 20 20 20 20 20 '....000         '
+    Display Product Name: 'COMPAQ CV535'
+Checksum: 0xac
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 65.000 MHz (Monitor: 60.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Display Descriptor #1: Monitor descriptor block has byte 4 nonzero (0xac).
+  Display Descriptor #3: Monitor descriptor block has byte 2 nonzero (0x03).
+  Display Descriptor #3: Monitor descriptor block has byte 4 nonzero (0x80).
+  Display Descriptor #3: Unknown Type 0x12.
+
+EDID conformity: FAIL

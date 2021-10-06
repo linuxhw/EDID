@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 2c 02 00 00 00 00
+00 13 01 03 80 1d 11 78 0a d5 d5 96 59 56 8c 27
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 56 60 50 00 16 30 20 30
+36 00 26 a6 10 00 00 19 0c 12 56 60 50 00 16 30
+20 30 36 00 26 a6 10 00 00 19 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 33 33 57 48 31 2d 54 4c 41 32 00 1d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 556
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5888, 0.3486
+    Green: 0.3369, 0.5478
+    Blue : 0.1552, 0.1220
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.001039 Hz 683:384   47.401 kHz     69.300000 MHz (294 mm x 166 mm)
+                 Hfront   32 Hsync  48 Hback   16 Hpol N
+                 Vfront    3 Vsync   6 Vback   13 Vpol N
+    DTD 2:  1366x768    40.000693 Hz 683:384   31.601 kHz     46.200000 MHz (294 mm x 166 mm)
+                 Hfront   32 Hsync  48 Hback   16 Hpol N
+                 Vfront    3 Vsync   6 Vback   13 Vpol N
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP133WH1-TLA2'
+Checksum: 0x1d
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

@@ -1,0 +1,66 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d 12 11 75 70 03 00 00
+15 15 01 04 a5 00 00 78 e2 80 42 ac 51 30 b4 25
+10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 54 38 90 5c 62 1a 10 40 64 c8
+36 00 06 4d 21 00 00 1a f0 2e 90 5c 62 1a 10 40
+64 c8 36 00 06 4d 21 00 00 1a 00 00 00 fd 00 38
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 48 37 35 31 31 42 0a 20 20 20 20 20 00 2d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CHR
+    Model: 29969
+    Serial Number: ...
+    Made in: week 21 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Image size is variable
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6738, 0.3164
+    Green: 0.1875, 0.7031
+    Blue : 0.1455, 0.0625
+    White: 0.3125, 0.3261
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   59.225939 Hz   8:5     63.135 kHz    144.200000 MHz (518 mm x 333 mm)
+                 Hfront  100 Hsync 200 Hback  304 Hpol P
+                 Vfront    3 Vsync   6 Vback    7 Vpol N
+    DTD 2:  1680x1050   49.352211 Hz   8:5     52.609 kHz    120.160000 MHz (518 mm x 333 mm)
+                 Hfront  100 Hsync 200 Hback  304 Hpol P
+                 Vfront    3 Vsync   6 Vback    7 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+    Display Product Name: 'CH7511B'
+Checksum: 0x2d
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 49.352 - 59.226 Hz (Monitor: 56.000 - 76.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+EDID:
+  Base EDID: The DTD image sizes all fit inside 255x255cm, but no display size was set.
+
+EDID conformity: FAIL

@@ -1,0 +1,62 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 51 b8 00 14 00 00 00 00
+03 1f 01 04 a5 1f 11 78 07 0f 91 ae 52 43 b0 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 94 5b 00 50 a0 a0 28 50 18 10
+c2 00 36 ae 10 00 00 1e d5 fb 00 50 a0 a0 28 50
+18 10 c2 00 36 ae 10 00 00 1e 00 00 00 fd 00 30
+a5 f7 f7 41 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 54 4c 31 34 30 42 44 58 50 30 32 2d 30 00 41
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: TMX
+    Model: 5120
+    Made in: week 3 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2646, 0.6904
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   60.002048 Hz  16:9     88.803 kHz    234.440000 MHz (310 mm x 174 mm)
+                 Hfront   24 Hsync  16 Hback   40 Hpol P
+                 Vfront   12 Vsync   2 Vback   26 Vpol P
+    DTD 2:  2560x1440  165.000512 Hz  16:9    244.201 kHz    644.690000 MHz (310 mm x 174 mm)
+                 Hfront   24 Hsync  16 Hback   40 Hpol P
+                 Vfront   12 Vsync   2 Vback   26 Vpol P
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-165 Hz V, 247-247 kHz H, max dotclock 650 MHz
+    Display Product Name: 'TL140BDXP02-0'
+Checksum: 0x41
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 88.803 - 244.200 kHz (Monitor: 247.000 - 247.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+
+EDID conformity: FAIL

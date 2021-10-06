@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 2c 83 00 00 00 00 00 00
+2e 1a 01 04 a5 16 0e 78 02 00 00 00 00 00 00 00
+00 00 00 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a3 3a 80 7c 70 b0 18 40 25 19
+24 00 d8 87 00 00 00 18 a3 3a 80 7c 70 b0 7c 42
+25 19 24 00 d8 87 00 00 00 18 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 4b 44 31 30 31 4e 36 39 33 30 50 41 31 00 fc
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: KDC
+    Model: 0
+    Made in: week 46 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 22 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.0000, 0.0000
+    Green: 0.0000, 0.0000
+    Blue : 0.0000, 0.0000
+    White: 0.0000, 0.0000
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.999456 Hz   8:5     73.439 kHz    150.110000 MHz (216 mm x 135 mm)
+                 Hfront   37 Hsync  25 Hback   62 Hpol N
+                 Vfront    2 Vsync   4 Vback   18 Vpol N
+    DTD 2:  1920x1200   39.999638 Hz   8:5     73.439 kHz    150.110000 MHz (216 mm x 135 mm)
+                 Hfront   37 Hsync  25 Hback   62 Hpol N
+                 Vfront    2 Vsync   4 Vback  630 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'KD101N6930PA1'
+Checksum: 0xfc
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

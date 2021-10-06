@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af ed 26 00 00 00 00
+00 1c 01 04 a5 22 13 78 02 c6 35 a3 56 52 9e 28
+0a 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 14 37 80 b4 70 38 26 40 6c 30
+aa 00 58 c2 10 00 00 1a 10 2c 80 b4 70 38 26 40
+6c 30 aa 00 58 c2 10 00 00 1a 00 00 00 fe 00 47
+48 57 31 4b 81 42 31 35 36 48 41 4e 00 00 00 00
+00 03 41 02 9e 00 10 00 00 0a 01 0a 20 20 00 01
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 9965
+    Made in: 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3359
+    Green: 0.3212, 0.6191
+    Blue : 0.1562, 0.0419
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.056223 Hz  16:9     67.143 kHz    141.000000 MHz (344 mm x 194 mm)
+                 Hfront  108 Hsync  48 Hback   24 Hpol P
+                 Vfront   10 Vsync  10 Vback   18 Vpol N
+    DTD 2:  1920x1080   48.044978 Hz  16:9     53.714 kHz    112.800000 MHz (344 mm x 194 mm)
+                 Hfront  108 Hsync  48 Hback   24 Hpol P
+                 Vfront   10 Vsync  10 Vback   18 Vpol N
+    Alphanumeric Data String: 'GHW1K'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 03 41 02 9e 00 10 00 00 0a 01 0a 20 20 '....A.........  '
+Checksum: 0x01
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 1c 03 00 00 00 00
+00 14 01 03 80 23 13 78 0a 51 75 96 59 56 90 28
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3d 1d 56 c0 50 00 20 30 30 20
+35 00 59 c2 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 35 36 57 48 33 2d 54 4c 42 41 00 ec
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 796
+    Made in: 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 35 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5869, 0.3486
+    Green: 0.3359, 0.5634
+    Blue : 0.1572, 0.1201
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.052953 Hz 683:384   48.042 kHz     74.850000 MHz (345 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  112 Hpol N
+                 Vfront    3 Vsync   5 Vback   24 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP156WH3-TLBA'
+Checksum: 0xec
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

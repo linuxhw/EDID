@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae cc 15 00 00 00 00
+14 18 01 04 95 22 13 78 02 82 05 92 56 53 95 29
+24 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 da 1d 56 e2 50 00 20 30 44 2d
+47 00 58 c1 10 00 00 18 00 00 00 fe 00 4e 31 35
+36 42 47 4e 2d 45 34 31 0a 20 00 00 00 fe 00 43
+4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 35 36 42 47 4e 2d 45 34 31 0a 20 00 4f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5580
+    Made in: week 20 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5722, 0.3359
+    Green: 0.3242, 0.5839
+    Blue : 0.1601, 0.1406
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.003141 Hz 683:384   48.003 kHz     76.420000 MHz (344 mm x 193 mm)
+                 Hfront   68 Hsync  45 Hback  113 Hpol N
+                 Vfront    4 Vsync   7 Vback   21 Vpol N
+    Alphanumeric Data String: 'N156BGN-E41'
+    Alphanumeric Data String: 'CMN'
+    Alphanumeric Data String: 'N156BGN-E41'
+Checksum: 0x4f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

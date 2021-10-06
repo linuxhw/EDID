@@ -1,0 +1,56 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 91 31 00 00 00 00
+00 1e 01 04 95 22 13 78 03 8a a5 8f 56 55 93 29
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 e2 50 00 1e 30 26 16
+36 00 58 c1 10 00 00 18 df 13 56 e2 50 00 1e 30
+26 16 36 00 58 c1 10 00 00 18 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 10 48 ff 0f 3c 7d 1c 11 23 7d 20 20 20 00 f2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 12689
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5605, 0.3359
+    Green: 0.3339, 0.5761
+    Blue : 0.1621, 0.1230
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.059067 Hz 683:384   47.927 kHz     76.300000 MHz (344 mm x 193 mm)
+                 Hfront   38 Hsync  22 Hback  166 Hpol N
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    DTD 2:  1366x768    40.042002 Hz 683:384   31.954 kHz     50.870000 MHz (344 mm x 193 mm)
+                 Hfront   38 Hsync  22 Hback  166 Hpol N
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 10 48 ff 0f 3c 7d 1c 11 23 7d 20 20 20 '....H..<}..#}   '
+Checksum: 0xf2
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

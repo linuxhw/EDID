@@ -1,0 +1,57 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 22 40 00 00 00 00
+08 11 01 03 80 1d 15 78 ea 6f 95 9c 54 4c 87 26
+21 50 54 21 08 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 78 20 51 1a 10 40 30 70
+13 00 1f d7 10 00 00 18 25 23 78 20 51 1a 10 40
+30 70 13 00 1f d7 10 00 00 18 00 00 00 0f 00 90
+43 32 90 43 28 0f 01 00 30 64 90 55 00 00 00 fe
+00 4c 54 44 31 34 31 45 4e 39 42 0a 20 20 00 59
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16418
+    Made in: week 8 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 21 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6103, 0.3300
+    Green: 0.2998, 0.5302
+    Blue : 0.1503, 0.1298
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1400x1050   60.019740 Hz   4:3     63.981 kHz    108.000000 MHz (287 mm x 215 mm)
+                 Hfront   48 Hsync 112 Hback  128 Hpol N
+                 Vfront    1 Vsync   3 Vback   12 Vpol N
+    DTD 2:  1400x1050   49.999778 Hz   4:3     53.300 kHz     89.970000 MHz (287 mm x 215 mm)
+                 Hfront   48 Hsync 112 Hback  128 Hpol N
+                 Vfront    1 Vsync   3 Vback   12 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 90 43 32 90 43 28 0f 01 00 30 64 90 55 '....C2.C(...0d.U'
+    Alphanumeric Data String: 'LTD141EN9B'
+Checksum: 0x59
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

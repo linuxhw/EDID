@@ -1,0 +1,59 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 87 63 00 00 00 00
+01 11 01 03 80 25 17 78 0a 1c f5 97 58 50 8e 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1c 2a a0 12 52 84 0c 30 d0 20
+36 00 6f e5 10 00 00 19 1c 2a a0 12 52 84 0c 30
+d0 20 36 00 6f e5 10 00 00 00 00 00 00 fe 00 55
+35 38 30 43 00 42 31 37 30 50 57 36 00 00 00 fe
+00 2f 42 50 5b 80 a9 c8 ff 02 01 0a 20 20 00 b1
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 25479
+    Made in: week 1 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 37 cm x 23 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3447
+    Green: 0.3154, 0.5546
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    60.000891 Hz   8:5     54.721 kHz    107.800000 MHz (DE timing only, 367 mm x 229 mm)
+                 Hfront  208 Hsync  32 Hback  290 Hpol N
+                 Vfront    3 Vsync   6 Vback    3 Vpol N
+    DTD 2:  1440x900    60.000891 Hz   8:5     54.721 kHz    107.800000 MHz (DE timing only, 367 mm x 229 mm)
+                 Hfront  208 Hsync  32 Hback  290 Hpol N
+                 Vfront    3 Vsync   6 Vback    3 Vpol N
+    SPWG Module Revision: 0
+    SPWG Descriptor #3:
+      SPWG PC Maker P/N: 'U580C'
+      SPWG LCD Supplier EEDID Revision: 0
+      SPWG Manufacturer P/N: 'B170PW6'
+    SPWG Descriptor #4:
+      SMBUS Values: 0x2f 0x42 0x50 0x5b 0x80 0xa9 0xc8 0xff
+      LVDS Channels: 2
+      Panel Self Test Present
+Checksum: 0xb1
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

@@ -1,0 +1,99 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 19 c9 00 00 00 00 00 00
+00 12 01 03 08 29 1a 78 0a 45 32 a6 55 46 ac 2a
+19 52 55 a1 08 00 4b c0 95 00 01 01 01 01 01 01
+01 01 01 01 01 01 0e 1f 00 80 51 00 1e 30 40 80
+37 00 9a 01 11 00 00 1c 66 21 50 b0 51 00 1b 30
+40 70 36 00 9a 01 11 00 00 1e 01 1d 00 72 51 d0
+1e 20 6e 28 55 00 9a 01 11 00 00 1e 9a 29 a0 d0
+51 84 22 30 50 98 36 00 9a 01 11 00 00 1c 01 db
+
+10 01 03 00 00 2f 0d 50 f0 30 e0 25 10 10 70 68
+00 9a 01 11 00 00 00 a9 1a 00 a0 50 00 16 30 30
+20 37 00 9a 01 11 00 00 00 ab 22 a0 a0 50 84 1a
+30 30 20 36 00 9a 01 11 00 00 1a 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f4
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: FNI
+    Model: 0
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.3 V
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 41 cm x 26 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6494, 0.3320
+    Green: 0.2744, 0.6728
+    Blue : 0.1640, 0.1005
+    White: 0.3203, 0.3339
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    GTF     :   848x477    60.000307 Hz  16:9     29.640 kHz     31.300000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x768    59.870228 Hz   5:3     47.776 kHz     79.500000 MHz (410 mm x 257 mm)
+                 Hfront   64 Hsync 128 Hback  192 Hpol N
+                 Vfront    3 Vsync   7 Vback   20 Vpol P
+    DTD 2:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (410 mm x 257 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (410 mm x 257 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:  1440x900    59.887445 Hz   8:5     55.935 kHz    106.500000 MHz (410 mm x 257 mm)
+                 Hfront   80 Hsync 152 Hback  232 Hpol N
+                 Vfront    3 Vsync   6 Vback   25 Vpol P
+  Extension blocks: 1
+Checksum: 0xdb
+
+----------------
+
+Block 1, Video Timing Extension Block:
+  Version: 1
+  Detailed Timing Descriptors:
+    DTD:   848x480    60.000427 Hz  53:30    31.020 kHz     33.750000 MHz (analog composite, sync-on-green, 410 mm x 257 mm)
+               Hfront   16 Hsync 112 Hback  112 Hpol N
+               Vfront    6 Vsync   8 Vback   23 Vpol N
+    DTD:  1280x768    59.994726 Hz   5:3     47.396 kHz     68.250000 MHz (analog composite, sync-on-green, 410 mm x 257 mm)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   7 Vback   12 Vpol N
+    DTD:  1440x900    59.901458 Hz   8:5     55.469 kHz     88.750000 MHz (410 mm x 257 mm)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   6 Vback   17 Vpol N
+Checksum: 0xf4
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 848x477 has a dubious odd vertical resolution.
+Block 1, Video Timing Extension Block:
+  Detailed Timing Descriptor #4: DTD is similar but not identical to DMT 0x0e.
+  Detailed Timing Descriptor #4: DTD is similar but not identical to DMT 0x16.
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL
