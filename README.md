@@ -11,7 +11,7 @@ by the [hw-probe](https://github.com/linuxhw/hw-probe) tool:
 
 EDIDs of all connected monitors will be uploaded to the database and repository.
 
-TIP: discuss this on [our forum](https://forum.linux-hardware.org/).
+TIP: discuss your monitors and EDIDs on [our forum](https://forum.linux-hardware.org/)
 
 Total monitors: 60694.
 
