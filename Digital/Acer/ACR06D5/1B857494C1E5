@@ -121,6 +121,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
+    Reserved MD0
   YCbCr 4:2:0 Video Data Block:
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
   Detailed Timing Descriptors:
@@ -137,13 +138,14 @@ Checksum: 0x56
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  YCbCr 4:2:0 Video Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI (which requires an RGB timings pixel rate >= 590 MHz).
+  YCbCr 4:2:0 Video Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 31 is also a regular VIC.
   HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.

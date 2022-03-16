@@ -82,6 +82,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
+    Reserved MD0
   Detailed Timing Descriptors:
     DTD 2:  1920x1080   62.809288 Hz  16:9     69.718 kHz    148.500000 MHz (256 mm x 144 mm)
                  Hfront   90 Hsync  60 Hback   60 Hpol P
@@ -119,11 +120,13 @@ Block 0, Base EDID:
   Dummy Descriptor: Dummy block filled with garbage.
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Video Data Block, OUI 00-00-00: Data block length (2) is not enough to contain an OUI.
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #4: Mismatch of image size 518x324 mm vs display size 260x150 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 518x324 mm vs display size 260x150 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 59.887 - 62.809 Hz (Monitor: 60.000 - 60.000 Hz)
+  Base EDID: The DTD max image size is 518x324mm, which is larger than the display size 260.0x150.0mm.
 
 EDID conformity: FAIL

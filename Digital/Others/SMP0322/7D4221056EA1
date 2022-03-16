@@ -108,6 +108,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
+    Reserved MD0
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 2.0.0.0
     DC_36bit
@@ -147,12 +148,14 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 196x133 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #2: Invalid detailed timing descriptor ordering.
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #3: Mismatch of image size 930x523 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 930x523 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 196x142 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #6: Mismatch of image size 930x523 mm vs display size 480x270 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
+  Base EDID: The DTD max image size is 931x524mm, which is larger than the display size 480.0x270.0mm.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

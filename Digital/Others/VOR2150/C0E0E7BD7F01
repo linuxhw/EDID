@@ -109,6 +109,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
+    Reserved MD0
   Detailed Timing Descriptors:
     DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (597 mm x 336 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
@@ -127,7 +128,10 @@ EDID:
 Failures:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #2: Mismatch of image size 597x336 mm vs display size 470x280 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 597x336mm, which is larger than the display size 470.0x280.0mm.
 
 EDID conformity: FAIL

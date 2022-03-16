@@ -126,6 +126,7 @@ Block 1, CTA-861 Extension Block:
     xvYCC709
     BT2020YCC
     BT2020RGB
+    Reserved MD0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -165,10 +166,11 @@ Failures:
 
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 160.000 kHz)
-  Base EDID: The DTD image sizes all fit inside 255x255cm, but no display size was set.
+  Base EDID: The DTD max image size is 708x398mm, but the display size is not specified anywhere.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

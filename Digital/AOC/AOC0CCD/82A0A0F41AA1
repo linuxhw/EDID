@@ -124,6 +124,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
+    Reserved MD0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -163,9 +164,12 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #3: Mismatch of image size 640x360 mm vs display size 620x340 mm.
   Missing Display Range Limits Descriptor.
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #4: Mismatch of image size 720x450 mm vs display size 620x340 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 960x540 mm vs display size 620x340 mm.
   Detailed Timing Descriptor #6: Mismatch of image size 960x540 mm vs display size 620x340 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 960x540mm, which is larger than the display size 620.0x340.0mm.
 
 EDID conformity: FAIL

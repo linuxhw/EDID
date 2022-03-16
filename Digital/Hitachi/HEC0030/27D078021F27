@@ -137,6 +137,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
+    Reserved MD0
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
     DC_36bit
@@ -206,5 +207,8 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 1872x1053 mm vs display size 1150x650 mm.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
+EDID:
+  Base EDID: The DTD max image size is 1872x1053mm, which is larger than the display size 1150.0x650.0mm.
 
 EDID conformity: FAIL

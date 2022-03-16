@@ -127,6 +127,7 @@ Block 1, CTA-861 Extension Block:
     xvYCC709
     BT2020YCC
     BT2020RGB
+    Reserved MD0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 1.1
     Minimum Refresh Rate: 48 Hz
@@ -155,11 +156,13 @@ Block 1, CTA-861 Extension Block:
   Video Data Block: Unknown VIC 220.
   Video Data Block: Unknown VIC 220.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #4: Mismatch of image size 700x390 mm vs display size 600x330 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.250 - 146.000 kHz (Monitor: 30.000 - 145.000 kHz)
+  Base EDID: The DTD max image size is 700x390mm, which is larger than the display size 600.0x330.0mm.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

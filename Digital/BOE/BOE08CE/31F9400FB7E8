@@ -156,6 +156,7 @@ Block 3, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
+    Reserved MD0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
   Detailed Timing Descriptors:
@@ -198,9 +199,12 @@ Block 3, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #2: Mismatch of image size 596x335 mm vs display size 310x170 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 596x335 mm vs display size 310x170 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 596x335 mm vs display size 310x170 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 596x335mm, which is larger than the display size 310.0x170.0mm.
 
 EDID conformity: FAIL

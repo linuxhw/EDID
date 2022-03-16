@@ -110,6 +110,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
+    Reserved MD0
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -155,4 +156,9 @@ EDID:
     Horizontal Freq: 31.250 - 307.843 kHz (Monitor: 255.000 - 255.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
-EDID conformity: PASS
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
+
+EDID conformity: FAIL

@@ -143,6 +143,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
+    Reserved MD0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
@@ -175,11 +176,13 @@ EDID:
 Failures:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #3: Mismatch of image size 544x303 mm vs display size 600x340 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 700x390 mm vs display size 600x340 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 165.008 Hz (Monitor: 48.000 - 165.000 Hz)
     Maximum Clock: 594.000 MHz (Monitor: 390.000 MHz)
+  Base EDID: The DTD max image size is 700x390mm, which is larger than the display size 600.0x340.0mm.
 
 EDID conformity: FAIL

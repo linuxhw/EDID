@@ -99,6 +99,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
+    Reserved MD0
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -132,6 +133,7 @@ Failures:
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 698x392 mm vs display size 600x330 mm.
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #2: Mismatch of image size 160x90 mm vs display size 600x330 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 160x90 mm vs display size 600x330 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
@@ -140,5 +142,6 @@ EDID:
     Vertical Freq: 50.000 - 74.973 Hz (Monitor: 58.000 - 62.000 Hz)
     Horizontal Freq: 15.734 - 83.894 kHz (Monitor: 30.000 - 83.000 kHz)
     Maximum Clock: 174.500 MHz (Monitor: 160.000 MHz)
+  Base EDID: The DTD max image size is 698x392mm, which is larger than the display size 600.0x330.0mm.
 
 EDID conformity: FAIL

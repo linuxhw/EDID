@@ -104,6 +104,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
+    Reserved MD0
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -143,9 +144,12 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 16.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #2: Mismatch of image size 735x420 mm vs display size 340x190 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 735x420 mm vs display size 340x190 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 560x420 mm vs display size 340x190 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 735x420mm, which is larger than the display size 340.0x190.0mm.
 
 EDID conformity: FAIL

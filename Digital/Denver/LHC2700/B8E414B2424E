@@ -104,6 +104,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
+    Reserved MD0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 1.23
     Minimum Refresh Rate: 48 Hz
@@ -138,9 +139,11 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 16.
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #3: Mismatch of image size 1153x329 mm vs display size 600x340 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
+  Base EDID: The DTD max image size is 1153x336mm, which is larger than the display size 600.0x340.0mm.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

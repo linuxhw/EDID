@@ -93,6 +93,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
+    Reserved MD0
   Detailed Timing Descriptors:
     DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (300 mm x 260 mm)
                  Hfront  110 Hsync  40 Hback  220 Hpol P
@@ -112,7 +113,10 @@ EDID:
 Failures:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #4: Mismatch of image size 698x393 mm vs display size 300x260 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 698x393mm, which is larger than the display size 300.0x260.0mm.
 
 EDID conformity: FAIL

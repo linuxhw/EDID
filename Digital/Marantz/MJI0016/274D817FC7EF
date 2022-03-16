@@ -146,6 +146,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
+    Reserved MD0
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.2.0.0
     Supports_AI
@@ -168,6 +169,7 @@ Checksum: 0x04
 Failures:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #3: Mismatch of image size 708x398 mm vs display size 640x400 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
@@ -175,6 +177,7 @@ EDID:
     Vertical Freq: 24.000 - 75.029 Hz (Monitor: 49.000 - 86.000 Hz)
     Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 29.000 - 94.000 kHz)
     Maximum Clock: 193.250 MHz (Monitor: 180.000 MHz)
+  Base EDID: The DTD max image size is 708x401mm, which is larger than the display size 640.0x400.0mm.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

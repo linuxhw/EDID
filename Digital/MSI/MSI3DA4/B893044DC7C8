@@ -136,6 +136,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
+    Reserved MD0
   Detailed Timing Descriptors:
     DTD 2:  2560x1440  143.972318 Hz  16:9    222.149 kHz    592.250000 MHz (700 mm x 390 mm)
                  Hfront   21 Hsync  32 Hback   53 Hpol P
@@ -163,9 +164,11 @@ Failures:
 
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #4: Mismatch of image size 800x450 mm vs display size 700x390 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
+  Base EDID: The DTD max image size is 800x450mm, which is larger than the display size 700.0x390.0mm.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL
