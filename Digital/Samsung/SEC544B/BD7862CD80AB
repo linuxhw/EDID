@@ -1,0 +1,59 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 4b 54 00 00 00 00
+00 14 01 00 95 22 13 78 0a c8 95 9e 57 54 92 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1c 2a 40 4c 61 84 1e 30 30 20
+25 00 58 c2 10 00 00 1a 13 1c 40 4c 61 84 1e 30
+30 20 25 00 58 c2 10 00 00 1a 00 00 00 fe 00 46
+48 35 30 30 81 31 35 36 4b 54 0a 20 00 00 00 00
+00 00 41 01 1e 00 00 00 00 09 01 0a 20 20 00 d6
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.0
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 21579
+    Made in: 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6201, 0.3398
+    Green: 0.3300, 0.5703
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    59.996883 Hz  16:9     55.797 kHz    107.800000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  252 Hpol P
+                 Vfront    2 Vsync   5 Vback   23 Vpol N
+    DTD 2:  1600x900    39.999777 Hz  16:9     37.200 kHz     71.870000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  252 Hpol P
+                 Vfront    2 Vsync   5 Vback   23 Vpol N
+    Alphanumeric Data String: 'FH500'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 01 1e 00 00 00 00 09 01 0a 20 20 '....A.........  '
+Checksum: 0xd6
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.0 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x15.
+  Display Descriptor #3: Has descriptor blocks other than detailed timings.
+  Alphanumeric Data String: Non-printable character.
+  Display Descriptor #4: Has descriptor blocks other than detailed timings.
+
+EDID conformity: FAIL

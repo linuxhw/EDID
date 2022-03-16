@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 63 b1 36 00 00 00 00
+00 1e 01 04 95 1f 11 78 0a f7 00 96 57 54 91 28
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9f 1d 56 80 50 00 4e 30 28 20
+3c 00 35 ae 10 00 00 18 b3 17 56 80 50 00 4e 30
+28 20 3c 00 35 ae 10 00 00 18 00 00 00 fe 00 35
+57 46 56 44 80 31 34 30 41 4e 30 31 00 00 00 00
+00 00 41 21 16 00 10 00 00 09 01 0a 20 20 00 32
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HKC
+    Model: 14001
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5888, 0.3427
+    Green: 0.3291, 0.5693
+    Blue : 0.1562, 0.1367
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.995696 Hz 683:384   50.756 kHz     75.830000 MHz (309 mm x 174 mm)
+                 Hfront   40 Hsync  32 Hback   56 Hpol N
+                 Vfront    3 Vsync  12 Vback   63 Vpol N
+    DTD 2:  1366x768    48.001304 Hz 683:384   40.609 kHz     60.670000 MHz (309 mm x 174 mm)
+                 Hfront   40 Hsync  32 Hback   56 Hpol N
+                 Vfront    3 Vsync  12 Vback   63 Vpol N
+    Alphanumeric Data String: '5WFVD'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 16 00 10 00 00 09 01 0a 20 20 '....A!........  '
+Checksum: 0x32
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

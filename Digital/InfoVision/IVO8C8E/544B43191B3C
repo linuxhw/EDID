@@ -1,0 +1,56 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cf 8e 8c 00 00 00 00
+00 1f 01 04 a5 1e 13 78 0b de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 04 51 c0 a0 80 78 28 50 18 30
+3c 00 2e bd 10 00 00 19 06 36 c0 a0 80 78 28 50
+18 30 3c 00 2e bd 10 00 00 19 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 33 ff 0f 3c 96 16 11 2a 96 00 00 00 00 1e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: IVO
+    Model: 35982
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2240x1400   60.011574 Hz   8:5     86.417 kHz    207.400000 MHz (302 mm x 189 mm)
+                 Hfront   24 Hsync  48 Hback   88 Hpol N
+                 Vfront    3 Vsync  12 Vback   25 Vpol N
+    DTD 2:  2240x1400   40.017361 Hz   8:5     57.625 kHz    138.300000 MHz (302 mm x 189 mm)
+                 Hfront   24 Hsync  48 Hback   88 Hpol N
+                 Vfront    3 Vsync  12 Vback   25 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 33 ff 0f 3c 96 16 11 2a 96 00 00 00 '....3..<...*....'
+Checksum: 0x1e
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 83 58 5a 00 00 00 00
+00 19 01 04 a5 22 13 78 0a c5 a5 a3 57 4f 9c 26
+14 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d8 cc 00 a0 f0 70 19 80 30 20
+26 00 58 c2 10 00 00 19 90 88 00 a0 f0 70 19 80
+30 20 26 00 58 c2 10 00 00 19 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0a 36 ff 0a 3c 64 3c 24 58 96 00 00 00 00 35
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 23128
+    Made in: 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.3095, 0.6103
+    Blue : 0.1503, 0.0800
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.000000 Hz  16:9    131.100 kHz    524.400000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    2 Vsync   6 Vback   17 Vpol N
+    DTD 2:  3840x2160   40.000000 Hz  16:9     87.400 kHz    349.600000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    2 Vsync   6 Vback   17 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0a 36 ff 0a 3c 64 3c 24 58 96 00 00 00 '....6..<d<$X....'
+Checksum: 0x35
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

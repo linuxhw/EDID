@@ -1,0 +1,56 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 09 16 00 00 00 00
+1e 1e 01 04 a5 24 14 78 03 28 65 97 59 54 8e 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9e 85 80 a0 70 38 3e 40 30 20
+a6 00 63 c7 10 00 00 1a ae 37 80 a0 70 38 3e 40
+30 20 a6 00 63 c7 10 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 3d ff 0c 32 7d 29 16 2e 7d 00 00 00 00 24
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5641
+    Made in: week 30 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 36 cm x 20 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5898, 0.3496
+    Green: 0.3300, 0.5546
+    Blue : 0.1533, 0.1191
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  144.003435 Hz  16:9    164.452 kHz    342.060000 MHz (355 mm x 199 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront   10 Vsync   6 Vback   46 Vpol N
+    DTD 2:  1920x1080   60.007746 Hz  16:9     68.529 kHz    142.540000 MHz (355 mm x 199 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront   10 Vsync   6 Vback   46 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 3d ff 0c 32 7d 29 16 2e 7d 00 00 00 '....=..2})..}...'
+Checksum: 0x24
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

@@ -1,0 +1,66 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 10 09 15 a0 12 00 34
+2a 1e 01 04 a5 1e 14 78 07 de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 52 c4 60 a0 90 40 24 60 30 20
+3a 00 2f ca 10 00 00 18 52 c4 60 a0 90 40 88 66
+30 20 3a 00 2f ca 10 00 00 18 00 00 00 fd 00 1e
+78 c5 c5 33 01 00 00 00 00 00 00 00 00 00 00 fc
+00 4c 51 31 34 34 50 31 4a 58 30 31 0a 20 00 4a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SHP
+    Model: 5385
+    Serial Number: ...
+    Made in: week 42 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 30 cm x 20 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2400x1600  120.000191 Hz   3:2    196.320 kHz    502.580000 MHz (303 mm x 202 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync  10 Vback   23 Vpol N
+    DTD 2:  2400x1600   60.000096 Hz   3:2    196.320 kHz    502.580000 MHz (303 mm x 202 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync  10 Vback 1659 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 30-120 Hz V, 197-197 kHz H, max dotclock 510 MHz
+    Display Product Name: 'LQ144P1JX01'
+Checksum: 0x4a
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 196.320 - 196.320 kHz (Monitor: 197.000 - 197.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+
+EDID conformity: FAIL

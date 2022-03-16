@@ -1,0 +1,72 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cd 14 61 6c 04 00 00
+2b 17 01 04 68 35 1e 78 2a 1b 45 a6 55 50 9c 26
+0f 50 54 33 08 00 71 00 81 40 81 80 a9 40 b3 00
+95 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2b 21 00 00 1e 00 00 00 ff 00 31 31 32
+38 30 33 34 33 30 31 31 33 32 00 00 00 fd 00 37
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 4c 58 32 34 38 33 48 0a 20 20 20 20 00 1d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: IVM
+    Model: 24852
+    Serial Number: ...
+    Made in: week 43 of 2013
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 53 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6484, 0.3330
+    Green: 0.3144, 0.6123
+    Blue : 0.1494, 0.0585
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    Apple   :   640x480    66.666667 Hz   4:3     35.000 kHz     30.240000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    GTF     :  1152x720    59.999964 Hz  16:10    44.760 kHz     67.319000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (531 mm x 299 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: ...
+    Display Range Limits:
+      Monitor ranges (GTF): 55-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+    Display Product Name: 'PLX2483H'
+Checksum: 0x1d
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+
+EDID conformity: FAIL

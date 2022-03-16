@@ -1,0 +1,90 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 83 5c 41 00 00 00 00
+32 1e 01 04 b5 22 16 78 02 0c f1 ae 52 3c b9 23
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 71 df 00 50 f0 60 20 90 20 08
+88 00 58 d7 10 00 00 1b 71 df 00 50 f0 60 20 90
+20 08 88 00 58 d7 10 00 00 1b 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 04 00 00 19 96 c8 35 21 6a c8 00 00 00 01 af
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 74 60 07 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 b7
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 16732
+    Made in: week 50 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2373, 0.7226
+    Blue : 0.1396, 0.0498
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2400   60.000378 Hz   8:5    145.921 kHz    572.010000 MHz (344 mm x 215 mm)
+                 Hfront   32 Hsync   8 Hback   40 Hpol P
+                 Vfront    8 Vsync   8 Vback   16 Vpol N
+    DTD 2:  3840x2400   60.000378 Hz   8:5    145.921 kHz    572.010000 MHz (344 mm x 215 mm)
+                 Hfront   32 Hsync   8 Hback   40 Hpol P
+                 Vfront    8 Vsync   8 Vback   16 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 04 00 00 19 96 c8 35 21 6a c8 00 00 00 '.........5!j....'
+  Extension blocks: 1
+Checksum: 0xaf
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 116 (616.884 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 7 (0.005 cd/m^2)
+Checksum: 0xb7
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+EDID conformity: FAIL

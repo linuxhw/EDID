@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 6f 03 13 00 00 00 00
+00 1d 01 04 a5 1c 11 78 03 87 77 a7 52 4a 9c 26
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 50 46 70 2c 80 46 11 50 10 10
+81 00 18 af 10 00 00 18 50 23 70 2c 80 46 11 50
+10 10 81 00 18 af 10 00 00 18 00 00 00 fe 00 43
+53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe
+00 4d 4e 44 30 30 37 5a 41 31 2d 32 0a 20 00 3f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CSO
+    Model: 4867
+    Made in: 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 28 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6542, 0.3203
+    Green: 0.2900, 0.6123
+    Blue : 0.1494, 0.0576
+    White: 0.3134, 0.3310
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2160x1350   59.743739 Hz   8:5     81.670 kHz    180.000000 MHz (280 mm x 175 mm)
+                 Hfront   16 Hsync  16 Hback   12 Hpol N
+                 Vfront    8 Vsync   1 Vback    8 Vpol N
+    DTD 2:  2160x1350   30.004633 Hz   8:5     41.016 kHz     90.400000 MHz (280 mm x 175 mm)
+                 Hfront   16 Hsync  16 Hback   12 Hpol N
+                 Vfront    8 Vsync   1 Vback    8 Vpol N
+    Alphanumeric Data String: 'CSOT T3'
+    Alphanumeric Data String: 'MND007ZA1-2'
+Checksum: 0x3f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

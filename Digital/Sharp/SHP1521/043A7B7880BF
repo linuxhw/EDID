@@ -1,0 +1,62 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 10 21 15 00 00 00 00
+31 1e 01 04 a5 1d 12 78 07 de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ed 7b 80 a0 70 b0 47 40 30 20
+36 00 20 b4 10 00 00 18 f7 3d 80 a0 70 b0 47 40
+30 20 36 00 20 b4 10 00 00 18 00 00 00 fd 00 30
+78 99 99 20 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 51 31 33 34 4e 31 4a 57 35 33 0a 20 00 06
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SHP
+    Model: 5409
+    Made in: week 49 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200  120.003177 Hz   8:5    152.524 kHz    317.250000 MHz (288 mm x 180 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   62 Vpol N
+    DTD 2:  1920x1200   60.003480 Hz   8:5     76.264 kHz    158.630000 MHz (288 mm x 180 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   62 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-120 Hz V, 153-153 kHz H, max dotclock 320 MHz
+    Display Product Name: 'LQ134N1JW53'
+Checksum: 0x06
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 76.264 - 152.524 kHz (Monitor: 153.000 - 153.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+
+EDID conformity: FAIL

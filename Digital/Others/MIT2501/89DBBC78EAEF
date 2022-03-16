@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 35 34 01 25 01 00 00 00
+01 1b 01 03 80 1e 14 78 0a 00 00 00 00 00 00 00
+00 00 00 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d4 30 80 64 70 38 19 40 58 28
+45 00 68 22 11 00 00 1e 00 00 00 fd 00 0f f0 0f
+7f 11 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4d
+6f 62 69 6c 65 50 69 78 65 6c 73 0a 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 70
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MIT
+    Model: 9473
+    Serial Number: ...
+    Made in: week 1 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 20 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.0000, 0.0000
+    Green: 0.0000, 0.0000
+    Blue : 0.0000, 0.0000
+    White: 0.0000, 0.0000
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   56.001075 Hz  16:9     61.881 kHz    125.000000 MHz (360 mm x 290 mm)
+                 Hfront   88 Hsync  40 Hback  -28 Hpol P
+                 Vfront    4 Vsync   5 Vback   16 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 15-240 Hz V, 15-127 kHz H, max dotclock 170 MHz
+    Display Product Serial Number: ...
+    Empty Descriptor
+Checksum: 0x70
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #1: Mismatch of image size 360x290 mm vs display size 300x200 mm.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

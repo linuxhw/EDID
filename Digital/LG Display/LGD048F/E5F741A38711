@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 8f 04 00 00 00 00
+00 18 01 04 95 22 13 78 0a 05 f5 94 58 56 92 28
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d0 1d 56 f4 50 00 16 30 30 20
+35 00 58 c2 10 00 00 1a d9 17 56 f4 50 00 16 30
+30 20 35 00 58 c2 10 00 00 1a 00 00 00 fe 00 48
+52 44 47 4a 80 31 35 36 57 48 55 0a 00 00 00 00
+00 00 41 31 94 00 10 00 00 09 01 0a 20 20 00 0e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1167
+    Made in: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5781, 0.3437
+    Green: 0.3369, 0.5712
+    Blue : 0.1591, 0.1201
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.004717 Hz 683:384   47.404 kHz     76.320000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  164 Hpol P
+                 Vfront    3 Vsync   5 Vback   14 Vpol N
+    DTD 2:  1366x768    47.999057 Hz 683:384   37.919 kHz     61.050000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  164 Hpol P
+                 Vfront    3 Vsync   5 Vback   14 Vpol N
+    Alphanumeric Data String: 'HRDGJ'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 94 00 10 00 00 09 01 0a 20 20 '....A1........  '
+Checksum: 0x0e
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

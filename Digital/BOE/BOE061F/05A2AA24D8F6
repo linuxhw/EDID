@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 1f 06 00 00 00 00
+01 18 01 04 80 22 13 78 0a fb 0f 95 58 55 91 2a
+1e 4f 56 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3e 1c 56 a0 50 00 16 30 30 20
+36 00 35 ad 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 42
+4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 54 31 35 36 57 48 4d 2d 4e 31 30 0a 00 f2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 1567
+    Made in: week 1 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Color depth is undefined
+    Digital interface is not defined
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5849, 0.3466
+    Green: 0.3339, 0.5693
+    Blue : 0.1640, 0.1171
+    White: 0.3115, 0.3388
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.973124 Hz 683:384   47.379 kHz     72.300000 MHz (309 mm x 173 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   13 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'BOE HF'
+    Alphanumeric Data String: 'NT156WHM-N10'
+Checksum: 0xf2
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 309x173 mm vs display size 340x190 mm.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

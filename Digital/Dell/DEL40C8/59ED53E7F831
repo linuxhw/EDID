@@ -1,0 +1,56 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac c8 40 01 00 00 00
+0b 19 01 04 a5 35 1e 78 e2 54 60 ab 52 38 ab 25
+13 50 54 01 08 00 d1 c0 a9 c0 95 00 01 01 81 80
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 0f 28 21 00 00 1e 00 00 00 fc 00 49
+6e 73 70 69 72 6f 6e 20 33 34 35 39 00 00 00 00
+00 03 41 02 99 00 00 00 00 02 01 0a 20 20 00 79
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 16584
+    Serial Number: ...
+    Made in: week 11 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 53 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6689, 0.3212
+    Green: 0.2197, 0.6679
+    Blue : 0.1455, 0.0761
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (527 mm x 296 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    Display Product Name: 'Inspiron 3459'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 03 41 02 99 00 00 00 00 02 01 0a 20 20 '....A.........  '
+Checksum: 0x79
+
+----------------
+
+EDID conformity: PASS

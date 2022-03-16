@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 50 46 00 00 00 00
+00 10 01 04 80 1e 17 78 0a 87 f5 94 57 4f 8c 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 78 20 51 1a 10 40 30 70
+14 00 30 e4 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 0f f2 02 4b 00 00 00 00 fe 00 48
+47 32 39 34 00 31 35 30 50 46 0a 20 00 00 00 fe
+00 d1 bf b0 9d 89 6e 4b 00 02 0a 20 20 20 00 eb
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 18000
+    Made in: 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Color depth is undefined
+    Digital interface is not defined
+    Maximum image size: 30 cm x 23 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5800, 0.3398
+    Green: 0.3095, 0.5498
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1400x1050   60.019740 Hz   4:3     63.981 kHz    108.000000 MHz (304 mm x 228 mm)
+                 Hfront   48 Hsync 112 Hback  128 Hpol N
+                 Vfront    1 Vsync   4 Vback   11 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 0f f2 02 4b 00 '..............K.'
+    Alphanumeric Data String: 'HG294'
+    Alphanumeric Data String: ''
+Checksum: 0xeb
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

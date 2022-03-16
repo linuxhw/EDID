@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 64 09 00 00 00 00
+16 1e 01 04 a5 1d 12 78 03 6c bb a7 51 4b 9d 26
+0e 51 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 74 3c 80 a0 70 b0 28 40 30 20
+36 00 1e b3 10 00 00 1a 5d 30 80 a0 70 b0 28 40
+30 20 36 00 1e b3 10 00 00 1a 00 00 00 fe 00 42
+4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 33 33 57 55 4d 2d 4e 36 31 0a 00 3a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2404
+    Made in: week 22 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6533, 0.3183
+    Green: 0.2958, 0.6132
+    Blue : 0.1503, 0.0576
+    White: 0.3183, 0.3310
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.003102 Hz   8:5     74.404 kHz    154.760000 MHz (286 mm x 179 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   31 Vpol N
+    DTD 2:  1920x1200   48.003257 Hz   8:5     59.524 kHz    123.810000 MHz (286 mm x 179 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   31 Vpol N
+    Alphanumeric Data String: 'BOE HF'
+    Alphanumeric Data String: 'NV133WUM-N61'
+Checksum: 0x3a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

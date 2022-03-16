@@ -1,0 +1,158 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 57 01 00 01 00 00 00
+01 1d 01 04 82 46 27 78 2a d9 b0 a3 57 49 9c 25
+11 49 4b 21 08 00 71 40 81 c0 81 00 81 40 81 80
+95 00 a9 c0 b3 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 c4 8e 21 00 00 1e 00 00 00 fd 00 17 55 1e
+64 1e 04 10 00 00 00 00 00 01 00 00 00 f7 00 0a
+00 40 c6 44 00 00 00 00 00 00 00 00 00 00 00 fc
+00 48 44 4d 49 20 54 4f 20 55 53 42 0a 20 01 d4
+
+02 03 2c f1 51 01 02 03 04 11 12 13 1f 20 21 22
+3c 3d 3e 90 5f 64 23 09 07 07 83 01 00 00 67 03
+0c 00 10 00 b8 3c e5 0e 61 60 66 65 01 1d 00 72
+51 d0 1e 20 6e 28 55 00 c4 8e 21 00 00 1e 8c 0a
+d0 8a 20 e0 2d 10 10 3e 96 00 c4 8e 21 00 00 18
+8c 0a d0 90 20 40 31 20 0c 40 55 00 c4 8e 21 00
+00 18 4e 1f 00 80 51 00 1e 30 40 80 37 00 c4 8e
+21 00 00 18 00 00 00 00 00 00 00 00 00 00 00 22
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HJW
+    Model: 1
+    Serial Number: ...
+    Made in: week 1 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Color depth is undefined
+    HDMI-a interface
+    Maximum image size: 70 cm x 39 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3408
+    Green: 0.2871, 0.6103
+    Blue : 0.1464, 0.0693
+    White: 0.2851, 0.2929
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    CVT     :  1152x864    59.958634 Hz   4:3     53.783 kHz     81.750000 MHz (EDID 1.4 source)
+    GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz (EDID 1.3 source)
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (CVT): 23-85 Hz V, 30-100 kHz H, max dotclock 300 MHz
+      CVT version 1.0
+      Supported aspect ratios:
+      Preferred aspect ratio: 4:3
+      Preferred vertical refresh: 1 Hz
+    Established timings III:
+      DMT 0x17:  1280x768    59.870228 Hz   5:3     47.776 kHz     79.500000 MHz
+      DMT 0x27:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz
+      DMT 0x2e:  1440x900    59.901458 Hz  16:10    55.469 kHz     88.750000 MHz (RB)
+      DMT 0x29:  1400x1050   59.947768 Hz   4:3     64.744 kHz    101.000000 MHz (RB)
+      DMT 0x2a:  1400x1050   59.978442 Hz   4:3     65.317 kHz    121.750000 MHz
+      DMT 0x39:  1680x1050   59.883253 Hz  16:10    64.674 kHz    119.000000 MHz (RB)
+      DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    Display Product Name: 'HDMI TO USB'
+  Extension blocks: 1
+Checksum: 0xd4
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  60:  1280x720    24.000000 Hz  16:9     18.000 kHz     59.400000 MHz
+    VIC  61:  1280x720    25.000000 Hz  16:9     18.750 kHz     74.250000 MHz
+    VIC  62:  1280x720    30.000000 Hz  16:9     22.500 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC 100:  4096x2160   30.000000 Hz 256:135   67.500 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+  YCbCr 4:2:0 Video Data Block:
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+    VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
+    VIC 101:  4096x2160   50.000000 Hz 256:135  112.500 kHz    594.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 4:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 5:  1280x768    60.352203 Hz   5:3     48.161 kHz     80.140000 MHz (708 mm x 398 mm)
+                 Hfront   64 Hsync 128 Hback  192 Hpol N
+                 Vfront    3 Vsync   7 Vback   20 Vpol N
+Checksum: 0x22
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 18.000 - 75.000 kHz (Monitor: 30.000 - 100.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: CVT can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+EDID conformity: FAIL

@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae a8 14 00 00 00 00
+2c 17 01 04 95 1f 11 78 02 37 45 9e 55 53 92 29
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2a 36 80 a0 70 38 1f 40 30 20
+35 00 34 ad 10 00 00 1a 1c 24 80 a0 70 38 1f 40
+30 20 35 00 34 ad 10 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 30 ef 10 3c 96 10 0e 20 97 00 00 00 00 d3
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5288
+    Made in: week 44 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6171, 0.3349
+    Green: 0.3251, 0.5732
+    Blue : 0.1611, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.003116 Hz  16:9     66.663 kHz    138.660000 MHz (308 mm x 173 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    DTD 2:  1920x1080   40.002077 Hz  16:9     44.442 kHz     92.440000 MHz (308 mm x 173 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 30 ef 10 3c 96 10 0e 20 97 00 00 00 '....0..<... ....'
+Checksum: 0xd3
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

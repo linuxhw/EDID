@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 32 0c 01 1c 00 00 00 00
+00 11 01 03 80 21 15 78 0a 42 90 a5 57 4c 9e 25
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d5 1b 00 a0 50 20 17 30 30 20
+26 00 4b cf 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 50 68 69 6c 69 70 73 4c 43 44 0a 00 00 00 fe
+00 4c 50 31 35 34 57 58 33 2d 54 4c 42 31 00 20
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LPL
+    Model: 7169
+    Made in: 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6455, 0.3398
+    Green: 0.2968, 0.6191
+    Blue : 0.1464, 0.0634
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.120494 Hz   8:5     49.479 kHz     71.250000 MHz (331 mm x 207 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    2 Vsync   6 Vback   15 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LGPhilipsLCD'
+    Alphanumeric Data String: 'LP154WX3-TLB1'
+Checksum: 0x20
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

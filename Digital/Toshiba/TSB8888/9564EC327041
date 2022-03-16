@@ -1,0 +1,131 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 52 62 88 88 00 88 88 88
+1c 15 01 03 80 00 00 78 0a ee 91 a3 54 4c 99 26
+0f 50 54 3f cd 00 01 00 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 01 1d 00 72 51 d0 1e 20 6e 28
+55 00 c4 8e 21 00 00 1e 8c 0a d0 8a 20 e0 2d 10
+10 3e 96 00 13 8e 21 00 00 1e 00 00 00 fc 00 54
+6f 73 68 69 62 61 2d 48 32 43 0a 20 00 00 00 fd
+00 3b 3d 0f 2e 0f 1e 0a 20 20 20 20 20 20 01 44
+
+02 03 1d 03 4e 04 13 03 02 12 11 01 20 21 a2 3c
+3d 3e 1f 66 03 0c 00 30 00 80 e2 00 7f 8c 0a d0
+8a 20 e0 2d 10 10 3e 96 00 c4 8e 21 00 00 18 8c
+0a d0 8a 20 e0 2d 10 10 3e 96 00 13 8e 21 00 00
+18 97 29 a0 d0 51 84 22 30 50 98 16 00 9a 01 11
+00 00 18 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: TSB
+    Model: 34952
+    Serial Number: ...
+    Made in: week 28 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    Apple   :   640x480    66.666667 Hz   4:3     35.000 kHz     30.240000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+  Detailed Timing Descriptors:
+    DTD 1:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 2:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (531 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol P
+                 Vfront    9 Vsync   6 Vback   30 Vpol P
+    Display Product Name: 'Toshiba-H2C'
+    Display Range Limits:
+      Monitor ranges (Unknown (0x1e)): 59-61 Hz V, 15-46 kHz H, max dotclock 150 MHz
+  Extension blocks: 1
+Checksum: 0x44
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 3
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz (native)
+    VIC  60:  1280x720    24.000000 Hz  16:9     18.000 kHz     59.400000 MHz
+    VIC  61:  1280x720    25.000000 Hz  16:9     18.750 kHz     74.250000 MHz
+    VIC  62:  1280x720    30.000000 Hz  16:9     22.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 3.0.0.0
+    Supports_AI
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (531 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 5:  1440x900    59.870576 Hz   8:5     55.919 kHz    106.470000 MHz (410 mm x 257 mm)
+                 Hfront   80 Hsync 152 Hback  232 Hpol N
+                 Vfront    1 Vsync   6 Vback   27 Vpol N
+Checksum: 0x6e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 2.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Display Range Limits: Unknown range class (0x1e).
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.025 Hz (Monitor: 59.000 - 61.000 Hz)
+    Horizontal Freq: 18.000 - 79.976 kHz (Monitor: 15.000 - 46.000 kHz)
+  Base EDID: The DTD image sizes all fit inside 255x255cm, but no display size was set.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

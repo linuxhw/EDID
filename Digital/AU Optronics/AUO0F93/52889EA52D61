@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 93 0f 00 00 00 00
+00 1e 01 04 a5 1d 12 78 02 fb 25 a7 53 49 9d 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 fa 3c 80 b8 70 b0 24 40 10 10
+3e 00 1e b2 10 00 00 1a c8 30 80 b8 70 b0 24 40
+10 10 3e 00 1e b2 10 00 00 1a 00 00 00 fe 00 43
+31 48 38 54 80 42 31 33 33 55 41 4e 00 00 00 00
+00 02 41 22 a8 00 11 00 00 0a 01 0a 20 20 00 0a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 3987
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6552, 0.3271
+    Green: 0.2871, 0.6162
+    Blue : 0.1445, 0.0605
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.025902 Hz   8:5     74.192 kHz    156.100000 MHz (286 mm x 178 mm)
+                 Hfront   16 Hsync  16 Hback  152 Hpol P
+                 Vfront    3 Vsync  14 Vback   19 Vpol N
+    DTD 2:  1920x1200   48.020722 Hz   8:5     59.354 kHz    124.880000 MHz (286 mm x 178 mm)
+                 Hfront   16 Hsync  16 Hback  152 Hpol P
+                 Vfront    3 Vsync  14 Vback   19 Vpol N
+    Alphanumeric Data String: 'C1H8T'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 22 a8 00 11 00 00 0a 01 0a 20 20 '....A"........  '
+Checksum: 0x0a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

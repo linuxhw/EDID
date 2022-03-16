@@ -1,0 +1,85 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 57 00 00 00 00 00 01
+29 17 01 04 a5 33 1d 78 22 c1 b0 a3 54 4c 99 26
+0f 50 54 25 4b 00 71 4f 81 00 81 40 81 80 95 00
+a9 40 b3 00 81 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 3c 55 1e
+51 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+47 41 20 54 4f 20 48 44 4d 49 0a 20 00 00 00 fa
+00 71 40 81 0f 8b c0 8b c0 90 40 a9 c0 0a 00 be
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HJW
+    Model: 0
+    Serial Number: ...
+    Made in: week 41 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 51 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3281
+    Green: 0.2968, 0.5986
+    Blue : 0.1503, 0.0615
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (509 mm x 286 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 60-85 Hz V, 30-81 kHz H, max dotclock 150 MHz
+    Display Product Name: 'VGA TO HDMI'
+    Standard Timing Identifications:
+      GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
+      DMT 0x1d:  1280x800    74.934142 Hz  16:10    62.795 kHz    106.500000 MHz
+      GTF     :  1360x765    60.000341 Hz  16:9     47.520 kHz     84.396000 MHz
+      GTF     :  1360x765    60.000341 Hz  16:9     47.520 kHz     84.396000 MHz
+      DMT 0x2a:  1400x1050   59.978442 Hz   4:3     65.317 kHz    121.750000 MHz
+      DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+Checksum: 0xbe
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+  Standard Timing Identifications: Standard Timing 1360x765 has a dubious odd vertical resolution.
+  Standard Timing Identifications: Standard Timing 1360x765 has a dubious odd vertical resolution.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 162.000 MHz (Monitor: 150.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+
+EDID conformity: FAIL

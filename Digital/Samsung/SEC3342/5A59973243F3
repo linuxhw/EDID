@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 42 33 00 00 00 00
+00 14 01 03 80 20 13 78 0a 7d f5 91 57 57 8f 29
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 cf 1d 56 f4 50 00 16 30 30 20
+25 00 35 ae 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 2a c0 06 29 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe
+00 31 34 30 41 54 32 30 2d 37 30 31 0a 20 00 66
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 13122
+    Made in: 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 32 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5673, 0.3427
+    Green: 0.3427, 0.5595
+    Blue : 0.1630, 0.1201
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.996855 Hz 683:384   47.398 kHz     76.310000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback  164 Hpol N
+                 Vfront    2 Vsync   5 Vback   15 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 2a c0 06 29 00 '...........*..).'
+    Alphanumeric Data String: 'SAMSUNG'
+    Alphanumeric Data String: '140AT20-701'
+Checksum: 0x66
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 309x174 mm vs display size 320x190 mm.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 30 11 00 00 00 00
+14 19 01 04 95 1a 0e 78 02 14 35 92 55 53 95 29
+24 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 da 1d 56 e2 50 00 20 30 88 1e
+8c 00 00 90 10 00 00 18 00 00 00 fe 00 4e 31 31
+36 42 47 45 2d 45 42 32 43 31 00 00 00 fe 00 43
+4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 31 36 42 47 45 2d 45 42 32 43 31 00 b1
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 4400
+    Made in: week 20 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5703, 0.3330
+    Green: 0.3251, 0.5820
+    Blue : 0.1601, 0.1435
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.003141 Hz 683:384   48.003 kHz     76.420000 MHz (256 mm x 144 mm)
+                 Hfront  136 Hsync  30 Hback   60 Hpol N
+                 Vfront    8 Vsync  12 Vback   12 Vpol N
+    Alphanumeric Data String: 'N116BGE-EB2C1'
+    Alphanumeric Data String: 'CMN'
+    Alphanumeric Data String: 'N116BGE-EB2C1'
+Checksum: 0xb1
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

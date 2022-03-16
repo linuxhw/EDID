@@ -1,0 +1,57 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 84 3c 00 00 00 00 00
+28 1d 01 02 95 1f 11 78 0e df 8a a2 57 47 98 25
+0e 39 3b 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 e2 50 00 1e 30 30 20
+36 00 35 ad 10 00 00 19 00 00 00 fe 00 48 61 6e
+6e 53 74 61 72 0a 20 20 20 20 00 00 00 fe 00 54
+57 34 4c 42 5f 52 31 20 50 31 34 31 00 00 00 fe
+00 48 61 6e 6e 53 74 61 72 31 34 30 0a 20 00 46
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: SLD
+    Model: 60
+    Made in: week 40 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6357, 0.3408
+    Green: 0.2802, 0.5966
+    Blue : 0.1464, 0.0546
+    White: 0.2246, 0.2324
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.059067 Hz 683:384   47.927 kHz     76.300000 MHz (309 mm x 173 mm)
+                 Hfront   48 Hsync  32 Hback  146 Hpol N
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    Alphanumeric Data String: 'HannStar'
+    Alphanumeric Data String: 'TW4LB_R1 P141'
+    Alphanumeric Data String: 'HannStar140'
+Checksum: 0x46
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x14.
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+
+EDID conformity: FAIL

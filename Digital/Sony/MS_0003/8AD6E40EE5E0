@@ -1,0 +1,65 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 7f 03 00 03 00 00 00
+00 0c 01 03 80 1b 14 ff 2f 00 00 a0 57 49 9b 26
+10 48 4f 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 0e c8 10 00 00 18 00 00 00 fd 00 00 3c 00
+eb 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 53
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MS_
+    Model: 3
+    Serial Number: ...
+    Made in: 2002
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 27 cm x 20 cm
+    Gamma is defined in an extension block
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+    Supports GTF timings within operating range
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2851, 0.6054
+    Blue : 0.1484, 0.0625
+    White: 0.2812, 0.3085
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (270 mm x 200 mm)
+                 Hfront   24 Hsync 136 Hback  160 Hpol N
+                 Vfront    3 Vsync   6 Vback   29 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 0-60 Hz V, 0-235 kHz H, max dotclock 70 MHz
+    Empty Descriptor
+    Empty Descriptor
+Checksum: 0x53
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: Manufacturer name field contains garbage.
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

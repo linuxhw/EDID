@@ -1,0 +1,141 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 52 85 00 00 00 00 00 00
+00 0f 01 03 80 00 00 78 0a 0f 50 a5 55 46 99 24
+13 49 4b 2f cf 00 81 80 81 40 71 4f 61 59 45 59
+31 59 01 01 01 01 01 1d 80 18 71 1c 16 20 58 2c
+25 00 c4 8e 21 00 00 9e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 c4 8e 21 00 00 1e 00 00 00 fd 00 38
+55 1f 50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 54 43 4c 20 54 48 4f 4d 53 4f 4e 0a 20 01 f0
+
+02 03 19 70 46 05 04 0f 0e 07 06 23 09 07 07 83
+01 00 00 65 03 0c 00 10 00 8c 0a d0 8a 20 e0 2d
+10 10 3e 96 00 c4 8e 21 00 00 18 8c 0a d0 8a 20
+e0 2d 10 10 3e 96 ff 13 8e 21 00 00 18 8c 0a a0
+14 51 f0 16 00 26 7c 43 ff c4 8e 21 00 00 98 8c
+0a a0 14 51 f0 16 00 26 7c 43 ff 13 8e 21 00 00
+98 00 00 00 ff 00 30 30 30 30 30 30 30 30 30 30
+30 30 30 00 00 00 00 00 00 00 00 00 00 00 00 53
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: TTE
+    Model: 0
+    Made in: 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6445, 0.3320
+    Green: 0.2763, 0.6005
+    Blue : 0.1416, 0.0751
+    White: 0.2851, 0.2929
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+    DMT 0x13:  1024x768    84.996690 Hz   4:3     68.677 kHz     94.500000 MHz
+    DMT 0x0c:   800x600    85.061274 Hz   4:3     53.674 kHz     56.250000 MHz
+    DMT 0x07:   640x480    85.008312 Hz   4:3     43.269 kHz     36.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 56-85 Hz V, 31-80 kHz H, max dotclock 140 MHz
+    Display Product Name: 'TCL THOMSON'
+  Extension blocks: 1
+Checksum: 0xf0
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  15:  1440x480    59.940060 Hz  16:9     31.469 kHz     54.000000 MHz
+    VIC  14:  1440x480    59.940060 Hz   4:3     31.469 kHz     54.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (531 mm x 398 mm)
+                 Hfront  784 Hsync 830 Hback -1476 Hpol N
+                 Vfront   57 Vsync  54 Vback  -66 Vpol N
+    DTD 5:  1440x480i   59.940060 Hz   3:1     15.734 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront  806 Hsync 892 Hback -1422 Hpol N
+                 Vfront   52 Vsync  51 Vback  -81 Vpol N Vfront +0.5 Odd Field
+                 Vfront   52 Vsync  51 Vback  -81 Vpol N Vback  +0.5 Even Field
+    DTD 6:  1440x480i   59.940060 Hz   3:1     15.734 kHz     27.000000 MHz (531 mm x 398 mm)
+                 Hfront  806 Hsync 892 Hback -1422 Hpol N
+                 Vfront   52 Vsync  51 Vback  -81 Vpol N Vfront +0.5 Odd Field
+                 Vfront   52 Vsync  51 Vback  -81 Vpol N Vback  +0.5 Even Field
+    Display Product Serial Number: ...
+Checksum: 0x53
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
+  Detailed Timing Descriptor #4: DTD is similar but not identical to VIC 2.
+  Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 6.
+  Detailed Timing Descriptor #6: DTD is similar but not identical to VIC 6.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #4: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #4: 0 or negative vertical back porch.
+  Detailed Timing Descriptor #5: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #5: 0 or negative vertical back porch.
+  Detailed Timing Descriptor #6: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #6: 0 or negative vertical back porch.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.734 - 79.976 kHz (Monitor: 31.000 - 80.000 kHz)
+  Base EDID: The DTD image sizes all fit inside 255x255cm, but no display size was set.
+
+EDID conformity: FAIL

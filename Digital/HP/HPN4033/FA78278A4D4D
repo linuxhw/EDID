@@ -1,0 +1,65 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 0e 33 40 01 00 00 00
+08 1e 01 04 a5 3c 22 78 3a 1e 45 aa 54 4d a0 26
+0e 50 54 21 08 00 d1 c0 a9 c0 95 00 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 fd 00 38 4b 1e
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 41 4c 4c 2d 69 6e 2d 4f 6e 65 00 00 00 ff
+00 4c 4d 32 37 30 57 46 41 20 53 53 41 31 00 0f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HPN
+    Model: 16435
+    Serial Number: ...
+    Made in: week 8 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6640, 0.3291
+    Green: 0.3037, 0.6269
+    Blue : 0.1494, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 170 MHz
+    Display Product Name: 'HP ALL-in-One'
+    Display Product Serial Number: ...
+Checksum: 0x0f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+
+EDID conformity: FAIL

@@ -1,0 +1,94 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 93 c6 00 00 00 00
+00 1e 01 04 b5 1e 13 78 03 2a 9e ae 51 43 b1 24
+0e 54 5a 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 e4 e8 00 a0 f0 60 54 90 30 20
+35 00 2d bc 10 00 00 18 00 00 00 fd 00 30 3c 96
+96 3c 01 0a 20 20 20 20 20 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 34 30 5a 41 4e 30 32 2e 31 20 0a 01 40
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 6b 6b 23 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 99
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 50835
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6796, 0.3183
+    Green: 0.2636, 0.6933
+    Blue : 0.1425, 0.0556
+    White: 0.3310, 0.3535
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2400   60.004026 Hz   8:5    149.050 kHz    596.200000 MHz (301 mm x 188 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   76 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-60 Hz V, 150-150 kHz H, max dotclock 600 MHz
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B140ZAN02.1 '
+  Extension blocks: 1
+Checksum: 0x40
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 107 (507.620 cd/m^2)
+    Desired content max frame-average luminance: 107 (507.620 cd/m^2)
+    Desired content min luminance: 35 (0.096 cd/m^2)
+Checksum: 0x99
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 149.050 - 149.050 kHz (Monitor: 150.000 - 150.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+EDID conformity: FAIL

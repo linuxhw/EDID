@@ -1,0 +1,55 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 ef 09 00 00 00 00
+35 1e 01 04 a5 22 13 78 03 5a c5 95 5c 5a 91 29
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 04 3a 80 36 71 38 1e 40 30 20
+36 00 58 c2 10 00 00 1a 6a 2e 80 36 71 38 1e 40
+30 20 36 00 58 c2 10 00 00 1a 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 54 31 35 36 46 48 4d 2d 4e 36 31 0a 00 41
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2543
+    Made in: week 53 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5830, 0.3603
+    Green: 0.3535, 0.5683
+    Blue : 0.1630, 0.1289
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000808 Hz  16:9     66.601 kHz    148.520000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  230 Hpol P
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    DTD 2:  1920x1080   48.002262 Hz  16:9     53.283 kHz    118.820000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  230 Hpol P
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    Alphanumeric Data String: 'BOE CQ'
+    Alphanumeric Data String: 'NT156FHM-N61'
+Checksum: 0x41
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

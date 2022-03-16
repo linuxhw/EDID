@@ -1,0 +1,52 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 83 6d 1c b2 27 46 14
+0d 0f 01 03 80 21 15 78 1a 2f d6 97 54 4c 8c 23
+21 4f 54 00 00 00 b3 00 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 88 2e 90 a0 60 1a 1e 40 30 20
+26 00 4b cf 10 00 00 19 00 00 00 0f 00 20 20 20
+20 20 20 20 20 50 b7 02 32 00 00 00 00 fe 00 20
+20 20 20 20 48 69 74 61 63 68 69 0a 00 00 00 fe
+00 54 58 33 39 44 39 39 56 43 31 46 41 0a 00 83
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HTC
+    Model: 7277
+    Serial Number: ...
+    Made in: week 13 of 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    Undefined display color type
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3300
+    Green: 0.2998, 0.5498
+    Blue : 0.1396, 0.1298
+    White: 0.3095, 0.3300
+  Established Timings I & II: none
+  Standard Timings:
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   59.943639 Hz   8:5     64.739 kHz    119.120000 MHz (331 mm x 207 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    2 Vsync   6 Vback   22 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 20 20 20 20 20 20 20 20 50 b7 02 32 00 '...        P..2.'
+    Alphanumeric Data String: '     Hitachi'
+    Alphanumeric Data String: 'TX39D99VC1FA'
+Checksum: 0x83
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

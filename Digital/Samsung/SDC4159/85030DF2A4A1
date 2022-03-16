@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 83 59 41 00 00 00 00
+00 18 01 04 a5 1d 11 78 0a 36 25 93 56 55 93 29
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d2 37 80 a2 70 38 40 40 30 20
+25 00 25 a5 10 00 00 19 37 25 80 a2 70 38 40 40
+30 20 25 00 25 a5 10 00 00 19 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 3f f4 0a 3c 96 18 15 27 6e 00 00 00 00 5d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 16729
+    Made in: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5742, 0.3388
+    Green: 0.3330, 0.5761
+    Blue : 0.1601, 0.1152
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.996440 Hz  16:9     68.636 kHz    142.900000 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   82 Hpol N
+                 Vfront    2 Vsync   5 Vback   57 Vpol N
+    DTD 2:  1920x1080   39.999026 Hz  16:9     45.759 kHz     95.270000 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   82 Hpol N
+                 Vfront    2 Vsync   5 Vback   57 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 3f f4 0a 3c 96 18 15 27 6e 00 00 00 '....?..<...'n...'
+Checksum: 0x5d
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,59 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c ca 14 01 01 01 01
+1c 11 01 03 68 47 28 78 0a 28 8e 9e 55 48 97 24
+16 48 4b 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 c6 90 21 00 00 18 66 21 50 b0 51 00 1b 30
+40 70 36 00 c4 8e 21 00 00 18 00 00 00 fc 00 50
+48 49 4c 49 50 53 0a 20 20 20 20 20 00 00 00 fd
+00 3c 55 1f 50 0a 00 0a 20 20 20 20 20 20 00 e2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PHL
+    Model: 5322
+    Serial Number: ...
+    Made in: week 28 of 2007
+  Basic Display Parameters & Features:
+    Analog display
+    Input voltage level: 0.7/0.7 V
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 71 cm x 40 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6171, 0.3339
+    Green: 0.2832, 0.5898
+    Blue : 0.1425, 0.0859
+    White: 0.2841, 0.2949
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (710 mm x 400 mm)
+                 Hfront   24 Hsync 136 Hback  160 Hpol N
+                 Vfront    3 Vsync   6 Vback   29 Vpol N
+    DTD 2:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (708 mm x 398 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol N
+                 Vfront    3 Vsync   6 Vback   18 Vpol N
+    Display Product Name: 'PHILIPS'
+    Display Range Limits:
+      Monitor ranges (GTF): 60-85 Hz V, 31-80 kHz H, max dotclock 100 MHz
+Checksum: 0xe2
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x27.
+
+EDID conformity: PASS

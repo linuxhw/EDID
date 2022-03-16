@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 a9 00 41 00 00 00 00
+ff 18 01 04 a5 15 0d 78 ea 5d 01 9a 5b 4e 95 27
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 38 40 80 e0 70 b0 4e 40 50 20
+86 04 d8 87 00 00 00 1e 38 40 80 e0 70 b0 8d 41
+50 20 86 04 d8 87 00 00 00 1e 00 00 00 0f 00 30
+3c 4a 4f 11 01 28 00 00 00 00 00 00 00 00 00 fe
+00 56 56 58 31 30 46 30 34 36 4a 30 30 0a 00 ee
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: MEI
+    Model: 16640
+    Model year: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 21 cm x 13 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6025, 0.3564
+    Green: 0.3076, 0.5830
+    Blue : 0.1523, 0.1445
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.999299 Hz   8:5     76.679 kHz    164.400000 MHz (216 mm x 135 mm)
+                 Hfront   80 Hsync  32 Hback  112 Hpol P
+                 Vfront   24 Vsync   6 Vback   48 Vpol P
+    DTD 2:  1920x1200   48.014467 Hz   8:5     76.679 kHz    164.400000 MHz (216 mm x 135 mm)
+                 Hfront   80 Hsync  32 Hback  112 Hpol P
+                 Vfront   24 Vsync   6 Vback  367 Vpol P
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 30 3c 4a 4f 11 01 28 00 00 00 00 00 00 '...0<JO..(......'
+    Alphanumeric Data String: 'VVX10F046J00'
+Checksum: 0xee
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

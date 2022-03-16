@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 68 10 00 00 00 00
+1e 1a 01 04 a5 1a 11 78 02 a0 f5 93 50 54 8e 27
+14 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9a 3d 80 b4 70 b0 32 40 44 2c
+46 00 08 a6 10 00 00 18 48 31 80 b4 70 b0 32 40
+44 2c 46 00 08 a6 10 00 00 18 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 52 36 39 31 36 35 39 34 46 45 5a 5a 00 00 01
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 4200
+    Made in: week 30 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 26 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5761, 0.3144
+    Green: 0.3281, 0.5546
+    Blue : 0.1552, 0.0810
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.076190 Hz   8:5     75.095 kHz    157.700000 MHz (264 mm x 166 mm)
+                 Hfront   68 Hsync  44 Hback   68 Hpol N
+                 Vfront    4 Vsync   6 Vback   40 Vpol N
+    DTD 2:  1920x1200   48.060952 Hz   8:5     60.076 kHz    126.160000 MHz (264 mm x 166 mm)
+                 Hfront   68 Hsync  44 Hback   68 Hpol N
+                 Vfront    4 Vsync   6 Vback   40 Vpol N
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'R6916594FEZZ'
+Checksum: 0x01
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

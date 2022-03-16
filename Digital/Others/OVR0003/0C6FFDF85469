@@ -1,0 +1,90 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 3e d2 03 00 00 00 00 00
+0a 18 01 03 80 00 00 78 e2 60 b1 aa 55 40 b6 23
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 72 40 38 3a 40 80 0d 70 21 0a
+16 00 47 7e 00 00 00 1a 00 00 00 fc 00 52 69 66
+74 20 44 4b 32 0a 20 20 20 20 00 00 00 ff 00 48
+31 44 45 4d 34 34 36 4b 48 43 38 4b 00 00 00 fd
+00 38 4d 1e 96 11 00 0a 20 20 20 20 20 20 01 36
+
+02 03 04 03 8e 33 38 3a 40 80 0d 70 21 0a 16 00
+47 7e 00 00 00 1a de 3d 38 3a 40 80 0d 70 21 0a
+16 00 47 7e 00 00 00 1a d9 33 38 3a 40 b4 18 30
+21 0a c6 00 47 7e 00 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f0
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: OVR
+    Model: 3
+    Made in: week 10 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Monochrome or grayscale display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6650, 0.3339
+    Green: 0.2500, 0.7109
+    Blue : 0.1386, 0.0498
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1080x1920   74.999295 Hz   9:16   144.974 kHz    164.980000 MHz (71 mm x 126 mm)
+                 Hfront   33 Hsync  10 Hback   15 Hpol P
+                 Vfront    1 Vsync   6 Vback    6 Vpol N
+    Display Product Name: 'Rift DK2'
+    Display Product Serial Number: ...
+    Display Range Limits:
+      Monitor ranges (GTF): 56-77 Hz V, 30-150 kHz H, max dotclock 170 MHz
+  Extension blocks: 1
+Checksum: 0x36
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 3
+  Detailed Timing Descriptors:
+    DTD 2:  1080x1920   59.997618 Hz   9:16   115.975 kHz    131.980000 MHz (71 mm x 126 mm)
+                 Hfront   33 Hsync  10 Hback   15 Hpol P
+                 Vfront    1 Vsync   6 Vback    6 Vpol N
+    DTD 3:  1080x1920   71.998960 Hz   9:16   139.174 kHz    158.380000 MHz (71 mm x 126 mm)
+                 Hfront   33 Hsync  10 Hback   15 Hpol P
+                 Vfront    1 Vsync   6 Vback    6 Vpol N
+    DTD 4:  1080x948   119.994286 Hz  90:79   116.634 kHz    132.730000 MHz (71 mm x 126 mm)
+                 Hfront   33 Hsync  10 Hback   15 Hpol P
+                 Vfront   12 Vsync   6 Vback    6 Vpol N
+Checksum: 0xf0
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.998 - 119.994 Hz (Monitor: 56.000 - 77.000 Hz)
+  Base EDID: The DTD image sizes all fit inside 255x255cm, but no display size was set.
+
+EDID conformity: FAIL

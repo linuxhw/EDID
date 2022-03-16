@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 2c 82 30 11 00 00 00 00
+31 1e 01 04 95 1a 0e 78 02 e1 c1 94 5b 59 94 29
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3e 1c 56 a0 50 00 16 30 28 20
+55 00 00 90 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 4b 44 31 31 36 4e 32 39 33 30 44 30 37 00 e8
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: KDB
+    Model: 4400
+    Made in: week 49 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5810, 0.3574
+    Green: 0.3476, 0.5791
+    Blue : 0.1630, 0.1328
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.973124 Hz 683:384   47.379 kHz     72.300000 MHz (256 mm x 144 mm)
+                 Hfront   40 Hsync  32 Hback   88 Hpol N
+                 Vfront    5 Vsync   5 Vback   12 Vpol N
+    Empty Descriptor
+    Empty Descriptor
+    Alphanumeric Data String: 'KD116N2930D07'
+Checksum: 0xe8
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

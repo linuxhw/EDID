@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 14 be 1b 00 00 00 00
+1a 13 01 03 80 16 0c 78 0a c3 4d 94 57 4f 8c 26
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 94 11 00 b0 40 58 19 20 30 20
+36 00 df 7d 00 00 00 1a 94 11 00 b0 40 58 19 20
+30 20 36 00 df 7d 00 00 00 1a 00 00 00 fe 00 4a
+30 32 34 54 80 31 30 31 4e 42 31 20 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 01 0a 20 20 00 2a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CPT
+    Model: 7102
+    Made in: week 26 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 22 cm x 12 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5810, 0.3398
+    Green: 0.3085, 0.5498
+    Blue : 0.1494, 0.1523
+    White: 0.3154, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x600    60.000000 Hz 128:75    37.500 kHz     45.000000 MHz (223 mm x 125 mm)
+                 Hfront   48 Hsync  32 Hback   96 Hpol P
+                 Vfront    3 Vsync   6 Vback   16 Vpol N
+    DTD 2:  1024x600    60.000000 Hz 128:75    37.500 kHz     45.000000 MHz (223 mm x 125 mm)
+                 Hfront   48 Hsync  32 Hback   96 Hpol P
+                 Vfront    3 Vsync   6 Vback   16 Vpol N
+    Alphanumeric Data String: 'J024T'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20 '..............  '
+Checksum: 0x2a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

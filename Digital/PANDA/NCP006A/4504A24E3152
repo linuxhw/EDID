@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 70 6a 00 00 00 00 00
+16 1e 01 04 a5 1e 13 78 02 ee 96 a3 54 4c 99 26
+0f 4e 51 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 f4 69 00 a0 a0 40 3e 60 30 20
+35 00 2e bd 10 00 00 18 c3 54 00 a0 a0 40 3e 60
+30 20 35 00 2e bd 10 00 00 18 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 4c 4d 31 34 30 47 46 31 4c 30 32 0a 20 00 75
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: NCP
+    Model: 106
+    Made in: week 22 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3056, 0.3183
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   60.000354 Hz   8:5     99.721 kHz    271.240000 MHz (302 mm x 189 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD 2:  2560x1600   47.999841 Hz   8:5     79.776 kHz    216.990000 MHz (302 mm x 189 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    Dummy Descriptor:
+    Alphanumeric Data String: 'LM140GF1L02'
+Checksum: 0x75
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 df 05 00 00 00 00
+01 16 01 04 95 1d 10 78 0a 02 a0 96 59 58 90 28
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3e 1c 56 a0 50 00 16 30 30 20
+36 00 25 a5 10 00 00 1a 9e 16 56 a0 50 00 16 30
+30 20 36 00 25 a5 10 00 00 1a 00 00 00 fe 00 42
+4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe
+00 48 42 31 33 33 57 58 31 2d 34 30 32 0a 00 30
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 1503
+    Made in: week 1 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 29 cm x 16 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5859, 0.3476
+    Green: 0.3437, 0.5644
+    Blue : 0.1582, 0.1152
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.973124 Hz 683:384   47.379 kHz     72.300000 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   13 Vpol N
+    DTD 2:  1366x768    48.028269 Hz 683:384   37.942 kHz     57.900000 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   13 Vpol N
+    Alphanumeric Data String: 'BOE HF'
+    Alphanumeric Data String: 'HB133WX1-402'
+Checksum: 0x30
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,131 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2e 06 02 01 01 01 01
+ff 14 01 03 80 5d 34 78 0a fe db a2 55 48 9d 24
+10 47 4a 21 08 00 8b c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 01 1d 80 18 71 1c 16 20 58 2c
+25 00 a2 0b 32 00 00 9e 66 21 50 b0 51 00 1b 30
+40 70 36 00 a2 0b 32 00 00 1e 00 00 00 fc 00 53
+41 4e 59 4f 2d 54 56 0a 20 20 20 20 00 00 00 fd
+00 37 3e 0f 31 09 00 0a 20 20 20 20 20 20 01 c8
+
+02 03 21 71 47 85 01 02 03 04 06 07 23 09 07 07
+83 01 00 00 6c 03 0c 00 10 00 00 00 c0 15 15 1f
+1f 01 1d 00 72 51 d0 1e 20 6e 28 55 00 a2 0b 32
+00 00 1e 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 a2
+0b 32 00 00 18 8c 0a d0 8a 20 e0 2d 10 10 3e 96
+00 b9 0a 22 00 00 18 8c 0a a0 14 51 f0 16 00 26
+7c 43 00 a2 0b 32 00 00 98 8c 0a a0 14 51 f0 16
+00 26 7c 43 00 b9 0a 22 00 00 98 00 00 00 00 28
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SAN
+    Model: 518
+    Serial Number: ...
+    Model year: 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 93 cm x 52 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6357, 0.3349
+    Green: 0.2841, 0.6152
+    Blue : 0.1435, 0.0634
+    White: 0.2792, 0.2919
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    GTF     :  1360x765    60.000341 Hz  16:9     47.520 kHz     84.396000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (930 mm x 523 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 2:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (930 mm x 523 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    Display Product Name: 'SANYO-TV'
+    Display Range Limits:
+      Monitor ranges (GTF): 55-62 Hz V, 15-49 kHz H, max dotclock 90 MHz
+  Extension blocks: 1
+Checksum: 0xc8
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (native)
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Maximum TMDS clock: 0 MHz
+    Video latency: 43 ms
+    Audio latency: 43 ms
+    Interlaced video latency: 63 ms
+    Interlaced audio latency: 63 ms
+  Detailed Timing Descriptors:
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (930 mm x 523 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (930 mm x 523 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (697 mm x 522 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 6:  1440x480i   59.940060 Hz   3:1     15.734 kHz     27.000000 MHz (930 mm x 523 mm)
+                 Hfront   38 Hsync 124 Hback  114 Hpol N
+                 Vfront    4 Vsync   3 Vback   15 Vpol N Vfront +0.5 Odd Field
+                 Vfront    4 Vsync   3 Vback   15 Vpol N Vback  +0.5 Even Field
+    DTD 7:  1440x480i   59.940060 Hz   3:1     15.734 kHz     27.000000 MHz (697 mm x 522 mm)
+                 Hfront   38 Hsync 124 Hback  114 Hpol N
+                 Vfront    4 Vsync   3 Vback   15 Vpol N Vfront +0.5 Odd Field
+                 Vfront    4 Vsync   3 Vback   15 Vpol N Vback  +0.5 Even Field
+Checksum: 0x28
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+EDID:
+  CTA-861: Multiple native interlaced timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: EDID 1.3 does not support week 0xff.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  CTA-861: A native interlaced timing is present, but not a native progressive timing.
+
+EDID conformity: FAIL

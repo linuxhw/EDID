@@ -1,0 +1,131 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 25 e4 23 1b 00 00 00 00
+32 1e 01 04 b5 3c 22 78 3a 44 41 a4 57 4d 9f 27
+0e 50 54 21 08 00 81 80 81 c0 a9 c0 d1 c0 e1 c0
+01 01 01 01 01 01 25 cc 00 50 f0 70 3e 80 08 20
+08 0c 56 50 21 00 00 1a a6 64 00 50 f0 70 1f 80
+08 20 18 04 56 50 21 00 00 1a 00 00 00 fd 00 1d
+3d 1e 86 3c 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 45 58 2d 4c 44 34 4b 32 37 31 44 0a 20 01 7b
+
+02 03 1a 70 4a 01 02 03 04 10 48 4a 5d 5f 61 23
+09 07 07 83 01 00 00 e2 00 ca 25 cc 00 50 f0 70
+3e 80 08 20 08 0c 56 50 21 00 00 1a a6 64 00 50
+f0 70 1f 80 08 20 18 04 56 50 21 00 00 1a 4d d0
+00 a0 f0 70 3e 80 30 20 35 00 56 50 21 00 00 1a
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 b9
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: IOD
+    Model: 6947
+    Made in: week 50 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6416, 0.3398
+    Green: 0.3017, 0.6210
+    Blue : 0.1533, 0.0546
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x54:  2048x1152   60.000000 Hz  16:9     72.000 kHz    162.000000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.999495 Hz  16:9    133.319 kHz    522.610000 MHz (598 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront   48 Vsync   8 Vback    6 Vpol N
+    DTD 2:  3840x2160   29.999814 Hz  16:9     65.730 kHz    257.660000 MHz (598 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront   17 Vsync   8 Vback    6 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 29-61 Hz V, 30-134 kHz H, max dotclock 600 MHz
+    Display Product Name: 'EX-LD4K271D'
+  Extension blocks: 1
+Checksum: 0x7b
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  72:  1920x1080   24.000000 Hz  64:27    27.000 kHz     74.250000 MHz
+    VIC  74:  1920x1080   30.000000 Hz  64:27    33.750 kHz     74.250000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Detailed Timing Descriptors:
+    DTD 3:  3840x2160   59.999495 Hz  16:9    133.319 kHz    522.610000 MHz (598 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront   48 Vsync   8 Vback    6 Vpol N
+    DTD 4:  3840x2160   29.999814 Hz  16:9     65.730 kHz    257.660000 MHz (598 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront   17 Vsync   8 Vback    6 Vpol N
+    DTD 5:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+Checksum: 0xb9
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 1 is the preferred timing, overriding the first detailed timings. Is this intended?
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 60.317 Hz (Monitor: 29.000 - 61.000 Hz)
+    Horizontal Freq: 27.000 - 135.000 kHz (Monitor: 30.000 - 134.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
+
+EDID conformity: FAIL

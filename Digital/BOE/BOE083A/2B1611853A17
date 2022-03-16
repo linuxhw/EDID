@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 3a 08 00 00 00 00
+01 1d 01 04 95 22 13 78 02 23 30 96 5d 59 93 29
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3a 38 80 de 70 38 28 40 30 20
+36 00 58 c1 10 00 00 1a fb 2c 80 de 70 38 28 40
+30 20 36 00 58 c1 10 00 00 1a 00 00 00 fe 00 48
+58 33 4b 38 80 4e 56 31 35 54 30 36 00 00 00 00
+00 00 41 01 96 00 10 00 00 0a 01 0a 20 20 00 65
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2106
+    Made in: week 1 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5859, 0.3652
+    Green: 0.3476, 0.5771
+    Blue : 0.1601, 0.1240
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.999000 Hz  16:9     67.199 kHz    143.940000 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback  142 Hpol P
+                 Vfront    3 Vsync   6 Vback   31 Vpol N
+    DTD 2:  1920x1080   47.998366 Hz  16:9     53.758 kHz    115.150000 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback  142 Hpol P
+                 Vfront    3 Vsync   6 Vback   31 Vpol N
+    Alphanumeric Data String: 'HX3K8'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 01 96 00 10 00 00 0a 01 0a 20 20 '....A.........  '
+Checksum: 0x65
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,0 +1,171 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 b0 06 ff ff ff ff
+ff 1c 01 04 b5 3c 22 78 3a 1d f1 ae 4f 43 aa 26
+0a 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 56 50 21 00 00 1a 00 00 00 ff 00 23 41 53
+4e 47 42 67 32 58 64 6f 6a 64 00 00 00 fd 08 18
+90 34 44 7f 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 63 65 72 20 58 42 32 37 33 4b 0a 20 02 e1
+
+02 03 20 f1 23 09 07 01 83 01 00 00 65 4b 04 00
+01 01 e3 05 c0 00 e2 00 6a e6 06 05 01 61 5a 27
+a3 66 00 a0 f0 70 1f 80 30 20 35 00 56 50 21 00
+00 1a ef 51 00 a0 f0 70 19 80 30 20 35 00 56 50
+21 00 00 1a 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 67
+
+70 13 79 03 00 0f 00 0a a4 14 0e 0e 07 01 20 45
+00 00 02 01 0d 31 de 4a 4f 3a 24 aa 6a c2 0a 01
+45 54 03 01 50 3a 9b 01 04 ff 0e 4f 00 07 80 1f
+00 6f 08 4d 00 02 00 04 00 15 4c 01 04 ff 0e 3b
+00 07 80 1f 00 6f 08 40 00 02 00 04 00 bc 14 01
+04 ff 0e 3b 00 07 80 1f 00 6f 08 38 00 02 00 04
+00 79 ed 01 04 ff 0e 3b 00 07 80 1f 00 6f 08 59
+00 02 00 04 00 00 00 00 00 00 00 00 00 00 d5 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: ACR
+    Model: 1712
+    Serial Number: ...
+    Model year: 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3095
+    Green: 0.2646, 0.6650
+    Blue : 0.1513, 0.0419
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    Display Product Serial Number: ...
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 24-144 Hz V, 52-323 kHz H, max dotclock 1270 MHz
+    Display Product Name: 'Acer XB273K'
+  Extension blocks: 2
+Checksum: 0xe1
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (NVIDIA), OUI 00-04-4B:
+    01 01                                           '..'
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 97 (408.759 cd/m^2)
+    Desired content max frame-average luminance: 90 (351.250 cd/m^2)
+    Desired content min luminance: 39 (0.096 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  3840x2160   29.980602 Hz  16:9     65.688 kHz    262.750000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    DTD 3:  3840x2160   23.998856 Hz  16:9     52.438 kHz    209.750000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   17 Vpol N
+Checksum: 0x67
+
+----------------
+
+Block 2, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Standalone display device
+  Display Interface Data Block:
+    Interface Type: DisplayPort
+    Number of Links: 4
+    Interface Standard Version: 1.4
+    Supported bpc for RGB encoding: 8, 10, 12
+    Supported bpc for YCbCr 4:4:4 encoding: 8, 10, 12
+    Supported bpc for YCbCr 4:2:2 encoding: 8, 10, 12
+    Supported Content Protection: HDCP 2.0
+    Spread Spectrum: Down Spread 0.5%
+  Color Characteristics Data Block:
+    Uses spatial color
+    Uses 1931 CIE (x, y) coordinates
+    Primary #0: (0.6792, 0.3096)
+    Primary #1: (0.2642, 0.6646)
+    Primary #2: (0.1509, 0.0420)
+    White point #0: (0.3127, 0.3291)
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  3840x2160  119.999407 Hz  16:9    268.559 kHz   1052.750000 MHz (aspect 16:9, no 3D stereo)
+               Hfront    8 Hsync  32 Hback   40 Hpol P
+               Vfront    3 Vsync   5 Vback   70 Vpol N
+    DTD:  3840x2160   97.970614 Hz  16:9    217.985 kHz    850.140000 MHz (aspect 16:9, no 3D stereo)
+               Hfront    8 Hsync  32 Hback   20 Hpol P
+               Vfront    3 Vsync   5 Vback   57 Vpol N
+    DTD:  3840x2160   81.936782 Hz  16:9    181.654 kHz    708.450000 MHz (aspect 16:9, no 3D stereo)
+               Hfront    8 Hsync  32 Hback   20 Hpol P
+               Vfront    3 Vsync   5 Vback   49 Vpol N
+    DTD:  3840x2160  143.965812 Hz  16:9    323.923 kHz   1263.300000 MHz (aspect 16:9, no 3D stereo)
+               Hfront    8 Hsync  32 Hback   20 Hpol P
+               Vfront    3 Vsync   5 Vback   82 Vpol N
+  Checksum: 0xd5
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 323.923 kHz (Monitor: 52.000 - 323.000 kHz)
+
+Failures:
+
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL
