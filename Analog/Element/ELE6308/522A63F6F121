@@ -1,67 +1,68 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001585086300000000
-1f1b0103685932780a1990a755469824
-10494ba1090081809500a9c001010101
-010101010101023a801871382d40582c
-45004bba1000001e662156b051001b30
-407036004bba1000001e000000fc0057
-44333246424c313030310a20000000fd
-0038460e5b0d000a20202020202000b1
+00 ff ff ff ff ff ff 00 15 85 08 63 00 00 00 00
+1f 1b 01 03 68 59 32 78 0a 19 90 a7 55 46 98 24
+10 49 4b a1 09 00 81 80 95 00 a9 c0 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 4b ba 10 00 00 1e 66 21 56 b0 51 00 1b 30
+40 70 36 00 4b ba 10 00 00 1e 00 00 00 fc 00 57
+44 33 32 46 42 4c 31 30 30 31 0a 20 00 00 00 fd
+00 38 46 0e 5b 0d 00 0a 20 20 20 20 20 20 00 b1
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   15 85 08 63 00 00 00 00 1f 1b
-version:         01 03
-basic params:    68 59 32 78 0a
-chroma info:     19 90 a7 55 46 98 24 10 49 4b
-established:     a1 09 00
-standard:        81 80 95 00 a9 c0 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 4b ba 10 00 00 1e
-descriptor 2:    66 21 56 b0 51 00 1b 30 40 70 36 00 4b ba 10 00 00 1e
-descriptor 3:    00 00 00 fc 00 57 44 33 32 46 42 4c 31 30 30 31 0a 20
-descriptor 4:    00 00 00 fd 00 38 46 0e 5b 0d 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        b1
+----------------
 
-EDID version: 1.3
-Manufacturer: ELE Model 6308 Serial Number --
-Made in week 31 of 2017
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 89 cm x 50 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6523, 0.3330
-  Green: 0.2753, 0.5947
-  Blue:  0.1425, 0.0634
-  White: 0.2851, 0.2929
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1600x900@60Hz 16:9
-Detailed mode: Clock 148.500 MHz, 331 mm x 186 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 85.500 MHz, 331 mm x 186 mm
-               1366 1430 1542 1798 hborder 0
-                768  771  777  795 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 47552 Hz
-Monitor name: WD32FBL1001
-Monitor ranges (GTF): 56-70Hz V, 14-91kHz H, max dotclock 130MHz
-Checksum: 0xb1 (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 59 - 75 Hz
-  Horizontal Freq: 31469 - 80000 Hz
-  Maximum Clock: 148.500 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ELE
+    Model: 25352
+    Made in: week 31 of 2017
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.000 : 0.700 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 89 cm x 50 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6523, 0.3330
+    Green: 0.2753, 0.5947
+    Blue : 0.1425, 0.0634
+    White: 0.2851, 0.2929
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (331 mm x 186 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1366x768    59.814889 Hz 683:384   47.553 kHz     85.500000 MHz (331 mm x 186 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    Display Product Name: 'WD32FBL1001'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-70 Hz V, 14-91 kHz H, max dotclock 130 MHz
+Checksum: 0xb1
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 331x186 mm vs display size 890x500 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 331x186 mm vs display size 890x500 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.815 - 75.025 Hz (Monitor: 56.000 - 70.000 Hz)
+    Maximum Clock: 148.500 MHz (Monitor: 130.000 MHz)
+
+EDID conformity: FAIL

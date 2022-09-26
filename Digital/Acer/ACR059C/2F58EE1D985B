@@ -1,93 +1,100 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0004729c05adbc7083
-251c0103803d23780eee91a3544c9926
-0f505421080001010101010101010101
-010101010101023a801871382d40582c
-450060622100001e000000ff00543950
-4141303031343230300a000000fd0018
-3c1e5a1e010a202020202020000000fc
-00416365722058423237320a2020013f
-02031ac147901f041303120123090701
-8301000065030c001000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000c1
+00 ff ff ff ff ff ff 00 04 72 9c 05 ad bc 70 83
+25 1c 01 03 80 3d 23 78 0e ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 60 62 21 00 00 1e 00 00 00 ff 00 54 39 50
+41 41 30 30 31 34 32 30 30 0a 00 00 00 fd 00 18
+3c 1e 5a 1e 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 63 65 72 20 58 42 32 37 32 0a 20 20 01 3f
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   04 72 9c 05 ad bc 70 83 25 1c
-version:         01 03
-basic params:    80 3d 23 78 0e
-chroma info:     ee 91 a3 54 4c 99 26 0f 50 54
-established:     21 08 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 60 62 21 00 00 1e
-descriptor 2:    00 00 00 ff 00 54 39 50 41 41 30 30 31 34 32 30 30 0a
-descriptor 3:    00 00 00 fd 00 18 3c 1e 5a 1e 01 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 41 63 65 72 20 58 42 32 37 32 0a 20 20
-extensions:      01
-checksum:        3f
+02 03 1a c1 47 90 1f 04 13 03 12 01 23 09 07 01
+83 01 00 00 65 03 0c 00 10 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c1
 
-EDID version: 1.3
-Manufacturer: ACR Model 59c Serial Number --
-Made in week 37 of 2018
-Digital display
-Maximum image size: 61 cm x 35 cm
-Gamma: 2.20
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1503, 0.0595
-  White: 0.3125, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-Detailed mode: Clock 148.500 MHz, 608 mm x 354 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Serial number: --
-Monitor ranges (bare limits): 24-60Hz V, 30-90kHz H, max dotclock 300MHz
-Monitor name: Acer XB272
-Has 1 extension blocks
-Checksum: 0x3f (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-22 bytes of CTA data
-  Video data block
-    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ACR
+    Model: 1436
+    Serial Number: ...
+    Made in: week 37 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 61 cm x 35 cm
+    Gamma: 2.20
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (608 mm x 354 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: ...
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 24-60 Hz V, 30-90 kHz H, max dotclock 300 MHz
+    Display Product Name: 'Acer XB272'
+  Extension blocks: 1
+Checksum: 0x3f
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
-Underscans PC formats by default
-Basic audio support
-1 native detailed modes
-Checksum: 0xc1 (valid)
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+Checksum: 0xc1
 
-EDID block does not conform at all!
-	Both the serial number and the serial string are set
-	Detailed blocks filled with garbage
-	Range descriptor contains garbage
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+EDID conformity: FAIL

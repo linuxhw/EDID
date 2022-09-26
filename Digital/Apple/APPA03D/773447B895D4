@@ -1,72 +1,94 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006103da000000000
-101b0104b51d1278020fb1ae5243b026
-0d505400000001010101010101010101
-010101010101d9650050a0402e600820
-08081eb31000001a000000fc00436f6c
-6f72204c43440a202020000000100000
-00000000000000000000000000000010
-00000000000000000000000000000143
-70127903007f813ffa10000301180f28
-17000000000000000000000000000000
-00000000000000000000000000000000
-464d583032373530354d325058475641
-550a20202020207f8129fa1000020100
-110000029003460442059c077409fc0d
-75123f18dd220a2ecb4094596f7c46ad
-38f1ae00000000000000000000004590
+00 ff ff ff ff ff ff 00 06 10 3d a0 00 00 00 00
+10 1b 01 04 b5 1d 12 78 02 0f b1 ae 52 43 b0 26
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d9 65 00 50 a0 40 2e 60 08 20
+08 08 1e b3 10 00 00 1a 00 00 00 fc 00 43 6f 6c
+6f 72 20 4c 43 44 0a 20 20 20 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 43
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 10 3d a0 00 00 00 00 10 1b
-version:         01 04
-basic params:    b5 1d 12 78 02
-chroma info:     0f b1 ae 52 43 b0 26 0d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    d9 65 00 50 a0 40 2e 60 08 20 08 08 1e b3 10 00 00 1a
-descriptor 2:    00 00 00 fc 00 43 6f 6c 6f 72 20 4c 43 44 0a 20 20 20
-descriptor 3:    00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      01
-checksum:        43
+70 12 79 03 00 7f 81 3f fa 10 00 03 01 18 0f 28
+17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+46 4d 58 30 32 37 35 30 35 4d 32 50 58 47 56 41
+55 0a 20 20 20 20 20 7f 81 29 fa 10 00 02 01 00
+11 00 00 02 90 03 46 04 42 05 9c 07 74 09 fc 0d
+75 12 3f 18 dd 22 0a 2e cb 40 94 59 6f 7c 46 ad
+38 f1 ae 00 00 00 00 00 00 00 00 00 00 00 45 90
 
-EDID version: 1.4
-Manufacturer: APP Model a03d Serial Number --
-Made in week 16 of 2017
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 29 cm x 18 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6796, 0.3203
-  Green: 0.2646, 0.6904
-  Blue:  0.1503, 0.0537
-  White: 0.3125, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 260.730 MHz, 286 mm x 179 mm
-               2560 2568 2600 2640 hborder 0
-               1600 1632 1640 1646 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 98761 Hz
-Monitor name: Color LCD
-Dummy block
-Dummy block
-Has 1 extension blocks
-Checksum: 0x43 (valid)
+----------------
 
-DisplayID extension block
-Extension version: 18
-Length 121, version 18, extension count 0
-Checksum: 0x45 (valid)
-Unknown displayid data block 0x7f
-Unknown displayid data block 0x7f
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 41021
+    Made in: week 16 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2646, 0.6904
+    Blue : 0.1503, 0.0537
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   60.000828 Hz   8:5     98.761 kHz    260.730000 MHz (286 mm x 179 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront   32 Vsync   8 Vback    6 Vpol N
+    Display Product Name: 'Color LCD'
+    Dummy Descriptor:
+    Dummy Descriptor:
+  Extension blocks: 1
+Checksum: 0x43
 
-	Missing monitor ranges
-EDID block does not conform at all!
-	Has -1124073472 nonconformant extension block(s)
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Standalone display device
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
+    Type: 3, Version: 1
+    18 0f 28 17 00 00 00 00 00 00 00 00 00 00 00 00 '..(.............'
+    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+    00 00 00 46 4d 58 30 32 37 35 30 35 4d 32 50 58 '...FMX027505M2PX'
+    47 56 41 55 0a 20 20 20 20 20                   'GVAU.     '
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
+    Type: 2, Version: 1
+    00 11 00 00 02 90 03 46 04 42 05 9c 07 74 09 fc '.......F.B...t..'
+    0d 75 12 3f 18 dd 22 0a 2e cb 40 94 59 6f 7c 46 '.u.?.."...@.Yo|F'
+    ad 38 f1 ae                                     '.8..'
+  Checksum: 0x45
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 1, DisplayID Extension Block:
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
+
+Failures:
+
+Block 1, DisplayID Extension Block:
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+  DisplayID: Missing DisplayID Type I Detailed Timing Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

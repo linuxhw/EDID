@@ -1,67 +1,71 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0010acf2404c364331
-1a1b0104a5331d78e2ebf5a656519c26
-105054a54b00714f8180a9c0d1c00101
-010101010101023a801871382d40582c
-4500fd1e1100001e000000ff0033474a
-32313736533143364c0a000000fc0044
-454c4c205032333137480a20000000fd
-00384c1e5311000a20202020202000c7
+00 ff ff ff ff ff ff 00 10 ac f2 40 4c 36 43 31
+1a 1b 01 04 a5 33 1d 78 e2 eb f5 a6 56 51 9c 26
+10 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 ff 00 33 47 4a
+32 31 37 36 53 31 43 36 4c 0a 00 00 00 fc 00 44
+45 4c 4c 20 50 32 33 31 37 48 0a 20 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 c7
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   10 ac f2 40 4c 36 43 31 1a 1b
-version:         01 04
-basic params:    a5 33 1d 78 e2
-chroma info:     eb f5 a6 56 51 9c 26 10 50 54
-established:     a5 4b 00
-standard:        71 4f 81 80 a9 c0 d1 c0 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 fd 1e 11 00 00 1e
-descriptor 2:    00 00 00 ff 00 33 47 4a 32 31 37 36 53 31 43 36 4c 0a
-descriptor 3:    00 00 00 fc 00 44 45 4c 4c 20 50 32 33 31 37 48 0a 20
-descriptor 4:    00 00 00 fd 00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        c7
+----------------
 
-EDID version: 1.4
-Manufacturer: DEL Model 40f2 Serial Number --
-Made in week 26 of 2017
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 51 cm x 29 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6513, 0.3378
-  Green: 0.3183, 0.6123
-  Blue:  0.1513, 0.0654
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1600x900@60Hz 16:9
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 148.500 MHz, 509 mm x 286 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Serial number: --
-Monitor name: DELL P2317H
-Monitor ranges (GTF): 56-76Hz V, 30-83kHz H, max dotclock 170MHz
-Checksum: 0xc7 (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 16626
+    Serial Number: ...
+    Made in: week 26 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 51 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6513, 0.3378
+    Green: 0.3183, 0.6123
+    Blue : 0.1513, 0.0654
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (509 mm x 286 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: 'DELL P2317H'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+Checksum: 0xc7
 
+----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+
+EDID conformity: FAIL

@@ -1,116 +1,125 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001c54004301010101
-0e1f0104c5462778fbc6a5b14d38b626
-115054254a00d1c081809500b3000101
-0101010101014dd000a0f0703e803020
-3500b9882100001e000000fd0c30903b
-3b89010a202020202020000000fc0041
-4f5255532046563433550a20000000ff
-003231313430423030303438380a02e1
-020333714d020311121304292f20103f
-615d23090707830100006d1a0000020b
-3090000f8c158015e305c301e6060d01
-8c8012f65b006ea0a01f5017201804b9
-882100001ef5bd0064a0a055501220f8
-0cb9882100001e967f8078703821401c
-203804b9882100001e00000000000000
-0000000000000000000000000000002b
-701279030003013c5fe80004ff097700
-1b801f009f05660008800700b9fd0104
-ff0e4f0007801f006f08990045800700
-49a00104ff0e91002f801f006f084300
-04800700000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000dd90
+00 ff ff ff ff ff ff 00 1c 54 00 43 01 01 01 01
+0e 1f 01 04 c5 46 27 78 fb c6 a5 b1 4d 38 b6 26
+11 50 54 25 4a 00 d1 c0 81 80 95 00 b3 00 01 01
+01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 b9 88 21 00 00 1e 00 00 00 fd 0c 30 90 3b
+3b 89 01 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+4f 52 55 53 20 46 56 34 33 55 0a 20 00 00 00 ff
+00 32 31 31 34 30 42 30 30 30 34 38 38 0a 02 e1
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1c 54 00 43 01 01 01 01 0e 1f
-version:         01 04
-basic params:    c5 46 27 78 fb
-chroma info:     c6 a5 b1 4d 38 b6 26 11 50 54
-established:     25 4a 00
-standard:        d1 c0 81 80 95 00 b3 00 01 01 01 01 01 01 01 01
-descriptor 1:    4d d0 00 a0 f0 70 3e 80 30 20 35 00 b9 88 21 00 00 1e
-descriptor 2:    00 00 00 fd 0c 30 90 3b 3b 89 01 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 41 4f 52 55 53 20 46 56 34 33 55 0a 20
-descriptor 4:    00 00 00 ff 00 32 31 31 34 30 42 30 30 30 34 38 38 0a
-extensions:      02
-checksum:        e1
+02 03 33 71 4d 02 03 11 12 13 04 29 2f 20 10 3f
+61 5d 23 09 07 07 83 01 00 00 6d 1a 00 00 02 0b
+30 90 00 0f 8c 15 80 15 e3 05 c3 01 e6 06 0d 01
+8c 80 12 f6 5b 00 6e a0 a0 1f 50 17 20 18 04 b9
+88 21 00 00 1e f5 bd 00 64 a0 a0 55 50 12 20 f8
+0c b9 88 21 00 00 1e 96 7f 80 78 70 38 21 40 1c
+20 38 04 b9 88 21 00 00 1e 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 2b
 
-EDID version: 1.4
-Manufacturer: GBT Model 4300 Serial Number --
-Made in week 14 of 2021
-Digital display
-12 bits per primary color channel
-DisplayPort interface
-Maximum image size: 70 cm x 39 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6943, 0.3007
-  Green: 0.2197, 0.7128
-  Blue:  0.1503, 0.0683
-  White: 0.3134, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-  1920x1080@60Hz 16:9
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-Detailed mode: Clock 533.250 MHz, 697 mm x 392 mm
-               3840 3888 3920 4000 hborder 0
-               2160 2163 2168 2222 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 133312 Hz
-Monitor ranges (bare limits): 48-144Hz V, 59-314kHz H, max dotclock 1370MHz
-Monitor name: AORUS FV43U
-Serial number: --
-Has 2 extension blocks
-Checksum: 0xe1 (valid)
+70 12 79 03 00 03 01 3c 5f e8 00 04 ff 09 77 00
+1b 80 1f 00 9f 05 66 00 08 80 07 00 b9 fd 01 04
+ff 0e 4f 00 07 80 1f 00 6f 08 99 00 45 80 07 00
+49 a0 01 04 ff 0e 91 00 2f 80 1f 00 6f 08 43 00
+04 80 07 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 dd 90
 
-CTA extension block
-Extension version: 3
-47 bytes of CTA data
-  Video data block
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC  17 720x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  41 1280x720@100Hz 16:9  HorFreq: 75000 Hz Clock: 148.500 MHz
-    VIC  47 1280x720@120Hz 16:9  HorFreq: 90000 Hz Clock: 148.500 MHz
-    VIC  32 1920x1080@24Hz 16:9  HorFreq: 27000 Hz Clock: 74.250 MHz
-    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC  63 1920x1080@120Hz 16:9  HorFreq: 135000 Hz Clock: 297.000 MHz
-    VIC  97 3840x2160@60Hz 16:9  HorFreq: 135000 Hz Clock: 594.000 MHz
-    VIC  93 3840x2160@24Hz 16:9  HorFreq: 54000 Hz Clock: 297.000 MHz
-  Audio data block
-    Linear PCM, max channels 2
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GBT
+    Model: 17152
+    Serial Number: ...
+    Made in: week 14 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 12
+    DisplayPort interface
+    Maximum image size: 70 cm x 39 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6943, 0.3007
+    Green: 0.2197, 0.7128
+    Blue : 0.1503, 0.0683
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol P
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-144 Hz V, 314-314 kHz H, max dotclock 1370 MHz
+    Display Product Name: 'AORUS FV43U'
+    Display Product Serial Number: ...
+  Extension blocks: 2
+Checksum: 0xe1
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  41:  1280x720   100.000000 Hz  16:9     75.000 kHz    148.500000 MHz
+    VIC  47:  1280x720   120.000000 Hz  16:9     90.000 kHz    148.500000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 00001a
-  Extended tag: Colorimetry data block
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.11
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x0f
+    Maximum luminance: 140 (1037.472 cd/m^2)
+    Minimum luminance: 21 (0.070 cd/m^2)
+    Maximum luminance (without local dimming): 128 (800.000 cd/m^2)
+    Minimum luminance (without local dimming): 21 (0.054 cd/m^2)
+  Colorimetry Data Block:
     xvYCC601
     xvYCC709
     BT2020YCC
     BT2020RGB
-  Extended tag: HDR static metadata data block
+    Reserved MD0
+  HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
       SMPTE ST2084
@@ -120,51 +129,58 @@ Extension version: 3
     Desired content max luminance: 140 (1037.472 cd/m^2)
     Desired content max frame-average luminance: 128 (800.000 cd/m^2)
     Desired content min luminance: 18 (0.052 cd/m^2)
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 235.420 MHz, 697 mm x 392 mm
-               2560 2583 2615 2670 hborder 0
-               1440 1457 1465 1471 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 88172 Hz
-Detailed mode: Clock 486.290 MHz, 697 mm x 392 mm
-               2560 2578 2610 2660 hborder 0
-               1440 1503 1511 1525 vborder 0
-               +hsync +vsync 
-               VertFreq: 119 Hz, HorFreq: 182815 Hz
-Detailed mode: Clock 326.620 MHz, 697 mm x 392 mm
-               1920 1948 1980 2040 hborder 0
-               1080 1099 1107 1113 vborder 0
-               +hsync +vsync 
-               VertFreq: 143 Hz, HorFreq: 160107 Hz
-Checksum: 0x2b (valid)
+  Detailed Timing Descriptors:
+    DTD 2:  2560x1440   59.940370 Hz  16:9     88.172 kHz    235.420000 MHz (697 mm x 392 mm)
+                 Hfront   23 Hsync  32 Hback   55 Hpol P
+                 Vfront   17 Vsync   8 Vback    6 Vpol P
+    DTD 3:  2560x1440  119.879206 Hz  16:9    182.816 kHz    486.290000 MHz (697 mm x 392 mm)
+                 Hfront   18 Hsync  32 Hback   50 Hpol P
+                 Vfront   63 Vsync   8 Vback   14 Vpol P
+    DTD 4:  1920x1080  143.852510 Hz  16:9    160.108 kHz    326.620000 MHz (697 mm x 392 mm)
+                 Hfront   28 Hsync  32 Hback   60 Hpol P
+                 Vfront   19 Vsync   8 Vback    6 Vpol P
+Checksum: 0x2b
 
+----------------
 
-DisplayID extension block
-Extension version: 18
-Length 121, version 18, extension count 0
-Checksum: 0xdd (valid)
-Type 1 detailed timing: aspect: 16:9,  
-Detailed mode: Clock 594.870 MHz, 0 mm x 0 mm
-               2559 2586 2617 2678
-               1439 1447 1454 1541
-               +hsync +vsync
-Type 1 detailed timing: aspect: 16:9,  
-Detailed mode: Clock 1304.890 MHz, 0 mm x 0 mm
-               3839 3846 3877 3918
-               2159 2228 2235 2312
-               +hsync +vsync
-Type 1 detailed timing: aspect: 16:9,  
-Detailed mode: Clock 1065.690 MHz, 0 mm x 0 mm
-               3839 3886 3917 3984
-               2159 2163 2170 2226
-               +hsync +vsync
+Block 2, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Standalone display device
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1440  143.856221 Hz  16:9    221.970 kHz    594.880000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   28 Hsync  32 Hback   60 Hpol P
+               Vfront    9 Vsync   8 Vback   86 Vpol P
+    DTD:  3840x2160  143.855943 Hz  16:9    332.883 kHz   1304.900000 MHz (aspect 16:9, no 3D stereo)
+               Hfront    8 Hsync  32 Hback   40 Hpol P
+               Vfront   70 Vsync   8 Vback   76 Vpol P
+    DTD:  3840x2160  120.000342 Hz  16:9    267.361 kHz   1065.700000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   66 Hpol P
+               Vfront    5 Vsync   8 Vback   55 Vpol P
+  Checksum: 0xdd
+Checksum: 0x90
 
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 24 - 143 Hz
-  Horizontal Freq: 27000 - 182815 Hz
-  Maximum Clock: 594.000 MHz
-EDID block does not conform at all!
-	Both the serial number and the serial string are set
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 143.856 Hz (Monitor: 48.000 - 144.000 Hz)
+    Horizontal Freq: 27.000 - 332.882 kHz (Monitor: 314.000 - 314.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

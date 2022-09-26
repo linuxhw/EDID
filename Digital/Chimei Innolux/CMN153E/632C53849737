@@ -1,60 +1,56 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000dae3e1500000000
-261d0104a522137803ee95a3544c9926
-0f505400000001010101010101010101
-010101010101b43b804a713834403020
-350058c11000001acd27804a71383440
-3020350058c11000001a000000000000
-00000000000000000000000000000002
-000c26ff143cc80c091fc8000000008b
+00 ff ff ff ff ff ff 00 0d ae 3e 15 00 00 00 00
+26 1d 01 04 a5 22 13 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b4 3b 80 4a 71 38 34 40 30 20
+35 00 58 c1 10 00 00 1a cd 27 80 4a 71 38 34 40
+30 20 35 00 58 c1 10 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 26 ff 14 3c c8 0c 09 1f c8 00 00 00 00 8b
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0d ae 3e 15 00 00 00 00 26 1d
-version:         01 04
-basic params:    a5 22 13 78 03
-chroma info:     ee 95 a3 54 4c 99 26 0f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    b4 3b 80 4a 71 38 34 40 30 20 35 00 58 c1 10 00 00 1a
-descriptor 2:    cd 27 80 4a 71 38 34 40 30 20 35 00 58 c1 10 00 00 1a
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 02 00 0c 26 ff 14 3c c8 0c 09 1f c8 00 00 00
-extensions:      00
-checksum:        8b
+----------------
 
-EDID version: 1.4
-Manufacturer: CMN Model 153e Serial Number --
-Made in week 38 of 2019
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1503, 0.0595
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 152.840 MHz, 344 mm x 193 mm
-               1920 1968 2000 2250 hborder 0
-               1080 1083 1088 1132 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 67928 Hz
-Detailed mode: Clock 101.890 MHz, 344 mm x 193 mm
-               1920 1968 2000 2250 hborder 0
-               1080 1083 1088 1132 vborder 0
-               +hsync -vsync 
-               VertFreq: 40 Hz, HorFreq: 45284 Hz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 2
-Checksum: 0x8b (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5438
+    Made in: week 38 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.007852 Hz  16:9     67.929 kHz    152.840000 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback  250 Hpol P
+                 Vfront    3 Vsync   5 Vback   44 Vpol N
+    DTD 2:  1920x1080   40.003926 Hz  16:9     45.284 kHz    101.890000 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback  250 Hpol P
+                 Vfront    3 Vsync   5 Vback   44 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 26 ff 14 3c c8 0c 09 1f c8 00 00 00 '....&..<........'
+Checksum: 0x8b
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

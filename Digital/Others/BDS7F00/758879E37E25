@@ -1,72 +1,102 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000893007fca69ac70
-14180104a1412978c2af9ba6544e9e26
-0f4c5021080001010101010101010101
-010101010101a24968a0600031803020
-3a0047991100001a0000000f00313839
-303334373436360a200c000000fc004d
-4443432d363233300a202020000000fd
-000f6e19dc21000000000000000001f9
-1001060000a24968a06000318030203a
-0047991100001a5d4800a08068276030
-20370098471100001a966400a080d036
-c030203a0098991100001ada61d0a0c0
-00228030203a008e992100001ab15300
-a060003b8030203a0032991100001abd
-5100a080002c60302034009832110000
-1a0000000000000000000000000000da
+00 ff ff ff ff ff ff 00 08 93 00 7f ca 69 ac 70
+14 18 01 04 a1 41 29 78 c2 af 9b a6 54 4e 9e 26
+0f 4c 50 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a2 49 68 a0 60 00 31 80 30 20
+3a 00 47 99 11 00 00 1a 00 00 00 0f 00 31 38 39
+30 33 34 37 34 36 36 0a 20 0c 00 00 00 fc 00 4d
+44 43 43 2d 36 32 33 30 0a 20 20 20 00 00 00 fd
+00 0f 6e 19 dc 21 00 00 00 00 00 00 00 00 01 f9
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   08 93 00 7f ca 69 ac 70 14 18
-version:         01 04
-basic params:    a1 41 29 78 c2
-chroma info:     af 9b a6 54 4e 9e 26 0f 4c 50
-established:     21 08 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    a2 49 68 a0 60 00 31 80 30 20 3a 00 47 99 11 00 00 1a
-descriptor 2:    00 00 00 0f 00 31 38 39 30 33 34 37 34 36 36 0a 20 0c
-descriptor 3:    00 00 00 fc 00 4d 44 43 43 2d 36 32 33 30 0a 20 20 20
-descriptor 4:    00 00 00 fd 00 0f 6e 19 dc 21 00 00 00 00 00 00 00 00
-extensions:      01
-checksum:        f9
+10 01 06 00 00 a2 49 68 a0 60 00 31 80 30 20 3a
+00 47 99 11 00 00 1a 5d 48 00 a0 80 68 27 60 30
+20 37 00 98 47 11 00 00 1a 96 64 00 a0 80 d0 36
+c0 30 20 3a 00 98 99 11 00 00 1a da 61 d0 a0 c0
+00 22 80 30 20 3a 00 8e 99 21 00 00 1a b1 53 00
+a0 60 00 3b 80 30 20 3a 00 32 99 11 00 00 1a bd
+51 00 a0 80 00 2c 60 30 20 34 00 98 32 11 00 00
+1a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 da
 
-EDID version: 1.4
-Manufacturer: BDS Model 7f00 Serial Number --
-Made in week 20 of 2014
-Digital display
-8 bits per primary color channel
-DVI interface
-Maximum image size: 65 cm x 41 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6503, 0.3300
-  Green: 0.3076, 0.6201
-  Blue:  0.1503, 0.0595
-  White: 0.2988, 0.3154
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-Detailed mode: Clock 188.500 MHz, 327 mm x 409 mm
-               1640 1688 1720 1800 hborder 0
-               2048 2051 2061 2097 vborder 0
-               +hsync -vsync 
-               VertFreq: 49 Hz, HorFreq: 104722 Hz
-Manufacturer-specified data, tag 15
-Monitor name: MDCC-6230
-Monitor ranges (GTF): 15-110Hz V, 25-220kHz H, max dotclock 330MHz
-Has 1 extension blocks
-Checksum: 0xf9 (valid)
+----------------
 
-VTB extension block
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BDS
+    Model: 32512
+    Serial Number: ...
+    Made in: week 20 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DVI interface
+    Maximum image size: 65 cm x 41 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6503, 0.3300
+    Green: 0.3076, 0.6201
+    Blue : 0.1503, 0.0595
+    White: 0.2988, 0.3154
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1640x2048   49.939066 Hz 205:256  104.722 kHz    188.500000 MHz (327 mm x 409 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   36 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 31 38 39 30 33 34 37 34 36 36 0a 20 0c '...1890347466. .'
+    Display Product Name: 'MDCC-6230'
+    Display Range Limits:
+      Monitor ranges (GTF): 15-110 Hz V, 25-220 kHz H, max dotclock 330 MHz
+  Extension blocks: 1
+Checksum: 0xf9
 
-EDID block does not conform at all!
-	Has 117440512 nonconformant extension block(s)
+----------------
 
+Block 1, Video Timing Extension Block:
+  Version: 1
+  Detailed Timing Descriptors:
+    DTD:  1640x2048   49.939066 Hz 205:256  104.722 kHz    188.500000 MHz (327 mm x 409 mm)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback   36 Vpol N
+    DTD:  2048x1640   49.969897 Hz 256:205   83.899 kHz    185.250000 MHz (408 mm x 327 mm)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   7 Vback   29 Vpol N
+    DTD:  2048x3280   34.979417 Hz 128:205  116.621 kHz    257.500000 MHz (408 mm x 409 mm)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback   41 Vpol N
+    DTD:  3280x2048   34.975873 Hz 205:128   72.820 kHz    250.500000 MHz (654 mm x 409 mm)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback   21 Vpol N
+    DTD:  1536x2048   59.955696 Hz   3:4    126.327 kHz    214.250000 MHz (306 mm x 409 mm)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback   46 Vpol N
+    DTD:  2048x1536   59.980394 Hz   4:3     94.769 kHz    209.250000 MHz (408 mm x 306 mm)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   4 Vback   37 Vpol N
+Checksum: 0xda
 
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+Block 1, Video Timing Extension Block:
+  Detailed Timing Descriptor #1: Mismatch of image size 408x327 mm vs display size 650x410 mm.
+  Detailed Timing Descriptor #1: Mismatch of image size 408x306 mm vs display size 650x410 mm.
+
+EDID conformity: FAIL

@@ -1,154 +1,178 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00412fc71000000000
-001a0103809051780a9210ad5244ac25
-0c5054210800d1c081c0010101010101
-01010101010104740030f2705a80b058
-8a00a02a5300001e000000fc00415620
-52656365697665720a20000000fd0030
-780f463c000a20202020202000000000
-0000000000000000000000000000018d
-020360c0545f5f5d5f5e101f20222121
-21041313031302013f3b090707090707
-09070709070709070709070709070709
-0707090707830100006d030c00310080
-3c2800600102036700000001788003e3
-050000e20049e20f03e6060000000000
-00000000000000000000000000000000
-0000000000000000000000000000007e
+00 ff ff ff ff ff ff 00 41 2f c7 10 00 00 00 00
+00 1a 01 03 80 90 51 78 0a 92 10 ad 52 44 ac 25
+0c 50 54 21 08 00 d1 c0 81 c0 01 01 01 01 01 01
+01 01 01 01 01 01 04 74 00 30 f2 70 5a 80 b0 58
+8a 00 a0 2a 53 00 00 1e 00 00 00 fc 00 41 56 20
+52 65 63 65 69 76 65 72 0a 20 00 00 00 fd 00 30
+78 0f 46 3c 00 0a 20 20 20 20 20 20 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 8d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   41 2f c7 10 00 00 00 00 00 1a
-version:         01 03
-basic params:    80 90 51 78 0a
-chroma info:     92 10 ad 52 44 ac 25 0c 50 54
-established:     21 08 00
-standard:        d1 c0 81 c0 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    04 74 00 30 f2 70 5a 80 b0 58 8a 00 a0 2a 53 00 00 1e
-descriptor 2:    00 00 00 fc 00 41 56 20 52 65 63 65 69 76 65 72 0a 20
-descriptor 3:    00 00 00 fd 00 30 78 0f 46 3c 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      01
-checksum:        8d
+02 03 60 c0 54 5f 5f 5d 5f 5e 10 1f 20 22 21 21
+21 04 13 13 03 13 02 01 3f 3b 09 07 07 09 07 07
+09 07 07 09 07 07 09 07 07 09 07 07 09 07 07 09
+07 07 09 07 07 83 01 00 00 6d 03 0c 00 31 00 80
+3c 28 00 60 01 02 03 67 00 00 00 01 78 80 03 e3
+05 00 00 e2 00 49 e2 0f 03 e6 06 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7e
 
-EDID version: 1.3
-Manufacturer: PIO Model 10c7 Serial Number --
-Made in year 2016
-Digital display
-Maximum image size: 144 cm x 81 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6777, 0.3212
-  Green: 0.2656, 0.6738
-  Blue:  0.1445, 0.0478
-  White: 0.3125, 0.3281
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1920x1080@60Hz 16:9
-  1280x720@60Hz 16:9
-Detailed mode: Clock 297.000 MHz, 1440 mm x 810 mm
-               3840 4016 4104 4400 hborder 0
-               2160 2168 2178 2250 vborder 0
-               +hsync +vsync 
-               VertFreq: 30 Hz, HorFreq: 67500 Hz
-Monitor name: AV Receiver
-Monitor ranges (GTF): 48-120Hz V, 15-70kHz H, max dotclock 600MHz
-Manufacturer-specified data, tag 0
-Has 1 extension blocks
-Checksum: 0x8d (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-92 bytes of CTA data
-  Video data block
-    VIC  95 3840x2160@30Hz 16:9  HorFreq: 67500 Hz Clock: 297.000 MHz
-    VIC  95 3840x2160@30Hz 16:9  HorFreq: 67500 Hz Clock: 297.000 MHz
-    VIC  93 3840x2160@24Hz 16:9  HorFreq: 54000 Hz Clock: 297.000 MHz
-    VIC  95 3840x2160@30Hz 16:9  HorFreq: 67500 Hz Clock: 297.000 MHz
-    VIC  94 3840x2160@25Hz 16:9  HorFreq: 56250 Hz Clock: 297.000 MHz
-    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC  32 1920x1080@24Hz 16:9  HorFreq: 27000 Hz Clock: 74.250 MHz
-    VIC  34 1920x1080@30Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC  33 1920x1080@25Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
-    VIC  33 1920x1080@25Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
-    VIC  33 1920x1080@25Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-    VIC  63 1920x1080@120Hz 16:9  HorFreq: 135000 Hz Clock: 297.000 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PIO
+    Model: 4295
+    Made in: 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 144 cm x 81 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6777, 0.3212
+    Green: 0.2656, 0.6738
+    Blue : 0.1445, 0.0478
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz (1440 mm x 810 mm)
+                 Hfront  176 Hsync  88 Hback  296 Hpol P
+                 Vfront    8 Vsync  10 Vback   72 Vpol P
+    Display Product Name: 'AV Receiver'
+    Display Range Limits:
+      Monitor ranges (GTF): 48-120 Hz V, 15-70 kHz H, max dotclock 600 MHz
+    Empty Descriptor
+  Extension blocks: 1
+Checksum: 0x8d
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-    Linear PCM, max channels 2
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-    Linear PCM, max channels 2
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-    Linear PCM, max channels 2
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-    Linear PCM, max channels 2
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-    Linear PCM, max channels 2
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-    Linear PCM, max channels 2
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-    Linear PCM, max channels 2
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-    Linear PCM, max channels 2
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 3.1.0.0
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 3.1.0.0
     Supports_AI
-    Maximum TMDS clock: 300MHz
+    Maximum TMDS clock: 300 MHz
+    Supported Content Types:
+      Game
     Extended HDMI video details:
-      HDMI VIC 1 3840x2160@30Hz 16:9 HorFreq: 67500 Hz Clock: 297.000 MHz
-      HDMI VIC 2 3840x2160@25Hz 16:9 HorFreq: 56250 Hz Clock: 297.000 MHz
-      HDMI VIC 3 3840x2160@24Hz 16:9 HorFreq: 54000 Hz Clock: 297.000 MHz
-  Vendor-specific data block, OUI 000000
-  Extended tag: Colorimetry data block
-  Extended tag: Video capability data block
-    YCbCr quantization: No Data (0)
-    RGB quantization: Selectable (via AVI Q) (1)
-    PT scan behaviour: No Data (0)
-    IT scan behaviour: Always Underscanned (2)
-    CE scan behaviour: Always Overscannned (1)
-  Extended tag: YCbCr 4:2:0 capability map data block
-    VSD Index 0
-    VSD Index 1
-  Extended tag: HDR static metadata data block
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+  Vendor-Specific Data Block, OUI 00-00-00:
+    01 78 80 03                                     '.x..'
+  Colorimetry Data Block:
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Overscanned
+  YCbCr 4:2:0 Capability Map Data Block:
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+  HDR Static Metadata Data Block:
     Electro optical transfer functions:
     Supported static metadata descriptors:
     Desired content max luminance: 0 (50.000 cd/m^2)
     Desired content max frame-average luminance: 0 (50.000 cd/m^2)
     Desired content min luminance: 0 (0.000 cd/m^2)
-Underscans PC formats by default
-Basic audio support
-0 native detailed modes
-Checksum: 0x7e (valid)
+Checksum: 0x7e
 
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 24 - 120 Hz
-  Horizontal Freq: 27000 - 135000 Hz
-  Maximum Clock: 297.000 MHz
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
+  Vendor-Specific Data Block, OUI 00-00-00: Unknown OUI 00-00-00.
+  YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 95.
+  Video Data Block: Duplicate VIC 33.
+  Video Data Block: Duplicate VIC 19.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 48.000 - 120.000 Hz)
+    Horizontal Freq: 27.000 - 135.000 kHz (Monitor: 15.000 - 70.000 kHz)
+
+EDID conformity: FAIL

@@ -1,60 +1,58 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0015c3592701010101
-121a010380261e78eacf5ba557539924
-114c50a1080081800101010101010101
-010101010101302a009851002a403070
-1300782d1100001e000000ff00393835
-33373034360a20202020000000fd003b
-3d1f400b000a202020202020000000fc
-004d583139312d580a2020202020003e
+00 ff ff ff ff ff ff 00 15 c3 59 27 01 01 01 01
+12 1a 01 03 80 26 1e 78 ea cf 5b a5 57 53 99 24
+11 4c 50 a1 08 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 ff 00 39 38 35
+33 37 30 34 36 0a 20 20 20 20 00 00 00 fd 00 3b
+3d 1f 40 0b 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4d 58 31 39 31 2d 58 0a 20 20 20 20 20 00 3e
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   15 c3 59 27 01 01 01 01 12 1a
-version:         01 03
-basic params:    80 26 1e 78 ea
-chroma info:     cf 5b a5 57 53 99 24 11 4c 50
-established:     a1 08 00
-standard:        81 80 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    30 2a 00 98 51 00 2a 40 30 70 13 00 78 2d 11 00 00 1e
-descriptor 2:    00 00 00 ff 00 39 38 35 33 37 30 34 36 0a 20 20 20 20
-descriptor 3:    00 00 00 fd 00 3b 3d 1f 40 0b 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 4d 58 31 39 31 2d 58 0a 20 20 20 20 20
-extensions:      00
-checksum:        3e
+----------------
 
-EDID version: 1.3
-Manufacturer: ENC Model 2759 Serial Number --
-Made in week 18 of 2016
-Digital display
-Maximum image size: 38 cm x 30 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6474, 0.3398
-  Green: 0.3271, 0.6005
-  Blue:  0.1416, 0.0673
-  White: 0.2988, 0.3154
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-Detailed mode: Clock 108.000 MHz, 376 mm x 301 mm
-               1280 1328 1440 1688 hborder 0
-               1024 1025 1028 1066 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 63981 Hz
-Serial number: --
-Monitor ranges (GTF): 59-61Hz V, 31-64kHz H, max dotclock 110MHz
-Monitor name: MX191-X
-Checksum: 0x3e (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 70 Hz
-  Horizontal Freq: 31469 - 64000 Hz
-  Maximum Clock: 108.000 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ENC
+    Model: 10073
+    Serial Number: ...
+    Made in: week 18 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 38 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6474, 0.3398
+    Green: 0.3271, 0.6005
+    Blue : 0.1416, 0.0673
+    White: 0.2988, 0.3154
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (376 mm x 301 mm)
+                 Hfront   48 Hsync 112 Hback  248 Hpol P
+                 Vfront    1 Vsync   3 Vback   38 Vpol P
+    Display Product Serial Number: ...
+    Display Range Limits:
+      Monitor ranges (GTF): 59-61 Hz V, 31-64 kHz H, max dotclock 110 MHz
+    Display Product Name: 'MX191-X'
+Checksum: 0x3e
+
+----------------
+
+Failures:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
+
+EDID conformity: FAIL

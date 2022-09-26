@@ -1,61 +1,55 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e4c30600000000
-001f0104a51f1178eae085a3544e9b26
-0e505400000001010101010101010101
-010101010101293680a070381f403020
-350035ae1000001a542b80a070381f40
-3020350035ae1000001a000000fe0032
-54325836803134305746420a00000000
-000141319e001000000a010a20200099
+00 ff ff ff ff ff ff 00 30 e4 c3 06 00 00 00 00
+00 1f 01 04 a5 1f 11 78 ea e0 85 a3 54 4e 9b 26
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 29 36 80 a0 70 38 1f 40 30 20
+35 00 35 ae 10 00 00 1a 54 2b 80 a0 70 38 1f 40
+30 20 35 00 35 ae 10 00 00 1a 00 00 00 fe 00 32
+54 32 58 36 80 31 34 30 57 46 42 0a 00 00 00 00
+00 01 41 31 9e 00 10 00 00 0a 01 0a 20 20 00 99
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 c3 06 00 00 00 00 00 1f
-version:         01 04
-basic params:    a5 1f 11 78 ea
-chroma info:     e0 85 a3 54 4e 9b 26 0e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    29 36 80 a0 70 38 1f 40 30 20 35 00 35 ae 10 00 00 1a
-descriptor 2:    54 2b 80 a0 70 38 1f 40 30 20 35 00 35 ae 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 32 54 32 58 36 80 31 34 30 57 46 42 0a
-descriptor 4:    00 00 00 00 00 01 41 31 9e 00 10 00 00 0a 01 0a 20 20
-extensions:      00
-checksum:        99
+----------------
 
-EDID version: 1.4
-Manufacturer: LGD Model 6c3 Serial Number --
-Made in year 2021
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.3046, 0.6054
-  Blue:  0.1503, 0.0546
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 138.650 MHz, 309 mm x 174 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 66658 Hz
-Detailed mode: Clock 110.920 MHz, 309 mm x 174 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               +hsync -vsync 
-               VertFreq: 47 Hz, HorFreq: 53326 Hz
-ASCII string: 2T2X6
-Manufacturer-specified data, tag 0
-Checksum: 0x99 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1731
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.3046, 0.6054
+    Blue : 0.1503, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.998788 Hz  16:9     66.659 kHz    138.650000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    DTD 2:  1920x1080   47.999031 Hz  16:9     53.327 kHz    110.920000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    Alphanumeric Data String: '2T2X6'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 01 41 31 9e 00 10 00 00 0a 01 0a 20 20 '....A1........  '
+Checksum: 0x99
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

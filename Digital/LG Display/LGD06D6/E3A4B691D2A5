@@ -1,63 +1,58 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e4d60600000000
-001f0104a51f117807ee05a7544c9925
-0e505400000001010101010101010101
-0101010101012e3680a070381f403020
-350035ae1000001a582b80a070381f40
-3020350035ae1000001a000000fe0048
-4a4a4854803134305746390a00000000
-00024131a8001000000a010a2020009f
+00 ff ff ff ff ff ff 00 30 e4 d6 06 00 00 00 00
+00 1f 01 04 a5 1f 11 78 07 ee 05 a7 54 4c 99 25
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2e 36 80 a0 70 38 1f 40 30 20
+35 00 35 ae 10 00 00 1a 58 2b 80 a0 70 38 1f 40
+30 20 35 00 35 ae 10 00 00 1a 00 00 00 fe 00 48
+4a 4a 48 54 80 31 34 30 57 46 39 0a 00 00 00 00
+00 02 41 31 a8 00 10 00 00 0a 01 0a 20 20 00 9f
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 d6 06 00 00 00 00 00 1f
-version:         01 04
-basic params:    a5 1f 11 78 07
-chroma info:     ee 05 a7 54 4c 99 25 0e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    2e 36 80 a0 70 38 1f 40 30 20 35 00 35 ae 10 00 00 1a
-descriptor 2:    58 2b 80 a0 70 38 1f 40 30 20 35 00 35 ae 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 48 4a 4a 48 54 80 31 34 30 57 46 39 0a
-descriptor 4:    00 00 00 00 00 02 41 31 a8 00 10 00 00 0a 01 0a 20 20
-extensions:      00
-checksum:        9f
+----------------
 
-EDID version: 1.4
-Manufacturer: LGD Model 6d6 Serial Number --
-Made in year 2021
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6552, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1445, 0.0546
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 138.700 MHz, 309 mm x 174 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 66682 Hz
-Detailed mode: Clock 110.960 MHz, 309 mm x 174 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               +hsync -vsync 
-               VertFreq: 48 Hz, HorFreq: 53346 Hz
-ASCII string: HJJHT
-Manufacturer-specified data, tag 0
-Checksum: 0x9f (valid)
-EDID block does NOT conform to EDID 1.4!
-	sRGB is signaled, but the chromaticities do not match
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1750
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6552, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1445, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.020425 Hz  16:9     66.683 kHz    138.700000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    DTD 2:  1920x1080   48.016340 Hz  16:9     53.346 kHz    110.960000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    Alphanumeric Data String: 'HJJHT'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 31 a8 00 10 00 00 0a 01 0a 20 20 '....A1........  '
+Checksum: 0x9f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

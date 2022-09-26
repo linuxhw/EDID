@@ -1,67 +1,78 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff002e83501518000000
-0e0f0101681e1678e8f0659857519127
-215054adce0001010101010101010101
-010101010101d50980a0205e31103000
-b20c30e41000001c000000fd00384b1f
-3d08000a202020202020000000fc0056
-455354454c20562d35303035000000fc
-004c0a20202020202020202020200099
+00 ff ff ff ff ff ff 00 2e 83 50 15 18 00 00 00
+0e 0f 01 01 68 1e 16 78 e8 f0 65 98 57 51 91 27
+21 50 54 ad ce 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d5 09 80 a0 20 5e 31 10 30 00
+b2 0c 30 e4 10 00 00 1c 00 00 00 fd 00 38 4b 1f
+3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+45 53 54 45 4c 20 56 2d 35 30 30 35 00 00 00 fc
+00 4c 0a 20 20 20 20 20 20 20 20 20 20 20 00 99
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   2e 83 50 15 18 00 00 00 0e 0f
-version:         01 01
-basic params:    68 1e 16 78 e8
-chroma info:     f0 65 98 57 51 91 27 21 50 54
-established:     ad ce 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    d5 09 80 a0 20 5e 31 10 30 00 b2 0c 30 e4 10 00 00 1c
-descriptor 2:    00 00 00 fd 00 38 4b 1f 3d 08 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 56 45 53 54 45 4c 20 56 2d 35 30 30 35
-descriptor 4:    00 00 00 fc 00 4c 0a 20 20 20 20 20 20 20 20 20 20 20
-extensions:      00
-checksum:        99
+----------------
 
-EDID version: 1.1
-Manufacturer: KTC Model 1550 Serial Number --
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 30 cm x 22 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.5966, 0.3427
-  Green: 0.3164, 0.5664
-  Blue:  0.1533, 0.1308
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-Detailed mode: Clock 25.170 MHz, 304 mm x 228 mm
-                640  688  688  800 hborder 0
-                350  409  411  399 vborder 0
-               -hsync +vsync 
-               VertFreq: 78 Hz, HorFreq: 31462 Hz
-Monitor ranges (GTF): 56-75Hz V, 31-61kHz H, max dotclock 80MHz
-Monitor name: VESTEL V-5005L
-Checksum: 0x99 (valid)
-EDID block does NOT conform to EDID 1.0!
-	Has descriptor blocks other than detailed timings
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 78 Hz
-  Horizontal Freq: 31462 - 60000 Hz
-  Maximum Clock: 78.750 MHz
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: KTC
+    Model: 5456
+    Serial Number: ...
+    Made in: week 14 of 2005
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.000 : 0.700 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 30 cm x 22 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.5966, 0.3427
+    Green: 0.3164, 0.5664
+    Blue : 0.1533, 0.1308
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:   640x350    78.853383 Hz  64:35    31.462 kHz     25.170000 MHz (304 mm x 228 mm)
+                 Hfront   48 Hsync   0 Hback  112 Hpol N
+                 Vfront   59 Vsync   2 Vback  -12 Vpol P
+                   d5 09 80 a0 20 5e 31 10 30 00 b2 0c 30 e4 10 00 00 1c '.... ^1.0...0.....'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-75 Hz V, 31-61 kHz H, max dotclock 80 MHz
+    Display Product Name: 'VESTEL V-5005'
+    Display Product Name: 'L'
+Checksum: 0x99
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: 0 values in the video timing:
+    Horizontal Active/Blanking 640/160
+    Horizontal Frontporch/Sync Width 48/0
+    Vertical Active/Blanking 350/49
+    Vertical Frontporch/Sync Width 59/2
+  Detailed Timing Descriptor #1: 0 or negative vertical back porch.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 78.853 Hz (Monitor: 56.000 - 75.000 Hz)
+
+EDID conformity: FAIL

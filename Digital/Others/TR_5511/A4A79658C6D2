@@ -1,61 +1,62 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00525f115501040000
-002a0104a5000078028042ac5130b425
-10505300000001010101010101010101
-010101010101023a801871382d403020
-35000000000000185730801871382d40
-30203500000000000018000000fe000a
-202020202020202020202020000000fe
-003139323078313038300a20202000bb
+00 ff ff ff ff ff ff 00 52 5f 11 55 01 04 00 00
+00 2a 01 04 a5 00 00 78 02 80 42 ac 51 30 b4 25
+10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 30 20
+35 00 00 00 00 00 00 18 57 30 80 18 71 38 2d 40
+30 20 35 00 00 00 00 00 00 18 00 00 00 fe 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 31 39 32 30 78 31 30 38 30 0a 20 20 20 00 bb
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   52 5f 11 55 01 04 00 00 00 2a
-version:         01 04
-basic params:    a5 00 00 78 02
-chroma info:     80 42 ac 51 30 b4 25 10 50 53
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 30 20 35 00 00 00 00 00 00 18
-descriptor 2:    57 30 80 18 71 38 2d 40 30 20 35 00 00 00 00 00 00 18
-descriptor 3:    00 00 00 fe 00 0a 20 20 20 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 31 39 32 30 78 31 30 38 30 0a 20 20 20
-extensions:      00
-checksum:        bb
+----------------
 
-EDID version: 1.4
-Manufacturer: TR_ Model 5511 Serial Number --
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Image size is variable
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6738, 0.3164
-  Green: 0.1875, 0.7031
-  Blue:  0.1455, 0.0625
-  White: 0.3125, 0.3261
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 148.500 MHz, 0 mm x 0 mm
-               1920 1968 2000 2200 hborder 0
-               1080 1083 1088 1125 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 123.750 MHz, 0 mm x 0 mm
-               1920 1968 2000 2200 hborder 0
-               1080 1083 1088 1125 vborder 0
-               -hsync -vsync 
-               VertFreq: 50 Hz, HorFreq: 56250 Hz
-ASCII string: 
-ASCII string: 1920x1080
-Checksum: 0xbb (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-EDID block does not conform at all!
-	Bad year of manufacture
-	Manufacturer name field contains garbage
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: TR_
+    Model: 21777
+    Serial Number: ...
+    Made in: 2032
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Image size is variable
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6738, 0.3164
+    Green: 0.1875, 0.7031
+    Blue : 0.1455, 0.0625
+    White: 0.3125, 0.3261
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+                 Hfront   48 Hsync  32 Hback  200 Hpol N
+                 Vfront    3 Vsync   5 Vback   37 Vpol N
+    DTD 2:  1920x1080   50.000000 Hz  16:9     56.250 kHz    123.750000 MHz
+                 Hfront   48 Hsync  32 Hback  200 Hpol N
+                 Vfront    3 Vsync   5 Vback   37 Vpol N
+    Alphanumeric Data String: ''
+    Alphanumeric Data String: '1920x1080'
+Checksum: 0xbb
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: Manufacturer name field contains garbage.
+  Vendor & Product Identification: The year 2032 is more than one year in the future.
+  Alphanumeric Data String: Empty string.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

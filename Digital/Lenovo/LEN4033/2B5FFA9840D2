@@ -1,58 +1,53 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030ae334000000000
-28110103801e1378ea0e059757518a27
-20505400000001010101010101010101
-010101010101b225a00a51842b305236
-59002fbe100000186c1fa00a51842b30
-523659002fbe100000180000000f0095
-0a32950a281401000daf3414000000fe
-004e31343143332d4c30350a2020004c
+00 ff ff ff ff ff ff 00 30 ae 33 40 00 00 00 00
+28 11 01 03 80 1e 13 78 ea 0e 05 97 57 51 8a 27
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b2 25 a0 0a 51 84 2b 30 52 36
+59 00 2f be 10 00 00 18 6c 1f a0 0a 51 84 2b 30
+52 36 59 00 2f be 10 00 00 18 00 00 00 0f 00 95
+0a 32 95 0a 28 14 01 00 0d af 34 14 00 00 00 fe
+00 4e 31 34 31 43 33 2d 4c 30 35 0a 20 20 00 4c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 ae 33 40 00 00 00 00 28 11
-version:         01 03
-basic params:    80 1e 13 78 ea
-chroma info:     0e 05 97 57 51 8a 27 20 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    b2 25 a0 0a 51 84 2b 30 52 36 59 00 2f be 10 00 00 18
-descriptor 2:    6c 1f a0 0a 51 84 2b 30 52 36 59 00 2f be 10 00 00 18
-descriptor 3:    00 00 00 0f 00 95 0a 32 95 0a 28 14 01 00 0d af 34 14
-descriptor 4:    00 00 00 fe 00 4e 31 34 31 43 33 2d 4c 30 35 0a 20 20
-extensions:      00
-checksum:        4c
+----------------
 
-EDID version: 1.3
-Manufacturer: LEN Model 4033 Serial Number --
-Made in week 40 of 2007
-Digital display
-Maximum image size: 30 cm x 19 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5898, 0.3398
-  Green: 0.3193, 0.5410
-  Blue:  0.1523, 0.1250
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 96.500 MHz, 303 mm x 190 mm
-               1440 1522 1576 1706 hborder 0
-                900  905  914  943 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 56565 Hz
-Detailed mode: Clock 80.440 MHz, 303 mm x 190 mm
-               1440 1522 1576 1706 hborder 0
-                900  905  914  943 vborder 0
-               -hsync -vsync 
-               VertFreq: 50 Hz, HorFreq: 47151 Hz
-Manufacturer-specified data, tag 15
-ASCII string: N141C3-L05
-Checksum: 0x4c (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16435
+    Made in: week 40 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3398
+    Green: 0.3193, 0.5410
+    Blue : 0.1523, 0.1250
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    59.984162 Hz   8:5     56.565 kHz     96.500000 MHz (303 mm x 190 mm)
+                 Hfront   82 Hsync  54 Hback  130 Hpol N
+                 Vfront    5 Vsync   9 Vback   29 Vpol N
+    DTD 2:  1440x900    50.001305 Hz   8:5     47.151 kHz     80.440000 MHz (303 mm x 190 mm)
+                 Hfront   82 Hsync  54 Hback  130 Hpol N
+                 Vfront    5 Vsync   9 Vback   29 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 95 0a 32 95 0a 28 14 01 00 0d af 34 14 '.....2..(.....4.'
+    Alphanumeric Data String: 'N141C3-L05'
+Checksum: 0x4c
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

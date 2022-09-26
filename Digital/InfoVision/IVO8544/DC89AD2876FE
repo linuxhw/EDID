@@ -1,62 +1,56 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0026cf448500000000
-001e0104a51d12780ede50a3544c9926
-0f505400000001010101010101010101
-0101010101010f3c80a070b020401830
-3c001eb3100000180c3080a070b02040
-18303c001eb310000018000000fe0037
-56333731803133334e57344a00000000
-000241211e001100000a010a202000cf
+00 ff ff ff ff ff ff 00 26 cf 44 85 00 00 00 00
+00 1e 01 04 a5 1d 12 78 0e de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 0f 3c 80 a0 70 b0 20 40 18 30
+3c 00 1e b3 10 00 00 18 0c 30 80 a0 70 b0 20 40
+18 30 3c 00 1e b3 10 00 00 18 00 00 00 fe 00 37
+56 33 37 31 80 31 33 33 4e 57 34 4a 00 00 00 00
+00 02 41 21 1e 00 11 00 00 0a 01 0a 20 20 00 cf
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   26 cf 44 85 00 00 00 00 00 1e
-version:         01 04
-basic params:    a5 1d 12 78 0e
-chroma info:     de 50 a3 54 4c 99 26 0f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    0f 3c 80 a0 70 b0 20 40 18 30 3c 00 1e b3 10 00 00 18
-descriptor 2:    0c 30 80 a0 70 b0 20 40 18 30 3c 00 1e b3 10 00 00 18
-descriptor 3:    00 00 00 fe 00 37 56 33 37 31 80 31 33 33 4e 57 34 4a
-descriptor 4:    00 00 00 00 00 02 41 21 1e 00 11 00 00 0a 01 0a 20 20
-extensions:      00
-checksum:        cf
+----------------
 
-EDID version: 1.4
-Manufacturer: IVO Model 8544 Serial Number --
-Made in year 2020
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 29 cm x 18 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3291
-  Green: 0.2998, 0.5996
-  Blue:  0.1494, 0.0595
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 153.750 MHz, 286 mm x 179 mm
-               1920 1944 1992 2080 hborder 0
-               1200 1203 1215 1232 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 73918 Hz
-Detailed mode: Clock 123.000 MHz, 286 mm x 179 mm
-               1920 1944 1992 2080 hborder 0
-               1200 1203 1215 1232 vborder 0
-               -hsync -vsync 
-               VertFreq: 47 Hz, HorFreq: 59134 Hz
-ASCII string: 7V371
-Manufacturer-specified data, tag 0
-Checksum: 0xcf (valid)
-EDID block does NOT conform to EDID 1.4!
-	sRGB is signaled, but the chromaticities do not match
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: IVO
+    Model: 34116
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.998595 Hz   8:5     73.918 kHz    153.750000 MHz (286 mm x 179 mm)
+                 Hfront   24 Hsync  48 Hback   88 Hpol N
+                 Vfront    3 Vsync  12 Vback   17 Vpol N
+    DTD 2:  1920x1200   47.998876 Hz   8:5     59.135 kHz    123.000000 MHz (286 mm x 179 mm)
+                 Hfront   24 Hsync  48 Hback   88 Hpol N
+                 Vfront    3 Vsync  12 Vback   17 Vpol N
+    Alphanumeric Data String: '7V371'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 21 1e 00 11 00 00 0a 01 0a 20 20 '....A!........  '
+Checksum: 0xcf
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

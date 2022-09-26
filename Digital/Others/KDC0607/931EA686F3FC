@@ -1,55 +1,53 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff002c83070600000000
-2b1f0104a51f11780a3d85a6564a9a24
-12505400000001010101010101010101
-010101010101121b565a500019301e0e
-660035ae1000001e0000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000fe
-004b443134304e303133304131310028
+00 ff ff ff ff ff ff 00 2c 83 07 06 00 00 00 00
+2b 1f 01 04 a5 1f 11 78 0a 3d 85 a6 56 4a 9a 24
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 56 5a 50 00 19 30 1e 0e
+66 00 35 ae 10 00 00 1e 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 4b 44 31 34 30 4e 30 31 33 30 41 31 31 00 28
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   2c 83 07 06 00 00 00 00 2b 1f
-version:         01 04
-basic params:    a5 1f 11 78 0a
-chroma info:     3d 85 a6 56 4a 9a 24 12 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    12 1b 56 5a 50 00 19 30 1e 0e 66 00 35 ae 10 00 00 1e
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 fe 00 4b 44 31 34 30 4e 30 31 33 30 41 31 31
-extensions:      00
-checksum:        28
+----------------
 
-EDID version: 1.4
-Manufacturer: KDC Model 607 Serial Number --
-Made in week 43 of 2021
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6484, 0.3388
-  Green: 0.2919, 0.6025
-  Blue:  0.1425, 0.0703
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 69.300 MHz, 309 mm x 174 mm
-               1366 1396 1410 1456 hborder 0
-                768  774  780  793 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 47596 Hz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 0
-ASCII string: KD140N0130A11
-Checksum: 0x28 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: KDC
+    Model: 1543
+    Made in: week 43 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6484, 0.3388
+    Green: 0.2919, 0.6025
+    Blue : 0.1425, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.020371 Hz 683:384   47.596 kHz     69.300000 MHz (309 mm x 174 mm)
+                 Hfront   30 Hsync  14 Hback   46 Hpol P
+                 Vfront    6 Vsync   6 Vback   13 Vpol P
+    Empty Descriptor
+    Empty Descriptor
+    Alphanumeric Data String: 'KD140N0130A11'
+Checksum: 0x28
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

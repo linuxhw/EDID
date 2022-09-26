@@ -1,77 +1,68 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e49d0600000000
-001d0104b5221378eb0f95ae5243b026
-0f505400000001010101010101010101
-01010101010150d000a0f0703e803020
-350058c21000001ae08a00a0f0703e80
-3020350058c21000001a000000000000
-00000000000000000000000000000003
-000c19ff1e3c2c26176e2c0101000141
-02030f00e3058000e606050173732100
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000008b
+00 ff ff ff ff ff ff 00 30 e4 9d 06 00 00 00 00
+00 1d 01 04 b5 22 13 78 eb 0f 95 ae 52 43 b0 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 50 d0 00 a0 f0 70 3e 80 30 20
+35 00 58 c2 10 00 00 1a e0 8a 00 a0 f0 70 3e 80
+30 20 35 00 58 c2 10 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03
+00 0c 19 ff 1e 3c 2c 26 17 6e 2c 01 01 00 01 41
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 9d 06 00 00 00 00 00 1d
-version:         01 04
-basic params:    b5 22 13 78 eb
-chroma info:     0f 95 ae 52 43 b0 26 0f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    50 d0 00 a0 f0 70 3e 80 30 20 35 00 58 c2 10 00 00 1a
-descriptor 2:    e0 8a 00 a0 f0 70 3e 80 30 20 35 00 58 c2 10 00 00 1a
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 03 00 0c 19 ff 1e 3c 2c 26 17 6e 2c 01 01 00
-extensions:      01
-checksum:        41
+02 03 0f 00 e3 05 80 00 e6 06 05 01 73 73 21 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 8b
 
-EDID version: 1.4
-Manufacturer: LGD Model 69d Serial Number --
-Made in year 2019
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6796, 0.3203
-  Green: 0.2646, 0.6904
-  Blue:  0.1503, 0.0595
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 533.280 MHz, 344 mm x 194 mm
-               3840 3888 3920 4000 hborder 0
-               2160 2163 2168 2222 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 133320 Hz
-Detailed mode: Clock 355.520 MHz, 344 mm x 194 mm
-               3840 3888 3920 4000 hborder 0
-               2160 2163 2168 2222 vborder 0
-               +hsync -vsync 
-               VertFreq: 40 Hz, HorFreq: 88880 Hz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 3
-Has 1 extension blocks
-Checksum: 0x41 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-11 bytes of CTA data
-  Extended tag: Colorimetry data block
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1693
+    Made in: 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2646, 0.6904
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.000000 Hz  16:9    133.320 kHz    533.280000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD 2:  3840x2160   40.000000 Hz  16:9     88.880 kHz    355.520000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x03): 00 03 00 0c 19 ff 1e 3c 2c 26 17 6e 2c 01 01 00 '.......<,&.n,...'
+  Extension blocks: 1
+Checksum: 0x41
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
     BT2020RGB
-  Extended tag: HDR static metadata data block
+  HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
       SMPTE ST2084
@@ -80,11 +71,23 @@ Extension version: 3
     Desired content max luminance: 115 (603.666 cd/m^2)
     Desired content max frame-average luminance: 115 (603.666 cd/m^2)
     Desired content min luminance: 33 (0.101 cd/m^2)
-0 native detailed modes
-Checksum: 0x8b (valid)
+Checksum: 0x8b
 
-EDID block does NOT conform to EDID 1.4!
-	Required 640x480p60 timings are missing in the established timings
-	and/or in the SVD list (VIC 1)
-	Missing name descriptor
-	Missing monitor ranges
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+EDID conformity: FAIL

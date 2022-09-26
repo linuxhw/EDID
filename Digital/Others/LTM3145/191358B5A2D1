@@ -1,73 +1,74 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00328d45316e163401
-181c0103800b11783af63da3554e9e27
-0d474a21080001010101010101010101
-010101010101803eb0b240801a706e04
-b100b0804700001e010000f9004c5437
-393131446cac00323033000000fa0018
-5014640a000000000020200a010000f9
-004c5437393131446cac0020202000a8
+00 ff ff ff ff ff ff 00 32 8d 45 31 6e 16 34 01
+18 1c 01 03 80 0b 11 78 3a f6 3d a3 55 4e 9e 27
+0d 47 4a 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 80 3e b0 b2 40 80 1a 70 6e 04
+b1 00 b0 80 47 00 00 1e 01 00 00 f9 00 4c 54 37
+39 31 31 44 6c ac 00 32 30 33 00 00 00 fa 00 18
+50 14 64 0a 00 00 00 00 00 20 20 0a 01 00 00 f9
+00 4c 54 37 39 31 31 44 6c ac 00 20 20 20 00 a8
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   32 8d 45 31 6e 16 34 01 18 1c
-version:         01 03
-basic params:    80 0b 11 78 3a
-chroma info:     f6 3d a3 55 4e 9e 27 0d 47 4a
-established:     21 08 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    80 3e b0 b2 40 80 1a 70 6e 04 b1 00 b0 80 47 00 00 1e
-descriptor 2:    01 00 00 f9 00 4c 54 37 39 31 31 44 6c ac 00 32 30 33
-descriptor 3:    00 00 00 fa 00 18 50 14 64 0a 00 00 00 00 00 20 20 0a
-descriptor 4:    01 00 00 f9 00 4c 54 37 39 31 31 44 6c ac 00 20 20 20
-extensions:      00
-checksum:        a8
+----------------
 
-EDID version: 1.3
-Manufacturer: LTM Model 3145 Serial Number --
-Made in week 24 of 2018
-Digital display
-Maximum image size: 11 cm x 17 cm
-Gamma: 2.20
-DPMS levels: Off
-Undefined display color type
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3349
-  Green: 0.3056, 0.6191
-  Blue:  0.1523, 0.0537
-  White: 0.2802, 0.2900
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-Detailed mode: Clock 160.000 MHz, 1200 mm x 1920 mm
-               1200 1310 1314 1378 hborder 0
-               1920 1931 1932 1946 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 116110 Hz
-Detailed mode: Clock 0.010 MHz, 108 mm x 172 mm
-                  0  313  362  249 hborder 50
-                844  863  864 2720 vborder 48
-               +hsync -vsync digital composite interleaved right even
-               VertFreq: 0 Hz, HorFreq: 40 Hz
-More standard timings:
-  440x330@76Hz 4:3
-  408x306@96Hz 4:3
-  328x205@60Hz 16:10
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-  504x315@92Hz 16:10
-Detailed mode: Clock 0.010 MHz, 108 mm x 172 mm
-                  0  313  362  249 hborder 32
-                844  863  864 2720 vborder 32
-               -hsync -vsync analog composite field sequential L/R
-               VertFreq: 0 Hz, HorFreq: 40 Hz
-Checksum: 0xa8 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-EDID block does not conform at all!
-	Invalid detailed timing descriptor ordering
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LTM
+    Model: 12613
+    Serial Number: ...
+    Made in: week 24 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 11 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Undefined display color type
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3349
+    Green: 0.3056, 0.6191
+    Blue : 0.1523, 0.0537
+    White: 0.2802, 0.2900
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1200x1920   59.666138 Hz   5:8    116.110 kHz    160.000000 MHz (1200 mm x 1920 mm)
+                 Hfront  110 Hsync   4 Hback   64 Hpol P
+                 Vfront   11 Vsync   1 Vback   14 Vpol P
+    Detailed mode: 01 00 00 f9 00 4c 54 37 39 31 31 44 6c ac 00 32 30 33 '.....LT7911Dl..203'
+    Standard Timing Identifications:
+      GTF     :   440x330    76.000433 Hz   4:3     26.220 kHz     14.054000 MHz
+      GTF     :   408x306    95.999525 Hz   4:3     31.104 kHz     16.174000 MHz
+      GTF     :   328x205    59.995633 Hz  16:10    12.779 kHz      4.396000 MHz
+      GTF     :   504x315    92.000228 Hz  16:10    30.636 kHz     19.362000 MHz
+    Detailed mode: 01 00 00 f9 00 4c 54 37 39 31 31 44 6c ac 00 20 20 20 '.....LT7911Dl..   '
+Checksum: 0xa8
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timing Identifications: Standard Timing 328x205 has a dubious odd vertical resolution.
+  Standard Timing Identifications: Standard Timing 504x315 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 1200x1920 mm vs display size 110x170 mm.
+  Detailed Timing Descriptor #2: Pixelclock < 10 MHz, assuming invalid data 0x01 0x00.
+  Standard Timing Identifications: 0 or negative horizontal front porch.
+  Standard Timing Identifications: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timing Identifications: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Detailed Timing Descriptor #3: Pixelclock < 10 MHz, assuming invalid data 0x01 0x00.
+  Detailed Timing Descriptor #3: Invalid detailed timing descriptor ordering.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+EDID:
+  Base EDID: The DTD max image size is 1200x1920mm, which is larger than the display size 110.0x170.0mm.
+
+EDID conformity: FAIL

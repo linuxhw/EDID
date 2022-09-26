@@ -1,68 +1,74 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004d85602300000000
-0c1c010368341e78ea0010a057499b26
-10484c210800314a454a614c81c08180
-818a818ca9c0023a801871382d40582c
-4500b4f51000001e7c2e90a0601a1e40
-30203600b4f510000018000000fc0053
-4c454e0a2020202020202020000000fc
-00000a202020202020202020202000e0
+00 ff ff ff ff ff ff 00 4d 85 60 23 00 00 00 00
+0c 1c 01 03 68 34 1e 78 ea 00 10 a0 57 49 9b 26
+10 48 4c 21 08 00 31 4a 45 4a 61 4c 81 c0 81 80
+81 8a 81 8c a9 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 b4 f5 10 00 00 1e 7c 2e 90 a0 60 1a 1e 40
+30 20 36 00 b4 f5 10 00 00 18 00 00 00 fc 00 53
+4c 45 4e 0a 20 20 20 20 20 20 20 20 00 00 00 fc
+00 00 0a 20 20 20 20 20 20 20 20 20 20 20 00 e0
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4d 85 60 23 00 00 00 00 0c 1c
-version:         01 03
-basic params:    68 34 1e 78 ea
-chroma info:     00 10 a0 57 49 9b 26 10 48 4c
-established:     21 08 00
-standard:        31 4a 45 4a 61 4c 81 c0 81 80 81 8a 81 8c a9 c0
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 b4 f5 10 00 00 1e
-descriptor 2:    7c 2e 90 a0 60 1a 1e 40 30 20 36 00 b4 f5 10 00 00 18
-descriptor 3:    00 00 00 fc 00 53 4c 45 4e 0a 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 00 0a 20 20 20 20 20 20 20 20 20 20 20
-extensions:      00
-checksum:        e0
+----------------
 
-EDID version: 1.3
-Manufacturer: SLE Model 2360 Serial Number --
-Made in week 12 of 2018
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 52 cm x 30 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6250, 0.3398
-  Green: 0.2851, 0.6054
-  Blue:  0.1484, 0.0634
-  White: 0.2812, 0.2968
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  640x480@70Hz 4:3
-  800x600@70Hz 4:3
-  1024x768@72Hz 4:3
-  1280x720@60Hz 16:9
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1280x1024@70Hz 5:4
-  1280x1024@72Hz 5:4
-  1600x900@60Hz 16:9
-Detailed mode: Clock 148.500 MHz, 436 mm x 245 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 119.000 MHz, 436 mm x 245 mm
-               1680 1728 1760 1840 hborder 0
-               1050 1053 1059 1080 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 64673 Hz
-Monitor name: SLEN
-Checksum: 0xe0 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SLE
+    Model: 9056
+    Made in: week 12 of 2018
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.000 : 0.700 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 52 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2851, 0.6054
+    Blue : 0.1484, 0.0634
+    White: 0.2812, 0.2968
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    GTF     :   640x480    70.000000 Hz   4:3     35.000 kHz     28.560000 MHz
+    GTF     :   800x600    70.000000 Hz   4:3     43.750 kHz     45.500000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    GTF     :  1280x1024   69.999805 Hz   5:4     74.620 kHz    128.943000 MHz
+    GTF     :  1280x1024   72.000069 Hz   5:4     76.824 kHz    132.752000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (436 mm x 245 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1680x1050   59.883253 Hz   8:5     64.674 kHz    119.000000 MHz (436 mm x 245 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    Display Product Name: 'SLEN'
+    Display Product Name: ''
+Checksum: 0xe0
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x39.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 436x245 mm vs display size 520x300 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 436x245 mm vs display size 520x300 mm.
+  Display Product Name: Non-printable character.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

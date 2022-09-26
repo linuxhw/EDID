@@ -1,54 +1,51 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009e5b30400000000
-000f0103801a10780ae88096544d8a25
-25505400000001010101010101010101
-010101010101c61b00a0502017303020
-360005a310000019000000fe000a2020
-20202020202020202020000000fe0042
-4f452048594449530a202020000000fe
-0048543132315758322d3130330a002b
+00 ff ff ff ff ff ff 00 09 e5 b3 04 00 00 00 00
+00 0f 01 03 80 1a 10 78 0a e8 80 96 54 4d 8a 25
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c6 1b 00 a0 50 20 17 30 30 20
+36 00 05 a3 10 00 00 19 00 00 00 fe 00 0a 20 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 48 59 44 49 53 0a 20 20 20 00 00 00 fe
+00 48 54 31 32 31 57 58 32 2d 31 30 33 0a 00 2b
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 e5 b3 04 00 00 00 00 00 0f
-version:         01 03
-basic params:    80 1a 10 78 0a
-chroma info:     e8 80 96 54 4d 8a 25 25 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    c6 1b 00 a0 50 20 17 30 30 20 36 00 05 a3 10 00 00 19
-descriptor 2:    00 00 00 fe 00 0a 20 20 20 20 20 20 20 20 20 20 20 20
-descriptor 3:    00 00 00 fe 00 42 4f 45 20 48 59 44 49 53 0a 20 20 20
-descriptor 4:    00 00 00 fe 00 48 54 31 32 31 57 58 32 2d 31 30 33 0a
-extensions:      00
-checksum:        2b
+----------------
 
-EDID version: 1.3
-Manufacturer: BOE Model 4b3 Serial Number --
-Digital display
-Maximum image size: 26 cm x 16 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5888, 0.3300
-  Green: 0.3027, 0.5390
-  Blue:  0.1464, 0.1445
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 71.100 MHz, 261 mm x 163 mm
-               1280 1328 1360 1440 hborder 0
-                800  803  809  823 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 49375 Hz
-ASCII string: 
-ASCII string: BOE HYDIS
-ASCII string: HT121WX2-103
-Checksum: 0x2b (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 1203
+    Made in: 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 26 cm x 16 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5888, 0.3300
+    Green: 0.3027, 0.5390
+    Blue : 0.1464, 0.1445
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.993925 Hz   8:5     49.375 kHz     71.100000 MHz (261 mm x 163 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   14 Vpol N
+    Alphanumeric Data String: ''
+    Alphanumeric Data String: 'BOE HYDIS'
+    Alphanumeric Data String: 'HT121WX2-103'
+Checksum: 0x2b
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Empty string.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

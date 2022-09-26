@@ -1,127 +1,123 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0022f0173200000000
-18190104a53c22783a4455a9554d9d26
-0f5054210800d1c0a9c081c0d100b300
-9500a9408180565e00a0a0a029503020
-350055502100001a000000fd00323c1e
-5a19000a202020202020000000fc0048
-50205a32376e0a2020202020000000ff
-00434e4b353234304756460a20200164
-020312f149101f041303120211012309
-0707023a801871382d40582c45005550
-2100001ff33980d072382d40102c4500
-55502100001f011d007251d01e206e28
-550055502100001e8c0ad08a20e02d10
-103e9600555021000019d50980a020e0
-2d101060a20055502100001800000000
-0000000000000000000000000000009c
+00 ff ff ff ff ff ff 00 22 f0 17 32 00 00 00 00
+18 19 01 04 a5 3c 22 78 3a 44 55 a9 55 4d 9d 26
+0f 50 54 21 08 00 d1 c0 a9 c0 81 c0 d1 00 b3 00
+95 00 a9 40 81 80 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 55 50 21 00 00 1a 00 00 00 fd 00 32 3c 1e
+5a 19 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 5a 32 37 6e 0a 20 20 20 20 20 00 00 00 ff
+00 43 4e 4b 35 32 34 30 47 56 46 0a 20 20 01 64
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 f0 17 32 00 00 00 00 18 19
-version:         01 04
-basic params:    a5 3c 22 78 3a
-chroma info:     44 55 a9 55 4d 9d 26 0f 50 54
-established:     21 08 00
-standard:        d1 c0 a9 c0 81 c0 d1 00 b3 00 95 00 a9 40 81 80
-descriptor 1:    56 5e 00 a0 a0 a0 29 50 30 20 35 00 55 50 21 00 00 1a
-descriptor 2:    00 00 00 fd 00 32 3c 1e 5a 19 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 48 50 20 5a 32 37 6e 0a 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 43 4e 4b 35 32 34 30 47 56 46 0a 20 20
-extensions:      01
-checksum:        64
+02 03 12 f1 49 10 1f 04 13 03 12 02 11 01 23 09
+07 07 02 3a 80 18 71 38 2d 40 58 2c 45 00 55 50
+21 00 00 1f f3 39 80 d0 72 38 2d 40 10 2c 45 00
+55 50 21 00 00 1f 01 1d 00 72 51 d0 1e 20 6e 28
+55 00 55 50 21 00 00 1e 8c 0a d0 8a 20 e0 2d 10
+10 3e 96 00 55 50 21 00 00 19 d5 09 80 a0 20 e0
+2d 10 10 60 a2 00 55 50 21 00 00 18 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9c
 
-EDID version: 1.4
-Manufacturer: HWP Model 3217 Serial Number --
-Made in week 24 of 2015
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 60 cm x 34 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6611, 0.3320
-  Green: 0.3017, 0.6132
-  Blue:  0.1494, 0.0595
-  White: 0.3134, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1920x1080@60Hz 16:9
-  1600x900@60Hz 16:9
-  1280x720@60Hz 16:9
-  1920x1200@60Hz 16:10 HorFreq: 74000 Hz Clock: 154.000 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-Detailed mode: Clock 241.500 MHz, 597 mm x 336 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1481 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 88786 Hz
-Monitor ranges (GTF): 50-60Hz V, 30-90kHz H, max dotclock 250MHz
-Monitor name: HP Z27n
-Serial number: --
-Has 1 extension blocks
-Checksum: 0x64 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-14 bytes of CTA data
-  Video data block
-    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC  17 720x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 12823
+    Made in: week 24 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6611, 0.3320
+    Green: 0.3017, 0.6132
+    Blue : 0.1494, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x45:  1920x1200   59.884600 Hz  16:10    74.556 kHz    193.250000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 50-60 Hz V, 30-90 kHz H, max dotclock 250 MHz
+    Display Product Name: 'HP Z27n'
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0x64
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-Underscans PC formats by default
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 148.500 MHz, 597 mm x 336 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 148.350 MHz, 597 mm x 336 mm
-               1920 1936 1980 2640 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 49 Hz, HorFreq: 56193 Hz
-Detailed mode: Clock 74.250 MHz, 597 mm x 336 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Detailed mode: Clock 27.000 MHz, 597 mm x 336 mm
-                720  736  798  858 hborder 0
-                480  489  495  525 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 31468 Hz
-Detailed mode: Clock 25.170 MHz, 597 mm x 336 mm
-                640  656  752  800 hborder 0
-                480  490  492  525 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 31462 Hz
-Checksum: 0x9c (valid)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (597 mm x 336 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 3:  1920x1080   49.949495 Hz  16:9     56.193 kHz    148.350000 MHz (597 mm x 336 mm)
+                 Hfront   16 Hsync  44 Hback  660 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (597 mm x 336 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (597 mm x 336 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 6:   640x480    59.928571 Hz   4:3     31.462 kHz     25.170000 MHz (597 mm x 336 mm)
+                 Hfront   16 Hsync  96 Hback   48 Hpol N
+                 Vfront   10 Vsync   2 Vback   33 Vpol N
+Checksum: 0x9c
 
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 49 - 60 Hz
-  Horizontal Freq: 31250 - 88786 Hz
-  Maximum Clock: 241.500 MHz
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+EDID conformity: FAIL

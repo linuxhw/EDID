@@ -1,63 +1,66 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff002c24000000000000
-181d010300100c78eac905a3574b9c25
-125054254a00454a0101010101010101
-010101010101a00f200031581c201888
-3600a27a0000001e000000fc00413130
-34534e30330a20202020000000fd0032
-501e5105000a20202020202000000010
-00000000000000000000000000000098
+00 ff ff ff ff ff ff 00 2c 24 00 00 00 00 00 00
+18 1d 01 03 00 10 0c 78 ea c9 05 a3 57 4b 9c 25
+12 50 54 25 4a 00 45 4a 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a0 0f 20 00 31 58 1c 20 18 88
+36 00 a2 7a 00 00 00 1e 00 00 00 fc 00 41 31 30
+34 53 4e 30 33 0a 20 20 20 20 00 00 00 fd 00 32
+50 1e 51 05 00 0a 20 20 20 20 20 20 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 98
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   2c 24 00 00 00 00 00 00 18 1d
-version:         01 03
-basic params:    00 10 0c 78 ea
-chroma info:     c9 05 a3 57 4b 9c 25 12 50 54
-established:     25 4a 00
-standard:        45 4a 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    a0 0f 20 00 31 58 1c 20 18 88 36 00 a2 7a 00 00 00 1e
-descriptor 2:    00 00 00 fc 00 41 31 30 34 53 4e 30 33 0a 20 20 20 20
-descriptor 3:    00 00 00 fd 00 32 50 1e 51 05 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      00
-checksum:        98
+----------------
 
-EDID version: 1.3
-Manufacturer: KAD Model 0 Serial Number --
-Made in week 24 of 2019
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: 
-Maximum image size: 16 cm x 12 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3398
-  Green: 0.2949, 0.6103
-  Blue:  0.1445, 0.0703
-  White: 0.3134, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-  800x600@70Hz 4:3
-Detailed mode: Clock 40.000 MHz, 162 mm x 122 mm
-                800  824  960 1056 hborder 0
-                600  603  609  628 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 37878 Hz
-Monitor name: A104SN03
-Monitor ranges (GTF): 50-80Hz V, 30-81kHz H, max dotclock 50MHz
-Dummy block
-Checksum: 0x98 (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 75 Hz
-  Horizontal Freq: 31469 - 60000 Hz
-  Maximum Clock: 78.750 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: KAD
+    Model: 0
+    Made in: week 24 of 2019
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
+    Blank level equals black level
+    Maximum image size: 16 cm x 12 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.2949, 0.6103
+    Blue : 0.1445, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings:
+    GTF     :   800x600    70.000000 Hz   4:3     43.750 kHz     45.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz (162 mm x 122 mm)
+                 Hfront   24 Hsync 136 Hback   96 Hpol P
+                 Vfront    3 Vsync   6 Vback   19 Vpol P
+    Display Product Name: 'A104SN03'
+    Display Range Limits:
+      Monitor ranges (GTF): 50-80 Hz V, 30-81 kHz H, max dotclock 50 MHz
+    Dummy Descriptor:
+Checksum: 0x98
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x09.
+
+Failures:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 78.750 MHz (Monitor: 50.000 MHz)
+
+EDID conformity: FAIL

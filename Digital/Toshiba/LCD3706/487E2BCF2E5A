@@ -1,54 +1,53 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff003064063737393734
-15120103801a10780a87ae99574f8c26
-22505400000001010101010101010101
-010101010101c21a008250200a301030
-220005a3100000180000000000000000
-00000000000000000001000000fe0054
-4d313131a131323145573344000000fe
-002a3945507090b0ff01010a20200061
+00 ff ff ff ff ff ff 00 30 64 06 37 37 39 37 34
+15 12 01 03 80 1a 10 78 0a 87 ae 99 57 4f 8c 26
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c2 1a 00 82 50 20 0a 30 10 30
+22 00 05 a3 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 00 00 00 fe 00 54
+4d 31 31 31 a1 31 32 31 45 57 33 44 00 00 00 fe
+00 2a 39 45 50 70 90 b0 ff 01 01 0a 20 20 00 61
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 64 06 37 37 39 37 34 15 12
-version:         01 03
-basic params:    80 1a 10 78 0a
-chroma info:     87 ae 99 57 4f 8c 26 22 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    c2 1a 00 82 50 20 0a 30 10 30 22 00 05 a3 10 00 00 18
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01
-descriptor 3:    00 00 00 fe 00 54 4d 31 31 31 a1 31 32 31 45 57 33 44
-descriptor 4:    00 00 00 fe 00 2a 39 45 50 70 90 b0 ff 01 01 0a 20 20
-extensions:      00
-checksum:        61
+----------------
 
-EDID version: 1.3
-Manufacturer: LCD Model 3706 Serial Number --
-Made in week 21 of 2008
-Digital display
-Maximum image size: 26 cm x 16 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5996, 0.3398
-  Green: 0.3095, 0.5498
-  Blue:  0.1503, 0.1347
-  White: 0.3154, 0.3300
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 68.500 MHz, 261 mm x 163 mm
-               1280 1296 1344 1410 hborder 0
-                800  802  804  810 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 48581 Hz
-Manufacturer-specified data, tag 0
-ASCII string: TM111
-ASCII string: *9EPp
-Checksum: 0x61 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LCD
+    Model: 14086
+    Serial Number: ...
+    Made in: week 21 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 26 cm x 16 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5996, 0.3398
+    Green: 0.3095, 0.5498
+    Blue : 0.1503, 0.1347
+    White: 0.3154, 0.3300
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.977235 Hz   8:5     48.582 kHz     68.500000 MHz (261 mm x 163 mm)
+                 Hfront   16 Hsync  48 Hback   66 Hpol N
+                 Vfront    2 Vsync   2 Vback    6 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 '................'
+    Alphanumeric Data String: 'TM111'
+    Alphanumeric Data String: '*9EPp'
+Checksum: 0x61
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

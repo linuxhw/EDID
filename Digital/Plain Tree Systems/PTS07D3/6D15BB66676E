@@ -1,98 +1,104 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004293d30701010101
-0711010380291f960a4595a3594a9724
-13505421000001010101010101010101
-010101010101742778a0501a1e40301e
-340098321100001ec31e002041002030
-10601300983211000000000000fd0038
-4b1e510e000a202020202020000000ff
-00464341433732303038363833300180
-020319c1418423090707830100006703
-0c000000001ee2000f00000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000019
+00 ff ff ff ff ff ff 00 42 93 d3 07 01 01 01 01
+07 11 01 03 80 29 1f 96 0a 45 95 a3 59 4a 97 24
+13 50 54 21 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 74 27 78 a0 50 1a 1e 40 30 1e
+34 00 98 32 11 00 00 1e c3 1e 00 20 41 00 20 30
+10 60 13 00 98 32 11 00 00 00 00 00 00 fd 00 38
+4b 1e 51 0e 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 46 43 41 43 37 32 30 30 38 36 38 33 30 01 80
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   42 93 d3 07 01 01 01 01 07 11
-version:         01 03
-basic params:    80 29 1f 96 0a
-chroma info:     45 95 a3 59 4a 97 24 13 50 54
-established:     21 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    74 27 78 a0 50 1a 1e 40 30 1e 34 00 98 32 11 00 00 1e
-descriptor 2:    c3 1e 00 20 41 00 20 30 10 60 13 00 98 32 11 00 00 00
-descriptor 3:    00 00 00 fd 00 38 4b 1e 51 0e 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 46 43 41 43 37 32 30 30 38 36 38 33 30
-extensions:      01
-checksum:        80
+02 03 19 c1 41 84 23 09 07 07 83 01 00 00 67 03
+0c 00 00 00 00 1e e2 00 0f 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 19
 
-EDID version: 1.3
-Manufacturer: PTS Model 7d3 Serial Number --
-Made in week 7 of 2007
-Digital display
-Maximum image size: 41 cm x 31 cm
-Gamma: 2.50
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6376, 0.3476
-  Green: 0.2900, 0.5908
-  Blue:  0.1425, 0.0751
-  White: 0.3134, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-Standard timings supported:
-Detailed mode: Clock 101.000 MHz, 408 mm x 306 mm
-               1400 1448 1478 1560 hborder 0
-               1050 1053 1057 1080 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 64743 Hz
-Detailed mode: Clock 78.750 MHz, 408 mm x 306 mm
-               1024 1040 1136 1312 hborder 0
-                768  769  772  800 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 75 Hz, HorFreq: 60022 Hz
-Monitor ranges (GTF): 56-75Hz V, 30-81kHz H, max dotclock 140MHz
-Serial number: --
-Has 1 extension blocks
-Checksum: 0x80 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-21 bytes of CTA data
-  Video data block
-    VIC   4 1280x720@60Hz 16:9 (native) HorFreq: 45000 Hz Clock: 74.250 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PTS
+    Model: 2003
+    Serial Number: ...
+    Made in: week 7 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 41 cm x 31 cm
+    Gamma: 2.50
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6376, 0.3476
+    Green: 0.2900, 0.5908
+    Blue : 0.1425, 0.0751
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1400x1050   59.947768 Hz   4:3     64.744 kHz    101.000000 MHz (408 mm x 306 mm)
+                 Hfront   48 Hsync  30 Hback   82 Hpol P
+                 Vfront    3 Vsync   4 Vback   23 Vpol P
+    DTD 2:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz (analog composite, sync-on-green, 408 mm x 306 mm)
+                 Hfront   16 Hsync  96 Hback  176 Hpol N
+                 Vfront    1 Vsync   3 Vback   28 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 56-75 Hz V, 30-81 kHz H, max dotclock 140 MHz
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0x80
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 0.0.0.0
-    Maximum TMDS clock: 150MHz
-  Extended tag: Video capability data block
-    YCbCr quantization: No Data (0)
-    RGB quantization: No Data (0)
-    PT scan behaviour: No Data (0)
-    IT scan behaviour: Support both over- and underscan (3)
-    CE scan behaviour: Support both over- and underscan (3)
-Underscans PC formats by default
-Basic audio support
-1 native detailed modes
-Checksum: 0x19 (valid)
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 0.0.0.0
+    Maximum TMDS clock: 150 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+Checksum: 0x19
 
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-EDID block does not conform at all!
-	Both the serial number and the serial string are set
+----------------
 
+Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x29.
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x12.
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

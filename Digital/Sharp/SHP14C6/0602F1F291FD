@@ -1,60 +1,61 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004d10c61400000000
-111d0104a52213780ede50a3544c9926
-0f505400000001010101010101010101
-01010101010150d0805070381f401828
-0a0058c2100000180000001000000000
-00000000000000000018000000fe0059
-56504746804c513135364d3100000000
-0002410f1e000200000b010a20200015
+00 ff ff ff ff ff ff 00 4d 10 c6 14 00 00 00 00
+11 1d 01 04 a5 22 13 78 0e de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 50 d0 80 50 70 38 1f 40 18 28
+0a 00 58 c2 10 00 00 18 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 18 00 00 00 fe 00 59
+56 50 47 46 80 4c 51 31 35 36 4d 31 00 00 00 00
+00 02 41 0f 1e 00 02 00 00 0b 01 0a 20 20 00 15
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4d 10 c6 14 00 00 00 00 11 1d
-version:         01 04
-basic params:    a5 22 13 78 0e
-chroma info:     de 50 a3 54 4c 99 26 0f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    50 d0 80 50 70 38 1f 40 18 28 0a 00 58 c2 10 00 00 18
-descriptor 2:    00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 18
-descriptor 3:    00 00 00 fe 00 59 56 50 47 46 80 4c 51 31 35 36 4d 31
-descriptor 4:    00 00 00 00 00 02 41 0f 1e 00 02 00 00 0b 01 0a 20 20
-extensions:      00
-checksum:        15
+----------------
 
-EDID version: 1.4
-Manufacturer: SHP Model 14c6 Serial Number --
-Made in week 17 of 2019
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3291
-  Green: 0.2998, 0.5996
-  Blue:  0.1494, 0.0595
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 533.280 MHz, 344 mm x 194 mm
-               1920 1944 1984 2000 hborder 0
-               1080 1080 1090 1111 vborder 0
-               -hsync -vsync 
-               VertFreq: 240 Hz, HorFreq: 266640 Hz
-Dummy block
-ASCII string: YVPGF
-Manufacturer-specified data, tag 0
-Checksum: 0x15 (valid)
-EDID block does NOT conform to EDID 1.4!
-	sRGB is signaled, but the chromaticities do not match
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
-EDID block does not conform at all!
-	Dummy block filled with garbage
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SHP
+    Model: 5318
+    Made in: week 17 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  240.000000 Hz  16:9    266.640 kHz    533.280000 MHz (344 mm x 194 mm)
+                 Hfront   24 Hsync  40 Hback   16 Hpol N
+                 Vfront    0 Vsync  10 Vback   21 Vpol N
+                   50 d0 80 50 70 38 1f 40 18 28 0a 00 58 c2 10 00 00 18 'P..Pp8.@.(..X.....'
+    Dummy Descriptor:
+    Alphanumeric Data String: 'YVPGF'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 0f 1e 00 02 00 00 0b 01 0a 20 20 '....A.........  '
+Checksum: 0x15
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: 0 values in the video timing:
+    Horizontal Active/Blanking 1920/80
+    Horizontal Frontporch/Sync Width 24/40
+    Vertical Active/Blanking 1080/31
+    Vertical Frontporch/Sync Width 0/10
+  Dummy Descriptor: Dummy block filled with garbage.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

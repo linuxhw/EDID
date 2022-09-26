@@ -1,60 +1,59 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0038701d0000000000
-001a010495221378069a85975c578e28
-1c505400000001010101010101010101
-010101010101023a801871382d40582c
-450058c210000018542b801871382d40
-582c450058c210000018000000100000
-000000000000000000000000000000fc
-004c433135364c46314c30330a2000eb
+00 ff ff ff ff ff ff 00 38 70 1d 00 00 00 00 00
+00 1a 01 04 95 22 13 78 06 9a 85 97 5c 57 8e 28
+1c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 58 c2 10 00 00 18 54 2b 80 18 71 38 2d 40
+58 2c 45 00 58 c2 10 00 00 18 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc
+00 4c 43 31 35 36 4c 46 31 4c 30 33 0a 20 00 eb
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   38 70 1d 00 00 00 00 00 00 1a
-version:         01 04
-basic params:    95 22 13 78 06
-chroma info:     9a 85 97 5c 57 8e 28 1c 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 58 c2 10 00 00 18
-descriptor 2:    54 2b 80 18 71 38 2d 40 58 2c 45 00 58 c2 10 00 00 18
-descriptor 3:    00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 fc 00 4c 43 31 35 36 4c 46 31 4c 30 33 0a 20
-extensions:      00
-checksum:        eb
+----------------
 
-EDID version: 1.4
-Manufacturer: NCP Model 1d Serial Number --
-Made in year 2016
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5917, 0.3603
-  Green: 0.3417, 0.5566
-  Blue:  0.1582, 0.1093
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 148.500 MHz, 344 mm x 194 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 110.920 MHz, 344 mm x 194 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               -hsync -vsync 
-               VertFreq: 44 Hz, HorFreq: 50418 Hz
-Dummy block
-Monitor name: LC156LF1L03
-Checksum: 0xeb (valid)
-EDID block does NOT conform to EDID 1.4!
-	sRGB is signaled, but the chromaticities do not match
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: NCP
+    Model: 29
+    Made in: 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5917, 0.3603
+    Green: 0.3417, 0.5566
+    Blue : 0.1582, 0.1093
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (344 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol N
+                 Vfront    4 Vsync   5 Vback   36 Vpol N
+    DTD 2:  1920x1080   44.816162 Hz  16:9     50.418 kHz    110.920000 MHz (344 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol N
+                 Vfront    4 Vsync   5 Vback   36 Vpol N
+    Dummy Descriptor:
+    Display Product Name: 'LC156LF1L03'
+Checksum: 0xeb
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+
+EDID conformity: FAIL

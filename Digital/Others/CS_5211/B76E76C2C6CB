@@ -1,61 +1,65 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000e7f115201040000
-05170104a5351e78028042ac5130b425
-10505300000001010101010101010101
-010101010101023a801871382d403020
-350007442100001a5730801871382d40
-3020350007442100001a000000fe000a
-202020202020202020202020000000fe
-003139323078313038300a20202000c1
+00 ff ff ff ff ff ff 00 0e 7f 11 52 01 04 00 00
+05 17 01 04 a5 35 1e 78 02 80 42 ac 51 30 b4 25
+10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 30 20
+35 00 07 44 21 00 00 1a 57 30 80 18 71 38 2d 40
+30 20 35 00 07 44 21 00 00 1a 00 00 00 fe 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 31 39 32 30 78 31 30 38 30 0a 20 20 20 00 c1
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0e 7f 11 52 01 04 00 00 05 17
-version:         01 04
-basic params:    a5 35 1e 78 02
-chroma info:     80 42 ac 51 30 b4 25 10 50 53
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 30 20 35 00 07 44 21 00 00 1a
-descriptor 2:    57 30 80 18 71 38 2d 40 30 20 35 00 07 44 21 00 00 1a
-descriptor 3:    00 00 00 fe 00 0a 20 20 20 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 31 39 32 30 78 31 30 38 30 0a 20 20 20
-extensions:      00
-checksum:        c1
+----------------
 
-EDID version: 1.4
-Manufacturer: CS_ Model 5211 Serial Number --
-Made in week 5 of 2013
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 53 cm x 30 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6738, 0.3164
-  Green: 0.1875, 0.7031
-  Blue:  0.1455, 0.0625
-  White: 0.3125, 0.3261
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 148.500 MHz, 519 mm x 324 mm
-               1920 1968 2000 2200 hborder 0
-               1080 1083 1088 1125 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 123.750 MHz, 519 mm x 324 mm
-               1920 1968 2000 2200 hborder 0
-               1080 1083 1088 1125 vborder 0
-               +hsync -vsync 
-               VertFreq: 50 Hz, HorFreq: 56250 Hz
-ASCII string: 
-ASCII string: 1920x1080
-Checksum: 0xc1 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-EDID block does not conform at all!
-	Manufacturer name field contains garbage
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CS_
+    Model: 21009
+    Serial Number: ...
+    Made in: week 5 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 53 cm x 30 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6738, 0.3164
+    Green: 0.1875, 0.7031
+    Blue : 0.1455, 0.0625
+    White: 0.3125, 0.3261
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (519 mm x 324 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    3 Vsync   5 Vback   37 Vpol N
+    DTD 2:  1920x1080   50.000000 Hz  16:9     56.250 kHz    123.750000 MHz (519 mm x 324 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    3 Vsync   5 Vback   37 Vpol N
+    Alphanumeric Data String: ''
+    Alphanumeric Data String: '1920x1080'
+Checksum: 0xc1
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: Manufacturer name field contains garbage.
+  Detailed Timing Descriptor #1: Mismatch of image size 519x324 mm vs display size 530x300 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 519x324 mm vs display size 530x300 mm.
+  Alphanumeric Data String: Empty string.
+  Missing Display Product Name.
+EDID:
+  Base EDID: The DTD max image size is 519x324mm, which is larger than the display size 530.0x300.0mm.
+
+EDID conformity: FAIL

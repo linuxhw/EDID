@@ -1,58 +1,57 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0005e35916bd61bc00
-0d170103812213782aef059054529329
-25505421080001010101010101010101
-0101010101015e358096703814402c1c
-240058c11000001e000000ff00313233
-34353637202020202020000000fd000f
-f00f7f11000a202020202020000000fc
-0031363539572020202020202020005d
+00 ff ff ff ff ff ff 00 05 e3 59 16 bd 61 bc 00
+0d 17 01 03 81 22 13 78 2a ef 05 90 54 52 93 29
+25 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 5e 35 80 96 70 38 14 40 2c 1c
+24 00 58 c1 10 00 00 1e 00 00 00 ff 00 31 32 33
+34 35 36 37 20 20 20 20 20 20 00 00 00 fd 00 0f
+f0 0f 7f 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 31 36 35 39 57 20 20 20 20 20 20 20 20 00 5d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   05 e3 59 16 bd 61 bc 00 0d 17
-version:         01 03
-basic params:    81 22 13 78 2a
-chroma info:     ef 05 90 54 52 93 29 25 50 54
-established:     21 08 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    5e 35 80 96 70 38 14 40 2c 1c 24 00 58 c1 10 00 00 1e
-descriptor 2:    00 00 00 ff 00 31 32 33 34 35 36 37 20 20 20 20 20 20
-descriptor 3:    00 00 00 fd 00 0f f0 0f 7f 11 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 31 36 35 39 57 20 20 20 20 20 20 20 20
-extensions:      00
-checksum:        5d
+----------------
 
-EDID version: 1.3
-Manufacturer: AOC Model 1659 Serial Number --
-Made in week 13 of 2013
-Digital display
-DFP 1.x compatible TMDS
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5654, 0.3300
-  Green: 0.3232, 0.5771
-  Blue:  0.1601, 0.1445
-  White: 0.3134, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-Detailed mode: Clock 136.620 MHz, 344 mm x 193 mm
-               1920 1964 1992 2070 hborder 0
-               1080 1082 1086 1100 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 66000 Hz
-Serial number: --      
-Monitor ranges (GTF): 15-240Hz V, 15-127kHz H, max dotclock 170MHz
-Checksum: 0x5d (valid)
-EDID block does NOT conform to EDID 1.3!
-	Name descriptor not terminated with a newline
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AOC
+    Model: 5721
+    Serial Number: ...
+    Made in: week 13 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5654, 0.3300
+    Green: 0.3232, 0.5771
+    Blue : 0.1601, 0.1445
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     66.000 kHz    136.620000 MHz (344 mm x 193 mm)
+                 Hfront   44 Hsync  28 Hback   78 Hpol P
+                 Vfront    2 Vsync   4 Vback   14 Vpol P
+    Display Product Serial Number: ...
+    Display Range Limits:
+      Monitor ranges (GTF): 15-240 Hz V, 15-127 kHz H, max dotclock 170 MHz
+    Display Product Name: '1659W        '
+Checksum: 0x5d
 
+----------------
 
+Failures:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+  Display Product Name: One or more trailing spaces.
+
+EDID conformity: FAIL

@@ -1,68 +1,66 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0010ac26a053443031
-3111010380342178ee9bb5a95434ae25
-135054a54b008180a940714fb3000101
-010101010101283c80a070b023403020
-360007442100001a000000ff00445234
-37343743353130445320000000fc0044
-454c4c323430375746504843000000fd
-00384c1e5311000a202020202020006e
+00 ff ff ff ff ff ff 00 10 ac 26 a0 53 44 30 31
+31 11 01 03 80 34 21 78 ee 9b b5 a9 54 34 ae 25
+13 50 54 a5 4b 00 81 80 a9 40 71 4f b3 00 01 01
+01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 07 44 21 00 00 1a 00 00 00 ff 00 44 52 34
+37 34 37 43 35 31 30 44 53 20 00 00 00 fc 00 44
+45 4c 4c 32 34 30 37 57 46 50 48 43 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 6e
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   10 ac 26 a0 53 44 30 31 31 11
-version:         01 03
-basic params:    80 34 21 78 ee
-chroma info:     9b b5 a9 54 34 ae 25 13 50 54
-established:     a5 4b 00
-standard:        81 80 a9 40 71 4f b3 00 01 01 01 01 01 01 01 01
-descriptor 1:    28 3c 80 a0 70 b0 23 40 30 20 36 00 07 44 21 00 00 1a
-descriptor 2:    00 00 00 ff 00 44 52 34 37 34 37 43 35 31 30 44 53 20
-descriptor 3:    00 00 00 fc 00 44 45 4c 4c 32 34 30 37 57 46 50 48 43
-descriptor 4:    00 00 00 fd 00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        6e
+----------------
 
-EDID version: 1.3
-Manufacturer: DEL Model a026 Serial Number --
-Made in week 49 of 2007
-Digital display
-Maximum image size: 52 cm x 33 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6621, 0.3291
-  Green: 0.2050, 0.6826
-  Blue:  0.1464, 0.0771
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-Detailed mode: Clock 154.000 MHz, 519 mm x 324 mm
-               1920 1968 2000 2080 hborder 0
-               1200 1203 1209 1235 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 74038 Hz
-Serial number: -- 
-Monitor ranges (GTF): 56-76Hz V, 30-83kHz H, max dotclock 170MHz
-Checksum: 0x6e (valid)
-EDID block does NOT conform to EDID 1.3!
-	sRGB is signaled, but the chromaticities do not match
-	Name descriptor not terminated with a newline
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 40998
+    Serial Number: ...
+    Made in: week 49 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 52 cm x 33 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6621, 0.3291
+    Green: 0.2050, 0.6826
+    Blue : 0.1464, 0.0771
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.950171 Hz   8:5     74.038 kHz    154.000000 MHz (519 mm x 324 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   26 Vpol N
+    Display Product Serial Number: ...
+    Display Product Name: 'DELL2407WFPHC'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+Checksum: 0x6e
 
+----------------
 
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Serial Number: ...
+
+EDID conformity: FAIL

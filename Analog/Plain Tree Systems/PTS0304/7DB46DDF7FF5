@@ -1,71 +1,72 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00429304035cca0100
-341001030820181be85c119e59479b27
-10484fa14a0031590101455945686159
-818000000000302a009851002c403070
-130036e61000001eea24006041002830
-3060130036e61000001e000000fd0032
-a01e460b000a202020202020000000ff
-00464143553643303131373334300048
+00 ff ff ff ff ff ff 00 42 93 04 03 5c ca 01 00
+34 10 01 03 08 20 18 1b e8 5c 11 9e 59 47 9b 27
+10 48 4f a1 4a 00 31 59 01 01 45 59 45 68 61 59
+81 80 00 00 00 00 30 2a 00 98 51 00 2c 40 30 70
+13 00 36 e6 10 00 00 1e ea 24 00 60 41 00 28 30
+30 60 13 00 36 e6 10 00 00 1e 00 00 00 fd 00 32
+a0 1e 46 0b 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 46 41 43 55 36 43 30 31 31 37 33 34 30 00 48
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   42 93 04 03 5c ca 01 00 34 10
-version:         01 03
-basic params:    08 20 18 1b e8
-chroma info:     5c 11 9e 59 47 9b 27 10 48 4f
-established:     a1 4a 00
-standard:        31 59 01 01 45 59 45 68 61 59 81 80 00 00 00 00
-descriptor 1:    30 2a 00 98 51 00 2c 40 30 70 13 00 36 e6 10 00 00 1e
-descriptor 2:    ea 24 00 60 41 00 28 30 30 60 13 00 36 e6 10 00 00 1e
-descriptor 3:    00 00 00 fd 00 32 a0 1e 46 0b 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 46 41 43 55 36 43 30 31 31 37 33 34 30
-extensions:      00
-checksum:        48
+----------------
 
-EDID version: 1.3
-Manufacturer: PTS Model 304 Serial Number --
-Made in week 52 of 2006
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate 
-Maximum image size: 32 cm x 24 cm
-Gamma: 1.27
-DPMS levels: Standby Suspend Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6181, 0.3486
-  Green: 0.2802, 0.6054
-  Blue:  0.1523, 0.0634
-  White: 0.2812, 0.3095
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-  640x480@85Hz 4:3 HorFreq: 43300 Hz Clock: 36.000 MHz
-  800x600@85Hz 4:3 HorFreq: 53700 Hz Clock: 56.250 MHz
-  800x600@100Hz 4:3
-  1024x768@85Hz 4:3 HorFreq: 68700 Hz Clock: 94.500 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-Detailed mode: Clock 108.000 MHz, 310 mm x 230 mm
-               1280 1328 1440 1688 hborder 0
-               1024 1025 1028 1068 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 63981 Hz
-Detailed mode: Clock 94.500 MHz, 310 mm x 230 mm
-               1024 1072 1168 1376 hborder 0
-                768  769  772  808 vborder 0
-               +hsync +vsync 
-               VertFreq: 84 Hz, HorFreq: 68677 Hz
-Monitor ranges (GTF): 50-160Hz V, 30-70kHz H, max dotclock 110MHz
-Serial number: --
-Checksum: 0x48 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing preferred timing
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PTS
+    Model: 772
+    Serial Number: ...
+    Made in: week 52 of 2006
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 32 cm x 24 cm
+    Gamma: 1.27
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6181, 0.3486
+    Green: 0.2802, 0.6054
+    Blue : 0.1523, 0.0634
+    White: 0.2812, 0.3095
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings:
+    DMT 0x07:   640x480    85.008312 Hz   4:3     43.269 kHz     36.000000 MHz
+    DMT 0x0c:   800x600    85.061274 Hz   4:3     53.674 kHz     56.250000 MHz
+    GTF     :   800x600    99.999707 Hz   4:3     63.600 kHz     68.179000 MHz
+    DMT 0x13:  1024x768    84.996690 Hz   4:3     68.677 kHz     94.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x1024   59.907343 Hz   5:4     63.981 kHz    108.000000 MHz (310 mm x 230 mm)
+                 Hfront   48 Hsync 112 Hback  248 Hpol P
+                 Vfront    1 Vsync   3 Vback   40 Vpol P
+    DTD 2:  1024x768    84.996690 Hz   4:3     68.677 kHz     94.500000 MHz (310 mm x 230 mm)
+                 Hfront   48 Hsync  96 Hback  208 Hpol P
+                 Vfront    1 Vsync   3 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-160 Hz V, 30-70 kHz H, max dotclock 110 MHz
+    Display Product Serial Number: ...
+Checksum: 0x48
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Detailed Timing Descriptor #1: Mismatch of image size 310x230 mm vs display size 320x240 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 310x230 mm vs display size 320x240 mm.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

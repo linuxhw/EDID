@@ -1,52 +1,58 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009e56f0900000000
-011e0101a5190e780a24109759548e27
-1e505400000001010101010101010101
-010101010101b23980d470384b403020
-360035ad1000001a0000000000000000
-0000000000000000001a000000000000
-000000000000000000000000000000fe
-0051563131364648422d4e38300a001a
+00 ff ff ff ff ff ff 00 09 e5 6f 09 00 00 00 00
+01 1e 01 01 a5 19 0e 78 0a 24 10 97 59 54 8e 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b2 39 80 d4 70 38 4b 40 30 20
+36 00 35 ad 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 51 56 31 31 36 46 48 42 2d 4e 38 30 0a 00 1a
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 e5 6f 09 00 00 00 00 01 1e
-version:         01 01
-basic params:    a5 19 0e 78 0a
-chroma info:     24 10 97 59 54 8e 27 1e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    b2 39 80 d4 70 38 4b 40 30 20 36 00 35 ad 10 00 00 1a
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1a
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 fe 00 51 56 31 31 36 46 48 42 2d 4e 38 30 0a
-extensions:      00
-checksum:        1a
+----------------
 
-EDID version: 1.1
-Manufacturer: BOE Model 96f Serial Number --
-Made in week 1 of 2020
-Digital display
-Maximum image size: 25 cm x 14 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5898, 0.3496
-  Green: 0.3291, 0.5546
-  Blue:  0.1523, 0.1181
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 147.700 MHz, 309 mm x 173 mm
-               1920 1968 2000 2132 hborder 0
-               1080 1083 1089 1155 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 69277 Hz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 0
-ASCII string: QV116FHB-N80
-Checksum: 0x1a (valid)
-EDID block does NOT conform to EDID 1.0!
-	Has descriptor blocks other than detailed timings
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2415
+    Made in: week 1 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 25 cm x 14 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3496
+    Green: 0.3291, 0.5546
+    Blue : 0.1523, 0.1181
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.980670 Hz  16:9     69.278 kHz    147.700000 MHz (309 mm x 173 mm)
+                 Hfront   48 Hsync  32 Hback  132 Hpol P
+                 Vfront    3 Vsync   6 Vback   66 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1a '................'
+    Empty Descriptor
+    Alphanumeric Data String: 'QV116FHB-N80'
+Checksum: 0x1a
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x25.
+  Detailed Timing Descriptor #1: Mismatch of image size 309x173 mm vs display size 250x140 mm.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+EDID:
+  Base EDID: The DTD max image size is 309x173mm, which is larger than the display size 250.0x140.0mm.
+
+EDID conformity: FAIL

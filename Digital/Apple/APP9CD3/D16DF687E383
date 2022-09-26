@@ -1,61 +1,63 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000610d39c00000000
-0013010380140f780a00050000000000
-005054000000a0976909000000000000
-00006420000013270024440020300440
-0a54c594000000180000000100061030
-00000000000000000a20000000fe004c
-503039375830322d534c4133000000fe
-00436f6c6f72204c43440a202020006b
+00 ff ff ff ff ff ff 00 06 10 d3 9c 00 00 00 00
+00 13 01 03 80 14 0f 78 0a 00 05 00 00 00 00 00
+00 50 54 00 00 00 a0 97 69 09 00 00 00 00 00 00
+00 00 64 20 00 00 13 27 00 24 44 00 20 30 04 40
+0a 54 c5 94 00 00 00 18 00 00 00 01 00 06 10 30
+00 00 00 00 00 00 00 00 0a 20 00 00 00 fe 00 4c
+50 30 39 37 58 30 32 2d 53 4c 41 33 00 00 00 fe
+00 43 6f 6c 6f 72 20 4c 43 44 0a 20 20 20 00 6b
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 10 d3 9c 00 00 00 00 00 13
-version:         01 03
-basic params:    80 14 0f 78 0a
-chroma info:     00 05 00 00 00 00 00 00 50 54
-established:     00 00 00
-standard:        a0 97 69 09 00 00 00 00 00 00 00 00 64 20 00 00
-descriptor 1:    13 27 00 24 44 00 20 30 04 40 0a 54 c5 94 00 00 00 18
-descriptor 2:    00 00 00 01 00 06 10 30 00 00 00 00 00 00 00 00 0a 20
-descriptor 3:    00 00 00 fe 00 4c 50 30 39 37 58 30 32 2d 53 4c 41 33
-descriptor 4:    00 00 00 fe 00 43 6f 6c 6f 72 20 4c 43 44 0a 20 20 20
-extensions:      00
-checksum:        6b
+----------------
 
-EDID version: 1.3
-Manufacturer: APP Model 9cd3 Serial Number --
-Made in year 2009
-Digital display
-Maximum image size: 20 cm x 15 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.0000, 0.0000
-  Green: 0.0000, 0.0000
-  Blue:  0.0000, 0.0000
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-  1528x1222@83Hz 5:4
-  1088x680@69Hz 16:10
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-  1048x655@92Hz 16:10
-non-conformant standard timing (0 horiz)
-Detailed mode: Clock 100.030 MHz, 197 mm x 148 mm
-               1024 1284 1604 2084 hborder 0
-                768  784  794  800 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 47999 Hz
-Manufacturer-specified data, tag 1
-ASCII string: LP097X02-SLA3
-ASCII string: Color LCD
-Checksum: 0x6b (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 40147
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 20 cm x 15 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.0000, 0.0000
+    Green: 0.0000, 0.0000
+    Blue : 0.0000, 0.0000
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings:
+    GTF     :  1528x1222   82.999917 Hz   5:4    106.406 kHz    223.878000 MHz
+    GTF     :  1088x680    68.999754 Hz  16:10    48.852 kHz     69.565000 MHz
+    GTF     :  1048x655    92.000207 Hz  16:10    63.572 kHz     89.001000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    59.998800 Hz   4:3     47.999 kHz    100.030000 MHz (197 mm x 148 mm)
+                 Hfront  260 Hsync 320 Hback  480 Hpol N
+                 Vfront   16 Vsync  10 Vback    6 Vpol N
+    Manufacturer-Specified Display Descriptor (0x01): 00 01 00 06 10 30 00 00 00 00 00 00 00 00 0a 20 '.....0......... '
+    Alphanumeric Data String: 'LP097X02-SLA3'
+    Alphanumeric Data String: 'Color LCD'
+Checksum: 0x6b
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1048x655 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

@@ -1,133 +1,132 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0010ac13f14c4b4631
-2d1e010380351e78ea0565a756529c27
-0f5054a54b00714f8180a9c0d1c08190
-010101010101023a801871382d40582c
-45000f282100001e000000ff004a374b
-433432330a2020202020000000fc0044
-454c4c205345323431394852000000fd
-00304c1e5412000a2020202020200142
-020320b14c901f010203071216041314
-0565030c001000681a00000101304b00
-2a4480a070382740302035000f282100
-001a011d8018711c1620582c25000f28
-2100009e011d007251d01e206e285500
-0f282100001e8c0ad08a20e02d10103e
-96000f28210000183f29804041842b30
-106028000f282100001800000000007a
+00 ff ff ff ff ff ff 00 10 ac 13 f1 4c 4b 46 31
+2d 1e 01 03 80 35 1e 78 ea 05 65 a7 56 52 9c 27
+0f 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 81 90
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 ff 00 4a 37 4b
+43 34 32 33 0a 20 20 20 20 20 00 00 00 fc 00 44
+45 4c 4c 20 53 45 32 34 31 39 48 52 00 00 00 fd
+00 30 4c 1e 54 12 00 0a 20 20 20 20 20 20 01 42
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   10 ac 13 f1 4c 4b 46 31 2d 1e
-version:         01 03
-basic params:    80 35 1e 78 ea
-chroma info:     05 65 a7 56 52 9c 27 0f 50 54
-established:     a5 4b 00
-standard:        71 4f 81 80 a9 c0 d1 c0 81 90 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 0f 28 21 00 00 1e
-descriptor 2:    00 00 00 ff 00 4a 37 4b 43 34 32 33 0a 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 44 45 4c 4c 20 53 45 32 34 31 39 48 52
-descriptor 4:    00 00 00 fd 00 30 4c 1e 54 12 00 0a 20 20 20 20 20 20
-extensions:      01
-checksum:        42
+02 03 20 b1 4c 90 1f 01 02 03 07 12 16 04 13 14
+05 65 03 0c 00 10 00 68 1a 00 00 01 01 30 4b 00
+2a 44 80 a0 70 38 27 40 30 20 35 00 0f 28 21 00
+00 1a 01 1d 80 18 71 1c 16 20 58 2c 25 00 0f 28
+21 00 00 9e 01 1d 00 72 51 d0 1e 20 6e 28 55 00
+0f 28 21 00 00 1e 8c 0a d0 8a 20 e0 2d 10 10 3e
+96 00 0f 28 21 00 00 18 3f 29 80 40 41 84 2b 30
+10 60 28 00 0f 28 21 00 00 18 00 00 00 00 00 7a
 
-EDID version: 1.3
-Manufacturer: DEL Model f113 Serial Number --
-Made in week 45 of 2020
-Digital display
-Maximum image size: 53 cm x 30 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6523, 0.3359
-  Green: 0.3212, 0.6103
-  Blue:  0.1533, 0.0605
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1600x900@60Hz 16:9
-  1920x1080@60Hz 16:9
-  1280x1024@76Hz 5:4
-Detailed mode: Clock 148.500 MHz, 527 mm x 296 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Serial number: --
-Monitor ranges (GTF): 48-76Hz V, 30-84kHz H, max dotclock 180MHz
-Has 1 extension blocks
-Checksum: 0x42 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-28 bytes of CTA data
-  Video data block
-    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   7 1440x480i@60Hz 16:9  HorFreq: 15734 Hz Clock: 27.000 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  22 1440x576i@50Hz 16:9  HorFreq: 15625 Hz Clock: 27.000 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC  20 1920x1080i@50Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
-    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
-  Vendor-specific data block, OUI 00001a
-Underscans PC formats by default
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 174.500 MHz, 527 mm x 296 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1119 vborder 0
-               +hsync -vsync 
-               VertFreq: 74 Hz, HorFreq: 83894 Hz
-Detailed mode: Clock 74.250 MHz, 527 mm x 296 mm
-               1920 2008 2052 2200 hborder 0
-                540  542  547  562 vborder 0
-               +hsync +vsync interlaced 
-               VertFreq: 60 Hz, HorFreq: 33750 Hz
-Detailed mode: Clock 74.250 MHz, 527 mm x 296 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Detailed mode: Clock 27.000 MHz, 527 mm x 296 mm
-                720  736  798  858 hborder 0
-                480  489  495  525 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 31468 Hz
-Detailed mode: Clock 105.590 MHz, 527 mm x 296 mm
-               1152 1168 1264 1472 hborder 0
-                900  902  910  943 vborder 0
-               -hsync -vsync 
-               VertFreq: 76 Hz, HorFreq: 71732 Hz
-Checksum: 0x7a (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 61715
+    Serial Number: ...
+    Made in: week 45 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 53 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6523, 0.3359
+    Green: 0.3212, 0.6103
+    Blue : 0.1533, 0.0605
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    GTF     :  1280x1024   75.999957 Hz   5:4     81.320 kHz    141.822000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: 'DELL SE2419HR'
+    Display Range Limits:
+      Monitor ranges (GTF): 48-76 Hz V, 30-84 kHz H, max dotclock 180 MHz
+  Extension blocks: 1
+Checksum: 0x42
 
-EDID block does NOT conform to EDID 1.3!
-	Name descriptor not terminated with a newline
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 50 - 76 Hz
-  Horizontal Freq: 15625 - 83894 Hz
-  Maximum Clock: 174.500 MHz
-EDID block does not conform at all!
-	Both the serial number and the serial string are set
+----------------
 
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 75 Hz
+    Flags 1.x: 0x00
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   74.972503 Hz  16:9     83.894 kHz    174.500000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   31 Vpol N
+    DTD 3:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (527 mm x 296 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (527 mm x 296 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 6:  1152x900    76.068226 Hz  32:25    71.732 kHz    105.590000 MHz (527 mm x 296 mm)
+                 Hfront   16 Hsync  96 Hback  208 Hpol N
+                 Vfront    2 Vsync   8 Vback   33 Vpol N
+Checksum: 0x7a
 
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 83.894 kHz (Monitor: 30.000 - 84.000 kHz)
+
+EDID conformity: FAIL

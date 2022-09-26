@@ -1,63 +1,61 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0010ac3bd04d475641
-1a1701030e2b1878ea2cc5a45650a128
-0f5054a54b00714f8180a9c001010101
-0101010101012f2640a060841a303020
-3500b0f01000001a000000ff00504430
-364433364f4156474d0a000000fc0044
-454c4c204532303134480a20000000fd
-00384c1e5311000a20202020202000ed
+00 ff ff ff ff ff ff 00 10 ac 3b d0 4d 47 56 41
+1a 17 01 03 0e 2b 18 78 ea 2c c5 a4 56 50 a1 28
+0f 50 54 a5 4b 00 71 4f 81 80 a9 c0 01 01 01 01
+01 01 01 01 01 01 2f 26 40 a0 60 84 1a 30 30 20
+35 00 b0 f0 10 00 00 1a 00 00 00 ff 00 50 44 30
+36 44 33 36 4f 41 56 47 4d 0a 00 00 00 fc 00 44
+45 4c 4c 20 45 32 30 31 34 48 0a 20 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 ed
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   10 ac 3b d0 4d 47 56 41 1a 17
-version:         01 03
-basic params:    0e 2b 18 78 ea
-chroma info:     2c c5 a4 56 50 a1 28 0f 50 54
-established:     a5 4b 00
-standard:        71 4f 81 80 a9 c0 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    2f 26 40 a0 60 84 1a 30 30 20 35 00 b0 f0 10 00 00 1a
-descriptor 2:    00 00 00 ff 00 50 44 30 36 44 33 36 4f 41 56 47 4d 0a
-descriptor 3:    00 00 00 fc 00 44 45 4c 4c 20 45 32 30 31 34 48 0a 20
-descriptor 4:    00 00 00 fd 00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        ed
+----------------
 
-EDID version: 1.3
-Manufacturer: DEL Model d03b Serial Number --
-Made in week 26 of 2013
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate Composite SyncOnGreen 
-Maximum image size: 43 cm x 24 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6406, 0.3378
-  Green: 0.3154, 0.6289
-  Blue:  0.1591, 0.0585
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1600x900@60Hz 16:9
-Detailed mode: Clock 97.750 MHz, 432 mm x 240 mm
-               1600 1648 1680 1760 hborder 0
-                900  903  908  926 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 55539 Hz
-Serial number: --
-Monitor name: DELL E2014H
-Monitor ranges (GTF): 56-76Hz V, 30-83kHz H, max dotclock 170MHz
-Checksum: 0xed (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 53307
+    Serial Number: ...
+    Made in: week 26 of 2013
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
+    Blank level equals black level
+    Sync: Separate Composite SyncOnGreen
+    Maximum image size: 43 cm x 24 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6406, 0.3378
+    Green: 0.3154, 0.6289
+    Blue : 0.1591, 0.0585
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    59.978156 Hz  16:9     55.540 kHz     97.750000 MHz (432 mm x 240 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   18 Vpol N
+    Display Product Serial Number: ...
+    Display Product Name: 'DELL E2014H'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+Checksum: 0xed
+
+----------------
+
+EDID conformity: PASS

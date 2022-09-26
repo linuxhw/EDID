@@ -1,54 +1,50 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006103f9c00000000
-0e0e0103801c15780a34859255539226
-20505400080001010101010101010101
-01010101010164190040410026301888
-36001dd6100000180000000100061020
-00000000000000000a20000000fe004e
-31343158420a202020202020000000fc
-00436f6c6f72204c43440a20202000f7
+00 ff ff ff ff ff ff 00 06 10 3f 9c 00 00 00 00
+0e 0e 01 03 80 1c 15 78 0a 34 85 92 55 53 92 26
+20 50 54 00 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 1d d6 10 00 00 18 00 00 00 01 00 06 10 20
+00 00 00 00 00 00 00 00 0a 20 00 00 00 fe 00 4e
+31 34 31 58 42 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 6f 6c 6f 72 20 4c 43 44 0a 20 20 20 00 f7
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 10 3f 9c 00 00 00 00 0e 0e
-version:         01 03
-basic params:    80 1c 15 78 0a
-chroma info:     34 85 92 55 53 92 26 20 50 54
-established:     00 08 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    64 19 00 40 41 00 26 30 18 88 36 00 1d d6 10 00 00 18
-descriptor 2:    00 00 00 01 00 06 10 20 00 00 00 00 00 00 00 00 0a 20
-descriptor 3:    00 00 00 fe 00 4e 31 34 31 58 42 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 43 6f 6c 6f 72 20 4c 43 44 0a 20 20 20
-extensions:      00
-checksum:        f7
+----------------
 
-EDID version: 1.3
-Manufacturer: APP Model 9c3f Serial Number --
-Digital display
-Maximum image size: 28 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5703, 0.3349
-  Green: 0.3251, 0.5703
-  Blue:  0.1503, 0.1250
-  White: 0.3134, 0.3291
-Established timings supported:
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-Detailed mode: Clock 65.000 MHz, 285 mm x 214 mm
-               1024 1048 1184 1344 hborder 0
-                768  771  777  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48363 Hz
-Manufacturer-specified data, tag 1
-ASCII string: N141XB
-Monitor name: Color LCD
-Checksum: 0xf7 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing monitor ranges
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 39999
+    Made in: week 14 of 2004
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 28 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5703, 0.3349
+    Green: 0.3251, 0.5703
+    Blue : 0.1503, 0.1250
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (285 mm x 214 mm)
+                 Hfront   24 Hsync 136 Hback  160 Hpol N
+                 Vfront    3 Vsync   6 Vback   29 Vpol N
+    Manufacturer-Specified Display Descriptor (0x01): 00 01 00 06 10 20 00 00 00 00 00 00 00 00 0a 20 '..... ......... '
+    Alphanumeric Data String: 'N141XB'
+    Display Product Name: 'Color LCD'
+Checksum: 0xf7
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

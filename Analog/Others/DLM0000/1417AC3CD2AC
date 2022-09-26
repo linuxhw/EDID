@@ -1,55 +1,58 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00118d00009232fed5
-2a090104000000ff0200000000000000
-00000020000001010101010101010101
-010101010101d50980a020e02d100860
-2200000000080818000000fc004e6f20
-4d6f6e69746f720a2020000000ff0055
-53425f363030362d3139313000000000
-00000000000000000000000000000064
+00 ff ff ff ff ff ff 00 11 8d 00 00 92 32 fe d5
+2a 09 01 04 00 00 00 ff 02 00 00 00 00 00 00 00
+00 00 00 20 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d5 09 80 a0 20 e0 2d 10 08 60
+22 00 00 00 00 08 08 18 00 00 00 fc 00 4e 6f 20
+4d 6f 6e 69 74 6f 72 0a 20 20 00 00 00 ff 00 55
+53 42 5f 36 30 30 36 2d 31 39 31 30 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 64
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   11 8d 00 00 92 32 fe d5 2a 09
-version:         01 04
-basic params:    00 00 00 ff 02
-chroma info:     00 00 00 00 00 00 00 00 00 00
-established:     20 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    d5 09 80 a0 20 e0 2d 10 08 60 22 00 00 00 00 08 08 18
-descriptor 2:    00 00 00 fc 00 4e 6f 20 4d 6f 6e 69 74 6f 72 0a 20 20
-descriptor 3:    00 00 00 ff 00 55 53 42 5f 36 30 30 36 2d 31 39 31 30
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      00
-checksum:        64
+----------------
 
-EDID version: 1.4
-Manufacturer: DLM Model 0 Serial Number --
-Analog display, Input voltage level: 0.7/0.3 V
-Blank level equals black level
-Sync: 
-Image size is variable
-Gamma is defined in an extension block
-Monochrome or grayscale display
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.0000, 0.0000
-  Green: 0.0000, 0.0000
-  Blue:  0.0000, 0.0000
-  White: 0.0000, 0.0000
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-Standard timings supported:
-Detailed mode: Clock 25.170 MHz, 0 mm x 0 mm
-                640  648  744  800 hborder 8
-                480  482  484  525 vborder 8
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 31462 Hz
-Monitor name: No Monitor
-Serial number: --
-Manufacturer-specified data, tag 0
-Checksum: 0x64 (valid)
-	Missing monitor ranges
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: DLM
+    Model: 0
+    Serial Number: ...
+    Made in: week 42 of 1999
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
+    Blank level equals black level
+    Image size is variable
+    Gamma is defined in an extension block
+    Monochrome or grayscale display
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.0000, 0.0000
+    Green: 0.0000, 0.0000
+    Blue : 0.0000, 0.0000
+    White: 0.0000, 0.0000
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:   640x480    59.928571 Hz   4:3     31.462 kHz     25.170000 MHz
+                 Hfront    8 Hsync  96 Hback   40 Hpol N Hborder 8
+                 Vfront    2 Vsync   2 Vback   25 Vpol N Vborder 8
+    Display Product Name: 'No Monitor'
+    Display Product Serial Number: ...
+    Empty Descriptor
+Checksum: 0x64
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: The use of non-zero borders in a DTD is not recommended.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+
+EDID conformity: FAIL

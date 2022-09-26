@@ -1,67 +1,70 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001e6d2b4e70b40100
-060e01038e291f78ea60e5a3574b9c25
-115054a56a808180714f615945593180
-010101010101213340b460b019401450
-130006442100001e000000fd0038551c
-500e000a202020202020000000fc004c
-32303130420a202020202020000000fc
-000a2020202020202020202020200012
+00 ff ff ff ff ff ff 00 1e 6d 2b 4e 70 b4 01 00
+06 0e 01 03 8e 29 1f 78 ea 60 e5 a3 57 4b 9c 25
+11 50 54 a5 6a 80 81 80 71 4f 61 59 45 59 31 80
+01 01 01 01 01 01 21 33 40 b4 60 b0 19 40 14 50
+13 00 06 44 21 00 00 1e 00 00 00 fd 00 38 55 1c
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+32 30 31 30 42 0a 20 20 20 20 20 20 00 00 00 fc
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 12
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1e 6d 2b 4e 70 b4 01 00 06 0e
-version:         01 03
-basic params:    8e 29 1f 78 ea
-chroma info:     60 e5 a3 57 4b 9c 25 11 50 54
-established:     a5 6a 80
-standard:        81 80 71 4f 61 59 45 59 31 80 01 01 01 01 01 01
-descriptor 1:    21 33 40 b4 60 b0 19 40 14 50 13 00 06 44 21 00 00 1e
-descriptor 2:    00 00 00 fd 00 38 55 1c 50 0e 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 4c 32 30 31 30 42 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 0a 20 20 20 20 20 20 20 20 20 20 20 20
-extensions:      00
-checksum:        12
+----------------
 
-EDID version: 1.3
-Manufacturer: GSM Model 4e2b Serial Number --
-Digital display
-Maximum image size: 41 cm x 31 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6376, 0.3417
-  Green: 0.2929, 0.6093
-  Blue:  0.1474, 0.0683
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1152x870@75Hz 192:145 HorFreq: 67500 Hz Clock: 108.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1024x768@85Hz 4:3 HorFreq: 68700 Hz Clock: 94.500 MHz
-  800x600@85Hz 4:3 HorFreq: 53700 Hz Clock: 56.250 MHz
-  640x512@60Hz 5:4
-Detailed mode: Clock 130.890 MHz, 518 mm x 324 mm
-               1600 1620 1700 1780 hborder 0
-               1200 1201 1204 1225 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 73533 Hz
-Monitor ranges (GTF): 56-85Hz V, 28-80kHz H, max dotclock 140MHz
-Monitor name: L2010B
-Checksum: 0x12 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: e
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 20011
+    Serial Number: ...
+    Made in: week 6 of 2004
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 41 cm x 31 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6376, 0.3417
+    Green: 0.2929, 0.6093
+    Blue : 0.1474, 0.0683
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    Apple   :   832x624    74.551266 Hz   4:3     49.726 kHz     57.284000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    Apple   :  1152x870    75.061550 Hz 192:145   68.681 kHz    100.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+    DMT 0x13:  1024x768    84.996690 Hz   4:3     68.677 kHz     94.500000 MHz
+    DMT 0x0c:   800x600    85.061274 Hz   4:3     53.674 kHz     56.250000 MHz
+    GTF     :   640x512    60.000000 Hz   5:4     31.860 kHz     25.488000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1600x1200   60.027517 Hz   4:3     73.534 kHz    130.890000 MHz (518 mm x 324 mm)
+                 Hfront   20 Hsync  80 Hback   80 Hpol P
+                 Vfront    1 Vsync   3 Vback   21 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 56-85 Hz V, 28-80 kHz H, max dotclock 140 MHz
+    Display Product Name: 'L2010B'
+    Display Product Name: ''
+Checksum: 0x12
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x0e.
+  Detailed Timing Descriptor #1: Mismatch of image size 518x324 mm vs display size 410x310 mm.
+  Display Product Name: Empty string.
+EDID:
+  Base EDID: The DTD max image size is 518x324mm, which is larger than the display size 410.0x310.0mm.
+
+EDID conformity: FAIL

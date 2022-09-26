@@ -1,55 +1,52 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006af91c300000000
-001e0104b51e137802d405a754489e25
-0e505400000001010101010101010101
-0101010101015ec940a0b00854703020
-35002dbc100000180000000f00000000
-00000000000000000020000000fe0041
-554f0a202020202020202020000000fe
-004231343051414e30342e30200a00e3
+00 ff ff ff ff ff ff 00 06 af 91 c3 00 00 00 00
+00 1e 01 04 b5 1e 13 78 02 d4 05 a7 54 48 9e 25
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 5e c9 40 a0 b0 08 54 70 30 20
+35 00 2d bc 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 34 30 51 41 4e 30 34 2e 30 20 0a 00 e3
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 af 91 c3 00 00 00 00 00 1e
-version:         01 04
-basic params:    b5 1e 13 78 02
-chroma info:     d4 05 a7 54 48 9e 25 0e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    5e c9 40 a0 b0 08 54 70 30 20 35 00 2d bc 10 00 00 18
-descriptor 2:    00 00 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20
-descriptor 3:    00 00 00 fe 00 41 55 4f 0a 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 42 31 34 30 51 41 4e 30 34 2e 30 20 0a
-extensions:      00
-checksum:        e3
+----------------
 
-EDID version: 1.4
-Manufacturer: AUO Model c391 Serial Number --
-Made in year 2020
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 30 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6552, 0.3291
-  Green: 0.2822, 0.6171
-  Blue:  0.1445, 0.0546
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 515.500 MHz, 301 mm x 188 mm
-               2880 2928 2960 3040 hborder 0
-               1800 1803 1808 1884 vborder 0
-               -hsync -vsync 
-               VertFreq: 90 Hz, HorFreq: 169572 Hz
-Manufacturer-specified data, tag 15
-ASCII string: AUO
-ASCII string: B140QAN04.0 
-Checksum: 0xe3 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 50065
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6552, 0.3291
+    Green: 0.2822, 0.6171
+    Blue : 0.1445, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2880x1800   90.006565 Hz   8:5    169.572 kHz    515.500000 MHz (301 mm x 188 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   76 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B140QAN04.0 '
+Checksum: 0xe3
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

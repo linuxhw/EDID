@@ -1,94 +1,95 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00061025ae946e75ba
-051c0104b53c2278200f71ae5241b226
-0d505400000001010101010101010101
-0101010101014dd000a0f0703e803020
-350055502100001a565e00a0a0a02950
-3020350055502100001a000000fc0069
-4d61630a2020202020202020000000ff
-003838433430363339343645333501bf
-020327c0230907078301000070fa1000
-00127631fc78fbff02108862d369fa10
-00faf8f8feffffcd9180a0c008347030
-20350055502100001a00000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000003e
+00 ff ff ff ff ff ff 00 06 10 25 ae 94 6e 75 ba
+05 1c 01 04 b5 3c 22 78 20 0f 71 ae 52 41 b2 26
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 55 50 21 00 00 1a 56 5e 00 a0 a0 a0 29 50
+30 20 35 00 55 50 21 00 00 1a 00 00 00 fc 00 69
+4d 61 63 0a 20 20 20 20 20 20 20 20 00 00 00 ff
+00 38 38 43 34 30 36 33 39 34 36 45 33 35 01 bf
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 10 25 ae 94 6e 75 ba 05 1c
-version:         01 04
-basic params:    b5 3c 22 78 20
-chroma info:     0f 71 ae 52 41 b2 26 0d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    4d d0 00 a0 f0 70 3e 80 30 20 35 00 55 50 21 00 00 1a
-descriptor 2:    56 5e 00 a0 a0 a0 29 50 30 20 35 00 55 50 21 00 00 1a
-descriptor 3:    00 00 00 fc 00 69 4d 61 63 0a 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 38 38 43 34 30 36 33 39 34 36 45 33 35
-extensions:      01
-checksum:        bf
+02 03 27 c0 23 09 07 07 83 01 00 00 70 fa 10 00
+00 12 76 31 fc 78 fb ff 02 10 88 62 d3 69 fa 10
+00 fa f8 f8 fe ff ff cd 91 80 a0 c0 08 34 70 30
+20 35 00 55 50 21 00 00 1a 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3e
 
-EDID version: 1.4
-Manufacturer: APP Model ae25 Serial Number --
-Made in week 5 of 2018
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 60 cm x 34 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4
-Display x,y Chromaticity:
-  Red:   0.6796, 0.3203
-  Green: 0.2568, 0.6982
-  Blue:  0.1494, 0.0537
-  White: 0.3125, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 533.250 MHz, 597 mm x 336 mm
-               3840 3888 3920 4000 hborder 0
-               2160 2163 2168 2222 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 133312 Hz
-Detailed mode: Clock 241.500 MHz, 597 mm x 336 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1481 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 88786 Hz
-Monitor name: iMac
-Serial number: --
-Has 1 extension blocks
-Checksum: 0xbf (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-35 bytes of CTA data
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 44581
+    Serial Number: ...
+    Made in: week 5 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing does not include the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2568, 0.6982
+    Blue : 0.1494, 0.0537
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD 2:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    Display Product Name: 'iMac'
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0xbf
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 0
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 0010fa
-  Vendor-specific data block, OUI 0010fa
-Underscans PC formats by default
-Basic audio support
-0 native detailed modes
-Detailed mode: Clock 373.250 MHz, 597 mm x 336 mm
-               3200 3248 3280 3360 hborder 0
-               1800 1803 1808 1852 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 111086 Hz
-Checksum: 0x3e (valid)
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (Apple), OUI 00-10-FA:
+    00 12 76 31 fc 78 fb ff 02 10 88 62 d3          '..v1.x.....b.'
+  Vendor-Specific Data Block (Apple), OUI 00-10-FA:
+    fa f8 f8 fe ff ff                               '......'
+  Detailed Timing Descriptors:
+    DTD 3:  3200x1800   59.981809 Hz  16:9    111.086 kHz    373.250000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   44 Vpol N
+Checksum: 0x3e
 
-EDID block does NOT conform to EDID 1.4!
-	Required 640x480p60 timings are missing in the established timings
-	and/or in the SVD list (VIC 1)
-	Missing monitor ranges
-EDID block does not conform at all!
-	Both the serial number and the serial string are set
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+EDID conformity: FAIL

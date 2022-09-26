@@ -1,53 +1,51 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006af741900000000
-010f0103802115780a85a599574f8f26
-1d505400000001010101010101010101
-010101010101ea1a0080502010301520
-44004bcf1000001e000000fd00344c1e
-410b000a202020202020000000fe0041
-554f0a202020202020202020000000fe
-004231353445573031205639200a0026
+00 ff ff ff ff ff ff 00 06 af 74 19 00 00 00 00
+01 0f 01 03 80 21 15 78 0a 85 a5 99 57 4f 8f 26
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ea 1a 00 80 50 20 10 30 15 20
+44 00 4b cf 10 00 00 1e 00 00 00 fd 00 34 4c 1e
+41 0b 00 0a 20 20 20 20 20 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 35 34 45 57 30 31 20 56 39 20 0a 00 26
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 af 74 19 00 00 00 00 01 0f
-version:         01 03
-basic params:    80 21 15 78 0a
-chroma info:     85 a5 99 57 4f 8f 26 1d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    ea 1a 00 80 50 20 10 30 15 20 44 00 4b cf 10 00 00 1e
-descriptor 2:    00 00 00 fd 00 34 4c 1e 41 0b 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fe 00 41 55 4f 0a 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 42 31 35 34 45 57 30 31 20 56 39 20 0a
-extensions:      00
-checksum:        26
+----------------
 
-EDID version: 1.3
-Manufacturer: AUO Model 1974 Serial Number --
-Digital display
-Maximum image size: 33 cm x 21 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5996, 0.3398
-  Green: 0.3095, 0.5595
-  Blue:  0.1503, 0.1152
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 68.900 MHz, 331 mm x 207 mm
-               1280 1301 1333 1408 hborder 0
-                800  804  808  816 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 48934 Hz
-Monitor ranges (GTF): 52-76Hz V, 30-65kHz H, max dotclock 110MHz
-ASCII string: AUO
-ASCII string: B154EW01 V9 
-Checksum: 0x26 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 6516
+    Made in: week 1 of 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5996, 0.3398
+    Green: 0.3095, 0.5595
+    Blue : 0.1503, 0.1152
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.968945 Hz   8:5     48.935 kHz     68.900000 MHz (331 mm x 207 mm)
+                 Hfront   21 Hsync  32 Hback   75 Hpol P
+                 Vfront    4 Vsync   4 Vback    8 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 52-76 Hz V, 30-65 kHz H, max dotclock 110 MHz
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B154EW01 V9 '
+Checksum: 0x26
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

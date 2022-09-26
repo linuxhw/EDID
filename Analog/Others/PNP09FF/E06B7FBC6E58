@@ -1,78 +1,84 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0041d0ff0900000000
-0000010308000078eaee95a3544c9926
-0f505400000001010101010101010101
-01010101010100000010000000000000
-00000000000000000000001000000000
-00000000000000000000000000100000
-00000000000000000000000000000010
-000000000000000000000000000001f6
-02030400023a801871382d40582c4500
-e00e1100001e00000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000027
+00 ff ff ff ff ff ff 00 41 d0 ff 09 00 00 00 00
+00 00 01 03 08 00 00 78 ea ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 10 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 f6
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   41 d0 ff 09 00 00 00 00 00 00
-version:         01 03
-basic params:    08 00 00 78 ea
-chroma info:     ee 95 a3 54 4c 99 26 0f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 2:    00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      01
-checksum:        f6
+02 03 04 00 02 3a 80 18 71 38 2d 40 58 2c 45 00
+e0 0e 11 00 00 1e 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 27
 
-EDID version: 1.3
-Manufacturer: PNP Model 9ff Serial Number --
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate 
-Image size is variable
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1503, 0.0595
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Dummy block
-Dummy block
-Dummy block
-Dummy block
-Has 1 extension blocks
-Checksum: 0xf6 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-0 bytes of CTA data
-0 native detailed modes
-Detailed mode: Clock 148.500 MHz, 480 mm x 270 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Checksum: 0x27 (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PNP
+    Model: 2559
+    Made in: 1990
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Image size is variable
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    Dummy Descriptor:
+    Dummy Descriptor:
+    Dummy Descriptor:
+    Dummy Descriptor:
+  Extension blocks: 1
+Checksum: 0xf6
 
-EDID block does NOT conform to EDID 1.3!
-	Required 640x480p60 timings are missing in the established timings
-	and/or in the SVD list (VIC 1)
-	Missing name descriptor
-	Missing preferred timing
-	Missing monitor ranges
-EDID block does not conform at all!
-	Bad year of manufacture
+----------------
 
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (480 mm x 270 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0x27
 
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Missing preferred timing.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 480x270mm, but the display size is not specified anywhere.
+
+EDID conformity: FAIL

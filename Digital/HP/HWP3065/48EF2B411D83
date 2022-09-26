@@ -1,113 +1,136 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0022f0653001010101
-32180103a0331d78ba31e5a25655a128
-0a5054a10800d1c081c081809500a9c0
-b30001010101023a801871382d40582c
-4500fe1f1100001e000000fd00324c18
-5e11000a202020202020000000fc0048
-5020453233310a2020202020000000ff
-0036434d343530305957360a2020011d
-02031b6223097f078301000067030c00
-2000802d43011084e2000f0000360040
-e86300001a1a1d008051d01c20408035
-0040846300001c000000000000000000
-00005500000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000c0
+00 ff ff ff ff ff ff 00 22 f0 65 30 01 01 01 01
+32 18 01 03 a0 33 1d 78 ba 31 e5 a2 56 55 a1 28
+0a 50 54 a1 08 00 d1 c0 81 c0 81 80 95 00 a9 c0
+b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fe 1f 11 00 00 1e 00 00 00 fd 00 32 4c 18
+5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 45 32 33 31 0a 20 20 20 20 20 00 00 00 ff
+00 36 43 4d 34 35 30 30 59 57 36 0a 20 20 01 1d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 f0 65 30 01 01 01 01 32 18
-version:         01 03
-basic params:    a0 33 1d 78 ba
-chroma info:     31 e5 a2 56 55 a1 28 0a 50 54
-established:     a1 08 00
-standard:        d1 c0 81 c0 81 80 95 00 a9 c0 b3 00 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 fe 1f 11 00 00 1e
-descriptor 2:    00 00 00 fd 00 32 4c 18 5e 11 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 48 50 20 45 32 33 31 0a 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 36 43 4d 34 35 30 30 59 57 36 0a 20 20
-extensions:      01
-checksum:        1d
+02 03 1b 62 23 09 7f 07 83 01 00 00 67 03 0c 00
+20 00 80 2d 43 01 10 84 e2 00 0f 00 00 36 00 40
+e8 63 00 00 1a 1a 1d 00 80 51 d0 1c 20 40 80 35
+00 40 84 63 00 00 1c 00 00 00 00 00 00 00 00 00
+00 00 55 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c0
 
-EDID version: 1.3
-Manufacturer: HWP Model 3065 Serial Number --
-Made in week 50 of 2014
-Digital display
-Maximum image size: 51 cm x 29 cm
-Gamma: 2.20
-DPMS levels: Standby Off
-Undefined display color type
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6328, 0.3388
-  Green: 0.3320, 0.6298
-  Blue:  0.1591, 0.0410
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1920x1080@60Hz 16:9
-  1280x720@60Hz 16:9
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1600x900@60Hz 16:9
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-Detailed mode: Clock 148.500 MHz, 510 mm x 287 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor ranges (GTF): 50-76Hz V, 24-94kHz H, max dotclock 170MHz
-Monitor name: HP E231
-Serial number: --
-Has 1 extension blocks
-Checksum: 0x1d (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-23 bytes of CTA data
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 12389
+    Serial Number: ...
+    Made in: week 50 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 51 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Standby Off
+    Undefined display color type
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6328, 0.3388
+    Green: 0.3320, 0.6298
+    Blue : 0.1591, 0.0410
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (510 mm x 287 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-76 Hz V, 24-94 kHz H, max dotclock 170 MHz
+    Display Product Name: 'HP E231'
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0x1d
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Native detailed modes: 2
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 2.0.0.0
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
     Supports_AI
-    Maximum TMDS clock: 225MHz
-  Video data block
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC   4 1280x720@60Hz 16:9 (native) HorFreq: 45000 Hz Clock: 74.250 MHz
-  Extended tag: Video capability data block
-    YCbCr quantization: No Data (0)
-    RGB quantization: No Data (0)
-    PT scan behaviour: No Data (0)
-    IT scan behaviour: Support both over- and underscan (3)
-    CE scan behaviour: Support both over- and underscan (3)
-Basic audio support
-Supports YCbCr 4:4:4
-2 native detailed modes
-Detailed mode: Clock 328.320 MHz, 0 mm x 0 mm
-               1077 1077 1105 1077 hborder 0
-                132  132  132  231 vborder 0
-               -hsync -vsync analog composite 
-               VertFreq: 1319 Hz, HorFreq: 304846 Hz
-Checksum: 0xc0 (valid)
+    Maximum TMDS clock: 225 MHz
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    Manufacturer-Specified Display Descriptor (0x00): 36 00 40 e8 63 00 00 1a 1a 1d 00 80 51 d0 1c 20 '6.@.c.......Q.. '
+    DTD 2:  1077x132   1319.683102 Hz 359:44   304.847 kHz    328.320000 MHz (analog composite, sync-on-green)
+                 Hfront    0 Hsync  28 Hback  -28 Hpol N
+                 Vfront    0 Vsync   0 Vback   99 Vpol N
+                   40 80 35 00 40 84 63 00 00 1c 00 00 00 00 00 00 00 00 '@.5.@.c...........'
+    Unknown Display Descriptor (0x55): 00 55 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '.U..............'
+Checksum: 0xc0
 
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 20
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 1319 Hz
-  Horizontal Freq: 31469 - 304846 Hz
-  Maximum Clock: 328.320 MHz
-EDID block does not conform at all!
-	Both the serial number and the serial string are set
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x20.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Display Descriptor #5: Monitor descriptor block has byte 2 nonzero (0x36).
+  Display Descriptor #5: Monitor descriptor block has byte 4 nonzero (0x40).
+  Detailed Timing Descriptor #2: 0 values in the video timing:
+    Horizontal Active/Blanking 1077/0
+    Horizontal Frontporch/Sync Width 0/28
+    Vertical Active/Blanking 132/99
+    Vertical Frontporch/Sync Width 0/0
+  Detailed Timing Descriptor #2: 0 or negative horizontal front porch.
+  Detailed Timing Descriptor #2: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #2: Invalid detailed timing descriptor ordering.
+  Display Descriptor #7: Unknown Type 0x55.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.887 - 1319.683 Hz (Monitor: 50.000 - 76.000 Hz)
+    Horizontal Freq: 31.466 - 304.846 kHz (Monitor: 24.000 - 94.000 kHz)
+    Maximum Clock: 328.320 MHz (Monitor: 170.000 MHz)
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

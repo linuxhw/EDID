@@ -1,53 +1,58 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff002e0d000000000000
-0409010280000000e200000000000000
-00000000080001010101010101010101
-01010101010164190040410026301888
-36000000000000180000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000ff
+00 ff ff ff ff ff ff 00 2e 0d 00 00 00 00 00 00
+04 09 01 02 80 00 00 00 e2 00 00 00 00 00 00 00
+00 00 00 00 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 00 00 00 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ff
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   2e 0d 00 00 00 00 00 00 04 09
-version:         01 02
-basic params:    80 00 00 00 e2
-chroma info:     00 00 00 00 00 00 00 00 00 00
-established:     00 08 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    64 19 00 40 41 00 26 30 18 88 36 00 00 00 00 00 00 18
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      00
-checksum:        ff
+----------------
 
-EDID version: 1.2
-Manufacturer: KPM Model 0 Serial Number --
-Digital display
-Image size is variable
-Gamma: 1.00
-DPMS levels: Standby Suspend Off
-Monochrome or grayscale display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.0000, 0.0000
-  Green: 0.0000, 0.0000
-  Blue:  0.0000, 0.0000
-  White: 0.0000, 0.0000
-Established timings supported:
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-Detailed mode: Clock 65.000 MHz, 0 mm x 0 mm
-               1024 1048 1184 1344 hborder 0
-                768  771  777  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48363 Hz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 0
-Checksum: 0xff (valid)
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: KPM
+    Model: 0
+    Made in: week 4 of 1999
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 1.00
+    DPMS levels: Standby Suspend Off
+    Monochrome or grayscale display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.0000, 0.0000
+    Green: 0.0000, 0.0000
+    Blue : 0.0000, 0.0000
+    White: 0.0000, 0.0000
+  Established Timings I & II:
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+                 Hfront   24 Hsync 136 Hback  160 Hpol N
+                 Vfront    3 Vsync   6 Vback   29 Vpol N
+    Empty Descriptor
+    Empty Descriptor
+    Empty Descriptor
+Checksum: 0xff
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+
+EDID conformity: FAIL

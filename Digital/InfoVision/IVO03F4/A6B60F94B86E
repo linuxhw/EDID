@@ -1,53 +1,51 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0026cff40300000000
-2214010380160d780a21d09458568f27
-1f505400000001010101010101010101
-010101010101b0130040415819203020
-3a00df7d000000190000000f00000000
-00000000000000000001000000fe0049
-6e666f566973696f6e0a2020000000fe
-004d3130314e575432205232200a00f9
+00 ff ff ff ff ff ff 00 26 cf f4 03 00 00 00 00
+22 14 01 03 80 16 0d 78 0a 21 d0 94 58 56 8f 27
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b0 13 00 40 41 58 19 20 30 20
+3a 00 df 7d 00 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 00 00 00 fe 00 49
+6e 66 6f 56 69 73 69 6f 6e 0a 20 20 00 00 00 fe
+00 4d 31 30 31 4e 57 54 32 20 52 32 20 0a 00 f9
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   26 cf f4 03 00 00 00 00 22 14
-version:         01 03
-basic params:    80 16 0d 78 0a
-chroma info:     21 d0 94 58 56 8f 27 1f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    b0 13 00 40 41 58 19 20 30 20 3a 00 df 7d 00 00 00 19
-descriptor 2:    00 00 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 01
-descriptor 3:    00 00 00 fe 00 49 6e 66 6f 56 69 73 69 6f 6e 0a 20 20
-descriptor 4:    00 00 00 fe 00 4d 31 30 31 4e 57 54 32 20 52 32 20 0a
-extensions:      00
-checksum:        f9
+----------------
 
-EDID version: 1.3
-Manufacturer: IVO Model 3f4 Serial Number --
-Made in week 34 of 2010
-Digital display
-Maximum image size: 22 cm x 13 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5781, 0.3457
-  Green: 0.3359, 0.5595
-  Blue:  0.1552, 0.1220
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 50.400 MHz, 223 mm x 125 mm
-               1024 1072 1104 1344 hborder 0
-                600  603  613  625 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 37500 Hz
-Manufacturer-specified data, tag 15
-ASCII string: InfoVision
-ASCII string: M101NWT2 R2 
-Checksum: 0xf9 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: IVO
+    Model: 1012
+    Made in: week 34 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 22 cm x 13 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5781, 0.3457
+    Green: 0.3359, 0.5595
+    Blue : 0.1552, 0.1220
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x600    60.000000 Hz 128:75    37.500 kHz     50.400000 MHz (223 mm x 125 mm)
+                 Hfront   48 Hsync  32 Hback  240 Hpol N
+                 Vfront    3 Vsync  10 Vback   12 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 01 '................'
+    Alphanumeric Data String: 'InfoVision'
+    Alphanumeric Data String: 'M101NWT2 R2 '
+Checksum: 0xf9
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

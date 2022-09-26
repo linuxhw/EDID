@@ -1,78 +1,76 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0010ac03f053413334
-1b11010368291a78eec125a3564b9927
-115054bfef809500714f8180950f0101
-0101010101019a29a0d0518422305098
-360098ff1000001c000000fd00384b1e
-530e000a202020202020000000ff0037
-333733313737333433415320000000fc
-0044454c4c2053453139385746500024
+00 ff ff ff ff ff ff 00 10 ac 03 f0 53 41 33 34
+1b 11 01 03 68 29 1a 78 ee c1 25 a3 56 4b 99 27
+11 50 54 bf ef 80 95 00 71 4f 81 80 95 0f 01 01
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 fd 00 38 4b 1e
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 37
+33 37 33 31 37 37 33 34 33 41 53 20 00 00 00 fc
+00 44 45 4c 4c 20 53 45 31 39 38 57 46 50 00 24
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   10 ac 03 f0 53 41 33 34 1b 11
-version:         01 03
-basic params:    68 29 1a 78 ee
-chroma info:     c1 25 a3 56 4b 99 27 11 50 54
-established:     bf ef 80
-standard:        95 00 71 4f 81 80 95 0f 01 01 01 01 01 01 01 01
-descriptor 1:    9a 29 a0 d0 51 84 22 30 50 98 36 00 98 ff 10 00 00 1c
-descriptor 2:    00 00 00 fd 00 38 4b 1e 53 0e 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 ff 00 37 33 37 33 31 37 37 33 34 33 41 53 20
-descriptor 4:    00 00 00 fc 00 44 45 4c 4c 20 53 45 31 39 38 57 46 50
-extensions:      00
-checksum:        24
+----------------
 
-EDID version: 1.3
-Manufacturer: DEL Model f003 Serial Number --
-Made in week 27 of 2007
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 41 cm x 26 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3359
-  Green: 0.2929, 0.5986
-  Blue:  0.1523, 0.0683
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-  1152x870@75Hz 192:145 HorFreq: 67500 Hz Clock: 108.000 MHz
-Standard timings supported:
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@75Hz 16:10 HorFreq: 82300 Hz Clock: 156.000 MHz
-Detailed mode: Clock 106.500 MHz, 408 mm x 255 mm
-               1440 1520 1672 1904 hborder 0
-                900  903  909  934 vborder 0
-               -hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 55934 Hz
-Monitor ranges (GTF): 56-75Hz V, 30-83kHz H, max dotclock 140MHz
-Serial number: -- 
-Checksum: 0x24 (valid)
-EDID block does NOT conform to EDID 1.3!
-	sRGB is signaled, but the chromaticities do not match
-	Name descriptor not terminated with a newline
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 56 - 75 Hz
-  Horizontal Freq: 31469 - 82300 Hz
-  Maximum Clock: 156.000 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 61443
+    Serial Number: ...
+    Made in: week 27 of 2007
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.000 : 0.700 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 41 cm x 26 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3359
+    Green: 0.2929, 0.5986
+    Blue : 0.1523, 0.0683
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    Apple   :   640x480    66.666667 Hz   4:3     35.000 kHz     30.240000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    Apple   :   832x624    74.551266 Hz   4:3     49.726 kHz     57.284000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+    Apple   :  1152x870    75.061550 Hz 192:145   68.681 kHz    100.000000 MHz
+  Standard Timings:
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x30:  1440x900    74.984427 Hz  16:10    70.635 kHz    136.750000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    59.887445 Hz   8:5     55.935 kHz    106.500000 MHz (408 mm x 255 mm)
+                 Hfront   80 Hsync 152 Hback  232 Hpol N
+                 Vfront    3 Vsync   6 Vback   25 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
+    Display Product Serial Number: ...
+    Display Product Name: 'DELL SE198WFP'
+Checksum: 0x24
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Serial Number: ...
+
+EDID conformity: FAIL

@@ -1,60 +1,64 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030ae88e201000000
-191c0104a0351e78e60561a756529c27
-0f505400000001010101010101010101
-010101010101023a801871382d40582c
-45000f282100001e000000fc004c454e
-2d56355335572d422d41000000fd0039
-3e535310000a202020202020000000fe
-004c4d3233385746322d53534b310039
+00 ff ff ff ff ff ff 00 30 ae 88 e2 01 00 00 00
+19 1c 01 04 a0 35 1e 78 e6 05 61 a7 56 52 9c 27
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 fc 00 4c 45 4e
+2d 56 35 53 35 57 2d 42 2d 41 00 00 00 fd 00 39
+3e 53 53 10 00 0a 20 20 20 20 20 20 00 00 00 fe
+00 4c 4d 32 33 38 57 46 32 2d 53 53 4b 31 00 39
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 ae 88 e2 01 00 00 00 19 1c
-version:         01 04
-basic params:    a0 35 1e 78 e6
-chroma info:     05 61 a7 56 52 9c 27 0f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 0f 28 21 00 00 1e
-descriptor 2:    00 00 00 fc 00 4c 45 4e 2d 56 35 53 35 57 2d 42 2d 41
-descriptor 3:    00 00 00 fd 00 39 3e 53 53 10 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 4c 4d 32 33 38 57 46 32 2d 53 53 4b 31
-extensions:      00
-checksum:        39
+----------------
 
-EDID version: 1.4
-Manufacturer: LEN Model e288 Serial Number --
-Made in week 25 of 2018
-Digital display
-8 bits per primary color channel
-Digital interface is not defined
-Maximum image size: 53 cm x 30 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6523, 0.3359
-  Green: 0.3212, 0.6103
-  Blue:  0.1533, 0.0605
-  White: 0.3125, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 148.500 MHz, 527 mm x 296 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor ranges (GTF): 57-62Hz V, 83-83kHz H, max dotclock 160MHz
-ASCII string: LM238WF2-SSK1
-Checksum: 0x39 (valid)
-EDID block does NOT conform to EDID 1.4!
-	sRGB is signaled, but the chromaticities do not match
-	Name descriptor not terminated with a newline
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 60 Hz
-  Horizontal Freq: 67500 - 67500 Hz
-  Maximum Clock: 148.500 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 57992
+    Serial Number: ...
+    Made in: week 25 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    Digital interface is not defined
+    Maximum image size: 53 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6523, 0.3359
+    Green: 0.3212, 0.6103
+    Blue : 0.1533, 0.0605
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Name: 'LEN-V5S5W-B-A'
+    Display Range Limits:
+      Monitor ranges (GTF): 57-62 Hz V, 83-83 kHz H, max dotclock 160 MHz
+    Alphanumeric Data String: 'LM238WF2-SSK1'
+Checksum: 0x39
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 67.500 - 67.500 kHz (Monitor: 83.000 - 83.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+
+EDID conformity: FAIL

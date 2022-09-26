@@ -1,68 +1,70 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0039ee001576050000
-311301037a2213782e1e95a355489827
-155054afce0001010101010101010101
-0101010101011b2150a051001e304888
-350058c21000001c000000fc00554e49
-4f4e2020202020202020000000ff000a
-202020202020202020202020000000ff
-000a202020202020202020202020000d
+00 ff ff ff ff ff ff 00 39 ee 00 15 76 05 00 00
+31 13 01 03 7a 22 13 78 2e 1e 95 a3 55 48 98 27
+15 50 54 af ce 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1b 21 50 a0 51 00 1e 30 48 88
+35 00 58 c2 10 00 00 1c 00 00 00 fc 00 55 4e 49
+4f 4e 20 20 20 20 20 20 20 20 00 00 00 ff 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 ff
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 0d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   39 ee 00 15 76 05 00 00 31 13
-version:         01 03
-basic params:    7a 22 13 78 2e
-chroma info:     1e 95 a3 55 48 98 27 15 50 54
-established:     af ce 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    1b 21 50 a0 51 00 1e 30 48 88 35 00 58 c2 10 00 00 1c
-descriptor 2:    00 00 00 fc 00 55 4e 49 4f 4e 20 20 20 20 20 20 20 20
-descriptor 3:    00 00 00 ff 00 0a 20 20 20 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 0a 20 20 20 20 20 20 20 20 20 20 20 20
-extensions:      00
-checksum:        0d
+----------------
 
-EDID version: 1.3
-Manufacturer: NON Model 1500 Serial Number --
-Made in week 49 of 2009
-Analog display, Input voltage level: 0.7/0.7 V
-Configurable signal levels
-Sync: Separate SyncOnGreen 
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6367, 0.3330
-  Green: 0.2841, 0.5957
-  Blue:  0.1542, 0.0830
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-Detailed mode: Clock 84.750 MHz, 344 mm x 194 mm
-               1360 1432 1568 1776 hborder 0
-                768  771  776  798 vborder 0
-               -hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 47719 Hz
-Serial number: 
--- number: 
-Checksum: 0xd (valid)
-EDID block does NOT conform to EDID 1.3!
-	sRGB is signaled, but the chromaticities do not match
-	Name descriptor not terminated with a newline
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: NON
+    Model: 5376
+    Serial Number: ...
+    Made in: week 49 of 2009
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.000 : 0.700 V p-p
+    Blank-to-black setup/pedestal
+    Sync: Separate SyncOnGreen
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6367, 0.3330
+    Green: 0.2841, 0.5957
+    Blue : 0.1542, 0.0830
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1360x768    59.798991 Hz  85:48    47.720 kHz     84.750000 MHz (344 mm x 194 mm)
+                 Hfront   72 Hsync 136 Hback  208 Hpol N
+                 Vfront    3 Vsync   5 Vback   22 Vpol P
+    Display Product Name: 'UNION        '
+    Display Product Serial Number: ...
+    Display Product Serial Number: ...
+Checksum: 0x0d
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Name: One or more trailing spaces.
+  Display Product Serial Number: ...
+  Display Product Serial Number: ...
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

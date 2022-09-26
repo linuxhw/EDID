@@ -1,60 +1,50 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0022f06c2801010101
-0b150104b5402878e28d85ad4f35b125
-0e505400000001010101010101010101
-010101010101e26800a0a0402e603020
-360081902100001abc1b00a050201730
-3020360081902100001a000000fc0048
-50205a523330770a20202020000000ff
-00434e343131313034314a0a20200077
+00 ff ff ff ff ff ff 00 22 f0 6c 28 01 01 01 01
+0b 15 01 04 b5 40 28 78 e2 8d 85 ad 4f 35 b1 25
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 e2 68 00 a0 a0 40 2e 60 30 20
+36 00 81 90 21 00 00 1a bc 1b 00 a0 50 20 17 30
+30 20 36 00 81 90 21 00 00 1a 00 00 00 fc 00 48
+50 20 5a 52 33 30 77 0a 20 20 20 20 00 00 00 ff
+00 43 4e 34 31 31 31 30 34 31 4a 0a 20 20 00 77
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 f0 6c 28 01 01 01 01 0b 15
-version:         01 04
-basic params:    b5 40 28 78 e2
-chroma info:     8d 85 ad 4f 35 b1 25 0e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    e2 68 00 a0 a0 40 2e 60 30 20 36 00 81 90 21 00 00 1a
-descriptor 2:    bc 1b 00 a0 50 20 17 30 30 20 36 00 81 90 21 00 00 1a
-descriptor 3:    00 00 00 fc 00 48 50 20 5a 52 33 30 77 0a 20 20 20 20
-descriptor 4:    00 00 00 ff 00 43 4e 34 31 31 31 30 34 31 4a 0a 20 20
-extensions:      00
-checksum:        77
+----------------
 
-EDID version: 1.4
-Manufacturer: HWP Model 286c Serial Number --
-Made in week 11 of 2011
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 64 cm x 40 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6777, 0.3085
-  Green: 0.2099, 0.6923
-  Blue:  0.1464, 0.0546
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 268.500 MHz, 641 mm x 400 mm
-               2560 2608 2640 2720 hborder 0
-               1600 1603 1609 1646 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 98713 Hz
-Detailed mode: Clock 71.000 MHz, 641 mm x 400 mm
-               1280 1328 1360 1440 hborder 0
-                800  803  809  823 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 49305 Hz
-Monitor name: HP ZR30w
-Serial number: --
-Checksum: 0x77 (valid)
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 10348
+    Serial Number: ...
+    Made in: week 11 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 64 cm x 40 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6777, 0.3085
+    Green: 0.2099, 0.6923
+    Blue : 0.1464, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   59.971589 Hz   8:5     98.713 kHz    268.500000 MHz (641 mm x 400 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   37 Vpol N
+    DTD 2:  1280x800    59.909545 Hz   8:5     49.306 kHz     71.000000 MHz (641 mm x 400 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   14 Vpol N
+    Display Product Name: 'HP ZR30w'
+    Display Product Serial Number: ...
+Checksum: 0x77
 
+----------------
 
+EDID conformity: PASS

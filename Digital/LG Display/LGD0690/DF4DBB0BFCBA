@@ -1,84 +1,96 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e4900600000000
-3d1e0104a522137803000d0000000000
-00505500000001010101010101010101
-010101010101bc6100a0a0a05d503020
-350058c21000001a000000fd0c3cf071
-7165010a202020202020000000fe0048
-4d483259813135365148470a00000000
-0002813fa8000300000f010a202001f6
-7013790000030114ea860184ff099f00
-2f801f009f055c000200040081030968
-1a000001013cf0000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000af90
+00 ff ff ff ff ff ff 00 30 e4 90 06 00 00 00 00
+3d 1e 01 04 a5 22 13 78 03 00 0d 00 00 00 00 00
+00 50 55 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 61 00 a0 a0 a0 5d 50 30 20
+35 00 58 c2 10 00 00 1a 00 00 00 fd 0c 3c f0 71
+71 65 01 0a 20 20 20 20 20 20 00 00 00 fe 00 48
+4d 48 32 59 81 31 35 36 51 48 47 0a 00 00 00 00
+00 02 81 3f a8 00 03 00 00 0f 01 0a 20 20 01 f6
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 90 06 00 00 00 00 3d 1e
-version:         01 04
-basic params:    a5 22 13 78 03
-chroma info:     00 0d 00 00 00 00 00 00 50 55
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    bc 61 00 a0 a0 a0 5d 50 30 20 35 00 58 c2 10 00 00 1a
-descriptor 2:    00 00 00 fd 0c 3c f0 71 71 65 01 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fe 00 48 4d 48 32 59 81 31 35 36 51 48 47 0a
-descriptor 4:    00 00 00 00 00 02 81 3f a8 00 03 00 00 0f 01 0a 20 20
-extensions:      01
-checksum:        f6
+70 13 79 00 00 03 01 14 ea 86 01 84 ff 09 9f 00
+2f 80 1f 00 9f 05 5c 00 02 00 04 00 81 03 09 68
+1a 00 00 01 01 3c f0 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 af 90
 
-EDID version: 1.4
-Manufacturer: LGD Model 690 Serial Number --
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.0000, 0.0000
-  Green: 0.0000, 0.0000
-  Blue:  0.0000, 0.0000
-  White: 0.3154, 0.3330
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 250.200 MHz, 344 mm x 194 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1533 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 91985 Hz
-Monitor ranges (bare limits): 60-240Hz V, 113-368kHz H, max dotclock 1010MHz
-ASCII string: HMH2Y
-Manufacturer-specified data, tag 0
-Has 1 extension blocks
-Checksum: 0xf6 (valid)
+----------------
 
-DisplayID extension block
-Extension version: 19
-Length 121, version 19, extension count 0
-Checksum: 0xaf (valid)
-Type 1 detailed timing: aspect: 16:9, Preferred  
-Detailed mode: Clock 1000.740 MHz, 0 mm x 0 mm
-               2559 2606 2637 2718
-               1439 1441 1445 1531
-               +hsync -vsync
-Unknown displayid data block 0x81
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1680
+    Made in: week 61 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.0000, 0.0000
+    Green: 0.0000, 0.0000
+    Blue : 0.0000, 0.0000
+    White: 0.3154, 0.3330
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   60.003453 Hz  16:9     91.985 kHz    250.200000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   85 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 60-240 Hz V, 368-368 kHz H, max dotclock 1010 MHz
+    Alphanumeric Data String: 'HMH2Y'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 81 3f a8 00 03 00 00 0f 01 0a 20 20 '.....?........  '
+  Extension blocks: 1
+Checksum: 0xf6
 
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Detailed block string not properly terminated
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 60 Hz
-  Horizontal Freq: 91985 - 91985 Hz
-  Maximum Clock: 250.200 MHz
-EDID block does not conform at all!
-	Has 167772160 nonconformant extension block(s)
-	Bad year of manufacture
-	Bad week of manufacture
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1440  240.001823 Hz  16:9    367.923 kHz   1000.750000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback   85 Vpol N
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 240 Hz
+    Flags 1.x: 0x00
+  Checksum: 0xaf
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 1, DisplayID Extension Block:
+  CTA-861 DisplayID Data Block: Unexpected revision (3 != 0).
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 91.985 - 367.922 kHz (Monitor: 368.000 - 368.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: Invalid week 61 of manufacture.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

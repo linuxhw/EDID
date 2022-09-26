@@ -1,66 +1,60 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001ab37d07f5260000
-2c12010368291a782ac905a3574b9c25
-125054a54b008180950f010101010101
-0101010101019a29a0d0518422305098
-36009a001100001c000000fd00384b1e
-520e000a202020202020000000fc0041
-3139572d330a202020202020000000ff
-00594536413030393937330a20200017
+00 ff ff ff ff ff ff 00 1a b3 7d 07 f5 26 00 00
+2c 12 01 03 68 29 1a 78 2a c9 05 a3 57 4b 9c 25
+12 50 54 a5 4b 00 81 80 95 0f 01 01 01 01 01 01
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 9a 00 11 00 00 1c 00 00 00 fd 00 38 4b 1e
+52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+31 39 57 2d 33 0a 20 20 20 20 20 20 00 00 00 ff
+00 59 45 36 41 30 30 39 39 37 33 0a 20 20 00 17
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1a b3 7d 07 f5 26 00 00 2c 12
-version:         01 03
-basic params:    68 29 1a 78 2a
-chroma info:     c9 05 a3 57 4b 9c 25 12 50 54
-established:     a5 4b 00
-standard:        81 80 95 0f 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    9a 29 a0 d0 51 84 22 30 50 98 36 00 9a 00 11 00 00 1c
-descriptor 2:    00 00 00 fd 00 38 4b 1e 52 0e 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 41 31 39 57 2d 33 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 59 45 36 41 30 30 39 39 37 33 0a 20 20
-extensions:      00
-checksum:        17
+----------------
 
-EDID version: 1.3
-Manufacturer: FUS Model 77d Serial Number --
-Made in week 44 of 2008
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 41 cm x 26 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3398
-  Green: 0.2949, 0.6103
-  Blue:  0.1445, 0.0703
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@75Hz 16:10 HorFreq: 82300 Hz Clock: 156.000 MHz
-Detailed mode: Clock 106.500 MHz, 410 mm x 256 mm
-               1440 1520 1672 1904 hborder 0
-                900  903  909  934 vborder 0
-               -hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 55934 Hz
-Monitor ranges (GTF): 56-75Hz V, 30-82kHz H, max dotclock 140MHz
-Monitor name: A19W-3
-Serial number: --
-Checksum: 0x17 (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 59 - 75 Hz
-  Horizontal Freq: 31469 - 82300 Hz
-  Maximum Clock: 156.000 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: FUS
+    Model: 1917
+    Serial Number: ...
+    Made in: week 44 of 2008
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.000 : 0.700 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 41 cm x 26 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.2949, 0.6103
+    Blue : 0.1445, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x30:  1440x900    74.984427 Hz  16:10    70.635 kHz    136.750000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    59.887445 Hz   8:5     55.935 kHz    106.500000 MHz (410 mm x 256 mm)
+                 Hfront   80 Hsync 152 Hback  232 Hpol N
+                 Vfront    3 Vsync   6 Vback   25 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 56-75 Hz V, 30-82 kHz H, max dotclock 140 MHz
+    Display Product Name: 'A19W-3'
+    Display Product Serial Number: ...
+Checksum: 0x17
+
+----------------
+
+EDID conformity: PASS

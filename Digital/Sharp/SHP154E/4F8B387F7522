@@ -1,60 +1,61 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004d104e1500000000
-2d1f0104a51d127807c580a7534aa426
-0d505400000001010101010101010101
-01010101010179e700a0f06045903020
-360020b410000018000000fd00283c95
-953c010a202020202020000000100000
-000000000000000000000000000000fc
-004c5131333452314a5735320a20005f
+00 ff ff ff ff ff ff 00 4d 10 4e 15 00 00 00 00
+2d 1f 01 04 a5 1d 12 78 07 c5 80 a7 53 4a a4 26
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 79 e7 00 a0 f0 60 45 90 30 20
+36 00 20 b4 10 00 00 18 00 00 00 fd 00 28 3c 95
+95 3c 01 0a 20 20 20 20 20 20 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc
+00 4c 51 31 33 34 52 31 4a 57 35 32 0a 20 00 5f
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4d 10 4e 15 00 00 00 00 2d 1f
-version:         01 04
-basic params:    a5 1d 12 78 07
-chroma info:     c5 80 a7 53 4a a4 26 0d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    79 e7 00 a0 f0 60 45 90 30 20 36 00 20 b4 10 00 00 18
-descriptor 2:    00 00 00 fd 00 28 3c 95 95 3c 01 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 fc 00 4c 51 31 33 34 52 31 4a 57 35 32 0a 20
-extensions:      00
-checksum:        5f
+----------------
 
-EDID version: 1.4
-Manufacturer: SHP Model 154e Serial Number --
-Made in week 45 of 2021
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 29 cm x 18 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6552, 0.3242
-  Green: 0.2900, 0.6416
-  Blue:  0.1503, 0.0507
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 592.570 MHz, 288 mm x 180 mm
-               3840 3888 3920 4000 hborder 0
-               2400 2403 2409 2469 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 148142 Hz
-Monitor ranges (bare limits): 40-60Hz V, 149-149kHz H, max dotclock 600MHz
-Dummy block
-Monitor name: LQ134R1JW52
-Checksum: 0x5f (valid)
-EDID block does NOT conform to EDID 1.4!
-	sRGB is signaled, but the chromaticities do not match
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 60 Hz
-  Horizontal Freq: 148142 - 148142 Hz
-  Maximum Clock: 592.570 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SHP
+    Model: 5454
+    Made in: week 45 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6552, 0.3242
+    Green: 0.2900, 0.6416
+    Blue : 0.1503, 0.0507
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2400   60.001013 Hz   8:5    148.143 kHz    592.570000 MHz (288 mm x 180 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   60 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 149-149 kHz H, max dotclock 600 MHz
+    Dummy Descriptor:
+    Display Product Name: 'LQ134R1JW52'
+Checksum: 0x5f
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 148.142 - 148.142 kHz (Monitor: 149.000 - 149.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+
+EDID conformity: FAIL

@@ -1,56 +1,54 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004e8181bb00000000
-241e0104951f117803aa25a5554d9c27
-10505400000001010101010101010101
-010101010101993b8010713850403020
-360035ae1000001a0000000000000000
-00000000000000000000000000fe004d
-44542032380a202020202020000000fe
-005852313430454136542041300a0088
+00 ff ff ff ff ff ff 00 4e 81 81 bb 00 00 00 00
+24 1e 01 04 95 1f 11 78 03 aa 25 a5 55 4d 9c 27
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 99 3b 80 10 71 38 50 40 30 20
+36 00 35 ae 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4d
+44 54 20 32 38 0a 20 20 20 20 20 20 00 00 00 fe
+00 58 52 31 34 30 45 41 36 54 20 41 30 0a 00 88
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4e 81 81 bb 00 00 00 00 24 1e
-version:         01 04
-basic params:    95 1f 11 78 03
-chroma info:     aa 25 a5 55 4d 9c 27 10 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    99 3b 80 10 71 38 50 40 30 20 36 00 35 ae 10 00 00 1a
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fe 00 4d 44 54 20 32 38 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 58 52 31 34 30 45 41 36 54 20 41 30 0a
-extensions:      00
-checksum:        88
+----------------
 
-EDID version: 1.4
-Manufacturer: STA Model bb81 Serial Number --
-Made in week 36 of 2020
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6464, 0.3339
-  Green: 0.3027, 0.6113
-  Blue:  0.1523, 0.0644
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 152.570 MHz, 309 mm x 174 mm
-               1920 1968 2000 2192 hborder 0
-               1080 1083 1089 1160 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 69603 Hz
-Manufacturer-specified data, tag 0
-ASCII string: MDT 28
-ASCII string: XR140EA6T A0
-Checksum: 0x88 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: STA
+    Model: 48001
+    Made in: week 36 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6464, 0.3339
+    Green: 0.3027, 0.6113
+    Blue : 0.1523, 0.0644
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.002674 Hz  16:9     69.603 kHz    152.570000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback  192 Hpol P
+                 Vfront    3 Vsync   6 Vback   71 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'MDT 28'
+    Alphanumeric Data String: 'XR140EA6T A0'
+Checksum: 0x88
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

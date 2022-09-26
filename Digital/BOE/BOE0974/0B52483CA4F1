@@ -1,85 +1,90 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009e5740900000000
-0d1f0104a5221378070125a5534ba027
-0e505400000001010101010101010101
-01010101010109ec00a0a0a067503020
-350000b031000018000000fd0030a5f4
-f443010a202020202020000000fe0042
-4f452043510a202020202020000000fe
-004e4531353651484d2d4e59320a01d7
-7013790000030114e5040184ff09ae00
-2f001f009f0527000200050000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000001890
+00 ff ff ff ff ff ff 00 09 e5 74 09 00 00 00 00
+0d 1f 01 04 a5 22 13 78 07 01 25 a5 53 4b a0 27
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 09 ec 00 a0 a0 a0 67 50 30 20
+35 00 00 b0 31 00 00 18 00 00 00 fd 00 30 a5 f4
+f4 43 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 35 36 51 48 4d 2d 4e 59 32 0a 01 d7
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 e5 74 09 00 00 00 00 0d 1f
-version:         01 04
-basic params:    a5 22 13 78 07
-chroma info:     01 25 a5 53 4b a0 27 0e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    09 ec 00 a0 a0 a0 67 50 30 20 35 00 00 b0 31 00 00 18
-descriptor 2:    00 00 00 fd 00 30 a5 f4 f4 43 01 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fe 00 42 4f 45 20 43 51 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 4e 45 31 35 36 51 48 4d 2d 4e 59 32 0a
-extensions:      01
-checksum:        d7
+70 13 79 00 00 03 01 14 e5 04 01 84 ff 09 ae 00
+2f 00 1f 00 9f 05 27 00 02 00 05 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 18 90
 
-EDID version: 1.4
-Manufacturer: BOE Model 974 Serial Number --
-Made in week 13 of 2021
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6445, 0.3242
-  Green: 0.2929, 0.6259
-  Blue:  0.1523, 0.0566
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 604.250 MHz, 768 mm x 432 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1543 vborder 0
-               -hsync -vsync 
-               VertFreq: 143 Hz, HorFreq: 222150 Hz
-Monitor ranges (bare limits): 48-165Hz V, 244-244kHz H, max dotclock 670MHz
-ASCII string: BOE CQ
-ASCII string: NE156QHM-NY2
-Has 1 extension blocks
-Checksum: 0xd7 (valid)
+----------------
 
-DisplayID extension block
-Extension version: 19
-Length 121, version 19, extension count 0
-Checksum: 0x18 (valid)
-Type 1 detailed timing: aspect: 16:9, Preferred  
-Detailed mode: Clock 667.890 MHz, 0 mm x 0 mm
-               2559 2606 2637 2733
-               1439 1441 1446 1478
-               -hsync -vsync
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2420
+    Made in: week 13 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6445, 0.3242
+    Green: 0.2929, 0.6259
+    Blue : 0.1523, 0.0566
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440  143.973257 Hz  16:9    222.151 kHz    604.250000 MHz (768 mm x 432 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   95 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-165 Hz V, 244-244 kHz H, max dotclock 670 MHz
+    Alphanumeric Data String: 'BOE CQ'
+    Alphanumeric Data String: 'NE156QHM-NY2'
+  Extension blocks: 1
+Checksum: 0xd7
 
-EDID block does NOT conform to EDID 1.4!
-	sRGB is signaled, but the chromaticities do not match
-	Missing name descriptor
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 143 - 143 Hz
-  Horizontal Freq: 222150 - 222150 Hz
-  Maximum Clock: 604.250 MHz
-EDID block does not conform at all!
-	Has 687865856 nonconformant extension block(s)
+----------------
 
+Block 1, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1440  165.003212 Hz  16:9    244.205 kHz    667.900000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   95 Hpol N
+               Vfront    3 Vsync   6 Vback   31 Vpol N
+  Checksum: 0x18
+Checksum: 0x90
 
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 222.150 - 244.204 kHz (Monitor: 244.000 - 244.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 768x432 mm vs display size 340x190 mm.
+  Missing Display Product Name.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+EDID:
+  Base EDID: The DTD max image size is 768x432mm, which is larger than the display size 340.0x190.0mm.
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

@@ -1,72 +1,66 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004d10511500000000
-311f0104b51d12780b6e60a95249a126
-0d505400000001010101010101010101
-01010101010172e700a0f06045903020
-360020b410000018000000fd00303c94
-943b010a202020202020000000fe0047
-35394a38814c51313334523100000000
-0002410332011200000b410a20200126
-02030f00e3058000e606050166662600
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000a0
+00 ff ff ff ff ff ff 00 4d 10 51 15 00 00 00 00
+31 1f 01 04 b5 1d 12 78 0b 6e 60 a9 52 49 a1 26
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 72 e7 00 a0 f0 60 45 90 30 20
+36 00 20 b4 10 00 00 18 00 00 00 fd 00 30 3c 94
+94 3b 01 0a 20 20 20 20 20 20 00 00 00 fe 00 47
+35 39 4a 38 81 4c 51 31 33 34 52 31 00 00 00 00
+00 02 41 03 32 01 12 00 00 0b 41 0a 20 20 01 26
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4d 10 51 15 00 00 00 00 31 1f
-version:         01 04
-basic params:    b5 1d 12 78 0b
-chroma info:     6e 60 a9 52 49 a1 26 0d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    72 e7 00 a0 f0 60 45 90 30 20 36 00 20 b4 10 00 00 18
-descriptor 2:    00 00 00 fd 00 30 3c 94 94 3b 01 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fe 00 47 35 39 4a 38 81 4c 51 31 33 34 52 31
-descriptor 4:    00 00 00 00 00 02 41 03 32 01 12 00 00 0b 41 0a 20 20
-extensions:      01
-checksum:        26
+02 03 0f 00 e3 05 80 00 e6 06 05 01 66 66 26 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a0
 
-EDID version: 1.4
-Manufacturer: SHP Model 1551 Serial Number --
-Made in week 49 of 2021
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 29 cm x 18 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6611, 0.3222
-  Green: 0.2880, 0.6308
-  Blue:  0.1494, 0.0527
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 592.500 MHz, 288 mm x 180 mm
-               3840 3888 3920 4000 hborder 0
-               2400 2403 2409 2469 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 148125 Hz
-Monitor ranges (bare limits): 48-60Hz V, 148-148kHz H, max dotclock 590MHz
-ASCII string: G59J8
-Manufacturer-specified data, tag 0
-Has 1 extension blocks
-Checksum: 0x26 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-11 bytes of CTA data
-  Extended tag: Colorimetry data block
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SHP
+    Model: 5457
+    Made in: week 49 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6611, 0.3222
+    Green: 0.2880, 0.6308
+    Blue : 0.1494, 0.0527
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2400   59.993925 Hz   8:5    148.125 kHz    592.500000 MHz (288 mm x 180 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   60 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-60 Hz V, 148-148 kHz H, max dotclock 590 MHz
+    Alphanumeric Data String: 'G59J8'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 03 32 01 12 00 00 0b 41 0a 20 20 '....A.2.....A.  '
+  Extension blocks: 1
+Checksum: 0x26
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
     BT2020RGB
-  Extended tag: HDR static metadata data block
+  HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
       SMPTE ST2084
@@ -75,15 +69,26 @@ Extension version: 3
     Desired content max luminance: 102 (455.515 cd/m^2)
     Desired content max frame-average luminance: 102 (455.515 cd/m^2)
     Desired content min luminance: 38 (0.101 cd/m^2)
-0 native detailed modes
-Checksum: 0xa0 (valid)
+Checksum: 0xa0
 
-EDID block does NOT conform to EDID 1.4!
-	Required 640x480p60 timings are missing in the established timings
-	and/or in the SVD list (VIC 1)
-	Missing name descriptor
-	Detailed block string not properly terminated
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 59 - 59 Hz
-  Horizontal Freq: 148125 - 148125 Hz
-  Maximum Clock: 592.500 MHz
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 592.500 MHz (Monitor: 590.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+EDID conformity: FAIL

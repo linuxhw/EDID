@@ -1,61 +1,50 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0010ac164033455447
-14120104a54028782a8585a85334aa25
-12505400000001010101010101010101
-010101010101bc1b00a0502017303020
-360086962100001ab06800a0a0402e60
-3020360086962100001e000000fc0044
-454c4c333030375746504843000000ff
-00595732353838354a475445330a00a6
+00 ff ff ff ff ff ff 00 10 ac 16 40 33 45 54 47
+14 12 01 04 a5 40 28 78 2a 85 85 a8 53 34 aa 25
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 1b 00 a0 50 20 17 30 30 20
+36 00 86 96 21 00 00 1a b0 68 00 a0 a0 40 2e 60
+30 20 36 00 86 96 21 00 00 1e 00 00 00 fc 00 44
+45 4c 4c 33 30 30 37 57 46 50 48 43 00 00 00 ff
+00 59 57 32 35 38 38 35 4a 47 54 45 33 0a 00 a6
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   10 ac 16 40 33 45 54 47 14 12
-version:         01 04
-basic params:    a5 40 28 78 2a
-chroma info:     85 85 a8 53 34 aa 25 12 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    bc 1b 00 a0 50 20 17 30 30 20 36 00 86 96 21 00 00 1a
-descriptor 2:    b0 68 00 a0 a0 40 2e 60 30 20 36 00 86 96 21 00 00 1e
-descriptor 3:    00 00 00 fc 00 44 45 4c 4c 33 30 30 37 57 46 50 48 43
-descriptor 4:    00 00 00 ff 00 59 57 32 35 38 38 35 4a 47 54 45 33 0a
-extensions:      00
-checksum:        a6
+----------------
 
-EDID version: 1.4
-Manufacturer: DEL Model 4016 Serial Number --
-Made in week 20 of 2008
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 64 cm x 40 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6582, 0.3242
-  Green: 0.2041, 0.6650
-  Blue:  0.1464, 0.0703
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 71.000 MHz, 646 mm x 406 mm
-               1280 1328 1360 1440 hborder 0
-                800  803  809  823 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 49305 Hz
-Detailed mode: Clock 268.000 MHz, 646 mm x 406 mm
-               2560 2608 2640 2720 hborder 0
-               1600 1603 1609 1646 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 98529 Hz
-Serial number: --
-Checksum: 0xa6 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Name descriptor not terminated with a newline
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 16406
+    Serial Number: ...
+    Made in: week 20 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 64 cm x 40 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6582, 0.3242
+    Green: 0.2041, 0.6650
+    Blue : 0.1464, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.909545 Hz   8:5     49.306 kHz     71.000000 MHz (646 mm x 406 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   14 Vpol N
+    DTD 2:  2560x1600   59.859910 Hz   8:5     98.529 kHz    268.000000 MHz (646 mm x 406 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   37 Vpol P
+    Display Product Name: 'DELL3007WFPHC'
+    Display Product Serial Number: ...
+Checksum: 0xa6
 
+----------------
 
+EDID conformity: PASS

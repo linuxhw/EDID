@@ -1,60 +1,54 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e4450300000000
-0015010490160e7802e887965a559528
-22515500000001010101010101010101
-0101010101014c1d00ec502018304030
-5700d9880000001b1612008050201630
-30204700d9880000001b000000fe0043
-3347524e803130315758310a00000000
-00004132a80000000001010a2020009a
+00 ff ff ff ff ff ff 00 30 e4 45 03 00 00 00 00
+00 15 01 04 90 16 0e 78 02 e8 87 96 5a 55 95 28
+22 51 55 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4c 1d 00 ec 50 20 18 30 40 30
+57 00 d9 88 00 00 00 1b 16 12 00 80 50 20 16 30
+30 20 47 00 d9 88 00 00 00 1b 00 00 00 fe 00 43
+33 47 52 4e 80 31 30 31 57 58 31 0a 00 00 00 00
+00 00 41 32 a8 00 00 00 00 01 01 0a 20 20 00 9a
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 45 03 00 00 00 00 00 15
-version:         01 04
-basic params:    90 16 0e 78 02
-chroma info:     e8 87 96 5a 55 95 28 22 51 55
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    4c 1d 00 ec 50 20 18 30 40 30 57 00 d9 88 00 00 00 1b
-descriptor 2:    16 12 00 80 50 20 16 30 30 20 47 00 d9 88 00 00 00 1b
-descriptor 3:    00 00 00 fe 00 43 33 47 52 4e 80 31 30 31 57 58 31 0a
-descriptor 4:    00 00 00 00 00 00 41 32 a8 00 00 00 00 01 01 0a 20 20
-extensions:      00
-checksum:        9a
+----------------
 
-EDID version: 1.4
-Manufacturer: LGD Model 345 Serial Number --
-Made in year 2011
-Digital display
-6 bits per primary color channel
-Digital interface is not defined
-Maximum image size: 22 cm x 14 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5888, 0.3535
-  Green: 0.3339, 0.5820
-  Blue:  0.1582, 0.1328
-  White: 0.3173, 0.3349
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 75.000 MHz, 217 mm x 136 mm
-               1280 1344 1392 1516 hborder 0
-                800  805  812  824 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 49472 Hz
-Detailed mode: Clock 46.300 MHz, 217 mm x 136 mm
-               1280 1328 1360 1408 hborder 0
-                800  804  811  822 vborder 0
-               +hsync -vsync 
-               VertFreq: 40 Hz, HorFreq: 32883 Hz
-ASCII string: C3GRN
-Manufacturer-specified data, tag 0
-Checksum: 0x9a (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 837
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 22 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5888, 0.3535
+    Green: 0.3339, 0.5820
+    Blue : 0.1582, 0.1328
+    White: 0.3173, 0.3349
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.039194 Hz   8:5     49.472 kHz     75.000000 MHz (217 mm x 136 mm)
+                 Hfront   64 Hsync  48 Hback  124 Hpol P
+                 Vfront    5 Vsync   7 Vback   12 Vpol N
+    DTD 2:  1280x800    40.004286 Hz   8:5     32.884 kHz     46.300000 MHz (217 mm x 136 mm)
+                 Hfront   48 Hsync  32 Hback   48 Hpol P
+                 Vfront    4 Vsync   7 Vback   11 Vpol N
+    Alphanumeric Data String: 'C3GRN'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 32 a8 00 00 00 00 01 01 0a 20 20 '....A2........  '
+Checksum: 0x9a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

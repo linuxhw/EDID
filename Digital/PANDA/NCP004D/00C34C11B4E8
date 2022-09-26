@@ -1,63 +1,62 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0038704d0000000000
-331f0104a5221378036850985c588e28
-1b505400000001010101010101010101
-010101010101918a8004713832403020
-350058c21000001abd39800471383240
-3020350058c21000001a000000fd0030
-90a3a323010a202020202020000000fe
-004e4531353646484d2d4e58310a00f4
+00 ff ff ff ff ff ff 00 38 70 4d 00 00 00 00 00
+33 1f 01 04 a5 22 13 78 03 68 50 98 5c 58 8e 28
+1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 91 8a 80 04 71 38 32 40 30 20
+35 00 58 c2 10 00 00 1a bd 39 80 04 71 38 32 40
+30 20 35 00 58 c2 10 00 00 1a 00 00 00 fd 00 30
+90 a3 a3 23 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 35 36 46 48 4d 2d 4e 58 31 0a 00 f4
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   38 70 4d 00 00 00 00 00 33 1f
-version:         01 04
-basic params:    a5 22 13 78 03
-chroma info:     68 50 98 5c 58 8e 28 1b 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    91 8a 80 04 71 38 32 40 30 20 35 00 58 c2 10 00 00 1a
-descriptor 2:    bd 39 80 04 71 38 32 40 30 20 35 00 58 c2 10 00 00 1a
-descriptor 3:    00 00 00 fd 00 30 90 a3 a3 23 01 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 4e 45 31 35 36 46 48 4d 2d 4e 58 31 0a
-extensions:      00
-checksum:        f4
+----------------
 
-EDID version: 1.4
-Manufacturer: NCP Model 4d Serial Number --
-Made in week 51 of 2021
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.5947, 0.3613
-  Green: 0.3457, 0.5546
-  Blue:  0.1572, 0.1064
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 354.730 MHz, 344 mm x 194 mm
-               1920 1968 2000 2180 hborder 0
-               1080 1083 1088 1130 vborder 0
-               +hsync -vsync 
-               VertFreq: 144 Hz, HorFreq: 162720 Hz
-Detailed mode: Clock 147.810 MHz, 344 mm x 194 mm
-               1920 1968 2000 2180 hborder 0
-               1080 1083 1088 1130 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 67802 Hz
-Monitor ranges (bare limits): 48-144Hz V, 163-163kHz H, max dotclock 350MHz
-ASCII string: NE156FHM-NX1
-Checksum: 0xf4 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 144 Hz
-  Horizontal Freq: 67802 - 162720 Hz
-  Maximum Clock: 354.730 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: NCP
+    Model: 77
+    Made in: week 51 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5947, 0.3613
+    Green: 0.3457, 0.5546
+    Blue : 0.1572, 0.1064
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  144.000162 Hz  16:9    162.720 kHz    354.730000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  180 Hpol P
+                 Vfront    3 Vsync   5 Vback   42 Vpol N
+    DTD 2:  1920x1080   60.002436 Hz  16:9     67.803 kHz    147.810000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  180 Hpol P
+                 Vfront    3 Vsync   5 Vback   42 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-144 Hz V, 163-163 kHz H, max dotclock 350 MHz
+    Alphanumeric Data String: 'NE156FHM-NX1'
+Checksum: 0xf4
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 67.802 - 162.720 kHz (Monitor: 163.000 - 163.000 kHz)
+    Maximum Clock: 354.730 MHz (Monitor: 350.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

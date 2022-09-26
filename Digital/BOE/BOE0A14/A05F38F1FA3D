@@ -1,77 +1,87 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009e5140a00000000
-121f0104a522137803fec5ae5043b126
-0e505400000001010101010101010101
-010101010101096400b0a0a078503020
-360058c210000018000000fd0c30a502
-0246010a202020202020000000fe0042
-4f452043510a202020202020000000fe
-004e4531353651484d2d4e59350a0179
-701379000003011419130184ff09af00
-2f001f009f0577000200050000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000008490
+00 ff ff ff ff ff ff 00 09 e5 14 0a 00 00 00 00
+12 1f 01 04 a5 22 13 78 03 fe c5 ae 50 43 b1 26
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 09 64 00 b0 a0 a0 78 50 30 20
+36 00 58 c2 10 00 00 18 00 00 00 fd 0c 30 a5 02
+02 46 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 35 36 51 48 4d 2d 4e 59 35 0a 01 79
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 e5 14 0a 00 00 00 00 12 1f
-version:         01 04
-basic params:    a5 22 13 78 03
-chroma info:     fe c5 ae 50 43 b1 26 0e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    09 64 00 b0 a0 a0 78 50 30 20 36 00 58 c2 10 00 00 18
-descriptor 2:    00 00 00 fd 0c 30 a5 02 02 46 01 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fe 00 42 4f 45 20 43 51 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 4e 45 31 35 36 51 48 4d 2d 4e 59 35 0a
-extensions:      01
-checksum:        79
+70 13 79 00 00 03 01 14 19 13 01 84 ff 09 af 00
+2f 00 1f 00 9f 05 77 00 02 00 05 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 84 90
 
-EDID version: 1.4
-Manufacturer: BOE Model a14 Serial Number --
-Made in week 18 of 2021
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6826, 0.3154
-  Green: 0.2646, 0.6933
-  Blue:  0.1513, 0.0546
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 256.090 MHz, 344 mm x 194 mm
-               2560 2608 2640 2736 hborder 0
-               1440 1443 1449 1560 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 93600 Hz
-Monitor ranges (bare limits): 48-165Hz V, 2-257kHz H, max dotclock 700MHz
-ASCII string: BOE CQ
-ASCII string: NE156QHM-NY5
-Has 1 extension blocks
-Checksum: 0x79 (valid)
+----------------
 
-DisplayID extension block
-Extension version: 19
-Length 121, version 19, extension count 0
-Checksum: 0x84 (valid)
-Type 1 detailed timing: aspect: 16:9, Preferred  
-Detailed mode: Clock 704.250 MHz, 0 mm x 0 mm
-               2559 2606 2637 2734
-               1439 1441 1446 1558
-               -hsync -vsync
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2580
+    Made in: week 18 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6826, 0.3154
+    Green: 0.2646, 0.6933
+    Blue : 0.1513, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   60.000094 Hz  16:9     93.600 kHz    256.090000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   96 Hpol N
+                 Vfront    3 Vsync   6 Vback  111 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-165 Hz V, 257-257 kHz H, max dotclock 700 MHz
+    Alphanumeric Data String: 'BOE CQ'
+    Alphanumeric Data String: 'NE156QHM-NY5'
+  Extension blocks: 1
+Checksum: 0x79
 
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-EDID block does not conform at all!
-	Has -2030043136 nonconformant extension block(s)
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1440  165.003186 Hz  16:9    257.405 kHz    704.260000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   96 Hpol N
+               Vfront    3 Vsync   6 Vback  111 Vpol N
+  Checksum: 0x84
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 93.600 - 257.404 kHz (Monitor: 257.000 - 257.000 kHz)
+    Maximum Clock: 704.260 MHz (Monitor: 700.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

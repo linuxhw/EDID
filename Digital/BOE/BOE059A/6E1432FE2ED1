@@ -1,53 +1,50 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009e59a0500000000
-01140103802213780aed809d5a559c25
-19505400000001010101010101010101
-010101010101411c56a0500016303020
-360058c1100000190000000f000a0000
-00000000000000000020000000fe0042
-4f45204f540a202020202020000000fe
-0048543135365758422d3530300a00a4
+00 ff ff ff ff ff ff 00 09 e5 9a 05 00 00 00 00
+01 14 01 03 80 22 13 78 0a ed 80 9d 5a 55 9c 25
+19 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 41 1c 56 a0 50 00 16 30 30 20
+36 00 58 c1 10 00 00 19 00 00 00 0f 00 0a 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 42
+4f 45 20 4f 54 0a 20 20 20 20 20 20 00 00 00 fe
+00 48 54 31 35 36 57 58 42 2d 35 30 30 0a 00 a4
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 e5 9a 05 00 00 00 00 01 14
-version:         01 03
-basic params:    80 22 13 78 0a
-chroma info:     ed 80 9d 5a 55 9c 25 19 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    41 1c 56 a0 50 00 16 30 30 20 36 00 58 c1 10 00 00 19
-descriptor 2:    00 00 00 0f 00 0a 00 00 00 00 00 00 00 00 00 00 00 20
-descriptor 3:    00 00 00 fe 00 42 4f 45 20 4f 54 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 48 54 31 35 36 57 58 42 2d 35 30 30 0a
-extensions:      00
-checksum:        a4
+----------------
 
-EDID version: 1.3
-Manufacturer: BOE Model 59a Serial Number --
-Made in week 1 of 2010
-Digital display
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6162, 0.3535
-  Green: 0.3349, 0.6103
-  Blue:  0.1464, 0.0976
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 72.330 MHz, 344 mm x 193 mm
-               1366 1414 1446 1526 hborder 0
-                768  771  777  790 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 47398 Hz
-Manufacturer-specified data, tag 15
-ASCII string: BOE OT
-ASCII string: HT156WXB-500
-Checksum: 0xa4 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 1434
+    Made in: week 1 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6162, 0.3535
+    Green: 0.3349, 0.6103
+    Blue : 0.1464, 0.0976
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.998009 Hz 683:384   47.398 kHz     72.330000 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   13 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 0a 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'BOE OT'
+    Alphanumeric Data String: 'HT156WXB-500'
+Checksum: 0xa4
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

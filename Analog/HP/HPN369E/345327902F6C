@@ -1,62 +1,68 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00220e9e3601010101
-03200104682917782a2cc5a45650a128
-0f5054a1080081c00101010101010101
-010101010101201c5686500020300e38
-13009ae61000001e000000fd00323c1e
-500b000a202020202020000000fc0048
-50205631390a202020202020000000ff
-00334351323033314235420a202000a3
+00 ff ff ff ff ff ff 00 22 0e 9e 36 01 01 01 01
+03 20 01 04 68 29 17 78 2a 2c c5 a4 56 50 a1 28
+0f 50 54 a1 08 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 20 1c 56 86 50 00 20 30 0e 38
+13 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 3c 1e
+50 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 56 31 39 0a 20 20 20 20 20 20 00 00 00 ff
+00 33 43 51 32 30 33 31 42 35 42 0a 20 20 00 a3
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 0e 9e 36 01 01 01 01 03 20
-version:         01 04
-basic params:    68 29 17 78 2a
-chroma info:     2c c5 a4 56 50 a1 28 0f 50 54
-established:     a1 08 00
-standard:        81 c0 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    20 1c 56 86 50 00 20 30 0e 38 13 00 9a e6 10 00 00 1e
-descriptor 2:    00 00 00 fd 00 32 3c 1e 50 0b 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 48 50 20 56 31 39 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 33 43 51 32 30 33 31 42 35 42 0a 20 20
-extensions:      00
-checksum:        a3
+----------------
 
-EDID version: 1.4
-Manufacturer: HPN Model 369e Serial Number --
-Made in week 3 of 2022
-Analog display, Input voltage level: 0.7/0.7 V
-Blank level equals black level
-Sync: Separate 
-Maximum image size: 41 cm x 23 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6406, 0.3378
-  Green: 0.3154, 0.6289
-  Blue:  0.1591, 0.0585
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x720@60Hz 16:9
-Detailed mode: Clock 72.000 MHz, 410 mm x 230 mm
-               1366 1380 1436 1500 hborder 0
-                768  769  772  800 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 48000 Hz
-Monitor ranges (GTF): 50-60Hz V, 30-80kHz H, max dotclock 110MHz
-Monitor name: HP V19
-Serial number: --
-Checksum: 0xa3 (valid)
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 70 Hz
-  Horizontal Freq: 31469 - 48400 Hz
-  Maximum Clock: 72.000 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HPN
+    Model: 13982
+    Serial Number: ...
+    Made in: week 3 of 2022
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.000 : 0.700 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 41 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6406, 0.3378
+    Green: 0.3154, 0.6289
+    Blue : 0.1591, 0.0585
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.000000 Hz 683:384   48.000 kHz     72.000000 MHz (410 mm x 230 mm)
+                 Hfront   14 Hsync  56 Hback   64 Hpol P
+                 Vfront    1 Vsync   3 Vback   28 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-60 Hz V, 30-80 kHz H, max dotclock 110 MHz
+    Display Product Name: 'HP V19'
+    Display Product Serial Number: ...
+Checksum: 0xa3
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 50.000 - 60.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+
+EDID conformity: FAIL

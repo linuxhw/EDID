@@ -1,71 +1,70 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0015b0750700000000
-160d010168201880e89119a255499827
-10484ca5c600455981806159a9400101
-010101010101000000ff002020202020
-2020202020202020000000fd0032a01e
-4cff000a202020202020000000fc0037
-3735204d4f44454c0a20202001010101
-01010101010101010101010101010049
+00 ff ff ff ff ff ff 00 15 b0 75 07 00 00 00 00
+16 0d 01 01 68 20 18 80 e8 91 19 a2 55 49 98 27
+10 48 4c a5 c6 00 45 59 81 80 61 59 a9 40 01 01
+01 01 01 01 01 01 00 00 00 ff 00 20 20 20 20 20
+20 20 20 20 20 20 20 20 00 00 00 fd 00 32 a0 1e
+4c ff 00 0a 20 20 20 20 20 20 00 00 00 fc 00 37
+37 35 20 4d 4f 44 45 4c 0a 20 20 20 01 01 01 01
+01 01 01 01 01 01 01 01 01 01 01 01 01 01 00 49
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   15 b0 75 07 00 00 00 00 16 0d
-version:         01 01
-basic params:    68 20 18 80 e8
-chroma info:     91 19 a2 55 49 98 27 10 48 4c
-established:     a5 c6 00
-standard:        45 59 81 80 61 59 a9 40 01 01 01 01 01 01 01 01
-descriptor 1:    00 00 00 ff 00 20 20 20 20 20 20 20 20 20 20 20 20 20
-descriptor 2:    00 00 00 fd 00 32 a0 1e 4c ff 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 37 37 35 20 4d 4f 44 45 4c 0a 20 20 20
-descriptor 4:    01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-extensions:      00
-checksum:        49
+----------------
 
-EDID version: 1.1
-Manufacturer: EMP Model 775 Serial Number --
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 32 cm x 24 cm
-Gamma: 2.28
-DPMS levels: Standby Suspend Off
-RGB color display
-Display x,y Chromaticity:
-  Red:   0.6347, 0.3330
-  Green: 0.2851, 0.5947
-  Blue:  0.1523, 0.0634
-  White: 0.2832, 0.2978
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-  800x600@85Hz 4:3 HorFreq: 53700 Hz Clock: 56.250 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1024x768@85Hz 4:3 HorFreq: 68700 Hz Clock: 94.500 MHz
-  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
-Serial number:              
--- ranges (GTF): 50-160Hz V, 30-76kHz H, max dotclock 2550MHz
-Monitor name: 775 MODEL
-Detailed mode: Clock 2.570 MHz, 1 mm x 257 mm
-                  1    2    3  258 hborder 1
-                  1    1   18  258 vborder 1
-               -hsync -vsync analog composite 
-               VertFreq: 38 Hz, HorFreq: 9961 Hz
-Checksum: 0x49 (valid)
-EDID block does NOT conform to EDID 1.0!
-	Has descriptor blocks other than detailed timings
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 38 - 85 Hz
-  Horizontal Freq: 9961 - 75000 Hz
-  Maximum Clock: 162.000 MHz
-EDID block does not conform at all!
-	Bad year of manufacture
-	Invalid detailed timing descriptor ordering
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: EMP
+    Model: 1909
+    Made in: week 22 of 2003
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.000 : 0.700 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 32 cm x 24 cm
+    Gamma: 2.28
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6347, 0.3330
+    Green: 0.2851, 0.5947
+    Blue : 0.1523, 0.0634
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings:
+    DMT 0x0c:   800x600    85.061274 Hz   4:3     53.674 kHz     56.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x13:  1024x768    84.996690 Hz   4:3     68.677 kHz     94.500000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+  Detailed Timing Descriptors:
+    Display Product Serial Number: ...
+    Display Range Limits:
+      Monitor ranges (GTF): 50-160 Hz V, 30-76 kHz H, max dotclock 2550 MHz
+    Display Product Name: '775 MODEL'
+    Detailed mode: 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 '..................'
+Checksum: 0x49
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+  Detailed Timing Descriptor #1: Pixelclock < 10 MHz, assuming invalid data 0x01 0x01.
+  Detailed Timing Descriptor #1: Invalid detailed timing descriptor ordering.
+
+EDID conformity: FAIL

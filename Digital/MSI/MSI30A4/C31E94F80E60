@@ -1,114 +1,122 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff003669a43000000000
-241f0103803c21782aabb0ab5047a322
-115054a54b00714081c081809500a9c0
-b300d1c00101565e00a0a0a029503020
-3500584a2100001a000000fd00314b1e
-7321000a202020202020000000fc004d
-5349204d4432373151500a20000000ff
-00504134483236313930303236320157
-02031cf14990040302011f1312112309
-07078301000065030c001000023a8018
-71382d4030203600c48f2100001e0476
-00a0a0a0295030203500584a2100001e
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000039
+00 ff ff ff ff ff ff 00 36 69 a4 30 00 00 00 00
+24 1f 01 03 80 3c 21 78 2a ab b0 ab 50 47 a3 22
+11 50 54 a5 4b 00 71 40 81 c0 81 80 95 00 a9 c0
+b3 00 d1 c0 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 58 4a 21 00 00 1a 00 00 00 fd 00 31 4b 1e
+73 21 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4d
+53 49 20 4d 44 32 37 31 51 50 0a 20 00 00 00 ff
+00 50 41 34 48 32 36 31 39 30 30 32 36 32 01 57
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   36 69 a4 30 00 00 00 00 24 1f
-version:         01 03
-basic params:    80 3c 21 78 2a
-chroma info:     ab b0 ab 50 47 a3 22 11 50 54
-established:     a5 4b 00
-standard:        71 40 81 c0 81 80 95 00 a9 c0 b3 00 d1 c0 01 01
-descriptor 1:    56 5e 00 a0 a0 a0 29 50 30 20 35 00 58 4a 21 00 00 1a
-descriptor 2:    00 00 00 fd 00 31 4b 1e 73 21 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 4d 53 49 20 4d 44 32 37 31 51 50 0a 20
-descriptor 4:    00 00 00 ff 00 50 41 34 48 32 36 31 39 30 30 32 36 32
-extensions:      01
-checksum:        57
+02 03 1c f1 49 90 04 03 02 01 1f 13 12 11 23 09
+07 07 83 01 00 00 65 03 0c 00 10 00 02 3a 80 18
+71 38 2d 40 30 20 36 00 c4 8f 21 00 00 1e 04 76
+00 a0 a0 a0 29 50 30 20 35 00 58 4a 21 00 00 1e
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 39
 
-EDID version: 1.3
-Manufacturer: MSI Model 30a4 Serial Number --
-Made in week 36 of 2021
-Digital display
-Maximum image size: 60 cm x 33 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6699, 0.3144
-  Green: 0.2792, 0.6396
-  Blue:  0.1347, 0.0693
-  White: 0.3125, 0.3281
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1152x864@60Hz 4:3
-  1280x720@60Hz 16:9
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1600x900@60Hz 16:9
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 241.500 MHz, 600 mm x 330 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1481 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 88786 Hz
-Monitor ranges (GTF): 49-75Hz V, 30-115kHz H, max dotclock 330MHz
-Monitor name: MSI MD271QP
-Serial number: --
-Has 1 extension blocks
-Checksum: 0x57 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-24 bytes of CTA data
-  Video data block
-    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  17 720x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 27.000 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MSI
+    Model: 12452
+    Made in: week 36 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 60 cm x 33 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6699, 0.3144
+    Green: 0.2792, 0.6396
+    Blue : 0.1347, 0.0693
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (600 mm x 330 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 49-75 Hz V, 30-115 kHz H, max dotclock 330 MHz
+    Display Product Name: 'MSI MD271QP'
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0x57
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
-Underscans PC formats by default
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 148.500 MHz, 708 mm x 399 mm
-               1920 1968 2000 2200 hborder 0
-               1080 1083 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 302.120 MHz, 600 mm x 330 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1481 vborder 0
-               +hsync +vsync 
-               VertFreq: 74 Hz, HorFreq: 111073 Hz
-Checksum: 0x39 (valid)
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (708 mm x 399 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    3 Vsync   6 Vback   36 Vpol P
+    DTD 3:  2560x1440   74.999007 Hz  16:9    111.074 kHz    302.120000 MHz (600 mm x 330 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+Checksum: 0x39
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Mismatch of image size 708x399 mm vs display size 600x330 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 708x399mm, which is larger than the display size 600.0x330.0mm.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL
