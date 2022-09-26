@@ -1,0 +1,91 @@
+
+EDID (hex):
+00ffffffffffff004d10261500000000
+021f0104a51b12780ede50a3544c9926
+0f505400000001010101010101010101
+010101010101294080a0700025503020
+3a0012b710000018543380a070002550
+30203a0012b710000018000000fe004e
+57334e46834c513133304e3100000000
+0002410332011200000a010a2020018f
+02030f00e3058000e60605016b6b3c00
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000080
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   4d 10 26 15 00 00 00 00 02 1f
+version:         01 04
+basic params:    a5 1b 12 78 0e
+chroma info:     de 50 a3 54 4c 99 26 0f 50 54
+established:     00 00 00
+standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
+descriptor 1:    29 40 80 a0 70 00 25 50 30 20 3a 00 12 b7 10 00 00 18
+descriptor 2:    54 33 80 a0 70 00 25 50 30 20 3a 00 12 b7 10 00 00 18
+descriptor 3:    00 00 00 fe 00 4e 57 33 4e 46 83 4c 51 31 33 30 4e 31
+descriptor 4:    00 00 00 00 00 02 41 03 32 01 12 00 00 0a 01 0a 20 20
+extensions:      01
+checksum:        8f
+
+EDID version: 1.4
+Manufacturer: SHP Model 1526 Serial Number --
+Made in week 2 of 2021
+Digital display
+8 bits per primary color channel
+DisplayPort interface
+Maximum image size: 27 cm x 18 cm
+Gamma: 2.20
+Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+Default (sRGB) color space is primary color space
+First detailed timing includes the native pixel format and preferred refresh rate
+Display x,y Chromaticity:
+  Red:   0.6396, 0.3291
+  Green: 0.2998, 0.5996
+  Blue:  0.1494, 0.0595
+  White: 0.3125, 0.3281
+Established timings supported:
+Standard timings supported:
+Detailed mode: Clock 164.250 MHz, 274 mm x 183 mm
+               1920 1968 2000 2080 hborder 0
+               1280 1283 1293 1317 vborder 0
+               -hsync -vsync 
+               VertFreq: 59 Hz, HorFreq: 78966 Hz
+Detailed mode: Clock 131.400 MHz, 274 mm x 183 mm
+               1920 1968 2000 2080 hborder 0
+               1280 1283 1293 1317 vborder 0
+               -hsync -vsync 
+               VertFreq: 47 Hz, HorFreq: 63173 Hz
+ASCII string: NW3NF
+Manufacturer-specified data, tag 0
+Has 1 extension blocks
+Checksum: 0x8f (valid)
+
+CTA extension block
+Extension version: 3
+11 bytes of CTA data
+  Extended tag: Colorimetry data block
+    BT2020RGB
+  Extended tag: HDR static metadata data block
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 107 (507.620 cd/m^2)
+    Desired content max frame-average luminance: 107 (507.620 cd/m^2)
+    Desired content min luminance: 60 (0.281 cd/m^2)
+0 native detailed modes
+Checksum: 0x80 (valid)
+
+EDID block does NOT conform to EDID 1.4!
+	sRGB is signaled, but the chromaticities do not match
+	Required 640x480p60 timings are missing in the established timings
+	and/or in the SVD list (VIC 1)
+	Missing name descriptor
+	Missing monitor ranges
+	Detailed block string not properly terminated

@@ -1,0 +1,124 @@
+
+EDID (hex):
+00ffffffffffff001e76000101000000
+081c010380331d780a23ada4544d9926
+0f474aa108008180d1c0010101010101
+010101010101023a801871382d40582c
+4500501d7400001e011d007251d01e20
+6e285500c48e2100001e000000fd0038
+4c1e531101000a2020202020000000fc
+00475356324b362044454d4f0000018b
+02031df442100423090707830100006a
+030c0011008021000800e2000f023a80
+1871382d40582c4500501d7400001e01
+1d007251d01e206e285500c48e210000
+1e011d8018711c1620582c2500c48e21
+00009e8c0ad08a20e02d10103e960013
+8e210000180000000000000000000000
+00000000000000000000000000000077
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   1e 76 00 01 01 00 00 00 08 1c
+version:         01 03
+basic params:    80 33 1d 78 0a
+chroma info:     23 ad a4 54 4d 99 26 0f 47 4a
+established:     a1 08 00
+standard:        81 80 d1 c0 01 01 01 01 01 01 01 01 01 01 01 01
+descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 50 1d 74 00 00 1e
+descriptor 2:    01 1d 00 72 51 d0 1e 20 6e 28 55 00 c4 8e 21 00 00 1e
+descriptor 3:    00 00 00 fd 00 38 4c 1e 53 11 01 00 0a 20 20 20 20 20
+descriptor 4:    00 00 00 fc 00 47 53 56 32 4b 36 20 44 45 4d 4f 00 00
+extensions:      01
+checksum:        8b
+
+EDID version: 1.3
+Manufacturer: GSV Model 100 Serial Number --
+Made in week 8 of 2018
+Digital display
+Maximum image size: 51 cm x 29 cm
+Gamma: 2.20
+RGB color display
+First detailed timing is preferred timing
+Display x,y Chromaticity:
+  Red:   0.6406, 0.3300
+  Green: 0.3007, 0.6005
+  Blue:  0.1503, 0.0605
+  White: 0.2802, 0.2900
+Established timings supported:
+  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
+  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
+  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
+  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
+Standard timings supported:
+  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
+  1920x1080@60Hz 16:9
+Detailed mode: Clock 148.500 MHz, 1872 mm x 1053 mm
+               1920 2008 2052 2200 hborder 0
+               1080 1084 1089 1125 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 67500 Hz
+Detailed mode: Clock 74.250 MHz, 708 mm x 398 mm
+               1280 1390 1430 1650 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 45000 Hz
+Monitor ranges (bare limits): 56-76Hz V, 30-83kHz H, max dotclock 170MHz
+Has 1 extension blocks
+Checksum: 0x8b (valid)
+
+CTA extension block
+Extension version: 3
+25 bytes of CTA data
+  Video data block
+    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
+    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
+  Audio data block
+    Linear PCM, max channels 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker allocation data block
+    Speaker map:
+      FL/FR - Front Left/Right
+  Vendor-specific data block, OUI 000c03 (HDMI)
+    Source physical address 1.1.0.0
+    Supports_AI
+    Maximum TMDS clock: 165MHz
+  Extended tag: Video capability data block
+    YCbCr quantization: No Data (0)
+    RGB quantization: No Data (0)
+    PT scan behaviour: No Data (0)
+    IT scan behaviour: Support both over- and underscan (3)
+    CE scan behaviour: Support both over- and underscan (3)
+Underscans PC formats by default
+Basic audio support
+Supports YCbCr 4:4:4
+Supports YCbCr 4:2:2
+4 native detailed modes
+Detailed mode: Clock 148.500 MHz, 1872 mm x 1053 mm
+               1920 2008 2052 2200 hborder 0
+               1080 1084 1089 1125 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 67500 Hz
+Detailed mode: Clock 74.250 MHz, 708 mm x 398 mm
+               1280 1390 1430 1650 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 45000 Hz
+Detailed mode: Clock 74.250 MHz, 708 mm x 398 mm
+               1920 2008 2052 2200 hborder 0
+                540  542  547  562 vborder 0
+               +hsync +vsync interlaced 
+               VertFreq: 60 Hz, HorFreq: 33750 Hz
+Detailed mode: Clock 27.000 MHz, 531 mm x 398 mm
+                720  736  798  858 hborder 0
+                480  489  495  525 vborder 0
+               -hsync -vsync 
+               VertFreq: 59 Hz, HorFreq: 31468 Hz
+Checksum: 0x77 (valid)
+
+EDID block does NOT conform to EDID 1.3!
+	Name descriptor not terminated with a newline
+EDID block does not conform at all!
+	Detailed blocks filled with garbage
+	Range descriptor contains garbage

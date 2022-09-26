@@ -1,0 +1,125 @@
+
+EDID (hex):
+00ffffffffffff002685626601000000
+0c140103803e22780a1eac9859568528
+29525720000001010101010101010101
+010101010101023a801871382d40582c
+45006d552100001ed50980a020e02d10
+1060a2006d5521000018000000fc0049
+54452d4648440a2020202020000000fd
+00173d0d2e11000a2020202020200161
+02032af34390040367030c001000002d
+830f0000350f7f07677e033d1ec05717
+035f7e031507505f7e01023a80187138
+2d40582c45006d552100001e011d0072
+51d01e206e2855006d552100001ed509
+80a020e02d101060a2006d5521000018
+00000000000000000000000000000000
+00000000000000000000000000000080
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   26 85 62 66 01 00 00 00 0c 14
+version:         01 03
+basic params:    80 3e 22 78 0a
+chroma info:     1e ac 98 59 56 85 28 29 52 57
+established:     20 00 00
+standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
+descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 6d 55 21 00 00 1e
+descriptor 2:    d5 09 80 a0 20 e0 2d 10 10 60 a2 00 6d 55 21 00 00 18
+descriptor 3:    00 00 00 fc 00 49 54 45 2d 46 48 44 0a 20 20 20 20 20
+descriptor 4:    00 00 00 fd 00 17 3d 0d 2e 11 00 0a 20 20 20 20 20 20
+extensions:      01
+checksum:        61
+
+EDID version: 1.3
+Manufacturer: ITE Model 6662 Serial Number --
+Made in week 12 of 2010
+Digital display
+Maximum image size: 62 cm x 34 cm
+Gamma: 2.20
+RGB color display
+First detailed timing is preferred timing
+Display x,y Chromaticity:
+  Red:   0.5937, 0.3486
+  Green: 0.3388, 0.5214
+  Blue:  0.1582, 0.1621
+  White: 0.3232, 0.3398
+Established timings supported:
+  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
+Standard timings supported:
+Detailed mode: Clock 148.500 MHz, 621 mm x 341 mm
+               1920 2008 2052 2200 hborder 0
+               1080 1084 1089 1125 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 67500 Hz
+Detailed mode: Clock 25.170 MHz, 621 mm x 341 mm
+                640  656  752  800 hborder 0
+                480  490  492  525 vborder 0
+               -hsync -vsync 
+               VertFreq: 59 Hz, HorFreq: 31462 Hz
+Monitor name: ITE-FHD
+Monitor ranges (GTF): 23-61Hz V, 13-46kHz H, max dotclock 170MHz
+Has 1 extension blocks
+Checksum: 0x61 (valid)
+
+CTA extension block
+Extension version: 3
+38 bytes of CTA data
+  Video data block
+    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
+    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
+    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
+  Vendor-specific data block, OUI 000c03 (HDMI)
+    Source physical address 1.0.0.0
+    Maximum TMDS clock: 225MHz
+  Speaker allocation data block
+    Speaker map:
+      FL/FR - Front Left/Right
+      LFE - Low Frequency Effects
+      FC - Front Center
+      BL/BR - Back Left/Right
+  Audio data block
+    Linear PCM, max channels 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    MAT (MLP), max channels 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+    DTS, max channels 6
+      Supported sample rates (kHz): 96 88.2 48 44.1
+      Maximum bit rate: 1536 kHz
+    Dolby Digital+, max channels 8
+      Supported sample rates (kHz): 96 48 44.1 32
+    DTS-HD, max channels 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+    AC-3, max channels 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 640 kHz
+    DTS-HD, max channels 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+Underscans PC formats by default
+Basic audio support
+Supports YCbCr 4:4:4
+Supports YCbCr 4:2:2
+3 native detailed modes
+Detailed mode: Clock 148.500 MHz, 621 mm x 341 mm
+               1920 2008 2052 2200 hborder 0
+               1080 1084 1089 1125 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 67500 Hz
+Detailed mode: Clock 74.250 MHz, 621 mm x 341 mm
+               1280 1390 1430 1650 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 45000 Hz
+Detailed mode: Clock 25.170 MHz, 621 mm x 341 mm
+                640  656  752  800 hborder 0
+                480  490  492  525 vborder 0
+               -hsync -vsync 
+               VertFreq: 59 Hz, HorFreq: 31462 Hz
+Checksum: 0x80 (valid)
+
+One or more of the timings is out of range of the Monitor Ranges:
+  Vertical Freq: 59 - 60 Hz
+  Horizontal Freq: 31462 - 67500 Hz
+  Maximum Clock: 148.500 MHz

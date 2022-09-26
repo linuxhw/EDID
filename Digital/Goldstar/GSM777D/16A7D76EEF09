@@ -1,0 +1,125 @@
+
+EDID (hex):
+00ffffffffffff001e6d7d77177a0700
+0b1f0104b5592778fb3915ae4f45ab27
+0e5054210800d1c06140010101010101
+0101010101014c9a00a0f0402e603020
+3a00706f3100001a000000fd00304b7d
+7d32010a202020202020000000fc004c
+4720554c545241574944450a000000ff
+003131314e54565345453030370a01c3
+02032872230907078301000044100403
+01e2006ae305c000e606050153535d68
+1a00000101304b003dc200a0f0403a60
+30203a00706f3100001a134c00a0f040
+176030203a00706f3100001a00000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000e8
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   1e 6d 7d 77 17 7a 07 00 0b 1f
+version:         01 04
+basic params:    b5 59 27 78 fb
+chroma info:     39 15 ae 4f 45 ab 27 0e 50 54
+established:     21 08 00
+standard:        d1 c0 61 40 01 01 01 01 01 01 01 01 01 01 01 01
+descriptor 1:    4c 9a 00 a0 f0 40 2e 60 30 20 3a 00 70 6f 31 00 00 1a
+descriptor 2:    00 00 00 fd 00 30 4b 7d 7d 32 01 0a 20 20 20 20 20 20
+descriptor 3:    00 00 00 fc 00 4c 47 20 55 4c 54 52 41 57 49 44 45 0a
+descriptor 4:    00 00 00 ff 00 31 31 31 4e 54 56 53 45 45 30 30 37 0a
+extensions:      01
+checksum:        c3
+
+EDID version: 1.4
+Manufacturer: GSM Model 777d Serial Number --
+Made in week 11 of 2021
+Digital display
+10 bits per primary color channel
+DisplayPort interface
+Maximum image size: 89 cm x 39 cm
+Gamma: 2.20
+DPMS levels: Standby Suspend Off
+Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+First detailed timing includes the native pixel format and preferred refresh rate
+Display is continuous frequency
+Display x,y Chromaticity:
+  Red:   0.6796, 0.3115
+  Green: 0.2714, 0.6689
+  Blue:  0.1523, 0.0556
+  White: 0.3134, 0.3291
+Established timings supported:
+  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
+  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
+  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
+Standard timings supported:
+  1920x1080@60Hz 16:9
+  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
+Detailed mode: Clock 395.000 MHz, 880 mm x 367 mm
+               3840 3888 3920 4000 hborder 0
+               1600 1603 1613 1646 vborder 0
+               +hsync -vsync 
+               VertFreq: 59 Hz, HorFreq: 98750 Hz
+Monitor ranges (bare limits): 48-75Hz V, 125-125kHz H, max dotclock 500MHz
+Monitor name: LG ULTRAWIDE
+Serial number: --
+Has 1 extension blocks
+Checksum: 0xc3 (valid)
+
+CTA extension block
+Extension version: 3
+36 bytes of CTA data
+  Audio data block
+    Linear PCM, max channels 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker allocation data block
+    Speaker map:
+      FL/FR - Front Left/Right
+  Video data block
+    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
+    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
+    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
+    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
+  Extended tag: Video capability data block
+    YCbCr quantization: No Data (0)
+    RGB quantization: Selectable (via AVI Q) (1)
+    PT scan behaviour: Always Underscanned (2)
+    IT scan behaviour: Always Underscanned (2)
+    CE scan behaviour: Always Underscanned (2)
+  Extended tag: Colorimetry data block
+    BT2020YCC
+    BT2020RGB
+  Extended tag: HDR static metadata data block
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 83 (301.833 cd/m^2)
+    Desired content max frame-average luminance: 83 (301.833 cd/m^2)
+    Desired content min luminance: 93 (0.401 cd/m^2)
+  Vendor-specific data block, OUI 00001a
+Basic audio support
+Supports YCbCr 4:4:4
+Supports YCbCr 4:2:2
+2 native detailed modes
+Detailed mode: Clock 497.250 MHz, 880 mm x 367 mm
+               3840 3888 3920 4000 hborder 0
+               1600 1603 1613 1658 vborder 0
+               +hsync -vsync 
+               VertFreq: 74 Hz, HorFreq: 124312 Hz
+Detailed mode: Clock 194.750 MHz, 880 mm x 367 mm
+               3840 3888 3920 4000 hborder 0
+               1600 1603 1613 1623 vborder 0
+               +hsync -vsync 
+               VertFreq: 29 Hz, HorFreq: 48687 Hz
+Checksum: 0xe8 (valid)
+
+Warning: One or more of the timings is out of range of the Monitor Ranges:
+  Vertical Freq: 29 - 74 Hz
+  Horizontal Freq: 31469 - 124312 Hz
+  Maximum Clock: 497.250 MHz
+EDID block does not conform at all!
+	Both the serial number and the serial string are set

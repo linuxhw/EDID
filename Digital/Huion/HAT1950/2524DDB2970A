@@ -1,0 +1,106 @@
+
+EDID (hex):
+00ffffffffffff002034501901000000
+1d1e0103802b1878ee8e05ad4f33b026
+0d5054afcf00010181c081809500b300
+d1c001010101023a801871382d40582c
+4500b0f31000001e00000010004e410a
+20202020202020202020000000fd0032
+4c1e5311000a202020202020000000fc
+004b616d7661732032300a2020200178
+02031e0149909f0413031201021167d8
+5dc401000000e3050000e30f00000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000e9
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   20 34 50 19 01 00 00 00 1d 1e
+version:         01 03
+basic params:    80 2b 18 78 ee
+chroma info:     8e 05 ad 4f 33 b0 26 0d 50 54
+established:     af cf 00
+standard:        01 01 81 c0 81 80 95 00 b3 00 d1 c0 01 01 01 01
+descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 b0 f3 10 00 00 1e
+descriptor 2:    00 00 00 10 00 4e 41 0a 20 20 20 20 20 20 20 20 20 20
+descriptor 3:    00 00 00 fd 00 32 4c 1e 53 11 00 0a 20 20 20 20 20 20
+descriptor 4:    00 00 00 fc 00 4b 61 6d 76 61 73 20 32 30 0a 20 20 20
+extensions:      01
+checksum:        78
+
+EDID version: 1.3
+Manufacturer: HAT Model 1950 Serial Number --
+Made in week 29 of 2020
+Digital display
+Maximum image size: 43 cm x 24 cm
+Gamma: 2.20
+DPMS levels: Standby Suspend Off
+RGB color display
+Default (sRGB) color space is primary color space
+First detailed timing is preferred timing
+Display x,y Chromaticity:
+  Red:   0.6777, 0.3085
+  Green: 0.2021, 0.6894
+  Blue:  0.1484, 0.0507
+  White: 0.3134, 0.3291
+Established timings supported:
+  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
+  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
+  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
+  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
+  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
+  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
+  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
+  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
+  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
+  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
+  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
+  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
+Standard timings supported:
+  1280x720@60Hz 16:9
+  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
+  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
+  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
+  1920x1080@60Hz 16:9
+Detailed mode: Clock 148.500 MHz, 432 mm x 243 mm
+               1920 2008 2052 2200 hborder 0
+               1080 1084 1089 1125 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 67500 Hz
+Dummy block
+Monitor ranges (GTF): 50-76Hz V, 30-83kHz H, max dotclock 170MHz
+Monitor name: Kamvas 20
+Has 1 extension blocks
+Checksum: 0x78 (valid)
+
+CTA extension block
+Extension version: 3
+26 bytes of CTA data
+  Video data block
+    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
+    VIC  31 1920x1080@50Hz 16:9 (native) HorFreq: 56250 Hz Clock: 148.500 MHz
+    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
+    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
+    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
+    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
+    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
+    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
+    VIC  17 720x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 27.000 MHz
+  Vendor-specific data block, OUI c45dd8 (HDMI Forum)
+    Version: 1
+  Extended tag: Colorimetry data block
+  Extended tag: YCbCr 4:2:0 capability map data block
+1 native detailed modes
+Checksum: 0xe9 (valid)
+
+EDID block does NOT conform to EDID 1.3!
+	sRGB is signaled, but the chromaticities do not match
+	HDMI Forum VSDB did not immediately follow the HDMI VSDB
+EDID block does not conform at all!
+	Dummy block filled with garbage
+
+

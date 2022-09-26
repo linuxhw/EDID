@@ -1,0 +1,106 @@
+
+EDID (hex):
+00ffffffffffff0006d8050000000000
+2218010380a05a780a0dc9a057479827
+12484c20000001010101010101010101
+010101010101011d007251d01e206e28
+550040846300001e0000001000000000
+00000000000000000000000000fd003a
+3e0f440f000a202020202020000000fc
+004156542045523133300a20202001d3
+02031ef14b101f051484130211061520
+230907058301000065030c001000023a
+801871382d40582c450040846300001e
+011d007251d01e206e28550040846300
+001e0000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000001d
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   06 d8 05 00 00 00 00 00 22 18
+version:         01 03
+basic params:    80 a0 5a 78 0a
+chroma info:     0d c9 a0 57 47 98 27 12 48 4c
+established:     20 00 00
+standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
+descriptor 1:    01 1d 00 72 51 d0 1e 20 6e 28 55 00 40 84 63 00 00 1e
+descriptor 2:    00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+descriptor 3:    00 00 00 fd 00 3a 3e 0f 44 0f 00 0a 20 20 20 20 20 20
+descriptor 4:    00 00 00 fc 00 41 56 54 20 45 52 31 33 30 0a 20 20 20
+extensions:      01
+checksum:        d3
+
+EDID version: 1.3
+Manufacturer: AVX Model 5 Serial Number --
+Made in week 34 of 2014
+Digital display
+Maximum image size: 160 cm x 90 cm
+Gamma: 2.20
+RGB color display
+First detailed timing is preferred timing
+Display x,y Chromaticity:
+  Red:   0.6250, 0.3398
+  Green: 0.2802, 0.5947
+  Blue:  0.1552, 0.0703
+  White: 0.2832, 0.2978
+Established timings supported:
+  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
+Standard timings supported:
+Detailed mode: Clock 74.250 MHz, 1600 mm x 900 mm
+               1280 1390 1430 1650 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 45000 Hz
+Dummy block
+Monitor ranges (GTF): 58-62Hz V, 15-68kHz H, max dotclock 150MHz
+Monitor name: AVT ER130
+Has 1 extension blocks
+Checksum: 0xd3 (valid)
+
+CTA extension block
+Extension version: 3
+26 bytes of CTA data
+  Video data block
+    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
+    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
+    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
+    VIC  20 1920x1080i@50Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
+    VIC   4 1280x720@60Hz 16:9 (native) HorFreq: 45000 Hz Clock: 74.250 MHz
+    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
+    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
+    VIC  17 720x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 27.000 MHz
+    VIC   6 1440x480i@60Hz 4:3  HorFreq: 15734 Hz Clock: 27.000 MHz
+    VIC  21 1440x576i@50Hz 4:3  HorFreq: 15625 Hz Clock: 27.000 MHz
+    VIC  32 1920x1080@24Hz 16:9  HorFreq: 27000 Hz Clock: 74.250 MHz
+  Audio data block
+    Linear PCM, max channels 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 16
+  Speaker allocation data block
+    Speaker map:
+      FL/FR - Front Left/Right
+  Vendor-specific data block, OUI 000c03 (HDMI)
+    Source physical address 1.0.0.0
+Underscans PC formats by default
+Basic audio support
+Supports YCbCr 4:4:4
+Supports YCbCr 4:2:2
+1 native detailed modes
+Detailed mode: Clock 148.500 MHz, 1600 mm x 900 mm
+               1920 2008 2052 2200 hborder 0
+               1080 1084 1089 1125 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 67500 Hz
+Detailed mode: Clock 74.250 MHz, 1600 mm x 900 mm
+               1280 1390 1430 1650 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 45000 Hz
+Checksum: 0x1d (valid)
+
+One or more of the timings is out of range of the Monitor Ranges:
+  Vertical Freq: 24 - 60 Hz
+  Horizontal Freq: 15625 - 67500 Hz
+  Maximum Clock: 148.500 MHz
