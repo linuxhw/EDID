@@ -1,0 +1,130 @@
+
+EDID (hex):
+00ffffffffffff003a03002201010101
+2a1f010380301a78ea3135a5554ea126
+0c5054210800714f81809500b300a9c0
+810081c09040023a801871382d40582c
+4500e0041100001e000000fd00304b1e
+5515000a202020202020000000fc004d
+323230310a20202020202020000000ff
+000a20202020202020202020202001c6
+020333f4479001020304101f23090707
+8301000067030c0010001850e200d5e3
+05c000e6060501616154681a00000101
+304be68e4480a070382d4030203500e0
+041100001a0000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000031
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   3a 03 00 22 01 01 01 01 2a 1f
+version:         01 03
+basic params:    80 30 1a 78 ea
+chroma info:     31 35 a5 55 4e a1 26 0c 50 54
+established:     21 08 00
+standard:        71 4f 81 80 95 00 b3 00 a9 c0 81 00 81 c0 90 40
+descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 e0 04 11 00 00 1e
+descriptor 2:    00 00 00 fd 00 30 4b 1e 55 15 00 0a 20 20 20 20 20 20
+descriptor 3:    00 00 00 fc 00 4d 32 32 30 31 0a 20 20 20 20 20 20 20
+descriptor 4:    00 00 00 ff 00 0a 20 20 20 20 20 20 20 20 20 20 20 20
+extensions:      01
+checksum:        c6
+
+EDID version: 1.3
+Manufacturer: NPC Model 2200 Serial Number --
+Made in week 42 of 2021
+Digital display
+Maximum image size: 48 cm x 26 cm
+Gamma: 2.20
+DPMS levels: Standby Suspend Off
+RGB color display
+First detailed timing is preferred timing
+Display x,y Chromaticity:
+  Red:   0.6445, 0.3349
+  Green: 0.3046, 0.6298
+  Blue:  0.1484, 0.0498
+  White: 0.3134, 0.3291
+Established timings supported:
+  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
+  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
+  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
+Standard timings supported:
+  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
+  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
+  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
+  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
+  1600x900@60Hz 16:9
+  1280x800@60Hz 16:10
+  1280x720@60Hz 16:9
+  1400x1050@60Hz 4:3 HorFreq: 64700 Hz Clock: 101.000 MHz
+Detailed mode: Clock 148.500 MHz, 480 mm x 260 mm
+               1920 2008 2052 2200 hborder 0
+               1080 1084 1089 1125 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 67500 Hz
+Monitor ranges (GTF): 48-75Hz V, 30-85kHz H, max dotclock 210MHz
+Monitor name: M2201
+Serial number: 
+-- 1 extension blocks
+Checksum: 0xc6 (valid)
+
+CTA extension block
+Extension version: 3
+47 bytes of CTA data
+  Video data block
+    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
+    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
+    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
+    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
+    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
+    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
+    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
+  Audio data block
+    Linear PCM, max channels 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker allocation data block
+    Speaker map:
+      FL/FR - Front Left/Right
+  Vendor-specific data block, OUI 000c03 (HDMI)
+    Source physical address 1.0.0.0
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 400MHz
+  Extended tag: Video capability data block
+    YCbCr quantization: Selectable (via AVI YQ) (1)
+    RGB quantization: Selectable (via AVI Q) (1)
+    PT scan behaviour: Always Overscannned (1)
+    IT scan behaviour: Always Overscannned (1)
+    CE scan behaviour: Always Overscannned (1)
+  Extended tag: Colorimetry data block
+    BT2020YCC
+    BT2020RGB
+  Extended tag: HDR static metadata data block
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 97 (408.759 cd/m^2)
+    Desired content max frame-average luminance: 97 (408.759 cd/m^2)
+    Desired content min luminance: 84 (0.444 cd/m^2)
+  Vendor-specific data block, OUI 00001a
+Underscans PC formats by default
+Basic audio support
+Supports YCbCr 4:4:4
+Supports YCbCr 4:2:2
+4 native detailed modes
+Detailed mode: Clock 175.500 MHz, 480 mm x 260 mm
+               1920 1968 2000 2080 hborder 0
+               1080 1083 1088 1125 vborder 0
+               +hsync -vsync 
+               VertFreq: 75 Hz, HorFreq: 84375 Hz
+Checksum: 0x31 (valid)
+
+EDID block does NOT conform to EDID 1.3!
+	HDMI VSDB Max TMDS rate is > 340
+EDID block does not conform at all!
+	Both the serial number and the serial string are set

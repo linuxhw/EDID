@@ -1,0 +1,119 @@
+
+EDID (hex):
+00ffffffffffff001e6d224cb0e50100
+08190103a0261e78ea37c5a4554c9b25
+125054a74b00714f814081c081000101
+010101010101302a009851002a403070
+1300782d1100001e000000fd00384b1e
+530e000a202020202020000000fc0031
+394d4233350a202020202020000000ff
+003530384e544c45334e3333360a01fd
+020323f14b0000841300000203000000
+2309070783010000e2000f67030c0020
+00802d011d007251d01e206e28550010
+090000001e0000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000fd
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   1e 6d 22 4c b0 e5 01 00 08 19
+version:         01 03
+basic params:    a0 26 1e 78 ea
+chroma info:     37 c5 a4 55 4c 9b 25 12 50 54
+established:     a7 4b 00
+standard:        71 4f 81 40 81 c0 81 00 01 01 01 01 01 01 01 01
+descriptor 1:    30 2a 00 98 51 00 2a 40 30 70 13 00 78 2d 11 00 00 1e
+descriptor 2:    00 00 00 fd 00 38 4b 1e 53 0e 00 0a 20 20 20 20 20 20
+descriptor 3:    00 00 00 fc 00 31 39 4d 42 33 35 0a 20 20 20 20 20 20
+descriptor 4:    00 00 00 ff 00 35 30 38 4e 54 4c 45 33 4e 33 33 36 0a
+extensions:      01
+checksum:        fd
+
+EDID version: 1.3
+Manufacturer: GSM Model 4c22 Serial Number --
+Made in week 8 of 2015
+Digital display
+Maximum image size: 38 cm x 30 cm
+Gamma: 2.20
+DPMS levels: Standby Suspend Off
+RGB color display
+First detailed timing is preferred timing
+Display x,y Chromaticity:
+  Red:   0.6406, 0.3349
+  Green: 0.2978, 0.6083
+  Blue:  0.1474, 0.0703
+  White: 0.3134, 0.3291
+Established timings supported:
+  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
+  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
+  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
+  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
+  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
+  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
+  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
+  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
+  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
+Standard timings supported:
+  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
+  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
+  1280x720@60Hz 16:9
+  1280x800@60Hz 16:10
+Detailed mode: Clock 108.000 MHz, 376 mm x 301 mm
+               1280 1328 1440 1688 hborder 0
+               1024 1025 1028 1066 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 63981 Hz
+Monitor ranges (GTF): 56-75Hz V, 30-83kHz H, max dotclock 140MHz
+Monitor name: 19MB35
+Serial number: --
+Has 1 extension blocks
+Checksum: 0xfd (valid)
+
+CTA extension block
+Extension version: 3
+31 bytes of CTA data
+  Video data block
+    VIC   4 1280x720@60Hz 16:9 (native) HorFreq: 45000 Hz Clock: 74.250 MHz
+    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
+    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
+    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
+  Audio data block
+    Linear PCM, max channels 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker allocation data block
+    Speaker map:
+      FL/FR - Front Left/Right
+  Extended tag: Video capability data block
+    YCbCr quantization: No Data (0)
+    RGB quantization: No Data (0)
+    PT scan behaviour: No Data (0)
+    IT scan behaviour: Support both over- and underscan (3)
+    CE scan behaviour: Support both over- and underscan (3)
+  Vendor-specific data block, OUI 000c03 (HDMI)
+    Source physical address 2.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 225MHz
+Underscans PC formats by default
+Basic audio support
+Supports YCbCr 4:4:4
+Supports YCbCr 4:2:2
+1 native detailed modes
+Detailed mode: Clock 74.250 MHz, 16 mm x 9 mm
+               1280 1390 1430 1650 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 45000 Hz
+Checksum: 0xfd (valid)
+
+EDID block does NOT conform to EDID 1.3!
+	Digital display field contains garbage: 20
+One or more of the timings is out of range of the Monitor Ranges:
+  Vertical Freq: 50 - 75 Hz
+  Horizontal Freq: 31469 - 80000 Hz
+  Maximum Clock: 135.000 MHz
+EDID block does not conform at all!
+	Both the serial number and the serial string are set

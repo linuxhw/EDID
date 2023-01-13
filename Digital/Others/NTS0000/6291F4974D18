@@ -1,0 +1,117 @@
+
+EDID (hex):
+00ffffffffffff003a93000000000000
+1f110103a03320782a5ad5a7564b9b24
+135054230800810081809500a940b300
+8bc081407140023a801871382d40582c
+4500a05a0000001e000000fc004d4232
+34570a20202020202020000000fd0032
+3d1e4a10000a202020202020000000ff
+000a20202020202020202020202001b3
+020323f14b101f841300000200000000
+2309070783010000e2000f67030c0020
+00802d011d007251d01e206e28550010
+090000001e0000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000d1
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   3a 93 00 00 00 00 00 00 1f 11
+version:         01 03
+basic params:    a0 33 20 78 2a
+chroma info:     5a d5 a7 56 4b 9b 24 13 50 54
+established:     23 08 00
+standard:        81 00 81 80 95 00 a9 40 b3 00 8b c0 81 40 71 40
+descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 a0 5a 00 00 00 1e
+descriptor 2:    00 00 00 fc 00 4d 42 32 34 57 0a 20 20 20 20 20 20 20
+descriptor 3:    00 00 00 fd 00 32 3d 1e 4a 10 00 0a 20 20 20 20 20 20
+descriptor 4:    00 00 00 ff 00 0a 20 20 20 20 20 20 20 20 20 20 20 20
+extensions:      01
+checksum:        b3
+
+EDID version: 1.3
+Manufacturer: NTS Model 0 Serial Number --
+Made in week 31 of 2007
+Digital display
+Maximum image size: 51 cm x 32 cm
+Gamma: 2.20
+DPMS levels: Off
+RGB color display
+First detailed timing is preferred timing
+Display x,y Chromaticity:
+  Red:   0.6533, 0.3369
+  Green: 0.2949, 0.6074
+  Blue:  0.1435, 0.0751
+  White: 0.3134, 0.3291
+Established timings supported:
+  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
+  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
+  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
+  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
+Standard timings supported:
+  1280x800@60Hz 16:10
+  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
+  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
+  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
+  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
+  1360x765@60Hz 16:9
+  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
+  1152x864@60Hz 4:3
+Detailed mode: Clock 148.500 MHz, 160 mm x 90 mm
+               1920 2008 2052 2200 hborder 0
+               1080 1084 1089 1125 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 67500 Hz
+Monitor name: MB24W
+Monitor ranges (GTF): 50-61Hz V, 30-74kHz H, max dotclock 160MHz
+Serial number: 
+-- 1 extension blocks
+Checksum: 0xb3 (valid)
+
+CTA extension block
+Extension version: 3
+31 bytes of CTA data
+  Video data block
+    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
+    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
+    VIC   4 1280x720@60Hz 16:9 (native) HorFreq: 45000 Hz Clock: 74.250 MHz
+    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
+    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
+  Audio data block
+    Linear PCM, max channels 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker allocation data block
+    Speaker map:
+      FL/FR - Front Left/Right
+  Extended tag: Video capability data block
+    YCbCr quantization: No Data (0)
+    RGB quantization: No Data (0)
+    PT scan behaviour: No Data (0)
+    IT scan behaviour: Support both over- and underscan (3)
+    CE scan behaviour: Support both over- and underscan (3)
+  Vendor-specific data block, OUI 000c03 (HDMI)
+    Source physical address 2.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 225MHz
+Underscans PC formats by default
+Basic audio support
+Supports YCbCr 4:4:4
+Supports YCbCr 4:2:2
+1 native detailed modes
+Detailed mode: Clock 74.250 MHz, 16 mm x 9 mm
+               1280 1390 1430 1650 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+               VertFreq: 60 Hz, HorFreq: 45000 Hz
+Checksum: 0xd1 (valid)
+
+EDID block does NOT conform to EDID 1.3!
+	Digital display field contains garbage: 20
+One or more of the timings is out of range of the Monitor Ranges:
+  Vertical Freq: 50 - 60 Hz
+  Horizontal Freq: 31469 - 75000 Hz
+  Maximum Clock: 162.000 MHz
