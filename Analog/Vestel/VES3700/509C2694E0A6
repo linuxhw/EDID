@@ -1,73 +1,75 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0058b3003700000000
-011b0103086e3e000ac69c964e428d22
-1041443fef00d1c00101010101010101
-010101010101023a801871382d40582c
-4500501d7400001e662150b051001b30
-4070360050005300001e000000fc0035
-305548445f4c43445f54560a000000fd
-00393f414411000a2020202020200075
+00 ff ff ff ff ff ff 00 58 b3 00 37 00 00 00 00
+01 1b 01 03 08 6e 3e 00 0a c6 9c 96 4e 42 8d 22
+10 41 44 3f ef 00 d1 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 50 1d 74 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 50 00 53 00 00 1e 00 00 00 fc 00 35
+30 55 48 44 5f 4c 43 44 5f 54 56 0a 00 00 00 fd
+00 39 3f 41 44 11 00 0a 20 20 20 20 20 20 00 75
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   58 b3 00 37 00 00 00 00 01 1b
-version:         01 03
-basic params:    08 6e 3e 00 0a
-chroma info:     c6 9c 96 4e 42 8d 22 10 41 44
-established:     3f ef 00
-standard:        d1 c0 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 50 1d 74 00 00 1e
-descriptor 2:    66 21 50 b0 51 00 1b 30 40 70 36 00 50 00 53 00 00 1e
-descriptor 3:    00 00 00 fc 00 35 30 55 48 44 5f 4c 43 44 5f 54 56 0a
-descriptor 4:    00 00 00 fd 00 39 3f 41 44 11 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        75
+----------------
 
-EDID version: 1.3
-Manufacturer: VES Model 3700 Serial Number --
-Made in week 1 of 2017
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate 
-Maximum image size: 110 cm x 62 cm
-Gamma: 1.00
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5888, 0.3046
-  Green: 0.2587, 0.5527
-  Blue:  0.1347, 0.0634
-  White: 0.2568, 0.2656
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 148.500 MHz, 1872 mm x 1053 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 85.500 MHz, 1360 mm x 768 mm
-               1360 1424 1536 1792 hborder 0
-                768  771  777  795 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 47712 Hz
-Monitor name: 50UHD_LCD_TV
-Monitor ranges (GTF): 57-63Hz V, 65-68kHz H, max dotclock 170MHz
-Checksum: 0x75 (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 56 - 75 Hz
-  Horizontal Freq: 31469 - 80000 Hz
-  Maximum Clock: 148.500 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: VES
+    Model: 14080
+    Made in: week 1 of 2017
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 110 cm x 62 cm
+    Gamma: 1.00
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5888, 0.3046
+    Green: 0.2587, 0.5527
+    Blue : 0.1347, 0.0634
+    White: 0.2568, 0.2656
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    Apple   :   640x480    66.666667 Hz   4:3     35.000 kHz     30.240000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    Apple   :   832x624    74.551266 Hz   4:3     49.726 kHz     57.284000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1872 mm x 1053 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (1360 mm x 768 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    Display Product Name: '50UHD_LCD_TV'
+    Display Range Limits:
+      Monitor ranges (GTF): 57-63 Hz V, 65-68 kHz H, max dotclock 170 MHz
+Checksum: 0x75
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 1872x1053 mm vs display size 1100x620 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 1360x768 mm vs display size 1100x620 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 75.029 Hz (Monitor: 57.000 - 63.000 Hz)
+    Horizontal Freq: 31.468 - 79.976 kHz (Monitor: 65.000 - 68.000 kHz)
+  Base EDID: The DTD max image size is 1872x1053mm, which is larger than the display size 1100.0x620.0mm.
+
+EDID conformity: FAIL

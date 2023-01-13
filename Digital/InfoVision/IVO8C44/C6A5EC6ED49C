@@ -1,60 +1,62 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0026cf448c00000000
-001e0104a51e1378e3e201a8524d9a25
-0f515300000001010101010101010101
-010101010101353c80a070b023401830
-6c002ebd10000019000000fd00303c3b
-4a0f010a202020202020000000fe0049
-6e666f566973696f6e0a2020000000fe
-00523134304e573444205230200a0083
+00 ff ff ff ff ff ff 00 26 cf 44 8c 00 00 00 00
+00 1e 01 04 a5 1e 13 78 e3 e2 01 a8 52 4d 9a 25
+0f 51 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 35 3c 80 a0 70 b0 23 40 18 30
+6c 00 2e bd 10 00 00 19 00 00 00 fd 00 30 3c 3b
+4a 0f 01 0a 20 20 20 20 20 20 00 00 00 fe 00 49
+6e 66 6f 56 69 73 69 6f 6e 0a 20 20 00 00 00 fe
+00 52 31 34 30 4e 57 34 44 20 52 30 20 0a 00 83
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   26 cf 44 8c 00 00 00 00 00 1e
-version:         01 04
-basic params:    a5 1e 13 78 e3
-chroma info:     e2 01 a8 52 4d 9a 25 0f 51 53
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    35 3c 80 a0 70 b0 23 40 18 30 6c 00 2e bd 10 00 00 19
-descriptor 2:    00 00 00 fd 00 30 3c 3b 4a 0f 01 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fe 00 49 6e 66 6f 56 69 73 69 6f 6e 0a 20 20
-descriptor 4:    00 00 00 fe 00 52 31 34 30 4e 57 34 44 20 52 30 20 0a
-extensions:      00
-checksum:        83
+----------------
 
-EDID version: 1.4
-Manufacturer: IVO Model 8c44 Serial Number --
-Made in year 2020
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 30 cm x 19 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6591, 0.3222
-  Green: 0.3007, 0.6035
-  Blue:  0.1445, 0.0585
-  White: 0.3164, 0.3251
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 154.130 MHz, 302 mm x 189 mm
-               1920 1944 1992 2080 hborder 0
-               1200 1206 1218 1235 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 74100 Hz
-Monitor ranges (bare limits): 48-60Hz V, 59-74kHz H, max dotclock 150MHz
-ASCII string: InfoVision
-ASCII string: R140NW4D R0 
-Checksum: 0x83 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 60 Hz
-  Horizontal Freq: 74100 - 74100 Hz
-  Maximum Clock: 154.130 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: IVO
+    Model: 35908
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6591, 0.3222
+    Green: 0.3007, 0.6035
+    Blue : 0.1445, 0.0585
+    White: 0.3164, 0.3251
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.000779 Hz   8:5     74.101 kHz    154.130000 MHz (302 mm x 189 mm)
+                 Hfront   24 Hsync  48 Hback   88 Hpol N
+                 Vfront    6 Vsync  12 Vback   17 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-60 Hz V, 59-74 kHz H, max dotclock 150 MHz
+    Alphanumeric Data String: 'InfoVision'
+    Alphanumeric Data String: 'R140NW4D R0 '
+Checksum: 0x83
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 154.130 MHz (Monitor: 150.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

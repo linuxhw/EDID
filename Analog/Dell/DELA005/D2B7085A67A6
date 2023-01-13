@@ -1,63 +1,64 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0010ac05a055455331
-0e0d0103681f1778eecaf6a357479e23
-114f54a54a0001010101010101010101
-01010101010164190040410026301888
-360030e410000018000000ff00385732
-33343334343153455520000000fc0044
-454c4c20453135314650620a000000fd
-00384c1f3c08000a20202020202000c0
+00 ff ff ff ff ff ff 00 10 ac 05 a0 55 45 53 31
+0e 0d 01 03 68 1f 17 78 ee ca f6 a3 57 47 9e 23
+11 4f 54 a5 4a 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 30 e4 10 00 00 18 00 00 00 ff 00 38 57 32
+33 34 33 34 34 31 53 45 55 20 00 00 00 fc 00 44
+45 4c 4c 20 45 31 35 31 46 50 62 0a 00 00 00 fd
+00 38 4c 1f 3c 08 00 0a 20 20 20 20 20 20 00 c0
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   10 ac 05 a0 55 45 53 31 0e 0d
-version:         01 03
-basic params:    68 1f 17 78 ee
-chroma info:     ca f6 a3 57 47 9e 23 11 4f 54
-established:     a5 4a 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    64 19 00 40 41 00 26 30 18 88 36 00 30 e4 10 00 00 18
-descriptor 2:    00 00 00 ff 00 38 57 32 33 34 33 34 34 31 53 45 55 20
-descriptor 3:    00 00 00 fc 00 44 45 4c 4c 20 45 31 35 31 46 50 62 0a
-descriptor 4:    00 00 00 fd 00 38 4c 1f 3c 08 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        c0
+----------------
 
-EDID version: 1.3
-Manufacturer: DEL Model a005 Serial Number --
-Analog display, Input voltage level: 0.7/0.7 V
-Sync: Separate 
-Maximum image size: 31 cm x 23 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3398
-  Green: 0.2792, 0.6191
-  Blue:  0.1396, 0.0693
-  White: 0.3095, 0.3300
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-Detailed mode: Clock 65.000 MHz, 304 mm x 228 mm
-               1024 1048 1184 1344 hborder 0
-                768  771  777  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48363 Hz
-Serial number: -- 
-Monitor name: DELL E151FPb
-Monitor ranges (GTF): 56-76Hz V, 31-60kHz H, max dotclock 80MHz
-Checksum: 0xc0 (valid)
-EDID block does NOT conform to EDID 1.3!
-	sRGB is signaled, but the chromaticities do not match
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 40965
+    Serial Number: ...
+    Made in: week 14 of 2003
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.000 : 0.700 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 31 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.2792, 0.6191
+    Blue : 0.1396, 0.0693
+    White: 0.3095, 0.3300
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (304 mm x 228 mm)
+                 Hfront   24 Hsync 136 Hback  160 Hpol N
+                 Vfront    3 Vsync   6 Vback   29 Vpol N
+    Display Product Serial Number: ...
+    Display Product Name: 'DELL E151FPb'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-76 Hz V, 31-60 kHz H, max dotclock 80 MHz
+Checksum: 0xc0
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Serial Number: ...
+
+EDID conformity: FAIL

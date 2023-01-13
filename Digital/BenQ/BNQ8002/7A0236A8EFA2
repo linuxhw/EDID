@@ -1,67 +1,71 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009d1028045540000
-26150104a5351e783eb7d5a456549f27
-0c5054210800810081c08180a9c0b300
-d1c001010101023a801871382d40582c
-4500dd0c1100001e000000ff00543942
-3038303736534c300a20000000fd0032
-4c1e5311000a202020202020000000fc
-0042656e5120424c323430300a2000d8
+00 ff ff ff ff ff ff 00 09 d1 02 80 45 54 00 00
+26 15 01 04 a5 35 1e 78 3e b7 d5 a4 56 54 9f 27
+0c 50 54 21 08 00 81 00 81 c0 81 80 a9 c0 b3 00
+d1 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 54 39 42
+30 38 30 37 36 53 4c 30 0a 20 00 00 00 fd 00 32
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 42 4c 32 34 30 30 0a 20 00 d8
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 d1 02 80 45 54 00 00 26 15
-version:         01 04
-basic params:    a5 35 1e 78 3e
-chroma info:     b7 d5 a4 56 54 9f 27 0c 50 54
-established:     21 08 00
-standard:        81 00 81 c0 81 80 a9 c0 b3 00 d1 c0 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 dd 0c 11 00 00 1e
-descriptor 2:    00 00 00 ff 00 54 39 42 30 38 30 37 36 53 4c 30 0a 20
-descriptor 3:    00 00 00 fd 00 32 4c 1e 53 11 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 42 65 6e 51 20 42 4c 32 34 30 30 0a 20
-extensions:      00
-checksum:        d8
+----------------
 
-EDID version: 1.4
-Manufacturer: BNQ Model 8002 Serial Number --
-Made in week 38 of 2011
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 53 cm x 30 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6425, 0.3388
-  Green: 0.3291, 0.6240
-  Blue:  0.1552, 0.0478
-  White: 0.3134, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x800@60Hz 16:10
-  1280x720@60Hz 16:9
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1600x900@60Hz 16:9
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 148.500 MHz, 477 mm x 268 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Serial number: --
-Monitor ranges (GTF): 50-76Hz V, 30-83kHz H, max dotclock 170MHz
-Monitor name: BenQ BL2400
-Checksum: 0xd8 (valid)
-EDID block does NOT conform to EDID 1.4!
-	sRGB is signaled, but the chromaticities do not match
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BNQ
+    Model: 32770
+    Serial Number: ...
+    Made in: week 38 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 53 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6425, 0.3388
+    Green: 0.3291, 0.6240
+    Blue : 0.1552, 0.0478
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: ...
+    Display Range Limits:
+      Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+    Display Product Name: 'BenQ BL2400'
+Checksum: 0xd8
 
+----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 477x268 mm vs display size 530x300 mm.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+
+EDID conformity: FAIL

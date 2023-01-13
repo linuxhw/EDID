@@ -1,136 +1,184 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0022a1010001000000
-2719010380522e780a0dc9a057479827
-12484c21090001010101010101010101
-0101010101018c0ad08a20e02d10103e
-9600138e21000018011d007251d01e20
-6e285500c48e2100001e000000fc0054
-657566656c20495038303030000000fd
-00293d0f2e08000a202020202020011d
-020332714f9f90051404130203111206
-07151601230d7f0723157fc0233d7fc0
-23577f00235f7f0023677f00830f0000
-68030c001100801e00011d007251d01e
-206e285500c38e2100001e8c0ad08a20
-e02d10103e9600c38e21000018d60980
-a020e02d101060a200128e2100001800
-0000fd00293d172f08000000000000e5
+00 ff ff ff ff ff ff 00 22 a1 01 00 01 00 00 00
+27 19 01 03 80 52 2e 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 21 09 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8c 0a d0 8a 20 e0 2d 10 10 3e
+96 00 13 8e 21 00 00 18 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 c4 8e 21 00 00 1e 00 00 00 fc 00 54
+65 75 66 65 6c 20 49 50 38 30 30 30 00 00 00 fd
+00 29 3d 0f 2e 08 00 0a 20 20 20 20 20 20 01 1d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 a1 01 00 01 00 00 00 27 19
-version:         01 03
-basic params:    80 52 2e 78 0a
-chroma info:     0d c9 a0 57 47 98 27 12 48 4c
-established:     21 09 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 13 8e 21 00 00 18
-descriptor 2:    01 1d 00 72 51 d0 1e 20 6e 28 55 00 c4 8e 21 00 00 1e
-descriptor 3:    00 00 00 fc 00 54 65 75 66 65 6c 20 49 50 38 30 30 30
-descriptor 4:    00 00 00 fd 00 29 3d 0f 2e 08 00 0a 20 20 20 20 20 20
-extensions:      01
-checksum:        1d
+02 03 32 71 4f 9f 90 05 14 04 13 02 03 11 12 06
+07 15 16 01 23 0d 7f 07 23 15 7f c0 23 3d 7f c0
+23 57 7f 00 23 5f 7f 00 23 67 7f 00 83 0f 00 00
+68 03 0c 00 11 00 80 1e 00 01 1d 00 72 51 d0 1e
+20 6e 28 55 00 c3 8e 21 00 00 1e 8c 0a d0 8a 20
+e0 2d 10 10 3e 96 00 c3 8e 21 00 00 18 d6 09 80
+a0 20 e0 2d 10 10 60 a2 00 12 8e 21 00 00 18 00
+00 00 fd 00 29 3d 17 2f 08 00 00 00 00 00 00 e5
 
-EDID version: 1.3
-Manufacturer: HUA Model 1 Serial Number --
-Made in week 39 of 2015
-Digital display
-Maximum image size: 82 cm x 46 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6250, 0.3398
-  Green: 0.2802, 0.5947
-  Blue:  0.1552, 0.0703
-  White: 0.2832, 0.2978
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-Detailed mode: Clock 27.000 MHz, 531 mm x 398 mm
-                720  736  798  858 hborder 0
-                480  489  495  525 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 31468 Hz
-Detailed mode: Clock 74.250 MHz, 708 mm x 398 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Monitor ranges (GTF): 41-61Hz V, 15-46kHz H, max dotclock 80MHz
-Has 1 extension blocks
-Checksum: 0x1d (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-46 bytes of CTA data
-  Video data block
-    VIC  31 1920x1080@50Hz 16:9 (native) HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC  20 1920x1080i@50Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC  17 720x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC   6 1440x480i@60Hz 4:3  HorFreq: 15734 Hz Clock: 27.000 MHz
-    VIC   7 1440x480i@60Hz 16:9  HorFreq: 15734 Hz Clock: 27.000 MHz
-    VIC  21 1440x576i@50Hz 4:3  HorFreq: 15625 Hz Clock: 27.000 MHz
-    VIC  22 1440x576i@50Hz 16:9  HorFreq: 15625 Hz Clock: 27.000 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-  Audio data block
-    Linear PCM, max channels 6
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HUA
+    Model: 1
+    Serial Number: ...
+    Made in: week 39 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 82 cm x 46 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (531 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    Display Product Name: 'Teufel IP8000'
+    Display Range Limits:
+      Monitor ranges (GTF): 41-61 Hz V, 15-46 kHz H, max dotclock 80 MHz
+  Extension blocks: 1
+Checksum: 0x1d
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 6
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Audio data block
-    AC-3, max channels 6
+  Audio Data Block:
+    AC-3:
+      Max channels: 6
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-      Maximum bit rate: 1536 kHz
-  Audio data block
-    DTS, max channels 6
+      Maximum bit rate: 1536 kb/s
+  Audio Data Block:
+    DTS:
+      Max channels: 6
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-      Maximum bit rate: 1536 kHz
-  Audio data block
-    Dolby Digital+, max channels 8
+      Maximum bit rate: 1536 kb/s
+  Audio Data Block:
+    Enhanced AC-3 (DD+):
+      Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-  Audio data block
-    DTS-HD, max channels 8
+  Audio Data Block:
+    DTS-HD:
+      Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-  Audio data block
-    MAT (MLP), max channels 8
+      Audio Format Code dependent value: 0x00
+  Audio Data Block:
+    MAT (MLP):
+      Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-      LFE - Low Frequency Effects
-      FC - Front Center
-      BL/BR - Back Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.1.0.0
+      Supports only Dolby TrueHD
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+    LFE1 - Low Frequency Effects 1
+    FC - Front Center
+    BL/BR - Back Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.1.0.0
     Supports_AI
-    Maximum TMDS clock: 150MHz
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 0.120 MHz, 720 mm x 30 mm
-               2065 2350 2606 2065 hborder 110
-                 30   37   55  286 vborder 40
-               -hsync +vsync digital composite interleaved left even
-               VertFreq: 0 Hz, HorFreq: 58 Hz
-Checksum: 0xe5 (valid)
+    Maximum TMDS clock: 150 MHz
+  Detailed Timing Descriptors:
+    Detailed mode: 0c 00 11 00 80 1e 00 01 1d 00 72 51 d0 1e 20 6e 28 55 '..........rQ.. n(U'
+    DTD 4:   142x4096i 567.506501 Hz  71:2048 2852.571 kHz    499.200000 MHz (digital composite, serrate, 480 mm x 45 mm)
+                 Hfront   10 Hsync 720 Hback -729 Hpol P Hborder 16
+                 Vfront    8 Vsync  10 Vback 2960 Vborder 62 Vfront +0.5 Odd Field
+                 Vfront    8 Vsync  10 Vback 2960 Vborder 62 Vback  +0.5 Even Field
+    DTD 5:   142x6656i 607.382397 Hz  71:3328 2852.571 kHz    499.200000 MHz (analog composite, field sequential L/R, 480 mm x 45 mm)
+                 Hfront    9 Hsync 640 Hback -648 Hpol N Hborder 16
+                 Vfront   10 Vsync   0 Vback 1358 Vpol N Vborder 96 Vfront +0.5 Odd Field
+                 Vfront   10 Vsync   0 Vback 1358 Vpol N Vborder 96 Vback  +0.5 Even Field
+                   00 c3 8e 21 00 00 18 d6 09 80 a0 20 e0 2d 10 10 60 a2 '...!....... .-..`.'
+    DTD 6:   142x0     10971.428571 Hz   1:0    263.314 kHz     46.080000 MHz (analog composite, sync-on-green, 297 mm x 1853 mm)
+                 Hfront    0 Hsync   0 Hback  -61 Hpol N Hborder 47
+                 Vfront   15 Vsync  13 Vback  -20 Vpol N Vborder 8
+                   00 12 8e 21 00 00 18 00 00 00 fd 00 29 3d 17 2f 08 00 '...!........)=./..'
+Checksum: 0xe5
 
-EDID block does NOT conform to EDID 1.3!
-	Name descriptor not terminated with a newline
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 0 - 75 Hz
-  Horizontal Freq: 58 - 80000 Hz
-  Maximum Clock: 148.500 MHz
+----------------
 
+Warnings:
 
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Detailed Timing Descriptor #4: The use of non-zero borders in a DTD is not recommended.
+  Detailed Timing Descriptor #5: The use of non-zero borders in a DTD is not recommended.
+  Detailed Timing Descriptor #6: The use of non-zero borders in a DTD is not recommended.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 531x398 mm vs display size 820x460 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 708x398 mm vs display size 820x460 mm.
+Block 1, CTA-861 Extension Block:
+  Offset is 50, but should be 57.
+  Detailed Timing Descriptor #3: Pixelclock < 10 MHz, assuming invalid data 0x0c 0x00.
+  Detailed Timing Descriptor #4: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #4: Mismatch of image size 480x45 mm vs display size 820x460 mm.
+  Detailed Timing Descriptor #5: 0 values in the video timing:
+    Horizontal Active/Blanking 142/33
+    Horizontal Frontporch/Sync Width 9/640
+    Vertical Active/Blanking 3328/1560
+    Vertical Frontporch/Sync Width 10/0
+  Detailed Timing Descriptor #5: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #5: Mismatch of image size 480x45 mm vs display size 820x460 mm.
+  Detailed Timing Descriptor #6: 0 values in the video timing:
+    Horizontal Active/Blanking 142/33
+    Horizontal Frontporch/Sync Width 0/0
+    Vertical Active/Blanking 0/24
+    Vertical Frontporch/Sync Width 15/13
+  Detailed Timing Descriptor #6: 0 or negative horizontal front porch.
+  Detailed Timing Descriptor #6: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #6: 0 or negative vertical back porch.
+  Detailed Timing Descriptor #6: Mismatch of image size 297x1853 mm vs display size 820x460 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 10971.429 Hz (Monitor: 41.000 - 61.000 Hz)
+    Horizontal Freq: 15.625 - 2852.571 kHz (Monitor: 15.000 - 46.000 kHz)
+    Maximum Clock: 499.200 MHz (Monitor: 80.000 MHz)
+  Base EDID: The DTD max image size is 708x1853mm, which is larger than the display size 820.0x460.0mm.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

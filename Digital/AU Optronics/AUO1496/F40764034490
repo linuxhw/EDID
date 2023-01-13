@@ -1,59 +1,55 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006af96147d0dcb39
-001a0104a5261578029d75a457569c27
-0c505400000001010101010101010101
-01010101010128c300a0a0a05a503020
-35007ed61000001828c300a0a0a05456
-302035007ed610000018000000fe0041
-554f0a202020202020202020000000fe
-004231373351544e30312e34200a0006
+00 ff ff ff ff ff ff 00 06 af 96 14 7d 0d cb 39
+00 1a 01 04 a5 26 15 78 02 9d 75 a4 57 56 9c 27
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 28 c3 00 a0 a0 a0 5a 50 30 20
+35 00 7e d6 10 00 00 18 28 c3 00 a0 a0 a0 54 56
+30 20 35 00 7e d6 10 00 00 18 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 37 33 51 54 4e 30 31 2e 34 20 0a 00 06
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 af 96 14 7d 0d cb 39 00 1a
-version:         01 04
-basic params:    a5 26 15 78 02
-chroma info:     9d 75 a4 57 56 9c 27 0c 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    28 c3 00 a0 a0 a0 5a 50 30 20 35 00 7e d6 10 00 00 18
-descriptor 2:    28 c3 00 a0 a0 a0 54 56 30 20 35 00 7e d6 10 00 00 18
-descriptor 3:    00 00 00 fe 00 41 55 4f 0a 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 42 31 37 33 51 54 4e 30 31 2e 34 20 0a
-extensions:      00
-checksum:        06
+----------------
 
-EDID version: 1.4
-Manufacturer: AUO Model 1496 Serial Number --
-Made in year 2016
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 38 cm x 21 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6425, 0.3408
-  Green: 0.3388, 0.6103
-  Blue:  0.1533, 0.0498
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 499.600 MHz, 382 mm x 214 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1530 vborder 0
-               -hsync -vsync 
-               VertFreq: 120 Hz, HorFreq: 183676 Hz
-Detailed mode: Clock 499.600 MHz, 382 mm x 214 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 3060 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 183676 Hz
-ASCII string: AUO
-ASCII string: B173QTN01.4 
-Checksum: 0x6 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 5270
+    Serial Number: ...
+    Made in: 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6425, 0.3408
+    Green: 0.3388, 0.6103
+    Blue : 0.1533, 0.0498
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440  120.049981 Hz  16:9    183.676 kHz    499.600000 MHz (382 mm x 214 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   82 Vpol N
+    DTD 2:  2560x1440   60.024990 Hz  16:9    183.676 kHz    499.600000 MHz (382 mm x 214 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback 1612 Vpol N
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B173QTN01.4 '
+Checksum: 0x06
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

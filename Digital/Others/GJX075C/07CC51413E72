@@ -1,60 +1,54 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001d585c0700000000
-1a1f0104a51a0e780a81e096595a9a29
-1c505400000001010101010101010101
-010101010101ce1d56e250001e303020
-360000901000001adf1356e250001e30
-3020360000901000001a000000fe0058
-44593733804e56313136574800000000
-00473131364541303209010a20200088
+00 ff ff ff ff ff ff 00 1d 58 5c 07 00 00 00 00
+1a 1f 01 04 a5 1a 0e 78 0a 81 e0 96 59 5a 9a 29
+1c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 e2 50 00 1e 30 30 20
+36 00 00 90 10 00 00 1a df 13 56 e2 50 00 1e 30
+30 20 36 00 00 90 10 00 00 1a 00 00 00 fe 00 58
+44 59 37 33 80 4e 56 31 31 36 57 48 00 00 00 00
+00 47 31 31 36 45 41 30 32 09 01 0a 20 20 00 88
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1d 58 5c 07 00 00 00 00 1a 1f
-version:         01 04
-basic params:    a5 1a 0e 78 0a
-chroma info:     81 e0 96 59 5a 9a 29 1c 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    ce 1d 56 e2 50 00 1e 30 30 20 36 00 00 90 10 00 00 1a
-descriptor 2:    df 13 56 e2 50 00 1e 30 30 20 36 00 00 90 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 58 44 59 37 33 80 4e 56 31 31 36 57 48
-descriptor 4:    00 00 00 00 00 47 31 31 36 45 41 30 32 09 01 0a 20 20
-extensions:      00
-checksum:        88
+----------------
 
-EDID version: 1.4
-Manufacturer: GJX Model 75c Serial Number --
-Made in week 26 of 2021
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 26 cm x 14 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5878, 0.3476
-  Green: 0.3515, 0.6025
-  Blue:  0.1630, 0.1113
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 76.300 MHz, 256 mm x 144 mm
-               1366 1414 1446 1592 hborder 0
-                768  771  777  798 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 47927 Hz
-Detailed mode: Clock 50.870 MHz, 256 mm x 144 mm
-               1366 1414 1446 1592 hborder 0
-                768  771  777  798 vborder 0
-               +hsync -vsync 
-               VertFreq: 40 Hz, HorFreq: 31953 Hz
-ASCII string: XDY73
-Manufacturer-specified data, tag 0
-Checksum: 0x88 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GJX
+    Model: 1884
+    Made in: week 26 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5878, 0.3476
+    Green: 0.3515, 0.6025
+    Blue : 0.1630, 0.1113
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.059067 Hz 683:384   47.927 kHz     76.300000 MHz (256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback  146 Hpol P
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    DTD 2:  1366x768    40.042002 Hz 683:384   31.954 kHz     50.870000 MHz (256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback  146 Hpol P
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    Alphanumeric Data String: 'XDY73'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 47 31 31 36 45 41 30 32 09 01 0a 20 20 '...G116EA02...  '
+Checksum: 0x88
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

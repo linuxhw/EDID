@@ -1,60 +1,54 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004ca3435400000000
-00120104a02517780287f594574f8c27
-27505400000001010101010101010101
-0101010101016040803071b023406420
-26006fe61000001a6040803071b02340
-642026006fe61000001a000000fe0046
-523932388031373043540a2000000000
-00000000000000000006010a20200072
+00 ff ff ff ff ff ff 00 4c a3 43 54 00 00 00 00
+00 12 01 04 a0 25 17 78 02 87 f5 94 57 4f 8c 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 60 40 80 30 71 b0 23 40 64 20
+26 00 6f e6 10 00 00 1a 60 40 80 30 71 b0 23 40
+64 20 26 00 6f e6 10 00 00 1a 00 00 00 fe 00 46
+52 39 32 38 80 31 37 30 43 54 0a 20 00 00 00 00
+00 00 00 00 00 00 00 00 00 06 01 0a 20 20 00 72
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c a3 43 54 00 00 00 00 00 12
-version:         01 04
-basic params:    a0 25 17 78 02
-chroma info:     87 f5 94 57 4f 8c 27 27 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    60 40 80 30 71 b0 23 40 64 20 26 00 6f e6 10 00 00 1a
-descriptor 2:    60 40 80 30 71 b0 23 40 64 20 26 00 6f e6 10 00 00 1a
-descriptor 3:    00 00 00 fe 00 46 52 39 32 38 80 31 37 30 43 54 0a 20
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 06 01 0a 20 20
-extensions:      00
-checksum:        72
+----------------
 
-EDID version: 1.4
-Manufacturer: SEC Model 5443 Serial Number --
-Made in year 2008
-Digital display
-8 bits per primary color channel
-Digital interface is not defined
-Maximum image size: 37 cm x 23 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5800, 0.3398
-  Green: 0.3095, 0.5498
-  Blue:  0.1552, 0.1552
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 164.800 MHz, 367 mm x 230 mm
-               1920 2020 2052 2224 hborder 0
-               1200 1202 1208 1235 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 74100 Hz
-Detailed mode: Clock 164.800 MHz, 367 mm x 230 mm
-               1920 2020 2052 2224 hborder 0
-               1200 1202 1208 1235 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 74100 Hz
-ASCII string: FR928
-Manufacturer-specified data, tag 0
-Checksum: 0x72 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 21571
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    Digital interface is not defined
+    Maximum image size: 37 cm x 23 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5800, 0.3398
+    Green: 0.3095, 0.5498
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.000583 Hz   8:5     74.101 kHz    164.800000 MHz (367 mm x 230 mm)
+                 Hfront  100 Hsync  32 Hback  172 Hpol P
+                 Vfront    2 Vsync   6 Vback   27 Vpol N
+    DTD 2:  1920x1200   60.000583 Hz   8:5     74.101 kHz    164.800000 MHz (367 mm x 230 mm)
+                 Hfront  100 Hsync  32 Hback  172 Hpol P
+                 Vfront    2 Vsync   6 Vback   27 Vpol N
+    Alphanumeric Data String: 'FR928'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 06 01 0a 20 20 '..............  '
+Checksum: 0x72
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

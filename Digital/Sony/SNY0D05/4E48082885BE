@@ -1,116 +1,118 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004dd9050d01000000
-ff1b010380a05a780a0dc9a057479827
-12484c20000081c03140010101010101
-010101010101011d007251d01e206e28
-550040846300001e000000fc004d502d
-4344310a202020202020000000fd0018
-550e4610000a20202020202000000000
-0000000000000000000000000000015c
-02031a71450103041213230907078301
-000067030c001000801e011d007251d0
-1e206e28550040846300001e011d00bc
-52d01e20b828554040846300001e8c0a
-d090204031200c40550040846300001e
-8c0ad08a20e02d10103e960040846300
-001ed60980a020e02d101060a2004084
-6308081e000000000000000000000083
+00 ff ff ff ff ff ff 00 4d d9 05 0d 01 00 00 00
+ff 1b 01 03 80 a0 5a 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 20 00 00 81 c0 31 40 01 01 01 01 01 01
+01 01 01 01 01 01 01 1d 00 72 51 d0 1e 20 6e 28
+55 00 40 84 63 00 00 1e 00 00 00 fc 00 4d 50 2d
+43 44 31 0a 20 20 20 20 20 20 00 00 00 fd 00 18
+55 0e 46 10 00 0a 20 20 20 20 20 20 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 5c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4d d9 05 0d 01 00 00 00 ff 1b
-version:         01 03
-basic params:    80 a0 5a 78 0a
-chroma info:     0d c9 a0 57 47 98 27 12 48 4c
-established:     20 00 00
-standard:        81 c0 31 40 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    01 1d 00 72 51 d0 1e 20 6e 28 55 00 40 84 63 00 00 1e
-descriptor 2:    00 00 00 fc 00 4d 50 2d 43 44 31 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fd 00 18 55 0e 46 10 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      01
-checksum:        5c
+02 03 1a 71 45 01 03 04 12 13 23 09 07 07 83 01
+00 00 67 03 0c 00 10 00 80 1e 01 1d 00 72 51 d0
+1e 20 6e 28 55 00 40 84 63 00 00 1e 01 1d 00 bc
+52 d0 1e 20 b8 28 55 40 40 84 63 00 00 1e 8c 0a
+d0 90 20 40 31 20 0c 40 55 00 40 84 63 00 00 1e
+8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 40 84 63 00
+00 1e d6 09 80 a0 20 e0 2d 10 10 60 a2 00 40 84
+63 08 08 1e 00 00 00 00 00 00 00 00 00 00 00 83
 
-EDID version: 1.3
-Manufacturer: SNY Model d05 Serial Number --
-Digital display
-Maximum image size: 160 cm x 90 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6250, 0.3398
-  Green: 0.2802, 0.5947
-  Blue:  0.1552, 0.0703
-  White: 0.2832, 0.2978
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-Standard timings supported:
-  1280x720@60Hz 16:9
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-Detailed mode: Clock 74.250 MHz, 1600 mm x 900 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Monitor name: MP-CD1
-Monitor ranges (GTF): 24-85Hz V, 14-70kHz H, max dotclock 160MHz
-Manufacturer-specified data, tag 0
-Has 1 extension blocks
-Checksum: 0x5c (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-22 bytes of CTA data
-  Video data block
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SNY
+    Model: 3333
+    Serial Number: ...
+    Model year: 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 160 cm x 90 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (1600 mm x 900 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    Display Product Name: 'MP-CD1'
+    Display Range Limits:
+      Monitor ranges (GTF): 24-85 Hz V, 14-70 kHz H, max dotclock 160 MHz
+    Empty Descriptor
+  Extension blocks: 1
+Checksum: 0x5c
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
     Supports_AI
-    Maximum TMDS clock: 150MHz
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 74.250 MHz, 1600 mm x 900 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Detailed mode: Clock 74.250 MHz, 1600 mm x 900 mm
-               1280 1720 1760 1980 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 50 Hz, HorFreq: 37500 Hz
-Detailed mode: Clock 27.000 MHz, 1600 mm x 900 mm
-                720  732  796  864 hborder 0
-                576  581  586  625 vborder 0
-               +hsync +vsync 
-               VertFreq: 50 Hz, HorFreq: 31250 Hz
-Detailed mode: Clock 27.000 MHz, 1600 mm x 900 mm
-                720  736  798  858 hborder 0
-                480  489  495  525 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 31468 Hz
-Detailed mode: Clock 25.180 MHz, 1600 mm x 900 mm
-                640  656  752  800 hborder 8
-                480  490  492  525 vborder 8
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 31475 Hz
-Checksum: 0x83 (valid)
+    Maximum TMDS clock: 150 MHz
+  Detailed Timing Descriptors:
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (1600 mm x 900 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 3:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (1600 mm x 900 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (1600 mm x 900 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol P
+                 Vfront    5 Vsync   5 Vback   39 Vpol P
+    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (1600 mm x 900 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol P
+                 Vfront    9 Vsync   6 Vback   30 Vpol P
+    DTD 6:   640x480    59.952381 Hz   4:3     31.475 kHz     25.180000 MHz (1600 mm x 900 mm)
+                 Hfront   16 Hsync  96 Hback   32 Hpol P Hborder 8
+                 Vfront   10 Vsync   2 Vback   17 Vpol P Vborder 8
+Checksum: 0x83
 
-EDID block does not conform at all!
-	Bad year of manufacture
-	Bad week of manufacture
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Detailed Timing Descriptor #4: DTD is similar but not identical to VIC 17.
+  Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 2.
+  Detailed Timing Descriptor #6: The use of non-zero borders in a DTD is not recommended.
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: EDID 1.3 does not support week 0xff.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+EDID conformity: FAIL

@@ -1,83 +1,84 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff006325002701010101
-2a1c0103803c2178ee4455a9554d9d26
-0f5054adcf00b300d1c0a9c095007140
-810081c08140565e00a0a0a029503020
-350055502100001a7f2156aa51001e30
-468f3300c4fe1000001a662150b05100
-1b3040703600c4fe1000001a000000fc
-005849414e475945cfe8d2b00a20006c
+00 ff ff ff ff ff ff 00 63 25 00 27 01 01 01 01
+2a 1c 01 03 80 3c 21 78 ee 44 55 a9 55 4d 9d 26
+0f 50 54 ad cf 00 b3 00 d1 c0 a9 c0 95 00 71 40
+81 00 81 c0 81 40 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 55 50 21 00 00 1a 7f 21 56 aa 51 00 1e 30
+46 8f 33 00 c4 fe 10 00 00 1a 66 21 50 b0 51 00
+1b 30 40 70 36 00 c4 fe 10 00 00 1a 00 00 00 fc
+00 58 49 41 4e 47 59 45 cf e8 d2 b0 0a 20 00 6c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   63 25 00 27 01 01 01 01 2a 1c
-version:         01 03
-basic params:    80 3c 21 78 ee
-chroma info:     44 55 a9 55 4d 9d 26 0f 50 54
-established:     ad cf 00
-standard:        b3 00 d1 c0 a9 c0 95 00 71 40 81 00 81 c0 81 40
-descriptor 1:    56 5e 00 a0 a0 a0 29 50 30 20 35 00 55 50 21 00 00 1a
-descriptor 2:    7f 21 56 aa 51 00 1e 30 46 8f 33 00 c4 fe 10 00 00 1a
-descriptor 3:    66 21 50 b0 51 00 1b 30 40 70 36 00 c4 fe 10 00 00 1a
-descriptor 4:    00 00 00 fc 00 58 49 41 4e 47 59 45 cf e8 d2 b0 0a 20
-extensions:      00
-checksum:        6c
+----------------
 
-EDID version: 1.3
-Manufacturer: XYE Model 2700 Serial Number --
-Made in week 42 of 2018
-Digital display
-Maximum image size: 60 cm x 33 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6611, 0.3320
-  Green: 0.3017, 0.6132
-  Blue:  0.1494, 0.0595
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1920x1080@60Hz 16:9
-  1600x900@60Hz 16:9
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1152x864@60Hz 4:3
-  1280x800@60Hz 16:10
-  1280x720@60Hz 16:9
-  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
-Detailed mode: Clock 241.500 MHz, 597 mm x 336 mm
-               2560 2608 2640 2720 hborder 0
-               1440 1443 1448 1481 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 88786 Hz
-Detailed mode: Clock 85.750 MHz, 452 mm x 254 mm
-               1366 1436 1579 1792 hborder 0
-                768  771  774  798 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 47851 Hz
-Detailed mode: Clock 85.500 MHz, 452 mm x 254 mm
-               1360 1424 1536 1792 hborder 0
-                768  771  777  795 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 47712 Hz
-Monitor name: XIANGYE
-Checksum: 0x6c (valid)
-EDID block does NOT conform to EDID 1.3!
-	sRGB is signaled, but the chromaticities do not match
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: XYE
+    Model: 9984
+    Serial Number: ...
+    Made in: week 42 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 60 cm x 33 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6611, 0.3320
+    Green: 0.3017, 0.6132
+    Blue : 0.1494, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 2:  1366x768    59.964364 Hz 683:384   47.852 kHz     85.750000 MHz (452 mm x 254 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol N
+    DTD 3:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (452 mm x 254 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol N
+    Display Product Name: 'XIANGYE'
+Checksum: 0x6c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #3: DTD is similar but not identical to DMT 0x27.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #2: Mismatch of image size 452x254 mm vs display size 600x330 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 452x254 mm vs display size 600x330 mm.
+  Display Product Name: Non-printable character.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

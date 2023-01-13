@@ -1,77 +1,88 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004a8b3b2a01010101
-17150103803c2278eab1a0ae4f34b126
-0e5054a54b008180a940d1c0714f0101
-010101010101662156aa51001e30468f
-330055502100001e000000ff004a3235
-374d3936423030464c0a000000fc004b
-59562048444d490a20202020000000fd
-00384c1e5111000a2020202020200199
-d60fe10fe00fe10fe00fe00fdd0fdc0f
-db0fd90fd70fd70fd50fd60fd50fd70f
-7f009400ab00c500de00f90014013201
-4e016c018801a701c401e201fe011b02
-400331032c031f0317030903fc02eb02
-da02c602b3029b0285026b0252023602
-6b005a0049003b002b001e0013000700
-fd0ff50fee0fe70fe20fdd0fdb0fd80f
+00 ff ff ff ff ff ff 00 4a 8b 3b 2a 01 01 01 01
+17 15 01 03 80 3c 22 78 ea b1 a0 ae 4f 34 b1 26
+0e 50 54 a5 4b 00 81 80 a9 40 d1 c0 71 4f 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 55 50 21 00 00 1e 00 00 00 ff 00 4a 32 35
+37 4d 39 36 42 30 30 46 4c 0a 00 00 00 fc 00 4b
+59 56 20 48 44 4d 49 0a 20 20 20 20 00 00 00 fd
+00 38 4c 1e 51 11 00 0a 20 20 20 20 20 20 01 99
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4a 8b 3b 2a 01 01 01 01 17 15
-version:         01 03
-basic params:    80 3c 22 78 ea
-chroma info:     b1 a0 ae 4f 34 b1 26 0e 50 54
-established:     a5 4b 00
-standard:        81 80 a9 40 d1 c0 71 4f 01 01 01 01 01 01 01 01
-descriptor 1:    66 21 56 aa 51 00 1e 30 46 8f 33 00 55 50 21 00 00 1e
-descriptor 2:    00 00 00 ff 00 4a 32 35 37 4d 39 36 42 30 30 46 4c 0a
-descriptor 3:    00 00 00 fc 00 4b 59 56 20 48 44 4d 49 0a 20 20 20 20
-descriptor 4:    00 00 00 fd 00 38 4c 1e 51 11 00 0a 20 20 20 20 20 20
-extensions:      01
-checksum:        99
+d6 0f e1 0f e0 0f e1 0f e0 0f e0 0f dd 0f dc 0f
+db 0f d9 0f d7 0f d7 0f d5 0f d6 0f d5 0f d7 0f
+7f 00 94 00 ab 00 c5 00 de 00 f9 00 14 01 32 01
+4e 01 6c 01 88 01 a7 01 c4 01 e2 01 fe 01 1b 02
+40 03 31 03 2c 03 1f 03 17 03 09 03 fc 02 eb 02
+da 02 c6 02 b3 02 9b 02 85 02 6b 02 52 02 36 02
+6b 00 5a 00 49 00 3b 00 2b 00 1e 00 13 00 07 00
+fd 0f f5 0f ee 0f e7 0f e2 0f dd 0f db 0f d8 0f
 
-EDID version: 1.3
-Manufacturer: RTK Model 2a3b Serial Number --
-Made in week 23 of 2011
-Digital display
-Maximum image size: 60 cm x 34 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6816, 0.3115
-  Green: 0.2031, 0.6923
-  Blue:  0.1503, 0.0566
-  White: 0.3125, 0.3281
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
-  1920x1080@60Hz 16:9
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-Detailed mode: Clock 85.500 MHz, 597 mm x 336 mm
-               1366 1436 1579 1792 hborder 0
-                768  771  774  798 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 47712 Hz
-Serial number: --
-Monitor name: KYV HDMI
-Monitor ranges (GTF): 56-76Hz V, 30-81kHz H, max dotclock 170MHz
-Has 1 extension blocks
-Checksum: 0x99 (valid)
+----------------
 
-Unknown extension block
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: RTK
+    Model: 10811
+    Serial Number: ...
+    Made in: week 23 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6816, 0.3115
+    Green: 0.2031, 0.6923
+    Blue : 0.1503, 0.0566
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (597 mm x 336 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: 'KYV HDMI'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-76 Hz V, 30-81 kHz H, max dotclock 170 MHz
+  Extension blocks: 1
+Checksum: 0x99
 
-EDID block does not conform at all!
-	Has 1728053248 nonconformant extension block(s)
+----------------
+
+Block 1, Unknown EDID Extension Block 0xd6:
+  d6 0f e1 0f e0 0f e1 0f e0 0f e0 0f dd 0f dc 0f '................'
+  db 0f d9 0f d7 0f d7 0f d5 0f d6 0f d5 0f d7 0f '................'
+  7f 00 94 00 ab 00 c5 00 de 00 f9 00 14 01 32 01 '..............2.'
+  4e 01 6c 01 88 01 a7 01 c4 01 e2 01 fe 01 1b 02 'N.l.............'
+  40 03 31 03 2c 03 1f 03 17 03 09 03 fc 02 eb 02 '@.1.,...........'
+  da 02 c6 02 b3 02 9b 02 85 02 6b 02 52 02 36 02 '..........k.R.6.'
+  6b 00 5a 00 49 00 3b 00 2b 00 1e 00 13 00 07 00 'k.Z.I.;.+.......'
+  fd 0f f5 0f ee 0f e7 0f e2 0f dd 0f db 0f d8 0f '................'
+Checksum: 0x0f (should be 0x76)
+
+----------------
+
+Failures:
+
+Block 1, Unknown EDID Extension Block 0xd6:
+  Unknown Extension Block.
+  Invalid checksum 0x0f (should be 0x76).
+
+EDID conformity: FAIL

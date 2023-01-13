@@ -1,68 +1,70 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff005c85553294000000
-23100103084728782a2691a754469724
-104849bfe80081c00101010101010101
-010101010101201c50a0500016303020
-2500c58f2100001a000000fe00576573
-74696e67686f7573650a000000fd0032
-4b1e3008000a202020202020000000fc
-004c54562d33327736204844200a00fc
+00 ff ff ff ff ff ff 00 5c 85 55 32 94 00 00 00
+23 10 01 03 08 47 28 78 2a 26 91 a7 54 46 97 24
+10 48 49 bf e8 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 20 1c 50 a0 50 00 16 30 30 20
+25 00 c5 8f 21 00 00 1a 00 00 00 fe 00 57 65 73
+74 69 6e 67 68 6f 75 73 65 0a 00 00 00 fd 00 32
+4b 1e 30 08 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 54 56 2d 33 32 77 36 20 48 44 20 0a 00 fc
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   5c 85 55 32 94 00 00 00 23 10
-version:         01 03
-basic params:    08 47 28 78 2a
-chroma info:     26 91 a7 54 46 97 24 10 48 49
-established:     bf e8 00
-standard:        81 c0 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    20 1c 50 a0 50 00 16 30 30 20 25 00 c5 8f 21 00 00 1a
-descriptor 2:    00 00 00 fe 00 57 65 73 74 69 6e 67 68 6f 75 73 65 0a
-descriptor 3:    00 00 00 fd 00 32 4b 1e 30 08 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 4c 54 56 2d 33 32 77 36 20 48 44 20 0a
-extensions:      00
-checksum:        fc
+----------------
 
-EDID version: 1.3
-Manufacturer: WDE Model 3255 Serial Number --
-Made in week 35 of 2006
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate 
-Maximum image size: 71 cm x 40 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6523, 0.3300
-  Green: 0.2744, 0.5917
-  Blue:  0.1425, 0.0634
-  White: 0.2812, 0.2861
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@56Hz 4:3 HorFreq: 35200 Hz Clock: 36.000 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x720@60Hz 16:9
-Detailed mode: Clock 72.000 MHz, 709 mm x 399 mm
-               1360 1408 1440 1520 hborder 0
-                768  770  775  790 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 47368 Hz
-ASCII string: Westinghouse
-Monitor ranges (GTF): 50-75Hz V, 30-48kHz H, max dotclock 80MHz
-Monitor name: LTV-32w6 HD 
-Checksum: 0xfc (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 56 - 75 Hz
-  Horizontal Freq: 31469 - 49726 Hz
-  Maximum Clock: 72.000 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: WDE
+    Model: 12885
+    Serial Number: ...
+    Made in: week 35 of 2006
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 71 cm x 40 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6523, 0.3300
+    Green: 0.2744, 0.5917
+    Blue : 0.1425, 0.0634
+    White: 0.2812, 0.2861
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    Apple   :   640x480    66.666667 Hz   4:3     35.000 kHz     30.240000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    Apple   :   832x624    74.551266 Hz   4:3     49.726 kHz     57.284000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1360x768    59.960027 Hz  85:48    47.368 kHz     72.000000 MHz (709 mm x 399 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol N
+    Alphanumeric Data String: 'Westinghouse'
+    Display Range Limits:
+      Monitor ranges (GTF): 50-75 Hz V, 30-48 kHz H, max dotclock 80 MHz
+    Display Product Name: 'LTV-32w6 HD '
+Checksum: 0xfc
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: One or more trailing spaces.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 49.725 kHz (Monitor: 30.000 - 48.000 kHz)
+
+EDID conformity: FAIL

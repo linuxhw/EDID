@@ -1,103 +1,104 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004ca34a1400000000
-011b0103800000780a0dc9a057479827
-12484c00000001010101010101010101
-010101010101a0af40c4b04018607220
-a2004040b6000018147540c4b0401860
-7220a2004040b6000018c77340a2b040
-18606420a2004040b6000018000000fc
-005345433134344120202020200a0106
-0203280065030c00100067d85dc40178
-8007755c12ca01072527107b19a448d3
-94890c3b53ffeadba0af40c4b0401860
-7220a2004040b6000018147540c4b040
-18607220a2004040b6000018c77340a2
-b04018606420a2004040b60000180000
-00000000000000000000000000000000
-00000000000000000000000000000064
+00 ff ff ff ff ff ff 00 4c a3 4a 14 00 00 00 00
+01 1b 01 03 80 00 00 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a0 af 40 c4 b0 40 18 60 72 20
+a2 00 40 40 b6 00 00 18 14 75 40 c4 b0 40 18 60
+72 20 a2 00 40 40 b6 00 00 18 c7 73 40 a2 b0 40
+18 60 64 20 a2 00 40 40 b6 00 00 18 00 00 00 fc
+00 53 45 43 31 34 34 41 20 20 20 20 20 0a 01 06
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c a3 4a 14 00 00 00 00 01 1b
-version:         01 03
-basic params:    80 00 00 78 0a
-chroma info:     0d c9 a0 57 47 98 27 12 48 4c
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    a0 af 40 c4 b0 40 18 60 72 20 a2 00 40 40 b6 00 00 18
-descriptor 2:    14 75 40 c4 b0 40 18 60 72 20 a2 00 40 40 b6 00 00 18
-descriptor 3:    c7 73 40 a2 b0 40 18 60 64 20 a2 00 40 40 b6 00 00 18
-descriptor 4:    00 00 00 fc 00 53 45 43 31 34 34 41 20 20 20 20 20 0a
-extensions:      01
-checksum:        06
+02 03 28 00 65 03 0c 00 10 00 67 d8 5d c4 01 78
+80 07 75 5c 12 ca 01 07 25 27 10 7b 19 a4 48 d3
+94 89 0c 3b 53 ff ea db a0 af 40 c4 b0 40 18 60
+72 20 a2 00 40 40 b6 00 00 18 14 75 40 c4 b0 40
+18 60 72 20 a2 00 40 40 b6 00 00 18 c7 73 40 a2
+b0 40 18 60 64 20 a2 00 40 40 b6 00 00 18 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 64
 
-EDID version: 1.3
-Manufacturer: SEC Model 144a Serial Number --
-Made in week 1 of 2017
-Digital display
-Image size is variable
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6250, 0.3398
-  Green: 0.2802, 0.5947
-  Blue:  0.1552, 0.0703
-  White: 0.2832, 0.2978
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 449.600 MHz, 2880 mm x 1600 mm
-               2880 2994 3026 3076 hborder 0
-               1600 1610 1612 1624 vborder 0
-               -hsync -vsync 
-               VertFreq: 90 Hz, HorFreq: 146163 Hz
-Detailed mode: Clock 299.720 MHz, 2880 mm x 1600 mm
-               2880 2994 3026 3076 hborder 0
-               1600 1610 1612 1624 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 97438 Hz
-Detailed mode: Clock 296.390 MHz, 2880 mm x 1600 mm
-               2880 2980 3012 3042 hborder 0
-               1600 1610 1612 1624 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 97432 Hz
-Monitor name: SEC144A     
-Has 1 extension blocks
-Checksum: 0x6 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-36 bytes of CTA data
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
-  Vendor-specific data block, OUI c45dd8 (HDMI Forum)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 5194
+    Made in: week 1 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2880x1600   90.002370 Hz   9:5    146.164 kHz    449.600000 MHz (2880 mm x 1600 mm)
+                 Hfront  114 Hsync  32 Hback   50 Hpol N
+                 Vfront   10 Vsync   2 Vback   12 Vpol N
+    DTD 2:  2880x1600   59.998911 Hz   9:5     97.438 kHz    299.720000 MHz (2880 mm x 1600 mm)
+                 Hfront  114 Hsync  32 Hback   50 Hpol N
+                 Vfront   10 Vsync   2 Vback   12 Vpol N
+    DTD 3:  2880x1600   59.995450 Hz   9:5     97.433 kHz    296.390000 MHz (2880 mm x 1600 mm)
+                 Hfront  100 Hsync  32 Hback   30 Hpol N
+                 Vfront   10 Vsync   2 Vback   12 Vpol N
+    Display Product Name: 'SEC144A     '
+  Extension blocks: 1
+Checksum: 0x06
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
     Version: 1
-    Maximum TMDS Character Rate: 600MHz
+    Maximum TMDS Character Rate: 600 MHz
     SCDC Present
     Supports 16-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
-  Vendor-specific data block, OUI ca125c
-0 native detailed modes
-Detailed mode: Clock 449.600 MHz, 2880 mm x 1600 mm
-               2880 2994 3026 3076 hborder 0
-               1600 1610 1612 1624 vborder 0
-               -hsync -vsync 
-               VertFreq: 90 Hz, HorFreq: 146163 Hz
-Detailed mode: Clock 299.720 MHz, 2880 mm x 1600 mm
-               2880 2994 3026 3076 hborder 0
-               1600 1610 1612 1624 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 97438 Hz
-Detailed mode: Clock 296.390 MHz, 2880 mm x 1600 mm
-               2880 2980 3012 3042 hborder 0
-               1600 1610 1612 1624 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 97432 Hz
-Checksum: 0x64 (valid)
+  Vendor-Specific Data Block (Microsoft), OUI CA-12-5C:
+    Version: 1
+    Display Product Primary Use Case: 7 (Virtual reality headset)
+    Container ID: 2527107b-19a4-48d3-9489-0c3b53ffeadb
+  Detailed Timing Descriptors:
+    DTD 4:  2880x1600   90.002370 Hz   9:5    146.164 kHz    449.600000 MHz (2880 mm x 1600 mm)
+                 Hfront  114 Hsync  32 Hback   50 Hpol N
+                 Vfront   10 Vsync   2 Vback   12 Vpol N
+    DTD 5:  2880x1600   59.998911 Hz   9:5     97.438 kHz    299.720000 MHz (2880 mm x 1600 mm)
+                 Hfront  114 Hsync  32 Hback   50 Hpol N
+                 Vfront   10 Vsync   2 Vback   12 Vpol N
+    DTD 6:  2880x1600   59.995450 Hz   9:5     97.433 kHz    296.390000 MHz (2880 mm x 1600 mm)
+                 Hfront  100 Hsync  32 Hback   30 Hpol N
+                 Vfront   10 Vsync   2 Vback   12 Vpol N
+Checksum: 0x64
 
-EDID block does NOT conform to EDID 1.3!
-	Required 640x480p60 timings are missing in the established timings
-	and/or in the SVD list (VIC 1)
-	Missing monitor ranges
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 2880x1600mm, but the display size is not specified anywhere.
+
+EDID conformity: FAIL

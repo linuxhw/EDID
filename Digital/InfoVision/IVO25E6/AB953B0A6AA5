@@ -1,55 +1,60 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0026cfe62500000000
-2715010380130f780a21bb9558599126
-164f5000000001010101010101010101
-0101010101016419004041002630a046
-fa2000004300001900000f0000000000
-00000000000000000001000000fe0049
-6e666f566973696f6e0a2020000000fe
-00544d303937544448303230300a000d
+00 ff ff ff ff ff ff 00 26 cf e6 25 00 00 00 00
+27 15 01 03 80 13 0f 78 0a 21 bb 95 58 59 91 26
+16 4f 50 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 a0 46
+fa 20 00 00 43 00 00 19 00 00 0f 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 00 00 00 fe 00 49
+6e 66 6f 56 69 73 69 6f 6e 0a 20 20 00 00 00 fe
+00 54 4d 30 39 37 54 44 48 30 32 30 30 0a 00 0d
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   26 cf e6 25 00 00 00 00 27 15
-version:         01 03
-basic params:    80 13 0f 78 0a
-chroma info:     21 bb 95 58 59 91 26 16 4f 50
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    64 19 00 40 41 00 26 30 a0 46 fa 20 00 00 43 00 00 19
-descriptor 2:    00 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01
-descriptor 3:    00 00 00 fe 00 49 6e 66 6f 56 69 73 69 6f 6e 0a 20 20
-descriptor 4:    00 00 00 fe 00 54 4d 30 39 37 54 44 48 30 32 30 30 0a
-extensions:      00
-checksum:        0d
+----------------
 
-EDID version: 1.3
-Manufacturer: IVO Model 25e6 Serial Number --
-Made in week 39 of 2011
-Digital display
-Maximum image size: 19 cm x 15 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5820, 0.3457
-  Green: 0.3476, 0.5673
-  Blue:  0.1503, 0.0888
-  White: 0.3105, 0.3154
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 65.000 MHz, 1024 mm x 768 mm
-               1024 1184 1766 1344 hborder 0
-                768  783  793  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48363 Hz
-Monitor descriptor block has byte 2 nonzero (0x0f)
-Manufacturer-specified data, tag 0
-ASCII string: InfoVision
-ASCII string: TM097TDH0200
-Checksum: 0xd (valid)
-EDID block does NOT conform to EDID 1.3!
-	Missing name descriptor
-	Missing monitor ranges
-	Invalid descriptor block padding
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: IVO
+    Model: 9702
+    Made in: week 39 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 19 cm x 15 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5820, 0.3457
+    Green: 0.3476, 0.5673
+    Blue : 0.1503, 0.0888
+    White: 0.3105, 0.3154
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (1024 mm x 768 mm)
+                 Hfront  160 Hsync 582 Hback -422 Hpol N
+                 Vfront   15 Vsync  10 Vback   13 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 '................'
+    Alphanumeric Data String: 'InfoVision'
+    Alphanumeric Data String: 'TM097TDH0200'
+Checksum: 0x0d
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x10.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #1: Mismatch of image size 1024x768 mm vs display size 190x150 mm.
+  Display Descriptor #2: Monitor descriptor block has byte 2 nonzero (0x0f).
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+EDID:
+  Base EDID: The DTD max image size is 1024x768mm, which is larger than the display size 190.0x150.0mm.
+
+EDID conformity: FAIL

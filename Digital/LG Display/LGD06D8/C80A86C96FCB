@@ -1,61 +1,55 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030e4d80600000000
-001f0104b522137807ef85a3544c9e26
-0e505400000001010101010101010101
-010101010101b99c80a0703859403020
-350058c21000001a000000fd003ca5c1
-c129010a202020202020000000fe004c
-4720446973706c61790a2020000000fe
-004c503135365746472d535054330035
+00 ff ff ff ff ff ff 00 30 e4 d8 06 00 00 00 00
+00 1f 01 04 b5 22 13 78 07 ef 85 a3 54 4c 9e 26
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b9 9c 80 a0 70 38 59 40 30 20
+35 00 58 c2 10 00 00 1a 00 00 00 fd 00 3c a5 c1
+c1 29 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 35 36 57 46 47 2d 53 50 54 33 00 35
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 e4 d8 06 00 00 00 00 00 1f
-version:         01 04
-basic params:    b5 22 13 78 07
-chroma info:     ef 85 a3 54 4c 9e 26 0e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    b9 9c 80 a0 70 38 59 40 30 20 35 00 58 c2 10 00 00 1a
-descriptor 2:    00 00 00 fd 00 3c a5 c1 c1 29 01 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fe 00 4c 47 20 44 69 73 70 6c 61 79 0a 20 20
-descriptor 4:    00 00 00 fe 00 4c 50 31 35 36 57 46 47 2d 53 50 54 33
-extensions:      00
-checksum:        35
+----------------
 
-EDID version: 1.4
-Manufacturer: LGD Model 6d8 Serial Number --
-Made in year 2021
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2998, 0.6201
-  Blue:  0.1503, 0.0546
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 401.210 MHz, 344 mm x 194 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1169 vborder 0
-               +hsync -vsync 
-               VertFreq: 165 Hz, HorFreq: 192889 Hz
-Monitor ranges (bare limits): 60-165Hz V, 193-193kHz H, max dotclock 410MHz
-ASCII string: LG Display
-ASCII string: LP156WFG-SPT3
-Checksum: 0x35 (valid)
-EDID block does NOT conform to EDID 1.4!
-	sRGB is signaled, but the chromaticities do not match
-	Missing name descriptor
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 165 - 165 Hz
-  Horizontal Freq: 192889 - 192889 Hz
-  Maximum Clock: 401.210 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1752
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.6201
+    Blue : 0.1503, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  165.003784 Hz  16:9    192.889 kHz    401.210000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   81 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 60-165 Hz V, 193-193 kHz H, max dotclock 410 MHz
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP156WFG-SPT3'
+Checksum: 0x35
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

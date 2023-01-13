@@ -1,100 +1,105 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004c2dfb0300000000
-04120103801009780ae2bda15b4a9824
-15474a21080001010101010101010101
-01010101010164190040410026301888
-3600a05a00000018011d007251d01e20
-6e285500a05a0000001e000000fd003b
-3d1e3208000a202020202020000000fc
-0053414d53554e470a20202020200150
-020317f1438405032309070783010000
-66030c00200080011d8018711c162058
-2c2500a05a0000009e8c0ad08a20e02d
-10103e9600a05a000000180000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000074
+00 ff ff ff ff ff ff 00 4c 2d fb 03 00 00 00 00
+04 12 01 03 80 10 09 78 0a e2 bd a1 5b 4a 98 24
+15 47 4a 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 a0 5a 00 00 00 18 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 a0 5a 00 00 00 1e 00 00 00 fd 00 3b
+3d 1e 32 08 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 41 4d 53 55 4e 47 0a 20 20 20 20 20 01 50
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c 2d fb 03 00 00 00 00 04 12
-version:         01 03
-basic params:    80 10 09 78 0a
-chroma info:     e2 bd a1 5b 4a 98 24 15 47 4a
-established:     21 08 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    64 19 00 40 41 00 26 30 18 88 36 00 a0 5a 00 00 00 18
-descriptor 2:    01 1d 00 72 51 d0 1e 20 6e 28 55 00 a0 5a 00 00 00 1e
-descriptor 3:    00 00 00 fd 00 3b 3d 1e 32 08 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 53 41 4d 53 55 4e 47 0a 20 20 20 20 20
-extensions:      01
-checksum:        50
+02 03 17 f1 43 84 05 03 23 09 07 07 83 01 00 00
+66 03 0c 00 20 00 80 01 1d 80 18 71 1c 16 20 58
+2c 25 00 a0 5a 00 00 00 9e 8c 0a d0 8a 20 e0 2d
+10 10 3e 96 00 a0 5a 00 00 00 18 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 74
 
-EDID version: 1.3
-Manufacturer: SAM Model 3fb Serial Number --
-Made in week 4 of 2008
-Digital display
-Maximum image size: 16 cm x 9 cm
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6318, 0.3574
-  Green: 0.2890, 0.5957
-  Blue:  0.1425, 0.0849
-  White: 0.2802, 0.2900
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-Detailed mode: Clock 65.000 MHz, 160 mm x 90 mm
-               1024 1048 1184 1344 hborder 0
-                768  771  777  806 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48363 Hz
-Detailed mode: Clock 74.250 MHz, 160 mm x 90 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Monitor ranges (GTF): 59-61Hz V, 30-50kHz H, max dotclock 80MHz
-Monitor name: SAMSUNG
-Has 1 extension blocks
-Checksum: 0x50 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-19 bytes of CTA data
-  Video data block
-    VIC   4 1280x720@60Hz 16:9 (native) HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SAM
+    Model: 1019
+    Made in: week 4 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 16 cm x 9 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6318, 0.3574
+    Green: 0.2890, 0.5957
+    Blue : 0.1425, 0.0849
+    White: 0.2802, 0.2900
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (160 mm x 90 mm)
+                 Hfront   24 Hsync 136 Hback  160 Hpol N
+                 Vfront    3 Vsync   6 Vback   29 Vpol N
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (160 mm x 90 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 59-61 Hz V, 30-50 kHz H, max dotclock 80 MHz
+    Display Product Name: 'SAMSUNG'
+  Extension blocks: 1
+Checksum: 0x50
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 2.0.0.0
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
     Supports_AI
-Underscans PC formats by default
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 74.250 MHz, 160 mm x 90 mm
-               1920 2008 2052 2200 hborder 0
-                540  542  547  562 vborder 0
-               +hsync +vsync interlaced 
-               VertFreq: 60 Hz, HorFreq: 33750 Hz
-Detailed mode: Clock 27.000 MHz, 160 mm x 90 mm
-                720  736  798  858 hborder 0
-                480  489  495  525 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 31468 Hz
-Checksum: 0x74 (valid)
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (160 mm x 90 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (160 mm x 90 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x74
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (16x9 is smaller than 10x10 cm).
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

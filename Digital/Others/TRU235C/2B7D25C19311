@@ -1,59 +1,54 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0052555c2300000000
-091f0104951a0e78025edaa14f4b8324
-254b5300000001010101010101010101
-010101010101ce1d56e250001e303020
-350000901000001ad11756e250001e30
-3020350000901000001a000000000000
-00000000000000000000000000000002
-000c33f90a3c641f14226e202020008b
+00 ff ff ff ff ff ff 00 52 55 5c 23 00 00 00 00
+09 1f 01 04 95 1a 0e 78 02 5e da a1 4f 4b 83 24
+25 4b 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 e2 50 00 1e 30 30 20
+35 00 00 90 10 00 00 1a d1 17 56 e2 50 00 1e 30
+30 20 35 00 00 90 10 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 33 f9 0a 3c 64 1f 14 22 6e 20 20 20 00 8b
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   52 55 5c 23 00 00 00 00 09 1f
-version:         01 04
-basic params:    95 1a 0e 78 02
-chroma info:     5e da a1 4f 4b 83 24 25 4b 53
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    ce 1d 56 e2 50 00 1e 30 30 20 35 00 00 90 10 00 00 1a
-descriptor 2:    d1 17 56 e2 50 00 1e 30 30 20 35 00 00 90 10 00 00 1a
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 02 00 0c 33 f9 0a 3c 64 1f 14 22 6e 20 20 20
-extensions:      00
-checksum:        8b
+----------------
 
-EDID version: 1.4
-Manufacturer: TRU Model 235c Serial Number --
-Made in week 9 of 2021
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 26 cm x 14 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6298, 0.3095
-  Green: 0.2958, 0.5136
-  Blue:  0.1435, 0.1455
-  White: 0.2949, 0.3261
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 76.300 MHz, 256 mm x 144 mm
-               1366 1414 1446 1592 hborder 0
-                768  771  776  798 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 47927 Hz
-Detailed mode: Clock 60.970 MHz, 256 mm x 144 mm
-               1366 1414 1446 1592 hborder 0
-                768  771  776  798 vborder 0
-               +hsync -vsync 
-               VertFreq: 47 Hz, HorFreq: 38297 Hz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 2
-Checksum: 0x8b (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: TRU
+    Model: 9052
+    Made in: week 9 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6298, 0.3095
+    Green: 0.2958, 0.5136
+    Blue : 0.1435, 0.1455
+    White: 0.2949, 0.3261
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.059067 Hz 683:384   47.927 kHz     76.300000 MHz (256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback  146 Hpol P
+                 Vfront    3 Vsync   5 Vback   22 Vpol N
+    DTD 2:  1366x768    47.992154 Hz 683:384   38.298 kHz     60.970000 MHz (256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback  146 Hpol P
+                 Vfront    3 Vsync   5 Vback   22 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 33 f9 0a 3c 64 1f 14 22 6e 20 20 20 '....3..<d.."n   '
+Checksum: 0x8b
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

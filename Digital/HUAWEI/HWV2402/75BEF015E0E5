@@ -1,110 +1,122 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0022f6022401010101
-0220010380351e782a1dd5a75650a026
-105054a54b008180a9c0714f01010101
-0101010101012a4480a0703827403020
-35000f282100001a000000ff00202020
-20202020202020202020000000fd0030
-4c0f5512000a202020202020000000fc
-004855415745492041443830485701f4
-020321324801139f129004020365030c
-0010006d1a00000201304bed00000000
-00023a801871382d40582c45000f2821
-00001e011d007251d01e206e2855000f
-282100001e8c0ad08a20e02d10103e96
-000f2821000018000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000092
+00 ff ff ff ff ff ff 00 22 f6 02 24 01 01 01 01
+02 20 01 03 80 35 1e 78 2a 1d d5 a7 56 50 a0 26
+10 50 54 a5 4b 00 81 80 a9 c0 71 4f 01 01 01 01
+01 01 01 01 01 01 2a 44 80 a0 70 38 27 40 30 20
+35 00 0f 28 21 00 00 1a 00 00 00 ff 00 20 20 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fd 00 30
+4c 0f 55 12 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 48 55 41 57 45 49 20 41 44 38 30 48 57 01 f4
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 f6 02 24 01 01 01 01 02 20
-version:         01 03
-basic params:    80 35 1e 78 2a
-chroma info:     1d d5 a7 56 50 a0 26 10 50 54
-established:     a5 4b 00
-standard:        81 80 a9 c0 71 4f 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    2a 44 80 a0 70 38 27 40 30 20 35 00 0f 28 21 00 00 1a
-descriptor 2:    00 00 00 ff 00 20 20 20 20 20 20 20 20 20 20 20 20 20
-descriptor 3:    00 00 00 fd 00 30 4c 0f 55 12 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 48 55 41 57 45 49 20 41 44 38 30 48 57
-extensions:      01
-checksum:        f4
+02 03 21 32 48 01 13 9f 12 90 04 02 03 65 03 0c
+00 10 00 6d 1a 00 00 02 01 30 4b ed 00 00 00 00
+00 02 3a 80 18 71 38 2d 40 58 2c 45 00 0f 28 21
+00 00 1e 01 1d 00 72 51 d0 1e 20 6e 28 55 00 0f
+28 21 00 00 1e 8c 0a d0 8a 20 e0 2d 10 10 3e 96
+00 0f 28 21 00 00 18 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 92
 
-EDID version: 1.3
-Manufacturer: HWV Model 2402 Serial Number --
-Made in week 2 of 2022
-Digital display
-Maximum image size: 53 cm x 30 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6523, 0.3369
-  Green: 0.3154, 0.6259
-  Blue:  0.1513, 0.0634
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1600x900@60Hz 16:9
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-Detailed mode: Clock 174.500 MHz, 527 mm x 296 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1119 vborder 0
-               +hsync -vsync 
-               VertFreq: 74 Hz, HorFreq: 83894 Hz
-Serial number:              
--- ranges (GTF): 48-76Hz V, 15-85kHz H, max dotclock 180MHz
-Has 1 extension blocks
-Checksum: 0xf4 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-29 bytes of CTA data
-  Video data block
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC  31 1920x1080@50Hz 16:9 (native) HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
-  Vendor-specific data block, OUI 00001a
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-2 native detailed modes
-Detailed mode: Clock 148.500 MHz, 527 mm x 296 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 74.250 MHz, 527 mm x 296 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Detailed mode: Clock 27.000 MHz, 527 mm x 296 mm
-                720  736  798  858 hborder 0
-                480  489  495  525 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 31468 Hz
-Checksum: 0x92 (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HWV
+    Model: 9218
+    Serial Number: ...
+    Made in: week 2 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 53 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6523, 0.3369
+    Green: 0.3154, 0.6259
+    Blue : 0.1513, 0.0634
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   74.972503 Hz  16:9     83.894 kHz    174.500000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   31 Vpol N
+    Display Product Serial Number: ...
+    Display Range Limits:
+      Monitor ranges (GTF): 48-76 Hz V, 15-85 kHz H, max dotclock 180 MHz
+    Display Product Name: 'HUAWEI AD80HW'
+  Extension blocks: 1
+Checksum: 0xf4
 
-EDID block does NOT conform to EDID 1.3!
-	Name descriptor not terminated with a newline
-EDID block does not conform at all!
-	Both the serial number and the serial string are set
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 75 Hz
+    Flags 1.x: 0xed (MCCS)
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (527 mm x 296 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (527 mm x 296 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x92
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+EDID conformity: FAIL

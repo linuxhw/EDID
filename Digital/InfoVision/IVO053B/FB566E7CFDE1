@@ -1,60 +1,54 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0026cf3b0500000000
-001c0104951d11780ada109758519727
-1e505400000001010101010101010101
-010101010101d81d5684500052302820
-3c0026a510000019661756c250002030
-28203c0026a510000019000000fe0043
-50573138803133334e57523900000000
-00004131160010000009010a20200067
+00 ff ff ff ff ff ff 00 26 cf 3b 05 00 00 00 00
+00 1c 01 04 95 1d 11 78 0a da 10 97 58 51 97 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d8 1d 56 84 50 00 52 30 28 20
+3c 00 26 a5 10 00 00 19 66 17 56 c2 50 00 20 30
+28 20 3c 00 26 a5 10 00 00 19 00 00 00 fe 00 43
+50 57 31 38 80 31 33 33 4e 57 52 39 00 00 00 00
+00 00 41 31 16 00 10 00 00 09 01 0a 20 20 00 67
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   26 cf 3b 05 00 00 00 00 00 1c
-version:         01 04
-basic params:    95 1d 11 78 0a
-chroma info:     da 10 97 58 51 97 27 1e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    d8 1d 56 84 50 00 52 30 28 20 3c 00 26 a5 10 00 00 19
-descriptor 2:    66 17 56 c2 50 00 20 30 28 20 3c 00 26 a5 10 00 00 19
-descriptor 3:    00 00 00 fe 00 43 50 57 31 38 80 31 33 33 4e 57 52 39
-descriptor 4:    00 00 00 00 00 00 41 31 16 00 10 00 00 09 01 0a 20 20
-extensions:      00
-checksum:        67
+----------------
 
-EDID version: 1.4
-Manufacturer: IVO Model 53b Serial Number --
-Made in year 2018
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 29 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5927, 0.3447
-  Green: 0.3183, 0.5917
-  Blue:  0.1523, 0.1181
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 76.400 MHz, 294 mm x 165 mm
-               1366 1406 1438 1498 hborder 0
-                768  771  783  850 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 51001 Hz
-Detailed mode: Clock 59.900 MHz, 294 mm x 165 mm
-               1366 1406 1438 1560 hborder 0
-                768  771  783  800 vborder 0
-               -hsync -vsync 
-               VertFreq: 47 Hz, HorFreq: 38397 Hz
-ASCII string: CPW18
-Manufacturer-specified data, tag 0
-Checksum: 0x67 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: IVO
+    Model: 1339
+    Made in: 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5927, 0.3447
+    Green: 0.3183, 0.5917
+    Blue : 0.1523, 0.1181
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.001571 Hz 683:384   51.001 kHz     76.400000 MHz (294 mm x 165 mm)
+                 Hfront   40 Hsync  32 Hback   60 Hpol N
+                 Vfront    3 Vsync  12 Vback   67 Vpol N
+    DTD 2:  1366x768    47.996795 Hz 683:384   38.397 kHz     59.900000 MHz (294 mm x 165 mm)
+                 Hfront   40 Hsync  32 Hback  122 Hpol N
+                 Vfront    3 Vsync  12 Vback   17 Vpol N
+    Alphanumeric Data String: 'CPW18'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 16 00 10 00 00 09 01 0a 20 20 '....A1........  '
+Checksum: 0x67
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

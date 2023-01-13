@@ -1,68 +1,71 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0010ac7ba04c524c30
-11160104a53420783aee95a3544c9926
-0f5054a1080081408180a940b300d1c0
-010101010101283c80a070b023403020
-360006442100001a000000ff00484335
-355032344f304c524c0a000000fc0044
-454c4c2055323431324d0a20000000fd
-00323d1e5311000a20202020202000af
+00 ff ff ff ff ff ff 00 10 ac 7b a0 4c 52 4c 30
+11 16 01 04 a5 34 20 78 3a ee 95 a3 54 4c 99 26
+0f 50 54 a1 08 00 81 40 81 80 a9 40 b3 00 d1 c0
+01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 06 44 21 00 00 1a 00 00 00 ff 00 48 43 35
+35 50 32 34 4f 30 4c 52 4c 0a 00 00 00 fc 00 44
+45 4c 4c 20 55 32 34 31 32 4d 0a 20 00 00 00 fd
+00 32 3d 1e 53 11 00 0a 20 20 20 20 20 20 00 af
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   10 ac 7b a0 4c 52 4c 30 11 16
-version:         01 04
-basic params:    a5 34 20 78 3a
-chroma info:     ee 95 a3 54 4c 99 26 0f 50 54
-established:     a1 08 00
-standard:        81 40 81 80 a9 40 b3 00 d1 c0 01 01 01 01 01 01
-descriptor 1:    28 3c 80 a0 70 b0 23 40 30 20 36 00 06 44 21 00 00 1a
-descriptor 2:    00 00 00 ff 00 48 43 35 35 50 32 34 4f 30 4c 52 4c 0a
-descriptor 3:    00 00 00 fc 00 44 45 4c 4c 20 55 32 34 31 32 4d 0a 20
-descriptor 4:    00 00 00 fd 00 32 3d 1e 53 11 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        af
+----------------
 
-EDID version: 1.4
-Manufacturer: DEL Model a07b Serial Number --
-Made in week 17 of 2012
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 52 cm x 32 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1503, 0.0595
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1280x960@60Hz 4:3 HorFreq: 60000 Hz Clock: 108.000 MHz
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 154.000 MHz, 518 mm x 324 mm
-               1920 1968 2000 2080 hborder 0
-               1200 1203 1209 1235 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 74038 Hz
-Serial number: --
-Monitor name: DELL U2412M
-Monitor ranges (GTF): 50-61Hz V, 30-83kHz H, max dotclock 170MHz
-Checksum: 0xaf (valid)
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 59 - 70 Hz
-  Horizontal Freq: 31469 - 75000 Hz
-  Maximum Clock: 162.000 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 41083
+    Serial Number: ...
+    Made in: week 17 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 52 cm x 32 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.950171 Hz   8:5     74.038 kHz    154.000000 MHz (518 mm x 324 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   26 Vpol N
+    Display Product Serial Number: ...
+    Display Product Name: 'DELL U2412M'
+    Display Range Limits:
+      Monitor ranges (GTF): 50-61 Hz V, 30-83 kHz H, max dotclock 170 MHz
+Checksum: 0xaf
 
+----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 50.000 - 61.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+
+EDID conformity: FAIL

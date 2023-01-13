@@ -1,121 +1,119 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004cf4000000000000
-2a1c0104b5341e783bca75a954459822
-1f5054a54a0001013168317c4568457c
-6168617cd1c0023a801871382d40582c
-45000a252100001e000000fd003090b4
-b43c010a202020202020000000fc0044
-500a20202020202020202020000000ff
-002020202020202020202020200a0136
-020333f24990010203041112131f00e2
-00c0e305c00023097f0783010000e50f
-00000c0067d85dc401788801e6060500
-69694ffd8180a070381f40302035000a
-252100001e8a6f80a07038404030203a
-000a252100001e0e5c80a07038354030
-203a000a252100001e00000000000000
-0000000000000000000000000000003a
+00 ff ff ff ff ff ff 00 4c f4 00 00 00 00 00 00
+2a 1c 01 04 b5 34 1e 78 3b ca 75 a9 54 45 98 22
+1f 50 54 a5 4a 00 01 01 31 68 31 7c 45 68 45 7c
+61 68 61 7c d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0a 25 21 00 00 1e 00 00 00 fd 00 30 90 b4
+b4 3c 01 0a 20 20 20 20 20 20 00 00 00 fc 00 44
+50 0a 20 20 20 20 20 20 20 20 20 20 00 00 00 ff
+00 20 20 20 20 20 20 20 20 20 20 20 20 0a 01 36
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c f4 00 00 00 00 00 00 2a 1c
-version:         01 04
-basic params:    b5 34 1e 78 3b
-chroma info:     ca 75 a9 54 45 98 22 1f 50 54
-established:     a5 4a 00
-standard:        01 01 31 68 31 7c 45 68 45 7c 61 68 61 7c d1 c0
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 0a 25 21 00 00 1e
-descriptor 2:    00 00 00 fd 00 30 90 b4 b4 3c 01 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 44 50 0a 20 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 20 20 20 20 20 20 20 20 20 20 20 20 0a
-extensions:      01
-checksum:        36
+02 03 33 f2 49 90 01 02 03 04 11 12 13 1f 00 e2
+00 c0 e3 05 c0 00 23 09 7f 07 83 01 00 00 e5 0f
+00 00 0c 00 67 d8 5d c4 01 78 88 01 e6 06 05 00
+69 69 4f fd 81 80 a0 70 38 1f 40 30 20 35 00 0a
+25 21 00 00 1e 8a 6f 80 a0 70 38 40 40 30 20 3a
+00 0a 25 21 00 00 1e 0e 5c 80 a0 70 38 35 40 30
+20 3a 00 0a 25 21 00 00 1e 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3a
 
-EDID version: 1.4
-Manufacturer: SGT Model 0 Serial Number --
-Made in week 42 of 2018
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 52 cm x 30 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6630, 0.3281
-  Green: 0.2714, 0.5957
-  Blue:  0.1337, 0.1240
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-Standard timings supported:
-  640x480@100Hz 4:3
-  640x480@120Hz 4:3
-  800x600@100Hz 4:3
-  800x600@120Hz 4:3
-  1024x768@100Hz 4:3
-  1024x768@120Hz 4:3
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 148.500 MHz, 522 mm x 293 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor ranges (bare limits): 48-144Hz V, 180-180kHz H, max dotclock 600MHz
-Monitor name: DP
-Serial number:             
--- 1 extension blocks
-Checksum: 0x36 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-47 bytes of CTA data
-  Video data block
-    VIC  16 1920x1080@60Hz 16:9 (native) HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  17 720x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
-  Unknown tag 0, length 0 (raw 00)
-  Extended tag: Video capability data block
-    YCbCr quantization: Selectable (via AVI YQ) (1)
-    RGB quantization: Selectable (via AVI Q) (1)
-    PT scan behaviour: No Data (0)
-    IT scan behaviour: IT video formats not supported (0)
-    CE scan behaviour: CE video formats not supported (0)
-  Extended tag: Colorimetry data block
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SGT
+    Model: 0
+    Made in: week 42 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 52 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6630, 0.3281
+    Green: 0.2714, 0.5957
+    Blue : 0.1337, 0.1240
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings:
+    GTF     :   640x480    99.999537 Hz   4:3     50.900 kHz     43.163000 MHz
+    GTF     :   640x480   119.999084 Hz   4:3     61.800 kHz     52.406000 MHz
+    GTF     :   800x600    99.999707 Hz   4:3     63.600 kHz     68.179000 MHz
+    GTF     :   800x600   119.999886 Hz   4:3     77.160 kHz     83.950000 MHz
+    GTF     :  1024x768   100.000177 Hz   4:3     81.400 kHz    113.309000 MHz
+    GTF     :  1024x768   119.999931 Hz   4:3     98.760 kHz    139.054000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (522 mm x 293 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-144 Hz V, 180-180 kHz H, max dotclock 600 MHz
+    Display Product Name: 'DP'
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0x36
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: IT video formats not supported
+    CE scan behavior: CE video formats not supported
+  Colorimetry Data Block:
     BT2020YCC
     BT2020RGB
-  Audio data block
-    Linear PCM, max channels 2
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Extended tag: YCbCr 4:2:0 capability map data block
-    VSD Index 18
-    VSD Index 19
-  Vendor-specific data block, OUI c45dd8 (HDMI Forum)
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  YCbCr 4:2:0 Capability Map Data Block:
+    SVD Index 19 is out of range
+    SVD Index 20 is out of range
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
     Version: 1
-    Maximum TMDS Character Rate: 600MHz
+    Maximum TMDS Character Rate: 600 MHz
     SCDC Present
     Supports scrambling for <= 340 Mcsc
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
-  Extended tag: HDR static metadata data block
+  HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
       SMPTE ST2084
@@ -123,31 +121,37 @@ Extension version: 3
     Desired content max luminance: 105 (486.099 cd/m^2)
     Desired content max frame-average luminance: 105 (486.099 cd/m^2)
     Desired content min luminance: 79 (0.467 cd/m^2)
-Underscans PC formats by default
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-2 native detailed modes
-Detailed mode: Clock 332.770 MHz, 522 mm x 293 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               +hsync +vsync 
-               VertFreq: 144 Hz, HorFreq: 159985 Hz
-Detailed mode: Clock 285.540 MHz, 522 mm x 293 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1093 1144 vborder 0
-               +hsync +vsync 
-               VertFreq: 119 Hz, HorFreq: 137278 Hz
-Detailed mode: Clock 235.660 MHz, 522 mm x 293 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1093 1133 vborder 0
-               +hsync +vsync 
-               VertFreq: 99 Hz, HorFreq: 113298 Hz
-Checksum: 0x3a (valid)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080  144.001419 Hz  16:9    159.986 kHz    332.770000 MHz (522 mm x 293 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol P
+    DTD 3:  1920x1080  119.998991 Hz  16:9    137.279 kHz    285.540000 MHz (522 mm x 293 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   51 Vpol P
+    DTD 4:  1920x1080   99.998303 Hz  16:9    113.298 kHz    235.660000 MHz (522 mm x 293 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   40 Vpol P
+Checksum: 0x3a
 
-EDID block does NOT conform to EDID 1.4!
-	HDMI Forum VSDB did not immediately follow the HDMI VSDB
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 50 - 144 Hz
-  Horizontal Freq: 31250 - 159985 Hz
-  Maximum Clock: 332.770 MHz
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.250 - 159.985 kHz (Monitor: 180.000 - 180.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+Block 1, CTA-861 Extension Block:
+  YCbCr 4:2:0 Capability Map Data Block: Max index 20 > 9 (#SVDs).
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI Forum VSDB did not immediately follow the HDMI VSDB.
+
+EDID conformity: FAIL

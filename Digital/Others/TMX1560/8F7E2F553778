@@ -1,89 +1,96 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0051b8601500000000
-2c1f0104a522137807ee91a3544c9926
-0f505400000001010101010101010101
-0101010101012034805070381f402b20
-750458c210000018000000fd0e30699b
-9b52000a20202020202000000010000a
-202020202020202020202020000000fc
-00544c3135365644585030322d3001a0
-7013790000030128773801847f074f00
-2a001f0037041e001600040000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000977c
+00 ff ff ff ff ff ff 00 51 b8 60 15 00 00 00 00
+2c 1f 01 04 a5 22 13 78 07 ee 91 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 20 34 80 50 70 38 1f 40 2b 20
+75 04 58 c2 10 00 00 18 00 00 00 fd 0e 30 69 9b
+9b 52 00 0a 20 20 20 20 20 20 00 00 00 10 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fc
+00 54 4c 31 35 36 56 44 58 50 30 32 2d 30 01 a0
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   51 b8 60 15 00 00 00 00 2c 1f
-version:         01 04
-basic params:    a5 22 13 78 07
-chroma info:     ee 91 a3 54 4c 99 26 0f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    20 34 80 50 70 38 1f 40 2b 20 75 04 58 c2 10 00 00 18
-descriptor 2:    00 00 00 fd 0e 30 69 9b 9b 52 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 10 00 0a 20 20 20 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 54 4c 31 35 36 56 44 58 50 30 32 2d 30
-extensions:      01
-checksum:        a0
+70 13 79 00 00 03 01 28 77 38 01 84 7f 07 4f 00
+2a 00 1f 00 37 04 1e 00 16 00 04 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 97 7c
 
-EDID version: 1.4
-Manufacturer: TMX Model 1560 Serial Number --
-Made in week 44 of 2021
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1503, 0.0595
-  White: 0.3125, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 133.440 MHz, 344 mm x 194 mm
-               1920 1963 1995 2000 hborder 0
-               1080 1103 1108 1111 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 66720 Hz
-Monitor ranges (GTF): 48-360Hz V, 410-410kHz H, max dotclock 820MHz
-Dummy block
-Has 1 extension blocks
-Checksum: 0xa0 (valid)
+----------------
 
-DisplayID extension block
-Extension version: 19
-Length 121, version 19, extension count 0
-Checksum: 0x97 (should be 0x83)
-Type 1 detailed timing: aspect: 16:9, Preferred  
-Detailed mode: Clock 799.910 MHz, 0 mm x 0 mm
-               1919 1961 1992 1998
-               1079 1101 1105 1109
-               -hsync -vsync
-Type 1 detailed timing: aspect: 1:1,  
-Detailed mode: Clock 0.000 MHz, 0 mm x 0 mm
-                  0    0    0    0
-                  0    0    0    0
-               -hsync -vsync
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: TMX
+    Model: 5472
+    Made in: week 44 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.054005 Hz  16:9     66.720 kHz    133.440000 MHz (344 mm x 194 mm)
+                 Hfront   43 Hsync  32 Hback    5 Hpol N
+                 Vfront   23 Vsync   5 Vback    3 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 48-360 Hz V, 410-410 kHz H, max dotclock 820 MHz
+    Dummy Descriptor:
+    Display Product Name: 'TL156VDXP02-0'
+  Extension blocks: 1
+Checksum: 0xa0
 
-EDID block does NOT conform to EDID 1.4!
-	Name descriptor not terminated with a newline
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 60 Hz
-  Horizontal Freq: 66720 - 66720 Hz
-  Maximum Clock: 133.440 MHz
-EDID block does not conform at all!
-	Has 1610612736 nonconformant extension block(s)
-	Dummy block filled with garbage
-DisplayID extension block does not conform
-	Block has broken checksum
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  1920x1080  360.000000 Hz  16:9    399.960 kHz    799.920000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   43 Hsync  32 Hback    5 Hpol N
+               Vfront   23 Vsync   5 Vback    3 Vpol N
+    DTD:     1x1     2500.000000 Hz   1:1      5.000 kHz      0.010000 MHz (aspect 1:1, no 3D stereo)
+               Hfront    1 Hsync   1 Hback   -1 Hpol N
+               Vfront    1 Vsync   1 Vback   -1 Vpol N
+  Checksum: 0x97 (should be 0x83)
+Checksum: 0x7c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 60.054 - 2500.000 Hz (Monitor: 48.000 - 360.000 Hz)
+    Horizontal Freq: 5.000 - 399.960 kHz (Monitor: 410.000 - 410.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Dummy Descriptor: Dummy block filled with garbage.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Video Timing Modes Type 1 - Detailed Timings Data Block: 0 or negative horizontal back porch.
+  Video Timing Modes Type 1 - Detailed Timings Data Block: 0 or negative vertical back porch.
+  Invalid checksum 0x97 (should be 0x83).
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

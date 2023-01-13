@@ -1,123 +1,125 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0034a922c1c0050000
-0a110103800000780adaffa3584aa229
-17494b00000001010101010101010101
-010101010101011d00bc52d01e20b828
-5540b9882100001e011d007251d01e20
-6e285500b9882100001e000000fc0050
-414e41534f4e49432d54560a000000fd
-00313d0f440f000a2020202020200122
-02031f724f938414051f101203110216
-071506012309070166030c0010008001
-1d80d0721c1620102c2580b988210000
-9e8c0ad090204031200c405500b98821
-000018011d8018711c1620582c2500b9
-882100009e8c0ad08a20e02d10103e96
-00b98821000018023a80d072382d4010
-2c4580b9882100001800000000000082
+00 ff ff ff ff ff ff 00 34 a9 22 c1 c0 05 00 00
+0a 11 01 03 80 00 00 78 0a da ff a3 58 4a a2 29
+17 49 4b 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 01 1d 00 bc 52 d0 1e 20 b8 28
+55 40 b9 88 21 00 00 1e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 b9 88 21 00 00 1e 00 00 00 fc 00 50
+41 4e 41 53 4f 4e 49 43 2d 54 56 0a 00 00 00 fd
+00 31 3d 0f 44 0f 00 0a 20 20 20 20 20 20 01 22
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   34 a9 22 c1 c0 05 00 00 0a 11
-version:         01 03
-basic params:    80 00 00 78 0a
-chroma info:     da ff a3 58 4a a2 29 17 49 4b
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    01 1d 00 bc 52 d0 1e 20 b8 28 55 40 b9 88 21 00 00 1e
-descriptor 2:    01 1d 00 72 51 d0 1e 20 6e 28 55 00 b9 88 21 00 00 1e
-descriptor 3:    00 00 00 fc 00 50 41 4e 41 53 4f 4e 49 43 2d 54 56 0a
-descriptor 4:    00 00 00 fd 00 31 3d 0f 44 0f 00 0a 20 20 20 20 20 20
-extensions:      01
-checksum:        22
+02 03 1f 72 4f 93 84 14 05 1f 10 12 03 11 02 16
+07 15 06 01 23 09 07 01 66 03 0c 00 10 00 80 01
+1d 80 d0 72 1c 16 20 10 2c 25 80 b9 88 21 00 00
+9e 8c 0a d0 90 20 40 31 20 0c 40 55 00 b9 88 21
+00 00 18 01 1d 80 18 71 1c 16 20 58 2c 25 00 b9
+88 21 00 00 9e 8c 0a d0 8a 20 e0 2d 10 10 3e 96
+00 b9 88 21 00 00 18 02 3a 80 d0 72 38 2d 40 10
+2c 45 80 b9 88 21 00 00 18 00 00 00 00 00 00 82
 
-EDID version: 1.3
-Manufacturer: MEI Model c122 Serial Number --
-Made in week 10 of 2007
-Digital display
-Image size is variable
-Gamma: 2.20
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3447
-  Green: 0.2910, 0.6347
-  Blue:  0.1630, 0.0927
-  White: 0.2880, 0.2958
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 74.250 MHz, 697 mm x 392 mm
-               1280 1720 1760 1980 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 50 Hz, HorFreq: 37500 Hz
-Detailed mode: Clock 74.250 MHz, 697 mm x 392 mm
-               1280 1390 1430 1650 hborder 0
-                720  725  730  750 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 45000 Hz
-Monitor name: PANASONIC-TV
-Monitor ranges (GTF): 49-61Hz V, 15-68kHz H, max dotclock 150MHz
-Has 1 extension blocks
-Checksum: 0x22 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-27 bytes of CTA data
-  Video data block
-    VIC  19 1280x720@50Hz 16:9 (native) HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC   4 1280x720@60Hz 16:9 (native) HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  20 1920x1080i@50Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
-    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC  17 720x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC  22 1440x576i@50Hz 16:9  HorFreq: 15625 Hz Clock: 27.000 MHz
-    VIC   7 1440x480i@60Hz 16:9  HorFreq: 15734 Hz Clock: 27.000 MHz
-    VIC  21 1440x576i@50Hz 4:3  HorFreq: 15625 Hz Clock: 27.000 MHz
-    VIC   6 1440x480i@60Hz 4:3  HorFreq: 15734 Hz Clock: 27.000 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MEI
+    Model: 49442
+    Serial Number: ...
+    Made in: week 10 of 2007
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3447
+    Green: 0.2910, 0.6347
+    Blue : 0.1630, 0.0927
+    White: 0.2880, 0.2958
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (697 mm x 392 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (697 mm x 392 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    Display Product Name: 'PANASONIC-TV'
+    Display Range Limits:
+      Monitor ranges (GTF): 49-61 Hz V, 15-68 kHz H, max dotclock 150 MHz
+  Extension blocks: 1
+Checksum: 0x22
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 16
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
     Supports_AI
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-2 native detailed modes
-Detailed mode: Clock 74.250 MHz, 697 mm x 392 mm
-               1920 2448 2492 2640 hborder 0
-                540  542  547  562 vborder 0
-               +hsync +vsync interlaced 
-               VertFreq: 50 Hz, HorFreq: 28125 Hz
-Detailed mode: Clock 27.000 MHz, 697 mm x 392 mm
-                720  732  796  864 hborder 0
-                576  581  586  625 vborder 0
-               -hsync -vsync 
-               VertFreq: 50 Hz, HorFreq: 31250 Hz
-Detailed mode: Clock 74.250 MHz, 697 mm x 392 mm
-               1920 2008 2052 2200 hborder 0
-                540  542  547  562 vborder 0
-               +hsync +vsync interlaced 
-               VertFreq: 60 Hz, HorFreq: 33750 Hz
-Detailed mode: Clock 27.000 MHz, 697 mm x 392 mm
-                720  736  798  858 hborder 0
-                480  489  495  525 vborder 0
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 31468 Hz
-Detailed mode: Clock 148.500 MHz, 697 mm x 392 mm
-               1920 2448 2492 2640 hborder 0
-               1080 1084 1089 1125 vborder 0
-               -hsync -vsync 
-               VertFreq: 50 Hz, HorFreq: 56250 Hz
-Checksum: 0x82 (valid)
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (697 mm x 392 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 4:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (697 mm x 392 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (697 mm x 392 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 6:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (697 mm x 392 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 7:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (697 mm x 392 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol N
+                 Vfront    4 Vsync   5 Vback   36 Vpol N
+Checksum: 0x82
 
+----------------
 
+Warnings:
 
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Detailed Timing Descriptor #7: DTD is similar but not identical to VIC 31.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 697x392mm, but the display size is not specified anywhere.
+
+EDID conformity: FAIL

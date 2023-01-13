@@ -1,68 +1,74 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00220e613401010101
-301c010468331d782aa575a856529e28
-0b5054a10800d1c0a9c081c0b3009500
-810081800101023a801871382d40582c
-4500fe221100001e000000fd00323c1e
-5011000a202020202020000000fc0048
-5020453233330a2020202020000000ff
-003343513834383144465a0a20200049
+00 ff ff ff ff ff ff 00 22 0e 61 34 01 01 01 01
+30 1c 01 04 68 33 1d 78 2a a5 75 a8 56 52 9e 28
+0b 50 54 a1 08 00 d1 c0 a9 c0 81 c0 b3 00 95 00
+81 00 81 80 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fe 22 11 00 00 1e 00 00 00 fd 00 32 3c 1e
+50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 45 32 33 33 0a 20 20 20 20 20 00 00 00 ff
+00 33 43 51 38 34 38 31 44 46 5a 0a 20 20 00 49
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   22 0e 61 34 01 01 01 01 30 1c
-version:         01 04
-basic params:    68 33 1d 78 2a
-chroma info:     a5 75 a8 56 52 9e 28 0b 50 54
-established:     a1 08 00
-standard:        d1 c0 a9 c0 81 c0 b3 00 95 00 81 00 81 80 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 fe 22 11 00 00 1e
-descriptor 2:    00 00 00 fd 00 32 3c 1e 50 11 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 48 50 20 45 32 33 33 0a 20 20 20 20 20
-descriptor 4:    00 00 00 ff 00 33 43 51 38 34 38 31 44 46 5a 0a 20 20
-extensions:      00
-checksum:        49
+----------------
 
-EDID version: 1.4
-Manufacturer: HPN Model 3461 Serial Number --
-Made in week 48 of 2018
-Analog display, Input voltage level: 0.7/0.7 V
-Blank level equals black level
-Sync: Separate 
-Maximum image size: 51 cm x 29 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6582, 0.3378
-  Green: 0.3212, 0.6181
-  Blue:  0.1572, 0.0458
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1920x1080@60Hz 16:9
-  1600x900@60Hz 16:9
-  1280x720@60Hz 16:9
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1280x800@60Hz 16:10
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-Detailed mode: Clock 148.500 MHz, 510 mm x 290 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor ranges (GTF): 50-60Hz V, 30-80kHz H, max dotclock 170MHz
-Monitor name: HP E233
-Serial number: --
-Checksum: 0x49 (valid)
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 70 Hz
-  Horizontal Freq: 31469 - 67500 Hz
-  Maximum Clock: 148.500 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HPN
+    Model: 13409
+    Serial Number: ...
+    Made in: week 48 of 2018
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.000 : 0.700 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 51 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6582, 0.3378
+    Green: 0.3212, 0.6181
+    Blue : 0.1572, 0.0458
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (510 mm x 290 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-60 Hz V, 30-80 kHz H, max dotclock 170 MHz
+    Display Product Name: 'HP E233'
+    Display Product Serial Number: ...
+Checksum: 0x49
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.810 - 70.082 Hz (Monitor: 50.000 - 60.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+
+EDID conformity: FAIL

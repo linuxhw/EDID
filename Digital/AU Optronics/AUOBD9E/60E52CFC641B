@@ -1,63 +1,62 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006af9ebd00000000
-271f0104a52216780347a5a855489e25
-0e505400000001010101010101010101
-0101010101010c6c00a0a0405e603020
-aa0058d710000018705600a0a0405e60
-3020aa0058d710000018000000fd0030
-3c66661c010a202020202020000000fe
-004231363051414e30322e4d200a0067
+00 ff ff ff ff ff ff 00 06 af 9e bd 00 00 00 00
+27 1f 01 04 a5 22 16 78 03 47 a5 a8 55 48 9e 25
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 0c 6c 00 a0 a0 40 5e 60 30 20
+aa 00 58 d7 10 00 00 18 70 56 00 a0 a0 40 5e 60
+30 20 aa 00 58 d7 10 00 00 18 00 00 00 fd 00 30
+3c 66 66 1c 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 36 30 51 41 4e 30 32 2e 4d 20 0a 00 67
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 af 9e bd 00 00 00 00 27 1f
-version:         01 04
-basic params:    a5 22 16 78 03
-chroma info:     47 a5 a8 55 48 9e 25 0e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    0c 6c 00 a0 a0 40 5e 60 30 20 aa 00 58 d7 10 00 00 18
-descriptor 2:    70 56 00 a0 a0 40 5e 60 30 20 aa 00 58 d7 10 00 00 18
-descriptor 3:    00 00 00 fd 00 30 3c 66 66 1c 01 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 42 31 36 30 51 41 4e 30 32 2e 4d 20 0a
-extensions:      00
-checksum:        67
+----------------
 
-EDID version: 1.4
-Manufacturer: AUO Model bd9e Serial Number --
-Made in week 39 of 2021
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 22 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6572, 0.3320
-  Green: 0.2822, 0.6201
-  Blue:  0.1464, 0.0566
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 276.600 MHz, 344 mm x 215 mm
-               2560 2608 2640 2720 hborder 0
-               1600 1610 1620 1694 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 101691 Hz
-Detailed mode: Clock 221.280 MHz, 344 mm x 215 mm
-               2560 2608 2640 2720 hborder 0
-               1600 1610 1620 1694 vborder 0
-               -hsync -vsync 
-               VertFreq: 48 Hz, HorFreq: 81352 Hz
-Monitor ranges (bare limits): 48-60Hz V, 102-102kHz H, max dotclock 280MHz
-ASCII string: B160QAN02.M 
-Checksum: 0x67 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 48 - 60 Hz
-  Horizontal Freq: 81352 - 101691 Hz
-  Maximum Clock: 276.600 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 48542
+    Made in: week 39 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6572, 0.3320
+    Green: 0.2822, 0.6201
+    Blue : 0.1464, 0.0566
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   60.030210 Hz   8:5    101.691 kHz    276.600000 MHz (344 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront   10 Vsync  10 Vback   74 Vpol N
+    DTD 2:  2560x1600   48.024168 Hz   8:5     81.353 kHz    221.280000 MHz (344 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront   10 Vsync  10 Vback   74 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-60 Hz V, 102-102 kHz H, max dotclock 280 MHz
+    Alphanumeric Data String: 'B160QAN02.M '
+Checksum: 0x67
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 81.352 - 101.691 kHz (Monitor: 102.000 - 102.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

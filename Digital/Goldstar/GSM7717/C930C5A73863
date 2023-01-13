@@ -1,115 +1,119 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001e6d17773de50300
-051c0104b55825789fa195a9544d9c26
-0f5054256b8001010101010101010101
-01010101d1cf10c50050f04074601810
-7a006f6e3100001a40510020f1405060
-30207a006f6e3100001a000000fd0034
-4b828239010a202020202020000000fc
-004c472048445220575148440a20019f
-020314712309060783010000e305c000
-e3060501e4a770b8d1a0245090608400
-6a6e3100001a00000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000f3
+00 ff ff ff ff ff ff 00 1e 6d 17 77 3d e5 03 00
+05 1c 01 04 b5 58 25 78 9f a1 95 a9 54 4d 9c 26
+0f 50 54 25 6b 80 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 d1 cf 10 c5 00 50 f0 40 74 60 18 10
+7a 00 6f 6e 31 00 00 1a 40 51 00 20 f1 40 50 60
+30 20 7a 00 6f 6e 31 00 00 1a 00 00 00 fd 00 34
+4b 82 82 39 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 47 20 48 44 52 20 57 51 48 44 0a 20 01 9f
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1e 6d 17 77 3d e5 03 00 05 1c
-version:         01 04
-basic params:    b5 58 25 78 9f
-chroma info:     a1 95 a9 54 4d 9c 26 0f 50 54
-established:     25 6b 80
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 d1 cf
-descriptor 1:    10 c5 00 50 f0 40 74 60 18 10 7a 00 6f 6e 31 00 00 1a
-descriptor 2:    40 51 00 20 f1 40 50 60 30 20 7a 00 6f 6e 31 00 00 1a
-descriptor 3:    00 00 00 fd 00 34 4b 82 82 39 01 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 4c 47 20 48 44 52 20 57 51 48 44 0a 20
-extensions:      01
-checksum:        9f
+02 03 14 71 23 09 06 07 83 01 00 00 e3 05 c0 00
+e3 06 05 01 e4 a7 70 b8 d1 a0 24 50 90 60 84 00
+6a 6e 31 00 00 1a 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f3
 
-EDID version: 1.4
-Manufacturer: GSM Model 7717 Serial Number --
-Made in week 5 of 2018
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 88 cm x 37 cm
-Gamma: 2.20
-DPMS levels: Standby
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6621, 0.3300
-  Green: 0.3007, 0.6103
-  Blue:  0.1503, 0.0595
-  White: 0.3134, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  832x624@75Hz 4:3 HorFreq: 49726 Hz Clock: 57.284 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-  1152x870@75Hz 192:145 HorFreq: 67500 Hz Clock: 108.000 MHz
-Standard timings supported:
-  1920x1080@75Hz 16:9
-Detailed mode: Clock 504.480 MHz, 879 mm x 366 mm
-               3840 3864 3880 3920 hborder 0
-               1600 1607 1617 1716 vborder 0
-               +hsync -vsync 
-               VertFreq: 74 Hz, HorFreq: 128693 Hz
-Detailed mode: Clock 208.000 MHz, 879 mm x 366 mm
-               3840 3888 3920 4128 hborder 0
-               1600 1607 1617 1680 vborder 0
-               +hsync -vsync 
-               VertFreq: 29 Hz, HorFreq: 50387 Hz
-Monitor ranges (bare limits): 52-75Hz V, 130-130kHz H, max dotclock 570MHz
-Monitor name: LG HDR WQHD
-Has 1 extension blocks
-Checksum: 0x9f (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-16 bytes of CTA data
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 30487
+    Serial Number: ...
+    Made in: week 5 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 88 cm x 37 cm
+    Gamma: 2.20
+    DPMS levels: Standby
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6621, 0.3300
+    Green: 0.3007, 0.6103
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    Apple   :   832x624    74.551266 Hz   4:3     49.726 kHz     57.284000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+    Apple   :  1152x870    75.061550 Hz 192:145   68.681 kHz    100.000000 MHz
+  Standard Timings:
+    GTF     :  1920x1080   75.000068 Hz  16:9     84.600 kHz    220.637000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x1600   74.996432 Hz  12:5    128.694 kHz    504.480000 MHz (879 mm x 366 mm)
+                 Hfront   24 Hsync  16 Hback   40 Hpol P
+                 Vfront    7 Vsync  10 Vback   99 Vpol N
+    DTD 2:  3840x1600   29.992617 Hz  12:5     50.388 kHz    208.000000 MHz (879 mm x 366 mm)
+                 Hfront   48 Hsync  32 Hback  208 Hpol P
+                 Vfront    7 Vsync  10 Vback   63 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 52-75 Hz V, 130-130 kHz H, max dotclock 570 MHz
+    Display Product Name: 'LG HDR WQHD'
+  Extension blocks: 1
+Checksum: 0x9f
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Extended tag: Colorimetry data block
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
     BT2020YCC
     BT2020RGB
-  Extended tag: HDR static metadata data block
+  HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
       SMPTE ST2084
     Supported static metadata descriptors:
       Static metadata type 1
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 429.800 MHz, 874 mm x 366 mm
-               3440 3584 3680 3880 hborder 0
-               1440 1448 1452 1476 vborder 0
-               +hsync -vsync 
-               VertFreq: 75 Hz, HorFreq: 110773 Hz
-Checksum: 0xf3 (valid)
+  Detailed Timing Descriptors:
+    DTD 3:  3440x1440   75.049591 Hz  43:18   110.773 kHz    429.800000 MHz (874 mm x 366 mm)
+                 Hfront  144 Hsync  96 Hback  200 Hpol P
+                 Vfront    8 Vsync   4 Vback   24 Vpol N
+Checksum: 0xf3
 
-EDID block does NOT conform to EDID 1.4!
-	sRGB is signaled, but the chromaticities do not match
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 29 - 75 Hz
-  Horizontal Freq: 31469 - 128693 Hz
-  Maximum Clock: 504.480 MHz
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 29.993 - 75.062 Hz (Monitor: 52.000 - 75.000 Hz)
+    Horizontal Freq: 31.468 - 128.693 kHz (Monitor: 130.000 - 130.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+EDID conformity: FAIL

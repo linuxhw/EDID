@@ -1,61 +1,61 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00328d5e04aac83301
-241b010395202078eaebf59559549027
-1e505400000001010101010101010101
-0101010101017017905811002a50a018
-420490001500001e0000000000000000
-00000000000000000000000000fd0032
-460f1e03000a202020202020000000fe
-004a595f333230583332300a20200024
+00 ff ff ff ff ff ff 00 32 8d 5e 04 aa c8 33 01
+24 1b 01 03 95 20 20 78 ea eb f5 95 59 54 90 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 70 17 90 58 11 00 2a 50 a0 18
+42 04 90 00 15 00 00 1e 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 32
+46 0f 1e 03 00 0a 20 20 20 20 20 20 00 00 00 fe
+00 4a 59 5f 33 32 30 58 33 32 30 0a 20 20 00 24
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   32 8d 5e 04 aa c8 33 01 24 1b
-version:         01 03
-basic params:    95 20 20 78 ea
-chroma info:     eb f5 95 59 54 90 27 1e 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    70 17 90 58 11 00 2a 50 a0 18 42 04 90 00 15 00 00 1e
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 3:    00 00 00 fd 00 32 46 0f 1e 03 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 4a 59 5f 33 32 30 58 33 32 30 0a 20 20
-extensions:      00
-checksum:        24
+----------------
 
-EDID version: 1.3
-Manufacturer: LTM Model 45e Serial Number --
-Made in week 36 of 2017
-Digital display
-DFP 1.x compatible TMDS
-Maximum image size: 32 cm x 32 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5849, 0.3496
-  Green: 0.3300, 0.5654
-  Blue:  0.1552, 0.1201
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 60.000 MHz, 400 mm x 1280 mm
-                400  560  584  744 hborder 0
-               1280 1300 1302 1322 vborder 0
-               +hsync +vsync 
-               VertFreq: 61 Hz, HorFreq: 80645 Hz
-Manufacturer-specified data, tag 0
-Monitor ranges (GTF): 50-70Hz V, 15-30kHz H, max dotclock 30MHz
-ASCII string: JY_320X320
-Checksum: 0x24 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 14
-	Missing name descriptor
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 61 - 61 Hz
-  Horizontal Freq: 80645 - 80645 Hz
-  Maximum Clock: 60.000 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LTM
+    Model: 1118
+    Serial Number: ...
+    Made in: week 36 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 32 cm x 32 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5849, 0.3496
+    Green: 0.3300, 0.5654
+    Blue : 0.1552, 0.1201
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:   400x1280   61.002391 Hz   5:16    80.645 kHz     60.000000 MHz (400 mm x 1280 mm)
+                 Hfront  160 Hsync  24 Hback  160 Hpol P
+                 Vfront   20 Vsync   2 Vback   20 Vpol P
+    Empty Descriptor
+    Display Range Limits:
+      Monitor ranges (GTF): 50-70 Hz V, 15-30 kHz H, max dotclock 30 MHz
+    Alphanumeric Data String: 'JY_320X320'
+Checksum: 0x24
 
+----------------
 
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x14.
+  Detailed Timing Descriptor #1: Mismatch of image size 400x1280 mm vs display size 320x320 mm.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 80.645 - 80.645 kHz (Monitor: 15.000 - 30.000 kHz)
+    Maximum Clock: 60.000 MHz (Monitor: 30.000 MHz)
+  Base EDID: The DTD max image size is 400x1280mm, which is larger than the display size 320.0x320.0mm.
+
+EDID conformity: FAIL

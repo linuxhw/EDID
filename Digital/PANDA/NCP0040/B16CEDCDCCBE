@@ -1,62 +1,56 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff003870400000000000
-011c0104a522137803f285975c588f28
-1d505400000001010101010101010101
-0101010101012e3680a070381f403020
-350058c21000001a182480a070381f40
-3020350058c21000001a000000000000
-00000000000000000000000000000002
-000c42f90b3c6a0c13237d0000000024
+00 ff ff ff ff ff ff 00 38 70 40 00 00 00 00 00
+01 1c 01 04 a5 22 13 78 03 f2 85 97 5c 58 8f 28
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2e 36 80 a0 70 38 1f 40 30 20
+35 00 58 c2 10 00 00 1a 18 24 80 a0 70 38 1f 40
+30 20 35 00 58 c2 10 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 42 f9 0b 3c 6a 0c 13 23 7d 00 00 00 00 24
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   38 70 40 00 00 00 00 00 01 1c
-version:         01 04
-basic params:    a5 22 13 78 03
-chroma info:     f2 85 97 5c 58 8f 28 1d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    2e 36 80 a0 70 38 1f 40 30 20 35 00 58 c2 10 00 00 1a
-descriptor 2:    18 24 80 a0 70 38 1f 40 30 20 35 00 58 c2 10 00 00 1a
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 02 00 0c 42 f9 0b 3c 6a 0c 13 23 7d 00 00 00
-extensions:      00
-checksum:        24
+----------------
 
-EDID version: 1.4
-Manufacturer: NCP Model 40 Serial Number --
-Made in week 1 of 2018
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.5927, 0.3623
-  Green: 0.3437, 0.5605
-  Blue:  0.1582, 0.1132
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 138.700 MHz, 344 mm x 194 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 66682 Hz
-Detailed mode: Clock 92.400 MHz, 344 mm x 194 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1111 vborder 0
-               +hsync -vsync 
-               VertFreq: 39 Hz, HorFreq: 44423 Hz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 2
-Checksum: 0x24 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: NCP
+    Model: 64
+    Made in: week 1 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5927, 0.3623
+    Green: 0.3437, 0.5605
+    Blue : 0.1582, 0.1132
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.020425 Hz  16:9     66.683 kHz    138.700000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    DTD 2:  1920x1080   39.984768 Hz  16:9     44.423 kHz     92.400000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 42 f9 0b 3c 6a 0c 13 23 7d 00 00 00 '....B..<j..#}...'
+Checksum: 0x24
 
+----------------
 
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

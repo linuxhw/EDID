@@ -1,108 +1,114 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff003ac4000000000000
-021a0104b54628640692b0a3544c9926
-0f505400000000000000000000000000
-000000000000b06800a0a0402e603020
-360081902100001ed6e20050f0604590
-0820780c6d552100001a000000fd001e
-461e8c3c010a202020202020000000fc
-004e564944494120564758200a200168
-70125c030003001407e80004ff0e2f02
-af8057006f08590007800900030014d1
-d70000ff0f7f001f801f006f08120002
-800200030014806e0104ff139f002f80
-1f003f0b510002000400030014422703
-04ff1d4f0007801f00df107a006c0007
-00ac0000000000000000000000000000
-00000000000000000000000000000090
+00 ff ff ff ff ff ff 00 3a c4 00 00 00 00 00 00
+02 1a 01 04 b5 46 28 64 06 92 b0 a3 54 4c 99 26
+0f 50 54 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 b0 68 00 a0 a0 40 2e 60 30 20
+36 00 81 90 21 00 00 1e d6 e2 00 50 f0 60 45 90
+08 20 78 0c 6d 55 21 00 00 1a 00 00 00 fd 00 1e
+46 1e 8c 3c 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 4e 56 49 44 49 41 20 56 47 58 20 0a 20 01 68
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   3a c4 00 00 00 00 00 00 02 1a
-version:         01 04
-basic params:    b5 46 28 64 06
-chroma info:     92 b0 a3 54 4c 99 26 0f 50 54
-established:     00 00 00
-standard:        00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 1:    b0 68 00 a0 a0 40 2e 60 30 20 36 00 81 90 21 00 00 1e
-descriptor 2:    d6 e2 00 50 f0 60 45 90 08 20 78 0c 6d 55 21 00 00 1a
-descriptor 3:    00 00 00 fd 00 1e 46 1e 8c 3c 01 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 4e 56 49 44 49 41 20 56 47 58 20 0a 20
-extensions:      01
-checksum:        68
+70 12 5c 03 00 03 00 14 07 e8 00 04 ff 0e 2f 02
+af 80 57 00 6f 08 59 00 07 80 09 00 03 00 14 d1
+d7 00 00 ff 0f 7f 00 1f 80 1f 00 6f 08 12 00 02
+80 02 00 03 00 14 80 6e 01 04 ff 13 9f 00 2f 80
+1f 00 3f 0b 51 00 02 00 04 00 03 00 14 42 27 03
+04 ff 1d 4f 00 07 80 1f 00 df 10 7a 00 6c 00 07
+00 ac 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90
 
-EDID version: 1.4
-Manufacturer: NVD Model 0 Serial Number --
-Made in week 2 of 2016
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 70 cm x 40 cm
-Gamma: 2.00
-Supported color formats: RGB 4:4:4
-Default (sRGB) color space is primary color space
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6386, 0.3291
-  Green: 0.2968, 0.5996
-  Blue:  0.1503, 0.0615
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-non-conformant standard timing (0 horiz)
-Detailed mode: Clock 268.000 MHz, 641 mm x 400 mm
-               2560 2608 2640 2720 hborder 0
-               1600 1603 1609 1646 vborder 0
-               +hsync +vsync 
-               VertFreq: 59 Hz, HorFreq: 98529 Hz
-Detailed mode: Clock 580.700 MHz, 621 mm x 341 mm
-               3840 3848 3880 3920 hborder 0
-               2400 2455 2463 2469 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 148137 Hz
-Monitor ranges (bare limits): 30-70Hz V, 30-140kHz H, max dotclock 600MHz
-Monitor name: NVIDIA VGX 
-Has 1 extension blocks
-Checksum: 0x68 (valid)
+----------------
 
-DisplayID extension block
-Extension version: 18
-Length 92, version 18, extension count 0
-Checksum: 0xac (valid)
-Type 1 detailed timing: aspect: 16:9,  
-Detailed mode: Clock 593.990 MHz, 0 mm x 0 mm
-               3839 4014 4101 4398
-               2159 2166 2175 2248
-               +hsync +vsync
-Type 1 detailed timing: aspect: 1:1,  
-Detailed mode: Clock 552.490 MHz, 0 mm x 0 mm
-               4095 4126 4157 4222
-               2159 2161 2163 2177
-               +hsync +vsync
-Type 1 detailed timing: aspect: 16:9,  
-Detailed mode: Clock 938.240 MHz, 0 mm x 0 mm
-               5119 5166 5197 5278
-               2879 2881 2885 2960
-               +hsync -vsync
-Type 1 detailed timing: aspect: 16:9,  
-Detailed mode: Clock 2066.580 MHz, 0 mm x 0 mm
-               7679 7686 7717 7758
-               4319 4427 4434 4441
-               +hsync -vsync
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: NVD
+    Model: 0
+    Made in: week 2 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 70 cm x 40 cm
+    Gamma: 2.00
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6386, 0.3291
+    Green: 0.2968, 0.5996
+    Blue : 0.1503, 0.0615
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings:
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   59.859910 Hz   8:5     98.529 kHz    268.000000 MHz (641 mm x 400 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   37 Vpol P
+    DTD 2:  3840x2400   59.999091 Hz   8:5    148.138 kHz    580.700000 MHz (621 mm x 341 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront   55 Vsync   8 Vback    6 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 30-70 Hz V, 30-140 kHz H, max dotclock 600 MHz
+    Display Product Name: 'NVIDIA VGX '
+  Extension blocks: 1
+Checksum: 0x68
 
-EDID block does NOT conform to EDID 1.4!
-	sRGB is signaled, but the chromaticities do not match
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 59 - 59 Hz
-  Horizontal Freq: 98529 - 148137 Hz
-  Maximum Clock: 580.700 MHz
-EDID block does not conform at all!
-	Has -1744830464 nonconformant extension block(s)
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Standalone display device
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz (aspect 16:9, no 3D stereo)
+               Hfront  176 Hsync  88 Hback  296 Hpol P
+               Vfront    8 Vsync  10 Vback   72 Vpol P
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  4096x2160   60.027622 Hz   1:1    130.800 kHz    552.500000 MHz (aspect 1:1, no 3D stereo)
+               Hfront   32 Hsync  32 Hback   64 Hpol P
+               Vfront    3 Vsync   3 Vback   13 Vpol P
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  5120x2880   59.992864 Hz  16:9    177.699 kHz    938.250000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback   74 Vpol N
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  7680x4320   59.939938 Hz  16:9    266.313 kHz   2066.590000 MHz (aspect 16:9, no 3D stereo)
+               Hfront    8 Hsync  32 Hback   40 Hpol P
+               Vfront  109 Vsync   8 Vback    6 Vpol N
+  Checksum: 0xac
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 98.529 - 266.313 kHz (Monitor: 30.000 - 140.000 kHz)
+    Maximum Clock: 2066.590 MHz (Monitor: 600.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Detailed Timing Descriptor #2: Mismatch of image size 621x341 mm vs display size 700x400 mm.
+  Display Product Name: One or more trailing spaces.
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

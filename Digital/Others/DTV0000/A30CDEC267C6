@@ -1,62 +1,68 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001296000001010101
-15160104a500007882debda355479926
-0c474aa10800d1c00101010101010101
-010101010101023a801871382d40582c
-4500a2123200001e662150b051001b30
-40703600f8ae2100001e000000fd0032
-4c1f4b10000a202020202020000000fc
-004469676974616c2054560a202000db
+00 ff ff ff ff ff ff 00 12 96 00 00 01 01 01 01
+15 16 01 04 a5 00 00 78 82 de bd a3 55 47 99 26
+0c 47 4a a1 08 00 d1 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 a2 12 32 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 f8 ae 21 00 00 1e 00 00 00 fd 00 32
+4c 1f 4b 10 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 44 69 67 69 74 61 6c 20 54 56 0a 20 20 00 db
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   12 96 00 00 01 01 01 01 15 16
-version:         01 04
-basic params:    a5 00 00 78 82
-chroma info:     de bd a3 55 47 99 26 0c 47 4a
-established:     a1 08 00
-standard:        d1 c0 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 a2 12 32 00 00 1e
-descriptor 2:    66 21 50 b0 51 00 1b 30 40 70 36 00 f8 ae 21 00 00 1e
-descriptor 3:    00 00 00 fd 00 32 4c 1f 4b 10 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 44 69 67 69 74 61 6c 20 54 56 0a 20 20
-extensions:      00
-checksum:        db
+----------------
 
-EDID version: 1.4
-Manufacturer: DTV Model 0 Serial Number --
-Made in week 21 of 2012
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Image size is variable
-Gamma: 2.20
-DPMS levels: Standby
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3330
-  Green: 0.2802, 0.5996
-  Blue:  0.1503, 0.0498
-  White: 0.2802, 0.2900
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1920x1080@60Hz 16:9
-Detailed mode: Clock 148.500 MHz, 930 mm x 530 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 85.500 MHz, 760 mm x 430 mm
-               1360 1424 1536 1792 hborder 0
-                768  771  777  795 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 47712 Hz
-Monitor ranges (GTF): 50-76Hz V, 31-75kHz H, max dotclock 160MHz
-Monitor name: Digital TV
-Checksum: 0xdb (valid)
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: DTV
+    Model: 0
+    Serial Number: ...
+    Made in: week 21 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Image size is variable
+    Gamma: 2.20
+    DPMS levels: Standby
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3330
+    Green: 0.2802, 0.5996
+    Blue : 0.1503, 0.0498
+    White: 0.2802, 0.2900
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (930 mm x 530 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (760 mm x 430 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-76 Hz V, 31-75 kHz H, max dotclock 160 MHz
+    Display Product Name: 'Digital TV'
+Checksum: 0xdb
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+EDID:
+  Base EDID: The DTD max image size is 930x530mm, but the display size is not specified anywhere.
+
+EDID conformity: FAIL

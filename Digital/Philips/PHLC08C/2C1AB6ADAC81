@@ -1,67 +1,60 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff00410c8cc0fa050000
-25160103802c19782aba21a655489a27
-135054bd4b00a9c081c0818001010101
-010101010101302a40c8608464301850
-1300bbf91000001e000000ff00554842
-31323337303031353330000000fc0050
-68696c69707320323036564c000000fd
-00384c1e5311000a202020202020006e
+00 ff ff ff ff ff ff 00 41 0c 8c c0 fa 05 00 00
+25 16 01 03 80 2c 19 78 2a ba 21 a6 55 48 9a 27
+13 50 54 bd 4b 00 a9 c0 81 c0 81 80 01 01 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 bb f9 10 00 00 1e 00 00 00 ff 00 55 48 42
+31 32 33 37 30 30 31 35 33 30 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 32 30 36 56 4c 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 6e
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   41 0c 8c c0 fa 05 00 00 25 16
-version:         01 03
-basic params:    80 2c 19 78 2a
-chroma info:     ba 21 a6 55 48 9a 27 13 50 54
-established:     bd 4b 00
-standard:        a9 c0 81 c0 81 80 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    30 2a 40 c8 60 84 64 30 18 50 13 00 bb f9 10 00 00 1e
-descriptor 2:    00 00 00 ff 00 55 48 42 31 32 33 37 30 30 31 35 33 30
-descriptor 3:    00 00 00 fc 00 50 68 69 6c 69 70 73 20 32 30 36 56 4c
-descriptor 4:    00 00 00 fd 00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        6e
+----------------
 
-EDID version: 1.3
-Manufacturer: PHL Model c08c Serial Number --
-Made in week 37 of 2012
-Digital display
-Maximum image size: 44 cm x 25 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6503, 0.3349
-  Green: 0.2832, 0.6035
-  Blue:  0.1523, 0.0761
-  White: 0.3125, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1600x900@60Hz 16:9
-  1280x720@60Hz 16:9
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-Detailed mode: Clock 108.000 MHz, 443 mm x 249 mm
-               1600 1624 1704 1800 hborder 0
-                900  901  904 1000 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 60000 Hz
-Serial number: --
-Monitor ranges (GTF): 56-76Hz V, 30-83kHz H, max dotclock 170MHz
-Checksum: 0x6e (valid)
-EDID block does NOT conform to EDID 1.3!
-	Name descriptor not terminated with a newline
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PHL
+    Model: 49292
+    Serial Number: ...
+    Made in: week 37 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 44 cm x 25 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3349
+    Green: 0.2832, 0.6035
+    Blue : 0.1523, 0.0761
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    Apple   :   640x480    66.666667 Hz   4:3     35.000 kHz     30.240000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (443 mm x 249 mm)
+                 Hfront   24 Hsync  80 Hback   96 Hpol P
+                 Vfront    1 Vsync   3 Vback   96 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: 'Philips 206VL'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+Checksum: 0x6e
 
+----------------
 
+EDID conformity: PASS

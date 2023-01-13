@@ -1,60 +1,54 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff002163b13600000000
-001e0104951f11780aaf409459579129
-23505400000001010101010101010101
-010101010101c71d56e250001e303020
-360035ae10000018d21756e250001e30
-3020360035ae10000018000000fe0050
-5257525480313430414e303100000000
-00004121160010000009010a20200054
+00 ff ff ff ff ff ff 00 21 63 b1 36 00 00 00 00
+00 1e 01 04 95 1f 11 78 0a af 40 94 59 57 91 29
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c7 1d 56 e2 50 00 1e 30 30 20
+36 00 35 ae 10 00 00 18 d2 17 56 e2 50 00 1e 30
+30 20 36 00 35 ae 10 00 00 18 00 00 00 fe 00 50
+52 57 52 54 80 31 34 30 41 4e 30 31 00 00 00 00
+00 00 41 21 16 00 10 00 00 09 01 0a 20 20 00 54
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   21 63 b1 36 00 00 00 00 00 1e
-version:         01 04
-basic params:    95 1f 11 78 0a
-chroma info:     af 40 94 59 57 91 29 23 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    c7 1d 56 e2 50 00 1e 30 30 20 36 00 35 ae 10 00 00 18
-descriptor 2:    d2 17 56 e2 50 00 1e 30 30 20 36 00 35 ae 10 00 00 18
-descriptor 3:    00 00 00 fe 00 50 52 57 52 54 80 31 34 30 41 4e 30 31
-descriptor 4:    00 00 00 00 00 00 41 21 16 00 10 00 00 09 01 0a 20 20
-extensions:      00
-checksum:        54
+----------------
 
-EDID version: 1.4
-Manufacturer: HKC Model 36b1 Serial Number --
-Made in year 2020
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 31 cm x 17 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5800, 0.3496
-  Green: 0.3427, 0.5693
-  Blue:  0.1611, 0.1367
-  White: 0.3125, 0.3281
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 76.230 MHz, 309 mm x 174 mm
-               1366 1414 1446 1592 hborder 0
-                768  771  777  798 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 47883 Hz
-Detailed mode: Clock 60.980 MHz, 309 mm x 174 mm
-               1366 1414 1446 1592 hborder 0
-                768  771  777  798 vborder 0
-               -hsync -vsync 
-               VertFreq: 48 Hz, HorFreq: 38304 Hz
-ASCII string: PRWRT
-Manufacturer-specified data, tag 0
-Checksum: 0x54 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HKC
+    Model: 14001
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5800, 0.3496
+    Green: 0.3427, 0.5693
+    Blue : 0.1611, 0.1367
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.003967 Hz 683:384   47.883 kHz     76.230000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback  146 Hpol N
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    DTD 2:  1366x768    48.000025 Hz 683:384   38.304 kHz     60.980000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback  146 Hpol N
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    Alphanumeric Data String: 'PRWRT'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 16 00 10 00 00 09 01 0a 20 20 '....A!........  '
+Checksum: 0x54
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

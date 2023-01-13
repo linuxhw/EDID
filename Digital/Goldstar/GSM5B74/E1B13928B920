@@ -1,112 +1,132 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001e6d745b19c30500
-0c1f0104b53c2278800f91ae5243b026
-0f505420000001010101010101010101
-01010101010125cc0050f0703e800820
-180058542100001aa35b0050a0a02950
-0820180058542100001a000000ff0031
-31324e54545142333632350a000000fc
-004c4720556c74726146696e650a0205
-701279030001000c3e17160d0014400b
-50784e992900104305a920054b4d59b4
-6c36ebf33575ce03002824cc0084ff0e
-4f0007801f006f083d00000007005e8e
-00047f0c4f0007801f00070733000000
-07000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000df90
-701279030012001682100000ff093f0b
-000000000047534d745b010101010300
-14d0bc0008ff099f0007801f003f0b51
-00000007000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000001290
+00 ff ff ff ff ff ff 00 1e 6d 74 5b 19 c3 05 00
+0c 1f 01 04 b5 3c 22 78 80 0f 91 ae 52 43 b0 26
+0f 50 54 20 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 25 cc 00 50 f0 70 3e 80 08 20
+18 00 58 54 21 00 00 1a a3 5b 00 50 a0 a0 29 50
+08 20 18 00 58 54 21 00 00 1a 00 00 00 ff 00 31
+31 32 4e 54 54 51 42 33 36 32 35 0a 00 00 00 fc
+00 4c 47 20 55 6c 74 72 61 46 69 6e 65 0a 02 05
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1e 6d 74 5b 19 c3 05 00 0c 1f
-version:         01 04
-basic params:    b5 3c 22 78 80
-chroma info:     0f 91 ae 52 43 b0 26 0f 50 54
-established:     20 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    25 cc 00 50 f0 70 3e 80 08 20 18 00 58 54 21 00 00 1a
-descriptor 2:    a3 5b 00 50 a0 a0 29 50 08 20 18 00 58 54 21 00 00 1a
-descriptor 3:    00 00 00 ff 00 31 31 32 4e 54 54 51 42 33 36 32 35 0a
-descriptor 4:    00 00 00 fc 00 4c 47 20 55 6c 74 72 61 46 69 6e 65 0a
-extensions:      02
-checksum:        05
+70 12 79 03 00 01 00 0c 3e 17 16 0d 00 14 40 0b
+50 78 4e 99 29 00 10 43 05 a9 20 05 4b 4d 59 b4
+6c 36 eb f3 35 75 ce 03 00 28 24 cc 00 84 ff 0e
+4f 00 07 80 1f 00 6f 08 3d 00 00 00 07 00 5e 8e
+00 04 7f 0c 4f 00 07 80 1f 00 07 07 33 00 00 00
+07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 df 90
 
-EDID version: 1.4
-Manufacturer: GSM Model 5b74 Serial Number --
-Made in week 12 of 2021
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 60 cm x 34 cm
-Gamma: 2.20
-DPMS levels: Standby
-Supported color formats: RGB 4:4:4
-Display x,y Chromaticity:
-  Red:   0.6796, 0.3203
-  Green: 0.2646, 0.6904
-  Blue:  0.1503, 0.0595
-  White: 0.3125, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-Standard timings supported:
-Detailed mode: Clock 522.610 MHz, 600 mm x 340 mm
-               3840 3848 3880 3920 hborder 0
-               2160 2161 2169 2222 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 133318 Hz
-Detailed mode: Clock 234.590 MHz, 600 mm x 340 mm
-               2560 2568 2600 2640 hborder 0
-               1440 1441 1449 1481 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 88859 Hz
-Serial number: --
-Monitor name: LG UltraFine
-Has 2 extension blocks
-Checksum: 0x5 (valid)
+70 12 79 03 00 12 00 16 82 10 00 00 ff 09 3f 0b
+00 00 00 00 00 47 53 4d 74 5b 01 01 01 01 03 00
+14 d0 bc 00 08 ff 09 9f 00 07 80 1f 00 3f 0b 51
+00 00 00 07 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 12 90
 
-DisplayID extension block
-Extension version: 18
-Length 121, version 18, extension count 0
-Checksum: 0xdf (valid)
-Display Parameters block
-Unknown displayid data block 0x29
-Type 1 detailed timing: aspect: 16:9, Preferred  
-Detailed mode: Clock 522.600 MHz, 0 mm x 0 mm
-               3839 3846 3877 3918
-               2159 2159 2166 2220
-               +hsync -vsync
-Type 1 detailed timing: aspect: 16:9,  
-Detailed mode: Clock 364.460 MHz, 0 mm x 0 mm
-               3199 3206 3237 3278
-               1799 1799 1806 1850
-               +hsync -vsync
+----------------
 
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 23412
+    Serial Number: ...
+    Made in: week 12 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Standby
+    Supported color formats: RGB 4:4:4
+    First detailed timing does not include the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2646, 0.6904
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.999495 Hz  16:9    133.319 kHz    522.610000 MHz (600 mm x 340 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront    1 Vsync   8 Vback   53 Vpol N
+    DTD 2:  2560x1440   59.999898 Hz  16:9     88.860 kHz    234.590000 MHz (600 mm x 340 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront    1 Vsync   8 Vback   32 Vpol N
+    Display Product Serial Number: ...
+    Display Product Name: 'LG UltraFine'
+  Extension blocks: 2
+Checksum: 0x05
 
-DisplayID extension block
-Extension version: 18
-Length 121, version 18, extension count 0
-Checksum: 0x12 (valid)
-tiled display block: capabilities 0x00000082
-num horizontal tiles 2, num vertical tiles 1
-tile location (0, 0)
-tile dimensions (2560, 2880)
-Type 1 detailed timing: aspect: undefined,  
-Detailed mode: Clock 483.360 MHz, 0 mm x 0 mm
-               2559 2566 2597 2718
-               2879 2879 2886 2960
-               +hsync -vsync
+----------------
 
-	Missing monitor ranges
-EDID block does not conform at all!
-	Has -167772160 nonconformant extension block(s)
+Block 1, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Standalone display device
+  Display Parameters Data Block (0x01):
+    Image size: 595.0 mm x 335.0 mm
+    Display native pixel format: 5120x2880
+    Feature support flags:
+      Power management (DPM)
+      Separate audio inputs provided
+    Gamma: 2.20
+    Aspect ratio: 1.78
+    Dynamic bpc native: 10
+    Dynamic bpc overall: 10
+  ContainerID Data Block:
+    Container ID: 4305a920-054b-4d59-b46c-36ebf33575ce
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  3840x2160   59.999495 Hz  16:9    133.319 kHz    522.610000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront    8 Hsync  32 Hback   40 Hpol P
+               Vfront    1 Vsync   8 Vback   53 Vpol N
+    DTD:  3200x1800   59.999407 Hz  16:9    111.119 kHz    364.470000 MHz (aspect 16:9, no 3D stereo)
+               Hfront    8 Hsync  32 Hback   40 Hpol P
+               Vfront    1 Vsync   8 Vback   43 Vpol N
+  Checksum: 0xdf
+Checksum: 0x90
 
+----------------
 
+Block 2, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Tiled Display Topology Data Block (0x12):
+    Capabilities:
+      Behavior if it is the only tile: Image is scaled to fit the entire tiled display
+      Behavior if more than one tile and fewer than total number of tiles: Undefined
+    Tiled display consists of a single physical display enclosure
+    Num horizontal tiles: 2 Num vertical tiles: 1
+    Tile location: 0, 0
+    Tile resolution: 2560x2880
+    Tiled Display Manufacturer/Vendor ID: GSM
+    Tiled Display Product ID Code: 23412
+    Tiled Display Serial Number: ...
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x2880   59.996475 Hz   0:0    177.710 kHz    483.370000 MHz (aspect undefined, no 3D stereo)
+               Hfront    8 Hsync  32 Hback  120 Hpol P
+               Vfront    1 Vsync   8 Vback   73 Vpol N
+  Checksum: 0x12
+Checksum: 0x90
+
+----------------
+
+Failures:
+
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+  ContainerID Data Block: Use of DisplayID v2.0 tag for DisplayID v1.2.
+Block 2, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+
+EDID conformity: FAIL

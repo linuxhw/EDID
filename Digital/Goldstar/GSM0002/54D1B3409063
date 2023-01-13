@@ -1,138 +1,143 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001e6d020001010101
-011c0103807a4578ea7c5ba6544e9a26
-0f474a21080031404540614071408180
-b3000101010104740030f2705a80b058
-8a00a20b3200001e023a801871382d40
-582c4500bfae4200001e000000fd003a
-3e1e531e000a202020202020000000fc
-004c47205349474e4147450a20200152
-020330f1518102031112130414051f10
-2021225d5e5f230957076d030c002000
-b83c200080010203e30e6061e305c000
-04740030f2705a80b0588a00a20b3200
-009e023a801871382d40582c4500bfae
-4200001e000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000077
+00 ff ff ff ff ff ff 00 1e 6d 02 00 01 01 01 01
+01 1c 01 03 80 7a 45 78 ea 7c 5b a6 54 4e 9a 26
+0f 47 4a 21 08 00 31 40 45 40 61 40 71 40 81 80
+b3 00 01 01 01 01 04 74 00 30 f2 70 5a 80 b0 58
+8a 00 a2 0b 32 00 00 1e 02 3a 80 18 71 38 2d 40
+58 2c 45 00 bf ae 42 00 00 1e 00 00 00 fd 00 3a
+3e 1e 53 1e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 47 20 53 49 47 4e 41 47 45 0a 20 20 01 52
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1e 6d 02 00 01 01 01 01 01 1c
-version:         01 03
-basic params:    80 7a 45 78 ea
-chroma info:     7c 5b a6 54 4e 9a 26 0f 47 4a
-established:     21 08 00
-standard:        31 40 45 40 61 40 71 40 81 80 b3 00 01 01 01 01
-descriptor 1:    04 74 00 30 f2 70 5a 80 b0 58 8a 00 a2 0b 32 00 00 1e
-descriptor 2:    02 3a 80 18 71 38 2d 40 58 2c 45 00 bf ae 42 00 00 1e
-descriptor 3:    00 00 00 fd 00 3a 3e 1e 53 1e 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 4c 47 20 53 49 47 4e 41 47 45 0a 20 20
-extensions:      01
-checksum:        52
+02 03 30 f1 51 81 02 03 11 12 13 04 14 05 1f 10
+20 21 22 5d 5e 5f 23 09 57 07 6d 03 0c 00 20 00
+b8 3c 20 00 80 01 02 03 e3 0e 60 61 e3 05 c0 00
+04 74 00 30 f2 70 5a 80 b0 58 8a 00 a2 0b 32 00
+00 9e 02 3a 80 18 71 38 2d 40 58 2c 45 00 bf ae
+42 00 00 1e 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 77
 
-EDID version: 1.3
-Manufacturer: GSM Model 2 Serial Number --
-Made in week 1 of 2018
-Digital display
-Maximum image size: 122 cm x 69 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6494, 0.3310
-  Green: 0.3076, 0.6015
-  Blue:  0.1494, 0.0595
-  White: 0.2792, 0.2919
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1152x864@60Hz 4:3
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-Detailed mode: Clock 297.000 MHz, 930 mm x 523 mm
-               3840 4016 4104 4400 hborder 0
-               2160 2168 2178 2250 vborder 0
-               +hsync +vsync 
-               VertFreq: 30 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 148.500 MHz, 1215 mm x 686 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor ranges (GTF): 58-62Hz V, 30-83kHz H, max dotclock 300MHz
-Monitor name: LG SIGNAGE
-Has 1 extension blocks
-Checksum: 0x52 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-44 bytes of CTA data
-  Video data block
-    VIC   1 640x480@60Hz 4:3 (native) HorFreq: 31469 Hz Clock: 25.175 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC  17 720x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  20 1920x1080i@50Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
-    VIC   5 1920x1080i@60Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC  32 1920x1080@24Hz 16:9  HorFreq: 27000 Hz Clock: 74.250 MHz
-    VIC  33 1920x1080@25Hz 16:9  HorFreq: 28125 Hz Clock: 74.250 MHz
-    VIC  34 1920x1080@30Hz 16:9  HorFreq: 33750 Hz Clock: 74.250 MHz
-    VIC  93 3840x2160@24Hz 16:9  HorFreq: 54000 Hz Clock: 297.000 MHz
-    VIC  94 3840x2160@25Hz 16:9  HorFreq: 56250 Hz Clock: 297.000 MHz
-    VIC  95 3840x2160@30Hz 16:9  HorFreq: 67500 Hz Clock: 297.000 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 2
+    Serial Number: ...
+    Made in: week 1 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 122 cm x 69 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6494, 0.3310
+    Green: 0.3076, 0.6015
+    Blue : 0.1494, 0.0595
+    White: 0.2792, 0.2919
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz (930 mm x 523 mm)
+                 Hfront  176 Hsync  88 Hback  296 Hpol P
+                 Vfront    8 Vsync  10 Vback   72 Vpol P
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1215 mm x 686 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 58-62 Hz V, 30-83 kHz H, max dotclock 300 MHz
+    Display Product Name: 'LG SIGNAGE'
+  Extension blocks: 1
+Checksum: 0x52
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz (native)
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 192 96 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 2.0.0.0
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
     Supports_AI
     DC_36bit
     DC_30bit
     DC_Y444
-    Maximum TMDS clock: 300MHz
+    Maximum TMDS clock: 300 MHz
     Extended HDMI video details:
-      HDMI VIC 1 3840x2160@30Hz 16:9 HorFreq: 67500 Hz Clock: 297.000 MHz
-      HDMI VIC 2 3840x2160@25Hz 16:9 HorFreq: 56250 Hz Clock: 297.000 MHz
-      HDMI VIC 3 3840x2160@24Hz 16:9 HorFreq: 54000 Hz Clock: 297.000 MHz
-      HDMI VIC 227 Unknown mode HorFreq: 54000 Hz Clock: 297.000 MHz
-  Extended tag: YCbCr 4:2:0 video data block
-    VIC  96 3840x2160@50Hz 16:9  HorFreq: 112500 Hz Clock: 297.000 MHz
-    VIC  97 3840x2160@60Hz 16:9  HorFreq: 135000 Hz Clock: 297.000 MHz
-  Extended tag: Colorimetry data block
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+         Unknown (HDMI VIC 227)
+  YCbCr 4:2:0 Video Data Block:
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+  Colorimetry Data Block:
     BT2020YCC
     BT2020RGB
-Underscans PC formats by default
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 297.000 MHz, 930 mm x 523 mm
-               3840 4016 4104 4400 hborder 0
-               2160 2168 2178 2250 vborder 0
-               +hsync +vsync interlaced 
-               VertFreq: 30 Hz, HorFreq: 67500 Hz
-Detailed mode: Clock 148.500 MHz, 1215 mm x 686 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Checksum: 0x77 (valid)
+  Detailed Timing Descriptors:
+    DTD 3:  3840x4320i  29.993335 Hz   8:9     67.500 kHz    297.000000 MHz (930 mm x 523 mm)
+                 Hfront  176 Hsync  88 Hback  296 Hpol P
+                 Vfront    8 Vsync  10 Vback   72 Vpol P Vfront +0.5 Odd Field
+                 Vfront    8 Vsync  10 Vback   72 Vpol P Vback  +0.5 Even Field
+    DTD 4:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1215 mm x 686 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0x77
 
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 24 - 60 Hz
-  Horizontal Freq: 27000 - 135000 Hz
-  Maximum Clock: 297.000 MHz
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 930x523 mm vs display size 1220x690 mm.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Unknown HDMI VIC 227.
+  Detailed Timing Descriptor #3: Mismatch of image size 930x523 mm vs display size 1220x690 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 60.317 Hz (Monitor: 58.000 - 62.000 Hz)
+    Horizontal Freq: 27.000 - 67.500 kHz (Monitor: 30.000 - 83.000 kHz)
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

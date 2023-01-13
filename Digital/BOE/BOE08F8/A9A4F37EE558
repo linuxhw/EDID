@@ -1,60 +1,56 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009e5f80800000000
-2e1d0104a5241478030bb5a657529c25
-0d505400000001010101010101010101
-010101010101c43680cc703814403020
-360063c81000001a862480cc70381440
-3020360063c81000001a000000000000
-00000000000000000000000000000002
-000a36ff0a3c96141c439600000000cf
+00 ff ff ff ff ff ff 00 09 e5 f8 08 00 00 00 00
+2e 1d 01 04 a5 24 14 78 03 0b b5 a6 57 52 9c 25
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c4 36 80 cc 70 38 14 40 30 20
+36 00 63 c8 10 00 00 1a 86 24 80 cc 70 38 14 40
+30 20 36 00 63 c8 10 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0a 36 ff 0a 3c 96 14 1c 43 96 00 00 00 00 cf
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 e5 f8 08 00 00 00 00 2e 1d
-version:         01 04
-basic params:    a5 24 14 78 03
-chroma info:     0b b5 a6 57 52 9c 25 0d 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    c4 36 80 cc 70 38 14 40 30 20 36 00 63 c8 10 00 00 1a
-descriptor 2:    86 24 80 cc 70 38 14 40 30 20 36 00 63 c8 10 00 00 1a
-descriptor 3:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-descriptor 4:    00 00 00 02 00 0a 36 ff 0a 3c 96 14 1c 43 96 00 00 00
-extensions:      00
-checksum:        cf
+----------------
 
-EDID version: 1.4
-Manufacturer: BOE Model 8f8 Serial Number --
-Made in week 46 of 2019
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 36 cm x 20 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6484, 0.3398
-  Green: 0.3222, 0.6123
-  Blue:  0.1464, 0.0537
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 140.200 MHz, 355 mm x 200 mm
-               1920 1968 2000 2124 hborder 0
-               1080 1083 1089 1100 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 66007 Hz
-Detailed mode: Clock 93.500 MHz, 355 mm x 200 mm
-               1920 1968 2000 2124 hborder 0
-               1080 1083 1089 1100 vborder 0
-               +hsync -vsync 
-               VertFreq: 40 Hz, HorFreq: 44020 Hz
-Manufacturer-specified data, tag 0
-Manufacturer-specified data, tag 2
-Checksum: 0xcf (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2296
+    Made in: week 46 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 36 cm x 20 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6484, 0.3398
+    Green: 0.3222, 0.6123
+    Blue : 0.1464, 0.0537
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.006848 Hz  16:9     66.008 kHz    140.200000 MHz (355 mm x 200 mm)
+                 Hfront   48 Hsync  32 Hback  124 Hpol P
+                 Vfront    3 Vsync   6 Vback   11 Vpol N
+    DTD 2:  1920x1080   40.018832 Hz  16:9     44.021 kHz     93.500000 MHz (355 mm x 200 mm)
+                 Hfront   48 Hsync  32 Hback  124 Hpol P
+                 Vfront    3 Vsync   6 Vback   11 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0a 36 ff 0a 3c 96 14 1c 43 96 00 00 00 '....6..<...C....'
+Checksum: 0xcf
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

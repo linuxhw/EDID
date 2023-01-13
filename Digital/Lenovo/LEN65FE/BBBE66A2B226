@@ -1,115 +1,116 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0030aefe6500000000
-021f010380361e782a9055a75553a028
-135054a10800d1c0b30081c081809500
-a9c001010101023a801871382d40582c
-4500202f2100001e000000fd0030901e
-aa22000a202020202020000000fc004c
-454e204732352d31300a2020000000ff
-0055344234364d41420a202020200184
-020325f149101f041312110302012309
-7f078301000065030c001000681a0000
-01013090e61b82808870382d40182035
-00202f2100001a866f80a07038404030
-203500202f2100001a201c5686500020
-300e381300202f2100001e0000000000
-00000000000000000000000000000000
-000000000000000000000000000000ad
+00 ff ff ff ff ff ff 00 30 ae fe 65 00 00 00 00
+02 1f 01 03 80 36 1e 78 2a 90 55 a7 55 53 a0 28
+13 50 54 a1 08 00 d1 c0 b3 00 81 c0 81 80 95 00
+a9 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 20 2f 21 00 00 1e 00 00 00 fd 00 30 90 1e
+aa 22 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+45 4e 20 47 32 35 2d 31 30 0a 20 20 00 00 00 ff
+00 55 34 42 34 36 4d 41 42 0a 20 20 20 20 01 84
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   30 ae fe 65 00 00 00 00 02 1f
-version:         01 03
-basic params:    80 36 1e 78 2a
-chroma info:     90 55 a7 55 53 a0 28 13 50 54
-established:     a1 08 00
-standard:        d1 c0 b3 00 81 c0 81 80 95 00 a9 c0 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 20 2f 21 00 00 1e
-descriptor 2:    00 00 00 fd 00 30 90 1e aa 22 00 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fc 00 4c 45 4e 20 47 32 35 2d 31 30 0a 20 20
-descriptor 4:    00 00 00 ff 00 55 34 42 34 36 4d 41 42 0a 20 20 20 20
-extensions:      01
-checksum:        84
+02 03 25 f1 49 10 1f 04 13 12 11 03 02 01 23 09
+7f 07 83 01 00 00 65 03 0c 00 10 00 68 1a 00 00
+01 01 30 90 e6 1b 82 80 88 70 38 2d 40 18 20 35
+00 20 2f 21 00 00 1a 86 6f 80 a0 70 38 40 40 30
+20 35 00 20 2f 21 00 00 1a 20 1c 56 86 50 00 20
+30 0e 38 13 00 20 2f 21 00 00 1e 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ad
 
-EDID version: 1.3
-Manufacturer: LEN Model 65fe Serial Number --
-Made in week 2 of 2021
-Digital display
-Maximum image size: 54 cm x 30 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6542, 0.3330
-  Green: 0.3242, 0.6250
-  Blue:  0.1572, 0.0751
-  White: 0.3134, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-  1920x1080@60Hz 16:9
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-  1280x720@60Hz 16:9
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1600x900@60Hz 16:9
-Detailed mode: Clock 148.500 MHz, 544 mm x 303 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Monitor ranges (GTF): 48-144Hz V, 30-170kHz H, max dotclock 340MHz
-Monitor name: LEN G25-10
-Serial number: --
-Has 1 extension blocks
-Checksum: 0x84 (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-33 bytes of CTA data
-  Video data block
-    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC  17 720x576@50Hz 4:3  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   2 720x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 26110
+    Made in: week 2 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 54 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6542, 0.3330
+    Green: 0.3242, 0.6250
+    Blue : 0.1572, 0.0751
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (544 mm x 303 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 48-144 Hz V, 30-170 kHz H, max dotclock 340 MHz
+    Display Product Name: 'LEN G25-10'
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0x84
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
       Supported sample sizes (bits): 24 20 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
-  Vendor-specific data block, OUI 00001a
-Underscans PC formats by default
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 333.070 MHz, 544 mm x 303 mm
-               1920 1944 1976 2056 hborder 0
-               1080 1083 1088 1125 vborder 0
-               +hsync -vsync 
-               VertFreq: 143 Hz, HorFreq: 161999 Hz
-Detailed mode: Clock 285.500 MHz, 544 mm x 303 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1144 vborder 0
-               +hsync -vsync 
-               VertFreq: 119 Hz, HorFreq: 137259 Hz
-Detailed mode: Clock 72.000 MHz, 544 mm x 303 mm
-               1366 1380 1436 1500 hborder 0
-                768  769  772  800 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 48000 Hz
-Checksum: 0xad (valid)
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0xe6 (MCCS)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080  143.999135 Hz  16:9    161.999 kHz    333.070000 MHz (544 mm x 303 mm)
+                 Hfront   24 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   37 Vpol N
+    DTD 3:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (544 mm x 303 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD 4:  1366x768    60.000000 Hz 683:384   48.000 kHz     72.000000 MHz (544 mm x 303 mm)
+                 Hfront   14 Hsync  56 Hback   64 Hpol P
+                 Vfront    1 Vsync   3 Vback   28 Vpol P
+Checksum: 0xad
+
+----------------
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+
+EDID conformity: FAIL

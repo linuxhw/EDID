@@ -1,75 +1,75 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0061a904b001000000
-261f0103083c2178ea1f61a455509f26
-0c5054bdcf00714f8100818081c09500
-a9c0b3000101023a801871382d40582c
-450056502100001e000000ff00333231
-35303030303735303834000000fd0030
-4b385513000a202020202020000000fc
-004d69203237204e46474c0a2020005f
+00 ff ff ff ff ff ff 00 61 a9 04 b0 01 00 00 00
+26 1f 01 03 08 3c 21 78 ea 1f 61 a4 55 50 9f 26
+0c 50 54 bd cf 00 71 4f 81 00 81 80 81 c0 95 00
+a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 ff 00 33 32 31
+35 30 30 30 30 37 35 30 38 34 00 00 00 fd 00 30
+4b 38 55 13 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4d 69 20 32 37 20 4e 46 47 4c 0a 20 20 00 5f
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   61 a9 04 b0 01 00 00 00 26 1f
-version:         01 03
-basic params:    08 3c 21 78 ea
-chroma info:     1f 61 a4 55 50 9f 26 0c 50 54
-established:     bd cf 00
-standard:        71 4f 81 00 81 80 81 c0 95 00 a9 c0 b3 00 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 56 50 21 00 00 1e
-descriptor 2:    00 00 00 ff 00 33 32 31 35 30 30 30 30 37 35 30 38 34
-descriptor 3:    00 00 00 fd 00 30 4b 38 55 13 00 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 4d 69 20 32 37 20 4e 46 47 4c 0a 20 20
-extensions:      00
-checksum:        5f
+----------------
 
-EDID version: 1.3
-Manufacturer: XMI Model b004 Serial Number --
-Made in week 38 of 2021
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate 
-Maximum image size: 60 cm x 33 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6406, 0.3330
-  Green: 0.3154, 0.6240
-  Blue:  0.1494, 0.0488
-  White: 0.3125, 0.3291
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@67Hz 4:3 HorFreq: 35000 Hz Clock: 30.240 MHz
-  640x480@72Hz 4:3 HorFreq: 37900 Hz Clock: 31.500 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  800x600@72Hz 4:3 HorFreq: 48100 Hz Clock: 50.000 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-  1024x768@70Hz 4:3 HorFreq: 56500 Hz Clock: 75.000 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1152x864@75Hz 4:3 HorFreq: 67500 Hz Clock: 108.000 MHz
-  1280x800@60Hz 16:10
-  1280x1024@60Hz 5:4 HorFreq: 64000 Hz Clock: 108.000 MHz
-  1280x720@60Hz 16:9
-  1440x900@60Hz 16:10 HorFreq: 55500 Hz Clock: 88.750 MHz
-  1600x900@60Hz 16:9
-  1680x1050@60Hz 16:10 HorFreq: 64700 Hz Clock: 119.000 MHz
-Detailed mode: Clock 148.500 MHz, 598 mm x 336 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Serial number: --
-Monitor ranges (GTF): 48-75Hz V, 56-85kHz H, max dotclock 190MHz
-Monitor name: Mi 27 NFGL
-Checksum: 0x5f (valid)
-One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 75 Hz
-  Horizontal Freq: 31469 - 80000 Hz
-  Maximum Clock: 148.500 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: XMI
+    Model: 45060
+    Serial Number: ...
+    Made in: week 38 of 2021
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 60 cm x 33 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6406, 0.3330
+    Green: 0.3154, 0.6240
+    Blue : 0.1494, 0.0488
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    Apple   :   640x480    66.666667 Hz   4:3     35.000 kHz     30.240000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: ...
+    Display Range Limits:
+      Monitor ranges (GTF): 48-75 Hz V, 56-85 kHz H, max dotclock 190 MHz
+    Display Product Name: 'Mi 27 NFGL'
+Checksum: 0x5f
+
+----------------
+
+Failures:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 56.000 - 85.000 kHz)
+
+EDID conformity: FAIL

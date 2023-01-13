@@ -1,55 +1,51 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000dae321100000000
-1f1e0104951a0e780214359255539529
-24505400000001010101010101010101
-010101010101da1d56e250002030881e
-8c00009010000018000000fe004e3131
-364247452d4541320a20000000fe0043
-4d4e0a202020202020202020000000fe
-004e3131364247452d4541320a200035
+00 ff ff ff ff ff ff 00 0d ae 32 11 00 00 00 00
+1f 1e 01 04 95 1a 0e 78 02 14 35 92 55 53 95 29
+24 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 da 1d 56 e2 50 00 20 30 88 1e
+8c 00 00 90 10 00 00 18 00 00 00 fe 00 4e 31 31
+36 42 47 45 2d 45 41 32 0a 20 00 00 00 fe 00 43
+4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 31 36 42 47 45 2d 45 41 32 0a 20 00 35
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0d ae 32 11 00 00 00 00 1f 1e
-version:         01 04
-basic params:    95 1a 0e 78 02
-chroma info:     14 35 92 55 53 95 29 24 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    da 1d 56 e2 50 00 20 30 88 1e 8c 00 00 90 10 00 00 18
-descriptor 2:    00 00 00 fe 00 4e 31 31 36 42 47 45 2d 45 41 32 0a 20
-descriptor 3:    00 00 00 fe 00 43 4d 4e 0a 20 20 20 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 4e 31 31 36 42 47 45 2d 45 41 32 0a 20
-extensions:      00
-checksum:        35
+----------------
 
-EDID version: 1.4
-Manufacturer: CMN Model 1132 Serial Number --
-Made in week 31 of 2020
-Digital display
-6 bits per primary color channel
-DisplayPort interface
-Maximum image size: 26 cm x 14 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.5703, 0.3330
-  Green: 0.3251, 0.5820
-  Blue:  0.1601, 0.1435
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 76.420 MHz, 256 mm x 144 mm
-               1366 1502 1532 1592 hborder 0
-                768  776  788  800 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 48002 Hz
-ASCII string: N116BGE-EA2
-ASCII string: CMN
-ASCII string: N116BGE-EA2
-Checksum: 0x35 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 4402
+    Made in: week 31 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5703, 0.3330
+    Green: 0.3251, 0.5820
+    Blue : 0.1601, 0.1435
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.003141 Hz 683:384   48.003 kHz     76.420000 MHz (256 mm x 144 mm)
+                 Hfront  136 Hsync  30 Hback   60 Hpol N
+                 Vfront    8 Vsync  12 Vback   12 Vpol N
+    Alphanumeric Data String: 'N116BGE-EA2'
+    Alphanumeric Data String: 'CMN'
+    Alphanumeric Data String: 'N116BGE-EA2'
+Checksum: 0x35
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL

@@ -1,56 +1,60 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0010aca2a04c453931
-2a18010400351eff0200000000000000
-00000020000001010101010101010101
-010101010101d50980a020e02d100860
-2200000000080818000000fc0044454c
-4c205532343134480a20000000ff0039
-544734363441443139454c0000000000
-00000000000000000000000000000095
+00 ff ff ff ff ff ff 00 10 ac a2 a0 4c 45 39 31
+2a 18 01 04 00 35 1e ff 02 00 00 00 00 00 00 00
+00 00 00 20 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d5 09 80 a0 20 e0 2d 10 08 60
+22 00 00 00 00 08 08 18 00 00 00 fc 00 44 45 4c
+4c 20 55 32 34 31 34 48 0a 20 00 00 00 ff 00 39
+54 47 34 36 34 41 44 31 39 45 4c 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 95
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   10 ac a2 a0 4c 45 39 31 2a 18
-version:         01 04
-basic params:    00 35 1e ff 02
-chroma info:     00 00 00 00 00 00 00 00 00 00
-established:     20 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    d5 09 80 a0 20 e0 2d 10 08 60 22 00 00 00 00 08 08 18
-descriptor 2:    00 00 00 fc 00 44 45 4c 4c 20 55 32 34 31 34 48 0a 20
-descriptor 3:    00 00 00 ff 00 39 54 47 34 36 34 41 44 31 39 45 4c 00
-descriptor 4:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-extensions:      00
-checksum:        95
+----------------
 
-EDID version: 1.4
-Manufacturer: DEL Model a0a2 Serial Number --
-Made in week 42 of 2014
-Analog display, Input voltage level: 0.7/0.3 V
-Blank level equals black level
-Sync: 
-Maximum image size: 53 cm x 30 cm
-Gamma is defined in an extension block
-Monochrome or grayscale display
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.0000, 0.0000
-  Green: 0.0000, 0.0000
-  Blue:  0.0000, 0.0000
-  White: 0.0000, 0.0000
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-Standard timings supported:
-Detailed mode: Clock 25.170 MHz, 0 mm x 0 mm
-                640  648  744  800 hborder 8
-                480  482  484  525 vborder 8
-               -hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 31462 Hz
-Monitor name: DELL U2414H
-Serial number: --
-Manufacturer-specified data, tag 0
-Checksum: 0x95 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 41122
+    Serial Number: ...
+    Made in: week 42 of 2014
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
+    Blank level equals black level
+    Maximum image size: 53 cm x 30 cm
+    Gamma is defined in an extension block
+    Monochrome or grayscale display
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.0000, 0.0000
+    Green: 0.0000, 0.0000
+    Blue : 0.0000, 0.0000
+    White: 0.0000, 0.0000
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:   640x480    59.928571 Hz   4:3     31.462 kHz     25.170000 MHz
+                 Hfront    8 Hsync  96 Hback   40 Hpol N Hborder 8
+                 Vfront    2 Vsync   2 Vback   25 Vpol N Vborder 8
+    Display Product Name: 'DELL U2414H'
+    Display Product Serial Number: ...
+    Empty Descriptor
+Checksum: 0x95
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: The use of non-zero borders in a DTD is not recommended.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
+  Display Product Serial Number: ...
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+
+EDID conformity: FAIL

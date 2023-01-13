@@ -1,56 +1,53 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff005198881300000000
-2a1e0104a51d147802cafca4564f9e27
-0e4f5500000001010101010101010101
-010101010101b898b8a0b0d03e703020
-350025c41000001a0000000000000000
-00000000000000000018000000fe0054
-49414e4d4120584d20000000000000ff
-00544c3133394744585030330000005a
+00 ff ff ff ff ff ff 00 51 98 88 13 00 00 00 00
+2a 1e 01 04 a5 1d 14 78 02 ca fc a4 56 4f 9e 27
+0e 4f 55 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b8 98 b8 a0 b0 d0 3e 70 30 20
+35 00 25 c4 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 18 00 00 00 fe 00 54
+49 41 4e 4d 41 20 58 4d 20 00 00 00 00 00 00 ff
+00 54 4c 31 33 39 47 44 58 50 30 33 00 00 00 5a
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   51 98 88 13 00 00 00 00 2a 1e
-version:         01 04
-basic params:    a5 1d 14 78 02
-chroma info:     ca fc a4 56 4f 9e 27 0e 4f 55
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    b8 98 b8 a0 b0 d0 3e 70 30 20 35 00 25 c4 10 00 00 1a
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 18
-descriptor 3:    00 00 00 fe 00 54 49 41 4e 4d 41 20 58 4d 20 00 00 00
-descriptor 4:    00 00 00 ff 00 54 4c 31 33 39 47 44 58 50 30 33 00 00
-extensions:      00
-checksum:        5a
+----------------
 
-EDID version: 1.4
-Manufacturer: TLX Model 1388 Serial Number --
-Made in week 42 of 2020
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 29 cm x 20 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display x,y Chromaticity:
-  Red:   0.6435, 0.3359
-  Green: 0.3105, 0.6191
-  Blue:  0.1552, 0.0576
-  White: 0.3115, 0.3320
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 390.960 MHz, 293 mm x 196 mm
-               3000 3048 3080 3160 hborder 0
-               2000 2003 2008 2062 vborder 0
-               +hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 123721 Hz
-Manufacturer-specified data, tag 0
-ASCII string: TIANMA XM 
-Serial number: --
-Checksum: 0x5a (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-	Missing monitor ranges
-	Detailed block string not properly terminated
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: TLX
+    Model: 5000
+    Made in: week 42 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 20 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6435, 0.3359
+    Green: 0.3105, 0.6191
+    Blue : 0.1552, 0.0576
+    White: 0.3115, 0.3320
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3000x2000   60.000737 Hz   3:2    123.722 kHz    390.960000 MHz (293 mm x 196 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 18 '................'
+    Alphanumeric Data String: 'TIANMA XM '
+    Display Product Serial Number: ...
+Checksum: 0x5a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Display Product Serial Number: ...
+  Missing Display Product Name.
+
+EDID conformity: FAIL

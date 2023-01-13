@@ -1,108 +1,109 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0006b3b425aad00100
-0b1f010380361e782eee91a3544c9926
-0f505421080001010101010101010101
-010101010101023a801871382d40582c
-45001f2e2100001e000000ff0023484c
-41594d78677741425441000000fd0818
-f01e243c010a202020202020000000fc
-00524f47205047323539514e0a20013f
-020338f149101f04130312013f202309
-07018301000068030c001000383c006a
-d85dc4017880000002f0e305c000e200
-6ae6060501605a285a8780a070384d40
-302035001f2e2100001a82e980827038
-8740082035001f2e2100001a00000000
-00000000000000000000000000000000
-00000000000000000000000000000001
+00 ff ff ff ff ff ff 00 06 b3 b4 25 aa d0 01 00
+0b 1f 01 03 80 36 1e 78 2e ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 1f 2e 21 00 00 1e 00 00 00 ff 00 23 48 4c
+41 59 4d 78 67 77 41 42 54 41 00 00 00 fd 08 18
+f0 1e 24 3c 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 52 4f 47 20 50 47 32 35 39 51 4e 0a 20 01 3f
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   06 b3 b4 25 aa d0 01 00 0b 1f
-version:         01 03
-basic params:    80 36 1e 78 2e
-chroma info:     ee 91 a3 54 4c 99 26 0f 50 54
-established:     21 08 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    02 3a 80 18 71 38 2d 40 58 2c 45 00 1f 2e 21 00 00 1e
-descriptor 2:    00 00 00 ff 00 23 48 4c 41 59 4d 78 67 77 41 42 54 41
-descriptor 3:    00 00 00 fd 08 18 f0 1e 24 3c 01 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 52 4f 47 20 50 47 32 35 39 51 4e 0a 20
-extensions:      01
-checksum:        3f
+02 03 38 f1 49 10 1f 04 13 03 12 01 3f 20 23 09
+07 01 83 01 00 00 68 03 0c 00 10 00 38 3c 00 6a
+d8 5d c4 01 78 80 00 00 02 f0 e3 05 c0 00 e2 00
+6a e6 06 05 01 60 5a 28 5a 87 80 a0 70 38 4d 40
+30 20 35 00 1f 2e 21 00 00 1a 82 e9 80 82 70 38
+87 40 08 20 35 00 1f 2e 21 00 00 1a 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01
 
-EDID version: 1.3
-Manufacturer: AUS Model 25b4 Serial Number --
-Made in week 11 of 2021
-Digital display
-Maximum image size: 54 cm x 30 cm
-Gamma: 2.20
-DPMS levels: Off
-RGB color display
-Default (sRGB) color space is primary color space
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1503, 0.0595
-  White: 0.3125, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-Detailed mode: Clock 148.500 MHz, 543 mm x 302 mm
-               1920 2008 2052 2200 hborder 0
-               1080 1084 1089 1125 vborder 0
-               +hsync +vsync 
-               VertFreq: 60 Hz, HorFreq: 67500 Hz
-Serial number: --
-Monitor ranges (bare limits): 24-240Hz V, 30-36kHz H, max dotclock 600MHz
-Monitor name: ROG PG259QN
-Has 1 extension blocks
-Checksum: 0x3f (valid)
+----------------
 
-CTA extension block
-Extension version: 3
-52 bytes of CTA data
-  Video data block
-    VIC  16 1920x1080@60Hz 16:9  HorFreq: 67500 Hz Clock: 148.500 MHz
-    VIC  31 1920x1080@50Hz 16:9  HorFreq: 56250 Hz Clock: 148.500 MHz
-    VIC   4 1280x720@60Hz 16:9  HorFreq: 45000 Hz Clock: 74.250 MHz
-    VIC  19 1280x720@50Hz 16:9  HorFreq: 37500 Hz Clock: 74.250 MHz
-    VIC   3 720x480@60Hz 16:9  HorFreq: 31469 Hz Clock: 27.000 MHz
-    VIC  18 720x576@50Hz 16:9  HorFreq: 31250 Hz Clock: 27.000 MHz
-    VIC   1 640x480@60Hz 4:3  HorFreq: 31469 Hz Clock: 25.175 MHz
-    VIC  63 1920x1080@120Hz 16:9  HorFreq: 135000 Hz Clock: 297.000 MHz
-    VIC  32 1920x1080@24Hz 16:9  HorFreq: 27000 Hz Clock: 74.250 MHz
-  Audio data block
-    Linear PCM, max channels 2
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUS
+    Model: 9652
+    Serial Number: ...
+    Made in: week 11 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 54 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (543 mm x 302 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: ...
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 24-240 Hz V, 30-36 kHz H, max dotclock 600 MHz
+    Display Product Name: 'ROG PG259QN'
+  Extension blocks: 1
+Checksum: 0x3f
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 000c03 (HDMI)
-    Source physical address 1.0.0.0
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
     DC_36bit
     DC_30bit
     DC_Y444
-    Maximum TMDS clock: 300MHz
-  Vendor-specific data block, OUI c45dd8 (HDMI Forum)
+    Maximum TMDS clock: 300 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
     Version: 1
-    Maximum TMDS Character Rate: 600MHz
+    Maximum TMDS Character Rate: 600 MHz
     SCDC Present
-  Extended tag: Colorimetry data block
+    VRRmin: 2 Hz
+    VRRmax: 240 Hz
+  Colorimetry Data Block:
     BT2020YCC
     BT2020RGB
-  Extended tag: Video capability data block
-    YCbCr quantization: No Data (0)
-    RGB quantization: Selectable (via AVI Q) (1)
-    PT scan behaviour: Always Underscanned (2)
-    IT scan behaviour: Always Underscanned (2)
-    CE scan behaviour: Always Underscanned (2)
-  Extended tag: HDR static metadata data block
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
       SMPTE ST2084
@@ -111,24 +112,31 @@ Extension version: 3
     Desired content max luminance: 96 (400.000 cd/m^2)
     Desired content max frame-average luminance: 90 (351.250 cd/m^2)
     Desired content min luminance: 40 (0.098 cd/m^2)
-Underscans PC formats by default
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 346.500 MHz, 543 mm x 302 mm
-               1920 1968 2000 2080 hborder 0
-               1080 1083 1088 1157 vborder 0
-               +hsync -vsync 
-               VertFreq: 143 Hz, HorFreq: 166586 Hz
-Detailed mode: Clock 597.780 MHz, 543 mm x 302 mm
-               1920 1928 1960 2050 hborder 0
-               1080 1083 1088 1215 vborder 0
-               +hsync -vsync 
-               VertFreq: 240 Hz, HorFreq: 291600 Hz
-Checksum: 0x1 (valid)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080  143.981451 Hz  16:9    166.587 kHz    346.500000 MHz (543 mm x 302 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   69 Vpol N
+    DTD 3:  1920x1080  240.000000 Hz  16:9    291.600 kHz    597.780000 MHz (543 mm x 302 mm)
+                 Hfront    8 Hsync  32 Hback   90 Hpol P
+                 Vfront    3 Vsync   5 Vback  127 Vpol N
+Checksum: 0x01
 
-EDID block does not conform at all!
-	Both the serial number and the serial string are set
-	Detailed blocks filled with garbage
-	Range descriptor contains garbage
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Descriptor #3: Monitor descriptor block has byte 4 nonzero (0x08).
+  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 27.000 - 291.600 kHz (Monitor: 30.000 - 36.000 kHz)
+
+EDID conformity: FAIL

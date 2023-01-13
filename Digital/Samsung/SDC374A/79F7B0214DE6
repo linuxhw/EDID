@@ -1,56 +1,53 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff004c834a3700000000
-0018010395221378ea32359557568e29
-1f505400000001010101010101010101
-010101010101623980dc703840403020
-250058c2100000190000000000000000
-00000000000000000019000000fe0053
-414d53554e470a2020202020000000fe
-00313536484c30382d3130310a200006
+00 ff ff ff ff ff ff 00 4c 83 4a 37 00 00 00 00
+00 18 01 03 95 22 13 78 ea 32 35 95 57 56 8e 29
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 62 39 80 dc 70 38 40 40 30 20
+25 00 58 c2 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 19 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe
+00 31 35 36 48 4c 30 38 2d 31 30 31 0a 20 00 06
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   4c 83 4a 37 00 00 00 00 00 18
-version:         01 03
-basic params:    95 22 13 78 ea
-chroma info:     32 35 95 57 56 8e 29 1f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    62 39 80 dc 70 38 40 40 30 20 25 00 58 c2 10 00 00 19
-descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 19
-descriptor 3:    00 00 00 fe 00 53 41 4d 53 55 4e 47 0a 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 31 35 36 48 4c 30 38 2d 31 30 31 0a 20
-extensions:      00
-checksum:        06
+----------------
 
-EDID version: 1.3
-Manufacturer: SDC Model 374a Serial Number --
-Made in year 2014
-Digital display
-DFP 1.x compatible TMDS
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Display x,y Chromaticity:
-  Red:   0.5820, 0.3427
-  Green: 0.3359, 0.5566
-  Blue:  0.1601, 0.1240
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 146.900 MHz, 344 mm x 194 mm
-               1920 1968 2000 2140 hborder 0
-               1080 1082 1087 1144 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 68644 Hz
-Manufacturer-specified data, tag 0
-ASCII string: SAMSUNG
-ASCII string: 156HL08-101
-Checksum: 0x6 (valid)
-EDID block does NOT conform to EDID 1.3!
-	Digital display field contains garbage: 14
-	Missing name descriptor
-	Missing monitor ranges
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 14154
+    Made in: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5820, 0.3427
+    Green: 0.3359, 0.5566
+    Blue : 0.1601, 0.1240
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.004248 Hz  16:9     68.645 kHz    146.900000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  140 Hpol N
+                 Vfront    2 Vsync   5 Vback   57 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 19 '................'
+    Alphanumeric Data String: 'SAMSUNG'
+    Alphanumeric Data String: '156HL08-101'
+Checksum: 0x06
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x14.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

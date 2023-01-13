@@ -1,99 +1,100 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff001e6d69776415f7ff
-ff1f0104b55123783b6621af4f42ac26
-0f505421080001010101010101010101
-010101010101c87d70a0d0a033503020
-b50829623100001a000000ff00234772
-4d594d78677741416b58000000fd0001
-b4ffff66010a202020202020000000fc
-0033344750393530470a2020202002c8
-020320f12309070183010000654b0400
-0101e305c000e2006ae606050178601f
-4ed470a0d0a046503020e50c29623100
-001a0000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000050
-70137903000f000aa4140e0e07012045
-000002010d31f56a4f2294ac5e920f01
-4554030150520101046f0d9f002f801f
-009f0554004c000400663801846f0d9f
-002f801f009f0566005e000400cd5d01
-046f0d9f002f801f009f0572006a0004
-005c8d01046f0d9f002f801f009f0581
-0079000400000000000000000000c390
+00 ff ff ff ff ff ff 00 1e 6d 69 77 64 15 f7 ff
+ff 1f 01 04 b5 51 23 78 3b 66 21 af 4f 42 ac 26
+0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c8 7d 70 a0 d0 a0 33 50 30 20
+b5 08 29 62 31 00 00 1a 00 00 00 ff 00 23 47 72
+4d 59 4d 78 67 77 41 41 6b 58 00 00 00 fd 00 01
+b4 ff ff 66 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 33 34 47 50 39 35 30 47 0a 20 20 20 20 02 c8
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   1e 6d 69 77 64 15 f7 ff ff 1f
-version:         01 04
-basic params:    b5 51 23 78 3b
-chroma info:     66 21 af 4f 42 ac 26 0f 50 54
-established:     21 08 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    c8 7d 70 a0 d0 a0 33 50 30 20 b5 08 29 62 31 00 00 1a
-descriptor 2:    00 00 00 ff 00 23 47 72 4d 59 4d 78 67 77 41 41 6b 58
-descriptor 3:    00 00 00 fd 00 01 b4 ff ff 66 01 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fc 00 33 34 47 50 39 35 30 47 0a 20 20 20 20
-extensions:      02
-checksum:        c8
+02 03 20 f1 23 09 07 01 83 01 00 00 65 4b 04 00
+01 01 e3 05 c0 00 e2 00 6a e6 06 05 01 78 60 1f
+4e d4 70 a0 d0 a0 46 50 30 20 e5 0c 29 62 31 00
+00 1a 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50
 
-EDID version: 1.4
-Manufacturer: GSM Model 7769 Serial Number --
-Model year 2021
-Digital display
-10 bits per primary color channel
-DisplayPort interface
-Maximum image size: 81 cm x 35 cm
-Gamma: 2.20
-DPMS levels: Off
-Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6845, 0.3105
-  Green: 0.2587, 0.6738
-  Blue:  0.1484, 0.0605
-  White: 0.3125, 0.3291
-Established timings supported:
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  800x600@60Hz 4:3 HorFreq: 37900 Hz Clock: 40.000 MHz
-  1024x768@60Hz 4:3 HorFreq: 48400 Hz Clock: 65.000 MHz
-Standard timings supported:
-Detailed mode: Clock 322.000 MHz, 809 mm x 354 mm
-               3440 3488 3520 3600 hborder 0
-               1440 1483 1488 1491 vborder 0
-               +hsync -vsync 
-               VertFreq: 59 Hz, HorFreq: 89444 Hz
-Serial number: --
-Monitor ranges (bare limits): 1-180Hz V, 255-255kHz H, max dotclock 1020MHz
-Monitor name: 34GP950G
-Has 2 extension blocks
-Checksum: 0xc8 (valid)
+70 13 79 03 00 0f 00 0a a4 14 0e 0e 07 01 20 45
+00 00 02 01 0d 31 f5 6a 4f 22 94 ac 5e 92 0f 01
+45 54 03 01 50 52 01 01 04 6f 0d 9f 00 2f 80 1f
+00 9f 05 54 00 4c 00 04 00 66 38 01 84 6f 0d 9f
+00 2f 80 1f 00 9f 05 66 00 5e 00 04 00 cd 5d 01
+04 6f 0d 9f 00 2f 80 1f 00 9f 05 72 00 6a 00 04
+00 5c 8d 01 04 6f 0d 9f 00 2f 80 1f 00 9f 05 81
+00 79 00 04 00 00 00 00 00 00 00 00 00 00 c3 90
 
-CTA extension block
-Extension version: 3
-28 bytes of CTA data
-  Audio data block
-    Linear PCM, max channels 2
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 30569
+    Serial Number: ...
+    Model year: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 81 cm x 35 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6845, 0.3105
+    Green: 0.2587, 0.6738
+    Blue : 0.1484, 0.0605
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3440x1440   59.989567 Hz  43:18    89.444 kHz    322.000000 MHz (809 mm x 354 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront   43 Vsync   5 Vback    3 Vpol N
+    Display Product Serial Number: ...
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 1-180 Hz V, 255-255 kHz H, max dotclock 1020 MHz
+    Display Product Name: '34GP950G'
+  Extension blocks: 2
+Checksum: 0xc8
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 16
-  Speaker allocation data block
-    Speaker map:
-      FL/FR - Front Left/Right
-  Vendor-specific data block, OUI 00044b
-  Extended tag: Colorimetry data block
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (NVIDIA), OUI 00-04-4B:
+    01 01                                           '..'
+  Colorimetry Data Block:
     BT2020YCC
     BT2020RGB
-  Extended tag: Video capability data block
-    YCbCr quantization: No Data (0)
-    RGB quantization: Selectable (via AVI Q) (1)
-    PT scan behaviour: Always Underscanned (2)
-    IT scan behaviour: Always Underscanned (2)
-    CE scan behaviour: Always Underscanned (2)
-  Extended tag: HDR static metadata data block
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
       SMPTE ST2084
@@ -102,51 +103,66 @@ Extension version: 3
     Desired content max luminance: 120 (672.717 cd/m^2)
     Desired content max frame-average luminance: 96 (400.000 cd/m^2)
     Desired content min luminance: 31 (0.099 cd/m^2)
-Underscans PC formats by default
-Basic audio support
-Supports YCbCr 4:4:4
-Supports YCbCr 4:2:2
-1 native detailed modes
-Detailed mode: Clock 543.500 MHz, 809 mm x 354 mm
-               3440 3488 3520 3600 hborder 0
-               1440 1502 1507 1510 vborder 0
-               +hsync -vsync 
-               VertFreq: 99 Hz, HorFreq: 150972 Hz
-Checksum: 0x50 (valid)
+  Detailed Timing Descriptors:
+    DTD 2:  3440x1440   99.981604 Hz  43:18   150.972 kHz    543.500000 MHz (809 mm x 354 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront   62 Vsync   5 Vback    3 Vpol N
+Checksum: 0x50
 
+----------------
 
-DisplayID extension block
-Extension version: 19
-Length 121, version 19, extension count 0
-Checksum: 0xc3 (valid)
-Display interface
-Color characteristics block
-Type 1 detailed timing: aspect: 16:9,  
-Detailed mode: Clock 658.740 MHz, 0 mm x 0 mm
-               3439 3486 3517 3598
-               1439 1515 1519 1523
-               +hsync -vsync
-Type 1 detailed timing: aspect: 16:9, Preferred  
-Detailed mode: Clock 799.740 MHz, 0 mm x 0 mm
-               3439 3486 3517 3598
-               1439 1533 1537 1541
-               +hsync -vsync
-Type 1 detailed timing: aspect: 16:9,  
-Detailed mode: Clock 895.490 MHz, 0 mm x 0 mm
-               3439 3486 3517 3598
-               1439 1545 1549 1553
-               +hsync -vsync
-Type 1 detailed timing: aspect: 16:9,  
-Detailed mode: Clock 1017.240 MHz, 0 mm x 0 mm
-               3439 3486 3517 3598
-               1439 1560 1564 1568
-               +hsync -vsync
+Block 2, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Standalone display device
+  Display Interface Data Block:
+    Interface Type: DisplayPort
+    Number of Links: 4
+    Interface Standard Version: 1.4
+    Supported bpc for RGB encoding: 8, 10, 12
+    Supported bpc for YCbCr 4:4:4 encoding: 8, 10, 12
+    Supported bpc for YCbCr 4:2:2 encoding: 8, 10, 12
+    Supported Content Protection: HDCP 2.0
+    Spread Spectrum: Down Spread 0.5%
+  Color Characteristics Data Block:
+    Uses spatial color
+    Uses 1931 CIE (x, y) coordinates
+    Primary #0: (0.6848, 0.3101)
+    Primary #1: (0.2583, 0.6741)
+    Primary #2: (0.1479, 0.0608)
+    White point #0: (0.3127, 0.3291)
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  3440x1440  119.990893 Hz  16:9    182.986 kHz    658.750000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront   77 Vsync   5 Vback    3 Vpol N
+    DTD:  3440x1440  143.974581 Hz  16:9    222.153 kHz    799.750000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront   95 Vsync   5 Vback    3 Vpol N
+    DTD:  3440x1440  159.967846 Hz  16:9    248.750 kHz    895.500000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront  107 Vsync   5 Vback    3 Vpol N
+    DTD:  3440x1440  179.980538 Hz  16:9    282.569 kHz   1017.250000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront  122 Vsync   5 Vback    3 Vpol N
+  Checksum: 0xc3
+Checksum: 0x90
 
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 59 - 99 Hz
-  Horizontal Freq: 31469 - 150972 Hz
-  Maximum Clock: 543.500 MHz
-EDID block does not conform at all!
-	Both the serial number and the serial string are set
+----------------
 
+Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 282.569 kHz (Monitor: 255.000 - 255.000 kHz)
+
+Failures:
+
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+
+EDID conformity: FAIL

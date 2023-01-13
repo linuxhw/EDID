@@ -1,82 +1,102 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff000e6f081600000000
-001f0104a522167803ee91a3544c9926
-0f505400000001010101010101010101
-010101010101ffd700a0a0405e603020
-360058d710000018ff6b00a0a0405e60
-3020360058d710000018000000fd003c
-78cccc38010a20202020202000000003
-000c33ff103cc8171533c8000000016c
-7020790000250109ed3704da6f083c78
-80810013721a000003013c7800005958
-59587800000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000d990
+00 ff ff ff ff ff ff 00 0e 6f 08 16 00 00 00 00
+00 1f 01 04 a5 22 16 78 03 ee 91 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ff d7 00 a0 a0 40 5e 60 30 20
+36 00 58 d7 10 00 00 18 ff 6b 00 a0 a0 40 5e 60
+30 20 36 00 58 d7 10 00 00 18 00 00 00 fd 00 3c
+78 cc cc 38 01 0a 20 20 20 20 20 20 00 00 00 03
+00 0c 33 ff 10 3c c8 17 15 33 c8 00 00 00 01 6c
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   0e 6f 08 16 00 00 00 00 00 1f
-version:         01 04
-basic params:    a5 22 16 78 03
-chroma info:     ee 91 a3 54 4c 99 26 0f 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    ff d7 00 a0 a0 40 5e 60 30 20 36 00 58 d7 10 00 00 18
-descriptor 2:    ff 6b 00 a0 a0 40 5e 60 30 20 36 00 58 d7 10 00 00 18
-descriptor 3:    00 00 00 fd 00 3c 78 cc cc 38 01 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 03 00 0c 33 ff 10 3c c8 17 15 33 c8 00 00 00
-extensions:      01
-checksum:        6c
+70 20 79 00 00 25 01 09 ed 37 04 da 6f 08 3c 78
+80 81 00 13 72 1a 00 00 03 01 3c 78 00 00 59 58
+59 58 78 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 d9 90
 
-EDID version: 1.4
-Manufacturer: CSO Model 1608 Serial Number --
-Made in year 2021
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 22 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.6396, 0.3300
-  Green: 0.2998, 0.5996
-  Blue:  0.1503, 0.0595
-  White: 0.3125, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 552.950 MHz, 344 mm x 215 mm
-               2560 2608 2640 2720 hborder 0
-               1600 1603 1609 1694 vborder 0
-               -hsync -vsync 
-               VertFreq: 120 Hz, HorFreq: 203290 Hz
-Detailed mode: Clock 276.470 MHz, 344 mm x 215 mm
-               2560 2608 2640 2720 hborder 0
-               1600 1603 1609 1694 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 101643 Hz
-Monitor ranges (bare limits): 60-120Hz V, 204-204kHz H, max dotclock 560MHz
-Manufacturer-specified data, tag 3
-Has 1 extension blocks
-Checksum: 0x6c (valid)
+----------------
 
-DisplayID extension block
-Extension version: 32
-Length 121, version 32, extension count 0
-Checksum: 0xd9 (valid)
-Unknown displayid data block 0x25
-Unknown displayid data block 0x81
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CSO
+    Model: 5640
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600  120.006164 Hz   8:5    203.290 kHz    552.950000 MHz (344 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   85 Vpol N
+    DTD 2:  2560x1600   60.001997 Hz   8:5    101.643 kHz    276.470000 MHz (344 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   85 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 60-120 Hz V, 204-204 kHz H, max dotclock 560 MHz
+    Manufacturer-Specified Display Descriptor (0x03): 00 03 00 0c 33 ff 10 3c c8 17 15 33 c8 00 00 00 '....3..<...3....'
+  Extension blocks: 1
+Checksum: 0x6c
 
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 120 Hz
-  Horizontal Freq: 101643 - 203290 Hz
-  Maximum Clock: 552.950 MHz
-EDID block does not conform at all!
-	Has -1811939328 nonconformant extension block(s)
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: Same primary use case as the base section
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 276462 kHz
+    Maximum Pixel Clock: 552923 kHz
+    Minimum Vertical Refresh Rate: 60 Hz
+    Maximum Vertical Refresh Rate: 120 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 120 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 89 (343.724 cd/m^2)
+    Minimum luminance: 88 (0.409 cd/m^2)
+    Unknown: 0x59 0x58
+  Checksum: 0xd9
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 101.643 - 203.290 kHz (Monitor: 204.000 - 204.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
+  Missing Display Product Name.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

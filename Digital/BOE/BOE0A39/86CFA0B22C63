@@ -1,59 +1,53 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0009e5390a00000000
-001f0104a5221378036c35945d58932a
-21505400000001010101010101010101
-010101010101043a803671381e403020
-360058c210000018000000fd00283c43
-430f010a202020202020000000fe0042
-4f452043510a202020202020000000fe
-004e5431353646484d2d5453300a00e5
+00 ff ff ff ff ff ff 00 09 e5 39 0a 00 00 00 00
+00 1f 01 04 a5 22 13 78 03 6c 35 94 5d 58 93 2a
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 04 3a 80 36 71 38 1e 40 30 20
+36 00 58 c2 10 00 00 18 00 00 00 fd 00 28 3c 43
+43 0f 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 54 31 35 36 46 48 4d 2d 54 53 30 0a 00 e5
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   09 e5 39 0a 00 00 00 00 00 1f
-version:         01 04
-basic params:    a5 22 13 78 03
-chroma info:     6c 35 94 5d 58 93 2a 21 50 54
-established:     00 00 00
-standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-descriptor 1:    04 3a 80 36 71 38 1e 40 30 20 36 00 58 c2 10 00 00 18
-descriptor 2:    00 00 00 fd 00 28 3c 43 43 0f 01 0a 20 20 20 20 20 20
-descriptor 3:    00 00 00 fe 00 42 4f 45 20 43 51 0a 20 20 20 20 20 20
-descriptor 4:    00 00 00 fe 00 4e 54 31 35 36 46 48 4d 2d 54 53 30 0a
-extensions:      00
-checksum:        e5
+----------------
 
-EDID version: 1.4
-Manufacturer: BOE Model a39 Serial Number --
-Made in year 2021
-Digital display
-8 bits per primary color channel
-DisplayPort interface
-Maximum image size: 34 cm x 19 cm
-Gamma: 2.20
-Supported color formats: RGB 4:4:4
-First detailed timing includes the native pixel format and preferred refresh rate
-Display is continuous frequency
-Display x,y Chromaticity:
-  Red:   0.5791, 0.3652
-  Green: 0.3466, 0.5742
-  Blue:  0.1640, 0.1318
-  White: 0.3134, 0.3291
-Established timings supported:
-Standard timings supported:
-Detailed mode: Clock 148.520 MHz, 344 mm x 194 mm
-               1920 1968 2000 2230 hborder 0
-               1080 1083 1089 1110 vborder 0
-               -hsync -vsync 
-               VertFreq: 60 Hz, HorFreq: 66600 Hz
-Monitor ranges (bare limits): 40-60Hz V, 67-67kHz H, max dotclock 150MHz
-ASCII string: BOE CQ
-ASCII string: NT156FHM-TS0
-Checksum: 0xe5 (valid)
-EDID block does NOT conform to EDID 1.4!
-	Missing name descriptor
-Warning: One or more of the timings is out of range of the Monitor Ranges:
-  Vertical Freq: 60 - 60 Hz
-  Horizontal Freq: 66600 - 66600 Hz
-  Maximum Clock: 148.520 MHz
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2617
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5791, 0.3652
+    Green: 0.3466, 0.5742
+    Blue : 0.1640, 0.1318
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000808 Hz  16:9     66.601 kHz    148.520000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  230 Hpol N
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 67-67 kHz H, max dotclock 150 MHz
+    Alphanumeric Data String: 'BOE CQ'
+    Alphanumeric Data String: 'NT156FHM-TS0'
+Checksum: 0xe5
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL
