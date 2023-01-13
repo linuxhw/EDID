@@ -15,6 +15,7 @@ model and ID.
 | AMW              | AMW0000 | X1900DS          | 1280x1024 | 18.8 |      | [5C714C725DFC](<Analog/AMW/AMW0000/5C714C725DFC>) |
 | AMW              | AMW1701 | M177T            | 1280x1024 | 17.1 |      | [D1237AD33C23](<Analog/AMW/AMW1701/D1237AD33C23>) |
 | AMW              | AMW1702 | M177TD           | 1280x1024 | 17.1 |      | [D95921690922](<Analog/AMW/AMW1702/D95921690922>) |
+| AMW              | AMW73D1 |                  | 1280x1024 | 18.8 |      | [4B206D5B7D4A](<Analog/AMW/AMW73D1/4B206D5B7D4A>) |
 | AOC              | AOC0000 | LCD              | 1920x1080 | 41.9 | 2013 | [2347EBEBA18F](<Analog/AOC/AOC0000/2347EBEBA18F>) |
 | AOC              | AOC0000 | LCD              | 1360x768  | 30.9 | 2013 | [695AD66D8809](<Analog/AOC/AOC0000/695AD66D8809>) |
 | AOC              | AOC0001 | 2460W            | 1920x1080 | 23.4 | 2013 | [25E45A342097](<Analog/AOC/AOC0001/25E45A342097>) |
@@ -102,7 +103,7 @@ model and ID.
 | AOC              | AOC1943 | 1943W            | 1366x768  | 18.5 | 2010 | [2141EC2E5E34](<Analog/AOC/AOC1943/2141EC2E5E34>) |
 | AOC              | AOC1943 | 1943W            | 1366x768  | 18.5 |      | [B979270573FA](<Analog/AOC/AOC1943/B979270573FA>) |
 | AOC              | AOC1950 | 1950W            | 1366x768  | 18.5 | 2014 | [71B4405FDAED](<Analog/AOC/AOC1950/71B4405FDAED>) |
-| AOC              | AOC1950 | 1950W            | 1366x768  | 18.5 | 2013 | [25467320908B](<Analog/AOC/AOC1950/25467320908B>) |
+| AOC              | AOC1950 | 1950w            | 1366x768  | 18.5 | 2013 | [06F841E2D83B](<Analog/AOC/AOC1950/06F841E2D83B>) |
 | AOC              | AOC1950 | 1950W            | 1366x768  | 18.5 | 2011 | [360442A73DEF](<Analog/AOC/AOC1950/360442A73DEF>) |
 | AOC              | AOC1950 | 1950W            | 1366x768  | 18.5 |      | [1F9E2485A6A8](<Analog/AOC/AOC1950/1F9E2485A6A8>) |
 | AOC              | AOC1954 | T954we           | 1360x768  | 18.5 | 2011 | [EFBD81101468](<Analog/AOC/AOC1954/EFBD81101468>) |
@@ -122,6 +123,7 @@ model and ID.
 | AOC              | AOC1970 | 1970W            | 1366x768  | 18.5 | 2013 | [2A4CAD41CACF](<Analog/AOC/AOC1970/2A4CAD41CACF>) |
 | AOC              | AOC1970 | 1970W            | 1366x768  | 18.5 |      | [2A2F7298F5DF](<Analog/AOC/AOC1970/2A2F7298F5DF>) |
 | AOC              | AOC1975 | 1975W            | 1366x768  | 18.5 | 2017 | [3C1503ED3F08](<Analog/AOC/AOC1975/3C1503ED3F08>) |
+| AOC              | AOC1980 | 912Sw            | 1440x900  | 18.6 | 2007 | [25692BBD6E2C](<Analog/AOC/AOC1980/25692BBD6E2C>) |
 | AOC              | AOC1980 | 912Sw            | 1440x900  | 19.1 | 2007 | [F31727B59E5E](<Analog/AOC/AOC1980/F31727B59E5E>) |
 | AOC              | AOC1980 | TFT1980          | 1280x1024 | 19.1 | 2006 | [505F9F33A955](<Analog/AOC/AOC1980/505F9F33A955>) |
 | AOC              | AOC1982 | 198PW            | 1440x900  | 18.6 | 2008 | [E9468C012EB6](<Analog/AOC/AOC1982/E9468C012EB6>) |
@@ -135,6 +137,7 @@ model and ID.
 | AOC              | AOC2023 | 2023W            | 1600x900  | 19.4 | 2015 | [2FEBB7EEEEF3](<Analog/AOC/AOC2023/2FEBB7EEEEF3>) |
 | AOC              | AOC2023 | 2023W            | 1600x900  | 19.4 | 2013 | [2750FEFEABFA](<Analog/AOC/AOC2023/2750FEFEABFA>) |
 | AOC              | AOC2030 | 203Sw            | 1680x1050 | 20.0 | 2008 | [42CC3160C922](<Analog/AOC/AOC2030/42CC3160C922>) |
+| AOC              | AOC2036 | 2036             | 1600x900  | 19.9 | 2011 | [4D9AC22911C7](<Analog/AOC/AOC2036/4D9AC22911C7>) |
 | AOC              | AOC2036 | 2036             | 1600x900  | 19.9 | 2010 | [2520C17A2501](<Analog/AOC/AOC2036/2520C17A2501>) |
 | AOC              | AOC2036 | 2036             | 1600x900  | 19.9 | 2009 | [61D9329BFDB7](<Analog/AOC/AOC2036/61D9329BFDB7>) |
 | AOC              | AOC2040 | 2040             | 1600x900  | 19.9 | 2011 | [3D722959E134](<Analog/AOC/AOC2040/3D722959E134>) |
@@ -182,11 +185,14 @@ model and ID.
 | AOC              | AOC2200 | F22              | 1920x1080 | 21.1 |      | [29455675E566](<Analog/AOC/AOC2200/29455675E566>) |
 | AOC              | AOC2200 | V22              | 1680x1050 | 24.0 |      | [D72DB0B3EF57](<Analog/AOC/AOC2200/D72DB0B3EF57>) |
 | AOC              | AOC2201 | 22B1W            | 1920x1080 | 21.7 | 2021 | [5A2674F9209E](<Analog/AOC/AOC2201/5A2674F9209E>) |
+| AOC              | AOC2201 | 22P1W            | 1920x1080 | 21.7 | 2019 | [72A8E70A1BB4](<Analog/AOC/AOC2201/72A8E70A1BB4>) |
+| AOC              | AOC2201 | 22P1W            | 1920x1080 | 21.7 | 2018 | [2CA6759403B8](<Analog/AOC/AOC2201/2CA6759403B8>) |
 | AOC              | AOC2202 | 22B2W            | 1920x1080 | 21.7 |      | [F5A72E968BB3](<Analog/AOC/AOC2202/F5A72E968BB3>) |
 | AOC              | AOC2216 | 2216             | 1680x1050 | 22.0 | 2008 | [31D7C51020BF](<Analog/AOC/AOC2216/31D7C51020BF>) |
 | AOC              | AOC2217 | 2217             | 1680x1050 | 22.0 | 2008 | [1A7C6EB831FB](<Analog/AOC/AOC2217/1A7C6EB831FB>) |
 | AOC              | AOC2217 | 2217             | 1680x1050 | 22.0 | 2007 | [E61329E5084E](<Analog/AOC/AOC2217/E61329E5084E>) |
 | AOC              | AOC2218 | LE22H138         | 1920x1080 | 21.7 | 2011 | [D400A83D9622](<Analog/AOC/AOC2218/D400A83D9622>) |
+| AOC              | AOC2218 | 2218             | 1680x1050 | 24.0 | 2008 | [D67FC8B879F7](<Analog/AOC/AOC2218/D67FC8B879F7>) |
 | AOC              | AOC2219 | 2219             | 1680x1050 | 22.0 | 2011 | [ABD44492497F](<Analog/AOC/AOC2219/ABD44492497F>) |
 | AOC              | AOC2219 | 2219             | 1680x1050 | 22.0 | 2009 | [8CBF4C6F9349](<Analog/AOC/AOC2219/8CBF4C6F9349>) |
 | AOC              | AOC2220 | 2220W            | 1920x1080 | 21.7 | 2015 | [500779960DD9](<Analog/AOC/AOC2220/500779960DD9>) |
@@ -210,12 +216,13 @@ model and ID.
 | AOC              | AOC2250 | 2250W            | 1920x1080 | 21.7 | 2015 | [0E9138CD897C](<Analog/AOC/AOC2250/0E9138CD897C>) |
 | AOC              | AOC2250 | 2250W            | 1920x1080 | 21.7 | 2014 | [27B4C2EA86EE](<Analog/AOC/AOC2250/27B4C2EA86EE>) |
 | AOC              | AOC2250 | 2250W            | 1920x1080 | 21.7 | 2013 | [42FD0CFBFF3B](<Analog/AOC/AOC2250/42FD0CFBFF3B>) |
-| AOC              | AOC2250 | 2250W            | 1920x1080 | 21.7 | 2012 | [72837FC8F6A0](<Analog/AOC/AOC2250/72837FC8F6A0>) |
+| AOC              | AOC2250 | 2250W            | 1920x1080 | 21.7 | 2012 | [68D2F4E415FD](<Analog/AOC/AOC2250/68D2F4E415FD>) |
 | AOC              | AOC2250 | 2250W            | 1920x1080 | 21.7 | 2011 | [22FC2E986381](<Analog/AOC/AOC2250/22FC2E986381>) |
 | AOC              | AOC2250 | 2250W            | 1920x1080 | 21.7 |      | [3BEAE96BDD7F](<Analog/AOC/AOC2250/3BEAE96BDD7F>) |
 | AOC              | AOC2251 | 2251w            | 1920x1080 | 21.7 | 2013 | [8EB16725C6F6](<Analog/AOC/AOC2251/8EB16725C6F6>) |
 | AOC              | AOC2251 | 2251w            | 1920x1080 | 21.7 | 2011 | [3515CFA537FA](<Analog/AOC/AOC2251/3515CFA537FA>) |
 | AOC              | AOC2252 | 2252W            | 1920x1080 | 21.7 | 2015 | [252BCE085C40](<Analog/AOC/AOC2252/252BCE085C40>) |
+| AOC              | AOC2252 | 2252W            | 1920x1080 | 21.7 | 2013 | [5BB100457C4C](<Analog/AOC/AOC2252/5BB100457C4C>) |
 | AOC              | AOC2252 | 2252W            | 1920x1080 | 21.7 | 2011 | [F9CE84CDBC51](<Analog/AOC/AOC2252/F9CE84CDBC51>) |
 | AOC              | AOC2252 | 2252W            | 1920x1080 | 21.7 |      | [B46610A53871](<Analog/AOC/AOC2252/B46610A53871>) |
 | AOC              | AOC2255 | T2255we          | 1920x1080 | 21.7 | 2011 | [7CCFE0DB47EE](<Analog/AOC/AOC2255/7CCFE0DB47EE>) |
@@ -226,6 +233,7 @@ model and ID.
 | AOC              | AOC2260 | 2260             | 1680x1050 | 22.0 | 2014 | [79C242D24B63](<Analog/AOC/AOC2260/79C242D24B63>) |
 | AOC              | AOC2260 | 2260W            | 1920x1080 | 21.7 | 2012 | [7749824C0203](<Analog/AOC/AOC2260/7749824C0203>) |
 | AOC              | AOC2260 | 2260W            | 1920x1080 | 21.7 |      | [D62D04E3657F](<Analog/AOC/AOC2260/D62D04E3657F>) |
+| AOC              | AOC2262 | 2262w            | 1920x1080 | 21.7 | 2013 | [EAD719F11509](<Analog/AOC/AOC2262/EAD719F11509>) |
 | AOC              | AOC2262 | 2262w            | 1920x1080 | 21.7 | 2012 | [499EEE0751E8](<Analog/AOC/AOC2262/499EEE0751E8>) |
 | AOC              | AOC2267 | 2267W            | 1920x1080 | 21.7 | 2016 | [8254207F450E](<Analog/AOC/AOC2267/8254207F450E>) |
 | AOC              | AOC2267 | 2267W            | 1920x1080 | 21.7 | 2015 | [A4608796018C](<Analog/AOC/AOC2267/A4608796018C>) |
@@ -237,6 +245,7 @@ model and ID.
 | AOC              | AOC2269 | 2269WM           | 1920x1080 | 21.7 | 2014 | [C37284FF317F](<Analog/AOC/AOC2269/C37284FF317F>) |
 | AOC              | AOC2269 | 2269W            | 1920x1080 | 21.7 | 2013 | [1335FDAF2D4E](<Analog/AOC/AOC2269/1335FDAF2D4E>) |
 | AOC              | AOC2269 | 2269W            | 1920x1080 | 21.7 |      | [84CA7CD8DB58](<Analog/AOC/AOC2269/84CA7CD8DB58>) |
+| AOC              | AOC2270 | 2270W            | 1920x1080 | 21.7 | 2021 | [9C4EEEA51D10](<Analog/AOC/AOC2270/9C4EEEA51D10>) |
 | AOC              | AOC2270 | 2270W            | 1920x1080 | 21.7 | 2020 | [1327873FDB28](<Analog/AOC/AOC2270/1327873FDB28>) |
 | AOC              | AOC2270 | 2270W            | 1920x1080 | 21.7 | 2019 | [9F374FC30465](<Analog/AOC/AOC2270/9F374FC30465>) |
 | AOC              | AOC2270 | 2270W            | 1920x1080 | 21.7 | 2018 | [02A9058E7A8B](<Analog/AOC/AOC2270/02A9058E7A8B>) |
@@ -251,8 +260,9 @@ model and ID.
 | AOC              | AOC2276 | 2276WM           | 1920x1080 | 21.7 | 2016 | [AB2D07B17952](<Analog/AOC/AOC2276/AB2D07B17952>) |
 | AOC              | AOC2276 | 2276W            | 1920x1080 | 21.7 | 2014 | [BC6B958132A6](<Analog/AOC/AOC2276/BC6B958132A6>) |
 | AOC              | AOC2279 | 2279WH           | 1920x1080 | 21.7 | 2018 | [2571D8A53754](<Analog/AOC/AOC2279/2571D8A53754>) |
+| AOC              | AOC2279 | 2279WH           | 1920x1080 | 21.7 | 2017 | [DD921B1076D2](<Analog/AOC/AOC2279/DD921B1076D2>) |
 | AOC              | AOC2280 | 2280W            | 1920x1080 | 21.7 | 2018 | [864F3A1DA4B0](<Analog/AOC/AOC2280/864F3A1DA4B0>) |
-| AOC              | AOC2280 | 2280W            | 1920x1080 | 21.7 | 2017 | [19E453D12242](<Analog/AOC/AOC2280/19E453D12242>) |
+| AOC              | AOC2280 | 2280W            | 1920x1080 | 21.7 | 2017 | [18FB47E1595F](<Analog/AOC/AOC2280/18FB47E1595F>) |
 | AOC              | AOC2280 | 2280W            | 1920x1080 | 21.7 | 2016 | [0A05A6A0BA14](<Analog/AOC/AOC2280/0A05A6A0BA14>) |
 | AOC              | AOC2301 | 23E1WX           | 1920x1200 | 22.6 | 2021 | [3BA306BCFFC9](<Analog/AOC/AOC2301/3BA306BCFFC9>) |
 | AOC              | AOC2307 | LE23H037         | 1920x1080 | 23.1 | 2010 | [99A56E5E4D8B](<Analog/AOC/AOC2307/99A56E5E4D8B>) |
@@ -306,6 +316,7 @@ model and ID.
 | AOC              | AOC2440 | 2440             | 1920x1080 | 24.0 | 2011 | [1C1779F0EFDF](<Analog/AOC/AOC2440/1C1779F0EFDF>) |
 | AOC              | AOC2442 | T2442e           | 1920x1080 | 21.7 | 2010 | [7459D1BD7E76](<Analog/AOC/AOC2442/7459D1BD7E76>) |
 | AOC              | AOC2450 | 2450W            | 1920x1080 | 23.4 | 2013 | [203A59C3E791](<Analog/AOC/AOC2450/203A59C3E791>) |
+| AOC              | AOC2450 | 2450W            | 1920x1080 | 23.4 | 2012 | [F5170D895BC3](<Analog/AOC/AOC2450/F5170D895BC3>) |
 | AOC              | AOC2450 | 2450W            | 1920x1080 | 23.4 | 2011 | [2948E854AB24](<Analog/AOC/AOC2450/2948E854AB24>) |
 | AOC              | AOC2460 | 2460G4           | 1920x1080 | 24.0 | 2017 | [15486F253433](<Analog/AOC/AOC2460/15486F253433>) |
 | AOC              | AOC2460 | 2460G5           | 1920x1080 | 24.0 | 2016 | [A2985187E293](<Analog/AOC/AOC2460/A2985187E293>) |
@@ -320,7 +331,7 @@ model and ID.
 | AOC              | AOC246A | 2460G5           | 1920x1080 | 24.0 | 2019 | [2C51F619294C](<Analog/AOC/AOC246A/2C51F619294C>) |
 | AOC              | AOC246A | 2460             | 1920x1080 | 24.0 | 2018 | [2350649201F0](<Analog/AOC/AOC246A/2350649201F0>) |
 | AOC              | AOC2470 | 2470W            | 1920x1080 | 23.4 | 2021 | [247B6B060235](<Analog/AOC/AOC2470/247B6B060235>) |
-| AOC              | AOC2470 | 2470W            | 1920x1080 | 23.4 | 2019 | [8040198B84B1](<Analog/AOC/AOC2470/8040198B84B1>) |
+| AOC              | AOC2470 | 2470W            | 1920x1080 | 23.4 | 2019 | [29AF2C107C3D](<Analog/AOC/AOC2470/29AF2C107C3D>) |
 | AOC              | AOC2470 | 2470W            | 1920x1080 | 23.4 | 2018 | [24992645803C](<Analog/AOC/AOC2470/24992645803C>) |
 | AOC              | AOC2470 | 2470W            | 1920x1080 | 23.4 | 2017 | [0241D1F2F9AD](<Analog/AOC/AOC2470/0241D1F2F9AD>) |
 | AOC              | AOC2470 | 2470W            | 1920x1080 | 23.4 | 2016 | [13EC6F7B4E4E](<Analog/AOC/AOC2470/13EC6F7B4E4E>) |
@@ -359,6 +370,7 @@ model and ID.
 | AOC              | AOC2770 | 2770M            | 1920x1080 | 27.2 | 2015 | [5DA014F674DD](<Analog/AOC/AOC2770/5DA014F674DD>) |
 | AOC              | AOC2770 | 2770             | 1920x1080 | 27.2 | 2014 | [1153F7736B6F](<Analog/AOC/AOC2770/1153F7736B6F>) |
 | AOC              | AOC2777 | U2777B           | 1920x1080 | 27.2 | 2017 | [701B8033A7A9](<Analog/AOC/AOC2777/701B8033A7A9>) |
+| AOC              | AOC2778 | 2778G5           | 1920x1080 | 27.2 | 2017 | [82445A7F74E8](<Analog/AOC/AOC2778/82445A7F74E8>) |
 | AOC              | AOC2778 | 2778X            | 1920x1080 | 27.2 | 2016 | [69951B416A81](<Analog/AOC/AOC2778/69951B416A81>) |
 | AOC              | AOC2778 | 2778G5           | 1920x1080 | 27.2 |      | [FD6592229EB7](<Analog/AOC/AOC2778/FD6592229EB7>) |
 | AOC              | AOC2781 | 2781             | 1920x1080 | 27.2 | 2018 | [ABCC3C01D21D](<Analog/AOC/AOC2781/ABCC3C01D21D>) |
@@ -371,6 +383,7 @@ model and ID.
 | AOC              | AOC3253 | LC32W053         | 1360x768  | 31.5 | 2010 | [1CF8F65FF37E](<Analog/AOC/AOC3253/1CF8F65FF37E>) |
 | AOC              | AOC3277 | Q3277            | 1920x1080 | 32.1 | 2016 | [8990CD718644](<Analog/AOC/AOC3277/8990CD718644>) |
 | AOC              | AOC3279 | Q3279WG5B        | 1920x1080 | 33.4 | 2019 | [EF3D7DB8E18D](<Analog/AOC/AOC3279/EF3D7DB8E18D>) |
+| AOC              | AOC3279 | Q3279WG5B        | 1920x1080 | 33.4 | 2017 | [76E0C79257AC](<Analog/AOC/AOC3279/76E0C79257AC>) |
 | AOC              | AOC3291 | L32HA91          | 1920x1080 | 31.5 | 2010 | [6B9865D3811D](<Analog/AOC/AOC3291/6B9865D3811D>) |
 | AOC              | AOC3293 | D32W931          | 1360x768  | 31.5 | 2010 | [AABA4EE7DBE4](<Analog/AOC/AOC3293/AABA4EE7DBE4>) |
 | AOC              | AOC3922 | LCD              | 1920x1080 | 38.4 | 2012 | [3F84F7B36EBF](<Analog/AOC/AOC3922/3F84F7B36EBF>) |
@@ -402,6 +415,7 @@ model and ID.
 | AOC              | AOCC942 | LM942            | 1280x1024 | 19.1 | 2006 | [20B571C44527](<Analog/AOC/AOCC942/20B571C44527>) |
 | AOC              | AOCC943 | 197S-1           | 1280x1024 | 19.1 | 2007 | [D2448DF1E52E](<Analog/AOC/AOCC943/D2448DF1E52E>) |
 | AOC              | AOCC944 | 197S-1           | 1280x1024 | 19.1 | 2007 | [1095BDF896CA](<Analog/AOC/AOCC944/1095BDF896CA>) |
+| AOC              | AOCC980 | WJ1980PI         | 1280x1024 | 19.1 |      | [77A92E4DEE5A](<Analog/AOC/AOCC980/77A92E4DEE5A>) |
 | AOC              | AOCC981 | WJ1980PI-2       | 1280x1024 | 19.1 | 2006 | [358915486840](<Analog/AOC/AOCC981/358915486840>) |
 | AOC              | AOCE556 | CT500G           | 1024x768  | 13.8 | 2006 | [31A455981F7B](<Analog/AOC/AOCE556/31A455981F7B>) |
 | AOC              | AOCF700 | FT7x0            | 1280x1024 | 15.7 |      | [B68DE9E34D3D](<Analog/AOC/AOCF700/B68DE9E34D3D>) |
@@ -414,6 +428,7 @@ model and ID.
 | ASUS             | AUS22CC | VZ229            | 1920x1080 | 21.7 | 2017 | [6C21A4C1A68D](<Analog/ASUS/AUS22CC/6C21A4C1A68D>) |
 | ASUS             | AUS22F1 | VA229            | 1920x1080 | 21.7 | 2019 | [6D8D4CF2F473](<Analog/ASUS/AUS22F1/6D8D4CF2F473>) |
 | ASUS             | AUS22F2 | VA229            | 1920x1080 | 21.7 | 2019 | [7844D5EBC050](<Analog/ASUS/AUS22F2/7844D5EBC050>) |
+| ASUS             | AUS23CC | VZ239            | 1920x1080 | 23.1 | 2022 | [AB561F16DB0B](<Analog/ASUS/AUS23CC/AB561F16DB0B>) |
 | ASUS             | AUS23CC | VZ239            | 1920x1080 | 23.1 | 2020 | [1782C1F230FB](<Analog/ASUS/AUS23CC/1782C1F230FB>) |
 | ASUS             | AUS23CC | VZ239            | 1920x1080 | 23.1 | 2017 | [8E6EEFE2E248](<Analog/ASUS/AUS23CC/8E6EEFE2E248>) |
 | ASUS             | AUS24A1 | VG245            | 1920x1080 | 24.0 | 2019 | [33ED80C1F0E8](<Analog/ASUS/AUS24A1/33ED80C1F0E8>) |
@@ -425,7 +440,10 @@ model and ID.
 | ASUS             | AUS24AA | VP249            | 1920x1080 | 24.0 | 2019 | [4A4734B6DA1C](<Analog/ASUS/AUS24AA/4A4734B6DA1C>) |
 | ASUS             | AUS24C1 | VA249            | 1920x1080 | 24.0 | 2020 | [A1D4C6EDCA61](<Analog/ASUS/AUS24C1/A1D4C6EDCA61>) |
 | ASUS             | AUS24CA | VP247            | 1920x1080 | 23.4 | 2018 | [8DCBD992FB23](<Analog/ASUS/AUS24CA/8DCBD992FB23>) |
+| ASUS             | AUS24CC | VZ249            | 1920x1080 | 24.0 | 2018 | [36CF63E9DA2B](<Analog/ASUS/AUS24CC/36CF63E9DA2B>) |
 | ASUS             | AUS24CC | VZ249            | 1920x1080 | 24.0 | 2017 | [520F106D9FE2](<Analog/ASUS/AUS24CC/520F106D9FE2>) |
+| ASUS             | AUS24D1 | VA24E            | 1920x1080 | 24.0 | 2020 | [629F0E0DBE5E](<Analog/ASUS/AUS24D1/629F0E0DBE5E>) |
+| ASUS             | AUS24DA | VP247            | 1920x1080 | 23.4 | 2020 | [7A944F2D5FC7](<Analog/ASUS/AUS24DA/7A944F2D5FC7>) |
 | ASUS             | AUS24DA | VP247            | 1920x1080 | 23.4 | 2019 | [4F6265E5E6DD](<Analog/ASUS/AUS24DA/4F6265E5E6DD>) |
 | ASUS             | AUS24DA | VP247            | 1920x1080 | 23.4 | 2018 | [0214CA03C877](<Analog/ASUS/AUS24DA/0214CA03C877>) |
 | ASUS             | AUS270A | VA27D            | 1920x1080 | 27.2 | 2022 | [67890D77CEC9](<Analog/ASUS/AUS270A/67890D77CEC9>) |
@@ -436,8 +454,8 @@ model and ID.
 | ASUS             | AUS27AE | VP278            | 1920x1080 | 27.2 | 2020 | [A57455C43654](<Analog/ASUS/AUS27AE/A57455C43654>) |
 | ASUS             | AUS27C0 | VZ279            | 1920x1080 | 27.2 | 2020 | [8DE7C7CF873D](<Analog/ASUS/AUS27C0/8DE7C7CF873D>) |
 | ASUS             | AUS27D1 | VA279            | 1920x1080 | 27.2 | 2018 | [413AF76692CD](<Analog/ASUS/AUS27D1/413AF76692CD>) |
-| ASUS             | AUS27D2 | VA27EHE          | 1920x1080 | 27.2 | 2021 | [81C66336A2D3](<Analog/ASUS/AUS27D2/81C66336A2D3>) |
-| ASUS             | AUS27D2 | VA27EHE          | 1920x1080 | 27.2 | 2020 | [49A4490924D7](<Analog/ASUS/AUS27D2/49A4490924D7>) |
+| ASUS             | AUS27D2 | VA27EHE          | 1920x1080 | 27.2 | 2021 | [343F70C31311](<Analog/ASUS/AUS27D2/343F70C31311>) |
+| ASUS             | AUS27D2 | VA27EHE          | 1920x1080 | 27.2 | 2020 | [2F919733C98C](<Analog/ASUS/AUS27D2/2F919733C98C>) |
 | ASUS             | AUS32A1 | VA32AQ           | 1920x1080 | 31.5 | 2017 | [2EECAFADC302](<Analog/ASUS/AUS32A1/2EECAFADC302>) |
 | AU Optronics     | DMO162D | G170ETN01        | 1280x1024 | 17.1 |      | [67D23C6B6E24](<Analog/AU Optronics/DMO162D/67D23C6B6E24>) |
 | Acer             | ABO5581 | AL511            | 1024x768  | 14.9 |      | [0A4CE251CC94](<Analog/Acer/ABO5581/0A4CE251CC94>) |
@@ -446,6 +464,7 @@ model and ID.
 | Acer             | ACR0000 | X243W            | 1920x1200 | 24.0 | 2008 | [76B57BB2C4F1](<Analog/Acer/ACR0000/76B57BB2C4F1>) |
 | Acer             | ACR0000 | X243W            | 1920x1200 | 24.0 | 2007 | [815FE45CCAF8](<Analog/Acer/ACR0000/815FE45CCAF8>) |
 | Acer             | ACR0000 |                  | 1920x1200 | 24.0 |      | [C29C7A0B4028](<Analog/Acer/ACR0000/C29C7A0B4028>) |
+| Acer             | ACR0004 | X173W            | 1440x900  | 17.2 | 2008 | [20837CCCE438](<Analog/Acer/ACR0004/20837CCCE438>) |
 | Acer             | ACR0005 | P191W            | 1440x900  | 18.6 | 2008 | [F93D3250D075](<Analog/Acer/ACR0005/F93D3250D075>) |
 | Acer             | ACR0006 | X193W            | 1440x900  | 18.6 | 2010 | [0A93A6B81FD2](<Analog/Acer/ACR0006/0A93A6B81FD2>) |
 | Acer             | ACR0006 | X193W            | 1440x900  | 18.6 | 2009 | [BE254A9CB70A](<Analog/Acer/ACR0006/BE254A9CB70A>) |
@@ -488,6 +507,7 @@ model and ID.
 | Acer             | ACR0019 | V173             | 1280x1024 | 17.1 | 2010 | [206147A5382D](<Analog/Acer/ACR0019/206147A5382D>) |
 | Acer             | ACR0019 | V173             | 1280x1024 | 17.1 | 2009 | [06A2CF2A781E](<Analog/Acer/ACR0019/06A2CF2A781E>) |
 | Acer             | ACR0019 | V173             | 1280x1024 | 17.1 | 2008 | [07747D598FF9](<Analog/Acer/ACR0019/07747D598FF9>) |
+| Acer             | ACR001A | V193W            | 1440x900  | 19.1 | 2011 | [9DCB17ED075B](<Analog/Acer/ACR001A/9DCB17ED075B>) |
 | Acer             | ACR001A | V193W            | 1440x900  | 19.1 | 2010 | [62A5B10E47CB](<Analog/Acer/ACR001A/62A5B10E47CB>) |
 | Acer             | ACR001A | V193W            | 1440x900  | 19.1 | 2009 | [2FF5BB4B045D](<Analog/Acer/ACR001A/2FF5BB4B045D>) |
 | Acer             | ACR001A | V193W            | 1440x900  | 19.1 | 2008 | [441AD9DCF8F8](<Analog/Acer/ACR001A/441AD9DCF8F8>) |
@@ -505,7 +525,7 @@ model and ID.
 | Acer             | ACR0020 | B223W            | 1680x1050 | 22.0 | 2011 | [DAA8419464B1](<Analog/Acer/ACR0020/DAA8419464B1>) |
 | Acer             | ACR0021 | B243W            | 1920x1200 | 26.8 | 2009 | [868290A96389](<Analog/Acer/ACR0021/868290A96389>) |
 | Acer             | ACR0021 |                  | 1920x1200 | 26.8 |      | [FC9B1BA66B02](<Analog/Acer/ACR0021/FC9B1BA66B02>) |
-| Acer             | ACR0023 | V173             | 1280x1024 | 17.1 | 2012 | [D24347A319EC](<Analog/Acer/ACR0023/D24347A319EC>) |
+| Acer             | ACR0023 | V173             | 1280x1024 | 17.1 | 2012 | [270EFDE3D151](<Analog/Acer/ACR0023/270EFDE3D151>) |
 | Acer             | ACR0023 | V173             | 1280x1024 | 17.1 | 2011 | [1BBD590809B1](<Analog/Acer/ACR0023/1BBD590809B1>) |
 | Acer             | ACR0023 | V173             | 1280x1024 | 17.1 | 2010 | [0837CADBDBD1](<Analog/Acer/ACR0023/0837CADBDBD1>) |
 | Acer             | ACR0023 | V173             | 1280x1024 | 17.1 | 2009 | [92BB81CB91ED](<Analog/Acer/ACR0023/92BB81CB91ED>) |
@@ -562,6 +582,7 @@ model and ID.
 | Acer             | ACR0054 |                  | 1680x1050 | 20.0 |      | [64BAE102941A](<Analog/Acer/ACR0054/64BAE102941A>) |
 | Acer             | ACR0058 | X163WL           | 1366x768  | 15.9 | 2011 | [019232EEC2AA](<Analog/Acer/ACR0058/019232EEC2AA>) |
 | Acer             | ACR0058 | X163W            | 1366x768  | 15.9 | 2010 | [5F0EB56F22E4](<Analog/Acer/ACR0058/5F0EB56F22E4>) |
+| Acer             | ACR005D | P224W            | 1680x1050 | 22.0 | 2009 | [680C3088D4D4](<Analog/Acer/ACR005D/680C3088D4D4>) |
 | Acer             | ACR005D | P224W            | 1680x1050 | 22.0 | 2008 | [4518029DFCA5](<Analog/Acer/ACR005D/4518029DFCA5>) |
 | Acer             | ACR005E | P244W            | 1920x1080 | 24.0 | 2008 | [299E49D3FF56](<Analog/Acer/ACR005E/299E49D3FF56>) |
 | Acer             | ACR0061 | E161HQ           | 1366x768  | 15.3 | 2008 | [AF87B98C191B](<Analog/Acer/ACR0061/AF87B98C191B>) |
@@ -584,8 +605,9 @@ model and ID.
 | Acer             | ACR006D | V193HQ           | 1366x768  | 18.5 | 2010 | [B181C2B42CC1](<Analog/Acer/ACR006D/B181C2B42CC1>) |
 | Acer             | ACR006D | V193HQ           | 1366x768  | 18.5 | 2009 | [074405D8CCA1](<Analog/Acer/ACR006D/074405D8CCA1>) |
 | Acer             | ACR006D | V193HQ           | 1366x768  | 18.5 |      | [072F8CFBB457](<Analog/Acer/ACR006D/072F8CFBB457>) |
+| Acer             | ACR0070 | V223HQ           | 1920x1080 | 21.3 | 2011 | [75E5C6F06B75](<Analog/Acer/ACR0070/75E5C6F06B75>) |
 | Acer             | ACR0070 | V223HQ           | 1920x1080 | 21.3 | 2010 | [A9D7775AE9CD](<Analog/Acer/ACR0070/A9D7775AE9CD>) |
-| Acer             | ACR0070 | V223HQ           | 1920x1080 | 21.3 | 2009 | [34675B5FA826](<Analog/Acer/ACR0070/34675B5FA826>) |
+| Acer             | ACR0070 | V223HQ           | 1920x1080 | 21.3 | 2009 | [0306B364B375](<Analog/Acer/ACR0070/0306B364B375>) |
 | Acer             | ACR0070 | V223HQ           | 1920x1080 | 21.3 | 2008 | [372986CC7FD4](<Analog/Acer/ACR0070/372986CC7FD4>) |
 | Acer             | ACR0073 | X203H            | 1600x900  | 19.9 | 2009 | [0E32EDA1DC4D](<Analog/Acer/ACR0073/0E32EDA1DC4D>) |
 | Acer             | ACR0074 | H243H            | 1920x1080 | 23.8 | 2009 | [A7756BF9AF9A](<Analog/Acer/ACR0074/A7756BF9AF9A>) |
@@ -595,8 +617,10 @@ model and ID.
 | Acer             | ACR0076 | X193HQ           | 1366x768  | 18.5 | 2008 | [2A6233AC8748](<Analog/Acer/ACR0076/2A6233AC8748>) |
 | Acer             | ACR0077 | X183H            | 1366x768  | 18.5 | 2009 | [D109E83C2381](<Analog/Acer/ACR0077/D109E83C2381>) |
 | Acer             | ACR0081 | V203H            | 1600x900  | 19.9 | 2009 | [7359678CFE63](<Analog/Acer/ACR0081/7359678CFE63>) |
-| Acer             | ACR0081 | V203H            | 1600x900  | 19.9 | 2008 | [D0A889246520](<Analog/Acer/ACR0081/D0A889246520>) |
+| Acer             | ACR0081 | V203H            | 1600x900  | 19.9 | 2008 | [ABDCA8D242AF](<Analog/Acer/ACR0081/ABDCA8D242AF>) |
 | Acer             | ACR0081 | V203H            | 1600x900  | 19.9 |      | [63FB749A4CE2](<Analog/Acer/ACR0081/63FB749A4CE2>) |
+| Acer             | ACR0086 | H223HQ           | 1920x1080 | 21.7 | 2010 | [583A3C7A49CA](<Analog/Acer/ACR0086/583A3C7A49CA>) |
+| Acer             | ACR0087 | H213H            | 1920x1080 | 21.7 | 2009 | [0FDEC540EF63](<Analog/Acer/ACR0087/0FDEC540EF63>) |
 | Acer             | ACR0090 | V233H            | 1920x1080 | 23.1 | 2011 | [13F14330034F](<Analog/Acer/ACR0090/13F14330034F>) |
 | Acer             | ACR0090 | V233H            | 1920x1080 | 23.1 | 2010 | [3C120295D830](<Analog/Acer/ACR0090/3C120295D830>) |
 | Acer             | ACR0090 | V233H            | 1920x1080 | 23.1 | 2009 | [138AC1663A37](<Analog/Acer/ACR0090/138AC1663A37>) |
@@ -661,7 +685,7 @@ model and ID.
 | Acer             | ACR00F0 | P215H            | 1920x1080 | 21.7 | 2010 | [36469C5DDCE0](<Analog/Acer/ACR00F0/36469C5DDCE0>) |
 | Acer             | ACR00F0 |                  | 1920x1080 | 21.7 |      | [9706FFB3F8F6](<Analog/Acer/ACR00F0/9706FFB3F8F6>) |
 | Acer             | ACR00F1 | T230H            | 1920x1080 | 22.9 | 2010 | [E592308E606E](<Analog/Acer/ACR00F1/E592308E606E>) |
-| Acer             | ACR00F1 | T230H            | 1920x1080 | 22.9 | 2009 | [B6CCF8FD5C12](<Analog/Acer/ACR00F1/B6CCF8FD5C12>) |
+| Acer             | ACR00F1 | T230H            | 1920x1080 | 22.9 | 2009 | [4D95B587E2F1](<Analog/Acer/ACR00F1/4D95B587E2F1>) |
 | Acer             | ACR00F7 | V193             | 1280x1024 | 19.3 | 2012 | [1FC918E73C46](<Analog/Acer/ACR00F7/1FC918E73C46>) |
 | Acer             | ACR00F7 | V193             | 1280x1024 | 19.3 | 2011 | [5516C94E8358](<Analog/Acer/ACR00F7/5516C94E8358>) |
 | Acer             | ACR00F7 | V193             | 1280x1024 | 19.3 | 2010 | [08A62EDAAB55](<Analog/Acer/ACR00F7/08A62EDAAB55>) |
@@ -693,22 +717,24 @@ model and ID.
 | Acer             | ACR010E |                  | 1440x900  | 19.1 |      | [BE12C392A188](<Analog/Acer/ACR010E/BE12C392A188>) |
 | Acer             | ACR0111 | G185H            | 1366x768  | 18.5 | 2010 | [050BDEEBE018](<Analog/Acer/ACR0111/050BDEEBE018>) |
 | Acer             | ACR0113 | G235H            | 1920x1080 | 23.1 | 2012 | [ABF56C0C71BE](<Analog/Acer/ACR0113/ABF56C0C71BE>) |
+| Acer             | ACR0113 | G235H            | 1920x1080 | 23.1 | 2011 | [DF3E9F95D4C8](<Analog/Acer/ACR0113/DF3E9F95D4C8>) |
 | Acer             | ACR0113 | G235H            | 1920x1080 | 23.1 | 2010 | [11844C68E93C](<Analog/Acer/ACR0113/11844C68E93C>) |
 | Acer             | ACR0114 | G245H            | 1920x1080 | 24.0 | 2011 | [1AC8641950B5](<Analog/Acer/ACR0114/1AC8641950B5>) |
 | Acer             | ACR0116 | G205H            | 1600x900  | 19.9 | 2010 | [7FA375CAE138](<Analog/Acer/ACR0116/7FA375CAE138>) |
 | Acer             | ACR011B | X193HQL          | 1366x768  | 18.5 | 2010 | [802204960B03](<Analog/Acer/ACR011B/802204960B03>) |
 | Acer             | ACR011C | G185H            | 1366x768  | 18.5 | 2011 | [0899D8EAEBB5](<Analog/Acer/ACR011C/0899D8EAEBB5>) |
+| Acer             | ACR011E | G195W            | 1440x900  | 19.1 | 2011 | [99DFD4CC1B9F](<Analog/Acer/ACR011E/99DFD4CC1B9F>) |
 | Acer             | ACR011E | G195W            | 1440x900  | 19.1 | 2010 | [0053C56E9C99](<Analog/Acer/ACR011E/0053C56E9C99>) |
 | Acer             | ACR0120 | G235H            | 1920x1080 | 23.4 | 2011 | [A06A69996C8D](<Analog/Acer/ACR0120/A06A69996C8D>) |
 | Acer             | ACR0120 | G235H            | 1920x1080 | 23.4 | 2010 | [4F1D6615EC2E](<Analog/Acer/ACR0120/4F1D6615EC2E>) |
-| Acer             | ACR0127 | V193HQL          | 1366x768  | 18.5 | 2013 | [7C1084E9A07E](<Analog/Acer/ACR0127/7C1084E9A07E>) |
+| Acer             | ACR0127 | V193HQL          | 1366x768  | 18.5 | 2013 | [042B3E038836](<Analog/Acer/ACR0127/042B3E038836>) |
 | Acer             | ACR0127 | V193HQL          | 1366x768  | 18.5 | 2012 | [6259AA9D1C76](<Analog/Acer/ACR0127/6259AA9D1C76>) |
 | Acer             | ACR0127 | V193HQL          | 1366x768  | 18.5 | 2011 | [796FB60BEBBE](<Analog/Acer/ACR0127/796FB60BEBBE>) |
 | Acer             | ACR0127 | V193HQL          | 1366x768  | 18.5 | 2009 | [22BB2AB04248](<Analog/Acer/ACR0127/22BB2AB04248>) |
 | Acer             | ACR0127 | V193HQL          | 1366x768  | 18.5 |      | [DFCB6411406A](<Analog/Acer/ACR0127/DFCB6411406A>) |
 | Acer             | ACR0128 | V183HL           | 1366x768  | 18.5 | 2010 | [DA5094BD5AA2](<Analog/Acer/ACR0128/DA5094BD5AA2>) |
 | Acer             | ACR012B | G245HQ           | 1920x1080 | 23.4 | 2012 | [986DFF00114A](<Analog/Acer/ACR012B/986DFF00114A>) |
-| Acer             | ACR012B | G245HQ           | 1920x1080 | 23.4 | 2011 | [53214BB18FE0](<Analog/Acer/ACR012B/53214BB18FE0>) |
+| Acer             | ACR012B | G245HQ           | 1920x1080 | 23.4 | 2011 | [1C4312098C26](<Analog/Acer/ACR012B/1C4312098C26>) |
 | Acer             | ACR012B | G245HQ           | 1920x1080 | 23.4 | 2010 | [69ADAA21E177](<Analog/Acer/ACR012B/69ADAA21E177>) |
 | Acer             | ACR012B |                  | 1920x1080 | 23.4 |      | [499936D4EBBC](<Analog/Acer/ACR012B/499936D4EBBC>) |
 | Acer             | ACR012D | V173             | 1280x1024 | 17.1 | 2010 | [32E5218823BE](<Analog/Acer/ACR012D/32E5218823BE>) |
@@ -752,7 +778,7 @@ model and ID.
 | Acer             | ACR01A4 | V203HL           | 1600x900  | 19.9 | 2011 | [4A408465C8D0](<Analog/Acer/ACR01A4/4A408465C8D0>) |
 | Acer             | ACR01A4 | V203HL           | 1600x900  | 19.9 | 2010 | [7192615CC0F8](<Analog/Acer/ACR01A4/7192615CC0F8>) |
 | Acer             | ACR01A5 | S201HL           | 1600x900  | 19.9 | 2012 | [E521D39947AD](<Analog/Acer/ACR01A5/E521D39947AD>) |
-| Acer             | ACR01A5 | S201HL           | 1600x900  | 19.9 | 2011 | [2248FFBBB123](<Analog/Acer/ACR01A5/2248FFBBB123>) |
+| Acer             | ACR01A5 | S201HL           | 1600x900  | 19.9 | 2011 | [1A7A010F180A](<Analog/Acer/ACR01A5/1A7A010F180A>) |
 | Acer             | ACR01A5 | S201HL           | 1600x900  | 19.9 | 2010 | [F1C2B93258E2](<Analog/Acer/ACR01A5/F1C2B93258E2>) |
 | Acer             | ACR01A6 | S231HL           | 1920x1080 | 23.1 | 2012 | [9838472B584C](<Analog/Acer/ACR01A6/9838472B584C>) |
 | Acer             | ACR01A6 | S231HL           | 1920x1080 | 23.1 | 2011 | [18AB28075499](<Analog/Acer/ACR01A6/18AB28075499>) |
@@ -771,6 +797,7 @@ model and ID.
 | Acer             | ACR01B3 | A221HQL          | 1920x1080 | 21.7 | 2011 | [24AAC69BF3E1](<Analog/Acer/ACR01B3/24AAC69BF3E1>) |
 | Acer             | ACR01B3 | A221HQL          | 1920x1080 | 21.7 | 2010 | [9D9AFBAB97CA](<Analog/Acer/ACR01B3/9D9AFBAB97CA>) |
 | Acer             | ACR01B4 | G185HV           | 1366x768  | 18.5 | 2011 | [785812D56873](<Analog/Acer/ACR01B4/785812D56873>) |
+| Acer             | ACR01B4 | G185HV           | 1366x768  | 18.5 | 2010 | [162477D800DF](<Analog/Acer/ACR01B4/162477D800DF>) |
 | Acer             | ACR01B5 | A191HQL          | 1366x768  | 18.5 | 2010 | [28CD1B78046F](<Analog/Acer/ACR01B5/28CD1B78046F>) |
 | Acer             | ACR01BA | G195HQV          | 1366x768  | 18.5 | 2011 | [B12E717EA22A](<Analog/Acer/ACR01BA/B12E717EA22A>) |
 | Acer             | ACR01BA |                  | 1366x768  | 18.5 |      | [C910F758D035](<Analog/Acer/ACR01BA/C910F758D035>) |
@@ -782,11 +809,13 @@ model and ID.
 | Acer             | ACR01CB | P196HQV          | 1366x768  | 18.5 | 2011 | [935559594FAB](<Analog/Acer/ACR01CB/935559594FAB>) |
 | Acer             | ACR01CB | P196HQV          | 1366x768  | 18.5 | 2010 | [4EAE987D8E41](<Analog/Acer/ACR01CB/4EAE987D8E41>) |
 | Acer             | ACR01CF | E203HV           | 1600x900  | 19.9 | 2010 | [5DEE11BC838C](<Analog/Acer/ACR01CF/5DEE11BC838C>) |
+| Acer             | ACR01D3 | V203HV           | 1600x900  | 19.9 | 2012 | [2D7FF5DB38A3](<Analog/Acer/ACR01D3/2D7FF5DB38A3>) |
 | Acer             | ACR01D3 | V203HV           | 1600x900  | 19.9 | 2011 | [295F6D304F1E](<Analog/Acer/ACR01D3/295F6D304F1E>) |
 | Acer             | ACR01DE | G195HQV          | 1366x768  | 18.5 | 2011 | [C638C1294448](<Analog/Acer/ACR01DE/C638C1294448>) |
 | Acer             | ACR01DE | G195HQV          | 1366x768  | 18.5 | 2010 | [048B09BBF7B9](<Analog/Acer/ACR01DE/048B09BBF7B9>) |
 | Acer             | ACR01DF | P196HQV          | 1366x768  | 18.5 | 2010 | [2CDEF5A03718](<Analog/Acer/ACR01DF/2CDEF5A03718>) |
 | Acer             | ACR01EC | P246H            | 1920x1080 | 24.0 | 2011 | [82A10EC8EA45](<Analog/Acer/ACR01EC/82A10EC8EA45>) |
+| Acer             | ACR01ED | P206HV           | 1600x900  | 19.9 | 2011 | [71E5E9CED911](<Analog/Acer/ACR01ED/71E5E9CED911>) |
 | Acer             | ACR01ED | P206HV           | 1600x900  | 19.9 | 2010 | [0D442F0CB4D8](<Analog/Acer/ACR01ED/0D442F0CB4D8>) |
 | Acer             | ACR01EF | G205HV           | 1600x900  | 19.9 | 2011 | [07C82A0E2B3D](<Analog/Acer/ACR01EF/07C82A0E2B3D>) |
 | Acer             | ACR01F3 | E180HV           | 1366x768  | 18.5 | 2011 | [4303E8414E00](<Analog/Acer/ACR01F3/4303E8414E00>) |
@@ -794,7 +823,7 @@ model and ID.
 | Acer             | ACR01F6 | E200HV           | 1600x900  | 19.9 | 2010 | [0611B48D13E4](<Analog/Acer/ACR01F6/0611B48D13E4>) |
 | Acer             | ACR01F8 |                  | 1920x1080 | 21.7 |      | [24EBAB72CDD4](<Analog/Acer/ACR01F8/24EBAB72CDD4>) |
 | Acer             | ACR01FB | P236H            | 1920x1080 | 23.1 | 2012 | [AD087D81E6B0](<Analog/Acer/ACR01FB/AD087D81E6B0>) |
-| Acer             | ACR01FB | P236H            | 1920x1080 | 23.1 | 2011 | [7F3ADE8169B7](<Analog/Acer/ACR01FB/7F3ADE8169B7>) |
+| Acer             | ACR01FB | P236H            | 1920x1080 | 23.1 | 2011 | [747B0E75F305](<Analog/Acer/ACR01FB/747B0E75F305>) |
 | Acer             | ACR01FB | P236H            | 1920x1080 | 23.1 | 2010 | [2A1EC9594860](<Analog/Acer/ACR01FB/2A1EC9594860>) |
 | Acer             | ACR0200 | P206HV           | 1600x900  | 19.9 | 2012 | [2D302757EB51](<Analog/Acer/ACR0200/2D302757EB51>) |
 | Acer             | ACR0200 | P206HV           | 1600x900  | 19.9 | 2010 | [7B511DA1EA2C](<Analog/Acer/ACR0200/7B511DA1EA2C>) |
@@ -804,6 +833,7 @@ model and ID.
 | Acer             | ACR020B | S202HL           | 1600x900  | 19.9 | 2011 | [28F7E1166EB6](<Analog/Acer/ACR020B/28F7E1166EB6>) |
 | Acer             | ACR0215 | E200HV           | 1600x900  | 19.9 | 2011 | [3ABD0E4C7F28](<Analog/Acer/ACR0215/3ABD0E4C7F28>) |
 | Acer             | ACR0215 |                  | 1600x900  | 19.9 |      | [CC51E1F007B0](<Analog/Acer/ACR0215/CC51E1F007B0>) |
+| Acer             | ACR0216 | S242HL           | 1920x1080 | 24.0 | 2010 | [4EACF58196A3](<Analog/Acer/ACR0216/4EACF58196A3>) |
 | Acer             | ACR0217 | G185HV           | 1366x768  | 18.5 | 2011 | [C6610C1F6C25](<Analog/Acer/ACR0217/C6610C1F6C25>) |
 | Acer             | ACR0219 | V193WV           | 1440x900  | 19.1 | 2011 | [CA79486172C3](<Analog/Acer/ACR0219/CA79486172C3>) |
 | Acer             | ACR021C | S191HQL          | 1366x768  | 18.5 | 2013 | [56DB0834290C](<Analog/Acer/ACR021C/56DB0834290C>) |
@@ -818,6 +848,7 @@ model and ID.
 | Acer             | ACR0229 | B223WL           | 1680x1050 | 22.0 | 2013 | [AF6A7EF39BAC](<Analog/Acer/ACR0229/AF6A7EF39BAC>) |
 | Acer             | ACR0229 | B223WL           | 1680x1050 | 22.0 | 2012 | [0468486A1AEA](<Analog/Acer/ACR0229/0468486A1AEA>) |
 | Acer             | ACR022A |                  | 1680x1050 | 22.0 |      | [C242A90CBA9C](<Analog/Acer/ACR022A/C242A90CBA9C>) |
+| Acer             | ACR022C | G205HV           | 1600x900  | 19.9 | 2011 | [8DC3F318D965](<Analog/Acer/ACR022C/8DC3F318D965>) |
 | Acer             | ACR022D | V193WV           | 1440x900  | 19.1 | 2011 | [6A9264EB618C](<Analog/Acer/ACR022D/6A9264EB618C>) |
 | Acer             | ACR022E | X163WL           | 1366x768  | 15.3 | 2011 | [BA8C728E6CB0](<Analog/Acer/ACR022E/BA8C728E6CB0>) |
 | Acer             | ACR0231 | V243HQL          | 1920x1080 | 23.4 | 2012 | [DCF24CD91C98](<Analog/Acer/ACR0231/DCF24CD91C98>) |
@@ -842,9 +873,10 @@ model and ID.
 | Acer             | ACR0276 | P166HQL          | 1366x768  | 18.5 | 2012 | [A672BF51F048](<Analog/Acer/ACR0276/A672BF51F048>) |
 | Acer             | ACR0276 | P166HQL          | 1366x768  | 18.5 | 2011 | [08E892DBAEF2](<Analog/Acer/ACR0276/08E892DBAEF2>) |
 | Acer             | ACR027A | V193HQV          | 1366x768  | 18.5 | 2012 | [5851897E3228](<Analog/Acer/ACR027A/5851897E3228>) |
-| Acer             | ACR027A | V193HQV          | 1366x768  | 18.5 | 2011 | [D02DAB7AF390](<Analog/Acer/ACR027A/D02DAB7AF390>) |
+| Acer             | ACR027A | V193HQV          | 1366x768  | 18.5 | 2011 | [3970E3BA7DA0](<Analog/Acer/ACR027A/3970E3BA7DA0>) |
 | Acer             | ACR027C | V193HQL          | 1366x768  | 18.5 | 2011 | [F1333AF4B75C](<Analog/Acer/ACR027C/F1333AF4B75C>) |
 | Acer             | ACR0280 | S230HL           | 1920x1080 | 23.1 | 2016 | [5E66A71521F0](<Analog/Acer/ACR0280/5E66A71521F0>) |
+| Acer             | ACR0280 | P166HQL          | 1366x768  | 15.3 | 2016 | [9115E345BBF8](<Analog/Acer/ACR0280/9115E345BBF8>) |
 | Acer             | ACR0280 | P166HQL          | 1366x768  | 15.3 | 2014 | [9408DC481447](<Analog/Acer/ACR0280/9408DC481447>) |
 | Acer             | ACR0280 | S230HL           | 1920x1080 | 23.1 | 2014 | [AC491C17C16E](<Analog/Acer/ACR0280/AC491C17C16E>) |
 | Acer             | ACR0280 | S230HL           | 1920x1080 | 23.1 | 2013 | [6345837E0178](<Analog/Acer/ACR0280/6345837E0178>) |
@@ -867,9 +899,10 @@ model and ID.
 | Acer             | ACR0289 | S240HL           | 1920x1080 | 24.0 | 2013 | [0248C7205816](<Analog/Acer/ACR0289/0248C7205816>) |
 | Acer             | ACR0289 | S240HL           | 1920x1080 | 24.0 | 2012 | [2333618E8191](<Analog/Acer/ACR0289/2333618E8191>) |
 | Acer             | ACR0289 | S240HL           | 1920x1080 | 24.0 | 2011 | [643F53052F81](<Analog/Acer/ACR0289/643F53052F81>) |
-| Acer             | ACR0294 | S200HL           | 1600x900  | 19.9 | 2012 | [936E72CF5FC0](<Analog/Acer/ACR0294/936E72CF5FC0>) |
+| Acer             | ACR0294 | S200HL           | 1600x900  | 19.9 | 2012 | [61E7603908B9](<Analog/Acer/ACR0294/61E7603908B9>) |
 | Acer             | ACR0294 | S200HL           | 1600x900  | 19.9 | 2011 | [3E39EF94E308](<Analog/Acer/ACR0294/3E39EF94E308>) |
 | Acer             | ACR02A3 | FHX2201QV        | 1920x1080 | 21.7 | 2012 | [22B516744908](<Analog/Acer/ACR02A3/22B516744908>) |
+| Acer             | ACR02A4 | E202HL           | 1600x900  | 19.9 | 2012 | [1DC2ED89BE76](<Analog/Acer/ACR02A4/1DC2ED89BE76>) |
 | Acer             | ACR02A4 | E202HL           | 1600x900  | 19.9 | 2011 | [3355ACF1E716](<Analog/Acer/ACR02A4/3355ACF1E716>) |
 | Acer             | ACR02BE | S235HL           | 1920x1080 | 23.1 | 2012 | [B391529C30B6](<Analog/Acer/ACR02BE/B391529C30B6>) |
 | Acer             | ACR02C8 | S191HQL          | 1366x768  | 18.5 | 2011 | [061C546726A2](<Analog/Acer/ACR02C8/061C546726A2>) |
@@ -878,6 +911,7 @@ model and ID.
 | Acer             | ACR02CA | S271HL           | 1920x1080 | 27.2 | 2013 | [A762E4AE269D](<Analog/Acer/ACR02CA/A762E4AE269D>) |
 | Acer             | ACR02CA | S271HL           | 1920x1080 | 27.2 | 2012 | [0F827C63FCE8](<Analog/Acer/ACR02CA/0F827C63FCE8>) |
 | Acer             | ACR02D3 | G226HQL          | 1920x1080 | 21.7 | 2012 | [2DEB05C300C6](<Analog/Acer/ACR02D3/2DEB05C300C6>) |
+| Acer             | ACR02D5 | S200HL           | 1600x900  | 19.9 | 2012 | [9FBE59ECD610](<Analog/Acer/ACR02D5/9FBE59ECD610>) |
 | Acer             | ACR02D6 | S220HQL          | 1920x1080 | 21.7 | 2013 | [4D4D7C8A0D47](<Analog/Acer/ACR02D6/4D4D7C8A0D47>) |
 | Acer             | ACR02DC | V235HL           | 1920x1080 | 23.1 | 2012 | [824FD883E903](<Analog/Acer/ACR02DC/824FD883E903>) |
 | Acer             | ACR02E8 | G196WL           | 1440x900  | 19.1 | 2012 | [A31FAFDBE41B](<Analog/Acer/ACR02E8/A31FAFDBE41B>) |
@@ -949,6 +983,7 @@ model and ID.
 | Acer             | ACR0334 | V206HQL          | 1600x900  | 19.4 | 2015 | [680B221F57FC](<Analog/Acer/ACR0334/680B221F57FC>) |
 | Acer             | ACR0334 | V206HQL          | 1366x768  | 19.4 | 2014 | [5D7712BDA6A8](<Analog/Acer/ACR0334/5D7712BDA6A8>) |
 | Acer             | ACR0334 | V206HQL          | 1600x900  | 19.4 |      | [E3AB292B18E6](<Analog/Acer/ACR0334/E3AB292B18E6>) |
+| Acer             | ACR0335 | V226HQL          | 1920x1080 | 21.7 | 2020 | [279C1A0F6A5D](<Analog/Acer/ACR0335/279C1A0F6A5D>) |
 | Acer             | ACR0335 | V226HQL          | 1920x1080 | 21.7 | 2019 | [5749623ED2B4](<Analog/Acer/ACR0335/5749623ED2B4>) |
 | Acer             | ACR0335 | V226HQL          | 1920x1080 | 21.7 | 2017 | [560C542E71AF](<Analog/Acer/ACR0335/560C542E71AF>) |
 | Acer             | ACR0335 | V226HQL          | 1920x1080 | 21.7 | 2016 | [56423CFE8C9D](<Analog/Acer/ACR0335/56423CFE8C9D>) |
@@ -956,6 +991,7 @@ model and ID.
 | Acer             | ACR0335 | V226HQL          | 1920x1080 | 21.7 | 2014 | [0C770116637F](<Analog/Acer/ACR0335/0C770116637F>) |
 | Acer             | ACR0335 | V226HQL          | 1920x1080 | 21.7 | 2013 | [172CF5AADDF1](<Analog/Acer/ACR0335/172CF5AADDF1>) |
 | Acer             | ACR0335 | V226HQL          | 1920x1080 | 21.7 |      | [0E4A5F512A3D](<Analog/Acer/ACR0335/0E4A5F512A3D>) |
+| Acer             | ACR0336 | V246HL           | 1920x1080 | 24.0 | 2018 | [D90945FE09AD](<Analog/Acer/ACR0336/D90945FE09AD>) |
 | Acer             | ACR0336 | V246HL           | 1920x1080 | 24.0 | 2017 | [D8A270A6184D](<Analog/Acer/ACR0336/D8A270A6184D>) |
 | Acer             | ACR0336 | V246HL           | 1920x1080 | 24.0 | 2016 | [0D7C2FF76935](<Analog/Acer/ACR0336/0D7C2FF76935>) |
 | Acer             | ACR0336 | V246HL           | 1920x1080 | 24.0 | 2015 | [FD2676A07926](<Analog/Acer/ACR0336/FD2676A07926>) |
@@ -985,8 +1021,9 @@ model and ID.
 | Acer             | ACR0359 | S200HQL          | 1366x768  | 19.4 | 2016 | [3E71EE27B0C8](<Analog/Acer/ACR0359/3E71EE27B0C8>) |
 | Acer             | ACR0359 | S200HQL          | 1366x768  | 19.4 | 2015 | [C7065AFF6E7D](<Analog/Acer/ACR0359/C7065AFF6E7D>) |
 | Acer             | ACR0359 | S200HQL          | 1600x900  | 19.4 | 2014 | [960828C17C52](<Analog/Acer/ACR0359/960828C17C52>) |
-| Acer             | ACR0359 | S200HQL          | 1600x900  | 19.4 | 2013 | [EEA4EDFEC8B0](<Analog/Acer/ACR0359/EEA4EDFEC8B0>) |
+| Acer             | ACR0359 | S200HQL          | 1600x900  | 19.4 | 2013 | [8B86E7C44A18](<Analog/Acer/ACR0359/8B86E7C44A18>) |
 | Acer             | ACR035A | G206HQL          | 1600x900  | 19.4 | 2018 | [FAD6B44C8D9C](<Analog/Acer/ACR035A/FAD6B44C8D9C>) |
+| Acer             | ACR035A | G206HQL          | 1600x900  | 19.4 | 2017 | [CA3A52DFB0E9](<Analog/Acer/ACR035A/CA3A52DFB0E9>) |
 | Acer             | ACR035A | G206HQL          | 1600x900  | 19.4 | 2015 | [F42B53872302](<Analog/Acer/ACR035A/F42B53872302>) |
 | Acer             | ACR035A | G206HQL          | 1600x900  | 19.4 | 2014 | [BB66FA7EF168](<Analog/Acer/ACR035A/BB66FA7EF168>) |
 | Acer             | ACR035A | G206HQL          | 1600x900  | 19.4 | 2013 | [3C5BDA98AEBA](<Analog/Acer/ACR035A/3C5BDA98AEBA>) |
@@ -1004,7 +1041,8 @@ model and ID.
 | Acer             | ACR038C | HX1953L          | 1600x900  | 19.4 | 2013 | [B39FA92268BA](<Analog/Acer/ACR038C/B39FA92268BA>) |
 | Acer             | ACR0396 | V176L            | 1280x1024 | 17.1 | 2017 | [A61879DA1522](<Analog/Acer/ACR0396/A61879DA1522>) |
 | Acer             | ACR0396 | V176L            | 1280x1024 | 19.1 | 2014 | [AD0D554A8AF5](<Analog/Acer/ACR0396/AD0D554A8AF5>) |
-| Acer             | ACR03DB | K192HQL          | 1366x768  | 18.5 | 2016 | [39FA62A8D621](<Analog/Acer/ACR03DB/39FA62A8D621>) |
+| Acer             | ACR03DB | K192HQL          | 1366x768  | 18.5 | 2016 | [081CBAC54173](<Analog/Acer/ACR03DB/081CBAC54173>) |
+| Acer             | ACR03DB | K192HQL          | 1366x768  | 18.5 | 2015 | [8355C1C62F8C](<Analog/Acer/ACR03DB/8355C1C62F8C>) |
 | Acer             | ACR03DB | K192HQL          | 1366x768  | 18.5 | 2014 | [CD76217AF50F](<Analog/Acer/ACR03DB/CD76217AF50F>) |
 | Acer             | ACR03DC | K272HL           | 1920x1080 | 27.2 | 2016 | [3F781E8C6C52](<Analog/Acer/ACR03DC/3F781E8C6C52>) |
 | Acer             | ACR03DC |                  | 1920x1080 | 27.2 |      | [DAE26E6BE741](<Analog/Acer/ACR03DC/DAE26E6BE741>) |
@@ -1025,7 +1063,7 @@ model and ID.
 | Acer             | ACR03E1 | K222HQL          | 1920x1080 | 21.7 | 2017 | [02D5C395B484](<Analog/Acer/ACR03E1/02D5C395B484>) |
 | Acer             | ACR03E1 | K222HQL          | 1920x1080 | 21.7 | 2016 | [239946FFB09E](<Analog/Acer/ACR03E1/239946FFB09E>) |
 | Acer             | ACR03E1 | K222HQL          | 1920x1080 | 21.7 | 2015 | [57FB0ADBE756](<Analog/Acer/ACR03E1/57FB0ADBE756>) |
-| Acer             | ACR03E1 | K222HQL          | 1920x1080 | 21.7 | 2014 | [504E04C43B7F](<Analog/Acer/ACR03E1/504E04C43B7F>) |
+| Acer             | ACR03E1 | K222HQL          | 1920x1080 | 21.7 | 2014 | [265121B199F8](<Analog/Acer/ACR03E1/265121B199F8>) |
 | Acer             | ACR03E1 | K222HQL          | 1920x1080 | 21.7 |      | [9C4AAE0C4F8C](<Analog/Acer/ACR03E1/9C4AAE0C4F8C>) |
 | Acer             | ACR03E3 | K242HL           | 1920x1080 | 24.0 | 2019 | [A15BC30BCDBA](<Analog/Acer/ACR03E3/A15BC30BCDBA>) |
 | Acer             | ACR03E3 | K242HL           | 1920x1080 | 24.0 | 2018 | [B4F7B2EC611C](<Analog/Acer/ACR03E3/B4F7B2EC611C>) |
@@ -1049,11 +1087,12 @@ model and ID.
 | Acer             | ACR040D |                  | 1920x1080 | 21.7 |      | [C1A617D627C8](<Analog/Acer/ACR040D/C1A617D627C8>) |
 | Acer             | ACR040E | K242HL           | 1920x1080 | 24.0 | 2016 | [4ABAA6E66700](<Analog/Acer/ACR040E/4ABAA6E66700>) |
 | Acer             | ACR040E | K242HL           | 1920x1080 | 24.0 | 2015 | [C302840EC3F5](<Analog/Acer/ACR040E/C302840EC3F5>) |
-| Acer             | ACR040E | K242HL           | 1920x1080 | 24.0 | 2014 | [A211CE6A0C39](<Analog/Acer/ACR040E/A211CE6A0C39>) |
+| Acer             | ACR040E | K242HL           | 1920x1080 | 24.0 | 2014 | [385B55C0B6B9](<Analog/Acer/ACR040E/385B55C0B6B9>) |
 | Acer             | ACR041F | T232HL           | 1920x1080 | 23.1 | 2014 | [AAB1EDAEFD51](<Analog/Acer/ACR041F/AAB1EDAEFD51>) |
 | Acer             | ACR0422 |                  | 1920x1080 | 19.7 | 2016 | [D1E304FFEA5E](<Analog/Acer/ACR0422/D1E304FFEA5E>) |
 | Acer             | ACR0424 | V246HQL          | 1920x1080 | 23.4 | 2020 | [1FD330524135](<Analog/Acer/ACR0424/1FD330524135>) |
 | Acer             | ACR0424 | V246HQL          | 1920x1080 | 23.4 | 2019 | [4FADBF459F89](<Analog/Acer/ACR0424/4FADBF459F89>) |
+| Acer             | ACR0424 | V246HQL          | 1920x1080 | 23.4 | 2018 | [140B5E30361C](<Analog/Acer/ACR0424/140B5E30361C>) |
 | Acer             | ACR0424 |                  | 1920x1080 | 23.4 |      | [CC48DD56C628](<Analog/Acer/ACR0424/CC48DD56C628>) |
 | Acer             | ACR042E | K242HQL          | 1920x1080 | 23.4 | 2019 | [C3ACD4E8C807](<Analog/Acer/ACR042E/C3ACD4E8C807>) |
 | Acer             | ACR042E | K242HQL          | 1920x1080 | 23.4 | 2018 | [42336D193551](<Analog/Acer/ACR042E/42336D193551>) |
@@ -1072,7 +1111,7 @@ model and ID.
 | Acer             | ACR0467 | KA220HQ          | 1920x1080 | 21.7 | 2015 | [0E0D2F049DCD](<Analog/Acer/ACR0467/0E0D2F049DCD>) |
 | Acer             | ACR0469 | KA270H           | 1920x1080 | 27.2 | 2015 | [8FCAEA103D85](<Analog/Acer/ACR0469/8FCAEA103D85>) |
 | Acer             | ACR046F | R240HY           | 1920x1080 | 24.0 | 2020 | [D639C2486515](<Analog/Acer/ACR046F/D639C2486515>) |
-| Acer             | ACR046F | R240HY           | 1920x1080 | 24.0 | 2019 | [FD39A0D0A752](<Analog/Acer/ACR046F/FD39A0D0A752>) |
+| Acer             | ACR046F | R240HY           | 1920x1080 | 24.0 | 2019 | [73FBF6FA6FF1](<Analog/Acer/ACR046F/73FBF6FA6FF1>) |
 | Acer             | ACR046F | R240HY           | 1920x1080 | 24.0 | 2017 | [AB64F1BE60EA](<Analog/Acer/ACR046F/AB64F1BE60EA>) |
 | Acer             | ACR046F | R240HY           | 1920x1080 | 24.0 | 2016 | [F92786AD076D](<Analog/Acer/ACR046F/F92786AD076D>) |
 | Acer             | ACR047B | CB241H           | 1920x1080 | 24.0 | 2018 | [CEE30F74DC69](<Analog/Acer/ACR047B/CEE30F74DC69>) |
@@ -1100,6 +1139,7 @@ model and ID.
 | Acer             | ACR0516 | VA270H           | 1920x1080 | 27.2 | 2018 | [A8B684BA7A9E](<Analog/Acer/ACR0516/A8B684BA7A9E>) |
 | Acer             | ACR0516 | VA270H           | 1920x1080 | 27.2 | 2016 | [CFFD06468E75](<Analog/Acer/ACR0516/CFFD06468E75>) |
 | Acer             | ACR0517 | EB192Q           | 1366x768  | 18.5 | 2020 | [F893D28CF987](<Analog/Acer/ACR0517/F893D28CF987>) |
+| Acer             | ACR0517 | EB192Q           | 1366x768  | 18.5 | 2019 | [D92BD5DC519B](<Analog/Acer/ACR0517/D92BD5DC519B>) |
 | Acer             | ACR0517 | EB192Q           | 1366x768  | 18.5 | 2018 | [1481D0A7F258](<Analog/Acer/ACR0517/1481D0A7F258>) |
 | Acer             | ACR0517 | EB192Q           | 1366x768  | 18.5 | 2017 | [9A5879F0BEF0](<Analog/Acer/ACR0517/9A5879F0BEF0>) |
 | Acer             | ACR0517 | EB192Q           | 1366x768  | 18.5 | 2016 | [457C9B1F241B](<Analog/Acer/ACR0517/457C9B1F241B>) |
@@ -1160,11 +1200,13 @@ model and ID.
 | Acer             | ACR0672 | VG220Q           | 1920x1080 | 21.7 | 2018 | [B21C022F9957](<Analog/Acer/ACR0672/B21C022F9957>) |
 | Acer             | ACR0673 | VG240Y           | 1920x1080 | 24.0 | 2020 | [E5549786EBE3](<Analog/Acer/ACR0673/E5549786EBE3>) |
 | Acer             | ACR0673 | VG240Y           | 1920x1080 | 24.0 | 2019 | [130E77B54EBF](<Analog/Acer/ACR0673/130E77B54EBF>) |
+| Acer             | ACR0674 | VG270            | 1920x1080 | 27.2 | 2020 | [15D4EDD83E6B](<Analog/Acer/ACR0674/15D4EDD83E6B>) |
 | Acer             | ACR0674 | VG270            | 1920x1080 | 27.2 | 2018 | [41D67BA1E5E8](<Analog/Acer/ACR0674/41D67BA1E5E8>) |
 | Acer             | ACR0699 | KG241            | 1920x1080 | 24.0 | 2019 | [E58F2FEBCBFA](<Analog/Acer/ACR0699/E58F2FEBCBFA>) |
 | Acer             | ACR0699 | KG241            | 1920x1080 | 24.0 | 2018 | [415718603EBC](<Analog/Acer/ACR0699/415718603EBC>) |
 | Acer             | ACR06AA | AL1706           | 1280x1024 | 17.1 | 2007 | [239F08CB4A05](<Analog/Acer/ACR06AA/239F08CB4A05>) |
 | Acer             | ACR06AA | AL1706           | 1280x1024 | 17.1 | 2006 | [262272630E7E](<Analog/Acer/ACR06AA/262272630E7E>) |
+| Acer             | ACR06AA | AL1706           | 1280x1024 | 17.1 |      | [75F0D71F2E0E](<Analog/Acer/ACR06AA/75F0D71F2E0E>) |
 | Acer             | ACR06AB | SB220Q           | 1920x1080 | 21.7 | 2022 | [7B2195C785DB](<Analog/Acer/ACR06AB/7B2195C785DB>) |
 | Acer             | ACR06AB | SB220Q           | 1920x1080 | 21.7 | 2021 | [832008E15364](<Analog/Acer/ACR06AB/832008E15364>) |
 | Acer             | ACR06AB | SB220Q           | 1920x1080 | 21.7 | 2019 | [D86D235A0E01](<Analog/Acer/ACR06AB/D86D235A0E01>) |
@@ -1175,8 +1217,9 @@ model and ID.
 | Acer             | ACR06B4 | AL1716 L480B1... | 1280x1024 | 17.1 | 2007 | [0ECDC940F3D0](<Analog/Acer/ACR06B4/0ECDC940F3D0>) |
 | Acer             | ACR06B4 | AL1716           | 1280x1024 | 17.1 | 2006 | [16BC42CD955C](<Analog/Acer/ACR06B4/16BC42CD955C>) |
 | Acer             | ACR06B4 | AL1716           | 1280x1024 | 17.1 |      | [14F54DFFB6FD](<Analog/Acer/ACR06B4/14F54DFFB6FD>) |
+| Acer             | ACR06BB | V247Y            | 1920x1080 | 24.0 | 2021 | [60CE4EE78586](<Analog/Acer/ACR06BB/60CE4EE78586>) |
 | Acer             | ACR06BB | AL1723 V1.00     | 1280x1024 | 17.1 | 2006 | [F2B2C175A3A2](<Analog/Acer/ACR06BB/F2B2C175A3A2>) |
-| Acer             | ACR06BF | VG240Y           | 1920x1080 | 24.0 | 2019 | [AC303CA0E0F7](<Analog/Acer/ACR06BF/AC303CA0E0F7>) |
+| Acer             | ACR06BF | VG240Y           | 1920x1080 | 24.0 | 2019 | [715190754D89](<Analog/Acer/ACR06BF/715190754D89>) |
 | Acer             | ACR06C4 | F-17             | 1280x1024 | 17.1 |      | [710DAC223B92](<Analog/Acer/ACR06C4/710DAC223B92>) |
 | Acer             | ACR06D8 | VG220Q           | 1920x1080 | 21.7 | 2019 | [B90D7A299270](<Analog/Acer/ACR06D8/B90D7A299270>) |
 | Acer             | ACR06DA | 19CX1Q           | 1366x768  | 18.5 | 2019 | [D97E50BA6EA2](<Analog/Acer/ACR06DA/D97E50BA6EA2>) |
@@ -1202,6 +1245,7 @@ model and ID.
 | Acer             | ACR077C | AL1916           | 1280x1024 | 19.1 |      | [9C576E1797DD](<Analog/Acer/ACR077C/9C576E1797DD>) |
 | Acer             | ACR0783 | AL1923           | 1280x1024 | 18.8 | 2007 | [745AA3AA2DC7](<Analog/Acer/ACR0783/745AA3AA2DC7>) |
 | Acer             | ACR0783 | AL1923 V1.00     | 1280x1024 | 18.8 | 2006 | [6062EA0B6B64](<Analog/Acer/ACR0783/6062EA0B6B64>) |
+| Acer             | ACR079A | KA272 A          | 1920x1080 | 27.0 | 2021 | [56D2832CCEB8](<Analog/Acer/ACR079A/56D2832CCEB8>) |
 | Acer             | ACR079C | QG241Y           | 1920x1080 | 24.0 | 2020 | [EBBECAB4EA6E](<Analog/Acer/ACR079C/EBBECAB4EA6E>) |
 | Acer             | ACR07E5 | AL2021           | 1600x1200 | 20.2 |      | [5E7AD2E534B9](<Analog/Acer/ACR07E5/5E7AD2E534B9>) |
 | Acer             | ACR07E7 | AL2023 V1.00     | 1600x1200 | 20.2 | 2006 | [1DC3617C12D3](<Analog/Acer/ACR07E7/1DC3617C12D3>) |
@@ -1231,6 +1275,7 @@ model and ID.
 | Acer             | ACR5770 | AL1715           | 1280x1024 | 17.1 |      | [193482204846](<Analog/Acer/ACR5770/193482204846>) |
 | Acer             | ACR57AD | AL1917           | 1280x1024 | 19.1 |      | [599F17844301](<Analog/Acer/ACR57AD/599F17844301>) |
 | Acer             | ACR5990 | AL1912           | 1280x1024 | 18.8 |      | [07E14A47C53A](<Analog/Acer/ACR5990/07E14A47C53A>) |
+| Acer             | ACRA707 | AL707            | 1280x1024 | 17.1 |      | [0C6C4ABA40E2](<Analog/Acer/ACRA707/0C6C4ABA40E2>) |
 | Acer             | ACRAC08 | AT4230           | 1400x1050 | 41.9 | 2007 | [4CB7AE47ECD7](<Analog/Acer/ACRAC08/4CB7AE47ECD7>) |
 | Acer             | ACRAD01 |                  | 1366x768  | 18.5 | 2010 | [81140DCE0DE8](<Analog/Acer/ACRAD01/81140DCE0DE8>) |
 | Acer             | ACRAD04 | AL1721           | 1280x1024 | 17.1 |      | [515E9F2FAC3E](<Analog/Acer/ACRAD04/515E9F2FAC3E>) |
@@ -1240,7 +1285,7 @@ model and ID.
 | Acer             | ACRAD18 | AL1714           | 1280x1024 | 17.1 |      | [0A85D518806E](<Analog/Acer/ACRAD18/0A85D518806E>) |
 | Acer             | ACRAD25 | AL1922           | 1280x1024 | 19.1 |      | [6E10E20A4311](<Analog/Acer/ACRAD25/6E10E20A4311>) |
 | Acer             | ACRAD29 | AL1912           | 1280x1024 | 19.1 | 2006 | [A961F1210C56](<Analog/Acer/ACRAD29/A961F1210C56>) |
-| Acer             | ACRAD29 | AL1912           | 1280x1024 | 19.1 |      | [0EDF19010BB4](<Analog/Acer/ACRAD29/0EDF19010BB4>) |
+| Acer             | ACRAD29 | AL1914           | 1280x1024 | 19.1 |      | [0C79D3237263](<Analog/Acer/ACRAD29/0C79D3237263>) |
 | Acer             | ACRAD31 | AL1702           | 1280x1024 | 17.1 |      | [B6BC26675770](<Analog/Acer/ACRAD31/B6BC26675770>) |
 | Acer             | ACRAD32 | AL1711           | 1280x1024 | 17.1 |      | [B313ED030C9B](<Analog/Acer/ACRAD32/B313ED030C9B>) |
 | Acer             | ACRAD34 | AL1703           | 1280x1024 | 17.1 |      | [4D0CD1028C95](<Analog/Acer/ACRAD34/4D0CD1028C95>) |
@@ -1262,7 +1307,7 @@ model and ID.
 | Acer             | ACRAD49 |                  | 1280x1024 | 19.1 |      | [3C486F8A8D59](<Analog/Acer/ACRAD49/3C486F8A8D59>) |
 | Acer             | ACRAD50 | AL1906           | 1280x1024 | 19.1 | 2006 | [3D0FFC7B84B0](<Analog/Acer/ACRAD50/3D0FFC7B84B0>) |
 | Acer             | ACRAD51 | AL1716           | 1280x1024 | 17.1 | 2008 | [155E75DAA9BC](<Analog/Acer/ACRAD51/155E75DAA9BC>) |
-| Acer             | ACRAD51 | AL1716           | 1280x1024 | 17.1 | 2007 | [0F4047003475](<Analog/Acer/ACRAD51/0F4047003475>) |
+| Acer             | ACRAD51 | AL1716           | 1280x1024 | 17.1 | 2007 | [082618B9A895](<Analog/Acer/ACRAD51/082618B9A895>) |
 | Acer             | ACRAD51 | L51081964203 ... | 1280x1024 | 17.1 | 2006 | [13E99893E924](<Analog/Acer/ACRAD51/13E99893E924>) |
 | Acer             | ACRAD51 | AL1716           | 1280x1024 | 17.1 |      | [38561CB8F09D](<Analog/Acer/ACRAD51/38561CB8F09D>) |
 | Acer             | ACRAD52 | AL1916W          | 1440x900  | 19.1 | 2007 | [046E72F38DFF](<Analog/Acer/ACRAD52/046E72F38DFF>) |
@@ -1356,7 +1401,7 @@ model and ID.
 | Ancor Communi... | ACI17B8 | ASUS VB175       | 1280x1024 | 17.1 | 2010 | [05A1D84AEA36](<Analog/Ancor Communications/ACI17B8/05A1D84AEA36>) |
 | Ancor Communi... | ACI17B8 | ASUS VB175       | 1280x1024 | 17.1 | 2009 | [2B9B497D5F27](<Analog/Ancor Communications/ACI17B8/2B9B497D5F27>) |
 | Ancor Communi... | ACI17B8 | ASUS             | 1280x1024 | 17.1 |      | [60185817434F](<Analog/Ancor Communications/ACI17B8/60185817434F>) |
-| Ancor Communi... | ACI17D3 | ASUS MM17D       | 1280x1024 | 17.1 | 2007 | [3C0E3466DFA3](<Analog/Ancor Communications/ACI17D3/3C0E3466DFA3>) |
+| Ancor Communi... | ACI17D3 | ASUS MM17D       | 1280x1024 | 17.1 | 2007 | [150961C6E052](<Analog/Ancor Communications/ACI17D3/150961C6E052>) |
 | Ancor Communi... | ACI17D3 | ASUS MM17D       | 1280x1024 | 17.1 | 2006 | [7EFBBC06D4EF](<Analog/Ancor Communications/ACI17D3/7EFBBC06D4EF>) |
 | Ancor Communi... | ACI17D3 | ASUS MM17D       | 1280x1024 | 17.1 |      | [0F7F0B79EAF7](<Analog/Ancor Communications/ACI17D3/0F7F0B79EAF7>) |
 | Ancor Communi... | ACI17D5 | ASUS MB17SE      | 1280x1024 | 17.1 | 2007 | [45BA44ABC074](<Analog/Ancor Communications/ACI17D5/45BA44ABC074>) |
@@ -1433,6 +1478,7 @@ model and ID.
 | Ancor Communi... | ACI19F2 | ASUS VS197       | 1366x768  | 18.5 | 2011 | [8F11DFBB52BC](<Analog/Ancor Communications/ACI19F2/8F11DFBB52BC>) |
 | Ancor Communi... | ACI19F2 | ASUS             | 1366x768  | 18.5 |      | [45E28C37A5B7](<Analog/Ancor Communications/ACI19F2/45E28C37A5B7>) |
 | Ancor Communi... | ACI19F3 | ASUS VS198       | 1440x900  | 19.1 | 2013 | [36FD8AA3B59B](<Analog/Ancor Communications/ACI19F3/36FD8AA3B59B>) |
+| Ancor Communi... | ACI19F3 | ASUS VS198       | 1440x900  | 19.1 | 2012 | [E47EE404F569](<Analog/Ancor Communications/ACI19F3/E47EE404F569>) |
 | Ancor Communi... | ACI20A1 | PW201            | 1680x1050 | 20.0 | 2007 | [2171636658EC](<Analog/Ancor Communications/ACI20A1/2171636658EC>) |
 | Ancor Communi... | ACI20A2 | VW202            | 1680x1050 | 20.0 | 2008 | [4E7314F461DF](<Analog/Ancor Communications/ACI20A2/4E7314F461DF>) |
 | Ancor Communi... | ACI20A2 | VW202            | 1680x1050 | 20.0 | 2007 | [1C0C1FB5317C](<Analog/Ancor Communications/ACI20A2/1C0C1FB5317C>) |
@@ -1442,10 +1488,12 @@ model and ID.
 | Ancor Communi... | ACI20A4 | ASUS VH202       | 1600x900  | 19.9 | 2010 | [81709332BEFE](<Analog/Ancor Communications/ACI20A4/81709332BEFE>) |
 | Ancor Communi... | ACI20A4 | ASUS VH202       | 1600x900  | 19.9 | 2009 | [3D09803CB99D](<Analog/Ancor Communications/ACI20A4/3D09803CB99D>) |
 | Ancor Communi... | ACI20A4 | ASUS             | 1600x900  | 19.9 |      | [F698F92F1344](<Analog/Ancor Communications/ACI20A4/F698F92F1344>) |
+| Ancor Communi... | ACI20A5 | ASUS MS202       | 1600x900  | 19.9 | 2010 | [28115C0C6C91](<Analog/Ancor Communications/ACI20A5/28115C0C6C91>) |
 | Ancor Communi... | ACI20A6 | VE205            | 1600x900  | 19.9 | 2010 | [2C74EB29BBDE](<Analog/Ancor Communications/ACI20A6/2C74EB29BBDE>) |
 | Ancor Communi... | ACI20A8 | VE208            | 1600x900  | 19.9 | 2012 | [5F7248CFF261](<Analog/Ancor Communications/ACI20A8/5F7248CFF261>) |
 | Ancor Communi... | ACI20A8 | VE208            | 1600x900  | 19.9 | 2011 | [5328940B9AA5](<Analog/Ancor Communications/ACI20A8/5328940B9AA5>) |
 | Ancor Communi... | ACI20A8 | VE208            | 1600x900  | 19.9 | 2010 | [1630980A6BDD](<Analog/Ancor Communications/ACI20A8/1630980A6BDD>) |
+| Ancor Communi... | ACI20B1 | MW201            | 1680x1050 | 20.0 | 2007 | [AA296999464A](<Analog/Ancor Communications/ACI20B1/AA296999464A>) |
 | Ancor Communi... | ACI20B2 | ASUS LS201       | 1440x900  | 20.0 | 2008 | [36B9F6A8B047](<Analog/Ancor Communications/ACI20B2/36B9F6A8B047>) |
 | Ancor Communi... | ACI20C1 | ASUS VS207       | 1366x768  | 19.4 | 2018 | [95014D65C52D](<Analog/Ancor Communications/ACI20C1/95014D65C52D>) |
 | Ancor Communi... | ACI20C1 | ASUS VS207       | 1366x768  | 19.4 | 2016 | [F5B3716C548B](<Analog/Ancor Communications/ACI20C1/F5B3716C548B>) |
@@ -1467,7 +1515,7 @@ model and ID.
 | Ancor Communi... | ACI22A4 | ASUS MK221       | 1680x1050 | 21.7 | 2008 | [E645639AD0D7](<Analog/Ancor Communications/ACI22A4/E645639AD0D7>) |
 | Ancor Communi... | ACI22A5 | ASUS VK222       | 1680x1050 | 22.0 | 2008 | [1526728ED1D1](<Analog/Ancor Communications/ACI22A5/1526728ED1D1>) |
 | Ancor Communi... | ACI22A6 | ASUS VK222H      | 1680x1050 | 24.0 | 2010 | [A5676E605DF6](<Analog/Ancor Communications/ACI22A6/A5676E605DF6>) |
-| Ancor Communi... | ACI22A7 | ASUS VW223       | 1680x1050 | 22.0 | 2008 | [2CB319F2CE9C](<Analog/Ancor Communications/ACI22A7/2CB319F2CE9C>) |
+| Ancor Communi... | ACI22A7 | ASUS VW223       | 1680x1050 | 22.0 | 2008 | [054F0E69ABAB](<Analog/Ancor Communications/ACI22A7/054F0E69ABAB>) |
 | Ancor Communi... | ACI22A8 | ASUS VW221       | 1680x1050 | 22.0 | 2008 | [0A07375EBC7E](<Analog/Ancor Communications/ACI22A8/0A07375EBC7E>) |
 | Ancor Communi... | ACI22A9 | ASUS VW220       | 1680x1050 | 20.0 | 2008 | [21DD2C60D15B](<Analog/Ancor Communications/ACI22A9/21DD2C60D15B>) |
 | Ancor Communi... | ACI22A9 | ASUS             | 1680x1050 | 20.0 |      | [4F4020F3D32D](<Analog/Ancor Communications/ACI22A9/4F4020F3D32D>) |
@@ -1481,6 +1529,7 @@ model and ID.
 | Ancor Communi... | ACI22AD | VW226            | 1680x1050 | 22.0 | 2010 | [6B59E49CFF08](<Analog/Ancor Communications/ACI22AD/6B59E49CFF08>) |
 | Ancor Communi... | ACI22B1 | MW221            | 1680x1050 | 22.0 | 2007 | [0102ED3F1C62](<Analog/Ancor Communications/ACI22B1/0102ED3F1C62>) |
 | Ancor Communi... | ACI22C1 | VX228            | 1920x1080 | 21.7 | 2017 | [C5D4ACA2808C](<Analog/Ancor Communications/ACI22C1/C5D4ACA2808C>) |
+| Ancor Communi... | ACI22C1 | VX228            | 1920x1080 | 21.7 | 2015 | [D73CB8CB1DE9](<Analog/Ancor Communications/ACI22C1/D73CB8CB1DE9>) |
 | Ancor Communi... | ACI22C2 | ASUS VS229       | 1920x1080 | 21.7 | 2019 | [7E1F2D250CED](<Analog/Ancor Communications/ACI22C2/7E1F2D250CED>) |
 | Ancor Communi... | ACI22C2 | ASUS VS229       | 1920x1080 | 21.7 | 2018 | [4C3FE097ACAE](<Analog/Ancor Communications/ACI22C2/4C3FE097ACAE>) |
 | Ancor Communi... | ACI22C2 | ASUS VS229       | 1920x1080 | 21.7 | 2017 | [774BF1E32CEB](<Analog/Ancor Communications/ACI22C2/774BF1E32CEB>) |
@@ -1506,7 +1555,7 @@ model and ID.
 | Ancor Communi... | ACI22E2 | ASUS VW228       | 1920x1080 | 21.7 | 2010 | [78DE8BEECF08](<Analog/Ancor Communications/ACI22E2/78DE8BEECF08>) |
 | Ancor Communi... | ACI22E3 | VW22A            | 1680x1050 | 22.3 | 2014 | [84906B0003A5](<Analog/Ancor Communications/ACI22E3/84906B0003A5>) |
 | Ancor Communi... | ACI22E3 | VW22A            | 1680x1050 | 22.3 | 2013 | [8227EA8311A7](<Analog/Ancor Communications/ACI22E3/8227EA8311A7>) |
-| Ancor Communi... | ACI22E5 | VX229            | 1920x1080 | 21.7 | 2016 | [912683804EDC](<Analog/Ancor Communications/ACI22E5/912683804EDC>) |
+| Ancor Communi... | ACI22E5 | VX229            | 1920x1080 | 21.7 | 2016 | [4F98E3ECF2C1](<Analog/Ancor Communications/ACI22E5/4F98E3ECF2C1>) |
 | Ancor Communi... | ACI22E5 | VX229            | 1920x1080 | 21.7 | 2014 | [D77084153B10](<Analog/Ancor Communications/ACI22E5/D77084153B10>) |
 | Ancor Communi... | ACI22E5 | VX229            | 1920x1080 | 21.7 | 2013 | [C6B60F990125](<Analog/Ancor Communications/ACI22E5/C6B60F990125>) |
 | Ancor Communi... | ACI22F2 | VH226            | 1920x1080 | 21.7 | 2009 | [233CB0B40FC4](<Analog/Ancor Communications/ACI22F2/233CB0B40FC4>) |
@@ -1532,22 +1581,25 @@ model and ID.
 | Ancor Communi... | ACI22FC | ASUS VH228       | 1920x1080 | 21.1 | 2013 | [B59E2E3F3D99](<Analog/Ancor Communications/ACI22FC/B59E2E3F3D99>) |
 | Ancor Communi... | ACI22FC | ASUS VH228       | 1920x1080 | 21.1 | 2012 | [384BABAD51F1](<Analog/Ancor Communications/ACI22FC/384BABAD51F1>) |
 | Ancor Communi... | ACI22FC | ASUS VH228       | 1920x1080 | 21.1 | 2011 | [8640FBAC3071](<Analog/Ancor Communications/ACI22FC/8640FBAC3071>) |
+| Ancor Communi... | ACI22FD | ASUS VS228       | 1920x1080 | 21.7 | 2018 | [0AC5E5E7454B](<Analog/Ancor Communications/ACI22FD/0AC5E5E7454B>) |
 | Ancor Communi... | ACI22FD | ASUS VS228       | 1920x1080 | 21.7 | 2017 | [42A2FD94CB65](<Analog/Ancor Communications/ACI22FD/42A2FD94CB65>) |
 | Ancor Communi... | ACI22FD | ASUS VS228       | 1920x1080 | 21.7 | 2016 | [097DED8B00FF](<Analog/Ancor Communications/ACI22FD/097DED8B00FF>) |
 | Ancor Communi... | ACI22FD | ASUS VS228       | 1920x1080 | 21.7 | 2015 | [0140569484FA](<Analog/Ancor Communications/ACI22FD/0140569484FA>) |
 | Ancor Communi... | ACI22FD | ASUS VS228       | 1920x1080 | 21.7 | 2014 | [1A396A9D40FE](<Analog/Ancor Communications/ACI22FD/1A396A9D40FE>) |
 | Ancor Communi... | ACI22FD | ASUS VS228       | 1920x1080 | 21.7 | 2013 | [53E7E18B267D](<Analog/Ancor Communications/ACI22FD/53E7E18B267D>) |
 | Ancor Communi... | ACI22FD | ASUS VS228       | 1920x1080 | 21.7 | 2012 | [E27ABFBEF708](<Analog/Ancor Communications/ACI22FD/E27ABFBEF708>) |
+| Ancor Communi... | ACI23A1 | ASUS PA238QR     | 1920x1080 | 23.1 | 2015 | [27E1043C7459](<Analog/Ancor Communications/ACI23A1/27E1043C7459>) |
 | Ancor Communi... | ACI23A2 | ASUS PB238       | 1920x1080 | 23.1 | 2014 | [0E241031DEE6](<Analog/Ancor Communications/ACI23A2/0E241031DEE6>) |
 | Ancor Communi... | ACI23A2 | ASUS PB238       | 1920x1080 | 23.1 | 2013 | [01BBECC503E7](<Analog/Ancor Communications/ACI23A2/01BBECC503E7>) |
 | Ancor Communi... | ACI23A2 | ASUS PB238       | 1920x1080 | 23.1 | 2012 | [9755545F937A](<Analog/Ancor Communications/ACI23A2/9755545F937A>) |
 | Ancor Communi... | ACI23B1 | ASUS PA238       | 1920x1080 | 23.1 | 2016 | [D44427DD746D](<Analog/Ancor Communications/ACI23B1/D44427DD746D>) |
 | Ancor Communi... | ACI23B1 | ASUS PA238       | 1920x1080 | 23.1 | 2012 | [EF2A55FB2108](<Analog/Ancor Communications/ACI23B1/EF2A55FB2108>) |
+| Ancor Communi... | ACI23C1 | VX238            | 1920x1080 | 23.1 | 2017 | [321A589CF6E5](<Analog/Ancor Communications/ACI23C1/321A589CF6E5>) |
 | Ancor Communi... | ACI23C1 | VX238            | 1920x1080 | 23.1 | 2016 | [72166CBC701F](<Analog/Ancor Communications/ACI23C1/72166CBC701F>) |
 | Ancor Communi... | ACI23C1 | VX238            | 1920x1080 | 23.1 | 2015 | [3BC49CA68C2D](<Analog/Ancor Communications/ACI23C1/3BC49CA68C2D>) |
 | Ancor Communi... | ACI23C1 | VX238            | 1920x1080 | 23.1 | 2014 | [12BCF4900CA5](<Analog/Ancor Communications/ACI23C1/12BCF4900CA5>) |
 | Ancor Communi... | ACI23C1 | VX238            | 1920x1080 | 23.1 | 2013 | [2AC5EBC2977D](<Analog/Ancor Communications/ACI23C1/2AC5EBC2977D>) |
-| Ancor Communi... | ACI23C1 | VX238            | 1920x1080 | 23.1 | 2012 | [DFF3F384744A](<Analog/Ancor Communications/ACI23C1/DFF3F384744A>) |
+| Ancor Communi... | ACI23C1 | VX238            | 1920x1080 | 23.1 | 2012 | [448A79F743D1](<Analog/Ancor Communications/ACI23C1/448A79F743D1>) |
 | Ancor Communi... | ACI23C1 | VX238            | 1920x1080 | 23.1 |      | [5D311B15BCBC](<Analog/Ancor Communications/ACI23C1/5D311B15BCBC>) |
 | Ancor Communi... | ACI23C2 | ASUS MX239       | 1920x1080 | 24.2 | 2016 | [1F3B9BB02ACE](<Analog/Ancor Communications/ACI23C2/1F3B9BB02ACE>) |
 | Ancor Communi... | ACI23C2 | ASUS MX239       | 1920x1080 | 24.2 | 2015 | [E137588ECBD9](<Analog/Ancor Communications/ACI23C2/E137588ECBD9>) |
@@ -1562,7 +1614,7 @@ model and ID.
 | Ancor Communi... | ACI23D3 | ASUS VG23A       | 1920x1080 | 24.2 | 2012 | [0BE30656CE34](<Analog/Ancor Communications/ACI23D3/0BE30656CE34>) |
 | Ancor Communi... | ACI23E1 | ASUS VX239       | 1920x1080 | 23.1 | 2017 | [28625522CE6B](<Analog/Ancor Communications/ACI23E1/28625522CE6B>) |
 | Ancor Communi... | ACI23E1 | ASUS VX239       | 1920x1080 | 23.1 | 2016 | [35BDA8AF1DE9](<Analog/Ancor Communications/ACI23E1/35BDA8AF1DE9>) |
-| Ancor Communi... | ACI23E1 | ASUS VX239       | 1920x1080 | 23.1 | 2015 | [B964BE3B6478](<Analog/Ancor Communications/ACI23E1/B964BE3B6478>) |
+| Ancor Communi... | ACI23E1 | ASUS VX239       | 1920x1080 | 23.1 | 2015 | [992F2894F50B](<Analog/Ancor Communications/ACI23E1/992F2894F50B>) |
 | Ancor Communi... | ACI23E1 | ASUS VX239       | 1920x1080 | 23.1 | 2014 | [28B1E2D93270](<Analog/Ancor Communications/ACI23E1/28B1E2D93270>) |
 | Ancor Communi... | ACI23E1 | VX239            | 1920x1080 | 23.1 | 2013 | [5CCBCFD30C63](<Analog/Ancor Communications/ACI23E1/5CCBCFD30C63>) |
 | Ancor Communi... | ACI23F1 | ASUS VH232H      | 1920x1080 | 23.4 | 2012 | [6FEE2479C8DB](<Analog/Ancor Communications/ACI23F1/6FEE2479C8DB>) |
@@ -1581,17 +1633,19 @@ model and ID.
 | Ancor Communi... | ACI2491 | ML248            | 1920x1080 | 24.0 | 2011 | [BD11DB1511A4](<Analog/Ancor Communications/ACI2491/BD11DB1511A4>) |
 | Ancor Communi... | ACI2493 | VE247            | 1920x1080 | 24.0 | 2017 | [BE97F147CBA0](<Analog/Ancor Communications/ACI2493/BE97F147CBA0>) |
 | Ancor Communi... | ACI2493 | VE247            | 1920x1080 | 24.0 | 2016 | [2DDE5A8577A5](<Analog/Ancor Communications/ACI2493/2DDE5A8577A5>) |
-| Ancor Communi... | ACI2493 | VE247            | 1920x1080 | 24.0 | 2015 | [D4ECDC6A866F](<Analog/Ancor Communications/ACI2493/D4ECDC6A866F>) |
+| Ancor Communi... | ACI2493 | VE247            | 1920x1080 | 24.0 | 2015 | [D049CE0BB165](<Analog/Ancor Communications/ACI2493/D049CE0BB165>) |
 | Ancor Communi... | ACI2493 | VE247            | 1920x1080 | 24.0 | 2014 | [D164A0C5EDD3](<Analog/Ancor Communications/ACI2493/D164A0C5EDD3>) |
 | Ancor Communi... | ACI2493 | VE247            | 1920x1080 | 24.0 | 2013 | [9EE0A5B6BDF5](<Analog/Ancor Communications/ACI2493/9EE0A5B6BDF5>) |
 | Ancor Communi... | ACI2493 | VE247            | 1920x1080 | 24.0 | 2012 | [82C6EC07B987](<Analog/Ancor Communications/ACI2493/82C6EC07B987>) |
-| Ancor Communi... | ACI2493 | VE247            | 1920x1080 | 24.0 | 2011 | [38648999E74B](<Analog/Ancor Communications/ACI2493/38648999E74B>) |
+| Ancor Communi... | ACI2493 | VE247            | 1920x1080 | 24.0 | 2011 | [07C51001918B](<Analog/Ancor Communications/ACI2493/07C51001918B>) |
+| Ancor Communi... | ACI2494 | VE248            | 1920x1080 | 24.0 | 2021 | [478FD1C6C1DB](<Analog/Ancor Communications/ACI2494/478FD1C6C1DB>) |
 | Ancor Communi... | ACI2494 | VE248            | 1920x1080 | 24.0 | 2016 | [0340E3B5E70A](<Analog/Ancor Communications/ACI2494/0340E3B5E70A>) |
 | Ancor Communi... | ACI2494 | VE248            | 1920x1080 | 24.0 | 2015 | [BC4F1144EDD4](<Analog/Ancor Communications/ACI2494/BC4F1144EDD4>) |
 | Ancor Communi... | ACI2494 | VE248            | 1920x1080 | 24.0 | 2014 | [394931DFA190](<Analog/Ancor Communications/ACI2494/394931DFA190>) |
 | Ancor Communi... | ACI2494 | VE248            | 1920x1080 | 24.0 | 2012 | [A0F17862FE47](<Analog/Ancor Communications/ACI2494/A0F17862FE47>) |
 | Ancor Communi... | ACI2494 | VE248            | 1920x1080 | 24.0 | 2011 | [7684E04DFE91](<Analog/Ancor Communications/ACI2494/7684E04DFE91>) |
 | Ancor Communi... | ACI2496 | ASUS VW247       | 1920x1080 | 24.0 | 2012 | [A5EBC005624A](<Analog/Ancor Communications/ACI2496/A5EBC005624A>) |
+| Ancor Communi... | ACI2496 | ASUS VW247       | 1920x1080 | 24.0 | 2011 | [8A5E057BD535](<Analog/Ancor Communications/ACI2496/8A5E057BD535>) |
 | Ancor Communi... | ACI2497 | ASUS VW248       | 1920x1080 | 24.0 | 2011 | [A52EEE06C5DF](<Analog/Ancor Communications/ACI2497/A52EEE06C5DF>) |
 | Ancor Communi... | ACI2498 | VS248            | 1920x1080 | 24.0 | 2018 | [4F9AE88181F5](<Analog/Ancor Communications/ACI2498/4F9AE88181F5>) |
 | Ancor Communi... | ACI2498 | VS248            | 1920x1080 | 24.0 | 2017 | [549999A05365](<Analog/Ancor Communications/ACI2498/549999A05365>) |
@@ -1621,6 +1675,7 @@ model and ID.
 | Ancor Communi... | ACI24C3 | ASUS VN247       | 1920x1080 | 23.4 | 2013 | [3DC85C3A3ABB](<Analog/Ancor Communications/ACI24C3/3DC85C3A3ABB>) |
 | Ancor Communi... | ACI24C5 | VX248            | 1920x1080 | 24.0 | 2017 | [8834233BFD48](<Analog/Ancor Communications/ACI24C5/8834233BFD48>) |
 | Ancor Communi... | ACI24C5 | VX248            | 1920x1080 | 24.0 | 2015 | [D78078D2B688](<Analog/Ancor Communications/ACI24C5/D78078D2B688>) |
+| Ancor Communi... | ACI24C5 | VX248            | 1920x1080 | 24.0 | 2014 | [7826DB0319BF](<Analog/Ancor Communications/ACI24C5/7826DB0319BF>) |
 | Ancor Communi... | ACI24C7 | ASUS VP247       | 1920x1080 | 23.4 | 2018 | [C1586C940CC9](<Analog/Ancor Communications/ACI24C7/C1586C940CC9>) |
 | Ancor Communi... | ACI24C7 | ASUS VP247       | 1920x1080 | 23.4 | 2017 | [0E5677AFEE0C](<Analog/Ancor Communications/ACI24C7/0E5677AFEE0C>) |
 | Ancor Communi... | ACI24C7 | ASUS VP247       | 1920x1080 | 23.4 | 2016 | [93DFFF80725A](<Analog/Ancor Communications/ACI24C7/93DFFF80725A>) |
@@ -1635,12 +1690,14 @@ model and ID.
 | Ancor Communi... | ACI24F4 | ASUS 24T1E       | 1920x1080 | 23.4 | 2010 | [00A4DE401B43](<Analog/Ancor Communications/ACI24F4/00A4DE401B43>) |
 | Ancor Communi... | ACI24F4 | ASUS 24T1E       | 1920x1080 | 23.4 | 2009 | [D134A59A6725](<Analog/Ancor Communications/ACI24F4/D134A59A6725>) |
 | Ancor Communi... | ACI24F4 | ASUS             | 1920x1080 | 23.4 |      | [3122FC387FF4](<Analog/Ancor Communications/ACI24F4/3122FC387FF4>) |
+| Ancor Communi... | ACI24F7 | ASUS MS246       | 1920x1080 | 23.4 | 2010 | [2AC786686BC0](<Analog/Ancor Communications/ACI24F7/2AC786686BC0>) |
 | Ancor Communi... | ACI24F8 | VE245            | 1920x1080 | 24.0 | 2009 | [FEF9E16D0580](<Analog/Ancor Communications/ACI24F8/FEF9E16D0580>) |
 | Ancor Communi... | ACI24FA | ASUS VH242       | 1920x1080 | 23.4 | 2011 | [C867C4EB3071](<Analog/Ancor Communications/ACI24FA/C867C4EB3071>) |
 | Ancor Communi... | ACI24FA | ASUS VH242       | 1920x1080 | 23.4 | 2010 | [763045BB723E](<Analog/Ancor Communications/ACI24FA/763045BB723E>) |
 | Ancor Communi... | ACI24FA | ASUS             | 1920x1080 | 23.4 |      | [AEB7D00EF617](<Analog/Ancor Communications/ACI24FA/AEB7D00EF617>) |
 | Ancor Communi... | ACI24FE | LS248            | 1920x1080 | 24.0 | 2011 | [E5A78A622803](<Analog/Ancor Communications/ACI24FE/E5A78A622803>) |
 | Ancor Communi... | ACI26A3 | ASUS             | 1920x1200 | 25.5 |      | [1B9168AB2863](<Analog/Ancor Communications/ACI26A3/1B9168AB2863>) |
+| Ancor Communi... | ACI2726 | ASUS VG278HV     | 1920x1080 | 27.2 | 2016 | [E443EFF3B7C0](<Analog/Ancor Communications/ACI2726/E443EFF3B7C0>) |
 | Ancor Communi... | ACI27A1 | VS278            | 1920x1080 | 27.2 | 2014 | [0DC44CC8712F](<Analog/Ancor Communications/ACI27A1/0DC44CC8712F>) |
 | Ancor Communi... | ACI27A1 | VS278            | 1920x1080 | 27.2 | 2013 | [723FF82CAFC5](<Analog/Ancor Communications/ACI27A1/723FF82CAFC5>) |
 | Ancor Communi... | ACI27A1 | VS278            | 1920x1080 | 27.2 | 2012 | [5F7F3D3DBB2F](<Analog/Ancor Communications/ACI27A1/5F7F3D3DBB2F>) |
@@ -1663,7 +1720,8 @@ model and ID.
 | Ancor Communi... | ACI27F6 | ASUS VE278       | 1920x1080 | 27.2 | 2017 | [37125EBA0C3C](<Analog/Ancor Communications/ACI27F6/37125EBA0C3C>) |
 | Ancor Communi... | ACI27F6 | ASUS VE278       | 1920x1080 | 27.2 | 2016 | [57B65988D620](<Analog/Ancor Communications/ACI27F6/57B65988D620>) |
 | Ancor Communi... | ACI27F6 | ASUS VE278       | 1920x1080 | 27.2 | 2013 | [5FC70767B6EC](<Analog/Ancor Communications/ACI27F6/5FC70767B6EC>) |
-| Ancor Communi... | ACI27F6 | ASUS VE278       | 1920x1080 | 27.2 | 2012 | [C3B18D7E6E46](<Analog/Ancor Communications/ACI27F6/C3B18D7E6E46>) |
+| Ancor Communi... | ACI27F6 | ASUS VE278       | 1920x1080 | 27.2 | 2012 | [6CEB4B398B5A](<Analog/Ancor Communications/ACI27F6/6CEB4B398B5A>) |
+| Ancor Communi... | ACI27F6 | ASUS VE278       | 1920x1080 | 27.2 | 2011 | [E6FF77B53E0D](<Analog/Ancor Communications/ACI27F6/E6FF77B53E0D>) |
 | Ancor Communi... | ACI27F6 | ASUS VE278       | 1920x1080 | 27.2 | 2010 | [3FDF962F52A9](<Analog/Ancor Communications/ACI27F6/3FDF962F52A9>) |
 | Ancor Communi... | ACI27F6 | ASUS             | 1920x1080 | 27.2 |      | [50F1B8A76B2C](<Analog/Ancor Communications/ACI27F6/50F1B8A76B2C>) |
 | Ancor Communi... | ACI27F7 | ASUS VK278       | 1920x1080 | 27.2 | 2011 | [A8B6027C6FA8](<Analog/Ancor Communications/ACI27F7/A8B6027C6FA8>) |
@@ -1674,18 +1732,21 @@ model and ID.
 | Aquarius         | AQS1910 | TF1910W          | 1440x900  | 18.6 | 2009 | [2E69517154A4](<Analog/Aquarius/AQS1910/2E69517154A4>) |
 | Arnos Instrum... | AIC0019 | H-W19            | 1440x900  | 18.6 | 2008 | [5A05B041CE48](<Analog/Arnos Instruments/AIC0019/5A05B041CE48>) |
 | Arnos Instrum... | AIC0022 | H-W22            | 1680x1050 | 22.0 | 2007 | [66318A887D6E](<Analog/Arnos Instruments/AIC0022/66318A887D6E>) |
-| Arnos Instrum... | AIC06F4 | K-B17            | 1280x1024 | 17.1 | 2007 | [620C8CB5E970](<Analog/Arnos Instruments/AIC06F4/620C8CB5E970>) |
+| Arnos Instrum... | AIC06F4 | K-B17            | 1280x1024 | 17.1 | 2007 | [58EFA6475E07](<Analog/Arnos Instruments/AIC06F4/58EFA6475E07>) |
 | Arnos Instrum... | AIC07BC | A-19             | 1280x1024 | 19.1 | 2006 | [354922EC2D1A](<Analog/Arnos Instruments/AIC07BC/354922EC2D1A>) |
 | Arnos Instrum... | AIC1003 | L-W22            | 1920x1080 | 21.7 | 2016 | [40FFCB82DD0E](<Analog/Arnos Instruments/AIC1003/40FFCB82DD0E>) |
 | Arnos Instrum... | AIC1171 | S-17             | 1280x1024 | 17.1 |      | [3EFC6CBF8D8D](<Analog/Arnos Instruments/AIC1171/3EFC6CBF8D8D>) |
 | Arnos Instrum... | AIC1720 | E-171            | 1280x1024 | 17.1 |      | [4E603B3EB068](<Analog/Arnos Instruments/AIC1720/4E603B3EB068>) |
 | Arnos Instrum... | AIC1960 | M-19             | 1280x1024 | 18.8 |      | [8A5B6B97B484](<Analog/Arnos Instruments/AIC1960/8A5B6B97B484>) |
 | Arnos Instrum... | AIC1979 | H-19             | 1280x1024 | 19.1 | 2009 | [CD185F8B5ABD](<Analog/Arnos Instruments/AIC1979/CD185F8B5ABD>) |
+| Arnos Instrum... | AIC1BEF | AGneovo F-15     | 1024x768  | 15.4 |      | [3809C9666DF1](<Analog/Arnos Instruments/AIC1BEF/3809C9666DF1>) |
 | Arnos Instrum... | AIC4191 | F-419            | 1280x1024 | 18.8 |      | [1908FCE0BF77](<Analog/Arnos Instruments/AIC4191/1908FCE0BF77>) |
 | Arnos Instrum... | AIC7150 | F-17             | 1280x1024 | 17.1 |      | [E06EA15BD327](<Analog/Arnos Instruments/AIC7150/E06EA15BD327>) |
 | Arnos Instrum... | AIC7151 | F-15             | 1024x768  | 14.9 |      | [3AF93505CECD](<Analog/Arnos Instruments/AIC7151/3AF93505CECD>) |
 | Arnos Instrum... | AIC7450 | F-417            | 1280x1024 | 17.1 |      | [06E3E65E2795](<Analog/Arnos Instruments/AIC7450/06E3E65E2795>) |
 | Arnos Instrum... | AIC7451 | F-415            | 1024x768  | 14.9 |      | [1902E6883DBE](<Analog/Arnos Instruments/AIC7451/1902E6883DBE>) |
+| Arnos Instrum... | AIC9450 | F-419            | 1280x1024 | 18.8 | 2006 | [03E06C5E4A47](<Analog/Arnos Instruments/AIC9450/03E06C5E4A47>) |
+| Arnos Instrum... | AIC9711 | K-A19            | 1440x900  | 18.6 | 2007 | [69F00C815F49](<Analog/Arnos Instruments/AIC9711/69F00C815F49>) |
 | Ativa            | ATV0001 | AT220H           | 1920x1080 | 21.9 | 2010 | [1DE487F86795](<Analog/Ativa/ATV0001/1DE487F86795>) |
 | Ativa            | ATV0001 | AT220H           | 1920x1080 | 21.9 | 2009 | [CFB181C74DDB](<Analog/Ativa/ATV0001/CFB181C74DDB>) |
 | Ativa            | ATV0100 | AT22HZR          | 1920x1080 | 21.7 | 2009 | [87053AADE251](<Analog/Ativa/ATV0100/87053AADE251>) |
@@ -1700,6 +1761,7 @@ model and ID.
 | BUFFALO          | BUF1719 | FTD-G722AS2      | 1280x1024 | 17.1 | 2007 | [F9A7482257FD](<Analog/BUFFALO/BUF1719/F9A7482257FD>) |
 | BUFFALO          | BUF1719 | FTD-G722AS2      | 1280x1024 | 17.1 | 2006 | [D5F17C813410](<Analog/BUFFALO/BUF1719/D5F17C813410>) |
 | Balance          | BAL93A0 | CM2019           | 1280x1024 | 18.8 |      | [9F9042E7DE74](<Analog/Balance/BAL93A0/9F9042E7DE74>) |
+| Bangho           | BGO0215 | EM2110WL         | 1920x1080 | 21.7 | 2012 | [AD0056E22B2D](<Analog/Bangho/BGO0215/AD0056E22B2D>) |
 | Beko             | BEK1562 | B16W-VJAZ1       | 1360x768  | 15.3 |      | [50F979964ACB](<Analog/Beko/BEK1562/50F979964ACB>) |
 | Beko             | BEK3233 | B22WVJAZ1        | 1680x1050 | 21.3 |      | [0084A0F9103C](<Analog/Beko/BEK3233/0084A0F9103C>) |
 | Belinea          | MAX05E4 |                  | 1024x768  | 14.9 |      | [980A408EAB34](<Analog/Belinea/MAX05E4/980A408EAB34>) |
@@ -1712,6 +1774,7 @@ model and ID.
 | Belinea          | MAX0609 | 10 15 45 Maxd... | 1024x768  | 14.9 |      | [0DD2ECCE7E39](<Analog/Belinea/MAX0609/0DD2ECCE7E39>) |
 | Belinea          | MAX06A7 | 101730           | 1280x1024 | 16.8 |      | [A1CB1E5AC97B](<Analog/Belinea/MAX06A7/A1CB1E5AC97B>) |
 | Belinea          | MAX06A8 |                  | 1600x1200 | 15.7 |      | [AC5524F3C74D](<Analog/Belinea/MAX06A8/AC5524F3C74D>) |
+| Belinea          | MAX06AD | B_101751         | 1280x1024 | 17.1 |      | [5759626B7F50](<Analog/Belinea/MAX06AD/5759626B7F50>) |
 | Belinea          | MAX06B3 | L7E              | 1280x1024 | 17.3 |      | [36CB3DB8F5C0](<Analog/Belinea/MAX06B3/36CB3DB8F5C0>) |
 | Belinea          | MAX06B5 | B101715          | 1280x1024 | 17.3 |      | [02C7A39ADD67](<Analog/Belinea/MAX06B5/02C7A39ADD67>) |
 | Belinea          | MAX06B7 | B_101725         | 1280x1024 | 17.1 |      | [AC78E652AFEE](<Analog/Belinea/MAX06B7/AC78E652AFEE>) |
@@ -1736,7 +1799,7 @@ model and ID.
 | Belinea          | MAX0770 | 03AF01100056 ... | 1280x1024 | 19.1 |      | [9AA7C946B9E9](<Analog/Belinea/MAX0770/9AA7C946B9E9>) |
 | Belinea          | MAX0775 | 101905           | 1280x1024 | 19.1 |      | [C4B01B29F0F2](<Analog/Belinea/MAX0775/C4B01B29F0F2>) |
 | Belinea          | MAX0776 |                  | 1280x1024 | 19.1 |      | [6C9EDFFABB7C](<Analog/Belinea/MAX0776/6C9EDFFABB7C>) |
-| Belinea          | MAX0778 |                  | 1280x1024 | 18.8 |      | [A7653AAEF47F](<Analog/Belinea/MAX0778/A7653AAEF47F>) |
+| Belinea          | MAX0778 |                  | 1280x1024 | 18.8 |      | [7A975624D270](<Analog/Belinea/MAX0778/7A975624D270>) |
 | Belinea          | MAX077B | MAXDATA B101915  | 1280x1024 | 19.1 |      | [460D2AE2C4D9](<Analog/Belinea/MAX077B/460D2AE2C4D9>) |
 | Belinea          | MAX077C | MAXDATA B101902  | 1280x1024 | 19.1 |      | [3B5636753527](<Analog/Belinea/MAX077C/3B5636753527>) |
 | Belinea          | MAX077E | 101911           | 1280x1024 | 19.1 |      | [7F8D73FA0C3D](<Analog/Belinea/MAX077E/7F8D73FA0C3D>) |
@@ -1747,6 +1810,7 @@ model and ID.
 | Belinea          | MAX0784 | B101925          | 1280x1024 | 18.8 |      | [C99721CACCBF](<Analog/Belinea/MAX0784/C99721CACCBF>) |
 | Belinea          | MAX0785 | B101927          | 1280x1024 | 18.8 | 2006 | [F8333AB4B0FE](<Analog/Belinea/MAX0785/F8333AB4B0FE>) |
 | Belinea          | MAX0785 | B101927          | 1280x1024 | 18.8 |      | [A4D1DAC504B0](<Analog/Belinea/MAX0785/A4D1DAC504B0>) |
+| Belinea          | MAX0786 |                  | 1280x1024 | 19.1 |      | [7F94A76FA1D9](<Analog/Belinea/MAX0786/7F94A76FA1D9>) |
 | Belinea          | MAX0787 | B101935          | 1280x1024 | 20.2 | 2006 | [0F6F30ACF42C](<Analog/Belinea/MAX0787/0F6F30ACF42C>) |
 | Belinea          | MAX0788 | 101903           | 1280x1024 | 19.1 | 2006 | [4F78FCDEBEB6](<Analog/Belinea/MAX0788/4F78FCDEBEB6>) |
 | Belinea          | MAX078B | 1905 S1          | 1280x1024 | 19.1 | 2006 | [446E22D238F5](<Analog/Belinea/MAX078B/446E22D238F5>) |
@@ -1764,7 +1828,7 @@ model and ID.
 | Belinea          | MAX07D8 | 2080S1 MAXDATA   | 1600x1200 | 20.2 | 2006 | [F1C57FC88A5C](<Analog/Belinea/MAX07D8/F1C57FC88A5C>) |
 | Belinea          | MAX0899 | Bel2225S1W       | 1680x1050 | 22.0 | 2008 | [74AB6E401CA8](<Analog/Belinea/MAX0899/74AB6E401CA8>) |
 | Belinea          | MAX0899 | Bel2225S1W       | 1680x1050 | 22.0 | 2007 | [1FB71CFB711C](<Analog/Belinea/MAX0899/1FB71CFB711C>) |
-| Belinea          | MAX089A | BelArtist22W     | 1680x1050 | 22.0 | 2006 | [A57551B66762](<Analog/Belinea/MAX089A/A57551B66762>) |
+| Belinea          | MAX089A | BelArtist22W     | 1680x1050 | 22.0 | 2006 | [8E63EAAC17C3](<Analog/Belinea/MAX089A/8E63EAAC17C3>) |
 | Belinea          | MAX089D |                  | 1680x1050 | 22.0 | 2007 | [52E369C132F5](<Analog/Belinea/MAX089D/52E369C132F5>) |
 | Belinea          | MAX0962 |                  | 1920x1200 | 24.2 | 2007 | [29D5C2E0A265](<Analog/Belinea/MAX0962/29D5C2E0A265>) |
 | Belinea          | MAX0BC2 |                  | 1280x1024 | 15.7 |      | [B200CF5BA568](<Analog/Belinea/MAX0BC2/B200CF5BA568>) |
@@ -1773,13 +1837,14 @@ model and ID.
 | Belinea          | MAX1F90 | 108080           | 2048x1536 | 20.0 |      | [782852FFC628](<Analog/Belinea/MAX1F90/782852FFC628>) |
 | Belinea          | MAX2150 | Analog           | 1920x1080 | 21.5 | 2018 | [11223277CAF2](<Analog/Belinea/MAX2150/11223277CAF2>) |
 | BenQ             | BNQ2802 | PJ               | 1600x1200 |      | 2013 | [5913EAC9006B](<Analog/BenQ/BNQ2802/5913EAC9006B>) |
+| BenQ             | BNQ7001 | MP720            | 1280x1024 |      | 2006 | [9CC1600EC6D8](<Analog/BenQ/BNQ7001/9CC1600EC6D8>) |
 | BenQ             | BNQ7588 | ML2441           | 1920x1080 | 24.0 | 2010 | [270EBFD74BB0](<Analog/BenQ/BNQ7588/270EBFD74BB0>) |
 | BenQ             | BNQ7591 | MK2443           | 1920x1080 | 24.0 | 2010 | [F93579E96265](<Analog/BenQ/BNQ7591/F93579E96265>) |
 | BenQ             | BNQ7637 |                  | 1280x1024 | 18.2 |      | [412801B1F8E2](<Analog/BenQ/BNQ7637/412801B1F8E2>) |
 | BenQ             | BNQ7638 | FP               | 1280x1024 | 17.1 |      | [31B0554B1313](<Analog/BenQ/BNQ7638/31B0554B1313>) |
 | BenQ             | BNQ7643 | FP581s           | 1024x768  | 14.9 |      | [4D356BD465AC](<Analog/BenQ/BNQ7643/4D356BD465AC>) |
 | BenQ             | BNQ7645 | FP991            | 1280x1024 | 19.1 |      | [6C91C14AC8BE](<Analog/BenQ/BNQ7645/6C91C14AC8BE>) |
-| BenQ             | BNQ7650 |                  | 1024x768  | 15.2 |      | [EAB6F1E4D65F](<Analog/BenQ/BNQ7650/EAB6F1E4D65F>) |
+| BenQ             | BNQ7650 | FP557s           | 1024x768  | 15.2 |      | [DFE32C45C1FB](<Analog/BenQ/BNQ7650/DFE32C45C1FB>) |
 | BenQ             | BNQ7652 | FP547            | 1024x768  | 14.9 |      | [1300E3CEDF8A](<Analog/BenQ/BNQ7652/1300E3CEDF8A>) |
 | BenQ             | BNQ7659 |                  | 1280x1024 | 17.1 |      | [101A1E711FE0](<Analog/BenQ/BNQ7659/101A1E711FE0>) |
 | BenQ             | BNQ765B | FP767            | 1280x1024 | 17.1 |      | [240EB70C6A31](<Analog/BenQ/BNQ765B/240EB70C6A31>) |
@@ -1795,7 +1860,7 @@ model and ID.
 | BenQ             | BNQ7680 | T903             | 1280x1024 | 19.1 |      | [7F56AD9F7318](<Analog/BenQ/BNQ7680/7F56AD9F7318>) |
 | BenQ             | BNQ7681 | T904             | 1280x1024 | 19.1 |      | [747E4AAA313D](<Analog/BenQ/BNQ7681/747E4AAA313D>) |
 | BenQ             | BNQ7682 | FP71E+           | 1280x1024 | 17.1 |      | [76969D56BEC8](<Analog/BenQ/BNQ7682/76969D56BEC8>) |
-| BenQ             | BNQ7684 | FP937s           | 1280x1024 | 19.1 |      | [C848607BF509](<Analog/BenQ/BNQ7684/C848607BF509>) |
+| BenQ             | BNQ7684 | FP937s           | 1280x1024 | 19.1 |      | [92994E56C555](<Analog/BenQ/BNQ7684/92994E56C555>) |
 | BenQ             | BNQ7688 | FP71G+           | 1280x1024 | 17.1 | 2007 | [319E71726C6F](<Analog/BenQ/BNQ7688/319E71726C6F>) |
 | BenQ             | BNQ7688 | T705             | 1280x1024 | 17.1 | 2006 | [0B96D4D69ABC](<Analog/BenQ/BNQ7688/0B96D4D69ABC>) |
 | BenQ             | BNQ7688 | FP71G            | 1280x1024 | 17.1 |      | [203123417645](<Analog/BenQ/BNQ7688/203123417645>) |
@@ -1850,7 +1915,7 @@ model and ID.
 | BenQ             | BNQ7708 | FP73GS           | 1280x1024 | 16.8 | 2007 | [297A7ACB2396](<Analog/BenQ/BNQ7708/297A7ACB2396>) |
 | BenQ             | BNQ7711 | FP93GW           | 1440x900  | 19.1 | 2007 | [8A7FCE98EE72](<Analog/BenQ/BNQ7711/8A7FCE98EE72>) |
 | BenQ             | BNQ7713 | T91W             | 1440x900  | 19.1 | 2007 | [323A6369BBA3](<Analog/BenQ/BNQ7713/323A6369BBA3>) |
-| BenQ             | BNQ7714 | T71W             | 1440x900  | 17.2 | 2007 | [E977AC80C170](<Analog/BenQ/BNQ7714/E977AC80C170>) |
+| BenQ             | BNQ7714 | T71W             | 1440x900  | 17.2 | 2007 | [6D41157771C5](<Analog/BenQ/BNQ7714/6D41157771C5>) |
 | BenQ             | BNQ7719 | BenQT221W        | 1680x1050 | 21.7 | 2008 | [667E4727E105](<Analog/BenQ/BNQ7719/667E4727E105>) |
 | BenQ             | BNQ7719 | T201W            | 1680x1050 | 20.0 | 2007 | [0FCF02C8AB4D](<Analog/BenQ/BNQ7719/0FCF02C8AB4D>) |
 | BenQ             | BNQ7719 | T221WA           | 1680x1050 | 21.7 | 2007 | [970BC354D44D](<Analog/BenQ/BNQ7719/970BC354D44D>) |
@@ -1890,6 +1955,7 @@ model and ID.
 | BenQ             | BNQ7819 | G610HDA          | 1366x768  | 15.3 | 2011 | [9D17A789F65F](<Analog/BenQ/BNQ7819/9D17A789F65F>) |
 | BenQ             | BNQ7819 | G610HDA          | 1366x768  | 15.3 | 2009 | [41256499E39F](<Analog/BenQ/BNQ7819/41256499E39F>) |
 | BenQ             | BNQ781E |                  | 1600x900  | 19.9 | 2011 | [BDCD52B53029](<Analog/BenQ/BNQ781E/BDCD52B53029>) |
+| BenQ             | BNQ781E | G2020HD          | 1600x900  | 19.9 | 2010 | [32862C6A13E9](<Analog/BenQ/BNQ781E/32862C6A13E9>) |
 | BenQ             | BNQ781E |                  | 1600x900  | 19.9 | 2009 | [8D50728E64DC](<Analog/BenQ/BNQ781E/8D50728E64DC>) |
 | BenQ             | BNQ7820 | G2220HD          | 1920x1080 | 21.7 | 2011 | [0F40C5779350](<Analog/BenQ/BNQ7820/0F40C5779350>) |
 | BenQ             | BNQ7820 | G2220HD          | 1920x1080 | 21.7 | 2010 | [04BBA8B7C0BA](<Analog/BenQ/BNQ7820/04BBA8B7C0BA>) |
@@ -1912,7 +1978,8 @@ model and ID.
 | BenQ             | BNQ783F | G2420HD          | 1920x1080 | 24.0 | 2010 | [467EAD00AA06](<Analog/BenQ/BNQ783F/467EAD00AA06>) |
 | BenQ             | BNQ783F |                  | 1920x1080 | 24.0 |      | [0189E013775F](<Analog/BenQ/BNQ783F/0189E013775F>) |
 | BenQ             | BNQ7841 |                  | 1920x1080 | 23.8 | 2011 | [286C8CB1A39F](<Analog/BenQ/BNQ7841/286C8CB1A39F>) |
-| BenQ             | BNQ7841 |                  | 1920x1080 | 23.8 | 2010 | [451837EFF88C](<Analog/BenQ/BNQ7841/451837EFF88C>) |
+| BenQ             | BNQ7841 |                  | 1920x1080 | 23.8 | 2010 | [433FD585BA8E](<Analog/BenQ/BNQ7841/433FD585BA8E>) |
+| BenQ             | BNQ7841 |                  | 1920x1080 | 23.8 | 2009 | [D2B9F0C4AE5B](<Analog/BenQ/BNQ7841/D2B9F0C4AE5B>) |
 | BenQ             | BNQ7841 |                  | 1920x1080 | 23.8 |      | [B3509782634B](<Analog/BenQ/BNQ7841/B3509782634B>) |
 | BenQ             | BNQ7843 | G925HDA          | 1366x768  | 18.5 | 2011 | [079729085DAE](<Analog/BenQ/BNQ7843/079729085DAE>) |
 | BenQ             | BNQ7843 | G925HDA          | 1366x768  | 18.5 | 2010 | [3646691B33C7](<Analog/BenQ/BNQ7843/3646691B33C7>) |
@@ -1949,7 +2016,7 @@ model and ID.
 | BenQ             | BNQ7868 |                  | 1600x900  | 19.9 | 2011 | [67DC90E7A0B6](<Analog/BenQ/BNQ7868/67DC90E7A0B6>) |
 | BenQ             | BNQ7868 |                  | 1600x900  | 19.9 | 2010 | [0553A6430BB6](<Analog/BenQ/BNQ7868/0553A6430BB6>) |
 | BenQ             | BNQ7870 | GL930A           | 1366x768  | 18.5 | 2011 | [CF8CE1B86490](<Analog/BenQ/BNQ7870/CF8CE1B86490>) |
-| BenQ             | BNQ7870 | GL930A           | 1366x768  | 18.5 | 2010 | [6F2BE5F60F02](<Analog/BenQ/BNQ7870/6F2BE5F60F02>) |
+| BenQ             | BNQ7870 | GL930A           | 1366x768  | 18.5 | 2010 | [5541C688BEC5](<Analog/BenQ/BNQ7870/5541C688BEC5>) |
 | BenQ             | BNQ7874 | GL2230           | 1920x1080 | 21.7 | 2011 | [6C201C8C288F](<Analog/BenQ/BNQ7874/6C201C8C288F>) |
 | BenQ             | BNQ7874 |                  | 1920x1080 | 21.7 |      | [9D648FB1285B](<Analog/BenQ/BNQ7874/9D648FB1285B>) |
 | BenQ             | BNQ7878 | GL2430           | 1920x1080 | 24.0 | 2011 | [0DEE0F85B057](<Analog/BenQ/BNQ7878/0DEE0F85B057>) |
@@ -1965,6 +2032,7 @@ model and ID.
 | BenQ             | BNQ788D |                  | 1920x1080 | 21.7 | 2011 | [77472BD8CAF6](<Analog/BenQ/BNQ788D/77472BD8CAF6>) |
 | BenQ             | BNQ788E | G2225HD          | 1920x1080 | 21.7 | 2011 | [27DD4420E0C1](<Analog/BenQ/BNQ788E/27DD4420E0C1>) |
 | BenQ             | BNQ7895 |                  | 1366x768  | 15.3 | 2011 | [434EF4C1E7BF](<Analog/BenQ/BNQ7895/434EF4C1E7BF>) |
+| BenQ             | BNQ7896 | GL950A           | 1366x768  | 18.5 | 2012 | [B4561792A0DF](<Analog/BenQ/BNQ7896/B4561792A0DF>) |
 | BenQ             | BNQ7896 | GL950A           | 1366x768  | 18.5 | 2011 | [BD50E52F03CB](<Analog/BenQ/BNQ7896/BD50E52F03CB>) |
 | BenQ             | BNQ7897 | GL951A           | 1440x900  | 19.1 | 2013 | [2019B40708F4](<Analog/BenQ/BNQ7897/2019B40708F4>) |
 | BenQ             | BNQ7898 | G950A            | 1366x768  | 18.5 | 2012 | [0FBEF0AEF730](<Analog/BenQ/BNQ7898/0FBEF0AEF730>) |
@@ -1973,6 +2041,7 @@ model and ID.
 | BenQ             | BNQ789A | GL2250           | 1920x1080 | 21.7 | 2017 | [012FA6C01A4B](<Analog/BenQ/BNQ789A/012FA6C01A4B>) |
 | BenQ             | BNQ789A | GL2250           | 1920x1080 | 21.7 | 2016 | [2DEE3062E49C](<Analog/BenQ/BNQ789A/2DEE3062E49C>) |
 | BenQ             | BNQ789A | GL2250           | 1920x1080 | 21.7 | 2015 | [208BF21911B3](<Analog/BenQ/BNQ789A/208BF21911B3>) |
+| BenQ             | BNQ789A | GL2250           | 1920x1080 | 21.7 | 2014 | [467B7E1A20DE](<Analog/BenQ/BNQ789A/467B7E1A20DE>) |
 | BenQ             | BNQ789A | GL2250           | 1920x1080 | 21.7 | 2013 | [77739F8387C8](<Analog/BenQ/BNQ789A/77739F8387C8>) |
 | BenQ             | BNQ789A | GL2250           | 1920x1080 | 21.7 | 2012 | [2C2DC0303E81](<Analog/BenQ/BNQ789A/2C2DC0303E81>) |
 | BenQ             | BNQ789A | GL2250           | 1920x1080 | 21.7 | 2011 | [B8D2E00E5554](<Analog/BenQ/BNQ789A/B8D2E00E5554>) |
@@ -1983,6 +2052,7 @@ model and ID.
 | BenQ             | BNQ78A0 | GL2250H          | 1920x1080 | 21.7 | 2018 | [3D80B1420247](<Analog/BenQ/BNQ78A0/3D80B1420247>) |
 | BenQ             | BNQ78A0 | GL2250H          | 1920x1080 | 21.7 | 2016 | [24920BC7A250](<Analog/BenQ/BNQ78A0/24920BC7A250>) |
 | BenQ             | BNQ78A0 | GL2250H          | 1920x1080 | 21.7 | 2015 | [6C11BA5C040D](<Analog/BenQ/BNQ78A0/6C11BA5C040D>) |
+| BenQ             | BNQ78A0 | GL2250H          | 1920x1080 | 21.7 | 2014 | [230573B8C57F](<Analog/BenQ/BNQ78A0/230573B8C57F>) |
 | BenQ             | BNQ78A4 | GL2450           | 1920x1080 | 24.0 | 2017 | [0C8060FC4B2C](<Analog/BenQ/BNQ78A4/0C8060FC4B2C>) |
 | BenQ             | BNQ78A4 | GL2450           | 1920x1080 | 24.0 | 2016 | [26C69BDC796E](<Analog/BenQ/BNQ78A4/26C69BDC796E>) |
 | BenQ             | BNQ78A4 | GL2450           | 1920x1080 | 24.0 | 2014 | [2BFDCDF44FF7](<Analog/BenQ/BNQ78A4/2BFDCDF44FF7>) |
@@ -2014,13 +2084,14 @@ model and ID.
 | BenQ             | BNQ78BC | GW2250H          | 1920x1080 | 21.7 | 2012 | [7CD94879CDF8](<Analog/BenQ/BNQ78BC/7CD94879CDF8>) |
 | BenQ             | BNQ78C0 | GW2450H          | 1920x1080 | 24.0 | 2013 | [AD0F084B81C0](<Analog/BenQ/BNQ78C0/AD0F084B81C0>) |
 | BenQ             | BNQ78C0 | GW2450H          | 1920x1080 | 24.0 | 2012 | [4D6FA7DF1381](<Analog/BenQ/BNQ78C0/4D6FA7DF1381>) |
-| BenQ             | BNQ78C2 | GW2750H          | 1920x1080 | 27.2 | 2012 | [6539E1B534BE](<Analog/BenQ/BNQ78C2/6539E1B534BE>) |
+| BenQ             | BNQ78C2 | GW2750H          | 1920x1080 | 27.2 | 2012 | [013775AA4915](<Analog/BenQ/BNQ78C2/013775AA4915>) |
 | BenQ             | BNQ78C4 | GW2260           | 1920x1080 | 21.7 | 2013 | [849085CDA125](<Analog/BenQ/BNQ78C4/849085CDA125>) |
 | BenQ             | BNQ78C4 | GW2260           | 1920x1080 | 21.7 | 2012 | [FDD3C792523A](<Analog/BenQ/BNQ78C4/FDD3C792523A>) |
 | BenQ             | BNQ78C4 |                  | 1920x1080 | 21.7 |      | [E42862B0F14C](<Analog/BenQ/BNQ78C4/E42862B0F14C>) |
 | BenQ             | BNQ78C5 | GW2460           | 1920x1080 | 24.0 | 2013 | [1F91301DF91F](<Analog/BenQ/BNQ78C5/1F91301DF91F>) |
 | BenQ             | BNQ78C5 |                  | 1920x1080 | 24.0 |      | [FEF6B961CF99](<Analog/BenQ/BNQ78C5/FEF6B961CF99>) |
 | BenQ             | BNQ78C6 | GW2760           | 1920x1080 | 27.2 | 2015 | [75627974AD2C](<Analog/BenQ/BNQ78C6/75627974AD2C>) |
+| BenQ             | BNQ78C6 | GW2760           | 1920x1080 | 27.2 | 2014 | [060E79CAF238](<Analog/BenQ/BNQ78C6/060E79CAF238>) |
 | BenQ             | BNQ78C6 | GW2760           | 1920x1080 | 27.2 | 2013 | [36260B11BAFA](<Analog/BenQ/BNQ78C6/36260B11BAFA>) |
 | BenQ             | BNQ78C7 | GL955            | 1366x768  | 18.5 | 2016 | [590FD4BD10F7](<Analog/BenQ/BNQ78C7/590FD4BD10F7>) |
 | BenQ             | BNQ78C7 | GL955            | 1366x768  | 18.5 | 2015 | [0F502D6E63CC](<Analog/BenQ/BNQ78C7/0F502D6E63CC>) |
@@ -2083,7 +2154,9 @@ model and ID.
 | BenQ             | BNQ78E8 | GW2280           | 1920x1080 | 21.7 | 2018 | [86500510E0BF](<Analog/BenQ/BNQ78E8/86500510E0BF>) |
 | BenQ             | BNQ78E9 | GW2283           | 1920x1080 | 21.7 | 2020 | [7A4CBC84C17E](<Analog/BenQ/BNQ78E9/7A4CBC84C17E>) |
 | BenQ             | BNQ78E9 | GW2283           | 1920x1080 | 21.7 | 2019 | [4A2E302D0FF6](<Analog/BenQ/BNQ78E9/4A2E302D0FF6>) |
+| BenQ             | BNQ78EC | GL2780           | 1920x1080 | 27.2 | 2020 | [D3958ACE6B61](<Analog/BenQ/BNQ78EC/D3958ACE6B61>) |
 | BenQ             | BNQ78ED | GL2480           | 1920x1080 | 24.0 | 2020 | [ABD338C874C0](<Analog/BenQ/BNQ78ED/ABD338C874C0>) |
+| BenQ             | BNQ78ED | GL2480           | 1920x1080 | 24.0 | 2019 | [D9909F0B5489](<Analog/BenQ/BNQ78ED/D9909F0B5489>) |
 | BenQ             | BNQ7901 | E700             | 1280x1024 | 17.1 | 2007 | [ADF362EFA915](<Analog/BenQ/BNQ7901/ADF362EFA915>) |
 | BenQ             | BNQ7903 | E900             | 1280x1024 | 19.1 | 2008 | [16F43BC6658F](<Analog/BenQ/BNQ7903/16F43BC6658F>) |
 | BenQ             | BNQ7903 | E900             | 1280x1024 | 19.1 | 2007 | [271D26A252E9](<Analog/BenQ/BNQ7903/271D26A252E9>) |
@@ -2095,7 +2168,7 @@ model and ID.
 | BenQ             | BNQ790B | E2200HD          | 1920x1080 | 21.1 | 2008 | [28B450AC94F0](<Analog/BenQ/BNQ790B/28B450AC94F0>) |
 | BenQ             | BNQ790D | E2400HD          | 1920x1080 | 21.7 | 2009 | [B7B4966DB0FA](<Analog/BenQ/BNQ790D/B7B4966DB0FA>) |
 | BenQ             | BNQ790D | E2400HD          | 1920x1080 | 21.7 | 2008 | [4F5853A01566](<Analog/BenQ/BNQ790D/4F5853A01566>) |
-| BenQ             | BNQ7910 | E900HD           | 1366x768  | 18.5 | 2008 | [81568297329E](<Analog/BenQ/BNQ7910/81568297329E>) |
+| BenQ             | BNQ7910 | E900HD           | 1366x768  | 18.5 | 2008 | [6E75FC55986D](<Analog/BenQ/BNQ7910/6E75FC55986D>) |
 | BenQ             | BNQ7910 |                  | 1366x768  | 18.5 |      | [B5E8C882D179](<Analog/BenQ/BNQ7910/B5E8C882D179>) |
 | BenQ             | BNQ7912 | E2220HD          | 1920x1080 | 21.7 | 2010 | [28E93F641F44](<Analog/BenQ/BNQ7912/28E93F641F44>) |
 | BenQ             | BNQ7916 | E2420HD          | 1920x1080 | 24.0 | 2010 | [30D3C36E61EE](<Analog/BenQ/BNQ7916/30D3C36E61EE>) |
@@ -2143,7 +2216,7 @@ model and ID.
 | BenQ             | BNQ7F30 | ZOWIE XL LCD     | 1920x1080 | 24.0 | 2016 | [60442E69EE45](<Analog/BenQ/BNQ7F30/60442E69EE45>) |
 | BenQ             | BNQ7F30 | XL2411Z          | 1920x1080 | 24.0 | 2015 | [471A210952D9](<Analog/BenQ/BNQ7F30/471A210952D9>) |
 | BenQ             | BNQ7F36 | XL2430T          | 1920x1080 | 24.0 | 2015 | [BF6B32BB215C](<Analog/BenQ/BNQ7F36/BF6B32BB215C>) |
-| BenQ             | BNQ8001 | BL2400           | 1920x1080 | 24.0 | 2012 | [29E63C62B49C](<Analog/BenQ/BNQ8001/29E63C62B49C>) |
+| BenQ             | BNQ8001 | BL2400           | 1920x1080 | 24.0 | 2012 | [07B299BCEE27](<Analog/BenQ/BNQ8001/07B299BCEE27>) |
 | BenQ             | BNQ8001 | BL2400           | 1920x1080 | 24.0 | 2010 | [59C68D058C00](<Analog/BenQ/BNQ8001/59C68D058C00>) |
 | BenQ             | BNQ8003 | BL2201           | 1680x1050 | 22.3 | 2013 | [DE1686E23E5E](<Analog/BenQ/BNQ8003/DE1686E23E5E>) |
 | BenQ             | BNQ8003 | BL2201           | 1680x1050 | 22.3 | 2012 | [04492D75E3EB](<Analog/BenQ/BNQ8003/04492D75E3EB>) |
@@ -2174,11 +2247,13 @@ model and ID.
 | BenQ             | BNQD801 | SP840            | 1920x1080 |      |      | [2C0B01ED038D](<Analog/BenQ/BNQD801/2C0B01ED038D>) |
 | BlueCase         | HXF3150 | PTI-22-01        | 1920x1080 | 21.5 | 2018 | [F6F27290A5A5](<Analog/BlueCase/HXF3150/F6F27290A5A5>) |
 | Braview          | BRA03C1 |                  | 1440x900  | 19.1 |      | [13C4B8D8EE65](<Analog/Braview/BRA03C1/13C4B8D8EE65>) |
+| CASIO            | CAS2000 | CASPER           | 1600x900  | 19.9 | 2011 | [4EFC0752A70A](<Analog/CASIO/CAS2000/4EFC0752A70A>) |
 | CASIO            | CAS8035 | XJ-460/560       | 1600x1200 |      |      | [116FAE11694F](<Analog/CASIO/CAS8035/116FAE11694F>) |
 | CCE              | CCE0000 | TV               | 1920x1080 | 20.0 | 2011 | [BC7AF05EBEC0](<Analog/CCE/CCE0000/BC7AF05EBEC0>) |
 | CCE              | CCE1314 | LM1701           | 1280x800  | 16.8 |      | [6DF568750B7E](<Analog/CCE/CCE1314/6DF568750B7E>) |
 | CCE              | CCE2100 | CCE24LED         | 1920x1080 | 21.1 | 2011 | [974BE394E6C8](<Analog/CCE/CCE2100/974BE394E6C8>) |
 | CND              | CND0561 | CNDLCD.COM       | 1440x900  | 34.8 | 2015 | [4C82F4F301D1](<Analog/CND/CND0561/4C82F4F301D1>) |
+| CND              | CND1210 | VGA              | 1280x1024 | 17.1 | 2016 | [DF8AA1BA807B](<Analog/CND/CND1210/DF8AA1BA807B>) |
 | CND              | CND1210 | CNDLCD           | 1280x1024 | 14.9 | 2012 | [48700FA52117](<Analog/CND/CND1210/48700FA52117>) |
 | CND              | CND1376 | CNDLCD           | 1366x768  | 14.9 | 2012 | [A6421630B3BC](<Analog/CND/CND1376/A6421630B3BC>) |
 | COBY             | COB2425 | TF-TV2425        | 1920x1080 | 23.6 | 2010 | [BEAB16F05AD9](<Analog/COBY/COB2425/BEAB16F05AD9>) |
@@ -2244,6 +2319,7 @@ model and ID.
 | Compaq           | CPQ144E | 1701             | 1280x1024 | 17.1 |      | [6E9F63256458](<Analog/Compaq/CPQ144E/6E9F63256458>) |
 | Compaq           | CPQ144F | 1720             | 1280x1024 | 17.1 |      | [B3EB65449EC5](<Analog/Compaq/CPQ144F/B3EB65449EC5>) |
 | Compaq           | CPQ1450 | 1825             | 1280x1024 | 18.2 |      | [A46D361C5993](<Analog/Compaq/CPQ1450/A46D361C5993>) |
+| Compaq           | CPQ1456 | 1520             | 1024x768  | 15.2 |      | [00727267F273](<Analog/Compaq/CPQ1456/00727267F273>) |
 | Compaq           | CPQ1459 |                  | 1024x768  | 14.6 |      | [618F5EE7B167](<Analog/Compaq/CPQ1459/618F5EE7B167>) |
 | Compaq           | CPQ1459 |                  | 1024x768  | 15.2 |      | [7C632739FEC8](<Analog/Compaq/CPQ1459/7C632739FEC8>) |
 | Compaq           | CPQ145B |                  | 1280x1024 | 16.8 |      | [C56B5727178A](<Analog/Compaq/CPQ145B/C56B5727178A>) |
@@ -2280,7 +2356,8 @@ model and ID.
 | Dell             | DEL0000 |                  | 1920x1080 | 21.7 | 2014 | [391F1AD93A93](<Analog/Dell/DEL0000/391F1AD93A93>) |
 | Dell             | DEL0000 | F185A            | 1366x768  | 18.3 | 2009 | [32A743A15B65](<Analog/Dell/DEL0000/32A743A15B65>) |
 | Dell             | DEL0000 | F19              | 1440x900  | 19.1 | 2009 | [C83724A5ED71](<Analog/Dell/DEL0000/C83724A5ED71>) |
-| Dell             | DEL2008 | E2219HN          | 1920x1080 | 21.7 | 2018 | [3272BC1C0969](<Analog/Dell/DEL2008/3272BC1C0969>) |
+| Dell             | DEL2004 | D1918H           | 1366x768  | 18.5 | 2018 | [41FB3CC286AE](<Analog/Dell/DEL2004/41FB3CC286AE>) |
+| Dell             | DEL2008 | E2219HN          | 1920x1080 | 21.7 | 2018 | [1D3C7C0E0D58](<Analog/Dell/DEL2008/1D3C7C0E0D58>) |
 | Dell             | DEL200A | D3218HN          | 1920x1080 | 31.5 | 2018 | [9831F59ABED3](<Analog/Dell/DEL200A/9831F59ABED3>) |
 | Dell             | DEL200A | D3218HN          | 1920x1080 | 31.5 | 2017 | [AC338CF74AE4](<Analog/Dell/DEL200A/AC338CF74AE4>) |
 | Dell             | DEL200A | D3218HN          | 1920x1080 | 31.5 |      | [115F8A549E12](<Analog/Dell/DEL200A/115F8A549E12>) |
@@ -2325,7 +2402,7 @@ model and ID.
 | Dell             | DEL4025 | 1908FP           | 1280x1024 | 19.1 | 2007 | [0AC025232C03](<Analog/Dell/DEL4025/0AC025232C03>) |
 | Dell             | DEL4025 |                  | 1280x1024 | 19.1 |      | [A77399624A5D](<Analog/Dell/DEL4025/A77399624A5D>) |
 | Dell             | DEL4030 |                  | 1280x1024 | 19.1 | 2007 | [7358820D0EFD](<Analog/Dell/DEL4030/7358820D0EFD>) |
-| Dell             | DEL4038 | SP2208WFP        | 1680x1050 | 21.7 | 2008 | [808B47456FA4](<Analog/Dell/DEL4038/808B47456FA4>) |
+| Dell             | DEL4038 | SP2208WFP        | 1680x1050 | 21.7 | 2008 | [7098232280A5](<Analog/Dell/DEL4038/7098232280A5>) |
 | Dell             | DEL4038 | SP2208WFP        | 1680x1050 | 21.7 | 2007 | [AF3B898E0EB5](<Analog/Dell/DEL4038/AF3B898E0EB5>) |
 | Dell             | DEL403B | 2208WFP          | 1680x1050 | 22.0 | 2009 | [479D5B52369B](<Analog/Dell/DEL403B/479D5B52369B>) |
 | Dell             | DEL403B | 2208WFP          | 1680x1050 | 22.0 | 2008 | [20C0D1D9D8DE](<Analog/Dell/DEL403B/20C0D1D9D8DE>) |
@@ -2333,7 +2410,7 @@ model and ID.
 | Dell             | DEL4041 | 2009W            | 1680x1050 | 20.0 | 2010 | [03102395BA27](<Analog/Dell/DEL4041/03102395BA27>) |
 | Dell             | DEL4041 | 2009W            | 1680x1050 | 20.0 | 2008 | [3DEC666856CA](<Analog/Dell/DEL4041/3DEC666856CA>) |
 | Dell             | DEL4041 |                  | 1680x1050 | 20.0 |      | [784F6B309CCC](<Analog/Dell/DEL4041/784F6B309CCC>) |
-| Dell             | DEL4043 | E2009W           | 1680x1050 | 20.0 | 2009 | [82FEC238A9C3](<Analog/Dell/DEL4043/82FEC238A9C3>) |
+| Dell             | DEL4043 | E2009W           | 1680x1050 | 20.0 | 2009 | [413B79BBCA24](<Analog/Dell/DEL4043/413B79BBCA24>) |
 | Dell             | DEL4043 | E2009W           | 1680x1050 | 20.0 | 2008 | [15299FEB155A](<Analog/Dell/DEL4043/15299FEB155A>) |
 | Dell             | DEL4045 |                  | 1280x1024 | 17.1 | 2009 | [5BE114A84C0B](<Analog/Dell/DEL4045/5BE114A84C0B>) |
 | Dell             | DEL4045 |                  | 1280x1024 | 17.1 |      | [5790C9818262](<Analog/Dell/DEL4045/5790C9818262>) |
@@ -2343,7 +2420,7 @@ model and ID.
 | Dell             | DEL404A | G2410            | 1920x1080 | 24.0 | 2010 | [C756C75CE541](<Analog/Dell/DEL404A/C756C75CE541>) |
 | Dell             | DEL404A | G2410            | 1920x1080 | 24.0 | 2009 | [53D0ED83B921](<Analog/Dell/DEL404A/53D0ED83B921>) |
 | Dell             | DEL404C | P2210            | 1680x1050 | 22.0 | 2012 | [12921FA8AF73](<Analog/Dell/DEL404C/12921FA8AF73>) |
-| Dell             | DEL404C | P2210            | 1680x1050 | 22.0 | 2011 | [1DB44006A02D](<Analog/Dell/DEL404C/1DB44006A02D>) |
+| Dell             | DEL404C | P2210            | 1680x1050 | 22.0 | 2011 | [02FA6EB66292](<Analog/Dell/DEL404C/02FA6EB66292>) |
 | Dell             | DEL404C | P2210            | 1680x1050 | 22.0 | 2010 | [213A6244EB8D](<Analog/Dell/DEL404C/213A6244EB8D>) |
 | Dell             | DEL404C | P2210            | 1680x1050 | 22.0 | 2009 | [4315A9FCAF9C](<Analog/Dell/DEL404C/4315A9FCAF9C>) |
 | Dell             | DEL404C |                  | 1680x1050 | 22.0 |      | [A54B51A2EC2A](<Analog/Dell/DEL404C/A54B51A2EC2A>) |
@@ -2353,10 +2430,10 @@ model and ID.
 | Dell             | DEL4058 | P170S            | 1280x1024 | 17.1 | 2010 | [5AE7A1EE98E3](<Analog/Dell/DEL4058/5AE7A1EE98E3>) |
 | Dell             | DEL4058 | P170S            | 1280x1024 | 17.1 | 2009 | [22C6F3104621](<Analog/Dell/DEL4058/22C6F3104621>) |
 | Dell             | DEL4058 |                  | 1280x1024 | 17.1 |      | [FADC2B09165B](<Analog/Dell/DEL4058/FADC2B09165B>) |
-| Dell             | DEL405A | P190S            | 1280x1024 | 19.1 | 2012 | [44EE6077A0FC](<Analog/Dell/DEL405A/44EE6077A0FC>) |
+| Dell             | DEL405A | P190S            | 1280x1024 | 19.1 | 2012 | [0F7614B4C48B](<Analog/Dell/DEL405A/0F7614B4C48B>) |
 | Dell             | DEL405A | P190S            | 1280x1024 | 19.1 | 2011 | [016759F45CAD](<Analog/Dell/DEL405A/016759F45CAD>) |
 | Dell             | DEL405A | P190S            | 1280x1024 | 19.1 | 2010 | [0EA3D92B13B2](<Analog/Dell/DEL405A/0EA3D92B13B2>) |
-| Dell             | DEL405A | P190S            | 1280x1024 | 19.1 | 2009 | [6E9DD019EEB4](<Analog/Dell/DEL405A/6E9DD019EEB4>) |
+| Dell             | DEL405A | P190S            | 1280x1024 | 19.1 | 2009 | [1465C6AD59D2](<Analog/Dell/DEL405A/1465C6AD59D2>) |
 | Dell             | DEL405A |                  | 1280x1024 | 19.1 |      | [8DE1CBB00416](<Analog/Dell/DEL405A/8DE1CBB00416>) |
 | Dell             | DEL405D | U2211H           | 1920x1080 | 21.7 | 2010 | [363F279660E7](<Analog/Dell/DEL405D/363F279660E7>) |
 | Dell             | DEL4060 | P2211H           | 1920x1080 | 21.7 | 2011 | [10A613F0C10F](<Analog/Dell/DEL4060/10A613F0C10F>) |
@@ -2380,18 +2457,18 @@ model and ID.
 | Dell             | DEL4078 | P2012H           | 1600x900  | 19.9 | 2013 | [4F0A7F1A08EF](<Analog/Dell/DEL4078/4F0A7F1A08EF>) |
 | Dell             | DEL4078 | P2012H           | 1600x900  | 19.9 | 2012 | [4A26C112CB86](<Analog/Dell/DEL4078/4A26C112CB86>) |
 | Dell             | DEL4078 | P2012H           | 1600x900  | 19.9 | 2011 | [20A9BCD1445D](<Analog/Dell/DEL4078/20A9BCD1445D>) |
-| Dell             | DEL407D | U2713HM          | 2048x1152 | 27.2 | 2014 | [384DB8708F12](<Analog/Dell/DEL407D/384DB8708F12>) |
+| Dell             | DEL407D | U2713HM          | 2048x1152 | 27.2 | 2014 | [20186E542526](<Analog/Dell/DEL407D/20186E542526>) |
 | Dell             | DEL407D | U2713HM          | 2048x1152 | 27.2 | 2013 | [DCB879403F36](<Analog/Dell/DEL407D/DCB879403F36>) |
 | Dell             | DEL407D | U2713HM          | 2048x1152 | 27.2 | 2012 | [0871AEBF19A9](<Analog/Dell/DEL407D/0871AEBF19A9>) |
 | Dell             | DEL4088 | U2913WM          | 2560x1080 | 28.6 | 2016 | [3A62FB0C9FE4](<Analog/Dell/DEL4088/3A62FB0C9FE4>) |
 | Dell             | DEL4090 | E2414H           | 1920x1080 | 24.0 | 2015 | [21EE393E93C3](<Analog/Dell/DEL4090/21EE393E93C3>) |
 | Dell             | DEL4090 | E2414H           | 1920x1080 | 24.0 | 2014 | [02EB46596CA6](<Analog/Dell/DEL4090/02EB46596CA6>) |
 | Dell             | DEL4090 | E2414H           | 1920x1080 | 24.0 | 2013 | [C4172E73857A](<Analog/Dell/DEL4090/C4172E73857A>) |
-| Dell             | DEL4097 | P2014H           | 1600x900  | 19.7 | 2015 | [9E6416B0D361](<Analog/Dell/DEL4097/9E6416B0D361>) |
+| Dell             | DEL4097 | P2014H           | 1600x900  | 19.7 | 2015 | [3779AA862BD3](<Analog/Dell/DEL4097/3779AA862BD3>) |
 | Dell             | DEL4097 | P2014H           | 1600x900  | 19.7 | 2014 | [636FF6E3F2B1](<Analog/Dell/DEL4097/636FF6E3F2B1>) |
 | Dell             | DEL4097 | P2014H           | 1600x900  | 19.7 | 2013 | [06DB06015869](<Analog/Dell/DEL4097/06DB06015869>) |
 | Dell             | DEL409A | P2314H           | 1920x1080 | 23.1 | 2016 | [7171212D00CB](<Analog/Dell/DEL409A/7171212D00CB>) |
-| Dell             | DEL409A | P2314H           | 1920x1080 | 23.1 | 2015 | [34A7F1024CC6](<Analog/Dell/DEL409A/34A7F1024CC6>) |
+| Dell             | DEL409A | P2314H           | 1920x1080 | 23.1 | 2015 | [29B37E370821](<Analog/Dell/DEL409A/29B37E370821>) |
 | Dell             | DEL409A | P2314H           | 1920x1080 | 23.1 | 2014 | [600C057CA805](<Analog/Dell/DEL409A/600C057CA805>) |
 | Dell             | DEL409A | P2314H           | 1920x1080 | 23.1 | 2013 | [1C3D96A0899E](<Analog/Dell/DEL409A/1C3D96A0899E>) |
 | Dell             | DEL409A |                  | 1920x1080 | 23.1 |      | [0D2E4F74F5CE](<Analog/Dell/DEL409A/0D2E4F74F5CE>) |
@@ -2400,6 +2477,7 @@ model and ID.
 | Dell             | DEL40BA | S2715H           | 1920x1080 | 27.2 | 2018 | [03F06BA45430](<Analog/Dell/DEL40BA/03F06BA45430>) |
 | Dell             | DEL40BA | S2715H           | 1920x1080 | 27.2 | 2016 | [E8BB3458A1BD](<Analog/Dell/DEL40BA/E8BB3458A1BD>) |
 | Dell             | DEL40D0 | P2016            | 1440x900  | 19.4 | 2018 | [461692413F55](<Analog/Dell/DEL40D0/461692413F55>) |
+| Dell             | DEL40D0 | P2016            | 1440x900  | 19.4 | 2016 | [A8D2A22D0D15](<Analog/Dell/DEL40D0/A8D2A22D0D15>) |
 | Dell             | DEL40F2 | P2317H           | 1920x1080 | 23.1 | 2018 | [3AE154610A13](<Analog/Dell/DEL40F2/3AE154610A13>) |
 | Dell             | DEL40F2 | P2317H           | 1920x1080 | 23.1 | 2017 | [812669AD9467](<Analog/Dell/DEL40F2/812669AD9467>) |
 | Dell             | DEL40F2 | P2317H           | 1920x1080 | 23.1 | 2016 | [893953C7792B](<Analog/Dell/DEL40F2/893953C7792B>) |
@@ -2412,6 +2490,8 @@ model and ID.
 | Dell             | DEL4183 | P2719H           | 1920x1080 | 27.2 | 2018 | [028B28E3BC43](<Analog/Dell/DEL4183/028B28E3BC43>) |
 | Dell             | DEL4183 |                  | 1920x1080 | 27.2 |      | [1128618AD57C](<Analog/Dell/DEL4183/1128618AD57C>) |
 | Dell             | DEL4190 | S2719HS          | 1920x1080 | 27.2 | 2019 | [0EA7EEF6E63D](<Analog/Dell/DEL4190/0EA7EEF6E63D>) |
+| Dell             | DEL423C | P2222H           | 1920x1080 | 21.7 | 2021 | [9961E8B1CE8C](<Analog/Dell/DEL423C/9961E8B1CE8C>) |
+| Dell             | DEL423F | P2722H           | 1920x1080 | 27.2 | 2021 | [9ED5195CD99B](<Analog/Dell/DEL423F/9ED5195CD99B>) |
 | Dell             | DEL5000 | P1130            | 1800x1440 | 19.7 |      | [4474F0A5D85D](<Analog/Dell/DEL5000/4474F0A5D85D>) |
 | Dell             | DEL5002 | P992             | 1600x1200 | 17.7 |      | [9CFD263AF634](<Analog/Dell/DEL5002/9CFD263AF634>) |
 | Dell             | DEL7005 | E772p            | 1152x864  | 14.9 |      | [2F99FD098AED](<Analog/Dell/DEL7005/2F99FD098AED>) |
@@ -2444,7 +2524,7 @@ model and ID.
 | Dell             | DELA016 |                  | 1920x1200 | 24.2 |      | [6883E7A9210A](<Analog/Dell/DELA016/6883E7A9210A>) |
 | Dell             | DELA018 | 2007WFP          | 1680x1050 | 20.0 | 2008 | [C7C5D72BD7FF](<Analog/Dell/DELA018/C7C5D72BD7FF>) |
 | Dell             | DELA018 | 2007WFP          | 1680x1050 | 20.0 | 2007 | [61EB51FC5CFC](<Analog/Dell/DELA018/61EB51FC5CFC>) |
-| Dell             | DELA018 | 2007WFP          | 1680x1050 | 20.0 | 2006 | [776795B76577](<Analog/Dell/DELA018/776795B76577>) |
+| Dell             | DELA018 | 2007WFP          | 1680x1050 | 20.0 | 2006 | [585846919ADE](<Analog/Dell/DELA018/585846919ADE>) |
 | Dell             | DELA020 | 2007FP           | 1600x1200 | 20.2 | 2011 | [82F80C5E5D54](<Analog/Dell/DELA020/82F80C5E5D54>) |
 | Dell             | DELA020 | 2007FP           | 1600x1200 | 20.2 | 2010 | [2E6DFB35DC87](<Analog/Dell/DELA020/2E6DFB35DC87>) |
 | Dell             | DELA020 | 2007FP           | 1600x1200 | 20.2 | 2009 | [2C24BB456DA1](<Analog/Dell/DELA020/2C24BB456DA1>) |
@@ -2470,7 +2550,7 @@ model and ID.
 | Dell             | DELA028 | E198FP           | 1280x1024 | 19.1 | 2008 | [20A412B5A992](<Analog/Dell/DELA028/20A412B5A992>) |
 | Dell             | DELA028 | E198FP           | 1280x1024 | 19.1 | 2007 | [018A53862091](<Analog/Dell/DELA028/018A53862091>) |
 | Dell             | DELA028 |                  | 1280x1024 | 19.1 |      | [9FBD75E27D39](<Analog/Dell/DELA028/9FBD75E27D39>) |
-| Dell             | DELA029 | 2408WFP          | 1920x1200 | 24.0 | 2008 | [3A0D41B2934F](<Analog/Dell/DELA029/3A0D41B2934F>) |
+| Dell             | DELA029 | 2408WFP          | 1920x1200 | 24.0 | 2008 | [2F30F5AA9EEA](<Analog/Dell/DELA029/2F30F5AA9EEA>) |
 | Dell             | DELA02D | E248WFP          | 1920x1200 | 24.0 | 2008 | [8331EC3E708B](<Analog/Dell/DELA02D/8331EC3E708B>) |
 | Dell             | DELA02D |                  | 1920x1200 | 24.0 |      | [3FC7DA10D7A9](<Analog/Dell/DELA02D/3FC7DA10D7A9>) |
 | Dell             | DELA02F | 2709W            | 1920x1200 | 26.9 | 2009 | [BBFD39F833A8](<Analog/Dell/DELA02F/BBFD39F833A8>) |
@@ -2481,8 +2561,8 @@ model and ID.
 | Dell             | DELA03C | 1909W            | 1440x900  | 19.1 | 2009 | [1C77F6BE7C98](<Analog/Dell/DELA03C/1C77F6BE7C98>) |
 | Dell             | DELA03C | 1909W            | 1440x900  | 19.1 | 2008 | [255487FA5C3B](<Analog/Dell/DELA03C/255487FA5C3B>) |
 | Dell             | DELA03C |                  | 1440x900  | 19.1 |      | [14B6099E5A24](<Analog/Dell/DELA03C/14B6099E5A24>) |
-| Dell             | DELA040 | S2309W           | 1920x1080 | 23.1 | 2009 | [AE7FB3CFB4A2](<Analog/Dell/DELA040/AE7FB3CFB4A2>) |
-| Dell             | DELA040 | S2309W           | 1920x1080 | 23.1 | 2008 | [6C598A96065B](<Analog/Dell/DELA040/6C598A96065B>) |
+| Dell             | DELA040 | S2309W           | 1920x1080 | 23.1 | 2009 | [283746037379](<Analog/Dell/DELA040/283746037379>) |
+| Dell             | DELA040 | S2309W           | 1920x1080 | 23.1 | 2008 | [2870CA64AA6F](<Analog/Dell/DELA040/2870CA64AA6F>) |
 | Dell             | DELA042 | S2209W           | 1920x1080 | 21.7 | 2009 | [BC42672C89A3](<Analog/Dell/DELA042/BC42672C89A3>) |
 | Dell             | DELA042 | S2209W           | 1920x1080 | 21.7 | 2008 | [2917B9FDFBCF](<Analog/Dell/DELA042/2917B9FDFBCF>) |
 | Dell             | DELA042 |                  | 1920x1080 | 21.7 |      | [2A3B55E3ACBD](<Analog/Dell/DELA042/2A3B55E3ACBD>) |
@@ -2507,6 +2587,8 @@ model and ID.
 | Dell             | DELA054 | U2711            | 2048x1152 | 27.2 | 2011 | [71198F10FA92](<Analog/Dell/DELA054/71198F10FA92>) |
 | Dell             | DELA054 | U2711            | 2048x1152 | 27.2 | 2010 | [492245328008](<Analog/Dell/DELA054/492245328008>) |
 | Dell             | DELA054 |                  | 2048x1152 | 27.2 |      | [D9672BE5F571](<Analog/Dell/DELA054/D9672BE5F571>) |
+| Dell             | DELA058 | ST2210           | 1920x1080 | 21.7 | 2010 | [44DD0C6F8D84](<Analog/Dell/DELA058/44DD0C6F8D84>) |
+| Dell             | DELA058 | ST2210           | 1920x1080 | 21.7 | 2009 | [3CA18DFE7B7D](<Analog/Dell/DELA058/3CA18DFE7B7D>) |
 | Dell             | DELA05B | ST2410           | 1920x1080 | 24.0 | 2010 | [7BEB84F78751](<Analog/Dell/DELA05B/7BEB84F78751>) |
 | Dell             | DELA05B | ST2410           | 1920x1080 | 24.0 | 2009 | [3BD08558BB7C](<Analog/Dell/DELA05B/3BD08558BB7C>) |
 | Dell             | DELA05E | U2311H           | 1920x1080 | 23.1 | 2011 | [154CD1C4E990](<Analog/Dell/DELA05E/154CD1C4E990>) |
@@ -2533,6 +2615,7 @@ model and ID.
 | Dell             | DELA073 | P1911            | 1440x900  | 19.1 | 2012 | [4BF67248389C](<Analog/Dell/DELA073/4BF67248389C>) |
 | Dell             | DELA073 | P1911            | 1440x900  | 19.1 | 2011 | [1623B2F8305C](<Analog/Dell/DELA073/1623B2F8305C>) |
 | Dell             | DELA073 | P1911            | 1440x900  | 19.1 | 2010 | [470B6BD99C99](<Analog/Dell/DELA073/470B6BD99C99>) |
+| Dell             | DELA079 | U2412M           | 1920x1200 | 24.0 | 2020 | [17B17D06D226](<Analog/Dell/DELA079/17B17D06D226>) |
 | Dell             | DELA079 | U2412M           | 1920x1200 | 24.0 | 2019 | [7011D12784BB](<Analog/Dell/DELA079/7011D12784BB>) |
 | Dell             | DELA079 | U2412M           | 1920x1200 | 24.0 | 2017 | [212EBCCD653D](<Analog/Dell/DELA079/212EBCCD653D>) |
 | Dell             | DELA079 | U2412M           | 1920x1200 | 24.0 | 2016 | [1F6BFDE41276](<Analog/Dell/DELA079/1F6BFDE41276>) |
@@ -2540,7 +2623,7 @@ model and ID.
 | Dell             | DELA079 | U2412M           | 1920x1200 | 24.0 | 2014 | [1AE5EF52FA44](<Analog/Dell/DELA079/1AE5EF52FA44>) |
 | Dell             | DELA079 | U2412M           | 1920x1200 | 24.0 | 2013 | [19BC92353E20](<Analog/Dell/DELA079/19BC92353E20>) |
 | Dell             | DELA079 | U2412M           | 1920x1200 | 24.0 | 2012 | [541F2D7957FE](<Analog/Dell/DELA079/541F2D7957FE>) |
-| Dell             | DELA079 | U2412M           | 1920x1200 | 24.0 | 2011 | [53615B7AE879](<Analog/Dell/DELA079/53615B7AE879>) |
+| Dell             | DELA079 | U2412M           | 1920x1200 | 24.0 | 2011 | [2E70858557A0](<Analog/Dell/DELA079/2E70858557A0>) |
 | Dell             | DELA079 |                  | 1920x1200 | 24.0 |      | [B06B765D5C56](<Analog/Dell/DELA079/B06B765D5C56>) |
 | Dell             | DELA07C | P2412H           | 1920x1080 | 24.0 | 2013 | [D041E775EDA8](<Analog/Dell/DELA07C/D041E775EDA8>) |
 | Dell             | DELA07C | P2412H           | 1920x1080 | 24.0 | 2012 | [4BFF6F6734C6](<Analog/Dell/DELA07C/4BFF6F6734C6>) |
@@ -2556,14 +2639,16 @@ model and ID.
 | Dell             | DELA087 | P1913            | 1440x900  | 19.1 | 2013 | [0980BAC6539E](<Analog/Dell/DELA087/0980BAC6539E>) |
 | Dell             | DELA087 | P1913            | 1440x900  | 19.1 | 2012 | [1F4618C0CCEA](<Analog/Dell/DELA087/1F4618C0CCEA>) |
 | Dell             | DELA087 |                  | 1440x900  | 19.1 |      | [1E03EE21583E](<Analog/Dell/DELA087/1E03EE21583E>) |
+| Dell             | DELA08A | S2440L           | 1920x1080 | 24.0 | 2013 | [A2B46E3A55DA](<Analog/Dell/DELA08A/A2B46E3A55DA>) |
 | Dell             | DELA08A | S2440L           | 1920x1080 | 24.0 | 2012 | [743A9F7700A0](<Analog/Dell/DELA08A/743A9F7700A0>) |
 | Dell             | DELA08C | S2740L           | 1920x1080 | 27.2 | 2014 | [82FF17E1262B](<Analog/Dell/DELA08C/82FF17E1262B>) |
 | Dell             | DELA08F | E2213H           | 1920x1080 | 21.7 | 2013 | [9B3A72D8C22F](<Analog/Dell/DELA08F/9B3A72D8C22F>) |
 | Dell             | DELA08F |                  | 1920x1080 | 21.7 |      | [F1F8880B2B69](<Analog/Dell/DELA08F/F1F8880B2B69>) |
 | Dell             | DELA094 | S2240T           | 1920x1080 | 21.7 | 2016 | [9373293F2A84](<Analog/Dell/DELA094/9373293F2A84>) |
-| Dell             | DELA099 | P2214H           | 1920x1080 | 21.7 | 2016 | [272A223FF16C](<Analog/Dell/DELA099/272A223FF16C>) |
+| Dell             | DELA099 | P2214H           | 1920x1080 | 21.7 | 2016 | [021A10DABF11](<Analog/Dell/DELA099/021A10DABF11>) |
+| Dell             | DELA099 | P2214H           | 1920x1080 | 21.7 | 2015 | [77091426CA63](<Analog/Dell/DELA099/77091426CA63>) |
 | Dell             | DELA099 | P2214H           | 1920x1080 | 21.7 | 2014 | [10D98A0E3EC0](<Analog/Dell/DELA099/10D98A0E3EC0>) |
-| Dell             | DELA099 | P2214H           | 1920x1080 | 21.7 | 2013 | [4F146FEDDF34](<Analog/Dell/DELA099/4F146FEDDF34>) |
+| Dell             | DELA099 | P2214H           | 1920x1080 | 21.7 | 2013 | [19972A914CA0](<Analog/Dell/DELA099/19972A914CA0>) |
 | Dell             | DELA099 |                  | 1920x1080 | 21.7 |      | [D623E0276A2F](<Analog/Dell/DELA099/D623E0276A2F>) |
 | Dell             | DELA09C | P2414H           | 1920x1080 | 24.0 | 2016 | [1BF042266A7D](<Analog/Dell/DELA09C/1BF042266A7D>) |
 | Dell             | DELA09C | P2414H           | 1920x1080 | 24.0 | 2015 | [0B726FD27407](<Analog/Dell/DELA09C/0B726FD27407>) |
@@ -2572,6 +2657,7 @@ model and ID.
 | Dell             | DELA09D | E2214H           | 1920x1080 | 21.7 | 2015 | [5120BD5A3014](<Analog/Dell/DELA09D/5120BD5A3014>) |
 | Dell             | DELA09D | E2214H           | 1920x1080 | 21.7 | 2014 | [3ACEA7060F88](<Analog/Dell/DELA09D/3ACEA7060F88>) |
 | Dell             | DELA09D | E2214H           | 1920x1080 | 21.7 | 2013 | [0A70FE4D3042](<Analog/Dell/DELA09D/0A70FE4D3042>) |
+| Dell             | DELA0A2 | U2414H           | 640x480   | 24.0 | 2014 | [D39FD4570E9A](<Analog/Dell/DELA0A2/D39FD4570E9A>) |
 | Dell             | DELA0B3 | S2415H           | 1920x1080 | 24.0 | 2016 | [DBFB86031443](<Analog/Dell/DELA0B3/DBFB86031443>) |
 | Dell             | DELA0B3 | S2415H           | 1920x1080 | 24.0 | 2014 | [1A7EAC1C4FB1](<Analog/Dell/DELA0B3/1A7EAC1C4FB1>) |
 | Dell             | DELA0C2 | P2416D           | 2048x1152 | 24.0 | 2017 | [C24D064BD3AA](<Analog/Dell/DELA0C2/C24D064BD3AA>) |
@@ -2599,7 +2685,7 @@ model and ID.
 | Dell             | DELA113 | P2219H           | 1920x1080 | 21.7 | 2018 | [DDA87467DA36](<Analog/Dell/DELA113/DDA87467DA36>) |
 | Dell             | DELA159 | E2020H           | 1600x900  | 19.4 | 2020 | [BC518AAC03A2](<Analog/Dell/DELA159/BC518AAC03A2>) |
 | Dell             | DELA15B | E2720H           | 1920x1080 | 27.2 | 2020 | [503A87CD6FA7](<Analog/Dell/DELA15B/503A87CD6FA7>) |
-| Dell             | DELA1C3 | P2422H           | 1920x1080 | 24.0 | 2021 | [E992DA37C87D](<Analog/Dell/DELA1C3/E992DA37C87D>) |
+| Dell             | DELA1C3 | P2422H           | 1920x1080 | 24.0 | 2021 | [BAE84B8F805A](<Analog/Dell/DELA1C3/BAE84B8F805A>) |
 | Dell             | DELD000 | E551c            | 1024x768  | 13.8 |      | [3E376F86F467](<Analog/Dell/DELD000/3E376F86F467>) |
 | Dell             | DELD002 | E772c            | 1280x1024 | 15.7 |      | [CA4E725FAF8D](<Analog/Dell/DELD002/CA4E725FAF8D>) |
 | Dell             | DELD005 | E773c            | 1280x1024 | 15.7 |      | [4FAEEC1306E1](<Analog/Dell/DELD005/4FAEEC1306E1>) |
@@ -2614,7 +2700,7 @@ model and ID.
 | Dell             | DELD014 | E228WFP          | 1680x1050 | 22.0 | 2007 | [29789272A342](<Analog/Dell/DELD014/29789272A342>) |
 | Dell             | DELD014 | E228WFP          | 1680x1050 | 22.0 | 2006 | [0F0C9EB6E16F](<Analog/Dell/DELD014/0F0C9EB6E16F>) |
 | Dell             | DELD014 |                  | 1680x1050 | 22.0 |      | [6FC3E786DE60](<Analog/Dell/DELD014/6FC3E786DE60>) |
-| Dell             | DELD016 | E178WFP          | 1440x900  | 17.2 | 2008 | [664983BEE5A2](<Analog/Dell/DELD016/664983BEE5A2>) |
+| Dell             | DELD016 | E178WFP          | 1440x900  | 17.2 | 2008 | [0D6604285E7D](<Analog/Dell/DELD016/0D6604285E7D>) |
 | Dell             | DELD016 | E178WFP          | 1440x900  | 17.2 | 2007 | [78FA8EEF533E](<Analog/Dell/DELD016/78FA8EEF533E>) |
 | Dell             | DELD016 |                  | 1440x900  | 17.2 |      | [2BEDE40F689B](<Analog/Dell/DELD016/2BEDE40F689B>) |
 | Dell             | DELD017 |                  | 1440x900  | 17.2 | 2008 | [0571B267489B](<Analog/Dell/DELD017/0571B267489B>) |
@@ -2643,13 +2729,13 @@ model and ID.
 | Dell             | DELD036 | E2210            | 1680x1050 | 22.0 | 2009 | [4A5B341513C5](<Analog/Dell/DELD036/4A5B341513C5>) |
 | Dell             | DELD038 | D2201            | 1920x1080 | 21.7 | 2010 | [39F15455964A](<Analog/Dell/DELD038/39F15455964A>) |
 | Dell             | DELD03A | E1914H           | 1366x768  | 18.5 | 2015 | [14A3B37B462D](<Analog/Dell/DELD03A/14A3B37B462D>) |
-| Dell             | DELD03A | E1914H           | 1366x768  | 18.5 | 2014 | [3C003D861C4B](<Analog/Dell/DELD03A/3C003D861C4B>) |
+| Dell             | DELD03A | E1914H           | 1366x768  | 18.5 | 2014 | [2BB5BAE8A5CE](<Analog/Dell/DELD03A/2BB5BAE8A5CE>) |
 | Dell             | DELD03A | E1914H           | 1366x768  | 18.5 | 2013 | [246AAB702A55](<Analog/Dell/DELD03A/246AAB702A55>) |
 | Dell             | DELD03A |                  | 1366x768  | 18.5 |      | [BB0F281BC7C3](<Analog/Dell/DELD03A/BB0F281BC7C3>) |
 | Dell             | DELD03B | E2014H           | 1600x900  | 19.4 | 2015 | [BE373DF30F03](<Analog/Dell/DELD03B/BE373DF30F03>) |
 | Dell             | DELD03B | E2014H           | 1600x900  | 19.4 | 2014 | [0C94788D719D](<Analog/Dell/DELD03B/0C94788D719D>) |
 | Dell             | DELD03B | E2014H           | 1600x900  | 19.4 | 2013 | [72A7BA825A36](<Analog/Dell/DELD03B/72A7BA825A36>) |
-| Dell             | DELD041 | ST2220T          | 1920x1080 | 21.7 | 2011 | [6D6A547ED432](<Analog/Dell/DELD041/6D6A547ED432>) |
+| Dell             | DELD041 | ST2220T          | 1920x1080 | 21.7 | 2011 | [0FCCC73679EA](<Analog/Dell/DELD041/0FCCC73679EA>) |
 | Dell             | DELD046 | U2212HM          | 1920x1080 | 21.7 | 2013 | [1BAA65126015](<Analog/Dell/DELD046/1BAA65126015>) |
 | Dell             | DELD046 | U2212HM          | 1920x1080 | 21.7 | 2012 | [496477525E77](<Analog/Dell/DELD046/496477525E77>) |
 | Dell             | DELD046 | U2212HM          | 1920x1080 | 21.7 | 2011 | [9FC628211A74](<Analog/Dell/DELD046/9FC628211A74>) |
@@ -2659,7 +2745,7 @@ model and ID.
 | Dell             | DELD04D | E2213            | 1680x1050 | 22.0 | 2012 | [61B7B1544076](<Analog/Dell/DELD04D/61B7B1544076>) |
 | Dell             | DELD04D |                  | 1680x1050 | 22.0 |      | [F050322719F2](<Analog/Dell/DELD04D/F050322719F2>) |
 | Dell             | DELD050 | E1913S           | 1280x1024 | 19.1 | 2015 | [B71D3D2236CC](<Analog/Dell/DELD050/B71D3D2236CC>) |
-| Dell             | DELD050 | E1913S           | 1280x1024 | 19.1 | 2013 | [DD02827F9129](<Analog/Dell/DELD050/DD02827F9129>) |
+| Dell             | DELD050 | E1913S           | 1280x1024 | 19.1 | 2013 | [9FACC520B32D](<Analog/Dell/DELD050/9FACC520B32D>) |
 | Dell             | DELD050 | E1913S           | 1280x1024 | 19.1 | 2012 | [5121932F74C4](<Analog/Dell/DELD050/5121932F74C4>) |
 | Dell             | DELD050 |                  | 1280x1024 | 19.1 |      | [F7CAA21C095A](<Analog/Dell/DELD050/F7CAA21C095A>) |
 | Dell             | DELD051 | E1913            | 1440x900  | 19.1 | 2015 | [B691B7C87AE8](<Analog/Dell/DELD051/B691B7C87AE8>) |
@@ -2686,20 +2772,21 @@ model and ID.
 | Dell             | DELD07D | S2316H           | 1920x1080 | 23.1 | 2016 | [02198FB64CF2](<Analog/Dell/DELD07D/02198FB64CF2>) |
 | Dell             | DELD07D | S2316H           | 1920x1080 | 23.1 | 2015 | [0CF0895195A7](<Analog/Dell/DELD07D/0CF0895195A7>) |
 | Dell             | DELD07F | S2316M           | 1920x1080 | 23.1 | 2016 | [53DF8921E41D](<Analog/Dell/DELD07F/53DF8921E41D>) |
-| Dell             | DELD081 | SE2416H          | 1920x1080 | 24.0 | 2019 | [43C04B5DC632](<Analog/Dell/DELD081/43C04B5DC632>) |
+| Dell             | DELD081 | SE2416H          | 1920x1080 | 24.0 | 2019 | [3EF826894B71](<Analog/Dell/DELD081/3EF826894B71>) |
 | Dell             | DELD081 | SE2416H          | 1920x1080 | 24.0 | 2018 | [4C29087285E7](<Analog/Dell/DELD081/4C29087285E7>) |
 | Dell             | DELD081 | SE2416H          | 1920x1080 | 24.0 | 2017 | [1CF9D3ADECF2](<Analog/Dell/DELD081/1CF9D3ADECF2>) |
 | Dell             | DELD081 | SE2416H          | 1920x1080 | 24.0 | 2016 | [1AAFE0C91D31](<Analog/Dell/DELD081/1AAFE0C91D31>) |
 | Dell             | DELD081 | SE2416H          | 1920x1080 | 24.0 | 2015 | [D005702B264D](<Analog/Dell/DELD081/D005702B264D>) |
 | Dell             | DELD081 |                  | 1920x1080 | 24.0 |      | [6C60BBD88E2D](<Analog/Dell/DELD081/6C60BBD88E2D>) |
 | Dell             | DELD08C |                  | 1920x1080 | 23.4 | 2019 | [7B90DE60FC75](<Analog/Dell/DELD08C/7B90DE60FC75>) |
-| Dell             | DELD08C |                  | 1920x1080 | 23.4 | 2018 | [85BBCB9FB5AC](<Analog/Dell/DELD08C/85BBCB9FB5AC>) |
+| Dell             | DELD08C |                  | 1920x1080 | 23.4 | 2018 | [710EB86133FA](<Analog/Dell/DELD08C/710EB86133FA>) |
 | Dell             | DELD08C |                  | 1920x1080 | 23.4 | 2017 | [38199A1AEC15](<Analog/Dell/DELD08C/38199A1AEC15>) |
 | Dell             | DELD08C |                  | 1920x1080 | 23.4 | 2016 | [0000E1E0849F](<Analog/Dell/DELD08C/0000E1E0849F>) |
 | Dell             | DELD091 | P1917S           | 1280x1024 | 19.1 | 2020 | [91C2DBF09F24](<Analog/Dell/DELD091/91C2DBF09F24>) |
 | Dell             | DELD091 | P1917S           | 1280x1024 | 19.1 | 2019 | [4E60D2EB3B6A](<Analog/Dell/DELD091/4E60D2EB3B6A>) |
 | Dell             | DELD091 | P1917S           | 1280x1024 | 19.1 | 2018 | [E62FE8E2994D](<Analog/Dell/DELD091/E62FE8E2994D>) |
 | Dell             | DELD094 | P2017H           | 1600x900  | 19.4 | 2017 | [50B83BFEEC17](<Analog/Dell/DELD094/50B83BFEEC17>) |
+| Dell             | DELD094 | P2017H           | 1600x900  | 19.4 | 2016 | [512AC87147C1](<Analog/Dell/DELD094/512AC87147C1>) |
 | Dell             | DELD097 | P2217            | 1680x1050 | 22.0 | 2018 | [821442CE3F82](<Analog/Dell/DELD097/821442CE3F82>) |
 | Dell             | DELD097 |                  | 1680x1050 | 22.0 |      | [5C14DCC0CC7E](<Analog/Dell/DELD097/5C14DCC0CC7E>) |
 | Dell             | DELD0A0 | SE2717H/HX       | 1920x1080 | 27.2 | 2018 | [181A9FDF1FD4](<Analog/Dell/DELD0A0/181A9FDF1FD4>) |
@@ -2711,6 +2798,7 @@ model and ID.
 | Dell             | DELD0C3 |                  | 1920x1080 | 24.0 | 2020 | [99CADA9F7221](<Analog/Dell/DELD0C3/99CADA9F7221>) |
 | Dell             | DELD0D5 | P2319H           | 1920x1080 | 23.1 | 2020 | [F3BC2668F6DF](<Analog/Dell/DELD0D5/F3BC2668F6DF>) |
 | Dell             | DELD0D5 | P2319H           | 1920x1080 | 23.1 | 2019 | [97B15B6B3B5C](<Analog/Dell/DELD0D5/97B15B6B3B5C>) |
+| Dell             | DELD0D8 | P2419H           | 1920x1080 | 24.0 | 2021 | [4C34B3A531EC](<Analog/Dell/DELD0D8/4C34B3A531EC>) |
 | Dell             | DELD0D8 | P2419H           | 1920x1080 | 24.0 | 2020 | [573F93E35A06](<Analog/Dell/DELD0D8/573F93E35A06>) |
 | Dell             | DELD0D8 | P2419H           | 1920x1080 | 24.0 | 2019 | [9FA1CF36A49A](<Analog/Dell/DELD0D8/9FA1CF36A49A>) |
 | Dell             | DELD0D8 | P2419H           | 1920x1080 | 24.0 | 2018 | [7484C8DBEDA9](<Analog/Dell/DELD0D8/7484C8DBEDA9>) |
@@ -2719,6 +2807,7 @@ model and ID.
 | Dell             | DELD0F5 | SE2417HGX        | 1920x1080 | 23.4 | 2020 | [D9C9F1BDE41A](<Analog/Dell/DELD0F5/D9C9F1BDE41A>) |
 | Dell             | DELD0F5 | SE2417HGX        | 1920x1080 | 23.4 | 2019 | [621C66A9095D](<Analog/Dell/DELD0F5/621C66A9095D>) |
 | Dell             | DELD115 | SE2722H          | 1920x1080 | 27.2 | 2021 | [9783CA5521D1](<Analog/Dell/DELD115/9783CA5521D1>) |
+| Dell             | DELD11F | E2722H           | 1920x1080 | 27.2 | 2022 | [A195CA57C9EB](<Analog/Dell/DELD11F/A195CA57C9EB>) |
 | Dell             | DELE000 | 1800FP           | 1280x1024 | 18.2 |      | [38C80370B5C1](<Analog/Dell/DELE000/38C80370B5C1>) |
 | Dell             | DELE002 | 1800FP           | 1280x1024 | 18.2 |      | [AB877670C027](<Analog/Dell/DELE002/AB877670C027>) |
 | Dell             | DELE004 | 1801FP           | 1280x1024 | 18.2 |      | [8B8DCB9D8F81](<Analog/Dell/DELE004/8B8DCB9D8F81>) |
@@ -2742,9 +2831,9 @@ model and ID.
 | Dell             | DELF00D | E1909W           | 1440x900  | 19.1 | 2008 | [3B61D5BE51B0](<Analog/Dell/DELF00D/3B61D5BE51B0>) |
 | Dell             | DELF010 | 2209WA           | 1680x1050 | 22.0 | 2010 | [78D419BB62DF](<Analog/Dell/DELF010/78D419BB62DF>) |
 | Dell             | DELF010 | 2209WA           | 1680x1050 | 22.0 | 2009 | [1D37E93F9904](<Analog/Dell/DELF010/1D37E93F9904>) |
-| Dell             | DELF014 | U2410            | 1920x1200 | 24.0 | 2012 | [6DF7A4BC92B6](<Analog/Dell/DELF014/6DF7A4BC92B6>) |
+| Dell             | DELF014 | U2410            | 1920x1200 | 24.0 | 2012 | [3F56C009CB7C](<Analog/Dell/DELF014/3F56C009CB7C>) |
 | Dell             | DELF014 | U2410            | 1920x1200 | 24.0 | 2011 | [A6EF39C4FE12](<Analog/Dell/DELF014/A6EF39C4FE12>) |
-| Dell             | DELF014 | U2410            | 1920x1200 | 24.0 | 2010 | [83EA655BB485](<Analog/Dell/DELF014/83EA655BB485>) |
+| Dell             | DELF014 | U2410            | 1920x1200 | 24.0 | 2010 | [758F8051BFB3](<Analog/Dell/DELF014/758F8051BFB3>) |
 | Dell             | DELF014 | U2410            | 1920x1200 | 24.0 | 2009 | [3E982C7A7E80](<Analog/Dell/DELF014/3E982C7A7E80>) |
 | Dell             | DELF014 |                  | 1920x1200 | 24.0 |      | [1A7E2DE8E1C0](<Analog/Dell/DELF014/1A7E2DE8E1C0>) |
 | Dell             | DELF018 | ST2010           | 1600x900  | 19.9 | 2010 | [2F0F908ED8CB](<Analog/Dell/DELF018/2F0F908ED8CB>) |
@@ -2754,22 +2843,24 @@ model and ID.
 | Dell             | DELF01B | ST2310           | 1920x1080 | 23.1 | 2009 | [5842405A298B](<Analog/Dell/DELF01B/5842405A298B>) |
 | Dell             | DELF01B |                  | 1920x1080 | 23.1 |      | [48A36BBCC75B](<Analog/Dell/DELF01B/48A36BBCC75B>) |
 | Dell             | DELF021 | IN1920           | 1366x768  | 18.5 | 2011 | [2B805D3F639B](<Analog/Dell/DELF021/2B805D3F639B>) |
-| Dell             | DELF021 | IN1920           | 1366x768  | 18.5 | 2010 | [B51195409934](<Analog/Dell/DELF021/B51195409934>) |
+| Dell             | DELF021 | IN1920           | 1366x768  | 18.5 | 2010 | [46A822E2FE4C](<Analog/Dell/DELF021/46A822E2FE4C>) |
 | Dell             | DELF022 | ST2320L          | 1920x1080 | 23.1 | 2012 | [D50E7393FBA2](<Analog/Dell/DELF022/D50E7393FBA2>) |
 | Dell             | DELF022 | ST2320L          | 1920x1080 | 23.1 | 2011 | [B14573D6495E](<Analog/Dell/DELF022/B14573D6495E>) |
 | Dell             | DELF028 | IN2020           | 1600x900  | 19.9 | 2011 | [CC3FC07E5852](<Analog/Dell/DELF028/CC3FC07E5852>) |
 | Dell             | DELF029 | IN2020M          | 1600x900  | 19.9 | 2011 | [B540BC3B102C](<Analog/Dell/DELF029/B540BC3B102C>) |
 | Dell             | DELF029 | IN2020M          | 1600x900  | 19.9 | 2010 | [AE1D17B0392A](<Analog/Dell/DELF029/AE1D17B0392A>) |
+| Dell             | DELF031 | ST2321L          | 1920x1080 | 23.1 | 2012 | [2DD710094ABB](<Analog/Dell/DELF031/2DD710094ABB>) |
 | Dell             | DELF031 | ST2321L          | 1920x1080 | 23.1 | 2011 | [68ED17D40AF8](<Analog/Dell/DELF031/68ED17D40AF8>) |
 | Dell             | DELF031 | ST2321L          | 1920x1080 | 23.1 | 2010 | [8F26BD7323C6](<Analog/Dell/DELF031/8F26BD7323C6>) |
 | Dell             | DELF031 |                  | 1920x1080 | 23.1 |      | [C23C1BFEFF42](<Analog/Dell/DELF031/C23C1BFEFF42>) |
 | Dell             | DELF034 | E2311H           | 1920x1080 | 23.1 | 2012 | [20348EB499A9](<Analog/Dell/DELF034/20348EB499A9>) |
 | Dell             | DELF034 | E2311H           | 1920x1080 | 23.1 | 2011 | [92D7B8869D00](<Analog/Dell/DELF034/92D7B8869D00>) |
 | Dell             | DELF036 | E1911            | 1440x900  | 19.1 | 2012 | [9939BB5C342C](<Analog/Dell/DELF036/9939BB5C342C>) |
-| Dell             | DELF036 | E1911            | 1440x900  | 19.1 | 2011 | [04FA515B2154](<Analog/Dell/DELF036/04FA515B2154>) |
+| Dell             | DELF036 | E1911            | 1440x900  | 19.1 | 2011 | [0442A9045012](<Analog/Dell/DELF036/0442A9045012>) |
 | Dell             | DELF038 | SR2320L          | 1920x1080 | 23.1 | 2011 | [C9897F3627B0](<Analog/Dell/DELF038/C9897F3627B0>) |
 | Dell             | DELF03B | IN1930           | 1366x768  | 18.5 | 2012 | [46288FE699A6](<Analog/Dell/DELF03B/46288FE699A6>) |
 | Dell             | DELF03B | IN1930           | 1366x768  | 18.5 | 2011 | [57B0EDC956BE](<Analog/Dell/DELF03B/57B0EDC956BE>) |
+| Dell             | DELF03C | IN2030M          | 1600x900  | 19.9 | 2013 | [994709356F84](<Analog/Dell/DELF03C/994709356F84>) |
 | Dell             | DELF03C | IN2030M          | 1600x900  | 19.9 | 2012 | [0585DBC852C2](<Analog/Dell/DELF03C/0585DBC852C2>) |
 | Dell             | DELF03C | IN2030M          | 1600x900  | 19.9 | 2011 | [0AC4C271AD71](<Analog/Dell/DELF03C/0AC4C271AD71>) |
 | Dell             | DELF03C |                  | 1600x900  | 19.9 |      | [8C9F6C2DA1C9](<Analog/Dell/DELF03C/8C9F6C2DA1C9>) |
@@ -2799,8 +2890,10 @@ model and ID.
 | Dell             | DELF063 | D2015H           | 1920x1080 | 19.7 | 2015 | [1573B919AAF1](<Analog/Dell/DELF063/1573B919AAF1>) |
 | Dell             | DELF064 | E1916H           | 1366x768  | 18.5 | 2019 | [0F49EF899353](<Analog/Dell/DELF064/0F49EF899353>) |
 | Dell             | DELF064 | E1916H           | 1366x768  | 18.5 | 2018 | [2308EA4A11AF](<Analog/Dell/DELF064/2308EA4A11AF>) |
+| Dell             | DELF064 | E1916H           | 1366x768  | 18.5 | 2017 | [F00F1DCCCE40](<Analog/Dell/DELF064/F00F1DCCCE40>) |
 | Dell             | DELF064 | E1916H           | 1366x768  | 18.5 | 2016 | [16E6A4827E01](<Analog/Dell/DELF064/16E6A4827E01>) |
 | Dell             | DELF064 | E1916H           | 1366x768  | 18.5 | 2015 | [A21BBADBA1D1](<Analog/Dell/DELF064/A21BBADBA1D1>) |
+| Dell             | DELF066 | E1916He          | 1366x768  | 18.5 | 2019 | [D33983B32EF6](<Analog/Dell/DELF066/D33983B32EF6>) |
 | Dell             | DELF066 | E1916He          | 1366x768  | 18.5 | 2018 | [D0288563A9E5](<Analog/Dell/DELF066/D0288563A9E5>) |
 | Dell             | DELF066 | E1916He          | 1366x768  | 18.5 | 2016 | [54D035E1B7F2](<Analog/Dell/DELF066/54D035E1B7F2>) |
 | Dell             | DELF066 | E1916He          | 1366x768  | 18.5 | 2015 | [3A89125350AD](<Analog/Dell/DELF066/3A89125350AD>) |
@@ -2856,6 +2949,7 @@ model and ID.
 | Dell             | DELF11A | E2420H           | 1920x1080 | 24.0 | 2019 | [E0FBED89EFEE](<Analog/Dell/DELF11A/E0FBED89EFEE>) |
 | Dell             | DELF11C | E2420HS          | 1920x1080 | 24.0 | 2019 | [E2378C9AE429](<Analog/Dell/DELF11C/E2378C9AE429>) |
 | Dell             | DELF128 | E2421HN          | 1920x1080 | 24.0 | 2020 | [4A1724F2F96D](<Analog/Dell/DELF128/4A1724F2F96D>) |
+| Dell             | DELF134 | E2422HN          | 1920x1080 | 24.0 | 2022 | [78B36EC35F93](<Analog/Dell/DELF134/78B36EC35F93>) |
 | Denver           | LHC2360 | MLE-2401         | 1920x1080 | 23.6 | 2019 | [C95FF33CC629](<Analog/Denver/LHC2360/C95FF33CC629>) |
 | Digital Vision   | MZI0248 | DV1512A          | 1280x1024 | 18.2 |      | [71B0B0589484](<Analog/Digital Vision/MZI0248/71B0B0589484>) |
 | Dinner           | DIC2411 | TEW236FH1        | 1920x1080 | 23.6 | 2009 | [1A71C9EA5CA0](<Analog/Dinner/DIC2411/1A71C9EA5CA0>) |
@@ -2886,7 +2980,9 @@ model and ID.
 | Eizo             | ENC1765 | L578             | 1280x1024 | 17.1 |      | [71B3E3B95C97](<Analog/Eizo/ENC1765/71B3E3B95C97>) |
 | Eizo             | ENC1787 | S1910            | 1280x1024 | 19.1 | 2006 | [E83BB594BE75](<Analog/Eizo/ENC1787/E83BB594BE75>) |
 | Eizo             | ENC1787 | S1910            | 1280x1024 | 19.1 |      | [1255C41A3C06](<Analog/Eizo/ENC1787/1255C41A3C06>) |
+| Eizo             | ENC1789 | M1700            | 1280x1024 | 17.3 |      | [3A8B61F9BF27](<Analog/Eizo/ENC1789/3A8B61F9BF27>) |
 | Eizo             | ENC1794 | P1700            | 1280x1024 | 17.3 |      | [2BD13E0C240E](<Analog/Eizo/ENC1794/2BD13E0C240E>) |
+| Eizo             | ENC1804 | S2100            | 1600x1200 | 21.7 | 2010 | [0E2782798A63](<Analog/Eizo/ENC1804/0E2782798A63>) |
 | Eizo             | ENC1811 | M1950            | 1280x1024 | 19.3 | 2006 | [BC297A14A65D](<Analog/Eizo/ENC1811/BC297A14A65D>) |
 | Eizo             | ENC1821 | S1721            | 1280x1024 | 17.1 |      | [34EB37408C23](<Analog/Eizo/ENC1821/34EB37408C23>) |
 | Eizo             | ENC1832 | S1921            | 1280x1024 | 19.1 | 2008 | [026796BB1BBC](<Analog/Eizo/ENC1832/026796BB1BBC>) |
@@ -2899,7 +2995,9 @@ model and ID.
 | Eizo             | ENC1836 | S1701            | 1280x1024 | 17.1 | 2007 | [72CE9970608F](<Analog/Eizo/ENC1836/72CE9970608F>) |
 | Eizo             | ENC1836 | S1701            | 1280x1024 | 17.1 | 2006 | [6D0434AA85AF](<Analog/Eizo/ENC1836/6D0434AA85AF>) |
 | Eizo             | ENC1838 | S1901            | 1280x1024 | 19.1 | 2007 | [E365DA0094CE](<Analog/Eizo/ENC1838/E365DA0094CE>) |
+| Eizo             | ENC1840 | S1911            | 1280x1024 | 19.1 | 2007 | [0E598D839BDE](<Analog/Eizo/ENC1840/0E598D839BDE>) |
 | Eizo             | ENC1888 | S2431W           | 1920x1200 | 24.2 | 2008 | [064A5DFA128E](<Analog/Eizo/ENC1888/064A5DFA128E>) |
+| Eizo             | ENC1888 | S2431W           | 1920x1200 | 24.2 | 2007 | [F96402550ACF](<Analog/Eizo/ENC1888/F96402550ACF>) |
 | Eizo             | ENC1913 | S2401W           | 1920x1200 | 24.2 | 2007 | [513D5248F104](<Analog/Eizo/ENC1913/513D5248F104>) |
 | Eizo             | ENC1919 | S2231W           | 1680x1050 | 22.3 | 2007 | [765774961DFA](<Analog/Eizo/ENC1919/765774961DFA>) |
 | Eizo             | ENC1941 | S1932            | 1280x1024 | 19.1 | 2008 | [49768CC40ABE](<Analog/Eizo/ENC1941/49768CC40ABE>) |
@@ -2921,8 +3019,10 @@ model and ID.
 | Eizo             | ENC2395 | EV2316W          | 1920x1080 | 23.1 | 2013 | [47383AFD12D8](<Analog/Eizo/ENC2395/47383AFD12D8>) |
 | Eizo             | ENC2441 | EV2216W          | 1680x1050 | 22.3 | 2015 | [38B7B8F045FE](<Analog/Eizo/ENC2441/38B7B8F045FE>) |
 | Eizo             | ENC2532 | EV2450           | 1920x1080 | 24.0 | 2020 | [9B52DF0D6363](<Analog/Eizo/ENC2532/9B52DF0D6363>) |
+| Eizo             | ENC2532 | EV2450           | 1920x1080 | 24.0 | 2019 | [06ED3FBDF737](<Analog/Eizo/ENC2532/06ED3FBDF737>) |
 | Eizo             | ENC2532 | EV2450           | 1920x1080 | 24.0 | 2017 | [57287D7393DB](<Analog/Eizo/ENC2532/57287D7393DB>) |
 | Eizo             | ENC2532 | EV2450           | 1920x1080 | 24.0 | 2016 | [7774C5A8A6B9](<Analog/Eizo/ENC2532/7774C5A8A6B9>) |
+| Eizo             | ENC2532 | EV2450           | 1920x1080 | 24.0 | 2015 | [02CED60196C6](<Analog/Eizo/ENC2532/02CED60196C6>) |
 | Eizo             | ENC2532 | EV2450           | 1920x1080 | 24.0 | 2014 | [D670899A0FEA](<Analog/Eizo/ENC2532/D670899A0FEA>) |
 | Eizo             | ENC2532 | EV2450           | 1920x1080 | 24.0 |      | [BAFDB4591854](<Analog/Eizo/ENC2532/BAFDB4591854>) |
 | Element          | ELE0000 | E1SW2418M        | 1920x1080 | 23.8 | 2018 | [66868CF2D6E2](<Analog/Element/ELE0000/66868CF2D6E2>) |
@@ -2942,6 +3042,7 @@ model and ID.
 | Element          | ELE1366 | ELEFW328         | 1366x768  | 31.7 | 2014 | [CF1A92A582A7](<Analog/Element/ELE1366/CF1A92A582A7>) |
 | Element          | ELE1911 | ELEFW195         | 1366x768  | 18.5 | 2014 | [162BD5B988C0](<Analog/Element/ELE1911/162BD5B988C0>) |
 | Element          | ELE2370 | ELEFW231         | 1366x768  | 23.1 | 2013 | [728D4960A7BC](<Analog/Element/ELE2370/728D4960A7BC>) |
+| Element          | ELE3553 | ELEFW328         | 1366x768  | 31.5 | 2018 | [5E4C7D8D89A8](<Analog/Element/ELE3553/5E4C7D8D89A8>) |
 | Element          | ELE3553 | ELEFW328C        | 1360x768  | 31.2 | 2018 | [C6B6C1CD08C0](<Analog/Element/ELE3553/C6B6C1CD08C0>) |
 | Element          | ELE6308 | WD32FBL1001      | 1920x1080 | 40.2 | 2017 | [522A63F6F121](<Analog/Element/ELE6308/522A63F6F121>) |
 | Element          | ELE6308 | ELSFWC321        | 1366x768  | 31.5 |      | [8BB407D2F8B2](<Analog/Element/ELE6308/8BB407D2F8B2>) |
@@ -2959,10 +3060,12 @@ model and ID.
 | Elo Touch        | ELO1915 | ET1915L          | 1280x1024 | 18.8 | 2009 | [7B07249033C9](<Analog/Elo Touch/ELO1915/7B07249033C9>) |
 | Elo Touch        | ELO2200 |                  | 1680x1050 | 21.7 | 2010 | [D3839C2A9647](<Analog/Elo Touch/ELO2200/D3839C2A9647>) |
 | Elo Touch        | ELO2639 |                  | 1680x1050 | 25.7 | 2011 | [9BC6CBF4CA91](<Analog/Elo Touch/ELO2639/9BC6CBF4CA91>) |
+| Elo Touch        | ELO3239 |                  | 1680x1050 | 31.2 | 2012 | [E330EEA59D2E](<Analog/Elo Touch/ELO3239/E330EEA59D2E>) |
 | Envision         | EPI0191 | H191W            | 1440x900  | 19.8 | 2006 | [E7CBA2084915](<Analog/Envision/EPI0191/E7CBA2084915>) |
 | Envision         | EPI1475 | LE32M1475        | 1360x768  | 31.5 | 2017 | [BEF1916368E8](<Analog/Envision/EPI1475/BEF1916368E8>) |
 | Envision         | EPI1906 | H19W             | 1440x900  | 19.1 | 2007 | [687BBCC6AEC1](<Analog/Envision/EPI1906/687BBCC6AEC1>) |
 | Envision         | EPI1913 | H193Wk           | 1440x900  | 18.6 | 2006 | [CEBDDBD1430C](<Analog/Envision/EPI1913/CEBDDBD1430C>) |
+| Envision         | EPI1944 | G918w1           | 1440x900  | 19.1 | 2007 | [66B3F7085209](<Analog/Envision/EPI1944/66B3F7085209>) |
 | Envision         | EPI1CF2 | EN7410e          | 1280x1024 | 15.2 |      | [6DD4CD69D60A](<Analog/Envision/EPI1CF2/6DD4CD69D60A>) |
 | Envision         | EPI2001 | G2016wa1         | 1680x1050 | 19.2 | 2007 | [0E7BB7C24A1C](<Analog/Envision/EPI2001/0E7BB7C24A1C>) |
 | Envision         | EPI2202 | G22LWk           | 1680x1050 | 21.7 | 2007 | [10631B830923](<Analog/Envision/EPI2202/10631B830923>) |
@@ -2972,6 +3075,7 @@ model and ID.
 | Envision         | EPI2254 | 2219V1           | 1680x1050 | 21.7 | 2008 | [899D66880BB3](<Analog/Envision/EPI2254/899D66880BB3>) |
 | Envision         | EPI2441 | EPI2441          | 1360x768  | 23.4 | 2015 | [0A86CA7C4B90](<Analog/Envision/EPI2441/0A86CA7C4B90>) |
 | Envision         | EPI2442 | EPI2442          | 1360x768  | 23.4 | 2013 | [0ACBAD117FE3](<Analog/Envision/EPI2442/0ACBAD117FE3>) |
+| Envision         | EPI2445 | 2445             | 1360x768  | 23.4 | 2015 | [22813266F00D](<Analog/Envision/EPI2445/22813266F00D>) |
 | Envision         | EPI3244 | EPI3244          | 1360x768  | 31.5 | 2016 | [E23B6FBEED6C](<Analog/Envision/EPI3244/E23B6FBEED6C>) |
 | Envision         | EPIB556 | AOC              | 1024x768  | 13.8 |      | [5784E4293F54](<Analog/Envision/EPIB556/5784E4293F54>) |
 | Envision         | EPIC944 | H1981            | 1280x1024 | 19.1 | 2007 | [46699417499C](<Analog/Envision/EPIC944/46699417499C>) |
@@ -2992,6 +3096,7 @@ model and ID.
 | Envision Peri... | ENV2151 | LCD2151          | 1920x1080 | 21.1 | 2010 | [8E16A639F515](<Analog/Envision Peripherals/ENV2151/8E16A639F515>) |
 | Envision Peri... | ENV2219 | LCD 2219         | 1680x1050 | 22.0 | 2009 | [06055ACAAE47](<Analog/Envision Peripherals/ENV2219/06055ACAAE47>) |
 | Envision Peri... | ENV2261 | LCD2261          | 1920x1080 | 21.7 | 2010 | [75AEF6F1356A](<Analog/Envision Peripherals/ENV2261/75AEF6F1356A>) |
+| Envision Peri... | ENV2271 | LED 2271wh       | 1920x1080 | 21.1 | 2015 | [240BE28EAF21](<Analog/Envision Peripherals/ENV2271/240BE28EAF21>) |
 | Envision Peri... | ENV2271 | LCD2271W         | 1920x1080 | 21.1 | 2012 | [0561502DF365](<Analog/Envision Peripherals/ENV2271/0561502DF365>) |
 | Envision Peri... | ENV2460 | LCD2460          | 1920x1080 | 23.4 | 2011 | [A6E06E5CFFCB](<Analog/Envision Peripherals/ENV2460/A6E06E5CFFCB>) |
 | Envision Peri... | ENV2471 | LED 2471h        | 1920x1080 | 24.0 | 2012 | [08B2019D4ED0](<Analog/Envision Peripherals/ENV2471/08B2019D4ED0>) |
@@ -3001,6 +3106,7 @@ model and ID.
 | Envision Peri... | ENV2720 | G272Q            | 1920x1200 | 27.0 | 2019 | [6A66BF436857](<Analog/Envision Peripherals/ENV2720/6A66BF436857>) |
 | Epson            | EHJ4C88 | LD18W41S         | 1360x768  | 19.8 |      | [6D6397413090](<Analog/Epson/EHJ4C88/6D6397413090>) |
 | Erisson          | HPC0020 | 32LH01           | 1280x1024 | 31.5 | 2007 | [998A909A2B5B](<Analog/Erisson/HPC0020/998A909A2B5B>) |
+| Founder          | FND02B8 | F191WL           | 1440x900  | 19.1 | 2012 | [FCB02D645CDE](<Analog/Founder/FND02B8/FCB02D645CDE>) |
 | Fujitsu          | FUJ0911 | VL-202VH         | 1600x1200 | 20.2 | 2006 | [D59C07A1B11D](<Analog/Fujitsu/FUJ0911/D59C07A1B11D>) |
 | Fujitsu          | FUJ2B11 | VL-172SE         | 1280x1024 | 17.1 |      | [0DB7EDD07A75](<Analog/Fujitsu/FUJ2B11/0DB7EDD07A75>) |
 | Fujitsu Siemens  | FUS0070 | C992             | 1600x1200 | 17.7 |      | [DE986416E867](<Analog/Fujitsu Siemens/FUS0070/DE986416E867>) |
@@ -3047,7 +3153,7 @@ model and ID.
 | Fujitsu Siemens  | FUS0607 | C19-12           | 1280x1024 | 19.1 |      | [2CE68F70B320](<Analog/Fujitsu Siemens/FUS0607/2CE68F70B320>) |
 | Fujitsu Siemens  | FUS0608 | A17              | 1280x1024 | 17.1 |      | [9FC312125D65](<Analog/Fujitsu Siemens/FUS0608/9FC312125D65>) |
 | Fujitsu Siemens  | FUS0622 | A19-1 DVI        | 1280x1024 | 19.1 | 2008 | [39DD2D75775D](<Analog/Fujitsu Siemens/FUS0622/39DD2D75775D>) |
-| Fujitsu Siemens  | FUS0642 | H19-1            | 1280x1024 | 19.1 | 2007 | [86D9A646A369](<Analog/Fujitsu Siemens/FUS0642/86D9A646A369>) |
+| Fujitsu Siemens  | FUS0642 | H19-1            | 1280x1024 | 19.1 | 2007 | [622D9D050C6E](<Analog/Fujitsu Siemens/FUS0642/622D9D050C6E>) |
 | Fujitsu Siemens  | FUS0652 | X17-6            | 1280x1024 | 17.1 | 2006 | [B3952BF6DEAB](<Analog/Fujitsu Siemens/FUS0652/B3952BF6DEAB>) |
 | Fujitsu Siemens  | FUS0657 | X17-1D GB        | 1280x1024 | 17.1 | 2006 | [521445D141B8](<Analog/Fujitsu Siemens/FUS0657/521445D141B8>) |
 | Fujitsu Siemens  | FUS0659 | A17-2A           | 1280x1024 | 17.1 | 2006 | [33DCAF54B712](<Analog/Fujitsu Siemens/FUS0659/33DCAF54B712>) |
@@ -3055,6 +3161,7 @@ model and ID.
 | Fujitsu Siemens  | FUS0674 | XE17-4           | 1280x1024 | 17.1 | 2006 | [9E4959210D35](<Analog/Fujitsu Siemens/FUS0674/9E4959210D35>) |
 | Fujitsu Siemens  | FUS067C | A19-3            | 1280x1024 | 19.1 | 2008 | [65909EAF7FCC](<Analog/Fujitsu Siemens/FUS067C/65909EAF7FCC>) |
 | Fujitsu Siemens  | FUS067C | A19              | 1280x1024 | 19.1 |      | [6E09F8615DDC](<Analog/Fujitsu Siemens/FUS067C/6E09F8615DDC>) |
+| Fujitsu Siemens  | FUS067E | A22W-3           | 1680x1050 | 22.0 | 2007 | [B8CCB56E8399](<Analog/Fujitsu Siemens/FUS067E/B8CCB56E8399>) |
 | Fujitsu Siemens  | FUS0681 | L19-2            | 1280x1024 | 19.1 | 2007 | [3EAB742C17C6](<Analog/Fujitsu Siemens/FUS0681/3EAB742C17C6>) |
 | Fujitsu Siemens  | FUS0681 | L19-2            | 1280x1024 | 19.1 | 2006 | [73E51624976F](<Analog/Fujitsu Siemens/FUS0681/73E51624976F>) |
 | Fujitsu Siemens  | FUS0688 | A19-3A           | 1280x1024 | 19.1 | 2007 | [49536B4957D3](<Analog/Fujitsu Siemens/FUS0688/49536B4957D3>) |
@@ -3096,6 +3203,7 @@ model and ID.
 | Fujitsu Siemens  | FUS0769 | L22W-6SA         | 1680x1050 | 22.0 | 2007 | [1FBEF93E4456](<Analog/Fujitsu Siemens/FUS0769/1FBEF93E4456>) |
 | Fujitsu Siemens  | FUS0769 | L22W             | 1680x1050 | 22.0 |      | [B4C70C399136](<Analog/Fujitsu Siemens/FUS0769/B4C70C399136>) |
 | Fujitsu Siemens  | FUS0776 | L19W             | 1440x900  | 19.1 |      | [88D2CBA5CA63](<Analog/Fujitsu Siemens/FUS0776/88D2CBA5CA63>) |
+| Fujitsu Siemens  | FUS077C | P19-3P           | 1280x1024 | 19.1 | 2008 | [6D8DF57EA005](<Analog/Fujitsu Siemens/FUS077C/6D8DF57EA005>) |
 | Fujitsu Siemens  | FUS077D | A19W-3           | 1440x900  | 19.1 | 2008 | [7C9CD96E58EE](<Analog/Fujitsu Siemens/FUS077D/7C9CD96E58EE>) |
 | Fujitsu Siemens  | FUS0788 | L22W-11          | 1680x1050 | 22.0 | 2008 | [FB8F81F3DCBB](<Analog/Fujitsu Siemens/FUS0788/FB8F81F3DCBB>) |
 | Fujitsu Siemens  | FUS078B | A19-3 DVI        | 1280x1024 | 19.1 | 2008 | [21A3263E3C48](<Analog/Fujitsu Siemens/FUS078B/21A3263E3C48>) |
@@ -3120,16 +3228,17 @@ model and ID.
 | Fujitsu Siemens  | FUS07C3 | B22W-5 ECO       | 1680x1050 | 22.0 | 2010 | [29841ABCA831](<Analog/Fujitsu Siemens/FUS07C3/29841ABCA831>) |
 | Fujitsu Siemens  | FUS07C3 | B22W-5 ECO       | 1680x1050 | 22.0 | 2009 | [890C999BD0BF](<Analog/Fujitsu Siemens/FUS07C3/890C999BD0BF>) |
 | Fujitsu Siemens  | FUS07C5 | L3190T           | 1366x768  | 19.8 | 2009 | [068E5DC21999](<Analog/Fujitsu Siemens/FUS07C5/068E5DC21999>) |
-| Fujitsu Siemens  | FUS07C7 | SL3220W          | 1680x1050 | 22.0 | 2009 | [2593B5D4E66B](<Analog/Fujitsu Siemens/FUS07C7/2593B5D4E66B>) |
+| Fujitsu Siemens  | FUS07C7 | SL3220W          | 1680x1050 | 22.0 | 2009 | [126525977539](<Analog/Fujitsu Siemens/FUS07C7/126525977539>) |
 | Fujitsu Siemens  | FUS07C7 | SL3220W          | 1680x1050 | 22.0 |      | [E11139BDCF15](<Analog/Fujitsu Siemens/FUS07C7/E11139BDCF15>) |
-| Fujitsu Siemens  | FUS07C9 | SL3230T          | 1920x1080 | 23.1 | 2010 | [DFEB9E071035](<Analog/Fujitsu Siemens/FUS07C9/DFEB9E071035>) |
+| Fujitsu Siemens  | FUS07C9 | SL3230T          | 1920x1080 | 23.1 | 2010 | [1B62E7326992](<Analog/Fujitsu Siemens/FUS07C9/1B62E7326992>) |
+| Fujitsu Siemens  | FUS07CB | SL3260W          | 1920x1200 | 25.5 | 2009 | [F112919776D8](<Analog/Fujitsu Siemens/FUS07CB/F112919776D8>) |
 | Fujitsu Siemens  | FUS07CD | E19-9 ECO        | 1280x1024 | 19.1 | 2010 | [8EFED8763AB5](<Analog/Fujitsu Siemens/FUS07CD/8EFED8763AB5>) |
 | Fujitsu Siemens  | FUS07CD | E19              | 1280x1024 | 19.1 |      | [9C4E4E207BD4](<Analog/Fujitsu Siemens/FUS07CD/9C4E4E207BD4>) |
 | Fujitsu Siemens  | FUS07CE | E19W-5           | 1440x900  | 19.1 | 2011 | [054D28715AB2](<Analog/Fujitsu Siemens/FUS07CE/054D28715AB2>) |
 | Fujitsu Siemens  | FUS07CE | E19W-5           | 1440x900  | 19.1 | 2010 | [FC02CF8B29E0](<Analog/Fujitsu Siemens/FUS07CE/FC02CF8B29E0>) |
 | Fujitsu Siemens  | FUS07CF | E22W-5           | 1680x1050 | 22.0 | 2010 | [4F2DBD7560D6](<Analog/Fujitsu Siemens/FUS07CF/4F2DBD7560D6>) |
 | Fujitsu Siemens  | FUS07CF | E22W-5           | 1680x1050 | 22.0 | 2009 | [9D1BA1B72C27](<Analog/Fujitsu Siemens/FUS07CF/9D1BA1B72C27>) |
-| Fujitsu Siemens  | FUS07D3 | B24W-5 ECO       | 1920x1200 | 24.0 | 2010 | [B36B3F3A84CC](<Analog/Fujitsu Siemens/FUS07D3/B36B3F3A84CC>) |
+| Fujitsu Siemens  | FUS07D3 | B24W-5 ECO       | 1920x1200 | 24.0 | 2010 | [9EB3B9F96C4F](<Analog/Fujitsu Siemens/FUS07D3/9EB3B9F96C4F>) |
 | Fujitsu Siemens  | FUS07D6 | A19-5 ECO        | 1280x1024 | 19.1 | 2009 | [BC37EF0CB2F3](<Analog/Fujitsu Siemens/FUS07D6/BC37EF0CB2F3>) |
 | Fujitsu Siemens  | FUS07D8 | L22W             | 1680x1050 | 22.0 |      | [1E27BC6B4F03](<Analog/Fujitsu Siemens/FUS07D8/1E27BC6B4F03>) |
 | Fujitsu Siemens  | FUS07DF | L20T-1 ECO       | 1600x900  | 19.9 | 2010 | [2809E59E9578](<Analog/Fujitsu Siemens/FUS07DF/2809E59E9578>) |
@@ -3151,6 +3260,7 @@ model and ID.
 | Fujitsu Siemens  | FUS07FB | B23T-6 LED       | 1920x1080 | 23.1 | 2013 | [EC54F3E0C1F3](<Analog/Fujitsu Siemens/FUS07FB/EC54F3E0C1F3>) |
 | Fujitsu Siemens  | FUS07FB | B23T-6 LED       | 1920x1080 | 23.1 | 2012 | [470256320BA5](<Analog/Fujitsu Siemens/FUS07FB/470256320BA5>) |
 | Fujitsu Siemens  | FUS07FB | B23T-6 LED       | 1920x1080 | 23.1 | 2011 | [A9F47CE4CA8D](<Analog/Fujitsu Siemens/FUS07FB/A9F47CE4CA8D>) |
+| Fujitsu Siemens  | FUS0802 | L20T-3 LED       | 1600x900  | 19.9 | 2011 | [A8C7FBC7D45A](<Analog/Fujitsu Siemens/FUS0802/A8C7FBC7D45A>) |
 | Fujitsu Siemens  | FUS0805 | B20T-6 LED       | 1600x900  | 19.9 | 2011 | [AF903085EC16](<Analog/Fujitsu Siemens/FUS0805/AF903085EC16>) |
 | Fujitsu Siemens  | FUS0809 | L22T-3 LED       | 1920x1080 | 21.7 | 2012 | [871C7E882666](<Analog/Fujitsu Siemens/FUS0809/871C7E882666>) |
 | Fujitsu Siemens  | FUS0811 | B24W-6 LED       | 1920x1200 | 24.0 | 2012 | [D726ABC34754](<Analog/Fujitsu Siemens/FUS0811/D726ABC34754>) |
@@ -3158,6 +3268,7 @@ model and ID.
 | Fujitsu Siemens  | FUS0816 | E20T-6 LED       | 1600x900  | 19.9 | 2012 | [395EEAE67ECD](<Analog/Fujitsu Siemens/FUS0816/395EEAE67ECD>) |
 | Fujitsu Siemens  | FUS0818 | P23T-6 LED       | 1920x1080 | 23.1 | 2013 | [93031EBBCDB9](<Analog/Fujitsu Siemens/FUS0818/93031EBBCDB9>) |
 | Fujitsu Siemens  | FUS0828 |                  | 1920x1080 | 21.7 | 2013 | [65D8FDC131BA](<Analog/Fujitsu Siemens/FUS0828/65D8FDC131BA>) |
+| Fujitsu Siemens  | FUS0832 | L24T-1 LED       | 1920x1080 | 24.0 | 2013 | [2B14E5266171](<Analog/Fujitsu Siemens/FUS0832/2B14E5266171>) |
 | Fujitsu Siemens  | FUS0836 | B22W-7 LED       | 1680x1050 | 22.0 | 2016 | [D25BD33B2729](<Analog/Fujitsu Siemens/FUS0836/D25BD33B2729>) |
 | Fujitsu Siemens  | FUS0836 | B22W-7 LED       | 1680x1050 | 22.0 | 2014 | [24F027D1475A](<Analog/Fujitsu Siemens/FUS0836/24F027D1475A>) |
 | Fujitsu Siemens  | FUS0836 | B22W             | 1680x1050 | 22.0 |      | [12EA55A3E2CD](<Analog/Fujitsu Siemens/FUS0836/12EA55A3E2CD>) |
@@ -3168,6 +3279,7 @@ model and ID.
 | Fujitsu Siemens  | FUS0858 | E20T-7 LED       | 1600x900  | 19.4 | 2014 | [040118F9ED51](<Analog/Fujitsu Siemens/FUS0858/040118F9ED51>) |
 | Fujitsu Siemens  | FUS0875 | L21T-1 LED       | 1920x1080 | 20.8 | 2015 | [273A297FB538](<Analog/Fujitsu Siemens/FUS0875/273A297FB538>) |
 | Fujitsu Siemens  | FUS087A | B24-8 TE Pro     | 1920x1080 | 24.0 | 2019 | [973BD37B4E9E](<Analog/Fujitsu Siemens/FUS087A/973BD37B4E9E>) |
+| Fujitsu Siemens  | FUS0883 | E22T-7 Pro       | 1920x1080 | 21.7 | 2017 | [6348AFF12783](<Analog/Fujitsu Siemens/FUS0883/6348AFF12783>) |
 | Fujitsu Siemens  | FUS088F | B27T-7 Pro       | 1920x1200 | 27.2 | 2016 | [E48C45013988](<Analog/Fujitsu Siemens/FUS088F/E48C45013988>) |
 | Fujitsu Siemens  | FUS0895 | B22-8 TS Pro     | 1920x1080 | 21.7 | 2018 | [CD7287F61076](<Analog/Fujitsu Siemens/FUS0895/CD7287F61076>) |
 | GNR              | PGE1701 | TS700            | 1280x1024 | 17.1 |      | [9DF89F88394A](<Analog/GNR/PGE1701/9DF89F88394A>) |
@@ -3179,6 +3291,7 @@ model and ID.
 | Gateway          | GTW037B | KX2153           | 1920x1080 | 21.7 | 2013 | [37B00FCB01DC](<Analog/Gateway/GTW037B/37B00FCB01DC>) |
 | Gateway          | GTW037D | KX2303           | 1920x1080 | 23.1 | 2013 | [C61F2E1FABC8](<Analog/Gateway/GTW037D/C61F2E1FABC8>) |
 | Gateway          | GTW158D | PF51700 PC       | 1280x1024 | 17.1 |      | [5AFA17C22806](<Analog/Gateway/GTW158D/5AFA17C22806>) |
+| Gateway          | GWY0085 | FHD2102          | 1920x1080 | 21.7 | 2009 | [086A459E76D1](<Analog/Gateway/GWY0085/086A459E76D1>) |
 | Gateway          | GWY00BF | FHX2300          | 1920x1080 | 22.9 | 2010 | [A0FD5A62194D](<Analog/Gateway/GWY00BF/A0FD5A62194D>) |
 | Gateway          | GWY00C3 | MW22             | 1680x1050 | 21.7 | 2010 | [13A3EFEF7D24](<Analog/Gateway/GWY00C3/13A3EFEF7D24>) |
 | Gateway          | GWY00CC | HX2000           | 1600x900  | 19.9 | 2011 | [C7A49F36C1AE](<Analog/Gateway/GWY00CC/C7A49F36C1AE>) |
@@ -3216,7 +3329,7 @@ model and ID.
 | Gateway          | GWY07B1 | FPD1960          | 1280x1024 | 19.1 | 2006 | [832858AFD674](<Analog/Gateway/GWY07B1/832858AFD674>) |
 | Gateway          | GWY07B3 | FPD1965          | 1280x1024 | 19.1 | 2008 | [FDF4E8CF8FA6](<Analog/Gateway/GWY07B3/FDF4E8CF8FA6>) |
 | Gateway          | GWY0889 | FPD2185W         | 1680x1050 | 20.9 | 2007 | [3EB3993695F5](<Analog/Gateway/GWY0889/3EB3993695F5>) |
-| Gateway          | GWY08AD | HD2201           | 1680x1050 | 22.0 | 2009 | [8FC26FC9DA7B](<Analog/Gateway/GWY08AD/8FC26FC9DA7B>) |
+| Gateway          | GWY08AD | HD2201           | 1680x1050 | 22.0 | 2009 | [84EF155D4840](<Analog/Gateway/GWY08AD/84EF155D4840>) |
 | Gateway          | GWY08AD | HD2201           | 1680x1050 | 22.0 | 2008 | [CFBF90FDCBBB](<Analog/Gateway/GWY08AD/CFBF90FDCBBB>) |
 | Gateway          | GWY08AD | HD2201           | 1680x1050 | 22.0 |      | [29D18C9DFC2A](<Analog/Gateway/GWY08AD/29D18C9DFC2A>) |
 | Gateway          | GWY08ED | FPD2275W         | 1680x1050 | 22.3 | 2007 | [EA2DE77F2B59](<Analog/Gateway/GWY08ED/EA2DE77F2B59>) |
@@ -3240,7 +3353,8 @@ model and ID.
 | Goldstar         | GSM0001 | LG TV            | 1360x768  | 31.5 | 2010 | [0E88527B5D2E](<Analog/Goldstar/GSM0001/0E88527B5D2E>) |
 | Goldstar         | GSM0001 | LG TV            | 1920x1080 | 52.0 | 2010 | [24893A8EBA07](<Analog/Goldstar/GSM0001/24893A8EBA07>) |
 | Goldstar         | GSM0001 | 32LD400          | 1920x1080 | 31.5 | 2010 | [F9C7ECAFC9C8](<Analog/Goldstar/GSM0001/F9C7ECAFC9C8>) |
-| Goldstar         | GSM0001 | LG TV            | 1920x1080 | 52.0 | 2009 | [468F40E0C4A1](<Analog/Goldstar/GSM0001/468F40E0C4A1>) |
+| Goldstar         | GSM0001 | LG TV            | 1920x1080 | 52.0 | 2009 | [3DD56DEBE0C7](<Analog/Goldstar/GSM0001/3DD56DEBE0C7>) |
+| Goldstar         | GSM0001 | LG TV            | 1360x768  | 52.0 | 2009 | [46865F40202C](<Analog/Goldstar/GSM0001/46865F40202C>) |
 | Goldstar         | GSM0001 | LG TV            | 1920x1080 | 52.0 | 2008 | [2B303576EA95](<Analog/Goldstar/GSM0001/2B303576EA95>) |
 | Goldstar         | GSM0001 | LG TV            | 1360x768  | 52.0 | 2008 | [FA5F31741261](<Analog/Goldstar/GSM0001/FA5F31741261>) |
 | Goldstar         | GSM0001 | LG TV            | 1920x1080 | 52.0 | 2007 | [18B91CE31FC6](<Analog/Goldstar/GSM0001/18B91CE31FC6>) |
@@ -3275,7 +3389,9 @@ model and ID.
 | Goldstar         | GSM3BAD | 15LC1R           | 1024x768  | 14.9 | 2006 | [A4BD291BC7C6](<Analog/Goldstar/GSM3BAD/A4BD291BC7C6>) |
 | Goldstar         | GSM3BAE | L1553S           | 1024x768  | 14.9 | 2007 | [4B8378992D43](<Analog/Goldstar/GSM3BAE/4B8378992D43>) |
 | Goldstar         | GSM3BAE | L1552S           | 1024x768  | 14.9 | 2006 | [15E1E754C523](<Analog/Goldstar/GSM3BAE/15E1E754C523>) |
+| Goldstar         | GSM3BB0 | L1553S           | 1024x768  | 14.9 | 2008 | [B46760D19C54](<Analog/Goldstar/GSM3BB0/B46760D19C54>) |
 | Goldstar         | GSM3BB0 | L1553S           | 1024x768  | 14.9 |      | [A0611E255696](<Analog/Goldstar/GSM3BB0/A0611E255696>) |
+| Goldstar         | GSM3BB1 | W1542            | 1280x720  | 15.0 | 2009 | [B44FE1CD60AC](<Analog/Goldstar/GSM3BB1/B44FE1CD60AC>) |
 | Goldstar         | GSM3E86 | W1642            | 1360x768  | 15.9 | 2009 | [0B1ADB6D1945](<Analog/Goldstar/GSM3E86/0B1ADB6D1945>) |
 | Goldstar         | GSM3E86 | W1642            | 1360x768  | 15.9 | 2008 | [95E195C60E49](<Analog/Goldstar/GSM3E86/95E195C60E49>) |
 | Goldstar         | GSM3E88 | W1643            | 1360x768  | 15.3 | 2011 | [322BDF1B7E31](<Analog/Goldstar/GSM3E88/322BDF1B7E31>) |
@@ -3294,7 +3410,7 @@ model and ID.
 | Goldstar         | GSM42E7 | StudioWorks 775E | 1280x1024 | 16.3 |      | [B89E2ABA2A18](<Analog/Goldstar/GSM42E7/B89E2ABA2A18>) |
 | Goldstar         | GSM42ED | StudioWorks 773N | 1280x1024 | 16.3 |      | [7AB6DE03D23E](<Analog/Goldstar/GSM42ED/7AB6DE03D23E>) |
 | Goldstar         | GSM42EF | StudioWorks 773E | 1280x1024 | 16.3 |      | [771871B14AD8](<Analog/Goldstar/GSM42EF/771871B14AD8>) |
-| Goldstar         | GSM430B | 700S             | 1280x1024 | 16.3 |      | [17DBB8170669](<Analog/Goldstar/GSM430B/17DBB8170669>) |
+| Goldstar         | GSM430B | StudioWorks 700S | 1280x1024 | 16.3 |      | [11174B75607A](<Analog/Goldstar/GSM430B/11174B75607A>) |
 | Goldstar         | GSM430C | 700B             | 1280x1024 | 16.3 |      | [A6976D512658](<Analog/Goldstar/GSM430C/A6976D512658>) |
 | Goldstar         | GSM4313 | E700B            | 1280x1024 | 15.7 |      | [3D56AE3CAD51](<Analog/Goldstar/GSM4313/3D56AE3CAD51>) |
 | Goldstar         | GSM4327 | 782LE            | 1280x1024 | 17.1 |      | [492269DD0E37](<Analog/Goldstar/GSM4327/492269DD0E37>) |
@@ -3332,6 +3448,7 @@ model and ID.
 | Goldstar         | GSM43A7 | T711B            | 1280x960  | 16.1 |      | [07238DC16BD9](<Analog/Goldstar/GSM43A7/07238DC16BD9>) |
 | Goldstar         | GSM43A7 | T711B            | 1280x1024 | 15.7 |      | [9E392BC93B89](<Analog/Goldstar/GSM43A7/9E392BC93B89>) |
 | Goldstar         | GSM43AD | T710MH           | 1280x960  | 16.1 |      | [04CAB4860703](<Analog/Goldstar/GSM43AD/04CAB4860703>) |
+| Goldstar         | GSM43B0 | L173ST           | 1280x1024 | 17.1 |      | [8B8433E2F900](<Analog/Goldstar/GSM43B0/8B8433E2F900>) |
 | Goldstar         | GSM43C2 | T730BH           | 1280x960  | 16.1 | 2006 | [09A9DA3CCDB5](<Analog/Goldstar/GSM43C2/09A9DA3CCDB5>) |
 | Goldstar         | GSM43C2 | T730BH           | 1280x960  | 16.1 |      | [252D6763AA8A](<Analog/Goldstar/GSM43C2/252D6763AA8A>) |
 | Goldstar         | GSM43C3 | F730B            | 1280x1024 | 16.3 |      | [1D4C26218C2F](<Analog/Goldstar/GSM43C3/1D4C26218C2F>) |
@@ -3341,7 +3458,7 @@ model and ID.
 | Goldstar         | GSM43CB | T730SH           | 1280x960  | 16.1 | 2006 | [ABBDE62AE678](<Analog/Goldstar/GSM43CB/ABBDE62AE678>) |
 | Goldstar         | GSM43CB | T730SH           | 1280x960  | 16.1 |      | [175536E99DFD](<Analog/Goldstar/GSM43CB/175536E99DFD>) |
 | Goldstar         | GSM43CC | L1750S           | 1280x1024 | 17.1 | 2006 | [12AF9C107ADA](<Analog/Goldstar/GSM43CC/12AF9C107ADA>) |
-| Goldstar         | GSM43CC | L1750S           | 1280x1024 | 17.1 |      | [5F34BA25429F](<Analog/Goldstar/GSM43CC/5F34BA25429F>) |
+| Goldstar         | GSM43CC | L1750S           | 1280x1024 | 17.1 |      | [5AA187EDD869](<Analog/Goldstar/GSM43CC/5AA187EDD869>) |
 | Goldstar         | GSM43CF | L1740P           | 1280x1024 | 17.1 |      | [615741898999](<Analog/Goldstar/GSM43CF/615741898999>) |
 | Goldstar         | GSM43D4 | L1740B           | 1280x1024 | 17.1 |      | [7534FA419819](<Analog/Goldstar/GSM43D4/7534FA419819>) |
 | Goldstar         | GSM43D5 | T730PU           | 1600x1200 | 16.1 |      | [77791EFB32B7](<Analog/Goldstar/GSM43D5/77791EFB32B7>) |
@@ -3363,6 +3480,7 @@ model and ID.
 | Goldstar         | GSM4406 | L1750B           | 1280x1024 | 17.1 | 2006 | [54EFD9E9E5F9](<Analog/Goldstar/GSM4406/54EFD9E9E5F9>) |
 | Goldstar         | GSM440C | L1750U           | 1280x1024 | 17.1 |      | [05DE17F9B213](<Analog/Goldstar/GSM440C/05DE17F9B213>) |
 | Goldstar         | GSM4410 | T750BH plus      | 1280x960  | 16.1 | 2006 | [783243939E97](<Analog/Goldstar/GSM4410/783243939E97>) |
+| Goldstar         | GSM4413 | L1732S           | 1280x1024 | 17.1 | 2006 | [0D0D83B67FD8](<Analog/Goldstar/GSM4413/0D0D83B67FD8>) |
 | Goldstar         | GSM4413 | L1732S           | 1280x1024 | 17.1 |      | [09CD9FBAE3AB](<Analog/Goldstar/GSM4413/09CD9FBAE3AB>) |
 | Goldstar         | GSM4414 | T717B            | 1280x960  | 16.1 |      | [8B64A406C24E](<Analog/Goldstar/GSM4414/8B64A406C24E>) |
 | Goldstar         | GSM441D | L1732P           | 1280x1024 | 17.1 | 2006 | [C101751C4E08](<Analog/Goldstar/GSM441D/C101751C4E08>) |
@@ -3389,7 +3507,7 @@ model and ID.
 | Goldstar         | GSM4472 | L1753HR          | 1280x1024 | 17.1 | 2007 | [E720999F37BD](<Analog/Goldstar/GSM4472/E720999F37BD>) |
 | Goldstar         | GSM4474 | L1753TR          | 1280x1024 | 17.1 | 2008 | [FF6292C7AAED](<Analog/Goldstar/GSM4474/FF6292C7AAED>) |
 | Goldstar         | GSM4474 | L1753TR          | 1280x1024 | 17.1 | 2007 | [C97BBE3C39E0](<Analog/Goldstar/GSM4474/C97BBE3C39E0>) |
-| Goldstar         | GSM4476 | L1753T           | 1280x1024 | 17.1 | 2008 | [E00867BB291D](<Analog/Goldstar/GSM4476/E00867BB291D>) |
+| Goldstar         | GSM4476 | L1753T           | 1280x1024 | 17.1 | 2008 | [89EA27242C9A](<Analog/Goldstar/GSM4476/89EA27242C9A>) |
 | Goldstar         | GSM4476 | L1753T           | 1280x1024 | 17.1 | 2007 | [0A654D15C4C9](<Analog/Goldstar/GSM4476/0A654D15C4C9>) |
 | Goldstar         | GSM447C | TGL175G          | 1280x1024 | 17.1 | 2008 | [2AA49B8A4DCA](<Analog/Goldstar/GSM447C/2AA49B8A4DCA>) |
 | Goldstar         | GSM448B | L177W            | 1280x720  | 17.1 | 2009 | [42A996C38D15](<Analog/Goldstar/GSM448B/42A996C38D15>) |
@@ -3419,6 +3537,7 @@ model and ID.
 | Goldstar         | GSM4A4D | Flatron915FT     | 1600x1200 | 17.7 |      | [158D18687931](<Analog/Goldstar/GSM4A4D/158D18687931>) |
 | Goldstar         | GSM4A5B | StudioWorks 900B | 1600x1200 | 17.7 |      | [1E074DA8E57F](<Analog/Goldstar/GSM4A5B/1E074DA8E57F>) |
 | Goldstar         | GSM4A5E | E900B            | 1600x1200 | 17.7 |      | [5EE8A6E21B93](<Analog/Goldstar/GSM4A5E/5EE8A6E21B93>) |
+| Goldstar         | GSM4A66 | F900B            | 2048x1536 | 17.7 |      | [0429DB7A51F0](<Analog/Goldstar/GSM4A66/0429DB7A51F0>) |
 | Goldstar         | GSM4A66 | F900B            | 1600x1200 | 17.7 |      | [0FD7681B83F7](<Analog/Goldstar/GSM4A66/0FD7681B83F7>) |
 | Goldstar         | GSM4A70 | L1910B           | 1280x1024 | 19.1 |      | [BD19DBE2E083](<Analog/Goldstar/GSM4A70/BD19DBE2E083>) |
 | Goldstar         | GSM4A78 | L1910S           | 1280x1024 | 19.1 |      | [13F872B1822A](<Analog/Goldstar/GSM4A78/13F872B1822A>) |
@@ -3441,6 +3560,7 @@ model and ID.
 | Goldstar         | GSM4AD2 | L1940BQ          | 1280x1024 | 19.1 | 2006 | [750848029DC7](<Analog/Goldstar/GSM4AD2/750848029DC7>) |
 | Goldstar         | GSM4AD3 | L1950SQ          | 1280x1024 | 19.1 | 2006 | [3A7EA51F4908](<Analog/Goldstar/GSM4AD3/3A7EA51F4908>) |
 | Goldstar         | GSM4AD3 | L1950SQ          | 1280x1024 | 19.1 |      | [51201101F320](<Analog/Goldstar/GSM4AD3/51201101F320>) |
+| Goldstar         | GSM4AD6 | L1951SQ          | 1280x1024 | 19.1 | 2006 | [12411763E112](<Analog/Goldstar/GSM4AD6/12411763E112>) |
 | Goldstar         | GSM4AD6 | L1951SQ          | 1280x1024 | 19.1 |      | [ED7A354C324C](<Analog/Goldstar/GSM4AD6/ED7A354C324C>) |
 | Goldstar         | GSM4AD7 | L1970HQ          | 1280x1024 | 19.1 | 2006 | [5A845B6C27C5](<Analog/Goldstar/GSM4AD7/5A845B6C27C5>) |
 | Goldstar         | GSM4AD9 | M1917S           | 1280x1024 | 17.1 | 2006 | [208399F5A485](<Analog/Goldstar/GSM4AD9/208399F5A485>) |
@@ -3470,7 +3590,7 @@ model and ID.
 | Goldstar         | GSM4B05 | L194WT           | 1440x900  | 19.1 | 2007 | [0063C1D4DAC6](<Analog/Goldstar/GSM4B05/0063C1D4DAC6>) |
 | Goldstar         | GSM4B05 | L194WT           | 1440x900  | 19.1 | 2006 | [30406F3BF605](<Analog/Goldstar/GSM4B05/30406F3BF605>) |
 | Goldstar         | GSM4B0A | L1982U           | 1280x1024 | 19.1 | 2007 | [B0A60D4D3DCC](<Analog/Goldstar/GSM4B0A/B0A60D4D3DCC>) |
-| Goldstar         | GSM4B16 | L1952TQ          | 1280x1024 | 19.1 | 2006 | [7860C2D15A54](<Analog/Goldstar/GSM4B16/7860C2D15A54>) |
+| Goldstar         | GSM4B16 | L1952TQ          | 1280x1024 | 19.1 | 2006 | [5E8D67A24564](<Analog/Goldstar/GSM4B16/5E8D67A24564>) |
 | Goldstar         | GSM4B20 | L1960TR          | 1280x1024 | 19.1 | 2007 | [C5A13443C772](<Analog/Goldstar/GSM4B20/C5A13443C772>) |
 | Goldstar         | GSM4B2B | M1921A           | 1280x1024 | 19.1 | 2007 | [07D7BC57587A](<Analog/Goldstar/GSM4B2B/07D7BC57587A>) |
 | Goldstar         | GSM4B31 | L1918S           | 1280x1024 | 19.1 | 2008 | [01295164DFC8](<Analog/Goldstar/GSM4B31/01295164DFC8>) |
@@ -3511,12 +3631,13 @@ model and ID.
 | Goldstar         | GSM4B6F | W1942            | 1680x1050 | 19.1 | 2008 | [566562B31F5F](<Analog/Goldstar/GSM4B6F/566562B31F5F>) |
 | Goldstar         | GSM4B6F | W2242            | 1680x1050 | 23.0 | 2008 | [B67D71B6A6AD](<Analog/Goldstar/GSM4B6F/B67D71B6A6AD>) |
 | Goldstar         | GSM4B77 | W1952            | 1440x900  | 19.1 | 2009 | [2FC4DB33D42E](<Analog/Goldstar/GSM4B77/2FC4DB33D42E>) |
-| Goldstar         | GSM4B77 | W1952            | 1440x900  | 19.1 | 2008 | [2FCC743D7597](<Analog/Goldstar/GSM4B77/2FCC743D7597>) |
+| Goldstar         | GSM4B77 | W1952            | 1440x900  | 19.1 | 2008 | [0213792CC806](<Analog/Goldstar/GSM4B77/0213792CC806>) |
 | Goldstar         | GSM4B77 | W1952            | 1440x900  | 19.1 |      | [417D38F1401F](<Analog/Goldstar/GSM4B77/417D38F1401F>) |
 | Goldstar         | GSM4B7A | W1934            | 1440x900  | 19.1 | 2010 | [0D8F455E4F4B](<Analog/Goldstar/GSM4B7A/0D8F455E4F4B>) |
 | Goldstar         | GSM4B7A | W1934            | 1440x900  | 19.1 | 2009 | [048D2F990C8F](<Analog/Goldstar/GSM4B7A/048D2F990C8F>) |
 | Goldstar         | GSM4B7A | W1934            | 1440x900  | 19.1 | 2008 | [017C33C05061](<Analog/Goldstar/GSM4B7A/017C33C05061>) |
 | Goldstar         | GSM4B7A | W1934            | 1440x900  | 19.1 |      | [097C9E1A1135](<Analog/Goldstar/GSM4B7A/097C9E1A1135>) |
+| Goldstar         | GSM4B7F | WX942            | 1440x900  | 19.1 | 2012 | [FD8321524496](<Analog/Goldstar/GSM4B7F/FD8321524496>) |
 | Goldstar         | GSM4B7F | WX942            | 1440x900  | 19.1 | 2011 | [2C742650080B](<Analog/Goldstar/GSM4B7F/2C742650080B>) |
 | Goldstar         | GSM4B7F | WX942            | 1440x900  | 19.1 | 2010 | [A153B8472B49](<Analog/Goldstar/GSM4B7F/A153B8472B49>) |
 | Goldstar         | GSM4B85 | L1942            | 1280x1024 | 19.1 | 2011 | [115DA9365AB2](<Analog/Goldstar/GSM4B85/115DA9365AB2>) |
@@ -3526,7 +3647,7 @@ model and ID.
 | Goldstar         | GSM4B85 | L1942            | 1280x1024 | 19.1 |      | [6E651734893D](<Analog/Goldstar/GSM4B85/6E651734893D>) |
 | Goldstar         | GSM4B89 | M1994D-PZ        | 1680x1050 | 18.6 | 2009 | [37AA15654172](<Analog/Goldstar/GSM4B89/37AA15654172>) |
 | Goldstar         | GSM4B91 | W1941            | 1360x768  | 18.5 | 2009 | [11D6ABB0A5B3](<Analog/Goldstar/GSM4B91/11D6ABB0A5B3>) |
-| Goldstar         | GSM4B91 | W1941            | 1360x768  | 18.5 | 2008 | [409B82A59DBE](<Analog/Goldstar/GSM4B91/409B82A59DBE>) |
+| Goldstar         | GSM4B91 | W1941            | 1360x768  | 18.5 | 2008 | [1C32956F5956](<Analog/Goldstar/GSM4B91/1C32956F5956>) |
 | Goldstar         | GSM4B91 | W1941            | 1360x768  | 18.5 |      | [5C92A97E702D](<Analog/Goldstar/GSM4B91/5C92A97E702D>) |
 | Goldstar         | GSM4BA6 | W1953            | 1360x768  | 18.5 | 2011 | [E10A32DF4B0B](<Analog/Goldstar/GSM4BA6/E10A32DF4B0B>) |
 | Goldstar         | GSM4BA6 | W1953            | 1360x768  | 18.5 | 2010 | [003B68D0B029](<Analog/Goldstar/GSM4BA6/003B68D0B029>) |
@@ -3543,7 +3664,7 @@ model and ID.
 | Goldstar         | GSM4BBE | M1962D           | 1360x768  | 18.5 | 2009 | [9A7A5C313486](<Analog/Goldstar/GSM4BBE/9A7A5C313486>) |
 | Goldstar         | GSM4BC1 | M197WDP          | 1360x768  | 18.5 |      | [91200B130BC1](<Analog/Goldstar/GSM4BC1/91200B130BC1>) |
 | Goldstar         | GSM4BCD | W1946            | 1360x768  | 18.5 | 2012 | [7C6370F75A23](<Analog/Goldstar/GSM4BCD/7C6370F75A23>) |
-| Goldstar         | GSM4BCD | W1946            | 1360x768  | 18.5 | 2011 | [525547337A8A](<Analog/Goldstar/GSM4BCD/525547337A8A>) |
+| Goldstar         | GSM4BCD | W1946            | 1360x768  | 18.5 | 2011 | [3391D18E4EE4](<Analog/Goldstar/GSM4BCD/3391D18E4EE4>) |
 | Goldstar         | GSM4BCD | W1946            | 1360x768  | 18.5 | 2010 | [350ED8195991](<Analog/Goldstar/GSM4BCD/350ED8195991>) |
 | Goldstar         | GSM4BCD | W1946            | 1360x768  | 18.5 |      | [0358D919E1CD](<Analog/Goldstar/GSM4BCD/0358D919E1CD>) |
 | Goldstar         | GSM4BD6 | E1940            | 1360x768  | 18.5 | 2011 | [0FEAE1E77AF5](<Analog/Goldstar/GSM4BD6/0FEAE1E77AF5>) |
@@ -3553,6 +3674,7 @@ model and ID.
 | Goldstar         | GSM4BD9 | E1950            | 1360x768  | 18.5 | 2010 | [C1F4454883A0](<Analog/Goldstar/GSM4BD9/C1F4454883A0>) |
 | Goldstar         | GSM4BE5 | E1960            | 1360x768  | 18.5 | 2011 | [03F7EA4E6E2E](<Analog/Goldstar/GSM4BE5/03F7EA4E6E2E>) |
 | Goldstar         | GSM4BE5 | E1960            | 1360x768  | 18.5 | 2010 | [26505A640FD3](<Analog/Goldstar/GSM4BE5/26505A640FD3>) |
+| Goldstar         | GSM4BEA | E1910            | 1280x1024 | 18.8 | 2013 | [DAE1EC2A9F89](<Analog/Goldstar/GSM4BEA/DAE1EC2A9F89>) |
 | Goldstar         | GSM4BEA | E1910            | 1280x1024 | 18.8 | 2012 | [897280774131](<Analog/Goldstar/GSM4BEA/897280774131>) |
 | Goldstar         | GSM4BEA | E1910            | 1280x1024 | 18.8 | 2011 | [CD1D9652C729](<Analog/Goldstar/GSM4BEA/CD1D9652C729>) |
 | Goldstar         | GSM4BEA | E1910            | 1280x1024 | 18.8 |      | [39BD58EA4F63](<Analog/Goldstar/GSM4BEA/39BD58EA4F63>) |
@@ -3573,6 +3695,7 @@ model and ID.
 | Goldstar         | GSM4C18 | 19EN33           | 1366x768  | 18.5 | 2014 | [6C467DAC79BE](<Analog/Goldstar/GSM4C18/6C467DAC79BE>) |
 | Goldstar         | GSM4C18 | 19EN33           | 1366x768  | 18.5 | 2013 | [19A25DC15978](<Analog/Goldstar/GSM4C18/19A25DC15978>) |
 | Goldstar         | GSM4C1E | 19EB13           | 1366x768  | 18.5 | 2016 | [EDA63D154D04](<Analog/Goldstar/GSM4C1E/EDA63D154D04>) |
+| Goldstar         | GSM4C1E | 19EB13           | 1366x768  | 18.5 | 2015 | [693D512B0A99](<Analog/Goldstar/GSM4C1E/693D512B0A99>) |
 | Goldstar         | GSM4C1E | 19EB13           | 1366x768  | 18.5 | 2014 | [0A70D9C25542](<Analog/Goldstar/GSM4C1E/0A70D9C25542>) |
 | Goldstar         | GSM4C20 | 19MB15           | 1280x1024 | 19.1 | 2016 | [3851E100610E](<Analog/Goldstar/GSM4C20/3851E100610E>) |
 | Goldstar         | GSM4C22 | 19MB35           | 1280x1024 | 19.1 | 2014 | [17A9BBB553C7](<Analog/Goldstar/GSM4C22/17A9BBB553C7>) |
@@ -3637,6 +3760,7 @@ model and ID.
 | Goldstar         | GSM4EED | 20M35            | 1600x900  | 19.9 | 2013 | [9D066B911D89](<Analog/Goldstar/GSM4EED/9D066B911D89>) |
 | Goldstar         | GSM4EED | 20M35            | 1600x900  | 19.9 |      | [C11495FD3387](<Analog/Goldstar/GSM4EED/C11495FD3387>) |
 | Goldstar         | GSM4EF0 | 20M45            | 1600x900  | 19.9 | 2014 | [91EA10209DD2](<Analog/Goldstar/GSM4EF0/91EA10209DD2>) |
+| Goldstar         | GSM5613 | L2300C           | 1600x1200 | 23.0 |      | [A5981F5904C2](<Analog/Goldstar/GSM5613/A5981F5904C2>) |
 | Goldstar         | GSM5617 |                  | 1360x768  | 29.3 | 2007 | [35A9EDBECDCC](<Analog/Goldstar/GSM5617/35A9EDBECDCC>) |
 | Goldstar         | GSM5617 |                  | 1360x768  | 29.3 | 2006 | [BFECBCA8015B](<Analog/Goldstar/GSM5617/BFECBCA8015B>) |
 | Goldstar         | GSM5623 | L245WP           | 1920x1200 | 24.0 | 2007 | [B09581E31DCE](<Analog/Goldstar/GSM5623/B09581E31DCE>) |
@@ -3647,16 +3771,17 @@ model and ID.
 | Goldstar         | GSM563C | M228WA           | 1680x1050 | 22.0 | 2007 | [0B88DCFA9A44](<Analog/Goldstar/GSM563C/0B88DCFA9A44>) |
 | Goldstar         | GSM563E | L246WP           | 1920x1200 | 24.0 | 2007 | [D81647E49C9B](<Analog/Goldstar/GSM563E/D81647E49C9B>) |
 | Goldstar         | GSM5649 | LG TV            | 1360x768  | 31.5 | 2008 | [68A688BA28FC](<Analog/Goldstar/GSM5649/68A688BA28FC>) |
+| Goldstar         | GSM564B | LG TV            | 1680x1050 | 22.0 | 2009 | [D08721190DF4](<Analog/Goldstar/GSM564B/D08721190DF4>) |
 | Goldstar         | GSM564B | LG TV            | 1680x1050 | 22.0 | 2008 | [3E478A88C449](<Analog/Goldstar/GSM564B/3E478A88C449>) |
 | Goldstar         | GSM564D | L226WTQ          | 1680x1050 | 23.0 | 2009 | [FFFA2D8FA1ED](<Analog/Goldstar/GSM564D/FFFA2D8FA1ED>) |
 | Goldstar         | GSM564D | L226WTQ          | 1680x1050 | 23.0 | 2008 | [24DD283789FD](<Analog/Goldstar/GSM564D/24DD283789FD>) |
 | Goldstar         | GSM564D | L226WTQ          | 1680x1050 | 23.0 | 2007 | [188A64A4FC78](<Analog/Goldstar/GSM564D/188A64A4FC78>) |
 | Goldstar         | GSM5662 | L225W            | 1680x1050 | 22.0 | 2007 | [4072AFDC61A1](<Analog/Goldstar/GSM5662/4072AFDC61A1>) |
-| Goldstar         | GSM5664 |                  | 1680x1050 | 22.0 | 2008 | [91755C2B4037](<Analog/Goldstar/GSM5664/91755C2B4037>) |
+| Goldstar         | GSM5664 |                  | 1680x1050 | 22.0 | 2008 | [201025175C0C](<Analog/Goldstar/GSM5664/201025175C0C>) |
 | Goldstar         | GSM5664 |                  | 1680x1050 | 22.0 | 2007 | [0E4FF4AC63CC](<Analog/Goldstar/GSM5664/0E4FF4AC63CC>) |
 | Goldstar         | GSM5668 | L206W            | 1680x1050 | 20.0 | 2008 | [BD527AE03763](<Analog/Goldstar/GSM5668/BD527AE03763>) |
 | Goldstar         | GSM5668 | L206W            | 1680x1050 | 20.0 | 2007 | [356A7B546809](<Analog/Goldstar/GSM5668/356A7B546809>) |
-| Goldstar         | GSM566A | L226W            | 1680x1050 | 23.0 | 2008 | [E33D08AC78E1](<Analog/Goldstar/GSM566A/E33D08AC78E1>) |
+| Goldstar         | GSM566A | L226W            | 1680x1050 | 23.0 | 2008 | [BF122BD747E9](<Analog/Goldstar/GSM566A/BF122BD747E9>) |
 | Goldstar         | GSM566A | L226W            | 1680x1050 | 23.0 | 2007 | [36E6AC06D7CE](<Analog/Goldstar/GSM566A/36E6AC06D7CE>) |
 | Goldstar         | GSM566A | L226W            | 1680x1050 | 23.0 |      | [C7B2E95A443C](<Analog/Goldstar/GSM566A/C7B2E95A443C>) |
 | Goldstar         | GSM566E | L227W            | 1680x1050 | 23.0 | 2009 | [21E503D3D814](<Analog/Goldstar/GSM566E/21E503D3D814>) |
@@ -3688,7 +3813,7 @@ model and ID.
 | Goldstar         | GSM56D8 | W2442            | 1920x1080 | 24.0 | 2010 | [42E14BB35DA8](<Analog/Goldstar/GSM56D8/42E14BB35DA8>) |
 | Goldstar         | GSM56D8 | W2442            | 1920x1080 | 24.0 | 2009 | [8615C856BD6E](<Analog/Goldstar/GSM56D8/8615C856BD6E>) |
 | Goldstar         | GSM56DB | W2253            | 1920x1080 | 21.7 | 2010 | [19F0761C5EF4](<Analog/Goldstar/GSM56DB/19F0761C5EF4>) |
-| Goldstar         | GSM56DB | W2253            | 1920x1080 | 23.0 | 2010 | [86690F1B4E63](<Analog/Goldstar/GSM56DB/86690F1B4E63>) |
+| Goldstar         | GSM56DB | W2253            | 1920x1080 | 23.0 | 2010 | [659B5A14E76C](<Analog/Goldstar/GSM56DB/659B5A14E76C>) |
 | Goldstar         | GSM56DB | W2253            | 1920x1080 | 21.7 | 2009 | [01A9C97FEE5B](<Analog/Goldstar/GSM56DB/01A9C97FEE5B>) |
 | Goldstar         | GSM56DB | W2253            | 1920x1080 | 23.0 |      | [186F51CDE62D](<Analog/Goldstar/GSM56DB/186F51CDE62D>) |
 | Goldstar         | GSM56DE | W2254            | 1680x1050 | 23.0 | 2009 | [3DDAEBEF82D3](<Analog/Goldstar/GSM56DE/3DDAEBEF82D3>) |
@@ -3705,8 +3830,8 @@ model and ID.
 | Goldstar         | GSM56FE | W2243            | 1920x1080 | 21.7 | 2010 | [0E97559D7AD4](<Analog/Goldstar/GSM56FE/0E97559D7AD4>) |
 | Goldstar         | GSM56FE | W2243            | 1920x1080 | 21.7 | 2009 | [024035650CED](<Analog/Goldstar/GSM56FE/024035650CED>) |
 | Goldstar         | GSM56FE | W2243            | 1920x1080 | 21.7 |      | [081E2C4B95B7](<Analog/Goldstar/GSM56FE/081E2C4B95B7>) |
-| Goldstar         | GSM5700 | W2343            | 1920x1080 | 23.1 | 2011 | [7E23BDF125BF](<Analog/Goldstar/GSM5700/7E23BDF125BF>) |
-| Goldstar         | GSM5700 | W2343            | 1920x1080 | 23.1 | 2010 | [46B5C87E1FAB](<Analog/Goldstar/GSM5700/46B5C87E1FAB>) |
+| Goldstar         | GSM5700 | W2343            | 1920x1080 | 23.1 | 2011 | [3086636DB326](<Analog/Goldstar/GSM5700/3086636DB326>) |
+| Goldstar         | GSM5700 | W2343            | 1920x1080 | 23.1 | 2010 | [0F8A2A8B1522](<Analog/Goldstar/GSM5700/0F8A2A8B1522>) |
 | Goldstar         | GSM5700 | W2343            | 1920x1080 | 23.1 | 2009 | [0CA00C8E603A](<Analog/Goldstar/GSM5700/0CA00C8E603A>) |
 | Goldstar         | GSM5705 | C222W            | 1680x1050 | 23.0 | 2009 | [E6CD60D2C0A3](<Analog/Goldstar/GSM5705/E6CD60D2C0A3>) |
 | Goldstar         | GSM571B | W2443            | 1920x1080 | 23.1 | 2011 | [F4E6D915D0DD](<Analog/Goldstar/GSM571B/F4E6D915D0DD>) |
@@ -3789,6 +3914,7 @@ model and ID.
 | Goldstar         | GSM5838 | E2211            | 1920x1080 | 21.7 | 2011 | [1AE17BBF5E57](<Analog/Goldstar/GSM5838/1AE17BBF5E57>) |
 | Goldstar         | GSM583A | E2411            | 1920x1080 | 24.0 | 2012 | [6A0726F00F16](<Analog/Goldstar/GSM583A/6A0726F00F16>) |
 | Goldstar         | GSM583A | E2411            | 1920x1080 | 24.0 | 2011 | [3392DF60C14F](<Analog/Goldstar/GSM583A/3392DF60C14F>) |
+| Goldstar         | GSM583C | E2711            | 1920x1080 | 27.2 | 2012 | [C6EDC1E49E1C](<Analog/Goldstar/GSM583C/C6EDC1E49E1C>) |
 | Goldstar         | GSM583C | E2711            | 1920x1080 | 21.7 |      | [370CFA602F42](<Analog/Goldstar/GSM583C/370CFA602F42>) |
 | Goldstar         | GSM5840 | D2342P           | 1920x1080 | 23.1 | 2012 | [353CB0644359](<Analog/Goldstar/GSM5840/353CB0644359>) |
 | Goldstar         | GSM5840 | D2342P           | 1920x1080 | 23.1 | 2011 | [334CFFF720AC](<Analog/Goldstar/GSM5840/334CFFF720AC>) |
@@ -3804,6 +3930,7 @@ model and ID.
 | Goldstar         | GSM5870 | E2351            | 1920x1080 | 23.1 | 2011 | [787FC023FC48](<Analog/Goldstar/GSM5870/787FC023FC48>) |
 | Goldstar         | GSM5879 | IPS225           | 1920x1080 | 23.1 | 2012 | [0F261D540716](<Analog/Goldstar/GSM5879/0F261D540716>) |
 | Goldstar         | GSM5879 | IPS225           | 1920x1080 | 23.1 | 2011 | [48C155920B6B](<Analog/Goldstar/GSM5879/48C155920B6B>) |
+| Goldstar         | GSM587C | IPS235           | 1920x1080 | 23.1 | 2013 | [CA0325D9931E](<Analog/Goldstar/GSM587C/CA0325D9931E>) |
 | Goldstar         | GSM587C | IPS235           | 1920x1080 | 23.1 |      | [8DBD599E5C57](<Analog/Goldstar/GSM587C/8DBD599E5C57>) |
 | Goldstar         | GSM5888 | M2550D           | 1920x1080 | 24.9 | 2011 | [D27C3A2FE7C1](<Analog/Goldstar/GSM5888/D27C3A2FE7C1>) |
 | Goldstar         | GSM589D | DM2780D          | 1920x1080 | 27.2 | 2011 | [A1A3EABA5CC9](<Analog/Goldstar/GSM589D/A1A3EABA5CC9>) |
@@ -3812,7 +3939,7 @@ model and ID.
 | Goldstar         | GSM58BE | E2242            | 1920x1080 | 21.7 |      | [0D79482EE1C0](<Analog/Goldstar/GSM58BE/0D79482EE1C0>) |
 | Goldstar         | GSM58C1 | E2342            | 1920x1080 | 23.1 | 2012 | [7C5050AE8D68](<Analog/Goldstar/GSM58C1/7C5050AE8D68>) |
 | Goldstar         | GSM58C4 | E2442            | 1920x1080 | 24.0 | 2013 | [E4614CDDD7D8](<Analog/Goldstar/GSM58C4/E4614CDDD7D8>) |
-| Goldstar         | GSM58C4 | E2442            | 1920x1080 | 24.0 | 2012 | [516134B1C884](<Analog/Goldstar/GSM58C4/516134B1C884>) |
+| Goldstar         | GSM58C4 | E2442            | 1920x1080 | 24.0 | 2012 | [0EF280257E69](<Analog/Goldstar/GSM58C4/0EF280257E69>) |
 | Goldstar         | GSM58C4 | E2442            | 1920x1080 | 24.0 |      | [E86E32C8469D](<Analog/Goldstar/GSM58C4/E86E32C8469D>) |
 | Goldstar         | GSM58D5 | IPS224           | 1920x1080 | 21.7 | 2013 | [499830E40C8F](<Analog/Goldstar/GSM58D5/499830E40C8F>) |
 | Goldstar         | GSM58D5 | IPS224           | 1920x1080 | 21.7 | 2012 | [0AF2EA13A436](<Analog/Goldstar/GSM58D5/0AF2EA13A436>) |
@@ -3830,6 +3957,7 @@ model and ID.
 | Goldstar         | GSM595B | M2232            | 1920x1080 | 21.7 | 2012 | [9454C963D69C](<Analog/Goldstar/GSM595B/9454C963D69C>) |
 | Goldstar         | GSM5961 | M2631            | 1366x768  | 26.1 | 2012 | [625E3DA4E212](<Analog/Goldstar/GSM5961/625E3DA4E212>) |
 | Goldstar         | GSM5963 | M2431            | 1366x768  | 24.0 | 2012 | [F2866D002A9D](<Analog/Goldstar/GSM5963/F2866D002A9D>) |
+| Goldstar         | GSM596D | 23CAV            | 1920x1080 | 23.1 | 2015 | [09ADA46E9BB7](<Analog/Goldstar/GSM596D/09ADA46E9BB7>) |
 | Goldstar         | GSM597C | 22EN33           | 1920x1080 | 21.7 | 2013 | [0503736EC0DF](<Analog/Goldstar/GSM597C/0503736EC0DF>) |
 | Goldstar         | GSM597C | 22EN33           | 1920x1080 | 21.7 | 2011 | [DFE252845CE8](<Analog/Goldstar/GSM597C/DFE252845CE8>) |
 | Goldstar         | GSM597C | 22EN33           | 1920x1080 | 21.7 |      | [861BD2241BD6](<Analog/Goldstar/GSM597C/861BD2241BD6>) |
@@ -3845,6 +3973,7 @@ model and ID.
 | Goldstar         | GSM59AA | 24EA53           | 1920x1080 | 23.1 | 2013 | [42148EC69027](<Analog/Goldstar/GSM59AA/42148EC69027>) |
 | Goldstar         | GSM59AD | 27EA53           | 1920x1080 | 27.2 | 2013 | [6B24FA552DC1](<Analog/Goldstar/GSM59AD/6B24FA552DC1>) |
 | Goldstar         | GSM59B0 | 27EB22           | 1920x1080 | 27.2 | 2013 | [6344DCBAC7CD](<Analog/Goldstar/GSM59B0/6344DCBAC7CD>) |
+| Goldstar         | GSM59B3 | 24EB23           | 1920x1200 | 24.2 | 2014 | [298FAB1E45BE](<Analog/Goldstar/GSM59B3/298FAB1E45BE>) |
 | Goldstar         | GSM59B3 | 24EB23           | 1920x1200 | 24.2 | 2013 | [98D0891DDEDE](<Analog/Goldstar/GSM59B3/98D0891DDEDE>) |
 | Goldstar         | GSM59B6 | 22EB23           | 1680x1050 | 22.3 |      | [366D01E18799](<Analog/Goldstar/GSM59B6/366D01E18799>) |
 | Goldstar         | GSM59BB | 27EA33           | 1920x1080 | 27.2 | 2013 | [1D93E416C71B](<Analog/Goldstar/GSM59BB/1D93E416C71B>) |
@@ -3898,6 +4027,7 @@ model and ID.
 | Goldstar         | GSM5A43 | 23MP65           | 1920x1080 | 23.1 |      | [47D252AB8902](<Analog/Goldstar/GSM5A43/47D252AB8902>) |
 | Goldstar         | GSM5A4B | 24MB65           | 1920x1200 | 24.2 | 2017 | [3F4BA86D8D94](<Analog/Goldstar/GSM5A4B/3F4BA86D8D94>) |
 | Goldstar         | GSM5A4B | 24MB65           | 1920x1200 | 24.2 | 2015 | [3ADE90AF0557](<Analog/Goldstar/GSM5A4B/3ADE90AF0557>) |
+| Goldstar         | GSM5A4B | 24MB65           | 1920x1200 | 24.2 | 2014 | [8ADE10ED8646](<Analog/Goldstar/GSM5A4B/8ADE10ED8646>) |
 | Goldstar         | GSM5A4E | 24M35            | 1920x1080 | 24.0 | 2014 | [1170033977F0](<Analog/Goldstar/GSM5A4E/1170033977F0>) |
 | Goldstar         | GSM5A57 | 27MB65           | 1920x1080 | 27.2 | 2016 | [27533F472214](<Analog/Goldstar/GSM5A57/27533F472214>) |
 | Goldstar         | GSM5A57 | 27MB65           | 1920x1080 | 27.2 | 2015 | [AD2BB0C380CB](<Analog/Goldstar/GSM5A57/AD2BB0C380CB>) |
@@ -3926,7 +4056,7 @@ model and ID.
 | Goldstar         | GSM5AB9 | LG               | 1920x1080 | 21.7 |      | [423C039DB1B2](<Analog/Goldstar/GSM5AB9/423C039DB1B2>) |
 | Goldstar         | GSM5AC5 | LG HD PLUS       | 1600x900  | 19.9 | 2017 | [071363FEDC17](<Analog/Goldstar/GSM5AC5/071363FEDC17>) |
 | Goldstar         | GSM5AC5 | LG HD PLUS       | 1600x900  | 19.9 | 2016 | [00ABE604C2C7](<Analog/Goldstar/GSM5AC5/00ABE604C2C7>) |
-| Goldstar         | GSM5AC5 | LG HD PLUS       | 1600x900  | 19.9 | 2015 | [D48DD9AD171B](<Analog/Goldstar/GSM5AC5/D48DD9AD171B>) |
+| Goldstar         | GSM5AC5 | LG HD PLUS       | 1600x900  | 19.9 | 2015 | [3AE88E59B67A](<Analog/Goldstar/GSM5AC5/3AE88E59B67A>) |
 | Goldstar         | GSM5ACB | LG HD            | 1366x768  | 18.5 | 2021 | [0DCCA5AFB34C](<Analog/Goldstar/GSM5ACB/0DCCA5AFB34C>) |
 | Goldstar         | GSM5ACB | LG HD            | 1366x768  | 18.5 | 2020 | [125586BE2009](<Analog/Goldstar/GSM5ACB/125586BE2009>) |
 | Goldstar         | GSM5ACB | LG HD            | 1366x768  | 18.5 | 2019 | [118F34AB8A76](<Analog/Goldstar/GSM5ACB/118F34AB8A76>) |
@@ -3953,13 +4083,15 @@ model and ID.
 | Goldstar         | GSM5B43 | MP59HT           | 1920x1080 | 21.7 | 2018 | [6AE69EA3A0E6](<Analog/Goldstar/GSM5B43/6AE69EA3A0E6>) |
 | Goldstar         | GSM5B43 | MP59HT           | 1920x1080 | 21.7 | 2017 | [A1D552EC679C](<Analog/Goldstar/GSM5B43/A1D552EC679C>) |
 | Goldstar         | GSM5B45 | 24BK55WV         | 1920x1200 | 24.2 | 2017 | [10373B320AAF](<Analog/Goldstar/GSM5B45/10373B320AAF>) |
-| Goldstar         | GSM5B54 | LG FULL HD       | 1920x1080 | 21.7 | 2021 | [70ABE898FF9A](<Analog/Goldstar/GSM5B54/70ABE898FF9A>) |
+| Goldstar         | GSM5B54 | LG FULL HD       | 1920x1080 | 21.7 | 2022 | [9766C8C8FFE8](<Analog/Goldstar/GSM5B54/9766C8C8FFE8>) |
+| Goldstar         | GSM5B54 | LG FULL HD       | 1920x1080 | 21.7 | 2021 | [2DF7C802F51D](<Analog/Goldstar/GSM5B54/2DF7C802F51D>) |
 | Goldstar         | GSM5B54 | LG FULL HD       | 1920x1080 | 21.7 | 2020 | [0DCC073773C5](<Analog/Goldstar/GSM5B54/0DCC073773C5>) |
-| Goldstar         | GSM5B54 | LG FULL HD       | 1920x1080 | 21.7 | 2019 | [1EFC01B02872](<Analog/Goldstar/GSM5B54/1EFC01B02872>) |
+| Goldstar         | GSM5B54 | LG FULL HD       | 1920x1080 | 21.7 | 2019 | [1946DAF06E6E](<Analog/Goldstar/GSM5B54/1946DAF06E6E>) |
 | Goldstar         | GSM5B54 | LG FULL HD       | 1920x1080 | 21.7 | 2018 | [1E5DC79DCC2E](<Analog/Goldstar/GSM5B54/1E5DC79DCC2E>) |
 | Goldstar         | GSM5B54 | LG FULL HD       | 1920x1080 | 21.7 | 2016 | [128CFE0BA881](<Analog/Goldstar/GSM5B54/128CFE0BA881>) |
 | Goldstar         | GSM5B54 | LG               | 1920x1080 | 21.7 |      | [0DAC6E1ACC5B](<Analog/Goldstar/GSM5B54/0DAC6E1ACC5B>) |
 | Goldstar         | GSM5B75 | 24BL550J         | 1920x1080 | 21.7 | 2014 | [7D1A6B8ED165](<Analog/Goldstar/GSM5B75/7D1A6B8ED165>) |
+| Goldstar         | GSM60AD | M2352D           | 1920x1080 | 23.1 | 2012 | [C1A70D4F7A2B](<Analog/Goldstar/GSM60AD/C1A70D4F7A2B>) |
 | Goldstar         | GSM6423 | M2550A           | 1920x1080 | 24.9 | 2011 | [9005E713474E](<Analog/Goldstar/GSM6423/9005E713474E>) |
 | Goldstar         | GSM7551 | M3701C           | 1600x1200 | 31.5 | 2006 | [221E3B26A900](<Analog/Goldstar/GSM7551/221E3B26A900>) |
 | Goldstar         | GSM7553 | RZ-37LZ31        | 1600x1200 | 37.0 |      | [A1F1BE8A0644](<Analog/Goldstar/GSM7553/A1F1BE8A0644>) |
@@ -3976,12 +4108,16 @@ model and ID.
 | Goldstar         | GSM7665 | 32LG5700         | 1920x1080 | 31.5 |      | [9692F62EDE3B](<Analog/Goldstar/GSM7665/9692F62EDE3B>) |
 | Goldstar         | GSM76F3 |                  | 1920x1080 | 31.5 | 2019 | [0DAD24D90C29](<Analog/Goldstar/GSM76F3/0DAD24D90C29>) |
 | Goldstar         | GSM76F3 |                  | 1920x1080 | 31.5 | 2018 | [D97D00E3C43F](<Analog/Goldstar/GSM76F3/D97D00E3C43F>) |
+| Goldstar         | GSM76F3 |                  | 1920x1080 | 31.5 | 2017 | [53E8CFBEC19E](<Analog/Goldstar/GSM76F3/53E8CFBEC19E>) |
 | Goldstar         | GSM76F3 |                  | 1920x1080 | 31.5 | 2016 | [9D521AEFEAD2](<Analog/Goldstar/GSM76F3/9D521AEFEAD2>) |
 | Goldstar         | GSM76FF | LG 32 FHD        | 1920x1080 | 31.5 | 2019 | [51BB1D071062](<Analog/Goldstar/GSM76FF/51BB1D071062>) |
+| Goldstar         | GSM76FF | LG 32 FHD        | 1920x1080 | 31.5 | 2018 | [7DA8DAC0D545](<Analog/Goldstar/GSM76FF/7DA8DAC0D545>) |
 | Goldstar         | GSM76FF | LG 32 FHD        | 1920x1080 | 31.5 | 2017 | [0C9F7D00E94D](<Analog/Goldstar/GSM76FF/0C9F7D00E94D>) |
 | Goldstar         | GSM76FF | LG               | 1920x1080 | 31.5 |      | [70F42B255A37](<Analog/Goldstar/GSM76FF/70F42B255A37>) |
+| Goldstar         | GSM772C | 32ML600          | 1920x1080 | 21.7 | 2019 | [5BAD30D3A0C1](<Analog/Goldstar/GSM772C/5BAD30D3A0C1>) |
 | Goldstar         | GSM8B3E | E1641            | 1366x768  | 15.9 | 2012 | [4B75C55A522D](<Analog/Goldstar/GSM8B3E/4B75C55A522D>) |
 | Goldstar         | GSM8B3E | E1641            | 1366x768  | 15.9 | 2011 | [4EFAFE3E22AC](<Analog/Goldstar/GSM8B3E/4EFAFE3E22AC>) |
+| Goldstar         | GSM9CA5 | 42LC46           | 1920x1080 | 31.5 | 2007 | [B0BBA574260F](<Analog/Goldstar/GSM9CA5/B0BBA574260F>) |
 | Goldstar         | GSM9CF5 | LG TV            | 1360x768  | 31.5 | 2011 | [74ABC3A5BA75](<Analog/Goldstar/GSM9CF5/74ABC3A5BA75>) |
 | Goldstar         | GSM9CF5 | LG TV            | 1360x768  | 31.5 | 2008 | [3067306E156F](<Analog/Goldstar/GSM9CF5/3067306E156F>) |
 | Goldstar         | GSM9CF6 | LG TV            | 1360x768  | 31.5 | 2008 | [157CFA1BD40C](<Analog/Goldstar/GSM9CF6/157CFA1BD40C>) |
@@ -4042,11 +4178,14 @@ model and ID.
 | HKC              | HKC1900 |                  | 1440x900  | 19.1 | 2010 | [18F15621D95D](<Analog/HKC/HKC1900/18F15621D95D>) |
 | HKC              | HKC2000 |                  | 1600x900  | 19.9 | 2011 | [EF18178E6FB0](<Analog/HKC/HKC2000/EF18178E6FB0>) |
 | HKC              | HKC2075 | LCD              | 1680x1050 | 20.0 | 2008 | [BF4C1BCCCED2](<Analog/HKC/HKC2075/BF4C1BCCCED2>) |
+| HKC              | HKC2160 |                  | 1920x1080 | 21.7 | 2012 | [DD9F222AD690](<Analog/HKC/HKC2160/DD9F222AD690>) |
 | HKC              | HKC2160 |                  | 1920x1080 | 21.7 | 2011 | [7C0EBAF355D2](<Analog/HKC/HKC2160/7C0EBAF355D2>) |
 | HKC              | HKC2160 |                  | 1920x1080 | 24.3 | 2010 | [259C9A8E21B7](<Analog/HKC/HKC2160/259C9A8E21B7>) |
+| HKC              | HKC2713 | 27N1             | 1920x1080 | 27.0 | 2021 | [F4A1FFA90FEC](<Analog/HKC/HKC2713/F4A1FFA90FEC>) |
 | HKC              | HKC3200 |                  | 1920x1080 | 31.7 | 2013 | [E4CF428B94FD](<Analog/HKC/HKC3200/E4CF428B94FD>) |
 | HKC              | HKC330C | LE32B7000C       | 1360x768  | 42.1 | 2013 | [B3660B8BEFDE](<Analog/HKC/HKC330C/B3660B8BEFDE>) |
 | HKC              | HKC3430 | LED TV           | 1920x1080 | 47.1 | 2014 | [2F24B4B84B3B](<Analog/HKC/HKC3430/2F24B4B84B3B>) |
+| HKC              | HKC87EB | HKC782           | 1280x1024 | 17.1 | 2007 | [970D4AACB792](<Analog/HKC/HKC87EB/970D4AACB792>) |
 | HP               | HPN3359 | V244h            | 1920x1080 | 24.0 | 2019 | [F1E94C5FC509](<Analog/HP/HPN3359/F1E94C5FC509>) |
 | HP               | HPN335B | V213a            | 1920x1080 | 20.8 | 2016 | [1B8A7D521E42](<Analog/HP/HPN335B/1B8A7D521E42>) |
 | HP               | HPN337E | 24o              | 1920x1080 | 24.0 | 2019 | [8695EE2157C2](<Analog/HP/HPN337E/8695EE2157C2>) |
@@ -4058,7 +4197,7 @@ model and ID.
 | HP               | HPN3392 | P223             | 1920x1080 | 21.7 | 2017 | [04E0F78F08DC](<Analog/HP/HPN3392/04E0F78F08DC>) |
 | HP               | HPN3392 | P223             | 1920x1080 | 21.7 | 2016 | [C3B2BB188F2D](<Analog/HP/HPN3392/C3B2BB188F2D>) |
 | HP               | HPN3394 | 24ea             | 1920x1080 | 24.0 | 2020 | [F850858D7470](<Analog/HP/HPN3394/F850858D7470>) |
-| HP               | HPN342C | 27o              | 1920x1080 | 27.2 | 2017 | [9080C33FD623](<Analog/HP/HPN342C/9080C33FD623>) |
+| HP               | HPN342C | 27o              | 1920x1080 | 27.2 | 2017 | [7F7CDCB78EAE](<Analog/HP/HPN342C/7F7CDCB78EAE>) |
 | HP               | HPN3430 | 22w              | 1920x1080 | 21.7 | 2018 | [2245D48418CB](<Analog/HP/HPN3430/2245D48418CB>) |
 | HP               | HPN3430 | 22w              | 1920x1080 | 21.7 | 2017 | [51247C58FAFF](<Analog/HP/HPN3430/51247C58FAFF>) |
 | HP               | HPN3432 | 24w              | 1920x1080 | 24.0 | 2020 | [AB4326A9E128](<Analog/HP/HPN3432/AB4326A9E128>) |
@@ -4067,6 +4206,7 @@ model and ID.
 | HP               | HPN3432 | 24w              | 1920x1080 | 24.0 | 2017 | [4AB9E1CE2D38](<Analog/HP/HPN3432/4AB9E1CE2D38>) |
 | HP               | HPN3432 |                  | 1920x1080 | 24.0 |      | [59BDF64F851D](<Analog/HP/HPN3432/59BDF64F851D>) |
 | HP               | HPN345E |                  | 1920x1080 | 21.7 |      | [2F55B550A5CC](<Analog/HP/HPN345E/2F55B550A5CC>) |
+| HP               | HPN3461 | E233             | 1920x1080 | 23.1 | 2019 | [8F604D915369](<Analog/HP/HPN3461/8F604D915369>) |
 | HP               | HPN3461 | E233             | 1920x1080 | 23.1 | 2018 | [AB06A76D922C](<Analog/HP/HPN3461/AB06A76D922C>) |
 | HP               | HPN3464 | E243i            | 1920x1200 | 24.0 | 2018 | [22C5A563F91B](<Analog/HP/HPN3464/22C5A563F91B>) |
 | HP               | HPN3464 |                  | 1920x1200 | 24.0 |      | [735326F7EFDA](<Analog/HP/HPN3464/735326F7EFDA>) |
@@ -4086,10 +4226,11 @@ model and ID.
 | HP               | HPN350B | N246v            | 1920x1080 | 24.0 | 2020 | [CD8DF72DA0F5](<Analog/HP/HPN350B/CD8DF72DA0F5>) |
 | HP               | HPN351B |                  | 1920x1080 | 31.5 | 2020 | [1B4A15B119E0](<Analog/HP/HPN351B/1B4A15B119E0>) |
 | HP               | HPN351B |                  | 1920x1080 | 31.5 | 2019 | [EDC03C19E3D2](<Analog/HP/HPN351B/EDC03C19E3D2>) |
+| HP               | HPN3533 | 22yh             | 1920x1080 | 21.7 | 2019 | [292F3AB57AE0](<Analog/HP/HPN3533/292F3AB57AE0>) |
 | HP               | HPN3542 | 22fw             | 1920x1080 | 21.7 | 2020 | [4606BF6EC43C](<Analog/HP/HPN3542/4606BF6EC43C>) |
 | HP               | HPN3546 | 24fh             | 1920x1080 | 24.0 | 2021 | [5C2113818347](<Analog/HP/HPN3546/5C2113818347>) |
 | HP               | HPN3546 | 24f              | 1920x1080 | 24.0 | 2020 | [596F7307D598](<Analog/HP/HPN3546/596F7307D598>) |
-| HP               | HPN3546 | 24f              | 1920x1080 | 24.0 | 2019 | [5C4152A31DA5](<Analog/HP/HPN3546/5C4152A31DA5>) |
+| HP               | HPN3546 | 24f              | 1920x1080 | 24.0 | 2019 | [1FC1428188D9](<Analog/HP/HPN3546/1FC1428188D9>) |
 | HP               | HPN3546 | 24f              | 1920x1080 | 24.0 | 2018 | [02D26208888A](<Analog/HP/HPN3546/02D26208888A>) |
 | HP               | HPN3549 | 25f              | 1920x1080 | 24.9 | 2018 | [66682C0FC89D](<Analog/HP/HPN3549/66682C0FC89D>) |
 | HP               | HPN354C | 27fw             | 1920x1080 | 27.2 | 2020 | [193F221F2BA7](<Analog/HP/HPN354C/193F221F2BA7>) |
@@ -4124,7 +4265,7 @@ model and ID.
 | HP               | HPN371C | V22e             | 1920x1080 | 21.7 | 2021 | [E5A77071A328](<Analog/HP/HPN371C/E5A77071A328>) |
 | HP               | HWP0721 | 1825             | 1280x1024 | 18.2 |      | [68066EE1525B](<Analog/HP/HWP0721/68066EE1525B>) |
 | HP               | HWP0A71 | LP2065           | 1600x1200 | 20.2 | 2010 | [55C3FFC6DD59](<Analog/HP/HWP0A71/55C3FFC6DD59>) |
-| HP               | HWP0A71 | LP2065           | 1600x1200 | 20.2 | 2008 | [994897F85E29](<Analog/HP/HWP0A71/994897F85E29>) |
+| HP               | HWP0A71 | LP2065           | 1600x1200 | 20.2 | 2008 | [7B1CD8B7A077](<Analog/HP/HWP0A71/7B1CD8B7A077>) |
 | HP               | HWP0A71 | LP2065           | 1600x1200 | 20.2 | 2007 | [A5B2754A94EE](<Analog/HP/HWP0A71/A5B2754A94EE>) |
 | HP               | HWP0A71 | LP2065           | 1600x1200 | 20.2 | 2006 | [E73A95F76606](<Analog/HP/HWP0A71/E73A95F76606>) |
 | HP               | HWP0A71 | LP2065           | 1600x1200 | 20.2 |      | [28F68D222D35](<Analog/HP/HWP0A71/28F68D222D35>) |
@@ -4144,6 +4285,7 @@ model and ID.
 | HP               | HWP2603 | 7500             | 1280x1024 | 15.7 |      | [CEF59E2647D1](<Analog/HP/HWP2603/CEF59E2647D1>) |
 | HP               | HWP2607 | f1523            | 1024x768  | 14.6 |      | [03C16756D0A0](<Analog/HP/HWP2607/03C16756D0A0>) |
 | HP               | HWP2607 | f1523            | 1024x768  | 15.2 |      | [46FC834ECD63](<Analog/HP/HWP2607/46FC834ECD63>) |
+| HP               | HWP2608 | vf15             | 1024x768  | 14.6 |      | [F383A956A1A0](<Analog/HP/HWP2608/F383A956A1A0>) |
 | HP               | HWP2609 | f1723            | 1280x1024 | 17.1 |      | [3B96E3C76723](<Analog/HP/HWP2609/3B96E3C76723>) |
 | HP               | HWP260C | L1530            | 1024x768  | 14.9 |      | [27ED6FB0BFE7](<Analog/HP/HWP260C/27ED6FB0BFE7>) |
 | HP               | HWP260E | L1730            | 1280x1024 | 17.1 |      | [14F137F42DF6](<Analog/HP/HWP260E/14F137F42DF6>) |
@@ -4167,6 +4309,7 @@ model and ID.
 | HP               | HWP2648 | L1740            | 1280x1024 | 16.8 | 2007 | [47350EC32EFE](<Analog/HP/HWP2648/47350EC32EFE>) |
 | HP               | HWP2648 | L1740            | 1280x1024 | 16.8 | 2006 | [0661D26DF4BA](<Analog/HP/HWP2648/0661D26DF4BA>) |
 | HP               | HWP2648 |                  | 1280x1024 | 16.8 |      | [26E952832733](<Analog/HP/HWP2648/26E952832733>) |
+| HP               | HWP264A | L1755            | 1280x1024 | 16.8 | 2006 | [492A13FCBE9E](<Analog/HP/HWP264A/492A13FCBE9E>) |
 | HP               | HWP264A | L1755            | 1280x1024 | 16.8 |      | [24CF82A54486](<Analog/HP/HWP264A/24CF82A54486>) |
 | HP               | HWP264C | vs19b            | 1280x1024 | 19.1 | 2006 | [2FAA81F19033](<Analog/HP/HWP264C/2FAA81F19033>) |
 | HP               | HWP264C |                  | 1280x1024 | 19.1 |      | [0A58455A2FD1](<Analog/HP/HWP264C/0A58455A2FD1>) |
@@ -4185,13 +4328,14 @@ model and ID.
 | HP               | HWP265E | L1906            | 1280x1024 | 19.1 | 2007 | [20E8E9BFD719](<Analog/HP/HWP265E/20E8E9BFD719>) |
 | HP               | HWP265E | L1906            | 1280x1024 | 19.1 | 2006 | [0F4ED5E367C9](<Analog/HP/HWP265E/0F4ED5E367C9>) |
 | HP               | HWP265E |                  | 1280x1024 | 19.1 |      | [38014707CF78](<Analog/HP/HWP265E/38014707CF78>) |
-| HP               | HWP2675 | LP2465           | 1920x1200 | 24.2 | 2007 | [C5CFEE997748](<Analog/HP/HWP2675/C5CFEE997748>) |
+| HP               | HWP2675 | LP2465           | 1920x1200 | 24.2 | 2007 | [06262FEC8C36](<Analog/HP/HWP2675/06262FEC8C36>) |
 | HP               | HWP2675 |                  | 1920x1920 | 28.4 | 2006 | [64030F5487B9](<Analog/HP/HWP2675/64030F5487B9>) |
 | HP               | HWP2675 | LP2465           | 1920x1200 | 24.2 | 2006 | [86DB8F86D4B9](<Analog/HP/HWP2675/86DB8F86D4B9>) |
 | HP               | HWP2678 | w19              | 1440x900  | 18.6 | 2006 | [E83C2EE12476](<Analog/HP/HWP2678/E83C2EE12476>) |
 | HP               | HWP2682 | L1940T           | 1280x1024 | 19.1 | 2007 | [04DBF9EDB84C](<Analog/HP/HWP2682/04DBF9EDB84C>) |
 | HP               | HWP2682 | L1940T           | 1280x1024 | 19.1 | 2006 | [0485EF4FE2E6](<Analog/HP/HWP2682/0485EF4FE2E6>) |
 | HP               | HWP2682 |                  | 1280x1024 | 19.1 |      | [21BD0ED975E7](<Analog/HP/HWP2682/21BD0ED975E7>) |
+| HP               | HWP2686 |                  | 1280x1024 | 16.8 | 2006 | [D210284BE2FA](<Analog/HP/HWP2686/D210284BE2FA>) |
 | HP               | HWP2692 | LP1965           | 1280x1024 | 19.1 | 2008 | [0CC7BFEB64D6](<Analog/HP/HWP2692/0CC7BFEB64D6>) |
 | HP               | HWP2692 | LP1965           | 1280x1024 | 19.1 | 2007 | [22673E949D47](<Analog/HP/HWP2692/22673E949D47>) |
 | HP               | HWP2692 | LP1965           | 1280x1024 | 19.1 | 2006 | [3EB0B841B824](<Analog/HP/HWP2692/3EB0B841B824>) |
@@ -4201,6 +4345,7 @@ model and ID.
 | HP               | HWP2694 | L2045w           | 1680x1050 | 20.0 | 2006 | [BF463A528541](<Analog/HP/HWP2694/BF463A528541>) |
 | HP               | HWP2698 | vp15             | 1024x768  | 14.9 | 2008 | [31D71AE1781E](<Analog/HP/HWP2698/31D71AE1781E>) |
 | HP               | HWP2698 | vp15             | 1152x870  | 14.9 | 2007 | [714DE36170A5](<Analog/HP/HWP2698/714DE36170A5>) |
+| HP               | HWP2698 | vp15             | 1024x768  | 14.9 | 2007 | [A83AD26186A6](<Analog/HP/HWP2698/A83AD26186A6>) |
 | HP               | HWP2699 | vp17             | 1280x1024 | 17.1 | 2007 | [006352AC0CD7](<Analog/HP/HWP2699/006352AC0CD7>) |
 | HP               | HWP26A0 | w19b/w19e        | 1440x900  | 18.6 | 2007 | [A9EA08285755](<Analog/HP/HWP26A0/A9EA08285755>) |
 | HP               | HWP26A0 | w19b/w19e        | 1440x900  | 18.6 | 2006 | [039D4211D7D8](<Analog/HP/HWP26A0/039D4211D7D8>) |
@@ -4213,12 +4358,12 @@ model and ID.
 | HP               | HWP26A4 |                  | 1440x900  | 19.1 | 2007 | [260F006FDDE8](<Analog/HP/HWP26A4/260F006FDDE8>) |
 | HP               | HWP26A4 |                  | 1440x900  | 19.1 |      | [06471757BC70](<Analog/HP/HWP26A4/06471757BC70>) |
 | HP               | HWP26A6 | w2007            | 1680x1050 | 20.0 | 2008 | [04D230E62FFD](<Analog/HP/HWP26A6/04D230E62FFD>) |
-| HP               | HWP26A6 | w2007            | 1680x1050 | 20.0 | 2007 | [2CE12D918747](<Analog/HP/HWP26A6/2CE12D918747>) |
+| HP               | HWP26A6 | w2007            | 1680x1050 | 20.0 | 2007 | [10AFAEAFEC97](<Analog/HP/HWP26A6/10AFAEAFEC97>) |
 | HP               | HWP26A6 |                  | 1680x1050 | 20.0 |      | [D460C71456B6](<Analog/HP/HWP26A6/D460C71456B6>) |
 | HP               | HWP26A8 | w2207            | 1680x1050 | 22.0 | 2008 | [18C31EE23257](<Analog/HP/HWP26A8/18C31EE23257>) |
 | HP               | HWP26A8 | w2207            | 1680x1050 | 22.0 | 2007 | [0655E31239DD](<Analog/HP/HWP26A8/0655E31239DD>) |
 | HP               | HWP26A8 |                  | 1680x1050 | 22.0 |      | [7F33B72AF66A](<Analog/HP/HWP26A8/7F33B72AF66A>) |
-| HP               | HWP26AA | w20              | 1680x1050 | 20.0 | 2007 | [F44307183E9C](<Analog/HP/HWP26AA/F44307183E9C>) |
+| HP               | HWP26AA | w20              | 1680x1050 | 20.0 | 2007 | [CCAF2B57A434](<Analog/HP/HWP26AA/CCAF2B57A434>) |
 | HP               | HWP26AA | w20              | 1680x1050 | 20.0 | 2006 | [A5026A3FEC37](<Analog/HP/HWP26AA/A5026A3FEC37>) |
 | HP               | HWP26AC | w22              | 1680x1050 | 22.0 | 2006 | [09A8D191982E](<Analog/HP/HWP26AC/09A8D191982E>) |
 | HP               | HWP26CE | w2408            | 1920x1200 | 24.0 | 2008 | [70D2E925025F](<Analog/HP/HWP26CE/70D2E925025F>) |
@@ -4248,6 +4393,7 @@ model and ID.
 | HP               | HWP26F0 | L1908w           | 1440x900  | 19.1 | 2008 | [36FF9B9C720A](<Analog/HP/HWP26F0/36FF9B9C720A>) |
 | HP               | HWP26F0 | L1908w           | 1440x900  | 19.1 | 2007 | [88FCFDBB0682](<Analog/HP/HWP26F0/88FCFDBB0682>) |
 | HP               | HWP26F0 |                  | 1440x900  | 19.1 |      | [2496737C0DA4](<Analog/HP/HWP26F0/2496737C0DA4>) |
+| HP               | HWP26F2 | LP2480zx         | 1920x1200 | 24.0 | 2008 | [1ADF2108603E](<Analog/HP/HWP26F2/1ADF2108603E>) |
 | HP               | HWP26F6 | LP2475w          | 1920x1200 | 25.3 | 2010 | [0DD9DA70F06A](<Analog/HP/HWP26F6/0DD9DA70F06A>) |
 | HP               | HWP26F6 | LP2475w          | 1920x1200 | 25.3 | 2009 | [7CD2FD14BCA2](<Analog/HP/HWP26F6/7CD2FD14BCA2>) |
 | HP               | HWP26FA | L2208w           | 1680x1050 | 22.0 | 2009 | [41B804DB414A](<Analog/HP/HWP26FA/41B804DB414A>) |
@@ -4297,7 +4443,8 @@ model and ID.
 | HP               | HWP2839 | 2509             | 1920x1080 | 24.9 | 2010 | [F225103B79FE](<Analog/HP/HWP2839/F225103B79FE>) |
 | HP               | HWP283C |                  | 1920x1080 | 27.2 |      | [FC5F1FE5D925](<Analog/HP/HWP283C/FC5F1FE5D925>) |
 | HP               | HWP2840 | LE1851w          | 1366x768  | 18.5 | 2011 | [3C4918FB819F](<Analog/HP/HWP2840/3C4918FB819F>) |
-| HP               | HWP2840 | LE1851w          | 1366x768  | 18.5 | 2009 | [3AA3305B7C56](<Analog/HP/HWP2840/3AA3305B7C56>) |
+| HP               | HWP2840 | LE1851w          | 1366x768  | 18.5 | 2010 | [9F624B4F11D7](<Analog/HP/HWP2840/9F624B4F11D7>) |
+| HP               | HWP2840 | LE1851w          | 1366x768  | 18.5 | 2009 | [278175F3DCA5](<Analog/HP/HWP2840/278175F3DCA5>) |
 | HP               | HWP2841 | LE2001w          | 1600x900  | 19.9 | 2010 | [4EDD6A12CDF4](<Analog/HP/HWP2841/4EDD6A12CDF4>) |
 | HP               | HWP2841 | LE2001w          | 1600x900  | 19.9 | 2009 | [8A8DA5CE3123](<Analog/HP/HWP2841/8A8DA5CE3123>) |
 | HP               | HWP2842 | LE1901w          | 1440x900  | 19.1 | 2012 | [43D4B410D203](<Analog/HP/HWP2842/43D4B410D203>) |
@@ -4313,6 +4460,7 @@ model and ID.
 | HP               | HWP2844 | LA1905           | 1440x900  | 19.1 | 2010 | [9871C1ACAEFB](<Analog/HP/HWP2844/9871C1ACAEFB>) |
 | HP               | HWP2844 | LA1905           | 1440x900  | 19.1 | 2009 | [305756F94674](<Analog/HP/HWP2844/305756F94674>) |
 | HP               | HWP2844 | LA1905           | 1440x900  | 19.1 |      | [8D6E907DB151](<Analog/HP/HWP2844/8D6E907DB151>) |
+| HP               | HWP2847 | LA2205           | 1680x1050 | 22.0 | 2012 | [7AFD69578967](<Analog/HP/HWP2847/7AFD69578967>) |
 | HP               | HWP2847 | LA2205           | 1680x1050 | 22.0 | 2011 | [1D580FAC7CCF](<Analog/HP/HWP2847/1D580FAC7CCF>) |
 | HP               | HWP2847 | LA2205           | 1680x1050 | 22.0 | 2010 | [067412A6FA5C](<Analog/HP/HWP2847/067412A6FA5C>) |
 | HP               | HWP2847 | LA2205           | 1680x1050 | 22.0 | 2009 | [11B79A0D48F6](<Analog/HP/HWP2847/11B79A0D48F6>) |
@@ -4348,7 +4496,7 @@ model and ID.
 | HP               | HWP2868 | ZR22w            | 1920x1080 | 21.7 | 2010 | [0FC6D88B4973](<Analog/HP/HWP2868/0FC6D88B4973>) |
 | HP               | HWP286B | ZR24w            | 1920x1200 | 25.3 | 2011 | [3AE2BC3FE0E4](<Analog/HP/HWP286B/3AE2BC3FE0E4>) |
 | HP               | HWP286B | ZR24w            | 1920x1200 | 24.0 | 2011 | [B24A0999C146](<Analog/HP/HWP286B/B24A0999C146>) |
-| HP               | HWP286B | ZR24w            | 1920x1200 | 25.3 | 2010 | [33C6FBDCD0A5](<Analog/HP/HWP286B/33C6FBDCD0A5>) |
+| HP               | HWP286B | ZR24w            | 1920x1200 | 25.3 | 2010 | [330FEC995AAC](<Analog/HP/HWP286B/330FEC995AAC>) |
 | HP               | HWP2889 | 2010             | 1600x900  | 19.9 | 2010 | [2FFC4F4CD8DD](<Analog/HP/HWP2889/2FFC4F4CD8DD>) |
 | HP               | HWP2890 | 2310             | 1920x1080 | 23.1 | 2010 | [1E9326B80C49](<Analog/HP/HWP2890/1E9326B80C49>) |
 | HP               | HWP2898 | L185b            | 1366x768  | 18.5 | 2011 | [AD7504BF57BD](<Analog/HP/HWP2898/AD7504BF57BD>) |
@@ -4362,7 +4510,8 @@ model and ID.
 | HP               | HWP2904 |                  | 1600x900  | 19.9 |      | [19BE462D1971](<Analog/HP/HWP2904/19BE462D1971>) |
 | HP               | HWP2906 | S2231            | 1920x1080 | 21.7 | 2011 | [400DD8988E3C](<Analog/HP/HWP2906/400DD8988E3C>) |
 | HP               | HWP2906 | S2231            | 1920x1080 | 21.7 | 2010 | [1D1B055ED707](<Analog/HP/HWP2906/1D1B055ED707>) |
-| HP               | HWP2908 | S2331            | 1920x1080 | 23.1 | 2010 | [3D171C2E675D](<Analog/HP/HWP2908/3D171C2E675D>) |
+| HP               | HWP2908 | S2331            | 1920x1080 | 23.1 | 2011 | [6A5B71D35361](<Analog/HP/HWP2908/6A5B71D35361>) |
+| HP               | HWP2908 | S2331            | 1920x1080 | 23.1 | 2010 | [39D0E94253BE](<Analog/HP/HWP2908/39D0E94253BE>) |
 | HP               | HWP2908 |                  | 1920x1080 | 23.1 |      | [F4D56E877835](<Analog/HP/HWP2908/F4D56E877835>) |
 | HP               | HWP290B | Compaq S1922     | 1366x768  | 18.5 | 2010 | [2AA127ADAF69](<Analog/HP/HWP290B/2AA127ADAF69>) |
 | HP               | HWP290E | Compaq S2022     | 1600x900  | 19.9 | 2010 | [7F816155C51E](<Analog/HP/HWP290E/7F816155C51E>) |
@@ -4372,6 +4521,7 @@ model and ID.
 | HP               | HWP2912 | x23LED           | 1920x1080 | 23.1 | 2011 | [430ACEB0438A](<Analog/HP/HWP2912/430ACEB0438A>) |
 | HP               | HWP2912 | x23LED           | 1920x1080 | 23.1 | 2010 | [B4B70F5163D4](<Analog/HP/HWP2912/B4B70F5163D4>) |
 | HP               | HWP2912 |                  | 1920x1080 | 23.1 |      | [C6ADE33FAA8E](<Analog/HP/HWP2912/C6ADE33FAA8E>) |
+| HP               | HWP2914 | x22LED           | 1920x1080 | 21.7 | 2010 | [6357A05CDB57](<Analog/HP/HWP2914/6357A05CDB57>) |
 | HP               | HWP2918 | S1931            | 1366x768  | 18.5 | 2011 | [9696884F33B6](<Analog/HP/HWP2918/9696884F33B6>) |
 | HP               | HWP2918 | S1931            | 1366x768  | 18.5 | 2010 | [19816249E53A](<Analog/HP/HWP2918/19816249E53A>) |
 | HP               | HWP291A | Compaq Q2022     | 1600x900  | 19.9 | 2010 | [5A5E93D0640F](<Analog/HP/HWP291A/5A5E93D0640F>) |
@@ -4422,6 +4572,7 @@ model and ID.
 | HP               | HWP2994 | L2311c           | 1920x1080 | 23.1 | 2013 | [281B504CEB9F](<Analog/HP/HWP2994/281B504CEB9F>) |
 | HP               | HWP2999 | S1935a           | 1366x768  | 18.5 | 2012 | [60622D2D78F9](<Analog/HP/HWP2999/60622D2D78F9>) |
 | HP               | HWP299A | LV2011           | 1600x900  | 19.9 | 2014 | [DF2794A97E28](<Analog/HP/HWP299A/DF2794A97E28>) |
+| HP               | HWP299A | LV2011           | 1600x900  | 19.9 | 2013 | [9DB1B5B5410E](<Analog/HP/HWP299A/9DB1B5B5410E>) |
 | HP               | HWP299A | LV2011           | 1600x900  | 19.9 | 2012 | [513963CE5692](<Analog/HP/HWP299A/513963CE5692>) |
 | HP               | HWP299E | W2071d           | 1600x900  | 19.9 | 2014 | [283AC6E39457](<Analog/HP/HWP299E/283AC6E39457>) |
 | HP               | HWP299E | W2071d           | 1600x900  | 19.9 | 2012 | [14410034E9FB](<Analog/HP/HWP299E/14410034E9FB>) |
@@ -4435,12 +4586,12 @@ model and ID.
 | HP               | HWP3005 |                  | 1366x768  | 18.5 |      | [CDE72F38EA87](<Analog/HP/HWP3005/CDE72F38EA87>) |
 | HP               | HWP3006 | LV2311           | 1920x1080 | 23.1 | 2015 | [4E2B2A7D81DF](<Analog/HP/HWP3006/4E2B2A7D81DF>) |
 | HP               | HWP3006 | LV2311           | 1920x1080 | 23.1 | 2013 | [369545328D77](<Analog/HP/HWP3006/369545328D77>) |
-| HP               | HWP300C |                  | 1600x900  | 19.9 | 2012 | [8C77895F2F23](<Analog/HP/HWP300C/8C77895F2F23>) |
+| HP               | HWP300C |                  | 1600x900  | 19.9 | 2012 | [0D67E7C52AB1](<Analog/HP/HWP300C/0D67E7C52AB1>) |
 | HP               | HWP3010 |                  | 1366x768  | 18.5 | 2012 | [99AFC3787403](<Analog/HP/HWP3010/99AFC3787403>) |
 | HP               | HWP3012 |                  | 1366x768  | 18.5 |      | [AD08C6715951](<Analog/HP/HWP3012/AD08C6715951>) |
 | HP               | HWP3015 | L2206tm          | 1920x1080 | 21.7 | 2013 | [7D9EC0BDD1FB](<Analog/HP/HWP3015/7D9EC0BDD1FB>) |
 | HP               | HWP301C | 2311xi           | 1920x1080 | 23.1 | 2012 | [9A687BCCD2A5](<Analog/HP/HWP301C/9A687BCCD2A5>) |
-| HP               | HWP3020 | LA2405x          | 1920x1200 | 24.0 | 2013 | [A925FF723D82](<Analog/HP/HWP3020/A925FF723D82>) |
+| HP               | HWP3020 | LA2405x          | 1920x1200 | 24.0 | 2013 | [9B7BCCEE239D](<Analog/HP/HWP3020/9B7BCCEE239D>) |
 | HP               | HWP3020 | LA2405x          | 1920x1200 | 24.0 | 2012 | [6F91D64EB576](<Analog/HP/HWP3020/6F91D64EB576>) |
 | HP               | HWP3023 | LA1956x          | 1280x1024 | 19.1 | 2013 | [38A9521BE6DC](<Analog/HP/HWP3023/38A9521BE6DC>) |
 | HP               | HWP3027 | W2371d           | 1920x1080 | 23.1 | 2014 | [0797A9DFB47E](<Analog/HP/HWP3027/0797A9DFB47E>) |
@@ -4448,7 +4599,7 @@ model and ID.
 | HP               | HWP302C | 20bw             | 1600x900  | 19.9 | 2013 | [AC3BE2E6D95A](<Analog/HP/HWP302C/AC3BE2E6D95A>) |
 | HP               | HWP3030 | 22xi             | 1920x1080 | 21.7 | 2015 | [06DFC8B0FFE2](<Analog/HP/HWP3030/06DFC8B0FFE2>) |
 | HP               | HWP3030 | 22xi             | 1920x1080 | 21.7 | 2013 | [2D1CE77BF92B](<Analog/HP/HWP3030/2D1CE77BF92B>) |
-| HP               | HWP3033 | 23xi             | 1920x1080 | 23.1 | 2014 | [D8F1FAA53003](<Analog/HP/HWP3033/D8F1FAA53003>) |
+| HP               | HWP3033 | 23xi             | 1920x1080 | 23.1 | 2014 | [BF6C224B06E7](<Analog/HP/HWP3033/BF6C224B06E7>) |
 | HP               | HWP3033 | 23xi             | 1920x1080 | 23.1 | 2013 | [28A8AF6E4F1F](<Analog/HP/HWP3033/28A8AF6E4F1F>) |
 | HP               | HWP3039 | 27xi             | 1920x1080 | 27.2 | 2014 | [D816B888BCDA](<Analog/HP/HWP3039/D816B888BCDA>) |
 | HP               | HWP3039 | 27xi             | 1920x1080 | 27.2 | 2013 | [6E6338E969D0](<Analog/HP/HWP3039/6E6338E969D0>) |
@@ -4478,7 +4629,7 @@ model and ID.
 | HP               | HWP308E | Z22i             | 1920x1080 | 21.7 | 2015 | [59481EC90BD1](<Analog/HP/HWP308E/59481EC90BD1>) |
 | HP               | HWP308E | Z22i             | 1920x1080 | 21.7 | 2014 | [89AC8A581ABF](<Analog/HP/HWP308E/89AC8A581ABF>) |
 | HP               | HWP308E | Z22i             | 1920x1080 | 21.7 | 2013 | [553B855BE98E](<Analog/HP/HWP308E/553B855BE98E>) |
-| HP               | HWP3091 | Z23i             | 1920x1080 | 23.1 | 2014 | [FB1CDC4F912D](<Analog/HP/HWP3091/FB1CDC4F912D>) |
+| HP               | HWP3091 | Z23i             | 1920x1080 | 23.1 | 2014 | [DF0D013DB835](<Analog/HP/HWP3091/DF0D013DB835>) |
 | HP               | HWP3094 | E221c            | 1920x1080 | 22.8 | 2014 | [28C306109E0D](<Analog/HP/HWP3094/28C306109E0D>) |
 | HP               | HWP3100 | Z24i             | 1920x1200 | 24.0 | 2016 | [A1F68C3A56C3](<Analog/HP/HWP3100/A1F68C3A56C3>) |
 | HP               | HWP3100 | Z24i             | 1920x1200 | 24.0 | 2014 | [1CC02DF419F9](<Analog/HP/HWP3100/1CC02DF419F9>) |
@@ -4489,6 +4640,7 @@ model and ID.
 | HP               | HWP3112 | V221             | 1920x1080 | 21.7 | 2015 | [25FA20A18301](<Analog/HP/HWP3112/25FA20A18301>) |
 | HP               | HWP3112 | V221             | 1920x1080 | 21.7 | 2014 | [47FAC86509CE](<Analog/HP/HWP3112/47FAC86509CE>) |
 | HP               | HWP3114 | P231             | 1920x1080 | 23.1 | 2015 | [9217B3241E7B](<Analog/HP/HWP3114/9217B3241E7B>) |
+| HP               | HWP3119 | E190i            | 1280x1024 | 19.1 | 2015 | [41D60729A134](<Analog/HP/HWP3119/41D60729A134>) |
 | HP               | HWP3119 | E190i            | 1280x1024 | 19.1 | 2014 | [4AA22813CA47](<Analog/HP/HWP3119/4AA22813CA47>) |
 | HP               | HWP3120 | V241p            | 1920x1080 | 23.4 | 2015 | [EC8C5A81695A](<Analog/HP/HWP3120/EC8C5A81695A>) |
 | HP               | HWP3120 | V241             | 1920x1080 | 23.4 | 2014 | [489ACD0B7979](<Analog/HP/HWP3120/489ACD0B7979>) |
@@ -4540,7 +4692,7 @@ model and ID.
 | HP               | HWP3266 | E240             | 1920x1080 | 24.0 | 2016 | [588F73C9FC1F](<Analog/HP/HWP3266/588F73C9FC1F>) |
 | HP               | HWP3266 | E240             | 1920x1080 | 24.0 | 2015 | [1E0D0D4B8BD0](<Analog/HP/HWP3266/1E0D0D4B8BD0>) |
 | HP               | HWP3273 | E202             | 1600x900  | 19.9 | 2017 | [F334D907D938](<Analog/HP/HWP3273/F334D907D938>) |
-| HP               | HWP327B | E232             | 1920x1080 | 23.1 | 2017 | [ABFF8B0A3676](<Analog/HP/HWP327B/ABFF8B0A3676>) |
+| HP               | HWP327B | E232             | 1920x1080 | 23.1 | 2017 | [82BC078EF583](<Analog/HP/HWP327B/82BC078EF583>) |
 | HP               | HWP327B | E232             | 1920x1080 | 23.1 | 2016 | [757B26E0BF33](<Analog/HP/HWP327B/757B26E0BF33>) |
 | HP               | HWP327B | E232             | 1920x1080 | 23.1 | 2015 | [6A0E412D4CF3](<Analog/HP/HWP327B/6A0E412D4CF3>) |
 | HP               | HWP327F | E240c            | 1920x1080 | 23.1 | 2016 | [A626A2FCBF9E](<Analog/HP/HWP327F/A626A2FCBF9E>) |
@@ -4549,6 +4701,7 @@ model and ID.
 | HP               | HWP3290 | V212a            | 1920x1080 | 20.8 | 2015 | [9BD9E1A32EA3](<Analog/HP/HWP3290/9BD9E1A32EA3>) |
 | HP               | HWP3298 | 23vx             | 1920x1080 | 23.1 | 2015 | [3C3A1EEE3CDD](<Analog/HP/HWP3298/3C3A1EEE3CDD>) |
 | HP               | HWP3308 | P240va           | 1920x1080 | 24.0 | 2017 | [34333D82EA1E](<Analog/HP/HWP3308/34333D82EA1E>) |
+| HP               | HWP330B | V202             | 1600x900  | 20.5 | 2015 | [296EF486E768](<Analog/HP/HWP330B/296EF486E768>) |
 | HP               | HWP3317 | V198bz           | 1366x768  | 18.5 | 2017 | [192689585BCB](<Analog/HP/HWP3317/192689585BCB>) |
 | HP               | HWP331A | V225hz           | 1920x1080 | 23.1 | 2017 | [1F25ABA60B53](<Analog/HP/HWP331A/1F25ABA60B53>) |
 | HP               | HWP331A | V225hz           | 1920x1080 | 23.1 | 2016 | [CF76182BE739](<Analog/HP/HWP331A/CF76182BE739>) |
@@ -4573,6 +4726,7 @@ model and ID.
 | HP               | HWP332F | 20kd             | 1440x900  | 19.4 | 2019 | [07DF649C3358](<Analog/HP/HWP332F/07DF649C3358>) |
 | HP               | HWP332F | 20kd             | 1440x900  | 19.4 | 2018 | [A8899987F945](<Analog/HP/HWP332F/A8899987F945>) |
 | HP               | HWP332F | 20kd             | 1440x900  | 19.4 | 2016 | [0B737D20FC41](<Analog/HP/HWP332F/0B737D20FC41>) |
+| HP               | HWP3330 | V203p            | 1440x900  | 19.4 | 2018 | [36B21608D712](<Analog/HP/HWP3330/36B21608D712>) |
 | HP               | HWP3330 | V203p            | 1440x900  | 19.4 | 2017 | [447C79292670](<Analog/HP/HWP3330/447C79292670>) |
 | HP               | HWP3334 | Compaq B191      | 1366x768  | 18.5 | 2020 | [F4E74E27461D](<Analog/HP/HWP3334/F4E74E27461D>) |
 | HP               | HWP3334 | Compaq B191      | 1366x768  | 18.5 | 2018 | [D83959DE8BFB](<Analog/HP/HWP3334/D83959DE8BFB>) |
@@ -4583,10 +4737,11 @@ model and ID.
 | HP               | HWP3346 | V194             | 1366x768  | 18.5 | 2016 | [04A9934CEAF0](<Analog/HP/HWP3346/04A9934CEAF0>) |
 | HP               | HWP3348 | V197             | 1366x768  | 18.5 | 2017 | [0CC14DB4DF1C](<Analog/HP/HWP3348/0CC14DB4DF1C>) |
 | HP               | HWP3348 |                  | 1366x768  | 18.5 |      | [BB1C6FFC34E4](<Analog/HP/HWP3348/BB1C6FFC34E4>) |
-| HP               | HWP334A | V223             | 1920x1080 | 23.4 | 2016 | [621330B2DEE5](<Analog/HP/HWP334A/621330B2DEE5>) |
+| HP               | HWP334A | V223             | 1920x1080 | 23.4 | 2016 | [5946CAF04256](<Analog/HP/HWP334A/5946CAF04256>) |
 | HP               | HWP334C |                  | 1920x1080 | 24.0 |      | [9F3D259B636F](<Analog/HP/HWP334C/9F3D259B636F>) |
 | HP               | HWP3353 | VH22             | 1920x1080 | 21.7 | 2019 | [A21F857D22CD](<Analog/HP/HWP3353/A21F857D22CD>) |
 | HP               | HWP3353 | VH22             | 1920x1080 | 21.7 | 2017 | [320DDE9BD8AD](<Analog/HP/HWP3353/320DDE9BD8AD>) |
+| HP               | HWP3356 | 27wm             | 1920x1080 | 27.2 | 2018 | [497B739D9DFF](<Analog/HP/HWP3356/497B739D9DFF>) |
 | HP               | HWP3356 | 27wm             | 1920x1080 | 27.2 | 2017 | [76912C4F1AB1](<Analog/HP/HWP3356/76912C4F1AB1>) |
 | HP               | HWP3356 | 27wm             | 1920x1080 | 27.2 | 2016 | [8DB5FB7B7AA9](<Analog/HP/HWP3356/8DB5FB7B7AA9>) |
 | HP               | HWP4107 | Compaq AiO       | 1366x768  | 18.5 | 2009 | [ACBE04A1193A](<Analog/HP/HWP4107/ACBE04A1193A>) |
@@ -4624,6 +4779,7 @@ model and ID.
 | HannStar         | HSD00BF |                  | 1280x1024 | 19.1 | 2006 | [96EB765CCF80](<Analog/HannStar/HSD00BF/96EB765CCF80>) |
 | HannStar         | HSD04B2 | JC171D           | 1280x1024 | 17.1 | 2007 | [35BBA8CD2ADB](<Analog/HannStar/HSD04B2/35BBA8CD2ADB>) |
 | HannStar         | HSD04BB | AH191            | 1440x900  | 19.1 | 2008 | [7C0DB196CB35](<Analog/HannStar/HSD04BB/7C0DB196CB35>) |
+| HannStar         | HSD0566 | HE225ANB         | 1920x1080 | 21.7 | 2017 | [2E3641AF3682](<Analog/HannStar/HSD0566/2E3641AF3682>) |
 | HannStar         | HSD05C6 | JC198D           | 1280x1024 | 19.1 | 2006 | [0BC9B2F47662](<Analog/HannStar/HSD05C6/0BC9B2F47662>) |
 | HannStar         | HSD0777 | HN198D           | 1280x1024 | 19.1 | 2006 | [6A9990A0B10E](<Analog/HannStar/HSD0777/6A9990A0B10E>) |
 | HannStar         | HSD083F |                  | 1440x900  | 17.2 | 2008 | [11068893033D](<Analog/HannStar/HSD083F/11068893033D>) |
@@ -4642,6 +4798,7 @@ model and ID.
 | HannStar         | HSD18B2 | HF229            | 1680x1050 | 22.3 | 2008 | [250B69634F8B](<Analog/HannStar/HSD18B2/250B69634F8B>) |
 | HannStar         | HSD1940 | HC194D           | 1280x1024 | 19.1 | 2007 | [299A541B9600](<Analog/HannStar/HSD1940/299A541B9600>) |
 | HannStar         | HSD1940 | HC194D           | 1280x1024 | 19.1 | 2006 | [5C10771FF297](<Analog/HannStar/HSD1940/5C10771FF297>) |
+| HannStar         | HSD1A41 | HF257            | 1920x1080 | 24.3 | 2010 | [335F94236747](<Analog/HannStar/HSD1A41/335F94236747>) |
 | HannStar         | HSD1A41 | HF257            | 1920x1080 | 24.3 | 2009 | [9CC794048B5C](<Analog/HannStar/HSD1A41/9CC794048B5C>) |
 | HannStar         | HSD1C2B |                  | 1440x900  | 19.1 | 2009 | [7BAA39048E59](<Analog/HannStar/HSD1C2B/7BAA39048E59>) |
 | HannStar         | HSD1C2B |                  | 1440x900  | 19.1 | 2008 | [9215B95F710A](<Analog/HannStar/HSD1C2B/9215B95F710A>) |
@@ -4654,7 +4811,7 @@ model and ID.
 | HannStar         | HSD20A9 |                  | 1920x1080 | 21.7 | 2010 | [1995981711DE](<Analog/HannStar/HSD20A9/1995981711DE>) |
 | HannStar         | HSD20E5 | HH281            | 1920x1200 | 27.4 | 2010 | [A16A991F1F26](<Analog/HannStar/HSD20E5/A16A991F1F26>) |
 | HannStar         | HSD20E6 | iH282            | 1920x1200 | 27.4 | 2010 | [1F07989F6AE1](<Analog/HannStar/HSD20E6/1F07989F6AE1>) |
-| HannStar         | HSD213F |                  | 1280x1024 | 19.1 | 2009 | [A0238ECCFCC6](<Analog/HannStar/HSD213F/A0238ECCFCC6>) |
+| HannStar         | HSD213F |                  | 1280x1024 | 19.1 | 2009 | [1BAE129A7FAF](<Analog/HannStar/HSD213F/1BAE129A7FAF>) |
 | HannStar         | HSD2212 | HH251D           | 1920x1080 | 24.3 | 2010 | [153F3F56E0FB](<Analog/HannStar/HSD2212/153F3F56E0FB>) |
 | HannStar         | HSD2275 |                  | 1920x1080 | 23.4 | 2009 | [E298D1B2ABC8](<Analog/HannStar/HSD2275/E298D1B2ABC8>) |
 | HannStar         | HSD227F |                  | 1920x1080 | 23.1 |      | [333D0DE8EDE8](<Analog/HannStar/HSD227F/333D0DE8EDE8>) |
@@ -4664,6 +4821,8 @@ model and ID.
 | HannStar         | HSD2469 |                  | 1680x1050 | 22.0 | 2009 | [51902CF2CE00](<Analog/HannStar/HSD2469/51902CF2CE00>) |
 | HannStar         | HSD2469 |                  | 1680x1050 | 22.0 | 2008 | [40F6892EAF80](<Analog/HannStar/HSD2469/40F6892EAF80>) |
 | HannStar         | HSD2E41 | HK241DPB         | 1920x1080 | 23.4 | 2011 | [CCF1F6E3F854](<Analog/HannStar/HSD2E41/CCF1F6E3F854>) |
+| HannStar         | HSD30E0 | HX194DPB         | 1280x1024 | 19.1 | 2013 | [53E5EF2997C2](<Analog/HannStar/HSD30E0/53E5EF2997C2>) |
+| HannStar         | HSD3FB8 | HP222            | 1680x1050 | 22.0 | 2010 | [F59D51B12CD6](<Analog/HannStar/HSD3FB8/F59D51B12CD6>) |
 | HannStar         | HSD3FB8 | HP222            | 1680x1050 | 22.0 | 2009 | [34BA7D196236](<Analog/HannStar/HSD3FB8/34BA7D196236>) |
 | HannStar         | HSD3FB9 | HP205DJB         | 1600x900  | 19.4 | 2013 | [1EC7CFD760FC](<Analog/HannStar/HSD3FB9/1EC7CFD760FC>) |
 | HannStar         | HSD4089 |                  | 1280x1024 | 19.1 |      | [F72EBAF5550E](<Analog/HannStar/HSD4089/F72EBAF5550E>) |
@@ -4672,10 +4831,12 @@ model and ID.
 | HannStar         | HSD49B7 | HE247DPB         | 1920x1080 | 23.4 | 2013 | [7871490B90A1](<Analog/HannStar/HSD49B7/7871490B90A1>) |
 | HannStar         | HSD49B8 | HE245DPB         | 1920x1080 | 23.4 | 2013 | [50601810C093](<Analog/HannStar/HSD49B8/50601810C093>) |
 | HannStar         | HSD4B16 |                  | 1366x768  | 18.5 | 2010 | [2E8810319EE3](<Analog/HannStar/HSD4B16/2E8810319EE3>) |
+| HannStar         | HSD4B6F | HA224DPB         | 1680x1050 | 22.0 | 2011 | [C5C8A35E6E62](<Analog/HannStar/HSD4B6F/C5C8A35E6E62>) |
 | HannStar         | HSD4B79 |                  | 1680x1050 | 22.0 | 2010 | [5CAA9E675201](<Analog/HannStar/HSD4B79/5CAA9E675201>) |
 | HannStar         | HSD4C41 |                  | 1280x1024 | 19.1 | 2012 | [B8AC3D09978A](<Analog/HannStar/HSD4C41/B8AC3D09978A>) |
 | HannStar         | HSD4C41 |                  | 1280x1024 | 19.1 | 2010 | [2FE61BD8EB59](<Analog/HannStar/HSD4C41/2FE61BD8EB59>) |
 | HannStar         | HSD5173 | HT231            | 1920x1080 | 22.9 | 2013 | [02BD1F3A8C0D](<Analog/HannStar/HSD5173/02BD1F3A8C0D>) |
+| HannStar         | HSD5555 | HU151            | 1024x768  | 14.9 | 2006 | [F7B45E900908](<Analog/HannStar/HSD5555/F7B45E900908>) |
 | HannStar         | HSD5A47 |                  | 1440x900  | 17.2 | 2010 | [2FFA81E7CF0B](<Analog/HannStar/HSD5A47/2FFA81E7CF0B>) |
 | HannStar         | HSD5A47 |                  | 1440x900  | 17.2 | 2009 | [4867BB941CF5](<Analog/HannStar/HSD5A47/4867BB941CF5>) |
 | HannStar         | HSD5A47 |                  | 1440x900  | 17.2 | 2008 | [916DBA7A4F34](<Analog/HannStar/HSD5A47/916DBA7A4F34>) |
@@ -4685,6 +4846,7 @@ model and ID.
 | HannStar         | HSD6299 |                  | 1366x768  | 18.5 | 2010 | [AE7E2D54F6D3](<Analog/HannStar/HSD6299/AE7E2D54F6D3>) |
 | HannStar         | HSD629C | HL198DPB         | 1440x900  | 19.1 | 2011 | [98E5FF194006](<Analog/HannStar/HSD629C/98E5FF194006>) |
 | HannStar         | HSD62C1 | HL190ABB         | 1366x768  | 18.5 | 2011 | [ED6D6542496F](<Analog/HannStar/HSD62C1/ED6D6542496F>) |
+| HannStar         | HSD62C3 | HL190APB         | 1366x768  | 18.5 | 2011 | [3ACDC7CCE613](<Analog/HannStar/HSD62C3/3ACDC7CCE613>) |
 | HannStar         | HSD62DF | HL205ABB         | 1600x900  | 19.4 | 2013 | [62BFF1F973F7](<Analog/HannStar/HSD62DF/62BFF1F973F7>) |
 | HannStar         | HSD6307 | HL226HPB         | 1920x1080 | 21.7 | 2013 | [09F5B683DBF9](<Analog/HannStar/HSD6307/09F5B683DBF9>) |
 | HannStar         | HSD6311 | HL225D           | 1920x1080 | 21.7 | 2010 | [399ECC78840F](<Analog/HannStar/HSD6311/399ECC78840F>) |
@@ -4719,7 +4881,8 @@ model and ID.
 | HannStar         | HSP3139 | HSG1231          | 1360x768  | 18.5 | 2011 | [1C88CF8A97B1](<Analog/HannStar/HSP3139/1C88CF8A97B1>) |
 | HannStar         | HSP3607 |                  | 1920x1080 | 23.1 |      | [F35228B92E7F](<Analog/HannStar/HSP3607/F35228B92E7F>) |
 | HannStar         | HSP4D37 | M19W2            | 1440x900  | 19.1 | 2007 | [73A68ECE2D44](<Analog/HannStar/HSP4D37/73A68ECE2D44>) |
-| Hannspree        | HSG18C5 | HF207            | 1600x900  | 20.3 | 2009 | [C3B3AAF3D5E0](<Analog/Hannspree/HSG18C5/C3B3AAF3D5E0>) |
+| Hannspree        | HSG0000 | HS245HPB         | 1920x1080 | 24.0 | 2015 | [5BD53C66D02E](<Analog/Hannspree/HSG0000/5BD53C66D02E>) |
+| Hannspree        | HSG18C5 | HF207            | 1600x900  | 20.3 | 2009 | [42B30A856059](<Analog/Hannspree/HSG18C5/42B30A856059>) |
 | Hannspree        | HSG18C5 | HF207            | 1600x900  | 20.3 |      | [D838C441F9BE](<Analog/Hannspree/HSG18C5/D838C441F9BE>) |
 | Hannspree        | HSG1AC3 | HF237            | 1920x1080 | 23.1 | 2009 | [96783037C25B](<Analog/Hannspree/HSG1AC3/96783037C25B>) |
 | Hannspree        | HSG3120 | HT161HNB         | 1366x768  | 15.3 | 2016 | [DF2A2B0DBEAD](<Analog/Hannspree/HSG3120/DF2A2B0DBEAD>) |
@@ -4749,7 +4912,7 @@ model and ID.
 | Hitachi          | HIT700A | X93W D-sub       | 1440x900  | 19.1 | 2009 | [6E05E39A2691](<Analog/Hitachi/HIT700A/6E05E39A2691>) |
 | Hitachi          | HIT700A | X93W D-sub       | 1440x900  | 19.1 | 2008 | [A8F697E4DB66](<Analog/Hitachi/HIT700A/A8F697E4DB66>) |
 | Hitachi          | HIT700B | X224W D-sub      | 1680x1050 | 21.7 | 2008 | [219A6FAE2417](<Analog/Hitachi/HIT700B/219A6FAE2417>) |
-| Hitachi          | HIT700C | N240W D_sub      | 1920x1200 | 24.0 | 2008 | [59F7ADFAFC55](<Analog/Hitachi/HIT700C/59F7ADFAFC55>) |
+| Hitachi          | HIT700C | N240W D_sub      | 1920x1200 | 24.0 | 2008 | [3B22442BBCF1](<Analog/Hitachi/HIT700C/3B22442BBCF1>) |
 | Hitachi          | HIT8001 | N200W D-sub      | 1680x1050 | 20.0 | 2008 | [BD91DA3E098F](<Analog/Hitachi/HIT8001/BD91DA3E098F>) |
 | Hitachi          | HIT8002 | HDIT22A          | 1680x1050 | 22.0 | 2009 | [84BF5416F8EC](<Analog/Hitachi/HIT8002/84BF5416F8EC>) |
 | Hitachi          | HIT800C |                  | 1280x1024 | 17.1 | 2008 | [303625CF79D9](<Analog/Hitachi/HIT800C/303625CF79D9>) |
@@ -4764,6 +4927,7 @@ model and ID.
 | Hitachi          | HTCB3B3 | CM615            | 1280x1024 | 16.3 |      | [C5E8F0F7F28D](<Analog/Hitachi/HTCB3B3/C5E8F0F7F28D>) |
 | Hitachi          | HTCB88C | PC-DTA15AXGS     | 1024x768  | 14.9 | 2007 | [41535AF9BDB6](<Analog/Hitachi/HTCB88C/41535AF9BDB6>) |
 | Hugon            | HUG2800 |                  | 1920x1080 | 28.0 | 2016 | [17591D3B698B](<Analog/Hugon/HUG2800/17591D3B698B>) |
+| Huion            | HAT2200 | GT-220           | 1920x1080 | 21.7 | 2018 | [F6171FC59F46](<Analog/Huion/HAT2200/F6171FC59F46>) |
 | Hyundai          | HEI12F0 |                  | 1024x768  | 12.7 |      | [0AEA76CED24F](<Analog/Hyundai/HEI12F0/0AEA76CED24F>) |
 | Hyundai Image... | HIQ0705 | L70N             | 1280x1024 | 16.8 |      | [CBC49C0626E2](<Analog/Hyundai ImageQuest/HIQ0705/CBC49C0626E2>) |
 | Hyundai Image... | HIQ5001 | L72S             | 1280x1024 | 16.8 |      | [1081B164C90F](<Analog/Hyundai ImageQuest/HIQ5001/1081B164C90F>) |
@@ -4787,11 +4951,13 @@ model and ID.
 | Hyundai Image... | IQT9004 | HDIT22W DSUB     | 1920x1080 | 22.8 | 2010 | [0D0CE44BB0D2](<Analog/Hyundai ImageQuest/IQT9004/0D0CE44BB0D2>) |
 | Hyundai Image... | IQT9004 | HDIT22W DSUB     | 1920x1080 | 22.8 | 2009 | [008AA739AF6C](<Analog/Hyundai ImageQuest/IQT9004/008AA739AF6C>) |
 | Hyundai Image... | IQT9004 | HDIT22W DSUB     | 1920x1080 | 21.1 | 2009 | [19A23BA80C9D](<Analog/Hyundai ImageQuest/IQT9004/19A23BA80C9D>) |
+| Hyundai Image... | IQT9005 | HDIT22W DSUB     | 1680x1050 | 21.7 | 2010 | [71D89B17515F](<Analog/Hyundai ImageQuest/IQT9005/71D89B17515F>) |
 | Hyundai Image... | IQT9005 | HDIT22W DSUB     | 1680x1050 | 21.7 | 2009 | [2CDAFA1EA52F](<Analog/Hyundai ImageQuest/IQT9005/2CDAFA1EA52F>) |
 | Hyundai Image... | IQT9008 | HDIT19W DSUB     | 1366x768  | 19.8 | 2010 | [62D2E60942F8](<Analog/Hyundai ImageQuest/IQT9008/62D2E60942F8>) |
 | Hyundai Image... | IQT9008 | HDIT19W DSUB     | 1366x768  | 18.5 | 2010 | [E47C6249825D](<Analog/Hyundai ImageQuest/IQT9008/E47C6249825D>) |
 | Hyundai Image... | IQT9008 | HDIT19W DSUB     | 1366x768  | 19.8 | 2009 | [1DA82A2596E6](<Analog/Hyundai ImageQuest/IQT9008/1DA82A2596E6>) |
 | Hyundai Image... | IQT900A |                  | 1920x1080 | 21.7 | 2011 | [846FB6AAA709](<Analog/Hyundai ImageQuest/IQT900A/846FB6AAA709>) |
+| Hyundai Image... | IQT900D | W24XD DSUB       | 1920x1200 | 24.0 | 2009 | [99ADB44F0199](<Analog/Hyundai ImageQuest/IQT900D/99ADB44F0199>) |
 | Hyundai Image... | IQT90DA | L90D Analog      | 1280x1024 | 18.8 |      | [5C7A5026BBD4](<Analog/Hyundai ImageQuest/IQT90DA/5C7A5026BBD4>) |
 | Hyundai Image... | IQTF790 | F790D            | 1600x1200 | 15.7 |      | [5C50F49EE111](<Analog/Hyundai ImageQuest/IQTF790/5C50F49EE111>) |
 | IBM              | IBM0A90 |                  | 1280x1024 | 19.1 |      | [12026190D9E0](<Analog/IBM/IBM0A90/12026190D9E0>) |
@@ -4811,9 +4977,12 @@ model and ID.
 | IBM              | IBM2471 | L190             | 1280x1024 | 19.1 | 2006 | [1BF948BDC101](<Analog/IBM/IBM2471/1BF948BDC101>) |
 | IBM              | IBM2471 | L190             | 1280x1024 | 19.1 |      | [14E7095B46BC](<Analog/IBM/IBM2471/14E7095B46BC>) |
 | IBM              | IBM24C9 |                  | 1280x1024 | 17.1 |      | [3012CBAA59FB](<Analog/IBM/IBM24C9/3012CBAA59FB>) |
+| IBM              | IBM24CB | L191p            | 1280x1024 | 19.1 |      | [037917177FF3](<Analog/IBM/IBM24CB/037917177FF3>) |
 | IBM              | IBM2516 | T860 9494        | 1280x1024 | 18.2 |      | [29AD5DC5385C](<Analog/IBM/IBM2516/29AD5DC5385C>) |
 | IBM              | IBM2528 | IBM9512 T541     | 1024x768  | 14.9 |      | [DB0BEEB9CF1E](<Analog/IBM/IBM2528/DB0BEEB9CF1E>) |
 | IBM              | IBM415E | L170p            | 1280x1024 | 17.1 |      | [0D9724B82F12](<Analog/IBM/IBM415E/0D9724B82F12>) |
+| IBM              | IBM4945 | T120             | 1600x1200 | 19.7 | 2007 | [321E347784AD](<Analog/IBM/IBM4945/321E347784AD>) |
+| IBM              | IBM7347 | IBM9511 T540     | 1024x768  | 14.9 |      | [12B0E5D6D800](<Analog/IBM/IBM7347/12B0E5D6D800>) |
 | IBM              | IBM7348 |                  | 1024x768  | 14.9 |      | [6E894042FB6D](<Analog/IBM/IBM7348/6E894042FB6D>) |
 | IBM              | IBMA151 |                  | 1024x768  | 14.9 |      | [39077BAA764E](<Analog/IBM/IBMA151/39077BAA764E>) |
 | IC Power         | ICP07E3 | CM2019           | 1280x1024 | 19.1 |      | [A1393BE02648](<Analog/IC Power/ICP07E3/A1393BE02648>) |
@@ -4849,6 +5018,7 @@ model and ID.
 | Iiyama           | IVM4826 | PLE480/481       | 1280x1024 | 19.1 | 2006 | [3A7F0B4D726B](<Analog/Iiyama/IVM4826/3A7F0B4D726B>) |
 | Iiyama           | IVM4826 | PLE480/481       | 1280x1024 | 19.1 |      | [3D423E91B32A](<Analog/Iiyama/IVM4826/3D423E91B32A>) |
 | Iiyama           | IVM4829 | PLE483           | 1280x1024 | 19.1 |      | [56AAF9C185B1](<Analog/Iiyama/IVM4829/56AAF9C185B1>) |
+| Iiyama           | IVM482C | PLE1900          | 1280x1024 | 19.1 | 2006 | [28F9A8604283](<Analog/Iiyama/IVM482C/28F9A8604283>) |
 | Iiyama           | IVM482C | PLE1900          | 1280x1024 | 19.1 |      | [693257247066](<Analog/Iiyama/IVM482C/693257247066>) |
 | Iiyama           | IVM482D | PLE1900WS        | 1440x900  | 19.1 | 2006 | [3CBE84A088FD](<Analog/Iiyama/IVM482D/3CBE84A088FD>) |
 | Iiyama           | IVM482F | PLX486           | 1280x1024 | 19.1 | 2006 | [6ED1414F3B26](<Analog/Iiyama/IVM482F/6ED1414F3B26>) |
@@ -4859,6 +5029,7 @@ model and ID.
 | Iiyama           | IVM4834 | PL1902W          | 1440x900  | 18.6 | 2008 | [4040A8DEB957](<Analog/Iiyama/IVM4834/4040A8DEB957>) |
 | Iiyama           | IVM4834 | PL1902W          | 1440x900  | 18.6 | 2007 | [A4B620087BD5](<Analog/Iiyama/IVM4834/A4B620087BD5>) |
 | Iiyama           | IVM483B | PL1908W          | 1680x1050 | 19.1 | 2008 | [8392E23D7999](<Analog/Iiyama/IVM483B/8392E23D7999>) |
+| Iiyama           | IVM483C | PL1906           | 1280x1024 | 19.1 | 2011 | [9587D5A230DC](<Analog/Iiyama/IVM483C/9587D5A230DC>) |
 | Iiyama           | IVM483C | PL1906           | 1280x1024 | 19.1 | 2010 | [75B87DD61E49](<Analog/Iiyama/IVM483C/75B87DD61E49>) |
 | Iiyama           | IVM483C | PL1906           | 1280x1024 | 19.1 | 2009 | [F1160BBD9CF6](<Analog/Iiyama/IVM483C/F1160BBD9CF6>) |
 | Iiyama           | IVM483D | PL1908W          | 1680x1050 | 19.1 | 2010 | [43264567BBA9](<Analog/Iiyama/IVM483D/43264567BBA9>) |
@@ -4868,6 +5039,7 @@ model and ID.
 | Iiyama           | IVM5398 | PLE2001WSV       | 1680x1050 | 20.0 | 2007 | [60DD683E53C2](<Analog/Iiyama/IVM5398/60DD683E53C2>) |
 | Iiyama           | IVM539C | PLE2008HDS       | 1600x900  | 20.3 | 2012 | [E8BEC62BE271](<Analog/Iiyama/IVM539C/E8BEC62BE271>) |
 | Iiyama           | IVM539C | PLE2008HDS       | 1600x900  | 20.3 | 2010 | [795D17DDA8EF](<Analog/Iiyama/IVM539C/795D17DDA8EF>) |
+| Iiyama           | IVM53A1 | PL2083H          | 1600x900  | 19.4 | 2017 | [A4D2F63BEADD](<Analog/Iiyama/IVM53A1/A4D2F63BEADD>) |
 | Iiyama           | IVM53A1 | PL2083H          | 1600x900  | 19.4 | 2015 | [D428F9A7C316](<Analog/Iiyama/IVM53A1/D428F9A7C316>) |
 | Iiyama           | IVM53A1 | PL2083H          | 1600x900  | 19.4 | 2014 | [1DE14BF90D6E](<Analog/Iiyama/IVM53A1/1DE14BF90D6E>) |
 | Iiyama           | IVM5600 | PLE2200WSV       | 1680x1050 | 22.0 | 2007 | [8910F0F95735](<Analog/Iiyama/IVM5600/8910F0F95735>) |
@@ -4886,7 +5058,7 @@ model and ID.
 | Iiyama           | IVM5609 | PLE2207WS        | 1680x1050 | 22.3 | 2009 | [07CC6308711A](<Analog/Iiyama/IVM5609/07CC6308711A>) |
 | Iiyama           | IVM5609 | PLE2207WS        | 1680x1050 | 22.3 | 2008 | [1B09FACB0581](<Analog/Iiyama/IVM5609/1B09FACB0581>) |
 | Iiyama           | IVM560A | PLE2208HDS       | 1920x1080 | 21.7 | 2011 | [A27C283E425B](<Analog/Iiyama/IVM560A/A27C283E425B>) |
-| Iiyama           | IVM560A | PLE2208HDS       | 1920x1080 | 21.7 | 2009 | [A804ADA07A33](<Analog/Iiyama/IVM560A/A804ADA07A33>) |
+| Iiyama           | IVM560A | PLE2208HDS       | 1920x1080 | 21.7 | 2009 | [8D7C7C45F2F2](<Analog/Iiyama/IVM560A/8D7C7C45F2F2>) |
 | Iiyama           | IVM560A | PLE2208HDS       | 1920x1080 | 21.7 | 2008 | [D3594554FEAE](<Analog/Iiyama/IVM560A/D3594554FEAE>) |
 | Iiyama           | IVM560B | PL2209HD         | 1920x1080 | 21.7 | 2010 | [7A687A4EFEBA](<Analog/Iiyama/IVM560B/7A687A4EFEBA>) |
 | Iiyama           | IVM560B | PL2209HD         | 1920x1080 | 21.7 | 2009 | [731F8720C2C2](<Analog/Iiyama/IVM560B/731F8720C2C2>) |
@@ -4896,11 +5068,13 @@ model and ID.
 | Iiyama           | IVM560D | PLE2407HDS       | 1920x1080 | 23.6 | 2011 | [D2FBE9C71134](<Analog/Iiyama/IVM560D/D2FBE9C71134>) |
 | Iiyama           | IVM560E | PLE2208HDSV      | 1920x1080 | 21.7 | 2009 | [C41321D98B06](<Analog/Iiyama/IVM560E/C41321D98B06>) |
 | Iiyama           | IVM560F | PL2206W          | 1680x1050 | 22.3 | 2009 | [07CE2E181486](<Analog/Iiyama/IVM560F/07CE2E181486>) |
+| Iiyama           | IVM5610 | PLE2407HDSV      | 1920x1080 | 23.6 | 2009 | [A6EA99D20676](<Analog/Iiyama/IVM5610/A6EA99D20676>) |
 | Iiyama           | IVM5613 | PLT2250MTS       | 1920x1080 | 21.7 | 2010 | [6FB6E820376C](<Analog/Iiyama/IVM5613/6FB6E820376C>) |
 | Iiyama           | IVM5616 | PLE2208HDD       | 1920x1080 | 21.7 | 2010 | [9984039445CC](<Analog/Iiyama/IVM5616/9984039445CC>) |
 | Iiyama           | IVM561D | PL2377           | 1920x1080 | 23.1 | 2012 | [D6875B4EDBB7](<Analog/Iiyama/IVM561D/D6875B4EDBB7>) |
 | Iiyama           | IVM561D | PL2377           | 1920x1080 | 23.1 | 2011 | [A9FAB2CBE5FF](<Analog/Iiyama/IVM561D/A9FAB2CBE5FF>) |
 | Iiyama           | IVM561F | PL2280W          | 1680x1050 | 22.0 | 2014 | [F4FE04DE0C86](<Analog/Iiyama/IVM561F/F4FE04DE0C86>) |
+| Iiyama           | IVM5620 | PL2280H          | 1920x1080 | 21.7 | 2016 | [7D4A3AAA1AE6](<Analog/Iiyama/IVM5620/7D4A3AAA1AE6>) |
 | Iiyama           | IVM5623 | PL2382H          | 1920x1080 | 23.1 | 2013 | [0F9127737FE8](<Analog/Iiyama/IVM5623/0F9127737FE8>) |
 | Iiyama           | IVM5624 | PL2278H          | 1920x1080 | 21.7 | 2014 | [610CBD195433](<Analog/Iiyama/IVM5624/610CBD195433>) |
 | Iiyama           | IVM5624 | PL2278H          | 1920x1080 | 21.7 | 2013 | [08064FB8FCE6](<Analog/Iiyama/IVM5624/08064FB8FCE6>) |
@@ -4916,6 +5090,7 @@ model and ID.
 | Iiyama           | IVM5632 | PL2282H          | 1920x1080 | 21.7 | 2017 | [1DF4F62D8144](<Analog/Iiyama/IVM5632/1DF4F62D8144>) |
 | Iiyama           | IVM5635 | PL2282H          | 1920x1080 | 21.7 | 2016 | [3F0339C9AA6F](<Analog/Iiyama/IVM5635/3F0339C9AA6F>) |
 | Iiyama           | IVM5638 | PLX2283H         | 1920x1080 | 21.7 | 2020 | [FC2FAE508E09](<Analog/Iiyama/IVM5638/FC2FAE508E09>) |
+| Iiyama           | IVM5638 | PLX2283H         | 1920x1080 | 21.7 | 2018 | [A018BEADBD01](<Analog/Iiyama/IVM5638/A018BEADBD01>) |
 | Iiyama           | IVM5639 | PL2395W          | 1920x1200 | 22.6 | 2020 | [5F6553C7E454](<Analog/Iiyama/IVM5639/5F6553C7E454>) |
 | Iiyama           | IVM5639 | PL2395W          | 1920x1200 | 22.6 | 2018 | [56087AE102DF](<Analog/Iiyama/IVM5639/56087AE102DF>) |
 | Iiyama           | IVM563B | PL2294H          | 1920x1080 | 21.7 | 2020 | [D1298033BACE](<Analog/Iiyama/IVM563B/D1298033BACE>) |
@@ -4931,13 +5106,16 @@ model and ID.
 | Iiyama           | IVM610F | X2485            | 1920x1200 | 24.0 | 2014 | [B500FAB326A4](<Analog/Iiyama/IVM610F/B500FAB326A4>) |
 | Iiyama           | IVM6110 | PL2473H          | 1920x1080 | 23.4 | 2014 | [1515DC0E696B](<Analog/Iiyama/IVM6110/1515DC0E696B>) |
 | Iiyama           | IVM6113 | PLE2483H         | 1920x1080 | 24.0 | 2016 | [B4388AEAFC9D](<Analog/Iiyama/IVM6113/B4388AEAFC9D>) |
+| Iiyama           | IVM6113 | PLE2483H         | 1920x1080 | 24.0 | 2015 | [AEA0716AD1C0](<Analog/Iiyama/IVM6113/AEA0716AD1C0>) |
 | Iiyama           | IVM6114 | PLX2483H         | 1920x1080 | 24.0 | 2015 | [E6F4ED6F1649](<Analog/Iiyama/IVM6114/E6F4ED6F1649>) |
 | Iiyama           | IVM6114 | PLX2483H         | 1920x1080 | 24.0 | 2014 | [7141F73FD2AB](<Analog/Iiyama/IVM6114/7141F73FD2AB>) |
 | Iiyama           | IVM6114 | PLX2483H         | 1920x1080 | 24.0 | 2013 | [79FE38DAC930](<Analog/Iiyama/IVM6114/79FE38DAC930>) |
 | Iiyama           | IVM6114 | PLX2483H         | 1920x1080 | 24.0 |      | [17FE0400046A](<Analog/Iiyama/IVM6114/17FE0400046A>) |
 | Iiyama           | IVM611A | PL2488H          | 1920x1080 | 24.0 | 2017 | [49189ADB42D8](<Analog/Iiyama/IVM611A/49189ADB42D8>) |
 | Iiyama           | IVM611A | PL2488H          | 1920x1080 | 24.0 | 2016 | [5F08477DE394](<Analog/Iiyama/IVM611A/5F08477DE394>) |
+| Iiyama           | IVM611D | PLX2481H         | 1920x1080 | 23.4 | 2018 | [794786EA6143](<Analog/Iiyama/IVM611D/794786EA6143>) |
 | Iiyama           | IVM611E | PLE2483H-DP      | 1920x1080 | 24.0 | 2018 | [763C192F98CB](<Analog/Iiyama/IVM611E/763C192F98CB>) |
+| Iiyama           | IVM611E | PLE2483H-DP      | 1920x1080 | 24.0 | 2017 | [733853391B5C](<Analog/Iiyama/IVM611E/733853391B5C>) |
 | Iiyama           | IVM6120 | PL2590           | 1920x1080 | 24.9 | 2015 | [E4477D6FC988](<Analog/Iiyama/IVM6120/E4477D6FC988>) |
 | Iiyama           | IVM6121 | PLE2482H         | 1920x1080 | 24.0 | 2017 | [C620D8AD7E5B](<Analog/Iiyama/IVM6121/C620D8AD7E5B>) |
 | Iiyama           | IVM6128 | X2483            | 1920x1080 | 24.0 |      | [451AFC237134](<Analog/Iiyama/IVM6128/451AFC237134>) |
@@ -4946,6 +5124,7 @@ model and ID.
 | Iiyama           | IVM612F | PL2492H          | 1920x1080 | 24.0 | 2019 | [726D2C0176D6](<Analog/Iiyama/IVM612F/726D2C0176D6>) |
 | Iiyama           | IVM612F | PL2492H          | 1920x1080 | 24.0 | 2018 | [3B5FB69D04E6](<Analog/Iiyama/IVM612F/3B5FB69D04E6>) |
 | Iiyama           | IVM612F | PL2492H          | 1920x1080 | 24.0 | 2017 | [02E456F22F9B](<Analog/Iiyama/IVM612F/02E456F22F9B>) |
+| Iiyama           | IVM6131 | PL2530H          | 1920x1080 | 24.3 | 2020 | [18CF61737403](<Analog/Iiyama/IVM6131/18CF61737403>) |
 | Iiyama           | IVM6131 | PL2530H          | 1920x1080 | 24.3 | 2018 | [94804827DA1F](<Analog/Iiyama/IVM6131/94804827DA1F>) |
 | Iiyama           | IVM6138 | PL2483H          | 1920x1080 | 24.0 | 2019 | [53205492087D](<Analog/Iiyama/IVM6138/53205492087D>) |
 | Iiyama           | IVM6138 | PL2483H          | 1920x1080 | 24.0 | 2018 | [7243FFED23E2](<Analog/Iiyama/IVM6138/7243FFED23E2>) |
@@ -4957,6 +5136,7 @@ model and ID.
 | Iiyama           | IVM6606 | PL2773HD         | 1920x1080 | 27.2 | 2011 | [CA899A3B4102](<Analog/Iiyama/IVM6606/CA899A3B4102>) |
 | Iiyama           | IVM6608 | PLX2780H         | 1920x1080 | 27.2 | 2012 | [57F3B9420A23](<Analog/Iiyama/IVM6608/57F3B9420A23>) |
 | Iiyama           | IVM660A | PL2773H          | 1920x1080 | 27.2 | 2013 | [1B47C7BC78BB](<Analog/Iiyama/IVM660A/1B47C7BC78BB>) |
+| Iiyama           | IVM660A | PL2773H          | 1920x1080 | 27.2 | 2012 | [2DDE95FFFD7C](<Analog/Iiyama/IVM660A/2DDE95FFFD7C>) |
 | Iiyama           | IVM660F | PL2735M          | 1920x1080 | 27.2 | 2013 | [724E915D8503](<Analog/Iiyama/IVM660F/724E915D8503>) |
 | Iiyama           | IVM6611 | PLX2783H         | 1920x1080 | 27.2 | 2017 | [6A654EA0CC34](<Analog/Iiyama/IVM6611/6A654EA0CC34>) |
 | Iiyama           | IVM6611 | PLX2783H         | 1920x1080 | 27.2 | 2016 | [4082705F4403](<Analog/Iiyama/IVM6611/4082705F4403>) |
@@ -4976,6 +5156,7 @@ model and ID.
 | Impression       | IMP1911 | R19W11           | 1440x900  | 19.1 | 2007 | [337CE0E47E76](<Analog/Impression/IMP1911/337CE0E47E76>) |
 | Impression       | IMP1911 | R19W11           | 1440x900  | 19.1 | 2006 | [333688B89F46](<Analog/Impression/IMP1911/333688B89F46>) |
 | Impression       | IMP19B0 | *19W1*A          | 1440x900  | 19.1 | 2008 | [385113F05052](<Analog/Impression/IMP19B0/385113F05052>) |
+| Impression       | IMP2202 | V7-R22W02        | 1680x1050 | 22.0 | 2007 | [65533B756312](<Analog/Impression/IMP2202/65533B756312>) |
 | Impression       | IMP2262 | *22W1*           | 1680x1050 | 21.7 | 2007 | [AEC0AFA3C69C](<Analog/Impression/IMP2262/AEC0AFA3C69C>) |
 | InnoLux Display  | INL0831 | LE1908           | 1280x1024 | 19.1 |      | [5E0184344A98](<Analog/InnoLux Display/INL0831/5E0184344A98>) |
 | InnoLux Display  | INL1708 | LE-1708          | 1280x1024 | 17.1 |      | [86C8151C4031](<Analog/InnoLux Display/INL1708/86C8151C4031>) |
@@ -4998,6 +5179,7 @@ model and ID.
 | Insignia         | BBY0C0B | NS-32D120A13     | 1680x1050 | 31.5 | 2012 | [395A70086FB0](<Analog/Insignia/BBY0C0B/395A70086FB0>) |
 | Insignia         | BBY1511 | DX-15L150A11     | 1360x768  | 15.3 | 2010 | [7B996727E382](<Analog/Insignia/BBY1511/7B996727E382>) |
 | Insignia         | BBY1911 | DX-19L150A11     | 1360x768  | 18.5 | 2010 | [2875A84A28E0](<Analog/Insignia/BBY1911/2875A84A28E0>) |
+| Insignia         | BBY1943 | DX19LD150A11     | 1360x768  | 18.5 | 2010 | [FE911A008E96](<Analog/Insignia/BBY1943/FE911A008E96>) |
 | Insignia         | BBY2220 |                  | 1920x1080 | 41.9 |      | [B091B8A5196A](<Analog/Insignia/BBY2220/B091B8A5196A>) |
 | Insignia         | BBY2413 | NS-24E340A13     | 1920x1080 | 23.4 | 2012 | [3EFDD7B62BF1](<Analog/Insignia/BBY2413/3EFDD7B62BF1>) |
 | Insignia         | BBY2841 |                  | 1680x1050 | 27.7 | 2013 | [B6D83A9FF1D6](<Analog/Insignia/BBY2841/B6D83A9FF1D6>) |
@@ -5028,12 +5210,14 @@ model and ID.
 | KTC              | KTC1852 | W9006S5          | 1360x768  | 18.5 | 2009 | [1A5F6E322D44](<Analog/KTC/KTC1852/1A5F6E322D44>) |
 | KTC              | KTC1990 | H-9005L          | 1280x1024 | 17.1 | 2007 | [2AF280A33AE2](<Analog/KTC/KTC1990/2AF280A33AE2>) |
 | KTC              | KTC1990 | K-9005L          | 1280x1024 | 17.1 | 2006 | [0B576C41F59B](<Analog/KTC/KTC1990/0B576C41F59B>) |
+| KTC              | KTC1992 | W9006S-N         | 1440x900  | 19.1 | 2009 | [5DEAA39C2EF3](<Analog/KTC/KTC1992/5DEAA39C2EF3>) |
 | KTC              | KTC1992 | i-W9007S         | 1440x900  | 19.1 | 2008 | [43D4C06B87BD](<Analog/KTC/KTC1992/43D4C06B87BD>) |
 | KTC              | KTC1992 | A-W9006S         | 1440x900  | 19.1 | 2007 | [FEC01DF4C69C](<Analog/KTC/KTC1992/FEC01DF4C69C>) |
 | KTC              | KTC2002 | W2010S1          | 1600x900  | 19.9 | 2010 | [66B0A71EC9F5](<Analog/KTC/KTC2002/66B0A71EC9F5>) |
 | KTC              | KTC2002 | W2009S           | 1600x900  | 19.9 | 2009 | [EEB3478FBC7B](<Analog/KTC/KTC2002/EEB3478FBC7B>) |
 | KTC              | KTC2202 | 22T32-H-ES       | 1680x1050 | 20.0 | 2009 | [D0CA16A176D2](<Analog/KTC/KTC2202/D0CA16A176D2>) |
 | KTC              | KTC2202 | M-W2208S2-D      | 1680x1050 | 20.0 | 2008 | [AB13ED649237](<Analog/KTC/KTC2202/AB13ED649237>) |
+| KTC              | KTC2300 | 23 MONITOR       | 1920x1080 | 23.1 | 2013 | [F792CAF0BFDE](<Analog/KTC/KTC2300/F792CAF0BFDE>) |
 | KTC              | KTC2302 | 23L13-H-AN       | 1920x1080 | 23.1 | 2012 | [3C5C870E33DE](<Analog/KTC/KTC2302/3C5C870E33DE>) |
 | KTC              | KTC2400 | 24'TV            | 1360x768  | 23.4 | 2014 | [B9D5C5BB88B9](<Analog/KTC/KTC2400/B9D5C5BB88B9>) |
 | KTC              | KTC3200 | 32T72-H-AN       | 1360x768  | 31.5 | 2011 | [124C5D781752](<Analog/KTC/KTC3200/124C5D781752>) |
@@ -5079,6 +5263,7 @@ model and ID.
 | Lenovo           | LEN0A14 | D186wA           | 1366x768  | 18.5 | 2009 | [E980AE534609](<Analog/Lenovo/LEN0A14/E980AE534609>) |
 | Lenovo           | LEN0A14 |                  | 1366x768  | 18.5 |      | [73982193CFF4](<Analog/Lenovo/LEN0A14/73982193CFF4>) |
 | Lenovo           | LEN0BD0 |                  | 1920x1080 | 23.1 | 2014 | [39BD9B84C01B](<Analog/Lenovo/LEN0BD0/39BD9B84C01B>) |
+| Lenovo           | LEN0BD0 |                  | 1920x1080 | 23.1 | 2013 | [33E481373114](<Analog/Lenovo/LEN0BD0/33E481373114>) |
 | Lenovo           | LEN0E7C |                  | 1920x1080 | 21.7 | 2012 | [F4DB3E612FB9](<Analog/Lenovo/LEN0E7C/F4DB3E612FB9>) |
 | Lenovo           | LEN0EAB | LI1921wA         | 1366x768  | 18.5 | 2013 | [8DDF5F8C52EE](<Analog/Lenovo/LEN0EAB/8DDF5F8C52EE>) |
 | Lenovo           | LEN0EC2 | LS2023wC         | 1600x900  | 19.9 | 2012 | [EE4129172A8A](<Analog/Lenovo/LEN0EC2/EE4129172A8A>) |
@@ -5086,6 +5271,7 @@ model and ID.
 | Lenovo           | LEN0F26 | L1710            | 1280x1024 | 17.1 | 2011 | [43506F06E351](<Analog/Lenovo/LEN0F26/43506F06E351>) |
 | Lenovo           | LEN0FAE | L2321x Wide      | 1920x1080 | 23.1 | 2011 | [2CA83E3528FA](<Analog/Lenovo/LEN0FAE/2CA83E3528FA>) |
 | Lenovo           | LEN0FAE | L2321x Wide      | 1920x1080 | 23.1 | 2010 | [E255EC7B302E](<Analog/Lenovo/LEN0FAE/E255EC7B302E>) |
+| Lenovo           | LEN10B8 | L2021wA          | 1600x900  | 19.9 | 2012 | [96C578DA5269](<Analog/Lenovo/LEN10B8/96C578DA5269>) |
 | Lenovo           | LEN1116 | LI2231wA         | 1920x1080 | 21.7 | 2013 | [035ABC606380](<Analog/Lenovo/LEN1116/035ABC606380>) |
 | Lenovo           | LEN1144 |                  | 1920x1200 | 24.0 | 2014 | [823B847C2D4E](<Analog/Lenovo/LEN1144/823B847C2D4E>) |
 | Lenovo           | LEN1144 |                  | 1920x1200 | 24.0 | 2013 | [16988D9E4820](<Analog/Lenovo/LEN1144/16988D9E4820>) |
@@ -5093,13 +5279,14 @@ model and ID.
 | Lenovo           | LEN1144 |                  | 1920x1200 | 24.0 | 2011 | [6AFA4406F741](<Analog/Lenovo/LEN1144/6AFA4406F741>) |
 | Lenovo           | LEN1144 |                  | 1920x1200 | 24.0 | 2010 | [1561A8885E9B](<Analog/Lenovo/LEN1144/1561A8885E9B>) |
 | Lenovo           | LEN1146 | L2240pwD         | 1680x1050 | 22.3 | 2009 | [354B2B905037](<Analog/Lenovo/LEN1146/354B2B905037>) |
+| Lenovo           | LEN1149 | LS1921wA         | 1366x768  | 18.5 | 2014 | [9980B7BE2BFB](<Analog/Lenovo/LEN1149/9980B7BE2BFB>) |
 | Lenovo           | LEN1149 | LS1921wA         | 1366x768  | 18.5 | 2011 | [B63045806DAF](<Analog/Lenovo/LEN1149/B63045806DAF>) |
 | Lenovo           | LEN1149 |                  | 1366x768  | 18.5 |      | [2D756B7CB028](<Analog/Lenovo/LEN1149/2D756B7CB028>) |
 | Lenovo           | LEN114C | L172             | 1280x1024 | 17.1 | 2008 | [16ADA38C6FE6](<Analog/Lenovo/LEN114C/16ADA38C6FE6>) |
 | Lenovo           | LEN114C | L172             | 1280x1024 | 17.1 | 2007 | [48612C798701](<Analog/Lenovo/LEN114C/48612C798701>) |
 | Lenovo           | LEN114F | L1900pA          | 1280x1024 | 18.8 | 2013 | [08B3991890FA](<Analog/Lenovo/LEN114F/08B3991890FA>) |
 | Lenovo           | LEN114F | L1900pA          | 1280x1024 | 18.8 | 2012 | [0DE9648C58C9](<Analog/Lenovo/LEN114F/0DE9648C58C9>) |
-| Lenovo           | LEN114F | L1900pA          | 1280x1024 | 18.8 | 2011 | [CEE4DFB75F04](<Analog/Lenovo/LEN114F/CEE4DFB75F04>) |
+| Lenovo           | LEN114F | L1900pA          | 1280x1024 | 18.8 | 2011 | [51556AAD4B0F](<Analog/Lenovo/LEN114F/51556AAD4B0F>) |
 | Lenovo           | LEN114F | L1900pA          | 1280x1024 | 18.8 | 2010 | [8C2E1C3C0A09](<Analog/Lenovo/LEN114F/8C2E1C3C0A09>) |
 | Lenovo           | LEN114F | L1900pA          | 1280x1024 | 18.8 | 2009 | [902C19DDB2BC](<Analog/Lenovo/LEN114F/902C19DDB2BC>) |
 | Lenovo           | LEN114F | L193pC           | 1280x1024 | 20.2 | 2008 | [2DD19B3714FC](<Analog/Lenovo/LEN114F/2DD19B3714FC>) |
@@ -5155,19 +5342,22 @@ model and ID.
 | Lenovo           | LEN24CB | L192p            | 1280x1024 | 20.2 | 2006 | [E32F7F045DAA](<Analog/Lenovo/LEN24CB/E32F7F045DAA>) |
 | Lenovo           | LEN520B | H61              | 1600x900  | 19.7 | 2011 | [736E175F16F9](<Analog/Lenovo/LEN520B/736E175F16F9>) |
 | Lenovo           | LEN60A1 |                  | 1920x1080 | 21.7 | 2014 | [2B269802B29A](<Analog/Lenovo/LEN60A1/2B269802B29A>) |
+| Lenovo           | LEN60A1 |                  | 1920x1080 | 21.7 | 2013 | [2D8E1B520447](<Analog/Lenovo/LEN60A1/2D8E1B520447>) |
 | Lenovo           | LEN60A2 |                  | 1920x1080 | 21.7 | 2014 | [E989CC199D68](<Analog/Lenovo/LEN60A2/E989CC199D68>) |
 | Lenovo           | LEN60A2 |                  | 1920x1080 | 21.7 |      | [8D1509BE1A0B](<Analog/Lenovo/LEN60A2/8D1509BE1A0B>) |
 | Lenovo           | LEN60A8 | LT2423wC         | 1920x1080 | 24.0 | 2015 | [36B7B7D3F90F](<Analog/Lenovo/LEN60A8/36B7B7D3F90F>) |
 | Lenovo           | LEN60AA | LT1913pA         | 1280x1024 | 19.1 | 2014 | [BE3376E0C654](<Analog/Lenovo/LEN60AA/BE3376E0C654>) |
+| Lenovo           | LEN60AB |                  | 1600x900  | 19.4 | 2013 | [0A6FA7BDE589](<Analog/Lenovo/LEN60AB/0A6FA7BDE589>) |
 | Lenovo           | LEN60B0 | E2323swA         | 1920x1080 | 24.2 | 2015 | [89F4D28C3103](<Analog/Lenovo/LEN60B0/89F4D28C3103>) |
 | Lenovo           | LEN60B0 | E2323swA         | 1920x1080 | 24.2 | 2014 | [3DFFD3E0FC56](<Analog/Lenovo/LEN60B0/3DFFD3E0FC56>) |
 | Lenovo           | LEN60B0 |                  | 1920x1080 | 24.2 |      | [EA5022853D38](<Analog/Lenovo/LEN60B0/EA5022853D38>) |
+| Lenovo           | LEN60B3 | LT1713p          | 1280x1024 | 17.1 | 2015 | [FBBA79E1B89C](<Analog/Lenovo/LEN60B3/FBBA79E1B89C>) |
 | Lenovo           | LEN60B8 | E1922 Wide       | 1366x768  | 18.5 | 2014 | [0065B72293EE](<Analog/Lenovo/LEN60B8/0065B72293EE>) |
 | Lenovo           | LEN60BB | E2002bA          | 1600x900  | 19.4 | 2019 | [7EA21519C638](<Analog/Lenovo/LEN60BB/7EA21519C638>) |
 | Lenovo           | LEN60BB | E2002bA          | 1600x900  | 19.4 | 2017 | [94CA017AD512](<Analog/Lenovo/LEN60BB/94CA017AD512>) |
 | Lenovo           | LEN60BC | E2003bA          | 1600x900  | 19.4 | 2020 | [E50431100D39](<Analog/Lenovo/LEN60BC/E50431100D39>) |
 | Lenovo           | LEN60BD | E1922s  Wide     | 1366x768  | 18.5 | 2018 | [AA582C8BA09C](<Analog/Lenovo/LEN60BD/AA582C8BA09C>) |
-| Lenovo           | LEN60BD | E1922s  Wide     | 1366x768  | 18.5 | 2015 | [565D580E0F9D](<Analog/Lenovo/LEN60BD/565D580E0F9D>) |
+| Lenovo           | LEN60BD | E1922s  Wide     | 1366x768  | 18.5 | 2015 | [09F611D11FF8](<Analog/Lenovo/LEN60BD/09F611D11FF8>) |
 | Lenovo           | LEN60C2 | T2014A           | 1600x900  | 19.4 | 2015 | [1F443C115502](<Analog/Lenovo/LEN60C2/1F443C115502>) |
 | Lenovo           | LEN60C7 | T2324pA          | 1920x1080 | 23.1 | 2016 | [426A73C5E2F5](<Analog/Lenovo/LEN60C7/426A73C5E2F5>) |
 | Lenovo           | LEN60C7 | T2324pA          | 1920x1080 | 23.1 | 2015 | [003EBBDDC967](<Analog/Lenovo/LEN60C7/003EBBDDC967>) |
@@ -5183,7 +5373,7 @@ model and ID.
 | Lenovo           | LEN60DF | E2054A           | 1440x900  | 19.4 | 2020 | [FC2C9B6A69EE](<Analog/Lenovo/LEN60DF/FC2C9B6A69EE>) |
 | Lenovo           | LEN60DF | E2054A           | 1440x900  | 19.4 | 2019 | [969287CEDEE8](<Analog/Lenovo/LEN60DF/969287CEDEE8>) |
 | Lenovo           | LEN60DF | E2054A           | 1440x900  | 19.4 | 2018 | [00F509F04A3A](<Analog/Lenovo/LEN60DF/00F509F04A3A>) |
-| Lenovo           | LEN60DF | E2054A           | 1440x900  | 19.4 | 2016 | [9CF423A0A3BE](<Analog/Lenovo/LEN60DF/9CF423A0A3BE>) |
+| Lenovo           | LEN60DF | E2054A           | 1440x900  | 19.4 | 2016 | [52C3BC8B9EEE](<Analog/Lenovo/LEN60DF/52C3BC8B9EEE>) |
 | Lenovo           | LEN60EA | T2224r           | 1920x1080 | 21.7 | 2019 | [227B0F3B2FC0](<Analog/Lenovo/LEN60EA/227B0F3B2FC0>) |
 | Lenovo           | LEN60EB | T2224dA          | 1920x1080 | 21.7 | 2019 | [76DEC45D2270](<Analog/Lenovo/LEN60EB/76DEC45D2270>) |
 | Lenovo           | LEN60EB | T2224dA          | 1920x1080 | 21.7 | 2017 | [3633951A891D](<Analog/Lenovo/LEN60EB/3633951A891D>) |
@@ -5204,15 +5394,19 @@ model and ID.
 | Lenovo           | LEN61C9 | S22e-19          | 1920x1080 | 21.7 | 2020 | [95A643408F1A](<Analog/Lenovo/LEN61C9/95A643408F1A>) |
 | Lenovo           | LEN61C9 | S22e-19          | 1920x1080 | 21.7 | 2018 | [A301F300A82C](<Analog/Lenovo/LEN61C9/A301F300A82C>) |
 | Lenovo           | LEN61CA | S24e-10          | 1920x1080 | 24.0 | 2019 | [EE98F0C3DA7F](<Analog/Lenovo/LEN61CA/EE98F0C3DA7F>) |
+| Lenovo           | LEN61CA | S24e-10          | 1920x1080 | 24.0 | 2018 | [0005DB16EC43](<Analog/Lenovo/LEN61CA/0005DB16EC43>) |
 | Lenovo           | LEN61CE | T24i-10          | 1920x1080 | 24.0 | 2019 | [FCC604901968](<Analog/Lenovo/LEN61CE/FCC604901968>) |
+| Lenovo           | LEN61DB | T25d-10          | 1920x1200 | 25.1 | 2021 | [44BB3BC53161](<Analog/Lenovo/LEN61DB/44BB3BC53161>) |
 | Lenovo           | LEN61F6 | T23i-20          | 1920x1080 | 23.1 | 2020 | [C6EBA9FDE1E9](<Analog/Lenovo/LEN61F6/C6EBA9FDE1E9>) |
 | Lenovo           | LEN61F7 | T24i-20          | 1920x1080 | 24.0 | 2020 | [77F110609C3C](<Analog/Lenovo/LEN61F7/77F110609C3C>) |
+| Lenovo           | LEN62A0 | D24-17           | 1920x1080 | 23.4 | 2020 | [15B8BA702999](<Analog/Lenovo/LEN62A0/15B8BA702999>) |
 | Lenovo           | LEN62A8 | C24-20           | 1920x1080 | 24.0 | 2020 | [B39B61EDDD56](<Analog/Lenovo/LEN62A8/B39B61EDDD56>) |
 | Lenovo           | LEN62AE | S24e-20          | 1920x1080 | 24.0 | 2021 | [ABA54AD48CF7](<Analog/Lenovo/LEN62AE/ABA54AD48CF7>) |
 | Lenovo           | LEN65A1 |                  | 1366x768  | 18.5 | 2015 | [8D64BF957DD8](<Analog/Lenovo/LEN65A1/8D64BF957DD8>) |
 | Lenovo           | LEN65A1 |                  | 1366x768  | 18.5 | 2014 | [2EF628EB6925](<Analog/Lenovo/LEN65A1/2EF628EB6925>) |
 | Lenovo           | LEN65A1 |                  | 1366x768  | 18.5 |      | [084E9E30C771](<Analog/Lenovo/LEN65A1/084E9E30C771>) |
 | Lenovo           | LEN65A7 |                  | 1920x1080 | 23.1 | 2015 | [E58DF2171EF4](<Analog/Lenovo/LEN65A7/E58DF2171EF4>) |
+| Lenovo           | LEN65A8 | LI2032wA         | 1600x900  | 19.4 | 2017 | [CC1FD42ED0C1](<Analog/Lenovo/LEN65A8/CC1FD42ED0C1>) |
 | Lenovo           | LEN65A8 | LI2032 Wide      | 1600x900  | 19.4 | 2015 | [ADAF94FEA81E](<Analog/Lenovo/LEN65A8/ADAF94FEA81E>) |
 | Lenovo           | LEN65A9 | LS2033wH         | 1600x900  | 19.9 | 2015 | [9D4B58852EC1](<Analog/Lenovo/LEN65A9/9D4B58852EC1>) |
 | Lenovo           | LEN65AA | LS2014 Wide      | 1600x900  | 19.4 | 2016 | [A01EBF789FBD](<Analog/Lenovo/LEN65AA/A01EBF789FBD>) |
@@ -5241,6 +5435,7 @@ model and ID.
 | Lenovo           | LEN66B8 | D27-30           | 1920x1080 | 27.2 | 2021 | [058BB60E9D39](<Analog/Lenovo/LEN66B8/058BB60E9D39>) |
 | Lenovo           | LEN66B8 | D27-30           | 1920x1080 | 27.2 | 2020 | [0565D34DC1B3](<Analog/Lenovo/LEN66B8/0565D34DC1B3>) |
 | Lenovo           | LEN66BC | L24e-30          | 1920x1080 | 24.0 | 2021 | [CF672137CB9B](<Analog/Lenovo/LEN66BC/CF672137CB9B>) |
+| Lenovo           | LEN66BE | L27e-30          | 1920x1080 | 27.2 | 2022 | [7B44D0EA5CFB](<Analog/Lenovo/LEN66BE/7B44D0EA5CFB>) |
 | Lenovo           | LEN6920 | L192 Wide        | 1440x900  | 18.6 | 2008 | [FA3AD98F8E37](<Analog/Lenovo/LEN6920/FA3AD98F8E37>) |
 | Lenovo           | LEN6920 | L192 Wide        | 1440x900  | 18.6 | 2007 | [288C3515BD38](<Analog/Lenovo/LEN6920/288C3515BD38>) |
 | Lenovo           | LEN6920 | L192 Wide        | 1440x900  | 18.6 | 2006 | [7F8CC07D0F42](<Analog/Lenovo/LEN6920/7F8CC07D0F42>) |
@@ -5261,12 +5456,14 @@ model and ID.
 | Lite-On          | LTN022D | M17AAQ/C         | 1280x1024 | 17.1 |      | [02707F17F148](<Analog/Lite-On/LTN022D/02707F17F148>) |
 | Lite-On          | LTN023F | R17AAC/S         | 1280x1024 | 17.1 | 2006 | [554ECB38BF7D](<Analog/Lite-On/LTN023F/554ECB38BF7D>) |
 | Lite-On          | LTN1502 | B1570MNST        | 1280x1024 | 13.5 |      | [2AC33244D0D8](<Analog/Lite-On/LTN1502/2AC33244D0D8>) |
+| Lite-On          | LTN1717 | e1786FNST        | 1280x1024 | 15.7 |      | [53229772211A](<Analog/Lite-On/LTN1717/53229772211A>) |
 | Lite-On          | LTN171A | H1786FNST        | 1280x1024 | 15.7 |      | [FFD24519FFD9](<Analog/Lite-On/LTN171A/FFD24519FFD9>) |
 | MECER            | MUS9890 | TJ899            | 1280x1024 | 19.1 | 2008 | [0ADDC6D2CD3E](<Analog/MECER/MUS9890/0ADDC6D2CD3E>) |
 | MECER            | MUS9996 | TW999            | 1440x900  | 19.1 | 2006 | [0F42D3F17B06](<Analog/MECER/MUS9996/0F42D3F17B06>) |
 | MSI              | MAG1901 |                  | 1280x1024 | 19.1 | 2006 | [405C095C7868](<Analog/MSI/MAG1901/405C095C7868>) |
 | MSI              | MSI2472 | AIO PC           | 1366x768  | 18.5 | 2010 | [A0FC00712347](<Analog/MSI/MSI2472/A0FC00712347>) |
 | MSI              | MSI2482 | AIO PC           | 1600x900  | 19.9 | 2011 | [61A3B8CC3BA8](<Analog/MSI/MSI2482/61A3B8CC3BA8>) |
+| MSI              | MSI2482 | AIO PC           | 1920x1080 | 21.1 | 2010 | [33BBD4DD4F18](<Analog/MSI/MSI2482/33BBD4DD4F18>) |
 | MSI              | MSI30A1 | MP242            | 1920x1080 | 24.0 | 2020 | [353FA999D6EC](<Analog/MSI/MSI30A1/353FA999D6EC>) |
 | MSI              | MSI3BA9 | MP241            | 1920x1080 | 23.8 | 2020 | [E79CBF797D11](<Analog/MSI/MSI3BA9/E79CBF797D11>) |
 | MSI              | MSI7459 | 00 Wind Net      | 1600x900  | 19.9 | 2009 | [3B38AA9459D8](<Analog/MSI/MSI7459/3B38AA9459D8>) |
@@ -5285,6 +5482,7 @@ model and ID.
 | Medion           | MED0902 | MD20329          | 1600x900  | 19.9 | 2012 | [FC23FBCB26AF](<Analog/Medion/MED0902/FC23FBCB26AF>) |
 | Medion           | MED09A6 |                  | 1280x1024 | 19.1 |      | [0E2CA1A3D945](<Analog/Medion/MED09A6/0E2CA1A3D945>) |
 | Medion           | MED11A7 |                  | 1024x768  | 14.9 |      | [55AA84EFCA45](<Analog/Medion/MED11A7/55AA84EFCA45>) |
+| Medion           | MED256C | MD7415TE         | 1024x768  | 14.9 |      | [4EE639F48235](<Analog/Medion/MED256C/4EE639F48235>) |
 | Medion           | MED3601 | MD 20122         | 1680x1050 | 21.7 | 2010 | [133EC875D10A](<Analog/Medion/MED3601/133EC875D10A>) |
 | Medion           | MED3601 | MD 20122         | 1680x1050 | 21.7 | 2009 | [AD68E1D95B57](<Analog/Medion/MED3601/AD68E1D95B57>) |
 | Medion           | MED3622 | MD 20165         | 1920x1080 | 21.9 | 2010 | [4A58E047034F](<Analog/Medion/MED3622/4A58E047034F>) |
@@ -5298,11 +5496,15 @@ model and ID.
 | Medion           | MED3671 | MD20666          | 1920x1080 | 23.1 | 2012 | [BC397E0BEC96](<Analog/Medion/MED3671/BC397E0BEC96>) |
 | Medion           | MED3674 | MD20666          | 1920x1080 | 24.2 | 2012 | [62B65EA94F10](<Analog/Medion/MED3674/62B65EA94F10>) |
 | Medion           | MED3683 | MD 20888         | 1920x1080 | 23.1 | 2012 | [F3AB44EF83B0](<Analog/Medion/MED3683/F3AB44EF83B0>) |
+| Medion           | MED3689 | MD 20889         | 1920x1080 | 23.1 | 2012 | [CB00B876B4FE](<Analog/Medion/MED3689/CB00B876B4FE>) |
 | Medion           | MED36A1 | MD 20462         | 1920x1080 | 23.4 | 2013 | [CCAE20FBEB3F](<Analog/Medion/MED36A1/CCAE20FBEB3F>) |
 | Medion           | MED36B4 | MD20433          | 1920x1080 | 23.4 | 2014 | [BDB4746B8A51](<Analog/Medion/MED36B4/BDB4746B8A51>) |
 | Medion           | MED36B4 | MD20433          | 1920x1080 | 23.4 | 2013 | [CF3DE3036627](<Analog/Medion/MED36B4/CF3DE3036627>) |
+| Medion           | MED36D7 | MD20435          | 1920x1080 | 23.4 | 2015 | [2ED9FD53CED8](<Analog/Medion/MED36D7/2ED9FD53CED8>) |
 | Medion           | MED36E0 | MD20436          | 1920x1080 | 23.4 |      | [64EB3EABDE6C](<Analog/Medion/MED36E0/64EB3EABDE6C>) |
+| Medion           | MED36E4 | MD20429          | 1920x1080 | 23.4 | 2014 | [52680F0CD823](<Analog/Medion/MED36E4/52680F0CD823>) |
 | Medion           | MED3808 | MD22320          | 1920x1080 | 31.5 | 2015 | [120DF32CBCE7](<Analog/Medion/MED3808/120DF32CBCE7>) |
+| Medion           | MED3901 | MD 20069         | 1440x900  | 19.1 | 2009 | [F3D13D911B1F](<Analog/Medion/MED3901/F3D13D911B1F>) |
 | Medion           | MED3905 | MD 20089         | 1366x768  | 18.5 | 2009 | [1811A5E7C04E](<Analog/Medion/MED3905/1811A5E7C04E>) |
 | Medion           | MED3909 | MD 20119         | 1440x900  | 19.1 | 2009 | [CCCEF2B00B26](<Analog/Medion/MED3909/CCCEF2B00B26>) |
 | Medion           | MED3911 | MD 20220         | 1600x900  | 19.9 | 2009 | [0687E66CF8EB](<Analog/Medion/MED3911/0687E66CF8EB>) |
@@ -5343,6 +5545,8 @@ model and ID.
 | Medion           | MEDD7B7 | MD41977FQ        | 1280x1024 | 17.1 |      | [340B6D86FB9B](<Analog/Medion/MEDD7B7/340B6D86FB9B>) |
 | Megavision       | ATE8506 | 17 ANALOG MON... | 1280x1024 | 18.2 |      | [CF314FCD3D59](<Analog/Megavision/ATE8506/CF314FCD3D59>) |
 | Mi               | XMI23C3 | Monitor          | 1920x1080 | 23.8 | 2021 | [0EB6715EC978](<Analog/Mi/XMI23C3/0EB6715EC978>) |
+| Mi               | XMI23C3 | Monitor          | 1920x1080 | 23.8 | 2020 | [B031E5524E2E](<Analog/Mi/XMI23C3/B031E5524E2E>) |
+| Mi               | XMIB004 | 27 NFGL          | 1920x1080 | 27.0 | 2021 | [F63320E0CC5A](<Analog/Mi/XMIB004/F63320E0CC5A>) |
 | MiTAC            | MTC0289 | MON-SIS289       | 1920x1080 | 42.1 | 2012 | [D10B7A2CCCA3](<Analog/MiTAC/MTC0289/D10B7A2CCCA3>) |
 | MiTAC            | MTC03D7 | LCD MONITOR      | 1920x1080 | 19.1 | 2010 | [696DE55DF911](<Analog/MiTAC/MTC03D7/696DE55DF911>) |
 | MiTAC            | MTC03D7 | LCD MONITOR      | 1440x900  | 19.1 | 2009 | [E7FC07CF1473](<Analog/MiTAC/MTC03D7/E7FC07CF1473>) |
@@ -5390,6 +5594,7 @@ model and ID.
 | NEC              | NEC65C5 | LS15             | 1024x768  | 15.2 |      | [5AEACAF0C08A](<Analog/NEC/NEC65C5/5AEACAF0C08A>) |
 | NEC              | NEC65C6 | LCD1550V         | 1024x768  | 14.9 |      | [228C2C245FE9](<Analog/NEC/NEC65C6/228C2C245FE9>) |
 | NEC              | NEC65D1 | LCD1850E         | 1280x1024 | 18.2 |      | [8F29D6532BDB](<Analog/NEC/NEC65D1/8F29D6532BDB>) |
+| NEC              | NEC65D7 | LCD1545V         | 1024x768  | 14.9 |      | [0F9CA1FE08F1](<Analog/NEC/NEC65D7/0F9CA1FE08F1>) |
 | NEC              | NEC65EA |                  | 1280x1024 | 17.1 |      | [24CF74DB0475](<Analog/NEC/NEC65EA/24CF74DB0475>) |
 | NEC              | NEC65ED |                  | 1280x1024 | 17.1 |      | [27ADE77CE38E](<Analog/NEC/NEC65ED/27ADE77CE38E>) |
 | NEC              | NEC65EE | LCD1760V         | 1280x1024 | 17.1 |      | [C63794F3D570](<Analog/NEC/NEC65EE/C63794F3D570>) |
@@ -5423,6 +5628,7 @@ model and ID.
 | NEC              | NEC6664 | LCD1770NX        | 1280x1024 | 17.1 | 2007 | [386129027964](<Analog/NEC/NEC6664/386129027964>) |
 | NEC              | NEC6664 | LCD1770NX        | 1280x1024 | 17.1 | 2006 | [67342EEB4299](<Analog/NEC/NEC6664/67342EEB4299>) |
 | NEC              | NEC6664 | LCD1770NX        | 1280x1024 | 17.1 |      | [1AB5C1B02987](<Analog/NEC/NEC6664/1AB5C1B02987>) |
+| NEC              | NEC6666 | LCD1770NXM       | 1280x1024 | 17.1 |      | [8DCB333FA116](<Analog/NEC/NEC6666/8DCB333FA116>) |
 | NEC              | NEC6674 | LCD4610          | 1600x1200 | 46.0 | 2006 | [6565DFD4BD25](<Analog/NEC/NEC6674/6565DFD4BD25>) |
 | NEC              | NEC6677 | LCD72XM          | 1280x1024 | 17.1 | 2006 | [5918342A96CE](<Analog/NEC/NEC6677/5918342A96CE>) |
 | NEC              | NEC6677 | LCD72XM          | 1280x1024 | 17.1 |      | [43456481342A](<Analog/NEC/NEC6677/43456481342A>) |
@@ -5431,7 +5637,7 @@ model and ID.
 | NEC              | NEC667B | LCD2070NX        | 1600x1200 | 20.2 | 2007 | [94E328C1BA5A](<Analog/NEC/NEC667B/94E328C1BA5A>) |
 | NEC              | NEC667B | LCD2070NX        | 1600x1200 | 20.2 | 2006 | [D626674C9DF0](<Analog/NEC/NEC667B/D626674C9DF0>) |
 | NEC              | NEC6685 | LCD1970GX        | 1280x1024 | 19.1 |      | [043BDA22F23F](<Analog/NEC/NEC6685/043BDA22F23F>) |
-| NEC              | NEC668E | LCD1970NXp       | 1280x1024 | 19.1 | 2008 | [FE503E871E95](<Analog/NEC/NEC668E/FE503E871E95>) |
+| NEC              | NEC668E | LCD1970NXp       | 1280x1024 | 19.1 | 2008 | [B43608AD86AE](<Analog/NEC/NEC668E/B43608AD86AE>) |
 | NEC              | NEC668E | LCD1970NXp       | 1280x1024 | 19.1 | 2007 | [1C9291928276](<Analog/NEC/NEC668E/1C9291928276>) |
 | NEC              | NEC668E | LCD1970NXp       | 1280x1024 | 19.1 |      | [074DCBBE7812](<Analog/NEC/NEC668E/074DCBBE7812>) |
 | NEC              | NEC6690 | LCD1970VX        | 1280x1024 | 19.1 | 2006 | [89BDBD55127E](<Analog/NEC/NEC6690/89BDBD55127E>) |
@@ -5455,7 +5661,7 @@ model and ID.
 | NEC              | NEC66BD | LCD2190UXp       | 1600x1200 | 21.1 | 2008 | [30AEE67F90C1](<Analog/NEC/NEC66BD/30AEE67F90C1>) |
 | NEC              | NEC66C0 | LCD175VXM+       | 1280x1024 | 17.1 | 2009 | [803942609518](<Analog/NEC/NEC66C0/803942609518>) |
 | NEC              | NEC66C0 | LCD175VXM+       | 1280x1024 | 17.1 | 2008 | [23057BD195EE](<Analog/NEC/NEC66C0/23057BD195EE>) |
-| NEC              | NEC66C0 | LCD175VXM+       | 1280x1024 | 17.1 | 2006 | [EC1A91EF2720](<Analog/NEC/NEC66C0/EC1A91EF2720>) |
+| NEC              | NEC66C0 | LCD175VXM+       | 1280x1024 | 17.1 | 2006 | [E1129484BC46](<Analog/NEC/NEC66C0/E1129484BC46>) |
 | NEC              | NEC66C1 | LCD195VXM+       | 1280x1024 | 19.1 | 2009 | [B68306A33899](<Analog/NEC/NEC66C1/B68306A33899>) |
 | NEC              | NEC66C1 | LCD195VXM+       | 1280x1024 | 19.1 | 2008 | [244D8011790F](<Analog/NEC/NEC66C1/244D8011790F>) |
 | NEC              | NEC66C1 | LCD195VXM+       | 1280x1024 | 19.1 | 2007 | [0CECED64E26F](<Analog/NEC/NEC66C1/0CECED64E26F>) |
@@ -5464,7 +5670,7 @@ model and ID.
 | NEC              | NEC66C2 | LCD73V           | 1280x1024 | 17.1 | 2006 | [2C5B44A552A4](<Analog/NEC/NEC66C2/2C5B44A552A4>) |
 | NEC              | NEC66C3 | LCD73VM          | 1280x1024 | 17.1 | 2008 | [56025FFEFBC8](<Analog/NEC/NEC66C3/56025FFEFBC8>) |
 | NEC              | NEC66C3 | LCD73VM          | 1280x1024 | 17.1 | 2007 | [41B60B2D934A](<Analog/NEC/NEC66C3/41B60B2D934A>) |
-| NEC              | NEC66C3 | LCD73VM          | 1280x1024 | 17.1 | 2006 | [12ECC2138DE2](<Analog/NEC/NEC66C3/12ECC2138DE2>) |
+| NEC              | NEC66C3 | LCD73VM          | 1280x1024 | 17.1 | 2006 | [098E8ED03D4A](<Analog/NEC/NEC66C3/098E8ED03D4A>) |
 | NEC              | NEC66C4 | LCD93V           | 1280x1024 | 19.1 | 2007 | [00742016B16D](<Analog/NEC/NEC66C4/00742016B16D>) |
 | NEC              | NEC66C4 | LCD93V           | 1280x1024 | 19.1 | 2006 | [DA2E6CB20552](<Analog/NEC/NEC66C4/DA2E6CB20552>) |
 | NEC              | NEC66C5 | LCD93VM          | 1280x1024 | 19.1 | 2008 | [028A78E26A29](<Analog/NEC/NEC66C5/028A78E26A29>) |
@@ -5511,7 +5717,8 @@ model and ID.
 | NEC              | NEC6771 | V221W            | 1920x1080 | 21.7 |      | [3C875386A172](<Analog/NEC/NEC6771/3C875386A172>) |
 | NEC              | NEC6772 | EA231WMi         | 1920x1080 | 23.1 | 2009 | [E1223AB98E29](<Analog/NEC/NEC6772/E1223AB98E29>) |
 | NEC              | NEC6777 | E222W            | 1680x1050 | 22.0 | 2013 | [27FA02D19463](<Analog/NEC/NEC6777/27FA02D19463>) |
-| NEC              | NEC6777 | E222W            | 1680x1050 | 22.0 | 2012 | [9ADB9E11D046](<Analog/NEC/NEC6777/9ADB9E11D046>) |
+| NEC              | NEC6777 | E222W            | 1680x1050 | 22.0 | 2012 | [35FA47A6E770](<Analog/NEC/NEC6777/35FA47A6E770>) |
+| NEC              | NEC6777 | E222W            | 1680x1050 | 22.0 | 2011 | [4000D896A99A](<Analog/NEC/NEC6777/4000D896A99A>) |
 | NEC              | NEC6777 | E222W            | 1680x1050 | 22.0 | 2010 | [2505EE4F638E](<Analog/NEC/NEC6777/2505EE4F638E>) |
 | NEC              | NEC6778 | EA221WMe         | 1680x1050 | 22.0 | 2012 | [7322C7758898](<Analog/NEC/NEC6778/7322C7758898>) |
 | NEC              | NEC6778 | EA221WMe         | 1680x1050 | 22.0 | 2011 | [9B1593D95762](<Analog/NEC/NEC6778/9B1593D95762>) |
@@ -5539,6 +5746,7 @@ model and ID.
 | NEC              | NEC6863 | EA243WM          | 1920x1200 | 24.0 | 2011 | [74668D74ABE1](<Analog/NEC/NEC6863/74668D74ABE1>) |
 | NEC              | NEC688F | EA223WM          | 1680x1050 | 22.0 | 2015 | [C594DE2E74FD](<Analog/NEC/NEC688F/C594DE2E74FD>) |
 | NEC              | NEC688F | EA223WM          | 1680x1050 | 22.0 | 2014 | [E8E8C6346837](<Analog/NEC/NEC688F/E8E8C6346837>) |
+| NEC              | NEC688F | EA223WM          | 1680x1050 | 22.0 | 2013 | [0C48BE04BB78](<Analog/NEC/NEC688F/0C48BE04BB78>) |
 | NEC              | NEC688F | EA223WM          | 1680x1050 | 22.0 | 2012 | [341E6C98E21D](<Analog/NEC/NEC688F/341E6C98E21D>) |
 | NEC              | NEC68BF | EA224WMi         | 1920x1080 | 21.7 | 2012 | [52BA8E4DD6D7](<Analog/NEC/NEC68BF/52BA8E4DD6D7>) |
 | NEC              | NEC68D4 | EA244WMi         | 1920x1200 | 24.0 | 2015 | [51EB9F3DDD8A](<Analog/NEC/NEC68D4/51EB9F3DDD8A>) |
@@ -5546,6 +5754,7 @@ model and ID.
 | NEC              | NEC68D4 | EA244WMi         | 1920x1200 | 24.0 | 2013 | [BB1640B91067](<Analog/NEC/NEC68D4/BB1640B91067>) |
 | NEC              | NEC691E | EA234WMi         | 1920x1080 | 23.1 | 2015 | [27898B32D390](<Analog/NEC/NEC691E/27898B32D390>) |
 | NEC              | NEC694E | E224Wi           | 1920x1080 | 21.7 | 2013 | [F2550D96522F](<Analog/NEC/NEC694E/F2550D96522F>) |
+| NEC              | NEC6956 | EA193Mi          | 1280x1024 | 18.8 | 2016 | [77FE5DA0F52F](<Analog/NEC/NEC6956/77FE5DA0F52F>) |
 | NEC              | NEC7974 | VT80Series       | 1600x1200 |      |      | [372A968EB7AE](<Analog/NEC/NEC7974/372A968EB7AE>) |
 | NEC              | NEC797D | VT90Series       | 1600x1200 |      | 2006 | [32D9D8E45066](<Analog/NEC/NEC797D/32D9D8E45066>) |
 | NEC              | NECA4B4 | PX-42VR5         | 1600x1200 | 41.6 |      | [59FA23A79147](<Analog/NEC/NECA4B4/59FA23A79147>) |
@@ -5556,6 +5765,7 @@ model and ID.
 | NECCI            | NCI5040 |                  | 1280x1024 | 19.1 |      | [59D7C78440AC](<Analog/NECCI/NCI5040/59D7C78440AC>) |
 | NECCI            | NCI5041 |                  | 1280x1024 | 17.1 |      | [7DF7CDC45833](<Analog/NECCI/NCI5041/7DF7CDC45833>) |
 | NECCI            | NCI5043 |                  | 1280x1024 | 17.1 |      | [4087B1319A92](<Analog/NECCI/NCI5043/4087B1319A92>) |
+| NECCI            | NCI5050 |                  | 1440x900  | 19.1 |      | [619A78CBFEDF](<Analog/NECCI/NCI5050/619A78CBFEDF>) |
 | NFREN            | NFC1537 | NF-1500MAES      | 1024x768  | 14.9 |      | [10495DB58E46](<Analog/NFREN/NFC1537/10495DB58E46>) |
 | NFREN            | NFC28E0 |                  | 1280x1024 | 17.1 |      | [1C6B61B1B687](<Analog/NFREN/NFC28E0/1C6B61B1B687>) |
 | Neso             | NSO5605 | LD530            | 1024x768  | 14.9 |      | [BC481D24E0CF](<Analog/Neso/NSO5605/BC481D24E0CF>) |
@@ -5587,7 +5797,7 @@ model and ID.
 | Packard Bell     | PKB00C2 | Viseo 200Ws      | 1600x900  | 19.9 | 2010 | [59D78599F35D](<Analog/Packard Bell/PKB00C2/59D78599F35D>) |
 | Packard Bell     | PKB00C2 | Viseo 200Ws      | 1600x900  | 19.9 | 2009 | [C752E31881B4](<Analog/Packard Bell/PKB00C2/C752E31881B4>) |
 | Packard Bell     | PKB00D0 | Viseo 160W       | 1366x768  | 15.3 | 2010 | [F2DF181220CC](<Analog/Packard Bell/PKB00D0/F2DF181220CC>) |
-| Packard Bell     | PKB00DF | Viseo 190W       | 1366x768  | 18.5 | 2011 | [E9CB242ADD01](<Analog/Packard Bell/PKB00DF/E9CB242ADD01>) |
+| Packard Bell     | PKB00DF | Viseo 190W       | 1366x768  | 18.5 | 2011 | [44E110362225](<Analog/Packard Bell/PKB00DF/44E110362225>) |
 | Packard Bell     | PKB00DF | Viseo 190W       | 1366x768  | 18.5 | 2009 | [683EA82EF785](<Analog/Packard Bell/PKB00DF/683EA82EF785>) |
 | Packard Bell     | PKB00F5 |                  | 1920x1080 | 23.4 | 2010 | [0B0748545EED](<Analog/Packard Bell/PKB00F5/0B0748545EED>) |
 | Packard Bell     | PKB00F5 |                  | 1920x1080 | 23.4 | 2009 | [424161DF1AF2](<Analog/Packard Bell/PKB00F5/424161DF1AF2>) |
@@ -5606,7 +5816,7 @@ model and ID.
 | Packard Bell     | PKB0375 | Viseo193DX       | 1366x768  | 18.5 | 2013 | [27E7FA004974](<Analog/Packard Bell/PKB0375/27E7FA004974>) |
 | Packard Bell     | PKB0375 | Viseo193DX       | 1366x768  | 18.5 |      | [21F209CE0009](<Analog/Packard Bell/PKB0375/21F209CE0009>) |
 | Packard Bell     | PKB0378 | Viseo203DX       | 1600x900  | 19.4 | 2013 | [8AFD49201FF7](<Analog/Packard Bell/PKB0378/8AFD49201FF7>) |
-| Packard Bell     | PKB037A | Viseo223DX       | 1920x1080 | 21.7 | 2014 | [D5DF04004CB6](<Analog/Packard Bell/PKB037A/D5DF04004CB6>) |
+| Packard Bell     | PKB037A | Viseo223DX       | 1920x1080 | 21.7 | 2014 | [114E8D4A04A0](<Analog/Packard Bell/PKB037A/114E8D4A04A0>) |
 | Packard Bell     | PKB037A | Viseo223DX       | 1920x1080 | 21.7 | 2013 | [F50BE43F5BAE](<Analog/Packard Bell/PKB037A/F50BE43F5BAE>) |
 | Packard Bell     | PKB0385 | Viseo223DX       | 1920x1080 | 21.7 | 2015 | [85C0233FF264](<Analog/Packard Bell/PKB0385/85C0233FF264>) |
 | Packard Bell     | PKB0385 | Viseo223DX       | 1920x1080 | 21.7 | 2014 | [4E79A77ECAC6](<Analog/Packard Bell/PKB0385/4E79A77ECAC6>) |
@@ -5620,7 +5830,7 @@ model and ID.
 | Packard Bell     | PKB5054 | MAE220W          | 1680x1050 | 22.0 | 2006 | [C9B02C5B8914](<Analog/Packard Bell/PKB5054/C9B02C5B8914>) |
 | Packard Bell     | PKB5057 | MAE191W          | 1440x900  | 19.1 | 2007 | [646C3A2A37E4](<Analog/Packard Bell/PKB5057/646C3A2A37E4>) |
 | Packard Bell     | PKB5057 | MAE191W          | 1440x900  | 19.1 | 2006 | [F00E64FA0778](<Analog/Packard Bell/PKB5057/F00E64FA0778>) |
-| Packard Bell     | PKB5058 | MAE221W          | 1680x1050 | 22.0 | 2007 | [B87035005487](<Analog/Packard Bell/PKB5058/B87035005487>) |
+| Packard Bell     | PKB5058 | MAE221W          | 1680x1050 | 22.0 | 2007 | [5E19C04EA315](<Analog/Packard Bell/PKB5058/5E19C04EA315>) |
 | Packard Bell     | PKB5060 | VIS190WS         | 1440x900  | 19.1 | 2007 | [80731D0958CB](<Analog/Packard Bell/PKB5060/80731D0958CB>) |
 | Packard Bell     | PKB5067 | VIS191WS         | 1440x900  | 19.8 | 2008 | [E4CD20DFD647](<Analog/Packard Bell/PKB5067/E4CD20DFD647>) |
 | Packard Bell     | PKB5068 | VIS222WS         | 1680x1050 | 21.4 | 2008 | [0021C0BCB5BC](<Analog/Packard Bell/PKB5068/0021C0BCB5BC>) |
@@ -5628,6 +5838,7 @@ model and ID.
 | Panasonic        | MEI0C32 |                  | 1280x1024 | 15.7 |      | [180826AB9D29](<Analog/Panasonic/MEI0C32/180826AB9D29>) |
 | Panasonic        | MEIA00E | TH-42PH*5        | 1366x806  | 41.6 |      | [968712BEDEC2](<Analog/Panasonic/MEIA00E/968712BEDEC2>) |
 | Panasonic        | MEIA027 | TH               | 1600x1200 | 49.7 |      | [0254DCA1F250](<Analog/Panasonic/MEIA027/0254DCA1F250>) |
+| Panasonic        | MEIA03A | TH-37P**8        | 1600x1200 | 37.0 | 2006 | [0129B613E104](<Analog/Panasonic/MEIA03A/0129B613E104>) |
 | Panasonic        | MEIA0B9 |                  | 1920x1080 |      | 2011 | [3D0434160BE1](<Analog/Panasonic/MEIA0B9/3D0434160BE1>) |
 | Panasonic        | MEIA296 | TV               | 1366x768  | 24.0 | 2017 | [B913C846968E](<Analog/Panasonic/MEIA296/B913C846968E>) |
 | Panasonic        | MEIA296 | TV               | 1360x768  | 26.0 | 2016 | [42A487FEFC33](<Analog/Panasonic/MEIA296/42A487FEFC33>) |
@@ -5636,6 +5847,7 @@ model and ID.
 | Parker           | PKR1EB2 | ML1715           | 1280x720  | 16.7 | 2008 | [30A47DB7BEC1](<Analog/Parker/PKR1EB2/30A47DB7BEC1>) |
 | Philco           | PLC0001 | TV               | 1920x1080 | 20.0 | 2012 | [F3194F3E77F5](<Analog/Philco/PLC0001/F3194F3E77F5>) |
 | Philips          | PHI0000 | Philco TV        | 1920x1080 | 20.0 | 2007 | [2629A97DDB4E](<Analog/Philips/PHI0000/2629A97DDB4E>) |
+| Philips          | PHI0851 |                  | 1680x1050 | 22.0 | 2007 | [36B244606F32](<Analog/Philips/PHI0851/36B244606F32>) |
 | Philips          | PHL0000 | FTV              | 1920x1080 | 28.9 | 2018 | [50BDC5952ED6](<Analog/Philips/PHL0000/50BDC5952ED6>) |
 | Philips          | PHL0000 | FTV              | 1360x768  | 28.9 | 2016 | [324B5D66EE61](<Analog/Philips/PHL0000/324B5D66EE61>) |
 | Philips          | PHL0000 | FTV              | 1920x1080 | 28.9 | 2016 | [E9FB3C8B5BA7](<Analog/Philips/PHL0000/E9FB3C8B5BA7>) |
@@ -5651,6 +5863,8 @@ model and ID.
 | Philips          | PHL0000 | FTV              | 1920x1080 | 28.9 | 2011 | [4C31E01A74CC](<Analog/Philips/PHL0000/4C31E01A74CC>) |
 | Philips          | PHL0000 | FTV              | 1360x768  | 28.9 | 2011 | [B2CAAE179CB2](<Analog/Philips/PHL0000/B2CAAE179CB2>) |
 | Philips          | PHL0000 |                  | 1360x768  |      | 2011 | [F2476FD102AF](<Analog/Philips/PHL0000/F2476FD102AF>) |
+| Philips          | PHL0000 | FTV              | 1920x1080 | 28.9 | 2010 | [39D39E466834](<Analog/Philips/PHL0000/39D39E466834>) |
+| Philips          | PHL0000 |                  | 1360x768  |      | 2010 | [8883DC22B6AF](<Analog/Philips/PHL0000/8883DC22B6AF>) |
 | Philips          | PHL0000 |                  | 1360x768  |      | 2009 | [09A9B8545460](<Analog/Philips/PHL0000/09A9B8545460>) |
 | Philips          | PHL0000 | FTV              | 1920x1080 | 57.8 | 2008 | [4A142E2260BC](<Analog/Philips/PHL0000/4A142E2260BC>) |
 | Philips          | PHL0000 | 23PF5320         | 1280x768  | 23.1 |      | [254CBBC9997B](<Analog/Philips/PHL0000/254CBBC9997B>) |
@@ -5694,7 +5908,7 @@ model and ID.
 | Philips          | PHL0830 | 190B             | 1280x1024 | 19.1 |      | [64CCFB583E39](<Analog/Philips/PHL0830/64CCFB583E39>) |
 | Philips          | PHL0831 | 190P             | 1280x1024 | 19.1 | 2006 | [9FEEB3E5A190](<Analog/Philips/PHL0831/9FEEB3E5A190>) |
 | Philips          | PHL0831 | 190P             | 1280x1024 | 19.1 |      | [E294D7DBF079](<Analog/Philips/PHL0831/E294D7DBF079>) |
-| Philips          | PHL0832 | 200W             | 1680x1050 | 20.0 | 2006 | [E57CFB133A9E](<Analog/Philips/PHL0832/E57CFB133A9E>) |
+| Philips          | PHL0832 | 200W             | 1680x1050 | 20.0 | 2006 | [C16A4B6987AA](<Analog/Philips/PHL0832/C16A4B6987AA>) |
 | Philips          | PHL0833 | 200P             | 1600x1200 | 20.2 | 2006 | [299C4303DC72](<Analog/Philips/PHL0833/299C4303DC72>) |
 | Philips          | PHL0838 | 150S             | 1024x768  | 14.9 | 2007 | [54FB50E31624](<Analog/Philips/PHL0838/54FB50E31624>) |
 | Philips          | PHL0839 | 170S             | 1280x1024 | 17.1 | 2007 | [1C2EB3E18ECE](<Analog/Philips/PHL0839/1C2EB3E18ECE>) |
@@ -5754,6 +5968,7 @@ model and ID.
 | Philips          | PHL0875 |                  | 1366x768  | 15.3 | 2012 | [260D68160ADC](<Analog/Philips/PHL0875/260D68160ADC>) |
 | Philips          | PHL0875 |                  | 1366x768  | 15.3 | 2011 | [18C2C2EA7FBF](<Analog/Philips/PHL0875/18C2C2EA7FBF>) |
 | Philips          | PHL0875 |                  | 1366x768  | 15.3 | 2010 | [38967EF4DE7C](<Analog/Philips/PHL0875/38967EF4DE7C>) |
+| Philips          | PHL0875 |                  | 1366x768  | 15.3 | 2009 | [99D36B2925D1](<Analog/Philips/PHL0875/99D36B2925D1>) |
 | Philips          | PHL0877 | 17S              | 1280x1024 | 16.8 | 2010 | [9FE16AF287B9](<Analog/Philips/PHL0877/9FE16AF287B9>) |
 | Philips          | PHL0877 | 17S              | 1280x1024 | 16.8 | 2009 | [C02C993371C4](<Analog/Philips/PHL0877/C02C993371C4>) |
 | Philips          | PHL0878 | 19S              | 1280x1024 | 19.1 | 2012 | [2161FE6E2E35](<Analog/Philips/PHL0878/2161FE6E2E35>) |
@@ -5809,7 +6024,9 @@ model and ID.
 | Philips          | PHL0908 | 221B7Q           | 1920x1080 | 21.7 | 2016 | [6314BF837786](<Analog/Philips/PHL0908/6314BF837786>) |
 | Philips          | PHL090A | 271S7Q           | 1920x1080 | 27.2 | 2017 | [31F204F6C15D](<Analog/Philips/PHL090A/31F204F6C15D>) |
 | Philips          | PHL0918 | 272B8Q           | 1920x1080 | 27.2 | 2019 | [4C6C57202E79](<Analog/Philips/PHL0918/4C6C57202E79>) |
+| Philips          | PHL091D | 221B8L           | 1920x1080 | 21.7 | 2018 | [D88C5E87B238](<Analog/Philips/PHL091D/D88C5E87B238>) |
 | Philips          | PHL091F | 243S5L           | 1920x1080 | 23.4 | 2020 | [A27C1F529124](<Analog/Philips/PHL091F/A27C1F529124>) |
+| Philips          | PHL0929 | 241B8Q           | 1920x1080 | 24.0 | 2019 | [EB3FFAD19605](<Analog/Philips/PHL0929/EB3FFAD19605>) |
 | Philips          | PHL0943 | 242B1            | 1920x1080 | 24.0 | 2020 | [64EC1AEB00F8](<Analog/Philips/PHL0943/64EC1AEB00F8>) |
 | Philips          | PHL105C |                  | 1024x768  | 13.8 |      | [091341441AF2](<Analog/Philips/PHL105C/091341441AF2>) |
 | Philips          | PHL14CA |                  | 1360x768  | 32.1 | 2007 | [D9EB25B02745](<Analog/Philips/PHL14CA/D9EB25B02745>) |
@@ -5858,7 +6075,7 @@ model and ID.
 | Philips          | PHLC027 |                  | 1440x900  | 19.1 | 2008 | [9579F6D12EB7](<Analog/Philips/PHLC027/9579F6D12EB7>) |
 | Philips          | PHLC02A |                  | 1366x768  | 18.5 | 2009 | [1456EA336F90](<Analog/Philips/PHLC02A/1456EA336F90>) |
 | Philips          | PHLC02D | 160E             | 1366x768  | 15.3 | 2010 | [1C1E9D56AAD3](<Analog/Philips/PHLC02D/1C1E9D56AAD3>) |
-| Philips          | PHLC02E | 220E             | 1920x1080 | 21.1 | 2010 | [50040CBE90D3](<Analog/Philips/PHLC02E/50040CBE90D3>) |
+| Philips          | PHLC02E | 220E             | 1920x1080 | 21.1 | 2010 | [09E0A0DC4E24](<Analog/Philips/PHLC02E/09E0A0DC4E24>) |
 | Philips          | PHLC02E | 220E             | 1920x1080 | 21.1 | 2009 | [064068089851](<Analog/Philips/PHLC02E/064068089851>) |
 | Philips          | PHLC02E |                  | 1920x1080 | 21.1 |      | [88BE10902125](<Analog/Philips/PHLC02E/88BE10902125>) |
 | Philips          | PHLC02F | 221E             | 1920x1080 | 21.1 | 2009 | [20DF497E2576](<Analog/Philips/PHLC02F/20DF497E2576>) |
@@ -5867,9 +6084,10 @@ model and ID.
 | Philips          | PHLC032 | 192E             | 1366x768  | 18.5 | 2011 | [4E5D183C732D](<Analog/Philips/PHLC032/4E5D183C732D>) |
 | Philips          | PHLC032 | 192E             | 1366x768  | 18.5 | 2010 | [76751B0F41D4](<Analog/Philips/PHLC032/76751B0F41D4>) |
 | Philips          | PHLC032 | 192E             | 1366x768  | 18.5 | 2009 | [02A529CE69D0](<Analog/Philips/PHLC032/02A529CE69D0>) |
-| Philips          | PHLC033 | 201E             | 1600x900  | 19.9 | 2010 | [740A66B08555](<Analog/Philips/PHLC033/740A66B08555>) |
+| Philips          | PHLC033 | 201E             | 1600x900  | 19.9 | 2010 | [1DC485EB59E1](<Analog/Philips/PHLC033/1DC485EB59E1>) |
 | Philips          | PHLC033 | 201E             | 1600x900  | 19.9 | 2009 | [A43DF44C1FA2](<Analog/Philips/PHLC033/A43DF44C1FA2>) |
 | Philips          | PHLC035 | 241E             | 1920x1080 | 23.4 | 2011 | [DAB148E24AEE](<Analog/Philips/PHLC035/DAB148E24AEE>) |
+| Philips          | PHLC035 | 241E             | 1920x1080 | 23.4 | 2010 | [5FE9FA850584](<Analog/Philips/PHLC035/5FE9FA850584>) |
 | Philips          | PHLC036 | 244E             | 1920x1080 | 23.4 | 2011 | [2020B8BBC22B](<Analog/Philips/PHLC036/2020B8BBC22B>) |
 | Philips          | PHLC036 | 244E             | 1920x1080 | 23.4 | 2010 | [2D98CE6DCCCD](<Analog/Philips/PHLC036/2D98CE6DCCCD>) |
 | Philips          | PHLC036 | 244E             | 1920x1080 | 23.4 | 2009 | [4378DF932107](<Analog/Philips/PHLC036/4378DF932107>) |
@@ -5877,7 +6095,7 @@ model and ID.
 | Philips          | PHLC038 | 220C             | 1680x1050 | 21.7 | 2010 | [75512D9DDD0C](<Analog/Philips/PHLC038/75512D9DDD0C>) |
 | Philips          | PHLC038 | 220C             | 1680x1050 | 21.7 | 2009 | [54BFBE6AB05A](<Analog/Philips/PHLC038/54BFBE6AB05A>) |
 | Philips          | PHLC039 | 231E             | 1920x1080 | 23.1 | 2009 | [F2A269914503](<Analog/Philips/PHLC039/F2A269914503>) |
-| Philips          | PHLC03D |                  | 1366x768  | 18.5 | 2010 | [B02F71AD84D2](<Analog/Philips/PHLC03D/B02F71AD84D2>) |
+| Philips          | PHLC03D |                  | 1366x768  | 18.5 | 2010 | [474073A4FCBD](<Analog/Philips/PHLC03D/474073A4FCBD>) |
 | Philips          | PHLC03D |                  | 1366x768  | 18.5 | 2009 | [C769190801E6](<Analog/Philips/PHLC03D/C769190801E6>) |
 | Philips          | PHLC041 | 221T             | 1920x1080 | 21.1 | 2009 | [4EF43385C6DA](<Analog/Philips/PHLC041/4EF43385C6DA>) |
 | Philips          | PHLC044 | 191E             | 1366x768  | 18.5 | 2010 | [5D7B4C16C926](<Analog/Philips/PHLC044/5D7B4C16C926>) |
@@ -5906,7 +6124,7 @@ model and ID.
 | Philips          | PHLC058 |                  | 1920x1080 | 21.7 | 2011 | [CCE03B2AE5CC](<Analog/Philips/PHLC058/CCE03B2AE5CC>) |
 | Philips          | PHLC058 |                  | 1920x1080 | 21.7 | 2010 | [3D997730C275](<Analog/Philips/PHLC058/3D997730C275>) |
 | Philips          | PHLC059 | 202E             | 1600x900  | 19.9 | 2011 | [2F7862A7727D](<Analog/Philips/PHLC059/2F7862A7727D>) |
-| Philips          | PHLC059 | 202E             | 1600x900  | 19.9 | 2010 | [22F55C460C1F](<Analog/Philips/PHLC059/22F55C460C1F>) |
+| Philips          | PHLC059 | 202E             | 1600x900  | 19.9 | 2010 | [2010C95D924F](<Analog/Philips/PHLC059/2010C95D924F>) |
 | Philips          | PHLC05C |                  | 1600x900  | 19.9 | 2012 | [72582846190B](<Analog/Philips/PHLC05C/72582846190B>) |
 | Philips          | PHLC05C |                  | 1600x900  | 19.9 | 2011 | [A269CC313CC0](<Analog/Philips/PHLC05C/A269CC313CC0>) |
 | Philips          | PHLC05C |                  | 1600x900  | 19.9 | 2010 | [7E56CD8D7283](<Analog/Philips/PHLC05C/7E56CD8D7283>) |
@@ -5920,7 +6138,7 @@ model and ID.
 | Philips          | PHLC06B |                  | 1920x1080 | 21.7 | 2010 | [5C61AC4946D7](<Analog/Philips/PHLC06B/5C61AC4946D7>) |
 | Philips          | PHLC06C |                  | 1920x1080 | 24.0 | 2012 | [1BC2C8846220](<Analog/Philips/PHLC06C/1BC2C8846220>) |
 | Philips          | PHLC075 |                  | 1920x1080 | 22.8 |      | [C64DA55BEDF3](<Analog/Philips/PHLC075/C64DA55BEDF3>) |
-| Philips          | PHLC079 |                  | 1920x1080 | 21.7 | 2012 | [26D271C3E4CB](<Analog/Philips/PHLC079/26D271C3E4CB>) |
+| Philips          | PHLC079 |                  | 1920x1080 | 21.7 | 2012 | [12C771A2916B](<Analog/Philips/PHLC079/12C771A2916B>) |
 | Philips          | PHLC079 |                  | 1920x1080 | 21.7 | 2011 | [883227F8AB5A](<Analog/Philips/PHLC079/883227F8AB5A>) |
 | Philips          | PHLC07A | 227ELPH          | 1920x1080 | 21.7 | 2011 | [A31974C7AAC1](<Analog/Philips/PHLC07A/A31974C7AAC1>) |
 | Philips          | PHLC07B | 227ELH           | 1920x1080 | 21.7 |      | [16215EA4E0C6](<Analog/Philips/PHLC07B/16215EA4E0C6>) |
@@ -5952,6 +6170,7 @@ model and ID.
 | Philips          | PHLC085 | 247ELH           | 1920x1080 | 23.4 | 2011 | [2B5963F5A419](<Analog/Philips/PHLC085/2B5963F5A419>) |
 | Philips          | PHLC086 | 247ELPH          | 1920x1080 | 23.4 | 2011 | [F1238ABCB028](<Analog/Philips/PHLC086/F1238ABCB028>) |
 | Philips          | PHLC088 | 248CLH           | 1920x1080 | 23.4 | 2013 | [C524F8606CD3](<Analog/Philips/PHLC088/C524F8606CD3>) |
+| Philips          | PHLC088 | 248CLH           | 1920x1080 | 23.4 | 2012 | [A06CA606A929](<Analog/Philips/PHLC088/A06CA606A929>) |
 | Philips          | PHLC088 | 248CLH           | 1920x1080 | 23.4 | 2011 | [DCF78F08646F](<Analog/Philips/PHLC088/DCF78F08646F>) |
 | Philips          | PHLC08A | 228CLH           | 1920x1080 | 21.7 | 2011 | [EB4DC876A28D](<Analog/Philips/PHLC08A/EB4DC876A28D>) |
 | Philips          | PHLC08B |                  | 1366x768  | 18.5 | 2012 | [1461C22731D2](<Analog/Philips/PHLC08B/1461C22731D2>) |
@@ -5966,16 +6185,17 @@ model and ID.
 | Philips          | PHLC09E | 229CQ            | 1920x1080 | 21.7 | 2013 | [790BBFE978C1](<Analog/Philips/PHLC09E/790BBFE978C1>) |
 | Philips          | PHLC0A0 | 239CQH           | 1920x1080 | 23.1 | 2012 | [A85F9AEE1709](<Analog/Philips/PHLC0A0/A85F9AEE1709>) |
 | Philips          | PHLC0A9 | 227E4Q           | 1920x1080 | 21.7 | 2014 | [64BE00DCF5CA](<Analog/Philips/PHLC0A9/64BE00DCF5CA>) |
-| Philips          | PHLC0A9 | 227E4Q           | 1920x1080 | 21.7 | 2013 | [2C7B34336285](<Analog/Philips/PHLC0A9/2C7B34336285>) |
+| Philips          | PHLC0A9 | 227E4Q           | 1920x1080 | 21.7 | 2013 | [2363FF46368A](<Analog/Philips/PHLC0A9/2363FF46368A>) |
 | Philips          | PHLC0AA | 227E4QH          | 1920x1080 | 21.7 | 2013 | [F007F0D7B554](<Analog/Philips/PHLC0AA/F007F0D7B554>) |
 | Philips          | PHLC0AA | 227E4QH          | 1920x1080 | 21.7 | 2012 | [8FE44B60235F](<Analog/Philips/PHLC0AA/8FE44B60235F>) |
 | Philips          | PHLC0AB | 227E4L           | 1920x1080 | 21.7 | 2015 | [5B6183C65297](<Analog/Philips/PHLC0AB/5B6183C65297>) |
 | Philips          | PHLC0AB | 227E4L           | 1920x1080 | 21.7 | 2013 | [085A9CD4FA84](<Analog/Philips/PHLC0AB/085A9CD4FA84>) |
 | Philips          | PHLC0AC | 227E4LH          | 1920x1080 | 21.7 | 2014 | [C773781853E8](<Analog/Philips/PHLC0AC/C773781853E8>) |
-| Philips          | PHLC0AC | 227E4LH          | 1920x1080 | 21.7 | 2013 | [29CF963813CA](<Analog/Philips/PHLC0AC/29CF963813CA>) |
+| Philips          | PHLC0AC | 227E4LH          | 1920x1080 | 21.7 | 2013 | [1B1BD4733D21](<Analog/Philips/PHLC0AC/1B1BD4733D21>) |
 | Philips          | PHLC0AC | 227E4LH          | 1920x1080 | 21.7 | 2012 | [E2F63AF1FC68](<Analog/Philips/PHLC0AC/E2F63AF1FC68>) |
 | Philips          | PHLC0AD | 237E4            | 1920x1080 | 23.1 | 2013 | [3553FEE35E74](<Analog/Philips/PHLC0AD/3553FEE35E74>) |
 | Philips          | PHLC0AD | 237E4            | 1920x1080 | 23.1 | 2012 | [DD80ABC528AF](<Analog/Philips/PHLC0AD/DD80ABC528AF>) |
+| Philips          | PHLC0AF |                  | 1366x768  | 18.5 | 2015 | [259A5C9149CE](<Analog/Philips/PHLC0AF/259A5C9149CE>) |
 | Philips          | PHLC0AF |                  | 1366x768  | 18.5 | 2014 | [4F3919B6E269](<Analog/Philips/PHLC0AF/4F3919B6E269>) |
 | Philips          | PHLC0AF |                  | 1366x768  | 18.5 | 2013 | [2415878F3297](<Analog/Philips/PHLC0AF/2415878F3297>) |
 | Philips          | PHLC0AF |                  | 1366x768  | 18.5 | 2012 | [6D1C99EB960B](<Analog/Philips/PHLC0AF/6D1C99EB960B>) |
@@ -5996,9 +6216,11 @@ model and ID.
 | Philips          | PHLC0BF |                  | 1600x900  | 19.4 | 2014 | [0B159E9C4AA4](<Analog/Philips/PHLC0BF/0B159E9C4AA4>) |
 | Philips          | PHLC0BF |                  | 1600x900  | 19.4 | 2013 | [206032044699](<Analog/Philips/PHLC0BF/206032044699>) |
 | Philips          | PHLC0BF |                  | 1600x900  | 19.4 |      | [A4ACF41B0D6F](<Analog/Philips/PHLC0BF/A4ACF41B0D6F>) |
+| Philips          | PHLC0C0 | PHL 244E5        | 1920x1080 | 24.0 | 2014 | [C6AFD0E33171](<Analog/Philips/PHLC0C0/C6AFD0E33171>) |
 | Philips          | PHLC0C0 |                  | 1920x1080 | 23.4 | 2013 | [24DF09005F50](<Analog/Philips/PHLC0C0/24DF09005F50>) |
 | Philips          | PHLC0C0 |                  | 1920x1080 | 23.4 |      | [CFB5B4E7CD23](<Analog/Philips/PHLC0C0/CFB5B4E7CD23>) |
 | Philips          | PHLC0C5 | PHL 246V5        | 1920x1080 | 24.0 | 2018 | [47A031252C49](<Analog/Philips/PHLC0C5/47A031252C49>) |
+| Philips          | PHLC0C5 | PHL 246V5        | 1920x1080 | 24.0 | 2017 | [0F318673E6C5](<Analog/Philips/PHLC0C5/0F318673E6C5>) |
 | Philips          | PHLC0C5 | PHL 246V5        | 1920x1080 | 24.0 | 2016 | [15A9C2A1BD80](<Analog/Philips/PHLC0C5/15A9C2A1BD80>) |
 | Philips          | PHLC0C5 | PHL 246V5        | 1920x1080 | 24.0 | 2015 | [35F5D8854D29](<Analog/Philips/PHLC0C5/35F5D8854D29>) |
 | Philips          | PHLC0C5 | PHL 246V5        | 1920x1080 | 24.0 | 2014 | [517472097AEE](<Analog/Philips/PHLC0C5/517472097AEE>) |
@@ -6015,7 +6237,7 @@ model and ID.
 | Philips          | PHLC0C8 | PHL 274E5        | 1920x1080 | 27.2 | 2013 | [5E5B9E45303D](<Analog/Philips/PHLC0C8/5E5B9E45303D>) |
 | Philips          | PHLC0CC | PHL 163V5        | 1366x768  | 15.3 | 2013 | [7CE0296DEA7C](<Analog/Philips/PHLC0CC/7CE0296DEA7C>) |
 | Philips          | PHLC0CD | PHL 193V5        | 1366x768  | 18.5 | 2021 | [9A6B20A78354](<Analog/Philips/PHLC0CD/9A6B20A78354>) |
-| Philips          | PHLC0CD | PHL 193V5        | 1366x768  | 18.5 | 2019 | [79AA1576EBDD](<Analog/Philips/PHLC0CD/79AA1576EBDD>) |
+| Philips          | PHLC0CD | PHL 193V5        | 1366x768  | 18.5 | 2019 | [4604432E647D](<Analog/Philips/PHLC0CD/4604432E647D>) |
 | Philips          | PHLC0CD | PHL 193V5        | 1366x768  | 18.5 | 2018 | [01EA6AB49EE2](<Analog/Philips/PHLC0CD/01EA6AB49EE2>) |
 | Philips          | PHLC0CD | PHL 193V5        | 1366x768  | 18.5 | 2017 | [F422F1694F22](<Analog/Philips/PHLC0CD/F422F1694F22>) |
 | Philips          | PHLC0CD | PHL 193V5        | 1366x768  | 18.5 | 2016 | [03716025F44B](<Analog/Philips/PHLC0CD/03716025F44B>) |
@@ -6023,6 +6245,7 @@ model and ID.
 | Philips          | PHLC0CD | PHL 193V5        | 1366x768  | 18.5 | 2014 | [0FAEF8DBA7D3](<Analog/Philips/PHLC0CD/0FAEF8DBA7D3>) |
 | Philips          | PHLC0CD | PHL 193V5        | 1366x768  | 18.5 | 2013 | [01BDF1DC3C25](<Analog/Philips/PHLC0CD/01BDF1DC3C25>) |
 | Philips          | PHLC0CD | PHL              | 1366x768  | 18.5 |      | [10B3FEC61349](<Analog/Philips/PHLC0CD/10B3FEC61349>) |
+| Philips          | PHLC0CE | PHL 203V5        | 1600x900  | 19.4 | 2021 | [7B0167DBFFCC](<Analog/Philips/PHLC0CE/7B0167DBFFCC>) |
 | Philips          | PHLC0CE | PHL 203V5        | 1600x900  | 19.4 | 2018 | [019D499A54F0](<Analog/Philips/PHLC0CE/019D499A54F0>) |
 | Philips          | PHLC0CE | PHL 203V5        | 1600x900  | 19.4 | 2016 | [0030B766D8E5](<Analog/Philips/PHLC0CE/0030B766D8E5>) |
 | Philips          | PHLC0CE | PHL 203V5        | 1600x900  | 19.4 | 2015 | [0DF9966F3581](<Analog/Philips/PHLC0CE/0DF9966F3581>) |
@@ -6039,7 +6262,7 @@ model and ID.
 | Philips          | PHLC0CF | PHL              | 1920x1080 | 21.7 |      | [2F3DF00606DF](<Analog/Philips/PHLC0CF/2F3DF00606DF>) |
 | Philips          | PHLC0D0 | PHL 233V5        | 1920x1080 | 23.1 | 2014 | [F0A7DDCB66D4](<Analog/Philips/PHLC0D0/F0A7DDCB66D4>) |
 | Philips          | PHLC0D0 | PHL 233V5        | 1920x1080 | 23.1 | 2013 | [1A2B6ACD7B0E](<Analog/Philips/PHLC0D0/1A2B6ACD7B0E>) |
-| Philips          | PHLC0D1 | PHL 243V5        | 1920x1080 | 23.4 | 2020 | [74215A843310](<Analog/Philips/PHLC0D1/74215A843310>) |
+| Philips          | PHLC0D1 | PHL 243V5        | 1920x1080 | 23.4 | 2020 | [58AC340F5611](<Analog/Philips/PHLC0D1/58AC340F5611>) |
 | Philips          | PHLC0D1 | PHL 243V5        | 1920x1080 | 23.4 | 2019 | [8EDF8BB5D09F](<Analog/Philips/PHLC0D1/8EDF8BB5D09F>) |
 | Philips          | PHLC0D1 | PHL 243V5        | 1920x1080 | 23.4 | 2018 | [4AD17C6BBB9E](<Analog/Philips/PHLC0D1/4AD17C6BBB9E>) |
 | Philips          | PHLC0D1 | PHL 243V5        | 1920x1080 | 23.4 | 2017 | [09B2EA1F2599](<Analog/Philips/PHLC0D1/09B2EA1F2599>) |
@@ -6054,8 +6277,9 @@ model and ID.
 | Philips          | PHLC0D2 | PHL 273V5        | 1920x1080 | 27.2 | 2013 | [255FAADE2DA2](<Analog/Philips/PHLC0D2/255FAADE2DA2>) |
 | Philips          | PHLC0E4 | PHL 275C5        | 1920x1080 | 27.2 | 2015 | [9EBE6AB44AF5](<Analog/Philips/PHLC0E4/9EBE6AB44AF5>) |
 | Philips          | PHLC0E5 | PHL 227E6        | 1920x1080 | 21.7 | 2016 | [548706B90624](<Analog/Philips/PHLC0E5/548706B90624>) |
+| Philips          | PHLC0E6 | PHL 277E6        | 1920x1080 | 27.2 | 2015 | [CF12D4669AD5](<Analog/Philips/PHLC0E6/CF12D4669AD5>) |
 | Philips          | PHLC0E7 | PHL 247E6        | 1920x1080 | 23.4 | 2017 | [2DD3DA25D615](<Analog/Philips/PHLC0E7/2DD3DA25D615>) |
-| Philips          | PHLC0E7 | PHL 247E6        | 1920x1080 | 23.4 | 2015 | [9B91A8C23231](<Analog/Philips/PHLC0E7/9B91A8C23231>) |
+| Philips          | PHLC0E7 | PHL 247E6        | 1920x1080 | 23.4 | 2015 | [3F739E3CB542](<Analog/Philips/PHLC0E7/3F739E3CB542>) |
 | Philips          | PHLC101 | PHL 237E7        | 1920x1080 | 23.1 | 2016 | [CFAB450A93B1](<Analog/Philips/PHLC101/CFAB450A93B1>) |
 | Philips          | PHLC101 | PHL              | 1920x1080 | 23.1 |      | [1BFBA4B9E832](<Analog/Philips/PHLC101/1BFBA4B9E832>) |
 | Philips          | PHLC103 | PHL 200V4Q       | 1920x1080 | 19.7 | 2015 | [55C6BFD279D6](<Analog/Philips/PHLC103/55C6BFD279D6>) |
@@ -6068,15 +6292,17 @@ model and ID.
 | Philips          | PHLC10A | PHL 240V5        | 1920x1080 | 24.0 | 2015 | [8642F48E9F4E](<Analog/Philips/PHLC10A/8642F48E9F4E>) |
 | Philips          | PHLC10C | PHL 240V5A       | 1920x1080 | 24.0 | 2018 | [75FB697D7A9A](<Analog/Philips/PHLC10C/75FB697D7A9A>) |
 | Philips          | PHLC10C | PHL 240V5A       | 1920x1080 | 24.0 | 2017 | [25C6AA87BD5F](<Analog/Philips/PHLC10C/25C6AA87BD5F>) |
+| Philips          | PHLC10C | PHL 240V5A       | 1920x1080 | 24.0 | 2016 | [50390282910D](<Analog/Philips/PHLC10C/50390282910D>) |
 | Philips          | PHLC10C | PHL 240V5A       | 1920x1080 | 24.0 | 2015 | [C85568975CA5](<Analog/Philips/PHLC10C/C85568975CA5>) |
 | Philips          | PHLC10D | PHL 216V6        | 1920x1080 | 19.4 | 2016 | [2DCB1C962E2F](<Analog/Philips/PHLC10D/2DCB1C962E2F>) |
+| Philips          | PHLC114 | PHL 223V5LH      | 1920x1080 | 21.7 | 2020 | [E195DA2CAD76](<Analog/Philips/PHLC114/E195DA2CAD76>) |
 | Philips          | PHLC114 | PHL 223V5LH      | 1920x1080 | 21.7 | 2019 | [0FE67DD8C73B](<Analog/Philips/PHLC114/0FE67DD8C73B>) |
 | Philips          | PHLC114 | PHL 223V5LH      | 1920x1080 | 21.7 | 2017 | [D8E5101CAAC4](<Analog/Philips/PHLC114/D8E5101CAAC4>) |
 | Philips          | PHLC11D | PHL 226V6        | 1920x1080 | 21.7 | 2016 | [8BBC90A2AB9B](<Analog/Philips/PHLC11D/8BBC90A2AB9B>) |
 | Philips          | PHLC121 | PHL 323E7        | 1920x1080 | 31.5 | 2015 | [9C2444DD6778](<Analog/Philips/PHLC121/9C2444DD6778>) |
 | Philips          | PHLC154 | PHL 223V7        | 1920x1080 | 21.7 | 2019 | [271E0DE64317](<Analog/Philips/PHLC154/271E0DE64317>) |
 | Philips          | PHLC154 | PHL 223V7        | 1920x1080 | 21.7 | 2018 | [60792A67C423](<Analog/Philips/PHLC154/60792A67C423>) |
-| Philips          | PHLC155 | PHL 243V7        | 1920x1080 | 24.0 | 2020 | [49B58583AF36](<Analog/Philips/PHLC155/49B58583AF36>) |
+| Philips          | PHLC155 | PHL 243V7        | 1920x1080 | 24.0 | 2020 | [24BA13FE71F1](<Analog/Philips/PHLC155/24BA13FE71F1>) |
 | Philips          | PHLC155 | PHL 243V7        | 1920x1080 | 24.0 | 2019 | [011DDD3E2EAB](<Analog/Philips/PHLC155/011DDD3E2EAB>) |
 | Philips          | PHLC155 | PHL 243V7        | 1920x1080 | 24.0 | 2018 | [156102CAF258](<Analog/Philips/PHLC155/156102CAF258>) |
 | Philips          | PHLC155 | PHL 243V7        | 1920x1080 | 24.0 | 2017 | [2E053B483360](<Analog/Philips/PHLC155/2E053B483360>) |
@@ -6084,6 +6310,7 @@ model and ID.
 | Philips          | PHLC156 | PHL 273V7        | 1920x1080 | 27.2 | 2019 | [24D52FCE4C68](<Analog/Philips/PHLC156/24D52FCE4C68>) |
 | Philips          | PHLC156 | PHL 273V7        | 1920x1080 | 27.2 | 2018 | [184BB750EB0A](<Analog/Philips/PHLC156/184BB750EB0A>) |
 | Philips          | PHLC161 | PHL 278E8Q       | 1920x1080 | 27.2 | 2019 | [4CF46AE08CE3](<Analog/Philips/PHLC161/4CF46AE08CE3>) |
+| Philips          | PHLC161 | PHL 278E8Q       | 1920x1080 | 27.2 | 2018 | [3B6E794C9B1B](<Analog/Philips/PHLC161/3B6E794C9B1B>) |
 | Philips          | PHLC17B | PHL 276E9Q       | 1920x1080 | 27.2 | 2020 | [A87C2738FD53](<Analog/Philips/PHLC17B/A87C2738FD53>) |
 | Philips          | PHLC17B | PHL 276E9Q       | 1920x1080 | 27.2 | 2019 | [88F9404CD269](<Analog/Philips/PHLC17B/88F9404CD269>) |
 | Philips          | PHLC17C | PHL 246E9Q       | 1920x1080 | 24.0 | 2021 | [436F4BA95B7F](<Analog/Philips/PHLC17C/436F4BA95B7F>) |
@@ -6094,6 +6321,8 @@ model and ID.
 | Philips          | PHLC17D | PHL 226E9Q       | 1920x1080 | 21.7 | 2018 | [7F9A977C439E](<Analog/Philips/PHLC17D/7F9A977C439E>) |
 | Philips          | PHLC17E | PHL 248E9Q       | 1920x1080 | 23.4 | 2020 | [957A4506FAFB](<Analog/Philips/PHLC17E/957A4506FAFB>) |
 | Philips          | PHLC17E | PHL 248E9Q       | 1920x1080 | 23.4 | 2019 | [94D6A9FF87C4](<Analog/Philips/PHLC17E/94D6A9FF87C4>) |
+| Philips          | PHLC180 | PHL 328E9Q       | 1920x1080 | 31.5 | 2019 | [D1F8068212DA](<Analog/Philips/PHLC180/D1F8068212DA>) |
+| Philips          | PHLC207 | PHL 241E1        | 1920x1080 | 24.0 | 2021 | [90DBA861A4C2](<Analog/Philips/PHLC207/90DBA861A4C2>) |
 | Philips          | PHLC208 | PHL 271E1        | 1920x1080 | 27.2 | 2020 | [0F54BEECE8BC](<Analog/Philips/PHLC208/0F54BEECE8BC>) |
 | Philips          | PHLC20B | PHL 245E1        | 1920x1080 | 24.0 | 2020 | [EC9656E63E3B](<Analog/Philips/PHLC20B/EC9656E63E3B>) |
 | Philips          | PHLC20C | PHL 275E1        | 1920x1080 | 27.2 | 2020 | [6066BB5F0210](<Analog/Philips/PHLC20C/6066BB5F0210>) |
@@ -6102,7 +6331,10 @@ model and ID.
 | Philips          | PHLC210 | PHL 272E1        | 1920x1080 | 27.2 | 2019 | [FF803E2EEC73](<Analog/Philips/PHLC210/FF803E2EEC73>) |
 | Philips          | PHLC211 | PHL 221V8        | 1920x1080 | 21.7 | 2021 | [10457F751778](<Analog/Philips/PHLC211/10457F751778>) |
 | Philips          | PHLC211 | PHL 221V8        | 1920x1080 | 21.7 | 2020 | [494B929E1720](<Analog/Philips/PHLC211/494B929E1720>) |
+| Philips          | PHLC212 | PHL 241V8        | 1920x1080 | 24.0 | 2021 | [D946F079ADAE](<Analog/Philips/PHLC212/D946F079ADAE>) |
 | Philips          | PHLC213 | PHL 271V8        | 1920x1080 | 27.2 | 2021 | [C57D390E2EB3](<Analog/Philips/PHLC213/C57D390E2EB3>) |
+| Philips          | PHLC213 | PHL 271V8        | 1920x1080 | 27.2 | 2020 | [19C2B45A870C](<Analog/Philips/PHLC213/19C2B45A870C>) |
+| Philips          | PHLC218 | PHL 220V8        | 1920x1080 | 21.7 | 2021 | [1920E5944775](<Analog/Philips/PHLC218/1920E5944775>) |
 | Philips          | PHLC218 | PHL 220V8        | 1920x1080 | 21.7 | 2019 | [A30A07368BC7](<Analog/Philips/PHLC218/A30A07368BC7>) |
 | Philips          | PHLC219 | PHL 242V8        | 1920x1080 | 24.0 | 2020 | [5D3292F64B48](<Analog/Philips/PHLC219/5D3292F64B48>) |
 | Philips          | PHLC253 | PHL 242M8        | 1920x1080 | 24.0 | 2020 | [C6FB3BD23CAA](<Analog/Philips/PHLC253/C6FB3BD23CAA>) |
@@ -6116,16 +6348,19 @@ model and ID.
 | Philips          | PHLE005 | 107S             | 1280x960  | 15.2 |      | [EE9D714543A6](<Analog/Philips/PHLE005/EE9D714543A6>) |
 | Philips          | PHLE00A |                  | 1280x960  | 15.2 |      | [34B75F9EC2D0](<Analog/Philips/PHLE00A/34B75F9EC2D0>) |
 | Philips          | PHLE013 |                  | 1280x960  | 15.2 |      | [018DFC89224A](<Analog/Philips/PHLE013/018DFC89224A>) |
+| Philips          | PHLE016 |                  | 1600x1200 | 15.2 |      | [E8F7EA4E0954](<Analog/Philips/PHLE016/E8F7EA4E0954>) |
 | Philips          | PHLE01C |                  | 1280x960  | 15.2 |      | [CAFCE3031497](<Analog/Philips/PHLE01C/CAFCE3031497>) |
 | Philips          | PHLE01E |                  | 1920x1440 | 17.7 |      | [89AE1CCFC8D5](<Analog/Philips/PHLE01E/89AE1CCFC8D5>) |
 | Philips          | PHT4003 |                  | 1360x768  | 23.4 | 2018 | [AE1C145D13A5](<Analog/Philips/PHT4003/AE1C145D13A5>) |
 | PiLot            | PLT1850 |                  | 1366x768  | 18.5 | 2016 | [6E9B8A436723](<Analog/PiLot/PLT1850/6E9B8A436723>) |
 | Plain Tree Sy... | PTS0214 | CY-465           | 1024x768  | 14.0 |      | [61F616180D57](<Analog/Plain Tree Systems/PTS0214/61F616180D57>) |
+| Plain Tree Sy... | PTS0231 | FYVJ2B0200350    | 1024x768  | 15.2 |      | [F4F9025630EB](<Analog/Plain Tree Systems/PTS0231/F4F9025630EB>) |
 | Plain Tree Sy... | PTS023C | HD-572           | 1024x768  | 14.9 |      | [D0CE6F77704B](<Analog/Plain Tree Systems/PTS023C/D0CE6F77704B>) |
 | Plain Tree Sy... | PTS02D8 | TFT17XPT         | 1280x1024 | 17.1 | 2006 | [4AC2007C8F37](<Analog/Plain Tree Systems/PTS02D8/4AC2007C8F37>) |
 | Plain Tree Sy... | PTS02FD | AY765C           | 1280x1024 | 17.1 |      | [91ADC969864F](<Analog/Plain Tree Systems/PTS02FD/91ADC969864F>) |
 | Plain Tree Sy... | PTS02FF | CY-767C FGZJ2... | 1280x1024 | 17.1 |      | [DF55DAC4855E](<Analog/Plain Tree Systems/PTS02FF/DF55DAC4855E>) |
 | Plain Tree Sy... | PTS0304 |                  | 1280x1024 | 15.7 | 2006 | [7DB46DDF7FF5](<Analog/Plain Tree Systems/PTS0304/7DB46DDF7FF5>) |
+| Plain Tree Sy... | PTS0304 |                  | 1280x1024 | 15.7 |      | [474FF2289653](<Analog/Plain Tree Systems/PTS0304/474FF2289653>) |
 | Plain Tree Sy... | PTS030E |                  | 1280x1024 | 17.1 |      | [3FEC549943BE](<Analog/Plain Tree Systems/PTS030E/3FEC549943BE>) |
 | Plain Tree Sy... | PTS0312 | fpij0a0102353    | 1280x1024 | 15.7 |      | [F5DDBB1DCAF5](<Analog/Plain Tree Systems/PTS0312/F5DDBB1DCAF5>) |
 | Plain Tree Sy... | PTS0317 | 770              | 1280x1024 | 17.1 |      | [BD55BA69E145](<Analog/Plain Tree Systems/PTS0317/BD55BA69E145>) |
@@ -6187,6 +6422,7 @@ model and ID.
 | Planar           | PLN2485 | PCT2485          | 1920x1080 | 23.4 | 2021 | [323760360D02](<Analog/Planar/PLN2485/323760360D02>) |
 | Planar           | PLN2710 | PLL2710W         | 1920x1080 | 27.2 | 2013 | [3AEFC1E31B4D](<Analog/Planar/PLN2710/3AEFC1E31B4D>) |
 | Planar           | PLN2710 | PX2710MW         | 1920x1080 | 27.2 | 2011 | [4FFFA6499C6C](<Analog/Planar/PLN2710/4FFFA6499C6C>) |
+| Planar           | PLN2785 | PCT2785          | 1920x1080 | 27.2 | 2017 | [68E9196E5499](<Analog/Planar/PLN2785/68E9196E5499>) |
 | Planar           | PNR5953 | PT191MU          | 1280x1024 | 19.3 |      | [7E93DA434291](<Analog/Planar/PNR5953/7E93DA434291>) |
 | Positivo         | NON1400 |                  | 1360x768  | 13.9 | 2010 | [8BA54B19F23B](<Analog/Positivo/NON1400/8BA54B19F23B>) |
 | Positivo         | NON1400 | 1410W            | 1280x800  | 14.0 | 2008 | [19A4A564707D](<Analog/Positivo/NON1400/19A4A564707D>) |
@@ -6219,6 +6455,7 @@ model and ID.
 | QBell            | QBL11B2 |                  | 1280x1024 | 17.1 |      | [AD156B1FBC26](<Analog/QBell/QBL11B2/AD156B1FBC26>) |
 | QBell            | QBL13B2 | QB.17F-4WL       | 1440x900  | 17.2 | 2008 | [E6DC32E1E00A](<Analog/QBell/QBL13B2/E6DC32E1E00A>) |
 | QBell            | QBL19C6 | QB.19F-4W        | 1440x900  | 19.1 | 2007 | [D6BEE2755C1C](<Analog/QBell/QBL19C6/D6BEE2755C1C>) |
+| QBell            | QBL8011 | QXL.216WA        | 1920x1080 | 24.3 | 2011 | [FC7B3A734F73](<Analog/QBell/QBL8011/FC7B3A734F73>) |
 | QBell            | QBL8013 | QXL.185WA        | 1360x768  | 14.9 | 2011 | [8D3CEDCA583F](<Analog/QBell/QBL8013/8D3CEDCA583F>) |
 | RS               | BTC1702 | LM-1702          | 1280x1024 | 17.1 | 2006 | [391FBBC73110](<Analog/RS/BTC1702/391FBBC73110>) |
 | RS               | BTC1908 | LM-1901          | 1280x1024 | 19.1 | 2007 | [0812BD03CF3B](<Analog/RS/BTC1908/0812BD03CF3B>) |
@@ -6316,6 +6553,7 @@ model and ID.
 | Samsung          | SAM00D3 | SyncMaster       | 1280x1024 | 17.1 |      | [63B01865CB01](<Analog/Samsung/SAM00D3/63B01865CB01>) |
 | Samsung          | SAM00D5 | SyncMaster       | 1280x1024 | 15.2 |      | [41A34FB22186](<Analog/Samsung/SAM00D5/41A34FB22186>) |
 | Samsung          | SAM00EC | SyncMaster       | 1280x1024 | 19.1 |      | [6AE6E58FB35D](<Analog/Samsung/SAM00EC/6AE6E58FB35D>) |
+| Samsung          | SAM00F0 | SyncMaster       | 1280x1024 | 17.1 |      | [5DB8C358F3BE](<Analog/Samsung/SAM00F0/5DB8C358F3BE>) |
 | Samsung          | SAM0101 | SyncMaster       | 1280x1024 | 17.1 |      | [585126E68387](<Analog/Samsung/SAM0101/585126E68387>) |
 | Samsung          | SAM0107 | SyncMaster       | 1280x1024 | 15.2 | 2007 | [8B7185A0C151](<Analog/Samsung/SAM0107/8B7185A0C151>) |
 | Samsung          | SAM0107 | SyncMaster       | 1280x1024 | 15.2 | 2006 | [65FA05464C64](<Analog/Samsung/SAM0107/65FA05464C64>) |
@@ -6393,12 +6631,12 @@ model and ID.
 | Samsung          | SAM01B7 | SyncMaster       | 1280x1024 | 17.1 | 2009 | [CBF448D6505A](<Analog/Samsung/SAM01B7/CBF448D6505A>) |
 | Samsung          | SAM01B7 | SyncMaster       | 1280x1024 | 17.1 | 2008 | [59B1C55EAEE8](<Analog/Samsung/SAM01B7/59B1C55EAEE8>) |
 | Samsung          | SAM01B7 | SyncMaster       | 1280x1024 | 17.1 | 2007 | [05A0E371151C](<Analog/Samsung/SAM01B7/05A0E371151C>) |
-| Samsung          | SAM01B7 | SyncMaster       | 1280x1024 | 17.1 | 2006 | [025FCEEF5914](<Analog/Samsung/SAM01B7/025FCEEF5914>) |
+| Samsung          | SAM01B7 | SyncMaster       | 1280x1024 | 17.1 | 2006 | [003CF411FA99](<Analog/Samsung/SAM01B7/003CF411FA99>) |
 | Samsung          | SAM01B7 | SyncMaster       | 1280x1024 | 17.1 |      | [02E47D78F372](<Analog/Samsung/SAM01B7/02E47D78F372>) |
 | Samsung          | SAM01B8 | SyncMaster       | 1280x1024 | 17.1 | 2006 | [252D602CBDED](<Analog/Samsung/SAM01B8/252D602CBDED>) |
 | Samsung          | SAM01B8 | SyncMaster       | 1280x1024 | 17.1 |      | [728225285F73](<Analog/Samsung/SAM01B8/728225285F73>) |
 | Samsung          | SAM01BA | SyncMaster       | 1280x1024 | 19.1 | 2007 | [2D8B954A4705](<Analog/Samsung/SAM01BA/2D8B954A4705>) |
-| Samsung          | SAM01BA | SyncMaster       | 1280x1024 | 19.1 | 2006 | [0D37B4C25214](<Analog/Samsung/SAM01BA/0D37B4C25214>) |
+| Samsung          | SAM01BA | SyncMaster       | 1280x1024 | 19.1 | 2006 | [02E9CEEBFE07](<Analog/Samsung/SAM01BA/02E9CEEBFE07>) |
 | Samsung          | SAM01BA | SyncMaster       | 1280x1024 | 19.1 |      | [C51526F4F6EC](<Analog/Samsung/SAM01BA/C51526F4F6EC>) |
 | Samsung          | SAM01C2 | SyncMaster       | 1280x1024 | 17.1 |      | [8E86B6D116CD](<Analog/Samsung/SAM01C2/8E86B6D116CD>) |
 | Samsung          | SAM01C4 | SyncMaster       | 1280x1024 | 19.1 | 2007 | [038E43880810](<Analog/Samsung/SAM01C4/038E43880810>) |
@@ -6407,6 +6645,7 @@ model and ID.
 | Samsung          | SAM01CE | SyncMaster       | 1024x768  | 14.9 | 2006 | [08FC9190311B](<Analog/Samsung/SAM01CE/08FC9190311B>) |
 | Samsung          | SAM01CE | SyncMaster       | 1024x768  | 14.9 |      | [49587E233FB3](<Analog/Samsung/SAM01CE/49587E233FB3>) |
 | Samsung          | SAM01CF | SyncMaster       | 1600x1200 | 21.1 | 2008 | [18A9FE51872D](<Analog/Samsung/SAM01CF/18A9FE51872D>) |
+| Samsung          | SAM01CF | SyncMaster       | 1600x1200 | 21.1 | 2006 | [0E6595B66738](<Analog/Samsung/SAM01CF/0E6595B66738>) |
 | Samsung          | SAM01D1 |                  | 1360x768  |      | 2006 | [038B85E045EB](<Analog/Samsung/SAM01D1/038B85E045EB>) |
 | Samsung          | SAM01D1 |                  | 1360x768  |      |      | [6999519E1E85](<Analog/Samsung/SAM01D1/6999519E1E85>) |
 | Samsung          | SAM01D3 | SyncMaster       | 1440x900  | 19.1 | 2007 | [14EB2A08EFBB](<Analog/Samsung/SAM01D3/14EB2A08EFBB>) |
@@ -6431,7 +6670,7 @@ model and ID.
 | Samsung          | SAM020A | SyncMaster       | 1280x1024 | 17.1 | 2007 | [17FF9693ACD8](<Analog/Samsung/SAM020A/17FF9693ACD8>) |
 | Samsung          | SAM020C | SyncMaster       | 1280x1024 | 17.1 | 2008 | [33A39669064A](<Analog/Samsung/SAM020C/33A39669064A>) |
 | Samsung          | SAM020C | SyncMaster       | 1280x1024 | 17.1 | 2007 | [4C96F4F6E5C8](<Analog/Samsung/SAM020C/4C96F4F6E5C8>) |
-| Samsung          | SAM0213 | SyncMaster       | 1680x1050 | 20.9 | 2007 | [946885AEBAA1](<Analog/Samsung/SAM0213/946885AEBAA1>) |
+| Samsung          | SAM0213 | SyncMaster       | 1680x1050 | 20.9 | 2007 | [47A40DA113C8](<Analog/Samsung/SAM0213/47A40DA113C8>) |
 | Samsung          | SAM0213 | SyncMaster       | 1680x1050 | 20.9 | 2006 | [3037BA075895](<Analog/Samsung/SAM0213/3037BA075895>) |
 | Samsung          | SAM0213 | SyncMaster       | 1680x1050 | 20.9 |      | [AF0DED07B347](<Analog/Samsung/SAM0213/AF0DED07B347>) |
 | Samsung          | SAM0215 | SyncMaster       | 1280x1024 | 17.1 | 2007 | [2BF6EFF7894C](<Analog/Samsung/SAM0215/2BF6EFF7894C>) |
@@ -6530,6 +6769,7 @@ model and ID.
 | Samsung          | SAM02F6 | SyncMaster       | 1280x1024 | 17.1 | 2008 | [184E657BBC1A](<Analog/Samsung/SAM02F6/184E657BBC1A>) |
 | Samsung          | SAM02F6 | SyncMaster       | 1280x1024 | 17.1 | 2007 | [022495EE92AA](<Analog/Samsung/SAM02F6/022495EE92AA>) |
 | Samsung          | SAM02F8 | SyncMaster       | 1440x900  | 19.1 | 2008 | [1DA26CA9F6B2](<Analog/Samsung/SAM02F8/1DA26CA9F6B2>) |
+| Samsung          | SAM02F8 | SyncMaster       | 1440x900  | 19.1 | 2007 | [FEC6275844C4](<Analog/Samsung/SAM02F8/FEC6275844C4>) |
 | Samsung          | SAM02FA | SyncMaster       | 1440x900  | 19.1 | 2007 | [A45D7CE526A1](<Analog/Samsung/SAM02FA/A45D7CE526A1>) |
 | Samsung          | SAM02FD | SyncMaster       | 1680x1050 | 20.0 | 2008 | [481FF7965549](<Analog/Samsung/SAM02FD/481FF7965549>) |
 | Samsung          | SAM02FD | SyncMaster       | 1680x1050 | 20.0 | 2007 | [1CD86346ABF1](<Analog/Samsung/SAM02FD/1CD86346ABF1>) |
@@ -6600,6 +6840,7 @@ model and ID.
 | Samsung          | SAM03C2 | SyncMaster       | 1680x1050 | 21.0 | 2009 | [11CA40C61F47](<Analog/Samsung/SAM03C2/11CA40C61F47>) |
 | Samsung          | SAM03C2 | SyncMaster       | 1680x1050 | 21.0 | 2008 | [02EFC371C7B8](<Analog/Samsung/SAM03C2/02EFC371C7B8>) |
 | Samsung          | SAM03C2 | SyncMaster       | 1680x1050 | 21.0 |      | [B83C710FF4A8](<Analog/Samsung/SAM03C2/B83C710FF4A8>) |
+| Samsung          | SAM03C3 |                  | 1920x1080 | 49.7 | 2007 | [C945AB96E5F9](<Analog/Samsung/SAM03C3/C945AB96E5F9>) |
 | Samsung          | SAM03CF | SyncMaster       | 1280x1024 | 17.1 | 2009 | [585DB7CA7C2F](<Analog/Samsung/SAM03CF/585DB7CA7C2F>) |
 | Samsung          | SAM03CF | SyncMaster       | 1280x1024 | 17.1 | 2008 | [6F984DB1106A](<Analog/Samsung/SAM03CF/6F984DB1106A>) |
 | Samsung          | SAM03CF | SyncMaster       | 1280x1024 | 17.1 |      | [0B3725FB5380](<Analog/Samsung/SAM03CF/0B3725FB5380>) |
@@ -6647,10 +6888,11 @@ model and ID.
 | Samsung          | SAM044E | SyncMaster       | 1440x900  | 19.1 | 2009 | [106592AA6E88](<Analog/Samsung/SAM044E/106592AA6E88>) |
 | Samsung          | SAM0450 | SyncMaster       | 1440x900  | 19.1 | 2009 | [52646E376FEF](<Analog/Samsung/SAM0450/52646E376FEF>) |
 | Samsung          | SAM0450 | SyncMaster       | 1440x900  | 19.1 | 2008 | [02349C5CBA73](<Analog/Samsung/SAM0450/02349C5CBA73>) |
-| Samsung          | SAM0453 | SyncMaster       | 1280x1024 | 19.1 | 2010 | [8B61608E8228](<Analog/Samsung/SAM0453/8B61608E8228>) |
+| Samsung          | SAM0453 | SyncMaster       | 1280x1024 | 19.1 | 2010 | [29EF30BAB4B2](<Analog/Samsung/SAM0453/29EF30BAB4B2>) |
 | Samsung          | SAM0453 | SyncMaster       | 1280x1024 | 19.1 | 2009 | [0C6E82B8BC78](<Analog/Samsung/SAM0453/0C6E82B8BC78>) |
 | Samsung          | SAM0453 | SyncMaster       | 1280x1024 | 19.1 | 2008 | [EDB61ABAE561](<Analog/Samsung/SAM0453/EDB61ABAE561>) |
 | Samsung          | SAM0456 | SyncMaster       | 1360x768  | 18.5 | 2008 | [DC709C3BCB32](<Analog/Samsung/SAM0456/DC709C3BCB32>) |
+| Samsung          | SAM0466 | SyncMaster       | 1920x1200 | 24.0 | 2009 | [ED3CD26ABA51](<Analog/Samsung/SAM0466/ED3CD26ABA51>) |
 | Samsung          | SAM0466 | SyncMaster       | 1920x1200 | 24.0 | 2008 | [3EFF8001149E](<Analog/Samsung/SAM0466/3EFF8001149E>) |
 | Samsung          | SAM0471 | SyncMaster       | 1360x768  | 15.3 | 2010 | [30FC20EB0184](<Analog/Samsung/SAM0471/30FC20EB0184>) |
 | Samsung          | SAM0471 | SyncMaster       | 1360x768  | 15.3 | 2009 | [06B9805289C4](<Analog/Samsung/SAM0471/06B9805289C4>) |
@@ -6674,6 +6916,7 @@ model and ID.
 | Samsung          | SAM049A | SyncMaster       | 1920x1080 | 21.7 | 2009 | [2A9E1E516CF7](<Analog/Samsung/SAM049A/2A9E1E516CF7>) |
 | Samsung          | SAM049C | SyncMaster       | 1920x1080 | 21.7 | 2009 | [1F5145D56AEE](<Analog/Samsung/SAM049C/1F5145D56AEE>) |
 | Samsung          | SAM049C | SyncMaster       | 1920x1080 | 21.7 | 2008 | [15E7C899464B](<Analog/Samsung/SAM049C/15E7C899464B>) |
+| Samsung          | SAM04A2 | SyncMaster       | 1440x900  | 19.1 | 2008 | [F2A9A2C00287](<Analog/Samsung/SAM04A2/F2A9A2C00287>) |
 | Samsung          | SAM04AE | SyncMaster       | 1680x1050 | 22.0 | 2009 | [16B595F91D5D](<Analog/Samsung/SAM04AE/16B595F91D5D>) |
 | Samsung          | SAM04B2 | SyncMaster       | 1680x1050 | 22.0 | 2008 | [978F63D00A87](<Analog/Samsung/SAM04B2/978F63D00A87>) |
 | Samsung          | SAM04CF | SyncMaster       | 1920x1200 | 24.0 | 2009 | [74CC35EC11FD](<Analog/Samsung/SAM04CF/74CC35EC11FD>) |
@@ -6691,6 +6934,7 @@ model and ID.
 | Samsung          | SAM04F3 | SyncMaster       | 1360x768  | 18.5 | 2009 | [4BADA5CD03B3](<Analog/Samsung/SAM04F3/4BADA5CD03B3>) |
 | Samsung          | SAM04F3 | SyncMaster       | 1360x768  | 18.5 |      | [2EA535BB981E](<Analog/Samsung/SAM04F3/2EA535BB981E>) |
 | Samsung          | SAM04FA |                  | 1920x1080 | 39.8 | 2008 | [60DCA9829156](<Analog/Samsung/SAM04FA/60DCA9829156>) |
+| Samsung          | SAM04FC | SMT-1934         | 1280x1024 | 19.1 | 2012 | [860172204DA0](<Analog/Samsung/SAM04FC/860172204DA0>) |
 | Samsung          | SAM04FC |                  | 1360x768  | 19.1 | 2008 | [C9695F88E804](<Analog/Samsung/SAM04FC/C9695F88E804>) |
 | Samsung          | SAM0502 |                  | 1920x1080 | 39.8 | 2008 | [B4EC656DF51B](<Analog/Samsung/SAM0502/B4EC656DF51B>) |
 | Samsung          | SAM0504 |                  | 1360x768  | 19.1 | 2008 | [43D423493EBE](<Analog/Samsung/SAM0504/43D423493EBE>) |
@@ -6703,7 +6947,7 @@ model and ID.
 | Samsung          | SAM0523 | SyncMaster       | 1920x1080 | 21.7 | 2009 | [04FCB39E332E](<Analog/Samsung/SAM0523/04FCB39E332E>) |
 | Samsung          | SAM0523 | SyncMaster       | 1920x1080 | 21.7 |      | [EB3EB4E477DD](<Analog/Samsung/SAM0523/EB3EB4E477DD>) |
 | Samsung          | SAM0525 | SyncMaster       | 1920x1080 | 23.1 | 2010 | [56340F20C5D4](<Analog/Samsung/SAM0525/56340F20C5D4>) |
-| Samsung          | SAM0525 | SyncMaster       | 1920x1080 | 23.1 | 2009 | [C33A2BF46726](<Analog/Samsung/SAM0525/C33A2BF46726>) |
+| Samsung          | SAM0525 | SyncMaster       | 1920x1080 | 23.1 | 2009 | [A4B0C046BA23](<Analog/Samsung/SAM0525/A4B0C046BA23>) |
 | Samsung          | SAM0527 | SyncMaster       | 1600x900  | 19.9 | 2009 | [68493F2F5C06](<Analog/Samsung/SAM0527/68493F2F5C06>) |
 | Samsung          | SAM0527 | SyncMaster       | 1600x900  | 19.9 | 2008 | [512AA6A14C88](<Analog/Samsung/SAM0527/512AA6A14C88>) |
 | Samsung          | SAM0529 | SyncMaster       | 1920x1080 | 23.1 | 2009 | [05912E7B3B7F](<Analog/Samsung/SAM0529/05912E7B3B7F>) |
@@ -6724,7 +6968,7 @@ model and ID.
 | Samsung          | SAM0567 | SyncMaster       | 1600x900  | 19.9 | 2010 | [21A8FA3727D0](<Analog/Samsung/SAM0567/21A8FA3727D0>) |
 | Samsung          | SAM0567 | SyncMaster       | 1600x900  | 19.9 | 2009 | [24379FD0856C](<Analog/Samsung/SAM0567/24379FD0856C>) |
 | Samsung          | SAM0569 | SyncMaster       | 1680x1050 | 21.0 | 2010 | [0B3CD9672F60](<Analog/Samsung/SAM0569/0B3CD9672F60>) |
-| Samsung          | SAM0569 | SyncMaster       | 1680x1050 | 21.0 | 2009 | [73A9D3534FEF](<Analog/Samsung/SAM0569/73A9D3534FEF>) |
+| Samsung          | SAM0569 | SyncMaster       | 1680x1050 | 21.0 | 2009 | [0D5CE6544C78](<Analog/Samsung/SAM0569/0D5CE6544C78>) |
 | Samsung          | SAM056F | SyncMaster       | 1920x1080 | 23.1 | 2012 | [67E621DF4FD2](<Analog/Samsung/SAM056F/67E621DF4FD2>) |
 | Samsung          | SAM056F | SyncMaster       | 1920x1080 | 23.1 | 2010 | [1FC503287A9E](<Analog/Samsung/SAM056F/1FC503287A9E>) |
 | Samsung          | SAM056F | SyncMaster       | 1920x1080 | 23.1 |      | [417BF7C97767](<Analog/Samsung/SAM056F/417BF7C97767>) |
@@ -6735,7 +6979,7 @@ model and ID.
 | Samsung          | SAM0577 | SyncMaster       | 1920x1080 | 21.7 | 2009 | [E37063737369](<Analog/Samsung/SAM0577/E37063737369>) |
 | Samsung          | SAM057A | SyncMaster       | 1680x1050 | 21.0 | 2009 | [305D8C47D4B3](<Analog/Samsung/SAM057A/305D8C47D4B3>) |
 | Samsung          | SAM0580 | SyncMaster       | 1280x1024 | 19.1 | 2010 | [0E4F7E486508](<Analog/Samsung/SAM0580/0E4F7E486508>) |
-| Samsung          | SAM0580 | SyncMaster       | 1280x1024 | 19.1 | 2009 | [27C5EAB6E872](<Analog/Samsung/SAM0580/27C5EAB6E872>) |
+| Samsung          | SAM0580 | SyncMaster       | 1280x1024 | 19.1 | 2009 | [0D2411D16F00](<Analog/Samsung/SAM0580/0D2411D16F00>) |
 | Samsung          | SAM0580 | SyncMaster       | 1280x1024 | 19.1 |      | [135DD4065845](<Analog/Samsung/SAM0580/135DD4065845>) |
 | Samsung          | SAM0581 | SyncMaster       | 1920x1080 | 21.7 |      | [DB86B170ED1A](<Analog/Samsung/SAM0581/DB86B170ED1A>) |
 | Samsung          | SAM0584 | SyncMaster       | 2048x1152 | 23.1 | 2009 | [407907B09D73](<Analog/Samsung/SAM0584/407907B09D73>) |
@@ -6772,6 +7016,7 @@ model and ID.
 | Samsung          | SAM059B | SyncMaster       | 1680x1050 | 21.0 | 2009 | [86AF43C2F3E3](<Analog/Samsung/SAM059B/86AF43C2F3E3>) |
 | Samsung          | SAM05A5 | SyncMaster       | 1920x1080 | 23.1 |      | [7D0B685FCF19](<Analog/Samsung/SAM05A5/7D0B685FCF19>) |
 | Samsung          | SAM05B1 | SyncMaster       | 1600x900  | 19.9 | 2009 | [9C908F4170F9](<Analog/Samsung/SAM05B1/9C908F4170F9>) |
+| Samsung          | SAM05C3 | SyncMaster       | 1920x1080 | 23.1 | 2010 | [9FBABA17D1A5](<Analog/Samsung/SAM05C3/9FBABA17D1A5>) |
 | Samsung          | SAM05C6 | SyncMaster       | 1920x1080 | 23.4 | 2011 | [8EE6287B366A](<Analog/Samsung/SAM05C6/8EE6287B366A>) |
 | Samsung          | SAM05C7 | SyncMaster       | 1920x1080 | 23.4 | 2010 | [B00AAE69F54B](<Analog/Samsung/SAM05C7/B00AAE69F54B>) |
 | Samsung          | SAM05C7 | SyncMaster       | 1920x1080 | 23.4 | 2009 | [89C2EC674796](<Analog/Samsung/SAM05C7/89C2EC674796>) |
@@ -6850,6 +7095,7 @@ model and ID.
 | Samsung          | SAM0685 | SMEX2220         | 1920x1080 | 21.7 |      | [ED91C47A9B65](<Analog/Samsung/SAM0685/ED91C47A9B65>) |
 | Samsung          | SAM068A | SMBX2440         | 1920x1080 | 24.0 | 2010 | [7B7994851FEA](<Analog/Samsung/SAM068A/7B7994851FEA>) |
 | Samsung          | SAM068A | SMBX2440         | 1920x1080 | 24.0 |      | [205FD326E6D3](<Analog/Samsung/SAM068A/205FD326E6D3>) |
+| Samsung          | SAM0690 | SMB2340          | 1920x1080 | 23.1 | 2012 | [C4F75D5BA7CE](<Analog/Samsung/SAM0690/C4F75D5BA7CE>) |
 | Samsung          | SAM0692 | SMB1740R         | 1280x1024 | 17.1 | 2010 | [B23980356E12](<Analog/Samsung/SAM0692/B23980356E12>) |
 | Samsung          | SAM0694 | SMB1940W         | 1440x900  | 19.1 | 2012 | [8C634B3D32E8](<Analog/Samsung/SAM0694/8C634B3D32E8>) |
 | Samsung          | SAM0694 | SMB1940W         | 1440x900  | 19.1 | 2010 | [A2E11092CFE3](<Analog/Samsung/SAM0694/A2E11092CFE3>) |
@@ -6862,6 +7108,7 @@ model and ID.
 | Samsung          | SAM0698 | SMB2240W         | 1680x1050 | 22.0 | 2010 | [2CBFDE745B31](<Analog/Samsung/SAM0698/2CBFDE745B31>) |
 | Samsung          | SAM069E | SMB2440L         | 1920x1080 | 23.4 | 2011 | [BF9E4962BA14](<Analog/Samsung/SAM069E/BF9E4962BA14>) |
 | Samsung          | SAM06A0 | SME2020          | 1600x900  | 19.9 | 2012 | [834CFB384E85](<Analog/Samsung/SAM06A0/834CFB384E85>) |
+| Samsung          | SAM06A0 | SME2020          | 1600x900  | 19.9 | 2011 | [BB68761DE673](<Analog/Samsung/SAM06A0/BB68761DE673>) |
 | Samsung          | SAM06A2 | SMB2220N         | 1920x1080 | 21.7 | 2012 | [9A539C717A60](<Analog/Samsung/SAM06A2/9A539C717A60>) |
 | Samsung          | SAM06A2 | SMB2220N         | 1920x1080 | 21.7 | 2011 | [2D63C6614257](<Analog/Samsung/SAM06A2/2D63C6614257>) |
 | Samsung          | SAM06A2 | SMB2220N         | 1920x1080 | 21.7 | 2010 | [012E2E551564](<Analog/Samsung/SAM06A2/012E2E551564>) |
@@ -6887,11 +7134,13 @@ model and ID.
 | Samsung          | SAM06B7 | SME1920          | 1366x768  | 18.5 | 2012 | [140FABC3DA03](<Analog/Samsung/SAM06B7/140FABC3DA03>) |
 | Samsung          | SAM06B7 | SME1920          | 1366x768  | 18.5 | 2011 | [09F8587F9132](<Analog/Samsung/SAM06B7/09F8587F9132>) |
 | Samsung          | SAM06B7 | SME1920          | 1366x768  | 18.5 | 2010 | [3C7D1AC06414](<Analog/Samsung/SAM06B7/3C7D1AC06414>) |
-| Samsung          | SAM06B7 | SME1920          | 1360x768  | 18.5 | 2010 | [ADF08DA767D8](<Analog/Samsung/SAM06B7/ADF08DA767D8>) |
+| Samsung          | SAM06B7 | SME1920          | 1360x768  | 18.5 | 2010 | [6BAE111E1A82](<Analog/Samsung/SAM06B7/6BAE111E1A82>) |
 | Samsung          | SAM06B9 | SMB1940          | 1280x1024 | 19.1 | 2011 | [38740D3441D9](<Analog/Samsung/SAM06B9/38740D3441D9>) |
 | Samsung          | SAM06B9 | SMB1940          | 1280x1024 | 19.1 | 2010 | [AC351F0D24B6](<Analog/Samsung/SAM06B9/AC351F0D24B6>) |
+| Samsung          | SAM06C2 | SME2420L         | 1920x1080 | 23.4 | 2012 | [98320A858472](<Analog/Samsung/SAM06C2/98320A858472>) |
 | Samsung          | SAM06C2 | SME2420L         | 1920x1080 | 23.4 | 2011 | [C4A0CC3FE9C8](<Analog/Samsung/SAM06C2/C4A0CC3FE9C8>) |
 | Samsung          | SAM06C2 | SME2420L         | 1920x1080 | 23.4 |      | [ED11D9746854](<Analog/Samsung/SAM06C2/ED11D9746854>) |
+| Samsung          | SAM06C8 |                  | 1920x1080 | 39.8 | 2010 | [4A3AEE2C2132](<Analog/Samsung/SAM06C8/4A3AEE2C2132>) |
 | Samsung          | SAM06FC | SM2333TN         | 1920x1080 | 23.1 | 2011 | [746B3C8DC5EA](<Analog/Samsung/SAM06FC/746B3C8DC5EA>) |
 | Samsung          | SAM06FC | SM2333TN         | 1920x1080 | 23.1 | 2010 | [07A688F8D6A5](<Analog/Samsung/SAM06FC/07A688F8D6A5>) |
 | Samsung          | SAM06FD | SMBX2035         | 1600x900  | 19.9 | 2010 | [5A2A08284E12](<Analog/Samsung/SAM06FD/5A2A08284E12>) |
@@ -6905,7 +7154,7 @@ model and ID.
 | Samsung          | SAM0711 | SMB2430HD        | 1920x1080 | 24.0 | 2010 | [32990D9BD48D](<Analog/Samsung/SAM0711/32990D9BD48D>) |
 | Samsung          | SAM0714 | SMBX1950         | 1366x768  | 18.5 | 2010 | [75B30E695E54](<Analog/Samsung/SAM0714/75B30E695E54>) |
 | Samsung          | SAM0717 | SMBX2050         | 1600x900  | 19.9 | 2011 | [AF7E37A56722](<Analog/Samsung/SAM0717/AF7E37A56722>) |
-| Samsung          | SAM0717 | SMBX2050         | 1600x900  | 19.9 | 2010 | [F1BE491C82C7](<Analog/Samsung/SAM0717/F1BE491C82C7>) |
+| Samsung          | SAM0717 | SMBX2050         | 1600x900  | 19.9 | 2010 | [9B59A9D3A125](<Analog/Samsung/SAM0717/9B59A9D3A125>) |
 | Samsung          | SAM0719 | SMBX2050N        | 1600x900  | 19.9 | 2010 | [1C5EF61B2DB2](<Analog/Samsung/SAM0719/1C5EF61B2DB2>) |
 | Samsung          | SAM071A | SMBX2250         | 1920x1080 | 21.7 | 2011 | [44BA6C5CAA6D](<Analog/Samsung/SAM071A/44BA6C5CAA6D>) |
 | Samsung          | SAM071A | SMBX2250         | 1920x1080 | 21.7 | 2010 | [2E83D8D215AA](<Analog/Samsung/SAM071A/2E83D8D215AA>) |
@@ -6966,7 +7215,7 @@ model and ID.
 | Samsung          | SAM07BF |                  | 1920x1080 | 37.0 | 2010 | [FCD6A70761A7](<Analog/Samsung/SAM07BF/FCD6A70761A7>) |
 | Samsung          | SAM07C4 |                  | 1920x1080 | 40.2 | 2010 | [4CFDBA545975](<Analog/Samsung/SAM07C4/4CFDBA545975>) |
 | Samsung          | SAM07C4 |                  | 1920x1080 | 31.5 | 2010 | [FC3C137F140F](<Analog/Samsung/SAM07C4/FC3C137F140F>) |
-| Samsung          | SAM07C9 | SMS23A550H       | 1920x1080 | 23.1 | 2012 | [8D1DC7BC1D61](<Analog/Samsung/SAM07C9/8D1DC7BC1D61>) |
+| Samsung          | SAM07C9 | SMS23A550H       | 1920x1080 | 23.1 | 2012 | [67D8C35DAC57](<Analog/Samsung/SAM07C9/67D8C35DAC57>) |
 | Samsung          | SAM07C9 | SMS23A550H       | 1920x1080 | 23.1 | 2011 | [1ED3158D957C](<Analog/Samsung/SAM07C9/1ED3158D957C>) |
 | Samsung          | SAM07CB | SMS27A550H       | 1920x1080 | 27.2 | 2012 | [132F796F7FA1](<Analog/Samsung/SAM07CB/132F796F7FA1>) |
 | Samsung          | SAM07CB | SMS27A550H       | 1920x1080 | 27.2 | 2011 | [1369FDF528C5](<Analog/Samsung/SAM07CB/1369FDF528C5>) |
@@ -6995,7 +7244,7 @@ model and ID.
 | Samsung          | SAM0837 |                  | 1920x1080 | 24.0 | 2011 | [2D9EFDD020B3](<Analog/Samsung/SAM0837/2D9EFDD020B3>) |
 | Samsung          | SAM0839 | SMS24A450        | 1920x1200 | 24.0 | 2012 | [004965356BC2](<Analog/Samsung/SAM0839/004965356BC2>) |
 | Samsung          | SAM0839 | SMS24A450        | 1920x1200 | 24.0 | 2011 | [18C6DCE702C8](<Analog/Samsung/SAM0839/18C6DCE702C8>) |
-| Samsung          | SAM083E | S19A10N          | 1366x768  | 18.5 | 2012 | [1E90B19925D6](<Analog/Samsung/SAM083E/1E90B19925D6>) |
+| Samsung          | SAM083E | S19A10N          | 1366x768  | 18.5 | 2012 | [1C98FDF62E7B](<Analog/Samsung/SAM083E/1C98FDF62E7B>) |
 | Samsung          | SAM083E | S19A10N          | 1366x768  | 18.5 | 2011 | [0D128E017EFC](<Analog/Samsung/SAM083E/0D128E017EFC>) |
 | Samsung          | SAM0847 | SMS19A450        | 1280x1024 | 19.1 | 2012 | [5F241703EC02](<Analog/Samsung/SAM0847/5F241703EC02>) |
 | Samsung          | SAM0847 | SMS19A450        | 1280x1024 | 19.1 | 2011 | [93881567574F](<Analog/Samsung/SAM0847/93881567574F>) |
@@ -7019,13 +7268,13 @@ model and ID.
 | Samsung          | SAM08A2 | S19B150          | 1366x768  | 18.5 | 2011 | [47D888582DB7](<Analog/Samsung/SAM08A2/47D888582DB7>) |
 | Samsung          | SAM08A2 | S19B150          | 1366x768  | 18.5 |      | [DA79FBF1A264](<Analog/Samsung/SAM08A2/DA79FBF1A264>) |
 | Samsung          | SAM08A3 | S22B150          | 1920x1080 | 21.7 | 2013 | [273FC21CF5AC](<Analog/Samsung/SAM08A3/273FC21CF5AC>) |
-| Samsung          | SAM08A3 | S22B150          | 1920x1080 | 21.7 | 2012 | [0EFB51A5749E](<Analog/Samsung/SAM08A3/0EFB51A5749E>) |
+| Samsung          | SAM08A3 | S22B150          | 1920x1080 | 21.7 | 2012 | [0143660E5DD7](<Analog/Samsung/SAM08A3/0143660E5DD7>) |
 | Samsung          | SAM08A4 | S19B300          | 1366x768  | 18.5 | 2012 | [004AB49BFB72](<Analog/Samsung/SAM08A4/004AB49BFB72>) |
 | Samsung          | SAM08A5 | S19B300          | 1366x768  | 18.5 | 2013 | [CBAC6D2FF5D7](<Analog/Samsung/SAM08A5/CBAC6D2FF5D7>) |
 | Samsung          | SAM08A5 | S19B300          | 1366x768  | 18.5 | 2012 | [211408C1E67B](<Analog/Samsung/SAM08A5/211408C1E67B>) |
 | Samsung          | SAM08A5 | S19B300          | 1366x768  | 18.5 | 2011 | [6CBA570615BF](<Analog/Samsung/SAM08A5/6CBA570615BF>) |
 | Samsung          | SAM08A7 | S20B300          | 1600x900  | 19.9 | 2013 | [C259627E8C7B](<Analog/Samsung/SAM08A7/C259627E8C7B>) |
-| Samsung          | SAM08A7 | S20B300          | 1600x900  | 19.9 | 2012 | [3C021A48AEF9](<Analog/Samsung/SAM08A7/3C021A48AEF9>) |
+| Samsung          | SAM08A7 | S20B300          | 1600x900  | 19.9 | 2012 | [326B426250CA](<Analog/Samsung/SAM08A7/326B426250CA>) |
 | Samsung          | SAM08A8 | S20B300          | 1600x900  | 19.9 | 2013 | [24E4F9E5049D](<Analog/Samsung/SAM08A8/24E4F9E5049D>) |
 | Samsung          | SAM08A8 | S20B300          | 1600x900  | 19.9 | 2012 | [0CE6B2834002](<Analog/Samsung/SAM08A8/0CE6B2834002>) |
 | Samsung          | SAM08A8 | S20B300          | 1600x900  | 19.9 | 2011 | [D75BA602F9B1](<Analog/Samsung/SAM08A8/D75BA602F9B1>) |
@@ -7081,6 +7330,7 @@ model and ID.
 | Samsung          | SAM0916 | S20B350          | 1600x900  | 19.9 | 2013 | [44D19BD9E3BC](<Analog/Samsung/SAM0916/44D19BD9E3BC>) |
 | Samsung          | SAM0918 | S23B550          | 1920x1080 | 23.1 | 2012 | [8CA417AD57AF](<Analog/Samsung/SAM0918/8CA417AD57AF>) |
 | Samsung          | SAM0918 | S23B550          | 1920x1080 | 23.1 |      | [AE0A888CDD6D](<Analog/Samsung/SAM0918/AE0A888CDD6D>) |
+| Samsung          | SAM091A | S27B550          | 1920x1080 | 27.2 | 2012 | [C58FFD940DCE](<Analog/Samsung/SAM091A/C58FFD940DCE>) |
 | Samsung          | SAM0926 | T19B300          | 1366x768  | 18.5 | 2011 | [5F5F281708E8](<Analog/Samsung/SAM0926/5F5F281708E8>) |
 | Samsung          | SAM092B | T22B300          | 1920x1080 | 21.7 | 2011 | [9ABFA52D016F](<Analog/Samsung/SAM092B/9ABFA52D016F>) |
 | Samsung          | SAM092E | T24B300          | 1920x1080 | 23.4 | 2011 | [1460BBAC931D](<Analog/Samsung/SAM092E/1460BBAC931D>) |
@@ -7125,10 +7375,12 @@ model and ID.
 | Samsung          | SAM09C6 | S22C450          | 1680x1050 | 21.7 | 2013 | [14018EDDB67A](<Analog/Samsung/SAM09C6/14018EDDB67A>) |
 | Samsung          | SAM09C6 | S22C450          | 1680x1050 | 21.7 | 2012 | [016A147D8AAA](<Analog/Samsung/SAM09C6/016A147D8AAA>) |
 | Samsung          | SAM09CA | S24C450          | 1920x1080 | 24.0 | 2015 | [811174EE25F5](<Analog/Samsung/SAM09CA/811174EE25F5>) |
-| Samsung          | SAM09CA | S24C450          | 1920x1080 | 24.0 | 2013 | [BCA98E49E771](<Analog/Samsung/SAM09CA/BCA98E49E771>) |
+| Samsung          | SAM09CA | S24C450          | 1920x1080 | 24.0 | 2014 | [E2AB36F884E6](<Analog/Samsung/SAM09CA/E2AB36F884E6>) |
+| Samsung          | SAM09CA | S24C450          | 1920x1080 | 24.0 | 2013 | [42141EEEF59F](<Analog/Samsung/SAM09CA/42141EEEF59F>) |
 | Samsung          | SAM09CA | S24C450          | 1920x1080 | 24.0 | 2012 | [D6336F3C5584](<Analog/Samsung/SAM09CA/D6336F3C5584>) |
 | Samsung          | SAM09CC | S24C450          | 1920x1080 | 23.4 | 2014 | [2E37B3CD7DF2](<Analog/Samsung/SAM09CC/2E37B3CD7DF2>) |
 | Samsung          | SAM09CE | S24C450          | 1920x1200 | 24.0 | 2013 | [7A02139BBA43](<Analog/Samsung/SAM09CE/7A02139BBA43>) |
+| Samsung          | SAM09D0 | S27C450          | 1920x1080 | 27.2 | 2013 | [63AF8DE47158](<Analog/Samsung/SAM09D0/63AF8DE47158>) |
 | Samsung          | SAM09DD | S23C650          | 1920x1080 | 23.1 |      | [F7C8CAEA6BD1](<Analog/Samsung/SAM09DD/F7C8CAEA6BD1>) |
 | Samsung          | SAM09E7 | S24C650          | 1920x1080 | 23.4 | 2016 | [4E990D49CC6B](<Analog/Samsung/SAM09E7/4E990D49CC6B>) |
 | Samsung          | SAM09E7 | S24C650          | 1920x1080 | 23.4 | 2014 | [4111B1F38E50](<Analog/Samsung/SAM09E7/4111B1F38E50>) |
@@ -7166,6 +7418,7 @@ model and ID.
 | Samsung          | SAM0A5A | S27C570          | 1920x1080 | 27.2 | 2013 | [47859F3809EE](<Analog/Samsung/SAM0A5A/47859F3809EE>) |
 | Samsung          | SAM0A5F | S27C750          | 1920x1080 | 27.2 | 2013 | [191C8C4227A3](<Analog/Samsung/SAM0A5F/191C8C4227A3>) |
 | Samsung          | SAM0A84 | S24C230          | 1920x1080 | 23.4 | 2013 | [5D7C2CF8FA08](<Analog/Samsung/SAM0A84/5D7C2CF8FA08>) |
+| Samsung          | SAM0A86 | S27C230          | 1920x1080 | 27.2 | 2014 | [65B5CEC93986](<Analog/Samsung/SAM0A86/65B5CEC93986>) |
 | Samsung          | SAM0A86 | S27C230          | 1920x1080 | 27.2 | 2013 | [232EF75C4BD7](<Analog/Samsung/SAM0A86/232EF75C4BD7>) |
 | Samsung          | SAM0A99 | T24C300          | 1920x1080 | 24.0 | 2012 | [B5D47C0E8739](<Analog/Samsung/SAM0A99/B5D47C0E8739>) |
 | Samsung          | SAM0AA0 | T24C550          | 1920x1080 | 23.4 | 2012 | [E4546BF65471](<Analog/Samsung/SAM0AA0/E4546BF65471>) |
@@ -7189,7 +7442,7 @@ model and ID.
 | Samsung          | SAM0B24 | S24D360          | 1920x1080 | 23.4 | 2014 | [75AFBB34A0D5](<Analog/Samsung/SAM0B24/75AFBB34A0D5>) |
 | Samsung          | SAM0B34 | S19D300          | 1366x768  | 18.5 | 2016 | [DFFAD2F64032](<Analog/Samsung/SAM0B34/DFFAD2F64032>) |
 | Samsung          | SAM0B34 | S19D300          | 1366x768  | 18.5 | 2015 | [1542927810F4](<Analog/Samsung/SAM0B34/1542927810F4>) |
-| Samsung          | SAM0B34 | S19D300          | 1366x768  | 18.5 | 2014 | [4A10EE9D280D](<Analog/Samsung/SAM0B34/4A10EE9D280D>) |
+| Samsung          | SAM0B34 | S19D300          | 1366x768  | 18.5 | 2014 | [3FA6007E76EB](<Analog/Samsung/SAM0B34/3FA6007E76EB>) |
 | Samsung          | SAM0B34 | S19D300          | 1366x768  | 18.5 | 2013 | [C4196284CCC0](<Analog/Samsung/SAM0B34/C4196284CCC0>) |
 | Samsung          | SAM0B34 | S19D300          | 1366x768  | 18.5 |      | [5EA9C0F4A9F0](<Analog/Samsung/SAM0B34/5EA9C0F4A9F0>) |
 | Samsung          | SAM0B35 | S19D300          | 1366x768  | 18.5 | 2017 | [CFB06E10E8CE](<Analog/Samsung/SAM0B35/CFB06E10E8CE>) |
@@ -7270,7 +7523,9 @@ model and ID.
 | Samsung          | SAM0C6C | S22E200          | 1920x1080 | 21.7 | 2015 | [10E320513DB0](<Analog/Samsung/SAM0C6C/10E320513DB0>) |
 | Samsung          | SAM0C6D | S22E200          | 1920x1080 | 21.7 | 2017 | [F546C2C47452](<Analog/Samsung/SAM0C6D/F546C2C47452>) |
 | Samsung          | SAM0C6D | S22E200          | 1920x1080 | 21.7 |      | [2374FB0AEE19](<Analog/Samsung/SAM0C6D/2374FB0AEE19>) |
+| Samsung          | SAM0C79 | S22E450          | 1920x1080 | 21.7 | 2015 | [7B85A1C2CED2](<Analog/Samsung/SAM0C79/7B85A1C2CED2>) |
 | Samsung          | SAM0C7F | S24E450          | 1920x1080 | 23.4 | 2019 | [77BD30296FFD](<Analog/Samsung/SAM0C7F/77BD30296FFD>) |
+| Samsung          | SAM0C7F | S24E450          | 1920x1080 | 23.4 | 2015 | [AE56E3B7B0CA](<Analog/Samsung/SAM0C7F/AE56E3B7B0CA>) |
 | Samsung          | SAM0C81 | S24E450          | 1920x1080 | 24.0 | 2017 | [B2633868B8C3](<Analog/Samsung/SAM0C81/B2633868B8C3>) |
 | Samsung          | SAM0C81 | S24E450          | 1920x1080 | 24.0 | 2016 | [A4CD05D459BC](<Analog/Samsung/SAM0C81/A4CD05D459BC>) |
 | Samsung          | SAM0C81 | S24E450          | 1920x1080 | 24.0 | 2015 | [9E5CB868F1FF](<Analog/Samsung/SAM0C81/9E5CB868F1FF>) |
@@ -7289,19 +7544,20 @@ model and ID.
 | Samsung          | SAM0D1B | S22F350          | 1920x1080 | 21.7 | 2019 | [053FAC143314](<Analog/Samsung/SAM0D1B/053FAC143314>) |
 | Samsung          | SAM0D1B | S22F350          | 1920x1080 | 21.7 | 2018 | [0AA756051EC2](<Analog/Samsung/SAM0D1B/0AA756051EC2>) |
 | Samsung          | SAM0D1B | S22F350          | 1920x1080 | 21.7 | 2017 | [0B0EDFA2C890](<Analog/Samsung/SAM0D1B/0B0EDFA2C890>) |
-| Samsung          | SAM0D1B | S22F350          | 1920x1080 | 21.7 | 2016 | [0CC53EB8D185](<Analog/Samsung/SAM0D1B/0CC53EB8D185>) |
+| Samsung          | SAM0D1B | S22F350          | 1920x1080 | 21.7 | 2016 | [045BA65A5B25](<Analog/Samsung/SAM0D1B/045BA65A5B25>) |
 | Samsung          | SAM0D1B | S22F350          | 1920x1080 | 21.7 |      | [14E35190D200](<Analog/Samsung/SAM0D1B/14E35190D200>) |
-| Samsung          | SAM0D21 | S24F350          | 1920x1080 | 23.4 | 2021 | [613D39872276](<Analog/Samsung/SAM0D21/613D39872276>) |
+| Samsung          | SAM0D21 | S24F350          | 1920x1080 | 23.4 | 2021 | [5727B213360F](<Analog/Samsung/SAM0D21/5727B213360F>) |
 | Samsung          | SAM0D21 | S24F350          | 1920x1080 | 23.4 | 2020 | [032038642FC1](<Analog/Samsung/SAM0D21/032038642FC1>) |
 | Samsung          | SAM0D21 | S24F350          | 1920x1080 | 23.4 | 2019 | [2274442FEF45](<Analog/Samsung/SAM0D21/2274442FEF45>) |
 | Samsung          | SAM0D21 | S24F350          | 1920x1080 | 23.4 | 2018 | [1B4EE4CACB41](<Analog/Samsung/SAM0D21/1B4EE4CACB41>) |
-| Samsung          | SAM0D21 | S24F350          | 1920x1080 | 23.4 | 2017 | [A0FE8750CEC3](<Analog/Samsung/SAM0D21/A0FE8750CEC3>) |
+| Samsung          | SAM0D21 | S24F350          | 1920x1080 | 23.4 | 2017 | [7D7526241042](<Analog/Samsung/SAM0D21/7D7526241042>) |
 | Samsung          | SAM0D21 | S24F350          | 1920x1080 | 23.4 | 2016 | [0EB6CFD9D32B](<Analog/Samsung/SAM0D21/0EB6CFD9D32B>) |
 | Samsung          | SAM0D21 | S24F350          | 1920x1080 | 23.4 |      | [6A793D47271E](<Analog/Samsung/SAM0D21/6A793D47271E>) |
 | Samsung          | SAM0D23 | S27F350          | 1920x1080 | 27.2 | 2020 | [AD6D91190D78](<Analog/Samsung/SAM0D23/AD6D91190D78>) |
 | Samsung          | SAM0D23 | S27F350          | 1920x1080 | 27.2 | 2018 | [7DED4AD5648D](<Analog/Samsung/SAM0D23/7DED4AD5648D>) |
 | Samsung          | SAM0D23 | S27F350          | 1920x1080 | 27.2 | 2017 | [7B77E02B0112](<Analog/Samsung/SAM0D23/7B77E02B0112>) |
-| Samsung          | SAM0D2D | C24F390          | 1920x1080 | 23.4 | 2021 | [84138C85FB74](<Analog/Samsung/SAM0D2D/84138C85FB74>) |
+| Samsung          | SAM0D2D | C24F390          | 1920x1080 | 23.4 | 2022 | [B85C2E1C9FD9](<Analog/Samsung/SAM0D2D/B85C2E1C9FD9>) |
+| Samsung          | SAM0D2D | C24F390          | 1920x1080 | 23.4 | 2021 | [36F4B4418CCA](<Analog/Samsung/SAM0D2D/36F4B4418CCA>) |
 | Samsung          | SAM0D2D | C24F390          | 1920x1080 | 23.4 | 2020 | [1F0FD3FFA592](<Analog/Samsung/SAM0D2D/1F0FD3FFA592>) |
 | Samsung          | SAM0D2D | C24F390          | 1920x1080 | 23.4 | 2019 | [02D9807924F4](<Analog/Samsung/SAM0D2D/02D9807924F4>) |
 | Samsung          | SAM0D2D | C24F390          | 1920x1080 | 23.4 | 2018 | [05D949158EC1](<Analog/Samsung/SAM0D2D/05D949158EC1>) |
@@ -7336,7 +7592,7 @@ model and ID.
 | Samsung          | SAM0F61 | S27E332          | 1920x1080 | 27.2 | 2019 | [F6D9880CD306](<Analog/Samsung/SAM0F61/F6D9880CD306>) |
 | Samsung          | SAM0F9E | C27R50x          | 1920x1080 | 27.2 | 2021 | [1B8A6A70E965](<Analog/Samsung/SAM0F9E/1B8A6A70E965>) |
 | Samsung          | SAM0F9E | C27R50x          | 1920x1080 | 27.2 | 2020 | [BC4D58E9E52C](<Analog/Samsung/SAM0F9E/BC4D58E9E52C>) |
-| Samsung          | SAM100F | S24R35x          | 1920x1080 | 24.0 | 2020 | [643EDEA12F35](<Analog/Samsung/SAM100F/643EDEA12F35>) |
+| Samsung          | SAM100F | S24R35x          | 1920x1080 | 24.0 | 2020 | [12E84327B004](<Analog/Samsung/SAM100F/12E84327B004>) |
 | Samsung          | SAM1022 | S24R65x          | 1920x1080 | 24.0 | 2020 | [4DB858316C64](<Analog/Samsung/SAM1022/4DB858316C64>) |
 | Samsung          | SAM1035 |                  | 1024x768  | 13.8 |      | [15684EC92983](<Analog/Samsung/SAM1035/15684EC92983>) |
 | Samsung          | SAM103B | S22R35x          | 1920x1080 | 21.7 | 2021 | [7D0F6CC121A7](<Analog/Samsung/SAM103B/7D0F6CC121A7>) |
@@ -7352,10 +7608,12 @@ model and ID.
 | Samsung          | SAM38D7 | S/M 700NF        | 2048x1536 | 15.7 |      | [B45CE34C6E86](<Analog/Samsung/SAM38D7/B45CE34C6E86>) |
 | Samsung          | SAM6056 |                  | 1024x768  | 14.9 |      | [2B9639813827](<Analog/Samsung/SAM6056/2B9639813827>) |
 | Samsung          | SAM7001 | C32R50x          | 1920x1080 | 31.5 | 2020 | [7FC45BA13B90](<Analog/Samsung/SAM7001/7FC45BA13B90>) |
+| Samsung          | SAM7020 | LC27T55          | 1920x1080 | 27.7 | 2020 | [C472D3FB5271](<Analog/Samsung/SAM7020/C472D3FB5271>) |
 | Samsung          | SAM707C | LF22T35          | 1920x1080 | 21.7 | 2020 | [C6FC9DAAB99D](<Analog/Samsung/SAM707C/C6FC9DAAB99D>) |
 | Samsung          | SAM707E | LF24T35          | 1920x1080 | 24.0 | 2021 | [73C7D46CABCA](<Analog/Samsung/SAM707E/73C7D46CABCA>) |
 | Samsung          | SAM7080 | LF27T35          | 1920x1080 | 27.2 | 2022 | [51EBBA000827](<Analog/Samsung/SAM7080/51EBBA000827>) |
-| Samsung          | SAM7114 | S24A31x          | 1920x1080 | 23.8 | 2021 | [A207E29A6E98](<Analog/Samsung/SAM7114/A207E29A6E98>) |
+| Samsung          | SAM7080 | LF27T35          | 1920x1080 | 27.2 | 2021 | [276013B73EBF](<Analog/Samsung/SAM7080/276013B73EBF>) |
+| Samsung          | SAM7114 | S24A31x          | 1920x1080 | 23.8 | 2021 | [571960A36570](<Analog/Samsung/SAM7114/571960A36570>) |
 | Samsung          | SAM7114 | S24A31x          | 1920x1080 | 23.8 | 2020 | [9DB482D9E9A4](<Analog/Samsung/SAM7114/9DB482D9E9A4>) |
 | Samsung          | SECA00B | EPSON PJ         | 1920x1080 |      |      | [EE1526DDACFC](<Analog/Samsung/SECA00B/EE1526DDACFC>) |
 | Samsung          | SECA00D | EPSON PJ         | 1440x900  |      | 2012 | [9C8BC92FD71F](<Analog/Samsung/SECA00D/9C8BC92FD71F>) |
@@ -7379,6 +7637,7 @@ model and ID.
 | Samsung          | STN001F | SyncMaster       | 1600x1200 | 15.2 |      | [301B959DC8B8](<Analog/Samsung/STN001F/301B959DC8B8>) |
 | Samsung          | STN0020 | SAMTRON          | 2048x1536 | 17.2 |      | [494E881AF506](<Analog/Samsung/STN0020/494E881AF506>) |
 | Samsung          | STN0021 | SAMTRON          | 1280x1024 | 17.1 |      | [05E5465788A2](<Analog/Samsung/STN0021/05E5465788A2>) |
+| Samsung          | STN0022 | SAMTRON          | 1280x1024 | 19.1 |      | [B16CCFFB7994](<Analog/Samsung/STN0022/B16CCFFB7994>) |
 | Samsung          | STN0046 | SyncMaster       | 1280x1024 | 17.1 |      | [32935DB1D19B](<Analog/Samsung/STN0046/32935DB1D19B>) |
 | Sanyo            | SAN07BE | LCD MONITOR h... | 1280x1024 | 15.7 | 2012 | [7E262D234B95](<Analog/Sanyo/SAN07BE/7E262D234B95>) |
 | Sanyo            | SAN1040 | TV               | 1920x1080 | 37.0 | 2011 | [AFD0DBD0FC50](<Analog/Sanyo/SAN1040/AFD0DBD0FC50>) |
@@ -7451,6 +7710,7 @@ model and ID.
 | Sharp            | SHP2066 | LL               | 1280x1024 | 17.1 |      | [9BE586F678C7](<Analog/Sharp/SHP2066/9BE586F678C7>) |
 | Sharp            | SHP20A6 | LL-T15A4-B       | 1024x768  | 14.9 |      | [0B6D92253D66](<Analog/Sharp/SHP20A6/0B6D92253D66>) |
 | Sharp            | SHP20AF | LL-T17A4-B       | 1280x1024 | 17.1 |      | [90AD671E3086](<Analog/Sharp/SHP20AF/90AD671E3086>) |
+| Sharp            | SHP20D7 | LL-171A-B        | 1280x1024 | 17.1 |      | [23EC6B5AB20C](<Analog/Sharp/SHP20D7/23EC6B5AB20C>) |
 | Sharp            | SHP2106 | LL-172A-B        | 1280x1024 | 17.1 |      | [87320A5599E8](<Analog/Sharp/SHP2106/87320A5599E8>) |
 | Sharp            | SHP2127 | LL-172C-B        | 1280x1024 | 17.1 |      | [DCC8876D357B](<Analog/Sharp/SHP2127/DCC8876D357B>) |
 | Sharp            | SHP2141 | LL-193A-B        | 1280x1024 | 19.1 |      | [4C56F425FDF6](<Analog/Sharp/SHP2141/4C56F425FDF6>) |
@@ -7481,8 +7741,9 @@ model and ID.
 | Sony             | SNY0902 | TV               | 1360x768  |      | 2010 | [F66B986D6CDF](<Analog/Sony/SNY0902/F66B986D6CDF>) |
 | Sony             | SNY1090 | SDM-S91          | 1280x1024 | 19.1 |      | [48709A4E4CBA](<Analog/Sony/SNY1090/48709A4E4CBA>) |
 | Sony             | SNY1190 | SDM-HS93         | 1280x1024 | 19.1 |      | [787F4694E37C](<Analog/Sony/SNY1190/787F4694E37C>) |
-| Sony             | SNY1290 | SDM-X93          | 1280x1024 | 19.1 |      | [F0FBC35F1C33](<Analog/Sony/SNY1290/F0FBC35F1C33>) |
+| Sony             | SNY1290 | SDM-X93          | 1280x1024 | 19.1 |      | [19C1AC509158](<Analog/Sony/SNY1290/19C1AC509158>) |
 | Sony             | SNY1390 | SDM-S93          | 1280x1024 | 19.1 |      | [12BF344B0D2F](<Analog/Sony/SNY1390/12BF344B0D2F>) |
+| Sony             | SNY1490 | SDM-HX93         | 1280x1024 | 19.1 |      | [AC70F5A0FF80](<Analog/Sony/SNY1490/AC70F5A0FF80>) |
 | Sony             | SNY1601 | TV               | 1280x768  |      | 2007 | [87992B3A9711](<Analog/Sony/SNY1601/87992B3A9711>) |
 | Sony             | SNY1A02 | HD FORU          | 1920x1080 |      | 2011 | [251C8F751E4E](<Analog/Sony/SNY1A02/251C8F751E4E>) |
 | Sony             | SNY1A52 | PCVD             | 1024x768  | 14.9 |      | [0EBC7B87254A](<Analog/Sony/SNY1A52/0EBC7B87254A>) |
@@ -7504,7 +7765,7 @@ model and ID.
 | Sony             | SNY2450 | SDM-S53          | 1024x768  | 14.9 |      | [CA382CA2F606](<Analog/Sony/SNY2450/CA382CA2F606>) |
 | Sony             | SNY2500 | SDM-HS95P        | 1280x1024 | 19.1 |      | [12BE39B5D729](<Analog/Sony/SNY2500/12BE39B5D729>) |
 | Sony             | SNY2601 | TV               | 1360x768  | 32.1 | 2007 | [F15DAD249021](<Analog/Sony/SNY2601/F15DAD249021>) |
-| Sony             | SNY2700 | SDM-HS95         | 1280x1024 | 19.1 | 2006 | [B28F11F8F74C](<Analog/Sony/SNY2700/B28F11F8F74C>) |
+| Sony             | SNY2700 | SDM-HS95         | 1280x1024 | 19.1 | 2006 | [289A6511C503](<Analog/Sony/SNY2700/289A6511C503>) |
 | Sony             | SNY2700 | SDM-HS95         | 1280x1024 | 19.1 |      | [41F55669BF2C](<Analog/Sony/SNY2700/41F55669BF2C>) |
 | Sony             | SNY2701 |                  | 1920x1080 | 39.7 |      | [082A6AA939E2](<Analog/Sony/SNY2701/082A6AA939E2>) |
 | Sony             | SNY2770 | SDM-S73          | 1280x1024 | 17.1 |      | [0C55BE70A199](<Analog/Sony/SNY2770/0C55BE70A199>) |
@@ -7556,6 +7817,7 @@ model and ID.
 | Sun              | SUN0000 | SUNNY            | 1920x1080 | 20.0 | 2013 | [0ED16057E43E](<Analog/Sun/SUN0000/0ED16057E43E>) |
 | Sun              | SUN0001 | Sunray 270       | 1280x1024 | 16.8 | 2008 | [3DF4D2D674E2](<Analog/Sun/SUN0001/3DF4D2D674E2>) |
 | Sun              | SUN0038 | SUNPLUS          | 1440x900  | 19.1 | 2009 | [84BEDD2A0178](<Analog/Sun/SUN0038/84BEDD2A0178>) |
+| Sun              | SUN0587 | GH18PS           | 1280x1024 | 18.2 |      | [B12829E235E6](<Analog/Sun/SUN0587/B12829E235E6>) |
 | Sun              | SUN0589 | PN17JO           | 1280x1024 | 14.9 |      | [07E8765A2ADD](<Analog/Sun/SUN0589/07E8765A2ADD>) |
 | Sun              | SUN0595 | X7202A           | 1280x1024 | 19.1 | 2006 | [8B6478E1BEB8](<Analog/Sun/SUN0595/8B6478E1BEB8>) |
 | Sun              | SUN0598 | L9ZF             | 1280x1024 | 19.1 | 2008 | [7D00D845C426](<Analog/Sun/SUN0598/7D00D845C426>) |
@@ -7572,6 +7834,7 @@ model and ID.
 | TCL              | TCL0000 |                  | 1360x768  | 34.8 | 2011 | [60C2C960E7BB](<Analog/TCL/TCL0000/60C2C960E7BB>) |
 | TCL              | TCL0000 |                  | 1920x1080 | 34.8 | 2009 | [587D537961C0](<Analog/TCL/TCL0000/587D537961C0>) |
 | TCL              | TCL0000 |                  | 1360x768  | 34.8 | 2009 | [E06B8F7FCB5E](<Analog/TCL/TCL0000/E06B8F7FCB5E>) |
+| TCL              | TCL001A | 3MS82AX          | 1360x768  | 15.4 | 2013 | [0A72D1CC5C20](<Analog/TCL/TCL001A/0A72D1CC5C20>) |
 | TCL              | TCL1770 | T-7005L          | 1280x1024 | 17.1 | 2006 | [F7C898E80A11](<Analog/TCL/TCL1770/F7C898E80A11>) |
 | TCL              | TCL3788 | MST6M182         | 1360x768  | 36.5 | 2013 | [8AB865ED7B3A](<Analog/TCL/TCL3788/8AB865ED7B3A>) |
 | TEO              | TEO5550 | TL565            | 1024x768  | 14.9 |      | [797404B1920C](<Analog/TEO/TEO5550/797404B1920C>) |
@@ -7582,6 +7845,7 @@ model and ID.
 | Targa Visionary  | TAR0C35 | LCD 19-3         | 1280x1024 | 19.1 |      | [A6550885EFE1](<Analog/Targa Visionary/TAR0C35/A6550885EFE1>) |
 | Targa Visionary  | TAR0C49 | LCD17-6          | 1280x1024 | 17.1 | 2007 | [DFC41531E413](<Analog/Targa Visionary/TAR0C49/DFC41531E413>) |
 | Targa Visionary  | TAR0C49 | LCD 17-5         | 1280x1024 | 19.1 | 2006 | [34E7AA3D6D02](<Analog/Targa Visionary/TAR0C49/34E7AA3D6D02>) |
+| Targa Visionary  | TARA034 |                  | 1280x1024 | 16.8 |      | [7AF85820CD08](<Analog/Targa Visionary/TARA034/7AF85820CD08>) |
 | Targa Visionary  | TARA194 | LCD19-4          | 1280x1024 | 19.1 | 2007 | [B6DA1F1B92C1](<Analog/Targa Visionary/TARA194/B6DA1F1B92C1>) |
 | Targa Visionary  | TARA194 | LCD19            | 1280x1024 | 19.1 |      | [2179BDF5AD08](<Analog/Targa Visionary/TARA194/2179BDF5AD08>) |
 | Targa Visionary  | TARA229 | LCD22-1 Wide     | 1680x1050 | 22.0 | 2009 | [C5167419C78F](<Analog/Targa Visionary/TARA229/C5167419C78F>) |
@@ -7605,7 +7869,9 @@ model and ID.
 | Toshiba          | LCD000D | Monitor 15"      | 1024x768  | 14.9 |      | [C494559F7516](<Analog/Toshiba/LCD000D/C494559F7516>) |
 | Toshiba          | LCD0010 |                  | 1366x768  | 26.0 | 2016 | [C5940A326455](<Analog/Toshiba/LCD0010/C5940A326455>) |
 | Toshiba          | LCD0010 |                  | 1920x1080 | 41.9 | 2016 | [EE21F9510B9E](<Analog/Toshiba/LCD0010/EE21F9510B9E>) |
+| Toshiba          | LCD0010 |                  | 1920x1080 | 41.9 | 2009 | [6728AA1EB91B](<Analog/Toshiba/LCD0010/6728AA1EB91B>) |
 | Toshiba          | LCD0021 |                  | 1360x768  | 3.6  | 2007 | [E9505F095BAD](<Analog/Toshiba/LCD0021/E9505F095BAD>) |
+| Toshiba          | LCD039A | Lanix LX900T     | 1440x900  | 19.1 | 2011 | [35BBAE07ADB7](<Analog/Toshiba/LCD039A/35BBAE07ADB7>) |
 | Toshiba          | LCD039A | VGA              | 1920x1080 |      | 2009 | [ED544AA3AC59](<Analog/Toshiba/LCD039A/ED544AA3AC59>) |
 | Toshiba          | LCD077B | TF1920A          | 1280x1024 | 19.1 | 2008 | [89AF7664B204](<Analog/Toshiba/LCD077B/89AF7664B204>) |
 | Toshiba          | LCD1366 |                  | 1366x768  | 34.8 | 2009 | [47C2CECFCB53](<Analog/Toshiba/LCD1366/47C2CECFCB53>) |
@@ -7622,6 +7888,7 @@ model and ID.
 | Toshiba          | LCD2091 | T2091W           | 1600x900  | 19.9 | 2011 | [BCC40D81353A](<Analog/Toshiba/LCD2091/BCC40D81353A>) |
 | Toshiba          | LCD2160 | 22W              | 1920x1080 | 22.3 | 2009 | [F53C6ED0ECDE](<Analog/Toshiba/LCD2160/F53C6ED0ECDE>) |
 | Toshiba          | LCD2216 | A293Wd           | 1920x1080 | 21.1 | 2010 | [201A651276FD](<Analog/Toshiba/LCD2216/201A651276FD>) |
+| Toshiba          | LCD705A | L705A            | 1280x1024 | 17.1 | 2006 | [2DA3FB5B47FD](<Analog/Toshiba/LCD705A/2DA3FB5B47FD>) |
 | Toshiba          | LCDC980 | LCD-MONITOR      | 1280x1024 | 19.1 | 2007 | [1AAF2A2FF08A](<Analog/Toshiba/LCDC980/1AAF2A2FF08A>) |
 | Toshiba          | LCDE561 | LCD-MONITOR      | 1024x768  | 14.9 |      | [ABE6E62C2408](<Analog/Toshiba/LCDE561/ABE6E62C2408>) |
 | Toshiba          | LCDE780 | LCD-MONITOR      | 1280x1024 | 17.1 |      | [3EC86B83A282](<Analog/Toshiba/LCDE780/3EC86B83A282>) |
@@ -7660,6 +7927,8 @@ model and ID.
 | UpStar           | UPS0001 | M200A1           | 1600x900  | 19.4 |      | [AE577874E188](<Analog/UpStar/UPS0001/AE577874E188>) |
 | UpStar           | UPS2900 | M29A1            | 2560x1080 | 28.6 | 2015 | [F5E6FEFF59F2](<Analog/UpStar/UPS2900/F5E6FEFF59F2>) |
 | UpStar           | UPS3200 | M320A1           | 1920x1080 | 31.5 | 2015 | [C3C6CC9CF599](<Analog/UpStar/UPS3200/C3C6CC9CF599>) |
+| Vestel           | VES0000 | 24W_LCD_TV       | 1366x768  | 24.0 | 2017 | [8646C5C56055](<Analog/Vestel/VES0000/8646C5C56055>) |
+| Vestel           | VES0000 | 40FHD_LCD_TV     | 1920x1080 | 40.2 | 2016 | [1832E774FB78](<Analog/Vestel/VES0000/1832E774FB78>) |
 | Vestel           | VES0000 | 22FHD_LCD_TV     | 1920x1080 | 21.7 | 2016 | [B43014AA1727](<Analog/Vestel/VES0000/B43014AA1727>) |
 | Vestel           | VES0000 | 32W_LCD_TV       | 1366x768  | 31.7 | 2016 | [CA2C9702DECA](<Analog/Vestel/VES0000/CA2C9702DECA>) |
 | Vestel           | VES0000 | 32FHD_LCD_TV     | 1920x1080 | 31.7 | 2016 | [D8D551CCE6AE](<Analog/Vestel/VES0000/D8D551CCE6AE>) |
@@ -7677,6 +7946,7 @@ model and ID.
 | Vestel           | VES0000 | 19W LCD-TV       | 1360x768  | 18.6 |      | [6B66364D40FA](<Analog/Vestel/VES0000/6B66364D40FA>) |
 | Vestel           | VES0000 | 15 LCD-TV        | 1360x768  | 14.9 |      | [DAA6FAE8EC9B](<Analog/Vestel/VES0000/DAA6FAE8EC9B>) |
 | Vestel           | VES0000 | 26W LCD-TV       | 1920x1200 | 31.2 |      | [FC32BF2784CA](<Analog/Vestel/VES0000/FC32BF2784CA>) |
+| Vestel           | VES3700 | 50UHD_LCD_TV     | 1920x1080 | 49.7 | 2017 | [509C2694E0A6](<Analog/Vestel/VES3700/509C2694E0A6>) |
 | Vestel           | VES3700 | 43FHD_LCD_TV     | 1920x1080 | 43.0 | 2016 | [76EC80A6FD6D](<Analog/Vestel/VES3700/76EC80A6FD6D>) |
 | Vestel           | VES3700 | 40FHD_LCD_TV     | 1920x1080 | 40.2 | 2016 | [948447695CD6](<Analog/Vestel/VES3700/948447695CD6>) |
 | Vestel           | VES3700 | 55FHD_LCD_TV     | 1920x1080 | 49.7 | 2015 | [7E0C5A2FC62B](<Analog/Vestel/VES3700/7E0C5A2FC62B>) |
@@ -7706,7 +7976,7 @@ model and ID.
 | ViewSonic        | VSC0626 |                  | 1366x768  | 18.5 | 2010 | [17EA15CE0083](<Analog/ViewSonic/VSC0626/17EA15CE0083>) |
 | ViewSonic        | VSC0A28 |                  | 1920x1080 | 21.7 | 2011 | [13F8C42936C7](<Analog/ViewSonic/VSC0A28/13F8C42936C7>) |
 | ViewSonic        | VSC0C11 | VP171b           | 1280x1024 | 17.1 |      | [20D5262F522A](<Analog/ViewSonic/VSC0C11/20D5262F522A>) |
-| ViewSonic        | VSC0C28 |                  | 1920x1080 | 23.4 | 2011 | [28824D274EE1](<Analog/ViewSonic/VSC0C28/28824D274EE1>) |
+| ViewSonic        | VSC0C28 |                  | 1920x1080 | 23.4 | 2011 | [1609808C173D](<Analog/ViewSonic/VSC0C28/1609808C173D>) |
 | ViewSonic        | VSC0E11 | VP191b           | 1280x1024 | 19.1 |      | [0DE7AA99EA87](<Analog/ViewSonic/VSC0E11/0DE7AA99EA87>) |
 | ViewSonic        | VSC0E11 | VP191b           | 1280x1024 | 19.3 |      | [6106B1F9067A](<Analog/ViewSonic/VSC0E11/6106B1F9067A>) |
 | ViewSonic        | VSC0E28 |                  | 1920x1080 | 21.7 | 2013 | [E9387B4E2713](<Analog/ViewSonic/VSC0E28/E9387B4E2713>) |
@@ -7720,6 +7990,7 @@ model and ID.
 | ViewSonic        | VSC0F1E | VA703            | 1280x1024 | 17.1 |      | [4C6D57DD198F](<Analog/ViewSonic/VSC0F1E/4C6D57DD198F>) |
 | ViewSonic        | VSC0F30 |                  | 1920x1080 | 21.7 | 2020 | [CC0A85BFA2E1](<Analog/ViewSonic/VSC0F30/CC0A85BFA2E1>) |
 | ViewSonic        | VSC0F30 |                  | 1920x1080 | 21.7 | 2018 | [4581C9010553](<Analog/ViewSonic/VSC0F30/4581C9010553>) |
+| ViewSonic        | VSC0F30 | VA2261           | 1920x1080 | 21.7 | 2017 | [886227D95246](<Analog/ViewSonic/VSC0F30/886227D95246>) |
 | ViewSonic        | VSC0F30 | VA2261           | 1920x1080 | 21.7 | 2015 | [E3EDDDA32B7A](<Analog/ViewSonic/VSC0F30/E3EDDDA32B7A>) |
 | ViewSonic        | VSC111E | VA903 SERIES     | 1280x1024 | 19.1 | 2007 | [4E4E6B39F206](<Analog/ViewSonic/VSC111E/4E4E6B39F206>) |
 | ViewSonic        | VSC111E | VA903 SERIES     | 1280x1024 | 19.1 | 2006 | [FBD5DAB1232D](<Analog/ViewSonic/VSC111E/FBD5DAB1232D>) |
@@ -7771,6 +8042,7 @@ model and ID.
 | ViewSonic        | VSC3221 | VA2616w-2        | 1920x1200 | 25.5 | 2008 | [079934611FE8](<Analog/ViewSonic/VSC3221/079934611FE8>) |
 | ViewSonic        | VSC3319 | VE510b           | 1024x768  | 14.9 |      | [E9C06AE59C46](<Analog/ViewSonic/VSC3319/E9C06AE59C46>) |
 | ViewSonic        | VSC331C | VA915            | 1280x1024 | 19.1 |      | [721D654C268E](<Analog/ViewSonic/VSC331C/721D654C268E>) |
+| ViewSonic        | VSC3321 | VA2626wm         | 1920x1200 | 25.5 | 2008 | [0D3E53D86ADD](<Analog/ViewSonic/VSC3321/0D3E53D86ADD>) |
 | ViewSonic        | VSC3422 | VA2213w          | 1920x1080 | 21.7 | 2010 | [2FB338ABC2C2](<Analog/ViewSonic/VSC3422/2FB338ABC2C2>) |
 | ViewSonic        | VSC3422 | VA2213w          | 1920x1080 | 21.7 | 2009 | [1DE5525B8970](<Analog/ViewSonic/VSC3422/1DE5525B8970>) |
 | ViewSonic        | VSC3422 | VA2213wm         | 1920x1080 | 21.7 | 2008 | [8DCA7B310BA8](<Analog/ViewSonic/VSC3422/8DCA7B310BA8>) |
@@ -7789,9 +8061,11 @@ model and ID.
 | ViewSonic        | VSC3A2C |                  | 1920x1080 | 27.2 | 2016 | [A544ACA1253F](<Analog/ViewSonic/VSC3A2C/A544ACA1253F>) |
 | ViewSonic        | VSC3A2C |                  | 1920x1080 | 27.2 | 2015 | [3B78132574CE](<Analog/ViewSonic/VSC3A2C/3B78132574CE>) |
 | ViewSonic        | VSC3B19 | VX710            | 1280x1024 | 17.1 |      | [5DE277F86AE8](<Analog/ViewSonic/VSC3B19/5DE277F86AE8>) |
+| ViewSonic        | VSC3B66 | VA2406-FHD       | 1920x1080 | 24.0 | 2021 | [EA4249599E25](<Analog/ViewSonic/VSC3B66/EA4249599E25>) |
 | ViewSonic        | VSC3C19 | VX910            | 1280x1024 | 19.1 |      | [86486303FB56](<Analog/ViewSonic/VSC3C19/86486303FB56>) |
 | ViewSonic        | VSC3C31 |                  | 1920x1080 | 19.4 | 2017 | [591A11E713FA](<Analog/ViewSonic/VSC3C31/591A11E713FA>) |
 | ViewSonic        | VSC3C31 |                  | 1920x1080 | 19.4 | 2015 | [834C2DC132E8](<Analog/ViewSonic/VSC3C31/834C2DC132E8>) |
+| ViewSonic        | VSC3D08 | VG500            | 1024x768  | 14.9 |      | [53315EEBD6D0](<Analog/ViewSonic/VSC3D08/53315EEBD6D0>) |
 | ViewSonic        | VSC3E08 | VG700            | 1280x1024 | 17.1 |      | [13001FE82528](<Analog/ViewSonic/VSC3E08/13001FE82528>) |
 | ViewSonic        | VSC3E32 |                  | 1920x1080 | 27.2 | 2019 | [DF8DB4F4C179](<Analog/ViewSonic/VSC3E32/DF8DB4F4C179>) |
 | ViewSonic        | VSC3F24 | VX2739wm         | 1920x1080 | 27.2 | 2010 | [05D8BF529672](<Analog/ViewSonic/VSC3F24/05D8BF529672>) |
@@ -7837,10 +8111,11 @@ model and ID.
 | ViewSonic        | VSC5E32 |                  | 1920x1080 | 21.7 | 2019 | [C8099251D027](<Analog/ViewSonic/VSC5E32/C8099251D027>) |
 | ViewSonic        | VSC5F27 |                  | 1280x1024 | 19.1 | 2011 | [4D2DCDB8BCF5](<Analog/ViewSonic/VSC5F27/4D2DCDB8BCF5>) |
 | ViewSonic        | VSC5F27 |                  | 1280x1024 | 19.1 | 2010 | [ED15F01A3D77](<Analog/ViewSonic/VSC5F27/ED15F01A3D77>) |
-| ViewSonic        | VSC6026 |                  | 1600x900  | 19.9 | 2011 | [3E56FB931591](<Analog/ViewSonic/VSC6026/3E56FB931591>) |
+| ViewSonic        | VSC6026 |                  | 1600x900  | 19.9 | 2011 | [2A8965B5C7D1](<Analog/ViewSonic/VSC6026/2A8965B5C7D1>) |
 | ViewSonic        | VSC6026 |                  | 1600x900  | 19.9 | 2010 | [5784CE321846](<Analog/ViewSonic/VSC6026/5784CE321846>) |
 | ViewSonic        | VSC6120 | NX2232w          | 1680x1050 | 21.7 | 2008 | [26AA141D0773](<Analog/ViewSonic/VSC6120/26AA141D0773>) |
 | ViewSonic        | VSC622A |                  | 1920x1080 | 27.2 | 2011 | [C4BBDE1704A1](<Analog/ViewSonic/VSC622A/C4BBDE1704A1>) |
+| ViewSonic        | VSC622C | PJD5132          | 1600x1200 |      | 2014 | [5E02ABA6AA47](<Analog/ViewSonic/VSC622C/5E02ABA6AA47>) |
 | ViewSonic        | VSC631E |                  | 1280x1024 | 17.1 | 2008 | [209BEB067B5C](<Analog/ViewSonic/VSC631E/209BEB067B5C>) |
 | ViewSonic        | VSC631E |                  | 1280x1024 | 17.1 | 2007 | [04BE8CB3910F](<Analog/ViewSonic/VSC631E/04BE8CB3910F>) |
 | ViewSonic        | VSC631E |                  | 1280x1024 | 17.1 | 2006 | [949BD96935AA](<Analog/ViewSonic/VSC631E/949BD96935AA>) |
@@ -7857,19 +8132,19 @@ model and ID.
 | ViewSonic        | VSC6A1E |                  | 1280x1024 | 17.1 | 2006 | [031C48F8918C](<Analog/ViewSonic/VSC6A1E/031C48F8918C>) |
 | ViewSonic        | VSC6A1E |                  | 1280x1024 | 17.1 |      | [0A131014AF02](<Analog/ViewSonic/VSC6A1E/0A131014AF02>) |
 | ViewSonic        | VSC6A20 | VX1940w          | 1680x1050 | 19.1 | 2007 | [57DD444CFA99](<Analog/ViewSonic/VSC6A20/57DD444CFA99>) |
-| ViewSonic        | VSC6B20 | VX2240w          | 1680x1050 | 22.4 | 2009 | [A9B6867942C3](<Analog/ViewSonic/VSC6B20/A9B6867942C3>) |
+| ViewSonic        | VSC6B20 | VX2240w          | 1680x1050 | 22.4 | 2009 | [3D20D4D573E0](<Analog/ViewSonic/VSC6B20/3D20D4D573E0>) |
 | ViewSonic        | VSC6B20 | VX2240w          | 1680x1050 | 22.4 | 2008 | [3D1080005CDE](<Analog/ViewSonic/VSC6B20/3D1080005CDE>) |
 | ViewSonic        | VSC6C09 | VA720            | 1280x1024 | 17.1 |      | [A892BDBEC283](<Analog/ViewSonic/VSC6C09/A892BDBEC283>) |
 | ViewSonic        | VSC6C26 |                  | 1600x900  | 19.9 | 2010 | [272005861B0A](<Analog/ViewSonic/VSC6C26/272005861B0A>) |
 | ViewSonic        | VSC6C2E |                  | 1920x1080 | 23.4 | 2014 | [0580065A2205](<Analog/ViewSonic/VSC6C2E/0580065A2205>) |
 | ViewSonic        | VSC6D2C | PJD7820HD        | 1920x1080 |      | 2013 | [BFBADA46EAB2](<Analog/ViewSonic/VSC6D2C/BFBADA46EAB2>) |
-| ViewSonic        | VSC6D2E |                  | 1600x900  | 19.4 | 2014 | [62E3C9ECECA6](<Analog/ViewSonic/VSC6D2E/62E3C9ECECA6>) |
+| ViewSonic        | VSC6D2E |                  | 1600x900  | 19.4 | 2014 | [25C7F98336EB](<Analog/ViewSonic/VSC6D2E/25C7F98336EB>) |
 | ViewSonic        | VSC6E19 | VA721            | 1280x1024 | 17.1 |      | [029B705492C2](<Analog/ViewSonic/VSC6E19/029B705492C2>) |
 | ViewSonic        | VSC6E26 |                  | 1920x1080 | 21.7 | 2012 | [A7F8C737FE1F](<Analog/ViewSonic/VSC6E26/A7F8C737FE1F>) |
 | ViewSonic        | VSC6E26 |                  | 1920x1080 | 21.7 | 2010 | [AA084E4C24B7](<Analog/ViewSonic/VSC6E26/AA084E4C24B7>) |
 | ViewSonic        | VSC6F20 | NX2240w          | 1680x1050 | 22.0 | 2007 | [B638AEE8167A](<Analog/ViewSonic/VSC6F20/B638AEE8167A>) |
 | ViewSonic        | VSC6F2E |                  | 1920x1080 | 21.7 | 2017 | [288E83FDD0AD](<Analog/ViewSonic/VSC6F2E/288E83FDD0AD>) |
-| ViewSonic        | VSC6F2E |                  | 1920x1080 | 21.7 | 2016 | [D3BC67A3157B](<Analog/ViewSonic/VSC6F2E/D3BC67A3157B>) |
+| ViewSonic        | VSC6F2E |                  | 1920x1080 | 21.7 | 2016 | [C2C6FDDAF182](<Analog/ViewSonic/VSC6F2E/C2C6FDDAF182>) |
 | ViewSonic        | VSC6F2E |                  | 1920x1080 | 21.7 | 2015 | [13892B920890](<Analog/ViewSonic/VSC6F2E/13892B920890>) |
 | ViewSonic        | VSC6F2E |                  | 1920x1080 | 21.7 | 2014 | [46A49526FCAE](<Analog/ViewSonic/VSC6F2E/46A49526FCAE>) |
 | ViewSonic        | VSC6F2E |                  | 1920x1080 | 21.7 | 2013 | [1B1C597845D5](<Analog/ViewSonic/VSC6F2E/1B1C597845D5>) |
@@ -7890,6 +8165,7 @@ model and ID.
 | ViewSonic        | VSC721C |                  | 1280x1024 | 19.1 |      | [EA7D37ED1BA9](<Analog/ViewSonic/VSC721C/EA7D37ED1BA9>) |
 | ViewSonic        | VSC7228 |                  | 1920x1080 | 27.2 | 2012 | [600F4F62814D](<Analog/ViewSonic/VSC7228/600F4F62814D>) |
 | ViewSonic        | VSC7228 |                  | 1920x1080 | 27.2 | 2011 | [4CE3E0AEE236](<Analog/ViewSonic/VSC7228/4CE3E0AEE236>) |
+| ViewSonic        | VSC732E |                  | 1920x1080 | 23.4 | 2016 | [5A31B2A37BA6](<Analog/ViewSonic/VSC732E/5A31B2A37BA6>) |
 | ViewSonic        | VSC732E |                  | 1920x1080 | 23.4 | 2013 | [C22AD4217403](<Analog/ViewSonic/VSC732E/C22AD4217403>) |
 | ViewSonic        | VSC752E |                  | 1920x1080 | 27.2 | 2017 | [267A073659BE](<Analog/ViewSonic/VSC752E/267A073659BE>) |
 | ViewSonic        | VSC752E |                  | 1920x1080 | 27.2 | 2015 | [EBB4538781C1](<Analog/ViewSonic/VSC752E/EBB4538781C1>) |
@@ -7944,9 +8220,11 @@ model and ID.
 | ViewSonic        | VSC9D1E | VG1930wm         | 1440x900  | 19.1 | 2010 | [E6753F5BD3E6](<Analog/ViewSonic/VSC9D1E/E6753F5BD3E6>) |
 | ViewSonic        | VSC9D1E | VG1930wm         | 1440x900  | 19.1 | 2007 | [AE6EB0868F3C](<Analog/ViewSonic/VSC9D1E/AE6EB0868F3C>) |
 | ViewSonic        | VSC9D1E | VG1930wm         | 1440x900  | 19.1 | 2006 | [50418B8B026C](<Analog/ViewSonic/VSC9D1E/50418B8B026C>) |
+| ViewSonic        | VSC9F28 |                  | 1920x1080 | 27.2 | 2011 | [3DECF03AD6F9](<Analog/ViewSonic/VSC9F28/3DECF03AD6F9>) |
 | ViewSonic        | VSCA02A | VA2206-LED       | 1920x1080 | 21.7 | 2012 | [E4117E42F647](<Analog/ViewSonic/VSCA02A/E4117E42F647>) |
 | ViewSonic        | VSCA218 | VG710s           | 1280x1024 | 17.1 |      | [5D89B9B8645F](<Analog/ViewSonic/VSCA218/5D89B9B8645F>) |
 | ViewSonic        | VSCA21E | VG2230wm         | 1680x1050 | 22.0 | 2009 | [41702CC70F23](<Analog/ViewSonic/VSCA21E/41702CC70F23>) |
+| ViewSonic        | VSCA21E | VG2230wm         | 1680x1050 | 22.0 | 2008 | [03D331E825A3](<Analog/ViewSonic/VSCA21E/03D331E825A3>) |
 | ViewSonic        | VSCA21E | VG2230wm         | 1680x1050 | 22.0 | 2007 | [A10B7CB36E6B](<Analog/ViewSonic/VSCA21E/A10B7CB36E6B>) |
 | ViewSonic        | VSCA21F | VA1703w-2        | 1440x900  | 17.2 | 2007 | [284C1DCB6052](<Analog/ViewSonic/VSCA21F/284C1DCB6052>) |
 | ViewSonic        | VSCA21F | VA1703wb         | 1440x900  | 17.2 |      | [B99103730B8C](<Analog/ViewSonic/VSCA21F/B99103730B8C>) |
@@ -8009,6 +8287,7 @@ model and ID.
 | ViewSonic        | VSCC31E | Q9-3             | 1280x1024 | 19.1 | 2006 | [407463223056](<Analog/ViewSonic/VSCC31E/407463223056>) |
 | ViewSonic        | VSCC42B |                  | 1920x1080 | 21.7 | 2020 | [105A00C9E960](<Analog/ViewSonic/VSCC42B/105A00C9E960>) |
 | ViewSonic        | VSCC42B |                  | 1920x1080 | 21.7 | 2015 | [365C3215B94A](<Analog/ViewSonic/VSCC42B/365C3215B94A>) |
+| ViewSonic        | VSCC520 | PJ513D           | 1280x1024 |      | 2008 | [06FB74CA952F](<Analog/ViewSonic/VSCC520/06FB74CA952F>) |
 | ViewSonic        | VSCC826 |                  | 1920x1080 | 23.1 | 2011 | [0127D3A8DED8](<Analog/ViewSonic/VSCC826/0127D3A8DED8>) |
 | ViewSonic        | VSCCB25 |                  | 1920x1080 | 21.7 | 2013 | [6450028C12A7](<Analog/ViewSonic/VSCCB25/6450028C12A7>) |
 | ViewSonic        | VSCCB25 |                  | 1920x1080 | 21.7 | 2011 | [0B9B87EDC73D](<Analog/ViewSonic/VSCCB25/0B9B87EDC73D>) |
@@ -8051,6 +8330,7 @@ model and ID.
 | ViewSonic        | VSCE51D | VX2025wm         | 1680x1050 | 20.0 |      | [6881E9683C3E](<Analog/ViewSonic/VSCE51D/6881E9683C3E>) |
 | ViewSonic        | VSCE726 |                  | 1920x1080 | 21.7 | 2012 | [3C6A32313EC4](<Analog/ViewSonic/VSCE726/3C6A32313EC4>) |
 | ViewSonic        | VSCE726 |                  | 1920x1080 | 21.7 | 2011 | [7D8401585BAC](<Analog/ViewSonic/VSCE726/7D8401585BAC>) |
+| ViewSonic        | VSCE727 | VA2702w          | 1920x1080 | 27.2 | 2011 | [197E2A17B178](<Analog/ViewSonic/VSCE727/197E2A17B178>) |
 | ViewSonic        | VSCE732 |                  | 1920x1080 | 23.4 |      | [CAC95B620591](<Analog/ViewSonic/VSCE732/CAC95B620591>) |
 | ViewSonic        | VSCE735 | VX3276-FHD       | 1920x1080 | 31.5 | 2019 | [03A617678C92](<Analog/ViewSonic/VSCE735/03A617678C92>) |
 | ViewSonic        | VSCE735 | VX3276           | 1920x1080 | 31.5 |      | [6E91A2849F8B](<Analog/ViewSonic/VSCE735/6E91A2849F8B>) |
@@ -8083,9 +8363,10 @@ model and ID.
 | ViewSonic        | VSCFC21 | VX2260WM         | 1920x1080 | 21.7 | 2009 | [1363DD499D8A](<Analog/ViewSonic/VSCFC21/1363DD499D8A>) |
 | ViewSonic        | VSCFC21 | VX2260WM         | 1920x1080 | 21.7 | 2008 | [41A61232612A](<Analog/ViewSonic/VSCFC21/41A61232612A>) |
 | Vita             | VIT03DC | VT988            | 1280x1024 | 17.1 |      | [EF1A96370D9E](<Analog/Vita/VIT03DC/EF1A96370D9E>) |
-| Vita             | VIT1950 | V195EW-W         | 1600x900  | 19.4 | 2017 | [763DA7840B06](<Analog/Vita/VIT1950/763DA7840B06>) |
+| Vita             | VIT1950 | V195EW-W         | 1600x900  | 19.4 | 2017 | [4A0CB31B8E60](<Analog/Vita/VIT1950/4A0CB31B8E60>) |
 | Vita             | VIT1950 | V195EW-W         | 1600x900  | 19.4 | 2015 | [F707452CABFA](<Analog/Vita/VIT1950/F707452CABFA>) |
 | Vizio            | VIZ0019 |                  | 1360x768  | 18.5 | 2008 | [D739CCA2D492](<Analog/Vizio/VIZ0019/D739CCA2D492>) |
+| Vizio            | VIZ0021 |                  | 1366x768  | 31.5 | 2008 | [97B508BDE1A5](<Analog/Vizio/VIZ0021/97B508BDE1A5>) |
 | Vizio            | VIZ0021 |                  | 1366x768  | 31.5 | 2007 | [B6A8D49AD3B4](<Analog/Vizio/VIZ0021/B6A8D49AD3B4>) |
 | Vizio            | VIZ0022 |                  | 1920x1080 | 21.7 | 2008 | [22E75BA36F0C](<Analog/Vizio/VIZ0022/22E75BA36F0C>) |
 | Vizio            | VIZ0022 |                  | 1366x768  | 37.0 | 2007 | [A3A1B49698FF](<Analog/Vizio/VIZ0022/A3A1B49698FF>) |
@@ -8093,6 +8374,7 @@ model and ID.
 | Vizio            | VIZ0033 |                  | 1360x768  | 41.9 | 2007 | [142DE647F977](<Analog/Vizio/VIZ0033/142DE647F977>) |
 | Vizio            | VIZ0035 | VO320E           | 1366x768  | 31.5 | 2009 | [573A1A80A0F3](<Analog/Vizio/VIZ0035/573A1A80A0F3>) |
 | Vizio            | VIZ0035 |                  | 1366x768  | 40.2 | 2009 | [6A412AD43095](<Analog/Vizio/VIZ0035/6A412AD43095>) |
+| Vizio            | VIZ0035 | VA26LHDTV10T     | 1360x768  | 26.1 | 2008 | [037E5DE05AA1](<Analog/Vizio/VIZ0035/037E5DE05AA1>) |
 | Vizio            | VIZ0035 |                  | 1680x1050 | 22.3 |      | [91C1F4E0E47C](<Analog/Vizio/VIZ0035/91C1F4E0E47C>) |
 | Vizio            | VIZ0035 | VO320E           | 1366x768  | 31.5 |      | [AE0F759E85E9](<Analog/Vizio/VIZ0035/AE0F759E85E9>) |
 | Vizio            | VIZ0042 |                  | 1366x768  | 31.5 | 2008 | [7FC2D9FCF4DA](<Analog/Vizio/VIZ0042/7FC2D9FCF4DA>) |
@@ -8118,8 +8400,10 @@ model and ID.
 | Vizio            | VIZ0078 | E422VL           | 1920x1080 | 41.9 | 2011 | [7C261E856366](<Analog/Vizio/VIZ0078/7C261E856366>) |
 | Vizio            | VIZ0079 | E322AR           | 1360x768  | 31.7 | 2012 | [F2144FE33F96](<Analog/Vizio/VIZ0079/F2144FE33F96>) |
 | Vizio            | VIZ0083 | E321VL           | 1366x768  | 31.7 | 2011 | [3CBE5F56945D](<Analog/Vizio/VIZ0083/3CBE5F56945D>) |
+| Vizio            | VIZ0090 | E421VO           | 1920x1080 | 42.1 | 2011 | [EFF3D2EE1EFD](<Analog/Vizio/VIZ0090/EFF3D2EE1EFD>) |
 | Vizio            | VIZ0092 | E3D420VX         | 1920x1080 | 41.9 | 2011 | [C08FA465D288](<Analog/Vizio/VIZ0092/C08FA465D288>) |
 | Vizio            | VIZ0095 | E231-B1          | 1360x768  | 24.2 | 2014 | [C4F383B17F63](<Analog/Vizio/VIZ0095/C4F383B17F63>) |
+| Vizio            | VIZ0098 | E221-A1          | 1920x1080 | 21.7 | 2013 | [B181C230F792](<Analog/Vizio/VIZ0098/B181C230F792>) |
 | Vizio            | VIZ0098 | E241-A1          | 1920x1080 | 23.4 | 2013 | [FE240EAB010F](<Analog/Vizio/VIZ0098/FE240EAB010F>) |
 | Vizio            | VIZ1002 | E28h-C1          | 1360x768  | 27.7 | 2014 | [6C86E72C1E3E](<Analog/Vizio/VIZ1002/6C86E72C1E3E>) |
 | Vizio            | VIZ1005 | D24-D1           | 1920x1080 | 23.4 | 2016 | [D56CBF29F13D](<Analog/Vizio/VIZ1005/D56CBF29F13D>) |
@@ -8137,6 +8421,7 @@ model and ID.
 | Westinghouse     | WDE17E8 | LD-2685VX        | 1920x1080 | 32.1 | 2010 | [A17A8B82C9E5](<Analog/Westinghouse/WDE17E8/A17A8B82C9E5>) |
 | Westinghouse     | WDE17F2 | LD-3255VX        | 1366x768  | 32.1 | 2010 | [B84FC0D1F44C](<Analog/Westinghouse/WDE17F2/B84FC0D1F44C>) |
 | Westinghouse     | WDE1906 | LTV-19w6         | 1440x900  | 19.1 | 2006 | [4940C1F0BD83](<Analog/Westinghouse/WDE1906/4940C1F0BD83>) |
+| Westinghouse     | WDE3255 | LTV-32w6 HD      | 1360x768  | 32.1 | 2006 | [882A8E05DA5C](<Analog/Westinghouse/WDE3255/882A8E05DA5C>) |
 | Westinghouse     | WDE5060 |                  | 1366x768  | 32.1 | 2007 | [5A5A871FD16C](<Analog/Westinghouse/WDE5060/5A5A871FD16C>) |
 | Westinghouse     | WDE5150 | L1975NW          | 1440x900  | 19.1 | 2008 | [05E0C997CECE](<Analog/Westinghouse/WDE5150/05E0C997CECE>) |
 | Westinghouse     | WDE5150 | L1975NW          | 1440x900  | 19.1 | 2007 | [A1DE0E507041](<Analog/Westinghouse/WDE5150/A1DE0E507041>) |
@@ -8149,7 +8434,7 @@ model and ID.
 | Westinghouse     | WDT1C98 | UW40TA2W         | 1920x1080 | 42.0 | 2012 | [6B129850521B](<Analog/Westinghouse/WDT1C98/6B129850521B>) |
 | Westinghouse     | WDT1E29 | DWM40F1Y1        | 1920x1080 | 39.7 | 2015 | [A1264D184A8A](<Analog/Westinghouse/WDT1E29/A1264D184A8A>) |
 | Westinghouse     | WDT1E64 | EUM24F1G1        | 1920x1080 | 24.0 | 2014 | [F98697076398](<Analog/Westinghouse/WDT1E64/F98697076398>) |
-| Westinghouse     | WDT1E6E | EWM24F1Y1        | 1920x1080 | 24.0 | 2014 | [D17B050F6CE8](<Analog/Westinghouse/WDT1E6E/D17B050F6CE8>) |
+| Westinghouse     | WDT1E6E | EWM24F1Y1        | 1920x1080 | 24.0 | 2014 | [0AC805F94EB7](<Analog/Westinghouse/WDT1E6E/0AC805F94EB7>) |
 | Westinghouse     | WET0015 | WD24FT1360       | 1920x1080 | 23.8 | 2015 | [BFC65FE1C35D](<Analog/Westinghouse/WET0015/BFC65FE1C35D>) |
 | Westinghouse     | WET6488 | WD43UB4530       | 1920x1080 | 42.5 | 2017 | [F5AFBAA5FFB5](<Analog/Westinghouse/WET6488/F5AFBAA5FFB5>) |
 | XVision          | XVS0392 | XL2020AI         | 1600x900  | 27.2 | 2017 | [8E2E6445C651](<Analog/XVision/XVS0392/8E2E6445C651>) |
@@ -8167,6 +8452,7 @@ model and ID.
 | eMachines        | EMA00B5 | E202H            | 1600x900  | 19.9 | 2009 | [041C2CA9C060](<Analog/eMachines/EMA00B5/041C2CA9C060>) |
 | eMachines        | EMA00B6 | E192HQ           | 1366x768  | 18.5 | 2009 | [680290B8495B](<Analog/eMachines/EMA00B6/680290B8495B>) |
 | eMachines        | EMA0183 | E233H            | 1920x1080 | 22.9 | 2010 | [465CC072F996](<Analog/eMachines/EMA0183/465CC072F996>) |
+| eMachines        | EMA01A0 | Acer E203H       | 1600x900  | 19.9 | 2010 | [7A9937A8E885](<Analog/eMachines/EMA01A0/7A9937A8E885>) |
 | eMachines        | EMA01E8 | E182HV           | 1366x768  | 18.5 | 2011 | [299385F857F9](<Analog/eMachines/EMA01E8/299385F857F9>) |
 | eMachines        | EMA01E9 | E192HQV          | 1366x768  | 18.5 | 2011 | [81807E969352](<Analog/eMachines/EMA01E9/81807E969352>) |
 | eMachines        | EMA01E9 | E192HQV          | 1366x768  | 18.5 | 2010 | [A14E6BD212B6](<Analog/eMachines/EMA01E9/A14E6BD212B6>) |
@@ -8188,4 +8474,5 @@ model and ID.
 | eMachines        | EMA0783 | E19T6W           | 1440x900  | 19.1 | 2007 | [5F48D273AAC7](<Analog/eMachines/EMA0783/5F48D273AAC7>) |
 | eMachines        | EMA0787 | E19T6W           | 1440x900  | 18.6 | 2008 | [5736EB51F276](<Analog/eMachines/EMA0787/5736EB51F276>) |
 | eMachines        | EMI0304 | eView 17s2       | 1280x1024 | 15.7 |      | [93D398197965](<Analog/eMachines/EMI0304/93D398197965>) |
+| eMachines        | EMI0309 | eView 17f2       | 1280x1024 | 15.7 |      | [89ABEF052F62](<Analog/eMachines/EMI0309/89ABEF052F62>) |
 
