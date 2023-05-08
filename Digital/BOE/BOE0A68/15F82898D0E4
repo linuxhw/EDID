@@ -1,0 +1,84 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 68 0a 00 00 00 00
+16 1f 01 04 a5 22 0a 78 02 de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a8 6b 00 a0 f0 4c 30 40 30 20
+35 00 58 63 10 00 00 1a e2 31 00 a0 a0 de 30 20
+30 20 35 00 58 63 10 00 00 1a 2e 1d 80 a0 70 26
+30 20 30 20 35 00 58 63 10 00 00 1a 00 00 00 fe
+00 4e 56 31 34 30 58 54 4d 2d 4e 35 32 0a 00 a3
+
+00 ff ff ff ff ff ff 00 09 e5 68 0a 00 00 00 00
+16 1f 01 04 a5 22 0a 78 02 de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a8 6b 00 a0 f0 4c 30 40 30 20
+35 00 58 63 10 00 00 1a e2 31 00 a0 a0 de 30 20
+30 20 35 00 58 63 10 00 00 1a 2e 1d 80 a0 70 26
+30 20 30 20 35 00 58 63 10 00 00 1a 00 00 00 fe
+00 4e 56 31 34 30 58 54 4d 2d 4e 35 32 0a 00 a3
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2664
+    Made in: week 22 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 10 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x1100   60.017422 Hz 192:55    68.900 kHz    275.600000 MHz (344 mm x 99 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   40 Vpol N
+    DTD 2:  2560x734    60.036483 Hz 1280:367   46.949 kHz    127.700000 MHz (344 mm x 99 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   40 Vpol N
+    DTD 3:  1920x550    60.055956 Hz 192:55    35.913 kHz     74.700000 MHz (344 mm x 99 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   40 Vpol N
+    Alphanumeric Data String: 'NV140XTM-N52'
+Checksum: 0xa3
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 68 0a 00 00 00 00 '..........h.....'
+  16 1f 01 04 a5 22 0a 78 02 de 50 a3 54 4c 99 26 '.....".x..P.TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 a8 6b 00 a0 f0 4c 30 40 30 20 '.......k...L0@0 '
+  35 00 58 63 10 00 00 1a e2 31 00 a0 a0 de 30 20 '5.Xc.....1....0 '
+  30 20 35 00 58 63 10 00 00 1a 2e 1d 80 a0 70 26 '0 5.Xc........p&'
+  30 20 30 20 35 00 58 63 10 00 00 1a 00 00 00 fe '0 0 5.Xc........'
+  00 4e 56 31 34 30 58 54 4d 2d 4e 35 32 0a 00 a3 '.NV140XTM-N52...'
+Checksum: 0xa3
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

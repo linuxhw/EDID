@@ -98,10 +98,10 @@ Block 1, CTA-861 Extension Block:
     DC_30bit
     DC_Y444
     Maximum TMDS clock: 225 MHz
-    Video latency: 103 ms
-    Audio latency: 3 ms
-    Interlaced video latency: 113 ms
-    Interlaced audio latency: 3 ms
+    Video latency: 100 ms
+    Audio latency: 0 ms
+    Interlaced video latency: 110 ms
+    Interlaced audio latency: 0 ms
   Detailed Timing Descriptors:
     DTD 3:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (1280 mm x 720 mm)
                  Hfront  528 Hsync  44 Hback  148 Hpol P
@@ -117,7 +117,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-Checksum: 0xda
+Checksum: 0xda  Unused space in Extension Block: 11 bytes
 
 ----------------
 
@@ -125,8 +125,9 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Audio latency < Video latency (3 ms < 103 ms). This is discouraged for devices without HDMI output.
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Interlaced audio latency < Interlaced video latency (3 ms < 113 ms). This is discouraged for devices without HDMI output.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Audio latency < Video latency (0 ms < 100 ms). This is discouraged for devices without HDMI output.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Interlaced audio latency < Interlaced video latency (0 ms < 110 ms). This is discouraged for devices without HDMI output.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

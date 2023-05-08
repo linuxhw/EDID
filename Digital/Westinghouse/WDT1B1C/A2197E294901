@@ -114,7 +114,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (1600 mm x 900 mm)
                  Hfront  528 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0x2e
+Checksum: 0x2e  Unused space in Extension Block: 16 bytes
 
 ----------------
 
@@ -127,6 +127,7 @@ Block 1, CTA-861 Extension Block:
   Video Data Block: VIC 1 is the preferred timing, overriding the first detailed timings. Is this intended?
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 5.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

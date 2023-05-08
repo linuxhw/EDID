@@ -94,7 +94,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (478 mm x 269 mm)
                  Hfront   12 Hsync  64 Hback   68 Hpol N
                  Vfront    5 Vsync   5 Vback   39 Vpol N
-Checksum: 0x2f
+Checksum: 0x2f  Unused space in Extension Block: 47 bytes
 
 ----------------
 
@@ -104,6 +104,7 @@ Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: VIC 18 is the preferred timing, overriding the first detailed timings. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

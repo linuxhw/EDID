@@ -1,0 +1,166 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 9d 04 bd 00 91 73
+27 1b 01 04 a5 47 28 78 06 ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 c4 8f 21 00 00 1a 00 00 00 ff 00 23 41 53
+50 75 37 48 49 45 38 74 48 64 00 00 00 fd 00 1e
+3c 34 85 36 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 58 42 33 32 31 48 4b 0a 20 20 20 20 20 01 9f
+
+02 03 12 41 23 09 07 01 83 01 00 00 65 4b 04 00
+01 01 ef 51 00 a0 f0 70 19 80 30 20 35 00 c4 8f
+21 00 00 1a a3 66 00 a0 f0 70 1f 80 30 20 35 00
+c4 8f 21 00 00 1a 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 93
+
+00 ff ff ff ff ff ff 00 04 72 9d 04 bd 00 91 73
+27 1b 01 04 a5 47 28 78 06 ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 c4 8f 21 00 00 1a 00 00 00 ff 00 23 41 53
+50 75 37 48 49 45 38 74 48 64 00 00 00 fd 00 1e
+3c 34 85 36 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 58 42 33 32 31 48 4b 0a 20 20 20 20 20 01 9f
+
+02 03 12 41 23 09 07 01 83 01 00 00 65 4b 04 00
+01 01 ef 51 00 a0 f0 70 19 80 30 20 35 00 c4 8f
+21 00 00 1a a3 66 00 a0 f0 70 1f 80 30 20 35 00
+c4 8f 21 00 00 1a 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 93
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: ACR
+    Model: 1181
+    Serial Number: ...
+    Made in: week 39 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 71 cm x 40 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (708 mm x 399 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    Display Product Serial Number: ...
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 30-60 Hz V, 52-133 kHz H, max dotclock 540 MHz
+    Display Product Name: 'XB321HK'
+  Extension blocks: 1
+Checksum: 0x9f
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (NVIDIA), OUI 00-04-4B:
+    01 01                                           '..'
+  Detailed Timing Descriptors:
+    DTD 2:  3840x2160   23.998856 Hz  16:9     52.438 kHz    209.750000 MHz (708 mm x 399 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   17 Vpol N
+    DTD 3:  3840x2160   29.980602 Hz  16:9     65.688 kHz    262.750000 MHz (708 mm x 399 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+Checksum: 0x93  Unused space in Extension Block: 73 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 9d 04 bd 00 91 73 '.........r.....s'
+  27 1b 01 04 a5 47 28 78 06 ee 91 a3 54 4c 99 26 ''....G(x....TL.&'
+  0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01 '.PT!............'
+  01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20 '......M....p>.0 '
+  35 00 c4 8f 21 00 00 1a 00 00 00 ff 00 23 41 53 '5...!........#AS'
+  50 75 37 48 49 45 38 74 48 64 00 00 00 fd 00 1e 'Pu7HIE8tHd......'
+  3c 34 85 36 01 0a 20 20 20 20 20 20 00 00 00 fc '<4.6..      ....'
+  00 58 42 33 32 31 48 4b 0a 20 20 20 20 20 01 9f '.XB321HK.     ..'
+Checksum: 0x9f
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (NVIDIA), OUI 00-04-4B:
+    01 01                                           '..'
+  Detailed Timing Descriptors:
+    DTD 4:  3840x2160   23.998856 Hz  16:9     52.438 kHz    209.750000 MHz (708 mm x 399 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   17 Vpol N
+    DTD 5:  3840x2160   29.980602 Hz  16:9     65.688 kHz    262.750000 MHz (708 mm x 399 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+Checksum: 0x93  Unused space in Extension Block: 73 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 23.999 - 60.317 Hz (Monitor: 30.000 - 60.000 Hz)
+    Horizontal Freq: 31.468 - 133.312 kHz (Monitor: 52.000 - 133.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

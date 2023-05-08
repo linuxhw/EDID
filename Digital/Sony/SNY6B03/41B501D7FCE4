@@ -130,13 +130,13 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Video Data Block:
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC 101:  4096x2160   50.000000 Hz 256:135  112.500 kHz    594.000000 MHz
     VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
-Checksum: 0x0c
+Checksum: 0x0c  Unused space in Extension Block: 56 bytes
 
 ----------------
 
@@ -144,14 +144,13 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 1872x1053 mm vs display size 1110x620 mm.
   Alphanumeric Data String: Empty string.
-Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 EDID:
   Base EDID: The DTD max image size is 1872x1053mm, which is larger than the display size 1110.0x620.0mm.
 

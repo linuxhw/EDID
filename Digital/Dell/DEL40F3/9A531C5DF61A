@@ -126,13 +126,14 @@ Block 1, CTA-861 Extension Block:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-Checksum: 0x10
+Checksum: 0x10  Unused space in Extension Block: 43 bytes
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.

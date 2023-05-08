@@ -117,10 +117,10 @@ Block 1, CTA-861 Extension Block:
     DC_30bit
     DC_Y444
     Maximum TMDS clock: 225 MHz
-    Video latency: 5 ms
-    Audio latency: 5 ms
-    Interlaced video latency: 5 ms
-    Interlaced audio latency: 5 ms
+    Video latency: 2 ms
+    Audio latency: 2 ms
+    Interlaced video latency: 2 ms
+    Interlaced audio latency: 2 ms
   Video Capability Data Block:
     YCbCr quantization: Selectable (via AVI YQ)
     RGB quantization: Selectable (via AVI Q)
@@ -142,7 +142,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Detailed Timing Descriptors:
     DTD 3:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (521 mm x 293 mm)
                  Hfront   64 Hsync 112 Hback  256 Hpol N
@@ -150,7 +150,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (391 mm x 293 mm)
                  Hfront   16 Hsync  62 Hback   60 Hpol N
                  Vfront    9 Vsync   6 Vback   30 Vpol N
-Checksum: 0xd9
+Checksum: 0xd9  Unused space in Extension Block: 6 bytes
 
 ----------------
 
@@ -160,6 +160,7 @@ Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Progressive and Interlaced latency values are identical, no need for both.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #3: DTD is similar but not identical to DMT 0x27.
 
 Failures:
@@ -167,7 +168,6 @@ Failures:
 Block 1, CTA-861 Extension Block:
   HDMI Forum Sink Capability Data Block: HDMI Forum SCDB did not immediately follow the HDMI VSDB.
   HDMI Forum Sink Capability Data Block: VRRmax < 100.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 70.082 Hz (Monitor: 50.000 - 75.000 Hz)

@@ -1,0 +1,78 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 19 42 01 01 00 00
+1e 13 01 03 80 2c 19 78 ea b8 15 a6 55 4b 9b 25
+13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 bb f9 10 00 00 1e 00 00 00 10 00 4c 4d 32
+30 30 57 44 33 2d 54 4c 43 38 00 00 00 fe 00 4c
+4d 32 30 30 57 44 33 2d 54 4c 43 39 00 00 00 fc
+00 48 50 20 4f 6d 6e 69 20 2f 20 50 72 6f 00 f2
+
+00 ff ff ff ff ff ff 00 22 f0 19 42 01 01 00 00
+1e 13 01 03 80 2c 19 78 ea b8 15 a6 55 4b 9b 25
+13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 bb f9 10 00 00 1e 00 00 00 10 00 4c 4d 32
+30 30 57 44 33 2d 54 4c 43 38 00 00 00 fe 00 4c
+4d 32 30 30 57 44 33 2d 54 4c 43 39 00 00 00 fc
+00 48 50 20 4f 6d 6e 69 20 2f 20 50 72 6f 00 f2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 16921
+    Serial Number: ...
+    Made in: week 30 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 44 cm x 25 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3349
+    Green: 0.2949, 0.6054
+    Blue : 0.1445, 0.0751
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (443 mm x 249 mm)
+                 Hfront   24 Hsync  80 Hback   96 Hpol P
+                 Vfront    1 Vsync   3 Vback   96 Vpol P
+    Dummy Descriptor:
+    Alphanumeric Data String: 'LM200WD3-TLC9'
+    Display Product Name: 'HP Omni / Pro'
+Checksum: 0xf2
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 19 42 01 01 00 00 '........"..B....'
+  1e 13 01 03 80 2c 19 78 ea b8 15 a6 55 4b 9b 25 '.....,.x....UK.%'
+  13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
+  13 00 bb f9 10 00 00 1e 00 00 00 10 00 4c 4d 32 '.............LM2'
+  30 30 57 44 33 2d 54 4c 43 38 00 00 00 fe 00 4c '00WD3-TLC8.....L'
+  4d 32 30 30 57 44 33 2d 54 4c 43 39 00 00 00 fc 'M200WD3-TLC9....'
+  00 48 50 20 4f 6d 6e 69 20 2f 20 50 72 6f 00 f2 '.HP Omni / Pro..'
+Checksum: 0xf2
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

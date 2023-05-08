@@ -132,7 +132,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Detailed Timing Descriptors:
     DTD 2:  2560x1080   60.090067 Hz  64:27    65.979 kHz    181.310000 MHz (690 mm x 291 mm)
                  Hfront   48 Hsync  32 Hback  108 Hpol P
@@ -143,7 +143,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  2560x1080  144.007783 Hz  64:27   159.993 kHz    435.180000 MHz (690 mm x 291 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   23 Vpol N
-Checksum: 0xac
+Checksum: 0xac  Unused space in Extension Block: 12 bytes
 
 ----------------
 
@@ -151,13 +151,13 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 4.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

@@ -1,0 +1,62 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 99 e4 01 00 00 00
+2b 1f 01 04 a0 3c 22 78 e6 73 50 aa 56 57 a3 2b
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d1 d3 00 e0 a3 a0 57 50 d8 18
+35 10 55 50 21 00 00 1a 00 00 00 fc 00 4c 45 4e
+2d 41 35 37 30 2d 41 2d 43 0a 00 00 00 fd 00 30
+64 49 96 2a 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4d 56 32 37 30 51 48 4d 2d 4e 58 30 0a 00 72
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 58521
+    Serial Number: ...
+    Made in: week 43 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    Digital interface is not defined
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6650, 0.3388
+    Green: 0.3398, 0.6396
+    Blue : 0.1689, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   99.974115 Hz  16:9    152.660 kHz    542.250000 MHz (597 mm x 336 mm)
+                 Hfront  216 Hsync 280 Hback  496 Hpol P
+                 Vfront    3 Vsync   5 Vback   79 Vpol N
+    Display Product Name: 'LEN-A570-A-C'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-100 Hz V, 73-150 kHz H, max dotclock 420 MHz
+    Alphanumeric Data String: 'MV270QHM-NX0'
+Checksum: 0x72
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 152.660 - 152.660 kHz (Monitor: 73.000 - 150.000 kHz)
+    Maximum Clock: 542.250 MHz (Monitor: 420.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+
+EDID conformity: FAIL

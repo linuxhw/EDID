@@ -95,7 +95,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: No Data
@@ -117,7 +117,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront  528 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-Checksum: 0xca
+Checksum: 0xca  Unused space in Extension Block: 12 bytes
 
 ----------------
 
@@ -126,12 +126,12 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: VIC 31 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
   Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
 EDID:

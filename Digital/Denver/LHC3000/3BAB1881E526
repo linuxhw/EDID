@@ -127,7 +127,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Detailed Timing Descriptors:
     DTD 2:  2560x1080  200.007016 Hz  64:27   222.408 kHz    627.190000 MHz (690 mm x 291 mm)
                  Hfront   48 Hsync  64 Hback  148 Hpol P
@@ -138,12 +138,14 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  2560x1080  144.000053 Hz  64:27   160.272 kHz    435.940000 MHz (690 mm x 291 mm)
                  Hfront   48 Hsync  64 Hback   48 Hpol P
                  Vfront    3 Vsync   5 Vback   25 Vpol N
-Checksum: 0x69
+Checksum: 0x69  Unused space in Extension Block: 21 bytes
 
 ----------------
 
 Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 222.407 kHz (Monitor: 230.000 - 230.000 kHz)
@@ -151,7 +153,6 @@ EDID:
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.

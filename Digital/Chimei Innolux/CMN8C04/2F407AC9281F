@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 04 8c 00 00 00 00
+1f 1f 01 04 a5 1e 14 78 02 ee 9e a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 7a 50 70 a0 80 a0 28 50 30 20
+3a 00 28 c5 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc
+00 48 44 31 34 30 5a 42 2d 30 31 41 0a 0a 00 29
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 35844
+    Made in: week 31 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 30 cm x 20 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3154, 0.3300
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2160x1440   60.001165 Hz   3:2     88.802 kHz    206.020000 MHz (296 mm x 197 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync  10 Vback   27 Vpol N
+    Empty Descriptor
+    Empty Descriptor
+    Display Product Name: 'HD140ZB-01A'
+Checksum: 0x29
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Display Product Name: Non-space after newline.
+
+EDID conformity: FAIL

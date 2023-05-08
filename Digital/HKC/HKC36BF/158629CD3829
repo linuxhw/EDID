@@ -1,0 +1,62 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 63 bf 36 00 00 00 00
+00 1f 01 04 95 1f 11 78 e3 af 40 94 59 57 91 29
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a0 1d 56 80 50 00 4e 30 28 20
+3c 00 35 ae 10 00 00 19 b3 17 56 80 50 00 4e 30
+28 20 3c 00 35 ae 10 00 00 19 00 00 00 fe 00 48
+4b 43 20 4d 59 20 20 20 20 0a 20 20 00 00 00 fe
+00 4d 42 31 34 30 41 4e 30 31 27 35 20 20 00 84
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HKC
+    Model: 14015
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5800, 0.3496
+    Green: 0.3427, 0.5693
+    Blue : 0.1611, 0.1367
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.003608 Hz 683:384   50.763 kHz     75.840000 MHz (309 mm x 174 mm)
+                 Hfront   40 Hsync  32 Hback   56 Hpol N
+                 Vfront    3 Vsync  12 Vback   63 Vpol N
+    DTD 2:  1366x768    48.001304 Hz 683:384   40.609 kHz     60.670000 MHz (309 mm x 174 mm)
+                 Hfront   40 Hsync  32 Hback   56 Hpol N
+                 Vfront    3 Vsync  12 Vback   63 Vpol N
+    Alphanumeric Data String: 'HKC MY    '
+    Alphanumeric Data String: 'MB140AN01'5  '
+Checksum: 0x84
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

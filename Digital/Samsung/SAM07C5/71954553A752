@@ -112,7 +112,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
     Supports_AI
@@ -152,7 +152,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront  528 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-Checksum: 0xb8
+Checksum: 0xb8  Unused space in Extension Block: 23 bytes
 
 ----------------
 
@@ -171,7 +171,6 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 160x90 mm vs display size 890x500 mm.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #3: Mismatch of image size 160x90 mm vs display size 890x500 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 160x90 mm vs display size 890x500 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 160x90 mm vs display size 890x500 mm.

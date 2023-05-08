@@ -42,10 +42,10 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  3840x2400   59.993925 Hz   8:5    148.125 kHz    592.500000 MHz (288 mm x 180 mm)
+    DTD 1:  3840x2400   59.993925 Hz  16:10   148.125 kHz    592.500000 MHz (288 mm x 180 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol N
                  Vfront    3 Vsync   6 Vback   60 Vpol N
-    DTD 2:  3840x2400   47.995140 Hz   8:5    118.500 kHz    474.000000 MHz (288 mm x 180 mm)
+    DTD 2:  3840x2400   47.995140 Hz  16:10   118.500 kHz    474.000000 MHz (288 mm x 180 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol N
                  Vfront    3 Vsync   6 Vback   60 Vpol N
     Alphanumeric Data String: 'F40HY'
@@ -69,20 +69,22 @@ Block 1, CTA-861 Extension Block:
     Desired content max luminance: 96 (400.000 cd/m^2)
     Desired content max frame-average luminance: 96 (400.000 cd/m^2)
     Desired content min luminance: 40 (0.098 cd/m^2)
-Checksum: 0xaa
+Checksum: 0xaa  Unused space in Extension Block: 112 bytes
 
 ----------------
 
 Warnings:
 
+Block 0, Base EDID:
+  Missing Display Product Name.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 0, Base EDID:
   Alphanumeric Data String: Non-printable character.
-  Missing Display Product Name.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.

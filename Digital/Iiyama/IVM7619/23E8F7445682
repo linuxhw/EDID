@@ -132,7 +132,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -153,20 +153,20 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  1720x1440   59.997558 Hz  43:36    88.856 kHz    167.050000 MHz (797 mm x 334 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol P
-Checksum: 0x34
+Checksum: 0x34  Unused space in Extension Block: 3 bytes
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #2: Mismatch of image size 510x287 mm vs display size 800x330 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 510x287 mm vs display size 800x330 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.

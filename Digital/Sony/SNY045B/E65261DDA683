@@ -107,6 +107,7 @@ Block 1, CTA-861 Extension Block:
     DTS-HD:
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports DTS:X
       Audio Format Code dependent value: 0x03
     DTS-HD:
       Max channels: 8
@@ -165,7 +166,7 @@ Block 1, CTA-861 Extension Block:
     opRGB
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Video Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -178,14 +179,17 @@ Block 1, CTA-861 Extension Block:
       Hybrid Log-Gamma
     Supported static metadata descriptors:
       Static metadata type 1
-Checksum: 0x0e
+Checksum: 0x0e  Unused space in Extension Block: 31 bytes
 
 ----------------
 
-Failures:
+Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+
+Failures:
+
 EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
 

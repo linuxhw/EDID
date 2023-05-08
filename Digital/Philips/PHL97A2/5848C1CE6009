@@ -115,8 +115,8 @@ Block 1, CTA-861 Extension Block:
     DC_30bit
     DC_Y444
     Maximum TMDS clock: 300 MHz
-    Video latency: 153 ms
-    Audio latency: 153 ms
+    Video latency: 150 ms
+    Audio latency: 150 ms
     Extended HDMI video details:
       3D present
       3D-capable-VIC mask present
@@ -157,7 +157,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (1280 mm x 720 mm)
                  Hfront  440 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
-Checksum: 0xd6
+Checksum: 0xd6  Unused space in Extension Block: 6 bytes
 
 ----------------
 
@@ -165,6 +165,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

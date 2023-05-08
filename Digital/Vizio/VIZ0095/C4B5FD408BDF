@@ -98,10 +98,10 @@ Block 1, CTA-861 Extension Block:
     DC_30bit
     DC_Y444
     Maximum TMDS clock: 225 MHz
-    Video latency: 5 ms
-    Audio latency: 5 ms
-    Interlaced video latency: 5 ms
-    Interlaced audio latency: 5 ms
+    Video latency: 2 ms
+    Audio latency: 2 ms
+    Interlaced video latency: 2 ms
+    Interlaced audio latency: 2 ms
   Detailed Timing Descriptors:
     DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (410 mm x 230 mm)
                  Hfront  110 Hsync  40 Hback  220 Hpol P
@@ -116,7 +116,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (410 mm x 230 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0xe9
+Checksum: 0xe9  Unused space in Extension Block: 11 bytes
 
 ----------------
 
@@ -127,6 +127,7 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Progressive and Interlaced latency values are identical, no need for both.
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 4.
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 2.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

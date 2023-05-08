@@ -123,7 +123,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Detailed Timing Descriptors:
     DTD 2:  3440x1440  100.000000 Hz  43:18   148.100 kHz    533.160000 MHz (795 mm x 334 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
@@ -140,7 +140,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:  1720x1440   60.001149 Hz  43:36    88.862 kHz    167.060000 MHz (797 mm x 333 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol P
-Checksum: 0x8e
+Checksum: 0x8e  Unused space in Extension Block: 5 bytes
 
 ----------------
 
@@ -175,14 +175,13 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 213.264 kHz (Monitor: 222.000 - 222.000 kHz)
 
 Failures:
 
-Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
 EDID:

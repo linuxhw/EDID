@@ -1,0 +1,85 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 31 03 50 54 f4 31 01
+2b 0f 01 03 80 21 1b 78 ea ae a5 a6 54 4c 99 26
+14 50 54 21 08 00 31 40 45 40 61 40 81 80 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 4a 0e 11 00 00 1e a0 0f 20 00 31 58 1c 20
+28 80 14 00 4a 0e 11 00 00 1e 00 00 00 fd 00 3b
+3d 1f 43 ff 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 37 32 44 20 44 56 49 0a 20 20 20 20 00 d2
+
+00 ff ff ff ff ff ff 00 21 31 03 50 54 f4 31 01
+2b 0f 01 03 80 21 1b 78 ea ae a5 a6 54 4c 99 26
+14 50 54 21 08 00 31 40 45 40 61 40 81 80 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 4a 0e 11 00 00 1e a0 0f 20 00 31 58 1c 20
+28 80 14 00 4a 0e 11 00 00 1e 00 00 00 fd 00 3b
+3d 1f 43 ff 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 37 32 44 20 44 56 49 0a 20 20 20 20 00 d2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HIQ
+    Model: 20483
+    Serial Number: ...
+    Made in: week 43 of 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0800
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (330 mm x 270 mm)
+                 Hfront   48 Hsync 112 Hback  248 Hpol P
+                 Vfront    1 Vsync   3 Vback   38 Vpol P
+    DTD 2:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz (330 mm x 270 mm)
+                 Hfront   40 Hsync 128 Hback   88 Hpol P
+                 Vfront    1 Vsync   4 Vback   23 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 59-61 Hz V, 31-67 kHz H, max dotclock 2550 MHz
+    Display Product Name: 'L72D DVI'
+Checksum: 0xd2
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 21 31 03 50 54 f4 31 01 '........!1.PT.1.'
+  2b 0f 01 03 80 21 1b 78 ea ae a5 a6 54 4c 99 26 '+....!.x....TL.&'
+  14 50 54 21 08 00 31 40 45 40 61 40 81 80 01 01 '.PT!..1@E@a@....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 4a 0e 11 00 00 1e a0 0f 20 00 31 58 1c 20 '..J....... .1X. '
+  28 80 14 00 4a 0e 11 00 00 1e 00 00 00 fd 00 3b '(...J..........;'
+  3d 1f 43 ff 00 0a 20 20 20 20 20 20 00 00 00 fc '=.C...      ....'
+  00 4c 37 32 44 20 44 56 49 0a 20 20 20 20 00 d2 '.L72D DVI.    ..'
+Checksum: 0xd2
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

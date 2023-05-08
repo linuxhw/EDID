@@ -147,7 +147,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
                  Hfront  440 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
-Checksum: 0xe2
+Checksum: 0xe2  Unused space in Extension Block: 2 bytes
 
 ----------------
 
@@ -155,6 +155,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   CTA-861: Multiple native interlaced timings are defined.
 

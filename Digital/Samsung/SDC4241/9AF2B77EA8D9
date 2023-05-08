@@ -1,0 +1,80 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 83 41 42 00 00 00 00
+00 18 01 04 95 1f 11 78 0a 36 25 93 56 55 93 29
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 dc 37 80 a0 70 38 40 40 30 20
+25 00 35 ae 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 1e 82 10 2d 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe
+00 31 35 36 48 4c 30 32 2d 54 30 31 0a 20 00 00
+
+00 ff ff ff ff ff ff 00 4c 83 41 42 00 00 00 00
+00 18 01 04 95 1f 11 78 0a 36 25 93 56 55 93 29
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 dc 37 80 a0 70 38 40 40 30 20
+25 00 35 ae 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 1e 82 10 2d 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe
+00 31 35 36 48 4c 30 32 2d 54 30 31 0a 20 00 00
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 16961
+    Made in: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5742, 0.3388
+    Green: 0.3330, 0.5761
+    Blue : 0.1601, 0.1152
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.096154 Hz  16:9     68.750 kHz    143.000000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    2 Vsync   5 Vback   57 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 1e 82 10 2d 00 '..............-.'
+    Alphanumeric Data String: 'SAMSUNG'
+    Alphanumeric Data String: '156HL02-T01'
+Checksum: 0x00
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 83 41 42 00 00 00 00 '........L.AB....'
+  00 18 01 04 95 1f 11 78 0a 36 25 93 56 55 93 29 '.......x.6%.VU.)'
+  1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 dc 37 80 a0 70 38 40 40 30 20 '.......7..p8@@0 '
+  25 00 35 ae 10 00 00 19 00 00 00 0f 00 00 00 00 '%.5.............'
+  00 00 00 00 00 1e 82 10 2d 00 00 00 00 fe 00 53 '........-......S'
+  41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe 'AMSUNG.     ....'
+  00 31 35 36 48 4c 30 32 2d 54 30 31 0a 20 00 00 '.156HL02-T01. ..'
+Checksum: 0x00
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

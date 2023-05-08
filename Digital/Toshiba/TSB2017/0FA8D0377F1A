@@ -138,7 +138,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
@@ -164,7 +164,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-Checksum: 0x6f
+Checksum: 0x6f  Unused space in Extension Block: 1 byte
 
 ----------------
 
@@ -179,7 +179,6 @@ Failures:
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #4: Mismatch of image size 1600x1200 mm vs display size 1600x900 mm.
 EDID:
   Base EDID: The DTD max image size is 1600x1200mm, which is larger than the display size 1600.0x900.0mm.

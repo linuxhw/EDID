@@ -93,7 +93,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Detailed Timing Descriptors:
     DTD 3:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (698 mm x 392 mm)
                  Hfront  528 Hsync  44 Hback  148 Hpol P
@@ -122,6 +122,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #5: The use of non-zero borders in a DTD is not recommended.
   Detailed Timing Descriptor #6: The use of non-zero borders in a DTD is not recommended.
   Detailed Timing Descriptor #7: The use of non-zero borders in a DTD is not recommended.
@@ -131,7 +132,6 @@ EDID:
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #5: 0 or negative horizontal back porch.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
   Invalid checksum 0xff (should be 0xdf).

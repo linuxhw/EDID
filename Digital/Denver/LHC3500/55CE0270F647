@@ -121,7 +121,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Detailed Timing Descriptors:
     DTD 3:  3440x1440   99.992498 Hz  43:18   148.089 kHz    533.120000 MHz (795 mm x 334 mm)
                  Hfront   88 Hsync  64 Hback    8 Hpol P
@@ -129,7 +129,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  1720x1440   59.999355 Hz  43:36    89.399 kHz    185.950000 MHz (795 mm x 334 mm)
                  Hfront   48 Hsync  64 Hback  248 Hpol P
                  Vfront    3 Vsync   5 Vback   42 Vpol P
-Checksum: 0xf4
+Checksum: 0xf4  Unused space in Extension Block: 31 bytes
 
 ----------------
 
@@ -141,7 +141,6 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 91.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

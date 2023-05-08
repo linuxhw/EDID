@@ -144,7 +144,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  2560x1440  143.972318 Hz  16:9    222.149 kHz    592.250000 MHz (597 mm x 336 mm)
                  Hfront   21 Hsync  32 Hback   53 Hpol P
                  Vfront    3 Vsync   5 Vback   95 Vpol P
-Checksum: 0x7e
+Checksum: 0x7e  Unused space in Extension Block: 28 bytes
 
 ----------------
 
@@ -153,6 +153,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.250 - 242.424 kHz (Monitor: 250.000 - 250.000 kHz)

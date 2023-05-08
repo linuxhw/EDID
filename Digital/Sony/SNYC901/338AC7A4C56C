@@ -102,10 +102,10 @@ Block 1, CTA-861 Extension Block:
     Source physical address: 1.0.0.0
     Supports_AI
     Maximum TMDS clock: 0 MHz
-    Video latency: 17 ms
-    Audio latency: 17 ms
-    Interlaced video latency: 35 ms
-    Interlaced audio latency: 35 ms
+    Video latency: 14 ms
+    Audio latency: 14 ms
+    Interlaced video latency: 32 ms
+    Interlaced audio latency: 32 ms
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: No Data
@@ -127,7 +127,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront  528 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-Checksum: 0xa1
+Checksum: 0xa1  Unused space in Extension Block: 2 bytes
 
 ----------------
 
@@ -137,6 +137,7 @@ Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: VIC 31 is the preferred timing, overriding the first detailed timings. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

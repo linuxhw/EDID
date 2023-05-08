@@ -1,0 +1,53 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d af 04 10 00 00 00 00
+0a 13 01 03 90 16 0c 78 0a cf 45 90 59 57 95 29
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 87 16 00 ae 41 58 3d 20 75 4e
+7a 00 de 7d 00 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4a
+31 4a 39 33 81 4e 31 30 31 4c 36 0a 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 01 0a 20 20 00 a1
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CMO
+    Model: 4100
+    Made in: week 10 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 22 cm x 12 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5654, 0.3476
+    Green: 0.3427, 0.5849
+    Blue : 0.1611, 0.1210
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x600    60.004536 Hz 128:75    39.663 kHz     57.670000 MHz (222 mm x 125 mm)
+                 Hfront  117 Hsync  78 Hback  235 Hpol P
+                 Vfront    7 Vsync  10 Vback   44 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'J1J93'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20 '..............  '
+Checksum: 0xa1
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

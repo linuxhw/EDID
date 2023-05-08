@@ -140,7 +140,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -165,7 +165,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (597 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   77 Vpol P
-Checksum: 0x39
+Checksum: 0x39  Unused space in Extension Block: 1 byte
 
 ----------------
 
@@ -192,7 +192,6 @@ Block 2, DisplayID Extension Block:
     Tile resolution: 1920x2160
     Tiled Display Manufacturer/Vendor ID: ACR
     Tiled Display Product ID Code: 1713
-    Tiled Display Serial Number: ...
   Checksum: 0x38
 Checksum: 0x90
 
@@ -203,6 +202,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -214,11 +214,11 @@ Failures:
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
   Display Interface Features Data Block: Use of DisplayID v2.0 tag for DisplayID v1.2.
   Display Interface Features Data Block: DisplayID payload length is less than expected (8 < 9).
+  Tiled Display Topology Data Block (0x12): Tiled Display Serial Number must be non-zero.
 EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
   DisplayID: Missing DisplayID Product Identification Data Block.

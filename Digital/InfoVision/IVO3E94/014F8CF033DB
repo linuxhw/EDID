@@ -1,0 +1,85 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cf 94 3e 04 00 00 00
+00 1f 01 04 a5 23 16 78 0b de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 32 3c 80 a0 70 b0 23 40 18 30
+6c 00 59 d7 10 00 00 19 00 00 00 fe 00 58 31 36
+30 4e 56 34 32 20 52 30 20 0a 00 00 00 03 00 03
+54 d8 04 64 7d 15 12 1f 96 00 00 00 00 00 00 03
+00 1c 5a ff 64 a0 c2 17 12 59 c2 01 01 00 00 6b
+
+00 ff ff ff ff ff ff 00 26 cf 94 3e 04 00 00 00
+00 1f 01 04 a5 23 16 78 0b de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 32 3c 80 a0 70 b0 23 40 18 30
+6c 00 59 d7 10 00 00 19 00 00 00 fe 00 58 31 36
+30 4e 56 34 32 20 52 30 20 0a 00 00 00 03 00 03
+54 d8 04 64 7d 15 12 1f 96 00 00 00 00 00 00 03
+00 1c 5a ff 64 a0 c2 17 12 59 c2 01 01 00 00 6b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: IVO
+    Model: 16020
+    Serial Number: ...
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 35 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.989100 Hz  16:10    74.087 kHz    154.100000 MHz (345 mm x 215 mm)
+                 Hfront   24 Hsync  48 Hback   88 Hpol N
+                 Vfront    6 Vsync  12 Vback   17 Vpol N
+    Alphanumeric Data String: 'X160NV42 R0 '
+    Manufacturer-Specified Display Descriptor (0x03): 00 03 00 03 54 d8 04 64 7d 15 12 1f 96 00 00 00 '....T..d}.......'
+    Manufacturer-Specified Display Descriptor (0x03): 00 03 00 1c 5a ff 64 a0 c2 17 12 59 c2 01 01 00 '....Z.d....Y....'
+Checksum: 0x6b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cf 94 3e 04 00 00 00 '........&..>....'
+  00 1f 01 04 a5 23 16 78 0b de 50 a3 54 4c 99 26 '.....#.x..P.TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 32 3c 80 a0 70 b0 23 40 18 30 '......2<..p.#@.0'
+  6c 00 59 d7 10 00 00 19 00 00 00 fe 00 58 31 36 'l.Y..........X16'
+  30 4e 56 34 32 20 52 30 20 0a 00 00 00 03 00 03 '0NV42 R0 .......'
+  54 d8 04 64 7d 15 12 1f 96 00 00 00 00 00 00 03 'T..d}...........'
+  00 1c 5a ff 64 a0 c2 17 12 59 c2 01 01 00 00 6b '..Z.d....Y.....k'
+Checksum: 0x6b
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

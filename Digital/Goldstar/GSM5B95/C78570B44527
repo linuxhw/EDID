@@ -132,13 +132,14 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   64 Hpol P
                  Vfront    3 Vsync   5 Vback   32 Vpol N
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 ba 00 00 00 00 00 00 '................'
-Checksum: 0xf4
+Checksum: 0xf4  Unused space in Extension Block: 6 bytes
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:

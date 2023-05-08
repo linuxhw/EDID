@@ -131,7 +131,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -151,7 +151,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  1920x1080  143.853655 Hz  16:9    166.439 kHz    352.850000 MHz (596 mm x 335 mm)
                  Hfront   68 Hsync  32 Hback  100 Hpol P
                  Vfront   63 Vsync   8 Vback    6 Vpol P
-Checksum: 0x19
+Checksum: 0x19  Unused space in Extension Block: 10 bytes
 
 ----------------
 
@@ -168,7 +168,7 @@ Block 2, DisplayID Extension Block:
                Hfront   28 Hsync  32 Hback   60 Hpol N
                Vfront    9 Vsync   8 Vback   86 Vpol N
   Checksum: 0xfd
-Checksum: 0x90
+Checksum: 0x90  Unused space in Extension Block: 75 bytes
 
 ----------------
 
@@ -176,6 +176,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -189,7 +190,6 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 596x335 mm vs display size 700x390 mm.
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #2: Mismatch of image size 596x335 mm vs display size 700x390 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 596x335 mm vs display size 700x390 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 596x335 mm vs display size 700x390 mm.

@@ -129,7 +129,7 @@ Block 1, CTA-861 Extension Block:
     xvYCC709
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -165,7 +165,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  3440x1440   75.000000 Hz  43:18   111.900 kHz    402.840000 MHz (800 mm x 335 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront   38 Vsync   8 Vback    6 Vpol N
-Checksum: 0xfe
+Checksum: 0xfe  Unused space in Extension Block: 14 bytes
 
 ----------------
 
@@ -189,6 +189,7 @@ Checksum: 0x90
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
 EDID:
@@ -199,7 +200,6 @@ EDID:
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.

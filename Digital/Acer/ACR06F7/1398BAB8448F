@@ -143,7 +143,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
@@ -164,19 +164,20 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (700 mm x 390 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0x50
+Checksum: 0x50  Unused space in Extension Block: 14 bytes
 
 ----------------
 
 Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #3: Mismatch of image size 544x303 mm vs display size 600x340 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 700x390 mm vs display size 600x340 mm.
 EDID:

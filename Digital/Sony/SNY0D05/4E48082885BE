@@ -95,7 +95,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:   640x480    59.952381 Hz   4:3     31.475 kHz     25.180000 MHz (1600 mm x 900 mm)
                  Hfront   16 Hsync  96 Hback   32 Hpol P Hborder 8
                  Vfront   10 Vsync   2 Vback   17 Vpol P Vborder 8
-Checksum: 0x83
+Checksum: 0x83  Unused space in Extension Block: 11 bytes
 
 ----------------
 
@@ -106,6 +106,7 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #4: DTD is similar but not identical to VIC 17.
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 2.
   Detailed Timing Descriptor #6: The use of non-zero borders in a DTD is not recommended.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

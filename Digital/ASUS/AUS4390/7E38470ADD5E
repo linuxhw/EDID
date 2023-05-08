@@ -132,7 +132,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -150,7 +150,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  3840x1200   85.000000 Hz  16:5    106.250 kHz    425.000000 MHz (1052 mm x 329 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront   36 Vsync   8 Vback    6 Vpol N
-Checksum: 0x79
+Checksum: 0x79  Unused space in Extension Block: 34 bytes
 
 ----------------
 
@@ -160,14 +160,13 @@ Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.250 - 150.000 kHz (Monitor: 150.000 - 150.000 kHz)
 
 Failures:
 
-Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
 

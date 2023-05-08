@@ -114,7 +114,7 @@ Block 1, CTA-861 Extension Block:
     DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (16 mm x 9 mm)
                  Hfront   16 Hsync  62 Hback   60 Hpol N
                  Vfront    9 Vsync   6 Vback   30 Vpol N
-Checksum: 0x4d
+Checksum: 0x4d  Unused space in Extension Block: 59 bytes
 
 ----------------
 
@@ -124,6 +124,7 @@ Block 0, Base EDID:
   Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
@@ -133,6 +134,6 @@ Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
   Detailed Timing Descriptor #2: Mismatch of image size 16x9 mm vs display size 600x340 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 16x9 mm vs display size 600x340 mm.
-  Padding: CTA-861 padding contains non-zero bytes.
+  Padding: Contains non-zero bytes.
 
 EDID conformity: FAIL

@@ -109,10 +109,10 @@ Block 1, CTA-861 Extension Block:
       Photo
       Cinema
       Game
-    Video latency: 327 ms
-    Audio latency: 327 ms
-    Interlaced video latency: 263 ms
-    Interlaced audio latency: 263 ms
+    Video latency: 324 ms
+    Audio latency: 324 ms
+    Interlaced video latency: 260 ms
+    Interlaced audio latency: 260 ms
     Extended HDMI video details:
       Base EDID image size is in units of 1 cm
       HDMI VICs:
@@ -124,7 +124,7 @@ Block 1, CTA-861 Extension Block:
     xvYCC709
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
@@ -151,7 +151,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (1439 mm x 809 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
-Checksum: 0x0e
+Checksum: 0x0e  Unused space in Extension Block: 7 bytes
 
 ----------------
 
@@ -159,13 +159,12 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
 
 Failures:
 
 Block 0, Base EDID:
   Vendor & Product Identification: EDID 1.3 does not support week 0xff.
-Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 
 EDID conformity: FAIL

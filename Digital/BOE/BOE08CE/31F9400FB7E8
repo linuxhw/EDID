@@ -86,7 +86,7 @@ Block 1, CTA-861 Extension Block:
     Desired content max luminance: 106 (496.743 cd/m^2)
     Desired content max frame-average luminance: 106 (496.743 cd/m^2)
     Desired content min luminance: 36 (0.099 cd/m^2)
-Checksum: 0x9a
+Checksum: 0x9a  Unused space in Extension Block: 112 bytes
 
 ----------------
 
@@ -156,7 +156,7 @@ Block 3, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
   Detailed Timing Descriptors:
@@ -169,23 +169,25 @@ Block 3, CTA-861 Extension Block:
     DTD 4:  3840x2160   24.004577 Hz  16:9     52.450 kHz    209.800000 MHz (596 mm x 335 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   17 Vpol P
-Checksum: 0xf6
+Checksum: 0xf6  Unused space in Extension Block: 9 bytes
 
 ----------------
 
 Warnings:
 
+Block 0, Base EDID:
+  Missing Display Product Name.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 Block 3, CTA-861 Extension Block:
   Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: 0 or negative horizontal back porch.
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
@@ -199,12 +201,12 @@ Block 3, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #2: Mismatch of image size 596x335 mm vs display size 310x170 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 596x335 mm vs display size 310x170 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 596x335 mm vs display size 310x170 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: The DTD max image size is 596x335mm, which is larger than the display size 310.0x170.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
 
 EDID conformity: FAIL

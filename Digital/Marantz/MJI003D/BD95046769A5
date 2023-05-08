@@ -120,6 +120,7 @@ Block 1, CTA-861 Extension Block:
     DTS-HD:
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports DTS:X
       Audio Format Code dependent value: 0x03
     Enhanced AC-3 (DD+):
       Max channels: 8
@@ -195,13 +196,14 @@ Block 1, CTA-861 Extension Block:
     Height speaker zone present
     Surround speaker zone present
     Center speaker zone present
-Checksum: 0x08
+Checksum: 0x08  Unused space in Extension Block: 8 bytes
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
 EDID:
   CTA-861: Native progressive resolution of 1920x1080 is smaller than the max preferred progressive resolution 3840x2160.

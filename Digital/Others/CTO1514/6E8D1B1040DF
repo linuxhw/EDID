@@ -1,0 +1,100 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 8f 14 15 00 00 00 00
+00 1e 01 04 a5 1f 11 78 0e 43 b5 a4 52 4c 9a 27
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1a 36 80 a0 70 38 1e 40 30 20
+35 00 35 ae 10 00 00 18 1a 36 80 a0 70 38 33 41
+30 20 35 00 35 ae 10 00 00 18 00 00 00 fe 00 59
+31 50 4b 43 00 44 4c 42 31 34 32 30 31 4e 00 00
+00 02 41 03 1e 00 12 00 00 0a 01 1a 20 20 00 8b
+
+00 ff ff ff ff ff ff 00 0e 8f 14 15 00 00 00 00
+00 1e 01 04 a5 1f 11 78 0e 43 b5 a4 52 4c 9a 27
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1a 36 80 a0 70 38 1e 40 30 20
+35 00 35 ae 10 00 00 18 1a 36 80 a0 70 38 33 41
+30 20 35 00 35 ae 10 00 00 18 00 00 00 fe 00 59
+31 50 4b 43 00 44 4c 42 31 34 32 30 31 4e 00 00
+00 02 41 03 1e 00 12 00 00 0a 01 1a 20 20 00 8b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CTO
+    Model: 5396
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6416, 0.3203
+    Green: 0.2968, 0.6044
+    Blue : 0.1542, 0.0537
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.987872 Hz  16:9     66.587 kHz    138.500000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   22 Vpol N
+    DTD 2:  1920x1080   48.007598 Hz  16:9     66.587 kHz    138.500000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback  299 Vpol N
+    Alphanumeric Data String: 'Y1PKC'
+    DTD 3:     0x2            inf Hz   0:1      0.000 kHz    200.170000 MHz (analog composite, sync-on-green, field sequential L/R, 0 mm x 266 mm)
+                 Hfront   30 Hsync   0 Hback  -82 Hpol N Hborder 26
+                 Vfront    1 Vsync   2 Vback  766 Vpol N Vborder 32
+                   31 4e 00 00 00 02 41 03 1e 00 12 00 00 0a 01 1a 20 20 '1N....A.........  '
+Checksum: 0x8b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 8f 14 15 00 00 00 00 '................'
+  00 1e 01 04 a5 1f 11 78 0e 43 b5 a4 52 4c 9a 27 '.......x.C..RL.''
+  0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 1a 36 80 a0 70 38 1e 40 30 20 '.......6..p8.@0 '
+  35 00 35 ae 10 00 00 18 1a 36 80 a0 70 38 33 41 '5.5......6..p83A'
+  30 20 35 00 35 ae 10 00 00 18 00 00 00 fe 00 59 '0 5.5..........Y'
+  31 50 4b 43 00 44 4c 42 31 34 32 30 31 4e 00 00 '1PKC.DLB14201N..'
+  00 02 41 03 1e 00 12 00 00 0a 01 1a 20 20 00 8b '..A.........  ..'
+Checksum: 0x8b
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #3: The use of non-zero borders in a DTD is not recommended.
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Alphanumeric Data String: Non-printable character.
+  Detailed Timing Descriptor #3: 0 values in the video timing:
+    Horizontal Active/Blanking 0/0
+    Horizontal Frontporch/Sync Width 30/0
+    Vertical Active/Blanking 2/833
+    Vertical Frontporch/Sync Width 1/2
+  Detailed Timing Descriptor #3: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #3: Mismatch of image size 0x266 mm vs display size 310x170 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #3: Invalid detailed timing descriptor ordering.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 309x266mm, which is larger than the display size 310.0x170.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

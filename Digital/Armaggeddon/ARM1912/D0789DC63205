@@ -114,18 +114,19 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Detailed Timing Descriptors:
     DTD 2:  1920x1080   74.985859 Hz  16:9     84.359 kHz    185.590000 MHz (160 mm x 90 mm)
                  Hfront   48 Hsync  40 Hback  192 Hpol P
                  Vfront    5 Vsync   5 Vback   35 Vpol P
-Checksum: 0xf9
+Checksum: 0xf9  Unused space in Extension Block: 67 bytes
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
@@ -135,7 +136,6 @@ Failures:
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 476x268 mm vs display size 530x290 mm.
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #2: Mismatch of image size 160x90 mm vs display size 530x290 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 

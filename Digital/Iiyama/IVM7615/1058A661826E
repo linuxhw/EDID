@@ -163,7 +163,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (800 mm x 335 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   77 Vpol N
-Checksum: 0x0b
+Checksum: 0x0b  Unused space in Extension Block: 1 byte
 
 ----------------
 
@@ -179,7 +179,7 @@ Block 2, DisplayID Extension Block:
                Hfront  144 Hsync  32 Hback   48 Hpol P
                Vfront    3 Vsync   4 Vback   78 Vpol N
   Checksum: 0xc2
-Checksum: 0x90
+Checksum: 0x90  Unused space in Extension Block: 78 bytes
 
 ----------------
 
@@ -219,13 +219,14 @@ Block 4, DisplayID Extension Block:
       Supported sample rates (kHz): 48
       Supported sample sizes (bits): 16
   Checksum: 0x17
-Checksum: 0x90
+Checksum: 0x90  Unused space in Extension Block: 31 bytes
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 4, DisplayID Extension Block:
   CTA-861 DisplayID Data Block: Unexpected revision (3 != 0).
@@ -235,8 +236,6 @@ EDID:
 
 Failures:
 
-Block 0, Base EDID:
-  Base EDID: EDID specified 2 extension block(s), but found 4 extension block(s).
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 20.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
@@ -245,6 +244,7 @@ Block 2, DisplayID Extension Block:
 Block 3, Base EDID:
   Unknown Extension Block.
 EDID:
+  Base EDID: EDID specified 2 extension block(s), but found 4 extension block(s).
   CTA-861: Native progressive timings are a mix of several resolutions.
   DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: Missing DisplayID Display Parameters Data Block.

@@ -131,7 +131,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -155,7 +155,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1720x1440   59.997558 Hz  43:36    88.856 kHz    167.050000 MHz (797 mm x 334 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol P
-Checksum: 0xf4
+Checksum: 0xf4  Unused space in Extension Block: 3 bytes
 
 ----------------
 
@@ -185,6 +185,8 @@ Warnings:
 
 Block 0, Base EDID:
   Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 213.263 kHz (Monitor: 222.000 - 222.000 kHz)
@@ -193,7 +195,6 @@ EDID:
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.

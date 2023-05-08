@@ -111,7 +111,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront  528 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-Checksum: 0x49
+Checksum: 0x49  Unused space in Extension Block: 11 bytes
 
 ----------------
 
@@ -122,13 +122,14 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: The use of non-zero borders in a DTD is not recommended.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 
 Block 0, Base EDID:
   Missing Display Product Name.
 Block 1, CTA-861 Extension Block:
-  Padding: CTA-861 padding contains non-zero bytes.
+  Padding: Contains non-zero bytes.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

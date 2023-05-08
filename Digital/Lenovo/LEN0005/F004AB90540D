@@ -1,0 +1,102 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 05 00 05 00 00 00
+0a 15 01 03 80 30 1b 78 2e bd 80 a2 56 54 9e 27
+0e 50 54 21 0f 00 d1 c0 b3 00 a9 c0 95 00 81 80
+81 40 a9 40 81 00 02 3a 80 18 71 38 2d 40 25 20
+45 00 dc 0c 11 00 00 1e 00 00 00 fc 00 4c 45 4e
+2d 45 39 31 2d 42 0a 20 20 20 00 00 00 fd 00 32
+4b 40 53 10 00 0a 20 20 20 20 20 20 00 00 00 10
+00 4c 65 6e 6f 76 6f 20 54 61 68 6f 65 0a 00 4c
+
+00 ff ff ff ff ff ff 00 30 ae 05 00 05 00 00 00
+0a 15 01 03 80 30 1b 78 2e bd 80 a2 56 54 9e 27
+0e 50 54 21 0f 00 d1 c0 b3 00 a9 c0 95 00 81 80
+81 40 a9 40 81 00 02 3a 80 18 71 38 2d 40 25 20
+45 00 dc 0c 11 00 00 1e 00 00 00 fc 00 4c 45 4e
+2d 45 39 31 2d 42 0a 20 20 20 00 00 00 fd 00 32
+4b 40 53 10 00 0a 20 20 20 20 20 20 00 00 00 10
+00 4c 65 6e 6f 76 6f 20 54 61 68 6f 65 0a 00 4c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 5
+    Serial Number: ...
+    Made in: week 10 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6347, 0.3388
+    Green: 0.3310, 0.6181
+    Blue : 0.1542, 0.0546
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (476 mm x 268 mm)
+                 Hfront   37 Hsync  32 Hback  211 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Name: 'LEN-E91-B'
+    Display Range Limits:
+      Monitor ranges (GTF): 50-75 Hz V, 64-83 kHz H, max dotclock 160 MHz
+    Dummy Descriptor:
+Checksum: 0x4c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 05 00 05 00 00 00 '........0.......'
+  0a 15 01 03 80 30 1b 78 2e bd 80 a2 56 54 9e 27 '.....0.x....VT.''
+  0e 50 54 21 0f 00 d1 c0 b3 00 a9 c0 95 00 81 80 '.PT!............'
+  81 40 a9 40 81 00 02 3a 80 18 71 38 2d 40 25 20 '.@.@...:..q8-@% '
+  45 00 dc 0c 11 00 00 1e 00 00 00 fc 00 4c 45 4e 'E............LEN'
+  2d 45 39 31 2d 42 0a 20 20 20 00 00 00 fd 00 32 '-E91-B.   .....2'
+  4b 40 53 10 00 0a 20 20 20 20 20 20 00 00 00 10 'K@S...      ....'
+  00 4c 65 6e 6f 76 6f 20 54 61 68 6f 65 0a 00 4c '.Lenovo Tahoe..L'
+Checksum: 0x4c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Dummy Descriptor: Dummy block filled with garbage.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 79.976 kHz (Monitor: 64.000 - 83.000 kHz)
+    Maximum Clock: 162.000 MHz (Monitor: 160.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

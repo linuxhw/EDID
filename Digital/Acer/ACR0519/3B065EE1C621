@@ -138,7 +138,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     SVD Index 17 is out of range
@@ -159,14 +159,18 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  2560x1080   59.978424 Hz  64:27    66.636 kHz    181.250000 MHz (800 mm x 335 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   18 Vpol N
-Checksum: 0x82
+Checksum: 0x82  Unused space in Extension Block: 15 bytes
 
 ----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   YCbCr 4:2:0 Capability Map Data Block: Max index 17 > 16 (#SVDs).
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:

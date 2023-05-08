@@ -1,0 +1,81 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 64 31 15 59 06 00 00
+1e 10 01 01 80 1e 17 78 0a e7 65 98 58 50 89 26
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 78 20 51 1a 10 40 30 70
+13 00 31 e4 10 00 00 19 00 00 00 00 00 02 2d 2f
+44 01 03 03 06 48 05 08 21 00 00 00 00 fe 00 48
+41 4e 4e 53 54 41 52 0a 00 00 00 00 00 00 00 fc
+00 48 53 44 31 35 30 50 4b 31 34 2d 42 0a 00 51
+
+00 ff ff ff ff ff ff 00 22 64 31 15 59 06 00 00
+1e 10 01 01 80 1e 17 78 0a e7 65 98 58 50 89 26
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 78 20 51 1a 10 40 30 70
+13 00 31 e4 10 00 00 19 00 00 00 00 00 02 2d 2f
+44 01 03 03 06 48 05 08 21 00 00 00 00 fe 00 48
+41 4e 4e 53 54 41 52 0a 00 00 00 00 00 00 00 fc
+00 48 53 44 31 35 30 50 4b 31 34 2d 42 0a 00 51
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: HSD
+    Model: 5425
+    Serial Number: ...
+    Made in: week 30 of 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 23 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5966, 0.3457
+    Green: 0.3134, 0.5380
+    Blue : 0.1494, 0.1269
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1400x1050   60.019740 Hz   4:3     63.981 kHz    108.000000 MHz (305 mm x 228 mm)
+                 Hfront   48 Hsync 112 Hback  128 Hpol N
+                 Vfront    1 Vsync   3 Vback   12 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 2d 2f 44 01 03 03 06 48 05 08 21 00 '....-/D....H..!.'
+    Alphanumeric Data String: 'HANNSTAR'
+    Display Product Name: 'HSD150PK14-B'
+Checksum: 0x51
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 64 31 15 59 06 00 00 '........"d1.Y...'
+  1e 10 01 01 80 1e 17 78 0a e7 65 98 58 50 89 26 '.......x..e.XP.&'
+  20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ' PT.............'
+  01 01 01 01 01 01 30 2a 78 20 51 1a 10 40 30 70 '......0*x Q..@0p'
+  13 00 31 e4 10 00 00 19 00 00 00 00 00 02 2d 2f '..1...........-/'
+  44 01 03 03 06 48 05 08 21 00 00 00 00 fe 00 48 'D....H..!......H'
+  41 4e 4e 53 54 41 52 0a 00 00 00 00 00 00 00 fc 'ANNSTAR.........'
+  00 48 53 44 31 35 30 50 4b 31 34 2d 42 0a 00 51 '.HSD150PK14-B..Q'
+Checksum: 0x51
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-space after newline.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

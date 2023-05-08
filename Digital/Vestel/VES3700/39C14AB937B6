@@ -175,7 +175,7 @@ Block 1, CTA-861 Extension Block:
     xvYCC709
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Video Data Block (Dolby), OUI 00-D0-46:
     Version: 1 (15 bytes)
     Supports YUV422 12 bit
@@ -189,17 +189,20 @@ Block 1, CTA-861 Extension Block:
     Rx, Ry: 0.64453125, 0.32421875
     Gx, Gy: 0.29296875, 0.58593750
     Bx, By: 0.15234375, 0.05078125
-Checksum: 0x0f
+Checksum: 0x0f  Unused space in Extension Block: 23 bytes
 
 ----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 1872x1053 mm vs display size 1430x810 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 1872x1053 mm vs display size 1430x810 mm.
-Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 75.062 Hz (Monitor: 48.000 - 62.000 Hz)

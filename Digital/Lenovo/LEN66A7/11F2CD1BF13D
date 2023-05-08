@@ -102,12 +102,14 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  1366x768    60.000000 Hz 683:384   48.000 kHz     72.000000 MHz (598 mm x 336 mm)
                  Hfront   14 Hsync  56 Hback   64 Hpol P
                  Vfront    1 Vsync   3 Vback   28 Vpol P
-Checksum: 0x67
+Checksum: 0x67  Unused space in Extension Block: 49 bytes
 
 ----------------
 
 Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 111.856 kHz (Monitor: 115.000 - 115.000 kHz)

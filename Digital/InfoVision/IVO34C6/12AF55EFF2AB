@@ -1,0 +1,83 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cf c6 34 04 00 00 00
+00 1e 01 04 a5 1d 13 78 0a de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 5a 40 80 a0 70 00 28 50 18 30
+61 01 1d be 10 00 00 19 00 00 00 fe 00 58 31 33
+35 4e 56 34 31 20 52 30 20 0a 00 00 00 03 00 03
+54 d8 04 64 7d 15 0d 10 96 00 00 00 00 00 00 03
+00 1c 5b ff 64 a0 bd 17 0d 4a bd 01 01 00 00 4c
+
+00 ff ff ff ff ff ff 00 26 cf c6 34 04 00 00 00
+00 1e 01 04 a5 1d 13 78 0a de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 5a 40 80 a0 70 00 28 50 18 30
+61 01 1d be 10 00 00 19 00 00 00 fe 00 58 31 33
+35 4e 56 34 31 20 52 30 20 0a 00 00 00 03 00 03
+54 d8 04 64 7d 15 0d 10 96 00 00 00 00 00 00 03
+00 1c 5b ff 64 a0 bd 17 0d 4a bd 01 01 00 00 4c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: IVO
+    Model: 13510
+    Serial Number: ...
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1280   60.001457 Hz   3:2     79.202 kHz    164.740000 MHz (285 mm x 190 mm)
+                 Hfront   24 Hsync  48 Hback   88 Hpol N
+                 Vfront    6 Vsync  17 Vback   17 Vpol N
+    Alphanumeric Data String: 'X135NV41 R0 '
+    Manufacturer-Specified Display Descriptor (0x03): 00 03 00 03 54 d8 04 64 7d 15 0d 10 96 00 00 00 '....T..d}.......'
+    Manufacturer-Specified Display Descriptor (0x03): 00 03 00 1c 5b ff 64 a0 bd 17 0d 4a bd 01 01 00 '....[.d....J....'
+Checksum: 0x4c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cf c6 34 04 00 00 00 '........&..4....'
+  00 1e 01 04 a5 1d 13 78 0a de 50 a3 54 4c 99 26 '.......x..P.TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 5a 40 80 a0 70 00 28 50 18 30 '......Z@..p.(P.0'
+  61 01 1d be 10 00 00 19 00 00 00 fe 00 58 31 33 'a............X13'
+  35 4e 56 34 31 20 52 30 20 0a 00 00 00 03 00 03 '5NV41 R0 .......'
+  54 d8 04 64 7d 15 0d 10 96 00 00 00 00 00 00 03 'T..d}...........'
+  00 1c 5b ff 64 a0 bd 17 0d 4a bd 01 01 00 00 4c '..[.d....J.....L'
+Checksum: 0x4c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

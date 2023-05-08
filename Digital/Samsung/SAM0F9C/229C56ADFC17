@@ -139,7 +139,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  3840x1080   99.955869 Hz  32:9    113.250 kHz    453.000000 MHz (1193 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   40 Vpol N
-Checksum: 0xdd
+Checksum: 0xdd  Unused space in Extension Block: 16 bytes
 
 ----------------
 
@@ -166,6 +166,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 56.250 - 120.000 Hz (Monitor: 70.000 - 120.000 Hz)

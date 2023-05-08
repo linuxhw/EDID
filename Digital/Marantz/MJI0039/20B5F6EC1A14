@@ -120,6 +120,7 @@ Block 1, CTA-861 Extension Block:
     DTS-HD:
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports DTS:X
       Audio Format Code dependent value: 0x03
     Enhanced AC-3 (DD+):
       Max channels: 8
@@ -149,8 +150,8 @@ Block 1, CTA-861 Extension Block:
     DC_30bit
     DC_Y444
     Maximum TMDS clock: 300 MHz
-    Video latency: 83 ms
-    Audio latency: 83 ms
+    Video latency: 80 ms
+    Audio latency: 80 ms
     Extended HDMI video details:
       HDMI VICs:
         HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
@@ -186,13 +187,14 @@ Block 1, CTA-861 Extension Block:
     Height speaker zone present
     Surround speaker zone present
     Center speaker zone present
-Checksum: 0x0d
+Checksum: 0x0d  Unused space in Extension Block: 18 bytes
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.

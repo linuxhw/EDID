@@ -123,7 +123,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
@@ -147,7 +147,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1280x1440   59.912620 Hz   8:9     89.450 kHz    156.000000 MHz (698 mm x 393 mm)
                  Hfront   96 Hsync 136 Hback  232 Hpol N
                  Vfront    3 Vsync  10 Vback   40 Vpol P
-Checksum: 0x73
+Checksum: 0x73  Unused space in Extension Block: 16 bytes
 
 ----------------
 
@@ -157,7 +157,6 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

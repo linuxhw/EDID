@@ -1,0 +1,146 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac e3 a1 53 47 33 30
+14 20 01 03 80 51 23 78 2a f7 b1 b0 4d 3d b7 25
+0e 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 e7 7c 70 a0 d0 a0 29 50 30 20
+35 00 29 62 31 00 00 1a 00 00 00 ff 00 23 47 72
+4d 59 4d 78 67 77 41 41 63 53 00 00 00 fd 00 18
+78 1e 96 3c 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 44 65 6c 6c 20 41 57 33 34 32 33 44 57 01 5a
+
+02 03 37 f1 48 10 1f 04 13 03 12 01 3f 23 09 07
+01 83 01 00 00 68 03 0c 00 20 00 38 3c 00 6a d8
+5d c4 01 78 80 00 00 02 78 e3 05 c0 00 e2 00 6a
+e6 06 05 01 8d 4b 00 4e d4 70 a0 d0 a0 46 50 30
+20 35 00 29 62 31 00 00 1a 9d 67 70 a0 d0 a0 22
+50 30 20 35 00 29 62 31 00 00 1a 56 5e 00 a0 a0
+a0 29 50 30 20 35 00 29 62 31 00 00 1a 6f c2 00
+a0 a0 a0 55 50 30 20 35 00 29 62 31 00 00 1a 3c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 41443
+    Serial Number: ...
+    Made in: week 20 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 81 cm x 35 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6904, 0.3037
+    Green: 0.2392, 0.7177
+    Blue : 0.1464, 0.0576
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3440x1440   59.972616 Hz  43:18    88.819 kHz    319.750000 MHz (809 mm x 354 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    Display Product Serial Number: ...
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 24-120 Hz V, 30-150 kHz H, max dotclock 600 MHz
+    Display Product Name: 'Dell AW3423DW'
+  Extension blocks: 1
+Checksum: 0x5a
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    VRRmin: 2 Hz
+    VRRmax: 120 Hz
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 141 (1060.189 cd/m^2)
+    Desired content max frame-average luminance: 75 (253.810 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  3440x1440   99.981604 Hz  43:18   150.972 kHz    543.500000 MHz (809 mm x 354 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   62 Vpol N
+    DTD 3:  3440x1440   49.986808 Hz  43:18    73.681 kHz    265.250000 MHz (809 mm x 354 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   26 Vpol N
+    DTD 4:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (809 mm x 354 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 5:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (809 mm x 354 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   77 Vpol N
+Checksum: 0x3c
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.250 - 182.996 kHz (Monitor: 30.000 - 150.000 kHz)
+
+EDID conformity: FAIL

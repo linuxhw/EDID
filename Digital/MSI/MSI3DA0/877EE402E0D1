@@ -139,7 +139,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -163,7 +163,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  2560x1080  143.944786 Hz  64:27   166.544 kHz    453.000000 MHz (797 mm x 334 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   64 Vpol N
-Checksum: 0x5b
+Checksum: 0x5b  Unused space in Extension Block: 15 bytes
 
 ----------------
 
@@ -188,6 +188,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 144.000 Hz (Monitor: 48.000 - 144.000 Hz)
@@ -198,7 +199,6 @@ Failures:
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.

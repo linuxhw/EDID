@@ -1,0 +1,80 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 35 40 00 00 00 00
+00 12 01 03 80 1e 13 78 ea 01 f5 97 57 52 8a 27
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 26 1b 00 88 50 20 12 30 34 40
+33 00 2f be 10 00 00 19 8b 16 00 68 50 20 22 30
+34 40 33 00 2f be 10 00 00 19 00 00 00 0f 00 81
+0a 32 81 0a 28 16 09 00 4c a3 41 54 00 00 00 fe
+00 4c 54 4e 31 34 31 41 54 31 32 4c 30 31 00 c3
+
+00 ff ff ff ff ff ff 00 30 ae 35 40 00 00 00 00
+00 12 01 03 80 1e 13 78 ea 01 f5 97 57 52 8a 27
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 26 1b 00 88 50 20 12 30 34 40
+33 00 2f be 10 00 00 19 8b 16 00 68 50 20 22 30
+34 40 33 00 2f be 10 00 00 19 00 00 00 0f 00 81
+0a 32 81 0a 28 16 09 00 4c a3 41 54 00 00 00 fe
+00 4c 54 4e 31 34 31 41 54 31 32 4c 30 31 00 c3
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16437
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3398
+    Green: 0.3203, 0.5400
+    Blue : 0.1552, 0.1396
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.002348 Hz  16:10    49.082 kHz     69.500000 MHz (303 mm x 190 mm)
+                 Hfront   52 Hsync  64 Hback   20 Hpol N
+                 Vfront    3 Vsync   3 Vback   12 Vpol N
+    DTD 2:  1280x800    49.997574 Hz  16:10    41.698 kHz     57.710000 MHz (303 mm x 190 mm)
+                 Hfront   52 Hsync  64 Hback  -12 Hpol N
+                 Vfront    3 Vsync   3 Vback   28 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 81 0a 32 81 0a 28 16 09 00 4c a3 41 54 '.....2..(...L.AT'
+    Alphanumeric Data String: 'LTN141AT12L01'
+Checksum: 0xc3
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 35 40 00 00 00 00 '........0.5@....'
+  00 12 01 03 80 1e 13 78 ea 01 f5 97 57 52 8a 27 '.......x....WR.''
+  23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '#PT.............'
+  01 01 01 01 01 01 26 1b 00 88 50 20 12 30 34 40 '......&...P .04@'
+  33 00 2f be 10 00 00 19 8b 16 00 68 50 20 22 30 '3./........hP "0'
+  34 40 33 00 2f be 10 00 00 19 00 00 00 0f 00 81 '4@3./...........'
+  0a 32 81 0a 28 16 09 00 4c a3 41 54 00 00 00 fe '.2..(...L.AT....'
+  00 4c 54 4e 31 34 31 41 54 31 32 4c 30 31 00 c3 '.LTN141AT12L01..'
+Checksum: 0xc3
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: 0 or negative horizontal back porch.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -102,7 +102,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 2.0.0.0
     Supports_AI
@@ -110,10 +110,10 @@ Block 1, CTA-861 Extension Block:
     DC_30bit
     DC_Y444
     Maximum TMDS clock: 225 MHz
-    Video latency: 123 ms
-    Audio latency: 123 ms
-    Interlaced video latency: 183 ms
-    Interlaced audio latency: 183 ms
+    Video latency: 120 ms
+    Audio latency: 120 ms
+    Interlaced video latency: 180 ms
+    Interlaced audio latency: 180 ms
   Detailed Timing Descriptors:
     DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1329 mm x 748 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
@@ -129,7 +129,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (1329 mm x 748 mm)
                  Hfront  440 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
-Checksum: 0x46
+Checksum: 0x46  Unused space in Extension Block: 9 bytes
 
 ----------------
 
@@ -137,6 +137,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
@@ -144,7 +145,6 @@ Block 0, Base EDID:
   Vendor & Product Identification: EDID 1.3 does not support week 0xff.
   Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.

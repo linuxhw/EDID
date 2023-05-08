@@ -54,7 +54,7 @@ Block 0, Base EDID:
     DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
     DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  1920x1200   59.950171 Hz   8:5     74.038 kHz    154.000000 MHz (519 mm x 324 mm)
+    DTD 1:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (519 mm x 324 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   26 Vpol N
     DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (519 mm x 324 mm)
@@ -104,7 +104,7 @@ Block 1, CTA-861 Extension Block:
     DTD 7:   640x480    59.928571 Hz   4:3     31.462 kHz     25.170000 MHz (519 mm x 324 mm)
                  Hfront   16 Hsync  96 Hback   48 Hpol N
                  Vfront   10 Vsync   2 Vback   33 Vpol N
-Checksum: 0xa4
+Checksum: 0xa4  Unused space in Extension Block: 19 bytes
 
 ----------------
 
@@ -112,6 +112,8 @@ Warnings:
 
 Block 0, Base EDID:
   Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 59.810 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)

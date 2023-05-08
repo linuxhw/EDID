@@ -1,0 +1,175 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 32 8d 14 14 00 88 88 88
+08 1c 01 03 80 0c 07 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 c4 8e 21 00 00 1e 01 1d 80 18 71 38 2d 40
+58 2c 45 00 c4 8e 21 00 00 1e 00 00 00 fd 00 32
+3c 14 3c 1e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 6f 67 69 20 52 61 6c 6c 79 42 61 72 01 f3
+
+02 03 14 d1 41 90 23 09 04 07 83 01 00 00 65 03
+0c 00 10 00 02 3a 80 18 71 38 2d 40 58 2c 45 00
+c4 8e 21 00 00 1e 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c2
+
+00 ff ff ff ff ff ff 00 32 8d 14 14 00 88 88 88
+08 1c 01 03 80 0c 07 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 c4 8e 21 00 00 1e 01 1d 80 18 71 38 2d 40
+58 2c 45 00 c4 8e 21 00 00 1e 00 00 00 fd 00 32
+3c 14 3c 1e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 6f 67 69 20 52 61 6c 6c 79 42 61 72 01 f3
+
+02 03 14 d1 41 90 23 09 04 07 83 01 00 00 65 03
+0c 00 10 00 02 3a 80 18 71 38 2d 40 58 2c 45 00
+c4 8e 21 00 00 1e 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LTM
+    Model: 5140
+    Serial Number: ...
+    Made in: week 8 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 12 cm x 7 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-60 Hz V, 20-60 kHz H, max dotclock 300 MHz
+    Display Product Name: 'Logi RallyBar'
+  Extension blocks: 1
+Checksum: 0xf3
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0xc2  Unused space in Extension Block: 89 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 32 8d 14 14 00 88 88 88 '........2.......'
+  08 1c 01 03 80 0c 07 78 0a 0d c9 a0 57 47 98 27 '.......x....WG.''
+  12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01 '.HL.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 c4 8e 21 00 00 1e 01 1d 80 18 71 38 2d 40 'E...!.......q8-@'
+  58 2c 45 00 c4 8e 21 00 00 1e 00 00 00 fd 00 32 'X,E...!........2'
+  3c 14 3c 1e 00 0a 20 20 20 20 20 20 00 00 00 fc '<.<...      ....'
+  00 4c 6f 67 69 20 52 61 6c 6c 79 42 61 72 01 f3 '.Logi RallyBar..'
+Checksum: 0xf3
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 4:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0xc2  Unused space in Extension Block: 89 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (12x7 is smaller than 10x10 cm).
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 708x398 mm vs display size 120x70 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 708x398 mm vs display size 120x70 mm.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Mismatch of image size 708x398 mm vs display size 120x70 mm.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #4: Mismatch of image size 708x398 mm vs display size 120x70 mm.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 30.000 - 60.000 Hz (Monitor: 50.000 - 60.000 Hz)
+    Horizontal Freq: 33.750 - 67.500 kHz (Monitor: 20.000 - 60.000 kHz)
+  Base EDID: The DTD max image size is 708x398mm, which is larger than the display size 120.0x70.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

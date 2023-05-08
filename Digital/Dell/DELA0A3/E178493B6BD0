@@ -129,7 +129,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (527 mm x 296 mm)
                  Hfront   16 Hsync  62 Hback   60 Hpol N
                  Vfront    9 Vsync   6 Vback   30 Vpol N
-Checksum: 0xc1
+Checksum: 0xc1  Unused space in Extension Block: 30 bytes
 
 ----------------
 
@@ -189,7 +189,7 @@ Block 3, CTA-861 Extension Block:
     DTD 9:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (527 mm x 296 mm)
                  Hfront   16 Hsync  62 Hback   60 Hpol N
                  Vfront    9 Vsync   6 Vback   30 Vpol N
-Checksum: 0x37
+Checksum: 0x37  Unused space in Extension Block: 24 bytes
 
 ----------------
 
@@ -212,7 +212,6 @@ Failures:
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Display Range Limits: GTF can't be combined with non-continuous frequencies.
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, Base EDID:
@@ -233,5 +232,7 @@ Block 3, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
 
 EDID conformity: FAIL

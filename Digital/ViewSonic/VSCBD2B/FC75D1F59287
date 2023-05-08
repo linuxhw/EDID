@@ -114,7 +114,7 @@ Block 2, DisplayID Extension Block:
       Supported sample rates (kHz): 48
       Supported sample sizes (bits): 16
   Checksum: 0x77
-Checksum: 0x90
+Checksum: 0x90  Unused space in Extension Block: 91 bytes
 
 ----------------
 
@@ -127,7 +127,6 @@ Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Base EDID: EDID specified 0 extension block(s), but found 2 extension block(s).
 Block 1, Base EDID:
   Unknown Extension Block.
 Block 2, DisplayID Extension Block:
@@ -138,6 +137,7 @@ EDID:
     Vertical Freq: 56.250 - 144.000 Hz (Monitor: 50.000 - 75.000 Hz)
     Horizontal Freq: 31.466 - 232.128 kHz (Monitor: 24.000 - 82.000 kHz)
     Maximum Clock: 687.100 MHz (Monitor: 170.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 2 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
   DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: DisplayID expects at least one preferred timing.

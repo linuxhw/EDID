@@ -108,7 +108,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 2.0.0.0
     DC_36bit
@@ -128,7 +128,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (930 mm x 523 mm)
                  Hfront   12 Hsync  64 Hback   68 Hpol N
                  Vfront    5 Vsync   5 Vback   39 Vpol N
-Checksum: 0xf7
+Checksum: 0xf7  Unused space in Extension Block: 15 bytes
 
 ----------------
 
@@ -138,6 +138,7 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 4.
   Detailed Timing Descriptor #4: DTD is similar but not identical to VIC 19.
 
@@ -148,7 +149,6 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 196x133 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #2: Invalid detailed timing descriptor ordering.
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #3: Mismatch of image size 930x523 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 930x523 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 196x142 mm vs display size 480x270 mm.

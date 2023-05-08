@@ -97,7 +97,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (531 mm x 298 mm)
                  Hfront  110 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
-Checksum: 0xf5
+Checksum: 0xf5  Unused space in Extension Block: 42 bytes
 
 ----------------
 
@@ -105,6 +105,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   CTA-861: Native progressive resolution of 1280x768 is smaller than the max preferred progressive resolution 1920x1080.
 

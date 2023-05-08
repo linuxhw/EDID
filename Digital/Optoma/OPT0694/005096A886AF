@@ -1,0 +1,145 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 3e 14 94 06 00 00 00 00
+06 1a 01 03 81 35 1e 78 eb eb 9d 9e 54 54 9e 26
+0a 47 4a 21 08 00 81 80 b3 00 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2b 21 00 00 1e 00 00 00 10 00 1a 1e 40
+30 20 36 00 da 29 11 00 00 1a 00 00 00 fd 00 32
+3c 1e 4b 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4f 32 34 32 41 54 0a 20 20 20 20 20 20 01 4d
+
+02 03 22 f1 4f 01 02 03 04 05 06 07 90 12 12 13
+27 15 16 1f 23 09 7f 07 83 01 00 00 64 03 0c 00
+10 00 02 3a 80 d0 72 38 2d 40 10 2c 45 88 c4 8e
+21 00 00 1e 01 1d 80 d0 72 1c 16 20 10 2c 25 00
+c4 8e 21 00 00 9e 01 1d 00 bc 52 d0 1e 20 b8 28
+55 44 13 8e 21 00 00 1e 8c 0a d0 90 20 40 31 20
+0c 40 55 00 13 8e 21 00 00 18 02 3a 80 18 71 38
+2d 40 58 2c 45 00 c4 8e 21 00 00 1e 00 00 00 b2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: OPT
+    Model: 1684
+    Made in: week 6 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 53 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+    Supports GTF timings within operating range
+  Color Characteristics:
+    Red  : 0.6201, 0.3300
+    Green: 0.3300, 0.6201
+    Blue : 0.1503, 0.0400
+    White: 0.2802, 0.2900
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (531 mm x 299 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Dummy Descriptor:
+    Display Range Limits:
+      Monitor ranges (GTF): 50-60 Hz V, 30-75 kHz H, max dotclock 150 MHz
+    Display Product Name: 'O242AT'
+  Extension blocks: 1
+Checksum: 0x4d
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  39:  1920x1080i  50.000000 Hz  16:9     31.250 kHz     72.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (708 mm x 398 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront   36 Vsync   5 Vback    4 Vpol P
+    DTD 3:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront   16 Hsync  44 Hback  660 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 4:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (531 mm x 398 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront   21 Vsync   5 Vback    4 Vpol P
+    DTD 5:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (531 mm x 398 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 6:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0xb2  Unused space in Extension Block: 3 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 31.
+  Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 20.
+  Detailed Timing Descriptor #4: DTD is similar but not identical to VIC 19.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Dummy Descriptor: Dummy block filled with garbage.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 18.
+  Detailed Timing Descriptor #2: Mismatch of image size 708x398 mm vs display size 530x300 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 708x398 mm vs display size 530x300 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 531x398 mm vs display size 530x300 mm.
+  Detailed Timing Descriptor #5: Mismatch of image size 531x398 mm vs display size 530x300 mm.
+  Detailed Timing Descriptor #6: Mismatch of image size 708x398 mm vs display size 530x300 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 30.000 - 75.000 kHz)
+  Base EDID: The DTD max image size is 708x398mm, which is larger than the display size 530.0x300.0mm.
+
+EDID conformity: FAIL

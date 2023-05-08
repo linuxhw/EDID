@@ -104,7 +104,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz (607 mm x 345 mm)
                  Hfront  176 Hsync  88 Hback  296 Hpol P
                  Vfront    8 Vsync  10 Vback   72 Vpol P
-Checksum: 0x52
+Checksum: 0x52  Unused space in Extension Block: 59 bytes
 
 ----------------
 
@@ -115,6 +115,7 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 30.000 - 75.062 Hz (Monitor: 56.000 - 75.000 Hz)

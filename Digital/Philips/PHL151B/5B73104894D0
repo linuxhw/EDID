@@ -110,10 +110,10 @@ Block 1, CTA-861 Extension Block:
     DC_30bit
     DC_Y444
     Maximum TMDS clock: 225 MHz
-    Video latency: 123 ms
-    Audio latency: 3 ms
-    Interlaced video latency: 111 ms
-    Interlaced audio latency: 3 ms
+    Video latency: 120 ms
+    Audio latency: 0 ms
+    Interlaced video latency: 108 ms
+    Interlaced audio latency: 0 ms
   Detailed Timing Descriptors:
     DTD 3:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (708 mm x 398 mm)
                  Hfront  440 Hsync  40 Hback  220 Hpol P
@@ -129,7 +129,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-Checksum: 0x07
+Checksum: 0x07  Unused space in Extension Block: 11 bytes
 
 ----------------
 
@@ -141,9 +141,10 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x03.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Audio latency < Video latency (3 ms < 123 ms). This is discouraged for devices without HDMI output.
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Interlaced audio latency < Interlaced video latency (3 ms < 111 ms). This is discouraged for devices without HDMI output.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Audio latency < Video latency (0 ms < 120 ms). This is discouraged for devices without HDMI output.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Interlaced audio latency < Interlaced video latency (0 ms < 108 ms). This is discouraged for devices without HDMI output.
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 19.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

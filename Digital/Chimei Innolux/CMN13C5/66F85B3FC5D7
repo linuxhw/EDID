@@ -1,0 +1,86 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae c5 13 00 00 00 00
+15 1f 01 04 a5 1d 11 78 03 ee 95 97 59 54 8e 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 74 3c 80 a0 70 b0 28 40 30 20
+a6 00 25 a5 10 00 00 1a 74 3c 80 a0 70 b0 5e 41
+30 20 a6 00 25 a5 10 00 00 1a 00 00 00 fe 00 58
+48 4b 44 47 14 31 33 33 4a 43 41 0a 00 00 00 00
+00 03 48 11 9e 00 10 00 00 0a 41 0a 20 20 00 4d
+
+00 ff ff ff ff ff ff 00 0d ae c5 13 00 00 00 00
+15 1f 01 04 a5 1d 11 78 03 ee 95 97 59 54 8e 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 74 3c 80 a0 70 b0 28 40 30 20
+a6 00 25 a5 10 00 00 1a 74 3c 80 a0 70 b0 5e 41
+30 20 a6 00 25 a5 10 00 00 1a 00 00 00 fe 00 58
+48 4b 44 47 14 31 33 33 4a 43 41 0a 00 00 00 00
+00 03 48 11 9e 00 10 00 00 0a 41 0a 20 20 00 4d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5061
+    Made in: week 21 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5927, 0.3496
+    Green: 0.3310, 0.5566
+    Blue : 0.1542, 0.1181
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.003102 Hz  16:10    74.404 kHz    154.760000 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront   10 Vsync   6 Vback   24 Vpol N
+    DTD 2:  1920x1200   48.002481 Hz  16:10    74.404 kHz    154.760000 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront   10 Vsync   6 Vback  334 Vpol N
+    Alphanumeric Data String: 'XHKDG'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 03 48 11 9e 00 10 00 00 0a 41 0a 20 20 '....H.......A.  '
+Checksum: 0x4d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d ae c5 13 00 00 00 00 '................'
+  15 1f 01 04 a5 1d 11 78 03 ee 95 97 59 54 8e 27 '.......x....YT.''
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 74 3c 80 a0 70 b0 28 40 30 20 '......t<..p.(@0 '
+  a6 00 25 a5 10 00 00 1a 74 3c 80 a0 70 b0 5e 41 '..%.....t<..p.^A'
+  30 20 a6 00 25 a5 10 00 00 1a 00 00 00 fe 00 58 '0 ..%..........X'
+  48 4b 44 47 14 31 33 33 4a 43 41 0a 00 00 00 00 'HKDG.133JCA.....'
+  00 03 48 11 9e 00 10 00 00 0a 41 0a 20 20 00 4d '..H.......A.  .M'
+Checksum: 0x4d
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

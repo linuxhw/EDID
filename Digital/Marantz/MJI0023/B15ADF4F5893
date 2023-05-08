@@ -123,7 +123,7 @@ Block 1, CTA-861 Extension Block:
     sYCC601
     opYCC601
     opRGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 2.2.0.0
     Supports_AI
@@ -172,7 +172,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-Checksum: 0x86
+Checksum: 0x86  Unused space in Extension Block: 10 bytes
 
 ----------------
 
@@ -180,13 +180,13 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: The DTD max image size is 698x392mm, but the display size is not specified anywhere.

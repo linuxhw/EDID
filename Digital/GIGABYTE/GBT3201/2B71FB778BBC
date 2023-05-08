@@ -158,7 +158,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  1920x1080  164.998322 Hz  16:9    194.698 kHz    393.290000 MHz (698 mm x 392 mm)
                  Hfront   24 Hsync  16 Hback   60 Hpol P
                  Vfront    2 Vsync   5 Vback   93 Vpol N
-Checksum: 0xe6
+Checksum: 0xe6  Unused space in Extension Block: 3 bytes
 
 ----------------
 
@@ -177,7 +177,7 @@ Block 2, DisplayID Extension Block:
                Hfront   24 Hsync  16 Hback   60 Hpol N
                Vfront    2 Vsync   5 Vback   93 Vpol N
   Checksum: 0x60
-Checksum: 0x30
+Checksum: 0x30  Unused space in Extension Block: 58 bytes
 
 ----------------
 
@@ -185,6 +185,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -198,7 +199,7 @@ Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-  Padding: DisplayID padding contains non-zero bytes.
+  Padding: Contains non-zero bytes.
 EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
   DisplayID: Missing DisplayID Product Identification Data Block.

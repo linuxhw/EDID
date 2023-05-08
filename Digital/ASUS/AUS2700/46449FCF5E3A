@@ -115,13 +115,13 @@ Block 1, CTA-861 Extension Block:
     DTD 3:  2560x1440   74.923939 Hz  16:9    111.787 kHz    298.470000 MHz (597 mm x 336 mm)
                  Hfront   23 Hsync  32 Hback   55 Hpol P
                  Vfront   38 Vsync   8 Vback    6 Vpol N
-    DTD 4:  1280x800    59.810326 Hz   8:5     49.702 kHz     83.500000 MHz (597 mm x 336 mm)
+    DTD 4:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz (597 mm x 336 mm)
                  Hfront   72 Hsync 128 Hback  200 Hpol N
                  Vfront    3 Vsync   6 Vback   22 Vpol P
     DTD 5:  2560x1080   59.978424 Hz  64:27    66.636 kHz    181.250000 MHz (597 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   18 Vpol N
-Checksum: 0x6a
+Checksum: 0x6a  Unused space in Extension Block: 29 bytes
 
 ----------------
 
@@ -131,6 +131,7 @@ Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 111.786 kHz (Monitor: 112.000 - 112.000 kHz)

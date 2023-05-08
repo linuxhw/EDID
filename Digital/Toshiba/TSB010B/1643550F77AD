@@ -114,10 +114,10 @@ Block 1, CTA-861 Extension Block:
       Photo
       Cinema
       Game
-    Video latency: 149 ms
-    Audio latency: 149 ms
-    Interlaced video latency: 169 ms
-    Interlaced audio latency: 169 ms
+    Video latency: 146 ms
+    Audio latency: 146 ms
+    Interlaced video latency: 166 ms
+    Interlaced audio latency: 166 ms
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
@@ -137,7 +137,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:  1280x768    59.994726 Hz   5:3     47.396 kHz     68.250000 MHz (872 mm x 523 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   7 Vback   12 Vpol N
-Checksum: 0x46
+Checksum: 0x46  Unused space in Extension Block: 7 bytes
 
 ----------------
 
@@ -148,6 +148,7 @@ Block 1, CTA-861 Extension Block:
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

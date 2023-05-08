@@ -78,7 +78,7 @@ Block 1, CTA-861 Extension Block:
     DTD 3:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (522 mm x 294 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   56 Vpol N
-Checksum: 0x46
+Checksum: 0x46  Unused space in Extension Block: 87 bytes
 
 ----------------
 
@@ -86,6 +86,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

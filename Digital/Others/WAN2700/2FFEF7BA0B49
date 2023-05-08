@@ -127,7 +127,7 @@ Block 1, CTA-861 Extension Block:
     xvYCC709
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 1.1
     Minimum Refresh Rate: 48 Hz
@@ -143,9 +143,14 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  2560x1440   49.998511 Hz  16:9     74.048 kHz    201.410000 MHz (600 mm x 330 mm)
                  Hfront   48 Hsync  42 Hback   70 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
-Checksum: 0x85
+Checksum: 0x85  Unused space in Extension Block: 10 bytes
 
 ----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
@@ -156,7 +161,6 @@ Block 1, CTA-861 Extension Block:
   Video Data Block: Unknown VIC 220.
   Video Data Block: Unknown VIC 220.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #4: Mismatch of image size 700x390 mm vs display size 600x330 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:

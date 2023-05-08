@@ -118,7 +118,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (600 mm x 340 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
-Checksum: 0x9a
+Checksum: 0x9a  Unused space in Extension Block: 43 bytes
 
 ----------------
 
@@ -130,6 +130,7 @@ Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 16.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

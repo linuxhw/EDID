@@ -1,0 +1,89 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5c 23 47 10 01 00 00 00
+01 19 01 03 81 17 0d 78 ea d4 65 99 59 57 92 28
+1c 50 54 01 08 00 95 00 81 00 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 eb 84 00 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 eb 84 00 00 00 1a 00 00 00 ff 00 31
+0a 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fc
+00 44 54 55 2d 31 31 34 31 0a 20 20 20 20 00 eb
+
+00 ff ff ff ff ff ff 00 5c 23 47 10 01 00 00 00
+01 19 01 03 81 17 0d 78 ea d4 65 99 59 57 92 28
+1c 50 54 01 08 00 95 00 81 00 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 eb 84 00 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 eb 84 00 00 00 1a 00 00 00 ff 00 31
+0a 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fc
+00 44 54 55 2d 31 31 34 31 0a 20 20 20 20 00 eb
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: WAC
+    Model: 4167
+    Serial Number: ...
+    Made in: week 1 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 23 cm x 13 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6005, 0.3486
+    Green: 0.3408, 0.5703
+    Blue : 0.1572, 0.1113
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (235 mm x 132 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (235 mm x 132 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol N
+    Display Product Serial Number: ...
+    Display Product Name: 'DTU-1141'
+Checksum: 0xeb
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5c 23 47 10 01 00 00 00 '........\#G.....'
+  01 19 01 03 81 17 0d 78 ea d4 65 99 59 57 92 28 '.......x..e.YW.('
+  1c 50 54 01 08 00 95 00 81 00 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 eb 84 00 00 00 1e 66 21 56 aa 51 00 1e 30 'E.......f!V.Q..0'
+  46 8f 33 00 eb 84 00 00 00 1a 00 00 00 ff 00 31 'F.3............1'
+  0a 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fc '.           ....'
+  00 44 54 55 2d 31 31 34 31 0a 20 20 20 20 00 eb '.DTU-1141.    ..'
+Checksum: 0xeb
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x51.
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

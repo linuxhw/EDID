@@ -155,7 +155,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (1096 mm x 616 mm)
                  Hfront  110 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
-Checksum: 0x7e
+Checksum: 0x7e  Unused space in Extension Block: 7 bytes
 
 ----------------
 
@@ -165,6 +165,7 @@ Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

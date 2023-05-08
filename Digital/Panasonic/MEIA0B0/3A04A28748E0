@@ -90,7 +90,7 @@ Block 1, CTA-861 Extension Block:
     sYCC601
     opYCC601
     opRGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Detailed Timing Descriptors:
     DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (698 mm x 392 mm)
                  Hfront  110 Hsync  40 Hback  220 Hpol P
@@ -109,7 +109,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront   38 Hsync 124 Hback  114 Hpol N
                  Vfront    4 Vsync   3 Vback   15 Vpol N Vfront +0.5 Odd Field
                  Vfront    4 Vsync   3 Vback   15 Vpol N Vback  +0.5 Even Field
-Checksum: 0x9e
+Checksum: 0x9e  Unused space in Extension Block: 6 bytes
 
 ----------------
 
@@ -117,13 +117,13 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: The DTD max image size is 698x392mm, but the display size is not specified anywhere.

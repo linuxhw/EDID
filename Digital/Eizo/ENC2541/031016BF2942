@@ -111,7 +111,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (597 mm x 336 mm)
                  Hfront   12 Hsync  64 Hback   68 Hpol N
                  Vfront    5 Vsync   5 Vback   39 Vpol N
-Checksum: 0x6f
+Checksum: 0x6f  Unused space in Extension Block: 17 bytes
 
 ----------------
 
@@ -119,6 +119,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Data Block: VIC 1 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
 

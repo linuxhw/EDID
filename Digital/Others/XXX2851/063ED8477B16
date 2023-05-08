@@ -132,7 +132,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC 107:  3840x2160   60.000000 Hz  64:27   135.000 kHz    594.000000 MHz
     VIC 106:  3840x2160   50.000000 Hz  64:27   112.500 kHz    594.000000 MHz
@@ -155,14 +155,18 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (1209 mm x 680 mm)
                  Hfront  110 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
-Checksum: 0x3e
+Checksum: 0x3e  Unused space in Extension Block: 14 bytes
 
 ----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

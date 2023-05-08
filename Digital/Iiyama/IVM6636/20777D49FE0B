@@ -128,7 +128,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (597 mm x 336 mm)
                  Hfront   16 Hsync  62 Hback   60 Hpol N
                  Vfront    9 Vsync   6 Vback   30 Vpol N
-Checksum: 0x67
+Checksum: 0x67  Unused space in Extension Block: 21 bytes
 
 ----------------
 
@@ -137,6 +137,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 4.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 50.000 - 75.062 Hz (Monitor: 35.000 - 60.000 Hz)
@@ -145,7 +146,7 @@ EDID:
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Padding: CTA-861 padding contains non-zero bytes.
+  Padding: Contains non-zero bytes.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

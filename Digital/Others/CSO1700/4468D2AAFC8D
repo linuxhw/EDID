@@ -1,0 +1,139 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 6f 00 17 00 00 00 00
+00 1f 01 04 a5 28 13 78 03 ad a7 ad 51 43 af 26
+10 51 55 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 54 c0 a0 ca 51 30 20
+3a 00 8d ba 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 43
+53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe
+00 4d 4e 48 33 30 30 48 42 31 2d 31 0a 20 01 bb
+
+70 13 79 00 00 03 01 28 c9 18 01 88 ff 0b 53 00
+2f 00 1f 00 9f 05 c9 01 02 00 09 00 c9 18 01 08
+ff 0b 53 00 2f 00 1f 00 9f 05 33 09 02 00 09 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 3a 90
+
+00 ff ff ff ff ff ff 00 0e 6f 00 17 00 00 00 00
+00 1f 01 04 a5 28 13 78 03 ad a7 ad 51 43 af 26
+10 51 55 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 54 c0 a0 ca 51 30 20
+3a 00 8d ba 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 43
+53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe
+00 4d 4e 48 33 30 30 48 42 31 2d 31 0a 20 01 bb
+
+70 13 79 00 00 03 01 28 c9 18 01 88 ff 0b 53 00
+2f 00 1f 00 9f 05 c9 01 02 00 09 00 c9 18 01 08
+ff 0b 53 00 2f 00 1f 00 9f 05 33 09 02 00 09 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 3a 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CSO
+    Model: 5888
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 40 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6777, 0.3183
+    Green: 0.2646, 0.6845
+    Blue : 0.1503, 0.0644
+    White: 0.3173, 0.3349
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    Unknown Display Descriptor (0x54): 00 54 c0 a0 ca 51 30 20 3a 00 8d ba 10 00 00 18 '.T...Q0 :.......'
+    Empty Descriptor
+    Alphanumeric Data String: 'CSOT T3'
+    Alphanumeric Data String: 'MNH300HB1-1'
+  Extension blocks: 1
+Checksum: 0xbb
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  3072x1440  120.001576 Hz   0:0    227.763 kHz    718.820000 MHz (aspect undefined, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback    4 Hpol N
+               Vfront    3 Vsync  10 Vback  445 Vpol N
+    DTD:  3072x1440   60.000788 Hz   0:0    227.763 kHz    718.820000 MHz (aspect undefined, no 3D stereo)
+               Hfront   48 Hsync  32 Hback    4 Hpol N
+               Vfront    3 Vsync  10 Vback 2343 Vpol N
+  Checksum: 0x3a
+Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 6f 00 17 00 00 00 00 '.........o......'
+  00 1f 01 04 a5 28 13 78 03 ad a7 ad 51 43 af 26 '.....(.x....QC.&'
+  10 51 55 00 00 00 01 01 01 01 01 01 01 01 01 01 '.QU.............'
+  01 01 01 01 01 01 00 00 00 54 c0 a0 ca 51 30 20 '.........T...Q0 '
+  3a 00 8d ba 10 00 00 18 00 00 00 00 00 00 00 00 ':...............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 43 '...............C'
+  53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe 'SOT T3.     ....'
+  00 4d 4e 48 33 30 30 48 42 31 2d 31 0a 20 01 bb '.MNH300HB1-1. ..'
+Checksum: 0xbb
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  3072x1440  120.001576 Hz   0:0    227.763 kHz    718.820000 MHz (aspect undefined, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback    4 Hpol N
+               Vfront    3 Vsync  10 Vback  445 Vpol N
+    DTD:  3072x1440   60.000788 Hz   0:0    227.763 kHz    718.820000 MHz (aspect undefined, no 3D stereo)
+               Hfront   48 Hsync  32 Hback    4 Hpol N
+               Vfront    3 Vsync  10 Vback 2343 Vpol N
+  Checksum: 0x3a
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Missing preferred timing.
+  Display Descriptor #1: Monitor descriptor block has byte 4 nonzero (0xc0).
+  Display Descriptor #1: Unknown Type 0x54.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Range Limits Descriptor.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

@@ -1,0 +1,153 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 83 4d 41 00 00 00 00
+11 1e 01 04 b5 22 15 78 02 0c f1 ae 52 3c b9 23
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 53 ce 80 30 d2 70 20 80 30 20
+88 00 50 d2 10 00 00 1b 53 ce 80 30 d2 70 20 80
+30 20 88 00 50 d2 10 00 00 1b 00 00 00 fe 00 31
+44 32 30 47 82 31 35 36 58 47 30 31 00 00 00 00
+00 03 04 03 00 01 00 00 00 0b 01 0a 20 20 01 ee
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 74 60 07 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 b7
+
+00 ff ff ff ff ff ff 00 4c 83 4d 41 00 00 00 00
+11 1e 01 04 b5 22 15 78 02 0c f1 ae 52 3c b9 23
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 53 ce 80 30 d2 70 20 80 30 20
+88 00 50 d2 10 00 00 1b 53 ce 80 30 d2 70 20 80
+30 20 88 00 50 d2 10 00 00 1b 00 00 00 fe 00 31
+44 32 30 47 82 31 35 36 58 47 30 31 00 00 00 00
+00 03 04 03 00 01 00 00 00 0b 01 0a 20 20 01 ee
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 74 60 07 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 b7
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 16717
+    Made in: week 17 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 34 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2373, 0.7226
+    Blue : 0.1396, 0.0498
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3456x2160   60.000645 Hz  16:10   131.521 kHz    528.190000 MHz (336 mm x 210 mm)
+                 Hfront   48 Hsync  32 Hback  480 Hpol P
+                 Vfront    8 Vsync   8 Vback   16 Vpol N
+    DTD 2:  3456x2160   60.000645 Hz  16:10   131.521 kHz    528.190000 MHz (336 mm x 210 mm)
+                 Hfront   48 Hsync  32 Hback  480 Hpol P
+                 Vfront    8 Vsync   8 Vback   16 Vpol N
+    Alphanumeric Data String: '1D20G'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 03 04 03 00 01 00 00 00 0b 01 0a 20 20 '..............  '
+  Extension blocks: 1
+Checksum: 0xee
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 116 (616.884 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 7 (0.005 cd/m^2)
+Checksum: 0xb7  Unused space in Extension Block: 112 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 83 4d 41 00 00 00 00 '........L.MA....'
+  11 1e 01 04 b5 22 15 78 02 0c f1 ae 52 3c b9 23 '.....".x....R<.#'
+  0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 53 ce 80 30 d2 70 20 80 30 20 '......S..0.p .0 '
+  88 00 50 d2 10 00 00 1b 53 ce 80 30 d2 70 20 80 '..P.....S..0.p .'
+  30 20 88 00 50 d2 10 00 00 1b 00 00 00 fe 00 31 '0 ..P..........1'
+  44 32 30 47 82 31 35 36 58 47 30 31 00 00 00 00 'D20G.156XG01....'
+  00 03 04 03 00 01 00 00 00 0b 01 0a 20 20 01 ee '............  ..'
+Checksum: 0xee
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 116 (616.884 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 7 (0.005 cd/m^2)
+Checksum: 0xb7  Unused space in Extension Block: 112 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

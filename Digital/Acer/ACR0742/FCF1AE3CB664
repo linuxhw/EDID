@@ -115,7 +115,7 @@ Block 1, CTA-861 Extension Block:
     xvYCC709
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -147,7 +147,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1920x1080  165.003465 Hz  16:9    183.154 kHz    380.960000 MHz (543 mm x 302 mm)
                  Hfront    8 Hsync  32 Hback  120 Hpol P
                  Vfront    3 Vsync   5 Vback   22 Vpol N
-Checksum: 0x94
+Checksum: 0x94  Unused space in Extension Block: 6 bytes
 
 ----------------
 
@@ -166,7 +166,5 @@ Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 
 EDID conformity: FAIL

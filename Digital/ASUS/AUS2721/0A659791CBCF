@@ -125,7 +125,7 @@ Block 1, CTA-861 Extension Block:
     opYCC601
     opRGB
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -149,22 +149,18 @@ Block 1, CTA-861 Extension Block:
     DTD 3:  1920x1080  239.760349 Hz  16:9    291.309 kHz    594.270000 MHz (598 mm x 336 mm)
                  Hfront   32 Hsync  32 Hback   56 Hpol P
                  Vfront   57 Vsync   8 Vback   70 Vpol N
-Checksum: 0x46
+Checksum: 0x46  Unused space in Extension Block: 26 bytes
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
-Failures:
-
-Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
-
-EDID conformity: FAIL
+EDID conformity: PASS

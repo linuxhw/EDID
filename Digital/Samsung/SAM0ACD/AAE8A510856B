@@ -110,7 +110,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
     Supports_AI
@@ -128,7 +128,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (885 mm x 498 mm)
                  Hfront  528 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0xc2
+Checksum: 0xc2  Unused space in Extension Block: 18 bytes
 
 ----------------
 
@@ -136,6 +136,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
@@ -143,6 +144,5 @@ Failures:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 
 EDID conformity: FAIL

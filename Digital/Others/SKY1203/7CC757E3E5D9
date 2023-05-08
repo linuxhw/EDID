@@ -112,10 +112,10 @@ Block 1, CTA-861 Extension Block:
     DC_30bit
     DC_Y444
     Maximum TMDS clock: 300 MHz
-    Video latency: 25 ms
-    Audio latency: 25 ms
-    Interlaced video latency: 25 ms
-    Interlaced audio latency: 25 ms
+    Video latency: 22 ms
+    Audio latency: 22 ms
+    Interlaced video latency: 22 ms
+    Interlaced audio latency: 22 ms
     Extended HDMI video details:
       HDMI VICs:
         HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
@@ -139,7 +139,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Detailed Timing Descriptors:
     DTD 3:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (885 mm x 498 mm)
                  Hfront  440 Hsync  40 Hback  220 Hpol P
@@ -148,7 +148,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront  528 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-Checksum: 0x80
+Checksum: 0x80  Unused space in Extension Block: 22 bytes
 
 ----------------
 
@@ -160,11 +160,11 @@ Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: VIC 2 is the preferred timing, overriding the first detailed timings. Is this intended?
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Progressive and Interlaced latency values are identical, no need for both.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

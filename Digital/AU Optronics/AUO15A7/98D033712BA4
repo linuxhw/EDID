@@ -1,0 +1,91 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af a7 15 00 00 00 00
+00 20 01 04 a5 1e 13 78 03 ca b5 a8 54 4a a1 26
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 36 ad 80 a0 70 b0 5c 40 6c 30
+35 00 2d bc 10 00 00 18 36 ad 80 a0 70 b0 30 49
+6c 30 35 00 2d bc 10 00 00 18 00 00 00 fd 00 30
+a5 d6 d6 2c 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 34 30 55 41 4e 30 35 2e 31 20 0a 00 98
+
+00 ff ff ff ff ff ff 00 06 af a7 15 00 00 00 00
+00 20 01 04 a5 1e 13 78 03 ca b5 a8 54 4a a1 26
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 36 ad 80 a0 70 b0 5c 40 6c 30
+35 00 2d bc 10 00 00 18 36 ad 80 a0 70 b0 30 49
+6c 30 35 00 2d bc 10 00 00 18 00 00 00 fd 00 30
+a5 d6 d6 2c 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 34 30 55 41 4e 30 35 2e 31 20 0a 00 98
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 5543
+    Made in: 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6591, 0.3281
+    Green: 0.2910, 0.6308
+    Blue : 0.1503, 0.0498
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200  165.002084 Hz  16:10   213.183 kHz    443.420000 MHz (301 mm x 188 mm)
+                 Hfront  108 Hsync  48 Hback    4 Hpol N
+                 Vfront    3 Vsync   5 Vback   84 Vpol N
+    DTD 2:  1920x1200   60.017650 Hz  16:10   213.183 kHz    443.420000 MHz (301 mm x 188 mm)
+                 Hfront  108 Hsync  48 Hback    4 Hpol N
+                 Vfront    3 Vsync   5 Vback 2344 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-165 Hz V, 214-214 kHz H, max dotclock 440 MHz
+    Alphanumeric Data String: 'B140UAN05.1 '
+Checksum: 0x98
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af a7 15 00 00 00 00 '................'
+  00 20 01 04 a5 1e 13 78 03 ca b5 a8 54 4a a1 26 '. .....x....TJ.&'
+  0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 36 ad 80 a0 70 b0 5c 40 6c 30 '......6...p.\@l0'
+  35 00 2d bc 10 00 00 18 36 ad 80 a0 70 b0 30 49 '5.-.....6...p.0I'
+  6c 30 35 00 2d bc 10 00 00 18 00 00 00 fd 00 30 'l05.-..........0'
+  a5 d6 d6 2c 01 0a 20 20 20 20 20 20 00 00 00 fe '...,..      ....'
+  00 42 31 34 30 55 41 4e 30 35 2e 31 20 0a 00 98 '.B140UAN05.1 ...'
+Checksum: 0x98
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 213.182 - 213.182 kHz (Monitor: 214.000 - 214.000 kHz)
+    Maximum Clock: 443.420 MHz (Monitor: 440.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

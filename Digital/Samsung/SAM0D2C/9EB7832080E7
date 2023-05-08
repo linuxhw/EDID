@@ -112,7 +112,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1920x1080   71.910434 Hz  16:9     81.115 kHz    210.250000 MHz (521 mm x 293 mm)
                  Hfront  136 Hsync 200 Hback  336 Hpol N
                  Vfront    3 Vsync   5 Vback   40 Vpol P
-Checksum: 0xfa
+Checksum: 0xfa  Unused space in Extension Block: 19 bytes
 
 ----------------
 
@@ -120,6 +120,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 50.000 - 72.809 Hz (Monitor: 48.000 - 72.000 Hz)

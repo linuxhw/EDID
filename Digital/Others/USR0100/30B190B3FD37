@@ -142,7 +142,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (531 mm x 398 mm)
                  Hfront   16 Hsync  62 Hback   60 Hpol N
                  Vfront    9 Vsync   6 Vback   30 Vpol N
-Checksum: 0xa5
+Checksum: 0xa5  Unused space in Extension Block: 4 bytes
 
 ----------------
 
@@ -150,6 +150,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 

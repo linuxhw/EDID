@@ -166,7 +166,7 @@ Block 2, CTA-861 Extension Block:
     DTD 3:  3440x1440   59.972616 Hz  43:18    88.819 kHz    319.750000 MHz (1192 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   28 Vpol N
-Checksum: 0xfc
+Checksum: 0xfc  Unused space in Extension Block: 32 bytes
 
 ----------------
 
@@ -187,6 +187,7 @@ Warnings:
 
 Block 2, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   CTA-861: Native progressive resolution of 3840x1080 is smaller than the max preferred progressive resolution 3840x2160.

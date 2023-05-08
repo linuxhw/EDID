@@ -137,7 +137,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -155,7 +155,7 @@ Block 1, CTA-861 Extension Block:
     DTD 3:  2560x1440  120.000000 Hz  16:9    183.000 kHz    497.760000 MHz (1194 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   77 Vpol P
-Checksum: 0x41
+Checksum: 0x41  Unused space in Extension Block: 34 bytes
 
 ----------------
 
@@ -177,6 +177,8 @@ Checksum: 0x90
 
 Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 120.000 Hz (Monitor: 48.000 - 120.000 Hz)
@@ -185,7 +187,6 @@ EDID:
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.

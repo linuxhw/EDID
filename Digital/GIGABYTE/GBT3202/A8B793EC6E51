@@ -131,7 +131,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
@@ -155,7 +155,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  2560x1440  120.000712 Hz  16:9    183.601 kHz    539.420000 MHz (698 mm x 392 mm)
                  Hfront   24 Hsync  16 Hback  338 Hpol P
                  Vfront   12 Vsync   5 Vback   73 Vpol N
-Checksum: 0x16
+Checksum: 0x16  Unused space in Extension Block: 9 bytes
 
 ----------------
 
@@ -174,7 +174,7 @@ Block 2, DisplayID Extension Block:
                Hfront    8 Hsync  16 Hback  122 Hpol P
                Vfront   16 Vsync   8 Vback   40 Vpol N
   Checksum: 0x09
-Checksum: 0x87
+Checksum: 0x87  Unused space in Extension Block: 58 bytes
 
 ----------------
 
@@ -182,6 +182,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
@@ -192,11 +193,10 @@ Failures:
 
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-  Padding: DisplayID padding contains non-zero bytes.
+  Padding: Contains non-zero bytes.
 EDID:
   DisplayID: Missing DisplayID Product Identification Data Block.
 

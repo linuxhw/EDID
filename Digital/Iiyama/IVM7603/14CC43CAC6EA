@@ -67,7 +67,7 @@ Block 0, Base EDID:
     DMT 0x45:  1920x1200   59.884600 Hz  16:10    74.556 kHz    193.250000 MHz
     DMT 0x54:  2048x1152   60.000000 Hz  16:9     72.000 kHz    162.000000 MHz (RB)
   Detailed Timing Descriptors:
-    DTD 1:  2560x1600   59.971589 Hz   8:5     98.713 kHz    268.500000 MHz (641 mm x 401 mm)
+    DTD 1:  2560x1600   59.971589 Hz  16:10    98.713 kHz    268.500000 MHz (641 mm x 401 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   37 Vpol N
     Display Product Serial Number: ...
@@ -121,7 +121,7 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (MSTAR), OUI 00-14-B9:
     04 00                                           '..'
   Detailed Timing Descriptors:
-    DTD 2:  2880x1800   59.990267 Hz   8:5    111.102 kHz    337.750000 MHz (641 mm x 401 mm)
+    DTD 2:  2880x1800   59.990267 Hz  16:10   111.102 kHz    337.750000 MHz (641 mm x 401 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   43 Vpol N
     DTD 3:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (641 mm x 401 mm)
@@ -133,7 +133,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (641 mm x 401 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0xd6
+Checksum: 0xd6  Unused space in Extension Block: 14 bytes
 
 ----------------
 
@@ -142,6 +142,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 75.062 Hz (Monitor: 55.000 - 76.000 Hz)

@@ -98,7 +98,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Detailed Timing Descriptors:
     DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1150 mm x 650 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
@@ -116,19 +116,19 @@ Block 1, CTA-861 Extension Block:
     DTD 7:  1920x1080   59.985806 Hz  16:9     66.644 kHz    138.620000 MHz (1150 mm x 650 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    2 Vsync   5 Vback   24 Vpol N
-Checksum: 0xba
+Checksum: 0xba  Unused space in Extension Block: 6 bytes
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 16.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

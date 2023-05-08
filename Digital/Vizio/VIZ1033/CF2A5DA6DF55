@@ -171,7 +171,7 @@ Block 1, CTA-861 Extension Block:
       Hybrid Log-Gamma
     Supported static metadata descriptors:
       Static metadata type 1
-Checksum: 0xe7
+Checksum: 0xe7  Unused space in Extension Block: 20 bytes
 
 ----------------
 
@@ -180,6 +180,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 

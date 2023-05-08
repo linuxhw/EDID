@@ -139,7 +139,7 @@ Block 1, CTA-861 Extension Block:
                  Vfront   16 Vsync  16 Vback 2020 Vborder 30
     Detailed mode: 5e 00 a0 a0 a0 29 50 30 20 35 00 55 50 21 00 00 1a 8c '^....)P0 5.UP!....'
     Detailed mode: 64 00 50 f0 70 1f 80 08 20 18 04 55 50 21 00 00 1a 00 'd.P.p... ..UP!....'
-Checksum: 0x00 (should be 0x01)
+Checksum: 0x00 (should be 0x01)  Unused space in Extension Block: 27 bytes
 
 ----------------
 
@@ -166,7 +166,7 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #2: Mismatch of image size 80x33 mm vs display size 600x340 mm.
   Detailed Timing Descriptor #3: Pixelclock < 10 MHz, assuming invalid data 0x5e 0x00.
   Detailed Timing Descriptor #4: Pixelclock < 10 MHz, assuming invalid data 0x64 0x00.
-  Padding: CTA-861 padding contains non-zero bytes.
+  Padding: Contains non-zero bytes.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
   Invalid checksum 0x00 (should be 0x01).
 

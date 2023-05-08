@@ -130,7 +130,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -154,7 +154,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  3440x1440   99.998124 Hz  43:18   148.097 kHz    533.150000 MHz (797 mm x 333 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol P
-Checksum: 0x63
+Checksum: 0x63  Unused space in Extension Block: 14 bytes
 
 ----------------
 
@@ -200,7 +200,7 @@ Block 3, CTA-861 Extension Block:
     DTD 9:  2160x1200   89.527296 Hz   9:5    131.068 kHz    297.000000 MHz (122 mm x 68 mm)
                  Hfront   40 Hsync  20 Hback   46 Hpol N
                  Vfront   28 Vsync   2 Vback  234 Vpol N
-Checksum: 0x99
+Checksum: 0x99  Unused space in Extension Block: 34 bytes
 
 ----------------
 
@@ -219,10 +219,8 @@ Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, Base EDID:
   Unknown Extension Block.
@@ -238,6 +236,7 @@ Block 3, CTA-861 Extension Block:
   Detailed Timing Descriptor #9: Mismatch of image size 122x68 mm vs display size 790x330 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

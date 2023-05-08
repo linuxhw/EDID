@@ -126,7 +126,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 2.0.0.0
     Supports_AI
@@ -154,7 +154,7 @@ Block 1, CTA-861 Extension Block:
     VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
-Checksum: 0xb8
+Checksum: 0xb8  Unused space in Extension Block: 52 bytes
 
 ----------------
 
@@ -163,14 +163,13 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 1872x1053 mm vs display size 950x540 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 1872x1053 mm vs display size 950x540 mm.
-Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.625 - 88.786 kHz (Monitor: 15.000 - 81.000 kHz)

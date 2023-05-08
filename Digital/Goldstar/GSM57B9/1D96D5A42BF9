@@ -60,7 +60,7 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol N
-    DTD 2:  1680x1050   59.954250 Hz   8:5     65.290 kHz    146.250000 MHz (598 mm x 336 mm)
+    DTD 2:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz (598 mm x 336 mm)
                  Hfront  104 Hsync 176 Hback  280 Hpol N
                  Vfront    3 Vsync   6 Vback   30 Vpol P
     Display Range Limits:
@@ -123,7 +123,7 @@ Block 1, CTA-861 Extension Block:
     DTD 7:  1920x1080   59.991919 Hz  16:9     67.491 kHz    148.480000 MHz (598 mm x 336 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0xc0
+Checksum: 0xc0  Unused space in Extension Block: 4 bytes
 
 ----------------
 
@@ -134,6 +134,7 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 4.
   Detailed Timing Descriptor #6: DTD is similar but not identical to VIC 31.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

@@ -100,6 +100,7 @@ Block 1, CTA-861 Extension Block:
     DTS-HD:
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports DTS:X
       Audio Format Code dependent value: 0x03
     Enhanced AC-3 (DD+):
       Max channels: 8
@@ -169,7 +170,7 @@ Block 1, CTA-861 Extension Block:
     DTD 2:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz (697 mm x 392 mm)
                  Hfront  176 Hsync  88 Hback  296 Hpol P
                  Vfront    8 Vsync  10 Vback   72 Vpol P
-Checksum: 0x16
+Checksum: 0x16  Unused space in Extension Block: 18 bytes
 
 ----------------
 
@@ -177,6 +178,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.

@@ -1,0 +1,83 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1d 58 04 07 00 00 00 00
+20 1d 01 04 95 22 13 78 02 f1 00 94 5c 58 92 29
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 e2 50 00 1e 30 30 20
+36 00 58 c2 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 57
+49 44 45 43 4f 52 45 0a 20 20 20 20 00 00 00 fe
+00 47 31 35 36 4c 41 30 33 2d 41 00 20 0a 00 69
+
+00 ff ff ff ff ff ff 00 1d 58 04 07 00 00 00 00
+20 1d 01 04 95 22 13 78 02 f1 00 94 5c 58 92 29
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 e2 50 00 1e 30 30 20
+36 00 58 c2 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 57
+49 44 45 43 4f 52 45 0a 20 20 20 20 00 00 00 fe
+00 47 31 35 36 4c 41 30 33 2d 41 00 20 0a 00 69
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GJX
+    Model: 1796
+    Made in: week 32 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5810, 0.3623
+    Green: 0.3437, 0.5712
+    Blue : 0.1601, 0.1289
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.059067 Hz 683:384   47.927 kHz     76.300000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  146 Hpol P
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'WIDECORE'
+    Alphanumeric Data String: 'G156LA03-A'
+Checksum: 0x69
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1d 58 04 07 00 00 00 00 '.........X......'
+  20 1d 01 04 95 22 13 78 02 f1 00 94 5c 58 92 29 ' ....".x....\X.)'
+  21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '!PT.............'
+  01 01 01 01 01 01 ce 1d 56 e2 50 00 1e 30 30 20 '........V.P..00 '
+  36 00 58 c2 10 00 00 1a 00 00 00 00 00 00 00 00 '6.X.............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 57 '...............W'
+  49 44 45 43 4f 52 45 0a 20 20 20 20 00 00 00 fe 'IDECORE.    ....'
+  00 47 31 35 36 4c 41 30 33 2d 41 00 20 0a 00 69 '.G156LA03-A. ..i'
+Checksum: 0x69
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -123,7 +123,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
@@ -148,7 +148,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (596 mm x 336 mm)
                  Hfront   47 Hsync  32 Hback   81 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
-Checksum: 0xaa
+Checksum: 0xaa  Unused space in Extension Block: 13 bytes
 
 ----------------
 
@@ -157,6 +157,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 74.973 Hz (Monitor: 40.000 - 60.000 Hz)
@@ -167,7 +168,6 @@ Failures:
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   YCbCr 4:2:0 Capability Map Data Block: Max index 16 > 15 (#SVDs).
 EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.

@@ -142,7 +142,7 @@ Block 1, CTA-861 Extension Block:
     sYCC601
     opYCC601
     opRGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.4.0.0
     Supports_AI
@@ -182,7 +182,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront  528 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-Checksum: 0x9c
+Checksum: 0x9c  Unused space in Extension Block: 37 bytes
 
 ----------------
 
@@ -190,6 +190,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   CTA-861: Multiple native interlaced timings are defined.
 
@@ -200,7 +201,6 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 708x398 mm vs display size 1150x650 mm.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Unknown 3D_Structure_X value 0x0c.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Unknown 3D_Structure_X value 0x0c.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Unknown 3D_Structure_X value 0x0e.

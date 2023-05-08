@@ -120,7 +120,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:  3840x2160   47.951737 Hz  16:9    134.696 kHz    528.010000 MHz (699 mm x 393 mm)
                  Hfront    8 Hsync  32 Hback   40 Hpol P
                  Vfront   59 Vsync   8 Vback  582 Vpol N
-Checksum: 0x01
+Checksum: 0x01  Unused space in Extension Block: 58 bytes
 
 ----------------
 
@@ -241,6 +241,8 @@ Checksum: 0x90
 
 Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 Block 2, DisplayID Extension Block:
   Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
 

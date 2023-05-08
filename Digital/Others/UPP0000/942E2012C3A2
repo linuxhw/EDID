@@ -119,7 +119,7 @@ Block 1, CTA-861 Extension Block:
                  Vfront    8 Vsync   0 Vback -292 Vpol N Vborder 158
                    01 1d 80 72 1c 16 20 10 2c 25 80 a0 5a 00 00 00 9e 00 '...r.. .,%..Z.....'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 9e 00 00 00 00 00 00 00 00 00 00 00 '................'
-Checksum: 0xce
+Checksum: 0xce  Unused space in Extension Block: 12 bytes
 
 ----------------
 
@@ -128,6 +128,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #5: The use of non-zero borders in a DTD is not recommended.
 
 Failures:

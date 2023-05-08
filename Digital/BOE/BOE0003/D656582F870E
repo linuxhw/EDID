@@ -1,0 +1,85 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 03 00 03 00 00 00
+01 1d 01 03 80 0b 11 78 2f 00 00 a0 57 49 9b 26
+10 48 4f 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c2 1a 20 50 30 00 10 50 10 10
+32 00 6c ac 00 00 00 18 00 00 00 fc 00 54 56 30
+38 30 57 55 4d 2d 4e 4c 30 0a 00 00 00 fd 00 3c
+3c 10 10 07 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c3
+
+00 ff ff ff ff ff ff 00 09 e5 03 00 03 00 00 00
+01 1d 01 03 80 0b 11 78 2f 00 00 a0 57 49 9b 26
+10 48 4f 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c2 1a 20 50 30 00 10 50 10 10
+32 00 6c ac 00 00 00 18 00 00 00 fc 00 54 56 30
+38 30 57 55 4d 2d 4e 4c 30 0a 00 00 00 fd 00 3c
+3c 10 10 07 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c3
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 3
+    Serial Number: ...
+    Made in: week 1 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 11 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+    Supports GTF timings within operating range
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2851, 0.6054
+    Blue : 0.1484, 0.0625
+    White: 0.2812, 0.3085
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:   800x1280   60.062430 Hz   5:8     77.841 kHz     68.500000 MHz (108 mm x 172 mm)
+                 Hfront   16 Hsync  16 Hback   48 Hpol N
+                 Vfront    3 Vsync   2 Vback   11 Vpol N
+    Display Product Name: 'TV080WUM-NL0'
+    Display Range Limits:
+      Monitor ranges (GTF): 60-60 Hz V, 16-16 kHz H, max dotclock 70 MHz
+    Empty Descriptor
+Checksum: 0xc3
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 03 00 03 00 00 00 '................'
+  01 1d 01 03 80 0b 11 78 2f 00 00 a0 57 49 9b 26 '.......x/...WI.&'
+  10 48 4f 00 00 00 01 01 01 01 01 01 01 01 01 01 '.HO.............'
+  01 01 01 01 01 01 c2 1a 20 50 30 00 10 50 10 10 '........ P0..P..'
+  32 00 6c ac 00 00 00 18 00 00 00 fc 00 54 56 30 '2.l..........TV0'
+  38 30 57 55 4d 2d 4e 4c 30 0a 00 00 00 fd 00 3c '80WUM-NL0......<'
+  3c 10 10 07 00 00 00 00 00 00 00 00 00 00 00 00 '<...............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c3 '................'
+Checksum: 0xc3
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 77.840 - 77.840 kHz (Monitor: 16.000 - 16.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

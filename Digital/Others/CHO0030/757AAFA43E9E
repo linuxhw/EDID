@@ -1,0 +1,308 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d 0f 30 00 01 00 00 00
+01 1e 01 03 80 73 41 78 0a cf 74 a3 57 4c b0 23
+09 48 4c 21 08 00 81 80 45 40 61 40 95 00 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 c4 8e 21 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 c4 8e 21 00 00 1e 00 00 00 fc 00 53
+6d 61 72 74 20 54 56 0a 20 20 20 20 00 00 00 fd
+00 32 4b 1e 50 17 00 0a 20 20 20 20 20 20 01 fb
+
+02 03 3e f2 4d 01 03 04 05 07 90 12 13 14 16 9f
+20 22 29 09 07 07 11 17 50 57 06 00 83 01 00 00
+6e 03 0c 00 30 00 b8 3c 20 00 80 01 02 03 04 eb
+01 46 d0 00 46 4f 4a 96 2c 33 bf e2 00 ff 8c 0a
+d0 8a 20 e0 2d 10 10 3e 96 00 c4 8e 21 00 00 18
+8c 0a d0 90 20 40 31 20 0c 40 55 00 c4 8e 21 00
+00 18 01 1d 00 bc 52 d0 1e 20 b8 28 55 40 c4 8e
+21 00 00 1e 00 00 00 00 00 00 00 00 00 00 00 a1
+
+00 ff ff ff ff ff ff 00 0d 0f 30 00 01 00 00 00
+01 1e 01 03 80 73 41 78 0a cf 74 a3 57 4c b0 23
+09 48 4c 21 08 00 81 80 45 40 61 40 95 00 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 c4 8e 21 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 c4 8e 21 00 00 1e 00 00 00 fc 00 53
+6d 61 72 74 20 54 56 0a 20 20 20 20 00 00 00 fd
+00 32 4b 1e 50 17 00 0a 20 20 20 20 20 20 01 fb
+
+02 03 3e f2 4d 01 03 04 05 07 90 12 13 14 16 9f
+20 22 29 09 07 07 11 17 50 57 06 00 83 01 00 00
+6e 03 0c 00 30 00 b8 3c 20 00 80 01 02 03 04 eb
+01 46 d0 00 46 4f 4a 96 2c 33 bf e2 00 ff 8c 0a
+d0 8a 20 e0 2d 10 10 3e 96 00 c4 8e 21 00 00 18
+8c 0a d0 90 20 40 31 20 0c 40 55 00 c4 8e 21 00
+00 18 01 1d 00 bc 52 d0 1e 20 b8 28 55 40 c4 8e
+21 00 00 1e 00 00 00 00 00 00 00 00 00 00 00 a1
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CHO
+    Model: 48
+    Serial Number: ...
+    Made in: week 1 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 115 cm x 65 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.2998, 0.6904
+    Blue : 0.1376, 0.0380
+    White: 0.2822, 0.2968
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (708 mm x 398 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    Display Product Name: 'Smart TV'
+    Display Range Limits:
+      Monitor ranges (GTF): 50-75 Hz V, 30-80 kHz H, max dotclock 230 MHz
+  Extension blocks: 1
+Checksum: 0xfb
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 2
+      Supported sample rates (kHz): 96 48 44.1 32
+      Maximum bit rate: 640 kb/s
+    Enhanced AC-3 (DD+):
+      Max channels: 8
+      Supported sample rates (kHz): 48 44.1
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 3.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+        HDMI VIC 4:  4096x2160   24.000000 Hz 256:135   54.000 kHz    297.000000 MHz
+  Vendor-Specific Video Data Block (Dolby), OUI 00-D0-46:
+    Version: 2 (12 bytes)
+    Supports Backlight Control
+    Supports global dimming
+    DM Version: 3.x
+    Backlt Min Luma: 100 cd/m^2
+    Interface: Standard + Low-Latency
+    Supports 10b 12b 444: Not supported
+    Target Min PQ v2: 180 (0.04555910 cd/m^2)
+    Target Max PQ v2: 2640 (385 cd/m^2)
+    Unique Rx, Ry: 0.64843750, 0.33984375
+    Unique Gx, Gy: 0.29296875, 0.58593750
+    Unique Bx, By: 0.13671875, 0.05859375
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 4:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 5:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0xa1  Unused space in Extension Block: 11 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d 0f 30 00 01 00 00 00 '..........0.....'
+  01 1e 01 03 80 73 41 78 0a cf 74 a3 57 4c b0 23 '.....sAx..t.WL.#'
+  09 48 4c 21 08 00 81 80 45 40 61 40 95 00 01 01 '.HL!....E@a@....'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 c4 8e 21 00 00 1e 66 21 50 b0 51 00 1b 30 'E...!...f!P.Q..0'
+  40 70 36 00 c4 8e 21 00 00 1e 00 00 00 fc 00 53 '@p6...!........S'
+  6d 61 72 74 20 54 56 0a 20 20 20 20 00 00 00 fd 'mart TV.    ....'
+  00 32 4b 1e 50 17 00 0a 20 20 20 20 20 20 01 fb '.2K.P...      ..'
+Checksum: 0xfb
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 2
+      Supported sample rates (kHz): 96 48 44.1 32
+      Maximum bit rate: 640 kb/s
+    Enhanced AC-3 (DD+):
+      Max channels: 8
+      Supported sample rates (kHz): 48 44.1
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 3.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+        HDMI VIC 4:  4096x2160   24.000000 Hz 256:135   54.000 kHz    297.000000 MHz
+  Vendor-Specific Video Data Block (Dolby), OUI 00-D0-46:
+    Version: 2 (12 bytes)
+    Supports Backlight Control
+    Supports global dimming
+    DM Version: 3.x
+    Backlt Min Luma: 100 cd/m^2
+    Interface: Standard + Low-Latency
+    Supports 10b 12b 444: Not supported
+    Target Min PQ v2: 180 (0.04555910 cd/m^2)
+    Target Max PQ v2: 2640 (385 cd/m^2)
+    Unique Rx, Ry: 0.64843750, 0.33984375
+    Unique Gx, Gy: 0.29296875, 0.58593750
+    Unique Bx, By: 0.13671875, 0.05859375
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 6:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 7:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 8:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0xa1  Unused space in Extension Block: 11 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 708x398 mm vs display size 1150x650 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 708x398 mm vs display size 1150x650 mm.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Mismatch of image size 708x398 mm vs display size 1150x650 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 708x398 mm vs display size 1150x650 mm.
+  Detailed Timing Descriptor #5: Mismatch of image size 708x398 mm vs display size 1150x650 mm.
+  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 7.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 22.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 32.
+  Video Data Block: Duplicate VIC 34.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #6: Mismatch of image size 708x398 mm vs display size 1150x650 mm.
+  Detailed Timing Descriptor #7: Mismatch of image size 708x398 mm vs display size 1150x650 mm.
+  Detailed Timing Descriptor #8: Mismatch of image size 708x398 mm vs display size 1150x650 mm.
+  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 60.317 Hz (Monitor: 50.000 - 75.000 Hz)
+    Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 30.000 - 80.000 kHz)
+    Maximum Clock: 297.000 MHz (Monitor: 230.000 MHz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

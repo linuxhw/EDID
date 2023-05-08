@@ -136,7 +136,7 @@ Block 1, CTA-861 Extension Block:
     xvYCC709
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -164,7 +164,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  2560x1440  143.999210 Hz  16:9    214.559 kHz    583.600000 MHz (698 mm x 393 mm)
                  Hfront    8 Hsync  32 Hback  120 Hpol P
                  Vfront   25 Vsync   8 Vback   17 Vpol P
-Checksum: 0xd8
+Checksum: 0xd8  Unused space in Extension Block: 9 bytes
 
 ----------------
 
@@ -186,7 +186,7 @@ Block 2, DisplayID Extension Block:
                Hfront    8 Hsync  32 Hback   66 Hpol N
                Vfront    3 Vsync   5 Vback   10 Vpol P
   Checksum: 0x59
-Checksum: 0x37
+Checksum: 0x37  Unused space in Extension Block: 83 bytes
 
 ----------------
 
@@ -194,6 +194,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
 EDID:
@@ -205,9 +206,8 @@ Failures:
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 Block 2, DisplayID Extension Block:
-  Padding: DisplayID padding contains non-zero bytes.
+  Padding: Contains non-zero bytes.
 EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
   DisplayID: Missing DisplayID Product Identification Data Block.

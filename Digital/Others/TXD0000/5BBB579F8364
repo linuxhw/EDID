@@ -63,7 +63,7 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   74.989899 Hz  16:9     84.364 kHz    185.600000 MHz (436 mm x 245 mm)
                  Hfront   48 Hsync  40 Hback  192 Hpol P
                  Vfront    5 Vsync   5 Vback   35 Vpol N
-    DTD 2:  1680x1050   50.825282 Hz   8:5     54.891 kHz    101.000000 MHz (341 mm x 256 mm)
+    DTD 2:  1680x1050   50.825282 Hz  16:10    54.891 kHz    101.000000 MHz (341 mm x 256 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   4 Vback   23 Vpol N
     DTD 3:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (452 mm x 254 mm)
@@ -109,12 +109,14 @@ Block 1, CTA-861 Extension Block:
     DTD 6:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (477 mm x 268 mm)
                  Hfront   16 Hsync  62 Hback   60 Hpol N
                  Vfront    9 Vsync   6 Vback   30 Vpol N
-Checksum: 0xc8
+Checksum: 0xc8  Unused space in Extension Block: 47 bytes
 
 ----------------
 
 Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

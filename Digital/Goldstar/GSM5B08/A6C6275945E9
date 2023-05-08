@@ -123,7 +123,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront   16 Hsync   9 Hback   -9 Hpol N
                  Vfront    0 Vsync   0 Vback  150 Vpol N
                    20 e0 2d 10 10 3e 96 00 10 09 00 00 00 18 00 00 00 00 ' .-..>............'
-Checksum: 0x41
+Checksum: 0x41  Unused space in Extension Block: 4 bytes
 
 ----------------
 
@@ -137,6 +137,7 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #4: The use of non-zero borders in a DTD is not recommended.
   Detailed Timing Descriptor #5: The use of non-zero borders in a DTD is not recommended.
   Detailed Timing Descriptor #6: The use of non-zero borders in a DTD is not recommended.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

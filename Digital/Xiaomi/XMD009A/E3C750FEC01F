@@ -129,16 +129,16 @@ Block 1, CTA-861 Extension Block:
     Supported static metadata descriptors:
       Static metadata type 1
   Detailed Timing Descriptors:
-    DTD 4:  2560x1600   59.971589 Hz   8:5     98.713 kHz    268.500000 MHz (640 mm x 400 mm)
+    DTD 4:  2560x1600   59.971589 Hz  16:10    98.713 kHz    268.500000 MHz (640 mm x 400 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   37 Vpol P
     DTD 5:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (640 mm x 360 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   32 Vpol P
-    DTD 6:  2880x1800   59.985234 Hz   8:5    113.372 kHz    390.000000 MHz (720 mm x 450 mm)
+    DTD 6:  2880x1800   59.985234 Hz  16:10   113.372 kHz    390.000000 MHz (720 mm x 450 mm)
                  Hfront  176 Hsync 344 Hback   40 Hpol P
                  Vfront    8 Vsync  10 Vback   72 Vpol P
-Checksum: 0x46
+Checksum: 0x46  Unused space in Extension Block: 14 bytes
 
 ----------------
 
@@ -147,6 +147,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Detailed Timing Descriptor #4: DTD is similar but not identical to DMT 0x4c.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
   CTA-861: Native progressive resolution of 1920x1080 is smaller than the max preferred progressive resolution 3840x2160.

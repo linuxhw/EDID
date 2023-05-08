@@ -111,6 +111,7 @@ Block 1, CTA-861 Extension Block:
     DTS-HD:
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports DTS:X
       Audio Format Code dependent value: 0x03
     Enhanced AC-3 (DD+):
       Max channels: 8
@@ -144,12 +145,12 @@ Block 1, CTA-861 Extension Block:
     DC_30bit
     DC_Y444
     Maximum TMDS clock: 225 MHz
-    Video latency: 93 ms
-    Audio latency: 93 ms
+    Video latency: 90 ms
+    Audio latency: 90 ms
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Audio Data Block (Dolby), OUI 00-D0-46:
     Version: 1 (7 bytes)
     Height speaker zone present
@@ -163,7 +164,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront  528 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-Checksum: 0x18
+Checksum: 0x18  Unused space in Extension Block: 9 bytes
 
 ----------------
 
@@ -171,13 +172,14 @@ Warnings:
 
 Block 0, Base EDID:
   Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

@@ -106,13 +106,13 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 78 (270.851 cd/m^2)
     Desired content min luminance: 49 (0.192 cd/m^2)
   Detailed Timing Descriptors:
-    DTD 2:  2560x1600   59.971589 Hz   8:5     98.713 kHz    268.500000 MHz (597 mm x 336 mm)
+    DTD 2:  2560x1600   59.971589 Hz  16:10    98.713 kHz    268.500000 MHz (597 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   37 Vpol N
     DTD 3:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
-Checksum: 0x7a
+Checksum: 0x7a  Unused space in Extension Block: 59 bytes
 
 ----------------
 
@@ -120,6 +120,8 @@ Warnings:
 
 Block 0, Base EDID:
   Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 25.000 - 70.082 Hz (Monitor: 50.000 - 70.000 Hz)

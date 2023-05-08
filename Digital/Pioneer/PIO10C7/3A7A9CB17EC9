@@ -151,7 +151,7 @@ Block 1, CTA-861 Extension Block:
     Desired content max luminance: 0 (50.000 cd/m^2)
     Desired content max frame-average luminance: 0 (50.000 cd/m^2)
     Desired content min luminance: 0 (0.000 cd/m^2)
-Checksum: 0x7e
+Checksum: 0x7e  Unused space in Extension Block: 31 bytes
 
 ----------------
 
@@ -160,6 +160,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
   Vendor-Specific Data Block, OUI 00-00-00: Unknown OUI 00-00-00.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
 
 Failures:

@@ -96,7 +96,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Detailed Timing Descriptors:
     DTD 3:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (1600 mm x 900 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
@@ -112,7 +112,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront   38 Hsync 124 Hback  114 Hpol N
                  Vfront    4 Vsync   3 Vback   15 Vpol N Vfront +0.5 Odd Field
                  Vfront    4 Vsync   3 Vback   15 Vpol N Vback  +0.5 Even Field
-Checksum: 0x07
+Checksum: 0x07  Unused space in Extension Block: 18 bytes
 
 ----------------
 
@@ -121,11 +121,11 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #5: Mismatch of image size 1600x1200 mm vs display size 1600x900 mm.
   Detailed Timing Descriptor #6: Mismatch of image size 1600x1200 mm vs display size 1600x900 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.

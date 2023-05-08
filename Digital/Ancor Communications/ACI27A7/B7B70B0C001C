@@ -116,7 +116,7 @@ Block 1, CTA-861 Extension Block:
     DTD 7:  2560x1440  119.878291 Hz  16:9    182.814 kHz    482.630000 MHz (597 mm x 336 mm)
                  Hfront    8 Hsync  32 Hback   40 Hpol P
                  Vfront    7 Vsync   8 Vback   70 Vpol P
-Checksum: 0xba
+Checksum: 0xba  Unused space in Extension Block: 9 bytes
 
 ----------------
 
@@ -126,6 +126,7 @@ Block 0, Base EDID:
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

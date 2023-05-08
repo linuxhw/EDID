@@ -133,7 +133,7 @@ Block 1, CTA-861 Extension Block:
     xvYCC709
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
     Supports_AI
@@ -172,7 +172,7 @@ Block 1, CTA-861 Extension Block:
     VIC  98:  4096x2160   24.000000 Hz 256:135   54.000 kHz    297.000000 MHz
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
-Checksum: 0xaa
+Checksum: 0xaa  Unused space in Extension Block: 40 bytes
 
 ----------------
 
@@ -181,6 +181,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
 
 Failures:
@@ -188,8 +189,6 @@ Failures:
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 1872x1053 mm vs display size 950x540 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 1872x1053 mm vs display size 950x540 mm.
-Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 EDID:
   Base EDID: The DTD max image size is 1872x1053mm, which is larger than the display size 950.0x540.0mm.
 

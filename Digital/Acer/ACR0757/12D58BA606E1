@@ -102,13 +102,14 @@ Block 1, CTA-861 Extension Block:
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0xe6 (MCCS)
-Checksum: 0xba
+Checksum: 0xba  Unused space in Extension Block: 86 bytes
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   CTA-861: Multiple native progressive timings are defined.

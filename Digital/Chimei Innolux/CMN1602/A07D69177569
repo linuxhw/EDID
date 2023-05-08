@@ -1,0 +1,85 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 02 16 00 00 00 00
+1f 1c 01 04 a5 24 14 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9e 85 80 a0 70 38 3e 40 30 20
+a6 00 63 c7 10 00 00 18 9e 85 80 a0 70 38 b4 44
+30 20 a6 00 63 c7 10 00 00 18 00 00 00 fe 00 43
+4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 36 31 48 43 41 2d 47 41 31 0a 20 00 b1
+
+00 ff ff ff ff ff ff 00 0d ae 02 16 00 00 00 00
+1f 1c 01 04 a5 24 14 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9e 85 80 a0 70 38 3e 40 30 20
+a6 00 63 c7 10 00 00 18 9e 85 80 a0 70 38 b4 44
+30 20 a6 00 63 c7 10 00 00 18 00 00 00 fe 00 43
+4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 36 31 48 43 41 2d 47 41 31 0a 20 00 b1
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5634
+    Made in: week 31 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 36 cm x 20 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  144.003435 Hz  16:9    164.452 kHz    342.060000 MHz (355 mm x 199 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront   10 Vsync   6 Vback   46 Vpol N
+    DTD 2:  1920x1080   72.001718 Hz  16:9    164.452 kHz    342.060000 MHz (355 mm x 199 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront   10 Vsync   6 Vback 1188 Vpol N
+    Alphanumeric Data String: 'CMN'
+    Alphanumeric Data String: 'N161HCA-GA1'
+Checksum: 0xb1
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d ae 02 16 00 00 00 00 '................'
+  1f 1c 01 04 a5 24 14 78 03 ee 95 a3 54 4c 99 26 '.....$.x....TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 9e 85 80 a0 70 38 3e 40 30 20 '..........p8>@0 '
+  a6 00 63 c7 10 00 00 18 9e 85 80 a0 70 38 b4 44 '..c.........p8.D'
+  30 20 a6 00 63 c7 10 00 00 18 00 00 00 fe 00 43 '0 ..c..........C'
+  4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'MN.         ....'
+  00 4e 31 36 31 48 43 41 2d 47 41 31 0a 20 00 b1 '.N161HCA-GA1. ..'
+Checksum: 0xb1
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -113,8 +113,8 @@ Block 1, CTA-861 Extension Block:
     DC_30bit
     DC_Y444
     Maximum TMDS clock: 300 MHz
-    Video latency: 183 ms
-    Audio latency: 183 ms
+    Video latency: 180 ms
+    Audio latency: 180 ms
     Extended HDMI video details:
       HDMI VICs:
         HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
@@ -142,7 +142,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-Checksum: 0xd1
+Checksum: 0xd1  Unused space in Extension Block: 55 bytes
 
 ----------------
 
@@ -152,5 +152,6 @@ Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 EDID conformity: PASS

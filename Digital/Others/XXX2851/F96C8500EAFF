@@ -150,7 +150,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -187,14 +187,17 @@ Block 1, CTA-861 Extension Block:
     DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1209 mm x 680 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0x5c
+Checksum: 0x5c  Unused space in Extension Block: 1 byte
 
 ----------------
 
-Failures:
+Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+
+Failures:
+
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 60.317 Hz (Monitor: 50.000 - 75.000 Hz)

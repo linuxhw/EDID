@@ -111,7 +111,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz (16 mm x 9 mm)
                  Hfront  638 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0x54
+Checksum: 0x54  Unused space in Extension Block: 44 bytes
 
 ----------------
 
@@ -120,6 +120,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

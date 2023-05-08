@@ -43,7 +43,7 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  3840x2400   60.000000 Hz   8:5    148.800 kHz    595.200000 MHz (302 mm x 189 mm)
+    DTD 1:  3840x2400   60.000000 Hz  16:10   148.800 kHz    595.200000 MHz (302 mm x 189 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol N
                  Vfront    3 Vsync   6 Vback   71 Vpol N
     Display Range Limits:
@@ -69,19 +69,20 @@ Block 1, CTA-861 Extension Block:
     Desired content max luminance: 106 (496.743 cd/m^2)
     Desired content max frame-average luminance: 106 (496.743 cd/m^2)
     Desired content min luminance: 36 (0.099 cd/m^2)
-Checksum: 0x9a
+Checksum: 0x9a  Unused space in Extension Block: 112 bytes
 
 ----------------
 
 Warnings:
 
+Block 0, Base EDID:
+  Missing Display Product Name.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
-Block 0, Base EDID:
-  Missing Display Product Name.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.

@@ -109,7 +109,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
@@ -131,7 +131,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront  528 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-Checksum: 0x0e
+Checksum: 0x0e  Unused space in Extension Block: 7 bytes
 
 ----------------
 
@@ -139,12 +139,11 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Data Block: VIC 31 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
 
 Failures:
 
-Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 60.317 Hz (Monitor: 48.000 - 62.000 Hz)

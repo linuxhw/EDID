@@ -1,0 +1,82 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 5c 14 00 00 00 00
+00 1a 01 04 95 1a 0e 78 02 99 85 95 55 56 92 28
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 ea 50 00 1a 30 30 20
+46 00 00 90 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 31 36 58 41 42 30 31 2e 34 20 0a 00 ae
+
+00 ff ff ff ff ff ff 00 06 af 5c 14 00 00 00 00
+00 1a 01 04 95 1a 0e 78 02 99 85 95 55 56 92 28
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 ea 50 00 1a 30 30 20
+46 00 00 90 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 31 36 58 41 42 30 31 2e 34 20 0a 00 ae
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 5212
+    Made in: 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5839, 0.3330
+    Green: 0.3378, 0.5712
+    Blue : 0.1582, 0.1328
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.059824 Hz 683:384   47.688 kHz     76.300000 MHz (256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback  154 Hpol N
+                 Vfront    4 Vsync   6 Vback   16 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B116XAB01.4 '
+Checksum: 0xae
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 5c 14 00 00 00 00 '..........\.....'
+  00 1a 01 04 95 1a 0e 78 02 99 85 95 55 56 92 28 '.......x....UV.('
+  22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '"PT.............'
+  01 01 01 01 01 01 ce 1d 56 ea 50 00 1a 30 30 20 '........V.P..00 '
+  46 00 00 90 10 00 00 18 00 00 00 0f 00 00 00 00 'F...............'
+  00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41 '......... .....A'
+  55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'UO.         ....'
+  00 42 31 31 36 58 41 42 30 31 2e 34 20 0a 00 ae '.B116XAB01.4 ...'
+Checksum: 0xae
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

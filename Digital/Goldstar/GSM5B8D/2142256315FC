@@ -141,7 +141,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   80 Hpol N
                  Vfront    3 Vsync   4 Vback  113 Vpol N
     Display Product Serial Number: ...
-Checksum: 0x08
+Checksum: 0x08  Unused space in Extension Block: 5 bytes
 
 ----------------
 
@@ -149,6 +149,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:

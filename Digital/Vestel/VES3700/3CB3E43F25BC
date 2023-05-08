@@ -171,7 +171,7 @@ Block 1, CTA-861 Extension Block:
     xvYCC709
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Video Data Block (Dolby), OUI 00-D0-46:
     Version: 2 (12 bytes)
     Supports global dimming
@@ -184,7 +184,7 @@ Block 1, CTA-861 Extension Block:
     Unique Rx, Ry: 0.63671875, 0.32812500
     Unique Gx, Gy: 0.30859375, 0.61718750
     Unique Bx, By: 0.15234375, 0.05859375
-Checksum: 0x83
+Checksum: 0x83  Unused space in Extension Block: 25 bytes
 
 ----------------
 
@@ -192,6 +192,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Data Block: VIC 96 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   CTA-861: Native progressive resolution of 1920x1080 is smaller than the max preferred progressive resolution 3840x2160.
 
@@ -200,8 +201,6 @@ Failures:
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 1872x1053 mm vs display size 1430x800 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 1872x1053 mm vs display size 1430x800 mm.
-Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 75.062 Hz (Monitor: 48.000 - 62.000 Hz)

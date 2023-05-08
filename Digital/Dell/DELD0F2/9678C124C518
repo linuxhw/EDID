@@ -134,7 +134,7 @@ Block 1, CTA-861 Extension Block:
     Desired content max luminance: 108 (518.736 cd/m^2)
     Desired content max frame-average luminance: 108 (518.736 cd/m^2)
     Desired content min luminance: 44 (0.154 cd/m^2)
-Checksum: 0x98
+Checksum: 0x98  Unused space in Extension Block: 44 bytes
 
 ----------------
 
@@ -144,6 +144,7 @@ Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Vendor-Specific Data Block, OUI 00-00-00: Unknown OUI 00-00-00.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:

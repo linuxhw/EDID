@@ -43,10 +43,10 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  2560x1600   60.002859 Hz   8:5     98.765 kHz    268.640000 MHz (286 mm x 178 mm)
+    DTD 1:  2560x1600   60.002859 Hz  16:10    98.765 kHz    268.640000 MHz (286 mm x 178 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   38 Vpol N
-    DTD 2:  2560x1600   48.001840 Hz   8:5     79.011 kHz    214.910000 MHz (286 mm x 178 mm)
+    DTD 2:  2560x1600   48.001840 Hz  16:10    79.011 kHz    214.910000 MHz (286 mm x 178 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   38 Vpol N
     Alphanumeric Data String: '1W19K'
@@ -70,20 +70,22 @@ Block 1, CTA-861 Extension Block:
     Desired content max luminance: 107 (507.620 cd/m^2)
     Desired content max frame-average luminance: 107 (507.620 cd/m^2)
     Desired content min luminance: 73 (0.416 cd/m^2)
-Checksum: 0x73
+Checksum: 0x73  Unused space in Extension Block: 112 bytes
 
 ----------------
 
 Warnings:
 
+Block 0, Base EDID:
+  Missing Display Product Name.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 0, Base EDID:
   Alphanumeric Data String: Non-printable character.
-  Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).

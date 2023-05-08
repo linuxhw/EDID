@@ -1,0 +1,78 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 14 1f 14 00 00 00 00
+02 13 01 03 80 21 15 78 0a 09 2d 9d 56 4f 90 27
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 1b 00 aa 50 20 10 30 30 20
+36 00 4b cf 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 20 6e 05 0f 00 00 00 00 fe 00 52
+37 38 34 47 80 31 35 34 57 42 38 20 00 00 00 fe
+00 28 37 42 48 6e 87 b9 ff 01 01 20 20 20 00 76
+
+00 ff ff ff ff ff ff 00 0e 14 1f 14 00 00 00 00
+02 13 01 03 80 21 15 78 0a 09 2d 9d 56 4f 90 27
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 1b 00 aa 50 20 10 30 30 20
+36 00 4b cf 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 20 6e 05 0f 00 00 00 00 fe 00 52
+37 38 34 47 80 31 35 34 57 42 38 20 00 00 00 fe
+00 28 37 42 48 6e 87 b9 ff 01 01 20 20 20 00 76
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CPT
+    Model: 5151
+    Made in: week 2 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6132, 0.3359
+    Green: 0.3105, 0.5634
+    Blue : 0.1523, 0.1308
+    White: 0.3154, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.006761 Hz  16:10    48.966 kHz     71.000000 MHz (331 mm x 207 mm)
+                 Hfront   48 Hsync  32 Hback   90 Hpol N
+                 Vfront    3 Vsync   6 Vback    7 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 20 6e 05 0f 00 '........... n...'
+    Alphanumeric Data String: 'R784G'
+    Alphanumeric Data String: '(7BHn'
+Checksum: 0x76
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 14 1f 14 00 00 00 00 '................'
+  02 13 01 03 80 21 15 78 0a 09 2d 9d 56 4f 90 27 '.....!.x..-.VO.''
+  21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '!PT.............'
+  01 01 01 01 01 01 bc 1b 00 aa 50 20 10 30 30 20 '..........P .00 '
+  36 00 4b cf 10 00 00 19 00 00 00 0f 00 00 00 00 '6.K.............'
+  00 00 00 00 00 20 6e 05 0f 00 00 00 00 fe 00 52 '..... n........R'
+  37 38 34 47 80 31 35 34 57 42 38 20 00 00 00 fe '784G.154WB8 ....'
+  00 28 37 42 48 6e 87 b9 ff 01 01 20 20 20 00 76 '.(7BHn.....   .v'
+Checksum: 0x76
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

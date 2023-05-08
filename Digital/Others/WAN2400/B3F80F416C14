@@ -119,13 +119,14 @@ Block 1, CTA-861 Extension Block:
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xe6 (MCCS)
-Checksum: 0x6c
+Checksum: 0x6c  Unused space in Extension Block: 66 bytes
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Vendor-Specific Data Block, OUI 00-00-00: Unknown OUI 00-00-00.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
@@ -138,7 +139,7 @@ Block 1, CTA-861 Extension Block:
   There are more Native DTDs (3) than DTDs (1).
   Video Data Block: Duplicate VIC 63.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
-  Padding: CTA-861 padding contains non-zero bytes.
+  Padding: Contains non-zero bytes.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

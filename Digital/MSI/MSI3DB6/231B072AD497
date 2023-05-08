@@ -123,7 +123,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
     SVD Index 12 is out of range
@@ -147,20 +147,20 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  1720x1440   60.001149 Hz  43:36    88.862 kHz    167.060000 MHz (797 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol P
-Checksum: 0x27
+Checksum: 0x27  Unused space in Extension Block: 6 bytes
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   YCbCr 4:2:0 Capability Map Data Block: Max index 12 > 11 (#SVDs).
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:

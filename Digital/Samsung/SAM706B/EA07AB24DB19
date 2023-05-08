@@ -119,7 +119,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz (698 mm x 393 mm)
                  Hfront  176 Hsync  88 Hback  296 Hpol P
                  Vfront    8 Vsync  10 Vback   72 Vpol P
-Checksum: 0x5c
+Checksum: 0x5c  Unused space in Extension Block: 45 bytes
 
 ----------------
 
@@ -129,6 +129,7 @@ Block 0, Base EDID:
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 Block 1, CTA-861 Extension Block:
   Video Data Block: VIC 95 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:

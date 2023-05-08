@@ -1,0 +1,87 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 97 0a 00 00 00 00
+2d 1e 01 04 a5 26 16 78 03 b3 35 ab 4f 43 a1 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 8f 80 b6 70 38 88 40 30 20
+a5 00 7e d7 10 00 00 18 14 37 80 b8 70 38 24 40
+10 10 3e 00 7e d7 10 00 00 18 00 00 00 fd 00 3c
+90 b0 b0 25 01 0a 20 20 20 20 20 20 00 00 00 02
+00 10 36 ff 0f 3c 96 3c 5b 4c 96 20 20 20 00 5d
+
+00 ff ff ff ff ff ff 00 06 af 97 0a 00 00 00 00
+2d 1e 01 04 a5 26 16 78 03 b3 35 ab 4f 43 a1 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 8f 80 b6 70 38 88 40 30 20
+a5 00 7e d7 10 00 00 18 14 37 80 b8 70 38 24 40
+10 10 3e 00 7e d7 10 00 00 18 00 00 00 fd 00 3c
+90 b0 b0 25 01 0a 20 20 20 20 20 20 00 00 00 02
+00 10 36 ff 0f 3c 96 3c 5b 4c 96 20 20 20 00 5d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 2711
+    Made in: week 45 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 38 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6699, 0.3115
+    Green: 0.2617, 0.6318
+    Blue : 0.1445, 0.0615
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  144.027931 Hz  16:9    175.138 kHz    368.140000 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  102 Hpol N
+                 Vfront   10 Vsync   5 Vback  121 Vpol N
+    DTD 2:  1920x1080   60.049471 Hz  16:9     67.015 kHz    141.000000 MHz (382 mm x 215 mm)
+                 Hfront   16 Hsync  16 Hback  152 Hpol N
+                 Vfront    3 Vsync  14 Vback   19 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 60-144 Hz V, 176-176 kHz H, max dotclock 370 MHz
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 10 36 ff 0f 3c 96 3c 5b 4c 96 20 20 20 '....6..<.<[L.   '
+Checksum: 0x5d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 97 0a 00 00 00 00 '................'
+  2d 1e 01 04 a5 26 16 78 03 b3 35 ab 4f 43 a1 25 '-....&.x..5.OC.%'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 ce 8f 80 b6 70 38 88 40 30 20 '..........p8.@0 '
+  a5 00 7e d7 10 00 00 18 14 37 80 b8 70 38 24 40 '..~......7..p8$@'
+  10 10 3e 00 7e d7 10 00 00 18 00 00 00 fd 00 3c '..>.~..........<'
+  90 b0 b0 25 01 0a 20 20 20 20 20 20 00 00 00 02 '...%..      ....'
+  00 10 36 ff 0f 3c 96 3c 5b 4c 96 20 20 20 00 5d '..6..<.<[L.   .]'
+Checksum: 0x5d
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 67.015 - 175.137 kHz (Monitor: 176.000 - 176.000 kHz)
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

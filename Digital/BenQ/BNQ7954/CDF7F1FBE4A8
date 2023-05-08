@@ -122,7 +122,7 @@ Block 1, CTA-861 Extension Block:
     xvYCC709
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -139,13 +139,14 @@ Block 1, CTA-861 Extension Block:
     DTD 3:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (708 mm x 399 mm)
                  Hfront   47 Hsync  32 Hback   81 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
-Checksum: 0x96
+Checksum: 0x96  Unused space in Extension Block: 39 bytes
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -156,6 +157,5 @@ Failures:
 
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 
 EDID conformity: FAIL

@@ -135,10 +135,10 @@ Block 1, CTA-861 Extension Block:
     DC_30bit
     DC_Y444
     Maximum TMDS clock: 225 MHz
-    Video latency: 153 ms
-    Audio latency: 153 ms
-    Interlaced video latency: 153 ms
-    Interlaced audio latency: 153 ms
+    Video latency: 150 ms
+    Audio latency: 150 ms
+    Interlaced video latency: 150 ms
+    Interlaced audio latency: 150 ms
     Extended HDMI video details:
       3D present
       3D-capable-VIC mask present
@@ -158,7 +158,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
@@ -173,7 +173,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront  528 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-Checksum: 0x35
+Checksum: 0x35  Unused space in Extension Block: 13 bytes
 
 ----------------
 
@@ -181,6 +181,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Progressive and Interlaced latency values are identical, no need for both.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
 
 Failures:
@@ -189,7 +190,6 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 1280x720 mm vs display size 1210x680 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 1280x720 mm vs display size 1210x680 mm.
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #3: Mismatch of image size 1280x720 mm vs display size 1210x680 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 1280x720 mm vs display size 1210x680 mm.
 EDID:

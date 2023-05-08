@@ -98,7 +98,7 @@ Block 1, CTA-861 Extension Block:
     DTD 2:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (analog composite, sync-on-green, 160 mm x 90 mm)
                  Hfront   16 Hsync  62 Hback   60 Hpol N
                  Vfront    9 Vsync   6 Vback   30 Vpol N
-Checksum: 0x29
+Checksum: 0x29  Unused space in Extension Block: 82 bytes
 
 ----------------
 
@@ -107,6 +107,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 148.500 MHz (Monitor: 140.000 MHz)

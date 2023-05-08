@@ -121,7 +121,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -150,7 +150,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  1920x1080   59.989789 Hz  16:9     67.788 kHz    141.000000 MHz (530 mm x 290 mm)
                  Hfront   48 Hsync  64 Hback   48 Hpol P
                  Vfront    3 Vsync   5 Vback   42 Vpol N
-Checksum: 0xcf
+Checksum: 0xcf  Unused space in Extension Block: 2 bytes
 
 ----------------
 
@@ -167,7 +167,6 @@ Failures:
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #2: Mismatch of image size 698x393 mm vs display size 530x290 mm.
   HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.

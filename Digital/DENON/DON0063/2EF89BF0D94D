@@ -168,7 +168,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
@@ -183,7 +183,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (708 mm x 398 mm)
                  Hfront  528 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0x9b
+Checksum: 0x9b  Unused space in Extension Block: 7 bytes
 
 ----------------
 
@@ -191,6 +191,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
 
 Failures:
@@ -199,7 +200,6 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 1872x1053 mm vs display size 1420x800 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 708x398 mm vs display size 1420x800 mm.
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #3: Mismatch of image size 1872x1053 mm vs display size 1420x800 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 708x398 mm vs display size 1420x800 mm.
 EDID:

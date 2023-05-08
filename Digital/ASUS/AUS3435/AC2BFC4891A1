@@ -134,7 +134,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
     ST2113RGB
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
@@ -155,7 +155,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  1720x1440   59.998538 Hz  43:36    87.298 kHz    164.120000 MHz (797 mm x 334 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    1 Vsync   8 Vback    6 Vpol N
-Checksum: 0x9c
+Checksum: 0x9c  Unused space in Extension Block: 15 bytes
 
 ----------------
 
@@ -164,6 +164,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
@@ -171,7 +172,6 @@ Block 0, Base EDID:
   Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 222.055 kHz (Monitor: 30.000 - 160.000 kHz)

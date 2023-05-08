@@ -1,0 +1,60 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 3e 09 00 00 00 00
+27 1f 01 04 a5 22 13 78 06 1a 05 a6 54 4b 9e 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 28 38 80 cc 70 38 30 40 30 20
+36 00 58 c2 10 00 00 1a ed 2c 80 cc 70 38 30 40
+30 20 36 00 58 c2 10 00 00 1a 00 00 00 fe 00 47
+47 4a 43 57 80 4e 56 31 35 4e 36 42 00 00 00 00
+00 02 41 21 a8 00 11 00 00 0a 01 0a 20 20 00 3d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2366
+    Made in: week 39 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6484, 0.3291
+    Green: 0.2949, 0.6191
+    Blue : 0.1445, 0.0585
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.003206 Hz  16:9     67.684 kHz    143.760000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  124 Hpol P
+                 Vfront    3 Vsync   6 Vback   39 Vpol N
+    DTD 2:  1920x1080   48.003399 Hz  16:9     54.148 kHz    115.010000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  124 Hpol P
+                 Vfront    3 Vsync   6 Vback   39 Vpol N
+    Alphanumeric Data String: 'GGJCW'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 21 a8 00 11 00 00 0a 01 0a 20 20 '....A!........  '
+Checksum: 0x3d
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Alphanumeric Data String: Non-printable character.
+
+EDID conformity: FAIL

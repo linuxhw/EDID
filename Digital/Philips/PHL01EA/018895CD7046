@@ -134,8 +134,8 @@ Block 1, CTA-861 Extension Block:
     DC_30bit
     DC_Y444
     Maximum TMDS clock: 300 MHz
-    Video latency: 83 ms
-    Audio latency: 83 ms
+    Video latency: 80 ms
+    Audio latency: 80 ms
     Extended HDMI video details:
       HDMI VICs:
         HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
@@ -186,7 +186,7 @@ Block 1, CTA-861 Extension Block:
     Height speaker zone present
     Surround speaker zone present
     Center speaker zone present
-Checksum: 0x8f
+Checksum: 0x8f  Unused space in Extension Block: 9 bytes
 
 ----------------
 
@@ -194,6 +194,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   CTA-861: Native progressive resolution of 1920x1080 is smaller than the max preferred progressive resolution 3840x2160.
 

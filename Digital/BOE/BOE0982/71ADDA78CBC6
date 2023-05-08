@@ -1,0 +1,153 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 82 09 00 00 00 00
+01 1e 01 04 b5 1f 11 78 03 71 6a ac 52 41 b7 20
+12 4f 5d 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 26 ca 00 50 f0 70 28 80 30 20
+35 00 35 ae 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42
+4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 34 30 51 55 4d 2d 4e 36 41 0a 01 f4
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 6a 6a 24 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9a
+
+00 ff ff ff ff ff ff 00 09 e5 82 09 00 00 00 00
+01 1e 01 04 b5 1f 11 78 03 71 6a ac 52 41 b7 20
+12 4f 5d 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 26 ca 00 50 f0 70 28 80 30 20
+35 00 35 ae 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42
+4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 34 30 51 55 4d 2d 4e 36 41 0a 01 f4
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 6a 6a 24 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2434
+    Made in: week 1 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6728, 0.3232
+    Green: 0.2539, 0.7158
+    Blue : 0.1259, 0.0722
+    White: 0.3105, 0.3652
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.006957 Hz  16:9    132.015 kHz    517.500000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback    0 Hpol P
+                 Vfront    3 Vsync   5 Vback   32 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1a '................'
+    Alphanumeric Data String: 'BOE HF'
+    Alphanumeric Data String: 'NE140QUM-N6A'
+  Extension blocks: 1
+Checksum: 0xf4
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 106 (496.743 cd/m^2)
+    Desired content max frame-average luminance: 106 (496.743 cd/m^2)
+    Desired content min luminance: 36 (0.099 cd/m^2)
+Checksum: 0x9a  Unused space in Extension Block: 112 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 82 09 00 00 00 00 '................'
+  01 1e 01 04 b5 1f 11 78 03 71 6a ac 52 41 b7 20 '.......x.qj.RA. '
+  12 4f 5d 00 00 00 01 01 01 01 01 01 01 01 01 01 '.O].............'
+  01 01 01 01 01 01 26 ca 00 50 f0 70 28 80 30 20 '......&..P.p(.0 '
+  35 00 35 ae 10 00 00 1a 00 00 00 00 00 00 00 00 '5.5.............'
+  00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42 '...............B'
+  4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe 'OE HF.      ....'
+  00 4e 45 31 34 30 51 55 4d 2d 4e 36 41 0a 01 f4 '.NE140QUM-N6A...'
+Checksum: 0xf4
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 106 (496.743 cd/m^2)
+    Desired content max frame-average luminance: 106 (496.743 cd/m^2)
+    Desired content min luminance: 36 (0.099 cd/m^2)
+Checksum: 0x9a  Unused space in Extension Block: 112 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: 0 or negative horizontal back porch.
+  Missing Display Range Limits Descriptor.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

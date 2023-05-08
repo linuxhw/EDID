@@ -1,0 +1,212 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d b4 5b 47 3b 26 00
+01 20 01 04 b5 3c 22 78 9f cf 85 a8 56 43 ab 25
+0f 50 54 21 08 00 d1 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 09 ec 00 a0 a0 a0 67 50 30 20
+3a 00 55 50 21 00 00 1a 00 00 00 fd 00 30 90 e6
+e6 3c 01 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+47 20 55 4c 54 52 41 47 45 41 52 0a 00 00 00 ff
+00 32 30 31 4d 41 4d 42 4d 4e 58 34 33 0a 01 9a
+
+02 03 1d 71 23 09 06 07 46 10 04 03 01 1f 13 6d
+1a 00 00 02 05 30 90 00 04 5a 44 5a 44 6f c2 00
+a0 a0 a0 55 50 30 20 3a 00 55 50 21 00 00 1a 56
+5e 00 a0 a0 a0 29 50 30 20 35 00 55 50 21 00 00
+1a 5a a0 00 a0 a0 a0 46 50 30 20 3a 00 55 50 21
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c4
+
+00 ff ff ff ff ff ff 00 1e 6d b4 5b 47 3b 26 00
+01 20 01 04 b5 3c 22 78 9f cf 85 a8 56 43 ab 25
+0f 50 54 21 08 00 d1 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 09 ec 00 a0 a0 a0 67 50 30 20
+3a 00 55 50 21 00 00 1a 00 00 00 fd 00 30 90 e6
+e6 3c 01 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+47 20 55 4c 54 52 41 47 45 41 52 0a 00 00 00 ff
+00 32 30 31 4d 41 4d 42 4d 4e 58 34 33 0a 01 9a
+
+02 03 1d 71 23 09 06 07 46 10 04 03 01 1f 13 6d
+1a 00 00 02 05 30 90 00 04 5a 44 5a 44 6f c2 00
+a0 a0 a0 55 50 30 20 3a 00 55 50 21 00 00 1a 56
+5e 00 a0 a0 a0 29 50 30 20 35 00 55 50 21 00 00
+1a 5a a0 00 a0 a0 a0 46 50 30 20 3a 00 55 50 21
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c4
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 23476
+    Serial Number: ...
+    Made in: week 1 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Standby
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6591, 0.3359
+    Green: 0.2646, 0.6708
+    Blue : 0.1464, 0.0585
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440  143.973257 Hz  16:9    222.151 kHz    604.250000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   90 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-144 Hz V, 230-230 kHz H, max dotclock 600 MHz
+    Display Product Name: 'LG ULTRAGEAR'
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0x9a
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1
+      Supported sample sizes (bits): 24 20 16
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.5
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x04
+    Maximum luminance: 90 (351.250 cd/m^2)
+    Minimum luminance: 68 (0.250 cd/m^2)
+    Maximum luminance (without local dimming): 90 (351.250 cd/m^2)
+    Minimum luminance (without local dimming): 68 (0.250 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   72 Vpol N
+    DTD 3:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 4:  2560x1440   99.946436 Hz  16:9    150.919 kHz    410.500000 MHz (analog composite, sync-on-green, 597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync  10 Vback   57 Vpol N
+Checksum: 0xc4  Unused space in Extension Block: 44 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d b4 5b 47 3b 26 00 '.........m.[G;&.'
+  01 20 01 04 b5 3c 22 78 9f cf 85 a8 56 43 ab 25 '. ...<"x....VC.%'
+  0f 50 54 21 08 00 d1 c0 01 01 01 01 01 01 01 01 '.PT!............'
+  01 01 01 01 01 01 09 ec 00 a0 a0 a0 67 50 30 20 '............gP0 '
+  3a 00 55 50 21 00 00 1a 00 00 00 fd 00 30 90 e6 ':.UP!........0..'
+  e6 3c 01 0a 20 20 20 20 20 20 00 00 00 fc 00 4c '.<..      .....L'
+  47 20 55 4c 54 52 41 47 45 41 52 0a 00 00 00 ff 'G ULTRAGEAR.....'
+  00 32 30 31 4d 41 4d 42 4d 4e 58 34 33 0a 01 9a '.201MAMBMNX43...'
+Checksum: 0x9a
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1
+      Supported sample sizes (bits): 24 20 16
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.5
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x04
+    Maximum luminance: 90 (351.250 cd/m^2)
+    Minimum luminance: 68 (0.250 cd/m^2)
+    Maximum luminance (without local dimming): 90 (351.250 cd/m^2)
+    Minimum luminance (without local dimming): 68 (0.250 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 5:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   72 Vpol N
+    DTD 6:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 7:  2560x1440   99.946436 Hz  16:9    150.919 kHz    410.500000 MHz (analog composite, sync-on-green, 597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync  10 Vback   57 Vpol N
+Checksum: 0xc4  Unused space in Extension Block: 44 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 222.150 kHz (Monitor: 230.000 - 230.000 kHz)
+    Maximum Clock: 604.250 MHz (Monitor: 600.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 19.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

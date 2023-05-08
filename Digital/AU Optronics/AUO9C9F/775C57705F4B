@@ -1,0 +1,88 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 9f 9c 00 00 00 00
+2b 1f 01 04 b5 22 16 78 03 ff e5 a8 54 49 a5 26
+0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 94 c0 80 a0 70 b0 ec 40 30 20
+a5 00 58 d7 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fd 00 30
+a5 ed ed 31 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 36 30 55 41 4e 30 31 2e 50 20 0a 00 05
+
+00 ff ff ff ff ff ff 00 06 af 9f 9c 00 00 00 00
+2b 1f 01 04 b5 22 16 78 03 ff e5 a8 54 49 a5 26
+0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 94 c0 80 a0 70 b0 ec 40 30 20
+a5 00 58 d7 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fd 00 30
+a5 ed ed 31 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 36 30 55 41 4e 30 31 2e 50 20 0a 00 05
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 40095
+    Made in: week 43 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6591, 0.3310
+    Green: 0.2880, 0.6474
+    Blue : 0.1513, 0.0449
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200  165.055175 Hz  16:10   237.019 kHz    493.000000 MHz (344 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront   10 Vsync   5 Vback  221 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-165 Hz V, 237-237 kHz H, max dotclock 490 MHz
+    Alphanumeric Data String: 'B160UAN01.P '
+Checksum: 0x05
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 9f 9c 00 00 00 00 '................'
+  2b 1f 01 04 b5 22 16 78 03 ff e5 a8 54 49 a5 26 '+....".x....TI.&'
+  0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 94 c0 80 a0 70 b0 ec 40 30 20 '..........p..@0 '
+  a5 00 58 d7 10 00 00 18 00 00 00 0f 00 00 00 00 '..X.............'
+  00 00 00 00 00 00 00 00 00 20 00 00 00 fd 00 30 '......... .....0'
+  a5 ed ed 31 01 0a 20 20 20 20 20 20 00 00 00 fe '...1..      ....'
+  00 42 31 36 30 55 41 4e 30 31 2e 50 20 0a 00 05 '.B160UAN01.P ...'
+Checksum: 0x05
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 493.000 MHz (Monitor: 490.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

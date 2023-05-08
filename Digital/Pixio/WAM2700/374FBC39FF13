@@ -126,13 +126,14 @@ Block 1, CTA-861 Extension Block:
                  Hfront  176 Hsync  88 Hback  296 Hpol P
                  Vfront    8 Vsync  10 Vback   72 Vpol P Vfront +0.5 Odd Field
                  Vfront    8 Vsync  10 Vback   72 Vpol P Vback  +0.5 Even Field
-Checksum: 0x81
+Checksum: 0x81  Unused space in Extension Block: 48 bytes
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
 
 Failures:

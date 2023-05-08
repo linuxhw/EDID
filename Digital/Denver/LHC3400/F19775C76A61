@@ -136,7 +136,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Detailed Timing Descriptors:
     DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (797 mm x 334 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
@@ -150,7 +150,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:  1720x1440   59.999355 Hz  43:36    89.399 kHz    185.950000 MHz (797 mm x 334 mm)
                  Hfront   48 Hsync  64 Hback  248 Hpol P
                  Vfront    3 Vsync   5 Vback   42 Vpol P
-Checksum: 0x9d
+Checksum: 0x9d  Unused space in Extension Block: 16 bytes
 
 ----------------
 
@@ -179,6 +179,7 @@ Checksum: 0x90
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 16.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -189,7 +190,6 @@ EDID:
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.

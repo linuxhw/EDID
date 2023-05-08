@@ -1,0 +1,86 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 a6 06 00 00 00 00
+00 1e 01 04 a5 22 13 78 06 2e 05 a5 54 4c 99 25
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2e 36 80 a0 70 38 1f 40 30 20
+35 00 58 c2 10 00 00 1a 58 2b 80 a0 70 38 1f 40
+30 20 35 00 58 c2 10 00 00 1a 00 00 00 fe 00 34
+34 37 43 58 80 31 35 36 57 46 48 0a 00 00 00 00
+00 01 41 31 9e 00 10 00 00 0a 01 0a 20 20 00 53
+
+00 ff ff ff ff ff ff 00 30 e4 a6 06 00 00 00 00
+00 1e 01 04 a5 22 13 78 06 2e 05 a5 54 4c 99 25
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2e 36 80 a0 70 38 1f 40 30 20
+35 00 58 c2 10 00 00 1a 58 2b 80 a0 70 38 1f 40
+30 20 35 00 58 c2 10 00 00 1a 00 00 00 fe 00 34
+34 37 43 58 80 31 35 36 57 46 48 0a 00 00 00 00
+00 01 41 31 9e 00 10 00 00 0a 01 0a 20 20 00 53
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1702
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6445, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1445, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.020425 Hz  16:9     66.683 kHz    138.700000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    DTD 2:  1920x1080   48.016340 Hz  16:9     53.346 kHz    110.960000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    Alphanumeric Data String: '447CX'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 01 41 31 9e 00 10 00 00 0a 01 0a 20 20 '....A1........  '
+Checksum: 0x53
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 a6 06 00 00 00 00 '........0.......'
+  00 1e 01 04 a5 22 13 78 06 2e 05 a5 54 4c 99 25 '.....".x....TL.%'
+  0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 2e 36 80 a0 70 38 1f 40 30 20 '.......6..p8.@0 '
+  35 00 58 c2 10 00 00 1a 58 2b 80 a0 70 38 1f 40 '5.X.....X+..p8.@'
+  30 20 35 00 58 c2 10 00 00 1a 00 00 00 fe 00 34 '0 5.X..........4'
+  34 37 43 58 80 31 35 36 57 46 48 0a 00 00 00 00 '47CX.156WFH.....'
+  00 01 41 31 9e 00 10 00 00 0a 01 0a 20 20 00 53 '..A1........  .S'
+Checksum: 0x53
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

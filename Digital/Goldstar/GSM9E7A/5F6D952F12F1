@@ -130,7 +130,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront  176 Hsync  88 Hback  296 Hpol P
                  Vfront    8 Vsync  10 Vback   72 Vpol P
     Display Product Serial Number: ...
-Checksum: 0xff
+Checksum: 0xff  Unused space in Extension Block: 13 bytes
 
 ----------------
 
@@ -138,6 +138,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:

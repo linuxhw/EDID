@@ -151,7 +151,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  1720x1440   74.998973 Hz  43:36   112.948 kHz    219.120000 MHz (800 mm x 345 mm)
                  Hfront   72 Hsync  48 Hback  100 Hpol P
                  Vfront   38 Vsync   4 Vback   24 Vpol N
-Checksum: 0x8d
+Checksum: 0x8d  Unused space in Extension Block: 6 bytes
 
 ----------------
 
@@ -160,6 +160,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 EDID conformity: PASS

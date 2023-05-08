@@ -1,0 +1,82 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 2c 82 26 05 00 00 00 00
+16 20 01 04 a5 22 13 78 02 2c 6d 94 5c 55 91 28
+1b 4e 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2a 36 80 a0 70 38 1f 40 30 20
+35 00 58 c2 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 4b 44 31 35 36 4e 32 30 33 30 41 30 33 00 f0
+
+00 ff ff ff ff ff ff 00 2c 82 26 05 00 00 00 00
+16 20 01 04 a5 22 13 78 02 2c 6d 94 5c 55 91 28
+1b 4e 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2a 36 80 a0 70 38 1f 40 30 20
+35 00 58 c2 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 4b 44 31 35 36 4e 32 30 33 30 41 30 33 00 f0
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: KDB
+    Model: 1318
+    Made in: week 22 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5781, 0.3613
+    Green: 0.3349, 0.5664
+    Blue : 0.1572, 0.1074
+    White: 0.3076, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.003116 Hz  16:9     66.663 kHz    138.660000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1a '................'
+    Empty Descriptor
+    Alphanumeric Data String: 'KD156N2030A03'
+Checksum: 0xf0
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 2c 82 26 05 00 00 00 00 '........,.&.....'
+  16 20 01 04 a5 22 13 78 02 2c 6d 94 5c 55 91 28 '. ...".x.,m.\U.('
+  1b 4e 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.NT.............'
+  01 01 01 01 01 01 2a 36 80 a0 70 38 1f 40 30 20 '......*6..p8.@0 '
+  35 00 58 c2 10 00 00 1a 00 00 00 00 00 00 00 00 '5.X.............'
+  00 00 00 00 00 00 00 00 00 1a 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe '................'
+  00 4b 44 31 35 36 4e 32 30 33 30 41 30 33 00 f0 '.KD156N2030A03..'
+Checksum: 0xf0
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -135,7 +135,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (528 mm x 310 mm)
                  Hfront   12 Hsync  64 Hback   68 Hpol N
                  Vfront    5 Vsync   5 Vback   39 Vpol N
-Checksum: 0x1a
+Checksum: 0x1a  Unused space in Extension Block: 23 bytes
 
 ----------------
 
@@ -181,7 +181,7 @@ Block 3, CTA-861 Extension Block:
     DTD 9:  2160x1200   89.527296 Hz   9:5    131.068 kHz    297.000000 MHz (122 mm x 68 mm)
                  Hfront   40 Hsync  20 Hback   46 Hpol N
                  Vfront   28 Vsync   2 Vback  234 Vpol N
-Checksum: 0x99
+Checksum: 0x99  Unused space in Extension Block: 34 bytes
 
 ----------------
 
@@ -190,14 +190,14 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 Block 3, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 
-Block 0, Base EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, Base EDID:
@@ -217,6 +217,7 @@ EDID:
     Vertical Freq: 50.000 - 89.527 Hz (Monitor: 50.000 - 85.000 Hz)
     Horizontal Freq: 31.250 - 131.067 kHz (Monitor: 28.000 - 83.000 kHz)
     Maximum Clock: 297.000 MHz (Monitor: 170.000 MHz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 
 EDID conformity: FAIL

@@ -1,0 +1,80 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 32 0c 00 00 00 00 00 00
+00 12 01 03 90 1d 12 78 0a 31 45 97 57 54 8a 29
+26 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 00 88 50 20 11 30 18 20
+46 00 1e b3 10 00 00 1b 12 1b 00 88 50 20 11 30
+18 20 46 00 1e b3 10 00 00 1b 00 00 00 fe 00 43
+50 36 39 35 80 31 33 33 57 58 31 0a 00 00 00 00
+00 1f 36 42 4c 6b 8a b2 ff 01 01 0a 20 20 00 61
+
+00 ff ff ff ff ff ff 00 32 0c 00 00 00 00 00 00
+00 12 01 03 90 1d 12 78 0a 31 45 97 57 54 8a 29
+26 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 00 88 50 20 11 30 18 20
+46 00 1e b3 10 00 00 1b 12 1b 00 88 50 20 11 30
+18 20 46 00 1e b3 10 00 00 1b 00 00 00 fe 00 43
+50 36 39 35 80 31 33 33 57 58 31 0a 00 00 00 00
+00 1f 36 42 4c 6b 8a b2 ff 01 01 0a 20 20 00 61
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LPL
+    Model: 0
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3427
+    Green: 0.3281, 0.5400
+    Blue : 0.1611, 0.1484
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.902911 Hz  16:10    48.941 kHz     69.300000 MHz (286 mm x 179 mm)
+                 Hfront   24 Hsync  32 Hback   80 Hpol P
+                 Vfront    4 Vsync   6 Vback    7 Vpol N
+    DTD 2:  1280x800    59.902911 Hz  16:10    48.941 kHz     69.300000 MHz (286 mm x 179 mm)
+                 Hfront   24 Hsync  32 Hback   80 Hpol P
+                 Vfront    4 Vsync   6 Vback    7 Vpol N
+    Alphanumeric Data String: 'CP695'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 1f 36 42 4c 6b 8a b2 ff 01 01 0a 20 20 '....6BLk......  '
+Checksum: 0x61
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 32 0c 00 00 00 00 00 00 '........2.......'
+  00 12 01 03 90 1d 12 78 0a 31 45 97 57 54 8a 29 '.......x.1E.WT.)'
+  26 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '&PT.............'
+  01 01 01 01 01 01 12 1b 00 88 50 20 11 30 18 20 '..........P .0. '
+  46 00 1e b3 10 00 00 1b 12 1b 00 88 50 20 11 30 'F...........P .0'
+  18 20 46 00 1e b3 10 00 00 1b 00 00 00 fe 00 43 '. F............C'
+  50 36 39 35 80 31 33 33 57 58 31 0a 00 00 00 00 'P695.133WX1.....'
+  00 1f 36 42 4c 6b 8a b2 ff 01 01 0a 20 20 00 61 '..6BLk......  .a'
+Checksum: 0x61
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

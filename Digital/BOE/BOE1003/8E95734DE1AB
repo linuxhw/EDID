@@ -1,0 +1,216 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 03 10 07 06 21 20
+2d 1f 01 03 80 0b 13 78 aa b0 65 a6 56 53 9d 28
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 7e 6b 40 a4 60 00 28 a0 44 08
+80 01 71 b5 00 00 00 1e 55 1d 20 a0 30 00 2e 50
+20 0a a0 01 71 b5 00 00 00 1e 99 3d b0 a4 40 80
+18 70 44 08 c4 00 71 b5 00 00 00 1a 00 00 00 fc
+00 46 4c 51 38 34 32 33 2d 32 34 4c 30 20 01 27
+
+02 03 10 15 d0 50 20 00 2e 50 20 0a a0 01 71 b5
+ba 2c 1a a0 40 90 28 60 40 08 84 01 71 b5 00 00
+00 1e 4a 29 84 8c 30 40 38 60 30 0a a8 01 71 b5
+00 00 00 1e 96 37 38 a8 40 80 44 70 28 08 80 01
+71 b5 00 00 00 1e da 1b d0 8c 20 00 28 50 40 08
+a0 01 71 b5 00 00 00 1e 74 31 b0 94 40 40 30 60
+38 08 80 01 71 b5 00 00 00 1e 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42
+
+00 ff ff ff ff ff ff 00 09 e5 03 10 07 06 21 20
+2d 1f 01 03 80 0b 13 78 aa b0 65 a6 56 53 9d 28
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 7e 6b 40 a4 60 00 28 a0 44 08
+80 01 71 b5 00 00 00 1e 55 1d 20 a0 30 00 2e 50
+20 0a a0 01 71 b5 00 00 00 1e 99 3d b0 a4 40 80
+18 70 44 08 c4 00 71 b5 00 00 00 1a 00 00 00 fc
+00 46 4c 51 38 34 32 33 2d 32 34 4c 30 20 01 27
+
+02 03 10 15 d0 50 20 00 2e 50 20 0a a0 01 71 b5
+ba 2c 1a a0 40 90 28 60 40 08 84 01 71 b5 00 00
+00 1e 4a 29 84 8c 30 40 38 60 30 0a a8 01 71 b5
+00 00 00 1e 96 37 38 a8 40 80 44 70 28 08 80 01
+71 b5 00 00 00 1e da 1b d0 8c 20 00 28 50 40 08
+a0 01 71 b5 00 00 00 1e 74 31 b0 94 40 40 30 60
+38 08 80 01 71 b5 00 00 00 1e 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 4099
+    Serial Number: ...
+    Made in: week 45 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 11 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3388
+    Green: 0.3242, 0.6132
+    Blue : 0.1572, 0.0488
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD  1:  1600x2560   59.999128 Hz   5:8    155.998 kHz    275.180000 MHz (113 mm x 181 mm)
+                  Hfront   68 Hsync   8 Hback   88 Hpol P
+                  Vfront    8 Vsync  16 Vback   16 Vpol P
+    DTD  2:   800x1280   58.988499 Hz   5:8     78.219 kHz     75.090000 MHz (113 mm x 181 mm)
+                  Hfront   32 Hsync  10 Hback  118 Hpol P
+                  Vfront   10 Vsync  16 Vback   20 Vpol P
+    DTD  3:  1200x1920   59.469395 Hz   5:8    115.609 kHz    157.690000 MHz (113 mm x 181 mm)
+                  Hfront   68 Hsync   8 Hback   88 Hpol P
+                  Vfront   12 Vsync   4 Vback    8 Vpol N
+    Display Product Name: 'FLQ8423-24L0 '
+  Extension blocks: 1
+Checksum: 0x27
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Supports YCbCr 4:2:2
+  Native detailed modes: 5
+  Video Format Data Block:
+    NTSC fractional frame rates are preferred
+    RID 16@24p:  5120x2880   24.000000 Hz  64:27    88.200 kHz    465.696000 MHz
+    RID 16@30p:  5120x2880   30.000000 Hz  64:27    88.200 kHz    465.696000 MHz
+    RID 16@60p:  5120x2880   60.000000 Hz  64:27   178.800 kHz    951.216000 MHz
+    RID 10@30p:  5120x1440   30.000000 Hz  32:9     44.400 kHz    236.208000 MHz
+    RID 10@60p:  5120x1440   60.000000 Hz  32:9     90.000 kHz    472.320000 MHz
+    RID 1@30p:  1280x720    30.000000 Hz  16:9     22.200 kHz     35.520000 MHz
+    RID 1@60p:  1280x720    60.000000 Hz  16:9     45.600 kHz     67.488000 MHz
+    RID 26@30p: 15360x8640   30.000000 Hz  16:9    263.400 kHz   4087.968000 MHz
+    RID 26@60p: 15360x8640   60.000000 Hz  16:9    534.000 kHz   8270.592000 MHz
+  Detailed Timing Descriptors:
+    DTD  4:  1050x1680   55.016337 Hz   5:8     94.628 kHz    114.500000 MHz (113 mm x 181 mm)
+                  Hfront   64 Hsync   8 Hback   88 Hpol P
+                  Vfront    8 Vsync  20 Vback   12 Vpol P
+    DTD  5:   900x1600   61.373560 Hz   9:16   101.635 kHz    105.700000 MHz (113 mm x 181 mm)
+                  Hfront   48 Hsync  10 Hback   82 Hpol P
+                  Vfront   10 Vsync  24 Vback   22 Vpol P
+    DTD  6:  1080x1920   57.355350 Hz   9:16   114.022 kHz    142.300000 MHz (113 mm x 181 mm)
+                  Hfront   40 Hsync   8 Hback  120 Hpol P
+                  Vfront    8 Vsync  16 Vback   44 Vpol P
+    DTD  7:   720x1280   62.808316 Hz   9:16    82.907 kHz     71.300000 MHz (113 mm x 181 mm)
+                  Hfront   64 Hsync   8 Hback   68 Hpol P
+                  Vfront   10 Vsync  16 Vback   14 Vpol P
+    DTD  8:  1200x1600   56.988419 Hz   3:4     93.917 kHz    126.600000 MHz (113 mm x 181 mm)
+                  Hfront   56 Hsync   8 Hback   84 Hpol P
+                  Vfront    8 Vsync  16 Vback   24 Vpol P
+Checksum: 0x42  Unused space in Extension Block: 21 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 03 10 07 06 21 20 '..............! '
+  2d 1f 01 03 80 0b 13 78 aa b0 65 a6 56 53 9d 28 '-......x..e.VS.('
+  0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 7e 6b 40 a4 60 00 28 a0 44 08 '......~k@.`.(.D.'
+  80 01 71 b5 00 00 00 1e 55 1d 20 a0 30 00 2e 50 '..q.....U. .0..P'
+  20 0a a0 01 71 b5 00 00 00 1e 99 3d b0 a4 40 80 ' ...q......=..@.'
+  18 70 44 08 c4 00 71 b5 00 00 00 1a 00 00 00 fc '.pD...q.........'
+  00 46 4c 51 38 34 32 33 2d 32 34 4c 30 20 01 27 '.FLQ8423-24L0 .''
+Checksum: 0x27
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Supports YCbCr 4:2:2
+  Native detailed modes: 5
+  Video Format Data Block:
+    NTSC fractional frame rates are preferred
+    RID 16@24p:  5120x2880   24.000000 Hz  64:27    88.200 kHz    465.696000 MHz
+    RID 16@30p:  5120x2880   30.000000 Hz  64:27    88.200 kHz    465.696000 MHz
+    RID 16@60p:  5120x2880   60.000000 Hz  64:27   178.800 kHz    951.216000 MHz
+    RID 10@30p:  5120x1440   30.000000 Hz  32:9     44.400 kHz    236.208000 MHz
+    RID 10@60p:  5120x1440   60.000000 Hz  32:9     90.000 kHz    472.320000 MHz
+    RID 1@30p:  1280x720    30.000000 Hz  16:9     22.200 kHz     35.520000 MHz
+    RID 1@60p:  1280x720    60.000000 Hz  16:9     45.600 kHz     67.488000 MHz
+    RID 26@30p: 15360x8640   30.000000 Hz  16:9    263.400 kHz   4087.968000 MHz
+    RID 26@60p: 15360x8640   60.000000 Hz  16:9    534.000 kHz   8270.592000 MHz
+  Detailed Timing Descriptors:
+    DTD  9:  1050x1680   55.016337 Hz   5:8     94.628 kHz    114.500000 MHz (113 mm x 181 mm)
+                  Hfront   64 Hsync   8 Hback   88 Hpol P
+                  Vfront    8 Vsync  20 Vback   12 Vpol P
+    DTD 10:   900x1600   61.373560 Hz   9:16   101.635 kHz    105.700000 MHz (113 mm x 181 mm)
+                  Hfront   48 Hsync  10 Hback   82 Hpol P
+                  Vfront   10 Vsync  24 Vback   22 Vpol P
+    DTD 11:  1080x1920   57.355350 Hz   9:16   114.022 kHz    142.300000 MHz (113 mm x 181 mm)
+                  Hfront   40 Hsync   8 Hback  120 Hpol P
+                  Vfront    8 Vsync  16 Vback   44 Vpol P
+    DTD 12:   720x1280   62.808316 Hz   9:16    82.907 kHz     71.300000 MHz (113 mm x 181 mm)
+                  Hfront   64 Hsync   8 Hback   68 Hpol P
+                  Vfront   10 Vsync  16 Vback   14 Vpol P
+    DTD 13:  1200x1600   56.988419 Hz   3:4     93.917 kHz    126.600000 MHz (113 mm x 181 mm)
+                  Hfront   56 Hsync   8 Hback   84 Hpol P
+                  Vfront    8 Vsync  16 Vback   24 Vpol P
+Checksum: 0x42  Unused space in Extension Block: 21 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+Block 1, CTA-861 Extension Block:
+  Video Format Data Block: Unknown RID 32.
+  Video Format Data Block: Unknown RID 0.
+  Video Format Data Block: Unknown RID 46.
+  Video Format Data Block: Unknown RID 32.
+  Video Format Data Block: Unknown RID 32.
+  Video Format Data Block: RID 1@30p not allowed since it maps to VIC 62.
+  Video Format Data Block: RID 1@60p not allowed since it maps to VIC 4.
+  Video Format Data Block: Unknown RID 49.
+  Video Format Data Block: Unknown RID 53.
+  Video Format Data Block: Unknown RID 58.
+  Video Format Data Block: Unknown RID 44.
+  Video Format Data Block: Unknown RID 32.
+  Video Format Data Block: Unknown RID 0.
+  Offset is 16, but should be 21.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Format Data Block: Unknown RID 32.
+  Video Format Data Block: Unknown RID 0.
+  Video Format Data Block: Unknown RID 46.
+  Video Format Data Block: Unknown RID 32.
+  Video Format Data Block: Unknown RID 32.
+  Video Format Data Block: RID 1@30p not allowed since it maps to VIC 62.
+  Video Format Data Block: RID 1@60p not allowed since it maps to VIC 4.
+  Video Format Data Block: Unknown RID 49.
+  Video Format Data Block: Unknown RID 53.
+  Video Format Data Block: Unknown RID 58.
+  Video Format Data Block: Unknown RID 44.
+  Video Format Data Block: Unknown RID 32.
+  Video Format Data Block: Unknown RID 0.
+  Offset is 16, but should be 21.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

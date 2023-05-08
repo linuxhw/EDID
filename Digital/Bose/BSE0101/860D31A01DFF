@@ -116,17 +116,17 @@ Block 1, CTA-861 Extension Block:
     Source physical address: 2.0.0.0
     Supports_AI
     Maximum TMDS clock: 150 MHz
-    Video latency: 143 ms
-    Audio latency: 143 ms
-    Interlaced video latency: 143 ms
-    Interlaced audio latency: 143 ms
+    Video latency: 140 ms
+    Audio latency: 140 ms
+    Interlaced video latency: 140 ms
+    Interlaced audio latency: 140 ms
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: No Data
     PT scan behavior: Supports both over- and underscan
     IT scan behavior: Supports both over- and underscan
     CE scan behavior: Supports both over- and underscan
-Checksum: 0x27
+Checksum: 0x27  Unused space in Extension Block: 65 bytes
 
 ----------------
 
@@ -137,6 +137,7 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Progressive and Interlaced latency values are identical, no need for both.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

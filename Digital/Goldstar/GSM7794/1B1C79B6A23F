@@ -1,0 +1,292 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 94 77 84 af 08 00
+03 20 01 03 80 50 22 78 ee a5 e5 a8 55 4a a0 25
+0f 50 54 21 08 00 d1 c0 61 40 01 01 01 01 01 01
+01 01 01 01 01 01 cd 46 00 a0 a0 38 1f 40 30 20
+3a 00 20 4f 31 00 00 1a 02 3a 80 18 71 38 2d 40
+58 2c 45 00 20 4f 31 00 00 1e 00 00 00 fd 00 28
+64 73 73 1e 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 47 20 55 4c 54 52 41 57 49 44 45 0a 01 a4
+
+02 03 3f f3 23 09 07 07 83 01 00 00 4d 5a 59 10
+1f 22 20 04 12 03 01 5d 5e 5f 6d 03 0c 00 10 00
+b8 3c 20 00 60 01 02 03 68 1a 00 00 01 01 28 64
+00 e2 00 6a e3 05 c0 00 e6 06 05 01 60 60 50 2d
+75 00 8c a0 38 1f 40 08 20 c8 00 20 4f 31 00 00
+1a 29 59 00 a0 a0 38 27 40 30 20 3a 00 20 4f 31
+00 00 1a 56 5e 00 a0 a0 a0 29 50 30 20 35 00 20
+4f 31 00 00 1a 00 00 00 00 00 00 00 00 00 00 5a
+
+00 ff ff ff ff ff ff 00 1e 6d 94 77 84 af 08 00
+03 20 01 03 80 50 22 78 ee a5 e5 a8 55 4a a0 25
+0f 50 54 21 08 00 d1 c0 61 40 01 01 01 01 01 01
+01 01 01 01 01 01 cd 46 00 a0 a0 38 1f 40 30 20
+3a 00 20 4f 31 00 00 1a 02 3a 80 18 71 38 2d 40
+58 2c 45 00 20 4f 31 00 00 1e 00 00 00 fd 00 28
+64 73 73 1e 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 47 20 55 4c 54 52 41 57 49 44 45 0a 01 a4
+
+02 03 3f f3 23 09 07 07 83 01 00 00 4d 5a 59 10
+1f 22 20 04 12 03 01 5d 5e 5f 6d 03 0c 00 10 00
+b8 3c 20 00 60 01 02 03 68 1a 00 00 01 01 28 64
+00 e2 00 6a e3 05 c0 00 e6 06 05 01 60 60 50 2d
+75 00 8c a0 38 1f 40 08 20 c8 00 20 4f 31 00 00
+1a 29 59 00 a0 a0 38 27 40 30 20 3a 00 20 4f 31
+00 00 1a 56 5e 00 a0 a0 a0 29 50 30 20 35 00 20
+4f 31 00 00 1a 00 00 00 00 00 00 00 00 00 00 5a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 30612
+    Serial Number: ...
+    Made in: week 3 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 80 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6582, 0.3339
+    Green: 0.2900, 0.6259
+    Blue : 0.1474, 0.0605
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1080   59.978424 Hz  64:27    66.636 kHz    181.250000 MHz (800 mm x 335 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   18 Vpol N
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (800 mm x 335 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-100 Hz V, 115-115 kHz H, max dotclock 300 MHz
+    Display Product Name: 'LG ULTRAWIDE'
+  Extension blocks: 1
+Checksum: 0xa4
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 3
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Data Block:
+    VIC  90:  2560x1080   60.000000 Hz  64:27    66.000 kHz    198.000000 MHz
+    VIC  89:  2560x1080   50.000000 Hz  64:27    56.250 kHz    185.625000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 100 Hz
+    Flags 1.x: 0x00
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 96 (400.000 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 80 (0.394 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 3:  2560x1080  100.000000 Hz  64:27   111.100 kHz    299.970000 MHz (800 mm x 335 mm)
+                 Hfront    8 Hsync  32 Hback  100 Hpol P
+                 Vfront   12 Vsync   8 Vback   11 Vpol N
+    DTD 4:  2560x1080   74.991458 Hz  64:27    83.915 kHz    228.250000 MHz (800 mm x 335 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   26 Vpol N
+    DTD 5:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (800 mm x 335 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+Checksum: 0x5a  Unused space in Extension Block: 10 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 94 77 84 af 08 00 '.........m.w....'
+  03 20 01 03 80 50 22 78 ee a5 e5 a8 55 4a a0 25 '. ...P"x....UJ.%'
+  0f 50 54 21 08 00 d1 c0 61 40 01 01 01 01 01 01 '.PT!....a@......'
+  01 01 01 01 01 01 cd 46 00 a0 a0 38 1f 40 30 20 '.......F...8.@0 '
+  3a 00 20 4f 31 00 00 1a 02 3a 80 18 71 38 2d 40 ':. O1....:..q8-@'
+  58 2c 45 00 20 4f 31 00 00 1e 00 00 00 fd 00 28 'X,E. O1........('
+  64 73 73 1e 01 0a 20 20 20 20 20 20 00 00 00 fc 'dss...      ....'
+  00 4c 47 20 55 4c 54 52 41 57 49 44 45 0a 01 a4 '.LG ULTRAWIDE...'
+Checksum: 0xa4
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 3
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Data Block:
+    VIC  90:  2560x1080   60.000000 Hz  64:27    66.000 kHz    198.000000 MHz
+    VIC  89:  2560x1080   50.000000 Hz  64:27    56.250 kHz    185.625000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 100 Hz
+    Flags 1.x: 0x00
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 96 (400.000 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 80 (0.394 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 6:  2560x1080  100.000000 Hz  64:27   111.100 kHz    299.970000 MHz (800 mm x 335 mm)
+                 Hfront    8 Hsync  32 Hback  100 Hpol P
+                 Vfront   12 Vsync   8 Vback   11 Vpol N
+    DTD 7:  2560x1080   74.991458 Hz  64:27    83.915 kHz    228.250000 MHz (800 mm x 335 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   26 Vpol N
+    DTD 8:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (800 mm x 335 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+Checksum: 0x5a  Unused space in Extension Block: 10 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+Block 3, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Data Block: Duplicate VIC 90.
+  Video Data Block: Duplicate VIC 89.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 34.
+  Video Data Block: Duplicate VIC 32.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 93.
+  Video Data Block: Duplicate VIC 94.
+  Video Data Block: Duplicate VIC 95.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 100.000 Hz (Monitor: 40.000 - 100.000 Hz)
+    Horizontal Freq: 27.000 - 111.100 kHz (Monitor: 115.000 - 115.000 kHz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

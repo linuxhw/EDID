@@ -52,10 +52,10 @@ Block 0, Base EDID:
     DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
     DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  1440x900    59.887445 Hz   8:5     55.935 kHz    106.500000 MHz (analog composite, sync-on-green)
+    DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (analog composite, sync-on-green)
                  Hfront   80 Hsync 152 Hback  232 Hpol N
                  Vfront    3 Vsync   6 Vback   25 Vpol N
-    DTD 2:  1680x1050   59.954250 Hz   8:5     65.290 kHz    146.250000 MHz (analog composite, sync-on-green)
+    DTD 2:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz (analog composite, sync-on-green)
                  Hfront  104 Hsync 176 Hback  280 Hpol N
                  Vfront    0 Vsync   6 Vback   33 Vpol N
                    21 39 90 30 62 1a 27 40 68 b0 06 00 00 00 00 00 00 00 '!9.0b.'@h.........'
@@ -98,7 +98,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (531 mm x 398 mm)
                  Hfront   16 Hsync  62 Hback -450 Hpol N Hborder 255
                  Vfront    9 Vsync   6 Vback   30 Vpol N
-Checksum: 0xc5
+Checksum: 0xc5  Unused space in Extension Block: 63 bytes
 
 ----------------
 
@@ -111,6 +111,7 @@ Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: VIC 19 is the preferred timing, overriding the first detailed timings. Is this intended?
   Detailed Timing Descriptor #4: The use of non-zero borders in a DTD is not recommended.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 
@@ -131,7 +132,7 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size 708x398 mm vs display size 310x230 mm.
   Detailed Timing Descriptor #4: 0 or negative horizontal back porch.
   Detailed Timing Descriptor #4: Mismatch of image size 531x398 mm vs display size 310x230 mm.
-  Padding: CTA-861 padding contains non-zero bytes.
+  Padding: Contains non-zero bytes.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: The DTD max image size is 708x398mm, which is larger than the display size 310.0x230.0mm.

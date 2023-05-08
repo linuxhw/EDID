@@ -108,7 +108,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  3440x1440   99.998124 Hz  43:18   148.097 kHz    533.150000 MHz (798 mm x 342 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
-Checksum: 0x2f
+Checksum: 0x2f  Unused space in Extension Block: 48 bytes
 
 ----------------
 
@@ -118,6 +118,7 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 148.097 kHz (Monitor: 160.000 - 160.000 kHz)

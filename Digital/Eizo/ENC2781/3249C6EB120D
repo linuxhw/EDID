@@ -53,7 +53,7 @@ Block 0, Base EDID:
     DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
-    DTD 2:  1920x1200   59.950171 Hz   8:5     74.038 kHz    154.000000 MHz (597 mm x 336 mm)
+    DTD 2:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (597 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   26 Vpol N
     Display Range Limits:
@@ -104,7 +104,7 @@ Block 1, CTA-861 Extension Block:
     DTD 3:  2560x1440   29.935499 Hz  16:9     43.945 kHz    146.250000 MHz (597 mm x 336 mm)
                  Hfront  120 Hsync 264 Hback  384 Hpol N
                  Vfront    3 Vsync   5 Vback   20 Vpol P
-Checksum: 0x04
+Checksum: 0x04  Unused space in Extension Block: 71 bytes
 
 ----------------
 
@@ -112,6 +112,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
 
 Failures:

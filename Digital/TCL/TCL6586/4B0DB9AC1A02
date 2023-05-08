@@ -147,7 +147,7 @@ Block 1, CTA-861 Extension Block:
     xvYCC709
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
@@ -163,7 +163,7 @@ Block 1, CTA-861 Extension Block:
     DTD 3:  1360x768    59.664196 Hz  85:48    47.433 kHz     85.000000 MHz (1209 mm x 680 mm)
                  Hfront   64 Hsync 112 Hback  256 Hpol P
                  Vfront    3 Vsync   6 Vback   18 Vpol P
-Checksum: 0x3f
+Checksum: 0x3f  Unused space in Extension Block: 24 bytes
 
 ----------------
 
@@ -171,12 +171,12 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

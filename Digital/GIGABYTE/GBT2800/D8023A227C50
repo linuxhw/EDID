@@ -112,7 +112,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -133,7 +133,7 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  1920x1080  143.852510 Hz  16:9    160.108 kHz    326.620000 MHz (697 mm x 392 mm)
                  Hfront   28 Hsync  32 Hback   60 Hpol P
                  Vfront   19 Vsync   8 Vback    6 Vpol P
-Checksum: 0x70
+Checksum: 0x70  Unused space in Extension Block: 26 bytes
 
 ----------------
 
@@ -152,7 +152,7 @@ Block 2, DisplayID Extension Block:
                Hfront   48 Hsync  32 Hback   80 Hpol P
                Vfront    3 Vsync   5 Vback  119 Vpol P
   Checksum: 0xac
-Checksum: 0xe4
+Checksum: 0xe4  Unused space in Extension Block: 58 bytes
 
 ----------------
 
@@ -160,6 +160,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -171,14 +172,13 @@ Failures:
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 697x392 mm vs display size 630x360 mm.
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #2: Mismatch of image size 697x392 mm vs display size 630x360 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 697x392 mm vs display size 630x360 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 697x392 mm vs display size 630x360 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-  Padding: DisplayID padding contains non-zero bytes.
+  Padding: Contains non-zero bytes.
 EDID:
   Base EDID: The DTD max image size is 697x392mm, which is larger than the display size 630.0x360.0mm.
   DisplayID: Missing DisplayID Product Identification Data Block.

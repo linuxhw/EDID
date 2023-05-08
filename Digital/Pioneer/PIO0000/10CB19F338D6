@@ -133,7 +133,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Detailed Timing Descriptors:
     DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (16 mm x 9 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
@@ -144,14 +144,18 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (16 mm x 9 mm)
                  Hfront  110 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
-Checksum: 0xb1
+Checksum: 0xb1  Unused space in Extension Block: 13 bytes
 
 ----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #3: Mismatch of image size 16x9 mm vs display size 1150x650 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 16x9 mm vs display size 1150x650 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 16x9 mm vs display size 1150x650 mm.

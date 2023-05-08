@@ -68,20 +68,22 @@ Block 1, CTA-861 Extension Block:
     Desired content max luminance: 106 (496.743 cd/m^2)
     Desired content max frame-average luminance: 106 (496.743 cd/m^2)
     Desired content min luminance: 36 (0.099 cd/m^2)
-Checksum: 0x9a
+Checksum: 0x9a  Unused space in Extension Block: 112 bytes
 
 ----------------
 
 Warnings:
 
+Block 0, Base EDID:
+  Missing Display Product Name.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: 0 or negative horizontal back porch.
-  Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).

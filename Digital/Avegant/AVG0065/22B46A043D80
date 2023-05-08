@@ -97,7 +97,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:   640x480    60.035389 Hz   4:3     34.520 kHz     23.750000 MHz (field sequential L/R, 640 mm x 480 mm)
                  Hfront  996 Hsync  40 Hback -988 Hpol P
                  Vfront   63 Vsync  63 Vback  -31 Vpol P
-Checksum: 0x18
+Checksum: 0x18  Unused space in Extension Block: 38 bytes
 
 ----------------
 
@@ -107,6 +107,7 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 2.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

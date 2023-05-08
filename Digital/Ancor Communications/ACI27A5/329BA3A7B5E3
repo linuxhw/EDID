@@ -117,7 +117,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:   640x480    59.952381 Hz   4:3     31.475 kHz     25.180000 MHz (597 mm x 336 mm)
                  Hfront    8 Hsync  96 Hback   40 Hpol N Hborder 8
                  Vfront    2 Vsync   2 Vback   25 Vpol N Vborder 8
-Checksum: 0xc6
+Checksum: 0xc6  Unused space in Extension Block: 26 bytes
 
 ----------------
 
@@ -126,6 +126,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #5: The use of non-zero borders in a DTD is not recommended.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

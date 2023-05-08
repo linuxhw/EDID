@@ -131,12 +131,14 @@ Block 1, CTA-861 Extension Block:
     DTD 4:  1920x1080  165.003465 Hz  16:9    183.154 kHz    380.960000 MHz (597 mm x 336 mm)
                  Hfront    8 Hsync  32 Hback  120 Hpol P
                  Vfront    3 Vsync   5 Vback   22 Vpol N
-Checksum: 0x52
+Checksum: 0x52  Unused space in Extension Block: 13 bytes
 
 ----------------
 
 Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

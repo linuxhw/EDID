@@ -132,7 +132,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  2560x1440  143.998812 Hz  16:9    213.838 kHz    581.640000 MHz (700 mm x 390 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol N
-Checksum: 0x57
+Checksum: 0x57  Unused space in Extension Block: 13 bytes
 
 ----------------
 
@@ -154,7 +154,7 @@ Block 2, DisplayID Extension Block:
                Hfront   88 Hsync  44 Hback  128 Hpol N
                Vfront    3 Vsync  16 Vback   11 Vpol N
   Checksum: 0x0a
-Checksum: 0x90
+Checksum: 0x90  Unused space in Extension Block: 38 bytes
 
 ----------------
 
@@ -163,6 +163,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

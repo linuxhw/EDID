@@ -132,7 +132,7 @@ Block 1, CTA-861 Extension Block:
         VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (frame packing)
         VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz (frame packing)
         Unknown (VIC   0, frame packing)
-Checksum: 0x5b
+Checksum: 0x5b  Unused space in Extension Block: 64 bytes
 
 ----------------
 
@@ -140,6 +140,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 
@@ -153,6 +154,6 @@ Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Unknown 3D_Structure_X value 0x07.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Unknown 3D_Structure_X value 0x0f.
-  Padding: CTA-861 padding contains non-zero bytes.
+  Padding: Contains non-zero bytes.
 
 EDID conformity: FAIL

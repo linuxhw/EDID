@@ -66,7 +66,7 @@ Block 0, Base EDID:
     DTD 1:  1720x1440   59.979600 Hz  43:36    88.830 kHz    167.000000 MHz (797 mm x 333 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   28 Vpol N
-    DTD 2:  1680x1050   59.954250 Hz   8:5     65.290 kHz    146.250000 MHz (797 mm x 333 mm)
+    DTD 2:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz (797 mm x 333 mm)
                  Hfront  104 Hsync 176 Hback  280 Hpol N
                  Vfront    3 Vsync   6 Vback   30 Vpol P
     Display Range Limits:
@@ -116,9 +116,14 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (797 mm x 333 mm)
                  Hfront  110 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
-Checksum: 0x7b
+Checksum: 0x7b  Unused space in Extension Block: 41 bytes
 
 ----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 

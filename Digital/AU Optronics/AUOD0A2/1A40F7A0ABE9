@@ -1,0 +1,64 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af a2 d0 00 00 00 00
+01 20 01 04 a5 22 13 78 03 a4 35 94 59 58 97 29
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d0 84 80 b6 70 38 28 40 3c 3c
+e5 04 58 c1 10 00 00 18 78 37 80 b6 70 38 28 40
+3c 3c e5 04 58 c1 10 00 00 18 00 00 00 fd 00 30
+90 a2 a2 22 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 35 36 48 41 4e 31 35 2e 31 20 0a 00 51
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 53410
+    Made in: week 1 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5800, 0.3496
+    Green: 0.3447, 0.5898
+    Blue : 0.1601, 0.1201
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  144.420280 Hz  16:9    161.751 kHz    340.000000 MHz (344 mm x 193 mm)
+                 Hfront   60 Hsync  60 Hback   62 Hpol N
+                 Vfront   30 Vsync   5 Vback    5 Vpol N
+    DTD 2:  1920x1080   60.316705 Hz  16:9     67.555 kHz    142.000000 MHz (344 mm x 193 mm)
+                 Hfront   60 Hsync  60 Hback   62 Hpol N
+                 Vfront   30 Vsync   5 Vback    5 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-144 Hz V, 162-162 kHz H, max dotclock 340 MHz
+    Alphanumeric Data String: 'B156HAN15.1 '
+Checksum: 0x51
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 67.554 - 161.750 kHz (Monitor: 162.000 - 162.000 kHz)
+    Maximum Clock: 340.000 MHz (Monitor: 340.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+
+EDID conformity: FAIL

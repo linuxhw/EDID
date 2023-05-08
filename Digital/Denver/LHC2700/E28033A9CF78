@@ -107,7 +107,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 1.23
     Minimum Refresh Rate: 48 Hz
@@ -136,7 +136,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1280x1440   60.003658 Hz   8:9     92.526 kHz    144.340000 MHz (597 mm x 336 mm)
                  Hfront   32 Hsync  40 Hback  208 Hpol P
                  Vfront    5 Vsync   5 Vback   92 Vpol P
-Checksum: 0xb1
+Checksum: 0xb1  Unused space in Extension Block: 9 bytes
 
 ----------------
 
@@ -152,7 +152,6 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 16.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.

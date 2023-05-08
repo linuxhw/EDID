@@ -1,0 +1,82 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 9d 40 00 00 00 00
+15 1c 01 04 a5 26 16 78 02 96 75 a3 56 52 9c 27
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 8f 80 b6 70 38 88 40 30 20
+a5 00 7e d7 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 35
+36 32 4e 46 80 42 31 37 33 48 41 4e 00 00 00 00
+00 02 41 0d 9e 00 10 00 00 0b 01 0a 20 20 00 c2
+
+00 ff ff ff ff ff ff 00 06 af 9d 40 00 00 00 00
+15 1c 01 04 a5 26 16 78 02 96 75 a3 56 52 9c 27
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 8f 80 b6 70 38 88 40 30 20
+a5 00 7e d7 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 35
+36 32 4e 46 80 42 31 37 33 48 41 4e 00 00 00 00
+00 02 41 0d 9e 00 10 00 00 0b 01 0a 20 20 00 c2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 16541
+    Made in: week 21 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 38 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6386, 0.3369
+    Green: 0.3212, 0.6113
+    Blue : 0.1533, 0.0498
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  144.027931 Hz  16:9    175.138 kHz    368.140000 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  102 Hpol P
+                 Vfront   10 Vsync   5 Vback  121 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1a '................'
+    Alphanumeric Data String: '562NF'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 0d 9e 00 10 00 00 0b 01 0a 20 20 '....A.........  '
+Checksum: 0xc2
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 9d 40 00 00 00 00 '...........@....'
+  15 1c 01 04 a5 26 16 78 02 96 75 a3 56 52 9c 27 '.....&.x..u.VR.''
+  0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 ce 8f 80 b6 70 38 88 40 30 20 '..........p8.@0 '
+  a5 00 7e d7 10 00 00 1a 00 00 00 00 00 00 00 00 '..~.............'
+  00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 35 '...............5'
+  36 32 4e 46 80 42 31 37 33 48 41 4e 00 00 00 00 '62NF.B173HAN....'
+  00 02 41 0d 9e 00 10 00 00 0b 01 0a 20 20 00 c2 '..A.........  ..'
+Checksum: 0xc2
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

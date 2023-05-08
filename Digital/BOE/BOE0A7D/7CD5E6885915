@@ -1,0 +1,89 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 7d 0a 00 00 00 00
+1b 1f 01 04 a5 22 16 78 07 fb da a0 56 4f 99 26
+11 54 59 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 33 3f 80 dc 70 b0 3c 40 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 fd 00 28 3c 4c
+4c 10 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 36 30 57 55 4d 2d 4e 36 34 0a 00 cf
+
+00 ff ff ff ff ff ff 00 09 e5 7d 0a 00 00 00 00
+1b 1f 01 04 a5 22 16 78 07 fb da a0 56 4f 99 26
+11 54 59 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 33 3f 80 dc 70 b0 3c 40 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 fd 00 28 3c 4c
+4c 10 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 36 30 57 55 4d 2d 4e 36 34 0a 00 cf
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2685
+    Made in: week 27 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6279, 0.3388
+    Green: 0.3105, 0.6005
+    Blue : 0.1513, 0.0673
+    White: 0.3300, 0.3496
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.002225 Hz  16:10    75.603 kHz    161.790000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  140 Hpol P
+                 Vfront    3 Vsync   6 Vback   51 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 76-76 kHz H, max dotclock 160 MHz
+    Alphanumeric Data String: 'BOE CQ'
+    Alphanumeric Data String: 'NE160WUM-N64'
+Checksum: 0xcf
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 7d 0a 00 00 00 00 '..........}.....'
+  1b 1f 01 04 a5 22 16 78 07 fb da a0 56 4f 99 26 '.....".x....VO.&'
+  11 54 59 00 00 00 01 01 01 01 01 01 01 01 01 01 '.TY.............'
+  01 01 01 01 01 01 33 3f 80 dc 70 b0 3c 40 30 20 '......3?..p.<@0 '
+  36 00 59 d7 10 00 00 1a 00 00 00 fd 00 28 3c 4c '6.Y..........(<L'
+  4c 10 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42 'L...      .....B'
+  4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe 'OE CQ.      ....'
+  00 4e 45 31 36 30 57 55 4d 2d 4e 36 34 0a 00 cf '.NE160WUM-N64...'
+Checksum: 0xcf
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 161.790 MHz (Monitor: 160.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

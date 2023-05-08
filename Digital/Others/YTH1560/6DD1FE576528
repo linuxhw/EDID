@@ -113,7 +113,7 @@ Block 1, CTA-861 Extension Block:
     DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (300 mm x 260 mm)
                  Hfront   88 Hsync  32 Hback  160 Hpol P
                  Vfront    3 Vsync   5 Vback   37 Vpol P
-Checksum: 0xf6
+Checksum: 0xf6  Unused space in Extension Block: 56 bytes
 
 ----------------
 
@@ -121,6 +121,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 16.

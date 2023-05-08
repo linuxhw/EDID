@@ -181,7 +181,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -194,7 +194,7 @@ Block 1, CTA-861 Extension Block:
       Hybrid Log-Gamma
     Supported static metadata descriptors:
       Static metadata type 1
-Checksum: 0x2d
+Checksum: 0x2d  Unused space in Extension Block: 4 bytes
 
 ----------------
 
@@ -202,6 +202,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Data Block: VIC 97 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
@@ -209,8 +210,6 @@ Block 0, Base EDID:
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
   Detailed Timing Descriptor #1: Mismatch of image size 878x485 mm vs display size 1420x800 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 878x485 mm vs display size 1420x800 mm.
-Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 120.000 Hz (Monitor: 23.000 - 76.000 Hz)

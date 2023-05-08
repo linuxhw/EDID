@@ -117,6 +117,7 @@ Block 1, CTA-861 Extension Block:
     DTS-HD:
       Max channels: 8
       Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports DTS:X
       Audio Format Code dependent value: 0x03
     Enhanced AC-3 (DD+):
       Max channels: 8
@@ -202,7 +203,7 @@ Block 1, CTA-861 Extension Block:
     opRGB
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Video Capability Data Block:
     YCbCr quantization: Selectable (via AVI YQ)
     RGB quantization: Selectable (via AVI Q)
@@ -214,7 +215,7 @@ Block 1, CTA-861 Extension Block:
     Height speaker zone present
     Surround speaker zone present
     Center speaker zone present
-Checksum: 0xb1
+Checksum: 0xb1  Unused space in Extension Block: 8 bytes
 
 ----------------
 
@@ -222,11 +223,10 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Data Block: VIC 97 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
-Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 75.000 Hz (Monitor: 48.000 - 62.000 Hz)

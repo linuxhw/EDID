@@ -1,0 +1,126 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 a7 28 a3 d4 02 00
+0d 1b 01 04 b5 3e 22 78 3b 08 a5 a2 57 4f a2 28
+0f 50 54 a1 28 00 d1 c0 81 40 81 80 95 00 b3 00
+81 c0 81 00 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 6d 55 21 00 00 1a a3 66 00 a0 f0 70 1f 80
+30 20 35 00 6d 55 21 00 00 1a 00 00 00 fd 00 28
+3c 86 86 3c 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 4d 47 32 38 55 0a 20 20 01 d1
+
+02 03 14 71 47 02 03 04 05 90 0e 0f 23 09 17 07
+83 01 00 00 56 5e 00 a0 a0 a0 29 50 30 20 35 00
+6d 55 21 00 00 1e e2 68 00 a0 a0 40 2e 60 30 20
+36 00 6d 55 21 00 00 1a d6 09 80 a0 20 5e 63 10
+30 60 b2 0c 6d 55 21 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fd
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: ACI
+    Model: 10407
+    Serial Number: ...
+    Made in: week 13 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 62 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6328, 0.3398
+    Green: 0.3105, 0.6328
+    Blue : 0.1582, 0.0605
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    Apple   :   832x624    74.551266 Hz   4:3     49.726 kHz     57.284000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD 2:  3840x2160   29.980602 Hz  16:9     65.688 kHz    262.750000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 134-134 kHz H, max dotclock 600 MHz
+    Display Product Name: 'ASUS MG28U'
+  Extension blocks: 1
+Checksum: 0xd1
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  14:  1440x480    59.940060 Hz   4:3     31.469 kHz     54.000000 MHz
+    VIC  15:  1440x480    59.940060 Hz  16:9     31.469 kHz     54.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 96 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 3:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+    DTD 4:  2560x1600   59.971589 Hz  16:10    98.713 kHz    268.500000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   37 Vpol N
+    DTD 5:   640x350    70.100223 Hz  64:35    31.475 kHz     25.180000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  96 Hback   16 Hpol P
+                 Vfront   59 Vsync   2 Vback   38 Vpol N
+Checksum: 0xfd  Unused space in Extension Block: 53 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 29.981 - 74.551 Hz (Monitor: 40.000 - 60.000 Hz)
+    Horizontal Freq: 31.466 - 133.312 kHz (Monitor: 134.000 - 134.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

@@ -1,0 +1,88 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 c4 06 00 00 00 00
+00 1f 01 04 a5 1d 11 78 07 77 15 a7 55 4d 99 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2e 36 80 a0 70 38 1f 40 30 20
+35 00 26 a5 10 00 00 1a 5c 2b 80 a0 70 38 1f 40
+30 20 35 00 26 a5 10 00 00 1a 00 00 00 fe 00 54
+54 33 47 57 80 31 33 33 57 46 37 0a 00 00 00 00
+00 02 41 31 a8 00 11 00 00 0a 01 0a 20 20 00 41
+
+00 ff ff ff ff ff ff 00 30 e4 c4 06 00 00 00 00
+00 1f 01 04 a5 1d 11 78 07 77 15 a7 55 4d 99 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2e 36 80 a0 70 38 1f 40 30 20
+35 00 26 a5 10 00 00 1a 5c 2b 80 a0 70 38 1f 40
+30 20 35 00 26 a5 10 00 00 1a 00 00 00 fe 00 54
+54 33 47 57 80 31 33 33 57 46 37 0a 00 00 00 00
+00 02 41 31 a8 00 11 00 00 0a 01 0a 20 20 00 41
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1732
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6533, 0.3349
+    Green: 0.3017, 0.6005
+    Blue : 0.1445, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.020425 Hz  16:9     66.683 kHz    138.700000 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    DTD 2:  1920x1080   48.033650 Hz  16:9     53.365 kHz    111.000000 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    Alphanumeric Data String: 'TT3GW'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 31 a8 00 11 00 00 0a 01 0a 20 20 '....A1........  '
+Checksum: 0x41
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 c4 06 00 00 00 00 '........0.......'
+  00 1f 01 04 a5 1d 11 78 07 77 15 a7 55 4d 99 25 '.......x.w..UM.%'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 2e 36 80 a0 70 38 1f 40 30 20 '.......6..p8.@0 '
+  35 00 26 a5 10 00 00 1a 5c 2b 80 a0 70 38 1f 40 '5.&.....\+..p8.@'
+  30 20 35 00 26 a5 10 00 00 1a 00 00 00 fe 00 54 '0 5.&..........T'
+  54 33 47 57 80 31 33 33 57 46 37 0a 00 00 00 00 'T3GW.133WF7.....'
+  00 02 41 31 a8 00 11 00 00 0a 01 0a 20 20 00 41 '..A1........  .A'
+Checksum: 0x41
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -69,14 +69,17 @@ Block 1, CTA-861 Extension Block:
     Desired content max luminance: 107 (507.620 cd/m^2)
     Desired content max frame-average luminance: 107 (507.620 cd/m^2)
     Desired content min luminance: 36 (0.101 cd/m^2)
-Checksum: 0x98
+Checksum: 0x98  Unused space in Extension Block: 112 bytes
 
 ----------------
 
 Warnings:
 
+Block 0, Base EDID:
+  Missing Display Product Name.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 342.300 MHz (Monitor: 340.000 MHz)
@@ -87,7 +90,6 @@ Failures:
 Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
   Alphanumeric Data String: One or more trailing spaces.
-  Missing Display Product Name.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.

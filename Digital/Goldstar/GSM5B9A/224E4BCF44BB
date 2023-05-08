@@ -119,7 +119,7 @@ Block 1, CTA-861 Extension Block:
     Minimum luminance: 33 (0.101 cd/m^2)
     Maximum luminance (without local dimming): 96 (400.000 cd/m^2)
     Minimum luminance (without local dimming): 41 (0.103 cd/m^2)
-Checksum: 0xe4
+Checksum: 0xe4  Unused space in Extension Block: 82 bytes
 
 ----------------
 
@@ -148,6 +148,7 @@ Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

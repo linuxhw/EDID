@@ -1,0 +1,84 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae a5 13 00 00 00 00
+0b 1e 01 04 a5 1d 11 78 02 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 36 36 80 a0 70 38 20 40 30 20
+35 00 25 a5 10 00 00 1a 36 36 80 a0 70 38 36 41
+30 20 35 00 25 a5 10 00 00 1a 00 00 00 fe 00 47
+46 54 37 32 81 31 33 33 48 43 45 0a 00 00 00 00
+00 02 41 11 9e 00 10 00 00 0a 01 0a 20 20 00 0e
+
+00 ff ff ff ff ff ff 00 0d ae a5 13 00 00 00 00
+0b 1e 01 04 a5 1d 11 78 02 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 36 36 80 a0 70 38 20 40 30 20
+35 00 25 a5 10 00 00 1a 36 36 80 a0 70 38 36 41
+30 20 35 00 25 a5 10 00 00 1a 00 00 00 fe 00 47
+46 54 37 32 81 31 33 33 48 43 45 0a 00 00 00 00
+00 02 41 11 9e 00 10 00 00 0a 01 0a 20 20 00 0e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5029
+    Made in: week 11 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.001038 Hz  16:9     66.721 kHz    138.780000 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   24 Vpol N
+    DTD 2:  1920x1080   48.000830 Hz  16:9     66.721 kHz    138.780000 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback  302 Vpol N
+    Alphanumeric Data String: 'GFT72'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 11 9e 00 10 00 00 0a 01 0a 20 20 '....A.........  '
+Checksum: 0x0e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d ae a5 13 00 00 00 00 '................'
+  0b 1e 01 04 a5 1d 11 78 02 ee 95 a3 54 4c 99 26 '.......x....TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 36 36 80 a0 70 38 20 40 30 20 '......66..p8 @0 '
+  35 00 25 a5 10 00 00 1a 36 36 80 a0 70 38 36 41 '5.%.....66..p86A'
+  30 20 35 00 25 a5 10 00 00 1a 00 00 00 fe 00 47 '0 5.%..........G'
+  46 54 37 32 81 31 33 33 48 43 45 0a 00 00 00 00 'FT72.133HCE.....'
+  00 02 41 11 9e 00 10 00 00 0a 01 0a 20 20 00 0e '..A.........  ..'
+Checksum: 0x0e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

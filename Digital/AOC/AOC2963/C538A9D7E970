@@ -120,9 +120,14 @@ Block 1, CTA-861 Extension Block:
     DTD 7:  1280x1080   59.975801 Hz  32:27    67.173 kHz    115.000000 MHz (673 mm x 284 mm)
                  Hfront   80 Hsync 136 Hback  216 Hpol N
                  Vfront    3 Vsync  10 Vback   27 Vpol P
-Checksum: 0x48
+Checksum: 0x48  Unused space in Extension Block: 7 bytes
 
 ----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

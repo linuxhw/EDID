@@ -1,0 +1,56 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 8d 0a 00 00 00 00
+1c 1f 01 04 a5 1f 09 78 03 3e 50 ae 52 43 b0 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8c 82 40 a0 b0 60 34 30 30 20
+36 00 34 5d 10 00 00 1a 46 41 40 a0 b0 60 34 30
+30 20 36 00 34 5d 10 00 00 1a 00 00 00 fd 00 30
+78 2c 6e 22 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 32 37 48 34 4d 2d 4e 58 31 0a 00 91
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2701
+    Made in: week 28 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 31 cm x 9 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6796, 0.3232
+    Green: 0.2646, 0.6894
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2880x864   120.015514 Hz  10:3    109.934 kHz    334.200000 MHz (308 mm x 93 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   43 Vpol N
+    DTD 2:  2880x864    60.007757 Hz  10:3     54.967 kHz    167.100000 MHz (308 mm x 93 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   43 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-120 Hz V, 44-110 kHz H, max dotclock 340 MHz
+    Alphanumeric Data String: 'NV127H4M-NX1'
+Checksum: 0x91
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (31x9 is smaller than 10x10 cm).
+  Missing Display Product Name.
+
+EDID conformity: PASS

@@ -1,0 +1,155 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 10 44 a0 00 00 00 00
+24 1d 01 04 b5 22 16 78 02 0f b1 ae 52 43 b0 26
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 e7 91 00 50 c0 80 37 70 08 20
+98 08 59 d7 10 00 00 1a 00 00 00 fc 00 43 6f 6c
+6f 72 20 4c 43 44 0a 20 20 20 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 7b
+
+70 12 79 03 00 7f 81 3f fa 10 00 03 01 18 0f 28
+17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+4c 50 31 36 30 57 54 31 2d 53 4a 41 36 0a 20 00
+46 30 59 30 34 34 33 30 30 42 39 30 37 43 4d 41
+32 0a 20 20 20 20 20 7f 81 29 fa 10 00 02 01 00
+11 00 00 02 90 03 44 04 3d 05 92 07 65 09 e4 0d
+51 12 0a 18 91 21 9c 2e 2f 3f b7 58 3a 7a 96 aa
+e1 ee ed 00 00 00 00 00 00 00 00 00 00 00 30 90
+
+00 ff ff ff ff ff ff 00 06 10 44 a0 00 00 00 00
+24 1d 01 04 b5 22 16 78 02 0f b1 ae 52 43 b0 26
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 e7 91 00 50 c0 80 37 70 08 20
+98 08 59 d7 10 00 00 1a 00 00 00 fc 00 43 6f 6c
+6f 72 20 4c 43 44 0a 20 20 20 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 7b
+
+70 12 79 03 00 7f 81 3f fa 10 00 03 01 18 0f 28
+17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+4c 50 31 36 30 57 54 31 2d 53 4a 41 36 0a 20 00
+46 30 59 30 34 34 33 30 30 42 39 30 37 43 4d 41
+32 0a 20 20 20 20 20 7f 81 29 fa 10 00 02 01 00
+11 00 00 02 90 03 44 04 3d 05 92 07 65 09 e4 0d
+51 12 0a 18 91 21 9c 2e 2f 3f b7 58 3a 7a 96 aa
+e1 ee ed 00 00 00 00 00 00 00 00 00 00 00 30 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 41028
+    Made in: week 36 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2646, 0.6904
+    Blue : 0.1503, 0.0537
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3072x1920   59.999679 Hz  16:10   118.499 kHz    373.510000 MHz (345 mm x 215 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront   41 Vsync   8 Vback    6 Vpol N
+    Display Product Name: 'Color LCD'
+    Dummy Descriptor:
+    Dummy Descriptor:
+  Extension blocks: 1
+Checksum: 0x7b
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Standalone display device
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
+    Type: 3, Version: 1
+    18 0f 28 17 00 00 00 00 00 00 00 00 00 00 00 00 '..(.............'
+    00 00 00 4c 50 31 36 30 57 54 31 2d 53 4a 41 36 '...LP160WT1-SJA6'
+    0a 20 00 46 30 59 30 34 34 33 30 30 42 39 30 37 '. .F0Y044300B907'
+    43 4d 41 32 0a 20 20 20 20 20                   'CMA2.     '
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
+    Type: 2, Version: 1
+    00 11 00 00 02 90 03 44 04 3d 05 92 07 65 09 e4 '.......D.=...e..'
+    0d 51 12 0a 18 91 21 9c 2e 2f 3f b7 58 3a 7a 96 '.Q....!../?.X:z.'
+    aa e1 ee ed                                     '....'
+  Checksum: 0x30
+Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 10 44 a0 00 00 00 00 '..........D.....'
+  24 1d 01 04 b5 22 16 78 02 0f b1 ae 52 43 b0 26 '$....".x....RC.&'
+  0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 e7 91 00 50 c0 80 37 70 08 20 '.........P..7p. '
+  98 08 59 d7 10 00 00 1a 00 00 00 fc 00 43 6f 6c '..Y..........Col'
+  6f 72 20 4c 43 44 0a 20 20 20 00 00 00 10 00 00 'or LCD.   ......'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 7b '...............{'
+Checksum: 0x7b
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
+    Type: 3, Version: 1
+    18 0f 28 17 00 00 00 00 00 00 00 00 00 00 00 00 '..(.............'
+    00 00 00 4c 50 31 36 30 57 54 31 2d 53 4a 41 36 '...LP160WT1-SJA6'
+    0a 20 00 46 30 59 30 34 34 33 30 30 42 39 30 37 '. .F0Y044300B907'
+    43 4d 41 32 0a 20 20 20 20 20                   'CMA2.     '
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
+    Type: 2, Version: 1
+    00 11 00 00 02 90 03 44 04 3d 05 92 07 65 09 e4 '.......D.=...e..'
+    0d 51 12 0a 18 91 21 9c 2e 2f 3f b7 58 3a 7a 96 '.Q....!../?.X:z.'
+    aa e1 ee ed                                     '....'
+  Checksum: 0x30
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 1, DisplayID Extension Block:
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
+Block 3, DisplayID Extension Block:
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
+
+Failures:
+
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+  DisplayID: Missing DisplayID Type I Detailed Timing Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

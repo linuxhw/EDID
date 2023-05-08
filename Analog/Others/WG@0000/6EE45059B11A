@@ -1,0 +1,97 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5c e0 00 00 00 00 00 00
+00 11 01 01 0c 26 1e 78 08 c3 55 a5 57 4b 99 24
+11 50 54 af cf 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 89
+
+00 ff ff ff ff ff ff 00 5c e0 00 00 00 00 00 00
+00 11 01 01 0c 26 1e 78 08 c3 55 a5 57 4b 99 24
+11 50 54 af cf 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 89
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: WG@
+    Model: 0
+    Made in: 2007
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
+    Blank level equals black level
+    Sync: Separate Composite
+    Maximum image size: 38 cm x 30 cm
+    Gamma: 2.20
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6474, 0.3398
+    Green: 0.2929, 0.6005
+    Blue : 0.1416, 0.0673
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    Empty Descriptor
+    Empty Descriptor
+    Empty Descriptor
+    Empty Descriptor
+Checksum: 0x89
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5c e0 00 00 00 00 00 00 '........\.......'
+  00 11 01 01 0c 26 1e 78 08 c3 55 a5 57 4b 99 24 '.....&.x..U.WK.$'
+  11 50 54 af cf 00 81 80 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 89 '................'
+Checksum: 0x89
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: Manufacturer name field contains garbage.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

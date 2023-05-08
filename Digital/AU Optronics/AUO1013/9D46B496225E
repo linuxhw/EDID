@@ -1,0 +1,86 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 13 10 00 00 00 00
+00 1c 01 04 a5 1c 13 78 02 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d5 2b 68 50 40 e0 2c 50 18 10
+3a 00 1c bd 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 33 35 51 41 4e 30 31 2e 30 20 0a 01 e1
+
+70 20 08 06 00 7e 00 05 3a 02 92 00 20 61 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 4115
+    Made in: 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 28 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1128x1504   60.005861 Hz   3:4     92.889 kHz    112.210000 MHz (284 mm x 189 mm)
+                 Hfront   24 Hsync  16 Hback   40 Hpol N
+                 Vfront    3 Vsync  10 Vback   31 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B135QAN01.0 '
+  Extension blocks: 1
+Checksum: 0xe1
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: Presentation display
+  Vendor-Specific Data Block (0x7e) (VESA), OUI 3A-02-92:
+    Data Structure Type: eDP
+    Default Colorspace and EOTF Handling: sRGB
+    Number of Pixels in Hor Pix Cnt Overlapping an Adjacent Panel: 0
+    Multi-SST Operation: Two Streams (number of links shall be 2 or 4)
+  Checksum: 0x61
+Checksum: 0x90  Unused space in Extension Block: 113 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+EDID:
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+  DisplayID: Missing DisplayID Type VII Detailed Timing Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

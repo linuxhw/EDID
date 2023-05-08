@@ -127,7 +127,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -141,12 +141,14 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (609 mm x 348 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0x36
+Checksum: 0x36  Unused space in Extension Block: 16 bytes
 
 ----------------
 
 Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   CTA-861: Native progressive resolution of 3440x1440 is smaller than the max preferred progressive resolution 3840x2160.
 
@@ -155,7 +157,6 @@ Failures:
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 800x335 mm vs display size 820x350 mm.
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

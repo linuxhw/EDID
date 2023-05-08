@@ -136,7 +136,7 @@ Block 1, CTA-861 Extension Block:
     sYCC601
     opYCC601
     opRGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 4.3.0.0
     Supports_AI
@@ -150,7 +150,7 @@ Block 1, CTA-861 Extension Block:
         HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
         HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
         HDMI VIC 4:  4096x2160   24.000000 Hz 256:135   54.000 kHz    297.000000 MHz
-Checksum: 0x85
+Checksum: 0x85  Unused space in Extension Block: 55 bytes
 
 ----------------
 
@@ -158,6 +158,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
@@ -166,7 +167,6 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 708x398 mm vs display size 1150x650 mm.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

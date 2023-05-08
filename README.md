@@ -52,7 +52,7 @@ How to regenerate data
 
 Regenerate all the data by new edid-decode:
 
-    find . -type f -regextype posix-extended -regex '.*/[A-F0-9]{12}$' -print0 | while read -r -d '' file; do cat "$file" | grep -E '^([a-f0-9]{32}|[a-f0-9 ]{47})$' | edid-decode-2022-03-15 -c --skip-sha > /tmp/file; cat /tmp/file > "$file"; done
+    find . -type f -regextype posix-extended -regex '.*/[A-F0-9]{12}$' -print0 | while read -r -d '' file; do cat "$file" | grep -E '^([a-f0-9]{32}|[a-f0-9 ]{47})$' | edid-decode-2023-05-07 -c --skip-sha > /tmp/file; cat /tmp/file > "$file"; done
     find . -type f -regextype posix-extended -regex '.*/[A-F0-9]{12}$' -print0 | while read -r -d '' file; do sed -i -e "s/Serial Number: .*/Serial Number: .../g" "$file"; done
 
 Digital display

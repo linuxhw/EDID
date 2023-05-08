@@ -128,7 +128,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.7.8
     DC_36bit
@@ -171,7 +171,7 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
     Version: 1
     Maximum TMDS Character Rate: 600 MHz
-Checksum: 0x1d
+Checksum: 0x1d  Unused space in Extension Block: 16 bytes
 
 ----------------
 
@@ -180,6 +180,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: VIC 95 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
@@ -188,9 +189,8 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 1872x1053 mm vs display size 1150x650 mm.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI Forum VSDB did not immediately follow the HDMI VSDB.
-  Padding: CTA-861 padding contains non-zero bytes.
+  Padding: Contains non-zero bytes.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 27.000 - 135.000 kHz (Monitor: 15.000 - 81.000 kHz)

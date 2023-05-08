@@ -102,12 +102,12 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
     Maximum TMDS clock: 150 MHz
-    Video latency: 203 ms
-    Audio latency: 203 ms
+    Video latency: 200 ms
+    Audio latency: 200 ms
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Detailed Timing Descriptors:
     DTD 3:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (640 mm x 360 mm)
                  Hfront  528 Hsync  44 Hback  148 Hpol P
@@ -122,14 +122,18 @@ Block 1, CTA-861 Extension Block:
     DTD 6:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (400 mm x 300 mm)
                  Hfront   12 Hsync  64 Hback   68 Hpol N
                  Vfront    5 Vsync   5 Vback   39 Vpol N
-Checksum: 0x70
+Checksum: 0x70  Unused space in Extension Block: 3 bytes
 
 ----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #6: Mismatch of image size 400x300 mm vs display size 640x360 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:

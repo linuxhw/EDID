@@ -98,7 +98,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -130,7 +130,7 @@ Block 1, CTA-861 Extension Block:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-Checksum: 0x30
+Checksum: 0x30  Unused space in Extension Block: 41 bytes
 
 ----------------
 
@@ -152,7 +152,6 @@ Block 0, Base EDID:
   Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 24.000 - 84.000 kHz)

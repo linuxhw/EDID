@@ -132,7 +132,7 @@ Block 1, CTA-861 Extension Block:
     BT2020cYCC
     BT2020YCC
     BT2020RGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
     ST2113RGB
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -147,19 +147,20 @@ Block 1, CTA-861 Extension Block:
     Desired content max luminance: 98 (417.710 cd/m^2)
     Desired content max frame-average luminance: 86 (322.098 cd/m^2)
     Desired content min luminance: 28 (0.050 cd/m^2)
-Checksum: 0x14
+Checksum: 0x14  Unused space in Extension Block: 52 bytes
 
 ----------------
 
 Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

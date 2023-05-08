@@ -132,7 +132,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
@@ -150,7 +150,7 @@ Block 1, CTA-861 Extension Block:
     DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (523 mm x 392 mm)
                  Hfront   16 Hsync  62 Hback   60 Hpol N
                  Vfront    9 Vsync   6 Vback   30 Vpol N
-Checksum: 0x77
+Checksum: 0x77  Unused space in Extension Block: 8 bytes
 
 ----------------
 
@@ -158,11 +158,11 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: The DTD max image size is 698x392mm, but the display size is not specified anywhere.

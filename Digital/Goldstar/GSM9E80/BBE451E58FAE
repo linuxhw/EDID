@@ -112,7 +112,7 @@ Block 1, CTA-861 Extension Block:
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 72 Hz
     Flags 1.x: 0x00
-Checksum: 0x70
+Checksum: 0x70  Unused space in Extension Block: 87 bytes
 
 ----------------
 
@@ -153,6 +153,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.

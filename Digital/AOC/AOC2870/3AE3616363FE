@@ -126,7 +126,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:  1920x2160   59.987970 Hz   8:9    133.293 kHz    277.250000 MHz (621 mm x 341 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   49 Vpol N
-Checksum: 0x95
+Checksum: 0x95  Unused space in Extension Block: 17 bytes
 
 ----------------
 
@@ -134,6 +134,8 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 95.
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

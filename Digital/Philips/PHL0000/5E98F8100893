@@ -113,8 +113,8 @@ Block 1, CTA-861 Extension Block:
       Photo
       Cinema
       Game
-    Video latency: 153 ms
-    Audio latency: 153 ms
+    Video latency: 150 ms
+    Audio latency: 150 ms
     Extended HDMI video details:
       3D present
       3D-capable-VIC mask present
@@ -134,7 +134,7 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
@@ -152,13 +152,14 @@ Block 1, CTA-861 Extension Block:
     DTD 5:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (1280 mm x 720 mm)
                  Hfront  440 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
-Checksum: 0x3a
+Checksum: 0x3a  Unused space in Extension Block: 15 bytes
 
 ----------------
 
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
 
 Failures:
@@ -167,7 +168,6 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 1280x720 mm vs display size 1040x580 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 1280x720 mm vs display size 1040x580 mm.
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #3: Mismatch of image size 1280x720 mm vs display size 1040x580 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 1280x720 mm vs display size 1040x580 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 1280x720 mm vs display size 1040x580 mm.

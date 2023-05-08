@@ -173,12 +173,12 @@ Block 1, CTA-861 Extension Block:
     VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
   InfoFrame Data Block:
     VSIFs: 0
-    InfoFrame Type Code 3
+    Source Product Description InfoFrame (3)
   Detailed Timing Descriptors:
     DTD 3:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz
                  Hfront   64 Hsync 112 Hback  256 Hpol P
                  Vfront    3 Vsync   6 Vback   18 Vpol P
-Checksum: 0x4d
+Checksum: 0x4d  Unused space in Extension Block: 10 bytes
 
 ----------------
 
@@ -186,6 +186,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 

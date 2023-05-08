@@ -1,0 +1,79 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 14 40 00 00 00 00
+05 14 01 03 80 1a 10 78 ea e5 95 93 56 4f 90 28
+28 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 f0 1c a0 a0 50 84 1a 30 18 10
+36 00 05 a3 10 00 00 18 f0 1c a0 a0 50 84 1a 30
+18 10 36 00 05 a3 10 00 00 18 00 00 00 0f 00 95
+0a 32 95 0a 32 19 01 00 30 64 00 55 00 00 00 fe
+00 4c 54 44 31 32 31 45 51 33 42 0a 20 20 00 b6
+
+00 ff ff ff ff ff ff 00 30 ae 14 40 00 00 00 00
+05 14 01 03 80 1a 10 78 ea e5 95 93 56 4f 90 28
+28 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 f0 1c a0 a0 50 84 1a 30 18 10
+36 00 05 a3 10 00 00 18 f0 1c a0 a0 50 84 1a 30
+18 10 36 00 05 a3 10 00 00 18 00 00 00 0f 00 95
+0a 32 95 0a 32 19 01 00 30 64 00 55 00 00 00 fe
+00 4c 54 44 31 32 31 45 51 33 42 0a 20 20 00 b6
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16404
+    Made in: week 5 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 26 cm x 16 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5771, 0.3378
+    Green: 0.3095, 0.5634
+    Blue : 0.1582, 0.1572
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    50.000000 Hz  16:10    46.300 kHz     74.080000 MHz (261 mm x 163 mm)
+                 Hfront   24 Hsync  16 Hback  120 Hpol N
+                 Vfront    3 Vsync   6 Vback   17 Vpol N
+    DTD 2:  1440x900    50.000000 Hz  16:10    46.300 kHz     74.080000 MHz (261 mm x 163 mm)
+                 Hfront   24 Hsync  16 Hback  120 Hpol N
+                 Vfront    3 Vsync   6 Vback   17 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 95 0a 32 95 0a 32 19 01 00 30 64 00 55 '.....2..2...0d.U'
+    Alphanumeric Data String: 'LTD121EQ3B'
+Checksum: 0xb6
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 14 40 00 00 00 00 '........0..@....'
+  05 14 01 03 80 1a 10 78 ea e5 95 93 56 4f 90 28 '.......x....VO.('
+  28 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '(PT.............'
+  01 01 01 01 01 01 f0 1c a0 a0 50 84 1a 30 18 10 '..........P..0..'
+  36 00 05 a3 10 00 00 18 f0 1c a0 a0 50 84 1a 30 '6...........P..0'
+  18 10 36 00 05 a3 10 00 00 18 00 00 00 0f 00 95 '..6.............'
+  0a 32 95 0a 32 19 01 00 30 64 00 55 00 00 00 fe '.2..2...0d.U....'
+  00 4c 54 44 31 32 31 45 51 33 42 0a 20 20 00 b6 '.LTD121EQ3B.  ..'
+Checksum: 0xb6
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

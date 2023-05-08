@@ -107,10 +107,10 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
     Maximum TMDS clock: 150 MHz
-    Video latency: 43 ms
-    Audio latency: 43 ms
-    Interlaced video latency: 63 ms
-    Interlaced audio latency: 63 ms
+    Video latency: 40 ms
+    Audio latency: 40 ms
+    Interlaced video latency: 60 ms
+    Interlaced audio latency: 60 ms
   Detailed Timing Descriptors:
     DTD 3:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (698 mm x 393 mm)
                  Hfront  440 Hsync  40 Hback  220 Hpol P
@@ -125,7 +125,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (698 mm x 393 mm)
                  Hfront  110 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
-Checksum: 0xaa
+Checksum: 0xaa  Unused space in Extension Block: 12 bytes
 
 ----------------
 
@@ -134,6 +134,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

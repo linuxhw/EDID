@@ -1,0 +1,66 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 01 12 01 00 00 00
+02 1a 01 04 a0 30 1a 78 e6 96 61 a3 5b 4f a3 27
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1e 00 00 00 fc 00 4c 45 4e
+2d 35 31 30 49 2d 43 0a 20 20 00 00 00 fd 00 39
+3e 53 53 10 00 0a 20 20 20 20 20 20 00 00 00 fe
+20 4c 4d 32 31 35 57 46 39 20 20 20 20 20 00 b3
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 4609
+    Serial Number: ...
+    Made in: week 2 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    Digital interface is not defined
+    Maximum image size: 48 cm x 26 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6386, 0.3564
+    Green: 0.3095, 0.6386
+    Blue : 0.1533, 0.0722
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (476 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Name: 'LEN-510I-C'
+    Display Range Limits:
+      Monitor ranges (GTF): 57-62 Hz V, 83-83 kHz H, max dotclock 160 MHz
+    Alphanumeric Data String: 'LM215WF9     '
+Checksum: 0xb3
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 67.500 - 67.500 kHz (Monitor: 83.000 - 83.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Descriptor #4: Monitor descriptor block has byte 4 nonzero (0x20).
+  Alphanumeric Data String: One or more trailing spaces.
+
+EDID conformity: FAIL

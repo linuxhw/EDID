@@ -1,0 +1,96 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 28 33 01 01 01 01
+2b 1c 01 04 68 29 17 78 2a d0 e5 a2 55 54 9f 26
+0c 50 54 a1 08 00 81 c0 81 00 81 80 01 01 01 01
+01 01 01 01 01 01 20 1c 56 86 50 00 20 30 0e 38
+13 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 3c 1e
+46 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 31 39 6b 61 0a 20 20 20 20 20 00 00 00 ff
+00 43 4e 43 38 34 33 31 52 52 59 0a 20 20 00 33
+
+00 ff ff ff ff ff ff 00 22 f0 28 33 01 01 01 01
+2b 1c 01 04 68 29 17 78 2a d0 e5 a2 55 54 9f 26
+0c 50 54 a1 08 00 81 c0 81 00 81 80 01 01 01 01
+01 01 01 01 01 01 20 1c 56 86 50 00 20 30 0e 38
+13 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 3c 1e
+46 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 31 39 6b 61 0a 20 20 20 20 20 00 00 00 ff
+00 43 4e 43 38 34 33 31 52 52 59 0a 20 20 00 33
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 13096
+    Serial Number: ...
+    Made in: week 43 of 2018
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.000 : 0.700 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 41 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6357, 0.3330
+    Green: 0.3281, 0.6210
+    Blue : 0.1513, 0.0488
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.000000 Hz 683:384   48.000 kHz     72.000000 MHz (410 mm x 230 mm)
+                 Hfront   14 Hsync  56 Hback   64 Hpol P
+                 Vfront    1 Vsync   3 Vback   28 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-60 Hz V, 30-70 kHz H, max dotclock 110 MHz
+    Display Product Name: 'HP 19ka'
+    Display Product Serial Number: ...
+Checksum: 0x33
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 28 33 01 01 01 01 '........".(3....'
+  2b 1c 01 04 68 29 17 78 2a d0 e5 a2 55 54 9f 26 '+...h).x*...UT.&'
+  0c 50 54 a1 08 00 81 c0 81 00 81 80 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 20 1c 56 86 50 00 20 30 0e 38 '...... .V.P. 0.8'
+  13 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 3c 1e '.............2<.'
+  46 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'F...      .....H'
+  50 20 31 39 6b 61 0a 20 20 20 20 20 00 00 00 ff 'P 19ka.     ....'
+  00 43 4e 43 38 34 33 31 52 52 59 0a 20 20 00 33 '.CNC8431RRY.  .3'
+Checksum: 0x33
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.810 - 70.082 Hz (Monitor: 50.000 - 60.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

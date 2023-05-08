@@ -112,7 +112,7 @@ Block 1, CTA-861 Extension Block:
     DTD 6:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (798 mm x 335 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
-Checksum: 0x62
+Checksum: 0x62  Unused space in Extension Block: 12 bytes
 
 ----------------
 
@@ -124,6 +124,7 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 90.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.625 - 88.855 kHz (Monitor: 30.000 - 89.000 kHz)

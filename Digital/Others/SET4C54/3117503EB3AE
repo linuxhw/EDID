@@ -120,20 +120,20 @@ Block 1, CTA-861 Extension Block:
       3D: Frame-packing
       3D VIC indices that support these capabilities:
   Detailed Timing Descriptors:
-    DTD 3:  1920x1200   59.950171 Hz   8:5     74.038 kHz    154.000000 MHz (697 mm x 392 mm)
+    DTD 3:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (697 mm x 392 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol N
                  Vfront    3 Vsync   6 Vback   26 Vpol N
     DTD 4:  1280x2048i  59.991601 Hz   5:8     63.981 kHz    108.000000 MHz (697 mm x 392 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P Vfront +0.5 Odd Field
                  Vfront    1 Vsync   3 Vback   38 Vpol P Vback  +0.5 Even Field
-    DTD 5:  1680x1050   59.954250 Hz   8:5     65.290 kHz    146.250000 MHz (697 mm x 392 mm)
+    DTD 5:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz (697 mm x 392 mm)
                  Hfront  104 Hsync 176 Hback  280 Hpol P
                  Vfront    3 Vsync   6 Vback   30 Vpol P
     DTD 6:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (697 mm x 392 mm)
                  Hfront  528 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0x86
+Checksum: 0x86  Unused space in Extension Block: 9 bytes
 
 ----------------
 
@@ -145,6 +145,7 @@ Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Detailed Timing Descriptor #3: DTD is similar but not identical to DMT 0x44.
   Detailed Timing Descriptor #5: DTD is similar but not identical to DMT 0x3a.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

@@ -115,9 +115,14 @@ Block 1, CTA-861 Extension Block:
     SCDC Read Request Capable
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
-Checksum: 0x22
+Checksum: 0x22  Unused space in Extension Block: 81 bytes
 
 ----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

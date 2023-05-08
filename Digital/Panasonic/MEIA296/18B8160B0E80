@@ -115,12 +115,12 @@ Block 1, CTA-861 Extension Block:
     sYCC601
     opYCC601
     opRGB
-    Reserved MD0
+    Gamut Boundary Description Metadata Profile P0
   Detailed Timing Descriptors:
     DTD 3:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (698 mm x 392 mm)
                  Hfront   70 Hsync 143 Hback  213 Hpol P
                  Vfront    3 Vsync   3 Vback   24 Vpol P
-Checksum: 0xa4
+Checksum: 0xa4  Unused space in Extension Block: 65 bytes
 
 ----------------
 
@@ -129,6 +129,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
@@ -136,7 +137,6 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 698x392 mm vs display size 1280x720 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 698x392 mm vs display size 1280x720 mm.
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD0-MD3 must be 0.
   Detailed Timing Descriptor #3: Mismatch of image size 698x392 mm vs display size 1280x720 mm.
   HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
 
