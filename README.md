@@ -13,15 +13,16 @@ EDIDs of all connected monitors will be uploaded to the database and repository.
 
 TIP: discuss your monitors and EDIDs on [our forum](https://forum.linux-hardware.org/)
 
-Total monitors: 90245.
+Total monitors: 99117.
 
 Contents
 --------
 
-1. [ About           ](#about)
+1. [ About ](#about)
 2. [ How to install EDID file ](#how-to-install-edid-file)
-3. [ Digital display ](#digital-display)
-4. [ Analog display  ](#analog-display)
+3. [ How to regenerate data ](#how-to-regenerate-data)
+4. [ Digital display ](#digital-display)
+5. [ Analog display  ](#analog-display)
 
 About
 -----
@@ -72,14 +73,15 @@ model and ID.
 | AMT Internati... | AMT0038 | L2-150T+         | 1280x720  | 14.9 |      | [5C3934DAA3E1](<Digital/AMT International/AMT0038/5C3934DAA3E1>) |
 | AMT Internati... | AMTA617 |                  | 1280x1024 | 17.1 |      | [FB83314D1480](<Digital/AMT International/AMTA617/FB83314D1480>) |
 | AMW              | AMW0000 | X1900DS          | 1280x1024 | 18.8 | 2008 | [389207E25B70](<Digital/AMW/AMW0000/389207E25B70>) |
-| AMW              | AMW0000 | A912WDB          | 1440x900  | 18.6 | 2007 | [751BEEE4C252](<Digital/AMW/AMW0000/751BEEE4C252>) |
+| AMW              | AMW0000 | A912WDB          | 1440x900  | 18.6 | 2007 | [3A103D89E198](<Digital/AMW/AMW0000/3A103D89E198>) |
 | AMW              | AMW0000 | X2210WAS         | 1680x1050 | 22.3 | 2007 | [BA2843C47EF3](<Digital/AMW/AMW0000/BA2843C47EF3>) |
 | AMW              | AMW1901 | M197TD           | 1280x1024 | 19.1 |      | [BD53E2980BD3](<Digital/AMW/AMW1901/BD53E2980BD3>) |
 | AMW              | AMW73D7 | M179D            | 1280x1024 | 17.1 |      | [4D6D8877E4FC](<Digital/AMW/AMW73D7/4D6D8877E4FC>) |
+| AOC              | AOC0000 | 43S5195          | 1920x1080 | 43.0 | 2020 | [629A1D76FF91](<Digital/AOC/AOC0000/629A1D76FF91>) |
 | AOC              | AOC0000 | 32S5195          | 1920x1080 | 32.1 | 2020 | [B7CFC980F0C3](<Digital/AOC/AOC0000/B7CFC980F0C3>) |
 | AOC              | AOC0000 | FTV              | 1920x1080 | 28.9 | 2019 | [132A50FA1C01](<Digital/AOC/AOC0000/132A50FA1C01>) |
 | AOC              | AOC0000 | 43S5195          | 1920x1080 | 43.0 | 2019 | [25DAFB6ACD4C](<Digital/AOC/AOC0000/25DAFB6ACD4C>) |
-| AOC              | AOC0000 | 32S5195          | 1920x1080 | 32.1 | 2019 | [C57F7CE917F8](<Digital/AOC/AOC0000/C57F7CE917F8>) |
+| AOC              | AOC0000 | 32S5195          | 1920x1080 | 32.1 | 2019 | [283762764794](<Digital/AOC/AOC0000/283762764794>) |
 | AOC              | AOC0000 | TV               | 1920x1080 | 65.0 | 2018 | [80F21BC4DD42](<Digital/AOC/AOC0000/80F21BC4DD42>) |
 | AOC              | AOC0000 | FTV              | 1920x1080 | 28.9 | 2016 | [3DEE98D30B2F](<Digital/AOC/AOC0000/3DEE98D30B2F>) |
 | AOC              | AOC0000 | LCD              | 1360x768  | 23.4 | 2016 | [A46EA53CA45F](<Digital/AOC/AOC0000/A46EA53CA45F>) |
@@ -105,7 +107,7 @@ model and ID.
 | AOC              | AOC0CCD | 28E850           | 2560x1600 | 27.8 | 2017 | [82A0A0F41AA1](<Digital/AOC/AOC0CCD/82A0A0F41AA1>) |
 | AOC              | AOC1519 | 519W             | 1280x720  | 15.0 | 2008 | [5E13C91CCE9A](<Digital/AOC/AOC1519/5E13C91CCE9A>) |
 | AOC              | AOC1601 | 1601W            | 1920x1080 | 15.3 | 2019 | [5C4E23152864](<Digital/AOC/AOC1601/5C4E23152864>) |
-| AOC              | AOC1619 | 1619w            | 1366x768  | 15.3 | 2009 | [70E8FD72B253](<Digital/AOC/AOC1619/70E8FD72B253>) |
+| AOC              | AOC1619 | 1619w            | 1366x768  | 15.3 | 2009 | [47E0269F0982](<Digital/AOC/AOC1619/47E0269F0982>) |
 | AOC              | AOC1621 | 1621Wb           | 1366x768  | 15.3 | 2011 | [2C0FED7DF214](<Digital/AOC/AOC1621/2C0FED7DF214>) |
 | AOC              | AOC1649 |                  | 1366x768  | 15.3 | 2015 | [DF054F52B283](<Digital/AOC/AOC1649/DF054F52B283>) |
 | AOC              | AOC1649 | 1649W            | 1366x768  | 15.3 |      | [AF125DB56A36](<Digital/AOC/AOC1649/AF125DB56A36>) |
@@ -145,6 +147,7 @@ model and ID.
 | AOC              | AOC1936 | 936W             | 1366x768  | 18.5 | 2010 | [3B0C2151780F](<Digital/AOC/AOC1936/3B0C2151780F>) |
 | AOC              | AOC1936 | 936W             | 1366x768  | 18.5 | 2009 | [379D46A8854F](<Digital/AOC/AOC1936/379D46A8854F>) |
 | AOC              | AOC1936 | 936W             | 1920x1080 | 18.5 |      | [0059652BE0E8](<Digital/AOC/AOC1936/0059652BE0E8>) |
+| AOC              | AOC1941 | 1941W            | 1366x768  | 18.5 | 2010 | [74B37E774FCA](<Digital/AOC/AOC1941/74B37E774FCA>) |
 | AOC              | AOC1941 | 1941W            | 1366x768  | 18.5 |      | [A35E79800D21](<Digital/AOC/AOC1941/A35E79800D21>) |
 | AOC              | AOC1942 | T942we           | 1366x768  | 18.5 | 2010 | [2D82A5A2E062](<Digital/AOC/AOC1942/2D82A5A2E062>) |
 | AOC              | AOC1943 | 1943W            | 1366x768  | 18.5 | 2011 | [6DB723018710](<Digital/AOC/AOC1943/6DB723018710>) |
@@ -161,10 +164,10 @@ model and ID.
 | AOC              | AOC1960 | 1960             | 1440x900  | 19.1 | 2013 | [2B28B2EB4E47](<Digital/AOC/AOC1960/2B28B2EB4E47>) |
 | AOC              | AOC1960 | 1960W            | 1366x768  | 18.5 | 2012 | [B5FF0AFDEF05](<Digital/AOC/AOC1960/B5FF0AFDEF05>) |
 | AOC              | AOC1966 | 966W             | 1366x768  | 18.5 | 2012 | [0FF6B3D95E0D](<Digital/AOC/AOC1966/0FF6B3D95E0D>) |
-| AOC              | AOC1970 | 1970W-1          | 1366x768  | 18.5 | 2021 | [8DEF5E748BCA](<Digital/AOC/AOC1970/8DEF5E748BCA>) |
+| AOC              | AOC1970 | 1970W-1          | 1366x768  | 18.5 | 2021 | [7EDA6DC44B31](<Digital/AOC/AOC1970/7EDA6DC44B31>) |
 | AOC              | AOC1970 | 1970W            | 1366x768  | 18.5 | 2020 | [47D0685A8D2C](<Digital/AOC/AOC1970/47D0685A8D2C>) |
 | AOC              | AOC1970 | 1970W            | 1366x768  | 18.5 | 2019 | [20449350006C](<Digital/AOC/AOC1970/20449350006C>) |
-| AOC              | AOC1970 | 1970W            | 1366x768  | 18.5 | 2018 | [A85FDDE37044](<Digital/AOC/AOC1970/A85FDDE37044>) |
+| AOC              | AOC1970 | 1970W            | 1366x768  | 18.5 | 2018 | [20B5B15B7F0B](<Digital/AOC/AOC1970/20B5B15B7F0B>) |
 | AOC              | AOC1970 | 1970W            | 1366x768  | 18.5 | 2017 | [3AB835F4C3D0](<Digital/AOC/AOC1970/3AB835F4C3D0>) |
 | AOC              | AOC1970 | 1970W            | 1366x768  | 18.5 | 2016 | [5C17F40E1C52](<Digital/AOC/AOC1970/5C17F40E1C52>) |
 | AOC              | AOC1970 | 1970W            | 1366x768  | 18.5 | 2015 | [54428F1C4CCD](<Digital/AOC/AOC1970/54428F1C4CCD>) |
@@ -191,11 +194,11 @@ model and ID.
 | AOC              | AOC2036 | 2036             | 1920x1080 | 19.9 |      | [632DA62959B1](<Digital/AOC/AOC2036/632DA62959B1>) |
 | AOC              | AOC2040 | 2040             | 1600x900  | 19.9 | 2010 | [35DD61BB1905](<Digital/AOC/AOC2040/35DD61BB1905>) |
 | AOC              | AOC2041 | 2041             | 1600x900  | 19.9 | 2010 | [8B848D4C1B7B](<Digital/AOC/AOC2041/8B848D4C1B7B>) |
-| AOC              | AOC2043 | 2043             | 1600x900  | 19.9 | 2011 | [733866BCC3F3](<Digital/AOC/AOC2043/733866BCC3F3>) |
+| AOC              | AOC2043 | 2043             | 1600x900  | 19.9 | 2011 | [6A034903D05D](<Digital/AOC/AOC2043/6A034903D05D>) |
 | AOC              | AOC2043 | 2043             | 1600x900  | 19.9 | 2010 | [33CAE266ED53](<Digital/AOC/AOC2043/33CAE266ED53>) |
 | AOC              | AOC2043 | 2043             | 1600x900  | 19.9 |      | [23F85529223B](<Digital/AOC/AOC2043/23F85529223B>) |
 | AOC              | AOC2050 | 2050W            | 1600x900  | 19.4 | 2015 | [B20797ACBAC4](<Digital/AOC/AOC2050/B20797ACBAC4>) |
-| AOC              | AOC2050 | 2050W            | 1600x900  | 19.4 | 2014 | [372D452EE593](<Digital/AOC/AOC2050/372D452EE593>) |
+| AOC              | AOC2050 | 2050W            | 1600x900  | 19.4 | 2014 | [2ED22BE81E3B](<Digital/AOC/AOC2050/2ED22BE81E3B>) |
 | AOC              | AOC2050 | 2050             | 1600x900  | 19.9 | 2013 | [0AA8290638A1](<Digital/AOC/AOC2050/0AA8290638A1>) |
 | AOC              | AOC2050 | 2050W            | 1600x900  | 19.4 | 2013 | [A324FCEF733E](<Digital/AOC/AOC2050/A324FCEF733E>) |
 | AOC              | AOC2050 | 2050             | 1600x900  | 19.9 | 2012 | [3C9AD04E6DBF](<Digital/AOC/AOC2050/3C9AD04E6DBF>) |
@@ -209,12 +212,14 @@ model and ID.
 | AOC              | AOC2060 | 2060W3           | 1920x1080 | 19.7 | 2015 | [5767D94AB569](<Digital/AOC/AOC2060/5767D94AB569>) |
 | AOC              | AOC2060 | 2060W            | 1600x900  | 19.4 | 2015 | [6E00AFC6A50C](<Digital/AOC/AOC2060/6E00AFC6A50C>) |
 | AOC              | AOC2060 | 2060W            | 1600x900  | 19.4 | 2014 | [3628FD81B7C1](<Digital/AOC/AOC2060/3628FD81B7C1>) |
+| AOC              | AOC2060 | 2060W            | 1600x900  | 19.4 | 2013 | [473939B5B9E4](<Digital/AOC/AOC2060/473939B5B9E4>) |
 | AOC              | AOC2060 | 2060W            | 1600x900  | 19.4 | 2012 | [381098F4A0C8](<Digital/AOC/AOC2060/381098F4A0C8>) |
 | AOC              | AOC2060 | 2060W3           | 1920x1080 | 19.7 |      | [D3238936363E](<Digital/AOC/AOC2060/D3238936363E>) |
 | AOC              | AOC2070 | 2070W            | 1600x900  | 19.4 | 2021 | [834AE8A9D9ED](<Digital/AOC/AOC2070/834AE8A9D9ED>) |
 | AOC              | AOC2070 | 2070W            | 1600x900  | 19.4 | 2020 | [00F8EAA02467](<Digital/AOC/AOC2070/00F8EAA02467>) |
 | AOC              | AOC2070 | 2070W            | 1600x900  | 19.4 | 2018 | [002AB1741D68](<Digital/AOC/AOC2070/002AB1741D68>) |
 | AOC              | AOC2070 | 2070L            | 1366x768  | 19.4 | 2018 | [6482F98420DE](<Digital/AOC/AOC2070/6482F98420DE>) |
+| AOC              | AOC2070 | 2070W            | 1600x900  | 19.4 | 2017 | [80B9130E6BE0](<Digital/AOC/AOC2070/80B9130E6BE0>) |
 | AOC              | AOC2070 | 2070W            | 1600x900  | 19.4 | 2015 | [CE9D5346B6B9](<Digital/AOC/AOC2070/CE9D5346B6B9>) |
 | AOC              | AOC2070 | 2070W            | 1600x900  | 19.4 | 2014 | [2F90FEB43A62](<Digital/AOC/AOC2070/2F90FEB43A62>) |
 | AOC              | AOC2070 | 2070W            | 1600x900  | 19.4 | 2013 | [274CAC9CE13D](<Digital/AOC/AOC2070/274CAC9CE13D>) |
@@ -226,10 +231,11 @@ model and ID.
 | AOC              | AOC2200 | 2200W            | 1920x1080 | 21.7 | 2017 | [10A52EAB009C](<Digital/AOC/AOC2200/10A52EAB009C>) |
 | AOC              | AOC2200 | F22              | 1920x1080 | 21.1 | 2011 | [43C474800D24](<Digital/AOC/AOC2200/43C474800D24>) |
 | AOC              | AOC2200 | F22              | 1920x1080 | 21.1 | 2010 | [4FCD4F64D2D7](<Digital/AOC/AOC2200/4FCD4F64D2D7>) |
+| AOC              | AOC2200 | F22              | 1920x1080 | 21.1 | 2009 | [2B1DA849DA29](<Digital/AOC/AOC2200/2B1DA849DA29>) |
 | AOC              | AOC2200 | e22t             | 1920x1080 | 21.7 | 2009 | [516704718222](<Digital/AOC/AOC2200/516704718222>) |
 | AOC              | AOC2200 | V22              | 1680x1050 | 24.0 | 2009 | [5A3E4E2CB262](<Digital/AOC/AOC2200/5A3E4E2CB262>) |
-| AOC              | AOC2200 | F22              | 1920x1080 | 21.1 | 2009 | [7A388D6E5DE7](<Digital/AOC/AOC2200/7A388D6E5DE7>) |
 | AOC              | AOC2200 | V22              | 1920x1080 | 24.0 |      | [E2060A0AAD5A](<Digital/AOC/AOC2200/E2060A0AAD5A>) |
+| AOC              | AOC2201 | 22B1WG5          | 1920x1080 | 21.5 | 2022 | [B604C851DA83](<Digital/AOC/AOC2201/B604C851DA83>) |
 | AOC              | AOC2201 | 22B1W            | 1920x1080 | 21.7 | 2021 | [0D586EFC5D6B](<Digital/AOC/AOC2201/0D586EFC5D6B>) |
 | AOC              | AOC2201 | 22B1WG5          | 1920x1080 | 21.5 | 2021 | [4CD1417F778D](<Digital/AOC/AOC2201/4CD1417F778D>) |
 | AOC              | AOC2201 | 22B1W            | 1920x1080 | 21.7 | 2020 | [1B9F9EA6E89A](<Digital/AOC/AOC2201/1B9F9EA6E89A>) |
@@ -243,6 +249,7 @@ model and ID.
 | AOC              | AOC2202 | 22V2WG5          | 1920x1080 | 21.7 | 2019 | [555F38219C6F](<Digital/AOC/AOC2202/555F38219C6F>) |
 | AOC              | AOC2202 | 22V2WG5          | 1920x1080 | 21.7 | 2018 | [3509DA7EBF29](<Digital/AOC/AOC2202/3509DA7EBF29>) |
 | AOC              | AOC2207 | LE22H037         | 1920x1080 | 21.7 | 2010 | [60AF14B0F652](<Digital/AOC/AOC2207/60AF14B0F652>) |
+| AOC              | AOC2210 | LE22H067         | 1920x1080 | 21.7 | 2010 | [342F6487A061](<Digital/AOC/AOC2210/342F6487A061>) |
 | AOC              | AOC2212 | 2212             | 1920x1080 | 22.0 |      | [BB099CDC4FCA](<Digital/AOC/AOC2212/BB099CDC4FCA>) |
 | AOC              | AOC2215 | LE22H158         | 1920x1080 | 21.7 | 2011 | [84D3243FFEA0](<Digital/AOC/AOC2215/84D3243FFEA0>) |
 | AOC              | AOC2216 | 2216             | 1680x1050 | 22.0 | 2008 | [14F6CFB9421B](<Digital/AOC/AOC2216/14F6CFB9421B>) |
@@ -271,7 +278,7 @@ model and ID.
 | AOC              | AOC2240 | 2240w            | 1920x1080 | 21.7 | 2010 | [056A8389ACCF](<Digital/AOC/AOC2240/056A8389ACCF>) |
 | AOC              | AOC2241 | 2241W            | 1920x1080 | 21.1 | 2010 | [892A0257387F](<Digital/AOC/AOC2241/892A0257387F>) |
 | AOC              | AOC2243 | 2243W            | 1920x1080 | 21.7 | 2012 | [1CB10AF5121C](<Digital/AOC/AOC2243/1CB10AF5121C>) |
-| AOC              | AOC2243 | 2243W            | 1920x1080 | 21.7 | 2011 | [239AF6CF2500](<Digital/AOC/AOC2243/239AF6CF2500>) |
+| AOC              | AOC2243 | 2243W            | 1920x1080 | 21.7 | 2011 | [0BE084588831](<Digital/AOC/AOC2243/0BE084588831>) |
 | AOC              | AOC2243 | 2243W            | 1920x1080 | 21.7 | 2010 | [1E45B46403DC](<Digital/AOC/AOC2243/1E45B46403DC>) |
 | AOC              | AOC2243 | 2243W            | 1920x1080 | 21.7 |      | [50E0A7B81FCB](<Digital/AOC/AOC2243/50E0A7B81FCB>) |
 | AOC              | AOC2250 | 2250W            | 1920x1080 | 21.7 | 2015 | [CD8D1205748C](<Digital/AOC/AOC2250/CD8D1205748C>) |
@@ -292,7 +299,7 @@ model and ID.
 | AOC              | AOC2260 | 2260WG5          | 1920x1080 | 21.7 | 2020 | [A2CE5F5FBAC8](<Digital/AOC/AOC2260/A2CE5F5FBAC8>) |
 | AOC              | AOC2260 | 2260WG5          | 1920x1080 | 21.7 | 2019 | [0ADBF2C62C5F](<Digital/AOC/AOC2260/0ADBF2C62C5F>) |
 | AOC              | AOC2260 | 2260WG5          | 1920x1080 | 21.7 | 2018 | [09D1D606C0AE](<Digital/AOC/AOC2260/09D1D606C0AE>) |
-| AOC              | AOC2260 | 2260WG5          | 1920x1080 | 21.7 | 2017 | [217AA37E15C9](<Digital/AOC/AOC2260/217AA37E15C9>) |
+| AOC              | AOC2260 | 2260WG5          | 1920x1080 | 21.7 | 2017 | [1A8E1D1C9035](<Digital/AOC/AOC2260/1A8E1D1C9035>) |
 | AOC              | AOC2260 | 2260WG5          | 1920x1080 | 21.7 | 2016 | [0426229C7335](<Digital/AOC/AOC2260/0426229C7335>) |
 | AOC              | AOC2260 | 2260             | 1680x1050 | 22.0 | 2016 | [7D0C886BDA73](<Digital/AOC/AOC2260/7D0C886BDA73>) |
 | AOC              | AOC2260 | 2260W            | 1920x1080 | 21.7 | 2015 | [08CD88096C18](<Digital/AOC/AOC2260/08CD88096C18>) |
@@ -306,6 +313,7 @@ model and ID.
 | AOC              | AOC2262 | 2262w            | 1920x1080 | 21.7 | 2012 | [F407A0429FC5](<Digital/AOC/AOC2262/F407A0429FC5>) |
 | AOC              | AOC2267 | 2267W            | 1920x1080 | 21.7 | 2017 | [0919A15B97C4](<Digital/AOC/AOC2267/0919A15B97C4>) |
 | AOC              | AOC2267 | 2267W            | 1920x1080 | 21.7 | 2016 | [2A43F56C5322](<Digital/AOC/AOC2267/2A43F56C5322>) |
+| AOC              | AOC2267 | 2267W            | 1920x1080 | 21.7 | 2015 | [DE3C3DADA43D](<Digital/AOC/AOC2267/DE3C3DADA43D>) |
 | AOC              | AOC2267 | 2267W            | 1920x1080 | 21.7 | 2014 | [6EFB4C8CF8CC](<Digital/AOC/AOC2267/6EFB4C8CF8CC>) |
 | AOC              | AOC2267 | 2267W            | 1920x1080 | 21.7 | 2013 | [4B71F8E02B33](<Digital/AOC/AOC2267/4B71F8E02B33>) |
 | AOC              | AOC2269 | 2269W            | 1920x1080 | 21.7 | 2018 | [64BFA35C6C30](<Digital/AOC/AOC2269/64BFA35C6C30>) |
@@ -315,6 +323,7 @@ model and ID.
 | AOC              | AOC2269 | 2269WM           | 1920x1080 | 21.7 | 2014 | [1727E67E0F4A](<Digital/AOC/AOC2269/1727E67E0F4A>) |
 | AOC              | AOC2269 | 2269W            | 1920x1080 | 21.7 | 2013 | [00FF2AEF65E7](<Digital/AOC/AOC2269/00FF2AEF65E7>) |
 | AOC              | AOC2269 | 2269WM           | 1920x1080 | 21.7 |      | [26216C3C3A24](<Digital/AOC/AOC2269/26216C3C3A24>) |
+| AOC              | AOC2270 | 2270W            | 1920x1080 | 21.7 | 2022 | [F56540A9ED68](<Digital/AOC/AOC2270/F56540A9ED68>) |
 | AOC              | AOC2270 | 2270W            | 1920x1080 | 21.7 | 2021 | [6EEC87BA48C2](<Digital/AOC/AOC2270/6EEC87BA48C2>) |
 | AOC              | AOC2270 | 2270W            | 1920x1080 | 21.7 | 2020 | [0235133153AA](<Digital/AOC/AOC2270/0235133153AA>) |
 | AOC              | AOC2270 | 2270W            | 1920x1080 | 21.7 | 2019 | [04E52ED86313](<Digital/AOC/AOC2270/04E52ED86313>) |
@@ -322,7 +331,7 @@ model and ID.
 | AOC              | AOC2270 | 2270W            | 1920x1080 | 21.7 | 2017 | [0D202C3814A4](<Digital/AOC/AOC2270/0D202C3814A4>) |
 | AOC              | AOC2270 | 2270W            | 1920x1080 | 21.7 | 2016 | [2A0F1B260384](<Digital/AOC/AOC2270/2A0F1B260384>) |
 | AOC              | AOC2270 | 2270W            | 1920x1080 | 21.7 | 2015 | [000FDC582001](<Digital/AOC/AOC2270/000FDC582001>) |
-| AOC              | AOC2270 | 2270W            | 1920x1080 | 21.7 | 2014 | [6A094F01FD8B](<Digital/AOC/AOC2270/6A094F01FD8B>) |
+| AOC              | AOC2270 | 2270W            | 1920x1080 | 21.7 | 2014 | [39219EE9D415](<Digital/AOC/AOC2270/39219EE9D415>) |
 | AOC              | AOC2270 | 2270W            | 1920x1080 | 21.7 | 2013 | [94F3B2F32234](<Digital/AOC/AOC2270/94F3B2F32234>) |
 | AOC              | AOC2270 | 2270W            | 1920x1080 | 21.7 |      | [872A1BF8CD0F](<Digital/AOC/AOC2270/872A1BF8CD0F>) |
 | AOC              | AOC2271 | 2270W            | 1920x1080 | 21.7 | 2018 | [A24978969DB1](<Digital/AOC/AOC2271/A24978969DB1>) |
@@ -335,7 +344,7 @@ model and ID.
 | AOC              | AOC2276 | 2276W            | 1920x1080 | 21.7 | 2016 | [1820AA5FD320](<Digital/AOC/AOC2276/1820AA5FD320>) |
 | AOC              | AOC2276 | 2276WM           | 1920x1080 | 21.7 | 2015 | [50A92D2C899E](<Digital/AOC/AOC2276/50A92D2C899E>) |
 | AOC              | AOC2276 | 2276W            | 1920x1080 | 21.7 | 2014 | [21BF2981EFB5](<Digital/AOC/AOC2276/21BF2981EFB5>) |
-| AOC              | AOC2279 | 2279W            | 1920x1080 | 21.7 | 2018 | [3DC85475060B](<Digital/AOC/AOC2279/3DC85475060B>) |
+| AOC              | AOC2279 | 2279WH           | 1920x1080 | 21.7 | 2018 | [2A94A067BC70](<Digital/AOC/AOC2279/2A94A067BC70>) |
 | AOC              | AOC2279 | 2279WH           | 1920x1080 | 21.7 | 2017 | [1FE55DA6C52D](<Digital/AOC/AOC2279/1FE55DA6C52D>) |
 | AOC              | AOC2279 | 2279W            | 1920x1080 | 21.7 | 2016 | [BC8A5231BD58](<Digital/AOC/AOC2279/BC8A5231BD58>) |
 | AOC              | AOC2279 | 2279WH           | 1920x1080 | 21.7 |      | [02BC79849D16](<Digital/AOC/AOC2279/02BC79849D16>) |
@@ -348,6 +357,7 @@ model and ID.
 | AOC              | AOC2281 | 2281W            | 1920x1080 | 21.7 | 2016 | [37A8540D3450](<Digital/AOC/AOC2281/37A8540D3450>) |
 | AOC              | AOC2298 | L22W981          | 1680x1050 | 21.7 | 2008 | [BF30E4A866E4](<Digital/AOC/AOC2298/BF30E4A866E4>) |
 | AOC              | AOC2301 | 23E1WX           | 1920x1200 | 22.6 | 2019 | [9C3B9830A32D](<Digital/AOC/AOC2301/9C3B9830A32D>) |
+| AOC              | AOC2301 | 23E1WX           | 1920x1200 | 22.6 | 2018 | [8CAD8F985EEE](<Digital/AOC/AOC2301/8CAD8F985EEE>) |
 | AOC              | AOC2330 | 2330V            | 1920x1080 | 21.1 | 2010 | [07962BAA3515](<Digital/AOC/AOC2330/07962BAA3515>) |
 | AOC              | AOC2330 | 2330V            | 1920x1080 | 21.1 | 2009 | [2B886F0F1FE5](<Digital/AOC/AOC2330/2B886F0F1FE5>) |
 | AOC              | AOC2341 | 2341             | 1920x1080 | 21.7 | 2010 | [29E90DDC7EE3](<Digital/AOC/AOC2341/29E90DDC7EE3>) |
@@ -372,7 +382,7 @@ model and ID.
 | AOC              | AOC2360 | 2360             | 1920x1080 | 23.1 | 2013 | [03ED08285F38](<Digital/AOC/AOC2360/03ED08285F38>) |
 | AOC              | AOC2367 | 2367             | 1920x1080 | 23.1 | 2017 | [8CB54F7FEA21](<Digital/AOC/AOC2367/8CB54F7FEA21>) |
 | AOC              | AOC2367 | 2367             | 1920x1080 | 23.1 | 2016 | [48ADAA63415C](<Digital/AOC/AOC2367/48ADAA63415C>) |
-| AOC              | AOC2367 | 2367             | 1920x1080 | 23.1 | 2014 | [04505DE0232C](<Digital/AOC/AOC2367/04505DE0232C>) |
+| AOC              | AOC2367 | 2367             | 1920x1080 | 23.1 | 2014 | [00F996160AE9](<Digital/AOC/AOC2367/00F996160AE9>) |
 | AOC              | AOC2367 | 2367             | 1920x1080 | 23.1 | 2013 | [131234BFE6AA](<Digital/AOC/AOC2367/131234BFE6AA>) |
 | AOC              | AOC2367 | 2367             | 1920x1080 | 23.1 | 2012 | [9CDCB8C62CE7](<Digital/AOC/AOC2367/9CDCB8C62CE7>) |
 | AOC              | AOC2369 | 2369             | 1920x1080 | 23.1 | 2019 | [0407A6814774](<Digital/AOC/AOC2369/0407A6814774>) |
@@ -384,7 +394,7 @@ model and ID.
 | AOC              | AOC2369 | 2369M            | 1920x1080 | 23.1 | 2013 | [0355B652A7EC](<Digital/AOC/AOC2369/0355B652A7EC>) |
 | AOC              | AOC2369 | 2369M            | 1920x1080 | 23.1 |      | [23833EF8B599](<Digital/AOC/AOC2369/23833EF8B599>) |
 | AOC              | AOC2370 | 2370             | 1920x1080 | 23.1 | 2014 | [A1FEBFBC0962](<Digital/AOC/AOC2370/A1FEBFBC0962>) |
-| AOC              | AOC2370 | 2370             | 1920x1080 | 23.1 | 2013 | [AF52B83A0CA0](<Digital/AOC/AOC2370/AF52B83A0CA0>) |
+| AOC              | AOC2370 | 2370             | 1920x1080 | 23.1 | 2013 | [94F4ED062C6F](<Digital/AOC/AOC2370/94F4ED062C6F>) |
 | AOC              | AOC2375 | 2375             | 1920x1080 | 23.1 | 2017 | [7A5976462D4A](<Digital/AOC/AOC2375/7A5976462D4A>) |
 | AOC              | AOC2379 | 2379H            | 1920x1080 | 23.1 | 2018 | [F2A1B8554130](<Digital/AOC/AOC2379/F2A1B8554130>) |
 | AOC              | AOC2379 | 2379H            | 1920x1080 | 23.1 |      | [53620ED2E10E](<Digital/AOC/AOC2379/53620ED2E10E>) |
@@ -399,27 +409,31 @@ model and ID.
 | AOC              | AOC2401 | 24G1WG4          | 1920x1080 | 23.4 | 2020 | [02C50D163D00](<Digital/AOC/AOC2401/02C50D163D00>) |
 | AOC              | AOC2401 | 24B1W1           | 1920x1080 | 24.0 | 2020 | [07EDD6748C6E](<Digital/AOC/AOC2401/07EDD6748C6E>) |
 | AOC              | AOC2401 | Q24P1W1          | 2560x1440 | 24.0 | 2020 | [1AFCA13D72F3](<Digital/AOC/AOC2401/1AFCA13D72F3>) |
+| AOC              | AOC2401 | 24P1X            | 1920x1200 | 24.0 | 2020 | [4846EA379716](<Digital/AOC/AOC2401/4846EA379716>) |
 | AOC              | AOC2401 | 24G1WG4          | 1920x1080 | 23.4 | 2019 | [02000D8DE292](<Digital/AOC/AOC2401/02000D8DE292>) |
 | AOC              | AOC2401 | 24P1W1           | 1920x1080 | 24.0 | 2019 | [0D41258B5180](<Digital/AOC/AOC2401/0D41258B5180>) |
 | AOC              | AOC2401 | 24P1X            | 1920x1200 | 24.0 | 2019 | [0F149BD29C4C](<Digital/AOC/AOC2401/0F149BD29C4C>) |
 | AOC              | AOC2401 | Q2401W1          | 2560x1440 | 24.0 | 2019 | [405E4A30B5B3](<Digital/AOC/AOC2401/405E4A30B5B3>) |
 | AOC              | AOC2401 | 24P1X            | 1920x1200 | 24.0 | 2018 | [035D5DE401C1](<Digital/AOC/AOC2401/035D5DE401C1>) |
-| AOC              | AOC2401 | 24G1WG4          | 1920x1080 | 23.4 | 2018 | [30B1951FF4BB](<Digital/AOC/AOC2401/30B1951FF4BB>) |
+| AOC              | AOC2401 | 24B1W            | 1920x1080 | 23.4 | 2018 | [0368D9D89593](<Digital/AOC/AOC2401/0368D9D89593>) |
 | AOC              | AOC2401 | 24B1W1           | 1920x1080 | 24.0 |      | [010C5935A5A5](<Digital/AOC/AOC2401/010C5935A5A5>) |
 | AOC              | AOC2401 | 24G1WG4          | 1920x1080 | 23.4 |      | [0E66FC9D1C99](<Digital/AOC/AOC2401/0E66FC9D1C99>) |
 | AOC              | AOC2402 | 24B2W1F1         | 1920x1080 | 24.0 | 2022 | [1460B6AAACB6](<Digital/AOC/AOC2402/1460B6AAACB6>) |
 | AOC              | AOC2402 | 24G2WG3-         | 1920x1080 | 23.4 | 2022 | [375DED8E54D4](<Digital/AOC/AOC2402/375DED8E54D4>) |
 | AOC              | AOC2402 | 24G2W1G4         | 1920x1080 | 24.0 | 2021 | [009F7481224D](<Digital/AOC/AOC2402/009F7481224D>) |
 | AOC              | AOC2402 | Q24P2W1          | 2560x1440 | 24.0 | 2021 | [1FCE67C174AE](<Digital/AOC/AOC2402/1FCE67C174AE>) |
-| AOC              | AOC2402 | 24G2WG3-         | 1920x1080 | 23.4 | 2021 | [3A4FD3D4EDEE](<Digital/AOC/AOC2402/3A4FD3D4EDEE>) |
+| AOC              | AOC2402 | 24G2WG3-         | 1920x1080 | 23.4 | 2021 | [2A3DCB479A31](<Digital/AOC/AOC2402/2A3DCB479A31>) |
 | AOC              | AOC2402 | 24B2W1           | 1920x1080 | 24.0 | 2020 | [022F22520393](<Digital/AOC/AOC2402/022F22520393>) |
 | AOC              | AOC2402 | 24G2WG3-         | 1920x1080 | 23.4 | 2020 | [029E6C5BDB4B](<Digital/AOC/AOC2402/029E6C5BDB4B>) |
 | AOC              | AOC2402 | 24G2W1G4         | 1920x1080 | 24.0 | 2019 | [0588B8862EBE](<Digital/AOC/AOC2402/0588B8862EBE>) |
-| AOC              | AOC2402 | 24V2W1G5         | 1920x1080 | 24.0 | 2018 | [760284B194B3](<Digital/AOC/AOC2402/760284B194B3>) |
+| AOC              | AOC2402 | 24V2W1G5         | 1920x1080 | 24.0 | 2018 | [0E09584267F0](<Digital/AOC/AOC2402/0E09584267F0>) |
 | AOC              | AOC2402 | 24G2W1G4         | 1920x1080 | 24.0 |      | [06CB835CC2AB](<Digital/AOC/AOC2402/06CB835CC2AB>) |
+| AOC              | AOC2403 | 24B3HM           | 1920x1080 | 24.0 | 2023 | [79BA25A086CD](<Digital/AOC/AOC2403/79BA25A086CD>) |
+| AOC              | AOC2404 | Q24V4W1G5        | 2560x1440 | 24.0 | 2021 | [10B4BA1C2A27](<Digital/AOC/AOC2404/10B4BA1C2A27>) |
 | AOC              | AOC2404 | Q24V4W1G5        | 2560x1440 | 24.0 | 2020 | [774673E5329B](<Digital/AOC/AOC2404/774673E5329B>) |
 | AOC              | AOC2407 | LE24H037         | 1920x1080 | 23.4 | 2010 | [A6751917618F](<Digital/AOC/AOC2407/A6751917618F>) |
 | AOC              | AOC2407 | LE24H037         | 1920x1080 | 23.4 |      | [E3496300FAAA](<Digital/AOC/AOC2407/E3496300FAAA>) |
+| AOC              | AOC2410 | AG241QG4         | 2560x1440 | 26.1 | 2019 | [EF827EEE8ACF](<Digital/AOC/AOC2410/EF827EEE8ACF>) |
 | AOC              | AOC2410 | AG241QG4         | 2560x1440 | 24.0 | 2019 | [F9822CCA619B](<Digital/AOC/AOC2410/F9822CCA619B>) |
 | AOC              | AOC2410 | AG241QG4         | 2560x1440 | 24.0 | 2018 | [0C8ABC4C66EC](<Digital/AOC/AOC2410/0C8ABC4C66EC>) |
 | AOC              | AOC2410 | AG241QG4         | 2560x1440 | 26.1 | 2018 | [5C7B1064BF49](<Digital/AOC/AOC2410/5C7B1064BF49>) |
@@ -429,11 +443,12 @@ model and ID.
 | AOC              | AOC2410 | AG241QG4         | 2560x1440 | 26.1 | 2016 | [3E56D577FF7B](<Digital/AOC/AOC2410/3E56D577FF7B>) |
 | AOC              | AOC2410 | LE24H067         | 1920x1080 | 23.4 | 2010 | [334CCFC4BE26](<Digital/AOC/AOC2410/334CCFC4BE26>) |
 | AOC              | AOC2410 | AG241QG4         | 2560x1440 | 24.0 |      | [95C30A9BED98](<Digital/AOC/AOC2410/95C30A9BED98>) |
-| AOC              | AOC2413 | AG241QG          | 2560x1440 | 24.0 |      | [4DBA13A53ED8](<Digital/AOC/AOC2413/4DBA13A53ED8>) |
+| AOC              | AOC2413 | AG241QG          | 2560x1440 | 24.0 |      | [1B511AC7FC04](<Digital/AOC/AOC2413/1B511AC7FC04>) |
 | AOC              | AOC2416 | 2416             | 1920x1200 | 24.0 | 2009 | [AEF8C7F2286F](<Digital/AOC/AOC2416/AEF8C7F2286F>) |
 | AOC              | AOC2421 | 2421W            | 1920x1080 | 23.4 | 2014 | [A1B88148BDA9](<Digital/AOC/AOC2421/A1B88148BDA9>) |
 | AOC              | AOC2425 | 2425W            | 1920x1080 | 23.4 | 2015 | [1DC6C3DFD789](<Digital/AOC/AOC2425/1DC6C3DFD789>) |
 | AOC              | AOC2425 | 2425W            | 1920x1080 | 23.4 | 2014 | [EE76E90B9135](<Digital/AOC/AOC2425/EE76E90B9135>) |
+| AOC              | AOC2429 | 2429W            | 1920x1080 | 23.4 | 2017 | [8314C7EB656E](<Digital/AOC/AOC2429/8314C7EB656E>) |
 | AOC              | AOC2429 | 2429W            | 1920x1080 | 23.4 | 2016 | [2D18F40425DB](<Digital/AOC/AOC2429/2D18F40425DB>) |
 | AOC              | AOC2434 | 2434             | 1920x1080 | 23.4 | 2010 | [B4619E858A39](<Digital/AOC/AOC2434/B4619E858A39>) |
 | AOC              | AOC2434 | 2434             | 1920x1080 | 23.4 | 2009 | [AD8FD6DC501B](<Digital/AOC/AOC2434/AD8FD6DC501B>) |
@@ -446,7 +461,7 @@ model and ID.
 | AOC              | AOC2440 | 2440             | 1920x1080 | 24.0 | 2010 | [B3443B0DEA86](<Digital/AOC/AOC2440/B3443B0DEA86>) |
 | AOC              | AOC2442 | T2442e           | 1920x1080 | 21.7 | 2010 | [730C1AEE0182](<Digital/AOC/AOC2442/730C1AEE0182>) |
 | AOC              | AOC2442 | T2442e           | 1920x1080 | 21.7 |      | [548DD9D9012C](<Digital/AOC/AOC2442/548DD9D9012C>) |
-| AOC              | AOC2450 | 2450W            | 1920x1080 | 23.4 | 2016 | [FACA7A03F787](<Digital/AOC/AOC2450/FACA7A03F787>) |
+| AOC              | AOC2450 | 2450W            | 1920x1080 | 23.4 | 2016 | [B51A227E1BC0](<Digital/AOC/AOC2450/B51A227E1BC0>) |
 | AOC              | AOC2450 | 2450W            | 1920x1080 | 23.4 | 2015 | [9DFA3CC45A7D](<Digital/AOC/AOC2450/9DFA3CC45A7D>) |
 | AOC              | AOC2450 | 2450W            | 1920x1080 | 23.4 | 2013 | [010D0FC726A3](<Digital/AOC/AOC2450/010D0FC726A3>) |
 | AOC              | AOC2450 | 2450W            | 1920x1080 | 23.4 | 2012 | [40584458C6F9](<Digital/AOC/AOC2450/40584458C6F9>) |
@@ -455,7 +470,7 @@ model and ID.
 | AOC              | AOC2460 | 2460G4           | 1920x1080 | 24.0 | 2018 | [37D68C4C647D](<Digital/AOC/AOC2460/37D68C4C647D>) |
 | AOC              | AOC2460 | 2460G4           | 1920x1080 | 24.0 | 2017 | [01CCD3951622](<Digital/AOC/AOC2460/01CCD3951622>) |
 | AOC              | AOC2460 | 2460G5           | 1920x1080 | 24.0 | 2016 | [02A0E7D75545](<Digital/AOC/AOC2460/02A0E7D75545>) |
-| AOC              | AOC2460 | 2460             | 1920x1080 | 24.0 | 2015 | [1719284F1B8C](<Digital/AOC/AOC2460/1719284F1B8C>) |
+| AOC              | AOC2460 | 2460G4           | 1920x1080 | 24.0 | 2015 | [0559CFCA5CE1](<Digital/AOC/AOC2460/0559CFCA5CE1>) |
 | AOC              | AOC2460 | 2460X            | 1920x1200 | 24.0 | 2015 | [B0C318F7C324](<Digital/AOC/AOC2460/B0C318F7C324>) |
 | AOC              | AOC2460 | G2460            | 1920x1080 | 24.0 | 2014 | [4B0C58DD3D3A](<Digital/AOC/AOC2460/4B0C58DD3D3A>) |
 | AOC              | AOC2460 | 2460X            | 1920x1200 | 24.0 | 2014 | [4BF11F72C794](<Digital/AOC/AOC2460/4BF11F72C794>) |
@@ -487,7 +502,7 @@ model and ID.
 | AOC              | AOC2470 | 2470W            | 1920x1080 | 23.4 | 2016 | [0733BA2A625F](<Digital/AOC/AOC2470/0733BA2A625F>) |
 | AOC              | AOC2470 | 2470W            | 1920x1080 | 23.4 | 2015 | [03A945D2FA94](<Digital/AOC/AOC2470/03A945D2FA94>) |
 | AOC              | AOC2470 | 2470W            | 1920x1080 | 23.4 | 2014 | [255D3EF98809](<Digital/AOC/AOC2470/255D3EF98809>) |
-| AOC              | AOC2470 | 2470W1M          | 1920x1080 | 24.0 | 2014 | [9BA2A0599BAA](<Digital/AOC/AOC2470/9BA2A0599BAA>) |
+| AOC              | AOC2470 | 2470W1M          | 1920x1080 | 24.0 | 2014 | [7A0081BAF1EB](<Digital/AOC/AOC2470/7A0081BAF1EB>) |
 | AOC              | AOC2470 | 2470W            | 1920x1080 | 23.4 | 2013 | [431257189C2B](<Digital/AOC/AOC2470/431257189C2B>) |
 | AOC              | AOC2470 | 2470W            | 1920x1080 | 23.4 |      | [1AE1BBC27110](<Digital/AOC/AOC2470/1AE1BBC27110>) |
 | AOC              | AOC2471 | 2471M            | 1920x1080 | 24.0 | 2013 | [58D6B8516F4B](<Digital/AOC/AOC2471/58D6B8516F4B>) |
@@ -505,11 +520,12 @@ model and ID.
 | AOC              | AOC2475 | 2475W1           | 1920x1080 | 24.0 | 2015 | [1BA2CF428C9D](<Digital/AOC/AOC2475/1BA2CF428C9D>) |
 | AOC              | AOC2475 | 2475W            | 1920x1080 | 23.4 |      | [28CF7DCE3B3C](<Digital/AOC/AOC2475/28CF7DCE3B3C>) |
 | AOC              | AOC2476 | 2476WM           | 1920x1080 | 23.4 | 2017 | [090297A3906F](<Digital/AOC/AOC2476/090297A3906F>) |
-| AOC              | AOC2476 | 2476WM           | 1920x1080 | 23.4 | 2016 | [1B5DF4474939](<Digital/AOC/AOC2476/1B5DF4474939>) |
-| AOC              | AOC2476 | 2476WM           | 1920x1080 | 23.4 | 2015 | [3AAE040F8EAF](<Digital/AOC/AOC2476/3AAE040F8EAF>) |
+| AOC              | AOC2476 | 2476WM           | 1920x1080 | 23.4 | 2016 | [0E0A640ED04C](<Digital/AOC/AOC2476/0E0A640ED04C>) |
+| AOC              | AOC2476 | 2476WM           | 1920x1080 | 23.4 | 2015 | [304928812717](<Digital/AOC/AOC2476/304928812717>) |
 | AOC              | AOC2476 | 2476WM           | 1920x1080 | 23.4 | 2014 | [12902DBC9AAD](<Digital/AOC/AOC2476/12902DBC9AAD>) |
 | AOC              | AOC2477 | 2477W1M          | 1920x1080 | 24.0 | 2017 | [AB6342902DE4](<Digital/AOC/AOC2477/AB6342902DE4>) |
 | AOC              | AOC2477 | U2477WM          | 3840x2160 | 23.4 | 2016 | [DCA476AA8250](<Digital/AOC/AOC2477/DCA476AA8250>) |
+| AOC              | AOC2479 | 2479W1           | 1920x1080 | 24.0 | 2009 | [0641C2B0970F](<Digital/AOC/AOC2479/0641C2B0970F>) |
 | AOC              | AOC2480 | 2480W1           | 1920x1080 | 24.0 | 2019 | [80767E1C47A0](<Digital/AOC/AOC2480/80767E1C47A0>) |
 | AOC              | AOC2480 | 2480W1           | 1920x1080 | 24.0 | 2018 | [E4D415F35974](<Digital/AOC/AOC2480/E4D415F35974>) |
 | AOC              | AOC2480 | 2480W1           | 1920x1080 | 24.0 | 2017 | [4C018258E5AD](<Digital/AOC/AOC2480/4C018258E5AD>) |
@@ -529,6 +545,7 @@ model and ID.
 | AOC              | AOC2495 | 2495             | 1920x1080 | 24.0 | 2014 | [5D0011DB0B4F](<Digital/AOC/AOC2495/5D0011DB0B4F>) |
 | AOC              | AOC2495 | 2495             | 1920x1080 | 24.0 | 2013 | [5249F9688DB1](<Digital/AOC/AOC2495/5249F9688DB1>) |
 | AOC              | AOC2495 | 2495             | 1920x1080 | 24.0 | 2012 | [B3A29BCA00D5](<Digital/AOC/AOC2495/B3A29BCA00D5>) |
+| AOC              | AOC2510 | AG251F1WG2       | 1920x1080 | 24.3 | 2020 | [C88613FF0DBB](<Digital/AOC/AOC2510/C88613FF0DBB>) |
 | AOC              | AOC2510 | AG251FWG2        | 1920x1080 | 24.3 | 2019 | [7A309AC70316](<Digital/AOC/AOC2510/7A309AC70316>) |
 | AOC              | AOC2510 | AG251FWG2        | 1920x1080 | 24.3 | 2018 | [88B58B50AF78](<Digital/AOC/AOC2510/88B58B50AF78>) |
 | AOC              | AOC2510 | AG251FWG2        | 1920x1080 | 24.3 | 2017 | [108F9419906A](<Digital/AOC/AOC2510/108F9419906A>) |
@@ -540,45 +557,51 @@ model and ID.
 | AOC              | AOC2590 | 2590G5           | 1920x1080 | 24.3 | 2021 | [24512CCD0580](<Digital/AOC/AOC2590/24512CCD0580>) |
 | AOC              | AOC2590 | 2590G4           | 1920x1080 | 24.3 | 2020 | [1629C3309ABF](<Digital/AOC/AOC2590/1629C3309ABF>) |
 | AOC              | AOC2590 | 2590G5           | 1920x1080 | 24.3 | 2019 | [0E4790DFC944](<Digital/AOC/AOC2590/0E4790DFC944>) |
-| AOC              | AOC2590 | 2590G4           | 1920x1080 | 24.3 | 2018 | [0BED37D77725](<Digital/AOC/AOC2590/0BED37D77725>) |
+| AOC              | AOC2590 | 2590G4           | 1920x1080 | 24.3 | 2018 | [0B661E49A797](<Digital/AOC/AOC2590/0B661E49A797>) |
 | AOC              | AOC2590 | 2590G4           | 1920x1080 | 24.3 |      | [24BB3DA086C8](<Digital/AOC/AOC2590/24BB3DA086C8>) |
 | AOC              | AOC2615 | LE26W154         | 1360x768  | 26.1 | 2011 | [1438E5780CBE](<Digital/AOC/AOC2615/1438E5780CBE>) |
 | AOC              | AOC2615 | LE26W154         | 1920x1080 | 26.1 |      | [93F2FCDAF80F](<Digital/AOC/AOC2615/93F2FCDAF80F>) |
 | AOC              | AOC2632 | L26W831A         | 1360x768  | 26.1 | 2009 | [B9753B9D6D84](<Digital/AOC/AOC2632/B9753B9D6D84>) |
 | AOC              | AOC2700 | 2700             | 1920x1080 | 27.2 | 2018 | [6865C5A0957F](<Digital/AOC/AOC2700/6865C5A0957F>) |
 | AOC              | AOC2701 | Q27T1G5          | 2560x1440 | 27.2 | 2022 | [7B7CB5EF1C5B](<Digital/AOC/AOC2701/7B7CB5EF1C5B>) |
-| AOC              | AOC2701 | Q27P1B           | 2560x1440 | 27.2 | 2021 | [4A065EFAC40C](<Digital/AOC/AOC2701/4A065EFAC40C>) |
+| AOC              | AOC2701 | Q27P1B           | 2560x1440 | 27.2 | 2021 | [03676EB9B3C5](<Digital/AOC/AOC2701/03676EB9B3C5>) |
 | AOC              | AOC2701 | 27B1             | 1920x1080 | 27.2 | 2020 | [10863D73695F](<Digital/AOC/AOC2701/10863D73695F>) |
 | AOC              | AOC2701 | Q27P1B           | 2560x1440 | 27.2 | 2020 | [1B9BEB891B30](<Digital/AOC/AOC2701/1B9BEB891B30>) |
-| AOC              | AOC2701 | 27G1G4           | 1920x1080 | 27.2 | 2019 | [09E2975B7877](<Digital/AOC/AOC2701/09E2975B7877>) |
+| AOC              | AOC2701 | 27G1G4           | 1920x1080 | 27.2 | 2019 | [0233611BEE5F](<Digital/AOC/AOC2701/0233611BEE5F>) |
 | AOC              | AOC2701 | Q27G1WG4         | 2560x1440 | 27.2 | 2019 | [0E44E7ED75A8](<Digital/AOC/AOC2701/0E44E7ED75A8>) |
 | AOC              | AOC2701 | U2701B           | 3840x2160 | 27.2 | 2019 | [4A3F6539AF60](<Digital/AOC/AOC2701/4A3F6539AF60>) |
 | AOC              | AOC2701 | 27B1             | 1920x1080 | 27.2 | 2018 | [0693CAB465EF](<Digital/AOC/AOC2701/0693CAB465EF>) |
-| AOC              | AOC2701 | Q27P1B           | 2560x1440 | 27.2 | 2018 | [5CE441B42759](<Digital/AOC/AOC2701/5CE441B42759>) |
+| AOC              | AOC2701 | Q27P1B           | 2560x1440 | 27.2 | 2018 | [50507E824590](<Digital/AOC/AOC2701/50507E824590>) |
 | AOC              | AOC2701 | Q27G1WG4         | 2560x1440 | 27.2 |      | [07819F5B3794](<Digital/AOC/AOC2701/07819F5B3794>) |
 | AOC              | AOC2701 | 27B1             | 1920x1080 | 27.2 |      | [16C45595C85E](<Digital/AOC/AOC2701/16C45595C85E>) |
 | AOC              | AOC2702 | Q27G2G3R3B       | 2560x1440 | 27.2 | 2022 | [03AB1DD378FF](<Digital/AOC/AOC2702/03AB1DD378FF>) |
-| AOC              | AOC2702 | 27G2G3           | 1920x1080 | 27.2 | 2022 | [400706581FF5](<Digital/AOC/AOC2702/400706581FF5>) |
-| AOC              | AOC2702 | 27G2G4           | 1920x1080 | 27.2 | 2021 | [047B790CD39D](<Digital/AOC/AOC2702/047B790CD39D>) |
-| AOC              | AOC2702 | Q27G2WG4         | 2560x1440 | 27.2 | 2021 | [168C42B17E72](<Digital/AOC/AOC2702/168C42B17E72>) |
+| AOC              | AOC2702 | 27B2G5           | 1920x1080 | 27.2 | 2022 | [24B23ED78110](<Digital/AOC/AOC2702/24B23ED78110>) |
+| AOC              | AOC2702 | 27G2WG3-         | 1920x1080 | 27.2 | 2021 | [0217693E97C9](<Digital/AOC/AOC2702/0217693E97C9>) |
+| AOC              | AOC2702 | Q27G2WG4         | 2560x1440 | 27.2 | 2021 | [0E84A57A9115](<Digital/AOC/AOC2702/0E84A57A9115>) |
 | AOC              | AOC2702 | Q27G2WG4         | 2560x1440 | 27.2 | 2020 | [01C64328FAD3](<Digital/AOC/AOC2702/01C64328FAD3>) |
-| AOC              | AOC2702 | 27G2G5           | 1920x1080 | 27.2 | 2020 | [0D04538C7B1F](<Digital/AOC/AOC2702/0D04538C7B1F>) |
-| AOC              | AOC2702 | U27P2G6B         | 3840x2160 | 27.2 | 2020 | [5AFF14FDF471](<Digital/AOC/AOC2702/5AFF14FDF471>) |
+| AOC              | AOC2702 | 27B2             | 1920x1080 | 27.2 | 2020 | [02799AE4890E](<Digital/AOC/AOC2702/02799AE4890E>) |
+| AOC              | AOC2702 | U27P2G6B         | 3840x2160 | 27.2 | 2020 | [0DF33EBAD1CF](<Digital/AOC/AOC2702/0DF33EBAD1CF>) |
 | AOC              | AOC2702 | 27G2G5           | 1920x1080 | 27.2 | 2019 | [0C6B70A532B1](<Digital/AOC/AOC2702/0C6B70A532B1>) |
 | AOC              | AOC2702 | Q27G2WG4         | 2560x1440 | 27.2 | 2019 | [33E6BACEBFB7](<Digital/AOC/AOC2702/33E6BACEBFB7>) |
 | AOC              | AOC2702 | 27V2G5           | 1920x1080 | 27.2 | 2018 | [44F6958F69F4](<Digital/AOC/AOC2702/44F6958F69F4>) |
 | AOC              | AOC2702 | 27V2G5           | 1920x1080 | 27.2 |      | [47A524675836](<Digital/AOC/AOC2702/47A524675836>) |
 | AOC              | AOC2702 | Q27G2G4          | 2560x1440 | 27.2 |      | [746C7FB7F2F6](<Digital/AOC/AOC2702/746C7FB7F2F6>) |
+| AOC              | AOC2703 | 27N3G5           | 1920x1080 | 27.2 | 2021 | [E9AD23CEC0B2](<Digital/AOC/AOC2703/E9AD23CEC0B2>) |
 | AOC              | AOC2703 | U27V3B           | 3840x2160 | 27.2 | 2019 | [8256095D2FCC](<Digital/AOC/AOC2703/8256095D2FCC>) |
+| AOC              | AOC2704 | U27V4G6B         | 3840x2160 | 27.2 | 2021 | [9329133B1FC1](<Digital/AOC/AOC2704/9329133B1FC1>) |
+| AOC              | AOC2704 | 27G2G3           | 1920x1080 | 27.2 | 2020 | [C74874F78C19](<Digital/AOC/AOC2704/C74874F78C19>) |
 | AOC              | AOC2710 | AG271QG4         | 2560x1440 | 27.2 | 2018 | [062CACF6879D](<Digital/AOC/AOC2710/062CACF6879D>) |
 | AOC              | AOC2710 | AG271QG4         | 2560x1440 | 27.2 | 2017 | [2D94869DFB66](<Digital/AOC/AOC2710/2D94869DFB66>) |
 | AOC              | AOC2710 | PD271F           | 1920x1080 | 27.2 | 2017 | [A5103437345E](<Digital/AOC/AOC2710/A5103437345E>) |
 | AOC              | AOC2710 | AG271QG4         | 2560x1440 | 27.2 | 2016 | [3DC0DC67BC3D](<Digital/AOC/AOC2710/3DC0DC67BC3D>) |
 | AOC              | AOC2710 | AG271QG4         | 2560x1440 | 27.2 |      | [0CBC2B439AD0](<Digital/AOC/AOC2710/0CBC2B439AD0>) |
 | AOC              | AOC2713 | AG271QG          | 2560x1440 | 27.2 | 2016 | [73B0D141B68A](<Digital/AOC/AOC2713/73B0D141B68A>) |
-| AOC              | AOC2713 | AG271QG          | 2560x1440 | 27.2 |      | [24B3C18A670C](<Digital/AOC/AOC2713/24B3C18A670C>) |
+| AOC              | AOC2713 | AG271QG          | 2560x1440 | 27.2 |      | [038031831C7A](<Digital/AOC/AOC2713/038031831C7A>) |
+| AOC              | AOC2716 | AG271UG          | 3840x2160 | 27.2 |      | [281114733F05](<Digital/AOC/AOC2716/281114733F05>) |
 | AOC              | AOC2720 | AG272QG4         | 2560x1440 | 27.2 | 2018 | [BAB3A807A9E1](<Digital/AOC/AOC2720/BAB3A807A9E1>) |
+| AOC              | AOC2720 | AG272FG4         | 1920x1080 | 27.2 | 2017 | [A5C863B3F987](<Digital/AOC/AOC2720/A5C863B3F987>) |
 | AOC              | AOC2727 | 2727             | 1920x1080 | 27.2 | 2016 | [74BE8B27ACF4](<Digital/AOC/AOC2727/74BE8B27ACF4>) |
+| AOC              | AOC2730 | AG273QG3R3B      | 2560x1440 | 27.2 | 2021 | [1727BB42DFFA](<Digital/AOC/AOC2730/1727BB42DFFA>) |
 | AOC              | AOC2730 | AG273QS3R4       | 2560x1440 | 27.2 | 2020 | [463548962C70](<Digital/AOC/AOC2730/463548962C70>) |
 | AOC              | AOC2730 | AG273QS3R4       | 2560x1440 | 27.2 | 2019 | [2823FF6169FC](<Digital/AOC/AOC2730/2823FF6169FC>) |
 | AOC              | AOC2752 | 2752H            | 1920x1080 | 27.2 | 2016 | [18583A94BDC1](<Digital/AOC/AOC2752/18583A94BDC1>) |
@@ -588,8 +611,8 @@ model and ID.
 | AOC              | AOC2752 | 2752             | 1920x1080 | 26.5 | 2014 | [324DF0DBA7FB](<Digital/AOC/AOC2752/324DF0DBA7FB>) |
 | AOC              | AOC2752 | 2752H            | 1920x1080 | 27.2 | 2013 | [2DC0814A7FC0](<Digital/AOC/AOC2752/2DC0814A7FC0>) |
 | AOC              | AOC2752 | 2752             | 1920x1080 | 26.5 | 2013 | [3431FD1215DD](<Digital/AOC/AOC2752/3431FD1215DD>) |
+| AOC              | AOC2752 | 2752             | 1920x1080 | 26.5 | 2012 | [204C4571BF12](<Digital/AOC/AOC2752/204C4571BF12>) |
 | AOC              | AOC2752 | e2752Vq          | 1920x1080 | 27.2 | 2012 | [2A46C381557D](<Digital/AOC/AOC2752/2A46C381557D>) |
-| AOC              | AOC2752 | 2752             | 1920x1080 | 26.5 | 2012 | [C3D1A8599CBC](<Digital/AOC/AOC2752/C3D1A8599CBC>) |
 | AOC              | AOC2752 | 2752H            | 1920x1080 | 27.2 |      | [14CD9A2590D3](<Digital/AOC/AOC2752/14CD9A2590D3>) |
 | AOC              | AOC2752 | 2752             | 1920x1080 | 26.5 |      | [43582509D79A](<Digital/AOC/AOC2752/43582509D79A>) |
 | AOC              | AOC2757 | 2757             | 1920x1080 | 27.2 | 2016 | [03F3A99B0A49](<Digital/AOC/AOC2757/03F3A99B0A49>) |
@@ -607,7 +630,7 @@ model and ID.
 | AOC              | AOC2770 | 2770             | 1920x1080 | 27.2 | 2018 | [228F0FD36FD9](<Digital/AOC/AOC2770/228F0FD36FD9>) |
 | AOC              | AOC2770 | 2770             | 1920x1080 | 27.2 | 2017 | [212B8D39308D](<Digital/AOC/AOC2770/212B8D39308D>) |
 | AOC              | AOC2770 | 2770             | 1920x1080 | 27.2 | 2016 | [0145E9022487](<Digital/AOC/AOC2770/0145E9022487>) |
-| AOC              | AOC2770 | 2770M            | 1920x1080 | 27.2 | 2015 | [621DD837E595](<Digital/AOC/AOC2770/621DD837E595>) |
+| AOC              | AOC2770 | 2770G4           | 1920x1080 | 27.2 | 2015 | [002310B637A4](<Digital/AOC/AOC2770/002310B637A4>) |
 | AOC              | AOC2770 | 2770             | 1920x1080 | 27.2 | 2014 | [0B4400E21EE9](<Digital/AOC/AOC2770/0B4400E21EE9>) |
 | AOC              | AOC2770 | Q2770            | 2560x1440 | 27.2 | 2014 | [26C54A03D8BE](<Digital/AOC/AOC2770/26C54A03D8BE>) |
 | AOC              | AOC2770 | 2770             | 1920x1080 | 27.2 | 2013 | [286F13433DC1](<Digital/AOC/AOC2770/286F13433DC1>) |
@@ -617,9 +640,10 @@ model and ID.
 | AOC              | AOC2775 | 2775             | 1920x1080 | 27.2 | 2019 | [78B8597ABE9B](<Digital/AOC/AOC2775/78B8597ABE9B>) |
 | AOC              | AOC2775 | 2775             | 1920x1080 | 27.2 | 2018 | [01B6751AA75D](<Digital/AOC/AOC2775/01B6751AA75D>) |
 | AOC              | AOC2775 | Q2775            | 2560x1440 | 27.2 | 2017 | [3EA9E6D17EAC](<Digital/AOC/AOC2775/3EA9E6D17EAC>) |
-| AOC              | AOC2775 | 2775             | 1920x1080 | 27.2 | 2017 | [78E5C3B2CED6](<Digital/AOC/AOC2775/78E5C3B2CED6>) |
+| AOC              | AOC2775 | 2775             | 1920x1080 | 27.2 | 2017 | [3FCA787960B1](<Digital/AOC/AOC2775/3FCA787960B1>) |
 | AOC              | AOC2775 | 2775             | 1920x1080 | 27.2 | 2016 | [15220A35E756](<Digital/AOC/AOC2775/15220A35E756>) |
 | AOC              | AOC2775 | Q2775            | 2560x1440 | 27.2 | 2016 | [E22119089A71](<Digital/AOC/AOC2775/E22119089A71>) |
+| AOC              | AOC2777 | LV273HUPR        | 3840x2160 | 27.2 | 2020 | [1F424DB50498](<Digital/AOC/AOC2777/1F424DB50498>) |
 | AOC              | AOC2777 | U2777B           | 3840x2160 | 27.2 | 2019 | [151222897B34](<Digital/AOC/AOC2777/151222897B34>) |
 | AOC              | AOC2777 | U2777B           | 3840x2160 | 27.2 | 2018 | [51882349AC54](<Digital/AOC/AOC2777/51882349AC54>) |
 | AOC              | AOC2777 | U2777B           | 3840x2160 | 27.2 | 2017 | [5487C7A8ED98](<Digital/AOC/AOC2777/5487C7A8ED98>) |
@@ -633,6 +657,7 @@ model and ID.
 | AOC              | AOC2778 | 2778X            | 2560x1440 | 27.2 | 2017 | [0C828322FA95](<Digital/AOC/AOC2778/0C828322FA95>) |
 | AOC              | AOC2778 | 2778G5           | 1920x1080 | 27.2 | 2017 | [12E9A6C464BB](<Digital/AOC/AOC2778/12E9A6C464BB>) |
 | AOC              | AOC2778 | 2778G5           | 1920x1080 | 27.2 | 2016 | [5ED593E93C22](<Digital/AOC/AOC2778/5ED593E93C22>) |
+| AOC              | AOC2778 | 2778X            | 2560x1440 | 27.2 | 2016 | [60B477B0A732](<Digital/AOC/AOC2778/60B477B0A732>) |
 | AOC              | AOC2778 | 2778X            | 2560x1440 | 27.2 | 2014 | [0FB260031923](<Digital/AOC/AOC2778/0FB260031923>) |
 | AOC              | AOC2778 | 2778X            | 2560x1440 | 27.2 |      | [42542376E092](<Digital/AOC/AOC2778/42542376E092>) |
 | AOC              | AOC2778 | 2778G5           | 1920x1080 | 27.2 |      | [5C26985EDC36](<Digital/AOC/AOC2778/5C26985EDC36>) |
@@ -647,12 +672,14 @@ model and ID.
 | AOC              | AOC2781 | Q2781            | 2560x1440 | 27.2 | 2017 | [B9B72F685C16](<Digital/AOC/AOC2781/B9B72F685C16>) |
 | AOC              | AOC2781 | 2781             | 1920x1080 | 27.2 | 2016 | [166555529C7E](<Digital/AOC/AOC2781/166555529C7E>) |
 | AOC              | AOC2789 | Q2789            | 2560x1440 | 27.2 | 2017 | [6375BBED812E](<Digital/AOC/AOC2789/6375BBED812E>) |
+| AOC              | AOC2790 | U2790B           | 3840x2160 | 27.2 | 2022 | [5EA75A66A356](<Digital/AOC/AOC2790/5EA75A66A356>) |
 | AOC              | AOC2790 | Q2790            | 2560x1440 | 27.2 | 2022 | [B0DD5A0CE0FE](<Digital/AOC/AOC2790/B0DD5A0CE0FE>) |
 | AOC              | AOC2790 | U2790B           | 3840x2160 | 27.2 | 2021 | [026B75B08050](<Digital/AOC/AOC2790/026B75B08050>) |
 | AOC              | AOC2790 | G2790G4          | 1920x1080 | 27.2 | 2021 | [0907A4CE9B63](<Digital/AOC/AOC2790/0907A4CE9B63>) |
+| AOC              | AOC2790 | Q2790            | 2560x1440 | 27.2 | 2021 | [1672488ACB8E](<Digital/AOC/AOC2790/1672488ACB8E>) |
 | AOC              | AOC2790 | U2790B           | 3840x2160 | 27.2 | 2020 | [05C26BE92CE8](<Digital/AOC/AOC2790/05C26BE92CE8>) |
 | AOC              | AOC2790 | 2790G5           | 1920x1080 | 27.2 | 2020 | [05D09D3405BD](<Digital/AOC/AOC2790/05D09D3405BD>) |
-| AOC              | AOC2790 | Q2790            | 2560x1440 | 27.2 | 2020 | [51200C2F719C](<Digital/AOC/AOC2790/51200C2F719C>) |
+| AOC              | AOC2790 | Q2790            | 2560x1440 | 27.2 | 2020 | [2A4B51364435](<Digital/AOC/AOC2790/2A4B51364435>) |
 | AOC              | AOC2790 | U2790B           | 3840x2160 | 27.2 | 2019 | [4336D5E759B9](<Digital/AOC/AOC2790/4336D5E759B9>) |
 | AOC              | AOC2790 | 2790WG5          | 1920x1080 | 27.2 | 2019 | [A43ADD799837](<Digital/AOC/AOC2790/A43ADD799837>) |
 | AOC              | AOC2790 | Q2790            | 2560x1440 | 27.2 | 2019 | [E338472283FB](<Digital/AOC/AOC2790/E338472283FB>) |
@@ -665,21 +692,22 @@ model and ID.
 | AOC              | AOC2790 | Q2790            | 2560x1440 | 27.2 |      | [79E9B9444012](<Digital/AOC/AOC2790/79E9B9444012>) |
 | AOC              | AOC2795 | 2795E            | 1920x1080 | 27.2 | 2012 | [3A42DFDFEEDF](<Digital/AOC/AOC2795/3A42DFDFEEDF>) |
 | AOC              | AOC2795 | 2795E            | 1920x1080 | 27.2 | 2011 | [5F4C8C9F9E07](<Digital/AOC/AOC2795/5F4C8C9F9E07>) |
+| AOC              | AOC2802 | U28G2G6B         | 3840x2160 | 27.8 | 2022 | [92F24BB872C2](<Digital/AOC/AOC2802/92F24BB872C2>) |
 | AOC              | AOC2802 | U28P2G6B         | 3840x2160 | 27.8 | 2021 | [5ED9E446BC2C](<Digital/AOC/AOC2802/5ED9E446BC2C>) |
 | AOC              | AOC2802 | U28G2G6B         | 3840x2160 | 27.8 | 2020 | [8C0838DA7FE3](<Digital/AOC/AOC2802/8C0838DA7FE3>) |
 | AOC              | AOC2802 | U28G2E           | 3840x2160 | 27.8 |      | [951B4675D158](<Digital/AOC/AOC2802/951B4675D158>) |
 | AOC              | AOC2868 | U2868G6R3B       | 3840x2160 | 27.8 | 2019 | [086E55615A35](<Digital/AOC/AOC2868/086E55615A35>) |
 | AOC              | AOC2868 | U2868            | 3840x2160 | 27.8 | 2015 | [EC2C73C4AD31](<Digital/AOC/AOC2868/EC2C73C4AD31>) |
-| AOC              | AOC2868 | U2868            | 3840x2160 | 27.8 | 2014 | [A209F2E8F4FA](<Digital/AOC/AOC2868/A209F2E8F4FA>) |
+| AOC              | AOC2868 | U2868            | 3840x2160 | 27.8 | 2014 | [1FFD85A093A2](<Digital/AOC/AOC2868/1FFD85A093A2>) |
 | AOC              | AOC2868 | U2868            | 3840x2160 | 27.8 |      | [B29D3DC50010](<Digital/AOC/AOC2868/B29D3DC50010>) |
 | AOC              | AOC2870 | 2870             | 1920x1080 | 27.8 | 2016 | [6DCD37C4AF02](<Digital/AOC/AOC2870/6DCD37C4AF02>) |
 | AOC              | AOC2870 | U2870            | 3840x2160 | 27.8 | 2015 | [3AE3616363FE](<Digital/AOC/AOC2870/3AE3616363FE>) |
 | AOC              | AOC2870 | 2870             | 1920x1080 | 27.8 | 2014 | [5A4C073650F3](<Digital/AOC/AOC2870/5A4C073650F3>) |
 | AOC              | AOC2879 | U2879G6          | 3840x2160 | 27.8 | 2020 | [23010EDF6946](<Digital/AOC/AOC2879/23010EDF6946>) |
-| AOC              | AOC2879 | U2879G6          | 3840x2160 | 27.8 | 2019 | [8698C7CC64DB](<Digital/AOC/AOC2879/8698C7CC64DB>) |
+| AOC              | AOC2879 | U2879G6          | 3840x2160 | 27.8 | 2019 | [28E1C0E59140](<Digital/AOC/AOC2879/28E1C0E59140>) |
 | AOC              | AOC2879 | U2879G6          | 3840x2160 | 27.8 | 2018 | [188FABA677CD](<Digital/AOC/AOC2879/188FABA677CD>) |
 | AOC              | AOC2879 | U2879G6          | 3840x2160 | 27.8 | 2017 | [0896E6B1206E](<Digital/AOC/AOC2879/0896E6B1206E>) |
-| AOC              | AOC2879 | U2879G6          | 3840x2160 | 27.8 | 2016 | [4EDB2D9A2561](<Digital/AOC/AOC2879/4EDB2D9A2561>) |
+| AOC              | AOC2879 | U2879G6          | 3840x2160 | 27.8 | 2016 | [05B976FEF3E7](<Digital/AOC/AOC2879/05B976FEF3E7>) |
 | AOC              | AOC2879 | U2879G6          | 3840x2160 | 27.8 |      | [0566FFEB60DD](<Digital/AOC/AOC2879/0566FFEB60DD>) |
 | AOC              | AOC2902 | Q29G2G5          | 2560x1080 | 29.1 | 2020 | [253440152922](<Digital/AOC/AOC2902/253440152922>) |
 | AOC              | AOC2963 | Q2963            | 2560x1080 | 28.6 | 2016 | [894FAB5DFC51](<Digital/AOC/AOC2963/894FAB5DFC51>) |
@@ -690,19 +718,21 @@ model and ID.
 | AOC              | AOC3201 | U32U1WR6B        | 3840x2160 | 31.5 | 2021 | [90D4FE724E03](<Digital/AOC/AOC3201/90D4FE724E03>) |
 | AOC              | AOC3201 | 32G1WG4          | 1920x1080 | 31.5 | 2020 | [1416BEF8CC59](<Digital/AOC/AOC3201/1416BEF8CC59>) |
 | AOC              | AOC3201 | Q32G1WG4         | 2560x1440 | 31.5 | 2020 | [143FBBF35567](<Digital/AOC/AOC3201/143FBBF35567>) |
+| AOC              | AOC3201 | U32U1WR6B        | 3840x2160 | 31.5 | 2020 | [50B9F318F55F](<Digital/AOC/AOC3201/50B9F318F55F>) |
 | AOC              | AOC3201 | Q32G1WG4         | 2560x1440 | 31.5 | 2019 | [0DDA8B81DFC2](<Digital/AOC/AOC3201/0DDA8B81DFC2>) |
 | AOC              | AOC3201 | 32G1WG4          | 1920x1080 | 31.5 | 2019 | [1A6A4410D425](<Digital/AOC/AOC3201/1A6A4410D425>) |
 | AOC              | AOC3201 | Q32G1WG4         | 2560x1440 | 31.5 | 2018 | [0D9A16539D3B](<Digital/AOC/AOC3201/0D9A16539D3B>) |
 | AOC              | AOC3201 | 32G1WG4          | 1920x1080 | 31.5 | 2018 | [797FF82EE564](<Digital/AOC/AOC3201/797FF82EE564>) |
 | AOC              | AOC3201 | U32U1WR6B        | 3840x2160 | 31.5 |      | [1263CC3FA0CF](<Digital/AOC/AOC3201/1263CC3FA0CF>) |
 | AOC              | AOC3202 | Q32V3WG5         | 2560x1440 | 31.5 | 2022 | [02EBC9767DB2](<Digital/AOC/AOC3202/02EBC9767DB2>) |
-| AOC              | AOC3202 | 32G2WG8          | 1920x1080 | 31.5 | 2022 | [613B2770A26F](<Digital/AOC/AOC3202/613B2770A26F>) |
+| AOC              | AOC3202 | 32G2WG8          | 1920x1080 | 31.5 | 2022 | [0FDF1D6690ED](<Digital/AOC/AOC3202/0FDF1D6690ED>) |
 | AOC              | AOC3202 | Q32E2WG5B        | 2560x1440 | 31.5 | 2021 | [0D2527000DB2](<Digital/AOC/AOC3202/0D2527000DB2>) |
 | AOC              | AOC3202 | U32E2WG6         | 3840x2160 | 31.5 | 2021 | [11F3E48513B6](<Digital/AOC/AOC3202/11F3E48513B6>) |
 | AOC              | AOC3202 | 32G2WG8          | 1920x1080 | 31.5 | 2021 | [3831A19393CD](<Digital/AOC/AOC3202/3831A19393CD>) |
 | AOC              | AOC3202 | Q32G2WG3         | 2560x1440 | 31.5 | 2020 | [2470CBEF0857](<Digital/AOC/AOC3202/2470CBEF0857>) |
 | AOC              | AOC3202 | 32G2WG3          | 1920x1080 | 31.5 | 2020 | [9A5A47DCDCCB](<Digital/AOC/AOC3202/9A5A47DCDCCB>) |
 | AOC              | AOC3203 | U32V3            | 3840x2160 | 31.5 | 2020 | [85854624D85B](<Digital/AOC/AOC3203/85854624D85B>) |
+| AOC              | AOC3203 | Q32V3            | 2560x1440 | 31.5 | 2020 | [E5A502F930FA](<Digital/AOC/AOC3203/E5A502F930FA>) |
 | AOC              | AOC3203 | Q32V3            | 2560x1440 | 31.5 |      | [1520C684905B](<Digital/AOC/AOC3203/1520C684905B>) |
 | AOC              | AOC3207 | 3207W            | 1920x1080 | 31.5 | 2017 | [73085A209989](<Digital/AOC/AOC3207/73085A209989>) |
 | AOC              | AOC3211 | LE32W157         | 1360x768  | 31.5 | 2011 | [5D4E9C58ED85](<Digital/AOC/AOC3211/5D4E9C58ED85>) |
@@ -716,6 +746,7 @@ model and ID.
 | AOC              | AOC3220 | AG322QWS4R4      | 2560x1440 | 31.5 |      | [E764350CD031](<Digital/AOC/AOC3220/E764350CD031>) |
 | AOC              | AOC3222 | LCD              | 1360x768  | 31.5 | 2012 | [6337B97F7485](<Digital/AOC/AOC3222/6337B97F7485>) |
 | AOC              | AOC3230 | AG323FWG3R3      | 1920x1080 | 31.5 | 2021 | [00296D5B51ED](<Digital/AOC/AOC3230/00296D5B51ED>) |
+| AOC              | AOC3230 | AG323QWG4R3+     | 2560x1440 | 31.5 | 2021 | [ADD080DF2EA0](<Digital/AOC/AOC3230/ADD080DF2EA0>) |
 | AOC              | AOC3230 | AG323FWG3R3      | 1920x1080 | 31.5 | 2020 | [79988C851F6F](<Digital/AOC/AOC3230/79988C851F6F>) |
 | AOC              | AOC3253 | LC32W053         | 1360x768  | 31.5 | 2010 | [4FBCE0B7EFD2](<Digital/AOC/AOC3253/4FBCE0B7EFD2>) |
 | AOC              | AOC3277 | U3277WB          | 3840x2160 | 31.5 | 2020 | [764AECC0D164](<Digital/AOC/AOC3277/764AECC0D164>) |
@@ -726,7 +757,7 @@ model and ID.
 | AOC              | AOC3277 | Q3277            | 2560x1440 | 32.1 | 2018 | [587918F210D3](<Digital/AOC/AOC3277/587918F210D3>) |
 | AOC              | AOC3277 | U3277WB          | 3840x2160 | 31.5 | 2017 | [0962FE5E3F05](<Digital/AOC/AOC3277/0962FE5E3F05>) |
 | AOC              | AOC3277 | Q3277            | 2560x1440 | 32.1 | 2017 | [54DD11E4CFD2](<Digital/AOC/AOC3277/54DD11E4CFD2>) |
-| AOC              | AOC3277 | U3277WB          | 3840x2160 | 31.5 | 2016 | [253B7FD6D6A7](<Digital/AOC/AOC3277/253B7FD6D6A7>) |
+| AOC              | AOC3277 | U3277WB          | 3840x2160 | 31.5 | 2016 | [12DE1E751ACB](<Digital/AOC/AOC3277/12DE1E751ACB>) |
 | AOC              | AOC3277 | Q3277            | 2560x1440 | 32.1 | 2016 | [52E4A107D322](<Digital/AOC/AOC3277/52E4A107D322>) |
 | AOC              | AOC3277 | Q3277            | 2560x1440 | 32.1 | 2015 | [239082FE730E](<Digital/AOC/AOC3277/239082FE730E>) |
 | AOC              | AOC3277 | U3277            | 3840x2160 | 32.1 | 2015 | [966964F1356C](<Digital/AOC/AOC3277/966964F1356C>) |
@@ -740,36 +771,42 @@ model and ID.
 | AOC              | AOC3293 | D32W931          | 1920x1080 | 31.5 |      | [4D4E21CEC2DA](<Digital/AOC/AOC3293/4D4E21CEC2DA>) |
 | AOC              | AOC3296 | L32W961          | 1360x768  | 31.5 | 2009 | [A1570EA002B3](<Digital/AOC/AOC3296/A1570EA002B3>) |
 | AOC              | AOC3402 | U34G2G4R3        | 3440x1440 | 34.1 | 2022 | [0927AD396E21](<Digital/AOC/AOC3402/0927AD396E21>) |
+| AOC              | AOC3402 | Q34E2G5          | 2560x1080 | 34.2 | 2022 | [21D817275FAE](<Digital/AOC/AOC3402/21D817275FAE>) |
 | AOC              | AOC3402 | U34G2G1          | 3440x1440 | 34.1 | 2021 | [18F095D1E507](<Digital/AOC/AOC3402/18F095D1E507>) |
 | AOC              | AOC3402 | U34G2G4R3        | 3440x1440 | 34.1 | 2020 | [01D87050C313](<Digital/AOC/AOC3402/01D87050C313>) |
 | AOC              | AOC3402 | Q34E2G5          | 2560x1080 | 34.2 | 2020 | [DEE6F46B3823](<Digital/AOC/AOC3402/DEE6F46B3823>) |
-| AOC              | AOC3402 | U34G2G4R3        | 3440x1440 | 34.1 | 2019 | [65B5143DDA07](<Digital/AOC/AOC3402/65B5143DDA07>) |
+| AOC              | AOC3402 | U34G2G4R3        | 3440x1440 | 34.1 | 2019 | [4F1463FF6E03](<Digital/AOC/AOC3402/4F1463FF6E03>) |
 | AOC              | AOC3402 | U34G2G4R3        | 3440x1440 | 34.1 |      | [6A3CA10309FD](<Digital/AOC/AOC3402/6A3CA10309FD>) |
 | AOC              | AOC3402 | Q34E2G5          | 2560x1080 | 34.2 |      | [B045FA8E3BA9](<Digital/AOC/AOC3402/B045FA8E3BA9>) |
 | AOC              | AOC3477 | Q3477            | 2560x1080 | 34.2 | 2016 | [FBBAA73FD2E9](<Digital/AOC/AOC3477/FBBAA73FD2E9>) |
-| AOC              | AOC3477 | U3477            | 3440x1440 | 34.2 | 2014 | [BC8CF870717E](<Digital/AOC/AOC3477/BC8CF870717E>) |
+| AOC              | AOC3477 | U3477            | 3440x1440 | 34.2 | 2014 | [5320C35C2C6D](<Digital/AOC/AOC3477/5320C35C2C6D>) |
 | AOC              | AOC3520 | AG352QG2         | 2560x1080 | 35.1 | 2017 | [1641A1911FD4](<Digital/AOC/AOC3520/1641A1911FD4>) |
 | AOC              | AOC3520 | AG352QG2         | 2560x1080 | 35.1 |      | [79FF669B719E](<Digital/AOC/AOC3520/79FF669B719E>) |
 | AOC              | AOC3525 | AG352UCG6        | 3440x1440 | 35.1 | 2017 | [BDADE3DA112F](<Digital/AOC/AOC3525/BDADE3DA112F>) |
 | AOC              | AOC3525 | AG352UCG         | 3440x1440 | 35.1 | 2016 | [3457AAC58EB8](<Digital/AOC/AOC3525/3457AAC58EB8>) |
-| AOC              | AOC3525 | AG352UCG6        | 3440x1440 | 35.1 |      | [39550557FBC6](<Digital/AOC/AOC3525/39550557FBC6>) |
+| AOC              | AOC3525 | AG352UCG6        | 3440x1440 | 35.1 |      | [15F9E393D71D](<Digital/AOC/AOC3525/15F9E393D71D>) |
 | AOC              | AOC3583 | Q3583            | 2560x1080 | 35.1 | 2017 | [C5CCE7CF82B0](<Digital/AOC/AOC3583/C5CCE7CF82B0>) |
 | AOC              | AOC3583 | Q3583            | 2560x1080 | 35.1 | 2015 | [244BF853F8A8](<Digital/AOC/AOC3583/244BF853F8A8>) |
 | AOC              | AOC4008 | U4008B           | 3840x2160 | 40.2 | 2017 | [AE7BFA0B4265](<Digital/AOC/AOC4008/AE7BFA0B4265>) |
 | AOC              | AOC4220 | LE42D5520/20     | 1920x1080 | 42.5 | 2011 | [11410199976B](<Digital/AOC/AOC4220/11410199976B>) |
 | AOC              | AOC4257 | LE42H057D        | 1920x1080 | 41.9 | 2010 | [DA49BD59D7CB](<Digital/AOC/AOC4257/DA49BD59D7CB>) |
-| AOC              | AOC4930 | AG493UG7R4       | 3840x1080 | 48.7 | 2021 | [85755CC7F7E5](<Digital/AOC/AOC4930/85755CC7F7E5>) |
+| AOC              | AOC4308 | U4308            | 3840x2160 | 42.5 | 2019 | [128EDE71C043](<Digital/AOC/AOC4308/128EDE71C043>) |
+| AOC              | AOC4930 | AG493UG7R4       | 3840x1080 | 48.7 | 2021 | [489DF713E579](<Digital/AOC/AOC4930/489DF713E579>) |
 | AOC              | AOC4930 | AG493UG7R4       | 3840x1080 | 48.7 | 2020 | [09339E870770](<Digital/AOC/AOC4930/09339E870770>) |
 | AOC              | AOC4930 | AG493UG7R4       | 3840x1080 | 48.7 | 2019 | [468AF33CA5B2](<Digital/AOC/AOC4930/468AF33CA5B2>) |
 | AOC              | AOC4930 | AG493UG7R4       | 3840x1080 | 48.7 |      | [A0F13C802DB9](<Digital/AOC/AOC4930/A0F13C802DB9>) |
 | AOC              | AOC9632 |                  | 1920x1080 | 23.1 | 2012 | [1EBF0171C25F](<Digital/AOC/AOC9632/1EBF0171C25F>) |
+| AOC              | AOCA301 | AG493US3R4       | 3840x1080 | 48.7 | 2022 | [077926C706C5](<Digital/AOC/AOCA301/077926C706C5>) |
+| AOC              | AOCA304 | AG493QS4R4       | 3840x1080 | 49.1 | 2021 | [2CDACB452A3A](<Digital/AOC/AOCA304/2CDACB452A3A>) |
+| AOC              | AOCA409 | AG324UWS4R4B     | 3840x2160 | 31.5 | 2022 | [E4431FC8FA0E](<Digital/AOC/AOCA409/E4431FC8FA0E>) |
 | AOC              | AOCA562 | LM520/LM520A     | 1024x768  | 14.9 |      | [CA79C416E263](<Digital/AOC/AOCA562/CA79C416E263>) |
 | AOC              | AOCA784 | LM729            | 1280x1024 | 17.1 | 2006 | [F08FBBA404C1](<Digital/AOC/AOCA784/F08FBBA404C1>) |
 | AOC              | AOCA784 | LM729            | 1280x1024 | 17.1 |      | [43DCED17508B](<Digital/AOC/AOCA784/43DCED17508B>) |
-| AOC              | AOCA786 | LM765            | 1280x1024 | 17.1 | 2006 | [E22BF50D1871](<Digital/AOC/AOCA786/E22BF50D1871>) |
+| AOC              | AOCA786 | LM765            | 1280x1024 | 17.1 | 2006 | [511C5A34A2D8](<Digital/AOC/AOCA786/511C5A34A2D8>) |
 | AOC              | AOCA925 | LM925            | 1280x1024 | 19.1 |      | [BC08C3C7C609](<Digital/AOC/AOCA925/BC08C3C7C609>) |
 | AOC              | AOCA981 | LM914/LM919      | 1280x1024 | 19.1 |      | [0D5717FA37FD](<Digital/AOC/AOCA981/0D5717FA37FD>) |
 | AOC              | AOCA985 | LM960            | 1280x1024 | 19.1 | 2006 | [71AF38ECE150](<Digital/AOC/AOCA985/71AF38ECE150>) |
+| AOC              | AOCB201 | U28G2G4R4        | 3840x2160 | 27.8 | 2022 | [58B523774300](<Digital/AOC/AOCB201/58B523774300>) |
 | AOC              | AOCB304 | 32G3WG3-         | 1920x1080 | 31.5 | 2021 | [A6EF315C3892](<Digital/AOC/AOCB304/A6EF315C3892>) |
 | AOC              | AOCB305 | Q32G3WG3R3       | 2560x1440 | 31.5 | 2022 | [0BB865289C35](<Digital/AOC/AOCB305/0BB865289C35>) |
 | AOC              | AOCB306 | U34G3G3R3        | 3440x1440 | 34.1 | 2022 | [4267A587A992](<Digital/AOC/AOCB306/4267A587A992>) |
@@ -778,17 +815,28 @@ model and ID.
 | AOC              | AOCC981 | WJ1980PI-2       | 1280x1024 | 19.1 | 2006 | [AF290FD285FA](<Digital/AOC/AOCC981/AF290FD285FA>) |
 | AOpen            | AOP069C | 24HC1QR          | 1920x1080 | 23.6 | 2020 | [157F5B13E3F9](<Digital/AOpen/AOP069C/157F5B13E3F9>) |
 | AOpen            | AOP069E | 32HC1QUR P       | 2560x1440 | 31.5 | 2018 | [2BCCF2C0E3FC](<Digital/AOpen/AOP069E/2BCCF2C0E3FC>) |
+| AOpen            | AOP06A4 | 22MX1Q           | 1920x1080 | 21.7 | 2019 | [401AB8D58806](<Digital/AOpen/AOP06A4/401AB8D58806>) |
 | AOpen            | AOP06A5 | 20CH1Q           | 1366x768  | 19.4 | 2020 | [719E48D54735](<Digital/AOpen/AOP06A5/719E48D54735>) |
 | AOpen            | AOP06A5 | 20CH1Q           | 1366x768  | 19.4 | 2019 | [DDFC8ADEF1B5](<Digital/AOpen/AOP06A5/DDFC8ADEF1B5>) |
 | AOpen            | AOP06AA | 27ML2            | 1920x1080 | 27.2 | 2020 | [755F55CBEC44](<Digital/AOpen/AOP06AA/755F55CBEC44>) |
+| AOpen            | AOP06B3 | 27MX1            | 1920x1080 | 27.2 | 2019 | [2E0F272A4A99](<Digital/AOpen/AOP06B3/2E0F272A4A99>) |
+| AOpen            | AOP06B4 | 24MX1            | 1920x1080 | 24.0 | 2020 | [1B0BCDE57686](<Digital/AOpen/AOP06B4/1B0BCDE57686>) |
 | AOpen            | AOP06C3 | 22CH1Q           | 1920x1080 | 21.7 | 2019 | [559F5EA6EF3E](<Digital/AOpen/AOP06C3/559F5EA6EF3E>) |
 | AOpen            | AOP06C8 | 27ML1U           | 2560x1440 | 27.2 | 2019 | [B55402347A02](<Digital/AOpen/AOP06C8/B55402347A02>) |
 | AOpen            | AOP06C8 | 27ML1U           | 2560x1440 | 27.2 | 2018 | [EF7305B6F2BC](<Digital/AOpen/AOP06C8/EF7305B6F2BC>) |
 | AOpen            | AOP0757 | 22CV1Q           | 1920x1080 | 21.7 | 2020 | [38F78C85722C](<Digital/AOpen/AOP0757/38F78C85722C>) |
+| AOpen            | AOP0758 | 24CL1Y           | 1920x1080 | 24.0 | 2020 | [463F584EEA8F](<Digital/AOpen/AOP0758/463F584EEA8F>) |
+| AOpen            | AOP077C | 24CH2Y           | 1920x1080 | 24.0 | 2020 | [8666C60B41C5](<Digital/AOpen/AOP077C/8666C60B41C5>) |
 | AOpen            | AOP077C | 24CH2Y           | 1920x1080 | 24.0 |      | [2528FACB37F6](<Digital/AOpen/AOP077C/2528FACB37F6>) |
 | AOpen            | AOP0807 | 24CL1Y           | 1920x1080 | 24.0 | 2021 | [058E4F5268BF](<Digital/AOpen/AOP0807/058E4F5268BF>) |
 | AOpen            | AOP0808 | 27HC5R           | 1920x1080 | 27.2 | 2022 | [71E5BBB10E2D](<Digital/AOpen/AOP0808/71E5BBB10E2D>) |
+| AOpen            | AOP0809 | 32HC5QR P        | 1920x1080 | 31.5 | 2022 | [90DCDA93674F](<Digital/AOpen/AOP0809/90DCDA93674F>) |
+| AOpen            | AOP080C | 27HC5R X/Z       | 1920x1080 | 27.0 | 2021 | [EFDD37CB52CB](<Digital/AOpen/AOP080C/EFDD37CB52CB>) |
+| AOpen            | AOP08E5 | 27HC5R           | 1920x1080 | 27.0 | 2022 | [83DDA9F45944](<Digital/AOpen/AOP08E5/83DDA9F45944>) |
+| AOpen            | AOP08E6 | 27HC5UR          | 2560x1440 | 27.2 | 2021 | [7101AF8F87B9](<Digital/AOpen/AOP08E6/7101AF8F87B9>) |
 | AOpen            | AOP0910 | 16PM6Q           | 1920x1080 | 15.7 | 2021 | [9BC1E6C84950](<Digital/AOpen/AOP0910/9BC1E6C84950>) |
+| AOpen            | AOP0912 | 24MV1Y P         | 1920x1080 | 24.2 | 2021 | [2CD85367ACB1](<Digital/AOpen/AOP0912/2CD85367ACB1>) |
+| ASRock           | ASRABA0 | PG27FF1A         | 1920x1080 | 27.2 | 2022 | [2CD07B87B267](<Digital/ASRock/ASRABA0/2CD07B87B267>) |
 | ASUS             | ASU238C | V241DA           | 1920x1080 | 24.2 | 2020 | [CFB52683040E](<Digital/ASUS/ASU238C/CFB52683040E>) |
 | ASUS             | ASU282C | V241FA           | 1920x1080 | 24.2 | 2017 | [0C4E38AF589B](<Digital/ASUS/ASU282C/0C4E38AF589B>) |
 | ASUS             | AUS0003 | S2               | 1920x1080 | 36.1 | 2018 | [6CE1E78E4FD9](<Digital/ASUS/AUS0003/6CE1E78E4FD9>) |
@@ -802,33 +850,43 @@ model and ID.
 | ASUS             | AUS1641 | MB16AC           | 1920x1080 | 15.3 | 2017 | [4A5B9EBB3786](<Digital/ASUS/AUS1641/4A5B9EBB3786>) |
 | ASUS             | AUS1641 |                  | 1920x1080 | 15.3 |      | [F5A54F2C0E39](<Digital/ASUS/AUS1641/F5A54F2C0E39>) |
 | ASUS             | AUS1643 | MB16ACM          | 1920x1080 | 15.3 | 2020 | [949D0749441F](<Digital/ASUS/AUS1643/949D0749441F>) |
+| ASUS             | AUS1645 | MB165B           | 1366x768  | 15.3 | 2020 | [43B3C5930092](<Digital/ASUS/AUS1645/43B3C5930092>) |
 | ASUS             | AUS164A | MB169C+          | 1920x1080 | 15.3 | 2020 | [58F1314A4A8F](<Digital/ASUS/AUS164A/58F1314A4A8F>) |
 | ASUS             | AUS164A | MB169C+          | 1920x1080 | 15.3 | 2019 | [D5E10469359F](<Digital/ASUS/AUS164A/D5E10469359F>) |
+| ASUS             | AUS1661 | MB16AMT          | 1920x1080 | 15.3 | 2021 | [69E8F97B15E2](<Digital/ASUS/AUS1661/69E8F97B15E2>) |
 | ASUS             | AUS1661 | MB16AMT          | 1920x1080 | 15.3 | 2020 | [2C002F8A61BB](<Digital/ASUS/AUS1661/2C002F8A61BB>) |
 | ASUS             | AUS1661 | MB16AMT          | 1920x1080 | 15.3 | 2019 | [88CAF42147BD](<Digital/ASUS/AUS1661/88CAF42147BD>) |
+| ASUS             | AUS1662 | MB16AHP          | 1920x1080 | 15.3 | 2021 | [35149BAE6DAB](<Digital/ASUS/AUS1662/35149BAE6DAB>) |
 | ASUS             | AUS1662 | MB16AHP          | 1920x1080 | 15.3 | 2020 | [0F3C808BFDD8](<Digital/ASUS/AUS1662/0F3C808BFDD8>) |
 | ASUS             | AUS1662 | MB16AHP          | 1920x1080 | 15.3 | 2019 | [682C1A98AFA7](<Digital/ASUS/AUS1662/682C1A98AFA7>) |
-| ASUS             | AUS1663 | MB16AH           | 1920x1080 | 15.3 | 2020 | [598F4FB05CD2](<Digital/ASUS/AUS1663/598F4FB05CD2>) |
+| ASUS             | AUS1663 | MB16AH           | 1920x1080 | 15.3 | 2020 | [0313C7545B88](<Digital/ASUS/AUS1663/0313C7545B88>) |
 | ASUS             | AUS16E1 | XG16A            | 1920x1080 | 15.3 | 2021 | [6978D21E8F94](<Digital/ASUS/AUS16E1/6978D21E8F94>) |
 | ASUS             | AUS17E0 | XG17A            | 1920x1080 | 17.3 | 2021 | [387A1D8C0B24](<Digital/ASUS/AUS17E0/387A1D8C0B24>) |
 | ASUS             | AUS17E0 | XG17A            | 1920x1080 | 17.3 | 2020 | [8622BE9DD42B](<Digital/ASUS/AUS17E0/8622BE9DD42B>) |
 | ASUS             | AUS17E0 |                  | 1920x1080 | 17.3 |      | [90E9719F7B2D](<Digital/ASUS/AUS17E0/90E9719F7B2D>) |
+| ASUS             | AUS22A1 | VP228            | 1920x1080 | 21.7 | 2022 | [02F0FC2E7806](<Digital/ASUS/AUS22A1/02F0FC2E7806>) |
 | ASUS             | AUS22A1 | VP228            | 1920x1080 | 21.7 | 2020 | [50F4149EDE6A](<Digital/ASUS/AUS22A1/50F4149EDE6A>) |
-| ASUS             | AUS22A1 | VP228            | 1920x1080 | 21.7 | 2019 | [DAB58DA259D6](<Digital/ASUS/AUS22A1/DAB58DA259D6>) |
+| ASUS             | AUS22A1 | VP228            | 1920x1080 | 21.7 | 2019 | [DA2C65EA2480](<Digital/ASUS/AUS22A1/DA2C65EA2480>) |
+| ASUS             | AUS22AA | VA229            | 1920x1080 | 21.7 | 2022 | [0A92C89BB4DB](<Digital/ASUS/AUS22AA/0A92C89BB4DB>) |
 | ASUS             | AUS22C1 | VT229            | 1920x1080 | 21.7 | 2021 | [B616A95C89FB](<Digital/ASUS/AUS22C1/B616A95C89FB>) |
 | ASUS             | AUS22C1 | VT229            | 1920x1080 | 21.7 | 2020 | [0015126D1D03](<Digital/ASUS/AUS22C1/0015126D1D03>) |
 | ASUS             | AUS22C1 | VT229            | 1920x1080 | 21.7 | 2019 | [E012EADB217B](<Digital/ASUS/AUS22C1/E012EADB217B>) |
+| ASUS             | AUS22C1 | VT229            | 1920x1080 | 21.7 | 2018 | [716DB65E33CE](<Digital/ASUS/AUS22C1/716DB65E33CE>) |
 | ASUS             | AUS22CC | VZ229            | 1920x1080 | 21.7 | 2021 | [CFF53E7A8AD8](<Digital/ASUS/AUS22CC/CFF53E7A8AD8>) |
+| ASUS             | AUS22CC | VZ229            | 1920x1080 | 21.7 | 2020 | [656E8FEFE6F3](<Digital/ASUS/AUS22CC/656E8FEFE6F3>) |
 | ASUS             | AUS22CC | VZ229            | 1920x1080 | 21.7 | 2019 | [1D0A2D3D0AFD](<Digital/ASUS/AUS22CC/1D0A2D3D0AFD>) |
 | ASUS             | AUS22CC | VZ229            | 1920x1080 | 21.7 | 2018 | [0B225716B9F5](<Digital/ASUS/AUS22CC/0B225716B9F5>) |
 | ASUS             | AUS22CC | VZ229            | 1920x1080 | 21.7 | 2017 | [0F2B58488123](<Digital/ASUS/AUS22CC/0F2B58488123>) |
 | ASUS             | AUS22CC | VZ229            | 1920x1080 | 21.7 | 2016 | [124397553C39](<Digital/ASUS/AUS22CC/124397553C39>) |
 | ASUS             | AUS22D4 | VP228HE          | 1920x1080 | 21.7 | 2021 | [DE90232E140E](<Digital/ASUS/AUS22D4/DE90232E140E>) |
+| ASUS             | AUS22DA | VP229            | 1920x1080 | 21.7 | 2022 | [F9EB1C05048C](<Digital/ASUS/AUS22DA/F9EB1C05048C>) |
 | ASUS             | AUS22DA | VP229            | 1920x1080 | 21.7 | 2021 | [2263C1F623B4](<Digital/ASUS/AUS22DA/2263C1F623B4>) |
 | ASUS             | AUS22DA | VP229            | 1920x1080 | 21.7 | 2020 | [8F9651D8BD3D](<Digital/ASUS/AUS22DA/8F9651D8BD3D>) |
 | ASUS             | AUS22DB | VP229            | 1920x1080 | 21.7 | 2022 | [7A6BB941D0C9](<Digital/ASUS/AUS22DB/7A6BB941D0C9>) |
 | ASUS             | AUS22DB | VP229            | 1920x1080 | 21.7 | 2020 | [9A3376A9AEE8](<Digital/ASUS/AUS22DB/9A3376A9AEE8>) |
 | ASUS             | AUS22F1 | VA229            | 1920x1080 | 21.7 | 2018 | [016347532809](<Digital/ASUS/AUS22F1/016347532809>) |
+| ASUS             | AUS22F2 | VA229            | 1920x1080 | 21.7 | 2018 | [C1D20859403D](<Digital/ASUS/AUS22F2/C1D20859403D>) |
+| ASUS             | AUS22F3 | VA229            | 1920x1080 | 21.7 | 2022 | [3E8046015592](<Digital/ASUS/AUS22F3/3E8046015592>) |
 | ASUS             | AUS22F3 | VA229            | 1920x1080 | 21.7 | 2021 | [95D72068EC98](<Digital/ASUS/AUS22F3/95D72068EC98>) |
 | ASUS             | AUS22F3 | VA229            | 1920x1080 | 21.7 | 2020 | [B7AADE3B37D0](<Digital/ASUS/AUS22F3/B7AADE3B37D0>) |
 | ASUS             | AUS22F3 | VA229            | 1920x1080 | 21.7 | 2019 | [3EAB85D81BC1](<Digital/ASUS/AUS22F3/3EAB85D81BC1>) |
@@ -842,8 +900,9 @@ model and ID.
 | ASUS             | AUS2400 | PA248QV          | 1920x1200 | 24.0 | 2020 | [275AEF3B6ADE](<Digital/ASUS/AUS2400/275AEF3B6ADE>) |
 | ASUS             | AUS2400 | PA248QV          | 1920x1200 | 24.0 |      | [76FDE3EA52AB](<Digital/ASUS/AUS2400/76FDE3EA52AB>) |
 | ASUS             | AUS2401 | VG249Q1R         | 1920x1080 | 23.4 | 2021 | [661492B0BEF5](<Digital/ASUS/AUS2401/661492B0BEF5>) |
-| ASUS             | AUS2401 | VG249Q1R         | 1920x1080 | 23.4 | 2020 | [4B5EE5132B18](<Digital/ASUS/AUS2401/4B5EE5132B18>) |
+| ASUS             | AUS2401 | VG249Q1R         | 1920x1080 | 23.4 | 2020 | [14B933A8C153](<Digital/ASUS/AUS2401/14B933A8C153>) |
 | ASUS             | AUS2402 | VA24D            | 1920x1080 | 24.0 | 2022 | [2F491448FF92](<Digital/ASUS/AUS2402/2F491448FF92>) |
+| ASUS             | AUS2403 | VA24D            | 1920x1080 | 24.0 | 2022 | [2F6F5715CAF6](<Digital/ASUS/AUS2403/2F6F5715CAF6>) |
 | ASUS             | AUS2403 | VA24D            | 1920x1080 | 24.0 | 2021 | [1910081DF353](<Digital/ASUS/AUS2403/1910081DF353>) |
 | ASUS             | AUS2403 | VA24D            | 1920x1080 | 24.0 | 2020 | [3C4ECA3A5BEA](<Digital/ASUS/AUS2403/3C4ECA3A5BEA>) |
 | ASUS             | AUS2404 | VZ249HEG1R       | 1920x1080 | 23.4 | 2020 | [021271D8645C](<Digital/ASUS/AUS2404/021271D8645C>) |
@@ -858,9 +917,13 @@ model and ID.
 | ASUS             | AUS2421 | VG249            | 1920x1080 | 24.0 | 2021 | [32DC952BCD94](<Digital/ASUS/AUS2421/32DC952BCD94>) |
 | ASUS             | AUS2421 | VG249            | 1920x1080 | 24.0 | 2020 | [0BE1B429A1A2](<Digital/ASUS/AUS2421/0BE1B429A1A2>) |
 | ASUS             | AUS2421 | VG24V            | 1920x1080 | 23.4 | 2020 | [A18C9FBB89AB](<Digital/ASUS/AUS2421/A18C9FBB89AB>) |
-| ASUS             | AUS2421 | VG249            | 1920x1080 | 24.0 | 2019 | [7748F093C54C](<Digital/ASUS/AUS2421/7748F093C54C>) |
+| ASUS             | AUS2421 | VG249            | 1920x1080 | 24.0 | 2019 | [26F524640248](<Digital/ASUS/AUS2421/26F524640248>) |
 | ASUS             | AUS2421 |                  | 1920x1080 | 24.0 |      | [894B27B2E7A0](<Digital/ASUS/AUS2421/894B27B2E7A0>) |
+| ASUS             | AUS242B | VG247Q1A         | 1920x1080 | 24.0 | 2022 | [C654FD4296A5](<Digital/ASUS/AUS242B/C654FD4296A5>) |
+| ASUS             | AUS242B | VG247Q1A         | 1920x1080 | 24.0 | 2021 | [A4374B8826E4](<Digital/ASUS/AUS242B/A4374B8826E4>) |
 | ASUS             | AUS2463 | PA247CV          | 1920x1080 | 24.0 | 2021 | [7EF4CC435AB8](<Digital/ASUS/AUS2463/7EF4CC435AB8>) |
+| ASUS             | AUS2464 | PA247CV          | 1920x1080 | 24.0 | 2022 | [3DD28A08D564](<Digital/ASUS/AUS2464/3DD28A08D564>) |
+| ASUS             | AUS2480 | BE24E            | 1920x1080 | 24.0 | 2022 | [CE45BA1B4485](<Digital/ASUS/AUS2480/CE45BA1B4485>) |
 | ASUS             | AUS2482 | VA24DQLB         | 1920x1080 | 24.0 | 2020 | [B14944881859](<Digital/ASUS/AUS2482/B14944881859>) |
 | ASUS             | AUS2483 | BE24EQK          | 1920x1080 | 24.0 | 2020 | [C46BD2BD2CA4](<Digital/ASUS/AUS2483/C46BD2BD2CA4>) |
 | ASUS             | AUS2487 | PA248QV          | 1920x1200 | 24.0 | 2021 | [2B473481CAE6](<Digital/ASUS/AUS2487/2B473481CAE6>) |
@@ -884,6 +947,7 @@ model and ID.
 | ASUS             | AUS24A5 | BE24D            | 1920x1080 | 24.0 | 2018 | [6500A510AFE7](<Digital/ASUS/AUS24A5/6500A510AFE7>) |
 | ASUS             | AUS24A7 | VL249HE          | 1920x1080 | 24.0 | 2020 | [653CC2A2255F](<Digital/ASUS/AUS24A7/653CC2A2255F>) |
 | ASUS             | AUS24A8 | PB247            | 1920x1080 | 24.0 | 2018 | [B698EF109AF1](<Digital/ASUS/AUS24A8/B698EF109AF1>) |
+| ASUS             | AUS24A9 | VP248QG          | 1920x1080 | 24.0 | 2022 | [3F208D8D488E](<Digital/ASUS/AUS24A9/3F208D8D488E>) |
 | ASUS             | AUS24A9 | VP248QG          | 1920x1080 | 24.0 | 2021 | [AFFC5E89FCF1](<Digital/ASUS/AUS24A9/AFFC5E89FCF1>) |
 | ASUS             | AUS24A9 | VP248QG          | 1920x1080 | 24.0 | 2020 | [2AD21C5588FF](<Digital/ASUS/AUS24A9/2AD21C5588FF>) |
 | ASUS             | AUS24A9 | VP248QG          | 1920x1080 | 24.0 | 2019 | [121820CEB8D6](<Digital/ASUS/AUS24A9/121820CEB8D6>) |
@@ -895,14 +959,14 @@ model and ID.
 | ASUS             | AUS24AA |                  | 1920x1080 | 24.0 |      | [DF681CDC511E](<Digital/ASUS/AUS24AA/DF681CDC511E>) |
 | ASUS             | AUS24AB | VG248            | 1920x1080 | 24.0 | 2019 | [0665919DDB3A](<Digital/ASUS/AUS24AB/0665919DDB3A>) |
 | ASUS             | AUS24AB | VG248            | 1920x1080 | 24.0 | 2018 | [24EC7A8331B4](<Digital/ASUS/AUS24AB/24EC7A8331B4>) |
-| ASUS             | AUS24AC | VG248            | 1920x1080 | 24.0 | 2021 | [2C2E8A76AFCC](<Digital/ASUS/AUS24AC/2C2E8A76AFCC>) |
+| ASUS             | AUS24AC | VG248            | 1920x1080 | 24.0 | 2021 | [1F9E60652254](<Digital/ASUS/AUS24AC/1F9E60652254>) |
 | ASUS             | AUS24AC | VG248            | 1920x1080 | 24.0 | 2020 | [244FD1C5477F](<Digital/ASUS/AUS24AC/244FD1C5477F>) |
 | ASUS             | AUS24AC | VG248            | 1920x1080 | 24.0 |      | [46936A80D5A4](<Digital/ASUS/AUS24AC/46936A80D5A4>) |
 | ASUS             | AUS24AF | VP249            | 1920x1080 | 24.0 | 2021 | [00B0E299AEE3](<Digital/ASUS/AUS24AF/00B0E299AEE3>) |
 | ASUS             | AUS24AF | VP249            | 1920x1080 | 24.0 | 2020 | [21D011C40ECD](<Digital/ASUS/AUS24AF/21D011C40ECD>) |
 | ASUS             | AUS24AF | VP249            | 1920x1080 | 24.0 | 2019 | [7350440DEF62](<Digital/ASUS/AUS24AF/7350440DEF62>) |
 | ASUS             | AUS24AF |                  | 1920x1080 | 24.0 |      | [9A7C9D90A81A](<Digital/ASUS/AUS24AF/9A7C9D90A81A>) |
-| ASUS             | AUS24B1 | ROG PG248Q       | 1920x1080 | 24.0 | 2017 | [A305388ED67B](<Digital/ASUS/AUS24B1/A305388ED67B>) |
+| ASUS             | AUS24B1 | ROG PG248Q       | 1920x1080 | 24.0 | 2017 | [654915CA00BB](<Digital/ASUS/AUS24B1/654915CA00BB>) |
 | ASUS             | AUS24B1 | ROG PG248Q       | 1920x1080 | 24.0 | 2016 | [5BDD094F0E72](<Digital/ASUS/AUS24B1/5BDD094F0E72>) |
 | ASUS             | AUS24B2 | ROG PG248Q       | 1920x1080 | 24.0 | 2020 | [A28050925323](<Digital/ASUS/AUS24B2/A28050925323>) |
 | ASUS             | AUS24C1 | VA249            | 1920x1080 | 24.0 | 2021 | [4EA65B6B18DE](<Digital/ASUS/AUS24C1/4EA65B6B18DE>) |
@@ -910,6 +974,7 @@ model and ID.
 | ASUS             | AUS24C1 | VA249            | 1920x1080 | 24.0 | 2019 | [580AE95FF54F](<Digital/ASUS/AUS24C1/580AE95FF54F>) |
 | ASUS             | AUS24C1 | VA249            | 1920x1080 | 24.0 | 2018 | [2755664F28B3](<Digital/ASUS/AUS24C1/2755664F28B3>) |
 | ASUS             | AUS24C1 | VA249            | 1920x1080 | 24.0 | 2017 | [251B1E0BF37F](<Digital/ASUS/AUS24C1/251B1E0BF37F>) |
+| ASUS             | AUS24C2 | VG248            | 1920x1080 | 24.0 | 2022 | [742077E179B7](<Digital/ASUS/AUS24C2/742077E179B7>) |
 | ASUS             | AUS24C2 | VG248            | 1920x1080 | 24.0 | 2021 | [29A5566C522A](<Digital/ASUS/AUS24C2/29A5566C522A>) |
 | ASUS             | AUS24C2 | VG248            | 1920x1080 | 24.0 | 2020 | [2F35CFAF8A7E](<Digital/ASUS/AUS24C2/2F35CFAF8A7E>) |
 | ASUS             | AUS24C2 | VG248            | 1920x1080 | 24.0 | 2019 | [A4386FBC119F](<Digital/ASUS/AUS24C2/A4386FBC119F>) |
@@ -919,7 +984,7 @@ model and ID.
 | ASUS             | AUS24CA | VP247            | 1920x1080 | 23.4 | 2018 | [0101E0ABFCD3](<Digital/ASUS/AUS24CA/0101E0ABFCD3>) |
 | ASUS             | AUS24CA | VP247            | 1920x1080 | 23.4 | 2017 | [3ADE2945B89C](<Digital/ASUS/AUS24CA/3ADE2945B89C>) |
 | ASUS             | AUS24CA |                  | 1920x1080 | 23.4 |      | [A555C69B65A6](<Digital/ASUS/AUS24CA/A555C69B65A6>) |
-| ASUS             | AUS24CB | VP248            | 1920x1080 | 24.0 | 2020 | [3FE03FC88258](<Digital/ASUS/AUS24CB/3FE03FC88258>) |
+| ASUS             | AUS24CB | VP248            | 1920x1080 | 24.0 | 2020 | [36AB8A4C0C3A](<Digital/ASUS/AUS24CB/36AB8A4C0C3A>) |
 | ASUS             | AUS24CB | VP248            | 1920x1080 | 24.0 | 2019 | [06AD2183913A](<Digital/ASUS/AUS24CB/06AD2183913A>) |
 | ASUS             | AUS24CB | VP248            | 1920x1080 | 24.0 | 2018 | [49893E386D8B](<Digital/ASUS/AUS24CB/49893E386D8B>) |
 | ASUS             | AUS24CC | VZ249            | 1920x1080 | 24.0 | 2021 | [0C5F0A0919ED](<Digital/ASUS/AUS24CC/0C5F0A0919ED>) |
@@ -929,11 +994,14 @@ model and ID.
 | ASUS             | AUS24CC | VZ249            | 1920x1080 | 24.0 | 2017 | [2B8B376A72F4](<Digital/ASUS/AUS24CC/2B8B376A72F4>) |
 | ASUS             | AUS24CC | VZ249            | 1920x1080 | 24.0 | 2012 | [747978148BF5](<Digital/ASUS/AUS24CC/747978148BF5>) |
 | ASUS             | AUS24CC | VZ249            | 1920x1080 | 24.0 |      | [107BD37E10FE](<Digital/ASUS/AUS24CC/107BD37E10FE>) |
-| ASUS             | AUS24D1 | VA24E            | 1920x1080 | 24.0 | 2021 | [2B79876ADD29](<Digital/ASUS/AUS24D1/2B79876ADD29>) |
+| ASUS             | AUS24D1 | VA24E            | 1920x1080 | 24.0 | 2022 | [3E6BDBD5AD44](<Digital/ASUS/AUS24D1/3E6BDBD5AD44>) |
+| ASUS             | AUS24D1 | VA24E            | 1920x1080 | 24.0 | 2021 | [1168E6C7EECB](<Digital/ASUS/AUS24D1/1168E6C7EECB>) |
 | ASUS             | AUS24D1 | VA24E            | 1920x1080 | 24.0 | 2020 | [10B95467E607](<Digital/ASUS/AUS24D1/10B95467E607>) |
 | ASUS             | AUS24D1 | VA24E            | 1920x1080 | 24.0 | 2019 | [23336B577916](<Digital/ASUS/AUS24D1/23336B577916>) |
 | ASUS             | AUS24D1 |                  | 1920x1080 | 24.0 |      | [2022131E6847](<Digital/ASUS/AUS24D1/2022131E6847>) |
-| ASUS             | AUS24D2 | VA247            | 1920x1080 | 24.0 | 2021 | [465222D0BF55](<Digital/ASUS/AUS24D2/465222D0BF55>) |
+| ASUS             | AUS24D2 | VA247            | 1920x1080 | 24.0 | 2022 | [22907257DAA3](<Digital/ASUS/AUS24D2/22907257DAA3>) |
+| ASUS             | AUS24D2 | VA247            | 1920x1080 | 24.0 | 2021 | [322EAC389F00](<Digital/ASUS/AUS24D2/322EAC389F00>) |
+| ASUS             | AUS24D4 | VZ24EHE          | 1920x1080 | 24.0 | 2022 | [280EE0A18912](<Digital/ASUS/AUS24D4/280EE0A18912>) |
 | ASUS             | AUS24DA | VP247            | 1920x1080 | 23.4 | 2021 | [95DC3BDE7743](<Digital/ASUS/AUS24DA/95DC3BDE7743>) |
 | ASUS             | AUS24DA | VP247            | 1920x1080 | 23.4 | 2020 | [2171117BBF63](<Digital/ASUS/AUS24DA/2171117BBF63>) |
 | ASUS             | AUS24DA | VP247            | 1920x1080 | 23.4 | 2019 | [2B72FE5ECDA2](<Digital/ASUS/AUS24DA/2B72FE5ECDA2>) |
@@ -941,6 +1009,7 @@ model and ID.
 | ASUS             | AUS24DA |                  | 1920x1080 | 23.4 |      | [84AB0D15CFB6](<Digital/ASUS/AUS24DA/84AB0D15CFB6>) |
 | ASUS             | AUS24DB | VY249            | 1920x1080 | 24.0 | 2021 | [A03F26CABFDC](<Digital/ASUS/AUS24DB/A03F26CABFDC>) |
 | ASUS             | AUS24DB | VY249            | 1920x1080 | 24.0 | 2020 | [5E1B4EE751FF](<Digital/ASUS/AUS24DB/5E1B4EE751FF>) |
+| ASUS             | AUS25A1 | VG255            | 1920x1080 | 24.3 | 2018 | [F413B39FF307](<Digital/ASUS/AUS25A1/F413B39FF307>) |
 | ASUS             | AUS25A1 | VG255            | 1920x1080 | 24.3 | 2017 | [ECD792947C43](<Digital/ASUS/AUS25A1/ECD792947C43>) |
 | ASUS             | AUS25A3 | VG258            | 1920x1080 | 24.3 | 2020 | [EBFCF4DD1B41](<Digital/ASUS/AUS25A3/EBFCF4DD1B41>) |
 | ASUS             | AUS25A3 | VG258            | 1920x1080 | 24.3 | 2019 | [2580BCFE9D4B](<Digital/ASUS/AUS25A3/2580BCFE9D4B>) |
@@ -956,10 +1025,12 @@ model and ID.
 | ASUS             | AUS25A9 | VG259QM          | 1920x1080 | 24.3 | 2021 | [0290E5DCE5F4](<Digital/ASUS/AUS25A9/0290E5DCE5F4>) |
 | ASUS             | AUS25A9 | VG259QM          | 1920x1080 | 24.3 | 2020 | [1068B6FC5459](<Digital/ASUS/AUS25A9/1068B6FC5459>) |
 | ASUS             | AUS25AB | VG259QR          | 1920x1080 | 24.3 | 2020 | [790769139EFB](<Digital/ASUS/AUS25AB/790769139EFB>) |
+| ASUS             | AUS25AC | VG259QR          | 1920x1080 | 24.3 | 2022 | [6A4119E0DEA2](<Digital/ASUS/AUS25AC/6A4119E0DEA2>) |
 | ASUS             | AUS25B1 | ROG PG258Q       | 1920x1080 | 24.3 | 2019 | [631F96CD3100](<Digital/ASUS/AUS25B1/631F96CD3100>) |
 | ASUS             | AUS25B1 | ROG PG258Q       | 1920x1080 | 24.3 | 2017 | [43AB8BEB6F52](<Digital/ASUS/AUS25B1/43AB8BEB6F52>) |
 | ASUS             | AUS25B3 | XG258            | 1920x1080 | 24.3 | 2020 | [E6482BA4B8A6](<Digital/ASUS/AUS25B3/E6482BA4B8A6>) |
 | ASUS             | AUS25B4 | ROG PG259QN      | 1920x1080 | 24.3 | 2021 | [DBF8E1441E36](<Digital/ASUS/AUS25B4/DBF8E1441E36>) |
+| ASUS             | AUS25B5 | ROG PG259QN      | 1920x1080 | 24.3 | 2022 | [EDDC74154A52](<Digital/ASUS/AUS25B5/EDDC74154A52>) |
 | ASUS             | AUS25B5 | ROG PG259QN      | 1920x1080 | 24.3 | 2021 | [1D0B109A50E2](<Digital/ASUS/AUS25B5/1D0B109A50E2>) |
 | ASUS             | AUS2700 | PA278QV          | 2560x1440 | 27.2 | 2022 | [3F3033216679](<Digital/ASUS/AUS2700/3F3033216679>) |
 | ASUS             | AUS2700 | PA278QV          | 2560x1440 | 27.2 | 2021 | [06A56C1AD439](<Digital/ASUS/AUS2700/06A56C1AD439>) |
@@ -975,33 +1046,39 @@ model and ID.
 | ASUS             | AUS2704 | VG27AQL1A        | 2560x1440 | 27.2 | 2020 | [2412FCD4D453](<Digital/ASUS/AUS2704/2412FCD4D453>) |
 | ASUS             | AUS2704 | VG27AQL1A        | 2560x1440 | 27.2 |      | [61F72573E738](<Digital/ASUS/AUS2704/61F72573E738>) |
 | ASUS             | AUS2705 | VG27AQL1A        | 2560x1440 | 27.2 | 2021 | [37C6174BACEF](<Digital/ASUS/AUS2705/37C6174BACEF>) |
-| ASUS             | AUS2705 | VG27AQL1A        | 2560x1440 | 27.2 | 2020 | [67B2AE3D93F9](<Digital/ASUS/AUS2705/67B2AE3D93F9>) |
-| ASUS             | AUS2706 | VG27AQ1A         | 2560x1440 | 27.2 | 2021 | [C0CA2163976A](<Digital/ASUS/AUS2706/C0CA2163976A>) |
+| ASUS             | AUS2705 | VG27AQL1A        | 2560x1440 | 27.2 | 2020 | [479620C2A059](<Digital/ASUS/AUS2705/479620C2A059>) |
+| ASUS             | AUS2706 | VG27AQ1A         | 2560x1440 | 27.2 | 2021 | [2A9098D9560A](<Digital/ASUS/AUS2706/2A9098D9560A>) |
+| ASUS             | AUS2706 | VG27AQ1A         | 2560x1440 | 27.2 | 2020 | [2E32669B0BEC](<Digital/ASUS/AUS2706/2E32669B0BEC>) |
 | ASUS             | AUS2707 | VG27AQ1A         | 2560x1440 | 27.2 | 2021 | [1D9BAB3C0CE8](<Digital/ASUS/AUS2707/1D9BAB3C0CE8>) |
 | ASUS             | AUS2707 | VG27AQ1A         | 2560x1440 | 27.2 | 2020 | [339C2FD9A190](<Digital/ASUS/AUS2707/339C2FD9A190>) |
 | ASUS             | AUS2708 | VG2791R          | 1920x1080 | 26.6 | 2020 | [B386B2A6E0CD](<Digital/ASUS/AUS2708/B386B2A6E0CD>) |
+| ASUS             | AUS2709 | ROG PG279QM      | 2560x1440 | 27.2 | 2022 | [DD10E696E67D](<Digital/ASUS/AUS2709/DD10E696E67D>) |
+| ASUS             | AUS270A | VA27D            | 1920x1080 | 27.2 | 2022 | [0764613BA2D4](<Digital/ASUS/AUS270A/0764613BA2D4>) |
 | ASUS             | AUS270A | VA27D            | 1920x1080 | 27.2 | 2021 | [D4D3AC793766](<Digital/ASUS/AUS270A/D4D3AC793766>) |
-| ASUS             | AUS270A | VA27D            | 1920x1080 | 27.2 | 2020 | [BAFF8ABC951A](<Digital/ASUS/AUS270A/BAFF8ABC951A>) |
+| ASUS             | AUS270A | VA27D            | 1920x1080 | 27.2 | 2020 | [1C1914EDDF1A](<Digital/ASUS/AUS270A/1C1914EDDF1A>) |
 | ASUS             | AUS270C | VA27A            | 2560x1440 | 27.2 | 2022 | [823C4026A3D8](<Digital/ASUS/AUS270C/823C4026A3D8>) |
 | ASUS             | AUS270E | VG279QR          | 1920x1080 | 27.2 | 2021 | [06B7A5DFC6A8](<Digital/ASUS/AUS270E/06B7A5DFC6A8>) |
-| ASUS             | AUS270F | VG279QR          | 1920x1080 | 27.2 | 2021 | [33C2AD1CD1FD](<Digital/ASUS/AUS270F/33C2AD1CD1FD>) |
+| ASUS             | AUS270F | VG279QR          | 1920x1080 | 27.2 | 2021 | [10B705403C57](<Digital/ASUS/AUS270F/10B705403C57>) |
+| ASUS             | AUS2720 | VG278            | 1920x1080 | 27.2 | 2021 | [812C7242030D](<Digital/ASUS/AUS2720/812C7242030D>) |
 | ASUS             | AUS2720 | VG278            | 1920x1080 | 27.2 | 2020 | [1921015D2FBA](<Digital/ASUS/AUS2720/1921015D2FBA>) |
 | ASUS             | AUS2720 | VG278            | 1920x1080 | 27.2 | 2019 | [1C4E98E2E49B](<Digital/ASUS/AUS2720/1C4E98E2E49B>) |
 | ASUS             | AUS2721 | VG279QM          | 1920x1080 | 27.2 | 2020 | [0A659791CBCF](<Digital/ASUS/AUS2721/0A659791CBCF>) |
 | ASUS             | AUS2722 | VG27A            | 2560x1440 | 27.2 | 2022 | [577305A04A01](<Digital/ASUS/AUS2722/577305A04A01>) |
 | ASUS             | AUS2722 | VG27A            | 2560x1440 | 27.2 | 2021 | [01FC13E898A6](<Digital/ASUS/AUS2722/01FC13E898A6>) |
-| ASUS             | AUS2722 | VG27A            | 2560x1440 | 27.2 | 2020 | [108A4756A064](<Digital/ASUS/AUS2722/108A4756A064>) |
+| ASUS             | AUS2722 | VG27A            | 2560x1440 | 27.2 | 2020 | [01613508992C](<Digital/ASUS/AUS2722/01613508992C>) |
 | ASUS             | AUS2722 | VG27A            | 2560x1440 | 27.2 | 2019 | [4004229CFE94](<Digital/ASUS/AUS2722/4004229CFE94>) |
 | ASUS             | AUS2722 | VG27A            | 2560x1440 | 27.2 |      | [3726963C01FA](<Digital/ASUS/AUS2722/3726963C01FA>) |
-| ASUS             | AUS2723 | VG27A            | 2560x1440 | 27.2 | 2021 | [52C3FB3B3452](<Digital/ASUS/AUS2723/52C3FB3B3452>) |
+| ASUS             | AUS2723 | VG27A            | 2560x1440 | 27.2 | 2022 | [B79A07C91323](<Digital/ASUS/AUS2723/B79A07C91323>) |
+| ASUS             | AUS2723 | VG27A            | 2560x1440 | 27.2 | 2021 | [42FC0F667446](<Digital/ASUS/AUS2723/42FC0F667446>) |
 | ASUS             | AUS2723 | VG27A            | 2560x1440 | 27.2 | 2020 | [322A37D3A0FA](<Digital/ASUS/AUS2723/322A37D3A0FA>) |
 | ASUS             | AUS2723 | VG27A            | 2560x1440 | 27.2 | 2019 | [91E5AE790779](<Digital/ASUS/AUS2723/91E5AE790779>) |
+| ASUS             | AUS2723 | VG27A            | 2560x1440 | 27.2 | 2018 | [4C758929FDDC](<Digital/ASUS/AUS2723/4C758929FDDC>) |
 | ASUS             | AUS2724 | XG27WQ           | 2560x1440 | 27.7 | 2020 | [18603844949C](<Digital/ASUS/AUS2724/18603844949C>) |
-| ASUS             | AUS2725 |                  | 1920x1080 | 27.2 | 2021 | [182E5BECBD25](<Digital/ASUS/AUS2725/182E5BECBD25>) |
+| ASUS             | AUS2725 | VG279Q1A         | 1920x1080 | 27.2 | 2021 | [063260A3F20D](<Digital/ASUS/AUS2725/063260A3F20D>) |
 | ASUS             | AUS272A | ROG XG27UQ       | 3840x2160 | 27.2 | 2020 | [2BCC3329AAD0](<Digital/ASUS/AUS272A/2BCC3329AAD0>) |
 | ASUS             | AUS272A | ROG XG27UQ       | 3840x2160 | 27.2 | 2019 | [5480D7E90295](<Digital/ASUS/AUS272A/5480D7E90295>) |
 | ASUS             | AUS272A | ROG              | 3840x2160 | 27.2 |      | [DFBAE737BE84](<Digital/ASUS/AUS272A/DFBAE737BE84>) |
-| ASUS             | AUS272B | VG27WQ           | 2560x1440 | 27.2 | 2021 | [A595C471594F](<Digital/ASUS/AUS272B/A595C471594F>) |
+| ASUS             | AUS272B | VG27WQ           | 2560x1440 | 27.2 | 2021 | [190684DA36AD](<Digital/ASUS/AUS272B/190684DA36AD>) |
 | ASUS             | AUS272B | VG27WQ           | 2560x1440 | 27.2 | 2020 | [5EC1329F3C95](<Digital/ASUS/AUS272B/5EC1329F3C95>) |
 | ASUS             | AUS272B | VG27WQ           | 2560x1440 | 27.2 | 2019 | [EA284E535D4B](<Digital/ASUS/AUS272B/EA284E535D4B>) |
 | ASUS             | AUS272B | VG27WQ           | 2560x1440 | 27.2 |      | [4E2CC46ABE3E](<Digital/ASUS/AUS272B/4E2CC46ABE3E>) |
@@ -1011,9 +1088,10 @@ model and ID.
 | ASUS             | AUS2768 | PA279            | 3840x2160 | 27.2 | 2021 | [1ADCCEA9FCB6](<Digital/ASUS/AUS2768/1ADCCEA9FCB6>) |
 | ASUS             | AUS2768 | PA279            | 3840x2160 | 27.2 | 2020 | [C42BAF5D5C71](<Digital/ASUS/AUS2768/C42BAF5D5C71>) |
 | ASUS             | AUS276A | ROG XG27AQ       | 2560x1440 | 27.2 | 2021 | [10BDDE606EB3](<Digital/ASUS/AUS276A/10BDDE606EB3>) |
-| ASUS             | AUS276B | ROG XG27AQ       | 2560x1440 | 27.2 | 2021 | [A319022D92C6](<Digital/ASUS/AUS276B/A319022D92C6>) |
+| ASUS             | AUS276B | ROG XG27AQ       | 2560x1440 | 27.2 | 2021 | [9A612682F405](<Digital/ASUS/AUS276B/9A612682F405>) |
 | ASUS             | AUS276B | ROG XG27AQ       | 2560x1440 | 27.2 | 2020 | [4212E58EEC7E](<Digital/ASUS/AUS276B/4212E58EEC7E>) |
 | ASUS             | AUS276C | PA278CV          | 2560x1440 | 27.2 | 2021 | [83981AA37377](<Digital/ASUS/AUS276C/83981AA37377>) |
+| ASUS             | AUS276D | PA278CV          | 2560x1440 | 27.2 | 2022 | [D15D321312AD](<Digital/ASUS/AUS276D/D15D321312AD>) |
 | ASUS             | AUS276D | PA278CV          | 2560x1440 | 27.2 | 2021 | [06383D97A51F](<Digital/ASUS/AUS276D/06383D97A51F>) |
 | ASUS             | AUS2780 | VG279            | 1920x1080 | 27.2 | 2020 | [17AE1418C9F4](<Digital/ASUS/AUS2780/17AE1418C9F4>) |
 | ASUS             | AUS2780 | VG279            | 1920x1080 | 27.2 | 2019 | [0344129D8E1F](<Digital/ASUS/AUS2780/0344129D8E1F>) |
@@ -1025,16 +1103,19 @@ model and ID.
 | ASUS             | AUS2782 | VG279            | 1920x1080 | 27.2 | 2018 | [54FFB4BBA2A3](<Digital/ASUS/AUS2782/54FFB4BBA2A3>) |
 | ASUS             | AUS2782 | VG279            | 1920x1080 | 27.2 |      | [B09085B13377](<Digital/ASUS/AUS2782/B09085B13377>) |
 | ASUS             | AUS2785 | VG27B            | 2560x1440 | 27.2 | 2021 | [C676836C2A45](<Digital/ASUS/AUS2785/C676836C2A45>) |
-| ASUS             | AUS2785 | VG27B            | 2560x1440 | 27.2 | 2020 | [8BF515DE4FD0](<Digital/ASUS/AUS2785/8BF515DE4FD0>) |
+| ASUS             | AUS2785 | VG27B            | 2560x1440 | 27.2 | 2020 | [319954E31662](<Digital/ASUS/AUS2785/319954E31662>) |
+| ASUS             | AUS2785 | VG27B            | 2560x1440 | 27.2 | 2019 | [EFD3EC9DC84C](<Digital/ASUS/AUS2785/EFD3EC9DC84C>) |
 | ASUS             | AUS2786 | VG27B            | 2560x1440 | 27.2 | 2021 | [AD573F4F5464](<Digital/ASUS/AUS2786/AD573F4F5464>) |
 | ASUS             | AUS2786 | VG27B            | 2560x1440 | 27.2 | 2019 | [5B28C5436ABA](<Digital/ASUS/AUS2786/5B28C5436ABA>) |
 | ASUS             | AUS2787 | VG27VQ           | 1920x1080 | 27.2 | 2022 | [C98543682F51](<Digital/ASUS/AUS2787/C98543682F51>) |
 | ASUS             | AUS2787 | VG27VQ           | 1920x1080 | 27.2 | 2021 | [8DD7A0C02286](<Digital/ASUS/AUS2787/8DD7A0C02286>) |
 | ASUS             | AUS2787 | VG27VQ           | 1920x1080 | 27.2 | 2020 | [4BA75978B85F](<Digital/ASUS/AUS2787/4BA75978B85F>) |
 | ASUS             | AUS2789 | PG279QE          | 2560x1440 | 27.2 |      | [EA82496CD312](<Digital/ASUS/AUS2789/EA82496CD312>) |
+| ASUS             | AUS278A | PB278QV          | 2560x1440 | 27.2 | 2021 | [86545FB4354A](<Digital/ASUS/AUS278A/86545FB4354A>) |
 | ASUS             | AUS278A | PB278QV          | 2560x1440 | 27.2 | 2020 | [1776791EBF9F](<Digital/ASUS/AUS278A/1776791EBF9F>) |
 | ASUS             | AUS278A | PB278QV          | 2560x1440 | 27.2 | 2019 | [32524E0516D5](<Digital/ASUS/AUS278A/32524E0516D5>) |
 | ASUS             | AUS278E | ROG XG279Q       | 2560x1440 | 27.2 | 2020 | [0CE9433C3C68](<Digital/ASUS/AUS278E/0CE9433C3C68>) |
+| ASUS             | AUS278F | VG279QM          | 1920x1080 | 27.2 | 2021 | [1D7D89351826](<Digital/ASUS/AUS278F/1D7D89351826>) |
 | ASUS             | AUS278F | VG279QM          | 1920x1080 | 27.2 | 2020 | [68EF34950DD0](<Digital/ASUS/AUS278F/68EF34950DD0>) |
 | ASUS             | AUS27A1 | PB27U            | 3840x2160 | 27.2 | 2018 | [0C31666671FD](<Digital/ASUS/AUS27A1/0C31666671FD>) |
 | ASUS             | AUS27A1 | PB27U            | 3840x2160 | 27.2 | 2017 | [5EA35E3826C5](<Digital/ASUS/AUS27A1/5EA35E3826C5>) |
@@ -1042,11 +1123,12 @@ model and ID.
 | ASUS             | AUS27A2 | MX27UC           | 3840x2160 | 27.2 | 2018 | [07014FB65429](<Digital/ASUS/AUS27A2/07014FB65429>) |
 | ASUS             | AUS27A2 | MX27UC           | 3840x2160 | 27.2 | 2017 | [338647361472](<Digital/ASUS/AUS27A2/338647361472>) |
 | ASUS             | AUS27A3 | VZ27A            | 2560x1440 | 27.2 | 2017 | [1481D90A4DAA](<Digital/ASUS/AUS27A3/1481D90A4DAA>) |
+| ASUS             | AUS27A4 | ROG PG27U        | 3840x2160 | 27.2 | 2018 | [F498EB798099](<Digital/ASUS/AUS27A4/F498EB798099>) |
 | ASUS             | AUS27A4 | ROG PG27U        | 3840x2160 | 27.2 |      | [3CC9C4EBB497](<Digital/ASUS/AUS27A4/3CC9C4EBB497>) |
 | ASUS             | AUS27A5 | VZ27V            | 1920x1080 | 27.2 | 2019 | [CBB981D705DC](<Digital/ASUS/AUS27A5/CBB981D705DC>) |
-| ASUS             | AUS27A5 | VZ27V            | 1920x1080 | 27.2 | 2017 | [B70EB8B1E8E0](<Digital/ASUS/AUS27A5/B70EB8B1E8E0>) |
+| ASUS             | AUS27A5 | VZ27V            | 1920x1080 | 27.2 | 2017 | [1C160B975973](<Digital/ASUS/AUS27A5/1C160B975973>) |
 | ASUS             | AUS27A6 | XG27VQ           | 1920x1080 | 27.2 | 2019 | [D304CDA55CDD](<Digital/ASUS/AUS27A6/D304CDA55CDD>) |
-| ASUS             | AUS27A6 | XG27VQ           | 1920x1080 | 27.2 | 2018 | [DC8842A0FEE6](<Digital/ASUS/AUS27A6/DC8842A0FEE6>) |
+| ASUS             | AUS27A6 | XG27VQ           | 1920x1080 | 27.2 | 2018 | [1339A32086B2](<Digital/ASUS/AUS27A6/1339A32086B2>) |
 | ASUS             | AUS27A6 | XG27VQ           | 1920x1080 | 27.2 |      | [1D357B1D50E2](<Digital/ASUS/AUS27A6/1D357B1D50E2>) |
 | ASUS             | AUS27A7 | BE27A            | 2560x1440 | 27.2 | 2020 | [5A4CF163BFFB](<Digital/ASUS/AUS27A7/5A4CF163BFFB>) |
 | ASUS             | AUS27A7 | BE27A            | 2560x1440 | 27.2 | 2019 | [8BFA727AEFEB](<Digital/ASUS/AUS27A7/8BFA727AEFEB>) |
@@ -1060,18 +1142,20 @@ model and ID.
 | ASUS             | AUS27AD | VG278            | 1920x1080 | 27.2 | 2018 | [1DB2079F037C](<Digital/ASUS/AUS27AD/1DB2079F037C>) |
 | ASUS             | AUS27AD | VG278            | 1920x1080 | 27.2 | 2017 | [DEC4795131B9](<Digital/ASUS/AUS27AD/DEC4795131B9>) |
 | ASUS             | AUS27AD | VG278            | 1920x1080 | 27.2 |      | [0E4789E50297](<Digital/ASUS/AUS27AD/0E4789E50297>) |
+| ASUS             | AUS27AE | VP278            | 1920x1080 | 27.2 | 2021 | [7B5346C29D30](<Digital/ASUS/AUS27AE/7B5346C29D30>) |
 | ASUS             | AUS27AE | VP278            | 1920x1080 | 27.2 | 2020 | [612BE9F48887](<Digital/ASUS/AUS27AE/612BE9F48887>) |
 | ASUS             | AUS27AE | VP278            | 1920x1080 | 27.2 | 2019 | [3BB764C7B042](<Digital/ASUS/AUS27AE/3BB764C7B042>) |
 | ASUS             | AUS27AE | VP278            | 1920x1080 | 27.2 | 2018 | [430454D04DF7](<Digital/ASUS/AUS27AE/430454D04DF7>) |
 | ASUS             | AUS27AE | VP278            | 1920x1080 | 27.2 | 2017 | [31C98619F365](<Digital/ASUS/AUS27AE/31C98619F365>) |
 | ASUS             | AUS27AE |                  | 1920x1080 | 27.2 |      | [6F3E5292D9FB](<Digital/ASUS/AUS27AE/6F3E5292D9FB>) |
 | ASUS             | AUS27AF | VG278            | 1920x1080 | 27.2 | 2021 | [F56D87847EE8](<Digital/ASUS/AUS27AF/F56D87847EE8>) |
+| ASUS             | AUS27AF | VG278            | 1920x1080 | 27.2 | 2020 | [B7B955A37C02](<Digital/ASUS/AUS27AF/B7B955A37C02>) |
 | ASUS             | AUS27AF | VG278            | 1920x1080 | 27.2 | 2019 | [40DB601DE4F4](<Digital/ASUS/AUS27AF/40DB601DE4F4>) |
-| ASUS             | AUS27AF | VG278            | 1920x1080 | 27.2 | 2018 | [59DBD4847D72](<Digital/ASUS/AUS27AF/59DBD4847D72>) |
+| ASUS             | AUS27AF | VG278            | 1920x1080 | 27.2 | 2018 | [3645226CE897](<Digital/ASUS/AUS27AF/3645226CE897>) |
 | ASUS             | AUS27AF | VG278            | 1920x1080 | 27.2 | 2017 | [52041A8EC462](<Digital/ASUS/AUS27AF/52041A8EC462>) |
 | ASUS             | AUS27B1 | ROG PG278QR      | 2560x1440 | 27.2 | 2018 | [39C49DE914D8](<Digital/ASUS/AUS27B1/39C49DE914D8>) |
 | ASUS             | AUS27B1 | ROG PG278QR      | 2560x1440 | 27.2 | 2017 | [1AC571F2BF06](<Digital/ASUS/AUS27B1/1AC571F2BF06>) |
-| ASUS             | AUS27B1 | ROG PG278QR      | 2560x1440 | 27.2 | 2016 | [37A25849F881](<Digital/ASUS/AUS27B1/37A25849F881>) |
+| ASUS             | AUS27B1 | ROG PG278QR      | 2560x1440 | 27.2 | 2016 | [2F07D4399187](<Digital/ASUS/AUS27B1/2F07D4399187>) |
 | ASUS             | AUS27B2 | ROG PG278QR      | 2560x1440 | 27.2 | 2018 | [475A1B132FC1](<Digital/ASUS/AUS27B2/475A1B132FC1>) |
 | ASUS             | AUS27B2 | ROG PG278QR      | 2560x1440 | 27.2 | 2017 | [C15DA87902FA](<Digital/ASUS/AUS27B2/C15DA87902FA>) |
 | ASUS             | AUS27B2 | ROG              | 2560x1440 | 27.2 |      | [60C6A0D75726](<Digital/ASUS/AUS27B2/60C6A0D75726>) |
@@ -1088,27 +1172,31 @@ model and ID.
 | ASUS             | AUS27C1 | VZ279            | 1920x1080 | 27.2 | 2019 | [4DEFFF9153D1](<Digital/ASUS/AUS27C1/4DEFFF9153D1>) |
 | ASUS             | AUS27C1 | VZ279            | 1920x1080 | 27.2 | 2018 | [0E9E4094A5BF](<Digital/ASUS/AUS27C1/0E9E4094A5BF>) |
 | ASUS             | AUS27C2 | VL278            | 1920x1080 | 27.2 | 2019 | [47106D4571B7](<Digital/ASUS/AUS27C2/47106D4571B7>) |
-| ASUS             | AUS27C3 | VG27V            | 1920x1080 | 27.2 | 2021 | [90667BF5C77F](<Digital/ASUS/AUS27C3/90667BF5C77F>) |
+| ASUS             | AUS27C3 | VG27V            | 1920x1080 | 27.2 | 2021 | [43AEE579A08A](<Digital/ASUS/AUS27C3/43AEE579A08A>) |
 | ASUS             | AUS27C3 | VG27V            | 1920x1080 | 27.2 | 2020 | [983DFFE87F9B](<Digital/ASUS/AUS27C3/983DFFE87F9B>) |
 | ASUS             | AUS27C3 | MX279            | 1920x1080 | 27.2 | 2018 | [E5A112C28446](<Digital/ASUS/AUS27C3/E5A112C28446>) |
 | ASUS             | AUS27C3 |                  | 1920x1080 | 27.2 |      | [BCF55B7F1CBF](<Digital/ASUS/AUS27C3/BCF55B7F1CBF>) |
 | ASUS             | AUS27C4 | VC279            | 1920x1080 | 27.2 | 2018 | [05CE8F782E08](<Digital/ASUS/AUS27C4/05CE8F782E08>) |
 | ASUS             | AUS27C4 | VC279            | 1920x1080 | 27.2 |      | [97FEBC1059B1](<Digital/ASUS/AUS27C4/97FEBC1059B1>) |
 | ASUS             | AUS27CA | MZ279            | 1920x1080 | 27.2 | 2020 | [6E67CCD31ED6](<Digital/ASUS/AUS27CA/6E67CCD31ED6>) |
-| ASUS             | AUS27D1 | VA279            | 1920x1080 | 27.2 | 2019 | [68272DF6FED4](<Digital/ASUS/AUS27D1/68272DF6FED4>) |
+| ASUS             | AUS27D1 | VA279            | 1920x1080 | 27.2 | 2022 | [093C20C63389](<Digital/ASUS/AUS27D1/093C20C63389>) |
+| ASUS             | AUS27D1 | VA279            | 1920x1080 | 27.2 | 2019 | [4ABBD564DB28](<Digital/ASUS/AUS27D1/4ABBD564DB28>) |
+| ASUS             | AUS27D1 | VA279            | 1920x1080 | 27.2 | 2018 | [512CAF4C2C56](<Digital/ASUS/AUS27D1/512CAF4C2C56>) |
 | ASUS             | AUS27D1 | VA279            | 1920x1080 | 27.2 |      | [26956027147E](<Digital/ASUS/AUS27D1/26956027147E>) |
-| ASUS             | AUS27D2 | VA27EHE          | 1920x1080 | 27.2 | 2022 | [AFE3B408CD6A](<Digital/ASUS/AUS27D2/AFE3B408CD6A>) |
+| ASUS             | AUS27D2 | VA27EHE          | 1920x1080 | 27.2 | 2022 | [13BB4247E352](<Digital/ASUS/AUS27D2/13BB4247E352>) |
 | ASUS             | AUS27D2 | VA27EHE          | 1920x1080 | 27.2 | 2021 | [10E6053C1943](<Digital/ASUS/AUS27D2/10E6053C1943>) |
 | ASUS             | AUS27D2 | VA27EHE          | 1920x1080 | 27.2 | 2020 | [139E32E4B367](<Digital/ASUS/AUS27D2/139E32E4B367>) |
 | ASUS             | AUS27D2 | VA27EHE          | 1920x1080 | 27.2 | 2019 | [5AC55756AB0E](<Digital/ASUS/AUS27D2/5AC55756AB0E>) |
 | ASUS             | AUS27D4 | VZ279HEG1R       | 1920x1080 | 27.2 | 2021 | [C5CB6F09B37D](<Digital/ASUS/AUS27D4/C5CB6F09B37D>) |
+| ASUS             | AUS27D6 | VZ27EHE          | 1920x1080 | 27.2 | 2022 | [20031C23AD6C](<Digital/ASUS/AUS27D6/20031C23AD6C>) |
+| ASUS             | AUS27DA | VY279            | 1920x1080 | 27.2 | 2021 | [E5BC804E834A](<Digital/ASUS/AUS27DA/E5BC804E834A>) |
 | ASUS             | AUS27DA | VY279            | 1920x1080 | 27.2 | 2020 | [1EF1E1FC9043](<Digital/ASUS/AUS27DA/1EF1E1FC9043>) |
 | ASUS             | AUS27DD | VP279            | 1920x1080 | 27.2 | 2021 | [B91C67FEEF03](<Digital/ASUS/AUS27DD/B91C67FEEF03>) |
-| ASUS             | AUS27DD | VP279            | 1920x1080 | 27.2 | 2020 | [6B44756CFF58](<Digital/ASUS/AUS27DD/6B44756CFF58>) |
+| ASUS             | AUS27DD | VP279            | 1920x1080 | 27.2 | 2020 | [40F7CB841C41](<Digital/ASUS/AUS27DD/40F7CB841C41>) |
 | ASUS             | AUS27DF | VP279            | 1920x1080 | 27.2 | 2020 | [45E09EC8B3D9](<Digital/ASUS/AUS27DF/45E09EC8B3D9>) |
 | ASUS             | AUS27E0 | VG27W            | 2560x1440 | 27.2 | 2021 | [201C62FA39F5](<Digital/ASUS/AUS27E0/201C62FA39F5>) |
 | ASUS             | AUS27E0 | VG27W            | 2560x1440 | 27.2 | 2020 | [A44F96936C29](<Digital/ASUS/AUS27E0/A44F96936C29>) |
-| ASUS             | AUS27E4 | VX279            | 1920x1080 | 27.2 | 2019 | [4F147CF64CF5](<Digital/ASUS/AUS27E4/4F147CF64CF5>) |
+| ASUS             | AUS27E4 | VX279            | 1920x1080 | 27.2 | 2019 | [25BEAFD3915A](<Digital/ASUS/AUS27E4/25BEAFD3915A>) |
 | ASUS             | AUS27E4 | VX279            | 1920x1080 | 27.2 |      | [1303F2FF360D](<Digital/ASUS/AUS27E4/1303F2FF360D>) |
 | ASUS             | AUS28A0 | VG28UQL1A        | 3840x2160 | 27.8 | 2021 | [07D652CBE74E](<Digital/ASUS/AUS28A0/07D652CBE74E>) |
 | ASUS             | AUS28B1 | VP28U            | 3840x2160 | 27.8 | 2021 | [0888FB1E39FC](<Digital/ASUS/AUS28B1/0888FB1E39FC>) |
@@ -1123,11 +1211,15 @@ model and ID.
 | ASUS             | AUS28BA | VG289            | 3840x2160 | 27.8 | 2019 | [1C404284E661](<Digital/ASUS/AUS28BA/1C404284E661>) |
 | ASUS             | AUS28BA |                  | 3840x2160 | 27.8 |      | [73719BE18166](<Digital/ASUS/AUS28BA/73719BE18166>) |
 | ASUS             | AUS28CA |                  | 3840x2160 | 27.8 | 2022 | [4ABC0534AA0F](<Digital/ASUS/AUS28CA/4ABC0534AA0F>) |
+| ASUS             | AUS28CA | VG289Q1A         | 3840x1080 | 27.8 | 2022 | [EA772BC80B38](<Digital/ASUS/AUS28CA/EA772BC80B38>) |
+| ASUS             | AUS28CA | VG289Q1A         | 3840x2160 | 27.8 | 2021 | [111CF7AE7912](<Digital/ASUS/AUS28CA/111CF7AE7912>) |
 | ASUS             | AUS28CA |                  | 3840x2160 | 27.8 | 2020 | [E1109DC26EF8](<Digital/ASUS/AUS28CA/E1109DC26EF8>) |
-| ASUS             | AUS3220 | XG32VC           | 2560x1440 | 31.5 | 2021 | [D56933BC62C3](<Digital/ASUS/AUS3220/D56933BC62C3>) |
+| ASUS             | AUS3220 | XG32VC           | 2560x1440 | 31.5 | 2021 | [94B8EFEC02E6](<Digital/ASUS/AUS3220/94B8EFEC02E6>) |
 | ASUS             | AUS3260 | PA32U            | 3840x2160 | 32.1 | 2018 | [A756CBB5E80D](<Digital/ASUS/AUS3260/A756CBB5E80D>) |
+| ASUS             | AUS3262 | PA32U            | 3840x2160 | 32.1 | 2018 | [CA09C0418FCC](<Digital/ASUS/AUS3262/CA09C0418FCC>) |
 | ASUS             | AUS3264 | PA329C           | 3840x2160 | 32.1 | 2021 | [9B6504D6EB78](<Digital/ASUS/AUS3264/9B6504D6EB78>) |
 | ASUS             | AUS3264 | PA329C           | 3840x2160 | 32.1 | 2020 | [E988D979DD35](<Digital/ASUS/AUS3264/E988D979DD35>) |
+| ASUS             | AUS326E | PA329CV          | 3840x2160 | 32.1 | 2021 | [20E1EA2ECC9D](<Digital/ASUS/AUS326E/20E1EA2ECC9D>) |
 | ASUS             | AUS32A1 | VA32AQ           | 2560x1440 | 31.5 | 2018 | [090804E0D4C2](<Digital/ASUS/AUS32A1/090804E0D4C2>) |
 | ASUS             | AUS32A1 | VA32AQ           | 2560x1440 | 31.5 | 2017 | [08FF1F2B9AEC](<Digital/ASUS/AUS32A1/08FF1F2B9AEC>) |
 | ASUS             | AUS32A1 | VA32AQ           | 2560x1440 | 31.5 | 2016 | [92D60ED56C76](<Digital/ASUS/AUS32A1/92D60ED56C76>) |
@@ -1148,7 +1240,7 @@ model and ID.
 | ASUS             | AUS32B2 | XG32VQR          | 2560x1440 | 31.5 | 2019 | [07A9230BB733](<Digital/ASUS/AUS32B2/07A9230BB733>) |
 | ASUS             | AUS32B2 |                  | 2560x1440 | 31.5 |      | [A768883B886C](<Digital/ASUS/AUS32B2/A768883B886C>) |
 | ASUS             | AUS32B4 | ROG PG32UQX      | 3840x2160 | 32.1 | 2021 | [D53B8BC9DD91](<Digital/ASUS/AUS32B4/D53B8BC9DD91>) |
-| ASUS             | AUS32C3 | VG328            | 1920x1080 | 31.5 | 2020 | [B2E31900AC5F](<Digital/ASUS/AUS32C3/B2E31900AC5F>) |
+| ASUS             | AUS32C3 | VG328            | 1920x1080 | 31.5 | 2020 | [90D69C5D6AB3](<Digital/ASUS/AUS32C3/90D69C5D6AB3>) |
 | ASUS             | AUS32DA | VA326            | 1920x1080 | 31.5 | 2019 | [82356551B9F9](<Digital/ASUS/AUS32DA/82356551B9F9>) |
 | ASUS             | AUS32E0 |                  | 2560x1440 | 31.5 | 2021 | [05F3FC661B07](<Digital/ASUS/AUS32E0/05F3FC661B07>) |
 | ASUS             | AUS32E0 |                  | 2560x1440 | 31.5 | 2020 | [1131263C2ED6](<Digital/ASUS/AUS32E0/1131263C2ED6>) |
@@ -1156,18 +1248,20 @@ model and ID.
 | ASUS             | AUS32F3 | PG329            | 2560x1440 | 32.1 | 2021 | [206E93261BBA](<Digital/ASUS/AUS32F3/206E93261BBA>) |
 | ASUS             | AUS32FA | VA326            | 1920x1080 | 31.5 | 2018 | [DFC9045B85BF](<Digital/ASUS/AUS32FA/DFC9045B85BF>) |
 | ASUS             | AUS32FA | VA326            | 1920x1080 | 31.5 | 2016 | [22F041756EC3](<Digital/ASUS/AUS32FA/22F041756EC3>) |
+| ASUS             | AUS342E | PA348CGV         | 3440x1440 | 34.2 | 2022 | [182C87601697](<Digital/ASUS/AUS342E/182C87601697>) |
 | ASUS             | AUS3431 |                  | 3440x1440 | 34.1 |      | [D6D0DDA2D681](<Digital/ASUS/AUS3431/D6D0DDA2D681>) |
 | ASUS             | AUS3432 | PA34V            | 3440x1440 | 34.2 | 2019 | [5D71C9AC345D](<Digital/ASUS/AUS3432/5D71C9AC345D>) |
-| ASUS             | AUS3435 | VG34V            | 3440x1440 | 34.1 | 2021 | [AB4FF85CAF30](<Digital/ASUS/AUS3435/AB4FF85CAF30>) |
+| ASUS             | AUS3435 | VG34V            | 3440x1440 | 34.1 | 2021 | [7B1151591906](<Digital/ASUS/AUS3435/7B1151591906>) |
 | ASUS             | AUS3435 | VG34V            | 3440x1440 | 34.1 | 2020 | [4C291191C3FA](<Digital/ASUS/AUS3435/4C291191C3FA>) |
 | ASUS             | AUS343B | PG349Q           | 3440x1440 | 34.2 | 2019 | [75273275A7E8](<Digital/ASUS/AUS343B/75273275A7E8>) |
 | ASUS             | AUS3551 | XG35V            | 3440x1440 | 35.1 | 2019 | [4C844AC5B095](<Digital/ASUS/AUS3551/4C844AC5B095>) |
 | ASUS             | AUS3551 | XG35V            | 3440x1440 | 35.1 | 2018 | [2818FDF167ED](<Digital/ASUS/AUS3551/2818FDF167ED>) |
-| ASUS             | AUS3551 | XG35V            | 3440x1440 | 35.1 | 2017 | [A3B7375BFD9C](<Digital/ASUS/AUS3551/A3B7375BFD9C>) |
-| ASUS             | AUS3553 | ROG PG35V        | 3440x1440 | 34.7 | 2020 | [A97DA5C082EF](<Digital/ASUS/AUS3553/A97DA5C082EF>) |
+| ASUS             | AUS3551 | XG35V            | 3440x1440 | 35.1 | 2017 | [5BF0AE7AB23E](<Digital/ASUS/AUS3551/5BF0AE7AB23E>) |
+| ASUS             | AUS3553 | ROG PG35V        | 3440x1440 | 34.7 | 2020 | [1F6B755EFEF5](<Digital/ASUS/AUS3553/1F6B755EFEF5>) |
 | ASUS             | AUS3554 | VG35V            | 3440x1440 | 35.1 | 2021 | [663E1449AB91](<Digital/ASUS/AUS3554/663E1449AB91>) |
 | ASUS             | AUS3554 | VG35V            | 3440x1440 | 35.1 | 2020 | [0E5A867D3E5D](<Digital/ASUS/AUS3554/0E5A867D3E5D>) |
 | ASUS             | AUS3554 | VG35V            | 3440x1440 | 35.1 | 2019 | [9F46283DC5E9](<Digital/ASUS/AUS3554/9F46283DC5E9>) |
+| ASUS             | AUS42E0 | PG42UQ           | 3840x2160 | 41.6 | 2022 | [847511CBDF51](<Digital/ASUS/AUS42E0/847511CBDF51>) |
 | ASUS             | AUS4390 | XG43V            | 3840x1200 | 43.3 | 2021 | [7E38470ADD5E](<Digital/ASUS/AUS4390/7E38470ADD5E>) |
 | ASUS             | AUS4390 |                  | 3840x1200 | 43.3 |      | [D3BD0B326E68](<Digital/ASUS/AUS4390/D3BD0B326E68>) |
 | ASUS             | AUS43A0 | XG43UQ           | 3840x2160 | 42.5 | 2020 | [056824F61107](<Digital/ASUS/AUS43A0/056824F61107>) |
@@ -1175,6 +1269,7 @@ model and ID.
 | ASUS             | AUS43A1 | PG43U            | 3840x2160 | 42.5 | 2020 | [4CD1AD8768C4](<Digital/ASUS/AUS43A1/4CD1AD8768C4>) |
 | ASUS             | AUS43E1 | XG438            | 3840x2160 | 42.5 | 2021 | [DA19D1613603](<Digital/ASUS/AUS43E1/DA19D1613603>) |
 | ASUS             | AUS43E1 | XG438            | 3840x2160 | 42.5 | 2020 | [6FE68FEA54A7](<Digital/ASUS/AUS43E1/6FE68FEA54A7>) |
+| ASUS             | AUS49A1 | XG49V            | 3840x1080 | 49.1 | 2022 | [A9910FBB82D0](<Digital/ASUS/AUS49A1/A9910FBB82D0>) |
 | ASUS             | AUS49A1 | XG49V            | 3840x1080 | 49.1 | 2021 | [64E1F0ADD021](<Digital/ASUS/AUS49A1/64E1F0ADD021>) |
 | ASUS             | AUS49A1 | XG49V            | 3840x1080 | 49.1 | 2019 | [14E4C404BB4B](<Digital/ASUS/AUS49A1/14E4C404BB4B>) |
 | ASUS             | AUS65A1 | ROG PG65UQ       | 3840x2160 | 64.5 | 2019 | [1C01397B22A6](<Digital/ASUS/AUS65A1/1C01397B22A6>) |
@@ -1185,6 +1280,7 @@ model and ID.
 | AU Optronics     | AUO00ED | 6985X            | 1920x1080 | 15.3 | 2011 | [3EEEA5903D3D](<Digital/AU Optronics/AUO00ED/3EEEA5903D3D>) |
 | AU Optronics     | AUO0100 |                  | 1920x1080 |      | 2022 | [D38D0B130850](<Digital/AU Optronics/AUO0100/D38D0B130850>) |
 | AU Optronics     | AUO0114 | B140EW01V1 B1... | 1280x768  | 15.2 |      | [20BCEC5DBBC4](<Digital/AU Optronics/AUO0114/20BCEC5DBBC4>) |
+| AU Optronics     | AUO019C |                  | 1920x1200 | 13.4 | 2021 | [FC1013A8EE1B](<Digital/AU Optronics/AUO019C/FC1013A8EE1B>) |
 | AU Optronics     | AUO01EE | B156RW01 V1      | 1600x900  | 15.3 | 2008 | [4AD0A1347398](<Digital/AU Optronics/AUO01EE/4AD0A1347398>) |
 | AU Optronics     | AUO0291 | B156HAB03.1      | 1920x1080 | 15.3 | 2019 | [BBC30DACB4DE](<Digital/AU Optronics/AUO0291/BBC30DACB4DE>) |
 | AU Optronics     | AUO029E | B173RW01 V2      | 1600x900  | 17.1 | 2009 | [ADF0FF1C04DD](<Digital/AU Optronics/AUO029E/ADF0FF1C04DD>) |
@@ -1195,6 +1291,7 @@ model and ID.
 | AU Optronics     | AUO068B |                  | 1920x1080 | 13.9 | 2019 | [714B4E82D55D](<Digital/AU Optronics/AUO068B/714B4E82D55D>) |
 | AU Optronics     | AUO0696 | B140HAN06.8      | 1920x1080 | 13.9 | 2020 | [4ADC612A53F2](<Digital/AU Optronics/AUO0696/4ADC612A53F2>) |
 | AU Optronics     | AUO0908 | B160HW02 V0      | 1920x1080 | 15.9 | 2011 | [03F0DC7F4CF1](<Digital/AU Optronics/AUO0908/03F0DC7F4CF1>) |
+| AU Optronics     | AUO0A97 |                  | 1920x1080 | 17.3 | 2020 | [F4C9C7987679](<Digital/AU Optronics/AUO0A97/F4C9C7987679>) |
 | AU Optronics     | AUO0B93 | B140HAN04.0      | 1920x1080 | 13.9 | 2020 | [06F0ED1A9175](<Digital/AU Optronics/AUO0B93/06F0ED1A9175>) |
 | AU Optronics     | AUO0B9E | B160UAN01.H      | 1920x1200 | 15.9 |      | [A998B0A347F9](<Digital/AU Optronics/AUO0B9E/A998B0A347F9>) |
 | AU Optronics     | AUO0BA2 | B140QAN02.3      | 2560x1440 | 13.9 | 2021 | [2CC992B3BFF3](<Digital/AU Optronics/AUO0BA2/2CC992B3BFF3>) |
@@ -1207,6 +1304,8 @@ model and ID.
 | AU Optronics     | AUO0F07 | B150XG02V1       | 1024x768  | 15.2 |      | [3F919B3B3E28](<Digital/AU Optronics/AUO0F07/3F919B3B3E28>) |
 | AU Optronics     | AUO0F0D | B154EW01 V.7     | 1280x800  | 15.4 |      | [03416BEC573D](<Digital/AU Optronics/AUO0F0D/03416BEC573D>) |
 | AU Optronics     | AUO0F93 | C1H8T            | 1920x1200 | 13.4 | 2020 | [52889EA52D61](<Digital/AU Optronics/AUO0F93/52889EA52D61>) |
+| AU Optronics     | AUO0FA7 |                  | 2560x1600 | 14.0 | 2022 | [DFA8F9F72DF4](<Digital/AU Optronics/AUO0FA7/DFA8F9F72DF4>) |
+| AU Optronics     | AUO1013 |                  | 1128x1504 | 13.3 | 2018 | [9D46B496225E](<Digital/AU Optronics/AUO1013/9D46B496225E>) |
 | AU Optronics     | AUO101A |                  | 3000x2000 | 12.8 | 2016 | [07FBAF811632](<Digital/AU Optronics/AUO101A/07FBAF811632>) |
 | AU Optronics     | AUO1020 | A089SW01 V0      | 1024x600  | 8.6  | 2008 | [71D8B5F2D17F](<Digital/AU Optronics/AUO1020/71D8B5F2D17F>) |
 | AU Optronics     | AUO102C | B133XTN01.0      | 1366x768  | 13.0 | 2012 | [E90D70F7FBEC](<Digital/AU Optronics/AUO102C/E90D70F7FBEC>) |
@@ -1254,6 +1353,7 @@ model and ID.
 | AU Optronics     | AUO106F | B120YAN01.0      | 2880x1920 | 11.9 | 2016 | [5397F05F0797](<Digital/AU Optronics/AUO106F/5397F05F0797>) |
 | AU Optronics     | AUO107D | J4VRV            | 1920x1080 | 15.0 | 2020 | [A29379F64006](<Digital/AU Optronics/AUO107D/A29379F64006>) |
 | AU Optronics     | AUO1088 | B170UW01 V0      | 1920x1200 | 17.2 | 2007 | [B20CF959B2CF](<Digital/AU Optronics/AUO1088/B20CF959B2CF>) |
+| AU Optronics     | AUO108F |                  | 1920x1080 | 13.2 | 2019 | [4243E2CDBA09](<Digital/AU Optronics/AUO108F/4243E2CDBA09>) |
 | AU Optronics     | AUO1092 |                  | 1920x1080 | 15.3 | 2019 | [2F7313688CE9](<Digital/AU Optronics/AUO1092/2F7313688CE9>) |
 | AU Optronics     | AUO109B | B173ZAN01.0      | 3840x2160 | 17.1 | 2017 | [E448241C2050](<Digital/AU Optronics/AUO109B/E448241C2050>) |
 | AU Optronics     | AUO109B | 8CJK2            | 3840x2160 | 17.1 | 2015 | [7844576A15AB](<Digital/AU Optronics/AUO109B/7844576A15AB>) |
@@ -1353,6 +1453,7 @@ model and ID.
 | AU Optronics     | AUO12ED | B156HAN01.2      | 1920x1080 | 15.3 | 2012 | [62F95FF69997](<Digital/AU Optronics/AUO12ED/62F95FF69997>) |
 | AU Optronics     | AUO132C | B133XTN01.3      | 1366x768  | 13.0 | 2014 | [C086BC4D2430](<Digital/AU Optronics/AUO132C/C086BC4D2430>) |
 | AU Optronics     | AUO132C | B133XTF01.3      | 1366x768  | 13.0 | 2012 | [4977213E56DF](<Digital/AU Optronics/AUO132C/4977213E56DF>) |
+| AU Optronics     | AUO132C |                  | 1366x768  | 13.0 | 2008 | [BB2DA15A9775](<Digital/AU Optronics/AUO132C/BB2DA15A9775>) |
 | AU Optronics     | AUO1336 | B140QAN01.3      | 2560x1440 | 13.9 | 2016 | [303CF288E687](<Digital/AU Optronics/AUO1336/303CF288E687>) |
 | AU Optronics     | AUO133B | B140ZAN01.3      | 3840x2160 | 13.9 | 2018 | [9EF5B13ACC8E](<Digital/AU Optronics/AUO133B/9EF5B13ACC8E>) |
 | AU Optronics     | AUO133C | 6V83Y            | 1366x768  | 13.9 | 2014 | [218FD087DF58](<Digital/AU Optronics/AUO133C/218FD087DF58>) |
@@ -1390,6 +1491,8 @@ model and ID.
 | AU Optronics     | AUO143D | B140HTN01.4      | 1920x1080 | 13.9 | 2013 | [ACAB08DDF772](<Digital/AU Optronics/AUO143D/ACAB08DDF772>) |
 | AU Optronics     | AUO1444 | XU295            | 1280x800  | 14.0 |      | [F4ACA7093C1F](<Digital/AU Optronics/AUO1444/F4ACA7093C1F>) |
 | AU Optronics     | AUO1447 | U804G )9FOo      | 1440x900  | 14.0 | 2006 | [358984D42C30](<Digital/AU Optronics/AUO1447/358984D42C30>) |
+| AU Optronics     | AUO145C |                  | 1366x768  | 11.6 | 2017 | [96357B7FE2FF](<Digital/AU Optronics/AUO145C/96357B7FE2FF>) |
+| AU Optronics     | AUO145C |                  | 1366x768  | 11.6 | 2016 | [117801EB052A](<Digital/AU Optronics/AUO145C/117801EB052A>) |
 | AU Optronics     | AUO1474 | CD514 0AMWx      | 1280x800  | 15.4 |      | [0676AE4A9E74](<Digital/AU Optronics/AUO1474/0676AE4A9E74>) |
 | AU Optronics     | AUO1496 | B173QTN01.4      | 2560x1440 | 17.1 | 2016 | [F40764034490](<Digital/AU Optronics/AUO1496/F40764034490>) |
 | AU Optronics     | AUO1496 | JYWWF            | 2560x1440 | 17.1 |      | [6B99B0883D78](<Digital/AU Optronics/AUO1496/6B99B0883D78>) |
@@ -1407,6 +1510,7 @@ model and ID.
 | AU Optronics     | AUO159D | B173HW01 V5      | 1920x1080 | 17.1 | 2010 | [7F5E4B6F8279](<Digital/AU Optronics/AUO159D/7F5E4B6F8279>) |
 | AU Optronics     | AUO159E |                  | 1600x900  | 17.1 | 2012 | [8630F19454BD](<Digital/AU Optronics/AUO159E/8630F19454BD>) |
 | AU Optronics     | AUO159E | DYMX0            | 1600x900  | 17.1 | 2011 | [779C57B0F484](<Digital/AU Optronics/AUO159E/779C57B0F484>) |
+| AU Optronics     | AUO15A7 | B140UAN05.1      | 1920x1200 | 14.0 | 2022 | [98D033712BA4](<Digital/AU Optronics/AUO15A7/98D033712BA4>) |
 | AU Optronics     | AUO15ED | B156HW01 V5      | 1920x1080 | 15.3 | 2008 | [4A5C7F54C66F](<Digital/AU Optronics/AUO15ED/4A5C7F54C66F>) |
 | AU Optronics     | AUO162C | 2C7YD            | 1366x768  | 13.0 | 2018 | [47E6ACBCA311](<Digital/AU Optronics/AUO162C/47E6ACBCA311>) |
 | AU Optronics     | AUO162C |                  | 1366x768  | 13.0 | 2015 | [C3A72ADB8F8B](<Digital/AU Optronics/AUO162C/C3A72ADB8F8B>) |
@@ -1448,6 +1552,7 @@ model and ID.
 | AU Optronics     | AUO1D8F | B133UAN01.0      | 1920x1200 | 13.4 | 2019 | [F654A6964DEB](<Digital/AU Optronics/AUO1D8F/F654A6964DEB>) |
 | AU Optronics     | AUO1E3D |                  | 1920x1080 | 13.9 | 2016 | [7ECDE1E311F7](<Digital/AU Optronics/AUO1E3D/7ECDE1E311F7>) |
 | AU Optronics     | AUO1E3D | B140HTN01.E      | 1920x1080 | 13.9 | 2015 | [AFB1132DF54F](<Digital/AU Optronics/AUO1E3D/AFB1132DF54F>) |
+| AU Optronics     | AUO1E9B |                  | 1920x1200 | 13.4 | 2021 | [193A852B060D](<Digital/AU Optronics/AUO1E9B/193A852B060D>) |
 | AU Optronics     | AUO1F3D | B140HTN01.F      | 1920x1080 | 13.9 | 2015 | [F512894873C8](<Digital/AU Optronics/AUO1F3D/F512894873C8>) |
 | AU Optronics     | AUO1F92 | M5DY2            | 1920x1080 | 15.3 | 2020 | [3AEEA5AC0C9B](<Digital/AU Optronics/AUO1F92/3AEEA5AC0C9B>) |
 | AU Optronics     | AUO2026 | B133QAN02.0      | 2560x1600 | 13.4 | 2018 | [B7CBDA80937A](<Digital/AU Optronics/AUO2026/B7CBDA80937A>) |
@@ -1457,7 +1562,7 @@ model and ID.
 | AU Optronics     | AUO202D | B133HAN02.0      | 1920x1080 | 13.2 | 2012 | [BB4728F53E08](<Digital/AU Optronics/AUO202D/BB4728F53E08>) |
 | AU Optronics     | AUO2036 | B140QAN02.0      | 2560x1440 | 13.9 | 2017 | [16F41B2CA9F5](<Digital/AU Optronics/AUO2036/16F41B2CA9F5>) |
 | AU Optronics     | AUO203C |                  | 1366x768  | 13.9 | 2019 | [23163A489FB1](<Digital/AU Optronics/AUO203C/23163A489FB1>) |
-| AU Optronics     | AUO203C | H5GW1            | 1366x768  | 13.9 | 2018 | [FF2A80A127C2](<Digital/AU Optronics/AUO203C/FF2A80A127C2>) |
+| AU Optronics     | AUO203C |                  | 1366x768  | 13.9 | 2018 | [B0D5B4875255](<Digital/AU Optronics/AUO203C/B0D5B4875255>) |
 | AU Optronics     | AUO203C |                  | 1366x768  | 13.9 | 2011 | [0250C1896648](<Digital/AU Optronics/AUO203C/0250C1896648>) |
 | AU Optronics     | AUO203C | B140XW02 V0      | 1366x768  | 13.9 | 2008 | [2322FD20631E](<Digital/AU Optronics/AUO203C/2322FD20631E>) |
 | AU Optronics     | AUO203C | 9TMDG            | 1366x768  | 13.9 |      | [1B8F7606109E](<Digital/AU Optronics/AUO203C/1B8F7606109E>) |
@@ -1471,7 +1576,7 @@ model and ID.
 | AU Optronics     | AUO205C |                  | 1366x768  | 11.6 | 2019 | [4B5ABEB587F7](<Digital/AU Optronics/AUO205C/4B5ABEB587F7>) |
 | AU Optronics     | AUO205C | B116XAN02.0      | 1366x768  | 11.6 | 2012 | [DC012098A317](<Digital/AU Optronics/AUO205C/DC012098A317>) |
 | AU Optronics     | AUO205C | B116XW02 V0      | 1366x768  | 11.6 | 2011 | [B36E03B7C593](<Digital/AU Optronics/AUO205C/B36E03B7C593>) |
-| AU Optronics     | AUO205C | B116XW02 V0      | 1366x768  | 11.6 | 2008 | [8602405C79AE](<Digital/AU Optronics/AUO205C/8602405C79AE>) |
+| AU Optronics     | AUO205C |                  | 1366x768  | 11.6 | 2008 | [3AD39C2CB51B](<Digital/AU Optronics/AUO205C/3AD39C2CB51B>) |
 | AU Optronics     | AUO206C | M6F9D            | 1366x768  | 12.7 | 2013 | [A69BCABB2646](<Digital/AU Optronics/AUO206C/A69BCABB2646>) |
 | AU Optronics     | AUO206C |                  | 1366x768  | 12.7 | 2012 | [9BA00E3B28D8](<Digital/AU Optronics/AUO206C/9BA00E3B28D8>) |
 | AU Optronics     | AUO206C |                  | 1366x768  | 12.7 | 2010 | [2D63DC154B41](<Digital/AU Optronics/AUO206C/2D63DC154B41>) |
@@ -1493,9 +1598,10 @@ model and ID.
 | AU Optronics     | AUO20EC | F414J            | 1366x768  | 15.3 | 2008 | [0826D411B2D2](<Digital/AU Optronics/AUO20EC/0826D411B2D2>) |
 | AU Optronics     | AUO20ED | B156HAN02.0      | 1920x1080 | 15.3 | 2018 | [2F2D34A18EF8](<Digital/AU Optronics/AUO20ED/2F2D34A18EF8>) |
 | AU Optronics     | AUO20ED | B156HAK02.0      | 1920x1080 | 15.3 | 2017 | [52D103B3A939](<Digital/AU Optronics/AUO20ED/52D103B3A939>) |
-| AU Optronics     | AUO20ED | B156HAN02.0      | 1920x1080 | 15.3 | 2016 | [F169DAC904DE](<Digital/AU Optronics/AUO20ED/F169DAC904DE>) |
+| AU Optronics     | AUO20ED |                  | 1920x1080 | 15.3 | 2016 | [0C0B65657CF4](<Digital/AU Optronics/AUO20ED/0C0B65657CF4>) |
 | AU Optronics     | AUO20ED |                  | 1920x1080 | 15.3 |      | [676CDB37F073](<Digital/AU Optronics/AUO20ED/676CDB37F073>) |
 | AU Optronics     | AUO212B | 0NKNX            | 3840x2160 | 13.2 | 2017 | [889107CE257C](<Digital/AU Optronics/AUO212B/889107CE257C>) |
+| AU Optronics     | AUO212C |                  | 1366x768  | 13.0 | 2015 | [A34D15D73517](<Digital/AU Optronics/AUO212C/A34D15D73517>) |
 | AU Optronics     | AUO212C | B133XTN02.1      | 1366x768  | 13.0 | 2013 | [AE4D7E2307C1](<Digital/AU Optronics/AUO212C/AE4D7E2307C1>) |
 | AU Optronics     | AUO212C | B133XW02 V1      | 1366x768  | 13.0 | 2008 | [11142ECFD3BF](<Digital/AU Optronics/AUO212C/11142ECFD3BF>) |
 | AU Optronics     | AUO212D | HHYCY            | 1920x1080 | 13.2 | 2019 | [2BD6C57E1FDF](<Digital/AU Optronics/AUO212D/2BD6C57E1FDF>) |
@@ -1573,6 +1679,7 @@ model and ID.
 | AU Optronics     | AUO2351 | JF383            | 1024x768  | 14.9 |      | [3D2741F16D24](<Digital/AU Optronics/AUO2351/3D2741F16D24>) |
 | AU Optronics     | AUO235C |                  | 1366x768  | 11.6 | 2018 | [8A30EAF65C5E](<Digital/AU Optronics/AUO235C/8A30EAF65C5E>) |
 | AU Optronics     | AUO235C | V4VFK            | 1366x768  | 11.6 | 2017 | [06BA16772CD9](<Digital/AU Optronics/AUO235C/06BA16772CD9>) |
+| AU Optronics     | AUO235C | 7KKCG            | 1366x768  | 11.6 | 2015 | [64EFC7D32BCB](<Digital/AU Optronics/AUO235C/64EFC7D32BCB>) |
 | AU Optronics     | AUO235C |                  | 1366x768  | 11.6 | 2014 | [3244099C923B](<Digital/AU Optronics/AUO235C/3244099C923B>) |
 | AU Optronics     | AUO235C | B116XTN02.3      | 1366x768  | 11.6 | 2013 | [B40F22B3F308](<Digital/AU Optronics/AUO235C/B40F22B3F308>) |
 | AU Optronics     | AUO235C | FGF20            | 1366x768  | 11.6 |      | [AA2CB9095A5E](<Digital/AU Optronics/AUO235C/AA2CB9095A5E>) |
@@ -1732,6 +1839,7 @@ model and ID.
 | AU Optronics     | AUO329B | B173ZAN03.2      | 3840x2160 | 17.1 | 2019 | [560A1A1B0A58](<Digital/AU Optronics/AUO329B/560A1A1B0A58>) |
 | AU Optronics     | AUO329D | B173HAN03.2      | 1920x1080 | 17.1 | 2018 | [8F8DB90D957E](<Digital/AU Optronics/AUO329D/8F8DB90D957E>) |
 | AU Optronics     | AUO329D | B173HAN03.2      | 1920x1080 | 17.1 | 2017 | [1390B363E884](<Digital/AU Optronics/AUO329D/1390B363E884>) |
+| AU Optronics     | AUO329F |                  | 2560x1600 | 13.4 | 2020 | [2ACB13ECC0E2](<Digital/AU Optronics/AUO329F/2ACB13ECC0E2>) |
 | AU Optronics     | AUO32EB | B156ZAN03.2      | 3840x2160 | 15.3 | 2017 | [04E9794EB8C2](<Digital/AU Optronics/AUO32EB/04E9794EB8C2>) |
 | AU Optronics     | AUO32EC | JGP6V            | 1366x768  | 15.3 | 2012 | [089C9DF2EB60](<Digital/AU Optronics/AUO32EC/089C9DF2EB60>) |
 | AU Optronics     | AUO32EC |                  | 1366x768  | 15.3 | 2011 | [816A42BD0BE7](<Digital/AU Optronics/AUO32EC/816A42BD0BE7>) |
@@ -1753,6 +1861,7 @@ model and ID.
 | AU Optronics     | AUO342C | B133XW03 V4      | 1366x768  | 13.0 | 2010 | [09CEB08F665A](<Digital/AU Optronics/AUO342C/09CEB08F665A>) |
 | AU Optronics     | AUO343C | B140XTN03.4      | 1366x768  | 13.9 | 2012 | [B05C345371C5](<Digital/AU Optronics/AUO343C/B05C345371C5>) |
 | AU Optronics     | AUO343D | B140HAK03.4      | 1920x1080 | 13.9 | 2019 | [7E1F5A9F0E01](<Digital/AU Optronics/AUO343D/7E1F5A9F0E01>) |
+| AU Optronics     | AUO343D |                  | 1920x1080 | 13.9 | 2016 | [788CF37C0224](<Digital/AU Optronics/AUO343D/788CF37C0224>) |
 | AU Optronics     | AUO3479 | G150XTN03.4      | 1024x768  | 14.9 | 2016 | [A468DBD8F649](<Digital/AU Optronics/AUO3479/A468DBD8F649>) |
 | AU Optronics     | AUO3487 | B170PW03 V4      | 1440x900  | 17.2 |      | [9A4602CDFD8B](<Digital/AU Optronics/AUO3487/9A4602CDFD8B>) |
 | AU Optronics     | AUO348E | B173HAN05.1      | 1920x1080 | 17.3 | 2019 | [10AAA2BE1880](<Digital/AU Optronics/AUO348E/10AAA2BE1880>) |
@@ -1765,7 +1874,7 @@ model and ID.
 | AU Optronics     | AUO3587 | MW986 +:GQq      | 1440x900  | 17.2 | 2007 | [820B0669D5BA](<Digital/AU Optronics/AUO3587/820B0669D5BA>) |
 | AU Optronics     | AUO35EB | CC53D            | 3840x2160 | 15.3 | 2019 | [13A47F563844](<Digital/AU Optronics/AUO35EB/13A47F563844>) |
 | AU Optronics     | AUO35EC | B156XTN03.5      | 1366x768  | 15.3 | 2013 | [0C3732EBEF6A](<Digital/AU Optronics/AUO35EC/0C3732EBEF6A>) |
-| AU Optronics     | AUO35EC | B156XTN03.5      | 1366x768  | 15.3 | 2012 | [597761536842](<Digital/AU Optronics/AUO35EC/597761536842>) |
+| AU Optronics     | AUO35EC |                  | 1366x768  | 15.3 | 2012 | [51FCC954AAA0](<Digital/AU Optronics/AUO35EC/51FCC954AAA0>) |
 | AU Optronics     | AUO35ED |                  | 1920x1080 | 15.3 | 2013 | [736848D1C04E](<Digital/AU Optronics/AUO35ED/736848D1C04E>) |
 | AU Optronics     | AUO3614 | B121EW03 V6      | 1280x800  | 12.0 | 2007 | [35677C9E361F](<Digital/AU Optronics/AUO3614/35677C9E361F>) |
 | AU Optronics     | AUO363C | B140XTN03.6      | 1366x768  | 13.9 | 2013 | [186D1CB07BB6](<Digital/AU Optronics/AUO363C/186D1CB07BB6>) |
@@ -1797,6 +1906,7 @@ model and ID.
 | AU Optronics     | AUO3B44 | GM521 '5AHf      | 1280x800  | 14.0 | 2006 | [6317A4FD8AD5](<Digital/AU Optronics/AUO3B44/6317A4FD8AD5>) |
 | AU Optronics     | AUO3B9C |                  | 1920x1080 | 15.3 | 2021 | [CA88A0285E23](<Digital/AU Optronics/AUO3B9C/CA88A0285E23>) |
 | AU Optronics     | AUO3C9B | B170QAN01.0      | 2560x1600 | 17.2 | 2021 | [AFC2E5FDF3FF](<Digital/AU Optronics/AUO3C9B/AFC2E5FDF3FF>) |
+| AU Optronics     | AUO3DA3 |                  | 1920x1080 | 15.3 | 2021 | [0858CDBCA039](<Digital/AU Optronics/AUO3DA3/0858CDBCA039>) |
 | AU Optronics     | AUO3E3D | B140HAN03.E      | 1920x1080 | 13.9 | 2017 | [32F7E312C74E](<Digital/AU Optronics/AUO3E3D/32F7E312C74E>) |
 | AU Optronics     | AUO3F3D | XNMP0            | 1920x1080 | 13.9 | 2019 | [672338CE889D](<Digital/AU Optronics/AUO3F3D/672338CE889D>) |
 | AU Optronics     | AUO402C | B133XW04 V0      | 1366x768  | 13.0 | 2010 | [412698B28E81](<Digital/AU Optronics/AUO402C/412698B28E81>) |
@@ -1860,6 +1970,7 @@ model and ID.
 | AU Optronics     | AUO4544 | B141EW04 V5      | 1280x800  | 14.0 | 2007 | [6A593D7E1BAB](<Digital/AU Optronics/AUO4544/6A593D7E1BAB>) |
 | AU Optronics     | AUO4544 | TK033 2GV]       | 1280x800  | 14.0 | 2006 | [A5A990D9117F](<Digital/AU Optronics/AUO4544/A5A990D9117F>) |
 | AU Optronics     | AUO4599 | MCX7D            | 1920x1080 | 15.3 | 2021 | [9F74341A5467](<Digital/AU Optronics/AUO4599/9F74341A5467>) |
+| AU Optronics     | AUO459D | B160UAN03.3      | 1920x1200 | 15.9 | 2022 | [1327FF0A8950](<Digital/AU Optronics/AUO459D/1327FF0A8950>) |
 | AU Optronics     | AUO459D | B160UAN03.3      | 1920x1200 | 15.9 | 2021 | [1F991FC78773](<Digital/AU Optronics/AUO459D/1F991FC78773>) |
 | AU Optronics     | AUO45EC | 3XJ36            | 1366x768  | 15.3 | 2015 | [8923E66A0238](<Digital/AU Optronics/AUO45EC/8923E66A0238>) |
 | AU Optronics     | AUO45EC |                  | 1366x768  | 15.3 | 2013 | [15E2B2822029](<Digital/AU Optronics/AUO45EC/15E2B2822029>) |
@@ -1877,10 +1988,12 @@ model and ID.
 | AU Optronics     | AUO46EC | B156XW04 V6      | 1366x768  | 15.3 | 2010 | [AD11712F3099](<Digital/AU Optronics/AUO46EC/AD11712F3099>) |
 | AU Optronics     | AUO46EC | B156XTN04        | 1366x768  | 15.3 |      | [EEBBA859E9C1](<Digital/AU Optronics/AUO46EC/EEBBA859E9C1>) |
 | AU Optronics     | AUO472D |                  | 1920x1080 | 13.2 | 2017 | [260442373662](<Digital/AU Optronics/AUO472D/260442373662>) |
+| AU Optronics     | AUO4799 |                  | 1920x1080 | 15.3 | 2021 | [97474BD75037](<Digital/AU Optronics/AUO4799/97474BD75037>) |
 | AU Optronics     | AUO479D | B173HAN04.7      | 1920x1080 | 17.3 | 2019 | [CC1136699E4C](<Digital/AU Optronics/AUO479D/CC1136699E4C>) |
 | AU Optronics     | AUO47EC | B156XW004.7      | 1366x768  | 15.3 | 2013 | [2B5ABB1FE8C1](<Digital/AU Optronics/AUO47EC/2B5ABB1FE8C1>) |
 | AU Optronics     | AUO47EC |                  | 1366x768  | 11.6 | 2012 | [3054701BAF6A](<Digital/AU Optronics/AUO47EC/3054701BAF6A>) |
 | AU Optronics     | AUO47EC |                  | 1366x768  | 15.3 | 2012 | [D57E308F8B97](<Digital/AU Optronics/AUO47EC/D57E308F8B97>) |
+| AU Optronics     | AUO482D |                  | 1920x1080 | 13.2 | 2017 | [AB716E21DD61](<Digital/AU Optronics/AUO482D/AB716E21DD61>) |
 | AU Optronics     | AUO48EC | B156XW004.8      | 1366x768  | 15.3 | 2013 | [0F0F23090608](<Digital/AU Optronics/AUO48EC/0F0F23090608>) |
 | AU Optronics     | AUO492D | B133HAN04.9      | 1920x1080 | 13.2 | 2017 | [1643AE7109E7](<Digital/AU Optronics/AUO492D/1643AE7109E7>) |
 | AU Optronics     | AUO4995 |                  | 3840x2160 | 13.9 | 2019 | [1EF9D48CF266](<Digital/AU Optronics/AUO4995/1EF9D48CF266>) |
@@ -1892,6 +2005,7 @@ model and ID.
 | AU Optronics     | AUO4A99 | B156HAN02.1      | 1920x1080 | 15.3 | 2021 | [3AE5400D247F](<Digital/AU Optronics/AUO4A99/3AE5400D247F>) |
 | AU Optronics     | AUO4B2D |                  | 1920x1080 | 13.2 | 2020 | [F7B6D0E034E4](<Digital/AU Optronics/AUO4B2D/F7B6D0E034E4>) |
 | AU Optronics     | AUO4B2D |                  | 1920x1080 | 13.2 | 2019 | [69C8C7B0F6C7](<Digital/AU Optronics/AUO4B2D/69C8C7B0F6C7>) |
+| AU Optronics     | AUO4B9D | B173HAN04.9      | 1920x1080 | 17.3 | 2020 | [9977A9E97FEF](<Digital/AU Optronics/AUO4B9D/9977A9E97FEF>) |
 | AU Optronics     | AUO4E8B |                  | 1920x1080 | 13.2 | 2020 | [EF6BD326A37D](<Digital/AU Optronics/AUO4E8B/EF6BD326A37D>) |
 | AU Optronics     | AUO4F8A |                  | 1920x1080 | 13.9 | 2019 | [0C3AA1B039B6](<Digital/AU Optronics/AUO4F8A/0C3AA1B039B6>) |
 | AU Optronics     | AUO4F9B | X6NRM            | 2560x1600 | 14.0 | 2021 | [4E5AB870C55E](<Digital/AU Optronics/AUO4F9B/4E5AB870C55E>) |
@@ -1910,6 +2024,7 @@ model and ID.
 | AU Optronics     | AUO518B |                  | 1920x1080 | 13.2 | 2019 | [BD07257550D9](<Digital/AU Optronics/AUO518B/BD07257550D9>) |
 | AU Optronics     | AUO5191 |                  | 1366x768  | 15.3 | 2020 | [DA80B889652B](<Digital/AU Optronics/AUO5191/DA80B889652B>) |
 | AU Optronics     | AUO519D | B173HAN05.1      | 1920x1080 | 17.3 | 2019 | [D9EECE4621DB](<Digital/AU Optronics/AUO519D/D9EECE4621DB>) |
+| AU Optronics     | AUO51EB |                  | 3840x2160 | 15.3 | 2019 | [71B987F3A4F0](<Digital/AU Optronics/AUO51EB/71B987F3A4F0>) |
 | AU Optronics     | AUO51ED | HPJGK            | 1920x1080 | 15.3 |      | [6FB669607C3C](<Digital/AU Optronics/AUO51ED/6FB669607C3C>) |
 | AU Optronics     | AUO522D |                  | 1920x1080 | 13.2 | 2017 | [A6514AFDF8A9](<Digital/AU Optronics/AUO522D/A6514AFDF8A9>) |
 | AU Optronics     | AUO523D | NP5R3            | 1920x1080 | 13.9 | 2017 | [A1665D2C25D2](<Digital/AU Optronics/AUO523D/A1665D2C25D2>) |
@@ -1962,6 +2077,8 @@ model and ID.
 | AU Optronics     | AUO60ED | Y502X            | 1920x1080 | 15.3 |      | [7F34A70486C1](<Digital/AU Optronics/AUO60ED/7F34A70486C1>) |
 | AU Optronics     | AUO612D | B133HAN06.1      | 1920x1080 | 13.2 | 2017 | [B6B96CA7836A](<Digital/AU Optronics/AUO612D/B6B96CA7836A>) |
 | AU Optronics     | AUO613D |                  | 1920x1080 | 13.9 | 2018 | [23729FC1440C](<Digital/AU Optronics/AUO613D/23729FC1440C>) |
+| AU Optronics     | AUO615C |                  | 1366x768  | 11.6 | 2018 | [996DBBC2E25F](<Digital/AU Optronics/AUO615C/996DBBC2E25F>) |
+| AU Optronics     | AUO615C |                  | 1366x768  | 11.6 | 2017 | [63461405D5AA](<Digital/AU Optronics/AUO615C/63461405D5AA>) |
 | AU Optronics     | AUO61D2 | B101AW06 V1      | 1024x600  | 10.1 | 2009 | [84528A4C299B](<Digital/AU Optronics/AUO61D2/84528A4C299B>) |
 | AU Optronics     | AUO61ED |                  | 1920x1080 | 15.3 | 2018 | [257CDE938AD2](<Digital/AU Optronics/AUO61ED/257CDE938AD2>) |
 | AU Optronics     | AUO61ED | B156HAN06.1      | 1920x1080 | 15.3 | 2016 | [6AF3279E7F45](<Digital/AU Optronics/AUO61ED/6AF3279E7F45>) |
@@ -1970,15 +2087,18 @@ model and ID.
 | AU Optronics     | AUO623D | B140HAN06.2      | 1920x1080 | 13.9 | 2018 | [0EA00EE81D2B](<Digital/AU Optronics/AUO623D/0EA00EE81D2B>) |
 | AU Optronics     | AUO6287 | WU342            | 1440x900  | 17.2 | 2007 | [1CC61ABF0F01](<Digital/AU Optronics/AUO6287/1CC61ABF0F01>) |
 | AU Optronics     | AUO633D | MJXRM            | 1920x1080 | 13.9 | 2019 | [62FF72AC6036](<Digital/AU Optronics/AUO633D/62FF72AC6036>) |
+| AU Optronics     | AUO635C |                  | 1366x768  | 11.6 | 2017 | [225F5547452B](<Digital/AU Optronics/AUO635C/225F5547452B>) |
 | AU Optronics     | AUO6387 | T990J            | 1440x900  | 17.2 | 2009 | [48508FED0620](<Digital/AU Optronics/AUO6387/48508FED0620>) |
 | AU Optronics     | AUO6387 | RM221            | 1440x900  | 17.2 | 2008 | [B26041D25E21](<Digital/AU Optronics/AUO6387/B26041D25E21>) |
 | AU Optronics     | AUO6387 | U580C /BP[       | 1440x900  | 17.2 | 2007 | [8207C2130740](<Digital/AU Optronics/AUO6387/8207C2130740>) |
 | AU Optronics     | AUO63ED |                  | 1920x1080 | 15.3 | 2018 | [7CC023E7525F](<Digital/AU Optronics/AUO63ED/7CC023E7525F>) |
 | AU Optronics     | AUO63ED | P4D7H            | 1920x1080 | 15.3 | 2017 | [43E420FD3AF2](<Digital/AU Optronics/AUO63ED/43E420FD3AF2>) |
 | AU Optronics     | AUO643D | B140HAN06.4      | 1920x1080 | 13.9 | 2018 | [A8AFC21D56AB](<Digital/AU Optronics/AUO643D/A8AFC21D56AB>) |
+| AU Optronics     | AUO6491 | G116HAN01.1      | 1920x1080 | 11.6 | 2020 | [3D33BC789014](<Digital/AU Optronics/AUO6491/3D33BC789014>) |
 | AU Optronics     | AUO6496 |                  | 1920x1200 | 13.4 | 2020 | [82044EB1826F](<Digital/AU Optronics/AUO6496/82044EB1826F>) |
 | AU Optronics     | AUO64D2 | B101AW06 V4      | 1024x600  | 10.1 | 2011 | [AF7266F1E882](<Digital/AU Optronics/AUO64D2/AF7266F1E882>) |
 | AU Optronics     | AUO662D | B133HAN06.6      | 1920x1080 | 13.2 | 2019 | [3BCEFD13362B](<Digital/AU Optronics/AUO662D/3BCEFD13362B>) |
+| AU Optronics     | AUO6693 |                  | 1920x1200 | 13.4 | 2020 | [02A60470934C](<Digital/AU Optronics/AUO6693/02A60470934C>) |
 | AU Optronics     | AUO683D | B140HAN06        | 1920x1080 | 13.9 |      | [6FF346925F34](<Digital/AU Optronics/AUO683D/6FF346925F34>) |
 | AU Optronics     | AUO6A92 | 7GHDP            | 1920x1080 | 15.3 | 2021 | [384EF1041A40](<Digital/AU Optronics/AUO6A92/384EF1041A40>) |
 | AU Optronics     | AUO6A9F | B160QAN02.W      | 2560x1600 | 15.9 | 2021 | [0F2FED30BDE3](<Digital/AU Optronics/AUO6A9F/0F2FED30BDE3>) |
@@ -1992,10 +2112,12 @@ model and ID.
 | AU Optronics     | AUO70EC |                  | 1366x768  | 15.3 | 2017 | [EDA2630BC4B2](<Digital/AU Optronics/AUO70EC/EDA2630BC4B2>) |
 | AU Optronics     | AUO70EC | FMT2C            | 1366x768  | 15.3 | 2016 | [8499C670A903](<Digital/AU Optronics/AUO70EC/8499C670A903>) |
 | AU Optronics     | AUO70EC | B156XTN07.0      | 1366x768  | 15.3 | 2015 | [05E4FF15FFF7](<Digital/AU Optronics/AUO70EC/05E4FF15FFF7>) |
+| AU Optronics     | AUO70EC |                  | 1366x768  | 15.3 | 2014 | [101B43989E52](<Digital/AU Optronics/AUO70EC/101B43989E52>) |
 | AU Optronics     | AUO70ED |                  | 1920x1080 | 15.3 | 2017 | [7351A0279E86](<Digital/AU Optronics/AUO70ED/7351A0279E86>) |
 | AU Optronics     | AUO713C | B140XTN07.1      | 1366x768  | 13.9 | 2017 | [7EB181A704A7](<Digital/AU Optronics/AUO713C/7EB181A704A7>) |
 | AU Optronics     | AUO718A | 8536H            | 1920x1080 | 15.3 | 2019 | [DB4ADF2D1A00](<Digital/AU Optronics/AUO718A/DB4ADF2D1A00>) |
 | AU Optronics     | AUO718B |                  | 3840x2160 | 13.9 | 2019 | [937233B60FC2](<Digital/AU Optronics/AUO718B/937233B60FC2>) |
+| AU Optronics     | AUO719B |                  | 2560x1600 | 14.0 |      | [F6CAF24D73F6](<Digital/AU Optronics/AUO719B/F6CAF24D73F6>) |
 | AU Optronics     | AUO71EC | HRN6M            | 1366x768  | 15.3 | 2016 | [401DBE79E7F7](<Digital/AU Optronics/AUO71EC/401DBE79E7F7>) |
 | AU Optronics     | AUO71EC | 8CFJ3            | 1366x768  | 15.3 | 2015 | [299AB34C1DEB](<Digital/AU Optronics/AUO71EC/299AB34C1DEB>) |
 | AU Optronics     | AUO71ED | B156HAN07.1      | 1920x1080 | 15.3 | 2018 | [8A53A43AD205](<Digital/AU Optronics/AUO71ED/8A53A43AD205>) |
@@ -2011,6 +2133,7 @@ model and ID.
 | AU Optronics     | AUO749D | B173ZAN06.9      | 3840x2160 | 17.1 | 2021 | [5CB37AA7FFB6](<Digital/AU Optronics/AUO749D/5CB37AA7FFB6>) |
 | AU Optronics     | AUO7792 | 8VNP0            | 3840x2160 | 15.0 | 2020 | [1B86C6BC2A11](<Digital/AU Optronics/AUO7792/1B86C6BC2A11>) |
 | AU Optronics     | AUO7A8C | B156HAN12.0      | 1920x1080 | 15.3 | 2019 | [0119229119E0](<Digital/AU Optronics/AUO7A8C/0119229119E0>) |
+| AU Optronics     | AUO7AA7 |                  | 2560x1600 | 14.5 | 2022 | [DC4C4D5528C3](<Digital/AU Optronics/AUO7AA7/DC4C4D5528C3>) |
 | AU Optronics     | AUO7E91 | 3NM8D            | 1366x768  | 11.6 | 2020 | [C566FB4CEDE9](<Digital/AU Optronics/AUO7E91/C566FB4CEDE9>) |
 | AU Optronics     | AUO7EA0 | B156HAN12.H      | 1920x1080 | 15.3 | 2021 | [D29731B81AAC](<Digital/AU Optronics/AUO7EA0/D29731B81AAC>) |
 | AU Optronics     | AUO8074 | U448H            | 1280x800  | 15.4 | 2008 | [50C56A84B6B9](<Digital/AU Optronics/AUO8074/50C56A84B6B9>) |
@@ -2036,23 +2159,33 @@ model and ID.
 | AU Optronics     | AUO8594 | B133UAN01.0      | 1920x1200 | 13.4 | 2020 | [D1CA2C78F3E1](<Digital/AU Optronics/AUO8594/D1CA2C78F3E1>) |
 | AU Optronics     | AUO889A | B133HAN05.F      | 1920x1080 | 13.2 | 2021 | [6F4FD9E002C3](<Digital/AU Optronics/AUO889A/6F4FD9E002C3>) |
 | AU Optronics     | AUO8B99 |                  | 1920x1080 | 13.2 | 2020 | [A900AE8FFCFE](<Digital/AU Optronics/AUO8B99/A900AE8FFCFE>) |
-| AU Optronics     | AUO8E9D | B160QAN02.S      | 2560x1600 | 15.9 | 2021 | [6646D13E0A9D](<Digital/AU Optronics/AUO8E9D/6646D13E0A9D>) |
+| AU Optronics     | AUO8B9B | B160UAN01.K      | 1920x1200 | 15.9 | 2021 | [3687C56705CD](<Digital/AU Optronics/AUO8B9B/3687C56705CD>) |
+| AU Optronics     | AUO8E8D | B173HAN04.0      | 1920x1080 | 17.3 | 2019 | [01388245E587](<Digital/AU Optronics/AUO8E8D/01388245E587>) |
+| AU Optronics     | AUO8E9D | B160QAN02.S      | 2560x1600 | 15.9 | 2021 | [0F3E63A0EC02](<Digital/AU Optronics/AUO8E9D/0F3E63A0EC02>) |
 | AU Optronics     | AUO8F8E | B140ZAN01.7      | 3840x2160 | 13.9 | 2019 | [5BF8D121EF35](<Digital/AU Optronics/AUO8F8E/5BF8D121EF35>) |
 | AU Optronics     | AUO9074 | B154EW09 V0      | 1280x800  | 15.4 | 2008 | [8C572B33DBF4](<Digital/AU Optronics/AUO9074/8C572B33DBF4>) |
+| AU Optronics     | AUO90ED |                  | 1920x1080 | 15.3 | 2018 | [FC2BDF962E3A](<Digital/AU Optronics/AUO90ED/FC2BDF962E3A>) |
 | AU Optronics     | AUO9174 | B154EW09 V1      | 1280x800  | 15.4 | 2008 | [4E166504A8E0](<Digital/AU Optronics/AUO9174/4E166504A8E0>) |
+| AU Optronics     | AUO91A1 |                  | 2560x1600 | 13.4 | 2020 | [27328096E086](<Digital/AU Optronics/AUO91A1/27328096E086>) |
 | AU Optronics     | AUO9214 | B121EW09 V2      | 1280x800  | 12.0 | 2008 | [93444FFC4F5D](<Digital/AU Optronics/AUO9214/93444FFC4F5D>) |
 | AU Optronics     | AUO9274 | B154EW09 V2      | 1280x800  | 15.4 | 2008 | [F45FA6F7F25A](<Digital/AU Optronics/AUO9274/F45FA6F7F25A>) |
+| AU Optronics     | AUO9291 | JM7T2            | 1920x1080 | 13.2 | 2020 | [CF08C332C161](<Digital/AU Optronics/AUO9291/CF08C332C161>) |
 | AU Optronics     | AUO9314 | B121EW09 V3      | 1280x800  | 12.0 | 2008 | [66CE61939CB6](<Digital/AU Optronics/AUO9314/66CE61939CB6>) |
 | AU Optronics     | AUO9374 | B154EW09 V3      | 1280x800  | 15.4 | 2008 | [BA28228CD621](<Digital/AU Optronics/AUO9374/BA28228CD621>) |
 | AU Optronics     | AUO9390 |                  | 1920x1200 | 14.0 | 2020 | [D5DA91A1D8F2](<Digital/AU Optronics/AUO9390/D5DA91A1D8F2>) |
 | AU Optronics     | AUO9414 |                  | 1280x800  | 12.0 | 2009 | [6EC6933F4697](<Digital/AU Optronics/AUO9414/6EC6933F4697>) |
 | AU Optronics     | AUO9514 | B121EW09 V5      | 1280x800  | 12.0 | 2009 | [E4834EF93220](<Digital/AU Optronics/AUO9514/E4834EF93220>) |
 | AU Optronics     | AUO95A3 | 1W19K            | 2560x1600 | 13.4 | 2021 | [289A5600EC39](<Digital/AU Optronics/AUO95A3/289A5600EC39>) |
+| AU Optronics     | AUO9688 |                  | 1920x1080 | 15.3 | 2020 | [1A8A587EAC97](<Digital/AU Optronics/AUO9688/1A8A587EAC97>) |
 | AU Optronics     | AUO968E | B140HAN06.A      | 1920x1080 | 13.9 | 2019 | [C6F9EB404B58](<Digital/AU Optronics/AUO968E/C6F9EB404B58>) |
 | AU Optronics     | AUO978F | B173HAN04.9      | 1920x1080 | 17.3 | 2020 | [57513121B15B](<Digital/AU Optronics/AUO978F/57513121B15B>) |
+| AU Optronics     | AUO97A2 | 1D8HG            | 3840x2160 | 17.1 | 2022 | [B58B0ED26271](<Digital/AU Optronics/AUO97A2/B58B0ED26271>) |
 | AU Optronics     | AUO9890 |                  | 3840x2160 | 15.3 | 2019 | [D47DB1D653BF](<Digital/AU Optronics/AUO9890/D47DB1D653BF>) |
+| AU Optronics     | AUO9AA2 |                  | 3840x2160 | 15.3 | 2019 | [0CD87D3B5035](<Digital/AU Optronics/AUO9AA2/0CD87D3B5035>) |
 | AU Optronics     | AUO9B8B |                  | 1920x1080 | 13.9 | 2019 | [34EB1F6A533E](<Digital/AU Optronics/AUO9B8B/34EB1F6A533E>) |
+| AU Optronics     | AUO9B8C |                  | 1366x768  | 13.9 | 2019 | [81FCA508F405](<Digital/AU Optronics/AUO9B8C/81FCA508F405>) |
 | AU Optronics     | AUO9C92 |                  | 1600x900  | 17.3 | 2020 | [6CBA84EDB302](<Digital/AU Optronics/AUO9C92/6CBA84EDB302>) |
+| AU Optronics     | AUO9C9F | B160UAN01.P      | 1920x1200 | 15.9 | 2021 | [775C57705F4B](<Digital/AU Optronics/AUO9C9F/775C57705F4B>) |
 | AU Optronics     | AUO9F91 | XC0MJ            | 3072x1920 | 15.9 | 2020 | [30A39D2E2F74](<Digital/AU Optronics/AUO9F91/30A39D2E2F74>) |
 | AU Optronics     | AUO9F99 |                  | 1920x1200 | 15.9 |      | [58BD1F88872B](<Digital/AU Optronics/AUO9F99/58BD1F88872B>) |
 | AU Optronics     | AUOA03C | B116XW05 V0 C... | 1366x768  | 11.6 | 2012 | [17837E86CBBB](<Digital/AU Optronics/AUOA03C/17837E86CBBB>) |
@@ -2069,6 +2202,7 @@ model and ID.
 | AU Optronics     | AUOAE8B | 184X2            | 1920x1080 | 15.3 | 2020 | [B1E2C3D87161](<Digital/AU Optronics/AUOAE8B/B1E2C3D87161>) |
 | AU Optronics     | AUOAF90 | B156HAN08        | 1920x1080 | 15.3 |      | [AB030BDC3636](<Digital/AU Optronics/AUOAF90/AB030BDC3636>) |
 | AU Optronics     | AUOB28E | 6JR9D            | 1920x1080 | 15.3 | 2019 | [1B35C5A1BEEF](<Digital/AU Optronics/AUOB28E/1B35C5A1BEEF>) |
+| AU Optronics     | AUOB290 | AUO              | 1600x900  | 17.3 | 2020 | [0AEE005B98D9](<Digital/AU Optronics/AUOB290/0AEE005B98D9>) |
 | AU Optronics     | AUOB394 | AUO B156ZAN05.1  | 3840x2160 | 15.3 | 2020 | [945BA4F7960E](<Digital/AU Optronics/AUOB394/945BA4F7960E>) |
 | AU Optronics     | AUOB39E | B173HAN04.9      | 1920x1080 | 17.3 | 2020 | [E2C480D8FA2A](<Digital/AU Optronics/AUOB39E/E2C480D8FA2A>) |
 | AU Optronics     | AUOB493 | AUO B133QAN03.2  | 2560x1600 | 13.4 | 2020 | [852F2E9309BE](<Digital/AU Optronics/AUOB493/852F2E9309BE>) |
@@ -2101,6 +2235,7 @@ model and ID.
 | AU Optronics     | AUOCC81 |                  | 1920x1080 | 15.3 | 2019 | [A96891807681](<Digital/AU Optronics/AUOCC81/A96891807681>) |
 | AU Optronics     | AUOCD8C |                  | 3840x2160 | 17.1 | 2019 | [4ADFFBBD7612](<Digital/AU Optronics/AUOCD8C/4ADFFBBD7612>) |
 | AU Optronics     | AUOCE90 |                  | 1366x768  | 13.9 | 2020 | [69E9B019F35A](<Digital/AU Optronics/AUOCE90/69E9B019F35A>) |
+| AU Optronics     | AUOD0A2 | B156HAN15.1      | 1920x1080 | 15.3 | 2022 | [1A40F7A0ABE9](<Digital/AU Optronics/AUOD0A2/1A40F7A0ABE9>) |
 | AU Optronics     | AUOD0ED | B156HAN13.0      | 1920x1080 | 15.3 | 2019 | [1E3DF4506453](<Digital/AU Optronics/AUOD0ED/1E3DF4506453>) |
 | AU Optronics     | AUOD1ED | B156HAN13        | 1920x1080 | 15.3 |      | [50743C48B883](<Digital/AU Optronics/AUOD1ED/50743C48B883>) |
 | AU Optronics     | AUOD291 | AUO B140UAN02.1  | 1920x1200 | 14.0 | 2020 | [00D4A6168DF8](<Digital/AU Optronics/AUOD291/00D4A6168DF8>) |
@@ -2132,7 +2267,7 @@ model and ID.
 | AU Optronics     | AUOED8F | 8FNMF            | 1920x1080 | 15.3 | 2019 | [65912D859EEF](<Digital/AU Optronics/AUOED8F/65912D859EEF>) |
 | AU Optronics     | AUOF08A | AUO B156HAB03.0  | 1920x1080 | 15.3 | 2019 | [32E596ED2055](<Digital/AU Optronics/AUOF08A/32E596ED2055>) |
 | AU Optronics     | AUOF09F | B160QAN02.W      | 2560x1600 | 15.9 | 2021 | [FC180ADA2874](<Digital/AU Optronics/AUOF09F/FC180ADA2874>) |
-| AU Optronics     | AUOF19F | B160QAN02.H      | 2560x1600 | 15.9 | 2021 | [377DADEE51BF](<Digital/AU Optronics/AUOF19F/377DADEE51BF>) |
+| AU Optronics     | AUOF19F | B160QAN02.H      | 2560x1600 | 15.9 | 2021 | [2C3E404DD621](<Digital/AU Optronics/AUOF19F/2C3E404DD621>) |
 | AU Optronics     | AUOF38C |                  | 1920x1080 | 13.2 | 2019 | [9644A323FD75](<Digital/AU Optronics/AUOF38C/9644A323FD75>) |
 | AU Optronics     | AUOF390 | AUO B140XTN07.7  | 1366x768  | 13.9 | 2020 | [52F2D14EF408](<Digital/AU Optronics/AUOF390/52F2D14EF408>) |
 | AU Optronics     | AUOF392 |                  | 1920x1200 | 14.0 | 2020 | [10CDB8F0F5E6](<Digital/AU Optronics/AUOF392/10CDB8F0F5E6>) |
@@ -2141,14 +2276,17 @@ model and ID.
 | AU Optronics     | AUOF791 | 2F1MW            | 1920x1080 | 13.2 | 2020 | [35E5A8BAC42C](<Digital/AU Optronics/AUOF791/35E5A8BAC42C>) |
 | AU Optronics     | AUOF992 |                  | 1920x1080 | 17.3 | 2020 | [61FEAC04B99A](<Digital/AU Optronics/AUOF992/61FEAC04B99A>) |
 | AU Optronics     | AUOF99A | J83VF            | 1920x1200 | 14.0 | 2021 | [3AF86E17C777](<Digital/AU Optronics/AUOF99A/3AF86E17C777>) |
+| AU Optronics     | AUOF99B | AUO              | 1920x1200 | 14.0 |      | [CB775E07E412](<Digital/AU Optronics/AUOF99B/CB775E07E412>) |
 | AU Optronics     | AUOFA9B | AUO B140UAN03.2  | 1920x1200 | 14.0 | 2021 | [DDBF686C0D6B](<Digital/AU Optronics/AUOFA9B/DDBF686C0D6B>) |
 | AU Optronics     | AUOFB91 | DKT39            | 1920x1080 | 15.0 | 2020 | [88367EF325E3](<Digital/AU Optronics/AUOFB91/88367EF325E3>) |
 | AU Optronics     | AUOFC92 |                  | 3840x2160 | 13.2 | 2020 | [CCB8F6439FBC](<Digital/AU Optronics/AUOFC92/CCB8F6439FBC>) |
 | AU Optronics     | DMO1055 | DM16801050F1     | 1680x1050 | 22.0 | 2017 | [AD59D430DDB4](<Digital/AU Optronics/DMO1055/AD59D430DDB4>) |
+| AVerMedia        | AVTA001 | HD               | 1920x1080 | 27.0 | 2011 | [4BDC7806B38F](<Digital/AVerMedia/AVTA001/4BDC7806B38F>) |
 | AXM              | AXM3018 | 3018             | 2560x1600 | 29.7 | 2017 | [7522E9E13A9D](<Digital/AXM/AXM3018/7522E9E13A9D>) |
+| AYANEO           | AYA0105 | AYANEOWUXGA      | 1200x1920 | 6.9  | 2022 | [004B9403953B](<Digital/AYANEO/AYA0105/004B9403953B>) |
 | Acer             | ABO7772 | AL712            | 1280x1024 | 17.1 |      | [9CEE57F972ED](<Digital/Acer/ABO7772/9CEE57F972ED>) |
 | Acer             | ABO9990 | AL922            | 1280x1024 | 18.8 |      | [BD47A82BAF2D](<Digital/Acer/ABO9990/BD47A82BAF2D>) |
-| Acer             | ACR0000 | ED270R           | 1920x1080 | 27.2 | 2020 | [036029381F2C](<Digital/Acer/ACR0000/036029381F2C>) |
+| Acer             | ACR0000 | ED270R           | 1920x1080 | 27.2 | 2020 | [030F3D0F2F8B](<Digital/Acer/ACR0000/030F3D0F2F8B>) |
 | Acer             | ACR0000 | ED320QR S        | 1920x1080 | 31.5 | 2020 | [098C01909C1A](<Digital/Acer/ACR0000/098C01909C1A>) |
 | Acer             | ACR0000 | X243W            | 1920x1200 | 24.0 | 2008 | [0839EBB5CAB9](<Digital/Acer/ACR0000/0839EBB5CAB9>) |
 | Acer             | ACR0000 | X243W            | 1920x1200 | 24.0 | 2007 | [38CDC4CA7E5A](<Digital/Acer/ACR0000/38CDC4CA7E5A>) |
@@ -2174,7 +2312,8 @@ model and ID.
 | Acer             | ACR000E | P223W            | 1680x1050 | 22.0 | 2008 | [300E2901F2D2](<Digital/Acer/ACR000E/300E2901F2D2>) |
 | Acer             | ACR000E | P221W            | 1680x1050 | 22.0 | 2007 | [092E68AAFA5C](<Digital/Acer/ACR000E/092E68AAFA5C>) |
 | Acer             | ACR0010 | P191W            | 1600x1200 | 19.1 | 2009 | [B4B8F5580FC3](<Digital/Acer/ACR0010/B4B8F5580FC3>) |
-| Acer             | ACR0011 | X223W            | 1680x1050 | 22.0 | 2008 | [27CE645F6E84](<Digital/Acer/ACR0011/27CE645F6E84>) |
+| Acer             | ACR0010 | P191W            | 1600x1200 | 19.1 | 2008 | [F33337C6DEB8](<Digital/Acer/ACR0010/F33337C6DEB8>) |
+| Acer             | ACR0011 | X223W            | 1680x1050 | 22.0 | 2008 | [1B7D28B9EB2D](<Digital/Acer/ACR0011/1B7D28B9EB2D>) |
 | Acer             | ACR0011 |                  | 1680x1050 | 22.0 |      | [2894E18B2F4C](<Digital/Acer/ACR0011/2894E18B2F4C>) |
 | Acer             | ACR0012 | P221W            | 1680x1050 | 22.0 | 2008 | [0F62AD4D3C36](<Digital/Acer/ACR0012/0F62AD4D3C36>) |
 | Acer             | ACR0014 | X193W+           | 1680x1050 | 19.1 | 2008 | [A891D5538AFA](<Digital/Acer/ACR0014/A891D5538AFA>) |
@@ -2194,7 +2333,7 @@ model and ID.
 | Acer             | ACR001A | V193W            | 1440x900  | 19.1 | 2009 | [0376295A9C92](<Digital/Acer/ACR001A/0376295A9C92>) |
 | Acer             | ACR001B | V223W            | 1680x1050 | 22.0 | 2011 | [123E6E7815B1](<Digital/Acer/ACR001B/123E6E7815B1>) |
 | Acer             | ACR001B | V223W            | 1680x1050 | 22.0 | 2010 | [9B48A76704CE](<Digital/Acer/ACR001B/9B48A76704CE>) |
-| Acer             | ACR001B | V223W            | 1680x1050 | 22.0 | 2009 | [8B6C26607915](<Digital/Acer/ACR001B/8B6C26607915>) |
+| Acer             | ACR001B | V223W            | 1680x1050 | 22.0 | 2009 | [08190E549A4F](<Digital/Acer/ACR001B/08190E549A4F>) |
 | Acer             | ACR001B | V223W            | 1680x1050 | 22.0 | 2008 | [036192C87D78](<Digital/Acer/ACR001B/036192C87D78>) |
 | Acer             | ACR001B | V223W            | 1680x1050 | 22.0 |      | [68B422782DB3](<Digital/Acer/ACR001B/68B422782DB3>) |
 | Acer             | ACR001C | B173             | 1280x1024 | 17.1 | 2009 | [0033B3E10908](<Digital/Acer/ACR001C/0033B3E10908>) |
@@ -2220,13 +2359,14 @@ model and ID.
 | Acer             | ACR0024 | V193             | 1280x1024 | 19.1 | 2010 | [1473ECA86D7F](<Digital/Acer/ACR0024/1473ECA86D7F>) |
 | Acer             | ACR0024 | V193             | 1280x1024 | 19.1 | 2009 | [5F9656244F4D](<Digital/Acer/ACR0024/5F9656244F4D>) |
 | Acer             | ACR0025 | V193W            | 1440x900  | 18.6 | 2012 | [B066FDDA615C](<Digital/Acer/ACR0025/B066FDDA615C>) |
+| Acer             | ACR0025 | V193W            | 1440x900  | 18.6 | 2009 | [00C603D44B73](<Digital/Acer/ACR0025/00C603D44B73>) |
 | Acer             | ACR0025 | V193W            | 1440x900  | 18.6 | 2008 | [2CB249CB6475](<Digital/Acer/ACR0025/2CB249CB6475>) |
 | Acer             | ACR0025 |                  | 1920x1080 | 18.6 |      | [942645A1B452](<Digital/Acer/ACR0025/942645A1B452>) |
 | Acer             | ACR0025 |                  | 1440x900  | 18.6 |      | [E88FDC681D4C](<Digital/Acer/ACR0025/E88FDC681D4C>) |
 | Acer             | ACR0026 | V203W            | 1680x1050 | 20.0 | 2008 | [2FFFFBD7B30D](<Digital/Acer/ACR0026/2FFFFBD7B30D>) |
 | Acer             | ACR0027 | V223W            | 1680x1050 | 22.0 | 2011 | [55B47DA287A2](<Digital/Acer/ACR0027/55B47DA287A2>) |
 | Acer             | ACR0027 | V223W            | 1680x1050 | 22.0 | 2010 | [819CDECB31D4](<Digital/Acer/ACR0027/819CDECB31D4>) |
-| Acer             | ACR0027 | V223W            | 1680x1050 | 22.0 | 2009 | [27EC01AA803C](<Digital/Acer/ACR0027/27EC01AA803C>) |
+| Acer             | ACR0027 | V223W            | 1680x1050 | 22.0 | 2009 | [0B0FDD1C27A2](<Digital/Acer/ACR0027/0B0FDD1C27A2>) |
 | Acer             | ACR0027 | V223W            | 1680x1050 | 22.0 | 2008 | [037335459DBC](<Digital/Acer/ACR0027/037335459DBC>) |
 | Acer             | ACR0027 |                  | 1680x1050 | 22.0 |      | [4E7384C379AD](<Digital/Acer/ACR0027/4E7384C379AD>) |
 | Acer             | ACR0028 | V243W            | 1920x1200 | 26.8 | 2008 | [02C05F7CBA72](<Digital/Acer/ACR0028/02C05F7CBA72>) |
@@ -2234,17 +2374,19 @@ model and ID.
 | Acer             | ACR002F | V173             | 1280x1024 | 17.1 | 2008 | [92B43B6FD780](<Digital/Acer/ACR002F/92B43B6FD780>) |
 | Acer             | ACR0033 | X213W            | 1680x1050 | 22.0 | 2008 | [FEB0F5A58215](<Digital/Acer/ACR0033/FEB0F5A58215>) |
 | Acer             | ACR0035 | V173             | 1280x1024 | 17.1 | 2009 | [C13A59976AF3](<Digital/Acer/ACR0035/C13A59976AF3>) |
+| Acer             | ACR004C | V193             | 1280x1024 | 19.1 | 2011 | [025FBEB46D78](<Digital/Acer/ACR004C/025FBEB46D78>) |
 | Acer             | ACR004C | V193             | 1280x1024 | 19.1 | 2010 | [510E7908BB4E](<Digital/Acer/ACR004C/510E7908BB4E>) |
 | Acer             | ACR004C | V193             | 1280x1024 | 19.1 | 2009 | [88BC25473F4E](<Digital/Acer/ACR004C/88BC25473F4E>) |
 | Acer             | ACR004C | V193             | 1280x1024 | 19.1 | 2008 | [6046A88014D4](<Digital/Acer/ACR004C/6046A88014D4>) |
 | Acer             | ACR004F | X193W            | 1440x900  | 19.1 | 2009 | [3E15BC8381A6](<Digital/Acer/ACR004F/3E15BC8381A6>) |
 | Acer             | ACR004F |                  | 1440x900  | 19.1 |      | [367A72B07F3F](<Digital/Acer/ACR004F/367A72B07F3F>) |
-| Acer             | ACR0050 | X223W            | 1680x1050 | 22.0 | 2012 | [E48E3BB863C5](<Digital/Acer/ACR0050/E48E3BB863C5>) |
+| Acer             | ACR0050 | X223W            | 1680x1050 | 22.0 | 2012 | [2F182708A553](<Digital/Acer/ACR0050/2F182708A553>) |
 | Acer             | ACR0050 | X223W            | 1680x1050 | 22.0 | 2011 | [84EF72D73384](<Digital/Acer/ACR0050/84EF72D73384>) |
 | Acer             | ACR0050 | X223W            | 1680x1050 | 22.0 | 2010 | [F99785D82F5E](<Digital/Acer/ACR0050/F99785D82F5E>) |
 | Acer             | ACR0050 | X223W            | 1680x1050 | 22.0 | 2009 | [05562E09F0E2](<Digital/Acer/ACR0050/05562E09F0E2>) |
 | Acer             | ACR0050 | X223W            | 1680x1050 | 22.0 | 2008 | [70DA2F6774F5](<Digital/Acer/ACR0050/70DA2F6774F5>) |
 | Acer             | ACR0050 |                  | 1680x1050 | 22.0 |      | [1B0FD2B7634B](<Digital/Acer/ACR0050/1B0FD2B7634B>) |
+| Acer             | ACR0053 | V193W            | 1440x900  | 19.1 | 2012 | [6E6663FC1F30](<Digital/Acer/ACR0053/6E6663FC1F30>) |
 | Acer             | ACR0053 | V173             | 1280x1024 | 17.1 | 2011 | [45F1434CB5B3](<Digital/Acer/ACR0053/45F1434CB5B3>) |
 | Acer             | ACR0053 | V193W            | 1440x900  | 19.1 | 2011 | [5ABE381EEEE2](<Digital/Acer/ACR0053/5ABE381EEEE2>) |
 | Acer             | ACR0053 | V193W            | 1440x900  | 19.1 | 2009 | [2F1FC14C9B15](<Digital/Acer/ACR0053/2F1FC14C9B15>) |
@@ -2271,8 +2413,8 @@ model and ID.
 | Acer             | ACR0070 | V223HQ           | 1920x1080 | 21.3 | 2008 | [3CF395F87C2D](<Digital/Acer/ACR0070/3CF395F87C2D>) |
 | Acer             | ACR0073 | X203H            | 1600x900  | 19.9 | 2009 | [1D8545739BE5](<Digital/Acer/ACR0073/1D8545739BE5>) |
 | Acer             | ACR0074 | H243H            | 1920x1080 | 23.8 | 2010 | [14DFAB8DD9F2](<Digital/Acer/ACR0074/14DFAB8DD9F2>) |
-| Acer             | ACR0074 | H243H            | 1920x1080 | 23.8 | 2009 | [281E6ECD5EC0](<Digital/Acer/ACR0074/281E6ECD5EC0>) |
-| Acer             | ACR0074 | H243H            | 1920x1080 | 23.8 | 2008 | [A67CD23515DA](<Digital/Acer/ACR0074/A67CD23515DA>) |
+| Acer             | ACR0074 | H243H            | 1920x1080 | 23.8 | 2009 | [09717AE47EAB](<Digital/Acer/ACR0074/09717AE47EAB>) |
+| Acer             | ACR0074 | H243H            | 1920x1080 | 23.8 | 2008 | [7F048A9A8B98](<Digital/Acer/ACR0074/7F048A9A8B98>) |
 | Acer             | ACR0074 | H243H            | 1920x1080 | 23.8 |      | [A1F0F47421C1](<Digital/Acer/ACR0074/A1F0F47421C1>) |
 | Acer             | ACR0075 | X203H            | 1600x900  | 19.9 | 2009 | [7B1C979D1091](<Digital/Acer/ACR0075/7B1C979D1091>) |
 | Acer             | ACR0079 | B233HU           | 2048x1152 | 23.1 | 2009 | [478876BC7539](<Digital/Acer/ACR0079/478876BC7539>) |
@@ -2281,7 +2423,7 @@ model and ID.
 | Acer             | ACR0082 | H213H            | 1920x1080 | 21.7 | 2009 | [1454E2F000B9](<Digital/Acer/ACR0082/1454E2F000B9>) |
 | Acer             | ACR0082 |                  | 1920x1080 | 21.7 |      | [43272A5E52AD](<Digital/Acer/ACR0082/43272A5E52AD>) |
 | Acer             | ACR0083 | H223HQ           | 1920x1080 | 21.7 | 2010 | [437D242B0D5C](<Digital/Acer/ACR0083/437D242B0D5C>) |
-| Acer             | ACR0083 | H223HQ           | 1920x1080 | 21.7 | 2009 | [22B36B5FD8BD](<Digital/Acer/ACR0083/22B36B5FD8BD>) |
+| Acer             | ACR0083 | H223HQ           | 1920x1080 | 21.7 | 2009 | [134EA996BF5E](<Digital/Acer/ACR0083/134EA996BF5E>) |
 | Acer             | ACR0086 | H223HQ           | 1920x1080 | 21.7 | 2009 | [001D1F923DEE](<Digital/Acer/ACR0086/001D1F923DEE>) |
 | Acer             | ACR0086 | H223HQ           | 1920x1080 | 21.7 | 2008 | [6A684CD15E8B](<Digital/Acer/ACR0086/6A684CD15E8B>) |
 | Acer             | ACR0086 | H223HQ           | 1920x1080 | 21.7 |      | [8706416A0517](<Digital/Acer/ACR0086/8706416A0517>) |
@@ -2293,6 +2435,7 @@ model and ID.
 | Acer             | ACR0090 | V233H            | 1920x1080 | 23.1 | 2010 | [0EC9DDB48D24](<Digital/Acer/ACR0090/0EC9DDB48D24>) |
 | Acer             | ACR0090 | V233H            | 1920x1080 | 23.1 | 2009 | [2F7B2D563F42](<Digital/Acer/ACR0090/2F7B2D563F42>) |
 | Acer             | ACR0090 | V233H            | 1920x1080 | 23.1 | 2008 | [B1BE67F40A90](<Digital/Acer/ACR0090/B1BE67F40A90>) |
+| Acer             | ACR0091 | B273HU           | 2048x1152 | 27.2 | 2009 | [6EA8480856CF](<Digital/Acer/ACR0091/6EA8480856CF>) |
 | Acer             | ACR0093 | X233H            | 1920x1080 | 23.1 | 2009 | [034E902EE558](<Digital/Acer/ACR0093/034E902EE558>) |
 | Acer             | ACR0093 | X233H            | 1920x1080 | 23.1 | 2008 | [C77822E65A2C](<Digital/Acer/ACR0093/C77822E65A2C>) |
 | Acer             | ACR0093 |                  | 1920x1080 | 23.1 |      | [42877134C3D2](<Digital/Acer/ACR0093/42877134C3D2>) |
@@ -2306,7 +2449,7 @@ model and ID.
 | Acer             | ACR009A | X233H            | 1920x1080 | 23.1 | 2008 | [302526BD51BB](<Digital/Acer/ACR009A/302526BD51BB>) |
 | Acer             | ACR009A | X233H            | 1920x1080 | 23.1 |      | [0139539BD19C](<Digital/Acer/ACR009A/0139539BD19C>) |
 | Acer             | ACR009B | X243H            | 1920x1080 | 23.8 | 2010 | [562F8EC3786A](<Digital/Acer/ACR009B/562F8EC3786A>) |
-| Acer             | ACR009B | X243H            | 1920x1080 | 23.8 | 2009 | [AE432EE5C738](<Digital/Acer/ACR009B/AE432EE5C738>) |
+| Acer             | ACR009B | X243H            | 1920x1080 | 23.8 | 2009 | [9C91F7A506B5](<Digital/Acer/ACR009B/9C91F7A506B5>) |
 | Acer             | ACR009B | X243H            | 1920x1080 | 23.8 |      | [EFCC925ABD24](<Digital/Acer/ACR009B/EFCC925ABD24>) |
 | Acer             | ACR009C | X233H            | 1920x1080 | 19.9 | 2009 | [1BFE3AEF83E3](<Digital/Acer/ACR009C/1BFE3AEF83E3>) |
 | Acer             | ACR009C | X233H            | 1920x1080 | 19.9 | 2008 | [805B7EB2408A](<Digital/Acer/ACR009C/805B7EB2408A>) |
@@ -2317,11 +2460,13 @@ model and ID.
 | Acer             | ACR00A0 | H233H            | 1920x1080 | 23.1 | 2008 | [3A7369E7B685](<Digital/Acer/ACR00A0/3A7369E7B685>) |
 | Acer             | ACR00A3 | V243H            | 1920x1080 | 23.8 | 2011 | [A5AC8E77DA06](<Digital/Acer/ACR00A3/A5AC8E77DA06>) |
 | Acer             | ACR00A3 | V243H            | 1920x1080 | 23.8 | 2010 | [2B51740A7139](<Digital/Acer/ACR00A3/2B51740A7139>) |
+| Acer             | ACR00A3 | V243H            | 1920x1080 | 23.8 | 2009 | [58F0754646C4](<Digital/Acer/ACR00A3/58F0754646C4>) |
 | Acer             | ACR00A8 | X233H            | 1920x1080 | 23.1 | 2010 | [8A8A3BE19235](<Digital/Acer/ACR00A8/8A8A3BE19235>) |
 | Acer             | ACR00A8 | X233H            | 1920x1080 | 23.1 | 2009 | [157147BB226E](<Digital/Acer/ACR00A8/157147BB226E>) |
 | Acer             | ACR00AB | X223HQ           | 1920x1080 | 21.7 | 2009 | [03E6CAF96219](<Digital/Acer/ACR00AB/03E6CAF96219>) |
+| Acer             | ACR00AB | X223HQ           | 1920x1080 | 21.7 | 2008 | [430D76866400](<Digital/Acer/ACR00AB/430D76866400>) |
 | Acer             | ACR00AC | X243HQ           | 1920x1080 | 23.4 | 2010 | [152E3B109AAC](<Digital/Acer/ACR00AC/152E3B109AAC>) |
-| Acer             | ACR00AC | X243HQ           | 1920x1080 | 23.4 | 2009 | [50513237127C](<Digital/Acer/ACR00AC/50513237127C>) |
+| Acer             | ACR00AC | X243HQ           | 1920x1080 | 23.4 | 2009 | [263406EA0663](<Digital/Acer/ACR00AC/263406EA0663>) |
 | Acer             | ACR00AC |                  | 1920x1080 | 23.4 |      | [94984B68F6BC](<Digital/Acer/ACR00AC/94984B68F6BC>) |
 | Acer             | ACR00B0 | V243HQ           | 1920x1080 | 23.4 | 2012 | [9348434A1903](<Digital/Acer/ACR00B0/9348434A1903>) |
 | Acer             | ACR00B0 | V243HQ           | 1920x1080 | 23.4 | 2011 | [2CA58ACD1B97](<Digital/Acer/ACR00B0/2CA58ACD1B97>) |
@@ -2336,6 +2481,7 @@ model and ID.
 | Acer             | ACR00C7 | V203H            | 1600x900  | 19.9 | 2010 | [CE42EAC56D53](<Digital/Acer/ACR00C7/CE42EAC56D53>) |
 | Acer             | ACR00C7 | V203H            | 1600x900  | 19.9 | 2009 | [C3AF7CA6860D](<Digital/Acer/ACR00C7/C3AF7CA6860D>) |
 | Acer             | ACR00C8 | V233H            | 1920x1080 | 23.1 | 2012 | [2E5A02CA97FE](<Digital/Acer/ACR00C8/2E5A02CA97FE>) |
+| Acer             | ACR00C8 | V233H            | 1920x1080 | 23.1 | 2011 | [43455BDFC3C9](<Digital/Acer/ACR00C8/43455BDFC3C9>) |
 | Acer             | ACR00C8 | V233H            | 1920x1080 | 23.1 | 2010 | [A4CDA8FF0C4F](<Digital/Acer/ACR00C8/A4CDA8FF0C4F>) |
 | Acer             | ACR00C8 | V233H            | 1920x1080 | 23.1 | 2009 | [2AA174169B2D](<Digital/Acer/ACR00C8/2AA174169B2D>) |
 | Acer             | ACR00C8 | V233H            | 1920x1080 | 23.1 |      | [070B56B1C8FD](<Digital/Acer/ACR00C8/070B56B1C8FD>) |
@@ -2379,10 +2525,11 @@ model and ID.
 | Acer             | ACR00F1 | T230H            | 1920x1080 | 22.9 | 2009 | [22604287ED73](<Digital/Acer/ACR00F1/22604287ED73>) |
 | Acer             | ACR00F7 | V193             | 1280x1024 | 19.3 | 2011 | [0AA75821C957](<Digital/Acer/ACR00F7/0AA75821C957>) |
 | Acer             | ACR00F7 | V193             | 1280x1024 | 19.3 | 2010 | [1E3DBC090B12](<Digital/Acer/ACR00F7/1E3DBC090B12>) |
+| Acer             | ACR00F7 | V193             | 1280x1024 | 19.3 | 2009 | [2C639B699FEE](<Digital/Acer/ACR00F7/2C639B699FEE>) |
 | Acer             | ACR00F8 | Viseo200T        | 1600x900  | 19.9 | 2009 | [9969F888647C](<Digital/Acer/ACR00F8/9969F888647C>) |
 | Acer             | ACR00F9 | V193HQ           | 1366x768  | 18.5 | 2009 | [0DFC59FF4DF8](<Digital/Acer/ACR00F9/0DFC59FF4DF8>) |
 | Acer             | ACR00FF | Viseo 220Dx      | 1920x1080 | 21.7 | 2011 | [42FCA4C339D6](<Digital/Acer/ACR00FF/42FCA4C339D6>) |
-| Acer             | ACR00FF | Viseo 220Dx      | 1920x1080 | 21.7 | 2010 | [CD550C1DA49B](<Digital/Acer/ACR00FF/CD550C1DA49B>) |
+| Acer             | ACR00FF | Viseo 220Dx      | 1920x1080 | 21.7 | 2010 | [063B1088717C](<Digital/Acer/ACR00FF/063B1088717C>) |
 | Acer             | ACR00FF | Viseo 220Dx      | 1920x1080 | 21.7 | 2009 | [113713F96D1C](<Digital/Acer/ACR00FF/113713F96D1C>) |
 | Acer             | ACR0100 | AIO LCD          | 1920x1080 | 21.1 | 2010 | [5C6DF312F3AD](<Digital/Acer/ACR0100/5C6DF312F3AD>) |
 | Acer             | ACR0101 | AIO LCD          | 1920x1080 | 23.4 | 2010 | [2F6671E2D363](<Digital/Acer/ACR0101/2F6671E2D363>) |
@@ -2396,13 +2543,14 @@ model and ID.
 | Acer             | ACR010B | V193WL           | 1440x900  | 19.1 | 2010 | [5B14A1C96863](<Digital/Acer/ACR010B/5B14A1C96863>) |
 | Acer             | ACR010C | V193HQV          | 1366x768  | 18.5 | 2012 | [25FEF4CF8452](<Digital/Acer/ACR010C/25FEF4CF8452>) |
 | Acer             | ACR010C | V193HQV          | 1366x768  | 18.5 | 2011 | [2E6CF50BFED3](<Digital/Acer/ACR010C/2E6CF50BFED3>) |
+| Acer             | ACR010C | V193HQV          | 1366x768  | 18.5 | 2010 | [6F183DB92F81](<Digital/Acer/ACR010C/6F183DB92F81>) |
 | Acer             | ACR010F | B273H            | 1920x1080 | 27.2 | 2010 | [25D8F28BF01F](<Digital/Acer/ACR010F/25D8F28BF01F>) |
 | Acer             | ACR0113 | G235H            | 1920x1080 | 23.1 | 2012 | [074A22145B0B](<Digital/Acer/ACR0113/074A22145B0B>) |
 | Acer             | ACR0113 | G235H            | 1920x1080 | 23.1 | 2011 | [0D13BD0B28D1](<Digital/Acer/ACR0113/0D13BD0B28D1>) |
 | Acer             | ACR0113 | G235H            | 1920x1080 | 23.1 | 2010 | [1C2E5CAF453A](<Digital/Acer/ACR0113/1C2E5CAF453A>) |
 | Acer             | ACR0113 |                  | 1920x1080 | 23.1 |      | [70972A4F89F2](<Digital/Acer/ACR0113/70972A4F89F2>) |
 | Acer             | ACR0114 | G245H            | 1920x1080 | 24.0 | 2011 | [36D1D5CE6CCD](<Digital/Acer/ACR0114/36D1D5CE6CCD>) |
-| Acer             | ACR0114 | G245H            | 1920x1080 | 24.0 | 2010 | [2FBC16E4A71E](<Digital/Acer/ACR0114/2FBC16E4A71E>) |
+| Acer             | ACR0114 | G245H            | 1920x1080 | 24.0 | 2010 | [12F21453B9F2](<Digital/Acer/ACR0114/12F21453B9F2>) |
 | Acer             | ACR0114 | G245H            | 1920x1080 | 24.0 | 2009 | [12BF24BED6D5](<Digital/Acer/ACR0114/12BF24BED6D5>) |
 | Acer             | ACR0115 | G195HQ           | 1366x768  | 18.6 | 2010 | [7616A9747791](<Digital/Acer/ACR0115/7616A9747791>) |
 | Acer             | ACR0116 | G205H            | 1600x900  | 19.9 | 2009 | [0BE0CB1BE7DE](<Digital/Acer/ACR0116/0BE0CB1BE7DE>) |
@@ -2426,7 +2574,7 @@ model and ID.
 | Acer             | ACR013A | T232HL           | 1920x1080 | 23.1 | 2012 | [B740669E9AAC](<Digital/Acer/ACR013A/B740669E9AAC>) |
 | Acer             | ACR013B | T272HL           | 1920x1080 | 27.2 | 2013 | [048662200F1B](<Digital/Acer/ACR013B/048662200F1B>) |
 | Acer             | ACR013B | T272HL           | 1920x1080 | 27.2 | 2012 | [1B5E3AB5E687](<Digital/Acer/ACR013B/1B5E3AB5E687>) |
-| Acer             | ACR013E | V193HQV          | 1366x768  | 18.5 | 2010 | [66BCC88C3E71](<Digital/Acer/ACR013E/66BCC88C3E71>) |
+| Acer             | ACR013E | V193HQV          | 1366x768  | 18.5 | 2010 | [05AB7DA4BCB2](<Digital/Acer/ACR013E/05AB7DA4BCB2>) |
 | Acer             | ACR0141 | P195HQL          | 1366x768  | 18.5 | 2010 | [1EE6770F1D96](<Digital/Acer/ACR0141/1EE6770F1D96>) |
 | Acer             | ACR0148 | G205HL           | 1600x900  | 19.9 | 2010 | [7C9804D09E28](<Digital/Acer/ACR0148/7C9804D09E28>) |
 | Acer             | ACR0149 | P235HL           | 1920x1080 | 23.1 | 2010 | [A4BA61E73F11](<Digital/Acer/ACR0149/A4BA61E73F11>) |
@@ -2447,8 +2595,8 @@ model and ID.
 | Acer             | ACR0188 | E223HQ           | 1920x1080 | 21.7 | 2010 | [8F3531ED5D7C](<Digital/Acer/ACR0188/8F3531ED5D7C>) |
 | Acer             | ACR0196 | P226HQ           | 1920x1080 | 21.7 | 2010 | [C3AA1A696F54](<Digital/Acer/ACR0196/C3AA1A696F54>) |
 | Acer             | ACR0198 | P226HQL          | 1920x1080 | 21.7 | 2011 | [6E866B48CE92](<Digital/Acer/ACR0198/6E866B48CE92>) |
-| Acer             | ACR0198 | P226HQL          | 1920x1080 | 21.7 | 2010 | [C922B4F426BE](<Digital/Acer/ACR0198/C922B4F426BE>) |
-| Acer             | ACR0199 | P216HL           | 1920x1080 | 21.7 | 2011 | [B575C1FAA70F](<Digital/Acer/ACR0199/B575C1FAA70F>) |
+| Acer             | ACR0198 | P226HQL          | 1920x1080 | 21.7 | 2010 | [1E1CE48814F6](<Digital/Acer/ACR0198/1E1CE48814F6>) |
+| Acer             | ACR0199 | P216HL           | 1920x1080 | 21.7 | 2011 | [4244484CD554](<Digital/Acer/ACR0199/4244484CD554>) |
 | Acer             | ACR019B | P186H            | 1366x768  | 18.5 | 2010 | [E82BF6A4EF53](<Digital/Acer/ACR019B/E82BF6A4EF53>) |
 | Acer             | ACR019C | P196HQL          | 1366x768  | 18.5 | 2013 | [1F994CE11F72](<Digital/Acer/ACR019C/1F994CE11F72>) |
 | Acer             | ACR019D | P186HL           | 1366x768  | 18.5 | 2012 | [AEB599FF6813](<Digital/Acer/ACR019D/AEB599FF6813>) |
@@ -2469,7 +2617,7 @@ model and ID.
 | Acer             | ACR01A9 | S221HQL          | 1920x1080 | 21.7 | 2012 | [375FC534AF8D](<Digital/Acer/ACR01A9/375FC534AF8D>) |
 | Acer             | ACR01A9 | S221HQL          | 1920x1080 | 21.7 | 2011 | [2970A9003B21](<Digital/Acer/ACR01A9/2970A9003B21>) |
 | Acer             | ACR01A9 | S221HQL          | 1920x1080 | 21.7 | 2010 | [84E88A2568F1](<Digital/Acer/ACR01A9/84E88A2568F1>) |
-| Acer             | ACR01AA | S211HL           | 1920x1080 | 21.7 | 2011 | [3A9C8F632944](<Digital/Acer/ACR01AA/3A9C8F632944>) |
+| Acer             | ACR01AA | S211HL           | 1920x1080 | 21.7 | 2011 | [01869E845C21](<Digital/Acer/ACR01AA/01869E845C21>) |
 | Acer             | ACR01AB | A221HQ           | 1920x1080 | 21.7 | 2010 | [B8275B6F66E7](<Digital/Acer/ACR01AB/B8275B6F66E7>) |
 | Acer             | ACR01B3 | A221HQL          | 1920x1080 | 21.7 | 2011 | [14D53E61ABBE](<Digital/Acer/ACR01B3/14D53E61ABBE>) |
 | Acer             | ACR01B3 | A221HQL          | 1920x1080 | 21.7 | 2010 | [E0214439BA07](<Digital/Acer/ACR01B3/E0214439BA07>) |
@@ -2488,6 +2636,7 @@ model and ID.
 | Acer             | ACR01EC | P246H            | 1920x1080 | 24.0 | 2010 | [2708CD0F46A3](<Digital/Acer/ACR01EC/2708CD0F46A3>) |
 | Acer             | ACR01EC | P246H            | 1920x1080 | 24.0 |      | [A38FBD392A08](<Digital/Acer/ACR01EC/A38FBD392A08>) |
 | Acer             | ACR01ED | P206HV           | 1600x900  | 19.9 | 2011 | [B679A9217F32](<Digital/Acer/ACR01ED/B679A9217F32>) |
+| Acer             | ACR01ED | P206HV           | 1600x900  | 19.9 | 2010 | [E508A95EF0AB](<Digital/Acer/ACR01ED/E508A95EF0AB>) |
 | Acer             | ACR01F4 | E190HQV          | 1366x768  | 18.5 | 2010 | [3334BFB0D724](<Digital/Acer/ACR01F4/3334BFB0D724>) |
 | Acer             | ACR01F9 | E230H            | 1920x1080 | 23.1 | 2011 | [082F12A62215](<Digital/Acer/ACR01F9/082F12A62215>) |
 | Acer             | ACR01FA | P206HL           | 1600x900  | 19.9 | 2011 | [AC36C4DE3443](<Digital/Acer/ACR01FA/AC36C4DE3443>) |
@@ -2522,6 +2671,7 @@ model and ID.
 | Acer             | ACR0216 | S242HL           | 1920x1080 | 24.0 | 2011 | [060C1E01BD93](<Digital/Acer/ACR0216/060C1E01BD93>) |
 | Acer             | ACR0216 | S242HL           | 1920x1080 | 24.0 | 2010 | [08A54C3637EE](<Digital/Acer/ACR0216/08A54C3637EE>) |
 | Acer             | ACR0216 | S242HL           | 1920x1080 | 24.0 |      | [252FCB6CB3D0](<Digital/Acer/ACR0216/252FCB6CB3D0>) |
+| Acer             | ACR0219 | V193WV           | 1440x900  | 19.1 | 2012 | [1E7E9E5530F7](<Digital/Acer/ACR0219/1E7E9E5530F7>) |
 | Acer             | ACR021C | S191HQL          | 1366x768  | 18.5 | 2011 | [E509190AB280](<Digital/Acer/ACR021C/E509190AB280>) |
 | Acer             | ACR021C | S191HQL          | 1366x768  | 18.5 | 2010 | [1C486F1FD291](<Digital/Acer/ACR021C/1C486F1FD291>) |
 | Acer             | ACR0223 | G205HV           | 1600x900  | 19.9 | 2012 | [43DBD32A07A4](<Digital/Acer/ACR0223/43DBD32A07A4>) |
@@ -2529,16 +2679,18 @@ model and ID.
 | Acer             | ACR0225 |                  | 1920x1080 | 21.7 |      | [5B19D92E85F5](<Digital/Acer/ACR0225/5B19D92E85F5>) |
 | Acer             | ACR0228 | G225HQV          | 1920x1080 | 21.7 | 2011 | [3D8A6EA3DCCA](<Digital/Acer/ACR0228/3D8A6EA3DCCA>) |
 | Acer             | ACR0228 | G225HQV          | 1920x1080 | 21.7 | 2010 | [E1C64E30B2D3](<Digital/Acer/ACR0228/E1C64E30B2D3>) |
+| Acer             | ACR0229 | B223WL           | 1680x1050 | 22.0 | 2012 | [85C53D4829B9](<Digital/Acer/ACR0229/85C53D4829B9>) |
 | Acer             | ACR022A | V223WL           | 1680x1050 | 22.0 | 2012 | [EF3C2AFF791F](<Digital/Acer/ACR022A/EF3C2AFF791F>) |
-| Acer             | ACR0230 | M230HDL          | 1920x1080 | 23.1 | 2011 | [9F36E524F027](<Digital/Acer/ACR0230/9F36E524F027>) |
+| Acer             | ACR0230 | M230HDL          | 1920x1080 | 23.1 | 2011 | [1EEE41D7C630](<Digital/Acer/ACR0230/1EEE41D7C630>) |
 | Acer             | ACR0233 | V203HV           | 1600x900  | 19.9 | 2011 | [24677178F512](<Digital/Acer/ACR0233/24677178F512>) |
 | Acer             | ACR0233 | V203HV           | 1600x900  | 19.9 |      | [6CD5C8491CB7](<Digital/Acer/ACR0233/6CD5C8491CB7>) |
+| Acer             | ACR0234 | G225HQV          | 1920x1080 | 21.7 | 2012 | [1FA89D213263](<Digital/Acer/ACR0234/1FA89D213263>) |
 | Acer             | ACR0234 | G225HQV          | 1920x1080 | 21.7 | 2010 | [296D1780E425](<Digital/Acer/ACR0234/296D1780E425>) |
 | Acer             | ACR0239 | V193L            | 1280x1024 | 19.1 | 2013 | [DE9E6ED371CD](<Digital/Acer/ACR0239/DE9E6ED371CD>) |
 | Acer             | ACR023B | V193WL           | 1440x900  | 19.1 | 2012 | [8E9410ECCC00](<Digital/Acer/ACR023B/8E9410ECCC00>) |
 | Acer             | ACR023D | G215HV           | 1920x1080 | 21.7 | 2012 | [D18840252FF1](<Digital/Acer/ACR023D/D18840252FF1>) |
 | Acer             | ACR023D | G215HV           | 1920x1080 | 21.7 |      | [5BA3F75CE392](<Digital/Acer/ACR023D/5BA3F75CE392>) |
-| Acer             | ACR023F | P246HL           | 1920x1080 | 24.0 | 2012 | [9604CE1C6E02](<Digital/Acer/ACR023F/9604CE1C6E02>) |
+| Acer             | ACR023F | P246HL           | 1920x1080 | 24.0 | 2012 | [62FA3D586C1B](<Digital/Acer/ACR023F/62FA3D586C1B>) |
 | Acer             | ACR023F | P246HL           | 1920x1080 | 24.0 | 2011 | [81D8A7952D40](<Digital/Acer/ACR023F/81D8A7952D40>) |
 | Acer             | ACR0243 |                  | 1920x1080 | 23.4 |      | [D142E39DB2C1](<Digital/Acer/ACR0243/D142E39DB2C1>) |
 | Acer             | ACR0246 | V223HQL          | 1920x1080 | 21.7 | 2013 | [355A75E521F8](<Digital/Acer/ACR0246/355A75E521F8>) |
@@ -2546,11 +2698,12 @@ model and ID.
 | Acer             | ACR0246 | V223HQL          | 1920x1080 | 21.7 |      | [825FD5C7FE94](<Digital/Acer/ACR0246/825FD5C7FE94>) |
 | Acer             | ACR024C | GN245HQ          | 1920x1080 | 23.4 | 2011 | [21E077781656](<Digital/Acer/ACR024C/21E077781656>) |
 | Acer             | ACR0250 | G215HL           | 1920x1080 | 21.7 | 2011 | [9CBC9112408E](<Digital/Acer/ACR0250/9CBC9112408E>) |
+| Acer             | ACR0256 | HN274H           | 1920x1080 | 27.2 | 2011 | [D151EEAD19DF](<Digital/Acer/ACR0256/D151EEAD19DF>) |
 | Acer             | ACR025A | GR235H           | 1920x1080 | 23.1 | 2011 | [EEF9C2A8B5E7](<Digital/Acer/ACR025A/EEF9C2A8B5E7>) |
 | Acer             | ACR025B | G225HQL          | 1920x1080 | 21.7 | 2012 | [F7A863FEE3CB](<Digital/Acer/ACR025B/F7A863FEE3CB>) |
 | Acer             | ACR025D | V223HQV          | 1920x1080 | 22.1 | 2012 | [168A814C12F0](<Digital/Acer/ACR025D/168A814C12F0>) |
 | Acer             | ACR025D | V223HQV          | 1920x1080 | 21.7 | 2012 | [6564C0A2FF69](<Digital/Acer/ACR025D/6564C0A2FF69>) |
-| Acer             | ACR025D | V223HQV          | 1920x1080 | 22.1 | 2011 | [EE976BA19F0B](<Digital/Acer/ACR025D/EE976BA19F0B>) |
+| Acer             | ACR025D | V223HQV          | 1920x1080 | 22.1 | 2011 | [76DD2C8B7274](<Digital/Acer/ACR025D/76DD2C8B7274>) |
 | Acer             | ACR025E | V213HV           | 1920x1080 | 22.1 | 2011 | [BFCD8C82BBFB](<Digital/Acer/ACR025E/BFCD8C82BBFB>) |
 | Acer             | ACR0264 | H274HL           | 1920x1080 | 27.2 | 2011 | [1294663DD5ED](<Digital/Acer/ACR0264/1294663DD5ED>) |
 | Acer             | ACR026C | P237HL           | 1920x1080 | 23.1 | 2011 | [B4020F937126](<Digital/Acer/ACR026C/B4020F937126>) |
@@ -2567,6 +2720,7 @@ model and ID.
 | Acer             | ACR0281 | S220HQL          | 1920x1080 | 21.7 | 2012 | [24E47D8B1090](<Digital/Acer/ACR0281/24E47D8B1090>) |
 | Acer             | ACR0281 | S220HQL          | 1920x1080 | 21.7 | 2011 | [00451649C5FE](<Digital/Acer/ACR0281/00451649C5FE>) |
 | Acer             | ACR0281 | S220HQL          | 1920x1080 | 21.7 |      | [2AFDA3CD6F96](<Digital/Acer/ACR0281/2AFDA3CD6F96>) |
+| Acer             | ACR0282 | S230HL           | 1920x1080 | 23.1 | 2015 | [3F5A18C558A5](<Digital/Acer/ACR0282/3F5A18C558A5>) |
 | Acer             | ACR0282 | S230HL           | 1920x1080 | 23.1 | 2014 | [2E850F46FA01](<Digital/Acer/ACR0282/2E850F46FA01>) |
 | Acer             | ACR0282 | S230HL           | 1920x1080 | 23.1 | 2013 | [1AB5475F5AEF](<Digital/Acer/ACR0282/1AB5475F5AEF>) |
 | Acer             | ACR0282 | S230HL           | 1920x1080 | 23.1 | 2012 | [5F87372D96A4](<Digital/Acer/ACR0282/5F87372D96A4>) |
@@ -2586,6 +2740,7 @@ model and ID.
 | Acer             | ACR02BE | S235HL           | 1920x1080 | 23.1 | 2012 | [30C924F2673C](<Digital/Acer/ACR02BE/30C924F2673C>) |
 | Acer             | ACR02BE | S235HL           | 1920x1080 | 23.1 |      | [C8D7B8700EDF](<Digital/Acer/ACR02BE/C8D7B8700EDF>) |
 | Acer             | ACR02C5 | B243PWL          | 1920x1200 | 24.0 | 2013 | [72F3D1BD5BD7](<Digital/Acer/ACR02C5/72F3D1BD5BD7>) |
+| Acer             | ACR02C5 | B243PWL          | 1920x1200 | 24.0 | 2012 | [03B7CE064664](<Digital/Acer/ACR02C5/03B7CE064664>) |
 | Acer             | ACR02C5 |                  | 1920x1200 | 24.0 |      | [095FC0FCF323](<Digital/Acer/ACR02C5/095FC0FCF323>) |
 | Acer             | ACR02C7 | V243PWL          | 1920x1200 | 24.0 | 2012 | [D8B632D86D09](<Digital/Acer/ACR02C7/D8B632D86D09>) |
 | Acer             | ACR02C8 | V243PWL          | 1920x1200 | 24.0 | 2012 | [98B111E7B8B6](<Digital/Acer/ACR02C8/98B111E7B8B6>) |
@@ -2606,6 +2761,7 @@ model and ID.
 | Acer             | ACR02D4 | G236HL           | 1920x1080 | 23.1 | 2012 | [B499B1022D39](<Digital/Acer/ACR02D4/B499B1022D39>) |
 | Acer             | ACR02D5 | S200HL           | 1600x900  | 19.9 | 2012 | [5CEE7A2EA033](<Digital/Acer/ACR02D5/5CEE7A2EA033>) |
 | Acer             | ACR02D6 | S220HQL          | 1920x1080 | 21.7 | 2013 | [A62B0A338E72](<Digital/Acer/ACR02D6/A62B0A338E72>) |
+| Acer             | ACR02D7 | S230HL           | 1920x1080 | 23.1 | 2012 | [1554A4958D76](<Digital/Acer/ACR02D7/1554A4958D76>) |
 | Acer             | ACR02DC | V235HL           | 1920x1080 | 23.1 | 2012 | [352E8262DC6A](<Digital/Acer/ACR02DC/352E8262DC6A>) |
 | Acer             | ACR02EA | G226HQL          | 1920x1080 | 21.7 | 2014 | [F3593FCB84AB](<Digital/Acer/ACR02EA/F3593FCB84AB>) |
 | Acer             | ACR02EA | G226HQL          | 1920x1080 | 21.7 | 2013 | [AED12AE88F67](<Digital/Acer/ACR02EA/AED12AE88F67>) |
@@ -2619,7 +2775,7 @@ model and ID.
 | Acer             | ACR02EB | G236HL           | 1920x1080 | 23.1 |      | [9A4BB550FC7F](<Digital/Acer/ACR02EB/9A4BB550FC7F>) |
 | Acer             | ACR02F0 | V245HL           | 1920x1080 | 24.0 | 2012 | [F1FF40B71E90](<Digital/Acer/ACR02F0/F1FF40B71E90>) |
 | Acer             | ACR02F5 | B223PWL          | 1680x1050 | 22.0 | 2013 | [20B11694EC0D](<Digital/Acer/ACR02F5/20B11694EC0D>) |
-| Acer             | ACR02F9 | GN246HL          | 1920x1080 | 24.0 | 2019 | [D6323C7310D5](<Digital/Acer/ACR02F9/D6323C7310D5>) |
+| Acer             | ACR02F9 | GN246HL          | 1920x1080 | 24.0 | 2019 | [65F33BA86AE5](<Digital/Acer/ACR02F9/65F33BA86AE5>) |
 | Acer             | ACR02F9 | GN246HL          | 1920x1080 | 24.0 | 2018 | [1D8BBE8DD333](<Digital/Acer/ACR02F9/1D8BBE8DD333>) |
 | Acer             | ACR02F9 |                  | 1920x1080 | 24.0 | 2017 | [1A850F19B0BF](<Digital/Acer/ACR02F9/1A850F19B0BF>) |
 | Acer             | ACR02F9 | GN246HL          | 1920x1080 | 24.0 | 2016 | [2E010FCFD030](<Digital/Acer/ACR02F9/2E010FCFD030>) |
@@ -2627,11 +2783,13 @@ model and ID.
 | Acer             | ACR02F9 | GN246HL          | 1920x1080 | 24.0 | 2014 | [71C927A1EFD9](<Digital/Acer/ACR02F9/71C927A1EFD9>) |
 | Acer             | ACR02F9 | GN246HL          | 1920x1080 | 24.0 |      | [5B8E5CB8E009](<Digital/Acer/ACR02F9/5B8E5CB8E009>) |
 | Acer             | ACR02FA | GN246HL          | 1920x1080 | 24.0 | 2019 | [AA8AAB45A661](<Digital/Acer/ACR02FA/AA8AAB45A661>) |
-| Acer             | ACR02FA | GN246HL          | 1920x1080 | 24.0 | 2017 | [1B13A5407C4E](<Digital/Acer/ACR02FA/1B13A5407C4E>) |
+| Acer             | ACR02FA | GN246HL          | 1920x1080 | 24.0 | 2018 | [3D26B66D73CC](<Digital/Acer/ACR02FA/3D26B66D73CC>) |
+| Acer             | ACR02FA | GN246HL          | 1920x1080 | 24.0 | 2017 | [066E2BEFE8E8](<Digital/Acer/ACR02FA/066E2BEFE8E8>) |
 | Acer             | ACR02FA | GN246HL          | 1920x1080 | 24.0 | 2016 | [10880E5B0E2F](<Digital/Acer/ACR02FA/10880E5B0E2F>) |
+| Acer             | ACR02FA | GN246HL          | 1920x1080 | 24.0 | 2015 | [930707FFE731](<Digital/Acer/ACR02FA/930707FFE731>) |
 | Acer             | ACR02FA | GN246HL          | 1920x1080 | 24.0 | 2012 | [6770A07537AC](<Digital/Acer/ACR02FA/6770A07537AC>) |
 | Acer             | ACR02FF | G246HL           | 1920x1080 | 24.0 | 2018 | [791D5BE655DF](<Digital/Acer/ACR02FF/791D5BE655DF>) |
-| Acer             | ACR02FF | G246HL           | 1920x1080 | 24.0 | 2017 | [9937A828E829](<Digital/Acer/ACR02FF/9937A828E829>) |
+| Acer             | ACR02FF | G246HL           | 1920x1080 | 24.0 | 2017 | [67284BC8F29E](<Digital/Acer/ACR02FF/67284BC8F29E>) |
 | Acer             | ACR02FF | G246HL           | 1920x1080 | 24.0 | 2016 | [037C6E2346D9](<Digital/Acer/ACR02FF/037C6E2346D9>) |
 | Acer             | ACR02FF | G246HL           | 1920x1080 | 24.0 | 2015 | [0B095A978C15](<Digital/Acer/ACR02FF/0B095A978C15>) |
 | Acer             | ACR02FF | G246HL           | 1920x1080 | 24.0 | 2014 | [239C2BDD8B7D](<Digital/Acer/ACR02FF/239C2BDD8B7D>) |
@@ -2651,7 +2809,7 @@ model and ID.
 | Acer             | ACR0303 | V275HL           | 1920x1080 | 27.2 | 2012 | [9B216A3F7C79](<Digital/Acer/ACR0303/9B216A3F7C79>) |
 | Acer             | ACR0308 | S231HL           | 1920x1080 | 23.1 | 2015 | [E915815E38DC](<Digital/Acer/ACR0308/E915815E38DC>) |
 | Acer             | ACR0308 | S231HL           | 1920x1080 | 23.1 | 2014 | [47D41238AEBE](<Digital/Acer/ACR0308/47D41238AEBE>) |
-| Acer             | ACR0308 | S231HL           | 1920x1080 | 23.1 | 2013 | [6CAC9F697933](<Digital/Acer/ACR0308/6CAC9F697933>) |
+| Acer             | ACR0308 | S231HL           | 1920x1080 | 23.1 | 2013 | [4A0AFC9025D8](<Digital/Acer/ACR0308/4A0AFC9025D8>) |
 | Acer             | ACR0308 |                  | 1920x1080 | 23.1 |      | [56DDE876871E](<Digital/Acer/ACR0308/56DDE876871E>) |
 | Acer             | ACR030B | S230HL           | 1920x1080 | 23.1 | 2013 | [EF78F34F4EC4](<Digital/Acer/ACR030B/EF78F34F4EC4>) |
 | Acer             | ACR030C | G236HL           | 1920x1080 | 23.1 | 2013 | [7FB9381E0ACF](<Digital/Acer/ACR030C/7FB9381E0ACF>) |
@@ -2671,6 +2829,7 @@ model and ID.
 | Acer             | ACR0318 | H236HL           | 1920x1080 | 23.1 | 2014 | [049718FF544B](<Digital/Acer/ACR0318/049718FF544B>) |
 | Acer             | ACR0318 | H236HL           | 1920x1080 | 23.1 | 2013 | [0E18BEAF5187](<Digital/Acer/ACR0318/0E18BEAF5187>) |
 | Acer             | ACR0318 |                  | 1920x1080 | 23.1 |      | [0DB7A5042448](<Digital/Acer/ACR0318/0DB7A5042448>) |
+| Acer             | ACR0319 | H226HQL          | 1920x1080 | 21.7 | 2015 | [749AAA720C1F](<Digital/Acer/ACR0319/749AAA720C1F>) |
 | Acer             | ACR0319 | H226HQL          | 1920x1080 | 21.7 | 2014 | [5B0FCBF71D37](<Digital/Acer/ACR0319/5B0FCBF71D37>) |
 | Acer             | ACR0319 | H226HQL          | 1920x1080 | 21.7 | 2013 | [3B12C02CDA1D](<Digital/Acer/ACR0319/3B12C02CDA1D>) |
 | Acer             | ACR0319 | H226HQL          | 1920x1080 | 21.7 | 2012 | [8A8973EFF065](<Digital/Acer/ACR0319/8A8973EFF065>) |
@@ -2696,13 +2855,14 @@ model and ID.
 | Acer             | ACR032D |                  | 1920x1080 | 21.7 |      | [2CD34C7538BD](<Digital/Acer/ACR032D/2CD34C7538BD>) |
 | Acer             | ACR032E | V246HL           | 1920x1080 | 24.0 | 2020 | [2B20AE3F064A](<Digital/Acer/ACR032E/2B20AE3F064A>) |
 | Acer             | ACR032E | V246HL           | 1920x1080 | 24.0 | 2019 | [5B71BFB689D4](<Digital/Acer/ACR032E/5B71BFB689D4>) |
-| Acer             | ACR032E | V246HL           | 1920x1080 | 24.0 | 2018 | [E0E47387520E](<Digital/Acer/ACR032E/E0E47387520E>) |
-| Acer             | ACR032E | V246HL           | 1920x1080 | 24.0 | 2017 | [A9ECA910116E](<Digital/Acer/ACR032E/A9ECA910116E>) |
+| Acer             | ACR032E | V246HL           | 1920x1080 | 24.0 | 2018 | [0F4F8BBC31A9](<Digital/Acer/ACR032E/0F4F8BBC31A9>) |
+| Acer             | ACR032E | V246HL           | 1920x1080 | 24.0 | 2017 | [64AA163C3059](<Digital/Acer/ACR032E/64AA163C3059>) |
 | Acer             | ACR032E | V246HL           | 1920x1080 | 24.0 | 2016 | [2874695207AA](<Digital/Acer/ACR032E/2874695207AA>) |
 | Acer             | ACR032E | V246HL           | 1920x1080 | 24.0 | 2015 | [441F771A4CB7](<Digital/Acer/ACR032E/441F771A4CB7>) |
 | Acer             | ACR032E | V246HL           | 1920x1080 | 24.0 | 2014 | [41EC98603928](<Digital/Acer/ACR032E/41EC98603928>) |
 | Acer             | ACR032E | V246HL           | 1920x1080 | 24.0 | 2013 | [1E7251C58E0D](<Digital/Acer/ACR032E/1E7251C58E0D>) |
 | Acer             | ACR032E |                  | 1920x1080 | 24.0 |      | [13803A3A52A9](<Digital/Acer/ACR032E/13803A3A52A9>) |
+| Acer             | ACR032F | V276HL           | 1920x1080 | 27.2 | 2015 | [C3AA3786F621](<Digital/Acer/ACR032F/C3AA3786F621>) |
 | Acer             | ACR032F | V276HL           | 1920x1080 | 27.2 | 2013 | [1FE38F00D641](<Digital/Acer/ACR032F/1FE38F00D641>) |
 | Acer             | ACR032F |                  | 1920x1080 | 27.2 |      | [8AF26158C53B](<Digital/Acer/ACR032F/8AF26158C53B>) |
 | Acer             | ACR0330 | B226HQL          | 1920x1080 | 21.7 | 2014 | [CF4D4DFE4443](<Digital/Acer/ACR0330/CF4D4DFE4443>) |
@@ -2737,10 +2897,11 @@ model and ID.
 | Acer             | ACR0336 | V246HL           | 1920x1080 | 24.0 | 2017 | [15644F5356B2](<Digital/Acer/ACR0336/15644F5356B2>) |
 | Acer             | ACR0336 | V246HL           | 1920x1080 | 24.0 | 2016 | [2DEF97DFBBA0](<Digital/Acer/ACR0336/2DEF97DFBBA0>) |
 | Acer             | ACR0336 | V246HL           | 1920x1080 | 24.0 | 2015 | [2CF852F7446E](<Digital/Acer/ACR0336/2CF852F7446E>) |
-| Acer             | ACR0336 | V246HL           | 1920x1080 | 24.0 | 2014 | [C3CC93F1466E](<Digital/Acer/ACR0336/C3CC93F1466E>) |
+| Acer             | ACR0336 | V246HL           | 1920x1080 | 24.0 | 2014 | [A44DAED6EAC0](<Digital/Acer/ACR0336/A44DAED6EAC0>) |
 | Acer             | ACR0336 | V246HL           | 1920x1080 | 24.0 |      | [0090AD93C9D4](<Digital/Acer/ACR0336/0090AD93C9D4>) |
 | Acer             | ACR0337 | B226HQL          | 1920x1080 | 21.7 | 2018 | [E3CF2EDE6C8E](<Digital/Acer/ACR0337/E3CF2EDE6C8E>) |
 | Acer             | ACR0337 | B226HQL          | 1920x1080 | 21.7 | 2016 | [881991891438](<Digital/Acer/ACR0337/881991891438>) |
+| Acer             | ACR0338 | B246HL           | 1920x1080 | 24.0 | 2021 | [9C63C06EEEBA](<Digital/Acer/ACR0338/9C63C06EEEBA>) |
 | Acer             | ACR0338 | B246HL           | 1920x1080 | 24.0 | 2019 | [191851C450E1](<Digital/Acer/ACR0338/191851C450E1>) |
 | Acer             | ACR0338 | B246HL           | 1920x1080 | 24.0 | 2017 | [09C416DCEE74](<Digital/Acer/ACR0338/09C416DCEE74>) |
 | Acer             | ACR0338 | B246HL           | 1920x1080 | 24.0 | 2016 | [024A1F32DC40](<Digital/Acer/ACR0338/024A1F32DC40>) |
@@ -2750,6 +2911,8 @@ model and ID.
 | Acer             | ACR0339 | V226WL           | 1680x1050 | 22.0 | 2018 | [4AA385BD43A1](<Digital/Acer/ACR0339/4AA385BD43A1>) |
 | Acer             | ACR0339 | V226WL           | 1680x1050 | 22.0 | 2015 | [8AEAC5696939](<Digital/Acer/ACR0339/8AEAC5696939>) |
 | Acer             | ACR0339 | V226WL           | 1680x1050 | 22.0 | 2013 | [7EE3A60B9F5F](<Digital/Acer/ACR0339/7EE3A60B9F5F>) |
+| Acer             | ACR033A | B226WL           | 1680x1050 | 22.0 | 2018 | [09261DDF7826](<Digital/Acer/ACR033A/09261DDF7826>) |
+| Acer             | ACR033A | B226WL           | 1680x1050 | 22.0 | 2017 | [95A986A503FA](<Digital/Acer/ACR033A/95A986A503FA>) |
 | Acer             | ACR033A | B226WL           | 1680x1050 | 22.0 | 2016 | [DD8C5A745745](<Digital/Acer/ACR033A/DD8C5A745745>) |
 | Acer             | ACR033A | B226WL           | 1680x1050 | 22.0 | 2015 | [0D8940D9C5BB](<Digital/Acer/ACR033A/0D8940D9C5BB>) |
 | Acer             | ACR033A | B226WL           | 1680x1050 | 22.0 | 2014 | [1343E62EBAD4](<Digital/Acer/ACR033A/1343E62EBAD4>) |
@@ -2775,6 +2938,7 @@ model and ID.
 | Acer             | ACR0359 | S200HQL          | 1600x900  | 19.4 | 2015 | [0BD839C60C8D](<Digital/Acer/ACR0359/0BD839C60C8D>) |
 | Acer             | ACR0359 | S200HQL          | 1600x900  | 19.4 | 2013 | [A2D5B6166175](<Digital/Acer/ACR0359/A2D5B6166175>) |
 | Acer             | ACR035A | G206HQL          | 1600x900  | 19.4 | 2018 | [2187EBD4FE5F](<Digital/Acer/ACR035A/2187EBD4FE5F>) |
+| Acer             | ACR035A | G206HQL          | 1600x900  | 19.4 | 2017 | [C7BE31AB29D3](<Digital/Acer/ACR035A/C7BE31AB29D3>) |
 | Acer             | ACR035A | G206HQL          | 1600x900  | 19.4 | 2015 | [2255E3BB2290](<Digital/Acer/ACR035A/2255E3BB2290>) |
 | Acer             | ACR035B | G246HYL          | 1920x1080 | 24.0 | 2018 | [DA2E337A1962](<Digital/Acer/ACR035B/DA2E337A1962>) |
 | Acer             | ACR035B | G246HYL          | 1920x1080 | 24.0 | 2017 | [9628ECD581E9](<Digital/Acer/ACR035B/9628ECD581E9>) |
@@ -2790,6 +2954,7 @@ model and ID.
 | Acer             | ACR0363 | V196L            | 1280x1024 | 19.1 | 2014 | [98A5C2CEDADD](<Digital/Acer/ACR0363/98A5C2CEDADD>) |
 | Acer             | ACR0363 | V196L            | 1280x1024 | 19.1 | 2013 | [8D9707098389](<Digital/Acer/ACR0363/8D9707098389>) |
 | Acer             | ACR0363 | V196L            | 1280x1024 | 19.1 |      | [E763F8DECC31](<Digital/Acer/ACR0363/E763F8DECC31>) |
+| Acer             | ACR0364 | B196L            | 1280x1024 | 19.1 | 2013 | [956EC20B82D3](<Digital/Acer/ACR0364/956EC20B82D3>) |
 | Acer             | ACR0365 | S200HQL          | 1600x900  | 19.4 | 2014 | [F7FDD8FA4EFC](<Digital/Acer/ACR0365/F7FDD8FA4EFC>) |
 | Acer             | ACR0387 | S236HL           | 1920x1080 | 23.1 | 2015 | [00BD7785BE5B](<Digital/Acer/ACR0387/00BD7785BE5B>) |
 | Acer             | ACR0387 | S236HL           | 1920x1080 | 23.1 | 2014 | [9E5AC48B8E2D](<Digital/Acer/ACR0387/9E5AC48B8E2D>) |
@@ -2797,6 +2962,8 @@ model and ID.
 | Acer             | ACR038C | HX1953L          | 1600x900  | 19.4 | 2013 | [B978100ED007](<Digital/Acer/ACR038C/B978100ED007>) |
 | Acer             | ACR0393 | B296CL           | 2560x1080 | 28.6 | 2013 | [A2CE7FFDA6A6](<Digital/Acer/ACR0393/A2CE7FFDA6A6>) |
 | Acer             | ACR0396 | V176L            | 1280x1024 | 19.1 | 2014 | [BEB34593D198](<Digital/Acer/ACR0396/BEB34593D198>) |
+| Acer             | ACR0397 | T272HUL          | 2560x1440 | 27.2 | 2014 | [E3853F004037](<Digital/Acer/ACR0397/E3853F004037>) |
+| Acer             | ACR039C | TA272HUL         | 2560x1440 | 27.2 | 2013 | [A7662D326695](<Digital/Acer/ACR039C/A7662D326695>) |
 | Acer             | ACR03AA | H276HL           | 1920x1080 | 27.2 | 2015 | [4B35D548C186](<Digital/Acer/ACR03AA/4B35D548C186>) |
 | Acer             | ACR03AA | H276HL           | 1920x1080 | 27.2 | 2013 | [666416DD2FC0](<Digital/Acer/ACR03AA/666416DD2FC0>) |
 | Acer             | ACR03C0 |                  | 1920x1080 | 21.7 | 2018 | [D1AD4FB91D52](<Digital/Acer/ACR03C0/D1AD4FB91D52>) |
@@ -2811,6 +2978,7 @@ model and ID.
 | Acer             | ACR03DC | K272HL           | 1920x1080 | 27.2 | 2014 | [027D9F09AE02](<Digital/Acer/ACR03DC/027D9F09AE02>) |
 | Acer             | ACR03DC | K272HL           | 1920x1080 | 27.2 | 2011 | [25ADABB78D4D](<Digital/Acer/ACR03DC/25ADABB78D4D>) |
 | Acer             | ACR03DC |                  | 1920x1080 | 27.2 |      | [8F003F6C0420](<Digital/Acer/ACR03DC/8F003F6C0420>) |
+| Acer             | ACR03DD | K272HUL          | 2560x1440 | 27.2 | 2018 | [AA2AC5FAB314](<Digital/Acer/ACR03DD/AA2AC5FAB314>) |
 | Acer             | ACR03DD | K272HUL          | 2560x1440 | 27.2 | 2015 | [55D7232EEE30](<Digital/Acer/ACR03DD/55D7232EEE30>) |
 | Acer             | ACR03DD | K272HUL          | 2560x1440 | 27.2 | 2014 | [14C335C96822](<Digital/Acer/ACR03DD/14C335C96822>) |
 | Acer             | ACR03DD | K272HUL          | 2560x1440 | 27.2 | 2011 | [886A15E55983](<Digital/Acer/ACR03DD/886A15E55983>) |
@@ -2818,7 +2986,7 @@ model and ID.
 | Acer             | ACR03DE | G227HQL          | 1920x1080 | 21.7 | 2018 | [38EBED3272BE](<Digital/Acer/ACR03DE/38EBED3272BE>) |
 | Acer             | ACR03DE | G227HQL          | 1920x1080 | 21.7 | 2015 | [0B904217B63F](<Digital/Acer/ACR03DE/0B904217B63F>) |
 | Acer             | ACR03DE | G227HQL          | 1920x1080 | 21.7 | 2014 | [3D09CE8A8F82](<Digital/Acer/ACR03DE/3D09CE8A8F82>) |
-| Acer             | ACR03DF | G237HL           | 1920x1080 | 23.1 | 2016 | [B4170A3B36A9](<Digital/Acer/ACR03DF/B4170A3B36A9>) |
+| Acer             | ACR03DF | G237HL           | 1920x1080 | 23.1 | 2016 | [15C8F9065D56](<Digital/Acer/ACR03DF/15C8F9065D56>) |
 | Acer             | ACR03DF | G237HL           | 1920x1080 | 23.1 | 2015 | [05E4363D7BE2](<Digital/Acer/ACR03DF/05E4363D7BE2>) |
 | Acer             | ACR03DF | G237HL           | 1920x1080 | 23.1 | 2014 | [02928B570237](<Digital/Acer/ACR03DF/02928B570237>) |
 | Acer             | ACR03DF | G237HL           | 1920x1080 | 23.1 |      | [A434634F5BD1](<Digital/Acer/ACR03DF/A434634F5BD1>) |
@@ -2826,20 +2994,21 @@ model and ID.
 | Acer             | ACR03E0 | K202HQL          | 1366x768  | 19.4 | 2017 | [A6FF289A2941](<Digital/Acer/ACR03E0/A6FF289A2941>) |
 | Acer             | ACR03E0 | K202HQL          | 1366x768  | 19.4 | 2016 | [247AB394593E](<Digital/Acer/ACR03E0/247AB394593E>) |
 | Acer             | ACR03E0 | K202HQL          | 1600x900  | 19.4 | 2015 | [0900BE731E9D](<Digital/Acer/ACR03E0/0900BE731E9D>) |
-| Acer             | ACR03E0 | K202HQL          | 1600x900  | 19.4 | 2014 | [E4ACB273769A](<Digital/Acer/ACR03E0/E4ACB273769A>) |
+| Acer             | ACR03E0 | K202HQL          | 1600x900  | 19.4 | 2014 | [50258CE8D662](<Digital/Acer/ACR03E0/50258CE8D662>) |
 | Acer             | ACR03E1 | K222HQL          | 1920x1080 | 21.7 | 2020 | [49DB132388E8](<Digital/Acer/ACR03E1/49DB132388E8>) |
-| Acer             | ACR03E1 | K222HQL          | 1920x1080 | 21.7 | 2019 | [4F8F496787C9](<Digital/Acer/ACR03E1/4F8F496787C9>) |
+| Acer             | ACR03E1 | K222HQL          | 1920x1080 | 21.7 | 2019 | [1C3608EB8E0F](<Digital/Acer/ACR03E1/1C3608EB8E0F>) |
 | Acer             | ACR03E1 | K222HQL          | 1920x1080 | 21.7 | 2018 | [4E24EB2C383D](<Digital/Acer/ACR03E1/4E24EB2C383D>) |
 | Acer             | ACR03E1 | K222HQL          | 1920x1080 | 21.7 | 2017 | [30CFC7DD6A69](<Digital/Acer/ACR03E1/30CFC7DD6A69>) |
 | Acer             | ACR03E1 | K222HQL          | 1920x1080 | 21.7 | 2016 | [11BA08B623EB](<Digital/Acer/ACR03E1/11BA08B623EB>) |
 | Acer             | ACR03E1 | K222HQL          | 1920x1080 | 21.7 | 2015 | [09DB21D84B87](<Digital/Acer/ACR03E1/09DB21D84B87>) |
 | Acer             | ACR03E1 | K222HQL          | 1920x1080 | 21.7 | 2014 | [25C81D3272A7](<Digital/Acer/ACR03E1/25C81D3272A7>) |
 | Acer             | ACR03E1 | K222HQL          | 1920x1080 | 21.7 |      | [1B3F3F566653](<Digital/Acer/ACR03E1/1B3F3F566653>) |
+| Acer             | ACR03E3 | K242HL           | 1920x1080 | 24.0 | 2020 | [937B796D3F99](<Digital/Acer/ACR03E3/937B796D3F99>) |
 | Acer             | ACR03E3 | K242HL           | 1920x1080 | 24.0 | 2019 | [26C1995A8FC4](<Digital/Acer/ACR03E3/26C1995A8FC4>) |
 | Acer             | ACR03E3 | K242HL           | 1920x1080 | 24.0 | 2018 | [130C697C834B](<Digital/Acer/ACR03E3/130C697C834B>) |
 | Acer             | ACR03E3 | K242HL           | 1920x1080 | 24.0 | 2017 | [2873138AAC04](<Digital/Acer/ACR03E3/2873138AAC04>) |
 | Acer             | ACR03E3 | K242HL           | 1920x1080 | 24.0 | 2016 | [080C327CE878](<Digital/Acer/ACR03E3/080C327CE878>) |
-| Acer             | ACR03E3 | K242HL           | 1920x1080 | 24.0 | 2015 | [1184C60E4AD1](<Digital/Acer/ACR03E3/1184C60E4AD1>) |
+| Acer             | ACR03E3 | K242HL           | 1920x1080 | 24.0 | 2015 | [0E9413453E2E](<Digital/Acer/ACR03E3/0E9413453E2E>) |
 | Acer             | ACR03E3 | K242HL           | 1920x1080 | 24.0 | 2014 | [01CF94F65930](<Digital/Acer/ACR03E3/01CF94F65930>) |
 | Acer             | ACR03E3 | K242HL           | 1920x1080 | 24.0 |      | [B65F05D81683](<Digital/Acer/ACR03E3/B65F05D81683>) |
 | Acer             | ACR03F0 | B326HUL          | 2560x1440 | 32.1 | 2014 | [08E551F338F7](<Digital/Acer/ACR03F0/08E551F338F7>) |
@@ -2855,26 +3024,30 @@ model and ID.
 | Acer             | ACR03FC | V246HYL          | 1920x1080 | 24.0 | 2020 | [C937C909A812](<Digital/Acer/ACR03FC/C937C909A812>) |
 | Acer             | ACR03FC | V246HYL          | 1920x1080 | 24.0 | 2018 | [07DB40053ECA](<Digital/Acer/ACR03FC/07DB40053ECA>) |
 | Acer             | ACR03FD | B246HYL          | 1920x1080 | 24.0 | 2019 | [6581D1CE6558](<Digital/Acer/ACR03FD/6581D1CE6558>) |
+| Acer             | ACR03FD | B246HYL          | 1920x1080 | 24.0 | 2017 | [63D7626B77F8](<Digital/Acer/ACR03FD/63D7626B77F8>) |
 | Acer             | ACR03FF | B286HK           | 3840x2160 | 27.8 | 2017 | [332312938E24](<Digital/Acer/ACR03FF/332312938E24>) |
 | Acer             | ACR03FF | B286HK           | 3840x2160 | 27.8 | 2016 | [1E1E723E0AC9](<Digital/Acer/ACR03FF/1E1E723E0AC9>) |
 | Acer             | ACR03FF | B286HK           | 3840x2160 | 27.8 | 2015 | [3E62875AF941](<Digital/Acer/ACR03FF/3E62875AF941>) |
 | Acer             | ACR03FF | B286HK           | 3840x2160 | 27.8 | 2014 | [154FE82DDFA5](<Digital/Acer/ACR03FF/154FE82DDFA5>) |
 | Acer             | ACR03FF |                  | 3840x2160 | 27.8 |      | [0B5BF04C791D](<Digital/Acer/ACR03FF/0B5BF04C791D>) |
 | Acer             | ACR0403 | XB270H           | 1920x1080 | 27.2 | 2014 | [124AA671EAF1](<Digital/Acer/ACR0403/124AA671EAF1>) |
+| Acer             | ACR0405 | XB270H           | 1920x1080 | 27.2 | 2014 | [3846D7AE3BC4](<Digital/Acer/ACR0405/3846D7AE3BC4>) |
 | Acer             | ACR0406 |                  | 1920x1080 | 27.2 |      | [4D00464026CB](<Digital/Acer/ACR0406/4D00464026CB>) |
 | Acer             | ACR0407 | XB280HK          | 3840x2160 | 27.8 |      | [8A9EA8920395](<Digital/Acer/ACR0407/8A9EA8920395>) |
 | Acer             | ACR0408 | XB270HU          | 2560x1440 | 27.2 |      | [0845FB053F16](<Digital/Acer/ACR0408/0845FB053F16>) |
 | Acer             | ACR040A | CB280HK          | 3840x2160 | 27.8 | 2015 | [104A842DB97E](<Digital/Acer/ACR040A/104A842DB97E>) |
 | Acer             | ACR040A | CB280HK          | 3840x2160 | 27.8 | 2014 | [BEF3F767110E](<Digital/Acer/ACR040A/BEF3F767110E>) |
+| Acer             | ACR040C | K202HQL          | 1600x900  | 19.4 | 2021 | [58A072E3D054](<Digital/Acer/ACR040C/58A072E3D054>) |
 | Acer             | ACR040C | K202HQL          | 1600x900  | 19.4 | 2020 | [AEDCB5C97133](<Digital/Acer/ACR040C/AEDCB5C97133>) |
 | Acer             | ACR040D | K222HQL          | 1920x1080 | 21.7 | 2020 | [1D013488C63C](<Digital/Acer/ACR040D/1D013488C63C>) |
-| Acer             | ACR040D | K222HQL          | 1920x1080 | 21.7 | 2019 | [A9ED2264BD5B](<Digital/Acer/ACR040D/A9ED2264BD5B>) |
+| Acer             | ACR040D | K222HQL          | 1920x1080 | 21.7 | 2019 | [5DBB12C6A721](<Digital/Acer/ACR040D/5DBB12C6A721>) |
 | Acer             | ACR040D | K222HQL          | 1920x1080 | 21.7 | 2018 | [64682C6C0A8C](<Digital/Acer/ACR040D/64682C6C0A8C>) |
 | Acer             | ACR040D | K222HQL          | 1920x1080 | 21.7 | 2017 | [72F8E613E0D2](<Digital/Acer/ACR040D/72F8E613E0D2>) |
 | Acer             | ACR040D | K222HQL          | 1920x1080 | 21.7 | 2016 | [1105BA8068BC](<Digital/Acer/ACR040D/1105BA8068BC>) |
 | Acer             | ACR040D | K222HQL          | 1920x1080 | 21.7 | 2015 | [2C273AFED003](<Digital/Acer/ACR040D/2C273AFED003>) |
 | Acer             | ACR040D | K222HQL          | 1920x1080 | 21.7 | 2014 | [1510AA3257CB](<Digital/Acer/ACR040D/1510AA3257CB>) |
 | Acer             | ACR040D |                  | 1920x1080 | 21.7 |      | [3C65E9E7E143](<Digital/Acer/ACR040D/3C65E9E7E143>) |
+| Acer             | ACR040E | K242HL           | 1920x1080 | 24.0 | 2019 | [982808327373](<Digital/Acer/ACR040E/982808327373>) |
 | Acer             | ACR040E | K242HL           | 1920x1080 | 24.0 | 2018 | [CD91793173EC](<Digital/Acer/ACR040E/CD91793173EC>) |
 | Acer             | ACR040E | K242HL           | 1920x1080 | 24.0 | 2017 | [3782B153A91E](<Digital/Acer/ACR040E/3782B153A91E>) |
 | Acer             | ACR040E | K242HL           | 1920x1080 | 24.0 | 2016 | [06FC52A6A569](<Digital/Acer/ACR040E/06FC52A6A569>) |
@@ -2887,178 +3060,6 @@ model and ID.
 | Acer             | ACR0411 | G247HYL          | 1920x1080 | 24.0 | 2016 | [A30279A2E2E3](<Digital/Acer/ACR0411/A30279A2E2E3>) |
 | Acer             | ACR0411 | G247HYL          | 1920x1080 | 24.0 | 2015 | [F9EAC91282FA](<Digital/Acer/ACR0411/F9EAC91282FA>) |
 | Acer             | ACR0412 | G247HYU          | 2560x1440 | 24.0 | 2017 | [076F6CC15AD2](<Digital/Acer/ACR0412/076F6CC15AD2>) |
-| Acer             | ACR0413 | B276HK           | 3840x2160 | 27.2 | 2011 | [5814CDDC677D](<Digital/Acer/ACR0413/5814CDDC677D>) |
-| Acer             | ACR0414 | XG270HU          | 2560x1440 | 27.2 | 2019 | [F7B6C62BF260](<Digital/Acer/ACR0414/F7B6C62BF260>) |
-| Acer             | ACR0414 | XG270HU          | 2560x1440 | 27.2 | 2018 | [394EC8A7D166](<Digital/Acer/ACR0414/394EC8A7D166>) |
-| Acer             | ACR0414 | XG270HU          | 2560x1440 | 27.2 | 2017 | [45E194B9ED88](<Digital/Acer/ACR0414/45E194B9ED88>) |
-| Acer             | ACR0414 | XG270HU          | 2560x1440 | 27.2 | 2016 | [12A4BF3318E5](<Digital/Acer/ACR0414/12A4BF3318E5>) |
-| Acer             | ACR0414 | XG270HU          | 2560x1440 | 27.2 | 2015 | [1E3B73E06DC8](<Digital/Acer/ACR0414/1E3B73E06DC8>) |
-| Acer             | ACR0414 | XG270HU          | 2560x1440 | 27.2 |      | [A3047D2A6E39](<Digital/Acer/ACR0414/A3047D2A6E39>) |
-| Acer             | ACR0415 | G257HL           | 1920x1080 | 24.9 | 2018 | [9D6ABCCAD53F](<Digital/Acer/ACR0415/9D6ABCCAD53F>) |
-| Acer             | ACR0415 | G257HL           | 1920x1080 | 24.9 | 2015 | [244585C2B3CF](<Digital/Acer/ACR0415/244585C2B3CF>) |
-| Acer             | ACR0415 | G257HL           | 1920x1080 | 24.9 | 2014 | [69C4D5F39E5E](<Digital/Acer/ACR0415/69C4D5F39E5E>) |
-| Acer             | ACR0416 | G257HU           | 2560x1440 | 24.9 | 2016 | [336E237A337A](<Digital/Acer/ACR0416/336E237A337A>) |
-| Acer             | ACR0416 | G257HU           | 2560x1440 | 24.9 | 2015 | [0A299879F702](<Digital/Acer/ACR0416/0A299879F702>) |
-| Acer             | ACR0416 | G257HU           | 2560x1440 | 24.9 |      | [EFA97849BFDA](<Digital/Acer/ACR0416/EFA97849BFDA>) |
-| Acer             | ACR0417 | G277HU           | 2560x1440 | 27.2 | 2016 | [B64691A73EF3](<Digital/Acer/ACR0417/B64691A73EF3>) |
-| Acer             | ACR0417 | G277HU           | 2560x1440 | 27.2 | 2015 | [A979E15581F9](<Digital/Acer/ACR0417/A979E15581F9>) |
-| Acer             | ACR0417 | G277HU           | 2560x1440 | 27.2 | 2014 | [BFB016C3DB57](<Digital/Acer/ACR0417/BFB016C3DB57>) |
-| Acer             | ACR041A | XB240H           | 1920x1080 | 24.0 | 2019 | [67708DD2666E](<Digital/Acer/ACR041A/67708DD2666E>) |
-| Acer             | ACR041A | XB240H           | 1920x1080 | 24.0 | 2017 | [2561BE802E4C](<Digital/Acer/ACR041A/2561BE802E4C>) |
-| Acer             | ACR041B | XB240H           | 1920x1080 | 24.0 | 2019 | [0125B7988F92](<Digital/Acer/ACR041B/0125B7988F92>) |
-| Acer             | ACR041B | XB240H           | 1920x1080 | 24.0 | 2018 | [4CDCFB48FBD7](<Digital/Acer/ACR041B/4CDCFB48FBD7>) |
-| Acer             | ACR041B | XB240H           | 1920x1080 | 24.0 | 2017 | [3AC36A477B21](<Digital/Acer/ACR041B/3AC36A477B21>) |
-| Acer             | ACR041C |                  | 1920x1080 | 24.0 |      | [00C7EF801B35](<Digital/Acer/ACR041C/00C7EF801B35>) |
-| Acer             | ACR041D | CB240HY          | 1920x1080 | 24.0 | 2014 | [4AE0ED39181B](<Digital/Acer/ACR041D/4AE0ED39181B>) |
-| Acer             | ACR041F | T232HL           | 1920x1080 | 23.1 | 2016 | [58B5D415BEB6](<Digital/Acer/ACR041F/58B5D415BEB6>) |
-| Acer             | ACR041F | T232HL           | 1920x1080 | 23.1 | 2015 | [2B8E128465F1](<Digital/Acer/ACR041F/2B8E128465F1>) |
-| Acer             | ACR041F |                  | 1920x1080 | 23.1 |      | [7AFA3C81608B](<Digital/Acer/ACR041F/7AFA3C81608B>) |
-| Acer             | ACR0420 | T272HUL          | 2560x1440 | 27.2 | 2020 | [A9DBCD5BF08B](<Digital/Acer/ACR0420/A9DBCD5BF08B>) |
-| Acer             | ACR0420 | T272HUL          | 2560x1440 | 27.2 | 2017 | [6D9306FEF7BD](<Digital/Acer/ACR0420/6D9306FEF7BD>) |
-| Acer             | ACR0420 | T272HUL          | 2560x1440 | 27.2 | 2015 | [33A5AC6E828E](<Digital/Acer/ACR0420/33A5AC6E828E>) |
-| Acer             | ACR0424 | V246HQL          | 1920x1080 | 23.4 | 2021 | [A65F2484E55F](<Digital/Acer/ACR0424/A65F2484E55F>) |
-| Acer             | ACR0424 | V246HQL          | 1920x1080 | 23.4 | 2020 | [3AB3AC763DA9](<Digital/Acer/ACR0424/3AB3AC763DA9>) |
-| Acer             | ACR0424 | V246HQL          | 1920x1080 | 23.4 | 2019 | [B6E9D83B4F06](<Digital/Acer/ACR0424/B6E9D83B4F06>) |
-| Acer             | ACR0424 | V246HQL          | 1920x1080 | 23.4 | 2018 | [07C1F6B62556](<Digital/Acer/ACR0424/07C1F6B62556>) |
-| Acer             | ACR0424 | V246HQL          | 1920x1080 | 23.4 | 2017 | [B558AC38F5A1](<Digital/Acer/ACR0424/B558AC38F5A1>) |
-| Acer             | ACR0424 | V246HQL          | 1920x1080 | 23.4 | 2016 | [FF761186B208](<Digital/Acer/ACR0424/FF761186B208>) |
-| Acer             | ACR0426 | B246WL           | 1920x1200 | 24.0 | 2019 | [9B0FB11998A1](<Digital/Acer/ACR0426/9B0FB11998A1>) |
-| Acer             | ACR0426 | B246WL           | 1920x1200 | 24.0 | 2017 | [427CE18E8F5D](<Digital/Acer/ACR0426/427CE18E8F5D>) |
-| Acer             | ACR0427 | G247HYL          | 1920x1080 | 24.0 | 2017 | [3FD176150A8F](<Digital/Acer/ACR0427/3FD176150A8F>) |
-| Acer             | ACR0427 | G247HYL          | 1920x1080 | 24.0 | 2016 | [36CB7E582ECB](<Digital/Acer/ACR0427/36CB7E582ECB>) |
-| Acer             | ACR0427 | G247HYL          | 1920x1080 | 24.0 | 2015 | [B89C7ECF8C2B](<Digital/Acer/ACR0427/B89C7ECF8C2B>) |
-| Acer             | ACR0427 | G247HYL          | 1920x1080 | 24.0 |      | [FA0FB2D80289](<Digital/Acer/ACR0427/FA0FB2D80289>) |
-| Acer             | ACR0428 | H257HU           | 2560x1440 | 24.9 | 2016 | [2DFD9972C0DD](<Digital/Acer/ACR0428/2DFD9972C0DD>) |
-| Acer             | ACR0428 | H257HU           | 2560x1440 | 24.9 | 2015 | [914D3B320B43](<Digital/Acer/ACR0428/914D3B320B43>) |
-| Acer             | ACR0429 |                  | 1920x1080 | 27.2 |      | [E070EB3FD01F](<Digital/Acer/ACR0429/E070EB3FD01F>) |
-| Acer             | ACR042D | G277HL           | 1920x1080 | 27.2 | 2017 | [5D3EE5908986](<Digital/Acer/ACR042D/5D3EE5908986>) |
-| Acer             | ACR042D | G277HL           | 1920x1080 | 27.2 | 2015 | [8A8D0A3E6AB7](<Digital/Acer/ACR042D/8A8D0A3E6AB7>) |
-| Acer             | ACR042E | K242HQL          | 1920x1080 | 23.4 | 2021 | [16394B4F6E3C](<Digital/Acer/ACR042E/16394B4F6E3C>) |
-| Acer             | ACR042E | K242HQL          | 1920x1080 | 23.4 | 2020 | [746C4AE839CB](<Digital/Acer/ACR042E/746C4AE839CB>) |
-| Acer             | ACR042E | K242HQL          | 1920x1080 | 23.4 | 2019 | [025C886251A2](<Digital/Acer/ACR042E/025C886251A2>) |
-| Acer             | ACR042E | K242HQL          | 1920x1080 | 23.4 | 2018 | [7FC9EDAF0312](<Digital/Acer/ACR042E/7FC9EDAF0312>) |
-| Acer             | ACR042E | K242HQL          | 1920x1080 | 23.4 | 2017 | [A6DCDE8217AE](<Digital/Acer/ACR042E/A6DCDE8217AE>) |
-| Acer             | ACR042E | K242HQL          | 1920x1080 | 23.4 | 2016 | [129AEA28C7E6](<Digital/Acer/ACR042E/129AEA28C7E6>) |
-| Acer             | ACR042E | K242HQL          | 1920x1080 | 23.4 | 2015 | [25482B776DBB](<Digital/Acer/ACR042E/25482B776DBB>) |
-| Acer             | ACR042E |                  | 1920x1080 | 23.4 |      | [8631DA0FB665](<Digital/Acer/ACR042E/8631DA0FB665>) |
-| Acer             | ACR0440 | S277HK           | 3840x2160 | 27.2 | 2014 | [1198952A028E](<Digital/Acer/ACR0440/1198952A028E>) |
-| Acer             | ACR0446 | K242HQL          | 1920x1080 | 23.4 | 2018 | [71CCA254D960](<Digital/Acer/ACR0446/71CCA254D960>) |
-| Acer             | ACR0446 | K242HQL          | 1920x1080 | 23.4 | 2017 | [DBDB28EEC952](<Digital/Acer/ACR0446/DBDB28EEC952>) |
-| Acer             | ACR0446 | K242HQL          | 1920x1080 | 23.4 | 2015 | [5F5AAE0CDB63](<Digital/Acer/ACR0446/5F5AAE0CDB63>) |
-| Acer             | ACR0447 | K242HYL          | 1920x1080 | 24.0 | 2017 | [F8B52DFBB66B](<Digital/Acer/ACR0447/F8B52DFBB66B>) |
-| Acer             | ACR0448 | K242HQK          | 3840x2160 | 23.4 | 2015 | [2D106083F32A](<Digital/Acer/ACR0448/2D106083F32A>) |
-| Acer             | ACR044F | XR341CK          | 3440x1440 | 35.3 | 2016 | [1CC2A47C26FA](<Digital/Acer/ACR044F/1CC2A47C26FA>) |
-| Acer             | ACR044F | XR341CK          | 3440x1440 | 35.3 | 2015 | [4B6656576F84](<Digital/Acer/ACR044F/4B6656576F84>) |
-| Acer             | ACR044F |                  | 3440x1440 | 35.3 |      | [56BD8684305A](<Digital/Acer/ACR044F/56BD8684305A>) |
-| Acer             | ACR0450 |                  | 3440x1440 | 34.2 |      | [14823A8A749F](<Digital/Acer/ACR0450/14823A8A749F>) |
-| Acer             | ACR0454 | E1900HQ          | 1366x768  | 18.5 | 2017 | [DFEA2C7A8716](<Digital/Acer/ACR0454/DFEA2C7A8716>) |
-| Acer             | ACR045D | V206WQL          | 1440x900  | 19.4 | 2020 | [8A02ABEFC9AD](<Digital/Acer/ACR045D/8A02ABEFC9AD>) |
-| Acer             | ACR045D | V206WQL          | 1440x900  | 19.4 | 2015 | [5B8754FF954A](<Digital/Acer/ACR045D/5B8754FF954A>) |
-| Acer             | ACR0460 | XB281HK          | 3840x2160 | 27.8 |      | [14AA6C1D1299](<Digital/Acer/ACR0460/14AA6C1D1299>) |
-| Acer             | ACR0462 | X34              | 3440x1440 | 34.1 | 2017 | [0D0872903F60](<Digital/Acer/ACR0462/0D0872903F60>) |
-| Acer             | ACR0462 | X34              | 3440x1440 | 34.1 | 2016 | [25976C0D2317](<Digital/Acer/ACR0462/25976C0D2317>) |
-| Acer             | ACR0462 | X34              | 3440x1440 | 34.1 | 2015 | [11512C21DFEE](<Digital/Acer/ACR0462/11512C21DFEE>) |
-| Acer             | ACR0465 | EB210HQ          | 1920x1080 | 20.8 | 2018 | [6E73CC6C9ED1](<Digital/Acer/ACR0465/6E73CC6C9ED1>) |
-| Acer             | ACR0466 | KA210HQ          | 1920x1080 | 20.8 | 2016 | [3684F1649E0D](<Digital/Acer/ACR0466/3684F1649E0D>) |
-| Acer             | ACR0467 | KA220HQ          | 1920x1080 | 21.7 | 2018 | [2734BA13A952](<Digital/Acer/ACR0467/2734BA13A952>) |
-| Acer             | ACR0467 | KA220HQ          | 1920x1080 | 21.7 | 2016 | [F5279E913C2E](<Digital/Acer/ACR0467/F5279E913C2E>) |
-| Acer             | ACR0467 | KA220HQ          | 1920x1080 | 21.7 | 2015 | [498E37140B4C](<Digital/Acer/ACR0467/498E37140B4C>) |
-| Acer             | ACR0468 | KA240HQ          | 1920x1080 | 23.4 | 2020 | [56D5D5684020](<Digital/Acer/ACR0468/56D5D5684020>) |
-| Acer             | ACR0468 | KA240HQ          | 1920x1080 | 23.4 | 2018 | [4BB2A50A32A8](<Digital/Acer/ACR0468/4BB2A50A32A8>) |
-| Acer             | ACR0468 | KA240HQ          | 1920x1080 | 23.4 | 2016 | [AA1FF1DF4DD4](<Digital/Acer/ACR0468/AA1FF1DF4DD4>) |
-| Acer             | ACR0468 | KA240HQ          | 1920x1080 | 23.4 | 2015 | [42499D6D2DD4](<Digital/Acer/ACR0468/42499D6D2DD4>) |
-| Acer             | ACR0468 |                  | 1920x1080 | 23.4 |      | [C73DFE93FBD0](<Digital/Acer/ACR0468/C73DFE93FBD0>) |
-| Acer             | ACR0469 | KA270H           | 1920x1080 | 27.2 | 2015 | [332BE74B1BB0](<Digital/Acer/ACR0469/332BE74B1BB0>) |
-| Acer             | ACR0469 |                  | 1920x1080 | 27.2 |      | [9083193FCB7D](<Digital/Acer/ACR0469/9083193FCB7D>) |
-| Acer             | ACR046A | H277H            | 1920x1080 | 27.2 | 2017 | [00C399DEDAB7](<Digital/Acer/ACR046A/00C399DEDAB7>) |
-| Acer             | ACR046A | H277H            | 1920x1080 | 27.2 | 2016 | [942756536E5A](<Digital/Acer/ACR046A/942756536E5A>) |
-| Acer             | ACR046C | H277HU           | 2560x1440 | 27.2 | 2017 | [9372FC1468C3](<Digital/Acer/ACR046C/9372FC1468C3>) |
-| Acer             | ACR046E | R230H            | 1920x1080 | 23.1 | 2017 | [AC73FB0B50C5](<Digital/Acer/ACR046E/AC73FB0B50C5>) |
-| Acer             | ACR046F | R240HY           | 1920x1080 | 24.0 | 2020 | [23B2E109DDEF](<Digital/Acer/ACR046F/23B2E109DDEF>) |
-| Acer             | ACR046F | R240HY           | 1920x1080 | 24.0 | 2019 | [186248E4ADED](<Digital/Acer/ACR046F/186248E4ADED>) |
-| Acer             | ACR046F | R240HY           | 1920x1080 | 24.0 | 2018 | [4F7E6AC18BD4](<Digital/Acer/ACR046F/4F7E6AC18BD4>) |
-| Acer             | ACR046F | R240HY           | 1920x1080 | 24.0 | 2017 | [023622E62479](<Digital/Acer/ACR046F/023622E62479>) |
-| Acer             | ACR046F | R240HY           | 1920x1080 | 24.0 | 2016 | [2840EB3E7B9C](<Digital/Acer/ACR046F/2840EB3E7B9C>) |
-| Acer             | ACR046F | R240HY           | 1920x1080 | 24.0 | 2015 | [4DC47BB1ADCC](<Digital/Acer/ACR046F/4DC47BB1ADCC>) |
-| Acer             | ACR046F | R240HY           | 1920x1080 | 24.0 |      | [292C34F39A02](<Digital/Acer/ACR046F/292C34F39A02>) |
-| Acer             | ACR0472 | XF240H           | 1920x1080 | 24.0 | 2021 | [591ACF2C3D36](<Digital/Acer/ACR0472/591ACF2C3D36>) |
-| Acer             | ACR0472 | XF240H           | 1920x1080 | 24.0 | 2019 | [E66C0CE46819](<Digital/Acer/ACR0472/E66C0CE46819>) |
-| Acer             | ACR0472 | XF240H           | 1920x1080 | 24.0 | 2018 | [034B5F081950](<Digital/Acer/ACR0472/034B5F081950>) |
-| Acer             | ACR0472 | XF240H           | 1920x1080 | 24.0 | 2017 | [CA9232F148A2](<Digital/Acer/ACR0472/CA9232F148A2>) |
-| Acer             | ACR0472 | XF240H           | 1920x1080 | 24.0 | 2016 | [6A8BE2B54DB2](<Digital/Acer/ACR0472/6A8BE2B54DB2>) |
-| Acer             | ACR0472 | XF240H           | 1920x1080 | 24.0 | 2015 | [8A7B0D660F53](<Digital/Acer/ACR0472/8A7B0D660F53>) |
-| Acer             | ACR0472 |                  | 1920x1080 | 24.0 |      | [82DC16143B3D](<Digital/Acer/ACR0472/82DC16143B3D>) |
-| Acer             | ACR0473 | XF270HU          | 2560x1440 | 27.2 | 2015 | [A96C0A8CAEC2](<Digital/Acer/ACR0473/A96C0A8CAEC2>) |
-| Acer             | ACR0475 | K242HYL          | 1920x1080 | 24.0 | 2019 | [0BE0A65CF7A3](<Digital/Acer/ACR0475/0BE0A65CF7A3>) |
-| Acer             | ACR0475 | K242HYL          | 1920x1080 | 24.0 | 2018 | [36451F90E21C](<Digital/Acer/ACR0475/36451F90E21C>) |
-| Acer             | ACR0475 | K242HYL          | 1920x1080 | 24.0 | 2017 | [DAABAE2949D1](<Digital/Acer/ACR0475/DAABAE2949D1>) |
-| Acer             | ACR0475 |                  | 1920x1080 | 24.0 |      | [D56845BC9880](<Digital/Acer/ACR0475/D56845BC9880>) |
-| Acer             | ACR0476 | CB271HK          | 3840x2160 | 27.2 | 2016 | [4CAEA5EA12A5](<Digital/Acer/ACR0476/4CAEA5EA12A5>) |
-| Acer             | ACR0476 | CB271HK          | 3840x2160 | 27.2 | 2015 | [AE59E5A41422](<Digital/Acer/ACR0476/AE59E5A41422>) |
-| Acer             | ACR0477 | CB281HK          | 3840x2160 | 27.8 | 2017 | [0B269A9D729D](<Digital/Acer/ACR0477/0B269A9D729D>) |
-| Acer             | ACR0477 | CB281HK          | 3840x2160 | 27.8 | 2016 | [7B76C6E64F12](<Digital/Acer/ACR0477/7B76C6E64F12>) |
-| Acer             | ACR0477 | CB281HK          | 3840x2160 | 27.8 | 2015 | [9015FE07F95B](<Digital/Acer/ACR0477/9015FE07F95B>) |
-| Acer             | ACR0478 | Z35              | 2560x1080 | 34.7 | 2018 | [748B561F4276](<Digital/Acer/ACR0478/748B561F4276>) |
-| Acer             | ACR0478 | Z35              | 2560x1080 | 34.7 | 2017 | [31F6A5C888FE](<Digital/Acer/ACR0478/31F6A5C888FE>) |
-| Acer             | ACR0478 | Z35              | 2560x1080 | 34.7 | 2015 | [0980487AADDB](<Digital/Acer/ACR0478/0980487AADDB>) |
-| Acer             | ACR047B | CB241H           | 1920x1080 | 24.0 | 2019 | [DDC3DDF65C0B](<Digital/Acer/ACR047B/DDC3DDF65C0B>) |
-| Acer             | ACR047B | CB241H           | 1920x1080 | 24.0 | 2017 | [F1CA65887C90](<Digital/Acer/ACR047B/F1CA65887C90>) |
-| Acer             | ACR047B |                  | 1920x1080 | 24.0 |      | [3A8A3AFA0AE0](<Digital/Acer/ACR047B/3A8A3AFA0AE0>) |
-| Acer             | ACR047E | B346CK           | 3440x1440 | 34.2 | 2015 | [9014782E0BE0](<Digital/Acer/ACR047E/9014782E0BE0>) |
-| Acer             | ACR0480 | V276HL           | 1920x1080 | 27.2 | 2019 | [BA3CB0D4205E](<Digital/Acer/ACR0480/BA3CB0D4205E>) |
-| Acer             | ACR0480 | V276HL           | 1920x1080 | 27.2 | 2018 | [B8ED4192AD29](<Digital/Acer/ACR0480/B8ED4192AD29>) |
-| Acer             | ACR0480 | V276HL           | 1920x1080 | 27.2 | 2017 | [1498DBBE541B](<Digital/Acer/ACR0480/1498DBBE541B>) |
-| Acer             | ACR0480 | V276HL           | 1920x1080 | 27.2 | 2016 | [F7D84DAC3559](<Digital/Acer/ACR0480/F7D84DAC3559>) |
-| Acer             | ACR0482 | KN242HYL         | 1920x1080 | 24.0 | 2017 | [AD3F6A59F600](<Digital/Acer/ACR0482/AD3F6A59F600>) |
-| Acer             | ACR0482 | KN242HYL         | 1920x1080 | 24.0 | 2016 | [57A61E944788](<Digital/Acer/ACR0482/57A61E944788>) |
-| Acer             | ACR0482 | KN242HYL         | 1920x1080 | 24.0 | 2015 | [B490EDEEDBF2](<Digital/Acer/ACR0482/B490EDEEDBF2>) |
-| Acer             | ACR0483 | KA240HY          | 1920x1080 | 24.0 | 2016 | [88E177451246](<Digital/Acer/ACR0483/88E177451246>) |
-| Acer             | ACR0484 | XF270H           | 1920x1080 | 27.2 | 2016 | [F2FFA3785811](<Digital/Acer/ACR0484/F2FFA3785811>) |
-| Acer             | ACR0484 | XF270H           | 1920x1080 | 27.2 | 2015 | [988DE0E606A2](<Digital/Acer/ACR0484/988DE0E606A2>) |
-| Acer             | ACR048C | K192HQL          | 1366x768  | 18.5 | 2019 | [2DEAFCF93928](<Digital/Acer/ACR048C/2DEAFCF93928>) |
-| Acer             | ACR048C | K192HQL          | 1366x768  | 18.5 | 2016 | [AFE5A059DD49](<Digital/Acer/ACR048C/AFE5A059DD49>) |
-| Acer             | ACR048D | XB271HK          | 3840x2160 | 27.2 |      | [B61A219C4248](<Digital/Acer/ACR048D/B61A219C4248>) |
-| Acer             | ACR048E | XB271HK          | 3840x2160 | 27.2 |      | [A251A015FDB5](<Digital/Acer/ACR048E/A251A015FDB5>) |
-| Acer             | ACR048F | XB271HU A        | 2560x1440 | 27.2 | 2019 | [3563AE4E91FA](<Digital/Acer/ACR048F/3563AE4E91FA>) |
-| Acer             | ACR048F | XB271HU A        | 2560x1440 | 27.2 | 2018 | [4702BA02AB1E](<Digital/Acer/ACR048F/4702BA02AB1E>) |
-| Acer             | ACR048F | XB271HU          | 2560x1440 | 27.2 | 2017 | [625875C274BF](<Digital/Acer/ACR048F/625875C274BF>) |
-| Acer             | ACR048F | XB271HU          | 2560x1440 | 27.2 | 2016 | [0B45B3F59FDA](<Digital/Acer/ACR048F/0B45B3F59FDA>) |
-| Acer             | ACR048F | XB271HU          | 2560x1440 | 27.2 |      | [B1579198412C](<Digital/Acer/ACR048F/B1579198412C>) |
-| Acer             | ACR0490 | XB271HU          | 2560x1440 | 27.2 | 2021 | [BE37DC4E2100](<Digital/Acer/ACR0490/BE37DC4E2100>) |
-| Acer             | ACR0490 | XB271HU          | 2560x1440 | 27.2 | 2020 | [B0B0A10F0D0B](<Digital/Acer/ACR0490/B0B0A10F0D0B>) |
-| Acer             | ACR0490 | XB271HU          | 2560x1440 | 27.2 | 2019 | [16BE5FF2514B](<Digital/Acer/ACR0490/16BE5FF2514B>) |
-| Acer             | ACR0490 | XB271HU          | 2560x1440 | 27.2 | 2018 | [0BB1E07FEDE6](<Digital/Acer/ACR0490/0BB1E07FEDE6>) |
-| Acer             | ACR0490 | XB271HU          | 2560x1440 | 27.2 | 2017 | [0A7E31674F30](<Digital/Acer/ACR0490/0A7E31674F30>) |
-| Acer             | ACR0490 | XB271HU          | 2560x1440 | 27.2 | 2016 | [3B8745F743B1](<Digital/Acer/ACR0490/3B8745F743B1>) |
-| Acer             | ACR0490 | XB271HU          | 2560x1440 | 27.2 | 2015 | [0E01A344A160](<Digital/Acer/ACR0490/0E01A344A160>) |
-| Acer             | ACR0490 | XB271HU          | 2560x1440 | 27.2 |      | [0B113FE3E472](<Digital/Acer/ACR0490/0B113FE3E472>) |
-| Acer             | ACR0491 | KA240HQ          | 1920x1080 | 23.4 | 2018 | [C1F19046FAC3](<Digital/Acer/ACR0491/C1F19046FAC3>) |
-| Acer             | ACR0491 | KA240HQ          | 1920x1080 | 23.4 | 2017 | [6B1661472602](<Digital/Acer/ACR0491/6B1661472602>) |
-| Acer             | ACR0493 | BX340C           | 2560x1080 | 34.2 | 2016 | [CF6F6D785F3A](<Digital/Acer/ACR0493/CF6F6D785F3A>) |
-| Acer             | ACR0496 | R271             | 1920x1080 | 27.2 | 2020 | [8DF4417BB725](<Digital/Acer/ACR0496/8DF4417BB725>) |
-| Acer             | ACR0496 | R271             | 1920x1080 | 27.2 | 2019 | [0A677C7E6866](<Digital/Acer/ACR0496/0A677C7E6866>) |
-| Acer             | ACR0496 | R271             | 1920x1080 | 27.2 | 2018 | [97196439983B](<Digital/Acer/ACR0496/97196439983B>) |
-| Acer             | ACR0496 | R271             | 1920x1080 | 27.2 | 2017 | [2279C47225AC](<Digital/Acer/ACR0496/2279C47225AC>) |
-| Acer             | ACR0496 | R271             | 1920x1080 | 27.2 | 2016 | [561335A753C2](<Digital/Acer/ACR0496/561335A753C2>) |
-| Acer             | ACR0497 | KA220HQ          | 1920x1080 | 21.7 | 2022 | [88F4FD9A4A64](<Digital/Acer/ACR0497/88F4FD9A4A64>) |
-| Acer             | ACR0497 | KA220HQ          | 1920x1080 | 21.7 | 2020 | [FD78275F03FC](<Digital/Acer/ACR0497/FD78275F03FC>) |
-| Acer             | ACR0497 | KA220HQ          | 1920x1080 | 21.7 | 2019 | [373BBE91D3F3](<Digital/Acer/ACR0497/373BBE91D3F3>) |
-| Acer             | ACR0497 | KA220HQ          | 1920x1080 | 21.7 | 2018 | [01CF1CDFD3A8](<Digital/Acer/ACR0497/01CF1CDFD3A8>) |
-| Acer             | ACR0497 | KA220HQ          | 1920x1080 | 21.7 | 2017 | [0B52DC842210](<Digital/Acer/ACR0497/0B52DC842210>) |
-| Acer             | ACR0497 | KA220HQ          | 1920x1080 | 21.7 | 2016 | [A34AEE50354F](<Digital/Acer/ACR0497/A34AEE50354F>) |
-| Acer             | ACR0497 | KA220HQ          | 1920x1080 | 21.7 |      | [A01FB6C57D53](<Digital/Acer/ACR0497/A01FB6C57D53>) |
-| Acer             | ACR0498 |                  | 1366x768  | 19.4 | 2021 | [133F708E8BCF](<Digital/Acer/ACR0498/133F708E8BCF>) |
-| Acer             | ACR0498 |                  | 1366x768  | 19.4 | 2020 | [F8AE48360565](<Digital/Acer/ACR0498/F8AE48360565>) |
-| Acer             | ACR0498 |                  | 1366x768  | 19.4 | 2018 | [24BA838ED318](<Digital/Acer/ACR0498/24BA838ED318>) |
-| Acer             | ACR0498 |                  | 1366x768  | 19.4 | 2017 | [EE20C7CC345E](<Digital/Acer/ACR0498/EE20C7CC345E>) |
-| Acer             | ACR0499 |                  | 3840x2160 | 23.4 | 2016 | [B00B902CBB70](<Digital/Acer/ACR0499/B00B902CBB70>) |
-| Acer             | ACR0499 |                  | 3840x2160 | 23.4 |      | [342974777254](<Digital/Acer/ACR0499/342974777254>) |
-| Acer             | ACR049B | CB241HY          | 1920x1080 | 24.0 | 2017 | [FF9953BCD5CB](<Digital/Acer/ACR049B/FF9953BCD5CB>) |
-| Acer             | ACR049B |                  | 1920x1080 | 24.0 |      | [B5B563E6FE85](<Digital/Acer/ACR049B/B5B563E6FE85>) |
-| Acer             | ACR049C | XB321HK          | 1920x1080 | 32.1 | 2019 | [2EF0C8A6073D](<Digital/Acer/ACR049C/2EF0C8A6073D>) |
-| Acer             | ACR049C | XB321HK          | 1920x1080 | 32.1 | 2016 | [A827DBDCC0F5](<Digital/Acer/ACR049C/A827DBDCC0F5>) |
-| Acer             | ACR049D | XB321HK          | 3840x2160 | 32.1 | 2019 | [A264960BB5AF](<Digital/Acer/ACR049D/A264960BB5AF>) |
-| Acer             | ACR049D | XB321HK          | 3840x2160 | 32.1 | 2018 | [8061E7623703](<Digital/Acer/ACR049D/8061E7623703>) |
 
 ...
 
