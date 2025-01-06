@@ -1,0 +1,87 @@
+
+EDID (hex):
+00ffffffffffff0009e5230a00000000
+2a210104b50f1778020cf1ae523cb923
+0c505400000001010101010101010101
+01010101010142e540aa6000c6a05a28
+e40496e60000001f0000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000fc
+0059484230415032330a202020200105
+70122b000003012841e500843f06a900
+59802700ff09c5001d80030041e50084
+3f06a90059802700ff098b0be38a0300
+ec000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000090
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 23 0a 00 00 00 00
+2a 21 01 04 b5 0f 17 78 02 0c f1 ae 52 3c b9 23
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 42 e5 40 aa 60 00 c6 a0 5a 28
+e4 04 96 e6 00 00 00 1f 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc
+00 59 48 42 30 41 50 32 33 0a 20 20 20 20 01 05
+
+70 12 2b 00 00 03 01 28 41 e5 00 84 3f 06 a9 00
+59 80 27 00 ff 09 c5 00 1d 80 03 00 41 e5 00 84
+3f 06 a9 00 59 80 27 00 ff 09 8b 0b e3 8a 03 00
+ec 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2595
+    Made in: week 42 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 15 cm x 23 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2373, 0.7226
+    Blue : 0.1396, 0.0498
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x2560  120.225497 Hz   5:8    331.582 kHz    586.900000 MHz (150 mm x 230 mm)
+                 Hfront   90 Hsync  40 Hback   40 Hpol P
+                 Vfront   30 Vsync   4 Vback  164 Vpol P
+    Empty Descriptor
+    Empty Descriptor
+    Display Product Name: 'YHB0AP23'
+  Extension blocks: 1
+Checksum: 0x05
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  1600x2560  120.225497 Hz  16:9    331.582 kHz    586.900000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   90 Hsync  40 Hback   40 Hpol P
+               Vfront   30 Vsync   4 Vback  164 Vpol P
+    DTD:  1600x2560   60.112749 Hz  16:9    331.582 kHz    586.900000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   90 Hsync  40 Hback   40 Hpol P
+               Vfront 2788 Vsync   4 Vback  164 Vpol P
+  Checksum: 0xec
+Checksum: 0x90  Unused space in Extension Block: 78 bytes

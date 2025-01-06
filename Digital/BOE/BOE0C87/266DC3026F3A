@@ -1,0 +1,158 @@
+
+EDID (hex):
+00ffffffffffff0009e5870c00000000
+0b210104b5271878036905af4f41b526
+0c505400000001010101010101010101
+010101010101906f00a0a04096603020
+360084f21000001a0000000000000000
+00000000000000000000000000fe0042
+4f452043510a202020202020000000fe
+004e4531383051444d2d4e4d310a029f
+02030f00e3058080e606050195951000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000d8
+70207902002200281fca1585ff099f00
+2f001f003f069500020005007f6e1105
+ff099f002f001f003f06950002000500
+250109bfc915bfc915302c812b001227
+00782b010027003cef00002700303b00
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000b790
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 87 0c 00 00 00 00
+0b 21 01 04 b5 27 18 78 03 69 05 af 4f 41 b5 26
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 90 6f 00 a0 a0 40 96 60 30 20
+36 00 84 f2 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 38 30 51 44 4d 2d 4e 4d 31 0a 02 9f
+
+02 03 0f 00 e3 05 80 80 e6 06 05 01 95 95 10 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 d8
+
+70 20 79 02 00 22 00 28 1f ca 15 85 ff 09 9f 00
+2f 00 1f 00 3f 06 95 00 02 00 05 00 7f 6e 11 05
+ff 09 9f 00 2f 00 1f 00 3f 06 95 00 02 00 05 00
+25 01 09 bf c9 15 bf c9 15 30 2c 81 2b 00 12 27
+00 78 2b 01 00 27 00 3c ef 00 00 27 00 30 3b 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 b7 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 3207
+    Made in: week 11 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 39 cm x 24 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6845, 0.3105
+    Green: 0.2558, 0.7080
+    Blue : 0.1484, 0.0468
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   60.000000 Hz  16:10   105.000 kHz    285.600000 MHz (388 mm x 242 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback  141 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'BOE CQ'
+    Alphanumeric Data String: 'NE180QDM-NM1'
+  Extension blocks: 2
+Checksum: 0x9f
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+    ST2113RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 149 (1260.785 cd/m^2)
+    Desired content max frame-average luminance: 149 (1260.785 cd/m^2)
+    Desired content min luminance: 16 (0.050 cd/m^2)
+Checksum: 0xd8  Unused space in Extension Block: 112 bytes
+
+----------------
+
+Block 2, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2560x1600  300.000000 Hz  16:10   525.000 kHz   1428.000000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   6 Vback  141 Vpol N
+    DTD:  2560x1600  240.000000 Hz  16:10   420.000 kHz   1142.400000 MHz (aspect 16:10, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   6 Vback  141 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 1427904 kHz
+    Maximum Pixel Clock: 1427904 kHz
+    Minimum Vertical Refresh Rate: 48 Hz
+    Maximum Vertical Refresh Rate: 300 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 120 Hz
+      Max Refresh Rate: 300 Hz
+    Descriptor #2:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 60 Hz
+      Max Refresh Rate: 240 Hz
+    Descriptor #3:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 48 Hz
+      Max Refresh Rate: 60 Hz
+  Checksum: 0xb7
+Checksum: 0x90

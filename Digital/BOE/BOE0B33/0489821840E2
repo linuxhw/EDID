@@ -1,0 +1,106 @@
+
+EDID (hex):
+00ffffffffffff0009e5330b00000000
+0b200104a52215780314a5a7534d9d26
+0e505400000001010101010101010101
+0101010101014cae80a070b047493020
+360059d71000001a000000fd003aa5d7
+d72d010a202020202020000000fc004e
+4531363057554d2d4e58320a00000000
+00000000000000000000000000000173
+7020790200220014f7ce06857f079f00
+2f001f00af046300020005002b000627
+003ca40000810013721a000003013aa5
+000000000000a5000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000006f90
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 33 0b 00 00 00 00
+0b 20 01 04 a5 22 15 78 03 14 a5 a7 53 4d 9d 26
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4c ae 80 a0 70 b0 47 49 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 fd 00 3a a5 d7
+d7 2d 01 0a 20 20 20 20 20 20 00 00 00 fc 00 4e
+45 31 36 30 57 55 4d 2d 4e 58 32 0a 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 73
+
+70 20 79 02 00 22 00 14 f7 ce 06 85 7f 07 9f 00
+2f 00 1f 00 af 04 63 00 02 00 05 00 2b 00 06 27
+00 3c a4 00 00 81 00 13 72 1a 00 00 03 01 3a a5
+00 00 00 00 00 00 a5 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 6f 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2867
+    Made in: week 11 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6523, 0.3251
+    Green: 0.3017, 0.6132
+    Blue : 0.1503, 0.0566
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.005379 Hz  16:10   214.519 kHz    446.200000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback 2366 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 58-165 Hz V, 215-215 kHz H, max dotclock 450 MHz
+    Display Product Name: 'NE160WUM-NX2'
+    Empty Descriptor
+  Extension blocks: 1
+Checksum: 0x73
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  1920x1200  165.014793 Hz  16:10   214.519 kHz    446.200000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   6 Vback   91 Vpol N
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 60 Hz
+      Max Refresh Rate: 165 Hz
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 58 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Checksum: 0x6f
+Checksum: 0x90

@@ -1,0 +1,113 @@
+
+EDID (hex):
+00ffffffffffff0009e5720b00000000
+1a200104a5221678075f15a4544c9d27
+0d505400000001010101010101010101
+010101010101984080c870b064403020
+360059d71000001a000000fd003ca5d7
+d72d010a202020202020000000fe0042
+4f452043510a202020202020000000fe
+004e5631363057554d2d4e59320a01e6
+702079020022001453f006857f07c700
+2f001f00af0463000200050025000953
+f00653f0063ca580810013721a000003
+013ca5000060496049a5000000002b00
+0627003ca40000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000005490
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 72 0b 00 00 00 00
+1a 20 01 04 a5 22 16 78 07 5f 15 a4 54 4c 9d 27
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 98 40 80 c8 70 b0 64 40 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 fd 00 3c a5 d7
+d7 2d 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 36 30 57 55 4d 2d 4e 59 32 0a 01 e6
+
+70 20 79 02 00 22 00 14 53 f0 06 85 7f 07 c7 00
+2f 00 1f 00 af 04 63 00 02 00 05 00 25 00 09 53
+f0 06 53 f0 06 3c a5 80 81 00 13 72 1a 00 00 03
+01 3c a5 00 00 60 49 60 49 a5 00 00 00 00 2b 00
+06 27 00 3c a4 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 54 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2930
+    Made in: week 26 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6416, 0.3291
+    Green: 0.2998, 0.6162
+    Blue : 0.1523, 0.0517
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.000000 Hz  16:10    78.000 kHz    165.360000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  120 Hpol P
+                 Vfront    3 Vsync   6 Vback   91 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 60-165 Hz V, 215-215 kHz H, max dotclock 450 MHz
+    Alphanumeric Data String: 'BOE CQ'
+    Alphanumeric Data String: 'NV160WUM-NY2'
+  Extension blocks: 1
+Checksum: 0xe6
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  1920x1200  165.000000 Hz  16:10   214.500 kHz    454.740000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback  120 Hpol N
+               Vfront    3 Vsync   6 Vback   91 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 454740 kHz
+    Maximum Pixel Clock: 454740 kHz
+    Minimum Vertical Refresh Rate: 60 Hz
+    Maximum Vertical Refresh Rate: 165 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 96 (400.000 cd/m^2)
+    Minimum luminance: 73 (0.328 cd/m^2)
+    Unknown: 0x60 0x49
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 60 Hz
+      Max Refresh Rate: 165 Hz
+  Checksum: 0x54
+Checksum: 0x90

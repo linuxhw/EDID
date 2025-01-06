@@ -1,0 +1,99 @@
+
+EDID (hex):
+00ffffffffffff0009e5290b00000000
+13200104b5221678030415a8544d9b25
+10505400000001010101010101010101
+010101010101fdd700a0a0405e603020
+360059d71000001a655600a0a0405e60
+3020360059d71000001a000000fe0052
+58594357804e4531364e343100000000
+0003412d9e000100000b410a20200124
+7020790200250009d96f08d96f083078
+80810013721a00000301307800000000
+00007800000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000002b90
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 29 0b 00 00 00 00
+13 20 01 04 b5 22 16 78 03 04 15 a8 54 4d 9b 25
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 fd d7 00 a0 a0 40 5e 60 30 20
+36 00 59 d7 10 00 00 1a 65 56 00 a0 a0 40 5e 60
+30 20 36 00 59 d7 10 00 00 1a 00 00 00 fe 00 52
+58 59 43 57 80 4e 45 31 36 4e 34 31 00 00 00 00
+00 03 41 2d 9e 00 01 00 00 0b 41 0a 20 20 01 24
+
+70 20 79 02 00 25 00 09 d9 6f 08 d9 6f 08 30 78
+80 81 00 13 72 1a 00 00 03 01 30 78 00 00 00 00
+00 00 78 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 2b 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2857
+    Made in: week 19 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6562, 0.3281
+    Green: 0.3017, 0.6054
+    Blue : 0.1445, 0.0634
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600  120.001823 Hz  16:10   203.283 kHz    552.930000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   85 Vpol N
+    DTD 2:  2560x1600   48.000295 Hz  16:10    81.312 kHz    221.170000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   85 Vpol N
+    Alphanumeric Data String: 'RXYCW'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 03 41 2d 9e 00 01 00 00 0b 41 0a 20 20 '....A-......A.  '
+  Extension blocks: 1
+Checksum: 0x24
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 552922 kHz
+    Maximum Pixel Clock: 552922 kHz
+    Minimum Vertical Refresh Rate: 48 Hz
+    Maximum Vertical Refresh Rate: 120 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 120 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Checksum: 0x2b
+Checksum: 0x90

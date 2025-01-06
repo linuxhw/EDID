@@ -1,0 +1,103 @@
+
+EDID (hex):
+00ffffffffffff0009e5bd0b00000000
+28200104a51e1178031c659b585e922a
+22505400000001010101010101010101
+010101010101c23780cc703828406c30
+aa0035ae1000001a2c2580cc70382840
+6c30aa0035ae1000001a000000fd0028
+3c43430e010a202020202020000000fe
+004e5631343046484d2d4e345a0a01c2
+02031f00e3058000e60605014a4a486d
+1a00000301283c0000000000003c0000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000007b
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 bd 0b 00 00 00 00
+28 20 01 04 a5 1e 11 78 03 1c 65 9b 58 5e 92 2a
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c2 37 80 cc 70 38 28 40 6c 30
+aa 00 35 ae 10 00 00 1a 2c 25 80 cc 70 38 28 40
+6c 30 aa 00 35 ae 10 00 00 1a 00 00 00 fd 00 28
+3c 43 43 0e 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 34 30 46 48 4d 2d 4e 34 5a 0a 01 c2
+
+02 03 1f 00 e3 05 80 00 e6 06 05 01 4a 4a 48 6d
+1a 00 00 03 01 28 3c 00 00 00 00 00 00 3c 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 3005
+    Made in: week 40 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 30 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6054, 0.3447
+    Green: 0.3701, 0.5703
+    Blue : 0.1650, 0.1347
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.003027 Hz  16:9     67.203 kHz    142.740000 MHz (309 mm x 174 mm)
+                 Hfront  108 Hsync  48 Hback   48 Hpol P
+                 Vfront   10 Vsync  10 Vback   20 Vpol N
+    DTD 2:  1920x1080   40.002018 Hz  16:9     44.802 kHz     95.160000 MHz (309 mm x 174 mm)
+                 Hfront  108 Hsync  48 Hback   48 Hpol P
+                 Vfront   10 Vsync  10 Vback   20 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 67-67 kHz H, max dotclock 140 MHz
+    Alphanumeric Data String: 'NV140FHM-N4Z'
+  Extension blocks: 1
+Checksum: 0xc2
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 74 (248.372 cd/m^2)
+    Desired content max frame-average luminance: 74 (248.372 cd/m^2)
+    Desired content min luminance: 72 (0.198 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Audio Data Block:
+Checksum: 0x7b  Unused space in Extension Block: 96 bytes

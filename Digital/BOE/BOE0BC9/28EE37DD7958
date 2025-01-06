@@ -1,0 +1,123 @@
+
+EDID (hex):
+00ffffffffffff0009e5c90b00000000
+30200104a5221678033d35ae5043b125
+0e505400000001010101010101010101
+010101010101347000a0a040a0603020
+f60c59d71000001a0000000000000000
+00000000000000000000000000fe0042
+4f452043510a202020202020000000fe
+004e4531363051444d2d4e5a360a010a
+70207902002200147f0d0c85ff099f00
+2f001f003f069f003e0005002500097f
+0d0c7f0d0c3ca580810013721a000003
+c13ca500006a426a42a5002faa0c2101
+1d770d6a08000a400688e1aa503d24b1
+51d20e023554b05cb05ccc3412782600
+09020000000000100000000000000000
+0000000000000000000000000000f790
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 c9 0b 00 00 00 00
+30 20 01 04 a5 22 16 78 03 3d 35 ae 50 43 b1 25
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 34 70 00 a0 a0 40 a0 60 30 20
+f6 0c 59 d7 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 36 30 51 44 4d 2d 4e 5a 36 0a 01 0a
+
+70 20 79 02 00 22 00 14 7f 0d 0c 85 ff 09 9f 00
+2f 00 1f 00 3f 06 9f 00 3e 00 05 00 25 00 09 7f
+0d 0c 7f 0d 0c 3c a5 80 81 00 13 72 1a 00 00 03
+c1 3c a5 00 00 6a 42 6a 42 a5 00 2f aa 0c 21 01
+1d 77 0d 6a 08 00 0a 40 06 88 e1 aa 50 3d 24 b1
+51 d2 0e 02 35 54 b0 5c b0 5c cc 34 12 78 26 00
+09 02 00 00 00 00 00 10 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 f7 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 3017
+    Made in: week 48 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6796, 0.3154
+    Green: 0.2646, 0.6923
+    Blue : 0.1445, 0.0576
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   60.001671 Hz  16:10   105.603 kHz    287.240000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront   63 Vsync   6 Vback   91 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'BOE CQ'
+    Alphanumeric Data String: 'NE160QDM-NZ6'
+  Extension blocks: 1
+Checksum: 0x0a
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2560x1600  165.000000 Hz  16:10   290.400 kHz    789.888000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront   63 Vsync   6 Vback   91 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 789888 kHz
+    Maximum Pixel Clock: 789888 kHz
+    Minimum Vertical Refresh Rate: 60 Hz
+    Maximum Vertical Refresh Rate: 165 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.193
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 106 (496.743 cd/m^2)
+    Minimum luminance: 66 (0.333 cd/m^2)
+    Unknown: 0x6a 0x42
+  Display Parameters Data Block (0x21):
+    Image size: 344.7 mm x 215.4 mm
+    Display native pixel format: 2560x1600
+    Scan Orientation: Left to Right, Top to Bottom
+    Luminance Information: Guidance for the Source device
+    Color Information: CIE 1931
+    Audio Speaker Information: not integrated
+    Native Color Chromaticity:
+      Primary #1:  (0.679932, 0.314941)
+      Primary #2:  (0.264893, 0.691895)
+      Primary #3:  (0.144775, 0.057861)
+      White Point: (0.312988, 0.328857)
+    Native Maximum Luminance (Full Coverage): 300.000000 cd/m^2
+    Native Maximum Luminance (10% Rectangular Coverage): 300.000000 cd/m^2
+    Native Minimum Luminance: 0.299805 cd/m^2
+    Native Color Depth: 10 bpc
+    Display Device Technology: Active Matrix LCD
+    Display Device Theme Preference: No Preference
+    Native Gamma EOTF: 2.20
+  Display Interface Features Data Block:
+    Supported bpc for RGB encoding: 8
+    Supported color space and EOTF standard combination 1: DCI-P3
+  Checksum: 0xf7
+Checksum: 0x90

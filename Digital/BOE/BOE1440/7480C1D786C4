@@ -1,0 +1,130 @@
+
+EDID (hex):
+00ffffffffffff0009e5401460000000
+01210104b51e13782bee91a3544c9926
+0f5054210800d100b300950081000101
+010101010101d45470a080a078503020
+350027c81000001a000000ffa00a2020
+20202020202020202020000000fc0044
+6973706c61790a2020202020000000fd
+00303f6e6e28010a2020202020200116
+020320f2459001020304e200c023097f
+0783010000e305c000e6060501737300
+d45470a080a078503020350027c81000
+001a0000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000f4
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 40 14 60 00 00 00
+01 21 01 04 b5 1e 13 78 2b ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 d1 00 b3 00 95 00 81 00 01 01
+01 01 01 01 01 01 d4 54 70 a0 80 a0 78 50 30 20
+35 00 27 c8 10 00 00 1a 00 00 00 ff a0 0a 20 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fc 00 44
+69 73 70 6c 61 79 0a 20 20 20 20 20 00 00 00 fd
+00 30 3f 6e 6e 28 01 0a 20 20 20 20 20 20 01 16
+
+02 03 20 f2 45 90 01 02 03 04 e2 00 c0 23 09 7f
+07 83 01 00 00 e3 05 c0 00 e6 06 05 01 73 73 00
+d4 54 70 a0 80 a0 78 50 30 20 35 00 27 c8 10 00
+00 1a 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f4
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 5184
+    Serial Number: 96
+    Made in: week 1 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x45:  1920x1200   59.884600 Hz  16:10    74.556 kHz    193.250000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2160x1440   60.002210 Hz   3:2     93.603 kHz    217.160000 MHz (295 mm x 200 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback  112 Vpol N
+    Display Product Serial Number: ''
+    Display Product Name: 'Display'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-63 Hz V, 110-110 kHz H, max dotclock 400 MHz
+  Extension blocks: 1
+Checksum: 0x16
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: IT video formats not supported
+    CE scan behavior: CE video formats not supported
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 115 (603.666 cd/m^2)
+    Desired content max frame-average luminance: 115 (603.666 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  2160x1440   60.002210 Hz   3:2     93.603 kHz    217.160000 MHz (295 mm x 200 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback  112 Vpol N
+Checksum: 0xf4  Unused space in Extension Block: 77 bytes
+
+

@@ -1,0 +1,87 @@
+
+EDID (hex):
+00ffffffffffff0009e5560b00000000
+15200104a51f11780328659759548e27
+1e505400000001010101010101010101
+0101010101011c3880b470383c403020
+360035ae1000001ae42c80b470383c40
+3020360035ae1000001a000000fd0028
+3c44440e010a202020202020000000fe
+004e5431343046484d2d4e34370a01d8
+02030d00681a00000101283c00000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000006
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 56 0b 00 00 00 00
+15 20 01 04 a5 1f 11 78 03 28 65 97 59 54 8e 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1c 38 80 b4 70 38 3c 40 30 20
+36 00 35 ae 10 00 00 1a e4 2c 80 b4 70 38 3c 40
+30 20 36 00 35 ae 10 00 00 1a 00 00 00 fd 00 28
+3c 44 44 0e 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 54 31 34 30 46 48 4d 2d 4e 34 37 0a 01 d8
+
+02 03 0d 00 68 1a 00 00 01 01 28 3c 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 06
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2902
+    Made in: week 21 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5898, 0.3496
+    Green: 0.3300, 0.5546
+    Blue : 0.1533, 0.1191
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     68.400 kHz    143.640000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback  100 Hpol P
+                 Vfront    3 Vsync   6 Vback   51 Vpol N
+    DTD 2:  1920x1080   48.003342 Hz  16:9     54.724 kHz    114.920000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback  100 Hpol P
+                 Vfront    3 Vsync   6 Vback   51 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 68-68 kHz H, max dotclock 140 MHz
+    Alphanumeric Data String: 'NT140FHM-N47'
+  Extension blocks: 1
+Checksum: 0xd8
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0x00
+Checksum: 0x06  Unused space in Extension Block: 114 bytes

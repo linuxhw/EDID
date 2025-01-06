@@ -1,0 +1,119 @@
+
+EDID (hex):
+00ffffffffffff0009e5d50a00000000
+271f0104a5221678037a25a6534a9b25
+0f505400000001010101010101010101
+0101010101016b6e00a0a04084603020
+360059d71000001a000000fd0c3ca51f
+1f4e010a202020202020000000fe0038
+59384b58804e45313651444d00000000
+0004413fa8000300000f410a20200242
+02031600721a000003013ca500005351
+5351a500000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000087
+7013790000030114a52f0185ff099f00
+2f001f003f0683000200050000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000003e90
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 d5 0a 00 00 00 00
+27 1f 01 04 a5 22 16 78 03 7a 25 a6 53 4a 9b 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 6b 6e 00 a0 a0 40 84 60 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 fd 0c 3c a5 1f
+1f 4e 01 0a 20 20 20 20 20 20 00 00 00 fe 00 38
+59 38 4b 58 80 4e 45 31 36 51 44 4d 00 00 00 00
+00 04 41 3f a8 00 03 00 00 0f 41 0a 20 20 02 42
+
+02 03 16 00 72 1a 00 00 03 01 3c a5 00 00 53 51
+53 51 a5 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 87
+
+70 13 79 00 00 03 01 14 a5 2f 01 85 ff 09 9f 00
+2f 00 1f 00 3f 06 83 00 02 00 05 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 3e 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2773
+    Made in: week 39 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6494, 0.3271
+    Green: 0.2910, 0.6074
+    Blue : 0.1445, 0.0605
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   60.001613 Hz  16:10   103.923 kHz    282.670000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback  123 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 60-165 Hz V, 286-286 kHz H, max dotclock 780 MHz
+    Alphanumeric Data String: '8Y8KX'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 04 41 3f a8 00 03 00 00 0f 41 0a 20 20 '....A?......A.  '
+  Extension blocks: 2
+Checksum: 0x42
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 83 (301.833 cd/m^2)
+    Minimum luminance: 81 (0.305 cd/m^2)
+    Unknown: 0x53 0x51
+Checksum: 0x87  Unused space in Extension Block: 105 bytes
+
+----------------
+
+Block 2, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1600  165.003906 Hz  16:10   285.787 kHz    777.340000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   6 Vback  123 Vpol N
+  Checksum: 0x3e
+Checksum: 0x90
