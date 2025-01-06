@@ -1,0 +1,129 @@
+
+EDID (hex):
+00ffffffffffff0010ac0c424c393331
+22210103801c2778ea52f5b04f42ab25
+0f5054a54b00714f8100818001010101
+010101010101e74a00a050703e803020
+3a0017881100001a000000ff00445036
+523650330a2020202020000000fc0044
+454c4c20553430323151570a000000fd
+001856198c1e000a202020202020013b
+020327f14c101f200514041312110302
+0123090707830100006d030c00200038
+3c200060010203011d007251d01e206e
+28550017881100001e00000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000f3
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 0c 42 4c 39 33 31
+22 21 01 03 80 1c 27 78 ea 52 f5 b0 4f 42 ab 25
+0f 50 54 a5 4b 00 71 4f 81 00 81 80 01 01 01 01
+01 01 01 01 01 01 e7 4a 00 a0 50 70 3e 80 30 20
+3a 00 17 88 11 00 00 1a 00 00 00 ff 00 44 50 36
+52 36 50 33 0a 20 20 20 20 20 00 00 00 fc 00 44
+45 4c 4c 20 55 34 30 32 31 51 57 0a 00 00 00 fd
+00 18 56 19 8c 1e 00 0a 20 20 20 20 20 20 01 3b
+
+02 03 27 f1 4c 10 1f 20 05 14 04 13 12 11 03 02
+01 23 09 07 07 83 01 00 00 6d 03 0c 00 20 00 38
+3c 20 00 60 01 02 03 01 1d 00 72 51 d0 1e 20 6e
+28 55 00 17 88 11 00 00 1e 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f3
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 16908
+    Serial Number: 825440588
+    Made in: week 34 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 28 cm x 39 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6884, 0.3095
+    Green: 0.2578, 0.6699
+    Blue : 0.1474, 0.0615
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x2160   59.927868 Hz  16:27   133.160 kHz    191.750000 MHz (279 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   49 Vpol N
+    Display Product Serial Number: 'DP6R6P3'
+    Display Product Name: 'DELL U4021QW'
+    Display Range Limits:
+      Monitor ranges (GTF): 24-86 Hz V, 25-140 kHz H, max dotclock 300 MHz
+  Extension blocks: 1
+Checksum: 0x3b
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (279 mm x 392 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0xf3  Unused space in Extension Block: 70 bytes
