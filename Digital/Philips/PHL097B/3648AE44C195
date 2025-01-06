@@ -1,0 +1,102 @@
+
+EDID (hex):
+00ffffffffffff00410c7b0989000000
+13210104a51b14783a4d73a1574a9c25
+15414c00000001010101010101010101
+010101010101023a407c61b032406450
+45000eca1000001e000000ff00415545
+32333139303030313337000000fc0050
+484c20313342314b33333030000000fd
+003b3d3c780f010a202020202020013e
+020314f1411023090707830100006503
+0c002000023a801871382d40582c4500
+0eca1000001e00000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000009a
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 7b 09 89 00 00 00
+13 21 01 04 a5 1b 14 78 3a 4d 73 a1 57 4a 9c 25
+15 41 4c 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 40 7c 61 b0 32 40 64 50
+45 00 0e ca 10 00 00 1e 00 00 00 ff 00 41 55 45
+32 33 31 39 30 30 30 31 33 37 00 00 00 fc 00 50
+48 4c 20 31 33 42 31 4b 33 33 30 30 00 00 00 fd
+00 3b 3d 3c 78 0f 01 0a 20 20 20 20 20 20 01 3e
+
+02 03 14 f1 41 10 23 09 07 07 83 01 00 00 65 03
+0c 00 20 00 02 3a 80 18 71 38 2d 40 58 2c 45 00
+0e ca 10 00 00 1e 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: PHL
+    Model: 2427
+    Serial Number: 137
+    Made in: week 19 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 27 cm x 20 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6298, 0.3398
+    Green: 0.2919, 0.6103
+    Blue : 0.1455, 0.0849
+    White: 0.2539, 0.2998
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x1200   60.000000 Hz   4:3     75.000 kHz    148.500000 MHz (270 mm x 202 mm)
+                 Hfront  100 Hsync  80 Hback  200 Hpol P
+                 Vfront    4 Vsync   5 Vback   41 Vpol P
+    Display Product Serial Number: 'AUE2319000137'
+    Display Product Name: 'PHL 13B1K3300'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 59-61 Hz V, 60-120 kHz H, max dotclock 150 MHz
+  Extension blocks: 1
+Checksum: 0x3e
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (270 mm x 202 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0x9a  Unused space in Extension Block: 89 bytes
+
+
