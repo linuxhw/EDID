@@ -1,0 +1,102 @@
+
+EDID (hex):
+00ffffffffffff0022f06c2801010101
+0215010380402878c28d85ad4f35b125
+0e505400000001010101010101010101
+010101010101e26800a0a0402e603020
+360081902100001abc1b00a050201730
+3020360081902100001a000000fc0048
+50205a523330770a20202020000000ff
+00434e34313032303434320a202001ea
+02031ac1458413030201230907078301
+000067030c0010000044e26800a0a040
+2e603020360081902100001a00000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000008c
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 6c 28 01 01 01 01
+02 15 01 03 80 40 28 78 c2 8d 85 ad 4f 35 b1 25
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 e2 68 00 a0 a0 40 2e 60 30 20
+36 00 81 90 21 00 00 1a bc 1b 00 a0 50 20 17 30
+30 20 36 00 81 90 21 00 00 1a 00 00 00 fc 00 48
+50 20 5a 52 33 30 77 0a 20 20 20 20 00 00 00 ff
+00 43 4e 34 31 30 32 30 34 34 32 0a 20 20 01 ea
+
+02 03 1a c1 45 84 13 03 02 01 23 09 07 07 83 01
+00 00 67 03 0c 00 10 00 00 44 e2 68 00 a0 a0 40
+2e 60 30 20 36 00 81 90 21 00 00 1a 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 8c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 10348
+    Serial Number: 16843009
+    Made in: week 2 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 64 cm x 40 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend
+    Monochrome or grayscale display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6777, 0.3085
+    Green: 0.2099, 0.6923
+    Blue : 0.1464, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   59.971589 Hz   8:5     98.713 kHz    268.500000 MHz (641 mm x 400 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   37 Vpol N
+    DTD 2:  1280x800    59.909545 Hz   8:5     49.306 kHz     71.000000 MHz (641 mm x 400 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   14 Vpol N
+    Display Product Name: 'HP ZR30w'
+    Display Product Serial Number: 'CN41020442'
+  Extension blocks: 1
+Checksum: 0xea
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Maximum TMDS clock: 340 MHz
+  Detailed Timing Descriptors:
+    DTD 3:  2560x1600   59.971589 Hz   8:5     98.713 kHz    268.500000 MHz (641 mm x 400 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   37 Vpol N
+Checksum: 0x8c

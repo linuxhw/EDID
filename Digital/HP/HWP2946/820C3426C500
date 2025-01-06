@@ -1,0 +1,125 @@
+
+EDID (hex):
+00ffffffffffff0022f0462901010101
+11170104a5301b783e9525a159579f27
+0d5054a1080081c081809500b300d1c0
+010101010101023a801871382d40582c
+4500dc0c1100001e000000fd00324c18
+5e11000a202020202020000000fc0048
+50204c41323230360a202020000000ff
+00334351333137304846340a202001b9
+020316f1230907074904020301111290
+1f13830100008c0ad08a20e02d10103e
+96005854210000188c0ad09020403120
+0c405500585421000018011d007251d0
+1e206e28550058542100001f011d00bc
+52d01e20b828554058542100001e0000
+00000000000000000000000000000000
+0000000000000000000000000000007b
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 46 29 01 01 01 01
+11 17 01 04 a5 30 1b 78 3e 95 25 a1 59 57 9f 27
+0d 50 54 a1 08 00 81 c0 81 80 95 00 b3 00 d1 c0
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1e 00 00 00 fd 00 32 4c 18
+5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 4c 41 32 32 30 36 0a 20 20 20 00 00 00 ff
+00 33 43 51 33 31 37 30 48 46 34 0a 20 20 01 b9
+
+02 03 16 f1 23 09 07 07 49 04 02 03 01 11 12 90
+1f 13 83 01 00 00 8c 0a d0 8a 20 e0 2d 10 10 3e
+96 00 58 54 21 00 00 18 8c 0a d0 90 20 40 31 20
+0c 40 55 00 58 54 21 00 00 18 01 1d 00 72 51 d0
+1e 20 6e 28 55 00 58 54 21 00 00 1f 01 1d 00 bc
+52 d0 1e 20 b8 28 55 40 58 54 21 00 00 1e 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 10566
+    Serial Number: 16843009
+    Made in: week 17 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6308, 0.3486
+    Green: 0.3408, 0.6220
+    Blue : 0.1523, 0.0527
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (476 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-76 Hz V, 24-94 kHz H, max dotclock 170 MHz
+    Display Product Name: 'HP LA2206'
+    Display Product Serial Number: '3CQ3170HF4'
+  Extension blocks: 1
+Checksum: 0xb9
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 2:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (600 mm x 340 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 3:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (600 mm x 340 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (600 mm x 340 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (600 mm x 340 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0x7b  Unused space in Extension Block: 33 bytes
