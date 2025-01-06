@@ -1,0 +1,164 @@
+
+EDID (hex):
+00ffffffffffff00412fa71000000000
+001a0103809a56780a3b47a25b4f9f27
+0f4849200000d1000101010101010101
+01010101010104740030f2705a80b058
+8a0002616300001e023a801871382d40
+582c450002616300001e000000fc0041
+562052656365697665720a20000000fd
+0038781f871e000a202020202020015d
+020343704b010203040510205d5e5fe2
+3b097f070f7f071507503f06c04d0200
+5706015f7e035f7e01677e01834f0000
+6e030c005800b83c20008001020304e3
+0e6166023a801871382d40582c550002
+616300001e011d007251d01e206e2855
+0002616300001e000000000000000000
+0000000000000000000000000000003f
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 2f a7 10 00 00 00 00
+00 1a 01 03 80 9a 56 78 0a 3b 47 a2 5b 4f 9f 27
+0f 48 49 20 00 00 d1 00 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 04 74 00 30 f2 70 5a 80 b0 58
+8a 00 02 61 63 00 00 1e 02 3a 80 18 71 38 2d 40
+58 2c 45 00 02 61 63 00 00 1e 00 00 00 fc 00 41
+56 20 52 65 63 65 69 76 65 72 0a 20 00 00 00 fd
+00 38 78 1f 87 1e 00 0a 20 20 20 20 20 20 01 5d
+
+02 03 43 70 4b 01 02 03 04 05 10 20 5d 5e 5f e2
+3b 09 7f 07 0f 7f 07 15 07 50 3f 06 c0 4d 02 00
+57 06 01 5f 7e 03 5f 7e 01 67 7e 01 83 4f 00 00
+6e 03 0c 00 58 00 b8 3c 20 00 80 01 02 03 04 e3
+0e 61 66 02 3a 80 18 71 38 2d 40 58 2c 55 00 02
+61 63 00 00 1e 01 1d 00 72 51 d0 1e 20 6e 28 55
+00 02 61 63 00 00 1e 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PIO
+    Model: 4263
+    Made in: 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 154 cm x 86 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6328, 0.3583
+    Green: 0.3105, 0.6240
+    Blue : 0.1533, 0.0585
+    White: 0.2822, 0.2880
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Standard Timings:
+    DMT 0x45:  1920x1200   59.884600 Hz  16:10    74.556 kHz    193.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz (1538 mm x 865 mm)
+                 Hfront  176 Hsync  88 Hback  296 Hpol P
+                 Vfront    8 Vsync  10 Vback   72 Vpol P
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1538 mm x 865 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Name: 'AV Receiver'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-120 Hz V, 31-135 kHz H, max dotclock 300 MHz
+  Extension blocks: 1
+Checksum: 0x5d
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    Unknown (VIC 226)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    Linear PCM:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 640 kb/s
+    DTS:
+      Max channels: 8
+      Supported sample rates (kHz): 48 44.1
+      Maximum bit rate: 1536 kb/s
+    One Bit Audio:
+      Max channels: 6
+      Supported sample rates (kHz): 44.1
+      Audio Format Code dependent value: 0x00
+    Enhanced AC-3 (DD+):
+      Max channels: 8
+      Supported sample rates (kHz): 48 44.1
+      Supports Joint Object Coding
+    DTS-HD:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports DTS:X
+      Audio Format Code dependent value: 0x03
+    DTS-HD:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Audio Format Code dependent value: 0x01
+    MAT (MLP):
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports Dolby TrueHD, object audio PCM and channel-based PCM
+      Hash calculation required for object audio PCM or channel-based PCM
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+    LFE1 - Low Frequency Effects 1
+    FC - Front Center
+    BL/BR - Back Left/Right
+    RLC/RRC - Rear Left/Right of Center (Deprecated)
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 5.8.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+        HDMI VIC 4:  4096x2160   24.000000 Hz 256:135   54.000 kHz    297.000000 MHz
+  YCbCr 4:2:0 Video Data Block:
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1538 mm x 865 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    5 Vsync   5 Vback   35 Vpol P
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (1538 mm x 865 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0x3f  Unused space in Extension Block: 24 bytes

@@ -1,0 +1,142 @@
+
+EDID (hex):
+00ffffffffffff00410c75d001010101
+00130103804627782aeebda354479926
+0c474a2dcc0081c081809500b3000101
+010101010101f51e008051001e304080
+3700ba8821000018662150b051001b30
+40703600ba8821000018000000fd0038
+4c1e530f000a202020202020000000fc
+00504849333250464c353430340a010b
+020329f14f93041405020311121f1006
+0715160123090703830100006c030c00
+1000001ec0010101018c0ad08a20e02d
+10103e9600ba8821000018023a801871
+382d40582c2500ba882100001e011d80
+18711c1620582c2500ba882100009e8c
+0aa01451f01600267c4300ba88210000
+980000000000000000000000000000e7
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 75 d0 01 01 01 01
+00 13 01 03 80 46 27 78 2a ee bd a3 54 47 99 26
+0c 47 4a 2d cc 00 81 c0 81 80 95 00 b3 00 01 01
+01 01 01 01 01 01 f5 1e 00 80 51 00 1e 30 40 80
+37 00 ba 88 21 00 00 18 66 21 50 b0 51 00 1b 30
+40 70 36 00 ba 88 21 00 00 18 00 00 00 fd 00 38
+4c 1e 53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 48 49 33 32 50 46 4c 35 34 30 34 0a 01 0b
+
+02 03 29 f1 4f 93 04 14 05 02 03 11 12 1f 10 06
+07 15 16 01 23 09 07 03 83 01 00 00 6c 03 0c 00
+10 00 00 1e c0 01 01 01 01 8c 0a d0 8a 20 e0 2d
+10 10 3e 96 00 ba 88 21 00 00 18 02 3a 80 18 71
+38 2d 40 58 2c 25 00 ba 88 21 00 00 1e 01 1d 80
+18 71 1c 16 20 58 2c 25 00 ba 88 21 00 00 9e 8c
+0a a0 14 51 f0 16 00 26 7c 43 00 ba 88 21 00 00
+98 00 00 00 00 00 00 00 00 00 00 00 00 00 00 e7
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: PHL
+    Model: 53365
+    Serial Number: 16843009
+    Made in: 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 70 cm x 39 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2802, 0.5996
+    Blue : 0.1503, 0.0498
+    White: 0.2802, 0.2900
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x768    59.681957 Hz   5:3     47.626 kHz     79.250000 MHz (698 mm x 392 mm)
+                 Hfront   64 Hsync 128 Hback  192 Hpol N
+                 Vfront    3 Vsync   7 Vback   20 Vpol N
+    DTD 2:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (698 mm x 392 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol N
+                 Vfront    3 Vsync   6 Vback   18 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 150 MHz
+    Display Product Name: 'PHI32PFL5404'
+  Extension blocks: 1
+Checksum: 0x0b
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Maximum TMDS clock: 150 MHz
+    Video latency: 0 ms
+    Audio latency: 0 ms
+    Interlaced video latency: 0 ms
+    Interlaced audio latency: 0 ms
+  Detailed Timing Descriptors:
+    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (698 mm x 392 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 4:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (698 mm x 392 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol P
+    DTD 5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (698 mm x 392 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 6:  1440x480i   59.940060 Hz   3:1     15.734 kHz     27.000000 MHz (698 mm x 392 mm)
+                 Hfront   38 Hsync 124 Hback  114 Hpol N
+                 Vfront    4 Vsync   3 Vback   15 Vpol N Vfront +0.5 Odd Field
+                 Vfront    4 Vsync   3 Vback   15 Vpol N Vback  +0.5 Even Field
+Checksum: 0xe7  Unused space in Extension Block: 14 bytes
