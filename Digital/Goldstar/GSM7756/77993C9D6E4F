@@ -1,0 +1,130 @@
+
+EDID (hex):
+00ffffffffffff001e6d5677a5ee0100
+06210104b5522278fea105a9564ba425
+0f5054210800d1c06140010101010101
+0101010101014ed470a0d0a046503020
+3a00345a3100001a000000fd0030641e
+9737000a202020202020000000fc004c
+472048445220575148440a20000000ff
+003330364e54424b33513632390a0198
+02031f74230907078301000044100403
+01e2006ae305c000e606050152525e1a
+b370a0d0a03b5030203a00345a310000
+1ae77c70a0d0a0295030203a00345a31
+00001a9d6770a0d0a0225030203a0034
+5a3100001a0000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000013
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 56 77 a5 ee 01 00
+06 21 01 04 b5 52 22 78 fe a1 05 a9 56 4b a4 25
+0f 50 54 21 08 00 d1 c0 61 40 01 01 01 01 01 01
+01 01 01 01 01 01 4e d4 70 a0 d0 a0 46 50 30 20
+3a 00 34 5a 31 00 00 1a 00 00 00 fd 00 30 64 1e
+97 37 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+47 20 48 44 52 20 57 51 48 44 0a 20 00 00 00 ff
+00 33 30 36 4e 54 42 4b 33 51 36 32 39 0a 01 98
+
+02 03 1f 74 23 09 07 07 83 01 00 00 44 10 04 03
+01 e2 00 6a e3 05 c0 00 e6 06 05 01 52 52 5e 1a
+b3 70 a0 d0 a0 3b 50 30 20 3a 00 34 5a 31 00 00
+1a e7 7c 70 a0 d0 a0 29 50 30 20 3a 00 34 5a 31
+00 00 1a 9d 67 70 a0 d0 a0 22 50 30 20 3a 00 34
+5a 31 00 00 1a 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 30550
+    Serial Number: 126629
+    Made in: week 6 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 82 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6621, 0.3378
+    Green: 0.2929, 0.6416
+    Blue : 0.1445, 0.0585
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3440x1440   99.981604 Hz  43:18   150.972 kHz    543.500000 MHz (820 mm x 346 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   57 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 48-100 Hz V, 30-151 kHz H, max dotclock 550 MHz
+    Display Product Name: 'LG HDR WQHD'
+    Display Product Serial Number: '306NTBK3Q629'
+  Extension blocks: 1
+Checksum: 0x98
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 4
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 82 (295.365 cd/m^2)
+    Desired content max frame-average luminance: 82 (295.365 cd/m^2)
+    Desired content min luminance: 94 (0.401 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  3440x1440   84.964050 Hz  43:18   127.361 kHz    458.500000 MHz (820 mm x 346 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   46 Vpol N
+    DTD 3:  3440x1440   59.972616 Hz  43:18    88.819 kHz    319.750000 MHz (820 mm x 346 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   28 Vpol N
+    DTD 4:  3440x1440   49.986808 Hz  43:18    73.681 kHz    265.250000 MHz (820 mm x 346 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   21 Vpol N
+Checksum: 0x13  Unused space in Extension Block: 42 bytes

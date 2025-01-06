@@ -1,0 +1,151 @@
+
+EDID (hex):
+00ffffffffffff002163141000000000
+2e21010380361e782aabe5ac5445ab26
+0e505404430081bc953cb33cd1cf0101
+0101010101017f48801871382d403028
+55001f2e2100001e000000fd004bb44b
+b43c000a202020202020000000ff0030
+303030303030303030303031000000fc
+0032354533410a20202020202020012b
+02033bf342bf90230907078301000067
+030c001000187867d85dc4017880006d
+1a000002014bb4ed0000000000e305e3
+01e6060701615d00e2007f288380a070
+382940182035001f2e2100001e499680
+a070382940302c35001f2e2100001e88
+a480a070382d40302c35001f2e210000
+1e00000000000000000000000000003a
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 63 14 10 00 00 00 00
+2e 21 01 03 80 36 1e 78 2a ab e5 ac 54 45 ab 26
+0e 50 54 04 43 00 81 bc 95 3c b3 3c d1 cf 01 01
+01 01 01 01 01 01 7f 48 80 18 71 38 2d 40 30 28
+55 00 1f 2e 21 00 00 1e 00 00 00 fd 00 4b b4 4b
+b4 3c 00 0a 20 20 20 20 20 20 00 00 00 ff 00 30
+30 30 30 30 30 30 30 30 30 30 30 31 00 00 00 fc
+00 32 35 45 33 41 0a 20 20 20 20 20 20 20 01 2b
+
+02 03 3b f3 42 bf 90 23 09 07 07 83 01 00 00 67
+03 0c 00 10 00 18 78 67 d8 5d c4 01 78 80 00 6d
+1a 00 00 02 01 4b b4 ed 00 00 00 00 00 e3 05 e3
+01 e6 06 07 01 61 5d 00 e2 00 7f 28 83 80 a0 70
+38 29 40 18 20 35 00 1f 2e 21 00 00 1e 49 96 80
+a0 70 38 29 40 30 2c 35 00 1f 2e 21 00 00 1e 88
+a4 80 a0 70 38 2d 40 30 2c 35 00 1f 2e 21 00 00
+1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HKC
+    Model: 4116
+    Made in: week 46 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 54 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6738, 0.3300
+    Green: 0.2714, 0.6708
+    Blue : 0.1513, 0.0566
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    GTF     :  1280x1024  120.000185 Hz   5:4    131.640 kHz    233.793000 MHz
+    GTF     :  1440x900   119.999896 Hz  16:10   115.800 kHz    229.747000 MHz
+    GTF     :  1680x1050  120.000000 Hz  16:10   135.000 kHz    313.200000 MHz
+    GTF     :  1920x1080   75.000068 Hz  16:9     84.600 kHz    220.637000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   74.985859 Hz  16:9     84.359 kHz    185.590000 MHz (543 mm x 302 mm)
+                 Hfront   48 Hsync  40 Hback  192 Hpol P
+                 Vfront    5 Vsync   5 Vback   35 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 75-180 Hz V, 75-180 kHz H, max dotclock 600 MHz
+    Display Product Serial Number: '0000000000001'
+    Display Product Name: '25E3A'
+  Extension blocks: 1
+Checksum: 0x2b
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 3
+  Video Data Block:
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz (native)
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 600 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.1
+    Minimum Refresh Rate: 75 Hz
+    Maximum Refresh Rate: 180 Hz
+    Flags 1.x: 0xed (MCCS)
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+    Gamut Boundary Description Metadata Profile P0
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 97 (408.759 cd/m^2)
+    Desired content max frame-average luminance: 93 (374.834 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080  143.999177 Hz  16:9    161.423 kHz    335.760000 MHz (543 mm x 302 mm)
+                 Hfront   24 Hsync  32 Hback  104 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+    DTD 3:  1920x1080  165.001201 Hz  16:9    184.966 kHz    384.730000 MHz (543 mm x 302 mm)
+                 Hfront   48 Hsync  44 Hback   68 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+    DTD 4:  1920x1080  180.000000 Hz  16:9    202.500 kHz    421.200000 MHz (543 mm x 302 mm)
+                 Hfront   48 Hsync  44 Hback   68 Hpol P
+                 Vfront    3 Vsync   5 Vback   37 Vpol P
+Checksum: 0x3a  Unused space in Extension Block: 14 bytes

@@ -1,0 +1,121 @@
+
+EDID (hex):
+00ffffffffffff002068040080ee3301
+1a1c010380a05a78ea5525a1574fa028
+0f505400000001000100010001000100
+01000100010101140040415823202010
+9300dc0c1100001e000000ff00323032
+30303931350a20202020000000fd0018
+461a8c1e000a202020202020000000fc
+004845544543480a20202020202001f5
+02031df55090050403020716011f1213
+14201511062309070783010000023a80
+1871382d40582c450006442100001e01
+1d8018711c1620582c25000644210000
+9e011d007251d01e206e285500064421
+00001e8c0ad08a20e02d10103e960006
+44210000180000000000000000000000
+0000000000000000000000000000001d
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 20 68 04 00 80 ee 33 01
+1a 1c 01 03 80 a0 5a 78 ea 55 25 a1 57 4f a0 28
+0f 50 54 00 00 00 01 00 01 00 01 00 01 00 01 00
+01 00 01 00 01 01 01 14 00 40 41 58 23 20 20 10
+93 00 dc 0c 11 00 00 1e 00 00 00 ff 00 32 30 32
+30 30 39 31 35 0a 20 20 20 20 00 00 00 fd 00 18
+46 1a 8c 1e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 48 45 54 45 43 48 0a 20 20 20 20 20 20 01 f5
+
+02 03 1d f5 50 90 05 04 03 02 07 16 01 1f 12 13
+14 20 15 11 06 23 09 07 07 83 01 00 00 02 3a 80
+18 71 38 2d 40 58 2c 45 00 06 44 21 00 00 1e 01
+1d 80 18 71 1c 16 20 58 2c 25 00 06 44 21 00 00
+9e 01 1d 00 72 51 d0 1e 20 6e 28 55 00 06 44 21
+00 00 1e 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 06
+44 21 00 00 18 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HCH
+    Model: 4
+    Serial Number: 20180608
+    Made in: week 26 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 160 cm x 90 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6298, 0.3408
+    Green: 0.3095, 0.6259
+    Blue : 0.1562, 0.0605
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings:
+  Detailed Timing Descriptors:
+    DTD 1:  1024x600    60.004218 Hz 128:75    38.103 kHz     51.210000 MHz (476 mm x 268 mm)
+                 Hfront   32 Hsync  16 Hback  272 Hpol P
+                 Vfront    9 Vsync   3 Vback   23 Vpol P
+    Display Product Serial Number: '20200915'
+    Display Range Limits:
+      Monitor ranges (GTF): 24-70 Hz V, 26-140 kHz H, max dotclock 300 MHz
+    Display Product Name: 'HETECH'
+  Extension blocks: 1
+Checksum: 0xf5
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 5
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (518 mm x 324 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 3:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (518 mm x 324 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (518 mm x 324 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (518 mm x 324 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x1d  Unused space in Extension Block: 26 bytes

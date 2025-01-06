@@ -1,0 +1,153 @@
+
+EDID (hex):
+00ffffffffffff002113601611111111
+2021010380221478fe6435a5544f9e27
+125054210800818081c001019500a9c0
+0101d1c08100023a801871382d403020
+45005ac21000001a000000fc004d3135
+364630310a2020202020000000ff000a
+202020202020202020202020000000fd
+00303d30c814010a2020202020200106
+020340f146011f020400102309070783
+01000067030c001000384467d85dc401
+448001681a00000109303de6e50f0000
+0600e305c000e200ffe6060501595949
+f71b001851d02d20582c25005ac21000
+001a1627001851002d40582c25005ac2
+1000001aa429401861842d30582c2500
+5ac21000001a0000000000000000003a
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 13 60 16 11 11 11 11
+20 21 01 03 80 22 14 78 fe 64 35 a5 54 4f 9e 27
+12 50 54 21 08 00 81 80 81 c0 01 01 95 00 a9 c0
+01 01 d1 c0 81 00 02 3a 80 18 71 38 2d 40 30 20
+45 00 5a c2 10 00 00 1a 00 00 00 fc 00 4d 31 35
+36 46 30 31 0a 20 20 20 20 20 00 00 00 ff 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fd
+00 30 3d 30 c8 14 01 0a 20 20 20 20 20 20 01 06
+
+02 03 40 f1 46 01 1f 02 04 00 10 23 09 07 07 83
+01 00 00 67 03 0c 00 10 00 38 44 67 d8 5d c4 01
+44 80 01 68 1a 00 00 01 09 30 3d e6 e5 0f 00 00
+06 00 e3 05 c0 00 e2 00 ff e6 06 05 01 59 59 49
+f7 1b 00 18 51 d0 2d 20 58 2c 25 00 5a c2 10 00
+00 1a 16 27 00 18 51 00 2d 40 58 2c 25 00 5a c2
+10 00 00 1a a4 29 40 18 61 84 2d 30 58 2c 25 00
+5a c2 10 00 00 1a 00 00 00 00 00 00 00 00 00 3a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HHS
+    Model: 5728
+    Serial Number: 286331153
+    Made in: week 32 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 20 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Undefined display color type
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6455, 0.3300
+    Green: 0.3095, 0.6171
+    Blue : 0.1523, 0.0732
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (346 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol N
+    Display Product Name: 'M156F01'
+    Display Product Serial Number: ''
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-61 Hz V, 48-200 kHz H, max dotclock 200 MHz
+  Extension blocks: 1
+Checksum: 0x06
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 340 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 340 MHz
+    SCDC Present
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.9
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 61 Hz
+    Flags 1.x: 0xe6 (MCCS)
+  YCbCr 4:2:0 Capability Map Data Block:
+    SVD Index 18 is out of range
+    SVD Index 19 is out of range
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 89 (343.724 cd/m^2)
+    Desired content max frame-average luminance: 89 (343.724 cd/m^2)
+    Desired content min luminance: 73 (0.282 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  1280x720    59.988269 Hz  16:9     45.891 kHz     71.590000 MHz (346 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol N
+    DTD 3:  1280x1024   60.000959 Hz   5:4     64.141 kHz    100.060000 MHz (346 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol N
+    DTD 4:  1600x900    60.002251 Hz  16:9     56.702 kHz    106.600000 MHz (346 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol N
+Checksum: 0x3a  Unused space in Extension Block: 9 bytes

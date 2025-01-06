@@ -1,0 +1,110 @@
+
+EDID (hex):
+00ffffffffffff001e6d21773be30400
+091c0104b55021789e09c1ae5044af26
+0e505420000001010101010101010101
+01010101010100000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000fd0030
+3d1e874c000a202020202020000000fc
+004c472048445220354b0a20202001db
+701279030001000c401fe40c00147008
+9078899912001680101000ff096f0800
+0000000047534d217701010101030014
+f0890008ff094f0007801f006f085100
+00000700000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000003290
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 21 77 3b e3 04 00
+09 1c 01 04 b5 50 21 78 9e 09 c1 ae 50 44 af 26
+0e 50 54 20 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 30
+3d 1e 87 4c 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 47 20 48 44 52 20 35 4b 0a 20 20 20 01 db
+
+70 12 79 03 00 01 00 0c 40 1f e4 0c 00 14 70 08
+90 78 89 99 12 00 16 80 10 10 00 ff 09 6f 08 00
+00 00 00 00 47 53 4d 21 77 01 01 01 01 03 00 14
+f0 89 00 08 ff 09 4f 00 07 80 1f 00 6f 08 51 00
+00 00 07 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 32 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 30497
+    Serial Number: 320315
+    Made in: week 9 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 80 cm x 33 cm
+    Gamma: 2.20
+    DPMS levels: Standby
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3125
+    Green: 0.2675, 0.6845
+    Blue : 0.1513, 0.0546
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    Empty Descriptor
+    Empty Descriptor
+    Display Range Limits:
+      Monitor ranges (GTF): 48-61 Hz V, 30-135 kHz H, max dotclock 760 MHz
+    Display Product Name: 'LG HDR 5K'
+  Extension blocks: 1
+Checksum: 0xdb
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Standalone display device
+  Display Parameters Data Block (0x01):
+    Image size: 800.0 mm x 330.0 mm
+    Display native pixel format: 5120x2160
+    Feature support flags:
+      Power management (DPM)
+      Audio support on video interface
+    Gamma: 2.20
+    Aspect ratio: 2.37
+    Dynamic bpc native: 10
+    Dynamic bpc overall: 10
+  Tiled Display Topology Data Block (0x12):
+    Capabilities:
+      Behavior if it is the only tile: Undefined
+      Behavior if more than one tile and fewer than total number of tiles: Undefined
+    Tiled display consists of a single physical display enclosure
+    Num horizontal tiles: 2 Num vertical tiles: 1
+    Tile location: 1, 0
+    Tile resolution: 2560x2160
+    Tiled Display Manufacturer/Vendor ID: GSM
+    Tiled Display Product ID Code: 30497
+    Tiled Display Serial Number: 16843009
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x2160   59.661625 Hz   0:0    133.761 kHz    353.130000 MHz (aspect undefined, no 3D stereo)
+               Hfront    8 Hsync  32 Hback   40 Hpol P
+               Vfront    1 Vsync   8 Vback   73 Vpol N
+  Checksum: 0x32
+Checksum: 0x90
+
+

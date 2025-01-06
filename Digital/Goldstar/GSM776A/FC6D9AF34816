@@ -1,0 +1,145 @@
+
+EDID (hex):
+00ffffffffffff001e6d6a779374f7ff
+ff1f0103805123782a9f21af4f41ac26
+0e505421080001010101010101010101
+0101010101014ed470a0d0a046503020
+350029623100001a000000ff00234754
+49594d78677741424734000000fd0018
+781e963c010a202020202020000000fc
+0033344750393530470a2020202001e4
+020337f148101f04130312013f230907
+018301000068030c001000383c006ad8
+5dc401788000000278e305c000e2006a
+e606050178601fc87d70a0d0a0335030
+20350029623100001ac4b370a0d0a040
+503020350029623100001a796870a0d0
+a02e503020350029623100001a6fc200
+a0a0a055503020350029623100001aba
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 6a 77 93 74 f7 ff
+ff 1f 01 03 80 51 23 78 2a 9f 21 af 4f 41 ac 26
+0e 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4e d4 70 a0 d0 a0 46 50 30 20
+35 00 29 62 31 00 00 1a 00 00 00 ff 00 23 47 54
+49 59 4d 78 67 77 41 42 47 34 00 00 00 fd 00 18
+78 1e 96 3c 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 33 34 47 50 39 35 30 47 0a 20 20 20 20 01 e4
+
+02 03 37 f1 48 10 1f 04 13 03 12 01 3f 23 09 07
+01 83 01 00 00 68 03 0c 00 10 00 38 3c 00 6a d8
+5d c4 01 78 80 00 00 02 78 e3 05 c0 00 e2 00 6a
+e6 06 05 01 78 60 1f c8 7d 70 a0 d0 a0 33 50 30
+20 35 00 29 62 31 00 00 1a c4 b3 70 a0 d0 a0 40
+50 30 20 35 00 29 62 31 00 00 1a 79 68 70 a0 d0
+a0 2e 50 30 20 35 00 29 62 31 00 00 1a 6f c2 00
+a0 a0 a0 55 50 30 20 35 00 29 62 31 00 00 1a ba
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 30570
+    Serial Number: 4294407315
+    Model year: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 81 cm x 35 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6855, 0.3095
+    Green: 0.2568, 0.6748
+    Blue : 0.1484, 0.0566
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3440x1440   99.981604 Hz  43:18   150.972 kHz    543.500000 MHz (809 mm x 354 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   62 Vpol N
+    Display Product Serial Number: '#GTIYMxgwABG4'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 24-120 Hz V, 30-150 kHz H, max dotclock 600 MHz
+    Display Product Name: '34GP950G'
+  Extension blocks: 1
+Checksum: 0xe4
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    VRRmin: 2 Hz
+    VRRmax: 120 Hz
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 120 (672.717 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 31 (0.099 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  3440x1440   59.989567 Hz  43:18    89.444 kHz    322.000000 MHz (809 mm x 354 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   43 Vpol N
+    DTD 3:  3440x1440   84.995567 Hz  43:18   127.833 kHz    460.200000 MHz (809 mm x 354 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD 4:  3440x1440   49.994392 Hz  43:18    74.292 kHz    267.450000 MHz (809 mm x 354 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   38 Vpol N
+    DTD 5:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (809 mm x 354 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   77 Vpol N
+Checksum: 0xba

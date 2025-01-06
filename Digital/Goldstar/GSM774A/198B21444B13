@@ -1,0 +1,173 @@
+
+EDID (hex):
+00ffffffffffff001e6d4a776cb90800
+051f010380502178eaf4f4af4e42ac26
+0e50542109007140818081c0a9c0b300
+d1c08100d1cf30b870e0d0a04a503020
+3a00204f3100001a000000fd0030781e
+8239000a202020202020000000fc004c
+4720554c545241474541520a000000ff
+003130354e544a4a47543735360a013b
+020350f1230907074c1004031f13125d
+5e5f60613f830100006d030c002000b8
+3c20006001020368d85dc40178800300
+e30f00066d1a0000020530780004613d
+613de305c000e2006ae606050161613d
+336970aad0a0345030203a00204f3100
+001a6fc200a0a0a05550302035007a84
+3100001a000000000000000000000003
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 4a 77 6c b9 08 00
+05 1f 01 03 80 50 21 78 ea f4 f4 af 4e 42 ac 26
+0e 50 54 21 09 00 71 40 81 80 81 c0 a9 c0 b3 00
+d1 c0 81 00 d1 cf 30 b8 70 e0 d0 a0 4a 50 30 20
+3a 00 20 4f 31 00 00 1a 00 00 00 fd 00 30 78 1e
+82 39 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+47 20 55 4c 54 52 41 47 45 41 52 0a 00 00 00 ff
+00 31 30 35 4e 54 4a 4a 47 54 37 35 36 0a 01 3b
+
+02 03 50 f1 23 09 07 07 4c 10 04 03 1f 13 12 5d
+5e 5f 60 61 3f 83 01 00 00 6d 03 0c 00 20 00 b8
+3c 20 00 60 01 02 03 68 d8 5d c4 01 78 80 03 00
+e3 0f 00 06 6d 1a 00 00 02 05 30 78 00 04 61 3d
+61 3d e3 05 c0 00 e2 00 6a e6 06 05 01 61 61 3d
+33 69 70 aa d0 a0 34 50 30 20 3a 00 20 4f 31 00
+00 1a 6f c2 00 a0 a0 a0 55 50 30 20 35 00 7a 84
+31 00 00 1a 00 00 00 00 00 00 00 00 00 00 00 03
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 30538
+    Serial Number: 571756
+    Made in: week 5 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 80 cm x 33 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6865, 0.3076
+    Green: 0.2587, 0.6718
+    Blue : 0.1513, 0.0576
+    White: 0.3134, 0.3281
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    GTF     :  1920x1080   75.000068 Hz  16:9     84.600 kHz    220.637000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3440x1440   84.999971 Hz  43:18   128.690 kHz    471.520000 MHz (800 mm x 335 mm)
+                 Hfront   48 Hsync  32 Hback  144 Hpol P
+                 Vfront    3 Vsync  10 Vback   61 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 48-120 Hz V, 30-130 kHz H, max dotclock 570 MHz
+    Display Product Name: 'LG ULTRAGEAR'
+    Display Product Serial Number: '105NTJJGT756'
+  Extension blocks: 1
+Checksum: 0x3b
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+  YCbCr 4:2:0 Capability Map Data Block:
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.5
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 120 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x04
+    Maximum luminance: 97 (408.759 cd/m^2)
+    Minimum luminance: 61 (0.234 cd/m^2)
+    Maximum luminance (without local dimming): 97 (408.759 cd/m^2)
+    Minimum luminance (without local dimming): 61 (0.234 cd/m^2)
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 97 (408.759 cd/m^2)
+    Desired content max frame-average luminance: 97 (408.759 cd/m^2)
+    Desired content min luminance: 61 (0.234 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  3440x1440   50.000743 Hz  43:18    74.601 kHz    269.310000 MHz (800 mm x 335 mm)
+                 Hfront   48 Hsync  32 Hback   90 Hpol P
+                 Vfront    3 Vsync  10 Vback   39 Vpol N
+    DTD 3:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (890 mm x 388 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   77 Vpol N
+Checksum: 0x03  Unused space in Extension Block: 11 bytes
+
+

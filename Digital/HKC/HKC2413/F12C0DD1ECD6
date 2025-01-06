@@ -1,0 +1,139 @@
+
+EDID (hex):
+00ffffffffffff002163132400000000
+0121010380351d78ea2d36a75438ae26
+0d4f54adcf00d1c0b300950081800101
+010101010101023a801871382d40582c
+45000f282100001e000000fc004d4232
+345631330a2020202020000000fd0030
+4b1e5312000a202020202020000000ff
+003030303030303030303030303101c5
+02032bf146901f041303122309070783
+03000066030c00100080e2007f6d1a00
+000201304bed00000000004a23a0a050
+842930302035000f282100001e2a4480
+a070382740302035000f282100001e00
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000039
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 63 13 24 00 00 00 00
+01 21 01 03 80 35 1d 78 ea 2d 36 a7 54 38 ae 26
+0d 4f 54 ad cf 00 d1 c0 b3 00 95 00 81 80 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 fc 00 4d 42 32
+34 56 31 33 0a 20 20 20 20 20 00 00 00 fd 00 30
+4b 1e 53 12 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 30 30 30 30 30 30 30 30 30 30 30 30 31 01 c5
+
+02 03 2b f1 46 90 1f 04 13 03 12 23 09 07 07 83
+03 00 00 66 03 0c 00 10 00 80 e2 00 7f 6d 1a 00
+00 02 01 30 4b ed 00 00 00 00 00 4a 23 a0 a0 50
+84 29 30 30 20 35 00 0f 28 21 00 00 1e 2a 44 80
+a0 70 38 27 40 30 20 35 00 0f 28 21 00 00 1e 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 39
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HKC
+    Model: 9235
+    Made in: week 1 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 53 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6523, 0.3300
+    Green: 0.2216, 0.6806
+    Blue : 0.1484, 0.0537
+    White: 0.3095, 0.3300
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Name: 'MB24V13'
+    Display Range Limits:
+      Monitor ranges (GTF): 48-75 Hz V, 30-83 kHz H, max dotclock 180 MHz
+    Display Product Serial Number: '0000000000001'
+  Extension blocks: 1
+Checksum: 0xc5
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+    LFE1 - Low Frequency Effects 1
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 75 Hz
+    Flags 1.x: 0xed (MCCS)
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Detailed Timing Descriptors:
+    DTD 2:  1440x900    60.002657 Hz  16:10    56.462 kHz     90.340000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+    DTD 3:  1920x1080   74.972503 Hz  16:9     83.894 kHz    174.500000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   31 Vpol P
+Checksum: 0x39  Unused space in Extension Block: 48 bytes
+
+

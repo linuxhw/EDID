@@ -1,0 +1,129 @@
+
+EDID (hex):
+00ffffffffffff001e6d507716660100
+071f0104b5462878fa7ba1ae4f44a926
+0c5054210800d1c06140010101010101
+0101010101014dd000a0f0703e803020
+3500b9882100001a000000fd00283c1e
+873c000a202020202020000000fc004c
+472048445220344b0a202020000000ff
+003130374e54524c32503637300a01b5
+02031f72230907078301000044010304
+10e2006ae305c000e606050159595204
+740030f2705a80b0588a00b988210000
+1e565e00a0a0a0295030203500b98821
+00001a1a3680a070381f402a263500b9
+882100001a0000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000ea
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 50 77 16 66 01 00
+07 1f 01 04 b5 46 28 78 fa 7b a1 ae 4f 44 a9 26
+0c 50 54 21 08 00 d1 c0 61 40 01 01 01 01 01 01
+01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 b9 88 21 00 00 1a 00 00 00 fd 00 28 3c 1e
+87 3c 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+47 20 48 44 52 20 34 4b 0a 20 20 20 00 00 00 ff
+00 31 30 37 4e 54 52 4c 32 50 36 37 30 0a 01 b5
+
+02 03 1f 72 23 09 07 07 83 01 00 00 44 01 03 04
+10 e2 00 6a e3 05 c0 00 e6 06 05 01 59 59 52 04
+74 00 30 f2 70 5a 80 b0 58 8a 00 b9 88 21 00 00
+1e 56 5e 00 a0 a0 a0 29 50 30 20 35 00 b9 88 21
+00 00 1a 1a 36 80 a0 70 38 1f 40 2a 26 35 00 b9
+88 21 00 00 1a 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ea
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 30544
+    Serial Number: 91670
+    Made in: week 7 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 70 cm x 40 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6806, 0.3115
+    Green: 0.2675, 0.6630
+    Blue : 0.1503, 0.0488
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 40-60 Hz V, 30-135 kHz H, max dotclock 600 MHz
+    Display Product Name: 'LG HDR 4K'
+    Display Product Serial Number: '107NTRL2P670'
+  Extension blocks: 1
+Checksum: 0xb5
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 89 (343.724 cd/m^2)
+    Desired content max frame-average luminance: 89 (343.724 cd/m^2)
+    Desired content min luminance: 82 (0.355 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz (697 mm x 392 mm)
+                 Hfront  176 Hsync  88 Hback  296 Hpol P
+                 Vfront    8 Vsync  10 Vback   72 Vpol P
+    DTD 3:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 4:  1920x1080   59.933878 Hz  16:9     66.587 kHz    138.500000 MHz (697 mm x 392 mm)
+                 Hfront   42 Hsync  38 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+Checksum: 0xea  Unused space in Extension Block: 42 bytes
