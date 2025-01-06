@@ -1,0 +1,120 @@
+
+EDID (hex):
+00ffffffffffff0022f09a3201010101
+2519010380371f782aeed5a356509f26
+105054a10800d1c081c081809500a9c0
+b30001010101023a801871382d40582c
+450029372100001e000000fd00324c18
+5e11000a202020202020000000fc0048
+5020323576780a2020202020000000ff
+0033434d353337304a51300a2020013c
+020314b249909f041303021211016503
+0c001000023a801871382d40582c4500
+29372100001e023a80d072382d40102c
+458029372100001e011d007251d01e20
+6e28550029372100001e011d00bc52d0
+1e20b828554029372100001e8c0ad08a
+20e02d10103e96002937210000180000
+000000000000000000000000000000f3
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 9a 32 01 01 01 01
+25 19 01 03 80 37 1f 78 2a ee d5 a3 56 50 9f 26
+10 50 54 a1 08 00 d1 c0 81 c0 81 80 95 00 a9 c0
+b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 29 37 21 00 00 1e 00 00 00 fd 00 32 4c 18
+5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 32 35 76 78 0a 20 20 20 20 20 00 00 00 ff
+00 33 43 4d 35 33 37 30 4a 51 30 0a 20 20 01 3c
+
+02 03 14 b2 49 90 9f 04 13 03 02 12 11 01 65 03
+0c 00 10 00 02 3a 80 18 71 38 2d 40 58 2c 45 00
+29 37 21 00 00 1e 02 3a 80 d0 72 38 2d 40 10 2c
+45 80 29 37 21 00 00 1e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 29 37 21 00 00 1e 01 1d 00 bc 52 d0
+1e 20 b8 28 55 40 29 37 21 00 00 1e 8c 0a d0 8a
+20 e0 2d 10 10 3e 96 00 29 37 21 00 00 18 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f3
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HWP
+    Model: 12954
+    Serial Number: 16843009
+    Made in: week 37 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 55 cm x 31 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3378
+    Green: 0.3154, 0.6230
+    Blue : 0.1513, 0.0634
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (553 mm x 311 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-76 Hz V, 24-94 kHz H, max dotclock 170 MHz
+    Display Product Name: 'HP 25vx'
+    Display Product Serial Number: '3CM5370JQ0'
+  Extension blocks: 1
+Checksum: 0x3c
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (553 mm x 311 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 3:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (553 mm x 311 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (553 mm x 311 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (553 mm x 311 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 6:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (553 mm x 311 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0xf3  Unused space in Extension Block: 17 bytes

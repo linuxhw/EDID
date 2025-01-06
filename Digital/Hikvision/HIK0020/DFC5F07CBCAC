@@ -1,0 +1,119 @@
+
+EDID (hex):
+00ffffffffffff00212b200031303030
+1f180103804f00782aa220a656489a24
+12505421080081c0814081809500b300
+a9c081000101023a801871382d40582c
+4500dd0c1100001e662156aa51001e30
+468f3300dd0c1100001f000000fc0048
+494b564953494f4e20202020000000ff
+00415057423248413032353330300102
+02031d314d82050401101114131f0615
+03126c030c001000882dc00000000000
+ff000a20202020202020202020202000
+0000ff000a2020202020202020202020
+20000000ff000a202020202020202020
+20202000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000a2
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 2b 20 00 31 30 30 30
+1f 18 01 03 80 4f 00 78 2a a2 20 a6 56 48 9a 24
+12 50 54 21 08 00 81 c0 81 40 81 80 95 00 b3 00
+a9 c0 81 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 dd 0c 11 00 00 1f 00 00 00 fc 00 48
+49 4b 56 49 53 49 4f 4e 20 20 20 20 00 00 00 ff
+00 41 50 57 42 32 48 41 30 32 35 33 30 30 01 02
+
+02 03 1d 31 4d 82 05 04 01 10 11 14 13 1f 06 15
+03 12 6c 03 0c 00 10 00 88 2d c0 00 00 00 00 00
+ff 00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00
+00 00 ff 00 0a 20 20 20 20 20 20 20 20 20 20 20
+20 00 00 00 ff 00 0a 20 20 20 20 20 20 20 20 20
+20 20 20 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HIK
+    Model: 32
+    Serial Number: 808464433
+    Made in: week 31 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3378
+    Green: 0.2812, 0.6035
+    Blue : 0.1406, 0.0722
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (477 mm x 268 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    Display Product Name: 'HIKVISION    '
+    Display Product Serial Number: 'APWB2HA025300'
+  Extension blocks: 1
+Checksum: 0x02
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+    Video latency: Unknown
+    Audio latency: Unknown
+    Interlaced video latency: Unknown
+    Interlaced audio latency: Unknown
+  Detailed Timing Descriptors:
+    Display Product Serial Number: ''
+    Display Product Serial Number: ''
+    Display Product Serial Number: ''
+Checksum: 0xa2  Unused space in Extension Block: 44 bytes

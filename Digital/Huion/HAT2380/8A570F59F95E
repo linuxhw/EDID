@@ -1,0 +1,122 @@
+
+EDID (hex):
+00ffffffffffff002034802300000000
+3220010380351d783eee91a3544c9926
+0f5054210800d1c0a9c081c001010101
+010101010101565e00a0a0a029503020
+35000f282100001a000000ff0064656d
+6f7365742d310a202020000000fc004b
+616d766173203234706c7573000000fd
+00304b1e6e1e000a202020202020013d
+02031cb34801031304451f104ce200d5
+e305c00067030c001000383dae4e00a0
+a0a02950302035000f282100001a023a
+801871382d40582c45000f282100001e
+011d007251d01e206e2855000f282100
+001e0000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000ea
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 20 34 80 23 00 00 00 00
+32 20 01 03 80 35 1d 78 3e ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 d1 c0 a9 c0 81 c0 01 01 01 01
+01 01 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 0f 28 21 00 00 1a 00 00 00 ff 00 64 65 6d
+6f 73 65 74 2d 31 0a 20 20 20 00 00 00 fc 00 4b
+61 6d 76 61 73 20 32 34 70 6c 75 73 00 00 00 fd
+00 30 4b 1e 6e 1e 00 0a 20 20 20 20 20 20 01 3d
+
+02 03 1c b3 48 01 03 13 04 45 1f 10 4c e2 00 d5
+e3 05 c0 00 67 03 0c 00 10 00 38 3d ae 4e 00 a0
+a0 a0 29 50 30 20 35 00 0f 28 21 00 00 1a 02 3a
+80 18 71 38 2d 40 58 2c 45 00 0f 28 21 00 00 1e
+01 1d 00 72 51 d0 1e 20 6e 28 55 00 0f 28 21 00
+00 1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ea
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HAT
+    Model: 9088
+    Made in: week 50 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 53 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Undefined display color type
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    Display Product Serial Number: 'demoset-1'
+    Display Product Name: 'Kamvas 24plus'
+    Display Range Limits:
+      Monitor ranges (GTF): 48-75 Hz V, 30-110 kHz H, max dotclock 300 MHz
+  Extension blocks: 1
+Checksum: 0x3d
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 3
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  69:  1280x720    60.000000 Hz  64:27    45.000 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  76:  1920x1080   60.000000 Hz  64:27    67.500 kHz    148.500000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Overscanned
+    IT scan behavior: Always Overscanned
+    CE scan behavior: Always Overscanned
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 305 MHz
+  Detailed Timing Descriptors:
+    DTD 2:  2560x1440   50.000993 Hz  16:9     74.051 kHz    201.420000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (527 mm x 296 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0xea  Unused space in Extension Block: 45 bytes

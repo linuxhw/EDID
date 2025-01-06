@@ -1,0 +1,140 @@
+
+EDID (hex):
+00ffffffffffff0022f60f4e01008001
+1a1f0104b53c2878380c95ae5243ae26
+0f505421080081008180010101010101
+01010101010178c80050f0003da00820
+f808548d2100001a000000ff00536572
+69616c204e756d626572000000fd0030
+4b2db445000a202020202020000000fc
+004d61746553746174696f6e20580117
+020323f4480405105f615d5e60230907
+0783010000e305c000e60605016a6a00
+e200ca785070a080a0295030203a0054
+8d2100001a565e00a0a0a02950302035
+00548d2100001a5898b8a0b0d0397030
+203a00548d2100001aca9e0050f5002e
+a008a03a50548d2100001cc7f600a0f0
+0049a030203a00548d2100001a00004d
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f6 0f 4e 01 00 80 01
+1a 1f 01 04 b5 3c 28 78 38 0c 95 ae 52 43 ae 26
+0f 50 54 21 08 00 81 00 81 80 01 01 01 01 01 01
+01 01 01 01 01 01 78 c8 00 50 f0 00 3d a0 08 20
+f8 08 54 8d 21 00 00 1a 00 00 00 ff 00 53 65 72
+69 61 6c 20 4e 75 6d 62 65 72 00 00 00 fd 00 30
+4b 2d b4 45 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4d 61 74 65 53 74 61 74 69 6f 6e 20 58 01 17
+
+02 03 23 f4 48 04 05 10 5f 61 5d 5e 60 23 09 07
+07 83 01 00 00 e3 05 c0 00 e6 06 05 01 6a 6a 00
+e2 00 ca 78 50 70 a0 80 a0 29 50 30 20 3a 00 54
+8d 21 00 00 1a 56 5e 00 a0 a0 a0 29 50 30 20 35
+00 54 8d 21 00 00 1a 58 98 b8 a0 b0 d0 39 70 30
+20 3a 00 54 8d 21 00 00 1a ca 9e 00 50 f5 00 2e
+a0 08 a0 3a 50 54 8d 21 00 00 1c c7 f6 00 a0 f0
+00 49 a0 30 20 3a 00 54 8d 21 00 00 1a 00 00 4d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HWV
+    Model: 19983
+    Serial Number: 25165825
+    Made in: week 26 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 40 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing does not include the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2646, 0.6796
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2560   49.949778 Hz   3:2    130.918 kHz    513.200000 MHz (596 mm x 397 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront   47 Vsync   8 Vback    6 Vpol N
+    Display Product Serial Number: 'Serial Number'
+    Display Range Limits:
+      Monitor ranges (GTF): 48-75 Hz V, 45-180 kHz H, max dotclock 690 MHz
+    Display Product Name: 'MateStation X'
+  Extension blocks: 1
+Checksum: 0x17
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 4
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 106 (496.743 cd/m^2)
+    Desired content max frame-average luminance: 106 (496.743 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Detailed Timing Descriptors:
+    DTD 2:  2160x1440   59.954830 Hz   3:2     88.793 kHz    206.000000 MHz (596 mm x 397 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   28 Vpol N
+    DTD 3:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (596 mm x 397 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 4:  3000x2000   59.998892 Hz   3:2    123.418 kHz    390.000000 MHz (596 mm x 397 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   44 Vpol N
+    DTD 5:  3840x2560   29.997343 Hz   3:2     78.173 kHz    406.500000 MHz (596 mm x 397 mm)
+                 Hfront  264 Hsync 416 Hback  680 Hpol N
+                 Vfront    3 Vsync  10 Vback   33 Vpol P
+    DTD 6:  3840x2560   59.983859 Hz   3:2    157.938 kHz    631.750000 MHz (596 mm x 397 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   60 Vpol N
+Checksum: 0x4d  Unused space in Extension Block: 2 bytes
