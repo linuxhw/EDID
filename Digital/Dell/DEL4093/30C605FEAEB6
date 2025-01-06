@@ -1,0 +1,96 @@
+
+EDID (hex):
+00ffffffffffff0010ac934050343031
+2b180104b54627783a73e0a35336b626
+0d515300000001010101010101010101
+0101010101014d6c80a070703e803020
+3a00ba882100001a000000ff004b3352
+393034414e313034500a000000fc0044
+454c4c20555033323134510a000000fd
+001d4b1f8c1e000a20202020202001f2
+7012790000120016821010007f076f08
+000000000044454c9340503430310000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000002190
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 93 40 50 34 30 31
+2b 18 01 04 b5 46 27 78 3a 73 e0 a3 53 36 b6 26
+0d 51 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4d 6c 80 a0 70 70 3e 80 30 20
+3a 00 ba 88 21 00 00 1a 00 00 00 ff 00 4b 33 52
+39 30 34 41 4e 31 30 34 50 0a 00 00 00 fc 00 44
+45 4c 4c 20 55 50 33 32 31 34 51 0a 00 00 00 fd
+00 1d 4b 1f 8c 1e 00 0a 20 20 20 20 20 20 01 f2
+
+70 12 79 00 00 12 00 16 82 10 10 00 7f 07 6f 08
+00 00 00 00 00 44 45 4c 93 40 50 34 30 31 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 21 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 16531
+    Serial Number: 825242704
+    Made in: week 43 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 70 cm x 39 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6376, 0.3271
+    Green: 0.2109, 0.7138
+    Blue : 0.1513, 0.0527
+    White: 0.3164, 0.3242
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x2160   59.987970 Hz   8:9    133.293 kHz    277.250000 MHz (698 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   49 Vpol N
+    Display Product Serial Number: 'K3R904AN104P'
+    Display Product Name: 'DELL UP3214Q'
+    Display Range Limits:
+      Monitor ranges (GTF): 29-75 Hz V, 31-140 kHz H, max dotclock 300 MHz
+  Extension blocks: 1
+Checksum: 0xf2
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Tiled Display Topology Data Block (0x12):
+    Capabilities:
+      Behavior if it is the only tile: Image is scaled to fit the entire tiled display
+      Behavior if more than one tile and fewer than total number of tiles: Undefined
+    Tiled display consists of a single physical display enclosure
+    Num horizontal tiles: 2 Num vertical tiles: 1
+    Tile location: 1, 0
+    Tile resolution: 1920x2160
+    Tiled Display Manufacturer/Vendor ID: DEL
+    Tiled Display Product ID Code: 16531
+    Tiled Display Serial Number: 825242704
+  Checksum: 0x21
+Checksum: 0x90
+
+
