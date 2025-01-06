@@ -1,0 +1,127 @@
+
+EDID (hex):
+00ffffffffffff00148f4201304e3143
+2a220104b51e1478037461af503cba23
+0b505400000001010101010101010101
+01010101010100000011000000000000
+0000000000000000000000fd003078f6
+f664010a202020202020000000fc0045
+444f3134320a202020202020000000fe
+0044503430312d5356330a202020012e
+702079020020000c848a598e00000000
+0000170021001db80bd007400b800700
+f4ca50c403ba34820b0045541e5fee5f
+191c2378260009070703000000500000
+220014ff2f0c883f0b71019b001f007f
+077f001700050081000be305f200e606
+05016b66070000000000000000000000
+0000000000000000000000000000b190
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 14 8f 42 01 30 4e 31 43
+2a 22 01 04 b5 1e 14 78 03 74 61 af 50 3c ba 23
+0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 11 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 fd 00 30 78 f6
+f6 64 01 0a 20 20 20 20 20 20 00 00 00 fc 00 45
+44 4f 31 34 32 0a 20 20 20 20 20 20 00 00 00 fe
+00 44 50 34 30 31 2d 53 56 33 0a 20 20 20 01 2e
+
+70 20 79 02 00 20 00 0c 84 8a 59 8e 00 00 00 00
+00 00 17 00 21 00 1d b8 0b d0 07 40 0b 80 07 00
+f4 ca 50 c4 03 ba 34 82 0b 00 45 54 1e 5f ee 5f
+19 1c 23 78 26 00 09 07 07 03 00 00 00 50 00 00
+22 00 14 ff 2f 0c 88 3f 0b 71 01 9b 00 1f 00 7f
+07 7f 00 17 00 05 00 81 00 0b e3 05 f2 00 e6 06
+05 01 6b 66 07 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 b1 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: EDO
+    Model: 322
+    Serial Number: 1127304752
+    Made in: week 42 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 30 cm x 20 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6845, 0.3154
+    Green: 0.2353, 0.7265
+    Blue : 0.1376, 0.0449
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    Unknown Display Descriptor (0x11): 00 11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-120 Hz V, 246-246 kHz H, max dotclock 1000 MHz
+    Display Product Name: 'EDO142'
+    Alphanumeric Data String: 'DP401-SV3'
+  Extension blocks: 1
+Checksum: 0x2e
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Product Identification Data Block (0x20), OUI 84-8A-59:
+    Product Code: 142
+    Year of Manufacture: 2023
+  Display Parameters Data Block (0x21):
+    Image size: 300.0 mm x 200.0 mm
+    Display native pixel format: 2880x1920
+    Scan Orientation: Left to Right, Top to Bottom
+    Luminance Information: Minimum guaranteed value
+    Color Information: CIE 1931
+    Audio Speaker Information: integrated
+    Native Color Chromaticity:
+      Primary #1:  (0.684570, 0.315430)
+      Primary #2:  (0.235352, 0.726562)
+      Primary #3:  (0.137695, 0.044922)
+      White Point: (0.312500, 0.329102)
+    Native Maximum Luminance (Full Coverage): 455.500000 cd/m^2
+    Native Maximum Luminance (10% Rectangular Coverage): 507.500000 cd/m^2
+    Native Minimum Luminance: 0.004002 cd/m^2
+    Native Color Depth: 12 bpc
+    Display Device Technology: Organic LED
+    Native Gamma EOTF: 2.20
+  Display Interface Features Data Block:
+    Supported bpc for RGB encoding: 6, 8, 10
+    Supported bpc for YCbCr 4:4:4 encoding: 6, 8, 10
+    Supported bpc for YCbCr 4:2:2 encoding: 8, 10
+    Supported color space and EOTF standard combination 1: DCI-P3, BT.2020/SMPTE ST 2084
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2880x1920  120.000000 Hz   0:0    245.760 kHz    798.720000 MHz (aspect undefined, no 3D stereo, preferred)
+               Hfront  156 Hsync  32 Hback  182 Hpol N
+               Vfront   24 Vsync   6 Vback   98 Vpol N
+  CTA-861 DisplayID Data Block:
+  Colorimetry Data Block:
+    xvYCC709
+    opRGB
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 107 (507.620 cd/m^2)
+    Desired content max frame-average luminance: 102 (455.515 cd/m^2)
+    Desired content min luminance: 7 (0.004 cd/m^2)
+  Checksum: 0xb1
+Checksum: 0x90

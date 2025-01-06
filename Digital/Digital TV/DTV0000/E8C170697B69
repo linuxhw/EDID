@@ -1,0 +1,112 @@
+
+EDID (hex):
+00ffffffffffff001296000001010101
+04170103804c2d780a0dc9a057479827
+12484c21080001010101010101010101
+010101010101023a801871382d40582c
+450044402100001e011d007251d01e20
+6e28550044402100001e000000fc0020
+202020204454562020202020000000fd
+0032550e4610000a202020202020011e
+02031b61230907078301000067030c00
+2000802d43908402e2000f8c0ad08a20
+e02d10103e9600a05a00000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000029
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 12 96 00 00 01 01 01 01
+04 17 01 03 80 4c 2d 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 44 40 21 00 00 1e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 44 40 21 00 00 1e 00 00 00 fc 00 20
+20 20 20 20 44 54 56 20 20 20 20 20 00 00 00 fd
+00 32 55 0e 46 10 00 0a 20 20 20 20 20 20 01 1e
+
+02 03 1b 61 23 09 07 07 83 01 00 00 67 03 0c 00
+20 00 80 2d 43 90 84 02 e2 00 0f 8c 0a d0 8a 20
+e0 2d 10 10 3e 96 00 a0 5a 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 29
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: DTV
+    Model: 0
+    Serial Number: 16843009
+    Made in: week 4 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 76 cm x 45 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (580 mm x 320 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (580 mm x 320 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    Display Product Name: '     DTV     '
+    Display Range Limits:
+      Monitor ranges (GTF): 50-85 Hz V, 14-70 kHz H, max dotclock 160 MHz
+  Extension blocks: 1
+Checksum: 0x1e
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 225 MHz
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (analog composite, sync-on-green, 160 mm x 90 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x29  Unused space in Extension Block: 82 bytes
+
+

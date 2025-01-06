@@ -1,0 +1,158 @@
+
+EDID (hex):
+00ffffffffffff003103ffff00000000
+0a21010380502178af5db5ad4f47a727
+115054250a00d1c06140010101010101
+010101010101f57c70a0d0a029503020
+35001d4e3100001a426c7018d1a03250
+583035001d4e3100001a000000fd0030
+781eaf3c000a202020202020000000fc
+00434533344154494c4955530a20015e
+020343f14a01020304901112131f3f23
+090707830100006a030c001000384220
+000067d85dc4017880036d1a00000201
+3078ed0000000000e305c000e6060701
+635d0d84d87018d1a03250302035001d
+4e3100001e6a5e00a0a0a02950302035
+001d4e3100001a70c200a0a0a0555030
+2035001d4e3100001a00000000000026
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 31 03 ff ff 00 00 00 00
+0a 21 01 03 80 50 21 78 af 5d b5 ad 4f 47 a7 27
+11 50 54 25 0a 00 d1 c0 61 40 01 01 01 01 01 01
+01 01 01 01 01 01 f5 7c 70 a0 d0 a0 29 50 30 20
+35 00 1d 4e 31 00 00 1a 42 6c 70 18 d1 a0 32 50
+58 30 35 00 1d 4e 31 00 00 1a 00 00 00 fd 00 30
+78 1e af 3c 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 45 33 34 41 54 49 4c 49 55 53 0a 20 01 5e
+
+02 03 43 f1 4a 01 02 03 04 90 11 12 13 1f 3f 23
+09 07 07 83 01 00 00 6a 03 0c 00 10 00 38 42 20
+00 00 67 d8 5d c4 01 78 80 03 6d 1a 00 00 02 01
+30 78 ed 00 00 00 00 00 e3 05 c0 00 e6 06 07 01
+63 5d 0d 84 d8 70 18 d1 a0 32 50 30 20 35 00 1d
+4e 31 00 00 1e 6a 5e 00 a0 a0 a0 29 50 30 20 35
+00 1d 4e 31 00 00 1a 70 c2 00 a0 a0 a0 55 50 30
+20 35 00 1d 4e 31 00 00 1a 00 00 00 00 00 00 26
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LHC
+    Model: 65535
+    Made in: week 10 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 80 cm x 33 cm
+    Gamma: 2.20
+    DPMS levels: Standby Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+    Supports GTF timings within operating range
+  Color Characteristics:
+    Red  : 0.6767, 0.3095
+    Green: 0.2802, 0.6533
+    Blue : 0.1542, 0.0693
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3440x1440   59.998875 Hz  43:18    88.858 kHz    319.890000 MHz (797 mm x 334 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 2:  3440x1440   50.000000 Hz  43:18    74.500 kHz    277.140000 MHz (797 mm x 334 mm)
+                 Hfront   88 Hsync  48 Hback  144 Hpol P
+                 Vfront    3 Vsync   5 Vback   42 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 48-120 Hz V, 30-175 kHz H, max dotclock 600 MHz
+    Display Product Name: 'CE34ATILIUS'
+  Extension blocks: 1
+Checksum: 0x5e
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 330 MHz
+    Extended HDMI video details:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 120 Hz
+    Flags 1.x: 0xed (MCCS)
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 99 (426.856 cd/m^2)
+    Desired content max frame-average luminance: 93 (374.834 cd/m^2)
+    Desired content min luminance: 13 (0.011 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 3:  3440x1440  100.000000 Hz  43:18   149.000 kHz    554.280000 MHz (797 mm x 334 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    3 Vsync   5 Vback   42 Vpol P
+    DTD 4:  2560x1440   60.000199 Hz  16:9     88.860 kHz    241.700000 MHz (797 mm x 334 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 5:  2560x1440  120.000000 Hz  16:9    183.000 kHz    497.760000 MHz (797 mm x 334 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   77 Vpol N
+Checksum: 0x26  Unused space in Extension Block: 6 bytes
+
+

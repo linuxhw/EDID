@@ -1,0 +1,162 @@
+
+EDID (hex):
+00ffffffffffff003103ffff00000000
+04200103804628782e7690a8544d9f25
+0e5054230800a9408140818081c09500
+b300d1c00101286800a0f0703e803020
+3500ba892100001a000000fd00303c1e
+8c3c000a202020202020000000fc0033
+32433155460a202020202020000000ff
+0030303030303030303030303030014d
+020347f34e10050403026116011f1213
+065f1123090707830100006a030c0010
+00387820000067d85dc40178c000e305
+e301e40f203001681a00000101303ced
+e606070165591ff974801871705a8030
+203500ba892100001a565e00a0a0a029
+5030203500ba892100001a0000000000
+000000000000000000000000000000e2
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 31 03 ff ff 00 00 00 00
+04 20 01 03 80 46 28 78 2e 76 90 a8 54 4d 9f 25
+0e 50 54 23 08 00 a9 40 81 40 81 80 81 c0 95 00
+b3 00 d1 c0 01 01 28 68 00 a0 f0 70 3e 80 30 20
+35 00 ba 89 21 00 00 1a 00 00 00 fd 00 30 3c 1e
+8c 3c 00 0a 20 20 20 20 20 20 00 00 00 fc 00 33
+32 43 31 55 46 0a 20 20 20 20 20 20 00 00 00 ff
+00 30 30 30 30 30 30 30 30 30 30 30 30 30 01 4d
+
+02 03 47 f3 4e 10 05 04 03 02 61 16 01 1f 12 13
+06 5f 11 23 09 07 07 83 01 00 00 6a 03 0c 00 10
+00 38 78 20 00 00 67 d8 5d c4 01 78 c0 00 e3 05
+e3 01 e4 0f 20 30 01 68 1a 00 00 01 01 30 3c ed
+e6 06 07 01 65 59 1f f9 74 80 18 71 70 5a 80 30
+20 35 00 ba 89 21 00 00 1a 56 5e 00 a0 a0 a0 29
+50 30 20 35 00 ba 89 21 00 00 1a 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 e2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LHC
+    Model: 65535
+    Made in: week 4 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 70 cm x 40 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6572, 0.3310
+    Green: 0.3017, 0.6230
+    Blue : 0.1464, 0.0556
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   30.000000 Hz  16:9     66.660 kHz    266.640000 MHz (698 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 48-60 Hz V, 30-140 kHz H, max dotclock 600 MHz
+    Display Product Name: '32C1UF'
+    Display Product Serial Number: '0000000000000'
+  Extension blocks: 1
+Checksum: 0x4d
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 3
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 600 MHz
+    Extended HDMI video details:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    SCDC Read Request Capable
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+    Gamut Boundary Description Metadata Profile P0
+  YCbCr 4:2:0 Capability Map Data Block:
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    SVD Index 17 is out of range
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0xed (MCCS)
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 101 (445.755 cd/m^2)
+    Desired content max frame-average luminance: 89 (343.724 cd/m^2)
+    Desired content min luminance: 31 (0.066 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x2160   60.494949 Hz   8:9    136.114 kHz    299.450000 MHz (698 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    3 Vsync   5 Vback   82 Vpol N
+    DTD 3:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (698 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+Checksum: 0xe2  Unused space in Extension Block: 20 bytes

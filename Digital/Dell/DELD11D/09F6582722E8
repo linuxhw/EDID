@@ -1,0 +1,136 @@
+
+EDID (hex):
+00ffffffffffff0010ac1dd156365a30
+1b20010380462778ea66d5ac4f47a727
+115054a54b00714f8180a9c0d1c00101
+010101010101023a801871382d40582c
+4500ba892100001e000000ff00474443
+4a5144330a2020202020000000fc0044
+454c4c205333323232484e0a000000fd
+00304b1e5312000a2020202020200188
+020328f14c9005040302071601141f12
+13230907078301000065030c00100068
+1a00000101304be62a4480a070382740
+30203500ba892100001a011d8018711c
+1620582c2500ba892100009e011d0072
+51d01e206e285500ba892100001e8c0a
+d08a20e02d10103e9600ba8921000018
+000000000000000000000000000000ae
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 1d d1 56 36 5a 30
+1b 20 01 03 80 46 27 78 ea 66 d5 ac 4f 47 a7 27
+11 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 ba 89 21 00 00 1e 00 00 00 ff 00 47 44 43
+4a 51 44 33 0a 20 20 20 20 20 00 00 00 fc 00 44
+45 4c 4c 20 53 33 32 32 32 48 4e 0a 00 00 00 fd
+00 30 4b 1e 53 12 00 0a 20 20 20 20 20 20 01 88
+
+02 03 28 f1 4c 90 05 04 03 02 07 16 01 14 1f 12
+13 23 09 07 07 83 01 00 00 65 03 0c 00 10 00 68
+1a 00 00 01 01 30 4b e6 2a 44 80 a0 70 38 27 40
+30 20 35 00 ba 89 21 00 00 1a 01 1d 80 18 71 1c
+16 20 58 2c 25 00 ba 89 21 00 00 9e 01 1d 00 72
+51 d0 1e 20 6e 28 55 00 ba 89 21 00 00 1e 8c 0a
+d0 8a 20 e0 2d 10 10 3e 96 00 ba 89 21 00 00 18
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ae
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 53533
+    Serial Number: 811218518
+    Made in: week 27 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 70 cm x 39 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6728, 0.3105
+    Green: 0.2783, 0.6542
+    Blue : 0.1552, 0.0673
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (698 mm x 393 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: 'GDCJQD3'
+    Display Product Name: 'DELL S3222HN'
+    Display Range Limits:
+      Monitor ranges (GTF): 48-75 Hz V, 30-83 kHz H, max dotclock 180 MHz
+  Extension blocks: 1
+Checksum: 0x88
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 75 Hz
+    Flags 1.x: 0xe6 (MCCS)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   74.972503 Hz  16:9     83.894 kHz    174.500000 MHz (698 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   31 Vpol N
+    DTD 3:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (698 mm x 393 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (698 mm x 393 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (698 mm x 393 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0xae  Unused space in Extension Block: 15 bytes
