@@ -1,0 +1,120 @@
+
+EDID (hex):
+00ffffffffffff001e6df55b89570200
+0a200104b52f34789e2405af4f42ab25
+0f5054210800d1c06140010101010101
+010101010101c5bc00a0a04052b03020
+3a00d10b1200001a000000fd003b3d1e
+b231000a202020202020000000fc004c
+472053445148440a20202020000000ff
+003231304e54545134483438310a011a
+0203207123090707480103049012131f
+2283010000e305c000e6060501525251
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000d7
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d f5 5b 89 57 02 00
+0a 20 01 04 b5 2f 34 78 9e 24 05 af 4f 42 ab 25
+0f 50 54 21 08 00 d1 c0 61 40 01 01 01 01 01 01
+01 01 01 01 01 01 c5 bc 00 a0 a0 40 52 b0 30 20
+3a 00 d1 0b 12 00 00 1a 00 00 00 fd 00 3b 3d 1e
+b2 31 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+47 20 53 44 51 48 44 0a 20 20 20 20 00 00 00 ff
+00 32 31 30 4e 54 54 51 34 48 34 38 31 0a 01 1a
+
+02 03 20 71 23 09 07 07 48 01 03 04 90 12 13 1f
+22 83 01 00 00 e3 05 c0 00 e6 06 05 01 52 52 51
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 d7
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 23541
+    Serial Number: 153481
+    Made in: week 10 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 47 cm x 52 cm
+    Gamma: 2.20
+    DPMS levels: Standby
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6835, 0.3105
+    Green: 0.2587, 0.6679
+    Blue : 0.1445, 0.0585
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x2880   59.981580 Hz   8:9    177.665 kHz    483.250000 MHz (465 mm x 523 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   69 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 59-61 Hz V, 30-178 kHz H, max dotclock 490 MHz
+    Display Product Name: 'LG SDQHD'
+    Display Product Serial Number: '210NTTQ4H481'
+  Extension blocks: 1
+Checksum: 0x1a
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 82 (295.365 cd/m^2)
+    Desired content max frame-average luminance: 82 (295.365 cd/m^2)
+    Desired content min luminance: 81 (0.298 cd/m^2)
+Checksum: 0xd7  Unused space in Extension Block: 95 bytes
+
+

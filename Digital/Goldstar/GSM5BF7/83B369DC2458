@@ -1,0 +1,146 @@
+
+EDID (hex):
+00ffffffffffff001e6df75b508e0200
+0521010380431c78eee265a6544ba326
+0f5054210800d1c00101010101010101
+010101010101cd4600a0a0381f403020
+3a00a11c2100001a023a801871382d40
+582c4500a11c2100001e000000fd0038
+641e731e010a202020202020000000fc
+004c4720554c545241574944450a0171
+020333f323090707830100004d5a5910
+1f2220041203015d5e5f6d030c001000
+b83c200060010203e305c000e6060501
+4a4a562d75008ca0381f400820c800a1
+1c2100001a295900a0a038274030203a
+00a11c2100001a565e00a0a0a0295030
+203500a11c2100001a000000ff003330
+354e54414234583530340a0000000043
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d f7 5b 50 8e 02 00
+05 21 01 03 80 43 1c 78 ee e2 65 a6 54 4b a3 26
+0f 50 54 21 08 00 d1 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 cd 46 00 a0 a0 38 1f 40 30 20
+3a 00 a1 1c 21 00 00 1a 02 3a 80 18 71 38 2d 40
+58 2c 45 00 a1 1c 21 00 00 1e 00 00 00 fd 00 38
+64 1e 73 1e 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 47 20 55 4c 54 52 41 57 49 44 45 0a 01 71
+
+02 03 33 f3 23 09 07 07 83 01 00 00 4d 5a 59 10
+1f 22 20 04 12 03 01 5d 5e 5f 6d 03 0c 00 10 00
+b8 3c 20 00 60 01 02 03 e3 05 c0 00 e6 06 05 01
+4a 4a 56 2d 75 00 8c a0 38 1f 40 08 20 c8 00 a1
+1c 21 00 00 1a 29 59 00 a0 a0 38 27 40 30 20 3a
+00 a1 1c 21 00 00 1a 56 5e 00 a0 a0 a0 29 50 30
+20 35 00 a1 1c 21 00 00 1a 00 00 00 ff 00 33 30
+35 4e 54 41 42 34 58 35 30 34 0a 00 00 00 00 43
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 23543
+    Serial Number: 167504
+    Made in: week 5 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 67 cm x 28 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6513, 0.3300
+    Green: 0.2929, 0.6386
+    Blue : 0.1494, 0.0605
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1080   59.978424 Hz  64:27    66.636 kHz    181.250000 MHz (673 mm x 284 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   18 Vpol N
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (673 mm x 284 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 56-100 Hz V, 30-115 kHz H, max dotclock 300 MHz
+    Display Product Name: 'LG ULTRAWIDE'
+  Extension blocks: 1
+Checksum: 0x71
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 3
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Data Block:
+    VIC  90:  2560x1080   60.000000 Hz  64:27    66.000 kHz    198.000000 MHz
+    VIC  89:  2560x1080   50.000000 Hz  64:27    56.250 kHz    185.625000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 74 (248.372 cd/m^2)
+    Desired content max frame-average luminance: 74 (248.372 cd/m^2)
+    Desired content min luminance: 86 (0.282 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 3:  2560x1080  100.000000 Hz  64:27   111.100 kHz    299.970000 MHz (673 mm x 284 mm)
+                 Hfront    8 Hsync  32 Hback  100 Hpol P
+                 Vfront   12 Vsync   8 Vback   11 Vpol N
+    DTD 4:  2560x1080   74.991458 Hz  64:27    83.915 kHz    228.250000 MHz (673 mm x 284 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   26 Vpol N
+    DTD 5:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (673 mm x 284 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    Display Product Serial Number: '305NTAB4X504'
+Checksum: 0x43  Unused space in Extension Block: 4 bytes
