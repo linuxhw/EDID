@@ -1,0 +1,120 @@
+
+EDID (hex):
+00ffffffffffff004a8b000001010101
+001b010380221378ea3d85a6564a9a24
+12505421080081c00101010101010101
+010101010101662156aa51001e30468f
+330058c21000001e342150b051001b30
+407036009a041100001e000000fd0039
+3f1e500b000a202020202020000000ff
+00000a202020202020202020202001c7
+020320f14b101f051404130312021101
+230907078301000067030c001000383c
+0000001000382d40582c4500c48f2100
+001e0000001000d01e206e285500c48f
+2100001e0000001000e02d10103e9600
+c48f2100001800000010004031200c40
+5500c48f210000180000001000a03550
+60883a00c48f2100001c000000000062
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4a 8b 00 00 01 01 01 01
+00 1b 01 03 80 22 13 78 ea 3d 85 a6 56 4a 9a 24
+12 50 54 21 08 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 58 c2 10 00 00 1e 34 21 50 b0 51 00 1b 30
+40 70 36 00 9a 04 11 00 00 1e 00 00 00 fd 00 39
+3f 1e 50 0b 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 00 0a 20 20 20 20 20 20 20 20 20 20 20 01 c7
+
+02 03 20 f1 4b 10 1f 05 14 04 13 03 12 02 11 01
+23 09 07 07 83 01 00 00 67 03 0c 00 10 00 38 3c
+00 00 00 10 00 38 2d 40 58 2c 45 00 c4 8f 21 00
+00 1e 00 00 00 10 00 d0 1e 20 6e 28 55 00 c4 8f
+21 00 00 1e 00 00 00 10 00 e0 2d 10 10 3e 96 00
+c4 8f 21 00 00 18 00 00 00 10 00 40 31 20 0c 40
+55 00 c4 8f 21 00 00 18 00 00 00 10 00 a0 35 50
+60 88 3a 00 c4 8f 21 00 00 1c 00 00 00 00 00 62
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: RTK
+    Model: 0
+    Serial Number: 16843009
+    Made in: 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6484, 0.3388
+    Green: 0.2919, 0.6025
+    Blue : 0.1425, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (344 mm x 194 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    DTD 2:  1360x768    59.664196 Hz  85:48    47.433 kHz     85.000000 MHz (410 mm x 260 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 57-63 Hz V, 30-80 kHz H, max dotclock 110 MHz
+    Display Product Serial Number: ''
+  Extension blocks: 1
+Checksum: 0xc7
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+  Detailed Timing Descriptors:
+    Dummy Descriptor:
+    Dummy Descriptor:
+    Dummy Descriptor:
+    Dummy Descriptor:
+    Dummy Descriptor:
+Checksum: 0x62  Unused space in Extension Block: 5 bytes

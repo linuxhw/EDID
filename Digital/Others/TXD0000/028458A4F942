@@ -1,0 +1,115 @@
+
+EDID (hex):
+00ffffffffffff005304000001000000
+003a0103802516782a2d36a75438ae26
+0d4f542dce008bc06140454001010101
+010101010101662156aa51001e30468f
+33009ae61000001e342150b051001b30
+407036009a041100001e000000ff0030
+30303030310a202020202020000000fc
+0048444d490a202020202020202001f0
+020315f1420104230907078301000065
+030c001000662156aa51001e30468f33
+009ae61000001e011d007251d01e206e
+285500fe1f1100001e00000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000006a
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 53 04 00 00 01 00 00 00
+00 3a 01 03 80 25 16 78 2a 2d 36 a7 54 38 ae 26
+0d 4f 54 2d ce 00 8b c0 61 40 45 40 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 34 21 50 b0 51 00 1b 30
+40 70 36 00 9a 04 11 00 00 1e 00 00 00 ff 00 30
+30 30 30 30 31 0a 20 20 20 20 20 20 00 00 00 fc
+00 48 44 4d 49 0a 20 20 20 20 20 20 20 20 01 f0
+
+02 03 15 f1 42 01 04 23 09 07 07 83 01 00 00 65
+03 0c 00 10 00 66 21 56 aa 51 00 1e 30 46 8f 33
+00 9a e6 10 00 00 1e 01 1d 00 72 51 d0 1e 20 6e
+28 55 00 fe 1f 11 00 00 1e 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: TXD
+    Model: 0
+    Serial Number: 1
+    Made in: 2048
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 37 cm x 22 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6523, 0.3300
+    Green: 0.2216, 0.6806
+    Blue : 0.1484, 0.0537
+    White: 0.3095, 0.3300
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings:
+    GTF     :  1360x765    60.000341 Hz  16:9     47.520 kHz     84.396000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    DTD 2:  1360x768    59.664196 Hz  85:48    47.433 kHz     85.000000 MHz (410 mm x 260 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    Display Product Serial Number: '000001'
+    Display Product Name: 'HDMI'
+  Extension blocks: 1
+Checksum: 0xf0
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 3:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (510 mm x 287 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0x6a  Unused space in Extension Block: 70 bytes

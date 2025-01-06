@@ -1,0 +1,107 @@
+
+EDID (hex):
+00ffffffffffff0051b8030000000000
+1e200104b51e1378030f95ae5243b026
+0f505400000001010101010101010101
+0101010101015f6f00a0a04093603020
+36002dbc10000018000000fd0c3cf0a4
+a472010a20202020202000000010000a
+202020202020202020202020000000fc
+00544c3134304144585030342d30018a
+7020790000220014bf611185ff099f00
+2f001f003f069000020005002b000627
+003cef000081000f6e1a000003033cf0
+000400000000f0000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000e990
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 51 b8 03 00 00 00 00 00
+1e 20 01 04 b5 1e 13 78 03 0f 95 ae 52 43 b0 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 5f 6f 00 a0 a0 40 93 60 30 20
+36 00 2d bc 10 00 00 18 00 00 00 fd 0c 3c f0 a4
+a4 72 01 0a 20 20 20 20 20 20 00 00 00 10 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fc
+00 54 4c 31 34 30 41 44 58 50 30 34 2d 30 01 8a
+
+70 20 79 00 00 22 00 14 bf 61 11 85 ff 09 9f 00
+2f 00 1f 00 3f 06 90 00 02 00 05 00 2b 00 06 27
+00 3c ef 00 00 81 00 0f 6e 1a 00 00 03 03 3c f0
+00 04 00 00 00 00 f0 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 e9 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: TMX
+    Model: 3
+    Made in: week 30 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2646, 0.6904
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   59.999916 Hz  16:10   104.820 kHz    285.110000 MHz (301 mm x 188 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback  138 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 60-240 Hz V, 419-419 kHz H, max dotclock 1140 MHz
+    Dummy Descriptor:
+    Display Product Name: 'TL140ADXP04-0'
+  Extension blocks: 1
+Checksum: 0x8a
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: Same primary use case as the base section
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2560x1600  240.000000 Hz  16:10   418.800 kHz   1139.136000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   6 Vback  136 Vpol N
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 60 Hz
+      Max Refresh Rate: 240 Hz
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.3
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 240 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x04
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Maximum luminance (without local dimming): 0 (50.000 cd/m^2)
+    Minimum luminance (without local dimming): 0 (0.000 cd/m^2)
+  Checksum: 0xe9
+Checksum: 0x90

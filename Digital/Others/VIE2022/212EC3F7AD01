@@ -1,0 +1,117 @@
+
+EDID (hex):
+00ffffffffffff005925222000000000
+0b200104b5341e780387e5a456509e26
+0d5054214b00d1cfd1fc81c0a9c0a9fc
+010101010101023a801871382d40582c
+4500dd0c1100001e378b801871382d40
+582c450010090000001e000000fd003b
+a6a2a229010a202020202020000000fc
+0048323338463136350a20202020019c
+020313f1230907078301000066030c00
+1000782a82805070384d400820f80c36
+aa1000001a149580a070382040582c45
+0010090000001e000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000084
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 59 25 22 20 00 00 00 00
+0b 20 01 04 b5 34 1e 78 03 87 e5 a4 56 50 9e 26
+0d 50 54 21 4b 00 d1 cf d1 fc 81 c0 a9 c0 a9 fc
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 37 8b 80 18 71 38 2d 40
+58 2c 45 00 10 09 00 00 00 1e 00 00 00 fd 00 3b
+a6 a2 a2 29 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 48 32 33 38 46 31 36 35 0a 20 20 20 20 01 9c
+
+02 03 13 f1 23 09 07 07 83 01 00 00 66 03 0c 00
+10 00 78 2a 82 80 50 70 38 4d 40 08 20 f8 0c 36
+aa 10 00 00 1a 14 95 80 a0 70 38 20 40 58 2c 45
+00 10 09 00 00 00 1e 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 84
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: VIE
+    Model: 8226
+    Made in: week 11 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 52 cm x 30 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6425, 0.3359
+    Green: 0.3134, 0.6201
+    Blue : 0.1513, 0.0527
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    GTF     :  1920x1080   75.000068 Hz  16:9     84.600 kHz    220.637000 MHz
+    GTF     :  1920x1080  119.999987 Hz  16:9    138.840 kHz    368.759000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    GTF     :  1600x900   119.999812 Hz  16:9    115.800 kHz    255.686000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1920x1080  143.995960 Hz  16:9    161.995 kHz    356.390000 MHz (16 mm x 9 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 59-166 Hz V, 162-162 kHz H, max dotclock 410 MHz
+    Display Product Name: 'H238F165'
+  Extension blocks: 1
+Checksum: 0x9c
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_48bit
+    DC_36bit
+    DC_30bit
+    DC_Y444
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080  144.001729 Hz  16:9    166.610 kHz    333.220000 MHz (310 mm x 170 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront   63 Vsync   8 Vback    6 Vpol N
+    DTD 4:  1920x1080  165.000692 Hz  16:9    183.481 kHz    381.640000 MHz (16 mm x 9 mm)
+                 Hfront   88 Hsync  44 Hback   28 Hpol P
+                 Vfront    4 Vsync   5 Vback   23 Vpol P
+Checksum: 0x84  Unused space in Extension Block: 72 bytes

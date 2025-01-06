@@ -1,0 +1,86 @@
+
+EDID (hex):
+00ffffffffffff0038705f0000000000
+371f0104a5221378036850985c588e28
+1b505400000001010101010101010101
+0101010101010b8380047138ca403020
+350058c21000001a000000fd0030789a
+9a22010a202020202020000000fe0054
+4b304448804e45313536464800000000
+0001412196001000000a010a2020017d
+7013790000030114814100047f070301
+2f001f003704c9000200040000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000b490
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 70 5f 00 00 00 00 00
+37 1f 01 04 a5 22 13 78 03 68 50 98 5c 58 8e 28
+1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 0b 83 80 04 71 38 ca 40 30 20
+35 00 58 c2 10 00 00 1a 00 00 00 fd 00 30 78 9a
+9a 22 01 0a 20 20 20 20 20 20 00 00 00 fe 00 54
+4b 30 44 48 80 4e 45 31 35 36 46 48 00 00 00 00
+00 01 41 21 96 00 10 00 00 0a 01 0a 20 20 01 7d
+
+70 13 79 00 00 03 01 14 81 41 00 04 7f 07 03 01
+2f 00 1f 00 37 04 c9 00 02 00 04 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 b4 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: NCP
+    Model: 95
+    Made in: week 55 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5947, 0.3613
+    Green: 0.3457, 0.5546
+    Blue : 0.1572, 0.1064
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  120.035352 Hz  16:9    153.885 kHz    335.470000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  180 Hpol P
+                 Vfront    3 Vsync   5 Vback  194 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-120 Hz V, 154-154 kHz H, max dotclock 340 MHz
+    Alphanumeric Data String: 'TK0DH'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 01 41 21 96 00 10 00 00 0a 01 0a 20 20 '....A!........  '
+  Extension blocks: 1
+Checksum: 0x7d
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  1920x1080   60.005152 Hz  16:9     76.927 kHz    167.700000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback  180 Hpol N
+               Vfront    3 Vsync   5 Vback  194 Vpol N
+  Checksum: 0xb4
+Checksum: 0x90

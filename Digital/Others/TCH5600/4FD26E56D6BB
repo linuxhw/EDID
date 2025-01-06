@@ -1,0 +1,135 @@
+
+EDID (hex):
+00ffffffffffff005068005656000000
+141e0103b2221378efee91a3544c9926
+0f50540108009040714081c081008140
+81809500b300023a801871382d40942c
+450858c21000001e000000fd00324c1e
+6e15000a202020202020000000fc0048
+444d490a2020202020202020000000ff
+0054434830303536323032300a2001af
+020322f14904131110010203121f2309
+07078301000067030c002000382de305
+0301023a801871382d40582c45000000
+0000001e023a80d072382d40102c4580
+00000000001e011d007251d01e206e28
+550000000000001e011d00bc52d01e20
+b828554000000000001e000000000000
+00000000000000000000000000000033
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 50 68 00 56 56 00 00 00
+14 1e 01 03 b2 22 13 78 ef ee 91 a3 54 4c 99 26
+0f 50 54 01 08 00 90 40 71 40 81 c0 81 00 81 40
+81 80 95 00 b3 00 02 3a 80 18 71 38 2d 40 94 2c
+45 08 58 c2 10 00 00 1e 00 00 00 fd 00 32 4c 1e
+6e 15 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+44 4d 49 0a 20 20 20 20 20 20 20 20 00 00 00 ff
+00 54 43 48 30 30 35 36 32 30 32 30 0a 20 01 af
+
+02 03 22 f1 49 04 13 11 10 01 02 03 12 1f 23 09
+07 07 83 01 00 00 67 03 0c 00 20 00 38 2d e3 05
+03 01 02 3a 80 18 71 38 2d 40 58 2c 45 00 00 00
+00 00 00 1e 02 3a 80 d0 72 38 2d 40 10 2c 45 80
+00 00 00 00 00 1e 01 1d 00 72 51 d0 1e 20 6e 28
+55 00 00 00 00 00 00 1e 01 1d 00 bc 52 d0 1e 20
+b8 28 55 40 00 00 00 00 00 1e 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 33
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: TCH
+    Model: 22016
+    Serial Number: 86
+    Made in: week 20 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+    Supports GTF timings within operating range
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x2a:  1400x1050   59.978442 Hz   4:3     65.317 kHz    121.750000 MHz
+    GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (344 mm x 194 mm)
+                 Hfront  148 Hsync  44 Hback   88 Hpol P
+                 Vfront   36 Vsync   5 Vback    4 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-76 Hz V, 30-110 kHz H, max dotclock 210 MHz
+    Display Product Name: 'HDMI'
+    Display Product Serial Number: 'TCH00562020'
+  Extension blocks: 1
+Checksum: 0xaf
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    Gamut Boundary Description Metadata Profile P0
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 3:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0x33  Unused space in Extension Block: 21 bytes

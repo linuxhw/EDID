@@ -1,0 +1,144 @@
+
+EDID (hex):
+00ffffffffffff004a8b27c101010101
+2a210104b51e13783fee91a3544c9926
+0f5054210800d1c0b300950081006100
+0101010101016a6e00a0a04084603020
+36002ebc1000001a000000fc00555342
+2d430a20202020202020fd5e00a0a0a0
+3250302036002ebc1000001a000000fd
+001e3c3c3c24010a202020202020010e
+020320f2450410031f22e200c0e305c0
+0023097f0783010000e606050169694f
+353c80a070b02340302036002ebc1000
+001a6a5e00a0a0a02950302035002ebc
+1000001a023a801871382d4030204500
+2ebc1000001a035c00a0a04084603020
+36002ebc1000001a353700a0a0408460
+3020360032c61000001a0000000000e9
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4a 8b 27 c1 01 01 01 01
+2a 21 01 04 b5 1e 13 78 3f ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 d1 c0 b3 00 95 00 81 00 61 00
+01 01 01 01 01 01 6a 6e 00 a0 a0 40 84 60 30 20
+36 00 2e bc 10 00 00 1a 00 00 00 fc 00 55 53 42
+2d 43 0a 20 20 20 20 20 20 20 fd 5e 00 a0 a0 a0
+32 50 30 20 36 00 2e bc 10 00 00 1a 00 00 00 fd
+00 1e 3c 3c 3c 24 01 0a 20 20 20 20 20 20 01 0e
+
+02 03 20 f2 45 04 10 03 1f 22 e2 00 c0 e3 05 c0
+00 23 09 7f 07 83 01 00 00 e6 06 05 01 69 69 4f
+35 3c 80 a0 70 b0 23 40 30 20 36 00 2e bc 10 00
+00 1a 6a 5e 00 a0 a0 a0 29 50 30 20 35 00 2e bc
+10 00 00 1a 02 3a 80 18 71 38 2d 40 30 20 45 00
+2e bc 10 00 00 1a 03 5c 00 a0 a0 40 84 60 30 20
+36 00 2e bc 10 00 00 1a 35 37 00 a0 a0 40 84 60
+30 20 36 00 32 c6 10 00 00 1a 00 00 00 00 00 e9
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: RTK
+    Model: 49447
+    Serial Number: 16843009
+    Made in: week 42 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    GTF     :  1024x640    60.000182 Hz  16:10    39.780 kHz     52.828000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   59.999491 Hz  16:10   103.919 kHz    282.660000 MHz (302 mm x 188 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback  123 Vpol N
+    Display Product Name: 'USB-C'
+    DTD 2:  2560x1440   60.000493 Hz  16:9     89.401 kHz    243.170000 MHz (302 mm x 188 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   41 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 30-60 Hz V, 60-60 kHz H, max dotclock 360 MHz
+  Extension blocks: 1
+Checksum: 0x0e
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: IT video formats not supported
+    CE scan behavior: CE video formats not supported
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 105 (486.099 cd/m^2)
+    Desired content max frame-average luminance: 105 (486.099 cd/m^2)
+    Desired content min luminance: 79 (0.467 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1200   60.000779 Hz  16:10    74.101 kHz    154.130000 MHz (302 mm x 188 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   26 Vpol N
+    DTD 4:  2560x1440   60.000199 Hz  16:9     88.860 kHz    241.700000 MHz (302 mm x 188 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 5:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (302 mm x 188 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol N
+    DTD 6:  2560x1600   49.999575 Hz  16:10    86.599 kHz    235.550000 MHz (302 mm x 188 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback  123 Vpol N
+    DTD 7:  2560x1600   29.999745 Hz  16:10    51.960 kHz    141.330000 MHz (306 mm x 198 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback  123 Vpol N
+Checksum: 0xe9  Unused space in Extension Block: 5 bytes

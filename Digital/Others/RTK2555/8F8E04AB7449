@@ -1,0 +1,129 @@
+
+EDID (hex):
+00ffffffffffff004a8b552501010101
+0822010380070578ea1ec5ae4f34b126
+0e505401080059c0d1c0590045406140
+0101010101013413c010318019202860
+3a0049310000001c023a801871382d40
+582c350049310000001e000000fc0048
+444d490a2020202020202020000000fd
+00383e0f781c000a2020202020200125
+02031af141102309070767030c001000
+382d83010000e3050301ef6800a0a040
+2e603020360049310000001a9a0ce020
+1240cd1030203a0049310000001e0410
+c000311c16202060350049310000001c
+0d25a0a050c01c3030203a0049310000
+001a3413c0103180192028603a004931
+0000001e0000000000000000000000ab
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4a 8b 55 25 01 01 01 01
+08 22 01 03 80 07 05 78 ea 1e c5 ae 4f 34 b1 26
+0e 50 54 01 08 00 59 c0 d1 c0 59 00 45 40 61 40
+01 01 01 01 01 01 34 13 c0 10 31 80 19 20 28 60
+3a 00 49 31 00 00 00 1c 02 3a 80 18 71 38 2d 40
+58 2c 35 00 49 31 00 00 00 1e 00 00 00 fc 00 48
+44 4d 49 0a 20 20 20 20 20 20 20 20 00 00 00 fd
+00 38 3e 0f 78 1c 00 0a 20 20 20 20 20 20 01 25
+
+02 03 1a f1 41 10 23 09 07 07 67 03 0c 00 10 00
+38 2d 83 01 00 00 e3 05 03 01 ef 68 00 a0 a0 40
+2e 60 30 20 36 00 49 31 00 00 00 1a 9a 0c e0 20
+12 40 cd 10 30 20 3a 00 49 31 00 00 00 1e 04 10
+c0 00 31 1c 16 20 20 60 35 00 49 31 00 00 00 1c
+0d 25 a0 a0 50 c0 1c 30 30 20 3a 00 49 31 00 00
+00 1a 34 13 c0 10 31 80 19 20 28 60 3a 00 49 31
+00 00 00 1e 00 00 00 00 00 00 00 00 00 00 00 ab
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: RTK
+    Model: 9557
+    Serial Number: 16843009
+    Made in: week 8 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 7 cm x 5 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6796, 0.3095
+    Green: 0.2060, 0.6933
+    Blue : 0.1513, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    GTF     :   960x540    60.000530 Hz  16:9     33.540 kHz     40.785000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    GTF     :   960x600    59.999687 Hz  16:10    37.320 kHz     45.978000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:   960x640    60.003906 Hz   3:2     39.903 kHz     49.160000 MHz (73 mm x 49 mm)
+                 Hfront   40 Hsync  96 Hback  136 Hpol N
+                 Vfront    3 Vsync  10 Vback   12 Vpol P
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (73 mm x 49 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    3 Vsync   5 Vback   37 Vpol P
+    Display Product Name: 'HDMI'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-62 Hz V, 15-120 kHz H, max dotclock 280 MHz
+  Extension blocks: 1
+Checksum: 0x25
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    Gamut Boundary Description Metadata Profile P0
+  Detailed Timing Descriptors:
+    DTD 3:  2560x1600   60.000625 Hz  16:10    98.761 kHz    268.630000 MHz (73 mm x 49 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   37 Vpol N
+    DTD 4:   480x320    60.007440 Hz   3:2     31.504 kHz     32.260000 MHz (73 mm x 49 mm)
+                 Hfront   48 Hsync  32 Hback  464 Hpol P
+                 Vfront    3 Vsync  10 Vback  192 Vpol P
+    DTD 5:   960x540    59.994849 Hz  16:9     33.717 kHz     41.000000 MHz (73 mm x 49 mm)
+                 Hfront   32 Hsync  96 Hback  128 Hpol N
+                 Vfront    3 Vsync   5 Vback   14 Vpol P
+    DTD 6:  1440x960    60.001265 Hz   3:2     59.281 kHz     94.850000 MHz (73 mm x 49 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   15 Vpol N
+    DTD 7:   960x640    60.003906 Hz   3:2     39.903 kHz     49.160000 MHz (73 mm x 49 mm)
+                 Hfront   40 Hsync  96 Hback  136 Hpol P
+                 Vfront    3 Vsync  10 Vback   12 Vpol P
+Checksum: 0xab  Unused space in Extension Block: 11 bytes
+
+

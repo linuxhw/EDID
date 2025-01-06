@@ -1,0 +1,136 @@
+
+EDID (hex):
+00ffffffffffff0034a9d8a001010101
+00160103800000780adaffa3584aa229
+17494b00000001010101010101010101
+010101010101023a801871382d40582c
+4500ba882100001e011d8018711c1620
+582c2500ba882100009e000000fc0050
+616e61736f6e69635456300a000000fd
+00173d0f440f000a202020202020019c
+02031f71499005200403020706012309
+070168030c001000b82d0fe3051f0101
+1d007251d01e206e285500ba88210000
+1e8c0ad08a20e02d10103e9600ba8821
+0000188c0ad08a20e02d10103e96000b
+88210000188c0aa01451f01600267c43
+00ba88210000988c0aa01451f0160026
+7c43000b882100009800000000000088
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 a9 d8 a0 01 01 01 01
+00 16 01 03 80 00 00 78 0a da ff a3 58 4a a2 29
+17 49 4b 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 ba 88 21 00 00 1e 01 1d 80 18 71 1c 16 20
+58 2c 25 00 ba 88 21 00 00 9e 00 00 00 fc 00 50
+61 6e 61 73 6f 6e 69 63 54 56 30 0a 00 00 00 fd
+00 17 3d 0f 44 0f 00 0a 20 20 20 20 20 20 01 9c
+
+02 03 1f 71 49 90 05 20 04 03 02 07 06 01 23 09
+07 01 68 03 0c 00 10 00 b8 2d 0f e3 05 1f 01 01
+1d 00 72 51 d0 1e 20 6e 28 55 00 ba 88 21 00 00
+1e 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 ba 88 21
+00 00 18 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 0b
+88 21 00 00 18 8c 0a a0 14 51 f0 16 00 26 7c 43
+00 ba 88 21 00 00 98 8c 0a a0 14 51 f0 16 00 26
+7c 43 00 0b 88 21 00 00 98 00 00 00 00 00 00 88
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MEI
+    Model: 41176
+    Serial Number: 16843009
+    Made in: 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3447
+    Green: 0.2910, 0.6347
+    Blue : 0.1630, 0.0927
+    White: 0.2880, 0.2958
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (698 mm x 392 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (698 mm x 392 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    Display Product Name: 'PanasonicTV0'
+    Display Range Limits:
+      Monitor ranges (GTF): 23-61 Hz V, 15-68 kHz H, max dotclock 150 MHz
+  Extension blocks: 1
+Checksum: 0x9c
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+    Supported Content Types:
+      Graphics
+      Photo
+      Cinema
+      Game
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    sYCC601
+    opYCC601
+    opRGB
+    Gamut Boundary Description Metadata Profile P0
+  Detailed Timing Descriptors:
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (698 mm x 392 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (698 mm x 392 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (523 mm x 392 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 6:  1440x480i   59.940060 Hz   3:1     15.734 kHz     27.000000 MHz (698 mm x 392 mm)
+                 Hfront   38 Hsync 124 Hback  114 Hpol N
+                 Vfront    4 Vsync   3 Vback   15 Vpol N Vfront +0.5 Odd Field
+                 Vfront    4 Vsync   3 Vback   15 Vpol N Vback  +0.5 Even Field
+    DTD 7:  1440x480i   59.940060 Hz   3:1     15.734 kHz     27.000000 MHz (523 mm x 392 mm)
+                 Hfront   38 Hsync 124 Hback  114 Hpol N
+                 Vfront    4 Vsync   3 Vback   15 Vpol N Vfront +0.5 Odd Field
+                 Vfront    4 Vsync   3 Vback   15 Vpol N Vback  +0.5 Even Field
+Checksum: 0x88  Unused space in Extension Block: 6 bytes

@@ -1,0 +1,149 @@
+
+EDID (hex):
+00ffffffffffff004cf4560100000000
+1e1d0103801e1a782a62f5aa524ca326
+0f5054230800d1c08180314031404540
+454061406140023a801871382d40582c
+350059c21000001a000000ff00303030
+30300a20202020202020000000fc004d
+4531365a30310a2020202020000000fd
+00303e1edc2d000a2020202020200158
+02033ff1459001020304230907078301
+000067030c001000385a67d85dc4015a
+0001e50f00000600e305c000e200ffe6
+060501595949681a00000101303ce602
+3a801871382d40582c3a0064c8100000
+1e000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000012
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c f4 56 01 00 00 00 00
+1e 1d 01 03 80 1e 1a 78 2a 62 f5 aa 52 4c a3 26
+0f 50 54 23 08 00 d1 c0 81 80 31 40 31 40 45 40
+45 40 61 40 61 40 02 3a 80 18 71 38 2d 40 58 2c
+35 00 59 c2 10 00 00 1a 00 00 00 ff 00 30 30 30
+30 30 0a 20 20 20 20 20 20 20 00 00 00 fc 00 4d
+45 31 36 5a 30 31 0a 20 20 20 20 20 00 00 00 fd
+00 30 3e 1e dc 2d 00 0a 20 20 20 20 20 20 01 58
+
+02 03 3f f1 45 90 01 02 03 04 23 09 07 07 83 01
+00 00 67 03 0c 00 10 00 38 5a 67 d8 5d c4 01 5a
+00 01 e5 0f 00 00 06 00 e3 05 c0 00 e2 00 ff e6
+06 05 01 59 59 49 68 1a 00 00 01 01 30 3c e6 02
+3a 80 18 71 38 2d 40 58 2c 3a 00 64 c8 10 00 00
+1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 12
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SGT
+    Model: 342
+    Made in: week 30 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 26 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6650, 0.3222
+    Green: 0.2968, 0.6386
+    Blue : 0.1513, 0.0615
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (345 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    3 Vsync   5 Vback   37 Vpol N
+    Display Product Serial Number: '00000'
+    Display Product Name: 'ME16Z01'
+    Display Range Limits:
+      Monitor ranges (GTF): 48-62 Hz V, 30-220 kHz H, max dotclock 450 MHz
+  Extension blocks: 1
+Checksum: 0x58
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 450 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 450 MHz
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+  YCbCr 4:2:0 Capability Map Data Block:
+    SVD Index 18 is out of range
+    SVD Index 19 is out of range
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 89 (343.724 cd/m^2)
+    Desired content max frame-average luminance: 89 (343.724 cd/m^2)
+    Desired content min luminance: 73 (0.282 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0xe6 (MCCS)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (356 mm x 200 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    3 Vsync  10 Vback   32 Vpol P
+Checksum: 0x12  Unused space in Extension Block: 46 bytes
+
+

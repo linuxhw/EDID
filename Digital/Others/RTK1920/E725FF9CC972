@@ -1,0 +1,152 @@
+
+EDID (hex):
+00ffffffffffff004a8b201900122019
+0020010380000078ecee91a3544c9926
+0f5054230800d1c0b300950081006140
+4540814081c0283c80a070b023403020
+360050d21000001a023a801871382d40
+582c250058c31000001e000000fc0000
+0a2020202020202020202020000000fd
+00383f545413000a20202020202001af
+020332f24f10050413141f6c6c6c276c
+6c6c4b4ce200d5e305c00023097f0783
+01000067030c0010003848e606050169
+694f023a801871382d40582c250058c3
+1000001e011d8018711c1620582c2500
+58c31000009e00000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000006e
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4a 8b 20 19 00 12 20 19
+00 20 01 03 80 00 00 78 ec ee 91 a3 54 4c 99 26
+0f 50 54 23 08 00 d1 c0 b3 00 95 00 81 00 61 40
+45 40 81 40 81 c0 28 3c 80 a0 70 b0 23 40 30 20
+36 00 50 d2 10 00 00 1a 02 3a 80 18 71 38 2d 40
+58 2c 25 00 58 c3 10 00 00 1e 00 00 00 fc 00 00
+0a 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fd
+00 38 3f 54 54 13 00 0a 20 20 20 20 20 20 01 af
+
+02 03 32 f2 4f 10 05 04 13 14 1f 6c 6c 6c 27 6c
+6c 6c 4b 4c e2 00 d5 e3 05 c0 00 23 09 7f 07 83
+01 00 00 67 03 0c 00 10 00 38 48 e6 06 05 01 69
+69 4f 02 3a 80 18 71 38 2d 40 58 2c 25 00 58 c3
+10 00 00 1e 01 1d 80 18 71 1c 16 20 58 2c 25 00
+58 c3 10 00 00 9e 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: RTK
+    Model: 6432
+    Serial Number: 421532160
+    Made in: 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (336 mm x 210 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   26 Vpol N
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (344 mm x 195 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol P
+    Display Product Name: ''
+    Display Range Limits:
+      Monitor ranges (GTF): 56-63 Hz V, 84-84 kHz H, max dotclock 190 MHz
+  Extension blocks: 1
+Checksum: 0xaf
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC 108:  1280x720    48.000000 Hz  16:9     36.000 kHz     90.000000 MHz
+    VIC 108:  1280x720    48.000000 Hz  16:9     36.000 kHz     90.000000 MHz
+    VIC 108:  1280x720    48.000000 Hz  16:9     36.000 kHz     90.000000 MHz
+    VIC  39:  1920x1080i  50.000000 Hz  16:9     31.250 kHz     72.000000 MHz
+    VIC 108:  1280x720    48.000000 Hz  16:9     36.000 kHz     90.000000 MHz
+    VIC 108:  1280x720    48.000000 Hz  16:9     36.000 kHz     90.000000 MHz
+    VIC 108:  1280x720    48.000000 Hz  16:9     36.000 kHz     90.000000 MHz
+    VIC  75:  1920x1080   50.000000 Hz  64:27    56.250 kHz    148.500000 MHz
+    VIC  76:  1920x1080   60.000000 Hz  64:27    67.500 kHz    148.500000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Overscanned
+    IT scan behavior: Always Overscanned
+    CE scan behavior: Always Overscanned
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 360 MHz
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 105 (486.099 cd/m^2)
+    Desired content max frame-average luminance: 105 (486.099 cd/m^2)
+    Desired content min luminance: 79 (0.467 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (344 mm x 195 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol P
+    DTD 4:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (344 mm x 195 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+Checksum: 0x6e  Unused space in Extension Block: 41 bytes

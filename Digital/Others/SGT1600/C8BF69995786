@@ -1,0 +1,139 @@
+
+EDID (hex):
+00ffffffffffff004cf4001611110000
+26200104b52214783bef65a656529d28
+0b5054210800d1c08180a9c0d1c095c0
+81c001010101023a801871382d40582c
+450059c21000001e000000ff000a2020
+20202020202020202020000000fc0046
+31353650310a202020202020000000fd
+00303f646414010a202020202020017e
+020327f24390049f23097f0783010000
+e305e000e200c0e6060501626228681a
+00000101303de6023a801871382d4058
+2c450059c21000001ef422a0a0508420
+30582c450059c21000001e0000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000008f
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c f4 00 16 11 11 00 00
+26 20 01 04 b5 22 14 78 3b ef 65 a6 56 52 9d 28
+0b 50 54 21 08 00 d1 c0 81 80 a9 c0 d1 c0 95 c0
+81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 59 c2 10 00 00 1e 00 00 00 ff 00 0a 20 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fc 00 46
+31 35 36 50 31 0a 20 20 20 20 20 20 00 00 00 fd
+00 30 3f 64 64 14 01 0a 20 20 20 20 20 20 01 7e
+
+02 03 27 f2 43 90 04 9f 23 09 7f 07 83 01 00 00
+e3 05 e0 00 e2 00 c0 e6 06 05 01 62 62 28 68 1a
+00 00 01 01 30 3d e6 02 3a 80 18 71 38 2d 40 58
+2c 45 00 59 c2 10 00 00 1e f4 22 a0 a0 50 84 20
+30 58 2c 45 00 59 c2 10 00 00 1e 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 8f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SGT
+    Model: 5632
+    Serial Number: 4369
+    Made in: week 38 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 34 cm x 20 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6513, 0.3378
+    Green: 0.3232, 0.6162
+    Blue : 0.1572, 0.0449
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    GTF     :  1440x810    60.000051 Hz  16:9     50.340 kHz     95.042000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (345 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: ''
+    Display Product Name: 'F156P1'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-63 Hz V, 100-100 kHz H, max dotclock 200 MHz
+  Extension blocks: 1
+Checksum: 0x7e
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: IT video formats not supported
+    CE scan behavior: CE video formats not supported
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 98 (417.710 cd/m^2)
+    Desired content max frame-average luminance: 98 (417.710 cd/m^2)
+    Desired content min luminance: 40 (0.103 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 61 Hz
+    Flags 1.x: 0xe6 (MCCS)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (345 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 3:  1440x900    60.005365 Hz  16:10    55.925 kHz     89.480000 MHz (345 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback   28 Hpol P
+                 Vfront    4 Vsync   5 Vback   23 Vpol P
+Checksum: 0x8f  Unused space in Extension Block: 52 bytes
+
+

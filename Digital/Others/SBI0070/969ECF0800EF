@@ -1,0 +1,157 @@
+
+EDID (hex):
+00ffffffffffff004c49700053080000
+191c0103809051780ae828a953469622
+1f474a00000001010101010101010101
+01010101010108e80030f2705a80b058
+8a00a4335300001e000000fc00534249
+442d4d583036350a2020000000ff004b
+3034314b5732354130383533000000fd
+003b461f8c3c000a202020202020018c
+020346f15261605f5e5d101f22212004
+133e3d3c110301260907071107068301
+0000e200ff6d030c0010007844200060
+01020367d85dc401788007e3050301e2
+0f03e306000008e80030f2705a80b058
+8a00a4335300001e023a801871382d40
+582c4500a4335300001e662150b05100
+1b3040703600a4335300001e000000e9
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 49 70 00 53 08 00 00
+19 1c 01 03 80 90 51 78 0a e8 28 a9 53 46 96 22
+1f 47 4a 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 08 e8 00 30 f2 70 5a 80 b0 58
+8a 00 a4 33 53 00 00 1e 00 00 00 fc 00 53 42 49
+44 2d 4d 58 30 36 35 0a 20 20 00 00 00 ff 00 4b
+30 34 31 4b 57 32 35 41 30 38 35 33 00 00 00 fd
+00 3b 46 1f 8c 3c 00 0a 20 20 20 20 20 20 01 8c
+
+02 03 46 f1 52 61 60 5f 5e 5d 10 1f 22 21 20 04
+13 3e 3d 3c 11 03 01 26 09 07 07 11 07 06 83 01
+00 00 e2 00 ff 6d 03 0c 00 10 00 78 44 20 00 60
+01 02 03 67 d8 5d c4 01 78 80 07 e3 05 03 01 e2
+0f 03 e3 06 00 00 08 e8 00 30 f2 70 5a 80 b0 58
+8a 00 a4 33 53 00 00 1e 02 3a 80 18 71 38 2d 40
+58 2c 45 00 a4 33 53 00 00 1e 66 21 50 b0 51 00
+1b 30 40 70 36 00 a4 33 53 00 00 1e 00 00 00 e9
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SBI
+    Model: 112
+    Serial Number: 2131
+    Made in: week 25 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 144 cm x 81 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6630, 0.3261
+    Green: 0.2753, 0.5859
+    Blue : 0.1328, 0.1230
+    White: 0.2792, 0.2890
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz (1444 mm x 819 mm)
+                 Hfront  176 Hsync  88 Hback  296 Hpol P
+                 Vfront    8 Vsync  10 Vback   72 Vpol P
+    Display Product Name: 'SBID-MX065'
+    Display Product Serial Number: 'K041KW25A0853'
+    Display Range Limits:
+      Monitor ranges (GTF): 59-70 Hz V, 31-140 kHz H, max dotclock 600 MHz
+  Extension blocks: 1
+Checksum: 0x8c
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  62:  1280x720    30.000000 Hz  16:9     22.500 kHz     74.250000 MHz
+    VIC  61:  1280x720    25.000000 Hz  16:9     18.750 kHz     74.250000 MHz
+    VIC  60:  1280x720    24.000000 Hz  16:9     18.000 kHz     59.400000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 48 kb/s
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_48bit
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 340 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    Supports 16-bits/component Deep Color 4:2:0 Pixel Encoding
+    Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    Gamut Boundary Description Metadata Profile P0
+  YCbCr 4:2:0 Capability Map Data Block:
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+    Supported static metadata descriptors:
+  Detailed Timing Descriptors:
+    DTD 2:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz (1444 mm x 819 mm)
+                 Hfront  176 Hsync  88 Hback  296 Hpol P
+                 Vfront    8 Vsync  10 Vback   72 Vpol P
+    DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1444 mm x 819 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 4:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (1444 mm x 819 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+Checksum: 0xe9  Unused space in Extension Block: 3 bytes

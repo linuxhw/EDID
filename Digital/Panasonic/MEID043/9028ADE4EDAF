@@ -1,0 +1,117 @@
+
+EDID (hex):
+00ffffffffffff0034a943d098022115
+000f0103800000780a69bea65753a623
+0c485521080081c04cc08bc001010101
+010101010101011d8018711c1620582c
+2500c48e2100009e011d80d0721c1620
+102c2580c48e2100009e000000fc0041
+452d37303020202020202020000000fd
+00323d1c3108000a2020202020200174
+0203133148051404130302110165030c
+0010008c0ad08a20e02d10103e960013
+8e210000188c0ad08a20e02d10103e96
+00c48e210000188c0ad090204031200c
+405500138e21000018011d007251d01e
+206e285500c48e2100001e011d00bc52
+d01e20b8285540c48e2100001e000000
+00000000000000000000000000000050
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 a9 43 d0 98 02 21 15
+00 0f 01 03 80 00 00 78 0a 69 be a6 57 53 a6 23
+0c 48 55 21 08 00 81 c0 4c c0 8b c0 01 01 01 01
+01 01 01 01 01 01 01 1d 80 18 71 1c 16 20 58 2c
+25 00 c4 8e 21 00 00 9e 01 1d 80 d0 72 1c 16 20
+10 2c 25 80 c4 8e 21 00 00 9e 00 00 00 fc 00 41
+45 2d 37 30 30 20 20 20 20 20 20 20 00 00 00 fd
+00 32 3d 1c 31 08 00 0a 20 20 20 20 20 20 01 74
+
+02 03 13 31 48 05 14 04 13 03 02 11 01 65 03 0c
+00 10 00 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 13
+8e 21 00 00 18 8c 0a d0 8a 20 e0 2d 10 10 3e 96
+00 c4 8e 21 00 00 18 8c 0a d0 90 20 40 31 20 0c
+40 55 00 13 8e 21 00 00 18 01 1d 00 72 51 d0 1e
+20 6e 28 55 00 c4 8e 21 00 00 1e 01 1d 00 bc 52
+d0 1e 20 b8 28 55 40 c4 8e 21 00 00 1e 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MEI
+    Model: 53315
+    Serial Number: 354484888
+    Made in: 2005
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6494, 0.3417
+    Green: 0.3261, 0.6494
+    Blue : 0.1386, 0.0498
+    White: 0.2841, 0.3339
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    GTF     :   856x481    59.999396 Hz  16:9     29.880 kHz     31.792000 MHz
+    GTF     :  1360x765    60.000341 Hz  16:9     47.520 kHz     84.396000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 2:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    Display Product Name: 'AE-700       '
+    Display Range Limits:
+      Monitor ranges (GTF): 50-61 Hz V, 28-49 kHz H, max dotclock 80 MHz
+  Extension blocks: 1
+Checksum: 0x74
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (531 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 5:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (531 mm x 398 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 6:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 7:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0x50  Unused space in Extension Block: 18 bytes

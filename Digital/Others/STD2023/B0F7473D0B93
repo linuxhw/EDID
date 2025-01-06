@@ -1,0 +1,137 @@
+
+EDID (hex):
+00ffffffffffff004e84232000000000
+1721010380301a780ad7a5a2594a9624
+145054adcb0001010101818081400101
+010101010101023a801871382d40582c
+4600dd0c1100001e804580c870382740
+302c4500dd0c1100001a3b2e40006284
+223058a8350010090000001c000000fc
+0032343842540a2020202020202001ed
+020322f44a900403011412051f101323
+0907078301000067030c0010000024e2
+004f2a4480a0703827403020350058c1
+1000001a011d8018711c1620582c2500
+e00e1100009e011d007251d01e206e28
+5500e00e1100001e8c0ad08a20e02d10
+103e9600e00e11000018000000000000
+000000000000000000000000000000ba
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4e 84 23 20 00 00 00 00
+17 21 01 03 80 30 1a 78 0a d7 a5 a2 59 4a 96 24
+14 50 54 ad cb 00 01 01 01 01 81 80 81 40 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+46 00 dd 0c 11 00 00 1e 80 45 80 c8 70 38 27 40
+30 2c 45 00 dd 0c 11 00 00 1a 3b 2e 40 00 62 84
+22 30 58 a8 35 00 10 09 00 00 00 1c 00 00 00 fc
+00 32 34 38 42 54 0a 20 20 20 20 20 20 20 01 ed
+
+02 03 22 f4 4a 90 04 03 01 14 12 05 1f 10 13 23
+09 07 07 83 01 00 00 67 03 0c 00 10 00 00 24 e2
+00 4f 2a 44 80 a0 70 38 27 40 30 20 35 00 58 c1
+10 00 00 1a 01 1d 80 18 71 1c 16 20 58 2c 25 00
+e0 0e 11 00 00 9e 01 1d 00 72 51 d0 1e 20 6e 28
+55 00 e0 0e 11 00 00 1e 8c 0a d0 8a 20 e0 2d 10
+10 3e 96 00 e0 0e 11 00 00 18 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ba
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: STD
+    Model: 8227
+    Made in: week 23 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 48 cm x 26 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6357, 0.3486
+    Green: 0.2900, 0.5888
+    Blue : 0.1425, 0.0800
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   6 Vback   35 Vpol P
+    DTD 2:  1920x1080   74.999578 Hz  16:9     83.925 kHz    177.920000 MHz (477 mm x 268 mm)
+                 Hfront   48 Hsync  44 Hback  108 Hpol P
+                 Vfront    4 Vsync   5 Vback   30 Vpol N
+    DTD 3:  1600x900    59.996715 Hz  16:9     56.037 kHz    118.350000 MHz (16 mm x 9 mm)
+                 Hfront   88 Hsync 168 Hback  256 Hpol N
+                 Vfront    3 Vsync   5 Vback   26 Vpol P
+    Display Product Name: '248BT'
+  Extension blocks: 1
+Checksum: 0xed
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 4
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Maximum TMDS clock: 180 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 4:  1920x1080   74.972503 Hz  16:9     83.894 kHz    174.500000 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   31 Vpol N
+    DTD 5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (480 mm x 270 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 6:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (480 mm x 270 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 7:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (480 mm x 270 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0xba  Unused space in Extension Block: 21 bytes

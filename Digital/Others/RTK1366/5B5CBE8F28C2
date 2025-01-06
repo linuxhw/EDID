@@ -1,0 +1,147 @@
+
+EDID (hex):
+00ffffffffffff004a8b661368076613
+0021010380000078ee3d85a6564a9a24
+125054210800810081c0614045400101
+0101010101017f2156aa51001e30468f
+330058c21000001e662150b051001b30
+407036009a041100001e000000fd0039
+3f1e500b000a202020202020000000fc
+00000a202020202020202020202001ac
+020332f24f04dcdc13dcdcdcdcdcdcdc
+dcdcdcdce200d5e305c00023097f0783
+01000067030c001000383ce606050169
+694fbc1b00a05020173030203600d988
+0000001e8c0ad08a20e02d10103e9600
+d9880000001e00000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000e0
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4a 8b 66 13 68 07 66 13
+00 21 01 03 80 00 00 78 ee 3d 85 a6 56 4a 9a 24
+12 50 54 21 08 00 81 00 81 c0 61 40 45 40 01 01
+01 01 01 01 01 01 7f 21 56 aa 51 00 1e 30 46 8f
+33 00 58 c2 10 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 9a 04 11 00 00 1e 00 00 00 fd 00 39
+3f 1e 50 0b 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 00 0a 20 20 20 20 20 20 20 20 20 20 20 01 ac
+
+02 03 32 f2 4f 04 dc dc 13 dc dc dc dc dc dc dc
+dc dc dc dc e2 00 d5 e3 05 c0 00 23 09 7f 07 83
+01 00 00 67 03 0c 00 10 00 38 3c e6 06 05 01 69
+69 4f bc 1b 00 a0 50 20 17 30 30 20 36 00 d9 88
+00 00 00 1e 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00
+d9 88 00 00 00 1e 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 e0
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: RTK
+    Model: 4966
+    Serial Number: 325453672
+    Made in: 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6484, 0.3388
+    Green: 0.2919, 0.6025
+    Blue : 0.1425, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.964364 Hz 683:384   47.852 kHz     85.750000 MHz (344 mm x 194 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    DTD 2:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (410 mm x 260 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 57-63 Hz V, 30-80 kHz H, max dotclock 110 MHz
+    Display Product Name: ''
+  Extension blocks: 1
+Checksum: 0xac
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    Unknown (VIC 220)
+    Unknown (VIC 220)
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    Unknown (VIC 220)
+    Unknown (VIC 220)
+    Unknown (VIC 220)
+    Unknown (VIC 220)
+    Unknown (VIC 220)
+    Unknown (VIC 220)
+    Unknown (VIC 220)
+    Unknown (VIC 220)
+    Unknown (VIC 220)
+    Unknown (VIC 220)
+    Unknown (VIC 220)
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Overscanned
+    IT scan behavior: Always Overscanned
+    CE scan behavior: Always Overscanned
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 105 (486.099 cd/m^2)
+    Desired content max frame-average luminance: 105 (486.099 cd/m^2)
+    Desired content min luminance: 79 (0.467 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 3:  1280x800    59.909545 Hz  16:10    49.306 kHz     71.000000 MHz (217 mm x 136 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   14 Vpol P
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (217 mm x 136 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol P
+                 Vfront    9 Vsync   6 Vback   30 Vpol P
+Checksum: 0xe0  Unused space in Extension Block: 41 bytes

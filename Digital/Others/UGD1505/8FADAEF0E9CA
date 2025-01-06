@@ -1,0 +1,124 @@
+
+EDID (hex):
+00ffffffffffff0054e4051525042120
+111f0103802213780a25a5aa524e9224
+114f5221080071c0818081c08bc09500
+0140b3010101343a8018713830406c30
+aa0058c11000001e000000fc00494431
+363046480a2020202020000000ff0032
+303231303432350a20202020000000fd
+003b3d1f4611000a202020202020011d
+020320f14d0102030401078212130216
+0310230907078301000065030c001000
+011d007251d01e206e2855000f262100
+001e8c0ad08a20e02d10103e96000f26
+2100001e011d00bc52d01e20b8285540
+0f262100001e00000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000081
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 54 e4 05 15 25 04 21 20
+11 1f 01 03 80 22 13 78 0a 25 a5 aa 52 4e 92 24
+11 4f 52 21 08 00 71 c0 81 80 81 c0 8b c0 95 00
+01 40 b3 01 01 01 34 3a 80 18 71 38 30 40 6c 30
+aa 00 58 c1 10 00 00 1e 00 00 00 fc 00 49 44 31
+36 30 46 48 0a 20 20 20 20 20 00 00 00 ff 00 32
+30 32 31 30 34 32 35 0a 20 20 20 20 00 00 00 fd
+00 3b 3d 1f 46 11 00 0a 20 20 20 20 20 20 01 1d
+
+02 03 20 f1 4d 01 02 03 04 01 07 82 12 13 02 16
+03 10 23 09 07 07 83 01 00 00 65 03 0c 00 10 00
+01 1d 00 72 51 d0 1e 20 6e 28 55 00 0f 26 21 00
+00 1e 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 0f 26
+21 00 00 1e 01 1d 00 bc 52 d0 1e 20 b8 28 55 40
+0f 26 21 00 00 1e 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 81
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: UGD
+    Model: 5381
+    Serial Number: 539034661
+    Made in: week 17 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6640, 0.3222
+    Green: 0.3056, 0.5712
+    Blue : 0.1425, 0.0683
+    White: 0.3095, 0.3212
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    GTF     :  1152x648    60.000120 Hz  16:9     40.260 kHz     59.907000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    GTF     :  1360x765    60.000341 Hz  16:9     47.520 kHz     84.396000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    GTF     :  1680x1050   61.000166 Hz  16:10    66.307 kHz    149.589000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.041908 Hz  16:9     67.727 kHz    149.000000 MHz (344 mm x 193 mm)
+                 Hfront  108 Hsync  48 Hback  124 Hpol P
+                 Vfront   10 Vsync  10 Vback   28 Vpol P
+    Display Product Name: 'ID160FH'
+    Display Product Serial Number: '20210425'
+    Display Range Limits:
+      Monitor ranges (GTF): 59-61 Hz V, 31-70 kHz H, max dotclock 170 MHz
+  Extension blocks: 1
+Checksum: 0x1d
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz (native)
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (527 mm x 294 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (527 mm x 294 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol P
+                 Vfront    9 Vsync   6 Vback   30 Vpol P
+    DTD 4:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (527 mm x 294 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0x81  Unused space in Extension Block: 41 bytes
