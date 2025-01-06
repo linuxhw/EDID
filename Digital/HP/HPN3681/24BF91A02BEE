@@ -1,0 +1,137 @@
+
+EDID (hex):
+00ffffffffffff00220e813601010101
+251f0104b53e22783b08a5a2574fa228
+0f5054a10800d1c0a9c081c0d100b300
+9500a94081804dd000a0f0703e803020
+35006d552100001a000000fd00283c87
+873c010a202020202020000000fc0048
+502056323820344b0a202020000000ff
+00434e433133373235424e0a202001b1
+02031df14d6160101f04130312021101
+6a6b2309070783010000e2006b565e00
+a0a0a02950302035006d552100001ae2
+6800a0a0402e60203063006d55210000
+1c283c80a070b02340302036006d5521
+00001a00000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000006d
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 0e 81 36 01 01 01 01
+25 1f 01 04 b5 3e 22 78 3b 08 a5 a2 57 4f a2 28
+0f 50 54 a1 08 00 d1 c0 a9 c0 81 c0 d1 00 b3 00
+95 00 a9 40 81 80 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 6d 55 21 00 00 1a 00 00 00 fd 00 28 3c 87
+87 3c 01 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 56 32 38 20 34 4b 0a 20 20 20 00 00 00 ff
+00 43 4e 43 31 33 37 32 35 42 4e 0a 20 20 01 b1
+
+02 03 1d f1 4d 61 60 10 1f 04 13 03 12 02 11 01
+6a 6b 23 09 07 07 83 01 00 00 e2 00 6b 56 5e 00
+a0 a0 a0 29 50 30 20 35 00 6d 55 21 00 00 1a e2
+68 00 a0 a0 40 2e 60 20 30 63 00 6d 55 21 00 00
+1c 28 3c 80 a0 70 b0 23 40 30 20 36 00 6d 55 21
+00 00 1a 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HPN
+    Model: 13953
+    Serial Number: 16843009
+    Made in: week 37 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 62 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6328, 0.3398
+    Green: 0.3105, 0.6328
+    Blue : 0.1582, 0.0605
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x45:  1920x1200   59.884600 Hz  16:10    74.556 kHz    193.250000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 135-135 kHz H, max dotclock 600 MHz
+    Display Product Name: 'HP V28 4K'
+    Display Product Serial Number: 'CNC13725BN'
+  Extension blocks: 1
+Checksum: 0xb1
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC 106:  3840x2160   50.000000 Hz  64:27   112.500 kHz    594.000000 MHz
+    VIC 107:  3840x2160   60.000000 Hz  64:27   135.000 kHz    594.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 2:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 3:  2560x1600   59.971589 Hz  16:10    98.713 kHz    268.500000 MHz (621 mm x 341 mm)
+                 Hfront   32 Hsync  48 Hback   80 Hpol N
+                 Vfront    6 Vsync   3 Vback   37 Vpol P
+    DTD 4:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   26 Vpol N
+Checksum: 0x6d  Unused space in Extension Block: 44 bytes
+
+

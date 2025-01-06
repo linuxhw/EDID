@@ -1,0 +1,128 @@
+
+EDID (hex):
+00ffffffffffff00220e7a3301010101
+161b0103804728782e9145a7554ea025
+0c5054a10800d1c081c081809500a9c0
+a940b300d100565e00a0a0a029503020
+3500c48f2100001a000000fd00304b73
+731e000a202020202020000000fc004f
+4d454e206279204850203332000000ff
+00434e43373232303658370a20200168
+0203208149101f041303021313016503
+0c002000681a00000101004bede2002b
+023a801871382d40582c4500c48f2100
+001e023a80d072382d40102c4580c48f
+2100001e48730050a0a0345008206808
+c48f2100001a00000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000d2
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 0e 7a 33 01 01 01 01
+16 1b 01 03 80 47 28 78 2e 91 45 a7 55 4e a0 25
+0c 50 54 a1 08 00 d1 c0 81 c0 81 80 95 00 a9 c0
+a9 40 b3 00 d1 00 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 c4 8f 21 00 00 1a 00 00 00 fd 00 30 4b 73
+73 1e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4f
+4d 45 4e 20 62 79 20 48 50 20 33 32 00 00 00 ff
+00 43 4e 43 37 32 32 30 36 58 37 0a 20 20 01 68
+
+02 03 20 81 49 10 1f 04 13 03 02 13 13 01 65 03
+0c 00 20 00 68 1a 00 00 01 01 00 4b ed e2 00 2b
+02 3a 80 18 71 38 2d 40 58 2c 45 00 c4 8f 21 00
+00 1e 02 3a 80 d0 72 38 2d 40 10 2c 45 80 c4 8f
+21 00 00 1e 48 73 00 50 a0 a0 34 50 08 20 68 08
+c4 8f 21 00 00 1a 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 d2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HPN
+    Model: 13178
+    Serial Number: 16843009
+    Made in: week 22 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 71 cm x 40 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6542, 0.3330
+    Green: 0.3046, 0.6259
+    Blue : 0.1455, 0.0468
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x45:  1920x1200   59.884600 Hz  16:10    74.556 kHz    193.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (708 mm x 399 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 48-75 Hz V, 115-115 kHz H, max dotclock 300 MHz
+    Display Product Name: 'OMEN by HP 32'
+    Display Product Serial Number: 'CNC72206X7'
+  Extension blocks: 1
+Checksum: 0x68
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 0 Hz
+    Maximum Refresh Rate: 75 Hz
+    Flags 1.x: 0xed (MCCS)
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (708 mm x 399 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 3:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (708 mm x 399 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 4:  2560x1440   74.924852 Hz  16:9    111.788 kHz    295.120000 MHz (708 mm x 399 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront   38 Vsync   8 Vback    6 Vpol N
+Checksum: 0xd2  Unused space in Extension Block: 41 bytes
+
+

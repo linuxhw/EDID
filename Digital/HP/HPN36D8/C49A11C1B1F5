@@ -1,0 +1,158 @@
+
+EDID (hex):
+00ffffffffffff00220ed83601010101
+2c1e0103803e22782aada5ad50459f25
+0e5054a10800d100d1c0a9c095008180
+0101010101014dd000a0f0703e803020
+35006d552100001a000000fd001e3c1b
+883c000a202020202020000000fc0048
+502055323820344b20484452000000ff
+00314352303434304848360a202001cf
+020344f14d6160101f04131203051411
+0201230907078301000067030c001000
+384467d85dc401788001681a00000101
+283cede6060701646401e3056000e20f
+03e2006b565e00a0a0a0295030203500
+6d552100001aa36600a0f0701f803020
+35006d552100001a0000000000000000
+00000000000000000000000000000042
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 0e d8 36 01 01 01 01
+2c 1e 01 03 80 3e 22 78 2a ad a5 ad 50 45 9f 25
+0e 50 54 a1 08 00 d1 00 d1 c0 a9 c0 95 00 81 80
+01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 6d 55 21 00 00 1a 00 00 00 fd 00 1e 3c 1b
+88 3c 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 55 32 38 20 34 4b 20 48 44 52 00 00 00 ff
+00 31 43 52 30 34 34 30 48 48 36 0a 20 20 01 cf
+
+02 03 44 f1 4d 61 60 10 1f 04 13 12 03 05 14 11
+02 01 23 09 07 07 83 01 00 00 67 03 0c 00 10 00
+38 44 67 d8 5d c4 01 78 80 01 68 1a 00 00 01 01
+28 3c ed e6 06 07 01 64 64 01 e3 05 60 00 e2 0f
+03 e2 00 6b 56 5e 00 a0 a0 a0 29 50 30 20 35 00
+6d 55 21 00 00 1a a3 66 00 a0 f0 70 1f 80 30 20
+35 00 6d 55 21 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HPN
+    Model: 14040
+    Serial Number: 16843009
+    Made in: week 44 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 62 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6777, 0.3144
+    Green: 0.2724, 0.6220
+    Blue : 0.1464, 0.0566
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x45:  1920x1200   59.884600 Hz  16:10    74.556 kHz    193.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 30-60 Hz V, 27-136 kHz H, max dotclock 600 MHz
+    Display Product Name: 'HP U28 4K HDR'
+    Display Product Serial Number: '1CR0440HH6'
+  Extension blocks: 1
+Checksum: 0xcf
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 340 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0xed (MCCS)
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 100 (436.203 cd/m^2)
+    Desired content max frame-average luminance: 100 (436.203 cd/m^2)
+    Desired content min luminance: 1 (0.000 cd/m^2)
+  Colorimetry Data Block:
+    BT2020cYCC
+    BT2020YCC
+  YCbCr 4:2:0 Capability Map Data Block:
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 2:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 3:  3840x2160   29.980602 Hz  16:9     65.688 kHz    262.750000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+Checksum: 0x42  Unused space in Extension Block: 23 bytes

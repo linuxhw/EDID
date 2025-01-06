@@ -1,0 +1,109 @@
+
+EDID (hex):
+00ffffffffffff00220ea03601010101
+071f0103802917782a2cc5a45650a128
+0f5054a1080081c00101010101010101
+010101010101201c5686500020300e38
+13009ae61000001e000000fd00323c1e
+500b000a202020202020000000fc0048
+5020503139622047340a2020000000ff
+00334351313037304e36590a202001e9
+020315b145011203130467030c001000
+0016e2006b011d007251d01e206e2855
+00c48e2100001e662156aa51001e3046
+8f33009ae61000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000b1
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 0e a0 36 01 01 01 01
+07 1f 01 03 80 29 17 78 2a 2c c5 a4 56 50 a1 28
+0f 50 54 a1 08 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 20 1c 56 86 50 00 20 30 0e 38
+13 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 3c 1e
+50 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 50 31 39 62 20 47 34 0a 20 20 00 00 00 ff
+00 33 43 51 31 30 37 30 4e 36 59 0a 20 20 01 e9
+
+02 03 15 b1 45 01 12 03 13 04 67 03 0c 00 10 00
+00 16 e2 00 6b 01 1d 00 72 51 d0 1e 20 6e 28 55
+00 c4 8e 21 00 00 1e 66 21 56 aa 51 00 1e 30 46
+8f 33 00 9a e6 10 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 b1
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HPN
+    Model: 13984
+    Serial Number: 16843009
+    Made in: week 7 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 41 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6406, 0.3378
+    Green: 0.3154, 0.6289
+    Blue : 0.1591, 0.0585
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.000000 Hz 683:384   48.000 kHz     72.000000 MHz (410 mm x 230 mm)
+                 Hfront   14 Hsync  56 Hback   64 Hpol P
+                 Vfront    1 Vsync   3 Vback   28 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-60 Hz V, 30-80 kHz H, max dotclock 110 MHz
+    Display Product Name: 'HP P19b G4'
+    Display Product Serial Number: '3CQ1070N6Y'
+  Extension blocks: 1
+Checksum: 0xe9
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Maximum TMDS clock: 110 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 3:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (analog composite, sync-on-green, 410 mm x 230 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol N
+                 Vfront    3 Vsync   3 Vback   24 Vpol N
+Checksum: 0xb1  Unused space in Extension Block: 70 bytes
