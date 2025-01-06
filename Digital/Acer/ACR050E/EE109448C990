@@ -1,0 +1,109 @@
+
+EDID (hex):
+00ffffffffffff0004720e05ffffffff
+ff170104a5351e7806ee91a3544c9926
+0f505421080001010101010101010101
+010101010101023a801871382d40582c
+4500132b2100001e000000ff00234153
+4e36426a4c4454727264000000fd001e
+9043a623010a202020202020000000fc
+0041636572205842323431480a200184
+020312412309070183010000654b0400
+01018a4d80a070382c4030203500132b
+2100001afe5b80a07038354030203500
+132b2100001a866f80a0703840403020
+3500132b2100001a5a8780a070384d40
+30203500132b2100001a000000000000
+00000000000000000000000000000000
+0000000000000000000000000000002e
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 0e 05 ff ff ff ff
+ff 17 01 04 a5 35 1e 78 06 ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2b 21 00 00 1e 00 00 00 ff 00 23 41 53
+4e 36 42 6a 4c 44 54 72 72 64 00 00 00 fd 00 1e
+90 43 a6 23 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 63 65 72 20 58 42 32 34 31 48 0a 20 01 84
+
+02 03 12 41 23 09 07 01 83 01 00 00 65 4b 04 00
+01 01 8a 4d 80 a0 70 38 2c 40 30 20 35 00 13 2b
+21 00 00 1a fe 5b 80 a0 70 38 35 40 30 20 35 00
+13 2b 21 00 00 1a 86 6f 80 a0 70 38 40 40 30 20
+35 00 13 2b 21 00 00 1a 5a 87 80 a0 70 38 4d 40
+30 20 35 00 13 2b 21 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 2e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: ACR
+    Model: 1294
+    Serial Number: 4294967295
+    Model year: 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 53 cm x 30 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (531 mm x 299 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: '#ASN6BjLDTrrd'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 30-144 Hz V, 67-166 kHz H, max dotclock 350 MHz
+    Display Product Name: 'Acer XB241H'
+  Extension blocks: 1
+Checksum: 0x84
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (NVIDIA), OUI 00-04-4B:
+    01 01                                           '..'
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   84.904531 Hz  16:9     95.433 kHz    198.500000 MHz (531 mm x 299 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   36 Vpol N
+    DTD 3:  1920x1080   99.930409 Hz  16:9    113.221 kHz    235.500000 MHz (531 mm x 299 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   45 Vpol N
+    DTD 4:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (531 mm x 299 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD 5:  1920x1080  143.981451 Hz  16:9    166.587 kHz    346.500000 MHz (531 mm x 299 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   69 Vpol N
+Checksum: 0x2e  Unused space in Extension Block: 37 bytes
+
+

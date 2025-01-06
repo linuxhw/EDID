@@ -1,0 +1,115 @@
+
+EDID (hex):
+00ffffffffffff0004723a03029e2054
+2a190103802f1e782a9265a655559f28
+0d5054210800714f8140818081c08100
+95000101010126399030621a274068b0
+3600da281100001c000000fd00374c1e
+5011000a202020202020000000fc0042
+323236574c0a202020202020000000ff
+004c58564545303035383530300a0147
+02031770448403020123090707830100
+0065030c001000011d007251d01e206e
+28550010090000001e011d007251d01e
+206e28550010090000001e8c0ad08a20
+e02d10103e9600100900000018000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 3a 03 02 9e 20 54
+2a 19 01 03 80 2f 1e 78 2a 92 65 a6 55 55 9f 28
+0d 50 54 21 08 00 71 4f 81 40 81 80 81 c0 81 00
+95 00 01 01 01 01 26 39 90 30 62 1a 27 40 68 b0
+36 00 da 28 11 00 00 1c 00 00 00 fd 00 37 4c 1e
+50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42
+32 32 36 57 4c 0a 20 20 20 20 20 20 00 00 00 ff
+00 4c 58 56 45 45 30 30 35 38 35 30 30 0a 01 47
+
+02 03 17 70 44 84 03 02 01 23 09 07 07 83 01 00
+00 65 03 0c 00 10 00 01 1d 00 72 51 d0 1e 20 6e
+28 55 00 10 09 00 00 00 1e 01 1d 00 72 51 d0 1e
+20 6e 28 55 00 10 09 00 00 00 1e 8c 0a d0 8a 20
+e0 2d 10 10 3e 96 00 10 09 00 00 00 18 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ACR
+    Model: 826
+    Serial Number: 1411423746
+    Made in: week 42 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 47 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3330
+    Green: 0.3320, 0.6230
+    Blue : 0.1572, 0.0527
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   59.974747 Hz  16:10    65.312 kHz    146.300000 MHz (474 mm x 296 mm)
+                 Hfront  104 Hsync 176 Hback  280 Hpol N
+                 Vfront    3 Vsync   6 Vback   30 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 55-76 Hz V, 30-80 kHz H, max dotclock 170 MHz
+    Display Product Name: 'B226WL'
+    Display Product Serial Number: 'LXVEE0058500'
+  Extension blocks: 1
+Checksum: 0x47
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (16 mm x 9 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (16 mm x 9 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (16 mm x 9 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x00  Unused space in Extension Block: 50 bytes
