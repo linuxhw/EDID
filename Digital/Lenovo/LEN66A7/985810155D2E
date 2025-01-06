@@ -1,0 +1,128 @@
+
+EDID (hex):
+00ffffffffffff0030aea76600000000
+311f0103803c22782a25d5a7554aa226
+0d5054a1080081809500a9c0b300d1c0
+d10001010101565e00a0a0a029503020
+350056502100001a000000fd00304b1e
+731f000a202020202020000000fc004c
+454e20513237682d31300a20000000ff
+0055354235385057370a2020202001f2
+020327f14b101f041312110302010514
+23097f078301000065030c001000681a
+00000101304be6565e00a0a0a0295030
+20350056502100001ad97600a0a0a034
+503020350056502100001a201c568650
+0020300e38130056502100001e000000
+00000000000000000000000000000000
+000000000000000000000000000000ef
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae a7 66 00 00 00 00
+31 1f 01 03 80 3c 22 78 2a 25 d5 a7 55 4a a2 26
+0d 50 54 a1 08 00 81 80 95 00 a9 c0 b3 00 d1 c0
+d1 00 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 56 50 21 00 00 1a 00 00 00 fd 00 30 4b 1e
+73 1f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+45 4e 20 51 32 37 68 2d 31 30 0a 20 00 00 00 ff
+00 55 35 42 35 38 50 57 37 0a 20 20 20 20 01 f2
+
+02 03 27 f1 4b 10 1f 04 13 12 11 03 02 01 05 14
+23 09 7f 07 83 01 00 00 65 03 0c 00 10 00 68 1a
+00 00 01 01 30 4b e6 56 5e 00 a0 a0 a0 29 50 30
+20 35 00 56 50 21 00 00 1a d9 76 00 a0 a0 a0 34
+50 30 20 35 00 56 50 21 00 00 1a 20 1c 56 86 50
+00 20 30 0e 38 13 00 56 50 21 00 00 1e 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ef
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 26279
+    Made in: week 49 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6523, 0.3339
+    Green: 0.2900, 0.6337
+    Blue : 0.1513, 0.0517
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x45:  1920x1200   59.884600 Hz  16:10    74.556 kHz    193.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 48-75 Hz V, 30-115 kHz H, max dotclock 310 MHz
+    Display Product Name: 'LEN Q27h-10'
+    Display Product Serial Number: 'U5B58PW7'
+  Extension blocks: 1
+Checksum: 0xf2
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 75 Hz
+    Flags 1.x: 0xe6 (MCCS)
+  Detailed Timing Descriptors:
+    DTD 2:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 3:  2560x1440   74.970923 Hz  16:9    111.857 kHz    304.250000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   44 Vpol N
+    DTD 4:  1366x768    60.000000 Hz 683:384   48.000 kHz     72.000000 MHz (598 mm x 336 mm)
+                 Hfront   14 Hsync  56 Hback   64 Hpol P
+                 Vfront    1 Vsync   3 Vback   28 Vpol P
+Checksum: 0xef  Unused space in Extension Block: 34 bytes

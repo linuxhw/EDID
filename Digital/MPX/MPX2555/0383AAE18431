@@ -1,0 +1,110 @@
+
+EDID (hex):
+00ffffffffffff003618552504010101
+1d220104b50805783a3585a656489a24
+125054000000d1c06100410071c00101
+010101010101b920009051201f304880
+360080500000001e000000fc00544554
+52410a20202020202020000000fd0018
+3e0f500a000a202020202020000000ff
+004c35363035313739343330320a0110
+0203083441102080451b009051201f30
+4880360080500000001cb92000905120
+1f304880360080500000001e760b00a0
+50200f303020360080500000001ac10d
+00a050200f303020360080500000001a
+ca1680a040d015203020360080500000
+001ac40a00a030e00f10302036008050
+0000001a000000000000000000000090
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 18 55 25 04 01 01 01
+1d 22 01 04 b5 08 05 78 3a 35 85 a6 56 48 9a 24
+12 50 54 00 00 00 d1 c0 61 00 41 00 71 c0 01 01
+01 01 01 01 01 01 b9 20 00 90 51 20 1f 30 48 80
+36 00 80 50 00 00 00 1e 00 00 00 fc 00 54 45 54
+52 41 0a 20 20 20 20 20 20 20 00 00 00 fd 00 18
+3e 0f 50 0a 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 4c 35 36 30 35 31 37 39 34 33 30 32 0a 01 10
+
+02 03 08 34 41 10 20 80 45 1b 00 90 51 20 1f 30
+48 80 36 00 80 50 00 00 00 1c b9 20 00 90 51 20
+1f 30 48 80 36 00 80 50 00 00 00 1e 76 0b 00 a0
+50 20 0f 30 30 20 36 00 80 50 00 00 00 1a c1 0d
+00 a0 50 20 0f 30 30 20 36 00 80 50 00 00 00 1a
+ca 16 80 a0 40 d0 15 20 30 20 36 00 80 50 00 00
+00 1a c4 0a 00 a0 30 e0 0f 10 30 20 36 00 80 50
+00 00 00 1a 00 00 00 00 00 00 00 00 00 00 00 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: MPX
+    Model: 9557
+    Serial Number: 16843012
+    Made in: week 29 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 8 cm x 5 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6484, 0.3388
+    Green: 0.2822, 0.6025
+    Blue : 0.1425, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    GTF     :  1024x640    60.000182 Hz  16:10    39.780 kHz     52.828000 MHz
+    GTF     :   768x480    59.999581 Hz  16:10    29.820 kHz     28.627000 MHz
+    GTF     :  1152x648    60.000120 Hz  16:9     40.260 kHz     59.907000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.003725 Hz  16:10    49.863 kHz     83.770000 MHz (128 mm x 80 mm)
+                 Hfront   72 Hsync 128 Hback  200 Hpol P
+                 Vfront    3 Vsync   6 Vback   22 Vpol P
+    Display Product Name: 'TETRA'
+    Display Range Limits:
+      Monitor ranges (GTF): 24-62 Hz V, 15-80 kHz H, max dotclock 100 MHz
+    Display Product Serial Number: 'L56051794302'
+  Extension blocks: 1
+Checksum: 0x10
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 4
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Audio Data Block:
+  Speaker Allocation Data Block:
+  Detailed Timing Descriptors:
+    DTD 2:  1280x800    50.004298 Hz  16:10    41.554 kHz     69.810000 MHz (128 mm x 80 mm)
+                 Hfront   72 Hsync 128 Hback  200 Hpol N
+                 Vfront    3 Vsync   6 Vback   22 Vpol P
+    DTD 3:  1280x800    60.003725 Hz  16:10    49.863 kHz     83.770000 MHz (128 mm x 80 mm)
+                 Hfront   72 Hsync 128 Hback  200 Hpol P
+                 Vfront    3 Vsync   6 Vback   22 Vpol P
+    DTD 4:  1280x800    25.000000 Hz  16:10    20.375 kHz     29.340000 MHz (128 mm x 80 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback    6 Vpol N
+    DTD 5:  1280x800    30.001704 Hz  16:10    24.451 kHz     35.210000 MHz (128 mm x 80 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback    6 Vpol N
+    DTD 6:  1152x720    60.008723 Hz  16:10    44.466 kHz     58.340000 MHz (128 mm x 80 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   12 Vpol N
+    DTD 7:   768x480    59.996517 Hz  16:10    29.698 kHz     27.560000 MHz (128 mm x 80 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback    6 Vpol N
+Checksum: 0x90  Unused space in Extension Block: 11 bytes

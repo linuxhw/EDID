@@ -1,0 +1,111 @@
+
+EDID (hex):
+00ffffffffffff003490601000000000
+2a130103803c22782a0320a755459624
+11494b000000d10081c0010101010101
+010101010101283c80a070b023403020
+360007442100001a011d007251d01e20
+6e285500c48e2100001e000000fc004d
+445020416461707465720a20000000fd
+00304b0b9614000a20202020202001d2
+02032371528400000000000000000000
+000000000000002309070665030c0010
+000000011d007251d01e206e285500c4
+8e2100001e011d007251d01e206e2855
+00c48e2100001e011d007251d01e206e
+285500c48e2100001e011d007251d01e
+206e2855005b56210000000000000000
+000000000000000000000000000000e7
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 90 60 10 00 00 00 00
+2a 13 01 03 80 3c 22 78 2a 03 20 a7 55 45 96 24
+11 49 4b 00 00 00 d1 00 81 c0 01 01 01 01 01 01
+01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 07 44 21 00 00 1a 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 c4 8e 21 00 00 1e 00 00 00 fc 00 4d
+44 50 20 41 64 61 70 74 65 72 0a 20 00 00 00 fd
+00 30 4b 0b 96 14 00 0a 20 20 20 20 20 20 01 d2
+
+02 03 23 71 52 84 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 23 09 07 06 65 03 0c 00 10
+00 00 00 01 1d 00 72 51 d0 1e 20 6e 28 55 00 c4
+8e 21 00 00 1e 01 1d 00 72 51 d0 1e 20 6e 28 55
+00 c4 8e 21 00 00 1e 01 1d 00 72 51 d0 1e 20 6e
+28 55 00 c4 8e 21 00 00 1e 01 1d 00 72 51 d0 1e
+20 6e 28 55 00 5b 56 21 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 e7
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MDP
+    Model: 4192
+    Made in: week 42 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6523, 0.3320
+    Green: 0.2695, 0.5888
+    Blue : 0.1406, 0.0683
+    White: 0.2851, 0.2929
+  Established Timings I & II: none
+  Standard Timings:
+    DMT 0x45:  1920x1200   59.884600 Hz  16:10    74.556 kHz    193.250000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (519 mm x 324 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   26 Vpol N
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    Display Product Name: 'MDP Adapter'
+    Display Range Limits:
+      Monitor ranges (GTF): 48-75 Hz V, 11-150 kHz H, max dotclock 200 MHz
+  Extension blocks: 1
+Checksum: 0xd2
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Detailed Timing Descriptors:
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 6:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (analog composite, sync-on-green, 603 mm x 342 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol N
+                 Vfront    5 Vsync   5 Vback   20 Vpol N
+Checksum: 0xe7  Unused space in Extension Block: 20 bytes
+
+
