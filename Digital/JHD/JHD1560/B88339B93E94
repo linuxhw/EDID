@@ -1,0 +1,152 @@
+
+EDID (hex):
+00ffffffffffff002904601501010101
+1d1e0103802213783eee91a3544c9926
+0f5054000000d1c001016100950090c0
+81c0b3c0a9c0023a801871382940582c
+450054be1000001e000000fc004a4832
+30370a20202020202020000000ff0064
+656d6f7365742d310a203020000000fd
+001e4b1e541302002020202020200116
+020335f24a04051013141f01021112e2
+00d5e305c00023097f07830100006703
+0c001000383ce6060501626200681a00
+000101284b023a801871382d40582c25
+0054be1000001e011d8018711c162058
+2c250054be1000009e00000000000000
+00000000000000000000000000000000
+00000000000000000000000000000014
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 29 04 60 15 01 01 01 01
+1d 1e 01 03 80 22 13 78 3e ee 91 a3 54 4c 99 26
+0f 50 54 00 00 00 d1 c0 01 01 61 00 95 00 90 c0
+81 c0 b3 c0 a9 c0 02 3a 80 18 71 38 29 40 58 2c
+45 00 54 be 10 00 00 1e 00 00 00 fc 00 4a 48 32
+30 37 0a 20 20 20 20 20 20 20 00 00 00 ff 00 64
+65 6d 6f 73 65 74 2d 31 0a 20 30 20 00 00 00 fd
+00 1e 4b 1e 54 13 02 00 20 20 20 20 20 20 01 16
+
+02 03 35 f2 4a 04 05 10 13 14 1f 01 02 11 12 e2
+00 d5 e3 05 c0 00 23 09 7f 07 83 01 00 00 67 03
+0c 00 10 00 38 3c e6 06 05 01 62 62 00 68 1a 00
+00 01 01 28 4b 02 3a 80 18 71 38 2d 40 58 2c 25
+00 54 be 10 00 00 1e 01 1d 80 18 71 1c 16 20 58
+2c 25 00 54 be 10 00 00 9e 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 14
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: JHD
+    Model: 5472
+    Serial Number: 16843009
+    Made in: week 29 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Undefined display color type
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    GTF     :  1024x640    60.000182 Hz  16:10    39.780 kHz     52.828000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    GTF     :  1400x787    60.000134 Hz  16:9     48.900 kHz     89.585000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    GTF     :  1680x945    59.999909 Hz  16:9     58.680 kHz    131.443000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.214095 Hz  16:9     67.500 kHz    148.500000 MHz (340 mm x 190 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   32 Vpol P
+    Display Product Name: 'JH207'
+    Display Product Serial Number: 'demoset-1'
+    Display Range Limits:
+      Monitor ranges (Secondary GTF): 30-75 Hz V, 30-84 kHz H, max dotclock 190 MHz
+      GTF Secondary Curve Block:
+        Start frequency: 64 kHz
+        C: 16.0%
+        M: 8224%/kHz
+        K: 32
+        J: 16.0%
+  Extension blocks: 1
+Checksum: 0x16
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Overscanned
+    IT scan behavior: Always Overscanned
+    CE scan behavior: Always Overscanned
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 98 (417.710 cd/m^2)
+    Desired content max frame-average luminance: 98 (417.710 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 75 Hz
+    Flags 1.x: 0x02 (MCCS)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (340 mm x 190 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol P
+    DTD 3:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (340 mm x 190 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+Checksum: 0x14  Unused space in Extension Block: 38 bytes

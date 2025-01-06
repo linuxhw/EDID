@@ -1,0 +1,113 @@
+
+EDID (hex):
+00ffffffffffff0026cd0f7156030000
+2e1e0103803e22782a08a5a2574fa228
+0f5054bd4b00d1c081808140950f9500
+b30081c00101023a801871382d402c58
+4500ffff0000001e0000000000000000
+00000000000000000000000000fc0050
+4c3238373555480a20202020000000fd
+0017501e631e000a202020202020013a
+02010400023a801871382d40582c4500
+6d552100001e011d007251d01e206e28
+55006d552100001e8c0ad08a20e02d10
+103e96006d55210000188c0ad0902040
+31200c4055006d55210000184d6c80a0
+70703e8030203a006d552100001a0000
+00000000000000000000000000000000
+0000000000000000000000000000001d
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cd 0f 71 56 03 00 00
+2e 1e 01 03 80 3e 22 78 2a 08 a5 a2 57 4f a2 28
+0f 50 54 bd 4b 00 d1 c0 81 80 81 40 95 0f 95 00
+b3 00 81 c0 01 01 02 3a 80 18 71 38 2d 40 2c 58
+45 00 ff ff 00 00 00 1e 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fc 00 50
+4c 32 38 37 35 55 48 0a 20 20 20 20 00 00 00 fd
+00 17 50 1e 63 1e 00 0a 20 20 20 20 20 20 01 3a
+
+02 01 04 00 02 3a 80 18 71 38 2d 40 58 2c 45 00
+6d 55 21 00 00 1e 01 1d 00 72 51 d0 1e 20 6e 28
+55 00 6d 55 21 00 00 1e 8c 0a d0 8a 20 e0 2d 10
+10 3e 96 00 6d 55 21 00 00 18 8c 0a d0 90 20 40
+31 20 0c 40 55 00 6d 55 21 00 00 18 4d 6c 80 a0
+70 70 3e 80 30 20 3a 00 6d 55 21 00 00 1a 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: IVM
+    Model: 28943
+    Serial Number: 854
+    Made in: week 46 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 62 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6328, 0.3398
+    Green: 0.3105, 0.6328
+    Blue : 0.1582, 0.0605
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    Apple   :   640x480    66.666667 Hz   4:3     35.000 kHz     30.240000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x30:  1440x900    74.984427 Hz  16:10    70.635 kHz    136.750000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (255 mm x 255 mm)
+                 Hfront   44 Hsync  88 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Empty Descriptor
+    Display Product Name: 'PL2875UH'
+    Display Range Limits:
+      Monitor ranges (GTF): 23-80 Hz V, 30-99 kHz H, max dotclock 300 MHz
+  Extension blocks: 1
+Checksum: 0x3a
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 1
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (621 mm x 341 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (621 mm x 341 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (621 mm x 341 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 5:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (621 mm x 341 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 6:  1920x2160   59.987970 Hz   8:9    133.293 kHz    277.250000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   49 Vpol N
+Checksum: 0x1d  Unused space in Extension Block: 33 bytes
+
+

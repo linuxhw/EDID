@@ -1,0 +1,105 @@
+
+EDID (hex):
+00ffffffffffff0026cdb7388b000000
+1c1e0103802213782a2670a656509927
+0c4e57210800818081409500b3000100
+010001010101023a801871382d40582c
+450058c21000001e662156aa51001e30
+468f330058c21000001c000000fd0039
+3f1f440f000a202020202020000000fc
+00504c543136333448202020202001b5
+020315b3450102030490830000006603
+0c00100080011d007251d01e206e2855
+00a20b3200001e000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000f5
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cd b7 38 8b 00 00 00
+1c 1e 01 03 80 22 13 78 2a 26 70 a6 56 50 99 27
+0c 4e 57 21 08 00 81 80 81 40 95 00 b3 00 01 00
+01 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 58 c2 10 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 58 c2 10 00 00 1c 00 00 00 fd 00 39
+3f 1f 44 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 4c 54 31 36 33 34 48 20 20 20 20 20 01 b5
+
+02 03 15 b3 45 01 02 03 04 90 83 00 00 00 66 03
+0c 00 10 00 80 01 1d 00 72 51 d0 1e 20 6e 28 55
+00 a2 0b 32 00 00 1e 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f5
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: IVM
+    Model: 14519
+    Serial Number: 139
+    Made in: week 28 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6484, 0.3378
+    Green: 0.3134, 0.5996
+    Blue : 0.1533, 0.0498
+    White: 0.3046, 0.3398
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (344 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (344 mm x 194 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol N
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 57-63 Hz V, 31-68 kHz H, max dotclock 150 MHz
+    Display Product Name: 'PLT1634H     '
+  Extension blocks: 1
+Checksum: 0xb5
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 3
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+  Speaker Allocation Data Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+  Detailed Timing Descriptors:
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (930 mm x 523 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0xf5  Unused space in Extension Block: 88 bytes

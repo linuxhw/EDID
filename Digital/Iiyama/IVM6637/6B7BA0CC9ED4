@@ -1,0 +1,122 @@
+
+EDID (hex):
+00ffffffffffff0026cd3766d6070000
+311e0104b53c2278fb0c95ab554ca024
+0d50542108009500a9c0a940b300d1c0
+d1cae1008180565e00a0a0a029503020
+350055502100001a000000ff00313135
+32313034393032303036000000fd0030
+4678781e010a202020202020000000fc
+00504c32373932510a202020202001d8
+020318f14b100504030201111213141f
+23090707830100004c6b0050a0a03050
+0820280855502100001a000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000062
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cd 37 66 d6 07 00 00
+31 1e 01 04 b5 3c 22 78 fb 0c 95 ab 55 4c a0 24
+0d 50 54 21 08 00 95 00 a9 c0 a9 40 b3 00 d1 c0
+d1 ca e1 00 81 80 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 55 50 21 00 00 1a 00 00 00 ff 00 31 31 35
+32 31 30 34 39 30 32 30 30 36 00 00 00 fd 00 30
+46 78 78 1e 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 4c 32 37 39 32 51 0a 20 20 20 20 20 01 d8
+
+02 03 18 f1 4b 10 05 04 03 02 01 11 12 13 14 1f
+23 09 07 07 83 01 00 00 4c 6b 00 50 a0 a0 30 50
+08 20 28 08 55 50 21 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 62
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: IVM
+    Model: 26167
+    Serial Number: 2006
+    Made in: week 49 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6679, 0.3320
+    Green: 0.2998, 0.6250
+    Blue : 0.1425, 0.0517
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    GTF     :  1920x1080   69.999850 Hz  16:9     78.680 kHz    205.197000 MHz
+    GTF     :  2048x1280   60.000000 Hz  16:10    79.500 kHz    221.328000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    Display Product Serial Number: '1152104902006'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-70 Hz V, 120-120 kHz H, max dotclock 300 MHz
+    Display Product Name: 'PL2792Q'
+  Extension blocks: 1
+Checksum: 0xd8
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 2:  2560x1440   69.923021 Hz  16:9    104.045 kHz    274.680000 MHz (597 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront   34 Vsync   8 Vback    6 Vpol N
+Checksum: 0x62  Unused space in Extension Block: 85 bytes
+
+

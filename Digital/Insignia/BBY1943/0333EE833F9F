@@ -1,0 +1,135 @@
+
+EDID (hex):
+00ffffffffffff000859431900000000
+01140103802917782a3f31a555489a27
+135054afce0081c00101010101010101
+010101010101662150b051001b304070
+36009ae61000001e0e1f008051001e30
+408037009ae61000001c000000fd0032
+3e0f460f000a202020202020000000fc
+00445831394c443135304131310a01c1
+02031f71478405030210060726090707
+1507508301000067030c001000801201
+1d007251d01e206e2855009ae6100000
+1e011d8018711c1620582c25009ae610
+00009e8c0ad08a20e02d10103e96009a
+e6100000188c0ad08a20e02d10103e96
+009ae610000018023a801871382d4058
+2c45009ae61000001e00000000000089
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 08 59 43 19 00 00 00 00
+01 14 01 03 80 29 17 78 2a 3f 31 a5 55 48 9a 27
+13 50 54 af ce 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70
+36 00 9a e6 10 00 00 1e 0e 1f 00 80 51 00 1e 30
+40 80 37 00 9a e6 10 00 00 1c 00 00 00 fd 00 32
+3e 0f 46 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 44 58 31 39 4c 44 31 35 30 41 31 31 0a 01 c1
+
+02 03 1f 71 47 84 05 03 02 10 06 07 26 09 07 07
+15 07 50 83 01 00 00 67 03 0c 00 10 00 80 12 01
+1d 00 72 51 d0 1e 20 6e 28 55 00 9a e6 10 00 00
+1e 01 1d 80 18 71 1c 16 20 58 2c 25 00 9a e6 10
+00 00 9e 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 9a
+e6 10 00 00 18 8c 0a d0 8a 20 e0 2d 10 10 3e 96
+00 9a e6 10 00 00 18 02 3a 80 18 71 38 2d 40 58
+2c 45 00 9a e6 10 00 00 1e 00 00 00 00 00 00 89
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: BBY
+    Model: 6467
+    Made in: week 1 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 41 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6445, 0.3349
+    Green: 0.2841, 0.6044
+    Blue : 0.1523, 0.0771
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (410 mm x 230 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    DTD 2:  1280x768    59.870228 Hz   5:3     47.776 kHz     79.500000 MHz (410 mm x 230 mm)
+                 Hfront   64 Hsync 128 Hback  192 Hpol N
+                 Vfront    3 Vsync   7 Vback   20 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-62 Hz V, 15-70 kHz H, max dotclock 150 MHz
+    Display Product Name: 'DX19LD150A11'
+  Extension blocks: 1
+Checksum: 0xc1
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 640 kb/s
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 90 MHz
+  Detailed Timing Descriptors:
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (410 mm x 230 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (410 mm x 230 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (410 mm x 230 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 6:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (410 mm x 230 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 7:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (410 mm x 230 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0x89  Unused space in Extension Block: 6 bytes

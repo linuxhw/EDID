@@ -1,0 +1,122 @@
+
+EDID (hex):
+00ffffffffffff000859102201010101
+2d12010380301b780a9203a256489925
+144a4da1080081c00101010101010101
+010101010101662150b051001b304070
+3600dd0c1100001ea91a00a050001630
+30203700dd0c1100001a000000fc004e
+532d4c3232512d3130410a20000000fd
+0038470f3109000a20202020202001a0
+02031871480584030201070610230907
+0766030c00100080011d007251d01e20
+6e285500dd0c1100001e8c0ad08a20e0
+2d10103e9600dd0c11000018011d8018
+711c1620582c2500dd0c1100009e8c0a
+a01451f01600267c4300dd0c11000098
+00000000000000000000000000000000
+00000000000000000000000000000058
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 08 59 10 22 01 01 01 01
+2d 12 01 03 80 30 1b 78 0a 92 03 a2 56 48 99 25
+14 4a 4d a1 08 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70
+36 00 dd 0c 11 00 00 1e a9 1a 00 a0 50 00 16 30
+30 20 37 00 dd 0c 11 00 00 1a 00 00 00 fc 00 4e
+53 2d 4c 32 32 51 2d 31 30 41 0a 20 00 00 00 fd
+00 38 47 0f 31 09 00 0a 20 20 20 20 20 20 01 a0
+
+02 03 18 71 48 05 84 03 02 01 07 06 10 23 09 07
+07 66 03 0c 00 10 00 80 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 dd 0c 11 00 00 1e 8c 0a d0 8a 20 e0
+2d 10 10 3e 96 00 dd 0c 11 00 00 18 01 1d 80 18
+71 1c 16 20 58 2c 25 00 dd 0c 11 00 00 9e 8c 0a
+a0 14 51 f0 16 00 26 7c 43 00 dd 0c 11 00 00 98
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 58
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: BBY
+    Model: 8720
+    Serial Number: 16843009
+    Made in: week 45 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6347, 0.3369
+    Green: 0.2812, 0.5996
+    Blue : 0.1445, 0.0781
+    White: 0.2890, 0.3037
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (477 mm x 268 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    DTD 2:  1280x768    59.994726 Hz   5:3     47.396 kHz     68.250000 MHz (477 mm x 268 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   7 Vback   12 Vpol N
+    Display Product Name: 'NS-L22Q-10A'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-71 Hz V, 15-49 kHz H, max dotclock 90 MHz
+  Extension blocks: 1
+Checksum: 0xa0
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+  Detailed Timing Descriptors:
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (477 mm x 268 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (477 mm x 268 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (477 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 6:  1440x480i   59.940060 Hz   3:1     15.734 kHz     27.000000 MHz (477 mm x 268 mm)
+                 Hfront   38 Hsync 124 Hback  114 Hpol N
+                 Vfront    4 Vsync   3 Vback   15 Vpol N Vfront +0.5 Odd Field
+                 Vfront    4 Vsync   3 Vback   15 Vpol N Vback  +0.5 Even Field
+Checksum: 0x58  Unused space in Extension Block: 31 bytes
+
+
