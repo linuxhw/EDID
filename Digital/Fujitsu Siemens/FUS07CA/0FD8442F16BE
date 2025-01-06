@@ -1,0 +1,135 @@
+
+EDID (hex):
+00ffffffffffff001ab3ca0701000000
+2414010380331d782ac9a5a4564b9d25
+125054a54b008180a9409500b3000101
+010101010101023a801871382d40582c
+4500fd1e1100001e000000fd00314c0f
+5211000a202020202020000000fc0053
+4c33323330540a2020202020000000ff
+00595634483030303131340a202001b5
+02031e724b909f051404130312010716
+230907078301000065030c001000023a
+80d072382d40102c9680fd1e11000018
+011d8018711c1620582c2500fd1e1100
+009e011d80d0721c1620102c2580fd1e
+1100009e011d00bc52d01e20b8285540
+fd1e1100001e8c0ad090204031200c40
+5500fd1e1100001800000000000000c5
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1a b3 ca 07 01 00 00 00
+24 14 01 03 80 33 1d 78 2a c9 a5 a4 56 4b 9d 25
+12 50 54 a5 4b 00 81 80 a9 40 95 00 b3 00 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 31 4c 0f
+52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53
+4c 33 32 33 30 54 0a 20 20 20 20 20 00 00 00 ff
+00 59 56 34 48 30 30 30 31 31 34 0a 20 20 01 b5
+
+02 03 1e 72 4b 90 9f 05 14 04 13 03 12 01 07 16
+23 09 07 07 83 01 00 00 65 03 0c 00 10 00 02 3a
+80 d0 72 38 2d 40 10 2c 96 80 fd 1e 11 00 00 18
+01 1d 80 18 71 1c 16 20 58 2c 25 00 fd 1e 11 00
+00 9e 01 1d 80 d0 72 1c 16 20 10 2c 25 80 fd 1e
+11 00 00 9e 01 1d 00 bc 52 d0 1e 20 b8 28 55 40
+fd 1e 11 00 00 1e 8c 0a d0 90 20 40 31 20 0c 40
+55 00 fd 1e 11 00 00 18 00 00 00 00 00 00 00 c5
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: FUS
+    Model: 1994
+    Serial Number: 1
+    Made in: week 36 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 51 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6435, 0.3359
+    Green: 0.2949, 0.6142
+    Blue : 0.1464, 0.0722
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (509 mm x 286 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 49-76 Hz V, 15-82 kHz H, max dotclock 170 MHz
+    Display Product Name: 'SL3230T'
+    Display Product Serial Number: 'YV4H000114'
+  Extension blocks: 1
+Checksum: 0xb5
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (509 mm x 286 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 3:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (509 mm x 286 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 4:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (509 mm x 286 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 5:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (509 mm x 286 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 6:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (509 mm x 286 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+Checksum: 0xc5  Unused space in Extension Block: 7 bytes
+
+

@@ -1,0 +1,137 @@
+
+EDID (hex):
+00ffffffffffff0015c3192401010101
+1c17010380331d78ea2af5a9544b9d23
+0c5054a1080081808140b30081c00101
+010101010101023a801871382d40582c
+4500fe1f1100001e000000ff00373631
+38353037330a20202020000000fd0031
+3d0f440f000a202020202020000000fc
+004653323333330a2020202020200157
+020325f14e901f051404130312021107
+160615230907078301000066030c0010
+0080e2007b011d8018711c1620582c25
+00fe1f1100009e011d80d0721c162010
+2c2580fe1f1100009e8c0ad08a20e02d
+10103e9600fe1f110000188c0ad09020
+4031200c405500fe1f11000018000000
+00000000000000000000000000000086
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 c3 19 24 01 01 01 01
+1c 17 01 03 80 33 1d 78 ea 2a f5 a9 54 4b 9d 23
+0c 50 54 a1 08 00 81 80 81 40 b3 00 81 c0 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fe 1f 11 00 00 1e 00 00 00 ff 00 37 36 31
+38 35 30 37 33 0a 20 20 20 20 00 00 00 fd 00 31
+3d 0f 44 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 46 53 32 33 33 33 0a 20 20 20 20 20 20 01 57
+
+02 03 25 f1 4e 90 1f 05 14 04 13 03 12 02 11 07
+16 06 15 23 09 07 07 83 01 00 00 66 03 0c 00 10
+00 80 e2 00 7b 01 1d 80 18 71 1c 16 20 58 2c 25
+00 fe 1f 11 00 00 9e 01 1d 80 d0 72 1c 16 20 10
+2c 25 80 fe 1f 11 00 00 9e 8c 0a d0 8a 20 e0 2d
+10 10 3e 96 00 fe 1f 11 00 00 18 8c 0a d0 90 20
+40 31 20 0c 40 55 00 fe 1f 11 00 00 18 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 86
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ENC
+    Model: 9241
+    Serial Number: 16843009
+    Made in: week 28 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 51 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6601, 0.3300
+    Green: 0.2949, 0.6152
+    Blue : 0.1396, 0.0498
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (510 mm x 287 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: '76185073'
+    Display Range Limits:
+      Monitor ranges (GTF): 49-61 Hz V, 15-68 kHz H, max dotclock 150 MHz
+    Display Product Name: 'FS2333'
+  Extension blocks: 1
+Checksum: 0x57
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (510 mm x 287 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 3:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (510 mm x 287 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (510 mm x 287 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 5:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (510 mm x 287 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+Checksum: 0x86  Unused space in Extension Block: 18 bytes

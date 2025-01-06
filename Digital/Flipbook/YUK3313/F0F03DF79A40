@@ -1,0 +1,133 @@
+
+EDID (hex):
+00ffffffffffff0066ab133303110233
+091d0103801d11783eee91a3544c9926
+0f5054010800d1c0818081c001010101
+010101010101333680a070381f403020
+350025a51000001e000000fc00757065
+72666563740a20202020000000ff0064
+656d6f7365742d310a203020000000fd
+0038411e510f010a2020202020200145
+020329f246101f22212004e200d5e305
+c00023097f078301000067030c001000
+383ce6060501626200333680a070381f
+403020350025a51000001e0000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000b2
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 66 ab 13 33 03 11 02 33
+09 1d 01 03 80 1d 11 78 3e ee 91 a3 54 4c 99 26
+0f 50 54 01 08 00 d1 c0 81 80 81 c0 01 01 01 01
+01 01 01 01 01 01 33 36 80 a0 70 38 1f 40 30 20
+35 00 25 a5 10 00 00 1e 00 00 00 fc 00 75 70 65
+72 66 65 63 74 0a 20 20 20 20 00 00 00 ff 00 64
+65 6d 6f 73 65 74 2d 31 0a 20 30 20 00 00 00 fd
+00 38 41 1e 51 0f 01 0a 20 20 20 20 20 20 01 45
+
+02 03 29 f2 46 10 1f 22 21 20 04 e2 00 d5 e3 05
+c0 00 23 09 7f 07 83 01 00 00 67 03 0c 00 10 00
+38 3c e6 06 05 01 62 62 00 33 36 80 a0 70 38 1f
+40 30 20 35 00 25 a5 10 00 00 1e 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 b2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: YUK
+    Model: 13075
+    Serial Number: 855773443
+    Made in: week 9 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Undefined display color type
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.042062 Hz  16:9     66.707 kHz    138.750000 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol P
+    Display Product Name: 'uperfect'
+    Display Product Serial Number: 'demoset-1'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 56-65 Hz V, 30-81 kHz H, max dotclock 150 MHz
+  Extension blocks: 1
+Checksum: 0x45
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Overscanned
+    IT scan behavior: Always Overscanned
+    CE scan behavior: Always Overscanned
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 98 (417.710 cd/m^2)
+    Desired content max frame-average luminance: 98 (417.710 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.042062 Hz  16:9     66.707 kHz    138.750000 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol P
+Checksum: 0xb2  Unused space in Extension Block: 68 bytes
+
+

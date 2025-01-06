@@ -1,0 +1,104 @@
+
+EDID (hex):
+00ffffffffffff001ab3f50701010101
+03150104a52f1e7822c665a059589d27
+0e5054a54b0081800101010101010101
+01010101010121399030621a274068b0
+3600da281100001c000000fc00423232
+572d36204c45440a2020000000fd0038
+4c1e5210000a202020202020000000ff
+00595633553032353736380a20200102
+02030c0023090707830100009a29a0d0
+5184223050983600da281100001c9e20
+009051201f3048803600da281100001c
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000004f
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1a b3 f5 07 01 01 01 01
+03 15 01 04 a5 2f 1e 78 22 c6 65 a0 59 58 9d 27
+0e 50 54 a5 4b 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0
+36 00 da 28 11 00 00 1c 00 00 00 fc 00 42 32 32
+57 2d 36 20 4c 45 44 0a 20 20 00 00 00 fd 00 38
+4c 1e 52 10 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 59 56 33 55 30 32 35 37 36 38 0a 20 20 01 02
+
+02 03 0c 00 23 09 07 07 83 01 00 00 9a 29 a0 d0
+51 84 22 30 50 98 36 00 da 28 11 00 00 1c 9e 20
+00 90 51 20 1f 30 48 80 36 00 da 28 11 00 00 1c
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: FUS
+    Model: 2037
+    Serial Number: 16843009
+    Made in: week 3 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 47 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6279, 0.3476
+    Green: 0.3447, 0.6152
+    Blue : 0.1533, 0.0566
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz (474 mm x 296 mm)
+                 Hfront  104 Hsync 176 Hback  280 Hpol N
+                 Vfront    3 Vsync   6 Vback   30 Vpol P
+    Display Product Name: 'B22W-6 LED'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-76 Hz V, 30-82 kHz H, max dotclock 160 MHz
+    Display Product Serial Number: 'YV3U025768'
+  Extension blocks: 1
+Checksum: 0x02
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 2:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (474 mm x 296 mm)
+                 Hfront   80 Hsync 152 Hback  232 Hpol N
+                 Vfront    3 Vsync   6 Vback   25 Vpol P
+    DTD 3:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz (474 mm x 296 mm)
+                 Hfront   72 Hsync 128 Hback  200 Hpol N
+                 Vfront    3 Vsync   6 Vback   22 Vpol P
+Checksum: 0x4f  Unused space in Extension Block: 79 bytes

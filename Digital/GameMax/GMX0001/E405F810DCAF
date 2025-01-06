@@ -1,0 +1,120 @@
+
+EDID (hex):
+00ffffffffffff001db8010001000000
+0a180103800c09780a1eac9859568528
+29525700000001010101010101010101
+0101010101018c0ad08a20e02d10103e
+9600816000000018011d8018711c1620
+582c250081490000009e000000fc0048
+444d492d44410a2020202020000000fd
+00173d0d2e11000a20202020202001dc
+02031d414484130312230f7f07835f00
+0067030c0010008821e3050001011d00
+7251d01e206e28550081490000001ed6
+0980a020e02d101060a2008160000808
+188c0ad090204031200c405500816000
+000018011d00bc52d01e20b8285540c4
+8e2100001e0000000000000000000000
+1e00180100000000000000000000002a
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1d b8 01 00 01 00 00 00
+0a 18 01 03 80 0c 09 78 0a 1e ac 98 59 56 85 28
+29 52 57 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8c 0a d0 8a 20 e0 2d 10 10 3e
+96 00 81 60 00 00 00 18 01 1d 80 18 71 1c 16 20
+58 2c 25 00 81 49 00 00 00 9e 00 00 00 fc 00 48
+44 4d 49 2d 44 41 0a 20 20 20 20 20 00 00 00 fd
+00 17 3d 0d 2e 11 00 0a 20 20 20 20 20 20 01 dc
+
+02 03 1d 41 44 84 13 03 12 23 0f 7f 07 83 5f 00
+00 67 03 0c 00 10 00 88 21 e3 05 00 01 01 1d 00
+72 51 d0 1e 20 6e 28 55 00 81 49 00 00 00 1e d6
+09 80 a0 20 e0 2d 10 10 60 a2 00 81 60 00 08 08
+18 8c 0a d0 90 20 40 31 20 0c 40 55 00 81 60 00
+00 00 18 01 1d 00 bc 52 d0 1e 20 b8 28 55 40 c4
+8e 21 00 00 1e 00 00 00 00 00 00 00 00 00 00 00
+1e 00 18 01 00 00 00 00 00 00 00 00 00 00 00 2a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GMX
+    Model: 1
+    Serial Number: 1
+    Made in: week 10 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 12 cm x 9 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5937, 0.3486
+    Green: 0.3388, 0.5214
+    Blue : 0.1582, 0.1621
+    White: 0.3232, 0.3398
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (129 mm x 96 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 2:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (129 mm x 73 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    Display Product Name: 'HDMI-DA'
+    Display Range Limits:
+      Monitor ranges (GTF): 23-61 Hz V, 13-46 kHz H, max dotclock 170 MHz
+  Extension blocks: 1
+Checksum: 0xdc
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+    LFE1 - Low Frequency Effects 1
+    FC - Front Center
+    BL/BR - Back Left/Right
+    BC - Back Center
+    RLC/RRC - Rear Left/Right of Center (Deprecated)
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    DC_Y444
+    Maximum TMDS clock: 165 MHz
+  Colorimetry Data Block:
+    Gamut Boundary Description Metadata Profile P0
+  Detailed Timing Descriptors:
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (129 mm x 73 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:   640x480    59.952381 Hz   4:3     31.475 kHz     25.180000 MHz (129 mm x 96 mm)
+                 Hfront   16 Hsync  96 Hback   32 Hpol N Hborder 8
+                 Vfront   10 Vsync   2 Vback   17 Vpol N Vborder 8
+    DTD 5:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (129 mm x 96 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 6:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 1e 00 18 01 00 00 00 '................'
+Checksum: 0x2a  Unused space in Extension Block: 8 bytes

@@ -1,0 +1,126 @@
+
+EDID (hex):
+00ffffffffffff0015c3822312b38402
+071a0104a53c2278c22795a9544f9e26
+0a5054a10800d100d1c0a94081808140
+81c001010101565e00a0a0a029503020
+350055502100001a21390000a3a01c50
+7808351055502100001c000000fd003b
+3d1f5919000a202020202020000000fc
+00455632373336570a20202020200109
+020312c045100403020123091f078301
+0000023a801871382d40582c45005550
+2100001e011d007251d01e206e285500
+55502100001e8c0ad08a20e02d10103e
+96005550210000188c0ad08a20e02d10
+103e9600c05011000018d50980a020e0
+2d101060a200c0501100001800000000
+000000000000000000000000000000e0
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 c3 82 23 12 b3 84 02
+07 1a 01 04 a5 3c 22 78 c2 27 95 a9 54 4f 9e 26
+0a 50 54 a1 08 00 d1 00 d1 c0 a9 40 81 80 81 40
+81 c0 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 55 50 21 00 00 1a 21 39 00 00 a3 a0 1c 50
+78 08 35 10 55 50 21 00 00 1c 00 00 00 fd 00 3b
+3d 1f 59 19 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 45 56 32 37 33 36 57 0a 20 20 20 20 20 01 09
+
+02 03 12 c0 45 10 04 03 02 01 23 09 1f 07 83 01
+00 00 02 3a 80 18 71 38 2d 40 58 2c 45 00 55 50
+21 00 00 1e 01 1d 00 72 51 d0 1e 20 6e 28 55 00
+55 50 21 00 00 1e 8c 0a d0 8a 20 e0 2d 10 10 3e
+96 00 55 50 21 00 00 18 8c 0a d0 8a 20 e0 2d 10
+10 3e 96 00 c0 50 11 00 00 18 d5 09 80 a0 20 e0
+2d 10 10 60 a2 00 c0 50 11 00 00 18 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 e0
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: ENC
+    Model: 9090
+    Serial Number: 42251026
+    Made in: week 7 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6601, 0.3300
+    Green: 0.3095, 0.6201
+    Blue : 0.1503, 0.0400
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x45:  1920x1200   59.884600 Hz  16:10    74.556 kHz    193.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 2:  2560x1440   29.935499 Hz  16:9     43.945 kHz    146.250000 MHz (597 mm x 336 mm)
+                 Hfront  120 Hsync 264 Hback  384 Hpol N
+                 Vfront    3 Vsync   5 Vback   20 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 59-61 Hz V, 31-89 kHz H, max dotclock 250 MHz
+    Display Product Name: 'EV2736W'
+  Extension blocks: 1
+Checksum: 0x09
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (597 mm x 336 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (597 mm x 336 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (597 mm x 336 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 6:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (448 mm x 336 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 7:   640x480    59.928571 Hz   4:3     31.462 kHz     25.170000 MHz (448 mm x 336 mm)
+                 Hfront   16 Hsync  96 Hback   48 Hpol N
+                 Vfront   10 Vsync   2 Vback   33 Vpol N
+Checksum: 0xe0  Unused space in Extension Block: 19 bytes
+
+
