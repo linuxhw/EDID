@@ -1,0 +1,122 @@
+
+EDID (hex):
+00ffffffffffff0030aefe6500000000
+221f0104a5361e783b9055a75553a028
+135054a10800d1c0b30081c081809500
+a9c0010101011a3680a070381f405820
+3500202f2100001a000000fd003090a2
+a224010a202020202020000000fc004c
+454e204732352d31300a2020000000ff
+0055344235335858480a20202020011b
+020316f149101f041312110302012309
+7f07830100001b82808870382d401820
+3500202f2100001a866f80a070384040
+30203500202f2100001a201c56865000
+20300e381300202f2100001e00000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000006a
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae fe 65 00 00 00 00
+22 1f 01 04 a5 36 1e 78 3b 90 55 a7 55 53 a0 28
+13 50 54 a1 08 00 d1 c0 b3 00 81 c0 81 80 95 00
+a9 c0 01 01 01 01 1a 36 80 a0 70 38 1f 40 58 20
+35 00 20 2f 21 00 00 1a 00 00 00 fd 00 30 90 a2
+a2 24 01 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+45 4e 20 47 32 35 2d 31 30 0a 20 20 00 00 00 ff
+00 55 34 42 35 33 58 58 48 0a 20 20 20 20 01 1b
+
+02 03 16 f1 49 10 1f 04 13 12 11 03 02 01 23 09
+7f 07 83 01 00 00 1b 82 80 88 70 38 2d 40 18 20
+35 00 20 2f 21 00 00 1a 86 6f 80 a0 70 38 40 40
+30 20 35 00 20 2f 21 00 00 1a 20 1c 56 86 50 00
+20 30 0e 38 13 00 20 2f 21 00 00 1e 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 26110
+    Made in: week 34 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 54 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6542, 0.3330
+    Green: 0.3242, 0.6250
+    Blue : 0.1572, 0.0751
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.933878 Hz  16:9     66.587 kHz    138.500000 MHz (544 mm x 303 mm)
+                 Hfront   88 Hsync  32 Hback   40 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-144 Hz V, 162-162 kHz H, max dotclock 360 MHz
+    Display Product Name: 'LEN G25-10'
+    Display Product Serial Number: 'U4B53XXH'
+  Extension blocks: 1
+Checksum: 0x1b
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080  143.999135 Hz  16:9    161.999 kHz    333.070000 MHz (544 mm x 303 mm)
+                 Hfront   24 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   37 Vpol N
+    DTD 3:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (544 mm x 303 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD 4:  1366x768    60.000000 Hz 683:384   48.000 kHz     72.000000 MHz (544 mm x 303 mm)
+                 Hfront   14 Hsync  56 Hback   64 Hpol P
+                 Vfront    1 Vsync   3 Vback   28 Vpol P
+Checksum: 0x6a  Unused space in Extension Block: 51 bytes

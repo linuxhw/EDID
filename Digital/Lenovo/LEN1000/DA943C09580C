@@ -1,0 +1,124 @@
+
+EDID (hex):
+00ffffffffffff0030ae001001000000
+121e0104b53c22783fdca5aa5145ad26
+0d505400000001010101010101010101
+01010101010150d000a0f0703e804e1c
+f808544f2100001a000000fc004c454e
+2d596f676132372d410a000000ff004d
+5632373051554d0a20202020000000fd
+003a3d818b37010a20202020202001e9
+020322f24161e200c023097f07830100
+0065030c001000e305c000e606050162
+624f023a801871382d40582c25005550
+2100001efa1c8018711c1620582c2500
+55502100009e00000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000047
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 00 10 01 00 00 00
+12 1e 01 04 b5 3c 22 78 3f dc a5 aa 51 45 ad 26
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 50 d0 00 a0 f0 70 3e 80 4e 1c
+f8 08 54 4f 21 00 00 1a 00 00 00 fc 00 4c 45 4e
+2d 59 6f 67 61 32 37 2d 41 0a 00 00 00 ff 00 4d
+56 32 37 30 51 55 4d 0a 20 20 20 20 00 00 00 fd
+00 3a 3d 81 8b 37 01 0a 20 20 20 20 20 20 01 e9
+
+02 03 22 f2 41 61 e2 00 c0 23 09 7f 07 83 01 00
+00 65 03 0c 00 10 00 e3 05 c0 00 e6 06 05 01 62
+62 4f 02 3a 80 18 71 38 2d 40 58 2c 25 00 55 50
+21 00 00 1e fa 1c 80 18 71 1c 16 20 58 2c 25 00
+55 50 21 00 00 9e 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 47
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 4096
+    Serial Number: 1
+    Made in: week 18 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6669, 0.3173
+    Green: 0.2724, 0.6757
+    Blue : 0.1503, 0.0527
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.000000 Hz  16:9    133.320 kHz    533.280000 MHz (596 mm x 335 mm)
+                 Hfront   78 Hsync  28 Hback   54 Hpol P
+                 Vfront   47 Vsync   8 Vback    7 Vpol N
+    Display Product Name: 'LEN-Yoga27-A'
+    Display Product Serial Number: 'MV270QUM'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 58-61 Hz V, 129-139 kHz H, max dotclock 550 MHz
+  Extension blocks: 1
+Checksum: 0xe9
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: IT video formats not supported
+    CE scan behavior: CE video formats not supported
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 98 (417.710 cd/m^2)
+    Desired content max frame-average luminance: 98 (417.710 cd/m^2)
+    Desired content min luminance: 79 (0.401 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (597 mm x 336 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol P
+    DTD 3:  1920x1080i  59.943434 Hz  16:9     33.718 kHz     74.180000 MHz (597 mm x 336 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+Checksum: 0x47  Unused space in Extension Block: 57 bytes

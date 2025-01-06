@@ -1,0 +1,106 @@
+
+EDID (hex):
+00ffffffffffff0030ae011201000000
+261b010380351e78eeb10fa655529c27
+0f4f5300000001010101010101010101
+010101010101023a801871382d40582c
+45000f282100001e000000fc004c454e
+2d32344152522d420a20000000fd0039
+3e535311000a202020202020000000fe
+004c4d3233385746322d53534b3101a8
+020319c0459004030201230907078301
+000066030c00100000023a801871382d
+40582c25000f282100001e011d007251
+d01e206e2855000f282100001e000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000a7
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 01 12 01 00 00 00
+26 1b 01 03 80 35 1e 78 ee b1 0f a6 55 52 9c 27
+0f 4f 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 fc 00 4c 45 4e
+2d 32 34 41 52 52 2d 42 0a 20 00 00 00 fd 00 39
+3e 53 53 11 00 0a 20 20 20 20 20 20 00 00 00 fe
+00 4c 4d 32 33 38 57 46 32 2d 53 53 4b 31 01 a8
+
+02 03 19 c0 45 90 04 03 02 01 23 09 07 07 83 01
+00 00 66 03 0c 00 10 00 00 02 3a 80 18 71 38 2d
+40 58 2c 25 00 0f 28 21 00 00 1e 01 1d 00 72 51
+d0 1e 20 6e 28 55 00 0f 28 21 00 00 1e 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a7
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 4609
+    Serial Number: 1
+    Made in: week 38 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 53 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3349
+    Green: 0.3203, 0.6103
+    Blue : 0.1523, 0.0585
+    White: 0.3115, 0.3271
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Name: 'LEN-24ARR-B'
+    Display Range Limits:
+      Monitor ranges (GTF): 57-62 Hz V, 83-83 kHz H, max dotclock 170 MHz
+    Alphanumeric Data String: 'LM238WF2-SSK1'
+  Extension blocks: 1
+Checksum: 0xa8
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol P
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (527 mm x 296 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0xa7  Unused space in Extension Block: 66 bytes
+
+

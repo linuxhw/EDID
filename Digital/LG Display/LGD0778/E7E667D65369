@@ -1,0 +1,129 @@
+
+EDID (hex):
+00ffffffffffff0030e4780700000000
+00220104b51d1278069665b04f3cb923
+0b505400000001010101010101010101
+010101010101ef8340a0b00834703020
+360020b41000001a0000000000000000
+00000000000000000000000000fe0044
+48395057803133345754310a00000000
+0004040328000100002b010a202001d4
+70207902002000133ce6247807000000
+000018073133345754310a21001d410b
+0807400b080788066b4fc3a3b935820b
+024554405e1a60181023782600090400
+00000000410000220014552705853f0b
+9f002f801f0007073300020005002501
+095527055527053c3c0081000be30580
+00e60605016d60020000000000003190
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 78 07 00 00 00 00
+00 22 01 04 b5 1d 12 78 06 96 65 b0 4f 3c b9 23
+0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ef 83 40 a0 b0 08 34 70 30 20
+36 00 20 b4 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 44
+48 39 50 57 80 31 33 34 57 54 31 0a 00 00 00 00
+00 04 04 03 28 00 01 00 00 2b 01 0a 20 20 01 d4
+
+70 20 79 02 00 20 00 13 3c e6 24 78 07 00 00 00
+00 00 18 07 31 33 34 57 54 31 0a 21 00 1d 41 0b
+08 07 40 0b 08 07 88 06 6b 4f c3 a3 b9 35 82 0b
+02 45 54 40 5e 1a 60 18 10 23 78 26 00 09 04 00
+00 00 00 00 41 00 00 22 00 14 55 27 05 85 3f 0b
+9f 00 2f 80 1f 00 07 07 33 00 02 00 05 00 25 01
+09 55 27 05 55 27 05 3c 3c 00 81 00 0b e3 05 80
+00 e6 06 05 01 6d 60 02 00 00 00 00 00 00 31 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1912
+    Made in: 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6894, 0.3095
+    Green: 0.2353, 0.7246
+    Blue : 0.1376, 0.0449
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2880x1800   59.990267 Hz  16:10   111.102 kHz    337.750000 MHz (288 mm x 180 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   43 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'DH9PW'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 04 04 03 28 00 01 00 00 2b 01 0a 20 20 '......(....+..  '
+  Extension blocks: 1
+Checksum: 0xd4
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Product Identification Data Block (0x20), OUI 3C-E6-24:
+    Product Code: 1912
+    Year of Manufacture: 2024
+    Product ID: 134WT1
+
+  Display Parameters Data Block (0x21):
+    Image size: 288.1 mm x 180.0 mm
+    Display native pixel format: 2880x1800
+    Scan Orientation: Left to Right, Top to Bottom
+    Luminance Information: Guidance for the Source device
+    Color Information: CIE 1931
+    Audio Speaker Information: not integrated
+    Native Color Chromaticity:
+      Primary #1:  (0.688965, 0.310059)
+      Primary #2:  (0.235107, 0.725098)
+      Primary #3:  (0.137939, 0.044922)
+      White Point: (0.312988, 0.329102)
+    Native Maximum Luminance (Full Coverage): 400.000000 cd/m^2
+    Native Maximum Luminance (10% Rectangular Coverage): 525.000000 cd/m^2
+    Native Minimum Luminance: 0.000500 cd/m^2
+    Native Color Depth: 12 bpc
+    Display Device Technology: Organic LED
+    Native Gamma EOTF: 2.20
+  Display Interface Features Data Block:
+    Supported bpc for RGB encoding: 10
+    Supported color space and EOTF standard combination 1: sRGB, BT.2020/SMPTE ST 2084
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2880x1800   59.990267 Hz  16:10   111.102 kHz    337.750000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   6 Vback   43 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 337750 kHz
+    Maximum Pixel Clock: 337750 kHz
+    Minimum Vertical Refresh Rate: 60 Hz
+    Maximum Vertical Refresh Rate: 60 Hz
+    Seamless Dynamic Video Timing Support: No
+  CTA-861 DisplayID Data Block:
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 109 (530.095 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 2 (0.000 cd/m^2)
+  Checksum: 0x31
+Checksum: 0x90

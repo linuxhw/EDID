@@ -1,0 +1,114 @@
+
+EDID (hex):
+00ffffffffffff0030ae930002000000
+1317010380301b780a014ca755469924
+12484b2108008180810081c0a9c09500
+010101010101023a801871382d40582c
+4500dc0c1100001e00000010004c454e
+4f564f0a202020202020000000fd0039
+3e1e5a14450072161100001a000000fc
+004c454e2d533830302d480a20200115
+0203187145900403020123097f078301
+000065030c001000023a801871382d40
+582c4500dc0c1100001e011d007251d0
+1e206e285500dc0c1100001e8c0ad08a
+20e02d10103e9600dc0c110000180000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000fc
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 93 00 02 00 00 00
+13 17 01 03 80 30 1b 78 0a 01 4c a7 55 46 99 24
+12 48 4b 21 08 00 81 80 81 00 81 c0 a9 c0 95 00
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1e 00 00 00 10 00 4c 45 4e
+4f 56 4f 0a 20 20 20 20 20 20 00 00 00 fd 00 39
+3e 1e 5a 14 45 00 72 16 11 00 00 1a 00 00 00 fc
+00 4c 45 4e 2d 53 38 30 30 2d 48 0a 20 20 01 15
+
+02 03 18 71 45 90 04 03 02 01 23 09 7f 07 83 01
+00 00 65 03 0c 00 10 00 02 3a 80 18 71 38 2d 40
+58 2c 45 00 dc 0c 11 00 00 1e 01 1d 00 72 51 d0
+1e 20 6e 28 55 00 dc 0c 11 00 00 1e 8c 0a d0 8a
+20 e0 2d 10 10 3e 96 00 dc 0c 11 00 00 18 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 147
+    Serial Number: 2
+    Made in: week 19 of 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6523, 0.3320
+    Green: 0.2734, 0.5986
+    Blue : 0.1416, 0.0703
+    White: 0.2841, 0.2929
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (476 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Dummy Descriptor:
+    Display Range Limits:
+      Monitor ranges (Unknown (0x45)): 57-62 Hz V, 30-90 kHz H, max dotclock 200 MHz
+    Display Product Name: 'LEN-S800-H'
+  Extension blocks: 1
+Checksum: 0x15
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (476 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (476 mm x 268 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (476 mm x 268 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0xfc  Unused space in Extension Block: 49 bytes

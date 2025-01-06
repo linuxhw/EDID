@@ -1,0 +1,101 @@
+
+EDID (hex):
+00ffffffffffff0030e44a0700000000
+00200104a5271878030f95ae5243b026
+0f505400000001010101010101010101
+0101010101016e6e00a0a04084603020
+360084f21000001a0000000000000000
+00000000000000000000000000fe0050
+30323156803138305751470a00000000
+0002411f9e000300000f010a20200190
+702079020022001471dc0b85ff099f00
+2f801f003f0683000200050025010971
+dc0b71dc0b3ca580810013721a000003
+013ca5000053515351a5000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000dc90
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 4a 07 00 00 00 00
+00 20 01 04 a5 27 18 78 03 0f 95 ae 52 43 b0 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 6e 6e 00 a0 a0 40 84 60 30 20
+36 00 84 f2 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 50
+30 32 31 56 80 31 38 30 57 51 47 0a 00 00 00 00
+00 02 41 1f 9e 00 03 00 00 0f 01 0a 20 20 01 90
+
+70 20 79 02 00 22 00 14 71 dc 0b 85 ff 09 9f 00
+2f 80 1f 00 3f 06 83 00 02 00 05 00 25 01 09 71
+dc 0b 71 dc 0b 3c a5 80 81 00 13 72 1a 00 00 03
+01 3c a5 00 00 53 51 53 51 a5 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 dc 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1866
+    Made in: 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 39 cm x 24 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2646, 0.6904
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   60.007981 Hz  16:10   103.934 kHz    282.700000 MHz (388 mm x 242 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback  123 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'P021V'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 1f 9e 00 03 00 00 0f 01 0a 20 20 '....A.........  '
+  Extension blocks: 1
+Checksum: 0x90
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2560x1600  165.001783 Hz  16:10   285.783 kHz    777.330000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   6 Vback  123 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 777330 kHz
+    Maximum Pixel Clock: 777330 kHz
+    Minimum Vertical Refresh Rate: 60 Hz
+    Maximum Vertical Refresh Rate: 165 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 83 (301.833 cd/m^2)
+    Minimum luminance: 81 (0.305 cd/m^2)
+    Unknown: 0x53 0x51
+  Checksum: 0xdc
+Checksum: 0x90

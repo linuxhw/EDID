@@ -1,0 +1,151 @@
+
+EDID (hex):
+00ffffffffffff00216d000001000000
+04150103800000780aee91a3544c9926
+0f505421080081fc8100818090409500
+b300a940d1c0011d007251d01e206e28
+5500c48e2100001e8c0ad08a20e02d10
+103e9600138e21000018000000fc0048
+444d49444f43544f52202331000000fd
+0018901a5f11000a20202020202001bd
+02032e714b90040503201314111f292f
+2c096e071404803c04c0340420830f00
+006c030c002000b82d20a0020141011d
+8018711c1620582c2500c48e2100009e
+023a801871382d40582c4500c48e2100
+001f0000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000007e
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 6d 00 00 01 00 00 00
+04 15 01 03 80 00 00 78 0a ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 81 fc 81 00 81 80 90 40 95 00
+b3 00 a9 40 d1 c0 01 1d 00 72 51 d0 1e 20 6e 28
+55 00 c4 8e 21 00 00 1e 8c 0a d0 8a 20 e0 2d 10
+10 3e 96 00 13 8e 21 00 00 18 00 00 00 fc 00 48
+44 4d 49 44 4f 43 54 4f 52 20 23 31 00 00 00 fd
+00 18 90 1a 5f 11 00 0a 20 20 20 20 20 20 01 bd
+
+02 03 2e 71 4b 90 04 05 03 20 13 14 11 1f 29 2f
+2c 09 6e 07 14 04 80 3c 04 c0 34 04 20 83 0f 00
+00 6c 03 0c 00 20 00 b8 2d 20 a0 02 01 41 01 1d
+80 18 71 1c 16 20 58 2c 25 00 c4 8e 21 00 00 9e
+02 3a 80 18 71 38 2d 40 58 2c 45 00 c4 8e 21 00
+00 1f 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HKM
+    Model: 0
+    Serial Number: 1
+    Made in: week 4 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    GTF     :  1280x720   119.999881 Hz  16:9     92.640 kHz    161.564000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2a:  1400x1050   59.978442 Hz   4:3     65.317 kHz    121.750000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 2:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (531 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    Display Product Name: 'HDMIDOCTOR #1'
+    Display Range Limits:
+      Monitor ranges (GTF): 24-144 Hz V, 26-95 kHz H, max dotclock 170 MHz
+  Extension blocks: 1
+Checksum: 0xbd
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  41:  1280x720   100.000000 Hz  16:9     75.000 kHz    148.500000 MHz
+    VIC  47:  1280x720   120.000000 Hz  16:9     90.000 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 88.2 48 44.1
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 5
+      Supported sample rates (kHz): 48
+      Maximum bit rate: 1024 kb/s
+    DTS:
+      Max channels: 5
+      Supported sample rates (kHz): 48
+      Maximum bit rate: 1536 kb/s
+    AAC LC:
+      Max channels: 5
+      Supported sample rates (kHz): 48
+      Maximum bit rate: 256 kb/s
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+    LFE1 - Low Frequency Effects 1
+    FC - Front Center
+    BL/BR - Back Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+    Extended HDMI video details:
+      3D present
+      All advertised VICs are 3D-capable
+      3D: Side-by-side (half, horizontal)
+      3D: Top-and-bottom
+      3D: Frame-packing
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 4:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0x7e  Unused space in Extension Block: 45 bytes
+
+
