@@ -1,0 +1,136 @@
+
+EDID (hex):
+00ffffffffffff001e6df15952370100
+0a19010380502278eaca95a6554ea126
+0f5054a54b80714f818081c0a9c0b300
+0101010101017e4800e0a0381f404040
+3a001e4e31000018023a801871382d40
+582c45001e4e3100001e000000fc004c
+4720554c545241574944450a000000fd
+00384b1e5a18000a2020202020200177
+02031df14a900403221412051f011323
+0907078301000065030c001000023a80
+1871382d40582c450056512100001e01
+1d8018711c1620582c25005651210000
+9e011d007251d01e206e285500565121
+00001e8c0ad08a20e02d10103e960056
+5121000018000000ff003531304e5459
+5432423639380a00000000000000006f
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d f1 59 52 37 01 00
+0a 19 01 03 80 50 22 78 ea ca 95 a6 55 4e a1 26
+0f 50 54 a5 4b 80 71 4f 81 80 81 c0 a9 c0 b3 00
+01 01 01 01 01 01 7e 48 00 e0 a0 38 1f 40 40 40
+3a 00 1e 4e 31 00 00 18 02 3a 80 18 71 38 2d 40
+58 2c 45 00 1e 4e 31 00 00 1e 00 00 00 fc 00 4c
+47 20 55 4c 54 52 41 57 49 44 45 0a 00 00 00 fd
+00 38 4b 1e 5a 18 00 0a 20 20 20 20 20 20 01 77
+
+02 03 1d f1 4a 90 04 03 22 14 12 05 1f 01 13 23
+09 07 07 83 01 00 00 65 03 0c 00 10 00 02 3a 80
+18 71 38 2d 40 58 2c 45 00 56 51 21 00 00 1e 01
+1d 80 18 71 1c 16 20 58 2c 25 00 56 51 21 00 00
+9e 01 1d 00 72 51 d0 1e 20 6e 28 55 00 56 51 21
+00 00 1e 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 56
+51 21 00 00 18 00 00 00 ff 00 35 31 30 4e 54 59
+54 32 42 36 39 38 0a 00 00 00 00 00 00 00 00 6f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 23025
+    Serial Number: 79698
+    Made in: week 10 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 80 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6513, 0.3320
+    Green: 0.3066, 0.6308
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+    Apple   :  1152x870    75.061550 Hz 192:145   68.681 kHz    100.000000 MHz
+  Standard Timings:
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1080   59.999534 Hz  64:27    66.659 kHz    185.580000 MHz (798 mm x 334 mm)
+                 Hfront   64 Hsync  64 Hback   96 Hpol N
+                 Vfront    3 Vsync  10 Vback   18 Vpol N
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (798 mm x 334 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Name: 'LG ULTRAWIDE'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-75 Hz V, 30-90 kHz H, max dotclock 240 MHz
+  Extension blocks: 1
+Checksum: 0x77
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 337 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 4:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (598 mm x 337 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 5:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (598 mm x 337 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 6:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (598 mm x 337 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    Display Product Serial Number: '510NTYT2B698'
+Checksum: 0x6f  Unused space in Extension Block: 8 bytes
+
+

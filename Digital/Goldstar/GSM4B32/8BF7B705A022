@@ -1,0 +1,115 @@
+
+EDID (hex):
+00ffffffffffff001e6d324ba76d0000
+0812010380291a782ae5b5a355499927
+135054210800950f454f614f81800101
+0101010101019a29a0d0518422305098
+36009a001100001c000000fd00384b1e
+530e000a202020202020000000fc004c
+31393257530a202020202020000000fc
+00200a20202020202020202020200114
+02031770448403020123090707830100
+0065030c001000011d007251d01e206e
+28550010090000001e011d007251d01e
+206e28550010090000001e8c0ad08a20
+e02d10103e9600100900000018000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 32 4b a7 6d 00 00
+08 12 01 03 80 29 1a 78 2a e5 b5 a3 55 49 99 27
+13 50 54 21 08 00 95 0f 45 4f 61 4f 81 80 01 01
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 9a 00 11 00 00 1c 00 00 00 fd 00 38 4b 1e
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+31 39 32 57 53 0a 20 20 20 20 20 20 00 00 00 fc
+00 20 0a 20 20 20 20 20 20 20 20 20 20 20 01 14
+
+02 03 17 70 44 84 03 02 01 23 09 07 07 83 01 00
+00 65 03 0c 00 10 00 01 1d 00 72 51 d0 1e 20 6e
+28 55 00 10 09 00 00 00 1e 01 1d 00 72 51 d0 1e
+20 6e 28 55 00 10 09 00 00 00 1e 8c 0a d0 8a 20
+e0 2d 10 10 3e 96 00 10 09 00 00 00 18 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 19250
+    Serial Number: 28071
+    Made in: week 8 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 41 cm x 26 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3339
+    Green: 0.2861, 0.5986
+    Blue : 0.1542, 0.0771
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x30:  1440x900    74.984427 Hz  16:10    70.635 kHz    136.750000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (410 mm x 256 mm)
+                 Hfront   80 Hsync 152 Hback  232 Hpol N
+                 Vfront    3 Vsync   6 Vback   25 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
+    Display Product Name: 'L192WS'
+    Display Product Name: ' '
+  Extension blocks: 1
+Checksum: 0x14
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (16 mm x 9 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (16 mm x 9 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (16 mm x 9 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x00  Unused space in Extension Block: 50 bytes
+
+

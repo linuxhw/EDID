@@ -1,0 +1,134 @@
+
+EDID (hex):
+00ffffffffffff001e6d020001010101
+01130103807341780acf74a3574cb023
+09484ca10800a9408180614045403140
+010101010101023a801871382d40582c
+45007e8a4200001e011d007251d01e20
+6e2855007e8a4200001e000000fd0039
+3f1f5210000a202020202020000000fc
+004c472054560a20202020202020011d
+02031cf1471022200584030223090707
+67030c002000b82de3050301023a8018
+71382d40582c04057e8a4200001e011d
+8018711c1620582c25007e8a4200009e
+011d007251d01e206e2855007e8a4200
+001e8c0ad08a20e02d10103e96007e8a
+42000018263680a070381f4030202500
+7e8a4200001a0000000000000000002c
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 02 00 01 01 01 01
+01 13 01 03 80 73 41 78 0a cf 74 a3 57 4c b0 23
+09 48 4c a1 08 00 a9 40 81 80 61 40 45 40 31 40
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 7e 8a 42 00 00 1e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 7e 8a 42 00 00 1e 00 00 00 fd 00 39
+3f 1f 52 10 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 47 20 54 56 0a 20 20 20 20 20 20 20 01 1d
+
+02 03 1c f1 47 10 22 20 05 84 03 02 23 09 07 07
+67 03 0c 00 20 00 b8 2d e3 05 03 01 02 3a 80 18
+71 38 2d 40 58 2c 04 05 7e 8a 42 00 00 1e 01 1d
+80 18 71 1c 16 20 58 2c 25 00 7e 8a 42 00 00 9e
+01 1d 00 72 51 d0 1e 20 6e 28 55 00 7e 8a 42 00
+00 1e 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 7e 8a
+42 00 00 18 26 36 80 a0 70 38 1f 40 30 20 25 00
+7e 8a 42 00 00 1a 00 00 00 00 00 00 00 00 00 2c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 2
+    Serial Number: 16843009
+    Made in: week 1 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 115 cm x 65 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.2998, 0.6904
+    Blue : 0.1376, 0.0380
+    White: 0.2822, 0.2968
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1150 mm x 650 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (1150 mm x 650 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 57-63 Hz V, 31-82 kHz H, max dotclock 160 MHz
+    Display Product Name: 'LG TV'
+  Extension blocks: 1
+Checksum: 0x1d
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    Gamut Boundary Description Metadata Profile P0
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1150 mm x 650 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront   16 Vsync  20 Vback    9 Vpol P
+    DTD 4:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (1150 mm x 650 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 5:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (1150 mm x 650 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 6:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (1150 mm x 650 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 7:  1920x1080   59.985806 Hz  16:9     66.644 kHz    138.620000 MHz (1150 mm x 650 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    2 Vsync   5 Vback   24 Vpol N
+Checksum: 0x2c  Unused space in Extension Block: 9 bytes
