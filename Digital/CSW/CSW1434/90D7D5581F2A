@@ -1,0 +1,95 @@
+
+EDID (hex):
+00ffffffffffff000e77341400000000
+00210104b51f1478037873a6554c9c24
+0d505500000001010101010101010101
+010101010101776a00a0a04046603020
+360038c310000018b29f00a0a0404660
+3020360038c310000018000000fd0028
+5a979729010a202020202020000000fe
+004d4e453530374441312d310a2001d2
+701279000081000c681a00000101285a
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000e290
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 77 34 14 00 00 00 00
+00 21 01 04 b5 1f 14 78 03 78 73 a6 55 4c 9c 24
+0d 50 55 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 77 6a 00 a0 a0 40 46 60 30 20
+36 00 38 c3 10 00 00 18 b2 9f 00 a0 a0 40 46 60
+30 20 36 00 38 c3 10 00 00 18 00 00 00 fd 00 28
+5a 97 97 29 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4d 4e 45 35 30 37 44 41 31 2d 31 0a 20 01 d2
+
+70 12 79 00 00 81 00 0c 68 1a 00 00 01 01 28 5a
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 e2 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CSW
+    Model: 5172
+    Made in: 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 31 cm x 20 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6494, 0.3349
+    Green: 0.2988, 0.6093
+    Blue : 0.1416, 0.0537
+    White: 0.3125, 0.3349
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   60.001321 Hz  16:10   100.202 kHz    272.550000 MHz (312 mm x 195 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   61 Vpol N
+    DTD 2:  2560x1600   90.000881 Hz  16:10   150.301 kHz    408.820000 MHz (312 mm x 195 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   61 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-90 Hz V, 151-151 kHz H, max dotclock 410 MHz
+    Alphanumeric Data String: 'MNE507DA1-1'
+  Extension blocks: 1
+Checksum: 0xd2
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Extension Section
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 90 Hz
+    Flags 1.x: 0x00
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Checksum: 0xe2
+Checksum: 0x90
+
+

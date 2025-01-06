@@ -1,0 +1,99 @@
+
+EDID (hex):
+00ffffffffffff000dae601500000000
+09210104a52213780328659759548e27
+1e505400000001010101010101010101
+0101010101019e8580a070383e403020
+a60058c11000001aad3780a070383e40
+3020a60058c11000001a000000100000
+00000000000000000000000000000002
+000c33ff0f3c9628122d9600000001c6
+70207902002501092c38052c38053c90
+808100106f1a000003013c9000000000
+00009000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000009e90
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 60 15 00 00 00 00
+09 21 01 04 a5 22 13 78 03 28 65 97 59 54 8e 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9e 85 80 a0 70 38 3e 40 30 20
+a6 00 58 c1 10 00 00 1a ad 37 80 a0 70 38 3e 40
+30 20 a6 00 58 c1 10 00 00 1a 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 33 ff 0f 3c 96 28 12 2d 96 00 00 00 01 c6
+
+70 20 79 02 00 25 01 09 2c 38 05 2c 38 05 3c 90
+80 81 00 10 6f 1a 00 00 03 01 3c 90 00 00 00 00
+00 00 90 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 9e 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5472
+    Made in: week 9 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5898, 0.3496
+    Green: 0.3300, 0.5546
+    Blue : 0.1533, 0.1191
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  144.003435 Hz  16:9    164.452 kHz    342.060000 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront   10 Vsync   6 Vback   46 Vpol N
+    DTD 2:  1920x1080   60.003536 Hz  16:9     68.524 kHz    142.530000 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront   10 Vsync   6 Vback   46 Vpol N
+    Dummy Descriptor:
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 33 ff 0f 3c 96 28 12 2d 96 00 00 00 '....3..<.(.-....'
+  Extension blocks: 1
+Checksum: 0xc6
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 342061 kHz
+    Maximum Pixel Clock: 342061 kHz
+    Minimum Vertical Refresh Rate: 60 Hz
+    Maximum Vertical Refresh Rate: 144 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Checksum: 0x9e
+Checksum: 0x90

@@ -1,0 +1,131 @@
+
+EDID (hex):
+00ffffffffffff000e6f101600000000
+001f0104b522167803ee95a3544c9926
+0f505400000001010101010101010101
+0101010101016e6e00a0a04084603020
+360059d710000018000000fd0c3ca51f
+1f4e010a202020202020000000fe0043
+534f542054330a2020202020000000fe
+004d4e473030374441312d450a2002dd
+02031d00e3058000e60605016a6a246d
+1a000002033ca500046a246a24000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000ff
+7013790000030114ac2f0185ff099f00
+2f001f003f0683000200050000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000003790
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 6f 10 16 00 00 00 00
+00 1f 01 04 b5 22 16 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 6e 6e 00 a0 a0 40 84 60 30 20
+36 00 59 d7 10 00 00 18 00 00 00 fd 0c 3c a5 1f
+1f 4e 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43
+53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe
+00 4d 4e 47 30 30 37 44 41 31 2d 45 0a 20 02 dd
+
+02 03 1d 00 e3 05 80 00 e6 06 05 01 6a 6a 24 6d
+1a 00 00 02 03 3c a5 00 04 6a 24 6a 24 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ff
+
+70 13 79 00 00 03 01 14 ac 2f 01 85 ff 09 9f 00
+2f 00 1f 00 3f 06 83 00 02 00 05 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 37 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CSO
+    Model: 5648
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   60.007981 Hz  16:10   103.934 kHz    282.700000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback  123 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 60-165 Hz V, 286-286 kHz H, max dotclock 780 MHz
+    Alphanumeric Data String: 'CSOT T3'
+    Alphanumeric Data String: 'MNG007DA1-E'
+  Extension blocks: 2
+Checksum: 0xdd
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 106 (496.743 cd/m^2)
+    Desired content max frame-average luminance: 106 (496.743 cd/m^2)
+    Desired content min luminance: 36 (0.099 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.3
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x04
+    Maximum luminance: 106 (496.743 cd/m^2)
+    Minimum luminance: 36 (0.099 cd/m^2)
+    Maximum luminance (without local dimming): 106 (496.743 cd/m^2)
+    Minimum luminance (without local dimming): 36 (0.099 cd/m^2)
+Checksum: 0xff  Unused space in Extension Block: 98 bytes
+
+----------------
+
+Block 2, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1600  165.018764 Hz  16:10   285.812 kHz    777.410000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   6 Vback  123 Vpol N
+  Checksum: 0x37
+Checksum: 0x90

@@ -1,0 +1,119 @@
+
+EDID (hex):
+00ffffffffffff000e770f1500560000
+00210104a522137803edf5a3554c9c26
+0d505400000001010101010101010101
+0101010101018d3880a0703850403020
+360058c110000018000000fd003090a7
+a723010a202020202020000000fe0043
+534f542054330a2020202020000000fe
+004d4e463630314241312d340a2001c8
+7020790200220014394d05857f079f00
+2f001f0037044f00020005002b000c27
+00303b000027003c8f0000810013721a
+000003013090000400000000900060ae
+0a000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000d090
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 77 0f 15 00 56 00 00
+00 21 01 04 a5 22 13 78 03 ed f5 a3 55 4c 9c 26
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8d 38 80 a0 70 38 50 40 30 20
+36 00 58 c1 10 00 00 18 00 00 00 fd 00 30 90 a7
+a7 23 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43
+53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe
+00 4d 4e 46 36 30 31 42 41 31 2d 34 0a 20 01 c8
+
+70 20 79 02 00 22 00 14 39 4d 05 85 7f 07 9f 00
+2f 00 1f 00 37 04 4f 00 02 00 05 00 2b 00 0c 27
+00 30 3b 00 00 27 00 3c 8f 00 00 81 00 13 72 1a
+00 00 03 01 30 90 00 04 00 00 00 00 90 00 60 ae
+0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 d0 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CSW
+    Model: 5391
+    Serial Number: 22016
+    Made in: 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3339
+    Green: 0.2998, 0.6103
+    Blue : 0.1513, 0.0537
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000829 Hz  16:9     69.601 kHz    144.770000 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   71 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-144 Hz V, 167-167 kHz H, max dotclock 350 MHz
+    Alphanumeric Data String: 'CSOT T3'
+    Alphanumeric Data String: 'MNF601BA1-4'
+  Extension blocks: 1
+Checksum: 0xc8
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  1920x1080  144.002818 Hz  16:10   167.043 kHz    347.450000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   6 Vback   71 Vpol N
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 48 Hz
+      Max Refresh Rate: 60 Hz
+    Descriptor #2:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 60 Hz
+      Max Refresh Rate: 144 Hz
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x04
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Maximum luminance (without local dimming): 0 (50.000 cd/m^2)
+    Minimum luminance (without local dimming): 0 (0.000 cd/m^2)
+  Checksum: 0xd0
+Checksum: 0x90
+
+

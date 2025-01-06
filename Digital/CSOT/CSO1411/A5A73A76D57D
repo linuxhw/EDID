@@ -1,0 +1,101 @@
+
+EDID (hex):
+00ffffffffffff000e6f111400000000
+001f0104b51e137803c6acad5143ae25
+0e505700000001010101010101010101
+01010101010180e800a0f06050903020
+36002ebd10000018000000fd00283c95
+953c010a202020202020000000fe0043
+534f542054330a2020202020000000fe
+004d4e453030375a41312d340a2001dc
+02031d00e3058000e60605016a6a246d
+1a00000203283c00046a246a24000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000007c
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 6f 11 14 00 00 00 00
+00 1f 01 04 b5 1e 13 78 03 c6 ac ad 51 43 ae 25
+0e 50 57 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 80 e8 00 a0 f0 60 50 90 30 20
+36 00 2e bd 10 00 00 18 00 00 00 fd 00 28 3c 95
+95 3c 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43
+53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe
+00 4d 4e 45 30 30 37 5a 41 31 2d 34 0a 20 01 dc
+
+02 03 1d 00 e3 05 80 00 e6 06 05 01 6a 6a 24 6d
+1a 00 00 02 03 28 3c 00 04 6a 24 6a 24 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CSO
+    Model: 5137
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6787, 0.3164
+    Green: 0.2626, 0.6816
+    Blue : 0.1464, 0.0566
+    White: 0.3154, 0.3398
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2400   60.000000 Hz  16:10   148.800 kHz    595.200000 MHz (302 mm x 189 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   71 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 149-149 kHz H, max dotclock 600 MHz
+    Alphanumeric Data String: 'CSOT T3'
+    Alphanumeric Data String: 'MNE007ZA1-4'
+  Extension blocks: 1
+Checksum: 0xdc
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 106 (496.743 cd/m^2)
+    Desired content max frame-average luminance: 106 (496.743 cd/m^2)
+    Desired content min luminance: 36 (0.099 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.3
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x04
+    Maximum luminance: 106 (496.743 cd/m^2)
+    Minimum luminance: 36 (0.099 cd/m^2)
+    Maximum luminance (without local dimming): 106 (496.743 cd/m^2)
+    Minimum luminance (without local dimming): 36 (0.099 cd/m^2)
+Checksum: 0x7c  Unused space in Extension Block: 98 bytes

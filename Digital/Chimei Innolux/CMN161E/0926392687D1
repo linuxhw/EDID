@@ -1,0 +1,101 @@
+
+EDID (hex):
+00ffffffffffff000dae1e1600000000
+09200104a5221678030f95ae5243b026
+0f505400000001010101010101010101
+0101010101016b6e00a0a04084603020
+a60058d71000001a0000001000000000
+00000000000000000000000000fe0054
+3647333680313630474d450a00000000
+0002410f9e000000000f410a202001b8
+702079020022001400ee1185ff099f00
+2f001f003f06c7000900050025010900
+ee1100ee113cf080810013721a000003
+013cf0000000000000f0000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000008390
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 1e 16 00 00 00 00
+09 20 01 04 a5 22 16 78 03 0f 95 ae 52 43 b0 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 6b 6e 00 a0 a0 40 84 60 30 20
+a6 00 58 d7 10 00 00 1a 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 54
+36 47 33 36 80 31 36 30 47 4d 45 0a 00 00 00 00
+00 02 41 0f 9e 00 00 00 00 0f 41 0a 20 20 01 b8
+
+70 20 79 02 00 22 00 14 00 ee 11 85 ff 09 9f 00
+2f 00 1f 00 3f 06 c7 00 09 00 05 00 25 01 09 00
+ee 11 00 ee 11 3c f0 80 81 00 13 72 1a 00 00 03
+01 3c f0 00 00 00 00 00 00 f0 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 83 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5662
+    Made in: week 9 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2646, 0.6904
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   60.001613 Hz  16:10   103.923 kHz    282.670000 MHz (344 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront   10 Vsync   6 Vback  116 Vpol N
+    Dummy Descriptor:
+    Alphanumeric Data String: 'T6G36'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 0f 9e 00 00 00 00 0f 41 0a 20 20 '....A.......A.  '
+  Extension blocks: 1
+Checksum: 0xb8
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2560x1600  240.000204 Hz  16:10   432.000 kHz   1175.041000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront   10 Vsync   6 Vback  184 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 1175041 kHz
+    Maximum Pixel Clock: 1175041 kHz
+    Minimum Vertical Refresh Rate: 60 Hz
+    Maximum Vertical Refresh Rate: 240 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 240 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Checksum: 0x83
+Checksum: 0x90

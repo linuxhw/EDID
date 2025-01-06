@@ -1,0 +1,98 @@
+
+EDID (hex):
+00ffffffffffff000db200d800000000
+011c0104b246270002664ba1574c992a
+124c54000000d1fcd1e8956801000100
+0100010001000474801871382d401428
+4500ba892100001e0a5a808070382d40
+14284500ba892100001e000000fd005f
+7a6e8c1e000a202020202020000000fc
+00446973706c61792b2b0a202020014a
+02030c0067030c000000103c04748018
+71382d4014284500ba892100001e0a5a
+808070382d4014284500ba892100001e
+7440a03c5038144014145a000c892100
+001e0000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000c6
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d b2 00 d8 00 00 00 00
+01 1c 01 04 b2 46 27 00 02 66 4b a1 57 4c 99 2a
+12 4c 54 00 00 00 d1 fc d1 e8 95 68 01 00 01 00
+01 00 01 00 01 00 04 74 80 18 71 38 2d 40 14 28
+45 00 ba 89 21 00 00 1e 0a 5a 80 80 70 38 2d 40
+14 28 45 00 ba 89 21 00 00 1e 00 00 00 fd 00 5f
+7a 6e 8c 1e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 44 69 73 70 6c 61 79 2b 2b 0a 20 20 20 01 4a
+
+02 03 0c 00 67 03 0c 00 00 00 10 3c 04 74 80 18
+71 38 2d 40 14 28 45 00 ba 89 21 00 00 1e 0a 5a
+80 80 70 38 2d 40 14 28 45 00 ba 89 21 00 00 1e
+74 40 a0 3c 50 38 14 40 14 14 5a 00 0c 89 21 00
+00 1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c6
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMR
+    Model: 55296
+    Made in: week 1 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    HDMI-a interface
+    Maximum image size: 70 cm x 39 cm
+    Gamma: 1.00
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6298, 0.3417
+    Green: 0.2978, 0.5996
+    Blue : 0.1650, 0.0703
+    White: 0.2988, 0.3310
+  Established Timings I & II: none
+  Standard Timings:
+    GTF     :  1920x1080  119.999987 Hz  16:9    138.840 kHz    368.759000 MHz
+    GTF     :  1920x1080  100.000000 Hz  16:9    114.400 kHz    302.016000 MHz
+    GTF     :  1440x1080  100.000176 Hz   4:3    114.400 kHz    226.970000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz (698 mm x 393 mm)
+                 Hfront   20 Hsync  40 Hback  220 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1920x1080  100.043403 Hz  16:9    112.549 kHz    230.500000 MHz (698 mm x 393 mm)
+                 Hfront   20 Hsync  40 Hback   68 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 95-122 Hz V, 110-140 kHz H, max dotclock 300 MHz
+    Display Product Name: 'Display++'
+  Extension blocks: 1
+Checksum: 0x4a
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 0.0.0.0
+    DC_30bit
+    Maximum TMDS clock: 300 MHz
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz (698 mm x 393 mm)
+                 Hfront   20 Hsync  40 Hback  220 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 4:  1920x1080  100.043403 Hz  16:9    112.549 kHz    230.500000 MHz (698 mm x 393 mm)
+                 Hfront   20 Hsync  40 Hback   68 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 5:  1440x1080  100.000000 Hz   4:3    110.000 kHz    165.000000 MHz (524 mm x 393 mm)
+                 Hfront   20 Hsync  20 Hback   20 Hpol P
+                 Vfront    5 Vsync  10 Vback    5 Vpol P
+Checksum: 0xc6  Unused space in Extension Block: 61 bytes

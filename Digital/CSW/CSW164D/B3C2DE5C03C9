@@ -1,0 +1,175 @@
+
+EDID (hex):
+00ffffffffffff000e774d1600000000
+0d220104a5221678032cc5945c599529
+1e505400000001010101010101010101
+010101010101603f80a070b064403020
+260c58d710000018000000fd003090bb
+bb27010a202020202020000000fe003d
+4c32332020202020202020ff000000fc
+004d4e473030375158322d320a200281
+02030d00e3050400e60601015353ff00
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000071fe
+702079020021001d770d6a088007b004
+003f795c9e05959cf21d024554b05cb0
+5c0042127822001404f105857f079f00
+2f001f00af046300310005002b000c27
+00308f00002700303b0000810015721a
+000003013090000453ff53ff90000000
+00000000000000000000000000000000
+00000000000000000000000000003f90
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 77 4d 16 00 00 00 00
+0d 22 01 04 a5 22 16 78 03 2c c5 94 5c 59 95 29
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 60 3f 80 a0 70 b0 64 40 30 20
+26 0c 58 d7 10 00 00 18 00 00 00 fd 00 30 90 bb
+bb 27 01 0a 20 20 20 20 20 20 00 00 00 fe 00 3d
+4c 32 33 20 20 20 20 20 20 20 20 ff 00 00 00 fc
+00 4d 4e 47 30 30 37 51 58 32 2d 32 0a 20 02 81
+
+02 03 0d 00 e3 05 04 00 e6 06 01 01 53 53 ff 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 71 fe
+
+70 20 79 02 00 21 00 1d 77 0d 6a 08 80 07 b0 04
+00 3f 79 5c 9e 05 95 9c f2 1d 02 45 54 b0 5c b0
+5c 00 42 12 78 22 00 14 04 f1 05 85 7f 07 9f 00
+2f 00 1f 00 af 04 63 00 31 00 05 00 2b 00 0c 27
+00 30 8f 00 00 27 00 30 3b 00 00 81 00 15 72 1a
+00 00 03 01 30 90 00 04 53 ff 53 ff 90 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 3f 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CSW
+    Model: 5709
+    Made in: week 13 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5781, 0.3613
+    Green: 0.3505, 0.5820
+    Blue : 0.1630, 0.1171
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.000000 Hz  16:10    78.000 kHz    162.240000 MHz (344 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront   50 Vsync   6 Vback   44 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-144 Hz V, 187-187 kHz H, max dotclock 390 MHz
+    Alphanumeric Data String: '=L23        '
+    Display Product Name: 'MNG007QX2-2'
+  Extension blocks: 2
+Checksum: 0x81
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    sYCC601
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 83 (301.833 cd/m^2)
+    Desired content max frame-average luminance: 83 (301.833 cd/m^2)
+    Desired content min luminance: 255 (3.018 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:     0x0            inf Hz   0:0      0.000 kHz    653.630000 MHz (analog composite, sync-on-green)
+                 Hfront    0 Hsync   0 Hback    0 Hpol N
+                 Vfront    0 Vsync   0 Vback    0 Vpol N
+                   53 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 'S.................'
+Checksum: 0xfe  Unused space in Extension Block: 96 bytes
+
+----------------
+
+Block 2, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Display Parameters Data Block (0x21):
+    Image size: 344.7 mm x 215.4 mm
+    Display native pixel format: 1920x1200
+    Scan Orientation: Left to Right, Top to Bottom
+    Luminance Information: Minimum guaranteed value
+    Color Information: CIE 1931
+    Audio Speaker Information: integrated
+    Native Color Chromaticity:
+      Primary #1:  (0.577881, 0.361084)
+      Primary #2:  (0.351074, 0.582031)
+      Primary #3:  (0.163086, 0.116943)
+      White Point: (0.312988, 0.329102)
+    Native Maximum Luminance (Full Coverage): 300.000000 cd/m^2
+    Native Maximum Luminance (10% Rectangular Coverage): 300.000000 cd/m^2
+    Native Minimum Luminance: 3.000000 cd/m^2
+    Native Color Depth: 10 bpc
+    Display Device Technology: Active Matrix LCD
+    Native Gamma EOTF: 2.20
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  1920x1200  144.001849 Hz  16:10   187.202 kHz    389.381000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront   50 Vsync   6 Vback   44 Vpol N
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 48 Hz
+      Max Refresh Rate: 144 Hz
+    Descriptor #2:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 48 Hz
+      Max Refresh Rate: 60 Hz
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x04
+    Maximum luminance: 83 (301.833 cd/m^2)
+    Minimum luminance: 255 (3.018 cd/m^2)
+    Maximum luminance (without local dimming): 83 (301.833 cd/m^2)
+    Minimum luminance (without local dimming): 255 (3.018 cd/m^2)
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Checksum: 0x3f
+Checksum: 0x90

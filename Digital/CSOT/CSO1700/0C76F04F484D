@@ -1,0 +1,86 @@
+
+EDID (hex):
+00ffffffffffff000e6f001700000000
+001f0104a528137803b297ad5144af26
+10515500000001010101010101010101
+01010101010100000054c0a0ca513020
+3a008dba100000180000000000000000
+00000000000000000000000000fe0043
+534f542054330a2020202020000000fe
+004d4e483330304842312d310a2001c5
+7013790000030128c9180188ff0b5300
+2f001f009f05c90102000900c9180108
+ff0b53002f001f009f05330902000900
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000003a90
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 6f 00 17 00 00 00 00
+00 1f 01 04 a5 28 13 78 03 b2 97 ad 51 44 af 26
+10 51 55 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 54 c0 a0 ca 51 30 20
+3a 00 8d ba 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 43
+53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe
+00 4d 4e 48 33 30 30 48 42 31 2d 31 0a 20 01 c5
+
+70 13 79 00 00 03 01 28 c9 18 01 88 ff 0b 53 00
+2f 00 1f 00 9f 05 c9 01 02 00 09 00 c9 18 01 08
+ff 0b 53 00 2f 00 1f 00 9f 05 33 09 02 00 09 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 3a 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CSO
+    Model: 5888
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 40 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6777, 0.3193
+    Green: 0.2656, 0.6855
+    Blue : 0.1503, 0.0634
+    White: 0.3173, 0.3349
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    Unknown Display Descriptor (0x54): 00 54 c0 a0 ca 51 30 20 3a 00 8d ba 10 00 00 18 '.T...Q0 :.......'
+    Empty Descriptor
+    Alphanumeric Data String: 'CSOT T3'
+    Alphanumeric Data String: 'MNH300HB1-1'
+  Extension blocks: 1
+Checksum: 0xc5
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  3072x1440  120.001576 Hz   0:0    227.763 kHz    718.820000 MHz (aspect undefined, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback    4 Hpol N
+               Vfront    3 Vsync  10 Vback  445 Vpol N
+    DTD:  3072x1440   60.000788 Hz   0:0    227.763 kHz    718.820000 MHz (aspect undefined, no 3D stereo)
+               Hfront   48 Hsync  32 Hback    4 Hpol N
+               Vfront    3 Vsync  10 Vback 2343 Vpol N
+  Checksum: 0x3a
+Checksum: 0x90

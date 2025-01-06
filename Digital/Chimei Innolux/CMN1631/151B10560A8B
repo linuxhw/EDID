@@ -1,0 +1,122 @@
+
+EDID (hex):
+00ffffffffffff000dae311600020000
+2b200104b522167803ee95a3544c9926
+0f505400000001010101010101010101
+0101010101016b6e00a0a04084603020
+a60058d710000018000000fd0c3ca51f
+1f4e010a202020202020000000fe0043
+4d4e0a202020202020202020000000fe
+004e313630474c452d4754310a200152
+702079020022001469dc0b85ff099f00
+2f001f003f0683000900050025010969
+dc0b69dc0b3ca580810013721a000003
+013ca500005a2b5a2ba5000000002b00
+0c27003ca400002700303b0000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000db90
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 31 16 00 02 00 00
+2b 20 01 04 b5 22 16 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 6b 6e 00 a0 a0 40 84 60 30 20
+a6 00 58 d7 10 00 00 18 00 00 00 fd 0c 3c a5 1f
+1f 4e 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43
+4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 36 30 47 4c 45 2d 47 54 31 0a 20 01 52
+
+70 20 79 02 00 22 00 14 69 dc 0b 85 ff 09 9f 00
+2f 00 1f 00 3f 06 83 00 09 00 05 00 25 01 09 69
+dc 0b 69 dc 0b 3c a5 80 81 00 13 72 1a 00 00 03
+01 3c a5 00 00 5a 2b 5a 2b a5 00 00 00 00 2b 00
+0c 27 00 3c a4 00 00 27 00 30 3b 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 db 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5681
+    Serial Number: 512
+    Made in: week 43 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   60.001613 Hz  16:10   103.923 kHz    282.670000 MHz (344 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront   10 Vsync   6 Vback  116 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 60-165 Hz V, 286-286 kHz H, max dotclock 780 MHz
+    Alphanumeric Data String: 'CMN'
+    Alphanumeric Data String: 'N160GLE-GT1'
+  Extension blocks: 1
+Checksum: 0x52
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2560x1600  165.000085 Hz  16:10   285.780 kHz    777.322000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront   10 Vsync   6 Vback  116 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 777322 kHz
+    Maximum Pixel Clock: 777322 kHz
+    Minimum Vertical Refresh Rate: 60 Hz
+    Maximum Vertical Refresh Rate: 165 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 90 (351.250 cd/m^2)
+    Minimum luminance: 43 (0.100 cd/m^2)
+    Unknown: 0x5a 0x2b
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 60 Hz
+      Max Refresh Rate: 165 Hz
+    Descriptor #2:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 48 Hz
+      Max Refresh Rate: 60 Hz
+  Checksum: 0xdb
+Checksum: 0x90
