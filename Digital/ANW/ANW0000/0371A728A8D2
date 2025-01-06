@@ -1,0 +1,94 @@
+
+EDID (hex):
+00ffffffffffff0005d7000000000000
+ff21010380321f7807ee95a3544c9926
+0f505400000001010101010101010101
+010101010101a41f8050700640501e20
+aa0000000000001a000000fd0017f00f
+ff08000a202020202020000000fc0031
+39323078313238362043565400000000
+000000000000000000000000000001d0
+020318402309060767030c0000000011
+67d85dc4011180000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000f1
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 d7 00 00 00 00 00 00
+ff 21 01 03 80 32 1f 78 07 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a4 1f 80 50 70 06 40 50 1e 20
+aa 00 00 00 00 00 00 1a 00 00 00 fd 00 17 f0 0f
+ff 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 31
+39 32 30 78 31 32 38 36 20 43 56 54 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 d0
+
+02 03 18 40 23 09 06 07 67 03 0c 00 00 00 00 11
+67 d8 5d c4 01 11 80 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f1
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ANW
+    Model: 0
+    Model year: 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 50 cm x 31 cm
+    Gamma: 2.20
+    Monochrome or grayscale display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+    Supports GTF timings within operating range
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1286   30.000000 Hz 960:643   40.500 kHz     81.000000 MHz
+                 Hfront   30 Hsync  32 Hback   18 Hpol P
+                 Vfront   10 Vsync  10 Vback   44 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 23-240 Hz V, 15-255 kHz H, max dotclock 80 MHz
+    Display Product Name: '1920x1286 CVT'
+    Empty Descriptor
+  Extension blocks: 1
+Checksum: 0xd0
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 0
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1
+      Supported sample sizes (bits): 24 20 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 0.0.0.0
+    Maximum TMDS clock: 85 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 85 MHz
+    SCDC Present
+Checksum: 0xf1  Unused space in Extension Block: 103 bytes
+
+
