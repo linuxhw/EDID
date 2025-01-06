@@ -1,0 +1,100 @@
+
+EDID (hex):
+00ffffffffffff004c2d22053032524c
+19140103802c19782ab811a6554b9b25
+13505423080081009500818001010101
+010101010101302a40c8608464301850
+1300bbf91000001e000000fd00383c1e
+5111000a202020202020000000fc0053
+796e634d61737465720a2020000000ff
+00484c4a5a3630313630390a20200103
+02010400011d007251d01e206e285500
+bbf91000001e011d00bc52d01e20b828
+5540bbf91000001e8c0ad09020403120
+0c405500bbf9100000188c0ad08a20e0
+2d10103e9600bbf91000001800000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000009b
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 22 05 30 32 52 4c
+19 14 01 03 80 2c 19 78 2a b8 11 a6 55 4b 9b 25
+13 50 54 23 08 00 81 00 95 00 81 80 01 01 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 bb f9 10 00 00 1e 00 00 00 fd 00 38 3c 1e
+51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53
+79 6e 63 4d 61 73 74 65 72 0a 20 20 00 00 00 ff
+00 48 4c 4a 5a 36 30 31 36 30 39 0a 20 20 01 03
+
+02 01 04 00 01 1d 00 72 51 d0 1e 20 6e 28 55 00
+bb f9 10 00 00 1e 01 1d 00 bc 52 d0 1e 20 b8 28
+55 40 bb f9 10 00 00 1e 8c 0a d0 90 20 40 31 20
+0c 40 55 00 bb f9 10 00 00 18 8c 0a d0 8a 20 e0
+2d 10 10 3e 96 00 bb f9 10 00 00 18 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 9b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SAM
+    Model: 1314
+    Serial Number: 1280455216
+    Made in: week 25 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 44 cm x 25 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3349
+    Green: 0.2949, 0.6054
+    Blue : 0.1445, 0.0751
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (443 mm x 249 mm)
+                 Hfront   24 Hsync  80 Hback   96 Hpol P
+                 Vfront    1 Vsync   3 Vback   96 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 56-60 Hz V, 30-81 kHz H, max dotclock 170 MHz
+    Display Product Name: 'SyncMaster'
+    Display Product Serial Number: 'HLJZ601609'
+  Extension blocks: 1
+Checksum: 0x03
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 1
+  Detailed Timing Descriptors:
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (443 mm x 249 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 3:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (443 mm x 249 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (443 mm x 249 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (443 mm x 249 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x9b  Unused space in Extension Block: 51 bytes
+
+
