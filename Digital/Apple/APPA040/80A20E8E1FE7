@@ -1,0 +1,91 @@
+
+EDID (hex):
+00ffffffffffff00061040a000000000
+101b0104b5211578020f81ae5243b026
+0d505400000001010101010101010101
+0101010101017c804050b00834700820
+68084bcf1000001a000000fc00436f6c
+6f72204c43440a202020000000100000
+00000000000000000000000000000010
+000000000000000000000000000001d4
+70127903007f813ffa10000301180f28
+17000000000000000000000000000000
+4c503135345754352d534a41320a2000
+44434e39333336303335364d4a465741
+450a20202020207f8129fa1000020100
+1100000290034a044d05af07940a2d0d
+c012ad197d22ef3011425f5bf37fc8b2
+18f66600000000000000000000009990
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 10 40 a0 00 00 00 00
+10 1b 01 04 b5 21 15 78 02 0f 81 ae 52 43 b0 26
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 7c 80 40 50 b0 08 34 70 08 20
+68 08 4b cf 10 00 00 1a 00 00 00 fc 00 43 6f 6c
+6f 72 20 4c 43 44 0a 20 20 20 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 d4
+
+70 12 79 03 00 7f 81 3f fa 10 00 03 01 18 0f 28
+17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+4c 50 31 35 34 57 54 35 2d 53 4a 41 32 0a 20 00
+44 43 4e 39 33 33 36 30 33 35 36 4d 4a 46 57 41
+45 0a 20 20 20 20 20 7f 81 29 fa 10 00 02 01 00
+11 00 00 02 90 03 4a 04 4d 05 af 07 94 0a 2d 0d
+c0 12 ad 19 7d 22 ef 30 11 42 5f 5b f3 7f c8 b2
+18 f6 66 00 00 00 00 00 00 00 00 00 00 00 99 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 41024
+    Made in: week 16 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2646, 0.6904
+    Blue : 0.1503, 0.0507
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2880x1800   60.000876 Hz  16:10   111.122 kHz    328.920000 MHz (331 mm x 207 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront   38 Vsync   8 Vback    6 Vpol N
+    Display Product Name: 'Color LCD'
+    Dummy Descriptor:
+    Dummy Descriptor:
+  Extension blocks: 1
+Checksum: 0xd4
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Standalone display device
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
+    Type: 3, Version: 1
+    18 0f 28 17 00 00 00 00 00 00 00 00 00 00 00 00 '..(.............'
+    00 00 00 4c 50 31 35 34 57 54 35 2d 53 4a 41 32 '...LP154WT5-SJA2'
+    0a 20 00 44 43 4e 39 33 33 36 30 33 35 36 4d 4a '. .DCN93360356MJ'
+    46 57 41 45 0a 20 20 20 20 20                   'FWAE.     '
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
+    Type: 2, Version: 1
+    00 11 00 00 02 90 03 4a 04 4d 05 af 07 94 0a 2d '.......J.M.....-'
+    0d c0 12 ad 19 7d 22 ef 30 11 42 5f 5b f3 7f c8 '.....}".0.B_[...'
+    b2 18 f6 66                                     '...f'
+  Checksum: 0x99
+Checksum: 0x90

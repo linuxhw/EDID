@@ -1,0 +1,106 @@
+
+EDID (hex):
+00ffffffffffff00061032a07f8f708f
+19190104a5301b78204f41ae5143b026
+0e505400000001010101010101010101
+0101010101014dd000a0f0703e803020
+3500db0b1100001a1a3680a070381f40
+30203500db0b1100001a000000fc0069
+4d61630a2020202020202020000000ff
+003537434132413337463846333001f6
+701379030003003c53ec0084ff0f9f00
+2f801f00ff0841000200040059a00004
+1f0d9f002f801f006107350002000400
+555e0004ff099f002f801f009f052800
+020004007f8116fa1000010100127631
+fc78b1bd02108841d2f3f5feff810008
+23090707830100000000000000000000
+0000000000000000000000000000d990
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 10 32 a0 7f 8f 70 8f
+19 19 01 04 a5 30 1b 78 20 4f 41 ae 51 43 b0 26
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 db 0b 11 00 00 1a 1a 36 80 a0 70 38 1f 40
+30 20 35 00 db 0b 11 00 00 1a 00 00 00 fc 00 69
+4d 61 63 0a 20 20 20 20 20 20 20 20 00 00 00 ff
+00 35 37 43 41 32 41 33 37 46 38 46 33 30 01 f6
+
+70 13 79 03 00 03 00 3c 53 ec 00 84 ff 0f 9f 00
+2f 80 1f 00 ff 08 41 00 02 00 04 00 59 a0 00 04
+1f 0d 9f 00 2f 80 1f 00 61 07 35 00 02 00 04 00
+55 5e 00 04 ff 09 9f 00 2f 80 1f 00 9f 05 28 00
+02 00 04 00 7f 81 16 fa 10 00 01 01 00 12 76 31
+fc 78 b1 bd 02 10 88 41 d2 f3 f5 fe ff 81 00 08
+23 09 07 07 83 01 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 d9 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 41010
+    Serial Number: 2406518655
+    Made in: week 25 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing does not include the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6806, 0.3164
+    Green: 0.2646, 0.6904
+    Blue : 0.1494, 0.0546
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (475 mm x 267 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD 2:  1920x1080   59.933878 Hz  16:9     66.587 kHz    138.500000 MHz (475 mm x 267 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    Display Product Name: 'iMac'
+    Display Product Serial Number: '57CA2A37F8F30'
+  Extension blocks: 1
+Checksum: 0xf6
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Standalone display device
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  4096x2304   59.979855 Hz  16:9    142.152 kHz    605.000000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback   58 Vpol N
+    DTD:  3360x1890   59.989361 Hz  16:9    116.619 kHz    410.500000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback   46 Vpol N
+    DTD:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback   33 Vpol N
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
+    Type: BLC Info/Corrections, Version: 1
+    00 12 76 31 fc 78 b1 bd 02 10 88 41 d2 f3 f5 fe '..v1.x.....A....'
+    ff                                              '.'
+  CTA-861 DisplayID Data Block:
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Checksum: 0xd9
+Checksum: 0x90

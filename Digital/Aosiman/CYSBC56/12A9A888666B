@@ -1,0 +1,143 @@
+
+EDID (hex):
+00ffffffffffff000f3356bc25010101
+05210104b53d00782f8237a5534a9e26
+0f5057210800d100b300950081000101
+0101010101019c6800a0a04029603020
+350068be1000001a3ad100a0a0402960
+3020350068be1000001a000000fc0041
+534d2d31363051430a202020000000fd
+0030a5c8c841010a20202020202001ad
+02032ef2459001020304e200d523097f
+0783010000e305c000e6060501626200
+6dd85dc4018200000000000000006a5e
+00a0a0a029503020350068be1000001e
+d4bc00a0a0a029503020350068be1000
+001e1a6d80a0703827403020350068be
+1000001eb13980187138274030203500
+58d71000001e00000000000000000009
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0f 33 56 bc 25 01 01 01
+05 21 01 04 b5 3d 00 78 2f 82 37 a5 53 4a 9e 26
+0f 50 57 21 08 00 d1 00 b3 00 95 00 81 00 01 01
+01 01 01 01 01 01 9c 68 00 a0 a0 40 29 60 30 20
+35 00 68 be 10 00 00 1a 3a d1 00 a0 a0 40 29 60
+30 20 35 00 68 be 10 00 00 1a 00 00 00 fc 00 41
+53 4d 2d 31 36 30 51 43 0a 20 20 20 00 00 00 fd
+00 30 a5 c8 c8 41 01 0a 20 20 20 20 20 20 01 ad
+
+02 03 2e f2 45 90 01 02 03 04 e2 00 d5 23 09 7f
+07 83 01 00 00 e3 05 c0 00 e6 06 05 01 62 62 00
+6d d8 5d c4 01 82 00 00 00 00 00 00 00 00 6a 5e
+00 a0 a0 a0 29 50 30 20 35 00 68 be 10 00 00 1e
+d4 bc 00 a0 a0 a0 29 50 30 20 35 00 68 be 10 00
+00 1e 1a 6d 80 a0 70 38 27 40 30 20 35 00 68 be
+10 00 00 1e b1 39 80 18 71 38 27 40 30 20 35 00
+58 d7 10 00 00 1e 00 00 00 00 00 00 00 00 00 09
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CYS
+    Model: 48214
+    Serial Number: 16843045
+    Made in: week 5 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Aspect ratio: 1.60 (landscape)
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6464, 0.3242
+    Green: 0.2890, 0.6191
+    Blue : 0.1484, 0.0615
+    White: 0.3134, 0.3427
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x45:  1920x1200   59.884600 Hz  16:10    74.556 kHz    193.250000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   59.997491 Hz  16:10    98.456 kHz    267.800000 MHz (360 mm x 190 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 2:  2560x1600  119.999462 Hz  16:10   196.919 kHz    535.620000 MHz (360 mm x 190 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    Display Product Name: 'ASM-160QC'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-165 Hz V, 200-200 kHz H, max dotclock 650 MHz
+  Extension blocks: 1
+Checksum: 0xad
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Overscanned
+    IT scan behavior: Always Overscanned
+    CE scan behavior: Always Overscanned
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 98 (417.710 cd/m^2)
+    Desired content max frame-average luminance: 98 (417.710 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 650 MHz
+  Detailed Timing Descriptors:
+    DTD 3:  2560x1440   60.000199 Hz  16:9     88.860 kHz    241.700000 MHz (360 mm x 190 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+    DTD 4:  2560x1440  120.000397 Hz  16:9    177.721 kHz    483.400000 MHz (360 mm x 190 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+    DTD 5:  1920x1080  119.998969 Hz  16:9    134.279 kHz    279.300000 MHz (360 mm x 190 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   31 Vpol P
+    DTD 6:  1920x1080   59.992688 Hz  16:9     67.132 kHz    147.690000 MHz (344 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    3 Vsync   5 Vback   31 Vpol P
+Checksum: 0x09  Unused space in Extension Block: 9 bytes

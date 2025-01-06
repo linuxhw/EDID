@@ -1,0 +1,158 @@
+
+EDID (hex):
+00ffffffffffff00066d621500000000
+12210103801e2d782eee91a3544c9926
+0f5054230800d1c0a9c0010195009040
+8180814081c004740030f2705a80b058
+8a0055502100001e000000fc0054482d
+3135360a202020202020000000100000
+000000000000000000000000000000fd
+00303c0fde41000a20202020202001ba
+020345f24b040102030410131f695f5a
+e200d5e305c00023097f0783010000e5
+0f00000c0067030c001000188267d85d
+c401828001e6060000000000681a0000
+0101303ce6023a801871382d40582c25
+004adc1000001eab5e00a0a0a02d5030
+2035004adc1000001e5c6700a0f0702d
+80302045004adc1000001e00000000ad
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 6d 62 15 00 00 00 00
+12 21 01 03 80 1e 2d 78 2e ee 91 a3 54 4c 99 26
+0f 50 54 23 08 00 d1 c0 a9 c0 01 01 95 00 90 40
+81 80 81 40 81 c0 04 74 00 30 f2 70 5a 80 b0 58
+8a 00 55 50 21 00 00 1e 00 00 00 fc 00 54 48 2d
+31 35 36 0a 20 20 20 20 20 20 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fd
+00 30 3c 0f de 41 00 0a 20 20 20 20 20 20 01 ba
+
+02 03 45 f2 4b 04 01 02 03 04 10 13 1f 69 5f 5a
+e2 00 d5 e3 05 c0 00 23 09 7f 07 83 01 00 00 e5
+0f 00 00 0c 00 67 03 0c 00 10 00 18 82 67 d8 5d
+c4 01 82 80 01 e6 06 00 00 00 00 00 68 1a 00 00
+01 01 30 3c e6 02 3a 80 18 71 38 2d 40 58 2c 25
+00 4a dc 10 00 00 1e ab 5e 00 a0 a0 a0 2d 50 30
+20 35 00 4a dc 10 00 00 1e 5c 67 00 a0 f0 70 2d
+80 30 20 45 00 4a dc 10 00 00 1e 00 00 00 00 ad
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ASM
+    Model: 5474
+    Made in: week 18 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 45 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x2a:  1400x1050   59.978442 Hz   4:3     65.317 kHz    121.750000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz (597 mm x 336 mm)
+                 Hfront  176 Hsync  88 Hback  296 Hpol P
+                 Vfront    8 Vsync  10 Vback   72 Vpol P
+    Display Product Name: 'TH-156'
+    Dummy Descriptor:
+    Display Range Limits:
+      Monitor ranges (GTF): 48-60 Hz V, 15-222 kHz H, max dotclock 650 MHz
+  Extension blocks: 1
+Checksum: 0xba
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC 105:  3840x2160   30.000000 Hz  64:27    67.500 kHz    297.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  90:  2560x1080   60.000000 Hz  64:27    66.000 kHz    198.000000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Overscanned
+    IT scan behavior: Always Overscanned
+    CE scan behavior: Always Overscanned
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  YCbCr 4:2:0 Capability Map Data Block:
+    SVD Index 19 is out of range
+    SVD Index 20 is out of range
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 650 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 650 MHz
+    SCDC Present
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+    Supported static metadata descriptors:
+    Desired content max luminance: 0 (50.000 cd/m^2)
+    Desired content max frame-average luminance: 0 (50.000 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0xe6 (MCCS)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (330 mm x 220 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol P
+    DTD 3:  2560x1440   59.999505 Hz  16:9     89.099 kHz    242.350000 MHz (330 mm x 220 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   37 Vpol P
+    DTD 4:  3840x2160   30.000000 Hz  16:9     66.150 kHz    264.600000 MHz (330 mm x 220 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0xad  Unused space in Extension Block: 4 bytes
+
+

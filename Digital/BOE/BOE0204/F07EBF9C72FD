@@ -1,0 +1,113 @@
+
+EDID (hex):
+00ffffffffffff0009e5040207062120
+2d1f0104a5090f783aef65a656529d28
+0b505400000001010101010101010101
+010101010101fa3cb058408064702018
+c80c5e970000001e963738a840804470
+280880015e970000001eba2c1aa04090
+2860400884015e970000001e9a298422
+30a03a500a1136005e970000001e0108
+020313f24023097f078301000065030c
+001000551d20a030002e50200aa0015e
+970000001eda1bd08c200028504008a0
+015e970000001e9e16008c3000384030
+0aa8015e970000001e531158a420c018
+304408c4005e970000001e0000000000
+00000000000000000000000000000000
+000000000000000000000000000000d0
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 04 02 07 06 21 20
+2d 1f 01 04 a5 09 0f 78 3a ef 65 a6 56 52 9d 28
+0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 fa 3c b0 58 40 80 64 70 20 18
+c8 0c 5e 97 00 00 00 1e 96 37 38 a8 40 80 44 70
+28 08 80 01 5e 97 00 00 00 1e ba 2c 1a a0 40 90
+28 60 40 08 84 01 5e 97 00 00 00 1e 9a 29 84 22
+30 a0 3a 50 0a 11 36 00 5e 97 00 00 00 1e 01 08
+
+02 03 13 f2 40 23 09 7f 07 83 01 00 00 65 03 0c
+00 10 00 55 1d 20 a0 30 00 2e 50 20 0a a0 01 5e
+97 00 00 00 1e da 1b d0 8c 20 00 28 50 40 08 a0
+01 5e 97 00 00 00 1e 9e 16 00 8c 30 00 38 40 30
+0a a8 01 5e 97 00 00 00 1e 53 11 58 a4 20 c0 18
+30 44 08 c4 00 5e 97 00 00 00 1e 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 d0
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 516
+    Serial Number: 539035143
+    Made in: week 45 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 9 cm x 15 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6513, 0.3378
+    Green: 0.3232, 0.6162
+    Blue : 0.1572, 0.0449
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1200x1920   59.997848 Hz   5:8    121.196 kHz    156.100000 MHz (94 mm x 151 mm)
+                 Hfront   32 Hsync  24 Hback   32 Hpol P
+                 Vfront   60 Vsync   8 Vback   32 Vpol P
+    DTD 2:  1080x1920   57.355350 Hz   9:16   114.022 kHz    142.300000 MHz (94 mm x 151 mm)
+                 Hfront   40 Hsync   8 Hback  120 Hpol P
+                 Vfront    8 Vsync  16 Vback   44 Vpol P
+    DTD 3:  1050x1680   55.016337 Hz   5:8     94.628 kHz    114.500000 MHz (94 mm x 151 mm)
+                 Hfront   64 Hsync   8 Hback   88 Hpol P
+                 Vfront    8 Vsync  20 Vback   12 Vpol P
+    DTD 4:   900x1440   76.118622 Hz   5:8    114.026 kHz    106.500000 MHz (94 mm x 151 mm)
+                 Hfront   10 Hsync  17 Hback    7 Hpol P
+                 Vfront    3 Vsync   6 Vback   49 Vpol P
+  Extension blocks: 1
+Checksum: 0x08
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 5:   800x1280   58.988499 Hz   5:8     78.219 kHz     75.090000 MHz (94 mm x 151 mm)
+                 Hfront   32 Hsync  10 Hback  118 Hpol P
+                 Vfront   10 Vsync  16 Vback   20 Vpol P
+    DTD 6:   720x1280   62.808316 Hz   9:16    82.907 kHz     71.300000 MHz (94 mm x 151 mm)
+                 Hfront   64 Hsync   8 Hback   68 Hpol P
+                 Vfront   10 Vsync  16 Vback   14 Vpol P
+    DTD 7:   768x1024   59.043074 Hz   3:4     63.767 kHz     57.900000 MHz (94 mm x 151 mm)
+                 Hfront   48 Hsync  10 Hback   82 Hpol P
+                 Vfront   10 Vsync  24 Vback   22 Vpol P
+    DTD 8:   600x960    58.993636 Hz   5:8     58.050 kHz     44.350000 MHz (94 mm x 151 mm)
+                 Hfront   68 Hsync   8 Hback   88 Hpol P
+                 Vfront   12 Vsync   4 Vback    8 Vpol P
+Checksum: 0xd0  Unused space in Extension Block: 36 bytes

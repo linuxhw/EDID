@@ -1,0 +1,109 @@
+
+EDID (hex):
+00ffffffffffff0009e53b0800000000
+011c0104b5301b7802de50a3544c9926
+0f505420000001010101010101010101
+0101010101019d8580a070383e406c30
+aa00e00e1100001a000000fc00424f45
+303833420a2020202020000000100000
+00000000000000000000000000000010
+000000000000000000000000000001e5
+02031d00e305f28fe6060f01757528e2
+004f6a46d0004b04605699a953000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000001c
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 3b 08 00 00 00 00
+01 1c 01 04 b5 30 1b 78 02 de 50 a3 54 4c 99 26
+0f 50 54 20 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9d 85 80 a0 70 38 3e 40 6c 30
+aa 00 e0 0e 11 00 00 1a 00 00 00 fc 00 42 4f 45
+30 38 33 42 0a 20 20 20 20 20 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 e5
+
+02 03 1d 00 e3 05 f2 8f e6 06 0f 01 75 75 28 e2
+00 4f 6a 46 d0 00 4b 04 60 56 99 a9 53 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2107
+    Made in: week 1 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  143.999225 Hz  16:9    164.447 kHz    342.050000 MHz (480 mm x 270 mm)
+                 Hfront  108 Hsync  48 Hback    4 Hpol P
+                 Vfront   10 Vsync  10 Vback   42 Vpol N
+    Display Product Name: 'BOE083B'
+    Dummy Descriptor:
+    Dummy Descriptor:
+  Extension blocks: 1
+Checksum: 0xe5
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    xvYCC709
+    opRGB
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+    Gamut Boundary Description Metadata Profile P0
+    Reserved Gamut Boundary Description Metadata Profile P1
+    Reserved Gamut Boundary Description Metadata Profile P2
+    Reserved Gamut Boundary Description Metadata Profile P3
+    ST2113RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+      Hybrid Log-Gamma
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 117 (630.392 cd/m^2)
+    Desired content max frame-average luminance: 117 (630.392 cd/m^2)
+    Desired content min luminance: 40 (0.155 cd/m^2)
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Vendor-Specific Data Block (Dolby), OUI 00-D0-46:
+    4b 04 60 56 99 a9 53                            'K.`V..S'
+Checksum: 0x1c  Unused space in Extension Block: 98 bytes

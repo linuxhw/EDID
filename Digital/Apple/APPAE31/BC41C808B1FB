@@ -1,0 +1,91 @@
+
+EDID (hex):
+00ffffffffffff00061031ae50d7ecff
+161d0104b53c2278200861ae5241b326
+0e505400000001010101010101010101
+0101010101014dd000a0f0703e803020
+350055502100001a565e00a0a0a02950
+3020350055502100001a000000fc0069
+4d61630a2020202020202020000000ff
+003939433638314635304437324301b6
+02031f8070fa100000127631fc78fbff
+02108862d369fa1000faf8f8feffffcd
+9180a0c0083470302035005550210000
+1a000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000044
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 10 31 ae 50 d7 ec ff
+16 1d 01 04 b5 3c 22 78 20 08 61 ae 52 41 b3 26
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 55 50 21 00 00 1a 56 5e 00 a0 a0 a0 29 50
+30 20 35 00 55 50 21 00 00 1a 00 00 00 fc 00 69
+4d 61 63 0a 20 20 20 20 20 20 20 20 00 00 00 ff
+00 39 39 43 36 38 31 46 35 30 44 37 32 43 01 b6
+
+02 03 1f 80 70 fa 10 00 00 12 76 31 fc 78 fb ff
+02 10 88 62 d3 69 fa 10 00 fa f8 f8 fe ff ff cd
+91 80 a0 c0 08 34 70 30 20 35 00 55 50 21 00 00
+1a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 44
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 44593
+    Serial Number: 4293711696
+    Made in: week 22 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing does not include the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2558, 0.6992
+    Blue : 0.1494, 0.0566
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD 2:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    Display Product Name: 'iMac'
+    Display Product Serial Number: '99C681F50D72C'
+  Extension blocks: 1
+Checksum: 0xb6
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Native detailed modes: 0
+  Vendor-Specific Data Block (Apple), OUI 00-10-FA:
+    00 12 76 31 fc 78 fb ff 02 10 88 62 d3          '..v1.x.....b.'
+  Vendor-Specific Data Block (Apple), OUI 00-10-FA:
+    fa f8 f8 fe ff ff                               '......'
+  Detailed Timing Descriptors:
+    DTD 3:  3200x1800   59.981809 Hz  16:9    111.086 kHz    373.250000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   44 Vpol N
+Checksum: 0x44  Unused space in Extension Block: 78 bytes

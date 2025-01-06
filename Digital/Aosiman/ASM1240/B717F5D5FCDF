@@ -1,0 +1,133 @@
+
+EDID (hex):
+00ffffffffffff00066d401201010101
+131f0103801c12783bef21a656529d28
+0b5054210800d1c0a9c081c001010101
+010101010101104080a0700029503020
+3500149b1000001e023a801871382d40
+a014ff00149b1000001e000000fc0042
+4f453130354844520a202020000000fd
+001e411e821e000a202020202020019c
+020329f246101f0413223ee200d5e305
+c00023097f078301000067030c001000
+1844e60605016262005730801871382d
+40a014ff00149b1000001e0000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000002
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 6d 40 12 01 01 01 01
+13 1f 01 03 80 1c 12 78 3b ef 21 a6 56 52 9d 28
+0b 50 54 21 08 00 d1 c0 a9 c0 81 c0 01 01 01 01
+01 01 01 01 01 01 10 40 80 a0 70 00 29 50 30 20
+35 00 14 9b 10 00 00 1e 02 3a 80 18 71 38 2d 40
+a0 14 ff 00 14 9b 10 00 00 1e 00 00 00 fc 00 42
+4f 45 31 30 35 48 44 52 0a 20 20 20 00 00 00 fd
+00 1e 41 1e 82 1e 00 0a 20 20 20 20 20 20 01 9c
+
+02 03 29 f2 46 10 1f 04 13 22 3e e2 00 d5 e3 05
+c0 00 23 09 7f 07 83 01 00 00 67 03 0c 00 10 00
+18 44 e6 06 05 01 62 62 00 57 30 80 18 71 38 2d
+40 a0 14 ff 00 14 9b 10 00 00 1e 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ASM
+    Model: 4672
+    Serial Number: 16843009
+    Made in: week 19 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 28 cm x 18 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Undefined display color type
+    First detailed timing is the preferred timing
+    Supports GTF timings within operating range
+  Color Characteristics:
+    Red  : 0.6513, 0.3378
+    Green: 0.3232, 0.6162
+    Blue : 0.1562, 0.0449
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1280   59.686718 Hz   3:2     78.846 kHz    164.000000 MHz (276 mm x 155 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (276 mm x 155 mm)
+                 Hfront  160 Hsync  20 Hback  100 Hpol P
+                 Vfront   15 Vsync  15 Vback   15 Vpol P
+    Display Product Name: 'BOE105HDR'
+    Display Range Limits:
+      Monitor ranges (GTF): 30-65 Hz V, 30-130 kHz H, max dotclock 300 MHz
+  Extension blocks: 1
+Checksum: 0x9c
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  62:  1280x720    30.000000 Hz  16:9     22.500 kHz     74.250000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Overscanned
+    IT scan behavior: Always Overscanned
+    CE scan behavior: Always Overscanned
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 340 MHz
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 98 (417.710 cd/m^2)
+    Desired content max frame-average luminance: 98 (417.710 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   50.000000 Hz  16:9     56.250 kHz    123.750000 MHz (276 mm x 155 mm)
+                 Hfront  160 Hsync  20 Hback  100 Hpol P
+                 Vfront   15 Vsync  15 Vback   15 Vpol P
+Checksum: 0x02  Unused space in Extension Block: 68 bytes

@@ -1,0 +1,110 @@
+
+EDID (hex):
+00ffffffffffff00061002ae4a64f795
+0c180104b51e227822c805a7554ba026
+0c505400000001010101010101010101
+010101010101c5bc00a0a04052b03020
+3a002b501100001a8f7a00a080004290
+30203a002b501100001a000000fc0069
+4d61630a2020202020202020000000ff
+0033393031374337344136343337010f
+701379030012001682100000ff093f0b
+000000000041505003ae4a64f75b0300
+3c4cd00004ff0e9f002f801f006f083d
+0002000400cc9100047f0c9f002f801f
+000707330002000400555e0004ff099f
+002f801f009f0528000200040081001a
+70fa100000127a31fc78bdcc02908851
+d368fa1000f5f9faffff000000003d90
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 10 02 ae 4a 64 f7 95
+0c 18 01 04 b5 1e 22 78 22 c8 05 a7 55 4b a0 26
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c5 bc 00 a0 a0 40 52 b0 30 20
+3a 00 2b 50 11 00 00 1a 8f 7a 00 a0 80 00 42 90
+30 20 3a 00 2b 50 11 00 00 1a 00 00 00 fc 00 69
+4d 61 63 0a 20 20 20 20 20 20 20 20 00 00 00 ff
+00 33 39 30 31 37 43 37 34 41 36 34 33 37 01 0f
+
+70 13 79 03 00 12 00 16 82 10 00 00 ff 09 3f 0b
+00 00 00 00 00 41 50 50 03 ae 4a 64 f7 5b 03 00
+3c 4c d0 00 04 ff 0e 9f 00 2f 80 1f 00 6f 08 3d
+00 02 00 04 00 cc 91 00 04 7f 0c 9f 00 2f 80 1f
+00 07 07 33 00 02 00 04 00 55 5e 00 04 ff 09 9f
+00 2f 80 1f 00 9f 05 28 00 02 00 04 00 81 00 1a
+70 fa 10 00 00 12 7a 31 fc 78 bd cc 02 90 88 51
+d3 68 fa 10 00 f5 f9 fa ff ff 00 00 00 00 3d 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: APP
+    Model: 44546
+    Serial Number: 2516018250
+    Made in: week 12 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 30 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6552, 0.3320
+    Green: 0.2949, 0.6250
+    Blue : 0.1484, 0.0468
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x2880   59.981580 Hz   8:9    177.665 kHz    483.250000 MHz (299 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   69 Vpol N
+    DTD 2:  2048x2304   59.956506 Hz   8:9    142.097 kHz    313.750000 MHz (299 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   53 Vpol N
+    Display Product Name: 'iMac'
+    Display Product Serial Number: '39017C74A6437'
+  Extension blocks: 1
+Checksum: 0x0f
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Standalone display device
+  Tiled Display Topology Data Block (0x12):
+    Capabilities:
+      Behavior if it is the only tile: Image is scaled to fit the entire tiled display
+      Behavior if more than one tile and fewer than total number of tiles: Undefined
+    Tiled display consists of a single physical display enclosure
+    Num horizontal tiles: 2 Num vertical tiles: 1
+    Tile location: 0, 0
+    Tile resolution: 2560x2880
+    Tiled Display Manufacturer/Vendor ID: APP
+    Tiled Display Product ID Code: 44547
+    Tiled Display Serial Number: 1542939722
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD:  3200x1800   59.981809 Hz  16:9    111.086 kHz    373.250000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback   44 Vpol N
+    DTD:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback   33 Vpol N
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (Apple), OUI 00-10-FA:
+    00 12 7a 31 fc 78 bd cc 02 90 88 51 d3          '..z1.x.....Q.'
+  Vendor-Specific Data Block (Apple), OUI 00-10-FA:
+    f5 f9 fa ff ff                                  '.....'
+  Checksum: 0x3d
+Checksum: 0x90
