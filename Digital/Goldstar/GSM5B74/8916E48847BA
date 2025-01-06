@@ -1,0 +1,107 @@
+
+EDID (hex):
+00ffffffffffff001e6d745be7bc0a00
+0a1e0104b53c2278800f91ae5243b026
+0f505400000001010101010101010101
+01010101010100000010000000000000
+00000000000000000000001000000000
+00000000000000000000000000ff0030
+31304e544e484c503731390a000000fc
+004c4720556c74726146696e650a01d8
+701279030001000c3e17160d0014400b
+50784e99290010930fcbed27ba412d8f
+b5f087ab9063de12001680101000ff09
+3f0b000000000047534d745b01010101
+030014d0bc0008ff099f0007801f003f
+0b510000000700000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000005890
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 74 5b e7 bc 0a 00
+0a 1e 01 04 b5 3c 22 78 80 0f 91 ae 52 43 b0 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 10 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 ff 00 30
+31 30 4e 54 4e 48 4c 50 37 31 39 0a 00 00 00 fc
+00 4c 47 20 55 6c 74 72 61 46 69 6e 65 0a 01 d8
+
+70 12 79 03 00 01 00 0c 3e 17 16 0d 00 14 40 0b
+50 78 4e 99 29 00 10 93 0f cb ed 27 ba 41 2d 8f
+b5 f0 87 ab 90 63 de 12 00 16 80 10 10 00 ff 09
+3f 0b 00 00 00 00 00 47 53 4d 74 5b 01 01 01 01
+03 00 14 d0 bc 00 08 ff 09 9f 00 07 80 1f 00 3f
+0b 51 00 00 00 07 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 58 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 23412
+    Serial Number: 703719
+    Made in: week 10 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Standby
+    Supported color formats: RGB 4:4:4
+    First detailed timing does not include the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2646, 0.6904
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    Dummy Descriptor:
+    Dummy Descriptor:
+    Display Product Serial Number: '010NTNHLP719'
+    Display Product Name: 'LG UltraFine'
+  Extension blocks: 1
+Checksum: 0xd8
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Standalone display device
+  Display Parameters Data Block (0x01):
+    Image size: 595.0 mm x 335.0 mm
+    Display native pixel format: 5120x2880
+    Feature support flags:
+      Power management (DPM)
+      Separate audio inputs provided
+    Gamma: 2.20
+    Aspect ratio: 1.78
+    Dynamic bpc native: 10
+    Dynamic bpc overall: 10
+  ContainerID Data Block:
+    Container ID: 930fcbed-27ba-412d-8fb5-f087ab9063de
+  Tiled Display Topology Data Block (0x12):
+    Capabilities:
+      Behavior if it is the only tile: Undefined
+      Behavior if more than one tile and fewer than total number of tiles: Undefined
+    Tiled display consists of a single physical display enclosure
+    Num horizontal tiles: 2 Num vertical tiles: 1
+    Tile location: 1, 0
+    Tile resolution: 2560x2880
+    Tiled Display Manufacturer/Vendor ID: GSM
+    Tiled Display Product ID Code: 23412
+    Tiled Display Serial Number: 16843009
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x2880   59.996475 Hz   0:0    177.710 kHz    483.370000 MHz (aspect undefined, no 3D stereo)
+               Hfront    8 Hsync  32 Hback  120 Hpol P
+               Vfront    1 Vsync   8 Vback   73 Vpol N
+  Checksum: 0x58
+Checksum: 0x90

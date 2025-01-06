@@ -1,0 +1,149 @@
+
+EDID (hex):
+00ffffffffffff001e6db85b30d62600
+0a1f0104b53c22789f07a1ad524ca325
+0f5054210800d1c06140010101010101
+0101010101015a8780a070384d403020
+3a0058542100001a023a801871382d40
+582c450058542100001e000000fd0030
+90aaaa24010a202020202020000000fc
+004c4720554c545241474541520a0169
+020331f1230907074b01020304111213
+1f903f00e305c000e60605015a5a446d
+1a00000205309000045a445a44000000
+008048801871382d40582c4500585421
+00001a866f80a0703840403020350058
+542100001efe5b80a070383540302035
+00585421000018000000ff003131304d
+41414b4e304c30300a00000000000054
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d b8 5b 30 d6 26 00
+0a 1f 01 04 b5 3c 22 78 9f 07 a1 ad 52 4c a3 25
+0f 50 54 21 08 00 d1 c0 61 40 01 01 01 01 01 01
+01 01 01 01 01 01 5a 87 80 a0 70 38 4d 40 30 20
+3a 00 58 54 21 00 00 1a 02 3a 80 18 71 38 2d 40
+58 2c 45 00 58 54 21 00 00 1e 00 00 00 fd 00 30
+90 aa aa 24 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 47 20 55 4c 54 52 41 47 45 41 52 0a 01 69
+
+02 03 31 f1 23 09 07 07 4b 01 02 03 04 11 12 13
+1f 90 3f 00 e3 05 c0 00 e6 06 05 01 5a 5a 44 6d
+1a 00 00 02 05 30 90 00 04 5a 44 5a 44 00 00 00
+00 80 48 80 18 71 38 2d 40 58 2c 45 00 58 54 21
+00 00 1a 86 6f 80 a0 70 38 40 40 30 20 35 00 58
+54 21 00 00 1e fe 5b 80 a0 70 38 35 40 30 20 35
+00 58 54 21 00 00 18 00 00 00 ff 00 31 31 30 4d
+41 41 4b 4e 30 4c 30 30 0a 00 00 00 00 00 00 54
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 23480
+    Serial Number: 2545200
+    Made in: week 10 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Standby
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6757, 0.3203
+    Green: 0.2978, 0.6396
+    Blue : 0.1464, 0.0605
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  143.981451 Hz  16:9    166.587 kHz    346.500000 MHz (600 mm x 340 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   64 Vpol N
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (600 mm x 340 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-144 Hz V, 170-170 kHz H, max dotclock 360 MHz
+    Display Product Name: 'LG ULTRAGEAR'
+  Extension blocks: 1
+Checksum: 0x69
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 90 (351.250 cd/m^2)
+    Desired content max frame-average luminance: 90 (351.250 cd/m^2)
+    Desired content min luminance: 68 (0.250 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.5
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x04
+    Maximum luminance: 90 (351.250 cd/m^2)
+    Minimum luminance: 68 (0.250 cd/m^2)
+    Maximum luminance (without local dimming): 90 (351.250 cd/m^2)
+    Minimum luminance (without local dimming): 68 (0.250 cd/m^2)
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   74.989899 Hz  16:9     84.364 kHz    185.600000 MHz (600 mm x 340 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol N
+    DTD 4:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (600 mm x 340 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol P
+    DTD 5:  1920x1080   99.930409 Hz  16:9    113.221 kHz    235.500000 MHz (600 mm x 340 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   45 Vpol N
+    Display Product Serial Number: '110MAAKN0L00'
+Checksum: 0x54  Unused space in Extension Block: 6 bytes
+
+

@@ -1,0 +1,110 @@
+
+EDID (hex):
+00ffffffffffff001e6dcd5aef480600
+0521010380291778ead025a258559c28
+0f5054a74a00314f454f614f81c00101
+010101010101662156aa51001e30468f
+33009ae61000001e000000fd00384b1e
+3d09000a202020202020000000fc004c
+472048440a20202020202020000000ff
+00333035415a4e4b43333838370a0170
+020318f1458413011203230907078301
+000065030c0010000000000000000000
+00000000000000000000000000000000
+000000000000000000000000011d0072
+51d01e206e285500b8fa1000001e8c0a
+d08a20e02d10103e9600b8fa10000018
+00000000000000000000000000000000
+00000000000000000000000000000019
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d cd 5a ef 48 06 00
+05 21 01 03 80 29 17 78 ea d0 25 a2 58 55 9c 28
+0f 50 54 a7 4a 00 31 4f 45 4f 61 4f 81 c0 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 fd 00 38 4b 1e
+3d 09 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+47 20 48 44 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 33 30 35 41 5a 4e 4b 43 33 38 38 37 0a 01 70
+
+02 03 18 f1 45 84 13 01 12 03 23 09 07 07 83 01
+00 00 65 03 0c 00 10 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 01 1d 00 72
+51 d0 1e 20 6e 28 55 00 b8 fa 10 00 00 1e 8c 0a
+d0 8a 20 e0 2d 10 10 3e 96 00 b8 fa 10 00 00 18
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 19
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 23245
+    Serial Number: 411887
+    Made in: week 5 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 41 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6357, 0.3447
+    Green: 0.3320, 0.6093
+    Blue : 0.1562, 0.0605
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x08:   800x600    56.250000 Hz   4:3     35.156 kHz     36.000000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings:
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 56-75 Hz V, 30-61 kHz H, max dotclock 90 MHz
+    Display Product Name: 'LG HD'
+    Display Product Serial Number: '305AZNKC3887'
+  Extension blocks: 1
+Checksum: 0x70
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+Checksum: 0x19  Unused space in Extension Block: 103 bytes
