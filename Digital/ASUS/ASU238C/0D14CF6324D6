@@ -1,0 +1,114 @@
+
+EDID (hex):
+00ffffffffffff0006758c2301010101
+131e010380351f78eefff5a556499d24
+16505400000001010101010101010101
+010101010101023a801871382d40582c
+45000f282100001e000000fc00563234
+3144410a202020202020000000fd0030
+4b375812000a20202020202000000010
+00000000000000000000000000000151
+020322f167030c00100078e683010000
+23097f074d9086919293949682838485
+87950000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000061
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 75 8c 23 01 01 01 01
+13 1e 01 03 80 35 1f 78 ee ff f5 a5 56 49 9d 24
+16 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 fc 00 56 32 34
+31 44 41 0a 20 20 20 20 20 20 00 00 00 fd 00 30
+4b 37 58 12 00 0a 20 20 20 20 20 20 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 51
+
+02 03 22 f1 67 03 0c 00 10 00 78 e6 83 01 00 00
+23 09 7f 07 4d 90 86 91 92 93 94 96 82 83 84 85
+87 95 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 61
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ASU
+    Model: 9100
+    Serial Number: 16843009
+    Made in: week 19 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 53 cm x 31 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6474, 0.3388
+    Green: 0.2880, 0.6162
+    Blue : 0.1435, 0.0888
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Name: 'V241DA'
+    Display Range Limits:
+      Monitor ranges (GTF): 48-75 Hz V, 55-88 kHz H, max dotclock 180 MHz
+    Dummy Descriptor:
+  Extension blocks: 1
+Checksum: 0x51
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_48bit
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 1150 MHz
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz (native)
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz (native)
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz (native)
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (native)
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (native)
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz (native)
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz (native)
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (native)
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz (native)
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz (native)
+Checksum: 0x61  Unused space in Extension Block: 93 bytes
+
+

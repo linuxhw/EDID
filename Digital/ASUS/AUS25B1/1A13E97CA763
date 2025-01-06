@@ -1,0 +1,110 @@
+
+EDID (hex):
+00ffffffffffff0006b3b125d66e0000
+181c0104a5361e7806ee91a3544c9926
+0f505421080001010101010101010101
+010101010101023a801871382d40582c
+4500202f2100001e000000ff00234153
+4e726f2b47474e4c6264000000fd001e
+f043ff38010a202020202020000000fc
+00524f47205047323538510a202001b1
+020312412309070183010000654b0400
+0101fe5b80a07038354030203500202f
+2100001a866f80a07038404030203500
+202f2100001a5a8780a070384d403020
+3500202f2100001a40b980a070383c40
+30203a00202f2100001e80d980507038
+504008203a00202f2100001e00000000
+0000000000000000000000000000005e
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 b3 b1 25 d6 6e 00 00
+18 1c 01 04 a5 36 1e 78 06 ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 20 2f 21 00 00 1e 00 00 00 ff 00 23 41 53
+4e 72 6f 2b 47 47 4e 4c 62 64 00 00 00 fd 00 1e
+f0 43 ff 38 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 52 4f 47 20 50 47 32 35 38 51 0a 20 20 01 b1
+
+02 03 12 41 23 09 07 01 83 01 00 00 65 4b 04 00
+01 01 fe 5b 80 a0 70 38 35 40 30 20 35 00 20 2f
+21 00 00 1a 86 6f 80 a0 70 38 40 40 30 20 35 00
+20 2f 21 00 00 1a 5a 87 80 a0 70 38 4d 40 30 20
+35 00 20 2f 21 00 00 1a 40 b9 80 a0 70 38 3c 40
+30 20 3a 00 20 2f 21 00 00 1e 80 d9 80 50 70 38
+50 40 08 20 3a 00 20 2f 21 00 00 1e 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 5e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUS
+    Model: 9649
+    Serial Number: 28374
+    Made in: week 24 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 54 cm x 30 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (544 mm x 303 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: '#ASNro+GGNLbd'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 30-240 Hz V, 67-255 kHz H, max dotclock 560 MHz
+    Display Product Name: 'ROG PG258Q'
+  Extension blocks: 1
+Checksum: 0xb1
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (NVIDIA), OUI 00-04-4B:
+    01 01                                           '..'
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   99.930409 Hz  16:9    113.221 kHz    235.500000 MHz (544 mm x 303 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   45 Vpol N
+    DTD 3:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (544 mm x 303 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD 4:  1920x1080  143.981451 Hz  16:9    166.587 kHz    346.500000 MHz (544 mm x 303 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   69 Vpol N
+    DTD 5:  1920x1080  200.000000 Hz  16:9    228.000 kHz    474.240000 MHz (544 mm x 303 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   47 Vpol P
+    DTD 6:  1920x1080  240.000000 Hz  16:9    278.400 kHz    556.800000 MHz (544 mm x 303 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront    3 Vsync  10 Vback   67 Vpol P
+Checksum: 0x5e  Unused space in Extension Block: 19 bytes

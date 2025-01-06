@@ -1,0 +1,173 @@
+
+EDID (hex):
+00ffffffffffff000654167200000000
+181e0104803c2178211df5ae4f35b325
+0d5054a54b00714081c081809500a9c0
+b300d100d1c0565e00a0a0a029503020
+3500584a2100001a98e200a0a0a02950
+30203500584a2100001a000000fd0030
+903cde44000a202020202020000000fc
+00433237513136350a202020202001e7
+020342f14e90051f1404030700061200
+000000230907078301000067030c0020
+00788867d85dc401888003681a000001
+013090e6e305e301e200c0e606070162
+622f6fc200a0a0a0555030203500584a
+2100001a9a8080887038204018204500
+584a2100001a342150b051001b304070
+3600584a210000000000000000000017
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 54 16 72 00 00 00 00
+18 1e 01 04 80 3c 21 78 21 1d f5 ae 4f 35 b3 25
+0d 50 54 a5 4b 00 71 40 81 c0 81 80 95 00 a9 c0
+b3 00 d1 00 d1 c0 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 58 4a 21 00 00 1a 98 e2 00 a0 a0 a0 29 50
+30 20 35 00 58 4a 21 00 00 1a 00 00 00 fd 00 30
+90 3c de 44 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 32 37 51 31 36 35 0a 20 20 20 20 20 01 e7
+
+02 03 42 f1 4e 90 05 1f 14 04 03 07 00 06 12 00
+00 00 00 23 09 07 07 83 01 00 00 67 03 0c 00 20
+00 78 88 67 d8 5d c4 01 88 80 03 68 1a 00 00 01
+01 30 90 e6 e3 05 e3 01 e2 00 c0 e6 06 07 01 62
+62 2f 6f c2 00 a0 a0 a0 55 50 30 20 35 00 58 4a
+21 00 00 1a 9a 80 80 88 70 38 20 40 18 20 45 00
+58 4a 21 00 00 1a 34 21 50 b0 51 00 1b 30 40 70
+36 00 58 4a 21 00 00 00 00 00 00 00 00 00 00 17
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: ART
+    Model: 29206
+    Made in: week 24 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Color depth is undefined
+    Digital interface is not defined
+    Maximum image size: 60 cm x 33 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing does not include the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6796, 0.3095
+    Green: 0.2099, 0.7001
+    Blue : 0.1474, 0.0537
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x45:  1920x1200   59.884600 Hz  16:10    74.556 kHz    193.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (600 mm x 330 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 2:  2560x1440  144.000477 Hz  16:9    213.265 kHz    580.080000 MHz (600 mm x 330 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 48-144 Hz V, 60-222 kHz H, max dotclock 680 MHz
+    Display Product Name: 'C27Q165'
+  Extension blocks: 1
+Checksum: 0xe7
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    DC_48bit
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 680 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 680 MHz
+    SCDC Present
+    Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0xe6 (MCCS)
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+    Gamut Boundary Description Metadata Profile P0
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: IT video formats not supported
+    CE scan behavior: CE video formats not supported
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 98 (417.710 cd/m^2)
+    Desired content max frame-average luminance: 98 (417.710 cd/m^2)
+    Desired content min luminance: 47 (0.142 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 3:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (600 mm x 330 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   77 Vpol N
+    DTD 4:  1920x1080  143.998614 Hz  16:9    160.126 kHz    329.220000 MHz (600 mm x 330 mm)
+                 Hfront   24 Hsync  32 Hback   80 Hpol P
+                 Vfront    4 Vsync   5 Vback   23 Vpol N
+    DTD 5:  1360x768    59.664196 Hz  85:48    47.433 kHz     85.000000 MHz (analog composite, sync-on-green, 600 mm x 330 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol N
+                 Vfront    3 Vsync   6 Vback   18 Vpol N
+Checksum: 0x17  Unused space in Extension Block: 7 bytes
+
+
