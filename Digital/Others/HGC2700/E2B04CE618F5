@@ -1,0 +1,144 @@
+
+EDID (hex):
+00ffffffffffff0020e3002700000000
+09220104b53c22783bca75a954459822
+1f5054210800d1c0b30095008180a9c0
+8bc081c0b3c0023a801871382d40582c
+350056502100001e139580a070382040
+3020350056502100001e000000fd0034
+b4bebe3c010a202020202020000000fc
+00435232373041550a202020202001e8
+020325f24390010200e200dfe305c000
+23097f0783010000e50f00000c00e606
+050169694fd98580a070384040302035
+0056502100001e8a6f80a07038404030
+20350056502100001e0e5c80a0703835
+403020350056502100001e4c9f807070
+38234030203a0056502100001a000000
+0000000000000000000000000000003f
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 20 e3 00 27 00 00 00 00
+09 22 01 04 b5 3c 22 78 3b ca 75 a9 54 45 98 22
+1f 50 54 21 08 00 d1 c0 b3 00 95 00 81 80 a9 c0
+8b c0 81 c0 b3 c0 02 3a 80 18 71 38 2d 40 58 2c
+35 00 56 50 21 00 00 1e 13 95 80 a0 70 38 20 40
+30 20 35 00 56 50 21 00 00 1e 00 00 00 fd 00 34
+b4 be be 3c 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 52 32 37 30 41 55 0a 20 20 20 20 20 01 e8
+
+02 03 25 f2 43 90 01 02 00 e2 00 df e3 05 c0 00
+23 09 7f 07 83 01 00 00 e5 0f 00 00 0c 00 e6 06
+05 01 69 69 4f d9 85 80 a0 70 38 40 40 30 20 35
+00 56 50 21 00 00 1e 8a 6f 80 a0 70 38 40 40 30
+20 35 00 56 50 21 00 00 1e 0e 5c 80 a0 70 38 35
+40 30 20 35 00 56 50 21 00 00 1e 4c 9f 80 70 70
+38 23 40 30 20 3a 00 56 50 21 00 00 1a 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HGC
+    Model: 9984
+    Made in: week 9 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6630, 0.3281
+    Green: 0.2714, 0.5957
+    Blue : 0.1337, 0.1240
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    GTF     :  1360x765    60.000341 Hz  16:9     47.520 kHz     84.396000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    GTF     :  1680x945    59.999909 Hz  16:9     58.680 kHz    131.443000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    3 Vsync   5 Vback   37 Vpol P
+    DTD 2:  1920x1080  164.996368 Hz  16:9    183.476 kHz    381.630000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   24 Vpol P
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 52-180 Hz V, 190-190 kHz H, max dotclock 600 MHz
+    Display Product Name: 'CR270AU'
+  Extension blocks: 1
+Checksum: 0xe8
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Overscanned
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  YCbCr 4:2:0 Capability Map Data Block:
+    SVD Index 19 is out of range
+    SVD Index 20 is out of range
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 105 (486.099 cd/m^2)
+    Desired content max frame-average luminance: 105 (486.099 cd/m^2)
+    Desired content min luminance: 79 (0.467 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080  143.999630 Hz  16:9    164.736 kHz    342.650000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol P
+    DTD 4:  1920x1080  119.998991 Hz  16:9    137.279 kHz    285.540000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol P
+    DTD 5:  1920x1080   99.998303 Hz  16:9    113.298 kHz    235.660000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   45 Vpol P
+    DTD 6:  1920x1080  179.990113 Hz  16:9    200.689 kHz    407.800000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   32 Hpol P
+                 Vfront    3 Vsync  10 Vback   22 Vpol N
+Checksum: 0x3f  Unused space in Extension Block: 18 bytes

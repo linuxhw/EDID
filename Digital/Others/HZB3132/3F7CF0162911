@@ -1,0 +1,113 @@
+
+EDID (hex):
+00ffffffffffff002342323145060000
+0c1c0103800f0a780a0dc9a057479827
+12484c00000001c1010101c101010101
+010101010101e419e05a108012701e1e
+66005aa0000000000000000000000000
+00000000000000000000000000fd0030
+3e1e460f000a202020202020000000fc
+0031333732383632363233310a2001b6
+020322f14a8404040413040402010023
+097f078301000067030c000000b82d02
+000f011d8018711c1620582c2500c48e
+2100009e000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000001b
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 23 42 32 31 45 06 00 00
+0c 1c 01 03 80 0f 0a 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 01 c1 01 01 01 c1 01 01 01 01
+01 01 01 01 01 01 e4 19 e0 5a 10 80 12 70 1e 1e
+66 00 5a a0 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 30
+3e 1e 46 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 31 33 37 32 38 36 32 36 32 33 31 0a 20 01 b6
+
+02 03 22 f1 4a 84 04 04 04 13 04 04 02 01 00 23
+09 7f 07 83 01 00 00 67 03 0c 00 00 00 b8 2d 02
+00 0f 01 1d 80 18 71 1c 16 20 58 2c 25 00 c4 8e
+21 00 00 9e 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HZB
+    Model: 12594
+    Serial Number: 1605
+    Made in: week 12 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 15 cm x 10 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II: none
+  Standard Timings:
+  Detailed Timing Descriptors:
+    DTD 1:   480x1920   60.000362 Hz   1:4    116.281 kHz     66.280000 MHz (analog composite, sync-on-green, 90 mm x 160 mm)
+                 Hfront   30 Hsync  30 Hback   30 Hpol N
+                 Vfront    6 Vsync   6 Vback    6 Vpol N
+    Empty Descriptor
+    Display Range Limits:
+      Monitor ranges (GTF): 48-62 Hz V, 30-70 kHz H, max dotclock 150 MHz
+    Display Product Name: '13728626231'
+  Extension blocks: 1
+Checksum: 0xb6
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 0.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+  Unknown CTA-861 Data Block (tag 0x00, length 2):
+    00 0f                                           '..'
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+Checksum: 0x1b  Unused space in Extension Block: 75 bytes

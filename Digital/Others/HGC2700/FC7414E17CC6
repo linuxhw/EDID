@@ -1,0 +1,143 @@
+
+EDID (hex):
+00ffffffffffff0020e3002726000000
+12210104b53c21783b8c75a954459822
+1e50540dce0031408180818f9500b300
+d1c0a9c0d1c0565e00a0a0a029503020
+3500584a2100001a000000fd0037a5d7
+d746010a202020202020000000fc005a
+443237300a2020202020202000000010
+00000000000000000000000000000195
+02031df442904e2309070783010000e3
+05c000e6060501696900e200d5139580
+a07038204030203500584a2100001a81
+be0070a0a0515030203800584a210000
+1a03f60018a1a0645030203500584a21
+00001af0fc006aa0a020503020350058
+4a2100001a0000000000000000000000
+000000000000000000000000000000f2
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 20 e3 00 27 26 00 00 00
+12 21 01 04 b5 3c 21 78 3b 8c 75 a9 54 45 98 22
+1e 50 54 0d ce 00 31 40 81 80 81 8f 95 00 b3 00
+d1 c0 a9 c0 d1 c0 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 58 4a 21 00 00 1a 00 00 00 fd 00 37 a5 d7
+d7 46 01 0a 20 20 20 20 20 20 00 00 00 fc 00 5a
+44 32 37 30 0a 20 20 20 20 20 20 20 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 95
+
+02 03 1d f4 42 90 4e 23 09 07 07 83 01 00 00 e3
+05 c0 00 e6 06 05 01 69 69 00 e2 00 d5 13 95 80
+a0 70 38 20 40 30 20 35 00 58 4a 21 00 00 1a 81
+be 00 70 a0 a0 51 50 30 20 38 00 58 4a 21 00 00
+1a 03 f6 00 18 a1 a0 64 50 30 20 35 00 58 4a 21
+00 00 1a f0 fc 00 6a a0 a0 20 50 30 20 35 00 58
+4a 21 00 00 1a 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HGC
+    Model: 9984
+    Serial Number: 38
+    Made in: week 18 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 60 cm x 33 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6621, 0.3281
+    Green: 0.2724, 0.5937
+    Blue : 0.1337, 0.1201
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (600 mm x 330 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 55-165 Hz V, 215-215 kHz H, max dotclock 700 MHz
+    Display Product Name: 'ZD270'
+    Dummy Descriptor:
+  Extension blocks: 1
+Checksum: 0x95
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 4
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  78:  1920x1080  120.000000 Hz  64:27   135.000 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 105 (486.099 cd/m^2)
+    Desired content max frame-average luminance: 105 (486.099 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Overscanned
+    IT scan behavior: Always Overscanned
+    CE scan behavior: Always Overscanned
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080  164.996368 Hz  16:9    183.476 kHz    381.630000 MHz (600 mm x 330 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   24 Vpol N
+    DTD 3:  2560x1440  119.999154 Hz  16:9    182.519 kHz    487.690000 MHz (600 mm x 330 mm)
+                 Hfront   48 Hsync  32 Hback   32 Hpol P
+                 Vfront    3 Vsync   8 Vback   70 Vpol N
+    DTD 4:  2560x1440  143.998079 Hz  16:9    221.757 kHz    629.790000 MHz (600 mm x 330 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    3 Vsync   5 Vback   92 Vpol N
+    DTD 5:  2560x1440  165.000489 Hz  16:9    242.881 kHz    647.520000 MHz (600 mm x 330 mm)
+                 Hfront   48 Hsync  32 Hback   26 Hpol P
+                 Vfront    3 Vsync   5 Vback   24 Vpol N
+Checksum: 0xf2  Unused space in Extension Block: 26 bytes

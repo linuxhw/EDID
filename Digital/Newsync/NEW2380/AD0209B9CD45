@@ -1,0 +1,149 @@
+
+EDID (hex):
+00ffffffffffff0038b7802301000000
+311f0103b4351e7828ee91a3544c9926
+0f505421080031404540614081c08180
+9500b300a9c0023a801871382d40582c
+45000f282100001e000000fd00304b1e
+5514000a202020202020000000ff0030
+303030303030303030303031000000fc
+004e455753594e4320503234304601bf
+020331f148901f041303120105230907
+0783010000e305c000e6060501605908
+67030c0010003828681a00000101304b
+e6504480a07038294030203500000000
+00001e7f2156aa51001e30468f330000
+000000001efb2640a060842830302035
+000000000000ff8a0bd0d820e01e1024
+4813000000000000ff00000000000055
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 b7 80 23 01 00 00 00
+31 1f 01 03 b4 35 1e 78 28 ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 31 40 45 40 61 40 81 c0 81 80
+95 00 b3 00 a9 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 fd 00 30 4b 1e
+55 14 00 0a 20 20 20 20 20 20 00 00 00 ff 00 30
+30 30 30 30 30 30 30 30 30 30 30 31 00 00 00 fc
+00 4e 45 57 53 59 4e 43 20 50 32 34 30 46 01 bf
+
+02 03 31 f1 48 90 1f 04 13 03 12 01 05 23 09 07
+07 83 01 00 00 e3 05 c0 00 e6 06 05 01 60 59 08
+67 03 0c 00 10 00 38 28 68 1a 00 00 01 01 30 4b
+e6 50 44 80 a0 70 38 29 40 30 20 35 00 00 00 00
+00 00 1e 7f 21 56 aa 51 00 1e 30 46 8f 33 00 00
+00 00 00 00 1e fb 26 40 a0 60 84 28 30 30 20 35
+00 00 00 00 00 00 ff 8a 0b d0 d8 20 e0 1e 10 24
+48 13 00 00 00 00 00 00 ff 00 00 00 00 00 00 55
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: NEW
+    Model: 9088
+    Serial Number: 1
+    Made in: week 49 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 53 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 48-75 Hz V, 30-85 kHz H, max dotclock 200 MHz
+    Display Product Serial Number: '0000000000001'
+    Display Product Name: 'NEWSYNC P240F'
+  Extension blocks: 1
+Checksum: 0xbf
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 96 (400.000 cd/m^2)
+    Desired content max frame-average luminance: 89 (343.724 cd/m^2)
+    Desired content min luminance: 8 (0.004 cd/m^2)
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 200 MHz
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 75 Hz
+    Flags 1.x: 0xe6 (MCCS)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   75.001716 Hz  16:9     84.077 kHz    174.880000 MHz
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+    DTD 3:  1366x768    59.964364 Hz 683:384   47.852 kHz     85.750000 MHz
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    DTD 4:  1600x1800i  60.285873 Hz   8:9     56.699 kHz     99.790000 MHz (side by side interleaved)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   32 Vpol P Vfront +0.5 Odd Field
+                 Vfront    3 Vsync   5 Vback   32 Vpol P Vback  +0.5 Even Field
+    DTD 5:   720x960i   61.821409 Hz   3:4     31.560 kHz     29.540000 MHz (side by side interleaved)
+                 Hfront   36 Hsync  72 Hback  108 Hpol P
+                 Vfront    1 Vsync   3 Vback   26 Vpol P Vfront +0.5 Odd Field
+                 Vfront    1 Vsync   3 Vback   26 Vpol P Vback  +0.5 Even Field
+Checksum: 0x55  Unused space in Extension Block: 6 bytes
+
+

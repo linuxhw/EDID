@@ -1,0 +1,110 @@
+
+EDID (hex):
+00ffffffffffff003666031007062120
+2d1f0103800b1378aab065a656539d28
+0c505400000001010101010101010101
+010101010101675e009861001880c830
+e20000006800001e675e009861001880
+c830e20000006800001e993db0a44080
+18704408c40071b50000001a000000fc
+00545630383057554d2d4e4c30200193
+02031515230907078301000065030c00
+100002000fa31bd0a020003c5030204a
+0471b50000001a3d2984a030403c6030
+204a0471b50000001ace36387840801e
+702814440071b50000001856311aa040
+903c6030204a0471b500000018e934b0
+a040403c6030204a0400000000001800
+000000000000000000000000000000ca
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 66 03 10 07 06 21 20
+2d 1f 01 03 80 0b 13 78 aa b0 65 a6 56 53 9d 28
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 67 5e 00 98 61 00 18 80 c8 30
+e2 00 00 00 68 00 00 1e 67 5e 00 98 61 00 18 80
+c8 30 e2 00 00 00 68 00 00 1e 99 3d b0 a4 40 80
+18 70 44 08 c4 00 71 b5 00 00 00 1a 00 00 00 fc
+00 54 56 30 38 30 57 55 4d 2d 4e 4c 30 20 01 93
+
+02 03 15 15 23 09 07 07 83 01 00 00 65 03 0c 00
+10 00 02 00 0f a3 1b d0 a0 20 00 3c 50 30 20 4a
+04 71 b5 00 00 00 1a 3d 29 84 a0 30 40 3c 60 30
+20 4a 04 71 b5 00 00 00 1a ce 36 38 78 40 80 1e
+70 28 14 44 00 71 b5 00 00 00 18 56 31 1a a0 40
+90 3c 60 30 20 4a 04 71 b5 00 00 00 18 e9 34 b0
+a0 40 40 3c 60 30 20 4a 04 00 00 00 00 00 18 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ca
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MSF
+    Model: 4099
+    Serial Number: 539035143
+    Made in: week 45 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 11 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6503, 0.3388
+    Green: 0.3242, 0.6132
+    Blue : 0.1572, 0.0488
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1536x2048   59.997994 Hz   3:4    124.316 kHz    241.670000 MHz (1536 mm x 2048 mm)
+                 Hfront  200 Hsync  48 Hback  160 Hpol P
+                 Vfront   14 Vsync   2 Vback    8 Vpol P
+    DTD 2:  1536x2048   59.997994 Hz   3:4    124.316 kHz    241.670000 MHz (1536 mm x 2048 mm)
+                 Hfront  200 Hsync  48 Hback  160 Hpol P
+                 Vfront   14 Vsync   2 Vback    8 Vpol P
+    DTD 3:  1200x1920   59.469395 Hz   5:8    115.609 kHz    157.690000 MHz (113 mm x 181 mm)
+                 Hfront   68 Hsync   8 Hback   88 Hpol P
+                 Vfront   12 Vsync   4 Vback    8 Vpol N
+    Display Product Name: 'TV080WUM-NL0 '
+  Extension blocks: 1
+Checksum: 0x93
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Supports YCbCr 4:2:2
+  Native detailed modes: 5
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Unknown CTA-861 Data Block (tag 0x00, length 2):
+    00 0f                                           '..'
+  Detailed Timing Descriptors:
+    DTD 4:   720x1280   59.998304 Hz   9:16    80.398 kHz     70.750000 MHz (113 mm x 181 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront   20 Vsync  10 Vback   30 Vpol N
+    DTD 5:   900x1600   59.996590 Hz   9:16    99.594 kHz    105.570000 MHz (113 mm x 181 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront   20 Vsync  10 Vback   30 Vpol N
+    DTD 6:  1080x1920   59.957265 Hz   9:16   116.917 kHz    140.300000 MHz (113 mm x 181 mm)
+                 Hfront   40 Hsync  20 Hback   60 Hpol N
+                 Vfront    4 Vsync   4 Vback   22 Vpol N
+    DTD 7:  1050x1680   59.988601 Hz   5:8    104.380 kHz    126.300000 MHz (113 mm x 181 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront   20 Vsync  10 Vback   30 Vpol N
+    DTD 8:  1200x1600   59.997342 Hz   3:4     99.596 kHz    135.450000 MHz
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront   20 Vsync  10 Vback   30 Vpol N
+Checksum: 0xca  Unused space in Extension Block: 16 bytes

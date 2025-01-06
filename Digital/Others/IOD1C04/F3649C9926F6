@@ -1,0 +1,139 @@
+
+EDID (hex):
+00ffffffffffff0025e4041c01010101
+00190103803e22782a08a5a2574fa228
+0f50542108008180e1c0b300950081c0
+d1c0d100814004740030f2705a80b058
+8a006d552100001e000000fd00174c0f
+601e000a202020202020000000ff0053
+657269616c4e756d6265720a000000fc
+004c43442d4d344b323832580a20016a
+020328704d010203040506071020225d
+5e5f23090707830100006d030c001000
+383c20006001020304740030f2705a80
+b0588a006d552100001e565e00a0a0a0
+2950302035006d552100001a023a8018
+71382d40582c45006d552100001e011d
+8018711c1620582c25006d552100009e
+000000000000000000000000000000ed
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 25 e4 04 1c 01 01 01 01
+00 19 01 03 80 3e 22 78 2a 08 a5 a2 57 4f a2 28
+0f 50 54 21 08 00 81 80 e1 c0 b3 00 95 00 81 c0
+d1 c0 d1 00 81 40 04 74 00 30 f2 70 5a 80 b0 58
+8a 00 6d 55 21 00 00 1e 00 00 00 fd 00 17 4c 0f
+60 1e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 53
+65 72 69 61 6c 4e 75 6d 62 65 72 0a 00 00 00 fc
+00 4c 43 44 2d 4d 34 4b 32 38 32 58 0a 20 01 6a
+
+02 03 28 70 4d 01 02 03 04 05 06 07 10 20 22 5d
+5e 5f 23 09 07 07 83 01 00 00 6d 03 0c 00 10 00
+38 3c 20 00 60 01 02 03 04 74 00 30 f2 70 5a 80
+b0 58 8a 00 6d 55 21 00 00 1e 56 5e 00 a0 a0 a0
+29 50 30 20 35 00 6d 55 21 00 00 1a 02 3a 80 18
+71 38 2d 40 58 2c 45 00 6d 55 21 00 00 1e 01 1d
+80 18 71 1c 16 20 58 2c 25 00 6d 55 21 00 00 9e
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ed
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: IOD
+    Model: 7172
+    Serial Number: 16843009
+    Made in: 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 62 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6328, 0.3398
+    Green: 0.3105, 0.6328
+    Blue : 0.1582, 0.0605
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x54:  2048x1152   60.000000 Hz  16:9     72.000 kHz    162.000000 MHz (RB)
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x45:  1920x1200   59.884600 Hz  16:10    74.556 kHz    193.250000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz (621 mm x 341 mm)
+                 Hfront  176 Hsync  88 Hback  296 Hpol P
+                 Vfront    8 Vsync  10 Vback   72 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 23-76 Hz V, 15-96 kHz H, max dotclock 300 MHz
+    Display Product Serial Number: 'SerialNumber'
+    Display Product Name: 'LCD-M4K282X'
+  Extension blocks: 1
+Checksum: 0x6a
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 2:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz (621 mm x 341 mm)
+                 Hfront  176 Hsync  88 Hback  296 Hpol P
+                 Vfront    8 Vsync  10 Vback   72 Vpol P
+    DTD 3:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (621 mm x 341 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 4:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (621 mm x 341 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (621 mm x 341 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+Checksum: 0xed  Unused space in Extension Block: 15 bytes

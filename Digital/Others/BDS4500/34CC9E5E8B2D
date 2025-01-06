@@ -1,0 +1,88 @@
+
+EDID (hex):
+00ffffffffffff000893004544a4ff6f
+1c12010380202a7de200040000000000
+004b4f21080001010101010101010101
+010101010101362900a060001d803020
+3a003ea71100001a0000000f00313837
+393032343730380a2005000000fc004d
+44434720333132302d43420a000000fd
+00146419c821000a20202020202001c1
+1001020000b15300a060003b8030203a
+003ea71100001abd5100a080002c6030
+203400a73e1100001ae83500a080001d
+6030206400a73e1100001a0000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000c8
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 08 93 00 45 44 a4 ff 6f
+1c 12 01 03 80 20 2a 7d e2 00 04 00 00 00 00 00
+00 4b 4f 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 36 29 00 a0 60 00 1d 80 30 20
+3a 00 3e a7 11 00 00 1a 00 00 00 0f 00 31 38 37
+39 30 32 34 37 30 38 0a 20 05 00 00 00 fc 00 4d
+44 43 47 20 33 31 32 30 2d 43 42 0a 00 00 00 fd
+00 14 64 19 c8 21 00 0a 20 20 20 20 20 20 01 c1
+
+10 01 02 00 00 b1 53 00 a0 60 00 3b 80 30 20 3a
+00 3e a7 11 00 00 1a bd 51 00 a0 80 00 2c 60 30
+20 34 00 a7 3e 11 00 00 1a e8 35 00 a0 80 00 1d
+60 30 20 64 00 a7 3e 11 00 00 1a 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c8
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: BDS
+    Model: 17664
+    Serial Number: 1879024708
+    Made in: week 28 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 32 cm x 42 cm
+    Gamma: 2.25
+    DPMS levels: Standby Suspend Off
+    Monochrome or grayscale display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.0000, 0.0000
+    Green: 0.0000, 0.0000
+    Blue : 0.0000, 0.0000
+    White: 0.2939, 0.3085
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1536x2048   29.949537 Hz   3:4     62.205 kHz    105.500000 MHz (318 mm x 423 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   16 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 31 38 37 39 30 32 34 37 30 38 0a 20 05 '...1879024708. .'
+    Display Product Name: 'MDCG 3120-CB'
+    Display Range Limits:
+      Monitor ranges (GTF): 20-100 Hz V, 25-200 kHz H, max dotclock 330 MHz
+  Extension blocks: 1
+Checksum: 0xc1
+
+----------------
+
+Block 1, Video Timing Extension Block:
+  Version: 1
+  Detailed Timing Descriptors:
+    DTD:  1536x2048   59.955696 Hz   3:4    126.327 kHz    214.250000 MHz (318 mm x 423 mm)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback   46 Vpol N
+    DTD:  2048x1536   59.980394 Hz   4:3     94.769 kHz    209.250000 MHz (423 mm x 318 mm)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   4 Vback   37 Vpol N
+Checksum: 0xc8  Unused space in Extension Block: 86 bytes

@@ -1,0 +1,123 @@
+
+EDID (hex):
+00ffffffffffff0006d8390000000000
+281c0103800000780a2fcda354459724
+11464700000001010101010101010101
+010101010101023a801871382d40582c
+450010090000001e0000000000000000
+00000000000000000000000000fc0041
+56542047433331310a202020000000fd
+00183d0f441102002020202020200111
+02031f71499022070605040302012309
+07078301000065030c001000e200cf01
+1d803e73382d407e2c45801009000000
+1e011d801871382d40582c4500100900
+00001e011d007251d01e206e28550010
+090000001e0000000000000000000000
+00000000000000011d8018711c162058
+2c250010090000009e00000000000011
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 d8 39 00 00 00 00 00
+28 1c 01 03 80 00 00 78 0a 2f cd a3 54 45 97 24
+11 46 47 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 10 09 00 00 00 1e 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fc 00 41
+56 54 20 47 43 33 31 31 0a 20 20 20 00 00 00 fd
+00 18 3d 0f 44 11 02 00 20 20 20 20 20 20 01 11
+
+02 03 1f 71 49 90 22 07 06 05 04 03 02 01 23 09
+07 07 83 01 00 00 65 03 0c 00 10 00 e2 00 cf 01
+1d 80 3e 73 38 2d 40 7e 2c 45 80 10 09 00 00 00
+1e 01 1d 80 18 71 38 2d 40 58 2c 45 00 10 09 00
+00 00 1e 01 1d 00 72 51 d0 1e 20 6e 28 55 00 10
+09 00 00 00 1e 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 01 1d 80 18 71 1c 16 20 58
+2c 25 00 10 09 00 00 00 9e 00 00 00 00 00 00 11
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AVX
+    Model: 57
+    Made in: week 40 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6367, 0.3300
+    Green: 0.2724, 0.5927
+    Blue : 0.1435, 0.0664
+    White: 0.2763, 0.2783
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (16 mm x 9 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Empty Descriptor
+    Display Product Name: 'AVT GC311'
+    Display Range Limits:
+      Monitor ranges (Secondary GTF): 24-61 Hz V, 15-68 kHz H, max dotclock 170 MHz
+      GTF Secondary Curve Block:
+        Start frequency: 64 kHz
+        C: 16.0%
+        M: 8224%/kHz
+        K: 32
+        J: 16.0%
+  Extension blocks: 1
+Checksum: 0x11
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz (16 mm x 9 mm)
+                 Hfront  638 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 3:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz (16 mm x 9 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (16 mm x 9 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0x11  Unused space in Extension Block: 42 bytes
+
+

@@ -1,0 +1,87 @@
+
+EDID (hex):
+00ffffffffffff003e09010088888800
+01220104a50a0f78080dc9a057479827
+12484c00000001010101010101010101
+01010101010100000010000000000000
+00000000000000000000001000000000
+00000000000000000000000000fd0832
+96142d46000a202020202020000000fc
+004f72616e6765205069204e656f0185
+70122b0000030128a49a0084af04ef00
+89801d007f07720150810300a49a0084
+af04ef0089801d007f07650a438a0300
+f1000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000090
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 3e 09 01 00 88 88 88 00
+01 22 01 04 a5 0a 0f 78 08 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 10 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fd 08 32
+96 14 2d 46 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4f 72 61 6e 67 65 20 50 69 20 4e 65 6f 01 85
+
+70 12 2b 00 00 03 01 28 a4 9a 00 84 af 04 ef 00
+89 80 1d 00 7f 07 72 01 50 81 03 00 a4 9a 00 84
+af 04 ef 00 89 80 1d 00 7f 07 65 0a 43 8a 03 00
+f1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: OPI
+    Model: 1
+    Serial Number: 8947848
+    Made in: week 1 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 10 cm x 15 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing does not include the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    Dummy Descriptor:
+    Dummy Descriptor:
+    Display Range Limits:
+      Monitor ranges (GTF): 50-150 Hz V, 20-300 kHz H, max dotclock 700 MHz
+    Display Product Name: 'Orange Pi Neo'
+  Extension blocks: 1
+Checksum: 0x85
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  1200x1920  120.001576 Hz  16:9    274.924 kHz    395.890000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront  138 Hsync  30 Hback   72 Hpol P
+               Vfront  337 Vsync   4 Vback   30 Vpol P
+    DTD:  1200x1920   60.000788 Hz  16:9    274.924 kHz    395.890000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront  138 Hsync  30 Hback   72 Hpol P
+               Vfront 2628 Vsync   4 Vback   30 Vpol P
+  Checksum: 0xf1
+Checksum: 0x90  Unused space in Extension Block: 78 bytes

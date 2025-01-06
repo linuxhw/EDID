@@ -1,0 +1,120 @@
+
+EDID (hex):
+00ffffffffffff003263494300000000
+041601038072408c0aaa3da455489325
+10474a21080081809040a94001010101
+010101010101023a801871382d40582c
+45004c834200001e011d007251d01e20
+6e2855004c834200001e000000fc0049
+636f6e203430300a20202020000000fd
+00183c0f4b11000a202020202020015c
+020326714c900402030122201f131112
+2123097f018301000066030c00110080
+654c53430107011d801871382d40582c
+45004c834200001e000000ff00524a36
+44303330414630464337000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000005e
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 32 63 49 43 00 00 00 00
+04 16 01 03 80 72 40 8c 0a aa 3d a4 55 48 93 25
+10 47 4a 21 08 00 81 80 90 40 a9 40 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 4c 83 42 00 00 1e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 4c 83 42 00 00 1e 00 00 00 fc 00 49
+63 6f 6e 20 34 30 30 0a 20 20 20 20 00 00 00 fd
+00 18 3c 0f 4b 11 00 0a 20 20 20 20 20 20 01 5c
+
+02 03 26 71 4c 90 04 02 03 01 22 20 1f 13 11 12
+21 23 09 7f 01 83 01 00 00 66 03 0c 00 11 00 80
+65 4c 53 43 01 07 01 1d 80 18 71 38 2d 40 58 2c
+45 00 4c 83 42 00 00 1e 00 00 00 ff 00 52 4a 36
+44 30 33 30 41 46 30 46 43 37 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 5e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LSC
+    Model: 17225
+    Made in: week 4 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 114 cm x 64 cm
+    Gamma: 2.40
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6425, 0.3339
+    Green: 0.2832, 0.5761
+    Blue : 0.1445, 0.0654
+    White: 0.2802, 0.2900
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2a:  1400x1050   59.978442 Hz   4:3     65.317 kHz    121.750000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1100 mm x 643 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (1100 mm x 643 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    Display Product Name: 'Icon 400'
+    Display Range Limits:
+      Monitor ranges (GTF): 24-60 Hz V, 15-75 kHz H, max dotclock 170 MHz
+  Extension blocks: 1
+Checksum: 0x5c
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.1.0.0
+    Supports_AI
+  Vendor-Specific Data Block, OUI 43-53-4C:
+    01 07                                           '..'
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz (1100 mm x 643 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: 'RJ6D030AF0FC7'
+Checksum: 0x5e  Unused space in Extension Block: 53 bytes
+
+

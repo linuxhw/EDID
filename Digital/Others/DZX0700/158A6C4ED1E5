@@ -1,0 +1,116 @@
+
+EDID (hex):
+00ffffffffffff001358000700000000
+021f0103800f0978ea2d36a75438ae26
+0d4f5421080061006140d1c071404540
+81808140714001140040415823203020
+350098560000001a000000ff00303030
+30303030303030303030000000fd0038
+3d185015000a202020202020000000fc
+005a330a20202020202020202020013c
+020319f14690040507030e2309070783
+01000065030c0010008c0ad08a20e02d
+10103e9600985600000018011d007251
+d01e206e28550098560000001e000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000bb
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 13 58 00 07 00 00 00 00
+02 1f 01 03 80 0f 09 78 ea 2d 36 a7 54 38 ae 26
+0d 4f 54 21 08 00 61 00 61 40 d1 c0 71 40 45 40
+81 80 81 40 71 40 01 14 00 40 41 58 23 20 30 20
+35 00 98 56 00 00 00 1a 00 00 00 ff 00 30 30 30
+30 30 30 30 30 30 30 30 30 30 00 00 00 fd 00 38
+3d 18 50 15 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 5a 33 0a 20 20 20 20 20 20 20 20 20 20 01 3c
+
+02 03 19 f1 46 90 04 05 07 03 0e 23 09 07 07 83
+01 00 00 65 03 0c 00 10 00 8c 0a d0 8a 20 e0 2d
+10 10 3e 96 00 98 56 00 00 00 18 01 1d 00 72 51
+d0 1e 20 6e 28 55 00 98 56 00 00 00 1e 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 bb
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: DZX
+    Model: 1792
+    Made in: week 2 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 15 cm x 9 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6523, 0.3300
+    Green: 0.2216, 0.6806
+    Blue : 0.1484, 0.0537
+    White: 0.3095, 0.3300
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    GTF     :  1024x640    60.000182 Hz  16:10    39.780 kHz     52.828000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1024x600    60.004218 Hz 128:75    38.103 kHz     51.210000 MHz (152 mm x 86 mm)
+                 Hfront   48 Hsync  32 Hback  240 Hpol P
+                 Vfront    3 Vsync   5 Vback   27 Vpol N
+    Display Product Serial Number: '0000000000000'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-61 Hz V, 24-80 kHz H, max dotclock 210 MHz
+    Display Product Name: 'Z3'
+  Extension blocks: 1
+Checksum: 0x3c
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  14:  1440x480    59.940060 Hz   4:3     31.469 kHz     54.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (152 mm x 86 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (152 mm x 86 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0xbb  Unused space in Extension Block: 66 bytes

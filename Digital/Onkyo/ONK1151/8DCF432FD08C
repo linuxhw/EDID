@@ -1,0 +1,175 @@
+
+EDID (hex):
+00ffffffffffff003dcb511100000000
+001b0103806a3b780aee91a3544c9926
+0f50542dce0081c00101010101010101
+010101010101011d007251d01e206e28
+5500615b2100001e011d80d0721c1620
+102c2580615b2100009e000000fc0041
+562052656365697665720a20000000fd
+00184b0f4417000a202020202020014e
+020340f14b841305140312101f202122
+3b097f070f7f071507503f06c04d0200
+5706015f7e035f7e01677e01834f0000
+6c030c001400b82d0000000000e2000f
+011d8018711c1620582c2500615b2100
+009e011d00bc52d01e20b8285540615b
+2100001e8c0ad090204031200c405500
+615b210000180000000000000000004c
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 3d cb 51 11 00 00 00 00
+00 1b 01 03 80 6a 3b 78 0a ee 91 a3 54 4c 99 26
+0f 50 54 2d ce 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 01 1d 00 72 51 d0 1e 20 6e 28
+55 00 61 5b 21 00 00 1e 01 1d 80 d0 72 1c 16 20
+10 2c 25 80 61 5b 21 00 00 9e 00 00 00 fc 00 41
+56 20 52 65 63 65 69 76 65 72 0a 20 00 00 00 fd
+00 18 4b 0f 44 17 00 0a 20 20 20 20 20 20 01 4e
+
+02 03 40 f1 4b 84 13 05 14 03 12 10 1f 20 21 22
+3b 09 7f 07 0f 7f 07 15 07 50 3f 06 c0 4d 02 00
+57 06 01 5f 7e 03 5f 7e 01 67 7e 01 83 4f 00 00
+6c 03 0c 00 14 00 b8 2d 00 00 00 00 00 e2 00 0f
+01 1d 80 18 71 1c 16 20 58 2c 25 00 61 5b 21 00
+00 9e 01 1d 00 bc 52 d0 1e 20 b8 28 55 40 61 5b
+21 00 00 1e 8c 0a d0 90 20 40 31 20 0c 40 55 00
+61 5b 21 00 00 18 00 00 00 00 00 00 00 00 00 4c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ONK
+    Model: 4433
+    Made in: 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 106 cm x 59 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (609 mm x 347 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 2:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (609 mm x 347 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    Display Product Name: 'AV Receiver'
+    Display Range Limits:
+      Monitor ranges (GTF): 24-75 Hz V, 15-68 kHz H, max dotclock 230 MHz
+  Extension blocks: 1
+Checksum: 0x4e
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    Linear PCM:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 640 kb/s
+    DTS:
+      Max channels: 8
+      Supported sample rates (kHz): 48 44.1
+      Maximum bit rate: 1536 kb/s
+    One Bit Audio:
+      Max channels: 6
+      Supported sample rates (kHz): 44.1
+      Audio Format Code dependent value: 0x00
+    Enhanced AC-3 (DD+):
+      Max channels: 8
+      Supported sample rates (kHz): 48 44.1
+      Supports Joint Object Coding
+    DTS-HD:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports DTS:X
+      Audio Format Code dependent value: 0x03
+    DTS-HD:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Audio Format Code dependent value: 0x01
+    MAT (MLP):
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports Dolby TrueHD, object audio PCM and channel-based PCM
+      Hash calculation required for object audio PCM or channel-based PCM
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+    LFE1 - Low Frequency Effects 1
+    FC - Front Center
+    BL/BR - Back Left/Right
+    RLC/RRC - Rear Left/Right of Center (Deprecated)
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.4.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (609 mm x 347 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 4:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (609 mm x 347 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (609 mm x 347 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+Checksum: 0x4c  Unused space in Extension Block: 9 bytes

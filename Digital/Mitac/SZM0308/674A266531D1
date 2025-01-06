@@ -1,0 +1,130 @@
+
+EDID (hex):
+00ffffffffffff004f4d080300000000
+261b0103805932780a1990a755469824
+10494b01080001010101010101010101
+010101010101023a801871382d40582c
+450040846300001e011d007251d01e20
+6e285500c48e2100001e000000fc0044
+5347692054560a2020202020000000fd
+00163d0e440f000a2020202020200193
+020328724d0305071214162021220413
+9f9029097f0715070055070083010000
+67030c001000801e8c0ad08a20e02d10
+103e9600c48e21000018011d00bc52d0
+1e20b8285540c48e2100001e011d80d0
+721c1620102c2580c48e2100009e8c0a
+d090204031200c405500c48e21000018
+8c0ad08a20e02d10103e9600c48e0012
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4f 4d 08 03 00 00 00 00
+26 1b 01 03 80 59 32 78 0a 19 90 a7 55 46 98 24
+10 49 4b 01 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 40 84 63 00 00 1e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 c4 8e 21 00 00 1e 00 00 00 fc 00 44
+53 47 69 20 54 56 0a 20 20 20 20 20 00 00 00 fd
+00 16 3d 0e 44 0f 00 0a 20 20 20 20 20 20 01 93
+
+02 03 28 72 4d 03 05 07 12 14 16 20 21 22 04 13
+9f 90 29 09 7f 07 15 07 00 55 07 00 83 01 00 00
+67 03 0c 00 10 00 80 1e 8c 0a d0 8a 20 e0 2d 10
+10 3e 96 00 c4 8e 21 00 00 18 01 1d 00 bc 52 d0
+1e 20 b8 28 55 40 c4 8e 21 00 00 1e 01 1d 80 d0
+72 1c 16 20 10 2c 25 80 c4 8e 21 00 00 9e 8c 0a
+d0 90 20 40 31 20 0c 40 55 00 c4 8e 21 00 00 18
+8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 c4 8e 00 12
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SZM
+    Model: 776
+    Made in: week 38 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 89 cm x 50 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6523, 0.3330
+    Green: 0.2753, 0.5947
+    Blue : 0.1425, 0.0634
+    White: 0.2851, 0.2929
+  Established Timings I & II:
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1600 mm x 900 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    Display Product Name: 'DSGi TV'
+    Display Range Limits:
+      Monitor ranges (GTF): 22-61 Hz V, 14-68 kHz H, max dotclock 150 MHz
+  Extension blocks: 1
+Checksum: 0x93
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 0 kb/s
+    Enhanced AC-3 (DD+):
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 150 MHz
+  Detailed Timing Descriptors:
+    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 4:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 6:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+Checksum: 0x12  Unused space in Extension Block: 15 bytes

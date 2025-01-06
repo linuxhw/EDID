@@ -1,0 +1,132 @@
+
+EDID (hex):
+00ffffffffffff000ce3720201000000
+321d0103813c22783a1ec5ae4f34b126
+0e5054a54b008180a940d1c0714f0101
+010101010101023a801871382d40582c
+450055502100001a000000ff00303030
+30303030303030303030000000fc0032
+37394c344849440a20202020000000fd
+00304b365512000a202020202020018f
+020322f04f100504030207061f141312
+11161501230907078301000065030c00
+1000011d007251d01e206e2855005550
+2100001e8c0ad08a20e02d10103e9600
+555021000018023a80d072382d40102c
+458055502100001ec000020000000000
+00000000000000000000000000000000
+000000000000000000000000000000a1
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0c e3 72 02 01 00 00 00
+32 1d 01 03 81 3c 22 78 3a 1e c5 ae 4f 34 b1 26
+0e 50 54 a5 4b 00 81 80 a9 40 d1 c0 71 4f 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 55 50 21 00 00 1a 00 00 00 ff 00 30 30 30
+30 30 30 30 30 30 30 30 30 30 00 00 00 fc 00 32
+37 39 4c 34 48 49 44 0a 20 20 20 20 00 00 00 fd
+00 30 4b 36 55 12 00 0a 20 20 20 20 20 20 01 8f
+
+02 03 22 f0 4f 10 05 04 03 02 07 06 1f 14 13 12
+11 16 15 01 23 09 07 07 83 01 00 00 65 03 0c 00
+10 00 01 1d 00 72 51 d0 1e 20 6e 28 55 00 55 50
+21 00 00 1e 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00
+55 50 21 00 00 18 02 3a 80 d0 72 38 2d 40 10 2c
+45 80 55 50 21 00 00 1e c0 00 02 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a1
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CGC
+    Model: 626
+    Serial Number: 1
+    Made in: week 50 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Undefined display color type
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6796, 0.3095
+    Green: 0.2060, 0.6933
+    Blue : 0.1513, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (597 mm x 336 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol N
+    Display Product Serial Number: '0000000000000'
+    Display Product Name: '279L4HID'
+    Display Range Limits:
+      Monitor ranges (GTF): 48-75 Hz V, 54-85 kHz H, max dotclock 180 MHz
+  Extension blocks: 1
+Checksum: 0x8f
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (597 mm x 336 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (597 mm x 336 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 4:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (597 mm x 336 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Detailed mode: c0 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '..................'
+Checksum: 0xa1  Unused space in Extension Block: 21 bytes

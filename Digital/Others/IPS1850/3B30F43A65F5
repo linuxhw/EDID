@@ -1,0 +1,117 @@
+
+EDID (hex):
+00ffffffffffff002613501801000000
+2d1e010380291778ead6a5a2594a9524
+145054a5480081008140818081c07140
+010145400101662156aa51001e30468f
+33009ae61000001e662150b051001b30
+407036009ae61000001c000000fd0032
+4c1e500f000a202020202020000000fc
+004e31383548440a2020202020200185
+020312f1470102030412131665030c00
+10008c0ad08a20e02d10103e9600fe1f
+11000018011d00bc52d01e20b8285540
+e8121100001e3827564051001a30468f
+33009ae61000001e0000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000073
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 13 50 18 01 00 00 00
+2d 1e 01 03 80 29 17 78 ea d6 a5 a2 59 4a 95 24
+14 50 54 a5 48 00 81 00 81 40 81 80 81 c0 71 40
+01 01 45 40 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 9a e6 10 00 00 1c 00 00 00 fd 00 32
+4c 1e 50 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4e 31 38 35 48 44 0a 20 20 20 20 20 20 01 85
+
+02 03 12 f1 47 01 02 03 04 12 13 16 65 03 0c 00
+10 00 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 fe 1f
+11 00 00 18 01 1d 00 bc 52 d0 1e 20 b8 28 55 40
+e8 12 11 00 00 1e 38 27 56 40 51 00 1a 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 73
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: IPS
+    Model: 6224
+    Serial Number: 1
+    Made in: week 45 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 41 cm x 23 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6357, 0.3486
+    Green: 0.2900, 0.5839
+    Blue : 0.1425, 0.0800
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    DTD 2:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (410 mm x 230 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol N
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-76 Hz V, 30-80 kHz H, max dotclock 150 MHz
+    Display Product Name: 'N185HD'
+  Extension blocks: 1
+Checksum: 0x85
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (510 mm x 287 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 4:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (488 mm x 274 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:  1366x768    74.999029 Hz 683:384   59.549 kHz    100.400000 MHz (410 mm x 230 mm)
+                 Hfront   70 Hsync 143 Hback  107 Hpol P
+                 Vfront    3 Vsync   3 Vback   20 Vpol P
+Checksum: 0x73  Unused space in Extension Block: 55 bytes

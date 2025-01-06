@@ -1,0 +1,111 @@
+
+EDID (hex):
+00ffffffffffff002301000001000000
+26100103804728960adaffa3584aa229
+17494b00000001010101010101010101
+010101010101023a801871382d40582c
+4500c48e2100001e023a80d072382d40
+582c4500c48e2100001e000000fc0042
+4d442048444d490a20202020000000fd
+00323c1f4408000a20202020202001f7
+02031f544985849493a0a1a29f902309
+04078301000068030c002000001e0001
+1d007251d01e206e285500c48e210000
+1e011d00bc52d01e20b8285540c48e21
+00001e00000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000e2
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 23 01 00 00 01 00 00 00
+26 10 01 03 80 47 28 96 0a da ff a3 58 4a a2 29
+17 49 4b 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 c4 8e 21 00 00 1e 02 3a 80 d0 72 38 2d 40
+58 2c 45 00 c4 8e 21 00 00 1e 00 00 00 fc 00 42
+4d 44 20 48 44 4d 49 0a 20 20 20 20 00 00 00 fd
+00 32 3c 1f 44 08 00 0a 20 20 20 20 20 20 01 f7
+
+02 03 1f 54 49 85 84 94 93 a0 a1 a2 9f 90 23 09
+04 07 83 01 00 00 68 03 0c 00 20 00 00 1e 00 01
+1d 00 72 51 d0 1e 20 6e 28 55 00 c4 8e 21 00 00
+1e 01 1d 00 bc 52 d0 1e 20 b8 28 55 40 c4 8e 21
+00 00 1e 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 e2
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HXA
+    Model: 0
+    Serial Number: 1
+    Made in: week 38 of 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 71 cm x 40 cm
+    Gamma: 2.50
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3447
+    Green: 0.2910, 0.6347
+    Blue : 0.1630, 0.0927
+    White: 0.2880, 0.2958
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  588 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Name: 'BMD HDMI'
+    Display Range Limits:
+      Monitor ranges (GTF): 50-60 Hz V, 31-68 kHz H, max dotclock 80 MHz
+  Extension blocks: 1
+Checksum: 0xf7
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:2:2
+  Native detailed modes: 4
+  Video Data Block:
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (native)
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (native)
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz (native)
+    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz (native)
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    Maximum TMDS clock: 150 MHz
+  Detailed Timing Descriptors:
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0xe2  Unused space in Extension Block: 60 bytes
+
+

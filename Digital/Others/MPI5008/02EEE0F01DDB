@@ -1,0 +1,120 @@
+
+EDID (hex):
+00ffffffffffff003609085001010101
+2215010380291a78eee5b5a355499927
+135054000000010181c0818081808180
+9500950fd1c0b20c200031e020101050
+1300ffff0000001c000000fc00434c30
+372d48444d490a202020000000fd0032
+4c1e510e000a202020202020000000ff
+0042333433323834350a202020200153
+02031471410023090707830100006503
+0c0010008c0ad090204031200c405500
+b98821000018011d8018711c1620582c
+2500b9882100009e011d80d0721c1620
+102c2580b9882100009e011d00bc52d0
+1e20b8285540b9882100001e023a80d0
+72382d40102c4580b9882100001e0000
+000000000000000000000000000000a9
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 09 08 50 01 01 01 01
+22 15 01 03 80 29 1a 78 ee e5 b5 a3 55 49 99 27
+13 50 54 00 00 00 01 01 81 c0 81 80 81 80 81 80
+95 00 95 0f d1 c0 b2 0c 20 00 31 e0 20 10 10 50
+13 00 ff ff 00 00 00 1c 00 00 00 fc 00 43 4c 30
+37 2d 48 44 4d 49 0a 20 20 20 00 00 00 fd 00 32
+4c 1e 51 0e 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 42 33 34 33 32 38 34 35 0a 20 20 20 20 01 53
+
+02 03 14 71 41 00 23 09 07 07 83 01 00 00 65 03
+0c 00 10 00 8c 0a d0 90 20 40 31 20 0c 40 55 00
+b9 88 21 00 00 18 01 1d 80 18 71 1c 16 20 58 2c
+25 00 b9 88 21 00 00 9e 01 1d 80 d0 72 1c 16 20
+10 2c 25 80 b9 88 21 00 00 9e 01 1d 00 bc 52 d0
+1e 20 b8 28 55 40 b9 88 21 00 00 1e 02 3a 80 d0
+72 38 2d 40 10 2c 45 80 b9 88 21 00 00 1e 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a9
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MPI
+    Model: 20488
+    Serial Number: 16843009
+    Made in: week 34 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 41 cm x 26 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3339
+    Green: 0.2861, 0.5986
+    Blue : 0.1542, 0.0771
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+    DMT 0x30:  1440x900    74.984427 Hz  16:10    70.635 kHz    136.750000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:   800x480    60.110381 Hz   5:3     30.777 kHz     32.500000 MHz (255 mm x 255 mm)
+                 Hfront   16 Hsync  80 Hback  160 Hpol N
+                 Vfront    1 Vsync   3 Vback   28 Vpol P
+    Display Product Name: 'CL07-HDMI'
+    Display Range Limits:
+      Monitor ranges (GTF): 50-76 Hz V, 30-81 kHz H, max dotclock 140 MHz
+    Display Product Serial Number: 'B3432845'
+  Extension blocks: 1
+Checksum: 0x53
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (697 mm x 392 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 3:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (697 mm x 392 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 4:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (697 mm x 392 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 5:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (697 mm x 392 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 6:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (697 mm x 392 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0xa9  Unused space in Extension Block: 17 bytes
+
+

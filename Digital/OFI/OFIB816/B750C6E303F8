@@ -1,0 +1,118 @@
+
+EDID (hex):
+00ffffffffffff003cc916b816082320
+20210103801a0f78ea61c7aa4e3eb326
+0d4a46a54b00d1c0a940d1c0714f0101
+010101010101023a801871382d40582c
+450007941000001e000000ff0058322d
+32303233303831360a20000000fc0058
+322d4c0a2020202020202020000000fd
+00384c1e5111000a2020202020200124
+02031ac1419023097f0767030c001000
+382d83010000e3050301023a80187138
+2d40582c450007941000001e00000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000c6
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 3c c9 16 b8 16 08 23 20
+20 21 01 03 80 1a 0f 78 ea 61 c7 aa 4e 3e b3 26
+0d 4a 46 a5 4b 00 d1 c0 a9 40 d1 c0 71 4f 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 07 94 10 00 00 1e 00 00 00 ff 00 58 32 2d
+32 30 32 33 30 38 31 36 0a 20 00 00 00 fc 00 58
+32 2d 4c 0a 20 20 20 20 20 20 20 20 00 00 00 fd
+00 38 4c 1e 51 11 00 0a 20 20 20 20 20 20 01 24
+
+02 03 1a c1 41 90 23 09 7f 07 67 03 0c 00 10 00
+38 2d 83 01 00 00 e3 05 03 01 02 3a 80 18 71 38
+2d 40 58 2c 45 00 07 94 10 00 00 1e 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c6
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: OFI
+    Model: 47126
+    Serial Number: 539166742
+    Made in: week 32 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 26 cm x 15 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6650, 0.3066
+    Green: 0.2421, 0.7001
+    Blue : 0.1513, 0.0507
+    White: 0.2900, 0.2763
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (263 mm x 148 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: 'X2-20230816'
+    Display Product Name: 'X2-L'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-76 Hz V, 30-81 kHz H, max dotclock 170 MHz
+  Extension blocks: 1
+Checksum: 0x24
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    Gamut Boundary Description Metadata Profile P0
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (263 mm x 148 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0xc6  Unused space in Extension Block: 83 bytes
+
+

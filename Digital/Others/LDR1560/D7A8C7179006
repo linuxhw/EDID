@@ -1,0 +1,140 @@
+
+EDID (hex):
+00ffffffffffff003092601500000000
+11200103801e1a783e54a1a7544c9b26
+0f5054210800d1c00101010101010101
+010101010101023a801871382d40582c
+250059c21000001e000000fc0043464f
+5243450a202020202020000000ff0043
+464f524345323032320a2020000000fd
+0032911eb424000a202020202020011e
+020333f2479001020304131f23097f07
+8301000067030c0010001848e200d5e3
+05c000e606050169694f681a00000101
+3290e65c82808c70382d4030203a0055
+502100001e8a6f80a070384040302025
+0055502100001e0e5c80a07038354030
+20250056502100001e00000000000000
+00000000000000000000000000000001
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 92 60 15 00 00 00 00
+11 20 01 03 80 1e 1a 78 3e 54 a1 a7 54 4c 9b 26
+0f 50 54 21 08 00 d1 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+25 00 59 c2 10 00 00 1e 00 00 00 fc 00 43 46 4f
+52 43 45 0a 20 20 20 20 20 20 00 00 00 ff 00 43
+46 4f 52 43 45 32 30 32 32 0a 20 20 00 00 00 fd
+00 32 91 1e b4 24 00 0a 20 20 20 20 20 20 01 1e
+
+02 03 33 f2 47 90 01 02 03 04 13 1f 23 09 7f 07
+83 01 00 00 67 03 0c 00 10 00 18 48 e2 00 d5 e3
+05 c0 00 e6 06 05 01 69 69 4f 68 1a 00 00 01 01
+32 90 e6 5c 82 80 8c 70 38 2d 40 30 20 3a 00 55
+50 21 00 00 1e 8a 6f 80 a0 70 38 40 40 30 20 25
+00 55 50 21 00 00 1e 0e 5c 80 a0 70 38 35 40 30
+20 25 00 56 50 21 00 00 1e 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LDR
+    Model: 5472
+    Made in: week 17 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 30 cm x 26 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Undefined display color type
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6533, 0.3291
+    Green: 0.2978, 0.6054
+    Blue : 0.1503, 0.0605
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (345 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol P
+    Display Product Name: 'CFORCE'
+    Display Product Serial Number: 'CFORCE2022'
+    Display Range Limits:
+      Monitor ranges (GTF): 50-145 Hz V, 30-180 kHz H, max dotclock 360 MHz
+  Extension blocks: 1
+Checksum: 0x1e
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 360 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Overscanned
+    IT scan behavior: Always Overscanned
+    CE scan behavior: Always Overscanned
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 105 (486.099 cd/m^2)
+    Desired content max frame-average luminance: 105 (486.099 cd/m^2)
+    Desired content min luminance: 79 (0.467 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 50 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0xe6 (MCCS)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080  144.000000 Hz  16:9    162.000 kHz    333.720000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   60 Hpol P
+                 Vfront    3 Vsync  10 Vback   32 Vpol P
+    DTD 3:  1920x1080  119.998991 Hz  16:9    137.279 kHz    285.540000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    2 Vsync   5 Vback   57 Vpol P
+    DTD 4:  1920x1080   99.998303 Hz  16:9    113.298 kHz    235.660000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    2 Vsync   5 Vback   46 Vpol P
+Checksum: 0x01  Unused space in Extension Block: 22 bytes

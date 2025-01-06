@@ -1,0 +1,189 @@
+
+EDID (hex):
+00ffffffffffff003549330001010101
+00190103809051780a0dc9a057479827
+12484c21080081800101010101010101
+010101010101023a801871382d40582c
+4500a02a5300001e011d007251d01e20
+6e285500a02a5300001e000000fc006d
+6172616e747a2d4156520a20000000fd
+00303e0e460f000a20202020202001cb
+020356f0591f10140513041211161503
+020706203c010e230f241d251e26320f
+7f073d1ec0150750570600677e005f7e
+01835f00007d030c001400b82d2f8813
+2030f008101810281048105810e81006
+162636e2007b023a80d072382d40102c
+4580a02a5300001e011d00bc52d01e20
+b8285540a02a5300001e0000000000a9
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 35 49 33 00 01 01 01 01
+00 19 01 03 80 90 51 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 21 08 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 a0 2a 53 00 00 1e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 a0 2a 53 00 00 1e 00 00 00 fc 00 6d
+61 72 61 6e 74 7a 2d 41 56 52 0a 20 00 00 00 fd
+00 30 3e 0e 46 0f 00 0a 20 20 20 20 20 20 01 cb
+
+02 03 56 f0 59 1f 10 14 05 13 04 12 11 16 15 03
+02 07 06 20 3c 01 0e 23 0f 24 1d 25 1e 26 32 0f
+7f 07 3d 1e c0 15 07 50 57 06 00 67 7e 00 5f 7e
+01 83 5f 00 00 7d 03 0c 00 14 00 b8 2d 2f 88 13
+20 30 f0 08 10 18 10 28 10 48 10 58 10 e8 10 06
+16 26 36 e2 00 7b 02 3a 80 d0 72 38 2d 40 10 2c
+45 80 a0 2a 53 00 00 1e 01 1d 00 bc 52 d0 1e 20
+b8 28 55 40 a0 2a 53 00 00 1e 00 00 00 00 00 a9
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: MJI
+    Model: 51
+    Serial Number: 16843009
+    Made in: 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 144 cm x 81 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1440 mm x 810 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (1440 mm x 810 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    Display Product Name: 'marantz-AVR'
+    Display Range Limits:
+      Monitor ranges (GTF): 48-62 Hz V, 14-70 kHz H, max dotclock 150 MHz
+  Extension blocks: 1
+Checksum: 0xcb
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  60:  1280x720    24.000000 Hz  16:9     18.000 kHz     59.400000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  14:  1440x480    59.940060 Hz   4:3     31.469 kHz     54.000000 MHz
+    VIC  35:  2880x480    59.940060 Hz   4:3     31.469 kHz    108.000000 MHz
+    VIC  15:  1440x480    59.940060 Hz  16:9     31.469 kHz     54.000000 MHz
+    VIC  36:  2880x480    59.940060 Hz  16:9     31.469 kHz    108.000000 MHz
+    VIC  29:  1440x576    50.000000 Hz   4:3     31.250 kHz     54.000000 MHz
+    VIC  37:  2880x576    50.000000 Hz   4:3     31.250 kHz    108.000000 MHz
+    VIC  30:  1440x576    50.000000 Hz  16:9     31.250 kHz     54.000000 MHz
+    VIC  38:  2880x576    50.000000 Hz  16:9     31.250 kHz    108.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    DTS:
+      Max channels: 6
+      Supported sample rates (kHz): 96 88.2 48 44.1
+      Maximum bit rate: 1536 kb/s
+    AC-3:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 640 kb/s
+    Enhanced AC-3 (DD+):
+      Max channels: 8
+      Supported sample rates (kHz): 48 44.1
+    MAT (MLP):
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports only Dolby TrueHD
+    DTS-HD:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Audio Format Code dependent value: 0x01
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+    LFE1 - Low Frequency Effects 1
+    FC - Front Center
+    BL/BR - Back Left/Right
+    BC - Back Center
+    RLC/RRC - Rear Left/Right of Center (Deprecated)
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.4.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+    Supported Content Types:
+      Graphics
+      Photo
+      Cinema
+      Game
+    Extended HDMI video details:
+      3D present
+      Base EDID image size is aspect ratio
+      3D VIC indices with specific capabilities:
+        VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (frame packing)
+        VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (frame packing)
+        VIC  60:  1280x720    24.000000 Hz  16:9     18.000 kHz     59.400000 MHz (frame packing)
+        VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (side-by-side, horizontal)
+        VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (side-by-side, horizontal)
+        VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (side-by-side, horizontal)
+        VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (side-by-side, horizontal)
+        VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (side-by-side, horizontal)
+        VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz (side-by-side, horizontal)
+        VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (top-and-bottom)
+        VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (top-and-bottom)
+        VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (top-and-bottom)
+        VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (top-and-bottom)
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (1440 mm x 810 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 4:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (1440 mm x 810 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0xa9  Unused space in Extension Block: 5 bytes
+
+

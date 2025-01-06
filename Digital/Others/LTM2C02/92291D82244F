@@ -1,0 +1,95 @@
+
+EDID (hex):
+00ffffffffffff00328d022c01010101
+01150103805932780a0dc9a057479827
+12484c20000001010101010101010101
+0101010101010014004041582320a820
+f60020c23100001e0014004041582320
+a820f60020c231000018000000fc004c
+6f6e7469756d2053656d690a000000fd
+003a3e0e4606000a2020202020200157
+020316c0410123090707830100006703
+0c001000000c00000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000093
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 32 8d 02 2c 01 01 01 01
+01 15 01 03 80 59 32 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 20 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 14 00 40 41 58 23 20 a8 20
+f6 00 20 c2 31 00 00 1e 00 14 00 40 41 58 23 20
+a8 20 f6 00 20 c2 31 00 00 18 00 00 00 fc 00 4c
+6f 6e 74 69 75 6d 20 53 65 6d 69 0a 00 00 00 fd
+00 3a 3e 0e 46 06 00 0a 20 20 20 20 20 20 01 57
+
+02 03 16 c0 41 01 23 09 07 07 83 01 00 00 67 03
+0c 00 10 00 00 0c 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 93
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LTM
+    Model: 11266
+    Serial Number: 16843009
+    Made in: week 1 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 89 cm x 50 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x600    59.992501 Hz 128:75    38.095 kHz     51.200000 MHz (800 mm x 450 mm)
+                 Hfront  168 Hsync  32 Hback  120 Hpol P
+                 Vfront   15 Vsync   6 Vback   14 Vpol P
+    DTD 2:  1024x600    59.992501 Hz 128:75    38.095 kHz     51.200000 MHz (800 mm x 450 mm)
+                 Hfront  168 Hsync  32 Hback  120 Hpol N
+                 Vfront   15 Vsync   6 Vback   14 Vpol N
+    Display Product Name: 'Lontium Semi'
+    Display Range Limits:
+      Monitor ranges (GTF): 58-62 Hz V, 14-70 kHz H, max dotclock 60 MHz
+  Extension blocks: 1
+Checksum: 0x57
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 0
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Maximum TMDS clock: 60 MHz
+Checksum: 0x93  Unused space in Extension Block: 105 bytes
