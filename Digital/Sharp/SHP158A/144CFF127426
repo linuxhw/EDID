@@ -1,0 +1,129 @@
+
+EDID (hex):
+00ffffffffffff004d108a1500000000
+2f210104a51f147807ee95a3544c9926
+0f505400000001010101010101010101
+010101010101ed7b80a070b047403020
+360038c310000018000000fd001e7899
+9920010a202020202020000000fe0038
+5643584a804c513134354e3100000000
+0002410c32000100000b410a202001ce
+70207902002000138c52198a15000000
+002f17074c513134354e3121001d320c
+9f078007b004883d8a54cda49966620f
+024554d05fd05f003412782600090200
+0000000001000022001439d704057f07
+9f002f001f00af043d05020005002501
+0939d70439d7041e788081000be30580
+00e60601016b6b39000000000000b390
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 10 8a 15 00 00 00 00
+2f 21 01 04 a5 1f 14 78 07 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ed 7b 80 a0 70 b0 47 40 30 20
+36 00 38 c3 10 00 00 18 00 00 00 fd 00 1e 78 99
+99 20 01 0a 20 20 20 20 20 20 00 00 00 fe 00 38
+56 43 58 4a 80 4c 51 31 34 35 4e 31 00 00 00 00
+00 02 41 0c 32 00 01 00 00 0b 41 0a 20 20 01 ce
+
+70 20 79 02 00 20 00 13 8c 52 19 8a 15 00 00 00
+00 2f 17 07 4c 51 31 34 35 4e 31 21 00 1d 32 0c
+9f 07 80 07 b0 04 88 3d 8a 54 cd a4 99 66 62 0f
+02 45 54 d0 5f d0 5f 00 34 12 78 26 00 09 02 00
+00 00 00 00 01 00 00 22 00 14 39 d7 04 05 7f 07
+9f 00 2f 00 1f 00 af 04 3d 05 02 00 05 00 25 01
+09 39 d7 04 39 d7 04 1e 78 80 81 00 0b e3 05 80
+00 e6 06 01 01 6b 6b 39 00 00 00 00 00 00 b3 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SHP
+    Model: 5514
+    Made in: week 47 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 31 cm x 20 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200  120.003177 Hz  16:10   152.524 kHz    317.250000 MHz (312 mm x 195 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   62 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 30-120 Hz V, 153-153 kHz H, max dotclock 320 MHz
+    Alphanumeric Data String: '8VCXJ'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 0c 32 00 01 00 00 0b 41 0a 20 20 '....A.2.....A.  '
+  Extension blocks: 1
+Checksum: 0xce
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Product Identification Data Block (0x20), OUI 8C-52-19:
+    Product Code: 5514
+    Year of Manufacture: 2023, Week 47
+    Product ID: LQ145N1
+  Display Parameters Data Block (0x21):
+    Image size: 312.2 mm x 195.1 mm
+    Display native pixel format: 1920x1200
+    Scan Orientation: Left to Right, Top to Bottom
+    Luminance Information: Guidance for the Source device
+    Color Information: CIE 1931
+    Audio Speaker Information: not integrated
+    Native Color Chromaticity:
+      Primary #1:  (0.639893, 0.330078)
+      Primary #2:  (0.300049, 0.600098)
+      Primary #3:  (0.149902, 0.060059)
+      White Point: (0.312988, 0.329102)
+    Native Maximum Luminance (Full Coverage): 500.000000 cd/m^2
+    Native Maximum Luminance (10% Rectangular Coverage): 500.000000 cd/m^2
+    Native Minimum Luminance: 0.250000 cd/m^2
+    Native Color Depth: 10 bpc
+    Display Device Technology: Active Matrix LCD
+    Native Gamma EOTF: 2.20
+  Display Interface Features Data Block:
+    Supported bpc for RGB encoding: 8
+    Supported color space and EOTF standard combination 1: sRGB
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  1920x1200   60.000076 Hz  16:10   152.520 kHz    317.242000 MHz (aspect 16:10, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   6 Vback 1333 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 317242 kHz
+    Maximum Pixel Clock: 317242 kHz
+    Minimum Vertical Refresh Rate: 30 Hz
+    Maximum Vertical Refresh Rate: 120 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 107 (507.620 cd/m^2)
+    Desired content max frame-average luminance: 107 (507.620 cd/m^2)
+    Desired content min luminance: 57 (0.254 cd/m^2)
+  Checksum: 0xb3
+Checksum: 0x90

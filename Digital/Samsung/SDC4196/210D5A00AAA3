@@ -1,0 +1,123 @@
+
+EDID (hex):
+00ffffffffffff004c83964100000000
+2c210104b523167803cfd1ae513eb623
+0b505400000001010101010101010101
+01010101010100000000000000000000
+0000000000000000000000fd00305ada
+da580100000000000000000000fe0046
+504d3433813136334455303100000000
+0003040e28010000000b010a202001aa
+702079020020000cba41599641000000
+002c170021001db30d9008000f600900
+eeea50ecd3b63d420b014554405ed060
+18102378260009040000000000500000
+220028ae690d85ff0eaf001f0007005f
+091f0007000700ae690d05ff0eaf001f
+0007005f09df040700070081000be305
+8000e606050174600200000000005e90
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 83 96 41 00 00 00 00
+2c 21 01 04 b5 23 16 78 03 cf d1 ae 51 3e b6 23
+0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 fd 00 30 5a da
+da 58 01 00 00 00 00 00 00 00 00 00 00 fe 00 46
+50 4d 34 33 81 31 36 33 44 55 30 31 00 00 00 00
+00 03 04 0e 28 01 00 00 00 0b 01 0a 20 20 01 aa
+
+70 20 79 02 00 20 00 0c ba 41 59 96 41 00 00 00
+00 2c 17 00 21 00 1d b3 0d 90 08 00 0f 60 09 00
+ee ea 50 ec d3 b6 3d 42 0b 01 45 54 40 5e d0 60
+18 10 23 78 26 00 09 04 00 00 00 00 00 50 00 00
+22 00 28 ae 69 0d 85 ff 0e af 00 1f 00 07 00 5f
+09 1f 00 07 00 07 00 ae 69 0d 05 ff 0e af 00 1f
+00 07 00 5f 09 df 04 07 00 07 00 81 00 0b e3 05
+80 00 e6 06 05 01 74 60 02 00 00 00 00 00 5e 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 16790
+    Made in: week 44 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 35 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6826, 0.3164
+    Green: 0.2451, 0.7138
+    Blue : 0.1396, 0.0439
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    Empty Descriptor
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-90 Hz V, 218-218 kHz H, max dotclock 880 MHz
+    Alphanumeric Data String: 'FPM43'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 03 04 0e 28 01 00 00 00 0b 01 0a 20 20 '......(.......  '
+  Extension blocks: 1
+Checksum: 0xaa
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Product Identification Data Block (0x20), OUI BA-41-59:
+    Product Code: 16790
+    Year of Manufacture: 2023, Week 44
+  Display Parameters Data Block (0x21):
+    Image size: 350.7 mm x 219.2 mm
+    Display native pixel format: 3840x2400
+    Scan Orientation: Left to Right, Top to Bottom
+    Luminance Information: Minimum guaranteed value
+    Color Information: CIE 1931
+    Audio Speaker Information: integrated
+    Native Color Chromaticity:
+      Primary #1:  (0.683105, 0.315918)
+      Primary #2:  (0.245117, 0.714111)
+      Primary #3:  (0.139893, 0.043945)
+      White Point: (0.312744, 0.329102)
+    Native Maximum Luminance (Full Coverage): 400.000000 cd/m^2
+    Native Maximum Luminance (10% Rectangular Coverage): 616.000000 cd/m^2
+    Native Minimum Luminance: 0.000500 cd/m^2
+    Native Color Depth: 12 bpc
+    Display Device Technology: Organic LED
+    Native Gamma EOTF: 2.20
+  Display Interface Features Data Block:
+    Supported bpc for RGB encoding: 10
+    Supported color space and EOTF standard combination 1: DCI-P3, BT.2020/SMPTE ST 2084
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  3840x2400   90.000094 Hz  16:10   218.880 kHz    879.023000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   32 Hsync   8 Hback  136 Hpol N
+               Vfront    8 Vsync   8 Vback   16 Vpol N
+    DTD:  3840x2400   60.000063 Hz  16:10   218.880 kHz    879.023000 MHz (aspect 16:10, no 3D stereo)
+               Hfront   32 Hsync   8 Hback  136 Hpol N
+               Vfront    8 Vsync   8 Vback 1232 Vpol N
+  CTA-861 DisplayID Data Block:
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 116 (616.884 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 2 (0.000 cd/m^2)
+  Checksum: 0x5e
+Checksum: 0x90

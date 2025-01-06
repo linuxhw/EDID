@@ -1,0 +1,108 @@
+
+EDID (hex):
+00ffffffffffff004d10741500000000
+0a200104a5221378030f95ae5243b026
+0f505400000001010101010101010101
+010101010101636300a0a0a077503020
+350058c210000018000000fd0c30a503
+0346010a202020202020000000100000
+000000000000000000000000000000fc
+004c5131353654314a5730350a2001f8
+702079020022002829ad0a84ff099f00
+2f001f009f05760002000400dce10304
+ff099f002f001f009f05760002000400
+2b000c27003ca400002700303b000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000f990
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 10 74 15 00 00 00 00
+0a 20 01 04 a5 22 13 78 03 0f 95 ae 52 43 b0 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 63 63 00 a0 a0 a0 77 50 30 20
+35 00 58 c2 10 00 00 18 00 00 00 fd 0c 30 a5 03
+03 46 01 0a 20 20 20 20 20 20 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc
+00 4c 51 31 35 36 54 31 4a 57 30 35 0a 20 01 f8
+
+70 20 79 02 00 22 00 28 29 ad 0a 84 ff 09 9f 00
+2f 00 1f 00 9f 05 76 00 02 00 04 00 dc e1 03 04
+ff 09 9f 00 2f 00 1f 00 9f 05 76 00 02 00 04 00
+2b 00 0c 27 00 3c a4 00 00 27 00 30 3b 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 f9 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SHP
+    Model: 5492
+    Made in: week 10 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6796, 0.3203
+    Green: 0.2646, 0.6904
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   60.000283 Hz  16:9     93.540 kHz    254.430000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback  111 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-165 Hz V, 258-258 kHz H, max dotclock 700 MHz
+    Dummy Descriptor:
+    Display Product Name: 'LQ156T1JW05'
+  Extension blocks: 1
+Checksum: 0xf8
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2560x1440  165.002547 Hz  16:9    257.239 kHz    699.690000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   5 Vback  111 Vpol N
+    DTD:  2560x1440   60.000047 Hz  16:9     93.540 kHz    254.429000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   5 Vback  111 Vpol N
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 60 Hz
+      Max Refresh Rate: 165 Hz
+    Descriptor #2:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 48 Hz
+      Max Refresh Rate: 60 Hz
+  Checksum: 0xf9
+Checksum: 0x90

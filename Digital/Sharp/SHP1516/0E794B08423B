@@ -1,0 +1,91 @@
+
+EDID (hex):
+00ffffffffffff004d10161500000000
+0a1f0104b52215780a6be9af5032bb24
+0b505300000001010101010101010101
+01010101010172e700a0f06045903020
+360050d21000001828b900a0f0604590
+3020360050d210000018000000fe004a
+4e4a5939804c51313536523100000000
+0002410332011200000b010a202001cc
+02030f00e3058000e606050160602800
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000aa
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 10 16 15 00 00 00 00
+0a 1f 01 04 b5 22 15 78 0a 6b e9 af 50 32 bb 24
+0b 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 72 e7 00 a0 f0 60 45 90 30 20
+36 00 50 d2 10 00 00 18 28 b9 00 a0 f0 60 45 90
+30 20 36 00 50 d2 10 00 00 18 00 00 00 fe 00 4a
+4e 4a 59 39 80 4c 51 31 35 36 52 31 00 00 00 00
+00 02 41 03 32 01 12 00 00 0b 01 0a 20 20 01 cc
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 60 60 28 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 aa
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SHP
+    Model: 5398
+    Made in: week 10 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 34 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6845, 0.3144
+    Green: 0.1972, 0.7333
+    Blue : 0.1435, 0.0449
+    White: 0.3144, 0.3251
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2400   59.993925 Hz  16:10   148.125 kHz    592.500000 MHz (336 mm x 210 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   60 Vpol N
+    DTD 2:  3840x2400   47.995140 Hz  16:10   118.500 kHz    474.000000 MHz (336 mm x 210 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   60 Vpol N
+    Alphanumeric Data String: 'JNJY9'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 03 32 01 12 00 00 0b 01 0a 20 20 '....A.2.......  '
+  Extension blocks: 1
+Checksum: 0xcc
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 96 (400.000 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 40 (0.098 cd/m^2)
+Checksum: 0xaa  Unused space in Extension Block: 112 bytes

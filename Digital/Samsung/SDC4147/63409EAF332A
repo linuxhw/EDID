@@ -1,0 +1,93 @@
+
+EDID (hex):
+00ffffffffffff004c83474100000000
+261d0104b51d11780238d1ae513bb823
+0b505400000001010101010101010101
+010101010101b9d50040f17020803020
+880026a51000001bb9d50040f1702080
+3020880026a51000001b0000000f00ff
+093cff093c2c800000000000000000fe
+0041544e413333545030362d302001a0
+02030f00e3058000e6060501736d0700
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000ab
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 83 47 41 00 00 00 00
+26 1d 01 04 b5 1d 11 78 02 38 d1 ae 51 3b b8 23
+0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b9 d5 00 40 f1 70 20 80 30 20
+88 00 26 a5 10 00 00 1b b9 d5 00 40 f1 70 20 80
+30 20 88 00 26 a5 10 00 00 1b 00 00 00 0f 00 ff
+09 3c ff 09 3c 2c 80 00 00 00 00 00 00 00 00 fe
+00 41 54 4e 41 33 33 54 50 30 36 2d 30 20 01 a0
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 73 6d 07 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ab
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SDC
+    Model: 16711
+    Made in: week 38 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3193
+    Green: 0.2324, 0.7187
+    Blue : 0.1396, 0.0439
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.000746 Hz  16:9    131.522 kHz    547.130000 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  240 Hpol P
+                 Vfront    8 Vsync   8 Vback   16 Vpol N
+    DTD 2:  3840x2160   60.000746 Hz  16:9    131.522 kHz    547.130000 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback  240 Hpol P
+                 Vfront    8 Vsync   8 Vback   16 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 ff 09 3c ff 09 3c 2c 80 00 00 00 00 00 '.....<..<,......'
+    Alphanumeric Data String: 'ATNA33TP06-0 '
+  Extension blocks: 1
+Checksum: 0xa0
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 115 (603.666 cd/m^2)
+    Desired content max frame-average luminance: 109 (530.095 cd/m^2)
+    Desired content min luminance: 7 (0.005 cd/m^2)
+Checksum: 0xab  Unused space in Extension Block: 112 bytes
+
+
