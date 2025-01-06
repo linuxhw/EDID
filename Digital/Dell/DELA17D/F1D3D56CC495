@@ -1,0 +1,145 @@
+
+EDID (hex):
+00ffffffffffff0010ac7da14c584230
+15210103805825782af441ae4f44ab26
+0e505421080001010101010101010101
+0101010101013c9b00a0f04038603020
+3500706f3100001a000000ff00234737
+51594d78677741424258000000fd0018
+781e8d3c010a202020202020000000fc
+0044656c6c2041573338323144570135
+020337f148101f04130312013f230907
+018301000068030c003000383c006ad8
+5dc401788000000278e305c000e2006a
+e606050178601f31dd00a0f040426030
+203500706f3100001ad14c00a0f04027
+6030203500706f3100001a055f00a0a0
+a0335030203500706f3100001a6fc200
+a0a0a0555030203500706f3100001a3d
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 7d a1 4c 58 42 30
+15 21 01 03 80 58 25 78 2a f4 41 ae 4f 44 ab 26
+0e 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3c 9b 00 a0 f0 40 38 60 30 20
+35 00 70 6f 31 00 00 1a 00 00 00 ff 00 23 47 37
+51 59 4d 78 67 77 41 42 42 58 00 00 00 fd 00 18
+78 1e 8d 3c 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 44 65 6c 6c 20 41 57 33 38 32 31 44 57 01 35
+
+02 03 37 f1 48 10 1f 04 13 03 12 01 3f 23 09 07
+01 83 01 00 00 68 03 0c 00 30 00 38 3c 00 6a d8
+5d c4 01 78 80 00 00 02 78 e3 05 c0 00 e2 00 6a
+e6 06 05 01 78 60 1f 31 dd 00 a0 f0 40 42 60 30
+20 35 00 70 6f 31 00 00 1a d1 4c 00 a0 f0 40 27
+60 30 20 35 00 70 6f 31 00 00 1a 05 5f 00 a0 a0
+a0 33 50 30 20 35 00 70 6f 31 00 00 1a 6f c2 00
+a0 a0 a0 55 50 30 20 35 00 70 6f 31 00 00 1a 3d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 41341
+    Serial Number: 809654348
+    Made in: week 21 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 88 cm x 37 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6826, 0.3115
+    Green: 0.2666, 0.6679
+    Blue : 0.1494, 0.0546
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x1600   59.993961 Hz  12:5     99.350 kHz    397.400000 MHz (880 mm x 367 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   48 Vpol N
+    Display Product Serial Number: '#G7QYMxgwABBX'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 24-120 Hz V, 30-141 kHz H, max dotclock 600 MHz
+    Display Product Name: 'Dell AW3821DW'
+  Extension blocks: 1
+Checksum: 0x35
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 3.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    VRRmin: 2 Hz
+    VRRmax: 120 Hz
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 120 (672.717 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 31 (0.099 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  3840x1600   84.971489 Hz  12:5    141.562 kHz    566.250000 MHz (880 mm x 367 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   58 Vpol N
+    DTD 3:  3840x1600   29.995424 Hz  12:5     49.163 kHz    196.650000 MHz (880 mm x 367 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   31 Vpol N
+    DTD 4:  2560x1440   59.979978 Hz  16:9     89.430 kHz    243.250000 MHz (880 mm x 367 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   43 Vpol N
+    DTD 5:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (880 mm x 367 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   77 Vpol N
+Checksum: 0x3d

@@ -1,0 +1,101 @@
+
+EDID (hex):
+00ffffffffffff0010acf5a055465530
+281d010380361e780eee91a3544c9926
+0f505421080001010101010101010101
+010101010101023a801871382d40582c
+4500202f2100001e000000ff00313452
+4439394135305546550a000000fd0018
+3c1e5a1e010a202020202020000000fc
+0044656c6c20415732353138480a012e
+02031ac147901f041303120123090701
+8301000065030c001000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000c1
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac f5 a0 55 46 55 30
+28 1d 01 03 80 36 1e 78 0e ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 20 2f 21 00 00 1e 00 00 00 ff 00 31 34 52
+44 39 39 41 35 30 55 46 55 0a 00 00 00 fd 00 18
+3c 1e 5a 1e 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 44 65 6c 6c 20 41 57 32 35 31 38 48 0a 01 2e
+
+02 03 1a c1 47 90 1f 04 13 03 12 01 23 09 07 01
+83 01 00 00 65 03 0c 00 10 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c1
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 41205
+    Serial Number: 810894933
+    Made in: week 40 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 54 cm x 30 cm
+    Gamma: 2.20
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (544 mm x 303 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: '14RD99A50UFU'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 24-60 Hz V, 30-90 kHz H, max dotclock 300 MHz
+    Display Product Name: 'Dell AW2518H'
+  Extension blocks: 1
+Checksum: 0x2e
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+Checksum: 0xc1  Unused space in Extension Block: 101 bytes
