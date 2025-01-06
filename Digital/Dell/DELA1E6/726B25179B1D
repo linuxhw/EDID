@@ -1,0 +1,144 @@
+
+EDID (hex):
+00ffffffffffff0010ace6a142305030
+0d21010380341d78eabb55a8554d9e24
+0d5054a54b00714f8180a9c0d1c00101
+010101010101023a801871382d40582c
+45000f282100001e000000ff00385934
+42584a330a2020202020000000fc0044
+454c4c20473234323248530a000000fd
+0030a51ebb27000a20202020202001ae
+020338f14d900504030201141f121311
+3f40230907078301000067030c002000
+003c67d85dc4014e80006d1a00000201
+30a5e60000000000866f80a070384040
+302035000f282100001ad68380a07038
+3040302035000f282100001a7d9780a0
+7038324030203a000f282100001a0000
+000000000000000000000000000000f4
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac e6 a1 42 30 50 30
+0d 21 01 03 80 34 1d 78 ea bb 55 a8 55 4d 9e 24
+0d 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 ff 00 38 59 34
+42 58 4a 33 0a 20 20 20 20 20 00 00 00 fc 00 44
+45 4c 4c 20 47 32 34 32 32 48 53 0a 00 00 00 fd
+00 30 a5 1e bb 27 00 0a 20 20 20 20 20 20 01 ae
+
+02 03 38 f1 4d 90 05 04 03 02 01 14 1f 12 13 11
+3f 40 23 09 07 07 83 01 00 00 67 03 0c 00 20 00
+00 3c 67 d8 5d c4 01 4e 80 00 6d 1a 00 00 02 01
+30 a5 e6 00 00 00 00 00 86 6f 80 a0 70 38 40 40
+30 20 35 00 0f 28 21 00 00 1a d6 83 80 a0 70 38
+30 40 30 20 35 00 0f 28 21 00 00 1a 7d 97 80 a0
+70 38 32 40 30 20 3a 00 0f 28 21 00 00 1a 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f4
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 41446
+    Serial Number: 810561602
+    Made in: week 13 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 52 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6582, 0.3349
+    Green: 0.3027, 0.6201
+    Blue : 0.1416, 0.0517
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: '8Y4BXJ3'
+    Display Product Name: 'DELL G2422HS'
+    Display Range Limits:
+      Monitor ranges (GTF): 48-165 Hz V, 30-187 kHz H, max dotclock 390 MHz
+  Extension blocks: 1
+Checksum: 0xae
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+    VIC  64:  1920x1080  100.000000 Hz  16:9    112.500 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    Maximum TMDS clock: 300 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 390 MHz
+    SCDC Present
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0xe6 (MCCS)
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD 3:  1920x1080  143.847177 Hz  16:9    162.260 kHz    337.500000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   40 Vpol N
+    DTD 4:  1920x1080  164.997447 Hz  16:9    186.447 kHz    387.810000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   37 Vpol N
+Checksum: 0xf4  Unused space in Extension Block: 17 bytes
+
+
