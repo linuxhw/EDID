@@ -1,0 +1,160 @@
+
+EDID (hex):
+00ffffffffffff004d79300001000000
+0a1f0103817341780acf74a3574cb023
+09484c210800010101ff01ff01010101
+010101010120642156aa51001b304070
+360075f23100001e023a801871382d40
+582c4500c48e2100001e000000fc0054
+562042726974616e69610a20000000fd
+003b461f8c3c000a2020202020200193
+020345f251058403011213141607901f
+20220206111529097f07150750510600
+83010000e200ff67030c002000384467
+d85dc4015a8000e305ff01e3060f01e5
+018b8490018c0ad08a20e02d10103e96
+00c48e21000018000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000041
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 79 30 00 01 00 00 00
+0a 1f 01 03 81 73 41 78 0a cf 74 a3 57 4c b0 23
+09 48 4c 21 08 00 01 01 01 ff 01 ff 01 01 01 01
+01 01 01 01 01 20 64 21 56 aa 51 00 1b 30 40 70
+36 00 75 f2 31 00 00 1e 02 3a 80 18 71 38 2d 40
+58 2c 45 00 c4 8e 21 00 00 1e 00 00 00 fc 00 54
+56 20 42 72 69 74 61 6e 69 61 0a 20 00 00 00 fd
+00 3b 46 1f 8c 3c 00 0a 20 20 20 20 20 20 01 93
+
+02 03 45 f2 51 05 84 03 01 12 13 14 16 07 90 1f
+20 22 02 06 11 15 29 09 7f 07 15 07 50 51 06 00
+83 01 00 00 e2 00 ff 67 03 0c 00 20 00 38 44 67
+d8 5d c4 01 5a 80 00 e3 05 ff 01 e3 06 0f 01 e5
+01 8b 84 90 01 8c 0a d0 8a 20 e0 2d 10 10 3e 96
+00 c4 8e 21 00 00 18 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SKY
+    Model: 48
+    Serial Number: 1
+    Made in: week 10 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 115 cm x 65 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.2998, 0.6904
+    Blue : 0.1376, 0.0380
+    White: 0.2822, 0.2968
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.001123 Hz 683:384   47.701 kHz     85.480000 MHz (885 mm x 498 mm)
+                 Hfront   64 Hsync 112 Hback  250 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Name: 'TV Britania'
+    Display Range Limits:
+      Monitor ranges (GTF): 59-70 Hz V, 31-140 kHz H, max dotclock 600 MHz
+  Extension blocks: 1
+Checksum: 0x93
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 640 kb/s
+    Enhanced AC-3 (DD+):
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 340 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 450 MHz
+    SCDC Present
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    sYCC601
+    opYCC601
+    opRGB
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+    Gamut Boundary Description Metadata Profile P0
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+      Hybrid Log-Gamma
+    Supported static metadata descriptors:
+      Static metadata type 1
+  Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
+    Application Version: 1
+  Detailed Timing Descriptors:
+    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x41  Unused space in Extension Block: 40 bytes

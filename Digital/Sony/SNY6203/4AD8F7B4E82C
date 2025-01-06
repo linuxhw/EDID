@@ -1,0 +1,186 @@
+
+EDID (hex):
+00ffffffffffff004dd9036201010101
+0017010380dd7d780a9955ae5149b224
+0d5054a1080090408180814001010101
+010101010101023a801871382d40582c
+450000000000001e0e1f008051001e30
+4080370000000000001c000000fd0017
+400f440f000a202020202020000000fc
+00534f4e5920504a0a202020202001a4
+020346f54c101f200514041303120716
+0170030c001200801e20c80601000067
+0616e3050301e200fb38097f070f7f07
+1507503e1fc04d0200570603677e035f
+7e03835f0000023a80d072382d40102c
+458000000000001e011d8018711c1620
+582c250000000000009e8c0ad08a20e0
+2d10103e96000000000000180000006f
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d d9 03 62 01 01 01 01
+00 17 01 03 80 dd 7d 78 0a 99 55 ae 51 49 b2 24
+0d 50 54 a1 08 00 90 40 81 80 81 40 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 00 00 00 00 00 1e 0e 1f 00 80 51 00 1e 30
+40 80 37 00 00 00 00 00 00 1c 00 00 00 fd 00 17
+40 0f 44 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 4f 4e 59 20 50 4a 0a 20 20 20 20 20 01 a4
+
+02 03 46 f5 4c 10 1f 20 05 14 04 13 03 12 07 16
+01 70 03 0c 00 12 00 80 1e 20 c8 06 01 00 00 67
+06 16 e3 05 03 01 e2 00 fb 38 09 7f 07 0f 7f 07
+15 07 50 3e 1f c0 4d 02 00 57 06 03 67 7e 03 5f
+7e 03 83 5f 00 00 02 3a 80 d0 72 38 2d 40 10 2c
+45 80 00 00 00 00 00 1e 01 1d 80 18 71 1c 16 20
+58 2c 25 00 00 00 00 00 00 9e 8c 0a d0 8a 20 e0
+2d 10 10 3e 96 00 00 00 00 00 00 18 00 00 00 6f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SNY
+    Model: 25091
+    Serial Number: 16843009
+    Made in: 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 221 cm x 125 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6816, 0.3173
+    Green: 0.2871, 0.6962
+    Blue : 0.1416, 0.0517
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x2a:  1400x1050   59.978442 Hz   4:3     65.317 kHz    121.750000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1280x768    59.870228 Hz   5:3     47.776 kHz     79.500000 MHz
+                 Hfront   64 Hsync 128 Hback  192 Hpol N
+                 Vfront    3 Vsync   7 Vback   20 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 23-64 Hz V, 15-68 kHz H, max dotclock 150 MHz
+    Display Product Name: 'SONY PJ'
+  Extension blocks: 1
+Checksum: 0xa4
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 5
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.2.0.0
+    Supports_AI
+    Maximum TMDS clock: 150 MHz
+    Extended HDMI video details:
+      3D present
+      3D-capable-VIC mask present
+      Base EDID image size is aspect ratio
+      3D: Side-by-side (half, horizontal)
+      3D VIC indices that support these capabilities:
+        VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+        VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+        VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+        VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+        VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+      3D VIC indices with specific capabilities:
+        VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (top-and-bottom)
+        VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (top-and-bottom)
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    Gamut Boundary Description Metadata Profile P0
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Supports both over- and underscan
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    Linear PCM:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 640 kb/s
+    DTS:
+      Max channels: 7
+      Supported sample rates (kHz): 96 88.2 48 44.1 32
+      Maximum bit rate: 1536 kb/s
+    One Bit Audio:
+      Max channels: 6
+      Supported sample rates (kHz): 44.1
+      Audio Format Code dependent value: 0x00
+    Enhanced AC-3 (DD+):
+      Max channels: 8
+      Supported sample rates (kHz): 48 44.1
+      Supports Joint Object Coding
+      Supports Joint Object Coding with ACMOD28
+    MAT (MLP):
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports Dolby TrueHD, object audio PCM and channel-based PCM
+      Hash calculation not required for object audio PCM or channel-based PCM
+    DTS-HD:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports DTS:X
+      Audio Format Code dependent value: 0x03
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+    LFE1 - Low Frequency Effects 1
+    FC - Front Center
+    BL/BR - Back Left/Right
+    BC - Back Center
+    RLC/RRC - Rear Left/Right of Center (Deprecated)
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 4:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x6f  Unused space in Extension Block: 3 bytes

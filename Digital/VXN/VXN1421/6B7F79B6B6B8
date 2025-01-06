@@ -1,0 +1,127 @@
+
+EDID (hex):
+00ffffffffffff005b0e2114ec25a819
+1e220104b51e14780378b1ae513db722
+0c505400000001010101010101010101
+01010101010100000011000000000000
+0000000000000000000000fd0c307805
+055a010a202020202020000000fc0056
+69734e32333648555a31350a000000fe
+004733423134554830303146460a019e
+702079020020000c848a592114ec25a8
+191e220021001db80bd007300c200800
+e4ca51d803b728c20c0045544062ee63
+19202378260009070703000000500000
+2200149fda0c882f0c810007001f001f
+084f002100070081000be3057200e606
+05018b80070000000000000000000000
+00000000000000000000000000002b90
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5b 0e 21 14 ec 25 a8 19
+1e 22 01 04 b5 1e 14 78 03 78 b1 ae 51 3d b7 22
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 11 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 fd 0c 30 78 05
+05 5a 01 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+69 73 4e 32 33 36 48 55 5a 31 35 0a 00 00 00 fe
+00 47 33 42 31 34 55 48 30 30 31 46 46 0a 01 9e
+
+70 20 79 02 00 20 00 0c 84 8a 59 21 14 ec 25 a8
+19 1e 22 00 21 00 1d b8 0b d0 07 30 0c 20 08 00
+e4 ca 51 d8 03 b7 28 c2 0c 00 45 54 40 62 ee 63
+19 20 23 78 26 00 09 07 07 03 00 00 00 50 00 00
+22 00 14 9f da 0c 88 2f 0c 81 00 07 00 1f 00 1f
+08 4f 00 21 00 07 00 81 00 0b e3 05 72 00 e6 06
+05 01 8b 80 07 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 2b 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: VXN
+    Model: 5153
+    Serial Number: 430450156
+    Made in: week 30 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 30 cm x 20 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6806, 0.3193
+    Green: 0.2402, 0.7148
+    Blue : 0.1347, 0.0498
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    Unknown Display Descriptor (0x11): 00 11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-120 Hz V, 260-260 kHz H, max dotclock 900 MHz
+    Display Product Name: 'VisN236HUZ15'
+    Alphanumeric Data String: 'G3B14UH001FF'
+  Extension blocks: 1
+Checksum: 0x9e
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Product Identification Data Block (0x20), OUI 84-8A-59:
+    Product Code: 5153
+    Serial Number: 430450156
+    Year of Manufacture: 2034, Week 30
+  Display Parameters Data Block (0x21):
+    Image size: 300.0 mm x 200.0 mm
+    Display native pixel format: 3120x2080
+    Scan Orientation: Left to Right, Top to Bottom
+    Luminance Information: Minimum guaranteed value
+    Color Information: CIE 1931
+    Audio Speaker Information: integrated
+    Native Color Chromaticity:
+      Primary #1:  (0.680664, 0.319336)
+      Primary #2:  (0.240234, 0.714844)
+      Primary #3:  (0.134766, 0.049805)
+      White Point: (0.312500, 0.329102)
+    Native Maximum Luminance (Full Coverage): 800.000000 cd/m^2
+    Native Maximum Luminance (10% Rectangular Coverage): 1015.000000 cd/m^2
+    Native Minimum Luminance: 0.008003 cd/m^2
+    Native Color Depth: 12 bpc
+    Display Device Technology: Organic LED
+    Native Gamma EOTF: 2.20
+  Display Interface Features Data Block:
+    Supported bpc for RGB encoding: 6, 8, 10
+    Supported bpc for YCbCr 4:4:4 encoding: 6, 8, 10
+    Supported bpc for YCbCr 4:2:2 encoding: 8, 10
+    Supported color space and EOTF standard combination 1: DCI-P3, BT.2020/SMPTE ST 2084
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  3120x2080  120.000000 Hz   0:0    259.200 kHz    842.400000 MHz (aspect undefined, no 3D stereo, preferred)
+               Hfront    8 Hsync  32 Hback   90 Hpol N
+               Vfront   34 Vsync   8 Vback   38 Vpol N
+  CTA-861 DisplayID Data Block:
+  Colorimetry Data Block:
+    xvYCC709
+    opRGB
+    BT2020cYCC
+    BT2020YCC
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 139 (1015.241 cd/m^2)
+    Desired content max frame-average luminance: 128 (800.000 cd/m^2)
+    Desired content min luminance: 7 (0.008 cd/m^2)
+  Checksum: 0x2b
+Checksum: 0x90

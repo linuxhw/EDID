@@ -1,0 +1,95 @@
+
+EDID (hex):
+00ffffffffffff005262888800888888
+1c150103800000780a0dc9a057479827
+12484c00000001010101010101010101
+010101010101b036387340800a704614
+4200388047000018b036387340800a70
+46144200388047000018000000fc006e
+6f2d617564696f2d48440a20000000fd
+00147801ff1d000a2020202020200182
+02030a0065030c0010004c1d20a03000
+17503020360020003500001e7721d072
+21001e506e285500d000250000187c15
+007330000a4046144200000034000018
+b036387340800a704614420038804700
+00180000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000003e
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 52 62 88 88 00 88 88 88
+1c 15 01 03 80 00 00 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b0 36 38 73 40 80 0a 70 46 14
+42 00 38 80 47 00 00 18 b0 36 38 73 40 80 0a 70
+46 14 42 00 38 80 47 00 00 18 00 00 00 fc 00 6e
+6f 2d 61 75 64 69 6f 2d 48 44 0a 20 00 00 00 fd
+00 14 78 01 ff 1d 00 0a 20 20 20 20 20 20 01 82
+
+02 03 0a 00 65 03 0c 00 10 00 4c 1d 20 a0 30 00
+17 50 30 20 36 00 20 00 35 00 00 1e 77 21 d0 72
+21 00 1e 50 6e 28 55 00 d0 00 25 00 00 18 7c 15
+00 73 30 00 0a 40 46 14 42 00 00 00 34 00 00 18
+b0 36 38 73 40 80 0a 70 46 14 42 00 38 80 47 00
+00 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: TSB
+    Model: 34952
+    Serial Number: 2290649088
+    Made in: week 28 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Image size is variable
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1080x1920   60.701975 Hz   9:16   117.155 kHz    140.000000 MHz (1080 mm x 1920 mm)
+                 Hfront   70 Hsync  20 Hback   25 Hpol N
+                 Vfront    4 Vsync   2 Vback    4 Vpol N
+    DTD 2:  1080x1920   60.701975 Hz   9:16   117.155 kHz    140.000000 MHz (1080 mm x 1920 mm)
+                 Hfront   70 Hsync  20 Hback   25 Hpol N
+                 Vfront    4 Vsync   2 Vback    4 Vpol N
+    Display Product Name: 'no-audio-HD'
+    Display Range Limits:
+      Monitor ranges (GTF): 20-120 Hz V, 1-255 kHz H, max dotclock 290 MHz
+  Extension blocks: 1
+Checksum: 0x82
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 3:   800x1280   59.957790 Hz   5:8     78.125 kHz     75.000000 MHz (800 mm x 1280 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   14 Vpol P
+    DTD 4:   720x1280   59.997199 Hz   9:16    78.596 kHz     85.670000 MHz (720 mm x 1280 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol N
+                 Vfront    5 Vsync   5 Vback   20 Vpol N
+    DTD 5:   768x1024   60.239512 Hz   3:4     62.288 kHz     55.000000 MHz (768 mm x 1024 mm)
+                 Hfront   70 Hsync  20 Hback   25 Hpol N
+                 Vfront    4 Vsync   2 Vback    4 Vpol N
+    DTD 6:  1080x1920   60.701975 Hz   9:16   117.155 kHz    140.000000 MHz (1080 mm x 1920 mm)
+                 Hfront   70 Hsync  20 Hback   25 Hpol N
+                 Vfront    4 Vsync   2 Vback    4 Vpol N
+Checksum: 0x3e (should be 0x6f)  Unused space in Extension Block: 45 bytes

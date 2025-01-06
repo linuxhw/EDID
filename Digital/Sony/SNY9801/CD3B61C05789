@@ -1,0 +1,125 @@
+
+EDID (hex):
+00ffffffffffff004dd9019801010101
+0113010380a05a780a0dc9a057479827
+12484c21080001010101010101010101
+010101010101662150b051001b304070
+360040846300001e8c0ad08a20e02d10
+103e9600408463000018000000fc0053
+4f4e592054560a2020202020000000fd
+00303e0e3109000a20202020202001a8
+020321704d1413121116150504030207
+0601230907078301000066030c003000
+00011d007251d01e206e285500408463
+00001e8c0ad090204031200c40550040
+8463000018011d00bc52d01e20b82855
+4040846300001e011d8018711c162058
+2c250040846300009e00000000000000
+000000000000000000000000000000a8
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d d9 01 98 01 01 01 01
+01 13 01 03 80 a0 5a 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70
+36 00 40 84 63 00 00 1e 8c 0a d0 8a 20 e0 2d 10
+10 3e 96 00 40 84 63 00 00 18 00 00 00 fc 00 53
+4f 4e 59 20 54 56 0a 20 20 20 20 20 00 00 00 fd
+00 30 3e 0e 31 09 00 0a 20 20 20 20 20 20 01 a8
+
+02 03 21 70 4d 14 13 12 11 16 15 05 04 03 02 07
+06 01 23 09 07 07 83 01 00 00 66 03 0c 00 30 00
+00 01 1d 00 72 51 d0 1e 20 6e 28 55 00 40 84 63
+00 00 1e 8c 0a d0 90 20 40 31 20 0c 40 55 00 40
+84 63 00 00 18 01 1d 00 bc 52 d0 1e 20 b8 28 55
+40 40 84 63 00 00 1e 01 1d 80 18 71 1c 16 20 58
+2c 25 00 40 84 63 00 00 9e 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a8
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SNY
+    Model: 38913
+    Serial Number: 16843009
+    Made in: week 1 of 2009
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 160 cm x 90 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (1600 mm x 900 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    DTD 2:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (1600 mm x 900 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    Display Product Name: 'SONY TV'
+    Display Range Limits:
+      Monitor ranges (GTF): 48-62 Hz V, 14-49 kHz H, max dotclock 90 MHz
+  Extension blocks: 1
+Checksum: 0xa8
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 3.0.0.0
+  Detailed Timing Descriptors:
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (1600 mm x 900 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (1600 mm x 900 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 5:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (1600 mm x 900 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 6:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (1600 mm x 900 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+Checksum: 0xa8  Unused space in Extension Block: 22 bytes
+
+

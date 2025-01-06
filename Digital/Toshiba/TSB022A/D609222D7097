@@ -1,0 +1,204 @@
+
+EDID (hex):
+00ffffffffffff0052622a0201010181
+ff1f0103806d3d780a0dc9a057479827
+12484c21080081800101010101010101
+01010101010108e80030f2705a80b058
+8a0040846300001e023a801871382d40
+582c450040846300001e000000fc0054
+4f53484942412d54560a2020000000fd
+0017790fff78000a20202020202001f3
+020366f0521020220405030207060164
+625f5d61663f762f0907071507503507
+4857040167040371030c001000383cef
+8383606008600103046ad85dc4017880
+4b023078e305c301e20059e3060f01e4
+0f00c002eb0146d0004d4f5284546f85
+e5018b849001565e00a0a0a029503020
+350040846300001a00000000000000c3
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 52 62 2a 02 01 01 01 81
+ff 1f 01 03 80 6d 3d 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 21 08 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 08 e8 00 30 f2 70 5a 80 b0 58
+8a 00 40 84 63 00 00 1e 02 3a 80 18 71 38 2d 40
+58 2c 45 00 40 84 63 00 00 1e 00 00 00 fc 00 54
+4f 53 48 49 42 41 2d 54 56 0a 20 20 00 00 00 fd
+00 17 79 0f ff 78 00 0a 20 20 20 20 20 20 01 f3
+
+02 03 66 f0 52 10 20 22 04 05 03 02 07 06 01 64
+62 5f 5d 61 66 3f 76 2f 09 07 07 15 07 50 35 07
+48 57 04 01 67 04 03 71 03 0c 00 10 00 38 3c ef
+83 83 60 60 08 60 01 03 04 6a d8 5d c4 01 78 80
+4b 02 30 78 e3 05 c3 01 e2 00 59 e3 06 0f 01 e4
+0f 00 c0 02 eb 01 46 d0 00 4d 4f 52 84 54 6f 85
+e5 01 8b 84 90 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 40 84 63 00 00 1a 00 00 00 00 00 00 00 c3
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: TSB
+    Model: 554
+    Serial Number: 2164326657
+    Model year: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 109 cm x 61 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz (1600 mm x 900 mm)
+                 Hfront  176 Hsync  88 Hback  296 Hpol P
+                 Vfront    8 Vsync  10 Vback   72 Vpol P
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1600 mm x 900 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Name: 'TOSHIBA-TV'
+    Display Range Limits:
+      Monitor ranges (GTF): 23-121 Hz V, 15-255 kHz H, max dotclock 1200 MHz
+  Extension blocks: 1
+Checksum: 0xf3
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC 100:  4096x2160   30.000000 Hz 256:135   67.500 kHz    297.000000 MHz
+    VIC  98:  4096x2160   24.000000 Hz 256:135   54.000 kHz    297.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+    VIC 118:  3840x2160  120.000000 Hz  16:9    270.000 kHz   1188.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 640 kb/s
+    AAC LC:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 576 kb/s
+    Enhanced AC-3 (DD+):
+      Max channels: 8
+      Supported sample rates (kHz): 48
+      Supports Joint Object Coding
+    MAT (MLP):
+      Max channels: 8
+      Supported sample rates (kHz): 48
+      Supports Dolby TrueHD, object audio PCM and channel-based PCM
+      Hash calculation not required for object audio PCM or channel-based PCM
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+    Supported Content Types:
+      Graphics
+      Photo
+      Cinema
+      Game
+    Video latency: 260 ms
+    Audio latency: 260 ms
+    Interlaced video latency: 190 ms
+    Interlaced audio latency: 190 ms
+    Extended HDMI video details:
+      Base EDID image size is aspect ratio
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+        HDMI VIC 4:  4096x2160   24.000000 Hz 256:135   54.000 kHz    297.000000 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    Max Fixed Rate Link: 3 and 6 Gbps per lane on 3 lanes, 6 and 8 Gbps on 4 lanes
+    Supports UHD VIC
+    Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+    Supports Auto Low-Latency Mode
+    VRRmin: 48 Hz
+    VRRmax: 120 Hz
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    BT2020YCC
+    BT2020RGB
+    Gamut Boundary Description Metadata Profile P0
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Overscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Overscanned
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+      Hybrid Log-Gamma
+    Supported static metadata descriptors:
+      Static metadata type 1
+  YCbCr 4:2:0 Capability Map Data Block:
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
+    VIC 118:  3840x2160  120.000000 Hz  16:9    270.000 kHz   1188.000000 MHz
+  Vendor-Specific Video Data Block (Dolby), OUI 00-D0-46:
+    Version: 2 (12 bytes)
+    Supports YUV422 12 bit
+    Supports global dimming
+    DM Version: 5.x
+    Backlt Min Luma: 100 cd/m^2
+    Interface: Standard + Low-Latency
+    Supports 10b 12b 444: Not supported
+    Target Min PQ v2: 180 (0.04555910 cd/m^2)
+    Target Max PQ v2: 2705 (447 cd/m^2)
+    Unique Rx, Ry: 0.67578125, 0.31250000
+    Unique Gx, Gy: 0.25781250, 0.66406250
+    Unique Bx, By: 0.15234375, 0.05078125
+  Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
+    Application Version: 1
+  Detailed Timing Descriptors:
+    DTD 3:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (1600 mm x 900 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+Checksum: 0xc3  Unused space in Extension Block: 7 bytes

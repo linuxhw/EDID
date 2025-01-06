@@ -1,0 +1,135 @@
+
+EDID (hex):
+00ffffffffffff004dd907c200000000
+19200104b54f0078003931ad5238ba23
+0b505400000001010101010101010101
+010101010101023a801871382d40582c
+450020c23100001e0000001000000000
+00000000000000000000000000fc0050
+53205652320a202020202020000000fd
+081878140c77000a20202020202002d1
+0203268044103f201f23090407755c12
+ca020700000000000000000000000000
+000000e2002a00000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000008a
+70122b000003002898cf01849f0ff301
+57802b00f7079f0007800900b25b0104
+9f0ff30157802b00f7079f0007800900
+f8000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000090
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d d9 07 c2 00 00 00 00
+19 20 01 04 b5 4f 00 78 00 39 31 ad 52 38 ba 23
+0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 20 c2 31 00 00 1e 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fc 00 50
+53 20 56 52 32 0a 20 20 20 20 20 20 00 00 00 fd
+08 18 78 14 0c 77 00 0a 20 20 20 20 20 20 02 d1
+
+02 03 26 80 44 10 3f 20 1f 23 09 04 07 75 5c 12
+ca 02 07 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 e2 00 2a 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 8a
+
+70 12 2b 00 00 03 00 28 98 cf 01 84 9f 0f f3 01
+57 80 2b 00 f7 07 9f 00 07 80 09 00 b2 5b 01 04
+9f 0f f3 01 57 80 2b 00 f7 07 9f 00 07 80 09 00
+f8 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SNY
+    Model: 49671
+    Made in: week 25 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Aspect ratio: 1.78 (landscape)
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing does not include the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6757, 0.3232
+    Green: 0.2207, 0.7275
+    Blue : 0.1367, 0.0458
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (800 mm x 450 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Dummy Descriptor:
+    Display Product Name: 'PS VR2'
+    Display Range Limits:
+      Monitor ranges (GTF): 24-120 Hz V, 20-267 kHz H, max dotclock 1190 MHz
+  Extension blocks: 2
+Checksum: 0xd1
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48
+      Supported sample sizes (bits): 24 20 16
+  Vendor-Specific Data Block (Microsoft), OUI CA-12-5C:
+    Version: 2
+    Display Product Primary Use Case: 7 (Virtual reality headset)
+    Container ID: 00000000-0000-0000-0000-000000000000
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+Checksum: 0x8a  Unused space in Extension Block: 89 bytes
+
+----------------
+
+Block 2, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  4000x2040  119.879798 Hz  16:9    263.736 kHz   1186.810000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   88 Hsync  44 Hback  368 Hpol P
+               Vfront    8 Vsync  10 Vback  142 Vpol P
+    DTD:  4000x2040   89.910101 Hz  16:9    197.802 kHz    890.110000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   88 Hsync  44 Hback  368 Hpol P
+               Vfront    8 Vsync  10 Vback  142 Vpol P
+  Checksum: 0xf8
+Checksum: 0x90  Unused space in Extension Block: 78 bytes
+
+

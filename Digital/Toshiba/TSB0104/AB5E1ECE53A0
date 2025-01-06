@@ -1,0 +1,123 @@
+
+EDID (hex):
+00ffffffffffff005262040100000000
+0010010380c48e780aee91a3544c9926
+0f505400000001010101010101010101
+010101010101011d80d0721c1620102c
+2580c48e2100009e8c0ad09020403120
+0c405500c48e21000018000000fc0054
+4f53484942412d54560a2020000000fd
+00313d0f440f000a20202020202001eb
+02031e774f9413121611151f05040307
+020610012309070765030c001000011d
+00bc52d01e20b8285540c48e2100001e
+023a80d072382d40102c4580c48e2100
+001e011d8018711c1620582c2500c48e
+2100009e8c0ad08a20e02d10103e9600
+c48e21000018023a801871382d40582c
+4500c48e2100001e0000000000000091
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 52 62 04 01 00 00 00 00
+00 10 01 03 80 c4 8e 78 0a ee 91 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 01 1d 80 d0 72 1c 16 20 10 2c
+25 80 c4 8e 21 00 00 9e 8c 0a d0 90 20 40 31 20
+0c 40 55 00 c4 8e 21 00 00 18 00 00 00 fc 00 54
+4f 53 48 49 42 41 2d 54 56 0a 20 20 00 00 00 fd
+00 31 3d 0f 44 0f 00 0a 20 20 20 20 20 20 01 eb
+
+02 03 1e 77 4f 94 13 12 16 11 15 1f 05 04 03 07
+02 06 10 01 23 09 07 07 65 03 0c 00 10 00 01 1d
+00 bc 52 d0 1e 20 b8 28 55 40 c4 8e 21 00 00 1e
+02 3a 80 d0 72 38 2d 40 10 2c 45 80 c4 8e 21 00
+00 1e 01 1d 80 18 71 1c 16 20 58 2c 25 00 c4 8e
+21 00 00 9e 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00
+c4 8e 21 00 00 18 02 3a 80 18 71 38 2d 40 58 2c
+45 00 c4 8e 21 00 00 1e 00 00 00 00 00 00 00 91
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: TSB
+    Model: 260
+    Made in: 2006
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 196 cm x 142 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 2:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    Display Product Name: 'TOSHIBA-TV'
+    Display Range Limits:
+      Monitor ranges (GTF): 49-61 Hz V, 15-68 kHz H, max dotclock 150 MHz
+  Extension blocks: 1
+Checksum: 0xeb
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 7
+  Video Data Block:
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (native)
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 3:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 4:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (708 mm x 398 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 6:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 7:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0x91  Unused space in Extension Block: 7 bytes
