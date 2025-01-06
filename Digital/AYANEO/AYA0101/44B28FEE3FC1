@@ -1,0 +1,112 @@
+
+EDID (hex):
+00ffffffffffff000721010107062120
+31200104a5090f78aab065a656539d28
+0c505400000001010101010101010101
+0101010101014b1a2036300022501212
+44045e970000001e2a1ad08c20002850
+4008a0015e970000001e531158a420c0
+18304408c4005e970000001e000000fc
+004159414e454f575847410a2020017a
+02031030d05020002e50200aa00171b5
+2d18d0a020802840400884015e970000
+001e9e16008c30003840300aa8015e97
+0000001e8b0f58a02020583038108402
+5e970000001e00000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000056
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 07 21 01 01 07 06 21 20
+31 20 01 04 a5 09 0f 78 aa b0 65 a6 56 53 9d 28
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4b 1a 20 36 30 00 22 50 12 12
+44 04 5e 97 00 00 00 1e 2a 1a d0 8c 20 00 28 50
+40 08 a0 01 5e 97 00 00 00 1e 53 11 58 a4 20 c0
+18 30 44 08 c4 00 5e 97 00 00 00 1e 00 00 00 fc
+00 41 59 41 4e 45 4f 57 58 47 41 0a 20 20 01 7a
+
+02 03 10 30 d0 50 20 00 2e 50 20 0a a0 01 71 b5
+2d 18 d0 a0 20 80 28 40 40 08 84 01 5e 97 00 00
+00 1e 9e 16 00 8c 30 00 38 40 30 0a a8 01 5e 97
+00 00 00 1e 8b 0f 58 a0 20 20 58 30 38 10 84 02
+5e 97 00 00 00 1e 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 56
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AYA
+    Model: 257
+    Serial Number: 539035143
+    Made in: week 49 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 9 cm x 15 cm
+    Gamma: 2.20
+    DPMS levels: Standby Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6503, 0.3388
+    Green: 0.3242, 0.6132
+    Blue : 0.1572, 0.0488
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:   800x1280   59.982747 Hz   5:8     78.817 kHz     67.310000 MHz (94 mm x 151 mm)
+                 Hfront   18 Hsync  18 Hback   18 Hpol P
+                 Vfront   20 Vsync   4 Vback   10 Vpol P
+    DTD 2:   720x1280   59.002819 Hz   9:16    77.884 kHz     66.980000 MHz (94 mm x 151 mm)
+                 Hfront   64 Hsync   8 Hback   68 Hpol P
+                 Vfront   10 Vsync  16 Vback   14 Vpol P
+    DTD 3:   600x960    58.993636 Hz   5:8     58.050 kHz     44.350000 MHz (94 mm x 151 mm)
+                 Hfront   68 Hsync   8 Hback   88 Hpol P
+                 Vfront   12 Vsync   4 Vback    8 Vpol P
+    Display Product Name: 'AYANEOWXGA'
+  Extension blocks: 1
+Checksum: 0x7a
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Format Data Block:
+    NTSC fractional frame rates are preferred
+    RID 16@24p:  5120x2880   24.000000 Hz  64:27    88.200 kHz    465.696000 MHz
+    RID 16@30p:  5120x2880   30.000000 Hz  64:27    88.200 kHz    465.696000 MHz
+    RID 16@60p:  5120x2880   60.000000 Hz  64:27   178.800 kHz    951.216000 MHz
+    RID 10@30p:  5120x1440   30.000000 Hz  32:9     44.400 kHz    236.208000 MHz
+    RID 10@60p:  5120x1440   60.000000 Hz  32:9     90.000 kHz    472.320000 MHz
+    RID 1@30p:  1280x720    30.000000 Hz  16:9     22.200 kHz     35.520000 MHz
+    RID 1@60p:  1280x720    60.000000 Hz  16:9     45.600 kHz     67.488000 MHz
+    RID 24@30p: 11520x6480   30.000000 Hz  64:27   197.400 kHz   2305.632000 MHz
+    RID 24@60p: 11520x6480   60.000000 Hz  64:27   400.800 kHz   4681.344000 MHz
+    RID 16@24p:  5120x2880   24.000000 Hz  64:27    88.200 kHz    465.696000 MHz
+    RID 16@25p:  5120x2880   25.000000 Hz  64:27    88.200 kHz    465.696000 MHz
+    RID 16@30p:  5120x2880   30.000000 Hz  64:27    88.200 kHz    465.696000 MHz
+    RID 16@50p:  5120x2880   50.000000 Hz  64:27   178.800 kHz    951.216000 MHz
+    RID 16@60p:  5120x2880   60.000000 Hz  64:27   178.800 kHz    951.216000 MHz
+  Detailed Timing Descriptors:
+    DTD 4:   720x1152   59.001297 Hz   5:8     70.330 kHz     61.890000 MHz (94 mm x 151 mm)
+                 Hfront   64 Hsync   8 Hback   88 Hpol P
+                 Vfront    8 Vsync  20 Vback   12 Vpol P
+    DTD 5:   768x1024   59.043074 Hz   3:4     63.767 kHz     57.900000 MHz (94 mm x 151 mm)
+                 Hfront   48 Hsync  10 Hback   82 Hpol P
+                 Vfront   10 Vsync  24 Vback   22 Vpol P
+    DTD 6:   600x800    58.958630 Hz   3:4     52.355 kHz     39.790000 MHz (94 mm x 151 mm)
+                 Hfront   56 Hsync  16 Hback   88 Hpol P
+                 Vfront    8 Vsync  36 Vback   44 Vpol P
+Checksum: 0x56  Unused space in Extension Block: 57 bytes

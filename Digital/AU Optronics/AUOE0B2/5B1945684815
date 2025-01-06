@@ -1,0 +1,102 @@
+
+EDID (hex):
+00ffffffffffff0006afb2e000000000
+0a220104a522137803c465905758972a
+22505400000001010101010101010101
+0101010101019f3780b6703831403020
+a50058c1100000180000000f00000000
+00000000000000000020000000fd0030
+a5bbbb27010a202020202020000000fe
+004231353648414e31352e32200a01d2
+702079020022001493f905847f07b500
+2f801f00370430000900040025010993
+f90593f90530a580810015741a000003
+5130a5000053515351a5000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000b990
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af b2 e0 00 00 00 00
+0a 22 01 04 a5 22 13 78 03 c4 65 90 57 58 97 2a
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9f 37 80 b6 70 38 31 40 30 20
+a5 00 58 c1 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fd 00 30
+a5 bb bb 27 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 35 36 48 41 4e 31 35 2e 32 20 0a 01 d2
+
+70 20 79 02 00 22 00 14 93 f9 05 84 7f 07 b5 00
+2f 80 1f 00 37 04 30 00 09 00 04 00 25 01 09 93
+f9 05 93 f9 05 30 a5 80 81 00 15 74 1a 00 00 03
+51 30 a5 00 00 53 51 53 51 a5 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 b9 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 57522
+    Made in: week 10 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5654, 0.3398
+    Green: 0.3447, 0.5898
+    Blue : 0.1650, 0.1347
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000219 Hz  16:9     67.740 kHz    142.390000 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync  32 Hback  102 Hpol N
+                 Vfront   10 Vsync   5 Vback   34 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-165 Hz V, 187-187 kHz H, max dotclock 390 MHz
+    Alphanumeric Data String: 'B156HAN15.2 '
+  Extension blocks: 1
+Checksum: 0xd2
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  1920x1080  165.000392 Hz  16:9    186.285 kHz    391.572000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback  102 Hpol P
+               Vfront   10 Vsync   5 Vback   34 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 391572 kHz
+    Maximum Pixel Clock: 391572 kHz
+    Minimum Vertical Refresh Rate: 48 Hz
+    Maximum Vertical Refresh Rate: 165 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.81
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 83 (301.833 cd/m^2)
+    Minimum luminance: 81 (0.305 cd/m^2)
+    Unknown: 0x53 0x51
+  Checksum: 0xb9
+Checksum: 0x90

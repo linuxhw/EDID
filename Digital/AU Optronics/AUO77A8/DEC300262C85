@@ -1,0 +1,150 @@
+
+EDID (hex):
+00ffffffffffff0006afa87700000000
+2a200104b51e1378031e22b24d3eb825
+0a4f5600000001010101010101010101
+010101010101726f00a0a04094603020
+aa002dbc100000180000000f00000000
+00000000000000000020000000fd0c3c
+fab6b677010a202020202020000000fe
+004231343051414e30362e56200a0222
+02030f00e3058000e606050177770000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000a4
+702079020022001424231284ff099f00
+2f801f003f0693000200040025010924
+23122423123cfa8081001be3058000e6
+060701777700721a000003013cfa0024
+77007700fa0000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000b090
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af a8 77 00 00 00 00
+2a 20 01 04 b5 1e 13 78 03 1e 22 b2 4d 3e b8 25
+0a 4f 56 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 72 6f 00 a0 a0 40 94 60 30 20
+aa 00 2d bc 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fd 0c 3c
+fa b6 b6 77 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 34 30 51 41 4e 30 36 2e 56 20 0a 02 22
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 77 77 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a4
+
+70 20 79 02 00 22 00 14 24 23 12 84 ff 09 9f 00
+2f 80 1f 00 3f 06 93 00 02 00 04 00 25 01 09 24
+23 12 24 23 12 3c fa 80 81 00 1b e3 05 80 00 e6
+06 07 01 77 77 00 72 1a 00 00 03 01 3c fa 00 24
+77 00 77 00 fa 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 b0 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 30632
+    Made in: week 42 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6953, 0.3017
+    Green: 0.2451, 0.7207
+    Blue : 0.1445, 0.0410
+    White: 0.3085, 0.3378
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   60.005553 Hz  16:10   104.890 kHz    285.300000 MHz (301 mm x 188 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront   10 Vsync  10 Vback  128 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 60-250 Hz V, 437-437 kHz H, max dotclock 1190 MHz
+    Alphanumeric Data String: 'B140QAN06.V '
+  Extension blocks: 2
+Checksum: 0x22
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 119 (658.302 cd/m^2)
+    Desired content max frame-average luminance: 119 (658.302 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+Checksum: 0xa4  Unused space in Extension Block: 112 bytes
+
+----------------
+
+Block 2, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2560x1600  250.001052 Hz  16:9    437.002 kHz   1188.645000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback  140 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 1188645 kHz
+    Maximum Pixel Clock: 1188645 kHz
+    Minimum Vertical Refresh Rate: 60 Hz
+    Maximum Vertical Refresh Rate: 250 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 119 (658.302 cd/m^2)
+    Desired content max frame-average luminance: 119 (658.302 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 250 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x24
+    Maximum luminance: 119 (658.302 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Maximum luminance (without local dimming): 119 (658.302 cd/m^2)
+    Minimum luminance (without local dimming): 0 (0.000 cd/m^2)
+  Checksum: 0xb0
+Checksum: 0x90

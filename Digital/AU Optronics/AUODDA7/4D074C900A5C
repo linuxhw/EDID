@@ -1,0 +1,96 @@
+
+EDID (hex):
+00ffffffffffff0006afa7dd00000000
+e5200104a526167803707593585a9429
+20505400000001010101010101010101
+010101010101ec3b80b6703888403020
+a5007ed710000018000000fd003c90b0
+b025010a202020202020000000fe0041
+554f0a202020202020202020000000fc
+004231373348414e30342e39200a01a1
+70207902002200140b9e05847f07b500
+2f801f0037048700090004002b000627
+003c8f00000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000290
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af a7 dd 00 00 00 00
+e5 20 01 04 a5 26 16 78 03 70 75 93 58 5a 94 29
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ec 3b 80 b6 70 38 88 40 30 20
+a5 00 7e d7 10 00 00 18 00 00 00 fd 00 3c 90 b0
+b0 25 01 0a 20 20 20 20 20 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fc
+00 42 31 37 33 48 41 4e 30 34 2e 39 20 0a 01 a1
+
+70 20 79 02 00 22 00 14 0b 9e 05 84 7f 07 b5 00
+2f 80 1f 00 37 04 87 00 09 00 04 00 2b 00 06 27
+00 3c 8f 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 56743
+    Made in: week 229 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 38 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5751, 0.3466
+    Green: 0.3515, 0.5781
+    Blue : 0.1611, 0.1279
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.014898 Hz  16:9     72.978 kHz    153.400000 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  102 Hpol N
+                 Vfront   10 Vsync   5 Vback  121 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 60-144 Hz V, 176-176 kHz H, max dotclock 370 MHz
+    Alphanumeric Data String: 'AUO'
+    Display Product Name: 'B173HAN04.9 '
+  Extension blocks: 1
+Checksum: 0xa1
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  1920x1080  144.027931 Hz  16:9    175.138 kHz    368.140000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback  102 Hpol P
+               Vfront   10 Vsync   5 Vback  121 Vpol N
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 60 Hz
+      Max Refresh Rate: 144 Hz
+  Checksum: 0x02
+Checksum: 0x90

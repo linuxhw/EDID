@@ -1,0 +1,108 @@
+
+EDID (hex):
+00ffffffffffff000721040120062320
+1921010485070c78aab065a656539d28
+0c505400000001010101010101010101
+0101010101013b34384040801c701a04
+840079440000001e2a1ad08c20002850
+4008a00179440000001e2e1358a4202a
+18404408c40079440000001e000000fc
+004159414e454f2d4f4c45440a2001e3
+02031030d05020002e50200aa00171b5
+9e16008c30003840300aa80179440000
+001e8b0f58a020205830381084027944
+0000001e000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000063
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 07 21 04 01 20 06 23 20
+19 21 01 04 85 07 0c 78 aa b0 65 a6 56 53 9d 28
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3b 34 38 40 40 80 1c 70 1a 04
+84 00 79 44 00 00 00 1e 2a 1a d0 8c 20 00 28 50
+40 08 a0 01 79 44 00 00 00 1e 2e 13 58 a4 20 2a
+18 40 44 08 c4 00 79 44 00 00 00 1e 00 00 00 fc
+00 41 59 41 4e 45 4f 2d 4f 4c 45 44 0a 20 01 e3
+
+02 03 10 30 d0 50 20 00 2e 50 20 0a a0 01 71 b5
+9e 16 00 8c 30 00 38 40 30 0a a8 01 79 44 00 00
+00 1e 8b 0f 58 a0 20 20 58 30 38 10 84 02 79 44
+00 00 00 1e 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 63
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AYA
+    Model: 260
+    Serial Number: 539166240
+    Made in: week 25 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Color depth is undefined
+    DisplayPort interface
+    Maximum image size: 7 cm x 12 cm
+    Gamma: 2.20
+    DPMS levels: Standby Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6503, 0.3388
+    Green: 0.3242, 0.6132
+    Blue : 0.1572, 0.0488
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1080x1920   59.999677 Hz   9:16   116.879 kHz    133.710000 MHz (121 mm x 68 mm)
+                 Hfront   26 Hsync   4 Hback   34 Hpol P
+                 Vfront    8 Vsync   4 Vback   16 Vpol P
+    DTD 2:   720x1280   59.002819 Hz   9:16    77.884 kHz     66.980000 MHz (121 mm x 68 mm)
+                 Hfront   64 Hsync   8 Hback   68 Hpol P
+                 Vfront   10 Vsync  16 Vback   14 Vpol P
+    DTD 3:   600x1066   58.960565 Hz 300:533   64.267 kHz     49.100000 MHz (121 mm x 68 mm)
+                 Hfront   68 Hsync   8 Hback   88 Hpol P
+                 Vfront   12 Vsync   4 Vback    8 Vpol P
+    Display Product Name: 'AYANEO-OLED'
+  Extension blocks: 1
+Checksum: 0xe3
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Format Data Block:
+    NTSC fractional frame rates are preferred
+    RID 16@24p:  5120x2880   24.000000 Hz  64:27    88.200 kHz    465.696000 MHz
+    RID 16@30p:  5120x2880   30.000000 Hz  64:27    88.200 kHz    465.696000 MHz
+    RID 16@60p:  5120x2880   60.000000 Hz  64:27   178.800 kHz    951.216000 MHz
+    RID 10@30p:  5120x1440   30.000000 Hz  32:9     44.400 kHz    236.208000 MHz
+    RID 10@60p:  5120x1440   60.000000 Hz  32:9     90.000 kHz    472.320000 MHz
+    RID 1@30p:  1280x720    30.000000 Hz  16:9     22.200 kHz     35.520000 MHz
+    RID 1@60p:  1280x720    60.000000 Hz  16:9     45.600 kHz     67.488000 MHz
+    RID 22@30p: 15360x4320   30.000000 Hz  32:9    132.000 kHz   2052.864000 MHz
+    RID 22@60p: 15360x4320   60.000000 Hz  32:9    267.600 kHz   4153.152000 MHz
+    RID 12@25p:  3840x2160   25.000000 Hz  64:27    66.000 kHz    261.888000 MHz
+    RID 12@30p:  3840x2160   30.000000 Hz  64:27    66.000 kHz    261.888000 MHz
+    RID 12@50p:  3840x2160   50.000000 Hz  64:27   134.400 kHz    532.224000 MHz
+    RID 12@60p:  3840x2160   60.000000 Hz  64:27   134.400 kHz    532.224000 MHz
+  Detailed Timing Descriptors:
+    DTD 4:   768x1024   59.043074 Hz   3:4     63.767 kHz     57.900000 MHz (121 mm x 68 mm)
+                 Hfront   48 Hsync  10 Hback   82 Hpol P
+                 Vfront   10 Vsync  24 Vback   22 Vpol P
+    DTD 5:   600x800    58.958630 Hz   3:4     52.355 kHz     39.790000 MHz (121 mm x 68 mm)
+                 Hfront   56 Hsync  16 Hback   88 Hpol P
+                 Vfront    8 Vsync  36 Vback   44 Vpol P
+Checksum: 0x63  Unused space in Extension Block: 75 bytes

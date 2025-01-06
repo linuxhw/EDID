@@ -1,0 +1,102 @@
+
+EDID (hex):
+00ffffffffffff0006afa52e00000000
+1c200104b5221678034b95ae5143b025
+0e505400000001010101010101010101
+01010101010154ec00a0f06078903020
+350058d710000018000000fd00283c98
+983d010a202020202020000000fe0041
+554f0a202020202020202020000000fe
+00423136305a414e30312e54200a0194
+02031d00e3058000e60607018080386d
+1a00000203283c000480388038000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000e6
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af a5 2e 00 00 00 00
+1c 20 01 04 b5 22 16 78 03 4b 95 ae 51 43 b0 25
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 54 ec 00 a0 f0 60 78 90 30 20
+35 00 58 d7 10 00 00 18 00 00 00 fd 00 28 3c 98
+98 3d 01 0a 20 20 20 20 20 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 36 30 5a 41 4e 30 31 2e 54 20 0a 01 94
+
+02 03 1d 00 e3 05 80 00 e6 06 07 01 80 80 38 6d
+1a 00 00 02 03 28 3c 00 04 80 38 80 38 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 e6
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 11941
+    Made in: week 28 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6806, 0.3164
+    Green: 0.2636, 0.6904
+    Blue : 0.1464, 0.0556
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2400   60.019841 Hz  16:10   151.250 kHz    605.000000 MHz (344 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback  112 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 152-152 kHz H, max dotclock 610 MHz
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B160ZAN01.T '
+  Extension blocks: 1
+Checksum: 0x94
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 128 (800.000 cd/m^2)
+    Desired content max frame-average luminance: 128 (800.000 cd/m^2)
+    Desired content min luminance: 56 (0.386 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.3
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x04
+    Maximum luminance: 128 (800.000 cd/m^2)
+    Minimum luminance: 56 (0.386 cd/m^2)
+    Maximum luminance (without local dimming): 128 (800.000 cd/m^2)
+    Minimum luminance (without local dimming): 56 (0.386 cd/m^2)
+Checksum: 0xe6  Unused space in Extension Block: 98 bytes

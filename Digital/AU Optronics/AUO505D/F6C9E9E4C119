@@ -1,0 +1,96 @@
+
+EDID (hex):
+00ffffffffffff0006af5d5000000000
+0c1b0104a51a0e780aa4159e554e9b26
+0f505400000001010101010101010101
+010101010101023a801871382c40582c
+43000090100000180000000f00000000
+00000000000000000020000000fe0041
+554f0a202020202020202020000000fe
+004231313648414e30352e300a20016a
+0203127023097f078301000065030c00
+1000023a801871382d40582c31000090
+10000018000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000068
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 5d 50 00 00 00 00
+0c 1b 01 04 a5 1a 0e 78 0a a4 15 9e 55 4e 9b 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2c 40 58 2c
+43 00 00 90 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 31 36 48 41 4e 30 35 2e 30 0a 20 01 6a
+
+02 03 12 70 23 09 7f 07 83 01 00 00 65 03 0c 00
+10 00 02 3a 80 18 71 38 2d 40 58 2c 31 00 00 90
+10 00 00 18 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 68
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 20573
+    Made in: week 12 of 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6191, 0.3339
+    Green: 0.3056, 0.6054
+    Blue : 0.1484, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.053381 Hz  16:9     67.500 kHz    148.500000 MHz (256 mm x 144 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol N
+                 Vfront    4 Vsync   3 Vback   37 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B116HAN05.0'
+  Extension blocks: 1
+Checksum: 0x6a
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (256 mm x 144 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol N
+                 Vfront    3 Vsync   1 Vback   41 Vpol N
+Checksum: 0x68  Unused space in Extension Block: 91 bytes
+
+

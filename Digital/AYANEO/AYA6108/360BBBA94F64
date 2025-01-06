@@ -1,0 +1,106 @@
+
+EDID (hex):
+00ffffffffffff000721086101004023
+02210104a50d08783a3585a656489a24
+12505400000001010101010101010101
+0101010101015638389a40801c707404
+4204844a0000001e000000fd003c3c1e
+5311000a202020202020000000fc0041
+59414e454f48440a20202020000000ff
+004c35363035313739343330320a0185
+0203127223097f078301000065030c00
+1000b31358a0202a284040084804844a
+0000001e241700a03000284040084804
+844a0000007ff50e58a0202028304008
+4804844a0000007f041bd0a420001850
+4408c400844a0000007f000000000000
+00000000000000000000000000000000
+0000000000000000000000000000008d
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 07 21 08 61 01 00 40 23
+02 21 01 04 a5 0d 08 78 3a 35 85 a6 56 48 9a 24
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 56 38 38 9a 40 80 1c 70 74 04
+42 04 84 4a 00 00 00 1e 00 00 00 fd 00 3c 3c 1e
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+59 41 4e 45 4f 48 44 0a 20 20 20 20 00 00 00 ff
+00 4c 35 36 30 35 31 37 39 34 33 30 32 0a 01 85
+
+02 03 12 72 23 09 7f 07 83 01 00 00 65 03 0c 00
+10 00 b3 13 58 a0 20 2a 28 40 40 08 48 04 84 4a
+00 00 00 1e 24 17 00 a0 30 00 28 40 40 08 48 04
+84 4a 00 00 00 7f f5 0e 58 a0 20 20 28 30 40 08
+48 04 84 4a 00 00 00 7f 04 1b d0 a4 20 00 18 50
+44 08 c4 00 84 4a 00 00 00 7f 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 8d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AYA
+    Model: 24840
+    Serial Number: 591396865
+    Made in: week 2 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 13 cm x 8 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6484, 0.3388
+    Green: 0.2822, 0.6025
+    Blue : 0.1425, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1080x1920   59.995873 Hz   9:16   116.872 kHz    144.220000 MHz (132 mm x 74 mm)
+                 Hfront  116 Hsync   4 Hback   34 Hpol P
+                 Vfront   20 Vsync   2 Vback    6 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 60-60 Hz V, 30-83 kHz H, max dotclock 170 MHz
+    Display Product Name: 'AYANEOHD'
+    Display Product Serial Number: 'L56051794302'
+  Extension blocks: 1
+Checksum: 0x85
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 2:   600x1066   59.995717 Hz 300:533   66.355 kHz     50.430000 MHz (132 mm x 74 mm)
+                 Hfront   64 Hsync   8 Hback   88 Hpol P
+                 Vfront   20 Vsync   8 Vback   12 Vpol P
+    DTD 3:   768x1024   59.996435 Hz   3:4     63.836 kHz     59.240000 MHz (side by side interleaved, 132 mm x 74 mm)
+                 Hfront   64 Hsync   8 Hback   88 Hpol P
+                 Vfront   20 Vsync   8 Vback   12 Vpol P
+    DTD 4:   600x800    59.978070 Hz   3:4     50.382 kHz     38.290000 MHz (side by side interleaved, 132 mm x 74 mm)
+                 Hfront   64 Hsync   8 Hback   88 Hpol P
+                 Vfront   20 Vsync   8 Vback   12 Vpol P
+    DTD 5:   720x1280   59.996391 Hz   9:16    78.235 kHz     69.160000 MHz (side by side interleaved, 132 mm x 74 mm)
+                 Hfront   68 Hsync   8 Hback   88 Hpol P
+                 Vfront   12 Vsync   4 Vback    8 Vpol P
+Checksum: 0x8d  Unused space in Extension Block: 37 bytes
