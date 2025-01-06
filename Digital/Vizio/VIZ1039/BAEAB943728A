@@ -1,0 +1,181 @@
+
+EDID (hex):
+00ffffffffffff00593a391001010101
+001f0103805e35782a21dda5574f9f26
+0e474aa5ce00d1c00101010101010101
+01010101010104740030f2705a80b058
+8a00ad113200001e565e00a0a0a02950
+30203500ad113200001e000000fc0056
+3433352d4a30310a20202020000000fd
+00174c0f8c1e000a2020202020200137
+02035271535f645d625e631022201f21
+05041307060302013509070715075057
+04033d07c05f7e07677e035f7e018301
+000070030c0010003844a05b5b008001
+020304eb0146d0004d4f2a96381fbfe2
+00ff0000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000059
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 59 3a 39 10 01 01 01 01
+00 1f 01 03 80 5e 35 78 2a 21 dd a5 57 4f 9f 26
+0e 47 4a a5 ce 00 d1 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 04 74 00 30 f2 70 5a 80 b0 58
+8a 00 ad 11 32 00 00 1e 56 5e 00 a0 a0 a0 29 50
+30 20 35 00 ad 11 32 00 00 1e 00 00 00 fc 00 56
+34 33 35 2d 4a 30 31 0a 20 20 20 20 00 00 00 fd
+00 17 4c 0f 8c 1e 00 0a 20 20 20 20 20 20 01 37
+
+02 03 52 71 53 5f 64 5d 62 5e 63 10 22 20 1f 21
+05 04 13 07 06 03 02 01 35 09 07 07 15 07 50 57
+04 03 3d 07 c0 5f 7e 07 67 7e 03 5f 7e 01 83 01
+00 00 70 03 0c 00 10 00 38 44 a0 5b 5b 00 80 01
+02 03 04 eb 01 46 d0 00 4d 4f 2a 96 38 1f bf e2
+00 ff 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 59
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: VIZ
+    Model: 4153
+    Serial Number: 16843009
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 94 cm x 53 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6445, 0.3417
+    Green: 0.3085, 0.6220
+    Blue : 0.1513, 0.0556
+    White: 0.2802, 0.2900
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz (941 mm x 529 mm)
+                 Hfront  176 Hsync  88 Hback  296 Hpol P
+                 Vfront    8 Vsync  10 Vback   72 Vpol P
+    DTD 2:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (941 mm x 529 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+    Display Product Name: 'V435-J01'
+    Display Range Limits:
+      Monitor ranges (GTF): 23-76 Hz V, 15-140 kHz H, max dotclock 300 MHz
+  Extension blocks: 1
+Checksum: 0x37
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC 100:  4096x2160   30.000000 Hz 256:135   67.500 kHz    297.000000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  98:  4096x2160   24.000000 Hz 256:135   54.000 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  99:  4096x2160   25.000000 Hz 256:135   56.250 kHz    297.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 640 kb/s
+    Enhanced AC-3 (DD+):
+      Max channels: 8
+      Supported sample rates (kHz): 48
+      Supports Joint Object Coding
+      Supports Joint Object Coding with ACMOD28
+    DTS:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 1536 kb/s
+    DTS-HD:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports DTS:X
+      Audio Format Code dependent value: 0x07
+    MAT (MLP):
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports Dolby TrueHD, object audio PCM and channel-based PCM
+      Hash calculation not required for object audio PCM or channel-based PCM
+    DTS-HD:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Audio Format Code dependent value: 0x01
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 340 MHz
+    Video latency: 180 ms
+    Audio latency: 180 ms
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+        HDMI VIC 4:  4096x2160   24.000000 Hz 256:135   54.000 kHz    297.000000 MHz
+  Vendor-Specific Video Data Block (Dolby), OUI 00-D0-46:
+    Version: 2 (12 bytes)
+    Supports YUV422 12 bit
+    Supports global dimming
+    DM Version: 5.x
+    Backlt Min Luma: 100 cd/m^2
+    Interface: Standard + Low-Latency
+    Supports 10b 12b 444: Not supported
+    Target Min PQ v2: 180 (0.04555910 cd/m^2)
+    Target Max PQ v2: 2380 (211 cd/m^2)
+    Unique Rx, Ry: 0.63671875, 0.33984375
+    Unique Gx, Gy: 0.29296875, 0.60937500
+    Unique Bx, By: 0.15234375, 0.05859375
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+Checksum: 0x59  Unused space in Extension Block: 45 bytes

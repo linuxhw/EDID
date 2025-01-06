@@ -1,0 +1,141 @@
+
+EDID (hex):
+00ffffffffffff0062a5001601010101
+0721010380241378fe6435a5544f9e27
+12505421080001010101010101010101
+0101010101013240801871b02d40582c
+250068be1000001e000000fc0048444d
+490a2020202020202020000000ff000a
+202020202020202020202020000000fd
+00303c1ec814010a2020202020200182
+02033df1431005042309070783010000
+67030c001000384467d85dc401448001
+681a00000109303ce6e50f00000600e3
+05c000e200ffe6060501595949023a80
+1871382d403020350068be1000001200
+000000000000000000000068be100000
+0000000000000000000000000068be10
+0000000000000000000000000000001a
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 62 a5 00 16 01 01 01 01
+07 21 01 03 80 24 13 78 fe 64 35 a5 54 4f 9e 27
+12 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 32 40 80 18 71 b0 2d 40 58 2c
+25 00 68 be 10 00 00 1e 00 00 00 fc 00 48 44 4d
+49 0a 20 20 20 20 20 20 20 20 00 00 00 ff 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fd
+00 30 3c 1e c8 14 01 0a 20 20 20 20 20 20 01 82
+
+02 03 3d f1 43 10 05 04 23 09 07 07 83 01 00 00
+67 03 0c 00 10 00 38 44 67 d8 5d c4 01 44 80 01
+68 1a 00 00 01 09 30 3c e6 e5 0f 00 00 06 00 e3
+05 c0 00 e2 00 ff e6 06 05 01 59 59 49 02 3a 80
+18 71 38 2d 40 30 20 35 00 68 be 10 00 00 12 00
+00 00 00 00 00 00 00 00 00 00 00 68 be 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 68 be 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: XUE
+    Model: 5632
+    Serial Number: 16843009
+    Made in: week 7 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 36 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Undefined display color type
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6455, 0.3300
+    Green: 0.3095, 0.6171
+    Blue : 0.1523, 0.0732
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.000000 Hz  16:10    74.700 kHz    164.340000 MHz (360 mm x 190 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol P
+    Display Product Name: 'HDMI'
+    Display Product Serial Number: ''
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-60 Hz V, 30-200 kHz H, max dotclock 200 MHz
+  Extension blocks: 1
+Checksum: 0x82
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 340 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 340 MHz
+    SCDC Present
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.9
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0xe6 (MCCS)
+  YCbCr 4:2:0 Capability Map Data Block:
+    SVD Index 18 is out of range
+    SVD Index 19 is out of range
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 89 (343.724 cd/m^2)
+    Desired content max frame-average luminance: 89 (343.724 cd/m^2)
+    Desired content min luminance: 73 (0.282 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (digital composite, 360 mm x 190 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    3 Vsync   5 Vback   37
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 68 be 10 00 00 00 '..........h.....'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 68 be 10 00 00 00 '..........h.....'
+Checksum: 0x1a  Unused space in Extension Block: 12 bytes
