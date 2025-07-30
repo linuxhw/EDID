@@ -46,7 +46,7 @@ Verify it by `edid-decode`:
 
     edid-decode EDID.bin
 
-Install `EDID.bin` by [write-edid](https://github.com/linuxhw/write-edid) or [edid-rw](https://github.com/bulletmark/edid-rw).
+Install (flash/upload it to the monitor) `EDID.bin` by [write-edid](https://github.com/linuxhw/write-edid) or [edid-rw](https://github.com/bulletmark/edid-rw).
 
 How to regenerate data
 ----------------------
