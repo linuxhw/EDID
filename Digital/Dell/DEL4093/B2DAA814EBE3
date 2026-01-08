@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0010ac934050343031
-2b180104b54627783a73e0a35336b626
-0d5153a54b008100b300d100714fa940
-8180d1c001014d6c80a070703e803020
-3a00ba882100001a000000ff004b3352
-393034414e313034500a000000fc0044
-454c4c20555033323134510a000000fd
-001d4b1f8c1e000a20202020202001d0
-7012790000120016821000007f076f08
-000000000044454c9340503430310000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000003190
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 93 40 50 34 30 31
+2b 18 01 04 b5 46 27 78 3a 73 e0 a3 53 36 b6 26
+0d 51 53 a5 4b 00 81 00 b3 00 d1 00 71 4f a9 40
+81 80 d1 c0 01 01 4d 6c 80 a0 70 70 3e 80 30 20
+3a 00 ba 88 21 00 00 1a 00 00 00 ff 00 4b 33 52
+39 30 34 41 4e 31 30 34 50 0a 00 00 00 fc 00 44
+45 4c 4c 20 55 50 33 32 31 34 51 0a 00 00 00 fd
+00 1d 4b 1f 8c 1e 00 0a 20 20 20 20 20 20 01 d0
+
+70 12 79 00 00 12 00 16 82 10 00 00 7f 07 6f 08
+00 00 00 00 00 44 45 4c 93 40 50 34 30 31 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 31 90
 
 00 ff ff ff ff ff ff 00 10 ac 93 40 50 34 30 31
 2b 18 01 04 b5 46 27 78 3a 73 e0 a3 53 36 b6 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 16531
-    Serial Number: 825242704
+    Serial Number: ...
     Made in: week 43 of 2014
   Basic Display Parameters & Features:
     Digital display
@@ -81,7 +80,7 @@ Block 0, Base EDID:
     DTD 1:  1920x2160   59.987970 Hz   8:9    133.293 kHz    277.250000 MHz (698 mm x 392 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   49 Vpol N
-    Display Product Serial Number: 'K3R904AN104P'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL UP3214Q'
     Display Range Limits:
       Monitor ranges (GTF): 29-75 Hz V, 31-140 kHz H, max dotclock 300 MHz
@@ -104,6 +103,61 @@ Block 1, DisplayID Extension Block:
     Tile resolution: 1920x2160
     Tiled Display Manufacturer/Vendor ID: DEL
     Tiled Display Product ID Code: 16531
-    Tiled Display Serial Number: 825242704
+    Tiled Display Serial Number: ...
   Checksum: 0x31
 Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 93 40 50 34 30 31 '...........@P401'
+  2b 18 01 04 b5 46 27 78 3a 73 e0 a3 53 36 b6 26 '+....F'x:s..S6.&'
+  0d 51 53 a5 4b 00 81 00 b3 00 d1 00 71 4f a9 40 '.QS.K.......qO.@'
+  81 80 d1 c0 01 01 4d 6c 80 a0 70 70 3e 80 30 20 '......Ml..pp>.0 '
+  3a 00 ba 88 21 00 00 1a 00 00 00 ff 00 4b 33 52 ':...!........K3R'
+  39 30 34 41 4e 31 30 34 50 0a 00 00 00 fc 00 44 '904AN104P......D'
+  45 4c 4c 20 55 50 33 32 31 34 51 0a 00 00 00 fd 'ELL UP3214Q.....'
+  00 1d 4b 1f 8c 1e 00 0a 20 20 20 20 20 20 01 d0 '..K.....      ..'
+Checksum: 0xd0
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Tiled Display Topology Data Block (0x12):
+    Capabilities:
+      Behavior if it is the only tile: Image is scaled to fit the entire tiled display
+      Behavior if more than one tile and fewer than total number of tiles: Undefined
+    Tiled display consists of a single physical display enclosure
+    Num horizontal tiles: 2 Num vertical tiles: 1
+    Tile location: 0, 0
+    Tile resolution: 1920x2160
+    Tiled Display Manufacturer/Vendor ID: DEL
+    Tiled Display Product ID Code: 16531
+    Tiled Display Serial Number: ...
+  Checksum: 0x31
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

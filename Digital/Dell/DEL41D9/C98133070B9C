@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0010acd9414c324d41
-14200104b53c22783b8cb5af4f43ab26
-0e5054a54b00d100d1c0b300a9408180
-8100714fe1c0565e00a0a0a029503020
-350055502100001a000000ff0048574a
-374448330a2020202020000000fc0044
-454c4c205332373231444746000000fd
-0030a5fafa41010a2020202020200155
-02031ef1513f101f2005140413121103
-0201060715162309070783010000f4fb
-0050a0a028500820680055502100001a
-40e7006aa0a067500820980455502100
-001a6fc200a0a0a05550302035005550
-2100001a000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000010
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac d9 41 4c 32 4d 41
+14 20 01 04 b5 3c 22 78 3b 8c b5 af 4f 43 ab 26
+0e 50 54 a5 4b 00 d1 00 d1 c0 b3 00 a9 40 81 80
+81 00 71 4f e1 c0 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 55 50 21 00 00 1a 00 00 00 ff 00 48 57 4a
+37 44 48 33 0a 20 20 20 20 20 00 00 00 fc 00 44
+45 4c 4c 20 53 32 37 32 31 44 47 46 00 00 00 fd
+00 30 a5 fa fa 41 01 0a 20 20 20 20 20 20 01 55
+
+02 03 1e f1 51 3f 10 1f 20 05 14 04 13 12 11 03
+02 01 06 07 15 16 23 09 07 07 83 01 00 00 f4 fb
+00 50 a0 a0 28 50 08 20 68 00 55 50 21 00 00 1a
+40 e7 00 6a a0 a0 67 50 08 20 98 04 55 50 21 00
+00 1a 6f c2 00 a0 a0 a0 55 50 30 20 35 00 55 50
+21 00 00 1a 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10
 
 00 ff ff ff ff ff ff 00 10 ac d9 41 4c 32 4d 41
 14 20 01 04 b5 3c 22 78 3b 8c b5 af 4f 43 ab 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 16857
-    Serial Number: 1095578188
+    Serial Number: ...
     Made in: week 20 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -83,7 +82,7 @@ Block 0, Base EDID:
     DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
-    Display Product Serial Number: 'HWJ7DH3'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL S2721DGF'
     Display Range Limits:
       Monitor ranges (Bare Limits): 48-165 Hz V, 250-250 kHz H, max dotclock 650 MHz
@@ -136,4 +135,107 @@ Block 1, CTA-861 Extension Block:
                  Vfront    3 Vsync   5 Vback   77 Vpol N
 Checksum: 0x10  Unused space in Extension Block: 43 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac d9 41 4c 32 4d 41 '...........AL2MA'
+  14 20 01 04 b5 3c 22 78 3b 8c b5 af 4f 43 ab 26 '. ...<"x;...OC.&'
+  0e 50 54 a5 4b 00 d1 00 d1 c0 b3 00 a9 40 81 80 '.PT.K........@..'
+  81 00 71 4f e1 c0 56 5e 00 a0 a0 a0 29 50 30 20 '..qO..V^....)P0 '
+  35 00 55 50 21 00 00 1a 00 00 00 ff 00 48 57 4a '5.UP!........HWJ'
+  37 44 48 33 0a 20 20 20 20 20 00 00 00 fc 00 44 '7DH3.     .....D'
+  45 4c 4c 20 53 32 37 32 31 44 47 46 00 00 00 fd 'ELL S2721DGF....'
+  00 30 a5 fa fa 41 01 0a 20 20 20 20 20 20 01 55 '.0...A..      .U'
+Checksum: 0x55
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 5:  2560x1440  165.079853 Hz  16:9    244.318 kHz    645.000000 MHz (597 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront    6 Vsync   8 Vback   26 Vpol N
+    DTD 6:  2560x1440  143.911545 Hz  16:9    222.056 kHz    592.000000 MHz (597 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback   66 Hpol P
+                 Vfront   25 Vsync   8 Vback   70 Vpol N
+    DTD 7:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   77 Vpol N
+Checksum: 0x10  Unused space in Extension Block: 43 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 165.080 Hz (Monitor: 48.000 - 165.000 Hz)
+    Horizontal Freq: 15.625 - 244.318 kHz (Monitor: 250.000 - 250.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 63.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 32.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 6.
+  Video Data Block: Duplicate VIC 7.
+  Video Data Block: Duplicate VIC 21.
+  Video Data Block: Duplicate VIC 22.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL
