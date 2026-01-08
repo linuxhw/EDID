@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006b3cc2401010101
-221e0104a5351e78e20565a756529c27
-0f5054bfef808100814081809500b300
-8bc0a940d1c0023a801871382d40582c
-45000f282100001e000000fd00304b1e
-5511000a202020202020000000fc0056
-5a3234390a20202020202020000000ff
-004c384c4d52533034383435320a00ef
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 b3 cc 24 01 01 01 01
+22 1e 01 04 a5 35 1e 78 e2 05 65 a7 56 52 9c 27
+0f 50 54 bf ef 80 81 00 81 40 81 80 95 00 b3 00
+8b c0 a9 40 d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 fd 00 30 4b 1e
+55 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+5a 32 34 39 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 4c 38 4c 4d 52 53 30 34 38 34 35 32 0a 00 ef
 
 00 ff ff ff ff ff ff 00 06 b3 cc 24 01 01 01 01
 22 1e 01 04 a5 35 1e 78 e2 05 65 a7 56 52 9c 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AUS
     Model: 9420
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 34 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -75,5 +73,37 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 48-75 Hz V, 30-85 kHz H, max dotclock 170 MHz
     Display Product Name: 'VZ249'
-    Display Product Serial Number: 'L8LMRS048452'
+    Display Product Serial Number: ...
 Checksum: 0xef
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 b3 cc 24 01 01 01 01 '...........$....'
+  22 1e 01 04 a5 35 1e 78 e2 05 65 a7 56 52 9c 27 '"....5.x..e.VR.''
+  0f 50 54 bf ef 80 81 00 81 40 81 80 95 00 b3 00 '.PT......@......'
+  8b c0 a9 40 d1 c0 02 3a 80 18 71 38 2d 40 58 2c '...@...:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 fd 00 30 4b 1e 'E..(!........0K.'
+  55 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56 'U...      .....V'
+  5a 32 34 39 0a 20 20 20 20 20 20 20 00 00 00 ff 'Z249.       ....'
+  00 4c 38 4c 4d 52 53 30 34 38 34 35 32 0a 00 ef '.L8LMRS048452...'
+Checksum: 0xef
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

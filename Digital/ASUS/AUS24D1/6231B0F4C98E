@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006b3d124d10f0200
-1d1e010380351e782acf75a355509e25
-0d5054bfef00d1c0b300950081808140
-81c0714f0101023a801871382d40582c
-45000f282100001e000000ff004c374c
-4d54463133353132310a000000fd0030
-4b185412000a202020202020000000fc
-00415355532056413234450a202000bd
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 b3 d1 24 d1 0f 02 00
+1d 1e 01 03 80 35 1e 78 2a cf 75 a3 55 50 9e 25
+0d 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 71 4f 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 ff 00 4c 37 4c
+4d 54 46 31 33 35 31 32 31 0a 00 00 00 fd 00 30
+4b 18 54 12 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 56 41 32 34 45 0a 20 20 00 bd
 
 00 ff ff ff ff ff ff 00 06 b3 d1 24 d1 0f 02 00
 1d 1e 01 03 80 35 1e 78 2a cf 75 a3 55 50 9e 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AUS
     Model: 9425
-    Serial Number: 135121
+    Serial Number: ...
     Made in: week 29 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -68,10 +66,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'L7LMTF135121'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 48-75 Hz V, 24-84 kHz H, max dotclock 180 MHz
     Display Product Name: 'ASUS VA24E'
 Checksum: 0xbd
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 b3 d1 24 d1 0f 02 00 '...........$....'
+  1d 1e 01 03 80 35 1e 78 2a cf 75 a3 55 50 9e 25 '.....5.x*.u.UP.%'
+  0d 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 71 4f 01 01 02 3a 80 18 71 38 2d 40 58 2c '..qO...:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 ff 00 4c 37 4c 'E..(!........L7L'
+  4d 54 46 31 33 35 31 32 31 0a 00 00 00 fd 00 30 'MTF135121......0'
+  4b 18 54 12 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.T...      ....'
+  00 41 53 55 53 20 56 41 32 34 45 0a 20 20 00 bd '.ASUS VA24E.  ..'
+Checksum: 0xbd
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
