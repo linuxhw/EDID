@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00593a620000000000
-06150104a53a207826d53da0564b9e27
-0e474aa5ce0001010101010101010101
-0101010101011a3680a070381f403020
-3500fd1e1100001e000000fd00384c1f
-520f000a202020202020000000fc0045
-3236304d560a202020202020000000ff
-004e4d4856454d30353031353739008e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 59 3a 62 00 00 00 00 00
+06 15 01 04 a5 3a 20 78 26 d5 3d a0 56 4b 9e 27
+0e 47 4a a5 ce 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1a 36 80 a0 70 38 1f 40 30 20
+35 00 fd 1e 11 00 00 1e 00 00 00 fd 00 38 4c 1f
+52 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45
+32 36 30 4d 56 0a 20 20 20 20 20 20 00 00 00 ff
+00 4e 4d 48 56 45 4d 30 35 30 31 35 37 39 00 8e
 
 00 ff ff ff ff ff ff 00 59 3a 62 00 00 00 00 00
 06 15 01 04 a5 3a 20 78 26 d5 3d a0 56 4b 9e 27
@@ -61,5 +59,38 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-82 kHz H, max dotclock 150 MHz
     Display Product Name: 'E260MV'
-    Display Product Serial Number: 'NMHVEM0501579'
+    Display Product Serial Number: ...
 Checksum: 0x8e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 59 3a 62 00 00 00 00 00 '........Y:b.....'
+  06 15 01 04 a5 3a 20 78 26 d5 3d a0 56 4b 9e 27 '.....: x&.=.VK.''
+  0e 47 4a a5 ce 00 01 01 01 01 01 01 01 01 01 01 '.GJ.............'
+  01 01 01 01 01 01 1a 36 80 a0 70 38 1f 40 30 20 '.......6..p8.@0 '
+  35 00 fd 1e 11 00 00 1e 00 00 00 fd 00 38 4c 1f '5............8L.'
+  52 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45 'R...      .....E'
+  32 36 30 4d 56 0a 20 20 20 20 20 20 00 00 00 ff '260MV.      ....'
+  00 4e 4d 48 56 45 4d 30 35 30 31 35 37 39 00 8e '.NMHVEM0501579..'
+Checksum: 0x8e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 509x286 mm vs display size 580x320 mm.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

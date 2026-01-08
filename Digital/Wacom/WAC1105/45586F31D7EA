@@ -1,0 +1,161 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5c 23 05 11 00 00 00 00
+11 23 01 04 a5 35 1e 78 3a ac f5 ab 51 45 ac 26
+0a 50 54 21 08 00 81 c0 81 80 a9 40 d1 c0 01 01
+01 01 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 0f 29 21 00 00 1a 00 00 00 fd 00 32 3d 1f
+59 19 01 0a 20 20 20 20 20 20 00 00 00 fc 00 57
+61 63 6f 6d 20 44 54 48 32 34 36 0a 00 00 00 ff
+00 35 44 56 32 31 50 31 30 30 30 34 32 34 01 fc
+
+02 03 0c b0 44 10 1f 04 01 e2 00 ea 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fb
+
+00 ff ff ff ff ff ff 00 5c 23 05 11 00 00 00 00
+11 23 01 04 a5 35 1e 78 3a ac f5 ab 51 45 ac 26
+0a 50 54 21 08 00 81 c0 81 80 a9 40 d1 c0 01 01
+01 01 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 0f 29 21 00 00 1a 00 00 00 fd 00 32 3d 1f
+59 19 01 0a 20 20 20 20 20 20 00 00 00 fc 00 57
+61 63 6f 6d 20 44 54 48 32 34 36 0a 00 00 00 ff
+00 35 44 56 32 31 50 31 30 30 30 34 32 34 01 fc
+
+02 03 0c b0 44 10 1f 04 01 e2 00 ea 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fb
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: WAC
+    Model: 4357
+    Made in: week 17 of 2025
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 53 cm x 30 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6699, 0.3183
+    Green: 0.2724, 0.6718
+    Blue : 0.1513, 0.0419
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (527 mm x 297 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 50-61 Hz V, 31-89 kHz H, max dotclock 250 MHz
+    Display Product Name: 'Wacom DTH246'
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0xfc
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+Checksum: 0xfb  Unused space in Extension Block: 115 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5c 23 05 11 00 00 00 00 '........\#......'
+  11 23 01 04 a5 35 1e 78 3a ac f5 ab 51 45 ac 26 '.#...5.x:...QE.&'
+  0a 50 54 21 08 00 81 c0 81 80 a9 40 d1 c0 01 01 '.PT!.......@....'
+  01 01 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
+  35 00 0f 29 21 00 00 1a 00 00 00 fd 00 32 3d 1f '5..)!........2=.'
+  59 19 01 0a 20 20 20 20 20 20 00 00 00 fc 00 57 'Y...      .....W'
+  61 63 6f 6d 20 44 54 48 32 34 36 0a 00 00 00 ff 'acom DTH246.....'
+  00 35 44 56 32 31 50 31 30 30 30 34 32 34 01 fc '.5DV21P1000424..'
+Checksum: 0xfc
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+Checksum: 0xfb  Unused space in Extension Block: 115 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 1.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

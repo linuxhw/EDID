@@ -1,0 +1,166 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 68 9a 01 05 01 07 24 20
+19 22 01 04 b5 09 0f 78 0e ee 95 a3 54 4c 99 26
+0f 4f 4f 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 7b 7e 38 18 41 80 40 70 50 2c
+02 0c 9a 57 00 00 00 1e 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc
+00 5a 44 5a 30 35 30 31 0a 20 20 20 20 20 01 05
+
+02 03 0f 05 e3 05 80 00 e6 06 05 01 8a 60 07 7b
+7e 38 18 41 80 40 70 50 2c 02 0c 9a 57 00 00 00
+1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 49
+
+00 ff ff ff ff ff ff 00 68 9a 01 05 01 07 24 20
+19 22 01 04 b5 09 0f 78 0e ee 95 a3 54 4c 99 26
+0f 4f 4f 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 7b 7e 38 18 41 80 40 70 50 2c
+02 0c 9a 57 00 00 00 1e 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc
+00 5a 44 5a 30 35 30 31 0a 20 20 20 20 20 01 05
+
+02 03 0f 05 e3 05 80 00 e6 06 05 01 8a 60 07 7b
+7e 38 18 41 80 40 70 50 2c 02 0c 9a 57 00 00 00
+1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 49
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: ZDZ
+    Model: 1281
+    Serial Number: ...
+    Made in: week 25 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 9 cm x 15 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3095, 0.3095
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1080x1920  120.000445 Hz   9:16   238.081 kHz    323.790000 MHz (154 mm x 87 mm)
+                 Hfront   80 Hsync  44 Hback  156 Hpol P
+                 Vfront   48 Vsync   2 Vback   14 Vpol P
+    Dummy Descriptor:
+    Dummy Descriptor:
+    Display Product Name: 'ZDZ0501'
+  Extension blocks: 1
+Checksum: 0x05
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 5
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 138 (993.486 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 7 (0.007 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  1080x1920  120.000445 Hz   9:16   238.081 kHz    323.790000 MHz (154 mm x 87 mm)
+                 Hfront   80 Hsync  44 Hback  156 Hpol P
+                 Vfront   48 Vsync   2 Vback   14 Vpol P
+Checksum: 0x49  Unused space in Extension Block: 94 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 68 9a 01 05 01 07 24 20 '........h.....$ '
+  19 22 01 04 b5 09 0f 78 0e ee 95 a3 54 4c 99 26 '.".....x....TL.&'
+  0f 4f 4f 00 00 00 01 01 01 01 01 01 01 01 01 01 '.OO.............'
+  01 01 01 01 01 01 7b 7e 38 18 41 80 40 70 50 2c '......{~8.A.@pP,'
+  02 0c 9a 57 00 00 00 1e 00 00 00 10 00 00 00 00 '...W............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 10 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc '................'
+  00 5a 44 5a 30 35 30 31 0a 20 20 20 20 20 01 05 '.ZDZ0501.     ..'
+Checksum: 0x05
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 5
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 138 (993.486 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 7 (0.007 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 3:  1080x1920  120.000445 Hz   9:16   238.081 kHz    323.790000 MHz (154 mm x 87 mm)
+                 Hfront   80 Hsync  44 Hback  156 Hpol P
+                 Vfront   48 Vsync   2 Vback   14 Vpol P
+Checksum: 0x49  Unused space in Extension Block: 94 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (9x15 is smaller than 10x10 cm).
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 154x87 mm vs display size 90x150 mm.
+Block 1, CTA-861 Extension Block:
+  There are more Native DTDs (5) than DTDs (3).
+  Detailed Timing Descriptor #2: Mismatch of image size 154x87 mm vs display size 90x150 mm.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #3: Mismatch of image size 154x87 mm vs display size 90x150 mm.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 154x87mm, which is larger than the display size 90.0x150.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

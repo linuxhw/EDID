@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff006b580f4153513030
-251a0104b53d23783a4e65a9554d9c26
-105054a10800714f8180a940d1c00101
-0101010101015651c0a080782e503020
-36002c041100001a000000ff00385233
-333932364f303051530a000000fc0064
-6973706c61790a2020202020000000fd
-003b3e1e6e19010a20202020202001b6
-020327f149101f041312110302012309
-7f0783010000e200c0e305c000e60605
-0169694ee200c0023a801871382d4058
-2c4500615c2100001e011d007251d01e
-206e285500615c2100001e0000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000072
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 6b 58 0f 41 53 51 30 30
+25 1a 01 04 b5 3d 23 78 3a 4e 65 a9 55 4d 9c 26
+10 50 54 a1 08 00 71 4f 81 80 a9 40 d1 c0 01 01
+01 01 01 01 01 01 56 51 c0 a0 80 78 2e 50 30 20
+36 00 2c 04 11 00 00 1a 00 00 00 ff 00 38 52 33
+33 39 32 36 4f 30 30 51 53 0a 00 00 00 fc 00 64
+69 73 70 6c 61 79 0a 20 20 20 20 20 00 00 00 fd
+00 3b 3e 1e 6e 19 01 0a 20 20 20 20 20 20 01 b6
+
+02 03 27 f1 49 10 1f 04 13 12 11 03 02 01 23 09
+7f 07 83 01 00 00 e2 00 c0 e3 05 c0 00 e6 06 05
+01 69 69 4e e2 00 c0 02 3a 80 18 71 38 2d 40 58
+2c 45 00 61 5c 21 00 00 1e 01 1d 00 72 51 d0 1e
+20 6e 28 55 00 61 5c 21 00 00 1e 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 72
 
 00 ff ff ff ff ff ff 00 6b 58 0f 41 53 51 30 30
 25 1a 01 04 b5 3d 23 78 3a 4e 65 a9 55 4d 9c 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ZZX
     Model: 16655
-    Serial Number: 808472915
+    Serial Number: ...
     Made in: week 37 of 2016
   Basic Display Parameters & Features:
     Digital display
@@ -74,7 +73,7 @@ Block 0, Base EDID:
     DTD 1:  2240x1400   59.998847 Hz  16:10    86.758 kHz    208.220000 MHz (300 mm x 260 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   37 Vpol N
-    Display Product Serial Number: '8R33926O00QS'
+    Display Product Serial Number: ...
     Display Product Name: 'display'
     Display Range Limits:
       Monitor ranges (Bare Limits): 59-62 Hz V, 30-110 kHz H, max dotclock 250 MHz
@@ -139,3 +138,125 @@ Block 1, CTA-861 Extension Block:
                  Hfront  110 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
 Checksum: 0x72  Unused space in Extension Block: 52 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 6b 58 0f 41 53 51 30 30 '........kX.ASQ00'
+  25 1a 01 04 b5 3d 23 78 3a 4e 65 a9 55 4d 9c 26 '%....=#x:Ne.UM.&'
+  10 50 54 a1 08 00 71 4f 81 80 a9 40 d1 c0 01 01 '.PT...qO...@....'
+  01 01 01 01 01 01 56 51 c0 a0 80 78 2e 50 30 20 '......VQ...x.P0 '
+  36 00 2c 04 11 00 00 1a 00 00 00 ff 00 38 52 33 '6.,..........8R3'
+  33 39 32 36 4f 30 30 51 53 0a 00 00 00 fc 00 64 '3926O00QS......d'
+  69 73 70 6c 61 79 0a 20 20 20 20 20 00 00 00 fd 'isplay.     ....'
+  00 3b 3e 1e 6e 19 01 0a 20 20 20 20 20 20 01 b6 '.;>.n...      ..'
+Checksum: 0xb6
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: IT video formats not supported
+    CE scan behavior: CE video formats not supported
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 105 (486.099 cd/m^2)
+    Desired content max frame-average luminance: 105 (486.099 cd/m^2)
+    Desired content min luminance: 78 (0.455 cd/m^2)
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: IT video formats not supported
+    CE scan behavior: CE video formats not supported
+  Detailed Timing Descriptors:
+    DTD 4:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (609 mm x 348 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 5:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (609 mm x 348 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0x72  Unused space in Extension Block: 52 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.000 Hz (Monitor: 59.000 - 62.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 300x260 mm vs display size 610x350 mm.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

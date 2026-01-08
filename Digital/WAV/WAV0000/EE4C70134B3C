@@ -1,0 +1,202 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5c 36 00 00 02 00 00 00
+0d 21 01 03 a2 1a 0c 96 0a ee 91 a3 54 4c 99 26
+0f 50 54 a1 08 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c4 22 40 40 61 d0 41 20 b4 20
+aa 00 ac 67 00 00 00 1e 00 00 40 e8 60 58 38 20
+a0 20 46 04 26 a5 10 00 00 1e 00 00 00 fc 00 57
+61 76 65 53 68 61 72 65 5f 31 30 34 00 00 00 fd
+00 38 4c 1e 51 0f 00 0a 20 20 20 20 20 20 01 ca
+
+02 03 1d f0 44 10 04 04 00 23 09 07 07 67 03 0c
+00 10 00 38 2d 83 01 00 00 e3 05 03 01 c4 22 40
+40 61 d0 41 20 b4 20 aa 00 ac 67 00 00 00 1e c4
+22 40 40 61 d0 41 20 b4 20 aa 00 ac 67 00 00 00
+1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 af
+
+00 ff ff ff ff ff ff 00 5c 36 00 00 02 00 00 00
+0d 21 01 03 a2 1a 0c 96 0a ee 91 a3 54 4c 99 26
+0f 50 54 a1 08 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c4 22 40 40 61 d0 41 20 b4 20
+aa 00 ac 67 00 00 00 1e 00 00 40 e8 60 58 38 20
+a0 20 46 04 26 a5 10 00 00 1e 00 00 00 fc 00 57
+61 76 65 53 68 61 72 65 5f 31 30 34 00 00 00 fd
+00 38 4c 1e 51 0f 00 0a 20 20 20 20 20 20 01 ca
+
+02 03 1d f0 44 10 04 04 00 23 09 07 07 67 03 0c
+00 10 00 38 2d 83 01 00 00 e3 05 03 01 c4 22 40
+40 61 d0 41 20 b4 20 aa 00 ac 67 00 00 00 1e c4
+22 40 40 61 d0 41 20 b4 20 aa 00 ac 67 00 00 00
+1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 af
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: WAV
+    Model: 0
+    Serial Number: ...
+    Made in: week 13 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 26 cm x 12 cm
+    Gamma: 2.50
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1600x720    59.049894 Hz  20:9     46.354 kHz     89.000000 MHz (172 mm x 103 mm)
+                 Hfront  180 Hsync  32 Hback  108 Hpol P
+                 Vfront   10 Vsync  10 Vback   45 Vpol P
+    Unknown Display Descriptor (0xe8): 40 e8 60 58 38 20 a0 20 46 04 26 a5 10 00 00 1e '@.`X8 . F.&.....'
+    Display Product Name: 'WaveShare_104'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-76 Hz V, 30-81 kHz H, max dotclock 150 MHz
+  Extension blocks: 1
+Checksum: 0xca
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    Gamut Boundary Description Metadata Profile P0
+  Detailed Timing Descriptors:
+    DTD 2:  1600x720    59.049894 Hz  20:9     46.354 kHz     89.000000 MHz (172 mm x 103 mm)
+                 Hfront  180 Hsync  32 Hback  108 Hpol P
+                 Vfront   10 Vsync  10 Vback   45 Vpol P
+    DTD 3:  1600x720    59.049894 Hz  20:9     46.354 kHz     89.000000 MHz (172 mm x 103 mm)
+                 Hfront  180 Hsync  32 Hback  108 Hpol P
+                 Vfront   10 Vsync  10 Vback   45 Vpol P
+Checksum: 0xaf  Unused space in Extension Block: 62 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5c 36 00 00 02 00 00 00 '........\6......'
+  0d 21 01 03 a2 1a 0c 96 0a ee 91 a3 54 4c 99 26 '.!..........TL.&'
+  0f 50 54 a1 08 00 81 80 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 c4 22 40 40 61 d0 41 20 b4 20 '......."@@a.A . '
+  aa 00 ac 67 00 00 00 1e 00 00 40 e8 60 58 38 20 '...g......@.`X8 '
+  a0 20 46 04 26 a5 10 00 00 1e 00 00 00 fc 00 57 '. F.&..........W'
+  61 76 65 53 68 61 72 65 5f 31 30 34 00 00 00 fd 'aveShare_104....'
+  00 38 4c 1e 51 0f 00 0a 20 20 20 20 20 20 01 ca '.8L.Q...      ..'
+Checksum: 0xca
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    Gamut Boundary Description Metadata Profile P0
+  Detailed Timing Descriptors:
+    DTD 4:  1600x720    59.049894 Hz  20:9     46.354 kHz     89.000000 MHz (172 mm x 103 mm)
+                 Hfront  180 Hsync  32 Hback  108 Hpol P
+                 Vfront   10 Vsync  10 Vback   45 Vpol P
+    DTD 5:  1600x720    59.049894 Hz  20:9     46.354 kHz     89.000000 MHz (172 mm x 103 mm)
+                 Hfront  180 Hsync  32 Hback  108 Hpol P
+                 Vfront   10 Vsync  10 Vback   45 Vpol P
+Checksum: 0xaf  Unused space in Extension Block: 62 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x22.
+  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
+  Detailed Timing Descriptor #1: Mismatch of image size 172x103 mm vs display size 260x120 mm.
+  Display Descriptor #2: Monitor descriptor block has byte 2 nonzero (0x40).
+  Display Descriptor #2: Monitor descriptor block has byte 4 nonzero (0x60).
+  Display Descriptor #2: Unknown Type 0xe8.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 4.
+  Detailed Timing Descriptor #2: Mismatch of image size 172x103 mm vs display size 260x120 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 172x103 mm vs display size 260x120 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #4: Mismatch of image size 172x103 mm vs display size 260x120 mm.
+  Detailed Timing Descriptor #5: Mismatch of image size 172x103 mm vs display size 260x120 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL
