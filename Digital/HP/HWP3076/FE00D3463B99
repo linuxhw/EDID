@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f0763001010101
-15170104a5331d7822e295a2554f9f26
-115054a10800d1c081c081809500a9c0
-b30001010101023a801871382d40582c
-4500fd1e1100001e000000fd00324c18
-5e11000a202020202020000000fc0048
-5020323366690a2020202020000000ff
-0033434d33323130354e440a2020002e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 76 30 01 01 01 01
+15 17 01 04 a5 33 1d 78 22 e2 95 a2 55 4f 9f 26
+11 50 54 a1 08 00 d1 c0 81 c0 81 80 95 00 a9 c0
+b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 32 4c 18
+5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 32 33 66 69 0a 20 20 20 20 20 00 00 00 ff
+00 33 43 4d 33 32 31 30 35 4e 44 0a 20 20 00 2e
 
 00 ff ff ff ff ff ff 00 22 f0 76 30 01 01 01 01
 15 17 01 04 a5 33 1d 78 22 e2 95 a2 55 4f 9f 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 12406
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 21 of 2013
   Basic Display Parameters & Features:
     Digital display
@@ -62,5 +60,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 24-94 kHz H, max dotclock 170 MHz
     Display Product Name: 'HP 23fi'
-    Display Product Serial Number: '3CM32105ND'
+    Display Product Serial Number: ...
 Checksum: 0x2e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 76 30 01 01 01 01 '........".v0....'
+  15 17 01 04 a5 33 1d 78 22 e2 95 a2 55 4f 9f 26 '.....3.x"...UO.&'
+  11 50 54 a1 08 00 d1 c0 81 c0 81 80 95 00 a9 c0 '.PT.............'
+  b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 32 4c 18 'E............2L.'
+  5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 '^...      .....H'
+  50 20 32 33 66 69 0a 20 20 20 20 20 00 00 00 ff 'P 23fi.     ....'
+  00 33 43 4d 33 32 31 30 35 4e 44 0a 20 20 00 2e '.3CM32105ND.  ..'
+Checksum: 0x2e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

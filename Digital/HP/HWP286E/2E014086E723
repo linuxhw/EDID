@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f06e2801010101
-0c16010380402878ea8d85ad4f35b125
-0e505400000001010101010101010101
-010101010101e26800a0a0402e603020
-360081902100001abc1b00a050201730
-3020360081902100001a000000fc0048
-50205a523330770a20202020000000ff
-00434e343231323038524d0a20200077
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 6e 28 01 01 01 01
+0c 16 01 03 80 40 28 78 ea 8d 85 ad 4f 35 b1 25
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 e2 68 00 a0 a0 40 2e 60 30 20
+36 00 81 90 21 00 00 1a bc 1b 00 a0 50 20 17 30
+30 20 36 00 81 90 21 00 00 1a 00 00 00 fc 00 48
+50 20 5a 52 33 30 77 0a 20 20 20 20 00 00 00 ff
+00 43 4e 34 32 31 32 30 38 52 4d 0a 20 20 00 77
 
 00 ff ff ff ff ff ff 00 22 f0 6e 28 01 01 01 01
 0c 16 01 03 80 40 28 78 ea 8d 85 ad 4f 35 b1 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 10350
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 12 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -51,7 +49,31 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   14 Vpol N
     Display Product Name: 'HP ZR30w'
-    Display Product Serial Number: 'CN421208RM'
+    Display Product Serial Number: ...
 Checksum: 0x77
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 6e 28 01 01 01 01 '........".n(....'
+  0c 16 01 03 80 40 28 78 ea 8d 85 ad 4f 35 b1 25 '.....@(x....O5.%'
+  0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 e2 68 00 a0 a0 40 2e 60 30 20 '.......h...@.`0 '
+  36 00 81 90 21 00 00 1a bc 1b 00 a0 50 20 17 30 '6...!.......P .0'
+  30 20 36 00 81 90 21 00 00 1a 00 00 00 fc 00 48 '0 6...!........H'
+  50 20 5a 52 33 30 77 0a 20 20 20 20 00 00 00 ff 'P ZR30w.    ....'
+  00 43 4e 34 32 31 32 30 38 52 4d 0a 20 20 00 77 '.CN421208RM.  .w'
+Checksum: 0x77
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

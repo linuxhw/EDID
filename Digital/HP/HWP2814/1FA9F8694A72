@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f0142800000080
-1b13010380342078eeb535a5564a9a25
-105054a56b8081409500a900b300a940
-8180d1000101283c80a070b023403020
-360006442100001a000000fd00305518
-5e11000a202020202020000000fc0048
-50207732343438680a202020000000ff
-00435a51393237304259500a20200083
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 14 28 00 00 00 80
+1b 13 01 03 80 34 20 78 ee b5 35 a5 56 4a 9a 25
+10 50 54 a5 6b 80 81 40 95 00 a9 00 b3 00 a9 40
+81 80 d1 00 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 06 44 21 00 00 1a 00 00 00 fd 00 30 55 18
+5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 77 32 34 34 38 68 0a 20 20 20 00 00 00 ff
+00 43 5a 51 39 32 37 30 42 59 50 0a 20 20 00 83
 
 00 ff ff ff ff ff ff 00 22 f0 14 28 00 00 00 80
 1b 13 01 03 80 34 20 78 ee b5 35 a5 56 4a 9a 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 10260
-    Serial Number: 2147483648
+    Serial Number: ...
     Made in: week 27 of 2009
   Basic Display Parameters & Features:
     Digital display
@@ -68,7 +66,33 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 48-85 Hz V, 24-94 kHz H, max dotclock 170 MHz
     Display Product Name: 'HP w2448h'
-    Display Product Serial Number: 'CZQ9270BYP'
+    Display Product Serial Number: ...
 Checksum: 0x83
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 14 28 00 00 00 80 '........"..(....'
+  1b 13 01 03 80 34 20 78 ee b5 35 a5 56 4a 9a 25 '.....4 x..5.VJ.%'
+  10 50 54 a5 6b 80 81 40 95 00 a9 00 b3 00 a9 40 '.PT.k..@.......@'
+  81 80 d1 00 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
+  36 00 06 44 21 00 00 1a 00 00 00 fd 00 30 55 18 '6..D!........0U.'
+  5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 '^...      .....H'
+  50 20 77 32 34 34 38 68 0a 20 20 20 00 00 00 ff 'P w2448h.   ....'
+  00 43 5a 51 39 32 37 30 42 59 50 0a 20 20 00 83 '.CZQ9270BYP.  ..'
+Checksum: 0x83
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

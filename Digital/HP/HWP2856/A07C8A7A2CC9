@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f0562801010101
-26150104a5221b8ce6f7c5a3554c9b25
-125054a1080081408180010101010101
-010101010101302a009851002a403070
-1300540e1100001e000000fd00324c18
-530e000a202020202020000000fc004c
-45313731310a202020202020000000ff
-00334351313338433039480a20200081
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 56 28 01 01 01 01
+26 15 01 04 a5 22 1b 8c e6 f7 c5 a3 55 4c 9b 25
+12 50 54 a1 08 00 81 40 81 80 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 54 0e 11 00 00 1e 00 00 00 fd 00 32 4c 18
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+45 31 37 31 31 0a 20 20 20 20 20 20 00 00 00 ff
+00 33 43 51 31 33 38 43 30 39 48 0a 20 20 00 81
 
 00 ff ff ff ff ff ff 00 22 f0 56 28 01 01 01 01
 26 15 01 04 a5 22 1b 8c e6 f7 c5 a3 55 4c 9b 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 10326
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 38 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -59,5 +57,38 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 24-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'LE1711'
-    Display Product Serial Number: '3CQ138C09H'
+    Display Product Serial Number: ...
 Checksum: 0x81
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 56 28 01 01 01 01 '........".V(....'
+  26 15 01 04 a5 22 1b 8c e6 f7 c5 a3 55 4c 9b 25 '&...."......UL.%'
+  12 50 54 a1 08 00 81 40 81 80 01 01 01 01 01 01 '.PT....@........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 54 0e 11 00 00 1e 00 00 00 fd 00 32 4c 18 '..T..........2L.'
+  53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'S...      .....L'
+  45 31 37 31 31 0a 20 20 20 20 20 20 00 00 00 ff 'E1711.      ....'
+  00 33 43 51 31 33 38 43 30 39 48 0a 20 20 00 81 '.3CQ138C09H.  ..'
+Checksum: 0x81
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

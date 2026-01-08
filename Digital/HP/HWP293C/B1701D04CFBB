@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f03c2901010101
-0116010380371f782ab695a5544ba226
-115054a1080081c081809500b300d1c0
-010101010101023a801871382d40582c
-450029372100001e000000fd00324c18
-5e11000a202020202020000000fc0048
-5020323531310a2020202020000000ff
-00434e4b323031303457310a20200039
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 3c 29 01 01 01 01
+01 16 01 03 80 37 1f 78 2a b6 95 a5 54 4b a2 26
+11 50 54 a1 08 00 81 c0 81 80 95 00 b3 00 d1 c0
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 29 37 21 00 00 1e 00 00 00 fd 00 32 4c 18
+5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 32 35 31 31 0a 20 20 20 20 20 00 00 00 ff
+00 43 4e 4b 32 30 31 30 34 57 31 0a 20 20 00 39
 
 00 ff ff ff ff ff ff 00 22 f0 3c 29 01 01 01 01
 01 16 01 03 80 37 1f 78 2a b6 95 a5 54 4b a2 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 10556
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 1 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -59,7 +57,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 24-94 kHz H, max dotclock 170 MHz
     Display Product Name: 'HP 2511'
-    Display Product Serial Number: 'CNK20104W1'
+    Display Product Serial Number: ...
 Checksum: 0x39
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 3c 29 01 01 01 01 '........".<)....'
+  01 16 01 03 80 37 1f 78 2a b6 95 a5 54 4b a2 26 '.....7.x*...TK.&'
+  11 50 54 a1 08 00 81 c0 81 80 95 00 b3 00 d1 c0 '.PT.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 29 37 21 00 00 1e 00 00 00 fd 00 32 4c 18 'E.)7!........2L.'
+  5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 '^...      .....H'
+  50 20 32 35 31 31 0a 20 20 20 20 20 00 00 00 ff 'P 2511.     ....'
+  00 43 4e 4b 32 30 31 30 34 57 31 0a 20 20 00 39 '.CNK20104W1.  .9'
+Checksum: 0x39
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
