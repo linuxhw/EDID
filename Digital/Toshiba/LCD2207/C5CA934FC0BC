@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003064072235373738
-2e120103901d12780a11a5975a528d24
-234e5700000001010101010101010101
-0101010101013a20007751201f304880
-36001fb41000001afe15009e51201f30
-488036001fb41000001a000000fe004d
-54323931803133334556330a000000fe
-00000000000000000001010a202000fb
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 64 07 22 35 37 37 38
+2e 12 01 03 90 1d 12 78 0a 11 a5 97 5a 52 8d 24
+23 4e 57 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3a 20 00 77 51 20 1f 30 48 80
+36 00 1f b4 10 00 00 1a fe 15 00 9e 51 20 1f 30
+48 80 36 00 1f b4 10 00 00 1a 00 00 00 fe 00 4d
+54 32 39 31 80 31 33 33 45 56 33 0a 00 00 00 fe
+00 00 00 00 00 00 00 00 00 01 01 0a 20 20 00 fb
 
 00 ff ff ff ff ff ff 00 30 64 07 22 35 37 37 38
 2e 12 01 03 90 1d 12 78 0a 11 a5 97 5a 52 8d 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LCD
     Model: 8711
-    Serial Number: 943142709
+    Serial Number: ...
     Made in: week 46 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -59,3 +57,31 @@ Block 0, Base EDID:
       LVDS Channels: 1
       Panel Self Test Present
 Checksum: 0xfb
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 64 07 22 35 37 37 38 '........0d."5778'
+  2e 12 01 03 90 1d 12 78 0a 11 a5 97 5a 52 8d 24 '.......x....ZR.$'
+  23 4e 57 00 00 00 01 01 01 01 01 01 01 01 01 01 '#NW.............'
+  01 01 01 01 01 01 3a 20 00 77 51 20 1f 30 48 80 '......: .wQ .0H.'
+  36 00 1f b4 10 00 00 1a fe 15 00 9e 51 20 1f 30 '6...........Q .0'
+  48 80 36 00 1f b4 10 00 00 1a 00 00 00 fe 00 4d 'H.6............M'
+  54 32 39 31 80 31 33 33 45 56 33 0a 00 00 00 fe 'T291.133EV3.....'
+  00 00 00 00 00 00 00 00 00 01 01 0a 20 20 00 fb '............  ..'
+Checksum: 0xfb
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

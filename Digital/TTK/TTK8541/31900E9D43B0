@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00528b418500000000
-03100101ae291f78eaa5d4a6544a9c23
-144b4fa108008180a940010101010101
-010101010101bc3440c860b032402040
-220098321100001a302a009851002a40
-3070130098321100001e000000fd0032
-501e7311000a202020202020000000fc
-0043434c323530690a20202020200080
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 52 8b 41 85 00 00 00 00
+03 10 01 01 ae 29 1f 78 ea a5 d4 a6 54 4a 9c 23
+14 4b 4f a1 08 00 81 80 a9 40 01 01 01 01 01 01
+01 01 01 01 01 01 bc 34 40 c8 60 b0 32 40 20 40
+22 00 98 32 11 00 00 1a 30 2a 00 98 51 00 2a 40
+30 70 13 00 98 32 11 00 00 1e 00 00 00 fd 00 32
+50 1e 73 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 43 4c 32 35 30 69 0a 20 20 20 20 20 00 80
 
 00 ff ff ff ff ff ff 00 52 8b 41 85 00 00 00 00
 03 10 01 01 ae 29 1f 78 ea a5 d4 a6 54 4a 9c 23
@@ -59,3 +57,34 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 50-80 Hz V, 30-115 kHz H, max dotclock 170 MHz
     Display Product Name: 'CCL250i'
 Checksum: 0x80
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 52 8b 41 85 00 00 00 00 '........R.A.....'
+  03 10 01 01 ae 29 1f 78 ea a5 d4 a6 54 4a 9c 23 '.....).x....TJ.#'
+  14 4b 4f a1 08 00 81 80 a9 40 01 01 01 01 01 01 '.KO......@......'
+  01 01 01 01 01 01 bc 34 40 c8 60 b0 32 40 20 40 '.......4@.`.2@ @'
+  22 00 98 32 11 00 00 1a 30 2a 00 98 51 00 2a 40 '"..2....0*..Q.*@'
+  30 70 13 00 98 32 11 00 00 1e 00 00 00 fd 00 32 '0p...2.........2'
+  50 1e 73 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'P.s...      ....'
+  00 43 43 4c 32 35 30 69 0a 20 20 20 20 20 00 80 '.CCL250i.     ..'
+Checksum: 0x80
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x2e.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

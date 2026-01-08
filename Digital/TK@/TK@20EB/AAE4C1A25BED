@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff005160eb2000000000
-1f1c0104a51a12780257f5a4564e9e27
-0d505400000001010101010101010101
-0101010101015898b8a0b0d039703020
-3a0004ad100000180000001000706a82
-3020350025a510000018000000fe0074
-69616e6d610a202020202020000000fe
-00593135365a414e30322e30200a00e6
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 51 60 eb 20 00 00 00 00
+1f 1c 01 04 a5 1a 12 78 02 57 f5 a4 56 4e 9e 27
+0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 58 98 b8 a0 b0 d0 39 70 30 20
+3a 00 04 ad 10 00 00 18 00 00 00 10 00 70 6a 82
+30 20 35 00 25 a5 10 00 00 18 00 00 00 fe 00 74
+69 61 6e 6d 61 0a 20 20 20 20 20 20 00 00 00 fe
+00 59 31 35 36 5a 41 4e 30 32 2e 30 20 0a 00 e6
 
 00 ff ff ff ff ff ff 00 51 60 eb 20 00 00 00 00
 1f 1c 01 04 a5 1a 12 78 02 57 f5 a4 56 4e 9e 27
@@ -51,3 +49,36 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'tianma'
     Alphanumeric Data String: 'Y156ZAN02.0 '
 Checksum: 0xe6
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 51 60 eb 20 00 00 00 00 '........Q`. ....'
+  1f 1c 01 04 a5 1a 12 78 02 57 f5 a4 56 4e 9e 27 '.......x.W..VN.''
+  0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 58 98 b8 a0 b0 d0 39 70 30 20 '......X.....9p0 '
+  3a 00 04 ad 10 00 00 18 00 00 00 10 00 70 6a 82 ':............pj.'
+  30 20 35 00 25 a5 10 00 00 18 00 00 00 fe 00 74 '0 5.%..........t'
+  69 61 6e 6d 61 0a 20 20 20 20 20 20 00 00 00 fe 'ianma.      ....'
+  00 59 31 35 36 5a 41 4e 30 32 2e 30 20 0a 00 e6 '.Y156ZAN02.0 ...'
+Checksum: 0xe6
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: Manufacturer name field contains garbage.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

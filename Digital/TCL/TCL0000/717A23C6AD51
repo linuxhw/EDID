@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00506c000000000000
-001e0103807a44780a8a5da455529f25
-0e474aadcf00714f8140818081009500
-b300d1c081c004740030f2705a80b058
-8a0020c23100001e023a801871382d40
-582c450020c23100001e000000fc0035
-35533430350a202020202020000000fd
-00174c0f5122000a20202020202001e6
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 50 6c 00 00 00 00 00 00
+00 1e 01 03 80 7a 44 78 0a 8a 5d a4 55 52 9f 25
+0e 47 4a ad cf 00 71 4f 81 40 81 80 81 00 95 00
+b3 00 d1 c0 81 c0 04 74 00 30 f2 70 5a 80 b0 58
+8a 00 20 c2 31 00 00 1e 02 3a 80 18 71 38 2d 40
+58 2c 45 00 20 c2 31 00 00 1e 00 00 00 fc 00 35
+35 53 34 30 35 0a 20 20 20 20 20 20 00 00 00 fd
+00 17 4c 0f 51 22 00 0a 20 20 20 20 20 20 01 e6
 
 00 ff ff ff ff ff ff 00 50 6c 00 00 00 00 00 00
 00 1e 01 03 80 7a 44 78 0a 8a 5d a4 55 52 9f 25
@@ -72,3 +70,28 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 23-76 Hz V, 15-81 kHz H, max dotclock 340 MHz
   Extension blocks: 1
 Checksum: 0xe6
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 50 6c 00 00 00 00 00 00 '........Pl......'
+  00 1e 01 03 80 7a 44 78 0a 8a 5d a4 55 52 9f 25 '.....zDx..].UR.%'
+  0e 47 4a ad cf 00 71 4f 81 40 81 80 81 00 95 00 '.GJ...qO.@......'
+  b3 00 d1 c0 81 c0 04 74 00 30 f2 70 5a 80 b0 58 '.......t.0.pZ..X'
+  8a 00 20 c2 31 00 00 1e 02 3a 80 18 71 38 2d 40 '.. .1....:..q8-@'
+  58 2c 45 00 20 c2 31 00 00 1e 00 00 00 fc 00 35 'X,E. .1........5'
+  35 53 34 30 35 0a 20 20 20 20 20 20 00 00 00 fd '5S405.      ....'
+  00 17 4c 0f 51 22 00 0a 20 20 20 20 20 20 01 e6 '..L.Q"..      ..'
+Checksum: 0xe6
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 800x450 mm vs display size 1220x680 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 800x450 mm vs display size 1220x680 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+
+EDID conformity: FAIL

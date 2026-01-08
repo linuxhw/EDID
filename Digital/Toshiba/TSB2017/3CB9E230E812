@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff005262172001010101
-011d010380a05a780ed67da7544e9c26
-11474aa3080081c08100810f81408180
-9500b300d1c004740030f2705a80b058
-8a0040846300001e023a801871382d40
-582c450040846300001e000000fc0054
-4f53484942412d54560a2020000000fd
-00174c0f5222000a20202020202001d5
-020340f14c902022043c3e0503020706
-0129097f071507505706006d030c0020
-003844200060010304e20059e3050301
-e30e6166eb0146d000260d3e515999aa
-0e1f008051001e3040803700dc845300
-001c011d007251d01e206e2855004084
-6300001e8c0ad08a20e02d10103e9600
-40b06400001800000000000000000008
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 52 62 17 20 01 01 01 01
+01 1d 01 03 80 a0 5a 78 0e d6 7d a7 54 4e 9c 26
+11 47 4a a3 08 00 81 c0 81 00 81 0f 81 40 81 80
+95 00 b3 00 d1 c0 04 74 00 30 f2 70 5a 80 b0 58
+8a 00 40 84 63 00 00 1e 02 3a 80 18 71 38 2d 40
+58 2c 45 00 40 84 63 00 00 1e 00 00 00 fc 00 54
+4f 53 48 49 42 41 2d 54 56 0a 20 20 00 00 00 fd
+00 17 4c 0f 52 22 00 0a 20 20 20 20 20 20 01 d5
+
+02 03 40 f1 4c 90 20 22 04 3c 3e 05 03 02 07 06
+01 29 09 7f 07 15 07 50 57 06 00 6d 03 0c 00 20
+00 38 44 20 00 60 01 03 04 e2 00 59 e3 05 03 01
+e3 0e 61 66 eb 01 46 d0 00 26 0d 3e 51 59 99 aa
+0e 1f 00 80 51 00 1e 30 40 80 37 00 dc 84 53 00
+00 1c 01 1d 00 72 51 d0 1e 20 6e 28 55 00 40 84
+63 00 00 1e 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00
+40 b0 64 00 00 18 00 00 00 00 00 00 00 00 00 08
 
 00 ff ff ff ff ff ff 00 52 62 17 20 01 01 01 01
 01 1d 01 03 80 a0 5a 78 0e d6 7d a7 54 4e 9c 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: TSB
     Model: 8215
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 1 of 2019
   Basic Display Parameters & Features:
     Digital display
@@ -167,3 +166,143 @@ Block 1, CTA-861 Extension Block:
                  Hfront   16 Hsync  62 Hback   60 Hpol N
                  Vfront    9 Vsync   6 Vback   30 Vpol N
 Checksum: 0x08  Unused space in Extension Block: 9 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 52 62 17 20 01 01 01 01 '........Rb. ....'
+  01 1d 01 03 80 a0 5a 78 0e d6 7d a7 54 4e 9c 26 '......Zx..}.TN.&'
+  11 47 4a a3 08 00 81 c0 81 00 81 0f 81 40 81 80 '.GJ..........@..'
+  95 00 b3 00 d1 c0 04 74 00 30 f2 70 5a 80 b0 58 '.......t.0.pZ..X'
+  8a 00 40 84 63 00 00 1e 02 3a 80 18 71 38 2d 40 '..@.c....:..q8-@'
+  58 2c 45 00 40 84 63 00 00 1e 00 00 00 fc 00 54 'X,E.@.c........T'
+  4f 53 48 49 42 41 2d 54 56 0a 20 20 00 00 00 fd 'OSHIBA-TV.  ....'
+  00 17 4c 0f 52 22 00 0a 20 20 20 20 20 20 01 d5 '..L.R"..      ..'
+Checksum: 0xd5
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  60:  1280x720    24.000000 Hz  16:9     18.000 kHz     59.400000 MHz
+    VIC  62:  1280x720    30.000000 Hz  16:9     22.500 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 640 kb/s
+    Enhanced AC-3 (DD+):
+      Max channels: 8
+      Supported sample rates (kHz): 48 44.1
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 340 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+        HDMI VIC 4:  4096x2160   24.000000 Hz 256:135   54.000 kHz    297.000000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Overscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Overscanned
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    Gamut Boundary Description Metadata Profile P0
+  YCbCr 4:2:0 Video Data Block:
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
+  Vendor-Specific Video Data Block (Dolby), OUI 00-D0-46:
+    Version: 1 (12 bytes)
+    Supports 2160p60
+    Supports global dimming
+    DM Version: 3.x
+    Colorimetry: ITU-R BT.709
+    Low Latency: Standard + Low Latency
+    Target Min Luminance: 0.05958212 cd/m^2
+    Target Max Luminance: 400 cd/m^2
+    Unique Rx, Ry: 0.70703125, 0.29296875
+    Unique Gx, Gy: 0.17187500, 0.79687500
+    Unique Bx, By: 0.13281250, 0.04687500
+  Detailed Timing Descriptors:
+    DTD 6:  1280x768    59.870228 Hz   5:3     47.776 kHz     79.500000 MHz (1500 mm x 900 mm)
+                 Hfront   64 Hsync 128 Hback  192 Hpol N
+                 Vfront    3 Vsync   7 Vback   20 Vpol P
+    DTD 7:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (1600 mm x 900 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 8:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (1600 mm x 1200 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x08  Unused space in Extension Block: 9 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #5: Mismatch of image size 1600x1200 mm vs display size 1600x900 mm.
+  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 32.
+  Video Data Block: Duplicate VIC 34.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 60.
+  Video Data Block: Duplicate VIC 62.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 7.
+  Video Data Block: Duplicate VIC 6.
+  Video Data Block: Duplicate VIC 1.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  YCbCr 4:2:0 Video Data Block: Duplicate YCbCr 4:2:0 VIC 97.
+  YCbCr 4:2:0 Video Data Block: Duplicate YCbCr 4:2:0 VIC 102.
+  Detailed Timing Descriptor #8: Mismatch of image size 1600x1200 mm vs display size 1600x900 mm.
+  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+EDID:
+  Base EDID: The DTD max image size is 1600x1200mm, which is larger than the display size 1600.0x900.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

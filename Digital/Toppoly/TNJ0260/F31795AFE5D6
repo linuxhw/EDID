@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0051ca6002e2020000
-17110103801e13780a93e59257508d25
-1e4f5400000001010101010101010101
-010101010101bc1b00a0502017303020
-36002fbe10000018000000fe00544431
-343154484341310a2020000000fe0054
-4f50504f4c590a2020202020000000fe
-00544431343154484341310a202000dc
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 51 ca 60 02 e2 02 00 00
+17 11 01 03 80 1e 13 78 0a 93 e5 92 57 50 8d 25
+1e 4f 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 1b 00 a0 50 20 17 30 30 20
+36 00 2f be 10 00 00 18 00 00 00 fe 00 54 44 31
+34 31 54 48 43 41 31 0a 20 20 00 00 00 fe 00 54
+4f 50 50 4f 4c 59 0a 20 20 20 20 20 00 00 00 fe
+00 54 44 31 34 31 54 48 43 41 31 0a 20 20 00 dc
 
 00 ff ff ff ff ff ff 00 51 ca 60 02 e2 02 00 00
 17 11 01 03 80 1e 13 78 0a 93 e5 92 57 50 8d 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: TNJ
     Model: 608
-    Serial Number: 738
+    Serial Number: ...
     Made in: week 23 of 2007
   Basic Display Parameters & Features:
     Digital display
@@ -50,3 +48,35 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'TOPPOLY'
     Alphanumeric Data String: 'TD141THCA1'
 Checksum: 0xdc
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 51 ca 60 02 e2 02 00 00 '........Q.`.....'
+  17 11 01 03 80 1e 13 78 0a 93 e5 92 57 50 8d 25 '.......x....WP.%'
+  1e 4f 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.OT.............'
+  01 01 01 01 01 01 bc 1b 00 a0 50 20 17 30 30 20 '..........P .00 '
+  36 00 2f be 10 00 00 18 00 00 00 fe 00 54 44 31 '6./..........TD1'
+  34 31 54 48 43 41 31 0a 20 20 00 00 00 fe 00 54 '41THCA1.  .....T'
+  4f 50 50 4f 4c 59 0a 20 20 20 20 20 00 00 00 fe 'OPPOLY.     ....'
+  00 54 44 31 34 31 54 48 43 41 31 0a 20 20 00 dc '.TD141THCA1.  ..'
+Checksum: 0xdc
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x1b.
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

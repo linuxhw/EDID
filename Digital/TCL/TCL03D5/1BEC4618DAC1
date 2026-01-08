@@ -1,0 +1,192 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 50 6c d5 03 12 00 00 00
+07 1e 01 03 80 0c 07 78 0e ee 95 a3 54 4c 99 26
+0f 4f 4f 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b0 72 80 18 71 38 20 40 58 2c
+02 04 80 38 74 00 00 1e b0 72 80 18 71 38 20 40
+58 2c 02 04 80 38 74 00 00 1e 00 00 00 fd 00 37
+41 32 46 1e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 6d 61 72 74 47 6c 61 73 73 65 73 0a 01 f9
+
+02 03 17 f1 41 90 23 09 04 01 83 01 00 00 65 03
+0c 00 00 00 e2 00 0f 4e 39 80 18 71 38 20 40 58
+2c 02 04 80 38 74 00 00 1e 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0c
+
+00 ff ff ff ff ff ff 00 50 6c d5 03 12 00 00 00
+07 1e 01 03 80 0c 07 78 0e ee 95 a3 54 4c 99 26
+0f 4f 4f 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b0 72 80 18 71 38 20 40 58 2c
+02 04 80 38 74 00 00 1e b0 72 80 18 71 38 20 40
+58 2c 02 04 80 38 74 00 00 1e 00 00 00 fd 00 37
+41 32 46 1e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 6d 61 72 74 47 6c 61 73 73 65 73 0a 01 f9
+
+02 03 17 f1 41 90 23 09 04 01 83 01 00 00 65 03
+0c 00 00 00 e2 00 0f 4e 39 80 18 71 38 20 40 58
+2c 02 04 80 38 74 00 00 1e 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: TCL
+    Model: 981
+    Serial Number: ...
+    Made in: week 7 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 12 cm x 7 cm
+    Gamma: 2.20
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3095, 0.3095
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080  120.013080 Hz  16:9    133.455 kHz    293.600000 MHz (1920 mm x 1080 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront   16 Vsync   2 Vback   14 Vpol P
+    DTD 2:  1920x1080  120.013080 Hz  16:9    133.455 kHz    293.600000 MHz (1920 mm x 1080 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront   16 Vsync   2 Vback   14 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 55-65 Hz V, 50-70 kHz H, max dotclock 300 MHz
+    Display Product Name: 'SmartGlasses'
+  Extension blocks: 1
+Checksum: 0xf9
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 0.0.0.0
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   59.965664 Hz  16:9     66.682 kHz    146.700000 MHz (1920 mm x 1080 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront   16 Vsync   2 Vback   14 Vpol P
+Checksum: 0x0c  Unused space in Extension Block: 86 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 50 6c d5 03 12 00 00 00 '........Pl......'
+  07 1e 01 03 80 0c 07 78 0e ee 95 a3 54 4c 99 26 '.......x....TL.&'
+  0f 4f 4f 00 00 00 01 01 01 01 01 01 01 01 01 01 '.OO.............'
+  01 01 01 01 01 01 b0 72 80 18 71 38 20 40 58 2c '.......r..q8 @X,'
+  02 04 80 38 74 00 00 1e b0 72 80 18 71 38 20 40 '...8t....r..q8 @'
+  58 2c 02 04 80 38 74 00 00 1e 00 00 00 fd 00 37 'X,...8t........7'
+  41 32 46 1e 00 0a 20 20 20 20 20 20 00 00 00 fc 'A2F...      ....'
+  00 53 6d 61 72 74 47 6c 61 73 73 65 73 0a 01 f9 '.SmartGlasses...'
+Checksum: 0xf9
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 0.0.0.0
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 4:  1920x1080   59.965664 Hz  16:9     66.682 kHz    146.700000 MHz (1920 mm x 1080 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront   16 Vsync   2 Vback   14 Vpol P
+Checksum: 0x0c  Unused space in Extension Block: 86 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (12x7 is smaller than 10x10 cm).
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 1920x1080 mm vs display size 120x70 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 1920x1080 mm vs display size 120x70 mm.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #3: Mismatch of image size 1920x1080 mm vs display size 120x70 mm.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #4: Mismatch of image size 1920x1080 mm vs display size 120x70 mm.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.966 - 120.013 Hz (Monitor: 55.000 - 65.000 Hz)
+    Horizontal Freq: 66.681 - 133.454 kHz (Monitor: 50.000 - 70.000 kHz)
+  Base EDID: The DTD max image size is 1920x1080mm, which is larger than the display size 120.0x70.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

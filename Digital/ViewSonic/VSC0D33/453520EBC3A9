@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff005a63330d01010101
-091b0104a53c22783f53a5a756529c26
-115054bfef80b300a940a9c095009040
-8180814081c0023a801871382d40582c
-450056502100001e2a4480a070382740
-3020350056502100001a000000fd0018
-4c0f5612041140f0f028f03c000000fc
-005647323735332053657269657301d7
-020322f1559005040302070609080f0e
-1f1413121116151e1d0123091f018301
-0000023a801871382d40582c45005650
-2100001e011d007251d01e206e285500
-56502100001e8c0ad08a20e02d10103e
-9600565021000018011d8018711c1620
-582c250056502100009e023a80d07238
-2d40102c458056502100001e000000c3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5a 63 33 0d 01 01 01 01
+09 1b 01 04 a5 3c 22 78 3f 53 a5 a7 56 52 9c 26
+11 50 54 bf ef 80 b3 00 a9 40 a9 c0 95 00 90 40
+81 80 81 40 81 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 2a 44 80 a0 70 38 27 40
+30 20 35 00 56 50 21 00 00 1a 00 00 00 fd 00 18
+4c 0f 56 12 04 11 40 f0 f0 28 f0 3c 00 00 00 fc
+00 56 47 32 37 35 33 20 53 65 72 69 65 73 01 d7
+
+02 03 22 f1 55 90 05 04 03 02 07 06 09 08 0f 0e
+1f 14 13 12 11 16 15 1e 1d 01 23 09 1f 01 83 01
+00 00 02 3a 80 18 71 38 2d 40 58 2c 45 00 56 50
+21 00 00 1e 01 1d 00 72 51 d0 1e 20 6e 28 55 00
+56 50 21 00 00 1e 8c 0a d0 8a 20 e0 2d 10 10 3e
+96 00 56 50 21 00 00 18 01 1d 80 18 71 1c 16 20
+58 2c 25 00 56 50 21 00 00 9e 02 3a 80 d0 72 38
+2d 40 10 2c 45 80 56 50 21 00 00 1e 00 00 00 c3
 
 00 ff ff ff ff ff ff 00 5a 63 33 0d 01 01 01 01
 09 1b 01 04 a5 3c 22 78 3f 53 a5 a7 56 52 9c 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: VSC
     Model: 3379
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 9 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -88,12 +87,12 @@ Block 0, Base EDID:
     DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
     DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-    DTD 2:  1920x1080   74.972503 Hz  16:9     83.894 kHz    174.500000 MHz (598 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   31 Vpol N
+    DTD  1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD  2:  1920x1080   74.972503 Hz  16:9     83.894 kHz    174.500000 MHz (598 mm x 336 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync   5 Vback   31 Vpol N
     Display Range Limits:
       Monitor ranges (CVT): 24-76 Hz V, 15-86 kHz H, max dotclock 180 MHz
       CVT version 1.1
@@ -151,20 +150,134 @@ Block 1, CTA-861 Extension Block:
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Detailed Timing Descriptors:
-    DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (598 mm x 336 mm)
-                 Hfront  110 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (598 mm x 336 mm)
-                 Hfront   16 Hsync  62 Hback   60 Hpol N
-                 Vfront    9 Vsync   6 Vback   30 Vpol N
-    DTD 6:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (598 mm x 336 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
-                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-    DTD 7:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (598 mm x 336 mm)
-                 Hfront  528 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD  3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD  4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (598 mm x 336 mm)
+                  Hfront  110 Hsync  40 Hback  220 Hpol P
+                  Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD  5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (598 mm x 336 mm)
+                  Hfront   16 Hsync  62 Hback   60 Hpol N
+                  Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD  6:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (598 mm x 336 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD  7:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (598 mm x 336 mm)
+                  Hfront  528 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
 Checksum: 0xc3  Unused space in Extension Block: 3 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5a 63 33 0d 01 01 01 01 '........Zc3.....'
+  09 1b 01 04 a5 3c 22 78 3f 53 a5 a7 56 52 9c 26 '.....<"x?S..VR.&'
+  11 50 54 bf ef 80 b3 00 a9 40 a9 c0 95 00 90 40 '.PT......@.....@'
+  81 80 81 40 81 c0 02 3a 80 18 71 38 2d 40 58 2c '...@...:..q8-@X,'
+  45 00 56 50 21 00 00 1e 2a 44 80 a0 70 38 27 40 'E.VP!...*D..p8'@'
+  30 20 35 00 56 50 21 00 00 1a 00 00 00 fd 00 18 '0 5.VP!.........'
+  4c 0f 56 12 04 11 40 f0 f0 28 f0 3c 00 00 00 fc 'L.V...@..(.<....'
+  00 56 47 32 37 35 33 20 53 65 72 69 65 73 01 d7 '.VG2753 Series..'
+Checksum: 0xd7
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   9:  1440x240    60.054449 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC   8:  1440x240    60.054449 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC  15:  1440x480    59.940060 Hz  16:9     31.469 kHz     54.000000 MHz
+    VIC  14:  1440x480    59.940060 Hz   4:3     31.469 kHz     54.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC  30:  1440x576    50.000000 Hz  16:9     31.250 kHz     54.000000 MHz
+    VIC  29:  1440x576    50.000000 Hz   4:3     31.250 kHz     54.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD  8:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD  9:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (598 mm x 336 mm)
+                  Hfront  110 Hsync  40 Hback  220 Hpol P
+                  Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 10:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (598 mm x 336 mm)
+                  Hfront   16 Hsync  62 Hback   60 Hpol N
+                  Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 11:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (598 mm x 336 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 12:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (598 mm x 336 mm)
+                  Hfront  528 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0xc3  Unused space in Extension Block: 3 bytes
+
+----------------
+
+Warnings:
+
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 7.
+  Video Data Block: Duplicate VIC 6.
+  Video Data Block: Duplicate VIC 9.
+  Video Data Block: Duplicate VIC 8.
+  Video Data Block: Duplicate VIC 15.
+  Video Data Block: Duplicate VIC 14.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 22.
+  Video Data Block: Duplicate VIC 21.
+  Video Data Block: Duplicate VIC 30.
+  Video Data Block: Duplicate VIC 29.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL
