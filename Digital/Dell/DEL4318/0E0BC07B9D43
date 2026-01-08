@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0010ac18434c333335
-32210103805d27782ad9a5b04f3db124
-0e5054a54b00714f81008180a940b300
-d1c0d100e1c0d44600a0a0381f403020
-3a00a1883100001a000000ff00394e50
-534350330a2020202020000000fc0044
-454c4c20553430323551570a000000fd
-00307819ff96000a2020202020200144
-020341f1e2780252c17e7b6661605f5e
-5d101f04131211030201230907078301
-00006d030c0010003844200060010203
-6dd85dc4017880630e3078836414e20f
-3b50d000a0f0703e8030203500a18831
-00001a565e00a0a0a0295030203500a1
-883100001a0000000000000000000000
-000000000000000000000000000000e9
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 18 43 4c 33 33 35
+32 21 01 03 80 5d 27 78 2a d9 a5 b0 4f 3d b1 24
+0e 50 54 a5 4b 00 71 4f 81 00 81 80 a9 40 b3 00
+d1 c0 d1 00 e1 c0 d4 46 00 a0 a0 38 1f 40 30 20
+3a 00 a1 88 31 00 00 1a 00 00 00 ff 00 39 4e 50
+53 43 50 33 0a 20 20 20 20 20 00 00 00 fc 00 44
+45 4c 4c 20 55 34 30 32 35 51 57 0a 00 00 00 fd
+00 30 78 19 ff 96 00 0a 20 20 20 20 20 20 01 44
+
+02 03 41 f1 e2 78 02 52 c1 7e 7b 66 61 60 5f 5e
+5d 10 1f 04 13 12 11 03 02 01 23 09 07 07 83 01
+00 00 6d 03 0c 00 10 00 38 44 20 00 60 01 02 03
+6d d8 5d c4 01 78 80 63 0e 30 78 83 64 14 e2 0f
+3b 50 d0 00 a0 f0 70 3e 80 30 20 35 00 a1 88 31
+00 00 1a 56 5e 00 a0 a0 a0 29 50 30 20 35 00 a1
+88 31 00 00 1a 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 e9
 
 00 ff ff ff ff ff ff 00 10 ac 18 43 4c 33 33 35
 32 21 01 03 80 5d 27 78 2a d9 a5 b0 4f 3d b1 24
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 17176
-    Serial Number: 892547916
+    Serial Number: ...
     Made in: week 50 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -80,7 +79,7 @@ Block 0, Base EDID:
     DTD 1:  2560x1080   60.001588 Hz  64:27    66.662 kHz    181.320000 MHz (929 mm x 392 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   18 Vpol N
-    Display Product Serial Number: '9NPSCP3'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL U4025QW'
     Display Range Limits:
       Monitor ranges (GTF): 48-120 Hz V, 25-255 kHz H, max dotclock 1500 MHz
@@ -167,3 +166,149 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
 Checksum: 0xe9  Unused space in Extension Block: 26 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 18 43 4c 33 33 35 '...........CL335'
+  32 21 01 03 80 5d 27 78 2a d9 a5 b0 4f 3d b1 24 '2!...]'x*...O=.$'
+  0e 50 54 a5 4b 00 71 4f 81 00 81 80 a9 40 b3 00 '.PT.K.qO.....@..'
+  d1 c0 d1 00 e1 c0 d4 46 00 a0 a0 38 1f 40 30 20 '.......F...8.@0 '
+  3a 00 a1 88 31 00 00 1a 00 00 00 ff 00 39 4e 50 ':...1........9NP'
+  53 43 50 33 0a 20 20 20 20 20 00 00 00 fc 00 44 'SCP3.     .....D'
+  45 4c 4c 20 55 34 30 32 35 51 57 0a 00 00 00 fd 'ELL U4025QW.....'
+  00 30 78 19 ff 96 00 0a 20 20 20 20 20 20 01 44 '.0x.....      .D'
+Checksum: 0x44
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  HDMI Forum EDID Extension Override Data Block:
+    EDID Extension Block Count: 2
+  Video Data Block:
+    VIC 193:  5120x2160  120.000000 Hz  64:27   270.000 kHz   1485.000000 MHz
+    VIC 126:  5120x2160   60.000000 Hz  64:27   135.000 kHz    742.500000 MHz
+    VIC 123:  5120x2160   30.000000 Hz  64:27    66.000 kHz    396.000000 MHz
+    VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 340 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    Max Fixed Rate Link: 3 and 6 Gbps per lane on 3 lanes, 6, 8, 10 and 12 Gbps on 4 lanes
+    Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+    Supports negative Mvrr values
+    Supports Fast Vactive
+    Supports Auto Low-Latency Mode
+    VRRmin: 48 Hz
+    VRRmax: 120 Hz
+    Supports VESA DSC 1.2a compression
+    Supports 12 bpc Compressed Video Transport
+    Supports 10 bpc Compressed Video Transport
+    DSC Max Slices: up to 8 slices and up to (340 MHz/Ksliceadjust) pixel clock per slice
+    DSC Max Fixed Rate Link: 3 and 6 Gbps per lane on 3 lanes, 6, 8, 10 and 12 Gbps on 4 lanes
+    Maximum number of bytes in a line of chunks: 21504
+  YCbCr 4:2:0 Capability Map Data Block:
+    VIC 193:  5120x2160  120.000000 Hz  64:27   270.000 kHz   1485.000000 MHz
+    VIC 126:  5120x2160   60.000000 Hz  64:27   135.000 kHz    742.500000 MHz
+    VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 4:  3840x2160   60.000000 Hz  16:9    133.320 kHz    533.280000 MHz (929 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD 5:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (929 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+Checksum: 0xe9  Unused space in Extension Block: 26 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  CTA-861: Native progressive resolution of 2560x1080 is smaller than the max preferred progressive resolution 5120x2160.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  HDMI Forum EDID Extension Override Data Block: Only one instance of this Data Block is allowed.
+  HDMI Forum EDID Extension Override Data Block: Data Block can only be present in Block 1.
+  HDMI Forum EDID Extension Override Data Block: Data Block starts at a wrong offset.
+  Video Data Block: Duplicate VIC 193.
+  Video Data Block: Duplicate VIC 126.
+  Video Data Block: Duplicate VIC 123.
+  Video Data Block: Duplicate VIC 102.
+  Video Data Block: Duplicate VIC 97.
+  Video Data Block: Duplicate VIC 96.
+  Video Data Block: Duplicate VIC 95.
+  Video Data Block: Duplicate VIC 94.
+  Video Data Block: Duplicate VIC 93.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
+  YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 48.000 - 120.000 Hz)
+  Base EDID: HDMI Forum EDID Extension Override Data Block specified 2 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

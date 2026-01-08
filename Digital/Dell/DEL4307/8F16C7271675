@@ -1,31 +1,31 @@
-
-EDID (hex):
-00ffffffffffff0010ac07434c333634
-24220104b55d27783bd9a5b04f3db124
-0e5054a54b00714f81008180a940b300
-d1c0d100e1c0d44600a0a0381f403020
-3a00a1883100001a000000ff00365137
-534433340a2020202020000000fc0044
-454c4c20553430323551570a000000fd
-0c3078191996010a2020202020200225
-02032af152c17e7b6661605f5e5d101f
-041312110302012309070783010000e3
-05c000e606050173732f50d000a0f070
-3e8030203500a1883100001a565e00a0
-a0a0295030203500a1883100001a0000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000da
-701279030001000c4d24500f00147008
-1078899903013cf8120186ff139f002f
-801f006f083d000200090013440206ff
-137b01a38057006f0859000780090091
-870006ff139f002f801f006f081e0002
-00090000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000004c90
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 07 43 4c 33 36 34
+24 22 01 04 b5 5d 27 78 3b d9 a5 b0 4f 3d b1 24
+0e 50 54 a5 4b 00 71 4f 81 00 81 80 a9 40 b3 00
+d1 c0 d1 00 e1 c0 d4 46 00 a0 a0 38 1f 40 30 20
+3a 00 a1 88 31 00 00 1a 00 00 00 ff 00 36 51 37
+53 44 33 34 0a 20 20 20 20 20 00 00 00 fc 00 44
+45 4c 4c 20 55 34 30 32 35 51 57 0a 00 00 00 fd
+0c 30 78 19 19 96 01 0a 20 20 20 20 20 20 02 25
+
+02 03 2a f1 52 c1 7e 7b 66 61 60 5f 5e 5d 10 1f
+04 13 12 11 03 02 01 23 09 07 07 83 01 00 00 e3
+05 c0 00 e6 06 05 01 73 73 2f 50 d0 00 a0 f0 70
+3e 80 30 20 35 00 a1 88 31 00 00 1a 56 5e 00 a0
+a0 a0 29 50 30 20 35 00 a1 88 31 00 00 1a 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 da
+
+70 12 79 03 00 01 00 0c 4d 24 50 0f 00 14 70 08
+10 78 89 99 03 01 3c f8 12 01 86 ff 13 9f 00 2f
+80 1f 00 6f 08 3d 00 02 00 09 00 13 44 02 06 ff
+13 7b 01 a3 80 57 00 6f 08 59 00 07 80 09 00 91
+87 00 06 ff 13 9f 00 2f 80 1f 00 6f 08 1e 00 02
+00 09 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 4c 90
 
 00 ff ff ff ff ff ff 00 10 ac 07 43 4c 33 36 34
 24 22 01 04 b5 5d 27 78 3b d9 a5 b0 4f 3d b1 24
@@ -61,7 +61,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 17159
-    Serial Number: 875967308
+    Serial Number: ...
     Made in: week 36 of 2024
   Basic Display Parameters & Features:
     Digital display
@@ -100,7 +100,7 @@ Block 0, Base EDID:
     DTD 1:  2560x1080   60.001588 Hz  64:27    66.662 kHz    181.320000 MHz (929 mm x 392 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   18 Vpol N
-    Display Product Serial Number: '6Q7SD34'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL U4025QW'
     Display Range Limits:
       Monitor ranges (Bare Limits): 48-120 Hz V, 280-280 kHz H, max dotclock 1500 MHz
@@ -191,4 +191,156 @@ Block 2, DisplayID Extension Block:
   Checksum: 0x4c
 Checksum: 0x90
 
+----------------
 
+Block 3, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 07 43 4c 33 36 34 '...........CL364'
+  24 22 01 04 b5 5d 27 78 3b d9 a5 b0 4f 3d b1 24 '$"...]'x;...O=.$'
+  0e 50 54 a5 4b 00 71 4f 81 00 81 80 a9 40 b3 00 '.PT.K.qO.....@..'
+  d1 c0 d1 00 e1 c0 d4 46 00 a0 a0 38 1f 40 30 20 '.......F...8.@0 '
+  3a 00 a1 88 31 00 00 1a 00 00 00 ff 00 36 51 37 ':...1........6Q7'
+  53 44 33 34 0a 20 20 20 20 20 00 00 00 fc 00 44 'SD34.     .....D'
+  45 4c 4c 20 55 34 30 32 35 51 57 0a 00 00 00 fd 'ELL U4025QW.....'
+  0c 30 78 19 19 96 01 0a 20 20 20 20 20 20 02 25 '.0x.....      .%'
+Checksum: 0x25
+
+----------------
+
+Block 4, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC 193:  5120x2160  120.000000 Hz  64:27   270.000 kHz   1485.000000 MHz
+    VIC 126:  5120x2160   60.000000 Hz  64:27   135.000 kHz    742.500000 MHz
+    VIC 123:  5120x2160   30.000000 Hz  64:27    66.000 kHz    396.000000 MHz
+    VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 115 (603.666 cd/m^2)
+    Desired content max frame-average luminance: 115 (603.666 cd/m^2)
+    Desired content min luminance: 47 (0.205 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 4:  3840x2160   60.000000 Hz  16:9    133.320 kHz    533.280000 MHz (929 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD 5:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (929 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+Checksum: 0xda  Unused space in Extension Block: 49 bytes
+
+----------------
+
+Block 5, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Display Parameters Data Block (0x01):
+    Image size: 929.3 mm x 392.0 mm
+    Display native pixel format: 5120x2160
+    Feature support flags:
+      Power management (DPM)
+    Gamma: 2.20
+    Aspect ratio: 2.37
+    Dynamic bpc native: 10
+    Dynamic bpc overall: 10
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  5120x2160   60.000034 Hz  64:27   133.320 kHz    703.930000 MHz (aspect 64:27, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback   49 Vpol N
+    DTD:  5120x2160  120.000000 Hz  64:27   270.000 kHz   1485.000000 MHz (aspect 64:27, no 3D stereo)
+               Hfront  164 Hsync  88 Hback  128 Hpol P
+               Vfront    8 Vsync  10 Vback   72 Vpol P
+    DTD:  5120x2160   30.000484 Hz  64:27    65.731 kHz    347.060000 MHz (aspect 64:27, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback   18 Vpol N
+  Checksum: 0x4c
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 4, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 48.000 - 120.000 Hz)
+    Horizontal Freq: 31.250 - 270.000 kHz (Monitor: 280.000 - 280.000 kHz)
+  CTA-861: Native progressive resolution of 2560x1080 is smaller than the max preferred progressive resolution 5120x2160.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 3, Base EDID:
+  Unknown Extension Block.
+Block 4, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 193.
+  Video Data Block: Duplicate VIC 126.
+  Video Data Block: Duplicate VIC 123.
+  Video Data Block: Duplicate VIC 102.
+  Video Data Block: Duplicate VIC 97.
+  Video Data Block: Duplicate VIC 96.
+  Video Data Block: Duplicate VIC 95.
+  Video Data Block: Duplicate VIC 94.
+  Video Data Block: Duplicate VIC 93.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 5, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+  Display Parameters Data Block (0x01): Duplicate Display Parameters Data Block.
+EDID:
+  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
+  CTA-861: Mismatch between CTA-861 and DisplayID native progressive resolution.
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+
+EDID conformity: FAIL
