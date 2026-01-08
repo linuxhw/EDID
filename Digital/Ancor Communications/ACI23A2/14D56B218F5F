@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469a223c1c00100
-2a17010381331d782ae295a2554f9f26
-115054bfef00d1c0b300950f95008180
-814081c0714f023a801871382d40582c
-4500fd1e1100001e000000ff0044414c
-4d54463131343838310a000000fd0032
-4b185311000a202020202020000000fc
-00415355532050423233380a202000ef
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 a2 23 c1 c0 01 00
+2a 17 01 03 81 33 1d 78 2a e2 95 a2 55 4f 9f 26
+11 50 54 bf ef 00 d1 c0 b3 00 95 0f 95 00 81 80
+81 40 81 c0 71 4f 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 ff 00 44 41 4c
+4d 54 46 31 31 34 38 38 31 0a 00 00 00 fd 00 32
+4b 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 50 42 32 33 38 0a 20 20 00 ef
 
 00 ff ff ff ff ff ff 00 04 69 a2 23 c1 c0 01 00
 2a 17 01 03 81 33 1d 78 2a e2 95 a2 55 4f 9f 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 9122
-    Serial Number: 114881
+    Serial Number: ...
     Made in: week 42 of 2013
   Basic Display Parameters & Features:
     Digital display
@@ -70,10 +68,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (509 mm x 286 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'DALMTF114881'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 24-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'ASUS PB238'
 Checksum: 0xef
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 a2 23 c1 c0 01 00 '.........i.#....'
+  2a 17 01 03 81 33 1d 78 2a e2 95 a2 55 4f 9f 26 '*....3.x*...UO.&'
+  11 50 54 bf ef 00 d1 c0 b3 00 95 0f 95 00 81 80 '.PT.............'
+  81 40 81 c0 71 4f 02 3a 80 18 71 38 2d 40 58 2c '.@..qO.:..q8-@X,'
+  45 00 fd 1e 11 00 00 1e 00 00 00 ff 00 44 41 4c 'E............DAL'
+  4d 54 46 31 31 34 38 38 31 0a 00 00 00 fd 00 32 'MTF114881......2'
+  4b 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 41 53 55 53 20 50 42 32 33 38 0a 20 20 00 ef '.ASUS PB238.  ..'
+Checksum: 0xef
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
