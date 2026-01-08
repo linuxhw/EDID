@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0051ad9769cc030000
-0c0e01030e0000782a5f9fa955509224
-0d4a4bbfee00615945593159d1c0310a
-01010101010164190040410026301888
-3600000000000018000000ff00465333
-3130303937320a000020011d8018711c
-1620582c250000000000009e000000fc
-0032374c3033420a202020202020001c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 51 ad 97 69 cc 03 00 00
+0c 0e 01 03 0e 00 00 78 2a 5f 9f a9 55 50 92 24
+0d 4a 4b bf ee 00 61 59 45 59 31 59 d1 c0 31 0a
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 00 00 00 00 00 18 00 00 00 ff 00 46 53 33
+31 30 30 39 37 32 0a 00 00 20 01 1d 80 18 71 1c
+16 20 58 2c 25 00 00 00 00 00 00 9e 00 00 00 fc
+00 32 37 4c 30 33 42 0a 20 20 20 20 20 20 00 1c
 
 00 ff ff ff ff ff ff 00 51 ad 97 69 cc 03 00 00
 0c 0e 01 03 0e 00 00 78 2a 5f 9f a9 55 50 92 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: TMM
     Model: 27031
-    Serial Number: 972
+    Serial Number: ...
     Made in: week 12 of 2004
   Basic Display Parameters & Features:
     Analog display
@@ -68,10 +66,38 @@ Block 0, Base EDID:
     DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
                  Hfront   24 Hsync 136 Hback  160 Hpol N
                  Vfront    3 Vsync   6 Vback   29 Vpol N
-    Display Product Serial Number: 'FS3100972'
+    Display Product Serial Number: ...
     DTD 2:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
     Display Product Name: '27L03B'
 Checksum: 0x1c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 51 ad 97 69 cc 03 00 00 '........Q..i....'
+  0c 0e 01 03 0e 00 00 78 2a 5f 9f a9 55 50 92 24 '.......x*_..UP.$'
+  0d 4a 4b bf ee 00 61 59 45 59 31 59 d1 c0 31 0a '.JK...aYEY1Y..1.'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 00 00 00 00 00 18 00 00 00 ff 00 46 53 33 '6............FS3'
+  31 30 30 39 37 32 0a 00 00 20 01 1d 80 18 71 1c '100972... ....q.'
+  16 20 58 2c 25 00 00 00 00 00 00 9e 00 00 00 fc '. X,%...........'
+  00 32 37 4c 30 33 42 0a 20 20 20 20 20 20 00 1c '.27L03B.      ..'
+Checksum: 0x1c
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+  Detailed Timing Descriptor #2: Invalid detailed timing descriptor ordering.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

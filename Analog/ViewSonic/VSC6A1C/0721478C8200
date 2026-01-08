@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff005a631c6a01010101
-07100103082b1b782ec315a6564a9b24
-165054bfef80b30fa9409040904f8180
-8140714fa94f21399030621a274068b0
-3600b10f1100001c000000ff00505843
-3036303730323736340a000000fd0032
-4b1e5e15000a202020202020000000fc
-005641323031327753455249455300ac
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5a 63 1c 6a 01 01 01 01
+07 10 01 03 08 2b 1b 78 2e c3 15 a6 56 4a 9b 24
+16 50 54 bf ef 80 b3 0f a9 40 90 40 90 4f 81 80
+81 40 71 4f a9 4f 21 39 90 30 62 1a 27 40 68 b0
+36 00 b1 0f 11 00 00 1c 00 00 00 ff 00 50 58 43
+30 36 30 37 30 32 37 36 34 0a 00 00 00 fd 00 32
+4b 1e 5e 15 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 41 32 30 31 32 77 53 45 52 49 45 53 00 ac
 
 00 ff ff ff ff ff ff 00 5a 63 1c 6a 01 01 01 01
 07 10 01 03 08 2b 1b 78 2e c3 15 a6 56 4a 9b 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: VSC
     Model: 27164
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 7 of 2006
   Basic Display Parameters & Features:
     Analog display
@@ -74,8 +72,34 @@ Block 0, Base EDID:
     DTD 1:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz (433 mm x 271 mm)
                  Hfront  104 Hsync 176 Hback  280 Hpol N
                  Vfront    3 Vsync   6 Vback   30 Vpol P
-    Display Product Serial Number: 'PXC060702764'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-94 kHz H, max dotclock 210 MHz
     Display Product Name: 'VA2012wSERIES'
 Checksum: 0xac
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5a 63 1c 6a 01 01 01 01 '........Zc.j....'
+  07 10 01 03 08 2b 1b 78 2e c3 15 a6 56 4a 9b 24 '.....+.x....VJ.$'
+  16 50 54 bf ef 80 b3 0f a9 40 90 40 90 4f 81 80 '.PT......@.@.O..'
+  81 40 71 4f a9 4f 21 39 90 30 62 1a 27 40 68 b0 '.@qO.O!9.0b.'@h.'
+  36 00 b1 0f 11 00 00 1c 00 00 00 ff 00 50 58 43 '6............PXC'
+  30 36 30 37 30 32 37 36 34 0a 00 00 00 fd 00 32 '060702764......2'
+  4b 1e 5e 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.^...      ....'
+  00 56 41 32 30 31 32 77 53 45 52 49 45 53 00 ac '.VA2012wSERIES..'
+Checksum: 0xac
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

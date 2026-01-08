@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2dfa0a37354354
-11170103684125782a6181a35750a027
-0e5054bdef80714f81c0810081809500
-a9c0b3000101023a801871382d40582c
-450089712100001e662156aa51001e30
-468f330089712100001e000000fd003c
-4b1e5111000a202020202020000000fc
-00543238433537300a2020202020007f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d fa 0a 37 35 43 54
+11 17 01 03 68 41 25 78 2a 61 81 a3 57 50 a0 27
+0e 50 54 bd ef 80 71 4f 81 c0 81 00 81 80 95 00
+a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 89 71 21 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 89 71 21 00 00 1e 00 00 00 fd 00 3c
+4b 1e 51 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 54 32 38 43 35 37 30 0a 20 20 20 20 20 00 7f
 
 00 ff ff ff ff ff ff 00 4c 2d fa 0a 37 35 43 54
 11 17 01 03 68 41 25 78 2a 61 81 a3 57 50 a0 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 2810
-    Serial Number: 1413690679
+    Serial Number: ...
     Made in: week 17 of 2013
   Basic Display Parameters & Features:
     Analog display
@@ -78,3 +76,27 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 60-75 Hz V, 30-81 kHz H, max dotclock 170 MHz
     Display Product Name: 'T28C570'
 Checksum: 0x7f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d fa 0a 37 35 43 54 '........L-..75CT'
+  11 17 01 03 68 41 25 78 2a 61 81 a3 57 50 a0 27 '....hA%x*a..WP.''
+  0e 50 54 bd ef 80 71 4f 81 c0 81 00 81 80 95 00 '.PT...qO........'
+  a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 89 71 21 00 00 1e 66 21 56 aa 51 00 1e 30 'E..q!...f!V.Q..0'
+  46 8f 33 00 89 71 21 00 00 1e 00 00 00 fd 00 3c 'F.3..q!........<'
+  4b 1e 51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
+  00 54 32 38 43 35 37 30 0a 20 20 20 20 20 00 7f '.T28C570.     ..'
+Checksum: 0x7f
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

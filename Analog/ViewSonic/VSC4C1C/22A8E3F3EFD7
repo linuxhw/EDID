@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff005a631c4c01010101
-1d0f010308221b782ef0d5a753469e24
-145054bfef8081806159455931590101
-010101010101302a009851002a403070
-1300540e1100001e000000ff0050554e
-3035323930353339310a000000fd0032
-551e520e000a202020202020000000fc
-005645373130622d340a202020200023
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5a 63 1c 4c 01 01 01 01
+1d 0f 01 03 08 22 1b 78 2e f0 d5 a7 53 46 9e 24
+14 50 54 bf ef 80 81 80 61 59 45 59 31 59 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 54 0e 11 00 00 1e 00 00 00 ff 00 50 55 4e
+30 35 32 39 30 35 33 39 31 0a 00 00 00 fd 00 32
+55 1e 52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 45 37 31 30 62 2d 34 0a 20 20 20 20 00 23
 
 00 ff ff ff ff ff ff 00 5a 63 1c 4c 01 01 01 01
 1d 0f 01 03 08 22 1b 78 2e f0 d5 a7 53 46 9e 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: VSC
     Model: 19484
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 29 of 2005
   Basic Display Parameters & Features:
     Analog display
@@ -70,8 +68,34 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (340 mm x 270 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: 'PUN052905391'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-85 Hz V, 30-82 kHz H, max dotclock 140 MHz
     Display Product Name: 'VE710b-4'
 Checksum: 0x23
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5a 63 1c 4c 01 01 01 01 '........Zc.L....'
+  1d 0f 01 03 08 22 1b 78 2e f0 d5 a7 53 46 9e 24 '.....".x....SF.$'
+  14 50 54 bf ef 80 81 80 61 59 45 59 31 59 01 01 '.PT.....aYEY1Y..'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 54 0e 11 00 00 1e 00 00 00 ff 00 50 55 4e '..T..........PUN'
+  30 35 32 39 30 35 33 39 31 0a 00 00 00 fd 00 32 '052905391......2'
+  55 1e 52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'U.R...      ....'
+  00 56 45 37 31 30 62 2d 34 0a 20 20 20 20 00 23 '.VE710b-4.    .#'
+Checksum: 0x23
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

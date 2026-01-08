@@ -1,0 +1,105 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 50 a3 01 71 01 00 00 00
+14 15 01 03 08 33 1d 64 ee dc 51 a3 59 48 9e 24
+11 50 54 ad ce 00 d1 c0 b3 00 95 00 01 00 01 40
+01 4f 01 4f 01 40 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 19 4b 0f
+50 0f 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4a
+30 31 32 30 30 31 35 0a 20 20 20 20 00 00 00 fc
+00 54 45 43 4f 0a 20 20 20 20 20 20 20 20 00 77
+
+00 ff ff ff ff ff ff 00 50 a3 01 71 01 00 00 00
+14 15 01 03 08 33 1d 64 ee dc 51 a3 59 48 9e 24
+11 50 54 ad ce 00 d1 c0 b3 00 95 00 01 00 01 40
+01 4f 01 4f 01 40 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 19 4b 0f
+50 0f 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4a
+30 31 32 30 30 31 35 0a 20 20 20 20 00 00 00 fc
+00 54 45 43 4f 0a 20 20 20 20 20 20 20 20 00 77
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: TEC
+    Model: 28929
+    Serial Number: ...
+    Made in: week 20 of 2011
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 51 cm x 29 cm
+    Gamma: 2.00
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3486
+    Green: 0.2841, 0.6171
+    Blue : 0.1416, 0.0673
+    White: 0.3125, 0.3291
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
+    DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (509 mm x 286 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 25-75 Hz V, 15-80 kHz H, max dotclock 150 MHz
+    Display Product Serial Number: ...
+    Display Product Name: 'TECO'
+Checksum: 0x77
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 50 a3 01 71 01 00 00 00 '........P..q....'
+  14 15 01 03 08 33 1d 64 ee dc 51 a3 59 48 9e 24 '.....3.d..Q.YH.$'
+  11 50 54 ad ce 00 d1 c0 b3 00 95 00 01 00 01 40 '.PT............@'
+  01 4f 01 4f 01 40 02 3a 80 18 71 38 2d 40 58 2c '.O.O.@.:..q8-@X,'
+  45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 19 4b 0f 'E.............K.'
+  50 0f 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4a 'P...      .....J'
+  30 31 32 30 30 31 35 0a 20 20 20 20 00 00 00 fc '0120015.    ....'
+  00 54 45 43 4f 0a 20 20 20 20 20 20 20 20 00 77 '.TECO.        .w'
+Checksum: 0x77
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0140.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x014f.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x014f.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0140.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

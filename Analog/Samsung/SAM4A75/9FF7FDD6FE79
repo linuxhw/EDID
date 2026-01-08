@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2d754a35314e43
-1c0b01020f1e1761ea5220a054499725
-1c4e54b76e00314f454f614f01010101
-01010101010164190040410026301888
-360030e410000018000000fd00324b1e
-3d08000a202020202020000000fc0035
-3730532f3538305320544654000000ff
-00483143523731353338350a20200049
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 75 4a 35 31 4e 43
+1c 0b 01 02 0f 1e 17 61 ea 52 20 a0 54 49 97 25
+1c 4e 54 b7 6e 00 31 4f 45 4f 61 4f 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 30 e4 10 00 00 18 00 00 00 fd 00 32 4b 1e
+3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 35
+37 30 53 2f 35 38 30 53 20 54 46 54 00 00 00 ff
+00 48 31 43 52 37 31 35 33 38 35 0a 20 20 00 49
 
 00 ff ff ff ff ff ff 00 4c 2d 75 4a 35 31 4e 43
 1c 0b 01 02 0f 1e 17 61 ea 52 20 a0 54 49 97 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 19061
-    Serial Number: 1129197877
+    Serial Number: ...
     Made in: week 28 of 2001
   Basic Display Parameters & Features:
     Analog display
@@ -67,5 +65,34 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-61 kHz H, max dotclock 80 MHz
     Display Product Name: '570S/580S TFT'
-    Display Product Serial Number: 'H1CR715385'
+    Display Product Serial Number: ...
 Checksum: 0x49
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d 75 4a 35 31 4e 43 '........L-uJ51NC'
+  1c 0b 01 02 0f 1e 17 61 ea 52 20 a0 54 49 97 25 '.......a.R .TI.%'
+  1c 4e 54 b7 6e 00 31 4f 45 4f 61 4f 01 01 01 01 '.NT.n.1OEOaO....'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 30 e4 10 00 00 18 00 00 00 fd 00 32 4b 1e '6.0..........2K.'
+  3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 35 '=...      .....5'
+  37 30 53 2f 35 38 30 53 20 54 46 54 00 00 00 ff '70S/580S TFT....'
+  00 48 31 43 52 37 31 35 33 38 35 0a 20 20 00 49 '.H1CR715385.  .I'
+Checksum: 0x49
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

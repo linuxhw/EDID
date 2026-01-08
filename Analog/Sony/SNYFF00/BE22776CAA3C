@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004dd900ff01010101
-1411010308a05a780a0dc9a057479827
-12484c21080061404540314001010101
-01010101010164190040410026301d88
-3600b084430000180e1f008051001e30
-4080370040846300001c000000fd003a
-3e1e3208000a202020202020000000fc
-00534f4e592054560a20202020200059
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d d9 00 ff 01 01 01 01
+14 11 01 03 08 a0 5a 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 21 08 00 61 40 45 40 31 40 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 1d 88
+36 00 b0 84 43 00 00 18 0e 1f 00 80 51 00 1e 30
+40 80 37 00 40 84 63 00 00 1c 00 00 00 fd 00 3a
+3e 1e 32 08 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 4f 4e 59 20 54 56 0a 20 20 20 20 20 00 59
 
 00 ff ff ff ff ff ff 00 4d d9 00 ff 01 01 01 01
 14 11 01 03 08 a0 5a 78 0a 0d c9 a0 57 47 98 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SNY
     Model: 65280
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 20 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -62,3 +60,32 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 58-62 Hz V, 30-50 kHz H, max dotclock 80 MHz
     Display Product Name: 'SONY TV'
 Checksum: 0x59
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4d d9 00 ff 01 01 01 01 '........M.......'
+  14 11 01 03 08 a0 5a 78 0a 0d c9 a0 57 47 98 27 '......Zx....WG.''
+  12 48 4c 21 08 00 61 40 45 40 31 40 01 01 01 01 '.HL!..a@E@1@....'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 1d 88 '......d..@A.&0..'
+  36 00 b0 84 43 00 00 18 0e 1f 00 80 51 00 1e 30 '6...C.......Q..0'
+  40 80 37 00 40 84 63 00 00 1c 00 00 00 fd 00 3a '@.7.@.c........:'
+  3e 1e 32 08 00 0a 20 20 20 20 20 20 00 00 00 fc '>.2...      ....'
+  00 53 4f 4e 59 20 54 56 0a 20 20 20 20 20 00 59 '.SONY TV.     .Y'
+Checksum: 0x59
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x10.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

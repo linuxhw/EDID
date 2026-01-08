@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2da10b00000000
-021801030e3216782aee9da354479926
-0f474abdef80714f81c0810081809500
-a9c0b3000101023a801871382d40582c
-450075f23100001e662156aa51001e30
-468f330075f23100001e000000fd003c
-4b1e5111000a202020202020000000fc
-0053796e634d61737465720a202000d7
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d a1 0b 00 00 00 00
+02 18 01 03 0e 32 16 78 2a ee 9d a3 54 47 99 26
+0f 47 4a bd ef 80 71 4f 81 c0 81 00 81 80 95 00
+a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 75 f2 31 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 75 f2 31 00 00 1e 00 00 00 fd 00 3c
+4b 1e 51 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 79 6e 63 4d 61 73 74 65 72 0a 20 20 00 d7
 
 00 ff ff ff ff ff ff 00 4c 2d a1 0b 00 00 00 00
 02 18 01 03 0e 32 16 78 2a ee 9d a3 54 47 99 26
@@ -77,3 +75,31 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 60-75 Hz V, 30-81 kHz H, max dotclock 170 MHz
     Display Product Name: 'SyncMaster'
 Checksum: 0xd7
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d a1 0b 00 00 00 00 '........L-......'
+  02 18 01 03 0e 32 16 78 2a ee 9d a3 54 47 99 26 '.....2.x*...TG.&'
+  0f 47 4a bd ef 80 71 4f 81 c0 81 00 81 80 95 00 '.GJ...qO........'
+  a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 75 f2 31 00 00 1e 66 21 56 aa 51 00 1e 30 'E.u.1...f!V.Q..0'
+  46 8f 33 00 75 f2 31 00 00 1e 00 00 00 fd 00 3c 'F.3.u.1........<'
+  4b 1e 51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
+  00 53 79 6e 63 4d 61 73 74 65 72 0a 20 20 00 d7 '.SyncMaster.  ..'
+Checksum: 0xd7
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 885x498 mm vs display size 500x220 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 885x498 mm vs display size 500x220 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 885x498mm, which is larger than the display size 500.0x220.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

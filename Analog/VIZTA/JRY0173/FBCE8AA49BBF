@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002a59730100000000
-13150103682615788a0013a057499b26
-10484eadcf008180818c454a818a614a
-614c454c0101302a40c8608464301850
-1300c7001100001c000000ff004e554c
-4c0a2020202020202020000000fc0030
-30303030300a202020202020000000fc
-00416e616c6f670a20202020202000ea
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 2a 59 73 01 00 00 00 00
+13 15 01 03 68 26 15 78 8a 00 13 a0 57 49 9b 26
+10 48 4e ad cf 00 81 80 81 8c 45 4a 81 8a 61 4a
+61 4c 45 4c 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 c7 00 11 00 00 1c 00 00 00 ff 00 4e 55 4c
+4c 0a 20 20 20 20 20 20 20 20 00 00 00 fc 00 30
+30 30 30 30 30 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 6e 61 6c 6f 67 0a 20 20 20 20 20 20 00 ea
 
 00 ff ff ff ff ff ff 00 2a 59 73 01 00 00 00 00
 13 15 01 03 68 26 15 78 8a 00 13 a0 57 49 9b 26
@@ -67,9 +65,40 @@ Block 0, Base EDID:
     DTD 1:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (455 mm x 256 mm)
                  Hfront   24 Hsync  80 Hback   96 Hpol N
                  Vfront    1 Vsync   3 Vback   96 Vpol P
-    Display Product Serial Number: 'NULL'
+    Display Product Serial Number: ...
     Display Product Name: '000000'
     Display Product Name: 'Analog'
 Checksum: 0xea
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 2a 59 73 01 00 00 00 00 '........*Ys.....'
+  13 15 01 03 68 26 15 78 8a 00 13 a0 57 49 9b 26 '....h&.x....WI.&'
+  10 48 4e ad cf 00 81 80 81 8c 45 4a 81 8a 61 4a '.HN.......EJ..aJ'
+  61 4c 45 4c 01 01 30 2a 40 c8 60 84 64 30 18 50 'aLEL..0*@.`.d0.P'
+  13 00 c7 00 11 00 00 1c 00 00 00 ff 00 4e 55 4c '.............NUL'
+  4c 0a 20 20 20 20 20 20 20 20 00 00 00 fc 00 30 'L.        .....0'
+  30 30 30 30 30 0a 20 20 20 20 20 20 00 00 00 fc '00000.      ....'
+  00 41 6e 61 6c 6f 67 0a 20 20 20 20 20 20 00 ea '.Analog.      ..'
+Checksum: 0xea
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x53.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 455x256 mm vs display size 380x210 mm.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 455x256mm, which is larger than the display size 380.0x210.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

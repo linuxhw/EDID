@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2dff0800000000
-29150103683a20782aee91a3544c9926
-0f5054bdee0081c00101010101010101
-010101010101662156aa51001e30468f
-33004e6c4200001e6419004041002630
-188836004e6c42000018000000fd003c
-4b1e3d0a000a202020202020000000fc
-0053414d53554e470a202020202000b5
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d ff 08 00 00 00 00
+29 15 01 03 68 3a 20 78 2a ee 91 a3 54 4c 99 26
+0f 50 54 bd ee 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 4e 6c 42 00 00 1e 64 19 00 40 41 00 26 30
+18 88 36 00 4e 6c 42 00 00 18 00 00 00 fd 00 3c
+4b 1e 3d 0a 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 41 4d 53 55 4e 47 0a 20 20 20 20 20 00 b5
 
 00 ff ff ff ff ff ff 00 4c 2d ff 08 00 00 00 00
 29 15 01 03 68 3a 20 78 2a ee 91 a3 54 4c 99 26
@@ -69,3 +67,32 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 60-75 Hz V, 30-61 kHz H, max dotclock 100 MHz
     Display Product Name: 'SAMSUNG'
 Checksum: 0xb5
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d ff 08 00 00 00 00 '........L-......'
+  29 15 01 03 68 3a 20 78 2a ee 91 a3 54 4c 99 26 ')...h: x*...TL.&'
+  0f 50 54 bd ee 00 81 c0 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 4e 6c 42 00 00 1e 64 19 00 40 41 00 26 30 '3.NlB...d..@A.&0'
+  18 88 36 00 4e 6c 42 00 00 18 00 00 00 fd 00 3c '..6.NlB........<'
+  4b 1e 3d 0a 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.=...      ....'
+  00 53 41 4d 53 55 4e 47 0a 20 20 20 20 20 00 b5 '.SAMSUNG.     ..'
+Checksum: 0xb5
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
+  Detailed Timing Descriptor #1: Mismatch of image size 1102x620 mm vs display size 580x320 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 1102x620 mm vs display size 580x320 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 1102x620mm, which is larger than the display size 580.0x320.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

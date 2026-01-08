@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff005a631e3b01010101
-0a120103092018782a0578a0564a9926
-12484cffee80615981808140714f4559
-315901010101ea240060410028303060
-130036e61000001e000000ff00513947
-3038313030313635300a000000fd0032
-a01e460b000a202020202020000000fc
-00453730662d31300a20202020200011
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5a 63 1e 3b 01 01 01 01
+0a 12 01 03 09 20 18 78 2a 05 78 a0 56 4a 99 26
+12 48 4c ff ee 80 61 59 81 80 81 40 71 4f 45 59
+31 59 01 01 01 01 ea 24 00 60 41 00 28 30 30 60
+13 00 36 e6 10 00 00 1e 00 00 00 ff 00 51 39 47
+30 38 31 30 30 31 36 35 30 0a 00 00 00 fd 00 32
+a0 1e 46 0b 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 45 37 30 66 2d 31 30 0a 20 20 20 20 20 00 11
 
 00 ff ff ff ff ff ff 00 5a 63 1e 3b 01 01 01 01
 0a 12 01 03 09 20 18 78 2a 05 78 a0 56 4a 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: VSC
     Model: 15134
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 10 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -71,8 +69,34 @@ Block 0, Base EDID:
     DTD 1:  1024x768    84.996690 Hz   4:3     68.677 kHz     94.500000 MHz (310 mm x 230 mm)
                  Hfront   48 Hsync  96 Hback  208 Hpol P
                  Vfront    1 Vsync   3 Vback   36 Vpol P
-    Display Product Serial Number: 'Q9G081001650'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-160 Hz V, 30-70 kHz H, max dotclock 110 MHz
     Display Product Name: 'E70f-10'
 Checksum: 0x11
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5a 63 1e 3b 01 01 01 01 '........Zc.;....'
+  0a 12 01 03 09 20 18 78 2a 05 78 a0 56 4a 99 26 '..... .x*.x.VJ.&'
+  12 48 4c ff ee 80 61 59 81 80 81 40 71 4f 45 59 '.HL...aY...@qOEY'
+  31 59 01 01 01 01 ea 24 00 60 41 00 28 30 30 60 '1Y.....$.`A.(00`'
+  13 00 36 e6 10 00 00 1e 00 00 00 ff 00 51 39 47 '..6..........Q9G'
+  30 38 31 30 30 31 36 35 30 0a 00 00 00 fd 00 32 '081001650......2'
+  a0 1e 46 0b 00 0a 20 20 20 20 20 20 00 00 00 fc '..F...      ....'
+  00 45 37 30 66 2d 31 30 0a 20 20 20 20 20 00 11 '.E70f-10.     ..'
+Checksum: 0x11
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 310x230 mm vs display size 320x240 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

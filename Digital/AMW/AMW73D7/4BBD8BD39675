@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005b7d773710b0000
-2a0f010380221b78eb0c55a559479b24
-125054bfef808180714f314f3bcc31ca
-010101010101302a009851002a403070
-1300510e1100001e000000ff00303032
-3932390a202020202020000000fd0037
-4b1e500eea20202020202020000000fc
-004d313739440a2020202020202000cb
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 b7 d7 73 71 0b 00 00
+2a 0f 01 03 80 22 1b 78 eb 0c 55 a5 59 47 9b 24
+12 50 54 bf ef 80 81 80 71 4f 31 4f 3b cc 31 ca
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 51 0e 11 00 00 1e 00 00 00 ff 00 30 30 32
+39 32 39 0a 20 20 20 20 20 20 00 00 00 fd 00 37
+4b 1e 50 0e ea 20 20 20 20 20 20 20 00 00 00 fc
+00 4d 31 37 39 44 0a 20 20 20 20 20 20 20 00 cb
 
 00 ff ff ff ff ff ff 00 05 b7 d7 73 71 0b 00 00
 2a 0f 01 03 80 22 1b 78 eb 0c 55 a5 59 47 9b 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AMW
     Model: 29655
-    Serial Number: 2929
+    Serial Number: ...
     Made in: week 42 of 2005
   Basic Display Parameters & Features:
     Digital display
@@ -68,10 +66,42 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (337 mm x 270 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: '002929'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (Unknown (0xea)): 55-75 Hz V, 30-80 kHz H, max dotclock 140 MHz
     Display Product Name: 'M179D'
 Checksum: 0xcb
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 b7 d7 73 71 0b 00 00 '...........sq...'
+  2a 0f 01 03 80 22 1b 78 eb 0c 55 a5 59 47 9b 24 '*....".x..U.YG.$'
+  12 50 54 bf ef 80 81 80 71 4f 31 4f 3b cc 31 ca '.PT.....qO1O;.1.'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 51 0e 11 00 00 1e 00 00 00 ff 00 30 30 32 '..Q..........002'
+  39 32 39 0a 20 20 20 20 20 20 00 00 00 fd 00 37 '929.      .....7'
+  4b 1e 50 0e ea 20 20 20 20 20 20 20 00 00 00 fc 'K.P..       ....'
+  00 4d 31 37 39 44 0a 20 20 20 20 20 20 20 00 cb '.M179D.       ..'
+Checksum: 0xcb
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 720x405 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: Unknown range class (0xea).
+  Display Range Limits: Byte 11 is 0x20 instead of 0x0a.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 26.250 - 79.976 kHz (Monitor: 30.000 - 80.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

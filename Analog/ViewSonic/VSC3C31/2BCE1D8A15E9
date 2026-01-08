@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff005a63313c01010101
-101e0103082b18782e5ab5a35750a126
-0d5054bfef80b300a940950090408180
-814081c00101023a801871382d40582c
-4500b3ef1000001e000000ff00554432
-3230313636313734350a000000fd0032
-4b185211000a202020202020000000fc
-005641323035352053657269657300e0
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5a 63 31 3c 01 01 01 01
+10 1e 01 03 08 2b 18 78 2e 5a b5 a3 57 50 a1 26
+0d 50 54 bf ef 80 b3 00 a9 40 95 00 90 40 81 80
+81 40 81 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 b3 ef 10 00 00 1e 00 00 00 ff 00 55 44 32
+32 30 31 36 36 31 37 34 35 0a 00 00 00 fd 00 32
+4b 18 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 41 32 30 35 35 20 53 65 72 69 65 73 00 e0
 
 00 ff ff ff ff ff ff 00 5a 63 31 3c 01 01 01 01
 10 1e 01 03 08 2b 18 78 2e 5a b5 a3 57 50 a1 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: VSC
     Model: 15409
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 16 of 2020
   Basic Display Parameters & Features:
     Analog display
@@ -73,8 +71,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (435 mm x 239 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'UD2201661745'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 24-82 kHz H, max dotclock 170 MHz
     Display Product Name: 'VA2055 Series'
 Checksum: 0xe0
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5a 63 31 3c 01 01 01 01 '........Zc1<....'
+  10 1e 01 03 08 2b 18 78 2e 5a b5 a3 57 50 a1 26 '.....+.x.Z..WP.&'
+  0d 50 54 bf ef 80 b3 00 a9 40 95 00 90 40 81 80 '.PT......@...@..'
+  81 40 81 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.@.....:..q8-@X,'
+  45 00 b3 ef 10 00 00 1e 00 00 00 ff 00 55 44 32 'E............UD2'
+  32 30 31 36 36 31 37 34 35 0a 00 00 00 fd 00 32 '201661745......2'
+  4b 18 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
+  00 56 41 32 30 35 35 20 53 65 72 69 65 73 00 e0 '.VA2055 Series..'
+Checksum: 0xe0
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2e1322cd332206
-1a150103682c19782ac905a3574b9c25
-125054afcf0081408180a9c09500950f
-950a950c0101792e4010628420307098
-1300bbf91000001c6621500051001b30
-4070360030e41000001a000000fd0038
-4c1f5311000a202020202020000000fc
-004c4344204d4f4e49544f520a200031
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2e 13 22 cd 33 22 06
+1a 15 01 03 68 2c 19 78 2a c9 05 a3 57 4b 9c 25
+12 50 54 af cf 00 81 40 81 80 a9 c0 95 00 95 0f
+95 0a 95 0c 01 01 79 2e 40 10 62 84 20 30 70 98
+13 00 bb f9 10 00 00 1c 66 21 50 00 51 00 1b 30
+40 70 36 00 30 e4 10 00 00 1a 00 00 00 fd 00 38
+4c 1f 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 43 44 20 4d 4f 4e 49 54 4f 52 0a 20 00 31
 
 00 ff ff ff ff ff ff 00 4c 2e 13 22 cd 33 22 06
 1a 15 01 03 68 2c 19 78 2a c9 05 a3 57 4b 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAN
     Model: 8723
-    Serial Number: 102904781
+    Serial Number: ...
     Made in: week 26 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -76,3 +74,29 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'LCD MONITOR'
 Checksum: 0x31
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2e 13 22 cd 33 22 06 '........L..".3".'
+  1a 15 01 03 68 2c 19 78 2a c9 05 a3 57 4b 9c 25 '....h,.x*...WK.%'
+  12 50 54 af cf 00 81 40 81 80 a9 c0 95 00 95 0f '.PT....@........'
+  95 0a 95 0c 01 01 79 2e 40 10 62 84 20 30 70 98 '......y.@.b. 0p.'
+  13 00 bb f9 10 00 00 1c 66 21 50 00 51 00 1b 30 '........f!P.Q..0'
+  40 70 36 00 30 e4 10 00 00 1a 00 00 00 fd 00 38 '@p6.0..........8'
+  4c 1f 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 4c 43 44 20 4d 4f 4e 49 54 4f 52 0a 20 00 31 '.LCD MONITOR. .1'
+Checksum: 0x31
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Mismatch of image size 304x228 mm vs display size 440x250 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

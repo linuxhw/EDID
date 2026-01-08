@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff005a63084201010101
-230d01040e291f782ae595a5584c9726
-1e5054bfef80a9408180714f61594559
-315901010101483f403062b0324040c0
-130098321100001e000000ff00413137
-3033333530303837350a000000fd0032
-551e5211000a202020202020000000fc
-005658323030300a20202020202000c1
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5a 63 08 42 01 01 01 01
+23 0d 01 04 0e 29 1f 78 2a e5 95 a5 58 4c 97 26
+1e 50 54 bf ef 80 a9 40 81 80 71 4f 61 59 45 59
+31 59 01 01 01 01 48 3f 40 30 62 b0 32 40 40 c0
+13 00 98 32 11 00 00 1e 00 00 00 ff 00 41 31 37
+30 33 33 35 30 30 38 37 35 0a 00 00 00 fd 00 32
+55 1e 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 58 32 30 30 30 0a 20 20 20 20 20 20 00 c1
 
 00 ff ff ff ff ff ff 00 5a 63 08 42 01 01 01 01
 23 0d 01 04 0e 29 1f 78 2a e5 95 a5 58 4c 97 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: VSC
     Model: 16904
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 35 of 2003
   Basic Display Parameters & Features:
     Analog display
@@ -71,8 +69,39 @@ Block 0, Base EDID:
     DTD 1:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz (408 mm x 306 mm)
                  Hfront   64 Hsync 192 Hback  304 Hpol P
                  Vfront    1 Vsync   3 Vback   46 Vpol P
-    Display Product Serial Number: 'A17033500875'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-85 Hz V, 30-82 kHz H, max dotclock 170 MHz
     Display Product Name: 'VX2000'
 Checksum: 0xc1
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5a 63 08 42 01 01 01 01 '........Zc.B....'
+  23 0d 01 04 0e 29 1f 78 2a e5 95 a5 58 4c 97 26 '#....).x*...XL.&'
+  1e 50 54 bf ef 80 a9 40 81 80 71 4f 61 59 45 59 '.PT....@..qOaYEY'
+  31 59 01 01 01 01 48 3f 40 30 62 b0 32 40 40 c0 '1Y....H?@0b.2@@.'
+  13 00 98 32 11 00 00 1e 00 00 00 ff 00 41 31 37 '...2.........A17'
+  30 33 33 35 30 30 38 37 35 0a 00 00 00 fd 00 32 '033500875......2'
+  55 1e 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'U.R...      ....'
+  00 56 58 32 30 30 30 0a 20 20 20 20 20 20 00 c1 '.VX2000.      ..'
+Checksum: 0xc1
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

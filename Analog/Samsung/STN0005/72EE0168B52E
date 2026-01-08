@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004e8e050037314e50
-0f0c01026820187eeb1269a552499924
-0e484cfffe8031594559615981850101
-010101010101ea240060410028303060
-130038ea1000001e000000fd0032a01e
-460b000a202020202020000000fc0053
-2f54203737452f3736450a20000000ff
-00484a47543430393639380a20200005
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4e 8e 05 00 37 31 4e 50
+0f 0c 01 02 68 20 18 7e eb 12 69 a5 52 49 99 24
+0e 48 4c ff fe 80 31 59 45 59 61 59 81 85 01 01
+01 01 01 01 01 01 ea 24 00 60 41 00 28 30 30 60
+13 00 38 ea 10 00 00 1e 00 00 00 fd 00 32 a0 1e
+46 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53
+2f 54 20 37 37 45 2f 37 36 45 0a 20 00 00 00 ff
+00 48 4a 47 54 34 30 39 36 39 38 0a 20 20 00 05
 
 00 ff ff ff ff ff ff 00 4e 8e 05 00 37 31 4e 50
 0f 0c 01 02 68 20 18 7e eb 12 69 a5 52 49 99 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: STN
     Model: 5
-    Serial Number: 1347301687
+    Serial Number: ...
     Made in: week 15 of 2002
   Basic Display Parameters & Features:
     Analog display
@@ -74,5 +72,38 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-160 Hz V, 30-70 kHz H, max dotclock 110 MHz
     Display Product Name: 'S/T 77E/76E'
-    Display Product Serial Number: 'HJGT409698'
+    Display Product Serial Number: ...
 Checksum: 0x05
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4e 8e 05 00 37 31 4e 50 '........N...71NP'
+  0f 0c 01 02 68 20 18 7e eb 12 69 a5 52 49 99 24 '....h .~..i.RI.$'
+  0e 48 4c ff fe 80 31 59 45 59 61 59 81 85 01 01 '.HL...1YEYaY....'
+  01 01 01 01 01 01 ea 24 00 60 41 00 28 30 30 60 '.......$.`A.(00`'
+  13 00 38 ea 10 00 00 1e 00 00 00 fd 00 32 a0 1e '..8..........2..'
+  46 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53 'F...      .....S'
+  2f 54 20 37 37 45 2f 37 36 45 0a 20 00 00 00 ff '/T 77E/76E. ....'
+  00 48 4a 47 54 34 30 39 36 39 38 0a 20 20 00 05 '.HJGT409698.  ..'
+Checksum: 0x05
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 119.396 MHz (Monitor: 110.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff005a634158e80f0000
-320a0104682118a5eb2078a056489a26
-12484cb46a0031594559615981800101
-010101010101c31e0020410020301060
-13002ce11000001e000000ff00415830
-353030343037320a2020000000fd0032
-a01e460b010a202020202020000000fc
-00413735660a2020202020202020001c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5a 63 41 58 e8 0f 00 00
+32 0a 01 04 68 21 18 a5 eb 20 78 a0 56 48 9a 26
+12 48 4c b4 6a 00 31 59 45 59 61 59 81 80 01 01
+01 01 01 01 01 01 c3 1e 00 20 41 00 20 30 10 60
+13 00 2c e1 10 00 00 1e 00 00 00 ff 00 41 58 30
+35 30 30 34 30 37 32 0a 20 20 00 00 00 fd 00 32
+a0 1e 46 0b 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 37 35 66 0a 20 20 20 20 20 20 20 20 00 1c
 
 00 ff ff ff ff ff ff 00 5a 63 41 58 e8 0f 00 00
 32 0a 01 04 68 21 18 a5 eb 20 78 a0 56 48 9a 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: VSC
     Model: 22593
-    Serial Number: 4072
+    Serial Number: ...
     Made in: week 50 of 2000
   Basic Display Parameters & Features:
     Analog display
@@ -63,8 +61,34 @@ Block 0, Base EDID:
     DTD 1:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz (300 mm x 225 mm)
                  Hfront   16 Hsync  96 Hback  176 Hpol P
                  Vfront    1 Vsync   3 Vback   28 Vpol P
-    Display Product Serial Number: 'AX05004072'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (Bare Limits): 50-160 Hz V, 30-70 kHz H, max dotclock 110 MHz
     Display Product Name: 'A75f'
 Checksum: 0x1c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5a 63 41 58 e8 0f 00 00 '........ZcAX....'
+  32 0a 01 04 68 21 18 a5 eb 20 78 a0 56 48 9a 26 '2...h!... x.VH.&'
+  12 48 4c b4 6a 00 31 59 45 59 61 59 81 80 01 01 '.HL.j.1YEYaY....'
+  01 01 01 01 01 01 c3 1e 00 20 41 00 20 30 10 60 '......... A. 0.`'
+  13 00 2c e1 10 00 00 1e 00 00 00 ff 00 41 58 30 '..,..........AX0'
+  35 30 30 34 30 37 32 0a 20 20 00 00 00 fd 00 32 '5004072.  .....2'
+  a0 1e 46 0b 01 0a 20 20 20 20 20 20 00 00 00 fc '..F...      ....'
+  00 41 37 35 66 0a 20 20 20 20 20 20 20 20 00 1c '.A75f.        ..'
+Checksum: 0x1c
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 300x225 mm vs display size 330x240 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

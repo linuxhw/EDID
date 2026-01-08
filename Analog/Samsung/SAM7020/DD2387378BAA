@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2d207038354130
-16200103003d23782a8a84a954469822
-204c5ebfef8081c0810081809500a9c0
-b300714fd1cf023a801871382d40582c
-4500615d2100001e000000fd00384b1e
-5513000a202020202020000000fc004c
-4332375435350a2020202020000000ff
-00484350543530373839310a2020007a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 20 70 38 35 41 30
+16 20 01 03 00 3d 23 78 2a 8a 84 a9 54 46 98 22
+20 4c 5e bf ef 80 81 c0 81 00 81 80 95 00 a9 c0
+b3 00 71 4f d1 cf 02 3a 80 18 71 38 2d 40 58 2c
+45 00 61 5d 21 00 00 1e 00 00 00 fd 00 38 4b 1e
+55 13 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+43 32 37 54 35 35 0a 20 20 20 20 20 00 00 00 ff
+00 48 43 50 54 35 30 37 38 39 31 0a 20 20 00 7a
 
 00 ff ff ff ff ff ff 00 4c 2d 20 70 38 35 41 30
 16 20 01 03 00 3d 23 78 2a 8a 84 a9 54 46 98 22
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 28704
-    Serial Number: 809579832
+    Serial Number: ...
     Made in: week 22 of 2022
   Basic Display Parameters & Features:
     Analog display
@@ -75,5 +73,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-85 kHz H, max dotclock 190 MHz
     Display Product Name: 'LC27T55'
-    Display Product Serial Number: 'HCPT507891'
+    Display Product Serial Number: ...
 Checksum: 0x7a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d 20 70 38 35 41 30 '........L- p85A0'
+  16 20 01 03 00 3d 23 78 2a 8a 84 a9 54 46 98 22 '. ...=#x*...TF."'
+  20 4c 5e bf ef 80 81 c0 81 00 81 80 95 00 a9 c0 ' L^.............'
+  b3 00 71 4f d1 cf 02 3a 80 18 71 38 2d 40 58 2c '..qO...:..q8-@X,'
+  45 00 61 5d 21 00 00 1e 00 00 00 fd 00 38 4b 1e 'E.a]!........8K.'
+  55 13 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'U...      .....L'
+  43 32 37 54 35 35 0a 20 20 20 20 20 00 00 00 ff 'C27T55.     ....'
+  00 48 43 50 54 35 30 37 38 39 31 0a 20 20 00 7a '.HCPT507891.  .z'
+Checksum: 0x7a
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 220.637 MHz (Monitor: 190.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

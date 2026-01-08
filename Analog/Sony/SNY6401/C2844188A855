@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004dd9016401010101
-2312010308502d78caee9da3544c9926
-0f4f5421080081800101010101010101
-010101010101023a801871382d40582c
-450020c23100001e662150b051001b30
-4070360020c23100001e000000fd0039
-3f1e500f000a202020202020000000fc
-00534f4e592054560a2020202020006d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d d9 01 64 01 01 01 01
+23 12 01 03 08 50 2d 78 ca ee 9d a3 54 4c 99 26
+0f 4f 54 21 08 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 20 c2 31 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 20 c2 31 00 00 1e 00 00 00 fd 00 39
+3f 1e 50 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 4f 4e 59 20 54 56 0a 20 20 20 20 20 00 6d
 
 00 ff ff ff ff ff ff 00 4d d9 01 64 01 01 01 01
 23 12 01 03 08 50 2d 78 ca ee 9d a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SNY
     Model: 25601
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 35 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -61,3 +59,27 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 57-63 Hz V, 30-80 kHz H, max dotclock 150 MHz
     Display Product Name: 'SONY TV'
 Checksum: 0x6d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4d d9 01 64 01 01 01 01 '........M..d....'
+  23 12 01 03 08 50 2d 78 ca ee 9d a3 54 4c 99 26 '#....P-x....TL.&'
+  0f 4f 54 21 08 00 81 80 01 01 01 01 01 01 01 01 '.OT!............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 20 c2 31 00 00 1e 66 21 50 b0 51 00 1b 30 'E. .1...f!P.Q..0'
+  40 70 36 00 20 c2 31 00 00 1e 00 00 00 fd 00 39 '@p6. .1........9'
+  3f 1e 50 0f 00 0a 20 20 20 20 20 20 00 00 00 fc '?.P...      ....'
+  00 53 4f 4e 59 20 54 56 0a 20 20 20 20 20 00 6d '.SONY TV.     .m'
+Checksum: 0x6d
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

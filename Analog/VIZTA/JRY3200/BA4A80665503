@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002a59003201000000
-091f010308301a78ea2d36a75438ae26
-0d4f5421080081008140818081c0a9c0
-95007140b300023a801871382d40582c
-4500dc0c1100001e2a4480a070382740
-302c4500dc0c1100001e662156aa5100
-1e30468f3300dc0c1100001e000000fc
-005647410a20202020202020202000df
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 2a 59 00 32 01 00 00 00
+09 1f 01 03 08 30 1a 78 ea 2d 36 a7 54 38 ae 26
+0d 4f 54 21 08 00 81 00 81 40 81 80 81 c0 a9 c0
+95 00 71 40 b3 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1e 2a 44 80 a0 70 38 27 40
+30 2c 45 00 dc 0c 11 00 00 1e 66 21 56 aa 51 00
+1e 30 46 8f 33 00 dc 0c 11 00 00 1e 00 00 00 fc
+00 56 47 41 0a 20 20 20 20 20 20 20 20 20 00 df
 
 00 ff ff ff ff ff ff 00 2a 59 00 32 01 00 00 00
 09 1f 01 03 08 30 1a 78 ea 2d 36 a7 54 38 ae 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: JRY
     Model: 12800
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 9 of 2021
   Basic Display Parameters & Features:
     Analog display
@@ -69,3 +67,29 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   3 Vback   24 Vpol P
     Display Product Name: 'VGA'
 Checksum: 0xdf
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 2a 59 00 32 01 00 00 00 '........*Y.2....'
+  09 1f 01 03 08 30 1a 78 ea 2d 36 a7 54 38 ae 26 '.....0.x.-6.T8.&'
+  0d 4f 54 21 08 00 81 00 81 40 81 80 81 c0 a9 c0 '.OT!.....@......'
+  95 00 71 40 b3 00 02 3a 80 18 71 38 2d 40 58 2c '..q@...:..q8-@X,'
+  45 00 dc 0c 11 00 00 1e 2a 44 80 a0 70 38 27 40 'E.......*D..p8'@'
+  30 2c 45 00 dc 0c 11 00 00 1e 66 21 56 aa 51 00 '0,E.......f!V.Q.'
+  1e 30 46 8f 33 00 dc 0c 11 00 00 1e 00 00 00 fc '.0F.3...........'
+  00 56 47 41 0a 20 20 20 20 20 20 20 20 20 00 df '.VGA.         ..'
+Checksum: 0xdf
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

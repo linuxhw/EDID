@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005010100dcf03301
-311c010381150d78ae00000000000000
-00000000000001010101010101010101
-0101010101012c1a00a0502026303a1e
-1604d88700000018000000fd002d411e
-3708000a202020202020000000ff0031
-0a202020202020202020202000000010
-00000000000000000000000000000004
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 01 01 00 dc f0 33 01
+31 1c 01 03 81 15 0d 78 ae 00 00 00 00 00 00 00
+00 00 00 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2c 1a 00 a0 50 20 26 30 3a 1e
+16 04 d8 87 00 00 00 18 00 00 00 fd 00 2d 41 1e
+37 08 00 0a 20 20 20 20 20 20 00 00 00 ff 00 31
+0a 20 20 20 20 20 20 20 20 20 20 20 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04
 
 00 ff ff ff ff ff ff 00 05 01 01 00 dc f0 33 01
 31 1c 01 03 81 15 0d 78 ae 00 00 00 00 00 00 00
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AHA
     Model: 1
-    Serial Number: 20181212
+    Serial Number: ...
     Made in: week 49 of 2018
   Basic Display Parameters & Features:
     Digital display
@@ -51,6 +49,33 @@ Block 0, Base EDID:
                  Vfront   17 Vsync   6 Vback   15 Vpol N
     Display Range Limits:
       Monitor ranges (GTF): 45-65 Hz V, 30-55 kHz H, max dotclock 80 MHz
-    Display Product Serial Number: '1'
+    Display Product Serial Number: ...
     Dummy Descriptor:
 Checksum: 0x04
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 01 01 00 dc f0 33 01 '..............3.'
+  31 1c 01 03 81 15 0d 78 ae 00 00 00 00 00 00 00 '1......x........'
+  00 00 00 00 00 00 01 01 01 01 01 01 01 01 01 01 '................'
+  01 01 01 01 01 01 2c 1a 00 a0 50 20 26 30 3a 1e '......,...P &0:.'
+  16 04 d8 87 00 00 00 18 00 00 00 fd 00 2d 41 1e '.............-A.'
+  37 08 00 0a 20 20 20 20 20 20 00 00 00 ff 00 31 '7...      .....1'
+  0a 20 20 20 20 20 20 20 20 20 20 20 00 00 00 10 '.           ....'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 '................'
+Checksum: 0x04
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Missing Display Product Name.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

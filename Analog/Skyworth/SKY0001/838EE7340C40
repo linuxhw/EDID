@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004d79010001010101
-18180104685932780a0dc9a057479827
-12484cbfef0031404540614081000101
-818001010101000000fe006d6f6e6974
-6f720a2020202020662150b051001b30
-4070360075f23100001e000000fc0054
-562d6d6f6e69746f720a2020000000fd
-00314c0f500e000a2020202020200006
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 79 01 00 01 01 01 01
+18 18 01 04 68 59 32 78 0a 0d c9 a0 57 47 98 27
+12 48 4c bf ef 00 31 40 45 40 61 40 81 00 01 01
+81 80 01 01 01 01 00 00 00 fe 00 6d 6f 6e 69 74
+6f 72 0a 20 20 20 20 20 66 21 50 b0 51 00 1b 30
+40 70 36 00 75 f2 31 00 00 1e 00 00 00 fc 00 54
+56 2d 6d 6f 6e 69 74 6f 72 0a 20 20 00 00 00 fd
+00 31 4c 0f 50 0e 00 0a 20 20 20 20 20 20 00 06
 
 00 ff ff ff ff ff ff 00 4d 79 01 00 01 01 01 01
 18 18 01 04 68 59 32 78 0a 0d c9 a0 57 47 98 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SKY
     Model: 1
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 24 of 2014
   Basic Display Parameters & Features:
     Analog display
@@ -74,4 +72,35 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 49-76 Hz V, 15-80 kHz H, max dotclock 140 MHz
 Checksum: 0x06
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4d 79 01 00 01 01 01 01 '........My......'
+  18 18 01 04 68 59 32 78 0a 0d c9 a0 57 47 98 27 '....hY2x....WG.''
+  12 48 4c bf ef 00 31 40 45 40 61 40 81 00 01 01 '.HL...1@E@a@....'
+  81 80 01 01 01 01 00 00 00 fe 00 6d 6f 6e 69 74 '...........monit'
+  6f 72 0a 20 20 20 20 20 66 21 50 b0 51 00 1b 30 'or.     f!P.Q..0'
+  40 70 36 00 75 f2 31 00 00 1e 00 00 00 fc 00 54 '@p6.u.1........T'
+  56 2d 6d 6f 6e 69 74 6f 72 0a 20 20 00 00 00 fd 'V-monitor.  ....'
+  00 31 4c 0f 50 0e 00 0a 20 20 20 20 20 20 00 06 '.1L.P...      ..'
+Checksum: 0x06
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Missing preferred timing.
+  Detailed Timing Descriptor #1: Invalid detailed timing descriptor ordering.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

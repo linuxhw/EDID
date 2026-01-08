@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff005a63292001010101
-161301030e321d782edc55a359489e24
-115054bfef80b300a94081808140714f
-01010101010121399030621a274068b0
-3600ef231100001c000000ff00515452
-3039323238353836390a000000fd0032
-4b1e5211000a202020202020000000fc
-00564132323136772d340a20202000be
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5a 63 29 20 01 01 01 01
+16 13 01 03 0e 32 1d 78 2e dc 55 a3 59 48 9e 24
+11 50 54 bf ef 80 b3 00 a9 40 81 80 81 40 71 4f
+01 01 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0
+36 00 ef 23 11 00 00 1c 00 00 00 ff 00 51 54 52
+30 39 32 32 38 35 38 36 39 0a 00 00 00 fd 00 32
+4b 1e 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 41 32 32 31 36 77 2d 34 0a 20 20 20 00 be
 
 00 ff ff ff ff ff ff 00 5a 63 29 20 01 01 01 01
 16 13 01 03 0e 32 1d 78 2e dc 55 a3 59 48 9e 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: VSC
     Model: 8233
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 22 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -71,8 +69,34 @@ Block 0, Base EDID:
     DTD 1:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz (495 mm x 291 mm)
                  Hfront  104 Hsync 176 Hback  280 Hpol N
                  Vfront    3 Vsync   6 Vback   30 Vpol P
-    Display Product Serial Number: 'QTR092285869'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-82 kHz H, max dotclock 170 MHz
     Display Product Name: 'VA2216w-4'
 Checksum: 0xbe
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5a 63 29 20 01 01 01 01 '........Zc) ....'
+  16 13 01 03 0e 32 1d 78 2e dc 55 a3 59 48 9e 24 '.....2.x..U.YH.$'
+  11 50 54 bf ef 80 b3 00 a9 40 81 80 81 40 71 4f '.PT......@...@qO'
+  01 01 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0 '......!9.0b.'@h.'
+  36 00 ef 23 11 00 00 1c 00 00 00 ff 00 51 54 52 '6..#.........QTR'
+  30 39 32 32 38 35 38 36 39 0a 00 00 00 fd 00 32 '092285869......2'
+  4b 1e 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
+  00 56 41 32 32 31 36 77 2d 34 0a 20 20 20 00 be '.VA2216w-4.   ..'
+Checksum: 0xbe
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004e14bf0a01000000
-281b0103683c21782a62b5a15957a226
-0c5054bfef00a9c09500810081808140
-81c0714001c1023a801871382d40582c
-450009252100001e662156aa51001e30
-468f330099e61000001e2a4480a07038
-27403020350099e61000001e000000fc
-004632370a202020202020202020000a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4e 14 bf 0a 01 00 00 00
+28 1b 01 03 68 3c 21 78 2a 62 b5 a1 59 57 a2 26
+0c 50 54 bf ef 00 a9 c0 95 00 81 00 81 80 81 40
+81 c0 71 40 01 c1 02 3a 80 18 71 38 2d 40 58 2c
+45 00 09 25 21 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 99 e6 10 00 00 1e 2a 44 80 a0 70 38
+27 40 30 20 35 00 99 e6 10 00 00 1e 00 00 00 fc
+00 46 32 37 0a 20 20 20 20 20 20 20 20 20 00 0a
 
 00 ff ff ff ff ff ff 00 4e 14 bf 0a 01 00 00 00
 28 1b 01 03 68 3c 21 78 2a 62 b5 a1 59 57 a2 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SPT
     Model: 2751
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 40 of 2017
   Basic Display Parameters & Features:
     Analog display
@@ -79,3 +77,33 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   31 Vpol P
     Display Product Name: 'F27'
 Checksum: 0x0a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4e 14 bf 0a 01 00 00 00 '........N.......'
+  28 1b 01 03 68 3c 21 78 2a 62 b5 a1 59 57 a2 26 '(...h<!x*b..YW.&'
+  0c 50 54 bf ef 00 a9 c0 95 00 81 00 81 80 81 40 '.PT............@'
+  81 c0 71 40 01 c1 02 3a 80 18 71 38 2d 40 58 2c '..q@...:..q8-@X,'
+  45 00 09 25 21 00 00 1e 66 21 56 aa 51 00 1e 30 'E..%!...f!V.Q..0'
+  46 8f 33 00 99 e6 10 00 00 1e 2a 44 80 a0 70 38 'F.3.......*D..p8'
+  27 40 30 20 35 00 99 e6 10 00 00 1e 00 00 00 fc ''@0 5...........'
+  00 46 32 37 0a 20 20 20 20 20 20 20 20 20 00 0a '.F27.         ..'
+Checksum: 0x0a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x01c1.
+  Detailed Timing Descriptor #1: Mismatch of image size 521x293 mm vs display size 600x330 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 409x230 mm vs display size 600x330 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 409x230 mm vs display size 600x330 mm.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

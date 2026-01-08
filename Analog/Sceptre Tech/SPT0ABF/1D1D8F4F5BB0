@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004e14bf0a01000000
-2a1e0103683c21782a62b5a15957a226
-0c5054bfef0081c0810081408180a9c0
-b30001010101023a801871382d40582c
-450055502100001e662156aa51001e30
-468f330055502100001e2a4480a07038
-27403020350055502100001e000000fc
-0053636570747265204632370a20007b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4e 14 bf 0a 01 00 00 00
+2a 1e 01 03 68 3c 21 78 2a 62 b5 a1 59 57 a2 26
+0c 50 54 bf ef 00 81 c0 81 00 81 40 81 80 a9 c0
+b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 55 50 21 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 55 50 21 00 00 1e 2a 44 80 a0 70 38
+27 40 30 20 35 00 55 50 21 00 00 1e 00 00 00 fc
+00 53 63 65 70 74 72 65 20 46 32 37 0a 20 00 7b
 
 00 ff ff ff ff ff ff 00 4e 14 bf 0a 01 00 00 00
 2a 1e 01 03 68 3c 21 78 2a 62 b5 a1 59 57 a2 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SPT
     Model: 2751
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 42 of 2020
   Basic Display Parameters & Features:
     Analog display
@@ -78,3 +76,29 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   31 Vpol P
     Display Product Name: 'Sceptre F27'
 Checksum: 0x7b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4e 14 bf 0a 01 00 00 00 '........N.......'
+  2a 1e 01 03 68 3c 21 78 2a 62 b5 a1 59 57 a2 26 '*...h<!x*b..YW.&'
+  0c 50 54 bf ef 00 81 c0 81 00 81 40 81 80 a9 c0 '.PT........@....'
+  b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 55 50 21 00 00 1e 66 21 56 aa 51 00 1e 30 'E.UP!...f!V.Q..0'
+  46 8f 33 00 55 50 21 00 00 1e 2a 44 80 a0 70 38 'F.3.UP!...*D..p8'
+  27 40 30 20 35 00 55 50 21 00 00 1e 00 00 00 fc ''@0 5.UP!.......'
+  00 53 63 65 70 74 72 65 20 46 32 37 0a 20 00 7b '.Sceptre F27. .{'
+Checksum: 0x7b
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

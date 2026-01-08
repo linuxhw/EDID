@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0050e3204801010101
-0d180103081e17782a37259e584a9726
-195054afce0061400101010101010101
-01010101010164190040410026301888
-360030e410000006000000ff00343130
-595050540a2020202020000000fd0038
-4b1e3d08000a202020202020000000fc
-0034383230354c470a20202020200055
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 50 e3 20 48 01 01 01 01
+0d 18 01 03 08 1e 17 78 2a 37 25 9e 58 4a 97 26
+19 50 54 af ce 00 61 40 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 30 e4 10 00 00 06 00 00 00 ff 00 34 31 30
+59 50 50 54 0a 20 20 20 20 20 00 00 00 fd 00 38
+4b 1e 3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 34 38 32 30 35 4c 47 0a 20 20 20 20 20 00 55
 
 00 ff ff ff ff ff ff 00 50 e3 20 48 01 01 01 01
 0d 18 01 03 08 1e 17 78 2a 37 25 9e 58 4a 97 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: TGC
     Model: 18464
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 13 of 2014
   Basic Display Parameters & Features:
     Analog display
@@ -62,8 +60,32 @@ Block 0, Base EDID:
     DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (analog composite, serrate, 304 mm x 228 mm)
                  Hfront   24 Hsync 136 Hback  160 Hpol N
                  Vfront    3 Vsync   6 Vback   29 Vpol N
-    Display Product Serial Number: '410YPPT'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-61 kHz H, max dotclock 80 MHz
     Display Product Name: '48205LG'
 Checksum: 0x55
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 50 e3 20 48 01 01 01 01 '........P. H....'
+  0d 18 01 03 08 1e 17 78 2a 37 25 9e 58 4a 97 26 '.......x*7%.XJ.&'
+  19 50 54 af ce 00 61 40 01 01 01 01 01 01 01 01 '.PT...a@........'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 30 e4 10 00 00 06 00 00 00 ff 00 34 31 30 '6.0..........410'
+  59 50 50 54 0a 20 20 20 20 20 00 00 00 fd 00 38 'YPPT.     .....8'
+  4b 1e 3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.=...      ....'
+  00 34 38 32 30 35 4c 47 0a 20 20 20 20 20 00 55 '.48205LG.     .U'
+Checksum: 0x55
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

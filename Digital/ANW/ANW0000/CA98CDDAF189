@@ -1,0 +1,164 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 d7 00 00 00 00 00 00
+ff 22 01 03 80 32 1f 78 07 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 60 18 80 a0 70 e0 14 10 30 20
+3a 00 40 90 20 00 00 02 00 00 00 fd 00 17 f0 0f
+ff 06 00 0a 20 20 20 20 20 20 00 00 00 fc 00 31
+39 32 30 78 34 34 30 20 43 56 54 0a 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 13
+
+02 03 18 40 23 09 06 07 67 03 0c 00 00 00 10 0c
+67 d8 5d c4 01 0c 80 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 eb
+
+00 ff ff ff ff ff ff 00 05 d7 00 00 00 00 00 00
+ff 22 01 03 80 32 1f 78 07 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 60 18 80 a0 70 e0 14 10 30 20
+3a 00 40 90 20 00 00 02 00 00 00 fd 00 17 f0 0f
+ff 06 00 0a 20 20 20 20 20 20 00 00 00 fc 00 31
+39 32 30 78 34 34 30 20 43 56 54 0a 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 13
+
+02 03 18 40 23 09 06 07 67 03 0c 00 00 00 10 0c
+67 d8 5d c4 01 0c 80 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 eb
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: ANW
+    Model: 0
+    Model year: 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 50 cm x 31 cm
+    Gamma: 2.20
+    Monochrome or grayscale display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+    Supports GTF timings within operating range
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x480    60.000000 Hz   4:1     30.000 kHz     62.400000 MHz (analog composite, 576 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync  10 Vback    7 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 23-240 Hz V, 15-255 kHz H, max dotclock 60 MHz
+    Display Product Name: '1920x440 CVT'
+    Empty Descriptor
+  Extension blocks: 1
+Checksum: 0x13
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 0
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1
+      Supported sample sizes (bits): 24 20 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 0.0.0.0
+    DC_30bit
+    Maximum TMDS clock: 60 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 60 MHz
+    SCDC Present
+Checksum: 0xeb  Unused space in Extension Block: 103 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 d7 00 00 00 00 00 00 '................'
+  ff 22 01 03 80 32 1f 78 07 ee 95 a3 54 4c 99 26 '."...2.x....TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 60 18 80 a0 70 e0 14 10 30 20 '......`...p...0 '
+  3a 00 40 90 20 00 00 02 00 00 00 fd 00 17 f0 0f ':.@. ...........'
+  ff 06 00 0a 20 20 20 20 20 20 00 00 00 fc 00 31 '....      .....1'
+  39 32 30 78 34 34 30 20 43 56 54 0a 00 00 00 00 '920x440 CVT.....'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 13 '................'
+Checksum: 0x13
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 0
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1
+      Supported sample sizes (bits): 24 20 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 0.0.0.0
+    DC_30bit
+    Maximum TMDS clock: 60 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 60 MHz
+    SCDC Present
+Checksum: 0xeb  Unused space in Extension Block: 103 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 62.400 MHz (Monitor: 60.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: EDID 1.3 does not support week 0xff.
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 576x144 mm vs display size 500x310 mm.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Max TMDS rate is > 0 and <= 340 or > 600.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Max TMDS rate is > 0 and <= 340 or > 600.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 576x144mm, which is larger than the display size 500.0x310.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL
