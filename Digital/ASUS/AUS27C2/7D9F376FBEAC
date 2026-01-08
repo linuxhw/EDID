@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006b3c22701010101
-221d0103803c2278ea5835a655539f28
-0e5054bfef00714f8180814081c09500
-b300d1c0d1cf023a801871382d40582c
-450056502100001e000000fd00304b1e
-5517000a202020202020000000fc0056
-4c3237380a20202020202020000000ff
-004b384c4d51533131363939310a010d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 b3 c2 27 01 01 01 01
+22 1d 01 03 80 3c 22 78 ea 58 35 a6 55 53 9f 28
+0e 50 54 bf ef 00 71 4f 81 80 81 40 81 c0 95 00
+b3 00 d1 c0 d1 cf 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 fd 00 30 4b 1e
+55 17 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+4c 32 37 38 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 4b 38 4c 4d 51 53 31 31 36 39 39 31 0a 01 0d
 
 00 ff ff ff ff ff ff 00 06 b3 c2 27 01 01 01 01
 22 1d 01 03 80 3c 22 78 ea 58 35 a6 55 53 9f 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AUS
     Model: 10178
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 34 of 2019
   Basic Display Parameters & Features:
     Digital display
@@ -72,6 +70,28 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 48-75 Hz V, 30-85 kHz H, max dotclock 230 MHz
     Display Product Name: 'VL278'
-    Display Product Serial Number: 'K8LMQS116991'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x0d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 b3 c2 27 01 01 01 01 '...........'....'
+  22 1d 01 03 80 3c 22 78 ea 58 35 a6 55 53 9f 28 '"....<"x.X5.US.('
+  0e 50 54 bf ef 00 71 4f 81 80 81 40 81 c0 95 00 '.PT...qO...@....'
+  b3 00 d1 c0 d1 cf 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 fd 00 30 4b 1e 'E.VP!........0K.'
+  55 17 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56 'U...      .....V'
+  4c 32 37 38 0a 20 20 20 20 20 20 20 00 00 00 ff 'L278.       ....'
+  00 4b 38 4c 4d 51 53 31 31 36 39 39 31 0a 01 0d '.K8LMQS116991...'
+Checksum: 0x0d
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+
+EDID conformity: FAIL
