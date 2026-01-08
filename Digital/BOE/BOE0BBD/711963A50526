@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0009e5bd0b00000000
-28200104a51e1178031c659b585e922a
-22505400000001010101010101010101
-010101010101c23780cc703828406c30
-aa0035ae1000001a2c2580cc70382840
-6c30aa0035ae1000001a000000fd0028
-3c43430e010a202020202020000000fe
-004e5631343046484d2d4e345a0a01c2
-02031f00e3058000e60605014a4a486d
-1a00000301283c0000000000003c0000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000007b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 bd 0b 00 00 00 00
+28 20 01 04 a5 1e 11 78 03 1c 65 9b 58 5e 92 2a
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c2 37 80 cc 70 38 28 40 6c 30
+aa 00 35 ae 10 00 00 1a 2c 25 80 cc 70 38 28 40
+6c 30 aa 00 35 ae 10 00 00 1a 00 00 00 fd 00 28
+3c 43 43 0e 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 34 30 46 48 4d 2d 4e 34 5a 0a 01 c2
+
+02 03 1f 00 e3 05 80 00 e6 06 05 01 4a 4a 48 6d
+1a 00 00 03 01 28 3c 00 00 00 00 00 00 3c 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7b
 
 00 ff ff ff ff ff ff 00 09 e5 bd 0b 00 00 00 00
 28 20 01 04 a5 1e 11 78 03 1c 65 9b 58 5e 92 2a
@@ -101,3 +100,84 @@ Block 1, CTA-861 Extension Block:
     Unknown: 0x00 0x00
   Audio Data Block:
 Checksum: 0x7b  Unused space in Extension Block: 96 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 bd 0b 00 00 00 00 '................'
+  28 20 01 04 a5 1e 11 78 03 1c 65 9b 58 5e 92 2a '( .....x..e.X^.*'
+  22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '"PT.............'
+  01 01 01 01 01 01 c2 37 80 cc 70 38 28 40 6c 30 '.......7..p8(@l0'
+  aa 00 35 ae 10 00 00 1a 2c 25 80 cc 70 38 28 40 '..5.....,%..p8(@'
+  6c 30 aa 00 35 ae 10 00 00 1a 00 00 00 fd 00 28 'l0..5..........('
+  3c 43 43 0e 01 0a 20 20 20 20 20 20 00 00 00 fe '<CC...      ....'
+  00 4e 56 31 34 30 46 48 4d 2d 4e 34 5a 0a 01 c2 '.NV140FHM-N4Z...'
+Checksum: 0xc2
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 74 (248.372 cd/m^2)
+    Desired content max frame-average luminance: 74 (248.372 cd/m^2)
+    Desired content min luminance: 72 (0.198 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Audio Data Block:
+Checksum: 0x7b  Unused space in Extension Block: 96 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 44.802 - 67.203 kHz (Monitor: 67.000 - 67.000 kHz)
+    Maximum Clock: 142.740 MHz (Monitor: 140.000 MHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Audio Data Block: Audio information is present, but bit 6 of Byte 3 of the CTA-861 Extension header indicates no Basic Audio support.
+  Audio Data Block: Broken CTA-861 audio block length 28.
+  Offset is 31, but should be 58.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Audio Data Block: Audio information is present, but bit 6 of Byte 3 of the CTA-861 Extension header indicates no Basic Audio support.
+  Audio Data Block: Broken CTA-861 audio block length 28.
+  Offset is 31, but should be 58.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

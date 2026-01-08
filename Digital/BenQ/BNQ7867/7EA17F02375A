@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d1677845540000
-0c150103802c19782ed285a358539e26
-0f5054a56b907100810081c0010161c0
-0101714fa9c0302a40c8608464301850
-3500bbf91000001e000000ff00503342
-30343037323032360a20000000fd0032
-4c1e5315000a202020202020000000fc
-0042656e5120474c323033300a20003c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 67 78 45 54 00 00
+0c 15 01 03 80 2c 19 78 2e d2 85 a3 58 53 9e 26
+0f 50 54 a5 6b 90 71 00 81 00 81 c0 01 01 61 c0
+01 01 71 4f a9 c0 30 2a 40 c8 60 84 64 30 18 50
+35 00 bb f9 10 00 00 1e 00 00 00 ff 00 50 33 42
+30 34 30 37 32 30 32 36 0a 20 00 00 00 fd 00 32
+4c 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 47 4c 32 30 33 30 0a 20 00 3c
 
 00 ff ff ff ff ff ff 00 09 d1 67 78 45 54 00 00
 0c 15 01 03 80 2c 19 78 2e d2 85 a3 58 53 9e 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30823
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 12 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -64,8 +62,39 @@ Block 0, Base EDID:
     DTD 1:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (443 mm x 249 mm)
                  Hfront   24 Hsync  80 Hback   96 Hpol P
                  Vfront    3 Vsync   5 Vback   92 Vpol P
-    Display Product Serial Number: 'P3B04072026'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 210 MHz
     Display Product Name: 'BenQ GL2030'
 Checksum: 0x3c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 67 78 45 54 00 00 '..........gxET..'
+  0c 15 01 03 80 2c 19 78 2e d2 85 a3 58 53 9e 26 '.....,.x....XS.&'
+  0f 50 54 a5 6b 90 71 00 81 00 81 c0 01 01 61 c0 '.PT.k.q.......a.'
+  01 01 71 4f a9 c0 30 2a 40 c8 60 84 64 30 18 50 '..qO..0*@.`.d0.P'
+  35 00 bb f9 10 00 00 1e 00 00 00 ff 00 50 33 42 '5............P3B'
+  30 34 30 37 32 30 32 36 0a 20 00 00 00 fd 00 32 '04072026. .....2'
+  4c 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 42 65 6e 51 20 47 4c 32 30 33 30 0a 20 00 3c '.BenQ GL2030. .<'
+Checksum: 0x3c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x53.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

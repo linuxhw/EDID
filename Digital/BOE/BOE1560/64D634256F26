@@ -1,0 +1,99 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 60 15 e7 0c 00 00
+20 21 01 04 a5 22 13 78 0a 58 f9 a6 58 55 9d 26
+0e 4e 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d2 38 80 18 71 38 3c 40 30 20
+36 00 58 c2 10 00 00 1a 00 00 00 fe 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fa 00 57
+49 53 54 52 4f 4e 20 54 5a 0a 20 0a 01 00 00 f9
+00 42 4c 51 31 35 36 30 0a 20 20 20 20 20 00 d7
+
+00 ff ff ff ff ff ff 00 09 e5 60 15 e7 0c 00 00
+20 21 01 04 a5 22 13 78 0a 58 f9 a6 58 55 9d 26
+0e 4e 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d2 38 80 18 71 38 3c 40 30 20
+36 00 58 c2 10 00 00 1a 00 00 00 fe 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fa 00 57
+49 53 54 52 4f 4e 20 54 5a 0a 20 0a 01 00 00 f9
+00 42 4c 51 31 35 36 30 0a 20 20 20 20 20 00 d7
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 5472
+    Serial Number: ...
+    Made in: week 32 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6494, 0.3447
+    Green: 0.3339, 0.6132
+    Blue : 0.1513, 0.0576
+    White: 0.3066, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   57.998405 Hz  16:9     66.118 kHz    145.460000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    3 Vsync   6 Vback   51 Vpol N
+    Alphanumeric Data String: ''
+    Standard Timing Identifications:
+      GTF     :   944x708    69.000496 Hz   4:3     50.853 kHz     63.465000 MHz
+      GTF     :   912x684    80.000275 Hz   4:3     57.360 kHz     69.750000 MHz
+      GTF     :   904x678    74.999763 Hz   4:3     53.100 kHz     63.295000 MHz
+      GTF     :   872x545    92.000000 Hz  16:10    52.900 kHz     61.364000 MHz
+      GTF     :   920x690    85.999549 Hz   4:3     62.350 kHz     76.316000 MHz
+      GTF     :   328x205    92.001317 Hz  16:10    19.964 kHz      7.826000 MHz
+    Detailed mode: 01 00 00 f9 00 42 4c 51 31 35 36 30 0a 20 20 20 20 20 '.....BLQ1560.     '
+Checksum: 0xd7
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 60 15 e7 0c 00 00 '..........`.....'
+  20 21 01 04 a5 22 13 78 0a 58 f9 a6 58 55 9d 26 ' !...".x.X..XU.&'
+  0e 4e 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.NT.............'
+  01 01 01 01 01 01 d2 38 80 18 71 38 3c 40 30 20 '.......8..q8<@0 '
+  36 00 58 c2 10 00 00 1a 00 00 00 fe 00 00 00 00 '6.X.............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fa 00 57 '...............W'
+  49 53 54 52 4f 4e 20 54 5a 0a 20 0a 01 00 00 f9 'ISTRON TZ. .....'
+  00 42 4c 51 31 35 36 30 0a 20 20 20 20 20 00 d7 '.BLQ1560.     ..'
+Checksum: 0xd7
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timing Identifications: Standard Timing 872x545 has a dubious odd vertical resolution.
+  Standard Timing Identifications: Standard Timing 328x205 has a dubious odd vertical resolution.
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Standard Timing Identifications: 0 values in the video timing:
+    Horizontal Active/Blanking 328/64
+    Horizontal Frontporch/Sync Width 0/32
+    Vertical Active/Blanking 205/12
+    Vertical Frontporch/Sync Width 1/3
+  Standard Timing Identifications: 0 or negative horizontal front porch.
+  Detailed Timing Descriptor #2: Pixelclock < 10 MHz, assuming invalid data 0x01 0x00.
+  Detailed Timing Descriptor #2: Invalid detailed timing descriptor ordering.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

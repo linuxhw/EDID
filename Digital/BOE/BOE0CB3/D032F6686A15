@@ -1,0 +1,86 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 b3 0c 00 00 00 00
+0f 22 01 04 a5 1d 12 78 07 26 a5 a4 56 4d 9e 25
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d4 69 00 a0 a0 40 3c 60 30 20
+36 00 1e b3 10 00 00 1a 00 00 00 fd 00 30 3c 64
+64 1c 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4b
+57 43 56 50 80 4e 53 31 33 51 44 4d 00 00 00 00
+00 02 41 01 b2 00 01 00 00 1a 41 0a 20 20 00 bd
+
+00 ff ff ff ff ff ff 00 09 e5 b3 0c 00 00 00 00
+0f 22 01 04 a5 1d 12 78 07 26 a5 a4 56 4d 9e 25
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d4 69 00 a0 a0 40 3c 60 30 20
+36 00 1e b3 10 00 00 1a 00 00 00 fd 00 30 3c 64
+64 1c 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4b
+57 43 56 50 80 4e 53 31 33 51 44 4d 00 00 00 00
+00 02 41 01 b2 00 01 00 00 1a 41 0a 20 20 00 bd
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 3251
+    Made in: week 15 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6406, 0.3378
+    Green: 0.3017, 0.6191
+    Blue : 0.1464, 0.0488
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   60.001772 Hz  16:10    99.603 kHz    270.920000 MHz (286 mm x 179 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   51 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-60 Hz V, 100-100 kHz H, max dotclock 280 MHz
+    Alphanumeric Data String: 'KWCVP'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 01 b2 00 01 00 00 1a 41 0a 20 20 '....A.......A.  '
+Checksum: 0xbd
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 b3 0c 00 00 00 00 '................'
+  0f 22 01 04 a5 1d 12 78 07 26 a5 a4 56 4d 9e 25 '.".....x.&..VM.%'
+  0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 d4 69 00 a0 a0 40 3c 60 30 20 '.......i...@<`0 '
+  36 00 1e b3 10 00 00 1a 00 00 00 fd 00 30 3c 64 '6............0<d'
+  64 1c 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4b 'd...      .....K'
+  57 43 56 50 80 4e 53 31 33 51 44 4d 00 00 00 00 'WCVP.NS13QDM....'
+  00 02 41 01 b2 00 01 00 00 1a 41 0a 20 20 00 bd '..A.......A.  ..'
+Checksum: 0xbd
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

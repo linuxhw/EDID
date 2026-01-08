@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e58a0c69000000
-23210104b52216780731a6a4544d9926
-0f505400000001010101010101010101
-0101010101011f6c00a0a04060603020
-360059d71000001a3ed800a0a0406060
-3020360059d71000001a000000fd0030
-78cccc37010a202020202020000000fe
-004e4531363051444d2d4e59320a008c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 8a 0c 69 00 00 00
+23 21 01 04 b5 22 16 78 07 31 a6 a4 54 4d 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1f 6c 00 a0 a0 40 60 60 30 20
+36 00 59 d7 10 00 00 1a 3e d8 00 a0 a0 40 60 60
+30 20 36 00 59 d7 10 00 00 1a 00 00 00 fd 00 30
+78 cc cc 37 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 36 30 51 44 4d 2d 4e 59 32 0a 00 8c
 
 00 ff ff ff ff ff ff 00 09 e5 8a 0c 69 00 00 00
 23 21 01 04 b5 22 16 78 07 31 a6 a4 54 4d 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BOE
     Model: 3210
-    Serial Number: 105
+    Serial Number: ...
     Made in: week 35 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -57,3 +55,38 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 48-120 Hz V, 204-204 kHz H, max dotclock 550 MHz
     Alphanumeric Data String: 'NE160QDM-NY2'
 Checksum: 0x8c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 8a 0c 69 00 00 00 '............i...'
+  23 21 01 04 b5 22 16 78 07 31 a6 a4 54 4d 99 26 '#!...".x.1..TM.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 1f 6c 00 a0 a0 40 60 60 30 20 '.......l...@``0 '
+  36 00 59 d7 10 00 00 1a 3e d8 00 a0 a0 40 60 60 '6.Y.....>....@``'
+  30 20 36 00 59 d7 10 00 00 1a 00 00 00 fd 00 30 '0 6.Y..........0'
+  78 cc cc 37 01 0a 20 20 20 20 20 20 00 00 00 fe 'x..7..      ....'
+  00 4e 45 31 36 30 51 44 4d 2d 4e 59 32 0a 00 8c '.NE160QDM-NY2...'
+Checksum: 0x8c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 101.761 - 203.522 kHz (Monitor: 204.000 - 204.000 kHz)
+    Maximum Clock: 553.580 MHz (Monitor: 550.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

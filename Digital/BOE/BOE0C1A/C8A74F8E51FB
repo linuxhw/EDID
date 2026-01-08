@@ -1,0 +1,155 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 1a 0c 00 00 00 00
+01 21 01 04 a5 1e 13 78 03 b7 f5 a5 54 4d 9d 24
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9b 6a 00 b4 a0 40 3c 60 30 20
+36 00 2e bc 10 00 00 1a 49 55 00 b4 a0 40 3c 60
+30 20 36 00 2e bc 10 00 00 1a 00 00 00 fe 00 46
+57 38 50 37 80 4e 45 31 34 4e 35 31 00 00 00 00
+00 02 41 21 b2 01 11 00 00 0a 41 0a 20 20 01 8a
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 6b 6b 41 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7b
+
+00 ff ff ff ff ff ff 00 09 e5 1a 0c 00 00 00 00
+01 21 01 04 a5 1e 13 78 03 b7 f5 a5 54 4d 9d 24
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9b 6a 00 b4 a0 40 3c 60 30 20
+36 00 2e bc 10 00 00 1a 49 55 00 b4 a0 40 3c 60
+30 20 36 00 2e bc 10 00 00 1a 00 00 00 fe 00 46
+57 38 50 37 80 4e 45 31 34 4e 35 31 00 00 00 00
+00 02 41 21 b2 01 11 00 00 0a 41 0a 20 20 01 8a
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 6b 6b 41 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 3098
+    Made in: week 1 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6464, 0.3310
+    Green: 0.3017, 0.6162
+    Blue : 0.1435, 0.0576
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   60.001319 Hz  16:10    99.602 kHz    272.910000 MHz (302 mm x 188 mm)
+                 Hfront   48 Hsync  32 Hback  100 Hpol P
+                 Vfront    3 Vsync   6 Vback   51 Vpol N
+    DTD 2:  2560x1600   48.001495 Hz  16:10    79.682 kHz    218.330000 MHz (302 mm x 188 mm)
+                 Hfront   48 Hsync  32 Hback  100 Hpol P
+                 Vfront    3 Vsync   6 Vback   51 Vpol N
+    Alphanumeric Data String: 'FW8P7'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 21 b2 01 11 00 00 0a 41 0a 20 20 '....A!......A.  '
+  Extension blocks: 1
+Checksum: 0x8a
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 107 (507.620 cd/m^2)
+    Desired content max frame-average luminance: 107 (507.620 cd/m^2)
+    Desired content min luminance: 65 (0.330 cd/m^2)
+Checksum: 0x7b  Unused space in Extension Block: 112 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 1a 0c 00 00 00 00 '................'
+  01 21 01 04 a5 1e 13 78 03 b7 f5 a5 54 4d 9d 24 '.!.....x....TM.$'
+  0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 9b 6a 00 b4 a0 40 3c 60 30 20 '.......j...@<`0 '
+  36 00 2e bc 10 00 00 1a 49 55 00 b4 a0 40 3c 60 '6.......IU...@<`'
+  30 20 36 00 2e bc 10 00 00 1a 00 00 00 fe 00 46 '0 6............F'
+  57 38 50 37 80 4e 45 31 34 4e 35 31 00 00 00 00 'W8P7.NE14N51....'
+  00 02 41 21 b2 01 11 00 00 0a 41 0a 20 20 01 8a '..A!......A.  ..'
+Checksum: 0x8a
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 107 (507.620 cd/m^2)
+    Desired content max frame-average luminance: 107 (507.620 cd/m^2)
+    Desired content min luminance: 65 (0.330 cd/m^2)
+Checksum: 0x7b  Unused space in Extension Block: 112 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Range Limits Descriptor.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

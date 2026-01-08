@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d188769b310000
-260f0104a5221b78e2c4f6a3574a9c23
-114f54bdef80714f81908180818c0101
-010101010101302a009851002a403070
-1300782d1100001ed50980a0205e6310
-10605208782d1100001a000000fd0038
-4c1f530e000a202020202020000000fc
-0042656e512046503731470a202000cf
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 88 76 9b 31 00 00
+26 0f 01 04 a5 22 1b 78 e2 c4 f6 a3 57 4a 9c 23
+11 4f 54 bd ef 80 71 4f 81 90 81 80 81 8c 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e d5 09 80 a0 20 5e 63 10
+10 60 52 08 78 2d 11 00 00 1a 00 00 00 fd 00 38
+4c 1f 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 46 50 37 31 47 0a 20 20 00 cf
 
 00 ff ff ff ff ff ff 00 09 d1 88 76 9b 31 00 00
 26 0f 01 04 a5 22 1b 78 e2 c4 f6 a3 57 4a 9c 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30344
-    Serial Number: 12699
+    Serial Number: ...
     Made in: week 38 of 2005
   Basic Display Parameters & Features:
     Digital display
@@ -75,4 +73,40 @@ Block 0, Base EDID:
     Display Product Name: 'BenQ FP71G'
 Checksum: 0xcf
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 88 76 9b 31 00 00 '...........v.1..'
+  26 0f 01 04 a5 22 1b 78 e2 c4 f6 a3 57 4a 9c 23 '&....".x....WJ.#'
+  11 4f 54 bd ef 80 71 4f 81 90 81 80 81 8c 01 01 '.OT...qO........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e d5 09 80 a0 20 5e 63 10 '..x-........ ^c.'
+  10 60 52 08 78 2d 11 00 00 1a 00 00 00 fd 00 38 '.`R.x-.........8'
+  4c 1f 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 42 65 6e 51 20 46 50 37 31 47 0a 20 20 00 cf '.BenQ FP71G.  ..'
+Checksum: 0xcf
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 141.822 MHz (Monitor: 140.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 376x301 mm vs display size 340x270 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 376x301 mm vs display size 340x270 mm.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 376x301mm, which is larger than the display size 340.0x270.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

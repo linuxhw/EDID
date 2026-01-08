@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d1ce7845540000
-101a010380351e782e6b35a455559f27
-0c5054a56b80d1c081c081008180a9c0
-b30001010101023a801871382d40582c
-4500132b2100001e000000ff004c3447
-3038323638534c300a20000000fd0032
-4c1e5311000a202020202020000000fc
-0042656e5120474c323436300a200075
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 ce 78 45 54 00 00
+10 1a 01 03 80 35 1e 78 2e 6b 35 a4 55 55 9f 27
+0c 50 54 a5 6b 80 d1 c0 81 c0 81 00 81 80 a9 c0
+b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2b 21 00 00 1e 00 00 00 ff 00 4c 34 47
+30 38 32 36 38 53 4c 30 0a 20 00 00 00 fd 00 32
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 47 4c 32 34 36 30 0a 20 00 75
 
 00 ff ff ff ff ff ff 00 09 d1 ce 78 45 54 00 00
 10 1a 01 03 80 35 1e 78 2e 6b 35 a4 55 55 9f 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30926
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 16 of 2016
   Basic Display Parameters & Features:
     Digital display
@@ -64,8 +62,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (531 mm x 299 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'L4G08268SL0'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'BenQ GL2460'
 Checksum: 0x75
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 ce 78 45 54 00 00 '...........xET..'
+  10 1a 01 03 80 35 1e 78 2e 6b 35 a4 55 55 9f 27 '.....5.x.k5.UU.''
+  0c 50 54 a5 6b 80 d1 c0 81 c0 81 00 81 80 a9 c0 '.PT.k...........'
+  b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 13 2b 21 00 00 1e 00 00 00 ff 00 4c 34 47 'E..+!........L4G'
+  30 38 32 36 38 53 4c 30 0a 20 00 00 00 fd 00 32 '08268SL0. .....2'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 42 65 6e 51 20 47 4c 32 34 36 30 0a 20 00 75 '.BenQ GL2460. .u'
+Checksum: 0x75
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

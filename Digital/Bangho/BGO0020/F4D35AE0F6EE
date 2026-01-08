@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0008ef2000502d3101
-0a170103802c19782ac905a3574b9c25
-125054bfce009500810081c06140810f
-614f4540454f7c2e401062841c3060a8
-1300bbf91000001e000000ff00313233
-3435363738390a202020000000fd0038
-4b1e510e000a202020202020000000fc
-00454c32303830574c0a202020200092
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 08 ef 20 00 50 2d 31 01
+0a 17 01 03 80 2c 19 78 2a c9 05 a3 57 4b 9c 25
+12 50 54 bf ce 00 95 00 81 00 81 c0 61 40 81 0f
+61 4f 45 40 45 4f 7c 2e 40 10 62 84 1c 30 60 a8
+13 00 bb f9 10 00 00 1e 00 00 00 ff 00 31 32 33
+34 35 36 37 38 39 0a 20 20 20 00 00 00 fd 00 38
+4b 1e 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 45 4c 32 30 38 30 57 4c 0a 20 20 20 20 00 92
 
 00 ff ff ff ff ff ff 00 08 ef 20 00 50 2d 31 01
 0a 17 01 03 80 2c 19 78 2a c9 05 a3 57 4b 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BGO
     Model: 32
-    Serial Number: 20000080
+    Serial Number: ...
     Made in: week 10 of 2013
   Basic Display Parameters & Features:
     Digital display
@@ -67,8 +65,32 @@ Block 0, Base EDID:
     DTD 1:  1600x900    60.259755 Hz  16:9     55.921 kHz    119.000000 MHz (443 mm x 249 mm)
                  Hfront   96 Hsync 168 Hback  264 Hpol P
                  Vfront    1 Vsync   3 Vback   24 Vpol P
-    Display Product Serial Number: '123456789'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-81 kHz H, max dotclock 140 MHz
     Display Product Name: 'EL2080WL'
 Checksum: 0x92
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 08 ef 20 00 50 2d 31 01 '.......... .P-1.'
+  0a 17 01 03 80 2c 19 78 2a c9 05 a3 57 4b 9c 25 '.....,.x*...WK.%'
+  12 50 54 bf ce 00 95 00 81 00 81 c0 61 40 81 0f '.PT.........a@..'
+  61 4f 45 40 45 4f 7c 2e 40 10 62 84 1c 30 60 a8 'aOE@EO|.@.b..0`.'
+  13 00 bb f9 10 00 00 1e 00 00 00 ff 00 31 32 33 '.............123'
+  34 35 36 37 38 39 0a 20 20 20 00 00 00 fd 00 38 '456789.   .....8'
+  4b 1e 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
+  00 45 4c 32 30 38 30 57 4c 0a 20 20 20 20 00 92 '.EL2080WL.    ..'
+Checksum: 0x92
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

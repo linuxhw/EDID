@@ -1,0 +1,84 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 6b 0c 00 00 00 00
+1d 21 01 04 95 22 13 78 02 f8 90 95 5e 59 94 29
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 af 41 80 8c 71 38 82 40 30 20
+35 00 58 c2 10 00 00 1a 8c 34 80 8c 71 38 82 40
+30 20 35 00 58 c2 10 00 00 1a 00 00 00 fe 00 38
+58 48 56 4e 80 4e 56 31 35 4e 34 56 00 00 00 00
+00 00 41 21 96 00 10 00 00 0a 01 0a 20 20 00 4c
+
+00 ff ff ff ff ff ff 00 09 e5 6b 0c 00 00 00 00
+1d 21 01 04 95 22 13 78 02 f8 90 95 5e 59 94 29
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 af 41 80 8c 71 38 82 40 30 20
+35 00 58 c2 10 00 00 1a 8c 34 80 8c 71 38 82 40
+30 20 35 00 58 c2 10 00 00 1a 00 00 00 fe 00 38
+58 48 56 4e 80 4e 56 31 35 4e 34 56 00 00 00 00
+00 00 41 21 96 00 10 00 00 0a 01 0a 20 20 00 4c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 3179
+    Made in: week 29 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5849, 0.3701
+    Green: 0.3496, 0.5781
+    Blue : 0.1621, 0.1259
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.002997 Hz  16:9     72.604 kHz    168.150000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  316 Hpol P
+                 Vfront    3 Vsync   5 Vback  122 Vpol N
+    DTD 2:  1920x1080   48.002398 Hz  16:9     58.083 kHz    134.520000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  316 Hpol P
+                 Vfront    3 Vsync   5 Vback  122 Vpol N
+    Alphanumeric Data String: '8XHVN'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 96 00 10 00 00 0a 01 0a 20 20 '....A!........  '
+Checksum: 0x4c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 6b 0c 00 00 00 00 '..........k.....'
+  1d 21 01 04 95 22 13 78 02 f8 90 95 5e 59 94 29 '.!...".x....^Y.)'
+  20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ' PT.............'
+  01 01 01 01 01 01 af 41 80 8c 71 38 82 40 30 20 '.......A..q8.@0 '
+  35 00 58 c2 10 00 00 1a 8c 34 80 8c 71 38 82 40 '5.X......4..q8.@'
+  30 20 35 00 58 c2 10 00 00 1a 00 00 00 fe 00 38 '0 5.X..........8'
+  58 48 56 4e 80 4e 56 31 35 4e 34 56 00 00 00 00 'XHVN.NV15N4V....'
+  00 00 41 21 96 00 10 00 00 0a 01 0a 20 20 00 4c '..A!........  .L'
+Checksum: 0x4c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

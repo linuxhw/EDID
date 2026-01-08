@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d19b7845540000
-2919010380301b782e1421a359559b26
-0f5054a56b80d1c0b300a9c0818081c0
-810001010101023a801871382d40582c
-4500dd0c1100001e000000fd00324c1e
-53150a20000000000000000000fc0042
-656e5120474c323235300a20000000ff
-0035414630323239323031390a20004f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 9b 78 45 54 00 00
+29 19 01 03 80 30 1b 78 2e 14 21 a3 59 55 9b 26
+0f 50 54 a5 6b 80 d1 c0 b3 00 a9 c0 81 80 81 c0
+81 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 32 4c 1e
+53 15 0a 20 00 00 00 00 00 00 00 00 00 fc 00 42
+65 6e 51 20 47 4c 32 32 35 30 0a 20 00 00 00 ff
+00 35 41 46 30 32 32 39 32 30 31 39 0a 20 00 4f
 
 00 ff ff ff ff ff ff 00 09 d1 9b 78 45 54 00 00
 29 19 01 03 80 30 1b 78 2e 14 21 a3 59 55 9b 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30875
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 41 of 2015
   Basic Display Parameters & Features:
     Digital display
@@ -67,5 +65,34 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (Unknown (0x0a)): 50-76 Hz V, 30-83 kHz H, max dotclock 210 MHz
     Display Product Name: 'BenQ GL2250'
-    Display Product Serial Number: '5AF02292019'
+    Display Product Serial Number: ...
 Checksum: 0x4f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 9b 78 45 54 00 00 '...........xET..'
+  29 19 01 03 80 30 1b 78 2e 14 21 a3 59 55 9b 26 ')....0.x..!.YU.&'
+  0f 50 54 a5 6b 80 d1 c0 b3 00 a9 c0 81 80 81 c0 '.PT.k...........'
+  81 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 32 4c 1e 'E............2L.'
+  53 15 0a 20 00 00 00 00 00 00 00 00 00 fc 00 42 'S.. ...........B'
+  65 6e 51 20 47 4c 32 32 35 30 0a 20 00 00 00 ff 'enQ GL2250. ....'
+  00 35 41 46 30 32 32 39 32 30 31 39 0a 20 00 4f '.5AF02292019. .O'
+Checksum: 0x4f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: Unknown range class (0x0a).
+  Display Range Limits: Byte 11 is 0x20 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

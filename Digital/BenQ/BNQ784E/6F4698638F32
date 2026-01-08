@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d14e7845540000
-2f130103802917782e3d85a6564a9a24
-125054210800710081c0010161c00101
-010101010101662156aa51001e30468f
-33009ae61000001e000000ff00484239
-30303837383032360a20000000fd0032
-4c183f0b000a202020202020000000fc
-0042656e51204739323248444c0a0049
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 4e 78 45 54 00 00
+2f 13 01 03 80 29 17 78 2e 3d 85 a6 56 4a 9a 24
+12 50 54 21 08 00 71 00 81 c0 01 01 61 c0 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 ff 00 48 42 39
+30 30 38 37 38 30 32 36 0a 20 00 00 00 fd 00 32
+4c 18 3f 0b 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 47 39 32 32 48 44 4c 0a 00 49
 
 00 ff ff ff ff ff ff 00 09 d1 4e 78 45 54 00 00
 2f 13 01 03 80 29 17 78 2e 3d 85 a6 56 4a 9a 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30798
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 47 of 2009
   Basic Display Parameters & Features:
     Digital display
@@ -54,10 +52,34 @@ Block 0, Base EDID:
     DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
                  Hfront   70 Hsync 143 Hback  213 Hpol P
                  Vfront    3 Vsync   3 Vback   24 Vpol P
-    Display Product Serial Number: 'HB900878026'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 24-63 kHz H, max dotclock 110 MHz
     Display Product Name: 'BenQ G922HDL'
 Checksum: 0x49
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 4e 78 45 54 00 00 '..........NxET..'
+  2f 13 01 03 80 29 17 78 2e 3d 85 a6 56 4a 9a 24 '/....).x.=..VJ.$'
+  12 50 54 21 08 00 71 00 81 c0 01 01 61 c0 01 01 '.PT!..q.....a...'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 ff 00 48 42 39 '3............HB9'
+  30 30 38 37 38 30 32 36 0a 20 00 00 00 fd 00 32 '00878026. .....2'
+  4c 18 3f 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.?...      ....'
+  00 42 65 6e 51 20 47 39 32 32 48 44 4c 0a 00 49 '.BenQ G922HDL..I'
+Checksum: 0x49
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

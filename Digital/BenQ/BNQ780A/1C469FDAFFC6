@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d10a7845540000
-19120103803420782ec5c4a3574a9c23
-124f52a56b807100810095008180b300
-a940d1000101283c80a070b023403020
-360007442100001a000000ff004b3638
-30313138355a4c300a20000000fd0032
-551f5e11000a202020202020000000fc
-0042656e51204732343030570a2000ec
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 0a 78 45 54 00 00
+19 12 01 03 80 34 20 78 2e c5 c4 a3 57 4a 9c 23
+12 4f 52 a5 6b 80 71 00 81 00 95 00 81 80 b3 00
+a9 40 d1 00 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 07 44 21 00 00 1a 00 00 00 ff 00 4b 36 38
+30 31 31 38 35 5a 4c 30 0a 20 00 00 00 fd 00 32
+55 1f 5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 47 32 34 30 30 57 0a 20 00 ec
 
 00 ff ff ff ff ff ff 00 09 d1 0a 78 45 54 00 00
 19 12 01 03 80 34 20 78 2e c5 c4 a3 57 4a 9c 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30730
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 25 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -65,10 +63,36 @@ Block 0, Base EDID:
     DTD 1:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (519 mm x 324 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   26 Vpol N
-    Display Product Serial Number: 'K6801185ZL0'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-85 Hz V, 31-94 kHz H, max dotclock 170 MHz
     Display Product Name: 'BenQ G2400W'
 Checksum: 0xec
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 0a 78 45 54 00 00 '...........xET..'
+  19 12 01 03 80 34 20 78 2e c5 c4 a3 57 4a 9c 23 '.....4 x....WJ.#'
+  12 4f 52 a5 6b 80 71 00 81 00 95 00 81 80 b3 00 '.OR.k.q.........'
+  a9 40 d1 00 01 01 28 3c 80 a0 70 b0 23 40 30 20 '.@....(<..p.#@0 '
+  36 00 07 44 21 00 00 1a 00 00 00 ff 00 4b 36 38 '6..D!........K68'
+  30 31 31 38 35 5a 4c 30 0a 20 00 00 00 fd 00 32 '01185ZL0. .....2'
+  55 1f 5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'U.^...      ....'
+  00 42 65 6e 51 20 47 32 34 30 30 57 0a 20 00 ec '.BenQ G2400W. ..'
+Checksum: 0xec
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

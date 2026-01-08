@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0009e5680c00000000
-11210104a522167803fd25945d58942a
-21505400000001010101010101010101
-010101010101af41805471b028403020
-360059d71000001aca2b805471b02840
-3020360059d71000001a000000000000
-00000000000000000000000000000002
-000d36ff0a3c961015339600000001a9
-7020790200250109cf9002cf9002283c
-808100106f1a00000301283c00005351
-53513c00000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000008a90
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 68 0c 00 00 00 00
+11 21 01 04 a5 22 16 78 03 fd 25 94 5d 58 94 2a
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 af 41 80 54 71 b0 28 40 30 20
+36 00 59 d7 10 00 00 1a ca 2b 80 54 71 b0 28 40
+30 20 36 00 59 d7 10 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0d 36 ff 0a 3c 96 10 15 33 96 00 00 00 01 a9
+
+70 20 79 02 00 25 01 09 cf 90 02 cf 90 02 28 3c
+80 81 00 10 6f 1a 00 00 03 01 28 3c 00 00 53 51
+53 51 3c 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 8a 90
 
 00 ff ff ff ff ff ff 00 09 e5 68 0c 00 00 00 00
 11 21 01 04 a5 22 16 78 03 fd 25 94 5d 58 94 2a
@@ -97,3 +96,68 @@ Block 1, DisplayID Extension Block:
     Unknown: 0x53 0x51
   Checksum: 0x8a
 Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 68 0c 00 00 00 00 '..........h.....'
+  11 21 01 04 a5 22 16 78 03 fd 25 94 5d 58 94 2a '.!...".x..%.]X.*'
+  21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '!PT.............'
+  01 01 01 01 01 01 af 41 80 54 71 b0 28 40 30 20 '.......A.Tq.(@0 '
+  36 00 59 d7 10 00 00 1a ca 2b 80 54 71 b0 28 40 '6.Y......+.Tq.(@'
+  30 20 36 00 59 d7 10 00 00 1a 00 00 00 00 00 00 '0 6.Y...........'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
+  00 0d 36 ff 0a 3c 96 10 15 33 96 00 00 00 01 a9 '..6..<...3......'
+Checksum: 0xa9
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 168144 kHz
+    Maximum Pixel Clock: 168144 kHz
+    Minimum Vertical Refresh Rate: 40 Hz
+    Maximum Vertical Refresh Rate: 60 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 83 (301.833 cd/m^2)
+    Minimum luminance: 81 (0.305 cd/m^2)
+    Unknown: 0x53 0x51
+  Checksum: 0x8a
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Range Limits Descriptor.
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+  DisplayID: Missing DisplayID Type VII Detailed Timing Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

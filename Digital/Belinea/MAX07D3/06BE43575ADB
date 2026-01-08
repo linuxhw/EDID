@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003438d307ab000000
-1f0f010380291f782eee95a3544c9926
-0f5054bfef00315945596159714f8180
-a94001010101483f403062b0324040c0
-130098321100001e000000fd0032551e
-5311000a202020202020000000fc0042
-3130323030350a2020202020000000fe
-004d4158444154410a202020202000f0
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 38 d3 07 ab 00 00 00
+1f 0f 01 03 80 29 1f 78 2e ee 95 a3 54 4c 99 26
+0f 50 54 bf ef 00 31 59 45 59 61 59 71 4f 81 80
+a9 40 01 01 01 01 48 3f 40 30 62 b0 32 40 40 c0
+13 00 98 32 11 00 00 1e 00 00 00 fd 00 32 55 1e
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42
+31 30 32 30 30 35 0a 20 20 20 20 20 00 00 00 fe
+00 4d 41 58 44 41 54 41 0a 20 20 20 20 20 00 f0
 
 00 ff ff ff ff ff ff 00 34 38 d3 07 ab 00 00 00
 1f 0f 01 03 80 29 1f 78 2e ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MAX
     Model: 2003
-    Serial Number: 171
+    Serial Number: ...
     Made in: week 31 of 2005
   Basic Display Parameters & Features:
     Digital display
@@ -74,4 +72,28 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'MAXDATA'
 Checksum: 0xf0
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 34 38 d3 07 ab 00 00 00 '........48......'
+  1f 0f 01 03 80 29 1f 78 2e ee 95 a3 54 4c 99 26 '.....).x....TL.&'
+  0f 50 54 bf ef 00 31 59 45 59 61 59 71 4f 81 80 '.PT...1YEYaYqO..'
+  a9 40 01 01 01 01 48 3f 40 30 62 b0 32 40 40 c0 '.@....H?@0b.2@@.'
+  13 00 98 32 11 00 00 1e 00 00 00 fd 00 32 55 1e '...2.........2U.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42 'S...      .....B'
+  31 30 32 30 30 35 0a 20 20 20 20 20 00 00 00 fe '102005.     ....'
+  00 4d 41 58 44 41 54 41 0a 20 20 20 20 20 00 f0 '.MAXDATA.     ..'
+Checksum: 0xf0
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

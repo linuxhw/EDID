@@ -1,0 +1,80 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 d4 1a 00 00 00 00
+0f 21 01 04 a5 22 15 78 02 6b 35 a5 56 50 9c 26
+0d 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ad 68 00 a0 a0 40 2a 60 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42
+4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 36 30 51 44 4d 2d 4e 36 32 0a 00 c5
+
+00 ff ff ff ff ff ff 00 09 e5 d4 1a 00 00 00 00
+0f 21 01 04 a5 22 15 78 02 6b 35 a5 56 50 9c 26
+0d 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ad 68 00 a0 a0 40 2a 60 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42
+4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 36 30 51 44 4d 2d 4e 36 32 0a 00 c5
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 6868
+    Made in: week 15 of 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6455, 0.3378
+    Green: 0.3144, 0.6123
+    Blue : 0.1484, 0.0537
+    White: 0.3134, 0.3251
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   59.999015 Hz  16:10    98.518 kHz    267.970000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   33 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1a '................'
+    Alphanumeric Data String: 'BOE HF'
+    Alphanumeric Data String: 'NV160QDM-N62'
+Checksum: 0xc5
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 d4 1a 00 00 00 00 '................'
+  0f 21 01 04 a5 22 15 78 02 6b 35 a5 56 50 9c 26 '.!...".x.k5.VP.&'
+  0d 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PS.............'
+  01 01 01 01 01 01 ad 68 00 a0 a0 40 2a 60 30 20 '.......h...@*`0 '
+  36 00 59 d7 10 00 00 1a 00 00 00 00 00 00 00 00 '6.Y.............'
+  00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42 '...............B'
+  4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe 'OE HF.      ....'
+  00 4e 56 31 36 30 51 44 4d 2d 4e 36 32 0a 00 c5 '.NV160QDM-N62...'
+Checksum: 0xc5
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

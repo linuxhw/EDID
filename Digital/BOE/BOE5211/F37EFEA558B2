@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e5115201040000
-0a1f0104952b1d78028042ac5130b425
-10505300000001010101010101010101
-010101010101411c56a0500016303020
-3500064d210000188c1756a050001630
-30203500064d21000018000000fe000a
-202020202020202020202020000000fe
-0031333636783736380a202020200069
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 11 52 01 04 00 00
+0a 1f 01 04 95 2b 1d 78 02 80 42 ac 51 30 b4 25
+10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 41 1c 56 a0 50 00 16 30 30 20
+35 00 06 4d 21 00 00 18 8c 17 56 a0 50 00 16 30
+30 20 35 00 06 4d 21 00 00 18 00 00 00 fe 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 31 33 36 36 78 37 36 38 0a 20 20 20 20 00 69
 
 00 ff ff ff ff ff ff 00 09 e5 11 52 01 04 00 00
 0a 1f 01 04 95 2b 1d 78 02 80 42 ac 51 30 b4 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BOE
     Model: 21009
-    Serial Number: 1025
+    Serial Number: ...
     Made in: week 10 of 2021
   Basic Display Parameters & Features:
     Digital display
@@ -54,3 +52,37 @@ Block 0, Base EDID:
     Alphanumeric Data String: ''
     Alphanumeric Data String: '1366x768'
 Checksum: 0x69
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 11 52 01 04 00 00 '...........R....'
+  0a 1f 01 04 95 2b 1d 78 02 80 42 ac 51 30 b4 25 '.....+.x..B.Q0.%'
+  10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PS.............'
+  01 01 01 01 01 01 41 1c 56 a0 50 00 16 30 30 20 '......A.V.P..00 '
+  35 00 06 4d 21 00 00 18 8c 17 56 a0 50 00 16 30 '5..M!.....V.P..0'
+  30 20 35 00 06 4d 21 00 00 18 00 00 00 fe 00 0a '0 5..M!.........'
+  20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fe '            ....'
+  00 31 33 36 36 78 37 36 38 0a 20 20 20 20 00 69 '.1366x768.    .i'
+Checksum: 0x69
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 518x333 mm vs display size 430x290 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 518x333 mm vs display size 430x290 mm.
+  Alphanumeric Data String: Empty string.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 518x333mm, which is larger than the display size 430.0x290.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

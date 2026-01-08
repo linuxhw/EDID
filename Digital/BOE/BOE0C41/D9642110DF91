@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e5410c00000000
-13210104a51f1178035ff5965d559229
-1d505400000001010101010101010101
-010101010101c0398018713828403020
-360035ae1000001a342e801871382840
-3020360035ae1000001a000000fe0042
-4f452043510a202020202020000000fe
-004e5631343046484d2d4e34560a00d4
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 41 0c 00 00 00 00
+13 21 01 04 a5 1f 11 78 03 5f f5 96 5d 55 92 29
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c0 39 80 18 71 38 28 40 30 20
+36 00 35 ae 10 00 00 1a 34 2e 80 18 71 38 28 40
+30 20 36 00 35 ae 10 00 00 1a 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 34 30 46 48 4d 2d 4e 34 56 0a 00 d4
 
 00 ff ff ff ff ff ff 00 09 e5 41 0c 00 00 00 00
 13 21 01 04 a5 1f 11 78 03 5f f5 96 5d 55 92 29
@@ -54,3 +52,34 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'BOE CQ'
     Alphanumeric Data String: 'NV140FHM-N4V'
 Checksum: 0xd4
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 41 0c 00 00 00 00 '..........A.....'
+  13 21 01 04 a5 1f 11 78 03 5f f5 96 5d 55 92 29 '.!.....x._..]U.)'
+  1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 c0 39 80 18 71 38 28 40 30 20 '.......9..q8(@0 '
+  36 00 35 ae 10 00 00 1a 34 2e 80 18 71 38 28 40 '6.5.....4...q8(@'
+  30 20 36 00 35 ae 10 00 00 1a 00 00 00 fe 00 42 '0 6.5..........B'
+  4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe 'OE CQ.      ....'
+  00 4e 56 31 34 30 46 48 4d 2d 4e 34 56 0a 00 d4 '.NV140FHM-N4V...'
+Checksum: 0xd4
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

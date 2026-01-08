@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e55f0c00000000
-1a210104a5231678032715955b5a9329
-20505400000001010101010101010101
-010101010101af41805471b028403020
-360059d71000001a0000001020202020
-20202020202020202020000000fe0042
-4f452043510a202020202020000000fe
-004e5631363057554d2d4e48340a007c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 5f 0c 00 00 00 00
+1a 21 01 04 a5 23 16 78 03 27 15 95 5b 5a 93 29
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 af 41 80 54 71 b0 28 40 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 10 20 20 20 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 36 30 57 55 4d 2d 4e 48 34 0a 00 7c
 
 00 ff ff ff ff ff ff 00 09 e5 5f 0c 00 00 00 00
 1a 21 01 04 a5 23 16 78 03 27 15 95 5b 5a 93 29
@@ -52,3 +50,36 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'BOE CQ'
     Alphanumeric Data String: 'NV160WUM-NH4'
 Checksum: 0x7c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 5f 0c 00 00 00 00 '.........._.....'
+  1a 21 01 04 a5 23 16 78 03 27 15 95 5b 5a 93 29 '.!...#.x.'..[Z.)'
+  20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ' PT.............'
+  01 01 01 01 01 01 af 41 80 54 71 b0 28 40 30 20 '.......A.Tq.(@0 '
+  36 00 59 d7 10 00 00 1a 00 00 00 10 20 20 20 20 '6.Y.........    '
+  20 20 20 20 20 20 20 20 20 20 00 00 00 fe 00 42 '          .....B'
+  4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe 'OE CQ.      ....'
+  00 4e 56 31 36 30 57 55 4d 2d 4e 48 34 0a 00 7c '.NV160WUM-NH4..|'
+Checksum: 0x7c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Descriptor #2: Monitor descriptor block has byte 4 nonzero (0x20).
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d1267745540000
-2613010380301b782e3581a656489a24
-125054a54b00714f8180d1c001010101
-010101010101023a801871382d40582c
-4500dd0c1100001e000000ff00393939
-3035363530534c300a0a000000fd0038
-4c1e5311000a202020202020000000fc
-0042656e5120543232303048440a0039
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 26 77 45 54 00 00
+26 13 01 03 80 30 1b 78 2e 35 81 a6 56 48 9a 24
+12 50 54 a5 4b 00 71 4f 81 80 d1 c0 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 39 39 39
+30 35 36 35 30 53 4c 30 0a 0a 00 00 00 fd 00 38
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 54 32 32 30 30 48 44 0a 00 39
 
 00 ff ff ff ff ff ff 00 09 d1 26 77 45 54 00 00
 26 13 01 03 80 30 1b 78 2e 35 81 a6 56 48 9a 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30502
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 38 of 2009
   Basic Display Parameters & Features:
     Digital display
@@ -59,10 +57,35 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '99905650SL0'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'BenQ T2200HD'
 Checksum: 0x39
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 26 77 45 54 00 00 '..........&wET..'
+  26 13 01 03 80 30 1b 78 2e 35 81 a6 56 48 9a 24 '&....0.x.5..VH.$'
+  12 50 54 a5 4b 00 71 4f 81 80 d1 c0 01 01 01 01 '.PT.K.qO........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 39 39 39 'E............999'
+  30 35 36 35 30 53 4c 30 0a 0a 00 00 00 fd 00 38 '05650SL0.......8'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 42 65 6e 51 20 54 32 32 30 30 48 44 0a 00 39 '.BenQ T2200HD..9'
+Checksum: 0x39
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

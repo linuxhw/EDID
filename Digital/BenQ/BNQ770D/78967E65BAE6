@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d10d7747100000
-2511010380261e78eac5c6a3574a9c23
-124f54bdef80714f81908180818c0101
-010101010101302a009851002a403070
-1300782d1100001ed50980a0205e6310
-10605208782d1100001a000000fd0038
-4c1f530e000a202020202020000000fc
-0042656e51204650393345530a2000cd
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 0d 77 47 10 00 00
+25 11 01 03 80 26 1e 78 ea c5 c6 a3 57 4a 9c 23
+12 4f 54 bd ef 80 71 4f 81 90 81 80 81 8c 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e d5 09 80 a0 20 5e 63 10
+10 60 52 08 78 2d 11 00 00 1a 00 00 00 fd 00 38
+4c 1f 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 46 50 39 33 45 53 0a 20 00 cd
 
 00 ff ff ff ff ff ff 00 09 d1 0d 77 47 10 00 00
 25 11 01 03 80 26 1e 78 ea c5 c6 a3 57 4a 9c 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30477
-    Serial Number: 4167
+    Serial Number: ...
     Made in: week 37 of 2007
   Basic Display Parameters & Features:
     Digital display
@@ -72,3 +70,34 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'BenQ FP93ES'
 Checksum: 0xcd
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 0d 77 47 10 00 00 '...........wG...'
+  25 11 01 03 80 26 1e 78 ea c5 c6 a3 57 4a 9c 23 '%....&.x....WJ.#'
+  12 4f 54 bd ef 80 71 4f 81 90 81 80 81 8c 01 01 '.OT...qO........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e d5 09 80 a0 20 5e 63 10 '..x-........ ^c.'
+  10 60 52 08 78 2d 11 00 00 1a 00 00 00 fd 00 38 '.`R.x-.........8'
+  4c 1f 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 42 65 6e 51 20 46 50 39 33 45 53 0a 20 00 cd '.BenQ FP93ES. ..'
+Checksum: 0xcd
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 141.822 MHz (Monitor: 140.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
