@@ -1,0 +1,83 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af ec 71 00 00 00 00
+01 19 01 04 95 22 13 78 02 50 25 93 58 57 92 29
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 c0 50 00 30 30 08 0a
+31 00 58 c1 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 10 48 ff 0f 3c 6e 1f 14 22 6e 00 00 20 00 1f
+
+00 ff ff ff ff ff ff 00 06 af ec 71 00 00 00 00
+01 19 01 04 95 22 13 78 02 50 25 93 58 57 92 29
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 c0 50 00 30 30 08 0a
+31 00 58 c1 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 10 48 ff 0f 3c 6e 1f 14 22 6e 00 00 20 00 1f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 29164
+    Made in: week 1 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5751, 0.3447
+    Green: 0.3398, 0.5703
+    Blue : 0.1601, 0.1347
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.015983 Hz 683:384   48.973 kHz     76.300000 MHz (344 mm x 193 mm)
+                 Hfront    8 Hsync  10 Hback  174 Hpol N
+                 Vfront    3 Vsync   1 Vback   44 Vpol N
+    Empty Descriptor
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 10 48 ff 0f 3c 6e 1f 14 22 6e 00 00 20 '....H..<n.."n.. '
+Checksum: 0x1f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af ec 71 00 00 00 00 '...........q....'
+  01 19 01 04 95 22 13 78 02 50 25 93 58 57 92 29 '.....".x.P%.XW.)'
+  22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '"PT.............'
+  01 01 01 01 01 01 ce 1d 56 c0 50 00 30 30 08 0a '........V.P.00..'
+  31 00 58 c1 10 00 00 18 00 00 00 00 00 00 00 00 '1.X.............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
+  00 10 48 ff 0f 3c 6e 1f 14 22 6e 00 00 20 00 1f '..H..<n.."n.. ..'
+Checksum: 0x1f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

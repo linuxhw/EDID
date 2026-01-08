@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006af9f6a00000000
-1f1f0104a522167803d0e4a854489d24
-0e515600000001010101010101010101
-0101010101010c6c00a0a0405e603020
-aa0058d710000018705600a0a0405e60
-3020aa0058d710000018000000fe0041
-554f0a202020202020202020000000fe
-004231363051414e30322e57200a00fe
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 9f 6a 00 00 00 00
+1f 1f 01 04 a5 22 16 78 03 d0 e4 a8 54 48 9d 24
+0e 51 56 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 0c 6c 00 a0 a0 40 5e 60 30 20
+aa 00 58 d7 10 00 00 18 70 56 00 a0 a0 40 5e 60
+30 20 aa 00 58 d7 10 00 00 18 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 36 30 51 41 4e 30 32 2e 57 20 0a 00 fe
 
 00 ff ff ff ff ff ff 00 06 af 9f 6a 00 00 00 00
 1f 1f 01 04 a5 22 16 78 03 d0 e4 a8 54 48 9d 24
@@ -54,3 +52,35 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'AUO'
     Alphanumeric Data String: 'B160QAN02.W '
 Checksum: 0xfe
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 9f 6a 00 00 00 00 '...........j....'
+  1f 1f 01 04 a5 22 16 78 03 d0 e4 a8 54 48 9d 24 '.....".x....TH.$'
+  0e 51 56 00 00 00 01 01 01 01 01 01 01 01 01 01 '.QV.............'
+  01 01 01 01 01 01 0c 6c 00 a0 a0 40 5e 60 30 20 '.......l...@^`0 '
+  aa 00 58 d7 10 00 00 18 70 56 00 a0 a0 40 5e 60 '..X.....pV...@^`'
+  30 20 aa 00 58 d7 10 00 00 18 00 00 00 fe 00 41 '0 ..X..........A'
+  55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'UO.         ....'
+  00 42 31 36 30 51 41 4e 30 32 2e 57 20 0a 00 fe '.B160QAN02.W ...'
+Checksum: 0xfe
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

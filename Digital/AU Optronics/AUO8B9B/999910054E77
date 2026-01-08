@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006af9b8b00000000
-1c1f0104a5221678030402a95548a225
-0e515600000001010101010101010101
-0101010101018c3c80a070b028403020
-a50058d7100000188c3c80a070b06041
-3020a50058d710000018000000fd0028
-3c4b4b10010a202020202020000000fe
-004231363055414e30312e4b200a0079
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 9b 8b 00 00 00 00
+1c 1f 01 04 a5 22 16 78 03 04 02 a9 55 48 a2 25
+0e 51 56 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8c 3c 80 a0 70 b0 28 40 30 20
+a5 00 58 d7 10 00 00 18 8c 3c 80 a0 70 b0 60 41
+30 20 a5 00 58 d7 10 00 00 18 00 00 00 fd 00 28
+3c 4b 4b 10 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 36 30 55 41 4e 30 31 2e 4b 20 0a 00 79
 
 00 ff ff ff ff ff ff 00 06 af 9b 8b 00 00 00 00
 1c 1f 01 04 a5 22 16 78 03 04 02 a9 55 48 a2 25
@@ -55,3 +53,34 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 40-60 Hz V, 75-75 kHz H, max dotclock 160 MHz
     Alphanumeric Data String: 'B160UAN01.K '
 Checksum: 0x79
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 9b 8b 00 00 00 00 '................'
+  1c 1f 01 04 a5 22 16 78 03 04 02 a9 55 48 a2 25 '.....".x....UH.%'
+  0e 51 56 00 00 00 01 01 01 01 01 01 01 01 01 01 '.QV.............'
+  01 01 01 01 01 01 8c 3c 80 a0 70 b0 28 40 30 20 '.......<..p.(@0 '
+  a5 00 58 d7 10 00 00 18 8c 3c 80 a0 70 b0 60 41 '..X......<..p.`A'
+  30 20 a5 00 58 d7 10 00 00 18 00 00 00 fd 00 28 '0 ..X..........('
+  3c 4b 4b 10 01 0a 20 20 20 20 20 20 00 00 00 fe '<KK...      ....'
+  00 42 31 36 30 55 41 4e 30 31 2e 4b 20 0a 00 79 '.B160UAN01.K ..y'
+Checksum: 0x79
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

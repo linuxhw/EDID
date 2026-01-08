@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006afa5b0a5b00000
-1a200104b522167803f225915758952a
-1f505400000001010101010101010101
-0101010101017e9780b870b050403020
-aa0058d7100000180000000000000000
-00000000000000000020000000fd0030
-90b9b927010a202020202020000000fe
-004231363055414e30352e41200a00cf
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af a5 b0 a5 b0 00 00
+1a 20 01 04 b5 22 16 78 03 f2 25 91 57 58 95 2a
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 7e 97 80 b8 70 b0 50 40 30 20
+aa 00 58 d7 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fd 00 30
+90 b9 b9 27 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 36 30 55 41 4e 30 35 2e 41 20 0a 00 cf
 
 00 ff ff ff ff ff ff 00 06 af a5 b0 a5 b0 00 00
 1a 20 01 04 b5 22 16 78 03 f2 25 91 57 58 95 2a
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AUO
     Model: 45221
-    Serial Number: 45221
+    Serial Number: ...
     Made in: week 26 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -54,3 +52,38 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 48-144 Hz V, 185-185 kHz H, max dotclock 390 MHz
     Alphanumeric Data String: 'B160UAN05.A '
 Checksum: 0xcf
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af a5 b0 a5 b0 00 00 '................'
+  1a 20 01 04 b5 22 16 78 03 f2 25 91 57 58 95 2a '. ...".x..%.WX.*'
+  1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 7e 97 80 b8 70 b0 50 40 30 20 '......~...p.P@0 '
+  aa 00 58 d7 10 00 00 18 00 00 00 00 00 00 00 00 '..X.............'
+  00 00 00 00 00 00 00 00 00 20 00 00 00 fd 00 30 '......... .....0'
+  90 b9 b9 27 01 0a 20 20 20 20 20 20 00 00 00 fe '...'..      ....'
+  00 42 31 36 30 55 41 4e 30 35 2e 41 20 0a 00 cf '.B160UAN05.A ...'
+Checksum: 0xcf
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 184.325 - 184.325 kHz (Monitor: 185.000 - 185.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

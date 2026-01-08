@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006af0000502d3101
-2d160103802f1a782e3585a656489a24
-1250542f4f0045406140810081809500
-b30081c00101023a801871382d40582c
-450094240000001e7f2156aa51001e30
-468f330094240000001e000000fc0066
-6179746563680a2020202020000000fd
-00384c1e5311000a20202020202000cc
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 00 00 50 2d 31 01
+2d 16 01 03 80 2f 1a 78 2e 35 85 a6 56 48 9a 24
+12 50 54 2f 4f 00 45 40 61 40 81 00 81 80 95 00
+b3 00 81 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 94 24 00 00 00 1e 7f 21 56 aa 51 00 1e 30
+46 8f 33 00 94 24 00 00 00 1e 00 00 00 fc 00 66
+61 79 74 65 63 68 0a 20 20 20 20 20 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 cc
 
 00 ff ff ff ff ff ff 00 06 af 00 00 50 2d 31 01
 2d 16 01 03 80 2f 1a 78 2e 35 85 a6 56 48 9a 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AUO
     Model: 0
-    Serial Number: 20000080
+    Serial Number: ...
     Made in: week 45 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -72,3 +70,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0xcc
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 00 00 50 2d 31 01 '............P-1.'
+  2d 16 01 03 80 2f 1a 78 2e 35 85 a6 56 48 9a 24 '-..../.x.5..VH.$'
+  12 50 54 2f 4f 00 45 40 61 40 81 00 81 80 95 00 '.PT/O.E@a@......'
+  b3 00 81 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 94 24 00 00 00 1e 7f 21 56 aa 51 00 1e 30 'E..$.....!V.Q..0'
+  46 8f 33 00 94 24 00 00 00 1e 00 00 00 fc 00 66 'F.3..$.........f'
+  61 79 74 65 63 68 0a 20 20 20 20 20 00 00 00 fd 'aytech.     ....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 cc '.8L.S...      ..'
+Checksum: 0xcc
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 148x36 mm vs display size 470x260 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 148x36 mm vs display size 470x260 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

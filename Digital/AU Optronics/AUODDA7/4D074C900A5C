@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0006afa7dd00000000
-e5200104a526167803707593585a9429
-20505400000001010101010101010101
-010101010101ec3b80b6703888403020
-a5007ed710000018000000fd003c90b0
-b025010a202020202020000000fe0041
-554f0a202020202020202020000000fc
-004231373348414e30342e39200a01a1
-70207902002200140b9e05847f07b500
-2f801f0037048700090004002b000627
-003c8f00000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000290
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af a7 dd 00 00 00 00
+e5 20 01 04 a5 26 16 78 03 70 75 93 58 5a 94 29
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ec 3b 80 b6 70 38 88 40 30 20
+a5 00 7e d7 10 00 00 18 00 00 00 fd 00 3c 90 b0
+b0 25 01 0a 20 20 20 20 20 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fc
+00 42 31 37 33 48 41 4e 30 34 2e 39 20 0a 01 a1
+
+70 20 79 02 00 22 00 14 0b 9e 05 84 7f 07 b5 00
+2f 80 1f 00 37 04 87 00 09 00 04 00 2b 00 06 27
+00 3c 8f 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 90
 
 00 ff ff ff ff ff ff 00 06 af a7 dd 00 00 00 00
 e5 20 01 04 a5 26 16 78 03 70 75 93 58 5a 94 29
@@ -94,3 +93,65 @@ Block 1, DisplayID Extension Block:
       Max Refresh Rate: 144 Hz
   Checksum: 0x02
 Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af a7 dd 00 00 00 00 '................'
+  e5 20 01 04 a5 26 16 78 03 70 75 93 58 5a 94 29 '. ...&.x.pu.XZ.)'
+  20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ' PT.............'
+  01 01 01 01 01 01 ec 3b 80 b6 70 38 88 40 30 20 '.......;..p8.@0 '
+  a5 00 7e d7 10 00 00 18 00 00 00 fd 00 3c 90 b0 '..~..........<..'
+  b0 25 01 0a 20 20 20 20 20 20 00 00 00 fe 00 41 '.%..      .....A'
+  55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fc 'UO.         ....'
+  00 42 31 37 33 48 41 4e 30 34 2e 39 20 0a 01 a1 '.B173HAN04.9 ...'
+Checksum: 0xa1
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  1920x1080  144.027931 Hz  16:9    175.138 kHz    368.140000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback  102 Hpol P
+               Vfront   10 Vsync   5 Vback  121 Vpol N
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 60 Hz
+      Max Refresh Rate: 144 Hz
+  Checksum: 0x02
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 72.978 - 175.137 kHz (Monitor: 176.000 - 176.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: Invalid week 229 of manufacture.
+  Display Product Name: One or more trailing spaces.
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+
+EDID conformity: FAIL

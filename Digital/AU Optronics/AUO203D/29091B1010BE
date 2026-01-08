@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006af3d2000000000
-001c0104a51f1178022ad59256589229
-20505400000001010101010101010101
-010101010101143780b4703826406c30
-aa0035ae100000180000000f00000000
-00000000000000000020000000fe0041
-554f0a202020202020202020000000fe
-004231343048544e30322e30200a00f3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 3d 20 00 00 00 00
+00 1c 01 04 a5 1f 11 78 02 2a d5 92 56 58 92 29
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 14 37 80 b4 70 38 26 40 6c 30
+aa 00 35 ae 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 34 30 48 54 4e 30 32 2e 30 20 0a 00 f3
 
 00 ff ff ff ff ff ff 00 06 af 3d 20 00 00 00 00
 00 1c 01 04 a5 1f 11 78 02 2a d5 92 56 58 92 29
@@ -51,3 +49,34 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'AUO'
     Alphanumeric Data String: 'B140HTN02.0 '
 Checksum: 0xf3
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 3d 20 00 00 00 00 '..........= ....'
+  00 1c 01 04 a5 1f 11 78 02 2a d5 92 56 58 92 29 '.......x.*..VX.)'
+  20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ' PT.............'
+  01 01 01 01 01 01 14 37 80 b4 70 38 26 40 6c 30 '.......7..p8&@l0'
+  aa 00 35 ae 10 00 00 18 00 00 00 0f 00 00 00 00 '..5.............'
+  00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41 '......... .....A'
+  55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'UO.         ....'
+  00 42 31 34 30 48 54 4e 30 32 2e 30 20 0a 00 f3 '.B140HTN02.0 ...'
+Checksum: 0xf3
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

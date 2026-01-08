@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006af9e1200000000
-01140103802615780ac4959e57539226
-0f505400000001010101010101010101
-010101010101302a407261840c303020
-36007ed6100000180000000f00000000
-00000000000000000020000000fe0041
-554f0a202020202020202020000000fe
-004231373352573031205632200a000d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 9e 12 00 00 00 00
+01 14 01 03 80 26 15 78 0a c4 95 9e 57 53 92 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 40 72 61 84 0c 30 30 20
+36 00 7e d6 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 37 33 52 57 30 31 20 56 32 20 0a 00 0d
 
 00 ff ff ff ff ff ff 00 06 af 9e 12 00 00 00 00
 01 14 01 03 80 26 15 78 0a c4 95 9e 57 53 92 26
@@ -49,3 +47,31 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'AUO'
     Alphanumeric Data String: 'B173RW01 V2 '
 Checksum: 0x0d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 9e 12 00 00 00 00 '................'
+  01 14 01 03 80 26 15 78 0a c4 95 9e 57 53 92 26 '.....&.x....WS.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 30 2a 40 72 61 84 0c 30 30 20 '......0*@ra..00 '
+  36 00 7e d6 10 00 00 18 00 00 00 0f 00 00 00 00 '6.~.............'
+  00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41 '......... .....A'
+  55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'UO.         ....'
+  00 42 31 37 33 52 57 30 31 20 56 32 20 0a 00 0d '.B173RW01 V2 ...'
+Checksum: 0x0d
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

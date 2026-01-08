@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0006afa5c1a5c10000
-1c200104b522167803ca35a655499925
-10505400000001010101010101010101
-010101010101786e00a0a04084603020
-aa0058d710000018000000fd0c30a51f
-1f4e010a202020202020000000fe0041
-554f0a202020202020202020000000fe
-004231363051414e30332e4c200a017b
-7013790000030114b62f0184ff099f00
-2f001f003f0683000900090000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000002390
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af a5 c1 a5 c1 00 00
+1c 20 01 04 b5 22 16 78 03 ca 35 a6 55 49 99 25
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 78 6e 00 a0 a0 40 84 60 30 20
+aa 00 58 d7 10 00 00 18 00 00 00 fd 0c 30 a5 1f
+1f 4e 01 0a 20 20 20 20 20 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 36 30 51 41 4e 30 33 2e 4c 20 0a 01 7b
+
+70 13 79 00 00 03 01 14 b6 2f 01 84 ff 09 9f 00
+2f 00 1f 00 3f 06 83 00 09 00 09 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 23 90
 
 00 ff ff ff ff ff ff 00 06 af a5 c1 a5 c1 00 00
 1c 20 01 04 b5 22 16 78 03 ca 35 a6 55 49 99 25
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AUO
     Model: 49573
-    Serial Number: 49573
+    Serial Number: ...
     Made in: week 28 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -85,3 +84,53 @@ Block 1, DisplayID Extension Block:
                Vfront   10 Vsync  10 Vback  112 Vpol N
   Checksum: 0x23
 Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af a5 c1 a5 c1 00 00 '................'
+  1c 20 01 04 b5 22 16 78 03 ca 35 a6 55 49 99 25 '. ...".x..5.UI.%'
+  10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 78 6e 00 a0 a0 40 84 60 30 20 '......xn...@.`0 '
+  aa 00 58 d7 10 00 00 18 00 00 00 fd 0c 30 a5 1f '..X..........0..'
+  1f 4e 01 0a 20 20 20 20 20 20 00 00 00 fe 00 41 '.N..      .....A'
+  55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'UO.         ....'
+  00 42 31 36 30 51 41 4e 30 33 2e 4c 20 0a 01 7b '.B160QAN03.L ..{'
+Checksum: 0x7b
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1600  165.039991 Hz  16:9    285.849 kHz    777.510000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront   10 Vsync  10 Vback  112 Vpol N
+  Checksum: 0x23
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 103.970 - 285.849 kHz (Monitor: 286.000 - 286.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

@@ -1,0 +1,167 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af b1 d8 00 00 00 00
+04 22 01 04 a5 22 16 78 03 97 a5 94 5a 58 92 28
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 0e b0 80 b8 70 b0 42 49 30 20
+8a 0c 58 d7 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 36 30 55 41 4e 30 35 2e 42 20 0a 01 60
+
+70 20 79 02 00 22 00 14 f7 e2 06 85 7f 07 b7 00
+2f 80 1f 00 af 04 63 00 37 00 09 00 25 01 09 f7
+e2 06 f7 e2 06 3c a5 80 81 00 15 74 1a 00 00 03
+01 3c a5 00 00 53 49 53 49 a5 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 36 90
+
+00 ff ff ff ff ff ff 00 06 af b1 d8 00 00 00 00
+04 22 01 04 a5 22 16 78 03 97 a5 94 5a 58 92 28
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 0e b0 80 b8 70 b0 42 49 30 20
+8a 0c 58 d7 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 36 30 55 41 4e 30 35 2e 42 20 0a 01 60
+
+70 20 79 02 00 22 00 14 f7 e2 06 85 7f 07 b7 00
+2f 80 1f 00 af 04 63 00 37 00 09 00 25 01 09 f7
+e2 06 f7 e2 06 3c a5 80 81 00 15 74 1a 00 00 03
+01 3c a5 00 00 53 49 53 49 a5 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 36 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 55473
+    Made in: week 4 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5800, 0.3525
+    Green: 0.3447, 0.5732
+    Blue : 0.1582, 0.1269
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.003089 Hz  16:10   214.211 kHz    450.700000 MHz (344 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  104 Hpol N
+                 Vfront   56 Vsync  10 Vback 2304 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B160UAN05.B '
+  Extension blocks: 1
+Checksum: 0x60
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  1920x1200  165.004387 Hz  16:10   214.506 kHz    451.320000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback  104 Hpol P
+               Vfront   56 Vsync  10 Vback   34 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 451320 kHz
+    Maximum Pixel Clock: 451320 kHz
+    Minimum Vertical Refresh Rate: 60 Hz
+    Maximum Vertical Refresh Rate: 165 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 83 (301.833 cd/m^2)
+    Minimum luminance: 73 (0.247 cd/m^2)
+    Unknown: 0x53 0x49
+  Checksum: 0x36
+Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af b1 d8 00 00 00 00 '................'
+  04 22 01 04 a5 22 16 78 03 97 a5 94 5a 58 92 28 '."...".x....ZX.('
+  20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ' PT.............'
+  01 01 01 01 01 01 0e b0 80 b8 70 b0 42 49 30 20 '..........p.BI0 '
+  8a 0c 58 d7 10 00 00 18 00 00 00 0f 00 00 00 00 '..X.............'
+  00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41 '......... .....A'
+  55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'UO.         ....'
+  00 42 31 36 30 55 41 4e 30 35 2e 42 20 0a 01 60 '.B160UAN05.B ..`'
+Checksum: 0x60
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  1920x1200  165.004387 Hz  16:10   214.506 kHz    451.320000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback  104 Hpol P
+               Vfront   56 Vsync  10 Vback   34 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 451320 kHz
+    Maximum Pixel Clock: 451320 kHz
+    Minimum Vertical Refresh Rate: 60 Hz
+    Maximum Vertical Refresh Rate: 165 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 83 (301.833 cd/m^2)
+    Minimum luminance: 73 (0.247 cd/m^2)
+    Unknown: 0x53 0x49
+  Checksum: 0x36
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+
+EDID conformity: FAIL

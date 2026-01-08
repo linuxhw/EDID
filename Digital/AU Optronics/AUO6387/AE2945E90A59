@@ -1,0 +1,80 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 87 63 00 00 00 00
+01 12 01 03 90 25 17 78 0a 1c f5 97 58 50 8e 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1c 2a a0 12 52 84 0c 30 d0 20
+36 00 6f e5 10 00 00 1a 1c 2a a0 12 52 84 0c 30
+d0 20 36 00 6f e5 10 00 00 1a 00 00 00 fe 00 52
+4d 32 32 31 80 42 31 37 30 50 57 36 00 00 00 00
+00 00 00 00 00 00 00 00 00 02 01 0a 20 20 00 10
+
+00 ff ff ff ff ff ff 00 06 af 87 63 00 00 00 00
+01 12 01 03 90 25 17 78 0a 1c f5 97 58 50 8e 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1c 2a a0 12 52 84 0c 30 d0 20
+36 00 6f e5 10 00 00 1a 1c 2a a0 12 52 84 0c 30
+d0 20 36 00 6f e5 10 00 00 1a 00 00 00 fe 00 52
+4d 32 32 31 80 42 31 37 30 50 57 36 00 00 00 00
+00 00 00 00 00 00 00 00 00 02 01 0a 20 20 00 10
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 25479
+    Made in: week 1 of 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 37 cm x 23 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5898, 0.3447
+    Green: 0.3154, 0.5546
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1440x900    60.000891 Hz  16:10    54.721 kHz    107.800000 MHz (367 mm x 229 mm)
+                 Hfront  208 Hsync  32 Hback  290 Hpol P
+                 Vfront    3 Vsync   6 Vback    3 Vpol N
+    DTD 2:  1440x900    60.000891 Hz  16:10    54.721 kHz    107.800000 MHz (367 mm x 229 mm)
+                 Hfront  208 Hsync  32 Hback  290 Hpol P
+                 Vfront    3 Vsync   6 Vback    3 Vpol N
+    Alphanumeric Data String: 'RM221'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 02 01 0a 20 20 '..............  '
+Checksum: 0x10
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 87 63 00 00 00 00 '...........c....'
+  01 12 01 03 90 25 17 78 0a 1c f5 97 58 50 8e 27 '.....%.x....XP.''
+  27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ''PT.............'
+  01 01 01 01 01 01 1c 2a a0 12 52 84 0c 30 d0 20 '.......*..R..0. '
+  36 00 6f e5 10 00 00 1a 1c 2a a0 12 52 84 0c 30 '6.o......*..R..0'
+  d0 20 36 00 6f e5 10 00 00 1a 00 00 00 fe 00 52 '. 6.o..........R'
+  4d 32 32 31 80 42 31 37 30 50 57 36 00 00 00 00 'M221.B170PW6....'
+  00 00 00 00 00 00 00 00 00 02 01 0a 20 20 00 10 '............  ..'
+Checksum: 0x10
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

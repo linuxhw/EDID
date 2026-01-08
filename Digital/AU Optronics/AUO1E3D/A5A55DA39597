@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006af3d1e00000000
-001a0104951f11780267759357588e29
-21505400000001010101010101010101
-010101010101b03680ae703822403064
-310035ad1000001ac02b80ae70382240
-3064310035ad1000001a000000fe0052
-37384d34804231343048544e00000000
-00008102a8001100000b010a202000f8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 3d 1e 00 00 00 00
+00 1a 01 04 95 1f 11 78 02 67 75 93 57 58 8e 29
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b0 36 80 ae 70 38 22 40 30 64
+31 00 35 ad 10 00 00 1a c0 2b 80 ae 70 38 22 40
+30 64 31 00 35 ad 10 00 00 1a 00 00 00 fe 00 52
+37 38 4d 34 80 42 31 34 30 48 54 4e 00 00 00 00
+00 00 81 02 a8 00 11 00 00 0b 01 0a 20 20 00 f8
 
 00 ff ff ff ff ff ff 00 06 af 3d 1e 00 00 00 00
 00 1a 01 04 95 1f 11 78 02 67 75 93 57 58 8e 29
@@ -53,3 +51,34 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'R78M4'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 81 02 a8 00 11 00 00 0b 01 0a 20 20 '..............  '
 Checksum: 0xf8
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 3d 1e 00 00 00 00 '..........=.....'
+  00 1a 01 04 95 1f 11 78 02 67 75 93 57 58 8e 29 '.......x.gu.WX.)'
+  21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '!PT.............'
+  01 01 01 01 01 01 b0 36 80 ae 70 38 22 40 30 64 '.......6..p8"@0d'
+  31 00 35 ad 10 00 00 1a c0 2b 80 ae 70 38 22 40 '1.5......+..p8"@'
+  30 64 31 00 35 ad 10 00 00 1a 00 00 00 fe 00 52 '0d1.5..........R'
+  37 38 4d 34 80 42 31 34 30 48 54 4e 00 00 00 00 '78M4.B140HTN....'
+  00 00 81 02 a8 00 11 00 00 0b 01 0a 20 20 00 f8 '............  ..'
+Checksum: 0xf8
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

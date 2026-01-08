@@ -1,0 +1,207 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af b7 33 00 00 00 00
+2a 22 01 04 a5 22 16 78 03 a1 c5 a5 55 4b 9f 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1c 40 80 b8 70 b0 64 40 30 20
+8a 0c 58 d7 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fd 00 30
+a5 d7 d7 2d 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 31 36 30 55 41 4e 41 43 2e 4a 20 0a 01 6f
+
+70 20 79 02 00 22 00 14 ed e2 06 85 7f 07 b7 00
+2f 80 1f 00 af 04 63 00 37 00 09 00 25 01 09 ed
+e2 06 ed e2 06 30 a5 80 2b 00 0c 27 00 3c a4 00
+00 27 00 30 3b 00 00 81 00 15 74 1a 00 00 03 01
+30 a5 00 00 61 48 61 48 a5 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 82 90
+
+00 ff ff ff ff ff ff 00 06 af b7 33 00 00 00 00
+2a 22 01 04 a5 22 16 78 03 a1 c5 a5 55 4b 9f 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1c 40 80 b8 70 b0 64 40 30 20
+8a 0c 58 d7 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fd 00 30
+a5 d7 d7 2d 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 31 36 30 55 41 4e 41 43 2e 4a 20 0a 01 6f
+
+70 20 79 02 00 22 00 14 ed e2 06 85 7f 07 b7 00
+2f 80 1f 00 af 04 63 00 37 00 09 00 25 01 09 ed
+e2 06 ed e2 06 30 a5 80 2b 00 0c 27 00 3c a4 00
+00 27 00 30 3b 00 00 81 00 15 74 1a 00 00 03 01
+30 a5 00 00 61 48 61 48 a5 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 82 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 13239
+    Made in: week 42 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6464, 0.3339
+    Green: 0.2929, 0.6220
+    Blue : 0.1513, 0.0585
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.002925 Hz  16:10    78.004 kHz    164.120000 MHz (344 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  104 Hpol N
+                 Vfront   56 Vsync  10 Vback   34 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-165 Hz V, 215-215 kHz H, max dotclock 450 MHz
+    Display Product Name: 'B160UANAC.J '
+  Extension blocks: 1
+Checksum: 0x6f
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  1920x1200  165.000731 Hz  16:10   214.501 kHz    451.310000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback  104 Hpol P
+               Vfront   56 Vsync  10 Vback   34 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 451310 kHz
+    Maximum Pixel Clock: 451310 kHz
+    Minimum Vertical Refresh Rate: 48 Hz
+    Maximum Vertical Refresh Rate: 165 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 60 Hz
+      Max Refresh Rate: 165 Hz
+    Descriptor #2:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 48 Hz
+      Max Refresh Rate: 60 Hz
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 97 (408.759 cd/m^2)
+    Minimum luminance: 72 (0.326 cd/m^2)
+    Unknown: 0x61 0x48
+  Checksum: 0x82
+Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af b7 33 00 00 00 00 '...........3....'
+  2a 22 01 04 a5 22 16 78 03 a1 c5 a5 55 4b 9f 26 '*"...".x....UK.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 1c 40 80 b8 70 b0 64 40 30 20 '.......@..p.d@0 '
+  8a 0c 58 d7 10 00 00 18 00 00 00 0f 00 00 00 00 '..X.............'
+  00 00 00 00 00 00 00 00 00 20 00 00 00 fd 00 30 '......... .....0'
+  a5 d7 d7 2d 01 0a 20 20 20 20 20 20 00 00 00 fc '...-..      ....'
+  00 42 31 36 30 55 41 4e 41 43 2e 4a 20 0a 01 6f '.B160UANAC.J ..o'
+Checksum: 0x6f
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  1920x1200  165.000731 Hz  16:10   214.501 kHz    451.310000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback  104 Hpol P
+               Vfront   56 Vsync  10 Vback   34 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 451310 kHz
+    Maximum Pixel Clock: 451310 kHz
+    Minimum Vertical Refresh Rate: 48 Hz
+    Maximum Vertical Refresh Rate: 165 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 60 Hz
+      Max Refresh Rate: 165 Hz
+    Descriptor #2:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 48 Hz
+      Max Refresh Rate: 60 Hz
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 97 (408.759 cd/m^2)
+    Minimum luminance: 72 (0.326 cd/m^2)
+    Unknown: 0x61 0x48
+  Checksum: 0x82
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 78.003 - 214.500 kHz (Monitor: 215.000 - 215.000 kHz)
+    Maximum Clock: 451.310 MHz (Monitor: 450.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: One or more trailing spaces.
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+
+EDID conformity: FAIL

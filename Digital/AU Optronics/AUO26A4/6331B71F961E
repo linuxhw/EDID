@@ -1,0 +1,135 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af a4 26 00 00 00 00
+01 20 01 04 b5 1e 13 78 03 d6 56 a7 55 4b 9f 23
+0e 54 5b 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 18 86 40 a0 b0 08 52 70 30 20
+35 00 2d bc 10 00 00 18 00 00 00 fd 00 28 78 e3
+e3 45 01 0a 20 20 20 20 20 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 34 30 51 41 4e 30 34 2e 48 20 0a 01 36
+
+70 13 79 00 00 03 01 14 30 0c 01 84 3f 0b 9f 00
+2f 00 1f 00 07 07 51 00 02 00 04 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 ff 90
+
+00 ff ff ff ff ff ff 00 06 af a4 26 00 00 00 00
+01 20 01 04 b5 1e 13 78 03 d6 56 a7 55 4b 9f 23
+0e 54 5b 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 18 86 40 a0 b0 08 52 70 30 20
+35 00 2d bc 10 00 00 18 00 00 00 fd 00 28 78 e3
+e3 45 01 0a 20 20 20 20 20 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 34 30 51 41 4e 30 34 2e 48 20 0a 01 36
+
+70 13 79 00 00 03 01 14 30 0c 01 84 3f 0b 9f 00
+2f 00 1f 00 07 07 51 00 02 00 04 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 ff 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 9892
+    Made in: week 1 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6552, 0.3330
+    Green: 0.2939, 0.6230
+    Blue : 0.1376, 0.0556
+    White: 0.3291, 0.3574
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2880x1800   60.000559 Hz  16:10   112.921 kHz    343.280000 MHz (301 mm x 188 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   74 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-120 Hz V, 227-227 kHz H, max dotclock 690 MHz
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B140QAN04.H '
+  Extension blocks: 1
+Checksum: 0x36
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2880x1800  120.002866 Hz  16:9    225.845 kHz    686.570000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   5 Vback   74 Vpol N
+  Checksum: 0xff
+Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af a4 26 00 00 00 00 '...........&....'
+  01 20 01 04 b5 1e 13 78 03 d6 56 a7 55 4b 9f 23 '. .....x..V.UK.#'
+  0e 54 5b 00 00 00 01 01 01 01 01 01 01 01 01 01 '.T[.............'
+  01 01 01 01 01 01 18 86 40 a0 b0 08 52 70 30 20 '........@...Rp0 '
+  35 00 2d bc 10 00 00 18 00 00 00 fd 00 28 78 e3 '5.-..........(x.'
+  e3 45 01 0a 20 20 20 20 20 20 00 00 00 fe 00 41 '.E..      .....A'
+  55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'UO.         ....'
+  00 42 31 34 30 51 41 4e 30 34 2e 48 20 0a 01 36 '.B140QAN04.H ..6'
+Checksum: 0x36
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2880x1800  120.002866 Hz  16:9    225.845 kHz    686.570000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   5 Vback   74 Vpol N
+  Checksum: 0xff
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 112.921 - 225.845 kHz (Monitor: 227.000 - 227.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

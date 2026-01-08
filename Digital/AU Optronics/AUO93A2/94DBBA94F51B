@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0006afa29300000000
-03200104a5221678032115a954499c25
-0f505400000001010101010101010101
-010101010101786e00a0a04084603020
-aa0058d71000001a0000000000000000
-00000000000000000000000000fe0059
-46334447804231363051414e00000000
-0002410f9e000100000f410a202001df
-70207902002200141bdd0b85ff099f00
-2f801f003f068300090009002500091b
-dd0b1bdd0b3ca580810010721a000003
-013ca5000053515351a5000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000d490
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af a2 93 00 00 00 00
+03 20 01 04 a5 22 16 78 03 21 15 a9 54 49 9c 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 78 6e 00 a0 a0 40 84 60 30 20
+aa 00 58 d7 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 59
+46 33 44 47 80 42 31 36 30 51 41 4e 00 00 00 00
+00 02 41 0f 9e 00 01 00 00 0f 41 0a 20 20 01 df
+
+70 20 79 02 00 22 00 14 1b dd 0b 85 ff 09 9f 00
+2f 80 1f 00 3f 06 83 00 09 00 09 00 25 00 09 1b
+dd 0b 1b dd 0b 3c a5 80 81 00 10 72 1a 00 00 03
+01 3c a5 00 00 53 51 53 51 a5 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 d4 90
 
 00 ff ff ff ff ff ff 00 06 af a2 93 00 00 00 00
 03 20 01 04 a5 22 16 78 03 21 15 a9 54 49 9c 25
@@ -99,3 +98,73 @@ Block 1, DisplayID Extension Block:
     Unknown: 0x53 0x51
   Checksum: 0xd4
 Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af a2 93 00 00 00 00 '................'
+  03 20 01 04 a5 22 16 78 03 21 15 a9 54 49 9c 25 '. ...".x.!..TI.%'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 78 6e 00 a0 a0 40 84 60 30 20 '......xn...@.`0 '
+  aa 00 58 d7 10 00 00 1a 00 00 00 00 00 00 00 00 '..X.............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 59 '...............Y'
+  46 33 44 47 80 42 31 36 30 51 41 4e 00 00 00 00 'F3DG.B160QAN....'
+  00 02 41 0f 9e 00 01 00 00 0f 41 0a 20 20 01 df '..A.......A.  ..'
+Checksum: 0xdf
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2560x1600  165.037868 Hz  16:10   285.846 kHz    777.500000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront   10 Vsync  10 Vback  112 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 777500 kHz
+    Maximum Pixel Clock: 777500 kHz
+    Minimum Vertical Refresh Rate: 60 Hz
+    Maximum Vertical Refresh Rate: 165 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 83 (301.833 cd/m^2)
+    Minimum luminance: 81 (0.305 cd/m^2)
+    Unknown: 0x53 0x51
+  Checksum: 0xd4
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Range Limits Descriptor.
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A: Length is 16 instead of 19.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A: Length is 16 instead of 19.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+
+EDID conformity: FAIL

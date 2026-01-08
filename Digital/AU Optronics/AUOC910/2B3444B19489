@@ -1,0 +1,84 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 10 c9 00 00 00 00
+00 20 01 04 95 1a 0e 78 02 9e a5 96 59 58 96 28
+1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 ea 50 00 1a 30 30 20
+46 00 00 90 10 00 00 1a d8 17 56 ea 50 00 1a 30
+30 20 46 00 00 90 10 00 00 1a 00 00 00 fe 00 32
+4d 4e 4b 50 81 42 31 31 36 58 41 4e 00 00 00 00
+00 01 41 22 99 00 10 00 00 09 01 0a 20 20 00 ce
+
+00 ff ff ff ff ff ff 00 06 af 10 c9 00 00 00 00
+00 20 01 04 95 1a 0e 78 02 9e a5 96 59 58 96 28
+1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 ea 50 00 1a 30 30 20
+46 00 00 90 10 00 00 1a d8 17 56 ea 50 00 1a 30
+30 20 46 00 00 90 10 00 00 1a 00 00 00 fe 00 32
+4d 4e 4b 50 81 42 31 31 36 58 41 4e 00 00 00 00
+00 01 41 22 99 00 10 00 00 09 01 0a 20 20 00 ce
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 51472
+    Made in: 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5878, 0.3486
+    Green: 0.3466, 0.5878
+    Blue : 0.1582, 0.1074
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.059824 Hz 683:384   47.688 kHz     76.300000 MHz (256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback  154 Hpol P
+                 Vfront    4 Vsync   6 Vback   16 Vpol N
+    DTD 2:  1366x768    48.047859 Hz 683:384   38.150 kHz     61.040000 MHz (256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback  154 Hpol P
+                 Vfront    4 Vsync   6 Vback   16 Vpol N
+    Alphanumeric Data String: '2MNKP'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 01 41 22 99 00 10 00 00 09 01 0a 20 20 '....A"........  '
+Checksum: 0xce
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 10 c9 00 00 00 00 '................'
+  00 20 01 04 95 1a 0e 78 02 9e a5 96 59 58 96 28 '. .....x....YX.('
+  1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 ce 1d 56 ea 50 00 1a 30 30 20 '........V.P..00 '
+  46 00 00 90 10 00 00 1a d8 17 56 ea 50 00 1a 30 'F.........V.P..0'
+  30 20 46 00 00 90 10 00 00 1a 00 00 00 fe 00 32 '0 F............2'
+  4d 4e 4b 50 81 42 31 31 36 58 41 4e 00 00 00 00 'MNKP.B116XAN....'
+  00 01 41 22 99 00 10 00 00 09 01 0a 20 20 00 ce '..A"........  ..'
+Checksum: 0xce
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

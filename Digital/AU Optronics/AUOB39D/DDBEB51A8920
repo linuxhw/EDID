@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006af9db300000000
-011f0104a52213780359259358599329
-1d505400000001010101010101010101
-010101010101fa3780c870382e406c30
-aa0058c210000018182e000000000000
-0000000058c210000018000000fd0028
-3c44440e010a202020202020000000fe
-004231353648414b30322e34200a0039
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 9d b3 00 00 00 00
+01 1f 01 04 a5 22 13 78 03 59 25 93 58 59 93 29
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 fa 37 80 c8 70 38 2e 40 6c 30
+aa 00 58 c2 10 00 00 18 18 2e 00 00 00 00 00 00
+00 00 00 00 58 c2 10 00 00 18 00 00 00 fd 00 28
+3c 44 44 0e 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 35 36 48 41 4b 30 32 2e 34 20 0a 00 39
 
 00 ff ff ff ff ff ff 00 06 af 9d b3 00 00 00 00
 01 1f 01 04 a5 22 13 78 03 59 25 93 58 59 93 29
@@ -57,4 +55,45 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'B156HAK02.4 '
 Checksum: 0x39
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 9d b3 00 00 00 00 '................'
+  01 1f 01 04 a5 22 13 78 03 59 25 93 58 59 93 29 '.....".x.Y%.XY.)'
+  1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 fa 37 80 c8 70 38 2e 40 6c 30 '.......7..p8.@l0'
+  aa 00 58 c2 10 00 00 18 18 2e 00 00 00 00 00 00 '..X.............'
+  00 00 00 00 58 c2 10 00 00 18 00 00 00 fd 00 28 '....X..........('
+  3c 44 44 0e 01 0a 20 20 20 20 20 20 00 00 00 fe '<DD...      ....'
+  00 42 31 35 36 48 41 4b 30 32 2e 34 20 0a 00 39 '.B156HAK02.4 ..9'
+Checksum: 0x39
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 60.030 - inf Hz (Monitor: 40.000 - 60.000 Hz)
+    Maximum Clock: 143.300 MHz (Monitor: 140.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: 0 values in the video timing:
+    Horizontal Active/Blanking 0/0
+    Horizontal Frontporch/Sync Width 0/0
+    Vertical Active/Blanking 0/0
+    Vertical Frontporch/Sync Width 0/0
+  Detailed Timing Descriptor #2: 0 or negative horizontal front porch.
+  Detailed Timing Descriptor #2: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #2: 0 or negative vertical back porch.
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

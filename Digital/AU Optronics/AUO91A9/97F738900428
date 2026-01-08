@@ -1,0 +1,86 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af a9 91 00 00 00 00
+00 21 01 04 a5 1f 11 78 03 6e 35 a7 54 48 98 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 14 37 80 b8 70 38 24 40 10 10
+3e 00 35 ae 10 00 00 1a 10 2c 80 b8 70 38 24 40
+10 10 3e 00 35 ae 10 00 00 1a 00 00 00 fe 00 48
+34 35 50 44 81 42 31 34 30 48 41 4e 00 00 00 00
+00 02 41 21 a8 00 11 00 00 0a 01 0a 20 20 00 72
+
+00 ff ff ff ff ff ff 00 06 af a9 91 00 00 00 00
+00 21 01 04 a5 1f 11 78 03 6e 35 a7 54 48 98 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 14 37 80 b8 70 38 24 40 10 10
+3e 00 35 ae 10 00 00 1a 10 2c 80 b8 70 38 24 40
+10 10 3e 00 35 ae 10 00 00 1a 00 00 00 fe 00 48
+34 35 50 44 81 42 31 34 30 48 41 4e 00 00 00 00
+00 02 41 21 a8 00 11 00 00 0a 01 0a 20 20 00 72
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 37289
+    Made in: 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6533, 0.3300
+    Green: 0.2841, 0.5957
+    Blue : 0.1445, 0.0615
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.049471 Hz  16:9     67.015 kHz    141.000000 MHz (309 mm x 174 mm)
+                 Hfront   16 Hsync  16 Hback  152 Hpol P
+                 Vfront    3 Vsync  14 Vback   19 Vpol N
+    DTD 2:  1920x1080   48.039576 Hz  16:9     53.612 kHz    112.800000 MHz (309 mm x 174 mm)
+                 Hfront   16 Hsync  16 Hback  152 Hpol P
+                 Vfront    3 Vsync  14 Vback   19 Vpol N
+    Alphanumeric Data String: 'H45PD'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 21 a8 00 11 00 00 0a 01 0a 20 20 '....A!........  '
+Checksum: 0x72
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af a9 91 00 00 00 00 '................'
+  00 21 01 04 a5 1f 11 78 03 6e 35 a7 54 48 98 25 '.!.....x.n5.TH.%'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 14 37 80 b8 70 38 24 40 10 10 '.......7..p8$@..'
+  3e 00 35 ae 10 00 00 1a 10 2c 80 b8 70 38 24 40 '>.5......,..p8$@'
+  10 10 3e 00 35 ae 10 00 00 1a 00 00 00 fe 00 48 '..>.5..........H'
+  34 35 50 44 81 42 31 34 30 48 41 4e 00 00 00 00 '45PD.B140HAN....'
+  00 02 41 21 a8 00 11 00 00 0a 01 0a 20 20 00 72 '..A!........  .r'
+Checksum: 0x72
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

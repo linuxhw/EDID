@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006afa6e900000000
-16200104a5221678033ba59156589529
-1e505400000001010101010101010101
-010101010101fa3c80b870b024401010
-3e0058d7100000180000000000000000
-00000000000000000020000000fd0028
-3c4b4b10010a202020202020000000fe
-004231363055414b30312e32200a0044
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af a6 e9 00 00 00 00
+16 20 01 04 a5 22 16 78 03 3b a5 91 56 58 95 29
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 fa 3c 80 b8 70 b0 24 40 10 10
+3e 00 58 d7 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fd 00 28
+3c 4b 4b 10 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 36 30 55 41 4b 30 31 2e 32 20 0a 00 44
 
 00 ff ff ff ff ff ff 00 06 af a6 e9 00 00 00 00
 16 20 01 04 a5 22 16 78 03 3b a5 91 56 58 95 29
@@ -53,3 +51,38 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 40-60 Hz V, 75-75 kHz H, max dotclock 160 MHz
     Alphanumeric Data String: 'B160UAK01.2 '
 Checksum: 0x44
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af a6 e9 00 00 00 00 '................'
+  16 20 01 04 a5 22 16 78 03 3b a5 91 56 58 95 29 '. ...".x.;..VX.)'
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 fa 3c 80 b8 70 b0 24 40 10 10 '.......<..p.$@..'
+  3e 00 58 d7 10 00 00 18 00 00 00 00 00 00 00 00 '>.X.............'
+  00 00 00 00 00 00 00 00 00 20 00 00 00 fd 00 28 '......... .....('
+  3c 4b 4b 10 01 0a 20 20 20 20 20 20 00 00 00 fe '<KK...      ....'
+  00 42 31 36 30 55 41 4b 30 31 2e 32 20 0a 00 44 '.B160UAK01.2 ..D'
+Checksum: 0x44
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 74.192 - 74.192 kHz (Monitor: 75.000 - 75.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

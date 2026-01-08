@@ -1,0 +1,85 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 6d 10 00 00 00 00
+24 1c 01 04 a5 19 11 78 02 1f 75 91 54 55 96 29
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 70 94 40 10 b1 80 50 70 28 20
+aa 00 fe a9 00 00 00 18 38 63 40 10 b1 80 50 70
+28 20 aa 00 fe a9 00 00 00 18 00 00 00 fe 00 47
+31 32 30 59 41 54 30 31 2e 30 00 00 00 00 00 fe
+00 44 4e 30 42 31 42 36 37 4c 59 5a 5a 00 00 a3
+
+00 ff ff ff ff ff ff 00 06 af 6d 10 00 00 00 00
+24 1c 01 04 a5 19 11 78 02 1f 75 91 54 55 96 29
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 70 94 40 10 b1 80 50 70 28 20
+aa 00 fe a9 00 00 00 18 38 63 40 10 b1 80 50 70
+28 20 aa 00 fe a9 00 00 00 18 00 00 00 fe 00 47
+31 32 30 59 41 54 30 31 2e 30 00 00 00 00 00 fe
+00 44 4e 30 42 31 42 36 37 4c 59 5a 5a 00 00 a3
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 4205
+    Made in: week 36 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 25 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5664, 0.3291
+    Green: 0.3349, 0.5888
+    Blue : 0.1611, 0.1240
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2880x1920   60.279188 Hz   3:2    120.558 kHz    380.000000 MHz (254 mm x 169 mm)
+                 Hfront   40 Hsync  32 Hback  200 Hpol N
+                 Vfront   10 Vsync  10 Vback   60 Vpol N
+    DTD 2:  2880x1920   40.291878 Hz   3:2     80.584 kHz    254.000000 MHz (254 mm x 169 mm)
+                 Hfront   40 Hsync  32 Hback  200 Hpol N
+                 Vfront   10 Vsync  10 Vback   60 Vpol N
+    Alphanumeric Data String: 'G120YAT01.0'
+    Alphanumeric Data String: 'DN0B1B67LYZZ'
+Checksum: 0xa3
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 6d 10 00 00 00 00 '..........m.....'
+  24 1c 01 04 a5 19 11 78 02 1f 75 91 54 55 96 29 '$......x..u.TU.)'
+  1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 70 94 40 10 b1 80 50 70 28 20 '......p.@...Pp( '
+  aa 00 fe a9 00 00 00 18 38 63 40 10 b1 80 50 70 '........8c@...Pp'
+  28 20 aa 00 fe a9 00 00 00 18 00 00 00 fe 00 47 '( .............G'
+  31 32 30 59 41 54 30 31 2e 30 00 00 00 00 00 fe '120YAT01.0......'
+  00 44 4e 30 42 31 42 36 37 4c 59 5a 5a 00 00 a3 '.DN0B1B67LYZZ...'
+Checksum: 0xa3
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

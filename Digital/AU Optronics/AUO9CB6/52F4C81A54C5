@@ -1,0 +1,86 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af b6 9c 00 00 00 00
+19 22 01 04 a5 22 13 78 03 6a c5 90 56 57 93 29
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 1e 56 e2 50 00 24 30 26 16
+35 00 58 c1 10 00 00 18 00 14 56 e2 50 00 24 30
+26 16 35 00 58 c1 10 00 00 18 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 10 48 ff 0f 3c 7d 14 12 25 7d 00 00 20 00 15
+
+00 ff ff ff ff ff ff 00 06 af b6 9c 00 00 00 00
+19 22 01 04 a5 22 13 78 03 6a c5 90 56 57 93 29
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 1e 56 e2 50 00 24 30 26 16
+35 00 58 c1 10 00 00 18 00 14 56 e2 50 00 24 30
+26 16 35 00 58 c1 10 00 00 18 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 10 48 ff 0f 3c 7d 14 12 25 7d 00 00 20 00 15
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 40118
+    Made in: week 25 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5634, 0.3378
+    Green: 0.3417, 0.5761
+    Blue : 0.1630, 0.1328
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.001500 Hz 683:384   48.241 kHz     76.800000 MHz (344 mm x 193 mm)
+                 Hfront   38 Hsync  22 Hback  166 Hpol N
+                 Vfront    3 Vsync   5 Vback   28 Vpol N
+    DTD 2:  1366x768    40.001000 Hz 683:384   32.161 kHz     51.200000 MHz (344 mm x 193 mm)
+                 Hfront   38 Hsync  22 Hback  166 Hpol N
+                 Vfront    3 Vsync   5 Vback   28 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 10 48 ff 0f 3c 7d 14 12 25 7d 00 00 20 '....H..<}..%}.. '
+Checksum: 0x15
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af b6 9c 00 00 00 00 '................'
+  19 22 01 04 a5 22 13 78 03 6a c5 90 56 57 93 29 '."...".x.j..VW.)'
+  22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '"PT.............'
+  01 01 01 01 01 01 00 1e 56 e2 50 00 24 30 26 16 '........V.P.$0&.'
+  35 00 58 c1 10 00 00 18 00 14 56 e2 50 00 24 30 '5.X.......V.P.$0'
+  26 16 35 00 58 c1 10 00 00 18 00 00 00 00 00 00 '&.5.X...........'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
+  00 10 48 ff 0f 3c 7d 14 12 25 7d 00 00 20 00 15 '..H..<}..%}.. ..'
+Checksum: 0x15
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

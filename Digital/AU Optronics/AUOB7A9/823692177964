@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006afa9b700000000
-28200104951f117803f5658f555a932a
-1f505400000001010101010101010101
-010101010101603b8004713852401010
-3e0035ae100000189527800471385240
-10103e0035ae10000018000000fe0041
-554f0a202020202020202020000000fe
-004231343048414b30332e33200a00f1
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af a9 b7 00 00 00 00
+28 20 01 04 95 1f 11 78 03 f5 65 8f 55 5a 93 2a
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 60 3b 80 04 71 38 52 40 10 10
+3e 00 35 ae 10 00 00 18 95 27 80 04 71 38 52 40
+10 10 3e 00 35 ae 10 00 00 18 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 34 30 48 41 4b 30 33 2e 33 20 0a 00 f1
 
 00 ff ff ff ff ff ff 00 06 af a9 b7 00 00 00 00
 28 20 01 04 95 1f 11 78 03 f5 65 8f 55 5a 93 2a
@@ -54,3 +52,35 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'AUO'
     Alphanumeric Data String: 'B140HAK03.3 '
 Checksum: 0xf1
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af a9 b7 00 00 00 00 '................'
+  28 20 01 04 95 1f 11 78 03 f5 65 8f 55 5a 93 2a '( .....x..e.UZ.*'
+  1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 60 3b 80 04 71 38 52 40 10 10 '......`;..q8R@..'
+  3e 00 35 ae 10 00 00 18 95 27 80 04 71 38 52 40 '>.5......'..q8R@'
+  10 10 3e 00 35 ae 10 00 00 18 00 00 00 fe 00 41 '..>.5..........A'
+  55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'UO.         ....'
+  00 42 31 34 30 48 41 4b 30 33 2e 33 20 0a 00 f1 '.B140HAK03.3 ...'
+Checksum: 0xf1
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

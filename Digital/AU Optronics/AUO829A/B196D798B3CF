@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006af9a8200000000
-001f0104a5221378033e859156599128
-1f505400000001010101010101010101
-010101010101143780b4703824406c30
-aa0058c110000018b82480b470382440
-6c30aa0058c110000018000000000000
-00000000000000000000000000000002
-001430ff123cc80b0719c820202000ca
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 9a 82 00 00 00 00
+00 1f 01 04 a5 22 13 78 03 3e 85 91 56 59 91 28
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 14 37 80 b4 70 38 24 40 6c 30
+aa 00 58 c1 10 00 00 18 b8 24 80 b4 70 38 24 40
+6c 30 aa 00 58 c1 10 00 00 18 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 14 30 ff 12 3c c8 0b 07 19 c8 20 20 20 00 ca
 
 00 ff ff ff ff ff ff 00 06 af 9a 82 00 00 00 00
 00 1f 01 04 a5 22 13 78 03 3e 85 91 56 59 91 28
@@ -54,3 +52,35 @@ Block 0, Base EDID:
     Empty Descriptor
     Manufacturer-Specified Display Descriptor (0x02): 00 02 00 14 30 ff 12 3c c8 0b 07 19 c8 20 20 20 '....0..<.....   '
 Checksum: 0xca
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 9a 82 00 00 00 00 '................'
+  00 1f 01 04 a5 22 13 78 03 3e 85 91 56 59 91 28 '.....".x.>..VY.('
+  1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 14 37 80 b4 70 38 24 40 6c 30 '.......7..p8$@l0'
+  aa 00 58 c1 10 00 00 18 b8 24 80 b4 70 38 24 40 '..X......$..p8$@'
+  6c 30 aa 00 58 c1 10 00 00 18 00 00 00 00 00 00 'l0..X...........'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
+  00 14 30 ff 12 3c c8 0b 07 19 c8 20 20 20 00 ca '..0..<.....   ..'
+Checksum: 0xca
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
