@@ -1,0 +1,92 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 04 98 05 01 00 00 00
+24 20 01 04 a5 0d 08 78 0f 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 01 00 01 00 01 01 01 01 01 01
+01 01 01 01 01 01 b8 35 38 60 40 80 1d 70 48 08
+d3 00 84 4b 00 00 00 1e d2 23 38 60 40 80 1d 70
+48 08 d3 00 84 4b 00 00 00 1e 00 00 00 fd 00 1e
+4b 1e 96 11 01 00 00 00 00 00 00 00 00 00 00 fc
+00 47 31 36 31 38 2d 30 34 0a 20 20 20 20 00 0f
+
+00 ff ff ff ff ff ff 00 1e 04 98 05 01 00 00 00
+24 20 01 04 a5 0d 08 78 0f 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 01 00 01 00 01 01 01 01 01 01
+01 01 01 01 01 01 b8 35 38 60 40 80 1d 70 48 08
+d3 00 84 4b 00 00 00 1e d2 23 38 60 40 80 1d 70
+48 08 d3 00 84 4b 00 00 00 1e 00 00 00 fd 00 1e
+4b 1e 96 11 01 00 00 00 00 00 00 00 00 00 00 fc
+00 47 31 36 31 38 2d 30 34 0a 20 20 20 20 00 0f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GPD
+    Model: 1432
+    Serial Number: ...
+    Made in: week 36 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 13 cm x 8 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.5947
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II: none
+  Standard Timings:
+  Detailed Timing Descriptors:
+    DTD 1:  1080x1920   59.999372 Hz   9:16   116.939 kHz    137.520000 MHz (132 mm x 75 mm)
+                 Hfront   72 Hsync   8 Hback   16 Hpol P
+                 Vfront   13 Vsync   3 Vback   13 Vpol P
+    DTD 2:  1080x1920   40.008307 Hz   9:16    77.976 kHz     91.700000 MHz (132 mm x 75 mm)
+                 Hfront   72 Hsync   8 Hback   16 Hpol P
+                 Vfront   13 Vsync   3 Vback   13 Vpol P
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 30-75 Hz V, 30-150 kHz H, max dotclock 170 MHz
+    Display Product Name: 'G1618-04'
+Checksum: 0x0f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 04 98 05 01 00 00 00 '................'
+  24 20 01 04 a5 0d 08 78 0f 0d c9 a0 57 47 98 27 '$ .....x....WG.''
+  12 48 4c 00 00 00 01 00 01 00 01 01 01 01 01 01 '.HL.............'
+  01 01 01 01 01 01 b8 35 38 60 40 80 1d 70 48 08 '.......58`@..pH.'
+  d3 00 84 4b 00 00 00 1e d2 23 38 60 40 80 1d 70 '...K.....#8`@..p'
+  48 08 d3 00 84 4b 00 00 00 1e 00 00 00 fd 00 1e 'H....K..........'
+  4b 1e 96 11 01 00 00 00 00 00 00 00 00 00 00 fc 'K...............'
+  00 47 31 36 31 38 2d 30 34 0a 20 20 20 20 00 0f '.G1618-04.    ..'
+Checksum: 0x0f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (13x8 is smaller than 10x10 cm).
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

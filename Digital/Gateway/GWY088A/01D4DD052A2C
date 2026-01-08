@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001ef98a08e0030000
-2f0f0103802d1c78eaee95a3544c9926
-0f5054bfef0081806140b30001010101
-0101010101012d399030621a274068b0
-6e01c2181100001e000000fc00465044
-32313835570a20202020000000fd0038
-4c1f5110000a202020202020000000ff
-005035422035304e2030303939320020
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e f9 8a 08 e0 03 00 00
+2f 0f 01 03 80 2d 1c 78 ea ee 95 a3 54 4c 99 26
+0f 50 54 bf ef 00 81 80 61 40 b3 00 01 01 01 01
+01 01 01 01 01 01 2d 39 90 30 62 1a 27 40 68 b0
+6e 01 c2 18 11 00 00 1e 00 00 00 fc 00 46 50 44
+32 31 38 35 57 0a 20 20 20 20 00 00 00 fd 00 38
+4c 1f 51 10 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 50 35 42 20 35 30 4e 20 30 30 39 39 32 00 20
 
 00 ff ff ff ff ff ff 00 1e f9 8a 08 e0 03 00 00
 2f 0f 01 03 80 2d 1c 78 ea ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GWY
     Model: 2186
-    Serial Number: 992
+    Serial Number: ...
     Made in: week 47 of 2005
   Basic Display Parameters & Features:
     Digital display
@@ -67,7 +65,29 @@ Block 0, Base EDID:
     Display Product Name: 'FPD2185W'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-81 kHz H, max dotclock 160 MHz
-    Display Product Serial Number: 'P5B 50N 00992'
+    Display Product Serial Number: ...
 Checksum: 0x20
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e f9 8a 08 e0 03 00 00 '................'
+  2f 0f 01 03 80 2d 1c 78 ea ee 95 a3 54 4c 99 26 '/....-.x....TL.&'
+  0f 50 54 bf ef 00 81 80 61 40 b3 00 01 01 01 01 '.PT.....a@......'
+  01 01 01 01 01 01 2d 39 90 30 62 1a 27 40 68 b0 '......-9.0b.'@h.'
+  6e 01 c2 18 11 00 00 1e 00 00 00 fc 00 46 50 44 'n............FPD'
+  32 31 38 35 57 0a 20 20 20 20 00 00 00 fd 00 38 '2185W.    .....8'
+  4c 1f 51 10 00 0a 20 20 20 20 20 20 00 00 00 ff 'L.Q...      ....'
+  00 50 35 42 20 35 30 4e 20 30 30 39 39 32 00 20 '.P5B 50N 00992. '
+Checksum: 0x20
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6d9e43c2160400
-090f0103ee221b78ea2ee5a4574a9c25
-115054a56a80314f454f614f81800101
-010101010101302a009851002a403070
-1300520e1100001e000000fd00384b1e
-470b000a202020202020000000fc004c
-31373330500a202020202020000000fc
-00200a2020202020202020202020008f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 9e 43 c2 16 04 00
+09 0f 01 03 ee 22 1b 78 ea 2e e5 a4 57 4a 9c 25
+11 50 54 a5 6a 80 31 4f 45 4f 61 4f 81 80 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+47 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+31 37 33 30 50 0a 20 20 20 20 20 20 00 00 00 fc
+00 20 0a 20 20 20 20 20 20 20 20 20 20 20 00 8f
 
 00 ff ff ff ff ff ff 00 1e 6d 9e 43 c2 16 04 00
 09 0f 01 03 ee 22 1b 78 ea 2e e5 a4 57 4a 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 17310
-    Serial Number: 267970
+    Serial Number: ...
     Made in: week 9 of 2005
   Basic Display Parameters & Features:
     Digital display
@@ -65,3 +63,30 @@ Block 0, Base EDID:
     Display Product Name: 'L1730P'
     Display Product Name: ' '
 Checksum: 0x8f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 9e 43 c2 16 04 00 '.........m.C....'
+  09 0f 01 03 ee 22 1b 78 ea 2e e5 a4 57 4a 9c 25 '.....".x....WJ.%'
+  11 50 54 a5 6a 80 31 4f 45 4f 61 4f 81 80 01 01 '.PT.j.1OEOaO....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1e '..R..........8K.'
+  47 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'G...      .....L'
+  31 37 33 30 50 0a 20 20 20 20 20 20 00 00 00 fc '1730P.      ....'
+  00 20 0a 20 20 20 20 20 20 20 20 20 20 20 00 8f '. .           ..'
+Checksum: 0x8f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x6e.
+  Display Product Name: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

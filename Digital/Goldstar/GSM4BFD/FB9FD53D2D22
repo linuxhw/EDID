@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6dfd4b888a0000
-01160104a5291778e2bcb5a058569f27
-0c5054a76a00314f454f614f01010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000fd00384b1e
-3d09000a202020202020000000fc0045
-313935310a20202020202020000000ff
-003230314c54504731313436340a005a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d fd 4b 88 8a 00 00
+01 16 01 04 a5 29 17 78 e2 bc b5 a0 58 56 9f 27
+0c 50 54 a7 6a 00 31 4f 45 4f 61 4f 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 fd 00 38 4b 1e
+3d 09 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45
+31 39 35 31 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 32 30 31 4c 54 50 47 31 31 34 36 34 0a 00 5a
 
 00 ff ff ff ff ff ff 00 1e 6d fd 4b 88 8a 00 00
 01 16 01 04 a5 29 17 78 e2 bc b5 a0 58 56 9f 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 19453
-    Serial Number: 35464
+    Serial Number: ...
     Made in: week 1 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -64,7 +62,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-61 kHz H, max dotclock 90 MHz
     Display Product Name: 'E1951'
-    Display Product Serial Number: '201LTPG11464'
+    Display Product Serial Number: ...
 Checksum: 0x5a
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d fd 4b 88 8a 00 00 '.........m.K....'
+  01 16 01 04 a5 29 17 78 e2 bc b5 a0 58 56 9f 27 '.....).x....XV.''
+  0c 50 54 a7 6a 00 31 4f 45 4f 61 4f 01 01 01 01 '.PT.j.1OEOaO....'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 fd 00 38 4b 1e '3............8K.'
+  3d 09 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45 '=...      .....E'
+  31 39 35 31 0a 20 20 20 20 20 20 20 00 00 00 ff '1951.       ....'
+  00 32 30 31 4c 54 50 47 31 31 34 36 34 0a 00 5a '.201LTPG11464..Z'
+Checksum: 0x5a
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6df7550e8c0000
-060d010388321f782a280ba3544d9625
-125054a56a8081806159455931590101
-010101010101302a009851002a403070
-1300f0361100001e000000fd0038551e
-470b000a202020202020000000fc004c
-32333230410a202020202020000000fc
-000a2020202020202020202020200088
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d f7 55 0e 8c 00 00
+06 0d 01 03 88 32 1f 78 2a 28 0b a3 54 4d 96 25
+12 50 54 a5 6a 80 81 80 61 59 45 59 31 59 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 f0 36 11 00 00 1e 00 00 00 fd 00 38 55 1e
+47 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+32 33 32 30 41 0a 20 20 20 20 20 20 00 00 00 fc
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 88
 
 00 ff ff ff ff ff ff 00 1e 6d f7 55 0e 8c 00 00
 06 0d 01 03 88 32 1f 78 2a 28 0b a3 54 4d 96 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 22007
-    Serial Number: 35854
+    Serial Number: ...
     Made in: week 6 of 2003
   Basic Display Parameters & Features:
     Digital display
@@ -66,4 +64,29 @@ Block 0, Base EDID:
     Display Product Name: ''
 Checksum: 0x88
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d f7 55 0e 8c 00 00 '.........m.U....'
+  06 0d 01 03 88 32 1f 78 2a 28 0b a3 54 4d 96 25 '.....2.x*(..TM.%'
+  12 50 54 a5 6a 80 81 80 61 59 45 59 31 59 01 01 '.PT.j...aYEY1Y..'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 f0 36 11 00 00 1e 00 00 00 fd 00 38 55 1e '...6.........8U.'
+  47 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'G...      .....L'
+  32 33 32 30 41 0a 20 20 20 20 20 20 00 00 00 fc '2320A.      ....'
+  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 88 '..            ..'
+Checksum: 0x88
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x08.
+  Display Product Name: Empty string.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

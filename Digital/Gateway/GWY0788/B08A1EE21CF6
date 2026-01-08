@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001ef9880780300000
-34110103802819782ace50a3544c9926
-0f5054afcf0031ca81809500950f0101
-0101010101019a29a0d0518422305098
-360098ff1000001c000000ff004d3041
-374331323431360a2020000000fd0038
-4b1f510e000a202020202020000000fc
-0046504431393736570a202020200066
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e f9 88 07 80 30 00 00
+34 11 01 03 80 28 19 78 2a ce 50 a3 54 4c 99 26
+0f 50 54 af cf 00 31 ca 81 80 95 00 95 0f 01 01
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 ff 00 4d 30 41
+37 43 31 32 34 31 36 0a 20 20 00 00 00 fd 00 38
+4b 1f 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 46 50 44 31 39 37 36 57 0a 20 20 20 20 00 66
 
 00 ff ff ff ff ff ff 00 1e f9 88 07 80 30 00 00
 34 11 01 03 80 28 19 78 2a ce 50 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GWY
     Model: 1928
-    Serial Number: 12416
+    Serial Number: ...
     Made in: week 52 of 2007
   Basic Display Parameters & Features:
     Digital display
@@ -63,8 +61,34 @@ Block 0, Base EDID:
     DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (408 mm x 255 mm)
                  Hfront   80 Hsync 152 Hback  232 Hpol N
                  Vfront    3 Vsync   6 Vback   25 Vpol P
-    Display Product Serial Number: 'M0A7C12416'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 31-81 kHz H, max dotclock 140 MHz
     Display Product Name: 'FPD1976W'
 Checksum: 0x66
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e f9 88 07 80 30 00 00 '.............0..'
+  34 11 01 03 80 28 19 78 2a ce 50 a3 54 4c 99 26 '4....(.x*.P.TL.&'
+  0f 50 54 af cf 00 31 ca 81 80 95 00 95 0f 01 01 '.PT...1.........'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 00 00 00 ff 00 4d 30 41 '6............M0A'
+  37 43 31 32 34 31 36 0a 20 20 00 00 00 fd 00 38 '7C12416.  .....8'
+  4b 1f 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
+  00 46 50 44 31 39 37 36 57 0a 20 20 20 20 00 66 '.FPD1976W.    .f'
+Checksum: 0x66
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 26.250 - 79.976 kHz (Monitor: 31.000 - 81.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

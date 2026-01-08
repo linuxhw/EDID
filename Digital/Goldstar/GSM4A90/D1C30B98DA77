@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6d904a6eab0100
-090e0104a5261e78e2ec54a5584a9a26
-215054a56b80314f454f614f81800101
-010101010101302a009851002a403070
-1300782d1100001e000000fd00384b1e
-530e000a202020202020000000fc004c
-31393135530a202020202020000000fc
-000a2020202020202020202020200007
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 90 4a 6e ab 01 00
+09 0e 01 04 a5 26 1e 78 e2 ec 54 a5 58 4a 9a 26
+21 50 54 a5 6b 80 31 4f 45 4f 61 4f 81 80 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+31 39 31 35 53 0a 20 20 20 20 20 20 00 00 00 fc
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 07
 
 00 ff ff ff ff ff ff 00 1e 6d 90 4a 6e ab 01 00
 09 0e 01 04 a5 26 1e 78 e2 ec 54 a5 58 4a 9a 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 19088
-    Serial Number: 109422
+    Serial Number: ...
     Made in: week 9 of 2004
   Basic Display Parameters & Features:
     Digital display
@@ -69,4 +67,34 @@ Block 0, Base EDID:
     Display Product Name: ''
 Checksum: 0x07
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 90 4a 6e ab 01 00 '.........m.Jn...'
+  09 0e 01 04 a5 26 1e 78 e2 ec 54 a5 58 4a 9a 26 '.....&.x..T.XJ.&'
+  21 50 54 a5 6b 80 31 4f 45 4f 61 4f 81 80 01 01 '!PT.k.1OEOaO....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4b 1e '..x-.........8K.'
+  53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'S...      .....L'
+  31 39 31 35 53 0a 20 20 20 20 20 20 00 00 00 fc '1915S.      ....'
+  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 07 '..            ..'
+Checksum: 0x07
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Product Name: Empty string.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

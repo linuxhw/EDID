@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6d945601010101
-0613010380342078ea3dd5a95233ac25
-0f5054a54b00a940818fb300814f8180
-010101010101283c80a070b023403020
-3600b0441100001a483f403062b03240
-40c01300b0441100001e000000fd0038
-4b1e5311000a202020202020000000fc
-0057323435320a2020202020202000d0
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 94 56 01 01 01 01
+06 13 01 03 80 34 20 78 ea 3d d5 a9 52 33 ac 25
+0f 50 54 a5 4b 00 a9 40 81 8f b3 00 81 4f 81 80
+01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 b0 44 11 00 00 1a 48 3f 40 30 62 b0 32 40
+40 c0 13 00 b0 44 11 00 00 1e 00 00 00 fd 00 38
+4b 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 57 32 34 35 32 0a 20 20 20 20 20 20 20 00 d0
 
 00 ff ff ff ff ff ff 00 1e 6d 94 56 01 01 01 01
 06 13 01 03 80 34 20 78 ea 3d d5 a9 52 33 ac 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 22164
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 6 of 2009
   Basic Display Parameters & Features:
     Digital display
@@ -67,3 +65,27 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'W2452'
 Checksum: 0xd0
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 94 56 01 01 01 01 '.........m.V....'
+  06 13 01 03 80 34 20 78 ea 3d d5 a9 52 33 ac 25 '.....4 x.=..R3.%'
+  0f 50 54 a5 4b 00 a9 40 81 8f b3 00 81 4f 81 80 '.PT.K..@.....O..'
+  01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
+  36 00 b0 44 11 00 00 1a 48 3f 40 30 62 b0 32 40 '6..D....H?@0b.2@'
+  40 c0 13 00 b0 44 11 00 00 1e 00 00 00 fd 00 38 '@....D.........8'
+  4b 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 57 32 34 35 32 0a 20 20 20 20 20 20 20 00 d0 '.W2452.       ..'
+Checksum: 0xd0
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

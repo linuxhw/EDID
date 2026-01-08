@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6d564396100100
-060d010380221b78ea241fa15a499925
-1a4c55a56a80314f454f614f81800101
-010101010101302a009851002a403070
-1300671f1100001e000000fd00384b1e
-470b000a202020202020000000fc004c
-3137313042200a2020202020000000fc
-00200a20202020202020202020200037
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 56 43 96 10 01 00
+06 0d 01 03 80 22 1b 78 ea 24 1f a1 5a 49 99 25
+1a 4c 55 a5 6a 80 31 4f 45 4f 61 4f 81 80 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 67 1f 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+47 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+31 37 31 30 42 20 0a 20 20 20 20 20 00 00 00 fc
+00 20 0a 20 20 20 20 20 20 20 20 20 20 20 00 37
 
 00 ff ff ff ff ff ff 00 1e 6d 56 43 96 10 01 00
 06 0d 01 03 80 22 1b 78 ea 24 1f a1 5a 49 99 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 17238
-    Serial Number: 69782
+    Serial Number: ...
     Made in: week 6 of 2003
   Basic Display Parameters & Features:
     Digital display
@@ -65,3 +63,32 @@ Block 0, Base EDID:
     Display Product Name: 'L1710B '
     Display Product Name: ' '
 Checksum: 0x37
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 56 43 96 10 01 00 '.........mVC....'
+  06 0d 01 03 80 22 1b 78 ea 24 1f a1 5a 49 99 25 '.....".x.$..ZI.%'
+  1a 4c 55 a5 6a 80 31 4f 45 4f 61 4f 81 80 01 01 '.LU.j.1OEOaO....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 67 1f 11 00 00 1e 00 00 00 fd 00 38 4b 1e '..g..........8K.'
+  47 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'G...      .....L'
+  31 37 31 30 42 20 0a 20 20 20 20 20 00 00 00 fc '1710B .     ....'
+  00 20 0a 20 20 20 20 20 20 20 20 20 20 20 00 37 '. .           .7'
+Checksum: 0x37
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 359x287 mm vs display size 340x270 mm.
+  Display Product Name: One or more trailing spaces.
+  Display Product Name: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 359x287mm, which is larger than the display size 340.0x270.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
