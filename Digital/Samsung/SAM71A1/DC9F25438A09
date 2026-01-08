@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004c2da171374e4730
-23200104b53c22783a0495ae5241ae26
-0f5054bfef80714f810081c08180a9c0
-b300950001014dd000a0f0703e803020
-350055502100001a000000fd001e4b1e
-873c000a202020202020000000fc004c
-53323741383030550a202020000000ff
-00484e4d543830353534310a20200108
-02031cf0475f101f0413031223090707
-83010000e305c000e3060501023a8018
-71382d40582c450055502100001e565e
-00a0a0a029503020350055502100001a
-04740030f2705a80b0588a0055502100
-001e0000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000036
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d a1 71 37 4e 47 30
+23 20 01 04 b5 3c 22 78 3a 04 95 ae 52 41 ae 26
+0f 50 54 bf ef 80 71 4f 81 00 81 c0 81 80 a9 c0
+b3 00 95 00 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 55 50 21 00 00 1a 00 00 00 fd 00 1e 4b 1e
+87 3c 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+53 32 37 41 38 30 30 55 0a 20 20 20 00 00 00 ff
+00 48 4e 4d 54 38 30 35 35 34 31 0a 20 20 01 08
+
+02 03 1c f0 47 5f 10 1f 04 13 03 12 23 09 07 07
+83 01 00 00 e3 05 c0 00 e3 06 05 01 02 3a 80 18
+71 38 2d 40 58 2c 45 00 55 50 21 00 00 1e 56 5e
+00 a0 a0 a0 29 50 30 20 35 00 55 50 21 00 00 1a
+04 74 00 30 f2 70 5a 80 b0 58 8a 00 55 50 21 00
+00 1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 36
 
 00 ff ff ff ff ff ff 00 4c 2d a1 71 37 4e 47 30
 23 20 01 04 b5 3c 22 78 3a 04 95 ae 52 41 ae 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 29089
-    Serial Number: 809979447
+    Serial Number: ...
     Made in: week 35 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -91,7 +90,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 30-75 Hz V, 30-135 kHz H, max dotclock 600 MHz
     Display Product Name: 'LS27A800U'
-    Display Product Serial Number: 'HNMT805541'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x08
 
@@ -140,4 +139,99 @@ Block 1, CTA-861 Extension Block:
                  Vfront    8 Vsync  10 Vback   72 Vpol P
 Checksum: 0x36  Unused space in Extension Block: 45 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d a1 71 37 4e 47 30 '........L-.q7NG0'
+  23 20 01 04 b5 3c 22 78 3a 04 95 ae 52 41 ae 26 '# ...<"x:...RA.&'
+  0f 50 54 bf ef 80 71 4f 81 00 81 c0 81 80 a9 c0 '.PT...qO........'
+  b3 00 95 00 01 01 4d d0 00 a0 f0 70 3e 80 30 20 '......M....p>.0 '
+  35 00 55 50 21 00 00 1a 00 00 00 fd 00 1e 4b 1e '5.UP!.........K.'
+  87 3c 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c '.<..      .....L'
+  53 32 37 41 38 30 30 55 0a 20 20 20 00 00 00 ff 'S27A800U.   ....'
+  00 48 4e 4d 54 38 30 35 35 34 31 0a 20 20 01 08 '.HNMT805541.  ..'
+Checksum: 0x08
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+  Detailed Timing Descriptors:
+    DTD 5:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (597 mm x 336 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 6:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 7:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz (597 mm x 336 mm)
+                 Hfront  176 Hsync  88 Hback  296 Hpol P
+                 Vfront    8 Vsync  10 Vback   72 Vpol P
+Checksum: 0x36  Unused space in Extension Block: 45 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 95 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 95.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

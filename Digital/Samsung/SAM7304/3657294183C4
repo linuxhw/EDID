@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004c2d047354323559
-2322010380351e782a25d4a6554f9b26
-0e494825cf00714f810081c081809500
-a9c0b3000101023a801871382d40582c
-45000f282100001e000000fd0030901e
-aa22000a202020202020000000fc004f
-64797373657920473330420a000000ff
-00485835583830323832320a2020012e
-020328f144903f040323090707830100
-0068030c0010008044006d1a00000201
-30900000000000000474801871382d40
-582c45000f282100001e377f80887038
-1440182035000f282100001e00000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000073
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 04 73 54 32 35 59
+23 22 01 03 80 35 1e 78 2a 25 d4 a6 55 4f 9b 26
+0e 49 48 25 cf 00 71 4f 81 00 81 c0 81 80 95 00
+a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 fd 00 30 90 1e
+aa 22 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4f
+64 79 73 73 65 79 20 47 33 30 42 0a 00 00 00 ff
+00 48 58 35 58 38 30 32 38 32 32 0a 20 20 01 2e
+
+02 03 28 f1 44 90 3f 04 03 23 09 07 07 83 01 00
+00 68 03 0c 00 10 00 80 44 00 6d 1a 00 00 02 01
+30 90 00 00 00 00 00 00 04 74 80 18 71 38 2d 40
+58 2c 45 00 0f 28 21 00 00 1e 37 7f 80 88 70 38
+14 40 18 20 35 00 0f 28 21 00 00 1e 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 73
 
 00 ff ff ff ff ff ff 00 4c 2d 04 73 54 32 35 59
 23 22 01 03 80 35 1e 78 2a 25 d4 a6 55 4f 9b 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 29444
-    Serial Number: 1496658516
+    Serial Number: ...
     Made in: week 35 of 2024
   Basic Display Parameters & Features:
     Digital display
@@ -83,7 +82,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 48-144 Hz V, 30-170 kHz H, max dotclock 340 MHz
     Display Product Name: 'Odyssey G30B'
-    Display Product Serial Number: 'HX5X802822'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x2e
 
@@ -129,3 +128,91 @@ Block 1, CTA-861 Extension Block:
                  Hfront   24 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   12 Vpol P
 Checksum: 0x73  Unused space in Extension Block: 51 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d 04 73 54 32 35 59 '........L-.sT25Y'
+  23 22 01 03 80 35 1e 78 2a 25 d4 a6 55 4f 9b 26 '#"...5.x*%..UO.&'
+  0e 49 48 25 cf 00 71 4f 81 00 81 c0 81 80 95 00 '.IH%..qO........'
+  a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 fd 00 30 90 1e 'E..(!........0..'
+  aa 22 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4f '."..      .....O'
+  64 79 73 73 65 79 20 47 33 30 42 0a 00 00 00 ff 'dyssey G30B.....'
+  00 48 58 35 58 38 30 32 38 32 32 0a 20 20 01 2e '.HX5X802822.  ..'
+Checksum: 0x2e
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 340 MHz
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Detailed Timing Descriptors:
+    DTD 4:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 5:  1920x1080  143.999823 Hz  16:9    158.400 kHz    325.670000 MHz (527 mm x 296 mm)
+                 Hfront   24 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   12 Vpol P
+Checksum: 0x73  Unused space in Extension Block: 51 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 63.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 3.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

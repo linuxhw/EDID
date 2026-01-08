@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004c2d207100000000
-241f0103802917782a22e5a35b4fa326
-135054bfee00010181c0010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000fd00324b1e
-5512000a202020202020000000fc0053
-3139413333780a2020202020000000ff
-00483742523930323233380a202001c7
-020313b04616040713120367030c0010
-000024011d00bc52d01e20b82855409a
-e61000001e8c0ad090204031200c4055
-009ae6100000188c0ad08a20e02d1010
-3e96009ae61000001800000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000f9
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 20 71 00 00 00 00
+24 1f 01 03 80 29 17 78 2a 22 e5 a3 5b 4f a3 26
+13 50 54 bf ee 00 01 01 81 c0 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 4b 1e
+55 12 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53
+31 39 41 33 33 78 0a 20 20 20 20 20 00 00 00 ff
+00 48 37 42 52 39 30 32 32 33 38 0a 20 20 01 c7
+
+02 03 13 b0 46 16 04 07 13 12 03 67 03 0c 00 10
+00 00 24 01 1d 00 bc 52 d0 1e 20 b8 28 55 40 9a
+e6 10 00 00 1e 8c 0a d0 90 20 40 31 20 0c 40 55
+00 9a e6 10 00 00 18 8c 0a d0 8a 20 e0 2d 10 10
+3e 96 00 9a e6 10 00 00 18 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f9
 
 00 ff ff ff ff ff ff 00 4c 2d 20 71 00 00 00 00
 24 1f 01 03 80 29 17 78 2a 22 e5 a3 5b 4f a3 26
@@ -80,7 +79,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-85 kHz H, max dotclock 180 MHz
     Display Product Name: 'S19A33x'
-    Display Product Serial Number: 'H7BR902238'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0xc7
 
@@ -113,3 +112,78 @@ Block 1, CTA-861 Extension Block:
                  Hfront   16 Hsync  62 Hback   60 Hpol N
                  Vfront    9 Vsync   6 Vback   30 Vpol N
 Checksum: 0xf9  Unused space in Extension Block: 54 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d 20 71 00 00 00 00 '........L- q....'
+  24 1f 01 03 80 29 17 78 2a 22 e5 a3 5b 4f a3 26 '$....).x*"..[O.&'
+  13 50 54 bf ee 00 01 01 81 c0 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 4b 1e '3............2K.'
+  55 12 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53 'U...      .....S'
+  31 39 41 33 33 78 0a 20 20 20 20 20 00 00 00 ff '19A33x.     ....'
+  00 48 37 42 52 39 30 32 32 33 38 0a 20 20 01 c7 '.H7BR902238.  ..'
+Checksum: 0xc7
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Maximum TMDS clock: 180 MHz
+  Detailed Timing Descriptors:
+    DTD 5:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (410 mm x 230 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 6:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (410 mm x 230 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 7:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (410 mm x 230 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0xf9  Unused space in Extension Block: 54 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 22 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 22.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 7.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 3.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 60.022 kHz (Monitor: 30.000 - 85.000 kHz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL
