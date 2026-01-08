@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0009d1137945540000
-1614010380301b782eee95a3544c9926
-0f5054a56b8061c081c0814081808100
-a9c0b300d1c0023a801871382d40582c
-4500dd0c1100001e000000fd00324c18
-5315000a202020202020000000fc0042
-454e5120453232323048440a000000ff
-0032364130303234303031390a200178
-020321714c1005041303120716011415
-1f230907078301000067030c00100038
-2d8c0ad08a20e02d10103e9600e00e11
-000018011d007251d01e206e285500e0
-0e1100001e011d00bc52d01e20b82855
-40e00e1100001e8c0ad090204031200c
-405500e00e110000188c0aa020512018
-10187e2300e00e110000980000000044
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 13 79 45 54 00 00
+16 14 01 03 80 30 1b 78 2e ee 95 a3 54 4c 99 26
+0f 50 54 a5 6b 80 61 c0 81 c0 81 40 81 80 81 00
+a9 c0 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 32 4c 18
+53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42
+45 4e 51 20 45 32 32 32 30 48 44 0a 00 00 00 ff
+00 32 36 41 30 30 32 34 30 30 31 39 0a 20 01 78
+
+02 03 21 71 4c 10 05 04 13 03 12 07 16 01 14 15
+1f 23 09 07 07 83 01 00 00 67 03 0c 00 10 00 38
+2d 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 e0 0e 11
+00 00 18 01 1d 00 72 51 d0 1e 20 6e 28 55 00 e0
+0e 11 00 00 1e 01 1d 00 bc 52 d0 1e 20 b8 28 55
+40 e0 0e 11 00 00 1e 8c 0a d0 90 20 40 31 20 0c
+40 55 00 e0 0e 11 00 00 18 8c 0a a0 20 51 20 18
+10 18 7e 23 00 e0 0e 11 00 00 98 00 00 00 00 44
 
 00 ff ff ff ff ff ff 00 09 d1 13 79 45 54 00 00
 16 14 01 03 80 30 1b 78 2e ee 95 a3 54 4c 99 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30995
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 22 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -80,13 +79,13 @@ Block 0, Base EDID:
     DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
     DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD  1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 24-83 kHz H, max dotclock 210 MHz
     Display Product Name: 'BENQ E2220HD'
-    Display Product Serial Number: '26A00240019'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x78
 
@@ -125,20 +124,128 @@ Block 1, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 225 MHz
   Detailed Timing Descriptors:
-    DTD 2:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (480 mm x 270 mm)
-                 Hfront   16 Hsync  62 Hback   60 Hpol N
-                 Vfront    9 Vsync   6 Vback   30 Vpol N
-    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (480 mm x 270 mm)
-                 Hfront  110 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD 4:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (480 mm x 270 mm)
-                 Hfront  440 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD 5:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (480 mm x 270 mm)
-                 Hfront   12 Hsync  64 Hback   68 Hpol N
-                 Vfront    5 Vsync   5 Vback   39 Vpol N
-    DTD 6:  1440x576i   50.000000 Hz   5:2     15.625 kHz     27.000000 MHz (480 mm x 270 mm)
-                 Hfront   24 Hsync 126 Hback  138 Hpol N
-                 Vfront    2 Vsync   3 Vback   19 Vpol N Vfront +0.5 Odd Field
-                 Vfront    2 Vsync   3 Vback   19 Vpol N Vback  +0.5 Even Field
+    DTD  2:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (480 mm x 270 mm)
+                  Hfront   16 Hsync  62 Hback   60 Hpol N
+                  Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD  3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (480 mm x 270 mm)
+                  Hfront  110 Hsync  40 Hback  220 Hpol P
+                  Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD  4:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (480 mm x 270 mm)
+                  Hfront  440 Hsync  40 Hback  220 Hpol P
+                  Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD  5:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (480 mm x 270 mm)
+                  Hfront   12 Hsync  64 Hback   68 Hpol N
+                  Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD  6:  1440x576i   50.000000 Hz   5:2     15.625 kHz     27.000000 MHz (480 mm x 270 mm)
+                  Hfront   24 Hsync 126 Hback  138 Hpol N
+                  Vfront    2 Vsync   3 Vback   19 Vpol N Vfront +0.5 Odd Field
+                  Vfront    2 Vsync   3 Vback   19 Vpol N Vback  +0.5 Even Field
 Checksum: 0x44  Unused space in Extension Block: 4 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 13 79 45 54 00 00 '...........yET..'
+  16 14 01 03 80 30 1b 78 2e ee 95 a3 54 4c 99 26 '.....0.x....TL.&'
+  0f 50 54 a5 6b 80 61 c0 81 c0 81 40 81 80 81 00 '.PT.k.a....@....'
+  a9 c0 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 32 4c 18 'E............2L.'
+  53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42 'S...      .....B'
+  45 4e 51 20 45 32 32 32 30 48 44 0a 00 00 00 ff 'ENQ E2220HD.....'
+  00 32 36 41 30 30 32 34 30 30 31 39 0a 20 01 78 '.26A00240019. .x'
+Checksum: 0x78
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+  Detailed Timing Descriptors:
+    DTD  7:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (480 mm x 270 mm)
+                  Hfront   16 Hsync  62 Hback   60 Hpol N
+                  Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD  8:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (480 mm x 270 mm)
+                  Hfront  110 Hsync  40 Hback  220 Hpol P
+                  Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD  9:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (480 mm x 270 mm)
+                  Hfront  440 Hsync  40 Hback  220 Hpol P
+                  Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 10:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (480 mm x 270 mm)
+                  Hfront   12 Hsync  64 Hback   68 Hpol N
+                  Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 11:  1440x576i   50.000000 Hz   5:2     15.625 kHz     27.000000 MHz (480 mm x 270 mm)
+                  Hfront   24 Hsync 126 Hback  138 Hpol N
+                  Vfront    2 Vsync   3 Vback   19 Vpol N Vfront +0.5 Odd Field
+                  Vfront    2 Vsync   3 Vback   19 Vpol N Vback  +0.5 Even Field
+Checksum: 0x44  Unused space in Extension Block: 4 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 7.
+  Video Data Block: Duplicate VIC 22.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 21.
+  Video Data Block: Duplicate VIC 31.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 24.000 - 83.000 kHz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL
