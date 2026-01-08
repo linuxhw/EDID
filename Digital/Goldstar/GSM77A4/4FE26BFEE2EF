@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff001e6da47763270100
-01220104b5502278fedc45ac524f9f25
-0f5054210800d1c06140010101010101
-0101010101017d7d70b0d0a029503820
-3a00204e3100001a000000fd003b3c1e
-5a21000a202020202020000000fc004c
-4720554c545241574944450a000000ff
-003430314e544d5832373631390a0146
-02031f71230907078301000044100403
-01e2006ae305c000e606050153535d00
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000068
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d a4 77 63 27 01 00
+01 22 01 04 b5 50 22 78 fe dc 45 ac 52 4f 9f 25
+0f 50 54 21 08 00 d1 c0 61 40 01 01 01 01 01 01
+01 01 01 01 01 01 7d 7d 70 b0 d0 a0 29 50 38 20
+3a 00 20 4e 31 00 00 1a 00 00 00 fd 00 3b 3c 1e
+5a 21 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+47 20 55 4c 54 52 41 57 49 44 45 0a 00 00 00 ff
+00 34 30 31 4e 54 4d 58 32 37 36 31 39 0a 01 46
+
+02 03 1f 71 23 09 07 07 83 01 00 00 44 10 04 03
+01 e2 00 6a e3 05 c0 00 e6 06 05 01 53 53 5d 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 68
 
 00 ff ff ff ff ff ff 00 1e 6d a4 77 63 27 01 00
 01 22 01 04 b5 50 22 78 fe dc 45 ac 52 4f 9f 25
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 30628
-    Serial Number: 75619
+    Serial Number: ...
     Made in: week 1 of 2024
   Basic Display Parameters & Features:
     Digital display
@@ -75,7 +74,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 59-60 Hz V, 30-90 kHz H, max dotclock 330 MHz
     Display Product Name: 'LG ULTRAWIDE'
-    Display Product Serial Number: '401NTMX27619'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x46
 
@@ -119,4 +118,96 @@ Block 1, CTA-861 Extension Block:
     Desired content min luminance: 93 (0.401 cd/m^2)
 Checksum: 0x68  Unused space in Extension Block: 96 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d a4 77 63 27 01 00 '.........m.wc'..'
+  01 22 01 04 b5 50 22 78 fe dc 45 ac 52 4f 9f 25 '."...P"x..E.RO.%'
+  0f 50 54 21 08 00 d1 c0 61 40 01 01 01 01 01 01 '.PT!....a@......'
+  01 01 01 01 01 01 7d 7d 70 b0 d0 a0 29 50 38 20 '......}}p...)P8 '
+  3a 00 20 4e 31 00 00 1a 00 00 00 fd 00 3b 3c 1e ':. N1........;<.'
+  5a 21 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'Z!..      .....L'
+  47 20 55 4c 54 52 41 57 49 44 45 0a 00 00 00 ff 'G ULTRAWIDE.....'
+  00 34 30 31 4e 54 4d 58 32 37 36 31 39 0a 01 46 '.401NTMX27619..F'
+Checksum: 0x46
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 83 (301.833 cd/m^2)
+    Desired content max frame-average luminance: 83 (301.833 cd/m^2)
+    Desired content min luminance: 93 (0.401 cd/m^2)
+Checksum: 0x68  Unused space in Extension Block: 96 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 1.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL
