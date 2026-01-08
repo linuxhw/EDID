@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2d8c0e00000000
-2f1b0103805932780aee91a3544c9926
-0f5054bdef80714f81c0810081809500
-a9c0b3000101023a801871382d40582c
-450075f23100001e662156aa51001e30
-468f330075f23100001e000000fd0018
-4b0f5117000a202020202020000000fc
-0053414d53554e470a202020202001cf
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 8c 0e 00 00 00 00
+2f 1b 01 03 80 59 32 78 0a ee 91 a3 54 4c 99 26
+0f 50 54 bd ef 80 71 4f 81 c0 81 00 81 80 95 00
+a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 75 f2 31 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 75 f2 31 00 00 1e 00 00 00 fd 00 18
+4b 0f 51 17 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 41 4d 53 55 4e 47 0a 20 20 20 20 20 01 cf
 
 00 ff ff ff ff ff ff 00 4c 2d 8c 0e 00 00 00 00
 2f 1b 01 03 80 59 32 78 0a ee 91 a3 54 4c 99 26
@@ -74,3 +72,27 @@ Block 0, Base EDID:
     Display Product Name: 'SAMSUNG'
   Extension blocks: 1
 Checksum: 0xcf
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d 8c 0e 00 00 00 00 '........L-......'
+  2f 1b 01 03 80 59 32 78 0a ee 91 a3 54 4c 99 26 '/....Y2x....TL.&'
+  0f 50 54 bd ef 80 71 4f 81 c0 81 00 81 80 95 00 '.PT...qO........'
+  a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 75 f2 31 00 00 1e 66 21 56 aa 51 00 1e 30 'E.u.1...f!V.Q..0'
+  46 8f 33 00 75 f2 31 00 00 1e 00 00 00 fd 00 18 'F.3.u.1.........'
+  4b 0f 51 17 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
+  00 53 41 4d 53 55 4e 47 0a 20 20 20 20 20 01 cf '.SAMSUNG.     ..'
+Checksum: 0xcf
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
+Block 1, Base EDID:
+  Unknown Extension Block.
+
+EDID conformity: FAIL

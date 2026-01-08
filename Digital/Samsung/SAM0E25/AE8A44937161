@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004c2d250e31305230
-111c0104a55021783a8d4ca954469722
-224e5fbfef80714f810081c081809500
-a9c0b30001019e6770a0d0a022503020
-3a001d4d3100001a000000fd00324b1e
-511b000a202020202020000000fc0043
-3334483839780a2020202020000000ff
-004854524b3430313837320a20200137
-020314f147901f041303125a23090707
-83010000023a801871382d40582c4500
-1d4d3100001e584d00b8a1381440f82c
-45001d4d3100001e565e00a0a0a02950
-302035001d4d3100001a000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000005d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 25 0e 31 30 52 30
+11 1c 01 04 a5 50 21 78 3a 8d 4c a9 54 46 97 22
+22 4e 5f bf ef 80 71 4f 81 00 81 c0 81 80 95 00
+a9 c0 b3 00 01 01 9e 67 70 a0 d0 a0 22 50 30 20
+3a 00 1d 4d 31 00 00 1a 00 00 00 fd 00 32 4b 1e
+51 1b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43
+33 34 48 38 39 78 0a 20 20 20 20 20 00 00 00 ff
+00 48 54 52 4b 34 30 31 38 37 32 0a 20 20 01 37
+
+02 03 14 f1 47 90 1f 04 13 03 12 5a 23 09 07 07
+83 01 00 00 02 3a 80 18 71 38 2d 40 58 2c 45 00
+1d 4d 31 00 00 1e 58 4d 00 b8 a1 38 14 40 f8 2c
+45 00 1d 4d 31 00 00 1e 56 5e 00 a0 a0 a0 29 50
+30 20 35 00 1d 4d 31 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 5d
 
 00 ff ff ff ff ff ff 00 4c 2d 25 0e 31 30 52 30
 11 1c 01 04 a5 50 21 78 3a 8d 4c a9 54 46 97 22
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 3621
-    Serial Number: 810692657
+    Serial Number: ...
     Made in: week 17 of 2018
   Basic Display Parameters & Features:
     Digital display
@@ -91,7 +90,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-81 kHz H, max dotclock 270 MHz
     Display Product Name: 'C34H89x'
-    Display Product Serial Number: 'HTRK401872'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x37
 
@@ -130,3 +129,92 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
 Checksum: 0x5d  Unused space in Extension Block: 53 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d 25 0e 31 30 52 30 '........L-%.10R0'
+  11 1c 01 04 a5 50 21 78 3a 8d 4c a9 54 46 97 22 '.....P!x:.L.TF."'
+  22 4e 5f bf ef 80 71 4f 81 00 81 c0 81 80 95 00 '"N_...qO........'
+  a9 c0 b3 00 01 01 9e 67 70 a0 d0 a0 22 50 30 20 '.......gp..."P0 '
+  3a 00 1d 4d 31 00 00 1a 00 00 00 fd 00 32 4b 1e ':..M1........2K.'
+  51 1b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43 'Q...      .....C'
+  33 34 48 38 39 78 0a 20 20 20 20 20 00 00 00 ff '34H89x.     ....'
+  00 48 54 52 4b 34 30 31 38 37 32 0a 20 20 01 37 '.HTRK401872.  .7'
+Checksum: 0x37
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  90:  2560x1080   60.000000 Hz  64:27    66.000 kHz    198.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 5:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (797 mm x 333 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 6:  2560x1080   60.000000 Hz  64:27    66.000 kHz    198.000000 MHz (797 mm x 333 mm)
+                 Hfront  248 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   11 Vpol P
+    DTD 7:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (797 mm x 333 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+Checksum: 0x5d  Unused space in Extension Block: 53 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.250 - 88.786 kHz (Monitor: 30.000 - 81.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 90.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

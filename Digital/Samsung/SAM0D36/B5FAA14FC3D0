@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004c2d360d30503255
-1b1a0104a53c22783a5295a556549d25
-0e5054b38c0081c0810081809500a9c0
-b30001010101023a801871382d40582c
-450056502100001e000000fd0038481e
-5111000a202020202020000000fc0043
-3237463539310a2020202020000000ff
-00485448483730303939390a202001a5
-02030ff1429004230907078301000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000067
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 36 0d 30 50 32 55
+1b 1a 01 04 a5 3c 22 78 3a 52 95 a5 56 54 9d 25
+0e 50 54 b3 8c 00 81 c0 81 00 81 80 95 00 a9 c0
+b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 fd 00 38 48 1e
+51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43
+32 37 46 35 39 31 0a 20 20 20 20 20 00 00 00 ff
+00 48 54 48 48 37 30 30 39 39 39 0a 20 20 01 a5
+
+02 03 0f f1 42 90 04 23 09 07 07 83 01 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 67
 
 00 ff ff ff ff ff ff 00 4c 2d 36 0d 30 50 32 55
 1b 1a 01 04 a5 3c 22 78 3a 52 95 a5 56 54 9d 25
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 3382
-    Serial Number: 1429360688
+    Serial Number: ...
     Made in: week 27 of 2016
   Basic Display Parameters & Features:
     Digital display
@@ -83,7 +82,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-72 Hz V, 30-81 kHz H, max dotclock 170 MHz
     Display Product Name: 'C27F591'
-    Display Product Serial Number: 'HTHH700999'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0xa5
 
@@ -108,4 +107,69 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
 Checksum: 0x67  Unused space in Extension Block: 112 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d 36 0d 30 50 32 55 '........L-6.0P2U'
+  1b 1a 01 04 a5 3c 22 78 3a 52 95 a5 56 54 9d 25 '.....<"x:R..VT.%'
+  0e 50 54 b3 8c 00 81 c0 81 00 81 80 95 00 a9 c0 '.PT.............'
+  b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 fd 00 38 48 1e 'E.VP!........8H.'
+  51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43 'Q...      .....C'
+  32 37 46 35 39 31 0a 20 20 20 20 20 00 00 00 ff '27F591.     ....'
+  00 48 54 48 48 37 30 30 39 39 39 0a 20 20 01 a5 '.HTHH700999.  ..'
+Checksum: 0xa5
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+Checksum: 0x67  Unused space in Extension Block: 112 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 4.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL
