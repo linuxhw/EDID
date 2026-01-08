@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0026cd4a61b6070000
-1e1e010380351e782a5de5a35650a026
-0e5054a56b80710081408180a940b300
-9500d1c00101023a801871382d40582c
-4500132b2100001e000000ff00313137
-35333033303031393734000000fd0037
-4c1e5311000a202020202020000000fc
-00504c3234383248530a20202020004b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cd 4a 61 b6 07 00 00
+1e 1e 01 03 80 35 1e 78 2a 5d e5 a3 56 50 a0 26
+0e 50 54 a5 6b 80 71 00 81 40 81 80 a9 40 b3 00
+95 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2b 21 00 00 1e 00 00 00 ff 00 31 31 37
+35 33 30 33 30 30 31 39 37 34 00 00 00 fd 00 37
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 4c 32 34 38 32 48 53 0a 20 20 20 20 00 4b
 
 00 ff ff ff ff ff ff 00 26 cd 4a 61 b6 07 00 00
 1e 1e 01 03 80 35 1e 78 2a 5d e5 a3 56 50 a0 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IVM
     Model: 24906
-    Serial Number: 1974
+    Serial Number: ...
     Made in: week 30 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -64,10 +62,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (531 mm x 299 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '1175303001974'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'PL2482HS'
 Checksum: 0x4b
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cd 4a 61 b6 07 00 00 '........&.Ja....'
+  1e 1e 01 03 80 35 1e 78 2a 5d e5 a3 56 50 a0 26 '.....5.x*]..VP.&'
+  0e 50 54 a5 6b 80 71 00 81 40 81 80 a9 40 b3 00 '.PT.k.q..@...@..'
+  95 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 13 2b 21 00 00 1e 00 00 00 ff 00 31 31 37 'E..+!........117'
+  35 33 30 33 30 30 31 39 37 34 00 00 00 fd 00 37 '5303001974.....7'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 50 4c 32 34 38 32 48 53 0a 20 20 20 20 00 4b '.PL2482HS.    .K'
+Checksum: 0x4b
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

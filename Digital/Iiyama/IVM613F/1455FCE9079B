@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0026cd3f6135323131
-0221010380351e782a2195a9544e9c26
-0f5054bfef809500814081809040a940
-b300950f714f023a801871382d40582c
-45000f282100001e000000fd00324b1e
-5311000a202020202020000000fc0050
-4c54323435344d0a20202020000000ff
-00313136343133303233313132350134
-020316f1430403122309070783010000
-65030c001000023a801871382d40582c
-45000f282100001e0000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000002d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cd 3f 61 35 32 31 31
+02 21 01 03 80 35 1e 78 2a 21 95 a9 54 4e 9c 26
+0f 50 54 bf ef 80 95 00 81 40 81 80 90 40 a9 40
+b3 00 95 0f 71 4f 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 fd 00 32 4b 1e
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50
+4c 54 32 34 35 34 4d 0a 20 20 20 20 00 00 00 ff
+00 31 31 36 34 31 33 30 32 33 31 31 32 35 01 34
+
+02 03 16 f1 43 04 03 12 23 09 07 07 83 01 00 00
+65 03 0c 00 10 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 2d
 
 00 ff ff ff ff ff ff 00 26 cd 3f 61 35 32 31 31
 02 21 01 03 80 35 1e 78 2a 21 95 a9 54 4e 9c 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IVM
     Model: 24895
-    Serial Number: 825307701
+    Serial Number: ...
     Made in: week 2 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -90,7 +89,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'PLT2454M'
-    Display Product Serial Number: '1164130231125'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x34
 
@@ -121,3 +120,73 @@ Block 1, CTA-861 Extension Block:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
 Checksum: 0x2d  Unused space in Extension Block: 87 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cd 3f 61 35 32 31 31 '........&.?a5211'
+  02 21 01 03 80 35 1e 78 2a 21 95 a9 54 4e 9c 26 '.!...5.x*!..TN.&'
+  0f 50 54 bf ef 80 95 00 81 40 81 80 90 40 a9 40 '.PT......@...@.@'
+  b3 00 95 0f 71 4f 02 3a 80 18 71 38 2d 40 58 2c '....qO.:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 fd 00 32 4b 1e 'E..(!........2K.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50 'S...      .....P'
+  4c 54 32 34 35 34 4d 0a 20 20 20 20 00 00 00 ff 'LT2454M.    ....'
+  00 31 31 36 34 31 33 30 32 33 31 31 32 35 01 34 '.1164130231125.4'
+Checksum: 0x34
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0x2d  Unused space in Extension Block: 87 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL
