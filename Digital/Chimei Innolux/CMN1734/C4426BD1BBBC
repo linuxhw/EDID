@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000dae341700000000
-1417010495261578021a059e56579628
-13505400000001010101010101010101
-0101010101011c2a405461841a303020
-35007ed610000018af21405461841a30
-302035007ed610000018000000fe0043
-4d4e0a202020202020202020000000fe
-004e3137334647452d4531330a20003a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 34 17 00 00 00 00
+14 17 01 04 95 26 15 78 02 1a 05 9e 56 57 96 28
+13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1c 2a 40 54 61 84 1a 30 30 20
+35 00 7e d6 10 00 00 18 af 21 40 54 61 84 1a 30
+30 20 35 00 7e d6 10 00 00 18 00 00 00 fe 00 43
+4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 37 33 46 47 45 2d 45 31 33 0a 20 00 3a
 
 00 ff ff ff ff ff ff 00 0d ae 34 17 00 00 00 00
 14 17 01 04 95 26 15 78 02 1a 05 9e 56 57 96 28
@@ -53,3 +51,32 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'CMN'
     Alphanumeric Data String: 'N173FGE-E13'
 Checksum: 0x3a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d ae 34 17 00 00 00 00 '..........4.....'
+  14 17 01 04 95 26 15 78 02 1a 05 9e 56 57 96 28 '.....&.x....VW.('
+  13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 1c 2a 40 54 61 84 1a 30 30 20 '.......*@Ta..00 '
+  35 00 7e d6 10 00 00 18 af 21 40 54 61 84 1a 30 '5.~......!@Ta..0'
+  30 20 35 00 7e d6 10 00 00 18 00 00 00 fe 00 43 '0 5.~..........C'
+  4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'MN.         ....'
+  00 4e 31 37 33 46 47 45 2d 45 31 33 0a 20 00 3a '.N173FGE-E13. .:'
+Checksum: 0x3a
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000dae211600000000
-01210104a52216780328659759548e27
-1e505400000001010101010101010101
-0101010101011a9880a070b064403020
-a60058d710000018603f80a070b06440
-3020a60058d710000018000000fd0030
-90bcbc27010a202020202020000000fe
-004e3136304a4d452d47544b0a200067
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 21 16 00 00 00 00
+01 21 01 04 a5 22 16 78 03 28 65 97 59 54 8e 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1a 98 80 a0 70 b0 64 40 30 20
+a6 00 58 d7 10 00 00 18 60 3f 80 a0 70 b0 64 40
+30 20 a6 00 58 d7 10 00 00 18 00 00 00 fd 00 30
+90 bc bc 27 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 36 30 4a 4d 45 2d 47 54 4b 0a 20 00 67
 
 00 ff ff ff ff ff ff 00 0d ae 21 16 00 00 00 00
 01 21 01 04 a5 22 16 78 03 28 65 97 59 54 8e 27
@@ -55,3 +53,35 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 48-144 Hz V, 188-188 kHz H, max dotclock 390 MHz
     Alphanumeric Data String: 'N160JME-GTK'
 Checksum: 0x67
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d ae 21 16 00 00 00 00 '..........!.....'
+  01 21 01 04 a5 22 16 78 03 28 65 97 59 54 8e 27 '.!...".x.(e.YT.''
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 1a 98 80 a0 70 b0 64 40 30 20 '..........p.d@0 '
+  a6 00 58 d7 10 00 00 18 60 3f 80 a0 70 b0 64 40 '..X.....`?..p.d@'
+  30 20 a6 00 58 d7 10 00 00 18 00 00 00 fd 00 30 '0 ..X..........0'
+  90 bc bc 27 01 0a 20 20 20 20 20 20 00 00 00 fe '...'..      ....'
+  00 4e 31 36 30 4a 4d 45 2d 47 54 4b 0a 20 00 67 '.N160JME-GTK. .g'
+Checksum: 0x67
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 78.000 - 187.201 kHz (Monitor: 188.000 - 188.000 kHz)
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac163054355141
-300e010380221b78eeee95a3544c9926
-0f5054a54b008180714f010101010101
-010101010101302a009851002a403070
-1300520e1100001e000000ff00483633
-3034344251415135540a000000fc0044
-454c4c20313730344650560a000000fd
-00384c1e510e000a20202020202000d9
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 16 30 54 35 51 41
+30 0e 01 03 80 22 1b 78 ee ee 95 a3 54 4c 99 26
+0f 50 54 a5 4b 00 81 80 71 4f 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 ff 00 48 36 33
+30 34 34 42 51 41 51 35 54 0a 00 00 00 fc 00 44
+45 4c 4c 20 31 37 30 34 46 50 56 0a 00 00 00 fd
+00 38 4c 1e 51 0e 00 0a 20 20 20 20 20 20 00 d9
 
 00 ff ff ff ff ff ff 00 10 ac 16 30 54 35 51 41
 30 0e 01 03 80 22 1b 78 ee ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 12310
-    Serial Number: 1095841108
+    Serial Number: ...
     Made in: week 48 of 2004
   Basic Display Parameters & Features:
     Digital display
@@ -58,10 +56,34 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (338 mm x 270 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: 'H63044BQAQ5T'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL 1704FPV'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-81 kHz H, max dotclock 140 MHz
 Checksum: 0xd9
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 16 30 54 35 51 41 '...........0T5QA'
+  30 0e 01 03 80 22 1b 78 ee ee 95 a3 54 4c 99 26 '0....".x....TL.&'
+  0f 50 54 a5 4b 00 81 80 71 4f 01 01 01 01 01 01 '.PT.K...qO......'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 ff 00 48 36 33 '..R..........H63'
+  30 34 34 42 51 41 51 35 54 0a 00 00 00 fc 00 44 '044BQAQ5T......D'
+  45 4c 4c 20 31 37 30 34 46 50 56 0a 00 00 00 fd 'ELL 1704FPV.....'
+  00 38 4c 1e 51 0e 00 0a 20 20 20 20 20 20 00 d9 '.8L.Q...      ..'
+Checksum: 0xd9
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

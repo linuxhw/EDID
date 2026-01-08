@@ -1,0 +1,84 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae b6 15 00 00 00 00
+02 16 01 04 90 22 13 78 02 d1 f5 93 5d 59 90 26
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 74 1d 56 d0 50 00 1e 30 1f 41
+4c 00 58 c2 10 00 00 1a 38 12 56 6c 50 00 16 30
+0e 1d 27 00 58 c2 10 00 00 1a 00 00 00 fe 00 38
+44 37 54 30 01 31 35 36 42 47 45 0a 00 00 00 00
+00 00 41 31 94 01 10 00 00 01 01 0a 20 20 00 04
+
+00 ff ff ff ff ff ff 00 0d ae b6 15 00 00 00 00
+02 16 01 04 90 22 13 78 02 d1 f5 93 5d 59 90 26
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 74 1d 56 d0 50 00 1e 30 1f 41
+4c 00 58 c2 10 00 00 1a 38 12 56 6c 50 00 16 30
+0e 1d 27 00 58 c2 10 00 00 1a 00 00 00 fe 00 38
+44 37 54 30 01 31 35 36 42 47 45 0a 00 00 00 00
+00 00 41 31 94 01 10 00 00 01 01 0a 20 20 00 04
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5558
+    Made in: week 2 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5771, 0.3642
+    Green: 0.3476, 0.5634
+    Blue : 0.1513, 0.1162
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.029362 Hz 683:384   47.903 kHz     75.400000 MHz (344 mm x 194 mm)
+                 Hfront   31 Hsync  65 Hback  112 Hpol P
+                 Vfront    4 Vsync  12 Vback   14 Vpol N
+    DTD 2:  1366x768    40.052900 Hz 683:384   31.642 kHz     46.640000 MHz (344 mm x 194 mm)
+                 Hfront   14 Hsync  29 Hback   65 Hpol P
+                 Vfront    2 Vsync   7 Vback   13 Vpol N
+    Alphanumeric Data String: '8D7T0'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 94 01 10 00 00 01 01 0a 20 20 '....A1........  '
+Checksum: 0x04
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d ae b6 15 00 00 00 00 '................'
+  02 16 01 04 90 22 13 78 02 d1 f5 93 5d 59 90 26 '.....".x....]Y.&'
+  1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 74 1d 56 d0 50 00 1e 30 1f 41 '......t.V.P..0.A'
+  4c 00 58 c2 10 00 00 1a 38 12 56 6c 50 00 16 30 'L.X.....8.VlP..0'
+  0e 1d 27 00 58 c2 10 00 00 1a 00 00 00 fe 00 38 '..'.X..........8'
+  44 37 54 30 01 31 35 36 42 47 45 0a 00 00 00 00 'D7T0.156BGE.....'
+  00 00 41 31 94 01 10 00 00 01 01 0a 20 20 00 04 '..A1........  ..'
+Checksum: 0x04
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000dae431500000000
-031f0104a52213780228659759548e27
-1e505400000001010101010101010101
-010101010101b43b804a713834405036
-680058c110000018000000fe004e3135
-364843412d4541420a20000000fe0043
-4d4e0a202020202020202020000000fe
-004e3135364843412d4541420a20006f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 43 15 00 00 00 00
+03 1f 01 04 a5 22 13 78 02 28 65 97 59 54 8e 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b4 3b 80 4a 71 38 34 40 50 36
+68 00 58 c1 10 00 00 18 00 00 00 fe 00 4e 31 35
+36 48 43 41 2d 45 41 42 0a 20 00 00 00 fe 00 43
+4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 35 36 48 43 41 2d 45 41 42 0a 20 00 6f
 
 00 ff ff ff ff ff ff 00 0d ae 43 15 00 00 00 00
 03 1f 01 04 a5 22 13 78 02 28 65 97 59 54 8e 27
@@ -51,3 +49,32 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'CMN'
     Alphanumeric Data String: 'N156HCA-EAB'
 Checksum: 0x6f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d ae 43 15 00 00 00 00 '..........C.....'
+  03 1f 01 04 a5 22 13 78 02 28 65 97 59 54 8e 27 '.....".x.(e.YT.''
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 b4 3b 80 4a 71 38 34 40 50 36 '.......;.Jq84@P6'
+  68 00 58 c1 10 00 00 18 00 00 00 fe 00 4e 31 35 'h.X..........N15'
+  36 48 43 41 2d 45 41 42 0a 20 00 00 00 fe 00 43 '6HCA-EAB. .....C'
+  4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'MN.         ....'
+  00 4e 31 35 36 48 43 41 2d 45 41 42 0a 20 00 6f '.N156HCA-EAB. .o'
+Checksum: 0x6f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

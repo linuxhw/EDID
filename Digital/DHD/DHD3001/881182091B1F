@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001104013001000000
-02210104a50a0f78e2ee91a3544c9926
-0f505400000001000100010001000100
-010001000100b83bb064408028702814
-22045f970000001e000000fc00446563
-6b48442d31323030700a000000100000
-00000000000000000000000000000010
-000000000000000000000000000000e5
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 11 04 01 30 01 00 00 00
+02 21 01 04 a5 0a 0f 78 e2 ee 91 a3 54 4c 99 26
+0f 50 54 00 00 00 01 00 01 00 01 00 01 00 01 00
+01 00 01 00 01 00 b8 3b b0 64 40 80 28 70 28 14
+22 04 5f 97 00 00 00 1e 00 00 00 fc 00 44 65 63
+6b 48 44 2d 31 32 30 30 70 0a 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 e5
 
 00 ff ff ff ff ff ff 00 11 04 01 30 01 00 00 00
 02 21 01 04 a5 0a 0f 78 e2 ee 91 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DHD
     Model: 12289
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 2 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -53,3 +51,37 @@ Block 0, Base EDID:
     Dummy Descriptor:
     Dummy Descriptor:
 Checksum: 0xe5
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 11 04 01 30 01 00 00 00 '...........0....'
+  02 21 01 04 a5 0a 0f 78 e2 ee 91 a3 54 4c 99 26 '.!.....x....TL.&'
+  0f 50 54 00 00 00 01 00 01 00 01 00 01 00 01 00 '.PT.............'
+  01 00 01 00 01 00 b8 3b b0 64 40 80 28 70 28 14 '.......;.d@.(p(.'
+  22 04 5f 97 00 00 00 1e 00 00 00 fc 00 44 65 63 '"._..........Dec'
+  6b 48 44 2d 31 32 30 30 70 0a 00 00 00 10 00 00 'kHD-1200p.......'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 e5 '................'
+Checksum: 0xe5
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

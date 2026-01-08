@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000dae038c00000000
-1f1f0104a51e147802ee9ea3544c9926
-0f505400000001010101010101010101
-0101010101017a5070a080a028503020
-3a0028c5100000180000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000fc
-00484a31343042422d3032410a0a003b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 03 8c 00 00 00 00
+1f 1f 01 04 a5 1e 14 78 02 ee 9e a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 7a 50 70 a0 80 a0 28 50 30 20
+3a 00 28 c5 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc
+00 48 4a 31 34 30 42 42 2d 30 32 41 0a 0a 00 3b
 
 00 ff ff ff ff ff ff 00 0d ae 03 8c 00 00 00 00
 1f 1f 01 04 a5 1e 14 78 02 ee 9e a3 54 4c 99 26
@@ -51,3 +49,31 @@ Block 0, Base EDID:
     Empty Descriptor
     Display Product Name: 'HJ140BB-02A'
 Checksum: 0x3b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d ae 03 8c 00 00 00 00 '................'
+  1f 1f 01 04 a5 1e 14 78 02 ee 9e a3 54 4c 99 26 '.......x....TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 7a 50 70 a0 80 a0 28 50 30 20 '......zPp...(P0 '
+  3a 00 28 c5 10 00 00 18 00 00 00 00 00 00 00 00 ':.(.............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc '................'
+  00 48 4a 31 34 30 42 42 2d 30 32 41 0a 0a 00 3b '.HJ140BB-02A...;'
+Checksum: 0x3b
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Display Product Name: Non-space after newline.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

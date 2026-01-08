@@ -1,0 +1,90 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 12 6f 01 50 01 00 00 00
+01 23 01 04 a5 09 10 78 17 b9 74 ae 50 3d b7 23
+0b 4f 51 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 39 38 a0 40 80 37 70 30 20
+3a 00 5a a0 00 00 00 1e 00 00 00 fc 00 44 65 63
+6b 53 69 67 68 74 0a 20 20 20 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 44 4d 38 a0
+40 80 4a 70 30 20 3a 00 5a a0 00 00 00 1e 00 df
+
+00 ff ff ff ff ff ff 00 12 6f 01 50 01 00 00 00
+01 23 01 04 a5 09 10 78 17 b9 74 ae 50 3d b7 23
+0b 4f 51 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 39 38 a0 40 80 37 70 30 20
+3a 00 5a a0 00 00 00 1e 00 00 00 fc 00 44 65 63
+6b 53 69 67 68 74 0a 20 20 20 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 44 4d 38 a0
+40 80 4a 70 30 20 3a 00 5a a0 00 00 00 1e 00 df
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: DSO
+    Model: 20481
+    Serial Number: ...
+    Made in: week 1 of 2025
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 9 cm x 16 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:2:2
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6816, 0.3154
+    Green: 0.2402, 0.7158
+    Blue : 0.1376, 0.0458
+    White: 0.3095, 0.3164
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1080x1920   60.000000 Hz   9:16   118.500 kHz    146.940000 MHz (90 mm x 160 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   42 Vpol P
+    Display Product Name: 'DeckSight'
+    Empty Descriptor
+    DTD 2:  1080x1920   79.998059 Hz   9:16   159.516 kHz    197.800000 MHz (90 mm x 160 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   61 Vpol P
+Checksum: 0xdf
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 12 6f 01 50 01 00 00 00 '.........o.P....'
+  01 23 01 04 a5 09 10 78 17 b9 74 ae 50 3d b7 23 '.#.....x..t.P=.#'
+  0b 4f 51 00 00 00 01 01 01 01 01 01 01 01 01 01 '.OQ.............'
+  01 01 01 01 01 01 66 39 38 a0 40 80 37 70 30 20 '......f98.@.7p0 '
+  3a 00 5a a0 00 00 00 1e 00 00 00 fc 00 44 65 63 ':.Z..........Dec'
+  6b 53 69 67 68 74 0a 20 20 20 00 00 00 00 00 00 'kSight.   ......'
+  00 00 00 00 00 00 00 00 00 00 00 00 44 4d 38 a0 '............DM8.'
+  40 80 4a 70 30 20 3a 00 5a a0 00 00 00 1e 00 df '@.Jp0 :.Z.......'
+Checksum: 0xdf
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (9x16 is smaller than 10x10 cm).
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Detailed Timing Descriptor #2: Invalid detailed timing descriptor ordering.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

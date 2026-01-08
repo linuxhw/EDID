@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000dae1a1600000000
-311f0104a52414780328659759548e27
-1e505400000001010101010101010101
-0101010101019e8580a070383e403020
-a60063c71000001aae3780a070383e40
-3020a60063c71000001a000000000000
-00000000000000000000000000000002
-000c3dff0c327d29162e7d00000000ff
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 1a 16 00 00 00 00
+31 1f 01 04 a5 24 14 78 03 28 65 97 59 54 8e 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9e 85 80 a0 70 38 3e 40 30 20
+a6 00 63 c7 10 00 00 1a ae 37 80 a0 70 38 3e 40
+30 20 a6 00 63 c7 10 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 3d ff 0c 32 7d 29 16 2e 7d 00 00 00 00 ff
 
 00 ff ff ff ff ff ff 00 0d ae 1a 16 00 00 00 00
 31 1f 01 04 a5 24 14 78 03 28 65 97 59 54 8e 27
@@ -55,4 +53,34 @@ Block 0, Base EDID:
     Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 3d ff 0c 32 7d 29 16 2e 7d 00 00 00 '....=..2})..}...'
 Checksum: 0xff
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d ae 1a 16 00 00 00 00 '................'
+  31 1f 01 04 a5 24 14 78 03 28 65 97 59 54 8e 27 '1....$.x.(e.YT.''
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 9e 85 80 a0 70 38 3e 40 30 20 '..........p8>@0 '
+  a6 00 63 c7 10 00 00 1a ae 37 80 a0 70 38 3e 40 '..c......7..p8>@'
+  30 20 a6 00 63 c7 10 00 00 1a 00 00 00 00 00 00 '0 ..c...........'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
+  00 0c 3d ff 0c 32 7d 29 16 2e 7d 00 00 00 00 ff '..=..2})..}.....'
+Checksum: 0xff
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

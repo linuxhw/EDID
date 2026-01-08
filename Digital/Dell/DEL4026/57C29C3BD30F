@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac264039393147
-2f12010380261e8ceef7c5a3554c9b25
-125054a54b00714f8180010101010101
-010101010101302a009851002a403070
-1300782d1100001e000000ff00433838
-384838424a473139390a000000fc0044
-454c4c203139303846500a20000000fd
-00384c1e510e000a202020202020008f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 26 40 39 39 31 47
+2f 12 01 03 80 26 1e 8c ee f7 c5 a3 55 4c 9b 25
+12 50 54 a5 4b 00 71 4f 81 80 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 ff 00 43 38 38
+38 48 38 42 4a 47 31 39 39 0a 00 00 00 fc 00 44
+45 4c 4c 20 31 39 30 38 46 50 0a 20 00 00 00 fd
+00 38 4c 1e 51 0e 00 0a 20 20 20 20 20 20 00 8f
 
 00 ff ff ff ff ff ff 00 10 ac 26 40 39 39 31 47
 2f 12 01 03 80 26 1e 8c ee f7 c5 a3 55 4c 9b 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 16422
-    Serial Number: 1194408249
+    Serial Number: ...
     Made in: week 47 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -58,8 +56,39 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (376 mm x 301 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: 'C888H8BJG199'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL 1908FP'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-81 kHz H, max dotclock 140 MHz
 Checksum: 0x8f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 26 40 39 39 31 47 '..........&@991G'
+  2f 12 01 03 80 26 1e 8c ee f7 c5 a3 55 4c 9b 25 '/....&......UL.%'
+  12 50 54 a5 4b 00 71 4f 81 80 01 01 01 01 01 01 '.PT.K.qO........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 ff 00 43 38 38 '..x-.........C88'
+  38 48 38 42 4a 47 31 39 39 0a 00 00 00 fc 00 44 '8H8BJG199......D'
+  45 4c 4c 20 31 39 30 38 46 50 0a 20 00 00 00 fd 'ELL 1908FP. ....'
+  00 38 4c 1e 51 0e 00 0a 20 20 20 20 20 20 00 8f '.8L.Q...      ..'
+Checksum: 0x8f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

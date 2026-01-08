@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac72404c4c3742
-0117010380331d78eadd45a3554fa027
-125054a54b00714f8180d1c001010101
-010101010101023a801871382d40582c
-4500fe1f1100001e000000ff004b4638
-375933313242374c4c0a000000fc0044
-454c4c205532333132484d0a000000fd
-00384c1e5311000a2020202020200039
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 72 40 4c 4c 37 42
+01 17 01 03 80 33 1d 78 ea dd 45 a3 55 4f a0 27
+12 50 54 a5 4b 00 71 4f 81 80 d1 c0 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fe 1f 11 00 00 1e 00 00 00 ff 00 4b 46 38
+37 59 33 31 32 42 37 4c 4c 0a 00 00 00 fc 00 44
+45 4c 4c 20 55 32 33 31 32 48 4d 0a 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 39
 
 00 ff ff ff ff ff ff 00 10 ac 72 40 4c 4c 37 42
 01 17 01 03 80 33 1d 78 ea dd 45 a3 55 4f a0 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 16498
-    Serial Number: 1110920268
+    Serial Number: ...
     Made in: week 1 of 2013
   Basic Display Parameters & Features:
     Digital display
@@ -58,8 +56,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (510 mm x 287 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'KF87Y312B7LL'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL U2312HM'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x39
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 72 40 4c 4c 37 42 '..........r@LL7B'
+  01 17 01 03 80 33 1d 78 ea dd 45 a3 55 4f a0 27 '.....3.x..E.UO.''
+  12 50 54 a5 4b 00 71 4f 81 80 d1 c0 01 01 01 01 '.PT.K.qO........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fe 1f 11 00 00 1e 00 00 00 ff 00 4b 46 38 'E............KF8'
+  37 59 33 31 32 42 37 4c 4c 0a 00 00 00 fc 00 44 '7Y312B7LL......D'
+  45 4c 4c 20 55 32 33 31 32 48 4d 0a 00 00 00 fd 'ELL U2312HM.....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 39 '.8L.S...      .9'
+Checksum: 0x39
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

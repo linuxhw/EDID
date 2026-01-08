@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac0d40454d4841
-100f010380261f78eeee95a3544c9926
-0f5054a54b00714f8180010101010101
-010101010101302a009851002a403070
-1300782d1100001e000000ff00543631
-313635344541484d450a000000fc0044
-454c4c203139303546500a20000000fd
-00384c1e510e000a20202020202000e3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 0d 40 45 4d 48 41
+10 0f 01 03 80 26 1f 78 ee ee 95 a3 54 4c 99 26
+0f 50 54 a5 4b 00 71 4f 81 80 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 ff 00 54 36 31
+31 36 35 34 45 41 48 4d 45 0a 00 00 00 fc 00 44
+45 4c 4c 20 31 39 30 35 46 50 0a 20 00 00 00 fd
+00 38 4c 1e 51 0e 00 0a 20 20 20 20 20 20 00 e3
 
 00 ff ff ff ff ff ff 00 10 ac 0d 40 45 4d 48 41
 10 0f 01 03 80 26 1f 78 ee ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 16397
-    Serial Number: 1095257413
+    Serial Number: ...
     Made in: week 16 of 2005
   Basic Display Parameters & Features:
     Digital display
@@ -58,10 +56,34 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (376 mm x 301 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: 'T611654EAHME'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL 1905FP'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-81 kHz H, max dotclock 140 MHz
 Checksum: 0xe3
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 0d 40 45 4d 48 41 '...........@EMHA'
+  10 0f 01 03 80 26 1f 78 ee ee 95 a3 54 4c 99 26 '.....&.x....TL.&'
+  0f 50 54 a5 4b 00 71 4f 81 80 01 01 01 01 01 01 '.PT.K.qO........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 ff 00 54 36 31 '..x-.........T61'
+  31 36 35 34 45 41 48 4d 45 0a 00 00 00 fc 00 44 '1654EAHME......D'
+  45 4c 4c 20 31 39 30 35 46 50 0a 20 00 00 00 fd 'ELL 1905FP. ....'
+  00 38 4c 1e 51 0e 00 0a 20 20 20 20 20 20 00 e3 '.8L.Q...      ..'
+Checksum: 0xe3
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

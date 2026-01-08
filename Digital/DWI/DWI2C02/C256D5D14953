@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0012e9022c71579c00
-011d0103805932780a0dc9a057479827
-12484c20000001010101010101010101
-0101010101010014004041582320a820
-f60020c2310000180014004041582320
-a820f60020c231000018000000fc0048
-444d492050616e656c20580a000000fd
-003a3e0e4606000a20202020202001a5
-020316c0410123090707830100006703
-0c001000000c00000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000093
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 12 e9 02 2c 71 57 9c 00
+01 1d 01 03 80 59 32 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 20 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 14 00 40 41 58 23 20 a8 20
+f6 00 20 c2 31 00 00 18 00 14 00 40 41 58 23 20
+a8 20 f6 00 20 c2 31 00 00 18 00 00 00 fc 00 48
+44 4d 49 20 50 61 6e 65 6c 20 58 0a 00 00 00 fd
+00 3a 3e 0e 46 06 00 0a 20 20 20 20 20 20 01 a5
+
+02 03 16 c0 41 01 23 09 07 07 83 01 00 00 67 03
+0c 00 10 00 00 0c 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 93
 
 00 ff ff ff ff ff ff 00 12 e9 02 2c 71 57 9c 00
 01 1d 01 03 80 59 32 78 0a 0d c9 a0 57 47 98 27
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DWI
     Model: 11266
-    Serial Number: 10246001
+    Serial Number: ...
     Made in: week 1 of 2019
   Basic Display Parameters & Features:
     Digital display
@@ -93,3 +92,66 @@ Block 1, CTA-861 Extension Block:
     Source physical address: 1.0.0.0
     Maximum TMDS clock: 60 MHz
 Checksum: 0x93  Unused space in Extension Block: 105 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 12 e9 02 2c 71 57 9c 00 '...........,qW..'
+  01 1d 01 03 80 59 32 78 0a 0d c9 a0 57 47 98 27 '.....Y2x....WG.''
+  12 48 4c 20 00 00 01 01 01 01 01 01 01 01 01 01 '.HL ............'
+  01 01 01 01 01 01 00 14 00 40 41 58 23 20 a8 20 '.........@AX# . '
+  f6 00 20 c2 31 00 00 18 00 14 00 40 41 58 23 20 '.. .1......@AX# '
+  a8 20 f6 00 20 c2 31 00 00 18 00 00 00 fc 00 48 '. .. .1........H'
+  44 4d 49 20 50 61 6e 65 6c 20 58 0a 00 00 00 fd 'DMI Panel X.....'
+  00 3a 3e 0e 46 06 00 0a 20 20 20 20 20 20 01 a5 '.:>.F...      ..'
+Checksum: 0xa5
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 0
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Maximum TMDS clock: 60 MHz
+Checksum: 0x93  Unused space in Extension Block: 105 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 800x450 mm vs display size 890x500 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 800x450 mm vs display size 890x500 mm.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

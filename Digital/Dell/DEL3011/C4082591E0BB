@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac1130334d5141
-040e010380221b78eeee9da3544c9926
-0f4f54a54b008180714f010101010101
-010101010101302a009851002a403070
-1300520e1100001e000000ff00325933
-313134314e41514d330a000000fc0044
-454c4c203137303346500a20000000fd
-00384c1e500e000a2020202020200056
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 11 30 33 4d 51 41
+04 0e 01 03 80 22 1b 78 ee ee 9d a3 54 4c 99 26
+0f 4f 54 a5 4b 00 81 80 71 4f 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 ff 00 32 59 33
+31 31 34 31 4e 41 51 4d 33 0a 00 00 00 fc 00 44
+45 4c 4c 20 31 37 30 33 46 50 0a 20 00 00 00 fd
+00 38 4c 1e 50 0e 00 0a 20 20 20 20 20 20 00 56
 
 00 ff ff ff ff ff ff 00 10 ac 11 30 33 4d 51 41
 04 0e 01 03 80 22 1b 78 ee ee 9d a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 12305
-    Serial Number: 1095847219
+    Serial Number: ...
     Made in: week 4 of 2004
   Basic Display Parameters & Features:
     Digital display
@@ -58,8 +56,34 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (338 mm x 270 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: '2Y31141NAQM3'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL 1703FP'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-80 kHz H, max dotclock 140 MHz
 Checksum: 0x56
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 11 30 33 4d 51 41 '...........03MQA'
+  04 0e 01 03 80 22 1b 78 ee ee 9d a3 54 4c 99 26 '.....".x....TL.&'
+  0f 4f 54 a5 4b 00 81 80 71 4f 01 01 01 01 01 01 '.OT.K...qO......'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 ff 00 32 59 33 '..R..........2Y3'
+  31 31 34 31 4e 41 51 4d 33 0a 00 00 00 fc 00 44 '1141NAQM3......D'
+  45 4c 4c 20 31 37 30 33 46 50 0a 20 00 00 00 fd 'ELL 1703FP. ....'
+  00 38 4c 1e 50 0e 00 0a 20 20 20 20 20 20 00 56 '.8L.P...      .V'
+Checksum: 0x56
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
