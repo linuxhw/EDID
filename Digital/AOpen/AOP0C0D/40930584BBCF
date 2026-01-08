@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0005f00d0c151f4034
-2c21010380351d78eab9e5a55852a127
-0f5054bfef80714f8140818081c0b300
-81009500d1cf023a801871382d40582c
-45000f282100001e000000ff00333334
-34303146313533573031000000fc0032
-34434c315920450a20202020000000fd
-003064187819000a20202020202001ac
-02033bf1479001030412139f67030c00
-11003832e3050301681a000001013064
-e635097f070f7f071707503f1ec05f7e
-01570600677e07834f00002a4480a070
-382740302035000f282100001a605980
-a070381440302035000f282100001e00
-00000000000000000000000000000000
-00000000000000000000000000000010
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 f0 0d 0c 15 1f 40 34
+2c 21 01 03 80 35 1d 78 ea b9 e5 a5 58 52 a1 27
+0f 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 b3 00
+81 00 95 00 d1 cf 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 ff 00 33 33 34
+34 30 31 46 31 35 33 57 30 31 00 00 00 fc 00 32
+34 43 4c 31 59 20 45 0a 20 20 20 20 00 00 00 fd
+00 30 64 18 78 19 00 0a 20 20 20 20 20 20 01 ac
+
+02 03 3b f1 47 90 01 03 04 12 13 9f 67 03 0c 00
+11 00 38 32 e3 05 03 01 68 1a 00 00 01 01 30 64
+e6 35 09 7f 07 0f 7f 07 17 07 50 3f 1e c0 5f 7e
+01 57 06 00 67 7e 07 83 4f 00 00 2a 44 80 a0 70
+38 27 40 30 20 35 00 0f 28 21 00 00 1a 60 59 80
+a0 70 38 14 40 30 20 35 00 0f 28 21 00 00 1e 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10
 
 00 ff ff ff ff ff ff 00 05 f0 0d 0c 15 1f 40 34
 2c 21 01 03 80 35 1d 78 ea b9 e5 a5 58 52 a1 27
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOP
     Model: 3085
-    Serial Number: 876617493
+    Serial Number: ...
     Made in: week 44 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -87,7 +86,7 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '334401F153W01'
+    Display Product Serial Number: ...
     Display Product Name: '24CL1Y E'
     Display Range Limits:
       Monitor ranges (GTF): 48-100 Hz V, 24-120 kHz H, max dotclock 250 MHz
@@ -169,3 +168,128 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   12 Vpol P
 Checksum: 0x10  Unused space in Extension Block: 32 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 f0 0d 0c 15 1f 40 34 '..............@4'
+  2c 21 01 03 80 35 1d 78 ea b9 e5 a5 58 52 a1 27 ',!...5.x....XR.''
+  0f 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 b3 00 '.PT...qO.@......'
+  81 00 95 00 d1 cf 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 ff 00 33 33 34 'E..(!........334'
+  34 30 31 46 31 35 33 57 30 31 00 00 00 fc 00 32 '401F153W01.....2'
+  34 43 4c 31 59 20 45 0a 20 20 20 20 00 00 00 fd '4CL1Y E.    ....'
+  00 30 64 18 78 19 00 0a 20 20 20 20 20 20 01 ac '.0d.x...      ..'
+Checksum: 0xac
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.1.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 250 MHz
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    Gamut Boundary Description Metadata Profile P0
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 100 Hz
+    Flags 1.x: 0xe6 (MCCS)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    Linear PCM:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 8
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 640 kb/s
+    DTS:
+      Max channels: 8
+      Supported sample rates (kHz): 96 88.2 48 44.1
+      Maximum bit rate: 1536 kb/s
+    DTS-HD:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Audio Format Code dependent value: 0x01
+    Enhanced AC-3 (DD+):
+      Max channels: 8
+      Supported sample rates (kHz): 48 44.1
+    MAT (MLP):
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
+      Supports Dolby TrueHD, object audio PCM and channel-based PCM
+      Hash calculation not required for object audio PCM or channel-based PCM
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+    LFE1 - Low Frequency Effects 1
+    FC - Front Center
+    BL/BR - Back Left/Right
+    RLC/RRC - Rear Left/Right of Center (Deprecated)
+  Detailed Timing Descriptors:
+    DTD 4:  1920x1080   74.972503 Hz  16:9     83.894 kHz    174.500000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   31 Vpol N
+    DTD 5:  1920x1080  100.000000 Hz  16:9    110.000 kHz    228.800000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   12 Vpol P
+Checksum: 0x10  Unused space in Extension Block: 32 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 31.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

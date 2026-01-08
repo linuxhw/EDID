@@ -1,31 +1,31 @@
-
-EDID (hex):
-00ffffffffffff000672a2ab00000000
-09220104b53c22783b43d5aa5442ac24
-0f5054bfcf00814081809500714f81c0
-b300d1c00101565e00a0a0a029503020
-350055502100001e000000ff0048324a
-4c30413030303235380a000000fc0050
-47323751465432410a202020000000fd
-0c30b40a0a5a010a2020202020200229
-02032cf148010304131f12103f230907
-0783010000681a0000010130b400e200
-eae305e000e6060701616101f8e300a0
-a0a032503020980455502100001a6fc2
-00a0a0a055503020350055502100001e
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000062
-701279030003011423190184ff099f00
-2f801f009f051d000200040000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000005d90
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 72 a2 ab 00 00 00 00
+09 22 01 04 b5 3c 22 78 3b 43 d5 aa 54 42 ac 24
+0f 50 54 bf cf 00 81 40 81 80 95 00 71 4f 81 c0
+b3 00 d1 c0 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 55 50 21 00 00 1e 00 00 00 ff 00 48 32 4a
+4c 30 41 30 30 30 32 35 38 0a 00 00 00 fc 00 50
+47 32 37 51 46 54 32 41 0a 20 20 20 00 00 00 fd
+0c 30 b4 0a 0a 5a 01 0a 20 20 20 20 20 20 02 29
+
+02 03 2c f1 48 01 03 04 13 1f 12 10 3f 23 09 07
+07 83 01 00 00 68 1a 00 00 01 01 30 b4 00 e2 00
+ea e3 05 e0 00 e6 06 07 01 61 61 01 f8 e3 00 a0
+a0 a0 32 50 30 20 98 04 55 50 21 00 00 1a 6f c2
+00 a0 a0 a0 55 50 30 20 35 00 55 50 21 00 00 1e
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 62
+
+70 12 79 03 00 03 01 14 23 19 01 84 ff 09 9f 00
+2f 80 1f 00 9f 05 1d 00 02 00 04 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 5d 90
 
 00 ff ff ff ff ff ff 00 06 72 a2 ab 00 00 00 00
 09 22 01 04 b5 3c 22 78 3b 43 d5 aa 54 42 ac 24
@@ -103,7 +103,7 @@ Block 0, Base EDID:
     DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol P
-    Display Product Serial Number: 'H2JL0A000258'
+    Display Product Serial Number: ...
     Display Product Name: 'PG27QFT2A'
     Display Range Limits:
       Monitor ranges (Bare Limits): 48-180 Hz V, 265-265 kHz H, max dotclock 900 MHz
@@ -182,4 +182,129 @@ Block 2, DisplayID Extension Block:
   Checksum: 0x5d
 Checksum: 0x90
 
+----------------
 
+Block 3, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 72 a2 ab 00 00 00 00 '.........r......'
+  09 22 01 04 b5 3c 22 78 3b 43 d5 aa 54 42 ac 24 '."...<"x;C..TB.$'
+  0f 50 54 bf cf 00 81 40 81 80 95 00 71 4f 81 c0 '.PT....@....qO..'
+  b3 00 d1 c0 01 01 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
+  35 00 55 50 21 00 00 1e 00 00 00 ff 00 48 32 4a '5.UP!........H2J'
+  4c 30 41 30 30 30 32 35 38 0a 00 00 00 fc 00 50 'L0A000258......P'
+  47 32 37 51 46 54 32 41 0a 20 20 20 00 00 00 fd 'G27QFT2A.   ....'
+  0c 30 b4 0a 0a 5a 01 0a 20 20 20 20 20 20 02 29 '.0...Z..      .)'
+Checksum: 0x29
+
+----------------
+
+Block 4, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 180 Hz
+    Flags 1.x: 0x00
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Colorimetry Data Block:
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 97 (408.759 cd/m^2)
+    Desired content max frame-average luminance: 97 (408.759 cd/m^2)
+    Desired content min luminance: 1 (0.000 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 4:  2560x1440  143.999210 Hz  16:9    214.559 kHz    583.600000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront   25 Vsync   8 Vback   17 Vpol N
+    DTD 5:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   77 Vpol P
+Checksum: 0x62  Unused space in Extension Block: 47 bytes
+
+----------------
+
+Block 5, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1440  180.002001 Hz  16:9    264.603 kHz    719.720000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   5 Vback   22 Vpol N
+  Checksum: 0x5d
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+Block 4, CTA-861 Extension Block:
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.250 - 264.602 kHz (Monitor: 265.000 - 265.000 kHz)
+
+Failures:
+
+Block 2, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 3, Base EDID:
+  Unknown Extension Block.
+Block 4, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 63.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+Block 5, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+EDID:
+  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+
+EDID conformity: FAIL

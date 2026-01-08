@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e3793267040000
-2f1e0104b5492b783b79e5ac5144ac26
-0f5054bfef00d1c0b300950081808140
-81c001010101565e00a0a0a029503020
-3500d5ac2100001ea073006aa0a02950
-08203500d5ac2100001a000000fd0030
-4c72721e010a202020202020000000fc
-005133323739574735420a202020019f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 79 32 67 04 00 00
+2f 1e 01 04 b5 49 2b 78 3b 79 e5 ac 51 44 ac 26
+0f 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 d5 ac 21 00 00 1e a0 73 00 6a a0 a0 29 50
+08 20 35 00 d5 ac 21 00 00 1a 00 00 00 fd 00 30
+4c 72 72 1e 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 51 33 32 37 39 57 47 35 42 0a 20 20 20 01 9f
 
 00 ff ff ff ff ff ff 00 05 e3 79 32 67 04 00 00
 2f 1e 01 04 b5 49 2b 78 3b 79 e5 ac 51 44 ac 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 12921
-    Serial Number: 1127
+    Serial Number: ...
     Made in: week 47 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -78,3 +76,31 @@ Block 0, Base EDID:
     Display Product Name: 'Q3279WG5B'
   Extension blocks: 1
 Checksum: 0x9f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 79 32 67 04 00 00 '..........y2g...'
+  2f 1e 01 04 b5 49 2b 78 3b 79 e5 ac 51 44 ac 26 '/....I+x;y..QD.&'
+  0f 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
+  35 00 d5 ac 21 00 00 1e a0 73 00 6a a0 a0 29 50 '5...!....s.j..)P'
+  08 20 35 00 d5 ac 21 00 00 1a 00 00 00 fd 00 30 '. 5...!........0'
+  4c 72 72 1e 01 0a 20 20 20 20 20 20 00 00 00 fc 'Lrr...      ....'
+  00 51 33 32 37 39 57 47 35 42 0a 20 20 20 01 9f '.Q3279WG5B.   ..'
+Checksum: 0x9f
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 111.027 kHz (Monitor: 114.000 - 114.000 kHz)
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+
+EDID conformity: FAIL

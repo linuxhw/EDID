@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0006b3411694370200
-2f1d0103802213780a28659759548e27
-1e5054a1080001010101010101010101
-010101010101023a801871382d40582c
-450058c21000001e000000ff004b424c
-4d54463134353330300a000000fd0032
-4b185311000a202020202020000000fc
-0041535553204d42313641430a2001f3
-02031ac1458413030201230907078301
-000067030c001000001e011d007251d0
-1e206e28550076f23100001e00000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000004b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 b3 41 16 94 37 02 00
+2f 1d 01 03 80 22 13 78 0a 28 65 97 59 54 8e 27
+1e 50 54 a1 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 58 c2 10 00 00 1e 00 00 00 ff 00 4b 42 4c
+4d 54 46 31 34 35 33 30 30 0a 00 00 00 fd 00 32
+4b 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 4d 42 31 36 41 43 0a 20 01 f3
+
+02 03 1a c1 45 84 13 03 02 01 23 09 07 07 83 01
+00 00 67 03 0c 00 10 00 00 1e 01 1d 00 72 51 d0
+1e 20 6e 28 55 00 76 f2 31 00 00 1e 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4b
 
 00 ff ff ff ff ff ff 00 06 b3 41 16 94 37 02 00
 2f 1d 01 03 80 22 13 78 0a 28 65 97 59 54 8e 27
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AUS
     Model: 5697
-    Serial Number: 145300
+    Serial Number: ...
     Made in: week 47 of 2019
   Basic Display Parameters & Features:
     Digital display
@@ -67,7 +66,7 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (344 mm x 194 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'KBLMTF145300'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 24-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'ASUS MB16AC'
@@ -102,3 +101,80 @@ Block 1, CTA-861 Extension Block:
                  Hfront  110 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
 Checksum: 0x4b  Unused space in Extension Block: 83 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 b3 41 16 94 37 02 00 '..........A..7..'
+  2f 1d 01 03 80 22 13 78 0a 28 65 97 59 54 8e 27 '/....".x.(e.YT.''
+  1e 50 54 a1 08 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 58 c2 10 00 00 1e 00 00 00 ff 00 4b 42 4c 'E.X..........KBL'
+  4d 54 46 31 34 35 33 30 30 0a 00 00 00 fd 00 32 'MTF145300......2'
+  4b 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 41 53 55 53 20 4d 42 31 36 41 43 0a 20 01 f3 '.ASUS MB16AC. ..'
+Checksum: 0xf3
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Maximum TMDS clock: 150 MHz
+  Detailed Timing Descriptors:
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (886 mm x 498 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0x4b  Unused space in Extension Block: 83 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Mismatch of image size 886x498 mm vs display size 340x190 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #3: Mismatch of image size 886x498 mm vs display size 340x190 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 886x498mm, which is larger than the display size 340.0x190.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

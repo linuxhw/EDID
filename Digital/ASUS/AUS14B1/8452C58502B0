@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0006b3b11404040200
-0c210104a51f11783a28659759548e27
-1e5054a10800b30095008180814081c0
-010101010101023a801871382d40582c
-450035ae1000001e000000ff0052334c
-4d54463133323130300a000000fd0032
-4b185311000a202020202020000000fc
-0041535553204d42313441430a20011c
-0203103145010203049065030c001000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000057
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 b3 b1 14 04 04 02 00
+0c 21 01 04 a5 1f 11 78 3a 28 65 97 59 54 8e 27
+1e 50 54 a1 08 00 b3 00 95 00 81 80 81 40 81 c0
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 35 ae 10 00 00 1e 00 00 00 ff 00 52 33 4c
+4d 54 46 31 33 32 31 30 30 0a 00 00 00 fd 00 32
+4b 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 4d 42 31 34 41 43 0a 20 01 1c
+
+02 03 10 31 45 01 02 03 04 90 65 03 0c 00 10 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 57
 
 00 ff ff ff ff ff ff 00 06 b3 b1 14 04 04 02 00
 0c 21 01 04 a5 1f 11 78 3a 28 65 97 59 54 8e 27
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AUS
     Model: 5297
-    Serial Number: 132100
+    Serial Number: ...
     Made in: week 12 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -75,7 +74,7 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (309 mm x 174 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'R3LMTF132100'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 24-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'ASUS MB14AC'
@@ -99,4 +98,71 @@ Block 1, CTA-861 Extension Block:
     Source physical address: 1.0.0.0
 Checksum: 0x57  Unused space in Extension Block: 111 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 b3 b1 14 04 04 02 00 '................'
+  0c 21 01 04 a5 1f 11 78 3a 28 65 97 59 54 8e 27 '.!.....x:(e.YT.''
+  1e 50 54 a1 08 00 b3 00 95 00 81 80 81 40 81 c0 '.PT..........@..'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 35 ae 10 00 00 1e 00 00 00 ff 00 52 33 4c 'E.5..........R3L'
+  4d 54 46 31 33 32 31 30 30 0a 00 00 00 fd 00 32 'MTF132100......2'
+  4b 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 41 53 55 53 20 4d 42 31 34 41 43 0a 20 01 1c '.ASUS MB14AC. ..'
+Checksum: 0x1c
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+Checksum: 0x57  Unused space in Extension Block: 111 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 16.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

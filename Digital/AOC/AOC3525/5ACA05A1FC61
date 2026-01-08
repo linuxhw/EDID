@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0005e32535ffffffff
-ff1a0104a552237806ee91a3544c9926
-0f505421080001010101010101010101
-010101010101e77c70a0d0a029503020
-3a00335a3100001a000000ff00234153
-4f436c4e584e48594464000000fd001e
-64499736010a202020202020000000fc
-0041473335325543470a20202020010e
-020312412309070183010000654b0400
-01019d6770a0d0a0225030203a00335a
-3100001a1ab370a0d0a03b5030203a00
-335a3100001aa0cf7050d0a046500820
-880c335a3100001a0000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000df
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 25 35 ff ff ff ff
+ff 1a 01 04 a5 52 23 78 06 ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 e7 7c 70 a0 d0 a0 29 50 30 20
+3a 00 33 5a 31 00 00 1a 00 00 00 ff 00 23 41 53
+4f 43 6c 4e 58 4e 48 59 44 64 00 00 00 fd 00 1e
+64 49 97 36 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 47 33 35 32 55 43 47 0a 20 20 20 20 01 0e
+
+02 03 12 41 23 09 07 01 83 01 00 00 65 4b 04 00
+01 01 9d 67 70 a0 d0 a0 22 50 30 20 3a 00 33 5a
+31 00 00 1a 1a b3 70 a0 d0 a0 3b 50 30 20 3a 00
+33 5a 31 00 00 1a a0 cf 70 50 d0 a0 46 50 08 20
+88 0c 33 5a 31 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 df
 
 00 ff ff ff ff ff ff 00 05 e3 25 35 ff ff ff ff
 ff 1a 01 04 a5 52 23 78 06 ee 91 a3 54 4c 99 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 13605
-    Serial Number: 4294967295
+    Serial Number: ...
     Model year: 2016
   Basic Display Parameters & Features:
     Digital display
@@ -69,7 +68,7 @@ Block 0, Base EDID:
     DTD 1:  3440x1440   59.972616 Hz  43:18    88.819 kHz    319.750000 MHz (819 mm x 346 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   28 Vpol N
-    Display Product Serial Number: '#ASOClNXNHYDd'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (Bare Limits): 30-100 Hz V, 73-151 kHz H, max dotclock 540 MHz
     Display Product Name: 'AG352UCG'
@@ -103,4 +102,70 @@ Block 1, CTA-861 Extension Block:
                  Vfront   56 Vsync   8 Vback    6 Vpol N
 Checksum: 0xdf  Unused space in Extension Block: 55 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 25 35 ff ff ff ff '..........%5....'
+  ff 1a 01 04 a5 52 23 78 06 ee 91 a3 54 4c 99 26 '.....R#x....TL.&'
+  0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01 '.PT!............'
+  01 01 01 01 01 01 e7 7c 70 a0 d0 a0 29 50 30 20 '.......|p...)P0 '
+  3a 00 33 5a 31 00 00 1a 00 00 00 ff 00 23 41 53 ':.3Z1........#AS'
+  4f 43 6c 4e 58 4e 48 59 44 64 00 00 00 fd 00 1e 'OClNXNHYDd......'
+  64 49 97 36 01 0a 20 20 20 20 20 20 00 00 00 fc 'dI.6..      ....'
+  00 41 47 33 35 32 55 43 47 0a 20 20 20 20 01 0e '.AG352UCG.    ..'
+Checksum: 0x0e
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (NVIDIA), OUI 00-04-4B:
+    01 01                                           '..'
+  Detailed Timing Descriptors:
+    DTD 5:  3440x1440   49.986808 Hz  43:18    73.681 kHz    265.250000 MHz (819 mm x 346 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   21 Vpol N
+    DTD 6:  3440x1440   84.964050 Hz  43:18   127.361 kHz    458.500000 MHz (819 mm x 346 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync  10 Vback   46 Vpol N
+    DTD 7:  3440x1440  100.000000 Hz  43:18   151.000 kHz    531.520000 MHz (819 mm x 346 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront   56 Vsync   8 Vback    6 Vpol N
+Checksum: 0xdf  Unused space in Extension Block: 55 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 151.000 kHz (Monitor: 73.000 - 151.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL
