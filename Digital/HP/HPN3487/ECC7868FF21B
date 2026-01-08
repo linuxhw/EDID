@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00220e873401010101
-2e1b0103803420782a5595a9544c9e24
-0d5054a54b00d1c081c0a9c0b3009500
-81008180d10f283c80a070b023403020
-360006442100001a000000fd00184b1b
-5e14000a202020202020000000fc0048
-50205a32346e2047320a2020000000ff
-0036434d3734363130474c0a202000a7
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 0e 87 34 01 01 01 01
+2e 1b 01 03 80 34 20 78 2a 55 95 a9 54 4c 9e 24
+0d 50 54 a5 4b 00 d1 c0 81 c0 a9 c0 b3 00 95 00
+81 00 81 80 d1 0f 28 3c 80 a0 70 b0 23 40 30 20
+36 00 06 44 21 00 00 1a 00 00 00 fd 00 18 4b 1b
+5e 14 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 5a 32 34 6e 20 47 32 0a 20 20 00 00 00 ff
+00 36 43 4d 37 34 36 31 30 47 4c 0a 20 20 00 a7
 
 00 ff ff ff ff ff ff 00 22 0e 87 34 01 01 01 01
 2e 1b 01 03 80 34 20 78 2a 55 95 a9 54 4c 9e 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HPN
     Model: 13447
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 46 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -66,7 +64,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 24-75 Hz V, 27-94 kHz H, max dotclock 200 MHz
     Display Product Name: 'HP Z24n G2'
-    Display Product Serial Number: '6CM74610GL'
+    Display Product Serial Number: ...
 Checksum: 0xa7
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 0e 87 34 01 01 01 01 '........"..4....'
+  2e 1b 01 03 80 34 20 78 2a 55 95 a9 54 4c 9e 24 '.....4 x*U..TL.$'
+  0d 50 54 a5 4b 00 d1 c0 81 c0 a9 c0 b3 00 95 00 '.PT.K...........'
+  81 00 81 80 d1 0f 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
+  36 00 06 44 21 00 00 1a 00 00 00 fd 00 18 4b 1b '6..D!.........K.'
+  5e 14 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 '^...      .....H'
+  50 20 5a 32 34 6e 20 47 32 0a 20 20 00 00 00 ff 'P Z24n G2.  ....'
+  00 36 43 4d 37 34 36 31 30 47 4c 0a 20 20 00 a7 '.6CM74610GL.  ..'
+Checksum: 0xa7
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 245.250 MHz (Monitor: 200.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

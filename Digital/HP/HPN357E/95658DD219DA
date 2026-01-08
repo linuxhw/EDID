@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff00220e7e3501010101
-0d1e0104a5361e783b9055a75553a028
-135054a54b00d1c0a9c081c0b3009500
-8100d1d9d1e8023a801871382d40582c
-4500202f2100001e000000fd003090a7
-a723010a202020202020000000fc0048
-50203235780a202020202020000000ff
-00434e4b303133314736480a202001f2
-020316f149901f041303120211012309
-070783010000023a801871382d40582c
-4500202f2100001e023a80d072382d40
-102c4580202f2100001e866f80a07038
-404030203500202f2100001a5a8780a0
-70384d4030203500202f2100001a0000
-00000000000000000000000000000000
-000000000000000000000000000000fa
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 0e 7e 35 01 01 01 01
+0d 1e 01 04 a5 36 1e 78 3b 90 55 a7 55 53 a0 28
+13 50 54 a5 4b 00 d1 c0 a9 c0 81 c0 b3 00 95 00
+81 00 d1 d9 d1 e8 02 3a 80 18 71 38 2d 40 58 2c
+45 00 20 2f 21 00 00 1e 00 00 00 fd 00 30 90 a7
+a7 23 01 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 32 35 78 0a 20 20 20 20 20 20 00 00 00 ff
+00 43 4e 4b 30 31 33 31 47 36 48 0a 20 20 01 f2
+
+02 03 16 f1 49 90 1f 04 13 03 12 02 11 01 23 09
+07 07 83 01 00 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 20 2f 21 00 00 1e 02 3a 80 d0 72 38 2d 40
+10 2c 45 80 20 2f 21 00 00 1e 86 6f 80 a0 70 38
+40 40 30 20 35 00 20 2f 21 00 00 1a 5a 87 80 a0
+70 38 4d 40 30 20 35 00 20 2f 21 00 00 1a 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fa
 
 00 ff ff ff ff ff ff 00 22 0e 7e 35 01 01 01 01
 0d 1e 01 04 a5 36 1e 78 3b 90 55 a7 55 53 a0 28
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HPN
     Model: 13694
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 13 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -86,7 +85,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (Bare Limits): 48-144 Hz V, 167-167 kHz H, max dotclock 350 MHz
     Display Product Name: 'HP 25x'
-    Display Product Serial Number: 'CNK0131G6H'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0xf2
 
@@ -131,4 +130,94 @@ Block 1, CTA-861 Extension Block:
                  Vfront    3 Vsync   5 Vback   69 Vpol N
 Checksum: 0xfa  Unused space in Extension Block: 33 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 0e 7e 35 01 01 01 01 '........".~5....'
+  0d 1e 01 04 a5 36 1e 78 3b 90 55 a7 55 53 a0 28 '.....6.x;.U.US.('
+  13 50 54 a5 4b 00 d1 c0 a9 c0 81 c0 b3 00 95 00 '.PT.K...........'
+  81 00 d1 d9 d1 e8 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 20 2f 21 00 00 1e 00 00 00 fd 00 30 90 a7 'E. /!........0..'
+  a7 23 01 0a 20 20 20 20 20 20 00 00 00 fc 00 48 '.#..      .....H'
+  50 20 32 35 78 0a 20 20 20 20 20 20 00 00 00 ff 'P 25x.      ....'
+  00 43 4e 4b 30 31 33 31 47 36 48 0a 20 20 01 f2 '.CNK0131G6H.  ..'
+Checksum: 0xf2
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 6:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (544 mm x 303 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 7:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (544 mm x 303 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 8:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (544 mm x 303 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD 9:  1920x1080  143.981451 Hz  16:9    166.587 kHz    346.500000 MHz (544 mm x 303 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   69 Vpol N
+Checksum: 0xfa  Unused space in Extension Block: 33 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.250 - 166.586 kHz (Monitor: 167.000 - 167.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL
