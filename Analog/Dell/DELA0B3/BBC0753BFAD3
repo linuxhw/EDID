@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010acb3a04c384431
-051901030e351e78ee7e75a755529c27
-0f5054a54b00714f8180a9c0a940d1c0
-010101010101023a801871382d40582c
-45000f282100001e000000ff0038434e
-33593531553144384c0a000000fc0044
-454c4c205332343135480a20000000fd
-00384c1e5311000a20202020202000ee
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac b3 a0 4c 38 44 31
+05 19 01 03 0e 35 1e 78 ee 7e 75 a7 55 52 9c 27
+0f 50 54 a5 4b 00 71 4f 81 80 a9 c0 a9 40 d1 c0
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 ff 00 38 43 4e
+33 59 35 31 55 31 44 38 4c 0a 00 00 00 fc 00 44
+45 4c 4c 20 53 32 34 31 35 48 0a 20 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 ee
 
 00 ff ff ff ff ff ff 00 10 ac b3 a0 4c 38 44 31
 05 19 01 03 0e 35 1e 78 ee 7e 75 a7 55 52 9c 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 41139
-    Serial Number: 826554444
+    Serial Number: ...
     Made in: week 5 of 2015
   Basic Display Parameters & Features:
     Analog display
@@ -64,8 +62,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '8CN3Y51U1D8L'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL S2415H'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0xee
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac b3 a0 4c 38 44 31 '............L8D1'
+  05 19 01 03 0e 35 1e 78 ee 7e 75 a7 55 52 9c 27 '.....5.x.~u.UR.''
+  0f 50 54 a5 4b 00 71 4f 81 80 a9 c0 a9 40 d1 c0 '.PT.K.qO.....@..'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 ff 00 38 43 4e 'E..(!........8CN'
+  33 59 35 31 55 31 44 38 4c 0a 00 00 00 fc 00 44 '3Y51U1D8L......D'
+  45 4c 4c 20 53 32 34 31 35 48 0a 20 00 00 00 fd 'ELL S2415H. ....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 ee '.8L.S...      ..'
+Checksum: 0xee
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac4aa055543131
-071501030e221b78eeee95a3544c9926
-0f5054a54b008180714f010101010101
-010101010101302a009851002a403070
-1300520e1100001e000000ff00503430
-394e313237313154550a000000fc0044
-454c4c2045313730530a2020000000fd
-00384c1e510e000a2020202020200038
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 4a a0 55 54 31 31
+07 15 01 03 0e 22 1b 78 ee ee 95 a3 54 4c 99 26
+0f 50 54 a5 4b 00 81 80 71 4f 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 ff 00 50 34 30
+39 4e 31 32 37 31 31 54 55 0a 00 00 00 fc 00 44
+45 4c 4c 20 45 31 37 30 53 0a 20 20 00 00 00 fd
+00 38 4c 1e 51 0e 00 0a 20 20 20 20 20 20 00 38
 
 00 ff ff ff ff ff ff 00 10 ac 4a a0 55 54 31 31
 07 15 01 03 0e 22 1b 78 ee ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 41034
-    Serial Number: 825316437
+    Serial Number: ...
     Made in: week 7 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -61,8 +59,34 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (338 mm x 270 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: 'P409N12711TU'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL E170S'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-81 kHz H, max dotclock 140 MHz
 Checksum: 0x38
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 4a a0 55 54 31 31 '..........J.UT11'
+  07 15 01 03 0e 22 1b 78 ee ee 95 a3 54 4c 99 26 '.....".x....TL.&'
+  0f 50 54 a5 4b 00 81 80 71 4f 01 01 01 01 01 01 '.PT.K...qO......'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 ff 00 50 34 30 '..R..........P40'
+  39 4e 31 32 37 31 31 54 55 0a 00 00 00 fc 00 44 '9N12711TU......D'
+  45 4c 4c 20 45 31 37 30 53 0a 20 20 00 00 00 fd 'ELL E170S.  ....'
+  00 38 4c 1e 51 0e 00 0a 20 20 20 20 20 20 00 38 '.8L.Q...      .8'
+Checksum: 0x38
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

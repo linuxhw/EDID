@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010aca57145363632
-0a090101081e17b9e80eb2a057479926
-10484fa44a0061594559818031590101
-010101010101100bd0b4205e6310126c
-6208fab80000001a000000ff00373232
-3144443236364533390a000000fc0044
-454c4c204d3737300a202020000000fd
-0030a01e45ff000a20202020202000a6
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac a5 71 45 36 36 32
+0a 09 01 01 08 1e 17 b9 e8 0e b2 a0 57 47 99 26
+10 48 4f a4 4a 00 61 59 45 59 81 80 31 59 01 01
+01 01 01 01 01 01 10 0b d0 b4 20 5e 63 10 12 6c
+62 08 fa b8 00 00 00 1a 00 00 00 ff 00 37 32 32
+31 44 44 32 36 36 45 33 39 0a 00 00 00 fc 00 44
+45 4c 4c 20 4d 37 37 30 0a 20 20 20 00 00 00 fd
+00 30 a0 1e 45 ff 00 0a 20 20 20 20 20 20 00 a6
 
 00 ff ff ff ff ff ff 00 10 ac a5 71 45 36 36 32
 0a 09 01 01 08 1e 17 b9 e8 0e b2 a0 57 47 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 29093
-    Serial Number: 842413637
+    Serial Number: ...
     Made in: week 10 of 1999
   Basic Display Parameters & Features:
     Analog display
@@ -59,8 +57,39 @@ Block 0, Base EDID:
     DTD 1:   720x350    70.081663 Hz  72:35    31.467 kHz     28.320000 MHz (250 mm x 184 mm)
                  Hfront   18 Hsync 108 Hback   54 Hpol P
                  Vfront   38 Vsync   2 Vback   59 Vpol N
-    Display Product Serial Number: '7221DD266E39'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL M770'
     Display Range Limits:
       Monitor ranges (GTF): 48-160 Hz V, 30-69 kHz H, max dotclock 2550 MHz
 Checksum: 0xa6
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac a5 71 45 36 36 32 '...........qE662'
+  0a 09 01 01 08 1e 17 b9 e8 0e b2 a0 57 47 99 26 '............WG.&'
+  10 48 4f a4 4a 00 61 59 45 59 81 80 31 59 01 01 '.HO.J.aYEY..1Y..'
+  01 01 01 01 01 01 10 0b d0 b4 20 5e 63 10 12 6c '.......... ^c..l'
+  62 08 fa b8 00 00 00 1a 00 00 00 ff 00 37 32 32 'b............722'
+  31 44 44 32 36 36 45 33 39 0a 00 00 00 fc 00 44 '1DD266E39......D'
+  45 4c 4c 20 4d 37 37 30 0a 20 20 20 00 00 00 fd 'ELL M770.   ....'
+  00 30 a0 1e 45 ff 00 0a 20 20 20 20 20 20 00 a6 '.0..E...      ..'
+Checksum: 0xa6
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 250x184 mm vs display size 300x230 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

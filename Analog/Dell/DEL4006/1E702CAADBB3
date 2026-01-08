@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac064052354447
-290f01030e1e1778eeb4a5a1584e9726
-165054a54a0001010101010101010101
-01010101010164190040410026301888
-360030e410000018000000ff00593432
-3837354134474435520a000000fc0044
-454c4c203135303546500a20000000fd
-00384c1e3d08000a2020202020200028
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 06 40 52 35 44 47
+29 0f 01 03 0e 1e 17 78 ee b4 a5 a1 58 4e 97 26
+16 50 54 a5 4a 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 30 e4 10 00 00 18 00 00 00 ff 00 59 34 32
+38 37 35 41 34 47 44 35 52 0a 00 00 00 fc 00 44
+45 4c 4c 20 31 35 30 35 46 50 0a 20 00 00 00 fd
+00 38 4c 1e 3d 08 00 0a 20 20 20 20 20 20 00 28
 
 00 ff ff ff ff ff ff 00 10 ac 06 40 52 35 44 47
 29 0f 01 03 0e 1e 17 78 ee b4 a5 a1 58 4e 97 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 16390
-    Serial Number: 1195652434
+    Serial Number: ...
     Made in: week 41 of 2005
   Basic Display Parameters & Features:
     Analog display
@@ -58,8 +56,34 @@ Block 0, Base EDID:
     DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (304 mm x 228 mm)
                  Hfront   24 Hsync 136 Hback  160 Hpol N
                  Vfront    3 Vsync   6 Vback   29 Vpol N
-    Display Product Serial Number: 'Y42875A4GD5R'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL 1505FP'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-61 kHz H, max dotclock 80 MHz
 Checksum: 0x28
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 06 40 52 35 44 47 '...........@R5DG'
+  29 0f 01 03 0e 1e 17 78 ee b4 a5 a1 58 4e 97 26 ')......x....XN.&'
+  16 50 54 a5 4a 00 01 01 01 01 01 01 01 01 01 01 '.PT.J...........'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 30 e4 10 00 00 18 00 00 00 ff 00 59 34 32 '6.0..........Y42'
+  38 37 35 41 34 47 44 35 52 0a 00 00 00 fc 00 44 '875A4GD5R......D'
+  45 4c 4c 20 31 35 30 35 46 50 0a 20 00 00 00 fd 'ELL 1505FP. ....'
+  00 38 4c 1e 3d 08 00 0a 20 20 20 20 20 20 00 28 '.8L.=...      .('
+Checksum: 0x28
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

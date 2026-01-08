@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac9ca055484332
-2e1901030e351e78eaa0a5a656529d27
-0f5054a54b00714f8180a9c0d1c00101
-010101010101023a801871382d40582c
-45000f292100001e000000ff00544b39
-4331354238324348550a000000fc0044
-454c4c205032343134480a20000000fd
-00384c1e5311000a202020202020005a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 9c a0 55 48 43 32
+2e 19 01 03 0e 35 1e 78 ea a0 a5 a6 56 52 9d 27
+0f 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 29 21 00 00 1e 00 00 00 ff 00 54 4b 39
+43 31 35 42 38 32 43 48 55 0a 00 00 00 fc 00 44
+45 4c 4c 20 50 32 34 31 34 48 0a 20 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 5a
 
 00 ff ff ff ff ff ff 00 10 ac 9c a0 55 48 43 32
 2e 19 01 03 0e 35 1e 78 ea a0 a5 a6 56 52 9d 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 41116
-    Serial Number: 843270229
+    Serial Number: ...
     Made in: week 46 of 2015
   Basic Display Parameters & Features:
     Analog display
@@ -62,8 +60,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 297 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'TK9C15B82CHU'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL P2414H'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x5a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 9c a0 55 48 43 32 '............UHC2'
+  2e 19 01 03 0e 35 1e 78 ea a0 a5 a6 56 52 9d 27 '.....5.x....VR.''
+  0f 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 01 01 '.PT.K.qO........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 0f 29 21 00 00 1e 00 00 00 ff 00 54 4b 39 'E..)!........TK9'
+  43 31 35 42 38 32 43 48 55 0a 00 00 00 fc 00 44 'C15B82CHU......D'
+  45 4c 4c 20 50 32 34 31 34 48 0a 20 00 00 00 fd 'ELL P2414H. ....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 5a '.8L.S...      .Z'
+Checksum: 0x5a
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

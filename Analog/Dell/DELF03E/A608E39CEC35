@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac3ef042353131
-031601030e291778eaa545a457509e27
-0f5054a54b0001010101010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000ff0033584e
-4d48323148313135420a000000fc0044
-454c4c204531393132480a20000000fd
-00384b1e5309000a202020202020006d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 3e f0 42 35 31 31
+03 16 01 03 0e 29 17 78 ea a5 45 a4 57 50 9e 27
+0f 50 54 a5 4b 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 ff 00 33 58 4e
+4d 48 32 31 48 31 31 35 42 0a 00 00 00 fc 00 44
+45 4c 4c 20 45 31 39 31 32 48 0a 20 00 00 00 fd
+00 38 4b 1e 53 09 00 0a 20 20 20 20 20 20 00 6d
 
 00 ff ff ff ff ff ff 00 10 ac 3e f0 42 35 31 31
 03 16 01 03 0e 29 17 78 ea a5 45 a4 57 50 9e 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 61502
-    Serial Number: 825308482
+    Serial Number: ...
     Made in: week 3 of 2012
   Basic Display Parameters & Features:
     Analog display
@@ -58,8 +56,34 @@ Block 0, Base EDID:
     DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
                  Hfront   70 Hsync 143 Hback  213 Hpol P
                  Vfront    3 Vsync   3 Vback   24 Vpol P
-    Display Product Serial Number: '3XNMH21H115B'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL E1912H'
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 90 MHz
 Checksum: 0x6d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 3e f0 42 35 31 31 '..........>.B511'
+  03 16 01 03 0e 29 17 78 ea a5 45 a4 57 50 9e 27 '.....).x..E.WP.''
+  0f 50 54 a5 4b 00 01 01 01 01 01 01 01 01 01 01 '.PT.K...........'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 ff 00 33 58 4e '3............3XN'
+  4d 48 32 31 48 31 31 35 42 0a 00 00 00 fc 00 44 'MH21H115B......D'
+  45 4c 4c 20 45 31 39 31 32 48 0a 20 00 00 00 fd 'ELL E1912H. ....'
+  00 38 4b 1e 53 09 00 0a 20 20 20 20 20 20 00 6d '.8K.S...      .m'
+Checksum: 0x6d
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 135.000 MHz (Monitor: 90.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac7ca055324731
-211601030e351e78ea9265a655559f28
-0d5054a54b00714f8180d1c001010101
-010101010101023a801871382d40582c
-4500132b2100001e000000ff0054544d
-4447323846314732550a000000fc0044
-454c4c205032343132480a20000000fd
-00384c1e5311000a2020202020200029
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 7c a0 55 32 47 31
+21 16 01 03 0e 35 1e 78 ea 92 65 a6 55 55 9f 28
+0d 50 54 a5 4b 00 71 4f 81 80 d1 c0 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2b 21 00 00 1e 00 00 00 ff 00 54 54 4d
+44 47 32 38 46 31 47 32 55 0a 00 00 00 fc 00 44
+45 4c 4c 20 50 32 34 31 32 48 0a 20 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 29
 
 00 ff ff ff ff ff ff 00 10 ac 7c a0 55 32 47 31
 21 16 01 03 0e 35 1e 78 ea 92 65 a6 55 55 9f 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 41084
-    Serial Number: 826749525
+    Serial Number: ...
     Made in: week 33 of 2012
   Basic Display Parameters & Features:
     Analog display
@@ -61,10 +59,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (531 mm x 299 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'TTMDG28F1G2U'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL P2412H'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x29
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 7c a0 55 32 47 31 '..........|.U2G1'
+  21 16 01 03 0e 35 1e 78 ea 92 65 a6 55 55 9f 28 '!....5.x..e.UU.('
+  0d 50 54 a5 4b 00 71 4f 81 80 d1 c0 01 01 01 01 '.PT.K.qO........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 13 2b 21 00 00 1e 00 00 00 ff 00 54 54 4d 'E..+!........TTM'
+  44 47 32 38 46 31 47 32 55 0a 00 00 00 fc 00 44 'DG28F1G2U......D'
+  45 4c 4c 20 50 32 34 31 32 48 0a 20 00 00 00 fd 'ELL P2412H. ....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 29 '.8L.S...      .)'
+Checksum: 0x29
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

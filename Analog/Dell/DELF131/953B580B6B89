@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac31f15a4f4233
-0c2001030e301a78eacfb5a358509d24
-0f5054a54b00714f8180a9c0d1c00101
-010101010101023a801871382d40582c
-4500de041100001e000000ff004a5942
-4c4848330a2020202020000000fc0044
-454c4c20453232323248530a000000fd
-00324b1e5311000a2020202020200014
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 31 f1 5a 4f 42 33
+0c 20 01 03 0e 30 1a 78 ea cf b5 a3 58 50 9d 24
+0f 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 de 04 11 00 00 1e 00 00 00 ff 00 4a 59 42
+4c 48 48 33 0a 20 20 20 20 20 00 00 00 fc 00 44
+45 4c 4c 20 45 32 32 32 32 48 53 0a 00 00 00 fd
+00 32 4b 1e 53 11 00 0a 20 20 20 20 20 20 00 14
 
 00 ff ff ff ff ff ff 00 10 ac 31 f1 5a 4f 42 33
 0c 20 01 03 0e 30 1a 78 ea cf b5 a3 58 50 9d 24
@@ -27,11 +25,11 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 61745
-    Serial Number: 859983706
+    Serial Number: ...
     Made in: week 12 of 2022
   Basic Display Parameters & Features:
     Analog display
-    Input voltage level: 0.7/0.3 V
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
     Blank level equals black level
     Sync: Separate Composite SyncOnGreen
     Maximum image size: 48 cm x 26 cm
@@ -62,8 +60,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (478 mm x 260 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'JYBLHH3'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL E2222HS'
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x14
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 31 f1 5a 4f 42 33 '..........1.ZOB3'
+  0c 20 01 03 0e 30 1a 78 ea cf b5 a3 58 50 9d 24 '. ...0.x....XP.$'
+  0f 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 01 01 '.PT.K.qO........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 de 04 11 00 00 1e 00 00 00 ff 00 4a 59 42 'E............JYB'
+  4c 48 48 33 0a 20 20 20 20 20 00 00 00 fc 00 44 'LHH3.     .....D'
+  45 4c 4c 20 45 32 32 32 32 48 53 0a 00 00 00 fd 'ELL E2222HS.....'
+  00 32 4b 1e 53 11 00 0a 20 20 20 20 20 20 00 14 '.2K.S...      ..'
+Checksum: 0x14
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

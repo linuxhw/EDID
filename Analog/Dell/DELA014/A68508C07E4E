@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac14a055354e36
-1110010368221b782ec5c6a3574a9c23
-124f54a54b00714f8180010101010101
-010101010101302a009851002a403070
-1300520e1100001e000000fd003c4b1f
-500e000a202020202020000000fc0044
-454c4c204531373646500a20000000ff
-004d4330343336344f364e35550a0087
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 14 a0 55 35 4e 36
+11 10 01 03 68 22 1b 78 2e c5 c6 a3 57 4a 9c 23
+12 4f 54 a5 4b 00 71 4f 81 80 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 fd 00 3c 4b 1f
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 44
+45 4c 4c 20 45 31 37 36 46 50 0a 20 00 00 00 ff
+00 4d 43 30 34 33 36 34 4f 36 4e 35 55 0a 00 87
 
 00 ff ff ff ff ff ff 00 10 ac 14 a0 55 35 4e 36
 11 10 01 03 68 22 1b 78 2e c5 c6 a3 57 4a 9c 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 40980
-    Serial Number: 911095125
+    Serial Number: ...
     Made in: week 17 of 2006
   Basic Display Parameters & Features:
     Analog display
@@ -64,5 +62,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 60-75 Hz V, 31-80 kHz H, max dotclock 140 MHz
     Display Product Name: 'DELL E176FP'
-    Display Product Serial Number: 'MC04364O6N5U'
+    Display Product Serial Number: ...
 Checksum: 0x87
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 14 a0 55 35 4e 36 '............U5N6'
+  11 10 01 03 68 22 1b 78 2e c5 c6 a3 57 4a 9c 23 '....h".x....WJ.#'
+  12 4f 54 a5 4b 00 71 4f 81 80 01 01 01 01 01 01 '.OT.K.qO........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 fd 00 3c 4b 1f '..R..........<K.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 44 'P...      .....D'
+  45 4c 4c 20 45 31 37 36 46 50 0a 20 00 00 00 ff 'ELL E176FP. ....'
+  00 4d 43 30 34 33 36 34 4f 36 4e 35 55 0a 00 87 '.MC04364O6N5U...'
+Checksum: 0x87
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac07a04c4b4430
-051001030e291f78ee6390a3574b9b25
-115054a54b008180a940714f01010101
-010101010101483f403062b0324040c0
-13006f131100001e000000ff00433038
-383136314f30444b4c20000000fc0044
-454c4c203230303146500a20000000fd
-00384c1f5010000a20202020202000b5
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 07 a0 4c 4b 44 30
+05 10 01 03 0e 29 1f 78 ee 63 90 a3 57 4b 9b 25
+11 50 54 a5 4b 00 81 80 a9 40 71 4f 01 01 01 01
+01 01 01 01 01 01 48 3f 40 30 62 b0 32 40 40 c0
+13 00 6f 13 11 00 00 1e 00 00 00 ff 00 43 30 38
+38 31 36 31 4f 30 44 4b 4c 20 00 00 00 fc 00 44
+45 4c 4c 20 32 30 30 31 46 50 0a 20 00 00 00 fd
+00 38 4c 1f 50 10 00 0a 20 20 20 20 20 20 00 b5
 
 00 ff ff ff ff ff ff 00 10 ac 07 a0 4c 4b 44 30
 05 10 01 03 0e 29 1f 78 ee 63 90 a3 57 4b 9b 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 40967
-    Serial Number: 809782092
+    Serial Number: ...
     Made in: week 5 of 2006
   Basic Display Parameters & Features:
     Analog display
@@ -62,8 +60,43 @@ Block 0, Base EDID:
     DTD 1:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz (367 mm x 275 mm)
                  Hfront   64 Hsync 192 Hback  304 Hpol P
                  Vfront    1 Vsync   3 Vback   46 Vpol P
-    Display Product Serial Number: 'C088161O0DKL '
+    Display Product Serial Number: ...
     Display Product Name: 'DELL 2001FP'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-80 kHz H, max dotclock 160 MHz
 Checksum: 0xb5
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 07 a0 4c 4b 44 30 '............LKD0'
+  05 10 01 03 0e 29 1f 78 ee 63 90 a3 57 4b 9b 25 '.....).x.c..WK.%'
+  11 50 54 a5 4b 00 81 80 a9 40 71 4f 01 01 01 01 '.PT.K....@qO....'
+  01 01 01 01 01 01 48 3f 40 30 62 b0 32 40 40 c0 '......H?@0b.2@@.'
+  13 00 6f 13 11 00 00 1e 00 00 00 ff 00 43 30 38 '..o..........C08'
+  38 31 36 31 4f 30 44 4b 4c 20 00 00 00 fc 00 44 '8161O0DKL .....D'
+  45 4c 4c 20 32 30 30 31 46 50 0a 20 00 00 00 fd 'ELL 2001FP. ....'
+  00 38 4c 1f 50 10 00 0a 20 20 20 20 20 20 00 b5 '.8L.P...      ..'
+Checksum: 0xb5
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 162.000 MHz (Monitor: 160.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 367x275 mm vs display size 410x310 mm.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

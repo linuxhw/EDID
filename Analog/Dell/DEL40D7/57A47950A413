@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010acd74053393433
-101a01030e3c2278ea6e35a855529f27
-0f5054a54b00714f8180a940d1c00101
-010101010101023a801871382d40582c
-450056502100001e000000ff00365052
-593036344a333439530a000000fc0044
-454c4c20534532373136480a000000fd
-00384c1e5311000a2020202020200039
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac d7 40 53 39 34 33
+10 1a 01 03 0e 3c 22 78 ea 6e 35 a8 55 52 9f 27
+0f 50 54 a5 4b 00 71 4f 81 80 a9 40 d1 c0 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 ff 00 36 50 52
+59 30 36 34 4a 33 34 39 53 0a 00 00 00 fc 00 44
+45 4c 4c 20 53 45 32 37 31 36 48 0a 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 39
 
 00 ff ff ff ff ff ff 00 10 ac d7 40 53 39 34 33
 10 1a 01 03 0e 3c 22 78 ea 6e 35 a8 55 52 9f 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 16599
-    Serial Number: 859060563
+    Serial Number: ...
     Made in: week 16 of 2016
   Basic Display Parameters & Features:
     Analog display
@@ -62,8 +60,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '6PRY064J349S'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL SE2716H'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x39
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac d7 40 53 39 34 33 '...........@S943'
+  10 1a 01 03 0e 3c 22 78 ea 6e 35 a8 55 52 9f 27 '.....<"x.n5.UR.''
+  0f 50 54 a5 4b 00 71 4f 81 80 a9 40 d1 c0 01 01 '.PT.K.qO...@....'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 ff 00 36 50 52 'E.VP!........6PR'
+  59 30 36 34 4a 33 34 39 53 0a 00 00 00 fc 00 44 'Y064J349S......D'
+  45 4c 4c 20 53 45 32 37 31 36 48 0a 00 00 00 fd 'ELL SE2716H.....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 39 '.8L.S...      .9'
+Checksum: 0x39
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

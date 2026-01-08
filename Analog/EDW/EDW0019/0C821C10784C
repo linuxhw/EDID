@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001497190005190519
-2d18010368291a782ad6a5a2594a9524
-145054bfcf0081809500814081007140
-714f6140614a9a29a0d0518422305098
-36009a001100001c000000ff00434944
-57393031343030373031000000fd0038
-4b1e510e000a202020202020000000fc
-004544572d3930310a202020202000dd
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 14 97 19 00 05 19 05 19
+2d 18 01 03 68 29 1a 78 2a d6 a5 a2 59 4a 95 24
+14 50 54 bf cf 00 81 80 95 00 81 40 81 00 71 40
+71 4f 61 40 61 4a 9a 29 a0 d0 51 84 22 30 50 98
+36 00 9a 00 11 00 00 1c 00 00 00 ff 00 43 49 44
+57 39 30 31 34 30 30 37 30 31 00 00 00 fd 00 38
+4b 1e 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 45 44 57 2d 39 30 31 0a 20 20 20 20 20 00 dd
 
 00 ff ff ff ff ff ff 00 14 97 19 00 05 19 05 19
 2d 18 01 03 68 29 1a 78 2a d6 a5 a2 59 4a 95 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: EDW
     Model: 25
-    Serial Number: 419764485
+    Serial Number: ...
     Made in: week 45 of 2014
   Basic Display Parameters & Features:
     Analog display
@@ -71,8 +69,32 @@ Block 0, Base EDID:
     DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (410 mm x 256 mm)
                  Hfront   80 Hsync 152 Hback  232 Hpol N
                  Vfront    3 Vsync   6 Vback   25 Vpol P
-    Display Product Serial Number: 'CIDW901400701'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-81 kHz H, max dotclock 140 MHz
     Display Product Name: 'EDW-901'
 Checksum: 0xdd
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 14 97 19 00 05 19 05 19 '................'
+  2d 18 01 03 68 29 1a 78 2a d6 a5 a2 59 4a 95 24 '-...h).x*...YJ.$'
+  14 50 54 bf cf 00 81 80 95 00 81 40 81 00 71 40 '.PT........@..q@'
+  71 4f 61 40 61 4a 9a 29 a0 d0 51 84 22 30 50 98 'qOa@aJ.)..Q."0P.'
+  36 00 9a 00 11 00 00 1c 00 00 00 ff 00 43 49 44 '6............CID'
+  57 39 30 31 34 30 30 37 30 31 00 00 00 fd 00 38 'W901400701.....8'
+  4b 1e 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
+  00 45 44 57 2d 39 30 31 0a 20 20 20 20 20 00 dd '.EDW-901.     ..'
+Checksum: 0xdd
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

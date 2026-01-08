@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac16d04c565831
-161201046a251778efb690a654519125
-175054a54b008180714f950001010101
-010101010101ab22a0a050841a303020
-360072e61000001a000000ff00485839
-34383835513158564c0a000000fd0032
-4d1e530e0411b205f858f000000000fc
-0044454c4c20453137385746500a0023
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 16 d0 4c 56 58 31
+16 12 01 04 6a 25 17 78 ef b6 90 a6 54 51 91 25
+17 50 54 a5 4b 00 81 80 71 4f 95 00 01 01 01 01
+01 01 01 01 01 01 ab 22 a0 a0 50 84 1a 30 30 20
+36 00 72 e6 10 00 00 1a 00 00 00 ff 00 48 58 39
+34 38 38 35 51 31 58 56 4c 0a 00 00 00 fd 00 32
+4d 1e 53 0e 04 11 b2 05 f8 58 f0 00 00 00 00 fc
+00 44 45 4c 4c 20 45 31 37 38 57 46 50 0a 00 23
 
 00 ff ff ff ff ff ff 00 10 ac 16 d0 4c 56 58 31
 16 12 01 04 6a 25 17 78 ef b6 90 a6 54 51 91 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 53270
-    Serial Number: 827872844
+    Serial Number: ...
     Made in: week 22 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -63,7 +61,7 @@ Block 0, Base EDID:
     DTD 1:  1440x900    59.901458 Hz  16:10    55.469 kHz     88.750000 MHz (370 mm x 230 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   17 Vpol N
-    Display Product Serial Number: 'HX94885Q1XVL'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (CVT): 50-77 Hz V, 30-83 kHz H, max dotclock 140 MHz
       CVT version 1.1
@@ -80,3 +78,35 @@ Block 0, Base EDID:
         Vertical stretch
     Display Product Name: 'DELL E178WFP'
 Checksum: 0x23
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 16 d0 4c 56 58 31 '............LVX1'
+  16 12 01 04 6a 25 17 78 ef b6 90 a6 54 51 91 25 '....j%.x....TQ.%'
+  17 50 54 a5 4b 00 81 80 71 4f 95 00 01 01 01 01 '.PT.K...qO......'
+  01 01 01 01 01 01 ab 22 a0 a0 50 84 1a 30 30 20 '......."..P..00 '
+  36 00 72 e6 10 00 00 1a 00 00 00 ff 00 48 58 39 '6.r..........HX9'
+  34 38 38 35 51 31 58 56 4c 0a 00 00 00 fd 00 32 '4885Q1XVL......2'
+  4d 1e 53 0e 04 11 b2 05 f8 58 f0 00 00 00 00 fc 'M.S......X......'
+  00 44 45 4c 4c 20 45 31 37 38 57 46 50 0a 00 23 '.DELL E178WFP..#'
+Checksum: 0x23
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: CVT block corrects dotclock by more than 9.75 MHz.
+  Display Range Limits: CVT block does not set preferred refresh rate.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

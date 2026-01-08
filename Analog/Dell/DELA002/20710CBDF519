@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac02a047303031
-160c01030e291f96eb4c40a1574c9726
-1c5054a54b008180a940714f01010101
-010101010101483f403062b0324040c0
-13006f131100001e000000ff00394532
-34393235543130304730000000fc0044
-454c4c203230303046500a20000000fd
-00384c1f5010000a202020202020003b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 02 a0 47 30 30 31
+16 0c 01 03 0e 29 1f 96 eb 4c 40 a1 57 4c 97 26
+1c 50 54 a5 4b 00 81 80 a9 40 71 4f 01 01 01 01
+01 01 01 01 01 01 48 3f 40 30 62 b0 32 40 40 c0
+13 00 6f 13 11 00 00 1e 00 00 00 ff 00 39 45 32
+34 39 32 35 54 31 30 30 47 30 00 00 00 fc 00 44
+45 4c 4c 20 32 30 30 30 46 50 0a 20 00 00 00 fd
+00 38 4c 1f 50 10 00 0a 20 20 20 20 20 20 00 3b
 
 00 ff ff ff ff ff ff 00 10 ac 02 a0 47 30 30 31
 16 0c 01 03 0e 29 1f 96 eb 4c 40 a1 57 4c 97 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 40962
-    Serial Number: 825241671
+    Serial Number: ...
     Made in: week 22 of 2002
   Basic Display Parameters & Features:
     Analog display
@@ -62,8 +60,41 @@ Block 0, Base EDID:
     DTD 1:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz (367 mm x 275 mm)
                  Hfront   64 Hsync 192 Hback  304 Hpol P
                  Vfront    1 Vsync   3 Vback   46 Vpol P
-    Display Product Serial Number: '9E24925T100G0'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL 2000FP'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-80 kHz H, max dotclock 160 MHz
 Checksum: 0x3b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 02 a0 47 30 30 31 '............G001'
+  16 0c 01 03 0e 29 1f 96 eb 4c 40 a1 57 4c 97 26 '.....)...L@.WL.&'
+  1c 50 54 a5 4b 00 81 80 a9 40 71 4f 01 01 01 01 '.PT.K....@qO....'
+  01 01 01 01 01 01 48 3f 40 30 62 b0 32 40 40 c0 '......H?@0b.2@@.'
+  13 00 6f 13 11 00 00 1e 00 00 00 ff 00 39 45 32 '..o..........9E2'
+  34 39 32 35 54 31 30 30 47 30 00 00 00 fc 00 44 '4925T100G0.....D'
+  45 4c 4c 20 32 30 30 30 46 50 0a 20 00 00 00 fd 'ELL 2000FP. ....'
+  00 38 4c 1f 50 10 00 0a 20 20 20 20 20 20 00 3b '.8L.P...      .;'
+Checksum: 0x3b
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 162.000 MHz (Monitor: 160.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 367x275 mm vs display size 410x310 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

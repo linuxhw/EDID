@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac27a055424b31
-0413010368221b78eeee95a3544c9926
-0f5054a54b00714f8180010101010101
-010101010101302a009851002a403070
-1300520e1100001e000000ff004e3937
-384b39314a314b42550a000000fc0044
-454c4c204531373846500a20000000fd
-00374d1f530e000a20202020202000a8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 27 a0 55 42 4b 31
+04 13 01 03 68 22 1b 78 ee ee 95 a3 54 4c 99 26
+0f 50 54 a5 4b 00 71 4f 81 80 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 ff 00 4e 39 37
+38 4b 39 31 4a 31 4b 42 55 0a 00 00 00 fc 00 44
+45 4c 4c 20 45 31 37 38 46 50 0a 20 00 00 00 fd
+00 37 4d 1f 53 0e 00 0a 20 20 20 20 20 20 00 a8
 
 00 ff ff ff ff ff ff 00 10 ac 27 a0 55 42 4b 31
 04 13 01 03 68 22 1b 78 ee ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 40999
-    Serial Number: 827015765
+    Serial Number: ...
     Made in: week 4 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -61,8 +59,34 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (338 mm x 270 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: 'N978K91J1KBU'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL E178FP'
     Display Range Limits:
       Monitor ranges (GTF): 55-77 Hz V, 31-83 kHz H, max dotclock 140 MHz
 Checksum: 0xa8
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 27 a0 55 42 4b 31 '..........'.UBK1'
+  04 13 01 03 68 22 1b 78 ee ee 95 a3 54 4c 99 26 '....h".x....TL.&'
+  0f 50 54 a5 4b 00 71 4f 81 80 01 01 01 01 01 01 '.PT.K.qO........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 ff 00 4e 39 37 '..R..........N97'
+  38 4b 39 31 4a 31 4b 42 55 0a 00 00 00 fc 00 44 '8K91J1KBU......D'
+  45 4c 4c 20 45 31 37 38 46 50 0a 20 00 00 00 fd 'ELL E178FP. ....'
+  00 37 4d 1f 53 0e 00 0a 20 20 20 20 20 20 00 a8 '.7M.S...      ..'
+Checksum: 0xa8
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010aca0d053544a30
-201c01030e3c2278eacd25a3574b9f27
-0d5054a54b00714f8180a9c0d1c00101
-010101010101023a801871382d40582c
-450056502100001e000000ff004b594b
-4d44383838304a54530a000000fc0053
-4532373137482f48580a2020000000fd
-00384c1e5311000a20202020202000cd
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac a0 d0 53 54 4a 30
+20 1c 01 03 0e 3c 22 78 ea cd 25 a3 57 4b 9f 27
+0d 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 ff 00 4b 59 4b
+4d 44 38 38 38 30 4a 54 53 0a 00 00 00 fc 00 53
+45 32 37 31 37 48 2f 48 58 0a 20 20 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 cd
 
 00 ff ff ff ff ff ff 00 10 ac a0 d0 53 54 4a 30
 20 1c 01 03 0e 3c 22 78 ea cd 25 a3 57 4b 9f 27
@@ -27,11 +25,11 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 53408
-    Serial Number: 810177619
+    Serial Number: ...
     Made in: week 32 of 2018
   Basic Display Parameters & Features:
     Analog display
-    Input voltage level: 0.7/0.3 V
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
     Blank level equals black level
     Sync: Separate Composite SyncOnGreen
     Maximum image size: 60 cm x 34 cm
@@ -62,8 +60,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'KYKMD8880JTS'
+    Display Product Serial Number: ...
     Display Product Name: 'SE2717H/HX'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0xcd
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac a0 d0 53 54 4a 30 '............STJ0'
+  20 1c 01 03 0e 3c 22 78 ea cd 25 a3 57 4b 9f 27 ' ....<"x..%.WK.''
+  0d 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 01 01 '.PT.K.qO........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 ff 00 4b 59 4b 'E.VP!........KYK'
+  4d 44 38 38 38 30 4a 54 53 0a 00 00 00 fc 00 53 'MD8880JTS......S'
+  45 32 37 31 37 48 2f 48 58 0a 20 20 00 00 00 fd 'E2717H/HX.  ....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 cd '.8L.S...      ..'
+Checksum: 0xcd
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

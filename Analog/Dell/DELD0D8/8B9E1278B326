@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010acd8d042443731
-281c01030e351e78ea0565a756529c27
-0f5054a54b00714f8180a9c0d1c00101
-010101010101023a801871382d40582c
-45000f282100001e000000ff00335353
-47504d320a2020202020000000fc0044
-454c4c205032343139480a20000000fd
-00384c1e5311000a202020202020006a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac d8 d0 42 44 37 31
+28 1c 01 03 0e 35 1e 78 ea 05 65 a7 56 52 9c 27
+0f 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 ff 00 33 53 53
+47 50 4d 32 0a 20 20 20 20 20 00 00 00 fc 00 44
+45 4c 4c 20 50 32 34 31 39 48 0a 20 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 6a
 
 00 ff ff ff ff ff ff 00 10 ac d8 d0 42 44 37 31
 28 1c 01 03 0e 35 1e 78 ea 05 65 a7 56 52 9c 27
@@ -27,11 +25,11 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 53464
-    Serial Number: 825705538
+    Serial Number: ...
     Made in: week 40 of 2018
   Basic Display Parameters & Features:
     Analog display
-    Input voltage level: 0.7/0.3 V
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
     Blank level equals black level
     Sync: Separate Composite SyncOnGreen
     Maximum image size: 53 cm x 30 cm
@@ -62,8 +60,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '3SSGPM2'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL P2419H'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x6a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac d8 d0 42 44 37 31 '............BD71'
+  28 1c 01 03 0e 35 1e 78 ea 05 65 a7 56 52 9c 27 '(....5.x..e.VR.''
+  0f 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 01 01 '.PT.K.qO........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 ff 00 33 53 53 'E..(!........3SS'
+  47 50 4d 32 0a 20 20 20 20 20 00 00 00 fc 00 44 'GPM2.     .....D'
+  45 4c 4c 20 50 32 34 31 39 48 0a 20 00 00 00 fd 'ELL P2419H. ....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 6a '.8L.S...      .j'
+Checksum: 0x6a
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac15d156593130
-2d1f01030e3c2278ea7865a45550a027
-0e5054a54b00714f8180a9c0d1c00101
-010101010101023a801871382d40582c
-4500544f2100001e000000ff0044464a
-56304b330a2020202020000000fc0044
-454c4c20534532373232480a000000fd
-00384b1e530f000a2020202020200010
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 15 d1 56 59 31 30
+2d 1f 01 03 0e 3c 22 78 ea 78 65 a4 55 50 a0 27
+0e 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 54 4f 21 00 00 1e 00 00 00 ff 00 44 46 4a
+56 30 4b 33 0a 20 20 20 20 20 00 00 00 fc 00 44
+45 4c 4c 20 53 45 32 37 32 32 48 0a 00 00 00 fd
+00 38 4b 1e 53 0f 00 0a 20 20 20 20 20 20 00 10
 
 00 ff ff ff ff ff ff 00 10 ac 15 d1 56 59 31 30
 2d 1f 01 03 0e 3c 22 78 ea 78 65 a4 55 50 a0 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 53525
-    Serial Number: 808540502
+    Serial Number: ...
     Made in: week 45 of 2021
   Basic Display Parameters & Features:
     Analog display
@@ -62,8 +60,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (596 mm x 335 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'DFJV0K3'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL SE2722H'
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 150 MHz
 Checksum: 0x10
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 15 d1 56 59 31 30 '............VY10'
+  2d 1f 01 03 0e 3c 22 78 ea 78 65 a4 55 50 a0 27 '-....<"x.xe.UP.''
+  0e 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 01 01 '.PT.K.qO........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 54 4f 21 00 00 1e 00 00 00 ff 00 44 46 4a 'E.TO!........DFJ'
+  56 30 4b 33 0a 20 20 20 20 20 00 00 00 fc 00 44 'V0K3.     .....D'
+  45 4c 4c 20 53 45 32 37 32 32 48 0a 00 00 00 fd 'ELL SE2722H.....'
+  00 38 4b 1e 53 0f 00 0a 20 20 20 20 20 20 00 10 '.8K.S...      ..'
+Checksum: 0x10
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
