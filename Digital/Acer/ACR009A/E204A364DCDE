@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004729a00ac0d7000
-07140104a5331d78e26085a6564a9c25
-125054b30c008180714f81009500950f
-d1c001010101023a801871382d40582c
-4500fe1f1100001a000000fc00583233
-33480a20202020202020000000fd0038
-4c1f5312000a202020202020000000ff
-004c464d3043303231343032310a0050
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 9a 00 ac 0d 70 00
+07 14 01 04 a5 33 1d 78 e2 60 85 a6 56 4a 9c 25
+12 50 54 b3 0c 00 81 80 71 4f 81 00 95 00 95 0f
+d1 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fe 1f 11 00 00 1a 00 00 00 fc 00 58 32 33
+33 48 0a 20 20 20 20 20 20 20 00 00 00 fd 00 38
+4c 1f 53 12 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 4c 46 4d 30 43 30 32 31 34 30 32 31 0a 00 50
 
 00 ff ff ff ff ff ff 00 04 72 9a 00 ac 0d 70 00
 07 14 01 04 a5 33 1d 78 e2 60 85 a6 56 4a 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 154
-    Serial Number: 7343532
+    Serial Number: ...
     Made in: week 7 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -65,5 +63,37 @@ Block 0, Base EDID:
     Display Product Name: 'X233H'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 180 MHz
-    Display Product Serial Number: 'LFM0C0214021'
+    Display Product Serial Number: ...
 Checksum: 0x50
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 9a 00 ac 0d 70 00 '.........r....p.'
+  07 14 01 04 a5 33 1d 78 e2 60 85 a6 56 4a 9c 25 '.....3.x.`..VJ.%'
+  12 50 54 b3 0c 00 81 80 71 4f 81 00 95 00 95 0f '.PT.....qO......'
+  d1 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fe 1f 11 00 00 1a 00 00 00 fc 00 58 32 33 'E............X23'
+  33 48 0a 20 20 20 20 20 20 20 00 00 00 fd 00 38 '3H.       .....8'
+  4c 1f 53 12 00 0a 20 20 20 20 20 20 00 00 00 ff 'L.S...      ....'
+  00 4c 46 4d 30 43 30 32 31 34 30 32 31 0a 00 50 '.LFM0C0214021..P'
+Checksum: 0x50
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

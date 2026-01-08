@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000472c50209251123
-1f160103803420782af8c5a554509f26
-125054bfef80714f8180814081c08100
-b30001010101283c80a070b023403020
-360006442100001a000000fd00384b1e
-5312000a202020202020000000ff004c
-56364545303034343233350a000000fc
-0041636572204232343350574c0a00f3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 c5 02 09 25 11 23
+1f 16 01 03 80 34 20 78 2a f8 c5 a5 54 50 9f 26
+12 50 54 bf ef 80 71 4f 81 80 81 40 81 c0 81 00
+b3 00 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 06 44 21 00 00 1a 00 00 00 fd 00 38 4b 1e
+53 12 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c
+56 36 45 45 30 30 34 34 32 33 35 0a 00 00 00 fc
+00 41 63 65 72 20 42 32 34 33 50 57 4c 0a 00 f3
 
 00 ff ff ff ff ff ff 00 04 72 c5 02 09 25 11 23
 1f 16 01 03 80 34 20 78 2a f8 c5 a5 54 50 9f 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 709
-    Serial Number: 588326153
+    Serial Number: ...
     Made in: week 31 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -70,8 +68,30 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   6 Vback   26 Vpol N
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 180 MHz
-    Display Product Serial Number: 'LV6EE0044235'
+    Display Product Serial Number: ...
     Display Product Name: 'Acer B243PWL'
 Checksum: 0xf3
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 c5 02 09 25 11 23 '.........r...%.#'
+  1f 16 01 03 80 34 20 78 2a f8 c5 a5 54 50 9f 26 '.....4 x*...TP.&'
+  12 50 54 bf ef 80 71 4f 81 80 81 40 81 c0 81 00 '.PT...qO...@....'
+  b3 00 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
+  36 00 06 44 21 00 00 1a 00 00 00 fd 00 38 4b 1e '6..D!........8K.'
+  53 12 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c 'S...      .....L'
+  56 36 45 45 30 30 34 34 32 33 35 0a 00 00 00 fc 'V6EE0044235.....'
+  00 41 63 65 72 20 42 32 34 33 50 57 4c 0a 00 f3 '.Acer B243PWL...'
+Checksum: 0xf3
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

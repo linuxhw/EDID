@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00047269018aac4714
-2c150103802f1e78eade95a3544c9926
-0f5054bfee900101714f814081c09500
-01018100010121399030621a274068b0
-3600da2811000019000000fd00384d1f
-5411000a202020202020000000ff004c
-4d483043303034383030340a000000fc
-0042323233574c0a2020202020200098
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 69 01 8a ac 47 14
+2c 15 01 03 80 2f 1e 78 ea de 95 a3 54 4c 99 26
+0f 50 54 bf ee 90 01 01 71 4f 81 40 81 c0 95 00
+01 01 81 00 01 01 21 39 90 30 62 1a 27 40 68 b0
+36 00 da 28 11 00 00 19 00 00 00 fd 00 38 4d 1f
+54 11 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c
+4d 48 30 43 30 30 34 38 30 30 34 0a 00 00 00 fc
+00 42 32 32 33 57 4c 0a 20 20 20 20 20 20 00 98
 
 00 ff ff ff ff ff ff 00 04 72 69 01 8a ac 47 14
 2c 15 01 03 80 2f 1e 78 ea de 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 361
-    Serial Number: 340241546
+    Serial Number: ...
     Made in: week 44 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -68,6 +66,35 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   6 Vback   30 Vpol N
     Display Range Limits:
       Monitor ranges (GTF): 56-77 Hz V, 31-84 kHz H, max dotclock 170 MHz
-    Display Product Serial Number: 'LMH0C0048004'
+    Display Product Serial Number: ...
     Display Product Name: 'B223WL'
 Checksum: 0x98
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 69 01 8a ac 47 14 '.........ri...G.'
+  2c 15 01 03 80 2f 1e 78 ea de 95 a3 54 4c 99 26 ',..../.x....TL.&'
+  0f 50 54 bf ee 90 01 01 71 4f 81 40 81 c0 95 00 '.PT.....qO.@....'
+  01 01 81 00 01 01 21 39 90 30 62 1a 27 40 68 b0 '......!9.0b.'@h.'
+  36 00 da 28 11 00 00 19 00 00 00 fd 00 38 4d 1f '6..(.........8M.'
+  54 11 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c 'T...      .....L'
+  4d 48 30 43 30 30 34 38 30 30 34 0a 00 00 00 fc 'MH0C0048004.....'
+  00 42 32 32 33 57 4c 0a 20 20 20 20 20 20 00 98 '.B223WL.      ..'
+Checksum: 0x98
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x3a.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

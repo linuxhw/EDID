@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004720301f66c4004
-2c140103802c1978eab815a6554b9b25
-135054bfee80714f81c0810001010101
-0101010101012f2640a060841a303020
-3500bbf91000001a000000fd00384b1f
-530f000a202020202020000000fc0041
-6365722048323033480a2020000000ff
-004c4a333057303036343333370a00e1
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 03 01 f6 6c 40 04
+2c 14 01 03 80 2c 19 78 ea b8 15 a6 55 4b 9b 25
+13 50 54 bf ee 80 71 4f 81 c0 81 00 01 01 01 01
+01 01 01 01 01 01 2f 26 40 a0 60 84 1a 30 30 20
+35 00 bb f9 10 00 00 1a 00 00 00 fd 00 38 4b 1f
+53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+63 65 72 20 48 32 30 33 48 0a 20 20 00 00 00 ff
+00 4c 4a 33 30 57 30 30 36 34 33 33 37 0a 00 e1
 
 00 ff ff ff ff ff ff 00 04 72 03 01 f6 6c 40 04
 2c 14 01 03 80 2c 19 78 ea b8 15 a6 55 4b 9b 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 259
-    Serial Number: 71331062
+    Serial Number: ...
     Made in: week 44 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -67,7 +65,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 31-83 kHz H, max dotclock 150 MHz
     Display Product Name: 'Acer H203H'
-    Display Product Serial Number: 'LJ30W0064337'
+    Display Product Serial Number: ...
 Checksum: 0xe1
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 03 01 f6 6c 40 04 '.........r...l@.'
+  2c 14 01 03 80 2c 19 78 ea b8 15 a6 55 4b 9b 25 ',....,.x....UK.%'
+  13 50 54 bf ee 80 71 4f 81 c0 81 00 01 01 01 01 '.PT...qO........'
+  01 01 01 01 01 01 2f 26 40 a0 60 84 1a 30 30 20 '....../&@.`..00 '
+  35 00 bb f9 10 00 00 1a 00 00 00 fd 00 38 4b 1f '5............8K.'
+  53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'S...      .....A'
+  63 65 72 20 48 32 30 33 48 0a 20 20 00 00 00 ff 'cer H203H.  ....'
+  00 4c 4a 33 30 57 30 30 36 34 33 33 37 0a 00 e1 '.LJ30W0064337...'
+Checksum: 0xe1
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

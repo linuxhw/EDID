@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004720803a8062041
-0c18010380331d782add45a3554fa027
-125054b30c00714f81c0810081809500
-b300d1c00101023a801871382d40582c
-4500fe1f1100001e000000fd00314b1e
-5e11000a202020202020000000fc0041
-6365722053323331484c0a20000000ff
-004c574b4141303031343334300a00f7
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 08 03 a8 06 20 41
+0c 18 01 03 80 33 1d 78 2a dd 45 a3 55 4f a0 27
+12 50 54 b3 0c 00 71 4f 81 c0 81 00 81 80 95 00
+b3 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fe 1f 11 00 00 1e 00 00 00 fd 00 31 4b 1e
+5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+63 65 72 20 53 32 33 31 48 4c 0a 20 00 00 00 ff
+00 4c 57 4b 41 41 30 30 31 34 33 34 30 0a 00 f7
 
 00 ff ff ff ff ff ff 00 04 72 08 03 a8 06 20 41
 0c 18 01 03 80 33 1d 78 2a dd 45 a3 55 4f a0 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 776
-    Serial Number: 1092617896
+    Serial Number: ...
     Made in: week 12 of 2014
   Basic Display Parameters & Features:
     Digital display
@@ -64,7 +62,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 49-75 Hz V, 30-94 kHz H, max dotclock 170 MHz
     Display Product Name: 'Acer S231HL'
-    Display Product Serial Number: 'LWKAA0014340'
+    Display Product Serial Number: ...
 Checksum: 0xf7
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 08 03 a8 06 20 41 '.........r.... A'
+  0c 18 01 03 80 33 1d 78 2a dd 45 a3 55 4f a0 27 '.....3.x*.E.UO.''
+  12 50 54 b3 0c 00 71 4f 81 c0 81 00 81 80 95 00 '.PT...qO........'
+  b3 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fe 1f 11 00 00 1e 00 00 00 fd 00 31 4b 1e 'E............1K.'
+  5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 '^...      .....A'
+  63 65 72 20 53 32 33 31 48 4c 0a 20 00 00 00 ff 'cer S231HL. ....'
+  00 4c 57 4b 41 41 30 30 31 34 33 34 30 0a 00 f7 '.LWKAA0014340...'
+Checksum: 0xf7
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

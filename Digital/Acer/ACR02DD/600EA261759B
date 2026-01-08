@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000472dd02fd651031
-0b170103802917782addf5a357509d27
-105054bfee0081c08100010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000fd00374b1e
-500e000a202020202020000000ff004c
-5632534a303031343230340a000000fc
-0041636572205631393548514c0a0086
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 dd 02 fd 65 10 31
+0b 17 01 03 80 29 17 78 2a dd f5 a3 57 50 9d 27
+10 50 54 bf ee 00 81 c0 81 00 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 fd 00 37 4b 1e
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c
+56 32 53 4a 30 30 31 34 32 30 34 0a 00 00 00 fc
+00 41 63 65 72 20 56 31 39 35 48 51 4c 0a 00 86
 
 00 ff ff ff ff ff ff 00 04 72 dd 02 fd 65 10 31
 0b 17 01 03 80 29 17 78 2a dd f5 a3 57 50 9d 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 733
-    Serial Number: 823158269
+    Serial Number: ...
     Made in: week 11 of 2013
   Basic Display Parameters & Features:
     Digital display
@@ -64,6 +62,30 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   3 Vback   24 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-80 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: 'LV2SJ0014204'
+    Display Product Serial Number: ...
     Display Product Name: 'Acer V195HQL'
 Checksum: 0x86
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 dd 02 fd 65 10 31 '.........r...e.1'
+  0b 17 01 03 80 29 17 78 2a dd f5 a3 57 50 9d 27 '.....).x*...WP.''
+  10 50 54 bf ee 00 81 c0 81 00 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 fd 00 37 4b 1e '3............7K.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c 'P...      .....L'
+  56 32 53 4a 30 30 31 34 32 30 34 0a 00 00 00 fc 'V2SJ0014204.....'
+  00 41 63 65 72 20 56 31 39 35 48 51 4c 0a 00 86 '.Acer V195HQL...'
+Checksum: 0x86
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

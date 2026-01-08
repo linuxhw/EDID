@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00070d682701000000
-291c0103803c22782e6150a65650a026
-0d5054afeb80d1c081c081008180a9c0
-b30001010101565e00a0a0a029503020
-350000b03100001a000000ff004e410a
-20202020202020202020000000fd0028
-4c0f5f21010a202020202020000000fc
-0041584d2d323736380a2020202000f3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 07 0d 68 27 01 00 00 00
+29 1c 01 03 80 3c 22 78 2e 61 50 a6 56 50 a0 26
+0d 50 54 af eb 80 d1 c0 81 c0 81 00 81 80 a9 c0
+b3 00 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 00 b0 31 00 00 1a 00 00 00 ff 00 4e 41 0a
+20 20 20 20 20 20 20 20 20 20 00 00 00 fd 00 28
+4c 0f 5f 21 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 58 4d 2d 32 37 36 38 0a 20 20 20 20 00 f3
 
 00 ff ff ff ff ff ff 00 07 0d 68 27 01 00 00 00
 29 1c 01 03 80 3c 22 78 2e 61 50 a6 56 50 a0 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AXM
     Model: 10088
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 41 of 2018
   Basic Display Parameters & Features:
     Digital display
@@ -67,8 +65,37 @@ Block 0, Base EDID:
     DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (768 mm x 432 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
-    Display Product Serial Number: 'NA'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (Bare Limits): 40-76 Hz V, 15-95 kHz H, max dotclock 330 MHz
     Display Product Name: 'AXM-2768'
 Checksum: 0xf3
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 07 0d 68 27 01 00 00 00 '..........h'....'
+  29 1c 01 03 80 3c 22 78 2e 61 50 a6 56 50 a0 26 ')....<"x.aP.VP.&'
+  0d 50 54 af eb 80 d1 c0 81 c0 81 00 81 80 a9 c0 '.PT.............'
+  b3 00 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
+  35 00 00 b0 31 00 00 1a 00 00 00 ff 00 4e 41 0a '5...1........NA.'
+  20 20 20 20 20 20 20 20 20 20 00 00 00 fd 00 28 '          .....('
+  4c 0f 5f 21 01 0a 20 20 20 20 20 20 00 00 00 fc 'L._!..      ....'
+  00 41 58 4d 2d 32 37 36 38 0a 20 20 20 20 00 f3 '.AXM-2768.    ..'
+Checksum: 0xf3
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 768x432 mm vs display size 600x340 mm.
+  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 768x432mm, which is larger than the display size 600.0x340.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

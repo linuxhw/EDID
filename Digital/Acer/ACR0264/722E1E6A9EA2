@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00047264022d2a7011
-11150103803c22782af835a4564f9d27
-115054b30c00714f810081809500d1c0
-010101010101023a801871382d40582c
-450056502100001e000000fd00314b1e
-5e11000a202020202020000000fc0041
-6365722048323734484c0a20000000ff
-004c54413057303038343331300a0019
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 64 02 2d 2a 70 11
+11 15 01 03 80 3c 22 78 2a f8 35 a4 56 4f 9d 27
+11 50 54 b3 0c 00 71 4f 81 00 81 80 95 00 d1 c0
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 fd 00 31 4b 1e
+5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+63 65 72 20 48 32 37 34 48 4c 0a 20 00 00 00 ff
+00 4c 54 41 30 57 30 30 38 34 33 31 30 0a 00 19
 
 00 ff ff ff ff ff ff 00 04 72 64 02 2d 2a 70 11
 11 15 01 03 80 3c 22 78 2a f8 35 a4 56 4f 9d 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 612
-    Serial Number: 292563501
+    Serial Number: ...
     Made in: week 17 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -62,5 +60,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 49-75 Hz V, 30-94 kHz H, max dotclock 170 MHz
     Display Product Name: 'Acer H274HL'
-    Display Product Serial Number: 'LTA0W0084310'
+    Display Product Serial Number: ...
 Checksum: 0x19
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 64 02 2d 2a 70 11 '.........rd.-*p.'
+  11 15 01 03 80 3c 22 78 2a f8 35 a4 56 4f 9d 27 '.....<"x*.5.VO.''
+  11 50 54 b3 0c 00 71 4f 81 00 81 80 95 00 d1 c0 '.PT...qO........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 fd 00 31 4b 1e 'E.VP!........1K.'
+  5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 '^...      .....A'
+  63 65 72 20 48 32 37 34 48 4c 0a 20 00 00 00 ff 'cer H274HL. ....'
+  00 4c 54 41 30 57 30 30 38 34 33 31 30 0a 00 19 '.LTA0W0084310...'
+Checksum: 0x19
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

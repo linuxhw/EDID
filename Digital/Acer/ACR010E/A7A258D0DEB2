@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004720e01072f1021
-0b160104a5291a7822e415a5564a9825
-115054bfee80714f81c0810001010101
-0101010101019a29a0d0518422305098
-360098ff1000001e000000fd00374c1e
-510e000a202020202020000000fc0041
-6365722056313933570a2020000000ff
-004c4a453057313638343330370a0002
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 0e 01 07 2f 10 21
+0b 16 01 04 a5 29 1a 78 22 e4 15 a5 56 4a 98 25
+11 50 54 bf ee 80 71 4f 81 c0 81 00 01 01 01 01
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1e 00 00 00 fd 00 37 4c 1e
+51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+63 65 72 20 56 31 39 33 57 0a 20 20 00 00 00 ff
+00 4c 4a 45 30 57 31 36 38 34 33 30 37 0a 00 02
 
 00 ff ff ff ff ff ff 00 04 72 0e 01 07 2f 10 21
 0b 16 01 04 a5 29 1a 78 22 e4 15 a5 56 4a 98 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 270
-    Serial Number: 554708743
+    Serial Number: ...
     Made in: week 11 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -69,5 +67,37 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 30-81 kHz H, max dotclock 140 MHz
     Display Product Name: 'Acer V193W'
-    Display Product Serial Number: 'LJE0W1684307'
+    Display Product Serial Number: ...
 Checksum: 0x02
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 0e 01 07 2f 10 21 '.........r.../.!'
+  0b 16 01 04 a5 29 1a 78 22 e4 15 a5 56 4a 98 25 '.....).x"...VJ.%'
+  11 50 54 bf ee 80 71 4f 81 c0 81 00 01 01 01 01 '.PT...qO........'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 98 ff 10 00 00 1e 00 00 00 fd 00 37 4c 1e '6............7L.'
+  51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'Q...      .....A'
+  63 65 72 20 56 31 39 33 57 0a 20 20 00 00 00 ff 'cer V193W.  ....'
+  00 4c 4a 45 30 57 31 36 38 34 33 30 37 0a 00 02 '.LJE0W1684307...'
+Checksum: 0x02
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x2f.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

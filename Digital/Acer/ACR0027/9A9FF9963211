@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004722700874b9013
-27150104a52f1e7822c720a455499927
-135054bfef80714f8180950f9500a940
-b3008100010121399030621a274018b0
-3640d9281100001c000000ff004c4333
-3038313437343230410a000000fd0038
-4c1e5311000a202020202020000000fc
-00416365722056323233570a2020003f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 27 00 87 4b 90 13
+27 15 01 04 a5 2f 1e 78 22 c7 20 a4 55 49 99 27
+13 50 54 bf ef 80 71 4f 81 80 95 0f 95 00 a9 40
+b3 00 81 00 01 01 21 39 90 30 62 1a 27 40 18 b0
+36 40 d9 28 11 00 00 1c 00 00 00 ff 00 4c 43 33
+30 38 31 34 37 34 32 30 41 0a 00 00 00 fd 00 38
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 63 65 72 20 56 32 32 33 57 0a 20 20 00 3f
 
 00 ff ff ff ff ff ff 00 04 72 27 00 87 4b 90 13
 27 15 01 04 a5 2f 1e 78 22 c7 20 a4 55 49 99 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 39
-    Serial Number: 328223623
+    Serial Number: ...
     Made in: week 39 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -71,8 +69,40 @@ Block 0, Base EDID:
     DTD 1:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz (473 mm x 296 mm)
                  Hfront  280 Hsync 176 Hback  104 Hpol N
                  Vfront    3 Vsync   6 Vback   30 Vpol P
-    Display Product Serial Number: 'LC308147420A'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'Acer V223W'
 Checksum: 0x3f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 27 00 87 4b 90 13 '.........r'..K..'
+  27 15 01 04 a5 2f 1e 78 22 c7 20 a4 55 49 99 27 ''..../.x". .UI.''
+  13 50 54 bf ef 80 71 4f 81 80 95 0f 95 00 a9 40 '.PT...qO.......@'
+  b3 00 81 00 01 01 21 39 90 30 62 1a 27 40 18 b0 '......!9.0b.'@..'
+  36 40 d9 28 11 00 00 1c 00 00 00 ff 00 4c 43 33 '6@.(.........LC3'
+  30 38 31 34 37 34 32 30 41 0a 00 00 00 fd 00 38 '08147420A......8'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 41 63 65 72 20 56 32 32 33 57 0a 20 20 00 3f '.Acer V223W.  .?'
+Checksum: 0x3f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x3a.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

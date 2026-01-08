@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff000721040120062320
-1921010485070c78aab065a656539d28
-0c505400000001010101010101010101
-0101010101013b34384040801c701a04
-840079440000001e2a1ad08c20002850
-4008a00179440000001e2e1358a4202a
-18404408c40079440000001e000000fc
-004159414e454f2d4f4c45440a2001e3
-02031030d05020002e50200aa00171b5
-9e16008c30003840300aa80179440000
-001e8b0f58a020205830381084027944
-0000001e000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000063
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 07 21 04 01 20 06 23 20
+19 21 01 04 85 07 0c 78 aa b0 65 a6 56 53 9d 28
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3b 34 38 40 40 80 1c 70 1a 04
+84 00 79 44 00 00 00 1e 2a 1a d0 8c 20 00 28 50
+40 08 a0 01 79 44 00 00 00 1e 2e 13 58 a4 20 2a
+18 40 44 08 c4 00 79 44 00 00 00 1e 00 00 00 fc
+00 41 59 41 4e 45 4f 2d 4f 4c 45 44 0a 20 01 e3
+
+02 03 10 30 d0 50 20 00 2e 50 20 0a a0 01 71 b5
+9e 16 00 8c 30 00 38 40 30 0a a8 01 79 44 00 00
+00 1e 8b 0f 58 a0 20 20 58 30 38 10 84 02 79 44
+00 00 00 1e 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 63
 
 00 ff ff ff ff ff ff 00 07 21 04 01 20 06 23 20
 19 21 01 04 85 07 0c 78 aa b0 65 a6 56 53 9d 28
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AYA
     Model: 260
-    Serial Number: 539166240
+    Serial Number: ...
     Made in: week 25 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -106,3 +105,118 @@ Block 1, CTA-861 Extension Block:
                  Hfront   56 Hsync  16 Hback   88 Hpol P
                  Vfront    8 Vsync  36 Vback   44 Vpol P
 Checksum: 0x63  Unused space in Extension Block: 75 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 07 21 04 01 20 06 23 20 '.........!.. .# '
+  19 21 01 04 85 07 0c 78 aa b0 65 a6 56 53 9d 28 '.!.....x..e.VS.('
+  0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 3b 34 38 40 40 80 1c 70 1a 04 '......;48@@..p..'
+  84 00 79 44 00 00 00 1e 2a 1a d0 8c 20 00 28 50 '..yD....*... .(P'
+  40 08 a0 01 79 44 00 00 00 1e 2e 13 58 a4 20 2a '@...yD......X. *'
+  18 40 44 08 c4 00 79 44 00 00 00 1e 00 00 00 fc '.@D...yD........'
+  00 41 59 41 4e 45 4f 2d 4f 4c 45 44 0a 20 01 e3 '.AYANEO-OLED. ..'
+Checksum: 0xe3
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Format Data Block:
+    NTSC fractional frame rates are preferred
+    RID 16@24p:  5120x2880   24.000000 Hz  64:27    88.200 kHz    465.696000 MHz
+    RID 16@30p:  5120x2880   30.000000 Hz  64:27    88.200 kHz    465.696000 MHz
+    RID 16@60p:  5120x2880   60.000000 Hz  64:27   178.800 kHz    951.216000 MHz
+    RID 10@30p:  5120x1440   30.000000 Hz  32:9     44.400 kHz    236.208000 MHz
+    RID 10@60p:  5120x1440   60.000000 Hz  32:9     90.000 kHz    472.320000 MHz
+    RID 1@30p:  1280x720    30.000000 Hz  16:9     22.200 kHz     35.520000 MHz
+    RID 1@60p:  1280x720    60.000000 Hz  16:9     45.600 kHz     67.488000 MHz
+    RID 22@30p: 15360x4320   30.000000 Hz  32:9    132.000 kHz   2052.864000 MHz
+    RID 22@60p: 15360x4320   60.000000 Hz  32:9    267.600 kHz   4153.152000 MHz
+    RID 12@25p:  3840x2160   25.000000 Hz  64:27    66.000 kHz    261.888000 MHz
+    RID 12@30p:  3840x2160   30.000000 Hz  64:27    66.000 kHz    261.888000 MHz
+    RID 12@50p:  3840x2160   50.000000 Hz  64:27   134.400 kHz    532.224000 MHz
+    RID 12@60p:  3840x2160   60.000000 Hz  64:27   134.400 kHz    532.224000 MHz
+  Detailed Timing Descriptors:
+    DTD 6:   768x1024   59.043074 Hz   3:4     63.767 kHz     57.900000 MHz (121 mm x 68 mm)
+                 Hfront   48 Hsync  10 Hback   82 Hpol P
+                 Vfront   10 Vsync  24 Vback   22 Vpol P
+    DTD 7:   600x800    58.958630 Hz   3:4     52.355 kHz     39.790000 MHz (121 mm x 68 mm)
+                 Hfront   56 Hsync  16 Hback   88 Hpol P
+                 Vfront    8 Vsync  36 Vback   44 Vpol P
+Checksum: 0x63  Unused space in Extension Block: 75 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (7x12 is smaller than 10x10 cm).
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 121x68 mm vs display size 70x120 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 121x68 mm vs display size 70x120 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 121x68 mm vs display size 70x120 mm.
+Block 1, CTA-861 Extension Block:
+  Video Format Data Block: Unknown RID 32.
+  Video Format Data Block: Unknown RID 0.
+  Video Format Data Block: Unknown RID 46.
+  Video Format Data Block: Unknown RID 32.
+  Video Format Data Block: Unknown RID 32.
+  Video Format Data Block: RID 1@30p not allowed since it maps to VIC 62.
+  Video Format Data Block: RID 1@60p not allowed since it maps to VIC 4.
+  Video Format Data Block: Unknown RID 49.
+  Video Format Data Block: Unknown RID 53.
+  Video Format Data Block: Unknown RID 30.
+  Video Format Data Block: Unknown RID 0.
+  Video Format Data Block: RID 12@25p not allowed since it maps to VIC 104.
+  Video Format Data Block: RID 12@30p not allowed since it maps to VIC 105.
+  Video Format Data Block: RID 12@50p not allowed since it maps to VIC 106.
+  Video Format Data Block: RID 12@60p not allowed since it maps to VIC 107.
+  Video Format Data Block: Unknown RID 48.
+  Offset is 16, but should be 21.
+  Detailed Timing Descriptor #4: Mismatch of image size 121x68 mm vs display size 70x120 mm.
+  Detailed Timing Descriptor #5: Mismatch of image size 121x68 mm vs display size 70x120 mm.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Format Data Block: Unknown RID 32.
+  Video Format Data Block: Unknown RID 0.
+  Video Format Data Block: Unknown RID 46.
+  Video Format Data Block: Unknown RID 32.
+  Video Format Data Block: Unknown RID 32.
+  Video Format Data Block: RID 1@30p not allowed since it maps to VIC 62.
+  Video Format Data Block: RID 1@60p not allowed since it maps to VIC 4.
+  Video Format Data Block: Unknown RID 49.
+  Video Format Data Block: Unknown RID 53.
+  Video Format Data Block: Unknown RID 30.
+  Video Format Data Block: Unknown RID 0.
+  Video Format Data Block: RID 12@25p not allowed since it maps to VIC 104.
+  Video Format Data Block: RID 12@30p not allowed since it maps to VIC 105.
+  Video Format Data Block: RID 12@50p not allowed since it maps to VIC 106.
+  Video Format Data Block: RID 12@60p not allowed since it maps to VIC 107.
+  Video Format Data Block: Unknown RID 48.
+  Offset is 16, but should be 21.
+  Detailed Timing Descriptor #6: Mismatch of image size 121x68 mm vs display size 70x120 mm.
+  Detailed Timing Descriptor #7: Mismatch of image size 121x68 mm vs display size 70x120 mm.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 121x68mm, which is larger than the display size 70.0x120.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

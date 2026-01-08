@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004721000fa073080
-03120103e8291a782e4fa5a459499924
-125054bfee0081808140714f950081c0
-71409040a9409a29a0d0518422305098
-360098ff1000001c000000fd00384c1e
-5210000a202020202020000000fc0041
-6365722050313931570a2020000000ff
-004c41593039303131363332300a00eb
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 10 00 fa 07 30 80
+03 12 01 03 e8 29 1a 78 2e 4f a5 a4 59 49 99 24
+12 50 54 bf ee 00 81 80 81 40 71 4f 95 00 81 c0
+71 40 90 40 a9 40 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 fd 00 38 4c 1e
+52 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+63 65 72 20 50 31 39 31 57 0a 20 20 00 00 00 ff
+00 4c 41 59 30 39 30 31 31 36 33 32 30 0a 00 eb
 
 00 ff ff ff ff ff ff 00 04 72 10 00 fa 07 30 80
 03 12 01 03 e8 29 1a 78 2e 4f a5 a4 59 49 99 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 16
-    Serial Number: 2150631418
+    Serial Number: ...
     Made in: week 3 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -72,5 +70,39 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-82 kHz H, max dotclock 160 MHz
     Display Product Name: 'Acer P191W'
-    Display Product Serial Number: 'LAY090116320'
+    Display Product Serial Number: ...
 Checksum: 0xeb
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 10 00 fa 07 30 80 '.........r....0.'
+  03 12 01 03 e8 29 1a 78 2e 4f a5 a4 59 49 99 24 '.....).x.O..YI.$'
+  12 50 54 bf ee 00 81 80 81 40 71 4f 95 00 81 c0 '.PT......@qO....'
+  71 40 90 40 a9 40 9a 29 a0 d0 51 84 22 30 50 98 'q@.@.@.)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 00 00 00 fd 00 38 4c 1e '6............8L.'
+  52 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'R...      .....A'
+  63 65 72 20 50 31 39 31 57 0a 20 20 00 00 00 ff 'cer P191W.  ....'
+  00 4c 41 59 30 39 30 31 31 36 33 32 30 0a 00 eb '.LAY090116320...'
+Checksum: 0xeb
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 162.000 MHz (Monitor: 160.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x68.
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

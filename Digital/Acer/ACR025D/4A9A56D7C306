@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004725d027c085022
-1916010380301b78caee95a3544c9926
-0f5054bfef80714f818081c081008bc0
-9500b300d1c0023a801871382d40582c
-4500dd0c1100001e000000fd00384c1f
-5311000a202020202020000000fc0056
-3232334851560a2020202020000000ff
-004c53543044303037383531320a00fc
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 5d 02 7c 08 50 22
+19 16 01 03 80 30 1b 78 ca ee 95 a3 54 4c 99 26
+0f 50 54 bf ef 80 71 4f 81 80 81 c0 81 00 8b c0
+95 00 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 38 4c 1f
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+32 32 33 48 51 56 0a 20 20 20 20 20 00 00 00 ff
+00 4c 53 54 30 44 30 30 37 38 35 31 32 0a 00 fc
 
 00 ff ff ff ff ff ff 00 04 72 5d 02 7c 08 50 22
 19 16 01 03 80 30 1b 78 ca ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 605
-    Serial Number: 575670396
+    Serial Number: ...
     Made in: week 25 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -73,5 +71,34 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'V223HQV'
-    Display Product Serial Number: 'LST0D0078512'
+    Display Product Serial Number: ...
 Checksum: 0xfc
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 5d 02 7c 08 50 22 '.........r].|.P"'
+  19 16 01 03 80 30 1b 78 ca ee 95 a3 54 4c 99 26 '.....0.x....TL.&'
+  0f 50 54 bf ef 80 71 4f 81 80 81 c0 81 00 8b c0 '.PT...qO........'
+  95 00 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 38 4c 1f 'E............8L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56 'S...      .....V'
+  32 32 33 48 51 56 0a 20 20 20 20 20 00 00 00 ff '223HQV.     ....'
+  00 4c 53 54 30 44 30 30 37 38 35 31 32 0a 00 fc '.LST0D0078512...'
+Checksum: 0xfc
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

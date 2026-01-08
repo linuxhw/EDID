@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000d12117570030000
-05170104a52b1d78e28042ac5130b425
-10505300000001010101010101010101
-010101010101391c56a0500017303020
-3a00064d2100001a841756a050001730
-30203a00064d2100001a000000fd0038
-4c1e5311000a202020202020000000fc
-00455432303430490a202020202000a6
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d 12 11 75 70 03 00 00
+05 17 01 04 a5 2b 1d 78 e2 80 42 ac 51 30 b4 25
+10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 39 1c 56 a0 50 00 17 30 30 20
+3a 00 06 4d 21 00 00 1a 84 17 56 a0 50 00 17 30
+30 20 3a 00 06 4d 21 00 00 1a 00 00 00 fd 00 38
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 45 54 32 30 34 30 49 0a 20 20 20 20 20 00 a6
 
 00 ff ff ff ff ff ff 00 0d 12 11 75 70 03 00 00
 05 17 01 04 a5 2b 1d 78 e2 80 42 ac 51 30 b4 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: CHR
     Model: 29969
-    Serial Number: 880
+    Serial Number: ...
     Made in: week 5 of 2013
   Basic Display Parameters & Features:
     Digital display
@@ -56,3 +54,40 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'ET2040I'
 Checksum: 0xa6
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d 12 11 75 70 03 00 00 '...........up...'
+  05 17 01 04 a5 2b 1d 78 e2 80 42 ac 51 30 b4 25 '.....+.x..B.Q0.%'
+  10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PS.............'
+  01 01 01 01 01 01 39 1c 56 a0 50 00 17 30 30 20 '......9.V.P..00 '
+  3a 00 06 4d 21 00 00 1a 84 17 56 a0 50 00 17 30 ':..M!.....V.P..0'
+  30 20 3a 00 06 4d 21 00 00 1a 00 00 00 fd 00 38 '0 :..M!........8'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 45 54 32 30 34 30 49 0a 20 20 20 20 20 00 a6 '.ET2040I.     ..'
+Checksum: 0xa6
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 49.873 - 59.856 Hz (Monitor: 56.000 - 76.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 518x333 mm vs display size 430x290 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 518x333 mm vs display size 430x290 mm.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 518x333mm, which is larger than the display size 430.0x290.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000472090063861092
-15130103802f1e782ac720a455499927
-135054bfef80714f8180950f9500a940
-b3000101010121399030621a274018b0
-3640d9281100001c000000ff004c4150
-3038303633343233340a000000fd0038
-4c1e5311000a202020202020000000fc
-00416365722058323233570a202000e8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 09 00 63 86 10 92
+15 13 01 03 80 2f 1e 78 2a c7 20 a4 55 49 99 27
+13 50 54 bf ef 80 71 4f 81 80 95 0f 95 00 a9 40
+b3 00 01 01 01 01 21 39 90 30 62 1a 27 40 18 b0
+36 40 d9 28 11 00 00 1c 00 00 00 ff 00 4c 41 50
+30 38 30 36 33 34 32 33 34 0a 00 00 00 fd 00 38
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 63 65 72 20 58 32 32 33 57 0a 20 20 00 e8
 
 00 ff ff ff ff ff ff 00 04 72 09 00 63 86 10 92
 15 13 01 03 80 2f 1e 78 2a c7 20 a4 55 49 99 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 9
-    Serial Number: 2450556515
+    Serial Number: ...
     Made in: week 21 of 2009
   Basic Display Parameters & Features:
     Digital display
@@ -68,8 +66,37 @@ Block 0, Base EDID:
     DTD 1:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz (473 mm x 296 mm)
                  Hfront  280 Hsync 176 Hback  104 Hpol N
                  Vfront    3 Vsync   6 Vback   30 Vpol P
-    Display Product Serial Number: 'LAP080634234'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'Acer X223W'
 Checksum: 0xe8
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 09 00 63 86 10 92 '.........r..c...'
+  15 13 01 03 80 2f 1e 78 2a c7 20 a4 55 49 99 27 '...../.x*. .UI.''
+  13 50 54 bf ef 80 71 4f 81 80 95 0f 95 00 a9 40 '.PT...qO.......@'
+  b3 00 01 01 01 01 21 39 90 30 62 1a 27 40 18 b0 '......!9.0b.'@..'
+  36 40 d9 28 11 00 00 1c 00 00 00 ff 00 4c 41 50 '6@.(.........LAP'
+  30 38 30 36 33 34 32 33 34 0a 00 00 00 fd 00 38 '080634234......8'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 41 63 65 72 20 58 32 32 33 57 0a 20 20 00 e8 '.Acer X223W.  ..'
+Checksum: 0xe8
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x3a.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

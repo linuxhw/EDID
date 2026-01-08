@@ -1,0 +1,84 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 91 f7 00 00 00 00
+00 1e 01 04 a5 1d 11 78 02 26 c5 a5 54 4a a2 27
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 08 37 80 88 70 38 3e 40 22 2a
+35 00 25 a5 10 00 00 1a 06 2c 80 88 70 38 3e 40
+22 2a 35 00 25 a5 10 00 00 1a 00 00 00 fe 00 32
+46 31 4d 57 80 42 31 33 33 48 41 4e 00 00 00 00
+00 02 41 23 9e 00 11 00 00 0a 01 0a 20 20 00 04
+
+00 ff ff ff ff ff ff 00 06 af 91 f7 00 00 00 00
+00 1e 01 04 a5 1d 11 78 02 26 c5 a5 54 4a a2 27
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 08 37 80 88 70 38 3e 40 22 2a
+35 00 25 a5 10 00 00 1a 06 2c 80 88 70 38 3e 40
+22 2a 35 00 25 a5 10 00 00 1a 00 00 00 fe 00 32
+46 31 4d 57 80 42 31 33 33 48 41 4e 00 00 00 00
+00 02 41 23 9e 00 11 00 00 0a 01 0a 20 20 00 04
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 63377
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6445, 0.3300
+    Green: 0.2900, 0.6347
+    Blue : 0.1552, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.001227 Hz  16:9     68.521 kHz    140.880000 MHz (293 mm x 165 mm)
+                 Hfront   34 Hsync  42 Hback   60 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD 2:  1920x1080   47.999278 Hz  16:9     54.815 kHz    112.700000 MHz (293 mm x 165 mm)
+                 Hfront   34 Hsync  42 Hback   60 Hpol P
+                 Vfront    3 Vsync   5 Vback   54 Vpol N
+    Alphanumeric Data String: '2F1MW'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 23 9e 00 11 00 00 0a 01 0a 20 20 '....A#........  '
+Checksum: 0x04
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 af 91 f7 00 00 00 00 '................'
+  00 1e 01 04 a5 1d 11 78 02 26 c5 a5 54 4a a2 27 '.......x.&..TJ.''
+  0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 08 37 80 88 70 38 3e 40 22 2a '.......7..p8>@"*'
+  35 00 25 a5 10 00 00 1a 06 2c 80 88 70 38 3e 40 '5.%......,..p8>@'
+  22 2a 35 00 25 a5 10 00 00 1a 00 00 00 fe 00 32 '"*5.%..........2'
+  46 31 4d 57 80 42 31 33 33 48 41 4e 00 00 00 00 'F1MW.B133HAN....'
+  00 02 41 23 9e 00 11 00 00 0a 01 0a 20 20 00 04 '..A#........  ..'
+Checksum: 0x04
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

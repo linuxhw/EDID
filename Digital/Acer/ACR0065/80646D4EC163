@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004726500d80e2000
-021401038028196b2a6760a25a499e23
-135054bfee00614c0101010101010101
-010101010101662156aa51001e30468f
-330058c21000001e000000ff004c4547
-3038303035393830330a000000fd0037
-4b1e530e000a202020202020000000fc
-00416365722058313833480a202000bc
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 65 00 d8 0e 20 00
+02 14 01 03 80 28 19 6b 2a 67 60 a2 5a 49 9e 23
+13 50 54 bf ee 00 61 4c 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 58 c2 10 00 00 1e 00 00 00 ff 00 4c 45 47
+30 38 30 30 35 39 38 30 33 0a 00 00 00 fd 00 37
+4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 63 65 72 20 58 31 38 33 48 0a 20 20 00 bc
 
 00 ff ff ff ff ff ff 00 04 72 65 00 d8 0e 20 00
 02 14 01 03 80 28 19 6b 2a 67 60 a2 5a 49 9e 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 101
-    Serial Number: 2100952
+    Serial Number: ...
     Made in: week 2 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -61,8 +59,34 @@ Block 0, Base EDID:
     DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (344 mm x 194 mm)
                  Hfront   70 Hsync 143 Hback  213 Hpol P
                  Vfront    3 Vsync   3 Vback   24 Vpol P
-    Display Product Serial Number: 'LEG080059803'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'Acer X183H'
 Checksum: 0xbc
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 65 00 d8 0e 20 00 '.........re... .'
+  02 14 01 03 80 28 19 6b 2a 67 60 a2 5a 49 9e 23 '.....(.k*g`.ZI.#'
+  13 50 54 bf ee 00 61 4c 01 01 01 01 01 01 01 01 '.PT...aL........'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 58 c2 10 00 00 1e 00 00 00 ff 00 4c 45 47 '3.X..........LEG'
+  30 38 30 30 35 39 38 30 33 0a 00 00 00 fd 00 37 '080059803......7'
+  4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 41 63 65 72 20 58 31 38 33 48 0a 20 20 00 bc '.Acer X183H.  ..'
+Checksum: 0xbc
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 344x194 mm vs display size 400x250 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

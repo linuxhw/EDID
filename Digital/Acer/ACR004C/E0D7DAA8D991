@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004724c00277b1102
-15140104a5261e78e29ae5a658499923
-115054bfef80714f0101010101010101
-010101010101302a009851002a403070
-1300782d1100001e000000fd00384b1e
-530e000a202020202020000000ff004c
-4451304331343234304a350a000000fc
-00563139330a2020202020202020001e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 4c 00 27 7b 11 02
+15 14 01 04 a5 26 1e 78 e2 9a e5 a6 58 49 99 23
+11 50 54 bf ef 80 71 4f 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c
+44 51 30 43 31 34 32 34 30 4a 35 0a 00 00 00 fc
+00 56 31 39 33 0a 20 20 20 20 20 20 20 20 00 1e
 
 00 ff ff ff ff ff ff 00 04 72 4c 00 27 7b 11 02
 15 14 01 04 a5 26 1e 78 e2 9a e5 a6 58 49 99 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 76
-    Serial Number: 34700071
+    Serial Number: ...
     Made in: week 21 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -67,8 +65,37 @@ Block 0, Base EDID:
                  Vfront    1 Vsync   3 Vback   38 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: 'LDQ0C14240J5'
+    Display Product Serial Number: ...
     Display Product Name: 'V193'
 Checksum: 0x1e
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 4c 00 27 7b 11 02 '.........rL.'{..'
+  15 14 01 04 a5 26 1e 78 e2 9a e5 a6 58 49 99 23 '.....&.x....XI.#'
+  11 50 54 bf ef 80 71 4f 01 01 01 01 01 01 01 01 '.PT...qO........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4b 1e '..x-.........8K.'
+  53 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c 'S...      .....L'
+  44 51 30 43 31 34 32 34 30 4a 35 0a 00 00 00 fc 'DQ0C14240J5.....'
+  00 56 31 39 33 0a 20 20 20 20 20 20 20 20 00 1e '.V193.        ..'
+Checksum: 0x1e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

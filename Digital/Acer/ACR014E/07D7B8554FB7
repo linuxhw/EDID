@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004724e016f750001
-0a14010380301b782ec585a459499a24
-125054bfef8081c08140714f81808100
-010101010101023a801871382d40582c
-4500dc0c1100001e000000fd00384c1e
-5210000a202020202020000000ff004c
-4c4e3038303031343230360a000000fc
-0041636572205032323548514c0a0095
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 4e 01 6f 75 00 01
+0a 14 01 03 80 30 1b 78 2e c5 85 a4 59 49 9a 24
+12 50 54 bf ef 80 81 c0 81 40 71 4f 81 80 81 00
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1e 00 00 00 fd 00 38 4c 1e
+52 10 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c
+4c 4e 30 38 30 30 31 34 32 30 36 0a 00 00 00 fc
+00 41 63 65 72 20 50 32 32 35 48 51 4c 0a 00 95
 
 00 ff ff ff ff ff ff 00 04 72 4e 01 6f 75 00 01
 0a 14 01 03 80 30 1b 78 2e c5 85 a4 59 49 9a 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 334
-    Serial Number: 16807279
+    Serial Number: ...
     Made in: week 10 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -70,6 +68,32 @@ Block 0, Base EDID:
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-82 kHz H, max dotclock 160 MHz
-    Display Product Serial Number: 'LLN080014206'
+    Display Product Serial Number: ...
     Display Product Name: 'Acer P225HQL'
 Checksum: 0x95
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 4e 01 6f 75 00 01 '.........rN.ou..'
+  0a 14 01 03 80 30 1b 78 2e c5 85 a4 59 49 9a 24 '.....0.x....YI.$'
+  12 50 54 bf ef 80 81 c0 81 40 71 4f 81 80 81 00 '.PT......@qO....'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dc 0c 11 00 00 1e 00 00 00 fd 00 38 4c 1e 'E............8L.'
+  52 10 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c 'R...      .....L'
+  4c 4e 30 38 30 30 31 34 32 30 36 0a 00 00 00 fc 'LN080014206.....'
+  00 41 63 65 72 20 50 32 32 35 48 51 4c 0a 00 95 '.Acer P225HQL...'
+Checksum: 0x95
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
