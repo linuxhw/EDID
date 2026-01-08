@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f05b2601010101
-32100104a51e168ce643c0a5554d9524
-145054adee0001010101010101010101
-01010101010164190040410026301888
-36002cdc10000018000000fd00324c1e
-3f08000a202020202020000000fc0048
-50204c313530360a20202020000000ff
-00434e4336353051524e460a2020002e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 5b 26 01 01 01 01
+32 10 01 04 a5 1e 16 8c e6 43 c0 a5 55 4d 95 24
+14 50 54 ad ee 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 2c dc 10 00 00 18 00 00 00 fd 00 32 4c 1e
+3f 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 4c 31 35 30 36 0a 20 20 20 20 00 00 00 ff
+00 43 4e 43 36 35 30 51 52 4e 46 0a 20 20 00 2e
 
 00 ff ff ff ff ff ff 00 22 f0 5b 26 01 01 01 01
 32 10 01 04 a5 1e 16 8c e6 43 c0 a5 55 4d 95 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 9819
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 50 of 2006
   Basic Display Parameters & Features:
     Digital display
@@ -64,5 +62,38 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-63 kHz H, max dotclock 80 MHz
     Display Product Name: 'HP L1506'
-    Display Product Serial Number: 'CNC650QRNF'
+    Display Product Serial Number: ...
 Checksum: 0x2e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 5b 26 01 01 01 01 '........".[&....'
+  32 10 01 04 a5 1e 16 8c e6 43 c0 a5 55 4d 95 24 '2........C..UM.$'
+  14 50 54 ad ee 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 2c dc 10 00 00 18 00 00 00 fd 00 32 4c 1e '6.,..........2L.'
+  3f 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 '?...      .....H'
+  50 20 4c 31 35 30 36 0a 20 20 20 20 00 00 00 ff 'P L1506.    ....'
+  00 43 4e 43 36 35 30 51 52 4e 46 0a 20 20 00 2e '.CNC650QRNF.  ..'
+Checksum: 0x2e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

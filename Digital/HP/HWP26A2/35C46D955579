@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0022f0a22601010101
-1111010380291a78efde95a3544c9926
-0f5054a56b90714f8180818c950f8190
-0101010101019a29a0d0518422305098
-360098ff1000001c000000fd00324c18
-530e000a202020202020000000fc0048
-502077313930370a20202020000000ff
-00434e44373137323132330a20200182
-02031b71230907078301000067030c00
-2000802d43100403e2000f8c0ad08a20
-e02d10103e9600a05a00000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000018
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 a2 26 01 01 01 01
+11 11 01 03 80 29 1a 78 ef de 95 a3 54 4c 99 26
+0f 50 54 a5 6b 90 71 4f 81 80 81 8c 95 0f 81 90
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 fd 00 32 4c 18
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 77 31 39 30 37 0a 20 20 20 20 00 00 00 ff
+00 43 4e 44 37 31 37 32 31 32 33 0a 20 20 01 82
+
+02 03 1b 71 23 09 07 07 83 01 00 00 67 03 0c 00
+20 00 80 2d 43 10 04 03 e2 00 0f 8c 0a d0 8a 20
+e0 2d 10 10 3e 96 00 a0 5a 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 18
 
 00 ff ff ff ff ff ff 00 22 f0 a2 26 01 01 01 01
 11 11 01 03 80 29 1a 78 ef de 95 a3 54 4c 99 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 9890
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 17 of 2007
   Basic Display Parameters & Features:
     Digital display
@@ -84,7 +83,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 24-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'HP w1907'
-    Display Product Serial Number: 'CND7172123'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x82
 
@@ -122,3 +121,92 @@ Block 1, CTA-861 Extension Block:
                  Hfront   16 Hsync  62 Hback   60 Hpol N
                  Vfront    9 Vsync   6 Vback   30 Vpol N
 Checksum: 0x18  Unused space in Extension Block: 82 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 a2 26 01 01 01 01 '........"..&....'
+  11 11 01 03 80 29 1a 78 ef de 95 a3 54 4c 99 26 '.....).x....TL.&'
+  0f 50 54 a5 6b 90 71 4f 81 80 81 8c 95 0f 81 90 '.PT.k.qO........'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 00 00 00 fd 00 32 4c 18 '6............2L.'
+  53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'S...      .....H'
+  50 20 77 31 39 30 37 0a 20 20 20 20 00 00 00 ff 'P w1907.    ....'
+  00 43 4e 44 37 31 37 32 31 32 33 0a 20 20 01 82 '.CND7172123.  ..'
+Checksum: 0x82
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 225 MHz
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (analog composite, sync-on-green, 160 mm x 90 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x18  Unused space in Extension Block: 82 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 148.500 MHz (Monitor: 140.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+  CTA-861: Native progressive resolution of 1440x900 is smaller than the max preferred progressive resolution 1920x1080.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #2: Mismatch of image size 160x90 mm vs display size 410x260 mm.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 3.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #3: Mismatch of image size 160x90 mm vs display size 410x260 mm.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL
