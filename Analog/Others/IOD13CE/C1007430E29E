@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0025e4ce1301010101
-1211010318261e782e4656a4544a9d24
-144f54bfef0081800101010101010101
-010101010101bc34009851002a401090
-1300782d1100001e000000fd00374b18
-500e000a202020202020000000ff0055
-3858313030353037325a480a000000fc
-004c43442d41443139355620200a00a4
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 25 e4 ce 13 01 01 01 01
+12 11 01 03 18 26 1e 78 2e 46 56 a4 54 4a 9d 24
+14 4f 54 bf ef 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90
+13 00 78 2d 11 00 00 1e 00 00 00 fd 00 37 4b 18
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 55
+38 58 31 30 30 35 30 37 32 5a 48 0a 00 00 00 fc
+00 4c 43 44 2d 41 44 31 39 35 56 20 20 0a 00 a4
 
 00 ff ff ff ff ff ff 00 25 e4 ce 13 01 01 01 01
 12 11 01 03 18 26 1e 78 2e 46 56 a4 54 4a 9d 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IOD
     Model: 5070
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 18 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -68,6 +66,33 @@ Block 0, Base EDID:
                  Vfront    1 Vsync   3 Vback   38 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 24-80 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: 'U8X1005072ZH'
+    Display Product Serial Number: ...
     Display Product Name: 'LCD-AD195V  '
 Checksum: 0xa4
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 25 e4 ce 13 01 01 01 01 '........%.......'
+  12 11 01 03 18 26 1e 78 2e 46 56 a4 54 4a 9d 24 '.....&.x.FV.TJ.$'
+  14 4f 54 bf ef 00 81 80 01 01 01 01 01 01 01 01 '.OT.............'
+  01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90 '.......4..Q.*@..'
+  13 00 78 2d 11 00 00 1e 00 00 00 fd 00 37 4b 18 '..x-.........7K.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 55 'P...      .....U'
+  38 58 31 30 30 35 30 37 32 5a 48 0a 00 00 00 fc '8X1005072ZH.....'
+  00 4c 43 44 2d 41 44 31 39 35 56 20 20 0a 00 a4 '.LCD-AD195V  ...'
+Checksum: 0xa4
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Name: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

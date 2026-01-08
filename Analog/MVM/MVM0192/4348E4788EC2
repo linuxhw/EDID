@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0036cd920100000000
-1411010408291a78eac905a3574b9c25
-125054bfef807140714f8140814f81c0
-81809500950f9a29a0d0518422305098
-36009a001100001c000000fd00374c1e
-530e0000000000000000000000fc004d
-56313932575f410a202020206535a0f0
-51842a30609836009a001100001c001c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 cd 92 01 00 00 00 00
+14 11 01 04 08 29 1a 78 ea c9 05 a3 57 4b 9c 25
+12 50 54 bf ef 80 71 40 71 4f 81 40 81 4f 81 c0
+81 80 95 00 95 0f 9a 29 a0 d0 51 84 22 30 50 98
+36 00 9a 00 11 00 00 1c 00 00 00 fd 00 37 4c 1e
+53 0e 00 00 00 00 00 00 00 00 00 00 00 fc 00 4d
+56 31 39 32 57 5f 41 0a 20 20 20 20 65 35 a0 f0
+51 84 2a 30 60 98 36 00 9a 00 11 00 00 1c 00 1c
 
 00 ff ff ff ff ff ff 00 36 cd 92 01 00 00 00 00
 14 11 01 04 08 29 1a 78 ea c9 05 a3 57 4b 9c 25
@@ -79,3 +77,37 @@ Block 0, Base EDID:
                  Hfront   96 Hsync 152 Hback  248 Hpol N
                  Vfront    3 Vsync   6 Vback   33 Vpol P
 Checksum: 0x1c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 cd 92 01 00 00 00 00 '........6.......'
+  14 11 01 04 08 29 1a 78 ea c9 05 a3 57 4b 9c 25 '.....).x....WK.%'
+  12 50 54 bf ef 80 71 40 71 4f 81 40 81 4f 81 c0 '.PT...q@qO.@.O..'
+  81 80 95 00 95 0f 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 9a 00 11 00 00 1c 00 00 00 fd 00 37 4c 1e '6............7L.'
+  53 0e 00 00 00 00 00 00 00 00 00 00 00 fc 00 4d 'S..............M'
+  56 31 39 32 57 5f 41 0a 20 20 20 20 65 35 a0 f0 'V192W_A.    e5..'
+  51 84 2a 30 60 98 36 00 9a 00 11 00 00 1c 00 1c 'Q.*0`.6.........'
+Checksum: 0x1c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+  Detailed Timing Descriptor #2: Invalid detailed timing descriptor ordering.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

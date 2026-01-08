@@ -1,0 +1,82 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4e f2 00 00 00 00 00 00
+05 1f 01 03 6d 30 24 78 0a 5e c0 a4 59 4a 98 25
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 19 05 81 bf 20 e0 2b 10 1a 3d
+35 00 e5 6c 11 00 00 98 00 00 00 ff 00 53 77 69
+74 63 68 72 65 73 32 30 30 0a 00 00 00 fd 00 31
+41 0f 10 ff 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 68 39 31 31 30 00 00 00 00 00 00 00 0a 00 5f
+
+00 ff ff ff ff ff ff 00 4e f2 00 00 00 00 00 00
+05 1f 01 03 6d 30 24 78 0a 5e c0 a4 59 4a 98 25
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 19 05 81 bf 20 e0 2b 10 1a 3d
+35 00 e5 6c 11 00 00 98 00 00 00 ff 00 53 77 69
+74 63 68 72 65 73 32 30 30 0a 00 00 00 fd 00 31
+41 0f 10 ff 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 68 39 31 31 30 00 00 00 00 00 00 00 0a 00 5f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SWR
+    Model: 0
+    Made in: week 5 of 2021
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.000 : 0.700 V p-p
+    Blank level equals black level
+    Sync: Separate Composite Serration
+    Maximum image size: 48 cm x 36 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6416, 0.3486
+    Green: 0.2919, 0.5957
+    Blue : 0.1474, 0.1250
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:   641x960i   29.961979 Hz 641:960   15.685 kHz     13.050000 MHz (485 mm x 364 mm)
+                 Hfront   26 Hsync  61 Hback  104 Hpol N
+                 Vfront    3 Vsync   5 Vback   35 Vpol N Vfront +0.5 Odd Field
+                 Vfront    3 Vsync   5 Vback   35 Vpol N Vback  +0.5 Even Field
+    Display Product Serial Number: ...
+    Display Range Limits:
+      Monitor ranges (GTF): 49-65 Hz V, 15-16 kHz H, max dotclock 2550 MHz
+    Display Product Name: 'h9110'
+Checksum: 0x5f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4e f2 00 00 00 00 00 00 '........N.......'
+  05 1f 01 03 6d 30 24 78 0a 5e c0 a4 59 4a 98 25 '....m0$x.^..YJ.%'
+  20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ' PT.............'
+  01 01 01 01 01 01 19 05 81 bf 20 e0 2b 10 1a 3d '.......... .+..='
+  35 00 e5 6c 11 00 00 98 00 00 00 ff 00 53 77 69 '5..l.........Swi'
+  74 63 68 72 65 73 32 30 30 0a 00 00 00 fd 00 31 'tchres200......1'
+  41 0f 10 ff 00 0a 20 20 20 20 20 20 00 00 00 fc 'A.....      ....'
+  00 68 39 31 31 30 00 00 00 00 00 00 00 0a 00 5f '.h9110........._'
+Checksum: 0x5f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 29.962 - 29.962 Hz (Monitor: 49.000 - 65.000 Hz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

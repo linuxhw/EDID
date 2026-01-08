@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003e8d323047000000
-2d1501030e000000ea7f73a9534fa523
-114c55bfef80457c617c81008180b300
-81c081fca9409e20009051201f304880
-360000000000001c000000ff00513848
-41313435303037310a20000000fc004f
-70746f6d6120334430320a20000000fd
-000f780f7811000a20202020000000fb
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 3e 8d 32 30 47 00 00 00
+2d 15 01 03 0e 00 00 00 ea 7f 73 a9 53 4f a5 23
+11 4c 55 bf ef 80 45 7c 61 7c 81 00 81 80 b3 00
+81 c0 81 fc a9 40 9e 20 00 90 51 20 1f 30 48 80
+36 00 00 00 00 00 00 1c 00 00 00 ff 00 51 38 48
+41 31 34 35 30 30 37 31 0a 20 00 00 00 fc 00 4f
+70 74 6f 6d 61 20 33 44 30 32 0a 20 00 00 00 fd
+00 0f 78 0f 78 11 00 0a 20 20 20 20 00 00 00 fb
 
 00 ff ff ff ff ff ff 00 3e 8d 32 30 47 00 00 00
 2d 15 01 03 0e 00 00 00 ea 7f 73 a9 53 4f a5 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: OTM
     Model: 12338
-    Serial Number: 71
+    Serial Number: ...
     Made in: week 45 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -73,8 +71,34 @@ Block 0, Base EDID:
     DTD 1:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
                  Hfront   72 Hsync 128 Hback  200 Hpol N
                  Vfront    3 Vsync   6 Vback   22 Vpol P
-    Display Product Serial Number: 'Q8HA1450071'
+    Display Product Serial Number: ...
     Display Product Name: 'Optoma 3D02'
     Display Range Limits:
       Monitor ranges (GTF): 15-120 Hz V, 15-120 kHz H, max dotclock 170 MHz
 Checksum: 0xfb
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 3e 8d 32 30 47 00 00 00 '........>.20G...'
+  2d 15 01 03 0e 00 00 00 ea 7f 73 a9 53 4f a5 23 '-.........s.SO.#'
+  11 4c 55 bf ef 80 45 7c 61 7c 81 00 81 80 b3 00 '.LU...E|a|......'
+  81 c0 81 fc a9 40 9e 20 00 90 51 20 1f 30 48 80 '.....@. ..Q .0H.'
+  36 00 00 00 00 00 00 1c 00 00 00 ff 00 51 38 48 '6............Q8H'
+  41 31 34 35 30 30 37 31 0a 20 00 00 00 fc 00 4f 'A1450071. .....O'
+  70 74 6f 6d 61 20 33 44 30 32 0a 20 00 00 00 fd 'ptoma 3D02. ....'
+  00 0f 78 0f 78 11 00 0a 20 20 20 20 00 00 00 fb '..x.x...    ....'
+Checksum: 0xfb
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: Bytes 12-17 must be 0x20.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

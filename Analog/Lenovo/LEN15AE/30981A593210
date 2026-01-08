@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030aeae15c1060000
-271901046c2c19782afda5a256519e27
-0c5054afef00714f8180818a9500a9c0
-a9c001010101302a40c8608464301850
-1300bbf91000001e000000ff00303538
-33324633394e31373239000000fd0032
-4c1e5311000a202020202020000000fc
-004c454e204c543230323477410a00da
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae ae 15 c1 06 00 00
+27 19 01 04 6c 2c 19 78 2a fd a5 a2 56 51 9e 27
+0c 50 54 af ef 00 71 4f 81 80 81 8a 95 00 a9 c0
+a9 c0 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 bb f9 10 00 00 1e 00 00 00 ff 00 30 35 38
+33 32 46 33 39 4e 31 37 32 39 00 00 00 fd 00 32
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 45 4e 20 4c 54 32 30 32 34 77 41 0a 00 da
 
 00 ff ff ff ff ff ff 00 30 ae ae 15 c1 06 00 00
 27 19 01 04 6c 2c 19 78 2a fd a5 a2 56 51 9e 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 5550
-    Serial Number: 1729
+    Serial Number: ...
     Made in: week 39 of 2015
   Basic Display Parameters & Features:
     Analog display
@@ -69,8 +67,39 @@ Block 0, Base EDID:
     DTD 1:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (443 mm x 249 mm)
                  Hfront   24 Hsync  80 Hback   96 Hpol P
                  Vfront    1 Vsync   3 Vback   96 Vpol P
-    Display Product Serial Number: '05832F39N1729'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'LEN LT2024wA'
 Checksum: 0xda
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae ae 15 c1 06 00 00 '........0.......'
+  27 19 01 04 6c 2c 19 78 2a fd a5 a2 56 51 9e 27 ''...l,.x*...VQ.''
+  0c 50 54 af ef 00 71 4f 81 80 81 8a 95 00 a9 c0 '.PT...qO........'
+  a9 c0 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
+  13 00 bb f9 10 00 00 1e 00 00 00 ff 00 30 35 38 '.............058'
+  33 32 46 33 39 4e 31 37 32 39 00 00 00 fd 00 32 '32F39N1729.....2'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 4c 45 4e 20 4c 54 32 30 32 34 77 41 0a 00 da '.LEN LT2024wA...'
+Checksum: 0xda
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

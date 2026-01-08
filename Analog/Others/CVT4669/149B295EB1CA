@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000ed4694600000000
-1a13010300241d78ef0dc2a057479827
-12484fbfce0001010101010101010101
-010101010101cc29a0d0518422300a98
-360068221100001e0000001000001e30
-4080370068221100001cd02000905120
-1f30109013004a001000001c8435a0f0
-51842a300c98360068221100001e00ed
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e d4 69 46 00 00 00 00
+1a 13 01 03 00 24 1d 78 ef 0d c2 a0 57 47 98 27
+12 48 4f bf ce 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 cc 29 a0 d0 51 84 22 30 0a 98
+36 00 68 22 11 00 00 1e 00 00 00 10 00 00 1e 30
+40 80 37 00 68 22 11 00 00 1c d0 20 00 90 51 20
+1f 30 10 90 13 00 4a 00 10 00 00 1c 84 35 a0 f0
+51 84 2a 30 0c 98 36 00 68 22 11 00 00 1e 00 ed
 
 00 ff ff ff ff ff ff 00 0e d4 69 46 00 00 00 00
 1a 13 01 03 00 24 1d 78 ef 0d c2 a0 57 47 98 27
@@ -70,3 +68,36 @@ Block 0, Base EDID:
                  Hfront   12 Hsync 152 Hback  332 Hpol P
                  Vfront    3 Vsync   6 Vback   33 Vpol P
 Checksum: 0xed
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e d4 69 46 00 00 00 00 '..........iF....'
+  1a 13 01 03 00 24 1d 78 ef 0d c2 a0 57 47 98 27 '.....$.x....WG.''
+  12 48 4f bf ce 00 01 01 01 01 01 01 01 01 01 01 '.HO.............'
+  01 01 01 01 01 01 cc 29 a0 d0 51 84 22 30 0a 98 '.......)..Q."0..'
+  36 00 68 22 11 00 00 1e 00 00 00 10 00 00 1e 30 '6.h"...........0'
+  40 80 37 00 68 22 11 00 00 1c d0 20 00 90 51 20 '@.7.h"..... ..Q '
+  1f 30 10 90 13 00 4a 00 10 00 00 1c 84 35 a0 f0 '.0....J......5..'
+  51 84 2a 30 0c 98 36 00 68 22 11 00 00 1e 00 ed 'Q.*0..6.h"......'
+Checksum: 0xed
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Detailed Timing Descriptor #2: Mismatch of image size 330x0 mm vs display size 360x290 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #2: Invalid detailed timing descriptor ordering.
+  Detailed Timing Descriptor #3: Invalid detailed timing descriptor ordering.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

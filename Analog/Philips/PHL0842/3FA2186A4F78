@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c420800d50100
-051101031e2b1b78ee85c5a4554a9c24
-145054bfef80714a714f81408180a940
-b300b30fa94f08399030621a274068b0
-3600b10f1100001a000000ff00425a33
-30373035313230303634000000fc0050
-68696c697073203230305742000000fd
-00384c1e6215000a202020202020000b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 42 08 00 d5 01 00
+05 11 01 03 1e 2b 1b 78 ee 85 c5 a4 55 4a 9c 24
+14 50 54 bf ef 80 71 4a 71 4f 81 40 81 80 a9 40
+b3 00 b3 0f a9 4f 08 39 90 30 62 1a 27 40 68 b0
+36 00 b1 0f 11 00 00 1a 00 00 00 ff 00 42 5a 33
+30 37 30 35 31 32 30 30 36 34 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 32 30 30 57 42 00 00 00 fd
+00 38 4c 1e 62 15 00 0a 20 20 20 20 20 20 00 0b
 
 00 ff ff ff ff ff ff 00 41 0c 42 08 00 d5 01 00
 05 11 01 03 1e 2b 1b 78 ee 85 c5 a4 55 4a 9c 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 2114
-    Serial Number: 120064
+    Serial Number: ...
     Made in: week 5 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -74,8 +72,34 @@ Block 0, Base EDID:
     DTD 1:  1680x1050   59.851764 Hz  16:10    65.179 kHz    146.000000 MHz (433 mm x 271 mm)
                  Hfront  104 Hsync 176 Hback  280 Hpol P
                  Vfront    3 Vsync   6 Vback   30 Vpol N
-    Display Product Serial Number: 'BZ30705120064'
+    Display Product Serial Number: ...
     Display Product Name: 'Philips 200WB'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-98 kHz H, max dotclock 210 MHz
 Checksum: 0x0b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 42 08 00 d5 01 00 '........A.B.....'
+  05 11 01 03 1e 2b 1b 78 ee 85 c5 a4 55 4a 9c 24 '.....+.x....UJ.$'
+  14 50 54 bf ef 80 71 4a 71 4f 81 40 81 80 a9 40 '.PT...qJqO.@...@'
+  b3 00 b3 0f a9 4f 08 39 90 30 62 1a 27 40 68 b0 '.....O.9.0b.'@h.'
+  36 00 b1 0f 11 00 00 1a 00 00 00 ff 00 42 5a 33 '6............BZ3'
+  30 37 30 35 31 32 30 30 36 34 00 00 00 fc 00 50 '0705120064.....P'
+  68 69 6c 69 70 73 20 32 30 30 57 42 00 00 00 fd 'hilips 200WB....'
+  00 38 4c 1e 62 15 00 0a 20 20 20 20 20 20 00 0b '.8L.b...      ..'
+Checksum: 0x0b
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

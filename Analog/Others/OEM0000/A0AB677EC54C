@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003cad000000000000
-21100103084627780a1990a755469824
-10494b2fce0001010101010101010101
-010101010101662150b051001b304070
-360050005300001e302a009851002a40
-3070130000005400001e0e1f00805100
-1e304080370000005300001cf91520f8
-30581f202040130020583200001e0023
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 3c ad 00 00 00 00 00 00
+21 10 01 03 08 46 27 78 0a 19 90 a7 55 46 98 24
+10 49 4b 2f ce 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70
+36 00 50 00 53 00 00 1e 30 2a 00 98 51 00 2a 40
+30 70 13 00 00 00 54 00 00 1e 0e 1f 00 80 51 00
+1e 30 40 80 37 00 00 00 53 00 00 1c f9 15 20 f8
+30 58 1f 20 20 40 13 00 20 58 32 00 00 1e 00 23
 
 00 ff ff ff ff ff ff 00 3c ad 00 00 00 00 00 00
 21 10 01 03 08 46 27 78 0a 19 90 a7 55 46 98 24
@@ -68,3 +66,35 @@ Block 0, Base EDID:
                  Hfront   32 Hsync  64 Hback  152 Hpol P
                  Vfront    1 Vsync   3 Vback   27 Vpol P
 Checksum: 0x23
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 3c ad 00 00 00 00 00 00 '........<.......'
+  21 10 01 03 08 46 27 78 0a 19 90 a7 55 46 98 24 '!....F'x....UF.$'
+  10 49 4b 2f ce 00 01 01 01 01 01 01 01 01 01 01 '.IK/............'
+  01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70 '......f!P.Q..0@p'
+  36 00 50 00 53 00 00 1e 30 2a 00 98 51 00 2a 40 '6.P.S...0*..Q.*@'
+  30 70 13 00 00 00 54 00 00 1e 0e 1f 00 80 51 00 '0p....T.......Q.'
+  1e 30 40 80 37 00 00 00 53 00 00 1c f9 15 20 f8 '.0@.7...S..... .'
+  30 58 1f 20 20 40 13 00 20 58 32 00 00 1e 00 23 '0X.  @.. X2....#'
+Checksum: 0x23
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 1360x768 mm vs display size 700x390 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 1280x1024 mm vs display size 700x390 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 1280x768 mm vs display size 700x390 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 800x600 mm vs display size 700x390 mm.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 1360x1024mm, which is larger than the display size 700.0x390.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

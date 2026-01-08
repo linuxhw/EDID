@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00244dcb2401010101
-140f01030e261e78ea6f86a25a4d9424
-1a4f54bfef808180818c714f01010101
-010101010101302a009851002a403070
-1300782d1100001e000000fd00374c1e
-510e000a202020202020000000ff0056
-5231303437330a2020202020000000fc
-0049424d204c313931700a202020000e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 24 4d cb 24 01 01 01 01
+14 0f 01 03 0e 26 1e 78 ea 6f 86 a2 5a 4d 94 24
+1a 4f 54 bf ef 80 81 80 81 8c 71 4f 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 fd 00 37 4c 1e
+51 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 56
+52 31 30 34 37 33 0a 20 20 20 20 20 00 00 00 fc
+00 49 42 4d 20 4c 31 39 31 70 0a 20 20 20 00 0e
 
 00 ff ff ff ff ff ff 00 24 4d cb 24 01 01 01 01
 14 0f 01 03 0e 26 1e 78 ea 6f 86 a2 5a 4d 94 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IBM
     Model: 9419
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 20 of 2005
   Basic Display Parameters & Features:
     Analog display
@@ -70,6 +68,30 @@ Block 0, Base EDID:
                  Vfront    1 Vsync   3 Vback   38 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 30-81 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: 'VR10473'
+    Display Product Serial Number: ...
     Display Product Name: 'IBM L191p'
 Checksum: 0x0e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 24 4d cb 24 01 01 01 01 '........$M.$....'
+  14 0f 01 03 0e 26 1e 78 ea 6f 86 a2 5a 4d 94 24 '.....&.x.o..ZM.$'
+  1a 4f 54 bf ef 80 81 80 81 8c 71 4f 01 01 01 01 '.OT.......qO....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 fd 00 37 4c 1e '..x-.........7L.'
+  51 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 56 'Q...      .....V'
+  52 31 30 34 37 33 0a 20 20 20 20 20 00 00 00 fc 'R10473.     ....'
+  00 49 42 4d 20 4c 31 39 31 70 0a 20 20 20 00 0e '.IBM L191p.   ..'
+Checksum: 0x0e
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

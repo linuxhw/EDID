@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030aeca6000000000
-131901036c301b78eeebf5a656519c26
-105054afef00714f8180818a9500a9c0
-a9cfb3000101023a801871382d40582c
-4500dc0b1100001e000000fc00543232
-323470440a2020202020000000fd0032
-4b1e5114000a202020202020000000ff
-005639303145474d460affffffff005d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae ca 60 00 00 00 00
+13 19 01 03 6c 30 1b 78 ee eb f5 a6 56 51 9c 26
+10 50 54 af ef 00 71 4f 81 80 81 8a 95 00 a9 c0
+a9 cf b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0b 11 00 00 1e 00 00 00 fc 00 54 32 32
+32 34 70 44 0a 20 20 20 20 20 00 00 00 fd 00 32
+4b 1e 51 14 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 56 39 30 31 45 47 4d 46 0a ff ff ff ff 00 5d
 
 00 ff ff ff ff ff ff 00 30 ae ca 60 00 00 00 00
 13 19 01 03 6c 30 1b 78 ee eb f5 a6 56 51 9c 26
@@ -73,5 +71,32 @@ Block 0, Base EDID:
     Display Product Name: 'T2224pD'
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-81 kHz H, max dotclock 200 MHz
-    Display Product Serial Number: 'V901EGMF'
+    Display Product Serial Number: ...
 Checksum: 0x5d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae ca 60 00 00 00 00 '........0..`....'
+  13 19 01 03 6c 30 1b 78 ee eb f5 a6 56 51 9c 26 '....l0.x....VQ.&'
+  10 50 54 af ef 00 71 4f 81 80 81 8a 95 00 a9 c0 '.PT...qO........'
+  a9 cf b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dc 0b 11 00 00 1e 00 00 00 fc 00 54 32 32 'E............T22'
+  32 34 70 44 0a 20 20 20 20 20 00 00 00 fd 00 32 '24pD.     .....2'
+  4b 1e 51 14 00 0a 20 20 20 20 20 20 00 00 00 ff 'K.Q...      ....'
+  00 56 39 30 31 45 47 4d 46 0a ff ff ff ff 00 5d '.V901EGMF......]'
+Checksum: 0x5d
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

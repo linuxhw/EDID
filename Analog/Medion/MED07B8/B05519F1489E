@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0034a4b807e5170000
-050f010368221b962a0c55a559479b24
-125054afcf00310a0101010101018180
-000000000000d60980a0205e63103060
-0200510e1100001e000000fc004d4433
-3032313750470a202020000000fd0038
-4c1e530e000a202020202020000000ff
-003530313130363131370a2020200087
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 a4 b8 07 e5 17 00 00
+05 0f 01 03 68 22 1b 96 2a 0c 55 a5 59 47 9b 24
+12 50 54 af cf 00 31 0a 01 01 01 01 01 01 81 80
+00 00 00 00 00 00 d6 09 80 a0 20 5e 63 10 30 60
+02 00 51 0e 11 00 00 1e 00 00 00 fc 00 4d 44 33
+30 32 31 37 50 47 0a 20 20 20 00 00 00 fd 00 38
+4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 35 30 31 31 30 36 31 31 37 0a 20 20 20 00 87
 
 00 ff ff ff ff ff ff 00 34 a4 b8 07 e5 17 00 00
 05 0f 01 03 68 22 1b 96 2a 0c 55 a5 59 47 9b 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MED
     Model: 1976
-    Serial Number: 6117
+    Serial Number: ...
     Made in: week 5 of 2005
   Basic Display Parameters & Features:
     Analog display
@@ -68,5 +66,45 @@ Block 0, Base EDID:
     Display Product Name: 'MD30217PG'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: '501106117'
+    Display Product Serial Number: ...
 Checksum: 0x87
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 34 a4 b8 07 e5 17 00 00 '........4.......'
+  05 0f 01 03 68 22 1b 96 2a 0c 55 a5 59 47 9b 24 '....h"..*.U.YG.$'
+  12 50 54 af cf 00 31 0a 01 01 01 01 01 01 81 80 '.PT...1.........'
+  00 00 00 00 00 00 d6 09 80 a0 20 5e 63 10 30 60 '.......... ^c.0`'
+  02 00 51 0e 11 00 00 1e 00 00 00 fc 00 4d 44 33 '..Q..........MD3'
+  30 32 31 37 50 47 0a 20 20 20 00 00 00 fd 00 38 '0217PG.   .....8'
+  4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 'L.S...      ....'
+  00 35 30 31 31 30 36 31 31 37 0a 20 20 20 00 87 '.501106117.   ..'
+Checksum: 0x87
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 29.190 - 79.976 kHz (Monitor: 30.000 - 83.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Detailed Timing Descriptor #1: 0 values in the video timing:
+    Horizontal Active/Blanking 640/160
+    Horizontal Frontporch/Sync Width 48/96
+    Vertical Active/Blanking 350/99
+    Vertical Frontporch/Sync Width 0/2
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

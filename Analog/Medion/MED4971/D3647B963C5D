@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0034a471497e370000
-270d010368251e78eba69ca15a4b9824
-164c57bfef008180818f6140614a614f
-4540454a454f302a009851002a403070
-1300671f1100001e000000ff00343230
-35000000000000000000000000fd0032
-4c1e530e000a202020202020000000fc
-004d443732313241530a2020202000ff
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 a4 71 49 7e 37 00 00
+27 0d 01 03 68 25 1e 78 eb a6 9c a1 5a 4b 98 24
+16 4c 57 bf ef 00 81 80 81 8f 61 40 61 4a 61 4f
+45 40 45 4a 45 4f 30 2a 00 98 51 00 2a 40 30 70
+13 00 67 1f 11 00 00 1e 00 00 00 ff 00 34 32 30
+35 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 32
+4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4d 44 37 32 31 32 41 53 0a 20 20 20 20 00 ff
 
 00 ff ff ff ff ff ff 00 34 a4 71 49 7e 37 00 00
 27 0d 01 03 68 25 1e 78 eb a6 9c a1 5a 4b 98 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MED
     Model: 18801
-    Serial Number: 14206
+    Serial Number: ...
     Made in: week 39 of 2003
   Basic Display Parameters & Features:
     Analog display
@@ -73,8 +71,35 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (359 mm x 287 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: '4205'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'MD7212AS'
 Checksum: 0xff
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 34 a4 71 49 7e 37 00 00 '........4.qI~7..'
+  27 0d 01 03 68 25 1e 78 eb a6 9c a1 5a 4b 98 24 ''...h%.x....ZK.$'
+  16 4c 57 bf ef 00 81 80 81 8f 61 40 61 4a 61 4f '.LW.......a@aJaO'
+  45 40 45 4a 45 4f 30 2a 00 98 51 00 2a 40 30 70 'E@EJEO0*..Q.*@0p'
+  13 00 67 1f 11 00 00 1e 00 00 00 ff 00 34 32 30 '..g..........420'
+  35 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 32 '5..............2'
+  4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 4d 44 37 32 31 32 41 53 0a 20 20 20 20 00 ff '.MD7212AS.    ..'
+Checksum: 0xff
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 359x287 mm vs display size 370x300 mm.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c0fc03abf0100
-310f01031f221b78ee2ee5a4574a9c25
-115054bfef80714a714f814081800101
-010101010101302a009851002a403070
-1300520e1100001e000000ff0020425a
-20203131343439300a20000000fc0050
-68696c69707320313730580a000000fd
-00384c1e530e000a20202020202000a9
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 0f c0 3a bf 01 00
+31 0f 01 03 1f 22 1b 78 ee 2e e5 a4 57 4a 9c 25
+11 50 54 bf ef 80 71 4a 71 4f 81 40 81 80 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 ff 00 20 42 5a
+20 20 31 31 34 34 39 30 0a 20 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 31 37 30 58 0a 00 00 00 fd
+00 38 4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 a9
 
 00 ff ff ff ff ff ff 00 41 0c 0f c0 3a bf 01 00
 31 0f 01 03 1f 22 1b 78 ee 2e e5 a4 57 4a 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 49167
-    Serial Number: 114490
+    Serial Number: ...
     Made in: week 49 of 2005
   Basic Display Parameters & Features:
     Analog display
@@ -70,8 +68,34 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (338 mm x 270 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: ' BZ  114490'
+    Display Product Serial Number: ...
     Display Product Name: 'Philips 170X'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 140 MHz
 Checksum: 0xa9
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 0f c0 3a bf 01 00 '........A...:...'
+  31 0f 01 03 1f 22 1b 78 ee 2e e5 a4 57 4a 9c 25 '1....".x....WJ.%'
+  11 50 54 bf ef 80 71 4a 71 4f 81 40 81 80 01 01 '.PT...qJqO.@....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 ff 00 20 42 5a '..R.......... BZ'
+  20 20 31 31 34 34 39 30 0a 20 00 00 00 fc 00 50 '  114490. .....P'
+  68 69 6c 69 70 73 20 31 37 30 58 0a 00 00 00 fd 'hilips 170X.....'
+  00 38 4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 a9 '.8L.S...      ..'
+Checksum: 0xa9
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

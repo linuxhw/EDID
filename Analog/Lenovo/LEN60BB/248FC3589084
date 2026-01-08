@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030aebb6001010101
-081e0103682b18782ae8f5a2564fa128
-105054bdee00a9c09500950f01010101
-010101010101302a40c8608464301850
-1300b0f01000001e000000ff00564132
-37333339320a20202020000000fd0032
-4b1e5311000a202020202020000000fc
-004c454e20453230303262410a200086
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae bb 60 01 01 01 01
+08 1e 01 03 68 2b 18 78 2a e8 f5 a2 56 4f a1 28
+10 50 54 bd ee 00 a9 c0 95 00 95 0f 01 01 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 b0 f0 10 00 00 1e 00 00 00 ff 00 56 41 32
+37 33 33 39 32 0a 20 20 20 20 00 00 00 fd 00 32
+4b 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 45 4e 20 45 32 30 30 32 62 41 0a 20 00 86
 
 00 ff ff ff ff ff ff 00 30 ae bb 60 01 01 01 01
 08 1e 01 03 68 2b 18 78 2a e8 f5 a2 56 4f a1 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 24763
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 8 of 2020
   Basic Display Parameters & Features:
     Analog display
@@ -65,8 +63,32 @@ Block 0, Base EDID:
     DTD 1:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (432 mm x 240 mm)
                  Hfront   24 Hsync  80 Hback   96 Hpol P
                  Vfront    1 Vsync   3 Vback   96 Vpol P
-    Display Product Serial Number: 'VA273392'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'LEN E2002bA'
 Checksum: 0x86
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae bb 60 01 01 01 01 '........0..`....'
+  08 1e 01 03 68 2b 18 78 2a e8 f5 a2 56 4f a1 28 '....h+.x*...VO.('
+  10 50 54 bd ee 00 a9 c0 95 00 95 0f 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
+  13 00 b0 f0 10 00 00 1e 00 00 00 ff 00 56 41 32 '.............VA2'
+  37 33 33 39 32 0a 20 20 20 20 00 00 00 fd 00 32 '73392.    .....2'
+  4b 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 4c 45 4e 20 45 32 30 30 32 62 41 0a 20 00 86 '.LEN E2002bA. ..'
+Checksum: 0x86
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

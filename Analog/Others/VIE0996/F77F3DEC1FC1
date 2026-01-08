@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff005925960900000000
-2f22010308301a780ad7a5a2594a9624
-1450542dcf00d1c0b300010181808140
-81c001010101023a801871382d40582c
-4500dd0c1100001e662156aa51001e30
-468f330010090000001e312e40006284
-223058a8350010090000001c000000fc
-004c583231352056380a202020200063
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 59 25 96 09 00 00 00 00
+2f 22 01 03 08 30 1a 78 0a d7 a5 a2 59 4a 96 24
+14 50 54 2d cf 00 d1 c0 b3 00 01 01 81 80 81 40
+81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 10 09 00 00 00 1e 31 2e 40 00 62 84
+22 30 58 a8 35 00 10 09 00 00 00 1c 00 00 00 fc
+00 4c 58 32 31 35 20 56 38 0a 20 20 20 20 00 63
 
 00 ff ff ff ff ff ff 00 59 25 96 09 00 00 00 00
 2f 22 01 03 08 30 1a 78 0a d7 a5 a2 59 4a 96 24
@@ -71,3 +69,31 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   26 Vpol P
     Display Product Name: 'LX215 V8'
 Checksum: 0x63
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 59 25 96 09 00 00 00 00 '........Y%......'
+  2f 22 01 03 08 30 1a 78 0a d7 a5 a2 59 4a 96 24 '/"...0.x....YJ.$'
+  14 50 54 2d cf 00 d1 c0 b3 00 01 01 81 80 81 40 '.PT-...........@'
+  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 66 21 56 aa 51 00 1e 30 'E.......f!V.Q..0'
+  46 8f 33 00 10 09 00 00 00 1e 31 2e 40 00 62 84 'F.3.......1.@.b.'
+  22 30 58 a8 35 00 10 09 00 00 00 1c 00 00 00 fc '"0X.5...........'
+  00 4c 58 32 31 35 20 56 38 0a 20 20 20 20 00 63 '.LX215 V8.    .c'
+Checksum: 0x63
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Mismatch of image size 16x9 mm vs display size 480x260 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 16x9 mm vs display size 480x260 mm.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002131045042f43101
-290f010308211b782aaea5a6544c9926
-145054a54f0081800101010101010101
-010101010101302a009851002a403070
-1300510e1100001e100bd0b420903110
-126cd200510e1100001c000000fd0038
-4b1f510e000a202020202020000000fc
-00423730410a202020202020202000b1
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 31 04 50 42 f4 31 01
+29 0f 01 03 08 21 1b 78 2a ae a5 a6 54 4c 99 26
+14 50 54 a5 4f 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 51 0e 11 00 00 1e 10 0b d0 b4 20 90 31 10
+12 6c d2 00 51 0e 11 00 00 1c 00 00 00 fd 00 38
+4b 1f 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 37 30 41 0a 20 20 20 20 20 20 20 20 00 b1
 
 00 ff ff ff ff ff ff 00 21 31 04 50 42 f4 31 01
 29 0f 01 03 08 21 1b 78 2a ae a5 a6 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HIQ
     Model: 20484
-    Serial Number: 20051010
+    Serial Number: ...
     Made in: week 41 of 2005
   Basic Display Parameters & Features:
     Analog display
@@ -67,3 +65,27 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 56-75 Hz V, 31-81 kHz H, max dotclock 140 MHz
     Display Product Name: 'B70A'
 Checksum: 0xb1
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 21 31 04 50 42 f4 31 01 '........!1.PB.1.'
+  29 0f 01 03 08 21 1b 78 2a ae a5 a6 54 4c 99 26 ')....!.x*...TL.&'
+  14 50 54 a5 4f 00 81 80 01 01 01 01 01 01 01 01 '.PT.O...........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 51 0e 11 00 00 1e 10 0b d0 b4 20 90 31 10 '..Q......... .1.'
+  12 6c d2 00 51 0e 11 00 00 1c 00 00 00 fd 00 38 '.l..Q..........8'
+  4b 1f 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
+  00 42 37 30 41 0a 20 20 20 20 20 20 20 20 00 b1 '.B70A.        ..'
+Checksum: 0xb1
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

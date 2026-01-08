@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000ed4701901010101
-0113010300291a782ed7a5a2594a9624
-145054bfef8095008180814071408100
-810f81c081cf9a29a0d0518422305098
-36009a001100001c8435a0f051842a30
-609836009a001100001c000000fd0031
-4c1e520e000a202020202020000000fc
-004356543139373044570a0a0a0a00a0
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e d4 70 19 01 01 01 01
+01 13 01 03 00 29 1a 78 2e d7 a5 a2 59 4a 96 24
+14 50 54 bf ef 80 95 00 81 80 81 40 71 40 81 00
+81 0f 81 c0 81 cf 9a 29 a0 d0 51 84 22 30 50 98
+36 00 9a 00 11 00 00 1c 84 35 a0 f0 51 84 2a 30
+60 98 36 00 9a 00 11 00 00 1c 00 00 00 fd 00 31
+4c 1e 52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 56 54 31 39 37 30 44 57 0a 0a 0a 0a 00 a0
 
 00 ff ff ff ff ff ff 00 0e d4 70 19 01 01 01 01
 01 13 01 03 00 29 1a 78 2e d7 a5 a2 59 4a 96 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: CVT
     Model: 6512
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 1 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -80,3 +78,30 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 49-76 Hz V, 30-82 kHz H, max dotclock 140 MHz
     Display Product Name: 'CVT1970DW'
 Checksum: 0xa0
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e d4 70 19 01 01 01 01 '..........p.....'
+  01 13 01 03 00 29 1a 78 2e d7 a5 a2 59 4a 96 24 '.....).x....YJ.$'
+  14 50 54 bf ef 80 95 00 81 80 81 40 71 40 81 00 '.PT........@q@..'
+  81 0f 81 c0 81 cf 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 9a 00 11 00 00 1c 84 35 a0 f0 51 84 2a 30 '6........5..Q.*0'
+  60 98 36 00 9a 00 11 00 00 1c 00 00 00 fd 00 31 '`.6............1'
+  4c 1e 52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.R...      ....'
+  00 43 56 54 31 39 37 30 44 57 0a 0a 0a 0a 00 a0 '.CVT1970DW......'
+Checksum: 0xa0
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Name: Non-space after newline.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030aeae6641483152
-071f01046c351e782e64f5a854519d26
-155054adcf008180818a81009500a9c0
-b300d1c00101023a801871382d40582c
-45000f282100001e000000ff00553736
-30523148410a20202020000000fd0030
-4b1e5311000a202020202020000000fc
-004432342d32300a2020202020200096
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae ae 66 41 48 31 52
+07 1f 01 04 6c 35 1e 78 2e 64 f5 a8 54 51 9d 26
+15 50 54 ad cf 00 81 80 81 8a 81 00 95 00 a9 c0
+b3 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 ff 00 55 37 36
+30 52 31 48 41 0a 20 20 20 20 00 00 00 fd 00 30
+4b 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 44 32 34 2d 32 30 0a 20 20 20 20 20 20 00 96
 
 00 ff ff ff ff ff ff 00 30 ae ae 66 41 48 31 52
 07 1f 01 04 6c 35 1e 78 2e 64 f5 a8 54 51 9d 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 26286
-    Serial Number: 1378961473
+    Serial Number: ...
     Made in: week 7 of 2021
   Basic Display Parameters & Features:
     Analog display
@@ -69,8 +67,40 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'U760R1HA'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 48-75 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'D24-20'
 Checksum: 0x96
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae ae 66 41 48 31 52 '........0..fAH1R'
+  07 1f 01 04 6c 35 1e 78 2e 64 f5 a8 54 51 9d 26 '....l5.x.d..TQ.&'
+  15 50 54 ad cf 00 81 80 81 8a 81 00 95 00 a9 c0 '.PT.............'
+  b3 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 ff 00 55 37 36 'E..(!........U76'
+  30 52 31 48 41 0a 20 20 20 20 00 00 00 fd 00 30 '0R1HA.    .....0'
+  4b 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 44 32 34 2d 32 30 0a 20 20 20 20 20 20 00 96 '.D24-20.      ..'
+Checksum: 0x96
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00416275039a9c4034
-2c170103682917782a54a5a55551a027
-0f5054bfee0081c08100010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000fd00374c1e
-5009000a202020202020000000ff0044
-32554545303031343230300a000000fc
-00566973656f31393344580a202000a0
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 62 75 03 9a 9c 40 34
+2c 17 01 03 68 29 17 78 2a 54 a5 a5 55 51 a0 27
+0f 50 54 bf ee 00 81 c0 81 00 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 fd 00 37 4c 1e
+50 09 00 0a 20 20 20 20 20 20 00 00 00 ff 00 44
+32 55 45 45 30 30 31 34 32 30 30 0a 00 00 00 fc
+00 56 69 73 65 6f 31 39 33 44 58 0a 20 20 00 a0
 
 00 ff ff ff ff ff ff 00 41 62 75 03 9a 9c 40 34
 2c 17 01 03 68 29 17 78 2a 54 a5 a5 55 51 a0 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PKB
     Model: 885
-    Serial Number: 876649626
+    Serial Number: ...
     Made in: week 44 of 2013
   Basic Display Parameters & Features:
     Analog display
@@ -67,8 +65,30 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   3 Vback   24 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 30-80 kHz H, max dotclock 90 MHz
-    Display Product Serial Number: 'D2UEE0014200'
+    Display Product Serial Number: ...
     Display Product Name: 'Viseo193DX'
 Checksum: 0xa0
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 62 75 03 9a 9c 40 34 '........Abu...@4'
+  2c 17 01 03 68 29 17 78 2a 54 a5 a5 55 51 a0 27 ',...h).x*T..UQ.''
+  0f 50 54 bf ee 00 81 c0 81 00 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 fd 00 37 4c 1e '3............7L.'
+  50 09 00 0a 20 20 20 20 20 20 00 00 00 ff 00 44 'P...      .....D'
+  32 55 45 45 30 30 31 34 32 30 30 0a 00 00 00 fc '2UEE0014200.....'
+  00 56 69 73 65 6f 31 39 33 44 58 0a 20 20 00 a0 '.Viseo193DX.  ..'
+Checksum: 0xa0
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

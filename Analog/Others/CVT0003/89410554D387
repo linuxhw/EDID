@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000ed40300a9900200
-0f1001030800000001ee95a3544c9926
-0f5054adcf0081800101010101010101
-0101010101016c399030621a274068b0
-360000000000000000000010001a3140
-78b0360000000000000000000010001a
-314078b03600000000000000000000fe
-0043565445313638302a313035300080
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e d4 03 00 a9 90 02 00
+0f 10 01 03 08 00 00 00 01 ee 95 a3 54 4c 99 26
+0f 50 54 ad cf 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 6c 39 90 30 62 1a 27 40 68 b0
+36 00 00 00 00 00 00 00 00 00 00 10 00 1a 31 40
+78 b0 36 00 00 00 00 00 00 00 00 00 00 10 00 1a
+31 40 78 b0 36 00 00 00 00 00 00 00 00 00 00 fe
+00 43 56 54 45 31 36 38 30 2a 31 30 35 30 00 80
 
 00 ff ff ff ff ff ff 00 0e d4 03 00 a9 90 02 00
 0f 10 01 03 08 00 00 00 01 ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: CVT
     Model: 3
-    Serial Number: 168105
+    Serial Number: ...
     Made in: week 15 of 2006
   Basic Display Parameters & Features:
     Analog display
@@ -65,3 +63,33 @@ Block 0, Base EDID:
     Dummy Descriptor:
     Alphanumeric Data String: 'CVTE1680*1050'
 Checksum: 0x80
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e d4 03 00 a9 90 02 00 '................'
+  0f 10 01 03 08 00 00 00 01 ee 95 a3 54 4c 99 26 '............TL.&'
+  0f 50 54 ad cf 00 81 80 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 6c 39 90 30 62 1a 27 40 68 b0 '......l9.0b.'@h.'
+  36 00 00 00 00 00 00 00 00 00 00 10 00 1a 31 40 '6.............1@'
+  78 b0 36 00 00 00 00 00 00 00 00 00 00 10 00 1a 'x.6.............'
+  31 40 78 b0 36 00 00 00 00 00 00 00 00 00 00 fe '1@x.6...........'
+  00 43 56 54 45 31 36 38 30 2a 31 30 35 30 00 80 '.CVTE1680*1050..'
+Checksum: 0x80
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

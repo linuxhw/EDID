@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002283409c00000000
-140b01016821197ae826a29c576c9626
-10484ffffe80315945596159314a8140
-614001010101302a80c0416024304080
-13002ce11000001e302a009851002a40
-307013002ce11000001e000000fd0032
-a01e46ff000a202020202020000000fc
-00434d363231460a202020202020002d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 83 40 9c 00 00 00 00
+14 0b 01 01 68 21 19 7a e8 26 a2 9c 57 6c 96 26
+10 48 4f ff fe 80 31 59 45 59 61 59 31 4a 81 40
+61 40 01 01 01 01 30 2a 80 c0 41 60 24 30 40 80
+13 00 2c e1 10 00 00 1e 30 2a 00 98 51 00 2a 40
+30 70 13 00 2c e1 10 00 00 1e 00 00 00 fd 00 32
+a0 1e 46 ff 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 4d 36 32 31 46 0a 20 20 20 20 20 20 00 2d
 
 00 ff ff ff ff ff ff 00 22 83 40 9c 00 00 00 00
 14 0b 01 01 68 21 19 7a e8 26 a2 9c 57 6c 96 26
@@ -77,3 +75,35 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 50-160 Hz V, 30-70 kHz H, max dotclock 2550 MHz
     Display Product Name: 'CM621F'
 Checksum: 0x2d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 83 40 9c 00 00 00 00 '........".@.....'
+  14 0b 01 01 68 21 19 7a e8 26 a2 9c 57 6c 96 26 '....h!.z.&..Wl.&'
+  10 48 4f ff fe 80 31 59 45 59 61 59 31 4a 81 40 '.HO...1YEYaY1J.@'
+  61 40 01 01 01 01 30 2a 80 c0 41 60 24 30 40 80 'a@....0*..A`$0@.'
+  13 00 2c e1 10 00 00 1e 30 2a 00 98 51 00 2a 40 '..,.....0*..Q.*@'
+  30 70 13 00 2c e1 10 00 00 1e 00 00 00 fd 00 32 '0p..,..........2'
+  a0 1e 46 ff 00 0a 20 20 20 20 20 20 00 00 00 fc '..F...      ....'
+  00 43 4d 36 32 31 46 0a 20 20 20 20 20 20 00 2d '.CM621F.      .-'
+Checksum: 0x2d
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 300x225 mm vs display size 330x250 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 300x225 mm vs display size 330x250 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030aeb46101010101
-031c01036c3420782e5595a9544c9e24
-0d5054bdcf00d1c0714f818c81008180
-950f9500b300283c80a070b023403020
-360006442100001a000000ff00563330
-3139544e480a20202020000000fd0032
-4b1e5315000a202020202020000000fc
-004c454e20543234642d31300a200045
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae b4 61 01 01 01 01
+03 1c 01 03 6c 34 20 78 2e 55 95 a9 54 4c 9e 24
+0d 50 54 bd cf 00 d1 c0 71 4f 81 8c 81 00 81 80
+95 0f 95 00 b3 00 28 3c 80 a0 70 b0 23 40 30 20
+36 00 06 44 21 00 00 1a 00 00 00 ff 00 56 33 30
+31 39 54 4e 48 0a 20 20 20 20 00 00 00 fd 00 32
+4b 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 45 4e 20 54 32 34 64 2d 31 30 0a 20 00 45
 
 00 ff ff ff ff ff ff 00 30 ae b4 61 01 01 01 01
 03 1c 01 03 6c 34 20 78 2e 55 95 a9 54 4c 9e 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 25012
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 3 of 2018
   Basic Display Parameters & Features:
     Analog display
@@ -71,8 +69,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (518 mm x 324 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   26 Vpol N
-    Display Product Serial Number: 'V3019TNH'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-83 kHz H, max dotclock 210 MHz
     Display Product Name: 'LEN T24d-10'
 Checksum: 0x45
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae b4 61 01 01 01 01 '........0..a....'
+  03 1c 01 03 6c 34 20 78 2e 55 95 a9 54 4c 9e 24 '....l4 x.U..TL.$'
+  0d 50 54 bd cf 00 d1 c0 71 4f 81 8c 81 00 81 80 '.PT.....qO......'
+  95 0f 95 00 b3 00 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
+  36 00 06 44 21 00 00 1a 00 00 00 ff 00 56 33 30 '6..D!........V30'
+  31 39 54 4e 48 0a 20 20 20 20 00 00 00 fd 00 32 '19TNH.    .....2'
+  4b 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 4c 45 4e 20 54 32 34 64 2d 31 30 0a 20 00 45 '.LEN T24d-10. .E'
+Checksum: 0x45
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

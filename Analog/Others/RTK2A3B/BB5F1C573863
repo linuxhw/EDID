@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004a8b3b2a01010101
-1e1301030e331d78efee91a3544c9926
-0f5054efef8081c0a9c0d1c095008140
-81809040a9407d4b80a072b02d4050c8
-4648fe221100001e000000fd0032550a
-6e15000a202020202020000000fc0052
-544b2031323030500a202020000000ff
-0052544430313032303330340a200083
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4a 8b 3b 2a 01 01 01 01
+1e 13 01 03 0e 33 1d 78 ef ee 91 a3 54 4c 99 26
+0f 50 54 ef ef 80 81 c0 a9 c0 d1 c0 95 00 81 40
+81 80 90 40 a9 40 7d 4b 80 a0 72 b0 2d 40 50 c8
+46 48 fe 22 11 00 00 1e 00 00 00 fd 00 32 55 0a
+6e 15 00 0a 20 20 20 20 20 20 00 00 00 fc 00 52
+54 4b 20 31 32 30 30 50 0a 20 20 20 00 00 00 ff
+00 52 54 44 30 31 30 32 30 33 30 34 0a 20 00 83
 
 00 ff ff ff ff ff ff 00 4a 8b 3b 2a 01 01 01 01
 1e 13 01 03 0e 33 1d 78 ef ee 91 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: RTK
     Model: 10811
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 30 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -78,5 +76,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-85 Hz V, 10-110 kHz H, max dotclock 210 MHz
     Display Product Name: 'RTK 1200P'
-    Display Product Serial Number: 'RTD01020304'
+    Display Product Serial Number: ...
 Checksum: 0x83
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4a 8b 3b 2a 01 01 01 01 '........J.;*....'
+  1e 13 01 03 0e 33 1d 78 ef ee 91 a3 54 4c 99 26 '.....3.x....TL.&'
+  0f 50 54 ef ef 80 81 c0 a9 c0 d1 c0 95 00 81 40 '.PT............@'
+  81 80 90 40 a9 40 7d 4b 80 a0 72 b0 2d 40 50 c8 '...@.@}K..r.-@P.'
+  46 48 fe 22 11 00 00 1e 00 00 00 fd 00 32 55 0a 'FH.".........2U.'
+  6e 15 00 0a 20 20 20 20 20 20 00 00 00 fc 00 52 'n...      .....R'
+  54 4b 20 31 32 30 30 50 0a 20 20 20 00 00 00 ff 'TK 1200P.   ....'
+  00 52 54 44 30 31 30 32 30 33 30 34 0a 20 00 83 '.RTD01020304. ..'
+Checksum: 0x83
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x45.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 87.850 Hz (Monitor: 50.000 - 85.000 Hz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

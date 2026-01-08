@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0026cd0a4801010000
-2b0d01030e261e782ac830a3584c9a25
-125054bfef008180714f010101010101
-010101010101302a009851002a403070
-1300782d1100001e000000ff00303532
-33374733413030323537000000fd0037
-4c18530e000a202020202020000000fc
-00504c453438310a202020202020006c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cd 0a 48 01 01 00 00
+2b 0d 01 03 0e 26 1e 78 2a c8 30 a3 58 4c 9a 25
+12 50 54 bf ef 00 81 80 71 4f 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 ff 00 30 35 32
+33 37 47 33 41 30 30 32 35 37 00 00 00 fd 00 37
+4c 18 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 4c 45 34 38 31 0a 20 20 20 20 20 20 00 6c
 
 00 ff ff ff ff ff ff 00 26 cd 0a 48 01 01 00 00
 2b 0d 01 03 0e 26 1e 78 2a c8 30 a3 58 4c 9a 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IVM
     Model: 18442
-    Serial Number: 257
+    Serial Number: ...
     Made in: week 43 of 2003
   Basic Display Parameters & Features:
     Analog display
@@ -66,8 +64,32 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (376 mm x 301 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: '05237G3A00257'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 24-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'PLE481'
 Checksum: 0x6c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cd 0a 48 01 01 00 00 '........&..H....'
+  2b 0d 01 03 0e 26 1e 78 2a c8 30 a3 58 4c 9a 25 '+....&.x*.0.XL.%'
+  12 50 54 bf ef 00 81 80 71 4f 01 01 01 01 01 01 '.PT.....qO......'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 ff 00 30 35 32 '..x-.........052'
+  33 37 47 33 41 30 30 32 35 37 00 00 00 fd 00 37 '37G3A00257.....7'
+  4c 18 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 50 4c 45 34 38 31 0a 20 20 20 20 20 20 00 6c '.PLE481.      .l'
+Checksum: 0x6c
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c6708e70b0000
-331101030e3420782ec5c4a3574a9c23
-124f52bfef807140814081c09500950f
-a940b300d100283c80a070b023403020
-360007442100001e000000ff00464531
-30373530303033303437000000fc0050
-68696c697073203234304257000000fd
-00384c1e5311000a2020202020200085
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 67 08 e7 0b 00 00
+33 11 01 03 0e 34 20 78 2e c5 c4 a3 57 4a 9c 23
+12 4f 52 bf ef 80 71 40 81 40 81 c0 95 00 95 0f
+a9 40 b3 00 d1 00 28 3c 80 a0 70 b0 23 40 30 20
+36 00 07 44 21 00 00 1e 00 00 00 ff 00 46 45 31
+30 37 35 30 30 30 33 30 34 37 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 32 34 30 42 57 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 85
 
 00 ff ff ff ff ff ff 00 41 0c 67 08 e7 0b 00 00
 33 11 01 03 0e 34 20 78 2e c5 c4 a3 57 4a 9c 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 2151
-    Serial Number: 3047
+    Serial Number: ...
     Made in: week 51 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -74,8 +72,41 @@ Block 0, Base EDID:
     DTD 1:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (519 mm x 324 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   26 Vpol P
-    Display Product Serial Number: 'FE10750003047'
+    Display Product Serial Number: ...
     Display Product Name: 'Philips 240BW'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x85
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 67 08 e7 0b 00 00 '........A.g.....'
+  33 11 01 03 0e 34 20 78 2e c5 c4 a3 57 4a 9c 23 '3....4 x....WJ.#'
+  12 4f 52 bf ef 80 71 40 81 40 81 c0 95 00 95 0f '.OR...q@.@......'
+  a9 40 b3 00 d1 00 28 3c 80 a0 70 b0 23 40 30 20 '.@....(<..p.#@0 '
+  36 00 07 44 21 00 00 1e 00 00 00 ff 00 46 45 31 '6..D!........FE1'
+  30 37 35 30 30 30 33 30 34 37 00 00 00 fc 00 50 '0750003047.....P'
+  68 69 6c 69 70 73 20 32 34 30 42 57 00 00 00 fd 'hilips 240BW....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 85 '.8L.S...      ..'
+Checksum: 0x85
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x44.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0021342160db0a0000
-31110103082f1d78eade95a3544c9926
-0f5054bfef80904f714f010101019500
-950fb300010108399030621a274068b0
-3600d92811000019000000fd00384c1f
-5310000a202020202020000000ff0058
-323230574237423032373739000000fc
-00583232305720442d7375620a2000f4
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 34 21 60 db 0a 00 00
+31 11 01 03 08 2f 1d 78 ea de 95 a3 54 4c 99 26
+0f 50 54 bf ef 80 90 4f 71 4f 01 01 01 01 95 00
+95 0f b3 00 01 01 08 39 90 30 62 1a 27 40 68 b0
+36 00 d9 28 11 00 00 19 00 00 00 fd 00 38 4c 1f
+53 10 00 0a 20 20 20 20 20 20 00 00 00 ff 00 58
+32 32 30 57 42 37 42 30 32 37 37 39 00 00 00 fc
+00 58 32 32 30 57 20 44 2d 73 75 62 0a 20 00 f4
 
 00 ff ff ff ff ff ff 00 21 34 21 60 db 0a 00 00
 31 11 01 03 08 2f 1d 78 ea de 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HIT
     Model: 24609
-    Serial Number: 2779
+    Serial Number: ...
     Made in: week 49 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -72,6 +70,30 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   6 Vback   30 Vpol N
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 160 MHz
-    Display Product Serial Number: 'X220WB7B02779'
+    Display Product Serial Number: ...
     Display Product Name: 'X220W D-sub'
 Checksum: 0xf4
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 21 34 21 60 db 0a 00 00 '........!4!`....'
+  31 11 01 03 08 2f 1d 78 ea de 95 a3 54 4c 99 26 '1..../.x....TL.&'
+  0f 50 54 bf ef 80 90 4f 71 4f 01 01 01 01 95 00 '.PT....OqO......'
+  95 0f b3 00 01 01 08 39 90 30 62 1a 27 40 68 b0 '.......9.0b.'@h.'
+  36 00 d9 28 11 00 00 19 00 00 00 fd 00 38 4c 1f '6..(.........8L.'
+  53 10 00 0a 20 20 20 20 20 20 00 00 00 ff 00 58 'S...      .....X'
+  32 32 30 57 42 37 42 30 32 37 37 39 00 00 00 fc '220WB7B02779....'
+  00 58 32 32 30 57 20 44 2d 73 75 62 0a 20 00 f4 '.X220W D-sub. ..'
+Checksum: 0xf4
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

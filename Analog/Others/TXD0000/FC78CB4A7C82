@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff005304000096111209
-003a01031e0000782ac905a3574b9c25
-125054afcf00818a8180010101010101
-0101010101012f2640a060841a303020
-350000000000001c0000001000313534
-574d5330393132313139000000fd0038
-4b26510e000a202020202020000000fc
-005647410a20202020202020202000f0
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 53 04 00 00 96 11 12 09
+00 3a 01 03 1e 00 00 78 2a c9 05 a3 57 4b 9c 25
+12 50 54 af cf 00 81 8a 81 80 01 01 01 01 01 01
+01 01 01 01 01 01 2f 26 40 a0 60 84 1a 30 30 20
+35 00 00 00 00 00 00 1c 00 00 00 10 00 31 35 34
+57 4d 53 30 39 31 32 31 31 39 00 00 00 fd 00 38
+4b 26 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 47 41 0a 20 20 20 20 20 20 20 20 20 00 f0
 
 00 ff ff ff ff ff ff 00 53 04 00 00 96 11 12 09
 00 3a 01 03 1e 00 00 78 2a c9 05 a3 57 4b 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: TXD
     Model: 0
-    Serial Number: 152179094
+    Serial Number: ...
     Made in: 2048
   Basic Display Parameters & Features:
     Analog display
@@ -69,3 +67,32 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 56-75 Hz V, 38-81 kHz H, max dotclock 140 MHz
     Display Product Name: 'VGA'
 Checksum: 0xf0
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 53 04 00 00 96 11 12 09 '........S.......'
+  00 3a 01 03 1e 00 00 78 2a c9 05 a3 57 4b 9c 25 '.:.....x*...WK.%'
+  12 50 54 af cf 00 81 8a 81 80 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 2f 26 40 a0 60 84 1a 30 30 20 '....../&@.`..00 '
+  35 00 00 00 00 00 00 1c 00 00 00 10 00 31 35 34 '5............154'
+  57 4d 53 30 39 31 32 31 31 39 00 00 00 fd 00 38 'WMS0912119.....8'
+  4b 26 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K&Q...      ....'
+  00 56 47 41 0a 20 20 20 20 20 20 20 20 20 00 f0 '.VGA.         ..'
+Checksum: 0xf0
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The year 2048 is more than one year in the future.
+  Dummy Descriptor: Dummy block filled with garbage.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 38.000 - 81.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0038a3336701010101
-27120103082f1e78eaee95a3544c9926
-0f5054bfef8081c0814081808bc09500
-9040b300714f21399030621a274018b0
-3640da281100001c000000fd00384b1f
-5311000a202020202020000000fc004c
-4344323234574d0a20202020000000ff
-00383931303438343854420a202000b8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 a3 33 67 01 01 01 01
+27 12 01 03 08 2f 1e 78 ea ee 95 a3 54 4c 99 26
+0f 50 54 bf ef 80 81 c0 81 40 81 80 8b c0 95 00
+90 40 b3 00 71 4f 21 39 90 30 62 1a 27 40 18 b0
+36 40 da 28 11 00 00 1c 00 00 00 fd 00 38 4b 1f
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+43 44 32 32 34 57 4d 0a 20 20 20 20 00 00 00 ff
+00 38 39 31 30 34 38 34 38 54 42 0a 20 20 00 b8
 
 00 ff ff ff ff ff ff 00 38 a3 33 67 01 01 01 01
 27 12 01 03 08 2f 1e 78 ea ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: NEC
     Model: 26419
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 39 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -76,5 +74,35 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 31-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'LCD224WM'
-    Display Product Serial Number: '89104848TB'
+    Display Product Serial Number: ...
 Checksum: 0xb8
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 38 a3 33 67 01 01 01 01 '........8.3g....'
+  27 12 01 03 08 2f 1e 78 ea ee 95 a3 54 4c 99 26 ''..../.x....TL.&'
+  0f 50 54 bf ef 80 81 c0 81 40 81 80 8b c0 95 00 '.PT......@......'
+  90 40 b3 00 71 4f 21 39 90 30 62 1a 27 40 18 b0 '.@..qO!9.0b.'@..'
+  36 40 da 28 11 00 00 1c 00 00 00 fd 00 38 4b 1f '6@.(.........8K.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'S...      .....L'
+  43 44 32 32 34 57 4d 0a 20 20 20 20 00 00 00 ff 'CD224WM.    ....'
+  00 38 39 31 30 34 38 34 38 54 42 0a 20 20 00 b8 '.89104848TB.  ..'
+Checksum: 0xb8
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x3a.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

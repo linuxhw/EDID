@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000590002401010101
-0019010368351e782ea3e5a3564c9d26
-0d5054bfef008180a9c0b300950081c0
-010101010101023a801871382d40582c
-450010292100001e000000ff00313530
-3032343030303030310a000000fd0037
-4c1e5311000a202020202020000000fc
-0032343030204144530a202020200052
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 90 00 24 01 01 01 01
+00 19 01 03 68 35 1e 78 2e a3 e5 a3 56 4c 9d 26
+0d 50 54 bf ef 00 81 80 a9 c0 b3 00 95 00 81 c0
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 10 29 21 00 00 1e 00 00 00 ff 00 31 35 30
+30 32 34 30 30 30 30 30 31 0a 00 00 00 fd 00 37
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 32 34 30 30 20 41 44 53 0a 20 20 20 20 00 52
 
 00 ff ff ff ff ff ff 00 05 90 00 24 01 01 01 01
 00 19 01 03 68 35 1e 78 2e a3 e5 a3 56 4c 9d 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ALP
     Model: 9216
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: 2015
   Basic Display Parameters & Features:
     Analog display
@@ -70,8 +68,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (528 mm x 297 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '150024000001'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: '2400 ADS'
 Checksum: 0x52
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 90 00 24 01 01 01 01 '...........$....'
+  00 19 01 03 68 35 1e 78 2e a3 e5 a3 56 4c 9d 26 '....h5.x....VL.&'
+  0d 50 54 bf ef 00 81 80 a9 c0 b3 00 95 00 81 c0 '.PT.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 10 29 21 00 00 1e 00 00 00 ff 00 31 35 30 'E..)!........150'
+  30 32 34 30 30 30 30 30 31 0a 00 00 00 fd 00 37 '024000001......7'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 32 34 30 30 20 41 44 53 0a 20 20 20 20 00 52 '.2400 ADS.    .R'
+Checksum: 0x52
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

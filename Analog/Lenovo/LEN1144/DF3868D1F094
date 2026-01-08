@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030ae441101010101
-321301036c342078ee9ec5a6564b9a25
-135054adcf0031468180818c9500950f
-b300a940d1c0283c80a070b023403020
-360006442100001a1a3680a070381f40
-3020350006442100001a000000fd0032
-4b1e5e15000a202020202020000000ff
-00564e2d31393036370a202020200010
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 44 11 01 01 01 01
+32 13 01 03 6c 34 20 78 ee 9e c5 a6 56 4b 9a 25
+13 50 54 ad cf 00 31 46 81 80 81 8c 95 00 95 0f
+b3 00 a9 40 d1 c0 28 3c 80 a0 70 b0 23 40 30 20
+36 00 06 44 21 00 00 1a 1a 36 80 a0 70 38 1f 40
+30 20 35 00 06 44 21 00 00 1a 00 00 00 fd 00 32
+4b 1e 5e 15 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 56 4e 2d 31 39 30 36 37 0a 20 20 20 20 00 10
 
 00 ff ff ff ff ff ff 00 30 ae 44 11 01 01 01 01
 32 13 01 03 6c 34 20 78 ee 9e c5 a6 56 4b 9a 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 4420
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 50 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -75,5 +73,32 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   23 Vpol N
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-94 kHz H, max dotclock 210 MHz
-    Display Product Serial Number: 'VN-19067'
+    Display Product Serial Number: ...
 Checksum: 0x10
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 44 11 01 01 01 01 '........0.D.....'
+  32 13 01 03 6c 34 20 78 ee 9e c5 a6 56 4b 9a 25 '2...l4 x....VK.%'
+  13 50 54 ad cf 00 31 46 81 80 81 8c 95 00 95 0f '.PT...1F........'
+  b3 00 a9 40 d1 c0 28 3c 80 a0 70 b0 23 40 30 20 '...@..(<..p.#@0 '
+  36 00 06 44 21 00 00 1a 1a 36 80 a0 70 38 1f 40 '6..D!....6..p8.@'
+  30 20 35 00 06 44 21 00 00 1a 00 00 00 fd 00 32 '0 5..D!........2'
+  4b 1e 5e 15 00 0a 20 20 20 20 20 20 00 00 00 ff 'K.^...      ....'
+  00 56 4e 2d 31 39 30 36 37 0a 20 20 20 20 00 10 '.VN-19067.    ..'
+Checksum: 0x10
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Missing Display Product Name.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

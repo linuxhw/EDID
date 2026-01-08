@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c290839fd0300
-1d0f01030e1e1778eab1a5a1584f9526
-165054bfee0001010101010101010101
-01010101010164190040410026301888
-360033e610000018000000ff0020425a
-20203236313433330a20000000fc0050
-68696c69707320313530530a000000fd
-00384c1e3f08000a202020202020004f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 29 08 39 fd 03 00
+1d 0f 01 03 0e 1e 17 78 ea b1 a5 a1 58 4f 95 26
+16 50 54 bf ee 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 33 e6 10 00 00 18 00 00 00 ff 00 20 42 5a
+20 20 32 36 31 34 33 33 0a 20 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 31 35 30 53 0a 00 00 00 fd
+00 38 4c 1e 3f 08 00 0a 20 20 20 20 20 20 00 4f
 
 00 ff ff ff ff ff ff 00 41 0c 29 08 39 fd 03 00
 1d 0f 01 03 0e 1e 17 78 ea b1 a5 a1 58 4f 95 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 2089
-    Serial Number: 261433
+    Serial Number: ...
     Made in: week 29 of 2005
   Basic Display Parameters & Features:
     Analog display
@@ -63,8 +61,32 @@ Block 0, Base EDID:
     DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (307 mm x 230 mm)
                  Hfront   24 Hsync 136 Hback  160 Hpol N
                  Vfront    3 Vsync   6 Vback   29 Vpol N
-    Display Product Serial Number: ' BZ  261433'
+    Display Product Serial Number: ...
     Display Product Name: 'Philips 150S'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-63 kHz H, max dotclock 80 MHz
 Checksum: 0x4f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 29 08 39 fd 03 00 '........A.).9...'
+  1d 0f 01 03 0e 1e 17 78 ea b1 a5 a1 58 4f 95 26 '.......x....XO.&'
+  16 50 54 bf ee 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 33 e6 10 00 00 18 00 00 00 ff 00 20 42 5a '6.3.......... BZ'
+  20 20 32 36 31 34 33 33 0a 20 00 00 00 fc 00 50 '  261433. .....P'
+  68 69 6c 69 70 73 20 31 35 30 53 0a 00 00 00 fd 'hilips 150S.....'
+  00 38 4c 1e 3f 08 00 0a 20 20 20 20 20 20 00 4f '.8L.?...      .O'
+Checksum: 0x4f
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004297a506f2010000
-320f010368221b96ea6e06a1544c9926
-194f54bfef0081800101010101010101
-010101010101bc34009851002a401090
-1300520e1100001e000000fc004c5437
-3136730a202020202020000000fd003c
-4b1e500e000a202020202020000000ff
-00574a3751303543303030343938006d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 42 97 a5 06 f2 01 00 00
+32 0f 01 03 68 22 1b 96 ea 6e 06 a1 54 4c 99 26
+19 4f 54 bf ef 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90
+13 00 52 0e 11 00 00 1e 00 00 00 fc 00 4c 54 37
+31 36 73 0a 20 20 20 20 20 20 00 00 00 fd 00 3c
+4b 1e 50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 57 4a 37 51 30 35 43 30 30 30 34 39 38 00 6d
 
 00 ff ff ff ff ff ff 00 42 97 a5 06 f2 01 00 00
 32 0f 01 03 68 22 1b 96 ea 6e 06 a1 54 4c 99 26
@@ -27,11 +25,11 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PTW
     Model: 1701
-    Serial Number: 498
+    Serial Number: ...
     Made in: week 50 of 2005
   Basic Display Parameters & Features:
     Analog display
-    Input voltage level: 0.7/0.7 V
+    Signal Level Standard: 0.700 : 0.000 : 0.700 V p-p
     Blank level equals black level
     Sync: Separate
     Maximum image size: 34 cm x 27 cm
@@ -68,5 +66,31 @@ Block 0, Base EDID:
     Display Product Name: 'LT716s'
     Display Range Limits:
       Monitor ranges (GTF): 60-75 Hz V, 30-80 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: 'WJ7Q05C000498'
+    Display Product Serial Number: ...
 Checksum: 0x6d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 42 97 a5 06 f2 01 00 00 '........B.......'
+  32 0f 01 03 68 22 1b 96 ea 6e 06 a1 54 4c 99 26 '2...h"...n..TL.&'
+  19 4f 54 bf ef 00 81 80 01 01 01 01 01 01 01 01 '.OT.............'
+  01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90 '.......4..Q.*@..'
+  13 00 52 0e 11 00 00 1e 00 00 00 fc 00 4c 54 37 '..R..........LT7'
+  31 36 73 0a 20 20 20 20 20 20 00 00 00 fd 00 3c '16s.      .....<'
+  4b 1e 50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 'K.P...      ....'
+  00 57 4a 37 51 30 35 43 30 30 30 34 39 38 00 6d '.WJ7Q05C000498.m'
+Checksum: 0x6d
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 75.029 Hz (Monitor: 60.000 - 75.000 Hz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

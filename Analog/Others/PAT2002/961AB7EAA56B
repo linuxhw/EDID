@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0040340220a80a0000
-010d010308251e782aec55a5584a9a26
-215054bfef808180818f714f614f494f
-454f314f3140302a009851002a403070
-1300520e1100001e000000fd00384b1e
-520e000a202020202020000000ff0046
-435934333031543032373238000000fc
-004c43445f4d4f4e49544f520a2000af
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 40 34 02 20 a8 0a 00 00
+01 0d 01 03 08 25 1e 78 2a ec 55 a5 58 4a 9a 26
+21 50 54 bf ef 80 81 80 81 8f 71 4f 61 4f 49 4f
+45 4f 31 4f 31 40 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+52 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 46
+43 59 34 33 30 31 54 30 32 37 32 38 00 00 00 fc
+00 4c 43 44 5f 4d 4f 4e 49 54 4f 52 0a 20 00 af
 
 00 ff ff ff ff ff ff 00 40 34 02 20 a8 0a 00 00
 01 0d 01 03 08 25 1e 78 2a ec 55 a5 58 4a 9a 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PAT
     Model: 8194
-    Serial Number: 2728
+    Serial Number: ...
     Made in: week 1 of 2003
   Basic Display Parameters & Features:
     Analog display
@@ -75,6 +73,32 @@ Block 0, Base EDID:
                  Vfront    1 Vsync   3 Vback   38 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-82 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: 'FCY4301T02728'
+    Display Product Serial Number: ...
     Display Product Name: 'LCD_MONITOR'
 Checksum: 0xaf
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 40 34 02 20 a8 0a 00 00 '........@4. ....'
+  01 0d 01 03 08 25 1e 78 2a ec 55 a5 58 4a 9a 26 '.....%.x*.U.XJ.&'
+  21 50 54 bf ef 80 81 80 81 8f 71 4f 61 4f 49 4f '!PT.......qOaOIO'
+  45 4f 31 4f 31 40 30 2a 00 98 51 00 2a 40 30 70 'EO1O1@0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1e '..R..........8K.'
+  52 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 46 'R...      .....F'
+  43 59 34 33 30 31 54 30 32 37 32 38 00 00 00 fc 'CY4301T02728....'
+  00 4c 43 44 5f 4d 4f 4e 49 54 4f 52 0a 20 00 af '.LCD_MONITOR. ..'
+Checksum: 0xaf
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 338x270 mm vs display size 370x300 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

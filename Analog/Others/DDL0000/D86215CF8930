@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00108c000061010000
-1612010308301e782ae525a65444a125
-145054bfef0081808140714f9500950f
-b3000101010121399030621a27405018
-3e11de2c1100001c000000fd00384c1e
-5513000a202020202020000000fc0050
-33323232570a202020202020000000ff
-003030303335330a2020202020200018
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 8c 00 00 61 01 00 00
+16 12 01 03 08 30 1e 78 2a e5 25 a6 54 44 a1 25
+14 50 54 bf ef 00 81 80 81 40 71 4f 95 00 95 0f
+b3 00 01 01 01 01 21 39 90 30 62 1a 27 40 50 18
+3e 11 de 2c 11 00 00 1c 00 00 00 fd 00 38 4c 1e
+55 13 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50
+33 32 32 32 57 0a 20 20 20 20 20 20 00 00 00 ff
+00 30 30 30 33 35 33 0a 20 20 20 20 20 20 00 18
 
 00 ff ff ff ff ff ff 00 10 8c 00 00 61 01 00 00
 16 12 01 03 08 30 1e 78 2a e5 25 a6 54 44 a1 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DDL
     Model: 0
-    Serial Number: 353
+    Serial Number: ...
     Made in: week 22 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -73,5 +71,34 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-85 kHz H, max dotclock 190 MHz
     Display Product Name: 'P3222W'
-    Display Product Serial Number: '000353'
+    Display Product Serial Number: ...
 Checksum: 0x18
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 8c 00 00 61 01 00 00 '............a...'
+  16 12 01 03 08 30 1e 78 2a e5 25 a6 54 44 a1 25 '.....0.x*.%.TD.%'
+  14 50 54 bf ef 00 81 80 81 40 71 4f 95 00 95 0f '.PT......@qO....'
+  b3 00 01 01 01 01 21 39 90 30 62 1a 27 40 50 18 '......!9.0b.'@P.'
+  3e 11 de 2c 11 00 00 1c 00 00 00 fd 00 38 4c 1e '>..,.........8L.'
+  55 13 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50 'U...      .....P'
+  33 32 32 32 57 0a 20 20 20 20 20 20 00 00 00 ff '3222W.      ....'
+  00 30 30 30 33 35 33 0a 20 20 20 20 20 20 00 18 '.000353.      ..'
+Checksum: 0x18
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x3a.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

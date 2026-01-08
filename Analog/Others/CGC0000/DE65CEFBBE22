@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000ce3000001010101
-05150103002917782ac905a3574b9c25
-125054a74b008140818081008bc081cf
-010101010101342150b051001b304070
-3600520e1100001e000000ff00353035
-3344303031303030310a000000fd0038
-4b1f5109000a202020202020000000fc
-004c38570a6c713135360a202020005a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0c e3 00 00 01 01 01 01
+05 15 01 03 00 29 17 78 2a c9 05 a3 57 4b 9c 25
+12 50 54 a7 4b 00 81 40 81 80 81 00 8b c0 81 cf
+01 01 01 01 01 01 34 21 50 b0 51 00 1b 30 40 70
+36 00 52 0e 11 00 00 1e 00 00 00 ff 00 35 30 35
+33 44 30 30 31 30 30 30 31 0a 00 00 00 fd 00 38
+4b 1f 51 09 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 38 57 0a 6c 71 31 35 36 0a 20 20 20 00 5a
 
 00 ff ff ff ff ff ff 00 0c e3 00 00 01 01 01 01
 05 15 01 03 00 29 17 78 2a c9 05 a3 57 4b 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: CGC
     Model: 0
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 5 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -63,8 +61,43 @@ Block 0, Base EDID:
     DTD 1:  1360x768    59.664196 Hz  85:48    47.433 kHz     85.000000 MHz (338 mm x 270 mm)
                  Hfront   64 Hsync 112 Hback  256 Hpol P
                  Vfront    3 Vsync   6 Vback   18 Vpol P
-    Display Product Serial Number: '5053D0010001'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 31-81 kHz H, max dotclock 90 MHz
     Display Product Name: 'L8W'
 Checksum: 0x5a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0c e3 00 00 01 01 01 01 '................'
+  05 15 01 03 00 29 17 78 2a c9 05 a3 57 4b 9c 25 '.....).x*...WK.%'
+  12 50 54 a7 4b 00 81 40 81 80 81 00 8b c0 81 cf '.PT.K..@........'
+  01 01 01 01 01 01 34 21 50 b0 51 00 1b 30 40 70 '......4!P.Q..0@p'
+  36 00 52 0e 11 00 00 1e 00 00 00 ff 00 35 30 35 '6.R..........505'
+  33 44 30 30 31 30 30 30 31 0a 00 00 00 fd 00 38 '3D0010001......8'
+  4b 1f 51 09 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
+  00 4c 38 57 0a 6c 71 31 35 36 0a 20 20 20 00 5a '.L8W.lq156.   .Z'
+Checksum: 0x5a
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 338x270 mm vs display size 410x230 mm.
+  Display Product Name: Non-space after newline.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 135.000 MHz (Monitor: 90.000 MHz)
+  Base EDID: The DTD max image size is 338x270mm, which is larger than the display size 410.0x230.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

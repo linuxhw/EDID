@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003873244001010101
-1b10010308221b96ea6e06a1544c9926
-194f54bfef0081800101010101010101
-010101010101302a009851002a403070
-1300510e1100001e000000fc004e4543
-2043204c4331374d0a20000000fd003c
-4b1e500e000a202020202020000000ff
-003130383232303130333138380a002c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 73 24 40 01 01 01 01
+1b 10 01 03 08 22 1b 96 ea 6e 06 a1 54 4c 99 26
+19 4f 54 bf ef 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 51 0e 11 00 00 1e 00 00 00 fc 00 4e 45 43
+20 43 20 4c 43 31 37 4d 0a 20 00 00 00 fd 00 3c
+4b 1e 50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 31 30 38 32 32 30 31 30 33 31 38 38 0a 00 2c
 
 00 ff ff ff ff ff ff 00 38 73 24 40 01 01 01 01
 1b 10 01 03 08 22 1b 96 ea 6e 06 a1 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: NCS
     Model: 16420
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 27 of 2006
   Basic Display Parameters & Features:
     Analog display
@@ -68,5 +66,31 @@ Block 0, Base EDID:
     Display Product Name: 'NEC C LC17M'
     Display Range Limits:
       Monitor ranges (GTF): 60-75 Hz V, 30-80 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: '108220103188'
+    Display Product Serial Number: ...
 Checksum: 0x2c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 38 73 24 40 01 01 01 01 '........8s$@....'
+  1b 10 01 03 08 22 1b 96 ea 6e 06 a1 54 4c 99 26 '....."...n..TL.&'
+  19 4f 54 bf ef 00 81 80 01 01 01 01 01 01 01 01 '.OT.............'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 51 0e 11 00 00 1e 00 00 00 fc 00 4e 45 43 '..Q..........NEC'
+  20 43 20 4c 43 31 37 4d 0a 20 00 00 00 fd 00 3c ' C LC17M. .....<'
+  4b 1e 50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 'K.P...      ....'
+  00 31 30 38 32 32 30 31 30 33 31 38 38 0a 00 2c '.108220103188..,'
+Checksum: 0x2c
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 75.029 Hz (Monitor: 60.000 - 75.000 Hz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002134048001010101
-2912010308291a78ead6a5a2594a9524
-145054afcf0081809500950f01010101
-0101010101019a29a0d0518422305098
-36009a001100001c000000fc004e3930
-5720442d5375620a2020000000fd0038
-4b1e510e000a202020202020000000ff
-00305744535045384130313435370009
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 34 04 80 01 01 01 01
+29 12 01 03 08 29 1a 78 ea d6 a5 a2 59 4a 95 24
+14 50 54 af cf 00 81 80 95 00 95 0f 01 01 01 01
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 9a 00 11 00 00 1c 00 00 00 fc 00 4e 39 30
+57 20 44 2d 53 75 62 0a 20 20 00 00 00 fd 00 38
+4b 1e 51 0e 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 30 57 44 53 50 45 38 41 30 31 34 35 37 00 09
 
 00 ff ff ff ff ff ff 00 21 34 04 80 01 01 01 01
 29 12 01 03 08 29 1a 78 ea d6 a5 a2 59 4a 95 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HIT
     Model: 32772
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 41 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -68,5 +66,29 @@ Block 0, Base EDID:
     Display Product Name: 'N90W D-Sub'
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-81 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: '0WDSPE8A01457'
+    Display Product Serial Number: ...
 Checksum: 0x09
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 21 34 04 80 01 01 01 01 '........!4......'
+  29 12 01 03 08 29 1a 78 ea d6 a5 a2 59 4a 95 24 ')....).x....YJ.$'
+  14 50 54 af cf 00 81 80 95 00 95 0f 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 9a 00 11 00 00 1c 00 00 00 fc 00 4e 39 30 '6............N90'
+  57 20 44 2d 53 75 62 0a 20 20 00 00 00 fd 00 38 'W D-Sub.  .....8'
+  4b 1e 51 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 'K.Q...      ....'
+  00 30 57 44 53 50 45 38 41 30 31 34 35 37 00 09 '.0WDSPE8A01457..'
+Checksum: 0x09
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

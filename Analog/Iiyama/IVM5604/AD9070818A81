@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0026cd045601010101
-051201036c342178ea5ad5a7564b9b24
-135054bdef80714f81908180818ca940
-b300950f9500283c80a070b023403020
-360007442100001a000000ff00303539
-33373830353530333432000000fd0038
-4c1e5311000a202020202020000000fc
-00504c453234303357530a202020006e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cd 04 56 01 01 01 01
+05 12 01 03 6c 34 21 78 ea 5a d5 a7 56 4b 9b 24
+13 50 54 bd ef 80 71 4f 81 90 81 80 81 8c a9 40
+b3 00 95 0f 95 00 28 3c 80 a0 70 b0 23 40 30 20
+36 00 07 44 21 00 00 1a 00 00 00 ff 00 30 35 39
+33 37 38 30 35 35 30 33 34 32 00 00 00 fd 00 38
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 4c 45 32 34 30 33 57 53 0a 20 20 20 00 6e
 
 00 ff ff ff ff ff ff 00 26 cd 04 56 01 01 01 01
 05 12 01 03 6c 34 21 78 ea 5a d5 a7 56 4b 9b 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IVM
     Model: 22020
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 5 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -72,8 +70,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (519 mm x 324 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   26 Vpol N
-    Display Product Serial Number: '0593780550342'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'PLE2403WS'
 Checksum: 0x6e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cd 04 56 01 01 01 01 '........&..V....'
+  05 12 01 03 6c 34 21 78 ea 5a d5 a7 56 4b 9b 24 '....l4!x.Z..VK.$'
+  13 50 54 bd ef 80 71 4f 81 90 81 80 81 8c a9 40 '.PT...qO.......@'
+  b3 00 95 0f 95 00 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
+  36 00 07 44 21 00 00 1a 00 00 00 ff 00 30 35 39 '6..D!........059'
+  33 37 38 30 35 35 30 33 34 32 00 00 00 fd 00 38 '3780550342.....8'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 50 4c 45 32 34 30 33 57 53 0a 20 20 20 00 6e '.PLE2403WS.   .n'
+Checksum: 0x6e
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

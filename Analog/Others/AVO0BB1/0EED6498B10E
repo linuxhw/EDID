@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006cfb10b00000000
-011701036e0000960eee91a3544c9926
-0f505423080071407140814081408180
-b300a940d1c0023a801871382d40582c
-4500fc1d1100007f000000fa00450061
-0081009500b300d1c00a000000fd0028
-3c1e5f0f000a202020202020000000fc
-00566572746976203630487a0a0a00e7
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 cf b1 0b 00 00 00 00
+01 17 01 03 6e 00 00 96 0e ee 91 a3 54 4c 99 26
+0f 50 54 23 08 00 71 40 71 40 81 40 81 40 81 80
+b3 00 a9 40 d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fc 1d 11 00 00 7f 00 00 00 fa 00 45 00 61
+00 81 00 95 00 b3 00 d1 c0 0a 00 00 00 fd 00 28
+3c 1e 5f 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 65 72 74 69 76 20 36 30 48 7a 0a 0a 00 e7
 
 00 ff ff ff ff ff ff 00 06 cf b1 0b 00 00 00 00
 01 17 01 03 6e 00 00 96 0e ee 91 a3 54 4c 99 26
@@ -72,3 +70,37 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 40-60 Hz V, 30-95 kHz H, max dotclock 150 MHz
     Display Product Name: 'Vertiv 60Hz'
 Checksum: 0xe7
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 cf b1 0b 00 00 00 00 '................'
+  01 17 01 03 6e 00 00 96 0e ee 91 a3 54 4c 99 26 '....n.......TL.&'
+  0f 50 54 23 08 00 71 40 71 40 81 40 81 40 81 80 '.PT#..q@q@.@.@..'
+  b3 00 a9 40 d1 c0 02 3a 80 18 71 38 2d 40 58 2c '...@...:..q8-@X,'
+  45 00 fc 1d 11 00 00 7f 00 00 00 fa 00 45 00 61 'E............E.a'
+  00 81 00 95 00 b3 00 d1 c0 0a 00 00 00 fd 00 28 '...............('
+  3c 1e 5f 0f 00 0a 20 20 20 20 20 20 00 00 00 fc '<._...      ....'
+  00 56 65 72 74 69 76 20 36 30 48 7a 0a 0a 00 e7 '.Vertiv 60Hz....'
+Checksum: 0xe7
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: Non-space after newline.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 162.000 MHz (Monitor: 150.000 MHz)
+  Base EDID: The DTD max image size is 508x285mm, but the display size is not specified anywhere.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0036980003d12a4a51
-260f01030e291f79e860e5a3574b9c25
-115054254b00a9408180819981408159
-6159455931596f2c0030810026305840
-3f0034363100001ad53500f880002030
-48381f0034363100001a264a0098a100
-2a4030701c0034363100001a9b400068
-8100283070481c003436310000180043
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 98 00 03 d1 2a 4a 51
+26 0f 01 03 0e 29 1f 79 e8 60 e5 a3 57 4b 9c 25
+11 50 54 25 4b 00 a9 40 81 80 81 99 81 40 81 59
+61 59 45 59 31 59 6f 2c 00 30 81 00 26 30 58 40
+3f 00 34 36 31 00 00 1a d5 35 00 f8 80 00 20 30
+48 38 1f 00 34 36 31 00 00 1a 26 4a 00 98 a1 00
+2a 40 30 70 1c 00 34 36 31 00 00 1a 9b 40 00 68
+81 00 28 30 70 48 1c 00 34 36 31 00 00 18 00 43
 
 00 ff ff ff ff ff ff 00 36 98 00 03 d1 2a 4a 51
 26 0f 01 03 0e 29 1f 79 e8 60 e5 a3 57 4b 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MTX
     Model: 768
-    Serial Number: 1363815121
+    Serial Number: ...
     Made in: week 38 of 2005
   Basic Display Parameters & Features:
     Analog display
@@ -74,3 +72,36 @@ Block 0, Base EDID:
                  Hfront  112 Hsync  72 Hback  176 Hpol N
                  Vfront    1 Vsync  12 Vback   27 Vpol N
 Checksum: 0x43
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 98 00 03 d1 2a 4a 51 '........6....*JQ'
+  26 0f 01 03 0e 29 1f 79 e8 60 e5 a3 57 4b 9c 25 '&....).y.`..WK.%'
+  11 50 54 25 4b 00 a9 40 81 80 81 99 81 40 81 59 '.PT%K..@.....@.Y'
+  61 59 45 59 31 59 6f 2c 00 30 81 00 26 30 58 40 'aYEY1Yo,.0..&0X@'
+  3f 00 34 36 31 00 00 1a d5 35 00 f8 80 00 20 30 '?.461....5.... 0'
+  48 38 1f 00 34 36 31 00 00 1a 26 4a 00 98 a1 00 'H8..461...&J....'
+  2a 40 30 70 1c 00 34 36 31 00 00 1a 9b 40 00 68 '*@0p..461....@.h'
+  81 00 28 30 70 48 1c 00 34 36 31 00 00 18 00 43 '..(0pH..461....C'
+Checksum: 0x43
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+  Detailed Timing Descriptor #1: Mismatch of image size 820x310 mm vs display size 410x310 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 820x310 mm vs display size 410x310 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 820x310 mm vs display size 410x310 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 820x310 mm vs display size 410x310 mm.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 820x310mm, which is larger than the display size 410.0x310.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

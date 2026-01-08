@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0034a9dea003160013
-0b1701030ee3807888daffa3584aa229
-17494b3fef80a94081808140714f6159
-45593159a945023a801871382d40582c
-4500000000000018df2156aa51002630
-20b43600000000000018000000fd0030
-780f6eff000a202020202020000000fc
-000a2020202020202020202020200066
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 a9 de a0 03 16 00 13
+0b 17 01 03 0e e3 80 78 88 da ff a3 58 4a a2 29
+17 49 4b 3f ef 80 a9 40 81 80 81 40 71 4f 61 59
+45 59 31 59 a9 45 02 3a 80 18 71 38 2d 40 58 2c
+45 00 00 00 00 00 00 18 df 21 56 aa 51 00 26 30
+20 b4 36 00 00 00 00 00 00 18 00 00 00 fd 00 30
+78 0f 6e ff 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 66
 
 00 ff ff ff ff ff ff 00 34 a9 de a0 03 16 00 13
 0b 17 01 03 0e e3 80 78 88 da ff a3 58 4a a2 29
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MEI
     Model: 41182
-    Serial Number: 318772739
+    Serial Number: ...
     Made in: week 11 of 2013
   Basic Display Parameters & Features:
     Analog display
@@ -78,3 +76,37 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 48-120 Hz V, 15-110 kHz H, max dotclock 2550 MHz
     Display Product Name: ''
 Checksum: 0x66
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 34 a9 de a0 03 16 00 13 '........4.......'
+  0b 17 01 03 0e e3 80 78 88 da ff a3 58 4a a2 29 '.......x....XJ.)'
+  17 49 4b 3f ef 80 a9 40 81 80 81 40 71 4f 61 59 '.IK?...@...@qOaY'
+  45 59 31 59 a9 45 02 3a 80 18 71 38 2d 40 58 2c 'EY1Y.E.:..q8-@X,'
+  45 00 00 00 00 00 00 18 df 21 56 aa 51 00 26 30 'E........!V.Q.&0'
+  20 b4 36 00 00 00 00 00 00 18 00 00 00 fd 00 30 ' .6............0'
+  78 0f 6e ff 00 0a 20 20 20 20 20 20 00 00 00 fc 'x.n...      ....'
+  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 66 '..            .f'
+Checksum: 0x66
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
+  Display Product Name: Empty string.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

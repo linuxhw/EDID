@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0061a901f001000000
-1b22010308301a78eab681a655539f27
-125054bdcf00010181000101818081c0
-9500a9c0b300023a801871382d40582c
-4500df041100001e000000fd00303c36
-6413000a202020202020000000ff0035
-333635363230303432373834000000fc
-005632324641422d52410a202020001f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 61 a9 01 f0 01 00 00 00
+1b 22 01 03 08 30 1a 78 ea b6 81 a6 55 53 9f 27
+12 50 54 bd cf 00 01 01 81 00 01 01 81 80 81 c0
+95 00 a9 c0 b3 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 df 04 11 00 00 1e 00 00 00 fd 00 30 3c 36
+64 13 00 0a 20 20 20 20 20 20 00 00 00 ff 00 35
+33 36 35 36 32 30 30 34 32 37 38 34 00 00 00 fc
+00 56 32 32 46 41 42 2d 52 41 0a 20 20 20 00 1f
 
 00 ff ff ff ff ff ff 00 61 a9 01 f0 01 00 00 00
 1b 22 01 03 08 30 1a 78 ea b6 81 a6 55 53 9f 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: XMI
     Model: 61441
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 27 of 2024
   Basic Display Parameters & Features:
     Analog display
@@ -70,6 +68,33 @@ Block 0, Base EDID:
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 48-60 Hz V, 54-100 kHz H, max dotclock 190 MHz
-    Display Product Serial Number: '5365620042784'
+    Display Product Serial Number: ...
     Display Product Name: 'V22FAB-RA'
 Checksum: 0x1f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 61 a9 01 f0 01 00 00 00 '........a.......'
+  1b 22 01 03 08 30 1a 78 ea b6 81 a6 55 53 9f 27 '."...0.x....US.''
+  12 50 54 bd cf 00 01 01 81 00 01 01 81 80 81 c0 '.PT.............'
+  95 00 a9 c0 b3 00 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 df 04 11 00 00 1e 00 00 00 fd 00 30 3c 36 'E............0<6'
+  64 13 00 0a 20 20 20 20 20 20 00 00 00 ff 00 35 'd...      .....5'
+  33 36 35 36 32 30 30 34 32 37 38 34 00 00 00 fc '365620042784....'
+  00 56 32 32 46 41 42 2d 52 41 0a 20 20 20 00 1f '.V22FAB-RA.   ..'
+Checksum: 0x1f
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.810 - 75.029 Hz (Monitor: 48.000 - 60.000 Hz)
+    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 54.000 - 100.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

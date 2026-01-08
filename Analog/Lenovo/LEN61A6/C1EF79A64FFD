@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030aea66101010101
-1e1b010368351e782aa135a35b4fa327
-115054afef00d1c08180818a9500a9c0
-a9cfb300714f023a801871382d40582c
-45000f282100001e000000ff00565436
-33303234330a20202020000000fd0032
-4b1e5315000a202020202020000000fc
-00543234692d31300a2020202020000e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae a6 61 01 01 01 01
+1e 1b 01 03 68 35 1e 78 2a a1 35 a3 5b 4f a3 27
+11 50 54 af ef 00 d1 c0 81 80 81 8a 95 00 a9 c0
+a9 cf b3 00 71 4f 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 ff 00 56 54 36
+33 30 32 34 33 0a 20 20 20 20 00 00 00 fd 00 32
+4b 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 54 32 34 69 2d 31 30 0a 20 20 20 20 20 00 0e
 
 00 ff ff ff ff ff ff 00 30 ae a6 61 01 01 01 01
 1e 1b 01 03 68 35 1e 78 2a a1 35 a3 5b 4f a3 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 24998
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 30 of 2017
   Basic Display Parameters & Features:
     Analog display
@@ -71,8 +69,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'VT630243'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-83 kHz H, max dotclock 210 MHz
     Display Product Name: 'T24i-10'
 Checksum: 0x0e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae a6 61 01 01 01 01 '........0..a....'
+  1e 1b 01 03 68 35 1e 78 2a a1 35 a3 5b 4f a3 27 '....h5.x*.5.[O.''
+  11 50 54 af ef 00 d1 c0 81 80 81 8a 95 00 a9 c0 '.PT.............'
+  a9 cf b3 00 71 4f 02 3a 80 18 71 38 2d 40 58 2c '....qO.:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 ff 00 56 54 36 'E..(!........VT6'
+  33 30 32 34 33 0a 20 20 20 20 00 00 00 fd 00 32 '30243.    .....2'
+  4b 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 54 32 34 69 2d 31 30 0a 20 20 20 20 20 00 0e '.T24i-10.     ..'
+Checksum: 0x0e
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c3cc001010101
-131401036e301b78ee5b85a458539f26
-0f5054b74b8095008180a940b300d1c0
-010101010101023a801871382d40582c
-4500dd0c1100001e000000fd00384c1e
-5311000a202020202020000000fc0050
-68696c69707320323232454c000000ff
-005537413130313930303539393000fb
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 3c c0 01 01 01 01
+13 14 01 03 6e 30 1b 78 ee 5b 85 a4 58 53 9f 26
+0f 50 54 b7 4b 80 95 00 81 80 a9 40 b3 00 d1 c0
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 38 4c 1e
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 32 32 32 45 4c 00 00 00 ff
+00 55 37 41 31 30 31 39 30 30 35 39 39 30 00 fb
 
 00 ff ff ff ff ff ff 00 41 0c 3c c0 01 01 01 01
 13 14 01 03 6e 30 1b 78 ee 5b 85 a4 58 53 9f 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 49212
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 19 of 2010
   Basic Display Parameters & Features:
     Analog display
@@ -70,5 +68,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'Philips 222EL'
-    Display Product Serial Number: 'U7A1019005990'
+    Display Product Serial Number: ...
 Checksum: 0xfb
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 3c c0 01 01 01 01 '........A.<.....'
+  13 14 01 03 6e 30 1b 78 ee 5b 85 a4 58 53 9f 26 '....n0.x.[..XS.&'
+  0f 50 54 b7 4b 80 95 00 81 80 a9 40 b3 00 d1 c0 '.PT.K......@....'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 38 4c 1e 'E............8L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50 'S...      .....P'
+  68 69 6c 69 70 73 20 32 32 32 45 4c 00 00 00 ff 'hilips 222EL....'
+  00 55 37 41 31 30 31 39 30 30 35 39 39 30 00 fb '.U7A1019005990..'
+Checksum: 0xfb
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

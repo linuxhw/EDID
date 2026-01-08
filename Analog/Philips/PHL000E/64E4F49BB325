@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c0e00d5620400
-120f010368241baeee0578a0564a9926
-12484cadef80455961598199d140a940
-a9458159a94a302a80c0416024304080
-1300680e1100001e000000ff00204358
-20203238373434350a20000000fc0050
-48494c495053203130394535000000fd
-0032a01e5c18000a20202020202000c6
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 0e 00 d5 62 04 00
+12 0f 01 03 68 24 1b ae ee 05 78 a0 56 4a 99 26
+12 48 4c ad ef 80 45 59 61 59 81 99 d1 40 a9 40
+a9 45 81 59 a9 4a 30 2a 80 c0 41 60 24 30 40 80
+13 00 68 0e 11 00 00 1e 00 00 00 ff 00 20 43 58
+20 20 32 38 37 34 34 35 0a 20 00 00 00 fc 00 50
+48 49 4c 49 50 53 20 31 30 39 45 35 00 00 00 fd
+00 32 a0 1e 5c 18 00 0a 20 20 20 20 20 20 00 c6
 
 00 ff ff ff ff ff ff 00 41 0c 0e 00 d5 62 04 00
 12 0f 01 03 68 24 1b ae ee 05 78 a0 56 4a 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 14
-    Serial Number: 287445
+    Serial Number: ...
     Made in: week 18 of 2005
   Basic Display Parameters & Features:
     Analog display
@@ -72,8 +70,39 @@ Block 0, Base EDID:
     DTD 1:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz (360 mm x 270 mm)
                  Hfront   64 Hsync 128 Hback  256 Hpol P
                  Vfront    1 Vsync   3 Vback   32 Vpol P
-    Display Product Serial Number: ' CX  287445'
+    Display Product Serial Number: ...
     Display Product Name: 'PHILIPS 109E5'
     Display Range Limits:
       Monitor ranges (GTF): 50-160 Hz V, 30-92 kHz H, max dotclock 240 MHz
 Checksum: 0xc6
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 0e 00 d5 62 04 00 '........A....b..'
+  12 0f 01 03 68 24 1b ae ee 05 78 a0 56 4a 99 26 '....h$....x.VJ.&'
+  12 48 4c ad ef 80 45 59 61 59 81 99 d1 40 a9 40 '.HL...EYaY...@.@'
+  a9 45 81 59 a9 4a 30 2a 80 c0 41 60 24 30 40 80 '.E.Y.J0*..A`$0@.'
+  13 00 68 0e 11 00 00 1e 00 00 00 ff 00 20 43 58 '..h.......... CX'
+  20 20 32 38 37 34 34 35 0a 20 00 00 00 fc 00 50 '  287445. .....P'
+  48 49 4c 49 50 53 20 31 30 39 45 35 00 00 00 fd 'HILIPS 109E5....'
+  00 32 a0 1e 5c 18 00 0a 20 20 20 20 20 20 00 c6 '.2..\...      ..'
+Checksum: 0xc6
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

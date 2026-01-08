@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004162c100477f0093
-1e13010368331c78eaee95a3544c9926
-0f5054b30c00714f818081009500d1c0
-010101010101023a801871382d40582c
-4500fd1e1100001e000000fc00566973
-656f2032333057730a20000000fd0038
-4c1f5314000a202020202020000000ff
-004431353043303034343030320a009d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 62 c1 00 47 7f 00 93
+1e 13 01 03 68 33 1c 78 ea ee 95 a3 54 4c 99 26
+0f 50 54 b3 0c 00 71 4f 81 80 81 00 95 00 d1 c0
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 fc 00 56 69 73
+65 6f 20 32 33 30 57 73 0a 20 00 00 00 fd 00 38
+4c 1f 53 14 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 44 31 35 30 43 30 30 34 34 30 30 32 0a 00 9d
 
 00 ff ff ff ff ff ff 00 41 62 c1 00 47 7f 00 93
 1e 13 01 03 68 33 1c 78 ea ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PKB
     Model: 193
-    Serial Number: 2466283335
+    Serial Number: ...
     Made in: week 30 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -65,5 +63,29 @@ Block 0, Base EDID:
     Display Product Name: 'Viseo 230Ws'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 200 MHz
-    Display Product Serial Number: 'D150C0044002'
+    Display Product Serial Number: ...
 Checksum: 0x9d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 62 c1 00 47 7f 00 93 '........Ab..G...'
+  1e 13 01 03 68 33 1c 78 ea ee 95 a3 54 4c 99 26 '....h3.x....TL.&'
+  0f 50 54 b3 0c 00 71 4f 81 80 81 00 95 00 d1 c0 '.PT...qO........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fd 1e 11 00 00 1e 00 00 00 fc 00 56 69 73 'E............Vis'
+  65 6f 20 32 33 30 57 73 0a 20 00 00 00 fd 00 38 'eo 230Ws. .....8'
+  4c 1f 53 14 00 0a 20 20 20 20 20 20 00 00 00 ff 'L.S...      ....'
+  00 44 31 35 30 43 30 30 34 34 30 30 32 0a 00 9d '.D150C0044002...'
+Checksum: 0x9d
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

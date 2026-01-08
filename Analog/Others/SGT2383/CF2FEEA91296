@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004cf4832301000000
-141d0103683c2178ead7a5a2594a9624
-145054adcf00d1c0b300810081808140
-81c0a9c09500023a801871382d40582c
-4500584a2100001a2a4480a070382740
-302c4500582c2100001a662156aa5100
-1e30468f33000f282100001e000000fc
-005647410a2020202020202020200019
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c f4 83 23 01 00 00 00
+14 1d 01 03 68 3c 21 78 ea d7 a5 a2 59 4a 96 24
+14 50 54 ad cf 00 d1 c0 b3 00 81 00 81 80 81 40
+81 c0 a9 c0 95 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 58 4a 21 00 00 1a 2a 44 80 a0 70 38 27 40
+30 2c 45 00 58 2c 21 00 00 1a 66 21 56 aa 51 00
+1e 30 46 8f 33 00 0f 28 21 00 00 1e 00 00 00 fc
+00 56 47 41 0a 20 20 20 20 20 20 20 20 20 00 19
 
 00 ff ff ff ff ff ff 00 4c f4 83 23 01 00 00 00
 14 1d 01 03 68 3c 21 78 ea d7 a5 a2 59 4a 96 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SGT
     Model: 9091
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 20 of 2019
   Basic Display Parameters & Features:
     Analog display
@@ -77,3 +75,35 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   3 Vback   24 Vpol P
     Display Product Name: 'VGA'
 Checksum: 0x19
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c f4 83 23 01 00 00 00 '........L..#....'
+  14 1d 01 03 68 3c 21 78 ea d7 a5 a2 59 4a 96 24 '....h<!x....YJ.$'
+  14 50 54 ad cf 00 d1 c0 b3 00 81 00 81 80 81 40 '.PT............@'
+  81 c0 a9 c0 95 00 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 58 4a 21 00 00 1a 2a 44 80 a0 70 38 27 40 'E.XJ!...*D..p8'@'
+  30 2c 45 00 58 2c 21 00 00 1a 66 21 56 aa 51 00 '0,E.X,!...f!V.Q.'
+  1e 30 46 8f 33 00 0f 28 21 00 00 1e 00 00 00 fc '.0F.3..(!.......'
+  00 56 47 41 0a 20 20 20 20 20 20 20 20 20 00 19 '.VGA.         ..'
+Checksum: 0x19
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #3: Mismatch of image size 527x296 mm vs display size 600x330 mm.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

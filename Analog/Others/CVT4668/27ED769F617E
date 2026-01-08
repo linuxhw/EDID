@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000ed4684600000000
-2314010300241d78ef0dc2a057479827
-12484fbfce000101010101010101b300
-818001010101944380907238284058c8
-450013292100001ed020009051201f30
-109017004a001000001c0e1f00805100
-1e3040803700f8c22100001c662150b0
-51001b3040703600f8c22100001e004f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e d4 68 46 00 00 00 00
+23 14 01 03 00 24 1d 78 ef 0d c2 a0 57 47 98 27
+12 48 4f bf ce 00 01 01 01 01 01 01 01 01 b3 00
+81 80 01 01 01 01 94 43 80 90 72 38 28 40 58 c8
+45 00 13 29 21 00 00 1e d0 20 00 90 51 20 1f 30
+10 90 17 00 4a 00 10 00 00 1c 0e 1f 00 80 51 00
+1e 30 40 80 37 00 f8 c2 21 00 00 1c 66 21 50 b0
+51 00 1b 30 40 70 36 00 f8 c2 21 00 00 1e 00 4f
 
 00 ff ff ff ff ff ff 00 0e d4 68 46 00 00 00 00
 23 14 01 03 00 24 1d 78 ef 0d c2 a0 57 47 98 27
@@ -74,3 +72,37 @@ Block 0, Base EDID:
                  Hfront   64 Hsync 112 Hback  256 Hpol P
                  Vfront    3 Vsync   6 Vback   18 Vpol P
 Checksum: 0x4f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e d4 68 46 00 00 00 00 '..........hF....'
+  23 14 01 03 00 24 1d 78 ef 0d c2 a0 57 47 98 27 '#....$.x....WG.''
+  12 48 4f bf ce 00 01 01 01 01 01 01 01 01 b3 00 '.HO.............'
+  81 80 01 01 01 01 94 43 80 90 72 38 28 40 58 c8 '.......C..r8(@X.'
+  45 00 13 29 21 00 00 1e d0 20 00 90 51 20 1f 30 'E..)!.... ..Q .0'
+  10 90 17 00 4a 00 10 00 00 1c 0e 1f 00 80 51 00 '....J.........Q.'
+  1e 30 40 80 37 00 f8 c2 21 00 00 1c 66 21 50 b0 '.0@.7...!...f!P.'
+  51 00 1b 30 40 70 36 00 f8 c2 21 00 00 1e 00 4f 'Q..0@p6...!....O'
+Checksum: 0x4f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 531x297 mm vs display size 360x290 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 330x0 mm vs display size 360x290 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #3: Mismatch of image size 760x450 mm vs display size 360x290 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 760x450 mm vs display size 360x290 mm.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 760x450mm, which is larger than the display size 360.0x290.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

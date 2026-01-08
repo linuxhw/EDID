@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c37c0b9510000
-291301030e281978eede95a3544c9926
-0f5054bfef809500714f81808140950f
-0101010101019a29a0d0518422305098
-360098ff1000001c000000ff00444c33
-30393431303230393231000000fc0050
-68696c69707320313930430a000000fd
-00384c1e530e000a202020202020000d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 37 c0 b9 51 00 00
+29 13 01 03 0e 28 19 78 ee de 95 a3 54 4c 99 26
+0f 50 54 bf ef 80 95 00 71 4f 81 80 81 40 95 0f
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 ff 00 44 4c 33
+30 39 34 31 30 32 30 39 32 31 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 31 39 30 43 0a 00 00 00 fd
+00 38 4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 0d
 
 00 ff ff ff ff ff ff 00 41 0c 37 c0 b9 51 00 00
 29 13 01 03 0e 28 19 78 ee de 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 49207
-    Serial Number: 20921
+    Serial Number: ...
     Made in: week 41 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -71,8 +69,34 @@ Block 0, Base EDID:
     DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (408 mm x 255 mm)
                  Hfront   80 Hsync 152 Hback  232 Hpol N
                  Vfront    3 Vsync   6 Vback   25 Vpol P
-    Display Product Serial Number: 'DL30941020921'
+    Display Product Serial Number: ...
     Display Product Name: 'Philips 190C'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 140 MHz
 Checksum: 0x0d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 37 c0 b9 51 00 00 '........A.7..Q..'
+  29 13 01 03 0e 28 19 78 ee de 95 a3 54 4c 99 26 ')....(.x....TL.&'
+  0f 50 54 bf ef 80 95 00 71 4f 81 80 81 40 95 0f '.PT.....qO...@..'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 00 00 00 ff 00 44 4c 33 '6............DL3'
+  30 39 34 31 30 32 30 39 32 31 00 00 00 fc 00 50 '0941020921.....P'
+  68 69 6c 69 70 73 20 31 39 30 43 0a 00 00 00 fd 'hilips 190C.....'
+  00 38 4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 0d '.8L.S...      ..'
+Checksum: 0x0d
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

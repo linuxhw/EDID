@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0038a3646601010101
-2b0f01030e221b78ee2ee5a4574a9c25
-115054bfef80714f8180010101010101
-010101010101302a009851002a403070
-1300520e1100001e000000fd00384b1f
-510e000a202020202020000000fc004c
-4344313737304e580a202020000000ff
-00355838373533313554420a20200097
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 a3 64 66 01 01 01 01
+2b 0f 01 03 0e 22 1b 78 ee 2e e5 a4 57 4a 9c 25
+11 50 54 bf ef 80 71 4f 81 80 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1f
+51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+43 44 31 37 37 30 4e 58 0a 20 20 20 00 00 00 ff
+00 35 58 38 37 35 33 31 35 54 42 0a 20 20 00 97
 
 00 ff ff ff ff ff ff 00 38 a3 64 66 01 01 01 01
 2b 0f 01 03 0e 22 1b 78 ee 2e e5 a4 57 4a 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: NEC
     Model: 26212
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 43 of 2005
   Basic Display Parameters & Features:
     Analog display
@@ -71,5 +69,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 31-81 kHz H, max dotclock 140 MHz
     Display Product Name: 'LCD1770NX'
-    Display Product Serial Number: '5X875315TB'
+    Display Product Serial Number: ...
 Checksum: 0x97
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 38 a3 64 66 01 01 01 01 '........8.df....'
+  2b 0f 01 03 0e 22 1b 78 ee 2e e5 a4 57 4a 9c 25 '+....".x....WJ.%'
+  11 50 54 bf ef 80 71 4f 81 80 01 01 01 01 01 01 '.PT...qO........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1f '..R..........8K.'
+  51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'Q...      .....L'
+  43 44 31 37 37 30 4e 58 0a 20 20 20 00 00 00 ff 'CD1770NX.   ....'
+  00 35 58 38 37 35 33 31 35 54 42 0a 20 20 00 97 '.5X875315TB.  ..'
+Checksum: 0x97
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

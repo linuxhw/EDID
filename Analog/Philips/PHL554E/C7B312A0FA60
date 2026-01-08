@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c4e55e46c0900
-090d0103681c15b9e8bfc89e58479924
-0f484ca4480045590101010101010101
-01010101010164190040410026301888
-36000eca10000018000000ff00204358
-20203631373730300a20000000fc0031
-3035450a2020202020202020000000fd
-0032781e3607000a202020202020007d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 4e 55 e4 6c 09 00
+09 0d 01 03 68 1c 15 b9 e8 bf c8 9e 58 47 99 24
+0f 48 4c a4 48 00 45 59 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 0e ca 10 00 00 18 00 00 00 ff 00 20 43 58
+20 20 36 31 37 37 30 30 0a 20 00 00 00 fc 00 31
+30 35 45 0a 20 20 20 20 20 20 20 20 00 00 00 fd
+00 32 78 1e 36 07 00 0a 20 20 20 20 20 20 00 7d
 
 00 ff ff ff ff ff ff 00 41 0c 4e 55 e4 6c 09 00
 09 0d 01 03 68 1c 15 b9 e8 bf c8 9e 58 47 99 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 21838
-    Serial Number: 617700
+    Serial Number: ...
     Made in: week 9 of 2003
   Basic Display Parameters & Features:
     Analog display
@@ -55,8 +53,34 @@ Block 0, Base EDID:
     DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (270 mm x 202 mm)
                  Hfront   24 Hsync 136 Hback  160 Hpol N
                  Vfront    3 Vsync   6 Vback   29 Vpol N
-    Display Product Serial Number: ' CX  617700'
+    Display Product Serial Number: ...
     Display Product Name: '105E'
     Display Range Limits:
       Monitor ranges (GTF): 50-120 Hz V, 30-54 kHz H, max dotclock 70 MHz
 Checksum: 0x7d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 4e 55 e4 6c 09 00 '........A.NU.l..'
+  09 0d 01 03 68 1c 15 b9 e8 bf c8 9e 58 47 99 24 '....h.......XG.$'
+  0f 48 4c a4 48 00 45 59 01 01 01 01 01 01 01 01 '.HL.H.EY........'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 0e ca 10 00 00 18 00 00 00 ff 00 20 43 58 '6............ CX'
+  20 20 36 31 37 37 30 30 0a 20 00 00 00 fc 00 31 '  617700. .....1'
+  30 35 45 0a 20 20 20 20 20 20 20 20 00 00 00 fd '05E.        ....'
+  00 32 78 1e 36 07 00 0a 20 20 20 20 20 20 00 7d '.2x.6...      .}'
+Checksum: 0x7d
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

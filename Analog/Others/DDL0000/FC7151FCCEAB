@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00108c0000f8050000
-291201036c2819782f570ea359499724
-144f54bfef0081808140714f9500950f
-0101010101019a29a0d0518422305098
-360098ff1000001c000000fd00384c1e
-520e000a202020202020000000fc0056
-31393457440a202020202020000000ff
-003030313532380a20202020202000fd
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 8c 00 00 f8 05 00 00
+29 12 01 03 6c 28 19 78 2f 57 0e a3 59 49 97 24
+14 4f 54 bf ef 00 81 80 81 40 71 4f 95 00 95 0f
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 fd 00 38 4c 1e
+52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+31 39 34 57 44 0a 20 20 20 20 20 20 00 00 00 ff
+00 30 30 31 35 32 38 0a 20 20 20 20 20 20 00 fd
 
 00 ff ff ff ff ff ff 00 10 8c 00 00 f8 05 00 00
 29 12 01 03 6c 28 19 78 2f 57 0e a3 59 49 97 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DDL
     Model: 0
-    Serial Number: 1528
+    Serial Number: ...
     Made in: week 41 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -74,7 +72,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-82 kHz H, max dotclock 140 MHz
     Display Product Name: 'V194WD'
-    Display Product Serial Number: '001528'
+    Display Product Serial Number: ...
 Checksum: 0xfd
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 8c 00 00 f8 05 00 00 '................'
+  29 12 01 03 6c 28 19 78 2f 57 0e a3 59 49 97 24 ')...l(.x/W..YI.$'
+  14 4f 54 bf ef 00 81 80 81 40 71 4f 95 00 95 0f '.OT......@qO....'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 00 00 00 fd 00 38 4c 1e '6............8L.'
+  52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56 'R...      .....V'
+  31 39 34 57 44 0a 20 20 20 20 20 20 00 00 00 ff '194WD.      ....'
+  00 30 30 31 35 32 38 0a 20 20 20 20 20 20 00 fd '.001528.      ..'
+Checksum: 0xfd
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

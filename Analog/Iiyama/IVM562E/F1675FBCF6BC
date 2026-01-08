@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0026cd2e5658110000
-2519010368321d782a0655a55551a128
-0f5054a56b80710081408180a940b300
-9500d1c00101023a801871382d40582c
-4500f0241100001e000000ff00313133
-32343533373234343430000000fd0037
-4c1e5312000a202020202020000000fc
-00504c32323833480a2020202020002f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cd 2e 56 58 11 00 00
+25 19 01 03 68 32 1d 78 2a 06 55 a5 55 51 a1 28
+0f 50 54 a5 6b 80 71 00 81 40 81 80 a9 40 b3 00
+95 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 f0 24 11 00 00 1e 00 00 00 ff 00 31 31 33
+32 34 35 33 37 32 34 34 34 30 00 00 00 fd 00 37
+4c 1e 53 12 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 4c 32 32 38 33 48 0a 20 20 20 20 20 00 2f
 
 00 ff ff ff ff ff ff 00 26 cd 2e 56 58 11 00 00
 25 19 01 03 68 32 1d 78 2a 06 55 a5 55 51 a1 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IVM
     Model: 22062
-    Serial Number: 4440
+    Serial Number: ...
     Made in: week 37 of 2015
   Basic Display Parameters & Features:
     Analog display
@@ -67,10 +65,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (496 mm x 292 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '1132453724440'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 30-83 kHz H, max dotclock 180 MHz
     Display Product Name: 'PL2283H'
 Checksum: 0x2f
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cd 2e 56 58 11 00 00 '........&..VX...'
+  25 19 01 03 68 32 1d 78 2a 06 55 a5 55 51 a1 28 '%...h2.x*.U.UQ.('
+  0f 50 54 a5 6b 80 71 00 81 40 81 80 a9 40 b3 00 '.PT.k.q..@...@..'
+  95 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 f0 24 11 00 00 1e 00 00 00 ff 00 31 31 33 'E..$.........113'
+  32 34 35 33 37 32 34 34 34 30 00 00 00 fd 00 37 '2453724440.....7'
+  4c 1e 53 12 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 50 4c 32 32 38 33 48 0a 20 20 20 20 20 00 2f '.PL2283H.     ./'
+Checksum: 0x2f
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

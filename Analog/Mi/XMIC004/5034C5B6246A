@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0061a904c001000000
-0b200103083c2178ea1fa4a9514aaa27
-0a5054bdcf00714f8100818081c09500
-a9c0b3000101023a801871382d40582c
-450056502100001e000000ff00333332
-33315a30313238363535000000fd0030
-3c385513000a202020202020000000fc
-005265646d69203237204e510a20006f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 61 a9 04 c0 01 00 00 00
+0b 20 01 03 08 3c 21 78 ea 1f a4 a9 51 4a aa 27
+0a 50 54 bd cf 00 71 4f 81 00 81 80 81 c0 95 00
+a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 ff 00 33 33 32
+33 31 5a 30 31 32 38 36 35 35 00 00 00 fd 00 30
+3c 38 55 13 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 52 65 64 6d 69 20 32 37 20 4e 51 0a 20 00 6f
 
 00 ff ff ff ff ff ff 00 61 a9 04 c0 01 00 00 00
 0b 20 01 03 08 3c 21 78 ea 1f a4 a9 51 4a aa 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: XMI
     Model: 49156
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 11 of 2022
   Basic Display Parameters & Features:
     Analog display
@@ -69,8 +67,35 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '33231Z0128655'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 48-60 Hz V, 56-85 kHz H, max dotclock 190 MHz
     Display Product Name: 'Redmi 27 NQ'
 Checksum: 0x6f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 61 a9 04 c0 01 00 00 00 '........a.......'
+  0b 20 01 03 08 3c 21 78 ea 1f a4 a9 51 4a aa 27 '. ...<!x....QJ.''
+  0a 50 54 bd cf 00 71 4f 81 00 81 80 81 c0 95 00 '.PT...qO........'
+  a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 ff 00 33 33 32 'E.VP!........332'
+  33 31 5a 30 31 32 38 36 35 35 00 00 00 fd 00 30 '31Z0128655.....0'
+  3c 38 55 13 00 0a 20 20 20 20 20 20 00 00 00 fc '<8U...      ....'
+  00 52 65 64 6d 69 20 32 37 20 4e 51 0a 20 00 6f '.Redmi 27 NQ. .o'
+Checksum: 0x6f
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.810 - 75.029 Hz (Monitor: 48.000 - 60.000 Hz)
+    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 56.000 - 85.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

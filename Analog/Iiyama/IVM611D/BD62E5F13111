@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0026cd1d6137393230
-0c20010368341d782aafe5a655519b25
-0d5054254b00d1c081809500b3008140
-010101010101023a801871382d40582c
-450009252100001e000000fd00374c18
-5512000a202020202020000000ff0031
-313335373231323230323937000000fc
-00504c5832343831480a2020202000c3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cd 1d 61 37 39 32 30
+0c 20 01 03 68 34 1d 78 2a af e5 a6 55 51 9b 25
+0d 50 54 25 4b 00 d1 c0 81 80 95 00 b3 00 81 40
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 09 25 21 00 00 1e 00 00 00 fd 00 37 4c 18
+55 12 00 0a 20 20 20 20 20 20 00 00 00 ff 00 31
+31 33 35 37 32 31 32 32 30 32 39 37 00 00 00 fc
+00 50 4c 58 32 34 38 31 48 0a 20 20 20 20 00 c3
 
 00 ff ff ff ff ff ff 00 26 cd 1d 61 37 39 32 30
 0c 20 01 03 68 34 1d 78 2a af e5 a6 55 51 9b 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IVM
     Model: 24861
-    Serial Number: 808597815
+    Serial Number: ...
     Made in: week 12 of 2022
   Basic Display Parameters & Features:
     Analog display
@@ -64,6 +62,30 @@ Block 0, Base EDID:
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 24-85 kHz H, max dotclock 180 MHz
-    Display Product Serial Number: '1135721220297'
+    Display Product Serial Number: ...
     Display Product Name: 'PLX2481H'
 Checksum: 0xc3
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cd 1d 61 37 39 32 30 '........&..a7920'
+  0c 20 01 03 68 34 1d 78 2a af e5 a6 55 51 9b 25 '. ..h4.x*...UQ.%'
+  0d 50 54 25 4b 00 d1 c0 81 80 95 00 b3 00 81 40 '.PT%K..........@'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 09 25 21 00 00 1e 00 00 00 fd 00 37 4c 18 'E..%!........7L.'
+  55 12 00 0a 20 20 20 20 20 20 00 00 00 ff 00 31 'U...      .....1'
+  31 33 35 37 32 31 32 32 30 32 39 37 00 00 00 fc '135721220297....'
+  00 50 4c 58 32 34 38 31 48 0a 20 20 20 20 00 c3 '.PLX2481H.    ..'
+Checksum: 0xc3
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

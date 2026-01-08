@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002613001900000000
-211f010308291a782ad7a5a2594a9624
-145054adcf00714081008180814081c0
-454061404540ba22a0a050841a303020
-360098ff1000001a662156aa51001e30
-468f330055001100001a682ba0a05084
-1a3030203700c7001100001a000000fc
-00495053313930300a202020202000ff
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 13 00 19 00 00 00 00
+21 1f 01 03 08 29 1a 78 2a d7 a5 a2 59 4a 96 24
+14 50 54 ad cf 00 71 40 81 00 81 80 81 40 81 c0
+45 40 61 40 45 40 ba 22 a0 a0 50 84 1a 30 30 20
+36 00 98 ff 10 00 00 1a 66 21 56 aa 51 00 1e 30
+46 8f 33 00 55 00 11 00 00 1a 68 2b a0 a0 50 84
+1a 30 30 20 37 00 c7 00 11 00 00 1a 00 00 00 fc
+00 49 50 53 31 39 30 30 0a 20 20 20 20 20 00 ff
 
 00 ff ff ff ff ff ff 00 26 13 00 19 00 00 00 00
 21 1f 01 03 08 29 1a 78 2a d7 a5 a2 59 4a 96 24
@@ -76,3 +74,36 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   7 Vback   16 Vpol N
     Display Product Name: 'IPS1900'
 Checksum: 0xff
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 13 00 19 00 00 00 00 '........&.......'
+  21 1f 01 03 08 29 1a 78 2a d7 a5 a2 59 4a 96 24 '!....).x*...YJ.$'
+  14 50 54 ad cf 00 71 40 81 00 81 80 81 40 81 c0 '.PT...q@.....@..'
+  45 40 61 40 45 40 ba 22 a0 a0 50 84 1a 30 30 20 'E@a@E@."..P..00 '
+  36 00 98 ff 10 00 00 1a 66 21 56 aa 51 00 1e 30 '6.......f!V.Q..0'
+  46 8f 33 00 55 00 11 00 00 1a 68 2b a0 a0 50 84 'F.3.U.....h+..P.'
+  1a 30 30 20 37 00 c7 00 11 00 00 1a 00 00 00 fc '.00 7...........'
+  00 49 50 53 31 39 30 30 0a 20 20 20 20 20 00 ff '.IPS1900.     ..'
+Checksum: 0xff
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x51.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #3: Mismatch of image size 455x256 mm vs display size 410x260 mm.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 455x256mm, which is larger than the display size 410.0x260.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

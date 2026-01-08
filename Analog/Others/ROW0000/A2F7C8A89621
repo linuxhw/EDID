@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0049f7000000000000
-011a0103080000000ad7a5a2594a9624
-145054afce0081c00101010101010101
-010101010101121b007b502015303020
-360005a3100000180e1f008051001e30
-4080370020560000001c000000fd0032
-4c1e5010000a202020202020000000fc
-004141410a20202020202020200a0078
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 49 f7 00 00 00 00 00 00
+01 1a 01 03 08 00 00 00 0a d7 a5 a2 59 4a 96 24
+14 50 54 af ce 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 00 7b 50 20 15 30 30 20
+36 00 05 a3 10 00 00 18 0e 1f 00 80 51 00 1e 30
+40 80 37 00 20 56 00 00 00 1c 00 00 00 fd 00 32
+4c 1e 50 10 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 41 41 0a 20 20 20 20 20 20 20 20 0a 00 78
 
 00 ff ff ff ff ff ff 00 49 f7 00 00 00 00 00 00
 01 1a 01 03 08 00 00 00 0a d7 a5 a2 59 4a 96 24
@@ -67,3 +65,30 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 50-76 Hz V, 30-80 kHz H, max dotclock 160 MHz
     Display Product Name: 'AAA'
 Checksum: 0x78
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 49 f7 00 00 00 00 00 00 '........I.......'
+  01 1a 01 03 08 00 00 00 0a d7 a5 a2 59 4a 96 24 '............YJ.$'
+  14 50 54 af ce 00 81 c0 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 12 1b 00 7b 50 20 15 30 30 20 '.........{P .00 '
+  36 00 05 a3 10 00 00 18 0e 1f 00 80 51 00 1e 30 '6...........Q..0'
+  40 80 37 00 20 56 00 00 00 1c 00 00 00 fd 00 32 '@.7. V.........2'
+  4c 1e 50 10 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.P...      ....'
+  00 41 41 41 0a 20 20 20 20 20 20 20 20 0a 00 78 '.AAA.        ..x'
+Checksum: 0x78
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: Non-space after newline.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 261x163mm, but the display size is not specified anywhere.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

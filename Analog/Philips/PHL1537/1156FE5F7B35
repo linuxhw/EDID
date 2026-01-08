@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c3715c7330000
-33100103681e17b62ae4de9e544a9723
-1c4c54bfee006140614a614f4540454f
-3140314f010164190040410026301888
-360030e410000018000000ff00553141
-30363531303133323535000000fc0031
-354d46343030542f33370a20000000fd
-00384b1f3c08000a2020202020200011
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 37 15 c7 33 00 00
+33 10 01 03 68 1e 17 b6 2a e4 de 9e 54 4a 97 23
+1c 4c 54 bf ee 00 61 40 61 4a 61 4f 45 40 45 4f
+31 40 31 4f 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 30 e4 10 00 00 18 00 00 00 ff 00 55 31 41
+30 36 35 31 30 31 33 32 35 35 00 00 00 fc 00 31
+35 4d 46 34 30 30 54 2f 33 37 0a 20 00 00 00 fd
+00 38 4b 1f 3c 08 00 0a 20 20 20 20 20 20 00 11
 
 00 ff ff ff ff ff ff 00 41 0c 37 15 c7 33 00 00
 33 10 01 03 68 1e 17 b6 2a e4 de 9e 54 4a 97 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 5431
-    Serial Number: 13255
+    Serial Number: ...
     Made in: week 51 of 2006
   Basic Display Parameters & Features:
     Analog display
@@ -70,8 +68,32 @@ Block 0, Base EDID:
     DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (304 mm x 228 mm)
                  Hfront   24 Hsync 136 Hback  160 Hpol N
                  Vfront    3 Vsync   6 Vback   29 Vpol N
-    Display Product Serial Number: 'U1A0651013255'
+    Display Product Serial Number: ...
     Display Product Name: '15MF400T/37'
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 31-60 kHz H, max dotclock 80 MHz
 Checksum: 0x11
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 37 15 c7 33 00 00 '........A.7..3..'
+  33 10 01 03 68 1e 17 b6 2a e4 de 9e 54 4a 97 23 '3...h...*...TJ.#'
+  1c 4c 54 bf ee 00 61 40 61 4a 61 4f 45 40 45 4f '.LT...a@aJaOE@EO'
+  31 40 31 4f 01 01 64 19 00 40 41 00 26 30 18 88 '1@1O..d..@A.&0..'
+  36 00 30 e4 10 00 00 18 00 00 00 ff 00 55 31 41 '6.0..........U1A'
+  30 36 35 31 30 31 33 32 35 35 00 00 00 fc 00 31 '0651013255.....1'
+  35 4d 46 34 30 30 54 2f 33 37 0a 20 00 00 00 fd '5MF400T/37. ....'
+  00 38 4b 1f 3c 08 00 0a 20 20 20 20 20 20 00 11 '.8K.<...      ..'
+Checksum: 0x11
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

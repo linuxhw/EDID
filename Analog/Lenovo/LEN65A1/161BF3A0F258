@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030aea165df0e0000
-2a180103682917782a54a5a55551a027
-0f5054afef00714f8180818a01010101
-010101010101662156aa51001e30468f
-330099e61000001e662150b051001b30
-4070360099e61000001e000000fd0032
-4c1e3c0e000a202020202020000000fc
-004c454e204c493139333165774100ba
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae a1 65 df 0e 00 00
+2a 18 01 03 68 29 17 78 2a 54 a5 a5 55 51 a0 27
+0f 50 54 af ef 00 71 4f 81 80 81 8a 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 99 e6 10 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 99 e6 10 00 00 1e 00 00 00 fd 00 32
+4c 1e 3c 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 45 4e 20 4c 49 31 39 33 31 65 77 41 00 ba
 
 00 ff ff ff ff ff ff 00 30 ae a1 65 df 0e 00 00
 2a 18 01 03 68 29 17 78 2a 54 a5 a5 55 51 a0 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 26017
-    Serial Number: 3807
+    Serial Number: ...
     Made in: week 42 of 2014
   Basic Display Parameters & Features:
     Analog display
@@ -74,4 +72,28 @@ Block 0, Base EDID:
     Display Product Name: 'LEN LI1931ewA'
 Checksum: 0xba
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae a1 65 df 0e 00 00 '........0..e....'
+  2a 18 01 03 68 29 17 78 2a 54 a5 a5 55 51 a0 27 '*...h).x*T..UQ.''
+  0f 50 54 af ef 00 71 4f 81 80 81 8a 01 01 01 01 '.PT...qO........'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 99 e6 10 00 00 1e 66 21 50 b0 51 00 1b 30 '3.......f!P.Q..0'
+  40 70 36 00 99 e6 10 00 00 1e 00 00 00 fd 00 32 '@p6............2'
+  4c 1e 3c 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.<...      ....'
+  00 4c 45 4e 20 4c 49 31 39 33 31 65 77 41 00 ba '.LEN LI1931ewA..'
+Checksum: 0xba
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 30.000 - 60.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

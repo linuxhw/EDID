@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c6f08d2010b00
-1e1301030e2f1d78eeb505a5564a9a25
-125054bfef80b3008180818f9500950f
-b30fa940a94f21399030621a274068b0
-3600da281100001e000000ff00444c35
-30393330373231333632000000fc0050
-68696c697073203232305357000000fd
-00384c1e5311000a20202020202000ec
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 6f 08 d2 01 0b 00
+1e 13 01 03 0e 2f 1d 78 ee b5 05 a5 56 4a 9a 25
+12 50 54 bf ef 80 b3 00 81 80 81 8f 95 00 95 0f
+b3 0f a9 40 a9 4f 21 39 90 30 62 1a 27 40 68 b0
+36 00 da 28 11 00 00 1e 00 00 00 ff 00 44 4c 35
+30 39 33 30 37 32 31 33 36 32 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 32 32 30 53 57 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 ec
 
 00 ff ff ff ff ff ff 00 41 0c 6f 08 d2 01 0b 00
 1e 13 01 03 0e 2f 1d 78 ee b5 05 a5 56 4a 9a 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 2159
-    Serial Number: 721362
+    Serial Number: ...
     Made in: week 30 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -74,8 +72,42 @@ Block 0, Base EDID:
     DTD 1:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz (474 mm x 296 mm)
                  Hfront  104 Hsync 176 Hback  280 Hpol P
                  Vfront    3 Vsync   6 Vback   30 Vpol P
-    Display Product Serial Number: 'DL50930721362'
+    Display Product Serial Number: ...
     Display Product Name: 'Philips 220SW'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0xec
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 6f 08 d2 01 0b 00 '........A.o.....'
+  1e 13 01 03 0e 2f 1d 78 ee b5 05 a5 56 4a 9a 25 '...../.x....VJ.%'
+  12 50 54 bf ef 80 b3 00 81 80 81 8f 95 00 95 0f '.PT.............'
+  b3 0f a9 40 a9 4f 21 39 90 30 62 1a 27 40 68 b0 '...@.O!9.0b.'@h.'
+  36 00 da 28 11 00 00 1e 00 00 00 ff 00 44 4c 35 '6..(.........DL5'
+  30 39 33 30 37 32 31 33 36 32 00 00 00 fc 00 50 '0930721362.....P'
+  68 69 6c 69 70 73 20 32 32 30 53 57 00 00 00 fd 'hilips 220SW....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 ec '.8L.S...      ..'
+Checksum: 0xec
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x3a.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 93.750 kHz (Monitor: 30.000 - 83.000 kHz)
+    Maximum Clock: 202.500 MHz (Monitor: 170.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

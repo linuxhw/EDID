@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c750803cb0000
-1d150103682213782ab370a255489827
-155054bfee00310a614c010101010101
-0101010101017f2156aa51001e30468f
-330058c21000001e000000ff00465839
-31313239303531393731000000fc0050
-68696c697073203136304557000000fd
-00384c1e3c08000a2020202020200040
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 75 08 03 cb 00 00
+1d 15 01 03 68 22 13 78 2a b3 70 a2 55 48 98 27
+15 50 54 bf ee 00 31 0a 61 4c 01 01 01 01 01 01
+01 01 01 01 01 01 7f 21 56 aa 51 00 1e 30 46 8f
+33 00 58 c2 10 00 00 1e 00 00 00 ff 00 46 58 39
+31 31 32 39 30 35 31 39 37 31 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 31 36 30 45 57 00 00 00 fd
+00 38 4c 1e 3c 08 00 0a 20 20 20 20 20 20 00 40
 
 00 ff ff ff ff ff ff 00 41 0c 75 08 03 cb 00 00
 1d 15 01 03 68 22 13 78 2a b3 70 a2 55 48 98 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 2165
-    Serial Number: 51971
+    Serial Number: ...
     Made in: week 29 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -65,8 +63,40 @@ Block 0, Base EDID:
     DTD 1:  1366x768    59.964364 Hz 683:384   47.852 kHz     85.750000 MHz (344 mm x 194 mm)
                  Hfront   70 Hsync 143 Hback  213 Hpol P
                  Vfront    3 Vsync   3 Vback   24 Vpol P
-    Display Product Serial Number: 'FX91129051971'
+    Display Product Serial Number: ...
     Display Product Name: 'Philips 160EW'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-60 kHz H, max dotclock 80 MHz
 Checksum: 0x40
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 75 08 03 cb 00 00 '........A.u.....'
+  1d 15 01 03 68 22 13 78 2a b3 70 a2 55 48 98 27 '....h".x*.p.UH.''
+  15 50 54 bf ee 00 31 0a 61 4c 01 01 01 01 01 01 '.PT...1.aL......'
+  01 01 01 01 01 01 7f 21 56 aa 51 00 1e 30 46 8f '.......!V.Q..0F.'
+  33 00 58 c2 10 00 00 1e 00 00 00 ff 00 46 58 39 '3.X..........FX9'
+  31 31 32 39 30 35 31 39 37 31 00 00 00 fc 00 50 '1129051971.....P'
+  68 69 6c 69 70 73 20 31 36 30 45 57 00 00 00 fd 'hilips 160EW....'
+  00 38 4c 1e 3c 08 00 0a 20 20 20 20 20 20 00 40 '.8L.<...      .@'
+Checksum: 0x40
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 29.190 - 60.022 kHz (Monitor: 30.000 - 60.000 kHz)
+    Maximum Clock: 85.750 MHz (Monitor: 80.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0025cc22198b0e0000
-2a11010308291a78eab565a458499924
-115054bfef80950f8180814081c0810f
-7190904f0101c422a0a0508426303020
-36009a011100001e000000fc004c4531
-3932320a202020202020000000fd0038
-4c1f5410000a202020202020000000ff
-0037343230333732330a202020200085
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 25 cc 22 19 8b 0e 00 00
+2a 11 01 03 08 29 1a 78 ea b5 65 a4 58 49 99 24
+11 50 54 bf ef 80 95 0f 81 80 81 40 81 c0 81 0f
+71 90 90 4f 01 01 c4 22 a0 a0 50 84 26 30 30 20
+36 00 9a 01 11 00 00 1e 00 00 00 fc 00 4c 45 31
+39 32 32 0a 20 20 20 20 20 20 00 00 00 fd 00 38
+4c 1f 54 10 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 37 34 32 30 33 37 32 33 0a 20 20 20 20 00 85
 
 00 ff ff ff ff ff ff 00 25 cc 22 19 8b 0e 00 00
 2a 11 01 03 08 29 1a 78 ea b5 65 a4 58 49 99 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: INL
     Model: 6434
-    Serial Number: 3723
+    Serial Number: ...
     Made in: week 42 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -75,5 +73,34 @@ Block 0, Base EDID:
     Display Product Name: 'LE1922'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-84 kHz H, max dotclock 160 MHz
-    Display Product Serial Number: '74203723'
+    Display Product Serial Number: ...
 Checksum: 0x85
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 25 cc 22 19 8b 0e 00 00 '........%.".....'
+  2a 11 01 03 08 29 1a 78 ea b5 65 a4 58 49 99 24 '*....).x..e.XI.$'
+  11 50 54 bf ef 80 95 0f 81 80 81 40 81 c0 81 0f '.PT........@....'
+  71 90 90 4f 01 01 c4 22 a0 a0 50 84 26 30 30 20 'q..O..."..P.&00 '
+  36 00 9a 01 11 00 00 1e 00 00 00 fc 00 4c 45 31 '6............LE1'
+  39 32 32 0a 20 20 20 20 20 20 00 00 00 fd 00 38 '922.      .....8'
+  4c 1f 54 10 00 0a 20 20 20 20 20 20 00 00 00 ff 'L.T...      ....'
+  00 37 34 32 30 33 37 32 33 0a 20 20 20 20 00 85 '.74203723.    ..'
+Checksum: 0x85
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1152x921 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c4dc0fc100a00
-2e1401036e291778eeee95a3544c9926
-0f5054bfef806140614f8180818f0101
-010101010101662156aa51001e30468f
-33009ae61000001e000000ff00444c35
-31303436363539373038000000fc0050
-68696c69707320313932450a000000fd
-00384c1e530e000a2020202020200014
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 4d c0 fc 10 0a 00
+2e 14 01 03 6e 29 17 78 ee ee 95 a3 54 4c 99 26
+0f 50 54 bf ef 80 61 40 61 4f 81 80 81 8f 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 ff 00 44 4c 35
+31 30 34 36 36 35 39 37 30 38 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 31 39 32 45 0a 00 00 00 fd
+00 38 4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 14
 
 00 ff ff ff ff ff ff 00 41 0c 4d c0 fc 10 0a 00
 2e 14 01 03 6e 29 17 78 ee ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 49229
-    Serial Number: 659708
+    Serial Number: ...
     Made in: week 46 of 2010
   Basic Display Parameters & Features:
     Analog display
@@ -70,8 +68,34 @@ Block 0, Base EDID:
     DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
                  Hfront   70 Hsync 143 Hback  213 Hpol P
                  Vfront    3 Vsync   3 Vback   24 Vpol P
-    Display Product Serial Number: 'DL51046659708'
+    Display Product Serial Number: ...
     Display Product Name: 'Philips 192E'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 140 MHz
 Checksum: 0x14
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 4d c0 fc 10 0a 00 '........A.M.....'
+  2e 14 01 03 6e 29 17 78 ee ee 95 a3 54 4c 99 26 '....n).x....TL.&'
+  0f 50 54 bf ef 80 61 40 61 4f 81 80 81 8f 01 01 '.PT...a@aO......'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 ff 00 44 4c 35 '3............DL5'
+  31 30 34 36 36 35 39 37 30 38 00 00 00 fc 00 50 '1046659708.....P'
+  68 69 6c 69 70 73 20 31 39 32 45 0a 00 00 00 fd 'hilips 192E.....'
+  00 38 4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 14 '.8L.S...      ..'
+Checksum: 0x14
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

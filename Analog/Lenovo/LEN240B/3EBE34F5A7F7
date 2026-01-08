@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030ae0b2401010101
-1e12010368221b782a5dd0a6544c0f23
-145054adcf008180818a314601010101
-010101010101bc34009851002a401090
-1300540e1100001e000000fd00374b1e
-530e000a202020202020000000ff0056
-31434c4137300a2020202020000000fc
-004c454e204c3137340a2020202000f1
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 0b 24 01 01 01 01
+1e 12 01 03 68 22 1b 78 2a 5d d0 a6 54 4c 0f 23
+14 50 54 ad cf 00 81 80 81 8a 31 46 01 01 01 01
+01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90
+13 00 54 0e 11 00 00 1e 00 00 00 fd 00 37 4b 1e
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 56
+31 43 4c 41 37 30 0a 20 20 20 20 20 00 00 00 fc
+00 4c 45 4e 20 4c 31 37 34 0a 20 20 20 20 00 f1
 
 00 ff ff ff ff ff ff 00 30 ae 0b 24 01 01 01 01
 1e 12 01 03 68 22 1b 78 2a 5d d0 a6 54 4c 0f 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 9227
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 30 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -66,6 +64,30 @@ Block 0, Base EDID:
                  Vfront    1 Vsync   3 Vback   38 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: 'V1CLA70'
+    Display Product Serial Number: ...
     Display Product Name: 'LEN L174'
 Checksum: 0xf1
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 0b 24 01 01 01 01 '........0..$....'
+  1e 12 01 03 68 22 1b 78 2a 5d d0 a6 54 4c 0f 23 '....h".x*]..TL.#'
+  14 50 54 ad cf 00 81 80 81 8a 31 46 01 01 01 01 '.PT.......1F....'
+  01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90 '.......4..Q.*@..'
+  13 00 54 0e 11 00 00 1e 00 00 00 fd 00 37 4b 1e '..T..........7K.'
+  53 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 56 'S...      .....V'
+  31 43 4c 41 37 30 0a 20 20 20 20 20 00 00 00 fc '1CLA70.     ....'
+  00 4c 45 4e 20 4c 31 37 34 0a 20 20 20 20 00 f1 '.LEN L174.    ..'
+Checksum: 0xf1
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003630120296000000
-0d15010308191399e881299457528a29
-26545cbfc00001010101010101010101
-010101010101a00f200031581c202880
-1400f6b90000001e000000fc004d756c
-746951204d5132313220000000fd0038
-4b1f3005000a202020202020000000ff
-003732323745313131333031353000f4
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 30 12 02 96 00 00 00
+0d 15 01 03 08 19 13 99 e8 81 29 94 57 52 8a 29
+26 54 5c bf c0 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a0 0f 20 00 31 58 1c 20 28 80
+14 00 f6 b9 00 00 00 1e 00 00 00 fc 00 4d 75 6c
+74 69 51 20 4d 51 32 31 32 20 00 00 00 fd 00 38
+4b 1f 30 05 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 37 32 32 37 45 31 31 31 33 30 31 35 30 00 f4
 
 00 ff ff ff ff ff ff 00 36 30 12 02 96 00 00 00
 0d 15 01 03 08 19 13 99 e8 81 29 94 57 52 8a 29
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MQP
     Model: 530
-    Serial Number: 150
+    Serial Number: ...
     Made in: week 13 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -61,5 +59,32 @@ Block 0, Base EDID:
     Display Product Name: 'MultiQ MQ212 '
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 31-48 kHz H, max dotclock 50 MHz
-    Display Product Serial Number: '7227E11130150'
+    Display Product Serial Number: ...
 Checksum: 0xf4
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 30 12 02 96 00 00 00 '........60......'
+  0d 15 01 03 08 19 13 99 e8 81 29 94 57 52 8a 29 '..........).WR.)'
+  26 54 5c bf c0 00 01 01 01 01 01 01 01 01 01 01 '&T\.............'
+  01 01 01 01 01 01 a0 0f 20 00 31 58 1c 20 28 80 '........ .1X. (.'
+  14 00 f6 b9 00 00 00 1e 00 00 00 fc 00 4d 75 6c '.............Mul'
+  74 69 51 20 4d 51 32 31 32 20 00 00 00 fd 00 38 'tiQ MQ212 .....8'
+  4b 1f 30 05 00 0a 20 20 20 20 20 20 00 00 00 ff 'K.0...      ....'
+  00 37 32 32 37 45 31 31 31 33 30 31 35 30 00 f4 '.7227E11130150..'
+Checksum: 0xf4
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+  Display Product Name: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

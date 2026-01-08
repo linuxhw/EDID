@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0038a3c06501010101
-280b01030f241d78ea2f3f9c584c9825
-184c50bfef80714f8140814f31594559
-615901010101302a009851002a403070
-1300671f1100001e000000fd0032551f
-520e000a202020202020000000fc004e
-4543204c434431383530580a000000ff
-003158303033383743410a2020200046
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 a3 c0 65 01 01 01 01
+28 0b 01 03 0f 24 1d 78 ea 2f 3f 9c 58 4c 98 25
+18 4c 50 bf ef 80 71 4f 81 40 81 4f 31 59 45 59
+61 59 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 67 1f 11 00 00 1e 00 00 00 fd 00 32 55 1f
+52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4e
+45 43 20 4c 43 44 31 38 35 30 58 0a 00 00 00 ff
+00 31 58 30 30 33 38 37 43 41 0a 20 20 20 00 46
 
 00 ff ff ff ff ff ff 00 38 a3 c0 65 01 01 01 01
 28 0b 01 03 0f 24 1d 78 ea 2f 3f 9c 58 4c 98 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: NEC
     Model: 26048
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 40 of 2001
   Basic Display Parameters & Features:
     Analog display
@@ -74,5 +72,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-85 Hz V, 31-82 kHz H, max dotclock 140 MHz
     Display Product Name: 'NEC LCD1850X'
-    Display Product Serial Number: '1X00387CA'
+    Display Product Serial Number: ...
 Checksum: 0x46
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 38 a3 c0 65 01 01 01 01 '........8..e....'
+  28 0b 01 03 0f 24 1d 78 ea 2f 3f 9c 58 4c 98 25 '(....$.x./?.XL.%'
+  18 4c 50 bf ef 80 71 4f 81 40 81 4f 31 59 45 59 '.LP...qO.@.O1YEY'
+  61 59 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 'aY....0*..Q.*@0p'
+  13 00 67 1f 11 00 00 1e 00 00 00 fd 00 32 55 1f '..g..........2U.'
+  52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4e 'R...      .....N'
+  45 43 20 4c 43 44 31 38 35 30 58 0a 00 00 00 ff 'EC LCD1850X.....'
+  00 31 58 30 30 33 38 37 43 41 0a 20 20 20 00 46 '.1X00387CA.   .F'
+Checksum: 0x46
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

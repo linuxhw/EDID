@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030ae140a01010101
-1d170103682917782af125a454569f28
-0c5054adce0001010101010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e662150b051001b30
-407036009ae61000001e000000fd0032
-4b1e3c0e000a202020202020000000fc
-004c454e204c533139323277410a00b5
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 14 0a 01 01 01 01
+1d 17 01 03 68 29 17 78 2a f1 25 a4 54 56 9f 28
+0c 50 54 ad ce 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 9a e6 10 00 00 1e 00 00 00 fd 00 32
+4b 1e 3c 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 45 4e 20 4c 53 31 39 32 32 77 41 0a 00 b5
 
 00 ff ff ff ff ff ff 00 30 ae 14 0a 01 01 01 01
 1d 17 01 03 68 29 17 78 2a f1 25 a4 54 56 9f 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 2580
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 29 of 2013
   Basic Display Parameters & Features:
     Analog display
@@ -67,3 +65,27 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 50-75 Hz V, 30-60 kHz H, max dotclock 140 MHz
     Display Product Name: 'LEN LS1922wA'
 Checksum: 0xb5
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 14 0a 01 01 01 01 '........0.......'
+  1d 17 01 03 68 29 17 78 2a f1 25 a4 54 56 9f 28 '....h).x*.%.TV.('
+  0c 50 54 ad ce 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 66 21 50 b0 51 00 1b 30 '3.......f!P.Q..0'
+  40 70 36 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 '@p6............2'
+  4b 1e 3c 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.<...      ....'
+  00 4c 45 4e 20 4c 53 31 39 32 32 77 41 0a 00 b5 '.LEN LS1922wA...'
+Checksum: 0xb5
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

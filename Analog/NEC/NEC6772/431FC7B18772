@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0038a3726701010101
-051401030e331d78eaf805a4554d9d25
-125054bfef8081008140818081c09500
-9040b300a9c0023a801871382d40582c
-4500fe1f1100001e000000fd00384c1f
-5311000a202020202020000000fc0045
-41323331574d690a20202020000000ff
-0030323130363436314e420a2020009a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 a3 72 67 01 01 01 01
+05 14 01 03 0e 33 1d 78 ea f8 05 a4 55 4d 9d 25
+12 50 54 bf ef 80 81 00 81 40 81 80 81 c0 95 00
+90 40 b3 00 a9 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fe 1f 11 00 00 1e 00 00 00 fd 00 38 4c 1f
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45
+41 32 33 31 57 4d 69 0a 20 20 20 20 00 00 00 ff
+00 30 32 31 30 36 34 36 31 4e 42 0a 20 20 00 9a
 
 00 ff ff ff ff ff ff 00 38 a3 72 67 01 01 01 01
 05 14 01 03 0e 33 1d 78 ea f8 05 a4 55 4d 9d 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: NEC
     Model: 26482
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 5 of 2010
   Basic Display Parameters & Features:
     Analog display
@@ -76,5 +74,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'EA231WMi'
-    Display Product Serial Number: '02106461NB'
+    Display Product Serial Number: ...
 Checksum: 0x9a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 38 a3 72 67 01 01 01 01 '........8.rg....'
+  05 14 01 03 0e 33 1d 78 ea f8 05 a4 55 4d 9d 25 '.....3.x....UM.%'
+  12 50 54 bf ef 80 81 00 81 40 81 80 81 c0 95 00 '.PT......@......'
+  90 40 b3 00 a9 c0 02 3a 80 18 71 38 2d 40 58 2c '.@.....:..q8-@X,'
+  45 00 fe 1f 11 00 00 1e 00 00 00 fd 00 38 4c 1f 'E............8L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45 'S...      .....E'
+  41 32 33 31 57 4d 69 0a 20 20 20 20 00 00 00 ff 'A231WMi.    ....'
+  00 30 32 31 30 36 34 36 31 4e 42 0a 20 20 00 9a '.02106461NB.  ..'
+Checksum: 0x9a
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

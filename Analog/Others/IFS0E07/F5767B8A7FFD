@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0024d3070effffffff
-000901026e00006d0a1e85a5554c9926
-0f55553fc00045403140010101010101
-010101010101a00f200031581c202880
-140000000000001e000000fd00326e1f
-4582000a202020202020000000fc0049
-6e20466f637573200a202020000000fc
-004c503430302f4c503432355a200087
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 24 d3 07 0e ff ff ff ff
+00 09 01 02 6e 00 00 6d 0a 1e 85 a5 55 4c 99 26
+0f 55 55 3f c0 00 45 40 31 40 01 01 01 01 01 01
+01 01 01 01 01 01 a0 0f 20 00 31 58 1c 20 28 80
+14 00 00 00 00 00 00 1e 00 00 00 fd 00 32 6e 1f
+45 82 00 0a 20 20 20 20 20 20 00 00 00 fc 00 49
+6e 20 46 6f 63 75 73 20 0a 20 20 20 00 00 00 fc
+00 4c 50 34 30 30 2f 4c 50 34 32 35 5a 20 00 87
 
 00 ff ff ff ff ff ff 00 24 d3 07 0e ff ff ff ff
 00 09 01 02 6e 00 00 6d 0a 1e 85 a5 55 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IFS
     Model: 3591
-    Serial Number: 4294967295
+    Serial Number: ...
     Made in: 1999
   Basic Display Parameters & Features:
     Analog display
@@ -64,3 +62,35 @@ Block 0, Base EDID:
     Display Product Name: 'In Focus '
     Display Product Name: 'LP400/LP425Z '
 Checksum: 0x87
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 24 d3 07 0e ff ff ff ff '........$.......'
+  00 09 01 02 6e 00 00 6d 0a 1e 85 a5 55 4c 99 26 '....n..m....UL.&'
+  0f 55 55 3f c0 00 45 40 31 40 01 01 01 01 01 01 '.UU?..E@1@......'
+  01 01 01 01 01 01 a0 0f 20 00 31 58 1c 20 28 80 '........ .1X. (.'
+  14 00 00 00 00 00 00 1e 00 00 00 fd 00 32 6e 1f '.............2n.'
+  45 82 00 0a 20 20 20 20 20 20 00 00 00 fc 00 49 'E...      .....I'
+  6e 20 46 6f 63 75 73 20 0a 20 20 20 00 00 00 fc 'n Focus .   ....'
+  00 4c 50 34 30 30 2f 4c 50 34 32 35 5a 20 00 87 '.LP400/LP425Z ..'
+Checksum: 0x87
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: One or more trailing spaces.
+  Display Product Name: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

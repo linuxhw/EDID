@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff005925501801000000
-2517010300251d78ee5ad5a7564b9b24
-135054afcf0081008180818a818f454a
-010101010101001e56ea500020302846
-550058c21000001a000000fd00374b1e
-3c08000a202020202020662150b05100
-1b30407036009e011100001e000000fc
-00412f47313935360a0a0a0a0a0a004f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 59 25 50 18 01 00 00 00
+25 17 01 03 00 25 1d 78 ee 5a d5 a7 56 4b 9b 24
+13 50 54 af cf 00 81 00 81 80 81 8a 81 8f 45 4a
+01 01 01 01 01 01 00 1e 56 ea 50 00 20 30 28 46
+55 00 58 c2 10 00 00 1a 00 00 00 fd 00 37 4b 1e
+3c 08 00 0a 20 20 20 20 20 20 66 21 50 b0 51 00
+1b 30 40 70 36 00 9e 01 11 00 00 1e 00 00 00 fc
+00 41 2f 47 31 39 35 36 0a 0a 0a 0a 0a 0a 00 4f
 
 00 ff ff ff ff ff ff 00 59 25 50 18 01 00 00 00
 25 17 01 03 00 25 1d 78 ee 5a d5 a7 56 4b 9b 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: VIE
     Model: 6224
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 37 of 2013
   Basic Display Parameters & Features:
     Analog display
@@ -74,3 +72,37 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   6 Vback   18 Vpol P
     Display Product Name: 'A/G1956'
 Checksum: 0x4f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 59 25 50 18 01 00 00 00 '........Y%P.....'
+  25 17 01 03 00 25 1d 78 ee 5a d5 a7 56 4b 9b 24 '%....%.x.Z..VK.$'
+  13 50 54 af cf 00 81 00 81 80 81 8a 81 8f 45 4a '.PT...........EJ'
+  01 01 01 01 01 01 00 1e 56 ea 50 00 20 30 28 46 '........V.P. 0(F'
+  55 00 58 c2 10 00 00 1a 00 00 00 fd 00 37 4b 1e 'U.X..........7K.'
+  3c 08 00 0a 20 20 20 20 20 20 66 21 50 b0 51 00 '<...      f!P.Q.'
+  1b 30 40 70 36 00 9e 01 11 00 00 1e 00 00 00 fc '.0@p6...........'
+  00 41 2f 47 31 39 35 36 0a 0a 0a 0a 0a 0a 00 4f '.A/G1956.......O'
+Checksum: 0x4f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 344x194 mm vs display size 370x290 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 414x257 mm vs display size 370x290 mm.
+  Detailed Timing Descriptor #2: Invalid detailed timing descriptor ordering.
+  Display Product Name: Non-space after newline.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 30.000 - 60.000 kHz)
+    Maximum Clock: 135.000 MHz (Monitor: 80.000 MHz)
+  Base EDID: The DTD max image size is 414x257mm, which is larger than the display size 370.0x290.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
