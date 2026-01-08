@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469aa22b9400000
-30150104a52f1e7822c720a455499927
-135054bfef00714f814081809500b300
-81000101010108399030621a274018b0
-3640d9281100001c000000ff0042434c
-4d54463031363536390a000000fd0037
-4b1e5510000a202020202020000000fc
-00415355532056573232340a20200062
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 aa 22 b9 40 00 00
+30 15 01 04 a5 2f 1e 78 22 c7 20 a4 55 49 99 27
+13 50 54 bf ef 00 71 4f 81 40 81 80 95 00 b3 00
+81 00 01 01 01 01 08 39 90 30 62 1a 27 40 18 b0
+36 40 d9 28 11 00 00 1c 00 00 00 ff 00 42 43 4c
+4d 54 46 30 31 36 35 36 39 0a 00 00 00 fd 00 37
+4b 1e 55 10 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 56 57 32 32 34 0a 20 20 00 62
 
 00 ff ff ff ff ff ff 00 04 69 aa 22 b9 40 00 00
 30 15 01 04 a5 2f 1e 78 22 c7 20 a4 55 49 99 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 8874
-    Serial Number: 16569
+    Serial Number: ...
     Made in: week 48 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -69,8 +67,39 @@ Block 0, Base EDID:
     DTD 1:  1680x1050   59.851764 Hz  16:10    65.179 kHz    146.000000 MHz (473 mm x 296 mm)
                  Hfront  280 Hsync 176 Hback  104 Hpol N
                  Vfront    3 Vsync   6 Vback   30 Vpol P
-    Display Product Serial Number: 'BCLMTF016569'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-85 kHz H, max dotclock 160 MHz
     Display Product Name: 'ASUS VW224'
 Checksum: 0x62
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 aa 22 b9 40 00 00 '.........i.".@..'
+  30 15 01 04 a5 2f 1e 78 22 c7 20 a4 55 49 99 27 '0..../.x". .UI.''
+  13 50 54 bf ef 00 71 4f 81 40 81 80 95 00 b3 00 '.PT...qO.@......'
+  81 00 01 01 01 01 08 39 90 30 62 1a 27 40 18 b0 '.......9.0b.'@..'
+  36 40 d9 28 11 00 00 1c 00 00 00 ff 00 42 43 4c '6@.(.........BCL'
+  4d 54 46 30 31 36 35 36 39 0a 00 00 00 fd 00 37 'MTF016569......7'
+  4b 1e 55 10 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.U...      ....'
+  00 41 53 55 53 20 56 57 32 32 34 0a 20 20 00 62 '.ASUS VW224.  .b'
+Checksum: 0x62
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00047246ad00000000
-27100104a5221b78e2aec5a2574a9c25
-125054bfef0001010101010101010101
-010101010101302a009851002a403070
-1300520e1100001e000000fd00384b1e
-530e000a202020202020000000ff0036
-33393046463646343031350a000000fc
-00414c31373136410a20202020200092
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 46 ad 00 00 00 00
+27 10 01 04 a5 22 1b 78 e2 ae c5 a2 57 4a 9c 25
+12 50 54 bf ef 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 36
+33 39 30 46 46 36 46 34 30 31 35 0a 00 00 00 fc
+00 41 4c 31 37 31 36 41 0a 20 20 20 20 20 00 92
 
 00 ff ff ff ff ff ff 00 04 72 46 ad 00 00 00 00
 27 10 01 04 a5 22 1b 78 e2 ae c5 a2 57 4a 9c 25
@@ -64,6 +62,37 @@ Block 0, Base EDID:
                  Vfront    1 Vsync   3 Vback   38 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: '6390FF6F4015'
+    Display Product Serial Number: ...
     Display Product Name: 'AL1716A'
 Checksum: 0x92
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 46 ad 00 00 00 00 '.........rF.....'
+  27 10 01 04 a5 22 1b 78 e2 ae c5 a2 57 4a 9c 25 ''....".x....WJ.%'
+  12 50 54 bf ef 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1e '..R..........8K.'
+  53 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 36 'S...      .....6'
+  33 39 30 46 46 36 46 34 30 31 35 0a 00 00 00 fc '390FF6F4015.....'
+  00 41 4c 31 37 31 36 41 0a 20 20 20 20 20 00 92 '.AL1716A.     ..'
+Checksum: 0x92
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

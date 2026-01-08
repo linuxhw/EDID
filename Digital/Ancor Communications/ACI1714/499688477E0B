@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004691417567f0200
-2e16010380221b78eaf265a2574e9e28
-0f5054bfee808180818f714f81cf0101
-010101010101302a009851002a403070
-1300520e1100001e000000ff0043424c
-4d54463136333637300a000000fd0037
-4b1e530f000a202020202020000000fc
-00415355532056423137380a20200039
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 14 17 56 7f 02 00
+2e 16 01 03 80 22 1b 78 ea f2 65 a2 57 4e 9e 28
+0f 50 54 bf ee 80 81 80 81 8f 71 4f 81 cf 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 ff 00 43 42 4c
+4d 54 46 31 36 33 36 37 30 0a 00 00 00 fd 00 37
+4b 1e 53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 56 42 31 37 38 0a 20 20 00 39
 
 00 ff ff ff ff ff ff 00 04 69 14 17 56 7f 02 00
 2e 16 01 03 80 22 1b 78 ea f2 65 a2 57 4e 9e 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 5908
-    Serial Number: 163670
+    Serial Number: ...
     Made in: week 46 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -65,10 +63,32 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (338 mm x 270 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: 'CBLMTF163670'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 150 MHz
     Display Product Name: 'ASUS VB178'
 Checksum: 0x39
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 14 17 56 7f 02 00 '.........i..V...'
+  2e 16 01 03 80 22 1b 78 ea f2 65 a2 57 4e 9e 28 '.....".x..e.WN.('
+  0f 50 54 bf ee 80 81 80 81 8f 71 4f 81 cf 01 01 '.PT.......qO....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 ff 00 43 42 4c '..R..........CBL'
+  4d 54 46 31 36 33 36 37 30 0a 00 00 00 fd 00 37 'MTF163670......7'
+  4b 1e 53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 41 53 55 53 20 56 42 31 37 38 0a 20 20 00 39 '.ASUS VB178.  .9'
+Checksum: 0x39
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00047298adae7d4072
-18110104a52f1e78269345a3554a9827
-155054bfef00b300a940950f950081c0
-8140494f818021399030621a274068b0
-3600da281100001c000000fd00384b1f
-5111000a202020202020000000fc0058
-323231570a20202020202020000000ff
-004c39383042303734333932302000da
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 98 ad ae 7d 40 72
+18 11 01 04 a5 2f 1e 78 26 93 45 a3 55 4a 98 27
+15 50 54 bf ef 00 b3 00 a9 40 95 0f 95 00 81 c0
+81 40 49 4f 81 80 21 39 90 30 62 1a 27 40 68 b0
+36 00 da 28 11 00 00 1c 00 00 00 fd 00 38 4b 1f
+51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 58
+32 32 31 57 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 4c 39 38 30 42 30 37 34 33 39 32 30 20 00 da
 
 00 ff ff ff ff ff ff 00 04 72 98 ad ae 7d 40 72
 18 11 01 04 a5 2f 1e 78 26 93 45 a3 55 4a 98 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 44440
-    Serial Number: 1916829102
+    Serial Number: ...
     Made in: week 24 of 2007
   Basic Display Parameters & Features:
     Digital display
@@ -75,5 +73,38 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 31-81 kHz H, max dotclock 170 MHz
     Display Product Name: 'X221W'
-    Display Product Serial Number: 'L980B0743920 '
+    Display Product Serial Number: ...
 Checksum: 0xda
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 98 ad ae 7d 40 72 '.........r...}@r'
+  18 11 01 04 a5 2f 1e 78 26 93 45 a3 55 4a 98 27 '...../.x&.E.UJ.''
+  15 50 54 bf ef 00 b3 00 a9 40 95 0f 95 00 81 c0 '.PT......@......'
+  81 40 49 4f 81 80 21 39 90 30 62 1a 27 40 68 b0 '.@IO..!9.0b.'@h.'
+  36 00 da 28 11 00 00 1c 00 00 00 fd 00 38 4b 1f '6..(.........8K.'
+  51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 58 'Q...      .....X'
+  32 32 31 57 0a 20 20 20 20 20 20 20 00 00 00 ff '221W.       ....'
+  00 4c 39 38 30 42 30 37 34 33 39 32 30 20 00 da '.L980B0743920 ..'
+Checksum: 0xda
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469a12001010101
-07110104a52b1b78264ab5a35a49a024
-135054afcf00714f81809500b3000101
-01010101010121399030621a274068b0
-3600ae0e1100001c000000fd00374b1e
-500f000a202020202020000000ff0037
-324c393031303136360a2020000000fc
-005057323031202020202020200a0060
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 a1 20 01 01 01 01
+07 11 01 04 a5 2b 1b 78 26 4a b5 a3 5a 49 a0 24
+13 50 54 af cf 00 71 4f 81 80 95 00 b3 00 01 01
+01 01 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0
+36 00 ae 0e 11 00 00 1c 00 00 00 fd 00 37 4b 1e
+50 0f 00 0a 20 20 20 20 20 20 00 00 00 ff 00 37
+32 4c 39 30 31 30 31 36 36 0a 20 20 00 00 00 fc
+00 50 57 32 30 31 20 20 20 20 20 20 20 0a 00 60
 
 00 ff ff ff ff ff ff 00 04 69 a1 20 01 01 01 01
 07 11 01 04 a5 2b 1b 78 26 4a b5 a3 5a 49 a0 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 8353
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 7 of 2007
   Basic Display Parameters & Features:
     Digital display
@@ -68,6 +66,39 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   6 Vback   30 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-80 kHz H, max dotclock 150 MHz
-    Display Product Serial Number: '72L9010166'
+    Display Product Serial Number: ...
     Display Product Name: 'PW201       '
 Checksum: 0x60
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 a1 20 01 01 01 01 '.........i. ....'
+  07 11 01 04 a5 2b 1b 78 26 4a b5 a3 5a 49 a0 24 '.....+.x&J..ZI.$'
+  13 50 54 af cf 00 71 4f 81 80 95 00 b3 00 01 01 '.PT...qO........'
+  01 01 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0 '......!9.0b.'@h.'
+  36 00 ae 0e 11 00 00 1c 00 00 00 fd 00 37 4b 1e '6............7K.'
+  50 0f 00 0a 20 20 20 20 20 20 00 00 00 ff 00 37 'P...      .....7'
+  32 4c 39 30 31 30 31 36 36 0a 20 20 00 00 00 fc '2L9010166.  ....'
+  00 50 57 32 30 31 20 20 20 20 20 20 20 0a 00 60 '.PW201       ..`'
+Checksum: 0x60
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Product Name: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

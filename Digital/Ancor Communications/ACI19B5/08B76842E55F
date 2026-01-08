@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469b5197db40100
-2215010380261e78ea8585a6574a9c26
-125054bfee8081cf818f714f81800101
-010101010101302a009851002a403070
-1300782d1100001e000000ff0042384c
-4d54463131313734310a000000fd0032
-4c35500f000a202020202020000000fc
-00415355532056423139350a2020004e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 b5 19 7d b4 01 00
+22 15 01 03 80 26 1e 78 ea 85 85 a6 57 4a 9c 26
+12 50 54 bf ee 80 81 cf 81 8f 71 4f 81 80 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 ff 00 42 38 4c
+4d 54 46 31 31 31 37 34 31 0a 00 00 00 fd 00 32
+4c 35 50 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 56 42 31 39 35 0a 20 20 00 4e
 
 00 ff ff ff ff ff ff 00 04 69 b5 19 7d b4 01 00
 22 15 01 03 80 26 1e 78 ea 85 85 a6 57 4a 9c 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 6581
-    Serial Number: 111741
+    Serial Number: ...
     Made in: week 34 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -65,8 +63,34 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (376 mm x 301 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: 'B8LMTF111741'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 53-80 kHz H, max dotclock 150 MHz
     Display Product Name: 'ASUS VB195'
 Checksum: 0x4e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 b5 19 7d b4 01 00 '.........i..}...'
+  22 15 01 03 80 26 1e 78 ea 85 85 a6 57 4a 9c 26 '"....&.x....WJ.&'
+  12 50 54 bf ee 80 81 cf 81 8f 71 4f 81 80 01 01 '.PT.......qO....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 ff 00 42 38 4c '..x-.........B8L'
+  4d 54 46 31 31 31 37 34 31 0a 00 00 00 fd 00 32 'MTF111741......2'
+  4c 35 50 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 'L5P...      ....'
+  00 41 53 55 53 20 56 42 31 39 35 0a 20 20 00 4e '.ASUS VB195.  .N'
+Checksum: 0x4e
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 53.000 - 80.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff000469f21978b70100
-22190103a0291778baf545a455509e27
-0f5054bdee0081c00101010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000fd00324b18
-5311000a202020202020000000fc0041
-5355532056533139370a2020000000ff
-0046384c4d54463131323530340a01a8
-02031b71230907078301000067030c00
-1000802143011084e2000f011d007251
-d01e206e28550081490000001e000000
-10000000000000000000000000000000
-00001000000000000000000000000000
-00000000100000000000000000000000
-00000000000010000000000000000000
-000000000000000000000000000000bf
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 f2 19 78 b7 01 00
+22 19 01 03 a0 29 17 78 ba f5 45 a4 55 50 9e 27
+0f 50 54 bd ee 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 4b 18
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+53 55 53 20 56 53 31 39 37 0a 20 20 00 00 00 ff
+00 46 38 4c 4d 54 46 31 31 32 35 30 34 0a 01 a8
+
+02 03 1b 71 23 09 07 07 83 01 00 00 67 03 0c 00
+10 00 80 21 43 01 10 84 e2 00 0f 01 1d 00 72 51
+d0 1e 20 6e 28 55 00 81 49 00 00 00 1e 00 00 00
+10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 bf
 
 00 ff ff ff ff ff ff 00 04 69 f2 19 78 b7 01 00
 22 19 01 03 a0 29 17 78 ba f5 45 a4 55 50 9e 27
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 6642
-    Serial Number: 112504
+    Serial Number: ...
     Made in: week 34 of 2015
   Basic Display Parameters & Features:
     Digital display
@@ -80,7 +79,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 24-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'ASUS VS197'
-    Display Product Serial Number: 'F8LMTF112504'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0xa8
 
@@ -122,3 +121,94 @@ Block 1, CTA-861 Extension Block:
     Dummy Descriptor:
     Dummy Descriptor:
 Checksum: 0xbf  Unused space in Extension Block: 10 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 f2 19 78 b7 01 00 '.........i..x...'
+  22 19 01 03 a0 29 17 78 ba f5 45 a4 55 50 9e 27 '"....).x..E.UP.''
+  0f 50 54 bd ee 00 81 c0 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 4b 18 '3............2K.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'S...      .....A'
+  53 55 53 20 56 53 31 39 37 0a 20 20 00 00 00 ff 'SUS VS197.  ....'
+  00 46 38 4c 4d 54 46 31 31 32 35 30 34 0a 01 a8 '.F8LMTF112504...'
+Checksum: 0xa8
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 165 MHz
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (129 mm x 73 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    Dummy Descriptor:
+    Dummy Descriptor:
+    Dummy Descriptor:
+    Dummy Descriptor:
+Checksum: 0xbf  Unused space in Extension Block: 10 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x20.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #2: Mismatch of image size 129x73 mm vs display size 410x230 mm.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 4.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #3: Mismatch of image size 129x73 mm vs display size 410x230 mm.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

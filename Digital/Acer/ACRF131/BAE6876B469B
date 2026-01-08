@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00047231f127359110
-0915010380331d78eacd30a3554fa027
-115054a10800d1c0b300818001010101
-010101010101023a801871382d40582c
-4500fd1e1100001e000000fd00324b40
-5310000a202020202020000000fc0041
-494f204c43440a2020202020000000ff
-000a20202020020020202020200a00da
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 31 f1 27 35 91 10
+09 15 01 03 80 33 1d 78 ea cd 30 a3 55 4f a0 27
+11 50 54 a1 08 00 d1 c0 b3 00 81 80 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 32 4b 40
+53 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+49 4f 20 4c 43 44 0a 20 20 20 20 20 00 00 00 ff
+00 0a 20 20 20 20 02 00 20 20 20 20 20 0a 00 da
 
 00 ff ff ff ff ff ff 00 04 72 31 f1 27 35 91 10
 09 15 01 03 80 33 1d 78 ea cd 30 a3 55 4f a0 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 61745
-    Serial Number: 277951783
+    Serial Number: ...
     Made in: week 9 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -57,5 +55,34 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 64-83 kHz H, max dotclock 160 MHz
     Display Product Name: 'AIO LCD'
-    Display Product Serial Number: ''
+    Display Product Serial Number: ...
 Checksum: 0xda
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 31 f1 27 35 91 10 '.........r1.'5..'
+  09 15 01 03 80 33 1d 78 ea cd 30 a3 55 4f a0 27 '.....3.x..0.UO.''
+  11 50 54 a1 08 00 d1 c0 b3 00 81 80 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 32 4b 40 'E............2K@'
+  53 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'S...      .....A'
+  49 4f 20 4c 43 44 0a 20 20 20 20 20 00 00 00 ff 'IO LCD.     ....'
+  00 0a 20 20 20 20 02 00 20 20 20 20 20 0a 00 da '..    ..     ...'
+Checksum: 0xda
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 67.500 kHz (Monitor: 64.000 - 83.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
