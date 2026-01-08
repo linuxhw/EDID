@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff005925802300000000
-2121010380351d78ead7a5a2594a9624
-145054ffff808140a9c0614081c08180
-95008180b300023a801871382d40582c
-450056502100001e2a4480a070382740
-302c450056502100001a000000fd0030
-641eb41e000a202020202020000000fc
-00455a434f4f4c20455a32340a20014a
-020330f148901f010204130312230907
-078301000066030c00100038681a0000
-0101304bede305e301e606070060603e
-662156b051001b304070360000000000
-001e685b80a070382d4030285500a05a
-0000001e000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000a6
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 59 25 80 23 00 00 00 00
+21 21 01 03 80 35 1d 78 ea d7 a5 a2 59 4a 96 24
+14 50 54 ff ff 80 81 40 a9 c0 61 40 81 c0 81 80
+95 00 81 80 b3 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 2a 44 80 a0 70 38 27 40
+30 2c 45 00 56 50 21 00 00 1a 00 00 00 fd 00 30
+64 1e b4 1e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 45 5a 43 4f 4f 4c 20 45 5a 32 34 0a 20 01 4a
+
+02 03 30 f1 48 90 1f 01 02 04 13 03 12 23 09 07
+07 83 01 00 00 66 03 0c 00 10 00 38 68 1a 00 00
+01 01 30 4b ed e3 05 e3 01 e6 06 07 00 60 60 3e
+66 21 56 b0 51 00 1b 30 40 70 36 00 00 00 00 00
+00 1e 68 5b 80 a0 70 38 2d 40 30 28 55 00 a0 5a
+00 00 00 1e 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a6
 
 00 ff ff ff ff ff ff 00 59 25 80 23 00 00 00 00
 21 21 01 03 80 35 1d 78 ea d7 a5 a2 59 4a 96 24
@@ -156,3 +155,120 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  40 Hback   72 Hpol P
                  Vfront    5 Vsync   5 Vback   35 Vpol P
 Checksum: 0xa6  Unused space in Extension Block: 43 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 59 25 80 23 00 00 00 00 '........Y%.#....'
+  21 21 01 03 80 35 1d 78 ea d7 a5 a2 59 4a 96 24 '!!...5.x....YJ.$'
+  14 50 54 ff ff 80 81 40 a9 c0 61 40 81 c0 81 80 '.PT....@..a@....'
+  95 00 81 80 b3 00 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 2a 44 80 a0 70 38 27 40 'E.VP!...*D..p8'@'
+  30 2c 45 00 56 50 21 00 00 1a 00 00 00 fd 00 30 '0,E.VP!........0'
+  64 1e b4 1e 00 0a 20 20 20 20 20 20 00 00 00 fc 'd.....      ....'
+  00 45 5a 43 4f 4f 4c 20 45 5a 32 34 0a 20 01 4a '.EZCOOL EZ24. .J'
+Checksum: 0x4a
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 75 Hz
+    Flags 1.x: 0xed (MCCS)
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+    Gamut Boundary Description Metadata Profile P0
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+    Desired content max luminance: 96 (400.000 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 62 (0.236 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 5:  1366x768    59.814889 Hz 683:384   47.553 kHz     85.500000 MHz
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    DTD 6:  1920x1080  100.000000 Hz  16:9    112.500 kHz    234.000000 MHz (160 mm x 90 mm)
+                 Hfront   48 Hsync  40 Hback   72 Hpol P
+                 Vfront    5 Vsync   5 Vback   35 Vpol P
+Checksum: 0xa6  Unused space in Extension Block: 43 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 598x336 mm vs display size 530x290 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 598x336 mm vs display size 530x290 mm.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #4: Mismatch of image size 160x90 mm vs display size 530x290 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #5: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #6: Mismatch of image size 160x90 mm vs display size 530x290 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 598x336mm, which is larger than the display size 530.0x290.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

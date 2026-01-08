@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004e03001901000000
-2a1e010380281b78ead6a5a2594a9524
-145054a94b0081008140818081c07140
-0101454001010d34a0d0518422305098
-360099ff1000001e662150b051001b30
-407036009ae61000001c9a29a0d05184
-2230509836009aff1000001e000000fc
-00535043313930300a20202020200041
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4e 03 00 19 01 00 00 00
+2a 1e 01 03 80 28 1b 78 ea d6 a5 a2 59 4a 95 24
+14 50 54 a9 4b 00 81 00 81 40 81 80 81 c0 71 40
+01 01 45 40 01 01 0d 34 a0 d0 51 84 22 30 50 98
+36 00 99 ff 10 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 9a e6 10 00 00 1c 9a 29 a0 d0 51 84
+22 30 50 98 36 00 9a ff 10 00 00 1e 00 00 00 fc
+00 53 50 43 31 39 30 30 0a 20 20 20 20 20 00 41
 
 00 ff ff ff ff ff ff 00 4e 03 00 19 01 00 00 00
 2a 1e 01 03 80 28 1b 78 ea d6 a5 a2 59 4a 95 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SPC
     Model: 6400
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 42 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -69,3 +67,38 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   6 Vback   25 Vpol P
     Display Product Name: 'SPC1900'
 Checksum: 0x41
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4e 03 00 19 01 00 00 00 '........N.......'
+  2a 1e 01 03 80 28 1b 78 ea d6 a5 a2 59 4a 95 24 '*....(.x....YJ.$'
+  14 50 54 a9 4b 00 81 00 81 40 81 80 81 c0 71 40 '.PT.K....@....q@'
+  01 01 45 40 01 01 0d 34 a0 d0 51 84 22 30 50 98 '..E@...4..Q."0P.'
+  36 00 99 ff 10 00 00 1e 66 21 50 b0 51 00 1b 30 '6.......f!P.Q..0'
+  40 70 36 00 9a e6 10 00 00 1c 9a 29 a0 d0 51 84 '@p6........)..Q.'
+  22 30 50 98 36 00 9a ff 10 00 00 1e 00 00 00 fc '"0P.6...........'
+  00 53 50 43 31 39 30 30 0a 20 20 20 20 20 00 41 '.SPC1900.     .A'
+Checksum: 0x41
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x27.
+  Detailed Timing Descriptor #3: DTD is similar but not identical to DMT 0x2f.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Mismatch of image size 410x230 mm vs display size 400x270 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 410x255 mm vs display size 400x270 mm.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 410x255mm, which is larger than the display size 400.0x270.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

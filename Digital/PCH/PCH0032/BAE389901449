@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004068320000000000
-1b200104b54627783b75d3ad5044a925
-124e56bfef80714f8100904081809540
-a9c0b3009500fb8180a070381f402040
-4500b9882100001a0474801871382d40
-582c4500b9882100001e000000fd0030
-a5c3c329010a202020202020000000fc
-0056414c414b20555a33310a202001dc
-020329f148901f041303123f40230907
-0783010000681a0000010130a500e305
-e301e6060501605d25023a801871382d
-40582c4500b9882100001e047480d072
-382d40102c4580b9882100001ea49c80
-a07038594030203500b9882100001e00
-00000000000000000000000000000000
-0000000000000000000000000000004f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 40 68 32 00 00 00 00 00
+1b 20 01 04 b5 46 27 78 3b 75 d3 ad 50 44 a9 25
+12 4e 56 bf ef 80 71 4f 81 00 90 40 81 80 95 40
+a9 c0 b3 00 95 00 fb 81 80 a0 70 38 1f 40 20 40
+45 00 b9 88 21 00 00 1a 04 74 80 18 71 38 2d 40
+58 2c 45 00 b9 88 21 00 00 1e 00 00 00 fd 00 30
+a5 c3 c3 29 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 41 4c 41 4b 20 55 5a 33 31 0a 20 20 01 dc
+
+02 03 29 f1 48 90 1f 04 13 03 12 3f 40 23 09 07
+07 83 01 00 00 68 1a 00 00 01 01 30 a5 00 e3 05
+e3 01 e6 06 05 01 60 5d 25 02 3a 80 18 71 38 2d
+40 58 2c 45 00 b9 88 21 00 00 1e 04 74 80 d0 72
+38 2d 40 10 2c 45 80 b9 88 21 00 00 1e a4 9c 80
+a0 70 38 59 40 30 20 35 00 b9 88 21 00 00 1e 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4f
 
 00 ff ff ff ff ff ff 00 40 68 32 00 00 00 00 00
 1b 20 01 04 b5 46 27 78 3b 75 d3 ad 50 44 a9 25
@@ -156,4 +155,110 @@ Block 1, CTA-861 Extension Block:
                  Vfront    3 Vsync   5 Vback   81 Vpol P
 Checksum: 0x4f  Unused space in Extension Block: 32 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 40 68 32 00 00 00 00 00 '........@h2.....'
+  1b 20 01 04 b5 46 27 78 3b 75 d3 ad 50 44 a9 25 '. ...F'x;u..PD.%'
+  12 4e 56 bf ef 80 71 4f 81 00 90 40 81 80 95 40 '.NV...qO...@...@'
+  a9 c0 b3 00 95 00 fb 81 80 a0 70 38 1f 40 20 40 '..........p8.@ @'
+  45 00 b9 88 21 00 00 1a 04 74 80 18 71 38 2d 40 'E...!....t..q8-@'
+  58 2c 45 00 b9 88 21 00 00 1e 00 00 00 fd 00 30 'X,E...!........0'
+  a5 c3 c3 29 01 0a 20 20 20 20 20 20 00 00 00 fc '...)..      ....'
+  00 56 41 4c 41 4b 20 55 5a 33 31 0a 20 20 01 dc '.VALAK UZ31.  ..'
+Checksum: 0xdc
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+    VIC  64:  1920x1080  100.000000 Hz  16:9    112.500 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+    Gamut Boundary Description Metadata Profile P0
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 96 (400.000 cd/m^2)
+    Desired content max frame-average luminance: 93 (374.834 cd/m^2)
+    Desired content min luminance: 37 (0.084 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 6:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (697 mm x 392 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 7:  1920x1080  100.000000 Hz  16:9    112.500 kHz    297.000000 MHz (697 mm x 392 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 8:  1920x1080  164.917418 Hz  16:9    192.788 kHz    401.000000 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   81 Vpol P
+Checksum: 0x4f  Unused space in Extension Block: 32 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.250 - 192.788 kHz (Monitor: 195.000 - 195.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 63.
+  Video Data Block: Duplicate VIC 64.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

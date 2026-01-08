@@ -1,0 +1,178 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 51 a1 66 20 00 00 00 00
+1a 22 01 04 a5 1e 13 78 07 ce 95 a3 52 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 04 88 40 a0 b0 08 6d 70 30 20
+66 00 2c be 10 00 00 18 00 00 00 fd 00 30 78 e5
+e5 46 01 0a 20 20 20 20 20 20 00 00 00 10 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fc
+00 54 4c 31 34 30 41 44 58 50 32 36 0a 20 01 fe
+
+70 20 79 02 00 2b 00 06 27 00 30 77 00 00 81 00
+13 72 1a 00 00 03 51 30 78 00 00 6a 42 6a 42 78
+00 00 00 00 22 00 14 52 a0 0a 85 3f 0b 9f 00 2f
+00 1f 00 07 07 6c 00 05 00 05 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 08 90
+
+00 ff ff ff ff ff ff 00 51 a1 66 20 00 00 00 00
+1a 22 01 04 a5 1e 13 78 07 ce 95 a3 52 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 04 88 40 a0 b0 08 6d 70 30 20
+66 00 2c be 10 00 00 18 00 00 00 fd 00 30 78 e5
+e5 46 01 0a 20 20 20 20 20 20 00 00 00 10 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fc
+00 54 4c 31 34 30 41 44 58 50 32 36 0a 20 01 fe
+
+70 20 79 02 00 2b 00 06 27 00 30 77 00 00 81 00
+13 72 1a 00 00 03 51 30 78 00 00 6a 42 6a 42 78
+00 00 00 00 22 00 14 52 a0 0a 85 3f 0b 9f 00 2f
+00 1f 00 07 07 6c 00 05 00 05 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 08 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: TMA
+    Model: 8294
+    Made in: week 26 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3203
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2880x1800   59.999724 Hz  16:10   114.539 kHz    348.200000 MHz (300 mm x 190 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    6 Vsync   6 Vback   97 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-120 Hz V, 229-229 kHz H, max dotclock 700 MHz
+    Dummy Descriptor:
+    Display Product Name: 'TL140ADXP26'
+  Extension blocks: 1
+Checksum: 0xfe
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 48 Hz
+      Max Refresh Rate: 120 Hz
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.81
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 120 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 106 (496.743 cd/m^2)
+    Minimum luminance: 66 (0.333 cd/m^2)
+    Unknown: 0x6a 0x42
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2880x1800  119.999966 Hz  16:10   229.080 kHz    696.403000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    6 Vsync   6 Vback   97 Vpol N
+  Checksum: 0x08
+Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 51 a1 66 20 00 00 00 00 '........Q.f ....'
+  1a 22 01 04 a5 1e 13 78 07 ce 95 a3 52 4c 99 26 '.".....x....RL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 04 88 40 a0 b0 08 6d 70 30 20 '........@...mp0 '
+  66 00 2c be 10 00 00 18 00 00 00 fd 00 30 78 e5 'f.,..........0x.'
+  e5 46 01 0a 20 20 20 20 20 20 00 00 00 10 00 0a '.F..      ......'
+  20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fc '            ....'
+  00 54 4c 31 34 30 41 44 58 50 32 36 0a 20 01 fe '.TL140ADXP26. ..'
+Checksum: 0xfe
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 48 Hz
+      Max Refresh Rate: 120 Hz
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.81
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 120 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 106 (496.743 cd/m^2)
+    Minimum luminance: 66 (0.333 cd/m^2)
+    Unknown: 0x6a 0x42
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2880x1800  119.999966 Hz  16:10   229.080 kHz    696.403000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    6 Vsync   6 Vback   97 Vpol N
+  Checksum: 0x08
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 114.539 - 229.079 kHz (Monitor: 229.000 - 229.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Dummy Descriptor: Dummy block filled with garbage.
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+
+EDID conformity: FAIL

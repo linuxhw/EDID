@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0040a7888801000000
-0816010380341d78ee2445a45650a128
-975054210800814081809500b3000101
-010101010101023a801871382d40582c
-450009252100001e000000fd00323c18
-5e10000a202020202020000000fc0069
-505053422d5344515f445649000000ff
-00300a2020202020202020202020005e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 40 a7 88 88 01 00 00 00
+08 16 01 03 80 34 1d 78 ee 24 45 a4 56 50 a1 28
+97 50 54 21 08 00 81 40 81 80 95 00 b3 00 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 09 25 21 00 00 1e 00 00 00 fd 00 32 3c 18
+5e 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 69
+50 50 53 42 2d 53 44 51 5f 44 56 49 00 00 00 ff
+00 30 0a 20 20 20 20 20 20 20 20 20 20 20 00 5e
 
 00 ff ff ff ff ff ff 00 40 a7 88 88 01 00 00 00
 08 16 01 03 80 34 1d 78 ee 24 45 a4 56 50 a1 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PEG
     Model: 34952
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 8 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -58,5 +56,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-60 Hz V, 24-94 kHz H, max dotclock 160 MHz
     Display Product Name: 'iPPSB-SDQ_DVI'
-    Display Product Serial Number: '0'
+    Display Product Serial Number: ...
 Checksum: 0x5e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 40 a7 88 88 01 00 00 00 '........@.......'
+  08 16 01 03 80 34 1d 78 ee 24 45 a4 56 50 a1 28 '.....4.x.$E.VP.('
+  97 50 54 21 08 00 81 40 81 80 95 00 b3 00 01 01 '.PT!...@........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 09 25 21 00 00 1e 00 00 00 fd 00 32 3c 18 'E..%!........2<.'
+  5e 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 69 '^...      .....i'
+  50 50 53 42 2d 53 44 51 5f 44 56 49 00 00 00 ff 'PPSB-SDQ_DVI....'
+  00 30 0a 20 20 20 20 20 20 20 20 20 20 20 00 5e '.0.           .^'
+Checksum: 0x5e
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

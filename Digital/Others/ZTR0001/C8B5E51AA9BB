@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff006a92010000000000
-2b1f0104a52213780ae67498554b8424
-264e5400000001010101010101010101
-0101010101019c3b803671383c403020
-360058c21000001a0000000000000000
-00000000000000000000000000fe0049
-4e5820200a20202020202020000000fe
-003135362d5a5452482d524d200a00b4
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 6a 92 01 00 00 00 00 00
+2b 1f 01 04 a5 22 13 78 0a e6 74 98 55 4b 84 24
+26 4e 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9c 3b 80 36 71 38 3c 40 30 20
+36 00 58 c2 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 49
+4e 58 20 20 0a 20 20 20 20 20 20 20 00 00 00 fe
+00 31 35 36 2d 5a 54 52 48 2d 52 4d 20 0a 00 b4
 
 00 ff ff ff ff ff ff 00 6a 92 01 00 00 00 00 00
 2b 1f 01 04 a5 22 13 78 0a e6 74 98 55 4b 84 24
@@ -51,3 +49,36 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'INX  '
     Alphanumeric Data String: '156-ZTRH-RM '
 Checksum: 0xb4
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 6a 92 01 00 00 00 00 00 '........j.......'
+  2b 1f 01 04 a5 22 13 78 0a e6 74 98 55 4b 84 24 '+....".x..t.UK.$'
+  26 4e 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '&NT.............'
+  01 01 01 01 01 01 9c 3b 80 36 71 38 3c 40 30 20 '.......;.6q8<@0 '
+  36 00 58 c2 10 00 00 1a 00 00 00 00 00 00 00 00 '6.X.............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 49 '...............I'
+  4e 58 20 20 0a 20 20 20 20 20 20 20 00 00 00 fe 'NX  .       ....'
+  00 31 35 36 2d 5a 54 52 48 2d 52 4d 20 0a 00 b4 '.156-ZTRH-RM ...'
+Checksum: 0xb4
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

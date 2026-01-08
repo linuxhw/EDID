@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00699801039d050000
-12210103951c1078ea4bb59b5b548e25
-1e505400000001010101010101010101
-010101010101143780c270381f403c2e
-3500e00e1100001a000000fd00011801
-1c01000a202020202020000000ff0044
-325530363035394400000000000000fc
-0044756d6d7920646973706c617900bc
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 69 98 01 03 9d 05 00 00
+12 21 01 03 95 1c 10 78 ea 4b b5 9b 5b 54 8e 25
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 14 37 80 c2 70 38 1f 40 3c 2e
+35 00 e0 0e 11 00 00 1a 00 00 00 fd 00 01 18 01
+1c 01 00 0a 20 20 20 20 20 20 00 00 00 ff 00 44
+32 55 30 36 30 35 39 44 00 00 00 00 00 00 00 fc
+00 44 75 6d 6d 79 20 64 69 73 70 6c 61 79 00 bc
 
 00 ff ff ff ff ff ff 00 69 98 01 03 9d 05 00 00
 12 21 01 03 95 1c 10 78 ea 4b b5 9b 5b 54 8e 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ZLX
     Model: 769
-    Serial Number: 1437
+    Serial Number: ...
     Made in: week 18 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -50,6 +48,39 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   23 Vpol N
     Display Range Limits:
       Monitor ranges (GTF): 1-24 Hz V, 1-28 kHz H, max dotclock 10 MHz
-    Display Product Serial Number: 'D2U06059D'
+    Display Product Serial Number: ...
     Display Product Name: 'Dummy display'
 Checksum: 0xbc
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 69 98 01 03 9d 05 00 00 '........i.......'
+  12 21 01 03 95 1c 10 78 ea 4b b5 9b 5b 54 8e 25 '.!.....x.K..[T.%'
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 14 37 80 c2 70 38 1f 40 3c 2e '.......7..p8.@<.'
+  35 00 e0 0e 11 00 00 1a 00 00 00 fd 00 01 18 01 '5...............'
+  1c 01 00 0a 20 20 20 20 20 20 00 00 00 ff 00 44 '....      .....D'
+  32 55 30 36 30 35 39 44 00 00 00 00 00 00 00 fc '2U06059D........'
+  00 44 75 6d 6d 79 20 64 69 73 70 6c 61 79 00 bc '.Dummy display..'
+Checksum: 0xbc
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x14.
+  Detailed Timing Descriptor #1: Mismatch of image size 480x270 mm vs display size 280x160 mm.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 60.034 - 60.034 Hz (Monitor: 1.000 - 24.000 Hz)
+    Horizontal Freq: 66.698 - 66.698 kHz (Monitor: 1.000 - 28.000 kHz)
+    Maximum Clock: 141.000 MHz (Monitor: 10.000 MHz)
+  Base EDID: The DTD max image size is 480x270mm, which is larger than the display size 280.0x160.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

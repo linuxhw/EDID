@@ -1,0 +1,85 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 a9 00 41 00 00 00 00
+ff 18 01 04 a5 15 0d 78 ea 5d 01 9a 5b 4e 95 27
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 38 40 80 e0 70 b0 4e 40 50 20
+86 04 d8 87 00 00 00 1e 60 33 80 e0 70 b0 4e 40
+50 20 86 04 d8 87 00 00 00 1e 00 00 00 0f 00 30
+3c 3d 4c 10 01 28 00 00 00 00 00 00 00 00 00 fe
+00 37 43 32 37 54 30 30 46 39 00 00 00 0a 00 fd
+
+00 ff ff ff ff ff ff 00 34 a9 00 41 00 00 00 00
+ff 18 01 04 a5 15 0d 78 ea 5d 01 9a 5b 4e 95 27
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 38 40 80 e0 70 b0 4e 40 50 20
+86 04 d8 87 00 00 00 1e 60 33 80 e0 70 b0 4e 40
+50 20 86 04 d8 87 00 00 00 1e 00 00 00 0f 00 30
+3c 3d 4c 10 01 28 00 00 00 00 00 00 00 00 00 fe
+00 37 43 32 37 54 30 30 46 39 00 00 00 0a 00 fd
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: MEI
+    Model: 16640
+    Model year: 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 21 cm x 13 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6025, 0.3564
+    Green: 0.3076, 0.5830
+    Blue : 0.1523, 0.1445
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.999299 Hz  16:10    76.679 kHz    164.400000 MHz (216 mm x 135 mm)
+                 Hfront   80 Hsync  32 Hback  112 Hpol P
+                 Vfront   24 Vsync   6 Vback   48 Vpol P
+    DTD 2:  1920x1200   47.999439 Hz  16:10    61.343 kHz    131.520000 MHz (216 mm x 135 mm)
+                 Hfront   80 Hsync  32 Hback  112 Hpol P
+                 Vfront   24 Vsync   6 Vback   48 Vpol P
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 30 3c 3d 4c 10 01 28 00 00 00 00 00 00 '...0<=L..(......'
+    Alphanumeric Data String: '7C27T00F9'
+Checksum: 0xfd
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 34 a9 00 41 00 00 00 00 '........4..A....'
+  ff 18 01 04 a5 15 0d 78 ea 5d 01 9a 5b 4e 95 27 '.......x.]..[N.''
+  25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '%PT.............'
+  01 01 01 01 01 01 38 40 80 e0 70 b0 4e 40 50 20 '......8@..p.N@P '
+  86 04 d8 87 00 00 00 1e 60 33 80 e0 70 b0 4e 40 '........`3..p.N@'
+  50 20 86 04 d8 87 00 00 00 1e 00 00 00 0f 00 30 'P .............0'
+  3c 3d 4c 10 01 28 00 00 00 00 00 00 00 00 00 fe '<=L..(..........'
+  00 37 43 32 37 54 30 30 46 39 00 00 00 0a 00 fd '.7C27T00F9......'
+Checksum: 0xfd
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

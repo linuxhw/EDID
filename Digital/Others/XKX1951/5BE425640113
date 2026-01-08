@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0061785119b8220000
-0a1c0103802c19788a0013a057499b26
-10484eafce008100814081c095000101
-010101010101302a40c8608464301850
-1300c7001100001e662156aa51001e30
-468f3300aaef1000001e0e1f00805100
-1e303020370070cf1000001a000000fc
-004c45442d323030320a2020202000d9
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 61 78 51 19 b8 22 00 00
+0a 1c 01 03 80 2c 19 78 8a 00 13 a0 57 49 9b 26
+10 48 4e af ce 00 81 00 81 40 81 c0 95 00 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 c7 00 11 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 aa ef 10 00 00 1e 0e 1f 00 80 51 00
+1e 30 30 20 37 00 70 cf 10 00 00 1a 00 00 00 fc
+00 4c 45 44 2d 32 30 30 32 0a 20 20 20 20 00 d9
 
 00 ff ff ff ff ff ff 00 61 78 51 19 b8 22 00 00
 0a 1c 01 03 80 2c 19 78 8a 00 13 a0 57 49 9b 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: XKX
     Model: 6481
-    Serial Number: 8888
+    Serial Number: ...
     Made in: week 10 of 2018
   Basic Display Parameters & Features:
     Digital display
@@ -70,3 +68,38 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   7 Vback   20 Vpol N
     Display Product Name: 'LED-2002'
 Checksum: 0xd9
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 61 78 51 19 b8 22 00 00 '........axQ.."..'
+  0a 1c 01 03 80 2c 19 78 8a 00 13 a0 57 49 9b 26 '.....,.x....WI.&'
+  10 48 4e af ce 00 81 00 81 40 81 c0 95 00 01 01 '.HN......@......'
+  01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
+  13 00 c7 00 11 00 00 1e 66 21 56 aa 51 00 1e 30 '........f!V.Q..0'
+  46 8f 33 00 aa ef 10 00 00 1e 0e 1f 00 80 51 00 'F.3...........Q.'
+  1e 30 30 20 37 00 70 cf 10 00 00 1a 00 00 00 fc '.00 7.p.........'
+  00 4c 45 44 2d 32 30 30 32 0a 20 20 20 20 00 d9 '.LED-2002.    ..'
+Checksum: 0xd9
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #3: DTD is similar but not identical to DMT 0x17.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 455x256 mm vs display size 440x250 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 426x239 mm vs display size 440x250 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 368x207 mm vs display size 440x250 mm.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 455x256mm, which is larger than the display size 440.0x250.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

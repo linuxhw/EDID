@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0053040000b8220000
-003a010380000078aeb1a5a1584f9526
-165054adce00314045406140818081c0
-0101010101017f2156aa51001e30468f
-3300c4fe1000001e662150b051001b30
-40703600c4fe1000001e000000fd0032
-3d1e5808000a202020202020000000fc
-0048444d490a20202020202020200078
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 53 04 00 00 b8 22 00 00
+00 3a 01 03 80 00 00 78 ae b1 a5 a1 58 4f 95 26
+16 50 54 ad ce 00 31 40 45 40 61 40 81 80 81 c0
+01 01 01 01 01 01 7f 21 56 aa 51 00 1e 30 46 8f
+33 00 c4 fe 10 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 c4 fe 10 00 00 1e 00 00 00 fd 00 32
+3d 1e 58 08 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 48 44 4d 49 0a 20 20 20 20 20 20 20 20 00 78
 
 00 ff ff ff ff ff ff 00 53 04 00 00 b8 22 00 00
 00 3a 01 03 80 00 00 78 ae b1 a5 a1 58 4f 95 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: TXD
     Model: 0
-    Serial Number: 8888
+    Serial Number: ...
     Made in: 2048
   Basic Display Parameters & Features:
     Digital display
@@ -70,3 +68,34 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 50-61 Hz V, 30-88 kHz H, max dotclock 80 MHz
     Display Product Name: 'HDMI'
 Checksum: 0x78
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 53 04 00 00 b8 22 00 00 '........S...."..'
+  00 3a 01 03 80 00 00 78 ae b1 a5 a1 58 4f 95 26 '.:.....x....XO.&'
+  16 50 54 ad ce 00 31 40 45 40 61 40 81 80 81 c0 '.PT...1@E@a@....'
+  01 01 01 01 01 01 7f 21 56 aa 51 00 1e 30 46 8f '.......!V.Q..0F.'
+  33 00 c4 fe 10 00 00 1e 66 21 50 b0 51 00 1b 30 '3.......f!P.Q..0'
+  40 70 36 00 c4 fe 10 00 00 1e 00 00 00 fd 00 32 '@p6............2'
+  3d 1e 58 08 00 0a 20 20 20 20 20 20 00 00 00 fc '=.X...      ....'
+  00 48 44 4d 49 0a 20 20 20 20 20 20 20 20 00 78 '.HDMI.        .x'
+Checksum: 0x78
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The year 2048 is more than one year in the future.
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 75.029 Hz (Monitor: 50.000 - 61.000 Hz)
+    Maximum Clock: 108.000 MHz (Monitor: 80.000 MHz)
+  Base EDID: The DTD max image size is 452x254mm, but the display size is not specified anywhere.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

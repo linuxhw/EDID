@@ -1,0 +1,81 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5d 34 fa 00 00 00 00 00
+28 15 01 04 a5 3c 22 78 2a 6f b1 a7 55 4c 9e 25
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b0 68 00 a0 a0 40 2e 60 30 20
+36 00 9e ae 21 00 00 1a 00 00 00 fc 00 44 56 49
+0a 20 20 20 20 20 20 20 20 20 00 00 00 fc 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fc
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 61
+
+00 ff ff ff ff ff ff 00 5d 34 fa 00 00 00 00 00
+28 15 01 04 a5 3c 22 78 2a 6f b1 a7 55 4c 9e 25
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b0 68 00 a0 a0 40 2e 60 30 20
+36 00 9e ae 21 00 00 1a 00 00 00 fc 00 44 56 49
+0a 20 20 20 20 20 20 20 20 20 00 00 00 fc 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fc
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 61
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: WIT
+    Model: 250
+    Made in: week 40 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6533, 0.3339
+    Green: 0.2998, 0.6201
+    Blue : 0.1464, 0.0498
+    White: 0.3125, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   59.859910 Hz  16:10    98.529 kHz    268.000000 MHz (670 mm x 430 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   37 Vpol N
+    Display Product Name: 'DVI'
+    Display Product Name: ''
+    Display Product Name: ''
+Checksum: 0x61
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5d 34 fa 00 00 00 00 00 '........]4......'
+  28 15 01 04 a5 3c 22 78 2a 6f b1 a7 55 4c 9e 25 '(....<"x*o..UL.%'
+  0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 b0 68 00 a0 a0 40 2e 60 30 20 '.......h...@.`0 '
+  36 00 9e ae 21 00 00 1a 00 00 00 fc 00 44 56 49 '6...!........DVI'
+  0a 20 20 20 20 20 20 20 20 20 00 00 00 fc 00 0a '.         ......'
+  20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fc '            ....'
+  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 61 '..            .a'
+Checksum: 0x61
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 670x430 mm vs display size 600x340 mm.
+  Display Product Name: Empty string.
+  Display Product Name: Empty string.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 670x430mm, which is larger than the display size 600.0x340.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

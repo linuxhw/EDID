@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0051a1272000000000
-1e210104a5100878076ea1a4524c9a25
-0f505400000001010101010101010101
-0101010101018b6f80a0703840403020
-620c9b5700000018c63780a070384040
-3020620c9b570000001a000000fd0030
-788c8c1d010a202020202020000000fc
-00544c3037304656585330322d300083
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 51 a1 27 20 00 00 00 00
+1e 21 01 04 a5 10 08 78 07 6e a1 a4 52 4c 9a 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8b 6f 80 a0 70 38 40 40 30 20
+62 0c 9b 57 00 00 00 18 c6 37 80 a0 70 38 40 40
+30 20 62 0c 9b 57 00 00 00 1a 00 00 00 fd 00 30
+78 8c 8c 1d 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 54 4c 30 37 30 46 56 58 53 30 32 2d 30 00 83
 
 00 ff ff ff ff ff ff 00 51 a1 27 20 00 00 00 00
 1e 21 01 04 a5 10 08 78 07 6e a1 a4 52 4c 9a 25
@@ -56,3 +54,37 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 48-120 Hz V, 140-140 kHz H, max dotclock 290 MHz
     Display Product Name: 'TL070FVXS02-0'
 Checksum: 0x83
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 51 a1 27 20 00 00 00 00 '........Q.' ....'
+  1e 21 01 04 a5 10 08 78 07 6e a1 a4 52 4c 9a 25 '.!.....x.n..RL.%'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 8b 6f 80 a0 70 38 40 40 30 20 '.......o..p8@@0 '
+  62 0c 9b 57 00 00 00 18 c6 37 80 a0 70 38 40 40 'b..W.....7..p8@@'
+  30 20 62 0c 9b 57 00 00 00 1a 00 00 00 fd 00 30 '0 b..W.........0'
+  78 8c 8c 1d 01 0a 20 20 20 20 20 20 00 00 00 fc 'x.....      ....'
+  00 54 4c 30 37 30 46 56 58 53 30 32 2d 30 00 83 '.TL070FVXS02-0..'
+Checksum: 0x83
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (16x8 is smaller than 10x10 cm).
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 68.644 - 137.283 kHz (Monitor: 140.000 - 140.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

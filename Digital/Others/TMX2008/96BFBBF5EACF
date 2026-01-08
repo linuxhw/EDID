@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0051b80820304e4a58
-2a210104b51e147807ee95a3544c9926
-0f505400000001010101010101010101
-0101010101019ddfd8a0909058673020
-36002cc8100000189ddfd8a090906460
-302036002cc810000018000000fd0030
-78d6d63a010a202020202020000000fc
-00544c3134324744585030342d30004b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 51 b8 08 20 30 4e 4a 58
+2a 21 01 04 b5 1e 14 78 07 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9d df d8 a0 90 90 58 67 30 20
+36 00 2c c8 10 00 00 18 9d df d8 a0 90 90 64 60
+30 20 36 00 2c c8 10 00 00 18 00 00 00 fd 00 30
+78 d6 d6 3a 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 54 4c 31 34 32 47 44 58 50 30 34 2d 30 00 4b
 
 00 ff ff ff ff ff ff 00 51 b8 08 20 30 4e 4a 58
 2a 21 01 04 b5 1e 14 78 07 ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: TMX
     Model: 8200
-    Serial Number: 1481264688
+    Serial Number: ...
     Made in: week 42 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -57,3 +55,29 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 48-120 Hz V, 214-214 kHz H, max dotclock 580 MHz
     Display Product Name: 'TL142GDXP04-0'
 Checksum: 0x4b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 51 b8 08 20 30 4e 4a 58 '........Q.. 0NJX'
+  2a 21 01 04 b5 1e 14 78 07 ee 95 a3 54 4c 99 26 '*!.....x....TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 9d df d8 a0 90 90 58 67 30 20 '............Xg0 '
+  36 00 2c c8 10 00 00 18 9d df d8 a0 90 90 64 60 '6.,...........d`'
+  30 20 36 00 2c c8 10 00 00 18 00 00 00 fd 00 30 '0 6.,..........0'
+  78 d6 d6 3a 01 0a 20 20 20 20 20 20 00 00 00 fc 'x..:..      ....'
+  00 54 4c 31 34 32 47 44 58 50 30 34 2d 30 00 4b '.TL142GDXP04-0.K'
+Checksum: 0x4b
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

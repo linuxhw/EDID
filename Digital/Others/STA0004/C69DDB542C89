@@ -1,0 +1,83 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4e 81 04 00 00 00 00 00
+10 20 01 04 a5 1a 0e 78 0a dc dd 96 5b 5b 91 28
+1f 52 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8e 1c 56 a0 50 00 1e 30 28 20
+55 00 00 90 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 31 31 36 4b 48 44 30 32 34 30 30 36 0a 00 e6
+
+00 ff ff ff ff ff ff 00 4e 81 04 00 00 00 00 00
+10 20 01 04 a5 1a 0e 78 0a dc dd 96 5b 5b 91 28
+1f 52 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8e 1c 56 a0 50 00 1e 30 28 20
+55 00 00 90 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 31 31 36 4b 48 44 30 32 34 30 30 36 0a 00 e6
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: STA
+    Model: 4
+    Made in: week 16 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5888, 0.3564
+    Green: 0.3583, 0.5664
+    Blue : 0.1591, 0.1220
+    White: 0.3232, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.028840 Hz 683:384   47.903 kHz     73.100000 MHz (256 mm x 144 mm)
+                 Hfront   40 Hsync  32 Hback   88 Hpol N
+                 Vfront    5 Vsync   5 Vback   20 Vpol N
+    Empty Descriptor
+    Empty Descriptor
+    Alphanumeric Data String: '116KHD024006'
+Checksum: 0xe6
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4e 81 04 00 00 00 00 00 '........N.......'
+  10 20 01 04 a5 1a 0e 78 0a dc dd 96 5b 5b 91 28 '. .....x....[[.('
+  1f 52 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.RT.............'
+  01 01 01 01 01 01 8e 1c 56 a0 50 00 1e 30 28 20 '........V.P..0( '
+  55 00 00 90 10 00 00 18 00 00 00 00 00 00 00 00 'U...............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe '................'
+  00 31 31 36 4b 48 44 30 32 34 30 30 36 0a 00 e6 '.116KHD024006...'
+Checksum: 0xe6
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

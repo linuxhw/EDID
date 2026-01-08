@@ -1,0 +1,160 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 51 a1 61 20 00 00 00 00
+1f 22 01 04 b5 1f 14 78 03 ad 50 ad 51 43 b0 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b7 98 00 a0 c0 80 60 70 30 20
+66 00 38 c3 10 00 00 18 00 00 00 fd 00 1e 78 f2
+f2 4f 01 0a 20 20 20 20 20 20 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc
+00 54 4c 31 34 35 4d 44 58 50 30 32 0a 20 01 9e
+
+70 20 79 02 00 22 00 28 3d ee 0b 05 ff 0b 9f 00
+2f 00 1f 00 7f 07 5f 00 05 00 05 00 1e f7 05 88
+ff 0b 9f 00 2f 00 1f 00 7f 07 5f 00 05 00 05 00
+81 00 10 6f 1a 00 00 03 01 1e 78 00 00 00 00 00
+00 78 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 46 90
+
+00 ff ff ff ff ff ff 00 51 a1 61 20 00 00 00 00
+1f 22 01 04 b5 1f 14 78 03 ad 50 ad 51 43 b0 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b7 98 00 a0 c0 80 60 70 30 20
+66 00 38 c3 10 00 00 18 00 00 00 fd 00 1e 78 f2
+f2 4f 01 0a 20 20 20 20 20 20 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc
+00 54 4c 31 34 35 4d 44 58 50 30 32 0a 20 01 9e
+
+70 20 79 02 00 22 00 28 3d ee 0b 05 ff 0b 9f 00
+2f 00 1f 00 7f 07 5f 00 05 00 05 00 1e f7 05 88
+ff 0b 9f 00 2f 00 1f 00 7f 07 5f 00 05 00 05 00
+81 00 10 6f 1a 00 00 03 01 1e 78 00 00 00 00 00
+00 78 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 46 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: TMA
+    Model: 8289
+    Made in: week 31 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 31 cm x 20 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6777, 0.3183
+    Green: 0.2646, 0.6884
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3072x1920   60.001117 Hz  16:10   120.962 kHz    390.950000 MHz (312 mm x 195 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    6 Vsync   6 Vback   84 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 30-120 Hz V, 242-242 kHz H, max dotclock 790 MHz
+    Dummy Descriptor:
+    Display Product Name: 'TL145MDXP02'
+  Extension blocks: 1
+Checksum: 0x9e
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  3072x1920  120.000086 Hz  16:10   241.920 kHz    781.886000 MHz (aspect 16:10, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    6 Vsync   6 Vback   84 Vpol N
+    DTD:  3072x1920   60.000043 Hz   0:0    120.960 kHz    390.943000 MHz (aspect undefined, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    6 Vsync   6 Vback   84 Vpol N
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 30 Hz
+    Maximum Refresh Rate: 120 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Checksum: 0x46
+Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 51 a1 61 20 00 00 00 00 '........Q.a ....'
+  1f 22 01 04 b5 1f 14 78 03 ad 50 ad 51 43 b0 26 '.".....x..P.QC.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 b7 98 00 a0 c0 80 60 70 30 20 '............`p0 '
+  66 00 38 c3 10 00 00 18 00 00 00 fd 00 1e 78 f2 'f.8...........x.'
+  f2 4f 01 0a 20 20 20 20 20 20 00 00 00 10 00 00 '.O..      ......'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc '................'
+  00 54 4c 31 34 35 4d 44 58 50 30 32 0a 20 01 9e '.TL145MDXP02. ..'
+Checksum: 0x9e
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  3072x1920  120.000086 Hz  16:10   241.920 kHz    781.886000 MHz (aspect 16:10, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    6 Vsync   6 Vback   84 Vpol N
+    DTD:  3072x1920   60.000043 Hz   0:0    120.960 kHz    390.943000 MHz (aspect undefined, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    6 Vsync   6 Vback   84 Vpol N
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 30 Hz
+    Maximum Refresh Rate: 120 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Checksum: 0x46
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 120.960 - 241.920 kHz (Monitor: 242.000 - 242.000 kHz)
+
+Failures:
+
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+
+EDID conformity: FAIL

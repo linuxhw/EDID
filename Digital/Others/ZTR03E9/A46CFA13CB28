@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff006a92e90300000000
-05220104a5221378031bbba658559d26
-0e4f5500000001010101010101010101
-010101010101403a800471383c403020
-360059c21000001a9a2e800471383c40
-3020360059c21000001a000000fe0042
-4f452020200a202020202020000000fe
-005a54524831353646484430330a00a6
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 6a 92 e9 03 00 00 00 00
+05 22 01 04 a5 22 13 78 03 1b bb a6 58 55 9d 26
+0e 4f 55 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 40 3a 80 04 71 38 3c 40 30 20
+36 00 59 c2 10 00 00 1a 9a 2e 80 04 71 38 3c 40
+30 20 36 00 59 c2 10 00 00 1a 00 00 00 fe 00 42
+4f 45 20 20 20 0a 20 20 20 20 20 20 00 00 00 fe
+00 5a 54 52 48 31 35 36 46 48 44 30 33 0a 00 a6
 
 00 ff ff ff ff ff ff 00 6a 92 e9 03 00 00 00 00
 05 22 01 04 a5 22 13 78 03 1b bb a6 58 55 9d 26
@@ -54,3 +52,35 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'BOE   '
     Alphanumeric Data String: 'ZTRH156FHD03'
 Checksum: 0xa6
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 6a 92 e9 03 00 00 00 00 '........j.......'
+  05 22 01 04 a5 22 13 78 03 1b bb a6 58 55 9d 26 '."...".x....XU.&'
+  0e 4f 55 00 00 00 01 01 01 01 01 01 01 01 01 01 '.OU.............'
+  01 01 01 01 01 01 40 3a 80 04 71 38 3c 40 30 20 '......@:..q8<@0 '
+  36 00 59 c2 10 00 00 1a 9a 2e 80 04 71 38 3c 40 '6.Y.........q8<@'
+  30 20 36 00 59 c2 10 00 00 1a 00 00 00 fe 00 42 '0 6.Y..........B'
+  4f 45 20 20 20 0a 20 20 20 20 20 20 00 00 00 fe 'OE   .      ....'
+  00 5a 54 52 48 31 35 36 46 48 44 30 33 0a 00 a6 '.ZTRH156FHD03...'
+Checksum: 0xa6
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

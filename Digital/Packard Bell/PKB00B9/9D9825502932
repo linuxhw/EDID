@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004162b90056257003
-25140104a5291778223d81a6564a9a24
-125054bfee0081c08100010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000fd00374b1e
-3c09000a202020202020000000ff0044
-31303038303236343230380a000000fc
-00566973656f2031393020570a2000ab
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 62 b9 00 56 25 70 03
+25 14 01 04 a5 29 17 78 22 3d 81 a6 56 4a 9a 24
+12 50 54 bf ee 00 81 c0 81 00 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 fd 00 37 4b 1e
+3c 09 00 0a 20 20 20 20 20 20 00 00 00 ff 00 44
+31 30 30 38 30 32 36 34 32 30 38 0a 00 00 00 fc
+00 56 69 73 65 6f 20 31 39 30 20 57 0a 20 00 ab
 
 00 ff ff ff ff ff ff 00 41 62 b9 00 56 25 70 03
 25 14 01 04 a5 29 17 78 22 3d 81 a6 56 4a 9a 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PKB
     Model: 185
-    Serial Number: 57681238
+    Serial Number: ...
     Made in: week 37 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -66,6 +64,37 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   3 Vback   24 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-60 kHz H, max dotclock 90 MHz
-    Display Product Serial Number: 'D10080264208'
+    Display Product Serial Number: ...
     Display Product Name: 'Viseo 190 W'
 Checksum: 0xab
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 62 b9 00 56 25 70 03 '........Ab..V%p.'
+  25 14 01 04 a5 29 17 78 22 3d 81 a6 56 4a 9a 24 '%....).x"=..VJ.$'
+  12 50 54 bf ee 00 81 c0 81 00 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 fd 00 37 4b 1e '3............7K.'
+  3c 09 00 0a 20 20 20 20 20 20 00 00 00 ff 00 44 '<...      .....D'
+  31 30 30 38 30 32 36 34 32 30 38 0a 00 00 00 fc '10080264208.....'
+  00 56 69 73 65 6f 20 31 39 30 20 57 0a 20 00 ab '.Viseo 190 W. ..'
+Checksum: 0xab
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

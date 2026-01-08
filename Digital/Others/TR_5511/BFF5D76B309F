@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00525f115501040000
-051f0104a52b1d78028042ac5130b425
-10505300000001010101010101010101
-010101010101a63780c8703828405020
-3500064d2100001a602e80c870382840
-50203500064d2100001a000000fe000a
-202020202020202020202020000000fe
-0031393230783130383020202020003b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 52 5f 11 55 01 04 00 00
+05 1f 01 04 a5 2b 1d 78 02 80 42 ac 51 30 b4 25
+10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a6 37 80 c8 70 38 28 40 50 20
+35 00 06 4d 21 00 00 1a 60 2e 80 c8 70 38 28 40
+50 20 35 00 06 4d 21 00 00 1a 00 00 00 fe 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 31 39 32 30 78 31 30 38 30 20 20 20 20 00 3b
 
 00 ff ff ff ff ff ff 00 52 5f 11 55 01 04 00 00
 05 1f 01 04 a5 2b 1d 78 02 80 42 ac 51 30 b4 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: TR_
     Model: 21777
-    Serial Number: 1025
+    Serial Number: ...
     Made in: week 5 of 2021
   Basic Display Parameters & Features:
     Digital display
@@ -55,4 +53,38 @@ Block 0, Base EDID:
     Alphanumeric Data String: '1920x1080    '
 Checksum: 0x3b
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 52 5f 11 55 01 04 00 00 '........R_.U....'
+  05 1f 01 04 a5 2b 1d 78 02 80 42 ac 51 30 b4 25 '.....+.x..B.Q0.%'
+  10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PS.............'
+  01 01 01 01 01 01 a6 37 80 c8 70 38 28 40 50 20 '.......7..p8(@P '
+  35 00 06 4d 21 00 00 1a 60 2e 80 c8 70 38 28 40 '5..M!...`...p8(@'
+  50 20 35 00 06 4d 21 00 00 1a 00 00 00 fe 00 0a 'P 5..M!.........'
+  20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fe '            ....'
+  00 31 39 32 30 78 31 30 38 30 20 20 20 20 00 3b '.1920x1080    .;'
+Checksum: 0x3b
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: Manufacturer name field contains garbage.
+  Detailed Timing Descriptor #1: Mismatch of image size 518x333 mm vs display size 430x290 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 518x333 mm vs display size 430x290 mm.
+  Alphanumeric Data String: Empty string.
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 518x333mm, which is larger than the display size 430.0x290.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
