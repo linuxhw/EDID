@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004c2da506504d4459
-1b14010380291a782280c5a657499b23
-125054bfef809500950f81808140714f
-8100010101019a29a0d0518422305098
-360098ff1000001c000000fd00384b1e
-510e000a202020202020000000fc0053
-4d42313932304e570a202020000000ff
-004839595a3730313338300a2020013f
-02031c7147021113841f100323090707
-8301000067030c0010000028662150b0
-51001b30407036000f484200001e6621
-56aa51001e30468f33000f484200001e
-8c0ad08a20e02d10103e960010090000
-00180000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000f8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d a5 06 50 4d 44 59
+1b 14 01 03 80 29 1a 78 22 80 c5 a6 57 49 9b 23
+12 50 54 bf ef 80 95 00 95 0f 81 80 81 40 71 4f
+81 00 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 fd 00 38 4b 1e
+51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53
+4d 42 31 39 32 30 4e 57 0a 20 20 20 00 00 00 ff
+00 48 39 59 5a 37 30 31 33 38 30 0a 20 20 01 3f
+
+02 03 1c 71 47 02 11 13 84 1f 10 03 23 09 07 07
+83 01 00 00 67 03 0c 00 10 00 00 28 66 21 50 b0
+51 00 1b 30 40 70 36 00 0f 48 42 00 00 1e 66 21
+56 aa 51 00 1e 30 46 8f 33 00 0f 48 42 00 00 1e
+8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 10 09 00 00
+00 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f8
 
 00 ff ff ff ff ff ff 00 4c 2d a5 06 50 4d 44 59
 1b 14 01 03 80 29 1a 78 22 80 c5 a6 57 49 9b 23
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 1701
-    Serial Number: 1497648464
+    Serial Number: ...
     Made in: week 27 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -88,7 +87,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-81 kHz H, max dotclock 140 MHz
     Display Product Name: 'SMB1920NW'
-    Display Product Serial Number: 'H9YZ701380'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x3f
 
@@ -129,3 +128,100 @@ Block 1, CTA-861 Extension Block:
                  Hfront   16 Hsync  62 Hback   60 Hpol N
                  Vfront    9 Vsync   6 Vback   30 Vpol N
 Checksum: 0xf8  Unused space in Extension Block: 45 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d a5 06 50 4d 44 59 '........L-..PMDY'
+  1b 14 01 03 80 29 1a 78 22 80 c5 a6 57 49 9b 23 '.....).x"...WI.#'
+  12 50 54 bf ef 80 95 00 95 0f 81 80 81 40 71 4f '.PT..........@qO'
+  81 00 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 00 00 00 fd 00 38 4b 1e '6............8K.'
+  51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53 'Q...      .....S'
+  4d 42 31 39 32 30 4e 57 0a 20 20 20 00 00 00 ff 'MB1920NW.   ....'
+  00 48 39 59 5a 37 30 31 33 38 30 0a 20 20 01 3f '.H9YZ701380.  .?'
+Checksum: 0x3f
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Maximum TMDS clock: 200 MHz
+  Detailed Timing Descriptors:
+    DTD 5:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (1039 mm x 584 mm)
+                 Hfront   64 Hsync 112 Hback  256 Hpol P
+                 Vfront    3 Vsync   6 Vback   18 Vpol P
+    DTD 6:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (1039 mm x 584 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    DTD 7:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (16 mm x 9 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0xf8  Unused space in Extension Block: 45 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Mismatch of image size 1039x584 mm vs display size 410x260 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 1039x584 mm vs display size 410x260 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 16x9 mm vs display size 410x260 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 3.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #5: Mismatch of image size 1039x584 mm vs display size 410x260 mm.
+  Detailed Timing Descriptor #6: Mismatch of image size 1039x584 mm vs display size 410x260 mm.
+  Detailed Timing Descriptor #7: Mismatch of image size 16x9 mm vs display size 410x260 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.062 Hz (Monitor: 56.000 - 75.000 Hz)
+    Maximum Clock: 148.500 MHz (Monitor: 140.000 MHz)
+  Base EDID: The DTD max image size is 1039x584mm, which is larger than the display size 410.0x260.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

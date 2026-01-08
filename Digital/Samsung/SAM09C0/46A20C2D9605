@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2dc00931313330
-11170104a5291a782280c5a657499b23
-125054bfee80714f81c08100950f0101
-0101010101019a29a0d0518422305098
-360098ff1000001c000000fd00384b1e
-510e000a202020202020000000fc0053
-3139433435300a2020202020000000ff
-0048344d443430303332340a20200032
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d c0 09 31 31 33 30
+11 17 01 04 a5 29 1a 78 22 80 c5 a6 57 49 9b 23
+12 50 54 bf ee 80 71 4f 81 c0 81 00 95 0f 01 01
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 fd 00 38 4b 1e
+51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53
+31 39 43 34 35 30 0a 20 20 20 20 20 00 00 00 ff
+00 48 34 4d 44 34 30 30 33 32 34 0a 20 20 00 32
 
 00 ff ff ff ff ff ff 00 4c 2d c0 09 31 31 33 30
 11 17 01 04 a5 29 1a 78 22 80 c5 a6 57 49 9b 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 2496
-    Serial Number: 808661297
+    Serial Number: ...
     Made in: week 17 of 2013
   Basic Display Parameters & Features:
     Digital display
@@ -70,5 +68,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-81 kHz H, max dotclock 140 MHz
     Display Product Name: 'S19C450'
-    Display Product Serial Number: 'H4MD400324'
+    Display Product Serial Number: ...
 Checksum: 0x32
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d c0 09 31 31 33 30 '........L-..1130'
+  11 17 01 04 a5 29 1a 78 22 80 c5 a6 57 49 9b 23 '.....).x"...WI.#'
+  12 50 54 bf ee 80 71 4f 81 c0 81 00 95 0f 01 01 '.PT...qO........'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 00 00 00 fd 00 38 4b 1e '6............8K.'
+  51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53 'Q...      .....S'
+  31 39 43 34 35 30 0a 20 20 20 20 20 00 00 00 ff '19C450.     ....'
+  00 48 34 4d 44 34 30 30 33 32 34 0a 20 20 00 32 '.H4MD400324.  .2'
+Checksum: 0x32
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

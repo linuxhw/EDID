@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2da50735334154
-30140104a5301b782092c1a259559e27
-0e5054bfef80714f8100814081809500
-950fb3000101023a801871382d40582c
-4500dd0c1100001e662150b051001b30
-40703600dd0c1100001e000000fd003c
-4b1e5111000a202020202020000000fc
-00534d543232413335300a2020200089
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d a5 07 35 33 41 54
+30 14 01 04 a5 30 1b 78 20 92 c1 a2 59 55 9e 27
+0e 50 54 bf ef 80 71 4f 81 00 81 40 81 80 95 00
+95 0f b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 dd 0c 11 00 00 1e 00 00 00 fd 00 3c
+4b 1e 51 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 4d 54 32 32 41 33 35 30 0a 20 20 20 00 89
 
 00 ff ff ff ff ff ff 00 4c 2d a5 07 35 33 41 54
 30 14 01 04 a5 30 1b 78 20 92 c1 a2 59 55 9e 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 1957
-    Serial Number: 1413559093
+    Serial Number: ...
     Made in: week 48 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -79,4 +77,36 @@ Block 0, Base EDID:
     Display Product Name: 'SMT22A350'
 Checksum: 0x89
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d a5 07 35 33 41 54 '........L-..53AT'
+  30 14 01 04 a5 30 1b 78 20 92 c1 a2 59 55 9e 27 '0....0.x ...YU.''
+  0e 50 54 bf ef 80 71 4f 81 00 81 40 81 80 95 00 '.PT...qO...@....'
+  95 0f b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 66 21 50 b0 51 00 1b 30 'E.......f!P.Q..0'
+  40 70 36 00 dd 0c 11 00 00 1e 00 00 00 fd 00 3c '@p6............<'
+  4b 1e 51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
+  00 53 4d 54 32 32 41 33 35 30 0a 20 20 20 00 89 '.SMT22A350.   ..'
+Checksum: 0x89
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 75.062 Hz (Monitor: 60.000 - 75.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
