@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000dae211500000000
-011e0104a52213780328659759548e27
-1e505400000001010101010101010101
-0101010101019e8580a070383e403020
-a50058c110000018ad3780a070383e40
-3020a50058c110000018000000fd0030
-90a5a522010a202020202020000000fe
-004e3135364852412d4741410a20006e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 21 15 00 00 00 00
+01 1e 01 04 a5 22 13 78 03 28 65 97 59 54 8e 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9e 85 80 a0 70 38 3e 40 30 20
+a5 00 58 c1 10 00 00 18 ad 37 80 a0 70 38 3e 40
+30 20 a5 00 58 c1 10 00 00 18 00 00 00 fd 00 30
+90 a5 a5 22 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 35 36 48 52 41 2d 47 41 41 0a 20 00 6e
 
 00 ff ff ff ff ff ff 00 0d ae 21 15 00 00 00 00
 01 1e 01 04 a5 22 13 78 03 28 65 97 59 54 8e 27
@@ -55,3 +53,36 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 48-144 Hz V, 165-165 kHz H, max dotclock 340 MHz
     Alphanumeric Data String: 'N156HRA-GAA'
 Checksum: 0x6e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d ae 21 15 00 00 00 00 '..........!.....'
+  01 1e 01 04 a5 22 13 78 03 28 65 97 59 54 8e 27 '.....".x.(e.YT.''
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 9e 85 80 a0 70 38 3e 40 30 20 '..........p8>@0 '
+  a5 00 58 c1 10 00 00 18 ad 37 80 a0 70 38 3e 40 '..X......7..p8>@'
+  30 20 a5 00 58 c1 10 00 00 18 00 00 00 fd 00 30 '0 ..X..........0'
+  90 a5 a5 22 01 0a 20 20 20 20 20 20 00 00 00 fe '..."..      ....'
+  00 4e 31 35 36 48 52 41 2d 47 41 41 0a 20 00 6e '.N156HRA-GAA. .n'
+Checksum: 0x6e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 68.524 - 164.451 kHz (Monitor: 165.000 - 165.000 kHz)
+    Maximum Clock: 342.060 MHz (Monitor: 340.000 MHz)
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

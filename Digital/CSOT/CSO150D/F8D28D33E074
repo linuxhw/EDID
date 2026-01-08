@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e6f0d1500000000
-0f210104a5221378039c15955d589429
-1e505400000001010101010101010101
-010101010101c0398018713828403020
-360058c11000001a000000fd00283c43
-430e010a202020202020000000fe0043
-534f542054390a2020202020000000fc
-00534e463630314253312d310a2000d2
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 6f 0d 15 00 00 00 00
+0f 21 01 04 a5 22 13 78 03 9c 15 95 5d 58 94 29
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c0 39 80 18 71 38 28 40 30 20
+36 00 58 c1 10 00 00 1a 00 00 00 fd 00 28 3c 43
+43 0e 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43
+53 4f 54 20 54 39 0a 20 20 20 20 20 00 00 00 fc
+00 53 4e 46 36 30 31 42 53 31 2d 31 0a 20 00 d2
 
 00 ff ff ff ff ff ff 00 0e 6f 0d 15 00 00 00 00
 0f 21 01 04 a5 22 13 78 03 9c 15 95 5d 58 94 29
@@ -53,3 +51,34 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'CSOT T9'
     Display Product Name: 'SNF601BS1-1'
 Checksum: 0xd2
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 6f 0d 15 00 00 00 00 '.........o......'
+  0f 21 01 04 a5 22 13 78 03 9c 15 95 5d 58 94 29 '.!...".x....]X.)'
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 c0 39 80 18 71 38 28 40 30 20 '.......9..q8(@0 '
+  36 00 58 c1 10 00 00 1a 00 00 00 fd 00 28 3c 43 '6.X..........(<C'
+  43 0e 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43 'C...      .....C'
+  53 4f 54 20 54 39 0a 20 20 20 20 20 00 00 00 fc 'SOT T9.     ....'
+  00 53 4e 46 36 30 31 42 53 31 2d 31 0a 20 00 d2 '.SNF601BS1-1. ..'
+Checksum: 0xd2
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 147.840 MHz (Monitor: 140.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

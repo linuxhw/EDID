@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e6f981400000000
-03210104a51e1378032a11955b579129
-20505400000001010101010101010101
-010101010101e93d80c870b02e403020
-36002ebd1000001a000000fd00303c4d
-4d11000a202020202020000000fe0043
-534f542054390a2020202020000000fd
-004d4e453030000a2020202020200049
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 6f 98 14 00 00 00 00
+03 21 01 04 a5 1e 13 78 03 2a 11 95 5b 57 91 29
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 e9 3d 80 c8 70 b0 2e 40 30 20
+36 00 2e bd 10 00 00 1a 00 00 00 fd 00 30 3c 4d
+4d 11 00 0a 20 20 20 20 20 20 00 00 00 fe 00 43
+53 4f 54 20 54 39 0a 20 20 20 20 20 00 00 00 fd
+00 4d 4e 45 30 30 00 0a 20 20 20 20 20 20 00 49
 
 00 ff ff ff ff ff ff 00 0e 6f 98 14 00 00 00 00
 03 21 01 04 a5 1e 13 78 03 2a 11 95 5b 57 91 29
@@ -54,3 +52,40 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 77-78 Hz V, 69-48 kHz H, max dotclock 480 MHz
 Checksum: 0x49
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 6f 98 14 00 00 00 00 '.........o......'
+  03 21 01 04 a5 1e 13 78 03 2a 11 95 5b 57 91 29 '.!.....x.*..[W.)'
+  20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ' PT.............'
+  01 01 01 01 01 01 e9 3d 80 c8 70 b0 2e 40 30 20 '.......=..p..@0 '
+  36 00 2e bd 10 00 00 1a 00 00 00 fd 00 30 3c 4d '6............0<M'
+  4d 11 00 0a 20 20 20 20 20 20 00 00 00 fe 00 43 'M...      .....C'
+  53 4f 54 20 54 39 0a 20 20 20 20 20 00 00 00 fd 'SOT T9.     ....'
+  00 4d 4e 45 30 30 00 0a 20 20 20 20 20 20 00 49 '.MNE00..      .I'
+Checksum: 0x49
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 60.000 - 60.000 Hz (Monitor: 77.000 - 78.000 Hz)
+    Horizontal Freq: 74.759 - 74.759 kHz (Monitor: 69.000 - 48.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: Min horizontal freq > max horizontal freq.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

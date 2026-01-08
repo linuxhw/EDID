@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e8c502301010101
-3013010380331d78eac285a4564d9c25
-125054bfef80714f8180814f8bc0a9c0
-010101010101023a801871382d40582c
-4500fd1e1100001e000000fd00384c1f
-5210000a202020202020000000fc0043
-544c2032333055570a202020000000ff
-0034385754474132324e303337310070
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 8c 50 23 01 01 01 01
+30 13 01 03 80 33 1d 78 ea c2 85 a4 56 4d 9c 25
+12 50 54 bf ef 80 71 4f 81 80 81 4f 8b c0 a9 c0
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 38 4c 1f
+52 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43
+54 4c 20 32 33 30 55 57 0a 20 20 20 00 00 00 ff
+00 34 38 57 54 47 41 32 32 4e 30 33 37 31 00 70
 
 00 ff ff ff ff ff ff 00 0e 8c 50 23 01 01 01 01
 30 13 01 03 80 33 1d 78 ea c2 85 a4 56 4d 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: CTL
     Model: 9040
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 48 of 2009
   Basic Display Parameters & Features:
     Digital display
@@ -70,5 +68,34 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-82 kHz H, max dotclock 160 MHz
     Display Product Name: 'CTL 230UW'
-    Display Product Serial Number: '48WTGA22N0371'
+    Display Product Serial Number: ...
 Checksum: 0x70
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 8c 50 23 01 01 01 01 '..........P#....'
+  30 13 01 03 80 33 1d 78 ea c2 85 a4 56 4d 9c 25 '0....3.x....VM.%'
+  12 50 54 bf ef 80 71 4f 81 80 81 4f 8b c0 a9 c0 '.PT...qO...O....'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 38 4c 1f 'E............8L.'
+  52 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43 'R...      .....C'
+  54 4c 20 32 33 30 55 57 0a 20 20 20 00 00 00 ff 'TL 230UW.   ....'
+  00 34 38 57 54 47 41 32 32 4e 30 33 37 31 00 70 '.48WTGA22N0371.p'
+Checksum: 0x70
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

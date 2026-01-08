@@ -1,31 +1,31 @@
-
-EDID (hex):
-00ffffffffffff000e77401604600000
-00210104b5221678032825ad5139bb25
-0c505400000001010101010101010101
-010101010101bbaa80a0c0d0a8703020
-360058d710000018000000fd0c30a567
-6778010a202020202020000000fe004c
-454e4f564f0a0a2020202020000000fe
-004c454e3136302d332e324b0a2002ec
-02030f00e3058000e606050193931000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000009ac2
-7020790200220028145712057f0c9f00
-2f001f00cf07a700020005004eab0685
-7f0c9f002f001f00cf07a70002000500
-2b000c270030a400002700303b000081
-000e6d1a0000020b30a5000493109310
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000001790
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 77 40 16 04 60 00 00
+00 21 01 04 b5 22 16 78 03 28 25 ad 51 39 bb 25
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bb aa 80 a0 c0 d0 a8 70 30 20
+36 00 58 d7 10 00 00 18 00 00 00 fd 0c 30 a5 67
+67 78 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c
+45 4e 4f 56 4f 0a 0a 20 20 20 20 20 00 00 00 fe
+00 4c 45 4e 31 36 30 2d 33 2e 32 4b 0a 20 02 ec
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 93 93 10 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 9a c2
+
+70 20 79 02 00 22 00 28 14 57 12 05 7f 0c 9f 00
+2f 00 1f 00 cf 07 a7 00 02 00 05 00 4e ab 06 85
+7f 0c 9f 00 2f 00 1f 00 cf 07 a7 00 02 00 05 00
+2b 00 0c 27 00 30 a4 00 00 27 00 30 3b 00 00 81
+00 0e 6d 1a 00 00 02 0b 30 a5 00 04 93 10 93 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 17 90
 
 00 ff ff ff ff ff ff 00 0e 77 40 16 04 60 00 00
 00 21 01 04 b5 22 16 78 03 28 25 ad 51 39 bb 25
@@ -61,7 +61,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: CSW
     Model: 5696
-    Serial Number: 24580
+    Serial Number: ...
     Made in: 2023
   Basic Display Parameters & Features:
     Digital display
@@ -153,3 +153,124 @@ Block 2, DisplayID Extension Block:
     Minimum luminance (without local dimming): 16 (0.048 cd/m^2)
   Checksum: 0x17
 Checksum: 0x90
+
+----------------
+
+Block 3, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 77 40 16 04 60 00 00 '.........w@..`..'
+  00 21 01 04 b5 22 16 78 03 28 25 ad 51 39 bb 25 '.!...".x.(%.Q9.%'
+  0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 bb aa 80 a0 c0 d0 a8 70 30 20 '.............p0 '
+  36 00 58 d7 10 00 00 18 00 00 00 fd 0c 30 a5 67 '6.X..........0.g'
+  67 78 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c 'gx..      .....L'
+  45 4e 4f 56 4f 0a 0a 20 20 20 20 20 00 00 00 fe 'ENOVO..     ....'
+  00 4c 45 4e 31 36 30 2d 33 2e 32 4b 0a 20 02 ec '.LEN160-3.2K. ..'
+Checksum: 0xec
+
+----------------
+
+Block 4, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 147 (1207.332 cd/m^2)
+    Desired content max frame-average luminance: 147 (1207.332 cd/m^2)
+    Desired content min luminance: 16 (0.048 cd/m^2)
+Checksum: 0xc2  Unused space in Extension Block: 112 bytes
+
+----------------
+
+Block 5, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  3200x2000  165.000247 Hz  16:10   357.721 kHz   1201.941000 MHz (aspect 16:10, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   6 Vback  159 Vpol N
+    DTD:  3200x2000   60.000302 Hz  16:10   130.081 kHz    437.071000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   6 Vback  159 Vpol N
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 48 Hz
+      Max Refresh Rate: 165 Hz
+    Descriptor #2:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 48 Hz
+      Max Refresh Rate: 60 Hz
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.11
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x04
+    Maximum luminance: 147 (1207.332 cd/m^2)
+    Minimum luminance: 16 (0.048 cd/m^2)
+    Maximum luminance (without local dimming): 147 (1207.332 cd/m^2)
+    Minimum luminance (without local dimming): 16 (0.048 cd/m^2)
+  Checksum: 0x17
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+Block 4, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 130.080 - 357.720 kHz (Monitor: 358.000 - 358.000 kHz)
+    Maximum Clock: 1201.941 MHz (Monitor: 1200.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-space after newline.
+Block 1, CTA-861 Extension Block:
+  Padding: Contains non-zero bytes.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 3, Base EDID:
+  Unknown Extension Block.
+Block 4, CTA-861 Extension Block:
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Padding: Contains non-zero bytes.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 5, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+EDID:
+  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+
+EDID conformity: FAIL

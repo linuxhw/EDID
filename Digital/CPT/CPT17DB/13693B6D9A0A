@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e14db1700000000
-21160104951d10780a4afd9156599129
-1e505400000001010101010101010101
-010101010101322640a060841a303020
-350025a410000018322640a060841a30
-3020350025a410000018000000fe0043
-50542020202020202020202000000000
-00434c4141313333554130338220003f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 14 db 17 00 00 00 00
+21 16 01 04 95 1d 10 78 0a 4a fd 91 56 59 91 29
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 32 26 40 a0 60 84 1a 30 30 20
+35 00 25 a4 10 00 00 18 32 26 40 a0 60 84 1a 30
+30 20 35 00 25 a4 10 00 00 18 00 00 00 fe 00 43
+50 54 20 20 20 20 20 20 20 20 20 20 00 00 00 00
+00 43 4c 41 41 31 33 33 55 41 30 33 82 20 00 3f
 
 00 ff ff ff ff ff ff 00 0e 14 db 17 00 00 00 00
 21 16 01 04 95 1d 10 78 0a 4a fd 91 56 59 91 29
@@ -53,3 +51,34 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'CPT          '
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 43 4c 41 41 31 33 33 55 41 30 33 82 20 '...CLAA133UA03. '
 Checksum: 0x3f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 14 db 17 00 00 00 00 '................'
+  21 16 01 04 95 1d 10 78 0a 4a fd 91 56 59 91 29 '!......x.J..VY.)'
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 32 26 40 a0 60 84 1a 30 30 20 '......2&@.`..00 '
+  35 00 25 a4 10 00 00 18 32 26 40 a0 60 84 1a 30 '5.%.....2&@.`..0'
+  30 20 35 00 25 a4 10 00 00 18 00 00 00 fe 00 43 '0 5.%..........C'
+  50 54 20 20 20 20 20 20 20 20 20 20 00 00 00 00 'PT          ....'
+  00 43 4c 41 41 31 33 33 55 41 30 33 82 20 00 3f '.CLAA133UA03. .?'
+Checksum: 0x3f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

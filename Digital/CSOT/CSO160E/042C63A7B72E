@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e6f0e1600000000
-001f0104a5221678035a6ba5544b9923
-10505600000001010101010101010101
-010101010101ef6800a0a0402e603020
-360058d710000018000000fd00283c63
-631b010a202020202020000000fe0043
-534f542054330a2020202020000000fe
-004d4e473030374441312d430a2000c0
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 6f 0e 16 00 00 00 00
+00 1f 01 04 a5 22 16 78 03 5a 6b a5 54 4b 99 23
+10 50 56 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ef 68 00 a0 a0 40 2e 60 30 20
+36 00 58 d7 10 00 00 18 00 00 00 fd 00 28 3c 63
+63 1b 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43
+53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe
+00 4d 4e 47 30 30 37 44 41 31 2d 43 0a 20 00 c0
 
 00 ff ff ff ff ff ff 00 0e 6f 0e 16 00 00 00 00
 00 1f 01 04 a5 22 16 78 03 5a 6b a5 54 4b 99 23
@@ -53,3 +51,32 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'CSOT T3'
     Alphanumeric Data String: 'MNG007DA1-C'
 Checksum: 0xc0
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 6f 0e 16 00 00 00 00 '.........o......'
+  00 1f 01 04 a5 22 16 78 03 5a 6b a5 54 4b 99 23 '.....".x.Zk.TK.#'
+  10 50 56 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PV.............'
+  01 01 01 01 01 01 ef 68 00 a0 a0 40 2e 60 30 20 '.......h...@.`0 '
+  36 00 58 d7 10 00 00 18 00 00 00 fd 00 28 3c 63 '6.X..........(<c'
+  63 1b 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43 'c...      .....C'
+  53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe 'SOT T3.     ....'
+  00 4d 4e 47 30 30 37 44 41 31 2d 43 0a 20 00 c0 '.MNG007DA1-C. ..'
+Checksum: 0xc0
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

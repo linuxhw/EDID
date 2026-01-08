@@ -1,0 +1,174 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 77 37 14 00 00 00 00
+00 21 01 04 a5 20 14 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9a 3f 80 c8 70 b0 50 40 30 20
+36 00 38 c3 10 00 00 1a 00 00 00 fd 0c 30 78 9a
+9a 21 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4d
+4e 45 35 30 37 51 53 32 2d 32 0a 20 00 00 00 fe
+00 43 53 4f 54 20 54 39 0a 20 20 20 20 20 01 bf
+
+70 20 79 02 00 22 00 14 00 f8 04 85 7f 07 c7 00
+2f 00 1f 00 af 04 4f 00 02 00 05 00 2b 00 0c 27
+00 32 77 00 00 27 00 30 3b 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 71 90
+
+00 ff ff ff ff ff ff 00 0e 77 37 14 00 00 00 00
+00 21 01 04 a5 20 14 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9a 3f 80 c8 70 b0 50 40 30 20
+36 00 38 c3 10 00 00 1a 00 00 00 fd 0c 30 78 9a
+9a 21 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4d
+4e 45 35 30 37 51 53 32 2d 32 0a 20 00 00 00 fe
+00 43 53 4f 54 20 54 39 0a 20 20 20 20 20 01 bf
+
+70 20 79 02 00 22 00 14 00 f8 04 85 7f 07 c7 00
+2f 00 1f 00 af 04 4f 00 02 00 05 00 2b 00 0c 27
+00 32 77 00 00 27 00 30 3b 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 71 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CSW
+    Model: 5175
+    Made in: 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 32 cm x 20 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.001474 Hz  16:10    76.802 kHz    162.820000 MHz (312 mm x 195 mm)
+                 Hfront   48 Hsync  32 Hback  120 Hpol P
+                 Vfront    3 Vsync   6 Vback   71 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-120 Hz V, 409-409 kHz H, max dotclock 330 MHz
+    Alphanumeric Data String: 'MNE507QS2-2'
+    Alphanumeric Data String: 'CSOT T9'
+  Extension blocks: 1
+Checksum: 0xbf
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  1920x1200  120.000369 Hz  16:10   153.600 kHz    325.633000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback  120 Hpol N
+               Vfront    3 Vsync   6 Vback   71 Vpol N
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 50 Hz
+      Max Refresh Rate: 120 Hz
+    Descriptor #2:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 48 Hz
+      Max Refresh Rate: 60 Hz
+  Checksum: 0x71
+Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 77 37 14 00 00 00 00 '.........w7.....'
+  00 21 01 04 a5 20 14 78 03 ee 95 a3 54 4c 99 26 '.!... .x....TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 9a 3f 80 c8 70 b0 50 40 30 20 '.......?..p.P@0 '
+  36 00 38 c3 10 00 00 1a 00 00 00 fd 0c 30 78 9a '6.8..........0x.'
+  9a 21 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4d '.!..      .....M'
+  4e 45 35 30 37 51 53 32 2d 32 0a 20 00 00 00 fe 'NE507QS2-2. ....'
+  00 43 53 4f 54 20 54 39 0a 20 20 20 20 20 01 bf '.CSOT T9.     ..'
+Checksum: 0xbf
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  1920x1200  120.000369 Hz  16:10   153.600 kHz    325.633000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback  120 Hpol N
+               Vfront    3 Vsync   6 Vback   71 Vpol N
+  Adaptive Sync Data Block:
+    Descriptor #1:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 50 Hz
+      Max Refresh Rate: 120 Hz
+    Descriptor #2:
+      Native Panel Range
+      Fixed Average V-Total and Adaptive V-Total
+      'Max Single Frame Duration Increase' field value without jitter impact
+      'Max Single Frame Duration Decrease' field value without jitter impact
+      Max Duration Increase: 0.00 ms
+      Max Duration Decrease: 0.00 ms
+      Min Refresh Rate: 48 Hz
+      Max Refresh Rate: 60 Hz
+  Checksum: 0x71
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 76.801 - 153.600 kHz (Monitor: 409.000 - 409.000 kHz)
+
+Failures:
+
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+
+EDID conformity: FAIL

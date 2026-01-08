@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000daf141200000000
-00000105801a10780a80a59256549227
-23505400000001010101010101010101
-010101010101bc1b00a0502017303020
-360005a310000018f31600a050201330
-3020360005a310000000000000fe0048
-46303637354e31323149330a000000fe
-00293c474d708ba8e101010a20200056
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d af 14 12 00 00 00 00
+00 00 01 05 80 1a 10 78 0a 80 a5 92 56 54 92 27
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 1b 00 a0 50 20 17 30 30 20
+36 00 05 a3 10 00 00 18 f3 16 00 a0 50 20 13 30
+30 20 36 00 05 a3 10 00 00 00 00 00 00 fe 00 48
+46 30 36 37 35 4e 31 32 31 49 33 0a 00 00 00 fe
+00 29 3c 47 4d 70 8b a8 e1 01 01 0a 20 20 00 56
 
 00 ff ff ff ff ff ff 00 0d af 14 12 00 00 00 00
 00 00 01 05 80 1a 10 78 0a 80 a5 92 56 54 92 27
@@ -60,3 +58,34 @@ Block 0, Base EDID:
       LVDS Channels: 1
       Panel Self Test Present
 Checksum: 0x56
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d af 14 12 00 00 00 00 '................'
+  00 00 01 05 80 1a 10 78 0a 80 a5 92 56 54 92 27 '.......x....VT.''
+  23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '#PT.............'
+  01 01 01 01 01 01 bc 1b 00 a0 50 20 17 30 30 20 '..........P .00 '
+  36 00 05 a3 10 00 00 18 f3 16 00 a0 50 20 13 30 '6...........P .0'
+  30 20 36 00 05 a3 10 00 00 00 00 00 00 fe 00 48 '0 6............H'
+  46 30 36 37 35 4e 31 32 31 49 33 0a 00 00 00 fe 'F0675N121I3.....'
+  00 29 3c 47 4d 70 8b a8 e1 01 01 0a 20 20 00 56 '.)<GMp......  .V'
+Checksum: 0x56
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: Unknown EDID minor version 5, assuming 1.4 conformance.
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x1b.
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

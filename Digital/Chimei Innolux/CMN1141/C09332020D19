@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000dae411100000000
-2e1a0104951a0e780267759859539027
-1c505400000001010101010101010101
-010101010101da1d56e250002030881e
-8c00009010000018000000fe004e3131
-364243412d4542310a20000000fe0043
-4d4e0a202020202020202020000000fe
-004e3131364243412d4542310a20009d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 41 11 00 00 00 00
+2e 1a 01 04 95 1a 0e 78 02 67 75 98 59 53 90 27
+1c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 da 1d 56 e2 50 00 20 30 88 1e
+8c 00 00 90 10 00 00 18 00 00 00 fe 00 4e 31 31
+36 42 43 41 2d 45 42 31 0a 20 00 00 00 fe 00 43
+4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 31 36 42 43 41 2d 45 42 31 0a 20 00 9d
 
 00 ff ff ff ff ff ff 00 0d ae 41 11 00 00 00 00
 2e 1a 01 04 95 1a 0e 78 02 67 75 98 59 53 90 27
@@ -51,3 +49,32 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'CMN'
     Alphanumeric Data String: 'N116BCA-EB1'
 Checksum: 0x9d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d ae 41 11 00 00 00 00 '..........A.....'
+  2e 1a 01 04 95 1a 0e 78 02 67 75 98 59 53 90 27 '.......x.gu.YS.''
+  1c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 da 1d 56 e2 50 00 20 30 88 1e '........V.P. 0..'
+  8c 00 00 90 10 00 00 18 00 00 00 fe 00 4e 31 31 '.............N11'
+  36 42 43 41 2d 45 42 31 0a 20 00 00 00 fe 00 43 '6BCA-EB1. .....C'
+  4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'MN.         ....'
+  00 4e 31 31 36 42 43 41 2d 45 42 31 0a 20 00 9d '.N116BCA-EB1. ..'
+Checksum: 0x9d
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e8c778701010101
-3312010380221b782a8a15a358499d24
-165054bfef00310a61467140714f8140
-814f81800101302a009851002a403070
-1300520e1100001e000000fd00384b1e
-500e000a202020202020000000fc0043
-544c203137314c580a202020000000ff
-0035315746545332324e30363631004c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 8c 77 87 01 01 01 01
+33 12 01 03 80 22 1b 78 2a 8a 15 a3 58 49 9d 24
+16 50 54 bf ef 00 31 0a 61 46 71 40 71 4f 81 40
+81 4f 81 80 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43
+54 4c 20 31 37 31 4c 58 0a 20 20 20 00 00 00 ff
+00 35 31 57 46 54 53 32 32 4e 30 36 36 31 00 4c
 
 00 ff ff ff ff ff ff 00 0e 8c 77 87 01 01 01 01
 33 12 01 03 80 22 1b 78 2a 8a 15 a3 58 49 9d 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: CTL
     Model: 34679
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 51 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -71,5 +69,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-80 kHz H, max dotclock 140 MHz
     Display Product Name: 'CTL 171LX'
-    Display Product Serial Number: '51WFTS22N0661'
+    Display Product Serial Number: ...
 Checksum: 0x4c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 8c 77 87 01 01 01 01 '..........w.....'
+  33 12 01 03 80 22 1b 78 2a 8a 15 a3 58 49 9d 24 '3....".x*...XI.$'
+  16 50 54 bf ef 00 31 0a 61 46 71 40 71 4f 81 40 '.PT...1.aFq@qO.@'
+  81 4f 81 80 01 01 30 2a 00 98 51 00 2a 40 30 70 '.O....0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1e '..R..........8K.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43 'P...      .....C'
+  54 4c 20 31 37 31 4c 58 0a 20 20 20 00 00 00 ff 'TL 171LX.   ....'
+  00 35 31 57 46 54 53 32 32 4e 30 36 36 31 00 4c '.51WFTS22N0661.L'
+Checksum: 0x4c
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 29.190 - 79.976 kHz (Monitor: 30.000 - 80.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

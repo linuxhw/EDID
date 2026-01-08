@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff000dae2a1500000000
-101e0104a5221378030f95ae5243b026
-0f505400000001010101010101010101
-010101010101636300a0a0a077503020
-6a0058c110000018000000fd0c30a502
-0246010a202020202020000000fe0043
-4d4e0a202020202020202020000000fe
-004e3135364b4d452d474e410a2001b0
-701379000003011450110184ff099f00
-2f001f009f0576000500090000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00005435304235383336415531310000
-00000000000000000000000000009090
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 2a 15 00 00 00 00
+10 1e 01 04 a5 22 13 78 03 0f 95 ae 52 43 b0 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 63 63 00 a0 a0 a0 77 50 30 20
+6a 00 58 c1 10 00 00 18 00 00 00 fd 0c 30 a5 02
+02 46 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43
+4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 35 36 4b 4d 45 2d 47 4e 41 0a 20 01 b0
+
+70 13 79 00 00 03 01 14 50 11 01 84 ff 09 9f 00
+2f 00 1f 00 9f 05 76 00 05 00 09 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 54 35 30 42 35 38 33 36 41 55 31 31 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 90 90
 
 00 ff ff ff ff ff ff 00 0d ae 2a 15 00 00 00 00
 10 1e 01 04 a5 22 13 78 03 0f 95 ae 52 43 b0 26
@@ -92,3 +91,62 @@ Block 1, DisplayID Extension Block:
     00 00                                           '..'
   Checksum: 0x90
 Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d ae 2a 15 00 00 00 00 '..........*.....'
+  10 1e 01 04 a5 22 13 78 03 0f 95 ae 52 43 b0 26 '.....".x....RC.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 63 63 00 a0 a0 a0 77 50 30 20 '......cc....wP0 '
+  6a 00 58 c1 10 00 00 18 00 00 00 fd 0c 30 a5 02 'j.X..........0..'
+  02 46 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43 '.F..      .....C'
+  4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'MN.         ....'
+  00 4e 31 35 36 4b 4d 45 2d 47 4e 41 0a 20 01 b0 '.N156KME-GNA. ..'
+Checksum: 0xb0
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1440  165.002547 Hz  16:9    257.239 kHz    699.690000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    6 Vsync  10 Vback  103 Vpol N
+  Filler:
+    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+    00 00 00 00 00 00 54 35 30 42 35 38 33 36 41 55 '......T50B5836AU'
+    31 31 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '11..............'
+    00 00                                           '..'
+  Checksum: 0x90
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 93.540 - 257.238 kHz (Monitor: 257.000 - 257.000 kHz)
+
+Failures:
+
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+  Non-0 filler bytes in the DisplayID block.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Non-0 filler bytes in the DisplayID block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

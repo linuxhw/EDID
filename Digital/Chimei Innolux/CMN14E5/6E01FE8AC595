@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff000daee51400000000
-16200104a51f1178030865975b548e27
-1e505400000001010101010101010101
-010101010101363680a0703820403020
-a60035ad100000185f2b80a070382040
-3020a60035ad10000018000000fd0028
-3c43430e010a202020202020000000fe
-004e3134304847412d4541310a2001c7
-02030d00681a00000101283c00000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000006
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae e5 14 00 00 00 00
+16 20 01 04 a5 1f 11 78 03 08 65 97 5b 54 8e 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 36 36 80 a0 70 38 20 40 30 20
+a6 00 35 ad 10 00 00 18 5f 2b 80 a0 70 38 20 40
+30 20 a6 00 35 ad 10 00 00 18 00 00 00 fd 00 28
+3c 43 43 0e 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 34 30 48 47 41 2d 45 41 31 0a 20 01 c7
+
+02 03 0d 00 68 1a 00 00 01 01 28 3c 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 06
 
 00 ff ff ff ff ff ff 00 0d ae e5 14 00 00 00 00
 16 20 01 04 a5 1f 11 78 03 08 65 97 5b 54 8e 27
@@ -86,4 +85,58 @@ Block 1, CTA-861 Extension Block:
     Flags 1.x: 0x00
 Checksum: 0x06  Unused space in Extension Block: 114 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d ae e5 14 00 00 00 00 '................'
+  16 20 01 04 a5 1f 11 78 03 08 65 97 5b 54 8e 27 '. .....x..e.[T.''
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 36 36 80 a0 70 38 20 40 30 20 '......66..p8 @0 '
+  a6 00 35 ad 10 00 00 18 5f 2b 80 a0 70 38 20 40 '..5....._+..p8 @'
+  30 20 a6 00 35 ad 10 00 00 18 00 00 00 fd 00 28 '0 ..5..........('
+  3c 43 43 0e 01 0a 20 20 20 20 20 20 00 00 00 fe '<CC...      ....'
+  00 4e 31 34 30 48 47 41 2d 45 41 31 0a 20 01 c7 '.N140HGA-EA1. ..'
+Checksum: 0xc7
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0x00
+Checksum: 0x06  Unused space in Extension Block: 114 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 53.379 - 66.721 kHz (Monitor: 67.000 - 67.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

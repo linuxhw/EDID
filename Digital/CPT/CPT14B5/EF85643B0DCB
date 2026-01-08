@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e14b51400000000
-2d130103802213780a1bdda1554a9428
-18505400000001010101010101010101
-010101010101781d56c2500026303b27
-5a0058c1100000180000000f00202020
-202020202018a7043300000000fe0043
-50540a202020202020202020000000fe
-00434c41413135365741303141200077
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 14 b5 14 00 00 00 00
+2d 13 01 03 80 22 13 78 0a 1b dd a1 55 4a 94 28
+18 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 78 1d 56 c2 50 00 26 30 3b 27
+5a 00 58 c1 10 00 00 18 00 00 00 0f 00 20 20 20
+20 20 20 20 20 18 a7 04 33 00 00 00 00 fe 00 43
+50 54 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 43 4c 41 41 31 35 36 57 41 30 31 41 20 00 77
 
 00 ff ff ff ff ff ff 00 0e 14 b5 14 00 00 00 00
 2d 13 01 03 80 22 13 78 0a 1b dd a1 55 4a 94 28
@@ -49,3 +47,31 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'CPT'
     Alphanumeric Data String: 'CLAA156WA01A '
 Checksum: 0x77
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 14 b5 14 00 00 00 00 '................'
+  2d 13 01 03 80 22 13 78 0a 1b dd a1 55 4a 94 28 '-....".x....UJ.('
+  18 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 78 1d 56 c2 50 00 26 30 3b 27 '......x.V.P.&0;''
+  5a 00 58 c1 10 00 00 18 00 00 00 0f 00 20 20 20 'Z.X..........   '
+  20 20 20 20 20 18 a7 04 33 00 00 00 00 fe 00 43 '     ...3......C'
+  50 54 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'PT.         ....'
+  00 43 4c 41 41 31 35 36 57 41 30 31 41 20 00 77 '.CLAA156WA01A .w'
+Checksum: 0x77
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e6f151600000000
-001f0104b522167803e2e9a3544d9926
-0f515600000001010101010101010101
-010101010101ffd700a0a0405e603020
-360058d710000018ff6b00a0a0405e60
-3020360058d710000018000000fd0030
-78cccc38010a202020202020000000fe
-004d4e473030374441312d4a0a2000ba
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 6f 15 16 00 00 00 00
+00 1f 01 04 b5 22 16 78 03 e2 e9 a3 54 4d 99 26
+0f 51 56 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ff d7 00 a0 a0 40 5e 60 30 20
+36 00 58 d7 10 00 00 18 ff 6b 00 a0 a0 40 5e 60
+30 20 36 00 58 d7 10 00 00 18 00 00 00 fd 00 30
+78 cc cc 38 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4d 4e 47 30 30 37 44 41 31 2d 4a 0a 20 00 ba
 
 00 ff ff ff ff ff ff 00 0e 6f 15 16 00 00 00 00
 00 1f 01 04 b5 22 16 78 03 e2 e9 a3 54 4d 99 26
@@ -55,3 +53,35 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 48-120 Hz V, 204-204 kHz H, max dotclock 560 MHz
     Alphanumeric Data String: 'MNG007DA1-J'
 Checksum: 0xba
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 6f 15 16 00 00 00 00 '.........o......'
+  00 1f 01 04 b5 22 16 78 03 e2 e9 a3 54 4d 99 26 '.....".x....TM.&'
+  0f 51 56 00 00 00 01 01 01 01 01 01 01 01 01 01 '.QV.............'
+  01 01 01 01 01 01 ff d7 00 a0 a0 40 5e 60 30 20 '...........@^`0 '
+  36 00 58 d7 10 00 00 18 ff 6b 00 a0 a0 40 5e 60 '6.X......k...@^`'
+  30 20 36 00 58 d7 10 00 00 18 00 00 00 fd 00 30 '0 6.X..........0'
+  78 cc cc 38 01 0a 20 20 20 20 20 20 00 00 00 fe 'x..8..      ....'
+  00 4d 4e 47 30 30 37 44 41 31 2d 4a 0a 20 00 ba '.MNG007DA1-J. ..'
+Checksum: 0xba
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 101.643 - 203.290 kHz (Monitor: 204.000 - 204.000 kHz)
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

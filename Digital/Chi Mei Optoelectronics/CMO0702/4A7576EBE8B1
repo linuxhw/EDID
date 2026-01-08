@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000daf020700000000
-0e150103800f09780a5b0097574d9025
-1e505400000001010101010101010101
-010101010101c71b00a0502017303020
-3600965e00000018851200a050201730
-30203600965e00000018000000fe0043
-4d4f0a202020202020202020000000fe
-004e3037304943472d4c44310a2000c3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d af 02 07 00 00 00 00
+0e 15 01 03 80 0f 09 78 0a 5b 00 97 57 4d 90 25
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c7 1b 00 a0 50 20 17 30 30 20
+36 00 96 5e 00 00 00 18 85 12 00 a0 50 20 17 30
+30 20 36 00 96 5e 00 00 00 18 00 00 00 fe 00 43
+4d 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 30 37 30 49 43 47 2d 4c 44 31 0a 20 00 c3
 
 00 ff ff ff ff ff ff 00 0d af 02 07 00 00 00 00
 0e 15 01 03 80 0f 09 78 0a 5b 00 97 57 4d 90 25
@@ -51,3 +49,35 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'CMO'
     Alphanumeric Data String: 'N070ICG-LD1'
 Checksum: 0xc3
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d af 02 07 00 00 00 00 '................'
+  0e 15 01 03 80 0f 09 78 0a 5b 00 97 57 4d 90 25 '.......x.[..WM.%'
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 c7 1b 00 a0 50 20 17 30 30 20 '..........P .00 '
+  36 00 96 5e 00 00 00 18 85 12 00 a0 50 20 17 30 '6..^........P .0'
+  30 20 36 00 96 5e 00 00 00 18 00 00 00 fe 00 43 '0 6..^.........C'
+  4d 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'MO.         ....'
+  00 4e 30 37 30 49 43 47 2d 4c 44 31 0a 20 00 c3 '.N070ICG-LD1. ..'
+Checksum: 0xc3
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (15x9 is smaller than 10x10 cm).
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

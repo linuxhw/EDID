@@ -1,0 +1,83 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 6f 3d 16 00 00 00 00
+12 22 01 04 a5 23 16 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ea 3d 80 c8 70 b0 2e 40 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 fd 00 30 3c 4b
+4b 10 00 0a 20 20 20 20 20 20 00 00 00 fe 00 43
+53 4f 54 20 54 39 0a 20 20 20 20 20 00 00 00 fe
+00 4d 4e 47 30 30 37 51 53 34 2d 31 0a 20 00 41
+
+00 ff ff ff ff ff ff 00 0e 6f 3d 16 00 00 00 00
+12 22 01 04 a5 23 16 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ea 3d 80 c8 70 b0 2e 40 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 fd 00 30 3c 4b
+4b 10 00 0a 20 20 20 20 20 20 00 00 00 fe 00 43
+53 4f 54 20 54 39 0a 20 20 20 20 20 00 00 00 fe
+00 4d 4e 47 30 30 37 51 53 34 2d 31 0a 20 00 41
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CSO
+    Model: 5693
+    Made in: week 18 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 35 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.003331 Hz  16:10    74.764 kHz    158.500000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  120 Hpol P
+                 Vfront    3 Vsync   6 Vback   37 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 48-60 Hz V, 75-75 kHz H, max dotclock 160 MHz
+    Alphanumeric Data String: 'CSOT T9'
+    Alphanumeric Data String: 'MNG007QS4-1'
+Checksum: 0x41
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 6f 3d 16 00 00 00 00 '.........o=.....'
+  12 22 01 04 a5 23 16 78 03 ee 95 a3 54 4c 99 26 '."...#.x....TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 ea 3d 80 c8 70 b0 2e 40 30 20 '.......=..p..@0 '
+  36 00 59 d7 10 00 00 1a 00 00 00 fd 00 30 3c 4b '6.Y..........0<K'
+  4b 10 00 0a 20 20 20 20 20 20 00 00 00 fe 00 43 'K...      .....C'
+  53 4f 54 20 54 39 0a 20 20 20 20 20 00 00 00 fe 'SOT T9.     ....'
+  00 4d 4e 47 30 30 37 51 53 34 2d 31 0a 20 00 41 '.MNG007QS4-1. .A'
+Checksum: 0x41
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

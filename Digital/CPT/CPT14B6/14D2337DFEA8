@@ -1,0 +1,96 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 14 b6 14 00 00 00 00
+15 14 01 03 80 22 13 78 0a 4e 4d 9e 57 54 91 26
+0f 50 54 00 00 00 fe 00 43 4c 41 41 31 35 36 57
+41 30 37 41 00 00 aa 37 56 68 50 00 28 30 14 14
+36 00 58 c1 10 00 00 18 04 33 56 68 50 00 28 30
+14 14 36 00 58 c1 10 00 00 18 68 2e 56 68 50 00
+28 30 14 14 36 00 58 c1 10 00 00 18 64 1b 56 54
+50 00 26 30 3b 27 5a 00 58 c1 10 00 00 18 00 f4
+
+00 ff ff ff ff ff ff 00 0e 14 b6 14 00 00 00 00
+15 14 01 03 80 22 13 78 0a 4e 4d 9e 57 54 91 26
+0f 50 54 00 00 00 fe 00 43 4c 41 41 31 35 36 57
+41 30 37 41 00 00 aa 37 56 68 50 00 28 30 14 14
+36 00 58 c1 10 00 00 18 04 33 56 68 50 00 28 30
+14 14 36 00 58 c1 10 00 00 18 68 2e 56 68 50 00
+28 30 14 14 36 00 58 c1 10 00 00 18 64 1b 56 54
+50 00 26 30 3b 27 5a 00 58 c1 10 00 00 18 00 f4
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CPT
+    Model: 5302
+    Made in: week 21 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6181, 0.3398
+    Green: 0.3310, 0.5683
+    Blue : 0.1494, 0.0585
+    White: 0.3154, 0.3291
+  Established Timings I & II: none
+  Standard Timings:
+    GTF     :  2280x1425   60.000000 Hz  16:10    88.500 kHz    275.412000 MHz
+    GTF     :   784x588    71.999579 Hz   4:3     44.136 kHz     45.195000 MHz
+    GTF     :   768x576    61.000014 Hz   4:3     36.417 kHz     35.543000 MHz
+    GTF     :   640x400   113.000427 Hz  16:10    48.364 kHz     40.239000 MHz
+    GTF     :   680x510    83.000758 Hz   4:3     44.405 kHz     39.432000 MHz
+    GTF     :   768x480   108.000933 Hz  16:10    55.188 kHz     56.513000 MHz
+    GTF     :   688x516    61.000779 Hz   4:3     32.635 kHz     28.197000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768   119.973732 Hz 683:384   96.939 kHz    142.500000 MHz (344 mm x 193 mm)
+                 Hfront   20 Hsync  20 Hback   64 Hpol N
+                 Vfront    3 Vsync   6 Vback   31 Vpol N
+    DTD 2:  1366x768   109.954873 Hz 683:384   88.844 kHz    130.600000 MHz (344 mm x 193 mm)
+                 Hfront   20 Hsync  20 Hback   64 Hpol N
+                 Vfront    3 Vsync   6 Vback   31 Vpol N
+    DTD 3:  1366x768   100.020206 Hz 683:384   80.816 kHz    118.800000 MHz (344 mm x 193 mm)
+                 Hfront   20 Hsync  20 Hback   64 Hpol N
+                 Vfront    3 Vsync   6 Vback   31 Vpol N
+    DTD 4:  1366x768    59.998289 Hz 683:384   48.359 kHz     70.120000 MHz (344 mm x 193 mm)
+                 Hfront   59 Hsync  39 Hback  -14 Hpol N
+                 Vfront    5 Vsync  10 Vback   23 Vpol N
+Checksum: 0xf4
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 14 b6 14 00 00 00 00 '................'
+  15 14 01 03 80 22 13 78 0a 4e 4d 9e 57 54 91 26 '.....".x.NM.WT.&'
+  0f 50 54 00 00 00 fe 00 43 4c 41 41 31 35 36 57 '.PT.....CLAA156W'
+  41 30 37 41 00 00 aa 37 56 68 50 00 28 30 14 14 'A07A...7VhP.(0..'
+  36 00 58 c1 10 00 00 18 04 33 56 68 50 00 28 30 '6.X......3VhP.(0'
+  14 14 36 00 58 c1 10 00 00 18 68 2e 56 68 50 00 '..6.X.....h.VhP.'
+  28 30 14 14 36 00 58 c1 10 00 00 18 64 1b 56 54 '(0..6.X.....d.VT'
+  50 00 26 30 3b 27 5a 00 58 c1 10 00 00 18 00 f4 'P.&0;'Z.X.......'
+Checksum: 0xf4
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 2280x1425 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Detailed Timing Descriptor #4: 0 or negative horizontal back porch.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

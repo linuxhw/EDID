@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e14c40400000000
-0f13010380170e780a50759258569227
-1f505400000001010101010101010101
-010101010101941100b0405819203020
-3600de82000000190000000f00000000
-0000000000206e050f00000000fe0043
-505420202020202020202020000000fe
-00434c41413130324e41304120200061
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 14 c4 04 00 00 00 00
+0f 13 01 03 80 17 0e 78 0a 50 75 92 58 56 92 27
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 94 11 00 b0 40 58 19 20 30 20
+36 00 de 82 00 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 20 6e 05 0f 00 00 00 00 fe 00 43
+50 54 20 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 43 4c 41 41 31 30 32 4e 41 30 41 20 20 00 61
 
 00 ff ff ff ff ff ff 00 0e 14 c4 04 00 00 00 00
 0f 13 01 03 80 17 0e 78 0a 50 75 92 58 56 92 27
@@ -50,4 +48,31 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'CLAA102NA0A  '
 Checksum: 0x61
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 14 c4 04 00 00 00 00 '................'
+  0f 13 01 03 80 17 0e 78 0a 50 75 92 58 56 92 27 '.......x.Pu.XV.''
+  1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 94 11 00 b0 40 58 19 20 30 20 '..........@X. 0 '
+  36 00 de 82 00 00 00 19 00 00 00 0f 00 00 00 00 '6...............'
+  00 00 00 00 00 20 6e 05 0f 00 00 00 00 fe 00 43 '..... n........C'
+  50 54 20 20 20 20 20 20 20 20 20 20 00 00 00 fe 'PT          ....'
+  00 43 4c 41 41 31 30 32 4e 41 30 41 20 20 00 61 '.CLAA102NA0A  .a'
+Checksum: 0x61
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

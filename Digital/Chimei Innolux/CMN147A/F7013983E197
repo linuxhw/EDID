@@ -1,0 +1,164 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 7a 14 00 00 00 00
+0d 1f 01 04 a5 1e 13 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 42 3c 80 a0 70 b0 24 40 2e 1e
+a6 00 2d bc 10 00 00 1a 30 28 80 a0 70 b0 24 40
+2e 1e a6 00 2d bc 10 00 00 1a 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 26 ff 14 3c c8 0b 08 1a c8 00 00 00 01 7a
+
+70 20 79 02 00 25 01 09 94 5a 02 94 5a 02 28 3c
+80 81 00 0f 6f 1a 00 00 03 01 28 3c 00 00 00 00
+00 00 3c 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 b5 90
+
+00 ff ff ff ff ff ff 00 0d ae 7a 14 00 00 00 00
+0d 1f 01 04 a5 1e 13 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 42 3c 80 a0 70 b0 24 40 2e 1e
+a6 00 2d bc 10 00 00 1a 30 28 80 a0 70 b0 24 40
+2e 1e a6 00 2d bc 10 00 00 1a 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 26 ff 14 3c c8 0b 08 1a c8 00 00 00 01 7a
+
+70 20 79 02 00 25 01 09 94 5a 02 94 5a 02 28 3c
+80 81 00 0f 6f 1a 00 00 03 01 28 3c 00 00 00 00
+00 00 3c 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 b5 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5242
+    Made in: week 13 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.002801 Hz  16:10    74.163 kHz    154.260000 MHz (301 mm x 188 mm)
+                 Hfront   46 Hsync  30 Hback   84 Hpol P
+                 Vfront   10 Vsync   6 Vback   20 Vpol N
+    DTD 2:  1920x1200   40.017426 Hz  16:10    49.462 kHz    102.880000 MHz (301 mm x 188 mm)
+                 Hfront   46 Hsync  30 Hback   84 Hpol P
+                 Vfront   10 Vsync   6 Vback   20 Vpol N
+    Dummy Descriptor:
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 26 ff 14 3c c8 0b 08 1a c8 00 00 00 '....&..<........'
+  Extension blocks: 1
+Checksum: 0x7a
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 154261 kHz
+    Maximum Pixel Clock: 154261 kHz
+    Minimum Vertical Refresh Rate: 40 Hz
+    Maximum Vertical Refresh Rate: 60 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Checksum: 0xb5
+Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d ae 7a 14 00 00 00 00 '..........z.....'
+  0d 1f 01 04 a5 1e 13 78 03 ee 95 a3 54 4c 99 26 '.......x....TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 42 3c 80 a0 70 b0 24 40 2e 1e '......B<..p.$@..'
+  a6 00 2d bc 10 00 00 1a 30 28 80 a0 70 b0 24 40 '..-.....0(..p.$@'
+  2e 1e a6 00 2d bc 10 00 00 1a 00 00 00 10 00 00 '....-...........'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
+  00 0c 26 ff 14 3c c8 0b 08 1a c8 00 00 00 01 7a '..&..<.........z'
+Checksum: 0x7a
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 154261 kHz
+    Maximum Pixel Clock: 154261 kHz
+    Minimum Vertical Refresh Rate: 40 Hz
+    Maximum Vertical Refresh Rate: 60 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Checksum: 0xb5
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Range Limits Descriptor.
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A: Length is 15 instead of 16.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A: Length is 15 instead of 16.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+  DisplayID: Missing DisplayID Type VII Detailed Timing Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

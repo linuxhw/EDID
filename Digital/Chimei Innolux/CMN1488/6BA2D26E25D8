@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000dae881400000000
-19210104a51e1378039435995c538925
-1e505400000001010101010101010101
-010101010101423c80a070b024403020
-a6002dbc10000018353080a070b02440
-3020a6002dbc10000018000000fd0028
-3c4b4b10010a202020202020000000fe
-004e3134304a434e2d45454b0a20009b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae 88 14 00 00 00 00
+19 21 01 04 a5 1e 13 78 03 94 35 99 5c 53 89 25
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 42 3c 80 a0 70 b0 24 40 30 20
+a6 00 2d bc 10 00 00 18 35 30 80 a0 70 b0 24 40
+30 20 a6 00 2d bc 10 00 00 18 00 00 00 fd 00 28
+3c 4b 4b 10 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 34 30 4a 43 4e 2d 45 45 4b 0a 20 00 9b
 
 00 ff ff ff ff ff ff 00 0d ae 88 14 00 00 00 00
 19 21 01 04 a5 1e 13 78 03 94 35 99 5c 53 89 25
@@ -55,3 +53,35 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 40-60 Hz V, 75-75 kHz H, max dotclock 160 MHz
     Alphanumeric Data String: 'N140JCN-EEK'
 Checksum: 0x9b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d ae 88 14 00 00 00 00 '................'
+  19 21 01 04 a5 1e 13 78 03 94 35 99 5c 53 89 25 '.!.....x..5.\S.%'
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 42 3c 80 a0 70 b0 24 40 30 20 '......B<..p.$@0 '
+  a6 00 2d bc 10 00 00 18 35 30 80 a0 70 b0 24 40 '..-.....50..p.$@'
+  30 20 a6 00 2d bc 10 00 00 18 00 00 00 fd 00 28 '0 ..-..........('
+  3c 4b 4b 10 01 0a 20 20 20 20 20 20 00 00 00 fe '<KK...      ....'
+  00 4e 31 34 30 4a 43 4e 2d 45 45 4b 0a 20 00 9b '.N140JCN-EEK. ..'
+Checksum: 0x9b
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 59.331 - 74.163 kHz (Monitor: 75.000 - 75.000 kHz)
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

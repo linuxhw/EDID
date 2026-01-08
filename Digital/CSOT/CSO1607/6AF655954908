@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e6f071600000000
-001f0104a522167803af91a4544c9823
-0f505400000001010101010101010101
-010101010101353c80a070b023403020
-360058d710000018000000fd00303c4a
-4a0f010a202020202020000000fe0043
-534f542054330a2020202020000000fe
-004d4e473030374a41312d320a2000e2
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 6f 07 16 00 00 00 00
+00 1f 01 04 a5 22 16 78 03 af 91 a4 54 4c 98 23
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 35 3c 80 a0 70 b0 23 40 30 20
+36 00 58 d7 10 00 00 18 00 00 00 fd 00 30 3c 4a
+4a 0f 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43
+53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe
+00 4d 4e 47 30 30 37 4a 41 31 2d 32 0a 20 00 e2
 
 00 ff ff ff ff ff ff 00 0e 6f 07 16 00 00 00 00
 00 1f 01 04 a5 22 16 78 03 af 91 a4 54 4c 98 23
@@ -54,4 +52,35 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'MNG007JA1-2'
 Checksum: 0xe2
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 6f 07 16 00 00 00 00 '.........o......'
+  00 1f 01 04 a5 22 16 78 03 af 91 a4 54 4c 98 23 '.....".x....TL.#'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 35 3c 80 a0 70 b0 23 40 30 20 '......5<..p.#@0 '
+  36 00 58 d7 10 00 00 18 00 00 00 fd 00 30 3c 4a '6.X..........0<J'
+  4a 0f 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43 'J...      .....C'
+  53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe 'SOT T3.     ....'
+  00 4d 4e 47 30 30 37 4a 41 31 2d 32 0a 20 00 e2 '.MNG007JA1-2. ..'
+Checksum: 0xe2
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 154.130 MHz (Monitor: 150.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

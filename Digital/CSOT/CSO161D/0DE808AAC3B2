@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff000e6f1d1601600000
-00200104b522167803ee95a3544c9926
-0f505400000001010101010101010101
-0101010101016e6e00a0a04084603020
-360059d710000018000000fd0c3ca51f
-1f4e010a202020202020000000fe0043
-534f542054330a2020202020000000fe
-004d4e473030374441312d510a200163
-7012790000030114ac2f0185ff099f00
-2f001f003f0683000200050000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000003890
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 6f 1d 16 01 60 00 00
+00 20 01 04 b5 22 16 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 6e 6e 00 a0 a0 40 84 60 30 20
+36 00 59 d7 10 00 00 18 00 00 00 fd 0c 3c a5 1f
+1f 4e 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43
+53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe
+00 4d 4e 47 30 30 37 44 41 31 2d 51 0a 20 01 63
+
+70 12 79 00 00 03 01 14 ac 2f 01 85 ff 09 9f 00
+2f 00 1f 00 3f 06 83 00 02 00 05 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 38 90
 
 00 ff ff ff ff ff ff 00 0e 6f 1d 16 01 60 00 00
 00 20 01 04 b5 22 16 78 03 ee 95 a3 54 4c 99 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: CSO
     Model: 5661
-    Serial Number: 24577
+    Serial Number: ...
     Made in: 2022
   Basic Display Parameters & Features:
     Digital display
@@ -85,3 +84,51 @@ Block 1, DisplayID Extension Block:
                Vfront    3 Vsync   6 Vback  123 Vpol N
   Checksum: 0x38
 Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 6f 1d 16 01 60 00 00 '.........o...`..'
+  00 20 01 04 b5 22 16 78 03 ee 95 a3 54 4c 99 26 '. ...".x....TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 6e 6e 00 a0 a0 40 84 60 30 20 '......nn...@.`0 '
+  36 00 59 d7 10 00 00 18 00 00 00 fd 0c 3c a5 1f '6.Y..........<..'
+  1f 4e 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43 '.N..      .....C'
+  53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe 'SOT T3.     ....'
+  00 4d 4e 47 30 30 37 44 41 31 2d 51 0a 20 01 63 '.MNG007DA1-Q. .c'
+Checksum: 0x63
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1600  165.018764 Hz  16:10   285.812 kHz    777.410000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   6 Vback  123 Vpol N
+  Checksum: 0x38
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 103.933 - 285.812 kHz (Monitor: 286.000 - 286.000 kHz)
+
+Failures:
+
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

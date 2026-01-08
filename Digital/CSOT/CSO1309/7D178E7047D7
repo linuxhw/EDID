@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e6f091300000000
-001e0104a51d147803fad5a3554e9b26
-0f505400000001010101010101010101
-0101010101015998b8a0b0d039703020
-3a0025c3100000180000000000000000
-00000000000000000018000000fe0043
-534f5454330a202020202020000000fe
-004d4e443838384841312d310a2000ed
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 6f 09 13 00 00 00 00
+00 1e 01 04 a5 1d 14 78 03 fa d5 a3 55 4e 9b 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 59 98 b8 a0 b0 d0 39 70 30 20
+3a 00 25 c3 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 18 00 00 00 fe 00 43
+53 4f 54 54 33 0a 20 20 20 20 20 20 00 00 00 fe
+00 4d 4e 44 38 38 38 48 41 31 2d 31 0a 20 00 ed
 
 00 ff ff ff ff ff ff 00 0e 6f 09 13 00 00 00 00
 00 1e 01 04 a5 1d 14 78 03 fa d5 a3 55 4e 9b 26
@@ -52,3 +50,34 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'CSOTT3'
     Alphanumeric Data String: 'MND888HA1-1'
 Checksum: 0xed
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 6f 09 13 00 00 00 00 '.........o......'
+  00 1e 01 04 a5 1d 14 78 03 fa d5 a3 55 4e 9b 26 '.......x....UN.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 59 98 b8 a0 b0 d0 39 70 30 20 '......Y.....9p0 '
+  3a 00 25 c3 10 00 00 18 00 00 00 00 00 00 00 00 ':.%.............'
+  00 00 00 00 00 00 00 00 00 18 00 00 00 fe 00 43 '...............C'
+  53 4f 54 54 33 0a 20 20 20 20 20 20 00 00 00 fe 'SOTT3.      ....'
+  00 4d 4e 44 38 38 38 48 41 31 2d 31 0a 20 00 ed '.MND888HA1-1. ..'
+Checksum: 0xed
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

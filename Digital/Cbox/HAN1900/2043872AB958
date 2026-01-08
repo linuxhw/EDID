@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00202e001901000000
-101f010380281b782a80c5a657499b23
-125054bfef80810081c0818081407140
-714f010101019a29a0d0518422305098
-360099001100001c0e1f008051002030
-4080370020560000001c992156aa5100
-2030468f330020560000001c000000fc
-004d43542d313948444d490a202000f3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 20 2e 00 19 01 00 00 00
+10 1f 01 03 80 28 1b 78 2a 80 c5 a6 57 49 9b 23
+12 50 54 bf ef 80 81 00 81 c0 81 80 81 40 71 40
+71 4f 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 99 00 11 00 00 1c 0e 1f 00 80 51 00 20 30
+40 80 37 00 20 56 00 00 00 1c 99 21 56 aa 51 00
+20 30 46 8f 33 00 20 56 00 00 00 1c 00 00 00 fc
+00 4d 43 54 2d 31 39 48 44 4d 49 0a 20 20 00 f3
 
 00 ff ff ff ff ff ff 00 20 2e 00 19 01 00 00 00
 10 1f 01 03 80 28 1b 78 2a 80 c5 a6 57 49 9b 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HAN
     Model: 6400
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 16 of 2021
   Basic Display Parameters & Features:
     Digital display
@@ -76,3 +74,31 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   3 Vback   26 Vpol P
     Display Product Name: 'MCT-19HDMI'
 Checksum: 0xf3
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 20 2e 00 19 01 00 00 00 '........ .......'
+  10 1f 01 03 80 28 1b 78 2a 80 c5 a6 57 49 9b 23 '.....(.x*...WI.#'
+  12 50 54 bf ef 80 81 00 81 c0 81 80 81 40 71 40 '.PT..........@q@'
+  71 4f 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 'qO.....)..Q."0P.'
+  36 00 99 00 11 00 00 1c 0e 1f 00 80 51 00 20 30 '6...........Q. 0'
+  40 80 37 00 20 56 00 00 00 1c 99 21 56 aa 51 00 '@.7. V.....!V.Q.'
+  20 30 46 8f 33 00 20 56 00 00 00 1c 00 00 00 fc ' 0F.3. V........'
+  00 4d 43 54 2d 31 39 48 44 4d 49 0a 20 20 00 f3 '.MCT-19HDMI.  ..'
+Checksum: 0xf3
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Mismatch of image size 32x86 mm vs display size 400x270 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 32x86 mm vs display size 400x270 mm.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

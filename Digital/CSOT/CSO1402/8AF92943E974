@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e6f021400000000
-001e0104b51e137802ee95a3544c9926
-0f505400000001010101010101010101
-010101010101b6c840a0b0084e703020
-36002ebc100000180000000000000000
-00000000000000000018000000fe0043
-534f542054330a2020202020000000fe
-004d4e453030375a41312d310a2000d3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 6f 02 14 00 00 00 00
+00 1e 01 04 b5 1e 13 78 02 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b6 c8 40 a0 b0 08 4e 70 30 20
+36 00 2e bc 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 18 00 00 00 fe 00 43
+53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe
+00 4d 4e 45 30 30 37 5a 41 31 2d 31 0a 20 00 d3
 
 00 ff ff ff ff ff ff 00 0e 6f 02 14 00 00 00 00
 00 1e 01 04 b5 1e 13 78 02 ee 95 a3 54 4c 99 26
@@ -51,3 +49,32 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'CSOT T3'
     Alphanumeric Data String: 'MNE007ZA1-1'
 Checksum: 0xd3
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 6f 02 14 00 00 00 00 '.........o......'
+  00 1e 01 04 b5 1e 13 78 02 ee 95 a3 54 4c 99 26 '.......x....TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 b6 c8 40 a0 b0 08 4e 70 30 20 '........@...Np0 '
+  36 00 2e bc 10 00 00 18 00 00 00 00 00 00 00 00 '6...............'
+  00 00 00 00 00 00 00 00 00 18 00 00 00 fe 00 43 '...............C'
+  53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe 'SOT T3.     ....'
+  00 4d 4e 45 30 30 37 5a 41 31 2d 31 0a 20 00 d3 '.MNE007ZA1-1. ..'
+Checksum: 0xd3
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

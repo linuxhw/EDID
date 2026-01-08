@@ -1,0 +1,152 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 77 01 08 00 00 00 00
+00 22 01 04 a5 11 0b 78 03 b2 41 a5 54 4c 9e 24
+0d 4e 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3e 7b 80 a0 70 b0 40 40 30 20
+66 0c ac 6b 00 00 00 18 9f 3d 80 a0 70 b0 40 40
+30 20 66 0c ac 6b 00 00 00 18 00 00 00 fd 00 30
+78 98 98 20 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 4e 38 30 30 37 51 42 31 2d 32 0a 20 01 ef
+
+70 20 79 02 00 81 00 14 74 1a 00 00 03 01 30 78
+00 00 00 00 00 00 78 00 00 00 00 80 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 9e 90
+
+00 ff ff ff ff ff ff 00 0e 77 01 08 00 00 00 00
+00 22 01 04 a5 11 0b 78 03 b2 41 a5 54 4c 9e 24
+0d 4e 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3e 7b 80 a0 70 b0 40 40 30 20
+66 0c ac 6b 00 00 00 18 9f 3d 80 a0 70 b0 40 40
+30 20 66 0c ac 6b 00 00 00 18 00 00 00 fd 00 30
+78 98 98 20 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 4e 38 30 30 37 51 42 31 2d 32 0a 20 01 ef
+
+70 20 79 02 00 81 00 14 74 1a 00 00 03 01 30 78
+00 00 00 00 00 00 78 00 00 00 00 80 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 9e 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CSW
+    Model: 2049
+    Made in: 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 17 cm x 11 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6464, 0.3310
+    Green: 0.2968, 0.6191
+    Blue : 0.1416, 0.0507
+    White: 0.3046, 0.3251
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200  120.002130 Hz  16:10   151.683 kHz    315.500000 MHz (172 mm x 107 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront   54 Vsync   6 Vback    4 Vpol N
+    DTD 2:  1920x1200   60.001065 Hz  16:10    75.841 kHz    157.750000 MHz (172 mm x 107 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront   54 Vsync   6 Vback    4 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 48-120 Hz V, 152-152 kHz H, max dotclock 320 MHz
+    Display Product Name: 'PN8007QB1-2'
+  Extension blocks: 1
+Checksum: 0xef
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 120 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Checksum: 0x9e
+Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 77 01 08 00 00 00 00 '.........w......'
+  00 22 01 04 a5 11 0b 78 03 b2 41 a5 54 4c 9e 24 '.".....x..A.TL.$'
+  0d 4e 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '.NS.............'
+  01 01 01 01 01 01 3e 7b 80 a0 70 b0 40 40 30 20 '......>{..p.@@0 '
+  66 0c ac 6b 00 00 00 18 9f 3d 80 a0 70 b0 40 40 'f..k.....=..p.@@'
+  30 20 66 0c ac 6b 00 00 00 18 00 00 00 fd 00 30 '0 f..k.........0'
+  78 98 98 20 01 0a 20 20 20 20 20 20 00 00 00 fc 'x.. ..      ....'
+  00 50 4e 38 30 30 37 51 42 31 2d 32 0a 20 01 ef '.PN8007QB1-2. ..'
+Checksum: 0xef
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 120 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Checksum: 0x9e
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 75.841 - 151.682 kHz (Monitor: 152.000 - 152.000 kHz)
+
+Failures:
+
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A: Length is 20 instead of 21.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A: Length is 20 instead of 21.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+  DisplayID: Missing DisplayID Type VII Detailed Timing Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL
