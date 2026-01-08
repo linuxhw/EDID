@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2d807000000000
-141e0104a53c2278221135a4574c9f27
-0d5054bfef8081c0810081809500a9c0
-b300714fd1c0023a801871382d40582c
-450056512100001e000000fd00384b1e
-5412000a202020202020000000fc004c
-4632375433350a2020202020000000ff
-004831414b3530303030300a2020009b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 80 70 00 00 00 00
+14 1e 01 04 a5 3c 22 78 22 11 35 a4 57 4c 9f 27
+0d 50 54 bf ef 80 81 c0 81 00 81 80 95 00 a9 c0
+b3 00 71 4f d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 51 21 00 00 1e 00 00 00 fd 00 38 4b 1e
+54 12 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+46 32 37 54 33 35 0a 20 20 20 20 20 00 00 00 ff
+00 48 31 41 4b 35 30 30 30 30 30 0a 20 20 00 9b
 
 00 ff ff ff ff ff ff 00 4c 2d 80 70 00 00 00 00
 14 1e 01 04 a5 3c 22 78 22 11 35 a4 57 4c 9f 27
@@ -74,7 +72,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-84 kHz H, max dotclock 180 MHz
     Display Product Name: 'LF27T35'
-    Display Product Serial Number: 'H1AK500000'
+    Display Product Serial Number: ...
 Checksum: 0x9b
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d 80 70 00 00 00 00 '........L-.p....'
+  14 1e 01 04 a5 3c 22 78 22 11 35 a4 57 4c 9f 27 '.....<"x".5.WL.''
+  0d 50 54 bf ef 80 81 c0 81 00 81 80 95 00 a9 c0 '.PT.............'
+  b3 00 71 4f d1 c0 02 3a 80 18 71 38 2d 40 58 2c '..qO...:..q8-@X,'
+  45 00 56 51 21 00 00 1e 00 00 00 fd 00 38 4b 1e 'E.VQ!........8K.'
+  54 12 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'T...      .....L'
+  46 32 37 54 33 35 0a 20 20 20 20 20 00 00 00 ff 'F27T35.     ....'
+  00 48 31 41 4b 35 30 30 30 30 30 0a 20 20 00 9b '.H1AK500000.  ..'
+Checksum: 0x9b
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
