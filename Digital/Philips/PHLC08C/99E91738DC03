@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c8cc0acca0000
-10160103802c19782aba21a655489a27
-135054bd4a00a9c00101010101010101
-010101010101302a40c8608464301850
-1300bbf91000001e000000ff00465842
-31323136303531383834000000fc0050
-68696c69707320323036564c000000fd
-00384c1e5311000a202020202020003c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 8c c0 ac ca 00 00
+10 16 01 03 80 2c 19 78 2a ba 21 a6 55 48 9a 27
+13 50 54 bd 4a 00 a9 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 bb f9 10 00 00 1e 00 00 00 ff 00 46 58 42
+31 32 31 36 30 35 31 38 38 34 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 32 30 36 56 4c 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 3c
 
 00 ff ff ff ff ff ff 00 41 0c 8c c0 ac ca 00 00
 10 16 01 03 80 2c 19 78 2a ba 21 a6 55 48 9a 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 49292
-    Serial Number: 51884
+    Serial Number: ...
     Made in: week 16 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -57,8 +55,32 @@ Block 0, Base EDID:
     DTD 1:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (443 mm x 249 mm)
                  Hfront   24 Hsync  80 Hback   96 Hpol P
                  Vfront    1 Vsync   3 Vback   96 Vpol P
-    Display Product Serial Number: 'FXB1216051884'
+    Display Product Serial Number: ...
     Display Product Name: 'Philips 206VL'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x3c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 8c c0 ac ca 00 00 '........A.......'
+  10 16 01 03 80 2c 19 78 2a ba 21 a6 55 48 9a 27 '.....,.x*.!.UH.''
+  13 50 54 bd 4a 00 a9 c0 01 01 01 01 01 01 01 01 '.PT.J...........'
+  01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
+  13 00 bb f9 10 00 00 1e 00 00 00 ff 00 46 58 42 '.............FXB'
+  31 32 31 36 30 35 31 38 38 34 00 00 00 fc 00 50 '1216051884.....P'
+  68 69 6c 69 70 73 20 32 30 36 56 4c 00 00 00 fd 'hilips 206VL....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 3c '.8L.S...      .<'
+Checksum: 0x3c
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410cc5c0fd250000
-2218010380351e782a9265a655559f28
-0d5054bd4b00d1c08180950f9500b300
-81c001010101023a801871382d40582c
-4500132b2100001e000000ff00415530
-31343334303039373235000000fc0050
-484c2032343656350a202020000000fd
-00384c1e5311000a202020202020007f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c c5 c0 fd 25 00 00
+22 18 01 03 80 35 1e 78 2a 92 65 a6 55 55 9f 28
+0d 50 54 bd 4b 00 d1 c0 81 80 95 0f 95 00 b3 00
+81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2b 21 00 00 1e 00 00 00 ff 00 41 55 30
+31 34 33 34 30 30 39 37 32 35 00 00 00 fc 00 50
+48 4c 20 32 34 36 56 35 0a 20 20 20 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 7f
 
 00 ff ff ff ff ff ff 00 41 0c c5 c0 fd 25 00 00
 22 18 01 03 80 35 1e 78 2a 92 65 a6 55 55 9f 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 49349
-    Serial Number: 9725
+    Serial Number: ...
     Made in: week 34 of 2014
   Basic Display Parameters & Features:
     Digital display
@@ -63,8 +61,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (531 mm x 299 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'AU01434009725'
+    Display Product Serial Number: ...
     Display Product Name: 'PHL 246V5'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x7f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c c5 c0 fd 25 00 00 '........A....%..'
+  22 18 01 03 80 35 1e 78 2a 92 65 a6 55 55 9f 28 '"....5.x*.e.UU.('
+  0d 50 54 bd 4b 00 d1 c0 81 80 95 0f 95 00 b3 00 '.PT.K...........'
+  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 13 2b 21 00 00 1e 00 00 00 ff 00 41 55 30 'E..+!........AU0'
+  31 34 33 34 30 30 39 37 32 35 00 00 00 fc 00 50 '1434009725.....P'
+  48 4c 20 32 34 36 56 35 0a 20 20 20 00 00 00 fd 'HL 246V5.   ....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 7f '.8L.S...      ..'
+Checksum: 0x7f
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c81c0a48d0000
-2915010380301b782a0a45a7544a9925
-115054bd4b00d1c08180950f9500b300
-010101010101023a801871382d40582c
-4500e00c1100001e000000ff00554842
-31313431303336323630000000fd0038
-4c1e5311000a202020202020000000fc
-005068696c69707320323236564c0063
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 81 c0 a4 8d 00 00
+29 15 01 03 80 30 1b 78 2a 0a 45 a7 54 4a 99 25
+11 50 54 bd 4b 00 d1 c0 81 80 95 0f 95 00 b3 00
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 e0 0c 11 00 00 1e 00 00 00 ff 00 55 48 42
+31 31 34 31 30 33 36 32 36 30 00 00 00 fd 00 38
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 68 69 6c 69 70 73 20 32 32 36 56 4c 00 63
 
 00 ff ff ff ff ff ff 00 41 0c 81 c0 a4 8d 00 00
 29 15 01 03 80 30 1b 78 2a 0a 45 a7 54 4a 99 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 49281
-    Serial Number: 36260
+    Serial Number: ...
     Made in: week 41 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -62,8 +60,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (480 mm x 268 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'UHB1141036260'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'Philips 226VL'
 Checksum: 0x63
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 81 c0 a4 8d 00 00 '........A.......'
+  29 15 01 03 80 30 1b 78 2a 0a 45 a7 54 4a 99 25 ')....0.x*.E.TJ.%'
+  11 50 54 bd 4b 00 d1 c0 81 80 95 0f 95 00 b3 00 '.PT.K...........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 e0 0c 11 00 00 1e 00 00 00 ff 00 55 48 42 'E............UHB'
+  31 31 34 31 30 33 36 32 36 30 00 00 00 fd 00 38 '1141036260.....8'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 50 68 69 6c 69 70 73 20 32 32 36 56 4c 00 63 '.Philips 226VL.c'
+Checksum: 0x63
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
