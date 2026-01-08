@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0010acf6a055443530
-2e1d0104a5361e7806ee91a3544c9926
-0f505421080001010101010101010101
-010101010101023a801871382d40582c
-4500202f2100001e000000ff00234153
-4f6f75732f7242643364000000fd001e
-f043ff38010a202020202020000000fc
-0044656c6c20415732353138480a015f
-020312412309070183010000654b0400
-0101fe5b80a07038354030203500202f
-2100001a866f80a07038404030203500
-202f2100001a5a8780a070384d403020
-3500202f2100001a40b980a070383c40
-30203a00202f2100001e80d980507038
-504008203a00202f2100001e00000000
-0000000000000000000000000000005e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac f6 a0 55 44 35 30
+2e 1d 01 04 a5 36 1e 78 06 ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 20 2f 21 00 00 1e 00 00 00 ff 00 23 41 53
+4f 6f 75 73 2f 72 42 64 33 64 00 00 00 fd 00 1e
+f0 43 ff 38 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 44 65 6c 6c 20 41 57 32 35 31 38 48 0a 01 5f
+
+02 03 12 41 23 09 07 01 83 01 00 00 65 4b 04 00
+01 01 fe 5b 80 a0 70 38 35 40 30 20 35 00 20 2f
+21 00 00 1a 86 6f 80 a0 70 38 40 40 30 20 35 00
+20 2f 21 00 00 1a 5a 87 80 a0 70 38 4d 40 30 20
+35 00 20 2f 21 00 00 1a 40 b9 80 a0 70 38 3c 40
+30 20 3a 00 20 2f 21 00 00 1e 80 d9 80 50 70 38
+50 40 08 20 3a 00 20 2f 21 00 00 1e 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 5e
 
 00 ff ff ff ff ff ff 00 10 ac f6 a0 55 44 35 30
 2e 1d 01 04 a5 36 1e 78 06 ee 91 a3 54 4c 99 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 41206
-    Serial Number: 808797269
+    Serial Number: ...
     Made in: week 46 of 2019
   Basic Display Parameters & Features:
     Digital display
@@ -66,10 +65,10 @@ Block 0, Base EDID:
     DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (544 mm x 303 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '#ASOous/rBd3d'
+    DTD  1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (544 mm x 303 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (Bare Limits): 30-240 Hz V, 67-255 kHz H, max dotclock 560 MHz
     Display Product Name: 'Dell AW2518H'
@@ -92,19 +91,93 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (NVIDIA), OUI 00-04-4B:
     01 01                                           '..'
   Detailed Timing Descriptors:
-    DTD 2:  1920x1080   99.930409 Hz  16:9    113.221 kHz    235.500000 MHz (544 mm x 303 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   45 Vpol N
-    DTD 3:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (544 mm x 303 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   56 Vpol N
-    DTD 4:  1920x1080  143.981451 Hz  16:9    166.587 kHz    346.500000 MHz (544 mm x 303 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   69 Vpol N
-    DTD 5:  1920x1080  200.000000 Hz  16:9    228.000 kHz    474.240000 MHz (544 mm x 303 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync  10 Vback   47 Vpol P
-    DTD 6:  1920x1080  240.000000 Hz  16:9    278.400 kHz    556.800000 MHz (544 mm x 303 mm)
-                 Hfront    8 Hsync  32 Hback   40 Hpol P
-                 Vfront    3 Vsync  10 Vback   67 Vpol P
+    DTD  2:  1920x1080   99.930409 Hz  16:9    113.221 kHz    235.500000 MHz (544 mm x 303 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync   5 Vback   45 Vpol N
+    DTD  3:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (544 mm x 303 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD  4:  1920x1080  143.981451 Hz  16:9    166.587 kHz    346.500000 MHz (544 mm x 303 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync   5 Vback   69 Vpol N
+    DTD  5:  1920x1080  200.000000 Hz  16:9    228.000 kHz    474.240000 MHz (544 mm x 303 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync  10 Vback   47 Vpol P
+    DTD  6:  1920x1080  240.000000 Hz  16:9    278.400 kHz    556.800000 MHz (544 mm x 303 mm)
+                  Hfront    8 Hsync  32 Hback   40 Hpol P
+                  Vfront    3 Vsync  10 Vback   67 Vpol P
 Checksum: 0x5e  Unused space in Extension Block: 19 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac f6 a0 55 44 35 30 '............UD50'
+  2e 1d 01 04 a5 36 1e 78 06 ee 91 a3 54 4c 99 26 '.....6.x....TL.&'
+  0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01 '.PT!............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 20 2f 21 00 00 1e 00 00 00 ff 00 23 41 53 'E. /!........#AS'
+  4f 6f 75 73 2f 72 42 64 33 64 00 00 00 fd 00 1e 'Oous/rBd3d......'
+  f0 43 ff 38 01 0a 20 20 20 20 20 20 00 00 00 fc '.C.8..      ....'
+  00 44 65 6c 6c 20 41 57 32 35 31 38 48 0a 01 5f '.Dell AW2518H.._'
+Checksum: 0x5f
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (NVIDIA), OUI 00-04-4B:
+    01 01                                           '..'
+  Detailed Timing Descriptors:
+    DTD  7:  1920x1080   99.930409 Hz  16:9    113.221 kHz    235.500000 MHz (544 mm x 303 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync   5 Vback   45 Vpol N
+    DTD  8:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (544 mm x 303 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD  9:  1920x1080  143.981451 Hz  16:9    166.587 kHz    346.500000 MHz (544 mm x 303 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync   5 Vback   69 Vpol N
+    DTD 10:  1920x1080  200.000000 Hz  16:9    228.000 kHz    474.240000 MHz (544 mm x 303 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync  10 Vback   47 Vpol P
+    DTD 11:  1920x1080  240.000000 Hz  16:9    278.400 kHz    556.800000 MHz (544 mm x 303 mm)
+                  Hfront    8 Hsync  32 Hback   40 Hpol P
+                  Vfront    3 Vsync  10 Vback   67 Vpol P
+Checksum: 0x5e  Unused space in Extension Block: 19 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 278.400 kHz (Monitor: 67.000 - 255.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL
