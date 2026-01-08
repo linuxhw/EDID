@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac3da053453739
-2d13010380291a78eeee95a3544c9926
-0f5054bfef809500714f8180950f8100
-0101010101019a29a0d0518422305098
-360098ff1000001c000000ff00564a36
-4d47394232393745530a000000fc0044
-454c4c2031393039570a2020000000fd
-00384b1e530e000a2020202020200034
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 3d a0 53 45 37 39
+2d 13 01 03 80 29 1a 78 ee ee 95 a3 54 4c 99 26
+0f 50 54 bf ef 80 95 00 71 4f 81 80 95 0f 81 00
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 ff 00 56 4a 36
+4d 47 39 42 32 39 37 45 53 0a 00 00 00 fc 00 44
+45 4c 4c 20 31 39 30 39 57 0a 20 20 00 00 00 fd
+00 38 4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 34
 
 00 ff ff ff ff ff ff 00 10 ac 3d a0 53 45 37 39
 2d 13 01 03 80 29 1a 78 ee ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 41021
-    Serial Number: 959923539
+    Serial Number: ...
     Made in: week 45 of 2009
   Basic Display Parameters & Features:
     Digital display
@@ -68,8 +66,34 @@ Block 0, Base EDID:
     DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (408 mm x 255 mm)
                  Hfront   80 Hsync 152 Hback  232 Hpol N
                  Vfront    3 Vsync   6 Vback   25 Vpol P
-    Display Product Serial Number: 'VJ6MG9B297ES'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL 1909W'
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
 Checksum: 0x34
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 3d a0 53 45 37 39 '..........=.SE79'
+  2d 13 01 03 80 29 1a 78 ee ee 95 a3 54 4c 99 26 '-....).x....TL.&'
+  0f 50 54 bf ef 80 95 00 71 4f 81 80 95 0f 81 00 '.PT.....qO......'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 00 00 00 ff 00 56 4a 36 '6............VJ6'
+  4d 47 39 42 32 39 37 45 53 0a 00 00 00 fc 00 44 'MG9B297ES......D'
+  45 4c 4c 20 31 39 30 39 57 0a 20 20 00 00 00 fd 'ELL 1909W.  ....'
+  00 38 4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 34 '.8K.S...      .4'
+Checksum: 0x34
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

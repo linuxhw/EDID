@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac24a04c474a30
-1f110103a0261e78e6caf6a357479e23
-114f54a54b00714f8180010101010101
-010101010101302a009851002a403070
-13007c311100001e000000fd00384b1f
-500e000a202020202020000000ff0048
-4d303730373831304a474c0a000000fc
-0044454c4c204531393746500a200008
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 24 a0 4c 47 4a 30
+1f 11 01 03 a0 26 1e 78 e6 ca f6 a3 57 47 9e 23
+11 4f 54 a5 4b 00 71 4f 81 80 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 7c 31 11 00 00 1e 00 00 00 fd 00 38 4b 1f
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 48
+4d 30 37 30 37 38 31 30 4a 47 4c 0a 00 00 00 fc
+00 44 45 4c 4c 20 45 31 39 37 46 50 0a 20 00 08
 
 00 ff ff ff ff ff ff 00 10 ac 24 a0 4c 47 4a 30
 1f 11 01 03 a0 26 1e 78 e6 ca f6 a3 57 47 9e 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 40996
-    Serial Number: 810174284
+    Serial Number: ...
     Made in: week 31 of 2007
   Basic Display Parameters & Features:
     Digital display
@@ -60,8 +58,33 @@ Block 0, Base EDID:
                  Vfront    1 Vsync   3 Vback   38 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 31-80 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: 'HM0707810JGL'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL E197FP'
 Checksum: 0x08
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 24 a0 4c 47 4a 30 '..........$.LGJ0'
+  1f 11 01 03 a0 26 1e 78 e6 ca f6 a3 57 47 9e 23 '.....&.x....WG.#'
+  11 4f 54 a5 4b 00 71 4f 81 80 01 01 01 01 01 01 '.OT.K.qO........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 7c 31 11 00 00 1e 00 00 00 fd 00 38 4b 1f '..|1.........8K.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 48 'P...      .....H'
+  4d 30 37 30 37 38 31 30 4a 47 4c 0a 00 00 00 fc 'M0707810JGL.....'
+  00 44 45 4c 4c 20 45 31 39 37 46 50 0a 20 00 08 '.DELL E197FP. ..'
+Checksum: 0x08
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x20.
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

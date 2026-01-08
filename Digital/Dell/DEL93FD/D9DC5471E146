@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010acfd935826df04
-1c1b010380351e780a54c0a35b4fa426
-12505400000001010101010101010101
-010101010101023a801871382d403021
-840010292100001e000000fc00496e73
-7069726f6e2033343830000000100000
-0a202020202020202020202000000010
-00000a2020202020202021202020006f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac fd 93 58 26 df 04
+1c 1b 01 03 80 35 1e 78 0a 54 c0 a3 5b 4f a4 26
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 30 21
+84 00 10 29 21 00 00 1e 00 00 00 fc 00 49 6e 73
+70 69 72 6f 6e 20 33 34 38 30 00 00 00 10 00 00
+0a 20 20 20 20 20 20 20 20 20 20 20 00 00 00 10
+00 00 0a 20 20 20 20 20 20 20 21 20 20 20 00 6f
 
 00 ff ff ff ff ff ff 00 10 ac fd 93 58 26 df 04
 1c 1b 01 03 80 35 1e 78 0a 54 c0 a3 5b 4f a4 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 37885
-    Serial Number: 81733208
+    Serial Number: ...
     Made in: week 28 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -50,3 +48,36 @@ Block 0, Base EDID:
     Dummy Descriptor:
     Dummy Descriptor:
 Checksum: 0x6f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac fd 93 58 26 df 04 '............X&..'
+  1c 1b 01 03 80 35 1e 78 0a 54 c0 a3 5b 4f a4 26 '.....5.x.T..[O.&'
+  12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 30 21 '.......:..q8-@0!'
+  84 00 10 29 21 00 00 1e 00 00 00 fc 00 49 6e 73 '...)!........Ins'
+  70 69 72 6f 6e 20 33 34 38 30 00 00 00 10 00 00 'piron 3480......'
+  0a 20 20 20 20 20 20 20 20 20 20 20 00 00 00 10 '.           ....'
+  00 00 0a 20 20 20 20 20 20 20 21 20 20 20 00 6f '...       !   .o'
+Checksum: 0x6f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+
+Failures:
+
+Block 0, Base EDID:
+  Dummy Descriptor: Dummy block filled with garbage.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac089401010101
-2b1f0104a13c237803c665a059589d27
-0e5054210800d1c081c081809500b300
-d10001010101023a801871382d40942c
-4508fe1f1100001e000000fd00314b1c
-5f14000a202020202020000000fc0044
-454c4c2041494f0a2020202000000000
-0000000000000000000001000000001f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 08 94 01 01 01 01
+2b 1f 01 04 a1 3c 23 78 03 c6 65 a0 59 58 9d 27
+0e 50 54 21 08 00 d1 c0 81 c0 81 80 95 00 b3 00
+d1 00 01 01 01 01 02 3a 80 18 71 38 2d 40 94 2c
+45 08 fe 1f 11 00 00 1e 00 00 00 fd 00 31 4b 1c
+5f 14 00 0a 20 20 20 20 20 20 00 00 00 fc 00 44
+45 4c 4c 20 41 49 4f 0a 20 20 20 20 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 1f
 
 00 ff ff ff ff ff ff 00 10 ac 08 94 01 01 01 01
 2b 1f 01 04 a1 3c 23 78 03 c6 65 a0 59 58 9d 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 37896
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 43 of 2021
   Basic Display Parameters & Features:
     Digital display
@@ -63,3 +61,35 @@ Block 0, Base EDID:
     Display Product Name: 'DELL AIO'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 '................'
 Checksum: 0x1f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 08 94 01 01 01 01 '................'
+  2b 1f 01 04 a1 3c 23 78 03 c6 65 a0 59 58 9d 27 '+....<#x..e.YX.''
+  0e 50 54 21 08 00 d1 c0 81 c0 81 80 95 00 b3 00 '.PT!............'
+  d1 00 01 01 01 01 02 3a 80 18 71 38 2d 40 94 2c '.......:..q8-@.,'
+  45 08 fe 1f 11 00 00 1e 00 00 00 fd 00 31 4b 1c 'E............1K.'
+  5f 14 00 0a 20 20 20 20 20 20 00 00 00 fc 00 44 '_...      .....D'
+  45 4c 4c 20 41 49 4f 0a 20 20 20 20 00 00 00 00 'ELL AIO.    ....'
+  00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 1f '................'
+Checksum: 0x1f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 510x287 mm vs display size 600x350 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

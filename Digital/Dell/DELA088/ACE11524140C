@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac88a04d554e31
-3416010380291a78ea49a5a457509e27
-0f5054a54b009500714f8180950f8100
-0101010101019a29a0d0518422305098
-360098ff1000001c000000ff00325732
-5938324350314e554d0a000000fc0044
-454c4c2050313931330a2020000000fd
-00384c1e510e000a2020202020200089
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 88 a0 4d 55 4e 31
+34 16 01 03 80 29 1a 78 ea 49 a5 a4 57 50 9e 27
+0f 50 54 a5 4b 00 95 00 71 4f 81 80 95 0f 81 00
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 ff 00 32 57 32
+59 38 32 43 50 31 4e 55 4d 0a 00 00 00 fc 00 44
+45 4c 4c 20 50 31 39 31 33 0a 20 20 00 00 00 fd
+00 38 4c 1e 51 0e 00 0a 20 20 20 20 20 20 00 89
 
 00 ff ff ff ff ff ff 00 10 ac 88 a0 4d 55 4e 31
 34 16 01 03 80 29 1a 78 ea 49 a5 a4 57 50 9e 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 41096
-    Serial Number: 827217229
+    Serial Number: ...
     Made in: week 52 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -60,8 +58,32 @@ Block 0, Base EDID:
     DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (408 mm x 255 mm)
                  Hfront   80 Hsync 152 Hback  232 Hpol N
                  Vfront    3 Vsync   6 Vback   25 Vpol P
-    Display Product Serial Number: '2W2Y82CP1NUM'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL P1913'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-81 kHz H, max dotclock 140 MHz
 Checksum: 0x89
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 88 a0 4d 55 4e 31 '............MUN1'
+  34 16 01 03 80 29 1a 78 ea 49 a5 a4 57 50 9e 27 '4....).x.I..WP.''
+  0f 50 54 a5 4b 00 95 00 71 4f 81 80 95 0f 81 00 '.PT.K...qO......'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 00 00 00 ff 00 32 57 32 '6............2W2'
+  59 38 32 43 50 31 4e 55 4d 0a 00 00 00 fc 00 44 'Y82CP1NUM......D'
+  45 4c 4c 20 50 31 39 31 33 0a 20 20 00 00 00 fd 'ELL P1913.  ....'
+  00 38 4c 1e 51 0e 00 0a 20 20 20 20 20 20 00 89 '.8L.Q...      ..'
+Checksum: 0x89
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

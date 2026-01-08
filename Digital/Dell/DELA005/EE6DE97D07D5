@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac05a055455331
-0e0d0104a51f1778e6caf6a357479e23
-114f54a54a0001010101010101010101
-01010101010164190040410026301888
-360030e410000018000000ff00385732
-33343334343153455520000000fc0044
-454c4c20453135314650620a000000fd
-00384c1f3c08000a202020202020008a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 05 a0 55 45 53 31
+0e 0d 01 04 a5 1f 17 78 e6 ca f6 a3 57 47 9e 23
+11 4f 54 a5 4a 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 30 e4 10 00 00 18 00 00 00 ff 00 38 57 32
+33 34 33 34 34 31 53 45 55 20 00 00 00 fc 00 44
+45 4c 4c 20 45 31 35 31 46 50 62 0a 00 00 00 fd
+00 38 4c 1f 3c 08 00 0a 20 20 20 20 20 20 00 8a
 
 00 ff ff ff ff ff ff 00 10 ac 05 a0 55 45 53 31
 0e 0d 01 04 a5 1f 17 78 e6 ca f6 a3 57 47 9e 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 40965
-    Serial Number: 827540821
+    Serial Number: ...
     Made in: week 14 of 2003
   Basic Display Parameters & Features:
     Digital display
@@ -57,8 +55,41 @@ Block 0, Base EDID:
     DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (304 mm x 228 mm)
                  Hfront   24 Hsync 136 Hback  160 Hpol N
                  Vfront    3 Vsync   6 Vback   29 Vpol N
-    Display Product Serial Number: '8W2343441SEU '
+    Display Product Serial Number: ...
     Display Product Name: 'DELL E151FPb'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-60 kHz H, max dotclock 80 MHz
 Checksum: 0x8a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 05 a0 55 45 53 31 '............UES1'
+  0e 0d 01 04 a5 1f 17 78 e6 ca f6 a3 57 47 9e 23 '.......x....WG.#'
+  11 4f 54 a5 4a 00 01 01 01 01 01 01 01 01 01 01 '.OT.J...........'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 30 e4 10 00 00 18 00 00 00 ff 00 38 57 32 '6.0..........8W2'
+  33 34 33 34 34 31 53 45 55 20 00 00 00 fc 00 44 '343441SEU .....D'
+  45 4c 4c 20 45 31 35 31 46 50 62 0a 00 00 00 fd 'ELL E151FPb.....'
+  00 38 4c 1f 3c 08 00 0a 20 20 20 20 20 20 00 8a '.8L.<...      ..'
+Checksum: 0x8a
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Serial Number: ...
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

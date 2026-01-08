@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac10a053395730
-0610010380342178eeee50a3544c9b26
-0f5054a54b008180a940714fb3000101
-010101010101283c80a070b023403020
-360007442100001a000000ff004d3637
-35343632333057395320000000fc0044
-454c4c20323430354650570a000000fd
-00384c1e5111000a202020202020001b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 10 a0 53 39 57 30
+06 10 01 03 80 34 21 78 ee ee 50 a3 54 4c 9b 26
+0f 50 54 a5 4b 00 81 80 a9 40 71 4f b3 00 01 01
+01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 07 44 21 00 00 1a 00 00 00 ff 00 4d 36 37
+35 34 36 32 33 30 57 39 53 20 00 00 00 fc 00 44
+45 4c 4c 20 32 34 30 35 46 50 57 0a 00 00 00 fd
+00 38 4c 1e 51 11 00 0a 20 20 20 20 20 20 00 1b
 
 00 ff ff ff ff ff ff 00 10 ac 10 a0 53 39 57 30
 06 10 01 03 80 34 21 78 ee ee 50 a3 54 4c 9b 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 40976
-    Serial Number: 811022675
+    Serial Number: ...
     Made in: week 6 of 2006
   Basic Display Parameters & Features:
     Digital display
@@ -60,8 +58,35 @@ Block 0, Base EDID:
     DTD 1:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (519 mm x 324 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   26 Vpol N
-    Display Product Serial Number: 'M67546230W9S '
+    Display Product Serial Number: ...
     Display Product Name: 'DELL 2405FPW'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-81 kHz H, max dotclock 170 MHz
 Checksum: 0x1b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 10 a0 53 39 57 30 '............S9W0'
+  06 10 01 03 80 34 21 78 ee ee 50 a3 54 4c 9b 26 '.....4!x..P.TL.&'
+  0f 50 54 a5 4b 00 81 80 a9 40 71 4f b3 00 01 01 '.PT.K....@qO....'
+  01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
+  36 00 07 44 21 00 00 1a 00 00 00 ff 00 4d 36 37 '6..D!........M67'
+  35 34 36 32 33 30 57 39 53 20 00 00 00 fc 00 44 '546230W9S .....D'
+  45 4c 4c 20 32 34 30 35 46 50 57 0a 00 00 00 fd 'ELL 2405FPW.....'
+  00 38 4c 1e 51 11 00 0a 20 20 20 20 20 20 00 1b '.8L.Q...      ..'
+Checksum: 0x1b
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
