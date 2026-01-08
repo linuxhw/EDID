@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f0793200000000
-231a0104a5331d783ac075a756529b26
-0f5054210800d1c0a9c081c0b3009500
-810081800101023a801871382d40582c
-4500fd1e1100001e000000fd00323c1e
-5011000a202020202020000000fc0048
-5020453233320a2020202020000000ff
-00334351363335314d42380a202000a7
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 79 32 00 00 00 00
+23 1a 01 04 a5 33 1d 78 3a c0 75 a7 56 52 9b 26
+0f 50 54 21 08 00 d1 c0 a9 c0 81 c0 b3 00 95 00
+81 00 81 80 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 32 3c 1e
+50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 45 32 33 32 0a 20 20 20 20 20 00 00 00 ff
+00 33 43 51 36 33 35 31 4d 42 38 0a 20 20 00 a7
 
 00 ff ff ff ff ff ff 00 22 f0 79 32 00 00 00 00
 23 1a 01 04 a5 33 1d 78 3a c0 75 a7 56 52 9b 26
@@ -61,5 +59,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-60 Hz V, 30-80 kHz H, max dotclock 170 MHz
     Display Product Name: 'HP E232'
-    Display Product Serial Number: '3CQ6351MB8'
+    Display Product Serial Number: ...
 Checksum: 0xa7
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 79 32 00 00 00 00 '........".y2....'
+  23 1a 01 04 a5 33 1d 78 3a c0 75 a7 56 52 9b 26 '#....3.x:.u.VR.&'
+  0f 50 54 21 08 00 d1 c0 a9 c0 81 c0 b3 00 95 00 '.PT!............'
+  81 00 81 80 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 32 3c 1e 'E............2<.'
+  50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'P...      .....H'
+  50 20 45 32 33 32 0a 20 20 20 20 20 00 00 00 ff 'P E232.     ....'
+  00 33 43 51 36 33 35 31 4d 42 38 0a 20 20 00 a7 '.3CQ6351MB8.  ..'
+Checksum: 0xa7
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

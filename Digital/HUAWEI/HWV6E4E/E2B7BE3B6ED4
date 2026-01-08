@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0022f64e6e00000001
-18200104a5351e783b5e95ab5247a927
-0e5054a54b008180a9c0714f01010101
-010101010101023a801871382d40582c
-45000f282100001e000000ff00202020
-20202020202020202020000000fd0030
-4c555512010a202020202020000000fc
-0053534e2d32340a2020202020200156
-020319b24801139f1290040203681a00
-000101304b00e200ca2a4480a0703827
-40302035000f282100001a011d007251
-d01e206e2855000f282100001e8c0ad0
-8a20e02d10103e96000f282100001800
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000007a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f6 4e 6e 00 00 00 01
+18 20 01 04 a5 35 1e 78 3b 5e 95 ab 52 47 a9 27
+0e 50 54 a5 4b 00 81 80 a9 c0 71 4f 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 ff 00 20 20 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fd 00 30
+4c 55 55 12 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 53 4e 2d 32 34 0a 20 20 20 20 20 20 01 56
+
+02 03 19 b2 48 01 13 9f 12 90 04 02 03 68 1a 00
+00 01 01 30 4b 00 e2 00 ca 2a 44 80 a0 70 38 27
+40 30 20 35 00 0f 28 21 00 00 1a 01 1d 00 72 51
+d0 1e 20 6e 28 55 00 0f 28 21 00 00 1e 8c 0a d0
+8a 20 e0 2d 10 10 3e 96 00 0f 28 21 00 00 18 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7a
 
 00 ff ff ff ff ff ff 00 22 f6 4e 6e 00 00 00 01
 18 20 01 04 a5 35 1e 78 3b 5e 95 ab 52 47 a9 27
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWV
     Model: 28238
-    Serial Number: 16777216
+    Serial Number: ...
     Made in: week 24 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -78,7 +77,7 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '             '
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (Bare Limits): 48-76 Hz V, 85-85 kHz H, max dotclock 180 MHz
     Display Product Name: 'SSN-24'
@@ -125,4 +124,91 @@ Block 1, CTA-861 Extension Block:
                  Vfront    9 Vsync   6 Vback   30 Vpol N
 Checksum: 0x7a  Unused space in Extension Block: 48 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f6 4e 6e 00 00 00 01 '........".Nn....'
+  18 20 01 04 a5 35 1e 78 3b 5e 95 ab 52 47 a9 27 '. ...5.x;^..RG.''
+  0e 50 54 a5 4b 00 81 80 a9 c0 71 4f 01 01 01 01 '.PT.K.....qO....'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 ff 00 20 20 20 'E..(!........   '
+  20 20 20 20 20 20 20 20 20 20 00 00 00 fd 00 30 '          .....0'
+  4c 55 55 12 01 0a 20 20 20 20 20 20 00 00 00 fc 'LUU...      ....'
+  00 53 53 4e 2d 32 34 0a 20 20 20 20 20 20 01 56 '.SSN-24.      .V'
+Checksum: 0x56
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 75 Hz
+    Flags 1.x: 0x00
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Detailed Timing Descriptors:
+    DTD 5:  1920x1080   74.972503 Hz  16:9     83.894 kHz    174.500000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   31 Vpol N
+    DTD 6:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (527 mm x 296 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 7:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (527 mm x 296 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x7a  Unused space in Extension Block: 48 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.250 - 83.894 kHz (Monitor: 85.000 - 85.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 3.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f0793200000000
-311a0104a5331d7822c075a756529b26
-0f5054210800d1c0a9c081c0b3009500
-810081800101023a801871382d40582c
-4500fd1e1100001e000000fd00323c1e
-5011010a202020202020000000fc0048
-5020453233320a2020202020000000ff
-00434e34363439314859420a20200091
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 79 32 00 00 00 00
+31 1a 01 04 a5 33 1d 78 22 c0 75 a7 56 52 9b 26
+0f 50 54 21 08 00 d1 c0 a9 c0 81 c0 b3 00 95 00
+81 00 81 80 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 32 3c 1e
+50 11 01 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 45 32 33 32 0a 20 20 20 20 20 00 00 00 ff
+00 43 4e 34 36 34 39 31 48 59 42 0a 20 20 00 91
 
 00 ff ff ff ff ff ff 00 22 f0 79 32 00 00 00 00
 31 1a 01 04 a5 33 1d 78 22 c0 75 a7 56 52 9b 26
@@ -61,5 +59,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (Bare Limits): 50-60 Hz V, 30-80 kHz H, max dotclock 170 MHz
     Display Product Name: 'HP E232'
-    Display Product Serial Number: 'CN46491HYB'
+    Display Product Serial Number: ...
 Checksum: 0x91
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 79 32 00 00 00 00 '........".y2....'
+  31 1a 01 04 a5 33 1d 78 22 c0 75 a7 56 52 9b 26 '1....3.x".u.VR.&'
+  0f 50 54 21 08 00 d1 c0 a9 c0 81 c0 b3 00 95 00 '.PT!............'
+  81 00 81 80 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 32 3c 1e 'E............2<.'
+  50 11 01 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'P...      .....H'
+  50 20 45 32 33 32 0a 20 20 20 20 20 00 00 00 ff 'P E232.     ....'
+  00 43 4e 34 36 34 39 31 48 59 42 0a 20 20 00 91 '.CN46491HYB.  ..'
+Checksum: 0x91
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

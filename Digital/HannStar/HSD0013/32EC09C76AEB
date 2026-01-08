@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022641300e1020000
-0311010380261e78eac556a4544a9d24
-144f54bfef80818081c08140714f6146
-010101010101302a009851002a403070
-1300782d1100001e000000fd00384b1e
-500e000a202020202020000000ff0037
-30334848334a413030373337000000fc
-0048616e6e7347204853313931440022
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 64 13 00 e1 02 00 00
+03 11 01 03 80 26 1e 78 ea c5 56 a4 54 4a 9d 24
+14 4f 54 bf ef 80 81 80 81 c0 81 40 71 4f 61 46
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 37
+30 33 48 48 33 4a 41 30 30 37 33 37 00 00 00 fc
+00 48 61 6e 6e 73 47 20 48 53 31 39 31 44 00 22
 
 00 ff ff ff ff ff ff 00 22 64 13 00 e1 02 00 00
 03 11 01 03 80 26 1e 78 ea c5 56 a4 54 4a 9d 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HSD
     Model: 19
-    Serial Number: 737
+    Serial Number: ...
     Made in: week 3 of 2007
   Basic Display Parameters & Features:
     Digital display
@@ -69,8 +67,30 @@ Block 0, Base EDID:
                  Vfront    1 Vsync   3 Vback   38 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-80 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: '703HH3JA00737'
+    Display Product Serial Number: ...
     Display Product Name: 'HannsG HS191D'
 Checksum: 0x22
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 64 13 00 e1 02 00 00 '........"d......'
+  03 11 01 03 80 26 1e 78 ea c5 56 a4 54 4a 9d 24 '.....&.x..V.TJ.$'
+  14 4f 54 bf ef 80 81 80 81 c0 81 40 71 4f 61 46 '.OT........@qOaF'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4b 1e '..x-.........8K.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 37 'P...      .....7'
+  30 33 48 48 33 4a 41 30 30 37 33 37 00 00 00 fc '03HH3JA00737....'
+  00 48 61 6e 6e 73 47 20 48 53 31 39 31 44 00 22 '.HannsG HS191D."'
+Checksum: 0x22
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

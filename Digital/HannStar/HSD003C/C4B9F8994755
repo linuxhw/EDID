@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022643c0000000000
-281d0102801f11780edf8aa257479825
-0e393b00000001010101010101010101
-010101010101ce1d56e250001e303020
-360035ad10000019000000fe0048616e
-6e537461720a20202020000000fe0048
-5344313430484857340a2020000000fe
-0048616e6e537461723134300a200022
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 64 3c 00 00 00 00 00
+28 1d 01 02 80 1f 11 78 0e df 8a a2 57 47 98 25
+0e 39 3b 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 e2 50 00 1e 30 30 20
+36 00 35 ad 10 00 00 19 00 00 00 fe 00 48 61 6e
+6e 53 74 61 72 0a 20 20 20 20 00 00 00 fe 00 48
+53 44 31 34 30 48 48 57 34 0a 20 20 00 00 00 fe
+00 48 61 6e 6e 53 74 61 72 31 34 30 0a 20 00 22
 
 00 ff ff ff ff ff ff 00 22 64 3c 00 00 00 00 00
 28 1d 01 02 80 1f 11 78 0e df 8a a2 57 47 98 25
@@ -50,3 +48,34 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'HSD140HHW4'
     Alphanumeric Data String: 'HannStar140'
 Checksum: 0x22
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 64 3c 00 00 00 00 00 '........"d<.....'
+  28 1d 01 02 80 1f 11 78 0e df 8a a2 57 47 98 25 '(......x....WG.%'
+  0e 39 3b 00 00 00 01 01 01 01 01 01 01 01 01 01 '.9;.............'
+  01 01 01 01 01 01 ce 1d 56 e2 50 00 1e 30 30 20 '........V.P..00 '
+  36 00 35 ad 10 00 00 19 00 00 00 fe 00 48 61 6e '6.5..........Han'
+  6e 53 74 61 72 0a 20 20 20 20 00 00 00 fe 00 48 'nStar.    .....H'
+  53 44 31 34 30 48 48 57 34 0a 20 20 00 00 00 fe 'SD140HHW4.  ....'
+  00 48 61 6e 6e 53 74 61 72 31 34 30 0a 20 00 22 '.HannStar140. ."'
+Checksum: 0x22
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

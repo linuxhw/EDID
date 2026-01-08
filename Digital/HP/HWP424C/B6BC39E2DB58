@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f04c4201000000
-1d170103804626780acf74a3574cb023
-09484c00080001010101010101010101
-01010101010164190040410026301887
-3600c48e210000186419004041002630
-18873600c48e21000018000000fc0048
-5020486f72697a6f6e74616c000000fd
-003b3c1f2d08000a20202020202000d6
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 4c 42 01 00 00 00
+1d 17 01 03 80 46 26 78 0a cf 74 a3 57 4c b0 23
+09 48 4c 00 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 87
+36 00 c4 8e 21 00 00 18 64 19 00 40 41 00 26 30
+18 87 36 00 c4 8e 21 00 00 18 00 00 00 fc 00 48
+50 20 48 6f 72 69 7a 6f 6e 74 61 6c 00 00 00 fd
+00 3b 3c 1f 2d 08 00 0a 20 20 20 20 20 20 00 d6
 
 00 ff ff ff ff ff ff 00 22 f0 4c 42 01 00 00 00
 1d 17 01 03 80 46 26 78 0a cf 74 a3 57 4c b0 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 16972
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 29 of 2013
   Basic Display Parameters & Features:
     Digital display
@@ -55,4 +53,38 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 59-60 Hz V, 31-45 kHz H, max dotclock 80 MHz
 Checksum: 0xd6
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 4c 42 01 00 00 00 '........".LB....'
+  1d 17 01 03 80 46 26 78 0a cf 74 a3 57 4c b0 23 '.....F&x..t.WL.#'
+  09 48 4c 00 08 00 01 01 01 01 01 01 01 01 01 01 '.HL.............'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 87 '......d..@A.&0..'
+  36 00 c4 8e 21 00 00 18 64 19 00 40 41 00 26 30 '6...!...d..@A.&0'
+  18 87 36 00 c4 8e 21 00 00 18 00 00 00 fc 00 48 '..6...!........H'
+  50 20 48 6f 72 69 7a 6f 6e 74 61 6c 00 00 00 fd 'P Horizontal....'
+  00 3b 3c 1f 2d 08 00 0a 20 20 20 20 20 20 00 d6 '.;<.-...      ..'
+Checksum: 0xd6
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x10.
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x10.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 708x398 mm vs display size 700x380 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 708x398 mm vs display size 700x380 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 48.363 - 48.363 kHz (Monitor: 31.000 - 45.000 kHz)
+  Base EDID: The DTD max image size is 708x398mm, which is larger than the display size 700.0x380.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
