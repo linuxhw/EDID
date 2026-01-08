@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004ec109191c020000
-1113010368291a78eaf0659857519127
-215054adcf00950081808140714f0101
-0101010101019a29a0d0518422305098
-36009a001100001c000000fd00384b1f
-500e000a202020202020000000fc0031
-393039570a20202020202020000000fe
-000a2020202020202020202020200037
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4e c1 09 19 1c 02 00 00
+11 13 01 03 68 29 1a 78 ea f0 65 98 57 51 91 27
+21 50 54 ad cf 00 95 00 81 80 81 40 71 4f 01 01
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 9a 00 11 00 00 1c 00 00 00 fd 00 38 4b 1f
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 31
+39 30 39 57 0a 20 20 20 20 20 20 20 00 00 00 fe
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 37
 
 00 ff ff ff ff ff ff 00 4e c1 09 19 1c 02 00 00
 11 13 01 03 68 29 1a 78 ea f0 65 98 57 51 91 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SVA
     Model: 6409
-    Serial Number: 540
+    Serial Number: ...
     Made in: week 17 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -70,3 +68,29 @@ Block 0, Base EDID:
     Display Product Name: '1909W'
     Alphanumeric Data String: ''
 Checksum: 0x37
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4e c1 09 19 1c 02 00 00 '........N.......'
+  11 13 01 03 68 29 1a 78 ea f0 65 98 57 51 91 27 '....h).x..e.WQ.''
+  21 50 54 ad cf 00 95 00 81 80 81 40 71 4f 01 01 '!PT........@qO..'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 9a 00 11 00 00 1c 00 00 00 fd 00 38 4b 1f '6............8K.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 31 'P...      .....1'
+  39 30 39 57 0a 20 20 20 20 20 20 20 00 00 00 fe '909W.       ....'
+  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 37 '..            .7'
+Checksum: 0x37
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Empty string.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

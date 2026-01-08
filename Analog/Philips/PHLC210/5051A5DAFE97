@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c10c258090000
-1b1d0103683c22782a2125a8554f9925
-135054bfef00d1c0b300950081808140
-81c001010101023a801871382d40582c
-450056502100001e000000ff00415530
-31393237303032333932000000fc0050
-484c2032373245310a202020000000fd
-00304b1e5512000a20202020202000ab
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 10 c2 58 09 00 00
+1b 1d 01 03 68 3c 22 78 2a 21 25 a8 55 4f 99 25
+13 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 ff 00 41 55 30
+31 39 32 37 30 30 32 33 39 32 00 00 00 fc 00 50
+48 4c 20 32 37 32 45 31 0a 20 20 20 00 00 00 fd
+00 30 4b 1e 55 12 00 0a 20 20 20 20 20 20 00 ab
 
 00 ff ff ff ff ff ff 00 41 0c 10 c2 58 09 00 00
 1b 1d 01 03 68 3c 22 78 2a 21 25 a8 55 4f 99 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 49680
-    Serial Number: 2392
+    Serial Number: ...
     Made in: week 27 of 2019
   Basic Display Parameters & Features:
     Analog display
@@ -70,8 +68,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'AU01927002392'
+    Display Product Serial Number: ...
     Display Product Name: 'PHL 272E1'
     Display Range Limits:
       Monitor ranges (GTF): 48-75 Hz V, 30-85 kHz H, max dotclock 180 MHz
 Checksum: 0xab
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 10 c2 58 09 00 00 '........A...X...'
+  1b 1d 01 03 68 3c 22 78 2a 21 25 a8 55 4f 99 25 '....h<"x*!%.UO.%'
+  13 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 ff 00 41 55 30 'E.VP!........AU0'
+  31 39 32 37 30 30 32 33 39 32 00 00 00 fc 00 50 '1927002392.....P'
+  48 4c 20 32 37 32 45 31 0a 20 20 20 00 00 00 fd 'HL 272E1.   ....'
+  00 30 4b 1e 55 12 00 0a 20 20 20 20 20 20 00 ab '.0K.U...      ..'
+Checksum: 0xab
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

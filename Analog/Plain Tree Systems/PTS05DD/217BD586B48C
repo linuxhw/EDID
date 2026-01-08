@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004293dd0596560100
-030f0103081e1789e837259e584a9726
-195054bfee0001010101010101010101
-010101010101c31e0020410020301060
-130030e4100000184c1d003041002630
-1888360030e410000000000000fd003c
-4b1e3c08000a202020202020000000ff
-004636544a35313032383737303200b7
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 42 93 dd 05 96 56 01 00
+03 0f 01 03 08 1e 17 89 e8 37 25 9e 58 4a 97 26
+19 50 54 bf ee 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c3 1e 00 20 41 00 20 30 10 60
+13 00 30 e4 10 00 00 18 4c 1d 00 30 41 00 26 30
+18 88 36 00 30 e4 10 00 00 00 00 00 00 fd 00 3c
+4b 1e 3c 08 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 46 36 54 4a 35 31 30 32 38 37 37 30 32 00 b7
 
 00 ff ff ff ff ff ff 00 42 93 dd 05 96 56 01 00
 03 0f 01 03 08 1e 17 89 e8 37 25 9e 58 4a 97 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PTS
     Model: 1501
-    Serial Number: 87702
+    Serial Number: ...
     Made in: week 3 of 2005
   Basic Display Parameters & Features:
     Analog display
@@ -67,5 +65,39 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   6 Vback   29 Vpol N
     Display Range Limits:
       Monitor ranges (GTF): 60-75 Hz V, 30-60 kHz H, max dotclock 80 MHz
-    Display Product Serial Number: 'F6TJ510287702'
+    Display Product Serial Number: ...
 Checksum: 0xb7
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 42 93 dd 05 96 56 01 00 '........B....V..'
+  03 0f 01 03 08 1e 17 89 e8 37 25 9e 58 4a 97 26 '.........7%.XJ.&'
+  19 50 54 bf ee 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 c3 1e 00 20 41 00 20 30 10 60 '......... A. 0.`'
+  13 00 30 e4 10 00 00 18 4c 1d 00 30 41 00 26 30 '..0.....L..0A.&0'
+  18 88 36 00 30 e4 10 00 00 00 00 00 00 fd 00 3c '..6.0..........<'
+  4b 1e 3c 08 00 0a 20 20 20 20 20 20 00 00 00 ff 'K.<...      ....'
+  00 46 36 54 4a 35 31 30 32 38 37 37 30 32 00 b7 '.F6TJ510287702..'
+Checksum: 0xb7
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x12.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+  Missing Display Product Name.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 75.029 Hz (Monitor: 60.000 - 75.000 Hz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

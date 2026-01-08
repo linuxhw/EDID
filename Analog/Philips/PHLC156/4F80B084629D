@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c56c190050000
-051c01036e3c22782abe95ae5045a726
-0f5054bfef00d1c0b300950081808140
-81c001010101023a801871382d40582c
-450056502100001e000000fd00324c1e
-5311000a202020202020000000fc0050
-484c2032373356370a202020000000ff
-0055484231383035303031343234000d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 56 c1 90 05 00 00
+05 1c 01 03 6e 3c 22 78 2a be 95 ae 50 45 a7 26
+0f 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 fd 00 32 4c 1e
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50
+48 4c 20 32 37 33 56 37 0a 20 20 20 00 00 00 ff
+00 55 48 42 31 38 30 35 30 30 31 34 32 34 00 0d
 
 00 ff ff ff ff ff ff 00 41 0c 56 c1 90 05 00 00
 05 1c 01 03 6e 3c 22 78 2a be 95 ae 50 45 a7 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 49494
-    Serial Number: 1424
+    Serial Number: ...
     Made in: week 5 of 2018
   Basic Display Parameters & Features:
     Analog display
@@ -73,5 +71,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'PHL 273V7'
-    Display Product Serial Number: 'UHB1805001424'
+    Display Product Serial Number: ...
 Checksum: 0x0d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 56 c1 90 05 00 00 '........A.V.....'
+  05 1c 01 03 6e 3c 22 78 2a be 95 ae 50 45 a7 26 '....n<"x*...PE.&'
+  0f 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 fd 00 32 4c 1e 'E.VP!........2L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50 'S...      .....P'
+  48 4c 20 32 37 33 56 37 0a 20 20 20 00 00 00 ff 'HL 273V7.   ....'
+  00 55 48 42 31 38 30 35 30 30 31 34 32 34 00 0d '.UHB1805001424..'
+Checksum: 0x0d
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

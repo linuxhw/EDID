@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410cd2c0fe040000
-201801036e3c22782ab205a3564f9e28
-0f5054b10800d1c0b300950081c08180
-010101010101023a801871382d40582c
-450056502100001e000000ff00554b31
-31343332303031323738000000fc0050
-484c2032373356350a202020000000fd
-0038471e5311000a202020202020006c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c d2 c0 fe 04 00 00
+20 18 01 03 6e 3c 22 78 2a b2 05 a3 56 4f 9e 28
+0f 50 54 b1 08 00 d1 c0 b3 00 95 00 81 c0 81 80
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 ff 00 55 4b 31
+31 34 33 32 30 30 31 32 37 38 00 00 00 fc 00 50
+48 4c 20 32 37 33 56 35 0a 20 20 20 00 00 00 fd
+00 38 47 1e 53 11 00 0a 20 20 20 20 20 20 00 6c
 
 00 ff ff ff ff ff ff 00 41 0c d2 c0 fe 04 00 00
 20 18 01 03 6e 3c 22 78 2a b2 05 a3 56 4f 9e 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 49362
-    Serial Number: 1278
+    Serial Number: ...
     Made in: week 32 of 2014
   Basic Display Parameters & Features:
     Analog display
@@ -60,8 +58,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'UK11432001278'
+    Display Product Serial Number: ...
     Display Product Name: 'PHL 273V5'
     Display Range Limits:
       Monitor ranges (GTF): 56-71 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x6c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c d2 c0 fe 04 00 00 '........A.......'
+  20 18 01 03 6e 3c 22 78 2a b2 05 a3 56 4f 9e 28 ' ...n<"x*...VO.('
+  0f 50 54 b1 08 00 d1 c0 b3 00 95 00 81 c0 81 80 '.PT.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 ff 00 55 4b 31 'E.VP!........UK1'
+  31 34 33 32 30 30 31 32 37 38 00 00 00 fc 00 50 '1432001278.....P'
+  48 4c 20 32 37 33 56 35 0a 20 20 20 00 00 00 fd 'HL 273V5.   ....'
+  00 38 47 1e 53 11 00 0a 20 20 20 20 20 20 00 6c '.8G.S...      .l'
+Checksum: 0x6c
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

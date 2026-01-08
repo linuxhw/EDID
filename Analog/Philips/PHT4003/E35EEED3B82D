@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004114034001000000
-181c010368341d78eaf0659857519127
-215054a1080001010101010101010101
-010101010101662150b051001b304070
-36000d292100001e000000fd00383f1f
-3208000a202020202020000000fc0032
-34504854343030332f39380a000000fe
-000a20202020202020202020202000f3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 14 03 40 01 00 00 00
+18 1c 01 03 68 34 1d 78 ea f0 65 98 57 51 91 27
+21 50 54 a1 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70
+36 00 0d 29 21 00 00 1e 00 00 00 fd 00 38 3f 1f
+32 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 32
+34 50 48 54 34 30 30 33 2f 39 38 0a 00 00 00 fe
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 f3
 
 00 ff ff ff ff ff ff 00 41 14 03 40 01 00 00 00
 18 1c 01 03 68 34 1d 78 ea f0 65 98 57 51 91 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHT
     Model: 16387
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 24 of 2018
   Basic Display Parameters & Features:
     Analog display
@@ -59,3 +57,32 @@ Block 0, Base EDID:
     Display Product Name: '24PHT4003/98'
     Alphanumeric Data String: ''
 Checksum: 0xf3
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 14 03 40 01 00 00 00 '........A..@....'
+  18 1c 01 03 68 34 1d 78 ea f0 65 98 57 51 91 27 '....h4.x..e.WQ.''
+  21 50 54 a1 08 00 01 01 01 01 01 01 01 01 01 01 '!PT.............'
+  01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70 '......f!P.Q..0@p'
+  36 00 0d 29 21 00 00 1e 00 00 00 fd 00 38 3f 1f '6..)!........8?.'
+  32 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 32 '2...      .....2'
+  34 50 48 54 34 30 30 33 2f 39 38 0a 00 00 00 fe '4PHT4003/98.....'
+  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 f3 '..            ..'
+Checksum: 0xf3
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Empty string.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 56.000 - 63.000 Hz)
+    Maximum Clock: 85.500 MHz (Monitor: 80.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

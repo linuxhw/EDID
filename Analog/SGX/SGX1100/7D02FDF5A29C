@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004cf8001101010101
-130c01030e301f96e90cc9a057479b27
-12484cffff80e119e14fd119d1d9a959
-a9198199814ff295007093a04350b000
-1310da2811000018000000fd0030a01e
-7928000a202020202020000000fc0047
-444d2d4657393031310a2020000000ff
-00323731363834390a20202020200067
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c f8 00 11 01 01 01 01
+13 0c 01 03 0e 30 1f 96 e9 0c c9 a0 57 47 9b 27
+12 48 4c ff ff 80 e1 19 e1 4f d1 19 d1 d9 a9 59
+a9 19 81 99 81 4f f2 95 00 70 93 a0 43 50 b0 00
+13 10 da 28 11 00 00 18 00 00 00 fd 00 30 a0 1e
+79 28 00 0a 20 20 20 20 20 20 00 00 00 fc 00 47
+44 4d 2d 46 57 39 30 31 31 0a 20 20 00 00 00 ff
+00 32 37 31 36 38 34 39 0a 20 20 20 20 20 00 67
 
 00 ff ff ff ff ff ff 00 4c f8 00 11 01 01 01 01
 13 0c 01 03 0e 30 1f 96 e9 0c c9 a0 57 47 9b 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SGX
     Model: 4352
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 19 of 2002
   Basic Display Parameters & Features:
     Analog display
@@ -78,7 +76,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 48-160 Hz V, 30-121 kHz H, max dotclock 400 MHz
     Display Product Name: 'GDM-FW9011'
-    Display Product Serial Number: '2716849'
+    Display Product Serial Number: ...
 Checksum: 0x67
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c f8 00 11 01 01 01 01 '........L.......'
+  13 0c 01 03 0e 30 1f 96 e9 0c c9 a0 57 47 9b 27 '.....0......WG.''
+  12 48 4c ff ff 80 e1 19 e1 4f d1 19 d1 d9 a9 59 '.HL......O.....Y'
+  a9 19 81 99 81 4f f2 95 00 70 93 a0 43 50 b0 00 '.....O...p..CP..'
+  13 10 da 28 11 00 00 18 00 00 00 fd 00 30 a0 1e '...(.........0..'
+  79 28 00 0a 20 20 20 20 20 20 00 00 00 fc 00 47 'y(..      .....G'
+  44 4d 2d 46 57 39 30 31 31 0a 20 20 00 00 00 ff 'DM-FW9011.  ....'
+  00 32 37 31 36 38 34 39 0a 20 20 20 20 20 00 67 '.2716849.     .g'
+Checksum: 0x67
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

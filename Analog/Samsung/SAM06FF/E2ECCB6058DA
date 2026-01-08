@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2dff0635303030
-031501030e301b782a78f1a655489b26
-125054bfef808100814081809500b300
-a940950f714f023a801871382d40582c
-4500dd0c1100001e000000fd00384b1e
-5111000a202020202020000000fc0053
-4d4258323233350a20202020000000ff
-0048394d423130323136350a202000da
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d ff 06 35 30 30 30
+03 15 01 03 0e 30 1b 78 2a 78 f1 a6 55 48 9b 26
+12 50 54 bf ef 80 81 00 81 40 81 80 95 00 b3 00
+a9 40 95 0f 71 4f 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53
+4d 42 58 32 32 33 35 0a 20 20 20 20 00 00 00 ff
+00 48 39 4d 42 31 30 32 31 36 35 0a 20 20 00 da
 
 00 ff ff ff ff ff ff 00 4c 2d ff 06 35 30 30 30
 03 15 01 03 0e 30 1b 78 2a 78 f1 a6 55 48 9b 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 1791
-    Serial Number: 808464437
+    Serial Number: ...
     Made in: week 3 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -76,5 +74,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-81 kHz H, max dotclock 170 MHz
     Display Product Name: 'SMBX2235'
-    Display Product Serial Number: 'H9MB102165'
+    Display Product Serial Number: ...
 Checksum: 0xda
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d ff 06 35 30 30 30 '........L-..5000'
+  03 15 01 03 0e 30 1b 78 2a 78 f1 a6 55 48 9b 26 '.....0.x*x..UH.&'
+  12 50 54 bf ef 80 81 00 81 40 81 80 95 00 b3 00 '.PT......@......'
+  a9 40 95 0f 71 4f 02 3a 80 18 71 38 2d 40 58 2c '.@..qO.:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 38 4b 1e 'E............8K.'
+  51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53 'Q...      .....S'
+  4d 42 58 32 32 33 35 0a 20 20 20 20 00 00 00 ff 'MBX2235.    ....'
+  00 48 39 4d 42 31 30 32 31 36 35 0a 20 20 00 da '.H9MB102165.  ..'
+Checksum: 0xda
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

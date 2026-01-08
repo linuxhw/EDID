@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410ccdc026220000
-182001046e2917782a0cc5a45750a128
-0d5054bd4b00818081c0010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000ff005a4131
-32323234303038373432000000fc0050
-484c2031393356350a202020000000fd
-00384c1e530e000a2020202020200069
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c cd c0 26 22 00 00
+18 20 01 04 6e 29 17 78 2a 0c c5 a4 57 50 a1 28
+0d 50 54 bd 4b 00 81 80 81 c0 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 ff 00 5a 41 31
+32 32 32 34 30 30 38 37 34 32 00 00 00 fc 00 50
+48 4c 20 31 39 33 56 35 0a 20 20 20 00 00 00 fd
+00 38 4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 69
 
 00 ff ff ff ff ff ff 00 41 0c cd c0 26 22 00 00
 18 20 01 04 6e 29 17 78 2a 0c c5 a4 57 50 a1 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 49357
-    Serial Number: 8742
+    Serial Number: ...
     Made in: week 24 of 2022
   Basic Display Parameters & Features:
     Analog display
@@ -62,8 +60,39 @@ Block 0, Base EDID:
     DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
                  Hfront   70 Hsync 143 Hback  213 Hpol P
                  Vfront    3 Vsync   3 Vback   24 Vpol P
-    Display Product Serial Number: 'ZA12224008742'
+    Display Product Serial Number: ...
     Display Product Name: 'PHL 193V5'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 140 MHz
 Checksum: 0x69
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c cd c0 26 22 00 00 '........A...&"..'
+  18 20 01 04 6e 29 17 78 2a 0c c5 a4 57 50 a1 28 '. ..n).x*...WP.('
+  0d 50 54 bd 4b 00 81 80 81 c0 01 01 01 01 01 01 '.PT.K...........'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 ff 00 5a 41 31 '3............ZA1'
+  32 32 32 34 30 30 38 37 34 32 00 00 00 fc 00 50 '2224008742.....P'
+  48 4c 20 31 39 33 56 35 0a 20 20 20 00 00 00 fd 'HL 193V5.   ....'
+  00 38 4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 69 '.8L.S...      .i'
+Checksum: 0x69
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

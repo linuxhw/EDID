@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410cb4c067b30000
-1a1701036e2c19782afda5a256519e27
-0c5054bd4b00a9c0818081c001010101
-010101010101302a40c8608464301850
-1300bbf91000001e000000ff00554b34
-31333236303435393237000000fc0050
-68696c697073203230365634000000fd
-00384c1e5311000a202020202020008f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c b4 c0 67 b3 00 00
+1a 17 01 03 6e 2c 19 78 2a fd a5 a2 56 51 9e 27
+0c 50 54 bd 4b 00 a9 c0 81 80 81 c0 01 01 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 bb f9 10 00 00 1e 00 00 00 ff 00 55 4b 34
+31 33 32 36 30 34 35 39 32 37 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 32 30 36 56 34 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 8f
 
 00 ff ff ff ff ff ff 00 41 0c b4 c0 67 b3 00 00
 1a 17 01 03 6e 2c 19 78 2a fd a5 a2 56 51 9e 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 49332
-    Serial Number: 45927
+    Serial Number: ...
     Made in: week 26 of 2013
   Basic Display Parameters & Features:
     Analog display
@@ -63,8 +61,32 @@ Block 0, Base EDID:
     DTD 1:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (443 mm x 249 mm)
                  Hfront   24 Hsync  80 Hback   96 Hpol P
                  Vfront    1 Vsync   3 Vback   96 Vpol P
-    Display Product Serial Number: 'UK41326045927'
+    Display Product Serial Number: ...
     Display Product Name: 'Philips 206V4'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x8f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c b4 c0 67 b3 00 00 '........A...g...'
+  1a 17 01 03 6e 2c 19 78 2a fd a5 a2 56 51 9e 27 '....n,.x*...VQ.''
+  0c 50 54 bd 4b 00 a9 c0 81 80 81 c0 01 01 01 01 '.PT.K...........'
+  01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
+  13 00 bb f9 10 00 00 1e 00 00 00 ff 00 55 4b 34 '.............UK4'
+  31 33 32 36 30 34 35 39 32 37 00 00 00 fc 00 50 '1326045927.....P'
+  68 69 6c 69 70 73 20 32 30 36 56 34 00 00 00 fd 'hilips 206V4....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 8f '.8L.S...      ..'
+Checksum: 0x8f
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,0 +1,98 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 ad 32 02 59 d2 00 00
+13 0c 01 01 08 1e 18 64 e8 17 26 a0 61 58 9a 2e
+27 54 39 ad ce 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c3 1e 00 20 41 00 20 30 10 60
+13 00 1e 16 00 00 00 1e 64 19 00 40 41 00 26 30
+18 88 36 00 1e 16 00 00 00 18 00 00 00 fd 00 3c
+4b 1f 3c 08 00 0a 20 20 20 20 20 20 00 00 00 fe
+00 46 59 55 4a 32 35 30 30 35 33 38 34 39 00 0b
+
+00 ff ff ff ff ff ff 00 09 ad 32 02 59 d2 00 00
+13 0c 01 01 08 1e 18 64 e8 17 26 a0 61 58 9a 2e
+27 54 39 ad ce 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c3 1e 00 20 41 00 20 30 10 60
+13 00 1e 16 00 00 00 1e 64 19 00 40 41 00 26 30
+18 88 36 00 1e 16 00 00 00 18 00 00 00 fd 00 3c
+4b 1f 3c 08 00 0a 20 20 20 20 20 20 00 00 00 fe
+00 46 59 55 4a 32 35 30 30 35 33 38 34 39 00 0b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: BMM
+    Model: 562
+    Serial Number: ...
+    Made in: week 19 of 2002
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 30 cm x 24 cm
+    Gamma: 2.00
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6250, 0.3798
+    Green: 0.3447, 0.6044
+    Blue : 0.1796, 0.1542
+    White: 0.3291, 0.2246
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0a:   800x600    72.187572 Hz   4:3     48.077 kHz     50.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz (30 mm x 22 mm)
+                 Hfront   16 Hsync  96 Hback  176 Hpol P
+                 Vfront    1 Vsync   3 Vback   28 Vpol P
+    DTD 2:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (30 mm x 22 mm)
+                 Hfront   24 Hsync 136 Hback  160 Hpol N
+                 Vfront    3 Vsync   6 Vback   29 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 60-75 Hz V, 31-60 kHz H, max dotclock 80 MHz
+    Alphanumeric Data String: 'FYUJ250053849'
+Checksum: 0x0b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 ad 32 02 59 d2 00 00 '..........2.Y...'
+  13 0c 01 01 08 1e 18 64 e8 17 26 a0 61 58 9a 2e '.......d..&.aX..'
+  27 54 39 ad ce 00 01 01 01 01 01 01 01 01 01 01 ''T9.............'
+  01 01 01 01 01 01 c3 1e 00 20 41 00 20 30 10 60 '......... A. 0.`'
+  13 00 1e 16 00 00 00 1e 64 19 00 40 41 00 26 30 '........d..@A.&0'
+  18 88 36 00 1e 16 00 00 00 18 00 00 00 fd 00 3c '..6............<'
+  4b 1f 3c 08 00 0a 20 20 20 20 20 20 00 00 00 fe 'K.<...      ....'
+  00 46 59 55 4a 32 35 30 30 35 33 38 34 39 00 0b '.FYUJ250053849..'
+Checksum: 0x0b
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 30x22 mm vs display size 300x240 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 30x22 mm vs display size 300x240 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
