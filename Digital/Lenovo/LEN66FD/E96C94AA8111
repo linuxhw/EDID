@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0030aefd6600000000
-15210104b54627783aee95a3544c9926
-0f5054a54b0081c0810081809500a9c0
-b300d1c0d1004dd000a0f0703e803020
-3500b9882100001a000000fd00174c1e
-a03c010a202020202020000000fc0044
-3332752d34300a2020202020000000ff
-005552423647424b520a202020200193
-02031bf14b615f1f1312111004030201
-2309070783010000e200eaab22a0a050
-841a3030203600b9882100001a565e00
-a0a0a0295030203500b9882100001aa3
-6600a0f0701f8030203500b988210000
-1a000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000007
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae fd 66 00 00 00 00
+15 21 01 04 b5 46 27 78 3a ee 95 a3 54 4c 99 26
+0f 50 54 a5 4b 00 81 c0 81 00 81 80 95 00 a9 c0
+b3 00 d1 c0 d1 00 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 b9 88 21 00 00 1a 00 00 00 fd 00 17 4c 1e
+a0 3c 01 0a 20 20 20 20 20 20 00 00 00 fc 00 44
+33 32 75 2d 34 30 0a 20 20 20 20 20 00 00 00 ff
+00 55 52 42 36 47 42 4b 52 0a 20 20 20 20 01 93
+
+02 03 1b f1 4b 61 5f 1f 13 12 11 10 04 03 02 01
+23 09 07 07 83 01 00 00 e2 00 ea ab 22 a0 a0 50
+84 1a 30 30 20 36 00 b9 88 21 00 00 1a 56 5e 00
+a0 a0 a0 29 50 30 20 35 00 b9 88 21 00 00 1a a3
+66 00 a0 f0 70 1f 80 30 20 35 00 b9 88 21 00 00
+1a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07
 
 00 ff ff ff ff ff ff 00 30 ae fd 66 00 00 00 00
 15 21 01 04 b5 46 27 78 3a ee 95 a3 54 4c 99 26
@@ -84,7 +83,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (Bare Limits): 23-76 Hz V, 30-160 kHz H, max dotclock 600 MHz
     Display Product Name: 'D32u-40'
-    Display Product Serial Number: 'URB6GBKR'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x93
 
@@ -133,3 +132,96 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   23 Vpol N
 Checksum: 0x07  Unused space in Extension Block: 46 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae fd 66 00 00 00 00 '........0..f....'
+  15 21 01 04 b5 46 27 78 3a ee 95 a3 54 4c 99 26 '.!...F'x:...TL.&'
+  0f 50 54 a5 4b 00 81 c0 81 00 81 80 95 00 a9 c0 '.PT.K...........'
+  b3 00 d1 c0 d1 00 4d d0 00 a0 f0 70 3e 80 30 20 '......M....p>.0 '
+  35 00 b9 88 21 00 00 1a 00 00 00 fd 00 17 4c 1e '5...!.........L.'
+  a0 3c 01 0a 20 20 20 20 20 20 00 00 00 fc 00 44 '.<..      .....D'
+  33 32 75 2d 34 30 0a 20 20 20 20 20 00 00 00 ff '32u-40.     ....'
+  00 55 52 42 36 47 42 4b 52 0a 20 20 20 20 01 93 '.URB6GBKR.    ..'
+Checksum: 0x93
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Detailed Timing Descriptors:
+    DTD 5:  1440x900    59.901458 Hz  16:10    55.469 kHz     88.750000 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   17 Vpol N
+    DTD 6:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 7:  3840x2160   29.980602 Hz  16:9     65.688 kHz    262.750000 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+Checksum: 0x07  Unused space in Extension Block: 46 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 97.
+  Video Data Block: Duplicate VIC 95.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

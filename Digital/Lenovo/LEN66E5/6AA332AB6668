@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0030aee56601010101
-2020010380431c782aed55a6544aa326
-0f5054bfcf00d1c00101b300a9c09500
-818081c08100a96b00a0a0382f403020
-1808a11c2100001a000000ff00555056
-30484448590a20202020000000fd0030
-5a0f6e1f000a202020202020000000fc
-004c3239772d33300a202020202001e7
-02032cf04b10050403021f1413121101
-230907078301000067030c0010000038
-681a00000101305a00e200ca662156aa
-51001e30468f3300a11c2100001eab22
-a0a050841a3030203600a11c2100001a
-7c2e90a0601a1e4030203600a11c2100
-001ac14600a0a0381f4030201804a11c
-2100001a000000000000000000000091
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae e5 66 01 01 01 01
+20 20 01 03 80 43 1c 78 2a ed 55 a6 54 4a a3 26
+0f 50 54 bf cf 00 d1 c0 01 01 b3 00 a9 c0 95 00
+81 80 81 c0 81 00 a9 6b 00 a0 a0 38 2f 40 30 20
+18 08 a1 1c 21 00 00 1a 00 00 00 ff 00 55 50 56
+30 48 44 48 59 0a 20 20 20 20 00 00 00 fd 00 30
+5a 0f 6e 1f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 32 39 77 2d 33 30 0a 20 20 20 20 20 01 e7
+
+02 03 2c f0 4b 10 05 04 03 02 1f 14 13 12 11 01
+23 09 07 07 83 01 00 00 67 03 0c 00 10 00 00 38
+68 1a 00 00 01 01 30 5a 00 e2 00 ca 66 21 56 aa
+51 00 1e 30 46 8f 33 00 a1 1c 21 00 00 1e ab 22
+a0 a0 50 84 1a 30 30 20 36 00 a1 1c 21 00 00 1a
+7c 2e 90 a0 60 1a 1e 40 30 20 36 00 a1 1c 21 00
+00 1a c1 46 00 a0 a0 38 1f 40 30 20 18 04 a1 1c
+21 00 00 1a 00 00 00 00 00 00 00 00 00 00 00 91
 
 00 ff ff ff ff ff ff 00 30 ae e5 66 01 01 01 01
 20 20 01 03 80 43 1c 78 2a ed 55 a6 54 4a a3 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 26341
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 32 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -84,7 +83,7 @@ Block 0, Base EDID:
     DTD 1:  2560x1080   89.908790 Hz  64:27   101.327 kHz    275.610000 MHz (673 mm x 284 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront   33 Vsync   8 Vback    6 Vpol N
-    Display Product Serial Number: 'UPV0HDHY'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 48-90 Hz V, 15-110 kHz H, max dotclock 310 MHz
     Display Product Name: 'L29w-30'
@@ -147,3 +146,109 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront   17 Vsync   8 Vback    6 Vpol N
 Checksum: 0x91  Unused space in Extension Block: 11 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae e5 66 01 01 01 01 '........0..f....'
+  20 20 01 03 80 43 1c 78 2a ed 55 a6 54 4a a3 26 '  ...C.x*.U.TJ.&'
+  0f 50 54 bf cf 00 d1 c0 01 01 b3 00 a9 c0 95 00 '.PT.............'
+  81 80 81 c0 81 00 a9 6b 00 a0 a0 38 2f 40 30 20 '.......k...8/@0 '
+  18 08 a1 1c 21 00 00 1a 00 00 00 ff 00 55 50 56 '....!........UPV'
+  30 48 44 48 59 0a 20 20 20 20 00 00 00 fd 00 30 '0HDHY.    .....0'
+  5a 0f 6e 1f 00 0a 20 20 20 20 20 20 00 00 00 fc 'Z.n...      ....'
+  00 4c 32 39 77 2d 33 30 0a 20 20 20 20 20 01 e7 '.L29w-30.     ..'
+Checksum: 0xe7
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Maximum TMDS clock: 280 MHz
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 90 Hz
+    Flags 1.x: 0x00
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Detailed Timing Descriptors:
+    DTD 6:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (673 mm x 284 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    DTD 7:  1440x900    59.901458 Hz  16:10    55.469 kHz     88.750000 MHz (673 mm x 284 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   17 Vpol N
+    DTD 8:  1680x1050   59.883253 Hz  16:10    64.674 kHz    119.000000 MHz (673 mm x 284 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    DTD 9:  2560x1080   59.938714 Hz  64:27    66.592 kHz    181.130000 MHz (673 mm x 284 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront   17 Vsync   8 Vback    6 Vpol N
+Checksum: 0x91  Unused space in Extension Block: 11 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

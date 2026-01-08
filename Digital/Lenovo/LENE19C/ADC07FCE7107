@@ -1,0 +1,215 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 9c e1 01 00 00 00
+16 1f 01 04 a5 22 16 78 03 9d 25 a5 55 4b 9b 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 62 6b 00 c8 a0 40 3c 60 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 fd 00 28 3c 64
+64 1c 01 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+45 4e 2d 4b 31 32 2d 48 2d 43 0a 20 00 00 00 fe
+00 4e 45 31 36 30 51 44 4d 2d 4e 36 33 0a 01 cf
+
+02 03 23 f1 4f 4c 05 04 03 02 01 11 12 13 14 06
+07 15 16 1f 23 09 07 07 66 03 0c 00 20 00 00 83
+01 00 00 61 6b 00 c8 a0 40 3c 60 30 20 36 00 59
+d7 10 00 00 1e 70 17 00 c8 50 d0 15 20 30 20 78
+00 59 d7 10 00 00 1e 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 8b
+
+00 ff ff ff ff ff ff 00 30 ae 9c e1 01 00 00 00
+16 1f 01 04 a5 22 16 78 03 9d 25 a5 55 4b 9b 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 62 6b 00 c8 a0 40 3c 60 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 fd 00 28 3c 64
+64 1c 01 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+45 4e 2d 4b 31 32 2d 48 2d 43 0a 20 00 00 00 fe
+00 4e 45 31 36 30 51 44 4d 2d 4e 36 33 0a 01 cf
+
+02 03 23 f1 4f 4c 05 04 03 02 01 11 12 13 14 06
+07 15 16 1f 23 09 07 07 66 03 0c 00 20 00 00 83
+01 00 00 61 6b 00 c8 a0 40 3c 60 30 20 36 00 59
+d7 10 00 00 1e 70 17 00 c8 50 d0 15 20 30 20 78
+00 59 d7 10 00 00 1e 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 8b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 57756
+    Serial Number: ...
+    Made in: week 22 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6464, 0.3330
+    Green: 0.2958, 0.6064
+    Blue : 0.1445, 0.0605
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   60.000873 Hz  16:10    99.601 kHz    274.900000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  120 Hpol P
+                 Vfront    3 Vsync   6 Vback   51 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 100-100 kHz H, max dotclock 280 MHz
+    Display Product Name: 'LEN-K12-H-C'
+    Alphanumeric Data String: 'NE160QDM-N63'
+  Extension blocks: 1
+Checksum: 0xcf
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  76:  1920x1080   60.000000 Hz  64:27    67.500 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 2:  2560x1600   59.998690 Hz  16:10    99.598 kHz    274.890000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  120 Hpol P
+                 Vfront    3 Vsync   6 Vback   51 Vpol P
+    DTD 3:  1280x720    54.710581 Hz  16:9     40.541 kHz     60.000000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  120 Hpol P
+                 Vfront    7 Vsync   8 Vback    6 Vpol P
+Checksum: 0x8b  Unused space in Extension Block: 56 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 9c e1 01 00 00 00 '........0.......'
+  16 1f 01 04 a5 22 16 78 03 9d 25 a5 55 4b 9b 25 '.....".x..%.UK.%'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 62 6b 00 c8 a0 40 3c 60 30 20 '......bk...@<`0 '
+  36 00 59 d7 10 00 00 1a 00 00 00 fd 00 28 3c 64 '6.Y..........(<d'
+  64 1c 01 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'd...      .....L'
+  45 4e 2d 4b 31 32 2d 48 2d 43 0a 20 00 00 00 fe 'EN-K12-H-C. ....'
+  00 4e 45 31 36 30 51 44 4d 2d 4e 36 33 0a 01 cf '.NE160QDM-N63...'
+Checksum: 0xcf
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  76:  1920x1080   60.000000 Hz  64:27    67.500 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 4:  2560x1600   59.998690 Hz  16:10    99.598 kHz    274.890000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  120 Hpol P
+                 Vfront    3 Vsync   6 Vback   51 Vpol P
+    DTD 5:  1280x720    54.710581 Hz  16:9     40.541 kHz     60.000000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  120 Hpol P
+                 Vfront    7 Vsync   8 Vback    6 Vpol P
+Checksum: 0x8b  Unused space in Extension Block: 56 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 99.601 kHz (Monitor: 100.000 - 100.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 76.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 6.
+  Video Data Block: Duplicate VIC 7.
+  Video Data Block: Duplicate VIC 21.
+  Video Data Block: Duplicate VIC 22.
+  Video Data Block: Duplicate VIC 31.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

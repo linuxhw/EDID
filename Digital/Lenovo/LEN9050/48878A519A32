@@ -1,0 +1,87 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 50 90 00 00 00 00
+00 1c 01 04 95 22 13 78 03 8a a5 8f 56 55 93 29
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 e2 50 00 1e 30 26 16
+36 00 58 c1 10 00 00 18 00 00 00 fd 00 28 3c 4f
+4f 20 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c
+45 4e 4f 56 4f 0a 20 20 20 20 20 20 00 00 00 fe
+00 4c 45 4e 31 35 36 48 44 20 20 20 20 20 00 4c
+
+00 ff ff ff ff ff ff 00 30 ae 50 90 00 00 00 00
+00 1c 01 04 95 22 13 78 03 8a a5 8f 56 55 93 29
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ce 1d 56 e2 50 00 1e 30 26 16
+36 00 58 c1 10 00 00 18 00 00 00 fd 00 28 3c 4f
+4f 20 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c
+45 4e 4f 56 4f 0a 20 20 20 20 20 20 00 00 00 fe
+00 4c 45 4e 31 35 36 48 44 20 20 20 20 20 00 4c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 36944
+    Made in: 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5605, 0.3359
+    Green: 0.3339, 0.5761
+    Blue : 0.1621, 0.1230
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.059067 Hz 683:384   47.927 kHz     76.300000 MHz (344 mm x 193 mm)
+                 Hfront   38 Hsync  22 Hback  166 Hpol N
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 79-79 kHz H, max dotclock 320 MHz
+    Alphanumeric Data String: 'LENOVO'
+    Alphanumeric Data String: 'LEN156HD     '
+Checksum: 0x4c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 50 90 00 00 00 00 '........0.P.....'
+  00 1c 01 04 95 22 13 78 03 8a a5 8f 56 55 93 29 '.....".x....VU.)'
+  1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 ce 1d 56 e2 50 00 1e 30 26 16 '........V.P..0&.'
+  36 00 58 c1 10 00 00 18 00 00 00 fd 00 28 3c 4f '6.X..........(<O'
+  4f 20 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c 'O ..      .....L'
+  45 4e 4f 56 4f 0a 20 20 20 20 20 20 00 00 00 fe 'ENOVO.      ....'
+  00 4c 45 4e 31 35 36 48 44 20 20 20 20 20 00 4c '.LEN156HD     .L'
+Checksum: 0x4c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 47.927 - 47.927 kHz (Monitor: 79.000 - 79.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

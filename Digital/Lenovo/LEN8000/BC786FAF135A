@@ -1,0 +1,77 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 00 80 01 00 00 00
+33 18 01 03 80 30 1b 78 0a 25 65 a3 54 4f a0 27
+ab 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9e 37 80 b4 70 38 32 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 fc 00 4c 45 4e
+2d 53 34 31 33 30 2d 43 20 20 00 00 00 fd 00 3b
+3d 1e 44 0f 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 4d 32 31 35 48 54 4e 30 31 2e 31 0a 20 00 d6
+
+00 ff ff ff ff ff ff 00 30 ae 00 80 01 00 00 00
+33 18 01 03 80 30 1b 78 0a 25 65 a3 54 4f a0 27
+ab 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9e 37 80 b4 70 38 32 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 fc 00 4c 45 4e
+2d 53 34 31 33 30 2d 43 20 20 00 00 00 fd 00 3b
+3d 1e 44 0f 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 4d 32 31 35 48 54 4e 30 31 2e 31 0a 20 00 d6
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 32768
+    Serial Number: ...
+    Made in: week 51 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6367, 0.3300
+    Green: 0.3095, 0.6259
+    Blue : 0.1533, 0.6699
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.800 kHz    142.380000 MHz (477 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback   48 Hpol P
+                 Vfront    4 Vsync   5 Vback   41 Vpol P
+    Display Product Name: 'LEN-S4130-C  '
+    Display Range Limits:
+      Monitor ranges (GTF): 59-61 Hz V, 30-68 kHz H, max dotclock 150 MHz
+    Display Product Serial Number: ...
+Checksum: 0xd6
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 00 80 01 00 00 00 '........0.......'
+  33 18 01 03 80 30 1b 78 0a 25 65 a3 54 4f a0 27 '3....0.x.%e.TO.''
+  ab 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 9e 37 80 b4 70 38 32 40 58 2c '.......7..p82@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 fc 00 4c 45 4e 'E............LEN'
+  2d 53 34 31 33 30 2d 43 20 20 00 00 00 fd 00 3b '-S4130-C  .....;'
+  3d 1e 44 0f 00 0a 20 20 20 20 20 20 00 00 00 ff '=.D...      ....'
+  00 4d 32 31 35 48 54 4e 30 31 2e 31 0a 20 00 d6 '.M215HTN01.1. ..'
+Checksum: 0xd6
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

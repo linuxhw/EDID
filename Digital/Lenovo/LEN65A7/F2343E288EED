@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030aea765f70e0000
-2919010380331d782ee595a656529d27
-105054afef00d1c08180818a9500a9c0
-b300714f81c0023a801871382d40582c
-4500fd1e1100001e000000ff00333136
-31314634314733383331000000fd0032
-4b1e5311000a202020202020000000fc
-004c454e204c4932333233737741002a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae a7 65 f7 0e 00 00
+29 19 01 03 80 33 1d 78 2e e5 95 a6 56 52 9d 27
+10 50 54 af ef 00 d1 c0 81 80 81 8a 95 00 a9 c0
+b3 00 71 4f 81 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 ff 00 33 31 36
+31 31 46 34 31 47 33 38 33 31 00 00 00 fd 00 32
+4b 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 45 4e 20 4c 49 32 33 32 33 73 77 41 00 2a
 
 00 ff ff ff ff ff ff 00 30 ae a7 65 f7 0e 00 00
 29 19 01 03 80 33 1d 78 2e e5 95 a6 56 52 9d 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 26023
-    Serial Number: 3831
+    Serial Number: ...
     Made in: week 41 of 2015
   Basic Display Parameters & Features:
     Digital display
@@ -69,8 +67,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (509 mm x 286 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '31611F41G3831'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'LEN LI2323swA'
 Checksum: 0x2a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae a7 65 f7 0e 00 00 '........0..e....'
+  29 19 01 03 80 33 1d 78 2e e5 95 a6 56 52 9d 27 ')....3.x....VR.''
+  10 50 54 af ef 00 d1 c0 81 80 81 8a 95 00 a9 c0 '.PT.............'
+  b3 00 71 4f 81 c0 02 3a 80 18 71 38 2d 40 58 2c '..qO...:..q8-@X,'
+  45 00 fd 1e 11 00 00 1e 00 00 00 ff 00 33 31 36 'E............316'
+  31 31 46 34 31 47 33 38 33 31 00 00 00 fd 00 32 '11F41G3831.....2'
+  4b 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 4c 45 4e 20 4c 49 32 33 32 33 73 77 41 00 2a '.LEN LI2323swA.*'
+Checksum: 0x2a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,0 +1,90 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 51 90 00 00 00 00
+00 1f 01 04 a5 22 13 78 e3 56 60 97 5b 5a 93 29
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 98 3b 80 10 71 38 50 40 30 20
+36 00 58 c2 10 00 00 19 00 00 00 fd 00 28 3c 46
+46 0f 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c
+45 4e 4f 56 4f 0a 20 20 20 0a 20 20 00 00 00 fe
+00 4c 45 4e 31 35 36 46 48 44 20 20 20 20 00 e1
+
+00 ff ff ff ff ff ff 00 30 ae 51 90 00 00 00 00
+00 1f 01 04 a5 22 13 78 e3 56 60 97 5b 5a 93 29
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 98 3b 80 10 71 38 50 40 30 20
+36 00 58 c2 10 00 00 19 00 00 00 fd 00 28 3c 46
+46 0f 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c
+45 4e 4f 56 4f 0a 20 20 20 0a 20 20 00 00 00 fe
+00 4c 45 4e 31 35 36 46 48 44 20 20 20 20 00 e1
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 36945
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5908, 0.3564
+    Green: 0.3525, 0.5761
+    Blue : 0.1611, 0.1230
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.998742 Hz  16:9     69.599 kHz    152.560000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  192 Hpol N
+                 Vfront    3 Vsync   6 Vback   71 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 70-70 kHz H, max dotclock 150 MHz
+    Alphanumeric Data String: 'LENOVO'
+    Alphanumeric Data String: 'LEN156FHD    '
+Checksum: 0xe1
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 51 90 00 00 00 00 '........0.Q.....'
+  00 1f 01 04 a5 22 13 78 e3 56 60 97 5b 5a 93 29 '.....".x.V`.[Z.)'
+  1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 98 3b 80 10 71 38 50 40 30 20 '.......;..q8P@0 '
+  36 00 58 c2 10 00 00 19 00 00 00 fd 00 28 3c 46 '6.X..........(<F'
+  46 0f 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c 'F...      .....L'
+  45 4e 4f 56 4f 0a 20 20 20 0a 20 20 00 00 00 fe 'ENOVO.   .  ....'
+  00 4c 45 4e 31 35 36 46 48 44 20 20 20 20 00 e1 '.LEN156FHD    ..'
+Checksum: 0xe1
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 152.560 MHz (Monitor: 150.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-space after newline.
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

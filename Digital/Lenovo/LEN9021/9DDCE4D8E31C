@@ -1,0 +1,84 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 21 90 00 00 00 00
+25 1d 01 04 a5 1f 11 78 03 5f f5 96 5d 55 92 29
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c0 39 80 18 71 38 28 40 30 20
+36 00 35 ae 10 00 00 1a 00 00 00 fd 00 28 3c 43
+43 0f 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c
+45 4e 4f 56 4f 0a 20 20 20 20 20 20 00 00 00 fe
+00 4c 45 4e 31 34 30 46 48 44 20 20 20 20 00 63
+
+00 ff ff ff ff ff ff 00 30 ae 21 90 00 00 00 00
+25 1d 01 04 a5 1f 11 78 03 5f f5 96 5d 55 92 29
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c0 39 80 18 71 38 28 40 30 20
+36 00 35 ae 10 00 00 1a 00 00 00 fd 00 28 3c 43
+43 0f 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c
+45 4e 4f 56 4f 0a 20 20 20 20 20 20 00 00 00 fe
+00 4c 45 4e 31 34 30 46 48 44 20 20 20 20 00 63
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 36897
+    Made in: week 37 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5869, 0.3642
+    Green: 0.3349, 0.5732
+    Blue : 0.1630, 0.1162
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.200 kHz    147.840000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    3 Vsync   6 Vback   31 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 67-67 kHz H, max dotclock 150 MHz
+    Alphanumeric Data String: 'LENOVO'
+    Alphanumeric Data String: 'LEN140FHD    '
+Checksum: 0x63
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 21 90 00 00 00 00 '........0.!.....'
+  25 1d 01 04 a5 1f 11 78 03 5f f5 96 5d 55 92 29 '%......x._..]U.)'
+  1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 c0 39 80 18 71 38 28 40 30 20 '.......9..q8(@0 '
+  36 00 35 ae 10 00 00 1a 00 00 00 fd 00 28 3c 43 '6.5..........(<C'
+  43 0f 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c 'C...      .....L'
+  45 4e 4f 56 4f 0a 20 20 20 20 20 20 00 00 00 fe 'ENOVO.      ....'
+  00 4c 45 4e 31 34 30 46 48 44 20 20 20 20 00 63 '.LEN140FHD    .c'
+Checksum: 0x63
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

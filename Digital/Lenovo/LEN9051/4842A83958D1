@@ -1,0 +1,85 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 51 90 00 00 00 00
+1f 1c 01 04 a5 22 13 78 03 09 80 95 5c 5a 91 29
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 03 3a 80 36 71 38 1e 40 30 20
+36 00 58 c2 10 00 00 1a 00 00 00 fe 00 0a 20 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fe 00 4c
+45 4e 4f 56 4f 0a 20 20 20 20 20 20 00 00 00 fe
+00 4c 45 4e 31 35 36 46 48 44 20 20 20 20 00 9d
+
+00 ff ff ff ff ff ff 00 30 ae 51 90 00 00 00 00
+1f 1c 01 04 a5 22 13 78 03 09 80 95 5c 5a 91 29
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 03 3a 80 36 71 38 1e 40 30 20
+36 00 58 c2 10 00 00 1a 00 00 00 fe 00 0a 20 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fe 00 4c
+45 4e 4f 56 4f 0a 20 20 20 20 20 20 00 00 00 fe
+00 4c 45 4e 31 35 36 46 48 44 20 20 20 20 00 9d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 36945
+    Made in: week 31 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5820, 0.3593
+    Green: 0.3535, 0.5673
+    Blue : 0.1621, 0.1289
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.996768 Hz  16:9     66.596 kHz    148.510000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  230 Hpol P
+                 Vfront    3 Vsync   6 Vback   21 Vpol N
+    Alphanumeric Data String: ''
+    Alphanumeric Data String: 'LENOVO'
+    Alphanumeric Data String: 'LEN156FHD    '
+Checksum: 0x9d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 51 90 00 00 00 00 '........0.Q.....'
+  1f 1c 01 04 a5 22 13 78 03 09 80 95 5c 5a 91 29 '.....".x....\Z.)'
+  21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '!PT.............'
+  01 01 01 01 01 01 03 3a 80 36 71 38 1e 40 30 20 '.......:.6q8.@0 '
+  36 00 58 c2 10 00 00 1a 00 00 00 fe 00 0a 20 20 '6.X...........  '
+  20 20 20 20 20 20 20 20 20 20 00 00 00 fe 00 4c '          .....L'
+  45 4e 4f 56 4f 0a 20 20 20 20 20 20 00 00 00 fe 'ENOVO.      ....'
+  00 4c 45 4e 31 35 36 46 48 44 20 20 20 20 00 9d '.LEN156FHD    ..'
+Checksum: 0x9d
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Empty string.
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,0 +1,84 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae b1 89 00 00 00 00
+00 1e 01 04 a5 1e 13 78 02 de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8c 50 c0 a0 80 78 20 50 18 30
+3c 00 2e bc 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+45 4e 4f 56 4f 0a 20 6f 6e 0a 20 20 00 00 00 fe
+00 4c 45 4e 31 34 30 57 55 2b 20 20 20 20 00 62
+
+00 ff ff ff ff ff ff 00 30 ae b1 89 00 00 00 00
+00 1e 01 04 a5 1e 13 78 02 de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8c 50 c0 a0 80 78 20 50 18 30
+3c 00 2e bc 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+45 4e 4f 56 4f 0a 20 6f 6e 0a 20 20 00 00 00 fe
+00 4c 45 4e 31 34 30 57 55 2b 20 20 20 20 00 62
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 35249
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2240x1400   59.997672 Hz  16:10    85.917 kHz    206.200000 MHz (302 mm x 188 mm)
+                 Hfront   24 Hsync  48 Hback   88 Hpol N
+                 Vfront    3 Vsync  12 Vback   17 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LENOVO'
+    Alphanumeric Data String: 'LEN140WU+    '
+Checksum: 0x62
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae b1 89 00 00 00 00 '........0.......'
+  00 1e 01 04 a5 1e 13 78 02 de 50 a3 54 4c 99 26 '.......x..P.TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 8c 50 c0 a0 80 78 20 50 18 30 '.......P...x P.0'
+  3c 00 2e bc 10 00 00 19 00 00 00 00 00 00 00 00 '<...............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c '...............L'
+  45 4e 4f 56 4f 0a 20 6f 6e 0a 20 20 00 00 00 fe 'ENOVO. on.  ....'
+  00 4c 45 4e 31 34 30 57 55 2b 20 20 20 20 00 62 '.LEN140WU+    .b'
+Checksum: 0x62
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: Non-space after newline.
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

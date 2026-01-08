@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0034f706024e61bc00
-011b010380301b7807ee95a3544c9926
-0f5054ffff8081c0810081409500a940
-b300d1c0d100f339801871382d40582c
-4500c48e2100001a283c80a070b02340
-30203600c48e2100001e000000fc0055
-534220436170747572650a20000000fd
-0019780c7811000000000000000001bc
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 f7 06 02 4e 61 bc 00
+01 1b 01 03 80 30 1b 78 07 ee 95 a3 54 4c 99 26
+0f 50 54 ff ff 80 81 c0 81 00 81 40 95 00 a9 40
+b3 00 d1 c0 d1 00 f3 39 80 18 71 38 2d 40 58 2c
+45 00 c4 8e 21 00 00 1a 28 3c 80 a0 70 b0 23 40
+30 20 36 00 c4 8e 21 00 00 1e 00 00 00 fc 00 55
+53 42 20 43 61 70 74 75 72 65 0a 20 00 00 00 fd
+00 19 78 0c 78 11 00 00 00 00 00 00 00 00 01 bc
 
 00 ff ff ff ff ff ff 00 34 f7 06 02 4e 61 bc 00
 01 1b 01 03 80 30 1b 78 07 ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MGW
     Model: 518
-    Serial Number: 12345678
+    Serial Number: ...
     Made in: week 1 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -81,3 +79,40 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 25-120 Hz V, 12-120 kHz H, max dotclock 170 MHz
   Extension blocks: 1
 Checksum: 0xbc
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 34 f7 06 02 4e 61 bc 00 '........4...Na..'
+  01 1b 01 03 80 30 1b 78 07 ee 95 a3 54 4c 99 26 '.....0.x....TL.&'
+  0f 50 54 ff ff 80 81 c0 81 00 81 40 95 00 a9 40 '.PT........@...@'
+  b3 00 d1 c0 d1 00 f3 39 80 18 71 38 2d 40 58 2c '.......9..q8-@X,'
+  45 00 c4 8e 21 00 00 1a 28 3c 80 a0 70 b0 23 40 'E...!...(<..p.#@'
+  30 20 36 00 c4 8e 21 00 00 1e 00 00 00 fc 00 55 '0 6...!........U'
+  53 42 20 43 61 70 74 75 72 65 0a 20 00 00 00 fd 'SB Capture. ....'
+  00 19 78 0c 78 11 00 00 00 00 00 00 00 00 01 bc '..x.x...........'
+Checksum: 0xbc
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x44.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 708x398 mm vs display size 480x270 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 708x398 mm vs display size 480x270 mm.
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
+  Base EDID: The DTD max image size is 708x398mm, which is larger than the display size 480.0x270.0mm.
+
+EDID conformity: FAIL

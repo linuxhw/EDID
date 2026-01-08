@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030ae239100000000
-001e0104b51e137803d405a754489e25
-0e505400000001010101010101010101
-010101010101428640a0b00854703020
-35002dbc100000185ec940a0b0085470
-302035002dbc10000018000000fd003c
-5aaaaa34010a202020202020000000fe
-004c454e31343057515847412b200051
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 23 91 00 00 00 00
+00 1e 01 04 b5 1e 13 78 03 d4 05 a7 54 48 9e 25
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 42 86 40 a0 b0 08 54 70 30 20
+35 00 2d bc 10 00 00 18 5e c9 40 a0 b0 08 54 70
+30 20 35 00 2d bc 10 00 00 18 00 00 00 fd 00 3c
+5a aa aa 34 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4c 45 4e 31 34 30 57 51 58 47 41 2b 20 00 51
 
 00 ff ff ff ff ff ff 00 30 ae 23 91 00 00 00 00
 00 1e 01 04 b5 1e 13 78 03 d4 05 a7 54 48 9e 25
@@ -56,4 +54,36 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'LEN140WQXGA+ '
 Checksum: 0x51
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 23 91 00 00 00 00 '........0.#.....'
+  00 1e 01 04 b5 1e 13 78 03 d4 05 a7 54 48 9e 25 '.......x....TH.%'
+  0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 42 86 40 a0 b0 08 54 70 30 20 '......B.@...Tp0 '
+  35 00 2d bc 10 00 00 18 5e c9 40 a0 b0 08 54 70 '5.-.....^.@...Tp'
+  30 20 35 00 2d bc 10 00 00 18 00 00 00 fd 00 3c '0 5.-..........<'
+  5a aa aa 34 01 0a 20 20 20 20 20 20 00 00 00 fe 'Z..4..      ....'
+  00 4c 45 4e 31 34 30 57 51 58 47 41 2b 20 00 51 '.LEN140WQXGA+ .Q'
+Checksum: 0x51
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 113.059 - 169.572 kHz (Monitor: 170.000 - 170.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
