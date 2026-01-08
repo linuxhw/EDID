@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e3501952080000
-25160103802917782a7b40a259559a25
-0f5054bfee0081c0310a010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e662150b051001b30
-407036009ae61000001e000000fd0032
-4c1e3c09000a202020202020000000fc
-0031393530570a2020202020202000c1
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 50 19 52 08 00 00
+25 16 01 03 80 29 17 78 2a 7b 40 a2 59 55 9a 25
+0f 50 54 bf ee 00 81 c0 31 0a 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 9a e6 10 00 00 1e 00 00 00 fd 00 32
+4c 1e 3c 09 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 31 39 35 30 57 0a 20 20 20 20 20 20 20 00 c1
 
 00 ff ff ff ff ff ff 00 05 e3 50 19 52 08 00 00
 25 16 01 03 80 29 17 78 2a 7b 40 a2 59 55 9a 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 6480
-    Serial Number: 2130
+    Serial Number: ...
     Made in: week 37 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -70,4 +68,33 @@ Block 0, Base EDID:
     Display Product Name: '1950W'
 Checksum: 0xc1
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 50 19 52 08 00 00 '..........P.R...'
+  25 16 01 03 80 29 17 78 2a 7b 40 a2 59 55 9a 25 '%....).x*{@.YU.%'
+  0f 50 54 bf ee 00 81 c0 31 0a 01 01 01 01 01 01 '.PT.....1.......'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 66 21 50 b0 51 00 1b 30 '3.......f!P.Q..0'
+  40 70 36 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 '@p6............2'
+  4c 1e 3c 09 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.<...      ....'
+  00 31 39 35 30 57 0a 20 20 20 20 20 20 20 00 c1 '.1950W.       ..'
+Checksum: 0xc1
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 29.190 - 60.022 kHz (Monitor: 30.000 - 60.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

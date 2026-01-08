@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0005e37019dea20000
-2d180103a0291778220cc5a45750a128
-0d5054bfee0081c00101010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e662150b051001b30
-407036009ae61000001e000000fd0032
-4c1e3c09000a202020202020000000fc
-0031393730570a202020202020200176
-02031b41230907078301000067030c00
-2000002143908413e2000f011d007251
-d01e206e28550081490000001e000000
-10000000000000000000000000000000
-00001000000000000000000000000000
-00000000100000000000000000000000
-00000000000010000000000000000000
-000000000000000000000000000000cd
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 70 19 de a2 00 00
+2d 18 01 03 a0 29 17 78 22 0c c5 a4 57 50 a1 28
+0d 50 54 bf ee 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 9a e6 10 00 00 1e 00 00 00 fd 00 32
+4c 1e 3c 09 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 31 39 37 30 57 0a 20 20 20 20 20 20 20 01 76
+
+02 03 1b 41 23 09 07 07 83 01 00 00 67 03 0c 00
+20 00 00 21 43 90 84 13 e2 00 0f 01 1d 00 72 51
+d0 1e 20 6e 28 55 00 81 49 00 00 00 1e 00 00 00
+10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 cd
 
 00 ff ff ff ff ff ff 00 05 e3 70 19 de a2 00 00
 2d 18 01 03 a0 29 17 78 22 0c c5 a4 57 50 a1 28
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 6512
-    Serial Number: 41694
+    Serial Number: ...
     Made in: week 45 of 2014
   Basic Display Parameters & Features:
     Digital display
@@ -122,3 +121,90 @@ Block 1, CTA-861 Extension Block:
     Dummy Descriptor:
     Dummy Descriptor:
 Checksum: 0xcd  Unused space in Extension Block: 10 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 70 19 de a2 00 00 '..........p.....'
+  2d 18 01 03 a0 29 17 78 22 0c c5 a4 57 50 a1 28 '-....).x"...WP.('
+  0d 50 54 bf ee 00 81 c0 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 66 21 50 b0 51 00 1b 30 '3.......f!P.Q..0'
+  40 70 36 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 '@p6............2'
+  4c 1e 3c 09 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.<...      ....'
+  00 31 39 37 30 57 0a 20 20 20 20 20 20 20 01 76 '.1970W.       .v'
+Checksum: 0x76
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    Maximum TMDS clock: 165 MHz
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (129 mm x 73 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    Dummy Descriptor:
+    Dummy Descriptor:
+    Dummy Descriptor:
+    Dummy Descriptor:
+Checksum: 0xcd  Unused space in Extension Block: 10 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x20.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #3: Mismatch of image size 129x73 mm vs display size 410x230 mm.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #4: Mismatch of image size 129x73 mm vs display size 410x230 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 67.500 kHz (Monitor: 30.000 - 60.000 kHz)
+    Maximum Clock: 148.500 MHz (Monitor: 90.000 MHz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e301247fd00200
-311f0103803420782a6d75a7564ea025
-0d5054bfef00d1c0b300950081808140
-81c001010101283c80a070b023403020
-360006442100001a000000ff00474d42
-4d434841313834343437000000fc0032
-345031580a20202020202020000000fd
-00324c1e5311000a2020202020200085
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 01 24 7f d0 02 00
+31 1f 01 03 80 34 20 78 2a 6d 75 a7 56 4e a0 25
+0d 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 06 44 21 00 00 1a 00 00 00 ff 00 47 4d 42
+4d 43 48 41 31 38 34 34 34 37 00 00 00 fc 00 32
+34 50 31 58 0a 20 20 20 20 20 20 20 00 00 00 fd
+00 32 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 85
 
 00 ff ff ff ff ff ff 00 05 e3 01 24 7f d0 02 00
 31 1f 01 03 80 34 20 78 2a 6d 75 a7 56 4e a0 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 9217
-    Serial Number: 184447
+    Serial Number: ...
     Made in: week 49 of 2021
   Basic Display Parameters & Features:
     Digital display
@@ -67,8 +65,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (518 mm x 324 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   26 Vpol N
-    Display Product Serial Number: 'GMBMCHA184447'
+    Display Product Serial Number: ...
     Display Product Name: '24P1X'
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x85
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 01 24 7f d0 02 00 '...........$....'
+  31 1f 01 03 80 34 20 78 2a 6d 75 a7 56 4e a0 25 '1....4 x*mu.VN.%'
+  0d 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
+  36 00 06 44 21 00 00 1a 00 00 00 ff 00 47 4d 42 '6..D!........GMB'
+  4d 43 48 41 31 38 34 34 34 37 00 00 00 fc 00 32 'MCHA184447.....2'
+  34 50 31 58 0a 20 20 20 20 20 20 20 00 00 00 fd '4P1X.       ....'
+  00 32 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 85 '.2L.S...      ..'
+Checksum: 0x85
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

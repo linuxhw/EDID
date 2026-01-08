@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e359177e513301
-0d180103812615782a1a059e56579628
-13505401080081c08100950001010101
-0101010101011c2a405461841a303020
-35007ed71000001e000000ff00313233
-34353637383941424344000000fd000f
-f00f7f11000a202020202020000000fc
-0045313735394677750a2020202000ac
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 59 17 7e 51 33 01
+0d 18 01 03 81 26 15 78 2a 1a 05 9e 56 57 96 28
+13 50 54 01 08 00 81 c0 81 00 95 00 01 01 01 01
+01 01 01 01 01 01 1c 2a 40 54 61 84 1a 30 30 20
+35 00 7e d7 10 00 00 1e 00 00 00 ff 00 31 32 33
+34 35 36 37 38 39 41 42 43 44 00 00 00 fd 00 0f
+f0 0f 7f 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 45 31 37 35 39 46 77 75 0a 20 20 20 20 00 ac
 
 00 ff ff ff ff ff ff 00 05 e3 59 17 7e 51 33 01
 0d 18 01 03 81 26 15 78 2a 1a 05 9e 56 57 96 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 5977
-    Serial Number: 20140414
+    Serial Number: ...
     Made in: week 13 of 2014
   Basic Display Parameters & Features:
     Digital display
@@ -53,8 +51,32 @@ Block 0, Base EDID:
     DTD 1:  1600x900    60.007571 Hz  16:9     55.567 kHz    107.800000 MHz (382 mm x 215 mm)
                  Hfront   48 Hsync  32 Hback  260 Hpol P
                  Vfront    3 Vsync   5 Vback   18 Vpol P
-    Display Product Serial Number: '123456789ABCD'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 15-240 Hz V, 15-127 kHz H, max dotclock 170 MHz
     Display Product Name: 'E1759Fwu'
 Checksum: 0xac
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 59 17 7e 51 33 01 '..........Y.~Q3.'
+  0d 18 01 03 81 26 15 78 2a 1a 05 9e 56 57 96 28 '.....&.x*...VW.('
+  13 50 54 01 08 00 81 c0 81 00 95 00 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 1c 2a 40 54 61 84 1a 30 30 20 '.......*@Ta..00 '
+  35 00 7e d7 10 00 00 1e 00 00 00 ff 00 31 32 33 '5.~..........123'
+  34 35 36 37 38 39 41 42 43 44 00 00 00 fd 00 0f '456789ABCD......'
+  f0 0f 7f 11 00 0a 20 20 20 20 20 20 00 00 00 fc '......      ....'
+  00 45 31 37 35 39 46 77 75 0a 20 20 20 20 00 ac '.E1759Fwu.    ..'
+Checksum: 0xac
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

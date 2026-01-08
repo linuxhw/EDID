@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e31917290e0000
-32170104a5221b7822388fa358469d24
-174c55bfef0081800101010101010101
-010101010101302a009851002a403070
-1300540e1100001e000000ff0048414b
-44434a41303033363235000000fd0037
-4b1e530e000a202020202020000000fc
-00313731390a20202020202020200009
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 19 17 29 0e 00 00
+32 17 01 04 a5 22 1b 78 22 38 8f a3 58 46 9d 24
+17 4c 55 bf ef 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 54 0e 11 00 00 1e 00 00 00 ff 00 48 41 4b
+44 43 4a 41 30 30 33 36 32 35 00 00 00 fd 00 37
+4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 31 37 31 39 0a 20 20 20 20 20 20 20 20 00 09
 
 00 ff ff ff ff ff ff 00 05 e3 19 17 29 0e 00 00
 32 17 01 04 a5 22 1b 78 22 38 8f a3 58 46 9d 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 5913
-    Serial Number: 3625
+    Serial Number: ...
     Made in: week 50 of 2013
   Basic Display Parameters & Features:
     Digital display
@@ -64,8 +62,39 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (340 mm x 270 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: 'HAKDCJA003625'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
     Display Product Name: '1719'
 Checksum: 0x09
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 19 17 29 0e 00 00 '............)...'
+  32 17 01 04 a5 22 1b 78 22 38 8f a3 58 46 9d 24 '2....".x"8..XF.$'
+  17 4c 55 bf ef 00 81 80 01 01 01 01 01 01 01 01 '.LU.............'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 54 0e 11 00 00 1e 00 00 00 ff 00 48 41 4b '..T..........HAK'
+  44 43 4a 41 30 30 33 36 32 35 00 00 00 fd 00 37 'DCJA003625.....7'
+  4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 31 37 31 39 0a 20 20 20 20 20 20 20 20 00 09 '.1719.        ..'
+Checksum: 0x09
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
