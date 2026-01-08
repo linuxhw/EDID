@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f0e62601010101
-3011010368261e8ceeee91a3544c9926
-0f5054adef8081800101010101010101
-010101010101302a009851002a403070
-13007c2c1100001e000000fd00324d18
-530e000a202020202020000000fc0048
-50204c313931300a20202020000000ff
-00434e4b373438303737590a20200010
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 e6 26 01 01 01 01
+30 11 01 03 68 26 1e 8c ee ee 91 a3 54 4c 99 26
+0f 50 54 ad ef 80 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 7c 2c 11 00 00 1e 00 00 00 fd 00 32 4d 18
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 4c 31 39 31 30 0a 20 20 20 20 00 00 00 ff
+00 43 4e 4b 37 34 38 30 37 37 59 0a 20 20 00 10
 
 00 ff ff ff ff ff ff 00 22 f0 e6 26 01 01 01 01
 30 11 01 03 68 26 1e 8c ee ee 91 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 9958
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 48 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -68,5 +66,34 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-77 Hz V, 24-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'HP L1910'
-    Display Product Serial Number: 'CNK748077Y'
+    Display Product Serial Number: ...
 Checksum: 0x10
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 e6 26 01 01 01 01 '........"..&....'
+  30 11 01 03 68 26 1e 8c ee ee 91 a3 54 4c 99 26 '0...h&......TL.&'
+  0f 50 54 ad ef 80 81 80 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 7c 2c 11 00 00 1e 00 00 00 fd 00 32 4d 18 '..|,.........2M.'
+  53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'S...      .....H'
+  50 20 4c 31 39 31 30 0a 20 20 20 20 00 00 00 ff 'P L1910.    ....'
+  00 43 4e 4b 37 34 38 30 37 37 59 0a 20 20 00 10 '.CNK748077Y.  ..'
+Checksum: 0x10
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

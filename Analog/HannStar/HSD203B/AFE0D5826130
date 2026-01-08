@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022643b2001010101
-281301030a291778eadc55a359489e24
-115054a54a8081c00101010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000fc0048616e
-6e732e47204848313831000000fd0038
-4c1f5210000a202020202020000000ff
-00393430424633585930373036370025
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 64 3b 20 01 01 01 01
+28 13 01 03 0a 29 17 78 ea dc 55 a3 59 48 9e 24
+11 50 54 a5 4a 80 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 fc 00 48 61 6e
+6e 73 2e 47 20 48 48 31 38 31 00 00 00 fd 00 38
+4c 1f 52 10 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 39 34 30 42 46 33 58 59 30 37 30 36 37 00 25
 
 00 ff ff ff ff ff ff 00 22 64 3b 20 01 01 01 01
 28 13 01 03 0a 29 17 78 ea dc 55 a3 59 48 9e 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HSD
     Model: 8251
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 40 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -62,5 +60,29 @@ Block 0, Base EDID:
     Display Product Name: 'Hanns.G HH181'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-82 kHz H, max dotclock 160 MHz
-    Display Product Serial Number: '940BF3XY07067'
+    Display Product Serial Number: ...
 Checksum: 0x25
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 64 3b 20 01 01 01 01 '........"d; ....'
+  28 13 01 03 0a 29 17 78 ea dc 55 a3 59 48 9e 24 '(....).x..U.YH.$'
+  11 50 54 a5 4a 80 81 c0 01 01 01 01 01 01 01 01 '.PT.J...........'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 fc 00 48 61 6e '3............Han'
+  6e 73 2e 47 20 48 48 31 38 31 00 00 00 fd 00 38 'ns.G HH181.....8'
+  4c 1f 52 10 00 0a 20 20 20 20 20 20 00 00 00 ff 'L.R...      ....'
+  00 39 34 30 42 46 33 58 59 30 37 30 36 37 00 25 '.940BF3XY07067.%'
+Checksum: 0x25
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00226412638c010000
-261501030a301b782ae675a4564f9e27
-0f5054bfef80d1c0b300a94095009040
-81808140714f023a801871382d40582c
-4500dd0c1100001e000000fd00374b1e
-5512000a202020202020000000fc0048
-4c323237440a202020202020000000ff
-00313338354733425930303339360031
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 64 12 63 8c 01 00 00
+26 15 01 03 0a 30 1b 78 2a e6 75 a4 56 4f 9e 27
+0f 50 54 bf ef 80 d1 c0 b3 00 a9 40 95 00 90 40
+81 80 81 40 71 4f 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 37 4b 1e
+55 12 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+4c 32 32 37 44 0a 20 20 20 20 20 20 00 00 00 ff
+00 31 33 38 35 47 33 42 59 30 30 33 39 36 00 31
 
 00 ff ff ff ff ff ff 00 22 64 12 63 8c 01 00 00
 26 15 01 03 0a 30 1b 78 2a e6 75 a4 56 4f 9e 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HSD
     Model: 25362
-    Serial Number: 396
+    Serial Number: ...
     Made in: week 38 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -76,5 +74,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-85 kHz H, max dotclock 180 MHz
     Display Product Name: 'HL227D'
-    Display Product Serial Number: '1385G3BY00396'
+    Display Product Serial Number: ...
 Checksum: 0x31
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 64 12 63 8c 01 00 00 '........"d.c....'
+  26 15 01 03 0a 30 1b 78 2a e6 75 a4 56 4f 9e 27 '&....0.x*.u.VO.''
+  0f 50 54 bf ef 80 d1 c0 b3 00 a9 40 95 00 90 40 '.PT........@...@'
+  81 80 81 40 71 4f 02 3a 80 18 71 38 2d 40 58 2c '...@qO.:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 37 4b 1e 'E............7K.'
+  55 12 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'U...      .....H'
+  4c 32 32 37 44 0a 20 20 20 20 20 20 00 00 00 ff 'L227D.      ....'
+  00 31 33 38 35 47 33 42 59 30 30 33 39 36 00 31 '.1385G3BY00396.1'
+Checksum: 0x31
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

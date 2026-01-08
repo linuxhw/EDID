@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0021cc001549000000
-18120103681e1678eaf0659857519127
-215054adce0001010101010101010101
-01010101010164190040410026301888
-360030e410000018000000fd00384b1f
-3d08000a202020202020000000fc0048
-4e353030354c0a2020202020000000fe
-000a2020202020202020202020200004
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 cc 00 15 49 00 00 00
+18 12 01 03 68 1e 16 78 ea f0 65 98 57 51 91 27
+21 50 54 ad ce 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 30 e4 10 00 00 18 00 00 00 fd 00 38 4b 1f
+3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+4e 35 30 30 35 4c 0a 20 20 20 20 20 00 00 00 fe
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 04
 
 00 ff ff ff ff ff ff 00 21 cc 00 15 49 00 00 00
 18 12 01 03 68 1e 16 78 ea f0 65 98 57 51 91 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HNL
     Model: 5376
-    Serial Number: 73
+    Serial Number: ...
     Made in: week 24 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -65,3 +63,29 @@ Block 0, Base EDID:
     Display Product Name: 'HN5005L'
     Alphanumeric Data String: ''
 Checksum: 0x04
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 21 cc 00 15 49 00 00 00 '........!...I...'
+  18 12 01 03 68 1e 16 78 ea f0 65 98 57 51 91 27 '....h..x..e.WQ.''
+  21 50 54 ad ce 00 01 01 01 01 01 01 01 01 01 01 '!PT.............'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 30 e4 10 00 00 18 00 00 00 fd 00 38 4b 1f '6.0..........8K.'
+  3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 '=...      .....H'
+  4e 35 30 30 35 4c 0a 20 20 20 20 20 00 00 00 fe 'N5005L.     ....'
+  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 04 '..            ..'
+Checksum: 0x04
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Empty string.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

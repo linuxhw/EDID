@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00206d2a78f0070000
-2111010368221b782ac0f5a3574a9c23
-114f54bfef0081800101010101010101
-010101010101302a009851002a403070
-1300540e1100001e000000ff00373832
-3037333330323033320a000000fd0037
-4b1e530e000a202020202020000000fc
-0048434d374c46415432310a20200034
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 20 6d 2a 78 f0 07 00 00
+21 11 01 03 68 22 1b 78 2a c0 f5 a3 57 4a 9c 23
+11 4f 54 bf ef 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 54 0e 11 00 00 1e 00 00 00 ff 00 37 38 32
+30 37 33 33 30 32 30 33 32 0a 00 00 00 fd 00 37
+4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 48 43 4d 37 4c 46 41 54 32 31 0a 20 20 00 34
 
 00 ff ff ff ff ff ff 00 20 6d 2a 78 f0 07 00 00
 21 11 01 03 68 22 1b 78 2a c0 f5 a3 57 4a 9c 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HCM
     Model: 30762
-    Serial Number: 2032
+    Serial Number: ...
     Made in: week 33 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -65,8 +63,32 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (340 mm x 270 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: '782073302032'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'HCM7LFAT21'
 Checksum: 0x34
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 20 6d 2a 78 f0 07 00 00 '........ m*x....'
+  21 11 01 03 68 22 1b 78 2a c0 f5 a3 57 4a 9c 23 '!...h".x*...WJ.#'
+  11 4f 54 bf ef 00 81 80 01 01 01 01 01 01 01 01 '.OT.............'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 54 0e 11 00 00 1e 00 00 00 ff 00 37 38 32 '..T..........782'
+  30 37 33 33 30 32 30 33 32 0a 00 00 00 fd 00 37 '073302032......7'
+  4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 48 43 4d 37 4c 46 41 54 32 31 0a 20 20 00 34 '.HCM7LFAT21.  .4'
+Checksum: 0x34
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00220e853501010101
-2f1d010468301b782ab9e5a55852a127
-0f5054a10800d1c0a9c081c0b3009500
-810081800101023a801871382d40582c
-4500dd0c1100001e000000fd00323c1e
-5011000a202020202020000000fc0048
-5020563232300a2020202020000000ff
-00434e3439343730314b570a202000de
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 0e 85 35 01 01 01 01
+2f 1d 01 04 68 30 1b 78 2a b9 e5 a5 58 52 a1 27
+0f 50 54 a1 08 00 d1 c0 a9 c0 81 c0 b3 00 95 00
+81 00 81 80 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 32 3c 1e
+50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 56 32 32 30 0a 20 20 20 20 20 00 00 00 ff
+00 43 4e 34 39 34 37 30 31 4b 57 0a 20 20 00 de
 
 00 ff ff ff ff ff ff 00 22 0e 85 35 01 01 01 01
 2f 1d 01 04 68 30 1b 78 2a b9 e5 a5 58 52 a1 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HPN
     Model: 13701
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 47 of 2019
   Basic Display Parameters & Features:
     Analog display
@@ -64,7 +62,39 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-60 Hz V, 30-80 kHz H, max dotclock 170 MHz
     Display Product Name: 'HP V220'
-    Display Product Serial Number: 'CN494701KW'
+    Display Product Serial Number: ...
 Checksum: 0xde
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 0e 85 35 01 01 01 01 '........"..5....'
+  2f 1d 01 04 68 30 1b 78 2a b9 e5 a5 58 52 a1 27 '/...h0.x*...XR.''
+  0f 50 54 a1 08 00 d1 c0 a9 c0 81 c0 b3 00 95 00 '.PT.............'
+  81 00 81 80 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 32 3c 1e 'E............2<.'
+  50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'P...      .....H'
+  50 20 56 32 32 30 0a 20 20 20 20 20 00 00 00 ff 'P V220.     ....'
+  00 43 4e 34 39 34 37 30 31 4b 57 0a 20 20 00 de '.CN494701KW.  ..'
+Checksum: 0xde
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.810 - 70.082 Hz (Monitor: 50.000 - 60.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002264e06200000000
-1d1701030a2b1878ea2cc5a45650a128
-0f5054bfee80a9c09500904081808140
-81c0714f6146302a40c8608464301850
-1300b0f01000001e000000ff00313233
-34353637383930313233000000fd0037
-4c1e520f000a202020202020000000fc
-00484c3230354450420a202020200026
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 64 e0 62 00 00 00 00
+1d 17 01 03 0a 2b 18 78 ea 2c c5 a4 56 50 a1 28
+0f 50 54 bf ee 80 a9 c0 95 00 90 40 81 80 81 40
+81 c0 71 4f 61 46 30 2a 40 c8 60 84 64 30 18 50
+13 00 b0 f0 10 00 00 1e 00 00 00 ff 00 31 32 33
+34 35 36 37 38 39 30 31 32 33 00 00 00 fd 00 37
+4c 1e 52 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 48 4c 32 30 35 44 50 42 0a 20 20 20 20 00 26
 
 00 ff ff ff ff ff ff 00 22 64 e0 62 00 00 00 00
 1d 17 01 03 0a 2b 18 78 ea 2c c5 a4 56 50 a1 28
@@ -71,8 +69,32 @@ Block 0, Base EDID:
     DTD 1:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (432 mm x 240 mm)
                  Hfront   24 Hsync  80 Hback   96 Hpol P
                  Vfront    1 Vsync   3 Vback   96 Vpol P
-    Display Product Serial Number: '1234567890123'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 30-82 kHz H, max dotclock 150 MHz
     Display Product Name: 'HL205DPB'
 Checksum: 0x26
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 64 e0 62 00 00 00 00 '........"d.b....'
+  1d 17 01 03 0a 2b 18 78 ea 2c c5 a4 56 50 a1 28 '.....+.x.,..VP.('
+  0f 50 54 bf ee 80 a9 c0 95 00 90 40 81 80 81 40 '.PT........@...@'
+  81 c0 71 4f 61 46 30 2a 40 c8 60 84 64 30 18 50 '..qOaF0*@.`.d0.P'
+  13 00 b0 f0 10 00 00 1e 00 00 00 ff 00 31 32 33 '.............123'
+  34 35 36 37 38 39 30 31 32 33 00 00 00 fd 00 37 '4567890123.....7'
+  4c 1e 52 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.R...      ....'
+  00 48 4c 32 30 35 44 50 42 0a 20 20 20 20 00 26 '.HL205DPB.    .&'
+Checksum: 0x26
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

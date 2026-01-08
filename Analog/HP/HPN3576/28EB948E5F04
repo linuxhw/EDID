@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00220e763501010101
-041e010368301b782aad95a35b4ea326
-135054a10800d1c0b300a9c095008180
-810081c00101023a801871382d40582c
-4500dc0c1100001e000000fd00323c1e
-5011000a202020202020000000fc0048
-502032326d0a202020202020000000ff
-0031435230303430304e380a20200098
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 0e 76 35 01 01 01 01
+04 1e 01 03 68 30 1b 78 2a ad 95 a3 5b 4e a3 26
+13 50 54 a1 08 00 d1 c0 b3 00 a9 c0 95 00 81 80
+81 00 81 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1e 00 00 00 fd 00 32 3c 1e
+50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 32 32 6d 0a 20 20 20 20 20 20 00 00 00 ff
+00 31 43 52 30 30 34 30 30 4e 38 0a 20 20 00 98
 
 00 ff ff ff ff ff ff 00 22 0e 76 35 01 01 01 01
 04 1e 01 03 68 30 1b 78 2a ad 95 a3 5b 4e a3 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HPN
     Model: 13686
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 4 of 2020
   Basic Display Parameters & Features:
     Analog display
@@ -64,5 +62,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-60 Hz V, 30-80 kHz H, max dotclock 170 MHz
     Display Product Name: 'HP 22m'
-    Display Product Serial Number: '1CR00400N8'
+    Display Product Serial Number: ...
 Checksum: 0x98
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 0e 76 35 01 01 01 01 '........".v5....'
+  04 1e 01 03 68 30 1b 78 2a ad 95 a3 5b 4e a3 26 '....h0.x*...[N.&'
+  13 50 54 a1 08 00 d1 c0 b3 00 a9 c0 95 00 81 80 '.PT.............'
+  81 00 81 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dc 0c 11 00 00 1e 00 00 00 fd 00 32 3c 1e 'E............2<.'
+  50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'P...      .....H'
+  50 20 32 32 6d 0a 20 20 20 20 20 20 00 00 00 ff 'P 22m.      ....'
+  00 31 43 52 30 30 34 30 30 4e 38 0a 20 20 00 98 '.1CR00400N8.  ..'
+Checksum: 0x98
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.810 - 70.082 Hz (Monitor: 50.000 - 60.000 Hz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

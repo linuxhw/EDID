@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002264e52009080000
-1c1401030a3b2578eaaff6a6544c9e23
-104f54bfef80d100b300a94095009040
-81808140714f283c80a070b023403020
-360051732100001a000000ff00303238
-4c4b3351413032303537000000fd0038
-4b18500f000a202020202020000000fc
-0048483238310a202020202020200038
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 64 e5 20 09 08 00 00
+1c 14 01 03 0a 3b 25 78 ea af f6 a6 54 4c 9e 23
+10 4f 54 bf ef 80 d1 00 b3 00 a9 40 95 00 90 40
+81 80 81 40 71 4f 28 3c 80 a0 70 b0 23 40 30 20
+36 00 51 73 21 00 00 1a 00 00 00 ff 00 30 32 38
+4c 4b 33 51 41 30 32 30 35 37 00 00 00 fd 00 38
+4b 18 50 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 48 48 32 38 31 0a 20 20 20 20 20 20 20 00 38
 
 00 ff ff ff ff ff ff 00 22 64 e5 20 09 08 00 00
 1c 14 01 03 0a 3b 25 78 ea af f6 a6 54 4c 9e 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HSD
     Model: 8421
-    Serial Number: 2057
+    Serial Number: ...
     Made in: week 28 of 2010
   Basic Display Parameters & Features:
     Analog display
@@ -73,8 +71,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (593 mm x 371 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   26 Vpol N
-    Display Product Serial Number: '028LK3QA02057'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 24-80 kHz H, max dotclock 150 MHz
     Display Product Name: 'HH281'
 Checksum: 0x38
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 64 e5 20 09 08 00 00 '........"d. ....'
+  1c 14 01 03 0a 3b 25 78 ea af f6 a6 54 4c 9e 23 '.....;%x....TL.#'
+  10 4f 54 bf ef 80 d1 00 b3 00 a9 40 95 00 90 40 '.OT........@...@'
+  81 80 81 40 71 4f 28 3c 80 a0 70 b0 23 40 30 20 '...@qO(<..p.#@0 '
+  36 00 51 73 21 00 00 1a 00 00 00 ff 00 30 32 38 '6.Qs!........028'
+  4c 4b 33 51 41 30 32 30 35 37 00 00 00 fd 00 38 'LK3QA02057.....8'
+  4b 18 50 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.P...      ....'
+  00 48 48 32 38 31 0a 20 20 20 20 20 20 20 00 38 '.HH281.       .8'
+Checksum: 0x38
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 193.250 MHz (Monitor: 150.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

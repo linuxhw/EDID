@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0020b9232001010101
-20100103002115142acaa5955b4c9527
-225054a1080001010101010101010101
-010101010101401f004051201e303020
-26004bcf1000001a000000ff00353035
-3344303031303030310a000000fd003a
-3e1f3308000a202020202020000000fc
-00484544590a2020202020202020000b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 20 b9 23 20 01 01 01 01
+20 10 01 03 00 21 15 14 2a ca a5 95 5b 4c 95 27
+22 50 54 a1 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 40 1f 00 40 51 20 1e 30 30 20
+26 00 4b cf 10 00 00 1a 00 00 00 ff 00 35 30 35
+33 44 30 30 31 30 30 30 31 0a 00 00 00 fd 00 3a
+3e 1f 33 08 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 48 45 44 59 0a 20 20 20 20 20 20 20 20 00 0b
 
 00 ff ff ff ff ff ff 00 20 b9 23 20 01 01 01 01
 20 10 01 03 00 21 15 14 2a ca a5 95 5b 4c 95 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HEY
     Model: 8227
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 32 of 2006
   Basic Display Parameters & Features:
     Analog display
@@ -53,10 +51,35 @@ Block 0, Base EDID:
     DTD 1:  1280x800    60.240964 Hz  16:10    50.000 kHz     80.000000 MHz (331 mm x 207 mm)
                  Hfront   48 Hsync  32 Hback  240 Hpol P
                  Vfront    2 Vsync   6 Vback   22 Vpol N
-    Display Product Serial Number: '5053D0010001'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 58-62 Hz V, 31-51 kHz H, max dotclock 80 MHz
     Display Product Name: 'HEDY'
 Checksum: 0x0b
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 20 b9 23 20 01 01 01 01 '........ .# ....'
+  20 10 01 03 00 21 15 14 2a ca a5 95 5b 4c 95 27 ' ....!..*...[L.''
+  22 50 54 a1 08 00 01 01 01 01 01 01 01 01 01 01 '"PT.............'
+  01 01 01 01 01 01 40 1f 00 40 51 20 1e 30 30 20 '......@..@Q .00 '
+  26 00 4b cf 10 00 00 1a 00 00 00 ff 00 35 30 35 '&.K..........505'
+  33 44 30 30 31 30 30 30 31 0a 00 00 00 fd 00 3a '3D0010001......:'
+  3e 1f 33 08 00 0a 20 20 20 20 20 20 00 00 00 fc '>.3...      ....'
+  00 48 45 44 59 0a 20 20 20 20 20 20 20 20 00 0b '.HEDY.        ..'
+Checksum: 0x0b
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 58.000 - 62.000 Hz)
+    Maximum Clock: 80.000 MHz (Monitor: 80.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

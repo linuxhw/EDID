@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f0eb2601010101
-2313010368221b8ceefdb0a5564a9a24
-115054adef8081800101010101010101
-010101010101302a009851002a403070
-1300540e1100001e000000fd00324d18
-530e000a202020202020000000fc0048
-50204c313731300a20202020000000ff
-00434e43393335503350480a2020001a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 eb 26 01 01 01 01
+23 13 01 03 68 22 1b 8c ee fd b0 a5 56 4a 9a 24
+11 50 54 ad ef 80 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 54 0e 11 00 00 1e 00 00 00 fd 00 32 4d 18
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 4c 31 37 31 30 0a 20 20 20 20 00 00 00 ff
+00 43 4e 43 39 33 35 50 33 50 48 0a 20 20 00 1a
 
 00 ff ff ff ff ff ff 00 22 f0 eb 26 01 01 01 01
 23 13 01 03 68 22 1b 8c ee fd b0 a5 56 4a 9a 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 9963
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 35 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -68,5 +66,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-77 Hz V, 24-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'HP L1710'
-    Display Product Serial Number: 'CNC935P3PH'
+    Display Product Serial Number: ...
 Checksum: 0x1a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 eb 26 01 01 01 01 '........"..&....'
+  23 13 01 03 68 22 1b 8c ee fd b0 a5 56 4a 9a 24 '#...h"......VJ.$'
+  11 50 54 ad ef 80 81 80 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 54 0e 11 00 00 1e 00 00 00 fd 00 32 4d 18 '..T..........2M.'
+  53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'S...      .....H'
+  50 20 4c 31 37 31 30 0a 20 20 20 20 00 00 00 ff 'P L1710.    ....'
+  00 43 4e 43 39 33 35 50 33 50 48 0a 20 20 00 1a '.CNC935P3PH.  ..'
+Checksum: 0x1a
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

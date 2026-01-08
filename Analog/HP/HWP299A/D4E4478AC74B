@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f09a2901010101
-191c0103682c19782eec85a2544da127
-125054a10800a9c08180950081c00101
-010101010101302a40c8608464301850
-1300bbf91000001e000000fd00324c18
-5311000a202020202020000000fc0048
-50204c56323031310a202020000000ff
-00434e433832354e505a590a202000f5
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 9a 29 01 01 01 01
+19 1c 01 03 68 2c 19 78 2e ec 85 a2 54 4d a1 27
+12 50 54 a1 08 00 a9 c0 81 80 95 00 81 c0 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 bb f9 10 00 00 1e 00 00 00 fd 00 32 4c 18
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 4c 56 32 30 31 31 0a 20 20 20 00 00 00 ff
+00 43 4e 43 38 32 35 4e 50 5a 59 0a 20 20 00 f5
 
 00 ff ff ff ff ff ff 00 22 f0 9a 29 01 01 01 01
 19 1c 01 03 68 2c 19 78 2e ec 85 a2 54 4d a1 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 10650
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 25 of 2018
   Basic Display Parameters & Features:
     Analog display
@@ -62,5 +60,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 24-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'HP LV2011'
-    Display Product Serial Number: 'CNC825NPZY'
+    Display Product Serial Number: ...
 Checksum: 0xf5
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 9a 29 01 01 01 01 '........"..)....'
+  19 1c 01 03 68 2c 19 78 2e ec 85 a2 54 4d a1 27 '....h,.x....TM.''
+  12 50 54 a1 08 00 a9 c0 81 80 95 00 81 c0 01 01 '.PT.............'
+  01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
+  13 00 bb f9 10 00 00 1e 00 00 00 fd 00 32 4c 18 '.............2L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'S...      .....H'
+  50 20 4c 56 32 30 31 31 0a 20 20 20 00 00 00 ff 'P LV2011.   ....'
+  00 43 4e 43 38 32 35 4e 50 5a 59 0a 20 20 00 f5 '.CNC825NPZY.  ..'
+Checksum: 0xf5
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

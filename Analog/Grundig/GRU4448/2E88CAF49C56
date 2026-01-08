@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e55484401000000
-0115010378522e78efd46ca357499c25
-19484b27cf80950081408180818f9040
-a940010101011b2150a051001e30d088
-6504a05a0000001c0e1f008051001e30
-c0804704a05a0000001c000000fd0039
-4c414411000a202020202020000000fc
-004752554e44494720575847410a0025
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 55 48 44 01 00 00 00
+01 15 01 03 78 52 2e 78 ef d4 6c a3 57 49 9c 25
+19 48 4b 27 cf 80 95 00 81 40 81 80 81 8f 90 40
+a9 40 01 01 01 01 1b 21 50 a0 51 00 1e 30 d0 88
+65 04 a0 5a 00 00 00 1c 0e 1f 00 80 51 00 1e 30
+c0 80 47 04 a0 5a 00 00 00 1c 00 00 00 fd 00 39
+4c 41 44 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 47 52 55 4e 44 49 47 20 57 58 47 41 0a 00 25
 
 00 ff ff ff ff ff ff 00 1e 55 48 44 01 00 00 00
 01 15 01 03 78 52 2e 78 ef d4 6c a3 57 49 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GRU
     Model: 17480
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 1 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -76,3 +74,39 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 57-76 Hz V, 65-68 kHz H, max dotclock 170 MHz
     Display Product Name: 'GRUNDIG WXGA'
 Checksum: 0x25
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 55 48 44 01 00 00 00 '.........UHD....'
+  01 15 01 03 78 52 2e 78 ef d4 6c a3 57 49 9c 25 '....xR.x..l.WI.%'
+  19 48 4b 27 cf 80 95 00 81 40 81 80 81 8f 90 40 '.HK'.....@.....@'
+  a9 40 01 01 01 01 1b 21 50 a0 51 00 1e 30 d0 88 '.@.....!P.Q..0..'
+  65 04 a0 5a 00 00 00 1c 0e 1f 00 80 51 00 1e 30 'e..Z........Q..0'
+  c0 80 47 04 a0 5a 00 00 00 1c 00 00 00 fd 00 39 '..G..Z.........9'
+  4c 41 44 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'LAD...      ....'
+  00 47 52 55 4e 44 49 47 20 57 58 47 41 0a 00 25 '.GRUNDIG WXGA..%'
+Checksum: 0x25
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x17.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 160x90 mm vs display size 820x460 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 160x90 mm vs display size 820x460 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 75.062 Hz (Monitor: 57.000 - 76.000 Hz)
+    Horizontal Freq: 31.468 - 79.976 kHz (Monitor: 65.000 - 68.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

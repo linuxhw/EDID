@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002134086031060000
-0212010308291a78eab565a458499924
-115054bfef80950f8180814081c0810f
-7190904f0101c422a0a050841a303020
-36009a011100001e000000fc00583931
-5720442d7375620a2020000000fd0038
-4c1f5410000a202020202020000000ff
-00583931574238314c30313538350087
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 34 08 60 31 06 00 00
+02 12 01 03 08 29 1a 78 ea b5 65 a4 58 49 99 24
+11 50 54 bf ef 80 95 0f 81 80 81 40 81 c0 81 0f
+71 90 90 4f 01 01 c4 22 a0 a0 50 84 1a 30 30 20
+36 00 9a 01 11 00 00 1e 00 00 00 fc 00 58 39 31
+57 20 44 2d 73 75 62 0a 20 20 00 00 00 fd 00 38
+4c 1f 54 10 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 58 39 31 57 42 38 31 4c 30 31 35 38 35 00 87
 
 00 ff ff ff ff ff ff 00 21 34 08 60 31 06 00 00
 02 12 01 03 08 29 1a 78 ea b5 65 a4 58 49 99 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HIT
     Model: 24584
-    Serial Number: 1585
+    Serial Number: ...
     Made in: week 2 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -75,5 +73,34 @@ Block 0, Base EDID:
     Display Product Name: 'X91W D-sub'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-84 kHz H, max dotclock 160 MHz
-    Display Product Serial Number: 'X91WB81L01585'
+    Display Product Serial Number: ...
 Checksum: 0x87
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 21 34 08 60 31 06 00 00 '........!4.`1...'
+  02 12 01 03 08 29 1a 78 ea b5 65 a4 58 49 99 24 '.....).x..e.XI.$'
+  11 50 54 bf ef 80 95 0f 81 80 81 40 81 c0 81 0f '.PT........@....'
+  71 90 90 4f 01 01 c4 22 a0 a0 50 84 1a 30 30 20 'q..O..."..P..00 '
+  36 00 9a 01 11 00 00 1e 00 00 00 fc 00 58 39 31 '6............X91'
+  57 20 44 2d 73 75 62 0a 20 20 00 00 00 fd 00 38 'W D-sub.  .....8'
+  4c 1f 54 10 00 0a 20 20 20 20 20 20 00 00 00 ff 'L.T...      ....'
+  00 58 39 31 57 42 38 31 4c 30 31 35 38 35 00 87 '.X91WB81L01585..'
+Checksum: 0x87
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1152x921 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f0e12601010101
-1a11010368251778ee1085a058538e27
-254f54bfef00714f9500950f8180818a
-0101010101019a29a0d0518422305098
-360098ff1000001c000000ff00434e43
-373236524854560a2020000000fd0037
-4b1e530e000a202020202020000000fc
-00436f6d70617120573137710a2000c0
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 e1 26 01 01 01 01
+1a 11 01 03 68 25 17 78 ee 10 85 a0 58 53 8e 27
+25 4f 54 bf ef 00 71 4f 95 00 95 0f 81 80 81 8a
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 ff 00 43 4e 43
+37 32 36 52 48 54 56 0a 20 20 00 00 00 fd 00 37
+4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 6f 6d 70 61 71 20 57 31 37 71 0a 20 00 c0
 
 00 ff ff ff ff ff ff 00 22 f0 e1 26 01 01 01 01
 1a 11 01 03 68 25 17 78 ee 10 85 a0 58 53 8e 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 9953
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 26 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -70,8 +68,36 @@ Block 0, Base EDID:
     DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (408 mm x 255 mm)
                  Hfront   80 Hsync 152 Hback  232 Hpol N
                  Vfront    3 Vsync   6 Vback   25 Vpol P
-    Display Product Serial Number: 'CNC726RHTV'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'Compaq W17q'
 Checksum: 0xc0
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 e1 26 01 01 01 01 '........"..&....'
+  1a 11 01 03 68 25 17 78 ee 10 85 a0 58 53 8e 27 '....h%.x....XS.''
+  25 4f 54 bf ef 00 71 4f 95 00 95 0f 81 80 81 8a '%OT...qO........'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 00 00 00 ff 00 43 4e 43 '6............CNC'
+  37 32 36 52 48 54 56 0a 20 20 00 00 00 fd 00 37 '726RHTV.  .....7'
+  4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 43 6f 6d 70 61 71 20 57 31 37 71 0a 20 00 c0 '.Compaq W17q. ..'
+Checksum: 0xc0
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 408x255 mm vs display size 370x230 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 408x255mm, which is larger than the display size 370.0x230.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

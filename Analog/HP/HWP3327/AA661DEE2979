@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f0273301000000
-191e0104683c22782a1e50a756519c26
-115054a10800d1c0b300a9c095008180
-810081c00101023a801871382d40582c
-450056502100001e000000fd00323c1e
-5011000a202020202020000000fc0048
-5020323765720a2020202020000000ff
-0033434d303235303746590a2020007f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 27 33 01 00 00 00
+19 1e 01 04 68 3c 22 78 2a 1e 50 a7 56 51 9c 26
+11 50 54 a1 08 00 d1 c0 b3 00 a9 c0 95 00 81 80
+81 00 81 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 fd 00 32 3c 1e
+50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 32 37 65 72 0a 20 20 20 20 20 00 00 00 ff
+00 33 43 4d 30 32 35 30 37 46 59 0a 20 20 00 7f
 
 00 ff ff ff ff ff ff 00 22 f0 27 33 01 00 00 00
 19 1e 01 04 68 3c 22 78 2a 1e 50 a7 56 51 9c 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 13095
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 25 of 2020
   Basic Display Parameters & Features:
     Analog display
@@ -64,7 +62,39 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-60 Hz V, 30-80 kHz H, max dotclock 170 MHz
     Display Product Name: 'HP 27er'
-    Display Product Serial Number: '3CM02507FY'
+    Display Product Serial Number: ...
 Checksum: 0x7f
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 27 33 01 00 00 00 '........".'3....'
+  19 1e 01 04 68 3c 22 78 2a 1e 50 a7 56 51 9c 26 '....h<"x*.P.VQ.&'
+  11 50 54 a1 08 00 d1 c0 b3 00 a9 c0 95 00 81 80 '.PT.............'
+  81 00 81 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 fd 00 32 3c 1e 'E.VP!........2<.'
+  50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'P...      .....H'
+  50 20 32 37 65 72 0a 20 20 20 20 20 00 00 00 ff 'P 27er.     ....'
+  00 33 43 4d 30 32 35 30 37 46 59 0a 20 20 00 7f '.3CM02507FY.  ..'
+Checksum: 0x7f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.810 - 70.082 Hz (Monitor: 50.000 - 60.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

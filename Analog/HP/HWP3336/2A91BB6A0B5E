@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f0363301010101
-031b0103682a1a782a6e75a35551a027
-0c5054a1080081c08180810095000101
-0101010101019a29a0d0518422305098
-3600a3061100001c000000fd00323c1e
-460b000a202020202020000000fc0043
-6f6d70617120423230310a20000000ff
-0036434d373033305432380a20200066
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 36 33 01 01 01 01
+03 1b 01 03 68 2a 1a 78 2a 6e 75 a3 55 51 a0 27
+0c 50 54 a1 08 00 81 c0 81 80 81 00 95 00 01 01
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 a3 06 11 00 00 1c 00 00 00 fd 00 32 3c 1e
+46 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43
+6f 6d 70 61 71 20 42 32 30 31 0a 20 00 00 00 ff
+00 36 43 4d 37 30 33 30 54 32 38 0a 20 20 00 66
 
 00 ff ff ff ff ff ff 00 22 f0 36 33 01 01 01 01
 03 1b 01 03 68 2a 1a 78 2a 6e 75 a3 55 51 a0 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 13110
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 3 of 2017
   Basic Display Parameters & Features:
     Analog display
@@ -61,7 +59,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-60 Hz V, 30-70 kHz H, max dotclock 110 MHz
     Display Product Name: 'Compaq B201'
-    Display Product Serial Number: '6CM7030T28'
+    Display Product Serial Number: ...
 Checksum: 0x66
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 36 33 01 01 01 01 '........".63....'
+  03 1b 01 03 68 2a 1a 78 2a 6e 75 a3 55 51 a0 27 '....h*.x*nu.UQ.''
+  0c 50 54 a1 08 00 81 c0 81 80 81 00 95 00 01 01 '.PT.............'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 a3 06 11 00 00 1c 00 00 00 fd 00 32 3c 1e '6............2<.'
+  46 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43 'F...      .....C'
+  6f 6d 70 61 71 20 42 32 30 31 0a 20 00 00 00 ff 'ompaq B201. ....'
+  00 36 43 4d 37 30 33 30 54 32 38 0a 20 20 00 66 '.6CM7030T28.  .f'
+Checksum: 0x66
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.810 - 70.082 Hz (Monitor: 50.000 - 60.000 Hz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

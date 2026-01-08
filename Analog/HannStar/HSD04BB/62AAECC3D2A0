@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002264bb04e6010000
-2b11010368291a782af044a4534a9d24
-144f57bfef806146714f81c081809040
-904f9500950f9a29a0d0518422305098
-360098ff1000001c000000ff00373433
-48583142593030343836000000fd0037
-4b1e530e000a202020202020000000fc
-0041483139310a202020202020200086
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 64 bb 04 e6 01 00 00
+2b 11 01 03 68 29 1a 78 2a f0 44 a4 53 4a 9d 24
+14 4f 57 bf ef 80 61 46 71 4f 81 c0 81 80 90 40
+90 4f 95 00 95 0f 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 ff 00 37 34 33
+48 58 31 42 59 30 30 34 38 36 00 00 00 fd 00 37
+4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 48 31 39 31 0a 20 20 20 20 20 20 20 00 86
 
 00 ff ff ff ff ff ff 00 22 64 bb 04 e6 01 00 00
 2b 11 01 03 68 29 1a 78 2a f0 44 a4 53 4a 9d 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HSD
     Model: 1211
-    Serial Number: 486
+    Serial Number: ...
     Made in: week 43 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -73,10 +71,34 @@ Block 0, Base EDID:
     DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (408 mm x 255 mm)
                  Hfront   80 Hsync 152 Hback  232 Hpol N
                  Vfront    3 Vsync   6 Vback   25 Vpol P
-    Display Product Serial Number: '743HX1BY00486'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'AH191'
 Checksum: 0x86
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 64 bb 04 e6 01 00 00 '........"d......'
+  2b 11 01 03 68 29 1a 78 2a f0 44 a4 53 4a 9d 24 '+...h).x*.D.SJ.$'
+  14 4f 57 bf ef 80 61 46 71 4f 81 c0 81 80 90 40 '.OW...aFqO.....@'
+  90 4f 95 00 95 0f 9a 29 a0 d0 51 84 22 30 50 98 '.O.....)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 00 00 00 ff 00 37 34 33 '6............743'
+  48 58 31 42 59 30 30 34 38 36 00 00 00 fd 00 37 'HX1BY00486.....7'
+  4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 41 48 31 39 31 0a 20 20 20 20 20 20 20 00 86 '.AH191.       ..'
+Checksum: 0x86
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 156.000 MHz (Monitor: 140.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

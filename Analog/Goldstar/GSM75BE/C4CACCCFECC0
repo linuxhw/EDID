@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6dbe7501010101
-0811010301462778ead9b0a357499c25
-11494ba56e00314045406140d1c00101
-0101010101011b2150a051001e304888
-3500bc862100001c263680a070381f40
-50208500bc8621000018000000fc0033
-324c4335360a202020202020000000fd
-003c4b1d430e000a20202020202000bf
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d be 75 01 01 01 01
+08 11 01 03 01 46 27 78 ea d9 b0 a3 57 49 9c 25
+11 49 4b a5 6e 00 31 40 45 40 61 40 d1 c0 01 01
+01 01 01 01 01 01 1b 21 50 a0 51 00 1e 30 48 88
+35 00 bc 86 21 00 00 1c 26 36 80 a0 70 38 1f 40
+50 20 85 00 bc 86 21 00 00 18 00 00 00 fc 00 33
+32 4c 43 35 36 0a 20 20 20 20 20 20 00 00 00 fd
+00 3c 4b 1d 43 0e 00 0a 20 20 20 20 20 20 00 bf
 
 00 ff ff ff ff ff ff 00 1e 6d be 75 01 01 01 01
 08 11 01 03 01 46 27 78 ea d9 b0 a3 57 49 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 30142
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 8 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -70,3 +68,35 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 60-75 Hz V, 29-67 kHz H, max dotclock 140 MHz
 Checksum: 0xbf
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d be 75 01 01 01 01 '.........m.u....'
+  08 11 01 03 01 46 27 78 ea d9 b0 a3 57 49 9c 25 '.....F'x....WI.%'
+  11 49 4b a5 6e 00 31 40 45 40 61 40 d1 c0 01 01 '.IK.n.1@E@a@....'
+  01 01 01 01 01 01 1b 21 50 a0 51 00 1e 30 48 88 '.......!P.Q..0H.'
+  35 00 bc 86 21 00 00 1c 26 36 80 a0 70 38 1f 40 '5...!...&6..p8.@'
+  50 20 85 00 bc 86 21 00 00 18 00 00 00 fc 00 33 'P ....!........3'
+  32 4c 43 35 36 0a 20 20 20 20 20 20 00 00 00 fd '2LC56.      ....'
+  00 3c 4b 1d 43 0e 00 0a 20 20 20 20 20 20 00 bf '.<K.C...      ..'
+Checksum: 0xbf
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 67.500 kHz (Monitor: 29.000 - 67.000 kHz)
+    Maximum Clock: 148.500 MHz (Monitor: 140.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

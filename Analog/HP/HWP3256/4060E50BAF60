@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f0563201010101
-091a010368351e782a0565a756529c27
-0f5054210800d1c081c0a9c0b3009500
-818081000101023a801871382d40582c
-45000f282100001e000000fd00323c1e
-5011000a202020202020000000fc0048
-5020323478770a2020202020000000ff
-0036434d363039315132440a2020004f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 56 32 01 01 01 01
+09 1a 01 03 68 35 1e 78 2a 05 65 a7 56 52 9c 27
+0f 50 54 21 08 00 d1 c0 81 c0 a9 c0 b3 00 95 00
+81 80 81 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 fd 00 32 3c 1e
+50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 32 34 78 77 0a 20 20 20 20 20 00 00 00 ff
+00 36 43 4d 36 30 39 31 51 32 44 0a 20 20 00 4f
 
 00 ff ff ff ff ff ff 00 22 f0 56 32 01 01 01 01
 09 1a 01 03 68 35 1e 78 2a 05 65 a7 56 52 9c 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 12886
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 9 of 2016
   Basic Display Parameters & Features:
     Analog display
@@ -63,5 +61,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-60 Hz V, 30-80 kHz H, max dotclock 170 MHz
     Display Product Name: 'HP 24xw'
-    Display Product Serial Number: '6CM6091Q2D'
+    Display Product Serial Number: ...
 Checksum: 0x4f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 56 32 01 01 01 01 '........".V2....'
+  09 1a 01 03 68 35 1e 78 2a 05 65 a7 56 52 9c 27 '....h5.x*.e.VR.''
+  0f 50 54 21 08 00 d1 c0 81 c0 a9 c0 b3 00 95 00 '.PT!............'
+  81 80 81 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 fd 00 32 3c 1e 'E..(!........2<.'
+  50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'P...      .....H'
+  50 20 32 34 78 77 0a 20 20 20 20 20 00 00 00 ff 'P 24xw.     ....'
+  00 36 43 4d 36 30 39 31 51 32 44 0a 20 20 00 4f '.6CM6091Q2D.  .O'
+Checksum: 0x4f
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

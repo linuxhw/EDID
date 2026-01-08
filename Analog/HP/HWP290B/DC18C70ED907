@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0022f00b2901010101
-1014010368291778ee68d0a555489a26
-135054a1080081c08140818001010101
-010101010101662156aa51001e30468f
-33009dea1000001e000000fd00374b1e
-530e000a202020202020000000fc0043
-6f6d7061712053313932320a000000ff
-00434e43303136503538470a202000d4
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 f0 0b 29 01 01 01 01
+10 14 01 03 68 29 17 78 ee 68 d0 a5 55 48 9a 26
+13 50 54 a1 08 00 81 c0 81 40 81 80 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9d ea 10 00 00 1e 00 00 00 fd 00 37 4b 1e
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43
+6f 6d 70 61 71 20 53 31 39 32 32 0a 00 00 00 ff
+00 43 4e 43 30 31 36 50 35 38 47 0a 20 20 00 d4
 
 00 ff ff ff ff ff ff 00 22 f0 0b 29 01 01 01 01
 10 14 01 03 68 29 17 78 ee 68 d0 a5 55 48 9a 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HWP
     Model: 10507
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 16 of 2010
   Basic Display Parameters & Features:
     Analog display
@@ -61,5 +59,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'Compaq S1922'
-    Display Product Serial Number: 'CNC016P58G'
+    Display Product Serial Number: ...
 Checksum: 0xd4
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 f0 0b 29 01 01 01 01 '........"..)....'
+  10 14 01 03 68 29 17 78 ee 68 d0 a5 55 48 9a 26 '....h).x.h..UH.&'
+  13 50 54 a1 08 00 81 c0 81 40 81 80 01 01 01 01 '.PT......@......'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9d ea 10 00 00 1e 00 00 00 fd 00 37 4b 1e '3............7K.'
+  53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43 'S...      .....C'
+  6f 6d 70 61 71 20 53 31 39 32 32 0a 00 00 00 ff 'ompaq S1922.....'
+  00 43 4e 43 30 31 36 50 35 38 47 0a 20 20 00 d4 '.CNC016P58G.  ..'
+Checksum: 0xd4
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
