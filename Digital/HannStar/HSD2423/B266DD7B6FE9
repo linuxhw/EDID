@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002264232400000000
-33140103802917782a5ad5a7564b9b24
-135054bfee80814081c0714f61460101
-0101010181c0662156aa51001e30468f
-33009ae61000001e000000ff00303531
-41553157593034373339000000fd0038
-4b183d0b000a202020202020000000fc
-006950313931410a0a0a0a0a0a0a0052
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 64 23 24 00 00 00 00
+33 14 01 03 80 29 17 78 2a 5a d5 a7 56 4b 9b 24
+13 50 54 bf ee 80 81 40 81 c0 71 4f 61 46 01 01
+01 01 01 01 81 c0 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 ff 00 30 35 31
+41 55 31 57 59 30 34 37 33 39 00 00 00 fd 00 38
+4b 18 3d 0b 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 69 50 31 39 31 41 0a 0a 0a 0a 0a 0a 0a 00 52
 
 00 ff ff ff ff ff ff 00 22 64 23 24 00 00 00 00
 33 14 01 03 80 29 17 78 2a 5a d5 a7 56 4b 9b 24
@@ -65,8 +63,36 @@ Block 0, Base EDID:
     DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
                  Hfront   70 Hsync 143 Hback  213 Hpol P
                  Vfront    3 Vsync   3 Vback   24 Vpol P
-    Display Product Serial Number: '051AU1WY04739'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 24-61 kHz H, max dotclock 110 MHz
     Display Product Name: 'iP191A'
 Checksum: 0x52
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 64 23 24 00 00 00 00 '........"d#$....'
+  33 14 01 03 80 29 17 78 2a 5a d5 a7 56 4b 9b 24 '3....).x*Z..VK.$'
+  13 50 54 bf ee 80 81 40 81 c0 71 4f 61 46 01 01 '.PT....@..qOaF..'
+  01 01 01 01 81 c0 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 ff 00 30 35 31 '3............051'
+  41 55 31 57 59 30 34 37 33 39 00 00 00 fd 00 38 'AU1WY04739.....8'
+  4b 18 3d 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.=...      ....'
+  00 69 50 31 39 31 41 0a 0a 0a 0a 0a 0a 0a 00 52 '.iP191A........R'
+Checksum: 0x52
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: Non-space after newline.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 68.681 kHz (Monitor: 24.000 - 61.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

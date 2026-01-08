@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0026cd6153189d9800
-040e0103802b20780bd065a6554b9b24
-145054bfee80a940818f614061594540
-455931403159483f403062b0624040c0
-130098321100001e000000fd00325518
-5011000a202020202020000000fc0050
-4c483534302020200a202020000000ff
-000a20202020202020202020202000d3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cd 61 53 18 9d 98 00
+04 0e 01 03 80 2b 20 78 0b d0 65 a6 55 4b 9b 24
+14 50 54 bf ee 80 a9 40 81 8f 61 40 61 59 45 40
+45 59 31 40 31 59 48 3f 40 30 62 b0 62 40 40 c0
+13 00 98 32 11 00 00 1e 00 00 00 fd 00 32 55 18
+50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50
+4c 48 35 34 30 20 20 20 0a 20 20 20 00 00 00 ff
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 d3
 
 00 ff ff ff ff ff ff 00 26 cd 61 53 18 9d 98 00
 04 0e 01 03 80 2b 20 78 0b d0 65 a6 55 4b 9b 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IVM
     Model: 21345
-    Serial Number: 10001688
+    Serial Number: ...
     Made in: week 4 of 2004
   Basic Display Parameters & Features:
     Digital display
@@ -72,5 +70,33 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-85 Hz V, 24-80 kHz H, max dotclock 170 MHz
     Display Product Name: 'PLH540   '
-    Display Product Serial Number: ''
+    Display Product Serial Number: ...
 Checksum: 0xd3
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cd 61 53 18 9d 98 00 '........&.aS....'
+  04 0e 01 03 80 2b 20 78 0b d0 65 a6 55 4b 9b 24 '.....+ x..e.UK.$'
+  14 50 54 bf ee 80 a9 40 81 8f 61 40 61 59 45 40 '.PT....@..a@aYE@'
+  45 59 31 40 31 59 48 3f 40 30 62 b0 62 40 40 c0 'EY1@1YH?@0b.b@@.'
+  13 00 98 32 11 00 00 1e 00 00 00 fd 00 32 55 18 '...2.........2U.'
+  50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50 'P...      .....P'
+  4c 48 35 34 30 20 20 20 0a 20 20 20 00 00 00 ff 'LH540   .   ....'
+  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 d3 '..            ..'
+Checksum: 0xd3
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 408x306 mm vs display size 430x320 mm.
+  Display Product Name: One or more trailing spaces.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

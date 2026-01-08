@@ -1,0 +1,81 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 64 16 14 01 00 00 00
+0d 22 01 03 95 1f 11 78 0a cd 80 99 54 49 84 26
+25 4e 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3e 1c 56 a0 50 00 16 30 30 20
+36 00 35 ae 10 00 00 1a d4 12 56 a0 50 00 16 30
+30 20 36 00 35 ae 10 00 00 1a 00 00 00 fe 00 48
+53 44 20 31 34 20 48 44 0a 20 20 20 00 00 00 fe
+00 57 4a 48 44 31 34 31 30 30 35 41 31 30 00 ea
+
+00 ff ff ff ff ff ff 00 22 64 16 14 01 00 00 00
+0d 22 01 03 95 1f 11 78 0a cd 80 99 54 49 84 26
+25 4e 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3e 1c 56 a0 50 00 16 30 30 20
+36 00 35 ae 10 00 00 1a d4 12 56 a0 50 00 16 30
+30 20 36 00 35 ae 10 00 00 1a 00 00 00 fe 00 48
+53 44 20 31 34 20 48 44 0a 20 20 20 00 00 00 fe
+00 57 4a 48 44 31 34 31 30 30 35 41 31 30 00 ea
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: HSD
+    Model: 5142
+    Serial Number: ...
+    Made in: week 13 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6005, 0.3281
+    Green: 0.2880, 0.5166
+    Blue : 0.1503, 0.1445
+    White: 0.3046, 0.3242
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.973124 Hz 683:384   47.379 kHz     72.300000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   13 Vpol N
+    DTD 2:  1366x768    39.982083 Hz 683:384   31.586 kHz     48.200000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   13 Vpol N
+    Alphanumeric Data String: 'HSD 14 HD'
+    Alphanumeric Data String: 'WJHD141005A10'
+Checksum: 0xea
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 64 16 14 01 00 00 00 '........"d......'
+  0d 22 01 03 95 1f 11 78 0a cd 80 99 54 49 84 26 '.".....x....TI.&'
+  25 4e 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '%NS.............'
+  01 01 01 01 01 01 3e 1c 56 a0 50 00 16 30 30 20 '......>.V.P..00 '
+  36 00 35 ae 10 00 00 1a d4 12 56 a0 50 00 16 30 '6.5.......V.P..0'
+  30 20 36 00 35 ae 10 00 00 1a 00 00 00 fe 00 48 '0 6.5..........H'
+  53 44 20 31 34 20 48 44 0a 20 20 20 00 00 00 fe 'SD 14 HD.   ....'
+  00 57 4a 48 44 31 34 31 30 30 35 41 31 30 00 ea '.WJHD141005A10..'
+Checksum: 0xea
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x14.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

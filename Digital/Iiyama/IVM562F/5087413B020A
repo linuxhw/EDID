@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0026cd2f5698070000
-2d1a010380301b782a0655a55551a128
-0f5054bf4f00d1c081809500b3008140
-714f950f0101023a801871382d40582c
-4500dd0c1100001e000000fd00374c1e
-5311000a202020202020000000ff0031
-313333375636423031393434000000fc
-00504c323238300a2020202020200073
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cd 2f 56 98 07 00 00
+2d 1a 01 03 80 30 1b 78 2a 06 55 a5 55 51 a1 28
+0f 50 54 bf 4f 00 d1 c0 81 80 95 00 b3 00 81 40
+71 4f 95 0f 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 37 4c 1e
+53 11 00 0a 20 20 20 20 20 20 00 00 00 ff 00 31
+31 33 33 37 56 36 42 30 31 39 34 34 00 00 00 fc
+00 50 4c 32 32 38 30 0a 20 20 20 20 20 20 00 73
 
 00 ff ff ff ff ff ff 00 26 cd 2f 56 98 07 00 00
 2d 1a 01 03 80 30 1b 78 2a 06 55 a5 55 51 a1 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IVM
     Model: 22063
-    Serial Number: 1944
+    Serial Number: ...
     Made in: week 45 of 2016
   Basic Display Parameters & Features:
     Digital display
@@ -68,6 +66,30 @@ Block 0, Base EDID:
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
-    Display Product Serial Number: '11337V6B01944'
+    Display Product Serial Number: ...
     Display Product Name: 'PL2280'
 Checksum: 0x73
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cd 2f 56 98 07 00 00 '........&./V....'
+  2d 1a 01 03 80 30 1b 78 2a 06 55 a5 55 51 a1 28 '-....0.x*.U.UQ.('
+  0f 50 54 bf 4f 00 d1 c0 81 80 95 00 b3 00 81 40 '.PT.O..........@'
+  71 4f 95 0f 01 01 02 3a 80 18 71 38 2d 40 58 2c 'qO.....:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 37 4c 1e 'E............7L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 ff 00 31 'S...      .....1'
+  31 33 33 37 56 36 42 30 31 39 34 34 00 00 00 fc '1337V6B01944....'
+  00 50 4c 32 32 38 30 0a 20 20 20 20 20 20 00 73 '.PL2280.      .s'
+Checksum: 0x73
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

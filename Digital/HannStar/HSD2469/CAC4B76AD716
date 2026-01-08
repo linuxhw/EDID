@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002264692401010101
-2a110103802f1e78eedc55a359489e24
-115054bfef80714fa9409040904f8180
-81400101010121399030621a1c4068b0
-3600da291100001c000000fd00384c18
-5e15000a202020202020000000ff0037
-34324d4a3359593031343032000000fc
-0048616e6e732e472048693232310021
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 64 69 24 01 01 01 01
+2a 11 01 03 80 2f 1e 78 ee dc 55 a3 59 48 9e 24
+11 50 54 bf ef 80 71 4f a9 40 90 40 90 4f 81 80
+81 40 01 01 01 01 21 39 90 30 62 1a 1c 40 68 b0
+36 00 da 29 11 00 00 1c 00 00 00 fd 00 38 4c 18
+5e 15 00 0a 20 20 20 20 20 20 00 00 00 ff 00 37
+34 32 4d 4a 33 59 59 30 31 34 30 32 00 00 00 fc
+00 48 61 6e 6e 73 2e 47 20 48 69 32 32 31 00 21
 
 00 ff ff ff ff ff ff 00 22 64 69 24 01 01 01 01
 2a 11 01 03 80 2f 1e 78 ee dc 55 a3 59 48 9e 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HSD
     Model: 9321
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 42 of 2007
   Basic Display Parameters & Features:
     Digital display
@@ -71,8 +69,32 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   6 Vback   19 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 24-94 kHz H, max dotclock 210 MHz
-    Display Product Serial Number: '742MJ3YY01402'
+    Display Product Serial Number: ...
     Display Product Name: 'Hanns.G Hi221'
 Checksum: 0x21
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 64 69 24 01 01 01 01 '........"di$....'
+  2a 11 01 03 80 2f 1e 78 ee dc 55 a3 59 48 9e 24 '*..../.x..U.YH.$'
+  11 50 54 bf ef 80 71 4f a9 40 90 40 90 4f 81 80 '.PT...qO.@.@.O..'
+  81 40 01 01 01 01 21 39 90 30 62 1a 1c 40 68 b0 '.@....!9.0b..@h.'
+  36 00 da 29 11 00 00 1c 00 00 00 fd 00 38 4c 18 '6..).........8L.'
+  5e 15 00 0a 20 20 20 20 20 20 00 00 00 ff 00 37 '^...      .....7'
+  34 32 4d 4a 33 59 59 30 31 34 30 32 00 00 00 fc '42MJ3YY01402....'
+  00 48 61 6e 6e 73 2e 47 20 48 69 32 32 31 00 21 '.Hanns.G Hi221.!'
+Checksum: 0x21
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

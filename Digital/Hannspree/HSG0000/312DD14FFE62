@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002267000001010101
-0019010380301b782aad45a35752a127
-0d5054bfef80b300a9c0950090408180
-010101010101023a801871382d40582c
-4500dd0c1100001e000000ff00313233
-34353637383930313233000000fd0038
-4b1e5211000a202020202020000000fc
-00484c323235444e420a2020202000c3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 67 00 00 01 01 01 01
+00 19 01 03 80 30 1b 78 2a ad 45 a3 57 52 a1 27
+0d 50 54 bf ef 80 b3 00 a9 c0 95 00 90 40 81 80
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 31 32 33
+34 35 36 37 38 39 30 31 32 33 00 00 00 fd 00 38
+4b 1e 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 48 4c 32 32 35 44 4e 42 0a 20 20 20 20 00 c3
 
 00 ff ff ff ff ff ff 00 22 67 00 00 01 01 01 01
 00 19 01 03 80 30 1b 78 2a ad 45 a3 57 52 a1 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HSG
     Model: 0
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: 2015
   Basic Display Parameters & Features:
     Digital display
@@ -67,8 +65,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '1234567890123'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-82 kHz H, max dotclock 170 MHz
     Display Product Name: 'HL225DNB'
 Checksum: 0xc3
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 67 00 00 01 01 01 01 '........"g......'
+  00 19 01 03 80 30 1b 78 2a ad 45 a3 57 52 a1 27 '.....0.x*.E.WR.''
+  0d 50 54 bf ef 80 b3 00 a9 c0 95 00 90 40 81 80 '.PT..........@..'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 31 32 33 'E............123'
+  34 35 36 37 38 39 30 31 32 33 00 00 00 fd 00 38 '4567890123.....8'
+  4b 1e 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
+  00 48 4c 32 32 35 44 4e 42 0a 20 20 20 20 00 c3 '.HL225DNB.    ..'
+Checksum: 0xc3
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002264b6040c590000
-32150103801b0f780a6845975a528c27
-19505400000001010101010101010101
-010101010101161c5678500026303042
-68000e9610000019000000fe00000000
-00000000000000000000000000fc0048
-5344313231504857310a202000000010
-000a20202020202020202020202000bc
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 64 b6 04 0c 59 00 00
+32 15 01 03 80 1b 0f 78 0a 68 45 97 5a 52 8c 27
+19 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 16 1c 56 78 50 00 26 30 30 42
+68 00 0e 96 10 00 00 19 00 00 00 fe 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fc 00 48
+53 44 31 32 31 50 48 57 31 0a 20 20 00 00 00 10
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 bc
 
 00 ff ff ff ff ff ff 00 22 64 b6 04 0c 59 00 00
 32 15 01 03 80 1b 0f 78 0a 68 45 97 5a 52 8c 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HSD
     Model: 1206
-    Serial Number: 22796
+    Serial Number: ...
     Made in: week 50 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -50,3 +48,31 @@ Block 0, Base EDID:
     Display Product Name: 'HSD121PHW1'
     Dummy Descriptor:
 Checksum: 0xbc
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 64 b6 04 0c 59 00 00 '........"d...Y..'
+  32 15 01 03 80 1b 0f 78 0a 68 45 97 5a 52 8c 27 '2......x.hE.ZR.''
+  19 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 16 1c 56 78 50 00 26 30 30 42 '........VxP.&00B'
+  68 00 0e 96 10 00 00 19 00 00 00 fe 00 00 00 00 'h...............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fc 00 48 '...............H'
+  53 44 31 32 31 50 48 57 31 0a 20 20 00 00 00 10 'SD121PHW1.  ....'
+  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 bc '..            ..'
+Checksum: 0xbc
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

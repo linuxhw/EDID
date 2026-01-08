@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0025e3301301000000
-0e200104a51d1178e30cf5ae523cb923
-0c5054230800714081c0814081809500
-a9c0b300d1c01f3780b470382040582c
-450026a51000001e000000ff00444131
-46433143313130303937000000fd0030
-3e54541e010a202020202020000000fc
-0031334131460a202020202020200138
-02031fd24c9002030405010000000000
-00230907078301000065030c00100002
-3a801871382d40582c450026a5100000
-1e4a23a0a0508429303020350026a510
-00001e00000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000d9
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 25 e3 30 13 01 00 00 00
+0e 20 01 04 a5 1d 11 78 e3 0c f5 ae 52 3c b9 23
+0c 50 54 23 08 00 71 40 81 c0 81 40 81 80 95 00
+a9 c0 b3 00 d1 c0 1f 37 80 b4 70 38 20 40 58 2c
+45 00 26 a5 10 00 00 1e 00 00 00 ff 00 44 41 31
+46 43 31 43 31 31 30 30 39 37 00 00 00 fd 00 30
+3e 54 54 1e 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 31 33 41 31 46 0a 20 20 20 20 20 20 20 01 38
+
+02 03 1f d2 4c 90 02 03 04 05 01 00 00 00 00 00
+00 23 09 07 07 83 01 00 00 65 03 0c 00 10 00 02
+3a 80 18 71 38 2d 40 58 2c 45 00 26 a5 10 00 00
+1e 4a 23 a0 a0 50 84 29 30 30 20 35 00 26 a5 10
+00 00 1e 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 d9
 
 00 ff ff ff ff ff ff 00 25 e3 30 13 01 00 00 00
 0e 20 01 04 a5 1d 11 78 e3 0c f5 ae 52 3c b9 23
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IOC
     Model: 4912
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 14 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -79,7 +78,7 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.427372 Hz  16:9     67.195 kHz    141.110000 MHz (294 mm x 165 mm)
                  Hfront   88 Hsync  44 Hback   48 Hpol P
                  Vfront    4 Vsync   5 Vback   23 Vpol P
-    Display Product Serial Number: 'DA1FC1C110097'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (Bare Limits): 48-62 Hz V, 84-84 kHz H, max dotclock 300 MHz
     Display Product Name: '13A1F'
@@ -119,4 +118,85 @@ Block 1, CTA-861 Extension Block:
                  Vfront    3 Vsync   5 Vback   33 Vpol P
 Checksum: 0xd9  Unused space in Extension Block: 60 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 25 e3 30 13 01 00 00 00 '........%.0.....'
+  0e 20 01 04 a5 1d 11 78 e3 0c f5 ae 52 3c b9 23 '. .....x....R<.#'
+  0c 50 54 23 08 00 71 40 81 c0 81 40 81 80 95 00 '.PT#..q@...@....'
+  a9 c0 b3 00 d1 c0 1f 37 80 b4 70 38 20 40 58 2c '.......7..p8 @X,'
+  45 00 26 a5 10 00 00 1e 00 00 00 ff 00 44 41 31 'E.&..........DA1'
+  46 43 31 43 31 31 30 30 39 37 00 00 00 fd 00 30 'FC1C110097.....0'
+  3e 54 54 1e 01 0a 20 20 20 20 20 20 00 00 00 fc '>TT...      ....'
+  00 31 33 41 31 46 0a 20 20 20 20 20 20 20 01 38 '.13A1F.       .8'
+Checksum: 0x38
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 4:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (294 mm x 165 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 5:  1440x900    60.002657 Hz  16:10    56.462 kHz     90.340000 MHz (294 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+Checksum: 0xd9  Unused space in Extension Block: 60 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 67.500 kHz (Monitor: 84.000 - 84.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

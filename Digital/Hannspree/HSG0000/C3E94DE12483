@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002267000000000000
-311a0103803420782a3581a656489a24
-125054afcf008100814081809500a940
-b30001010101023a801871382d40582c
-4500dd0c1100001e2f2640a060841a30
-30203500bbf91000001c000000fd0038
-4c1f5311000a202020202020000000fc
-004850323435484a420a202020200066
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 67 00 00 00 00 00 00
+31 1a 01 03 80 34 20 78 2a 35 81 a6 56 48 9a 24
+12 50 54 af cf 00 81 00 81 40 81 80 95 00 a9 40
+b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 2f 26 40 a0 60 84 1a 30
+30 20 35 00 bb f9 10 00 00 1c 00 00 00 fd 00 38
+4c 1f 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 48 50 32 34 35 48 4a 42 0a 20 20 20 20 00 66
 
 00 ff ff ff ff ff ff 00 22 67 00 00 00 00 00 00
 31 1a 01 03 80 34 20 78 2a 35 81 a6 56 48 9a 24
@@ -71,3 +69,30 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'HP245HJB'
 Checksum: 0x66
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 67 00 00 00 00 00 00 '........"g......'
+  31 1a 01 03 80 34 20 78 2a 35 81 a6 56 48 9a 24 '1....4 x*5..VH.$'
+  12 50 54 af cf 00 81 00 81 40 81 80 95 00 a9 40 '.PT......@.....@'
+  b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 2f 26 40 a0 60 84 1a 30 'E......./&@.`..0'
+  30 20 35 00 bb f9 10 00 00 1c 00 00 00 fd 00 38 '0 5............8'
+  4c 1f 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 48 50 32 34 35 48 4a 42 0a 20 20 20 20 00 66 '.HP245HJB.    .f'
+Checksum: 0x66
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 477x268 mm vs display size 520x320 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 443x249 mm vs display size 520x320 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

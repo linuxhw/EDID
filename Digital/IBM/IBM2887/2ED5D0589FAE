@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00244d872800000000
-000f0103802115780abca59858558b28
-24505400000001010101010101010101
-0101010101011c2f90d0601a0f402030
-13004bcf10000019452790d0601a0f40
-203013004bcf100000190000000f00b3
-0a32b30a28140100320c0000000000fe
-004c503135345730322d544c313000c4
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 24 4d 87 28 00 00 00 00
+00 0f 01 03 80 21 15 78 0a bc a5 98 58 55 8b 28
+24 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1c 2f 90 d0 60 1a 0f 40 20 30
+13 00 4b cf 10 00 00 19 45 27 90 d0 60 1a 0f 40
+20 30 13 00 4b cf 10 00 00 19 00 00 00 0f 00 b3
+0a 32 b3 0a 28 14 01 00 32 0c 00 00 00 00 00 fe
+00 4c 50 31 35 34 57 30 32 2d 54 4c 31 30 00 c4
 
 00 ff ff ff ff ff ff 00 24 4d 87 28 00 00 00 00
 00 0f 01 03 80 21 15 78 0a bc a5 98 58 55 8b 28
@@ -51,3 +49,30 @@ Block 0, Base EDID:
     Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 b3 0a 32 b3 0a 28 14 01 00 32 0c 00 00 '.....2..(...2...'
     Alphanumeric Data String: 'LP154W02-TL10'
 Checksum: 0xc4
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 24 4d 87 28 00 00 00 00 '........$M.(....'
+  00 0f 01 03 80 21 15 78 0a bc a5 98 58 55 8b 28 '.....!.x....XU.('
+  24 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '$PT.............'
+  01 01 01 01 01 01 1c 2f 90 d0 60 1a 0f 40 20 30 '......./..`..@ 0'
+  13 00 4b cf 10 00 00 19 45 27 90 d0 60 1a 0f 40 '..K.....E'..`..@'
+  20 30 13 00 4b cf 10 00 00 19 00 00 00 0f 00 b3 ' 0..K...........'
+  0a 32 b3 0a 28 14 01 00 32 0c 00 00 00 00 00 fe '.2..(...2.......'
+  00 4c 50 31 35 34 57 30 32 2d 54 4c 31 30 00 c4 '.LP154W02-TL10..'
+Checksum: 0xc4
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

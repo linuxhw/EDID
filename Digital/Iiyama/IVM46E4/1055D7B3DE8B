@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0026cde446502d3101
-1e11010381211b78eaaea5a6544c9926
-145054bfef0081800101010101010101
-0101010101019e20009051201f304880
-3600510e1100001c000000fc0048444d
-490a0a0a0a0a0a0a0a0a000000fd0037
-4c1d520e000a202020202020000000ff
-003538363637333030303030310a01d6
-00ffffffffffff0012e51018502d3101
-15120103812213782ab370a255489827
-155054bfee005940614c81c001010101
-010101010101662156aa51001e30468f
-330029170000001e000000ff00300a0a
-0a0a0a0a0a0a0a0a0a0a000000fd0037
-4b1e3c08000a202020202020000000fc
-0048444d490a0a0a0a0a0a0a0a0a0146
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cd e4 46 50 2d 31 01
+1e 11 01 03 81 21 1b 78 ea ae a5 a6 54 4c 99 26
+14 50 54 bf ef 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9e 20 00 90 51 20 1f 30 48 80
+36 00 51 0e 11 00 00 1c 00 00 00 fc 00 48 44 4d
+49 0a 0a 0a 0a 0a 0a 0a 0a 0a 00 00 00 fd 00 37
+4c 1d 52 0e 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 35 38 36 36 37 33 30 30 30 30 30 31 0a 01 d6
+
+00 ff ff ff ff ff ff 00 12 e5 10 18 50 2d 31 01
+15 12 01 03 81 22 13 78 2a b3 70 a2 55 48 98 27
+15 50 54 bf ee 00 59 40 61 4c 81 c0 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 29 17 00 00 00 1e 00 00 00 ff 00 30 0a 0a
+0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 00 00 00 fd 00 37
+4b 1e 3c 08 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 48 44 4d 49 0a 0a 0a 0a 0a 0a 0a 0a 0a 01 46
 
 00 ff ff ff ff ff ff 00 26 cd e4 46 50 2d 31 01
 1e 11 01 03 81 21 1b 78 ea ae a5 a6 54 4c 99 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IVM
     Model: 18148
-    Serial Number: 20000080
+    Serial Number: ...
     Made in: week 30 of 2007
   Basic Display Parameters & Features:
     Digital display
@@ -83,7 +82,7 @@ Block 0, Base EDID:
     Display Product Name: 'HDMI'
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 29-82 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: '586673000001'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0xd6
 
@@ -99,3 +98,47 @@ Block 1, Unknown EDID Extension Block 0x00:
   4b 1e 3c 08 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.<...      ....'
   00 48 44 4d 49 0a 0a 0a 0a 0a 0a 0a 0a 0a 01 46 '.HDMI..........F'
 Checksum: 0x46
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cd e4 46 50 2d 31 01 '........&..FP-1.'
+  1e 11 01 03 81 21 1b 78 ea ae a5 a6 54 4c 99 26 '.....!.x....TL.&'
+  14 50 54 bf ef 00 81 80 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 9e 20 00 90 51 20 1f 30 48 80 '....... ..Q .0H.'
+  36 00 51 0e 11 00 00 1c 00 00 00 fc 00 48 44 4d '6.Q..........HDM'
+  49 0a 0a 0a 0a 0a 0a 0a 0a 0a 00 00 00 fd 00 37 'I..............7'
+  4c 1d 52 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 'L.R...      ....'
+  00 35 38 36 36 37 33 30 30 30 30 30 31 0a 01 d6 '.586673000001...'
+Checksum: 0xd6
+
+----------------
+
+Block 3, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 12 e5 10 18 50 2d 31 01 '............P-1.'
+  15 12 01 03 81 22 13 78 2a b3 70 a2 55 48 98 27 '.....".x*.p.UH.''
+  15 50 54 bf ee 00 59 40 61 4c 81 c0 01 01 01 01 '.PT...Y@aL......'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 29 17 00 00 00 1e 00 00 00 ff 00 30 0a 0a '3.)..........0..'
+  0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 00 00 00 fd 00 37 '...............7'
+  4b 1e 3c 08 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.<...      ....'
+  00 48 44 4d 49 0a 0a 0a 0a 0a 0a 0a 0a 0a 01 46 '.HDMI..........F'
+Checksum: 0x46
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: Non-space after newline.
+Block 1, Base EDID:
+  Unknown Extension Block.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

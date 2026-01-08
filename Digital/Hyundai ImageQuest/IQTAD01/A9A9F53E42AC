@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00263401ad01010101
-20140103e83c22782a6515a5564a9b25
-125054bfef0081c0810081408180818a
-818cb300d1c0023a801871382d40582c
-450056502100001e000000fd00384b18
-5011000a202020202020000000fc0048
-444954323757204456490a20000000ff
-005432373057453038303033353700bb
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 34 01 ad 01 01 01 01
+20 14 01 03 e8 3c 22 78 2a 65 15 a5 56 4a 9b 25
+12 50 54 bf ef 00 81 c0 81 00 81 40 81 80 81 8a
+81 8c b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 fd 00 38 4b 18
+50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+44 49 54 32 37 57 20 44 56 49 0a 20 00 00 00 ff
+00 54 32 37 30 57 45 30 38 30 30 33 35 37 00 bb
 
 00 ff ff ff ff ff ff 00 26 34 01 ad 01 01 01 01
 20 14 01 03 e8 3c 22 78 2a 65 15 a5 56 4a 9b 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IQT
     Model: 44289
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 32 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -72,5 +70,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 24-80 kHz H, max dotclock 170 MHz
     Display Product Name: 'HDIT27W DVI'
-    Display Product Serial Number: 'T270WE0800357'
+    Display Product Serial Number: ...
 Checksum: 0xbb
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 34 01 ad 01 01 01 01 '........&4......'
+  20 14 01 03 e8 3c 22 78 2a 65 15 a5 56 4a 9b 25 ' ....<"x*e..VJ.%'
+  12 50 54 bf ef 00 81 c0 81 00 81 40 81 80 81 8a '.PT........@....'
+  81 8c b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 fd 00 38 4b 18 'E.VP!........8K.'
+  50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'P...      .....H'
+  44 49 54 32 37 57 20 44 56 49 0a 20 00 00 00 ff 'DIT27W DVI. ....'
+  00 54 32 37 30 57 45 30 38 30 30 33 35 37 00 bb '.T270WE0800357..'
+Checksum: 0xbb
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x68.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

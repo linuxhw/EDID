@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0026cd2c485c050000
-0f10010381261e782afd56a5534a9d24
-144f54bfef8081808140714f01010101
-010101010101302a009851002a403070
-1300782d1100001e000000ff00303536
-36373631353031333732000000fd0032
-4c1e530e000a202020202020000000fc
-00504c45313930300a20202020200004
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cd 2c 48 5c 05 00 00
+0f 10 01 03 81 26 1e 78 2a fd 56 a5 53 4a 9d 24
+14 4f 54 bf ef 80 81 80 81 40 71 4f 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 ff 00 30 35 36
+36 37 36 31 35 30 31 33 37 32 00 00 00 fd 00 32
+4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 4c 45 31 39 30 30 0a 20 20 20 20 20 00 04
 
 00 ff ff ff ff ff ff 00 26 cd 2c 48 5c 05 00 00
 0f 10 01 03 81 26 1e 78 2a fd 56 a5 53 4a 9d 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IVM
     Model: 18476
-    Serial Number: 1372
+    Serial Number: ...
     Made in: week 15 of 2006
   Basic Display Parameters & Features:
     Digital display
@@ -66,8 +64,32 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (376 mm x 301 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: '0566761501372'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'PLE1900'
 Checksum: 0x04
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cd 2c 48 5c 05 00 00 '........&.,H\...'
+  0f 10 01 03 81 26 1e 78 2a fd 56 a5 53 4a 9d 24 '.....&.x*.V.SJ.$'
+  14 4f 54 bf ef 80 81 80 81 40 71 4f 01 01 01 01 '.OT......@qO....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 ff 00 30 35 36 '..x-.........056'
+  36 37 36 31 35 30 31 33 37 32 00 00 00 fd 00 32 '6761501372.....2'
+  4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 50 4c 45 31 39 30 30 0a 20 20 20 20 20 00 04 '.PLE1900.     ..'
+Checksum: 0x04
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

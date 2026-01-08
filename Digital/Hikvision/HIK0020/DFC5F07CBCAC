@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff00212b200031303030
-1f180103804f00782aa220a656489a24
-12505421080081c0814081809500b300
-a9c081000101023a801871382d40582c
-4500dd0c1100001e662156aa51001e30
-468f3300dd0c1100001f000000fc0048
-494b564953494f4e20202020000000ff
-00415057423248413032353330300102
-02031d314d82050401101114131f0615
-03126c030c001000882dc00000000000
-ff000a20202020202020202020202000
-0000ff000a2020202020202020202020
-20000000ff000a202020202020202020
-20202000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000a2
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 2b 20 00 31 30 30 30
+1f 18 01 03 80 4f 00 78 2a a2 20 a6 56 48 9a 24
+12 50 54 21 08 00 81 c0 81 40 81 80 95 00 b3 00
+a9 c0 81 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 dd 0c 11 00 00 1f 00 00 00 fc 00 48
+49 4b 56 49 53 49 4f 4e 20 20 20 20 00 00 00 ff
+00 41 50 57 42 32 48 41 30 32 35 33 30 30 01 02
+
+02 03 1d 31 4d 82 05 04 01 10 11 14 13 1f 06 15
+03 12 6c 03 0c 00 10 00 88 2d c0 00 00 00 00 00
+ff 00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00
+00 00 ff 00 0a 20 20 20 20 20 20 20 20 20 20 20
+20 00 00 00 ff 00 0a 20 20 20 20 20 20 20 20 20
+20 20 20 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a2
 
 00 ff ff ff ff ff ff 00 21 2b 20 00 31 30 30 30
 1f 18 01 03 80 4f 00 78 2a a2 20 a6 56 48 9a 24
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HIK
     Model: 32
-    Serial Number: 808464433
+    Serial Number: ...
     Made in: week 31 of 2014
   Basic Display Parameters & Features:
     Digital display
@@ -78,7 +77,7 @@ Block 0, Base EDID:
                  Hfront   70 Hsync 143 Hback  213 Hpol P
                  Vfront    3 Vsync   3 Vback   24 Vpol P
     Display Product Name: 'HIKVISION    '
-    Display Product Serial Number: 'APWB2HA025300'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x02
 
@@ -113,7 +112,111 @@ Block 1, CTA-861 Extension Block:
     Interlaced video latency: Unknown
     Interlaced audio latency: Unknown
   Detailed Timing Descriptors:
-    Display Product Serial Number: ''
-    Display Product Serial Number: ''
-    Display Product Serial Number: ''
+    Display Product Serial Number: ...
+    Display Product Serial Number: ...
+    Display Product Serial Number: ...
 Checksum: 0xa2  Unused space in Extension Block: 44 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 21 2b 20 00 31 30 30 30 '........!+ .1000'
+  1f 18 01 03 80 4f 00 78 2a a2 20 a6 56 48 9a 24 '.....O.x*. .VH.$'
+  12 50 54 21 08 00 81 c0 81 40 81 80 95 00 b3 00 '.PT!.....@......'
+  a9 c0 81 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 66 21 56 aa 51 00 1e 30 'E.......f!V.Q..0'
+  46 8f 33 00 dd 0c 11 00 00 1f 00 00 00 fc 00 48 'F.3............H'
+  49 4b 56 49 53 49 4f 4e 20 20 20 20 00 00 00 ff 'IKVISION    ....'
+  00 41 50 57 42 32 48 41 30 32 35 33 30 30 01 02 '.APWB2HA025300..'
+Checksum: 0x02
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+    Video latency: Unknown
+    Audio latency: Unknown
+    Interlaced video latency: Unknown
+    Interlaced audio latency: Unknown
+  Detailed Timing Descriptors:
+    Display Product Serial Number: ...
+    Display Product Serial Number: ...
+    Display Product Serial Number: ...
+Checksum: 0xa2  Unused space in Extension Block: 44 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Progressive and Interlaced latency values are identical, no need for both.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Progressive and Interlaced latency values are identical, no need for both.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+Block 1, CTA-861 Extension Block:
+  Offset is 29, but should be 31.
+  Display Product Serial Number: ...
+  Display Product Serial Number: ...
+  Display Product Serial Number: ...
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 6.
+  Video Data Block: Duplicate VIC 21.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Offset is 29, but should be 31.
+  Display Product Serial Number: ...
+  Display Product Serial Number: ...
+  Display Product Serial Number: ...
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 477x268mm, but the display size is not specified anywhere.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

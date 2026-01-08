@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff002283100100000000
-00190103802b1b78ee51ef9f584f9f27
-10474c210800714f8180b300d1c08bc0
-010101010101011d007251d01e206e28
-5500c48e2100001e000000ff00585958
-5858594d44313233500a000000fc004c
-453332453652390a20202020000000fd
-00384c1e5310000a202020202020014d
-02031b71230907078301000067030c00
-2000802d43100403e2000f8c0ad08a20
-e02d10103e9600a05a00000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000018
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 83 10 01 00 00 00 00
+00 19 01 03 80 2b 1b 78 ee 51 ef 9f 58 4f 9f 27
+10 47 4c 21 08 00 71 4f 81 80 b3 00 d1 c0 8b c0
+01 01 01 01 01 01 01 1d 00 72 51 d0 1e 20 6e 28
+55 00 c4 8e 21 00 00 1e 00 00 00 ff 00 58 59 58
+58 58 59 4d 44 31 32 33 50 0a 00 00 00 fc 00 4c
+45 33 32 45 36 52 39 0a 20 20 20 20 00 00 00 fd
+00 38 4c 1e 53 10 00 0a 20 20 20 20 20 20 01 4d
+
+02 03 1b 71 23 09 07 07 83 01 00 00 67 03 0c 00
+20 00 80 2d 43 10 04 03 e2 00 0f 8c 0a d0 8a 20
+e0 2d 10 10 3e 96 00 a0 5a 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 18
 
 00 ff ff ff ff ff ff 00 22 83 10 01 00 00 00 00
 00 19 01 03 80 2b 1b 78 ee 51 ef 9f 58 4f 9f 27
@@ -72,7 +71,7 @@ Block 0, Base EDID:
     DTD 1:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
                  Hfront  110 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
-    Display Product Serial Number: 'XYXXXYMD123P'
+    Display Product Serial Number: ...
     Display Product Name: 'LE32E6R9'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 160 MHz
@@ -113,3 +112,91 @@ Block 1, CTA-861 Extension Block:
                  Hfront   16 Hsync  62 Hback   60 Hpol N
                  Vfront    9 Vsync   6 Vback   30 Vpol N
 Checksum: 0x18  Unused space in Extension Block: 82 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 83 10 01 00 00 00 00 '........".......'
+  00 19 01 03 80 2b 1b 78 ee 51 ef 9f 58 4f 9f 27 '.....+.x.Q..XO.''
+  10 47 4c 21 08 00 71 4f 81 80 b3 00 d1 c0 8b c0 '.GL!..qO........'
+  01 01 01 01 01 01 01 1d 00 72 51 d0 1e 20 6e 28 '.........rQ.. n('
+  55 00 c4 8e 21 00 00 1e 00 00 00 ff 00 58 59 58 'U...!........XYX'
+  58 58 59 4d 44 31 32 33 50 0a 00 00 00 fc 00 4c 'XXYMD123P......L'
+  45 33 32 45 36 52 39 0a 20 20 20 20 00 00 00 fd 'E32E6R9.    ....'
+  00 38 4c 1e 53 10 00 0a 20 20 20 20 20 20 01 4d '.8L.S...      .M'
+Checksum: 0x4d
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 225 MHz
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (analog composite, sync-on-green, 160 mm x 90 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x18  Unused space in Extension Block: 82 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+EDID:
+  CTA-861: Native progressive resolution of 1280x720 is smaller than the max preferred progressive resolution 1920x1080.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 708x398 mm vs display size 430x270 mm.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #2: Mismatch of image size 160x90 mm vs display size 430x270 mm.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 3.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #3: Mismatch of image size 160x90 mm vs display size 430x270 mm.
+EDID:
+  Base EDID: The DTD max image size is 708x398mm, which is larger than the display size 430.0x270.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL
