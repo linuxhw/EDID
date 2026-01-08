@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0038a3d56801010101
-2019010380342078ea4ca5a7554da226
-10505423080081008140818081c09500
-9040b300d100283c80a070b023403020
-360007442100001a000000fd00383d1f
-4d11000a202020202020000000fc0045
-41323434574d690a20202020000000ff
-0035383138353738384e420a2020011e
-02010400011d007251d01e206e285500
-07442100001e8c0ad08a20e02d10103e
-96000744210000180000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 a3 d5 68 01 01 01 01
+20 19 01 03 80 34 20 78 ea 4c a5 a7 55 4d a2 26
+10 50 54 23 08 00 81 00 81 40 81 80 81 c0 95 00
+90 40 b3 00 d1 00 28 3c 80 a0 70 b0 23 40 30 20
+36 00 07 44 21 00 00 1a 00 00 00 fd 00 38 3d 1f
+4d 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45
+41 32 34 34 57 4d 69 0a 20 20 20 20 00 00 00 ff
+00 35 38 31 38 35 37 38 38 4e 42 0a 20 20 01 1e
+
+02 01 04 00 01 1d 00 72 51 d0 1e 20 6e 28 55 00
+07 44 21 00 00 1e 8c 0a d0 8a 20 e0 2d 10 10 3e
+96 00 07 44 21 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 
 00 ff ff ff ff ff ff 00 38 a3 d5 68 01 01 01 01
 20 19 01 03 80 34 20 78 ea 4c a5 a7 55 4d a2 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: NEC
     Model: 26837
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 32 of 2015
   Basic Display Parameters & Features:
     Digital display
@@ -79,7 +78,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-61 Hz V, 31-77 kHz H, max dotclock 170 MHz
     Display Product Name: 'EA244WMi'
-    Display Product Serial Number: '58185788NB'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x1e
 
@@ -96,4 +95,55 @@ Block 1, CTA-861 Extension Block:
                  Vfront    9 Vsync   6 Vback   30 Vpol N
 Checksum: 0x00  Unused space in Extension Block: 87 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 38 a3 d5 68 01 01 01 01 '........8..h....'
+  20 19 01 03 80 34 20 78 ea 4c a5 a7 55 4d a2 26 ' ....4 x.L..UM.&'
+  10 50 54 23 08 00 81 00 81 40 81 80 81 c0 95 00 '.PT#.....@......'
+  90 40 b3 00 d1 00 28 3c 80 a0 70 b0 23 40 30 20 '.@....(<..p.#@0 '
+  36 00 07 44 21 00 00 1a 00 00 00 fd 00 38 3d 1f '6..D!........8=.'
+  4d 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45 'M...      .....E'
+  41 32 34 34 57 4d 69 0a 20 20 20 20 00 00 00 ff 'A244WMi.    ....'
+  00 35 38 31 38 35 37 38 38 4e 42 0a 20 20 01 1e '.58185788NB.  ..'
+Checksum: 0x1e
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 1
+  Detailed Timing Descriptors:
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (519 mm x 324 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (519 mm x 324 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x00  Unused space in Extension Block: 87 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

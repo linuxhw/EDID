@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000ce3000001010101
-2f150103803c22782ac905a3574b9c25
-125054bfef00010101018180b3000101
-010101010101023a801871382d40582c
-9600f1241100001e000000ff00353035
-3344303031303030310a000000fd003c
-4b1f5312000a202020202020000000fc
-004c323757310a0a20202020202000c0
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0c e3 00 00 01 01 01 01
+2f 15 01 03 80 3c 22 78 2a c9 05 a3 57 4b 9c 25
+12 50 54 bf ef 00 01 01 01 01 81 80 b3 00 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+96 00 f1 24 11 00 00 1e 00 00 00 ff 00 35 30 35
+33 44 30 30 31 30 30 30 31 0a 00 00 00 fd 00 3c
+4b 1f 53 12 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 32 37 57 31 0a 0a 20 20 20 20 20 20 00 c0
 
 00 ff ff ff ff ff ff 00 0c e3 00 00 01 01 01 01
 2f 15 01 03 80 3c 22 78 2a c9 05 a3 57 4b 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: CGC
     Model: 0
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 47 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -63,8 +61,42 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (497 mm x 292 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    9 Vsync   6 Vback   30 Vpol P
-    Display Product Serial Number: '5053D0010001'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 60-75 Hz V, 31-83 kHz H, max dotclock 180 MHz
     Display Product Name: 'L27W1'
 Checksum: 0xc0
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0c e3 00 00 01 01 01 01 '................'
+  2f 15 01 03 80 3c 22 78 2a c9 05 a3 57 4b 9c 25 '/....<"x*...WK.%'
+  12 50 54 bf ef 00 01 01 01 01 81 80 b3 00 01 01 '.PT.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  96 00 f1 24 11 00 00 1e 00 00 00 ff 00 35 30 35 '...$.........505'
+  33 44 30 30 31 30 30 30 31 0a 00 00 00 fd 00 3c '3D0010001......<'
+  4b 1f 53 12 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 4c 32 37 57 31 0a 0a 20 20 20 20 20 20 00 c0 '.L27W1..      ..'
+Checksum: 0xc0
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 497x292 mm vs display size 600x340 mm.
+  Display Product Name: Non-space after newline.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 75.029 Hz (Monitor: 60.000 - 75.000 Hz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

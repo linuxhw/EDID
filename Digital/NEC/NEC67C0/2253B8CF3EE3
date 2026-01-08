@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0038a3c06701010101
-0914010380291a78eade95a3544c9926
-0f5054bfef8081c081808bc09500950f
-714f010101019a29a0d0518422305098
-360098ff1000001c000000fd00384c1f
-520e000a202020202020000000fc0041
-53313931574d0a2020202020000000ff
-00303231303930303054420a202000f1
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 a3 c0 67 01 01 01 01
+09 14 01 03 80 29 1a 78 ea de 95 a3 54 4c 99 26
+0f 50 54 bf ef 80 81 c0 81 80 8b c0 95 00 95 0f
+71 4f 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 fd 00 38 4c 1f
+52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+53 31 39 31 57 4d 0a 20 20 20 20 20 00 00 00 ff
+00 30 32 31 30 39 30 30 30 54 42 0a 20 20 00 f1
 
 00 ff ff ff ff ff ff 00 38 a3 c0 67 01 01 01 01
 09 14 01 03 80 29 1a 78 ea de 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: NEC
     Model: 26560
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 9 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -71,5 +69,34 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-82 kHz H, max dotclock 140 MHz
     Display Product Name: 'AS191WM'
-    Display Product Serial Number: '02109000TB'
+    Display Product Serial Number: ...
 Checksum: 0xf1
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 38 a3 c0 67 01 01 01 01 '........8..g....'
+  09 14 01 03 80 29 1a 78 ea de 95 a3 54 4c 99 26 '.....).x....TL.&'
+  0f 50 54 bf ef 80 81 c0 81 80 8b c0 95 00 95 0f '.PT.............'
+  71 4f 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 'qO.....)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 00 00 00 fd 00 38 4c 1f '6............8L.'
+  52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'R...      .....A'
+  53 31 39 31 57 4d 0a 20 20 20 20 20 00 00 00 ff 'S191WM.     ....'
+  00 30 32 31 30 39 30 30 30 54 42 0a 20 20 00 f1 '.02109000TB.  ..'
+Checksum: 0xf1
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

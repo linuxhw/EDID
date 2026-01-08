@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff000492570201010101
-1e16010380000096efee91a3544c9926
-0f5054bfef80d1c0d10045596159714f
-81408199a940302a009851002a403070
-130000000000001e000000fd001f7810
-9611000a202020202020000000fa0071
-408187315901010101010101000000fc
-004b564d2d7669612d49500a202001f7
-02010400283c80a070b0234030203600
-00000000001e00000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000004e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 92 57 02 01 01 01 01
+1e 16 01 03 80 00 00 96 ef ee 91 a3 54 4c 99 26
+0f 50 54 bf ef 80 d1 c0 d1 00 45 59 61 59 71 4f
+81 40 81 99 a9 40 30 2a 00 98 51 00 2a 40 30 70
+13 00 00 00 00 00 00 1e 00 00 00 fd 00 1f 78 10
+96 11 00 0a 20 20 20 20 20 20 00 00 00 fa 00 71
+40 81 87 31 59 01 01 01 01 01 01 01 00 00 00 fc
+00 4b 56 4d 2d 76 69 61 2d 49 50 0a 20 20 01 f7
+
+02 01 04 00 28 3c 80 a0 70 b0 23 40 30 20 36 00
+00 00 00 00 00 1e 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4e
 
 00 ff ff ff ff ff ff 00 04 92 57 02 01 01 01 01
 1e 16 01 03 80 00 00 96 ef ee 91 a3 54 4c 99 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ADR
     Model: 599
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 30 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -108,3 +107,53 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   26 Vpol P
 Checksum: 0x4e  Unused space in Extension Block: 105 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 92 57 02 01 01 01 01 '..........W.....'
+  1e 16 01 03 80 00 00 96 ef ee 91 a3 54 4c 99 26 '............TL.&'
+  0f 50 54 bf ef 80 d1 c0 d1 00 45 59 61 59 71 4f '.PT.......EYaYqO'
+  81 40 81 99 a9 40 30 2a 00 98 51 00 2a 40 30 70 '.@...@0*..Q.*@0p'
+  13 00 00 00 00 00 00 1e 00 00 00 fd 00 1f 78 10 '..............x.'
+  96 11 00 0a 20 20 20 20 20 20 00 00 00 fa 00 71 '....      .....q'
+  40 81 87 31 59 01 01 01 01 01 01 01 00 00 00 fc '@..1Y...........'
+  00 4b 56 4d 2d 76 69 61 2d 49 50 0a 20 20 01 f7 '.KVM-via-IP.  ..'
+Checksum: 0xf7
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 1
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   26 Vpol P
+Checksum: 0x4e  Unused space in Extension Block: 105 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x44.
+Block 3, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: DTD is similar but not identical to DMT 0x44.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

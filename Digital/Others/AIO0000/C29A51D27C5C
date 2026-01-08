@@ -1,0 +1,97 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 2f 00 00 0f 00 00 00
+00 21 01 04 a5 00 00 ff 2f 00 00 a0 57 49 9b 26
+10 48 4f 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2d
+36 00 00 00 00 00 00 18 00 00 00 fd 00 3c 3c ac
+ac 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 79
+
+00 ff ff ff ff ff ff 00 05 2f 00 00 0f 00 00 00
+00 21 01 04 a5 00 00 ff 2f 00 00 a0 57 49 9b 26
+10 48 4f 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2d
+36 00 00 00 00 00 00 18 00 00 00 fd 00 3c 3c ac
+ac 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 79
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AIO
+    Model: 0
+    Serial Number: ...
+    Made in: 2023
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Image size is variable
+    Gamma is defined in an extension block
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2851, 0.6054
+    Blue : 0.1484, 0.0625
+    White: 0.2812, 0.3085
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+                 Hfront   88 Hsync  45 Hback  147 Hpol N
+                 Vfront    3 Vsync   6 Vback   36 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 60-60 Hz V, 172-172 kHz H, max dotclock 150 MHz
+    Empty Descriptor
+    Empty Descriptor
+Checksum: 0x79
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 2f 00 00 0f 00 00 00 '........./......'
+  00 21 01 04 a5 00 00 ff 2f 00 00 a0 57 49 9b 26 '.!....../...WI.&'
+  10 48 4f 00 00 00 01 01 01 01 01 01 01 01 01 01 '.HO.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2d '.......:..q8-@X-'
+  36 00 00 00 00 00 00 18 00 00 00 fd 00 3c 3c ac '6............<<.'
+  ac 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 79 '...............y'
+Checksum: 0x79
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 67.500 - 67.500 kHz (Monitor: 172.000 - 172.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

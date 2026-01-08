@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001ed461055c000000
-1e0f0103811e1778eaee91a3544c9926
-0f5054a1080001010101010101010101
-01010101010164190040410026301888
-360030e410000018000000fd003c3c1f
-4007000a202020202020000000fe0047
-564953494f4e0a2020202020000000fc
-0031354c434428544d4453290a200062
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e d4 61 05 5c 00 00 00
+1e 0f 01 03 81 1e 17 78 ea ee 91 a3 54 4c 99 26
+0f 50 54 a1 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 30 e4 10 00 00 18 00 00 00 fd 00 3c 3c 1f
+40 07 00 0a 20 20 20 20 20 20 00 00 00 fe 00 47
+56 49 53 49 4f 4e 0a 20 20 20 20 20 00 00 00 fc
+00 31 35 4c 43 44 28 54 4d 44 53 29 0a 20 00 62
 
 00 ff ff ff ff ff ff 00 1e d4 61 05 5c 00 00 00
 1e 0f 01 03 81 1e 17 78 ea ee 91 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GVT
     Model: 1377
-    Serial Number: 92
+    Serial Number: ...
     Made in: week 30 of 2005
   Basic Display Parameters & Features:
     Digital display
@@ -57,3 +55,31 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'GVISION'
     Display Product Name: '15LCD(TMDS)'
 Checksum: 0x62
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e d4 61 05 5c 00 00 00 '..........a.\...'
+  1e 0f 01 03 81 1e 17 78 ea ee 91 a3 54 4c 99 26 '.......x....TL.&'
+  0f 50 54 a1 08 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 30 e4 10 00 00 18 00 00 00 fd 00 3c 3c 1f '6.0..........<<.'
+  40 07 00 0a 20 20 20 20 20 20 00 00 00 fe 00 47 '@...      .....G'
+  56 49 53 49 4f 4e 0a 20 20 20 20 20 00 00 00 fc 'VISION.     ....'
+  00 31 35 4c 43 44 28 54 4d 44 53 29 0a 20 00 62 '.15LCD(TMDS). .b'
+Checksum: 0x62
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 60.000 - 60.000 Hz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

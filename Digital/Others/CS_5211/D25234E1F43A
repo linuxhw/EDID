@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e7f115201040000
-05170104a5351e78028042ac5130b425
-10505300000001010101010101010101
-010101010101023a801871382d403020
-35000f282100001a5730801871382d40
-302035000f282100001a000000fe000a
-202020202020202020202020000000fe
-003139323078313038300a20202000e9
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 7f 11 52 01 04 00 00
+05 17 01 04 a5 35 1e 78 02 80 42 ac 51 30 b4 25
+10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 30 20
+35 00 0f 28 21 00 00 1a 57 30 80 18 71 38 2d 40
+30 20 35 00 0f 28 21 00 00 1a 00 00 00 fe 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 31 39 32 30 78 31 30 38 30 0a 20 20 20 00 e9
 
 00 ff ff ff ff ff ff 00 0e 7f 11 52 01 04 00 00
 05 17 01 04 a5 35 1e 78 02 80 42 ac 51 30 b4 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: CS_
     Model: 21009
-    Serial Number: 1025
+    Serial Number: ...
     Made in: week 5 of 2013
   Basic Display Parameters & Features:
     Digital display
@@ -54,3 +52,36 @@ Block 0, Base EDID:
     Alphanumeric Data String: ''
     Alphanumeric Data String: '1920x1080'
 Checksum: 0xe9
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 7f 11 52 01 04 00 00 '...........R....'
+  05 17 01 04 a5 35 1e 78 02 80 42 ac 51 30 b4 25 '.....5.x..B.Q0.%'
+  10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PS.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 30 20 '.......:..q8-@0 '
+  35 00 0f 28 21 00 00 1a 57 30 80 18 71 38 2d 40 '5..(!...W0..q8-@'
+  30 20 35 00 0f 28 21 00 00 1a 00 00 00 fe 00 0a '0 5..(!.........'
+  20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fe '            ....'
+  00 31 39 32 30 78 31 30 38 30 0a 20 20 20 00 e9 '.1920x1080.   ..'
+Checksum: 0xe9
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: Manufacturer name field contains garbage.
+  Alphanumeric Data String: Empty string.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

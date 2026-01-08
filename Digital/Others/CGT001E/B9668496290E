@@ -1,0 +1,104 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0c f4 1e 00 00 00 00 00
+01 1c 01 03 80 16 0e 00 ee 97 95 96 5a 55 94 28
+21 50 54 00 00 00 81 08 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2b 1e 00 45 50 20 2a 30 40 01
+81 08 d9 88 00 00 00 18 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 62
+74 78 6c 63 64 0a 20 20 20 20 20 20 00 00 00 0e
+00 01 00 01 30 31 00 00 31 2d 53 4c 4e 10 00 ec
+
+00 ff ff ff ff ff ff 00 0c f4 1e 00 00 00 00 00
+01 1c 01 03 80 16 0e 00 ee 97 95 96 5a 55 94 28
+21 50 54 00 00 00 81 08 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2b 1e 00 45 50 20 2a 30 40 01
+81 08 d9 88 00 00 00 18 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 62
+74 78 6c 63 64 0a 20 20 20 20 20 20 00 00 00 0e
+00 01 00 01 30 31 00 00 31 2d 53 4c 4e 10 00 ec
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: CGT
+    Model: 30
+    Made in: week 1 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 22 cm x 14 cm
+    Gamma: 1.00
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    Default (sRGB) color space is primary color space
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5878, 0.3525
+    Green: 0.3330, 0.5810
+    Blue : 0.1582, 0.1298
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings:
+    GTF     :  1280x800    68.000074 Hz  16:10    56.576 kHz     95.953000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    67.992654 Hz  16:10    57.250 kHz     77.230000 MHz (217 mm x 136 mm)
+                 Hfront   64 Hsync   1 Hback    4 Hpol N
+                 Vfront   40 Vsync   1 Vback    1 Vpol N
+    Dummy Descriptor:
+    Alphanumeric Data String: 'btxlcd'
+    EPI Descriptor:
+      Bits per pixel: 24
+      Pixels per clock: 1
+      Data color mapping: conventional
+      Interface type: LVDS TFT
+      DE polarity: DE high active
+      FPSCLK polarity: FPSCLK not inverted
+      Vertical display mode: Up/Down reverse mode
+      Horizontal display mode: normal
+      Total power on sequencing delay: VGA controller default
+      Total power off sequencing delay: 30 ms
+      Contrast power on sequencing delay: 10 ms
+      Contrast power off sequencing delay: 30 ms
+      Backlight brightness control: 0 steps (ignored)
+      Backlight enable at boot: on (ignored)
+      Backlight control enable: disabled
+      Contrast voltable control: 0 steps (ignored)
+      Contrast control enable: disabled
+      EPI Version: 1.0
+Checksum: 0xec
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0c f4 1e 00 00 00 00 00 '................'
+  01 1c 01 03 80 16 0e 00 ee 97 95 96 5a 55 94 28 '............ZU.('
+  21 50 54 00 00 00 81 08 01 01 01 01 01 01 01 01 '!PT.............'
+  01 01 01 01 01 01 2b 1e 00 45 50 20 2a 30 40 01 '......+..EP *0@.'
+  81 08 d9 88 00 00 00 18 00 00 00 10 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 62 '...............b'
+  74 78 6c 63 64 0a 20 20 20 20 20 20 00 00 00 0e 'txlcd.      ....'
+  00 01 00 01 30 31 00 00 31 2d 53 4c 4e 10 00 ec '....01..1-SLN...'
+Checksum: 0xec
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  EPI Descriptor: Non-zero values in reserved bytes 12-16.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

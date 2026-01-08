@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0038a3536701010101
-27120103803420782a5ad5a7564b9b24
-13505420000001010101010101010101
-010101010101011d8018711c1620582c
-250006232100009efa1c8018711c1620
-582c250006232100009e000000fd0031
-4c1f5311000a202020202020000000fc
-003234574d4758330a20202020200147
-02010400011d007251d01e206e285500
-06232100001ef339801871382d40582c
-450006232100001e8c0ad08a20e02d10
-103e9600062321000018d80980a020e0
-2d101060a200b04411000018011d8018
-711c1620582c250006232100009e0000
-00000000000000000000000000000000
-000000000000000000000000000000c2
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 a3 53 67 01 01 01 01
+27 12 01 03 80 34 20 78 2a 5a d5 a7 56 4b 9b 24
+13 50 54 20 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 01 1d 80 18 71 1c 16 20 58 2c
+25 00 06 23 21 00 00 9e fa 1c 80 18 71 1c 16 20
+58 2c 25 00 06 23 21 00 00 9e 00 00 00 fd 00 31
+4c 1f 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 32 34 57 4d 47 58 33 0a 20 20 20 20 20 01 47
+
+02 01 04 00 01 1d 00 72 51 d0 1e 20 6e 28 55 00
+06 23 21 00 00 1e f3 39 80 18 71 38 2d 40 58 2c
+45 00 06 23 21 00 00 1e 8c 0a d0 8a 20 e0 2d 10
+10 3e 96 00 06 23 21 00 00 18 d8 09 80 a0 20 e0
+2d 10 10 60 a2 00 b0 44 11 00 00 18 01 1d 80 18
+71 1c 16 20 58 2c 25 00 06 23 21 00 00 9e 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c2
 
 00 ff ff ff ff ff ff 00 38 a3 53 67 01 01 01 01
 27 12 01 03 80 34 20 78 2a 5a d5 a7 56 4b 9b 24
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: NEC
     Model: 26451
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 39 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -62,14 +61,14 @@ Block 0, Base EDID:
     DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (518 mm x 291 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
-                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-    DTD 2:  1920x1080i  59.943434 Hz  16:9     33.718 kHz     74.180000 MHz (518 mm x 291 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
-                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD  1:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (518 mm x 291 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD  2:  1920x1080i  59.943434 Hz  16:9     33.718 kHz     74.180000 MHz (518 mm x 291 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
     Display Range Limits:
       Monitor ranges (GTF): 49-76 Hz V, 31-83 kHz H, max dotclock 170 MHz
     Display Product Name: '24WMGX3'
@@ -81,20 +80,80 @@ Checksum: 0x47
 Block 1, CTA-861 Extension Block:
   Revision: 1
   Detailed Timing Descriptors:
-    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (518 mm x 291 mm)
-                 Hfront  110 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD 4:  1920x1080   59.939394 Hz  16:9     67.432 kHz    148.350000 MHz (518 mm x 291 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (518 mm x 291 mm)
-                 Hfront   16 Hsync  62 Hback   60 Hpol N
-                 Vfront    9 Vsync   6 Vback   30 Vpol N
-    DTD 6:   640x480    60.000000 Hz   4:3     31.500 kHz     25.200000 MHz (432 mm x 324 mm)
-                 Hfront   16 Hsync  96 Hback   48 Hpol N
-                 Vfront   10 Vsync   2 Vback   33 Vpol N
-    DTD 7:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (518 mm x 291 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
-                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD  3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (518 mm x 291 mm)
+                  Hfront  110 Hsync  40 Hback  220 Hpol P
+                  Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD  4:  1920x1080   59.939394 Hz  16:9     67.432 kHz    148.350000 MHz (518 mm x 291 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD  5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (518 mm x 291 mm)
+                  Hfront   16 Hsync  62 Hback   60 Hpol N
+                  Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD  6:   640x480    60.000000 Hz   4:3     31.500 kHz     25.200000 MHz (432 mm x 324 mm)
+                  Hfront   16 Hsync  96 Hback   48 Hpol N
+                  Vfront   10 Vsync   2 Vback   33 Vpol N
+    DTD  7:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (518 mm x 291 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
 Checksum: 0xc2  Unused space in Extension Block: 33 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 38 a3 53 67 01 01 01 01 '........8.Sg....'
+  27 12 01 03 80 34 20 78 2a 5a d5 a7 56 4b 9b 24 ''....4 x*Z..VK.$'
+  13 50 54 20 00 00 01 01 01 01 01 01 01 01 01 01 '.PT ............'
+  01 01 01 01 01 01 01 1d 80 18 71 1c 16 20 58 2c '..........q.. X,'
+  25 00 06 23 21 00 00 9e fa 1c 80 18 71 1c 16 20 '%..#!.......q.. '
+  58 2c 25 00 06 23 21 00 00 9e 00 00 00 fd 00 31 'X,%..#!........1'
+  4c 1f 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 32 34 57 4d 47 58 33 0a 20 20 20 20 20 01 47 '.24WMGX3.     .G'
+Checksum: 0x47
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 1
+  Detailed Timing Descriptors:
+    DTD  8:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (518 mm x 291 mm)
+                  Hfront  110 Hsync  40 Hback  220 Hpol P
+                  Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD  9:  1920x1080   59.939394 Hz  16:9     67.432 kHz    148.350000 MHz (518 mm x 291 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 10:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (518 mm x 291 mm)
+                  Hfront   16 Hsync  62 Hback   60 Hpol N
+                  Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 11:   640x480    60.000000 Hz   4:3     31.500 kHz     25.200000 MHz (432 mm x 324 mm)
+                  Hfront   16 Hsync  96 Hback   48 Hpol N
+                  Vfront   10 Vsync   2 Vback   33 Vpol N
+    DTD 12:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (518 mm x 291 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+Checksum: 0xc2  Unused space in Extension Block: 33 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: A native interlaced timing is present, but not a native progressive timing.
+
+EDID conformity: FAIL

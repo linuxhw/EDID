@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0038a31d6701010101
-1912010380291a78eeeed5a555489b26
-125054bfef8095008180714f01010101
-0101010101019a29a0d0518422305098
-36009a001100001c011d007251d01e20
-6e2855009a001100001e000000fd0038
-4c1e520e000a202020202020000000fc
-004c43443139574d47580a20202001af
-02030f014a840312051000000000008c
-0ad08a20e02d10103e96009a00110000
-188c0ad090204031200c4055009a0011
-000018011d8018711c1620582c25009a
-001100009e023a801871382d40582c45
-009a001100001e000000010031300a00
-000000000000000000000000ff003836
-3330363131364e420a20200000000049
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 a3 1d 67 01 01 01 01
+19 12 01 03 80 29 1a 78 ee ee d5 a5 55 48 9b 26
+12 50 54 bf ef 80 95 00 81 80 71 4f 01 01 01 01
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 9a 00 11 00 00 1c 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 9a 00 11 00 00 1e 00 00 00 fd 00 38
+4c 1e 52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 43 44 31 39 57 4d 47 58 0a 20 20 20 01 af
+
+02 03 0f 01 4a 84 03 12 05 10 00 00 00 00 00 8c
+0a d0 8a 20 e0 2d 10 10 3e 96 00 9a 00 11 00 00
+18 8c 0a d0 90 20 40 31 20 0c 40 55 00 9a 00 11
+00 00 18 01 1d 80 18 71 1c 16 20 58 2c 25 00 9a
+00 11 00 00 9e 02 3a 80 18 71 38 2d 40 58 2c 45
+00 9a 00 11 00 00 1e 00 00 00 01 00 31 30 0a 00
+00 00 00 00 00 00 00 00 00 00 00 00 ff 00 38 36
+33 30 36 31 31 36 4e 42 0a 20 20 00 00 00 00 49
 
 00 ff ff ff ff ff ff 00 38 a3 1d 67 01 01 01 01
 19 12 01 03 80 29 1a 78 ee ee d5 a5 55 48 9b 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: NEC
     Model: 26397
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 25 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -80,12 +79,12 @@ Block 0, Base EDID:
     DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
     DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (410 mm x 256 mm)
-                 Hfront   80 Hsync 152 Hback  232 Hpol N
-                 Vfront    3 Vsync   6 Vback   25 Vpol P
-    DTD 2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (410 mm x 256 mm)
-                 Hfront  110 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD  1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (410 mm x 256 mm)
+                  Hfront   80 Hsync 152 Hback  232 Hpol N
+                  Vfront    3 Vsync   6 Vback   25 Vpol P
+    DTD  2:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (410 mm x 256 mm)
+                  Hfront  110 Hsync  40 Hback  220 Hpol P
+                  Vfront    5 Vsync   5 Vback   20 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-82 kHz H, max dotclock 140 MHz
     Display Product Name: 'LCD19WMGX'
@@ -104,19 +103,97 @@ Block 1, CTA-861 Extension Block:
     VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
   Detailed Timing Descriptors:
-    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (410 mm x 256 mm)
-                 Hfront   16 Hsync  62 Hback   60 Hpol N
-                 Vfront    9 Vsync   6 Vback   30 Vpol N
-    DTD 4:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (410 mm x 256 mm)
-                 Hfront   12 Hsync  64 Hback   68 Hpol N
-                 Vfront    5 Vsync   5 Vback   39 Vpol N
-    DTD 5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (410 mm x 256 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
-                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-    DTD 6:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (410 mm x 256 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD  3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (410 mm x 256 mm)
+                  Hfront   16 Hsync  62 Hback   60 Hpol N
+                  Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD  4:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (410 mm x 256 mm)
+                  Hfront   12 Hsync  64 Hback   68 Hpol N
+                  Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD  5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (410 mm x 256 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD  6:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (410 mm x 256 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Manufacturer-Specified Display Descriptor (0x01): 00 01 00 31 30 0a 00 00 00 00 00 00 00 00 00 00 '...10...........'
-    Display Product Serial Number: '86306116NB'
+    Display Product Serial Number: ...
 Checksum: 0x49  Unused space in Extension Block: 4 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 38 a3 1d 67 01 01 01 01 '........8..g....'
+  19 12 01 03 80 29 1a 78 ee ee d5 a5 55 48 9b 26 '.....).x....UH.&'
+  12 50 54 bf ef 80 95 00 81 80 71 4f 01 01 01 01 '.PT.......qO....'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 9a 00 11 00 00 1c 01 1d 00 72 51 d0 1e 20 '6..........rQ.. '
+  6e 28 55 00 9a 00 11 00 00 1e 00 00 00 fd 00 38 'n(U............8'
+  4c 1e 52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.R...      ....'
+  00 4c 43 44 31 39 57 4d 47 58 0a 20 20 20 01 af '.LCD19WMGX.   ..'
+Checksum: 0xaf
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD  7:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (410 mm x 256 mm)
+                  Hfront   16 Hsync  62 Hback   60 Hpol N
+                  Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD  8:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (410 mm x 256 mm)
+                  Hfront   12 Hsync  64 Hback   68 Hpol N
+                  Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD  9:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (410 mm x 256 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 10:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (410 mm x 256 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
+    Manufacturer-Specified Display Descriptor (0x01): 00 01 00 31 30 0a 00 00 00 00 00 00 00 00 00 00 '...10...........'
+    Display Product Serial Number: ...
+Checksum: 0x49  Unused space in Extension Block: 4 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 16.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.062 Hz (Monitor: 56.000 - 76.000 Hz)
+    Maximum Clock: 148.500 MHz (Monitor: 140.000 MHz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

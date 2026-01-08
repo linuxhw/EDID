@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001489091200000000
-32180104a5301b7822c1b4a3544c9926
-0f5054bd2880818081c081408bc0a940
-d1c0d1c000c0023a801871382d40582c
-4500fd1e1100001e000000fc00564741
-20544f2048444d490a20662156aa5100
-1e30468f3300a05a0000001e000000fd
-00184b204b114f2048444d490a2000ea
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 14 89 09 12 00 00 00 00
+32 18 01 04 a5 30 1b 78 22 c1 b4 a3 54 4c 99 26
+0f 50 54 bd 28 80 81 80 81 c0 81 40 8b c0 a9 40
+d1 c0 d1 c0 00 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 fc 00 56 47 41
+20 54 4f 20 48 44 4d 49 0a 20 66 21 56 aa 51 00
+1e 30 46 8f 33 00 a0 5a 00 00 00 1e 00 00 00 fd
+00 18 4b 20 4b 11 4f 20 48 44 4d 49 0a 20 00 ea
 
 00 ff ff ff ff ff ff 00 14 89 09 12 00 00 00 00
 32 18 01 04 a5 30 1b 78 22 c1 b4 a3 54 4c 99 26
@@ -72,4 +70,44 @@ Block 0, Base EDID:
       Monitor ranges (Unknown (0x4f)): 24-75 Hz V, 32-75 kHz H, max dotclock 170 MHz
 Checksum: 0xea
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 14 89 09 12 00 00 00 00 '................'
+  32 18 01 04 a5 30 1b 78 22 c1 b4 a3 54 4c 99 26 '2....0.x"...TL.&'
+  0f 50 54 bd 28 80 81 80 81 c0 81 40 8b c0 a9 40 '.PT.(......@...@'
+  d1 c0 d1 c0 00 c0 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fd 1e 11 00 00 1e 00 00 00 fc 00 56 47 41 'E............VGA'
+  20 54 4f 20 48 44 4d 49 0a 20 66 21 56 aa 51 00 ' TO HDMI. f!V.Q.'
+  1e 30 46 8f 33 00 a0 5a 00 00 00 1e 00 00 00 fd '.0F.3..Z........'
+  00 18 4b 20 4b 11 4f 20 48 44 4d 49 0a 20 00 ea '..K K.O HDMI. ..'
+Checksum: 0xea
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 75.000 kHz (Monitor: 32.000 - 75.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x00c0.
+  Detailed Timing Descriptor #1: Mismatch of image size 509x286 mm vs display size 480x270 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 160x90 mm vs display size 480x270 mm.
+  Detailed Timing Descriptor #2: Invalid detailed timing descriptor ordering.
+  Display Range Limits: Unknown range class (0x4f).
+  Display Range Limits: Byte 11 is 0x20 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 509x286mm, which is larger than the display size 480.0x270.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

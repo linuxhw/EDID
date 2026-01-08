@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004f2e007231d40000
-2a1c0104a5000078e700000000000000
-00000000000001010101010101010101
-01010101010126ff706c8000a0f03202
-8200000000000010000000ff00506963
-6f56520a202020202020000000fc0050
-69636f56520a202020202020000000ff
-005069636f56520a20202020202000eb
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4f 2e 00 72 31 d4 00 00
+2a 1c 01 04 a5 00 00 78 e7 00 00 00 00 00 00 00
+00 00 00 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 26 ff 70 6c 80 00 a0 f0 32 02
+82 00 00 00 00 00 00 10 00 00 00 ff 00 50 69 63
+6f 56 52 0a 20 20 20 20 20 20 00 00 00 fc 00 50
+69 63 6f 56 52 0a 20 20 20 20 20 20 00 00 00 ff
+00 50 69 63 6f 56 52 0a 20 20 20 20 20 20 00 eb
 
 00 ff ff ff ff ff ff 00 4f 2e 00 72 31 d4 00 00
 2a 1c 01 04 a5 00 00 78 e7 00 00 00 00 00 00 00
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SYN
     Model: 29184
-    Serial Number: 54321
+    Serial Number: ...
     Made in: week 42 of 2018
   Basic Display Parameters & Features:
     Digital display
@@ -51,9 +49,34 @@ Block 0, Base EDID:
     DTD 1:  2160x3840   71.999559 Hz   9:16   287.998 kHz    653.180000 MHz (digital composite)
                  Hfront   50 Hsync   2 Hback   56 Hpol N
                  Vfront    8 Vsync   2 Vback  150
-    Display Product Serial Number: 'PicoVR'
+    Display Product Serial Number: ...
     Display Product Name: 'PicoVR'
-    Display Product Serial Number: 'PicoVR'
+    Display Product Serial Number: ...
 Checksum: 0xeb
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4f 2e 00 72 31 d4 00 00 '........O..r1...'
+  2a 1c 01 04 a5 00 00 78 e7 00 00 00 00 00 00 00 '*......x........'
+  00 00 00 00 00 00 01 01 01 01 01 01 01 01 01 01 '................'
+  01 01 01 01 01 01 26 ff 70 6c 80 00 a0 f0 32 02 '......&.pl....2.'
+  82 00 00 00 00 00 00 10 00 00 00 ff 00 50 69 63 '.............Pic'
+  6f 56 52 0a 20 20 20 20 20 20 00 00 00 fc 00 50 'oVR.      .....P'
+  69 63 6f 56 52 0a 20 20 20 20 20 20 00 00 00 ff 'icoVR.      ....'
+  00 50 69 63 6f 56 52 0a 20 20 20 20 20 20 00 eb '.PicoVR.      ..'
+Checksum: 0xeb
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003647323100666666
-08210103800c07780a9ee0a754489923
-10505400000001010101010101010101
-010101010101023a801871382d40582c
-450080387400001e023a801871382d40
-582c450080387400001e000000fd0032
-82143c3c000a202020202020000000fc
-004169720a202020202020202020002e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 47 32 31 00 66 66 66
+08 21 01 03 80 0c 07 78 0a 9e e0 a7 54 48 99 23
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 80 38 74 00 00 1e 02 3a 80 18 71 38 2d 40
+58 2c 45 00 80 38 74 00 00 1e 00 00 00 fd 00 32
+82 14 3c 3c 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 69 72 0a 20 20 20 20 20 20 20 20 20 00 2e
 
 00 ff ff ff ff ff ff 00 36 47 32 31 00 66 66 66
 08 21 01 03 80 0c 07 78 0a 9e e0 a7 54 48 99 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MRG
     Model: 12594
-    Serial Number: 1717986816
+    Serial Number: ...
     Made in: week 8 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -54,4 +52,37 @@ Block 0, Base EDID:
     Display Product Name: 'Air'
 Checksum: 0x2e
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 47 32 31 00 66 66 66 '........6G21.fff'
+  08 21 01 03 80 0c 07 78 0a 9e e0 a7 54 48 99 23 '.!.....x....TH.#'
+  10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 80 38 74 00 00 1e 02 3a 80 18 71 38 2d 40 'E..8t....:..q8-@'
+  58 2c 45 00 80 38 74 00 00 1e 00 00 00 fd 00 32 'X,E..8t........2'
+  82 14 3c 3c 00 0a 20 20 20 20 20 20 00 00 00 fc '..<<..      ....'
+  00 41 69 72 0a 20 20 20 20 20 20 20 20 20 00 2e '.Air.         ..'
+Checksum: 0x2e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (12x7 is smaller than 10x10 cm).
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 1920x1080 mm vs display size 120x70 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 1920x1080 mm vs display size 120x70 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 67.500 - 67.500 kHz (Monitor: 20.000 - 60.000 kHz)
+  Base EDID: The DTD max image size is 1920x1080mm, which is larger than the display size 120.0x70.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

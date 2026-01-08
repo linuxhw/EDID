@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0038a3266600000000
-180e010380261e6eeeee95a3544c9926
-0f5054bfef80315945596159714f8140
-818001010101302a009851002a403070
-1300782d1100001e000000fd0032551f
-520e000a202020202020000000fc004e
-4543204c4344313938305358000000ff
-00343633363336303959420a202000bb
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 a3 26 66 00 00 00 00
+18 0e 01 03 80 26 1e 6e ee ee 95 a3 54 4c 99 26
+0f 50 54 bf ef 80 31 59 45 59 61 59 71 4f 81 40
+81 80 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 fd 00 32 55 1f
+52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4e
+45 43 20 4c 43 44 31 39 38 30 53 58 00 00 00 ff
+00 34 36 33 36 33 36 30 39 59 42 0a 20 20 00 bb
 
 00 ff ff ff ff ff ff 00 38 a3 26 66 00 00 00 00
 18 0e 01 03 80 26 1e 6e ee ee 95 a3 54 4c 99 26
@@ -71,5 +69,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-85 Hz V, 31-82 kHz H, max dotclock 140 MHz
     Display Product Name: 'NEC LCD1980SX'
-    Display Product Serial Number: '46363609YB'
+    Display Product Serial Number: ...
 Checksum: 0xbb
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 38 a3 26 66 00 00 00 00 '........8.&f....'
+  18 0e 01 03 80 26 1e 6e ee ee 95 a3 54 4c 99 26 '.....&.n....TL.&'
+  0f 50 54 bf ef 80 31 59 45 59 61 59 71 4f 81 40 '.PT...1YEYaYqO.@'
+  81 80 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 fd 00 32 55 1f '..x-.........2U.'
+  52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4e 'R...      .....N'
+  45 43 20 4c 43 44 31 39 38 30 53 58 00 00 00 ff 'EC LCD1980SX....'
+  00 34 36 33 36 33 36 30 39 59 42 0a 20 20 00 bb '.46363609YB.  ..'
+Checksum: 0xbb
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

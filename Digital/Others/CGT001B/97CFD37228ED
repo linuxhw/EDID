@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000cf41b0001000000
-2d12010380160d00ee00000000000000
-00000000000045c00101010101010101
-010101010101990c20e030e02d102a80
-a200de84000000180000001000000000
-00000000000000000000000000fe0063
-6f6e67617465632041470a200000000e
-000120000000000000000000001000e8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0c f4 1b 00 01 00 00 00
+2d 12 01 03 80 16 0d 00 ee 00 00 00 00 00 00 00
+00 00 00 00 00 00 45 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 99 0c 20 e0 30 e0 2d 10 2a 80
+a2 00 de 84 00 00 00 18 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 63
+6f 6e 67 61 74 65 63 20 41 47 0a 20 00 00 00 0e
+00 01 20 00 00 00 00 00 00 00 00 00 00 10 00 e8
 
 00 ff ff ff ff ff ff 00 0c f4 1b 00 01 00 00 00
 2d 12 01 03 80 16 0d 00 ee 00 00 00 00 00 00 00
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: CGT
     Model: 27
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 45 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -72,4 +70,35 @@ Block 0, Base EDID:
       EPI Version: 1.0
 Checksum: 0xe8
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0c f4 1b 00 01 00 00 00 '................'
+  2d 12 01 03 80 16 0d 00 ee 00 00 00 00 00 00 00 '-...............'
+  00 00 00 00 00 00 45 c0 01 01 01 01 01 01 01 01 '......E.........'
+  01 01 01 01 01 01 99 0c 20 e0 30 e0 2d 10 2a 80 '........ .0.-.*.'
+  a2 00 de 84 00 00 00 18 00 00 00 10 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 63 '...............c'
+  6f 6e 67 61 74 65 63 20 41 47 0a 20 00 00 00 0e 'ongatec AG. ....'
+  00 01 20 00 00 00 00 00 00 00 00 00 00 10 00 e8 '.. .............'
+Checksum: 0xe8
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

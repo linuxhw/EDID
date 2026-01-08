@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0039f20519fb020000
-1111010381291a782ac6d5a3574a9423
-0f5054bfef808180714f8140950f01c0
-0101010195009a29a0d0518422305098
-36009a011100001c000000ff00373731
-3754493030303736330a000000fd0032
-4c1e530e000a202020202020000000fc
-004c4d2d39363557410a202020200005
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 39 f2 05 19 fb 02 00 00
+11 11 01 03 81 29 1a 78 2a c6 d5 a3 57 4a 94 23
+0f 50 54 bf ef 80 81 80 71 4f 81 40 95 0f 01 c0
+01 01 01 01 95 00 9a 29 a0 d0 51 84 22 30 50 98
+36 00 9a 01 11 00 00 1c 00 00 00 ff 00 37 37 31
+37 54 49 30 30 30 37 36 33 0a 00 00 00 fd 00 32
+4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 4d 2d 39 36 35 57 41 0a 20 20 20 20 00 05
 
 00 ff ff ff ff ff ff 00 39 f2 05 19 fb 02 00 00
 11 11 01 03 81 29 1a 78 2a c6 d5 a3 57 4a 94 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: NOR
     Model: 6405
-    Serial Number: 763
+    Serial Number: ...
     Made in: week 17 of 2007
   Basic Display Parameters & Features:
     Digital display
@@ -68,8 +66,34 @@ Block 0, Base EDID:
     DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (410 mm x 257 mm)
                  Hfront   80 Hsync 152 Hback  232 Hpol N
                  Vfront    3 Vsync   6 Vback   25 Vpol P
-    Display Product Serial Number: '7717TI000763'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'LM-965WA'
 Checksum: 0x05
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 39 f2 05 19 fb 02 00 00 '........9.......'
+  11 11 01 03 81 29 1a 78 2a c6 d5 a3 57 4a 94 23 '.....).x*...WJ.#'
+  0f 50 54 bf ef 80 81 80 71 4f 81 40 95 0f 01 c0 '.PT.....qO.@....'
+  01 01 01 01 95 00 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 9a 01 11 00 00 1c 00 00 00 ff 00 37 37 31 '6............771'
+  37 54 49 30 30 30 37 36 33 0a 00 00 00 fd 00 32 '7TI000763......2'
+  4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 4c 4d 2d 39 36 35 57 41 0a 20 20 20 20 00 05 '.LM-965WA.    ..'
+Checksum: 0x05
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x01c0.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0038a35f6801010101
-01170104a53c2278e2c345a357529e27
-0c5054bfef8081008140818081c09500
-9040b300a9c0023a801871382d40582c
-450056512100001e000000fd00384c1f
-5311000a202020202020000000fc0045
-41323733574d0a2020202020000000ff
-0033313130383130364e420a202000aa
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 a3 5f 68 01 01 01 01
+01 17 01 04 a5 3c 22 78 e2 c3 45 a3 57 52 9e 27
+0c 50 54 bf ef 80 81 00 81 40 81 80 81 c0 95 00
+90 40 b3 00 a9 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 51 21 00 00 1e 00 00 00 fd 00 38 4c 1f
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45
+41 32 37 33 57 4d 0a 20 20 20 20 20 00 00 00 ff
+00 33 31 31 30 38 31 30 36 4e 42 0a 20 20 00 aa
 
 00 ff ff ff ff ff ff 00 38 a3 5f 68 01 01 01 01
 01 17 01 04 a5 3c 22 78 e2 c3 45 a3 57 52 9e 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: NEC
     Model: 26719
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 1 of 2013
   Basic Display Parameters & Features:
     Digital display
@@ -75,5 +73,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'EA273WM'
-    Display Product Serial Number: '31108106NB'
+    Display Product Serial Number: ...
 Checksum: 0xaa
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 38 a3 5f 68 01 01 01 01 '........8._h....'
+  01 17 01 04 a5 3c 22 78 e2 c3 45 a3 57 52 9e 27 '.....<"x..E.WR.''
+  0c 50 54 bf ef 80 81 00 81 40 81 80 81 c0 95 00 '.PT......@......'
+  90 40 b3 00 a9 c0 02 3a 80 18 71 38 2d 40 58 2c '.@.....:..q8-@X,'
+  45 00 56 51 21 00 00 1e 00 00 00 fd 00 38 4c 1f 'E.VQ!........8L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45 'S...      .....E'
+  41 32 37 33 57 4d 0a 20 20 20 20 20 00 00 00 ff 'A273WM.     ....'
+  00 33 31 31 30 38 31 30 36 4e 42 0a 20 20 00 aa '.31108106NB.  ..'
+Checksum: 0xaa
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

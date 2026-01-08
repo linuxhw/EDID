@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0038a3dc6700000000
-15140104b53c2278e22765ae4e32b226
-0c5054bfef8081c0818090408bc09500
-a9c0a940d1c0565e00a0a0a029503020
-350055502100001a000000fd0032571f
-5e18000a202020202020000000fc0050
-41323731570a202020202020000000ff
-00303531303033393755420a202000f0
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 a3 dc 67 00 00 00 00
+15 14 01 04 b5 3c 22 78 e2 27 65 ae 4e 32 b2 26
+0c 50 54 bf ef 80 81 c0 81 80 90 40 8b c0 95 00
+a9 c0 a9 40 d1 c0 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 55 50 21 00 00 1a 00 00 00 fd 00 32 57 1f
+5e 18 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50
+41 32 37 31 57 0a 20 20 20 20 20 20 00 00 00 ff
+00 30 35 31 30 30 33 39 37 55 42 0a 20 20 00 f0
 
 00 ff ff ff ff ff ff 00 38 a3 dc 67 00 00 00 00
 15 14 01 04 b5 3c 22 78 e2 27 65 ae 4e 32 b2 26
@@ -74,5 +72,41 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-87 Hz V, 31-94 kHz H, max dotclock 240 MHz
     Display Product Name: 'PA271W'
-    Display Product Serial Number: '05100397UB'
+    Display Product Serial Number: ...
 Checksum: 0xf0
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 38 a3 dc 67 00 00 00 00 '........8..g....'
+  15 14 01 04 b5 3c 22 78 e2 27 65 ae 4e 32 b2 26 '.....<"x.'e.N2.&'
+  0c 50 54 bf ef 80 81 c0 81 80 90 40 8b c0 95 00 '.PT........@....'
+  a9 c0 a9 40 d1 c0 56 5e 00 a0 a0 a0 29 50 30 20 '...@..V^....)P0 '
+  35 00 55 50 21 00 00 1a 00 00 00 fd 00 32 57 1f '5.UP!........2W.'
+  5e 18 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50 '^...      .....P'
+  41 32 37 31 57 0a 20 20 20 20 20 20 00 00 00 ff 'A271W.      ....'
+  00 30 35 31 30 30 33 39 37 55 42 0a 20 20 00 f0 '.05100397UB.  ..'
+Checksum: 0xf0
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 241.500 MHz (Monitor: 240.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

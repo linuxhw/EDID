@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003dce000001010101
-011e0104a52f1d7822a5c5a6544f9c23
-125054bfef00d1c0b300950081808140
-81c03140b300023a801871382d40582c
-4500da281100001e662156aa51001e30
-468f3300da281100001e000000fd0030
-4c1e5511000a202020202020000000fc
-003130303030323438300a2020200043
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 3d ce 00 00 01 01 01 01
+01 1e 01 04 a5 2f 1d 78 22 a5 c5 a6 54 4f 9c 23
+12 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 31 40 b3 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 da 28 11 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 da 28 11 00 00 1e 00 00 00 fd 00 30
+4c 1e 55 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 31 30 30 30 30 32 34 38 30 0a 20 20 20 00 43
 
 00 ff ff ff ff ff ff 00 3d ce 00 00 01 01 01 01
 01 1e 01 04 a5 2f 1d 78 22 a5 c5 a6 54 4f 9c 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ONN
     Model: 0
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 1 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -78,3 +76,34 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 48-76 Hz V, 30-85 kHz H, max dotclock 170 MHz
     Display Product Name: '100002480'
 Checksum: 0x43
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 3d ce 00 00 01 01 01 01 '........=.......'
+  01 1e 01 04 a5 2f 1d 78 22 a5 c5 a6 54 4f 9c 23 '...../.x"...TO.#'
+  12 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 31 40 b3 00 02 3a 80 18 71 38 2d 40 58 2c '..1@...:..q8-@X,'
+  45 00 da 28 11 00 00 1e 66 21 56 aa 51 00 1e 30 'E..(....f!V.Q..0'
+  46 8f 33 00 da 28 11 00 00 1e 00 00 00 fd 00 30 'F.3..(.........0'
+  4c 1e 55 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.U...      ....'
+  00 31 30 30 30 30 32 34 38 30 0a 20 20 20 00 43 '.100002480.   .C'
+Checksum: 0x43
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff000cae209300000000
-1e1e010380341d782a1e61a855529b25
-115054bfef00d1c081803168317c4568
-457c6168617c023a801871382d40582c
-450009252100001efc7e808870381240
-1820350009252100001e000000fc0045
-564741205852312050726f0a000000fd
-0030791e790f000a2020202020200107
-020336c14b101f051404130312021101
-38097f070f7f071507503e1fc04d0200
-5706006754005f5401835f000068030c
-00110080210000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000026
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0c ae 20 93 00 00 00 00
+1e 1e 01 03 80 34 1d 78 2a 1e 61 a8 55 52 9b 25
+11 50 54 bf ef 00 d1 c0 81 80 31 68 31 7c 45 68
+45 7c 61 68 61 7c 02 3a 80 18 71 38 2d 40 58 2c
+45 00 09 25 21 00 00 1e fc 7e 80 88 70 38 12 40
+18 20 35 00 09 25 21 00 00 1e 00 00 00 fc 00 45
+56 47 41 20 58 52 31 20 50 72 6f 0a 00 00 00 fd
+00 30 79 1e 79 0f 00 0a 20 20 20 20 20 20 01 07
+
+02 03 36 c1 4b 10 1f 05 14 04 13 03 12 02 11 01
+38 09 7f 07 0f 7f 07 15 07 50 3e 1f c0 4d 02 00
+57 06 00 67 54 00 5f 54 01 83 5f 00 00 68 03 0c
+00 11 00 80 21 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 26
 
 00 ff ff ff ff ff ff 00 0c ae 20 93 00 00 00 00
 1e 1e 01 03 80 34 1d 78 2a 1e 61 a8 55 52 9b 25
@@ -157,3 +156,119 @@ Block 1, CTA-861 Extension Block:
     Supports_AI
     Maximum TMDS clock: 165 MHz
 Checksum: 0x26  Unused space in Extension Block: 73 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0c ae 20 93 00 00 00 00 '.......... .....'
+  1e 1e 01 03 80 34 1d 78 2a 1e 61 a8 55 52 9b 25 '.....4.x*.a.UR.%'
+  11 50 54 bf ef 00 d1 c0 81 80 31 68 31 7c 45 68 '.PT.......1h1|Eh'
+  45 7c 61 68 61 7c 02 3a 80 18 71 38 2d 40 58 2c 'E|aha|.:..q8-@X,'
+  45 00 09 25 21 00 00 1e fc 7e 80 88 70 38 12 40 'E..%!....~..p8.@'
+  18 20 35 00 09 25 21 00 00 1e 00 00 00 fc 00 45 '. 5..%!........E'
+  56 47 41 20 58 52 31 20 50 72 6f 0a 00 00 00 fd 'VGA XR1 Pro.....'
+  00 30 79 1e 79 0f 00 0a 20 20 20 20 20 20 01 07 '.0y.y...      ..'
+Checksum: 0x07
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    Linear PCM:
+      Max channels: 8
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    AC-3:
+      Max channels: 6
+      Supported sample rates (kHz): 48 44.1 32
+      Maximum bit rate: 640 kb/s
+    DTS:
+      Max channels: 7
+      Supported sample rates (kHz): 96 88.2 48 44.1 32
+      Maximum bit rate: 1536 kb/s
+    One Bit Audio:
+      Max channels: 6
+      Supported sample rates (kHz): 44.1
+      Audio Format Code dependent value: 0x00
+    Enhanced AC-3 (DD+):
+      Max channels: 8
+      Supported sample rates (kHz): 48 44.1
+    MAT (MLP):
+      Max channels: 8
+      Supported sample rates (kHz): 192 96 48
+      Supports only Dolby TrueHD
+    DTS-HD:
+      Max channels: 8
+      Supported sample rates (kHz): 192 96 48
+      Audio Format Code dependent value: 0x01
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+    LFE1 - Low Frequency Effects 1
+    FC - Front Center
+    BL/BR - Back Left/Right
+    BC - Back Center
+    RLC/RRC - Rear Left/Right of Center (Deprecated)
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.1.0.0
+    Supports_AI
+    Maximum TMDS clock: 165 MHz
+Checksum: 0x26  Unused space in Extension Block: 73 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 144.001 Hz (Monitor: 48.000 - 121.000 Hz)
+    Horizontal Freq: 28.125 - 158.112 kHz (Monitor: 30.000 - 121.000 kHz)
+    Maximum Clock: 325.080 MHz (Monitor: 150.000 MHz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

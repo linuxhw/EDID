@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0034ac8b4801010101
-1716010380331d78eae295a2554f9f26
-115054bfef80714f8180814fa9c0b300
-010101010101023a801871382d40582c
-4500fd1e1100001e000000fd00384c1f
-5210000a202020202020000000fc0052
-445432333457580a20202020000000ff
-003236323035343932414a0a202000e1
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 ac 8b 48 01 01 01 01
+17 16 01 03 80 33 1d 78 ea e2 95 a2 55 4f 9f 26
+11 50 54 bf ef 80 71 4f 81 80 81 4f a9 c0 b3 00
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 38 4c 1f
+52 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 52
+44 54 32 33 34 57 58 0a 20 20 20 20 00 00 00 ff
+00 32 36 32 30 35 34 39 32 41 4a 0a 20 20 00 e1
 
 00 ff ff ff ff ff ff 00 34 ac 8b 48 01 01 01 01
 17 16 01 03 80 33 1d 78 ea e2 95 a2 55 4f 9f 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MEL
     Model: 18571
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 23 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -70,5 +68,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-82 kHz H, max dotclock 160 MHz
     Display Product Name: 'RDT234WX'
-    Display Product Serial Number: '26205492AJ'
+    Display Product Serial Number: ...
 Checksum: 0xe1
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 34 ac 8b 48 01 01 01 01 '........4..H....'
+  17 16 01 03 80 33 1d 78 ea e2 95 a2 55 4f 9f 26 '.....3.x....UO.&'
+  11 50 54 bf ef 80 71 4f 81 80 81 4f a9 c0 b3 00 '.PT...qO...O....'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 38 4c 1f 'E............8L.'
+  52 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 52 'R...      .....R'
+  44 54 32 33 34 57 58 0a 20 20 20 20 00 00 00 ff 'DT234WX.    ....'
+  00 32 36 32 30 35 34 39 32 41 4a 0a 20 20 00 e1 '.26205492AJ.  ..'
+Checksum: 0xe1
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

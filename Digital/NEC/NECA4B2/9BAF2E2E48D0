@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0038a3b2a401010101
-1b0e0103805c34782a00e5a05a27ba25
-17424eafcf008180a940010101010101
-0101010101012f0d50f030e025101070
-680094063200001e662150b051001b30
-4070360099063200001e000000fd0032
-78185b10000a202020202020000000fc
-0050582d3432564d352f5650350a0050
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 a3 b2 a4 01 01 01 01
+1b 0e 01 03 80 5c 34 78 2a 00 e5 a0 5a 27 ba 25
+17 42 4e af cf 00 81 80 a9 40 01 01 01 01 01 01
+01 01 01 01 01 01 2f 0d 50 f0 30 e0 25 10 10 70
+68 00 94 06 32 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 99 06 32 00 00 1e 00 00 00 fd 00 32
+78 18 5b 10 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 58 2d 34 32 56 4d 35 2f 56 50 35 0a 00 50
 
 00 ff ff ff ff ff ff 00 38 a3 b2 a4 01 01 01 01
 1b 0e 01 03 80 5c 34 78 2a 00 e5 a0 5a 27 ba 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: NEC
     Model: 42162
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 27 of 2004
   Basic Display Parameters & Features:
     Digital display
@@ -68,3 +66,34 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 50-120 Hz V, 24-91 kHz H, max dotclock 160 MHz
     Display Product Name: 'PX-42VM5/VP5'
 Checksum: 0x50
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 38 a3 b2 a4 01 01 01 01 '........8.......'
+  1b 0e 01 03 80 5c 34 78 2a 00 e5 a0 5a 27 ba 25 '.....\4x*...Z'.%'
+  17 42 4e af cf 00 81 80 a9 40 01 01 01 01 01 01 '.BN......@......'
+  01 01 01 01 01 01 2f 0d 50 f0 30 e0 25 10 10 70 '....../.P.0.%..p'
+  68 00 94 06 32 00 00 1e 66 21 50 b0 51 00 1b 30 'h...2...f!P.Q..0'
+  40 70 36 00 99 06 32 00 00 1e 00 00 00 fd 00 32 '@p6...2........2'
+  78 18 5b 10 00 0a 20 20 20 20 20 20 00 00 00 fc 'x.[...      ....'
+  00 50 58 2d 34 32 56 4d 35 2f 56 50 35 0a 00 50 '.PX-42VM5/VP5..P'
+Checksum: 0x50
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 162.000 MHz (Monitor: 160.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

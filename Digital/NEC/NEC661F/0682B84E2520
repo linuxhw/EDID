@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0038a31f669b010000
-1c0d010380261e6eeeee95a3544c9926
-0f5054bfee8081800101010101010101
-010101010101302a009851002a403070
-1300782d1100001e000000fd00384b1f
-500e000a202020202020000000fc004e
-4543204c4344313936304e58000000ff
-00333730303034313159420a2020009f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 38 a3 1f 66 9b 01 00 00
+1c 0d 01 03 80 26 1e 6e ee ee 95 a3 54 4c 99 26
+0f 50 54 bf ee 80 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4b 1f
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4e
+45 43 20 4c 43 44 31 39 36 30 4e 58 00 00 00 ff
+00 33 37 30 30 30 34 31 31 59 42 0a 20 20 00 9f
 
 00 ff ff ff ff ff ff 00 38 a3 1f 66 9b 01 00 00
 1c 0d 01 03 80 26 1e 6e ee ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: NEC
     Model: 26143
-    Serial Number: 411
+    Serial Number: ...
     Made in: week 28 of 2003
   Basic Display Parameters & Features:
     Digital display
@@ -66,5 +64,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 31-80 kHz H, max dotclock 140 MHz
     Display Product Name: 'NEC LCD1960NX'
-    Display Product Serial Number: '37000411YB'
+    Display Product Serial Number: ...
 Checksum: 0x9f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 38 a3 1f 66 9b 01 00 00 '........8..f....'
+  1c 0d 01 03 80 26 1e 6e ee ee 95 a3 54 4c 99 26 '.....&.n....TL.&'
+  0f 50 54 bf ee 80 81 80 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4b 1f '..x-.........8K.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4e 'P...      .....N'
+  45 43 20 4c 43 44 31 39 36 30 4e 58 00 00 00 ff 'EC LCD1960NX....'
+  00 33 37 30 30 30 34 31 31 59 42 0a 20 20 00 9f '.37000411YB.  ..'
+Checksum: 0x9f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00052f000001040000
-14200104a52b1d78028042ac5130b425
-10505300000001010101010101010101
-010101010101932300a050001e405020
-3700064d2100001aa51d00a050001e40
-50203700064d2100001a000000fe000a
-202020202020202020202020000000fe
-00313238307831303234202020200014
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 2f 00 00 01 04 00 00
+14 20 01 04 a5 2b 1d 78 02 80 42 ac 51 30 b4 25
+10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 93 23 00 a0 50 00 1e 40 50 20
+37 00 06 4d 21 00 00 1a a5 1d 00 a0 50 00 1e 40
+50 20 37 00 06 4d 21 00 00 1a 00 00 00 fe 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 31 32 38 30 78 31 30 32 34 20 20 20 20 00 14
 
 00 ff ff ff ff ff ff 00 05 2f 00 00 01 04 00 00
 14 20 01 04 a5 2b 1d 78 02 80 42 ac 51 30 b4 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AIO
     Model: 0
-    Serial Number: 1025
+    Serial Number: ...
     Made in: week 20 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -54,3 +52,38 @@ Block 0, Base EDID:
     Alphanumeric Data String: ''
     Alphanumeric Data String: '1280x1024    '
 Checksum: 0x14
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 2f 00 00 01 04 00 00 '........./......'
+  14 20 01 04 a5 2b 1d 78 02 80 42 ac 51 30 b4 25 '. ...+.x..B.Q0.%'
+  10 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PS.............'
+  01 01 01 01 01 01 93 23 00 a0 50 00 1e 40 50 20 '.......#..P..@P '
+  37 00 06 4d 21 00 00 1a a5 1d 00 a0 50 00 1e 40 '7..M!.......P..@'
+  50 20 37 00 06 4d 21 00 00 1a 00 00 00 fe 00 0a 'P 7..M!.........'
+  20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fe '            ....'
+  00 31 32 38 30 78 31 30 32 34 20 20 20 20 00 14 '.1280x1024    ..'
+Checksum: 0x14
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 518x333 mm vs display size 430x290 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 518x333 mm vs display size 430x290 mm.
+  Alphanumeric Data String: Empty string.
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 518x333mm, which is larger than the display size 430.0x290.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

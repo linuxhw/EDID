@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003ac4000700000000
-2d0c010380201200eaa8e099574b9225
-1c505400000001010101010101010101
-010101010101242740be608420303020
-250042b510000018000000fc004e7669
-6469612044656661756c000000fc0074
-20466c61742050616e656c00000000fd
-00003d1d390b000020202020200000a3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 3a c4 00 07 00 00 00 00
+2d 0c 01 03 80 20 12 00 ea a8 e0 99 57 4b 92 25
+1c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 24 27 40 be 60 84 20 30 30 20
+25 00 42 b5 10 00 00 18 00 00 00 fc 00 4e 76 69
+64 69 61 20 44 65 66 61 75 6c 00 00 00 fc 00 74
+20 46 6c 61 74 20 50 61 6e 65 6c 00 00 00 00 fd
+00 00 3d 1d 39 0b 00 00 20 20 20 20 20 00 00 a3
 
 00 ff ff ff ff ff ff 00 3a c4 00 07 00 00 00 00
 2d 0c 01 03 80 20 12 00 ea a8 e0 99 57 4b 92 25
@@ -51,3 +49,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 0-61 Hz V, 29-57 kHz H, max dotclock 110 MHz
 Checksum: 0xa3
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 3a c4 00 07 00 00 00 00 '........:.......'
+  2d 0c 01 03 80 20 12 00 ea a8 e0 99 57 4b 92 25 '-.... ......WK.%'
+  1c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 24 27 40 be 60 84 20 30 30 20 '......$'@.`. 00 '
+  25 00 42 b5 10 00 00 18 00 00 00 fc 00 4e 76 69 '%.B..........Nvi'
+  64 69 61 20 44 65 66 61 75 6c 00 00 00 fc 00 74 'dia Defaul.....t'
+  20 46 6c 61 74 20 50 61 6e 65 6c 00 00 00 00 fd ' Flat Panel.....'
+  00 00 3d 1d 39 0b 00 00 20 20 20 20 20 00 00 a3 '..=.9...     ...'
+Checksum: 0xa3
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: Non-printable character.
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
