@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6da1573b120400
-06140103e0301b78ea3335a5554d9d25
-115054a54b00b3008180818f714f0101
-010101010101023a801871382d40582c
-4500dd0c1100001a000000fd00384b1e
-530f000a202020202020000000fc0057
-323234300a20202020202020000000ff
-003030364e444d5437553831310a0057
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d a1 57 3b 12 04 00
+06 14 01 03 e0 30 1b 78 ea 33 35 a5 55 4d 9d 25
+11 50 54 a5 4b 00 b3 00 81 80 81 8f 71 4f 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1a 00 00 00 fd 00 38 4b 1e
+53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 57
+32 32 34 30 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 30 30 36 4e 44 4d 54 37 55 38 31 31 0a 00 57
 
 00 ff ff ff ff ff ff 00 1e 6d a1 57 3b 12 04 00
 06 14 01 03 e0 30 1b 78 ea 33 35 a5 55 4d 9d 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 22433
-    Serial Number: 266811
+    Serial Number: ...
     Made in: week 6 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -62,5 +60,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 150 MHz
     Display Product Name: 'W2240'
-    Display Product Serial Number: '006NDMT7U811'
+    Display Product Serial Number: ...
 Checksum: 0x57
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d a1 57 3b 12 04 00 '.........m.W;...'
+  06 14 01 03 e0 30 1b 78 ea 33 35 a5 55 4d 9d 25 '.....0.x.35.UM.%'
+  11 50 54 a5 4b 00 b3 00 81 80 81 8f 71 4f 01 01 '.PT.K.......qO..'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1a 00 00 00 fd 00 38 4b 1e 'E............8K.'
+  53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 57 'S...      .....W'
+  32 32 34 30 0a 20 20 20 20 20 20 20 00 00 00 ff '2240.       ....'
+  00 30 30 36 4e 44 4d 54 37 55 38 31 31 0a 00 57 '.006NDMT7U811..W'
+Checksum: 0x57
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x60.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

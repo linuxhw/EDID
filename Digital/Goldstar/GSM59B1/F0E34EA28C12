@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6db159492d0600
-01180103803c2278ea3135a5554ea126
-0c5054a54b00714f8180818fb3000101
-010101010101023a801871382d40582c
-4500dd0c1100001e000000fd00384b1e
-530f000a202020202020000000fc0032
-37454232320a202020202020000000ff
-003430314e44574542573830390a0042
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d b1 59 49 2d 06 00
+01 18 01 03 80 3c 22 78 ea 31 35 a5 55 4e a1 26
+0c 50 54 a5 4b 00 71 4f 81 80 81 8f b3 00 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 32
+37 45 42 32 32 0a 20 20 20 20 20 20 00 00 00 ff
+00 34 30 31 4e 44 57 45 42 57 38 30 39 0a 00 42
 
 00 ff ff ff ff ff ff 00 1e 6d b1 59 49 2d 06 00
 01 18 01 03 80 3c 22 78 ea 31 35 a5 55 4e a1 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 22961
-    Serial Number: 404809
+    Serial Number: ...
     Made in: week 1 of 2014
   Basic Display Parameters & Features:
     Digital display
@@ -62,7 +60,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 150 MHz
     Display Product Name: '27EB22'
-    Display Product Serial Number: '401NDWEBW809'
+    Display Product Serial Number: ...
 Checksum: 0x42
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d b1 59 49 2d 06 00 '.........m.YI-..'
+  01 18 01 03 80 3c 22 78 ea 31 35 a5 55 4e a1 26 '.....<"x.15.UN.&'
+  0c 50 54 a5 4b 00 71 4f 81 80 81 8f b3 00 01 01 '.PT.K.qO........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 38 4b 1e 'E............8K.'
+  53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 32 'S...      .....2'
+  37 45 42 32 32 0a 20 20 20 20 20 20 00 00 00 ff '7EB22.      ....'
+  00 34 30 31 4e 44 57 45 42 57 38 30 39 0a 00 42 '.401NDWEBW809..B'
+Checksum: 0x42
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 477x268 mm vs display size 600x340 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

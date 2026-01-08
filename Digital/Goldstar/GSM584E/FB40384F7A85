@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6d4e5801010101
-01140104a5351e78e2ba45a159559d28
-0d5054a56b80714f81c0810081809500
-9040a9c0b300023a801871382d40582c
-4500132b2100001a000000fd00384b1e
-530f000a202020202020000000fc004d
-32343530440a202020202020000000fc
-000a202020202020202020202020006f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 4e 58 01 01 01 01
+01 14 01 04 a5 35 1e 78 e2 ba 45 a1 59 55 9d 28
+0d 50 54 a5 6b 80 71 4f 81 c0 81 00 81 80 95 00
+90 40 a9 c0 b3 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2b 21 00 00 1a 00 00 00 fd 00 38 4b 1e
+53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4d
+32 34 35 30 44 0a 20 20 20 20 20 20 00 00 00 fc
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 6f
 
 00 ff ff ff ff ff ff 00 1e 6d 4e 58 01 01 01 01
 01 14 01 04 a5 35 1e 78 e2 ba 45 a1 59 55 9d 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 22606
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 1 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -72,3 +70,36 @@ Block 0, Base EDID:
     Display Product Name: 'M2450D'
     Display Product Name: ''
 Checksum: 0x6f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 4e 58 01 01 01 01 '.........mNX....'
+  01 14 01 04 a5 35 1e 78 e2 ba 45 a1 59 55 9d 28 '.....5.x..E.YU.('
+  0d 50 54 a5 6b 80 71 4f 81 c0 81 00 81 80 95 00 '.PT.k.qO........'
+  90 40 a9 c0 b3 00 02 3a 80 18 71 38 2d 40 58 2c '.@.....:..q8-@X,'
+  45 00 13 2b 21 00 00 1a 00 00 00 fd 00 38 4b 1e 'E..+!........8K.'
+  53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4d 'S...      .....M'
+  32 34 35 30 44 0a 20 20 20 20 20 20 00 00 00 fc '2450D.      ....'
+  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 6f '..            .o'
+Checksum: 0x6f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Product Name: Empty string.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

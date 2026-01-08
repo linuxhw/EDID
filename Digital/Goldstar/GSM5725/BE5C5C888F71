@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6d2557b6600300
-0414010380331c78eac9a5a4564b9d25
-125054a56b808180818f7140b300814f
-d1c0010101011a3680a070381f403020
-3500fd1e1100001a21399030621a2740
-68b03600fd1e1100001c000000fd0038
-4b1e5311000a202020202020000000fc
-004d32333757410a202020202020001c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 25 57 b6 60 03 00
+04 14 01 03 80 33 1c 78 ea c9 a5 a4 56 4b 9d 25
+12 50 54 a5 6b 80 81 80 81 8f 71 40 b3 00 81 4f
+d1 c0 01 01 01 01 1a 36 80 a0 70 38 1f 40 30 20
+35 00 fd 1e 11 00 00 1a 21 39 90 30 62 1a 27 40
+68 b0 36 00 fd 1e 11 00 00 1c 00 00 00 fd 00 38
+4b 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4d 32 33 37 57 41 0a 20 20 20 20 20 20 00 1c
 
 00 ff ff ff ff ff ff 00 1e 6d 25 57 b6 60 03 00
 04 14 01 03 80 33 1c 78 ea c9 a5 a4 56 4b 9d 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 22309
-    Serial Number: 221366
+    Serial Number: ...
     Made in: week 4 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -70,3 +68,27 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'M237WA'
 Checksum: 0x1c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 25 57 b6 60 03 00 '.........m%W.`..'
+  04 14 01 03 80 33 1c 78 ea c9 a5 a4 56 4b 9d 25 '.....3.x....VK.%'
+  12 50 54 a5 6b 80 81 80 81 8f 71 40 b3 00 81 4f '.PT.k.....q@...O'
+  d1 c0 01 01 01 01 1a 36 80 a0 70 38 1f 40 30 20 '.......6..p8.@0 '
+  35 00 fd 1e 11 00 00 1a 21 39 90 30 62 1a 27 40 '5.......!9.0b.'@'
+  68 b0 36 00 fd 1e 11 00 00 1c 00 00 00 fd 00 38 'h.6............8'
+  4b 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 4d 32 33 37 57 41 0a 20 20 20 20 20 20 00 1c '.M237WA.      ..'
+Checksum: 0x1c
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

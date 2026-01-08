@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6d025a416c0000
-03180103803c2278ea3135a5554ea126
-0c5054a54b00714f81809500b300a9c0
-810081c09040023a801871382d40582c
-450056512100001e000000fd00384b1e
-530f000a202020202020000000fc0032
-37454333330a202020202020000000ff
-003430334d58544330543731330a007f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 02 5a 41 6c 00 00
+03 18 01 03 80 3c 22 78 ea 31 35 a5 55 4e a1 26
+0c 50 54 a5 4b 00 71 4f 81 80 95 00 b3 00 a9 c0
+81 00 81 c0 90 40 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 51 21 00 00 1e 00 00 00 fd 00 38 4b 1e
+53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 32
+37 45 43 33 33 0a 20 20 20 20 20 20 00 00 00 ff
+00 34 30 33 4d 58 54 43 30 54 37 31 33 0a 00 7f
 
 00 ff ff ff ff ff ff 00 1e 6d 02 5a 41 6c 00 00
 03 18 01 03 80 3c 22 78 ea 31 35 a5 55 4e a1 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 23042
-    Serial Number: 27713
+    Serial Number: ...
     Made in: week 3 of 2014
   Basic Display Parameters & Features:
     Digital display
@@ -66,7 +64,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 150 MHz
     Display Product Name: '27EC33'
-    Display Product Serial Number: '403MXTC0T713'
+    Display Product Serial Number: ...
 Checksum: 0x7f
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 02 5a 41 6c 00 00 '.........m.ZAl..'
+  03 18 01 03 80 3c 22 78 ea 31 35 a5 55 4e a1 26 '.....<"x.15.UN.&'
+  0c 50 54 a5 4b 00 71 4f 81 80 95 00 b3 00 a9 c0 '.PT.K.qO........'
+  81 00 81 c0 90 40 02 3a 80 18 71 38 2d 40 58 2c '.....@.:..q8-@X,'
+  45 00 56 51 21 00 00 1e 00 00 00 fd 00 38 4b 1e 'E.VQ!........8K.'
+  53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 32 'S...      .....2'
+  37 45 43 33 33 0a 20 20 20 20 20 20 00 00 00 ff '7EC33.      ....'
+  00 34 30 33 4d 58 54 43 30 54 37 31 33 0a 00 7f '.403MXTC0T713...'
+Checksum: 0x7f
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

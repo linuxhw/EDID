@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6da85731260600
-02140103e0331d78ea3231a4564d9c25
-125054a76b80b30081808140714f0101
-010101010101023a801871382d40582c
-4500fe221100001e000000fd00384b1e
-530f000a202020202020000000fc0057
-323334300a20202020202020000000ff
-003030324e44484242553939330a00be
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d a8 57 31 26 06 00
+02 14 01 03 e0 33 1d 78 ea 32 31 a4 56 4d 9c 25
+12 50 54 a7 6b 80 b3 00 81 80 81 40 71 4f 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fe 22 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 57
+32 33 34 30 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 30 30 32 4e 44 48 42 42 55 39 39 33 0a 00 be
 
 00 ff ff ff ff ff ff 00 1e 6d a8 57 31 26 06 00
 02 14 01 03 e0 33 1d 78 ea 32 31 a4 56 4d 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 22440
-    Serial Number: 402993
+    Serial Number: ...
     Made in: week 2 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -65,5 +63,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 150 MHz
     Display Product Name: 'W2340'
-    Display Product Serial Number: '002NDHBBU993'
+    Display Product Serial Number: ...
 Checksum: 0xbe
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d a8 57 31 26 06 00 '.........m.W1&..'
+  02 14 01 03 e0 33 1d 78 ea 32 31 a4 56 4d 9c 25 '.....3.x.21.VM.%'
+  12 50 54 a7 6b 80 b3 00 81 80 81 40 71 4f 01 01 '.PT.k......@qO..'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fe 22 11 00 00 1e 00 00 00 fd 00 38 4b 1e 'E..".........8K.'
+  53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 57 'S...      .....W'
+  32 33 34 30 0a 20 20 20 20 20 20 20 00 00 00 ff '2340.       ....'
+  00 30 30 32 4e 44 48 42 42 55 39 39 33 0a 00 be '.002NDHBBU993...'
+Checksum: 0xbe
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x60.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
