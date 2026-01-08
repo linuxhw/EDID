@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00158f0022f3160000
-2f1201036e2f1d78ee7545a5564a9a25
-125054bfeb006145614c714f81408180
-8bc0010101017c2e90a0601a1e403020
-3600d9281100001a6829a0d051842230
-5098360098ff1000001cfc2100905100
-203048803700d9281100001c000000fd
-00384b1e4b10000a20202020202000e5
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 8f 00 22 f3 16 00 00
+2f 12 01 03 6e 2f 1d 78 ee 75 45 a5 56 4a 9a 25
+12 50 54 bf eb 00 61 45 61 4c 71 4f 81 40 81 80
+8b c0 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20
+36 00 d9 28 11 00 00 1a 68 29 a0 d0 51 84 22 30
+50 98 36 00 98 ff 10 00 00 1c fc 21 00 90 51 00
+20 30 48 80 37 00 d9 28 11 00 00 1c 00 00 00 fd
+00 38 4b 1e 4b 10 00 0a 20 20 20 20 20 20 00 e5
 
 00 ff ff ff ff ff ff 00 15 8f 00 22 f3 16 00 00
 2f 12 01 03 6e 2f 1d 78 ee 75 45 a5 56 4a 9a 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ELO
     Model: 8704
-    Serial Number: 5875
+    Serial Number: ...
     Made in: week 47 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -80,4 +78,37 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 56-75 Hz V, 30-75 kHz H, max dotclock 160 MHz
 Checksum: 0xe5
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 15 8f 00 22 f3 16 00 00 '..........."....'
+  2f 12 01 03 6e 2f 1d 78 ee 75 45 a5 56 4a 9a 25 '/...n/.x.uE.VJ.%'
+  12 50 54 bf eb 00 61 45 61 4c 71 4f 81 40 81 80 '.PT...aEaLqO.@..'
+  8b c0 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20 '......|...`..@0 '
+  36 00 d9 28 11 00 00 1a 68 29 a0 d0 51 84 22 30 '6..(....h)..Q."0'
+  50 98 36 00 98 ff 10 00 00 1c fc 21 00 90 51 00 'P.6........!..Q.'
+  20 30 48 80 37 00 d9 28 11 00 00 1c 00 00 00 fd ' 0H.7..(........'
+  00 38 4b 1e 4b 10 00 0a 20 20 20 20 20 20 00 e5 '.8K.K...      ..'
+Checksum: 0xe5
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #2: Mismatch of image size 408x255 mm vs display size 470x290 mm.
+  Missing Display Product Name.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 30.000 - 75.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,0 +1,95 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1a aa 19 11 78 03 00 45
+17 09 01 02 6c 24 1d 78 ea 38 42 9c 56 51 99 25
+18 4e 4f a5 4f 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 67 1f 11 00 00 1e 64 19 00 40 41 00 26 30
+18 88 36 00 67 1f 11 00 00 18 00 00 00 fc 00 46
+55 4a 49 54 53 55 20 78 31 38 30 66 00 00 00 fd
+00 38 4b 18 50 0e 00 0a 20 20 20 20 20 20 00 87
+
+00 ff ff ff ff ff ff 00 1a aa 19 11 78 03 00 45
+17 09 01 02 6c 24 1d 78 ea 38 42 9c 56 51 99 25
+18 4e 4f a5 4f 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 67 1f 11 00 00 1e 64 19 00 40 41 00 26 30
+18 88 36 00 67 1f 11 00 00 18 00 00 00 fc 00 46
+55 4a 49 54 53 55 20 78 31 38 30 66 00 00 00 fd
+00 38 4b 18 50 0e 00 0a 20 20 20 20 20 20 00 87
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: FUJ
+    Model: 4377
+    Serial Number: ...
+    Made in: week 23 of 1999
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.000 : 0.700 V p-p
+    Blank level equals black level
+    Sync: Separate Composite
+    Maximum image size: 36 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6093, 0.3388
+    Green: 0.3183, 0.5976
+    Blue : 0.1455, 0.0937
+    White: 0.3046, 0.3105
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (359 mm x 287 mm)
+                 Hfront   48 Hsync 112 Hback  248 Hpol P
+                 Vfront    1 Vsync   3 Vback   38 Vpol P
+    DTD 2:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (359 mm x 287 mm)
+                 Hfront   24 Hsync 136 Hback  160 Hpol N
+                 Vfront    3 Vsync   6 Vback   29 Vpol N
+    Display Product Name: 'FUJITSU x180f'
+    Display Range Limits:
+      Monitor ranges (GTF): 56-75 Hz V, 24-80 kHz H, max dotclock 140 MHz
+Checksum: 0x87
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1a aa 19 11 78 03 00 45 '............x..E'
+  17 09 01 02 6c 24 1d 78 ea 38 42 9c 56 51 99 25 '....l$.x.8B.VQ.%'
+  18 4e 4f a5 4f 00 01 01 01 01 01 01 01 01 01 01 '.NO.O...........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 67 1f 11 00 00 1e 64 19 00 40 41 00 26 30 '..g.....d..@A.&0'
+  18 88 36 00 67 1f 11 00 00 18 00 00 00 fc 00 46 '..6.g..........F'
+  55 4a 49 54 53 55 20 78 31 38 30 66 00 00 00 fd 'UJITSU x180f....'
+  00 38 4b 18 50 0e 00 0a 20 20 20 20 20 20 00 87 '.8K.P...      ..'
+Checksum: 0x87
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

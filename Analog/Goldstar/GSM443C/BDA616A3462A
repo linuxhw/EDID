@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6d3c443b3d0100
-261001036e221b78eadc55a359489e24
-115054bfef80314f454f614f81800101
-010101010101302a009851002a403070
-1300520e1100001e000000fd00324b1e
-530e000a202020202020000000fc004c
-31373138530a202020202020000000fc
-00200a202020202020202020202000e6
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 3c 44 3b 3d 01 00
+26 10 01 03 6e 22 1b 78 ea dc 55 a3 59 48 9e 24
+11 50 54 bf ef 80 31 4f 45 4f 61 4f 81 80 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 fd 00 32 4b 1e
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+31 37 31 38 53 0a 20 20 20 20 20 20 00 00 00 fc
+00 20 0a 20 20 20 20 20 20 20 20 20 20 20 00 e6
 
 00 ff ff ff ff ff ff 00 1e 6d 3c 44 3b 3d 01 00
 26 10 01 03 6e 22 1b 78 ea dc 55 a3 59 48 9e 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 17468
-    Serial Number: 81211
+    Serial Number: ...
     Made in: week 38 of 2006
   Basic Display Parameters & Features:
     Analog display
@@ -75,4 +73,28 @@ Block 0, Base EDID:
     Display Product Name: ' '
 Checksum: 0xe6
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 3c 44 3b 3d 01 00 '.........m<D;=..'
+  26 10 01 03 6e 22 1b 78 ea dc 55 a3 59 48 9e 24 '&...n".x..U.YH.$'
+  11 50 54 bf ef 80 31 4f 45 4f 61 4f 81 80 01 01 '.PT...1OEOaO....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 fd 00 32 4b 1e '..R..........2K.'
+  53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'S...      .....L'
+  31 37 31 38 53 0a 20 20 20 20 20 20 00 00 00 fc '1718S.      ....'
+  00 20 0a 20 20 20 20 20 20 20 20 20 20 20 00 e6 '. .           ..'
+Checksum: 0xe6
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

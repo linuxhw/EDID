@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001ab3400501000000
-290e0103681f17782a061aa25a4c9625
-194f54a54a00314f454f614f01010101
-01010101010164190040410026301888
-360030e410000018000000fc00543135
-2d310a20202020202020000000fd0037
-4e1c3f08000a202020202020000000ff
-00594545463033303039310a2020002a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1a b3 40 05 01 00 00 00
+29 0e 01 03 68 1f 17 78 2a 06 1a a2 5a 4c 96 25
+19 4f 54 a5 4a 00 31 4f 45 4f 61 4f 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 30 e4 10 00 00 18 00 00 00 fc 00 54 31 35
+2d 31 0a 20 20 20 20 20 20 20 00 00 00 fd 00 37
+4e 1c 3f 08 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 59 45 45 46 30 33 30 30 39 31 0a 20 20 00 2a
 
 00 ff ff ff ff ff ff 00 1a b3 40 05 01 00 00 00
 29 0e 01 03 68 1f 17 78 2a 06 1a a2 5a 4c 96 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: FUS
     Model: 1344
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 41 of 2004
   Basic Display Parameters & Features:
     Analog display
@@ -63,7 +61,29 @@ Block 0, Base EDID:
     Display Product Name: 'T15-1'
     Display Range Limits:
       Monitor ranges (GTF): 55-78 Hz V, 28-63 kHz H, max dotclock 80 MHz
-    Display Product Serial Number: 'YEEF030091'
+    Display Product Serial Number: ...
 Checksum: 0x2a
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1a b3 40 05 01 00 00 00 '..........@.....'
+  29 0e 01 03 68 1f 17 78 2a 06 1a a2 5a 4c 96 25 ')...h..x*...ZL.%'
+  19 4f 54 a5 4a 00 31 4f 45 4f 61 4f 01 01 01 01 '.OT.J.1OEOaO....'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 30 e4 10 00 00 18 00 00 00 fc 00 54 31 35 '6.0..........T15'
+  2d 31 0a 20 20 20 20 20 20 20 00 00 00 fd 00 37 '-1.       .....7'
+  4e 1c 3f 08 00 0a 20 20 20 20 20 20 00 00 00 ff 'N.?...      ....'
+  00 59 45 45 46 30 33 30 30 39 31 0a 20 20 00 2a '.YEEF030091.  .*'
+Checksum: 0x2a
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

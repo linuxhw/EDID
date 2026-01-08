@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00160980e937950000
-260d010368261e782a4562a1584b9924
-134e53bfef00315945596159714f8140
-815981808199863d00c05100304040a0
-13007c311100001e000000ff00303937
-33394a41303338313939000000fd0037
-551f5f10000a202020202020000000fc
-00454e393131300a20202020202000df
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 16 09 80 e9 37 95 00 00
+26 0d 01 03 68 26 1e 78 2a 45 62 a1 58 4b 99 24
+13 4e 53 bf ef 00 31 59 45 59 61 59 71 4f 81 40
+81 59 81 80 81 99 86 3d 00 c0 51 00 30 40 40 a0
+13 00 7c 31 11 00 00 1e 00 00 00 ff 00 30 39 37
+33 39 4a 41 30 33 38 31 39 39 00 00 00 fd 00 37
+55 1f 5f 10 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 45 4e 39 31 31 30 0a 20 20 20 20 20 20 00 df
 
 00 ff ff ff ff ff ff 00 16 09 80 e9 37 95 00 00
 26 0d 01 03 68 26 1e 78 2a 45 62 a1 58 4b 99 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: EPI
     Model: 59776
-    Serial Number: 38199
+    Serial Number: ...
     Made in: week 38 of 2003
   Basic Display Parameters & Features:
     Analog display
@@ -72,8 +70,32 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   85.024098 Hz   5:4     91.146 kHz    157.500000 MHz (380 mm x 305 mm)
                  Hfront   64 Hsync 160 Hback  224 Hpol P
                  Vfront    1 Vsync   3 Vback   44 Vpol P
-    Display Product Serial Number: '09739JA038199'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-85 Hz V, 31-95 kHz H, max dotclock 160 MHz
     Display Product Name: 'EN9110'
 Checksum: 0xdf
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 16 09 80 e9 37 95 00 00 '............7...'
+  26 0d 01 03 68 26 1e 78 2a 45 62 a1 58 4b 99 24 '&...h&.x*Eb.XK.$'
+  13 4e 53 bf ef 00 31 59 45 59 61 59 71 4f 81 40 '.NS...1YEYaYqO.@'
+  81 59 81 80 81 99 86 3d 00 c0 51 00 30 40 40 a0 '.Y.....=..Q.0@@.'
+  13 00 7c 31 11 00 00 1e 00 00 00 ff 00 30 39 37 '..|1.........097'
+  33 39 4a 41 30 33 38 31 39 39 00 00 00 fd 00 37 '39JA038199.....7'
+  55 1f 5f 10 00 0a 20 20 20 20 20 20 00 00 00 fc 'U._...      ....'
+  00 45 4e 39 31 31 30 0a 20 20 20 20 20 20 00 df '.EN9110.      ..'
+Checksum: 0xdf
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

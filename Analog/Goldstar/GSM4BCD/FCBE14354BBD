@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6dcd4bae9d0300
-071501036a291778eaced5a456509f2b
-1b5054a56a00314f454f614f01010101
-010101010101662150b051001b304070
-360096e51000001e0e1f008051001e30
-4080370096e51000001c000000fd0038
-4b1e3d09000a202020202020000000fc
-0057313934360a20202020202020003b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d cd 4b ae 9d 03 00
+07 15 01 03 6a 29 17 78 ea ce d5 a4 56 50 9f 2b
+1b 50 54 a5 6a 00 31 4f 45 4f 61 4f 01 01 01 01
+01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70
+36 00 96 e5 10 00 00 1e 0e 1f 00 80 51 00 1e 30
+40 80 37 00 96 e5 10 00 00 1c 00 00 00 fd 00 38
+4b 1e 3d 09 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 57 31 39 34 36 0a 20 20 20 20 20 20 20 00 3b
 
 00 ff ff ff ff ff ff 00 1e 6d cd 4b ae 9d 03 00
 07 15 01 03 6a 29 17 78 ea ce d5 a4 56 50 9f 2b
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 19405
-    Serial Number: 236974
+    Serial Number: ...
     Made in: week 7 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -68,3 +66,27 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 56-75 Hz V, 30-61 kHz H, max dotclock 90 MHz
     Display Product Name: 'W1946'
 Checksum: 0x3b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d cd 4b ae 9d 03 00 '.........m.K....'
+  07 15 01 03 6a 29 17 78 ea ce d5 a4 56 50 9f 2b '....j).x....VP.+'
+  1b 50 54 a5 6a 00 31 4f 45 4f 61 4f 01 01 01 01 '.PT.j.1OEOaO....'
+  01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70 '......f!P.Q..0@p'
+  36 00 96 e5 10 00 00 1e 0e 1f 00 80 51 00 1e 30 '6...........Q..0'
+  40 80 37 00 96 e5 10 00 00 1c 00 00 00 fd 00 38 '@.7............8'
+  4b 1e 3d 09 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.=...      ....'
+  00 57 31 39 34 36 0a 20 20 20 20 20 20 20 00 3b '.W1946.       .;'
+Checksum: 0x3b
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

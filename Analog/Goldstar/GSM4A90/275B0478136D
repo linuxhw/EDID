@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6d904ac4560100
-020f01036e261e78eaec54a5584a9a26
-215054a56b80314f454f614f81800101
-010101010101302a009851002a403070
-1300782d1100001e000000fd00384b1e
-530e000a202020202020000000fc004c
-31393135530a202020202020000000fc
-000a202020202020202020202020003c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 90 4a c4 56 01 00
+02 0f 01 03 6e 26 1e 78 ea ec 54 a5 58 4a 9a 26
+21 50 54 a5 6b 80 31 4f 45 4f 61 4f 81 80 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+31 39 31 35 53 0a 20 20 20 20 20 20 00 00 00 fc
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 3c
 
 00 ff ff ff ff ff ff 00 1e 6d 90 4a c4 56 01 00
 02 0f 01 03 6e 26 1e 78 ea ec 54 a5 58 4a 9a 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 19088
-    Serial Number: 87748
+    Serial Number: ...
     Made in: week 2 of 2005
   Basic Display Parameters & Features:
     Analog display
@@ -69,3 +67,29 @@ Block 0, Base EDID:
     Display Product Name: 'L1915S'
     Display Product Name: ''
 Checksum: 0x3c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 90 4a c4 56 01 00 '.........m.J.V..'
+  02 0f 01 03 6e 26 1e 78 ea ec 54 a5 58 4a 9a 26 '....n&.x..T.XJ.&'
+  21 50 54 a5 6b 80 31 4f 45 4f 61 4f 81 80 01 01 '!PT.k.1OEOaO....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4b 1e '..x-.........8K.'
+  53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'S...      .....L'
+  31 39 31 35 53 0a 20 20 20 20 20 20 00 00 00 fc '1915S.      ....'
+  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 3c '..            .<'
+Checksum: 0x3c
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: Empty string.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

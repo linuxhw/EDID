@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001ef9d60687280000
-230e010368221b78ea2ee5a4574a9c25
-115054a56b0081800101010101010101
-010101010101302a009851002a403070
-1300520e1100001e0000001000000000
-00000000000000000000000000100000
-000000000000000000000000000000fd
-00384b1e530e000a2020202020200063
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e f9 d6 06 87 28 00 00
+23 0e 01 03 68 22 1b 78 ea 2e e5 a4 57 4a 9c 25
+11 50 54 a5 6b 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fd
+00 38 4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 63
 
 00 ff ff ff ff ff ff 00 1e f9 d6 06 87 28 00 00
 23 0e 01 03 68 22 1b 78 ea 2e e5 a4 57 4a 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GWY
     Model: 1750
-    Serial Number: 10375
+    Serial Number: ...
     Made in: week 35 of 2004
   Basic Display Parameters & Features:
     Analog display
@@ -65,3 +63,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
 Checksum: 0x63
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e f9 d6 06 87 28 00 00 '.............(..'
+  23 0e 01 03 68 22 1b 78 ea 2e e5 a4 57 4a 9c 25 '#...h".x....WJ.%'
+  11 50 54 a5 6b 00 81 80 01 01 01 01 01 01 01 01 '.PT.k...........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 10 00 00 00 00 '..R.............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 10 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fd '................'
+  00 38 4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 63 '.8K.S...      .c'
+Checksum: 0x63
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6da93b1c230100
-0e100103781c15b0ea6059a454469b24
-10484cbfe80031594559614a01010101
-01010101010164190040410026301888
-36000ec810000018f91520f830581f20
-204013000ec81000001e000000fd0032
-781e3808000a202020202020000000fc
-0054353330530a202020202020200094
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d a9 3b 1c 23 01 00
+0e 10 01 03 78 1c 15 b0 ea 60 59 a4 54 46 9b 24
+10 48 4c bf e8 00 31 59 45 59 61 4a 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 0e c8 10 00 00 18 f9 15 20 f8 30 58 1f 20
+20 40 13 00 0e c8 10 00 00 1e 00 00 00 fd 00 32
+78 1e 38 08 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 54 35 33 30 53 0a 20 20 20 20 20 20 20 00 94
 
 00 ff ff ff ff ff ff 00 1e 6d a9 3b 1c 23 01 00
 0e 10 01 03 78 1c 15 b0 ea 60 59 a4 54 46 9b 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 15273
-    Serial Number: 74524
+    Serial Number: ...
     Made in: week 14 of 2006
   Basic Display Parameters & Features:
     Analog display
@@ -71,3 +69,30 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 50-120 Hz V, 30-56 kHz H, max dotclock 80 MHz
     Display Product Name: 'T530S'
 Checksum: 0x94
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d a9 3b 1c 23 01 00 '.........m.;.#..'
+  0e 10 01 03 78 1c 15 b0 ea 60 59 a4 54 46 9b 24 '....x....`Y.TF.$'
+  10 48 4c bf e8 00 31 59 45 59 61 4a 01 01 01 01 '.HL...1YEYaJ....'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 0e c8 10 00 00 18 f9 15 20 f8 30 58 1f 20 '6......... .0X. '
+  20 40 13 00 0e c8 10 00 00 1e 00 00 00 fd 00 32 ' @.............2'
+  78 1e 38 08 00 0a 20 20 20 20 20 20 00 00 00 fc 'x.8...      ....'
+  00 54 35 33 30 53 0a 20 20 20 20 20 20 20 00 94 '.T530S.       ..'
+Checksum: 0x94
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 270x200 mm vs display size 280x210 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 270x200 mm vs display size 280x210 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

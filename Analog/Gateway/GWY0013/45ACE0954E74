@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001ef9130001010101
-000901010e241b82e800b9a057499b26
-10484cffef80a94f8199615961404559
-45403bca31591a4f403062b0324040c0
-1300680e1100001e000000fd0032a01e
-5fff000a202020202020000000fc0047
-415445574159205658393030000000ff
-002020202020202020202020202000ed
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e f9 13 00 01 01 01 01
+00 09 01 01 0e 24 1b 82 e8 00 b9 a0 57 49 9b 26
+10 48 4c ff ef 80 a9 4f 81 99 61 59 61 40 45 59
+45 40 3b ca 31 59 1a 4f 40 30 62 b0 32 40 40 c0
+13 00 68 0e 11 00 00 1e 00 00 00 fd 00 32 a0 1e
+5f ff 00 0a 20 20 20 20 20 20 00 00 00 fc 00 47
+41 54 45 57 41 59 20 56 58 39 30 30 00 00 00 ff
+00 20 20 20 20 20 20 20 20 20 20 20 20 20 00 ed
 
 00 ff ff ff ff ff ff 00 1e f9 13 00 01 01 01 01
 00 09 01 01 0e 24 1b 82 e8 00 b9 a0 57 49 9b 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GWY
     Model: 19
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: 1999
   Basic Display Parameters & Features:
     Analog display
@@ -76,5 +74,37 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-160 Hz V, 30-95 kHz H, max dotclock 2550 MHz
     Display Product Name: 'GATEWAY VX900'
-    Display Product Serial Number: '             '
+    Display Product Serial Number: ...
 Checksum: 0xed
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e f9 13 00 01 01 01 01 '................'
+  00 09 01 01 0e 24 1b 82 e8 00 b9 a0 57 49 9b 26 '.....$......WI.&'
+  10 48 4c ff ef 80 a9 4f 81 99 61 59 61 40 45 59 '.HL....O..aYa@EY'
+  45 40 3b ca 31 59 1a 4f 40 30 62 b0 32 40 40 c0 'E@;.1Y.O@0b.2@@.'
+  13 00 68 0e 11 00 00 1e 00 00 00 fd 00 32 a0 1e '..h..........2..'
+  5f ff 00 0a 20 20 20 20 20 20 00 00 00 fc 00 47 '_...      .....G'
+  41 54 45 57 41 59 20 56 58 39 30 30 00 00 00 ff 'ATEWAY VX900....'
+  00 20 20 20 20 20 20 20 20 20 20 20 20 20 00 ed '.             ..'
+Checksum: 0xed
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+  Standard Timings: Standard Timing 720x405 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

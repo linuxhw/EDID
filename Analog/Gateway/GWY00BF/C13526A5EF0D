@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001ef9bf0041279000
-0914010368331c78eaee95a3544c9926
-0f5054b30c00714f818081009500d1c0
-010101010101023a801871382d40582c
-4500fd1e1100001e000000fc00464858
-323330300a2020202020000000fd0038
-4c1f5314000a202020202020000000ff
-004331393043303131343030340a00f7
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e f9 bf 00 41 27 90 00
+09 14 01 03 68 33 1c 78 ea ee 95 a3 54 4c 99 26
+0f 50 54 b3 0c 00 71 4f 81 80 81 00 95 00 d1 c0
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 fc 00 46 48 58
+32 33 30 30 0a 20 20 20 20 20 00 00 00 fd 00 38
+4c 1f 53 14 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 43 31 39 30 43 30 31 31 34 30 30 34 0a 00 f7
 
 00 ff ff ff ff ff ff 00 1e f9 bf 00 41 27 90 00
 09 14 01 03 68 33 1c 78 ea ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GWY
     Model: 191
-    Serial Number: 9447233
+    Serial Number: ...
     Made in: week 9 of 2010
   Basic Display Parameters & Features:
     Analog display
@@ -65,5 +63,29 @@ Block 0, Base EDID:
     Display Product Name: 'FHX2300'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 200 MHz
-    Display Product Serial Number: 'C190C0114004'
+    Display Product Serial Number: ...
 Checksum: 0xf7
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e f9 bf 00 41 27 90 00 '............A'..'
+  09 14 01 03 68 33 1c 78 ea ee 95 a3 54 4c 99 26 '....h3.x....TL.&'
+  0f 50 54 b3 0c 00 71 4f 81 80 81 00 95 00 d1 c0 '.PT...qO........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fd 1e 11 00 00 1e 00 00 00 fc 00 46 48 58 'E............FHX'
+  32 33 30 30 0a 20 20 20 20 20 00 00 00 fd 00 38 '2300.     .....8'
+  4c 1f 53 14 00 0a 20 20 20 20 20 20 00 00 00 ff 'L.S...      ....'
+  00 43 31 39 30 43 30 31 31 34 30 30 34 0a 00 f7 '.C190C0114004...'
+Checksum: 0xf7
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

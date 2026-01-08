@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6d8f5778e00500
-0615010368331d78eac665a059589d27
-0e5054a76b80b30081808140714f0101
-010101010101023a801871382d40582c
-4500fe221100001e000000fd00384b1e
-530f000a202020202020000000fc0045
-323335300a20202020202020000000ff
-003130364e44415942423134340a0094
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 8f 57 78 e0 05 00
+06 15 01 03 68 33 1d 78 ea c6 65 a0 59 58 9d 27
+0e 50 54 a7 6b 80 b3 00 81 80 81 40 71 4f 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fe 22 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45
+32 33 35 30 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 31 30 36 4e 44 41 59 42 42 31 34 34 0a 00 94
 
 00 ff ff ff ff ff ff 00 1e 6d 8f 57 78 e0 05 00
 06 15 01 03 68 33 1d 78 ea c6 65 a0 59 58 9d 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 22415
-    Serial Number: 385144
+    Serial Number: ...
     Made in: week 6 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -68,7 +66,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 150 MHz
     Display Product Name: 'E2350'
-    Display Product Serial Number: '106NDAYBB144'
+    Display Product Serial Number: ...
 Checksum: 0x94
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 8f 57 78 e0 05 00 '.........m.Wx...'
+  06 15 01 03 68 33 1d 78 ea c6 65 a0 59 58 9d 27 '....h3.x..e.YX.''
+  0e 50 54 a7 6b 80 b3 00 81 80 81 40 71 4f 01 01 '.PT.k......@qO..'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fe 22 11 00 00 1e 00 00 00 fd 00 38 4b 1e 'E..".........8K.'
+  53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45 'S...      .....E'
+  32 33 35 30 0a 20 20 20 20 20 20 20 00 00 00 ff '2350.       ....'
+  00 31 30 36 4e 44 41 59 42 42 31 34 34 0a 00 94 '.106NDAYBB144...'
+Checksum: 0x94
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

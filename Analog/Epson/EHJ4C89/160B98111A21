@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00150a894c01010101
-2a14010308221b782e3d85a6564a9a24
-125054adcf0081800101010101010101
-010101010101bc34009851002a401090
-1300520e1100001e000000fd00374b1e
-500e000a202020202020000000ff0038
-394531303432323834350a20000000fc
-004c4431373536530a202020202000bb
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 0a 89 4c 01 01 01 01
+2a 14 01 03 08 22 1b 78 2e 3d 85 a6 56 4a 9a 24
+12 50 54 ad cf 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90
+13 00 52 0e 11 00 00 1e 00 00 00 fd 00 37 4b 1e
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 38
+39 45 31 30 34 32 32 38 34 35 0a 20 00 00 00 fc
+00 4c 44 31 37 35 36 53 0a 20 20 20 20 20 00 bb
 
 00 ff ff ff ff ff ff 00 15 0a 89 4c 01 01 01 01
 2a 14 01 03 08 22 1b 78 2e 3d 85 a6 56 4a 9a 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: EHJ
     Model: 19593
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 42 of 2010
   Basic Display Parameters & Features:
     Analog display
@@ -65,6 +63,32 @@ Block 0, Base EDID:
                  Vfront    1 Vsync   3 Vback   38 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-80 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: '89E10422845'
+    Display Product Serial Number: ...
     Display Product Name: 'LD1756S'
 Checksum: 0xbb
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 15 0a 89 4c 01 01 01 01 '...........L....'
+  2a 14 01 03 08 22 1b 78 2e 3d 85 a6 56 4a 9a 24 '*....".x.=..VJ.$'
+  12 50 54 ad cf 00 81 80 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90 '.......4..Q.*@..'
+  13 00 52 0e 11 00 00 1e 00 00 00 fd 00 37 4b 1e '..R..........7K.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 38 'P...      .....8'
+  39 45 31 30 34 32 32 38 34 35 0a 20 00 00 00 fc '9E10422845. ....'
+  00 4c 44 31 37 35 36 53 0a 20 20 20 20 20 00 bb '.LD1756S.     ..'
+Checksum: 0xbb
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

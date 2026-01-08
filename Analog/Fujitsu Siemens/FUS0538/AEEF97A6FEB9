@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001ab3380532120000
-1a0e010368221b6b2a241fa15a499925
-1a4c55a54f00818f8180614f6140454f
-454001010101302a009851002a403070
-1300540e1100001e000000ff00594545
-433030343635380a2020000000fd0037
-4b1e530e000a202020202020000000fc
-004331372d340a20202020202020008e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1a b3 38 05 32 12 00 00
+1a 0e 01 03 68 22 1b 6b 2a 24 1f a1 5a 49 99 25
+1a 4c 55 a5 4f 00 81 8f 81 80 61 4f 61 40 45 4f
+45 40 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 54 0e 11 00 00 1e 00 00 00 ff 00 59 45 45
+43 30 30 34 36 35 38 0a 20 20 00 00 00 fd 00 37
+4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 31 37 2d 34 0a 20 20 20 20 20 20 20 00 8e
 
 00 ff ff ff ff ff ff 00 1a b3 38 05 32 12 00 00
 1a 0e 01 03 68 22 1b 6b 2a 24 1f a1 5a 49 99 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: FUS
     Model: 1336
-    Serial Number: 4658
+    Serial Number: ...
     Made in: week 26 of 2004
   Basic Display Parameters & Features:
     Analog display
@@ -65,8 +63,32 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (340 mm x 270 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: 'YEEC004658'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'C17-4'
 Checksum: 0x8e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1a b3 38 05 32 12 00 00 '..........8.2...'
+  1a 0e 01 03 68 22 1b 6b 2a 24 1f a1 5a 49 99 25 '....h".k*$..ZI.%'
+  1a 4c 55 a5 4f 00 81 8f 81 80 61 4f 61 40 45 4f '.LU.O.....aOa@EO'
+  45 40 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 'E@....0*..Q.*@0p'
+  13 00 54 0e 11 00 00 1e 00 00 00 ff 00 59 45 45 '..T..........YEE'
+  43 30 30 34 36 35 38 0a 20 20 00 00 00 fd 00 37 'C004658.  .....7'
+  4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 43 31 37 2d 34 0a 20 20 20 20 20 20 20 00 8e '.C17-4.       ..'
+Checksum: 0x8e
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

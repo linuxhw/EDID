@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e56020001000000
-30210103083c2278ea2d36a75438ae26
-0d4f54afcf0081c0b30095008180a9c0
-81007140814f023a801871382d40582c
-450056502100001a662156aa51001e30
-468f330056502100001e2a4480a07038
-2740302c4500565021000000000000fc
-004d4e3237410a20202020202020000e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 56 02 00 01 00 00 00
+30 21 01 03 08 3c 22 78 ea 2d 36 a7 54 38 ae 26
+0d 4f 54 af cf 00 81 c0 b3 00 95 00 81 80 a9 c0
+81 00 71 40 81 4f 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1a 66 21 56 aa 51 00 1e 30
+46 8f 33 00 56 50 21 00 00 1e 2a 44 80 a0 70 38
+27 40 30 2c 45 00 56 50 21 00 00 00 00 00 00 fc
+00 4d 4e 32 37 41 0a 20 20 20 20 20 20 20 00 0e
 
 00 ff ff ff ff ff ff 00 1e 56 02 00 01 00 00 00
 30 21 01 03 08 3c 22 78 ea 2d 36 a7 54 38 ae 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GRV
     Model: 2
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 48 of 2023
   Basic Display Parameters & Features:
     Analog display
@@ -79,4 +77,33 @@ Block 0, Base EDID:
     Display Product Name: 'MN27A'
 Checksum: 0x0e
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 56 02 00 01 00 00 00 '.........V......'
+  30 21 01 03 08 3c 22 78 ea 2d 36 a7 54 38 ae 26 '0!...<"x.-6.T8.&'
+  0d 4f 54 af cf 00 81 c0 b3 00 95 00 81 80 a9 c0 '.OT.............'
+  81 00 71 40 81 4f 02 3a 80 18 71 38 2d 40 58 2c '..q@.O.:..q8-@X,'
+  45 00 56 50 21 00 00 1a 66 21 56 aa 51 00 1e 30 'E.VP!...f!V.Q..0'
+  46 8f 33 00 56 50 21 00 00 1e 2a 44 80 a0 70 38 'F.3.VP!...*D..p8'
+  27 40 30 2c 45 00 56 50 21 00 00 00 00 00 00 fc ''@0,E.VP!.......'
+  00 4d 4e 32 37 41 0a 20 20 20 20 20 20 20 00 0e '.MN27A.       ..'
+Checksum: 0x0e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

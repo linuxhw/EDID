@@ -1,0 +1,91 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 16 09 56 b3 51 00 0c 00
+0c 0b 01 02 28 1b 14 a0 ea 06 99 a0 57 4f 98 26
+10 48 4c a0 08 00 31 59 45 59 01 01 01 01 01 01
+01 01 01 01 01 01 f9 15 20 f8 30 58 1f 20 20 40
+13 00 0e c8 10 00 00 1e 00 00 00 fc 00 41 4f 43
+20 53 70 65 63 74 72 75 6d 20 00 00 00 fc 00 34
+56 0a 20 20 20 20 20 20 20 20 20 20 00 00 00 fd
+00 32 78 1e 36 ff 00 0a 20 20 20 20 20 20 00 09
+
+00 ff ff ff ff ff ff 00 16 09 56 b3 51 00 0c 00
+0c 0b 01 02 28 1b 14 a0 ea 06 99 a0 57 4f 98 26
+10 48 4c a0 08 00 31 59 45 59 01 01 01 01 01 01
+01 01 01 01 01 01 f9 15 20 f8 30 58 1f 20 20 40
+13 00 0e c8 10 00 00 1e 00 00 00 fc 00 41 4f 43
+20 53 70 65 63 74 72 75 6d 20 00 00 00 fc 00 34
+56 0a 20 20 20 20 20 20 20 20 20 20 00 00 00 fd
+00 32 78 1e 36 ff 00 0a 20 20 20 20 20 20 00 09
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: EPI
+    Model: 45910
+    Serial Number: ...
+    Made in: week 12 of 2001
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.714 : 0.286 : 1.000 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 27 cm x 20 cm
+    Gamma: 2.60
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.3095, 0.5957
+    Blue : 0.1503, 0.0634
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x07:   640x480    85.008312 Hz   4:3     43.269 kHz     36.000000 MHz
+    DMT 0x0c:   800x600    85.061274 Hz   4:3     53.674 kHz     56.250000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:   800x600    85.061274 Hz   4:3     53.674 kHz     56.250000 MHz (270 mm x 200 mm)
+                 Hfront   32 Hsync  64 Hback  152 Hpol P
+                 Vfront    1 Vsync   3 Vback   27 Vpol P
+    Display Product Name: 'AOC Spectrum '
+    Display Product Name: '4V'
+    Display Range Limits:
+      Monitor ranges (GTF): 50-120 Hz V, 30-54 kHz H, max dotclock 2550 MHz
+Checksum: 0x09
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 16 09 56 b3 51 00 0c 00 '..........V.Q...'
+  0c 0b 01 02 28 1b 14 a0 ea 06 99 a0 57 4f 98 26 '....(.......WO.&'
+  10 48 4c a0 08 00 31 59 45 59 01 01 01 01 01 01 '.HL...1YEY......'
+  01 01 01 01 01 01 f9 15 20 f8 30 58 1f 20 20 40 '........ .0X.  @'
+  13 00 0e c8 10 00 00 1e 00 00 00 fc 00 41 4f 43 '.............AOC'
+  20 53 70 65 63 74 72 75 6d 20 00 00 00 fc 00 34 ' Spectrum .....4'
+  56 0a 20 20 20 20 20 20 20 20 20 20 00 00 00 fd 'V.          ....'
+  00 32 78 1e 36 ff 00 0a 20 20 20 20 20 20 00 09 '.2x.6...      ..'
+Checksum: 0x09
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

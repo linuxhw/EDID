@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6d835794040100
-0b1401046a301b78ea3333a5554d9d25
-115052a54b00b3008180818f714f0101
-010101010101023a801871382d40582c
-4500dd0c1100001a21399030621a2740
-68b03600dd0c1100001c000000fd0038
-4b1e530f000a202020202020000000fc
-0057323234360a202020202020200032
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 83 57 94 04 01 00
+0b 14 01 04 6a 30 1b 78 ea 33 33 a5 55 4d 9d 25
+11 50 52 a5 4b 00 b3 00 81 80 81 8f 71 4f 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1a 21 39 90 30 62 1a 27 40
+68 b0 36 00 dd 0c 11 00 00 1c 00 00 00 fd 00 38
+4b 1e 53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 57 32 32 34 36 0a 20 20 20 20 20 20 20 00 32
 
 00 ff ff ff ff ff ff 00 1e 6d 83 57 94 04 01 00
 0b 14 01 04 6a 30 1b 78 ea 33 33 a5 55 4d 9d 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 22403
-    Serial Number: 66708
+    Serial Number: ...
     Made in: week 11 of 2010
   Basic Display Parameters & Features:
     Analog display
@@ -70,4 +68,34 @@ Block 0, Base EDID:
     Display Product Name: 'W2246'
 Checksum: 0x32
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 83 57 94 04 01 00 '.........m.W....'
+  0b 14 01 04 6a 30 1b 78 ea 33 33 a5 55 4d 9d 25 '....j0.x.33.UM.%'
+  11 50 52 a5 4b 00 b3 00 81 80 81 8f 71 4f 01 01 '.PR.K.......qO..'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1a 21 39 90 30 62 1a 27 40 'E.......!9.0b.'@'
+  68 b0 36 00 dd 0c 11 00 00 1c 00 00 00 fd 00 38 'h.6............8'
+  4b 1e 53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 57 32 32 34 36 0a 20 20 20 20 20 20 20 00 32 '.W2246.       .2'
+Checksum: 0x32
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

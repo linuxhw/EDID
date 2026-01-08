@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6df04b62260000
-0416010368291778ea7885a259559b25
-0f5054a76a00314f454f614f01010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000fd00384b1e
-3d09000a202020202020000000fc0045
-313934310a20202020202020000000ff
-000a20202020202020202020202000e4
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d f0 4b 62 26 00 00
+04 16 01 03 68 29 17 78 ea 78 85 a2 59 55 9b 25
+0f 50 54 a7 6a 00 31 4f 45 4f 61 4f 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 fd 00 38 4b 1e
+3d 09 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45
+31 39 34 31 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 e4
 
 00 ff ff ff ff ff ff 00 1e 6d f0 4b 62 26 00 00
 04 16 01 03 68 29 17 78 ea 78 85 a2 59 55 9b 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 19440
-    Serial Number: 9826
+    Serial Number: ...
     Made in: week 4 of 2012
   Basic Display Parameters & Features:
     Analog display
@@ -65,5 +63,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-61 kHz H, max dotclock 90 MHz
     Display Product Name: 'E1941'
-    Display Product Serial Number: ''
+    Display Product Serial Number: ...
 Checksum: 0xe4
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d f0 4b 62 26 00 00 '.........m.Kb&..'
+  04 16 01 03 68 29 17 78 ea 78 85 a2 59 55 9b 25 '....h).x.x..YU.%'
+  0f 50 54 a7 6a 00 31 4f 45 4f 61 4f 01 01 01 01 '.PT.j.1OEOaO....'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 fd 00 38 4b 1e '3............8K.'
+  3d 09 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45 '=...      .....E'
+  31 39 34 31 0a 20 20 20 20 20 20 20 00 00 00 ff '1941.       ....'
+  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 e4 '..            ..'
+Checksum: 0xe4
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
