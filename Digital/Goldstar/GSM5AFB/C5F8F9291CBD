@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6dfb5a6fcc0400
-07190104a55022789fca95a6554ea126
-0f5054a54b80714f818081c0a9c0b300
-a9cfb30fd1cf7e4800e0a0381f404040
-3a001e4e31000018023a801871382d40
-582c45001e4e3100001a000000fc004c
-4720554c545241574944450a000000fd
-00284b555518010a20202020202001ec
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d fb 5a 6f cc 04 00
+07 19 01 04 a5 50 22 78 9f ca 95 a6 55 4e a1 26
+0f 50 54 a5 4b 80 71 4f 81 80 81 c0 a9 c0 b3 00
+a9 cf b3 0f d1 cf 7e 48 00 e0 a0 38 1f 40 40 40
+3a 00 1e 4e 31 00 00 18 02 3a 80 18 71 38 2d 40
+58 2c 45 00 1e 4e 31 00 00 1a 00 00 00 fc 00 4c
+47 20 55 4c 54 52 41 57 49 44 45 0a 00 00 00 fd
+00 28 4b 55 55 18 01 0a 20 20 20 20 20 20 01 ec
 
 00 ff ff ff ff ff ff 00 1e 6d fb 5a 6f cc 04 00
 07 19 01 04 a5 50 22 78 9f ca 95 a6 55 4e a1 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 23291
-    Serial Number: 314479
+    Serial Number: ...
     Made in: week 7 of 2015
   Basic Display Parameters & Features:
     Digital display
@@ -76,3 +74,35 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 40-75 Hz V, 85-85 kHz H, max dotclock 240 MHz
   Extension blocks: 1
 Checksum: 0xec
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d fb 5a 6f cc 04 00 '.........m.Zo...'
+  07 19 01 04 a5 50 22 78 9f ca 95 a6 55 4e a1 26 '.....P"x....UN.&'
+  0f 50 54 a5 4b 80 71 4f 81 80 81 c0 a9 c0 b3 00 '.PT.K.qO........'
+  a9 cf b3 0f d1 cf 7e 48 00 e0 a0 38 1f 40 40 40 '......~H...8.@@@'
+  3a 00 1e 4e 31 00 00 18 02 3a 80 18 71 38 2d 40 ':..N1....:..q8-@'
+  58 2c 45 00 1e 4e 31 00 00 1a 00 00 00 fc 00 4c 'X,E..N1........L'
+  47 20 55 4c 54 52 41 57 49 44 45 0a 00 00 00 fd 'G ULTRAWIDE.....'
+  00 28 4b 55 55 18 01 0a 20 20 20 20 20 20 01 ec '.(KUU...      ..'
+Checksum: 0xec
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 84.600 kHz (Monitor: 85.000 - 85.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+
+EDID conformity: FAIL

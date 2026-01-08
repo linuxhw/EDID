@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff001e6d405baa010100
-0c1e0104a5301b78e23135a5554ea126
-0c5054a54b00714f81809500b300a9c0
-810081c09040023a801871382d40582c
-4500e00e1100001e000000fd00384b1e
-530f000a202020202020000000fc0042
-4b353530590a202020202020000000ff
-003031324e54445631583936320a01bf
-02030c712309070783010000d50980a0
-20e02d101060a200a078000000180000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000043
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 40 5b aa 01 01 00
+0c 1e 01 04 a5 30 1b 78 e2 31 35 a5 55 4e a1 26
+0c 50 54 a5 4b 00 71 4f 81 80 95 00 b3 00 a9 c0
+81 00 81 c0 90 40 02 3a 80 18 71 38 2d 40 58 2c
+45 00 e0 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42
+4b 35 35 30 59 0a 20 20 20 20 20 20 00 00 00 ff
+00 30 31 32 4e 54 44 56 31 58 39 36 32 0a 01 bf
+
+02 03 0c 71 23 09 07 07 83 01 00 00 d5 09 80 a0
+20 e0 2d 10 10 60 a2 00 a0 78 00 00 00 18 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43
 
 00 ff ff ff ff ff ff 00 1e 6d 40 5b aa 01 01 00
 0c 1e 01 04 a5 30 1b 78 e2 31 35 a5 55 4e a1 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 23360
-    Serial Number: 65962
+    Serial Number: ...
     Made in: week 12 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -85,7 +84,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 150 MHz
     Display Product Name: 'BK550Y'
-    Display Product Serial Number: '012NTDV1X962'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0xbf
 
@@ -110,4 +109,69 @@ Block 1, CTA-861 Extension Block:
                  Vfront   10 Vsync   2 Vback   33 Vpol N
 Checksum: 0x43  Unused space in Extension Block: 97 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 40 5b aa 01 01 00 '.........m@[....'
+  0c 1e 01 04 a5 30 1b 78 e2 31 35 a5 55 4e a1 26 '.....0.x.15.UN.&'
+  0c 50 54 a5 4b 00 71 4f 81 80 95 00 b3 00 a9 c0 '.PT.K.qO........'
+  81 00 81 c0 90 40 02 3a 80 18 71 38 2d 40 58 2c '.....@.:..q8-@X,'
+  45 00 e0 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1e 'E............8K.'
+  53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42 'S...      .....B'
+  4b 35 35 30 59 0a 20 20 20 20 20 20 00 00 00 ff 'K550Y.      ....'
+  00 30 31 32 4e 54 44 56 31 58 39 36 32 0a 01 bf '.012NTDV1X962...'
+Checksum: 0xbf
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 3:   640x480    59.928571 Hz   4:3     31.462 kHz     25.170000 MHz (160 mm x 120 mm)
+                 Hfront   16 Hsync  96 Hback   48 Hpol N
+                 Vfront   10 Vsync   2 Vback   33 Vpol N
+Checksum: 0x43  Unused space in Extension Block: 97 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Mismatch of image size 160x120 mm vs display size 480x270 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #3: Mismatch of image size 160x120 mm vs display size 480x270 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL
