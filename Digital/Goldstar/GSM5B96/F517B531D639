@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff001e6d965b066d0400
-091f0104b54627789e9fd1a2574c9c24
-0c5054256b807140818081c0a9c0b300
-d1c08100d1cf565e00a0a0a029503020
-3500ba882100001a000000fd00304b1e
-701f000a202020202020000000fc004c
-4720484452205148440a2020000000ff
-003130394e545557384a3035340a01d9
-02032071480103049012131f22230907
-0783010000e305c000e6060501595928
-023a801871382d40582c4500ba882100
-001e011d007251d01e206e285500ba88
-2100001ed97600a0a0a0345030203500
-ba882100001a00000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000ae
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 96 5b 06 6d 04 00
+09 1f 01 04 b5 46 27 78 9e 9f d1 a2 57 4c 9c 24
+0c 50 54 25 6b 80 71 40 81 80 81 c0 a9 c0 b3 00
+d1 c0 81 00 d1 cf 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 ba 88 21 00 00 1a 00 00 00 fd 00 30 4b 1e
+70 1f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+47 20 48 44 52 20 51 48 44 0a 20 20 00 00 00 ff
+00 31 30 39 4e 54 55 57 38 4a 30 35 34 0a 01 d9
+
+02 03 20 71 48 01 03 04 90 12 13 1f 22 23 09 07
+07 83 01 00 00 e3 05 c0 00 e6 06 05 01 59 59 28
+02 3a 80 18 71 38 2d 40 58 2c 45 00 ba 88 21 00
+00 1e 01 1d 00 72 51 d0 1e 20 6e 28 55 00 ba 88
+21 00 00 1e d9 76 00 a0 a0 a0 34 50 30 20 35 00
+ba 88 21 00 00 1a 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ae
 
 00 ff ff ff ff ff ff 00 1e 6d 96 5b 06 6d 04 00
 09 1f 01 04 b5 46 27 78 9e 9f d1 a2 57 4c 9c 24
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 23446
-    Serial Number: 290054
+    Serial Number: ...
     Made in: week 9 of 2021
   Basic Display Parameters & Features:
     Digital display
@@ -87,7 +86,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 48-75 Hz V, 30-112 kHz H, max dotclock 310 MHz
     Display Product Name: 'LG HDR QHD'
-    Display Product Serial Number: '109NTUW8J054'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0xd9
 
@@ -138,3 +137,108 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   44 Vpol N
 Checksum: 0xae  Unused space in Extension Block: 41 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 96 5b 06 6d 04 00 '.........m.[.m..'
+  09 1f 01 04 b5 46 27 78 9e 9f d1 a2 57 4c 9c 24 '.....F'x....WL.$'
+  0c 50 54 25 6b 80 71 40 81 80 81 c0 a9 c0 b3 00 '.PT%k.q@........'
+  d1 c0 81 00 d1 cf 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
+  35 00 ba 88 21 00 00 1a 00 00 00 fd 00 30 4b 1e '5...!........0K.'
+  70 1f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'p...      .....L'
+  47 20 48 44 52 20 51 48 44 0a 20 20 00 00 00 ff 'G HDR QHD.  ....'
+  00 31 30 39 4e 54 55 57 38 4a 30 35 34 0a 01 d9 '.109NTUW8J054...'
+Checksum: 0xd9
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 89 (343.724 cd/m^2)
+    Desired content max frame-average luminance: 89 (343.724 cd/m^2)
+    Desired content min luminance: 40 (0.085 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 5:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (698 mm x 392 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 6:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (698 mm x 392 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 7:  2560x1440   74.970923 Hz  16:9    111.857 kHz    304.250000 MHz (698 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   44 Vpol N
+Checksum: 0xae  Unused space in Extension Block: 41 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 30.000 - 75.062 Hz (Monitor: 48.000 - 75.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 34.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL
