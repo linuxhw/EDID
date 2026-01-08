@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d1137b45540000
-1c1401036e351e782e9355a158599523
-0f5054a56b8061c081c0814081809500
-a940b300d1c0023a801871382d40582c
-4500132b2100001e000000fd00324c1e
-5315000a202020202020000000fc0042
-656e51205632343230480a20000000ff
-0047374130353936333031390a2000b9
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 13 7b 45 54 00 00
+1c 14 01 03 6e 35 1e 78 2e 93 55 a1 58 59 95 23
+0f 50 54 a5 6b 80 61 c0 81 c0 81 40 81 80 95 00
+a9 40 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2b 21 00 00 1e 00 00 00 fd 00 32 4c 1e
+53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42
+65 6e 51 20 56 32 34 32 30 48 0a 20 00 00 00 ff
+00 47 37 41 30 35 39 36 33 30 31 39 0a 20 00 b9
 
 00 ff ff ff ff ff ff 00 09 d1 13 7b 45 54 00 00
 1c 14 01 03 6e 35 1e 78 2e 93 55 a1 58 59 95 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 31507
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 28 of 2010
   Basic Display Parameters & Features:
     Analog display
@@ -72,5 +70,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 210 MHz
     Display Product Name: 'BenQ V2420H'
-    Display Product Serial Number: 'G7A05963019'
+    Display Product Serial Number: ...
 Checksum: 0xb9
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 13 7b 45 54 00 00 '...........{ET..'
+  1c 14 01 03 6e 35 1e 78 2e 93 55 a1 58 59 95 23 '....n5.x..U.XY.#'
+  0f 50 54 a5 6b 80 61 c0 81 c0 81 40 81 80 95 00 '.PT.k.a....@....'
+  a9 40 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c '.@.....:..q8-@X,'
+  45 00 13 2b 21 00 00 1e 00 00 00 fd 00 32 4c 1e 'E..+!........2L.'
+  53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42 'S...      .....B'
+  65 6e 51 20 56 32 34 32 30 48 0a 20 00 00 00 ff 'enQ V2420H. ....'
+  00 47 37 41 30 35 39 36 33 30 31 39 0a 20 00 b9 '.G7A05963019. ..'
+Checksum: 0xb9
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

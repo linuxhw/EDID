@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00047254ad032f9054
-310f010368221b782e5055a25c489a24
-115054bfef008180714f010101010101
-010101010101302a009851002a403070
-1300520e1100001e000000fd00384c1e
-520e000a202020202020000000fc0041
-63657220414c313731370a20000000ff
-0045544c353430393030312020200094
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 54 ad 03 2f 90 54
+31 0f 01 03 68 22 1b 78 2e 50 55 a2 5c 48 9a 24
+11 50 54 bf ef 00 81 80 71 4f 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4c 1e
+52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+63 65 72 20 41 4c 31 37 31 37 0a 20 00 00 00 ff
+00 45 54 4c 35 34 30 39 30 30 31 20 20 20 00 94
 
 00 ff ff ff ff ff ff 00 04 72 54 ad 03 2f 90 54
 31 0f 01 03 68 22 1b 78 2e 50 55 a2 5c 48 9a 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 44372
-    Serial Number: 1418735363
+    Serial Number: ...
     Made in: week 49 of 2005
   Basic Display Parameters & Features:
     Analog display
@@ -70,5 +68,32 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-82 kHz H, max dotclock 140 MHz
     Display Product Name: 'Acer AL1717'
-    Display Product Serial Number: 'ETL5409001   '
+    Display Product Serial Number: ...
 Checksum: 0x94
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 54 ad 03 2f 90 54 '.........rT../.T'
+  31 0f 01 03 68 22 1b 78 2e 50 55 a2 5c 48 9a 24 '1...h".x.PU.\H.$'
+  11 50 54 bf ef 00 81 80 71 4f 01 01 01 01 01 01 '.PT.....qO......'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4c 1e '..R..........8L.'
+  52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'R...      .....A'
+  63 65 72 20 41 4c 31 37 31 37 0a 20 00 00 00 ff 'cer AL1717. ....'
+  00 45 54 4c 35 34 30 39 30 30 31 20 20 20 00 94 '.ETL5409001   ..'
+Checksum: 0x94
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

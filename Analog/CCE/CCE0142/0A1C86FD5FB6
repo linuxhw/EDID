@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000c65420100000000
-2a1001037c1d1599e843659557538e26
-205054bfee0001010101010101010101
-01010101010164190040410026301888
-36001dd610000018000000fd00384b1e
-3d08000a202020202020000000fc004c
-43443134320a0a0a0a0a0a0a000000ff
-004343453130323030360a0a0a0a0010
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0c 65 42 01 00 00 00 00
+2a 10 01 03 7c 1d 15 99 e8 43 65 95 57 53 8e 26
+20 50 54 bf ee 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 1d d6 10 00 00 18 00 00 00 fd 00 38 4b 1e
+3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+43 44 31 34 32 0a 0a 0a 0a 0a 0a 0a 00 00 00 ff
+00 43 43 45 31 30 32 30 30 36 0a 0a 0a 0a 00 10
 
 00 ff ff ff ff ff ff 00 0c 65 42 01 00 00 00 00
 2a 10 01 03 7c 1d 15 99 e8 43 65 95 57 53 8e 26
@@ -64,7 +62,33 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-61 kHz H, max dotclock 80 MHz
     Display Product Name: 'LCD142'
-    Display Product Serial Number: 'CCE102006'
+    Display Product Serial Number: ...
 Checksum: 0x10
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0c 65 42 01 00 00 00 00 '.........eB.....'
+  2a 10 01 03 7c 1d 15 99 e8 43 65 95 57 53 8e 26 '*...|....Ce.WS.&'
+  20 50 54 bf ee 00 01 01 01 01 01 01 01 01 01 01 ' PT.............'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 1d d6 10 00 00 18 00 00 00 fd 00 38 4b 1e '6............8K.'
+  3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c '=...      .....L'
+  43 44 31 34 32 0a 0a 0a 0a 0a 0a 0a 00 00 00 ff 'CD142...........'
+  00 43 43 45 31 30 32 30 30 36 0a 0a 0a 0a 00 10 '.CCE102006......'
+Checksum: 0x10
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+  Display Product Name: Non-space after newline.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

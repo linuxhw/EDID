@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004725e0664695004
-2d1e010368301b782ee0f5a55552a027
-0c5054bfef80714f8140818081c08100
-9500b300d1c0023a801871382d40582c
-4500dc0c1100001e000000fd00384c1e
-5515000a202020202020000000fc0056
-323237510a20202020202020000000ff
-0054435a5353303031383532340a00b7
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 5e 06 64 69 50 04
+2d 1e 01 03 68 30 1b 78 2e e0 f5 a5 55 52 a0 27
+0c 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00
+95 00 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1e 00 00 00 fd 00 38 4c 1e
+55 15 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+32 32 37 51 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 54 43 5a 53 53 30 30 31 38 35 32 34 0a 00 b7
 
 00 ff ff ff ff ff ff 00 04 72 5e 06 64 69 50 04
 2d 1e 01 03 68 30 1b 78 2e e0 f5 a5 55 52 a0 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 1630
-    Serial Number: 72378724
+    Serial Number: ...
     Made in: week 45 of 2020
   Basic Display Parameters & Features:
     Analog display
@@ -77,5 +75,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-85 kHz H, max dotclock 210 MHz
     Display Product Name: 'V227Q'
-    Display Product Serial Number: 'TCZSS0018524'
+    Display Product Serial Number: ...
 Checksum: 0xb7
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 5e 06 64 69 50 04 '.........r^.diP.'
+  2d 1e 01 03 68 30 1b 78 2e e0 f5 a5 55 52 a0 27 '-...h0.x....UR.''
+  0c 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00 '.PT...qO.@......'
+  95 00 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dc 0c 11 00 00 1e 00 00 00 fd 00 38 4c 1e 'E............8L.'
+  55 15 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56 'U...      .....V'
+  32 32 37 51 0a 20 20 20 20 20 20 20 00 00 00 ff '227Q.       ....'
+  00 54 43 5a 53 53 30 30 31 38 35 32 34 0a 00 b7 '.TCZSS0018524...'
+Checksum: 0xb7
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

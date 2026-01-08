@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004728307ba0e2082
-1612010368251e786ace45a6524c9927
-1c5054bfef80714f81c0814081800101
-010101010101302a009851002a403070
-1300050400000004000000fd00374b1e
-510e000a202020202020000000fc0041
-4c313932330a202020202020000000ff
-004c36363042323237333938382000fe
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 83 07 ba 0e 20 82
+16 12 01 03 68 25 1e 78 6a ce 45 a6 52 4c 99 27
+1c 50 54 bf ef 80 71 4f 81 c0 81 40 81 80 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 05 04 00 00 00 04 00 00 00 fd 00 37 4b 1e
+51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+4c 31 39 32 33 0a 20 20 20 20 20 20 00 00 00 ff
+00 4c 36 36 30 42 32 32 37 33 39 38 38 20 00 fe
 
 00 ff ff ff ff ff ff 00 04 72 83 07 ba 0e 20 82
 16 12 01 03 68 25 1e 78 6a ce 45 a6 52 4c 99 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 1923
-    Serial Number: 2183139002
+    Serial Number: ...
     Made in: week 22 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -72,5 +70,37 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-81 kHz H, max dotclock 140 MHz
     Display Product Name: 'AL1923'
-    Display Product Serial Number: 'L660B2273988 '
+    Display Product Serial Number: ...
 Checksum: 0xfe
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 83 07 ba 0e 20 82 '.........r.... .'
+  16 12 01 03 68 25 1e 78 6a ce 45 a6 52 4c 99 27 '....h%.xj.E.RL.''
+  1c 50 54 bf ef 80 71 4f 81 c0 81 40 81 80 01 01 '.PT...qO...@....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 05 04 00 00 00 04 00 00 00 fd 00 37 4b 1e '.............7K.'
+  51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'Q...      .....A'
+  4c 31 39 32 33 0a 20 20 20 20 20 20 00 00 00 ff 'L1923.      ....'
+  00 4c 36 36 30 42 32 32 37 33 39 38 38 20 00 fe '.L660B2273988 ..'
+Checksum: 0xfe
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x23.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 5x4 mm vs display size 370x300 mm.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

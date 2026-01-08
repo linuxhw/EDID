@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004720d0b36593f1e
-102101030e351d782a3581a656489a24
-125054afcf808100814081809500a940
-b300d1c00101304480a0703827402c20
-45000f282100001e000000ff00313331
-36303241323632583030000000fd0038
-4b1e5f12000a202020202020000000fc
-005342323432590a2020202020200054
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 0d 0b 36 59 3f 1e
+10 21 01 03 0e 35 1d 78 2a 35 81 a6 56 48 9a 24
+12 50 54 af cf 80 81 00 81 40 81 80 95 00 a9 40
+b3 00 d1 c0 01 01 30 44 80 a0 70 38 27 40 2c 20
+45 00 0f 28 21 00 00 1e 00 00 00 ff 00 31 33 31
+36 30 32 41 32 36 32 58 30 30 00 00 00 fd 00 38
+4b 1e 5f 12 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 42 32 34 32 59 0a 20 20 20 20 20 20 00 54
 
 00 ff ff ff ff ff ff 00 04 72 0d 0b 36 59 3f 1e
 10 21 01 03 0e 35 1d 78 2a 35 81 a6 56 48 9a 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 2829
-    Serial Number: 507468086
+    Serial Number: ...
     Made in: week 16 of 2023
   Basic Display Parameters & Features:
     Analog display
@@ -70,8 +68,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   74.998281 Hz  16:9     83.923 kHz    174.560000 MHz (527 mm x 296 mm)
                  Hfront   44 Hsync  32 Hback   84 Hpol P
                  Vfront    4 Vsync   5 Vback   30 Vpol P
-    Display Product Serial Number: '131602A262X00'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-95 kHz H, max dotclock 180 MHz
     Display Product Name: 'SB242Y'
 Checksum: 0x54
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 0d 0b 36 59 3f 1e '.........r..6Y?.'
+  10 21 01 03 0e 35 1d 78 2a 35 81 a6 56 48 9a 24 '.!...5.x*5..VH.$'
+  12 50 54 af cf 80 81 00 81 40 81 80 95 00 a9 40 '.PT......@.....@'
+  b3 00 d1 c0 01 01 30 44 80 a0 70 38 27 40 2c 20 '......0D..p8'@, '
+  45 00 0f 28 21 00 00 1e 00 00 00 ff 00 31 33 31 'E..(!........131'
+  36 30 32 41 32 36 32 58 30 30 00 00 00 fd 00 38 '602A262X00.....8'
+  4b 1e 5f 12 00 0a 20 20 20 20 20 20 00 00 00 fc 'K._...      ....'
+  00 53 42 32 34 32 59 0a 20 20 20 20 20 20 00 54 '.SB242Y.      .T'
+Checksum: 0x54
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d1ea7845540000
-031e01030e301b782eb065a656539d28
-0c5054a56b80d1c081c081008180a9c0
-b30001010101023a801871382d40582c
-4500dc0c1100001e000000ff0048314c
-30303534333031390a20000000fd0032
-4c1e5315000a202020202020000000fc
-0042656e5120424c323238330a20000e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 ea 78 45 54 00 00
+03 1e 01 03 0e 30 1b 78 2e b0 65 a6 56 53 9d 28
+0c 50 54 a5 6b 80 d1 c0 81 c0 81 00 81 80 a9 c0
+b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1e 00 00 00 ff 00 48 31 4c
+30 30 35 34 33 30 31 39 0a 20 00 00 00 fd 00 32
+4c 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 42 4c 32 32 38 33 0a 20 00 0e
 
 00 ff ff ff ff ff ff 00 09 d1 ea 78 45 54 00 00
 03 1e 01 03 0e 30 1b 78 2e b0 65 a6 56 53 9d 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30954
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 3 of 2020
   Basic Display Parameters & Features:
     Analog display
@@ -67,8 +65,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (476 mm x 268 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'H1L00543019'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 210 MHz
     Display Product Name: 'BenQ BL2283'
 Checksum: 0x0e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 ea 78 45 54 00 00 '...........xET..'
+  03 1e 01 03 0e 30 1b 78 2e b0 65 a6 56 53 9d 28 '.....0.x..e.VS.('
+  0c 50 54 a5 6b 80 d1 c0 81 c0 81 00 81 80 a9 c0 '.PT.k...........'
+  b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dc 0c 11 00 00 1e 00 00 00 ff 00 48 31 4c 'E............H1L'
+  30 30 35 34 33 30 31 39 0a 20 00 00 00 fd 00 32 '00543019. .....2'
+  4c 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 42 65 6e 51 20 42 4c 32 32 38 33 0a 20 00 0e '.BenQ BL2283. ..'
+Checksum: 0x0e
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

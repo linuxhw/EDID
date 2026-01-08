@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d1107945540000
-2b1301030e2917782e3d85a6564a9a24
-125054a56a00710081c081cf01010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000ff004e4139
-30333930333032360a20000000fd0037
-4c1f530e000a202020202020000000fc
-0042656e51204539303048440a2000f9
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 10 79 45 54 00 00
+2b 13 01 03 0e 29 17 78 2e 3d 85 a6 56 4a 9a 24
+12 50 54 a5 6a 00 71 00 81 c0 81 cf 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 ff 00 4e 41 39
+30 33 39 30 33 30 32 36 0a 20 00 00 00 fd 00 37
+4c 1f 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 45 39 30 30 48 44 0a 20 00 f9
 
 00 ff ff ff ff ff ff 00 09 d1 10 79 45 54 00 00
 2b 13 01 03 0e 29 17 78 2e 3d 85 a6 56 4a 9a 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30992
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 43 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -62,8 +60,34 @@ Block 0, Base EDID:
     DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
                  Hfront   70 Hsync 143 Hback  213 Hpol P
                  Vfront    3 Vsync   3 Vback   24 Vpol P
-    Display Product Serial Number: 'NA903903026'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 31-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'BenQ E900HD'
 Checksum: 0xf9
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 10 79 45 54 00 00 '...........yET..'
+  2b 13 01 03 0e 29 17 78 2e 3d 85 a6 56 4a 9a 24 '+....).x.=..VJ.$'
+  12 50 54 a5 6a 00 71 00 81 c0 81 cf 01 01 01 01 '.PT.j.q.........'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 ff 00 4e 41 39 '3............NA9'
+  30 33 39 30 33 30 32 36 0a 20 00 00 00 fd 00 37 '03903026. .....7'
+  4c 1f 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 42 65 6e 51 20 45 39 30 30 48 44 0a 20 00 f9 '.BenQ E900HD. ..'
+Checksum: 0xf9
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

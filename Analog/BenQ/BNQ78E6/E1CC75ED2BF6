@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d1e67845540000
-201f01030e3c22782e4825a756529c27
-0f5054a56b80d1c0b300a9c081808100
-81c001010101023a801871382d40582c
-450056502100001e000000ff0046384d
-30343238313031510a20000000fd0032
-4c1e5315000a202020202020000000fc
-0042656e51204757323738300a200087
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 e6 78 45 54 00 00
+20 1f 01 03 0e 3c 22 78 2e 48 25 a7 56 52 9c 27
+0f 50 54 a5 6b 80 d1 c0 b3 00 a9 c0 81 80 81 00
+81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 ff 00 46 38 4d
+30 34 32 38 31 30 31 51 0a 20 00 00 00 fd 00 32
+4c 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 47 57 32 37 38 30 0a 20 00 87
 
 00 ff ff ff ff ff ff 00 09 d1 e6 78 45 54 00 00
 20 1f 01 03 0e 3c 22 78 2e 48 25 a7 56 52 9c 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30950
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 32 of 2021
   Basic Display Parameters & Features:
     Analog display
@@ -67,8 +65,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'F8M0428101Q'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 210 MHz
     Display Product Name: 'BenQ GW2780'
 Checksum: 0x87
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 e6 78 45 54 00 00 '...........xET..'
+  20 1f 01 03 0e 3c 22 78 2e 48 25 a7 56 52 9c 27 ' ....<"x.H%.VR.''
+  0f 50 54 a5 6b 80 d1 c0 b3 00 a9 c0 81 80 81 00 '.PT.k...........'
+  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 ff 00 46 38 4d 'E.VP!........F8M'
+  30 34 32 38 31 30 31 51 0a 20 00 00 00 fd 00 32 '0428101Q. .....2'
+  4c 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 42 65 6e 51 20 47 57 32 37 38 30 0a 20 00 87 '.BenQ GW2780. ..'
+Checksum: 0x87
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

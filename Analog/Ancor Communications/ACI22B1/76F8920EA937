@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469b122365d0000
-0c1101030e2f1e782ac720a455499927
-135054bfef80714f81808140814f81cf
-95009040b30021399030621a274018b0
-3640d9281100001c000000fd00384c2f
-540f000a202020202020000000ff0037
-334c383032333836320a2020000000fc
-004d573232310a2020202020202000bc
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 b1 22 36 5d 00 00
+0c 11 01 03 0e 2f 1e 78 2a c7 20 a4 55 49 99 27
+13 50 54 bf ef 80 71 4f 81 80 81 40 81 4f 81 cf
+95 00 90 40 b3 00 21 39 90 30 62 1a 27 40 18 b0
+36 40 d9 28 11 00 00 1c 00 00 00 fd 00 38 4c 2f
+54 0f 00 0a 20 20 20 20 20 20 00 00 00 ff 00 37
+33 4c 38 30 32 33 38 36 32 0a 20 20 00 00 00 fc
+00 4d 57 32 32 31 0a 20 20 20 20 20 20 20 00 bc
 
 00 ff ff ff ff ff ff 00 04 69 b1 22 36 5d 00 00
 0c 11 01 03 0e 2f 1e 78 2a c7 20 a4 55 49 99 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 8881
-    Serial Number: 23862
+    Serial Number: ...
     Made in: week 12 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -75,6 +73,37 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   6 Vback   30 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 47-84 kHz H, max dotclock 150 MHz
-    Display Product Serial Number: '73L8023862'
+    Display Product Serial Number: ...
     Display Product Name: 'MW221'
 Checksum: 0xbc
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 b1 22 36 5d 00 00 '.........i."6]..'
+  0c 11 01 03 0e 2f 1e 78 2a c7 20 a4 55 49 99 27 '...../.x*. .UI.''
+  13 50 54 bf ef 80 71 4f 81 80 81 40 81 4f 81 cf '.PT...qO...@.O..'
+  95 00 90 40 b3 00 21 39 90 30 62 1a 27 40 18 b0 '...@..!9.0b.'@..'
+  36 40 d9 28 11 00 00 1c 00 00 00 fd 00 38 4c 2f '6@.(.........8L/'
+  54 0f 00 0a 20 20 20 20 20 20 00 00 00 ff 00 37 'T...      .....7'
+  33 4c 38 30 32 33 38 36 32 0a 20 20 00 00 00 fc '3L8023862.  ....'
+  00 4d 57 32 32 31 0a 20 20 20 20 20 20 20 00 bc '.MW221.       ..'
+Checksum: 0xbc
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x3a.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 47.000 - 84.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

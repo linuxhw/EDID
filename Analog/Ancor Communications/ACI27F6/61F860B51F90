@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469f62752de0000
-0b180103683c22782aeed5a555489b26
-125054bfef00714f81c0814081809500
-950fb300d1c0023a801871382d40582c
-450056502100001e000000ff0045334c
-4d54463035363931340a000000fd0032
-55185c11000a202020202020000000fc
-00415355532056453237380a2020001d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 f6 27 52 de 00 00
+0b 18 01 03 68 3c 22 78 2a ee d5 a5 55 48 9b 26
+12 50 54 bf ef 00 71 4f 81 c0 81 40 81 80 95 00
+95 0f b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 ff 00 45 33 4c
+4d 54 46 30 35 36 39 31 34 0a 00 00 00 fd 00 32
+55 18 5c 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 56 45 32 37 38 0a 20 20 00 1d
 
 00 ff ff ff ff ff ff 00 04 69 f6 27 52 de 00 00
 0b 18 01 03 68 3c 22 78 2a ee d5 a5 55 48 9b 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 10230
-    Serial Number: 56914
+    Serial Number: ...
     Made in: week 11 of 2014
   Basic Display Parameters & Features:
     Analog display
@@ -72,8 +70,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'E3LMTF056914'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-85 Hz V, 24-92 kHz H, max dotclock 170 MHz
     Display Product Name: 'ASUS VE278'
 Checksum: 0x1d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 f6 27 52 de 00 00 '.........i.'R...'
+  0b 18 01 03 68 3c 22 78 2a ee d5 a5 55 48 9b 26 '....h<"x*...UH.&'
+  12 50 54 bf ef 00 71 4f 81 c0 81 40 81 80 95 00 '.PT...qO...@....'
+  95 0f b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 ff 00 45 33 4c 'E.VP!........E3L'
+  4d 54 46 30 35 36 39 31 34 0a 00 00 00 fd 00 32 'MTF056914......2'
+  55 18 5c 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'U.\...      ....'
+  00 41 53 55 53 20 56 45 32 37 38 0a 20 20 00 1d '.ASUS VE278.  ..'
+Checksum: 0x1d
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

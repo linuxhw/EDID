@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469fa2201010101
-231601031e301b78ea3d25a35951a025
-0f5054bfef00714f818081409500a940
-b300d1c00101023a801871382d40582c
-4500dd0c1100001e000000fd00324c1e
-5311000a202020202020000000fc0056
-453232380a20202020202020000000ff
-0043384c4d51533134323931310a00b4
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 fa 22 01 01 01 01
+23 16 01 03 1e 30 1b 78 ea 3d 25 a3 59 51 a0 25
+0f 50 54 bf ef 00 71 4f 81 80 81 40 95 00 a9 40
+b3 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 32 4c 1e
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+45 32 32 38 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 43 38 4c 4d 51 53 31 34 32 39 31 31 0a 00 b4
 
 00 ff ff ff ff ff ff 00 04 69 fa 22 01 01 01 01
 23 16 01 03 1e 30 1b 78 ea 3d 25 a3 59 51 a0 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 8954
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 35 of 2012
   Basic Display Parameters & Features:
     Analog display
@@ -74,5 +72,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'VE228'
-    Display Product Serial Number: 'C8LMQS142911'
+    Display Product Serial Number: ...
 Checksum: 0xb4
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 fa 22 01 01 01 01 '.........i."....'
+  23 16 01 03 1e 30 1b 78 ea 3d 25 a3 59 51 a0 25 '#....0.x.=%.YQ.%'
+  0f 50 54 bf ef 00 71 4f 81 80 81 40 95 00 a9 40 '.PT...qO...@...@'
+  b3 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 32 4c 1e 'E............2L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56 'S...      .....V'
+  45 32 32 38 0a 20 20 20 20 20 20 20 00 00 00 ff 'E228.       ....'
+  00 43 38 4c 4d 51 53 31 34 32 39 31 31 0a 00 b4 '.C8LMQS142911...'
+Checksum: 0xb4
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

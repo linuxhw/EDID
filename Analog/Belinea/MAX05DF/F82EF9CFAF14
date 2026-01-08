@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003438df05b9030000
-2f0d0103681e17786eb1c69f554b9924
-1d4f54afce00314c314f4540454c454f
-6140614a614fd60980a0205e63103060
-c20c30e41000001a000000fd00384b1f
-3e080a20202020202020000000fc0042
-3130313535350a2020202020000000fe
-004d4158444154410a202020202000c8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 38 df 05 b9 03 00 00
+2f 0d 01 03 68 1e 17 78 6e b1 c6 9f 55 4b 99 24
+1d 4f 54 af ce 00 31 4c 31 4f 45 40 45 4c 45 4f
+61 40 61 4a 61 4f d6 09 80 a0 20 5e 63 10 30 60
+c2 0c 30 e4 10 00 00 1a 00 00 00 fd 00 38 4b 1f
+3e 08 0a 20 20 20 20 20 20 20 00 00 00 fc 00 42
+31 30 31 35 35 35 0a 20 20 20 20 20 00 00 00 fe
+00 4d 41 58 44 41 54 41 0a 20 20 20 20 20 00 c8
 
 00 ff ff ff ff ff ff 00 34 38 df 05 b9 03 00 00
 2f 0d 01 03 68 1e 17 78 6e b1 c6 9f 55 4b 99 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MAX
     Model: 1503
-    Serial Number: 953
+    Serial Number: ...
     Made in: week 47 of 2003
   Basic Display Parameters & Features:
     Analog display
@@ -75,3 +73,31 @@ Block 0, Base EDID:
     Display Product Name: 'B101555'
     Alphanumeric Data String: 'MAXDATA'
 Checksum: 0xc8
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 34 38 df 05 b9 03 00 00 '........48......'
+  2f 0d 01 03 68 1e 17 78 6e b1 c6 9f 55 4b 99 24 '/...h..xn...UK.$'
+  1d 4f 54 af ce 00 31 4c 31 4f 45 40 45 4c 45 4f '.OT...1L1OE@ELEO'
+  61 40 61 4a 61 4f d6 09 80 a0 20 5e 63 10 30 60 'a@aJaO.... ^c.0`'
+  c2 0c 30 e4 10 00 00 1a 00 00 00 fd 00 38 4b 1f '..0..........8K.'
+  3e 08 0a 20 20 20 20 20 20 20 00 00 00 fc 00 42 '>..       .....B'
+  31 30 31 35 35 35 0a 20 20 20 20 20 00 00 00 fe '101555.     ....'
+  00 4d 41 58 44 41 54 41 0a 20 20 20 20 20 00 c8 '.MAXDATA.     ..'
+Checksum: 0xc8
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: Unknown range class (0x0a).
+  Display Range Limits: Byte 11 is 0x20 instead of 0x0a.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

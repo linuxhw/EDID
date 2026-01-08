@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d1687845540000
-101601030e2c19782e3581a656489a24
-125054a56a80710081c081408180a9c0
-0101010101012f2640a060841a303020
-3500bbf91000001a000000ff00383443
-3030313833534c300a0a000000fd0032
-4c185311000a202020202020000000fc
-0042656e51204732303235484441003d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 68 78 45 54 00 00
+10 16 01 03 0e 2c 19 78 2e 35 81 a6 56 48 9a 24
+12 50 54 a5 6a 80 71 00 81 c0 81 40 81 80 a9 c0
+01 01 01 01 01 01 2f 26 40 a0 60 84 1a 30 30 20
+35 00 bb f9 10 00 00 1a 00 00 00 ff 00 38 34 43
+30 30 31 38 33 53 4c 30 0a 0a 00 00 00 fd 00 32
+4c 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 47 32 30 32 35 48 44 41 00 3d
 
 00 ff ff ff ff ff ff 00 09 d1 68 78 45 54 00 00
 10 16 01 03 0e 2c 19 78 2e 35 81 a6 56 48 9a 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30824
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 16 of 2012
   Basic Display Parameters & Features:
     Analog display
@@ -65,8 +63,35 @@ Block 0, Base EDID:
     DTD 1:  1600x900    59.978156 Hz  16:9     55.540 kHz     97.750000 MHz (443 mm x 249 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   18 Vpol N
-    Display Product Serial Number: '84C00183SL0'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 24-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'BenQ G2025HDA'
 Checksum: 0x3d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 68 78 45 54 00 00 '..........hxET..'
+  10 16 01 03 0e 2c 19 78 2e 35 81 a6 56 48 9a 24 '.....,.x.5..VH.$'
+  12 50 54 a5 6a 80 71 00 81 c0 81 40 81 80 a9 c0 '.PT.j.q....@....'
+  01 01 01 01 01 01 2f 26 40 a0 60 84 1a 30 30 20 '....../&@.`..00 '
+  35 00 bb f9 10 00 00 1a 00 00 00 ff 00 38 34 43 '5............84C'
+  30 30 31 38 33 53 4c 30 0a 0a 00 00 00 fd 00 32 '00183SL0.......2'
+  4c 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 42 65 6e 51 20 47 32 30 32 35 48 44 41 00 3d '.BenQ G2025HDA.='
+Checksum: 0x3d
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d10b7945540000
-101301030e2f1a782e3585a656489a24
-125054a56bba710081008140950f8180
-9500b3000101944380907238284080c8
-3500dc0c1100001e000000ff00463439
-30303137393032360a20000000fd0032
-4c1e5e15000a202020202020000000fc
-0042656e5120453232303048440a0014
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 0b 79 45 54 00 00
+10 13 01 03 0e 2f 1a 78 2e 35 85 a6 56 48 9a 24
+12 50 54 a5 6b ba 71 00 81 00 81 40 95 0f 81 80
+95 00 b3 00 01 01 94 43 80 90 72 38 28 40 80 c8
+35 00 dc 0c 11 00 00 1e 00 00 00 ff 00 46 34 39
+30 30 31 37 39 30 32 36 0a 20 00 00 00 fd 00 32
+4c 1e 5e 15 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 45 32 32 30 30 48 44 0a 00 14
 
 00 ff ff ff ff ff ff 00 09 d1 0b 79 45 54 00 00
 10 13 01 03 0e 2f 1a 78 2e 35 85 a6 56 48 9a 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30987
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 16 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -68,8 +66,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   59.962844 Hz  16:9     67.158 kHz    173.000000 MHz (476 mm x 268 mm)
                  Hfront  128 Hsync 200 Hback  328 Hpol P
                  Vfront    3 Vsync   5 Vback   32 Vpol P
-    Display Product Serial Number: 'F4900179026'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-94 kHz H, max dotclock 210 MHz
     Display Product Name: 'BenQ E2200HD'
 Checksum: 0x14
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 0b 79 45 54 00 00 '...........yET..'
+  10 13 01 03 0e 2f 1a 78 2e 35 85 a6 56 48 9a 24 '...../.x.5..VH.$'
+  12 50 54 a5 6b ba 71 00 81 00 81 40 95 0f 81 80 '.PT.k.q....@....'
+  95 00 b3 00 01 01 94 43 80 90 72 38 28 40 80 c8 '.......C..r8(@..'
+  35 00 dc 0c 11 00 00 1e 00 00 00 ff 00 46 34 39 '5............F49'
+  30 30 31 37 39 30 32 36 0a 20 00 00 00 fd 00 32 '00179026. .....2'
+  4c 1e 5e 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.^...      ....'
+  00 42 65 6e 51 20 45 32 32 30 30 48 44 0a 00 14 '.BenQ E2200HD...'
+Checksum: 0x14
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0008ab484401000000
-0818010378794478efecaba056479c25
-10484a27cf808100810f81408180818f
-8b009040a940944380907238284048c8
-05481060a400001c000000fd00393f41
-4411000a202020202020000000fc0042
-4b2057555847410a2020202000000010
-00000000000000000000000000000008
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 08 ab 48 44 01 00 00 00
+08 18 01 03 78 79 44 78 ef ec ab a0 56 47 9c 25
+10 48 4a 27 cf 80 81 00 81 0f 81 40 81 80 81 8f
+8b 00 90 40 a9 40 94 43 80 90 72 38 28 40 48 c8
+05 48 10 60 a4 00 00 1c 00 00 00 fd 00 39 3f 41
+44 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42
+4b 20 57 55 58 47 41 0a 20 20 20 20 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 08
 
 00 ff ff ff ff ff ff 00 08 ab 48 44 01 00 00 00
 08 18 01 03 78 79 44 78 ef ec ab a0 56 47 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BEK
     Model: 17480
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 8 of 2014
   Basic Display Parameters & Features:
     Analog display
@@ -76,3 +74,35 @@ Block 0, Base EDID:
     Display Product Name: 'BK WUXGA'
     Dummy Descriptor:
 Checksum: 0x08
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 08 ab 48 44 01 00 00 00 '..........HD....'
+  08 18 01 03 78 79 44 78 ef ec ab a0 56 47 9c 25 '....xyDx....VG.%'
+  10 48 4a 27 cf 80 81 00 81 0f 81 40 81 80 81 8f '.HJ'.......@....'
+  8b 00 90 40 a9 40 94 43 80 90 72 38 28 40 48 c8 '...@.@.C..r8(@H.'
+  05 48 10 60 a4 00 00 1c 00 00 00 fd 00 39 3f 41 '.H.`.........9?A'
+  44 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42 'D...      .....B'
+  4b 20 57 55 58 47 41 0a 20 20 20 20 00 00 00 10 'K WUXGA.    ....'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 08 '................'
+Checksum: 0x08
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 2576x1120 mm vs display size 1210x680 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 75.062 Hz (Monitor: 57.000 - 63.000 Hz)
+    Horizontal Freq: 31.468 - 79.976 kHz (Monitor: 65.000 - 68.000 kHz)
+    Maximum Clock: 173.000 MHz (Monitor: 170.000 MHz)
+  Base EDID: The DTD max image size is 2576x1120mm, which is larger than the display size 1210.0x680.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

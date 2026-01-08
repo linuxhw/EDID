@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0012e51016502d3101
-321301036c231478ee5ad5a7564b9b24
-135054afce0061408100614f81c00101
-010101010101662150b051001b304070
-36005cc51000001e000000ff00300a0a
-0a0a0a0a0a0a0a0a0a0a000000fd0038
-4b1e3c08000a202020202020000000fc
-004c4d31363130570a0a0a0a0a0a00c8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 12 e5 10 16 50 2d 31 01
+32 13 01 03 6c 23 14 78 ee 5a d5 a7 56 4b 9b 24
+13 50 54 af ce 00 61 40 81 00 61 4f 81 c0 01 01
+01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70
+36 00 5c c5 10 00 00 1e 00 00 00 ff 00 30 0a 0a
+0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 00 00 00 fd 00 38
+4b 1e 3c 08 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 4d 31 36 31 30 57 0a 0a 0a 0a 0a 0a 00 c8
 
 00 ff ff ff ff ff ff 00 12 e5 10 16 50 2d 31 01
 32 13 01 03 6c 23 14 78 ee 5a d5 a7 56 4b 9b 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DWE
     Model: 5648
-    Serial Number: 20000080
+    Serial Number: ...
     Made in: week 50 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -66,8 +64,43 @@ Block 0, Base EDID:
     DTD 1:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (348 mm x 197 mm)
                  Hfront   64 Hsync 112 Hback  256 Hpol P
                  Vfront    3 Vsync   6 Vback   18 Vpol P
-    Display Product Serial Number: '0'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-60 kHz H, max dotclock 80 MHz
     Display Product Name: 'LM1610W'
 Checksum: 0xc8
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 12 e5 10 16 50 2d 31 01 '............P-1.'
+  32 13 01 03 6c 23 14 78 ee 5a d5 a7 56 4b 9b 24 '2...l#.x.Z..VK.$'
+  13 50 54 af ce 00 61 40 81 00 61 4f 81 c0 01 01 '.PT...a@..aO....'
+  01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70 '......f!P.Q..0@p'
+  36 00 5c c5 10 00 00 1e 00 00 00 ff 00 30 0a 0a '6.\..........0..'
+  0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 00 00 00 fd 00 38 '...............8'
+  4b 1e 3c 08 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.<...      ....'
+  00 4c 4d 31 36 31 30 57 0a 0a 0a 0a 0a 0a 00 c8 '.LM1610W........'
+Checksum: 0xc8
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 85.500 MHz (Monitor: 80.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Serial Number: ...
+  Display Product Name: Non-space after newline.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

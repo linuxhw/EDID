@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00202e002401010101
-341e010308351e782eebd5ac4f44a422
-135054254f00b300a940a9c095009040
-8180814081c0023a801871382d40582c
-4500132b2100001e000000ff00563955
-3137303130303030310a000000fd0032
-4b185311000a202020202020000000fc
-0048443234304d0a2020202020200010
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 20 2e 00 24 01 01 01 01
+34 1e 01 03 08 35 1e 78 2e eb d5 ac 4f 44 a4 22
+13 50 54 25 4f 00 b3 00 a9 40 a9 c0 95 00 90 40
+81 80 81 40 81 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2b 21 00 00 1e 00 00 00 ff 00 56 39 55
+31 37 30 31 30 30 30 30 31 0a 00 00 00 fd 00 32
+4b 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 48 44 32 34 30 4d 0a 20 20 20 20 20 20 00 10
 
 00 ff ff ff ff ff ff 00 20 2e 00 24 01 01 01 01
 34 1e 01 03 08 35 1e 78 2e eb d5 ac 4f 44 a4 22
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: HAN
     Model: 9216
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 52 of 2020
   Basic Display Parameters & Features:
     Analog display
@@ -67,10 +65,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (531 mm x 299 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'V9U170100001'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 24-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'HD240M'
 Checksum: 0x10
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 20 2e 00 24 01 01 01 01 '........ ..$....'
+  34 1e 01 03 08 35 1e 78 2e eb d5 ac 4f 44 a4 22 '4....5.x....OD."'
+  13 50 54 25 4f 00 b3 00 a9 40 a9 c0 95 00 90 40 '.PT%O....@.....@'
+  81 80 81 40 81 c0 02 3a 80 18 71 38 2d 40 58 2c '...@...:..q8-@X,'
+  45 00 13 2b 21 00 00 1e 00 00 00 ff 00 56 39 55 'E..+!........V9U'
+  31 37 30 31 30 30 30 30 31 0a 00 00 00 fd 00 32 '170100001......2'
+  4b 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 48 44 32 34 30 4d 0a 20 20 20 20 20 20 00 10 '.HD240M.      ..'
+Checksum: 0x10
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

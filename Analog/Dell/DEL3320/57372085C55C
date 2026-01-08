@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac203343483132
-161401030e291778eeee95a3544c9926
-0f5054a54a0001010101010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000ff00395646
-4d34303553323148430a000000fc0044
-454c4c2044313930314e0a20000000fd
-00384b1e5309000a2020202020200087
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 20 33 43 48 31 32
+16 14 01 03 0e 29 17 78 ee ee 95 a3 54 4c 99 26
+0f 50 54 a5 4a 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 ff 00 39 56 46
+4d 34 30 35 53 32 31 48 43 0a 00 00 00 fc 00 44
+45 4c 4c 20 44 31 39 30 31 4e 0a 20 00 00 00 fd
+00 38 4b 1e 53 09 00 0a 20 20 20 20 20 20 00 87
 
 00 ff ff ff ff ff ff 00 10 ac 20 33 43 48 31 32
 16 14 01 03 0e 29 17 78 ee ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 13088
-    Serial Number: 842090563
+    Serial Number: ...
     Made in: week 22 of 2010
   Basic Display Parameters & Features:
     Analog display
@@ -58,8 +56,34 @@ Block 0, Base EDID:
     DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
                  Hfront   70 Hsync 143 Hback  213 Hpol P
                  Vfront    3 Vsync   3 Vback   24 Vpol P
-    Display Product Serial Number: '9VFM405S21HC'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL D1901N'
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 90 MHz
 Checksum: 0x87
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 20 33 43 48 31 32 '.......... 3CH12'
+  16 14 01 03 0e 29 17 78 ee ee 95 a3 54 4c 99 26 '.....).x....TL.&'
+  0f 50 54 a5 4a 00 01 01 01 01 01 01 01 01 01 01 '.PT.J...........'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 ff 00 39 56 46 '3............9VF'
+  4d 34 30 35 53 32 31 48 43 0a 00 00 00 fc 00 44 'M405S21HC......D'
+  45 4c 4c 20 44 31 39 30 31 4e 0a 20 00 00 00 fd 'ELL D1901N. ....'
+  00 38 4b 1e 53 09 00 0a 20 20 20 20 20 20 00 87 '.8K.S...      ..'
+Checksum: 0x87
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d1597845540000
-311401030e301b782ee615a655499927
-135054bfef807100714f81c081008140
-9500950fb300023a801871382d40582c
-4500de0d1100001e000000ff00414341
-30313931363032360a20000000fd0032
-4c185315000a202020202020000000fc
-0042656e51473232323248444c0a008a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 59 78 45 54 00 00
+31 14 01 03 0e 30 1b 78 2e e6 15 a6 55 49 99 27
+13 50 54 bf ef 80 71 00 71 4f 81 c0 81 00 81 40
+95 00 95 0f b3 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 de 0d 11 00 00 1e 00 00 00 ff 00 41 43 41
+30 31 39 31 36 30 32 36 0a 20 00 00 00 fd 00 32
+4c 18 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 47 32 32 32 32 48 44 4c 0a 00 8a
 
 00 ff ff ff ff ff ff 00 09 d1 59 78 45 54 00 00
 31 14 01 03 0e 30 1b 78 2e e6 15 a6 55 49 99 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30809
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 49 of 2010
   Basic Display Parameters & Features:
     Analog display
@@ -74,8 +72,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (478 mm x 269 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'ACA01916026'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 24-83 kHz H, max dotclock 210 MHz
     Display Product Name: 'BenQG2222HDL'
 Checksum: 0x8a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 59 78 45 54 00 00 '..........YxET..'
+  31 14 01 03 0e 30 1b 78 2e e6 15 a6 55 49 99 27 '1....0.x....UI.''
+  13 50 54 bf ef 80 71 00 71 4f 81 c0 81 00 81 40 '.PT...q.qO.....@'
+  95 00 95 0f b3 00 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 de 0d 11 00 00 1e 00 00 00 ff 00 41 43 41 'E............ACA'
+  30 31 39 31 36 30 32 36 0a 20 00 00 00 fd 00 32 '01916026. .....2'
+  4c 18 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 42 65 6e 51 47 32 32 32 32 48 44 4c 0a 00 8a '.BenQG2222HDL...'
+Checksum: 0x8a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

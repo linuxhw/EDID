@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d1e27845540000
-1d1c01030e2b18782e69d0a2564fa028
-0f5054a56a80810081c0010101010101
-010101010101302a40c8608464301850
-1300b0f01000001a000000ff004a374a
-30373536303031390a20000000fd0032
-4c1e5311000a202020202020000000fc
-0042656e5120474c323037300a20002f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 e2 78 45 54 00 00
+1d 1c 01 03 0e 2b 18 78 2e 69 d0 a2 56 4f a0 28
+0f 50 54 a5 6a 80 81 00 81 c0 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 b0 f0 10 00 00 1a 00 00 00 ff 00 4a 37 4a
+30 37 35 36 30 30 31 39 0a 20 00 00 00 fd 00 32
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 47 4c 32 30 37 30 0a 20 00 2f
 
 00 ff ff ff ff ff ff 00 09 d1 e2 78 45 54 00 00
 1d 1c 01 03 0e 2b 18 78 2e 69 d0 a2 56 4f a0 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30946
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 29 of 2018
   Basic Display Parameters & Features:
     Analog display
@@ -62,8 +60,39 @@ Block 0, Base EDID:
     DTD 1:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (432 mm x 240 mm)
                  Hfront   24 Hsync  80 Hback   96 Hpol P
                  Vfront    1 Vsync   3 Vback   96 Vpol N
-    Display Product Serial Number: 'J7J07560019'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'BenQ GL2070'
 Checksum: 0x2f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 e2 78 45 54 00 00 '...........xET..'
+  1d 1c 01 03 0e 2b 18 78 2e 69 d0 a2 56 4f a0 28 '.....+.x.i..VO.('
+  0f 50 54 a5 6a 80 81 00 81 c0 01 01 01 01 01 01 '.PT.j...........'
+  01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
+  13 00 b0 f0 10 00 00 1a 00 00 00 ff 00 4a 37 4a '.............J7J'
+  30 37 35 36 30 30 31 39 0a 20 00 00 00 fd 00 32 '07560019. .....2'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 42 65 6e 51 20 47 4c 32 30 37 30 0a 20 00 2f '.BenQ GL2070. ./'
+Checksum: 0x2f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x53.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

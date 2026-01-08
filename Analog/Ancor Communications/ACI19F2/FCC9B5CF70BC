@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469f219f3870100
-1018010308291778eaf545a455509e27
-0f5054bdee0081c00101010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000fd00324b18
-5311000a202020202020000000fc0041
-5355532056533139370a2020000000ff
-0045344c4d54463130303333390a00db
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 f2 19 f3 87 01 00
+10 18 01 03 08 29 17 78 ea f5 45 a4 55 50 9e 27
+0f 50 54 bd ee 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 4b 18
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+53 55 53 20 56 53 31 39 37 0a 20 20 00 00 00 ff
+00 45 34 4c 4d 54 46 31 30 30 33 33 39 0a 00 db
 
 00 ff ff ff ff ff ff 00 04 69 f2 19 f3 87 01 00
 10 18 01 03 08 29 17 78 ea f5 45 a4 55 50 9e 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 6642
-    Serial Number: 100339
+    Serial Number: ...
     Made in: week 16 of 2014
   Basic Display Parameters & Features:
     Analog display
@@ -66,5 +64,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 24-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'ASUS VS197'
-    Display Product Serial Number: 'E4LMTF100339'
+    Display Product Serial Number: ...
 Checksum: 0xdb
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 f2 19 f3 87 01 00 '.........i......'
+  10 18 01 03 08 29 17 78 ea f5 45 a4 55 50 9e 27 '.....).x..E.UP.''
+  0f 50 54 bd ee 00 81 c0 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 4b 18 '3............2K.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'S...      .....A'
+  53 55 53 20 56 53 31 39 37 0a 20 20 00 00 00 ff 'SUS VS197.  ....'
+  00 45 34 4c 4d 54 46 31 30 30 33 33 39 0a 00 db '.E4LMTF100339...'
+Checksum: 0xdb
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

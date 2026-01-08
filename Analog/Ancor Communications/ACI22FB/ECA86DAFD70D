@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469fb22b42d0000
-0d15010368301b782ae615a655499927
-135054bfef0081c0810081809500b300
-d1c0714f950f023a801871382d40582c
-4500db0b1100001e000000ff0042344c
-4d54463031313730300a000000fd0032
-4b405311000a202020202020000000fc
-0041535553204d4c3232390a20200059
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 fb 22 b4 2d 00 00
+0d 15 01 03 68 30 1b 78 2a e6 15 a6 55 49 99 27
+13 50 54 bf ef 00 81 c0 81 00 81 80 95 00 b3 00
+d1 c0 71 4f 95 0f 02 3a 80 18 71 38 2d 40 58 2c
+45 00 db 0b 11 00 00 1e 00 00 00 ff 00 42 34 4c
+4d 54 46 30 31 31 37 30 30 0a 00 00 00 fd 00 32
+4b 40 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 4d 4c 32 32 39 0a 20 20 00 59
 
 00 ff ff ff ff ff ff 00 04 69 fb 22 b4 2d 00 00
 0d 15 01 03 68 30 1b 78 2a e6 15 a6 55 49 99 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 8955
-    Serial Number: 11700
+    Serial Number: ...
     Made in: week 13 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -72,8 +70,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (475 mm x 267 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'B4LMTF011700'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 64-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'ASUS ML229'
 Checksum: 0x59
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 fb 22 b4 2d 00 00 '.........i.".-..'
+  0d 15 01 03 68 30 1b 78 2a e6 15 a6 55 49 99 27 '....h0.x*...UI.''
+  13 50 54 bf ef 00 81 c0 81 00 81 80 95 00 b3 00 '.PT.............'
+  d1 c0 71 4f 95 0f 02 3a 80 18 71 38 2d 40 58 2c '..qO...:..q8-@X,'
+  45 00 db 0b 11 00 00 1e 00 00 00 ff 00 42 34 4c 'E............B4L'
+  4d 54 46 30 31 31 37 30 30 0a 00 00 00 fd 00 32 'MTF011700......2'
+  4b 40 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K@S...      ....'
+  00 41 53 55 53 20 4d 4c 32 32 39 0a 20 20 00 59 '.ASUS ML229.  .Y'
+Checksum: 0x59
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 64.000 - 83.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

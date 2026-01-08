@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469e41901010101
-171601030a2917782e3d85a6564a9a24
-125054afcd10714f8140810081c00101
-010101010101662156aa51001e30468f
-33009ae61000001e000000ff0043364c
-4d464b3030323932360a000000fd0037
-4b1e500e000a202020202020000000fc
-00415355532056483139320a202000c8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 e4 19 01 01 01 01
+17 16 01 03 0a 29 17 78 2e 3d 85 a6 56 4a 9a 24
+12 50 54 af cd 10 71 4f 81 40 81 00 81 c0 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 ff 00 43 36 4c
+4d 46 4b 30 30 32 39 32 36 0a 00 00 00 fd 00 37
+4b 1e 50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 56 48 31 39 32 0a 20 20 00 c8
 
 00 ff ff ff ff ff ff 00 04 69 e4 19 01 01 01 01
 17 16 01 03 0a 29 17 78 2e 3d 85 a6 56 4a 9a 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 6628
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 23 of 2012
   Basic Display Parameters & Features:
     Analog display
@@ -66,8 +64,34 @@ Block 0, Base EDID:
     DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
                  Hfront   70 Hsync 143 Hback  213 Hpol P
                  Vfront    3 Vsync   3 Vback   24 Vpol P
-    Display Product Serial Number: 'C6LMFK002926'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-80 kHz H, max dotclock 140 MHz
     Display Product Name: 'ASUS VH192'
 Checksum: 0xc8
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 e4 19 01 01 01 01 '.........i......'
+  17 16 01 03 0a 29 17 78 2e 3d 85 a6 56 4a 9a 24 '.....).x.=..VJ.$'
+  12 50 54 af cd 10 71 4f 81 40 81 00 81 c0 01 01 '.PT...qO.@......'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 ff 00 43 36 4c '3............C6L'
+  4d 46 4b 30 30 32 39 32 36 0a 00 00 00 fd 00 37 'MFK002926......7'
+  4b 1e 50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.P...      ....'
+  00 41 53 55 53 20 56 48 31 39 32 0a 20 20 00 c8 '.ASUS VH192.  ..'
+Checksum: 0xc8
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00047276ad961b0000
-2c10010368291a782a9bb6a4534b9d24
-144f54bfef0061467140714f814f8180
-950f010101019a29a0d0518422305098
-360098ff1000001c000000ff0045544c
-373630323030310a2020000000fd0032
-4b1e500e000a202020202020000000fc
-004163657220414c31393136570a0006
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 76 ad 96 1b 00 00
+2c 10 01 03 68 29 1a 78 2a 9b b6 a4 53 4b 9d 24
+14 4f 54 bf ef 00 61 46 71 40 71 4f 81 4f 81 80
+95 0f 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 ff 00 45 54 4c
+37 36 30 32 30 30 31 0a 20 20 00 00 00 fd 00 32
+4b 1e 50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 63 65 72 20 41 4c 31 39 31 36 57 0a 00 06
 
 00 ff ff ff ff ff ff 00 04 72 76 ad 96 1b 00 00
 2c 10 01 03 68 29 1a 78 2a 9b b6 a4 53 4b 9d 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 44406
-    Serial Number: 7062
+    Serial Number: ...
     Made in: week 44 of 2006
   Basic Display Parameters & Features:
     Analog display
@@ -70,8 +68,32 @@ Block 0, Base EDID:
     DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (408 mm x 255 mm)
                  Hfront   80 Hsync 152 Hback  232 Hpol N
                  Vfront    3 Vsync   6 Vback   25 Vpol P
-    Display Product Serial Number: 'ETL7602001'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-80 kHz H, max dotclock 140 MHz
     Display Product Name: 'Acer AL1916W'
 Checksum: 0x06
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 76 ad 96 1b 00 00 '.........rv.....'
+  2c 10 01 03 68 29 1a 78 2a 9b b6 a4 53 4b 9d 24 ',...h).x*...SK.$'
+  14 4f 54 bf ef 00 61 46 71 40 71 4f 81 4f 81 80 '.OT...aFq@qO.O..'
+  95 0f 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 00 00 00 ff 00 45 54 4c '6............ETL'
+  37 36 30 32 30 30 31 0a 20 20 00 00 00 fd 00 32 '7602001.  .....2'
+  4b 1e 50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.P...      ....'
+  00 41 63 65 72 20 41 4c 31 39 31 36 57 0a 00 06 '.Acer AL1916W...'
+Checksum: 0x06
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

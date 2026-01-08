@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d1137745540000
-0f11010308291a78eae5b5a355499927
-135054bfef80950f8180814001010101
-0101010101019a29a0d0518422305098
-36009a001100001c000000fc0042656e
-5120543931570a202020000000fd0038
-4c1f5410000a202020202020000000ff
-0043343730313332383032360a2000cd
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 13 77 45 54 00 00
+0f 11 01 03 08 29 1a 78 ea e5 b5 a3 55 49 99 27
+13 50 54 bf ef 80 95 0f 81 80 81 40 01 01 01 01
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 9a 00 11 00 00 1c 00 00 00 fc 00 42 65 6e
+51 20 54 39 31 57 0a 20 20 20 00 00 00 fd 00 38
+4c 1f 54 10 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 43 34 37 30 31 33 32 38 30 32 36 0a 20 00 cd
 
 00 ff ff ff ff ff ff 00 09 d1 13 77 45 54 00 00
 0f 11 01 03 08 29 1a 78 ea e5 b5 a3 55 49 99 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30483
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 15 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -71,5 +69,29 @@ Block 0, Base EDID:
     Display Product Name: 'BenQ T91W'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-84 kHz H, max dotclock 160 MHz
-    Display Product Serial Number: 'C4701328026'
+    Display Product Serial Number: ...
 Checksum: 0xcd
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 13 77 45 54 00 00 '...........wET..'
+  0f 11 01 03 08 29 1a 78 ea e5 b5 a3 55 49 99 27 '.....).x....UI.''
+  13 50 54 bf ef 80 95 0f 81 80 81 40 01 01 01 01 '.PT........@....'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 9a 00 11 00 00 1c 00 00 00 fc 00 42 65 6e '6............Ben'
+  51 20 54 39 31 57 0a 20 20 20 00 00 00 fd 00 38 'Q T91W.   .....8'
+  4c 1f 54 10 00 0a 20 20 20 20 20 20 00 00 00 ff 'L.T...      ....'
+  00 43 34 37 30 31 33 32 38 30 32 36 0a 20 00 cd '.C4701328026. ..'
+Checksum: 0xcd
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

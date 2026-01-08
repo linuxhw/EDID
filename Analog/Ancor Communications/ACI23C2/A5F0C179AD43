@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469c2238b040000
-1617010368351f782a6275a3554fa027
-125054b7ef00d1c0814081809500b300
-714f81c08100023a801871382d40582c
-450010362100001e000000ff0044364c
-4d544a3030313136330a000000fd0032
-551c5311000a202020202020000000fc
-0041535553204d583233390a20200068
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 c2 23 8b 04 00 00
+16 17 01 03 68 35 1f 78 2a 62 75 a3 55 4f a0 27
+12 50 54 b7 ef 00 d1 c0 81 40 81 80 95 00 b3 00
+71 4f 81 c0 81 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 10 36 21 00 00 1e 00 00 00 ff 00 44 36 4c
+4d 54 4a 30 30 31 31 36 33 0a 00 00 00 fd 00 32
+55 1c 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 4d 58 32 33 39 0a 20 20 00 68
 
 00 ff ff ff ff ff ff 00 04 69 c2 23 8b 04 00 00
 16 17 01 03 68 35 1f 78 2a 62 75 a3 55 4f a0 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 9154
-    Serial Number: 1163
+    Serial Number: ...
     Made in: week 22 of 2013
   Basic Display Parameters & Features:
     Analog display
@@ -71,8 +69,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (528 mm x 310 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'D6LMTJ001163'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-85 Hz V, 28-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'ASUS MX239'
 Checksum: 0x68
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 c2 23 8b 04 00 00 '.........i.#....'
+  16 17 01 03 68 35 1f 78 2a 62 75 a3 55 4f a0 27 '....h5.x*bu.UO.''
+  12 50 54 b7 ef 00 d1 c0 81 40 81 80 95 00 b3 00 '.PT......@......'
+  71 4f 81 c0 81 00 02 3a 80 18 71 38 2d 40 58 2c 'qO.....:..q8-@X,'
+  45 00 10 36 21 00 00 1e 00 00 00 ff 00 44 36 4c 'E..6!........D6L'
+  4d 54 4a 30 30 31 31 36 33 0a 00 00 00 fd 00 32 'MTJ001163......2'
+  55 1c 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'U.S...      ....'
+  00 41 53 55 53 20 4d 58 32 33 39 0a 20 20 00 68 '.ASUS MX239.  .h'
+Checksum: 0x68
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

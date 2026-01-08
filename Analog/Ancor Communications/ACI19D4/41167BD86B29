@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469d419e3b40000
-0f12010308291a78ea8585a6574a9c26
-125054bfef80714f8100810f81408180
-9500950f01019a29a0d0518422305098
-360098ff1000001c000000fd00374b1e
-530f000a202020202020000000fc0041
-535553205657313933530a20000000ff
-0038344c4d54463034363330370a007f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 d4 19 e3 b4 00 00
+0f 12 01 03 08 29 1a 78 ea 85 85 a6 57 4a 9c 26
+12 50 54 bf ef 80 71 4f 81 00 81 0f 81 40 81 80
+95 00 95 0f 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 fd 00 37 4b 1e
+53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+53 55 53 20 56 57 31 39 33 53 0a 20 00 00 00 ff
+00 38 34 4c 4d 54 46 30 34 36 33 30 37 0a 00 7f
 
 00 ff ff ff ff ff ff 00 04 69 d4 19 e3 b4 00 00
 0f 12 01 03 08 29 1a 78 ea 85 85 a6 57 4a 9c 26
@@ -27,11 +25,11 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 6612
-    Serial Number: 46307
+    Serial Number: ...
     Made in: week 15 of 2008
   Basic Display Parameters & Features:
     Analog display
-    Input voltage level: 0.7/0.3 V
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
     Blank level equals black level
     Sync: Separate
     Maximum image size: 41 cm x 26 cm
@@ -69,11 +67,35 @@ Block 0, Base EDID:
     DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
     DMT 0x30:  1440x900    74.984427 Hz  16:10    70.635 kHz    136.750000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  1440x900    59.887445 Hz   8:5     55.935 kHz    106.500000 MHz (408 mm x 255 mm)
+    DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (408 mm x 255 mm)
                  Hfront   80 Hsync 152 Hback  232 Hpol N
                  Vfront    3 Vsync   6 Vback   25 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 150 MHz
     Display Product Name: 'ASUS VW193S'
-    Display Product Serial Number: '84LMTF046307'
+    Display Product Serial Number: ...
 Checksum: 0x7f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 d4 19 e3 b4 00 00 '.........i......'
+  0f 12 01 03 08 29 1a 78 ea 85 85 a6 57 4a 9c 26 '.....).x....WJ.&'
+  12 50 54 bf ef 80 71 4f 81 00 81 0f 81 40 81 80 '.PT...qO.....@..'
+  95 00 95 0f 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 00 00 00 fd 00 37 4b 1e '6............7K.'
+  53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'S...      .....A'
+  53 55 53 20 56 57 31 39 33 53 0a 20 00 00 00 ff 'SUS VW193S. ....'
+  00 38 34 4c 4d 54 46 30 34 36 33 30 37 0a 00 7f '.84LMTF046307...'
+Checksum: 0x7f
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

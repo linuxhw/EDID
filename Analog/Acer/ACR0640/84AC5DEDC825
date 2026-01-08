@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00047240064edd0024
-2820010368351e782aa135a35b4fa327
-115054b30c00714f818081c081009500
-b300d1c001016842806a703827400820
-98040f282100001a023a801871382d40
-582c45000f282100001e000000fd0030
-4b1e5512000a202020202020000000fc
-00416365722056323437590a2020009d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 40 06 4e dd 00 24
+28 20 01 03 68 35 1e 78 2a a1 35 a3 5b 4f a3 27
+11 50 54 b3 0c 00 71 4f 81 80 81 c0 81 00 95 00
+b3 00 d1 c0 01 01 68 42 80 6a 70 38 27 40 08 20
+98 04 0f 28 21 00 00 1a 02 3a 80 18 71 38 2d 40
+58 2c 45 00 0f 28 21 00 00 1e 00 00 00 fd 00 30
+4b 1e 55 12 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 63 65 72 20 56 32 34 37 59 0a 20 20 00 9d
 
 00 ff ff ff ff ff ff 00 04 72 40 06 4e dd 00 24
 28 20 01 03 68 35 1e 78 2a a1 35 a3 5b 4f a3 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 1600
-    Serial Number: 604036430
+    Serial Number: ...
     Made in: week 40 of 2022
   Basic Display Parameters & Features:
     Analog display
@@ -71,3 +69,27 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 48-75 Hz V, 30-85 kHz H, max dotclock 180 MHz
     Display Product Name: 'Acer V247Y'
 Checksum: 0x9d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 40 06 4e dd 00 24 '.........r@.N..$'
+  28 20 01 03 68 35 1e 78 2a a1 35 a3 5b 4f a3 27 '( ..h5.x*.5.[O.''
+  11 50 54 b3 0c 00 71 4f 81 80 81 c0 81 00 95 00 '.PT...qO........'
+  b3 00 d1 c0 01 01 68 42 80 6a 70 38 27 40 08 20 '......hB.jp8'@. '
+  98 04 0f 28 21 00 00 1a 02 3a 80 18 71 38 2d 40 '...(!....:..q8-@'
+  58 2c 45 00 0f 28 21 00 00 1e 00 00 00 fd 00 30 'X,E..(!........0'
+  4b 1e 55 12 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.U...      ....'
+  00 41 63 65 72 20 56 32 34 37 59 0a 20 20 00 9d '.Acer V247Y.  ..'
+Checksum: 0x9d
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

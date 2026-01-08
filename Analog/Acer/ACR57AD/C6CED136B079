@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000472ad5701010101
-2710010368261e782ade95a3544c9926
-0f5054bfef0081808140714f01010101
-010101010101302a009851002a403070
-1300782d1100001e000000ff00363339
-3030324243343330300a000000fc0041
-4c313931370a202020202020000000fd
-00384c1e520e000a20202020202000f2
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 ad 57 01 01 01 01
+27 10 01 03 68 26 1e 78 2a de 95 a3 54 4c 99 26
+0f 50 54 bf ef 00 81 80 81 40 71 4f 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 ff 00 36 33 39
+30 30 32 42 43 34 33 30 30 0a 00 00 00 fc 00 41
+4c 31 39 31 37 0a 20 20 20 20 20 20 00 00 00 fd
+00 38 4c 1e 52 0e 00 0a 20 20 20 20 20 20 00 f2
 
 00 ff ff ff ff ff ff 00 04 72 ad 57 01 01 01 01
 27 10 01 03 68 26 1e 78 2a de 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 22445
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 39 of 2006
   Basic Display Parameters & Features:
     Analog display
@@ -67,8 +65,32 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (376 mm x 301 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: '639002BC4300'
+    Display Product Serial Number: ...
     Display Product Name: 'AL1917'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-82 kHz H, max dotclock 140 MHz
 Checksum: 0xf2
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 ad 57 01 01 01 01 '.........r.W....'
+  27 10 01 03 68 26 1e 78 2a de 95 a3 54 4c 99 26 ''...h&.x*...TL.&'
+  0f 50 54 bf ef 00 81 80 81 40 71 4f 01 01 01 01 '.PT......@qO....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 ff 00 36 33 39 '..x-.........639'
+  30 30 32 42 43 34 33 30 30 0a 00 00 00 fc 00 41 '002BC4300......A'
+  4c 31 39 31 37 0a 20 20 20 20 20 20 00 00 00 fd 'L1917.      ....'
+  00 38 4c 1e 52 0e 00 0a 20 20 20 20 20 20 00 f2 '.8L.R...      ..'
+Checksum: 0xf2
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

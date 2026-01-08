@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000d2c000000000000
-0f13010308502d780a0dc9a057479827
-12484ca308003140454061404bc081c0
-9500b300d1c0662150b051001b304670
-360020c23100001e0e1f008051001e30
-4680370020c23100001c000000fd003b
-3d1e3109000a202020202020000000fc
-00434c433530310a2020202020200043
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d 2c 00 00 00 00 00 00
+0f 13 01 03 08 50 2d 78 0a 0d c9 a0 57 47 98 27
+12 48 4c a3 08 00 31 40 45 40 61 40 4b c0 81 c0
+95 00 b3 00 d1 c0 66 21 50 b0 51 00 1b 30 46 70
+36 00 20 c2 31 00 00 1e 0e 1f 00 80 51 00 1e 30
+46 80 37 00 20 c2 31 00 00 1c 00 00 00 fd 00 3b
+3d 1e 31 09 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 4c 43 35 30 31 0a 20 20 20 20 20 20 00 43
 
 00 ff ff ff ff ff ff 00 0d 2c 00 00 00 00 00 00
 0f 13 01 03 08 50 2d 78 0a 0d c9 a0 57 47 98 27
@@ -68,3 +66,38 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 59-61 Hz V, 30-49 kHz H, max dotclock 90 MHz
     Display Product Name: 'CLC501'
 Checksum: 0x43
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0d 2c 00 00 00 00 00 00 '.........,......'
+  0f 13 01 03 08 50 2d 78 0a 0d c9 a0 57 47 98 27 '.....P-x....WG.''
+  12 48 4c a3 08 00 31 40 45 40 61 40 4b c0 81 c0 '.HL...1@E@a@K...'
+  95 00 b3 00 d1 c0 66 21 50 b0 51 00 1b 30 46 70 '......f!P.Q..0Fp'
+  36 00 20 c2 31 00 00 1e 0e 1f 00 80 51 00 1e 30 '6. .1.......Q..0'
+  46 80 37 00 20 c2 31 00 00 1c 00 00 00 fd 00 3b 'F.7. .1........;'
+  3d 1e 31 09 00 0a 20 20 20 20 20 20 00 00 00 fc '=.1...      ....'
+  00 43 4c 43 35 30 31 0a 20 20 20 20 20 20 00 43 '.CLC501.      .C'
+Checksum: 0x43
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 848x477 has a dubious odd vertical resolution.
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x27.
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x17.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
+    Horizontal Freq: 29.640 - 67.500 kHz (Monitor: 30.000 - 49.000 kHz)
+    Maximum Clock: 148.500 MHz (Monitor: 90.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

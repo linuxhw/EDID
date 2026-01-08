@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004699a2461f90100
-3319010468341d782a2ac5a4564f9e28
-0f5054b7ef00714f814081809500b300
-d1c081c08100023a801871382d40582c
-450009252100001e000000ff0046434c
-4d54463132393337370a000000fd0032
-4b185311000a202020202020000000fc
-00415355532056533234370a20200096
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 9a 24 61 f9 01 00
+33 19 01 04 68 34 1d 78 2a 2a c5 a4 56 4f 9e 28
+0f 50 54 b7 ef 00 71 4f 81 40 81 80 95 00 b3 00
+d1 c0 81 c0 81 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 09 25 21 00 00 1e 00 00 00 ff 00 46 43 4c
+4d 54 46 31 32 39 33 37 37 0a 00 00 00 fd 00 32
+4b 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 56 53 32 34 37 0a 20 20 00 96
 
 00 ff ff ff ff ff ff 00 04 69 9a 24 61 f9 01 00
 33 19 01 04 68 34 1d 78 2a 2a c5 a4 56 4f 9e 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 9370
-    Serial Number: 129377
+    Serial Number: ...
     Made in: week 51 of 2015
   Basic Display Parameters & Features:
     Analog display
@@ -71,8 +69,39 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (521 mm x 293 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'FCLMTF129377'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 24-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'ASUS VS247'
 Checksum: 0x96
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 9a 24 61 f9 01 00 '.........i.$a...'
+  33 19 01 04 68 34 1d 78 2a 2a c5 a4 56 4f 9e 28 '3...h4.x**..VO.('
+  0f 50 54 b7 ef 00 71 4f 81 40 81 80 95 00 b3 00 '.PT...qO.@......'
+  d1 c0 81 c0 81 00 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 09 25 21 00 00 1e 00 00 00 ff 00 46 43 4c 'E..%!........FCL'
+  4d 54 46 31 32 39 33 37 37 0a 00 00 00 fd 00 32 'MTF129377......2'
+  4b 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 41 53 55 53 20 56 53 32 34 37 0a 20 20 00 96 '.ASUS VS247.  ..'
+Checksum: 0x96
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

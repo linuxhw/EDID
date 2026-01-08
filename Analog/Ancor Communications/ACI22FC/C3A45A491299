@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469fc220e0b0000
-30150103682f1a782ac720a455499927
-135054bfef00714f814081809500b300
-d1c001010101023a801871382d40582c
-4500dd0c1100001e000000ff0042434c
-4d54463030323833300a000000fd0032
-4b1e5511000a202020202020000000fc
-00415355532056483232380a202000bc
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 fc 22 0e 0b 00 00
+30 15 01 03 68 2f 1a 78 2a c7 20 a4 55 49 99 27
+13 50 54 bf ef 00 71 4f 81 40 81 80 95 00 b3 00
+d1 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 42 43 4c
+4d 54 46 30 30 32 38 33 30 0a 00 00 00 fd 00 32
+4b 1e 55 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 56 48 32 32 38 0a 20 20 00 bc
 
 00 ff ff ff ff ff ff 00 04 69 fc 22 0e 0b 00 00
 30 15 01 03 68 2f 1a 78 2a c7 20 a4 55 49 99 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 8956
-    Serial Number: 2830
+    Serial Number: ...
     Made in: week 48 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -70,8 +68,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'BCLMTF002830'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-85 kHz H, max dotclock 170 MHz
     Display Product Name: 'ASUS VH228'
 Checksum: 0xbc
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 fc 22 0e 0b 00 00 '.........i."....'
+  30 15 01 03 68 2f 1a 78 2a c7 20 a4 55 49 99 27 '0...h/.x*. .UI.''
+  13 50 54 bf ef 00 71 4f 81 40 81 80 95 00 b3 00 '.PT...qO.@......'
+  d1 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 42 43 4c 'E............BCL'
+  4d 54 46 30 30 32 38 33 30 0a 00 00 00 fd 00 32 'MTF002830......2'
+  4b 1e 55 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.U...      ....'
+  00 41 53 55 53 20 56 48 32 32 38 0a 20 20 00 bc '.ASUS VH228.  ..'
+Checksum: 0xbc
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

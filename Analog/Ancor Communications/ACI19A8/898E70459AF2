@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469a81901010101
-1a1101031e291a78eee5b5a355499927
-135054afcf008180714f950001010101
-0101010101016829a0d0518422305098
-36009a0411000004000000fd00374b1e
-500e000a202020202020000000ff0037
-364c393031323835330a2020000000fc
-005057313931410a2020202020200039
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 a8 19 01 01 01 01
+1a 11 01 03 1e 29 1a 78 ee e5 b5 a3 55 49 99 27
+13 50 54 af cf 00 81 80 71 4f 95 00 01 01 01 01
+01 01 01 01 01 01 68 29 a0 d0 51 84 22 30 50 98
+36 00 9a 04 11 00 00 04 00 00 00 fd 00 37 4b 1e
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 37
+36 4c 39 30 31 32 38 35 33 0a 20 20 00 00 00 fc
+00 50 57 31 39 31 41 0a 20 20 20 20 20 20 00 39
 
 00 ff ff ff ff ff ff 00 04 69 a8 19 01 01 01 01
 1a 11 01 03 1e 29 1a 78 ee e5 b5 a3 55 49 99 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 6568
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 26 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -68,6 +66,32 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   6 Vback   25 Vpol N
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-80 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: '76L9012853'
+    Display Product Serial Number: ...
     Display Product Name: 'PW191A'
 Checksum: 0x39
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 a8 19 01 01 01 01 '.........i......'
+  1a 11 01 03 1e 29 1a 78 ee e5 b5 a3 55 49 99 27 '.....).x....UI.''
+  13 50 54 af cf 00 81 80 71 4f 95 00 01 01 01 01 '.PT.....qO......'
+  01 01 01 01 01 01 68 29 a0 d0 51 84 22 30 50 98 '......h)..Q."0P.'
+  36 00 9a 04 11 00 00 04 00 00 00 fd 00 37 4b 1e '6............7K.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 37 'P...      .....7'
+  36 4c 39 30 31 32 38 35 33 0a 20 20 00 00 00 fc '6L9012853.  ....'
+  00 50 57 31 39 31 41 0a 20 20 20 20 20 20 00 39 '.PW191A.      .9'
+Checksum: 0x39
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

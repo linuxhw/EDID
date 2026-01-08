@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e11591448444730
-220e0103681e168cee12e59a574f9326
-214e53adee0001010101010101010101
-01010101010164190040410026301888
-36002cdc10000018000000ff00434e43
-343334304744480a2020000000fd0038
-4c1e3d08000a202020202020000000fc
-00434f4d5041512046503533313500cc
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 11 59 14 48 44 47 30
+22 0e 01 03 68 1e 16 8c ee 12 e5 9a 57 4f 93 26
+21 4e 53 ad ee 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 2c dc 10 00 00 18 00 00 00 ff 00 43 4e 43
+34 33 34 30 47 44 48 0a 20 20 00 00 00 fd 00 38
+4c 1e 3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 4f 4d 50 41 51 20 46 50 35 33 31 35 00 cc
 
 00 ff ff ff ff ff ff 00 0e 11 59 14 48 44 47 30
 22 0e 01 03 68 1e 16 8c ee 12 e5 9a 57 4f 93 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: CPQ
     Model: 5209
-    Serial Number: 809976904
+    Serial Number: ...
     Made in: week 34 of 2004
   Basic Display Parameters & Features:
     Analog display
@@ -62,8 +60,39 @@ Block 0, Base EDID:
     DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (300 mm x 220 mm)
                  Hfront   24 Hsync 136 Hback  160 Hpol N
                  Vfront    3 Vsync   6 Vback   29 Vpol N
-    Display Product Serial Number: 'CNC4340GDH'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-61 kHz H, max dotclock 80 MHz
     Display Product Name: 'COMPAQ FP5315'
 Checksum: 0xcc
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 11 59 14 48 44 47 30 '..........Y.HDG0'
+  22 0e 01 03 68 1e 16 8c ee 12 e5 9a 57 4f 93 26 '"...h.......WO.&'
+  21 4e 53 ad ee 00 01 01 01 01 01 01 01 01 01 01 '!NS.............'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 2c dc 10 00 00 18 00 00 00 ff 00 43 4e 43 '6.,..........CNC'
+  34 33 34 30 47 44 48 0a 20 20 00 00 00 fd 00 38 '4340GDH.  .....8'
+  4c 1e 3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.=...      ....'
+  00 43 4f 4d 50 41 51 20 46 50 35 33 31 35 00 cc '.COMPAQ FP5315..'
+Checksum: 0xcc
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

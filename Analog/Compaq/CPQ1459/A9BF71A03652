@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e11591405000000
-290d0103681e1678eab725a2574d9425
-185054adee0061400101010101010101
-01010101010164190040410026301888
-36002cdc10000018000000fd00384c1e
-3d08000a202020202020000000fc0043
-4f4d50415120465035333135000000ff
-00434e50333431423556300a20200054
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 11 59 14 05 00 00 00
+29 0d 01 03 68 1e 16 78 ea b7 25 a2 57 4d 94 25
+18 50 54 ad ee 00 61 40 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 2c dc 10 00 00 18 00 00 00 fd 00 38 4c 1e
+3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43
+4f 4d 50 41 51 20 46 50 35 33 31 35 00 00 00 ff
+00 43 4e 50 33 34 31 42 35 56 30 0a 20 20 00 54
 
 00 ff ff ff ff ff ff 00 0e 11 59 14 05 00 00 00
 29 0d 01 03 68 1e 16 78 ea b7 25 a2 57 4d 94 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: CPQ
     Model: 5209
-    Serial Number: 5
+    Serial Number: ...
     Made in: week 41 of 2003
   Basic Display Parameters & Features:
     Analog display
@@ -65,5 +63,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-61 kHz H, max dotclock 80 MHz
     Display Product Name: 'COMPAQ FP5315'
-    Display Product Serial Number: 'CNP341B5V0'
+    Display Product Serial Number: ...
 Checksum: 0x54
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 11 59 14 05 00 00 00 '..........Y.....'
+  29 0d 01 03 68 1e 16 78 ea b7 25 a2 57 4d 94 25 ')...h..x..%.WM.%'
+  18 50 54 ad ee 00 61 40 01 01 01 01 01 01 01 01 '.PT...a@........'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 2c dc 10 00 00 18 00 00 00 fd 00 38 4c 1e '6.,..........8L.'
+  3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43 '=...      .....C'
+  4f 4d 50 41 51 20 46 50 35 33 31 35 00 00 00 ff 'OMPAQ FP5315....'
+  00 43 4e 50 33 34 31 42 35 56 30 0a 20 20 00 54 '.CNP341B5V0.  .T'
+Checksum: 0x54
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

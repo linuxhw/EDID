@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d1018045540000
-031501030e351e782eb7d5a456549f27
-0c5054210800810081c08180a9c0b300
-d1c001010101023a801871382d40582c
-4500dd0c1100001e000000ff00413142
-3032313939534c300a20000000fd0032
-4c1e5311000a202020202020000000fc
-0042656e5120424c323430300a2000bf
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 01 80 45 54 00 00
+03 15 01 03 0e 35 1e 78 2e b7 d5 a4 56 54 9f 27
+0c 50 54 21 08 00 81 00 81 c0 81 80 a9 c0 b3 00
+d1 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 41 31 42
+30 32 31 39 39 53 4c 30 0a 20 00 00 00 fd 00 32
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 42 4c 32 34 30 30 0a 20 00 bf
 
 00 ff ff ff ff ff ff 00 09 d1 01 80 45 54 00 00
 03 15 01 03 0e 35 1e 78 2e b7 d5 a4 56 54 9f 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 32769
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 3 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -60,8 +58,35 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'A1B02199SL0'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'BenQ BL2400'
 Checksum: 0xbf
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 01 80 45 54 00 00 '............ET..'
+  03 15 01 03 0e 35 1e 78 2e b7 d5 a4 56 54 9f 27 '.....5.x....VT.''
+  0c 50 54 21 08 00 81 00 81 c0 81 80 a9 c0 b3 00 '.PT!............'
+  d1 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 41 31 42 'E............A1B'
+  30 32 31 39 39 53 4c 30 0a 20 00 00 00 fd 00 32 '02199SL0. .....2'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 42 65 6e 51 20 42 4c 32 34 30 30 0a 20 00 bf '.BenQ BL2400. ..'
+Checksum: 0xbf
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 477x268 mm vs display size 530x300 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

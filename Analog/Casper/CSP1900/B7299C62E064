@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000e7000198f960100
-12130103682819782ed6a5a2594a9524
-145054bfef00714f814081809500950f
-0101010101019a29a0d0518422305098
-36009a001100001c000000fd00374b1e
-500e000a202020202020000000fc0031
-39435350520a202020202020000000ff
-004d393639344a4131303430373900dd
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0e 70 00 19 8f 96 01 00
+12 13 01 03 68 28 19 78 2e d6 a5 a2 59 4a 95 24
+14 50 54 bf ef 00 71 4f 81 40 81 80 95 00 95 0f
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 9a 00 11 00 00 1c 00 00 00 fd 00 37 4b 1e
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 31
+39 43 53 50 52 0a 20 20 20 20 20 20 00 00 00 ff
+00 4d 39 36 39 34 4a 41 31 30 34 30 37 39 00 dd
 
 00 ff ff ff ff ff ff 00 0e 70 00 19 8f 96 01 00
 12 13 01 03 68 28 19 78 2e d6 a5 a2 59 4a 95 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: CSP
     Model: 6400
-    Serial Number: 104079
+    Serial Number: ...
     Made in: week 18 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -73,5 +71,33 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-80 kHz H, max dotclock 140 MHz
     Display Product Name: '19CSPR'
-    Display Product Serial Number: 'M9694JA104079'
+    Display Product Serial Number: ...
 Checksum: 0xdd
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 0e 70 00 19 8f 96 01 00 '.........p......'
+  12 13 01 03 68 28 19 78 2e d6 a5 a2 59 4a 95 24 '....h(.x....YJ.$'
+  14 50 54 bf ef 00 71 4f 81 40 81 80 95 00 95 0f '.PT...qO.@......'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 9a 00 11 00 00 1c 00 00 00 fd 00 37 4b 1e '6............7K.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 31 'P...      .....1'
+  39 43 53 50 52 0a 20 20 20 20 20 20 00 00 00 ff '9CSPR.      ....'
+  00 4d 39 36 39 34 4a 41 31 30 34 30 37 39 00 dd '.M9694JA104079..'
+Checksum: 0xdd
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 410x256 mm vs display size 400x250 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 410x256mm, which is larger than the display size 400.0x250.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

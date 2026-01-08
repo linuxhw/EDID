@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003438990701010101
-091201030e291a96ea4532a65546ac2a
-195255afcf0081809500950f01010101
-010101010101ab22a0a050841a303020
-36009a001100001a000000ff00383039
-41443031303030343934000000fc0031
-393435205331570a20202020000000fd
-00384b1e510e000a20202020202000ae
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 38 99 07 01 01 01 01
+09 12 01 03 0e 29 1a 96 ea 45 32 a6 55 46 ac 2a
+19 52 55 af cf 00 81 80 95 00 95 0f 01 01 01 01
+01 01 01 01 01 01 ab 22 a0 a0 50 84 1a 30 30 20
+36 00 9a 00 11 00 00 1a 00 00 00 ff 00 38 30 39
+41 44 30 31 30 30 30 34 39 34 00 00 00 fc 00 31
+39 34 35 20 53 31 57 0a 20 20 20 20 00 00 00 fd
+00 38 4b 1e 51 0e 00 0a 20 20 20 20 20 20 00 ae
 
 00 ff ff ff ff ff ff 00 34 38 99 07 01 01 01 01
 09 12 01 03 0e 29 1a 96 ea 45 32 a6 55 46 ac 2a
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MAX
     Model: 1945
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 9 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -65,8 +63,32 @@ Block 0, Base EDID:
     DTD 1:  1440x900    59.901458 Hz  16:10    55.469 kHz     88.750000 MHz (410 mm x 256 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   17 Vpol N
-    Display Product Serial Number: '809AD01000494'
+    Display Product Serial Number: ...
     Display Product Name: '1945 S1W'
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-81 kHz H, max dotclock 140 MHz
 Checksum: 0xae
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 34 38 99 07 01 01 01 01 '........48......'
+  09 12 01 03 0e 29 1a 96 ea 45 32 a6 55 46 ac 2a '.....)...E2.UF.*'
+  19 52 55 af cf 00 81 80 95 00 95 0f 01 01 01 01 '.RU.............'
+  01 01 01 01 01 01 ab 22 a0 a0 50 84 1a 30 30 20 '......."..P..00 '
+  36 00 9a 00 11 00 00 1a 00 00 00 ff 00 38 30 39 '6............809'
+  41 44 30 31 30 30 30 34 39 34 00 00 00 fc 00 31 'AD01000494.....1'
+  39 34 35 20 53 31 57 0a 20 20 20 20 00 00 00 fd '945 S1W.    ....'
+  00 38 4b 1e 51 0e 00 0a 20 20 20 20 20 20 00 ae '.8K.Q...      ..'
+Checksum: 0xae
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

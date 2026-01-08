@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d12c7f45540000
-331701030e351e782e9de1a654549f26
-0d5054a56b80d1c0457c617c818081bc
-953c317c0101023a801871382d40582c
-4500132a2100001e000000ff00564344
-3033313831534c300a20000000fd0018
-780f8715000a202020202020000000fc
-0042656e5120584c323432305a0a007f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 2c 7f 45 54 00 00
+33 17 01 03 0e 35 1e 78 2e 9d e1 a6 54 54 9f 26
+0d 50 54 a5 6b 80 d1 c0 45 7c 61 7c 81 80 81 bc
+95 3c 31 7c 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2a 21 00 00 1e 00 00 00 ff 00 56 43 44
+30 33 31 38 31 53 4c 30 0a 20 00 00 00 fd 00 18
+78 0f 87 15 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 58 4c 32 34 32 30 5a 0a 00 7f
 
 00 ff ff ff ff ff ff 00 09 d1 2c 7f 45 54 00 00
 33 17 01 03 0e 35 1e 78 2e 9d e1 a6 54 54 9f 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 32556
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 51 of 2013
   Basic Display Parameters & Features:
     Analog display
@@ -68,8 +66,36 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (531 mm x 298 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'VCD03181SL0'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 24-120 Hz V, 15-135 kHz H, max dotclock 210 MHz
     Display Product Name: 'BenQ XL2420Z'
 Checksum: 0x7f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 2c 7f 45 54 00 00 '..........,.ET..'
+  33 17 01 03 0e 35 1e 78 2e 9d e1 a6 54 54 9f 26 '3....5.x....TT.&'
+  0d 50 54 a5 6b 80 d1 c0 45 7c 61 7c 81 80 81 bc '.PT.k...E|a|....'
+  95 3c 31 7c 01 01 02 3a 80 18 71 38 2d 40 58 2c '.<1|...:..q8-@X,'
+  45 00 13 2a 21 00 00 1e 00 00 00 ff 00 56 43 44 'E..*!........VCD'
+  30 33 31 38 31 53 4c 30 0a 20 00 00 00 fd 00 18 '03181SL0. ......'
+  78 0f 87 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'x.....      ....'
+  00 42 65 6e 51 20 58 4c 32 34 32 30 5a 0a 00 7f '.BenQ XL2420Z...'
+Checksum: 0x7f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 233.793 MHz (Monitor: 210.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

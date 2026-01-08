@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003438ea0597050000
-260f0103681e1778ea93d5a5554d9524
-145054bfee0001010101010101010101
-01010101010164190040410026301888
-360030e410000018000000ff00303533
-3830313433310a202020000000fd0032
-4b1e3f08000a202020202020000000fc
-0042656c696e656131303135333600dd
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 34 38 ea 05 97 05 00 00
+26 0f 01 03 68 1e 17 78 ea 93 d5 a5 55 4d 95 24
+14 50 54 bf ee 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 30 e4 10 00 00 18 00 00 00 ff 00 30 35 33
+38 30 31 34 33 31 0a 20 20 20 00 00 00 fd 00 32
+4b 1e 3f 08 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6c 69 6e 65 61 31 30 31 35 33 36 00 dd
 
 00 ff ff ff ff ff ff 00 34 38 ea 05 97 05 00 00
 26 0f 01 03 68 1e 17 78 ea 93 d5 a5 55 4d 95 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MAX
     Model: 1514
-    Serial Number: 1431
+    Serial Number: ...
     Made in: week 38 of 2005
   Basic Display Parameters & Features:
     Analog display
@@ -63,8 +61,32 @@ Block 0, Base EDID:
     DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (304 mm x 228 mm)
                  Hfront   24 Hsync 136 Hback  160 Hpol N
                  Vfront    3 Vsync   6 Vback   29 Vpol N
-    Display Product Serial Number: '053801431'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-63 kHz H, max dotclock 80 MHz
     Display Product Name: 'Belinea101536'
 Checksum: 0xdd
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 34 38 ea 05 97 05 00 00 '........48......'
+  26 0f 01 03 68 1e 17 78 ea 93 d5 a5 55 4d 95 24 '&...h..x....UM.$'
+  14 50 54 bf ee 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 30 e4 10 00 00 18 00 00 00 ff 00 30 35 33 '6.0..........053'
+  38 30 31 34 33 31 0a 20 20 20 00 00 00 fd 00 32 '801431.   .....2'
+  4b 1e 3f 08 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.?...      ....'
+  00 42 65 6c 69 6e 65 61 31 30 31 35 33 36 00 dd '.Belinea101536..'
+Checksum: 0xdd
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

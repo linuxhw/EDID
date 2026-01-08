@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d1607634040000
-260e01036c221b78eac4f6a3574a9c23
-114f54bdef80714f8180818c01010101
-010101010101302a009851002a403070
-1300520e1100001ed50980a0205e6310
-10605208520e1100001a000000fd0038
-4c1f530e000a202020202020000000fc
-0042656e5120465037353720200a0063
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 60 76 34 04 00 00
+26 0e 01 03 6c 22 1b 78 ea c4 f6 a3 57 4a 9c 23
+11 4f 54 bd ef 80 71 4f 81 80 81 8c 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e d5 09 80 a0 20 5e 63 10
+10 60 52 08 52 0e 11 00 00 1a 00 00 00 fd 00 38
+4c 1f 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 46 50 37 35 37 20 20 0a 00 63
 
 00 ff ff ff ff ff ff 00 09 d1 60 76 34 04 00 00
 26 0e 01 03 6c 22 1b 78 ea c4 f6 a3 57 4a 9c 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 30304
-    Serial Number: 1076
+    Serial Number: ...
     Made in: week 38 of 2004
   Basic Display Parameters & Features:
     Analog display
@@ -74,3 +72,29 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'BenQ FP757  '
 Checksum: 0x63
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 60 76 34 04 00 00 '..........`v4...'
+  26 0e 01 03 6c 22 1b 78 ea c4 f6 a3 57 4a 9c 23 '&...l".x....WJ.#'
+  11 4f 54 bd ef 80 71 4f 81 80 81 8c 01 01 01 01 '.OT...qO........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e d5 09 80 a0 20 5e 63 10 '..R......... ^c.'
+  10 60 52 08 52 0e 11 00 00 1a 00 00 00 fd 00 38 '.`R.R..........8'
+  4c 1f 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 42 65 6e 51 20 46 50 37 35 37 20 20 0a 00 63 '.BenQ FP757  ..c'
+Checksum: 0x63
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

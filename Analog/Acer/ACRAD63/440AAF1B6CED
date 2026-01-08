@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00047263adb0456172
-1a11010308261e78e89ae5a658499923
-115054bfef0001010101010101010101
-010101010101302a009851002a403070
-1300782d1100001e000000fd00384b1e
-530e000a202020202020000000ff004c
-37383043303534343034330a000000fc
-00414c313931360a202020202020002c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 63 ad b0 45 61 72
+1a 11 01 03 08 26 1e 78 e8 9a e5 a6 58 49 99 23
+11 50 54 bf ef 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c
+37 38 30 43 30 35 34 34 30 34 33 0a 00 00 00 fc
+00 41 4c 31 39 31 36 0a 20 20 20 20 20 20 00 2c
 
 00 ff ff ff ff ff ff 00 04 72 63 ad b0 45 61 72
 1a 11 01 03 08 26 1e 78 e8 9a e5 a6 58 49 99 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 44387
-    Serial Number: 1918977456
+    Serial Number: ...
     Made in: week 26 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -65,6 +63,32 @@ Block 0, Base EDID:
                  Vfront    1 Vsync   3 Vback   38 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: 'L780C0544043'
+    Display Product Serial Number: ...
     Display Product Name: 'AL1916'
 Checksum: 0x2c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 63 ad b0 45 61 72 '.........rc..Ear'
+  1a 11 01 03 08 26 1e 78 e8 9a e5 a6 58 49 99 23 '.....&.x....XI.#'
+  11 50 54 bf ef 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4b 1e '..x-.........8K.'
+  53 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c 'S...      .....L'
+  37 38 30 43 30 35 34 34 30 34 33 0a 00 00 00 fc '780C0544043.....'
+  00 41 4c 31 39 31 36 0a 20 20 20 20 20 20 00 2c '.AL1916.      .,'
+Checksum: 0x2c
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469a22201010101
-281101031e2f1e78eec4f6a3574a9c23
-114f54bfef00714f818081409500a940
-b3000101010121399030621a274068b0
-3600d9281100001c000000fd00384b1f
-5111000a202020202020000000fc0056
-573232320a20202020202020000000ff
-0037414c4d51533030303037380a0093
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 a2 22 01 01 01 01
+28 11 01 03 1e 2f 1e 78 ee c4 f6 a3 57 4a 9c 23
+11 4f 54 bf ef 00 71 4f 81 80 81 40 95 00 a9 40
+b3 00 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0
+36 00 d9 28 11 00 00 1c 00 00 00 fd 00 38 4b 1f
+51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+57 32 32 32 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 37 41 4c 4d 51 53 30 30 30 30 37 38 0a 00 93
 
 00 ff ff ff ff ff ff 00 04 69 a2 22 01 01 01 01
 28 11 01 03 1e 2f 1e 78 ee c4 f6 a3 57 4a 9c 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 8866
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 40 of 2007
   Basic Display Parameters & Features:
     Analog display
@@ -74,5 +72,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 31-81 kHz H, max dotclock 170 MHz
     Display Product Name: 'VW222'
-    Display Product Serial Number: '7ALMQS000078'
+    Display Product Serial Number: ...
 Checksum: 0x93
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 a2 22 01 01 01 01 '.........i."....'
+  28 11 01 03 1e 2f 1e 78 ee c4 f6 a3 57 4a 9c 23 '(..../.x....WJ.#'
+  11 4f 54 bf ef 00 71 4f 81 80 81 40 95 00 a9 40 '.OT...qO...@...@'
+  b3 00 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0 '......!9.0b.'@h.'
+  36 00 d9 28 11 00 00 1c 00 00 00 fd 00 38 4b 1f '6..(.........8K.'
+  51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56 'Q...      .....V'
+  57 32 32 32 0a 20 20 20 20 20 20 20 00 00 00 ff 'W222.       ....'
+  00 37 41 4c 4d 51 53 30 30 30 30 37 38 0a 00 93 '.7ALMQS000078...'
+Checksum: 0x93
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
