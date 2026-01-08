@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004729c009a2e1085
-33120103682c19782eee95a3544c9926
-0f5054b30c00d1c0714f810081809500
-010101010101023a801871382d40582c
-4500bbf910000004000000fd00374b1e
-5012000a202020202020000000fc0058
-323333480a20202020202020000000ff
-004c464e304230303633393130200060
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 9c 00 9a 2e 10 85
+33 12 01 03 68 2c 19 78 2e ee 95 a3 54 4c 99 26
+0f 50 54 b3 0c 00 d1 c0 71 4f 81 00 81 80 95 00
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 bb f9 10 00 00 04 00 00 00 fd 00 37 4b 1e
+50 12 00 0a 20 20 20 20 20 20 00 00 00 fc 00 58
+32 33 33 48 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 4c 46 4e 30 42 30 30 36 33 39 31 30 20 00 60
 
 00 ff ff ff ff ff ff 00 04 72 9c 00 9a 2e 10 85
 33 12 01 03 68 2c 19 78 2e ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 156
-    Serial Number: 2232430234
+    Serial Number: ...
     Made in: week 51 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -66,5 +64,37 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-80 kHz H, max dotclock 180 MHz
     Display Product Name: 'X233H'
-    Display Product Serial Number: 'LFN0B0063910 '
+    Display Product Serial Number: ...
 Checksum: 0x60
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 9c 00 9a 2e 10 85 '.........r......'
+  33 12 01 03 68 2c 19 78 2e ee 95 a3 54 4c 99 26 '3...h,.x....TL.&'
+  0f 50 54 b3 0c 00 d1 c0 71 4f 81 00 81 80 95 00 '.PT.....qO......'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 bb f9 10 00 00 04 00 00 00 fd 00 37 4b 1e 'E............7K.'
+  50 12 00 0a 20 20 20 20 20 20 00 00 00 fc 00 58 'P...      .....X'
+  32 33 33 48 0a 20 20 20 20 20 20 20 00 00 00 ff '233H.       ....'
+  00 4c 46 4e 30 42 30 30 36 33 39 31 30 20 00 60 '.LFN0B0063910 .`'
+Checksum: 0x60
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

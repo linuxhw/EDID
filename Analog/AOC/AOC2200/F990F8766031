@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e3002291460000
-1613010368351e782abd20a753469e25
-145054bfef00614c8180818a818c9500
-8140714f01017c2e90a0601a1e403020
-36000e282100001a000000fd00384b18
-5011000a202020202020000000fc0056
-32320a202020202020202020000000ff
-004f373339354a413031383036350046
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 00 22 91 46 00 00
+16 13 01 03 68 35 1e 78 2a bd 20 a7 53 46 9e 25
+14 50 54 bf ef 00 61 4c 81 80 81 8a 81 8c 95 00
+81 40 71 4f 01 01 7c 2e 90 a0 60 1a 1e 40 30 20
+36 00 0e 28 21 00 00 1a 00 00 00 fd 00 38 4b 18
+50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+32 32 0a 20 20 20 20 20 20 20 20 20 00 00 00 ff
+00 4f 37 33 39 35 4a 41 30 31 38 30 36 35 00 46
 
 00 ff ff ff ff ff ff 00 05 e3 00 22 91 46 00 00
 16 13 01 03 68 35 1e 78 2a bd 20 a7 53 46 9e 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 8704
-    Serial Number: 18065
+    Serial Number: ...
     Made in: week 22 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -74,5 +72,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 24-80 kHz H, max dotclock 170 MHz
     Display Product Name: 'V22'
-    Display Product Serial Number: 'O7395JA018065'
+    Display Product Serial Number: ...
 Checksum: 0x46
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 00 22 91 46 00 00 '...........".F..'
+  16 13 01 03 68 35 1e 78 2a bd 20 a7 53 46 9e 25 '....h5.x*. .SF.%'
+  14 50 54 bf ef 00 61 4c 81 80 81 8a 81 8c 95 00 '.PT...aL........'
+  81 40 71 4f 01 01 7c 2e 90 a0 60 1a 1e 40 30 20 '.@qO..|...`..@0 '
+  36 00 0e 28 21 00 00 1a 00 00 00 fd 00 38 4b 18 '6..(!........8K.'
+  50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56 'P...      .....V'
+  32 32 0a 20 20 20 20 20 20 20 20 20 00 00 00 ff '22.         ....'
+  00 4f 37 33 39 35 4a 41 30 31 38 30 36 35 00 46 '.O7395JA018065.F'
+Checksum: 0x46
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

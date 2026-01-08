@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e35227490a0000
-1a1a0103683a22782a7b45a4554aa227
-0b5054bfef00d1c0b300950081808140
-81c001010101023a801871382d40582c
-450043502100001e000000fd00324c1e
-5311000a202020202020000000fc0032
-3735320a2020202020202020000000ff
-0048434447364a413030323633330085
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 52 27 49 0a 00 00
+1a 1a 01 03 68 3a 22 78 2a 7b 45 a4 55 4a a2 27
+0b 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 43 50 21 00 00 1e 00 00 00 fd 00 32 4c 1e
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 32
+37 35 32 0a 20 20 20 20 20 20 20 20 00 00 00 ff
+00 48 43 44 47 36 4a 41 30 30 32 36 33 33 00 85
 
 00 ff ff ff ff ff ff 00 05 e3 52 27 49 0a 00 00
 1a 1a 01 03 68 3a 22 78 2a 7b 45 a4 55 4a a2 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 10066
-    Serial Number: 2633
+    Serial Number: ...
     Made in: week 26 of 2016
   Basic Display Parameters & Features:
     Analog display
@@ -73,5 +71,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: '2752'
-    Display Product Serial Number: 'HCDG6JA002633'
+    Display Product Serial Number: ...
 Checksum: 0x85
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 52 27 49 0a 00 00 '..........R'I...'
+  1a 1a 01 03 68 3a 22 78 2a 7b 45 a4 55 4a a2 27 '....h:"x*{E.UJ.''
+  0b 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 43 50 21 00 00 1e 00 00 00 fd 00 32 4c 1e 'E.CP!........2L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 32 'S...      .....2'
+  37 35 32 0a 20 20 20 20 20 20 20 20 00 00 00 ff '752.        ....'
+  00 48 43 44 47 36 4a 41 30 30 32 36 33 33 00 85 '.HCDG6JA002633..'
+Checksum: 0x85
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

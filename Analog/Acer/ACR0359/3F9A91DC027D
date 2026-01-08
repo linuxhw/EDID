@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00047259036f445053
-23190103682b1878aeebe5a2564fa028
-105054bfee80714f81c0810001010101
-010101010101302a40c8608464301850
-1300b0ef1000001e000000fd00384c1f
-500e000a202020202020000000fc0053
-32303048514c200a20202020000000ff
-004c5a334141303034323435350a005f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 59 03 6f 44 50 53
+23 19 01 03 68 2b 18 78 ae eb e5 a2 56 4f a0 28
+10 50 54 bf ee 80 71 4f 81 c0 81 00 01 01 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 b0 ef 10 00 00 1e 00 00 00 fd 00 38 4c 1f
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53
+32 30 30 48 51 4c 20 0a 20 20 20 20 00 00 00 ff
+00 4c 5a 33 41 41 30 30 34 32 34 35 35 0a 00 5f
 
 00 ff ff ff ff ff ff 00 04 72 59 03 6f 44 50 53
 23 19 01 03 68 2b 18 78 ae eb e5 a2 56 4f a0 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 857
-    Serial Number: 1397769327
+    Serial Number: ...
     Made in: week 35 of 2015
   Basic Display Parameters & Features:
     Analog display
@@ -71,5 +69,32 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-80 kHz H, max dotclock 140 MHz
     Display Product Name: 'S200HQL '
-    Display Product Serial Number: 'LZ3AA0042455'
+    Display Product Serial Number: ...
 Checksum: 0x5f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 59 03 6f 44 50 53 '.........rY.oDPS'
+  23 19 01 03 68 2b 18 78 ae eb e5 a2 56 4f a0 28 '#...h+.x....VO.('
+  10 50 54 bf ee 80 71 4f 81 c0 81 00 01 01 01 01 '.PT...qO........'
+  01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
+  13 00 b0 ef 10 00 00 1e 00 00 00 fd 00 38 4c 1f '.............8L.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53 'P...      .....S'
+  32 30 30 48 51 4c 20 0a 20 20 20 20 00 00 00 ff '200HQL .    ....'
+  00 4c 5a 33 41 41 30 30 34 32 34 35 35 0a 00 5f '.LZ3AA0042455.._'
+Checksum: 0x5f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Name: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000472060089be3181
-0d1201036828196b2a6760a25a499e23
-135054bfef00818f8180950f95000101
-0101010101019a29a0d0518422305098
-360098ff1000001c000000ff004c414d
-3038303339343231300a000000fd0037
-4b1e530e000a202020202020000000fc
-00416365722058313933570a202000ce
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 06 00 89 be 31 81
+0d 12 01 03 68 28 19 6b 2a 67 60 a2 5a 49 9e 23
+13 50 54 bf ef 00 81 8f 81 80 95 0f 95 00 01 01
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 00 00 00 ff 00 4c 41 4d
+30 38 30 33 39 34 32 31 30 0a 00 00 00 fd 00 37
+4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 63 65 72 20 58 31 39 33 57 0a 20 20 00 ce
 
 00 ff ff ff ff ff ff 00 04 72 06 00 89 be 31 81
 0d 12 01 03 68 28 19 6b 2a 67 60 a2 5a 49 9e 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 6
-    Serial Number: 2167520905
+    Serial Number: ...
     Made in: week 13 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -68,8 +66,32 @@ Block 0, Base EDID:
     DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (408 mm x 255 mm)
                  Hfront   80 Hsync 152 Hback  232 Hpol N
                  Vfront    3 Vsync   6 Vback   25 Vpol P
-    Display Product Serial Number: 'LAM080394210'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'Acer X193W'
 Checksum: 0xce
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 06 00 89 be 31 81 '.........r....1.'
+  0d 12 01 03 68 28 19 6b 2a 67 60 a2 5a 49 9e 23 '....h(.k*g`.ZI.#'
+  13 50 54 bf ef 00 81 8f 81 80 95 0f 95 00 01 01 '.PT.............'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 00 00 00 ff 00 4c 41 4d '6............LAM'
+  30 38 30 33 39 34 32 31 30 0a 00 00 00 fd 00 37 '080394210......7'
+  4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 41 63 65 72 20 58 31 39 33 57 0a 20 20 00 ce '.Acer X193W.  ..'
+Checksum: 0xce
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

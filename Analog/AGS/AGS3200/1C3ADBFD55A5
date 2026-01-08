@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004f3003201000000
-171a010368472978eaaed2a355519926
-114b4fafcf00d1c0b300a9c08bc08180
-814081c00101023a801871382d40582c
-4500c69a2100001e000000ff00202020
-20202020202020202020000000fd0037
-4c1f440f000a202020202020000000fc
-005356454f4e0a2020202020202000a1
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 f3 00 32 01 00 00 00
+17 1a 01 03 68 47 29 78 ea ae d2 a3 55 51 99 26
+11 4b 4f af cf 00 d1 c0 b3 00 a9 c0 8b c0 81 80
+81 40 81 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 c6 9a 21 00 00 1e 00 00 00 ff 00 20 20 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fd 00 37
+4c 1f 44 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 56 45 4f 4e 0a 20 20 20 20 20 20 20 00 a1
 
 00 ff ff ff ff ff ff 00 04 f3 00 32 01 00 00 00
 17 1a 01 03 68 47 29 78 ea ae d2 a3 55 51 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AGS
     Model: 12800
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 23 of 2016
   Basic Display Parameters & Features:
     Analog display
@@ -69,8 +67,41 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (710 mm x 410 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '             '
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 31-68 kHz H, max dotclock 150 MHz
     Display Product Name: 'SVEON'
 Checksum: 0xa1
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 f3 00 32 01 00 00 00 '...........2....'
+  17 1a 01 03 68 47 29 78 ea ae d2 a3 55 51 99 26 '....hG)x....UQ.&'
+  11 4b 4f af cf 00 d1 c0 b3 00 a9 c0 8b c0 81 80 '.KO.............'
+  81 40 81 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.@.....:..q8-@X,'
+  45 00 c6 9a 21 00 00 1e 00 00 00 ff 00 20 20 20 'E...!........   '
+  20 20 20 20 20 20 20 20 20 20 00 00 00 fd 00 37 '          .....7'
+  4c 1f 44 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.D...      ....'
+  00 53 56 45 4f 4e 0a 20 20 20 20 20 20 20 00 a1 '.SVEON.       ..'
+Checksum: 0xa1
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 31.000 - 68.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

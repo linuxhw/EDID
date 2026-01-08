@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004724205cb958081
-121c0103682b18782adaf5a455529f27
-0e5054afee0081c08100a9c001010101
-010101010101302a40c8608464301850
-1300b2ec1000001e000000fd00324c1e
-5010000a202020202020000000ff0054
-34324545303032343230350a000000fc
-0041636572204b4132303048514200e7
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 42 05 cb 95 80 81
+12 1c 01 03 68 2b 18 78 2a da f5 a4 55 52 9f 27
+0e 50 54 af ee 00 81 c0 81 00 a9 c0 01 01 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 b2 ec 10 00 00 1e 00 00 00 fd 00 32 4c 1e
+50 10 00 0a 20 20 20 20 20 20 00 00 00 ff 00 54
+34 32 45 45 30 30 32 34 32 30 35 0a 00 00 00 fc
+00 41 63 65 72 20 4b 41 32 30 30 48 51 42 00 e7
 
 00 ff ff ff ff ff ff 00 04 72 42 05 cb 95 80 81
 12 1c 01 03 68 2b 18 78 2a da f5 a4 55 52 9f 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 1346
-    Serial Number: 2172687819
+    Serial Number: ...
     Made in: week 18 of 2018
   Basic Display Parameters & Features:
     Analog display
@@ -67,6 +65,30 @@ Block 0, Base EDID:
                  Vfront    1 Vsync   3 Vback   96 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-80 kHz H, max dotclock 160 MHz
-    Display Product Serial Number: 'T42EE0024205'
+    Display Product Serial Number: ...
     Display Product Name: 'Acer KA200HQB'
 Checksum: 0xe7
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 42 05 cb 95 80 81 '.........rB.....'
+  12 1c 01 03 68 2b 18 78 2a da f5 a4 55 52 9f 27 '....h+.x*...UR.''
+  0e 50 54 af ee 00 81 c0 81 00 a9 c0 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
+  13 00 b2 ec 10 00 00 1e 00 00 00 fd 00 32 4c 1e '.............2L.'
+  50 10 00 0a 20 20 20 20 20 20 00 00 00 ff 00 54 'P...      .....T'
+  34 32 45 45 30 30 32 34 32 30 35 0a 00 00 00 fc '42EE0024205.....'
+  00 41 63 65 72 20 4b 41 32 30 30 48 51 42 00 e7 '.Acer KA200HQB..'
+Checksum: 0xe7
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

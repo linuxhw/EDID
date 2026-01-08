@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00047253004b692023
-2016010368221b78ca3dc5a6564a9a25
-125054bfef80714f8140818001010101
-010101010101302a009851002a403070
-1300520e1100001e000000fd00384c1f
-500e000a202020202020000000fc0041
-63657220563137330a202020000000ff
-004c45314141303031383538370a004b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 53 00 4b 69 20 23
+20 16 01 03 68 22 1b 78 ca 3d c5 a6 56 4a 9a 25
+12 50 54 bf ef 80 71 4f 81 40 81 80 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4c 1f
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+63 65 72 20 56 31 37 33 0a 20 20 20 00 00 00 ff
+00 4c 45 31 41 41 30 30 31 38 35 38 37 0a 00 4b
 
 00 ff ff ff ff ff ff 00 04 72 53 00 4b 69 20 23
 20 16 01 03 68 22 1b 78 ca 3d c5 a6 56 4a 9a 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 83
-    Serial Number: 589326667
+    Serial Number: ...
     Made in: week 32 of 2012
   Basic Display Parameters & Features:
     Analog display
@@ -71,5 +69,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-80 kHz H, max dotclock 140 MHz
     Display Product Name: 'Acer V173'
-    Display Product Serial Number: 'LE1AA0018587'
+    Display Product Serial Number: ...
 Checksum: 0x4b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 53 00 4b 69 20 23 '.........rS.Ki #'
+  20 16 01 03 68 22 1b 78 ca 3d c5 a6 56 4a 9a 25 ' ...h".x.=..VJ.%'
+  12 50 54 bf ef 80 71 4f 81 40 81 80 01 01 01 01 '.PT...qO.@......'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4c 1f '..R..........8L.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'P...      .....A'
+  63 65 72 20 56 31 37 33 0a 20 20 20 00 00 00 ff 'cer V173.   ....'
+  00 4c 45 31 41 41 30 30 31 38 35 38 37 0a 00 4b '.LE1AA0018587..K'
+Checksum: 0x4b
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

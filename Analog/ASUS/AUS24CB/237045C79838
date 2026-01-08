@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0006b3cb242fcd0000
-141d010368351e782a0ef5a555509e26
-105054bfef00d1c0b300950081808140
-81c0714f0101023a801871382d40582c
-4500132b2100001e000000ff004b354c
-4d54463035323532370a000000fd0030
-4b185412000a202020202020000000fc
-00415355532056503234380a202001f7
-020104002a4480a07038274030203500
-132b2100001a00000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000005e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 b3 cb 24 2f cd 00 00
+14 1d 01 03 68 35 1e 78 2a 0e f5 a5 55 50 9e 26
+10 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 71 4f 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2b 21 00 00 1e 00 00 00 ff 00 4b 35 4c
+4d 54 46 30 35 32 35 32 37 0a 00 00 00 fd 00 30
+4b 18 54 12 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 56 50 32 34 38 0a 20 20 01 f7
+
+02 01 04 00 2a 44 80 a0 70 38 27 40 30 20 35 00
+13 2b 21 00 00 1a 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 5e
 
 00 ff ff ff ff ff ff 00 06 b3 cb 24 2f cd 00 00
 14 1d 01 03 68 35 1e 78 2a 0e f5 a5 55 50 9e 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AUS
     Model: 9419
-    Serial Number: 52527
+    Serial Number: ...
     Made in: week 20 of 2019
   Basic Display Parameters & Features:
     Analog display
@@ -88,7 +87,7 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (531 mm x 299 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'K5LMTF052527'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 48-75 Hz V, 24-84 kHz H, max dotclock 180 MHz
     Display Product Name: 'ASUS VP248'
@@ -105,4 +104,50 @@ Block 1, CTA-861 Extension Block:
                  Vfront    3 Vsync   5 Vback   31 Vpol N
 Checksum: 0x5e  Unused space in Extension Block: 105 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 b3 cb 24 2f cd 00 00 '...........$/...'
+  14 1d 01 03 68 35 1e 78 2a 0e f5 a5 55 50 9e 26 '....h5.x*...UP.&'
+  10 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 71 4f 01 01 02 3a 80 18 71 38 2d 40 58 2c '..qO...:..q8-@X,'
+  45 00 13 2b 21 00 00 1e 00 00 00 ff 00 4b 35 4c 'E..+!........K5L'
+  4d 54 46 30 35 32 35 32 37 0a 00 00 00 fd 00 30 'MTF052527......0'
+  4b 18 54 12 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.T...      ....'
+  00 41 53 55 53 20 56 50 32 34 38 0a 20 20 01 f7 '.ASUS VP248.  ..'
+Checksum: 0xf7
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 1
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   74.972503 Hz  16:9     83.894 kHz    174.500000 MHz (531 mm x 299 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   31 Vpol N
+Checksum: 0x5e  Unused space in Extension Block: 105 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

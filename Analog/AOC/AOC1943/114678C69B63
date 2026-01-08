@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e34319af250000
-2b140103682917782a2f05a258529c26
-115054bfee00310a0101010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e662150b051001b30
-407036009ae61000001e000000fd0032
-4b1e5309000a202020202020000000fc
-0031393433570a202020202020200015
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 43 19 af 25 00 00
+2b 14 01 03 68 29 17 78 2a 2f 05 a2 58 52 9c 26
+11 50 54 bf ee 00 31 0a 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 9a e6 10 00 00 1e 00 00 00 fd 00 32
+4b 1e 53 09 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 31 39 34 33 57 0a 20 20 20 20 20 20 20 00 15
 
 00 ff ff ff ff ff ff 00 05 e3 43 19 af 25 00 00
 2b 14 01 03 68 29 17 78 2a 2f 05 a2 58 52 9c 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 6467
-    Serial Number: 9647
+    Serial Number: ...
     Made in: week 43 of 2010
   Basic Display Parameters & Features:
     Analog display
@@ -71,3 +69,34 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 50-75 Hz V, 30-83 kHz H, max dotclock 90 MHz
     Display Product Name: '1943W'
 Checksum: 0x15
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 43 19 af 25 00 00 '..........C..%..'
+  2b 14 01 03 68 29 17 78 2a 2f 05 a2 58 52 9c 26 '+...h).x*/..XR.&'
+  11 50 54 bf ee 00 31 0a 01 01 01 01 01 01 01 01 '.PT...1.........'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 66 21 50 b0 51 00 1b 30 '3.......f!P.Q..0'
+  40 70 36 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 '@p6............2'
+  4b 1e 53 09 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 31 39 34 33 57 0a 20 20 20 20 20 20 20 00 15 '.1943W.       ..'
+Checksum: 0x15
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 29.190 - 60.022 kHz (Monitor: 30.000 - 83.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

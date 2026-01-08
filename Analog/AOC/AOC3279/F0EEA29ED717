@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e3793261f00000
-011d010368492b782a79e5ac5144ac26
-0f5054bfef00d1c0b300950081808140
-81c001010101023a801871382d40582c
-4500d5ac2100001e000000fd00324c1e
-6315000a202020202020000000fc0051
-33323739574735420a202020000000ff
-004750554b31484130363135333700bb
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 79 32 61 f0 00 00
+01 1d 01 03 68 49 2b 78 2a 79 e5 ac 51 44 ac 26
+0f 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 d5 ac 21 00 00 1e 00 00 00 fd 00 32 4c 1e
+63 15 00 0a 20 20 20 20 20 20 00 00 00 fc 00 51
+33 32 37 39 57 47 35 42 0a 20 20 20 00 00 00 ff
+00 47 50 55 4b 31 48 41 30 36 31 35 33 37 00 bb
 
 00 ff ff ff ff ff ff 00 05 e3 79 32 61 f0 00 00
 01 1d 01 03 68 49 2b 78 2a 79 e5 ac 51 44 ac 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 12921
-    Serial Number: 61537
+    Serial Number: ...
     Made in: week 1 of 2019
   Basic Display Parameters & Features:
     Analog display
@@ -73,5 +71,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-99 kHz H, max dotclock 210 MHz
     Display Product Name: 'Q3279WG5B'
-    Display Product Serial Number: 'GPUK1HA061537'
+    Display Product Serial Number: ...
 Checksum: 0xbb
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 79 32 61 f0 00 00 '..........y2a...'
+  01 1d 01 03 68 49 2b 78 2a 79 e5 ac 51 44 ac 26 '....hI+x*y..QD.&'
+  0f 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 d5 ac 21 00 00 1e 00 00 00 fd 00 32 4c 1e 'E...!........2L.'
+  63 15 00 0a 20 20 20 20 20 20 00 00 00 fc 00 51 'c...      .....Q'
+  33 32 37 39 57 47 35 42 0a 20 20 20 00 00 00 ff '3279WG5B.   ....'
+  00 47 50 55 4b 31 48 41 30 36 31 35 33 37 00 bb '.GPUK1HA061537..'
+Checksum: 0xbb
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006b30a2701010101
-0a1e01041e3c2278eaf915a15651a126
-0d5054bfef00714f8180814081c09500
-b300d1c0a940023a801871382d40582c
-450056502100001e000000fd00304b1e
-5511000a202020202020000000fc0056
-413237440a20202020202020000000ff
-0037314c4230363630303030300a00f9
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 b3 0a 27 01 01 01 01
+0a 1e 01 04 1e 3c 22 78 ea f9 15 a1 56 51 a1 26
+0d 50 54 bf ef 00 71 4f 81 80 81 40 81 c0 95 00
+b3 00 d1 c0 a9 40 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 fd 00 30 4b 1e
+55 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+41 32 37 44 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 37 31 4c 42 30 36 36 30 30 30 30 30 0a 00 f9
 
 00 ff ff ff ff ff ff 00 06 b3 0a 27 01 01 01 01
 0a 1e 01 04 1e 3c 22 78 ea f9 15 a1 56 51 a1 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AUS
     Model: 9994
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 10 of 2020
   Basic Display Parameters & Features:
     Analog display
@@ -75,7 +73,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 48-75 Hz V, 30-85 kHz H, max dotclock 170 MHz
     Display Product Name: 'VA27D'
-    Display Product Serial Number: '71LB06600000'
+    Display Product Serial Number: ...
 Checksum: 0xf9
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 b3 0a 27 01 01 01 01 '...........'....'
+  0a 1e 01 04 1e 3c 22 78 ea f9 15 a1 56 51 a1 26 '.....<"x....VQ.&'
+  0d 50 54 bf ef 00 71 4f 81 80 81 40 81 c0 95 00 '.PT...qO...@....'
+  b3 00 d1 c0 a9 40 02 3a 80 18 71 38 2d 40 58 2c '.....@.:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 fd 00 30 4b 1e 'E.VP!........0K.'
+  55 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56 'U...      .....V'
+  41 32 37 44 0a 20 20 20 20 20 20 20 00 00 00 ff 'A27D.       ....'
+  00 37 31 4c 42 30 36 36 30 30 30 30 30 0a 00 f9 '.71LB06600000...'
+Checksum: 0xf9
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

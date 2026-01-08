@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000472360051312092
-1613010308291a78eee5c5a4564a9c23
-125054bfef809500614f950f81808140
-81c0714f01016b35a0f051842a306098
-36009a091100001c000000fd00384b1f
-500e0a0a202020202020000000fc0058
-313933570a20202020202020000000ff
-004c434d3042303832333932332000d1
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 36 00 51 31 20 92
+16 13 01 03 08 29 1a 78 ee e5 c5 a4 56 4a 9c 23
+12 50 54 bf ef 80 95 00 61 4f 95 0f 81 80 81 40
+81 c0 71 4f 01 01 6b 35 a0 f0 51 84 2a 30 60 98
+36 00 9a 09 11 00 00 1c 00 00 00 fd 00 38 4b 1f
+50 0e 0a 0a 20 20 20 20 20 20 00 00 00 fc 00 58
+31 39 33 57 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 4c 43 4d 30 42 30 38 32 33 39 32 33 20 00 d1
 
 00 ff ff ff ff ff ff 00 04 72 36 00 51 31 20 92
 16 13 01 03 08 29 1a 78 ee e5 c5 a4 56 4a 9c 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 54
-    Serial Number: 2451583313
+    Serial Number: ...
     Made in: week 22 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -76,5 +74,33 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (Unknown (0x0a)): 56-75 Hz V, 31-80 kHz H, max dotclock 140 MHz
     Display Product Name: 'X193W'
-    Display Product Serial Number: 'LCM0B0823923 '
+    Display Product Serial Number: ...
 Checksum: 0xd1
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 36 00 51 31 20 92 '.........r6.Q1 .'
+  16 13 01 03 08 29 1a 78 ee e5 c5 a4 56 4a 9c 23 '.....).x....VJ.#'
+  12 50 54 bf ef 80 95 00 61 4f 95 0f 81 80 81 40 '.PT.....aO.....@'
+  81 c0 71 4f 01 01 6b 35 a0 f0 51 84 2a 30 60 98 '..qO..k5..Q.*0`.'
+  36 00 9a 09 11 00 00 1c 00 00 00 fd 00 38 4b 1f '6............8K.'
+  50 0e 0a 0a 20 20 20 20 20 20 00 00 00 fc 00 58 'P...      .....X'
+  31 39 33 57 0a 20 20 20 20 20 20 20 00 00 00 ff '193W.       ....'
+  00 4c 43 4d 30 42 30 38 32 33 39 32 33 20 00 d1 '.LCM0B0823923 ..'
+Checksum: 0xd1
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: Unknown range class (0x0a).
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004723d03c6158040
-0818010368291778ca94a5a55551a027
-0f5054bfef8081c08100714f81408180
-010101010101662156aa51001e30468f
-33009ae61000001e000000fd00384c1f
-530e000a202020202020000000fc0056
-31393648514c0a2020202020000000ff
-004c59304141303031383530310a004a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 3d 03 c6 15 80 40
+08 18 01 03 68 29 17 78 ca 94 a5 a5 55 51 a0 27
+0f 50 54 bf ef 80 81 c0 81 00 71 4f 81 40 81 80
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 fd 00 38 4c 1f
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+31 39 36 48 51 4c 0a 20 20 20 20 20 00 00 00 ff
+00 4c 59 30 41 41 30 30 31 38 35 30 31 0a 00 4a
 
 00 ff ff ff ff ff ff 00 04 72 3d 03 c6 15 80 40
 08 18 01 03 68 29 17 78 ca 94 a5 a5 55 51 a0 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 829
-    Serial Number: 1082136006
+    Serial Number: ...
     Made in: week 8 of 2014
   Basic Display Parameters & Features:
     Analog display
@@ -73,7 +71,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'V196HQL'
-    Display Product Serial Number: 'LY0AA0018501'
+    Display Product Serial Number: ...
 Checksum: 0x4a
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 3d 03 c6 15 80 40 '.........r=....@'
+  08 18 01 03 68 29 17 78 ca 94 a5 a5 55 51 a0 27 '....h).x....UQ.''
+  0f 50 54 bf ef 80 81 c0 81 00 71 4f 81 40 81 80 '.PT.......qO.@..'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 fd 00 38 4c 1f '3............8L.'
+  53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56 'S...      .....V'
+  31 39 36 48 51 4c 0a 20 20 20 20 20 00 00 00 ff '196HQL.     ....'
+  00 4c 59 30 41 41 30 30 31 38 35 30 31 0a 00 4a '.LY0AA0018501..J'
+Checksum: 0x4a
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

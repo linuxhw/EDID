@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e3162251f50000
-05120103682f1e782ace50a3544c9926
-0f5054bfef00814081809500950fb300
-614c714f010121399030621a274068b0
-3600d62c1100001c000000ff00453637
-38314a41303632383031000000fd0038
-4b1e5311000a202020202020000000fc
-00323231360a202020202020202000a3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 16 22 51 f5 00 00
+05 12 01 03 68 2f 1e 78 2a ce 50 a3 54 4c 99 26
+0f 50 54 bf ef 00 81 40 81 80 95 00 95 0f b3 00
+61 4c 71 4f 01 01 21 39 90 30 62 1a 27 40 68 b0
+36 00 d6 2c 11 00 00 1c 00 00 00 ff 00 45 36 37
+38 31 4a 41 30 36 32 38 30 31 00 00 00 fd 00 38
+4b 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 32 32 31 36 0a 20 20 20 20 20 20 20 20 00 a3
 
 00 ff ff ff ff ff ff 00 05 e3 16 22 51 f5 00 00
 05 12 01 03 68 2f 1e 78 2a ce 50 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 8726
-    Serial Number: 62801
+    Serial Number: ...
     Made in: week 5 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -71,8 +69,32 @@ Block 0, Base EDID:
     DTD 1:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz (470 mm x 300 mm)
                  Hfront  104 Hsync 176 Hback  280 Hpol N
                  Vfront    3 Vsync   6 Vback   30 Vpol P
-    Display Product Serial Number: 'E6781JA062801'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: '2216'
 Checksum: 0xa3
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 16 22 51 f5 00 00 '..........."Q...'
+  05 12 01 03 68 2f 1e 78 2a ce 50 a3 54 4c 99 26 '....h/.x*.P.TL.&'
+  0f 50 54 bf ef 00 81 40 81 80 95 00 95 0f b3 00 '.PT....@........'
+  61 4c 71 4f 01 01 21 39 90 30 62 1a 27 40 68 b0 'aLqO..!9.0b.'@h.'
+  36 00 d6 2c 11 00 00 1c 00 00 00 ff 00 45 36 37 '6..,.........E67'
+  38 31 4a 41 30 36 32 38 30 31 00 00 00 fd 00 38 '81JA062801.....8'
+  4b 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 32 32 31 36 0a 20 20 20 20 20 20 20 20 00 a3 '.2216.        ..'
+Checksum: 0xa3
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

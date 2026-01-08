@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e31915d45d0000
-2a120103682113782a62b09b57508f28
-265054bfee00310a0101010101010101
-0101010101011a1d008051d01c204080
-3500540e1100001c000000ff00493533
-38414941303234303230000000fd0037
-4b1e3c08000a202020202020000000fc
-00353139570a2020202020202020005c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 19 15 d4 5d 00 00
+2a 12 01 03 68 21 13 78 2a 62 b0 9b 57 50 8f 28
+26 50 54 bf ee 00 31 0a 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1a 1d 00 80 51 d0 1c 20 40 80
+35 00 54 0e 11 00 00 1c 00 00 00 ff 00 49 35 33
+38 41 49 41 30 32 34 30 32 30 00 00 00 fd 00 37
+4b 1e 3c 08 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 35 31 39 57 0a 20 20 20 20 20 20 20 20 00 5c
 
 00 ff ff ff ff ff ff 00 05 e3 19 15 d4 5d 00 00
 2a 12 01 03 68 21 13 78 2a 62 b0 9b 57 50 8f 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 5401
-    Serial Number: 24020
+    Serial Number: ...
     Made in: week 42 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -64,8 +62,42 @@ Block 0, Base EDID:
     DTD 1:  1280x720    59.855126 Hz  16:9     44.772 kHz     74.500000 MHz (340 mm x 270 mm)
                  Hfront   64 Hsync 128 Hback  192 Hpol N
                  Vfront    3 Vsync   5 Vback   20 Vpol P
-    Display Product Serial Number: 'I538AIA024020'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-60 kHz H, max dotclock 80 MHz
     Display Product Name: '519W'
 Checksum: 0x5c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 19 15 d4 5d 00 00 '.............]..'
+  2a 12 01 03 68 21 13 78 2a 62 b0 9b 57 50 8f 28 '*...h!.x*b..WP.('
+  26 50 54 bf ee 00 31 0a 01 01 01 01 01 01 01 01 '&PT...1.........'
+  01 01 01 01 01 01 1a 1d 00 80 51 d0 1c 20 40 80 '..........Q.. @.'
+  35 00 54 0e 11 00 00 1c 00 00 00 ff 00 49 35 33 '5.T..........I53'
+  38 41 49 41 30 32 34 30 32 30 00 00 00 fd 00 37 '8AIA024020.....7'
+  4b 1e 3c 08 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.<...      ....'
+  00 35 31 39 57 0a 20 20 20 20 20 20 20 20 00 5c '.519W.        .\'
+Checksum: 0x5c
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 29.190 - 60.022 kHz (Monitor: 30.000 - 60.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 340x270 mm vs display size 330x190 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 340x270mm, which is larger than the display size 330.0x190.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

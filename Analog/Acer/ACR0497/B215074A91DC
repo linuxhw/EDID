@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00047297046ea31091
-0b1d010368301b78ca4fa3a655549e25
-0d5053bfef80714f8140818081c08100
-9500b300d1c0023a801871382d40582c
-4500dd0c1100001e000000fd00384c1f
-5311000a202020202020000000fc004b
-4132323048510a2020202020000000ff
-005435314545303031383531330a007c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 97 04 6e a3 10 91
+0b 1d 01 03 68 30 1b 78 ca 4f a3 a6 55 54 9e 25
+0d 50 53 bf ef 80 71 4f 81 40 81 80 81 c0 81 00
+95 00 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 38 4c 1f
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4b
+41 32 32 30 48 51 0a 20 20 20 20 20 00 00 00 ff
+00 54 35 31 45 45 30 30 31 38 35 31 33 0a 00 7c
 
 00 ff ff ff ff ff ff 00 04 72 97 04 6e a3 10 91
 0b 1d 01 03 68 30 1b 78 ca 4f a3 a6 55 54 9e 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 1175
-    Serial Number: 2433786734
+    Serial Number: ...
     Made in: week 11 of 2019
   Basic Display Parameters & Features:
     Analog display
@@ -76,5 +74,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'KA220HQ'
-    Display Product Serial Number: 'T51EE0018513'
+    Display Product Serial Number: ...
 Checksum: 0x7c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 97 04 6e a3 10 91 '.........r..n...'
+  0b 1d 01 03 68 30 1b 78 ca 4f a3 a6 55 54 9e 25 '....h0.x.O..UT.%'
+  0d 50 53 bf ef 80 71 4f 81 40 81 80 81 c0 81 00 '.PS...qO.@......'
+  95 00 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 fd 00 38 4c 1f 'E............8L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4b 'S...      .....K'
+  41 32 32 30 48 51 0a 20 20 20 20 20 00 00 00 ff 'A220HQ.     ....'
+  00 54 35 31 45 45 30 30 31 38 35 31 33 0a 00 7c '.T51EE0018513..|'
+Checksum: 0x7c
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

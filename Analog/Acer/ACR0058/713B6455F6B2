@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004725800ac4e6103
-2414010308231478ea5545a3554a9727
-155054b30c006146814081c081000101
-0101010101018a2156b051001b304890
-130058c11000001c000000fd0038461f
-3909000a202020202020000000ff004c
-45353043303139343031300a000000fc
-0058313633570a2020202020202000c6
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 58 00 ac 4e 61 03
+24 14 01 03 08 23 14 78 ea 55 45 a3 55 4a 97 27
+15 50 54 b3 0c 00 61 46 81 40 81 c0 81 00 01 01
+01 01 01 01 01 01 8a 21 56 b0 51 00 1b 30 48 90
+13 00 58 c1 10 00 00 1c 00 00 00 fd 00 38 46 1f
+39 09 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c
+45 35 30 43 30 31 39 34 30 31 30 0a 00 00 00 fc
+00 58 31 36 33 57 0a 20 20 20 20 20 20 20 00 c6
 
 00 ff ff ff ff ff ff 00 04 72 58 00 ac 4e 61 03
 24 14 01 03 08 23 14 78 ea 55 45 a3 55 4a 97 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 88
-    Serial Number: 56708780
+    Serial Number: ...
     Made in: week 36 of 2010
   Basic Display Parameters & Features:
     Analog display
@@ -63,6 +61,33 @@ Block 0, Base EDID:
                  Vfront    1 Vsync   3 Vback   23 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 56-70 Hz V, 31-57 kHz H, max dotclock 90 MHz
-    Display Product Serial Number: 'LE50C0194010'
+    Display Product Serial Number: ...
     Display Product Name: 'X163W'
 Checksum: 0xc6
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 58 00 ac 4e 61 03 '.........rX..Na.'
+  24 14 01 03 08 23 14 78 ea 55 45 a3 55 4a 97 27 '$....#.x.UE.UJ.''
+  15 50 54 b3 0c 00 61 46 81 40 81 c0 81 00 01 01 '.PT...aF.@......'
+  01 01 01 01 01 01 8a 21 56 b0 51 00 1b 30 48 90 '.......!V.Q..0H.'
+  13 00 58 c1 10 00 00 1c 00 00 00 fd 00 38 46 1f '..X..........8F.'
+  39 09 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c '9...      .....L'
+  45 35 30 43 30 31 39 34 30 31 30 0a 00 00 00 fc 'E50C0194010.....'
+  00 58 31 36 33 57 0a 20 20 20 20 20 20 20 00 c6 '.X163W.       ..'
+Checksum: 0xc6
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 60.000 kHz (Monitor: 31.000 - 57.000 kHz)
+    Maximum Clock: 108.000 MHz (Monitor: 90.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

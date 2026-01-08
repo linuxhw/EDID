@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004728700e3341085
-3312010368301b78caa985a3544c9926
-0f5054bfef80714f8140818081c09500
-a940b300d1c01a3680a070381e403020
-3500132b21000000000000fd00384c1f
-5311000a202020202020000000fc0048
-323133480a20202020202020000000ff
-004c46383044303032383530300a00af
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 87 00 e3 34 10 85
+33 12 01 03 68 30 1b 78 ca a9 85 a3 54 4c 99 26
+0f 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 95 00
+a9 40 b3 00 d1 c0 1a 36 80 a0 70 38 1e 40 30 20
+35 00 13 2b 21 00 00 00 00 00 00 fd 00 38 4c 1f
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+32 31 33 48 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 4c 46 38 30 44 30 30 32 38 35 30 30 0a 00 af
 
 00 ff ff ff ff ff ff 00 04 72 87 00 e3 34 10 85
 33 12 01 03 68 30 1b 78 ca a9 85 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 135
-    Serial Number: 2232431843
+    Serial Number: ...
     Made in: week 51 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -76,5 +74,32 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'H213H'
-    Display Product Serial Number: 'LF80D0028500'
+    Display Product Serial Number: ...
 Checksum: 0xaf
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 87 00 e3 34 10 85 '.........r...4..'
+  33 12 01 03 68 30 1b 78 ca a9 85 a3 54 4c 99 26 '3...h0.x....TL.&'
+  0f 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 95 00 '.PT...qO.@......'
+  a9 40 b3 00 d1 c0 1a 36 80 a0 70 38 1e 40 30 20 '.@.....6..p8.@0 '
+  35 00 13 2b 21 00 00 00 00 00 00 fd 00 38 4c 1f '5..+!........8L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'S...      .....H'
+  32 31 33 48 0a 20 20 20 20 20 20 20 00 00 00 ff '213H.       ....'
+  00 4c 46 38 30 44 30 30 32 38 35 30 30 0a 00 af '.LF80D0028500...'
+Checksum: 0xaf
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 531x299 mm vs display size 480x270 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 531x299mm, which is larger than the display size 480.0x270.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

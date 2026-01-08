@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e30124270b0000
-161d010468351e782a9101a3554fa126
-0e5054bfef00d1c0b300950081808140
-81c001010101023a801871382d40582c
-45000f282100001e000000ff00474e53
-4a355841303032383535000000fc0032
-34503157310a202020202020000000fd
-00324c1e5311000a20202020202000fa
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 01 24 27 0b 00 00
+16 1d 01 04 68 35 1e 78 2a 91 01 a3 55 4f a1 26
+0e 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 ff 00 47 4e 53
+4a 35 58 41 30 30 32 38 35 35 00 00 00 fc 00 32
+34 50 31 57 31 0a 20 20 20 20 20 20 00 00 00 fd
+00 32 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 fa
 
 00 ff ff ff ff ff ff 00 05 e3 01 24 27 0b 00 00
 16 1d 01 04 68 35 1e 78 2a 91 01 a3 55 4f a1 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 9217
-    Serial Number: 2855
+    Serial Number: ...
     Made in: week 22 of 2019
   Basic Display Parameters & Features:
     Analog display
@@ -70,10 +68,39 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'GNSJ5XA002855'
+    Display Product Serial Number: ...
     Display Product Name: '24P1W1'
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0xfa
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 01 24 27 0b 00 00 '...........$'...'
+  16 1d 01 04 68 35 1e 78 2a 91 01 a3 55 4f a1 26 '....h5.x*...UO.&'
+  0e 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 ff 00 47 4e 53 'E..(!........GNS'
+  4a 35 58 41 30 30 32 38 35 35 00 00 00 fc 00 32 'J5XA002855.....2'
+  34 50 31 57 31 0a 20 20 20 20 20 20 00 00 00 fd '4P1W1.      ....'
+  00 32 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 fa '.2L.S...      ..'
+Checksum: 0xfa
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

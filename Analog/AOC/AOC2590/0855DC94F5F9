@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e39025ab2f0000
-111c010368361e782a9051a75553a028
-135054bfef00d1c0b300950081808140
-81c001010101023a801871382d40582c
-4500202f2100001e000000ff00474d42
-4a344841303132323033000000fc0032
-35393047350a202020202020000000fd
-00324c1e5311000a20202020202000a5
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 90 25 ab 2f 00 00
+11 1c 01 03 68 36 1e 78 2a 90 51 a7 55 53 a0 28
+13 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 20 2f 21 00 00 1e 00 00 00 ff 00 47 4d 42
+4a 34 48 41 30 31 32 32 30 33 00 00 00 fc 00 32
+35 39 30 47 35 0a 20 20 20 20 20 20 00 00 00 fd
+00 32 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 a5
 
 00 ff ff ff ff ff ff 00 05 e3 90 25 ab 2f 00 00
 11 1c 01 03 68 36 1e 78 2a 90 51 a7 55 53 a0 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 9616
-    Serial Number: 12203
+    Serial Number: ...
     Made in: week 17 of 2018
   Basic Display Parameters & Features:
     Analog display
@@ -70,8 +68,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (544 mm x 303 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'GMBJ4HA012203'
+    Display Product Serial Number: ...
     Display Product Name: '2590G5'
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0xa5
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 90 25 ab 2f 00 00 '...........%./..'
+  11 1c 01 03 68 36 1e 78 2a 90 51 a7 55 53 a0 28 '....h6.x*.Q.US.('
+  13 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 20 2f 21 00 00 1e 00 00 00 ff 00 47 4d 42 'E. /!........GMB'
+  4a 34 48 41 30 31 32 32 30 33 00 00 00 fc 00 32 'J4HA012203.....2'
+  35 39 30 47 35 0a 20 20 20 20 20 20 00 00 00 fd '590G5.      ....'
+  00 32 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 a5 '.2L.S...      ..'
+Checksum: 0xa5
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006b3da2201010101
-2a1f01031e301b78eae4f5a5554fa027
-0c5054bfef00714f8180814081c09500
-b300d1c0a940023a801871382d40582c
-4500dc0c1100001e000000fd00304b1e
-5511000a202020202020000000fc0056
-503232390a20202020202020000000ff
-004d414c4d51533131363537370a00a1
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 b3 da 22 01 01 01 01
+2a 1f 01 03 1e 30 1b 78 ea e4 f5 a5 55 4f a0 27
+0c 50 54 bf ef 00 71 4f 81 80 81 40 81 c0 95 00
+b3 00 d1 c0 a9 40 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1e 00 00 00 fd 00 30 4b 1e
+55 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+50 32 32 39 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 4d 41 4c 4d 51 53 31 31 36 35 37 37 0a 00 a1
 
 00 ff ff ff ff ff ff 00 06 b3 da 22 01 01 01 01
 2a 1f 01 03 1e 30 1b 78 ea e4 f5 a5 55 4f a0 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AUS
     Model: 8922
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 42 of 2021
   Basic Display Parameters & Features:
     Analog display
@@ -75,5 +73,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 48-75 Hz V, 30-85 kHz H, max dotclock 170 MHz
     Display Product Name: 'VP229'
-    Display Product Serial Number: 'MALMQS116577'
+    Display Product Serial Number: ...
 Checksum: 0xa1
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 b3 da 22 01 01 01 01 '..........."....'
+  2a 1f 01 03 1e 30 1b 78 ea e4 f5 a5 55 4f a0 27 '*....0.x....UO.''
+  0c 50 54 bf ef 00 71 4f 81 80 81 40 81 c0 95 00 '.PT...qO...@....'
+  b3 00 d1 c0 a9 40 02 3a 80 18 71 38 2d 40 58 2c '.....@.:..q8-@X,'
+  45 00 dc 0c 11 00 00 1e 00 00 00 fd 00 30 4b 1e 'E............0K.'
+  55 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56 'U...      .....V'
+  50 32 32 39 0a 20 20 20 20 20 20 20 00 00 00 ff 'P229.       ....'
+  00 4d 41 4c 4d 51 53 31 31 36 35 37 37 0a 00 a1 '.MALMQS116577...'
+Checksum: 0xa1
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

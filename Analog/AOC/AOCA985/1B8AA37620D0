@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e385a959130000
-200f010368261e782a6d65a25a4c9d23
-134f54bfef0081800101010101010101
-010101010101302a009851002a403070
-1300782d1100001e000000ff00333630
-35384a41303034393533000000fd0037
-4b1e530e000a202020202020000000fc
-004c4d3936300a2020202020202000d7
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 85 a9 59 13 00 00
+20 0f 01 03 68 26 1e 78 2a 6d 65 a2 5a 4c 9d 23
+13 4f 54 bf ef 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 ff 00 33 36 30
+35 38 4a 41 30 30 34 39 35 33 00 00 00 fd 00 37
+4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 4d 39 36 30 0a 20 20 20 20 20 20 20 00 d7
 
 00 ff ff ff ff ff ff 00 05 e3 85 a9 59 13 00 00
 20 0f 01 03 68 26 1e 78 2a 6d 65 a2 5a 4c 9d 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 43397
-    Serial Number: 4953
+    Serial Number: ...
     Made in: week 32 of 2005
   Basic Display Parameters & Features:
     Analog display
@@ -65,8 +63,32 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (376 mm x 301 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: '36058JA004953'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'LM960'
 Checksum: 0xd7
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 85 a9 59 13 00 00 '............Y...'
+  20 0f 01 03 68 26 1e 78 2a 6d 65 a2 5a 4c 9d 23 ' ...h&.x*me.ZL.#'
+  13 4f 54 bf ef 00 81 80 01 01 01 01 01 01 01 01 '.OT.............'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 ff 00 33 36 30 '..x-.........360'
+  35 38 4a 41 30 30 34 39 35 33 00 00 00 fd 00 37 '58JA004953.....7'
+  4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 4c 4d 39 36 30 0a 20 20 20 20 20 20 20 00 d7 '.LM960.       ..'
+Checksum: 0xd7
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

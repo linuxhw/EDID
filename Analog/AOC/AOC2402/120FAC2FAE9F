@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e3022468160000
-191e010368351e782aca95a4554ea026
-0e5054bf6f00d1c0b300950081808140
-81c001010101023a801871382d40582c
-45000f282100001e000000ff0048434c
-4c364841303035373336000000fc0032
-34503257314447350a202020000000fd
-00304b1e5512000a202020202020001a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 02 24 68 16 00 00
+19 1e 01 03 68 35 1e 78 2a ca 95 a4 55 4e a0 26
+0e 50 54 bf 6f 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 ff 00 48 43 4c
+4c 36 48 41 30 30 35 37 33 36 00 00 00 fc 00 32
+34 50 32 57 31 44 47 35 0a 20 20 20 00 00 00 fd
+00 30 4b 1e 55 12 00 0a 20 20 20 20 20 20 00 1a
 
 00 ff ff ff ff ff ff 00 05 e3 02 24 68 16 00 00
 19 1e 01 03 68 35 1e 78 2a ca 95 a4 55 4e a0 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 9218
-    Serial Number: 5736
+    Serial Number: ...
     Made in: week 25 of 2020
   Basic Display Parameters & Features:
     Analog display
@@ -69,8 +67,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'HCLL6HA005736'
+    Display Product Serial Number: ...
     Display Product Name: '24P2W1DG5'
     Display Range Limits:
       Monitor ranges (GTF): 48-75 Hz V, 30-85 kHz H, max dotclock 180 MHz
 Checksum: 0x1a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 02 24 68 16 00 00 '...........$h...'
+  19 1e 01 03 68 35 1e 78 2a ca 95 a4 55 4e a0 26 '....h5.x*...UN.&'
+  0e 50 54 bf 6f 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT.o..........@'
+  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 ff 00 48 43 4c 'E..(!........HCL'
+  4c 36 48 41 30 30 35 37 33 36 00 00 00 fc 00 32 'L6HA005736.....2'
+  34 50 32 57 31 44 47 35 0a 20 20 20 00 00 00 fd '4P2W1DG5.   ....'
+  00 30 4b 1e 55 12 00 0a 20 20 20 20 20 20 00 1a '.0K.U...      ..'
+Checksum: 0x1a
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000472040152721013
-1f15010368301d78caee95a3544c9926
-0f5054bfef80714f818081c081008bc0
-9500b300d1c0023a801871382d40582c
-4500fe1f1100001e000000fd00384c1f
-5311000a202020202020000000fc0056
-32323348510a202020202020000000ff
-004c4a343044303434383531370a009b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 04 01 52 72 10 13
+1f 15 01 03 68 30 1d 78 ca ee 95 a3 54 4c 99 26
+0f 50 54 bf ef 80 71 4f 81 80 81 c0 81 00 8b c0
+95 00 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fe 1f 11 00 00 1e 00 00 00 fd 00 38 4c 1f
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+32 32 33 48 51 0a 20 20 20 20 20 20 00 00 00 ff
+00 4c 4a 34 30 44 30 34 34 38 35 31 37 0a 00 9b
 
 00 ff ff ff ff ff ff 00 04 72 04 01 52 72 10 13
 1f 15 01 03 68 30 1d 78 ca ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 260
-    Serial Number: 319844946
+    Serial Number: ...
     Made in: week 31 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -76,5 +74,37 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'V223HQ'
-    Display Product Serial Number: 'LJ40D0448517'
+    Display Product Serial Number: ...
 Checksum: 0x9b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 04 01 52 72 10 13 '.........r..Rr..'
+  1f 15 01 03 68 30 1d 78 ca ee 95 a3 54 4c 99 26 '....h0.x....TL.&'
+  0f 50 54 bf ef 80 71 4f 81 80 81 c0 81 00 8b c0 '.PT...qO........'
+  95 00 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fe 1f 11 00 00 1e 00 00 00 fd 00 38 4c 1f 'E............8L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56 'S...      .....V'
+  32 32 33 48 51 0a 20 20 20 20 20 20 00 00 00 ff '223HQ.      ....'
+  00 4c 4a 34 30 44 30 34 34 38 35 31 37 0a 00 9b '.LJ40D0448517...'
+Checksum: 0x9b
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 510x287 mm vs display size 480x290 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 510x287mm, which is larger than the display size 480.0x290.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

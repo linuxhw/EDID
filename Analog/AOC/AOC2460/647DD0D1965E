@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e36024c80d0000
-291a010368351e782af6e5a7534d9924
-145054bfef00d1c0b300950081808140
-81c001010101023a801871382d40582c
-4500132b2100001e000000fd00234c1e
-5311000a202020202020000000fc0032
-34363047350a202020202020000000ff
-0046353447414241303033353238001b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 60 24 c8 0d 00 00
+29 1a 01 03 68 35 1e 78 2a f6 e5 a7 53 4d 99 24
+14 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2b 21 00 00 1e 00 00 00 fd 00 23 4c 1e
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 32
+34 36 30 47 35 0a 20 20 20 20 20 20 00 00 00 ff
+00 46 35 34 47 41 42 41 30 30 33 35 32 38 00 1b
 
 00 ff ff ff ff ff ff 00 05 e3 60 24 c8 0d 00 00
 29 1a 01 03 68 35 1e 78 2a f6 e5 a7 53 4d 99 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 9312
-    Serial Number: 3528
+    Serial Number: ...
     Made in: week 41 of 2016
   Basic Display Parameters & Features:
     Analog display
@@ -73,5 +71,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 35-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: '2460G5'
-    Display Product Serial Number: 'F54GABA003528'
+    Display Product Serial Number: ...
 Checksum: 0x1b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 60 24 c8 0d 00 00 '..........`$....'
+  29 1a 01 03 68 35 1e 78 2a f6 e5 a7 53 4d 99 24 ')...h5.x*...SM.$'
+  14 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 13 2b 21 00 00 1e 00 00 00 fd 00 23 4c 1e 'E..+!........#L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 32 'S...      .....2'
+  34 36 30 47 35 0a 20 20 20 20 20 20 00 00 00 ff '460G5.      ....'
+  00 46 35 34 47 41 42 41 30 30 33 35 32 38 00 1b '.F54GABA003528..'
+Checksum: 0x1b
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

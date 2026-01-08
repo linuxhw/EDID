@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000472150014769081
-13120103682213782e1e95a355489827
-155054bfef00714f81c0814081809500
-010101010101662156a851001e30458f
-3a0058c11000001c000000fd00324b1e
-5010000a202020202020000000fc0041
-6365722058313633570a2020000000ff
-004c42463039303135333630300a00f5
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 15 00 14 76 90 81
+13 12 01 03 68 22 13 78 2e 1e 95 a3 55 48 98 27
+15 50 54 bf ef 00 71 4f 81 c0 81 40 81 80 95 00
+01 01 01 01 01 01 66 21 56 a8 51 00 1e 30 45 8f
+3a 00 58 c1 10 00 00 1c 00 00 00 fd 00 32 4b 1e
+50 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+63 65 72 20 58 31 36 33 57 0a 20 20 00 00 00 ff
+00 4c 42 46 30 39 30 31 35 33 36 30 30 0a 00 f5
 
 00 ff ff ff ff ff ff 00 04 72 15 00 14 76 90 81
 13 12 01 03 68 22 13 78 2e 1e 95 a3 55 48 98 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 21
-    Serial Number: 2173728276
+    Serial Number: ...
     Made in: week 19 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -73,5 +71,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-80 kHz H, max dotclock 160 MHz
     Display Product Name: 'Acer X163W'
-    Display Product Serial Number: 'LBF090153600'
+    Display Product Serial Number: ...
 Checksum: 0xf5
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 15 00 14 76 90 81 '.........r...v..'
+  13 12 01 03 68 22 13 78 2e 1e 95 a3 55 48 98 27 '....h".x....UH.''
+  15 50 54 bf ef 00 71 4f 81 c0 81 40 81 80 95 00 '.PT...qO...@....'
+  01 01 01 01 01 01 66 21 56 a8 51 00 1e 30 45 8f '......f!V.Q..0E.'
+  3a 00 58 c1 10 00 00 1c 00 00 00 fd 00 32 4b 1e ':.X..........2K.'
+  50 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'P...      .....A'
+  63 65 72 20 58 31 36 33 57 0a 20 20 00 00 00 ff 'cer X163W.  ....'
+  00 4c 42 46 30 39 30 31 35 33 36 30 30 0a 00 f5 '.LBF090153600...'
+Checksum: 0xf5
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

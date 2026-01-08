@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000472390322563092
-171d0104682f1e78ca9265a655559f28
-0d5054bfef80714f8140818081c08100
-95000101010126399030621a274068b0
-3600da281100001c000000fd00374c1e
-5011000a202020202020000000fc0056
-323236574c0a202020202020000000ff
-004c58544545303039383532310a008b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 39 03 22 56 30 92
+17 1d 01 04 68 2f 1e 78 ca 92 65 a6 55 55 9f 28
+0d 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00
+95 00 01 01 01 01 26 39 90 30 62 1a 27 40 68 b0
+36 00 da 28 11 00 00 1c 00 00 00 fd 00 37 4c 1e
+50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+32 32 36 57 4c 0a 20 20 20 20 20 20 00 00 00 ff
+00 4c 58 54 45 45 30 30 39 38 35 32 31 0a 00 8b
 
 00 ff ff ff ff ff ff 00 04 72 39 03 22 56 30 92
 17 1d 01 04 68 2f 1e 78 ca 92 65 a6 55 55 9f 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 825
-    Serial Number: 2452641314
+    Serial Number: ...
     Made in: week 23 of 2019
   Basic Display Parameters & Features:
     Analog display
@@ -74,5 +72,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 30-80 kHz H, max dotclock 170 MHz
     Display Product Name: 'V226WL'
-    Display Product Serial Number: 'LXTEE0098521'
+    Display Product Serial Number: ...
 Checksum: 0x8b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 39 03 22 56 30 92 '.........r9."V0.'
+  17 1d 01 04 68 2f 1e 78 ca 92 65 a6 55 55 9f 28 '....h/.x..e.UU.('
+  0d 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00 '.PT...qO.@......'
+  95 00 01 01 01 01 26 39 90 30 62 1a 27 40 68 b0 '......&9.0b.'@h.'
+  36 00 da 28 11 00 00 1c 00 00 00 fd 00 37 4c 1e '6..(.........7L.'
+  50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56 'P...      .....V'
+  32 32 36 57 4c 0a 20 20 20 20 20 20 00 00 00 ff '226WL.      ....'
+  00 4c 58 54 45 45 30 30 39 38 35 32 31 0a 00 8b '.LXTEE0098521...'
+Checksum: 0x8b
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

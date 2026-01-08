@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004720c0158018004
-301401046c291778ea2985a3564b9825
-125054bfee0081c08100010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000fd00384b1f
-530e000a202020202020000000fc0041
-63657220563139334851560a000000ff
-004c4b583057303036343330310a0069
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 0c 01 58 01 80 04
+30 14 01 04 6c 29 17 78 ea 29 85 a3 56 4b 98 25
+12 50 54 bf ee 00 81 c0 81 00 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 fd 00 38 4b 1f
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+63 65 72 20 56 31 39 33 48 51 56 0a 00 00 00 ff
+00 4c 4b 58 30 57 30 30 36 34 33 30 31 0a 00 69
 
 00 ff ff ff ff ff ff 00 04 72 0c 01 58 01 80 04
 30 14 01 04 6c 29 17 78 ea 29 85 a3 56 4b 98 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 268
-    Serial Number: 75497816
+    Serial Number: ...
     Made in: week 48 of 2010
   Basic Display Parameters & Features:
     Analog display
@@ -68,5 +66,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 31-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'Acer V193HQV'
-    Display Product Serial Number: 'LKX0W0064301'
+    Display Product Serial Number: ...
 Checksum: 0x69
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 0c 01 58 01 80 04 '.........r..X...'
+  30 14 01 04 6c 29 17 78 ea 29 85 a3 56 4b 98 25 '0...l).x.)..VK.%'
+  12 50 54 bf ee 00 81 c0 81 00 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 fd 00 38 4b 1f '3............8K.'
+  53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'S...      .....A'
+  63 65 72 20 56 31 39 33 48 51 56 0a 00 00 00 ff 'cer V193HQV.....'
+  00 4c 4b 58 30 57 30 30 36 34 33 30 31 0a 00 69 '.LKX0W0064301..i'
+Checksum: 0x69
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e31217f7290000
-1d12010368221b782ac0f5a3574a9c23
-114f54bfef008180310a614c01010101
-010101010101bc34009851002a401090
-1300540e1100001e000000ff00333339
-38374441303130373433000000fd0037
-4b1e530e000a202020202020000000fc
-0037313253610a20202020202020000a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 12 17 f7 29 00 00
+1d 12 01 03 68 22 1b 78 2a c0 f5 a3 57 4a 9c 23
+11 4f 54 bf ef 00 81 80 31 0a 61 4c 01 01 01 01
+01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90
+13 00 54 0e 11 00 00 1e 00 00 00 ff 00 33 33 39
+38 37 44 41 30 31 30 37 34 33 00 00 00 fd 00 37
+4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 37 31 32 53 61 0a 20 20 20 20 20 20 20 00 0a
 
 00 ff ff ff ff ff ff 00 05 e3 12 17 f7 29 00 00
 1d 12 01 03 68 22 1b 78 2a c0 f5 a3 57 4a 9c 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 5906
-    Serial Number: 10743
+    Serial Number: ...
     Made in: week 29 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -67,8 +65,39 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz (340 mm x 270 mm)
                  Hfront   16 Hsync 144 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: '33987DA010743'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
     Display Product Name: '712Sa'
 Checksum: 0x0a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 12 17 f7 29 00 00 '.............)..'
+  1d 12 01 03 68 22 1b 78 2a c0 f5 a3 57 4a 9c 23 '....h".x*...WJ.#'
+  11 4f 54 bf ef 00 81 80 31 0a 61 4c 01 01 01 01 '.OT.....1.aL....'
+  01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90 '.......4..Q.*@..'
+  13 00 54 0e 11 00 00 1e 00 00 00 ff 00 33 33 39 '..T..........339'
+  38 37 44 41 30 31 30 37 34 33 00 00 00 fd 00 37 '87DA010743.....7'
+  4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 37 31 32 53 61 0a 20 20 20 20 20 20 20 00 0a '.712Sa.       ..'
+Checksum: 0x0a
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 29.190 - 79.976 kHz (Monitor: 30.000 - 83.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

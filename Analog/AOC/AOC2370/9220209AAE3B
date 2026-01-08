@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e3702301010101
-0617010468331d782add45a3554fa027
-125054bfef00d1c0b300950081808140
-81c001010101023a801871382d40582c
-4500fd1e1100001e000000fd00324c1e
-5311000a202020202020000000fc0032
-3337300a2020202020202020000000ff
-000a2020202020202020202020200078
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 70 23 01 01 01 01
+06 17 01 04 68 33 1d 78 2a dd 45 a3 55 4f a0 27
+12 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 32 4c 1e
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 32
+33 37 30 0a 20 20 20 20 20 20 20 20 00 00 00 ff
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 78
 
 00 ff ff ff ff ff ff 00 05 e3 70 23 01 01 01 01
 06 17 01 04 68 33 1d 78 2a dd 45 a3 55 4f a0 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 9072
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 6 of 2013
   Basic Display Parameters & Features:
     Analog display
@@ -73,5 +71,37 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: '2370'
-    Display Product Serial Number: ''
+    Display Product Serial Number: ...
 Checksum: 0x78
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 70 23 01 01 01 01 '..........p#....'
+  06 17 01 04 68 33 1d 78 2a dd 45 a3 55 4f a0 27 '....h3.x*.E.UO.''
+  12 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 32 4c 1e 'E............2L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 32 'S...      .....2'
+  33 37 30 0a 20 20 20 20 20 20 20 20 00 00 00 ff '370.        ....'
+  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 78 '..            .x'
+Checksum: 0x78
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

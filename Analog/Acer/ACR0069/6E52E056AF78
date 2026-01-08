@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000472690032138084
-3012010368291778ca3d85a6564a9a24
-125054bf6f80714f8140818081c08100
-010101010101662156aa51001e30468f
-33009ae61000001e000000fd00374c1f
-500e000a202020202020000000fc0058
-31393348510a0a0a0a0a0a0a000000ff
-004c454b3044303031383534300a000c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 69 00 32 13 80 84
+30 12 01 03 68 29 17 78 ca 3d 85 a6 56 4a 9a 24
+12 50 54 bf 6f 80 71 4f 81 40 81 80 81 c0 81 00
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 fd 00 37 4c 1f
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 58
+31 39 33 48 51 0a 0a 0a 0a 0a 0a 0a 00 00 00 ff
+00 4c 45 4b 30 44 30 30 31 38 35 34 30 0a 00 0c
 
 00 ff ff ff ff ff ff 00 04 72 69 00 32 13 80 84
 30 12 01 03 68 29 17 78 ca 3d 85 a6 56 4a 9a 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 105
-    Serial Number: 2222986034
+    Serial Number: ...
     Made in: week 48 of 2008
   Basic Display Parameters & Features:
     Analog display
@@ -72,5 +70,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 31-80 kHz H, max dotclock 140 MHz
     Display Product Name: 'X193HQ'
-    Display Product Serial Number: 'LEK0D0018540'
+    Display Product Serial Number: ...
 Checksum: 0x0c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 69 00 32 13 80 84 '.........ri.2...'
+  30 12 01 03 68 29 17 78 ca 3d 85 a6 56 4a 9a 24 '0...h).x.=..VJ.$'
+  12 50 54 bf 6f 80 71 4f 81 40 81 80 81 c0 81 00 '.PT.o.qO.@......'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 fd 00 37 4c 1f '3............7L.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 58 'P...      .....X'
+  31 39 33 48 51 0a 0a 0a 0a 0a 0a 0a 00 00 00 ff '193HQ...........'
+  00 4c 45 4b 30 44 30 30 31 38 35 34 30 0a 00 0c '.LEK0D0018540...'
+Checksum: 0x0c
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: Non-space after newline.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

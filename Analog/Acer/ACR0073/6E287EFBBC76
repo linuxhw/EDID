@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004727300644e7094
-2f130103082c1978eade95a3544c9926
-0f5054bfef80714f8140818081c08100
-010101010101312e40006284223058a8
-3500bbf91000001d000000fd00374b1f
-500c000a202020202020000000ff004c
-45563043303037343031320a000000fc
-0058323033480a202020202020200045
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 73 00 64 4e 70 94
+2f 13 01 03 08 2c 19 78 ea de 95 a3 54 4c 99 26
+0f 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00
+01 01 01 01 01 01 31 2e 40 00 62 84 22 30 58 a8
+35 00 bb f9 10 00 00 1d 00 00 00 fd 00 37 4b 1f
+50 0c 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c
+45 56 30 43 30 30 37 34 30 31 32 0a 00 00 00 fc
+00 58 32 30 33 48 0a 20 20 20 20 20 20 20 00 45
 
 00 ff ff ff ff ff ff 00 04 72 73 00 64 4e 70 94
 2f 13 01 03 08 2c 19 78 ea de 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 115
-    Serial Number: 2490388068
+    Serial Number: ...
     Made in: week 47 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -72,6 +70,32 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   26 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 31-80 kHz H, max dotclock 120 MHz
-    Display Product Serial Number: 'LEV0C0074012'
+    Display Product Serial Number: ...
     Display Product Name: 'X203H'
 Checksum: 0x45
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 73 00 64 4e 70 94 '.........rs.dNp.'
+  2f 13 01 03 08 2c 19 78 ea de 95 a3 54 4c 99 26 '/....,.x....TL.&'
+  0f 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00 '.PT...qO.@......'
+  01 01 01 01 01 01 31 2e 40 00 62 84 22 30 58 a8 '......1.@.b."0X.'
+  35 00 bb f9 10 00 00 1d 00 00 00 fd 00 37 4b 1f '5............7K.'
+  50 0c 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c 'P...      .....L'
+  45 56 30 43 30 30 37 34 30 31 32 0a 00 00 00 fc 'EV0C0074012.....'
+  00 58 32 30 33 48 0a 20 20 20 20 20 20 20 00 45 '.X203H.       .E'
+Checksum: 0x45
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 135.000 MHz (Monitor: 120.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0006b3d22748c10100
-2a200103683c22782ae925a4554f9a26
-0e5054bfef00d1c0b300950081808140
-81c0714f0101023a801871382d40582c
-450056502100001e000000ff004e414c
-4d54463131353031360a000000fd0030
-4b185412000a202020202020000000fc
-004153555320564132374548450a00fb
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 b3 d2 27 48 c1 01 00
+2a 20 01 03 68 3c 22 78 2a e9 25 a4 55 4f 9a 26
+0e 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 71 4f 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 ff 00 4e 41 4c
+4d 54 46 31 31 35 30 31 36 0a 00 00 00 fd 00 30
+4b 18 54 12 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 56 41 32 37 45 48 45 0a 00 fb
 
 00 ff ff ff ff ff ff 00 06 b3 d2 27 48 c1 01 00
 2a 20 01 03 68 3c 22 78 2a e9 25 a4 55 4f 9a 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AUS
     Model: 10194
-    Serial Number: 115016
+    Serial Number: ...
     Made in: week 42 of 2022
   Basic Display Parameters & Features:
     Analog display
@@ -71,8 +69,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'NALMTF115016'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 48-75 Hz V, 24-84 kHz H, max dotclock 180 MHz
     Display Product Name: 'ASUS VA27EHE'
 Checksum: 0xfb
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 b3 d2 27 48 c1 01 00 '...........'H...'
+  2a 20 01 03 68 3c 22 78 2a e9 25 a4 55 4f 9a 26 '* ..h<"x*.%.UO.&'
+  0e 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 71 4f 01 01 02 3a 80 18 71 38 2d 40 58 2c '..qO...:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 ff 00 4e 41 4c 'E.VP!........NAL'
+  4d 54 46 31 31 35 30 31 36 0a 00 00 00 fd 00 30 'MTF115016......0'
+  4b 18 54 12 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.T...      ....'
+  00 41 53 55 53 20 56 41 32 37 45 48 45 0a 00 fb '.ASUS VA27EHE...'
+Checksum: 0xfb
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

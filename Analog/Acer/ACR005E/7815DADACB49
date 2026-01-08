@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004725e00de036093
-2413010368351e78c8a985a3544c9926
-0f5054bfef80714f8140818081c09500
-a940b300d1c01a3680a070381e403020
-3500132b21000000000000fd00384c1f
-5311000a202020202020000000fc0050
-323434570a0a0a0a0a0a0a0a000000ff
-004c45423044303036383530300a002a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 5e 00 de 03 60 93
+24 13 01 03 68 35 1e 78 c8 a9 85 a3 54 4c 99 26
+0f 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 95 00
+a9 40 b3 00 d1 c0 1a 36 80 a0 70 38 1e 40 30 20
+35 00 13 2b 21 00 00 00 00 00 00 fd 00 38 4c 1f
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50
+32 34 34 57 0a 0a 0a 0a 0a 0a 0a 0a 00 00 00 ff
+00 4c 45 42 30 44 30 30 36 38 35 30 30 0a 00 2a
 
 00 ff ff ff ff ff ff 00 04 72 5e 00 de 03 60 93
 24 13 01 03 68 35 1e 78 c8 a9 85 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 94
-    Serial Number: 2472543198
+    Serial Number: ...
     Made in: week 36 of 2009
   Basic Display Parameters & Features:
     Analog display
@@ -75,5 +73,32 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'P244W'
-    Display Product Serial Number: 'LEB0D0068500'
+    Display Product Serial Number: ...
 Checksum: 0x2a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 5e 00 de 03 60 93 '.........r^...`.'
+  24 13 01 03 68 35 1e 78 c8 a9 85 a3 54 4c 99 26 '$...h5.x....TL.&'
+  0f 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 95 00 '.PT...qO.@......'
+  a9 40 b3 00 d1 c0 1a 36 80 a0 70 38 1e 40 30 20 '.@.....6..p8.@0 '
+  35 00 13 2b 21 00 00 00 00 00 00 fd 00 38 4c 1f '5..+!........8L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50 'S...      .....P'
+  32 34 34 57 0a 0a 0a 0a 0a 0a 0a 0a 00 00 00 ff '244W............'
+  00 4c 45 42 30 44 30 30 36 38 35 30 30 0a 00 2a '.LEB0D0068500..*'
+Checksum: 0x2a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+  Display Product Name: Non-space after newline.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

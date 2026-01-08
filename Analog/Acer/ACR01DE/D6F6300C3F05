@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000472de0192fc4110
-0415010308291778ea3d85a6564a9a24
-125054bfef9081c0810081808140714f
-010101010101662156aa51001e30468f
-33009ae61000001c000000ff004c5143
-3043303033343030340a000000fd0037
-4b1e500e000a202020202020000000fc
-00473139354851560a20202020200036
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 de 01 92 fc 41 10
+04 15 01 03 08 29 17 78 ea 3d 85 a6 56 4a 9a 24
+12 50 54 bf ef 90 81 c0 81 00 81 80 81 40 71 4f
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1c 00 00 00 ff 00 4c 51 43
+30 43 30 30 33 34 30 30 34 0a 00 00 00 fd 00 37
+4b 1e 50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 47 31 39 35 48 51 56 0a 20 20 20 20 20 00 36
 
 00 ff ff ff ff ff ff 00 04 72 de 01 92 fc 41 10
 04 15 01 03 08 29 17 78 ea 3d 85 a6 56 4a 9a 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 478
-    Serial Number: 272759954
+    Serial Number: ...
     Made in: week 4 of 2011
   Basic Display Parameters & Features:
     Analog display
@@ -70,8 +68,37 @@ Block 0, Base EDID:
     DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
                  Hfront   70 Hsync 143 Hback  213 Hpol N
                  Vfront    3 Vsync   3 Vback   24 Vpol P
-    Display Product Serial Number: 'LQC0C0034004'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-80 kHz H, max dotclock 140 MHz
     Display Product Name: 'G195HQV'
 Checksum: 0x36
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 de 01 92 fc 41 10 '.........r....A.'
+  04 15 01 03 08 29 17 78 ea 3d 85 a6 56 4a 9a 24 '.....).x.=..VJ.$'
+  12 50 54 bf ef 90 81 c0 81 00 81 80 81 40 71 4f '.PT..........@qO'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1c 00 00 00 ff 00 4c 51 43 '3............LQC'
+  30 43 30 30 33 34 30 30 34 0a 00 00 00 fd 00 37 '0C0034004......7'
+  4b 1e 50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.P...      ....'
+  00 47 31 39 35 48 51 56 0a 20 20 20 20 20 00 36 '.G195HQV.     .6'
+Checksum: 0x36
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x51.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

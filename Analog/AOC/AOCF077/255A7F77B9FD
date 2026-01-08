@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e377f08a520000
-0f100103681e17822aff279857509027
-214f53bfee0001010101010101010101
-01010101010164190040410026301888
-360030e410000018000000fc00463135
-353069200a2020202020000000fc004c
-434420446973706c61790a20000000fd
-00374b1e3f08000a2020202020200090
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 77 f0 8a 52 00 00
+0f 10 01 03 68 1e 17 82 2a ff 27 98 57 50 90 27
+21 4f 53 bf ee 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 30 e4 10 00 00 18 00 00 00 fc 00 46 31 35
+35 30 69 20 0a 20 20 20 20 20 00 00 00 fc 00 4c
+43 44 20 44 69 73 70 6c 61 79 0a 20 00 00 00 fd
+00 37 4b 1e 3f 08 00 0a 20 20 20 20 20 20 00 90
 
 00 ff ff ff ff ff ff 00 05 e3 77 f0 8a 52 00 00
 0f 10 01 03 68 1e 17 82 2a ff 27 98 57 50 90 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 61559
-    Serial Number: 21130
+    Serial Number: ...
     Made in: week 15 of 2006
   Basic Display Parameters & Features:
     Analog display
@@ -68,3 +66,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-63 kHz H, max dotclock 80 MHz
 Checksum: 0x90
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 77 f0 8a 52 00 00 '..........w..R..'
+  0f 10 01 03 68 1e 17 82 2a ff 27 98 57 50 90 27 '....h...*.'.WP.''
+  21 4f 53 bf ee 00 01 01 01 01 01 01 01 01 01 01 '!OS.............'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 30 e4 10 00 00 18 00 00 00 fc 00 46 31 35 '6.0..........F15'
+  35 30 69 20 0a 20 20 20 20 20 00 00 00 fc 00 4c '50i .     .....L'
+  43 44 20 44 69 73 70 6c 61 79 0a 20 00 00 00 fd 'CD Display. ....'
+  00 37 4b 1e 3f 08 00 0a 20 20 20 20 20 20 00 90 '.7K.?...      ..'
+Checksum: 0x90
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
