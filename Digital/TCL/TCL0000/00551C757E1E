@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00506c000000000000
-071b0104a500000002d7a5a2594a9624
-145054a30800d1c0b300810081808140
-81c001010101023a801871382d40582c
-45003f432100001a7f2156aa51001e30
-468f33003f432100001e000000fd0032
-4c1e5010000a202020202020000000fc
-0054434c0a202020202020202020008e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 50 6c 00 00 00 00 00 00
+07 1b 01 04 a5 00 00 00 02 d7 a5 a2 59 4a 96 24
+14 50 54 a3 08 00 d1 c0 b3 00 81 00 81 80 81 40
+81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 3f 43 21 00 00 1a 7f 21 56 aa 51 00 1e 30
+46 8f 33 00 3f 43 21 00 00 1e 00 00 00 fd 00 32
+4c 1e 50 10 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 54 43 4c 0a 20 20 20 20 20 20 20 20 20 00 8e
 
 00 ff ff ff ff ff ff 00 50 6c 00 00 00 00 00 00
 07 1b 01 04 a5 00 00 00 02 d7 a5 a2 59 4a 96 24
@@ -65,3 +63,36 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 50-76 Hz V, 30-80 kHz H, max dotclock 160 MHz
     Display Product Name: 'TCL'
 Checksum: 0x8e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 50 6c 00 00 00 00 00 00 '........Pl......'
+  07 1b 01 04 a5 00 00 00 02 d7 a5 a2 59 4a 96 24 '............YJ.$'
+  14 50 54 a3 08 00 d1 c0 b3 00 81 00 81 80 81 40 '.PT............@'
+  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 3f 43 21 00 00 1a 7f 21 56 aa 51 00 1e 30 'E.?C!....!V.Q..0'
+  46 8f 33 00 3f 43 21 00 00 1e 00 00 00 fd 00 32 'F.3.?C!........2'
+  4c 1e 50 10 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.P...      ....'
+  00 54 43 4c 0a 20 20 20 20 20 20 20 20 20 00 8e '.TCL.         ..'
+Checksum: 0x8e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 575x323mm, but the display size is not specified anywhere.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

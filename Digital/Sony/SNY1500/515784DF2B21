@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004dd9001501010101
-0b0f010380261e78eed855a359489924
-125054a1080081808140010101010101
-010101010101302a009851002a403070
-1300782d1100001e000000fd00393f1c
-410b000a202020202020000000fc004d
-464d2d485439350a20202020000000ff
-00363138303631310a2020202020009c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d d9 00 15 01 01 01 01
+0b 0f 01 03 80 26 1e 78 ee d8 55 a3 59 48 99 24
+12 50 54 a1 08 00 81 80 81 40 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 fd 00 39 3f 1c
+41 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4d
+46 4d 2d 48 54 39 35 0a 20 20 20 20 00 00 00 ff
+00 36 31 38 30 36 31 31 0a 20 20 20 20 20 00 9c
 
 00 ff ff ff ff ff ff 00 4d d9 00 15 01 01 01 01
 0b 0f 01 03 80 26 1e 78 ee d8 55 a3 59 48 99 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SNY
     Model: 5376
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 11 of 2005
   Basic Display Parameters & Features:
     Digital display
@@ -57,5 +55,33 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 57-63 Hz V, 28-65 kHz H, max dotclock 110 MHz
     Display Product Name: 'MFM-HT95'
-    Display Product Serial Number: '6180611'
+    Display Product Serial Number: ...
 Checksum: 0x9c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4d d9 00 15 01 01 01 01 '........M.......'
+  0b 0f 01 03 80 26 1e 78 ee d8 55 a3 59 48 99 24 '.....&.x..U.YH.$'
+  12 50 54 a1 08 00 81 80 81 40 01 01 01 01 01 01 '.PT......@......'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 fd 00 39 3f 1c '..x-.........9?.'
+  41 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4d 'A...      .....M'
+  46 4d 2d 48 54 39 35 0a 20 20 20 20 00 00 00 ff 'FM-HT95.    ....'
+  00 36 31 38 30 36 31 31 0a 20 20 20 20 20 00 9c '.6180611.     ..'
+Checksum: 0x9c
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 57.000 - 63.000 Hz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

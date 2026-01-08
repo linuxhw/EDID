@@ -1,0 +1,201 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 10 b3 15 a1 21 03 09
+28 22 01 04 b5 20 15 78 03 7d 77 ad 50 46 ad 26
+0f 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 25 d5 c0 a0 90 80 30 60 30 20
+3a 00 3d d3 10 00 00 18 25 d5 c0 a0 90 80 e0 66
+30 20 3a 00 3d d3 10 00 00 18 00 00 00 fd 00 18
+78 ce ce 37 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 51 31 35 30 50 31 4a 58 36 31 0a 20 01 56
+
+70 20 79 02 00 20 00 19 8c 52 19 b3 15 a1 21 03
+01 28 18 0d 4c 51 31 35 30 50 31 4a 58 36 31 0a
+20 21 00 1d 63 0c 42 08 c0 09 80 06 00 e1 fa 51
+3d a4 b0 66 62 0f 02 45 54 b0 60 b0 60 99 35 13
+78 26 00 09 06 00 00 00 00 00 40 00 00 22 00 28
+71 53 08 84 bf 09 9f 00 2f 80 1f 00 7f 06 2f 00
+02 00 09 00 71 53 08 04 bf 09 9f 00 2f 80 1f 00
+7f 06 df 06 02 00 09 00 00 00 00 00 00 00 08 90
+
+00 ff ff ff ff ff ff 00 4d 10 b3 15 a1 21 03 09
+28 22 01 04 b5 20 15 78 03 7d 77 ad 50 46 ad 26
+0f 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 25 d5 c0 a0 90 80 30 60 30 20
+3a 00 3d d3 10 00 00 18 25 d5 c0 a0 90 80 e0 66
+30 20 3a 00 3d d3 10 00 00 18 00 00 00 fd 00 18
+78 ce ce 37 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 51 31 35 30 50 31 4a 58 36 31 0a 20 01 56
+
+70 20 79 02 00 20 00 19 8c 52 19 b3 15 a1 21 03
+01 28 18 0d 4c 51 31 35 30 50 31 4a 58 36 31 0a
+20 21 00 1d 63 0c 42 08 c0 09 80 06 00 e1 fa 51
+3d a4 b0 66 62 0f 02 45 54 b0 60 b0 60 99 35 13
+78 26 00 09 06 00 00 00 00 00 40 00 00 22 00 28
+71 53 08 84 bf 09 9f 00 2f 80 1f 00 7f 06 2f 00
+02 00 09 00 71 53 08 04 bf 09 9f 00 2f 80 1f 00
+7f 06 df 06 02 00 09 00 00 00 00 00 00 00 08 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: SHP
+    Model: 5555
+    Serial Number: ...
+    Made in: week 40 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 32 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6767, 0.3154
+    Green: 0.2763, 0.6767
+    Blue : 0.1494, 0.0615
+    White: 0.3134, 0.3271
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2496x1664  120.000299 Hz   3:2    205.441 kHz    545.650000 MHz (317 mm x 211 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync  10 Vback   35 Vpol N
+    DTD 2:  2496x1664   60.000150 Hz   3:2    205.441 kHz    545.650000 MHz (317 mm x 211 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync  10 Vback 1747 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 24-120 Hz V, 206-206 kHz H, max dotclock 550 MHz
+    Display Product Name: 'LQ150P1JX61'
+  Extension blocks: 1
+Checksum: 0x56
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Display Product Primary Use Case: None of the listed primary use cases; generic display
+  Product Identification Data Block (0x20), OUI 8C-52-19:
+    Product Code: 5555
+    Serial Number: ...
+    Year of Manufacture: 2024, Week 40
+    Product ID: LQ150P1JX61
+ 
+  Display Parameters Data Block (0x21):
+    Image size: 317.1 mm x 211.4 mm
+    Display native pixel format: 2496x1664
+    Scan Orientation: Left to Right, Top to Bottom
+    Luminance Information: Minimum guaranteed value
+    Color Information: CIE 1931
+    Audio Speaker Information: integrated
+    Native Color Chromaticity:
+      Primary #1:  (0.679932, 0.320068)
+      Primary #2:  (0.264893, 0.689941)
+      Primary #3:  (0.149902, 0.060059)
+      White Point: (0.312988, 0.329102)
+    Native Maximum Luminance (Full Coverage): 600.000000 cd/m^2
+    Native Maximum Luminance (10% Rectangular Coverage): 600.000000 cd/m^2
+    Native Minimum Luminance: 0.349854 cd/m^2
+    Native Color Depth: 12 bpc
+    Display Device Technology: Active Matrix LCD
+    Native Gamma EOTF: 2.20
+  Display Interface Features Data Block:
+    Supported bpc for RGB encoding: 8, 10
+    Supported color space and EOTF standard combination 1: BT.2020/SMPTE ST 2084
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2496x1664  120.000299 Hz  16:9    205.441 kHz    545.650000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback   35 Vpol N
+    DTD:  2496x1664   60.000150 Hz  16:9    205.441 kHz    545.650000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback 1747 Vpol N
+  Checksum: 0x08
+Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4d 10 b3 15 a1 21 03 09 '........M....!..'
+  28 22 01 04 b5 20 15 78 03 7d 77 ad 50 46 ad 26 '("... .x.}w.PF.&'
+  0f 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PS.............'
+  01 01 01 01 01 01 25 d5 c0 a0 90 80 30 60 30 20 '......%.....0`0 '
+  3a 00 3d d3 10 00 00 18 25 d5 c0 a0 90 80 e0 66 ':.=.....%......f'
+  30 20 3a 00 3d d3 10 00 00 18 00 00 00 fd 00 18 '0 :.=...........'
+  78 ce ce 37 01 0a 20 20 20 20 20 20 00 00 00 fc 'x..7..      ....'
+  00 4c 51 31 35 30 50 31 4a 58 36 31 0a 20 01 56 '.LQ150P1JX61. .V'
+Checksum: 0x56
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Product Identification Data Block (0x20), OUI 8C-52-19:
+    Product Code: 5555
+    Serial Number: ...
+    Year of Manufacture: 2024, Week 40
+    Product ID: LQ150P1JX61
+ 
+  Display Parameters Data Block (0x21):
+    Image size: 317.1 mm x 211.4 mm
+    Display native pixel format: 2496x1664
+    Scan Orientation: Left to Right, Top to Bottom
+    Luminance Information: Minimum guaranteed value
+    Color Information: CIE 1931
+    Audio Speaker Information: integrated
+    Native Color Chromaticity:
+      Primary #1:  (0.679932, 0.320068)
+      Primary #2:  (0.264893, 0.689941)
+      Primary #3:  (0.149902, 0.060059)
+      White Point: (0.312988, 0.329102)
+    Native Maximum Luminance (Full Coverage): 600.000000 cd/m^2
+    Native Maximum Luminance (10% Rectangular Coverage): 600.000000 cd/m^2
+    Native Minimum Luminance: 0.349854 cd/m^2
+    Native Color Depth: 12 bpc
+    Display Device Technology: Active Matrix LCD
+    Native Gamma EOTF: 2.20
+  Display Interface Features Data Block:
+    Supported bpc for RGB encoding: 8, 10
+    Supported color space and EOTF standard combination 1: BT.2020/SMPTE ST 2084
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2496x1664  120.000299 Hz  16:9    205.441 kHz    545.650000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback   35 Vpol N
+    DTD:  2496x1664   60.000150 Hz  16:9    205.441 kHz    545.650000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback 1747 Vpol N
+  Checksum: 0x08
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 1, DisplayID Extension Block:
+  Product Identification Data Block (0x20), OUI 8C-52-19: Unknown OUI 8C-52-19.
+Block 3, DisplayID Extension Block:
+  Product Identification Data Block (0x20), OUI 8C-52-19: Unknown OUI 8C-52-19.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 205.440 - 205.440 kHz (Monitor: 206.000 - 206.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+  Product Identification Data Block (0x20), OUI 8C-52-19: Product Identification Data Block (0x20), OUI 8C-52-19 is required to be the first DisplayID Data Block.
+  Display Parameters Data Block (0x21): Duplicate Display Parameters Data Block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

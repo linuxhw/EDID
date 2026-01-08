@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004d10531000000000
-ff14010380522e782a1bbea25534b326
-144a52afce00a9409040818001010101
-010101010101023a801871382d40582c
-450034cc3100001e662150b051001b30
-4070360000000000001e000000fc0053
-484152502048444d490a2020000000fd
-00374c0f4b11000a20202020202001da
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 10 53 10 00 00 00 00
+ff 14 01 03 80 52 2e 78 2a 1b be a2 55 34 b3 26
+14 4a 52 af ce 00 a9 40 90 40 81 80 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 34 cc 31 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 00 00 00 00 00 1e 00 00 00 fc 00 53
+48 41 52 50 20 48 44 4d 49 0a 20 20 00 00 00 fd
+00 37 4c 0f 4b 11 00 0a 20 20 20 20 20 20 01 da
 
 00 ff ff ff ff ff ff 00 4d 10 53 10 00 00 00 00
 ff 14 01 03 80 52 2e 78 2a 1b be a2 55 34 b3 26
@@ -68,3 +66,28 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 55-76 Hz V, 15-75 kHz H, max dotclock 170 MHz
   Extension blocks: 1
 Checksum: 0xda
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4d 10 53 10 00 00 00 00 '........M.S.....'
+  ff 14 01 03 80 52 2e 78 2a 1b be a2 55 34 b3 26 '.....R.x*...U4.&'
+  14 4a 52 af ce 00 a9 40 90 40 81 80 01 01 01 01 '.JR....@.@......'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 34 cc 31 00 00 1e 66 21 50 b0 51 00 1b 30 'E.4.1...f!P.Q..0'
+  40 70 36 00 00 00 00 00 00 1e 00 00 00 fc 00 53 '@p6............S'
+  48 41 52 50 20 48 44 4d 49 0a 20 20 00 00 00 fd 'HARP HDMI.  ....'
+  00 37 4c 0f 4b 11 00 0a 20 20 20 20 20 20 01 da '.7L.K...      ..'
+Checksum: 0xda
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: EDID 1.3 does not support week 0xff.
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
+Block 1, Base EDID:
+  Unknown Extension Block.
+
+EDID conformity: FAIL

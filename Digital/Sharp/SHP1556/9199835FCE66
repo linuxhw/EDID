@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004d10561500000000
-311f0104a52213780fde50a3544c9926
-0f505400000001010101010101010101
-010101010101993680a0703828403020
-350058c210000018000000fd003ca5c1
-c128010a202020202020000000fe0036
-43394458804c513135364d3100000000
-0002410d1e000200000b410a202001f2
-7013790000030114b89c00847f079f00
-2f001f00370458000200040000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000007890
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 10 56 15 00 00 00 00
+31 1f 01 04 a5 22 13 78 0f de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 99 36 80 a0 70 38 28 40 30 20
+35 00 58 c2 10 00 00 18 00 00 00 fd 00 3c a5 c1
+c1 28 01 0a 20 20 20 20 20 20 00 00 00 fe 00 36
+43 39 44 58 80 4c 51 31 35 36 4d 31 00 00 00 00
+00 02 41 0d 1e 00 02 00 00 0b 41 0a 20 20 01 f2
+
+70 13 79 00 00 03 01 14 b8 9c 00 84 7f 07 9f 00
+2f 00 1f 00 37 04 58 00 02 00 04 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 78 90
 
 00 ff ff ff ff ff ff 00 4d 10 56 15 00 00 00 00
 31 1f 01 04 a5 22 13 78 0f de 50 a3 54 4c 99 26
@@ -86,4 +85,54 @@ Block 1, DisplayID Extension Block:
   Checksum: 0x78
 Checksum: 0x90
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4d 10 56 15 00 00 00 00 '........M.V.....'
+  31 1f 01 04 a5 22 13 78 0f de 50 a3 54 4c 99 26 '1....".x..P.TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 99 36 80 a0 70 38 28 40 30 20 '.......6..p8(@0 '
+  35 00 58 c2 10 00 00 18 00 00 00 fd 00 3c a5 c1 '5.X..........<..'
+  c1 28 01 0a 20 20 20 20 20 20 00 00 00 fe 00 36 '.(..      .....6'
+  43 39 44 58 80 4c 51 31 35 36 4d 31 00 00 00 00 'C9DX.LQ156M1....'
+  00 02 41 0d 1e 00 02 00 00 0b 41 0a 20 20 01 f2 '..A.......A.  ..'
+Checksum: 0xf2
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  1920x1080  165.003784 Hz  16:9    192.889 kHz    401.210000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   5 Vback   81 Vpol N
+  Checksum: 0x78
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 67.197 - 192.889 kHz (Monitor: 193.000 - 193.000 kHz)
+    Maximum Clock: 401.210 MHz (Monitor: 400.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Alphanumeric Data String: Non-printable character.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

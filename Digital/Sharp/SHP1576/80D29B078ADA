@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004d10761500000000
-24200104a51a10780ede50a3544c9926
-0f505400000001010101010101010101
-010101010101283c80a070b023403020
-360003a210000018203080a070b02340
-3020360003a210000018000000fe0033
-34305439804c513132304e3100000000
-0002410387010200000a410a20200037
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 10 76 15 00 00 00 00
+24 20 01 04 a5 1a 10 78 0e de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 03 a2 10 00 00 18 20 30 80 a0 70 b0 23 40
+30 20 36 00 03 a2 10 00 00 18 00 00 00 fe 00 33
+34 30 54 39 80 4c 51 31 32 30 4e 31 00 00 00 00
+00 02 41 03 87 01 02 00 00 0a 41 0a 20 20 00 37
 
 00 ff ff ff ff ff ff 00 4d 10 76 15 00 00 00 00
 24 20 01 04 a5 1a 10 78 0e de 50 a3 54 4c 99 26
@@ -54,3 +52,36 @@ Block 0, Base EDID:
     Alphanumeric Data String: '340T9'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 03 87 01 02 00 00 0a 41 0a 20 20 '....A.......A.  '
 Checksum: 0x37
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4d 10 76 15 00 00 00 00 '........M.v.....'
+  24 20 01 04 a5 1a 10 78 0e de 50 a3 54 4c 99 26 '$ .....x..P.TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
+  36 00 03 a2 10 00 00 18 20 30 80 a0 70 b0 23 40 '6....... 0..p.#@'
+  30 20 36 00 03 a2 10 00 00 18 00 00 00 fe 00 33 '0 6............3'
+  34 30 54 39 80 4c 51 31 32 30 4e 31 00 00 00 00 '40T9.LQ120N1....'
+  00 02 41 03 87 01 02 00 00 0a 41 0a 20 20 00 37 '..A.......A.  .7'
+Checksum: 0x37
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x44.
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

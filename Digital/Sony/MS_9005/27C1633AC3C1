@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00367f05900f000000
-000c0104a50000ff2f0000a057499b26
-10484f00000001010101010101010101
-010101010101023a801871382d40582d
-3600000000000018000000fd003c3cac
-ac0f0000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000078
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 7f 05 90 0f 00 00 00
+00 0c 01 04 a5 00 00 ff 2f 00 00 a0 57 49 9b 26
+10 48 4f 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2d
+36 00 00 00 00 00 00 18 00 00 00 fd 00 3c 3c ac
+ac 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 78
 
 00 ff ff ff ff ff ff 00 36 7f 05 90 0f 00 00 00
 00 0c 01 04 a5 00 00 ff 2f 00 00 a0 57 49 9b 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MS_
     Model: 36869
-    Serial Number: 15
+    Serial Number: ...
     Made in: 2002
   Basic Display Parameters & Features:
     Digital display
@@ -56,3 +54,45 @@ Block 0, Base EDID:
     Empty Descriptor
     Empty Descriptor
 Checksum: 0x78
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 7f 05 90 0f 00 00 00 '........6.......'
+  00 0c 01 04 a5 00 00 ff 2f 00 00 a0 57 49 9b 26 '......../...WI.&'
+  10 48 4f 00 00 00 01 01 01 01 01 01 01 01 01 01 '.HO.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2d '.......:..q8-@X-'
+  36 00 00 00 00 00 00 18 00 00 00 fd 00 3c 3c ac '6............<<.'
+  ac 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 78 '...............x'
+Checksum: 0x78
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 67.500 - 67.500 kHz (Monitor: 172.000 - 172.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: Manufacturer name field contains garbage.
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

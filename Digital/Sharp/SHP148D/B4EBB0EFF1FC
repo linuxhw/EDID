@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004d108d1400000000
-051c0104a52213780e606baa5336bc25
-0d525800000001010101010101010101
-0101010101014dd000a0f0703e803020
-350058c2100000180000000000000000
-00000000000000000000000000fe0046
-4e564452804c51313536443100000000
-0002410328011200000b010a202000b7
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 10 8d 14 00 00 00 00
+05 1c 01 04 a5 22 13 78 0e 60 6b aa 53 36 bc 25
+0d 52 58 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 58 c2 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 46
+4e 56 44 52 80 4c 51 31 35 36 44 31 00 00 00 00
+00 02 41 03 28 01 12 00 00 0b 01 0a 20 20 00 b7
 
 00 ff ff ff ff ff ff 00 4d 10 8d 14 00 00 00 00
 05 1c 01 04 a5 22 13 78 0e 60 6b aa 53 36 bc 25
@@ -52,3 +50,36 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'FNVDR'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 03 28 01 12 00 00 0b 01 0a 20 20 '....A.(.......  '
 Checksum: 0xb7
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4d 10 8d 14 00 00 00 00 '........M.......'
+  05 1c 01 04 a5 22 13 78 0e 60 6b aa 53 36 bc 25 '.....".x.`k.S6.%'
+  0d 52 58 00 00 00 01 01 01 01 01 01 01 01 01 01 '.RX.............'
+  01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20 '......M....p>.0 '
+  35 00 58 c2 10 00 00 18 00 00 00 00 00 00 00 00 '5.X.............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 46 '...............F'
+  4e 56 44 52 80 4c 51 31 35 36 44 31 00 00 00 00 'NVDR.LQ156D1....'
+  00 02 41 03 28 01 12 00 00 0b 01 0a 20 20 00 b7 '..A.(.......  ..'
+Checksum: 0xb7
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004d108715a0320866
-2a1e0104b51e147807de50a3544c9926
-0f505400000001010101010101010101
-01010101010152c460a0904024603020
-3a002fca1000001852c460a090408866
-30203a002fca10000018000000fd001e
-78c5c5330100000000000000000000fc
-004c5131343450314a5830310a200161
-02030f00e3058000e606050176763e00
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000068
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d 10 87 15 a0 32 08 66
+2a 1e 01 04 b5 1e 14 78 07 de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 52 c4 60 a0 90 40 24 60 30 20
+3a 00 2f ca 10 00 00 18 52 c4 60 a0 90 40 88 66
+30 20 3a 00 2f ca 10 00 00 18 00 00 00 fd 00 1e
+78 c5 c5 33 01 00 00 00 00 00 00 00 00 00 00 fc
+00 4c 51 31 34 34 50 31 4a 58 30 31 0a 20 01 61
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 76 76 3e 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 68
 
 00 ff ff ff ff ff ff 00 4d 10 87 15 a0 32 08 66
 2a 1e 01 04 b5 1e 14 78 07 de 50 a3 54 4c 99 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SHP
     Model: 5511
-    Serial Number: 1711813280
+    Serial Number: ...
     Made in: week 42 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -93,3 +92,68 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 118 (644.196 cd/m^2)
     Desired content min luminance: 62 (0.381 cd/m^2)
 Checksum: 0x68  Unused space in Extension Block: 112 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4d 10 87 15 a0 32 08 66 '........M....2.f'
+  2a 1e 01 04 b5 1e 14 78 07 de 50 a3 54 4c 99 26 '*......x..P.TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 52 c4 60 a0 90 40 24 60 30 20 '......R.`..@$`0 '
+  3a 00 2f ca 10 00 00 18 52 c4 60 a0 90 40 88 66 ':./.....R.`..@.f'
+  30 20 3a 00 2f ca 10 00 00 18 00 00 00 fd 00 1e '0 :./...........'
+  78 c5 c5 33 01 00 00 00 00 00 00 00 00 00 00 fc 'x..3............'
+  00 4c 51 31 34 34 50 31 4a 58 30 31 0a 20 01 61 '.LQ144P1JX01. .a'
+Checksum: 0x61
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 118 (644.196 cd/m^2)
+    Desired content max frame-average luminance: 118 (644.196 cd/m^2)
+    Desired content min luminance: 62 (0.381 cd/m^2)
+Checksum: 0x68  Unused space in Extension Block: 112 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 196.320 - 196.320 kHz (Monitor: 197.000 - 197.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL
