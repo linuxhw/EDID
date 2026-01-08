@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff005a63445235070000
-23090104a52018a0e29d19a255479827
-10484cfffe0031594559714f81408180
-010101010101ea240060410028303060
-13002ce11000001e000000ff00465239
-333530313834350a2020000000fd0032
-781e460b000a202020202020000000fc
-004537300a20202020202020202000c8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5a 63 44 52 35 07 00 00
+23 09 01 04 a5 20 18 a0 e2 9d 19 a2 55 47 98 27
+10 48 4c ff fe 00 31 59 45 59 71 4f 81 40 81 80
+01 01 01 01 01 01 ea 24 00 60 41 00 28 30 30 60
+13 00 2c e1 10 00 00 1e 00 00 00 ff 00 46 52 39
+33 35 30 31 38 34 35 0a 20 20 00 00 00 fd 00 32
+78 1e 46 0b 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 45 37 30 0a 20 20 20 20 20 20 20 20 20 00 c8
 
 00 ff ff ff ff ff ff 00 5a 63 44 52 35 07 00 00
 23 09 01 04 a5 20 18 a0 e2 9d 19 a2 55 47 98 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: VSC
     Model: 21060
-    Serial Number: 1845
+    Serial Number: ...
     Made in: week 35 of 1999
   Basic Display Parameters & Features:
     Digital display
@@ -69,8 +67,40 @@ Block 0, Base EDID:
     DTD 1:  1024x768    84.996690 Hz   4:3     68.677 kHz     94.500000 MHz (300 mm x 225 mm)
                  Hfront   48 Hsync  96 Hback  208 Hpol P
                  Vfront    1 Vsync   3 Vback   36 Vpol P
-    Display Product Serial Number: 'FR93501845'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-120 Hz V, 30-70 kHz H, max dotclock 110 MHz
     Display Product Name: 'E70'
 Checksum: 0xc8
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5a 63 44 52 35 07 00 00 '........ZcDR5...'
+  23 09 01 04 a5 20 18 a0 e2 9d 19 a2 55 47 98 27 '#.... ......UG.''
+  10 48 4c ff fe 00 31 59 45 59 71 4f 81 40 81 80 '.HL...1YEYqO.@..'
+  01 01 01 01 01 01 ea 24 00 60 41 00 28 30 30 60 '.......$.`A.(00`'
+  13 00 2c e1 10 00 00 1e 00 00 00 ff 00 46 52 39 '..,..........FR9'
+  33 35 30 31 38 34 35 0a 20 20 00 00 00 fd 00 32 '3501845.  .....2'
+  78 1e 46 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 'x.F...      ....'
+  00 45 37 30 0a 20 20 20 20 20 20 20 20 20 00 c8 '.E70.         ..'
+Checksum: 0xc8
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 300x225 mm vs display size 320x240 mm.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

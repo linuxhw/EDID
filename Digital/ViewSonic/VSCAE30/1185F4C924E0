@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff005a6330ae01010101
-21190104a5341d783ee695a3544a9926
-0f5054bfef80d1c0b300a940a9c09500
-9040818001014dd000a0f0703e803020
-350009252100001a023a801871382d40
-582c450009252100001e000000fd0016
-4b18a03c000a202020202020000000fc
-005658323437352053455249455301b5
-020326f14be166101f05140413031201
-23097f07830100006d030c0010000878
-200060010203023a801871382d40582c
-45006d552100001e011d007251d01e20
-6e28550009252100001e8c0ad08a20e0
-2d10103e9600092521000018023a80d0
-72382d40102c458009252100001e0000
-00000000000000000000000000000091
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5a 63 30 ae 01 01 01 01
+21 19 01 04 a5 34 1d 78 3e e6 95 a3 54 4a 99 26
+0f 50 54 bf ef 80 d1 c0 b3 00 a9 40 a9 c0 95 00
+90 40 81 80 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 09 25 21 00 00 1a 02 3a 80 18 71 38 2d 40
+58 2c 45 00 09 25 21 00 00 1e 00 00 00 fd 00 16
+4b 18 a0 3c 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 58 32 34 37 35 20 53 45 52 49 45 53 01 b5
+
+02 03 26 f1 4b e1 66 10 1f 05 14 04 13 03 12 01
+23 09 7f 07 83 01 00 00 6d 03 0c 00 10 00 08 78
+20 00 60 01 02 03 02 3a 80 18 71 38 2d 40 58 2c
+45 00 6d 55 21 00 00 1e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 09 25 21 00 00 1e 8c 0a d0 8a 20 e0
+2d 10 10 3e 96 00 09 25 21 00 00 18 02 3a 80 d0
+72 38 2d 40 10 2c 45 80 09 25 21 00 00 1e 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 91
 
 00 ff ff ff ff ff ff 00 5a 63 30 ae 01 01 01 01
 21 19 01 04 a5 34 1d 78 3e e6 95 a3 54 4a 99 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: VSC
     Model: 44592
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 33 of 2015
   Basic Display Parameters & Features:
     Digital display
@@ -86,12 +85,12 @@ Block 0, Base EDID:
     DMT 0x2a:  1400x1050   59.978442 Hz   4:3     65.317 kHz    121.750000 MHz
     DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (521 mm x 293 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   54 Vpol N
-    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (521 mm x 293 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD  1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (521 mm x 293 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync   5 Vback   54 Vpol N
+    DTD  2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (521 mm x 293 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 22-75 Hz V, 24-160 kHz H, max dotclock 600 MHz
     Display Product Name: 'VX2475 SERIES'
@@ -136,16 +135,129 @@ Block 1, CTA-861 Extension Block:
         HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
         HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
   Detailed Timing Descriptors:
-    DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (621 mm x 341 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (521 mm x 293 mm)
-                 Hfront  110 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (521 mm x 293 mm)
-                 Hfront   16 Hsync  62 Hback   60 Hpol N
-                 Vfront    9 Vsync   6 Vback   30 Vpol N
-    DTD 6:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (521 mm x 293 mm)
-                 Hfront  528 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD  3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (621 mm x 341 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD  4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (521 mm x 293 mm)
+                  Hfront  110 Hsync  40 Hback  220 Hpol P
+                  Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD  5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (521 mm x 293 mm)
+                  Hfront   16 Hsync  62 Hback   60 Hpol N
+                  Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD  6:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (521 mm x 293 mm)
+                  Hfront  528 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
 Checksum: 0x91  Unused space in Extension Block: 17 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5a 63 30 ae 01 01 01 01 '........Zc0.....'
+  21 19 01 04 a5 34 1d 78 3e e6 95 a3 54 4a 99 26 '!....4.x>...TJ.&'
+  0f 50 54 bf ef 80 d1 c0 b3 00 a9 40 a9 c0 95 00 '.PT........@....'
+  90 40 81 80 01 01 4d d0 00 a0 f0 70 3e 80 30 20 '.@....M....p>.0 '
+  35 00 09 25 21 00 00 1a 02 3a 80 18 71 38 2d 40 '5..%!....:..q8-@'
+  58 2c 45 00 09 25 21 00 00 1e 00 00 00 fd 00 16 'X,E..%!.........'
+  4b 18 a0 3c 00 0a 20 20 20 20 20 20 00 00 00 fc 'K..<..      ....'
+  00 56 58 32 34 37 35 20 53 45 52 49 45 53 01 b5 '.VX2475 SERIES..'
+Checksum: 0xb5
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    Unknown (VIC 225)
+    VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_Y444
+    Maximum TMDS clock: 600 MHz
+    Extended HDMI video details:
+      HDMI VICs:
+        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+  Detailed Timing Descriptors:
+    DTD  7:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (621 mm x 341 mm)
+                  Hfront   88 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD  8:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (521 mm x 293 mm)
+                  Hfront  110 Hsync  40 Hback  220 Hpol P
+                  Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD  9:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (521 mm x 293 mm)
+                  Hfront   16 Hsync  62 Hback   60 Hpol N
+                  Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 10:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (521 mm x 293 mm)
+                  Hfront  528 Hsync  44 Hback  148 Hpol P
+                  Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0x91  Unused space in Extension Block: 17 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  CTA-861: Native progressive resolution of 3840x2160 is smaller than the max preferred progressive resolution 4096x2160.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: Unknown VIC 225.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Detailed Timing Descriptor #3: Mismatch of image size 621x341 mm vs display size 520x290 mm.
+  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Unknown VIC 225.
+  Video Data Block: Duplicate VIC 225.
+  Video Data Block: Duplicate VIC 102.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Detailed Timing Descriptor #7: Mismatch of image size 621x341 mm vs display size 520x290 mm.
+  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 621x341mm, which is larger than the display size 520.0x290.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff005a63275f01010101
-2815010380261e782e6215a5554aa124
-125054bfef8081408100010101010101
-010101010101302a009851002a403070
-1300782d1100001e000000ff00533841
-3131343030303732340a000000fd0032
-4b18520e000a202020202020000000fc
-00564139323667205345524945530054
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5a 63 27 5f 01 01 01 01
+28 15 01 03 80 26 1e 78 2e 62 15 a5 55 4a a1 24
+12 50 54 bf ef 80 81 40 81 00 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 ff 00 53 38 41
+31 31 34 30 30 30 37 32 34 0a 00 00 00 fd 00 32
+4b 18 52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 41 39 32 36 67 20 53 45 52 49 45 53 00 54
 
 00 ff ff ff ff ff ff 00 5a 63 27 5f 01 01 01 01
 28 15 01 03 80 26 1e 78 2e 62 15 a5 55 4a a1 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: VSC
     Model: 24359
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 40 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -65,8 +63,34 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (376 mm x 301 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: 'S8A114000724'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 24-82 kHz H, max dotclock 140 MHz
     Display Product Name: 'VA926g SERIES'
 Checksum: 0x54
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5a 63 27 5f 01 01 01 01 '........Zc'_....'
+  28 15 01 03 80 26 1e 78 2e 62 15 a5 55 4a a1 24 '(....&.x.b..UJ.$'
+  12 50 54 bf ef 80 81 40 81 00 01 01 01 01 01 01 '.PT....@........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 ff 00 53 38 41 '..x-.........S8A'
+  31 31 34 30 30 30 37 32 34 0a 00 00 00 fd 00 32 '114000724......2'
+  4b 18 52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
+  00 56 41 39 32 36 67 20 53 45 52 49 45 53 00 54 '.VA926g SERIES.T'
+Checksum: 0x54
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

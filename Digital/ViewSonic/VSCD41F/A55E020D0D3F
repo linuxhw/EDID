@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff005a631fd401010101
-2811010380291a782edc55a359489e24
-115054bfef809500950f9040904f8180
-8140714f310a9a29a0d0518422305098
-36009a001100001c000000ff00515342
-3037343030313139390a000000fd0032
-4b1e520e000a202020202020000000fc
-00565831393332776d2d330a20200027
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5a 63 1f d4 01 01 01 01
+28 11 01 03 80 29 1a 78 2e dc 55 a3 59 48 9e 24
+11 50 54 bf ef 80 95 00 95 0f 90 40 90 4f 81 80
+81 40 71 4f 31 0a 9a 29 a0 d0 51 84 22 30 50 98
+36 00 9a 00 11 00 00 1c 00 00 00 ff 00 51 53 42
+30 37 34 30 30 31 31 39 39 0a 00 00 00 fd 00 32
+4b 1e 52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 58 31 39 33 32 77 6d 2d 33 0a 20 20 00 27
 
 00 ff ff ff ff ff ff 00 5a 63 1f d4 01 01 01 01
 28 11 01 03 80 29 1a 78 2e dc 55 a3 59 48 9e 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: VSC
     Model: 54303
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 40 of 2007
   Basic Display Parameters & Features:
     Digital display
@@ -71,10 +69,37 @@ Block 0, Base EDID:
     DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (410 mm x 256 mm)
                  Hfront   80 Hsync 152 Hback  232 Hpol N
                  Vfront    3 Vsync   6 Vback   25 Vpol P
-    Display Product Serial Number: 'QSB074001199'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-82 kHz H, max dotclock 140 MHz
     Display Product Name: 'VX1932wm-3'
 Checksum: 0x27
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5a 63 1f d4 01 01 01 01 '........Zc......'
+  28 11 01 03 80 29 1a 78 2e dc 55 a3 59 48 9e 24 '(....).x..U.YH.$'
+  11 50 54 bf ef 80 95 00 95 0f 90 40 90 4f 81 80 '.PT........@.O..'
+  81 40 71 4f 31 0a 9a 29 a0 d0 51 84 22 30 50 98 '.@qO1..)..Q."0P.'
+  36 00 9a 00 11 00 00 1c 00 00 00 ff 00 51 53 42 '6............QSB'
+  30 37 34 30 30 31 31 39 39 0a 00 00 00 fd 00 32 '074001199......2'
+  4b 1e 52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
+  00 56 58 31 39 33 32 77 6d 2d 33 0a 20 20 00 27 '.VX1932wm-3.  .''
+Checksum: 0x27
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 29.190 - 82.278 kHz (Monitor: 30.000 - 82.000 kHz)
+    Maximum Clock: 156.000 MHz (Monitor: 140.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff005a6327e701010101
-31150103803c22782eeed5a555489b26
-125054bfef80b300a940950090408180
-8140714f0101023a801871382d40582c
-450056502100001e000000ff00534337
-3131343930313532370a000000fd0038
-4b185211000a202020202020000000fc
-00564132373032770a202020202000ba
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5a 63 27 e7 01 01 01 01
+31 15 01 03 80 3c 22 78 2e ee d5 a5 55 48 9b 26
+12 50 54 bf ef 80 b3 00 a9 40 95 00 90 40 81 80
+81 40 71 4f 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 ff 00 53 43 37
+31 31 34 39 30 31 35 32 37 0a 00 00 00 fd 00 38
+4b 18 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 41 32 37 30 32 77 0a 20 20 20 20 20 00 ba
 
 00 ff ff ff ff ff ff 00 5a 63 27 e7 01 01 01 01
 31 15 01 03 80 3c 22 78 2e ee d5 a5 55 48 9b 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: VSC
     Model: 59175
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 49 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -70,8 +68,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'SC7114901527'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 24-82 kHz H, max dotclock 170 MHz
     Display Product Name: 'VA2702w'
 Checksum: 0xba
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5a 63 27 e7 01 01 01 01 '........Zc'.....'
+  31 15 01 03 80 3c 22 78 2e ee d5 a5 55 48 9b 26 '1....<"x....UH.&'
+  12 50 54 bf ef 80 b3 00 a9 40 95 00 90 40 81 80 '.PT......@...@..'
+  81 40 71 4f 01 01 02 3a 80 18 71 38 2d 40 58 2c '.@qO...:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 ff 00 53 43 37 'E.VP!........SC7'
+  31 31 34 39 30 31 35 32 37 0a 00 00 00 fd 00 38 '114901527......8'
+  4b 18 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
+  00 56 41 32 37 30 32 77 0a 20 20 20 20 20 00 ba '.VA2702w.     ..'
+Checksum: 0xba
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
