@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001ab33d0800000000
-31180103803c22782a0285a556549d25
-0e5054a54b0081c081809500a9c0b300
-010101010101023a801871382d40582c
-450056502100001e000000fd00384c1e
-5211000a202020202020000000fc0042
-3237542d37204c45440a2020000000ff
-00595638503030373538330a2020003b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1a b3 3d 08 00 00 00 00
+31 18 01 03 80 3c 22 78 2a 02 85 a5 56 54 9d 25
+0e 50 54 a5 4b 00 81 c0 81 80 95 00 a9 c0 b3 00
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 fd 00 38 4c 1e
+52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42
+32 37 54 2d 37 20 4c 45 44 0a 20 20 00 00 00 ff
+00 59 56 38 50 30 30 37 35 38 33 0a 20 20 00 3b
 
 00 ff ff ff ff ff ff 00 1a b3 3d 08 00 00 00 00
 31 18 01 03 80 3c 22 78 2a 02 85 a5 56 54 9d 25
@@ -62,7 +60,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-82 kHz H, max dotclock 170 MHz
     Display Product Name: 'B27T-7 LED'
-    Display Product Serial Number: 'YV8P007583'
+    Display Product Serial Number: ...
 Checksum: 0x3b
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1a b3 3d 08 00 00 00 00 '..........=.....'
+  31 18 01 03 80 3c 22 78 2a 02 85 a5 56 54 9d 25 '1....<"x*...VT.%'
+  0e 50 54 a5 4b 00 81 c0 81 80 95 00 a9 c0 b3 00 '.PT.K...........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 fd 00 38 4c 1e 'E.VP!........8L.'
+  52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42 'R...      .....B'
+  32 37 54 2d 37 20 4c 45 44 0a 20 20 00 00 00 ff '27T-7 LED.  ....'
+  00 59 56 38 50 30 30 37 35 38 33 0a 20 20 00 3b '.YV8P007583.  .;'
+Checksum: 0x3b
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

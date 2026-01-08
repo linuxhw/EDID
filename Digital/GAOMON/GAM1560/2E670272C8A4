@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001c2d601500000000
-261d010380221378ead6a5a2594a9524
-1450542dcf00950081c0814071408180
-81c09500b300023a801871382d40582c
-450059c21000001c662156aa51001e30
-468f3300dc0b1100001e000000fd0032
-3c1e5311000a202020202020000000fc
-0047414f4d4f4e3135362050524f008c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1c 2d 60 15 00 00 00 00
+26 1d 01 03 80 22 13 78 ea d6 a5 a2 59 4a 95 24
+14 50 54 2d cf 00 95 00 81 c0 81 40 71 40 81 80
+81 c0 95 00 b3 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 59 c2 10 00 00 1c 66 21 56 aa 51 00 1e 30
+46 8f 33 00 dc 0b 11 00 00 1e 00 00 00 fd 00 32
+3c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 47 41 4f 4d 4f 4e 31 35 36 20 50 52 4f 00 8c
 
 00 ff ff ff ff ff ff 00 1c 2d 60 15 00 00 00 00
 26 1d 01 03 80 22 13 78 ea d6 a5 a2 59 4a 95 24
@@ -72,4 +70,36 @@ Block 0, Base EDID:
     Display Product Name: 'GAOMON156 PRO'
 Checksum: 0x8c
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1c 2d 60 15 00 00 00 00 '.........-`.....'
+  26 1d 01 03 80 22 13 78 ea d6 a5 a2 59 4a 95 24 '&....".x....YJ.$'
+  14 50 54 2d cf 00 95 00 81 c0 81 40 71 40 81 80 '.PT-.......@q@..'
+  81 c0 95 00 b3 00 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 59 c2 10 00 00 1c 66 21 56 aa 51 00 1e 30 'E.Y.....f!V.Q..0'
+  46 8f 33 00 dc 0b 11 00 00 1e 00 00 00 fd 00 32 'F.3............2'
+  3c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc '<.S...      ....'
+  00 47 41 4f 4d 4f 4e 31 35 36 20 50 52 4f 00 8c '.GAOMON156 PRO..'
+Checksum: 0x8c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Mismatch of image size 476x267 mm vs display size 340x190 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.790 - 75.029 Hz (Monitor: 50.000 - 60.000 Hz)
+  Base EDID: The DTD max image size is 476x267mm, which is larger than the display size 340.0x190.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

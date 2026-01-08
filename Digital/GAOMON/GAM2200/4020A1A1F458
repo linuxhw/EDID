@@ -1,0 +1,91 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1c 2d 00 22 01 00 00 00
+1d 1d 01 03 80 2f 1b 78 e8 59 a5 a4 57 47 9c 24
+15 50 54 29 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0b 11 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 00 00 00 00 00 1e 00 00 00 fd 00 32
+4b 1e 50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 44 32 32 30 30 0a 20 20 20 20 20 20 00 45
+
+00 ff ff ff ff ff ff 00 1c 2d 00 22 01 00 00 00
+1d 1d 01 03 80 2f 1b 78 e8 59 a5 a4 57 47 9c 24
+15 50 54 29 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0b 11 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 00 00 00 00 00 1e 00 00 00 fd 00 32
+4b 1e 50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 44 32 32 30 30 0a 20 20 20 20 20 20 00 45
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: GAM
+    Model: 8704
+    Serial Number: ...
+    Made in: week 29 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 47 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6416, 0.3408
+    Green: 0.2792, 0.6103
+    Blue : 0.1425, 0.0839
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x05:   640x480    72.808802 Hz   4:3     37.861 kHz     31.500000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (476 mm x 267 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-75 Hz V, 30-80 kHz H, max dotclock 140 MHz
+    Display Product Name: 'PD2200'
+Checksum: 0x45
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1c 2d 00 22 01 00 00 00 '.........-."....'
+  1d 1d 01 03 80 2f 1b 78 e8 59 a5 a4 57 47 9c 24 '...../.x.Y..WG.$'
+  15 50 54 29 08 00 01 01 01 01 01 01 01 01 01 01 '.PT)............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dc 0b 11 00 00 1e 66 21 56 aa 51 00 1e 30 'E.......f!V.Q..0'
+  46 8f 33 00 00 00 00 00 00 1e 00 00 00 fd 00 32 'F.3............2'
+  4b 1e 50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.P...      ....'
+  00 50 44 32 32 30 30 0a 20 20 20 20 20 20 00 45 '.PD2200.      .E'
+Checksum: 0x45
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 148.500 MHz (Monitor: 140.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
