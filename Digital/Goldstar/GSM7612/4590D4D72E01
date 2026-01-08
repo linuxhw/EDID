@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6d127601010101
-0313010380462778ead9b0a357499c25
-11494ba10800314045406140d1c00101
-0101010101014c1f009051001b304088
-1700e8263200001a1b2150a051001e30
-48883500bc862100001c000000fd0039
-4b1f5412000a202020202020000000fc
-0033325047363030300a202020200143
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 12 76 01 01 01 01
+03 13 01 03 80 46 27 78 ea d9 b0 a3 57 49 9c 25
+11 49 4b a1 08 00 31 40 45 40 61 40 d1 c0 01 01
+01 01 01 01 01 01 4c 1f 00 90 51 00 1b 30 40 88
+17 00 e8 26 32 00 00 1a 1b 21 50 a0 51 00 1e 30
+48 88 35 00 bc 86 21 00 00 1c 00 00 00 fd 00 39
+4b 1f 54 12 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 33 32 50 47 36 30 30 30 0a 20 20 20 20 01 43
 
 00 ff ff ff ff ff ff 00 1e 6d 12 76 01 01 01 01
 03 13 01 03 80 46 27 78 ea d9 b0 a3 57 49 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 30226
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 3 of 2009
   Basic Display Parameters & Features:
     Digital display
@@ -63,3 +61,29 @@ Block 0, Base EDID:
     Display Product Name: '32PG6000'
   Extension blocks: 1
 Checksum: 0x43
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 12 76 01 01 01 01 '.........m.v....'
+  03 13 01 03 80 46 27 78 ea d9 b0 a3 57 49 9c 25 '.....F'x....WI.%'
+  11 49 4b a1 08 00 31 40 45 40 61 40 d1 c0 01 01 '.IK...1@E@a@....'
+  01 01 01 01 01 01 4c 1f 00 90 51 00 1b 30 40 88 '......L...Q..0@.'
+  17 00 e8 26 32 00 00 1a 1b 21 50 a0 51 00 1e 30 '...&2....!P.Q..0'
+  48 88 35 00 bc 86 21 00 00 1c 00 00 00 fd 00 39 'H.5...!........9'
+  4b 1f 54 12 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.T...      ....'
+  00 33 32 50 47 36 30 30 30 0a 20 20 20 20 01 43 '.32PG6000.    .C'
+Checksum: 0x43
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 1000x550 mm vs display size 700x390 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 1000x550mm, which is larger than the display size 700.0x390.0mm.
+
+EDID conformity: FAIL
