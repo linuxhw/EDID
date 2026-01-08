@@ -1,31 +1,31 @@
-
-EDID (hex):
-00ffffffffffff0004728a0733037013
-251f0104b54627783be245ad4f4aa526
-0c5054a74b0081c081809500a9c0b300
-d1c0010101016a5e00a0a0a029503020
-3500b9882100001a000000fd0030aaf9
-f944010a202020202020000000ff0031
-313337303033333333393030000000fc
-00524733323151550a202020202002bf
-020333754d909f859404130312010211
-4d4e2309070783010000e305e301e606
-070168612a6d1a0000020130aa000000
-000000f5bd00a0a0a0325020404500b9
-882100001a389580a070382140304035
-00b9882100001e5c9d00a0a0a0295030
-203500b9882100001e9fe00078a0a032
-5030403500b9882100001e0000000089
-70127900000300285a060184ff099100
-2f001f009f05130002000400b6ff0004
-ff0995002f003f009f05170002000400
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000003c90
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 8a 07 33 03 70 13
+25 1f 01 04 b5 46 27 78 3b e2 45 ad 4f 4a a5 26
+0c 50 54 a7 4b 00 81 c0 81 80 95 00 a9 c0 b3 00
+d1 c0 01 01 01 01 6a 5e 00 a0 a0 a0 29 50 30 20
+35 00 b9 88 21 00 00 1a 00 00 00 fd 00 30 aa f9
+f9 44 01 0a 20 20 20 20 20 20 00 00 00 ff 00 31
+31 33 37 30 30 33 33 33 33 39 30 30 00 00 00 fc
+00 52 47 33 32 31 51 55 0a 20 20 20 20 20 02 bf
+
+02 03 33 75 4d 90 9f 85 94 04 13 03 12 01 02 11
+4d 4e 23 09 07 07 83 01 00 00 e3 05 e3 01 e6 06
+07 01 68 61 2a 6d 1a 00 00 02 01 30 aa 00 00 00
+00 00 00 f5 bd 00 a0 a0 a0 32 50 20 40 45 00 b9
+88 21 00 00 1a 38 95 80 a0 70 38 21 40 30 40 35
+00 b9 88 21 00 00 1e 5c 9d 00 a0 a0 a0 29 50 30
+20 35 00 b9 88 21 00 00 1e 9f e0 00 78 a0 a0 32
+50 30 40 35 00 b9 88 21 00 00 1e 00 00 00 00 89
+
+70 12 79 00 00 03 00 28 5a 06 01 84 ff 09 91 00
+2f 00 1f 00 9f 05 13 00 02 00 04 00 b6 ff 00 04
+ff 09 95 00 2f 00 3f 00 9f 05 17 00 02 00 04 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 3c 90
 
 00 ff ff ff ff ff ff 00 04 72 8a 07 33 03 70 13
 25 1f 01 04 b5 46 27 78 3b e2 45 ad 4f 4a a5 26
@@ -61,7 +61,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 1930
-    Serial Number: 326107955
+    Serial Number: ...
     Made in: week 37 of 2021
   Basic Display Parameters & Features:
     Digital display
@@ -101,7 +101,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Range Limits:
       Monitor ranges (Bare Limits): 48-170 Hz V, 249-249 kHz H, max dotclock 680 MHz
-    Display Product Serial Number: '1137003333900'
+    Display Product Serial Number: ...
     Display Product Name: 'RG321QU'
   Extension blocks: 2
 Checksum: 0xbf
@@ -191,3 +191,152 @@ Block 2, DisplayID Extension Block:
                Vfront    3 Vsync   5 Vback   16 Vpol N
   Checksum: 0x3c
 Checksum: 0x90
+
+----------------
+
+Block 3, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 8a 07 33 03 70 13 '.........r..3.p.'
+  25 1f 01 04 b5 46 27 78 3b e2 45 ad 4f 4a a5 26 '%....F'x;.E.OJ.&'
+  0c 50 54 a7 4b 00 81 c0 81 80 95 00 a9 c0 b3 00 '.PT.K...........'
+  d1 c0 01 01 01 01 6a 5e 00 a0 a0 a0 29 50 30 20 '......j^....)P0 '
+  35 00 b9 88 21 00 00 1a 00 00 00 fd 00 30 aa f9 '5...!........0..'
+  f9 44 01 0a 20 20 20 20 20 20 00 00 00 ff 00 31 '.D..      .....1'
+  31 33 37 30 30 33 33 33 33 39 30 30 00 00 00 fc '137003333900....'
+  00 52 47 33 32 31 51 55 0a 20 20 20 20 20 02 bf '.RG321QU.     ..'
+Checksum: 0xbf
+
+----------------
+
+Block 4, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 5
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (native)
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  77:  1920x1080  100.000000 Hz  64:27   112.500 kHz    297.000000 MHz
+    VIC  78:  1920x1080  120.000000 Hz  64:27   135.000 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+    Gamut Boundary Description Metadata Profile P0
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 104 (475.683 cd/m^2)
+    Desired content max frame-average luminance: 97 (408.759 cd/m^2)
+    Desired content min luminance: 42 (0.129 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 170 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Detailed Timing Descriptors:
+    DTD 6:  2560x1440  119.988650 Hz  16:9    178.783 kHz    486.290000 MHz (697 mm x 392 mm)
+                 Hfront   32 Hsync  64 Hback   64 Hpol P
+                 Vfront    4 Vsync   5 Vback   41 Vpol N
+    DTD 7:  1920x1080  165.007948 Hz  16:9    183.654 kHz    382.000000 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  64 Hback   48 Hpol P
+                 Vfront    3 Vsync   5 Vback   25 Vpol P
+    DTD 8:  2560x1440  100.001986 Hz  16:9    148.103 kHz    402.840000 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+    DTD 9:  2560x1440  144.002304 Hz  16:9    214.563 kHz    575.030000 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  64 Hback    8 Hpol P
+                 Vfront    3 Vsync   5 Vback   42 Vpol P
+Checksum: 0x89  Unused space in Extension Block: 4 bytes
+
+----------------
+
+Block 5, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1440  170.000202 Hz  16:9    248.200 kHz    671.630000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   66 Hpol N
+               Vfront    3 Vsync   5 Vback   12 Vpol N
+    DTD:  2560x1440  165.000605 Hz  16:9    241.561 kHz    654.630000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  64 Hback   38 Hpol N
+               Vfront    3 Vsync   5 Vback   16 Vpol N
+  Checksum: 0x3c
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 4, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 248.200 kHz (Monitor: 249.000 - 249.000 kHz)
+  CTA-861: Multiple native interlaced timings are defined.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 3, Base EDID:
+  Unknown Extension Block.
+Block 4, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 77.
+  Video Data Block: Duplicate VIC 78.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
+  CTA-861: Native progressive timings are a mix of several resolutions.
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

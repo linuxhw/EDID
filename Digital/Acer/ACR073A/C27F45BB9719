@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0004723a07e3098013
-261f0104b54627783bdf05ae4e43a526
-115054a74b0081c081809500a9c0b300
-d1c0010101016a5e00a0a0a029503020
-3500b9882100001a000000fd0030a5f2
-f241010a202020202020000000ff0031
-313338303039453333393030000000fc
-00585a33323251550a20202020200171
-020333754d909f859404130312010211
-4d4e2309070783010000e305e301e606
-0701685c2a6d1a0000020130a5000000
-000000d4bc00a0a0a0295030403500b9
-882100001a9fe00078a0a03250304035
-00b9882100001a389580a07038214030
-403500b9882100001eb7ff0096a0a018
-5030403500b9882100001a0000000004
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 3a 07 e3 09 80 13
+26 1f 01 04 b5 46 27 78 3b df 05 ae 4e 43 a5 26
+11 50 54 a7 4b 00 81 c0 81 80 95 00 a9 c0 b3 00
+d1 c0 01 01 01 01 6a 5e 00 a0 a0 a0 29 50 30 20
+35 00 b9 88 21 00 00 1a 00 00 00 fd 00 30 a5 f2
+f2 41 01 0a 20 20 20 20 20 20 00 00 00 ff 00 31
+31 33 38 30 30 39 45 33 33 39 30 30 00 00 00 fc
+00 58 5a 33 32 32 51 55 0a 20 20 20 20 20 01 71
+
+02 03 33 75 4d 90 9f 85 94 04 13 03 12 01 02 11
+4d 4e 23 09 07 07 83 01 00 00 e3 05 e3 01 e6 06
+07 01 68 5c 2a 6d 1a 00 00 02 01 30 a5 00 00 00
+00 00 00 d4 bc 00 a0 a0 a0 29 50 30 40 35 00 b9
+88 21 00 00 1a 9f e0 00 78 a0 a0 32 50 30 40 35
+00 b9 88 21 00 00 1a 38 95 80 a0 70 38 21 40 30
+40 35 00 b9 88 21 00 00 1e b7 ff 00 96 a0 a0 18
+50 30 40 35 00 b9 88 21 00 00 1a 00 00 00 00 04
 
 00 ff ff ff ff ff ff 00 04 72 3a 07 e3 09 80 13
 26 1f 01 04 b5 46 27 78 3b df 05 ae 4e 43 a5 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 1850
-    Serial Number: 327158243
+    Serial Number: ...
     Made in: week 38 of 2021
   Basic Display Parameters & Features:
     Digital display
@@ -84,7 +83,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Range Limits:
       Monitor ranges (Bare Limits): 48-165 Hz V, 242-242 kHz H, max dotclock 650 MHz
-    Display Product Serial Number: '1138009E33900'
+    Display Product Serial Number: ...
     Display Product Name: 'XZ322QU'
   Extension blocks: 1
 Checksum: 0x71
@@ -158,3 +157,134 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  64 Hback   38 Hpol P
                  Vfront    3 Vsync   5 Vback   16 Vpol N
 Checksum: 0x04  Unused space in Extension Block: 4 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 3a 07 e3 09 80 13 '.........r:.....'
+  26 1f 01 04 b5 46 27 78 3b df 05 ae 4e 43 a5 26 '&....F'x;...NC.&'
+  11 50 54 a7 4b 00 81 c0 81 80 95 00 a9 c0 b3 00 '.PT.K...........'
+  d1 c0 01 01 01 01 6a 5e 00 a0 a0 a0 29 50 30 20 '......j^....)P0 '
+  35 00 b9 88 21 00 00 1a 00 00 00 fd 00 30 a5 f2 '5...!........0..'
+  f2 41 01 0a 20 20 20 20 20 20 00 00 00 ff 00 31 '.A..      .....1'
+  31 33 38 30 30 39 45 33 33 39 30 30 00 00 00 fc '138009E33900....'
+  00 58 5a 33 32 32 51 55 0a 20 20 20 20 20 01 71 '.XZ322QU.     .q'
+Checksum: 0x71
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 5
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (native)
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  77:  1920x1080  100.000000 Hz  64:27   112.500 kHz    297.000000 MHz
+    VIC  78:  1920x1080  120.000000 Hz  64:27   135.000 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+    Gamut Boundary Description Metadata Profile P0
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 104 (475.683 cd/m^2)
+    Desired content max frame-average luminance: 92 (366.802 cd/m^2)
+    Desired content min luminance: 42 (0.129 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Detailed Timing Descriptors:
+    DTD 6:  2560x1440  120.000397 Hz  16:9    177.721 kHz    483.400000 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  64 Hback   48 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 7:  2560x1440  144.002304 Hz  16:9    214.563 kHz    575.030000 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  64 Hback    8 Hpol P
+                 Vfront    3 Vsync   5 Vback   42 Vpol N
+    DTD 8:  1920x1080  165.007948 Hz  16:9    183.654 kHz    382.000000 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  64 Hback   48 Hpol P
+                 Vfront    3 Vsync   5 Vback   25 Vpol P
+    DTD 9:  2560x1440  165.000605 Hz  16:9    241.561 kHz    654.630000 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  64 Hback   38 Hpol P
+                 Vfront    3 Vsync   5 Vback   16 Vpol N
+Checksum: 0x04  Unused space in Extension Block: 4 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 241.560 kHz (Monitor: 242.000 - 242.000 kHz)
+    Maximum Clock: 654.630 MHz (Monitor: 650.000 MHz)
+  CTA-861: Multiple native interlaced timings are defined.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 77.
+  Video Data Block: Duplicate VIC 78.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff00047294087c709123
-27200104a53c22783bf915a15651a126
-0d5054bfef80714f8140818081c08100
-9500b300d1c06842806a703827400820
-980456502100001a023a801871382d40
-582c450056502100001e000000fd0030
-4b555512010a202020202020000000fc
-0043423237320a202020202020200153
-020326f14a010304121305141f900723
-0907078301000065030c001000681a00
-000101304b00023a801871382d40582c
-450056502100001e011d007251d01e20
-6e28550056502100001e000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000006
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 94 08 7c 70 91 23
+27 20 01 04 a5 3c 22 78 3b f9 15 a1 56 51 a1 26
+0d 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00
+95 00 b3 00 d1 c0 68 42 80 6a 70 38 27 40 08 20
+98 04 56 50 21 00 00 1a 02 3a 80 18 71 38 2d 40
+58 2c 45 00 56 50 21 00 00 1e 00 00 00 fd 00 30
+4b 55 55 12 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 42 32 37 32 0a 20 20 20 20 20 20 20 01 53
+
+02 03 26 f1 4a 01 03 04 12 13 05 14 1f 90 07 23
+09 07 07 83 01 00 00 65 03 0c 00 10 00 68 1a 00
+00 01 01 30 4b 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 56 50 21 00 00 1e 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 06
 
 00 ff ff ff ff ff ff 00 04 72 94 08 7c 70 91 23
 27 20 01 04 a5 3c 22 78 3b f9 15 a1 56 51 a1 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 2196
-    Serial Number: 596734076
+    Serial Number: ...
     Made in: week 39 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -142,4 +141,97 @@ Block 1, CTA-861 Extension Block:
                  Vfront    5 Vsync   5 Vback   20 Vpol P
 Checksum: 0x06  Unused space in Extension Block: 53 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 94 08 7c 70 91 23 '.........r..|p.#'
+  27 20 01 04 a5 3c 22 78 3b f9 15 a1 56 51 a1 26 '' ...<"x;...VQ.&'
+  0d 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00 '.PT...qO.@......'
+  95 00 b3 00 d1 c0 68 42 80 6a 70 38 27 40 08 20 '......hB.jp8'@. '
+  98 04 56 50 21 00 00 1a 02 3a 80 18 71 38 2d 40 '..VP!....:..q8-@'
+  58 2c 45 00 56 50 21 00 00 1e 00 00 00 fd 00 30 'X,E.VP!........0'
+  4b 55 55 12 01 0a 20 20 20 20 20 20 00 00 00 fc 'KUU...      ....'
+  00 43 42 32 37 32 0a 20 20 20 20 20 20 20 01 53 '.CB272.       .S'
+Checksum: 0x53
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 75 Hz
+    Flags 1.x: 0x00
+  Detailed Timing Descriptors:
+    DTD 5:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 6:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (598 mm x 336 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0x06  Unused space in Extension Block: 53 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.734 - 83.909 kHz (Monitor: 85.000 - 85.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 7.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

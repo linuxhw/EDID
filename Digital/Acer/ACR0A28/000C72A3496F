@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000472280a22330000
-100f010380392278e82796a556489d24
-14494eafee0031594559615900000000
-0000000000000e1f008051001e304080
-37003a542100001e000000fd0032551e
-5008000a202020202020000000ff0031
-3233340a2020202020202020000000fc
-004163657220414c32363731570a00c4
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 28 0a 22 33 00 00
+10 0f 01 03 80 39 22 78 e8 27 96 a5 56 48 9d 24
+14 49 4e af ee 00 31 59 45 59 61 59 00 00 00 00
+00 00 00 00 00 00 0e 1f 00 80 51 00 1e 30 40 80
+37 00 3a 54 21 00 00 1e 00 00 00 fd 00 32 55 1e
+50 08 00 0a 20 20 20 20 20 20 00 00 00 ff 00 31
+32 33 34 0a 20 20 20 20 20 20 20 20 00 00 00 fc
+00 41 63 65 72 20 41 4c 32 36 37 31 57 0a 00 c4
 
 00 ff ff ff ff ff ff 00 04 72 28 0a 22 33 00 00
 10 0f 01 03 80 39 22 78 e8 27 96 a5 56 48 9d 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 2600
-    Serial Number: 13090
+    Serial Number: ...
     Made in: week 16 of 2005
   Basic Display Parameters & Features:
     Digital display
@@ -63,8 +61,44 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   7 Vback   20 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 50-85 Hz V, 30-80 kHz H, max dotclock 80 MHz
-    Display Product Serial Number: '1234'
+    Display Product Serial Number: ...
     Display Product Name: 'Acer AL2671W'
 Checksum: 0xc4
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 28 0a 22 33 00 00 '.........r(."3..'
+  10 0f 01 03 80 39 22 78 e8 27 96 a5 56 48 9d 24 '.....9"x.'..VH.$'
+  14 49 4e af ee 00 31 59 45 59 61 59 00 00 00 00 '.IN...1YEYaY....'
+  00 00 00 00 00 00 0e 1f 00 80 51 00 1e 30 40 80 '..........Q..0@.'
+  37 00 3a 54 21 00 00 1e 00 00 00 fd 00 32 55 1e '7.:T!........2U.'
+  50 08 00 0a 20 20 20 20 20 20 00 00 00 ff 00 31 'P...      .....1'
+  32 33 34 0a 20 20 20 20 20 20 20 20 00 00 00 fc '234.        ....'
+  00 41 63 65 72 20 41 4c 32 36 37 31 57 0a 00 c4 '.Acer AL2671W...'
+Checksum: 0xc4
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x17.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 94.500 MHz (Monitor: 80.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

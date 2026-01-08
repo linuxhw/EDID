@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff000472d80941800884
-12220103803c22782a6215a8544d9c28
-1b5054bfef80714f8140818081c08100
-9500b3000101023a801871382d40582c
-350056502100001e000000fd0030640f
-731e000a202020202020000000fc004b
-4132373220450a2020202020000000ff
-00343431383030383834334530300149
-02031fb1480103041011131f4065030c
-001000681a000001013064ede200ca04
-7480d072382d40102c45805650210000
-1e8a4d80a070382c4030203500565021
-00001a2a4480a0703827403020350056
-502100001a0000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000da
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 d8 09 41 80 08 84
+12 22 01 03 80 3c 22 78 2a 62 15 a8 54 4d 9c 28
+1b 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00
+95 00 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+35 00 56 50 21 00 00 1e 00 00 00 fd 00 30 64 0f
+73 1e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4b
+41 32 37 32 20 45 0a 20 20 20 20 20 00 00 00 ff
+00 34 34 31 38 30 30 38 38 34 33 45 30 30 01 49
+
+02 03 1f b1 48 01 03 04 10 11 13 1f 40 65 03 0c
+00 10 00 68 1a 00 00 01 01 30 64 ed e2 00 ca 04
+74 80 d0 72 38 2d 40 10 2c 45 80 56 50 21 00 00
+1e 8a 4d 80 a0 70 38 2c 40 30 20 35 00 56 50 21
+00 00 1a 2a 44 80 a0 70 38 27 40 30 20 35 00 56
+50 21 00 00 1a 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 da
 
 00 ff ff ff ff ff ff 00 04 72 d8 09 41 80 08 84
 12 22 01 03 80 3c 22 78 2a 62 15 a8 54 4d 9c 28
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 2520
-    Serial Number: 2215149633
+    Serial Number: ...
     Made in: week 18 of 2024
   Basic Display Parameters & Features:
     Digital display
@@ -89,7 +88,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 48-100 Hz V, 15-115 kHz H, max dotclock 300 MHz
     Display Product Name: 'KA272 E'
-    Display Product Serial Number: '4418008843E00'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x49
 
@@ -134,3 +133,91 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   31 Vpol N
 Checksum: 0xda  Unused space in Extension Block: 42 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 d8 09 41 80 08 84 '.........r..A...'
+  12 22 01 03 80 3c 22 78 2a 62 15 a8 54 4d 9c 28 '."...<"x*b..TM.('
+  1b 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00 '.PT...qO.@......'
+  95 00 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  35 00 56 50 21 00 00 1e 00 00 00 fd 00 30 64 0f '5.VP!........0d.'
+  73 1e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4b 's...      .....K'
+  41 32 37 32 20 45 0a 20 20 20 20 20 00 00 00 ff 'A272 E.     ....'
+  00 34 34 31 38 30 30 38 38 34 33 45 30 30 01 49 '.4418008843E00.I'
+Checksum: 0x49
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  64:  1920x1080  100.000000 Hz  16:9    112.500 kHz    297.000000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 100 Hz
+    Flags 1.x: 0xed (MCCS)
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Detailed Timing Descriptors:
+    DTD 5:  1920x1080  100.000000 Hz  16:9    112.500 kHz    297.000000 MHz (598 mm x 336 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 6:  1920x1080   84.904531 Hz  16:9     95.433 kHz    198.500000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   36 Vpol N
+    DTD 7:  1920x1080   74.972503 Hz  16:9     83.894 kHz    174.500000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   31 Vpol N
+Checksum: 0xda  Unused space in Extension Block: 42 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 64.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL
