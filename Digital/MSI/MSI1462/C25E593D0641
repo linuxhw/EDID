@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003669621401000000
-021d0104a5341d78e20d36625838ae26
-0d4f54afef80d1c001018bc0a9c081c0
-010101010101023a801871382d40582c
-350009262100001e000000fc004f7074
-69782047323431564320000000fd0037
-4b1e5312000a202020202020000000ff
-00303030303030303030303030310003
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 69 62 14 01 00 00 00
+02 1d 01 04 a5 34 1d 78 e2 0d 36 62 58 38 ae 26
+0d 4f 54 af ef 80 d1 c0 01 01 8b c0 a9 c0 81 c0
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+35 00 09 26 21 00 00 1e 00 00 00 fc 00 4f 70 74
+69 78 20 47 32 34 31 56 43 20 00 00 00 fd 00 37
+4b 1e 53 12 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 30 30 30 30 30 30 30 30 30 30 30 30 31 00 03
 
 00 ff ff ff ff ff ff 00 36 69 62 14 01 00 00 00
 02 1d 01 04 a5 34 1d 78 e2 0d 36 62 58 38 ae 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MSI
     Model: 5218
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 2 of 2019
   Basic Display Parameters & Features:
     Digital display
@@ -70,5 +68,39 @@ Block 0, Base EDID:
     Display Product Name: 'Optix G241VC '
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 180 MHz
-    Display Product Serial Number: '0000000000001'
+    Display Product Serial Number: ...
 Checksum: 0x03
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 69 62 14 01 00 00 00 '........6ib.....'
+  02 1d 01 04 a5 34 1d 78 e2 0d 36 62 58 38 ae 26 '.....4.x..6bX8.&'
+  0d 4f 54 af ef 80 d1 c0 01 01 8b c0 a9 c0 81 c0 '.OT.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  35 00 09 26 21 00 00 1e 00 00 00 fc 00 4f 70 74 '5..&!........Opt'
+  69 78 20 47 32 34 31 56 43 20 00 00 00 fd 00 37 'ix G241VC .....7'
+  4b 1e 53 12 00 0a 20 20 20 20 20 20 00 00 00 ff 'K.S...      ....'
+  00 30 30 30 30 30 30 30 30 30 30 30 30 31 00 03 '.0000000000001..'
+Checksum: 0x03
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: One or more trailing spaces.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

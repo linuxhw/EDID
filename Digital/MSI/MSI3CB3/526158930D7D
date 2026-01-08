@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff003669b33c00000000
-241e0103803c21782acc17a3544c9926
-0f4748afcf808180617c81bc9500953c
-b300b33c0101023a801871382d40582c
-450056502100001e000000fd0030a51e
-c828000a202020202020000000fc004d
-5349204d4147323730564332000000ff
-004342334830323039303030343301cb
-020333f14f900102030405111213141f
-552f3f31230907078301000065030c00
-100067d85dc40178c000681a00000101
-30a5ed866f80a07038404030203500ba
-892100001ef27f807870382340302035
-00ba892100001e499680a07038294030
-2c3500ba892100001e00000000000000
-00000000000000000000000000000089
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 69 b3 3c 00 00 00 00
+24 1e 01 03 80 3c 21 78 2a cc 17 a3 54 4c 99 26
+0f 47 48 af cf 80 81 80 61 7c 81 bc 95 00 95 3c
+b3 00 b3 3c 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 fd 00 30 a5 1e
+c8 28 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4d
+53 49 20 4d 41 47 32 37 30 56 43 32 00 00 00 ff
+00 43 42 33 48 30 32 30 39 30 30 30 34 33 01 cb
+
+02 03 33 f1 4f 90 01 02 03 04 05 11 12 13 14 1f
+55 2f 3f 31 23 09 07 07 83 01 00 00 65 03 0c 00
+10 00 67 d8 5d c4 01 78 c0 00 68 1a 00 00 01 01
+30 a5 ed 86 6f 80 a0 70 38 40 40 30 20 35 00 ba
+89 21 00 00 1e f2 7f 80 78 70 38 23 40 30 20 35
+00 ba 89 21 00 00 1e 49 96 80 a0 70 38 29 40 30
+2c 35 00 ba 89 21 00 00 1e 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 89
 
 00 ff ff ff ff ff ff 00 36 69 b3 3c 00 00 00 00
 24 1e 01 03 80 3c 21 78 2a cc 17 a3 54 4c 99 26
@@ -86,7 +85,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 48-165 Hz V, 30-200 kHz H, max dotclock 400 MHz
     Display Product Name: 'MSI MAG270VC2'
-    Display Product Serial Number: 'CB3H020900043'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0xcb
 
@@ -145,3 +144,123 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  44 Hback   68 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol P
 Checksum: 0x89  Unused space in Extension Block: 22 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 69 b3 3c 00 00 00 00 '........6i.<....'
+  24 1e 01 03 80 3c 21 78 2a cc 17 a3 54 4c 99 26 '$....<!x*...TL.&'
+  0f 47 48 af cf 80 81 80 61 7c 81 bc 95 00 95 3c '.GH.....a|.....<'
+  b3 00 b3 3c 01 01 02 3a 80 18 71 38 2d 40 58 2c '...<...:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 fd 00 30 a5 1e 'E.VP!........0..'
+  c8 28 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4d '.(..      .....M'
+  53 49 20 4d 41 47 32 37 30 56 43 32 00 00 00 ff 'SI MAG270VC2....'
+  00 43 42 33 48 30 32 30 39 30 30 30 34 33 01 cb '.CB3H020900043..'
+Checksum: 0xcb
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  85:  1680x720   120.000000 Hz  64:27    99.000 kHz    198.000000 MHz
+    VIC  47:  1280x720   120.000000 Hz  16:9     90.000 kHz    148.500000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+    VIC  49:   720x480   119.880120 Hz  16:9     62.937 kHz     54.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    SCDC Read Request Capable
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0xed (MCCS)
+  Detailed Timing Descriptors:
+    DTD 5:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (698 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol P
+    DTD 6:  1920x1080  143.998945 Hz  16:9    160.559 kHz    327.540000 MHz (698 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback   40 Hpol P
+                 Vfront    3 Vsync   5 Vback   27 Vpol P
+    DTD 7:  1920x1080  165.001201 Hz  16:9    184.966 kHz    384.730000 MHz (698 mm x 393 mm)
+                 Hfront   48 Hsync  44 Hback   68 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+Checksum: 0x89  Unused space in Extension Block: 22 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Mismatch of image size 698x393 mm vs display size 600x330 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 698x393 mm vs display size 600x330 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 698x393 mm vs display size 600x330 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 85.
+  Video Data Block: Duplicate VIC 47.
+  Video Data Block: Duplicate VIC 63.
+  Video Data Block: Duplicate VIC 49.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
+  Detailed Timing Descriptor #5: Mismatch of image size 698x393 mm vs display size 600x330 mm.
+  Detailed Timing Descriptor #6: Mismatch of image size 698x393 mm vs display size 600x330 mm.
+  Detailed Timing Descriptor #7: Mismatch of image size 698x393 mm vs display size 600x330 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 184.966 kHz (Monitor: 30.000 - 200.000 kHz)
+  Base EDID: The DTD max image size is 698x393mm, which is larger than the display size 600.0x330.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

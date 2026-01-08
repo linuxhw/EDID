@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff003669621401000000
-181b0104a23c22782bcf74a755469824
-10494bafcf808180617c81bc9500953c
-b300b33cd1fc023a801871382d403020
-350053502100001e0474801871382d40
-3020350053502100001e000000fd005a
-781e9624010a202020202020000000fc
-004f707469782047323743320a200172
-020331f44d010384050710129314161f
-20222909070701000000000083010000
-67030c00100000440000000000000000
-000474801871382d4030203500535021
-00001e7c2e90a0601a1e4030203600ba
-892100001a9a29a0d051842230509836
-009a001100001c011d00bc52d01e20b8
-28554053502100001e00000000000013
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 69 62 14 01 00 00 00
+18 1b 01 04 a2 3c 22 78 2b cf 74 a7 55 46 98 24
+10 49 4b af cf 80 81 80 61 7c 81 bc 95 00 95 3c
+b3 00 b3 3c d1 fc 02 3a 80 18 71 38 2d 40 30 20
+35 00 53 50 21 00 00 1e 04 74 80 18 71 38 2d 40
+30 20 35 00 53 50 21 00 00 1e 00 00 00 fd 00 5a
+78 1e 96 24 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 4f 70 74 69 78 20 47 32 37 43 32 0a 20 01 72
+
+02 03 31 f4 4d 01 03 84 05 07 10 12 93 14 16 1f
+20 22 29 09 07 07 01 00 00 00 00 00 83 01 00 00
+67 03 0c 00 10 00 00 44 00 00 00 00 00 00 00 00
+00 04 74 80 18 71 38 2d 40 30 20 35 00 53 50 21
+00 00 1e 7c 2e 90 a0 60 1a 1e 40 30 20 36 00 ba
+89 21 00 00 1a 9a 29 a0 d0 51 84 22 30 50 98 36
+00 9a 00 11 00 00 1c 01 1d 00 bc 52 d0 1e 20 b8
+28 55 40 53 50 21 00 00 1e 00 00 00 00 00 00 13
 
 00 ff ff ff ff ff ff 00 36 69 62 14 01 00 00 00
 18 1b 01 04 a2 3c 22 78 2b cf 74 a7 55 46 98 24
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MSI
     Model: 5218
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 24 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -85,12 +84,12 @@ Block 0, Base EDID:
     GTF     :  1680x1050  120.000000 Hz  16:10   135.000 kHz    313.200000 MHz
     GTF     :  1920x1080  119.999987 Hz  16:9    138.840 kHz    368.759000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (595 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback  200 Hpol P
-                 Vfront    3 Vsync   5 Vback   37 Vpol P
-    DTD 2:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz (595 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback  200 Hpol P
-                 Vfront    3 Vsync   5 Vback   37 Vpol P
+    DTD  1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (595 mm x 336 mm)
+                  Hfront   48 Hsync  32 Hback  200 Hpol P
+                  Vfront    3 Vsync   5 Vback   37 Vpol P
+    DTD  2:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz (595 mm x 336 mm)
+                  Hfront   48 Hsync  32 Hback  200 Hpol P
+                  Vfront    3 Vsync   5 Vback   37 Vpol P
     Display Range Limits:
       Monitor ranges (Bare Limits): 90-120 Hz V, 30-150 kHz H, max dotclock 360 MHz
     Display Product Name: 'Optix G27C2'
@@ -142,16 +141,164 @@ Block 1, CTA-861 Extension Block:
   Unknown CTA-861 Data Block (tag 0x00, length 0):
   Unknown CTA-861 Data Block (tag 0x00, length 0):
   Detailed Timing Descriptors:
-    DTD 3:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz (595 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback  200 Hpol P
-                 Vfront    3 Vsync   5 Vback   37 Vpol P
-    DTD 4:  1680x1050   59.883253 Hz  16:10    64.674 kHz    119.000000 MHz (698 mm x 393 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   6 Vback   21 Vpol N
-    DTD 5:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (410 mm x 256 mm)
-                 Hfront   80 Hsync 152 Hback  232 Hpol N
-                 Vfront    3 Vsync   6 Vback   25 Vpol P
-    DTD 6:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (595 mm x 336 mm)
-                 Hfront  440 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD  3:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz (595 mm x 336 mm)
+                  Hfront   48 Hsync  32 Hback  200 Hpol P
+                  Vfront    3 Vsync   5 Vback   37 Vpol P
+    DTD  4:  1680x1050   59.883253 Hz  16:10    64.674 kHz    119.000000 MHz (698 mm x 393 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync   6 Vback   21 Vpol N
+    DTD  5:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (410 mm x 256 mm)
+                  Hfront   80 Hsync 152 Hback  232 Hpol N
+                  Vfront    3 Vsync   6 Vback   25 Vpol P
+    DTD  6:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (595 mm x 336 mm)
+                  Hfront  440 Hsync  40 Hback  220 Hpol P
+                  Vfront    5 Vsync   5 Vback   20 Vpol P
 Checksum: 0x13  Unused space in Extension Block: 6 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 69 62 14 01 00 00 00 '........6ib.....'
+  18 1b 01 04 a2 3c 22 78 2b cf 74 a7 55 46 98 24 '.....<"x+.t.UF.$'
+  10 49 4b af cf 80 81 80 61 7c 81 bc 95 00 95 3c '.IK.....a|.....<'
+  b3 00 b3 3c d1 fc 02 3a 80 18 71 38 2d 40 30 20 '...<...:..q8-@0 '
+  35 00 53 50 21 00 00 1e 04 74 80 18 71 38 2d 40 '5.SP!....t..q8-@'
+  30 20 35 00 53 50 21 00 00 1e 00 00 00 fd 00 5a '0 5.SP!........Z'
+  78 1e 96 24 01 0a 20 20 20 20 20 20 00 00 00 fc 'x..$..      ....'
+  00 4f 70 74 69 78 20 47 32 37 43 32 0a 20 01 72 '.Optix G27C2. .r'
+Checksum: 0x72
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 4
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (native)
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+    Reserved (0x00)
+    Reserved (0x00)
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Maximum TMDS clock: 340 MHz
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Detailed Timing Descriptors:
+    DTD  7:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz (595 mm x 336 mm)
+                  Hfront   48 Hsync  32 Hback  200 Hpol P
+                  Vfront    3 Vsync   5 Vback   37 Vpol P
+    DTD  8:  1680x1050   59.883253 Hz  16:10    64.674 kHz    119.000000 MHz (698 mm x 393 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync   6 Vback   21 Vpol N
+    DTD  9:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (410 mm x 256 mm)
+                  Hfront   80 Hsync 152 Hback  232 Hpol N
+                  Vfront    3 Vsync   6 Vback   25 Vpol P
+    DTD 10:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (595 mm x 336 mm)
+                  Hfront  440 Hsync  40 Hback  220 Hpol P
+                  Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0x13  Unused space in Extension Block: 6 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 63.
+Block 1, CTA-861 Extension Block:
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 63.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Detailed Timing Descriptor #7: DTD is similar but not identical to VIC 63.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 90.000 - 120.000 Hz)
+    Horizontal Freq: 15.625 - 138.839 kHz (Monitor: 30.000 - 150.000 kHz)
+    Maximum Clock: 368.759 MHz (Monitor: 360.000 MHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Audio Data Block: Audio Format Code 0x00 is reserved.
+  Audio Data Block: Audio Format Code 0x00 is reserved.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Detailed Timing Descriptor #4: Mismatch of image size 698x393 mm vs display size 600x340 mm.
+  Detailed Timing Descriptor #5: Mismatch of image size 410x256 mm vs display size 600x340 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 7.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 22.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 32.
+  Video Data Block: Duplicate VIC 34.
+  Audio Data Block: Audio Format Code 0x00 is reserved.
+  Audio Data Block: Audio Format Code 0x00 is reserved.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Detailed Timing Descriptor #8: Mismatch of image size 698x393 mm vs display size 600x340 mm.
+  Detailed Timing Descriptor #9: Mismatch of image size 410x256 mm vs display size 600x340 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 698x393mm, which is larger than the display size 600.0x340.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

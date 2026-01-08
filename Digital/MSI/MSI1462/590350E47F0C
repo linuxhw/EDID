@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff003669621401000000
-1a1e010380341e78ea2d36a75438ae26
-0d4f54afef80d1c001018bc0a9c081c0
-010101010101023a801871382d40582c
-450009262100001e000000fc004f7074
-69782047323431564320000000fd0037
-4b1e5312000a202020202020000000ff
-00303030303030303030303030310195
-02031bc1230907078301000067030c00
-2000802d43908402e2000f011d007251
-d01e206e285500a05a00000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 69 62 14 01 00 00 00
+1a 1e 01 03 80 34 1e 78 ea 2d 36 a7 54 38 ae 26
+0d 4f 54 af ef 80 d1 c0 01 01 8b c0 a9 c0 81 c0
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 09 26 21 00 00 1e 00 00 00 fc 00 4f 70 74
+69 78 20 47 32 34 31 56 43 20 00 00 00 fd 00 37
+4b 1e 53 12 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 30 30 30 30 30 30 30 30 30 30 30 30 31 01 95
+
+02 03 1b c1 23 09 07 07 83 01 00 00 67 03 0c 00
+20 00 80 2d 43 90 84 02 e2 00 0f 01 1d 00 72 51
+d0 1e 20 6e 28 55 00 a0 5a 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 
 00 ff ff ff ff ff ff 00 36 69 62 14 01 00 00 00
 1a 1e 01 03 80 34 1e 78 ea 2d 36 a7 54 38 ae 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MSI
     Model: 5218
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 26 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -85,7 +84,7 @@ Block 0, Base EDID:
     Display Product Name: 'Optix G241VC '
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 180 MHz
-    Display Product Serial Number: '0000000000001'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x95
 
@@ -123,4 +122,88 @@ Block 1, CTA-861 Extension Block:
                  Vfront    5 Vsync   5 Vback   20 Vpol N
 Checksum: 0x00  Unused space in Extension Block: 82 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 69 62 14 01 00 00 00 '........6ib.....'
+  1a 1e 01 03 80 34 1e 78 ea 2d 36 a7 54 38 ae 26 '.....4.x.-6.T8.&'
+  0d 4f 54 af ef 80 d1 c0 01 01 8b c0 a9 c0 81 c0 '.OT.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 09 26 21 00 00 1e 00 00 00 fc 00 4f 70 74 'E..&!........Opt'
+  69 78 20 47 32 34 31 56 43 20 00 00 00 fd 00 37 'ix G241VC .....7'
+  4b 1e 53 12 00 0a 20 20 20 20 20 20 00 00 00 ff 'K.S...      ....'
+  00 30 30 30 30 30 30 30 30 30 30 30 30 31 01 95 '.0000000000001..'
+Checksum: 0x95
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 225 MHz
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (analog composite, sync-on-green, 160 mm x 90 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol N
+                 Vfront    5 Vsync   5 Vback   20 Vpol N
+Checksum: 0x00  Unused space in Extension Block: 82 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 4.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 4.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: One or more trailing spaces.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #2: Mismatch of image size 160x90 mm vs display size 520x300 mm.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 2.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #3: Mismatch of image size 160x90 mm vs display size 520x300 mm.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff003669a53b00000000
-041f0104a53420783bdc5ba3544c9926
-0f4749afcf008180617c81bc9500953c
-b300b33c0101023a801871382d40582c
-450008402100001e000000ff00424135
-48303131313032373530000000fc004d
-5349204d414732343043520a000000fd
-003090dede28010a20202020202001c2
-02031bf1450212451f3f230907078301
-0000681a000001013090005e7f807870
-381e401820350056892100001e877480
-18713832403020350009252100001ed7
-94808c70382940302c3500ba89210000
-1e000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000050
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 69 a5 3b 00 00 00 00
+04 1f 01 04 a5 34 20 78 3b dc 5b a3 54 4c 99 26
+0f 47 49 af cf 00 81 80 61 7c 81 bc 95 00 95 3c
+b3 00 b3 3c 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 08 40 21 00 00 1e 00 00 00 ff 00 42 41 35
+48 30 31 31 31 30 32 37 35 30 00 00 00 fc 00 4d
+53 49 20 4d 41 47 32 34 30 43 52 0a 00 00 00 fd
+00 30 90 de de 28 01 0a 20 20 20 20 20 20 01 c2
+
+02 03 1b f1 45 02 12 45 1f 3f 23 09 07 07 83 01
+00 00 68 1a 00 00 01 01 30 90 00 5e 7f 80 78 70
+38 1e 40 18 20 35 00 56 89 21 00 00 1e 87 74 80
+18 71 38 32 40 30 20 35 00 09 25 21 00 00 1e d7
+94 80 8c 70 38 29 40 30 2c 35 00 ba 89 21 00 00
+1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50
 
 00 ff ff ff ff ff ff 00 36 69 a5 3b 00 00 00 00
 04 1f 01 04 a5 34 20 78 3b dc 5b a3 54 4c 99 26
@@ -85,7 +84,7 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (520 mm x 320 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'BA5H011102750'
+    Display Product Serial Number: ...
     Display Product Name: 'MSI MAG240CR'
     Display Range Limits:
       Monitor ranges (Bare Limits): 48-144 Hz V, 222-222 kHz H, max dotclock 400 MHz
@@ -131,4 +130,91 @@ Block 1, CTA-861 Extension Block:
                  Vfront    3 Vsync   5 Vback   33 Vpol P
 Checksum: 0x50  Unused space in Extension Block: 46 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 69 a5 3b 00 00 00 00 '........6i.;....'
+  04 1f 01 04 a5 34 20 78 3b dc 5b a3 54 4c 99 26 '.....4 x;.[.TL.&'
+  0f 47 49 af cf 00 81 80 61 7c 81 bc 95 00 95 3c '.GI.....a|.....<'
+  b3 00 b3 3c 01 01 02 3a 80 18 71 38 2d 40 58 2c '...<...:..q8-@X,'
+  45 00 08 40 21 00 00 1e 00 00 00 ff 00 42 41 35 'E..@!........BA5'
+  48 30 31 31 31 30 32 37 35 30 00 00 00 fc 00 4d 'H011102750.....M'
+  53 49 20 4d 41 47 32 34 30 43 52 0a 00 00 00 fd 'SI MAG240CR.....'
+  00 30 90 de de 28 01 0a 20 20 20 20 20 20 01 c2 '.0...(..      ..'
+Checksum: 0xc2
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  69:  1280x720    60.000000 Hz  64:27    45.000 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0x00
+  Detailed Timing Descriptors:
+    DTD 5:  1920x1080  143.993994 Hz  16:9    159.833 kHz    326.060000 MHz (598 mm x 393 mm)
+                 Hfront   24 Hsync  32 Hback   64 Hpol P
+                 Vfront    3 Vsync   5 Vback   22 Vpol P
+    DTD 6:  1920x1080  119.995977 Hz  16:9    135.595 kHz    298.310000 MHz (521 mm x 293 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    3 Vsync   5 Vback   42 Vpol P
+    DTD 7:  1920x1080  165.000909 Hz  16:9    184.966 kHz    381.030000 MHz (698 mm x 393 mm)
+                 Hfront   48 Hsync  44 Hback   48 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+Checksum: 0x50  Unused space in Extension Block: 46 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 165.001 Hz (Monitor: 48.000 - 144.000 Hz)
+    Horizontal Freq: 31.250 - 184.966 kHz (Monitor: 222.000 - 222.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Mismatch of image size 598x393 mm vs display size 520x320 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 698x393 mm vs display size 520x320 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 69.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 63.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #5: Mismatch of image size 598x393 mm vs display size 520x320 mm.
+  Detailed Timing Descriptor #7: Mismatch of image size 698x393 mm vs display size 520x320 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 698x393mm, which is larger than the display size 520.0x320.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL
