@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0005e3752401010101
-1d1b0103803420782a77e5a3574e9c26
-0d5054bfef00d1c0b300950081808140
-81c001010101283c80a070b023403020
-360006442100001a000000ff00463137
-48375141303032323631000000fd0032
-4c1e5311000a202020202020000000fc
-003234373557520a2020202020200027
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 e3 75 24 01 01 01 01
+1d 1b 01 03 80 34 20 78 2a 77 e5 a3 57 4e 9c 26
+0d 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 06 44 21 00 00 1a 00 00 00 ff 00 46 31 37
+48 37 51 41 30 30 32 32 36 31 00 00 00 fd 00 32
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 32 34 37 35 57 52 0a 20 20 20 20 20 20 00 27
 
 00 ff ff ff ff ff ff 00 05 e3 75 24 01 01 01 01
 1d 1b 01 03 80 34 20 78 2a 77 e5 a3 57 4e 9c 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AOC
     Model: 9333
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 29 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -67,8 +65,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (518 mm x 324 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   26 Vpol N
-    Display Product Serial Number: 'F17H7QA002261'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: '2475WR'
 Checksum: 0x27
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 e3 75 24 01 01 01 01 '..........u$....'
+  1d 1b 01 03 80 34 20 78 2a 77 e5 a3 57 4e 9c 26 '.....4 x*w..WN.&'
+  0d 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
+  36 00 06 44 21 00 00 1a 00 00 00 ff 00 46 31 37 '6..D!........F17'
+  48 37 51 41 30 30 32 32 36 31 00 00 00 fd 00 32 'H7QA002261.....2'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 32 34 37 35 57 52 0a 20 20 20 20 20 20 00 27 '.2475WR.      .''
+Checksum: 0x27
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
