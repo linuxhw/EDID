@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030e45505a0281000
-001c0104a51b127803ee95a3544c9926
-0f505400000001010101010101010101
-010101010101de8a4078b08037703020
-550412b710000019000000fd001e3c00
-0024040a481414141400000000fe004c
-47445f4d50312e305f0a2020000000fe
-004c5031323957543131323638340037
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 55 05 a0 28 10 00
+00 1c 01 04 a5 1b 12 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 de 8a 40 78 b0 80 37 70 30 20
+55 04 12 b7 10 00 00 19 00 00 00 fd 00 1e 3c 00
+00 24 04 0a 48 14 14 14 14 00 00 00 00 fe 00 4c
+47 44 5f 4d 50 31 2e 30 5f 0a 20 20 00 00 00 fe
+00 4c 50 31 32 39 57 54 31 31 32 36 38 34 00 37
 
 00 ff ff ff ff ff ff 00 30 e4 55 05 a0 28 10 00
 00 1c 01 04 a5 1b 12 78 03 ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LGD
     Model: 1365
-    Serial Number: 1058976
+    Serial Number: ...
     Made in: 2018
   Basic Display Parameters & Features:
     Digital display
@@ -62,3 +60,37 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'LGD_MP1.0_'
     Alphanumeric Data String: 'LP129WT112684'
 Checksum: 0x37
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 55 05 a0 28 10 00 '........0.U..(..'
+  00 1c 01 04 a5 1b 12 78 03 ee 95 a3 54 4c 99 26 '.......x....TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 de 8a 40 78 b0 80 37 70 30 20 '........@x..7p0 '
+  55 04 12 b7 10 00 00 19 00 00 00 fd 00 1e 3c 00 'U.............<.'
+  00 24 04 0a 48 14 14 14 14 00 00 00 00 fe 00 4c '.$..H..........L'
+  47 44 5f 4d 50 31 2e 30 5f 0a 20 20 00 00 00 fe 'GD_MP1.0_.  ....'
+  00 4c 50 31 32 39 57 54 31 31 32 36 38 34 00 37 '.LP129WT112684.7'
+Checksum: 0x37
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: CVT block does not set preferred refresh rate.
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: Reserved bits of byte 14 are non-zero.
+  Display Range Limits: Reserved bits of byte 15 are non-zero.
+  Display Range Limits: Reserved bits of byte 16 are non-zero.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030e4480500000000
-001a0104a51d1178ea0c35a251469d27
-0c505400000001010101010101010101
-010101010101293680a070381f403020
-350026a51000001a1e2480a070381f40
-3020350026a51000001a000000fe004c
-4720446973706c61790a2020000000fe
-004c503133335746352d535044320056
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 48 05 00 00 00 00
+00 1a 01 04 a5 1d 11 78 ea 0c 35 a2 51 46 9d 27
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 29 36 80 a0 70 38 1f 40 30 20
+35 00 26 a5 10 00 00 1a 1e 24 80 a0 70 38 1f 40
+30 20 35 00 26 a5 10 00 00 1a 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 33 33 57 46 35 2d 53 50 44 32 00 56
 
 00 ff ff ff ff ff ff 00 30 e4 48 05 00 00 00 00
 00 1a 01 04 a5 1d 11 78 ea 0c 35 a2 51 46 9d 27
@@ -54,3 +52,32 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'LG Display'
     Alphanumeric Data String: 'LP133WF5-SPD2'
 Checksum: 0x56
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 48 05 00 00 00 00 '........0.H.....'
+  00 1a 01 04 a5 1d 11 78 ea 0c 35 a2 51 46 9d 27 '.......x..5.QF.''
+  0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 29 36 80 a0 70 38 1f 40 30 20 '......)6..p8.@0 '
+  35 00 26 a5 10 00 00 1a 1e 24 80 a0 70 38 1f 40 '5.&......$..p8.@'
+  30 20 35 00 26 a5 10 00 00 1a 00 00 00 fe 00 4c '0 5.&..........L'
+  47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe 'G Display.  ....'
+  00 4c 50 31 33 33 57 46 35 2d 53 50 44 32 00 56 '.LP133WF5-SPD2.V'
+Checksum: 0x56
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002889000000000000
-001a0104a51b127803be55a4524b9926
-0f505400000001010101010101010101
-0101010101015898b8a0b0d039707810
-4a0412b71000001ae079b8a0b0d03970
-78104a0412b71000001a000000fe004a
-444920202020202020202020000000fe
-004c504d3133304d333634202020005c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 28 89 00 00 00 00 00 00
+00 1a 01 04 a5 1b 12 78 03 be 55 a4 52 4b 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 58 98 b8 a0 b0 d0 39 70 78 10
+4a 04 12 b7 10 00 00 1a e0 79 b8 a0 b0 d0 39 70
+78 10 4a 04 12 b7 10 00 00 1a 00 00 00 fe 00 4a
+44 49 20 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4c 50 4d 31 33 30 4d 33 36 34 20 20 20 00 5c
 
 00 ff ff ff ff ff ff 00 28 89 00 00 00 00 00 00
 00 1a 01 04 a5 1b 12 78 03 be 55 a4 52 4b 99 26
@@ -54,3 +52,36 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'JDI          '
     Alphanumeric Data String: 'LPM130M364   '
 Checksum: 0x5c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 28 89 00 00 00 00 00 00 '........(.......'
+  00 1a 01 04 a5 1b 12 78 03 be 55 a4 52 4b 99 26 '.......x..U.RK.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 58 98 b8 a0 b0 d0 39 70 78 10 '......X.....9px.'
+  4a 04 12 b7 10 00 00 1a e0 79 b8 a0 b0 d0 39 70 'J........y....9p'
+  78 10 4a 04 12 b7 10 00 00 1a 00 00 00 fe 00 4a 'x.J............J'
+  44 49 20 20 20 20 20 20 20 20 20 20 00 00 00 fe 'DI          ....'
+  00 4c 50 4d 31 33 30 4d 33 36 34 20 20 20 00 5c '.LPM130M364   .\'
+Checksum: 0x5c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

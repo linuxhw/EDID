@@ -1,0 +1,82 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 f8 05 00 00 00 00
+00 1c 01 04 a5 25 17 78 02 49 c5 9e 5c 56 98 28
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ec 68 00 a0 a0 40 2e 60 30 20
+36 00 6e e5 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 37 30 57 51 31 2d 53 50 41 31 00 17
+
+00 ff ff ff ff ff ff 00 30 e4 f8 05 00 00 00 00
+00 1c 01 04 a5 25 17 78 02 49 c5 9e 5c 56 98 28
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ec 68 00 a0 a0 40 2e 60 30 20
+36 00 6e e5 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 37 30 57 51 31 2d 53 50 41 31 00 17
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 1528
+    Made in: 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 37 cm x 23 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6181, 0.3593
+    Green: 0.3378, 0.5947
+    Blue : 0.1591, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  2560x1600   59.993925 Hz  16:10    98.750 kHz    268.600000 MHz (366 mm x 229 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   37 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP170WQ1-SPA1'
+Checksum: 0x17
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 f8 05 00 00 00 00 '........0.......'
+  00 1c 01 04 a5 25 17 78 02 49 c5 9e 5c 56 98 28 '.....%.x.I..\V.('
+  0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 ec 68 00 a0 a0 40 2e 60 30 20 '.......h...@.`0 '
+  36 00 6e e5 10 00 00 19 00 00 00 00 00 00 00 00 '6.n.............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c '...............L'
+  47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe 'G Display.  ....'
+  00 4c 50 31 37 30 57 51 31 2d 53 50 41 31 00 17 '.LP170WQ1-SPA1..'
+Checksum: 0x17
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

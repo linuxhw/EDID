@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030e44c0300000000
-00160104901d10780203659558578e28
-1e505400000001010101010101010101
-0101010101011c1b567150000e302822
-530025a51000001ade1256a050001630
-2822530025a51000001a000000fe0057
-30374734813133335748320a00000000
-00004121940010000001010a20200077
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 4c 03 00 00 00 00
+00 16 01 04 90 1d 10 78 02 03 65 95 58 57 8e 28
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1c 1b 56 71 50 00 0e 30 28 22
+53 00 25 a5 10 00 00 1a de 12 56 a0 50 00 16 30
+28 22 53 00 25 a5 10 00 00 1a 00 00 00 fe 00 57
+30 37 47 34 81 31 33 33 57 48 32 0a 00 00 00 00
+00 00 41 21 94 00 10 00 00 01 01 0a 20 20 00 77
 
 00 ff ff ff ff ff ff 00 30 e4 4c 03 00 00 00 00
 00 16 01 04 90 1d 10 78 02 03 65 95 58 57 8e 28
@@ -53,3 +51,34 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'W07G4'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 94 00 10 00 00 01 01 0a 20 20 '....A!........  '
 Checksum: 0x77
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 4c 03 00 00 00 00 '........0.L.....'
+  00 16 01 04 90 1d 10 78 02 03 65 95 58 57 8e 28 '.......x..e.XW.('
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 1c 1b 56 71 50 00 0e 30 28 22 '........VqP..0("'
+  53 00 25 a5 10 00 00 1a de 12 56 a0 50 00 16 30 'S.%.......V.P..0'
+  28 22 53 00 25 a5 10 00 00 1a 00 00 00 fe 00 57 '("S.%..........W'
+  30 37 47 34 81 31 33 33 57 48 32 0a 00 00 00 00 '07G4.133WH2.....'
+  00 00 41 21 94 00 10 00 00 01 01 0a 20 20 00 77 '..A!........  .w'
+Checksum: 0x77
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

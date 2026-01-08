@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003061f12601010101
-2714010380372278ea5265ae4f32b226
-0d5054bfef8081c0818090408bc09500
-a940b300d100283c80a070b023403020
-360026582100001a000000fd0032551f
-5c11000a202020202020000000fc004c
-614369653532360a20202020000000ff
-00303933303037323355570a20200056
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 61 f1 26 01 01 01 01
+27 14 01 03 80 37 22 78 ea 52 65 ae 4f 32 b2 26
+0d 50 54 bf ef 80 81 c0 81 80 90 40 8b c0 95 00
+a9 40 b3 00 d1 00 28 3c 80 a0 70 b0 23 40 30 20
+36 00 26 58 21 00 00 1a 00 00 00 fd 00 32 55 1f
+5c 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+61 43 69 65 35 32 36 0a 20 20 20 20 00 00 00 ff
+00 30 39 33 30 30 37 32 33 55 57 0a 20 20 00 56
 
 00 ff ff ff ff ff ff 00 30 61 f1 26 01 01 01 01
 27 14 01 03 80 37 22 78 ea 52 65 ae 4f 32 b2 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LCA
     Model: 9969
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 39 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -73,7 +71,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-85 Hz V, 31-92 kHz H, max dotclock 170 MHz
     Display Product Name: 'LaCie526'
-    Display Product Serial Number: '09300723UW'
+    Display Product Serial Number: ...
 Checksum: 0x56
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 61 f1 26 01 01 01 01 '........0a.&....'
+  27 14 01 03 80 37 22 78 ea 52 65 ae 4f 32 b2 26 ''....7"x.Re.O2.&'
+  0d 50 54 bf ef 80 81 c0 81 80 90 40 8b c0 95 00 '.PT........@....'
+  a9 40 b3 00 d1 00 28 3c 80 a0 70 b0 23 40 30 20 '.@....(<..p.#@0 '
+  36 00 26 58 21 00 00 1a 00 00 00 fd 00 32 55 1f '6.&X!........2U.'
+  5c 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c '\...      .....L'
+  61 43 69 65 35 32 36 0a 20 20 20 20 00 00 00 ff 'aCie526.    ....'
+  00 30 39 33 30 30 37 32 33 55 57 0a 20 20 00 56 '.09300723UW.  .V'
+Checksum: 0x56
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

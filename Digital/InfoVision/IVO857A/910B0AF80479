@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0026cf7a8500000000
-001d0104a51d11780ade50a3544c9926
-0f505400000001010101010101010101
-010101010101383680a0703820401830
-3c0026a510000019000000fe004d3133
-334e564643205232200a000000030003
-267a042c55120807af00000000000003
-001951ff64a0f4120830f4010100001e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cf 7a 85 00 00 00 00
+00 1d 01 04 a5 1d 11 78 0a de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 38 36 80 a0 70 38 20 40 18 30
+3c 00 26 a5 10 00 00 19 00 00 00 fe 00 4d 31 33
+33 4e 56 46 43 20 52 32 20 0a 00 00 00 03 00 03
+26 7a 04 2c 55 12 08 07 af 00 00 00 00 00 00 03
+00 19 51 ff 64 a0 f4 12 08 30 f4 01 01 00 00 1e
 
 00 ff ff ff ff ff ff 00 26 cf 7a 85 00 00 00 00
 00 1d 01 04 a5 1d 11 78 0a de 50 a3 54 4c 99 26
@@ -51,3 +49,34 @@ Block 0, Base EDID:
     Manufacturer-Specified Display Descriptor (0x03): 00 03 00 03 26 7a 04 2c 55 12 08 07 af 00 00 00 '....&z.,U.......'
     Manufacturer-Specified Display Descriptor (0x03): 00 03 00 19 51 ff 64 a0 f4 12 08 30 f4 01 01 00 '....Q.d....0....'
 Checksum: 0x1e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cf 7a 85 00 00 00 00 '........&.z.....'
+  00 1d 01 04 a5 1d 11 78 0a de 50 a3 54 4c 99 26 '.......x..P.TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 38 36 80 a0 70 38 20 40 18 30 '......86..p8 @.0'
+  3c 00 26 a5 10 00 00 19 00 00 00 fe 00 4d 31 33 '<.&..........M13'
+  33 4e 56 46 43 20 52 32 20 0a 00 00 00 03 00 03 '3NVFC R2 .......'
+  26 7a 04 2c 55 12 08 07 af 00 00 00 00 00 00 03 '&z.,U...........'
+  00 19 51 ff 64 a0 f4 12 08 30 f4 01 01 00 00 1e '..Q.d....0......'
+Checksum: 0x1e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

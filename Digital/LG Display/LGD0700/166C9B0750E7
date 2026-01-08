@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030e4000701000000
-061f0104a0351e78e6bd00a655519c27
-0f505400000001010101010101010101
-010101010101023a801871382d40582c
-45000f282100001e000000fc00413534
-303157520a2020202020000000fd0039
-3e535310000a202020202020000000fe
-004c4d3233385746352d535347320017
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 00 07 01 00 00 00
+06 1f 01 04 a0 35 1e 78 e6 bd 00 a6 55 51 9c 27
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 fc 00 41 35 34
+30 31 57 52 0a 20 20 20 20 20 00 00 00 fd 00 39
+3e 53 53 10 00 0a 20 20 20 20 20 20 00 00 00 fe
+00 4c 4d 32 33 38 57 46 35 2d 53 53 47 32 00 17
 
 00 ff ff ff ff ff ff 00 30 e4 00 07 01 00 00 00
 06 1f 01 04 a0 35 1e 78 e6 bd 00 a6 55 51 9c 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LGD
     Model: 1792
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 6 of 2021
   Basic Display Parameters & Features:
     Digital display
@@ -55,3 +53,38 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 57-62 Hz V, 83-83 kHz H, max dotclock 160 MHz
     Alphanumeric Data String: 'LM238WF5-SSG2'
 Checksum: 0x17
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 00 07 01 00 00 00 '........0.......'
+  06 1f 01 04 a0 35 1e 78 e6 bd 00 a6 55 51 9c 27 '.....5.x....UQ.''
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 fc 00 41 35 34 'E..(!........A54'
+  30 31 57 52 0a 20 20 20 20 20 00 00 00 fd 00 39 '01WR.     .....9'
+  3e 53 53 10 00 0a 20 20 20 20 20 20 00 00 00 fe '>SS...      ....'
+  00 4c 4d 32 33 38 57 46 35 2d 53 53 47 32 00 17 '.LM238WF5-SSG2..'
+Checksum: 0x17
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 67.500 - 67.500 kHz (Monitor: 83.000 - 83.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030ae500501000000
-201d0104a5351d78220565a756529c27
-0f505400000001010101010101010101
-01010101010140388000713814403020
-84000f282100001e000000fd00334c36
-5a12000a202020202020000000ff004c
-4d3233385746352d53534531000000fc
-004c454e2d413535302d420a202000ad
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 50 05 01 00 00 00
+20 1d 01 04 a5 35 1d 78 22 05 65 a7 56 52 9c 27
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 40 38 80 00 71 38 14 40 30 20
+84 00 0f 28 21 00 00 1e 00 00 00 fd 00 33 4c 36
+5a 12 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c
+4d 32 33 38 57 46 35 2d 53 53 45 31 00 00 00 fc
+00 4c 45 4e 2d 41 35 35 30 2d 42 0a 20 20 00 ad
 
 00 ff ff ff ff ff ff 00 30 ae 50 05 01 00 00 00
 20 1d 01 04 a5 35 1d 78 22 05 65 a7 56 52 9c 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 1360
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 32 of 2019
   Basic Display Parameters & Features:
     Digital display
@@ -51,6 +49,37 @@ Block 0, Base EDID:
                  Vfront    8 Vsync   4 Vback    8 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 51-76 Hz V, 54-90 kHz H, max dotclock 180 MHz
-    Display Product Serial Number: 'LM238WF5-SSE1'
+    Display Product Serial Number: ...
     Display Product Name: 'LEN-A550-B'
 Checksum: 0xad
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 50 05 01 00 00 00 '........0.P.....'
+  20 1d 01 04 a5 35 1d 78 22 05 65 a7 56 52 9c 27 ' ....5.x".e.VR.''
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 40 38 80 00 71 38 14 40 30 20 '......@8..q8.@0 '
+  84 00 0f 28 21 00 00 1e 00 00 00 fd 00 33 4c 36 '...(!........3L6'
+  5a 12 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c 'Z...      .....L'
+  4d 32 33 38 57 46 35 2d 53 53 45 31 00 00 00 fc 'M238WF5-SSE1....'
+  00 4c 45 4e 2d 41 35 35 30 2d 42 0a 20 20 00 ad '.LEN-A550-B.  ..'
+Checksum: 0xad
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030e41e0200000000
-00130103801a0e780a08859558538c28
-23505400000001010101010101010101
-010101010101c61b5684500016303020
-350000901000001bc61b568450001630
-3020350000901000001b000000fe0035
-394a5754803131365748320a00000000
-00008402940100000002010a2020005b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 1e 02 00 00 00 00
+00 13 01 03 80 1a 0e 78 0a 08 85 95 58 53 8c 28
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c6 1b 56 84 50 00 16 30 30 20
+35 00 00 90 10 00 00 1b c6 1b 56 84 50 00 16 30
+30 20 35 00 00 90 10 00 00 1b 00 00 00 fe 00 35
+39 4a 57 54 80 31 31 36 57 48 32 0a 00 00 00 00
+00 00 84 02 94 01 00 00 00 02 01 0a 20 20 00 5b
 
 00 ff ff ff ff ff ff 00 30 e4 1e 02 00 00 00 00
 00 13 01 03 80 1a 0e 78 0a 08 85 95 58 53 8c 28
@@ -51,3 +49,31 @@ Block 0, Base EDID:
     Alphanumeric Data String: '59JWT'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 84 02 94 01 00 00 00 02 01 0a 20 20 '..............  '
 Checksum: 0x5b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 1e 02 00 00 00 00 '........0.......'
+  00 13 01 03 80 1a 0e 78 0a 08 85 95 58 53 8c 28 '.......x....XS.('
+  23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '#PT.............'
+  01 01 01 01 01 01 c6 1b 56 84 50 00 16 30 30 20 '........V.P..00 '
+  35 00 00 90 10 00 00 1b c6 1b 56 84 50 00 16 30 '5.........V.P..0'
+  30 20 35 00 00 90 10 00 00 1b 00 00 00 fe 00 35 '0 5............5'
+  39 4a 57 54 80 31 31 36 57 48 32 0a 00 00 00 00 '9JWT.116WH2.....'
+  00 00 84 02 94 01 00 00 00 02 01 0a 20 20 00 5b '............  .['
+Checksum: 0x5b
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

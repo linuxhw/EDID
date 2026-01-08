@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030e45505a0920400
-001e0104a51a117803ee95a3544c9926
-0f505400000001010101010101010101
-0101010101013f7fb0a0a02034703020
-3a0004ad10000019000000fd001e3c70
-7021010a202020202020000000fe004c
-47445f4d50312e325f0a2020000000fe
-004c5031323357513331323638340098
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 55 05 a0 92 04 00
+00 1e 01 04 a5 1a 11 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3f 7f b0 a0 a0 20 34 70 30 20
+3a 00 04 ad 10 00 00 19 00 00 00 fd 00 1e 3c 70
+70 21 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c
+47 44 5f 4d 50 31 2e 32 5f 0a 20 20 00 00 00 fe
+00 4c 50 31 32 33 57 51 33 31 32 36 38 34 00 98
 
 00 ff ff ff ff ff ff 00 30 e4 55 05 a0 92 04 00
 00 1e 01 04 a5 1a 11 78 03 ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LGD
     Model: 1365
-    Serial Number: 299680
+    Serial Number: ...
     Made in: 2020
   Basic Display Parameters & Features:
     Digital display
@@ -54,3 +52,32 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'LGD_MP1.2_'
     Alphanumeric Data String: 'LP123WQ312684'
 Checksum: 0x98
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 55 05 a0 92 04 00 '........0.U.....'
+  00 1e 01 04 a5 1a 11 78 03 ee 95 a3 54 4c 99 26 '.......x....TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 3f 7f b0 a0 a0 20 34 70 30 20 '......?.... 4p0 '
+  3a 00 04 ad 10 00 00 19 00 00 00 fd 00 1e 3c 70 ':.............<p'
+  70 21 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c 'p!..      .....L'
+  47 44 5f 4d 50 31 2e 32 5f 0a 20 20 00 00 00 fe 'GD_MP1.2_.  ....'
+  00 4c 50 31 32 33 57 51 33 31 32 36 38 34 00 98 '.LP123WQ312684..'
+Checksum: 0x98
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

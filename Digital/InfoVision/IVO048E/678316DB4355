@@ -1,0 +1,87 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cf 8e 04 00 00 00 00
+00 1e 01 04 95 1a 0e 78 e3 68 d0 93 58 56 93 27
+1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d5 1c 56 a6 50 00 23 30 28 20
+3c 00 00 90 10 00 00 19 11 17 56 a6 50 00 23 30
+28 20 3c 00 00 90 10 00 00 19 00 00 00 fe 00 49
+6e 66 6f 56 69 73 69 6f 6e 0a 20 20 00 00 00 fe
+00 4d 31 31 36 4e 57 52 36 20 52 35 20 0a 00 44
+
+00 ff ff ff ff ff ff 00 26 cf 8e 04 00 00 00 00
+00 1e 01 04 95 1a 0e 78 e3 68 d0 93 58 56 93 27
+1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d5 1c 56 a6 50 00 23 30 28 20
+3c 00 00 90 10 00 00 19 11 17 56 a6 50 00 23 30
+28 20 3c 00 00 90 10 00 00 19 00 00 00 fe 00 49
+6e 66 6f 56 69 73 69 6f 6e 0a 20 20 00 00 00 fe
+00 4d 31 31 36 4e 57 52 36 20 52 35 20 0a 00 44
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: IVO
+    Model: 1166
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5751, 0.3457
+    Green: 0.3378, 0.5742
+    Blue : 0.1552, 0.1064
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.998569 Hz 683:384   48.179 kHz     73.810000 MHz (256 mm x 144 mm)
+                 Hfront   40 Hsync  32 Hback   94 Hpol N
+                 Vfront    3 Vsync  12 Vback   20 Vpol N
+    DTD 2:  1366x768    48.000481 Hz 683:384   38.544 kHz     59.050000 MHz (256 mm x 144 mm)
+                 Hfront   40 Hsync  32 Hback   94 Hpol N
+                 Vfront    3 Vsync  12 Vback   20 Vpol N
+    Alphanumeric Data String: 'InfoVision'
+    Alphanumeric Data String: 'M116NWR6 R5 '
+Checksum: 0x44
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cf 8e 04 00 00 00 00 '........&.......'
+  00 1e 01 04 95 1a 0e 78 e3 68 d0 93 58 56 93 27 '.......x.h..XV.''
+  1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 d5 1c 56 a6 50 00 23 30 28 20 '........V.P.#0( '
+  3c 00 00 90 10 00 00 19 11 17 56 a6 50 00 23 30 '<.........V.P.#0'
+  28 20 3c 00 00 90 10 00 00 19 00 00 00 fe 00 49 '( <............I'
+  6e 66 6f 56 69 73 69 6f 6e 0a 20 20 00 00 00 fe 'nfoVision.  ....'
+  00 4d 31 31 36 4e 57 52 36 20 52 35 20 0a 00 44 '.M116NWR6 R5 ..D'
+Checksum: 0x44
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

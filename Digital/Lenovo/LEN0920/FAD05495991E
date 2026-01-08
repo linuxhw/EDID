@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030ae200901000000
-1e1b0104a5351d7822b0e0a654519c26
-11505401080001010101010101010101
-0101010101019434806470381e402c16
-45000f282100001e000000fd00324c1e
-5011000a202020202020000000ff004c
-544d323338484b30360a2020000000fc
-004c454e2d4d3932307a2d420a200082
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 20 09 01 00 00 00
+1e 1b 01 04 a5 35 1d 78 22 b0 e0 a6 54 51 9c 26
+11 50 54 01 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 94 34 80 64 70 38 1e 40 2c 16
+45 00 0f 28 21 00 00 1e 00 00 00 fd 00 32 4c 1e
+50 11 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c
+54 4d 32 33 38 48 4b 30 36 0a 20 20 00 00 00 fc
+00 4c 45 4e 2d 4d 39 32 30 7a 2d 42 0a 20 00 82
 
 00 ff ff ff ff ff ff 00 30 ae 20 09 01 00 00 00
 1e 1b 01 04 a5 35 1d 78 22 b0 e0 a6 54 51 9c 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 2336
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 30 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -53,6 +51,37 @@ Block 0, Base EDID:
                  Vfront    4 Vsync   5 Vback   21 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-80 kHz H, max dotclock 170 MHz
-    Display Product Serial Number: 'LTM238HK06'
+    Display Product Serial Number: ...
     Display Product Name: 'LEN-M920z-B'
 Checksum: 0x82
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 20 09 01 00 00 00 '........0. .....'
+  1e 1b 01 04 a5 35 1d 78 22 b0 e0 a6 54 51 9c 26 '.....5.x"...TQ.&'
+  11 50 54 01 08 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 94 34 80 64 70 38 1e 40 2c 16 '.......4.dp8.@,.'
+  45 00 0f 28 21 00 00 1e 00 00 00 fd 00 32 4c 1e 'E..(!........2L.'
+  50 11 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c 'P...      .....L'
+  54 4d 32 33 38 48 4b 30 36 0a 20 20 00 00 00 fc 'TM238HK06.  ....'
+  00 4c 45 4e 2d 4d 39 32 30 7a 2d 42 0a 20 00 82 '.LEN-M920z-B. ..'
+Checksum: 0x82
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

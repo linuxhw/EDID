@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0026cfdc8504000000
-001f0104a51d12780bde50a3544c9926
-0f505400000001010101010101010101
-010101010101323c80a070b023401830
-6c001eb310000019000000fe00583133
-334e56344d205230200a000000030003
-54d804647d120b199600000000000003
-001951ff64a0f4140b4af401010000fb
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cf dc 85 04 00 00 00
+00 1f 01 04 a5 1d 12 78 0b de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 32 3c 80 a0 70 b0 23 40 18 30
+6c 00 1e b3 10 00 00 19 00 00 00 fe 00 58 31 33
+33 4e 56 34 4d 20 52 30 20 0a 00 00 00 03 00 03
+54 d8 04 64 7d 12 0b 19 96 00 00 00 00 00 00 03
+00 19 51 ff 64 a0 f4 14 0b 4a f4 01 01 00 00 fb
 
 00 ff ff ff ff ff ff 00 26 cf dc 85 04 00 00 00
 00 1f 01 04 a5 1d 12 78 0b de 50 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IVO
     Model: 34268
-    Serial Number: 4
+    Serial Number: ...
     Made in: 2021
   Basic Display Parameters & Features:
     Digital display
@@ -54,4 +52,34 @@ Block 0, Base EDID:
     Manufacturer-Specified Display Descriptor (0x03): 00 03 00 19 51 ff 64 a0 f4 14 0b 4a f4 01 01 00 '....Q.d....J....'
 Checksum: 0xfb
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cf dc 85 04 00 00 00 '........&.......'
+  00 1f 01 04 a5 1d 12 78 0b de 50 a3 54 4c 99 26 '.......x..P.TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 32 3c 80 a0 70 b0 23 40 18 30 '......2<..p.#@.0'
+  6c 00 1e b3 10 00 00 19 00 00 00 fe 00 58 31 33 'l............X13'
+  33 4e 56 34 4d 20 52 30 20 0a 00 00 00 03 00 03 '3NV4M R0 .......'
+  54 d8 04 64 7d 12 0b 19 96 00 00 00 00 00 00 03 'T..d}...........'
+  00 19 51 ff 64 a0 f4 14 0b 4a f4 01 01 00 00 fb '..Q.d....J......'
+Checksum: 0xfb
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

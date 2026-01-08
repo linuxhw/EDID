@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0030e469075f070000
-00200104a5221378072e05a5544c9925
-0e505400000001010101010101010101
-0101010101012e3680a070381f403020
-350058c21000001a1b2480a070381f40
-3020350058c21000001a000000000000
-00000000000000000000000000000002
-000c26ff143cc80a0b18c800000001e2
-7020790200250109ca1d02ca1d02283c
-80810013721a00000301283c00006051
-60513c00000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000005a90
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 69 07 5f 07 00 00
+00 20 01 04 a5 22 13 78 07 2e 05 a5 54 4c 99 25
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2e 36 80 a0 70 38 1f 40 30 20
+35 00 58 c2 10 00 00 1a 1b 24 80 a0 70 38 1f 40
+30 20 35 00 58 c2 10 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 26 ff 14 3c c8 0a 0b 18 c8 00 00 00 01 e2
+
+70 20 79 02 00 25 01 09 ca 1d 02 ca 1d 02 28 3c
+80 81 00 13 72 1a 00 00 03 01 28 3c 00 00 60 51
+60 51 3c 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 5a 90
 
 00 ff ff ff ff ff ff 00 30 e4 69 07 5f 07 00 00
 00 20 01 04 a5 22 13 78 07 2e 05 a5 54 4c 99 25
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LGD
     Model: 1897
-    Serial Number: 1887
+    Serial Number: ...
     Made in: 2022
   Basic Display Parameters & Features:
     Digital display
@@ -99,3 +98,69 @@ Block 1, DisplayID Extension Block:
     Unknown: 0x60 0x51
   Checksum: 0x5a
 Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 69 07 5f 07 00 00 '........0.i._...'
+  00 20 01 04 a5 22 13 78 07 2e 05 a5 54 4c 99 25 '. ...".x....TL.%'
+  0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 2e 36 80 a0 70 38 1f 40 30 20 '.......6..p8.@0 '
+  35 00 58 c2 10 00 00 1a 1b 24 80 a0 70 38 1f 40 '5.X......$..p8.@'
+  30 20 35 00 58 c2 10 00 00 1a 00 00 00 00 00 00 '0 5.X...........'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
+  00 0c 26 ff 14 3c c8 0a 0b 18 c8 00 00 00 01 e2 '..&..<..........'
+Checksum: 0xe2
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 138699 kHz
+    Maximum Pixel Clock: 138699 kHz
+    Minimum Vertical Refresh Rate: 40 Hz
+    Maximum Vertical Refresh Rate: 60 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 3.1
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 96 (400.000 cd/m^2)
+    Minimum luminance: 81 (0.404 cd/m^2)
+    Unknown: 0x60 0x51
+  Checksum: 0x5a
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Range Limits Descriptor.
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+  DisplayID: Missing DisplayID Type VII Detailed Timing Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

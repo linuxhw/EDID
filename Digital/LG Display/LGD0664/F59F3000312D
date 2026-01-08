@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0030e4640600000000
-001d0104a526157807eb95a3544b9e26
-0f505400000001010101010101010101
-0101010101019c3680a0703828403020
-35007ed71000001a0000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000002
-000c33ff0a3c964e132e960000000176
-70137900000301148b0401847f074f00
-2f801f0037041e000200040000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000004690
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 64 06 00 00 00 00
+00 1d 01 04 a5 26 15 78 07 eb 95 a3 54 4b 9e 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9c 36 80 a0 70 38 28 40 30 20
+35 00 7e d7 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 33 ff 0a 3c 96 4e 13 2e 96 00 00 00 01 76
+
+70 13 79 00 00 03 01 14 8b 04 01 84 7f 07 4f 00
+2f 80 1f 00 37 04 1e 00 02 00 04 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 46 90
 
 00 ff ff ff ff ff ff 00 30 e4 64 06 00 00 00 00
 00 1d 01 04 a5 26 15 78 07 eb 95 a3 54 4b 9e 26
@@ -84,3 +83,56 @@ Block 1, DisplayID Extension Block:
                Vfront    3 Vsync   5 Vback   23 Vpol N
   Checksum: 0x46
 Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 64 06 00 00 00 00 '........0.d.....'
+  00 1d 01 04 a5 26 15 78 07 eb 95 a3 54 4b 9e 26 '.....&.x....TK.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 9c 36 80 a0 70 38 28 40 30 20 '.......6..p8(@0 '
+  35 00 7e d7 10 00 00 1a 00 00 00 00 00 00 00 00 '5.~.............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
+  00 0c 33 ff 0a 3c 96 4e 13 2e 96 00 00 00 01 76 '..3..<.N.......v'
+Checksum: 0x76
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  1920x1080  300.180018 Hz  16:9    333.500 kHz    667.000000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback    0 Hpol P
+               Vfront    3 Vsync   5 Vback   23 Vpol N
+  Checksum: 0x46
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Range Limits Descriptor.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+  Video Timing Modes Type 1 - Detailed Timings Data Block: 0 or negative horizontal back porch.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Video Timing Modes Type 1 - Detailed Timings Data Block: 0 or negative horizontal back porch.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

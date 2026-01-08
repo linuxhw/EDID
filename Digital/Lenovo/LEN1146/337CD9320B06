@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030ae461101010101
-2812010380301e78eeee95a3544c9926
-0f5054adcf003146714f81809500950f
-a900b30001017c2e90a0601a1e403020
-3600d9281100001a000000fc004c3232
-34307077440a20202020000000fd0032
-4b1e4b0f000a202020202020000000ff
-0036563630363330390a2020202000a6
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 46 11 01 01 01 01
+28 12 01 03 80 30 1e 78 ee ee 95 a3 54 4c 99 26
+0f 50 54 ad cf 00 31 46 71 4f 81 80 95 00 95 0f
+a9 00 b3 00 01 01 7c 2e 90 a0 60 1a 1e 40 30 20
+36 00 d9 28 11 00 00 1a 00 00 00 fc 00 4c 32 32
+34 30 70 77 44 0a 20 20 20 20 00 00 00 fd 00 32
+4b 1e 4b 0f 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 36 56 36 30 36 33 30 39 0a 20 20 20 20 00 a6
 
 00 ff ff ff ff ff ff 00 30 ae 46 11 01 01 01 01
 28 12 01 03 80 30 1e 78 ee ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 4422
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 40 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -69,7 +67,33 @@ Block 0, Base EDID:
     Display Product Name: 'L2240pwD'
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-75 kHz H, max dotclock 150 MHz
-    Display Product Serial Number: '6V606309'
+    Display Product Serial Number: ...
 Checksum: 0xa6
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 46 11 01 01 01 01 '........0.F.....'
+  28 12 01 03 80 30 1e 78 ee ee 95 a3 54 4c 99 26 '(....0.x....TL.&'
+  0f 50 54 ad cf 00 31 46 71 4f 81 80 95 00 95 0f '.PT...1FqO......'
+  a9 00 b3 00 01 01 7c 2e 90 a0 60 1a 1e 40 30 20 '......|...`..@0 '
+  36 00 d9 28 11 00 00 1a 00 00 00 fc 00 4c 32 32 '6..(.........L22'
+  34 30 70 77 44 0a 20 20 20 20 00 00 00 fd 00 32 '40pwD.    .....2'
+  4b 1e 4b 0f 00 0a 20 20 20 20 20 20 00 00 00 ff 'K.K...      ....'
+  00 36 56 36 30 36 33 30 39 0a 20 20 20 20 00 a6 '.6V606309.    ..'
+Checksum: 0xa6
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 30.000 - 75.000 kHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

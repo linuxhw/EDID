@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030e401d400000000
-00120103802517780a56359d5a528f27
-1f505400000001010101010101010101
-010101010101603b80a070b023403020
-36006fe610000019603b80a070b02340
-302036006fe610000019000000fe0050
-3736394a803137315755310a000000fe
-001e2d373e5a77a3ff02010a2020002c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 01 d4 00 00 00 00
+00 12 01 03 80 25 17 78 0a 56 35 9d 5a 52 8f 27
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 60 3b 80 a0 70 b0 23 40 30 20
+36 00 6f e6 10 00 00 19 60 3b 80 a0 70 b0 23 40
+30 20 36 00 6f e6 10 00 00 19 00 00 00 fe 00 50
+37 36 39 4a 80 31 37 31 57 55 31 0a 00 00 00 fe
+00 1e 2d 37 3e 5a 77 a3 ff 02 01 0a 20 20 00 2c
 
 00 ff ff ff ff ff ff 00 30 e4 01 d4 00 00 00 00
 00 12 01 03 80 25 17 78 0a 56 35 9d 5a 52 8f 27
@@ -58,3 +56,30 @@ Block 0, Base EDID:
       LVDS Channels: 2
       Panel Self Test Present
 Checksum: 0x2c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 01 d4 00 00 00 00 '........0.......'
+  00 12 01 03 80 25 17 78 0a 56 35 9d 5a 52 8f 27 '.....%.x.V5.ZR.''
+  1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 60 3b 80 a0 70 b0 23 40 30 20 '......`;..p.#@0 '
+  36 00 6f e6 10 00 00 19 60 3b 80 a0 70 b0 23 40 '6.o.....`;..p.#@'
+  30 20 36 00 6f e6 10 00 00 19 00 00 00 fe 00 50 '0 6.o..........P'
+  37 36 39 4a 80 31 37 31 57 55 31 0a 00 00 00 fe '769J.171WU1.....'
+  00 1e 2d 37 3e 5a 77 a3 ff 02 01 0a 20 20 00 2c '..-7>Zw.....  .,'
+Checksum: 0x2c
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0030e4770700000000
-00210104a51f147807ff05a3544c9825
-0e505400000001010101010101010101
-010101010101f07b80a070b047403020
-360038c31000001a000000fd001e7899
-9920010a202020202020000000fe0048
-50584a4e803134355755310a00000000
-0002410cb2000100000b410a20200184
-70207902002000133ce6247707000000
-000017073134355755310a21001d320c
-9f078007b004883dca54cdd49852120e
-024554d05fd05f003412782600090200
-000000000100002200145fd704857f07
-9f002f801f00af044600020005002501
-095fd7045fd7041e788081000be30580
-00e60601016a6a390000000000006b90
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 77 07 00 00 00 00
+00 21 01 04 a5 1f 14 78 07 ff 05 a3 54 4c 98 25
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 f0 7b 80 a0 70 b0 47 40 30 20
+36 00 38 c3 10 00 00 1a 00 00 00 fd 00 1e 78 99
+99 20 01 0a 20 20 20 20 20 20 00 00 00 fe 00 48
+50 58 4a 4e 80 31 34 35 57 55 31 0a 00 00 00 00
+00 02 41 0c b2 00 01 00 00 0b 41 0a 20 20 01 84
+
+70 20 79 02 00 20 00 13 3c e6 24 77 07 00 00 00
+00 00 17 07 31 34 35 57 55 31 0a 21 00 1d 32 0c
+9f 07 80 07 b0 04 88 3d ca 54 cd d4 98 52 12 0e
+02 45 54 d0 5f d0 5f 00 34 12 78 26 00 09 02 00
+00 00 00 00 01 00 00 22 00 14 5f d7 04 85 7f 07
+9f 00 2f 80 1f 00 af 04 46 00 02 00 05 00 25 01
+09 5f d7 04 5f d7 04 1e 78 80 81 00 0b e3 05 80
+00 e6 06 01 01 6a 6a 39 00 00 00 00 00 00 6b 90
 
 00 ff ff ff ff ff ff 00 30 e4 77 07 00 00 00 00
 00 21 01 04 a5 1f 14 78 07 ff 05 a3 54 4c 98 25
@@ -128,3 +127,102 @@ Block 1, DisplayID Extension Block:
     Desired content min luminance: 57 (0.248 cd/m^2)
   Checksum: 0x6b
 Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 77 07 00 00 00 00 '........0.w.....'
+  00 21 01 04 a5 1f 14 78 07 ff 05 a3 54 4c 98 25 '.!.....x....TL.%'
+  0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 f0 7b 80 a0 70 b0 47 40 30 20 '.......{..p.G@0 '
+  36 00 38 c3 10 00 00 1a 00 00 00 fd 00 1e 78 99 '6.8...........x.'
+  99 20 01 0a 20 20 20 20 20 20 00 00 00 fe 00 48 '. ..      .....H'
+  50 58 4a 4e 80 31 34 35 57 55 31 0a 00 00 00 00 'PXJN.145WU1.....'
+  00 02 41 0c b2 00 01 00 00 0b 41 0a 20 20 01 84 '..A.......A.  ..'
+Checksum: 0x84
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Product Identification Data Block (0x20), OUI 3C-E6-24:
+    Product Code: 1911
+    Year of Manufacture: 2023
+    Product ID: 145WU1
+
+  Display Parameters Data Block (0x21):
+    Image size: 312.2 mm x 195.1 mm
+    Display native pixel format: 1920x1200
+    Scan Orientation: Left to Right, Top to Bottom
+    Luminance Information: Guidance for the Source device
+    Color Information: CIE 1931
+    Audio Speaker Information: not integrated
+    Native Color Chromaticity:
+      Primary #1:  (0.639893, 0.331055)
+      Primary #2:  (0.300049, 0.596924)
+      Primary #3:  (0.145020, 0.054932)
+      White Point: (0.312988, 0.329102)
+    Native Maximum Luminance (Full Coverage): 500.000000 cd/m^2
+    Native Maximum Luminance (10% Rectangular Coverage): 500.000000 cd/m^2
+    Native Minimum Luminance: 0.250000 cd/m^2
+    Native Color Depth: 10 bpc
+    Display Device Technology: Active Matrix LCD
+    Native Gamma EOTF: 2.20
+  Display Interface Features Data Block:
+    Supported bpc for RGB encoding: 8
+    Supported color space and EOTF standard combination 1: sRGB
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  1920x1200  120.014525 Hz  16:10   152.538 kHz    317.280000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync   6 Vback   62 Vpol N
+  Dynamic Video Timing Range Limits Data Block:
+    Minimum Pixel Clock: 317280 kHz
+    Maximum Pixel Clock: 317280 kHz
+    Minimum Vertical Refresh Rate: 30 Hz
+    Maximum Vertical Refresh Rate: 120 Hz
+    Seamless Dynamic Video Timing Support: Yes
+  CTA-861 DisplayID Data Block:
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 106 (496.743 cd/m^2)
+    Desired content max frame-average luminance: 106 (496.743 cd/m^2)
+    Desired content min luminance: 57 (0.248 cd/m^2)
+  Checksum: 0x6b
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, DisplayID Extension Block:
+  Product Identification Data Block (0x20), OUI 3C-E6-24: Unknown OUI 3C-E6-24.
+Block 3, DisplayID Extension Block:
+  Product Identification Data Block (0x20), OUI 3C-E6-24: Unknown OUI 3C-E6-24.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Alphanumeric Data String: Non-printable character.
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+  Product Identification Data Block (0x20), OUI 3C-E6-24: Product Identification Data Block (0x20), OUI 3C-E6-24 is required to be the first DisplayID Data Block.
+  Display Parameters Data Block (0x21): Duplicate Display Parameters Data Block.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

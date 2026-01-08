@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0026cfab0500000000
-00200104b51f147803de50a3544c9926
-0f505400000001010101010101010101
-010101010101b29f00a0a04089631830
-760a38c310000019b29f00a0a0404660
-18303c0038c310000019000000fd0028
-5a969629010a202020202020000000fe
-004d3134354e574b31205230200a00ad
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 cf ab 05 00 00 00 00
+00 20 01 04 b5 1f 14 78 03 de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b2 9f 00 a0 a0 40 89 63 18 30
+76 0a 38 c3 10 00 00 19 b2 9f 00 a0 a0 40 46 60
+18 30 3c 00 38 c3 10 00 00 19 00 00 00 fd 00 28
+5a 96 96 29 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4d 31 34 35 4e 57 4b 31 20 52 30 20 0a 00 ad
 
 00 ff ff ff ff ff ff 00 26 cf ab 05 00 00 00 00
 00 20 01 04 b5 1f 14 78 03 de 50 a3 54 4c 99 26
@@ -55,3 +53,34 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 40-90 Hz V, 150-150 kHz H, max dotclock 410 MHz
     Alphanumeric Data String: 'M145NWK1 R0 '
 Checksum: 0xad
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 cf ab 05 00 00 00 00 '........&.......'
+  00 20 01 04 b5 1f 14 78 03 de 50 a3 54 4c 99 26 '. .....x..P.TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 b2 9f 00 a0 a0 40 89 63 18 30 '...........@.c.0'
+  76 0a 38 c3 10 00 00 19 b2 9f 00 a0 a0 40 46 60 'v.8..........@F`'
+  18 30 3c 00 38 c3 10 00 00 19 00 00 00 fd 00 28 '.0<.8..........('
+  5a 96 96 29 01 0a 20 20 20 20 20 20 00 00 00 fe 'Z..)..      ....'
+  00 4d 31 34 35 4e 57 4b 31 20 52 30 20 0a 00 ad '.M145NWK1 R0 ...'
+Checksum: 0xad
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

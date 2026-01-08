@@ -1,0 +1,84 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 9e 03 00 00 00 00
+00 16 01 04 a0 1a 0e 78 0a 4f 75 98 5b 55 90 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3e 1c 56 a0 50 00 16 30 24 28
+35 00 00 90 10 00 00 19 d4 12 56 a0 50 00 16 30
+24 28 35 00 00 90 10 00 00 19 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 26 ff 0a 3c c8 12 09 1f c8 00 00 00 00 48
+
+00 ff ff ff ff ff ff 00 30 e4 9e 03 00 00 00 00
+00 16 01 04 a0 1a 0e 78 0a 4f 75 98 5b 55 90 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3e 1c 56 a0 50 00 16 30 24 28
+35 00 00 90 10 00 00 19 d4 12 56 a0 50 00 16 30
+24 28 35 00 00 90 10 00 00 19 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 26 ff 0a 3c c8 12 09 1f c8 00 00 00 00 48
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 926
+    Made in: 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    Digital interface is not defined
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5947, 0.3554
+    Green: 0.3349, 0.5654
+    Blue : 0.1533, 0.1201
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.973124 Hz 683:384   47.379 kHz     72.300000 MHz (256 mm x 144 mm)
+                 Hfront   36 Hsync  40 Hback   84 Hpol N
+                 Vfront    3 Vsync   5 Vback   14 Vpol N
+    DTD 2:  1366x768    39.982083 Hz 683:384   31.586 kHz     48.200000 MHz (256 mm x 144 mm)
+                 Hfront   36 Hsync  40 Hback   84 Hpol N
+                 Vfront    3 Vsync   5 Vback   14 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 26 ff 0a 3c c8 12 09 1f c8 00 00 00 '....&..<........'
+Checksum: 0x48
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 9e 03 00 00 00 00 '........0.......'
+  00 16 01 04 a0 1a 0e 78 0a 4f 75 98 5b 55 90 27 '.......x.Ou.[U.''
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 3e 1c 56 a0 50 00 16 30 24 28 '......>.V.P..0$('
+  35 00 00 90 10 00 00 19 d4 12 56 a0 50 00 16 30 '5.........V.P..0'
+  24 28 35 00 00 90 10 00 00 19 00 00 00 00 00 00 '$(5.............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
+  00 0c 26 ff 0a 3c c8 12 09 1f c8 00 00 00 00 48 '..&..<.........H'
+Checksum: 0x48
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

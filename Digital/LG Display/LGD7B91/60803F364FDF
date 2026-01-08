@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030e4917b00000000
-00130103802517780a00059559569029
-1f505400000001010101010101010101
-010101010101622aa0f851841e305050
-33006fe6100000190000000000000000
-00000000000000000000000000fe004c
-4720446973706c61790a2020000000fe
-004c503137315750392d544c42310000
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 91 7b 00 00 00 00
+00 13 01 03 80 25 17 78 0a 00 05 95 59 56 90 29
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 62 2a a0 f8 51 84 1e 30 50 50
+33 00 6f e6 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 37 31 57 50 39 2d 54 4c 42 31 00 00
 
 00 ff ff ff ff ff ff 00 30 e4 91 7b 00 00 00 00
 00 13 01 03 80 25 17 78 0a 00 05 95 59 56 90 29
@@ -49,3 +47,31 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'LG Display'
     Alphanumeric Data String: 'LP171WP9-TLB1'
 Checksum: 0x00
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 91 7b 00 00 00 00 '........0..{....'
+  00 13 01 03 80 25 17 78 0a 00 05 95 59 56 90 29 '.....%.x....YV.)'
+  1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 62 2a a0 f8 51 84 1e 30 50 50 '......b*..Q..0PP'
+  33 00 6f e6 10 00 00 19 00 00 00 00 00 00 00 00 '3.o.............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c '...............L'
+  47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe 'G Display.  ....'
+  00 4c 50 31 37 31 57 50 39 2d 54 4c 42 31 00 00 '.LP171WP9-TLB1..'
+Checksum: 0x00
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

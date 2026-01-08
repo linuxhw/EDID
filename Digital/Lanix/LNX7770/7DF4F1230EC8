@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0031d8707701010101
-231a010380351e780e0565a756529c27
-0f50543fed00b300a9c0950090408180
-814081c0714f011d007251d01e206e28
-55000f282100001e000000ff00434146
-45424142452020202020000000fd0032
-4b0f5211000a202020202020000000fc
-0050694b564d0a20202020202020018d
-020317314a841f13223e213d203c0167
-030c001000802d011d007251d01e206e
-2855000f282100001e00000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000015
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 31 d8 70 77 01 01 01 01
+23 1a 01 03 80 35 1e 78 0e 05 65 a7 56 52 9c 27
+0f 50 54 3f ed 00 b3 00 a9 c0 95 00 90 40 81 80
+81 40 81 c0 71 4f 01 1d 00 72 51 d0 1e 20 6e 28
+55 00 0f 28 21 00 00 1e 00 00 00 ff 00 43 41 46
+45 42 41 42 45 20 20 20 20 20 00 00 00 fd 00 32
+4b 0f 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 69 4b 56 4d 0a 20 20 20 20 20 20 20 01 8d
+
+02 03 17 31 4a 84 1f 13 22 3e 21 3d 20 3c 01 67
+03 0c 00 10 00 80 2d 01 1d 00 72 51 d0 1e 20 6e
+28 55 00 0f 28 21 00 00 1e 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 15
 
 00 ff ff ff ff ff ff 00 31 d8 70 77 01 01 01 01
 23 1a 01 03 80 35 1e 78 0e 05 65 a7 56 52 9c 27
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LNX
     Model: 30576
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 35 of 2016
   Basic Display Parameters & Features:
     Digital display
@@ -84,7 +83,7 @@ Block 0, Base EDID:
     DTD 1:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (527 mm x 296 mm)
                  Hfront  110 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
-    Display Product Serial Number: 'CAFEBABE     '
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 15-82 kHz H, max dotclock 170 MHz
     Display Product Name: 'PiKVM'
@@ -118,3 +117,86 @@ Block 1, CTA-861 Extension Block:
                  Hfront  110 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
 Checksum: 0x15  Unused space in Extension Block: 86 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 31 d8 70 77 01 01 01 01 '........1.pw....'
+  23 1a 01 03 80 35 1e 78 0e 05 65 a7 56 52 9c 27 '#....5.x..e.VR.''
+  0f 50 54 3f ed 00 b3 00 a9 c0 95 00 90 40 81 80 '.PT?.........@..'
+  81 40 81 c0 71 4f 01 1d 00 72 51 d0 1e 20 6e 28 '.@..qO...rQ.. n('
+  55 00 0f 28 21 00 00 1e 00 00 00 ff 00 43 41 46 'U..(!........CAF'
+  45 42 41 42 45 20 20 20 20 20 00 00 00 fd 00 32 'EBABE     .....2'
+  4b 0f 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
+  00 50 69 4b 56 4d 0a 20 20 20 20 20 20 20 01 8d '.PiKVM.       ..'
+Checksum: 0x8d
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  62:  1280x720    30.000000 Hz  16:9     22.500 kHz     74.250000 MHz
+    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  61:  1280x720    25.000000 Hz  16:9     18.750 kHz     74.250000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  60:  1280x720    24.000000 Hz  16:9     18.000 kHz     59.400000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 225 MHz
+  Detailed Timing Descriptors:
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (527 mm x 296 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0x15  Unused space in Extension Block: 86 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Serial Number: ...
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 34.
+  Video Data Block: Duplicate VIC 62.
+  Video Data Block: Duplicate VIC 33.
+  Video Data Block: Duplicate VIC 61.
+  Video Data Block: Duplicate VIC 32.
+  Video Data Block: Duplicate VIC 60.
+  Video Data Block: Duplicate VIC 1.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.025 Hz (Monitor: 50.000 - 75.000 Hz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

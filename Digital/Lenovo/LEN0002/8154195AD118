@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030ae020004100000
-091b0104a5301b781b2cc5a45650a128
-0f505400000001010101010101010101
-010101010101023a801871382d40582c
-4500dc0b1100001e000000fc004c454e
-2d53342f56342d432020000000fd0039
-3e1e5a14350055502100001a000000ff
-004c4d3231355746412d535341310076
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 02 00 04 10 00 00
+09 1b 01 04 a5 30 1b 78 1b 2c c5 a4 56 50 a1 28
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0b 11 00 00 1e 00 00 00 fc 00 4c 45 4e
+2d 53 34 2f 56 34 2d 43 20 20 00 00 00 fd 00 39
+3e 1e 5a 14 35 00 55 50 21 00 00 1a 00 00 00 ff
+00 4c 4d 32 31 35 57 46 41 2d 53 53 41 31 00 76
 
 00 ff ff ff ff ff ff 00 30 ae 02 00 04 10 00 00
 09 1b 01 04 a5 30 1b 78 1b 2c c5 a4 56 50 a1 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 2
-    Serial Number: 4100
+    Serial Number: ...
     Made in: week 9 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -52,5 +50,34 @@ Block 0, Base EDID:
     Display Product Name: 'LEN-S4/V4-C  '
     Display Range Limits:
       Monitor ranges (Unknown (0x35)): 57-62 Hz V, 30-90 kHz H, max dotclock 200 MHz
-    Display Product Serial Number: 'LM215WFA-SSA1'
+    Display Product Serial Number: ...
 Checksum: 0x76
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 02 00 04 10 00 00 '........0.......'
+  09 1b 01 04 a5 30 1b 78 1b 2c c5 a4 56 50 a1 28 '.....0.x.,..VP.('
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dc 0b 11 00 00 1e 00 00 00 fc 00 4c 45 4e 'E............LEN'
+  2d 53 34 2f 56 34 2d 43 20 20 00 00 00 fd 00 39 '-S4/V4-C  .....9'
+  3e 1e 5a 14 35 00 55 50 21 00 00 1a 00 00 00 ff '>.Z.5.UP!.......'
+  00 4c 4d 32 31 35 57 46 41 2d 53 53 41 31 00 76 '.LM215WFA-SSA1.v'
+Checksum: 0x76
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Name: One or more trailing spaces.
+  Display Range Limits: Unknown range class (0x35).
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

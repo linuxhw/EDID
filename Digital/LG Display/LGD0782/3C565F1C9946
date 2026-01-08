@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030e4820700000000
-00210104b51e137807bf85a5544b9824
-0e505400000001010101010101010101
-010101010101b6c840a0b0084e703020
-36002ebd1000001a0c6b40a0b0084e70
-302036002ebd1000001a000000fe0031
-4d335736803134305754310a00000000
-000341399e000100000b410a20200018
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 82 07 00 00 00 00
+00 21 01 04 b5 1e 13 78 07 bf 85 a5 54 4b 98 24
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b6 c8 40 a0 b0 08 4e 70 30 20
+36 00 2e bd 10 00 00 1a 0c 6b 40 a0 b0 08 4e 70
+30 20 36 00 2e bd 10 00 00 1a 00 00 00 fe 00 31
+4d 33 57 36 80 31 34 30 57 54 31 0a 00 00 00 00
+00 03 41 39 9e 00 01 00 00 0b 41 0a 20 20 00 18
 
 00 ff ff ff ff ff ff 00 30 e4 82 07 00 00 00 00
 00 21 01 04 b5 1e 13 78 07 bf 85 a5 54 4b 98 24
@@ -56,4 +54,35 @@ Block 0, Base EDID:
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 03 41 39 9e 00 01 00 00 0b 41 0a 20 20 '....A9......A.  '
 Checksum: 0x18
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 82 07 00 00 00 00 '........0.......'
+  00 21 01 04 b5 1e 13 78 07 bf 85 a5 54 4b 98 24 '.!.....x....TK.$'
+  0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 b6 c8 40 a0 b0 08 4e 70 30 20 '........@...Np0 '
+  36 00 2e bd 10 00 00 1a 0c 6b 40 a0 b0 08 4e 70 '6........k@...Np'
+  30 20 36 00 2e bd 10 00 00 1a 00 00 00 fe 00 31 '0 6............1'
+  4d 33 57 36 80 31 34 30 57 54 31 0a 00 00 00 00 'M3W6.140WT1.....'
+  00 03 41 39 9e 00 01 00 00 0b 41 0a 20 20 00 18 '..A9......A.  ..'
+Checksum: 0x18
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

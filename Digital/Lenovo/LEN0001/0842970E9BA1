@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0030ae010088888800
-6c210104a50c1378080dc9a057479827
-12484c00000001010101010101010101
-01010101010100000010000000000000
-00000000000000000000001000000000
-00000000000000000000000000fd0832
-96142d46000a202020202020000000fc
-00476f20446973706c61790a202001ff
-70122b0000030128a49a0084af04ef00
-89801d007f07720150810300a49a0084
-af04ef0089801d007f07650a438a0300
-f1000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000090
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 01 00 88 88 88 00
+6c 21 01 04 a5 0c 13 78 08 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 10 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fd 08 32
+96 14 2d 46 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 47 6f 20 44 69 73 70 6c 61 79 0a 20 20 01 ff
+
+70 12 2b 00 00 03 01 28 a4 9a 00 84 af 04 ef 00
+89 80 1d 00 7f 07 72 01 50 81 03 00 a4 9a 00 84
+af 04 ef 00 89 80 1d 00 7f 07 65 0a 43 8a 03 00
+f1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 90
 
 00 ff ff ff ff ff ff 00 30 ae 01 00 88 88 88 00
 6c 21 01 04 a5 0c 13 78 08 0d c9 a0 57 47 98 27
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 1
-    Serial Number: 8947848
+    Serial Number: ...
     Made in: week 108 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -85,3 +84,55 @@ Block 1, DisplayID Extension Block:
                Vfront 2628 Vsync   4 Vback   30 Vpol P
   Checksum: 0xf1
 Checksum: 0x90  Unused space in Extension Block: 78 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 01 00 88 88 88 00 '........0.......'
+  6c 21 01 04 a5 0c 13 78 08 0d c9 a0 57 47 98 27 'l!.....x....WG.''
+  12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01 '.HL.............'
+  01 01 01 01 01 01 00 00 00 10 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 10 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fd 08 32 '...............2'
+  96 14 2d 46 00 0a 20 20 20 20 20 20 00 00 00 fc '..-F..      ....'
+  00 47 6f 20 44 69 73 70 6c 61 79 0a 20 20 01 ff '.Go Display.  ..'
+Checksum: 0xff
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  1200x1920  120.001576 Hz  16:9    274.924 kHz    395.890000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront  138 Hsync  30 Hback   72 Hpol P
+               Vfront  337 Vsync   4 Vback   30 Vpol P
+    DTD:  1200x1920   60.000788 Hz  16:9    274.924 kHz    395.890000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront  138 Hsync  30 Hback   72 Hpol P
+               Vfront 2628 Vsync   4 Vback   30 Vpol P
+  Checksum: 0xf1
+Checksum: 0x90  Unused space in Extension Block: 78 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: Invalid week 108 of manufacture.
+  Standard Timings: Missing preferred timing.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

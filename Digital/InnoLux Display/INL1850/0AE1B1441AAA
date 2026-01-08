@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0025cc501801010101
-09130103802b1a78eac905a3574b9c25
-125054a54a0081c00101010101010101
-010101010101662156aa51001e30468f
-3300aeff1000001e000000fd00324b1c
-5210000a202020202020000000fc0054
-773138354e470a2020202020000000ff
-00574453494530393230303738350011
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 25 cc 50 18 01 01 01 01
+09 13 01 03 80 2b 1a 78 ea c9 05 a3 57 4b 9c 25
+12 50 54 a5 4a 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 ae ff 10 00 00 1e 00 00 00 fd 00 32 4b 1c
+52 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 54
+77 31 38 35 4e 47 0a 20 20 20 20 20 00 00 00 ff
+00 57 44 53 49 45 30 39 32 30 30 37 38 35 00 11
 
 00 ff ff ff ff ff ff 00 25 cc 50 18 01 01 01 01
 09 13 01 03 80 2b 1a 78 ea c9 05 a3 57 4b 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: INL
     Model: 6224
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 9 of 2009
   Basic Display Parameters & Features:
     Digital display
@@ -58,5 +56,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 28-82 kHz H, max dotclock 160 MHz
     Display Product Name: 'Tw185NG'
-    Display Product Serial Number: 'WDSIE09200785'
+    Display Product Serial Number: ...
 Checksum: 0x11
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 25 cc 50 18 01 01 01 01 '........%.P.....'
+  09 13 01 03 80 2b 1a 78 ea c9 05 a3 57 4b 9c 25 '.....+.x....WK.%'
+  12 50 54 a5 4a 00 81 c0 01 01 01 01 01 01 01 01 '.PT.J...........'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 ae ff 10 00 00 1e 00 00 00 fd 00 32 4b 1c '3............2K.'
+  52 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 54 'R...      .....T'
+  77 31 38 35 4e 47 0a 20 20 20 20 20 00 00 00 ff 'w185NG.     ....'
+  00 57 44 53 49 45 30 39 32 30 30 37 38 35 00 11 '.WDSIE09200785..'
+Checksum: 0x11
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030e4540700000000
-00210104a51e137806be95a5544c9924
-0e505400000001010101010101010101
-010101010101ec6800a0a0402e603020
-36002ebc1000001af05300a0a0402e60
-302036002ebc1000001a000000fe0046
-58503438823134305751410a00000000
-00024131a8001100000a810a202000bb
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 54 07 00 00 00 00
+00 21 01 04 a5 1e 13 78 06 be 95 a5 54 4c 99 24
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ec 68 00 a0 a0 40 2e 60 30 20
+36 00 2e bc 10 00 00 1a f0 53 00 a0 a0 40 2e 60
+30 20 36 00 2e bc 10 00 00 1a 00 00 00 fe 00 46
+58 50 34 38 82 31 34 30 57 51 41 0a 00 00 00 00
+00 02 41 31 a8 00 11 00 00 0a 81 0a 20 20 00 bb
 
 00 ff ff ff ff ff ff 00 30 e4 54 07 00 00 00 00
 00 21 01 04 a5 1e 13 78 06 be 95 a5 54 4c 99 24
@@ -54,3 +52,35 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'FXP48'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 31 a8 00 11 00 00 0a 81 0a 20 20 '....A1........  '
 Checksum: 0xbb
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 e4 54 07 00 00 00 00 '........0.T.....'
+  00 21 01 04 a5 1e 13 78 06 be 95 a5 54 4c 99 24 '.!.....x....TL.$'
+  0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 ec 68 00 a0 a0 40 2e 60 30 20 '.......h...@.`0 '
+  36 00 2e bc 10 00 00 1a f0 53 00 a0 a0 40 2e 60 '6........S...@.`'
+  30 20 36 00 2e bc 10 00 00 1a 00 00 00 fe 00 46 '0 6............F'
+  58 50 34 38 82 31 34 30 57 51 41 0a 00 00 00 00 'XP48.140WQA.....'
+  00 02 41 31 a8 00 11 00 00 0a 81 0a 20 20 00 bb '..A1........  ..'
+Checksum: 0xbb
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
