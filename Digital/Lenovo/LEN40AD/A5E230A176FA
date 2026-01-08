@@ -1,0 +1,83 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae ad 40 00 00 00 00
+24 1d 01 04 a5 1f 11 78 e2 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b4 3b 80 4a 71 38 34 40 50 3c
+68 00 35 ad 10 00 00 18 b4 3b 80 4a 71 38 34 40
+50 3c 68 00 35 ad 10 00 00 18 00 00 00 0f 00 d1
+09 3c d1 09 3c 32 8a 00 0d ae 09 14 00 00 00 fe
+00 4e 31 34 30 48 43 52 2d 47 4c 32 0a 20 00 2d
+
+00 ff ff ff ff ff ff 00 30 ae ad 40 00 00 00 00
+24 1d 01 04 a5 1f 11 78 e2 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b4 3b 80 4a 71 38 34 40 50 3c
+68 00 35 ad 10 00 00 18 b4 3b 80 4a 71 38 34 40
+50 3c 68 00 35 ad 10 00 00 18 00 00 00 0f 00 d1
+09 3c d1 09 3c 32 8a 00 0d ae 09 14 00 00 00 fe
+00 4e 31 34 30 48 43 52 2d 47 4c 32 0a 20 00 2d
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16557
+    Made in: week 36 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.007852 Hz  16:9     67.929 kHz    152.840000 MHz (309 mm x 173 mm)
+                 Hfront   80 Hsync  60 Hback  190 Hpol N
+                 Vfront    6 Vsync   8 Vback   38 Vpol N
+    DTD 2:  1920x1080   60.007852 Hz  16:9     67.929 kHz    152.840000 MHz (309 mm x 173 mm)
+                 Hfront   80 Hsync  60 Hback  190 Hpol N
+                 Vfront    6 Vsync   8 Vback   38 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 d1 09 3c d1 09 3c 32 8a 00 0d ae 09 14 '.....<..<2......'
+    Alphanumeric Data String: 'N140HCR-GL2'
+Checksum: 0x2d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae ad 40 00 00 00 00 '........0..@....'
+  24 1d 01 04 a5 1f 11 78 e2 ee 95 a3 54 4c 99 26 '$......x....TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 b4 3b 80 4a 71 38 34 40 50 3c '.......;.Jq84@P<'
+  68 00 35 ad 10 00 00 18 b4 3b 80 4a 71 38 34 40 'h.5......;.Jq84@'
+  50 3c 68 00 35 ad 10 00 00 18 00 00 00 0f 00 d1 'P<h.5...........'
+  09 3c d1 09 3c 32 8a 00 0d ae 09 14 00 00 00 fe '.<..<2..........'
+  00 4e 31 34 30 48 43 52 2d 47 4c 32 0a 20 00 2d '.N140HCR-GL2. .-'
+Checksum: 0x2d
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030ae003001000000
-121e0104b54728783eee91a3544c9926
-0f5054a56b00d1c081c081008180a9c0
-b300010101014dd000a0f0703e803020
-3500c48f2100001a000000ff004d5632
-373051554d0a20202020000000fd0032
-4c1ea03c000a202020202020000000fc
-004c454e2d596f676132372d410a00d2
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 00 30 01 00 00 00
+12 1e 01 04 b5 47 28 78 3e ee 91 a3 54 4c 99 26
+0f 50 54 a5 6b 00 d1 c0 81 c0 81 00 81 80 a9 c0
+b3 00 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 c4 8f 21 00 00 1a 00 00 00 ff 00 4d 56 32
+37 30 51 55 4d 0a 20 20 20 20 00 00 00 fd 00 32
+4c 1e a0 3c 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 45 4e 2d 59 6f 67 61 32 37 2d 41 0a 00 d2
 
 00 ff ff ff ff ff ff 00 30 ae 00 30 01 00 00 00
 12 1e 01 04 b5 47 28 78 3e ee 91 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 12288
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 18 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -65,8 +63,39 @@ Block 0, Base EDID:
     DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (708 mm x 399 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   54 Vpol N
-    Display Product Serial Number: 'MV270QUM'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-160 kHz H, max dotclock 600 MHz
     Display Product Name: 'LEN-Yoga27-A'
 Checksum: 0xd2
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 00 30 01 00 00 00 '........0..0....'
+  12 1e 01 04 b5 47 28 78 3e ee 91 a3 54 4c 99 26 '.....G(x>...TL.&'
+  0f 50 54 a5 6b 00 d1 c0 81 c0 81 00 81 80 a9 c0 '.PT.k...........'
+  b3 00 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20 '......M....p>.0 '
+  35 00 c4 8f 21 00 00 1a 00 00 00 ff 00 4d 56 32 '5...!........MV2'
+  37 30 51 55 4d 0a 20 20 20 20 00 00 00 fd 00 32 '70QUM.    .....2'
+  4c 1e a0 3c 00 0a 20 20 20 20 20 20 00 00 00 fc 'L..<..      ....'
+  00 4c 45 4e 2d 59 6f 67 61 32 37 2d 41 0a 00 d2 '.LEN-Yoga27-A...'
+Checksum: 0xd2
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

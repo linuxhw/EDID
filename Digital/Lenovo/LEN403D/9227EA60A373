@@ -1,0 +1,87 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 3d 40 00 00 00 00
+00 22 01 04 a5 1e 13 78 23 f7 b5 9b 5c 55 8d 25
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 33 3f 80 dc 70 b0 3c 40 30 20
+36 00 2e bc 10 00 00 1a 00 00 00 fd 00 28 3c 4c
+4c 10 01 0a 20 20 20 20 20 20 00 00 00 0f 00 d1
+0a 3c d1 0a 28 28 0a 00 09 e5 26 0c 00 00 00 fe
+00 4e 56 31 34 30 57 55 4d 2d 54 30 38 0a 00 1c
+
+00 ff ff ff ff ff ff 00 30 ae 3d 40 00 00 00 00
+00 22 01 04 a5 1e 13 78 23 f7 b5 9b 5c 55 8d 25
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 33 3f 80 dc 70 b0 3c 40 30 20
+36 00 2e bc 10 00 00 1a 00 00 00 fd 00 28 3c 4c
+4c 10 01 0a 20 20 20 20 20 20 00 00 00 0f 00 d1
+0a 3c d1 0a 28 28 0a 00 09 e5 26 0c 00 00 00 fe
+00 4e 56 31 34 30 57 55 4d 2d 54 30 38 0a 00 1c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16445
+    Made in: 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6083, 0.3623
+    Green: 0.3330, 0.5537
+    Blue : 0.1464, 0.1396
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.002225 Hz  16:10    75.603 kHz    161.790000 MHz (302 mm x 188 mm)
+                 Hfront   48 Hsync  32 Hback  140 Hpol P
+                 Vfront    3 Vsync   6 Vback   51 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 76-76 kHz H, max dotclock 160 MHz
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 d1 0a 3c d1 0a 28 28 0a 00 09 e5 26 0c '.....<..((....&.'
+    Alphanumeric Data String: 'NV140WUM-T08'
+Checksum: 0x1c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 3d 40 00 00 00 00 '........0.=@....'
+  00 22 01 04 a5 1e 13 78 23 f7 b5 9b 5c 55 8d 25 '.".....x#...\U.%'
+  23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '#PT.............'
+  01 01 01 01 01 01 33 3f 80 dc 70 b0 3c 40 30 20 '......3?..p.<@0 '
+  36 00 2e bc 10 00 00 1a 00 00 00 fd 00 28 3c 4c '6............(<L'
+  4c 10 01 0a 20 20 20 20 20 20 00 00 00 0f 00 d1 'L...      ......'
+  0a 3c d1 0a 28 28 0a 00 09 e5 26 0c 00 00 00 fe '.<..((....&.....'
+  00 4e 56 31 34 30 57 55 4d 2d 54 30 38 0a 00 1c '.NV140WUM-T08...'
+Checksum: 0x1c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 161.790 MHz (Monitor: 160.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

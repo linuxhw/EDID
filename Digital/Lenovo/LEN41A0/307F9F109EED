@@ -1,0 +1,83 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae a0 41 00 00 00 00
+14 1f 01 04 a5 1d 12 78 e3 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 42 3c 80 a0 70 b0 24 40 2e 1e
+a6 00 1e b2 10 00 00 18 00 00 00 fd 00 28 3c 4a
+4a 10 01 0a 20 20 20 20 20 20 00 00 00 0f 00 d1
+0a 3c d1 0a 28 1e 0a 00 0d ae c8 13 00 00 00 fe
+00 4e 31 33 33 4a 43 41 2d 45 45 4b 0a 20 00 f8
+
+00 ff ff ff ff ff ff 00 30 ae a0 41 00 00 00 00
+14 1f 01 04 a5 1d 12 78 e3 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 42 3c 80 a0 70 b0 24 40 2e 1e
+a6 00 1e b2 10 00 00 18 00 00 00 fd 00 28 3c 4a
+4a 10 01 0a 20 20 20 20 20 20 00 00 00 0f 00 d1
+0a 3c d1 0a 28 1e 0a 00 0d ae c8 13 00 00 00 fe
+00 4e 31 33 33 4a 43 41 2d 45 45 4b 0a 20 00 f8
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16800
+    Made in: week 20 of 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 29 cm x 18 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3300
+    Green: 0.2998, 0.5996
+    Blue : 0.1503, 0.0595
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.002801 Hz  16:10    74.163 kHz    154.260000 MHz (286 mm x 178 mm)
+                 Hfront   46 Hsync  30 Hback   84 Hpol N
+                 Vfront   10 Vsync   6 Vback   20 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 74-74 kHz H, max dotclock 160 MHz
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 d1 0a 3c d1 0a 28 1e 0a 00 0d ae c8 13 '.....<..(.......'
+    Alphanumeric Data String: 'N133JCA-EEK'
+Checksum: 0xf8
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae a0 41 00 00 00 00 '........0..A....'
+  14 1f 01 04 a5 1d 12 78 e3 ee 95 a3 54 4c 99 26 '.......x....TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 42 3c 80 a0 70 b0 24 40 2e 1e '......B<..p.$@..'
+  a6 00 1e b2 10 00 00 18 00 00 00 fd 00 28 3c 4a '.............(<J'
+  4a 10 01 0a 20 20 20 20 20 20 00 00 00 0f 00 d1 'J...      ......'
+  0a 3c d1 0a 28 1e 0a 00 0d ae c8 13 00 00 00 fe '.<..(...........'
+  00 4e 31 33 33 4a 43 41 2d 45 45 4b 0a 20 00 f8 '.N133JCA-EEK. ..'
+Checksum: 0xf8
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

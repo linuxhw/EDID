@@ -1,0 +1,175 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 6a 41 00 00 00 00
+00 1e 01 04 b5 1f 11 78 e2 21 81 ad 51 43 b4 20
+11 50 5a 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 26 ca 00 50 f0 70 28 80 30 20
+35 00 35 ae 10 00 00 1a 26 ca 00 50 f0 70 28 80
+30 20 35 00 35 ae 10 00 00 1a 00 00 00 0f 00 ff
+09 3c ff 09 3c 32 0a 02 09 e5 82 09 00 00 00 fe
+00 4e 45 31 34 30 51 55 4d 2d 4e 36 41 0a 01 81
+
+02 03 1d 00 e3 05 80 00 e6 06 05 01 6a 6a 24 6d
+1a 00 00 02 03 28 3c 00 04 6a 24 6a 24 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7c
+
+00 ff ff ff ff ff ff 00 30 ae 6a 41 00 00 00 00
+00 1e 01 04 b5 1f 11 78 e2 21 81 ad 51 43 b4 20
+11 50 5a 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 26 ca 00 50 f0 70 28 80 30 20
+35 00 35 ae 10 00 00 1a 26 ca 00 50 f0 70 28 80
+30 20 35 00 35 ae 10 00 00 1a 00 00 00 0f 00 ff
+09 3c ff 09 3c 32 0a 02 09 e5 82 09 00 00 00 fe
+00 4e 45 31 34 30 51 55 4d 2d 4e 36 41 0a 01 81
+
+02 03 1d 00 e3 05 80 00 e6 06 05 01 6a 6a 24 6d
+1a 00 00 02 03 28 3c 00 04 6a 24 6a 24 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16746
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6757, 0.3183
+    Green: 0.2617, 0.7041
+    Blue : 0.1269, 0.0664
+    White: 0.3125, 0.3525
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3840x2160   60.006957 Hz  16:9    132.015 kHz    517.500000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback    0 Hpol P
+                 Vfront    3 Vsync   5 Vback   32 Vpol N
+    DTD 2:  3840x2160   60.006957 Hz  16:9    132.015 kHz    517.500000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback    0 Hpol P
+                 Vfront    3 Vsync   5 Vback   32 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 ff 09 3c ff 09 3c 32 0a 02 09 e5 82 09 '.....<..<2......'
+    Alphanumeric Data String: 'NE140QUM-N6A'
+  Extension blocks: 1
+Checksum: 0x81
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 106 (496.743 cd/m^2)
+    Desired content max frame-average luminance: 106 (496.743 cd/m^2)
+    Desired content min luminance: 36 (0.099 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.3
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x04
+    Maximum luminance: 106 (496.743 cd/m^2)
+    Minimum luminance: 36 (0.099 cd/m^2)
+    Maximum luminance (without local dimming): 106 (496.743 cd/m^2)
+    Minimum luminance (without local dimming): 36 (0.099 cd/m^2)
+Checksum: 0x7c  Unused space in Extension Block: 98 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 6a 41 00 00 00 00 '........0.jA....'
+  00 1e 01 04 b5 1f 11 78 e2 21 81 ad 51 43 b4 20 '.......x.!..QC. '
+  11 50 5a 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PZ.............'
+  01 01 01 01 01 01 26 ca 00 50 f0 70 28 80 30 20 '......&..P.p(.0 '
+  35 00 35 ae 10 00 00 1a 26 ca 00 50 f0 70 28 80 '5.5.....&..P.p(.'
+  30 20 35 00 35 ae 10 00 00 1a 00 00 00 0f 00 ff '0 5.5...........'
+  09 3c ff 09 3c 32 0a 02 09 e5 82 09 00 00 00 fe '.<..<2..........'
+  00 4e 45 31 34 30 51 55 4d 2d 4e 36 41 0a 01 81 '.NE140QUM-N6A...'
+Checksum: 0x81
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 106 (496.743 cd/m^2)
+    Desired content max frame-average luminance: 106 (496.743 cd/m^2)
+    Desired content min luminance: 36 (0.099 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.3
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x04
+    Maximum luminance: 106 (496.743 cd/m^2)
+    Minimum luminance: 36 (0.099 cd/m^2)
+    Maximum luminance (without local dimming): 106 (496.743 cd/m^2)
+    Minimum luminance (without local dimming): 36 (0.099 cd/m^2)
+Checksum: 0x7c  Unused space in Extension Block: 98 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #2: 0 or negative horizontal back porch.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

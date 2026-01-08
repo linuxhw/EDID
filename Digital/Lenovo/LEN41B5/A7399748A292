@@ -1,0 +1,83 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae b5 41 00 00 00 00
+26 20 01 04 a5 23 16 78 e3 2c c5 94 5c 59 95 29
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ea 3d 80 c8 70 b0 2e 40 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 fd 00 28 3c 4b
+4b 10 01 0a 20 20 20 20 20 20 00 00 00 0f 00 d1
+0a 3c d1 0a 28 1e 0a 00 0e 6f 99 16 00 00 00 fe
+00 4d 4e 47 30 30 37 51 53 31 2d 31 0a 20 00 e4
+
+00 ff ff ff ff ff ff 00 30 ae b5 41 00 00 00 00
+26 20 01 04 a5 23 16 78 e3 2c c5 94 5c 59 95 29
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 ea 3d 80 c8 70 b0 2e 40 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 fd 00 28 3c 4b
+4b 10 01 0a 20 20 20 20 20 20 00 00 00 0f 00 d1
+0a 3c d1 0a 28 1e 0a 00 0e 6f 99 16 00 00 00 fe
+00 4d 4e 47 30 30 37 51 53 31 2d 31 0a 20 00 e4
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16821
+    Made in: week 38 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 35 cm x 22 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5781, 0.3613
+    Green: 0.3505, 0.5820
+    Blue : 0.1630, 0.1171
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.003331 Hz  16:10    74.764 kHz    158.500000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  120 Hpol P
+                 Vfront    3 Vsync   6 Vback   37 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 75-75 kHz H, max dotclock 160 MHz
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 d1 0a 3c d1 0a 28 1e 0a 00 0e 6f 99 16 '.....<..(....o..'
+    Alphanumeric Data String: 'MNG007QS1-1'
+Checksum: 0xe4
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae b5 41 00 00 00 00 '........0..A....'
+  26 20 01 04 a5 23 16 78 e3 2c c5 94 5c 59 95 29 '& ...#.x.,..\Y.)'
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 ea 3d 80 c8 70 b0 2e 40 30 20 '.......=..p..@0 '
+  36 00 59 d7 10 00 00 1a 00 00 00 fd 00 28 3c 4b '6.Y..........(<K'
+  4b 10 01 0a 20 20 20 20 20 20 00 00 00 0f 00 d1 'K...      ......'
+  0a 3c d1 0a 28 1e 0a 00 0e 6f 99 16 00 00 00 fe '.<..(....o......'
+  00 4d 4e 47 30 30 37 51 53 31 2d 31 0a 20 00 e4 '.MNG007QS1-1. ..'
+Checksum: 0xe4
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

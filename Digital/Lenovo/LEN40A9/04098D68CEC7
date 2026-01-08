@@ -1,0 +1,83 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae a9 40 00 00 00 00
+00 1e 01 04 a5 1f 11 78 e2 7d 50 a6 57 52 9f 27
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3a 38 80 de 70 38 28 40 30 20
+36 00 35 ad 10 00 00 1a 3a 38 80 de 70 38 28 40
+30 20 36 00 35 ad 10 00 00 1a 00 00 00 0f 00 d1
+09 3c d1 09 3c 28 0a 00 09 e5 db 07 00 00 00 fe
+00 4e 45 31 34 30 46 48 4d 2d 4e 36 31 0a 00 37
+
+00 ff ff ff ff ff ff 00 30 ae a9 40 00 00 00 00
+00 1e 01 04 a5 1f 11 78 e2 7d 50 a6 57 52 9f 27
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3a 38 80 de 70 38 28 40 30 20
+36 00 35 ad 10 00 00 1a 3a 38 80 de 70 38 28 40
+30 20 36 00 35 ad 10 00 00 1a 00 00 00 0f 00 d1
+09 3c d1 09 3c 28 0a 00 09 e5 db 07 00 00 00 fe
+00 4e 45 31 34 30 46 48 4d 2d 4e 36 31 0a 00 37
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16553
+    Made in: 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6494, 0.3427
+    Green: 0.3232, 0.6220
+    Blue : 0.1533, 0.0712
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.999000 Hz  16:9     67.199 kHz    143.940000 MHz (309 mm x 173 mm)
+                 Hfront   48 Hsync  32 Hback  142 Hpol P
+                 Vfront    3 Vsync   6 Vback   31 Vpol N
+    DTD 2:  1920x1080   59.999000 Hz  16:9     67.199 kHz    143.940000 MHz (309 mm x 173 mm)
+                 Hfront   48 Hsync  32 Hback  142 Hpol P
+                 Vfront    3 Vsync   6 Vback   31 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 d1 09 3c d1 09 3c 28 0a 00 09 e5 db 07 '.....<..<(......'
+    Alphanumeric Data String: 'NE140FHM-N61'
+Checksum: 0x37
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae a9 40 00 00 00 00 '........0..@....'
+  00 1e 01 04 a5 1f 11 78 e2 7d 50 a6 57 52 9f 27 '.......x.}P.WR.''
+  12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 3a 38 80 de 70 38 28 40 30 20 '......:8..p8(@0 '
+  36 00 35 ad 10 00 00 1a 3a 38 80 de 70 38 28 40 '6.5.....:8..p8(@'
+  30 20 36 00 35 ad 10 00 00 1a 00 00 00 0f 00 d1 '0 6.5...........'
+  09 3c d1 09 3c 28 0a 00 09 e5 db 07 00 00 00 fe '.<..<(..........'
+  00 4e 45 31 34 30 46 48 4d 2d 4e 36 31 0a 00 37 '.NE140FHM-N61..7'
+Checksum: 0x37
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

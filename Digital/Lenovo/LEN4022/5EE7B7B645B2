@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030ae224000000000
-25110103801d1578ea6f959c544c8726
-21505400000001010101010101010101
-010101010101302a7820511a10403070
-13001fd71000001825237820511a1040
-307013001fd7100000180000000f0090
-43329043280f010030640055000000fe
-004c5444313431454e39420a202000f4
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 22 40 00 00 00 00
+25 11 01 03 80 1d 15 78 ea 6f 95 9c 54 4c 87 26
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 78 20 51 1a 10 40 30 70
+13 00 1f d7 10 00 00 18 25 23 78 20 51 1a 10 40
+30 70 13 00 1f d7 10 00 00 18 00 00 00 0f 00 90
+43 32 90 43 28 0f 01 00 30 64 00 55 00 00 00 fe
+00 4c 54 44 31 34 31 45 4e 39 42 0a 20 20 00 f4
 
 00 ff ff ff ff ff ff 00 30 ae 22 40 00 00 00 00
 25 11 01 03 80 1d 15 78 ea 6f 95 9c 54 4c 87 26
@@ -52,3 +50,30 @@ Block 0, Base EDID:
     Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 90 43 32 90 43 28 0f 01 00 30 64 00 55 '....C2.C(...0d.U'
     Alphanumeric Data String: 'LTD141EN9B'
 Checksum: 0xf4
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 22 40 00 00 00 00 '........0."@....'
+  25 11 01 03 80 1d 15 78 ea 6f 95 9c 54 4c 87 26 '%......x.o..TL.&'
+  21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '!PT.............'
+  01 01 01 01 01 01 30 2a 78 20 51 1a 10 40 30 70 '......0*x Q..@0p'
+  13 00 1f d7 10 00 00 18 25 23 78 20 51 1a 10 40 '........%#x Q..@'
+  30 70 13 00 1f d7 10 00 00 18 00 00 00 0f 00 90 '0p..............'
+  43 32 90 43 28 0f 01 00 30 64 00 55 00 00 00 fe 'C2.C(...0d.U....'
+  00 4c 54 44 31 34 31 45 4e 39 42 0a 20 20 00 f4 '.LTD141EN9B.  ..'
+Checksum: 0xf4
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

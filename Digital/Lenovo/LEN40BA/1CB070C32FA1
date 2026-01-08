@@ -1,0 +1,85 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae ba 40 00 00 00 00
+00 1d 01 04 a5 22 13 78 e2 6e 85 93 58 58 92 28
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 78 37 80 b4 70 38 2e 40 6c 30
+aa 00 58 c2 10 00 00 18 78 37 80 b4 70 38 2e 40
+6c 30 aa 00 58 c2 10 00 00 18 00 00 00 0f 00 d1
+09 3c d1 09 30 1e 0a 00 06 af 8d e4 00 00 00 fe
+00 42 31 35 36 48 41 4e 30 32 2e 31 20 0a 00 f9
+
+00 ff ff ff ff ff ff 00 30 ae ba 40 00 00 00 00
+00 1d 01 04 a5 22 13 78 e2 6e 85 93 58 58 92 28
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 78 37 80 b4 70 38 2e 40 6c 30
+aa 00 58 c2 10 00 00 18 78 37 80 b4 70 38 2e 40
+6c 30 aa 00 58 c2 10 00 00 18 00 00 00 0f 00 d1
+09 3c d1 09 30 1e 0a 00 06 af 8d e4 00 00 00 fe
+00 42 31 35 36 48 41 4e 30 32 2e 31 20 0a 00 f9
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16570
+    Made in: 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5751, 0.3457
+    Green: 0.3466, 0.5722
+    Blue : 0.1582, 0.1171
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.052440 Hz  16:9     67.619 kHz    142.000000 MHz (344 mm x 194 mm)
+                 Hfront  108 Hsync  48 Hback   24 Hpol N
+                 Vfront   10 Vsync  10 Vback   26 Vpol N
+    DTD 2:  1920x1080   60.052440 Hz  16:9     67.619 kHz    142.000000 MHz (344 mm x 194 mm)
+                 Hfront  108 Hsync  48 Hback   24 Hpol N
+                 Vfront   10 Vsync  10 Vback   26 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 d1 09 3c d1 09 30 1e 0a 00 06 af 8d e4 '.....<..0.......'
+    Alphanumeric Data String: 'B156HAN02.1 '
+Checksum: 0xf9
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae ba 40 00 00 00 00 '........0..@....'
+  00 1d 01 04 a5 22 13 78 e2 6e 85 93 58 58 92 28 '.....".x.n..XX.('
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 78 37 80 b4 70 38 2e 40 6c 30 '......x7..p8.@l0'
+  aa 00 58 c2 10 00 00 18 78 37 80 b4 70 38 2e 40 '..X.....x7..p8.@'
+  6c 30 aa 00 58 c2 10 00 00 18 00 00 00 0f 00 d1 'l0..X...........'
+  09 3c d1 09 30 1e 0a 00 06 af 8d e4 00 00 00 fe '.<..0...........'
+  00 42 31 35 36 48 41 4e 30 32 2e 31 20 0a 00 f9 '.B156HAN02.1 ...'
+Checksum: 0xf9
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

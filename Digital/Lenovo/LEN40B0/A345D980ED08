@@ -1,0 +1,83 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae b0 40 00 00 00 00
+1c 1a 01 04 95 22 13 78 ea c3 f5 91 55 54 94 29
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 da 1d 56 e2 50 00 20 30 44 2d
+47 00 58 c1 10 00 00 18 e1 17 56 e2 50 00 20 30
+44 2d 47 00 58 c1 10 00 00 18 00 00 00 0f 00 8c
+09 30 8c 09 30 16 09 00 0d ae e6 15 00 00 00 fe
+00 4e 31 35 36 42 47 41 2d 45 41 33 0a 20 00 88
+
+00 ff ff ff ff ff ff 00 30 ae b0 40 00 00 00 00
+1c 1a 01 04 95 22 13 78 ea c3 f5 91 55 54 94 29
+25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 da 1d 56 e2 50 00 20 30 44 2d
+47 00 58 c1 10 00 00 18 e1 17 56 e2 50 00 20 30
+44 2d 47 00 58 c1 10 00 00 18 00 00 00 0f 00 8c
+09 30 8c 09 30 16 09 00 0d ae e6 15 00 00 00 fe
+00 4e 31 35 36 42 47 41 2d 45 41 33 0a 20 00 88
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16560
+    Made in: week 28 of 2016
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5693, 0.3320
+    Green: 0.3281, 0.5810
+    Blue : 0.1630, 0.1474
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.003141 Hz 683:384   48.003 kHz     76.420000 MHz (344 mm x 193 mm)
+                 Hfront   68 Hsync  45 Hback  113 Hpol N
+                 Vfront    4 Vsync   7 Vback   21 Vpol N
+    DTD 2:  1366x768    47.997802 Hz 683:384   38.398 kHz     61.130000 MHz (344 mm x 193 mm)
+                 Hfront   68 Hsync  45 Hback  113 Hpol N
+                 Vfront    4 Vsync   7 Vback   21 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 8c 09 30 8c 09 30 16 09 00 0d ae e6 15 '.....0..0.......'
+    Alphanumeric Data String: 'N156BGA-EA3'
+Checksum: 0x88
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae b0 40 00 00 00 00 '........0..@....'
+  1c 1a 01 04 95 22 13 78 ea c3 f5 91 55 54 94 29 '.....".x....UT.)'
+  25 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '%PT.............'
+  01 01 01 01 01 01 da 1d 56 e2 50 00 20 30 44 2d '........V.P. 0D-'
+  47 00 58 c1 10 00 00 18 e1 17 56 e2 50 00 20 30 'G.X.......V.P. 0'
+  44 2d 47 00 58 c1 10 00 00 18 00 00 00 0f 00 8c 'D-G.X...........'
+  09 30 8c 09 30 16 09 00 0d ae e6 15 00 00 00 fe '.0..0...........'
+  00 4e 31 35 36 42 47 41 2d 45 41 33 0a 20 00 88 '.N156BGA-EA3. ..'
+Checksum: 0x88
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

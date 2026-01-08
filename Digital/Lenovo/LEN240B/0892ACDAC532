@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030ae0b2401010101
-2e10010380221b782a5dd0a6544c0f23
-145054adcf008180818a010101010101
-010101010101bc34009851002a401090
-1300540e1100001e000000ff00563248
-343333380a2020202020000000fd0037
-4b1e530e000a202020202020000000fc
-004c454e204c3137310a20202020015e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 0b 24 01 01 01 01
+2e 10 01 03 80 22 1b 78 2a 5d d0 a6 54 4c 0f 23
+14 50 54 ad cf 00 81 80 81 8a 01 01 01 01 01 01
+01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90
+13 00 54 0e 11 00 00 1e 00 00 00 ff 00 56 32 48
+34 33 33 38 0a 20 20 20 20 20 00 00 00 fd 00 37
+4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 45 4e 20 4c 31 37 31 0a 20 20 20 20 01 5e
 
 00 ff ff ff ff ff ff 00 30 ae 0b 24 01 01 01 01
 2e 10 01 03 80 22 1b 78 2a 5d d0 a6 54 4c 0f 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 9227
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 46 of 2006
   Basic Display Parameters & Features:
     Digital display
@@ -60,9 +58,31 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz (340 mm x 270 mm)
                  Hfront   16 Hsync 144 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: 'V2H4338'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'LEN L171'
   Extension blocks: 1
 Checksum: 0x5e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 0b 24 01 01 01 01 '........0..$....'
+  2e 10 01 03 80 22 1b 78 2a 5d d0 a6 54 4c 0f 23 '.....".x*]..TL.#'
+  14 50 54 ad cf 00 81 80 81 8a 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90 '.......4..Q.*@..'
+  13 00 54 0e 11 00 00 1e 00 00 00 ff 00 56 32 48 '..T..........V2H'
+  34 33 33 38 0a 20 20 20 20 20 00 00 00 fd 00 37 '4338.     .....7'
+  4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 4c 45 4e 20 4c 31 37 31 0a 20 20 20 20 01 5e '.LEN L171.    .^'
+Checksum: 0x5e
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+
+EDID conformity: FAIL

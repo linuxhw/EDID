@@ -1,0 +1,90 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 3a 40 00 00 00 00
+00 22 01 04 a5 1e 13 78 27 e8 bf a3 55 4c 9c 23
+0c 4e 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 35 3c 80 a0 70 b0 23 40 30 20
+36 00 2e bc 10 00 00 18 00 00 00 fd 00 28 3c 4a
+4a 0f 01 0a 20 20 20 20 20 20 00 00 00 0f 00 d1
+0a 28 d1 0a 28 28 0a 04 0e 6f 13 14 00 00 00 fe
+00 4d 4e 45 30 30 37 4a 41 31 2d 32 0a 20 00 86
+
+00 ff ff ff ff ff ff 00 30 ae 3a 40 00 00 00 00
+00 22 01 04 a5 1e 13 78 27 e8 bf a3 55 4c 9c 23
+0c 4e 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 35 3c 80 a0 70 b0 23 40 30 20
+36 00 2e bc 10 00 00 18 00 00 00 fd 00 28 3c 4a
+4a 0f 01 0a 20 20 20 20 20 20 00 00 00 0f 00 d1
+0a 28 d1 0a 28 28 0a 04 0e 6f 13 14 00 00 00 fe
+00 4d 4e 45 30 30 37 4a 41 31 2d 32 0a 20 00 86
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16442
+    Made in: 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6396, 0.3339
+    Green: 0.2988, 0.6093
+    Blue : 0.1386, 0.0498
+    White: 0.3076, 0.3310
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   60.000779 Hz  16:10    74.101 kHz    154.130000 MHz (302 mm x 188 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   6 Vback   26 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 74-74 kHz H, max dotclock 150 MHz
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 d1 0a 28 d1 0a 28 28 0a 04 0e 6f 13 14 '.....(..((...o..'
+    Alphanumeric Data String: 'MNE007JA1-2'
+Checksum: 0x86
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 3a 40 00 00 00 00 '........0.:@....'
+  00 22 01 04 a5 1e 13 78 27 e8 bf a3 55 4c 9c 23 '.".....x'...UL.#'
+  0c 4e 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.NT.............'
+  01 01 01 01 01 01 35 3c 80 a0 70 b0 23 40 30 20 '......5<..p.#@0 '
+  36 00 2e bc 10 00 00 18 00 00 00 fd 00 28 3c 4a '6............(<J'
+  4a 0f 01 0a 20 20 20 20 20 20 00 00 00 0f 00 d1 'J...      ......'
+  0a 28 d1 0a 28 28 0a 04 0e 6f 13 14 00 00 00 fe '.(..((...o......'
+  00 4d 4e 45 30 30 37 4a 41 31 2d 32 0a 20 00 86 '.MNE007JA1-2. ..'
+Checksum: 0x86
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 154.130 MHz (Monitor: 150.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

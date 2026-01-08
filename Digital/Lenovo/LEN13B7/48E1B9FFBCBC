@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030aeb71301010101
-3413010380241e78eaaea5a6544c9926
-145054bdcf008180714f010101010101
-010101010101302a009851002a403070
-1300520e1100001e000000fd00384c1e
-510e000a202020202020000000fc004c
-454e204c3137313170430a20000000ff
-00564e2d41374739370a202020200054
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae b7 13 01 01 01 01
+34 13 01 03 80 24 1e 78 ea ae a5 a6 54 4c 99 26
+14 50 54 bd cf 00 81 80 71 4f 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4c 1e
+51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+45 4e 20 4c 31 37 31 31 70 43 0a 20 00 00 00 ff
+00 56 4e 2d 41 37 47 39 37 0a 20 20 20 20 00 54
 
 00 ff ff ff ff ff ff 00 30 ae b7 13 01 01 01 01
 34 13 01 03 80 24 1e 78 ea ae a5 a6 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 5047
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 52 of 2009
   Basic Display Parameters & Features:
     Digital display
@@ -64,5 +62,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-81 kHz H, max dotclock 140 MHz
     Display Product Name: 'LEN L1711pC'
-    Display Product Serial Number: 'VN-A7G97'
+    Display Product Serial Number: ...
 Checksum: 0x54
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae b7 13 01 01 01 01 '........0.......'
+  34 13 01 03 80 24 1e 78 ea ae a5 a6 54 4c 99 26 '4....$.x....TL.&'
+  14 50 54 bd cf 00 81 80 71 4f 01 01 01 01 01 01 '.PT.....qO......'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4c 1e '..R..........8L.'
+  51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'Q...      .....L'
+  45 4e 20 4c 31 37 31 31 70 43 0a 20 00 00 00 ff 'EN L1711pC. ....'
+  00 56 4e 2d 41 37 47 39 37 0a 20 20 20 20 00 54 '.VN-A7G97.    .T'
+Checksum: 0x54
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 338x270 mm vs display size 360x300 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

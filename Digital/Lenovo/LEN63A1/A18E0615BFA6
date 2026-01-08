@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0030aea163504e4634
-1d200103803c22782e3825af4f46a525
-0f5054bdcf008180818a9500b300d1c0
-d100714f8100565e00a0a0a029503020
-350055502100001a000000ff00563330
-4134464e500a20202020000000fd0032
-4b1e721e000a202020202020000000fc
-00503237682d33300a2020202020014f
-020334f1490102030413901f12112309
-07078301000067030c001000383c67d8
-5dc4013c8000e305c000e60605016456
-1ce2006acc7400a0a0a01e5030203500
-55502100001a662156aa51001e30468f
-330055502100001e483f403062b03240
-40c0130055502100001e000000000000
-00000000000000000000000000000096
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae a1 63 50 4e 46 34
+1d 20 01 03 80 3c 22 78 2e 38 25 af 4f 46 a5 25
+0f 50 54 bd cf 00 81 80 81 8a 95 00 b3 00 d1 c0
+d1 00 71 4f 81 00 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 55 50 21 00 00 1a 00 00 00 ff 00 56 33 30
+41 34 46 4e 50 0a 20 20 20 20 00 00 00 fd 00 32
+4b 1e 72 1e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 32 37 68 2d 33 30 0a 20 20 20 20 20 01 4f
+
+02 03 34 f1 49 01 02 03 04 13 90 1f 12 11 23 09
+07 07 83 01 00 00 67 03 0c 00 10 00 38 3c 67 d8
+5d c4 01 3c 80 00 e3 05 c0 00 e6 06 05 01 64 56
+1c e2 00 6a cc 74 00 a0 a0 a0 1e 50 30 20 35 00
+55 50 21 00 00 1a 66 21 56 aa 51 00 1e 30 46 8f
+33 00 55 50 21 00 00 1e 48 3f 40 30 62 b0 32 40
+40 c0 13 00 55 50 21 00 00 1e 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 96
 
 00 ff ff ff ff ff ff 00 30 ae a1 63 50 4e 46 34
 1d 20 01 03 80 3c 22 78 2e 38 25 af 4f 46 a5 25
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 25505
-    Serial Number: 877022800
+    Serial Number: ...
     Made in: week 29 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -85,7 +84,7 @@ Block 0, Base EDID:
     DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
-    Display Product Serial Number: 'V30A4FNP'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-114 kHz H, max dotclock 300 MHz
     Display Product Name: 'P27h-30'
@@ -157,3 +156,126 @@ Block 1, CTA-861 Extension Block:
                  Hfront   64 Hsync 192 Hback  304 Hpol P
                  Vfront    1 Vsync   3 Vback   46 Vpol P
 Checksum: 0x96  Unused space in Extension Block: 21 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae a1 63 50 4e 46 34 '........0..cPNF4'
+  1d 20 01 03 80 3c 22 78 2e 38 25 af 4f 46 a5 25 '. ...<"x.8%.OF.%'
+  0f 50 54 bd cf 00 81 80 81 8a 95 00 b3 00 d1 c0 '.PT.............'
+  d1 00 71 4f 81 00 56 5e 00 a0 a0 a0 29 50 30 20 '..qO..V^....)P0 '
+  35 00 55 50 21 00 00 1a 00 00 00 ff 00 56 33 30 '5.UP!........V30'
+  41 34 46 4e 50 0a 20 20 20 20 00 00 00 fd 00 32 'A4FNP.    .....2'
+  4b 1e 72 1e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.r...      ....'
+  00 50 32 37 68 2d 33 30 0a 20 20 20 20 20 01 4f '.P27h-30.     .O'
+Checksum: 0x4f
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 300 MHz
+    SCDC Present
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 100 (436.203 cd/m^2)
+    Desired content max frame-average luminance: 86 (322.098 cd/m^2)
+    Desired content min luminance: 28 (0.053 cd/m^2)
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Detailed Timing Descriptors:
+    DTD 5:  2560x1440   74.779912 Hz  16:9    109.926 kHz    299.000000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   22 Vpol N
+    DTD 6:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (597 mm x 336 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    DTD 7:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz (597 mm x 336 mm)
+                 Hfront   64 Hsync 192 Hback  304 Hpol P
+                 Vfront    1 Vsync   3 Vback   46 Vpol P
+Checksum: 0x96  Unused space in Extension Block: 21 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Max TMDS rate is > 0 and <= 340 or > 600.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 17.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Max TMDS rate is > 0 and <= 340 or > 600.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

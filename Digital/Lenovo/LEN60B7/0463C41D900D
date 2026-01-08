@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030aeb760c5960a00
-0519010380301b782e2755a3544f9e27
-115054afef00714f8180818a9500b300
-d1c001010101023a801871382d40582c
-4500dd0c1100001e000000ff00563536
-39333935370a20202020000000fd0032
-4c1e5311000a202020202020000000fc
-004c454e20543232323077410a2000b2
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae b7 60 c5 96 0a 00
+05 19 01 03 80 30 1b 78 2e 27 55 a3 54 4f 9e 27
+11 50 54 af ef 00 71 4f 81 80 81 8a 95 00 b3 00
+d1 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 56 35 36
+39 33 39 35 37 0a 20 20 20 20 00 00 00 fd 00 32
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 45 4e 20 54 32 32 32 30 77 41 0a 20 00 b2
 
 00 ff ff ff ff ff ff 00 30 ae b7 60 c5 96 0a 00
 05 19 01 03 80 30 1b 78 2e 27 55 a3 54 4f 9e 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 24759
-    Serial Number: 693957
+    Serial Number: ...
     Made in: week 5 of 2015
   Basic Display Parameters & Features:
     Digital display
@@ -67,8 +65,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (477 mm x 268 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'V5693957'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'LEN T2220wA'
 Checksum: 0xb2
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae b7 60 c5 96 0a 00 '........0..`....'
+  05 19 01 03 80 30 1b 78 2e 27 55 a3 54 4f 9e 27 '.....0.x.'U.TO.''
+  11 50 54 af ef 00 71 4f 81 80 81 8a 95 00 b3 00 '.PT...qO........'
+  d1 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 56 35 36 'E............V56'
+  39 33 39 35 37 0a 20 20 20 20 00 00 00 fd 00 32 '93957.    .....2'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 4c 45 4e 20 54 32 32 32 30 77 41 0a 20 00 b2 '.LEN T2220wA. ..'
+Checksum: 0xb2
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,0 +1,85 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 94 40 00 00 00 00
+00 1c 01 04 95 1d 11 78 e2 de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 35 36 80 a0 70 38 20 40 18 30
+3c 00 26 a5 10 00 00 19 5e 2b 80 a0 70 38 20 40
+18 30 3c 00 26 a5 10 00 00 19 00 00 00 0f 00 d1
+09 3c d1 09 30 1e 0a 00 26 cf 36 05 00 00 00 fe
+00 52 31 33 33 4e 57 46 34 20 52 35 20 0a 00 91
+
+00 ff ff ff ff ff ff 00 30 ae 94 40 00 00 00 00
+00 1c 01 04 95 1d 11 78 e2 de 50 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 35 36 80 a0 70 38 20 40 18 30
+3c 00 26 a5 10 00 00 19 5e 2b 80 a0 70 38 20 40
+18 30 3c 00 26 a5 10 00 00 19 00 00 00 0f 00 d1
+09 3c d1 09 30 1e 0a 00 26 cf 36 05 00 00 00 fe
+00 52 31 33 33 4e 57 46 34 20 52 35 20 0a 00 91
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16532
+    Made in: 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 29 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6396, 0.3291
+    Green: 0.2998, 0.5996
+    Blue : 0.1494, 0.0595
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.996714 Hz  16:9     66.716 kHz    138.770000 MHz (294 mm x 165 mm)
+                 Hfront   24 Hsync  48 Hback   88 Hpol N
+                 Vfront    3 Vsync  12 Vback   17 Vpol N
+    DTD 2:  1920x1080   47.999101 Hz  16:9     53.375 kHz    111.020000 MHz (294 mm x 165 mm)
+                 Hfront   24 Hsync  48 Hback   88 Hpol N
+                 Vfront    3 Vsync  12 Vback   17 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 d1 09 3c d1 09 30 1e 0a 00 26 cf 36 05 '.....<..0...&.6.'
+    Alphanumeric Data String: 'R133NWF4 R5 '
+Checksum: 0x91
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 94 40 00 00 00 00 '........0..@....'
+  00 1c 01 04 95 1d 11 78 e2 de 50 a3 54 4c 99 26 '.......x..P.TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 35 36 80 a0 70 38 20 40 18 30 '......56..p8 @.0'
+  3c 00 26 a5 10 00 00 19 5e 2b 80 a0 70 38 20 40 '<.&.....^+..p8 @'
+  18 30 3c 00 26 a5 10 00 00 19 00 00 00 0f 00 d1 '.0<.&...........'
+  09 3c d1 09 30 1e 0a 00 26 cf 36 05 00 00 00 fe '.<..0...&.6.....'
+  00 52 31 33 33 4e 57 46 34 20 52 35 20 0a 00 91 '.R133NWF4 R5 ...'
+Checksum: 0x91
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030aea86001010101
-0a18010381351e782a0ef5a555509e26
-105054afef00714f8180818a9500a9c0
-a9cfb30001011a3680a070381f403020
-3500132b2100001a000000fd00324b1e
-5111000a202020202020000000fc004c
-454e204c543234323377430a000000ff
-00564e2d3430383437330a202020014e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae a8 60 01 01 01 01
+0a 18 01 03 81 35 1e 78 2a 0e f5 a5 55 50 9e 26
+10 50 54 af ef 00 71 4f 81 80 81 8a 95 00 a9 c0
+a9 cf b3 00 01 01 1a 36 80 a0 70 38 1f 40 30 20
+35 00 13 2b 21 00 00 1a 00 00 00 fd 00 32 4b 1e
+51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+45 4e 20 4c 54 32 34 32 33 77 43 0a 00 00 00 ff
+00 56 4e 2d 34 30 38 34 37 33 0a 20 20 20 01 4e
 
 00 ff ff ff ff ff ff 00 30 ae a8 60 01 01 01 01
 0a 18 01 03 81 35 1e 78 2a 0e f5 a5 55 50 9e 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 24744
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 10 of 2014
   Basic Display Parameters & Features:
     Digital display
@@ -71,6 +69,28 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-81 kHz H, max dotclock 170 MHz
     Display Product Name: 'LEN LT2423wC'
-    Display Product Serial Number: 'VN-408473'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x4e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae a8 60 01 01 01 01 '........0..`....'
+  0a 18 01 03 81 35 1e 78 2a 0e f5 a5 55 50 9e 26 '.....5.x*...UP.&'
+  10 50 54 af ef 00 71 4f 81 80 81 8a 95 00 a9 c0 '.PT...qO........'
+  a9 cf b3 00 01 01 1a 36 80 a0 70 38 1f 40 30 20 '.......6..p8.@0 '
+  35 00 13 2b 21 00 00 1a 00 00 00 fd 00 32 4b 1e '5..+!........2K.'
+  51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'Q...      .....L'
+  45 4e 20 4c 54 32 34 32 33 77 43 0a 00 00 00 ff 'EN LT2423wC.....'
+  00 56 4e 2d 34 30 38 34 37 33 0a 20 20 20 01 4e '.VN-408473.   .N'
+Checksum: 0x4e
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+
+EDID conformity: FAIL

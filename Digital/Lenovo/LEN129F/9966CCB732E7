@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030ae9f12f9ca0000
-01160103802f1a782ece85a259539c27
-0f5054afef00818081c0810f9500b300
-714fa9c0a9cf023a801871382d40582c
-4500dc0c1100001e302a40c860846430
-18501300dc0c1100001e000000fd0032
-4c1e5311000a202020202020000000fc
-004c454e204c3232363277410a2000c8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 9f 12 f9 ca 00 00
+01 16 01 03 80 2f 1a 78 2e ce 85 a2 59 53 9c 27
+0f 50 54 af ef 00 81 80 81 c0 81 0f 95 00 b3 00
+71 4f a9 c0 a9 cf 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1e 30 2a 40 c8 60 84 64 30
+18 50 13 00 dc 0c 11 00 00 1e 00 00 00 fd 00 32
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 45 4e 20 4c 32 32 36 32 77 41 0a 20 00 c8
 
 00 ff ff ff ff ff ff 00 30 ae 9f 12 f9 ca 00 00
 01 16 01 03 80 2f 1a 78 2e ce 85 a2 59 53 9c 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 4767
-    Serial Number: 51961
+    Serial Number: ...
     Made in: week 1 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -76,3 +74,29 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'LEN L2262wA'
 Checksum: 0xc8
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 9f 12 f9 ca 00 00 '........0.......'
+  01 16 01 03 80 2f 1a 78 2e ce 85 a2 59 53 9c 27 '...../.x....YS.''
+  0f 50 54 af ef 00 81 80 81 c0 81 0f 95 00 b3 00 '.PT.............'
+  71 4f a9 c0 a9 cf 02 3a 80 18 71 38 2d 40 58 2c 'qO.....:..q8-@X,'
+  45 00 dc 0c 11 00 00 1e 30 2a 40 c8 60 84 64 30 'E.......0*@.`.d0'
+  18 50 13 00 dc 0c 11 00 00 1e 00 00 00 fd 00 32 '.P.............2'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 4c 45 4e 20 4c 32 32 36 32 77 41 0a 20 00 c8 '.LEN L2262wA. ..'
+Checksum: 0xc8
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

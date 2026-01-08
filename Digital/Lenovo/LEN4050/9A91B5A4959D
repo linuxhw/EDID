@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030ae504000000000
-0110010380211578ea1cf59758508e27
-27505400000001010101010101010101
-010101010101c71b00a0502017303020
-36004bcf10000018261700a050201730
-302036004bcf100000180000000f0081
-0a32810a2814010006af7424000000fe
-004231353445573032205636200a009f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 50 40 00 00 00 00
+01 10 01 03 80 21 15 78 ea 1c f5 97 58 50 8e 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c7 1b 00 a0 50 20 17 30 30 20
+36 00 4b cf 10 00 00 18 26 17 00 a0 50 20 17 30
+30 20 36 00 4b cf 10 00 00 18 00 00 00 0f 00 81
+0a 32 81 0a 28 14 01 00 06 af 74 24 00 00 00 fe
+00 42 31 35 34 45 57 30 32 20 56 36 20 0a 00 9f
 
 00 ff ff ff ff ff ff 00 30 ae 50 40 00 00 00 00
 01 10 01 03 80 21 15 78 ea 1c f5 97 58 50 8e 27
@@ -52,3 +50,31 @@ Block 0, Base EDID:
     Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 81 0a 32 81 0a 28 14 01 00 06 af 74 24 '.....2..(.....t$'
     Alphanumeric Data String: 'B154EW02 V6 '
 Checksum: 0x9f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 50 40 00 00 00 00 '........0.P@....'
+  01 10 01 03 80 21 15 78 ea 1c f5 97 58 50 8e 27 '.....!.x....XP.''
+  27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ''PT.............'
+  01 01 01 01 01 01 c7 1b 00 a0 50 20 17 30 30 20 '..........P .00 '
+  36 00 4b cf 10 00 00 18 26 17 00 a0 50 20 17 30 '6.K.....&...P .0'
+  30 20 36 00 4b cf 10 00 00 18 00 00 00 0f 00 81 '0 6.K...........'
+  0a 32 81 0a 28 14 01 00 06 af 74 24 00 00 00 fe '.2..(.....t$....'
+  00 42 31 35 34 45 57 30 32 20 56 36 20 0a 00 9f '.B154EW02 V6 ...'
+Checksum: 0x9f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

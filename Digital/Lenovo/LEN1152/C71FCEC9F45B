@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0030ae521101010101
-1a17010380291a78eee5b5a355499927
-135054afcf003146714f81c08180818a
-81909500950f9a29a0d0518422305098
-36009a011100001c000000fc004c3139
-3720576964650a202020000000fd0032
-4c1e510e000a202020202020000000ff
-0044323634393332310a20202020008f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae 52 11 01 01 01 01
+1a 17 01 03 80 29 1a 78 ee e5 b5 a3 55 49 99 27
+13 50 54 af cf 00 31 46 71 4f 81 c0 81 80 81 8a
+81 90 95 00 95 0f 9a 29 a0 d0 51 84 22 30 50 98
+36 00 9a 01 11 00 00 1c 00 00 00 fc 00 4c 31 39
+37 20 57 69 64 65 0a 20 20 20 00 00 00 fd 00 32
+4c 1e 51 0e 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 44 32 36 34 39 33 32 31 0a 20 20 20 20 00 8f
 
 00 ff ff ff ff ff ff 00 30 ae 52 11 01 01 01 01
 1a 17 01 03 80 29 1a 78 ee e5 b5 a3 55 49 99 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LEN
     Model: 4434
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 26 of 2013
   Basic Display Parameters & Features:
     Digital display
@@ -71,5 +69,38 @@ Block 0, Base EDID:
     Display Product Name: 'L197 Wide'
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-81 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: 'D2649321'
+    Display Product Serial Number: ...
 Checksum: 0x8f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 30 ae 52 11 01 01 01 01 '........0.R.....'
+  1a 17 01 03 80 29 1a 78 ee e5 b5 a3 55 49 99 27 '.....).x....UI.''
+  13 50 54 af cf 00 31 46 71 4f 81 c0 81 80 81 8a '.PT...1FqO......'
+  81 90 95 00 95 0f 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 9a 01 11 00 00 1c 00 00 00 fc 00 4c 31 39 '6............L19'
+  37 20 57 69 64 65 0a 20 20 20 00 00 00 fd 00 32 '7 Wide.   .....2'
+  4c 1e 51 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 'L.Q...      ....'
+  00 44 32 36 34 39 33 32 31 0a 20 20 20 20 00 8f '.D2649321.    ..'
+Checksum: 0x8f
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 141.822 MHz (Monitor: 140.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
