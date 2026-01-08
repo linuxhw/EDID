@@ -1,0 +1,248 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 14 e1 00 00 b0 7b 10 00
+2e 1d 01 03 80 3c 22 78 0a da ff a3 58 4a a2 29
+17 49 4b 20 00 00 d1 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 58 52 21 00 00 1e fe 5b 80 a0 70 38 35 40
+30 20 35 00 58 52 21 00 00 1a 00 00 00 fc 00 45
+6c 67 61 74 6f 31 30 38 30 48 44 52 00 00 00 fd
+00 17 f1 0f a0 3c 00 0a 20 20 20 20 20 20 01 7e
+
+02 03 2c f5 44 90 3f 40 1f 23 09 07 07 83 01 00
+00 67 03 0c 00 10 00 b8 3c 67 d8 5d c4 01 78 80
+03 e3 05 f2 01 e6 06 07 01 00 00 00 86 6f 80 a0
+70 38 40 40 30 20 35 00 58 52 21 00 00 1a c2 b0
+80 f0 72 38 61 40 a8 d0 35 00 58 52 21 00 00 1a
+08 e8 80 18 71 38 2d 40 58 2c 45 00 58 52 21 00
+00 1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4f
+
+00 ff ff ff ff ff ff 00 14 e1 00 00 b0 7b 10 00
+2e 1d 01 03 80 3c 22 78 0a da ff a3 58 4a a2 29
+17 49 4b 20 00 00 d1 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 58 52 21 00 00 1e fe 5b 80 a0 70 38 35 40
+30 20 35 00 58 52 21 00 00 1a 00 00 00 fc 00 45
+6c 67 61 74 6f 31 30 38 30 48 44 52 00 00 00 fd
+00 17 f1 0f a0 3c 00 0a 20 20 20 20 20 20 01 7e
+
+02 03 2c f5 44 90 3f 40 1f 23 09 07 07 83 01 00
+00 67 03 0c 00 10 00 b8 3c 67 d8 5d c4 01 78 80
+03 e3 05 f2 01 e6 06 07 01 00 00 00 86 6f 80 a0
+70 38 40 40 30 20 35 00 58 52 21 00 00 1a c2 b0
+80 f0 72 38 61 40 a8 d0 35 00 58 52 21 00 00 1a
+08 e8 80 18 71 38 2d 40 58 2c 45 00 58 52 21 00
+00 1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: EGA
+    Model: 0
+    Serial Number: ...
+    Made in: week 46 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 60 cm x 34 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3447
+    Green: 0.2910, 0.6347
+    Blue : 0.1630, 0.0927
+    White: 0.2880, 0.2958
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (600 mm x 338 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1920x1080   99.930409 Hz  16:9    113.221 kHz    235.500000 MHz (600 mm x 338 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   45 Vpol N
+    Display Product Name: 'Elgato1080HDR'
+    Display Range Limits:
+      Monitor ranges (GTF): 23-241 Hz V, 15-160 kHz H, max dotclock 600 MHz
+  Extension blocks: 1
+Checksum: 0x7e
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 5
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+    VIC  64:  1920x1080  100.000000 Hz  16:9    112.500 kHz    297.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+  Colorimetry Data Block:
+    xvYCC709
+    opRGB
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+    Gamut Boundary Description Metadata Profile P0
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 0 (50.000 cd/m^2)
+    Desired content max frame-average luminance: 0 (50.000 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (600 mm x 338 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD 4:  1920x1080  143.881735 Hz  16:9    169.349 kHz    452.500000 MHz (600 mm x 338 mm)
+                 Hfront  168 Hsync 208 Hback  376 Hpol P
+                 Vfront    3 Vsync   5 Vback   89 Vpol N
+    DTD 5:  1920x1080  240.000000 Hz  16:9    270.000 kHz    594.000000 MHz (600 mm x 338 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0x4f  Unused space in Extension Block: 29 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 14 e1 00 00 b0 7b 10 00 '.............{..'
+  2e 1d 01 03 80 3c 22 78 0a da ff a3 58 4a a2 29 '.....<"x....XJ.)'
+  17 49 4b 20 00 00 d1 c0 01 01 01 01 01 01 01 01 '.IK ............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 58 52 21 00 00 1e fe 5b 80 a0 70 38 35 40 'E.XR!....[..p85@'
+  30 20 35 00 58 52 21 00 00 1a 00 00 00 fc 00 45 '0 5.XR!........E'
+  6c 67 61 74 6f 31 30 38 30 48 44 52 00 00 00 fd 'lgato1080HDR....'
+  00 17 f1 0f a0 3c 00 0a 20 20 20 20 20 20 01 7e '.....<..      .~'
+Checksum: 0x7e
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 5
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+    VIC  64:  1920x1080  100.000000 Hz  16:9    112.500 kHz    297.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
+    Version: 1
+    Maximum TMDS Character Rate: 600 MHz
+    SCDC Present
+    Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
+    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
+  Colorimetry Data Block:
+    xvYCC709
+    opRGB
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+    Gamut Boundary Description Metadata Profile P0
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 0 (50.000 cd/m^2)
+    Desired content max frame-average luminance: 0 (50.000 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 6:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (600 mm x 338 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD 7:  1920x1080  143.881735 Hz  16:9    169.349 kHz    452.500000 MHz (600 mm x 338 mm)
+                 Hfront  168 Hsync 208 Hback  376 Hpol P
+                 Vfront    3 Vsync   5 Vback   89 Vpol N
+    DTD 8:  1920x1080  240.000000 Hz  16:9    270.000 kHz    594.000000 MHz (600 mm x 338 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0x4f  Unused space in Extension Block: 29 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 63.
+  Video Data Block: Duplicate VIC 64.
+  Video Data Block: Duplicate VIC 31.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 270.000 kHz (Monitor: 15.000 - 160.000 kHz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00158f0019ce1e0000
-05140103a1281978ee80c5a657499b23
-125054bfeb006145614c714f81408180
-8bc0010101016829a0d0518422305098
-360098ff1000001c7c2e90a0601a1e40
-30203600d9281100001afc2100905100
-203048803700d9281100001c000000fd
-00384b1e530e000a202020202020007a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 8f 00 19 ce 1e 00 00
+05 14 01 03 a1 28 19 78 ee 80 c5 a6 57 49 9b 23
+12 50 54 bf eb 00 61 45 61 4c 71 4f 81 40 81 80
+8b c0 01 01 01 01 68 29 a0 d0 51 84 22 30 50 98
+36 00 98 ff 10 00 00 1c 7c 2e 90 a0 60 1a 1e 40
+30 20 36 00 d9 28 11 00 00 1a fc 21 00 90 51 00
+20 30 48 80 37 00 d9 28 11 00 00 1c 00 00 00 fd
+00 38 4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 7a
 
 00 ff ff ff ff ff ff 00 15 8f 00 19 ce 1e 00 00
 05 14 01 03 a1 28 19 78 ee 80 c5 a6 57 49 9b 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ELO
     Model: 6400
-    Serial Number: 7886
+    Serial Number: ...
     Made in: week 5 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -78,4 +76,38 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
 Checksum: 0x7a
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 15 8f 00 19 ce 1e 00 00 '................'
+  05 14 01 03 a1 28 19 78 ee 80 c5 a6 57 49 9b 23 '.....(.x....WI.#'
+  12 50 54 bf eb 00 61 45 61 4c 71 4f 81 40 81 80 '.PT...aEaLqO.@..'
+  8b c0 01 01 01 01 68 29 a0 d0 51 84 22 30 50 98 '......h)..Q."0P.'
+  36 00 98 ff 10 00 00 1c 7c 2e 90 a0 60 1a 1e 40 '6.......|...`..@'
+  30 20 36 00 d9 28 11 00 00 1a fc 21 00 90 51 00 '0 6..(.....!..Q.'
+  20 30 48 80 37 00 d9 28 11 00 00 1c 00 00 00 fd ' 0H.7..(........'
+  00 38 4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 7a '.8K.S...      .z'
+Checksum: 0x7a
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x20.
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #2: Mismatch of image size 473x296 mm vs display size 400x250 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 473x296 mm vs display size 400x250 mm.
+  Missing Display Product Name.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 473x296mm, which is larger than the display size 400.0x250.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

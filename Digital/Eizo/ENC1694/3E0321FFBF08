@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0015c3941600000000
-330e0104a52c2178e2e691a3544a9926
-0f5054bfef80a9408180814f8140714f
-615945593159483f403062b0324040c0
-1300b0441100001e000000ff00323738
-36383132340a20202020000000fd0031
-56185e11000a202020202020000000fc
-00434732310a202020202020202000d5
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 c3 94 16 00 00 00 00
+33 0e 01 04 a5 2c 21 78 e2 e6 91 a3 54 4a 99 26
+0f 50 54 bf ef 80 a9 40 81 80 81 4f 81 40 71 4f
+61 59 45 59 31 59 48 3f 40 30 62 b0 32 40 40 c0
+13 00 b0 44 11 00 00 1e 00 00 00 ff 00 32 37 38
+36 38 31 32 34 0a 20 20 20 20 00 00 00 fd 00 31
+56 18 5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 47 32 31 0a 20 20 20 20 20 20 20 20 00 d5
 
 00 ff ff ff ff ff ff 00 15 c3 94 16 00 00 00 00
 33 0e 01 04 a5 2c 21 78 e2 e6 91 a3 54 4a 99 26
@@ -71,10 +69,39 @@ Block 0, Base EDID:
     DTD 1:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz (432 mm x 324 mm)
                  Hfront   64 Hsync 192 Hback  304 Hpol P
                  Vfront    1 Vsync   3 Vback   46 Vpol P
-    Display Product Serial Number: '27868124'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 49-86 Hz V, 24-94 kHz H, max dotclock 170 MHz
     Display Product Name: 'CG21'
 Checksum: 0xd5
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 15 c3 94 16 00 00 00 00 '................'
+  33 0e 01 04 a5 2c 21 78 e2 e6 91 a3 54 4a 99 26 '3....,!x....TJ.&'
+  0f 50 54 bf ef 80 a9 40 81 80 81 4f 81 40 71 4f '.PT....@...O.@qO'
+  61 59 45 59 31 59 48 3f 40 30 62 b0 32 40 40 c0 'aYEY1YH?@0b.2@@.'
+  13 00 b0 44 11 00 00 1e 00 00 00 ff 00 32 37 38 '...D.........278'
+  36 38 31 32 34 0a 20 20 20 20 00 00 00 fd 00 31 '68124.    .....1'
+  56 18 5e 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'V.^...      ....'
+  00 43 47 32 31 0a 20 20 20 20 20 20 20 20 00 d5 '.CG21.        ..'
+Checksum: 0xd5
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

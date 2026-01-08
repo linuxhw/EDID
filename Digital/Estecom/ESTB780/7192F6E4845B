@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00167480b7bf000000
-030f010380221b78ea41c79c574c9126
-234f54bfef0031404540614081800101
-010101010101302a009851002a403070
-1300520e1100001e000000fd00374c1e
-500d000a000000000000000000fc0044
-5047204f4620534d4152544d000000ff
-000000000000000000000000000000cc
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 16 74 80 b7 bf 00 00 00
+03 0f 01 03 80 22 1b 78 ea 41 c7 9c 57 4c 91 26
+23 4f 54 bf ef 00 31 40 45 40 61 40 81 80 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 fd 00 37 4c 1e
+50 0d 00 0a 00 00 00 00 00 00 00 00 00 fc 00 44
+50 47 20 4f 46 20 53 4d 41 52 54 4d 00 00 00 ff
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 cc
 
 00 ff ff ff ff ff ff 00 16 74 80 b7 bf 00 00 00
 03 0f 01 03 80 22 1b 78 ea 41 c7 9c 57 4c 91 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: EST
     Model: 46976
-    Serial Number: 191
+    Serial Number: ...
     Made in: week 3 of 2005
   Basic Display Parameters & Features:
     Digital display
@@ -68,5 +66,39 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 30-80 kHz H, max dotclock 130 MHz
     Display Product Name: 'DPG OF SMARTM'
-    Display Product Serial Number: ''
+    Display Product Serial Number: ...
 Checksum: 0xcc
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 16 74 80 b7 bf 00 00 00 '.........t......'
+  03 0f 01 03 80 22 1b 78 ea 41 c7 9c 57 4c 91 26 '.....".x.A..WL.&'
+  23 4f 54 bf ef 00 31 40 45 40 61 40 81 80 01 01 '#OT...1@E@a@....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 fd 00 37 4c 1e '..R..........7L.'
+  50 0d 00 0a 00 00 00 00 00 00 00 00 00 fc 00 44 'P..............D'
+  50 47 20 4f 46 20 53 4d 41 52 54 4d 00 00 00 ff 'PG OF SMARTM....'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 cc '................'
+Checksum: 0xcc
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 135.000 MHz (Monitor: 130.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: Bytes 12-17 must be 0x20.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

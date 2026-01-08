@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0015d66319e1060000
-31160103802917782aebc5a25754a027
-0c5054bfee0081c00101010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e662150b051001b30
-407036009ae61000001e000000fd0032
-4c1e3c09000a202020202020000000fc
-004c45442048393633774c730a200124
-02031001418165030c00100083010000
-d50980a020e02d101060a200a0780000
-00180000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000a3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 d6 63 19 e1 06 00 00
+31 16 01 03 80 29 17 78 2a eb c5 a2 57 54 a0 27
+0c 50 54 bf ee 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 9a e6 10 00 00 1e 00 00 00 fd 00 32
+4c 1e 3c 09 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 45 44 20 48 39 36 33 77 4c 73 0a 20 01 24
+
+02 03 10 01 41 81 65 03 0c 00 10 00 83 01 00 00
+d5 09 80 a0 20 e0 2d 10 10 60 a2 00 a0 78 00 00
+00 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a3
 
 00 ff ff ff ff ff ff 00 15 d6 63 19 e1 06 00 00
 31 16 01 03 80 29 17 78 2a eb c5 a2 57 54 a0 27
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ENV
     Model: 6499
-    Serial Number: 1761
+    Serial Number: ...
     Made in: week 49 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -103,3 +102,65 @@ Block 1, CTA-861 Extension Block:
                  Hfront   16 Hsync  96 Hback   48 Hpol N
                  Vfront   10 Vsync   2 Vback   33 Vpol N
 Checksum: 0xa3  Unused space in Extension Block: 93 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 15 d6 63 19 e1 06 00 00 '..........c.....'
+  31 16 01 03 80 29 17 78 2a eb c5 a2 57 54 a0 27 '1....).x*...WT.''
+  0c 50 54 bf ee 00 81 c0 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 66 21 50 b0 51 00 1b 30 '3.......f!P.Q..0'
+  40 70 36 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 '@p6............2'
+  4c 1e 3c 09 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.<...      ....'
+  00 4c 45 44 20 48 39 36 33 77 4c 73 0a 20 01 24 '.LED H963wLs. .$'
+Checksum: 0x24
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz (native)
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 4:   640x480    59.928571 Hz   4:3     31.462 kHz     25.170000 MHz (160 mm x 120 mm)
+                 Hfront   16 Hsync  96 Hback   48 Hpol N
+                 Vfront   10 Vsync   2 Vback   33 Vpol N
+Checksum: 0xa3  Unused space in Extension Block: 93 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Audio information is present, but bit 6 of Byte 3 of the CTA-861 Extension header indicates no Basic Audio support.
+  Detailed Timing Descriptor #3: Mismatch of image size 160x120 mm vs display size 410x230 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Speaker Allocation Data Block: Audio information is present, but bit 6 of Byte 3 of the CTA-861 Extension header indicates no Basic Audio support.
+  Detailed Timing Descriptor #4: Mismatch of image size 160x120 mm vs display size 410x230 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

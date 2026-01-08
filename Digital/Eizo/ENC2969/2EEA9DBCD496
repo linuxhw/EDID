@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0015c3692901010101
-2a1e0104a5221c78e28db5a2574fa028
-0e5054a308008140810081c001010101
-010101010101302a009851002a403070
-1300520f1100001e000000ff00343231
-38353130300a20202020000000fd0037
-3d1f400b000a202020202020000000fc
-0053313730332d410a202020202000ed
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 c3 69 29 01 01 01 01
+2a 1e 01 04 a5 22 1c 78 e2 8d b5 a2 57 4f a0 28
+0e 50 54 a3 08 00 81 40 81 00 81 c0 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0f 11 00 00 1e 00 00 00 ff 00 34 32 31
+38 35 31 30 30 0a 20 20 20 20 00 00 00 fd 00 37
+3d 1f 40 0b 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 31 37 30 33 2d 41 0a 20 20 20 20 20 00 ed
 
 00 ff ff ff ff ff ff 00 15 c3 69 29 01 01 01 01
 2a 1e 01 04 a5 22 1c 78 e2 8d b5 a2 57 4f a0 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ENC
     Model: 10601
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 42 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -57,8 +55,42 @@ Block 0, Base EDID:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (338 mm x 271 mm)
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
-    Display Product Serial Number: '42185100'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 55-61 Hz V, 31-64 kHz H, max dotclock 110 MHz
     Display Product Name: 'S1703-A'
 Checksum: 0xed
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 15 c3 69 29 01 01 01 01 '..........i)....'
+  2a 1e 01 04 a5 22 1c 78 e2 8d b5 a2 57 4f a0 28 '*....".x....WO.('
+  0e 50 54 a3 08 00 81 40 81 00 81 c0 01 01 01 01 '.PT....@........'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0f 11 00 00 1e 00 00 00 ff 00 34 32 31 '..R..........421'
+  38 35 31 30 30 0a 20 20 20 20 00 00 00 fd 00 37 '85100.    .....7'
+  3d 1f 40 0b 00 0a 20 20 20 20 20 20 00 00 00 fc '=.@...      ....'
+  00 53 31 37 30 33 2d 41 0a 20 20 20 20 20 00 ed '.S1703-A.     ..'
+Checksum: 0xed
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 70.082 Hz (Monitor: 55.000 - 61.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

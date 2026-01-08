@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0015c3922001010101
-2716010380342178ea1ec5ae4f34b126
-0e5054a10800a94081808140b3000101
-010101010101283c80a070b023403020
-360007442100001a000000ff00303335
-35373039320a20202020000000fd003b
-3d1a4e11000a202020202020000000fc
-004347323433570a2020202020200021
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 c3 92 20 01 01 01 01
+27 16 01 03 80 34 21 78 ea 1e c5 ae 4f 34 b1 26
+0e 50 54 a1 08 00 a9 40 81 80 81 40 b3 00 01 01
+01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 07 44 21 00 00 1a 00 00 00 ff 00 30 33 35
+35 37 30 39 32 0a 20 20 20 20 00 00 00 fd 00 3b
+3d 1a 4e 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 47 32 34 33 57 0a 20 20 20 20 20 20 00 21
 
 00 ff ff ff ff ff ff 00 15 c3 92 20 01 01 01 01
 27 16 01 03 80 34 21 78 ea 1e c5 ae 4f 34 b1 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ENC
     Model: 8338
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 39 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -55,8 +53,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (519 mm x 324 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   26 Vpol N
-    Display Product Serial Number: '03557092'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 59-61 Hz V, 26-78 kHz H, max dotclock 170 MHz
     Display Product Name: 'CG243W'
 Checksum: 0x21
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 15 c3 92 20 01 01 01 01 '........... ....'
+  27 16 01 03 80 34 21 78 ea 1e c5 ae 4f 34 b1 26 ''....4!x....O4.&'
+  0e 50 54 a1 08 00 a9 40 81 80 81 40 b3 00 01 01 '.PT....@...@....'
+  01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
+  36 00 07 44 21 00 00 1a 00 00 00 ff 00 30 33 35 '6..D!........035'
+  35 37 30 39 32 0a 20 20 20 20 00 00 00 fd 00 3b '57092.    .....;'
+  3d 1a 4e 11 00 0a 20 20 20 20 20 20 00 00 00 fc '=.N...      ....'
+  00 43 47 32 34 33 57 0a 20 20 20 20 20 20 00 21 '.CG243W.      .!'
+Checksum: 0x21
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

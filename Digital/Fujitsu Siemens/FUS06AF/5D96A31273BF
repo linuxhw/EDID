@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001ab3af0601000000
-31120103802f1e782aee95a3544c9926
-0f5054a54b009500950f8100810f81c0
-8180b300010121399030621a274068b0
-3600d9281100001c7c2e90a0601a1e40
-30203600d9281100001a000000fc0042
-3232572d350a202020202020000000ff
-00594536503534373431390a202000b7
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1a b3 af 06 01 00 00 00
+31 12 01 03 80 2f 1e 78 2a ee 95 a3 54 4c 99 26
+0f 50 54 a5 4b 00 95 00 95 0f 81 00 81 0f 81 c0
+81 80 b3 00 01 01 21 39 90 30 62 1a 27 40 68 b0
+36 00 d9 28 11 00 00 1c 7c 2e 90 a0 60 1a 1e 40
+30 20 36 00 d9 28 11 00 00 1a 00 00 00 fc 00 42
+32 32 57 2d 35 0a 20 20 20 20 20 20 00 00 00 ff
+00 59 45 36 50 35 34 37 34 31 39 0a 20 20 00 b7
 
 00 ff ff ff ff ff ff 00 1a b3 af 06 01 00 00 00
 31 12 01 03 80 2f 1e 78 2a ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: FUS
     Model: 1711
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 49 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -66,5 +64,31 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   21 Vpol N
     Display Product Name: 'B22W-5'
-    Display Product Serial Number: 'YE6P547419'
+    Display Product Serial Number: ...
 Checksum: 0xb7
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1a b3 af 06 01 00 00 00 '................'
+  31 12 01 03 80 2f 1e 78 2a ee 95 a3 54 4c 99 26 '1..../.x*...TL.&'
+  0f 50 54 a5 4b 00 95 00 95 0f 81 00 81 0f 81 c0 '.PT.K...........'
+  81 80 b3 00 01 01 21 39 90 30 62 1a 27 40 68 b0 '......!9.0b.'@h.'
+  36 00 d9 28 11 00 00 1c 7c 2e 90 a0 60 1a 1e 40 '6..(....|...`..@'
+  30 20 36 00 d9 28 11 00 00 1a 00 00 00 fc 00 42 '0 6..(.........B'
+  32 32 57 2d 35 0a 20 20 20 20 20 20 00 00 00 ff '22W-5.      ....'
+  00 59 45 36 50 35 34 37 34 31 39 0a 20 20 00 b7 '.YE6P547419.  ..'
+Checksum: 0xb7
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

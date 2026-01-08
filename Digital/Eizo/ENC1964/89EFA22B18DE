@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0015c3641901010101
-1f12010380301e78ea0ebbaa5137ab25
-14585ba1080081808140010101010101
-0101010101017c2e90a0601a1e403020
-3600da291100001a000000ff00323637
-34353037380a20202020000000fd002f
-3d1a410c000a202020202020000000fc
-004347323232570a20202020202000d2
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 c3 64 19 01 01 01 01
+1f 12 01 03 80 30 1e 78 ea 0e bb aa 51 37 ab 25
+14 58 5b a1 08 00 81 80 81 40 01 01 01 01 01 01
+01 01 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20
+36 00 da 29 11 00 00 1a 00 00 00 ff 00 32 36 37
+34 35 30 37 38 0a 20 20 20 20 00 00 00 fd 00 2f
+3d 1a 41 0c 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 43 47 32 32 32 57 0a 20 20 20 20 20 20 00 d2
 
 00 ff ff ff ff ff ff 00 15 c3 64 19 01 01 01 01
 1f 12 01 03 80 30 1e 78 ea 0e bb aa 51 37 ab 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ENC
     Model: 6500
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 31 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -53,10 +51,34 @@ Block 0, Base EDID:
     DTD 1:  1680x1050   59.883253 Hz  16:10    64.674 kHz    119.000000 MHz (474 mm x 297 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   21 Vpol N
-    Display Product Serial Number: '26745078'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 47-61 Hz V, 26-65 kHz H, max dotclock 120 MHz
     Display Product Name: 'CG222W'
 Checksum: 0xd2
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 15 c3 64 19 01 01 01 01 '..........d.....'
+  1f 12 01 03 80 30 1e 78 ea 0e bb aa 51 37 ab 25 '.....0.x....Q7.%'
+  14 58 5b a1 08 00 81 80 81 40 01 01 01 01 01 01 '.X[......@......'
+  01 01 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20 '......|...`..@0 '
+  36 00 da 29 11 00 00 1a 00 00 00 ff 00 32 36 37 '6..).........267'
+  34 35 30 37 38 0a 20 20 20 20 00 00 00 fd 00 2f '45078.    ...../'
+  3d 1a 41 0c 00 0a 20 20 20 20 20 20 00 00 00 fc '=.A...      ....'
+  00 43 47 32 32 32 57 0a 20 20 20 20 20 20 00 d2 '.CG222W.      ..'
+Checksum: 0xd2
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.883 - 70.082 Hz (Monitor: 47.000 - 61.000 Hz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

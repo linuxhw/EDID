@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0016090222040d0000
-20110104a52f1d7822e525a65444a125
-145054bfef808180714f8140950f01cf
-9500014001c021399030621a274068b0
-3600da291100001c000000ff004a3830
-37384341303033333332000000fd0032
-4c1e530f000a202020202020000000fc
-004732324c576b0a20202020202000e2
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 16 09 02 22 04 0d 00 00
+20 11 01 04 a5 2f 1d 78 22 e5 25 a6 54 44 a1 25
+14 50 54 bf ef 80 81 80 71 4f 81 40 95 0f 01 cf
+95 00 01 40 01 c0 21 39 90 30 62 1a 27 40 68 b0
+36 00 da 29 11 00 00 1c 00 00 00 ff 00 4a 38 30
+37 38 43 41 30 30 33 33 33 32 00 00 00 fd 00 32
+4c 1e 53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 47 32 32 4c 57 6b 0a 20 20 20 20 20 20 00 e2
 
 00 ff ff ff ff ff ff 00 16 09 02 22 04 0d 00 00
 20 11 01 04 a5 2f 1d 78 22 e5 25 a6 54 44 a1 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: EPI
     Model: 8706
-    Serial Number: 3332
+    Serial Number: ...
     Made in: week 32 of 2007
   Basic Display Parameters & Features:
     Digital display
@@ -69,10 +67,42 @@ Block 0, Base EDID:
     DTD 1:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz (474 mm x 297 mm)
                  Hfront  104 Hsync 176 Hback  280 Hpol N
                  Vfront    3 Vsync   6 Vback   30 Vpol P
-    Display Product Serial Number: 'J8078CA003332'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 150 MHz
     Display Product Name: 'G22LWk'
 Checksum: 0xe2
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 16 09 02 22 04 0d 00 00 '..........."....'
+  20 11 01 04 a5 2f 1d 78 22 e5 25 a6 54 44 a1 25 ' ..../.x".%.TD.%'
+  14 50 54 bf ef 80 81 80 71 4f 81 40 95 0f 01 cf '.PT.....qO.@....'
+  95 00 01 40 01 c0 21 39 90 30 62 1a 27 40 68 b0 '...@..!9.0b.'@h.'
+  36 00 da 29 11 00 00 1c 00 00 00 ff 00 4a 38 30 '6..).........J80'
+  37 38 43 41 30 30 33 33 33 32 00 00 00 fd 00 32 '78CA003332.....2'
+  4c 1e 53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 47 32 32 4c 57 6b 0a 20 20 20 20 20 20 00 e2 '.G22LWk.      ..'
+Checksum: 0xe2
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x01cf.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0140.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x01c0.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

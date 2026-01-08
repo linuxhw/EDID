@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0015c3442301010101
-2016010380331d78ea2795a9544f9e26
-0a5054a1080081808140b30081c00101
-010101010101023a801871382d40582c
-4500fe1f1100001e000000ff00333136
-32353037320a20202020000000fd003b
-3d1f440f000a202020202020000000fc
-004653323333330a2020202020200079
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 c3 44 23 01 01 01 01
+20 16 01 03 80 33 1d 78 ea 27 95 a9 54 4f 9e 26
+0a 50 54 a1 08 00 81 80 81 40 b3 00 81 c0 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fe 1f 11 00 00 1e 00 00 00 ff 00 33 31 36
+32 35 30 37 32 0a 20 20 20 20 00 00 00 fd 00 3b
+3d 1f 44 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 46 53 32 33 33 33 0a 20 20 20 20 20 20 00 79
 
 00 ff ff ff ff ff ff 00 15 c3 44 23 01 01 01 01
 20 16 01 03 80 33 1d 78 ea 27 95 a9 54 4f 9e 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ENC
     Model: 9028
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 32 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -55,10 +53,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (510 mm x 287 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '31625072'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 59-61 Hz V, 31-68 kHz H, max dotclock 150 MHz
     Display Product Name: 'FS2333'
 Checksum: 0x79
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 15 c3 44 23 01 01 01 01 '..........D#....'
+  20 16 01 03 80 33 1d 78 ea 27 95 a9 54 4f 9e 26 ' ....3.x.'..TO.&'
+  0a 50 54 a1 08 00 81 80 81 40 b3 00 81 c0 01 01 '.PT......@......'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fe 1f 11 00 00 1e 00 00 00 ff 00 33 31 36 'E............316'
+  32 35 30 37 32 0a 20 20 20 20 00 00 00 fd 00 3b '25072.    .....;'
+  3d 1f 44 0f 00 0a 20 20 20 20 20 20 00 00 00 fc '=.D...      ....'
+  00 46 53 32 33 33 33 0a 20 20 20 20 20 20 00 79 '.FS2333.      .y'
+Checksum: 0x79
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

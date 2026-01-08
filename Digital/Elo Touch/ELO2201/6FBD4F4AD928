@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00158f01229e5a0000
-281a0103802f1a782a3920a35951a025
-0f505423080081c081408180d1c00101
-010101010101023a801871382d40582c
-4500dc0c1100001e662156aa51001e30
-468f3300dc0c1100001e21399030621a
-274068b03600dc0c1100001c9a29a0d0
-5184223050983600dc0c1100001c00b5
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 8f 01 22 9e 5a 00 00
+28 1a 01 03 80 2f 1a 78 2a 39 20 a3 59 51 a0 25
+0f 50 54 23 08 00 81 c0 81 40 81 80 d1 c0 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 dc 0c 11 00 00 1e 21 39 90 30 62 1a
+27 40 68 b0 36 00 dc 0c 11 00 00 1c 9a 29 a0 d0
+51 84 22 30 50 98 36 00 dc 0c 11 00 00 1c 00 b5
 
 00 ff ff ff ff ff ff 00 15 8f 01 22 9e 5a 00 00
 28 1a 01 03 80 2f 1a 78 2a 39 20 a3 59 51 a0 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ELO
     Model: 8705
-    Serial Number: 23198
+    Serial Number: ...
     Made in: week 40 of 2016
   Basic Display Parameters & Features:
     Digital display
@@ -65,3 +63,30 @@ Block 0, Base EDID:
                  Hfront   80 Hsync 152 Hback  232 Hpol N
                  Vfront    3 Vsync   6 Vback   25 Vpol P
 Checksum: 0xb5
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 15 8f 01 22 9e 5a 00 00 '...........".Z..'
+  28 1a 01 03 80 2f 1a 78 2a 39 20 a3 59 51 a0 25 '(..../.x*9 .YQ.%'
+  0f 50 54 23 08 00 81 c0 81 40 81 80 d1 c0 01 01 '.PT#.....@......'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dc 0c 11 00 00 1e 66 21 56 aa 51 00 1e 30 'E.......f!V.Q..0'
+  46 8f 33 00 dc 0c 11 00 00 1e 21 39 90 30 62 1a 'F.3.......!9.0b.'
+  27 40 68 b0 36 00 dc 0c 11 00 00 1c 9a 29 a0 d0 ''@h.6........)..'
+  51 84 22 30 50 98 36 00 dc 0c 11 00 00 1c 00 b5 'Q."0P.6.........'
+Checksum: 0xb5
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

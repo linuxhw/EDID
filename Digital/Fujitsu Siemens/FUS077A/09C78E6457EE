@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001ab37a0701010101
-2e110103803420782aef95a3544c9b26
-0f5054a54b009500950f8100810f81c0
-8180a9400101283c80a070b023403020
-360006442100001a000000fd00384c1e
-5210000a202020202020000000fc004c
-3234572d320a202020202020000000ff
-00594535523030333534340a202000b0
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1a b3 7a 07 01 01 01 01
+2e 11 01 03 80 34 20 78 2a ef 95 a3 54 4c 9b 26
+0f 50 54 a5 4b 00 95 00 95 0f 81 00 81 0f 81 c0
+81 80 a9 40 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 06 44 21 00 00 1a 00 00 00 fd 00 38 4c 1e
+52 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+32 34 57 2d 32 0a 20 20 20 20 20 20 00 00 00 ff
+00 59 45 35 52 30 30 33 35 34 34 0a 20 20 00 b0
 
 00 ff ff ff ff ff ff 00 1a b3 7a 07 01 01 01 01
 2e 11 01 03 80 34 20 78 2a ef 95 a3 54 4c 9b 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: FUS
     Model: 1914
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 46 of 2007
   Basic Display Parameters & Features:
     Digital display
@@ -65,5 +63,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-82 kHz H, max dotclock 160 MHz
     Display Product Name: 'L24W-2'
-    Display Product Serial Number: 'YE5R003544'
+    Display Product Serial Number: ...
 Checksum: 0xb0
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1a b3 7a 07 01 01 01 01 '..........z.....'
+  2e 11 01 03 80 34 20 78 2a ef 95 a3 54 4c 9b 26 '.....4 x*...TL.&'
+  0f 50 54 a5 4b 00 95 00 95 0f 81 00 81 0f 81 c0 '.PT.K...........'
+  81 80 a9 40 01 01 28 3c 80 a0 70 b0 23 40 30 20 '...@..(<..p.#@0 '
+  36 00 06 44 21 00 00 1a 00 00 00 fd 00 38 4c 1e '6..D!........8L.'
+  52 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'R...      .....L'
+  32 34 57 2d 32 0a 20 20 20 20 20 20 00 00 00 ff '24W-2.      ....'
+  00 59 45 35 52 30 30 33 35 34 34 0a 20 20 00 b0 '.YE5R003544.  ..'
+Checksum: 0xb0
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 162.000 MHz (Monitor: 160.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

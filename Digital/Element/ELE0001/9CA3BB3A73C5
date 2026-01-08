@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff001585010000000000
-0a200103803c21782a3f15a55750a027
-0f50542fcf0081c08100814081809500
-a9c0b3000101023a801871382d40582c
-4500584a2100001e000000fd00324c1e
-5313000a202020202020000000fc0045
-4d32465041423237420a2020000000ff
-003830313137333032343030303101b9
-02031cb14604130311019067030c0010
-00382d681a00000101304bed83488018
-71382d4030203500584a2100001e6621
-56aa51001e30468f3300584a2100001e
-8c0ad08a20e02d10103e9600584a2100
-00188c0ad090204031200c405500584a
-21000018000000000000000000000000
-00000000000000000000000000000058
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 85 01 00 00 00 00 00
+0a 20 01 03 80 3c 21 78 2a 3f 15 a5 57 50 a0 27
+0f 50 54 2f cf 00 81 c0 81 00 81 40 81 80 95 00
+a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 58 4a 21 00 00 1e 00 00 00 fd 00 32 4c 1e
+53 13 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45
+4d 32 46 50 41 42 32 37 42 0a 20 20 00 00 00 ff
+00 38 30 31 31 37 33 30 32 34 30 30 30 31 01 b9
+
+02 03 1c b1 46 04 13 03 11 01 90 67 03 0c 00 10
+00 38 2d 68 1a 00 00 01 01 30 4b ed 83 48 80 18
+71 38 2d 40 30 20 35 00 58 4a 21 00 00 1e 66 21
+56 aa 51 00 1e 30 46 8f 33 00 58 4a 21 00 00 1e
+8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 58 4a 21 00
+00 18 8c 0a d0 90 20 40 31 20 0c 40 55 00 58 4a
+21 00 00 18 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 58
 
 00 ff ff ff ff ff ff 00 15 85 01 00 00 00 00 00
 0a 20 01 03 80 3c 21 78 2a 3f 15 a5 57 50 a0 27
@@ -84,7 +83,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 190 MHz
     Display Product Name: 'EM2FPAB27B'
-    Display Product Serial Number: '8011730240001'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0xb9
 
@@ -128,3 +127,90 @@ Block 1, CTA-861 Extension Block:
                  Hfront   12 Hsync  64 Hback   68 Hpol N
                  Vfront    5 Vsync   5 Vback   39 Vpol N
 Checksum: 0x58  Unused space in Extension Block: 27 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 15 85 01 00 00 00 00 00 '................'
+  0a 20 01 03 80 3c 21 78 2a 3f 15 a5 57 50 a0 27 '. ...<!x*?..WP.''
+  0f 50 54 2f cf 00 81 c0 81 00 81 40 81 80 95 00 '.PT/.......@....'
+  a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 58 4a 21 00 00 1e 00 00 00 fd 00 32 4c 1e 'E.XJ!........2L.'
+  53 13 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45 'S...      .....E'
+  4d 32 46 50 41 42 32 37 42 0a 20 20 00 00 00 ff 'M2FPAB27B.  ....'
+  00 38 30 31 31 37 33 30 32 34 30 30 30 31 01 b9 '.8011730240001..'
+Checksum: 0xb9
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 75 Hz
+    Flags 1.x: 0xed (MCCS)
+  Detailed Timing Descriptors:
+    DTD 6:  1920x1080   75.002020 Hz  16:9     84.377 kHz    185.630000 MHz (600 mm x 330 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    3 Vsync   5 Vback   37 Vpol P
+    DTD 7:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (600 mm x 330 mm)
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    DTD 8:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (600 mm x 330 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 9:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (600 mm x 330 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+Checksum: 0x58  Unused space in Extension Block: 27 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 16.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.250 - 84.377 kHz (Monitor: 30.000 - 83.000 kHz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

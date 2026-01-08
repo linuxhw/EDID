@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0015c3462101010101
-35140104b52c2178e2e69ba3544a9926
-0f4c50a10800a9408180814001010101
-010101010101483f403062b0324040c0
-1300b0441100001e000000ff00323638
-37383132300a20202020000000fd003b
-3d1f6411000a202020202020000000fc
-0052583232300a2020202020202000bc
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 15 c3 46 21 01 01 01 01
+35 14 01 04 b5 2c 21 78 e2 e6 9b a3 54 4a 99 26
+0f 4c 50 a1 08 00 a9 40 81 80 81 40 01 01 01 01
+01 01 01 01 01 01 48 3f 40 30 62 b0 32 40 40 c0
+13 00 b0 44 11 00 00 1e 00 00 00 ff 00 32 36 38
+37 38 31 32 30 0a 20 20 20 20 00 00 00 fd 00 3b
+3d 1f 64 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 52 58 32 32 30 0a 20 20 20 20 20 20 20 00 bc
 
 00 ff ff ff ff ff ff 00 15 c3 46 21 01 01 01 01
 35 14 01 04 b5 2c 21 78 e2 e6 9b a3 54 4a 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ENC
     Model: 8518
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 53 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -56,10 +54,42 @@ Block 0, Base EDID:
     DTD 1:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz (432 mm x 324 mm)
                  Hfront   64 Hsync 192 Hback  304 Hpol P
                  Vfront    1 Vsync   3 Vback   46 Vpol P
-    Display Product Serial Number: '26878120'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 59-61 Hz V, 31-100 kHz H, max dotclock 170 MHz
     Display Product Name: 'RX220'
 Checksum: 0xbc
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 15 c3 46 21 01 01 01 01 '..........F!....'
+  35 14 01 04 b5 2c 21 78 e2 e6 9b a3 54 4a 99 26 '5....,!x....TJ.&'
+  0f 4c 50 a1 08 00 a9 40 81 80 81 40 01 01 01 01 '.LP....@...@....'
+  01 01 01 01 01 01 48 3f 40 30 62 b0 32 40 40 c0 '......H?@0b.2@@.'
+  13 00 b0 44 11 00 00 1e 00 00 00 ff 00 32 36 38 '...D.........268'
+  37 38 31 32 30 0a 20 20 20 20 00 00 00 fd 00 3b '78120.    .....;'
+  3d 1f 64 11 00 0a 20 20 20 20 20 20 00 00 00 fc '=.d...      ....'
+  00 52 58 32 32 30 0a 20 20 20 20 20 20 20 00 bc '.RX220.       ..'
+Checksum: 0xbc
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff003103002701000000
-341d0104a53c22783f64f5ad5049a322
-135054a54b00818081c081409500a9c0
-b300714fd1c0023a801871382d40582c
-450056502100001e869f801871382d40
-582c450056502100001a000000fc004e
-323746570a20202020202020000000fd
-0030a5b7b729010a2020202020200106
-020324f123097f07830100004e900102
-030405111213141f292f3f681a000001
-0130a5008b6f80a07038404030203500
-56502100001efc7e8088703812401820
-350056502100001e0000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000f0
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 31 03 00 27 01 00 00 00
+34 1d 01 04 a5 3c 22 78 3f 64 f5 ad 50 49 a3 22
+13 50 54 a5 4b 00 81 80 81 c0 81 40 95 00 a9 c0
+b3 00 71 4f d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 86 9f 80 18 71 38 2d 40
+58 2c 45 00 56 50 21 00 00 1a 00 00 00 fc 00 4e
+32 37 46 57 0a 20 20 20 20 20 20 20 00 00 00 fd
+00 30 a5 b7 b7 29 01 0a 20 20 20 20 20 20 01 06
+
+02 03 24 f1 23 09 7f 07 83 01 00 00 4e 90 01 02
+03 04 05 11 12 13 14 1f 29 2f 3f 68 1a 00 00 01
+01 30 a5 00 8b 6f 80 a0 70 38 40 40 30 20 35 00
+56 50 21 00 00 1e fc 7e 80 88 70 38 12 40 18 20
+35 00 56 50 21 00 00 1e 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f0
 
 00 ff ff ff ff ff ff 00 31 03 00 27 01 00 00 00
 34 1d 01 04 a5 3c 22 78 3f 64 f5 ad 50 49 a3 22
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LHC
     Model: 9984
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 52 of 2019
   Basic Display Parameters & Features:
     Digital display
@@ -138,4 +137,99 @@ Block 1, CTA-861 Extension Block:
                  Vfront    3 Vsync   5 Vback   10 Vpol P
 Checksum: 0xf0  Unused space in Extension Block: 55 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 31 03 00 27 01 00 00 00 '........1..'....'
+  34 1d 01 04 a5 3c 22 78 3f 64 f5 ad 50 49 a3 22 '4....<"x?d..PI."'
+  13 50 54 a5 4b 00 81 80 81 c0 81 40 95 00 a9 c0 '.PT.K......@....'
+  b3 00 71 4f d1 c0 02 3a 80 18 71 38 2d 40 58 2c '..qO...:..q8-@X,'
+  45 00 56 50 21 00 00 1e 86 9f 80 18 71 38 2d 40 'E.VP!.......q8-@'
+  58 2c 45 00 56 50 21 00 00 1a 00 00 00 fc 00 4e 'X,E.VP!........N'
+  32 37 46 57 0a 20 20 20 20 20 20 20 00 00 00 fd '27FW.       ....'
+  00 30 a5 b7 b7 29 01 0a 20 20 20 20 20 20 01 06 '.0...)..      ..'
+Checksum: 0x06
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  41:  1280x720   100.000000 Hz  16:9     75.000 kHz    148.500000 MHz
+    VIC  47:  1280x720   120.000000 Hz  16:9     90.000 kHz    148.500000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+  Detailed Timing Descriptors:
+    DTD 5:  1920x1080  120.003194 Hz  16:9    137.284 kHz    285.550000 MHz (598 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol P
+    DTD 6:  1920x1080  144.000765 Hz  16:9    158.113 kHz    325.080000 MHz (598 mm x 336 mm)
+                 Hfront   24 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   10 Vpol P
+Checksum: 0xf0  Unused space in Extension Block: 55 bytes
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 185.627 kHz (Monitor: 183.000 - 183.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 41.
+  Video Data Block: Duplicate VIC 47.
+  Video Data Block: Duplicate VIC 63.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL
