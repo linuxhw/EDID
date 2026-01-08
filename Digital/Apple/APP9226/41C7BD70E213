@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0006102692265bbb02
-26140104b53c2278226fb1a7554c9e25
-0c505400000001010101010101010101
-010101010101565e00a0a0a029503020
-350055502100001a1a1d008051d01c20
-4080350055502100001c000000ff0032
-41303338394a42364a4c0a20000000fc
-004c45442043696e656d610a20200175
-02030cc12309070783010000565e00a0
-a0a029503020350055502100001a1a1d
-008051d01c204080350055502100001c
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000013
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 10 26 92 26 5b bb 02
+26 14 01 04 b5 3c 22 78 22 6f b1 a7 55 4c 9e 25
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 55 50 21 00 00 1a 1a 1d 00 80 51 d0 1c 20
+40 80 35 00 55 50 21 00 00 1c 00 00 00 ff 00 32
+41 30 33 38 39 4a 42 36 4a 4c 0a 20 00 00 00 fc
+00 4c 45 44 20 43 69 6e 65 6d 61 0a 20 20 01 75
+
+02 03 0c c1 23 09 07 07 83 01 00 00 56 5e 00 a0
+a0 a0 29 50 30 20 35 00 55 50 21 00 00 1a 1a 1d
+00 80 51 d0 1c 20 40 80 35 00 55 50 21 00 00 1c
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13
 
 00 ff ff ff ff ff ff 00 06 10 26 92 26 5b bb 02
 26 14 01 04 b5 3c 22 78 22 6f b1 a7 55 4c 9e 25
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: APP
     Model: 37414
-    Serial Number: 45832998
+    Serial Number: ...
     Made in: week 38 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -69,7 +68,7 @@ Block 0, Base EDID:
     DTD 2:  1280x720    59.855126 Hz  16:9     44.772 kHz     74.500000 MHz (597 mm x 336 mm)
                  Hfront   64 Hsync 128 Hback  192 Hpol N
                  Vfront    3 Vsync   5 Vback   20 Vpol P
-    Display Product Serial Number: '2A0389JB6JL'
+    Display Product Serial Number: ...
     Display Product Name: 'LED Cinema'
   Extension blocks: 1
 Checksum: 0x75
@@ -97,4 +96,65 @@ Block 1, CTA-861 Extension Block:
                  Vfront    3 Vsync   5 Vback   20 Vpol P
 Checksum: 0x13  Unused space in Extension Block: 79 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 10 26 92 26 5b bb 02 '..........&.&[..'
+  26 14 01 04 b5 3c 22 78 22 6f b1 a7 55 4c 9e 25 '&....<"x"o..UL.%'
+  0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
+  35 00 55 50 21 00 00 1a 1a 1d 00 80 51 d0 1c 20 '5.UP!.......Q.. '
+  40 80 35 00 55 50 21 00 00 1c 00 00 00 ff 00 32 '@.5.UP!........2'
+  41 30 33 38 39 4a 42 36 4a 4c 0a 20 00 00 00 fc 'A0389JB6JL. ....'
+  00 4c 45 44 20 43 69 6e 65 6d 61 0a 20 20 01 75 '.LED Cinema.  .u'
+Checksum: 0x75
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 5:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 6:  1280x720    59.855126 Hz  16:9     44.772 kHz     74.500000 MHz (597 mm x 336 mm)
+                 Hfront   64 Hsync 128 Hback  192 Hpol N
+                 Vfront    3 Vsync   5 Vback   20 Vpol P
+Checksum: 0x13  Unused space in Extension Block: 79 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

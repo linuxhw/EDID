@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469a3278c470400
-27170103813c22782aa595aa544fa126
-0a5054b7ef00d1c0b300950081808140
-810081c0714f565e00a0a0a029503020
-350055502100001a000000ff0044394c
-4d54463238303436300a000000fd0032
-4b186321000a202020202020000000fc
-00415355532050423237380a20200062
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 a3 27 8c 47 04 00
+27 17 01 03 81 3c 22 78 2a a5 95 aa 54 4f a1 26
+0a 50 54 b7 ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 00 81 c0 71 4f 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 55 50 21 00 00 1a 00 00 00 ff 00 44 39 4c
+4d 54 46 32 38 30 34 36 30 0a 00 00 00 fd 00 32
+4b 18 63 21 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 53 55 53 20 50 42 32 37 38 0a 20 20 00 62
 
 00 ff ff ff ff ff ff 00 04 69 a3 27 8c 47 04 00
 27 17 01 03 81 3c 22 78 2a a5 95 aa 54 4f a1 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 10147
-    Serial Number: 280460
+    Serial Number: ...
     Made in: week 39 of 2013
   Basic Display Parameters & Features:
     Digital display
@@ -69,8 +67,32 @@ Block 0, Base EDID:
     DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
-    Display Product Serial Number: 'D9LMTF280460'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 24-99 kHz H, max dotclock 330 MHz
     Display Product Name: 'ASUS PB278'
 Checksum: 0x62
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 a3 27 8c 47 04 00 '.........i.'.G..'
+  27 17 01 03 81 3c 22 78 2a a5 95 aa 54 4f a1 26 ''....<"x*...TO.&'
+  0a 50 54 b7 ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 00 81 c0 71 4f 56 5e 00 a0 a0 a0 29 50 30 20 '....qOV^....)P0 '
+  35 00 55 50 21 00 00 1a 00 00 00 ff 00 44 39 4c '5.UP!........D9L'
+  4d 54 46 32 38 30 34 36 30 0a 00 00 00 fd 00 32 'MTF280460......2'
+  4b 18 63 21 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.c!..      ....'
+  00 41 53 55 53 20 50 42 32 37 38 0a 20 20 00 62 '.ASUS PB278.  .b'
+Checksum: 0x62
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

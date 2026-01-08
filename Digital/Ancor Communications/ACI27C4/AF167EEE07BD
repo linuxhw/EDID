@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469c42701010101
-081b0103803c2278ea53a5a756529c26
-115054afef808100814081809500b300
-8bc0a9400101023a801871382d40582c
-450056502100001e000000fd00324c1e
-530f000a202020202020000000fc0056
-433237390a20202020202020000000ff
-0048324c4d52533032313332300a003f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 c4 27 01 01 01 01
+08 1b 01 03 80 3c 22 78 ea 53 a5 a7 56 52 9c 26
+11 50 54 af ef 80 81 00 81 40 81 80 95 00 b3 00
+8b c0 a9 40 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 fd 00 32 4c 1e
+53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56
+43 32 37 39 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 48 32 4c 4d 52 53 30 32 31 33 32 30 0a 00 3f
 
 00 ff ff ff ff ff ff 00 04 69 c4 27 01 01 01 01
 08 1b 01 03 80 3c 22 78 ea 53 a5 a7 56 52 9c 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 10180
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 8 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -71,7 +69,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 150 MHz
     Display Product Name: 'VC279'
-    Display Product Serial Number: 'H2LMRS021320'
+    Display Product Serial Number: ...
 Checksum: 0x3f
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 c4 27 01 01 01 01 '.........i.'....'
+  08 1b 01 03 80 3c 22 78 ea 53 a5 a7 56 52 9c 26 '.....<"x.S..VR.&'
+  11 50 54 af ef 80 81 00 81 40 81 80 95 00 b3 00 '.PT......@......'
+  8b c0 a9 40 01 01 02 3a 80 18 71 38 2d 40 58 2c '...@...:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 fd 00 32 4c 1e 'E.VP!........2L.'
+  53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56 'S...      .....V'
+  43 32 37 39 0a 20 20 20 20 20 20 20 00 00 00 ff 'C279.       ....'
+  00 48 32 4c 4d 52 53 30 32 31 33 32 30 0a 00 3f '.H2LMRS021320..?'
+Checksum: 0x3f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 162.000 MHz (Monitor: 150.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

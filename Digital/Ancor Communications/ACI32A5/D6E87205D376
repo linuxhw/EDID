@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000469a53201010101
-0f19010380472878ea9185a7554ea025
-0c5054bfef00714f8180814081c09500
-b300d1c0d100565e00a0a0a029503020
-3500c48f2100001a000000fd00314c1d
-7119000a202020202020000000fc0050
-423332380a20202020202020000000ff
-0046344c4d51533033363139350a0039
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 69 a5 32 01 01 01 01
+0f 19 01 03 80 47 28 78 ea 91 85 a7 55 4e a0 25
+0c 50 54 bf ef 00 71 4f 81 80 81 40 81 c0 95 00
+b3 00 d1 c0 d1 00 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 c4 8f 21 00 00 1a 00 00 00 fd 00 31 4c 1d
+71 19 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50
+42 33 32 38 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 46 34 4c 4d 51 53 30 33 36 31 39 35 0a 00 39
 
 00 ff ff ff ff ff ff 00 04 69 a5 32 01 01 01 01
 0f 19 01 03 80 47 28 78 ea 91 85 a7 55 4e a0 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACI
     Model: 12965
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 15 of 2015
   Basic Display Parameters & Features:
     Digital display
@@ -72,5 +70,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 49-76 Hz V, 29-113 kHz H, max dotclock 250 MHz
     Display Product Name: 'PB328'
-    Display Product Serial Number: 'F4LMQS036195'
+    Display Product Serial Number: ...
 Checksum: 0x39
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 69 a5 32 01 01 01 01 '.........i.2....'
+  0f 19 01 03 80 47 28 78 ea 91 85 a7 55 4e a0 25 '.....G(x....UN.%'
+  0c 50 54 bf ef 00 71 4f 81 80 81 40 81 c0 95 00 '.PT...qO...@....'
+  b3 00 d1 c0 d1 00 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
+  35 00 c4 8f 21 00 00 1a 00 00 00 fd 00 31 4c 1d '5...!........1L.'
+  71 19 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50 'q...      .....P'
+  42 33 32 38 0a 20 20 20 20 20 20 20 00 00 00 ff 'B328.       ....'
+  00 46 34 4c 4d 51 53 30 33 36 31 39 35 0a 00 39 '.F4LMQS036195..9'
+Checksum: 0x39
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

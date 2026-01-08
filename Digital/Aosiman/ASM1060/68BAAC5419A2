@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00066d601000000000
-141f0104b5170f783aef65a656529d28
-0b5054a54b00d1c081c0010101010101
-010101010101781e5602510022303008
-6200d9870000001e023a801871382d40
-582c4500d98700000000000000fc0041
-534d2d31303646430a202020000000fd
-00384c1e5311010a202020202020005c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 6d 60 10 00 00 00 00
+14 1f 01 04 b5 17 0f 78 3a ef 65 a6 56 52 9d 28
+0b 50 54 a5 4b 00 d1 c0 81 c0 01 01 01 01 01 01
+01 01 01 01 01 01 78 1e 56 02 51 00 22 30 30 08
+62 00 d9 87 00 00 00 1e 02 3a 80 18 71 38 2d 40
+58 2c 45 00 d9 87 00 00 00 00 00 00 00 fc 00 41
+53 4d 2d 31 30 36 46 43 0a 20 20 20 00 00 00 fd
+00 38 4c 1e 53 11 01 0a 20 20 20 20 20 20 00 5c
 
 00 ff ff ff ff ff ff 00 06 6d 60 10 00 00 00 00
 14 1f 01 04 b5 17 0f 78 3a ef 65 a6 56 52 9d 28
@@ -66,4 +64,34 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x5c
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 6d 60 10 00 00 00 00 '.........m`.....'
+  14 1f 01 04 b5 17 0f 78 3a ef 65 a6 56 52 9d 28 '.......x:.e.VR.('
+  0b 50 54 a5 4b 00 d1 c0 81 c0 01 01 01 01 01 01 '.PT.K...........'
+  01 01 01 01 01 01 78 1e 56 02 51 00 22 30 30 08 '......x.V.Q."00.'
+  62 00 d9 87 00 00 00 1e 02 3a 80 18 71 38 2d 40 'b........:..q8-@'
+  58 2c 45 00 d9 87 00 00 00 00 00 00 00 fc 00 41 'X,E............A'
+  53 4d 2d 31 30 36 46 43 0a 20 20 20 00 00 00 fd 'SM-106FC.   ....'
+  00 38 4c 1e 53 11 01 0a 20 20 20 20 20 20 00 5c '.8L.S...      .\'
+Checksum: 0x5c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 217x135 mm vs display size 230x150 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 217x135 mm vs display size 230x150 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

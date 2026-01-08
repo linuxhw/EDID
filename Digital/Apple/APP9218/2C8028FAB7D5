@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000610189208060002
-220d010380311f782edc45a3544c9625
-12505400000001010101010101010101
-0101010101018c3c80e070b00c404020
-3300ef361100001e000000fc00417070
-6c652043696e656d6120000000fc0048
-4420446973706c61790a000000000000
-00061003001c000300000000000100f1
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 10 18 92 08 06 00 02
+22 0d 01 03 80 31 1f 78 2e dc 45 a3 54 4c 96 25
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8c 3c 80 e0 70 b0 0c 40 40 20
+33 00 ef 36 11 00 00 1e 00 00 00 fc 00 41 70 70
+6c 65 20 43 69 6e 65 6d 61 20 00 00 00 fc 00 48
+44 20 44 69 73 70 6c 61 79 0a 00 00 00 00 00 00
+00 06 10 03 00 1c 00 03 00 00 00 00 00 01 00 f1
 
 00 ff ff ff ff ff ff 00 06 10 18 92 08 06 00 02
 22 0d 01 03 80 31 1f 78 2e dc 45 a3 54 4c 96 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: APP
     Model: 37400
-    Serial Number: 33555976
+    Serial Number: ...
     Made in: week 34 of 2003
   Basic Display Parameters & Features:
     Digital display
@@ -53,4 +51,31 @@ Block 0, Base EDID:
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 06 10 03 00 1c 00 03 00 00 00 00 00 01 '................'
 Checksum: 0xf1
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 10 18 92 08 06 00 02 '................'
+  22 0d 01 03 80 31 1f 78 2e dc 45 a3 54 4c 96 25 '"....1.x..E.TL.%'
+  12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 8c 3c 80 e0 70 b0 0c 40 40 20 '.......<..p..@@ '
+  33 00 ef 36 11 00 00 1e 00 00 00 fc 00 41 70 70 '3..6.........App'
+  6c 65 20 43 69 6e 65 6d 61 20 00 00 00 fc 00 48 'le Cinema .....H'
+  44 20 44 69 73 70 6c 61 79 0a 00 00 00 00 00 00 'D Display.......'
+  00 06 10 03 00 1c 00 03 00 00 00 00 00 01 00 f1 '................'
+Checksum: 0xf1
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Name: One or more trailing spaces.
+  Display Product Name: Non-space after newline.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

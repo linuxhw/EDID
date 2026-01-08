@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000610679c00000000
-00110103802115780a9c609958518e26
-12505400000001010101010101010101
-0101010101019f25a04051840c304020
-33004ccf100000180000000100061030
-00000000000000000a20000000fe004c
-503135345750322d544c4131000000fe
-00436f6c6f72204c43440a2020200046
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 10 67 9c 00 00 00 00
+00 11 01 03 80 21 15 78 0a 9c 60 99 58 51 8e 26
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9f 25 a0 40 51 84 0c 30 40 20
+33 00 4c cf 10 00 00 18 00 00 00 01 00 06 10 30
+00 00 00 00 00 00 00 00 0a 20 00 00 00 fe 00 4c
+50 31 35 34 57 50 32 2d 54 4c 41 31 00 00 00 fe
+00 43 6f 6c 6f 72 20 4c 43 44 0a 20 20 20 00 46
 
 00 ff ff ff ff ff ff 00 06 10 67 9c 00 00 00 00
 00 11 01 03 80 21 15 78 0a 9c 60 99 58 51 8e 26
@@ -49,3 +47,30 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'LP154WP2-TLA1'
     Alphanumeric Data String: 'Color LCD'
 Checksum: 0x46
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 10 67 9c 00 00 00 00 '..........g.....'
+  00 11 01 03 80 21 15 78 0a 9c 60 99 58 51 8e 26 '.....!.x..`.XQ.&'
+  12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 9f 25 a0 40 51 84 0c 30 40 20 '.......%.@Q..0@ '
+  33 00 4c cf 10 00 00 18 00 00 00 01 00 06 10 30 '3.L............0'
+  00 00 00 00 00 00 00 00 0a 20 00 00 00 fe 00 4c '......... .....L'
+  50 31 35 34 57 50 32 2d 54 4c 41 31 00 00 00 fe 'P154WP2-TLA1....'
+  00 43 6f 6c 6f 72 20 4c 43 44 0a 20 20 20 00 46 '.Color LCD.   .F'
+Checksum: 0x46
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
