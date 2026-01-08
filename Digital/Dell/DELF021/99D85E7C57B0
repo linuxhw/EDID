@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0010ac21f0554e3232
-2a140103802917780aee95a3544c9926
-0f5054a54a0001010101010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000ff00353546
-324330414432324e550a000000fc0044
-454c4c20494e313932300a20000000fd
-00324b1e5309000a2020202020200128
-020319c1418423090707830100006703
-0c000000001ee2000f00000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000019
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 21 f0 55 4e 32 32
+2a 14 01 03 80 29 17 78 0a ee 95 a3 54 4c 99 26
+0f 50 54 a5 4a 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 ff 00 35 35 46
+32 43 30 41 44 32 32 4e 55 0a 00 00 00 fc 00 44
+45 4c 4c 20 49 4e 31 39 32 30 0a 20 00 00 00 fd
+00 32 4b 1e 53 09 00 0a 20 20 20 20 20 20 01 28
+
+02 03 19 c1 41 84 23 09 07 07 83 01 00 00 67 03
+0c 00 00 00 00 1e e2 00 0f 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 19
 
 00 ff ff ff ff ff ff 00 10 ac 21 f0 55 4e 32 32
 2a 14 01 03 80 29 17 78 0a ee 95 a3 54 4c 99 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 61473
-    Serial Number: 842157653
+    Serial Number: ...
     Made in: week 42 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -70,7 +69,7 @@ Block 0, Base EDID:
     DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
                  Hfront   70 Hsync 143 Hback  213 Hpol P
                  Vfront    3 Vsync   3 Vback   24 Vpol P
-    Display Product Serial Number: '55F2C0AD22NU'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL IN1920'
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-83 kHz H, max dotclock 90 MHz
@@ -104,4 +103,71 @@ Block 1, CTA-861 Extension Block:
     CE scan behavior: Supports both over- and underscan
 Checksum: 0x19  Unused space in Extension Block: 102 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 21 f0 55 4e 32 32 '..........!.UN22'
+  2a 14 01 03 80 29 17 78 0a ee 95 a3 54 4c 99 26 '*....).x....TL.&'
+  0f 50 54 a5 4a 00 01 01 01 01 01 01 01 01 01 01 '.PT.J...........'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 ff 00 35 35 46 '3............55F'
+  32 43 30 41 44 32 32 4e 55 0a 00 00 00 fc 00 44 '2C0AD22NU......D'
+  45 4c 4c 20 49 4e 31 39 32 30 0a 20 00 00 00 fd 'ELL IN1920. ....'
+  00 32 4b 1e 53 09 00 0a 20 20 20 20 20 20 01 28 '.2K.S...      .('
+Checksum: 0x28
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 0.0.0.0
+    Maximum TMDS clock: 150 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+Checksum: 0x19  Unused space in Extension Block: 102 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 4.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

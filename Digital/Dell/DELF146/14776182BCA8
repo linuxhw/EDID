@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac46f158395743
-18210104a5351e783aab35a755549e27
-125054a54b00714f8180a9c0d1c00101
-010101010101023a801871382d40582c
-45000f282100001e000000ff00385437
-4b5a56330a2020202020000000fc0044
-454c4c204532343233480a20000000fd
-00324b1e5311010a2020202020200059
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 46 f1 58 39 57 43
+18 21 01 04 a5 35 1e 78 3a ab 35 a7 55 54 9e 27
+12 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 ff 00 38 54 37
+4b 5a 56 33 0a 20 20 20 20 20 00 00 00 fc 00 44
+45 4c 4c 20 45 32 34 32 33 48 0a 20 00 00 00 fd
+00 32 4b 1e 53 11 01 0a 20 20 20 20 20 20 00 59
 
 00 ff ff ff ff ff ff 00 10 ac 46 f1 58 39 57 43
 18 21 01 04 a5 35 1e 78 3a ab 35 a7 55 54 9e 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 61766
-    Serial Number: 1129789784
+    Serial Number: ...
     Made in: week 24 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -61,10 +59,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (527 mm x 296 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: '8T7KZV3'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL E2423H'
     Display Range Limits:
       Monitor ranges (Bare Limits): 50-75 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x59
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 46 f1 58 39 57 43 '..........F.X9WC'
+  18 21 01 04 a5 35 1e 78 3a ab 35 a7 55 54 9e 27 '.!...5.x:.5.UT.''
+  12 50 54 a5 4b 00 71 4f 81 80 a9 c0 d1 c0 01 01 '.PT.K.qO........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 ff 00 38 54 37 'E..(!........8T7'
+  4b 5a 56 33 0a 20 20 20 20 20 00 00 00 fc 00 44 'KZV3.     .....D'
+  45 4c 4c 20 45 32 34 32 33 48 0a 20 00 00 00 fd 'ELL E2423H. ....'
+  00 32 4b 1e 53 11 01 0a 20 20 20 20 20 20 00 59 '.2K.S...      .Y'
+Checksum: 0x59
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
