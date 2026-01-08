@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004724a06d2307111
-111f0104a5351e78c26c40a755519f27
-145054bfef80714f8140818081c08100
-9500b300d1c0023a801871382d40582c
-45000f282100001e000000fd00384c1f
-5311000a202020202020000000fc004b
-32343248594c0a2020202020000000ff
-0054424e4141303032383538310a004f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 4a 06 d2 30 71 11
+11 1f 01 04 a5 35 1e 78 c2 6c 40 a7 55 51 9f 27
+14 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00
+95 00 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 fd 00 38 4c 1f
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4b
+32 34 32 48 59 4c 0a 20 20 20 20 20 00 00 00 ff
+00 54 42 4e 41 41 30 30 32 38 35 38 31 0a 00 4f
 
 00 ff ff ff ff ff ff 00 04 72 4a 06 d2 30 71 11
 11 1f 01 04 a5 35 1e 78 c2 6c 40 a7 55 51 9f 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 1610
-    Serial Number: 292630738
+    Serial Number: ...
     Made in: week 17 of 2021
   Basic Display Parameters & Features:
     Digital display
@@ -75,7 +73,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'K242HYL'
-    Display Product Serial Number: 'TBNAA0028581'
+    Display Product Serial Number: ...
 Checksum: 0x4f
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 4a 06 d2 30 71 11 '.........rJ..0q.'
+  11 1f 01 04 a5 35 1e 78 c2 6c 40 a7 55 51 9f 27 '.....5.x.l@.UQ.''
+  14 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00 '.PT...qO.@......'
+  95 00 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 fd 00 38 4c 1f 'E..(!........8L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4b 'S...      .....K'
+  32 34 32 48 59 4c 0a 20 20 20 20 20 00 00 00 ff '242HYL.     ....'
+  00 54 42 4e 41 41 30 30 32 38 35 38 31 0a 00 4f '.TBNAA0028581..O'
+Checksum: 0x4f
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

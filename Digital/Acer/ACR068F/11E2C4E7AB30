@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0004728f06e0b87091
-111d0104a5351e783b0e35a4544d9d26
-0f5054bfef80d1c0b300950081808140
-81c001010101866f003ca0a00f500820
-35000f282100001e565e00a0a0a02950
-302035000f282100001e000000fd0030
-4b78781e010a202020202020000000fc
-004163657220564732343059550a01f9
-020321714c1213041f90140501110203
-4a230907078301000067030c00100038
-3c011d007251d01e206e2855000f2821
-00001e011d00bc52d01e20b82855400f
-282100001e565e00a0a0a02950302035
-000f282100001e000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000096
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 8f 06 e0 b8 70 91
+11 1d 01 04 a5 35 1e 78 3b 0e 35 a4 54 4d 9d 26
+0f 50 54 bf ef 80 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 01 01 01 01 86 6f 00 3c a0 a0 0f 50 08 20
+35 00 0f 28 21 00 00 1e 56 5e 00 a0 a0 a0 29 50
+30 20 35 00 0f 28 21 00 00 1e 00 00 00 fd 00 30
+4b 78 78 1e 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 63 65 72 20 56 47 32 34 30 59 55 0a 01 f9
+
+02 03 21 71 4c 12 13 04 1f 90 14 05 01 11 02 03
+4a 23 09 07 07 83 01 00 00 67 03 0c 00 10 00 38
+3c 01 1d 00 72 51 d0 1e 20 6e 28 55 00 0f 28 21
+00 00 1e 01 1d 00 bc 52 d0 1e 20 b8 28 55 40 0f
+28 21 00 00 1e 56 5e 00 a0 a0 a0 29 50 30 20 35
+00 0f 28 21 00 00 1e 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 96
 
 00 ff ff ff ff ff ff 00 04 72 8f 06 e0 b8 70 91
 11 1d 01 04 a5 35 1e 78 3b 0e 35 a4 54 4d 9d 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 1679
-    Serial Number: 2440083680
+    Serial Number: ...
     Made in: week 17 of 2019
   Basic Display Parameters & Features:
     Digital display
@@ -142,3 +141,106 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol P
 Checksum: 0x96  Unused space in Extension Block: 40 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 8f 06 e0 b8 70 91 '.........r....p.'
+  11 1d 01 04 a5 35 1e 78 3b 0e 35 a4 54 4d 9d 26 '.....5.x;.5.TM.&'
+  0f 50 54 bf ef 80 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 01 01 01 01 86 6f 00 3c a0 a0 0f 50 08 20 '.......o.<...P. '
+  35 00 0f 28 21 00 00 1e 56 5e 00 a0 a0 a0 29 50 '5..(!...V^....)P'
+  30 20 35 00 0f 28 21 00 00 1e 00 00 00 fd 00 30 '0 5..(!........0'
+  4b 78 78 1e 01 0a 20 20 20 20 20 20 00 00 00 fc 'Kxx...      ....'
+  00 41 63 65 72 20 56 47 32 34 30 59 55 0a 01 f9 '.Acer VG240YU...'
+Checksum: 0xf9
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  74:  1920x1080   30.000000 Hz  64:27    33.750 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 300 MHz
+  Detailed Timing Descriptors:
+    DTD 6:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (527 mm x 296 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 7:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (527 mm x 296 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 8:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+Checksum: 0x96  Unused space in Extension Block: 40 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 30.000 - 75.062 Hz (Monitor: 48.000 - 75.000 Hz)
+    Horizontal Freq: 28.125 - 108.969 kHz (Monitor: 120.000 - 120.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 74.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

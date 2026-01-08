@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004725f0503783072
-171b0104a5351e78260ef5a555509e26
-105054bfef80714f8140818081c08100
-9500b300d1c0023a801871382d40582c
-4500132b2100001e000000fd00374b1e
-5511000a202020202020000000fc0047
-463234360a20202020202020000000ff
-005438434545303031383532310a0063
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 5f 05 03 78 30 72
+17 1b 01 04 a5 35 1e 78 26 0e f5 a5 55 50 9e 26
+10 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00
+95 00 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2b 21 00 00 1e 00 00 00 fd 00 37 4b 1e
+55 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 47
+46 32 34 36 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 54 38 43 45 45 30 30 31 38 35 32 31 0a 00 63
 
 00 ff ff ff ff ff ff 00 04 72 5f 05 03 78 30 72
 17 1b 01 04 a5 35 1e 78 26 0e f5 a5 55 50 9e 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 1375
-    Serial Number: 1915779075
+    Serial Number: ...
     Made in: week 23 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -76,7 +74,37 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-85 kHz H, max dotclock 170 MHz
     Display Product Name: 'GF246'
-    Display Product Serial Number: 'T8CEE0018521'
+    Display Product Serial Number: ...
 Checksum: 0x63
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 5f 05 03 78 30 72 '.........r_..x0r'
+  17 1b 01 04 a5 35 1e 78 26 0e f5 a5 55 50 9e 26 '.....5.x&...UP.&'
+  10 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00 '.PT...qO.@......'
+  95 00 b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 13 2b 21 00 00 1e 00 00 00 fd 00 37 4b 1e 'E..+!........7K.'
+  55 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 47 'U...      .....G'
+  46 32 34 36 0a 20 20 20 20 20 20 20 00 00 00 ff 'F246.       ....'
+  00 54 38 43 45 45 30 30 31 38 35 32 31 0a 00 63 '.T8CEE0018521..c'
+Checksum: 0x63
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

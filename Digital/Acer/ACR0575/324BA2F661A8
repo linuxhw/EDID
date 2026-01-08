@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004727505f3176001
-101e0103803c2278ca0540a556539d25
-0e5054bfef80714f8140818081c08100
-9500b300d1cf023a801871382d40582c
-450056502100001e000000fd00384c1f
-5311000a202020202020000000fc0045
-443237330a20202020202020000000ff
-005439444141303035333930300a00ca
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 75 05 f3 17 60 01
+10 1e 01 03 80 3c 22 78 ca 05 40 a5 56 53 9d 25
+0e 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00
+95 00 b3 00 d1 cf 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 fd 00 38 4c 1f
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45
+44 32 37 33 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 54 39 44 41 41 30 30 35 33 39 30 30 0a 00 ca
 
 00 ff ff ff ff ff ff 00 04 72 75 05 f3 17 60 01
 10 1e 01 03 80 3c 22 78 ca 05 40 a5 56 53 9d 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 1397
-    Serial Number: 23074803
+    Serial Number: ...
     Made in: week 16 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -73,5 +71,32 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'ED273'
-    Display Product Serial Number: 'T9DAA0053900'
+    Display Product Serial Number: ...
 Checksum: 0xca
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 75 05 f3 17 60 01 '.........ru...`.'
+  10 1e 01 03 80 3c 22 78 ca 05 40 a5 56 53 9d 25 '.....<"x..@.VS.%'
+  0e 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00 '.PT...qO.@......'
+  95 00 b3 00 d1 cf 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 fd 00 38 4c 1f 'E.VP!........8L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45 'S...      .....E'
+  44 32 37 33 0a 20 20 20 20 20 20 20 00 00 00 ff 'D273.       ....'
+  00 54 39 44 41 41 30 30 35 33 39 30 30 0a 00 ca '.T9DAA0053900...'
+Checksum: 0xca
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 84.600 kHz (Monitor: 31.000 - 83.000 kHz)
+    Maximum Clock: 220.637 MHz (Monitor: 170.000 MHz)
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
