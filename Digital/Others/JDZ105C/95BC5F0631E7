@@ -1,0 +1,82 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 28 9a 5c 10 00 00 00 00
+00 20 01 04 a5 1a 0e 78 0a 60 f5 9d 5d 59 91 25
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 da 1d 56 e2 50 00 20 30 88 1e
+8c 00 00 90 10 00 00 18 e2 17 56 e2 50 00 20 30
+88 1e 8c 00 00 90 10 00 00 1a 00 00 00 fe 00 49
+4e 58 20 31 31 36 0a 20 20 20 20 20 00 00 00 fe
+00 4c 43 4d 31 31 36 4e 58 30 30 38 35 44 00 54
+
+00 ff ff ff ff ff ff 00 28 9a 5c 10 00 00 00 00
+00 20 01 04 a5 1a 0e 78 0a 60 f5 9d 5d 59 91 25
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 da 1d 56 e2 50 00 20 30 88 1e
+8c 00 00 90 10 00 00 18 e2 17 56 e2 50 00 20 30
+88 1e 8c 00 00 90 10 00 00 1a 00 00 00 fe 00 49
+4e 58 20 31 31 36 0a 20 20 20 20 20 00 00 00 fe
+00 4c 43 4d 31 31 36 4e 58 30 30 38 35 44 00 54
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: JDZ
+    Model: 4188
+    Made in: 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6142, 0.3652
+    Green: 0.3476, 0.5664
+    Blue : 0.1474, 0.0654
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.003141 Hz 683:384   48.003 kHz     76.420000 MHz (256 mm x 144 mm)
+                 Hfront  136 Hsync  30 Hback   60 Hpol N
+                 Vfront    8 Vsync  12 Vback   12 Vpol N
+    DTD 2:  1366x768    48.005653 Hz 683:384   38.405 kHz     61.140000 MHz (256 mm x 144 mm)
+                 Hfront  136 Hsync  30 Hback   60 Hpol P
+                 Vfront    8 Vsync  12 Vback   12 Vpol N
+    Alphanumeric Data String: 'INX 116'
+    Alphanumeric Data String: 'LCM116NX0085D'
+Checksum: 0x54
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 28 9a 5c 10 00 00 00 00 '........(.\.....'
+  00 20 01 04 a5 1a 0e 78 0a 60 f5 9d 5d 59 91 25 '. .....x.`..]Y.%'
+  10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 da 1d 56 e2 50 00 20 30 88 1e '........V.P. 0..'
+  8c 00 00 90 10 00 00 18 e2 17 56 e2 50 00 20 30 '..........V.P. 0'
+  88 1e 8c 00 00 90 10 00 00 1a 00 00 00 fe 00 49 '...............I'
+  4e 58 20 31 31 36 0a 20 20 20 20 20 00 00 00 fe 'NX 116.     ....'
+  00 4c 43 4d 31 31 36 4e 58 30 30 38 35 44 00 54 '.LCM116NX0085D.T'
+Checksum: 0x54
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

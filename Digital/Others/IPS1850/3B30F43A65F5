@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff002613501801000000
-2d1e010380291778ead6a5a2594a9524
-145054a5480081008140818081c07140
-010145400101662156aa51001e30468f
-33009ae61000001e662150b051001b30
-407036009ae61000001c000000fd0032
-4c1e500f000a202020202020000000fc
-004e31383548440a2020202020200185
-020312f1470102030412131665030c00
-10008c0ad08a20e02d10103e9600fe1f
-11000018011d00bc52d01e20b8285540
-e8121100001e3827564051001a30468f
-33009ae61000001e0000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000073
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 26 13 50 18 01 00 00 00
+2d 1e 01 03 80 29 17 78 ea d6 a5 a2 59 4a 95 24
+14 50 54 a5 48 00 81 00 81 40 81 80 81 c0 71 40
+01 01 45 40 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 9a e6 10 00 00 1c 00 00 00 fd 00 32
+4c 1e 50 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4e 31 38 35 48 44 0a 20 20 20 20 20 20 01 85
+
+02 03 12 f1 47 01 02 03 04 12 13 16 65 03 0c 00
+10 00 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00 fe 1f
+11 00 00 18 01 1d 00 bc 52 d0 1e 20 b8 28 55 40
+e8 12 11 00 00 1e 38 27 56 40 51 00 1a 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 73
 
 00 ff ff ff ff ff ff 00 26 13 50 18 01 00 00 00
 2d 1e 01 03 80 29 17 78 ea d6 a5 a2 59 4a 95 24
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IPS
     Model: 6224
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 45 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -115,3 +114,86 @@ Block 1, CTA-861 Extension Block:
                  Hfront   70 Hsync 143 Hback  107 Hpol P
                  Vfront    3 Vsync   3 Vback   20 Vpol P
 Checksum: 0x73  Unused space in Extension Block: 55 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 26 13 50 18 01 00 00 00 '........&.P.....'
+  2d 1e 01 03 80 29 17 78 ea d6 a5 a2 59 4a 95 24 '-....).x....YJ.$'
+  14 50 54 a5 48 00 81 00 81 40 81 80 81 c0 71 40 '.PT.H....@....q@'
+  01 01 45 40 01 01 66 21 56 aa 51 00 1e 30 46 8f '..E@..f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 66 21 50 b0 51 00 1b 30 '3.......f!P.Q..0'
+  40 70 36 00 9a e6 10 00 00 1c 00 00 00 fd 00 32 '@p6............2'
+  4c 1e 50 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.P...      ....'
+  00 4e 31 38 35 48 44 0a 20 20 20 20 20 20 01 85 '.N185HD.      ..'
+Checksum: 0x85
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 6:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (510 mm x 287 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 7:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (488 mm x 274 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 8:  1366x768    74.999029 Hz 683:384   59.549 kHz    100.400000 MHz (410 mm x 230 mm)
+                 Hfront   70 Hsync 143 Hback  107 Hpol P
+                 Vfront    3 Vsync   3 Vback   20 Vpol P
+Checksum: 0x73  Unused space in Extension Block: 55 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x27.
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Mismatch of image size 510x287 mm vs display size 410x230 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 488x274 mm vs display size 410x230 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 22.
+  Detailed Timing Descriptor #6: Mismatch of image size 510x287 mm vs display size 410x230 mm.
+  Detailed Timing Descriptor #7: Mismatch of image size 488x274 mm vs display size 410x230 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 63.981 kHz (Monitor: 30.000 - 80.000 kHz)
+  Base EDID: The DTD max image size is 510x287mm, which is larger than the display size 410.0x230.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

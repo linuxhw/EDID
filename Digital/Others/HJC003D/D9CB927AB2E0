@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0021433d0000000000
-281d0104951f11780e428ea951449323
-154c5300000001010101010101010101
-010101010101423780cc70381e403020
-360035ae10000019000000fe00202020
-20202020202020202020000000fe0031
-3430504d3432443135363820000000fe
-00313430504d343244313536382000b1
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 43 3d 00 00 00 00 00
+28 1d 01 04 95 1f 11 78 0e 42 8e a9 51 44 93 23
+15 4c 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 42 37 80 cc 70 38 1e 40 30 20
+36 00 35 ae 10 00 00 19 00 00 00 fe 00 20 20 20
+20 20 20 20 20 20 20 20 20 20 00 00 00 fe 00 31
+34 30 50 4d 34 32 44 31 35 36 38 20 00 00 00 fe
+00 31 34 30 50 4d 34 32 44 31 35 36 38 20 00 b1
 
 00 ff ff ff ff ff ff 00 21 43 3d 00 00 00 00 00
 28 1d 01 04 95 1f 11 78 0e 42 8e a9 51 44 93 23
@@ -52,3 +50,37 @@ Block 0, Base EDID:
     Alphanumeric Data String: '140PM42D1568 '
     Alphanumeric Data String: '140PM42D1568 '
 Checksum: 0xb1
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 21 43 3d 00 00 00 00 00 '........!C=.....'
+  28 1d 01 04 95 1f 11 78 0e 42 8e a9 51 44 93 23 '(......x.B..QD.#'
+  15 4c 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '.LS.............'
+  01 01 01 01 01 01 42 37 80 cc 70 38 1e 40 30 20 '......B7..p8.@0 '
+  36 00 35 ae 10 00 00 19 00 00 00 fe 00 20 20 20 '6.5..........   '
+  20 20 20 20 20 20 20 20 20 20 00 00 00 fe 00 31 '          .....1'
+  34 30 50 4d 34 32 44 31 35 36 38 20 00 00 00 fe '40PM42D1568 ....'
+  00 31 34 30 50 4d 34 32 44 31 35 36 38 20 00 b1 '.140PM42D1568 ..'
+Checksum: 0xb1
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

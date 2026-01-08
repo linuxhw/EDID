@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0025e4951101010101
-2c19010380261e782e1165a55552a027
-0e5054bfef0081808140010101010101
-010101010101302a009851002a403070
-1300782d1100001e000000fd00374b1f
-530e000a202020202020000000ff0047
-41543031373135303541510a000000fc
-004c43442d414431373253450a200035
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 25 e4 95 11 01 01 01 01
+2c 19 01 03 80 26 1e 78 2e 11 65 a5 55 52 a0 27
+0e 50 54 bf ef 00 81 80 81 40 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 fd 00 37 4b 1f
+53 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 47
+41 54 30 31 37 31 35 30 35 41 51 0a 00 00 00 fc
+00 4c 43 44 2d 41 44 31 37 32 53 45 0a 20 00 35
 
 00 ff ff ff ff ff ff 00 25 e4 95 11 01 01 01 01
 2c 19 01 03 80 26 1e 78 2e 11 65 a5 55 52 a0 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IOD
     Model: 4501
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 44 of 2015
   Basic Display Parameters & Features:
     Digital display
@@ -66,8 +64,32 @@ Block 0, Base EDID:
                  Vfront    1 Vsync   3 Vback   38 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 31-83 kHz H, max dotclock 140 MHz
-    Display Product Serial Number: 'GAT0171505AQ'
+    Display Product Serial Number: ...
     Display Product Name: 'LCD-AD172SE'
 Checksum: 0x35
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 25 e4 95 11 01 01 01 01 '........%.......'
+  2c 19 01 03 80 26 1e 78 2e 11 65 a5 55 52 a0 27 ',....&.x..e.UR.''
+  0e 50 54 bf ef 00 81 80 81 40 01 01 01 01 01 01 '.PT......@......'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 fd 00 37 4b 1f '..x-.........7K.'
+  53 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 47 'S...      .....G'
+  41 54 30 31 37 31 35 30 35 41 51 0a 00 00 00 fc 'AT0171505AQ.....'
+  00 4c 43 44 2d 41 44 31 37 32 53 45 0a 20 00 35 '.LCD-AD172SE. .5'
+Checksum: 0x35
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

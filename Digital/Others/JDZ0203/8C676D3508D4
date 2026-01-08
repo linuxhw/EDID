@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00289a030200000000
-1d210104a51f117807e9859a59559224
-21505400000001010101010101010101
-010101010101c23780cc703828403020
-350035ae1000001ac23780cc70382840
-3020360035ae10000000000000fe0047
-313430454330310a20202020000000fe
-0047313430454330310a202020200018
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 28 9a 03 02 00 00 00 00
+1d 21 01 04 a5 1f 11 78 07 e9 85 9a 59 55 92 24
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c2 37 80 cc 70 38 28 40 30 20
+35 00 35 ae 10 00 00 1a c2 37 80 cc 70 38 28 40
+30 20 36 00 35 ae 10 00 00 00 00 00 00 fe 00 47
+31 34 30 45 43 30 31 0a 20 20 20 20 00 00 00 fe
+00 47 31 34 30 45 43 30 31 0a 20 20 20 20 00 18
 
 00 ff ff ff ff ff ff 00 28 9a 03 02 00 00 00 00
 1d 21 01 04 a5 1f 11 78 07 e9 85 9a 59 55 92 24
@@ -55,3 +53,35 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'G140EC01'
     Alphanumeric Data String: 'G140EC01'
 Checksum: 0x18
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 28 9a 03 02 00 00 00 00 '........(.......'
+  1d 21 01 04 a5 1f 11 78 07 e9 85 9a 59 55 92 24 '.!.....x....YU.$'
+  21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '!PT.............'
+  01 01 01 01 01 01 c2 37 80 cc 70 38 28 40 30 20 '.......7..p8(@0 '
+  35 00 35 ae 10 00 00 1a c2 37 80 cc 70 38 28 40 '5.5......7..p8(@'
+  30 20 36 00 35 ae 10 00 00 00 00 00 00 fe 00 47 '0 6.5..........G'
+  31 34 30 45 43 30 31 0a 20 20 20 20 00 00 00 fe '140EC01.    ....'
+  00 47 31 34 30 45 43 30 31 0a 20 20 20 20 00 18 '.G140EC01.    ..'
+Checksum: 0x18
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

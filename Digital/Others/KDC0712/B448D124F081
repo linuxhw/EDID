@@ -1,0 +1,83 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 2c 83 12 07 00 00 00 00
+1d 22 01 04 a5 1e 13 78 02 56 45 93 5e 5b 93 25
+18 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 0f 3c 80 a0 70 b0 20 40 18 30
+3c 00 2e bd 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 4b 44 31 34 30 4e 33 36 33 30 41 30 31 00 df
+
+00 ff ff ff ff ff ff 00 2c 83 12 07 00 00 00 00
+1d 22 01 04 a5 1e 13 78 02 56 45 93 5e 5b 93 25
+18 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 0f 3c 80 a0 70 b0 20 40 18 30
+3c 00 2e bd 10 00 00 18 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 4b 44 31 34 30 4e 33 36 33 30 41 30 31 00 df
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: KDC
+    Model: 1810
+    Made in: week 29 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5751, 0.3681
+    Green: 0.3564, 0.5761
+    Blue : 0.1455, 0.0937
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.998595 Hz  16:10    73.918 kHz    153.750000 MHz (302 mm x 189 mm)
+                 Hfront   24 Hsync  48 Hback   88 Hpol N
+                 Vfront    3 Vsync  12 Vback   17 Vpol N
+    Empty Descriptor
+    Empty Descriptor
+    Alphanumeric Data String: 'KD140N3630A01'
+Checksum: 0xdf
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 2c 83 12 07 00 00 00 00 '........,.......'
+  1d 22 01 04 a5 1e 13 78 02 56 45 93 5e 5b 93 25 '.".....x.VE.^[.%'
+  18 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 0f 3c 80 a0 70 b0 20 40 18 30 '.......<..p. @.0'
+  3c 00 2e bd 10 00 00 18 00 00 00 00 00 00 00 00 '<...............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe '................'
+  00 4b 44 31 34 30 4e 33 36 33 30 41 30 31 00 df '.KD140N3630A01..'
+Checksum: 0xdf
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

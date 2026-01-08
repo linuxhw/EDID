@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00446d010001000000
-1b100103804191780a0dc9a057479827
-12484c00000001010101010101010101
-010101010101562b3850406070902010
-0001000000000000562b385040607090
-20100001000000000000552b38504060
-709020100001000000000000000000fe
-007869616f6d6920343220303220008d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 44 6d 01 00 01 00 00 00
+1b 10 01 03 80 41 91 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 56 2b 38 50 40 60 70 90 20 10
+00 01 00 00 00 00 00 00 56 2b 38 50 40 60 70 90
+20 10 00 01 00 00 00 00 00 00 55 2b 38 50 40 60
+70 90 20 10 00 01 00 00 00 00 00 00 00 00 00 fe
+00 78 69 61 6f 6d 69 20 34 32 20 30 32 20 00 8d
 
 00 ff ff ff ff ff ff 00 44 6d 01 00 01 00 00 00
 1b 10 01 03 80 41 91 78 0a 0d c9 a0 57 47 98 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: QCM
     Model: 1
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 27 of 2006
   Basic Display Parameters & Features:
     Digital display
@@ -57,3 +55,49 @@ Block 0, Base EDID:
                    55 2b 38 50 40 60 70 90 20 10 00 01 00 00 00 00 00 00 'U+8P@`p. .........'
     Alphanumeric Data String: 'xiaomi 42 02 '
 Checksum: 0x8d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 44 6d 01 00 01 00 00 00 '........Dm......'
+  1b 10 01 03 80 41 91 78 0a 0d c9 a0 57 47 98 27 '.....A.x....WG.''
+  12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01 '.HL.............'
+  01 01 01 01 01 01 56 2b 38 50 40 60 70 90 20 10 '......V+8P@`p. .'
+  00 01 00 00 00 00 00 00 56 2b 38 50 40 60 70 90 '........V+8P@`p.'
+  20 10 00 01 00 00 00 00 00 00 55 2b 38 50 40 60 ' .........U+8P@`'
+  70 90 20 10 00 01 00 00 00 00 00 00 00 00 00 fe 'p. .............'
+  00 78 69 61 6f 6d 69 20 34 32 20 30 32 20 00 8d '.xiaomi 42 02 ..'
+Checksum: 0x8d
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: 0 values in the video timing:
+    Horizontal Active/Blanking 1080/80
+    Horizontal Frontporch/Sync Width 32/16
+    Vertical Active/Blanking 2400/112
+    Vertical Frontporch/Sync Width 0/16
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #2: 0 values in the video timing:
+    Horizontal Active/Blanking 1080/80
+    Horizontal Frontporch/Sync Width 32/16
+    Vertical Active/Blanking 2400/112
+    Vertical Frontporch/Sync Width 0/16
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #3: 0 values in the video timing:
+    Horizontal Active/Blanking 1080/80
+    Horizontal Frontporch/Sync Width 32/16
+    Vertical Active/Blanking 2400/112
+    Vertical Frontporch/Sync Width 0/16
+  Detailed Timing Descriptor #3: Mismatch of image size vs display size: image size is not set, but display size is.
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004cf4400100000000
-1a1d0104a51f11783e6435a5544f9e27
-125054bfef80d1c0d1c0d1c095009040
-8180814081c040d000a0f0703e803020
-350035ae1000001a000000fc00536375
-6c70746f720a20202020000000ff000a
-202020202020202020202020000000fd
-00183edcdc3c000a202020202020013c
-020323f14f5d5e5f60611f0413051411
-120102032309070783010000e305c000
-e200c004740030f2705a80b0588a0035
-ae1000001a565e00a0a0a02950302035
-0035ae1000001e000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000017
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c f4 40 01 00 00 00 00
+1a 1d 01 04 a5 1f 11 78 3e 64 35 a5 54 4f 9e 27
+12 50 54 bf ef 80 d1 c0 d1 c0 d1 c0 95 00 90 40
+81 80 81 40 81 c0 40 d0 00 a0 f0 70 3e 80 30 20
+35 00 35 ae 10 00 00 1a 00 00 00 fc 00 53 63 75
+6c 70 74 6f 72 0a 20 20 20 20 00 00 00 ff 00 0a
+20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fd
+00 18 3e dc dc 3c 00 0a 20 20 20 20 20 20 01 3c
+
+02 03 23 f1 4f 5d 5e 5f 60 61 1f 04 13 05 14 11
+12 01 02 03 23 09 07 07 83 01 00 00 e3 05 c0 00
+e2 00 c0 04 74 00 30 f2 70 5a 80 b0 58 8a 00 35
+ae 10 00 00 1a 56 5e 00 a0 a0 a0 29 50 30 20 35
+00 35 ae 10 00 00 1e 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17
 
 00 ff ff ff ff ff ff 00 4c f4 40 01 00 00 00 00
 1a 1d 01 04 a5 1f 11 78 3e 64 35 a5 54 4f 9e 27
@@ -90,7 +89,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   54 Vpol N
     Display Product Name: 'Sculptor'
-    Display Product Serial Number: ''
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 24-62 Hz V, 220-220 kHz H, max dotclock 600 MHz
   Extension blocks: 1
@@ -145,3 +144,117 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol P
 Checksum: 0x17  Unused space in Extension Block: 56 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c f4 40 01 00 00 00 00 '........L.@.....'
+  1a 1d 01 04 a5 1f 11 78 3e 64 35 a5 54 4f 9e 27 '.......x>d5.TO.''
+  12 50 54 bf ef 80 d1 c0 d1 c0 d1 c0 95 00 90 40 '.PT............@'
+  81 80 81 40 81 c0 40 d0 00 a0 f0 70 3e 80 30 20 '...@..@....p>.0 '
+  35 00 35 ae 10 00 00 1a 00 00 00 fc 00 53 63 75 '5.5..........Scu'
+  6c 70 74 6f 72 0a 20 20 20 20 00 00 00 ff 00 0a 'lptor.    ......'
+  20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fd '            ....'
+  00 18 3e dc dc 3c 00 0a 20 20 20 20 20 20 01 3c '..>..<..      .<'
+Checksum: 0x3c
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: IT video formats not supported
+    CE scan behavior: CE video formats not supported
+  Detailed Timing Descriptors:
+    DTD 4:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz (309 mm x 174 mm)
+                 Hfront  176 Hsync  88 Hback  296 Hpol P
+                 Vfront    8 Vsync  10 Vback   72 Vpol N
+    DTD 5:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+Checksum: 0x17  Unused space in Extension Block: 56 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 95.
+Block 3, CTA-861 Extension Block:
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Detailed Timing Descriptor #4: DTD is similar but not identical to VIC 95.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.062 Hz (Monitor: 24.000 - 62.000 Hz)
+    Horizontal Freq: 28.125 - 135.000 kHz (Monitor: 220.000 - 220.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Product Serial Number: ...
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 93.
+  Video Data Block: Duplicate VIC 94.
+  Video Data Block: Duplicate VIC 95.
+  Video Data Block: Duplicate VIC 96.
+  Video Data Block: Duplicate VIC 97.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 3.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

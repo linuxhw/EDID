@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004cf480230a1a0000
-01210104a5351d78e2d7a5a2594a9624
-145054adcf00314a454a614c81c08180
-818aa9c0d1c0023a801871382d40582c
-450013212100001e804580c870382740
-302c4500b4f51000001abc1b00a05020
-173030203600c7001100001a000000fc
-000a20202020202020202020202000f8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c f4 80 23 0a 1a 00 00
+01 21 01 04 a5 35 1d 78 e2 d7 a5 a2 59 4a 96 24
+14 50 54 ad cf 00 31 4a 45 4a 61 4c 81 c0 81 80
+81 8a a9 c0 d1 c0 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 21 21 00 00 1e 80 45 80 c8 70 38 27 40
+30 2c 45 00 b4 f5 10 00 00 1a bc 1b 00 a0 50 20
+17 30 30 20 36 00 c7 00 11 00 00 1a 00 00 00 fc
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 f8
 
 00 ff ff ff ff ff ff 00 4c f4 80 23 0a 1a 00 00
 01 21 01 04 a5 35 1d 78 e2 d7 a5 a2 59 4a 96 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SGT
     Model: 9088
-    Serial Number: 6666
+    Serial Number: ...
     Made in: week 1 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -76,3 +74,31 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   6 Vback   14 Vpol N
     Display Product Name: ''
 Checksum: 0xf8
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c f4 80 23 0a 1a 00 00 '........L..#....'
+  01 21 01 04 a5 35 1d 78 e2 d7 a5 a2 59 4a 96 24 '.!...5.x....YJ.$'
+  14 50 54 ad cf 00 31 4a 45 4a 61 4c 81 c0 81 80 '.PT...1JEJaL....'
+  81 8a a9 c0 d1 c0 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 13 21 21 00 00 1e 80 45 80 c8 70 38 27 40 'E..!!....E..p8'@'
+  30 2c 45 00 b4 f5 10 00 00 1a bc 1b 00 a0 50 20 '0,E...........P '
+  17 30 30 20 36 00 c7 00 11 00 00 1a 00 00 00 fc '.00 6...........'
+  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 f8 '..            ..'
+Checksum: 0xf8
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Mismatch of image size 436x245 mm vs display size 530x290 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 455x256 mm vs display size 530x290 mm.
+  Display Product Name: Empty string.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

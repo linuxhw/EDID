@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00289a3de000000000
-11200104a52213780a1bbba658559d26
-0e4f5500000001010101010101010101
-0101010101019c3b803671383c403020
-360058c21000001aa82f803671383c40
-3020360058c21000001a000000fe0047
-313430454131340a20202020000000fe
-0047313430454131340a202020200051
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 28 9a 3d e0 00 00 00 00
+11 20 01 04 a5 22 13 78 0a 1b bb a6 58 55 9d 26
+0e 4f 55 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9c 3b 80 36 71 38 3c 40 30 20
+36 00 58 c2 10 00 00 1a a8 2f 80 36 71 38 3c 40
+30 20 36 00 58 c2 10 00 00 1a 00 00 00 fe 00 47
+31 34 30 45 41 31 34 0a 20 20 20 20 00 00 00 fe
+00 47 31 34 30 45 41 31 34 0a 20 20 20 20 00 51
 
 00 ff ff ff ff ff ff 00 28 9a 3d e0 00 00 00 00
 11 20 01 04 a5 22 13 78 0a 1b bb a6 58 55 9d 26
@@ -54,4 +52,31 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'G140EA14'
 Checksum: 0x51
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 28 9a 3d e0 00 00 00 00 '........(.=.....'
+  11 20 01 04 a5 22 13 78 0a 1b bb a6 58 55 9d 26 '. ...".x....XU.&'
+  0e 4f 55 00 00 00 01 01 01 01 01 01 01 01 01 01 '.OU.............'
+  01 01 01 01 01 01 9c 3b 80 36 71 38 3c 40 30 20 '.......;.6q8<@0 '
+  36 00 58 c2 10 00 00 1a a8 2f 80 36 71 38 3c 40 '6.X....../.6q8<@'
+  30 20 36 00 58 c2 10 00 00 1a 00 00 00 fe 00 47 '0 6.X..........G'
+  31 34 30 45 41 31 34 0a 20 20 20 20 00 00 00 fe '140EA14.    ....'
+  00 47 31 34 30 45 41 31 34 0a 20 20 20 20 00 51 '.G140EA14.    .Q'
+Checksum: 0x51
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

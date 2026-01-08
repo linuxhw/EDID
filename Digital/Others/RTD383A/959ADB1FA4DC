@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004a843a3801010101
-19200104b5431c78fb1105a5574fad2a
-0a5054244b00b300d1c0a9c095009040
-8180814081c0b44600a0a0381f401220
-2800a11c2100001e000000ff00573657
-3230303130303030310a000000fd0030
-4b717117010a202020202020000000fc
-0044500a2020202020202020202001b4
-020312f1419023097f0783010000e305
-ff01885800a0a0381f4012202800a11c
-2100001e011d8018711c1620582c2500
-a11c2100009e023a80d072382d40102c
-4580a11c2100001e011d007251d01e20
-6e285500a11c2100001e000000000000
-00000000000000000000000000000000
-000000000000000000000000000000e8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4a 84 3a 38 01 01 01 01
+19 20 01 04 b5 43 1c 78 fb 11 05 a5 57 4f ad 2a
+0a 50 54 24 4b 00 b3 00 d1 c0 a9 c0 95 00 90 40
+81 80 81 40 81 c0 b4 46 00 a0 a0 38 1f 40 12 20
+28 00 a1 1c 21 00 00 1e 00 00 00 ff 00 57 36 57
+32 30 30 31 30 30 30 30 31 0a 00 00 00 fd 00 30
+4b 71 71 17 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 44 50 0a 20 20 20 20 20 20 20 20 20 20 01 b4
+
+02 03 12 f1 41 90 23 09 7f 07 83 01 00 00 e3 05
+ff 01 88 58 00 a0 a0 38 1f 40 12 20 28 00 a1 1c
+21 00 00 1e 01 1d 80 18 71 1c 16 20 58 2c 25 00
+a1 1c 21 00 00 9e 02 3a 80 d0 72 38 2d 40 10 2c
+45 80 a1 1c 21 00 00 1e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 a1 1c 21 00 00 1e 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 e8
 
 00 ff ff ff ff ff ff 00 4a 84 3a 38 01 01 01 01
 19 20 01 04 b5 43 1c 78 fb 11 05 a5 57 4f ad 2a
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: RTD
     Model: 14394
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 25 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -81,7 +80,7 @@ Block 0, Base EDID:
     DTD 1:  2560x1080   59.895695 Hz  64:27    66.544 kHz    181.000000 MHz (673 mm x 284 mm)
                  Hfront   18 Hsync  32 Hback  110 Hpol P
                  Vfront    2 Vsync   8 Vback   21 Vpol P
-    Display Product Serial Number: 'W6W200100001'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (Bare Limits): 48-75 Hz V, 113-113 kHz H, max dotclock 230 MHz
     Display Product Name: 'DP'
@@ -131,3 +130,91 @@ Block 1, CTA-861 Extension Block:
                  Hfront  110 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
 Checksum: 0xe8  Unused space in Extension Block: 37 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4a 84 3a 38 01 01 01 01 '........J.:8....'
+  19 20 01 04 b5 43 1c 78 fb 11 05 a5 57 4f ad 2a '. ...C.x....WO.*'
+  0a 50 54 24 4b 00 b3 00 d1 c0 a9 c0 95 00 90 40 '.PT$K..........@'
+  81 80 81 40 81 c0 b4 46 00 a0 a0 38 1f 40 12 20 '...@...F...8.@. '
+  28 00 a1 1c 21 00 00 1e 00 00 00 ff 00 57 36 57 '(...!........W6W'
+  32 30 30 31 30 30 30 30 31 0a 00 00 00 fd 00 30 '200100001......0'
+  4b 71 71 17 01 0a 20 20 20 20 20 20 00 00 00 fc 'Kqq...      ....'
+  00 44 50 0a 20 20 20 20 20 20 20 20 20 20 01 b4 '.DP.          ..'
+Checksum: 0xb4
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    sYCC601
+    opYCC601
+    opRGB
+    BT2020cYCC
+    BT2020YCC
+    BT2020RGB
+    Gamut Boundary Description Metadata Profile P0
+  Detailed Timing Descriptors:
+    DTD 6:  2560x1080   74.998676 Hz  64:27    83.324 kHz    226.640000 MHz (673 mm x 284 mm)
+                 Hfront   18 Hsync  32 Hback  110 Hpol P
+                 Vfront    2 Vsync   8 Vback   21 Vpol P
+    DTD 7:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (673 mm x 284 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 8:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (673 mm x 284 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 9:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (673 mm x 284 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0xe8  Unused space in Extension Block: 37 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 83.323 kHz (Monitor: 113.000 - 113.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

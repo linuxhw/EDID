@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004a8b201980102019
-0f21010485000078fcde58a3544c9926
-0f474aafcf00d1c0b300a9c0d1cf9500
-8180617c457c023a801871382d40582c
-4500ba892100001eae60801871382d40
-30203500ba892100001e000000fd0030
-791ea024000a202020202020000000fc
-00000a20202020202020202020200179
-020333f25004051013141f2040222748
-494a4b4c3fe200eae305c00023097f07
-8301000067030c0010003848e6060501
-6262008248801871382d40302c4500ba
-892100001ebe6e80b470382d40302035
-00ba892100001e000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000050
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4a 8b 20 19 80 10 20 19
+0f 21 01 04 85 00 00 78 fc de 58 a3 54 4c 99 26
+0f 47 4a af cf 00 d1 c0 b3 00 a9 c0 d1 cf 95 00
+81 80 61 7c 45 7c 02 3a 80 18 71 38 2d 40 58 2c
+45 00 ba 89 21 00 00 1e ae 60 80 18 71 38 2d 40
+30 20 35 00 ba 89 21 00 00 1e 00 00 00 fd 00 30
+79 1e a0 24 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 00 0a 20 20 20 20 20 20 20 20 20 20 20 01 79
+
+02 03 33 f2 50 04 05 10 13 14 1f 20 40 22 27 48
+49 4a 4b 4c 3f e2 00 ea e3 05 c0 00 23 09 7f 07
+83 01 00 00 67 03 0c 00 10 00 38 48 e6 06 05 01
+62 62 00 82 48 80 18 71 38 2d 40 30 2c 45 00 ba
+89 21 00 00 1e be 6e 80 b4 70 38 2d 40 30 20 35
+00 ba 89 21 00 00 1e 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50
 
 00 ff ff ff ff ff ff 00 4a 8b 20 19 80 10 20 19
 0f 21 01 04 85 00 00 78 fc de 58 a3 54 4c 99 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: RTK
     Model: 6432
-    Serial Number: 421531776
+    Serial Number: ...
     Made in: week 15 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -161,3 +160,138 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback  100 Hpol P
                  Vfront    3 Vsync   5 Vback   37 Vpol P
 Checksum: 0x50  Unused space in Extension Block: 40 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4a 8b 20 19 80 10 20 19 '........J. ... .'
+  0f 21 01 04 85 00 00 78 fc de 58 a3 54 4c 99 26 '.!.....x..X.TL.&'
+  0f 47 4a af cf 00 d1 c0 b3 00 a9 c0 d1 cf 95 00 '.GJ.............'
+  81 80 61 7c 45 7c 02 3a 80 18 71 38 2d 40 58 2c '..a|E|.:..q8-@X,'
+  45 00 ba 89 21 00 00 1e ae 60 80 18 71 38 2d 40 'E...!....`..q8-@'
+  30 20 35 00 ba 89 21 00 00 1e 00 00 00 fd 00 30 '0 5...!........0'
+  79 1e a0 24 00 0a 20 20 20 20 20 20 00 00 00 fc 'y..$..      ....'
+  00 00 0a 20 20 20 20 20 20 20 20 20 20 20 01 79 '...           .y'
+Checksum: 0x79
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  64:  1920x1080  100.000000 Hz  16:9    112.500 kHz    297.000000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  39:  1920x1080i  50.000000 Hz  16:9     31.250 kHz     72.000000 MHz
+    VIC  72:  1920x1080   24.000000 Hz  64:27    27.000 kHz     74.250000 MHz
+    VIC  73:  1920x1080   25.000000 Hz  64:27    28.125 kHz     74.250000 MHz
+    VIC  74:  1920x1080   30.000000 Hz  64:27    33.750 kHz     74.250000 MHz
+    VIC  75:  1920x1080   50.000000 Hz  64:27    56.250 kHz    148.500000 MHz
+    VIC  76:  1920x1080   60.000000 Hz  64:27    67.500 kHz    148.500000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 360 MHz
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 98 (417.710 cd/m^2)
+    Desired content max frame-average luminance: 98 (417.710 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 5:  1920x1080   74.997980 Hz  16:9     84.373 kHz    185.620000 MHz (698 mm x 393 mm)
+                 Hfront   48 Hsync  44 Hback  188 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 6:  1920x1080  120.000000 Hz  16:9    135.000 kHz    283.500000 MHz (698 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback  100 Hpol P
+                 Vfront    3 Vsync   5 Vback   37 Vpol P
+Checksum: 0x50  Unused space in Extension Block: 40 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+Block 3, CTA-861 Extension Block:
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 48.000 - 121.000 Hz)
+    Horizontal Freq: 27.000 - 135.000 kHz (Monitor: 30.000 - 160.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Product Name: Non-printable character.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 32.
+  Video Data Block: Duplicate VIC 64.
+  Video Data Block: Duplicate VIC 34.
+  Video Data Block: Duplicate VIC 39.
+  Video Data Block: Duplicate VIC 72.
+  Video Data Block: Duplicate VIC 73.
+  Video Data Block: Duplicate VIC 74.
+  Video Data Block: Duplicate VIC 75.
+  Video Data Block: Duplicate VIC 76.
+  Video Data Block: Duplicate VIC 63.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: The DTD max image size is 698x393mm, but the display size is not specified anywhere.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

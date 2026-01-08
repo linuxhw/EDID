@@ -1,0 +1,80 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 28 9a 3c 01 00 00 00 00
+19 22 01 04 95 1f 11 78 0a 3d 85 a6 56 4a 9a 24
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a6 1c 56 a2 50 00 20 30 30 20
+36 00 35 ae 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 47
+31 34 30 45 44 30 34 0a 20 20 20 20 00 00 00 fe
+00 47 31 34 30 45 44 30 34 0a 20 20 20 20 00 4b
+
+00 ff ff ff ff ff ff 00 28 9a 3c 01 00 00 00 00
+19 22 01 04 95 1f 11 78 0a 3d 85 a6 56 4a 9a 24
+12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a6 1c 56 a2 50 00 20 30 30 20
+36 00 35 ae 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 47
+31 34 30 45 44 30 34 0a 20 20 20 20 00 00 00 fe
+00 47 31 34 30 45 44 30 34 0a 20 20 20 20 00 4b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: JDZ
+    Model: 316
+    Made in: week 25 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6484, 0.3388
+    Green: 0.2919, 0.6025
+    Blue : 0.1425, 0.0703
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.996728 Hz 683:384   47.997 kHz     73.340000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback   82 Hpol P
+                 Vfront    3 Vsync   6 Vback   23 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1a '................'
+    Alphanumeric Data String: 'G140ED04'
+    Alphanumeric Data String: 'G140ED04'
+Checksum: 0x4b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 28 9a 3c 01 00 00 00 00 '........(.<.....'
+  19 22 01 04 95 1f 11 78 0a 3d 85 a6 56 4a 9a 24 '.".....x.=..VJ.$'
+  12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 a6 1c 56 a2 50 00 20 30 30 20 '........V.P. 00 '
+  36 00 35 ae 10 00 00 1a 00 00 00 00 00 00 00 00 '6.5.............'
+  00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 47 '...............G'
+  31 34 30 45 44 30 34 0a 20 20 20 20 00 00 00 fe '140ED04.    ....'
+  00 47 31 34 30 45 44 30 34 0a 20 20 20 20 00 4b '.G140ED04.    .K'
+Checksum: 0x4b
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

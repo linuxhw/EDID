@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004cf4001701000000
-0d20010380261578ea1ec5ae4f34b126
-0e5054adce0081800101010101010101
-010101010101d3270040510026401888
-360078d41000001e0e1f008051002030
-4080370068fa1000001e000000fc0059
-53440a202020202020202020000000ff
-00303030303030310a20202020200112
-020318f141032309070765030c001000
-83010000e30503016419004041002630
-18883600720c1100001e000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000a9
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c f4 00 17 01 00 00 00
+0d 20 01 03 80 26 15 78 ea 1e c5 ae 4f 34 b1 26
+0e 50 54 ad ce 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d3 27 00 40 51 00 26 40 18 88
+36 00 78 d4 10 00 00 1e 0e 1f 00 80 51 00 20 30
+40 80 37 00 68 fa 10 00 00 1e 00 00 00 fc 00 59
+53 44 0a 20 20 20 20 20 20 20 20 20 00 00 00 ff
+00 30 30 30 30 30 30 31 0a 20 20 20 20 20 01 12
+
+02 03 18 f1 41 03 23 09 07 07 65 03 0c 00 10 00
+83 01 00 00 e3 05 03 01 64 19 00 40 41 00 26 30
+18 88 36 00 72 0c 11 00 00 1e 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a9
 
 00 ff ff ff ff ff ff 00 4c f4 00 17 01 00 00 00
 0d 20 01 03 80 26 15 78 ea 1e c5 ae 4f 34 b1 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SGT
     Model: 5888
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 13 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -79,7 +78,7 @@ Block 0, Base EDID:
                  Hfront   64 Hsync 128 Hback  192 Hpol P
                  Vfront    3 Vsync   7 Vback   22 Vpol P
     Display Product Name: 'YSD'
-    Display Product Serial Number: '0000001'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x12
 
@@ -113,4 +112,81 @@ Block 1, CTA-861 Extension Block:
                  Vfront    3 Vsync   6 Vback   29 Vpol P
 Checksum: 0xa9  Unused space in Extension Block: 85 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c f4 00 17 01 00 00 00 '........L.......'
+  0d 20 01 03 80 26 15 78 ea 1e c5 ae 4f 34 b1 26 '. ...&.x....O4.&'
+  0e 50 54 ad ce 00 81 80 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 d3 27 00 40 51 00 26 40 18 88 '.......'.@Q.&@..'
+  36 00 78 d4 10 00 00 1e 0e 1f 00 80 51 00 20 30 '6.x.........Q. 0'
+  40 80 37 00 68 fa 10 00 00 1e 00 00 00 fc 00 59 '@.7.h..........Y'
+  53 44 0a 20 20 20 20 20 20 20 20 20 00 00 00 ff 'SD.         ....'
+  00 30 30 30 30 30 30 31 0a 20 20 20 20 20 01 12 '.0000001.     ..'
+Checksum: 0x12
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    Gamut Boundary Description Metadata Profile P0
+  Detailed Timing Descriptors:
+    DTD 4:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (370 mm x 268 mm)
+                 Hfront   24 Hsync 136 Hback  160 Hpol P
+                 Vfront    3 Vsync   6 Vback   29 Vpol P
+Checksum: 0xa9  Unused space in Extension Block: 85 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #3: DTD is similar but not identical to DMT 0x10.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #4: DTD is similar but not identical to DMT 0x10.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Mismatch of image size 360x250 mm vs display size 380x210 mm.
+  Missing Display Range Limits Descriptor.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Mismatch of image size 370x268 mm vs display size 380x210 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 3.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #4: Mismatch of image size 370x268 mm vs display size 380x210 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 376x268mm, which is larger than the display size 380.0x210.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

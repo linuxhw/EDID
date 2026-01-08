@@ -1,0 +1,188 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 32 8d 5e 04 aa c8 33 01
+24 1d 01 03 95 1f 11 78 ea eb f5 95 59 54 90 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 50 07 e0 78 10 e0 28 10 32 14
+04 04 00 80 47 00 00 1e 50 07 e0 78 10 e0 28 10
+32 14 04 04 23 20 00 20 20 20 00 00 00 fc 00 5a
+4c 34 38 30 0a 20 20 20 20 20 20 20 00 00 00 fc
+00 5a 4c 0a 20 20 20 20 20 20 20 20 20 20 01 41
+
+02 03 22 f1 4a 80 00 00 00 00 00 00 00 00 00 23
+09 7f 07 83 01 00 00 67 03 0c 00 00 00 b8 2d 02
+00 0f 00 00 00 78 10 f0 14 00 32 14 82 00 c4 8e
+21 00 00 9e 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17
+
+00 ff ff ff ff ff ff 00 32 8d 5e 04 aa c8 33 01
+24 1d 01 03 95 1f 11 78 ea eb f5 95 59 54 90 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 50 07 e0 78 10 e0 28 10 32 14
+04 04 00 80 47 00 00 1e 50 07 e0 78 10 e0 28 10
+32 14 04 04 23 20 00 20 20 20 00 00 00 fc 00 5a
+4c 34 38 30 0a 20 20 20 20 20 20 20 00 00 00 fc
+00 5a 4c 0a 20 20 20 20 20 20 20 20 20 20 01 41
+
+02 03 22 f1 4a 80 00 00 00 00 00 00 00 00 00 23
+09 7f 07 83 01 00 00 67 03 0c 00 00 00 b8 2d 02
+00 0f 00 00 00 78 10 f0 14 00 32 14 82 00 c4 8e
+21 00 00 9e 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LTM
+    Model: 1118
+    Serial Number: ...
+    Made in: week 36 of 2019
+  Basic Display Parameters & Features:
+    Digital display
+    DFP 1.x compatible TMDS
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5849, 0.3496
+    Green: 0.3300, 0.5654
+    Blue : 0.1552, 0.1201
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:   480x480    60.000000 Hz   1:1     31.200 kHz     18.720000 MHz (1024 mm x 1920 mm)
+                 Hfront   50 Hsync  20 Hback   50 Hpol P
+                 Vfront   16 Vsync   4 Vback   20 Vpol P
+    DTD 2:   480x480    60.000000 Hz   1:1     31.200 kHz     18.720000 MHz (analog composite, sync-on-green, field sequential L/R, 35 mm x 32 mm)
+                 Hfront   50 Hsync  20 Hback  -14 Hpol N Hborder 32
+                 Vfront   16 Vsync   4 Vback  -44 Vpol N Vborder 32
+    Display Product Name: 'ZL480'
+    Display Product Name: 'ZL'
+  Extension blocks: 1
+Checksum: 0x41
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 0.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+  Unknown CTA-861 Data Block (tag 0x00, length 2):
+    00 0f                                           '..'
+  Detailed Timing Descriptors:
+    Unknown Display Descriptor (0x78): 00 78 10 f0 14 00 32 14 82 00 c4 8e 21 00 00 9e '.x....2.....!...'
+Checksum: 0x17  Unused space in Extension Block: 75 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 32 8d 5e 04 aa c8 33 01 '........2.^...3.'
+  24 1d 01 03 95 1f 11 78 ea eb f5 95 59 54 90 27 '$......x....YT.''
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 50 07 e0 78 10 e0 28 10 32 14 '......P..x..(.2.'
+  04 04 00 80 47 00 00 1e 50 07 e0 78 10 e0 28 10 '....G...P..x..(.'
+  32 14 04 04 23 20 00 20 20 20 00 00 00 fc 00 5a '2...# .   .....Z'
+  4c 34 38 30 0a 20 20 20 20 20 20 20 00 00 00 fc 'L480.       ....'
+  00 5a 4c 0a 20 20 20 20 20 20 20 20 20 20 01 41 '.ZL.          .A'
+Checksum: 0x41
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 0.0.0.0
+    Supports_AI
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 225 MHz
+  Unknown CTA-861 Data Block (tag 0x00, length 2):
+    00 0f                                           '..'
+  Detailed Timing Descriptors:
+    Unknown Display Descriptor (0x78): 00 78 10 f0 14 00 32 14 82 00 c4 8e 21 00 00 9e '.x....2.....!...'
+Checksum: 0x17  Unused space in Extension Block: 75 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: The use of non-zero borders in a DTD is not recommended.
+Block 1, CTA-861 Extension Block:
+  Unknown CTA-861 Data Block (tag 0x00, length 2).
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Unknown CTA-861 Data Block (tag 0x00, length 2).
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x14.
+  Detailed Timing Descriptor #1: Mismatch of image size 1024x1920 mm vs display size 310x170 mm.
+  Detailed Timing Descriptor #2: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #2: 0 or negative vertical back porch.
+  Detailed Timing Descriptor #2: Mismatch of image size 35x32 mm vs display size 310x170 mm.
+  Missing Display Range Limits Descriptor.
+Block 1, CTA-861 Extension Block:
+  Display Descriptor #5: Monitor descriptor block has byte 4 nonzero (0x10).
+  Display Descriptor #5: Unknown Type 0x78.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Display Descriptor #6: Monitor descriptor block has byte 4 nonzero (0x10).
+  Display Descriptor #6: Unknown Type 0x78.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 1024x1920mm, which is larger than the display size 310.0x170.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

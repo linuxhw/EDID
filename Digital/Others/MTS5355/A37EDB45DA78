@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003693555371000000
-12150104a5301e78e22285a756499924
-125054afef008180810059007100614c
-01010101010121399030621a274068b0
-3600d9281100001c000000fd00384c1f
-5210000a202020202020000000ff0050
-31313138434130303131330a000000fc
-00323220436861737369730a20200034
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 93 55 53 71 00 00 00
+12 15 01 04 a5 30 1e 78 e2 22 85 a7 56 49 99 24
+12 50 54 af ef 00 81 80 81 00 59 00 71 00 61 4c
+01 01 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0
+36 00 d9 28 11 00 00 1c 00 00 00 fd 00 38 4c 1f
+52 10 00 0a 20 20 20 20 20 20 00 00 00 ff 00 50
+31 31 31 38 43 41 30 30 31 31 33 0a 00 00 00 fc
+00 32 32 20 43 68 61 73 73 69 73 0a 20 20 00 34
 
 00 ff ff ff ff ff ff 00 36 93 55 53 71 00 00 00
 12 15 01 04 a5 30 1e 78 e2 22 85 a7 56 49 99 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MTS
     Model: 21333
-    Serial Number: 113
+    Serial Number: ...
     Made in: week 18 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -69,8 +67,37 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   6 Vback   30 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-82 kHz H, max dotclock 160 MHz
-    Display Product Serial Number: 'P1118CA00113'
+    Display Product Serial Number: ...
     Display Product Name: '22 Chassis'
 Checksum: 0x34
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 93 55 53 71 00 00 00 '........6.USq...'
+  12 15 01 04 a5 30 1e 78 e2 22 85 a7 56 49 99 24 '.....0.x."..VI.$'
+  12 50 54 af ef 00 81 80 81 00 59 00 71 00 61 4c '.PT.......Y.q.aL'
+  01 01 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0 '......!9.0b.'@h.'
+  36 00 d9 28 11 00 00 1c 00 00 00 fd 00 38 4c 1f '6..(.........8L.'
+  52 10 00 0a 20 20 20 20 20 20 00 00 00 ff 00 50 'R...      .....P'
+  31 31 31 38 43 41 30 30 31 31 33 0a 00 00 00 fc '1118CA00113.....'
+  00 32 32 20 43 68 61 73 73 69 73 0a 20 20 00 34 '.22 Chassis.  .4'
+Checksum: 0x34
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

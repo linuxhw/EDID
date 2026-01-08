@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004a8b001901010101
-2520010380281b78ea3135a5554ea126
-0c50542dcf0071408180950001010101
-810081c090407023a0a050842d30582c
-4500a5ed1000001a000000fd00324b1e
-5512000a202020202020000000fc0050
-470a20202020202020202020000000ff
-000a20202020202020202020202001ef
-02032cf440230907078301000067030c
-0010001850e200d5e305c000e6060501
-616154681a00000101324be6131d56a0
-50002d303020350012182100001a0000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000e4
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4a 8b 00 19 01 01 01 01
+25 20 01 03 80 28 1b 78 ea 31 35 a5 55 4e a1 26
+0c 50 54 2d cf 00 71 40 81 80 95 00 01 01 01 01
+81 00 81 c0 90 40 70 23 a0 a0 50 84 2d 30 58 2c
+45 00 a5 ed 10 00 00 1a 00 00 00 fd 00 32 4b 1e
+55 12 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50
+47 0a 20 20 20 20 20 20 20 20 20 20 00 00 00 ff
+00 0a 20 20 20 20 20 20 20 20 20 20 20 20 01 ef
+
+02 03 2c f4 40 23 09 07 07 83 01 00 00 67 03 0c
+00 10 00 18 50 e2 00 d5 e3 05 c0 00 e6 06 05 01
+61 61 54 68 1a 00 00 01 01 32 4b e6 13 1d 56 a0
+50 00 2d 30 30 20 35 00 12 18 21 00 00 1a 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 e4
 
 00 ff ff ff ff ff ff 00 4a 8b 00 19 01 01 01 01
 25 20 01 03 80 28 1b 78 ea 31 35 a5 55 4e a1 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: RTK
     Model: 6400
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 37 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -83,7 +82,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-85 kHz H, max dotclock 180 MHz
     Display Product Name: 'PG'
-    Display Product Serial Number: ''
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0xef
 
@@ -137,3 +136,110 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   37 Vpol N
 Checksum: 0xe4  Unused space in Extension Block: 65 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4a 8b 00 19 01 01 01 01 '........J.......'
+  25 20 01 03 80 28 1b 78 ea 31 35 a5 55 4e a1 26 '% ...(.x.15.UN.&'
+  0c 50 54 2d cf 00 71 40 81 80 95 00 01 01 01 01 '.PT-..q@........'
+  81 00 81 c0 90 40 70 23 a0 a0 50 84 2d 30 58 2c '.....@p#..P.-0X,'
+  45 00 a5 ed 10 00 00 1a 00 00 00 fd 00 32 4b 1e 'E............2K.'
+  55 12 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50 'U...      .....P'
+  47 0a 20 20 20 20 20 20 20 20 20 20 00 00 00 ff 'G.          ....'
+  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 01 ef '..            ..'
+Checksum: 0xef
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 4
+  Video Data Block:
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 400 MHz
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Overscanned
+    IT scan behavior: Always Overscanned
+    CE scan behavior: Always Overscanned
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 97 (408.759 cd/m^2)
+    Desired content max frame-average luminance: 97 (408.759 cd/m^2)
+    Desired content min luminance: 84 (0.444 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 50 Hz
+    Maximum Refresh Rate: 75 Hz
+    Flags 1.x: 0xe6 (MCCS)
+  Detailed Timing Descriptors:
+    DTD 3:  1366x768    59.993326 Hz 683:384   48.775 kHz     74.430000 MHz (530 mm x 280 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   37 Vpol N
+Checksum: 0xe4  Unused space in Extension Block: 65 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 421x237 mm vs display size 400x270 mm.
+  Display Product Serial Number: ...
+Block 1, CTA-861 Extension Block:
+  There are more Native DTDs (4) than DTDs (3).
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
+  Detailed Timing Descriptor #2: Mismatch of image size 530x280 mm vs display size 400x270 mm.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #3: Mismatch of image size 530x280 mm vs display size 400x270 mm.
+EDID:
+  Base EDID: The DTD max image size is 530x280mm, which is larger than the display size 400.0x270.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0024b88501b8220000
-141c0103801e1a78aeb1a5a1584f9526
-165054adce00314045406140818081c0
-0101010101017f2156aa51001e30468f
-3300c4fe1000001e662150b051001b30
-40703600c4fe1000001e000000fd0032
-3d1e5808000a202020202020000000fc
-0048444d490a2020202020202020003f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 24 b8 85 01 b8 22 00 00
+14 1c 01 03 80 1e 1a 78 ae b1 a5 a1 58 4f 95 26
+16 50 54 ad ce 00 31 40 45 40 61 40 81 80 81 c0
+01 01 01 01 01 01 7f 21 56 aa 51 00 1e 30 46 8f
+33 00 c4 fe 10 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 c4 fe 10 00 00 1e 00 00 00 fd 00 32
+3d 1e 58 08 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 48 44 4d 49 0a 20 20 20 20 20 20 20 20 00 3f
 
 00 ff ff ff ff ff ff 00 24 b8 85 01 b8 22 00 00
 14 1c 01 03 80 1e 1a 78 ae b1 a5 a1 58 4f 95 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: IEX
     Model: 389
-    Serial Number: 8888
+    Serial Number: ...
     Made in: week 20 of 2018
   Basic Display Parameters & Features:
     Digital display
@@ -70,3 +68,35 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 50-61 Hz V, 30-88 kHz H, max dotclock 80 MHz
     Display Product Name: 'HDMI'
 Checksum: 0x3f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 24 b8 85 01 b8 22 00 00 '........$...."..'
+  14 1c 01 03 80 1e 1a 78 ae b1 a5 a1 58 4f 95 26 '.......x....XO.&'
+  16 50 54 ad ce 00 31 40 45 40 61 40 81 80 81 c0 '.PT...1@E@a@....'
+  01 01 01 01 01 01 7f 21 56 aa 51 00 1e 30 46 8f '.......!V.Q..0F.'
+  33 00 c4 fe 10 00 00 1e 66 21 50 b0 51 00 1b 30 '3.......f!P.Q..0'
+  40 70 36 00 c4 fe 10 00 00 1e 00 00 00 fd 00 32 '@p6............2'
+  3d 1e 58 08 00 0a 20 20 20 20 20 20 00 00 00 fc '=.X...      ....'
+  00 48 44 4d 49 0a 20 20 20 20 20 20 20 20 00 3f '.HDMI.        .?'
+Checksum: 0x3f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 452x254 mm vs display size 300x260 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 452x254 mm vs display size 300x260 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 75.029 Hz (Monitor: 50.000 - 61.000 Hz)
+    Maximum Clock: 108.000 MHz (Monitor: 80.000 MHz)
+  Base EDID: The DTD max image size is 452x254mm, which is larger than the display size 300.0x260.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

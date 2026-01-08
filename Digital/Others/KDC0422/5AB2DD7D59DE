@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002c83220400000000
-0f1f0104a51f117803e137a4574f9e27
-0f4f5000000001010101010101010101
-010101010101023a801871382d403020
-450035ae1000001a0000000000000000
-00000000000000000000000000fe004b
-44432020200a202020202020000000fe
-004b443134304e313633304130310067
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 2c 83 22 04 00 00 00 00
+0f 1f 01 04 a5 1f 11 78 03 e1 37 a4 57 4f 9e 27
+0f 4f 50 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 30 20
+45 00 35 ae 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4b
+44 43 20 20 20 0a 20 20 20 20 20 20 00 00 00 fe
+00 4b 44 31 34 30 4e 31 36 33 30 41 30 31 00 67
 
 00 ff ff ff ff ff ff 00 2c 83 22 04 00 00 00 00
 0f 1f 01 04 a5 1f 11 78 03 e1 37 a4 57 4f 9e 27
@@ -52,3 +50,37 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'KDC   '
     Alphanumeric Data String: 'KD140N1630A01'
 Checksum: 0x67
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 2c 83 22 04 00 00 00 00 '........,.".....'
+  0f 1f 01 04 a5 1f 11 78 03 e1 37 a4 57 4f 9e 27 '.......x..7.WO.''
+  0f 4f 50 00 00 00 01 01 01 01 01 01 01 01 01 01 '.OP.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 30 20 '.......:..q8-@0 '
+  45 00 35 ae 10 00 00 1a 00 00 00 00 00 00 00 00 'E.5.............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4b '...............K'
+  44 43 20 20 20 0a 20 20 20 20 20 20 00 00 00 fe 'DC   .      ....'
+  00 4b 44 31 34 30 4e 31 36 33 30 41 30 31 00 67 '.KD140N1630A01.g'
+Checksum: 0x67
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

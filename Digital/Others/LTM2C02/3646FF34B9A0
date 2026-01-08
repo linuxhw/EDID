@@ -1,0 +1,147 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 32 8d 02 2c 01 01 01 01
+01 15 01 03 80 59 32 78 0a ff ff ff ff ff ff ff
+ff ff ff 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 18 15 00 e2 40 58 78 20 58 2c
+06 0d 00 00 00 00 00 1e 00 00 00 11 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 32
+3c 1e 46 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4a 49 41 4e 43 2d 54 56 0a 20 20 20 20 01 f8
+
+02 03 10 40 23 09 04 01 67 03 0c 00 00 00 00 1e
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+00 ff ff ff ff ff ff 00 32 8d 02 2c 01 01 01 01
+01 15 01 03 80 59 32 78 0a ff ff ff ff ff ff ff
+ff ff ff 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 18 15 00 e2 40 58 78 20 58 2c
+06 0d 00 00 00 00 00 1e 00 00 00 11 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 32
+3c 1e 46 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4a 49 41 4e 43 2d 54 56 0a 20 20 20 20 01 f8
+
+02 03 10 40 23 09 04 01 67 03 0c 00 00 00 00 1e
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LTM
+    Model: 11266
+    Serial Number: ...
+    Made in: week 1 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 89 cm x 50 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.9990, 0.9990
+    Green: 0.9990, 0.9990
+    Blue : 0.9990, 0.9990
+    White: 0.9990, 0.9990
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1024x600    60.000000 Hz 128:75    43.200 kHz     54.000000 MHz
+                 Hfront   88 Hsync  44 Hback   94 Hpol P
+                 Vfront   48 Vsync  22 Vback   50 Vpol P
+    Unknown Display Descriptor (0x11): 00 11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+    Display Range Limits:
+      Monitor ranges (GTF): 50-60 Hz V, 30-70 kHz H, max dotclock 150 MHz
+    Display Product Name: 'JIANC-TV'
+  Extension blocks: 1
+Checksum: 0xf8
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 0
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48
+      Supported sample sizes (bits): 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 0.0.0.0
+    Maximum TMDS clock: 150 MHz
+Checksum: 0x00 (should be 0xe6)  Unused space in Extension Block: 111 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 32 8d 02 2c 01 01 01 01 '........2..,....'
+  01 15 01 03 80 59 32 78 0a ff ff ff ff ff ff ff '.....Y2x........'
+  ff ff ff 00 00 00 01 01 01 01 01 01 01 01 01 01 '................'
+  01 01 01 01 01 01 18 15 00 e2 40 58 78 20 58 2c '..........@Xx X,'
+  06 0d 00 00 00 00 00 1e 00 00 00 11 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 32 '...............2'
+  3c 1e 46 0f 00 0a 20 20 20 20 20 20 00 00 00 fc '<.F...      ....'
+  00 4a 49 41 4e 43 2d 54 56 0a 20 20 20 20 01 f8 '.JIANC-TV.    ..'
+Checksum: 0xf8
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 0
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48
+      Supported sample sizes (bits): 16
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 0.0.0.0
+    Maximum TMDS clock: 150 MHz
+Checksum: 0x00 (should be 0xe6)  Unused space in Extension Block: 111 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
+  Display Descriptor #2: Unknown Type 0x11.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+  Invalid checksum 0x00 (should be 0xe6).
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+  Invalid checksum 0x00 (should be 0xe6).
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

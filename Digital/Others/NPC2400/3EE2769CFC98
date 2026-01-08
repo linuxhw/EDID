@@ -1,0 +1,94 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 3a 03 00 24 01 01 01 01
+04 20 01 04 a5 35 1d 78 22 1e c5 ae 4f 34 b1 26
+0e 50 54 21 08 00 81 80 a9 40 d1 c0 71 40 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 12 22 21 00 00 1e b2 43 80 a0 70 38 1f 40
+30 20 45 00 12 22 21 00 00 1e 00 00 00 fc 00 49
+50 32 33 38 56 4c 31 0a 20 20 20 20 00 00 00 fd
+00 3b 4b 1e 64 12 00 0a 20 20 20 20 20 20 00 33
+
+00 ff ff ff ff ff ff 00 3a 03 00 24 01 01 01 01
+04 20 01 04 a5 35 1d 78 22 1e c5 ae 4f 34 b1 26
+0e 50 54 21 08 00 81 80 a9 40 d1 c0 71 40 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 12 22 21 00 00 1e b2 43 80 a0 70 38 1f 40
+30 20 45 00 12 22 21 00 00 1e 00 00 00 fc 00 49
+50 32 33 38 56 4c 31 0a 20 20 20 20 00 00 00 fd
+00 3b 4b 1e 64 12 00 0a 20 20 20 20 20 20 00 33
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: NPC
+    Model: 9216
+    Serial Number: ...
+    Made in: week 4 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 53 cm x 29 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6796, 0.3095
+    Green: 0.2060, 0.6933
+    Blue : 0.1513, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (530 mm x 290 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1920x1080   74.993076 Hz  16:9     83.317 kHz    173.300000 MHz (530 mm x 290 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    4 Vsync   5 Vback   22 Vpol P
+    Display Product Name: 'IP238VL1'
+    Display Range Limits:
+      Monitor ranges (GTF): 59-75 Hz V, 30-100 kHz H, max dotclock 180 MHz
+Checksum: 0x33
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 3a 03 00 24 01 01 01 01 '........:..$....'
+  04 20 01 04 a5 35 1d 78 22 1e c5 ae 4f 34 b1 26 '. ...5.x"...O4.&'
+  0e 50 54 21 08 00 81 80 a9 40 d1 c0 71 40 01 01 '.PT!.....@..q@..'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 12 22 21 00 00 1e b2 43 80 a0 70 38 1f 40 'E.."!....C..p8.@'
+  30 20 45 00 12 22 21 00 00 1e 00 00 00 fc 00 49 '0 E.."!........I'
+  50 32 33 38 56 4c 31 0a 20 20 20 20 00 00 00 fd 'P238VL1.    ....'
+  00 3b 4b 1e 64 12 00 0a 20 20 20 20 20 20 00 33 '.;K.d...      .3'
+Checksum: 0x33
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

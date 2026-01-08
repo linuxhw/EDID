@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003def000000000000
-211b0104a52c1778223186a852469723
-1b4c58bfef00904095008180814081c0
-8100010101012f2640a060841a303020
-3500b2ec1000001e662156aa51001e30
-468f330099e61000001a000000fd0032
-4c1e5311000a202020202020000000fc
-004c4544204d4f4e49544f520a200077
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 3d ef 00 00 00 00 00 00
+21 1b 01 04 a5 2c 17 78 22 31 86 a8 52 46 97 23
+1b 4c 58 bf ef 00 90 40 95 00 81 80 81 40 81 c0
+81 00 01 01 01 01 2f 26 40 a0 60 84 1a 30 30 20
+35 00 b2 ec 10 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 99 e6 10 00 00 1a 00 00 00 fd 00 32
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 45 44 20 4d 4f 4e 49 54 4f 52 0a 20 00 77
 
 00 ff ff ff ff ff ff 00 3d ef 00 00 00 00 00 00
 21 1b 01 04 a5 2c 17 78 22 31 86 a8 52 46 97 23
@@ -76,4 +74,34 @@ Block 0, Base EDID:
     Display Product Name: 'LED MONITOR'
 Checksum: 0x77
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 3d ef 00 00 00 00 00 00 '........=.......'
+  21 1b 01 04 a5 2c 17 78 22 31 86 a8 52 46 97 23 '!....,.x"1..RF.#'
+  1b 4c 58 bf ef 00 90 40 95 00 81 80 81 40 81 c0 '.LX....@.....@..'
+  81 00 01 01 01 01 2f 26 40 a0 60 84 1a 30 30 20 '....../&@.`..00 '
+  35 00 b2 ec 10 00 00 1e 66 21 56 aa 51 00 1e 30 '5.......f!V.Q..0'
+  46 8f 33 00 99 e6 10 00 00 1a 00 00 00 fd 00 32 'F.3............2'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 4c 45 44 20 4d 4f 4e 49 54 4f 52 0a 20 00 77 '.LED MONITOR. .w'
+Checksum: 0x77
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x51.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

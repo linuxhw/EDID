@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00328d5e04aac83301
-241b010395202078eaebf59559549027
-1e505400000001010101010101010101
-010101010101bd16905811001850a018
-c20090001500001e0000000000000000
-00000000000000000000000000fd0032
-460f1e03000a202020202020000000fe
-004a595f333230583332300a2020006e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 32 8d 5e 04 aa c8 33 01
+24 1b 01 03 95 20 20 78 ea eb f5 95 59 54 90 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bd 16 90 58 11 00 18 50 a0 18
+c2 00 90 00 15 00 00 1e 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 32
+46 0f 1e 03 00 0a 20 20 20 20 20 20 00 00 00 fe
+00 4a 59 5f 33 32 30 58 33 32 30 0a 20 20 00 6e
 
 00 ff ff ff ff ff ff 00 32 8d 5e 04 aa c8 33 01
 24 1b 01 03 95 20 20 78 ea eb f5 95 59 54 90 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: LTM
     Model: 1118
-    Serial Number: 20170922
+    Serial Number: ...
     Made in: week 36 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -53,3 +51,36 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 50-70 Hz V, 15-30 kHz H, max dotclock 30 MHz
     Alphanumeric Data String: 'JY_320X320'
 Checksum: 0x6e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 32 8d 5e 04 aa c8 33 01 '........2.^...3.'
+  24 1b 01 03 95 20 20 78 ea eb f5 95 59 54 90 27 '$....  x....YT.''
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 bd 16 90 58 11 00 18 50 a0 18 '.........X...P..'
+  c2 00 90 00 15 00 00 1e 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 32 '...............2'
+  46 0f 1e 03 00 0a 20 20 20 20 20 20 00 00 00 fe 'F.....      ....'
+  00 4a 59 5f 33 32 30 58 33 32 30 0a 20 20 00 6e '.JY_320X320.  .n'
+Checksum: 0x6e
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x14.
+  Detailed Timing Descriptor #1: Mismatch of image size 400x1280 mm vs display size 320x320 mm.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 78.239 - 78.239 kHz (Monitor: 15.000 - 30.000 kHz)
+    Maximum Clock: 58.210 MHz (Monitor: 30.000 MHz)
+  Base EDID: The DTD max image size is 400x1280mm, which is larger than the display size 320.0x320.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

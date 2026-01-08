@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff002ecd084307010101
-0a0f010380261f78eaa2b5a35853a027
-0d5054bfef808140714f814a81990101
-010101010101302a009851002a403070
-1300782d1100001e000000fd00304d1e
-5e0e313033303830390a000000fc004c
-4344204d6f6e69746f723139000000ff
-0031323334353637383930313233012e
-0203184023091f078301000065030c00
-10004501031204130000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000d7
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 2e cd 08 43 07 01 01 01
+0a 0f 01 03 80 26 1f 78 ea a2 b5 a3 58 53 a0 27
+0d 50 54 bf ef 80 81 40 71 4f 81 4a 81 99 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 fd 00 30 4d 1e
+5e 0e 31 30 33 30 38 30 39 0a 00 00 00 fc 00 4c
+43 44 20 4d 6f 6e 69 74 6f 72 31 39 00 00 00 ff
+00 31 32 33 34 35 36 37 38 39 30 31 32 33 01 2e
+
+02 03 18 40 23 09 1f 07 83 01 00 00 65 03 0c 00
+10 00 45 01 03 12 04 13 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 d7
 
 00 ff ff ff ff ff ff 00 2e cd 08 43 07 01 01 01
 0a 0f 01 03 80 26 1f 78 ea a2 b5 a3 58 53 a0 27
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: KVM
     Model: 17160
-    Serial Number: 16843015
+    Serial Number: ...
     Made in: week 10 of 2005
   Basic Display Parameters & Features:
     Digital display
@@ -86,7 +85,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (Unknown (0x31)): 48-77 Hz V, 30-94 kHz H, max dotclock 140 MHz
     Display Product Name: 'LCD Monitor19'
-    Display Product Serial Number: '1234567890123'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x2e
 
@@ -112,3 +111,80 @@ Block 1, CTA-861 Extension Block:
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
     VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
 Checksum: 0xd7  Unused space in Extension Block: 103 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 2e cd 08 43 07 01 01 01 '...........C....'
+  0a 0f 01 03 80 26 1f 78 ea a2 b5 a3 58 53 a0 27 '.....&.x....XS.''
+  0d 50 54 bf ef 80 81 40 71 4f 81 4a 81 99 01 01 '.PT....@qO.J....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 fd 00 30 4d 1e '..x-.........0M.'
+  5e 0e 31 30 33 30 38 30 39 0a 00 00 00 fc 00 4c '^.1030809......L'
+  43 44 20 4d 6f 6e 69 74 6f 72 31 39 00 00 00 ff 'CD Monitor19....'
+  00 31 32 33 34 35 36 37 38 39 30 31 32 33 01 2e '.1234567890123..'
+Checksum: 0x2e
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 0
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+Checksum: 0xd7  Unused space in Extension Block: 103 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 1 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: Unknown range class (0x31).
+  Display Range Limits: Byte 11 is 0x30 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 85.024 Hz (Monitor: 48.000 - 77.000 Hz)
+    Maximum Clock: 157.500 MHz (Monitor: 140.000 MHz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

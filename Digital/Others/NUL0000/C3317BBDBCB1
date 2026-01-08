@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003aac000000000000
-01100104a5221b78e2fd06a35b4a9826
-1f4f54bfef808180818a714f6146614a
-454c81406146302a009851002a403070
-1300520e1100001e000000fd00324b18
-500e000a202020202020000000fc0031
-3727270a2020202020202020000000fc
-00200a202020202020202020202000d3
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 3a ac 00 00 00 00 00 00
+01 10 01 04 a5 22 1b 78 e2 fd 06 a3 5b 4a 98 26
+1f 4f 54 bf ef 80 81 80 81 8a 71 4f 61 46 61 4a
+45 4c 81 40 61 46 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 fd 00 32 4b 18
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 31
+37 27 27 0a 20 20 20 20 20 20 20 20 00 00 00 fc
+00 20 0a 20 20 20 20 20 20 20 20 20 20 20 00 d3
 
 00 ff ff ff ff ff ff 00 3a ac 00 00 00 00 00 00
 01 10 01 04 a5 22 1b 78 e2 fd 06 a3 5b 4a 98 26
@@ -77,4 +75,34 @@ Block 0, Base EDID:
     Display Product Name: ' '
 Checksum: 0xd3
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 3a ac 00 00 00 00 00 00 '........:.......'
+  01 10 01 04 a5 22 1b 78 e2 fd 06 a3 5b 4a 98 26 '.....".x....[J.&'
+  1f 4f 54 bf ef 80 81 80 81 8a 71 4f 61 46 61 4a '.OT.......qOaFaJ'
+  45 4c 81 40 61 46 30 2a 00 98 51 00 2a 40 30 70 'EL.@aF0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 fd 00 32 4b 18 '..R..........2K.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 31 'P...      .....1'
+  37 27 27 0a 20 20 20 20 20 20 20 20 00 00 00 fc '7''.        ....'
+  00 20 0a 20 20 20 20 20 20 20 20 20 20 20 00 d3 '. .           ..'
+Checksum: 0xd3
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Product Name: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

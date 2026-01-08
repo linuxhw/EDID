@@ -1,0 +1,82 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 28 9a 39 0a 00 00 00 00
+10 22 01 04 a5 1f 11 78 02 76 35 96 5d 5b 95 2b
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c0 39 80 18 71 38 28 40 30 20
+36 00 35 ae 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 38 0a 20 20 20 20 00 00 00 fe 00 47
+31 34 30 45 44 31 30 0a 20 20 20 20 00 00 00 fe
+00 47 31 34 30 45 44 31 30 0a 00 00 20 20 00 9a
+
+00 ff ff ff ff ff ff 00 28 9a 39 0a 00 00 00 00
+10 22 01 04 a5 1f 11 78 02 76 35 96 5d 5b 95 2b
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 c0 39 80 18 71 38 28 40 30 20
+36 00 35 ae 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 38 0a 20 20 20 20 00 00 00 fe 00 47
+31 34 30 45 44 31 30 0a 20 20 20 20 00 00 00 fe
+00 47 31 34 30 45 44 31 30 0a 00 00 20 20 00 9a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: JDZ
+    Model: 2617
+    Made in: week 16 of 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5869, 0.3662
+    Green: 0.3564, 0.5839
+    Blue : 0.1679, 0.1318
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.200 kHz    147.840000 MHz (309 mm x 174 mm)
+                 Hfront   48 Hsync  32 Hback  200 Hpol P
+                 Vfront    3 Vsync   6 Vback   31 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 38 0a 20 20 20 20 '..........8.    '
+    Alphanumeric Data String: 'G140ED10'
+    Alphanumeric Data String: 'G140ED10'
+Checksum: 0x9a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 28 9a 39 0a 00 00 00 00 '........(.9.....'
+  10 22 01 04 a5 1f 11 78 02 76 35 96 5d 5b 95 2b '.".....x.v5.][.+'
+  21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '!PT.............'
+  01 01 01 01 01 01 c0 39 80 18 71 38 28 40 30 20 '.......9..q8(@0 '
+  36 00 35 ae 10 00 00 1a 00 00 00 00 00 00 00 00 '6.5.............'
+  00 00 00 00 38 0a 20 20 20 20 00 00 00 fe 00 47 '....8.    .....G'
+  31 34 30 45 44 31 30 0a 20 20 20 20 00 00 00 fe '140ED10.    ....'
+  00 47 31 34 30 45 44 31 30 0a 00 00 20 20 00 9a '.G140ED10...  ..'
+Checksum: 0x9a
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-space after newline.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

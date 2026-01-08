@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003609011000888888
-1c1c0103800000780a0dc9a057479827
-12484c000000d1c00101010101010101
-010101010101401f00c850203230582d
-450000205300001e0000001000801070
-20208400803874000018000000fc004d
-50493130370a20202020202000000010
-00147801ff1d000a2020202020200095
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 09 01 10 00 88 88 88
+1c 1c 01 03 80 00 00 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 d1 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 40 1f 00 c8 50 20 32 30 58 2d
+45 00 00 20 53 00 00 1e 00 00 00 10 00 80 10 70
+20 20 84 00 80 38 74 00 00 18 00 00 00 fc 00 4d
+50 49 31 30 37 0a 20 20 20 20 20 20 00 00 00 10
+00 14 78 01 ff 1d 00 0a 20 20 20 20 20 20 00 95
 
 00 ff ff ff ff ff ff 00 36 09 01 10 00 88 88 88
 1c 1c 01 03 80 00 00 78 0a 0d c9 a0 57 47 98 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MPI
     Model: 4097
-    Serial Number: 2290649088
+    Serial Number: ...
     Made in: week 28 of 2018
   Basic Display Parameters & Features:
     Digital display
@@ -51,3 +49,32 @@ Block 0, Base EDID:
     Display Product Name: 'MPI107'
     Dummy Descriptor:
 Checksum: 0x95
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 09 01 10 00 88 88 88 '........6.......'
+  1c 1c 01 03 80 00 00 78 0a 0d c9 a0 57 47 98 27 '.......x....WG.''
+  12 48 4c 00 00 00 d1 c0 01 01 01 01 01 01 01 01 '.HL.............'
+  01 01 01 01 01 01 40 1f 00 c8 50 20 32 30 58 2d '......@...P 20X-'
+  45 00 00 20 53 00 00 1e 00 00 00 10 00 80 10 70 'E.. S..........p'
+  20 20 84 00 80 38 74 00 00 18 00 00 00 fc 00 4d '  ...8t........M'
+  50 49 31 30 37 0a 20 20 20 20 20 20 00 00 00 10 'PI107.      ....'
+  00 14 78 01 ff 1d 00 0a 20 20 20 20 20 20 00 95 '..x.....      ..'
+Checksum: 0x95
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Dummy Descriptor: Dummy block filled with garbage.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 1280x800mm, but the display size is not specified anywhere.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

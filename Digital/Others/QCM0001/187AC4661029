@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00446d010001000000
-1b10010380502d780a0dc9a057479827
-12484c00000001010101010101010101
-0101010101011f34d0ac221818605e28
-12440000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000fe
-007336653866636f2073616d737500fa
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 44 6d 01 00 01 00 00 00
+1b 10 01 03 80 50 2d 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 1f 34 d0 ac 22 18 18 60 5e 28
+12 44 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 73 36 65 38 66 63 6f 20 73 61 6d 73 75 00 fa
 
 00 ff ff ff ff ff ff 00 44 6d 01 00 01 00 00 00
 1b 10 01 03 80 50 2d 78 0a 0d c9 a0 57 47 98 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: QCM
     Model: 1
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 27 of 2006
   Basic Display Parameters & Features:
     Digital display
@@ -50,3 +48,33 @@ Block 0, Base EDID:
     Empty Descriptor
     Alphanumeric Data String: 's6e8fco samsu'
 Checksum: 0xfa
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 44 6d 01 00 01 00 00 00 '........Dm......'
+  1b 10 01 03 80 50 2d 78 0a 0d c9 a0 57 47 98 27 '.....P-x....WG.''
+  12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01 '.HL.............'
+  01 01 01 01 01 01 1f 34 d0 ac 22 18 18 60 5e 28 '.......4.."..`^('
+  12 44 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '.D..............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe '................'
+  00 73 36 65 38 66 63 6f 20 73 61 6d 73 75 00 fa '.s6e8fco samsu..'
+Checksum: 0xfa
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

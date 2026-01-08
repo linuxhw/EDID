@@ -1,0 +1,236 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4a 8b 57 40 53 51 30 30
+2c 19 01 04 b5 30 1b 78 3a ef 65 a6 56 52 9d 28
+0b 50 54 21 08 00 d1 c0 81 80 a9 c0 01 01 01 01
+01 01 01 01 01 01 d8 40 80 18 71 b0 3c 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 38 52 33
+33 39 32 36 4f 30 30 51 53 0a 00 00 00 fc 00 54
+59 50 45 43 0a 20 20 20 20 20 20 20 00 00 00 fd
+00 38 4c 1e 53 11 01 0a 20 20 20 20 20 20 01 01
+
+02 03 25 f2 44 05 10 1f 00 23 09 7f 07 83 01 00
+00 65 03 0c 00 10 00 e3 05 c0 00 e6 06 05 01 62
+62 00 e2 00 c0 02 3a 80 18 71 38 2d 40 58 2c 25
+00 5a c2 10 00 00 9e 57 30 80 18 71 38 2d 40 58
+2c 25 00 5a c2 10 00 00 ff 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4c
+
+00 ff ff ff ff ff ff 00 4a 8b 57 40 53 51 30 30
+2c 19 01 04 b5 30 1b 78 3a ef 65 a6 56 52 9d 28
+0b 50 54 21 08 00 d1 c0 81 80 a9 c0 01 01 01 01
+01 01 01 01 01 01 d8 40 80 18 71 b0 3c 40 58 2c
+45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 38 52 33
+33 39 32 36 4f 30 30 51 53 0a 00 00 00 fc 00 54
+59 50 45 43 0a 20 20 20 20 20 20 20 00 00 00 fd
+00 38 4c 1e 53 11 01 0a 20 20 20 20 20 20 01 01
+
+02 03 25 f2 44 05 10 1f 00 23 09 7f 07 83 01 00
+00 65 03 0c 00 10 00 e3 05 c0 00 e6 06 05 01 62
+62 00 e2 00 c0 02 3a 80 18 71 38 2d 40 58 2c 25
+00 5a c2 10 00 00 9e 57 30 80 18 71 38 2d 40 58
+2c 25 00 5a c2 10 00 00 ff 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: RTK
+    Model: 16471
+    Serial Number: ...
+    Made in: week 44 of 2015
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 48 cm x 27 cm
+    Gamma: 2.20
+    DPMS levels: Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6513, 0.3378
+    Green: 0.3232, 0.6162
+    Blue : 0.1572, 0.0449
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+    DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1200   59.884560 Hz  16:10    75.455 kHz    166.000000 MHz (477 mm x 268 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   51 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: 'TYPEC'
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+  Extension blocks: 1
+Checksum: 0x01
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 98 (417.710 cd/m^2)
+    Desired content max frame-average luminance: 98 (417.710 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: IT video formats not supported
+    CE scan behavior: CE video formats not supported
+  Detailed Timing Descriptors:
+    DTD 2:  1920x2160i  59.973345 Hz   8:9     67.500 kHz    148.500000 MHz (346 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   38 Vpol P Vback  +0.5 Even Field
+    DTD 3:  1920x2160i  49.977788 Hz   8:9     56.250 kHz    123.750000 MHz (side by side interleaved, 346 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   38 Vpol P Vback  +0.5 Even Field
+Checksum: 0x4c  Unused space in Extension Block: 54 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4a 8b 57 40 53 51 30 30 '........J.W@SQ00'
+  2c 19 01 04 b5 30 1b 78 3a ef 65 a6 56 52 9d 28 ',....0.x:.e.VR.('
+  0b 50 54 21 08 00 d1 c0 81 80 a9 c0 01 01 01 01 '.PT!............'
+  01 01 01 01 01 01 d8 40 80 18 71 b0 3c 40 58 2c '.......@..q.<@X,'
+  45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 38 52 33 'E............8R3'
+  33 39 32 36 4f 30 30 51 53 0a 00 00 00 fc 00 54 '3926O00QS......T'
+  59 50 45 43 0a 20 20 20 20 20 20 20 00 00 00 fd 'YPEC.       ....'
+  00 38 4c 1e 53 11 01 0a 20 20 20 20 20 20 01 01 '.8L.S...      ..'
+Checksum: 0x01
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 98 (417.710 cd/m^2)
+    Desired content max frame-average luminance: 98 (417.710 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: IT video formats not supported
+    CE scan behavior: CE video formats not supported
+  Detailed Timing Descriptors:
+    DTD 4:  1920x2160i  59.973345 Hz   8:9     67.500 kHz    148.500000 MHz (346 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   38 Vpol P Vback  +0.5 Even Field
+    DTD 5:  1920x2160i  49.977788 Hz   8:9     56.250 kHz    123.750000 MHz (side by side interleaved, 346 mm x 194 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   38 Vpol P Vback  +0.5 Even Field
+Checksum: 0x4c  Unused space in Extension Block: 54 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 49.978 - 60.317 Hz (Monitor: 56.000 - 76.000 Hz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Detailed Timing Descriptor #2: Mismatch of image size 346x194 mm vs display size 480x270 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 346x194 mm vs display size 480x270 mm.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #4: Mismatch of image size 346x194 mm vs display size 480x270 mm.
+  Detailed Timing Descriptor #5: Mismatch of image size 346x194 mm vs display size 480x270 mm.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

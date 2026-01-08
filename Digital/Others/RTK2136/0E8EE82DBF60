@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004a8b362178563412
-01160103852f1d78ea64b5ab5238ab25
-13505400000001010101010101010101
-010101010101302a009851002a40582c
-4500d9281100001c0000001000000000
-00000000000000000000000000100048
-5020416c6c2d496e2d4f6e6500000010
-00384c1e53100a0a0a0a0a0a0a0a0066
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4a 8b 36 21 78 56 34 12
+01 16 01 03 85 2f 1d 78 ea 64 b5 ab 52 38 ab 25
+13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 58 2c
+45 00 d9 28 11 00 00 1c 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 10 00 48
+50 20 41 6c 6c 2d 49 6e 2d 4f 6e 65 00 00 00 10
+00 38 4c 1e 53 10 0a 0a 0a 0a 0a 0a 0a 0a 00 66
 
 00 ff ff ff ff ff ff 00 4a 8b 36 21 78 56 34 12
 01 16 01 03 85 2f 1d 78 ea 64 b5 ab 52 38 ab 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: RTK
     Model: 8502
-    Serial Number: 305419896
+    Serial Number: ...
     Made in: week 1 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -52,3 +50,38 @@ Block 0, Base EDID:
     Dummy Descriptor:
     Dummy Descriptor:
 Checksum: 0x66
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4a 8b 36 21 78 56 34 12 '........J.6!xV4.'
+  01 16 01 03 85 2f 1d 78 ea 64 b5 ab 52 38 ab 25 '...../.x.d..R8.%'
+  13 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 58 2c '......0*..Q.*@X,'
+  45 00 d9 28 11 00 00 1c 00 00 00 10 00 00 00 00 'E..(............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 10 00 48 '...............H'
+  50 20 41 6c 6c 2d 49 6e 2d 4f 6e 65 00 00 00 10 'P All-In-One....'
+  00 38 4c 1e 53 10 0a 0a 0a 0a 0a 0a 0a 0a 00 66 '.8L.S..........f'
+Checksum: 0x66
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x23.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x04.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

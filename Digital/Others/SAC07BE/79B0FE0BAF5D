@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c23be072444f605
-071a010380261e782aeea69e544c9926
-194f54adcf0081800101010101010101
-010101010101bc34009851002a401090
-13005e0e1100001e000000fd00384b1f
-500e000a202020202020000000fc004c
-4544204d4f4e49544f520a20000000fe
-004844303130353831343032343200bc
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 23 be 07 24 44 f6 05
+07 1a 01 03 80 26 1e 78 2a ee a6 9e 54 4c 99 26
+19 4f 54 ad cf 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90
+13 00 5e 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1f
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+45 44 20 4d 4f 4e 49 54 4f 52 0a 20 00 00 00 fe
+00 48 44 30 31 30 35 38 31 34 30 32 34 32 00 bc
 
 00 ff ff ff ff ff ff 00 4c 23 be 07 24 44 f6 05
 07 1a 01 03 80 26 1e 78 2a ee a6 9e 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAC
     Model: 1982
-    Serial Number: 100025380
+    Serial Number: ...
     Made in: week 7 of 2016
   Basic Display Parameters & Features:
     Digital display
@@ -65,4 +63,28 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'HD01058140242'
 Checksum: 0xbc
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 23 be 07 24 44 f6 05 '........L#..$D..'
+  07 1a 01 03 80 26 1e 78 2a ee a6 9e 54 4c 99 26 '.....&.x*...TL.&'
+  19 4f 54 ad cf 00 81 80 01 01 01 01 01 01 01 01 '.OT.............'
+  01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90 '.......4..Q.*@..'
+  13 00 5e 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1f '..^..........8K.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'P...      .....L'
+  45 44 20 4d 4f 4e 49 54 4f 52 0a 20 00 00 00 fe 'ED MONITOR. ....'
+  00 48 44 30 31 30 35 38 31 34 30 32 34 32 00 bc '.HD01058140242..'
+Checksum: 0xbc
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 350x270 mm vs display size 380x300 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00446d010001000000
-1b10010380060f780a0dc9a057479827
-12484c00000001010101010101010101
-010101010101b94dd030204c23621408
-3200000000000000b94dd030204cf264
-14082204000000000000b94dd030204c
-926a1408220c000000000000000000fe
-006d6970695f6d6f745f7669645f0020
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 44 6d 01 00 01 00 00 00
+1b 10 01 03 80 06 0f 78 0a 0d c9 a0 57 47 98 27
+12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b9 4d d0 30 20 4c 23 62 14 08
+32 00 00 00 00 00 00 00 b9 4d d0 30 20 4c f2 64
+14 08 22 04 00 00 00 00 00 00 b9 4d d0 30 20 4c
+92 6a 14 08 22 0c 00 00 00 00 00 00 00 00 00 fe
+00 6d 69 70 69 5f 6d 6f 74 5f 76 69 64 5f 00 20
 
 00 ff ff ff ff ff ff 00 44 6d 01 00 01 00 00 00
 1b 10 01 03 80 06 0f 78 0a 0d c9 a0 57 47 98 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: QCM
     Model: 1
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 27 of 2006
   Basic Display Parameters & Features:
     Digital display
@@ -54,3 +52,38 @@ Block 0, Base EDID:
                  Vfront   50 Vsync   2 Vback 2654 Vpol N
     Alphanumeric Data String: 'mipi_mot_vid_'
 Checksum: 0x20
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 44 6d 01 00 01 00 00 00 '........Dm......'
+  1b 10 01 03 80 06 0f 78 0a 0d c9 a0 57 47 98 27 '.......x....WG.''
+  12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01 '.HL.............'
+  01 01 01 01 01 01 b9 4d d0 30 20 4c 23 62 14 08 '.......M.0 L#b..'
+  32 00 00 00 00 00 00 00 b9 4d d0 30 20 4c f2 64 '2........M.0 L.d'
+  14 08 22 04 00 00 00 00 00 00 b9 4d d0 30 20 4c '.."........M.0 L'
+  92 6a 14 08 22 0c 00 00 00 00 00 00 00 00 00 fe '.j.."...........'
+  00 6d 69 70 69 5f 6d 6f 74 5f 76 69 64 5f 00 20 '.mipi_mot_vid_. '
+Checksum: 0x20
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (6x15 is smaller than 10x10 cm).
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #3: Mismatch of image size vs display size: image size is not set, but display size is.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
