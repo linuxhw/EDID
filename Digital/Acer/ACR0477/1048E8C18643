@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff000472770469ac4074
-2c1b0103803e22782e08a5a2574fa228
-0f5054bfef8081c0810081809500b300
-8140d1c0714f04740030f2705a80b058
-8a006d552100001e000000ff0054344e
-5341303031343230310a000000fd0017
-501e631e000a202020202020000000fc
-0041636572204342323831484b0a005b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 77 04 69 ac 40 74
+2c 1b 01 03 80 3e 22 78 2e 08 a5 a2 57 4f a2 28
+0f 50 54 bf ef 80 81 c0 81 00 81 80 95 00 b3 00
+81 40 d1 c0 71 4f 04 74 00 30 f2 70 5a 80 b0 58
+8a 00 6d 55 21 00 00 1e 00 00 00 ff 00 54 34 4e
+53 41 30 30 31 34 32 30 31 0a 00 00 00 fd 00 17
+50 1e 63 1e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 41 63 65 72 20 43 42 32 38 31 48 4b 0a 00 5b
 
 00 ff ff ff ff ff ff 00 04 72 77 04 69 ac 40 74
 2c 1b 01 03 80 3e 22 78 2e 08 a5 a2 57 4f a2 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 1143
-    Serial Number: 1950395497
+    Serial Number: ...
     Made in: week 44 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -71,8 +69,34 @@ Block 0, Base EDID:
     DTD 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz (621 mm x 341 mm)
                  Hfront  176 Hsync  88 Hback  296 Hpol P
                  Vfront    8 Vsync  10 Vback   72 Vpol P
-    Display Product Serial Number: 'T4NSA0014201'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 23-80 Hz V, 30-99 kHz H, max dotclock 300 MHz
     Display Product Name: 'Acer CB281HK'
 Checksum: 0x5b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 77 04 69 ac 40 74 '.........rw.i.@t'
+  2c 1b 01 03 80 3e 22 78 2e 08 a5 a2 57 4f a2 28 ',....>"x....WO.('
+  0f 50 54 bf ef 80 81 c0 81 00 81 80 95 00 b3 00 '.PT.............'
+  81 40 d1 c0 71 4f 04 74 00 30 f2 70 5a 80 b0 58 '.@..qO.t.0.pZ..X'
+  8a 00 6d 55 21 00 00 1e 00 00 00 ff 00 54 34 4e '..mU!........T4N'
+  53 41 30 30 31 34 32 30 31 0a 00 00 00 fd 00 17 'SA0014201.......'
+  50 1e 63 1e 00 0a 20 20 20 20 20 20 00 00 00 fc 'P.c...      ....'
+  00 41 63 65 72 20 43 42 32 38 31 48 4b 0a 00 5b '.Acer CB281HK..['
+Checksum: 0x5b
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

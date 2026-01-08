@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0004727804327b6071
-101b0104a551237806ee91a3544c9926
-0f505421080001010101010101010101
-010101010101cd4600a0a0381f403020
-3a002e5a3100001a000000ff00234153
-4e492f43653241734c64000000fd001e
-c842dc3c010a202020202020000000fc
-005a33350a2020202020202020200170
-020312412309070183010000654b0400
-0101776500a0a0382c4030203a002e5a
-3100001a507800a0a038354030203a00
-2e5a3100001acd9100a0a03840403020
-3a002e5a3100001af4b000a0a0384d40
-30203a002e5a3100001ac0e900a0a038
-144030203a002e5a3100001e00000000
-0000000000000000000000000000007c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 78 04 32 7b 60 71
+10 1b 01 04 a5 51 23 78 06 ee 91 a3 54 4c 99 26
+0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 cd 46 00 a0 a0 38 1f 40 30 20
+3a 00 2e 5a 31 00 00 1a 00 00 00 ff 00 23 41 53
+4e 49 2f 43 65 32 41 73 4c 64 00 00 00 fd 00 1e
+c8 42 dc 3c 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 5a 33 35 0a 20 20 20 20 20 20 20 20 20 01 70
+
+02 03 12 41 23 09 07 01 83 01 00 00 65 4b 04 00
+01 01 77 65 00 a0 a0 38 2c 40 30 20 3a 00 2e 5a
+31 00 00 1a 50 78 00 a0 a0 38 35 40 30 20 3a 00
+2e 5a 31 00 00 1a cd 91 00 a0 a0 38 40 40 30 20
+3a 00 2e 5a 31 00 00 1a f4 b0 00 a0 a0 38 4d 40
+30 20 3a 00 2e 5a 31 00 00 1a c0 e9 00 a0 a0 38
+14 40 30 20 3a 00 2e 5a 31 00 00 1e 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7c
 
 00 ff ff ff ff ff ff 00 04 72 78 04 32 7b 60 71
 10 1b 01 04 a5 51 23 78 06 ee 91 a3 54 4c 99 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 1144
-    Serial Number: 1902148402
+    Serial Number: ...
     Made in: week 16 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -66,10 +65,10 @@ Block 0, Base EDID:
     DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  2560x1080   59.978424 Hz  64:27    66.636 kHz    181.250000 MHz (814 mm x 346 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync  10 Vback   18 Vpol N
-    Display Product Serial Number: '#ASNI/Ce2AsLd'
+    DTD  1:  2560x1080   59.978424 Hz  64:27    66.636 kHz    181.250000 MHz (814 mm x 346 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync  10 Vback   18 Vpol N
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (Bare Limits): 30-200 Hz V, 66-220 kHz H, max dotclock 600 MHz
     Display Product Name: 'Z35'
@@ -92,19 +91,93 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (NVIDIA), OUI 00-04-4B:
     01 01                                           '..'
   Detailed Timing Descriptors:
-    DTD 2:  2560x1080   84.961142 Hz  64:27    95.496 kHz    259.750000 MHz (814 mm x 346 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync  10 Vback   31 Vpol N
-    DTD 3:  2560x1080   99.942890 Hz  64:27   113.235 kHz    308.000000 MHz (814 mm x 346 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync  10 Vback   40 Vpol N
-    DTD 4:  2560x1080  119.951280 Hz  64:27   137.224 kHz    373.250000 MHz (814 mm x 346 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync  10 Vback   51 Vpol N
-    DTD 5:  2560x1080  143.944786 Hz  64:27   166.544 kHz    453.000000 MHz (814 mm x 346 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync  10 Vback   64 Vpol N
-    DTD 6:  2560x1080  200.000000 Hz  64:27   220.000 kHz    598.400000 MHz (814 mm x 346 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync  10 Vback    7 Vpol P
+    DTD  2:  2560x1080   84.961142 Hz  64:27    95.496 kHz    259.750000 MHz (814 mm x 346 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync  10 Vback   31 Vpol N
+    DTD  3:  2560x1080   99.942890 Hz  64:27   113.235 kHz    308.000000 MHz (814 mm x 346 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync  10 Vback   40 Vpol N
+    DTD  4:  2560x1080  119.951280 Hz  64:27   137.224 kHz    373.250000 MHz (814 mm x 346 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync  10 Vback   51 Vpol N
+    DTD  5:  2560x1080  143.944786 Hz  64:27   166.544 kHz    453.000000 MHz (814 mm x 346 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync  10 Vback   64 Vpol N
+    DTD  6:  2560x1080  200.000000 Hz  64:27   220.000 kHz    598.400000 MHz (814 mm x 346 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync  10 Vback    7 Vpol P
 Checksum: 0x7c  Unused space in Extension Block: 19 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 78 04 32 7b 60 71 '.........rx.2{`q'
+  10 1b 01 04 a5 51 23 78 06 ee 91 a3 54 4c 99 26 '.....Q#x....TL.&'
+  0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01 '.PT!............'
+  01 01 01 01 01 01 cd 46 00 a0 a0 38 1f 40 30 20 '.......F...8.@0 '
+  3a 00 2e 5a 31 00 00 1a 00 00 00 ff 00 23 41 53 ':..Z1........#AS'
+  4e 49 2f 43 65 32 41 73 4c 64 00 00 00 fd 00 1e 'NI/Ce2AsLd......'
+  c8 42 dc 3c 01 0a 20 20 20 20 20 20 00 00 00 fc '.B.<..      ....'
+  00 5a 33 35 0a 20 20 20 20 20 20 20 20 20 01 70 '.Z35.         .p'
+Checksum: 0x70
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 1
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (NVIDIA), OUI 00-04-4B:
+    01 01                                           '..'
+  Detailed Timing Descriptors:
+    DTD  7:  2560x1080   84.961142 Hz  64:27    95.496 kHz    259.750000 MHz (814 mm x 346 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync  10 Vback   31 Vpol N
+    DTD  8:  2560x1080   99.942890 Hz  64:27   113.235 kHz    308.000000 MHz (814 mm x 346 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync  10 Vback   40 Vpol N
+    DTD  9:  2560x1080  119.951280 Hz  64:27   137.224 kHz    373.250000 MHz (814 mm x 346 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync  10 Vback   51 Vpol N
+    DTD 10:  2560x1080  143.944786 Hz  64:27   166.544 kHz    453.000000 MHz (814 mm x 346 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync  10 Vback   64 Vpol N
+    DTD 11:  2560x1080  200.000000 Hz  64:27   220.000 kHz    598.400000 MHz (814 mm x 346 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync  10 Vback    7 Vpol P
+Checksum: 0x7c  Unused space in Extension Block: 19 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 220.000 kHz (Monitor: 66.000 - 220.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

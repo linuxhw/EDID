@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004725b036a3a2032
-1617010380351e78eea0a5a656529d27
-0f5054b30c00714f818081c081009500
-b300d1c00101023a801871382d40582c
-45000f282100001e000000fd00384b1f
-4b12000a202020202020000000fc0047
-32343648594c0a2020202020000000ff
-004c5a354545303038323430300a007a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 5b 03 6a 3a 20 32
+16 17 01 03 80 35 1e 78 ee a0 a5 a6 56 52 9d 27
+0f 50 54 b3 0c 00 71 4f 81 80 81 c0 81 00 95 00
+b3 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 fd 00 38 4b 1f
+4b 12 00 0a 20 20 20 20 20 20 00 00 00 fc 00 47
+32 34 36 48 59 4c 0a 20 20 20 20 20 00 00 00 ff
+00 4c 5a 35 45 45 30 30 38 32 34 30 30 0a 00 7a
 
 00 ff ff ff ff ff ff 00 04 72 5b 03 6a 3a 20 32
 16 17 01 03 80 35 1e 78 ee a0 a5 a6 56 52 9d 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 859
-    Serial Number: 840972906
+    Serial Number: ...
     Made in: week 22 of 2013
   Basic Display Parameters & Features:
     Digital display
@@ -65,5 +63,31 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 31-75 kHz H, max dotclock 180 MHz
     Display Product Name: 'G246HYL'
-    Display Product Serial Number: 'LZ5EE0082400'
+    Display Product Serial Number: ...
 Checksum: 0x7a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 5b 03 6a 3a 20 32 '.........r[.j: 2'
+  16 17 01 03 80 35 1e 78 ee a0 a5 a6 56 52 9d 27 '.....5.x....VR.''
+  0f 50 54 b3 0c 00 71 4f 81 80 81 c0 81 00 95 00 '.PT...qO........'
+  b3 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 fd 00 38 4b 1f 'E..(!........8K.'
+  4b 12 00 0a 20 20 20 20 20 20 00 00 00 fc 00 47 'K...      .....G'
+  32 34 36 48 59 4c 0a 20 20 20 20 20 00 00 00 ff '246HYL.     ....'
+  00 4c 5a 35 45 45 30 30 38 32 34 30 30 0a 00 7a '.LZ5EE0082400..z'
+Checksum: 0x7a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

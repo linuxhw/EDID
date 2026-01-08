@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004720c0487d87110
-071f0104a52b1878222cc5a45650a128
-0f5054bfee80714f81c08100a9c00101
-010101010101302a40c8608464301850
-1300b0f01000001e000000fd00324c1e
-5010000a202020202020000000ff0054
-314b4141303032343232300a000000fc
-0041636572204b32303248514c0a001c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 0c 04 87 d8 71 10
+07 1f 01 04 a5 2b 18 78 22 2c c5 a4 56 50 a1 28
+0f 50 54 bf ee 80 71 4f 81 c0 81 00 a9 c0 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 b0 f0 10 00 00 1e 00 00 00 fd 00 32 4c 1e
+50 10 00 0a 20 20 20 20 20 20 00 00 00 ff 00 54
+31 4b 41 41 30 30 32 34 32 32 30 0a 00 00 00 fc
+00 41 63 65 72 20 4b 32 30 32 48 51 4c 0a 00 1c
 
 00 ff ff ff ff ff ff 00 04 72 0c 04 87 d8 71 10
 07 1f 01 04 a5 2b 18 78 22 2c c5 a4 56 50 a1 28
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 1036
-    Serial Number: 275896455
+    Serial Number: ...
     Made in: week 7 of 2021
   Basic Display Parameters & Features:
     Digital display
@@ -69,6 +67,37 @@ Block 0, Base EDID:
                  Vfront    1 Vsync   3 Vback   96 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-80 kHz H, max dotclock 160 MHz
-    Display Product Serial Number: 'T1KAA0024220'
+    Display Product Serial Number: ...
     Display Product Name: 'Acer K202HQL'
 Checksum: 0x1c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 0c 04 87 d8 71 10 '.........r....q.'
+  07 1f 01 04 a5 2b 18 78 22 2c c5 a4 56 50 a1 28 '.....+.x",..VP.('
+  0f 50 54 bf ee 80 71 4f 81 c0 81 00 a9 c0 01 01 '.PT...qO........'
+  01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
+  13 00 b0 f0 10 00 00 1e 00 00 00 fd 00 32 4c 1e '.............2L.'
+  50 10 00 0a 20 20 20 20 20 20 00 00 00 ff 00 54 'P...      .....T'
+  31 4b 41 41 30 30 32 34 32 32 30 0a 00 00 00 fc '1KAA0024220.....'
+  00 41 63 65 72 20 4b 32 30 32 48 51 4c 0a 00 1c '.Acer K202HQL...'
+Checksum: 0x1c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

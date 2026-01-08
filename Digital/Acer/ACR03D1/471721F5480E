@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff000472d10358005050
-05190103802b18782ae8f5a2564fa128
-105054bfee80714f81c0a9c081000101
-0101010101012f2640a060841a303020
-3500b0f01000001e000000fd00384b1f
-530c000a202020202020000000fc0041
-63657220465432303048514c000000ff
-004c5a534545303031343335300a016c
-02031e724b010203040590111213149f
-23097f078301000065030c001000023a
-801871382d40582c4500b0f01000001e
-023a80d072382d40102c2580b0f01000
-001e011d8018711c1620582c2500b0f0
-1000009e011d80d0721c1620102c2580
-b0f01000009e00000000000000000000
-0000000000000000000000000000003a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 d1 03 58 00 50 50
+05 19 01 03 80 2b 18 78 2a e8 f5 a2 56 4f a1 28
+10 50 54 bf ee 80 71 4f 81 c0 a9 c0 81 00 01 01
+01 01 01 01 01 01 2f 26 40 a0 60 84 1a 30 30 20
+35 00 b0 f0 10 00 00 1e 00 00 00 fd 00 38 4b 1f
+53 0c 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41
+63 65 72 20 46 54 32 30 30 48 51 4c 00 00 00 ff
+00 4c 5a 53 45 45 30 30 31 34 33 35 30 0a 01 6c
+
+02 03 1e 72 4b 01 02 03 04 05 90 11 12 13 14 9f
+23 09 7f 07 83 01 00 00 65 03 0c 00 10 00 02 3a
+80 18 71 38 2d 40 58 2c 45 00 b0 f0 10 00 00 1e
+02 3a 80 d0 72 38 2d 40 10 2c 25 80 b0 f0 10 00
+00 1e 01 1d 80 18 71 1c 16 20 58 2c 25 00 b0 f0
+10 00 00 9e 01 1d 80 d0 72 1c 16 20 10 2c 25 80
+b0 f0 10 00 00 9e 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3a
 
 00 ff ff ff ff ff ff 00 04 72 d1 03 58 00 50 50
 05 19 01 03 80 2b 18 78 2a e8 f5 a2 56 4f a1 28
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 977
-    Serial Number: 1347420248
+    Serial Number: ...
     Made in: week 5 of 2015
   Basic Display Parameters & Features:
     Digital display
@@ -85,7 +84,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 31-83 kHz H, max dotclock 120 MHz
     Display Product Name: 'Acer FT200HQL'
-    Display Product Serial Number: 'LZSEE0014350'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x6c
 
@@ -134,3 +133,108 @@ Block 1, CTA-861 Extension Block:
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
 Checksum: 0x3a  Unused space in Extension Block: 25 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 d1 03 58 00 50 50 '.........r..X.PP'
+  05 19 01 03 80 2b 18 78 2a e8 f5 a2 56 4f a1 28 '.....+.x*...VO.('
+  10 50 54 bf ee 80 71 4f 81 c0 a9 c0 81 00 01 01 '.PT...qO........'
+  01 01 01 01 01 01 2f 26 40 a0 60 84 1a 30 30 20 '....../&@.`..00 '
+  35 00 b0 f0 10 00 00 1e 00 00 00 fd 00 38 4b 1f '5............8K.'
+  53 0c 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'S...      .....A'
+  63 65 72 20 46 54 32 30 30 48 51 4c 00 00 00 ff 'cer FT200HQL....'
+  00 4c 5a 53 45 45 30 30 31 34 33 35 30 0a 01 6c '.LZSEE0014350..l'
+Checksum: 0x6c
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 6:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (432 mm x 240 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 7:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (432 mm x 240 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   38 Vpol P
+    DTD 8:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (432 mm x 240 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 9:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (432 mm x 240 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+Checksum: 0x3a  Unused space in Extension Block: 25 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 31.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Detailed Timing Descriptor #7: DTD is similar but not identical to VIC 31.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 31.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.062 Hz (Monitor: 56.000 - 75.000 Hz)
+    Horizontal Freq: 28.125 - 68.681 kHz (Monitor: 31.000 - 83.000 kHz)
+    Maximum Clock: 148.500 MHz (Monitor: 120.000 MHz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

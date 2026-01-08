@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004726504d2050000
-151c0103802e1a782a0d15a5574aa226
-0f5054bfef80d1c0b300a94095008180
-814081c0714f023a801871382d40582c
-4500ca021100001e000000fd00374c1e
-5311000a202020202020000000fc0045
-4232313048510a2020202020000000ff
-005433544141303032335030300a006d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 65 04 d2 05 00 00
+15 1c 01 03 80 2e 1a 78 2a 0d 15 a5 57 4a a2 26
+0f 50 54 bf ef 80 d1 c0 b3 00 a9 40 95 00 81 80
+81 40 81 c0 71 4f 02 3a 80 18 71 38 2d 40 58 2c
+45 00 ca 02 11 00 00 1e 00 00 00 fd 00 37 4c 1e
+53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45
+42 32 31 30 48 51 0a 20 20 20 20 20 00 00 00 ff
+00 54 33 54 41 41 30 30 32 33 50 30 30 0a 00 6d
 
 00 ff ff ff ff ff ff 00 04 72 65 04 d2 05 00 00
 15 1c 01 03 80 2e 1a 78 2a 0d 15 a5 57 4a a2 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 1125
-    Serial Number: 1490
+    Serial Number: ...
     Made in: week 21 of 2018
   Basic Display Parameters & Features:
     Digital display
@@ -73,5 +71,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 55-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'EB210HQ'
-    Display Product Serial Number: 'T3TAA0023P00'
+    Display Product Serial Number: ...
 Checksum: 0x6d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 65 04 d2 05 00 00 '.........re.....'
+  15 1c 01 03 80 2e 1a 78 2a 0d 15 a5 57 4a a2 26 '.......x*...WJ.&'
+  0f 50 54 bf ef 80 d1 c0 b3 00 a9 40 95 00 81 80 '.PT........@....'
+  81 40 81 c0 71 4f 02 3a 80 18 71 38 2d 40 58 2c '.@..qO.:..q8-@X,'
+  45 00 ca 02 11 00 00 1e 00 00 00 fd 00 37 4c 1e 'E............7L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45 'S...      .....E'
+  42 32 31 30 48 51 0a 20 20 20 20 20 00 00 00 ff 'B210HQ.     ....'
+  00 54 33 54 41 41 30 30 32 33 50 30 30 0a 00 6d '.T3TAA0023P00..m'
+Checksum: 0x6d
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

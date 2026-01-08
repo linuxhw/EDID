@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0004723203f4789050
-09190103803c22782a2fa5a554509e27
-105054330c00818081c081009500b300
-d1c001010101023a801871382d40582c
-450056502100001e000000fd00324c1e
-5311000a202020202020000000ff004c
-58525341303031343230390a000000fc
-00416365722042323736484c0a20006c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 04 72 32 03 f4 78 90 50
+09 19 01 03 80 3c 22 78 2a 2f a5 a5 54 50 9e 27
+10 50 54 33 0c 00 81 80 81 c0 81 00 95 00 b3 00
+d1 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 fd 00 32 4c 1e
+53 11 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c
+58 52 53 41 30 30 31 34 32 30 39 0a 00 00 00 fc
+00 41 63 65 72 20 42 32 37 36 48 4c 0a 20 00 6c
 
 00 ff ff ff ff ff ff 00 04 72 32 03 f4 78 90 50
 09 19 01 03 80 3c 22 78 2a 2f a5 a5 54 50 9e 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: ACR
     Model: 818
-    Serial Number: 1351645428
+    Serial Number: ...
     Made in: week 9 of 2015
   Basic Display Parameters & Features:
     Digital display
@@ -61,8 +59,30 @@ Block 0, Base EDID:
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
-    Display Product Serial Number: 'LXRSA0014209'
+    Display Product Serial Number: ...
     Display Product Name: 'Acer B276HL'
 Checksum: 0x6c
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 04 72 32 03 f4 78 90 50 '.........r2..x.P'
+  09 19 01 03 80 3c 22 78 2a 2f a5 a5 54 50 9e 27 '.....<"x*/..TP.''
+  10 50 54 33 0c 00 81 80 81 c0 81 00 95 00 b3 00 '.PT3............'
+  d1 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 fd 00 32 4c 1e 'E.VP!........2L.'
+  53 11 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c 'S...      .....L'
+  58 52 53 41 30 30 31 34 32 30 39 0a 00 00 00 fc 'XRSA0014209.....'
+  00 41 63 65 72 20 42 32 37 36 48 4c 0a 20 00 6c '.Acer B276HL. .l'
+Checksum: 0x6c
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
