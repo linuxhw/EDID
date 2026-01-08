@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac98d042303330
-061b0104a52f1e783af105a25b4fa427
-125054a54b00714f8180b30001010101
-01010101010121399030621a274068b0
-3600da281100001c000000ff004b3237
-5959373242303330420a000000fc0044
-454c4c2050323231370a2020000000fd
-00384c1e5310010a2020202020200039
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 98 d0 42 30 33 30
+06 1b 01 04 a5 2f 1e 78 3a f1 05 a2 5b 4f a4 27
+12 50 54 a5 4b 00 71 4f 81 80 b3 00 01 01 01 01
+01 01 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0
+36 00 da 28 11 00 00 1c 00 00 00 ff 00 4b 32 37
+59 59 37 32 42 30 33 30 42 0a 00 00 00 fc 00 44
+45 4c 4c 20 50 32 32 31 37 0a 20 20 00 00 00 fd
+00 38 4c 1e 53 10 01 0a 20 20 20 20 20 20 00 39
 
 00 ff ff ff ff ff ff 00 10 ac 98 d0 42 30 33 30
 06 1b 01 04 a5 2f 1e 78 3a f1 05 a2 5b 4f a4 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 53400
-    Serial Number: 808661058
+    Serial Number: ...
     Made in: week 6 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -60,8 +58,32 @@ Block 0, Base EDID:
     DTD 1:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz (474 mm x 296 mm)
                  Hfront  104 Hsync 176 Hback  280 Hpol N
                  Vfront    3 Vsync   6 Vback   30 Vpol P
-    Display Product Serial Number: 'K27YY72B030B'
+    Display Product Serial Number: ...
     Display Product Name: 'DELL P2217'
     Display Range Limits:
       Monitor ranges (Bare Limits): 56-76 Hz V, 30-83 kHz H, max dotclock 160 MHz
 Checksum: 0x39
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 98 d0 42 30 33 30 '............B030'
+  06 1b 01 04 a5 2f 1e 78 3a f1 05 a2 5b 4f a4 27 '...../.x:...[O.''
+  12 50 54 a5 4b 00 71 4f 81 80 b3 00 01 01 01 01 '.PT.K.qO........'
+  01 01 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0 '......!9.0b.'@h.'
+  36 00 da 28 11 00 00 1c 00 00 00 ff 00 4b 32 37 '6..(.........K27'
+  59 59 37 32 42 30 33 30 42 0a 00 00 00 fc 00 44 'YY72B030B......D'
+  45 4c 4c 20 50 32 32 31 37 0a 20 20 00 00 00 fd 'ELL P2217.  ....'
+  00 38 4c 1e 53 10 01 0a 20 20 20 20 20 20 00 39 '.8L.S...      .9'
+Checksum: 0x39
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

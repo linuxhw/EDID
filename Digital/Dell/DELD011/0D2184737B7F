@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0010ac11d0554d4c30
-10120103802b1b78ee8db0a2544a9c25
-115054a54b00714f8180010101010101
-0101010101017c2e90a0601a1e403020
-3600ae0e1100001a000000ff00545739
-3536383445304c4d550a000000fd0038
-4b1e530e000a202020202020000000fc
-0044454c4c20453230375746500a0028
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 10 ac 11 d0 55 4d 4c 30
+10 12 01 03 80 2b 1b 78 ee 8d b0 a2 54 4a 9c 25
+11 50 54 a5 4b 00 71 4f 81 80 01 01 01 01 01 01
+01 01 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20
+36 00 ae 0e 11 00 00 1a 00 00 00 ff 00 54 57 39
+35 36 38 34 45 30 4c 4d 55 0a 00 00 00 fd 00 38
+4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 44 45 4c 4c 20 45 32 30 37 57 46 50 0a 00 28
 
 00 ff ff ff ff ff ff 00 10 ac 11 d0 55 4d 4c 30
 10 12 01 03 80 2b 1b 78 ee 8d b0 a2 54 4a 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: DEL
     Model: 53265
-    Serial Number: 810306901
+    Serial Number: ...
     Made in: week 16 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -58,8 +56,34 @@ Block 0, Base EDID:
     DTD 1:  1680x1050   59.883253 Hz  16:10    64.674 kHz    119.000000 MHz (430 mm x 270 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   21 Vpol N
-    Display Product Serial Number: 'TW95684E0LMU'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-83 kHz H, max dotclock 140 MHz
     Display Product Name: 'DELL E207WFP'
 Checksum: 0x28
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 10 ac 11 d0 55 4d 4c 30 '............UML0'
+  10 12 01 03 80 2b 1b 78 ee 8d b0 a2 54 4a 9c 25 '.....+.x....TJ.%'
+  11 50 54 a5 4b 00 71 4f 81 80 01 01 01 01 01 01 '.PT.K.qO........'
+  01 01 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20 '......|...`..@0 '
+  36 00 ae 0e 11 00 00 1a 00 00 00 ff 00 54 57 39 '6............TW9'
+  35 36 38 34 45 30 4c 4d 55 0a 00 00 00 fd 00 38 '5684E0LMU......8'
+  4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
+  00 44 45 4c 4c 20 45 32 30 37 57 46 50 0a 00 28 '.DELL E207WFP..('
+Checksum: 0x28
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
