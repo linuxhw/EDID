@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0009e5800b00000000
-0f200104a5221678075a04a6544c9c25
-0f4f5300000001010101010101010101
-010101010101333f80dc70b03c403020
-360059d71000001a000000fd00283c4c
-4c10010a202020202020000000fe0042
-4f452043510a202020202020000000fe
-004e4531363057554d2d4e36320a0158
-02030d00681a00000101283c00000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000006
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 80 0b 00 00 00 00
+0f 20 01 04 a5 22 16 78 07 5a 04 a6 54 4c 9c 25
+0f 4f 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 33 3f 80 dc 70 b0 3c 40 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 fd 00 28 3c 4c
+4c 10 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 36 30 57 55 4d 2d 4e 36 32 0a 01 58
+
+02 03 0d 00 68 1a 00 00 01 01 28 3c 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 06
 
 00 ff ff ff ff ff ff 00 09 e5 80 0b 00 00 00 00
 0f 20 01 04 a5 22 16 78 07 5a 04 a6 54 4c 9c 25
@@ -84,3 +83,60 @@ Block 1, CTA-861 Extension Block:
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
 Checksum: 0x06  Unused space in Extension Block: 114 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 80 0b 00 00 00 00 '................'
+  0f 20 01 04 a5 22 16 78 07 5a 04 a6 54 4c 9c 25 '. ...".x.Z..TL.%'
+  0f 4f 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '.OS.............'
+  01 01 01 01 01 01 33 3f 80 dc 70 b0 3c 40 30 20 '......3?..p.<@0 '
+  36 00 59 d7 10 00 00 1a 00 00 00 fd 00 28 3c 4c '6.Y..........(<L'
+  4c 10 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42 'L...      .....B'
+  4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe 'OE CQ.      ....'
+  00 4e 45 31 36 30 57 55 4d 2d 4e 36 32 0a 01 58 '.NE160WUM-N62..X'
+Checksum: 0x58
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0x00
+Checksum: 0x06  Unused space in Extension Block: 114 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 161.790 MHz (Monitor: 160.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

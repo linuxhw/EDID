@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e5f30800000000
-011d0104a523137802df50a35435b526
-0f505400000001010101010101010101
-01010101010152d000a0f0703e803020
-350058c21000001aaea600a0f0703e80
-3020350058c21000001a000000fe0042
-4f452048460a202020202020000000fe
-004e4531353651554d2d4e36360a00cb
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 f3 08 00 00 00 00
+01 1d 01 04 a5 23 13 78 02 df 50 a3 54 35 b5 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 52 d0 00 a0 f0 70 3e 80 30 20
+35 00 58 c2 10 00 00 1a ae a6 00 a0 f0 70 3e 80
+30 20 35 00 58 c2 10 00 00 1a 00 00 00 fe 00 42
+4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 35 36 51 55 4d 2d 4e 36 36 0a 00 cb
 
 00 ff ff ff ff ff ff 00 09 e5 f3 08 00 00 00 00
 01 1d 01 04 a5 23 13 78 02 df 50 a3 54 35 b5 26
@@ -53,3 +51,32 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'BOE HF'
     Alphanumeric Data String: 'NE156QUM-N66'
 Checksum: 0xcb
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 f3 08 00 00 00 00 '................'
+  01 1d 01 04 a5 23 13 78 02 df 50 a3 54 35 b5 26 '.....#.x..P.T5.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 52 d0 00 a0 f0 70 3e 80 30 20 '......R....p>.0 '
+  35 00 58 c2 10 00 00 1a ae a6 00 a0 f0 70 3e 80 '5.X..........p>.'
+  30 20 35 00 58 c2 10 00 00 1a 00 00 00 fe 00 42 '0 5.X..........B'
+  4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe 'OE HF.      ....'
+  00 4e 45 31 35 36 51 55 4d 2d 4e 36 36 0a 00 cb '.NE156QUM-N66...'
+Checksum: 0xcb
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

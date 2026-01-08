@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff00061011ae71377236
-0a1a0104b53c2278200f35ae5243b026
-0d4f5400000001010101010101010101
-0101010101014dd000a0f0703e803020
-350055502100001a565e00a0a0a02950
-3020350055502100001a000000fc0069
-4d61630a2020202020202020000000ff
-0037333432303842373133373332010d
-020327c0230907078301000070fa1000
-00127631fc78fbff02108862d369fa10
-00faf8f8feffffcd9180a0c008347030
-20350055502100001a00000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000003e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 10 11 ae 71 37 72 36
+0a 1a 01 04 b5 3c 22 78 20 0f 35 ae 52 43 b0 26
+0d 4f 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 55 50 21 00 00 1a 56 5e 00 a0 a0 a0 29 50
+30 20 35 00 55 50 21 00 00 1a 00 00 00 fc 00 69
+4d 61 63 0a 20 20 20 20 20 20 20 20 00 00 00 ff
+00 37 33 34 32 30 38 42 37 31 33 37 33 32 01 0d
+
+02 03 27 c0 23 09 07 07 83 01 00 00 70 fa 10 00
+00 12 76 31 fc 78 fb ff 02 10 88 62 d3 69 fa 10
+00 fa f8 f8 fe ff ff cd 91 80 a0 c0 08 34 70 30
+20 35 00 55 50 21 00 00 1a 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3e
 
 00 ff ff ff ff ff ff 00 06 10 11 ae 71 37 72 36
 0a 1a 01 04 b5 3c 22 78 20 0f 35 ae 52 43 b0 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: APP
     Model: 44561
-    Serial Number: 913454961
+    Serial Number: ...
     Made in: week 10 of 2016
   Basic Display Parameters & Features:
     Digital display
@@ -70,7 +69,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Product Name: 'iMac'
-    Display Product Serial Number: '734208B713732'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x0d
 
@@ -97,3 +96,67 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   44 Vpol N
 Checksum: 0x3e  Unused space in Extension Block: 70 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 10 11 ae 71 37 72 36 '............q7r6'
+  0a 1a 01 04 b5 3c 22 78 20 0f 35 ae 52 43 b0 26 '.....<"x .5.RC.&'
+  0d 4f 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.OT.............'
+  01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20 '......M....p>.0 '
+  35 00 55 50 21 00 00 1a 56 5e 00 a0 a0 a0 29 50 '5.UP!...V^....)P'
+  30 20 35 00 55 50 21 00 00 1a 00 00 00 fc 00 69 '0 5.UP!........i'
+  4d 61 63 0a 20 20 20 20 20 20 20 20 00 00 00 ff 'Mac.        ....'
+  00 37 33 34 32 30 38 42 37 31 33 37 33 32 01 0d '.734208B713732..'
+Checksum: 0x0d
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 0
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (Apple), OUI 00-10-FA:
+    00 12 76 31 fc 78 fb ff 02 10 88 62 d3          '..v1.x.....b.'
+  Vendor-Specific Data Block (Apple), OUI 00-10-FA:
+    fa f8 f8 fe ff ff                               '......'
+  Detailed Timing Descriptors:
+    DTD 4:  3200x1800   59.981809 Hz  16:9    111.086 kHz    373.250000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   44 Vpol N
+Checksum: 0x3e  Unused space in Extension Block: 70 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

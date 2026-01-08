@@ -1,0 +1,84 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 df 05 00 00 00 00
+01 18 01 04 95 1d 10 78 0a 92 90 97 59 55 91 28
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 04 1c 56 93 50 00 16 30 30 20
+36 00 25 a5 10 00 00 1a d6 12 56 a0 50 00 16 30
+30 20 36 00 25 a5 10 00 00 1a 00 00 00 fe 00 4e
+48 46 37 34 80 48 42 31 33 32 30 31 00 00 00 00
+00 00 41 11 94 00 00 00 00 09 01 0a 20 20 00 57
+
+00 ff ff ff ff ff ff 00 09 e5 df 05 00 00 00 00
+01 18 01 04 95 1d 10 78 0a 92 90 97 59 55 91 28
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 04 1c 56 93 50 00 16 30 30 20
+36 00 25 a5 10 00 00 1a d6 12 56 a0 50 00 16 30
+30 20 36 00 25 a5 10 00 00 1a 00 00 00 fe 00 4e
+48 46 37 34 80 48 42 31 33 32 30 31 00 00 00 00
+00 00 41 11 94 00 00 00 00 09 01 0a 20 20 00 57
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 1503
+    Made in: week 1 of 2014
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 29 cm x 16 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5917, 0.3486
+    Green: 0.3320, 0.5683
+    Blue : 0.1582, 0.1259
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.003179 Hz 683:384   47.403 kHz     71.720000 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   67 Hpol P
+                 Vfront    3 Vsync   6 Vback   13 Vpol N
+    DTD 2:  1366x768    39.998673 Hz 683:384   31.599 kHz     48.220000 MHz (293 mm x 165 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   13 Vpol N
+    Alphanumeric Data String: 'NHF74'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 11 94 00 00 00 00 09 01 0a 20 20 '....A.........  '
+Checksum: 0x57
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 df 05 00 00 00 00 '................'
+  01 18 01 04 95 1d 10 78 0a 92 90 97 59 55 91 28 '.......x....YU.('
+  20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ' PT.............'
+  01 01 01 01 01 01 04 1c 56 93 50 00 16 30 30 20 '........V.P..00 '
+  36 00 25 a5 10 00 00 1a d6 12 56 a0 50 00 16 30 '6.%.......V.P..0'
+  30 20 36 00 25 a5 10 00 00 1a 00 00 00 fe 00 4e '0 6.%..........N'
+  48 46 37 34 80 48 42 31 33 32 30 31 00 00 00 00 'HF74.HB13201....'
+  00 00 41 11 94 00 00 00 00 09 01 0a 20 20 00 57 '..A.........  .W'
+Checksum: 0x57
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

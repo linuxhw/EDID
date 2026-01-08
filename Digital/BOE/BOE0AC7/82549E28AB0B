@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e5c70a00000000
-281f0104a51e137803ee95a3544c9926
-0f505400000001010101010101010101
-0101010101019c3e80c870b03c403020
-36002ebc1000001a0000000000000000
-00000000000000000000000000030003
-54d804647d0f0a169600000000000003
-001951ff64a0f410253ff40101000060
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 c7 0a 00 00 00 00
+28 1f 01 04 a5 1e 13 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9c 3e 80 c8 70 b0 3c 40 30 20
+36 00 2e bc 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 03
+54 d8 04 64 7d 0f 0a 16 96 00 00 00 00 00 00 03
+00 19 51 ff 64 a0 f4 10 25 3f f4 01 01 00 00 60
 
 00 ff ff ff ff ff ff 00 09 e5 c7 0a 00 00 00 00
 28 1f 01 04 a5 1e 13 78 03 ee 95 a3 54 4c 99 26
@@ -52,3 +50,35 @@ Block 0, Base EDID:
     Manufacturer-Specified Display Descriptor (0x03): 00 03 00 03 54 d8 04 64 7d 0f 0a 16 96 00 00 00 '....T..d}.......'
     Manufacturer-Specified Display Descriptor (0x03): 00 03 00 19 51 ff 64 a0 f4 10 25 3f f4 01 01 00 '....Q.d...%?....'
 Checksum: 0x60
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 c7 0a 00 00 00 00 '................'
+  28 1f 01 04 a5 1e 13 78 03 ee 95 a3 54 4c 99 26 '(......x....TL.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 9c 3e 80 c8 70 b0 3c 40 30 20 '.......>..p.<@0 '
+  36 00 2e bc 10 00 00 1a 00 00 00 00 00 00 00 00 '6...............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 03 '................'
+  54 d8 04 64 7d 0f 0a 16 96 00 00 00 00 00 00 03 'T..d}...........'
+  00 19 51 ff 64 a0 f4 10 25 3f f4 01 01 00 00 60 '..Q.d...%?.....`'
+Checksum: 0x60
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

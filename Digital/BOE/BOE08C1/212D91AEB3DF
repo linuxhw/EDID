@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e5c10800000000
-1c1d01049522137802b0909758549226
-1d505400000001010101010101010101
-0101010101013a3780b8703828403020
-360058c11000001a0000000000000000
-0000000000000000001a000000fe0042
-4f452043510a202020202020000000fe
-00505431353646484d2d4e31300a00d4
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 c1 08 00 00 00 00
+1c 1d 01 04 95 22 13 78 02 b0 90 97 58 54 92 26
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 3a 37 80 b8 70 38 28 40 30 20
+36 00 58 c1 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 50 54 31 35 36 46 48 4d 2d 4e 31 30 0a 00 d4
 
 00 ff ff ff ff ff ff 00 09 e5 c1 08 00 00 00 00
 1c 1d 01 04 95 22 13 78 02 b0 90 97 58 54 92 26
@@ -51,3 +49,32 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'BOE CQ'
     Alphanumeric Data String: 'PT156FHM-N10'
 Checksum: 0xd4
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 c1 08 00 00 00 00 '................'
+  1c 1d 01 04 95 22 13 78 02 b0 90 97 58 54 92 26 '.....".x....XT.&'
+  1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 3a 37 80 b8 70 38 28 40 30 20 '......:7..p8(@0 '
+  36 00 58 c1 10 00 00 1a 00 00 00 00 00 00 00 00 '6.X.............'
+  00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42 '...............B'
+  4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe 'OE CQ.      ....'
+  00 50 54 31 35 36 46 48 4d 2d 4e 31 30 0a 00 d4 '.PT156FHM-N10...'
+Checksum: 0xd4
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

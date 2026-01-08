@@ -1,0 +1,133 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 b9 09 00 00 00 00
+2c 1e 01 04 a5 22 13 78 03 7e a5 a6 54 4b 9c 25
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2e 3f 80 a0 70 38 d8 40 62 30
+aa 00 58 c2 10 00 00 1a 00 00 00 fd 0e 3c 69 d4
+d4 61 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 35 36 46 48 4d 2d 4e 5a 33 0a 01 07
+
+70 13 79 00 00 03 01 14 41 79 01 84 7f 07 95 00
+61 00 2f 00 37 04 d7 00 09 00 09 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 4e 90
+
+00 ff ff ff ff ff ff 00 09 e5 b9 09 00 00 00 00
+2c 1e 01 04 a5 22 13 78 03 7e a5 a6 54 4b 9c 25
+10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 2e 3f 80 a0 70 38 d8 40 62 30
+aa 00 58 c2 10 00 00 1a 00 00 00 fd 0e 3c 69 d4
+d4 61 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 35 36 46 48 4d 2d 4e 5a 33 0a 01 07
+
+70 13 79 00 00 03 01 14 41 79 01 84 7f 07 95 00
+61 00 2f 00 37 04 d7 00 09 00 09 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 4e 90
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2489
+    Made in: week 44 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6494, 0.3310
+    Green: 0.2958, 0.6113
+    Blue : 0.1464, 0.0644
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.999703 Hz  16:9     77.760 kHz    161.740000 MHz (344 mm x 194 mm)
+                 Hfront   98 Hsync  48 Hback   14 Hpol P
+                 Vfront   10 Vsync  10 Vback  196 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 60-360 Hz V, 467-467 kHz H, max dotclock 970 MHz
+    Alphanumeric Data String: 'BOE CQ'
+    Alphanumeric Data String: 'NE156FHM-NZ3'
+  Extension blocks: 1
+Checksum: 0x07
+
+----------------
+
+Block 1, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Display Product Type: Extension Section
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  1920x1080  360.000298 Hz  16:9    466.560 kHz    965.780000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   98 Hsync  48 Hback    4 Hpol N
+               Vfront   10 Vsync  10 Vback  196 Vpol N
+  Checksum: 0x4e
+Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 b9 09 00 00 00 00 '................'
+  2c 1e 01 04 a5 22 13 78 03 7e a5 a6 54 4b 9c 25 ',....".x.~..TK.%'
+  10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 2e 3f 80 a0 70 38 d8 40 62 30 '.......?..p8.@b0'
+  aa 00 58 c2 10 00 00 1a 00 00 00 fd 0e 3c 69 d4 '..X..........<i.'
+  d4 61 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42 '.a..      .....B'
+  4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe 'OE CQ.      ....'
+  00 4e 45 31 35 36 46 48 4d 2d 4e 5a 33 0a 01 07 '.NE156FHM-NZ3...'
+Checksum: 0x07
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  1920x1080  360.000298 Hz  16:9    466.560 kHz    965.780000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   98 Hsync  48 Hback    4 Hpol N
+               Vfront   10 Vsync  10 Vback  196 Vpol N
+  Checksum: 0x4e
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 77.759 - 466.560 kHz (Monitor: 467.000 - 467.000 kHz)
+
+Failures:
+
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

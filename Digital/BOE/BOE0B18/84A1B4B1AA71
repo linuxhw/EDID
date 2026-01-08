@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e5180b00000000
-0c200104a51e1278032095a8534d9a25
-0f505400000001010101010101010101
-010101010101743c80a070b028403020
-35002dbc1000001a5d3080a070b02840
-302035002dbc1000001a000000fe0033
-59594437804e45313430575500000000
-00024121a8000100000a010a20200024
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 18 0b 00 00 00 00
+0c 20 01 04 a5 1e 12 78 03 20 95 a8 53 4d 9a 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 74 3c 80 a0 70 b0 28 40 30 20
+35 00 2d bc 10 00 00 1a 5d 30 80 a0 70 b0 28 40
+30 20 35 00 2d bc 10 00 00 1a 00 00 00 fe 00 33
+59 59 44 37 80 4e 45 31 34 30 57 55 00 00 00 00
+00 02 41 21 a8 00 01 00 00 0a 01 0a 20 20 00 24
 
 00 ff ff ff ff ff ff 00 09 e5 18 0b 00 00 00 00
 0c 20 01 04 a5 1e 12 78 03 20 95 a8 53 4d 9a 25
@@ -54,3 +52,35 @@ Block 0, Base EDID:
     Alphanumeric Data String: '3YYD7'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 21 a8 00 01 00 00 0a 01 0a 20 20 '....A!........  '
 Checksum: 0x24
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 18 0b 00 00 00 00 '................'
+  0c 20 01 04 a5 1e 12 78 03 20 95 a8 53 4d 9a 25 '. .....x. ..SM.%'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 74 3c 80 a0 70 b0 28 40 30 20 '......t<..p.(@0 '
+  35 00 2d bc 10 00 00 1a 5d 30 80 a0 70 b0 28 40 '5.-.....]0..p.(@'
+  30 20 35 00 2d bc 10 00 00 1a 00 00 00 fe 00 33 '0 5.-..........3'
+  59 59 44 37 80 4e 45 31 34 30 57 55 00 00 00 00 'YYD7.NE140WU....'
+  00 02 41 21 a8 00 01 00 00 0a 01 0a 20 20 00 24 '..A!........  .$'
+Checksum: 0x24
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

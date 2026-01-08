@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e5450b02000000
-10200104b5221678034105965e5a9429
-1f505400000001010101010101010101
-010101010101cd9f80d870b082403020
-360059d71000001a0000000000000000
-00000000000000000000000000fd0030
-90c0c029010a202020202020000000fe
-004e5631363057554d2d4e58330a000c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 45 0b 02 00 00 00
+10 20 01 04 b5 22 16 78 03 41 05 96 5e 5a 94 29
+1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 cd 9f 80 d8 70 b0 82 40 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 30
+90 c0 c0 29 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 36 30 57 55 4d 2d 4e 58 33 0a 00 0c
 
 00 ff ff ff ff ff ff 00 09 e5 45 0b 02 00 00 00
 10 20 01 04 b5 22 16 78 03 41 05 96 5e 5a 94 29
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BOE
     Model: 2885
-    Serial Number: 2
+    Serial Number: ...
     Made in: week 16 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -55,4 +53,33 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'NV160WUM-NX3'
 Checksum: 0x0c
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 45 0b 02 00 00 00 '..........E.....'
+  10 20 01 04 b5 22 16 78 03 41 05 96 5e 5a 94 29 '. ...".x.A..^Z.)'
+  1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 cd 9f 80 d8 70 b0 82 40 30 20 '..........p..@0 '
+  36 00 59 d7 10 00 00 1a 00 00 00 00 00 00 00 00 '6.Y.............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 30 '...............0'
+  90 c0 c0 29 01 0a 20 20 20 20 20 20 00 00 00 fe '...)..      ....'
+  00 4e 56 31 36 30 57 55 4d 2d 4e 58 33 0a 00 0c '.NV160WUM-NX3...'
+Checksum: 0x0c
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

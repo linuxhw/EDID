@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0009e5380b03000000
-14200104b522157803a5a5a7534c9b25
-0e505400000001010101010101010101
-010101010101906f00a0a04096603020
-360058d71000001a000000fd0c3ca521
-214f010a202020202020000000fe0042
-4f45204e4a0a202020202020000000fe
-004e4531363051444d2d4e59430a0104
-7012790000030114cc320185ff099f00
-2f001f003f0695000200050000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000390
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 38 0b 03 00 00 00
+14 20 01 04 b5 22 15 78 03 a5 a5 a7 53 4c 9b 25
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 90 6f 00 a0 a0 40 96 60 30 20
+36 00 58 d7 10 00 00 1a 00 00 00 fd 0c 3c a5 21
+21 4f 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 4e 4a 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 36 30 51 44 4d 2d 4e 59 43 0a 01 04
+
+70 12 79 00 00 03 01 14 cc 32 01 85 ff 09 9f 00
+2f 00 1f 00 3f 06 95 00 02 00 05 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 90
 
 00 ff ff ff ff ff ff 00 09 e5 38 0b 03 00 00 00
 14 20 01 04 b5 22 15 78 03 a5 a5 a7 53 4c 9b 25
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BOE
     Model: 2872
-    Serial Number: 3
+    Serial Number: ...
     Made in: week 20 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -85,3 +84,51 @@ Block 1, DisplayID Extension Block:
                Vfront    3 Vsync   6 Vback  141 Vpol N
   Checksum: 0x03
 Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 38 0b 03 00 00 00 '..........8.....'
+  14 20 01 04 b5 22 15 78 03 a5 a5 a7 53 4c 9b 25 '. ...".x....SL.%'
+  0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 90 6f 00 a0 a0 40 96 60 30 20 '.......o...@.`0 '
+  36 00 58 d7 10 00 00 1a 00 00 00 fd 0c 3c a5 21 '6.X..........<.!'
+  21 4f 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42 '!O..      .....B'
+  4f 45 20 4e 4a 0a 20 20 20 20 20 20 00 00 00 fe 'OE NJ.      ....'
+  00 4e 45 31 36 30 51 44 4d 2d 4e 59 43 0a 01 04 '.NE160QDM-NYC...'
+Checksum: 0x04
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1600  165.002101 Hz  16:10   288.754 kHz    785.410000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   6 Vback  141 Vpol N
+  Checksum: 0x03
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 105.000 - 288.753 kHz (Monitor: 288.000 - 288.000 kHz)
+
+Failures:
+
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

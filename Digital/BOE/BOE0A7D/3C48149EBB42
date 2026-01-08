@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e57d0a00000000
-1b1f0104a522167807e709a455509524
-0f525300000001010101010101010101
-010101010101333f80dc70b03c403020
-360059d71000001a000000fd00283c4c
-4c10010a202020202020000000fe0042
-4f452043510a202020202020000000fe
-004e4531363057554d2d4e36340a00c0
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 7d 0a 00 00 00 00
+1b 1f 01 04 a5 22 16 78 07 e7 09 a4 55 50 95 24
+0f 52 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 33 3f 80 dc 70 b0 3c 40 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 fd 00 28 3c 4c
+4c 10 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 36 30 57 55 4d 2d 4e 36 34 0a 00 c0
 
 00 ff ff ff ff ff ff 00 09 e5 7d 0a 00 00 00 00
 1b 1f 01 04 a5 22 16 78 07 e7 09 a4 55 50 95 24
@@ -54,3 +52,38 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'BOE CQ'
     Alphanumeric Data String: 'NE160WUM-N64'
 Checksum: 0xc0
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 7d 0a 00 00 00 00 '..........}.....'
+  1b 1f 01 04 a5 22 16 78 07 e7 09 a4 55 50 95 24 '.....".x....UP.$'
+  0f 52 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '.RS.............'
+  01 01 01 01 01 01 33 3f 80 dc 70 b0 3c 40 30 20 '......3?..p.<@0 '
+  36 00 59 d7 10 00 00 1a 00 00 00 fd 00 28 3c 4c '6.Y..........(<L'
+  4c 10 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42 'L...      .....B'
+  4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe 'OE CQ.      ....'
+  00 4e 45 31 36 30 57 55 4d 2d 4e 36 34 0a 00 c0 '.NE160WUM-N64...'
+Checksum: 0xc0
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 161.790 MHz (Monitor: 160.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

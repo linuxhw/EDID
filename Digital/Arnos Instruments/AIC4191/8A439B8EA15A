@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00052391418e020000
-220d0104a5251e78e2ec50a5584a9a26
-215054bfef0081800101010101010101
-010101010101302a009851002a403070
-1300772d1100001e000000fd00314b18
-500e000a202020202020000000fc0046
-2d3431390a20202020202020000000ff
-003635340a2020202020202020200096
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 05 23 91 41 8e 02 00 00
+22 0d 01 04 a5 25 1e 78 e2 ec 50 a5 58 4a 9a 26
+21 50 54 bf ef 00 81 80 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 77 2d 11 00 00 1e 00 00 00 fd 00 31 4b 18
+50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 46
+2d 34 31 39 0a 20 20 20 20 20 20 20 00 00 00 ff
+00 36 35 34 0a 20 20 20 20 20 20 20 20 20 00 96
 
 00 ff ff ff ff ff ff 00 05 23 91 41 8e 02 00 00
 22 0d 01 04 a5 25 1e 78 e2 ec 50 a5 58 4a 9a 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: AIC
     Model: 16785
-    Serial Number: 654
+    Serial Number: ...
     Made in: week 34 of 2003
   Basic Display Parameters & Features:
     Digital display
@@ -67,5 +65,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 49-75 Hz V, 24-80 kHz H, max dotclock 140 MHz
     Display Product Name: 'F-419'
-    Display Product Serial Number: '654'
+    Display Product Serial Number: ...
 Checksum: 0x96
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 05 23 91 41 8e 02 00 00 '.........#.A....'
+  22 0d 01 04 a5 25 1e 78 e2 ec 50 a5 58 4a 9a 26 '"....%.x..P.XJ.&'
+  21 50 54 bf ef 00 81 80 01 01 01 01 01 01 01 01 '!PT.............'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 77 2d 11 00 00 1e 00 00 00 fd 00 31 4b 18 '..w-.........1K.'
+  50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 46 'P...      .....F'
+  2d 34 31 39 0a 20 20 20 20 20 20 20 00 00 00 ff '-419.       ....'
+  00 36 35 34 0a 20 20 20 20 20 20 20 20 20 00 96 '.654.         ..'
+Checksum: 0x96
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

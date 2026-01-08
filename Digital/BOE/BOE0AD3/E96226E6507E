@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e5d30a00000000
-011e0101a51a0e780a24109759548e27
-1e505400000001010101010101010101
-010101010101b23980d470384b403020
-3600048c1000001a0000000000000000
-0000000000000000001a000000000000
-000000000000000000000000000000fe
-0051563131364648422d4e38310a0005
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 d3 0a 00 00 00 00
+01 1e 01 01 a5 1a 0e 78 0a 24 10 97 59 54 8e 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b2 39 80 d4 70 38 4b 40 30 20
+36 00 04 8c 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe
+00 51 56 31 31 36 46 48 42 2d 4e 38 31 0a 00 05
 
 00 ff ff ff ff ff ff 00 09 e5 d3 0a 00 00 00 00
 01 1e 01 01 a5 1a 0e 78 0a 24 10 97 59 54 8e 27
@@ -49,3 +47,35 @@ Block 0, Base EDID:
     Empty Descriptor
     Alphanumeric Data String: 'QV116FHB-N81'
 Checksum: 0x05
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 d3 0a 00 00 00 00 '................'
+  01 1e 01 01 a5 1a 0e 78 0a 24 10 97 59 54 8e 27 '.......x.$..YT.''
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 b2 39 80 d4 70 38 4b 40 30 20 '.......9..p8K@0 '
+  36 00 04 8c 10 00 00 1a 00 00 00 00 00 00 00 00 '6...............'
+  00 00 00 00 00 00 00 00 00 1a 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe '................'
+  00 51 56 31 31 36 46 48 42 2d 4e 38 31 0a 00 05 '.QV116FHB-N81...'
+Checksum: 0x05
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x25.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

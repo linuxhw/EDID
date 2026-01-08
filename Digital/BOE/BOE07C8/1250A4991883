@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0009e5c80700000000
-011c0104b51f117802994ba95346a626
-12525600000001010101010101010101
-01010101010150d000a0f0703e803020
-350035ae1000001aa6a600a0f0703e80
-3020350035ae1000001a000000fe0042
-4f452048460a202020202020000000fe
-004e5631343051554d2d4e35330a019c
-02030f00e3058000e606050160602800
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000aa
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 c8 07 00 00 00 00
+01 1c 01 04 b5 1f 11 78 02 99 4b a9 53 46 a6 26
+12 52 56 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 50 d0 00 a0 f0 70 3e 80 30 20
+35 00 35 ae 10 00 00 1a a6 a6 00 a0 f0 70 3e 80
+30 20 35 00 35 ae 10 00 00 1a 00 00 00 fe 00 42
+4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 34 30 51 55 4d 2d 4e 35 33 0a 01 9c
+
+02 03 0f 00 e3 05 80 00 e6 06 05 01 60 60 28 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 aa
 
 00 ff ff ff ff ff ff 00 09 e5 c8 07 00 00 00 00
 01 1c 01 04 b5 1f 11 78 02 99 4b a9 53 46 a6 26
@@ -89,3 +88,64 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 96 (400.000 cd/m^2)
     Desired content min luminance: 40 (0.098 cd/m^2)
 Checksum: 0xaa  Unused space in Extension Block: 112 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 c8 07 00 00 00 00 '................'
+  01 1c 01 04 b5 1f 11 78 02 99 4b a9 53 46 a6 26 '.......x..K.SF.&'
+  12 52 56 00 00 00 01 01 01 01 01 01 01 01 01 01 '.RV.............'
+  01 01 01 01 01 01 50 d0 00 a0 f0 70 3e 80 30 20 '......P....p>.0 '
+  35 00 35 ae 10 00 00 1a a6 a6 00 a0 f0 70 3e 80 '5.5..........p>.'
+  30 20 35 00 35 ae 10 00 00 1a 00 00 00 fe 00 42 '0 5.5..........B'
+  4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe 'OE HF.      ....'
+  00 4e 56 31 34 30 51 55 4d 2d 4e 35 33 0a 01 9c '.NV140QUM-N53...'
+Checksum: 0x9c
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 96 (400.000 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 40 (0.098 cd/m^2)
+Checksum: 0xaa  Unused space in Extension Block: 112 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

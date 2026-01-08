@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e5020b00000000
-01200104a5221378036850985c588e28
-1b505400000001010101010101010101
-010101010101918a8004713832403020
-350058c21000001abd39800471383240
-3020350058c21000001a000000fd0030
-90a3a323010a202020202020000000fe
-004e4531353646484d2d4e58320a001e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 02 0b 00 00 00 00
+01 20 01 04 a5 22 13 78 03 68 50 98 5c 58 8e 28
+1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 91 8a 80 04 71 38 32 40 30 20
+35 00 58 c2 10 00 00 1a bd 39 80 04 71 38 32 40
+30 20 35 00 58 c2 10 00 00 1a 00 00 00 fd 00 30
+90 a3 a3 23 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 35 36 46 48 4d 2d 4e 58 32 0a 00 1e
 
 00 ff ff ff ff ff ff 00 09 e5 02 0b 00 00 00 00
 01 20 01 04 a5 22 13 78 03 68 50 98 5c 58 8e 28
@@ -55,3 +53,36 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 48-144 Hz V, 163-163 kHz H, max dotclock 350 MHz
     Alphanumeric Data String: 'NE156FHM-NX2'
 Checksum: 0x1e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 02 0b 00 00 00 00 '................'
+  01 20 01 04 a5 22 13 78 03 68 50 98 5c 58 8e 28 '. ...".x.hP.\X.('
+  1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 91 8a 80 04 71 38 32 40 30 20 '..........q82@0 '
+  35 00 58 c2 10 00 00 1a bd 39 80 04 71 38 32 40 '5.X......9..q82@'
+  30 20 35 00 58 c2 10 00 00 1a 00 00 00 fd 00 30 '0 5.X..........0'
+  90 a3 a3 23 01 0a 20 20 20 20 20 20 00 00 00 fe '...#..      ....'
+  00 4e 45 31 35 36 46 48 4d 2d 4e 58 32 0a 00 1e '.NE156FHM-NX2...'
+Checksum: 0x1e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 67.802 - 162.720 kHz (Monitor: 163.000 - 163.000 kHz)
+    Maximum Clock: 354.730 MHz (Monitor: 350.000 MHz)
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

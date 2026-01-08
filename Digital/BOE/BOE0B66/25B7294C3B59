@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e5660b00000000
-1a200104a51e137807c9fda7544c9a24
-10525500000001010101010101010101
-0101010101019c3e80c870b03c403020
-36002ebc1000001a163280c870b03c40
-302036002ebc1000001a000000fd001e
-3c4c4c10010a202020202020000000fe
-004e4531343057554d2d4e36470a0078
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 66 0b 00 00 00 00
+1a 20 01 04 a5 1e 13 78 07 c9 fd a7 54 4c 9a 24
+10 52 55 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 9c 3e 80 c8 70 b0 3c 40 30 20
+36 00 2e bc 10 00 00 1a 16 32 80 c8 70 b0 3c 40
+30 20 36 00 2e bc 10 00 00 1a 00 00 00 fd 00 1e
+3c 4c 4c 10 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 34 30 57 55 4d 2d 4e 36 47 0a 00 78
 
 00 ff ff ff ff ff ff 00 09 e5 66 0b 00 00 00 00
 1a 20 01 04 a5 1e 13 78 07 c9 fd a7 54 4c 9a 24
@@ -56,3 +54,38 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 30-60 Hz V, 76-76 kHz H, max dotclock 160 MHz
     Alphanumeric Data String: 'NE140WUM-N6G'
 Checksum: 0x78
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 66 0b 00 00 00 00 '..........f.....'
+  1a 20 01 04 a5 1e 13 78 07 c9 fd a7 54 4c 9a 24 '. .....x....TL.$'
+  10 52 55 00 00 00 01 01 01 01 01 01 01 01 01 01 '.RU.............'
+  01 01 01 01 01 01 9c 3e 80 c8 70 b0 3c 40 30 20 '.......>..p.<@0 '
+  36 00 2e bc 10 00 00 1a 16 32 80 c8 70 b0 3c 40 '6........2..p.<@'
+  30 20 36 00 2e bc 10 00 00 1a 00 00 00 fd 00 1e '0 6.............'
+  3c 4c 4c 10 01 0a 20 20 20 20 20 20 00 00 00 fe '<LL...      ....'
+  00 4e 45 31 34 30 57 55 4d 2d 4e 36 47 0a 00 78 '.NE140WUM-N6G..x'
+Checksum: 0x78
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 60.481 - 75.603 kHz (Monitor: 76.000 - 76.000 kHz)
+    Maximum Clock: 160.280 MHz (Monitor: 160.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

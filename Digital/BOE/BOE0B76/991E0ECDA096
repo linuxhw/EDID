@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e5760b00000000
-1b200104a5221678037635965d5b952b
-21505400000001010101010101010101
-010101010101af41805471b028403020
-360059d71000001a0000000000000000
-00000000000000000000000000fd0028
-3c4a4a11010a202020202020000000fe
-004e5631363057554d2d4e34380a0050
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 76 0b 00 00 00 00
+1b 20 01 04 a5 22 16 78 03 76 35 96 5d 5b 95 2b
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 af 41 80 54 71 b0 28 40 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 28
+3c 4a 4a 11 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 36 30 57 55 4d 2d 4e 34 38 0a 00 50
 
 00 ff ff ff ff ff ff 00 09 e5 76 0b 00 00 00 00
 1b 20 01 04 a5 22 16 78 03 76 35 96 5d 5b 95 2b
@@ -53,3 +51,34 @@ Block 0, Base EDID:
       Monitor ranges (Bare Limits): 40-60 Hz V, 74-74 kHz H, max dotclock 170 MHz
     Alphanumeric Data String: 'NV160WUM-N48'
 Checksum: 0x50
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 76 0b 00 00 00 00 '..........v.....'
+  1b 20 01 04 a5 22 16 78 03 76 35 96 5d 5b 95 2b '. ...".x.v5.][.+'
+  21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '!PT.............'
+  01 01 01 01 01 01 af 41 80 54 71 b0 28 40 30 20 '.......A.Tq.(@0 '
+  36 00 59 d7 10 00 00 1a 00 00 00 00 00 00 00 00 '6.Y.............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 28 '...............('
+  3c 4a 4a 11 01 0a 20 20 20 20 20 20 00 00 00 fe '<JJ...      ....'
+  00 4e 56 31 36 30 57 55 4d 2d 4e 34 38 0a 00 50 '.NV160WUM-N48..P'
+Checksum: 0x50
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

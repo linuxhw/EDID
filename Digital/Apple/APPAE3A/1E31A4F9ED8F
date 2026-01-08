@@ -1,31 +1,31 @@
-
-EDID (hex):
-00ffffffffffff0006103aaefe1366f2
-07200104c53c2178000f91ae5243b026
-0f505400000001010101010101010101
-01010101010100000010000000000000
-00000000000000000000001000000000
-00000000000000000000000000100000
-000000000000000000000000000000fc
-0053747564696f446973706c617902e1
-02030f80e3050000e606010173730070
-bc0078a04078b00820a8080000000000
-1a000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000012
-7012790000290010e71e3e123b9d4b03
-82f3349500169b6101000c4017140d00
-14400b10784ebb7f81070010fa040100
-0012001680101000ff093f0b00000000
-004150503baefe1366f27e00053a0292
-81007e00100010fa0501010060c0d2ff
-55001000100000000000000000000000
-0000000000000000000000000000c290
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 10 3a ae fe 13 66 f2
+07 20 01 04 c5 3c 21 78 00 0f 91 ae 52 43 b0 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 00 00 00 10 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 10 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc
+00 53 74 75 64 69 6f 44 69 73 70 6c 61 79 02 e1
+
+02 03 0f 80 e3 05 00 00 e6 06 01 01 73 73 00 70
+bc 00 78 a0 40 78 b0 08 20 a8 08 00 00 00 00 00
+1a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 12
+
+70 12 79 00 00 29 00 10 e7 1e 3e 12 3b 9d 4b 03
+82 f3 34 95 00 16 9b 61 01 00 0c 40 17 14 0d 00
+14 40 0b 10 78 4e bb 7f 81 07 00 10 fa 04 01 00
+00 12 00 16 80 10 10 00 ff 09 3f 0b 00 00 00 00
+00 41 50 50 3b ae fe 13 66 f2 7e 00 05 3a 02 92
+81 00 7e 00 10 00 10 fa 05 01 01 00 60 c0 d2 ff
+55 00 10 00 10 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 c2 90
 
 00 ff ff ff ff ff ff 00 06 10 3a ae fe 13 66 f2
 07 20 01 04 c5 3c 21 78 00 0f 91 ae 52 43 b0 26
@@ -61,7 +61,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: APP
     Model: 44602
-    Serial Number: 4066776062
+    Serial Number: ...
     Made in: week 7 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -137,7 +137,7 @@ Block 2, DisplayID Extension Block:
     Tile resolution: 2560x2880
     Tiled Display Manufacturer/Vendor ID: APP
     Tiled Display Product ID Code: 44603
-    Tiled Display Serial Number: 4066776062
+    Tiled Display Serial Number: ...
   Vendor-Specific Data Block (0x7e) (VESA), OUI 3A-02-92:
     Data Structure Type: DP
     Default Colorspace and EOTF Handling: Native as specified in the Display Parameters DB
@@ -148,4 +148,123 @@ Block 2, DisplayID Extension Block:
   Checksum: 0xc2
 Checksum: 0x90
 
+----------------
 
+Block 3, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 10 3a ae fe 13 66 f2 '..........:...f.'
+  07 20 01 04 c5 3c 21 78 00 0f 91 ae 52 43 b0 26 '. ...<!x....RC.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 00 00 00 10 00 00 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 10 00 00 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 10 00 00 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc '................'
+  00 53 74 75 64 69 6f 44 69 73 70 6c 61 79 02 e1 '.StudioDisplay..'
+Checksum: 0xe1
+
+----------------
+
+Block 4, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Native detailed modes: 0
+  Colorimetry Data Block:
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 115 (603.666 cd/m^2)
+    Desired content max frame-average luminance: 115 (603.666 cd/m^2)
+    Desired content min luminance: 0 (0.000 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 2:  2560x2880   60.000000 Hz   8:9    180.000 kHz    482.400000 MHz
+                 Hfront    8 Hsync  32 Hback   80 Hpol P
+                 Vfront   42 Vsync   8 Vback   70 Vpol N
+Checksum: 0x12  Unused space in Extension Block: 94 bytes
+
+----------------
+
+Block 5, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  ContainerID Data Block:
+    Container ID: e71e3e12-3b9d-4b03-82f3-349500169b61
+  Display Parameters Data Block (0x01):
+    Image size: 595.2 mm x 334.8 mm
+    Display native pixel format: 5120x2880
+    Feature support flags:
+      Power management (DPM)
+    Gamma: 2.20
+    Aspect ratio: 1.78
+    Dynamic bpc native: 12
+    Dynamic bpc overall: 12
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
+    Type: 4, Version: 1
+    00 00                                           '..'
+  Tiled Display Topology Data Block (0x12):
+    Capabilities:
+      Behavior if it is the only tile: Undefined
+      Behavior if more than one tile and fewer than total number of tiles: Undefined
+    Tiled display consists of a single physical display enclosure
+    Num horizontal tiles: 2 Num vertical tiles: 1
+    Tile location: 1, 0
+    Tile resolution: 2560x2880
+    Tiled Display Manufacturer/Vendor ID: APP
+    Tiled Display Product ID Code: 44603
+    Tiled Display Serial Number: ...
+  Vendor-Specific Data Block (0x7e) (VESA), OUI 3A-02-92:
+    Data Structure Type: DP
+    Default Colorspace and EOTF Handling: Native as specified in the Display Parameters DB
+    Number of Pixels in Hor Pix Cnt Overlapping an Adjacent Panel: 0
+    Multi-SST Operation: Not Supported
+  Vendor-Specific Data Block (0x7e) (Apple), OUI 00-10-FA:
+    05 01 01 00 60 c0 d2 ff 55 00 10 00 10          '....`...U....'
+  Checksum: 0xc2
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+Block 2, DisplayID Extension Block:
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
+Block 4, CTA-861 Extension Block:
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+Block 5, DisplayID Extension Block:
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
+
+Failures:
+
+Block 0, Base EDID:
+  Standard Timings: Missing preferred timing.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+  ContainerID Data Block: Use of DisplayID v2.0 tag for DisplayID v1.2.
+  Vendor-Specific Data Block (0x7e) (VESA), OUI 3A-02-92: Use of DisplayID v2.0 tag for DisplayID v1.2.
+  Vendor-Specific Data Block (0x7e) (Apple), OUI 00-10-FA: Use of DisplayID v2.0 tag for DisplayID v1.2.
+Block 3, Base EDID:
+  Unknown Extension Block.
+Block 4, CTA-861 Extension Block:
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 5, DisplayID Extension Block:
+  ContainerID Data Block: Use of DisplayID v2.0 tag for DisplayID v1.2.
+  Display Parameters Data Block (0x01): Duplicate Display Parameters Data Block.
+  Vendor-Specific Data Block (0x7e) (VESA), OUI 3A-02-92: Use of DisplayID v2.0 tag for DisplayID v1.2.
+  Vendor-Specific Data Block (0x7e) (Apple), OUI 00-10-FA: Use of DisplayID v2.0 tag for DisplayID v1.2.
+EDID:
+  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

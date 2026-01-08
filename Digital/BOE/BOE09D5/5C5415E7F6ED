@@ -1,0 +1,86 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 d5 09 00 00 00 00
+34 1e 01 04 b5 22 16 78 03 53 05 a4 54 4b 9c 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b7 98 00 a0 c0 80 60 70 30 20
+36 00 59 d7 10 00 00 1a 2c 7a 00 a0 c0 80 60 70
+30 20 36 00 59 d7 10 00 00 1a 00 00 00 fe 00 36
+50 37 39 57 80 4e 45 31 36 4e 34 31 00 00 00 00
+00 03 41 21 1e 00 11 00 00 0b 01 0a 20 20 00 e5
+
+00 ff ff ff ff ff ff 00 09 e5 d5 09 00 00 00 00
+34 1e 01 04 b5 22 16 78 03 53 05 a4 54 4b 9c 25
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b7 98 00 a0 c0 80 60 70 30 20
+36 00 59 d7 10 00 00 1a 2c 7a 00 a0 c0 80 60 70
+30 20 36 00 59 d7 10 00 00 1a 00 00 00 fe 00 36
+50 37 39 57 80 4e 45 31 36 4e 34 31 00 00 00 00
+00 03 41 21 1e 00 11 00 00 0b 01 0a 20 20 00 e5
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2517
+    Made in: week 52 of 2020
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 10
+    DisplayPort interface
+    Maximum image size: 34 cm x 22 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6416, 0.3291
+    Green: 0.2929, 0.6123
+    Blue : 0.1445, 0.0585
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  3072x1920   60.001117 Hz  16:10   120.962 kHz    390.950000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   87 Vpol N
+    DTD 2:  3072x1920   48.000894 Hz  16:10    96.770 kHz    312.760000 MHz (345 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   87 Vpol N
+    Alphanumeric Data String: '6P79W'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 03 41 21 1e 00 11 00 00 0b 01 0a 20 20 '....A!........  '
+Checksum: 0xe5
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 d5 09 00 00 00 00 '................'
+  34 1e 01 04 b5 22 16 78 03 53 05 a4 54 4b 9c 25 '4....".x.S..TK.%'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 b7 98 00 a0 c0 80 60 70 30 20 '............`p0 '
+  36 00 59 d7 10 00 00 1a 2c 7a 00 a0 c0 80 60 70 '6.Y.....,z....`p'
+  30 20 36 00 59 d7 10 00 00 1a 00 00 00 fe 00 36 '0 6.Y..........6'
+  50 37 39 57 80 4e 45 31 36 4e 34 31 00 00 00 00 'P79W.NE16N41....'
+  00 03 41 21 1e 00 11 00 00 0b 01 0a 20 20 00 e5 '..A!........  ..'
+Checksum: 0xe5
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

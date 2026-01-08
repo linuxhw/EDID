@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0009e5820900000000
-011e0104b51f117803d26aad5143b420
-11515b00000001010101010101010101
-01010101010126ca0050f07028803020
-350035ae1000001a0000000000000000
-0000000000000000001a000000fe0042
-4f452048460a202020202020000000fe
-004e4531343051554d2d4e36410a0195
-02031d00e3058000e60605016a6a246d
-1a00000203283c00046a246a24000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000007c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 82 09 00 00 00 00
+01 1e 01 04 b5 1f 11 78 03 d2 6a ad 51 43 b4 20
+11 51 5b 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 26 ca 00 50 f0 70 28 80 30 20
+35 00 35 ae 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42
+4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 34 30 51 55 4d 2d 4e 36 41 0a 01 95
+
+02 03 1d 00 e3 05 80 00 e6 06 05 01 6a 6a 24 6d
+1a 00 00 02 03 28 3c 00 04 6a 24 6a 24 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7c
 
 00 ff ff ff ff ff ff 00 09 e5 82 09 00 00 00 00
 01 1e 01 04 b5 1f 11 78 03 d2 6a ad 51 43 b4 20
@@ -98,3 +97,77 @@ Block 1, CTA-861 Extension Block:
     Maximum luminance (without local dimming): 106 (496.743 cd/m^2)
     Minimum luminance (without local dimming): 36 (0.099 cd/m^2)
 Checksum: 0x7c  Unused space in Extension Block: 98 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 82 09 00 00 00 00 '................'
+  01 1e 01 04 b5 1f 11 78 03 d2 6a ad 51 43 b4 20 '.......x..j.QC. '
+  11 51 5b 00 00 00 01 01 01 01 01 01 01 01 01 01 '.Q[.............'
+  01 01 01 01 01 01 26 ca 00 50 f0 70 28 80 30 20 '......&..P.p(.0 '
+  35 00 35 ae 10 00 00 1a 00 00 00 00 00 00 00 00 '5.5.............'
+  00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42 '...............B'
+  4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe 'OE HF.      ....'
+  00 4e 45 31 34 30 51 55 4d 2d 4e 36 41 0a 01 95 '.NE140QUM-N6A...'
+Checksum: 0x95
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 106 (496.743 cd/m^2)
+    Desired content max frame-average luminance: 106 (496.743 cd/m^2)
+    Desired content min luminance: 36 (0.099 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.3
+    Minimum Refresh Rate: 40 Hz
+    Maximum Refresh Rate: 60 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x04
+    Maximum luminance: 106 (496.743 cd/m^2)
+    Minimum luminance: 36 (0.099 cd/m^2)
+    Maximum luminance (without local dimming): 106 (496.743 cd/m^2)
+    Minimum luminance (without local dimming): 36 (0.099 cd/m^2)
+Checksum: 0x7c  Unused space in Extension Block: 98 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: 0 or negative horizontal back porch.
+  Missing Display Range Limits Descriptor.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

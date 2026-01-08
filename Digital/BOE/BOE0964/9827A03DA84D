@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e5640900000000
-161e0104a51d127803cbf2a6534c9e24
-0e505700000001010101010101010101
-010101010101743c80a070b028403020
-36001eb31000001a000000fd00283c4b
-4b10010a202020202020000000fe0042
-4f452048460a202020202020000000fe
-004e5631333357554d2d4e36310a0085
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 64 09 00 00 00 00
+16 1e 01 04 a5 1d 12 78 03 cb f2 a6 53 4c 9e 24
+0e 50 57 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 74 3c 80 a0 70 b0 28 40 30 20
+36 00 1e b3 10 00 00 1a 00 00 00 fd 00 28 3c 4b
+4b 10 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 56 31 33 33 57 55 4d 2d 4e 36 31 0a 00 85
 
 00 ff ff ff ff ff ff 00 09 e5 64 09 00 00 00 00
 16 1e 01 04 a5 1d 12 78 03 cb f2 a6 53 4c 9e 24
@@ -54,4 +52,35 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'NV133WUM-N61'
 Checksum: 0x85
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 64 09 00 00 00 00 '..........d.....'
+  16 1e 01 04 a5 1d 12 78 03 cb f2 a6 53 4c 9e 24 '.......x....SL.$'
+  0e 50 57 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PW.............'
+  01 01 01 01 01 01 74 3c 80 a0 70 b0 28 40 30 20 '......t<..p.(@0 '
+  36 00 1e b3 10 00 00 1a 00 00 00 fd 00 28 3c 4b '6............(<K'
+  4b 10 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42 'K...      .....B'
+  4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe 'OE HF.      ....'
+  00 4e 56 31 33 33 57 55 4d 2d 4e 36 31 0a 00 85 '.NV133WUM-N61...'
+Checksum: 0x85
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 74.403 - 74.403 kHz (Monitor: 75.000 - 75.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

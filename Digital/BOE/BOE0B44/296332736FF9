@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e5440b00000000
-14200104a51e137803f190a8544c9f25
-0c505400000001010101010101010101
-010101010101743c80a070b028403020
-36002ebc1000001a5d3080a070b02840
-302036002ebc1000001a000000fe0047
-39464335804e56313430575500000000
-000241319e000100000a410a202000e8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 44 0b 00 00 00 00
+14 20 01 04 a5 1e 13 78 03 f1 90 a8 54 4c 9f 25
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 74 3c 80 a0 70 b0 28 40 30 20
+36 00 2e bc 10 00 00 1a 5d 30 80 a0 70 b0 28 40
+30 20 36 00 2e bc 10 00 00 1a 00 00 00 fe 00 47
+39 46 43 35 80 4e 56 31 34 30 57 55 00 00 00 00
+00 02 41 31 9e 00 01 00 00 0a 41 0a 20 20 00 e8
 
 00 ff ff ff ff ff ff 00 09 e5 44 0b 00 00 00 00
 14 20 01 04 a5 1e 13 78 03 f1 90 a8 54 4c 9f 25
@@ -55,4 +53,34 @@ Block 0, Base EDID:
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 31 9e 00 01 00 00 0a 41 0a 20 20 '....A1......A.  '
 Checksum: 0xe8
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 44 0b 00 00 00 00 '..........D.....'
+  14 20 01 04 a5 1e 13 78 03 f1 90 a8 54 4c 9f 25 '. .....x....TL.%'
+  0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 74 3c 80 a0 70 b0 28 40 30 20 '......t<..p.(@0 '
+  36 00 2e bc 10 00 00 1a 5d 30 80 a0 70 b0 28 40 '6.......]0..p.(@'
+  30 20 36 00 2e bc 10 00 00 1a 00 00 00 fe 00 47 '0 6............G'
+  39 46 43 35 80 4e 56 31 34 30 57 55 00 00 00 00 '9FC5.NV140WU....'
+  00 02 41 31 9e 00 01 00 00 0a 41 0a 20 20 00 e8 '..A1......A.  ..'
+Checksum: 0xe8
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

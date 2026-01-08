@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e5d90a00000000
-011f0104a5221378022110985c578c28
-1b4e5300000001010101010101010101
-010101010101b93780dc70381f403020
-350058c21000001a0000000000000000
-0000000000000000001a000000fe0042
-4f452031380a202020202020000000fe
-004e4531353646484d2d4e53300a0053
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 d9 0a 00 00 00 00
+01 1f 01 04 a5 22 13 78 02 21 10 98 5c 57 8c 28
+1b 4e 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b9 37 80 dc 70 38 1f 40 30 20
+35 00 58 c2 10 00 00 1a 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42
+4f 45 20 31 38 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 35 36 46 48 4d 2d 4e 53 30 0a 00 53
 
 00 ff ff ff ff ff ff 00 09 e5 d9 0a 00 00 00 00
 01 1f 01 04 a5 22 13 78 02 21 10 98 5c 57 8c 28
@@ -51,3 +49,32 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'BOE 18'
     Alphanumeric Data String: 'NE156FHM-NS0'
 Checksum: 0x53
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 d9 0a 00 00 00 00 '................'
+  01 1f 01 04 a5 22 13 78 02 21 10 98 5c 57 8c 28 '.....".x.!..\W.('
+  1b 4e 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '.NS.............'
+  01 01 01 01 01 01 b9 37 80 dc 70 38 1f 40 30 20 '.......7..p8.@0 '
+  35 00 58 c2 10 00 00 1a 00 00 00 00 00 00 00 00 '5.X.............'
+  00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42 '...............B'
+  4f 45 20 31 38 0a 20 20 20 20 20 20 00 00 00 fe 'OE 18.      ....'
+  00 4e 45 31 35 36 46 48 4d 2d 4e 53 30 0a 00 53 '.NE156FHM-NS0..S'
+Checksum: 0x53
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

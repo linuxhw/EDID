@@ -1,31 +1,31 @@
-
-EDID (hex):
-00ffffffffffff0009e5710a00000000
-151f0104a5261578030f95ae5243b026
-0f505400000001010101010101010101
-010101010101df5e00afa0a028503020
-36007dd610000018000000fd0030a5f4
-f443010a202020202020000000fe0042
-4f452043510a202020202020000000fe
-004e4531373351484d2d4e59370a02a1
-020312006d1a0000020130a50000605a
-605a0000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000016
-7013790000030114e5040184ff09ae00
-2f001f009f0527000200050000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000001890
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 71 0a 00 00 00 00
+15 1f 01 04 a5 26 15 78 03 0f 95 ae 52 43 b0 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 df 5e 00 af a0 a0 28 50 30 20
+36 00 7d d6 10 00 00 18 00 00 00 fd 00 30 a5 f4
+f4 43 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 37 33 51 48 4d 2d 4e 59 37 0a 02 a1
+
+02 03 12 00 6d 1a 00 00 02 01 30 a5 00 00 60 5a
+60 5a 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 16
+
+70 13 79 00 00 03 01 14 e5 04 01 84 ff 09 ae 00
+2f 00 1f 00 9f 05 27 00 02 00 05 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 18 90
 
 00 ff ff ff ff ff ff 00 09 e5 71 0a 00 00 00 00
 15 1f 01 04 a5 26 15 78 03 0f 95 ae 52 43 b0 26
@@ -117,3 +117,79 @@ Block 2, DisplayID Extension Block:
                Vfront    3 Vsync   6 Vback   31 Vpol N
   Checksum: 0x18
 Checksum: 0x90
+
+----------------
+
+Block 3, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 71 0a 00 00 00 00 '..........q.....'
+  15 1f 01 04 a5 26 15 78 03 0f 95 ae 52 43 b0 26 '.....&.x....RC.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 df 5e 00 af a0 a0 28 50 30 20 '.......^....(P0 '
+  36 00 7d d6 10 00 00 18 00 00 00 fd 00 30 a5 f4 '6.}..........0..'
+  f4 43 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42 '.C..      .....B'
+  4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe 'OE CQ.      ....'
+  00 4e 45 31 37 33 51 48 4d 2d 4e 59 37 0a 02 a1 '.NE173QHM-NY7...'
+Checksum: 0xa1
+
+----------------
+
+Block 4, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 96 (400.000 cd/m^2)
+    Minimum luminance: 90 (0.498 cd/m^2)
+    Unknown: 0x60 0x5a
+Checksum: 0x16  Unused space in Extension Block: 109 bytes
+
+----------------
+
+Block 5, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1440  165.003212 Hz  16:9    244.205 kHz    667.900000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   95 Hpol N
+               Vfront    3 Vsync   6 Vback   31 Vpol N
+  Checksum: 0x18
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 4, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 88.800 - 244.204 kHz (Monitor: 244.000 - 244.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 3, Base EDID:
+  Unknown Extension Block.
+Block 4, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL

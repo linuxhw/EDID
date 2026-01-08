@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff00061041a000000000
-071c0104b51d127802ed91a3544da026
-0f505400000001010101010101010101
-010101010101d9650050a0402e600820
-08081eb31000001a000000fc00436f6c
-6f72204c43440a202020000000100000
-00000000000000000000000000000010
-00000000000000000000000000000196
-70127903007f813ffa10000301180f28
-17000000000000000000000000000000
-4c503133335751362d534a41320a2000
-474d4739343231303038344c4d314d41
-410a20202020207f8129fa1000020100
-110000029d03bc052f071f09b30d2011
-ab17ae1f9e2a1537d749e6618f8084a8
-f4dd3f00000000000000000000003f90
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 10 41 a0 00 00 00 00
+07 1c 01 04 b5 1d 12 78 02 ed 91 a3 54 4d a0 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 d9 65 00 50 a0 40 2e 60 08 20
+08 08 1e b3 10 00 00 1a 00 00 00 fc 00 43 6f 6c
+6f 72 20 4c 43 44 0a 20 20 20 00 00 00 10 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 96
+
+70 12 79 03 00 7f 81 3f fa 10 00 03 01 18 0f 28
+17 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+4c 50 31 33 33 57 51 36 2d 53 4a 41 32 0a 20 00
+47 4d 47 39 34 32 31 30 30 38 34 4c 4d 31 4d 41
+41 0a 20 20 20 20 20 7f 81 29 fa 10 00 02 01 00
+11 00 00 02 9d 03 bc 05 2f 07 1f 09 b3 0d 20 11
+ab 17 ae 1f 9e 2a 15 37 d7 49 e6 61 8f 80 84 a8
+f4 dd 3f 00 00 00 00 00 00 00 00 00 00 00 3f 90
 
 00 ff ff ff ff ff ff 00 06 10 41 a0 00 00 00 00
 07 1c 01 04 b5 1d 12 78 02 ed 91 a3 54 4d a0 26
@@ -89,3 +88,68 @@ Block 1, DisplayID Extension Block:
     a8 f4 dd 3f                                     '...?'
   Checksum: 0x3f
 Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 06 10 41 a0 00 00 00 00 '..........A.....'
+  07 1c 01 04 b5 1d 12 78 02 ed 91 a3 54 4d a0 26 '.......x....TM.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 d9 65 00 50 a0 40 2e 60 08 20 '.......e.P.@.`. '
+  08 08 1e b3 10 00 00 1a 00 00 00 fc 00 43 6f 6c '.............Col'
+  6f 72 20 4c 43 44 0a 20 20 20 00 00 00 10 00 00 'or LCD.   ......'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 96 '................'
+Checksum: 0x96
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
+    Type: 3, Version: 1
+    18 0f 28 17 00 00 00 00 00 00 00 00 00 00 00 00 '..(.............'
+    00 00 00 4c 50 31 33 33 57 51 36 2d 53 4a 41 32 '...LP133WQ6-SJA2'
+    0a 20 00 47 4d 47 39 34 32 31 30 30 38 34 4c 4d '. .GMG94210084LM'
+    31 4d 41 41 0a 20 20 20 20 20                   '1MAA.     '
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
+    Type: 2, Version: 1
+    00 11 00 00 02 9d 03 bc 05 2f 07 1f 09 b3 0d 20 '........./..... '
+    11 ab 17 ae 1f 9e 2a 15 37 d7 49 e6 61 8f 80 84 '......*.7.I.a...'
+    a8 f4 dd 3f                                     '...?'
+  Checksum: 0x3f
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 1, DisplayID Extension Block:
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
+Block 3, DisplayID Extension Block:
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
+
+Failures:
+
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
+  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: Missing DisplayID Display Parameters Data Block.
+  DisplayID: Missing DisplayID Display Interface Features Data Block.
+  DisplayID: Missing DisplayID Type I Detailed Timing Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

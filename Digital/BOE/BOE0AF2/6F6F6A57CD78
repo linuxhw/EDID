@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0009e5f20a00000000
-0d200104a51e137803ee96a3544c9926
-0f4e5100000001010101010101010101
-01010101010160d200a0a04032603020
-35002ebd10000018c89d00a0a0403260
-302035002ebd10000018000000fd0030
-78c6c636010a202020202020000000fe
-004e4531343051444d2d4e583220010a
-701379000003011430690005ff099f00
-2f001f003f0631000200040000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000004d90
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 f2 0a 00 00 00 00
+0d 20 01 04 a5 1e 13 78 03 ee 96 a3 54 4c 99 26
+0f 4e 51 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 60 d2 00 a0 a0 40 32 60 30 20
+35 00 2e bd 10 00 00 18 c8 9d 00 a0 a0 40 32 60
+30 20 35 00 2e bd 10 00 00 18 00 00 00 fd 00 30
+78 c6 c6 36 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 34 30 51 44 4d 2d 4e 58 32 20 01 0a
+
+70 13 79 00 00 03 01 14 30 69 00 05 ff 09 9f 00
+2f 00 1f 00 3f 06 31 00 02 00 04 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 4d 90
 
 00 ff ff ff ff ff ff 00 09 e5 f2 0a 00 00 00 00
 0d 20 01 04 a5 1e 13 78 03 ee 96 a3 54 4c 99 26
@@ -86,3 +85,54 @@ Block 1, DisplayID Extension Block:
                Vfront    3 Vsync   5 Vback   42 Vpol N
   Checksum: 0x4d
 Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 f2 0a 00 00 00 00 '................'
+  0d 20 01 04 a5 1e 13 78 03 ee 96 a3 54 4c 99 26 '. .....x....TL.&'
+  0f 4e 51 00 00 00 01 01 01 01 01 01 01 01 01 01 '.NQ.............'
+  01 01 01 01 01 01 60 d2 00 a0 a0 40 32 60 30 20 '......`....@2`0 '
+  35 00 2e bd 10 00 00 18 c8 9d 00 a0 a0 40 32 60 '5............@2`'
+  30 20 35 00 2e bd 10 00 00 18 00 00 00 fd 00 30 '0 5............0'
+  78 c6 c6 36 01 0a 20 20 20 20 20 20 00 00 00 fe 'x..6..      ....'
+  00 4e 45 31 34 30 51 44 4d 2d 4e 58 32 20 01 0a '.NE140QDM-NX2 ..'
+Checksum: 0x0a
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 1.3
+  Extension Count: 0
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1600   60.002228 Hz  16:10    99.004 kHz    269.290000 MHz (aspect 16:10, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   5 Vback   42 Vpol N
+  Checksum: 0x4d
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 99.003 - 198.000 kHz (Monitor: 198.000 - 198.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+  DisplayID: DisplayID expects at least one preferred timing.
+
+EDID conformity: FAIL

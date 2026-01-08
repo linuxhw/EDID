@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e56b0a00000000
-191f0104a51f1178039ba5945c5a942a
-1d505400000001010101010101010101
-0101010101014b1c56a2500016303020
-360035ae1000001a000000fd00283c30
-3007010a202020202020000000fe0042
-4f452043510a202020202020000000fe
-004e5431343057484d2d4e34430a0073
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 6b 0a 00 00 00 00
+19 1f 01 04 a5 1f 11 78 03 9b a5 94 5c 5a 94 2a
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 4b 1c 56 a2 50 00 16 30 30 20
+36 00 35 ae 10 00 00 1a 00 00 00 fd 00 28 3c 30
+30 07 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 54 31 34 30 57 48 4d 2d 4e 34 43 0a 00 73
 
 00 ff ff ff ff ff ff 00 09 e5 6b 0a 00 00 00 00
 19 1f 01 04 a5 1f 11 78 03 9b a5 94 5c 5a 94 2a
@@ -54,4 +52,36 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'NT140WHM-N4C'
 Checksum: 0x73
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 6b 0a 00 00 00 00 '..........k.....'
+  19 1f 01 04 a5 1f 11 78 03 9b a5 94 5c 5a 94 2a '.......x....\Z.*'
+  1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 4b 1c 56 a2 50 00 16 30 30 20 '......K.V.P..00 '
+  36 00 35 ae 10 00 00 1a 00 00 00 fd 00 28 3c 30 '6.5..........(<0'
+  30 07 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42 '0...      .....B'
+  4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe 'OE CQ.      ....'
+  00 4e 54 31 34 30 57 48 4d 2d 4e 34 43 0a 00 73 '.NT140WHM-N4C..s'
+Checksum: 0x73
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 47.401 - 47.401 kHz (Monitor: 48.000 - 48.000 kHz)
+    Maximum Clock: 72.430 MHz (Monitor: 70.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

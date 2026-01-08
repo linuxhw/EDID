@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009e5340800000000
-0014010380151078eabd3091544f8b26
-21505421080001010101010101010101
-01010101010164190040410026301888
-3600d29e000000182815004041002630
-18883600d29e00000018000000fe0048
-594449530a20202020202020000000fe
-0048583130345830312d3231310a00a9
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 34 08 00 00 00 00
+00 14 01 03 80 15 10 78 ea bd 30 91 54 4f 8b 26
+21 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88
+36 00 d2 9e 00 00 00 18 28 15 00 40 41 00 26 30
+18 88 36 00 d2 9e 00 00 00 18 00 00 00 fe 00 48
+59 44 49 53 0a 20 20 20 20 20 20 20 00 00 00 fe
+00 48 58 31 30 34 58 30 31 2d 32 31 31 0a 00 a9
 
 00 ff ff ff ff ff ff 00 09 e5 34 08 00 00 00 00
 00 14 01 03 80 15 10 78 ea bd 30 91 54 4f 8b 26
@@ -55,3 +53,30 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'HYDIS'
     Alphanumeric Data String: 'HX104X01-211'
 Checksum: 0xa9
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 34 08 00 00 00 00 '..........4.....'
+  00 14 01 03 80 15 10 78 ea bd 30 91 54 4f 8b 26 '.......x..0.TO.&'
+  21 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01 '!PT!............'
+  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
+  36 00 d2 9e 00 00 00 18 28 15 00 40 41 00 26 30 '6.......(..@A.&0'
+  18 88 36 00 d2 9e 00 00 00 18 00 00 00 fe 00 48 '..6............H'
+  59 44 49 53 0a 20 20 20 20 20 20 20 00 00 00 fe 'YDIS.       ....'
+  00 48 58 31 30 34 58 30 31 2d 32 31 31 0a 00 a9 '.HX104X01-211...'
+Checksum: 0xa9
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

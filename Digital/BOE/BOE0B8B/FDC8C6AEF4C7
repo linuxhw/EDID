@@ -1,31 +1,31 @@
-
-EDID (hex):
-00ffffffffffff0009e58b0b01000000
-0b200104b5221678078235a5534a9e26
-0f505400000001010101010101010101
-010101010101347000a0a040a0603020
-360059d71000001a000000fd0c3cf0a7
-a773010a202020202020000000fe0042
-4f452043510a202020202020000000fe
-004e4531363051444d2d4e5a330a0230
-02031d00e3058000e60605016a6a246d
-1a000002033cf000046a246a24000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000b4
-7012790000030114cdc00185ff099f00
-2f001f003f069f000200050000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000006a90
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 8b 0b 01 00 00 00
+0b 20 01 04 b5 22 16 78 07 82 35 a5 53 4a 9e 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 34 70 00 a0 a0 40 a0 60 30 20
+36 00 59 d7 10 00 00 1a 00 00 00 fd 0c 3c f0 a7
+a7 73 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42
+4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe
+00 4e 45 31 36 30 51 44 4d 2d 4e 5a 33 0a 02 30
+
+02 03 1d 00 e3 05 80 00 e6 06 05 01 6a 6a 24 6d
+1a 00 00 02 03 3c f0 00 04 6a 24 6a 24 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 b4
+
+70 12 79 00 00 03 01 14 cd c0 01 85 ff 09 9f 00
+2f 00 1f 00 3f 06 9f 00 02 00 05 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 6a 90
 
 00 ff ff ff ff ff ff 00 09 e5 8b 0b 01 00 00 00
 0b 20 01 04 b5 22 16 78 07 82 35 a5 53 4a 9e 26
@@ -61,7 +61,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BOE
     Model: 2955
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 11 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -131,3 +131,93 @@ Block 2, DisplayID Extension Block:
                Vfront    3 Vsync   6 Vback  151 Vpol N
   Checksum: 0x6a
 Checksum: 0x90
+
+----------------
+
+Block 3, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 e5 8b 0b 01 00 00 00 '................'
+  0b 20 01 04 b5 22 16 78 07 82 35 a5 53 4a 9e 26 '. ...".x..5.SJ.&'
+  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 34 70 00 a0 a0 40 a0 60 30 20 '......4p...@.`0 '
+  36 00 59 d7 10 00 00 1a 00 00 00 fd 0c 3c f0 a7 '6.Y..........<..'
+  a7 73 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42 '.s..      .....B'
+  4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe 'OE CQ.      ....'
+  00 4e 45 31 36 30 51 44 4d 2d 4e 5a 33 0a 02 30 '.NE160QDM-NZ3..0'
+Checksum: 0x30
+
+----------------
+
+Block 4, CTA-861 Extension Block:
+  Revision: 3
+  Native detailed modes: 0
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 106 (496.743 cd/m^2)
+    Desired content max frame-average luminance: 106 (496.743 cd/m^2)
+    Desired content min luminance: 36 (0.099 cd/m^2)
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.3
+    Minimum Refresh Rate: 60 Hz
+    Maximum Refresh Rate: 240 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x04
+    Maximum luminance: 106 (496.743 cd/m^2)
+    Minimum luminance: 36 (0.099 cd/m^2)
+    Maximum luminance (without local dimming): 106 (496.743 cd/m^2)
+    Minimum luminance (without local dimming): 36 (0.099 cd/m^2)
+Checksum: 0xb4  Unused space in Extension Block: 98 bytes
+
+----------------
+
+Block 5, DisplayID Extension Block:
+  Version: 1.2
+  Extension Count: 0
+  Video Timing Modes Type 1 - Detailed Timings Data Block:
+    DTD:  2560x1600  240.002507 Hz  16:10   422.404 kHz   1148.940000 MHz (aspect 16:10, no 3D stereo, preferred)
+               Hfront   48 Hsync  32 Hback   80 Hpol N
+               Vfront    3 Vsync   6 Vback  151 Vpol N
+  Checksum: 0x6a
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+Block 4, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 105.602 - 422.404 kHz (Monitor: 422.000 - 422.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, DisplayID Extension Block:
+  DisplayID Base Block has no product type.
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 3, Base EDID:
+  Unknown Extension Block.
+Block 4, CTA-861 Extension Block:
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
+  DisplayID: Missing DisplayID Product Identification Data Block.
+
+EDID conformity: FAIL
