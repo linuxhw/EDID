@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00412f000001010101
-00150103801009780aee91a3544c9926
-0f5054bdef80714f8100814081809500
-950fb3000101023a801871382d40582c
-4500a05a0000001e662150b051001b30
-40703600a05a0000001e000000fd0018
-4b1a5117000a202020202020000000fc
-005653582d3832310a20202020200105
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 2f 00 00 01 01 01 01
+00 15 01 03 80 10 09 78 0a ee 91 a3 54 4c 99 26
+0f 50 54 bd ef 80 71 4f 81 00 81 40 81 80 95 00
+95 0f b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 a0 5a 00 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 a0 5a 00 00 00 1e 00 00 00 fd 00 18
+4b 1a 51 17 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 56 53 58 2d 38 32 31 0a 20 20 20 20 20 01 05
 
 00 ff ff ff ff ff ff 00 41 2f 00 00 01 01 01 01
 00 15 01 03 80 10 09 78 0a ee 91 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PIO
     Model: 0
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: 2011
   Basic Display Parameters & Features:
     Digital display
@@ -75,3 +73,32 @@ Block 0, Base EDID:
     Display Product Name: 'VSX-821'
   Extension blocks: 1
 Checksum: 0x05
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 2f 00 00 01 01 01 01 '........A/......'
+  00 15 01 03 80 10 09 78 0a ee 91 a3 54 4c 99 26 '.......x....TL.&'
+  0f 50 54 bd ef 80 71 4f 81 00 81 40 81 80 95 00 '.PT...qO...@....'
+  95 0f b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 a0 5a 00 00 00 1e 66 21 50 b0 51 00 1b 30 'E..Z....f!P.Q..0'
+  40 70 36 00 a0 5a 00 00 00 1e 00 00 00 fd 00 18 '@p6..Z..........'
+  4b 1a 51 17 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
+  00 56 53 58 2d 38 32 31 0a 20 20 20 20 20 01 05 '.VSX-821.     ..'
+Checksum: 0x05
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (16x9 is smaller than 10x10 cm).
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
+Block 1, Base EDID:
+  Unknown Extension Block.
+
+EDID conformity: FAIL

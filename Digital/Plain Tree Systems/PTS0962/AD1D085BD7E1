@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004293620901010101
-1a120104a5342078e25ad5a7564b9b24
-13505421080081809500b300d1000101
-010101010101283c80a070b023403020
-360006442100001e9a29a0d051842230
-5098360006442100001c000000fd002f
-401e4b11000a202020202020000000ff
-00414550493836303032373131350055
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 42 93 62 09 01 01 01 01
+1a 12 01 04 a5 34 20 78 e2 5a d5 a7 56 4b 9b 24
+13 50 54 21 08 00 81 80 95 00 b3 00 d1 00 01 01
+01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 06 44 21 00 00 1e 9a 29 a0 d0 51 84 22 30
+50 98 36 00 06 44 21 00 00 1c 00 00 00 fd 00 2f
+40 1e 4b 11 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 41 45 50 49 38 36 30 30 32 37 31 31 35 00 55
 
 00 ff ff ff ff ff ff 00 42 93 62 09 01 01 01 01
 1a 12 01 04 a5 34 20 78 e2 5a d5 a7 56 4b 9b 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PTS
     Model: 2402
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 26 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -61,5 +59,41 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   6 Vback   25 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 47-64 Hz V, 30-75 kHz H, max dotclock 170 MHz
-    Display Product Serial Number: 'AEPI860027115'
+    Display Product Serial Number: ...
 Checksum: 0x55
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 42 93 62 09 01 01 01 01 '........B.b.....'
+  1a 12 01 04 a5 34 20 78 e2 5a d5 a7 56 4b 9b 24 '.....4 x.Z..VK.$'
+  13 50 54 21 08 00 81 80 95 00 b3 00 d1 00 01 01 '.PT!............'
+  01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
+  36 00 06 44 21 00 00 1e 9a 29 a0 d0 51 84 22 30 '6..D!....)..Q."0'
+  50 98 36 00 06 44 21 00 00 1c 00 00 00 fd 00 2f 'P.6..D!......../'
+  40 1e 4b 11 00 0a 20 20 20 20 20 20 00 00 00 ff '@.K...      ....'
+  00 41 45 50 49 38 36 30 30 32 37 31 31 35 00 55 '.AEPI860027115.U'
+Checksum: 0x55
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x44.
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

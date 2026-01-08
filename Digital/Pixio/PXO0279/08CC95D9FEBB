@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff00430f790201000000
-1e1f0104b5351d783b82c5a5544da425
-0b505484c70031404540614081c08140
-8180a9c0a9fc023a801871382d403020
-35000e282100001a662150b051001b30
-40703600ba892100001a000000fd0030
-a5dede0f010a202020202020000000fc
-00506978696f205058323438500a01af
-020326744b909f859404130312010211
-23090707830100006d1a000002013090
-000000000000fa7e8088703812401820
-3500092521000018866f80a070384040
-30203500ba8921000018023a50a05000
-2d3030203500ba892100001e00000000
-00000000000000000000000000000000
-0000000000000000000000000000001a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 43 0f 79 02 01 00 00 00
+1e 1f 01 04 b5 35 1d 78 3b 82 c5 a5 54 4d a4 25
+0b 50 54 84 c7 00 31 40 45 40 61 40 81 c0 81 40
+81 80 a9 c0 a9 fc 02 3a 80 18 71 38 2d 40 30 20
+35 00 0e 28 21 00 00 1a 66 21 50 b0 51 00 1b 30
+40 70 36 00 ba 89 21 00 00 1a 00 00 00 fd 00 30
+a5 de de 0f 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 50 69 78 69 6f 20 50 58 32 34 38 50 0a 01 af
+
+02 03 26 74 4b 90 9f 85 94 04 13 03 12 01 02 11
+23 09 07 07 83 01 00 00 6d 1a 00 00 02 01 30 90
+00 00 00 00 00 00 fa 7e 80 88 70 38 12 40 18 20
+35 00 09 25 21 00 00 18 86 6f 80 a0 70 38 40 40
+30 20 35 00 ba 89 21 00 00 18 02 3a 50 a0 50 00
+2d 30 30 20 35 00 ba 89 21 00 00 1e 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1a
 
 00 ff ff ff ff ff ff 00 43 0f 79 02 01 00 00 00
 1e 1f 01 04 b5 35 1d 78 3b 82 c5 a5 54 4d a4 25
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PXO
     Model: 633
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 30 of 2021
   Basic Display Parameters & Features:
     Digital display
@@ -138,3 +137,116 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   37 Vpol P
 Checksum: 0x1a  Unused space in Extension Block: 35 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 43 0f 79 02 01 00 00 00 '........C.y.....'
+  1e 1f 01 04 b5 35 1d 78 3b 82 c5 a5 54 4d a4 25 '.....5.x;...TM.%'
+  0b 50 54 84 c7 00 31 40 45 40 61 40 81 c0 81 40 '.PT...1@E@a@...@'
+  81 80 a9 c0 a9 fc 02 3a 80 18 71 38 2d 40 30 20 '.......:..q8-@0 '
+  35 00 0e 28 21 00 00 1a 66 21 50 b0 51 00 1b 30 '5..(!...f!P.Q..0'
+  40 70 36 00 ba 89 21 00 00 1a 00 00 00 fd 00 30 '@p6...!........0'
+  a5 de de 0f 01 0a 20 20 20 20 20 20 00 00 00 fc '......      ....'
+  00 50 69 78 69 6f 20 50 58 32 34 38 50 0a 01 af '.Pixio PX248P...'
+Checksum: 0xaf
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 4
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (native)
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (native)
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Detailed Timing Descriptors:
+    DTD 6:  1920x1080  143.991906 Hz  16:9    158.103 kHz    325.060000 MHz (521 mm x 293 mm)
+                 Hfront   24 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   10 Vpol N
+    DTD 7:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (698 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD 8:  1360x768   120.168965 Hz  85:48    97.697 kHz    148.500000 MHz (698 mm x 393 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   37 Vpol P
+Checksum: 0x1a  Unused space in Extension Block: 35 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x27.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 158.103 kHz (Monitor: 222.000 - 222.000 kHz)
+    Maximum Clock: 325.060 MHz (Monitor: 150.000 MHz)
+  CTA-861: Multiple native interlaced timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Mismatch of image size 698x393 mm vs display size 530x290 mm.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #4: Mismatch of image size 698x393 mm vs display size 530x290 mm.
+  Detailed Timing Descriptor #5: Mismatch of image size 698x393 mm vs display size 530x290 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 17.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #7: Mismatch of image size 698x393 mm vs display size 530x290 mm.
+  Detailed Timing Descriptor #8: Mismatch of image size 698x393 mm vs display size 530x290 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 698x393mm, which is larger than the display size 530.0x290.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

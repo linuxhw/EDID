@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c1ac2c3ab0000
-28210103803c22782a81b5a4554d9926
-0d5054bfef00d1c0b300950081808140
-81c001010101023a801871382d40582c
-450056502100001e2a4480a070382740
-3020350056502100001a000000fc0050
-484c2032373256380a202020000000fd
-00304b1e5512000a2020202020200132
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 1a c2 c3 ab 00 00
+28 21 01 03 80 3c 22 78 2a 81 b5 a4 55 4d 99 26
+0d 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40
+81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 2a 44 80 a0 70 38 27 40
+30 20 35 00 56 50 21 00 00 1a 00 00 00 fc 00 50
+48 4c 20 32 37 32 56 38 0a 20 20 20 00 00 00 fd
+00 30 4b 1e 55 12 00 0a 20 20 20 20 20 20 01 32
 
 00 ff ff ff ff ff ff 00 41 0c 1a c2 c3 ab 00 00
 28 21 01 03 80 3c 22 78 2a 81 b5 a4 55 4d 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 49690
-    Serial Number: 43971
+    Serial Number: ...
     Made in: week 40 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -75,3 +73,25 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 48-75 Hz V, 30-85 kHz H, max dotclock 180 MHz
   Extension blocks: 1
 Checksum: 0x32
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 1a c2 c3 ab 00 00 '........A.......'
+  28 21 01 03 80 3c 22 78 2a 81 b5 a4 55 4d 99 26 '(!...<"x*...UM.&'
+  0d 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
+  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 2a 44 80 a0 70 38 27 40 'E.VP!...*D..p8'@'
+  30 20 35 00 56 50 21 00 00 1a 00 00 00 fc 00 50 '0 5.VP!........P'
+  48 4c 20 32 37 32 56 38 0a 20 20 20 00 00 00 fd 'HL 272V8.   ....'
+  00 30 4b 1e 55 12 00 0a 20 20 20 20 20 20 01 32 '.0K.U...      .2'
+Checksum: 0x32
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+
+EDID conformity: FAIL

@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff005c2d501901000000
-231e0103802c17782a9315a254459725
-1a5054adca008180818f010101010101
-010101010101302a40c8608464301850
-1300b8e61000001e000000fd00384b1e
-5010000a202020202020000000fc0045
-554c43442d3139353057410a662156aa
-51001e30468f33009ae61000000601c3
-02031ef1480102038407121316230907
-078301000067030c001000843c00bc34
-40c86084643018501300bbf91000001e
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000007
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 5c 2d 50 19 01 00 00 00
+23 1e 01 03 80 2c 17 78 2a 93 15 a2 54 45 97 25
+1a 50 54 ad ca 00 81 80 81 8f 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50
+13 00 b8 e6 10 00 00 1e 00 00 00 fd 00 38 4b 1e
+50 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45
+55 4c 43 44 2d 31 39 35 30 57 41 0a 66 21 56 aa
+51 00 1e 30 46 8f 33 00 9a e6 10 00 00 06 01 c3
+
+02 03 1e f1 48 01 02 03 84 07 12 13 16 23 09 07
+07 83 01 00 00 67 03 0c 00 10 00 84 3c 00 bc 34
+40 c8 60 84 64 30 18 50 13 00 bb f9 10 00 00 1e
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07
 
 00 ff ff ff ff ff ff 00 5c 2d 50 19 01 00 00 00
 23 1e 01 03 80 2c 17 78 2a 93 15 a2 54 45 97 25
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: WAM
     Model: 6480
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 35 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -120,4 +119,96 @@ Block 1, CTA-861 Extension Block:
                  Vfront    1 Vsync   3 Vback   96 Vpol P
 Checksum: 0x07  Unused space in Extension Block: 79 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 5c 2d 50 19 01 00 00 00 '........\-P.....'
+  23 1e 01 03 80 2c 17 78 2a 93 15 a2 54 45 97 25 '#....,.x*...TE.%'
+  1a 50 54 ad ca 00 81 80 81 8f 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
+  13 00 b8 e6 10 00 00 1e 00 00 00 fd 00 38 4b 1e '.............8K.'
+  50 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45 'P...      .....E'
+  55 4c 43 44 2d 31 39 35 30 57 41 0a 66 21 56 aa 'ULCD-1950WA.f!V.'
+  51 00 1e 30 46 8f 33 00 9a e6 10 00 00 06 01 c3 'Q..0F.3.........'
+Checksum: 0xc3
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 300 MHz
+  Unknown CTA-861 Data Block (tag 0x00, length 0):
+  Detailed Timing Descriptors:
+    DTD 4:  1600x900    75.000000 Hz  16:9     75.000 kHz    135.000000 MHz (443 mm x 249 mm)
+                 Hfront   24 Hsync  80 Hback   96 Hpol P
+                 Vfront    1 Vsync   3 Vback   96 Vpol P
+Checksum: 0x07  Unused space in Extension Block: 79 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x51.
+Block 1, CTA-861 Extension Block:
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Invalid detailed timing descriptor ordering.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Mismatch of image size 443x249 mm vs display size 440x230 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 7.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 22.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #4: Mismatch of image size 443x249 mm vs display size 440x230 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 56.000 - 75.000 Hz)
+    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 30.000 - 80.000 kHz)
+  Base EDID: The DTD max image size is 443x249mm, which is larger than the display size 440.0x230.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL
