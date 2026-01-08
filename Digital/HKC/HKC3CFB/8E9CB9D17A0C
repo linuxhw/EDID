@@ -1,0 +1,88 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 63 fb 3c 00 00 00 00
+00 1f 01 04 95 22 13 78 03 68 d0 93 58 56 93 27
+1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 99 3b 80 10 71 38 50 40 30 20
+36 00 58 c2 10 00 00 19 00 00 00 fd 00 28 3c 43
+43 0d 01 0a 20 20 20 20 20 20 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 3d ff 0c 3c 7d 14 27 28 7d 00 00 00 00 cc
+
+00 ff ff ff ff ff ff 00 21 63 fb 3c 00 00 00 00
+00 1f 01 04 95 22 13 78 03 68 d0 93 58 56 93 27
+1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 99 3b 80 10 71 38 50 40 30 20
+36 00 58 c2 10 00 00 19 00 00 00 fd 00 28 3c 43
+43 0d 01 0a 20 20 20 20 20 20 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 3d ff 0c 3c 7d 14 27 28 7d 00 00 00 00 cc
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HKC
+    Model: 15611
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5751, 0.3457
+    Green: 0.3378, 0.5742
+    Blue : 0.1552, 0.1064
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.002674 Hz  16:9     69.603 kHz    152.570000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  192 Hpol N
+                 Vfront    3 Vsync   6 Vback   71 Vpol N
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 67-67 kHz H, max dotclock 130 MHz
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 3d ff 0c 3c 7d 14 27 28 7d 00 00 00 '....=..<}.'(}...'
+Checksum: 0xcc
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 21 63 fb 3c 00 00 00 00 '........!c.<....'
+  00 1f 01 04 95 22 13 78 03 68 d0 93 58 56 93 27 '.....".x.h..XV.''
+  1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 99 3b 80 10 71 38 50 40 30 20 '.......;..q8P@0 '
+  36 00 58 c2 10 00 00 19 00 00 00 fd 00 28 3c 43 '6.X..........(<C'
+  43 0d 01 0a 20 20 20 20 20 20 00 00 00 00 00 00 'C...      ......'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
+  00 0c 3d ff 0c 3c 7d 14 27 28 7d 00 00 00 00 cc '..=..<}.'(}.....'
+Checksum: 0xcc
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 69.603 - 69.603 kHz (Monitor: 67.000 - 67.000 kHz)
+    Maximum Clock: 152.570 MHz (Monitor: 130.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff001e6dd09d01010101
-00120103804627780acf74a3574cb023
-09484ca3cf003140454f614f818f0101
-010101010101662150b051001b304070
-3600c48e2100001e011d007251d01e20
-6e285500c48e2100001e000000fc004c
-472054560a20202020202020000000fd
-00374d18530f000a202020202020013f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d d0 9d 01 01 01 01
+00 12 01 03 80 46 27 78 0a cf 74 a3 57 4c b0 23
+09 48 4c a3 cf 00 31 40 45 4f 61 4f 81 8f 01 01
+01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70
+36 00 c4 8e 21 00 00 1e 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 c4 8e 21 00 00 1e 00 00 00 fc 00 4c
+47 20 54 56 0a 20 20 20 20 20 20 20 00 00 00 fd
+00 37 4d 18 53 0f 00 0a 20 20 20 20 20 20 01 3f
 
 00 ff ff ff ff ff ff 00 1e 6d d0 9d 01 01 01 01
 00 12 01 03 80 46 27 78 0a cf 74 a3 57 4c b0 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: GSM
     Model: 40400
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: 2008
   Basic Display Parameters & Features:
     Digital display
@@ -68,3 +66,25 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 55-77 Hz V, 24-83 kHz H, max dotclock 150 MHz
   Extension blocks: 1
 Checksum: 0x3f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d d0 9d 01 01 01 01 '.........m......'
+  00 12 01 03 80 46 27 78 0a cf 74 a3 57 4c b0 23 '.....F'x..t.WL.#'
+  09 48 4c a3 cf 00 31 40 45 4f 61 4f 81 8f 01 01 '.HL...1@EOaO....'
+  01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70 '......f!P.Q..0@p'
+  36 00 c4 8e 21 00 00 1e 01 1d 00 72 51 d0 1e 20 '6...!......rQ.. '
+  6e 28 55 00 c4 8e 21 00 00 1e 00 00 00 fc 00 4c 'n(U...!........L'
+  47 20 54 56 0a 20 20 20 20 20 20 20 00 00 00 fd 'G TV.       ....'
+  00 37 4d 18 53 0f 00 0a 20 20 20 20 20 20 01 3f '.7M.S...      .?'
+Checksum: 0x3f
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+
+EDID conformity: FAIL

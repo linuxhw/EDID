@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff002163010200000000
-00210104a51f1178e351c0965b5a9228
-20505400000001010101010101010101
-010101010101163780a0703832403020
-ac0035ae10000019000000fd00303c43
-430e010a202020202020000000fe0048
-4b43204d59202020200a2020000000fe
-004d42313430435330312d34202000ca
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 63 01 02 00 00 00 00
+00 21 01 04 a5 1f 11 78 e3 51 c0 96 5b 5a 92 28
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 16 37 80 a0 70 38 32 40 30 20
+ac 00 35 ae 10 00 00 19 00 00 00 fd 00 30 3c 43
+43 0e 01 0a 20 20 20 20 20 20 00 00 00 fe 00 48
+4b 43 20 4d 59 20 20 20 20 0a 20 20 00 00 00 fe
+00 4d 42 31 34 30 43 53 30 31 2d 34 20 20 00 ca
 
 00 ff ff ff ff ff ff 00 21 63 01 02 00 00 00 00
 00 21 01 04 a5 1f 11 78 e3 51 c0 96 5b 5a 92 28
@@ -54,3 +52,40 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'HKC MY    '
     Alphanumeric Data String: 'MB140CS01-4  '
 Checksum: 0xca
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 21 63 01 02 00 00 00 00 '........!c......'
+  00 21 01 04 a5 1f 11 78 e3 51 c0 96 5b 5a 92 28 '.!.....x.Q..[Z.('
+  20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ' PT.............'
+  01 01 01 01 01 01 16 37 80 a0 70 38 32 40 30 20 '.......7..p82@0 '
+  ac 00 35 ae 10 00 00 19 00 00 00 fd 00 30 3c 43 '..5..........0<C'
+  43 0e 01 0a 20 20 20 20 20 20 00 00 00 fe 00 48 'C...      .....H'
+  4b 43 20 4d 59 20 20 20 20 0a 20 20 00 00 00 fe 'KC MY    .  ....'
+  00 4d 42 31 34 30 43 53 30 31 2d 34 20 20 00 ca '.MB140CS01-4  ..'
+Checksum: 0xca
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 67.798 - 67.798 kHz (Monitor: 67.000 - 67.000 kHz)
+    Maximum Clock: 141.020 MHz (Monitor: 140.000 MHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

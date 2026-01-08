@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff002163132400000000
-0121010380351d78ea2d36a75438ae26
-0d4f54adcf00d1c0b300950081800101
-010101010101023a801871382d40582c
-45000f282100001e000000fc004d4232
-345631330a2020202020000000fd0030
-4b1e5312000a202020202020000000ff
-003030303030303030303030303101c5
-02032bf146901f041303122309070783
-03000066030c00100080e2007f6d1a00
-000201304bed00000000004a23a0a050
-842930302035000f282100001e2a4480
-a070382740302035000f282100001e00
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000039
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 63 13 24 00 00 00 00
+01 21 01 03 80 35 1d 78 ea 2d 36 a7 54 38 ae 26
+0d 4f 54 ad cf 00 d1 c0 b3 00 95 00 81 80 01 01
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0f 28 21 00 00 1e 00 00 00 fc 00 4d 42 32
+34 56 31 33 0a 20 20 20 20 20 00 00 00 fd 00 30
+4b 1e 53 12 00 0a 20 20 20 20 20 20 00 00 00 ff
+00 30 30 30 30 30 30 30 30 30 30 30 30 31 01 c5
+
+02 03 2b f1 46 90 1f 04 13 03 12 23 09 07 07 83
+03 00 00 66 03 0c 00 10 00 80 e2 00 7f 6d 1a 00
+00 02 01 30 4b ed 00 00 00 00 00 4a 23 a0 a0 50
+84 29 30 30 20 35 00 0f 28 21 00 00 1e 2a 44 80
+a0 70 38 27 40 30 20 35 00 0f 28 21 00 00 1e 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 39
 
 00 ff ff ff ff ff ff 00 21 63 13 24 00 00 00 00
 01 21 01 03 80 35 1d 78 ea 2d 36 a7 54 38 ae 26
@@ -81,7 +80,7 @@ Block 0, Base EDID:
     Display Product Name: 'MB24V13'
     Display Range Limits:
       Monitor ranges (GTF): 48-75 Hz V, 30-83 kHz H, max dotclock 180 MHz
-    Display Product Serial Number: '0000000000001'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0xc5
 
@@ -136,4 +135,103 @@ Block 1, CTA-861 Extension Block:
                  Vfront    3 Vsync   5 Vback   31 Vpol P
 Checksum: 0x39  Unused space in Extension Block: 48 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 21 63 13 24 00 00 00 00 '........!c.$....'
+  01 21 01 03 80 35 1d 78 ea 2d 36 a7 54 38 ae 26 '.!...5.x.-6.T8.&'
+  0d 4f 54 ad cf 00 d1 c0 b3 00 95 00 81 80 01 01 '.OT.............'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 0f 28 21 00 00 1e 00 00 00 fc 00 4d 42 32 'E..(!........MB2'
+  34 56 31 33 0a 20 20 20 20 20 00 00 00 fd 00 30 '4V13.     .....0'
+  4b 1e 53 12 00 0a 20 20 20 20 20 20 00 00 00 ff 'K.S...      ....'
+  00 30 30 30 30 30 30 30 30 30 30 30 30 31 01 c5 '.0000000000001..'
+Checksum: 0xc5
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+    LFE1 - Low Frequency Effects 1
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Supports both over- and underscan
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 75 Hz
+    Flags 1.x: 0xed (MCCS)
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Detailed Timing Descriptors:
+    DTD 4:  1440x900    60.002657 Hz  16:10    56.462 kHz     90.340000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+    DTD 5:  1920x1080   74.972503 Hz  16:9     83.894 kHz    174.500000 MHz (527 mm x 296 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   31 Vpol P
+Checksum: 0x39  Unused space in Extension Block: 48 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.250 - 83.894 kHz (Monitor: 30.000 - 83.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

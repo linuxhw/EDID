@@ -1,0 +1,84 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 63 fb 3c 00 00 00 00
+00 22 01 04 a5 22 13 78 03 68 d0 93 58 56 93 27
+1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 99 3b 80 10 71 38 50 40 30 20
+36 00 58 c2 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 58 c2 10 00 00 19 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 3d ff 0c 3c 7d 14 27 28 7d 00 00 00 00 35
+
+00 ff ff ff ff ff ff 00 21 63 fb 3c 00 00 00 00
+00 22 01 04 a5 22 13 78 03 68 d0 93 58 56 93 27
+1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 99 3b 80 10 71 38 50 40 30 20
+36 00 58 c2 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 58 c2 10 00 00 19 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 3d ff 0c 3c 7d 14 27 28 7d 00 00 00 00 35
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HKC
+    Model: 15611
+    Made in: 2024
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5751, 0.3457
+    Green: 0.3378, 0.5742
+    Blue : 0.1552, 0.1064
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.002674 Hz  16:9     69.603 kHz    152.570000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback  192 Hpol N
+                 Vfront    3 Vsync   6 Vback   71 Vpol N
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 58 c2 10 00 00 19 '..........X.....'
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 3d ff 0c 3c 7d 14 27 28 7d 00 00 00 '....=..<}.'(}...'
+Checksum: 0x35
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 21 63 fb 3c 00 00 00 00 '........!c.<....'
+  00 22 01 04 a5 22 13 78 03 68 d0 93 58 56 93 27 '."...".x.h..XV.''
+  1b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 99 3b 80 10 71 38 50 40 30 20 '.......;..q8P@0 '
+  36 00 58 c2 10 00 00 19 00 00 00 00 00 00 00 00 '6.X.............'
+  00 00 00 00 58 c2 10 00 00 19 00 00 00 00 00 00 '....X...........'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
+  00 0c 3d ff 0c 3c 7d 14 27 28 7d 00 00 00 00 35 '..=..<}.'(}....5'
+Checksum: 0x35
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

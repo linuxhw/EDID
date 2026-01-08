@@ -1,0 +1,87 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 21 63 fc 3c 00 00 00 00
+12 20 01 04 a5 1a 0e 78 e3 32 af a7 52 43 94 21
+1d 4b 5a 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 98 3b 80 10 71 38 50 40 30 20
+36 00 00 90 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 48
+4b 43 20 4d 59 20 20 20 20 0a 20 20 00 00 00 fe
+00 50 47 31 31 36 43 53 30 31 27 32 20 20 00 4b
+
+00 ff ff ff ff ff ff 00 21 63 fc 3c 00 00 00 00
+12 20 01 04 a5 1a 0e 78 e3 32 af a7 52 43 94 21
+1d 4b 5a 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 98 3b 80 10 71 38 50 40 30 20
+36 00 00 90 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 48
+4b 43 20 4d 59 20 20 20 20 0a 20 20 00 00 00 fe
+00 50 47 31 31 36 43 53 30 31 27 32 20 20 00 4b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: HKC
+    Model: 15612
+    Made in: week 18 of 2022
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 26 cm x 14 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.6523, 0.3232
+    Green: 0.2617, 0.5800
+    Blue : 0.1308, 0.1152
+    White: 0.2958, 0.3544
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.998742 Hz  16:9     69.599 kHz    152.560000 MHz (256 mm x 144 mm)
+                 Hfront   48 Hsync  32 Hback  192 Hpol N
+                 Vfront    3 Vsync   6 Vback   71 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'HKC MY    '
+    Alphanumeric Data String: 'PG116CS01'2  '
+Checksum: 0x4b
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 21 63 fc 3c 00 00 00 00 '........!c.<....'
+  12 20 01 04 a5 1a 0e 78 e3 32 af a7 52 43 94 21 '. .....x.2..RC.!'
+  1d 4b 5a 00 00 00 01 01 01 01 01 01 01 01 01 01 '.KZ.............'
+  01 01 01 01 01 01 98 3b 80 10 71 38 50 40 30 20 '.......;..q8P@0 '
+  36 00 00 90 10 00 00 19 00 00 00 00 00 00 00 00 '6...............'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 48 '...............H'
+  4b 43 20 4d 59 20 20 20 20 0a 20 20 00 00 00 fe 'KC MY    .  ....'
+  00 50 47 31 31 36 43 53 30 31 27 32 20 20 00 4b '.PG116CS01'2  .K'
+Checksum: 0x4b
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

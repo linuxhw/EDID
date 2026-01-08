@@ -1,0 +1,181 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 1e 6d 27 78 60 9a 06 00
+04 23 01 04 a5 50 21 78 fe 69 05 ae 4e 4c a9 27
+0a 50 54 21 08 00 d1 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 48 d5 70 b0 d0 a0 46 50 30 20
+3a 00 20 4e 31 00 00 1a 00 00 00 fd 00 30 64 46
+9a 38 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+47 20 55 4c 54 52 41 57 49 44 45 0a 00 00 00 ff
+00 35 30 34 4e 54 4c 45 43 51 37 33 36 0a 01 bb
+
+02 03 11 72 23 09 07 07 44 10 04 03 01 83 01 00
+00 e2 b3 70 b0 d0 a0 3b 50 30 20 3a 00 20 4e 31
+00 00 1a 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6b
+
+00 ff ff ff ff ff ff 00 1e 6d 27 78 60 9a 06 00
+04 23 01 04 a5 50 21 78 fe 69 05 ae 4e 4c a9 27
+0a 50 54 21 08 00 d1 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 48 d5 70 b0 d0 a0 46 50 30 20
+3a 00 20 4e 31 00 00 1a 00 00 00 fd 00 30 64 46
+9a 38 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c
+47 20 55 4c 54 52 41 57 49 44 45 0a 00 00 00 ff
+00 35 30 34 4e 54 4c 45 43 51 37 33 36 0a 01 bb
+
+02 03 11 72 23 09 07 07 44 10 04 03 01 83 01 00
+00 e2 b3 70 b0 d0 a0 3b 50 30 20 3a 00 20 4e 31
+00 00 1a 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 6b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: GSM
+    Model: 30759
+    Serial Number: ...
+    Made in: week 4 of 2025
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 80 cm x 33 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+    Default (sRGB) color space is primary color space
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6806, 0.3066
+    Green: 0.2988, 0.6611
+    Blue : 0.1523, 0.0390
+    White: 0.3134, 0.3291
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  3440x1440   99.997070 Hz  43:18   150.996 kHz    546.000000 MHz (800 mm x 334 mm)
+                 Hfront   48 Hsync  32 Hback   96 Hpol P
+                 Vfront    3 Vsync  10 Vback   57 Vpol N
+    Display Range Limits:
+      Monitor ranges (GTF): 48-100 Hz V, 70-154 kHz H, max dotclock 560 MHz
+    Display Product Name: 'LG ULTRAWIDE'
+    Display Product Serial Number: ...
+  Extension blocks: 1
+Checksum: 0xbb
+
+----------------
+
+Block 1, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 2:  3440x1440   84.957081 Hz  43:18   127.351 kHz    460.500000 MHz (800 mm x 334 mm)
+                 Hfront   48 Hsync  32 Hback   96 Hpol P
+                 Vfront    3 Vsync  10 Vback   46 Vpol N
+Checksum: 0x6b  Unused space in Extension Block: 92 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 1e 6d 27 78 60 9a 06 00 '.........m'x`...'
+  04 23 01 04 a5 50 21 78 fe 69 05 ae 4e 4c a9 27 '.#...P!x.i..NL.''
+  0a 50 54 21 08 00 d1 c0 01 01 01 01 01 01 01 01 '.PT!............'
+  01 01 01 01 01 01 48 d5 70 b0 d0 a0 46 50 30 20 '......H.p...FP0 '
+  3a 00 20 4e 31 00 00 1a 00 00 00 fd 00 30 64 46 ':. N1........0dF'
+  9a 38 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c '.8..      .....L'
+  47 20 55 4c 54 52 41 57 49 44 45 0a 00 00 00 ff 'G ULTRAWIDE.....'
+  00 35 30 34 4e 54 4c 45 43 51 37 33 36 0a 01 bb '.504NTLECQ736...'
+Checksum: 0xbb
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 2
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 3:  3440x1440   84.957081 Hz  43:18   127.351 kHz    460.500000 MHz (800 mm x 334 mm)
+                 Hfront   48 Hsync  32 Hback   96 Hpol P
+                 Vfront    3 Vsync  10 Vback   46 Vpol N
+Checksum: 0x6b  Unused space in Extension Block: 92 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 150.995 kHz (Monitor: 70.000 - 154.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00220e5f3400000000
-021d0104a5331d783aa575a856529e28
-0b5054a10800d1c0a9c081c0b3009500
-810081800101023a801871382d40582c
-4500fe221100001e000000fd00323c1e
-5011010a202020202020000000fc0048
-5020453233330a2020202020000000ff
-00334351393032303754460a2020004b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 22 0e 5f 34 00 00 00 00
+02 1d 01 04 a5 33 1d 78 3a a5 75 a8 56 52 9e 28
+0b 50 54 a1 08 00 d1 c0 a9 c0 81 c0 b3 00 95 00
+81 00 81 80 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 fe 22 11 00 00 1e 00 00 00 fd 00 32 3c 1e
+50 11 01 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+50 20 45 32 33 33 0a 20 20 20 20 20 00 00 00 ff
+00 33 43 51 39 30 32 30 37 54 46 0a 20 20 00 4b
 
 00 ff ff ff ff ff ff 00 22 0e 5f 34 00 00 00 00
 02 1d 01 04 a5 33 1d 78 3a a5 75 a8 56 52 9e 28
@@ -62,7 +60,35 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (Bare Limits): 50-60 Hz V, 30-80 kHz H, max dotclock 170 MHz
     Display Product Name: 'HP E233'
-    Display Product Serial Number: '3CQ90207TF'
+    Display Product Serial Number: ...
 Checksum: 0x4b
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 22 0e 5f 34 00 00 00 00 '........"._4....'
+  02 1d 01 04 a5 33 1d 78 3a a5 75 a8 56 52 9e 28 '.....3.x:.u.VR.('
+  0b 50 54 a1 08 00 d1 c0 a9 c0 81 c0 b3 00 95 00 '.PT.............'
+  81 00 81 80 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 fe 22 11 00 00 1e 00 00 00 fd 00 32 3c 1e 'E..".........2<.'
+  50 11 01 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'P...      .....H'
+  50 20 45 32 33 33 0a 20 20 20 20 20 00 00 00 ff 'P E233.     ....'
+  00 33 43 51 39 30 32 30 37 54 46 0a 20 20 00 4b '.3CQ90207TF.  .K'
+Checksum: 0x4b
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.810 - 70.082 Hz (Monitor: 50.000 - 60.000 Hz)
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
