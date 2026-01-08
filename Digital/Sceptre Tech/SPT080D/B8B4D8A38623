@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004e140d08cd332206
-131a0104a52c197822c905a3574b9c25
-125054afcf0081408180a9c09500950f
-950a950c01012f2640a060841a303020
-3500b2ec1000001ca91a000050001630
-30203700dd0c1100001a000000fd0038
-4c1f5311000a202020202020000000fc
-0045323035572d313630300a20200022
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4e 14 0d 08 cd 33 22 06
+13 1a 01 04 a5 2c 19 78 22 c9 05 a3 57 4b 9c 25
+12 50 54 af cf 00 81 40 81 80 a9 c0 95 00 95 0f
+95 0a 95 0c 01 01 2f 26 40 a0 60 84 1a 30 30 20
+35 00 b2 ec 10 00 00 1c a9 1a 00 00 50 00 16 30
+30 20 37 00 dd 0c 11 00 00 1a 00 00 00 fd 00 38
+4c 1f 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 45 32 30 35 57 2d 31 36 30 30 0a 20 20 00 22
 
 00 ff ff ff ff ff ff 00 4e 14 0d 08 cd 33 22 06
 13 1a 01 04 a5 2c 19 78 22 c9 05 a3 57 4b 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SPT
     Model: 2061
-    Serial Number: 102904781
+    Serial Number: ...
     Made in: week 19 of 2016
   Basic Display Parameters & Features:
     Digital display
@@ -77,4 +75,41 @@ Block 0, Base EDID:
     Display Product Name: 'E205W-1600'
 Checksum: 0x22
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4e 14 0d 08 cd 33 22 06 '........N....3".'
+  13 1a 01 04 a5 2c 19 78 22 c9 05 a3 57 4b 9c 25 '.....,.x"...WK.%'
+  12 50 54 af cf 00 81 40 81 80 a9 c0 95 00 95 0f '.PT....@........'
+  95 0a 95 0c 01 01 2f 26 40 a0 60 84 1a 30 30 20 '....../&@.`..00 '
+  35 00 b2 ec 10 00 00 1c a9 1a 00 00 50 00 16 30 '5...........P..0'
+  30 20 37 00 dd 0c 11 00 00 1a 00 00 00 fd 00 38 '0 7............8'
+  4c 1f 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 45 32 30 35 57 2d 31 36 30 30 0a 20 20 00 22 '.E205W-1600.  ."'
+Checksum: 0x22
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: 0 values in the video timing:
+    Horizontal Active/Blanking 1280/0
+    Horizontal Frontporch/Sync Width 48/32
+    Vertical Active/Blanking 768/22
+    Vertical Frontporch/Sync Width 3/7
+  Detailed Timing Descriptor #2: 0 or negative horizontal back porch.
+  Detailed Timing Descriptor #2: Mismatch of image size 477x268 mm vs display size 440x250 mm.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 477x268mm, which is larger than the display size 440.0x250.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

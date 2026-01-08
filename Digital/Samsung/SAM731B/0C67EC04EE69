@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2d1b7352344e35
-19210104a5301a7820a1d5ab5450a425
-0c5054bfef80714f81c0810081809500
-a9c0b3000101023a801871382d40582c
-4500dc0b1100001e000000fd00384b1e
-5111000a202020202020000000fc0020
-533232433331780a20202020000000ff
-00483944573630313931370a202000e2
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 1b 73 52 34 4e 35
+19 21 01 04 a5 30 1a 78 20 a1 d5 ab 54 50 a4 25
+0c 50 54 bf ef 80 71 4f 81 c0 81 00 81 80 95 00
+a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0b 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 20
+53 32 32 43 33 31 78 0a 20 20 20 20 00 00 00 ff
+00 48 39 44 57 36 30 31 39 31 37 0a 20 20 00 e2
 
 00 ff ff ff ff ff ff 00 4c 2d 1b 73 52 34 4e 35
 19 21 01 04 a5 30 1a 78 20 a1 d5 ab 54 50 a4 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 29467
-    Serial Number: 894317650
+    Serial Number: ...
     Made in: week 25 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -74,7 +72,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-81 kHz H, max dotclock 170 MHz
     Display Product Name: ' S22C31x'
-    Display Product Serial Number: 'H9DW601917'
+    Display Product Serial Number: ...
 Checksum: 0xe2
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d 1b 73 52 34 4e 35 '........L-.sR4N5'
+  19 21 01 04 a5 30 1a 78 20 a1 d5 ab 54 50 a4 25 '.!...0.x ...TP.%'
+  0c 50 54 bf ef 80 71 4f 81 c0 81 00 81 80 95 00 '.PT...qO........'
+  a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dc 0b 11 00 00 1e 00 00 00 fd 00 38 4b 1e 'E............8K.'
+  51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 20 'Q...      ..... '
+  53 32 32 43 33 31 78 0a 20 20 20 20 00 00 00 ff 'S22C31x.    ....'
+  00 48 39 44 57 36 30 31 39 31 37 0a 20 20 00 e2 '.H9DW601917.  ..'
+Checksum: 0xe2
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

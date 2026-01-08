@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c834e3500000000
-00190104951c10780aabf59959549027
-1e505400000001010101010101010101
-010101010101dc3780a0703840403020
-2500149c100000190000000f00000000
-00000000003c82113c00000000fe0053
-414d53554e470a2020202020000000fe
-00313235484c30342d3730310a2000de
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 83 4e 35 00 00 00 00
+00 19 01 04 95 1c 10 78 0a ab f5 99 59 54 90 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 dc 37 80 a0 70 38 40 40 30 20
+25 00 14 9c 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 3c 82 11 3c 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe
+00 31 32 35 48 4c 30 34 2d 37 30 31 0a 20 00 de
 
 00 ff ff ff ff ff ff 00 4c 83 4e 35 00 00 00 00
 00 19 01 04 95 1c 10 78 0a ab f5 99 59 54 90 27
@@ -51,3 +49,32 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'SAMSUNG'
     Alphanumeric Data String: '125HL04-701'
 Checksum: 0xde
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 83 4e 35 00 00 00 00 '........L.N5....'
+  00 19 01 04 95 1c 10 78 0a ab f5 99 59 54 90 27 '.......x....YT.''
+  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 dc 37 80 a0 70 38 40 40 30 20 '.......7..p8@@0 '
+  25 00 14 9c 10 00 00 19 00 00 00 0f 00 00 00 00 '%...............'
+  00 00 00 00 00 3c 82 11 3c 00 00 00 00 fe 00 53 '.....<..<......S'
+  41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe 'AMSUNG.     ....'
+  00 31 32 35 48 4c 30 34 2d 37 30 31 0a 20 00 de '.125HL04-701. ..'
+Checksum: 0xde
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

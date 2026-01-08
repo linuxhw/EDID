@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004ca3435400000000
-00140103902517780a87f594574f8c27
-27505400000001010101010101010101
-0101010101015040801c71b02d403020
-36006fe61000001a5040801c71b02d40
-302036006fe61000001a000000fe0052
-4d3232338231373043540a2000000000
-00000000000000000006010a202000f8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 43 54 00 00 00 00
+00 14 01 03 90 25 17 78 0a 87 f5 94 57 4f 8c 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 50 40 80 1c 71 b0 2d 40 30 20
+36 00 6f e6 10 00 00 1a 50 40 80 1c 71 b0 2d 40
+30 20 36 00 6f e6 10 00 00 1a 00 00 00 fe 00 52
+4d 32 32 33 82 31 37 30 43 54 0a 20 00 00 00 00
+00 00 00 00 00 00 00 00 00 06 01 0a 20 20 00 f8
 
 00 ff ff ff ff ff ff 00 4c a3 43 54 00 00 00 00
 00 14 01 03 90 25 17 78 0a 87 f5 94 57 4f 8c 27
@@ -51,3 +49,32 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'RM223'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 06 01 0a 20 20 '..............  '
 Checksum: 0xf8
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c a3 43 54 00 00 00 00 '........L.CT....'
+  00 14 01 03 90 25 17 78 0a 87 f5 94 57 4f 8c 27 '.....%.x....WO.''
+  27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ''PT.............'
+  01 01 01 01 01 01 50 40 80 1c 71 b0 2d 40 30 20 '......P@..q.-@0 '
+  36 00 6f e6 10 00 00 1a 50 40 80 1c 71 b0 2d 40 '6.o.....P@..q.-@'
+  30 20 36 00 6f e6 10 00 00 1a 00 00 00 fe 00 52 '0 6.o..........R'
+  4d 32 32 33 82 31 37 30 43 54 0a 20 00 00 00 00 'M223.170CT. ....'
+  00 00 00 00 00 00 00 00 00 06 01 0a 20 20 00 f8 '............  ..'
+Checksum: 0xf8
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

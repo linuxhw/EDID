@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004e140d0801000000
-0c200103b42c177828ee91a3544c9926
-0f5054bfef003140814061407140714f
-81c081809500332640a060841a303020
-3500b3ed1000001ebf2f40a060841a30
-30203500000000000000000000fd0030
-4b1e5514000a202020202020000000fc
-0053636570747265204a32300a2001fd
-020327f1450413031201230907078301
-0000e305c00067030c0010003828681a
-00000101304bed7f2156aa51001e3046
-8f330000000000001eb90b80a020e029
-103020350012222100001e0000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000bf
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4e 14 0d 08 01 00 00 00
+0c 20 01 03 b4 2c 17 78 28 ee 91 a3 54 4c 99 26
+0f 50 54 bf ef 00 31 40 81 40 61 40 71 40 71 4f
+81 c0 81 80 95 00 33 26 40 a0 60 84 1a 30 30 20
+35 00 b3 ed 10 00 00 1e bf 2f 40 a0 60 84 1a 30
+30 20 35 00 00 00 00 00 00 00 00 00 00 fd 00 30
+4b 1e 55 14 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 63 65 70 74 72 65 20 4a 32 30 0a 20 01 fd
+
+02 03 27 f1 45 04 13 03 12 01 23 09 07 07 83 01
+00 00 e3 05 c0 00 67 03 0c 00 10 00 38 28 68 1a
+00 00 01 01 30 4b ed 7f 21 56 aa 51 00 1e 30 46
+8f 33 00 00 00 00 00 00 1e b9 0b 80 a0 20 e0 29
+10 30 20 35 00 12 22 21 00 00 1e 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 bf
 
 00 ff ff ff ff ff ff 00 4e 14 0d 08 01 00 00 00
 0c 20 01 03 b4 2c 17 78 28 ee 91 a3 54 4c 99 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SPT
     Model: 2061
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 12 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -138,3 +137,94 @@ Block 1, CTA-861 Extension Block:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol P
 Checksum: 0xbf  Unused space in Extension Block: 52 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4e 14 0d 08 01 00 00 00 '........N.......'
+  0c 20 01 03 b4 2c 17 78 28 ee 91 a3 54 4c 99 26 '. ...,.x(...TL.&'
+  0f 50 54 bf ef 00 31 40 81 40 61 40 71 40 71 4f '.PT...1@.@a@q@qO'
+  81 c0 81 80 95 00 33 26 40 a0 60 84 1a 30 30 20 '......3&@.`..00 '
+  35 00 b3 ed 10 00 00 1e bf 2f 40 a0 60 84 1a 30 '5......../@.`..0'
+  30 20 35 00 00 00 00 00 00 00 00 00 00 fd 00 30 '0 5............0'
+  4b 1e 55 14 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.U...      ....'
+  00 53 63 65 70 74 72 65 20 4a 32 30 0a 20 01 fd '.Sceptre J20. ..'
+Checksum: 0xfd
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Colorimetry Data Block:
+    BT2020YCC
+    BT2020RGB
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 200 MHz
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 1.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 75 Hz
+    Flags 1.x: 0xed (MCCS)
+  Detailed Timing Descriptors:
+    DTD 5:  1366x768    59.964364 Hz 683:384   47.852 kHz     85.750000 MHz
+                 Hfront   70 Hsync 143 Hback  213 Hpol P
+                 Vfront    3 Vsync   3 Vback   24 Vpol P
+    DTD 6:   640x480    72.000960 Hz   4:3     37.513 kHz     30.010000 MHz (530 mm x 290 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+Checksum: 0xbf  Unused space in Extension Block: 52 bytes
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x34.
+  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #4: Mismatch of image size 530x290 mm vs display size 440x230 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #5: Mismatch of image size vs display size: image size is not set, but display size is.
+  Detailed Timing Descriptor #6: Mismatch of image size 530x290 mm vs display size 440x230 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: The DTD max image size is 530x290mm, which is larger than the display size 440.0x230.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

@@ -1,0 +1,77 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 52 44 00 00 00 00
+00 15 01 03 80 22 13 78 0a 09 25 92 57 54 8f 29
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 41 1c 56 a0 50 00 16 30 30 20
+25 00 58 c2 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 1e b4 02 74 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 4c a3 41 54 00 00 00 fe
+00 4c 54 4e 31 35 36 41 54 32 30 4c 30 31 00 4a
+
+00 ff ff ff ff ff ff 00 4c a3 52 44 00 00 00 00
+00 15 01 03 80 22 13 78 0a 09 25 92 57 54 8f 29
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 41 1c 56 a0 50 00 16 30 30 20
+25 00 58 c2 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 1e b4 02 74 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 4c a3 41 54 00 00 00 fe
+00 4c 54 4e 31 35 36 41 54 32 30 4c 30 31 00 4a
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 17490
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5703, 0.3398
+    Green: 0.3300, 0.5595
+    Blue : 0.1601, 0.1347
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.998009 Hz 683:384   47.398 kHz     72.330000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    2 Vsync   5 Vback   15 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 1e b4 02 74 00 '..............t.'
+    Alphanumeric Data String: 'SAMSUNG'
+    Alphanumeric Data String: 'LTN156AT20L01'
+Checksum: 0x4a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c a3 52 44 00 00 00 00 '........L.RD....'
+  00 15 01 03 80 22 13 78 0a 09 25 92 57 54 8f 29 '.....".x..%.WT.)'
+  22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '"PT.............'
+  01 01 01 01 01 01 41 1c 56 a0 50 00 16 30 30 20 '......A.V.P..00 '
+  25 00 58 c2 10 00 00 19 00 00 00 0f 00 00 00 00 '%.X.............'
+  00 00 00 00 00 1e b4 02 74 00 00 00 00 fe 00 53 '........t......S'
+  41 4d 53 55 4e 47 0a 20 4c a3 41 54 00 00 00 fe 'AMSUNG. L.AT....'
+  00 4c 54 4e 31 35 36 41 54 32 30 4c 30 31 00 4a '.LTN156AT20L01.J'
+Checksum: 0x4a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-space after newline.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

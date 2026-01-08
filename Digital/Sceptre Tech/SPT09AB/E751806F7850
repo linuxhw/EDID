@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004e14ab0901000000
-12200104a5351d782262b5a15957a226
-0c5054bfef0081c08100814081809500
-a9c07140b300023a801871382d40582c
-45000e282100001e662156aa51001e30
-468f33000e282100001e2a4480a07038
-2740302035000e282100001e000000fc
-0053636570747265204632340a200089
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4e 14 ab 09 01 00 00 00
+12 20 01 04 a5 35 1d 78 22 62 b5 a1 59 57 a2 26
+0c 50 54 bf ef 00 81 c0 81 00 81 40 81 80 95 00
+a9 c0 71 40 b3 00 02 3a 80 18 71 38 2d 40 58 2c
+45 00 0e 28 21 00 00 1e 66 21 56 aa 51 00 1e 30
+46 8f 33 00 0e 28 21 00 00 1e 2a 44 80 a0 70 38
+27 40 30 20 35 00 0e 28 21 00 00 1e 00 00 00 fc
+00 53 63 65 70 74 72 65 20 46 32 34 0a 20 00 89
 
 00 ff ff ff ff ff ff 00 4e 14 ab 09 01 00 00 00
 12 20 01 04 a5 35 1d 78 22 62 b5 a1 59 57 a2 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SPT
     Model: 2475
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 18 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -79,3 +77,27 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   31 Vpol P
     Display Product Name: 'Sceptre F24'
 Checksum: 0x89
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4e 14 ab 09 01 00 00 00 '........N.......'
+  12 20 01 04 a5 35 1d 78 22 62 b5 a1 59 57 a2 26 '. ...5.x"b..YW.&'
+  0c 50 54 bf ef 00 81 c0 81 00 81 40 81 80 95 00 '.PT........@....'
+  a9 c0 71 40 b3 00 02 3a 80 18 71 38 2d 40 58 2c '..q@...:..q8-@X,'
+  45 00 0e 28 21 00 00 1e 66 21 56 aa 51 00 1e 30 'E..(!...f!V.Q..0'
+  46 8f 33 00 0e 28 21 00 00 1e 2a 44 80 a0 70 38 'F.3..(!...*D..p8'
+  27 40 30 20 35 00 0e 28 21 00 00 1e 00 00 00 fc ''@0 5..(!.......'
+  00 53 63 65 70 74 72 65 20 46 32 34 0a 20 00 89 '.Sceptre F24. ..'
+Checksum: 0x89
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

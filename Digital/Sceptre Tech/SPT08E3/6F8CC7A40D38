@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004e14e30801000000
-0c20010380301a7828ee91a3544c9926
-0f505421090031404540614081c08180
-9500b300454f023a801871382d40582c
-4500e0041100001e000000fd00304b1e
-5510000a202020202020000000ff0030
-303030303030303030303031000000fc
-0053636570747265204632320a200149
-020321c149901f051413040302012309
-07078301000067030c000000001ee200
-0f011d8018711c1620582c2500c48e21
-00009e00000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000075
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4e 14 e3 08 01 00 00 00
+0c 20 01 03 80 30 1a 78 28 ee 91 a3 54 4c 99 26
+0f 50 54 21 09 00 31 40 45 40 61 40 81 c0 81 80
+95 00 b3 00 45 4f 02 3a 80 18 71 38 2d 40 58 2c
+45 00 e0 04 11 00 00 1e 00 00 00 fd 00 30 4b 1e
+55 10 00 0a 20 20 20 20 20 20 00 00 00 ff 00 30
+30 30 30 30 30 30 30 30 30 30 30 31 00 00 00 fc
+00 53 63 65 70 74 72 65 20 46 32 32 0a 20 01 49
+
+02 03 21 c1 49 90 1f 05 14 13 04 03 02 01 23 09
+07 07 83 01 00 00 67 03 0c 00 00 00 00 1e e2 00
+0f 01 1d 80 18 71 1c 16 20 58 2c 25 00 c4 8e 21
+00 00 9e 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 75
 
 00 ff ff ff ff ff ff 00 4e 14 e3 08 01 00 00 00
 0c 20 01 03 80 30 1a 78 28 ee 91 a3 54 4c 99 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SPT
     Model: 2275
-    Serial Number: 1
+    Serial Number: ...
     Made in: week 12 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -77,7 +76,7 @@ Block 0, Base EDID:
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
       Monitor ranges (GTF): 48-75 Hz V, 30-85 kHz H, max dotclock 160 MHz
-    Display Product Serial Number: '0000000000001'
+    Display Product Serial Number: ...
     Display Product Name: 'Sceptre F22'
   Extension blocks: 1
 Checksum: 0x49
@@ -122,4 +121,99 @@ Block 1, CTA-861 Extension Block:
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
 Checksum: 0x75  Unused space in Extension Block: 76 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4e 14 e3 08 01 00 00 00 '........N.......'
+  0c 20 01 03 80 30 1a 78 28 ee 91 a3 54 4c 99 26 '. ...0.x(...TL.&'
+  0f 50 54 21 09 00 31 40 45 40 61 40 81 c0 81 80 '.PT!..1@E@a@....'
+  95 00 b3 00 45 4f 02 3a 80 18 71 38 2d 40 58 2c '....EO.:..q8-@X,'
+  45 00 e0 04 11 00 00 1e 00 00 00 fd 00 30 4b 1e 'E............0K.'
+  55 10 00 0a 20 20 20 20 20 20 00 00 00 ff 00 30 'U...      .....0'
+  30 30 30 30 30 30 30 30 30 30 30 31 00 00 00 fc '000000000001....'
+  00 53 63 65 70 74 72 65 20 46 32 32 0a 20 01 49 '.Sceptre F22. .I'
+Checksum: 0x49
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 0.0.0.0
+    Maximum TMDS clock: 150 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+Checksum: 0x75  Unused space in Extension Block: 76 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #2: Mismatch of image size 708x398 mm vs display size 480x260 mm.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #3: Mismatch of image size 708x398 mm vs display size 480x260 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 79.976 kHz (Monitor: 30.000 - 85.000 kHz)
+  Base EDID: The DTD max image size is 708x398mm, which is larger than the display size 480.0x260.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

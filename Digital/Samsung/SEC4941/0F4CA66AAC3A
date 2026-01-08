@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004ca3414900000000
-00120103801a10780a87f594574f8c27
-27505400000001010101010101010101
-010101010101121b0087502010301030
-130005a3100000190000000f00000000
-00000000002387026400000000fe0053
-414d53554e470a2020202020000000fe
-00313231415430322d4130310a200018
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 41 49 00 00 00 00
+00 12 01 03 80 1a 10 78 0a 87 f5 94 57 4f 8c 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 00 87 50 20 10 30 10 30
+13 00 05 a3 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 23 87 02 64 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe
+00 31 32 31 41 54 30 32 2d 41 30 31 0a 20 00 18
 
 00 ff ff ff ff ff ff 00 4c a3 41 49 00 00 00 00
 00 12 01 03 80 1a 10 78 0a 87 f5 94 57 4f 8c 27
@@ -49,3 +47,30 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'SAMSUNG'
     Alphanumeric Data String: '121AT02-A01'
 Checksum: 0x18
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c a3 41 49 00 00 00 00 '........L.AI....'
+  00 12 01 03 80 1a 10 78 0a 87 f5 94 57 4f 8c 27 '.......x....WO.''
+  27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ''PT.............'
+  01 01 01 01 01 01 12 1b 00 87 50 20 10 30 10 30 '..........P .0.0'
+  13 00 05 a3 10 00 00 19 00 00 00 0f 00 00 00 00 '................'
+  00 00 00 00 00 23 87 02 64 00 00 00 00 fe 00 53 '.....#..d......S'
+  41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe 'AMSUNG.     ....'
+  00 31 32 31 41 54 30 32 2d 41 30 31 0a 20 00 18 '.121AT02-A01. ..'
+Checksum: 0x18
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

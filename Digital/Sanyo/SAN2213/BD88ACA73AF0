@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004c2e1322cd332206
-0a150103e82c19782ac905a3574b9c25
-125054afcf0081408180a9c09500950f
-950a950c0101792e4010628420307098
-1300bbf91000001c662150b051001b30
-4070360030e41000001a000000fd0038
-4c1f5311000a202020202020000000fc
-004c4544204d4f4e49544f520a20010e
-02031841458403020110230907078301
-000065030c001000011d007251d01e20
-6e28550010090000001e011d007251d0
-1e206e28550010090000001e8c0ad08a
-20e02d10103e96001009000000180000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000001d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2e 13 22 cd 33 22 06
+0a 15 01 03 e8 2c 19 78 2a c9 05 a3 57 4b 9c 25
+12 50 54 af cf 00 81 40 81 80 a9 c0 95 00 95 0f
+95 0a 95 0c 01 01 79 2e 40 10 62 84 20 30 70 98
+13 00 bb f9 10 00 00 1c 66 21 50 b0 51 00 1b 30
+40 70 36 00 30 e4 10 00 00 1a 00 00 00 fd 00 38
+4c 1f 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4c 45 44 20 4d 4f 4e 49 54 4f 52 0a 20 01 0e
+
+02 03 18 41 45 84 03 02 01 10 23 09 07 07 83 01
+00 00 65 03 0c 00 10 00 01 1d 00 72 51 d0 1e 20
+6e 28 55 00 10 09 00 00 00 1e 01 1d 00 72 51 d0
+1e 20 6e 28 55 00 10 09 00 00 00 1e 8c 0a d0 8a
+20 e0 2d 10 10 3e 96 00 10 09 00 00 00 18 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1d
 
 00 ff ff ff ff ff ff 00 4c 2e 13 22 cd 33 22 06
 0a 15 01 03 e8 2c 19 78 2a c9 05 a3 57 4b 9c 25
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAN
     Model: 8723
-    Serial Number: 102904781
+    Serial Number: ...
     Made in: week 10 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -124,3 +123,92 @@ Block 1, CTA-861 Extension Block:
                  Hfront   16 Hsync  62 Hback   60 Hpol N
                  Vfront    9 Vsync   6 Vback   30 Vpol N
 Checksum: 0x1d  Unused space in Extension Block: 49 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2e 13 22 cd 33 22 06 '........L..".3".'
+  0a 15 01 03 e8 2c 19 78 2a c9 05 a3 57 4b 9c 25 '.....,.x*...WK.%'
+  12 50 54 af cf 00 81 40 81 80 a9 c0 95 00 95 0f '.PT....@........'
+  95 0a 95 0c 01 01 79 2e 40 10 62 84 20 30 70 98 '......y.@.b. 0p.'
+  13 00 bb f9 10 00 00 1c 66 21 50 b0 51 00 1b 30 '........f!P.Q..0'
+  40 70 36 00 30 e4 10 00 00 1a 00 00 00 fd 00 38 '@p6.0..........8'
+  4c 1f 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 4c 45 44 20 4d 4f 4e 49 54 4f 52 0a 20 01 0e '.LED MONITOR. ..'
+Checksum: 0x0e
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Detailed Timing Descriptors:
+    DTD 6:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (16 mm x 9 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 7:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (16 mm x 9 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 8:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (16 mm x 9 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+Checksum: 0x1d  Unused space in Extension Block: 49 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x27.
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x68.
+  Detailed Timing Descriptor #2: Mismatch of image size 304x228 mm vs display size 440x250 mm.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Mismatch of image size 16x9 mm vs display size 440x250 mm.
+  Detailed Timing Descriptor #4: Mismatch of image size 16x9 mm vs display size 440x250 mm.
+  Detailed Timing Descriptor #5: Mismatch of image size 16x9 mm vs display size 440x250 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 16.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Detailed Timing Descriptor #6: Mismatch of image size 16x9 mm vs display size 440x250 mm.
+  Detailed Timing Descriptor #7: Mismatch of image size 16x9 mm vs display size 440x250 mm.
+  Detailed Timing Descriptor #8: Mismatch of image size 16x9 mm vs display size 440x250 mm.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

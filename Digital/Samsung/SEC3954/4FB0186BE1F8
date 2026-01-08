@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004ca3543900000000
-00130103802213780a09259257548f29
-22505400000001010101010101010101
-010101010101411c56a0500016303020
-250058c1100000190000000f00000000
-00000000001eb4021500000000fe0053
-414d53554e470a2020202020000000fe
-00313536415431392d4630310a20004e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 54 39 00 00 00 00
+00 13 01 03 80 22 13 78 0a 09 25 92 57 54 8f 29
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 41 1c 56 a0 50 00 16 30 30 20
+25 00 58 c1 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 1e b4 02 15 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe
+00 31 35 36 41 54 31 39 2d 46 30 31 0a 20 00 4e
 
 00 ff ff ff ff ff ff 00 4c a3 54 39 00 00 00 00
 00 13 01 03 80 22 13 78 0a 09 25 92 57 54 8f 29
@@ -49,3 +47,30 @@ Block 0, Base EDID:
     Alphanumeric Data String: 'SAMSUNG'
     Alphanumeric Data String: '156AT19-F01'
 Checksum: 0x4e
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c a3 54 39 00 00 00 00 '........L.T9....'
+  00 13 01 03 80 22 13 78 0a 09 25 92 57 54 8f 29 '.....".x..%.WT.)'
+  22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '"PT.............'
+  01 01 01 01 01 01 41 1c 56 a0 50 00 16 30 30 20 '......A.V.P..00 '
+  25 00 58 c1 10 00 00 19 00 00 00 0f 00 00 00 00 '%.X.............'
+  00 00 00 00 00 1e b4 02 15 00 00 00 00 fe 00 53 '...............S'
+  41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe 'AMSUNG.     ....'
+  00 31 35 36 41 54 31 39 2d 46 30 31 0a 20 00 4e '.156AT19-F01. .N'
+Checksum: 0x4e
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

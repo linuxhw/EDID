@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004c83794100000000
-00200104b5221378010cf1ae523cb923
-0c505400000001010101010101010101
-01010101010163700090a1a0b4502008
-880058c21000001b000000fd0c30f085
-856c0100000000000000000000000000
-000000000000000100000000000000fe
-0041544e413536325030322d302001f3
-702079020020000cba41597941000000
-0000160021001d700d9407000aa00500
-e00a52cc03b93cc20c004554405ed060
-d01c2278260009070703000000500000
-220014bf5f1084ff09c70027001f009f
-05b3000d00050081000be3058000e606
-05017460070000000000000000000000
-00000000000000000000000000009e90
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 83 79 41 00 00 00 00
+00 20 01 04 b5 22 13 78 01 0c f1 ae 52 3c b9 23
+0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 63 70 00 90 a1 a0 b4 50 20 08
+88 00 58 c2 10 00 00 1b 00 00 00 fd 0c 30 f0 85
+85 6c 01 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 fe
+00 41 54 4e 41 35 36 32 50 30 32 2d 30 20 01 f3
+
+70 20 79 02 00 20 00 0c ba 41 59 79 41 00 00 00
+00 00 16 00 21 00 1d 70 0d 94 07 00 0a a0 05 00
+e0 0a 52 cc 03 b9 3c c2 0c 00 45 54 40 5e d0 60
+d0 1c 22 78 26 00 09 07 07 03 00 00 00 50 00 00
+22 00 14 bf 5f 10 84 ff 09 c7 00 27 00 1f 00 9f
+05 b3 00 0d 00 05 00 81 00 0b e3 05 80 00 e6 06
+05 01 74 60 07 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 9e 90
 
 00 ff ff ff ff ff ff 00 4c 83 79 41 00 00 00 00
 00 20 01 04 b5 22 13 78 01 0c f1 ae 52 3c b9 23
@@ -122,3 +121,103 @@ Block 1, DisplayID Extension Block:
     Desired content min luminance: 7 (0.005 cd/m^2)
   Checksum: 0x9e
 Checksum: 0x90
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 83 79 41 00 00 00 00 '........L.yA....'
+  00 20 01 04 b5 22 13 78 01 0c f1 ae 52 3c b9 23 '. ...".x....R<.#'
+  0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 63 70 00 90 a1 a0 b4 50 20 08 '......cp.....P .'
+  88 00 58 c2 10 00 00 1b 00 00 00 fd 0c 30 f0 85 '..X..........0..'
+  85 6c 01 00 00 00 00 00 00 00 00 00 00 00 00 00 '.l..............'
+  00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 fe '................'
+  00 41 54 4e 41 35 36 32 50 30 32 2d 30 20 01 f3 '.ATNA562P02-0 ..'
+Checksum: 0xf3
+
+----------------
+
+Block 3, DisplayID Extension Block:
+  Version: 2.0
+  Extension Count: 0
+  Product Identification Data Block (0x20), OUI BA-41-59:
+    Product Code: 16761
+    Year of Manufacture: 2022
+  Display Parameters Data Block (0x21):
+    Image size: 344.0 mm x 194.0 mm
+    Display native pixel format: 2560x1440
+    Scan Orientation: Left to Right, Top to Bottom
+    Luminance Information: Minimum guaranteed value
+    Color Information: CIE 1931
+    Audio Speaker Information: integrated
+    Native Color Chromaticity:
+      Primary #1:  (0.679688, 0.320312)
+      Primary #2:  (0.237305, 0.722656)
+      Primary #3:  (0.139648, 0.049805)
+      White Point: (0.312500, 0.329102)
+    Native Maximum Luminance (Full Coverage): 400.000000 cd/m^2
+    Native Maximum Luminance (10% Rectangular Coverage): 616.000000 cd/m^2
+    Native Minimum Luminance: 0.004700 cd/m^2
+    Native Color Depth: 10 bpc
+    Display Device Technology: Organic LED
+    Native Gamma EOTF: 2.20
+  Display Interface Features Data Block:
+    Supported bpc for RGB encoding: 6, 8, 10
+    Supported bpc for YCbCr 4:4:4 encoding: 6, 8, 10
+    Supported bpc for YCbCr 4:2:2 encoding: 8, 10
+    Supported color space and EOTF standard combination 1: DCI-P3, BT.2020/SMPTE ST 2084
+  Video Timing Modes Type 7 - Detailed Timings Data Block:
+    DTD:  2560x1440  240.000000 Hz  16:9    388.800 kHz   1073.088000 MHz (aspect 16:9, no 3D stereo, preferred)
+               Hfront   40 Hsync  32 Hback  128 Hpol N
+               Vfront   14 Vsync   6 Vback  160 Vpol N
+  CTA-861 DisplayID Data Block:
+  Colorimetry Data Block:
+    BT2020RGB
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 116 (616.884 cd/m^2)
+    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
+    Desired content min luminance: 7 (0.005 cd/m^2)
+  Checksum: 0x9e
+Checksum: 0x90
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+Block 1, DisplayID Extension Block:
+  Product Identification Data Block (0x20), OUI BA-41-59: Unknown OUI BA-41-59.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+Block 3, DisplayID Extension Block:
+  Product Identification Data Block (0x20), OUI BA-41-59: Unknown OUI BA-41-59.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 97.199 - 388.800 kHz (Monitor: 388.000 - 388.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
+  Display Range Limits: Bytes 12-17 must be 0x20.
+  Alphanumeric Data String: One or more trailing spaces.
+Block 1, DisplayID Extension Block:
+  Expected 0 DisplayID Extension Block, but got 1.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, DisplayID Extension Block:
+  Product Type should be 0 in extension block.
+  Product Identification Data Block (0x20), OUI BA-41-59: Product Identification Data Block (0x20), OUI BA-41-59 is required to be the first DisplayID Data Block.
+  Display Parameters Data Block (0x21): Duplicate Display Parameters Data Block.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL
