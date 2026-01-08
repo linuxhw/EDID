@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2d960a30334354
-30160104a529177822d6c1a357539f27
-0b5054bdee0081c00101010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e6419004041002630
-188836009ae610000018000000fd003c
-4b1e3d0a000a202020202020000000fc
-00543139433330300a2020202020003b
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 96 0a 30 33 43 54
+30 16 01 04 a5 29 17 78 22 d6 c1 a3 57 53 9f 27
+0b 50 54 bd ee 00 81 c0 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 64 19 00 40 41 00 26 30
+18 88 36 00 9a e6 10 00 00 18 00 00 00 fd 00 3c
+4b 1e 3d 0a 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 54 31 39 43 33 30 30 0a 20 20 20 20 20 00 3b
 
 00 ff ff ff ff ff ff 00 4c 2d 96 0a 30 33 43 54
 30 16 01 04 a5 29 17 78 22 d6 c1 a3 57 53 9f 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 2710
-    Serial Number: 1413690160
+    Serial Number: ...
     Made in: week 48 of 2012
   Basic Display Parameters & Features:
     Digital display
@@ -70,4 +68,33 @@ Block 0, Base EDID:
     Display Product Name: 'T19C300'
 Checksum: 0x3b
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d 96 0a 30 33 43 54 '........L-..03CT'
+  30 16 01 04 a5 29 17 78 22 d6 c1 a3 57 53 9f 27 '0....).x"...WS.''
+  0b 50 54 bd ee 00 81 c0 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 64 19 00 40 41 00 26 30 '3.......d..@A.&0'
+  18 88 36 00 9a e6 10 00 00 18 00 00 00 fd 00 3c '..6............<'
+  4b 1e 3d 0a 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.=...      ....'
+  00 54 31 39 43 33 30 30 0a 20 20 20 20 20 00 3b '.T19C300.     .;'
+Checksum: 0x3b
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

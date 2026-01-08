@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004c2d620c00000000
-1119010380461f780a5295a556549d25
-0e5054bfef80714f810081c081809500
-a9c0b3000101584d00b8a1381440f82c
-4500bc362100001e023a801871382d40
-582c4500bc362100001e000000fd0018
-4b1e5a17000a202020202020000000fc
-005345373930430a2020202020200179
-02031ef0495a10041f13031220222309
-07078301000067030c001000802d023a
-80d072382d40102c4580bc362100001e
-011d007251d01e206e285500bc362100
-001e011d00bc52d01e20b8285540bc36
-2100001e000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000fc
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 62 0c 00 00 00 00
+11 19 01 03 80 46 1f 78 0a 52 95 a5 56 54 9d 25
+0e 50 54 bf ef 80 71 4f 81 00 81 c0 81 80 95 00
+a9 c0 b3 00 01 01 58 4d 00 b8 a1 38 14 40 f8 2c
+45 00 bc 36 21 00 00 1e 02 3a 80 18 71 38 2d 40
+58 2c 45 00 bc 36 21 00 00 1e 00 00 00 fd 00 18
+4b 1e 5a 17 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 45 37 39 30 43 0a 20 20 20 20 20 20 01 79
+
+02 03 1e f0 49 5a 10 04 1f 13 03 12 20 22 23 09
+07 07 83 01 00 00 67 03 0c 00 10 00 80 2d 02 3a
+80 d0 72 38 2d 40 10 2c 45 80 bc 36 21 00 00 1e
+01 1d 00 72 51 d0 1e 20 6e 28 55 00 bc 36 21 00
+00 1e 01 1d 00 bc 52 d0 1e 20 b8 28 55 40 bc 36
+21 00 00 1e 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc
 
 00 ff ff ff ff ff ff 00 4c 2d 62 0c 00 00 00 00
 11 19 01 03 80 46 1f 78 0a 52 95 a5 56 54 9d 25
@@ -134,3 +133,94 @@ Block 1, CTA-861 Extension Block:
                  Hfront  440 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
 Checksum: 0xfc  Unused space in Extension Block: 43 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d 62 0c 00 00 00 00 '........L-b.....'
+  11 19 01 03 80 46 1f 78 0a 52 95 a5 56 54 9d 25 '.....F.x.R..VT.%'
+  0e 50 54 bf ef 80 71 4f 81 00 81 c0 81 80 95 00 '.PT...qO........'
+  a9 c0 b3 00 01 01 58 4d 00 b8 a1 38 14 40 f8 2c '......XM...8.@.,'
+  45 00 bc 36 21 00 00 1e 02 3a 80 18 71 38 2d 40 'E..6!....:..q8-@'
+  58 2c 45 00 bc 36 21 00 00 1e 00 00 00 fd 00 18 'X,E..6!.........'
+  4b 1e 5a 17 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Z...      ....'
+  00 53 45 37 39 30 43 0a 20 20 20 20 20 20 01 79 '.SE790C.      .y'
+Checksum: 0x79
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  90:  2560x1080   60.000000 Hz  64:27    66.000 kHz    198.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    Supports_AI
+    Maximum TMDS clock: 225 MHz
+  Detailed Timing Descriptors:
+    DTD 6:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (700 mm x 310 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 7:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (700 mm x 310 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 8:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (700 mm x 310 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+Checksum: 0xfc  Unused space in Extension Block: 43 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 90.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 32.
+  Video Data Block: Duplicate VIC 34.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 27.000 - 79.976 kHz (Monitor: 30.000 - 90.000 kHz)
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

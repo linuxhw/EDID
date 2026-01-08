@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004c2dc90b33354c30
-0a1b0104b53c22783a51e1a9554da125
-0d5054bfef80714f810081c08180a9c0
-b30095000101565e00a0a0a029503020
-350056502100001a000000fd00384b1e
-5a19000a202020202020000000fc0053
-3237443835300a2020202020000000ff
-004854504a3330303335320a20200150
-02030ef041102309070783010000023a
-801871382d40582c450056502100001e
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000056
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d c9 0b 33 35 4c 30
+0a 1b 01 04 b5 3c 22 78 3a 51 e1 a9 55 4d a1 25
+0d 50 54 bf ef 80 71 4f 81 00 81 c0 81 80 a9 c0
+b3 00 95 00 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 56 50 21 00 00 1a 00 00 00 fd 00 38 4b 1e
+5a 19 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53
+32 37 44 38 35 30 0a 20 20 20 20 20 00 00 00 ff
+00 48 54 50 4a 33 30 30 33 35 32 0a 20 20 01 50
+
+02 03 0e f0 41 10 23 09 07 07 83 01 00 00 02 3a
+80 18 71 38 2d 40 58 2c 45 00 56 50 21 00 00 1e
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 56
 
 00 ff ff ff ff ff ff 00 4c 2d c9 0b 33 35 4c 30
 0a 1b 01 04 b5 3c 22 78 3a 51 e1 a9 55 4d a1 25
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 3017
-    Serial Number: 810300723
+    Serial Number: ...
     Made in: week 10 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -91,7 +90,7 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-90 kHz H, max dotclock 250 MHz
     Display Product Name: 'S27D850'
-    Display Product Serial Number: 'HTPJ300352'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x50
 
@@ -119,4 +118,70 @@ Block 1, CTA-861 Extension Block:
                  Vfront    4 Vsync   5 Vback   36 Vpol P
 Checksum: 0x56  Unused space in Extension Block: 95 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d c9 0b 33 35 4c 30 '........L-..35L0'
+  0a 1b 01 04 b5 3c 22 78 3a 51 e1 a9 55 4d a1 25 '.....<"x:Q..UM.%'
+  0d 50 54 bf ef 80 71 4f 81 00 81 c0 81 80 a9 c0 '.PT...qO........'
+  b3 00 95 00 01 01 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
+  35 00 56 50 21 00 00 1a 00 00 00 fd 00 38 4b 1e '5.VP!........8K.'
+  5a 19 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53 'Z...      .....S'
+  32 37 44 38 35 30 0a 20 20 20 20 20 00 00 00 ff '27D850.     ....'
+  00 48 54 50 4a 33 30 30 33 35 32 0a 20 20 01 50 '.HTPJ300352.  .P'
+Checksum: 0x50
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+Checksum: 0x56  Unused space in Extension Block: 95 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL
