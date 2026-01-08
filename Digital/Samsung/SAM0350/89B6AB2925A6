@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2d50033931594d
-1012010380291a782a80c5a657499b23
-125054bfef809500950f81808140714f
-0101010101019a29a0d0518422305098
-3600acff1000001c000000fd00384b1e
-510e000a202020202020000000fc0053
-796e634d61737465720a2020000000ff
-00485143513430303737350a2020009f
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 50 03 39 31 59 4d
+10 12 01 03 80 29 1a 78 2a 80 c5 a6 57 49 9b 23
+12 50 54 bf ef 80 95 00 95 0f 81 80 81 40 71 4f
+01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98
+36 00 ac ff 10 00 00 1c 00 00 00 fd 00 38 4b 1e
+51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53
+79 6e 63 4d 61 73 74 65 72 0a 20 20 00 00 00 ff
+00 48 51 43 51 34 30 30 37 37 35 0a 20 20 00 9f
 
 00 ff ff ff ff ff ff 00 4c 2d 50 03 39 31 59 4d
 10 12 01 03 80 29 1a 78 2a 80 c5 a6 57 49 9b 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 848
-    Serial Number: 1297690937
+    Serial Number: ...
     Made in: week 16 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -70,5 +68,32 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-81 kHz H, max dotclock 140 MHz
     Display Product Name: 'SyncMaster'
-    Display Product Serial Number: 'HQCQ400775'
+    Display Product Serial Number: ...
 Checksum: 0x9f
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d 50 03 39 31 59 4d '........L-P.91YM'
+  10 12 01 03 80 29 1a 78 2a 80 c5 a6 57 49 9b 23 '.....).x*...WI.#'
+  12 50 54 bf ef 80 95 00 95 0f 81 80 81 40 71 4f '.PT..........@qO'
+  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
+  36 00 ac ff 10 00 00 1c 00 00 00 fd 00 38 4b 1e '6............8K.'
+  51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53 'Q...      .....S'
+  79 6e 63 4d 61 73 74 65 72 0a 20 20 00 00 00 ff 'yncMaster.  ....'
+  00 48 51 43 51 34 30 30 37 37 35 0a 20 20 00 9f '.HQCQ400775.  ..'
+Checksum: 0x9f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 428x255 mm vs display size 410x260 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 428x255mm, which is larger than the display size 410.0x260.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

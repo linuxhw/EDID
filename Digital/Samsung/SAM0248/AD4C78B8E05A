@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2d48023931424d
-2210010380261e782aee95a3544c9926
-0f5054bfef8081808140714f01010101
-010101010101302a009851002a403070
-1300782d1100001e000000fd00384b1e
-510e000a202020202020000000fc0053
-796e634d61737465720a2020000000ff
-004856594c3830343738320a202000a9
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 48 02 39 31 42 4d
+22 10 01 03 80 26 1e 78 2a ee 95 a3 54 4c 99 26
+0f 50 54 bf ef 80 81 80 81 40 71 4f 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53
+79 6e 63 4d 61 73 74 65 72 0a 20 20 00 00 00 ff
+00 48 56 59 4c 38 30 34 37 38 32 0a 20 20 00 a9
 
 00 ff ff ff ff ff ff 00 4c 2d 48 02 39 31 42 4d
 22 10 01 03 80 26 1e 78 2a ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 584
-    Serial Number: 1296183609
+    Serial Number: ...
     Made in: week 34 of 2006
   Basic Display Parameters & Features:
     Digital display
@@ -68,5 +66,29 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-81 kHz H, max dotclock 140 MHz
     Display Product Name: 'SyncMaster'
-    Display Product Serial Number: 'HVYL804782'
+    Display Product Serial Number: ...
 Checksum: 0xa9
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d 48 02 39 31 42 4d '........L-H.91BM'
+  22 10 01 03 80 26 1e 78 2a ee 95 a3 54 4c 99 26 '"....&.x*...TL.&'
+  0f 50 54 bf ef 80 81 80 81 40 71 4f 01 01 01 01 '.PT......@qO....'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4b 1e '..x-.........8K.'
+  51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53 'Q...      .....S'
+  79 6e 63 4d 61 73 74 65 72 0a 20 20 00 00 00 ff 'yncMaster.  ....'
+  00 48 56 59 4c 38 30 34 37 38 32 0a 20 20 00 a9 '.HVYL804782.  ..'
+Checksum: 0xa9
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

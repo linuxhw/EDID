@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2d1e0137314a4d
-270e0104a5221b7822aaa5a654549926
-145054bfef808180714f010101010101
-010101010101302a009851002a403070
-1300520e1100001e000000fd00384b1e
-510e000a202020202020000000fc0053
-796e634d61737465720a2020000000ff
-00485347583930373437350a202000e2
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 1e 01 37 31 4a 4d
+27 0e 01 04 a5 22 1b 78 22 aa a5 a6 54 54 99 26
+14 50 54 bf ef 80 81 80 71 4f 01 01 01 01 01 01
+01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70
+13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1e
+51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53
+79 6e 63 4d 61 73 74 65 72 0a 20 20 00 00 00 ff
+00 48 53 47 58 39 30 37 34 37 35 0a 20 20 00 e2
 
 00 ff ff ff ff ff ff 00 4c 2d 1e 01 37 31 4a 4d
 27 0e 01 04 a5 22 1b 78 22 aa a5 a6 54 54 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SAM
     Model: 286
-    Serial Number: 1296707895
+    Serial Number: ...
     Made in: week 39 of 2004
   Basic Display Parameters & Features:
     Digital display
@@ -69,7 +67,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-81 kHz H, max dotclock 140 MHz
     Display Product Name: 'SyncMaster'
-    Display Product Serial Number: 'HSGX907475'
+    Display Product Serial Number: ...
 Checksum: 0xe2
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d 1e 01 37 31 4a 4d '........L-..71JM'
+  27 0e 01 04 a5 22 1b 78 22 aa a5 a6 54 54 99 26 ''....".x"...TT.&'
+  14 50 54 bf ef 80 81 80 71 4f 01 01 01 01 01 01 '.PT.....qO......'
+  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
+  13 00 52 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1e '..R..........8K.'
+  51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53 'Q...      .....S'
+  79 6e 63 4d 61 73 74 65 72 0a 20 20 00 00 00 ff 'yncMaster.  ....'
+  00 48 53 47 58 39 30 37 34 37 35 0a 20 20 00 e2 '.HSGX907475.  ..'
+Checksum: 0xe2
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

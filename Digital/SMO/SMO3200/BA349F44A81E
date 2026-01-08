@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004daf003201010101
-181b010380462778ea2d36a75438ae26
-0d4f54210800d1c0b30095008180a9c0
-810071408140023a801871382d40582c
-4500ba882100001e662150b051001b30
-407036009ae61000001e000000fd003c
-421e530f000a202020202020000000fc
-00534d333234500a20202020202000d6
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4d af 00 32 01 01 01 01
+18 1b 01 03 80 46 27 78 ea 2d 36 a7 54 38 ae 26
+0d 4f 54 21 08 00 d1 c0 b3 00 95 00 81 80 a9 c0
+81 00 71 40 81 40 02 3a 80 18 71 38 2d 40 58 2c
+45 00 ba 88 21 00 00 1e 66 21 50 b0 51 00 1b 30
+40 70 36 00 9a e6 10 00 00 1e 00 00 00 fd 00 3c
+42 1e 53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 4d 33 32 34 50 0a 20 20 20 20 20 20 00 d6
 
 00 ff ff ff ff ff ff 00 4d af 00 32 01 01 01 01
 18 1b 01 03 80 46 27 78 ea 2d 36 a7 54 38 ae 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SMO
     Model: 12800
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 24 of 2017
   Basic Display Parameters & Features:
     Digital display
@@ -65,3 +63,29 @@ Block 0, Base EDID:
       Monitor ranges (GTF): 60-66 Hz V, 30-83 kHz H, max dotclock 150 MHz
     Display Product Name: 'SM324P'
 Checksum: 0xd6
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4d af 00 32 01 01 01 01 '........M..2....'
+  18 1b 01 03 80 46 27 78 ea 2d 36 a7 54 38 ae 26 '.....F'x.-6.T8.&'
+  0d 4f 54 21 08 00 d1 c0 b3 00 95 00 81 80 a9 c0 '.OT!............'
+  81 00 71 40 81 40 02 3a 80 18 71 38 2d 40 58 2c '..q@.@.:..q8-@X,'
+  45 00 ba 88 21 00 00 1e 66 21 50 b0 51 00 1b 30 'E...!...f!P.Q..0'
+  40 70 36 00 9a e6 10 00 00 1e 00 00 00 fd 00 3c '@p6............<'
+  42 1e 53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 'B.S...      ....'
+  00 53 4d 33 32 34 50 0a 20 20 20 20 20 20 00 d6 '.SM324P.      ..'
+Checksum: 0xd6
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Mismatch of image size 410x230 mm vs display size 700x390 mm.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

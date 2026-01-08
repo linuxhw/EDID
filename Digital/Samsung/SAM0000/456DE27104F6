@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2d000000000000
-1e110103800f09780a00000000000000
-00000000000001010101010101010101
-0101010101019209201830e00d100003
-0100995c0000001e000000fd00384b14
-2803000a202020202020000000100020
-163000050a005c990000001c00000010
-00ffffffffffffffffffff00001c00d8
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d 00 00 00 00 00 00
+1e 11 01 03 80 0f 09 78 0a 00 00 00 00 00 00 00
+00 00 00 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 92 09 20 18 30 e0 0d 10 00 03
+01 00 99 5c 00 00 00 1e 00 00 00 fd 00 38 4b 14
+28 03 00 0a 20 20 20 20 20 20 00 00 00 10 00 20
+16 30 00 05 0a 00 5c 99 00 00 00 1c 00 00 00 10
+00 ff ff ff ff ff ff ff ff ff ff 00 00 1c 00 d8
 
 00 ff ff ff ff ff ff 00 4c 2d 00 00 00 00 00 00
 1e 11 01 03 80 0f 09 78 0a 00 00 00 00 00 00 00
@@ -52,4 +50,41 @@ Block 0, Base EDID:
     Dummy Descriptor:
 Checksum: 0xd8
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d 00 00 00 00 00 00 '........L-......'
+  1e 11 01 03 80 0f 09 78 0a 00 00 00 00 00 00 00 '.......x........'
+  00 00 00 00 00 00 01 01 01 01 01 01 01 01 01 01 '................'
+  01 01 01 01 01 01 92 09 20 18 30 e0 0d 10 00 03 '........ .0.....'
+  01 00 99 5c 00 00 00 1e 00 00 00 fd 00 38 4b 14 '...\.........8K.'
+  28 03 00 0a 20 20 20 20 20 20 00 00 00 10 00 20 '(...      ..... '
+  16 30 00 05 0a 00 5c 99 00 00 00 1c 00 00 00 10 '.0....\.........'
+  00 ff ff ff ff ff ff ff ff ff ff 00 00 1c 00 d8 '................'
+Checksum: 0xd8
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Dubious maximum image size (15x9 is smaller than 10x10 cm).
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: 0 values in the video timing:
+    Horizontal Active/Blanking 800/24
+    Horizontal Frontporch/Sync Width 0/3
+    Vertical Active/Blanking 480/13
+    Vertical Frontporch/Sync Width 0/1
+  Detailed Timing Descriptor #1: 0 or negative horizontal front porch.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Dummy Descriptor: Dummy block filled with garbage.
+  Missing Display Product Name.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

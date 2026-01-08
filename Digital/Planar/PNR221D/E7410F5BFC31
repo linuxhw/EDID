@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0041d21d2201010101
-0b13010380301e78ea7ac5a655489b26
-135054bfef80310a6146714f81c0814f
-8180950fb30021399030621a274068b0
-3600de2c1100001c000000fd00384b1e
-510f000a202020202020000000fc0050
-4e5220504c323231304d570a000000ff
-00424b3931314b30393530380a200024
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 d2 1d 22 01 01 01 01
+0b 13 01 03 80 30 1e 78 ea 7a c5 a6 55 48 9b 26
+13 50 54 bf ef 80 31 0a 61 46 71 4f 81 c0 81 4f
+81 80 95 0f b3 00 21 39 90 30 62 1a 27 40 68 b0
+36 00 de 2c 11 00 00 1c 00 00 00 fd 00 38 4b 1e
+51 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50
+4e 52 20 50 4c 32 32 31 30 4d 57 0a 00 00 00 ff
+00 42 4b 39 31 31 4b 30 39 35 30 38 0a 20 00 24
 
 00 ff ff ff ff ff ff 00 41 d2 1d 22 01 01 01 01
 0b 13 01 03 80 30 1e 78 ea 7a c5 a6 55 48 9b 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PNR
     Model: 8733
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 11 of 2009
   Basic Display Parameters & Features:
     Digital display
@@ -73,5 +71,36 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 30-81 kHz H, max dotclock 150 MHz
     Display Product Name: 'PNR PL2210MW'
-    Display Product Serial Number: 'BK911K09508'
+    Display Product Serial Number: ...
 Checksum: 0x24
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 d2 1d 22 01 01 01 01 '........A.."....'
+  0b 13 01 03 80 30 1e 78 ea 7a c5 a6 55 48 9b 26 '.....0.x.z..UH.&'
+  13 50 54 bf ef 80 31 0a 61 46 71 4f 81 c0 81 4f '.PT...1.aFqO...O'
+  81 80 95 0f b3 00 21 39 90 30 62 1a 27 40 68 b0 '......!9.0b.'@h.'
+  36 00 de 2c 11 00 00 1c 00 00 00 fd 00 38 4b 1e '6..,.........8K.'
+  51 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50 'Q...      .....P'
+  4e 52 20 50 4c 32 32 31 30 4d 57 0a 00 00 00 ff 'NR PL2210MW.....'
+  00 42 4b 39 31 31 4b 30 39 35 30 38 0a 20 00 24 '.BK911K09508. .$'
+Checksum: 0x24
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 29.190 - 79.976 kHz (Monitor: 30.000 - 81.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004ceec0115c8c3401
-2b20010381110a78eaf8d0a054478d23
-244d5400000001010101010101010101
-010101010101981c2088300018503c10
-a40020003500001e000000fc004c3031
-4e38410a202020202020000000000000
-00000000000000000000000000000010
-00000000000000000000000000000068
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c ee c0 11 5c 8c 34 01
+2b 20 01 03 81 11 0a 78 ea f8 d0 a0 54 47 8d 23
+24 4d 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 98 1c 20 88 30 00 18 50 3c 10
+a4 00 20 00 35 00 00 1e 00 00 00 fc 00 4c 30 31
+4e 38 41 0a 20 20 20 20 20 20 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 68
 
 00 ff ff ff ff ff ff 00 4c ee c0 11 5c 8c 34 01
 2b 20 01 03 81 11 0a 78 ea f8 d0 a0 54 47 8d 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: SGN
     Model: 4544
-    Serial Number: 20221020
+    Serial Number: ...
     Made in: week 43 of 2022
   Basic Display Parameters & Features:
     Digital display
@@ -52,3 +50,32 @@ Block 0, Base EDID:
     Empty Descriptor
     Dummy Descriptor:
 Checksum: 0x68
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c ee c0 11 5c 8c 34 01 '........L...\.4.'
+  2b 20 01 03 81 11 0a 78 ea f8 d0 a0 54 47 8d 23 '+ .....x....TG.#'
+  24 4d 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '$MT.............'
+  01 01 01 01 01 01 98 1c 20 88 30 00 18 50 3c 10 '........ .0..P<.'
+  a4 00 20 00 35 00 00 1e 00 00 00 fc 00 4c 30 31 '.. .5........L01'
+  4e 38 41 0a 20 20 20 20 20 20 00 00 00 00 00 00 'N8A.      ......'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10 '................'
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 68 '...............h'
+Checksum: 0x68
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 800x1280 mm vs display size 170x100 mm.
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: The DTD max image size is 800x1280mm, which is larger than the display size 170.0x100.0mm.
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

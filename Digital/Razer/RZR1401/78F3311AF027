@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff004b520114a0010000
-261e0104b53c22783b9325ad4f44a926
-0d5054bfef80714f8140818081c08100
-9500b300d1c0f8e300a0a0a032500820
-980455502100001e000000ff00323033
-38563033353030343136000000fd0030
-90dede3c010a202020202020000000fc
-00525a33392d303237360a202020014c
-02032b71480311121304901f02230907
-0783010000e200c067030c0010003878
-e305c301e6060701666657011d007251
-d01e206e28550055502100001e5aa000
-a0a0a046503020350055502100001e56
-5e00a0a0a02950302035005550210000
-1e6fc200a0a0a0555030203500555021
-00001e000000000000000000000000a4
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4b 52 01 14 a0 01 00 00
+26 1e 01 04 b5 3c 22 78 3b 93 25 ad 4f 44 a9 26
+0d 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00
+95 00 b3 00 d1 c0 f8 e3 00 a0 a0 a0 32 50 08 20
+98 04 55 50 21 00 00 1e 00 00 00 ff 00 32 30 33
+38 56 30 33 35 30 30 34 31 36 00 00 00 fd 00 30
+90 de de 3c 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 52 5a 33 39 2d 30 32 37 36 0a 20 20 20 01 4c
+
+02 03 2b 71 48 03 11 12 13 04 90 1f 02 23 09 07
+07 83 01 00 00 e2 00 c0 67 03 0c 00 10 00 38 78
+e3 05 c3 01 e6 06 07 01 66 66 57 01 1d 00 72 51
+d0 1e 20 6e 28 55 00 55 50 21 00 00 1e 5a a0 00
+a0 a0 a0 46 50 30 20 35 00 55 50 21 00 00 1e 56
+5e 00 a0 a0 a0 29 50 30 20 35 00 55 50 21 00 00
+1e 6f c2 00 a0 a0 a0 55 50 30 20 35 00 55 50 21
+00 00 1e 00 00 00 00 00 00 00 00 00 00 00 00 a4
 
 00 ff ff ff ff ff ff 00 4b 52 01 14 a0 01 00 00
 26 1e 01 04 b5 3c 22 78 3b 93 25 ad 4f 44 a9 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: RZR
     Model: 5121
-    Serial Number: 416
+    Serial Number: ...
     Made in: week 38 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -90,7 +89,7 @@ Block 0, Base EDID:
     DTD 1:  2560x1440  143.999210 Hz  16:9    214.559 kHz    583.600000 MHz (597 mm x 336 mm)
                  Hfront    8 Hsync  32 Hback  120 Hpol P
                  Vfront   25 Vsync   8 Vback   17 Vpol P
-    Display Product Serial Number: '2038V03500416'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (Bare Limits): 48-144 Hz V, 222-222 kHz H, max dotclock 600 MHz
     Display Product Name: 'RZ39-0276'
@@ -164,4 +163,130 @@ Block 1, CTA-861 Extension Block:
                  Vfront    3 Vsync   5 Vback   77 Vpol P
 Checksum: 0xa4  Unused space in Extension Block: 12 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4b 52 01 14 a0 01 00 00 '........KR......'
+  26 1e 01 04 b5 3c 22 78 3b 93 25 ad 4f 44 a9 26 '&....<"x;.%.OD.&'
+  0d 50 54 bf ef 80 71 4f 81 40 81 80 81 c0 81 00 '.PT...qO.@......'
+  95 00 b3 00 d1 c0 f8 e3 00 a0 a0 a0 32 50 08 20 '............2P. '
+  98 04 55 50 21 00 00 1e 00 00 00 ff 00 32 30 33 '..UP!........203'
+  38 56 30 33 35 30 30 34 31 36 00 00 00 fd 00 30 '8V03500416.....0'
+  90 de de 3c 01 0a 20 20 20 20 20 20 00 00 00 fc '...<..      ....'
+  00 52 5a 33 39 2d 30 32 37 36 0a 20 20 20 01 4c '.RZ39-0276.   .L'
+Checksum: 0x4c
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Capability Data Block:
+    YCbCr quantization: Selectable (via AVI YQ)
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: No Data
+    IT scan behavior: IT video formats not supported
+    CE scan behavior: CE video formats not supported
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+    DC_36bit
+    DC_30bit
+    DC_Y444
+    Maximum TMDS clock: 600 MHz
+  Colorimetry Data Block:
+    xvYCC601
+    xvYCC709
+    BT2020YCC
+    BT2020RGB
+    Gamut Boundary Description Metadata Profile P0
+  HDR Static Metadata Data Block:
+    Electro optical transfer functions:
+      Traditional gamma - SDR luminance range
+      Traditional gamma - HDR luminance range
+      SMPTE ST2084
+    Supported static metadata descriptors:
+      Static metadata type 1
+    Desired content max luminance: 102 (455.515 cd/m^2)
+    Desired content max frame-average luminance: 102 (455.515 cd/m^2)
+    Desired content min luminance: 87 (0.530 cd/m^2)
+  Detailed Timing Descriptors:
+    DTD 6:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (597 mm x 336 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 7:  2560x1440   99.946436 Hz  16:9    150.919 kHz    410.500000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   62 Vpol P
+    DTD 8:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol P
+    DTD 9:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   77 Vpol P
+Checksum: 0xa4  Unused space in Extension Block: 12 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Capability Data Block: IT scan behavior is expected to support underscanned.
+  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.250 - 214.558 kHz (Monitor: 222.000 - 222.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 2.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

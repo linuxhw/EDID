@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff004c2dd30300000000
-33110104a5291a8c22e5b1a355499983
-135054adce0001010101010101010101
-010101010101662150b051001b304070
-36009a001100001e6419004041002630
-188836009a0011000018000000fd003c
-4b1e3d09000a202020202020000000fc
-0053414d53554e470a2020202020006e
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c 2d d3 03 00 00 00 00
+33 11 01 04 a5 29 1a 8c 22 e5 b1 a3 55 49 99 83
+13 50 54 ad ce 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70
+36 00 9a 00 11 00 00 1e 64 19 00 40 41 00 26 30
+18 88 36 00 9a 00 11 00 00 18 00 00 00 fd 00 3c
+4b 1e 3d 09 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 53 41 4d 53 55 4e 47 0a 20 20 20 20 20 00 6e
 
 00 ff ff ff ff ff ff 00 4c 2d d3 03 00 00 00 00
 33 11 01 04 a5 29 1a 8c 22 e5 b1 a3 55 49 99 83
@@ -66,4 +64,33 @@ Block 0, Base EDID:
     Display Product Name: 'SAMSUNG'
 Checksum: 0x6e
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 4c 2d d3 03 00 00 00 00 '........L-......'
+  33 11 01 04 a5 29 1a 8c 22 e5 b1 a3 55 49 99 83 '3....).."...UI..'
+  13 50 54 ad ce 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
+  01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70 '......f!P.Q..0@p'
+  36 00 9a 00 11 00 00 1e 64 19 00 40 41 00 26 30 '6.......d..@A.&0'
+  18 88 36 00 9a 00 11 00 00 18 00 00 00 fd 00 3c '..6............<'
+  4b 1e 3d 09 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.=...      ....'
+  00 53 41 4d 53 55 4e 47 0a 20 20 20 20 20 00 6e '.SAMSUNG.     .n'
+Checksum: 0x6e
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
