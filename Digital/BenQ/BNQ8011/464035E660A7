@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d1118045540000
-03180103803420782e4ca5a7554da226
-105054a56b8061c0810081809500d1c0
-b300a9400101283c80a070b023403020
-360006442100001a000000ff00453145
-30303637303031390a20000000fd0032
-4c1e5311000a202020202020000000fc
-0042656e5120424c323431310a200066
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 11 80 45 54 00 00
+03 18 01 03 80 34 20 78 2e 4c a5 a7 55 4d a2 26
+10 50 54 a5 6b 80 61 c0 81 00 81 80 95 00 d1 c0
+b3 00 a9 40 01 01 28 3c 80 a0 70 b0 23 40 30 20
+36 00 06 44 21 00 00 1a 00 00 00 ff 00 45 31 45
+30 30 36 37 30 30 31 39 0a 20 00 00 00 fd 00 32
+4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 42 4c 32 34 31 31 0a 20 00 66
 
 00 ff ff ff ff ff ff 00 09 d1 11 80 45 54 00 00
 03 18 01 03 80 34 20 78 2e 4c a5 a7 55 4d a2 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 32785
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 3 of 2014
   Basic Display Parameters & Features:
     Digital display
@@ -65,10 +63,34 @@ Block 0, Base EDID:
     DTD 1:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (518 mm x 324 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   26 Vpol N
-    Display Product Serial Number: 'E1E00670019'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'BenQ BL2411'
 Checksum: 0x66
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 11 80 45 54 00 00 '............ET..'
+  03 18 01 03 80 34 20 78 2e 4c a5 a7 55 4d a2 26 '.....4 x.L..UM.&'
+  10 50 54 a5 6b 80 61 c0 81 00 81 80 95 00 d1 c0 '.PT.k.a.........'
+  b3 00 a9 40 01 01 28 3c 80 a0 70 b0 23 40 30 20 '...@..(<..p.#@0 '
+  36 00 06 44 21 00 00 1a 00 00 00 ff 00 45 31 45 '6..D!........E1E'
+  30 30 36 37 30 30 31 39 0a 20 00 00 00 fd 00 32 '00670019. .....2'
+  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
+  00 42 65 6e 51 20 42 4c 32 34 31 31 0a 20 00 66 '.BenQ BL2411. .f'
+Checksum: 0x66
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

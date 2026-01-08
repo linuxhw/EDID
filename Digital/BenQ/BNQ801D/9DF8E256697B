@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0009d11d8045540000
-24190104a5341d78ffe695a3544a9926
-0f5054a56b80d1c0b300a9c081808100
-81c0010101014dd000a0f0703e803020
-350009252100001a000000ff005a3846
-30353931333031390a20000000fd0030
-3c8c8c3c010a202020202020000000fc
-0042656e51204c43440a202020200147
-020322714f901f051404130312021101
-071615062309170783010000656e0c00
-1000565e00a0a0a02950302035000925
-2100001e8c0ad08a20e02d10103e9600
-092521000018011d007251d01e206e28
-550009252100001e8c0ad09020403120
-0c405500092521000018a36600a0f070
-1f803020350009252100001a00000019
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 1d 80 45 54 00 00
+24 19 01 04 a5 34 1d 78 ff e6 95 a3 54 4a 99 26
+0f 50 54 a5 6b 80 d1 c0 b3 00 a9 c0 81 80 81 00
+81 c0 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 09 25 21 00 00 1a 00 00 00 ff 00 5a 38 46
+30 35 39 31 33 30 31 39 0a 20 00 00 00 fd 00 30
+3c 8c 8c 3c 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 4c 43 44 0a 20 20 20 20 01 47
+
+02 03 22 71 4f 90 1f 05 14 04 13 03 12 02 11 01
+07 16 15 06 23 09 17 07 83 01 00 00 65 6e 0c 00
+10 00 56 5e 00 a0 a0 a0 29 50 30 20 35 00 09 25
+21 00 00 1e 8c 0a d0 8a 20 e0 2d 10 10 3e 96 00
+09 25 21 00 00 18 01 1d 00 72 51 d0 1e 20 6e 28
+55 00 09 25 21 00 00 1e 8c 0a d0 90 20 40 31 20
+0c 40 55 00 09 25 21 00 00 18 a3 66 00 a0 f0 70
+1f 80 30 20 35 00 09 25 21 00 00 1a 00 00 00 19
 
 00 ff ff ff ff ff ff 00 09 d1 1d 80 45 54 00 00
 24 19 01 04 a5 34 1d 78 ff e6 95 a3 54 4a 99 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 32797
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 36 of 2015
   Basic Display Parameters & Features:
     Digital display
@@ -81,10 +80,10 @@ Block 0, Base EDID:
     DMT 0x1c:  1280x800    59.810326 Hz  16:10    49.702 kHz     83.500000 MHz
     DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
   Detailed Timing Descriptors:
-    DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (521 mm x 293 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   54 Vpol N
-    Display Product Serial Number: 'Z8F05913019'
+    DTD  1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (521 mm x 293 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync   5 Vback   54 Vpol N
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (Bare Limits): 48-60 Hz V, 140-140 kHz H, max dotclock 600 MHz
     Display Product Name: 'BenQ LCD'
@@ -125,21 +124,130 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (ASUS), OUI 00-0C-6E:
     10 00                                           '..'
   Detailed Timing Descriptors:
-    DTD 2:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (521 mm x 293 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   33 Vpol P
-    DTD 3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (521 mm x 293 mm)
-                 Hfront   16 Hsync  62 Hback   60 Hpol N
-                 Vfront    9 Vsync   6 Vback   30 Vpol N
-    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (521 mm x 293 mm)
-                 Hfront  110 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD 5:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (521 mm x 293 mm)
-                 Hfront   12 Hsync  64 Hback   68 Hpol N
-                 Vfront    5 Vsync   5 Vback   39 Vpol N
-    DTD 6:  3840x2160   29.980602 Hz  16:9     65.688 kHz    262.750000 MHz (521 mm x 293 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    DTD  2:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (521 mm x 293 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync   5 Vback   33 Vpol P
+    DTD  3:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (521 mm x 293 mm)
+                  Hfront   16 Hsync  62 Hback   60 Hpol N
+                  Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD  4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (521 mm x 293 mm)
+                  Hfront  110 Hsync  40 Hback  220 Hpol P
+                  Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD  5:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (521 mm x 293 mm)
+                  Hfront   12 Hsync  64 Hback   68 Hpol N
+                  Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD  6:  3840x2160   29.980602 Hz  16:9     65.688 kHz    262.750000 MHz (521 mm x 293 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync   5 Vback   23 Vpol N
 Checksum: 0x19  Unused space in Extension Block: 3 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 1d 80 45 54 00 00 '............ET..'
+  24 19 01 04 a5 34 1d 78 ff e6 95 a3 54 4a 99 26 '$....4.x....TJ.&'
+  0f 50 54 a5 6b 80 d1 c0 b3 00 a9 c0 81 80 81 00 '.PT.k...........'
+  81 c0 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20 '......M....p>.0 '
+  35 00 09 25 21 00 00 1a 00 00 00 ff 00 5a 38 46 '5..%!........Z8F'
+  30 35 39 31 33 30 31 39 0a 20 00 00 00 fd 00 30 '05913019. .....0'
+  3c 8c 8c 3c 01 0a 20 20 20 20 20 20 00 00 00 fc '<..<..      ....'
+  00 42 65 6e 51 20 4c 43 44 0a 20 20 20 20 01 47 '.BenQ LCD.    .G'
+Checksum: 0x47
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
+    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
+    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
+    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 96 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (ASUS), OUI 00-0C-6E:
+    10 00                                           '..'
+  Detailed Timing Descriptors:
+    DTD  7:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (521 mm x 293 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync   5 Vback   33 Vpol P
+    DTD  8:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (521 mm x 293 mm)
+                  Hfront   16 Hsync  62 Hback   60 Hpol N
+                  Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD  9:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (521 mm x 293 mm)
+                  Hfront  110 Hsync  40 Hback  220 Hpol P
+                  Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 10:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (521 mm x 293 mm)
+                  Hfront   12 Hsync  64 Hback   68 Hpol N
+                  Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 11:  3840x2160   29.980602 Hz  16:9     65.688 kHz    262.750000 MHz (521 mm x 293 mm)
+                  Hfront   48 Hsync  32 Hback   80 Hpol P
+                  Vfront    3 Vsync   5 Vback   23 Vpol N
+Checksum: 0x19  Unused space in Extension Block: 3 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 29.981 - 75.062 Hz (Monitor: 48.000 - 60.000 Hz)
+    Horizontal Freq: 15.625 - 133.312 kHz (Monitor: 140.000 - 140.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 17.
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 7.
+  Video Data Block: Duplicate VIC 22.
+  Video Data Block: Duplicate VIC 21.
+  Video Data Block: Duplicate VIC 6.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  CTA-861: Native progressive timings are a mix of several resolutions.
+
+EDID conformity: FAIL

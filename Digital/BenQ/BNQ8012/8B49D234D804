@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d1128045540000
-10180103803c22782efc90a8544ca125
-0d5054a56b8081c081008180a9c0b300
-d1c001010101565e00a0a0a029503020
-350055502100001a000000ff00453445
-3030333836534c300a20000000fd0032
-4c1e581b000a202020202020000000fc
-0042656e5120424c323731300a2000ff
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 12 80 45 54 00 00
+10 18 01 03 80 3c 22 78 2e fc 90 a8 54 4c a1 25
+0d 50 54 a5 6b 80 81 c0 81 00 81 80 a9 c0 b3 00
+d1 c0 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20
+35 00 55 50 21 00 00 1a 00 00 00 ff 00 45 34 45
+30 30 33 38 36 53 4c 30 0a 20 00 00 00 fd 00 32
+4c 1e 58 1b 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 42 4c 32 37 31 30 0a 20 00 ff
 
 00 ff ff ff ff ff ff 00 09 d1 12 80 45 54 00 00
 10 18 01 03 80 3c 22 78 2e fc 90 a8 54 4c a1 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 32786
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 16 of 2014
   Basic Display Parameters & Features:
     Digital display
@@ -64,10 +62,41 @@ Block 0, Base EDID:
     DTD 1:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
-    Display Product Serial Number: 'E4E00386SL0'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-88 kHz H, max dotclock 270 MHz
     Display Product Name: 'BenQ BL2710'
 Checksum: 0xff
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 12 80 45 54 00 00 '............ET..'
+  10 18 01 03 80 3c 22 78 2e fc 90 a8 54 4c a1 25 '.....<"x....TL.%'
+  0d 50 54 a5 6b 80 81 c0 81 00 81 80 a9 c0 b3 00 '.PT.k...........'
+  d1 c0 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
+  35 00 55 50 21 00 00 1a 00 00 00 ff 00 45 34 45 '5.UP!........E4E'
+  30 30 33 38 36 53 4c 30 0a 20 00 00 00 fd 00 32 '00386SL0. .....2'
+  4c 1e 58 1b 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.X...      ....'
+  00 42 65 6e 51 20 42 4c 32 37 31 30 0a 20 00 ff '.BenQ BL2710. ..'
+Checksum: 0xff
+
+----------------
+
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 88.786 kHz (Monitor: 30.000 - 88.000 kHz)
+    Could be due to a Monitor Range off-by-one rounding issue
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

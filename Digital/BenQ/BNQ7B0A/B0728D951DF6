@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0009d10a7b45540000
-0a140103802917782ec865a157539723
-105054a56a0081c081cf010101010101
-010101010101662156aa51001e30468f
-33009ae61000001e000000ff00413341
-30303333383031390a20000000fd0032
-4c1e3f0b000a202020202020000000fc
-0042656e5120563932300a2020200018
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 0a 7b 45 54 00 00
+0a 14 01 03 80 29 17 78 2e c8 65 a1 57 53 97 23
+10 50 54 a5 6a 00 81 c0 81 cf 01 01 01 01 01 01
+01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f
+33 00 9a e6 10 00 00 1e 00 00 00 ff 00 41 33 41
+30 30 33 33 38 30 31 39 0a 20 00 00 00 fd 00 32
+4c 1e 3f 0b 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 56 39 32 30 0a 20 20 20 00 18
 
 00 ff ff ff ff ff ff 00 09 d1 0a 7b 45 54 00 00
 0a 14 01 03 80 29 17 78 2e c8 65 a1 57 53 97 23
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 31498
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 10 of 2010
   Basic Display Parameters & Features:
     Digital display
@@ -58,8 +56,34 @@ Block 0, Base EDID:
     DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
                  Hfront   70 Hsync 143 Hback  213 Hpol P
                  Vfront    3 Vsync   3 Vback   24 Vpol P
-    Display Product Serial Number: 'A3A00338019'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-63 kHz H, max dotclock 110 MHz
     Display Product Name: 'BenQ V920'
 Checksum: 0x18
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 0a 7b 45 54 00 00 '...........{ET..'
+  0a 14 01 03 80 29 17 78 2e c8 65 a1 57 53 97 23 '.....).x..e.WS.#'
+  10 50 54 a5 6a 00 81 c0 81 cf 01 01 01 01 01 01 '.PT.j...........'
+  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
+  33 00 9a e6 10 00 00 1e 00 00 00 ff 00 41 33 41 '3............A3A'
+  30 30 33 33 38 30 31 39 0a 20 00 00 00 fd 00 32 '00338019. .....2'
+  4c 1e 3f 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.?...      ....'
+  00 42 65 6e 51 20 56 39 32 30 0a 20 20 20 00 18 '.BenQ V920.   ..'
+Checksum: 0x18
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

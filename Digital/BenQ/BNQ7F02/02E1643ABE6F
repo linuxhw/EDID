@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0009d1027f45540000
-1d18010380351e782e9de1a654549f26
-0d5054a56b80d1c0457c617c818081bc
-953c317c0101023a801871382d40582c
-4500132a2100001e000000ff00473745
-3030393939534c300a20000000fd0038
-901ea021000a202020202020000000fc
-0042656e5120584c323431315a0a01eb
-020321c149901f051413040302012309
-07078301000067030c000000001ee200
-0f011d8018711c1620582c2500c48e21
-00009e00000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000075
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 02 7f 45 54 00 00
+1d 18 01 03 80 35 1e 78 2e 9d e1 a6 54 54 9f 26
+0d 50 54 a5 6b 80 d1 c0 45 7c 61 7c 81 80 81 bc
+95 3c 31 7c 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2a 21 00 00 1e 00 00 00 ff 00 47 37 45
+30 30 39 39 39 53 4c 30 0a 20 00 00 00 fd 00 38
+90 1e a0 21 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 58 4c 32 34 31 31 5a 0a 01 eb
+
+02 03 21 c1 49 90 1f 05 14 13 04 03 02 01 23 09
+07 07 83 01 00 00 67 03 0c 00 00 00 00 1e e2 00
+0f 01 1d 80 18 71 1c 16 20 58 2c 25 00 c4 8e 21
+00 00 9e 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 75
 
 00 ff ff ff ff ff ff 00 09 d1 02 7f 45 54 00 00
 1d 18 01 03 80 35 1e 78 2e 9d e1 a6 54 54 9f 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 32514
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 29 of 2014
   Basic Display Parameters & Features:
     Digital display
@@ -82,7 +81,7 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (531 mm x 298 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'G7E00999SL0'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-144 Hz V, 30-160 kHz H, max dotclock 330 MHz
     Display Product Name: 'BenQ XL2411Z'
@@ -129,4 +128,99 @@ Block 1, CTA-861 Extension Block:
                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
 Checksum: 0x75  Unused space in Extension Block: 76 bytes
 
+----------------
 
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 02 7f 45 54 00 00 '............ET..'
+  1d 18 01 03 80 35 1e 78 2e 9d e1 a6 54 54 9f 26 '.....5.x....TT.&'
+  0d 50 54 a5 6b 80 d1 c0 45 7c 61 7c 81 80 81 bc '.PT.k...E|a|....'
+  95 3c 31 7c 01 01 02 3a 80 18 71 38 2d 40 58 2c '.<1|...:..q8-@X,'
+  45 00 13 2a 21 00 00 1e 00 00 00 ff 00 47 37 45 'E..*!........G7E'
+  30 30 39 39 39 53 4c 30 0a 20 00 00 00 fd 00 38 '00999SL0. .....8'
+  90 1e a0 21 00 0a 20 20 20 20 20 20 00 00 00 fc '...!..      ....'
+  00 42 65 6e 51 20 58 4c 32 34 31 31 5a 0a 01 eb '.BenQ XL2411Z...'
+Checksum: 0xeb
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 0.0.0.0
+    Maximum TMDS clock: 150 MHz
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: No Data
+    PT scan behavior: No Data
+    IT scan behavior: Supports both over- and underscan
+    CE scan behavior: Supports both over- and underscan
+  Detailed Timing Descriptors:
+    DTD 3:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+Checksum: 0x75  Unused space in Extension Block: 76 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #2: Mismatch of image size 708x398 mm vs display size 530x300 mm.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
+  Detailed Timing Descriptor #3: Mismatch of image size 708x398 mm vs display size 530x300 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 120.000 Hz (Monitor: 56.000 - 144.000 Hz)
+    Horizontal Freq: 28.125 - 131.640 kHz (Monitor: 30.000 - 160.000 kHz)
+  Base EDID: The DTD max image size is 708x398mm, which is larger than the display size 530.0x300.0mm.
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

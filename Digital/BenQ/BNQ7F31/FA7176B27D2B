@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0009d1317f45540000
-2a1a0104a5351e782a9de1a654549f26
-0d5054a56b80d1c0457c617c818081bc
-953c317c0101023a801871382d40582c
-4500132a2100001e000000ff00474147
-3031323333534c300a20000000fd0038
-901ea021000a202020202020000000fc
-005a4f57494520584c204c43440a0198
-02010400fe5b80a07038354030203500
-132a2100001a866f80a0703840403020
-3500132a2100001afc7e808870381240
-18203500132a2100001e000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000c7
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 31 7f 45 54 00 00
+2a 1a 01 04 a5 35 1e 78 2a 9d e1 a6 54 54 9f 26
+0d 50 54 a5 6b 80 d1 c0 45 7c 61 7c 81 80 81 bc
+95 3c 31 7c 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 13 2a 21 00 00 1e 00 00 00 ff 00 47 41 47
+30 31 32 33 33 53 4c 30 0a 20 00 00 00 fd 00 38
+90 1e a0 21 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 5a 4f 57 49 45 20 58 4c 20 4c 43 44 0a 01 98
+
+02 01 04 00 fe 5b 80 a0 70 38 35 40 30 20 35 00
+13 2a 21 00 00 1a 86 6f 80 a0 70 38 40 40 30 20
+35 00 13 2a 21 00 00 1a fc 7e 80 88 70 38 12 40
+18 20 35 00 13 2a 21 00 00 1e 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c7
 
 00 ff ff ff ff ff ff 00 09 d1 31 7f 45 54 00 00
 2a 1a 01 04 a5 35 1e 78 2a 9d e1 a6 54 54 9f 26
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 32561
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 42 of 2016
   Basic Display Parameters & Features:
     Digital display
@@ -83,7 +82,7 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (531 mm x 298 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'GAG01233SL0'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 56-144 Hz V, 30-160 kHz H, max dotclock 330 MHz
     Display Product Name: 'ZOWIE XL LCD'
@@ -105,3 +104,60 @@ Block 1, CTA-861 Extension Block:
                  Hfront   24 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   10 Vpol P
 Checksum: 0xc7  Unused space in Extension Block: 69 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 31 7f 45 54 00 00 '..........1.ET..'
+  2a 1a 01 04 a5 35 1e 78 2a 9d e1 a6 54 54 9f 26 '*....5.x*...TT.&'
+  0d 50 54 a5 6b 80 d1 c0 45 7c 61 7c 81 80 81 bc '.PT.k...E|a|....'
+  95 3c 31 7c 01 01 02 3a 80 18 71 38 2d 40 58 2c '.<1|...:..q8-@X,'
+  45 00 13 2a 21 00 00 1e 00 00 00 ff 00 47 41 47 'E..*!........GAG'
+  30 31 32 33 33 53 4c 30 0a 20 00 00 00 fd 00 38 '01233SL0. .....8'
+  90 1e a0 21 00 0a 20 20 20 20 20 20 00 00 00 fc '...!..      ....'
+  00 5a 4f 57 49 45 20 58 4c 20 4c 43 44 0a 01 98 '.ZOWIE XL LCD...'
+Checksum: 0x98
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 1
+  Detailed Timing Descriptors:
+    DTD 5:  1920x1080   99.930409 Hz  16:9    113.221 kHz    235.500000 MHz (531 mm x 298 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   45 Vpol N
+    DTD 6:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (531 mm x 298 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD 7:  1920x1080  144.000765 Hz  16:9    158.113 kHz    325.080000 MHz (531 mm x 298 mm)
+                 Hfront   24 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   10 Vpol P
+Checksum: 0xc7  Unused space in Extension Block: 69 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

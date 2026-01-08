@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff0009d1258045540000
-2e1e0104b54628783e87d1a8554d9f25
-0e5054a56b80818081c08100a9c0b300
-d1c0010101014dd000a0f0703e803020
-3500c48f2100001a000000ff0041424c
-30303338333031390a20000000fd0032
-4c1e8c3c000a202020202020000000fc
-0042656e5120504433323030550a01c4
-02031ef15161605f5e5d101f22212005
-1404131203012309070783010000a366
-00a0f0701f8030203500c48f2100001a
-565e00a0a0a029502f203500c48f2100
-001a0000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000050
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 d1 25 80 45 54 00 00
+2e 1e 01 04 b5 46 28 78 3e 87 d1 a8 55 4d 9f 25
+0e 50 54 a5 6b 80 81 80 81 c0 81 00 a9 c0 b3 00
+d1 c0 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20
+35 00 c4 8f 21 00 00 1a 00 00 00 ff 00 41 42 4c
+30 30 33 38 33 30 31 39 0a 20 00 00 00 fd 00 32
+4c 1e 8c 3c 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 42 65 6e 51 20 50 44 33 32 30 30 55 0a 01 c4
+
+02 03 1e f1 51 61 60 5f 5e 5d 10 1f 22 21 20 05
+14 04 13 12 03 01 23 09 07 07 83 01 00 00 a3 66
+00 a0 f0 70 1f 80 30 20 35 00 c4 8f 21 00 00 1a
+56 5e 00 a0 a0 a0 29 50 2f 20 35 00 c4 8f 21 00
+00 1a 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50
 
 00 ff ff ff ff ff ff 00 09 d1 25 80 45 54 00 00
 2e 1e 01 04 b5 46 28 78 3e 87 d1 a8 55 4d 9f 25
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: BNQ
     Model: 32805
-    Serial Number: 21573
+    Serial Number: ...
     Made in: week 46 of 2020
   Basic Display Parameters & Features:
     Digital display
@@ -83,7 +82,7 @@ Block 0, Base EDID:
     DTD 1:  3840x2160   59.996625 Hz  16:9    133.312 kHz    533.250000 MHz (708 mm x 399 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   54 Vpol N
-    Display Product Serial Number: 'ABL00383019'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-76 Hz V, 30-140 kHz H, max dotclock 600 MHz
     Display Product Name: 'BenQ PD3200U'
@@ -132,3 +131,108 @@ Block 1, CTA-861 Extension Block:
                  Hfront   47 Hsync  32 Hback   81 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
 Checksum: 0x50  Unused space in Extension Block: 61 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 09 d1 25 80 45 54 00 00 '..........%.ET..'
+  2e 1e 01 04 b5 46 28 78 3e 87 d1 a8 55 4d 9f 25 '.....F(x>...UM.%'
+  0e 50 54 a5 6b 80 81 80 81 c0 81 00 a9 c0 b3 00 '.PT.k...........'
+  d1 c0 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20 '......M....p>.0 '
+  35 00 c4 8f 21 00 00 1a 00 00 00 ff 00 41 42 4c '5...!........ABL'
+  30 30 33 38 33 30 31 39 0a 20 00 00 00 fd 00 32 '00383019. .....2'
+  4c 1e 8c 3c 00 0a 20 20 20 20 20 20 00 00 00 fc 'L..<..      ....'
+  00 42 65 6e 51 20 50 44 33 32 30 30 55 0a 01 c4 '.BenQ PD3200U...'
+Checksum: 0xc4
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
+    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
+    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
+    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
+    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
+    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
+    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
+    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Detailed Timing Descriptors:
+    DTD 4:  3840x2160   29.980602 Hz  16:9     65.688 kHz    262.750000 MHz (708 mm x 399 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    DTD 5:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (708 mm x 399 mm)
+                 Hfront   47 Hsync  32 Hback   81 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+Checksum: 0x50  Unused space in Extension Block: 61 bytes
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Range Limits: GTF support is deprecated in EDID 1.4.
+Block 1, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+Block 3, CTA-861 Extension Block:
+  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.062 Hz (Monitor: 50.000 - 76.000 Hz)
+    Horizontal Freq: 27.000 - 135.000 kHz (Monitor: 30.000 - 140.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 97.
+  Video Data Block: Duplicate VIC 96.
+  Video Data Block: Duplicate VIC 95.
+  Video Data Block: Duplicate VIC 94.
+  Video Data Block: Duplicate VIC 93.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 31.
+  Video Data Block: Duplicate VIC 34.
+  Video Data Block: Duplicate VIC 33.
+  Video Data Block: Duplicate VIC 32.
+  Video Data Block: Duplicate VIC 5.
+  Video Data Block: Duplicate VIC 20.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 19.
+  Video Data Block: Duplicate VIC 18.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 1.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL
