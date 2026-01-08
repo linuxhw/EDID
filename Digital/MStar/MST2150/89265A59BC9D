@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff003674502100000000
-0114010380331d78ead6a5a2594a9524
-145054adcf00314a454a614c8180818a
-818c81c00101023a801871382d40582c
-450070cf1000001e7c2e90a0601a1e40
-30203600c7001100001aab22a0a05084
-1a3030203600c5ff1000001a000000fc
-004449474954414c0a20202020200053
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 74 50 21 00 00 00 00
+01 14 01 03 80 33 1d 78 ea d6 a5 a2 59 4a 95 24
+14 50 54 ad cf 00 31 4a 45 4a 61 4c 81 80 81 8a
+81 8c 81 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 70 cf 10 00 00 1e 7c 2e 90 a0 60 1a 1e 40
+30 20 36 00 c7 00 11 00 00 1a ab 22 a0 a0 50 84
+1a 30 30 20 36 00 c5 ff 10 00 00 1a 00 00 00 fc
+00 44 49 47 49 54 41 4c 0a 20 20 20 20 20 00 53
 
 00 ff ff ff ff ff ff 00 36 74 50 21 00 00 00 00
 01 14 01 03 80 33 1d 78 ea d6 a5 a2 59 4a 95 24
@@ -72,3 +70,32 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   6 Vback   17 Vpol N
     Display Product Name: 'DIGITAL'
 Checksum: 0x53
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 74 50 21 00 00 00 00 '........6tP!....'
+  01 14 01 03 80 33 1d 78 ea d6 a5 a2 59 4a 95 24 '.....3.x....YJ.$'
+  14 50 54 ad cf 00 31 4a 45 4a 61 4c 81 80 81 8a '.PT...1JEJaL....'
+  81 8c 81 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 70 cf 10 00 00 1e 7c 2e 90 a0 60 1a 1e 40 'E.p.....|...`..@'
+  30 20 36 00 c7 00 11 00 00 1a ab 22 a0 a0 50 84 '0 6........"..P.'
+  1a 30 30 20 36 00 c5 ff 10 00 00 1a 00 00 00 fc '.00 6...........'
+  00 44 49 47 49 54 41 4c 0a 20 20 20 20 20 00 53 '.DIGITAL.     .S'
+Checksum: 0x53
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Mismatch of image size 368x207 mm vs display size 510x290 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 455x256 mm vs display size 510x290 mm.
+  Detailed Timing Descriptor #3: Mismatch of image size 453x255 mm vs display size 510x290 mm.
+  Missing Display Range Limits Descriptor.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

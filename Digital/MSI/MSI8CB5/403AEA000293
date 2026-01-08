@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff003669b58c45020000
-06210104a53c22783b4575ac5149a827
-0c5054bfcf00814081809500714f81c0
-b30001010101023a801871382d40582c
-450055502100001ed09480a070381e40
-3040350055502100001a000000fd0030
-a5c8c828010a202020202020000000fc
-004d53492047323731320a2020200163
-02032bf14a01030402900e0f1d1e1f23
-0907078301000065030c0010006d1a00
-00020130a5000000000000866f80a070
-3840403020350055502100001a088280
-5070384d400820f80c55502100001a00
-00000000000000000000000000000000
-00000000000000000000000000000000
-000000000000000000000000000000a6
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 69 b5 8c 45 02 00 00
+06 21 01 04 a5 3c 22 78 3b 45 75 ac 51 49 a8 27
+0c 50 54 bf cf 00 81 40 81 80 95 00 71 4f 81 c0
+b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 55 50 21 00 00 1e d0 94 80 a0 70 38 1e 40
+30 40 35 00 55 50 21 00 00 1a 00 00 00 fd 00 30
+a5 c8 c8 28 01 0a 20 20 20 20 20 20 00 00 00 fc
+00 4d 53 49 20 47 32 37 31 32 0a 20 20 20 01 63
+
+02 03 2b f1 4a 01 03 04 02 90 0e 0f 1d 1e 1f 23
+09 07 07 83 01 00 00 65 03 0c 00 10 00 6d 1a 00
+00 02 01 30 a5 00 00 00 00 00 00 86 6f 80 a0 70
+38 40 40 30 20 35 00 55 50 21 00 00 1a 08 82 80
+50 70 38 4d 40 08 20 f8 0c 55 50 21 00 00 1a 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a6
 
 00 ff ff ff ff ff ff 00 36 69 b5 8c 45 02 00 00
 06 21 01 04 a5 3c 22 78 3b 45 75 ac 51 49 a8 27
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MSI
     Model: 36021
-    Serial Number: 581
+    Serial Number: ...
     Made in: week 6 of 2023
   Basic Display Parameters & Features:
     Digital display
@@ -141,3 +140,102 @@ Block 1, CTA-861 Extension Block:
                  Hfront    8 Hsync  32 Hback   40 Hpol P
                  Vfront   63 Vsync   8 Vback    6 Vpol N
 Checksum: 0xa6  Unused space in Extension Block: 48 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 69 b5 8c 45 02 00 00 '........6i..E...'
+  06 21 01 04 a5 3c 22 78 3b 45 75 ac 51 49 a8 27 '.!...<"x;Eu.QI.''
+  0c 50 54 bf cf 00 81 40 81 80 95 00 71 4f 81 c0 '.PT....@....qO..'
+  b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 55 50 21 00 00 1e d0 94 80 a0 70 38 1e 40 'E.UP!.......p8.@'
+  30 40 35 00 55 50 21 00 00 1a 00 00 00 fd 00 30 '0@5.UP!........0'
+  a5 c8 c8 28 01 0a 20 20 20 20 20 20 00 00 00 fc '...(..      ....'
+  00 4d 53 49 20 47 32 37 31 32 0a 20 20 20 01 63 '.MSI G2712.   .c'
+Checksum: 0x63
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  14:  1440x480    59.940060 Hz   4:3     31.469 kHz     54.000000 MHz
+    VIC  15:  1440x480    59.940060 Hz  16:9     31.469 kHz     54.000000 MHz
+    VIC  29:  1440x576    50.000000 Hz   4:3     31.250 kHz     54.000000 MHz
+    VIC  30:  1440x576    50.000000 Hz  16:9     31.250 kHz     54.000000 MHz
+    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 1.0.0.0
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 165 Hz
+    Flags 1.x: 0x00
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+  Detailed Timing Descriptors:
+    DTD 5:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback   56 Vpol N
+    DTD 6:  1920x1080  143.854797 Hz  16:9    166.440 kHz    332.880000 MHz (597 mm x 336 mm)
+                 Hfront    8 Hsync  32 Hback   40 Hpol P
+                 Vfront   63 Vsync   8 Vback    6 Vpol N
+Checksum: 0xa6  Unused space in Extension Block: 48 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.250 - 183.153 kHz (Monitor: 200.000 - 200.000 kHz)
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 14.
+  Video Data Block: Duplicate VIC 15.
+  Video Data Block: Duplicate VIC 29.
+  Video Data Block: Duplicate VIC 30.
+  Video Data Block: Duplicate VIC 31.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+
+EDID conformity: FAIL

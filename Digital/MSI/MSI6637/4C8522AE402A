@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0036693766e1d6f403
-32120103812f1aa4e8fbb4a1554b9724
-10484c214e0081c095c0a9c0b3000101
-0101010101011a3680a070381f403020
-3500dd0c1100001e000000ff00303030
-3030310a0a0a0a0a0a0a000000fd0032
-4b1e5514000a202020202020000000fc
-0057696e64204e6574312032320a002d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 69 37 66 e1 d6 f4 03
+32 12 01 03 81 2f 1a a4 e8 fb b4 a1 55 4b 97 24
+10 48 4c 21 4e 00 81 c0 95 c0 a9 c0 b3 00 01 01
+01 01 01 01 01 01 1a 36 80 a0 70 38 1f 40 30 20
+35 00 dd 0c 11 00 00 1e 00 00 00 ff 00 30 30 30
+30 30 31 0a 0a 0a 0a 0a 0a 0a 00 00 00 fd 00 32
+4b 1e 55 14 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 57 69 6e 64 20 4e 65 74 31 20 32 32 0a 00 2d
 
 00 ff ff ff ff ff ff 00 36 69 37 66 e1 d6 f4 03
 32 12 01 03 81 2f 1a a4 e8 fb b4 a1 55 4b 97 24
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MSI
     Model: 26167
-    Serial Number: 66377441
+    Serial Number: ...
     Made in: week 50 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -57,8 +55,35 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   59.933878 Hz  16:9     66.587 kHz    138.500000 MHz (477 mm x 268 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   23 Vpol P
-    Display Product Serial Number: '000001'
+    Display Product Serial Number: ...
     Display Range Limits:
       Monitor ranges (GTF): 50-75 Hz V, 30-85 kHz H, max dotclock 200 MHz
     Display Product Name: 'Wind Net1 22'
 Checksum: 0x2d
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 69 37 66 e1 d6 f4 03 '........6i7f....'
+  32 12 01 03 81 2f 1a a4 e8 fb b4 a1 55 4b 97 24 '2..../......UK.$'
+  10 48 4c 21 4e 00 81 c0 95 c0 a9 c0 b3 00 01 01 '.HL!N...........'
+  01 01 01 01 01 01 1a 36 80 a0 70 38 1f 40 30 20 '.......6..p8.@0 '
+  35 00 dd 0c 11 00 00 1e 00 00 00 ff 00 30 30 30 '5............000'
+  30 30 31 0a 0a 0a 0a 0a 0a 0a 00 00 00 fd 00 32 '001............2'
+  4b 1e 55 14 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.U...      ....'
+  00 57 69 6e 64 20 4e 65 74 31 20 32 32 0a 00 2d '.Wind Net1 22..-'
+Checksum: 0x2d
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
+  Display Product Serial Number: ...
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

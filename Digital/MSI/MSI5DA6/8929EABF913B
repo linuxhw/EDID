@@ -1,23 +1,22 @@
-
-EDID (hex):
-00ffffffffffff003669a65db0040000
-0e220103804627782a86b5ab4f46a627
-105054bfcf00814081809500714f81c0
-b30001010101023a801871382d40582c
-4500ba892100001eb37d806a70381740
-2c203500ba892100001e000000fd0030
-901eb421000a202020202020000000fc
-004d5349204733324334570a202001bf
-020330f14a01030402900f0e1e1d3f23
-09070783010000e2006a67030c002000
-00426d1a000002013090e60000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-00000000000000000000000000000000
-0000000000000000000000000000004d
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 36 69 a6 5d b0 04 00 00
+0e 22 01 03 80 46 27 78 2a 86 b5 ab 4f 46 a6 27
+10 50 54 bf cf 00 81 40 81 80 95 00 71 4f 81 c0
+b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 ba 89 21 00 00 1e b3 7d 80 6a 70 38 17 40
+2c 20 35 00 ba 89 21 00 00 1e 00 00 00 fd 00 30
+90 1e b4 21 00 0a 20 20 20 20 20 20 00 00 00 fc
+00 4d 53 49 20 47 33 32 43 34 57 0a 20 20 01 bf
+
+02 03 30 f1 4a 01 03 04 02 90 0f 0e 1e 1d 3f 23
+09 07 07 83 01 00 00 e2 00 6a 67 03 0c 00 20 00
+00 42 6d 1a 00 00 02 01 30 90 e6 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4d
 
 00 ff ff ff ff ff ff 00 36 69 a6 5d b0 04 00 00
 0e 22 01 03 80 46 27 78 2a 86 b5 ab 4f 46 a6 27
@@ -44,7 +43,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: MSI
     Model: 23974
-    Serial Number: 1200
+    Serial Number: ...
     Made in: week 14 of 2024
   Basic Display Parameters & Features:
     Digital display
@@ -138,3 +137,101 @@ Block 1, CTA-861 Extension Block:
     Minimum luminance: 0 (0.000 cd/m^2)
     Unknown: 0x00 0x00
 Checksum: 0x4d  Unused space in Extension Block: 79 bytes
+
+----------------
+
+Block 2, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 36 69 a6 5d b0 04 00 00 '........6i.]....'
+  0e 22 01 03 80 46 27 78 2a 86 b5 ab 4f 46 a6 27 '."...F'x*...OF.''
+  10 50 54 bf cf 00 81 40 81 80 95 00 71 4f 81 c0 '.PT....@....qO..'
+  b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 ba 89 21 00 00 1e b3 7d 80 6a 70 38 17 40 'E...!....}.jp8.@'
+  2c 20 35 00 ba 89 21 00 00 1e 00 00 00 fd 00 30 ', 5...!........0'
+  90 1e b4 21 00 0a 20 20 20 20 20 20 00 00 00 fc '...!..      ....'
+  00 4d 53 49 20 47 33 32 43 34 57 0a 20 20 01 bf '.MSI G32C4W.  ..'
+Checksum: 0xbf
+
+----------------
+
+Block 3, CTA-861 Extension Block:
+  Revision: 3
+  Underscans IT Video Formats by default
+  Basic audio support
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 1
+  Video Data Block:
+    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
+    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
+    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
+    VIC  15:  1440x480    59.940060 Hz  16:9     31.469 kHz     54.000000 MHz
+    VIC  14:  1440x480    59.940060 Hz   4:3     31.469 kHz     54.000000 MHz
+    VIC  30:  1440x576    50.000000 Hz  16:9     31.250 kHz     54.000000 MHz
+    VIC  29:  1440x576    50.000000 Hz   4:3     31.250 kHz     54.000000 MHz
+    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
+  Audio Data Block:
+    Linear PCM:
+      Max channels: 2
+      Supported sample rates (kHz): 48 44.1 32
+      Supported sample sizes (bits): 24 20 16
+  Speaker Allocation Data Block:
+    FL/FR - Front Left/Right
+  Video Capability Data Block:
+    YCbCr quantization: No Data
+    RGB quantization: Selectable (via AVI Q)
+    PT scan behavior: Always Underscanned
+    IT scan behavior: Always Underscanned
+    CE scan behavior: Always Underscanned
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
+    Source physical address: 2.0.0.0
+    Maximum TMDS clock: 330 MHz
+  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
+    Version: 2.1
+    Minimum Refresh Rate: 48 Hz
+    Maximum Refresh Rate: 144 Hz
+    Flags 1.x: 0xe6 (MCCS)
+    Flags 2.x: 0x00
+    Maximum luminance: 0 (50.000 cd/m^2)
+    Minimum luminance: 0 (0.000 cd/m^2)
+    Unknown: 0x00 0x00
+Checksum: 0x4d  Unused space in Extension Block: 79 bytes
+
+----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+Block 3, CTA-861 Extension Block:
+  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  CTA-861: Multiple native progressive timings are defined.
+
+Failures:
+
+Block 2, Base EDID:
+  Unknown Extension Block.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 1.
+  Video Data Block: Duplicate VIC 3.
+  Video Data Block: Duplicate VIC 4.
+  Video Data Block: Duplicate VIC 2.
+  Video Data Block: Duplicate VIC 16.
+  Video Data Block: Duplicate VIC 15.
+  Video Data Block: Duplicate VIC 14.
+  Video Data Block: Duplicate VIC 30.
+  Video Data Block: Duplicate VIC 29.
+  Video Data Block: Duplicate VIC 63.
+  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Video Capability Data Block: Only one instance of this Data Block is allowed.
+EDID:
+  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+
+EDID conformity: FAIL

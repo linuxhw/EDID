@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff0061a9443400000000
-101e0103805021782a64f5ad5049a322
-135054adcf00714f81c0814081809500
-a9c0b300d1c0216870a0d0a029503020
-35001d4e3100001a000000fd0030791e
-aa3c000a202020202020000000fc004d
-69204d6f6e69746f720a2020000000ff
-d03030303030303030303030303001ae
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 61 a9 44 34 00 00 00 00
+10 1e 01 03 80 50 21 78 2a 64 f5 ad 50 49 a3 22
+13 50 54 ad cf 00 71 4f 81 c0 81 40 81 80 95 00
+a9 c0 b3 00 d1 c0 21 68 70 a0 d0 a0 29 50 30 20
+35 00 1d 4e 31 00 00 1a 00 00 00 fd 00 30 79 1e
+aa 3c 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4d
+69 20 4d 6f 6e 69 74 6f 72 0a 20 20 00 00 00 ff
+d0 30 30 30 30 30 30 30 30 30 30 30 30 30 01 ae
 
 00 ff ff ff ff ff ff 00 61 a9 44 34 00 00 00 00
 10 1e 01 03 80 50 21 78 2a 64 f5 ad 50 49 a3 22
@@ -68,6 +66,30 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 48-121 Hz V, 30-170 kHz H, max dotclock 600 MHz
     Display Product Name: 'Mi Monitor'
-    Display Product Serial Number: '0000000000000'
+    Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0xae
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 61 a9 44 34 00 00 00 00 '........a.D4....'
+  10 1e 01 03 80 50 21 78 2a 64 f5 ad 50 49 a3 22 '.....P!x*d..PI."'
+  13 50 54 ad cf 00 71 4f 81 c0 81 40 81 80 95 00 '.PT...qO...@....'
+  a9 c0 b3 00 d1 c0 21 68 70 a0 d0 a0 29 50 30 20 '......!hp...)P0 '
+  35 00 1d 4e 31 00 00 1a 00 00 00 fd 00 30 79 1e '5..N1........0y.'
+  aa 3c 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4d '.<..      .....M'
+  69 20 4d 6f 6e 69 74 6f 72 0a 20 20 00 00 00 ff 'i Monitor.  ....'
+  d0 30 30 30 30 30 30 30 30 30 30 30 30 30 01 ae '.0000000000000..'
+Checksum: 0xae
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Display Descriptor #4: Monitor descriptor block has byte 4 nonzero (0xd0).
+Block 1, Base EDID:
+  Unknown Extension Block.
+
+EDID conformity: FAIL
