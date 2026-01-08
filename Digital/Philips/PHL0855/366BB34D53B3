@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c550801010101
-2b110103802f1e782e9345a3554a9827
-155054bfef00b300a940950f950081c0
-8140714f81807c2e90a0601a1e403020
-3600b20e1100001c000000ff00435535
-30373433303033323135000000fc0050
-68696c697073203232304157000000fd
-00384c1e5d11700a20323230575300dd
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 55 08 01 01 01 01
+2b 11 01 03 80 2f 1e 78 2e 93 45 a3 55 4a 98 27
+15 50 54 bf ef 00 b3 00 a9 40 95 0f 95 00 81 c0
+81 40 71 4f 81 80 7c 2e 90 a0 60 1a 1e 40 30 20
+36 00 b2 0e 11 00 00 1c 00 00 00 ff 00 43 55 35
+30 37 34 33 30 30 33 32 31 35 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 32 32 30 41 57 00 00 00 fd
+00 38 4c 1e 5d 11 70 0a 20 32 32 30 57 53 00 dd
 
 00 ff ff ff ff ff ff 00 41 0c 55 08 01 01 01 01
 2b 11 01 03 80 2f 1e 78 2e 93 45 a3 55 4a 98 27
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 2133
-    Serial Number: 16843009
+    Serial Number: ...
     Made in: week 43 of 2007
   Basic Display Parameters & Features:
     Digital display
@@ -70,10 +68,42 @@ Block 0, Base EDID:
     DTD 1:  1680x1050   59.883253 Hz  16:10    64.674 kHz    119.000000 MHz (434 mm x 270 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol N
                  Vfront    3 Vsync   6 Vback   21 Vpol P
-    Display Product Serial Number: 'CU50743003215'
+    Display Product Serial Number: ...
     Display Product Name: 'Philips 220AW'
     Display Range Limits:
       Monitor ranges (Unknown (0x70)): 56-76 Hz V, 30-93 kHz H, max dotclock 170 MHz
 Checksum: 0xdd
 
+----------------
 
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 55 08 01 01 01 01 '........A.U.....'
+  2b 11 01 03 80 2f 1e 78 2e 93 45 a3 55 4a 98 27 '+..../.x..E.UJ.''
+  15 50 54 bf ef 00 b3 00 a9 40 95 0f 95 00 81 c0 '.PT......@......'
+  81 40 71 4f 81 80 7c 2e 90 a0 60 1a 1e 40 30 20 '.@qO..|...`..@0 '
+  36 00 b2 0e 11 00 00 1c 00 00 00 ff 00 43 55 35 '6............CU5'
+  30 37 34 33 30 30 33 32 31 35 00 00 00 fc 00 50 '0743003215.....P'
+  68 69 6c 69 70 73 20 32 32 30 41 57 00 00 00 fd 'hilips 220AW....'
+  00 38 4c 1e 5d 11 70 0a 20 32 32 30 57 53 00 dd '.8L.].p. 220WS..'
+Checksum: 0xdd
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x39.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Detailed Timing Descriptor #1: Mismatch of image size 434x270 mm vs display size 470x300 mm.
+  Display Range Limits: Unknown range class (0x70).
+  Display Range Limits: Bytes 12-17 must be 0x20.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

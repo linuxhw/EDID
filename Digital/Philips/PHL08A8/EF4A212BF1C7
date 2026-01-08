@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410ca808c80e0000
-16150103803c22782aca45a4564b9c25
-125054bd4b00d1c08180950f9500b300
-010101010101023a801871382d40582c
-450056502100001e000000ff00415535
-31313232303033373834000000fc0032
-3733504c50480a2020202020000000fd
-00384c1e5311000a202020202020008c
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c a8 08 c8 0e 00 00
+16 15 01 03 80 3c 22 78 2a ca 45 a4 56 4b 9c 25
+12 50 54 bd 4b 00 d1 c0 81 80 95 0f 95 00 b3 00
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 56 50 21 00 00 1e 00 00 00 ff 00 41 55 35
+31 31 32 32 30 30 33 37 38 34 00 00 00 fc 00 32
+37 33 50 4c 50 48 0a 20 20 20 20 20 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 8c
 
 00 ff ff ff ff ff ff 00 41 0c a8 08 c8 0e 00 00
 16 15 01 03 80 3c 22 78 2a ca 45 a4 56 4b 9c 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 2216
-    Serial Number: 3784
+    Serial Number: ...
     Made in: week 22 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -62,8 +60,32 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'AU51122003784'
+    Display Product Serial Number: ...
     Display Product Name: '273PLPH'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x8c
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c a8 08 c8 0e 00 00 '........A.......'
+  16 15 01 03 80 3c 22 78 2a ca 45 a4 56 4b 9c 25 '.....<"x*.E.VK.%'
+  12 50 54 bd 4b 00 d1 c0 81 80 95 0f 95 00 b3 00 '.PT.K...........'
+  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 56 50 21 00 00 1e 00 00 00 ff 00 41 55 35 'E.VP!........AU5'
+  31 31 32 32 30 30 33 37 38 34 00 00 00 fc 00 32 '1122003784.....2'
+  37 33 50 4c 50 48 0a 20 20 20 20 20 00 00 00 fd '73PLPH.     ....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 8c '.8L.S...      ..'
+Checksum: 0x8c
+
+----------------
+
+Failures:
+
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

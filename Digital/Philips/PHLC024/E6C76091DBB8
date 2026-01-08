@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c24c034010000
-2c120103802f1d78eeb505a5564a9a25
-125054bfef80b3008180818f9500950f
-a940010101017c2e90a0601a1e403020
-3600da281100001a000000ff00464533
-30383434303033303839000000fc0050
-68696c697073203232304357000000fd
-00384c1e5311000a202020202020008a
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 24 c0 34 01 00 00
+2c 12 01 03 80 2f 1d 78 ee b5 05 a5 56 4a 9a 25
+12 50 54 bf ef 80 b3 00 81 80 81 8f 95 00 95 0f
+a9 40 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20
+36 00 da 28 11 00 00 1a 00 00 00 ff 00 46 45 33
+30 38 34 34 30 30 33 30 38 39 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 32 32 30 43 57 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 8a
 
 00 ff ff ff ff ff ff 00 41 0c 24 c0 34 01 00 00
 2c 12 01 03 80 2f 1d 78 ee b5 05 a5 56 4a 9a 25
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 49188
-    Serial Number: 308
+    Serial Number: ...
     Made in: week 44 of 2008
   Basic Display Parameters & Features:
     Digital display
@@ -69,8 +67,34 @@ Block 0, Base EDID:
     DTD 1:  1680x1050   59.883253 Hz  16:10    64.674 kHz    119.000000 MHz (474 mm x 296 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   21 Vpol N
-    Display Product Serial Number: 'FE30844003089'
+    Display Product Serial Number: ...
     Display Product Name: 'Philips 220CW'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x8a
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 24 c0 34 01 00 00 '........A.$.4...'
+  2c 12 01 03 80 2f 1d 78 ee b5 05 a5 56 4a 9a 25 ',..../.x....VJ.%'
+  12 50 54 bf ef 80 b3 00 81 80 81 8f 95 00 95 0f '.PT.............'
+  a9 40 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20 '.@....|...`..@0 '
+  36 00 da 28 11 00 00 1a 00 00 00 ff 00 46 45 33 '6..(.........FE3'
+  30 38 34 34 30 30 33 30 38 39 00 00 00 fc 00 50 '0844003089.....P'
+  68 69 6c 69 70 73 20 32 32 30 43 57 00 00 00 fd 'hilips 220CW....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 8a '.8L.S...      ..'
+Checksum: 0x8a
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL

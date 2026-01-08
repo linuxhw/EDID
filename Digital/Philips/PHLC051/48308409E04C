@@ -1,15 +1,13 @@
-
-EDID (hex):
-00ffffffffffff00410c51c034940100
-0215010380301b78eeee95a3544c9926
-0f5054bfef80d1c081c0810081808bc0
-9500b3000101023a801871382d40582c
-4500dc0c1100001e000000ff00444c32
-31313032313033343736000000fc0050
-68696c69707320323232450a000000fd
-00384c1e5311000a2020202020200019
-
 edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 41 0c 51 c0 34 94 01 00
+02 15 01 03 80 30 1b 78 ee ee 95 a3 54 4c 99 26
+0f 50 54 bf ef 80 d1 c0 81 c0 81 00 81 80 8b c0
+95 00 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 dc 0c 11 00 00 1e 00 00 00 ff 00 44 4c 32
+31 31 30 32 31 30 33 34 37 36 00 00 00 fc 00 50
+68 69 6c 69 70 73 20 32 32 32 45 0a 00 00 00 fd
+00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 19
 
 00 ff ff ff ff ff ff 00 41 0c 51 c0 34 94 01 00
 02 15 01 03 80 30 1b 78 ee ee 95 a3 54 4c 99 26
@@ -27,7 +25,7 @@ Block 0, Base EDID:
   Vendor & Product Identification:
     Manufacturer: PHL
     Model: 49233
-    Serial Number: 103476
+    Serial Number: ...
     Made in: week 2 of 2011
   Basic Display Parameters & Features:
     Digital display
@@ -70,8 +68,39 @@ Block 0, Base EDID:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (476 mm x 268 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    Display Product Serial Number: 'DL21102103476'
+    Display Product Serial Number: ...
     Display Product Name: 'Philips 222E'
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
 Checksum: 0x19
+
+----------------
+
+Block 1, Unknown EDID Extension Block 0x00:
+  00 ff ff ff ff ff ff 00 41 0c 51 c0 34 94 01 00 '........A.Q.4...'
+  02 15 01 03 80 30 1b 78 ee ee 95 a3 54 4c 99 26 '.....0.x....TL.&'
+  0f 50 54 bf ef 80 d1 c0 81 c0 81 00 81 80 8b c0 '.PT.............'
+  95 00 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
+  45 00 dc 0c 11 00 00 1e 00 00 00 ff 00 44 4c 32 'E............DL2'
+  31 31 30 32 31 30 33 34 37 36 00 00 00 fc 00 50 '1102103476.....P'
+  68 69 6c 69 70 73 20 32 32 32 45 0a 00 00 00 fd 'hilips 222E.....'
+  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 19 '.8L.S...      ..'
+Checksum: 0x19
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+Block 1, Base EDID:
+  Unknown Extension Block.
+EDID:
+  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+EDID conformity: FAIL
